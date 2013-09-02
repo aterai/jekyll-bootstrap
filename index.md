@@ -1,46 +1,49 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Front Page
+#tagline: Supporting tagline
+
+author :
+  name : aterai
+  email : at.terai@gmail.com
+  twitter : aterai
 ---
 {% include JB/setup %}
+Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-25
+## 概要
+このページ以下では、`Java Swing`での`GUI`プログラム作成のコツなどを、 **「小さなサンプル(ソースコード付き)」** を使って紹介しています。
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<a href="https://picasaweb.google.com/112210866074949770793/JavaSwingTips02?noredirect=1"><img src="http://lh3.ggpht.com/_9Z4BYR88imo/TQslJy3MxYI/AAAAAAAAAts/xrxOCvbp-0A/s800/screenshots.png" /></a>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+- 上の画像をクリックするとスクリーンショットの一覧に移動します。
 
-## Update Author Attributes
+### Swingとは
+`Swing`は、`GUI`(グラフィカル・ユーザ・インタフェース)を作成するための、`Java`標準のコンポーネントセット(ライブラリ、`UI`ツールキット)です。
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+[About the JFC and Swing (The Java™ Tutorials)](http://java.sun.com/docs/books/tutorial/uiswing/start/about.html)
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+## 編集方針
+- **最も欲しいものはサンプルである** - [steps to phantasien t(2007-07-06)](http://dodgson.org/omo/t/?date=20070706#p02)より引用
+    - ボタンをクリックするだけで、サンプルプログラムを起動することが出来ます。
+        - これらのサンプルは、`Java Web Start`のサンドボックス内で実行され、ローカル`PC`のリソースにはアクセスしません。アクセスする必要のあるサンプルは、ソースファイルなどをダウンロードして確認してから実行してください。
+    - すべてのソースコードを[Subversionのリポジトリ](http://code.google.com/p/java-swing-tips/source/checkout)から、以下のようにして取得することができます。
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+			svn checkout http://java-swing-tips.googlecode.com/svn/trunk/ java-swing-tips-read-only
 
-    $ rm -rf _posts/core-samples
+    - 一時ファイルを保持する設定の場合、[Java キャッシュビューア](http://terai.xrea.jp/data/jws/player.jnlp)から、一度試したサンプルを再度実行したり、全部まとめてアンインストール(`javaws -uninstall`)することができます。
+        - 参考: [某開発者の独り言: JWSのJavaアプリケーションキャッシュビューア](http://aqubiblog.blogspot.com/2008/02/jwsjava.html)
+        - `Java`コントロールパネル(`javaws -viewer`) から一時ファイル表示でもキャッシュ一覧が起動します。
 
-Here's a sample "posts list".
+- **SSCCE** - [Short, Self Contained, Correct Example](http://sscce.org/)
+    - すべての記事にソースコードや画像などのリソース、これらを`Ant`で簡単にコンパイル、実行するための`build.xml`をまとめた`zip`ファイルを添付しています。
+    - [(Java Swing 引用メモ) Swingのサンプルに関するメモ](http://d.hatena.ne.jp/aterai/20071016/1192516545)
+
+## 更新履歴
+<!-- Here's a sample "posts list". -->
 
 <ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% for post in site.posts limit:10 %}
+    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
 

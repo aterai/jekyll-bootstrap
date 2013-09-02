@@ -1,0 +1,58 @@
+---
+layout: post
+title: JTextPaneに修飾した文字列を挿入
+category: swing
+folder: StyleConstants
+tags: [JTextPane, StyledDocument]
+author: aterai
+---
+
+Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-12
+
+## JTextPaneに修飾した文字列を挿入
+`JTextPane`に、スタイル付けした文字列を挿入して、ログ風に表示します。
+
+- {% jnlp %}
+- {% jar %}
+- {% src %}
+- {% svn %}
+
+<!-- dummy comment line for breaking list -->
+
+![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTT31r9lEI/AAAAAAAAAlI/7PqL2Aa3UJU/s800/StyleConstants.png)
+
+### サンプルコード
+<pre class="prettyprint"><code>StyledDocument doc = jtp.getStyledDocument();
+Style def = StyleContext.getDefaultStyleContext().getStyle(
+    StyleContext.DEFAULT_STYLE);
+
+Style regular = doc.addStyle("regular", def);
+//StyleConstants.setForeground(def, Color.BLACK);
+
+Style error = doc.addStyle("error", regular);
+StyleConstants.setForeground(error, Color.RED);
+</code></pre>
+<pre class="prettyprint"><code>private void append(String str, boolean flg) {
+  String style = flg?"regular":"error";
+  StyledDocument doc = jtp.getStyledDocument();
+  try{
+    doc.insertString(doc.getLength(), str+"\n", doc.getStyle(style));
+  }catch(BadLocationException e) {
+    e.printStackTrace();
+  }
+}
+</code></pre>
+
+### 解説
+予め設定しておいたエラー表示用のスタイル(文字属性)を、`StyledDocument#getStyle("error")`で取得し、これを文字列と一緒に`Document#insertString`メソッドを使って挿入しています。
+
+### 参考リンク
+- [Using Text Components (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/text.html)
+
+<!-- dummy comment line for breaking list -->
+
+### コメント
+- 一々、`SimpleAttributeSet`を生成していたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-06 (月) 22:24:36
+
+<!-- dummy comment line for breaking list -->
+

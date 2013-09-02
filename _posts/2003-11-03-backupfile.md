@@ -1,0 +1,97 @@
+---
+layout: post
+title: Backup Fileを番号付きで作成
+category: swing
+folder: BackupFile
+tags: [File]
+author: aterai
+---
+
+Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-03
+
+## Backup Fileを番号付きで作成
+[xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップファイルを作成します。
+
+- {% jar %}
+- {% src %}
+- {% svn %}
+
+<!-- dummy comment line for breaking list -->
+
+![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png)
+
+### サンプルコード
+<pre class="prettyprint"><code>private File makeBackupFile(File file, int intold, int intnew) {
+  File testFile = null;
+  String newfilename = file.getAbsolutePath();
+  if(intold==0 &amp;&amp; intnew==0) {
+    file.delete();
+    return new File(newfilename);
+  }
+  boolean testFileFlag = false;
+  for(int i=1;i&lt;=intold;i++) {
+    testFile = new File(file.getParentFile(), file.getName()+"."+i+"~");
+    if(!testFile.exists()) {
+      testFileFlag = true;
+      break;
+    }
+  }
+  if(!testFileFlag) {
+    for(int i=intold+1;i&lt;=intold+intnew;i++) {
+      testFile = new File(file.getParentFile(), file.getName()+"."+i+"~");
+      if(!testFile.exists()) {
+        testFileFlag = true;
+        break;
+      }
+    }
+  }
+  if(testFileFlag) {
+    System.out.println("createBKUP1"+testFile.getAbsolutePath());
+    file.renameTo(testFile);
+  }else{
+    File tmpFile3 = new File(file.getParentFile(),
+                             file.getName()+"."+(intold+1)+"~");
+    tmpFile3.delete();
+    for(int i=intold+2;i&lt;=intold+intnew;i++) {
+      File tmpFile1 = new File(file.getParentFile(),
+                               file.getName()+"."+i+"~");
+      File tmpFile2 = new File(file.getParentFile(),
+                               file.getName()+"."+(i-1)+"~");
+      tmpFile1.renameTo(tmpFile2);
+    }
+    File tmpFile = new File(file.getParentFile(),
+                            file.getName()+"."+(intold+intnew)+"~");
+    System.out.println("changeBKUP2"+tmpFile.getAbsolutePath());
+    file.renameTo(tmpFile);
+  }
+  //System.out.println(newfilename);
+  return new File(newfilename);
+}
+</code></pre>
+
+### 解説
+上記のサンプルでは、[xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップのテストを行っています。
+
+以下の例では、古いバージョンを`2`つ、新しいバージョンを`3`つバックアップとして残します。
+
+- `tmp.foo.1~`から`tmp.foo.5~`が残される
+- `tmp.foo.1~`がもっとも古いバージョンのファイルになる
+
+<!-- dummy comment line for breaking list -->
+
+バックアップファイルが`5`個以上になった場合、古い方のバージョン`2`つはそのまま残し、新しいバージョンをずらしてバックアップが更新されます。
+
+- `tmp.foo.1~`, `tmp.foo.2~`は残される
+- `tmp.foo.3~`は削除される
+- `tmp.foo.4~`は`tmp.foo.3~`にリネーム
+- `tmp.foo.5~`は`tmp.foo.4~`にリネーム
+- `tmp.foo.5~`が新にバックアップとして生成される
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>File tmpFile = File.createTempFile("tmp", ".foo~", file.getParentFile());
+File file = makeBackupFile(file, 2, 3);
+tmpFile.renameTo(file);
+</code></pre>
+
+### コメント

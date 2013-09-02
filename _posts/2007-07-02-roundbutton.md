@@ -1,0 +1,149 @@
+---
+layout: post
+title: JButtonの形を変更
+category: swing
+folder: RoundButton
+tags: [JButton, Shape, Graphics]
+author: aterai
+---
+
+Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
+
+## JButtonの形を変更
+円形や角丸の`JButton`を作成します。
+
+- {% jnlp %}
+- {% jar %}
+- {% src %}
+- {% svn %}
+
+<!-- dummy comment line for breaking list -->
+
+![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTSJxI6T0I/AAAAAAAAAiU/uPR0zvWSEnQ/s800/RoundButton.png)
+
+### サンプルコード
+<pre class="prettyprint"><code>class RoundedCornerButton extends JButton {
+  private static final float arcwidth  = 16.0f;
+  private static final float archeight = 16.0f;
+  protected static final int focusstroke = 2;
+  protected final Color fc = new Color(100,150,255,200);
+  protected final Color ac = new Color(230,230,230);
+  protected final Color rc = Color.ORANGE;
+  protected Shape shape;
+  protected Shape border;
+  protected Shape base;
+  public RoundedCornerButton(String text) {
+    super(text);
+    //setRolloverEnabled(true);
+    setContentAreaFilled(false);
+    setBackground(new Color(250, 250, 250));
+    initShape();
+  }
+  protected void initShape() {
+    if(!getBounds().equals(base)) {
+      base = getBounds();
+      shape = new RoundRectangle2D.Float(0, 0,
+                        getWidth()-1, getHeight()-1,
+                        arcwidth, archeight);
+      border = new RoundRectangle2D.Float(focusstroke, focusstroke,
+                        getWidth()-1-focusstroke*2,
+                        getHeight()-1-focusstroke*2,
+                        arcwidth, archeight);
+    }
+  }
+  @Override protected void paintComponent(Graphics g) {
+    initShape();
+    Graphics2D g2 = (Graphics2D)g;
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON);
+    if(getModel().isArmed()) {
+      g2.setColor(ac);
+      g2.fill(shape);
+    }else if(isRolloverEnabled() &amp;&amp; getModel().isRollover()) {
+      paintFocusAndRollover(g2, rc);
+    }else if(hasFocus()) {
+      paintFocusAndRollover(g2, fc);
+    }else{
+      g2.setColor(getBackground());
+      g2.fill(shape);
+    }
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_OFF);
+    g2.setColor(getBackground());
+    super.paintComponent(g2);
+  }
+  private void paintFocusAndRollover(Graphics2D g2, Color color) {
+    g2.setPaint(new GradientPaint(0, 0, color,
+                                  getWidth()-1, getHeight()-1, color.brighter(), true));
+    g2.fill(shape);
+    g2.setColor(getBackground());
+    g2.fill(border);
+  }
+  @Override protected void paintBorder(Graphics g) {
+    initShape();
+    Graphics2D g2 = (Graphics2D)g;
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON);
+    g2.setColor(getForeground());
+    g2.draw(shape);
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_OFF);
+  }
+  @Override protected boolean contains(int x, int y) {
+    initShape();
+    return shape.contains(x, y);
+  }
+}
+</code></pre>
+
+### 解説
+上記のサンプルでは、ボタンの形や縁、クリック可能な領域などをラウンド矩形に置き換えています。
+
+- `JButton#paintComponent()`をオーバーライドして描画を変更
+- `JButton#contains()`をオーバーライドしてクリック可能な領域を変更
+
+<!-- dummy comment line for breaking list -->
+
+円ボタンは、以下のように角丸ボタンを継承して作成しています。
+
+- 幅と高さが同じになるように`getPreferredSize()`メソッドをオーバーライド
+- 図形の初期化メソッドをオーバーライド
+    - メソッド名前は適当、上記のサンプルでは`initShape`
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>class RoundButton extends RoundedCornerButton {
+  public RoundButton(String text) {
+    super(text);
+    setFocusPainted(false);
+    initShape();
+  }
+  @Override public Dimension getPreferredSize() {
+    Dimension d = super.getPreferredSize();
+    d.width = d.height = Math.max(d.width, d.height);
+    return d;
+  }
+  protected void initShape() {
+    if(!getBounds().equals(base)) {
+      base = getBounds();
+      shape = new Ellipse2D.Float(0, 0, getWidth()-1, getHeight()-1);
+      border = new Ellipse2D.Float(focusstroke, focusstroke,
+                                   getWidth()-1-focusstroke*2,
+                                   getHeight()-1-focusstroke*2);
+    }
+  }
+}
+</code></pre>
+
+### 参考リンク
+- [CREATING ROUND SWING BUTTONS - JDC Tech Tips: August 26, 1999](http://java.sun.com/developer/TechTips/1999/tt0826.html#tip1)
+- [http://java.sun.com/developer/TechTips/txtarchive/1999/Aug99_PatrickC.txt](http://java.sun.com/developer/TechTips/txtarchive/1999/Aug99_PatrickC.txt)
+- [ImageIconの形でJButtonを作成](http://terai.xrea.jp/Swing/RoundImageButton.html)
+
+<!-- dummy comment line for breaking list -->
+
+### コメント
+- アイコンを追加したスクリーンショットに更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-07-10 (木) 17:25:34
+
+<!-- dummy comment line for breaking list -->
+

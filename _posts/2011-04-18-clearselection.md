@@ -1,0 +1,78 @@
+---
+layout: post
+title: JListの選択を解除
+category: swing
+folder: ClearSelection
+tags: [JList, Focus, MouseListener]
+author: aterai
+---
+
+Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
+
+## JListの選択を解除
+`JList`のセル選択状態を解除します。
+
+- {% jnlp %}
+- {% jar %}
+- {% src %}
+- {% svn %}
+
+<!-- dummy comment line for breaking list -->
+
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TavH8_fQKAI/AAAAAAAAA5s/MyUXQnSHPUA/s800/ClearSelection.png)
+
+### サンプルコード
+<pre class="prettyprint"><code>class ClearSelectionListener extends MouseAdapter {
+  private static void clearSelectionAndFocus(JList list) {
+    list.clearSelection();
+    list.getSelectionModel().setAnchorSelectionIndex(-1);
+    list.getSelectionModel().setLeadSelectionIndex(-1);
+  }
+  private static boolean contains(JList list, Point pt) {
+    for(int i=0;i&lt;list.getModel().getSize();i++) {
+      Rectangle r = list.getCellBounds(i, i);
+      if(r.contains(pt)) return true;
+    }
+    return false;
+  }
+  private boolean startOutside = false;
+  @Override public void mousePressed(MouseEvent e) {
+    JList list = (JList)e.getSource();
+    startOutside = !contains(list, e.getPoint());
+    if(startOutside) {
+      clearSelectionAndFocus(list);
+    }
+  }
+  @Override public void mouseReleased(MouseEvent e) {
+    startOutside = false;
+  }
+  @Override public void mouseDragged(MouseEvent e) {
+    JList list = (JList)e.getSource();
+    if(contains(list, e.getPoint())) {
+      startOutside = false;
+    }else if(startOutside) {
+      clearSelectionAndFocus(list);
+    }
+  }
+}
+</code></pre>
+
+### 解説
+上記のサンプルでは、`JList`のセル以外の領域をクリックすると、選択とフォーカスを解除するようにマウスリスナーなどを設定しています。
+
+- 選択解除
+    - `JList#clearSelection();`
+    - `ListSelectionModel#clearSelection()`のラッパー
+- フォーカス解除
+    - `list.getSelectionModel().setAnchorSelectionIndex(-1);`
+    - `list.getSelectionModel().setLeadSelectionIndex(-1);`
+    - アンカー(アイテムのハイライト)、リード(アイテムのフォーカス)の順番で解除する必要がある
+
+<!-- dummy comment line for breaking list -->
+
+### 参考リンク
+- [How to Write a List Selection Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](http://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html)
+
+<!-- dummy comment line for breaking list -->
+
+### コメント

@@ -1,0 +1,82 @@
+---
+layout: post
+title: JTextAreaの最終行だけ編集可能になるよう設定する
+category: swing
+folder: LastLineEditableTextArea
+tags: [DocumentFilter, Element, JTextArea, JTextComponent]
+author: aterai
+---
+
+Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-24
+
+## JTextAreaの最終行だけ編集可能になるよう設定する
+`DocumentFilter`を使用して最終行のみ編集可能な`JTextArea`を作成します。
+
+- {% jnlp %}
+- {% jar %}
+- {% src %}
+- {% svn %}
+
+<!-- dummy comment line for breaking list -->
+
+![screenshot](https://lh3.googleusercontent.com/-WoZIsdy2Qd0/UNcd6P73NAI/AAAAAAAABZg/a2O8KLk4hVQ/s800/LastLineEditableTextArea.png)
+
+### サンプルコード
+<pre class="prettyprint"><code>class NonEditableLineDocumentFilter extends DocumentFilter {
+  public static final String PROMPT = "&gt; ";
+  @Override public void insertString(
+      DocumentFilter.FilterBypass fb, int offset, String string,
+      AttributeSet attr) throws BadLocationException {
+    if(string == null) {
+      return;
+    }else{
+      replace(fb, offset, 0, string, attr);
+    }
+  }
+  @Override public void remove(
+      DocumentFilter.FilterBypass fb,
+      int offset, int length) throws BadLocationException {
+    replace(fb, offset, length, "", null);
+  }
+  @Override public void replace(
+      DocumentFilter.FilterBypass fb, int offset, int length,
+      String text, AttributeSet attrs) throws BadLocationException {
+    Document doc = fb.getDocument();
+    Element root = doc.getDefaultRootElement();
+    int count = root.getElementCount();
+    int index = root.getElementIndex(offset);
+    Element cur = root.getElement(index);
+    int promptPosition = cur.getStartOffset()+PROMPT.length();
+    if(index==count-1 &amp;&amp; offset-promptPosition&gt;=0) {
+      if(text.equals("\n")) {
+        String line = doc.getText(promptPosition, offset-promptPosition);
+        String[] args = line.split(" ");
+        String cmd = args[0];
+        if(cmd.isEmpty()) {
+          text = "";
+        }else{
+          text = String.format("%n%s: command not found", cmd);
+        }
+        text += "\n"+PROMPT;
+      }
+      fb.replace(offset, length, text, attrs);
+    }
+  }
+}
+</code></pre>
+
+### 解説
+- `DocumentFilter#replace(...)`をオーバーライド
+- `Document#getDefaultRootElement()`でルートエレメントを取得し、`Element#getElementCount()`で全体の行数を取得
+- `offset`(文字挿入位置)から`Element#getElementIndex(offset)`で、挿入位置の行番号と、`Element`を取得
+- 上記の「挿入位置の行番号」と「全体の行数-1」が等しい場合だけ、`DocumentFilter.FilterBypass#replace(...)`を実行(編集可能)する
+    - 上記のサンプルでは、コマンドプロンプト風に、最終行の行頭にあるプロンプトは編集不可で、改行の入力ごとに最終行の文字列を評価してメッセージを追加表示している
+
+<!-- dummy comment line for breaking list -->
+
+### 参考リンク
+- [JTextAreaの一部を編集不可にする](http://terai.xrea.jp/Swing/NonEditableLine.html)
+
+<!-- dummy comment line for breaking list -->
+
+### コメント
