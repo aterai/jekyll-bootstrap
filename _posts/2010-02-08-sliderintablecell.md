@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png)
+![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class SliderRednerer extends JSlider implements TableCellRenderer {
@@ -74,7 +74,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
 上記のサンプルでは、`1`列目のセルエディタ、レンダラーに`JSlider`を使用するように設定しています。このスライダーの値を変更すると、同じ行の`0`列目の値も変更されるように、セルエディタに`ChangeListener`を追加しています。
 
 ### コメント
-- メモ: [Bug ID: 6348946 JSlider's thumb moves in the wrong direction when used as a JTable cell editor.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6348946) via. [OTN Discussion Forums : How to insert a JComponent into a cell of JTable](http://forums.oracle.com/forums/thread.jspa?threadID=2151323) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-01-16 (日) 02:25:31
+- メモ: [Bug ID: 6348946 JSlider's thumb moves in the wrong direction when used as a JTable cell editor.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6348946) via. [Swing - How to insert a JComponent into a cell of JTable](https://forums.oracle.com/thread/2153323) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-01-16 (日) 02:25:31
 
 <!-- dummy comment line for breaking list -->
 

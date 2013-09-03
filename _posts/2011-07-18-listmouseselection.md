@@ -49,7 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
     - `JList#processMouseEvent`, `JList#processMouseMotionEvent`をオーバーライドして、常に<kbd>Ctrl</kbd>キーが押されている状態にする
     - マウスでアイテムをドラッグしても選択状態は変わらない
     - `JList`の空白部分をクリックした場合、アイテムの選択状態は変更せず(`MouseEvent#consume()`)、フォーカスだけ`JList`に移動
-    - 参考: [Thread: JList where mouse click acts like ctrl-mouse click](http://forums.oracle.com/forums/thread.jspa?messageID=5692411)
+    - 参考: [Swing - JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/thread/1351452)
 
 <!-- dummy comment line for breaking list -->
 
@@ -67,8 +67,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
     }
   }
   private MouseEvent convertMouseEvent(MouseEvent e) {
-    //Thread: JList where mouse click acts like ctrl-mouse click
-    //http://forums.oracle.com/forums/thread.jspa?messageID=5692411
+    //Swing - JList where mouse click acts like ctrl-mouse click
+    //https://forums.oracle.com/thread/1351452
     return new MouseEvent(
       (Component) e.getSource(),
       e.getID(), e.getWhen(),
@@ -89,13 +89,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
     - `JList#setSelectionInterval`をオーバーライドして、ひとつのアイテムのセルを選択した場合は、`JList#addSelectionInterval`、`JList#removeSelectionInterval`を使用するように変更
     - マウスでアイテムをドラッグすると、選択状態になる
     - ひとつのアイテムのセル内でのドラッグでは、選択状態を変更しない
-    - 参考: [Thread: JList where mouse click acts like ctrl-mouse click](http://forums.oracle.com/forums/message.jspa?messageID=5692413#5692413)
+    - 参考: [Swing - Re: JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/message/5694413#5694413)
     - `JList`の空白部分をクリックした場合、アイテムの選択状態をすべてクリア([JListの選択を解除](http://terai.xrea.jp/Swing/ClearSelection.html))
 
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Thread: JList where mouse click acts like ctrl-mouse click](http://forums.oracle.com/forums/thread.jspa?messageID=5692411)
+- [Swing - JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/thread/1351452)
 - [JListの選択を解除](http://terai.xrea.jp/Swing/ClearSelection.html)
 - [JListのセルにJCheckBoxを使用する](http://terai.xrea.jp/Swing/CheckBoxCellList.html)
 

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-17
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TTPdCvaUyfI/AAAAAAAAAyQ/QnF4vHjyUiM/s800/TreeRowSelection.png)
+![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TTPdCvaUyfI/AAAAAAAAAyQ/QnF4vHjyUiM/s800/TreeRowSelection.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>final Color SELC = new Color(100,150,200);
@@ -73,7 +73,7 @@ tree.setOpaque(false);
 ### 参考リンク
 - [JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)
 - [Highlight a node's descendants in JTree - Santhosh Kumar's Weblog](http://jroller.com/santhosh/entry/highlight_a_node_s_descendants)
-    - via: [OTN Discussion Forums : JTree - highlight entire row on selection](http://forums.oracle.com/forums/thread.jspa?threadID=2158338)
+    - via: [Swing - JTree - highlight entire row on selection](https://forums.oracle.com/thread/2160338)
 
 <!-- dummy comment line for breaking list -->
 

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png)
+![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MyTabbedPaneUI extends javax.swing.plaf.metal.MetalTabbedPaneUI {
@@ -71,7 +71,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
 ### 参考リンク
 - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTitleTab.html)
 - [ButtonTabComponent.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TabComponentsDemoProject/src/components/ButtonTabComponent.java)
-- [OTN Discussion Forums : JTabbedPane title alignment](http://forums.oracle.com/forums/thread.jspa?threadID=1554158)
+- [Swing - JTabbedPane title alignment](https://forums.oracle.com/thread/1556158)
 - [Bug ID: 4220177 labels within JTabbedPane tabs should be alignable](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4220177)
 
 <!-- dummy comment line for breaking list -->

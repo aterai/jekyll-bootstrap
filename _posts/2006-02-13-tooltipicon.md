@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-13
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png)
+![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JLabel l1 = new JLabel("JLabelを使ってツールチップにアイコン") {
@@ -30,7 +30,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-13
         iconlabel, "ToolTip.background", "ToolTip.foreground", "ToolTip.font");
     JToolTip tip = new JToolTip() {
       @Override public Dimension getPreferredSize() {
-        //http://forums.oracle.com/forums/thread.jspa?threadID=2197222
+        //https://forums.oracle.com/thread/2199222
         return getLayout().preferredLayoutSize(this);
       }
       @Override public void setTipText(final String tipText) {
@@ -85,6 +85,7 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='"+url+"'&gt;テスト&lt;/img&gt;&lt
 ### 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
+- [Swing - Using text and a progress bar inside of a tooltip.](https://forums.oracle.com/thread/2199222)
 
 <!-- dummy comment line for breaking list -->
 
