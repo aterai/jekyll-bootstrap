@@ -77,7 +77,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
     - 実体は`JPanel`で、これをセルエディタとして表示(`TableCellEditor#getTableCellEditorComponent`が`JPanel`を返す)
     - この`JPanel`のレイアウトを`BorderLayout`にして、`JTextField`と`JButton`を配置
     - `TableCellEditor#getCellEditorValue`は`JTextField`の値を返し、フォーカス、キー入力時の編集開始なども`JTextField`になるように変更
-    - 参考: [Swing - JTable editor issue](https://forums.oracle.com/forums/thread.jspa?threadID=1352286):Darryl.Burke さんの投稿(2009/01/27 20:12 (reply 6 of 8))
+    - 参考: [Swing - JTable editor issue](https://forums.oracle.com/thread/1354286):Darryl.Burke さんの投稿(2009/01/27 20:12 (reply 6 of 8))
 
 <!-- dummy comment line for breaking list -->
 

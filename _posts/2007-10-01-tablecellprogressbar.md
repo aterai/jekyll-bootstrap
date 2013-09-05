@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-01
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTUYeEtfWI/AAAAAAAAAl8/47mUyOKeiQY/s800/TableCellProgressBar.png)
+![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTUYeEtfWI/AAAAAAAAAl8/47mUyOKeiQY/s800/TableCellProgressBar.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ProgressRenderer extends DefaultTableCellRenderer {
@@ -103,7 +103,7 @@ executor.execute(worker); //1.6.0_18
 
 - - - -
 - メモ
-    - [Swing - Maximum number of SwingWorker objects in a Swing app?](https://forums.oracle.com/forums/thread.jspa?threadID=1362600)
+    - [Swing - Maximum number of SwingWorker objects in a Swing app?](https://forums.oracle.com/thread/1364600)
 
 <!-- dummy comment line for breaking list -->
 

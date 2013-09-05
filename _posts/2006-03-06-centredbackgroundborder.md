@@ -10,7 +10,7 @@ author: aterai
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
 
 ## JTextAreaの背景に画像を表示
-`JTextArea`の背景に画像を表示しています。[Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/forums/thread.jspa?threadID=1393763)のコードを引用しています。
+`JTextArea`の背景に画像を表示しています。[Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/thread/1395763)のコードを引用しています。
 
 - {% jnlp %}
 - {% jar %}
@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTIyAIY_mI/AAAAAAAAATU/GovGMBqjzRo/s800/CentredBackgroundBorder.png)
+![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTIyAIY_mI/AAAAAAAAATU/GovGMBqjzRo/s800/CentredBackgroundBorder.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CentredBackgroundBorder implements Border {
@@ -57,7 +57,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
 `Border`を使って背景に画像を表示する方法は、`JDesktopPane`(参考:[JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html))や、その他の`JComponent`でも使用することが出来ます。
 
 ### 参考リンク
-- [Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/forums/thread.jspa?threadID=1393763)
+- [Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/thread/1395763)
 - [JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-21
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTJmEhFayI/AAAAAAAAAUo/x4JGGk_f08c/s800/ColorConvertOp.png)
+![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTJmEhFayI/AAAAAAAAAUo/x4JGGk_f08c/s800/ColorConvertOp.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>Image img = icon1.getImage();
@@ -66,7 +66,7 @@ icon2 = new ImageIcon(Toolkit.getDefaultToolkit().createImage(ip));
 </code></pre>
 
 - - - -
-`BufferedImage.TYPE_BYTE_GRAY`で、`BufferedImage`を作成して複写してもグレースケールに変換できますが、透過色を使用している場合はすこし注意が必要なようです(参考:[OTN Discussion Forums : Color to Grayscale to Binary](https://forums.oracle.com/forums/thread.jspa?messageID=5798180))。
+`BufferedImage.TYPE_BYTE_GRAY`で、`BufferedImage`を作成して複写してもグレースケールに変換できますが、透過色を使用している場合はすこし注意が必要なようです(参考:[Swing - Color to Grayscale to Binary](https://forums.oracle.com/thread/1373262))。
 
 <pre class="prettyprint"><code>BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_BYTE_GRAY);
 Graphics g = bi.createGraphics();
@@ -82,7 +82,7 @@ g.dispose();
 - ~~[フィルタによる半透明な画像の作成](http://numata.aquasky.jp/programming/java/graphics/FilteringImage.html)~~
 - [osakana.factory - グレースケールのひみつ](http://ofo.jp/osakana/cgtips/grayscale.phtml)
     - via [プログラマメモ2: グレースケール](http://programamemo2.blogspot.com/2007/08/blog-post_21.html)
-- [image manipulation | Oracle Forums](https://forums.oracle.com/message/8143897)
+- [Swing - image manipulation](https://forums.oracle.com/thread/1903279)
 
 <!-- dummy comment line for breaking list -->
 

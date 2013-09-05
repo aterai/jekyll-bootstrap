@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-17
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTWpb1ogMI/AAAAAAAAApk/3IWJ2qvvECo/s800/WhitespaceMark.png)
+![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTWpb1ogMI/AAAAAAAAApk/3IWJ2qvvECo/s800/WhitespaceMark.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class WhitespaceLabelView extends LabelView {
@@ -74,7 +74,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-17
 この`LabelView`を使用する`EditorKit(ViewFactory)`の作成は、[JEditorPaneで改行を表示](http://terai.xrea.jp/Swing/ParagraphMark.html)と同様になっています。
 
 ### 参考リンク
-- [Swing - JTextPane View Problem](https://forums.oracle.com/forums/thread.jspa?threadID=1372478)
+- [Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)
 - [Design Guidelines: Text Components](http://java.sun.com/products/jlf/ed1/dg/higo.htm)
 - [Swing Chapter 19. (Advanced topics) Inside Text Components. Easy for reading, Click here!](http://www.javafaq.nu/java-book-30.html)
 - [JEditorPaneで改行を表示](http://terai.xrea.jp/Swing/ParagraphMark.html)

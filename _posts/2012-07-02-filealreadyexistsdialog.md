@@ -47,7 +47,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-02
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [OTN Discussion Forums : How to react on events fired by a JFileChooser?](https://forums.oracle.com/forums/thread.jspa?messageID=5872486)
+- [Swing - How to react on events fired by a JFileChooser?](https://forums.oracle.com/thread/1391852)
 - [java - JFileChooser with confirmation dialog - Stack Overflow](http://stackoverflow.com/questions/3651494/jfilechooser-with-confirmation-dialog)
 
 <!-- dummy comment line for breaking list -->

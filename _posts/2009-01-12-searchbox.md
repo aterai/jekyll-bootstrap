@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-12
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png)
+![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static void searchTree(JTree tree, TreePath path, String q) {
@@ -39,9 +39,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-12
 上記のサンプルでは、選択された`JTree`のノード以下に、検索文字列と一致するノードがあれば、`JTree#addSelectionPath(TreePath)`メソッドで選択するようになっています。
 
 - - - -
-[Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/forums/thread.jspa?threadID=1355454)のAndre_Uhresさんの投稿のように、`TreeModel`を使って検索する方法もあります。
+[Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/thread/1357454)のAndre_Uhresさんの投稿のように、`TreeModel`を使って検索する方法もあります。
 
-<pre class="prettyprint"><code>//&lt;blockquote cite="https://forums.oracle.com/message/5727950"&gt;
+<pre class="prettyprint"><code>//&lt;blockquote cite="https://forums.oracle.com/thread/1357454"&gt;
 public void traverse(JTree tree) {
   TreeModel model = tree.getModel();
   Object root;
@@ -90,8 +90,7 @@ while(depth.hasMoreElements()) {
 
 ### 参考リンク
 - [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
-- [Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/message/5727950)
-- [Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/forums/thread.jspa?threadID=1355454)
+- [Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/thread/1357454)
 - [JTreeで条件に一致するノードを検索しハイライト](http://terai.xrea.jp/Swing/TreeNodeHighlightSearch.html)
 - [JTreeのノードを走査する](http://terai.xrea.jp/Swing/TraverseAllNodes.html)
 
