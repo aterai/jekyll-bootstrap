@@ -13,9 +13,9 @@ tagline: java swing tips
 author :
   name : TERAI Atsuhiro
   email : at.terai@gmail.com
-  #github : username
+  github : aterai
   twitter : aterai
-  #feedburner : feedname
+  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -33,7 +33,6 @@ redcarpet:
     extensions: ["xhtml", "fenced_code_blocks", "strikethrough", "no_intra_emphasis", "lax_spacing"]
 #   extensions: ["autolink", "superscript", "with_toc_data"]
 
-# markdown: kramdown
 kramdown:
   auto_ids: true,
   footnote_nr: 1
