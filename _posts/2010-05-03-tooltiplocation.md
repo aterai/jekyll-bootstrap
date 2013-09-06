@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent me) {

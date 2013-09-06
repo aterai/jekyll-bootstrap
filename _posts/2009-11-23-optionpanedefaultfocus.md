@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-23
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTQoUaDrDI/AAAAAAAAAf4/nUnrCrmb5io/s800/OptionPaneDefaultFocus.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQoUaDrDI/AAAAAAAAAf4/nUnrCrmb5io/s800/OptionPaneDefaultFocus.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>textField4.addAncestorListener(new AncestorListener() {

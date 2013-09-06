@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-08
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTRVf_tDmI/AAAAAAAAAhA/1F6GcDuJmcg/s800/RadioButtonMenuItemIcon.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRVf_tDmI/AAAAAAAAAhA/1F6GcDuJmcg/s800/RadioButtonMenuItemIcon.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>//com.sun.java.swing.plaf.windows.WindowsIconFactory.java

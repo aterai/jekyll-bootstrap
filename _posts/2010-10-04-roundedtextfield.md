@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-04
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTSMYm3vgI/AAAAAAAAAiY/37FVcZLSXI0/s800/RoundedTextField.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSMYm3vgI/AAAAAAAAAiY/37FVcZLSXI0/s800/RoundedTextField.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTextField textField01 = new JTextField(20) {

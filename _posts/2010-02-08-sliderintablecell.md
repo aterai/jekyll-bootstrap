@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class SliderRednerer extends JSlider implements TableCellRenderer {

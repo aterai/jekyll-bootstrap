@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-22
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTI-UTFN-I/AAAAAAAAATo/6sdQoVO0Kc4/s800/ClassLoader.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTI-UTFN-I/AAAAAAAAATo/6sdQoVO0Kc4/s800/ClassLoader.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getClassLoader().getResource("example/test.png");

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTONfr7t7I/AAAAAAAAAcA/jNQyoEApJ1I/s800/IconComboBox.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTONfr7t7I/AAAAAAAAAcA/jNQyoEApJ1I/s800/IconComboBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static Border makeIconBorder(JComponent c, ImageIcon i) {

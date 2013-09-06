@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-07
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTPu_OEqoI/AAAAAAAAAec/z6MobKhblfI/s800/MemoryImageSource.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPu_OEqoI/AAAAAAAAAec/z6MobKhblfI/s800/MemoryImageSource.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>int[] pixels = new int[320 * 240];

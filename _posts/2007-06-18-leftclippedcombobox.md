@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-18
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTPEaiR2iI/AAAAAAAAAdY/E5fxUtKW0sM/s800/LeftClippedComboBox.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPEaiR2iI/AAAAAAAAAdY/E5fxUtKW0sM/s800/LeftClippedComboBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>final JButton arrowButton = getArrowButton(combo02);

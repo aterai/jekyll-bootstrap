@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTNi4XckaI/AAAAAAAAAa8/8VJwvf6EScw/s800/GridBagLayout.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNi4XckaI/AAAAAAAAAa8/8VJwvf6EScw/s800/GridBagLayout.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>public JPanel createPanel(JComponent cmp, JButton btn, String str) {
@@ -62,7 +62,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTNldPsABI/AAAAAAAAAbA/eep6P-D2eC8/s800/GridBagLayout1.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNldPsABI/AAAAAAAAAbA/eep6P-D2eC8/s800/GridBagLayout1.png)
 
 - `GridBagLayout`
     - 左右のコンポーネントのサイズは`BorderLayout`のように固定して、中央のコンポーネントだけを水平方向にのみ伸縮させる。

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-12
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTKL-SYs6I/AAAAAAAAAVk/pXv9HlMSLf0/s800/ContinuousLayout.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKL-SYs6I/AAAAAAAAAVk/pXv9HlMSLf0/s800/ContinuousLayout.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>final JSplitPane leftPane   = new JSplitPane(JSplitPane.VERTICAL_SPLIT);

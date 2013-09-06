@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-10
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTKEdJmyzI/AAAAAAAAAVY/FTQKJ7__MnE/s800/ComponentTitledBorder.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKEdJmyzI/AAAAAAAAAVY/FTQKJ7__MnE/s800/ComponentTitledBorder.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JCheckBox c = new JCheckBox("CheckBox", true);

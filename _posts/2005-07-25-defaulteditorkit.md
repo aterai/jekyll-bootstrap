@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-25
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTKk8KGiNI/AAAAAAAAAWM/dJouzZuxv6g/s800/DefaultEditorKit.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKk8KGiNI/AAAAAAAAAWM/dJouzZuxv6g/s800/DefaultEditorKit.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>textField.setComponentPopupMenu(new TextFieldPopupMenu(textField));
@@ -72,7 +72,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-25
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTKnUb6nqI/AAAAAAAAAWQ/L3ylLdA-GIw/s800/DefaultEditorKit1.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKnUb6nqI/AAAAAAAAAWQ/L3ylLdA-GIw/s800/DefaultEditorKit1.png)
 
 ### 参考リンク
 - [JTextFieldでコピー、貼り付けなどを禁止](http://terai.xrea.jp/Swing/ActionMap.html)

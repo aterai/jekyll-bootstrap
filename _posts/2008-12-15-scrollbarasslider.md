@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-15
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTSgYVysvI/AAAAAAAAAi4/5UjLktCUVb8/s800/ScrollBarAsSlider.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSgYVysvI/AAAAAAAAAi4/5UjLktCUVb8/s800/ScrollBarAsSlider.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>int step   = 5;

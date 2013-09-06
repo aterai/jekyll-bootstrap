@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-28
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>Border padding = BorderFactory.createEmptyBorder(0,5,0,0);
@@ -93,7 +93,7 @@ combo.setRenderer(lcr);
 
 - - - -
 上記のサンプルを、余白に色無しにして、`Ubuntu 7.04`(`GNOME 2.18.1`)、`JDK 1.6.0`で実行すると、以下のようになります。
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTQyV_2TnI/AAAAAAAAAgI/yqGoi_zqsgI/s800/PaddingComboBox1.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQyV_2TnI/AAAAAAAAAgI/yqGoi_zqsgI/s800/PaddingComboBox1.png)
 
 - - - -
 - `LookAndFeel`毎に`JComboBox`の余白の描画は異なるみたいなので、全部まとめて消すのは難しい？

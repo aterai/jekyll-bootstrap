@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-17
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTOe9ph-LI/AAAAAAAAAcc/iwxbgnjvxg8/s800/InheritsPopupMenu.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOe9ph-LI/AAAAAAAAAcc/iwxbgnjvxg8/s800/InheritsPopupMenu.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane(table);
@@ -57,7 +57,7 @@ table.setInheritsPopupMenu(true);
 1. <kbd>ESC</kbd>キーで、ポップアップ非表示
 1. ヘッダ上で右クリック、ポップアップ、<kbd>ESC</kbd>キー
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTOhYdteZI/AAAAAAAAAcg/CzWZOSF9pVw/s800/InheritsPopupMenu1.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOhYdteZI/AAAAAAAAAcg/CzWZOSF9pVw/s800/InheritsPopupMenu1.png)
 
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;

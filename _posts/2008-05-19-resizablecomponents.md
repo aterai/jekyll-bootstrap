@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-19
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTRw-M85QI/AAAAAAAAAhs/BFyVP2IYoak/s800/ResizableComponents.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRw-M85QI/AAAAAAAAAhs/BFyVP2IYoak/s800/ResizableComponents.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent e) {
@@ -72,7 +72,7 @@ layer.addMouseListener(new MouseAdapter() {});
 - - - -
 `JDK1.6`では、背面にある`JTable`のヘッダが前面にロールオーバーしてしまいます。
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTRzAZnaVI/AAAAAAAAAhw/t9TWz3YYv6U/s800/ResizableComponents1.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRzAZnaVI/AAAAAAAAAhw/t9TWz3YYv6U/s800/ResizableComponents1.png)
 
 ### 参考リンク
 - [Resizable Components - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/resizable_components)

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTRX5e43uI/AAAAAAAAAhE/QX6qn9jFOB8/s800/RadioButtonsInTableCell.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRX5e43uI/AAAAAAAAAhE/QX6qn9jFOB8/s800/RadioButtonsInTableCell.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RadioButtonsPanel extends JPanel {

@@ -18,7 +18,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-13
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>Image image = new BufferedImage(16,16,BufferedImage.TYPE_INT_ARGB);

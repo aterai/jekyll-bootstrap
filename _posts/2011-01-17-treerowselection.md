@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-17
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TTPdCvaUyfI/AAAAAAAAAyQ/QnF4vHjyUiM/s800/TreeRowSelection.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TTPdCvaUyfI/AAAAAAAAAyQ/QnF4vHjyUiM/s800/TreeRowSelection.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>final Color SELC = new Color(100,150,200);

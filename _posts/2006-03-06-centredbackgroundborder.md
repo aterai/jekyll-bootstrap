@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTIyAIY_mI/AAAAAAAAATU/GovGMBqjzRo/s800/CentredBackgroundBorder.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIyAIY_mI/AAAAAAAAATU/GovGMBqjzRo/s800/CentredBackgroundBorder.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CentredBackgroundBorder implements Border {

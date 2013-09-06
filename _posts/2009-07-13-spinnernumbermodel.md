@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-13
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTTrfKZbaI/AAAAAAAAAk0/znT8goHx2Es/s800/SpinnerNumberModel.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTrfKZbaI/AAAAAAAAAk0/znT8goHx2Es/s800/SpinnerNumberModel.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>SpinnerNumberModel m1 = new SpinnerNumberModel(

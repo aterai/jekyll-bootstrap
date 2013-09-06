@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTSO4fquKI/AAAAAAAAAic/UdMAZSREN1U/s800/RoundImageButton.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSO4fquKI/AAAAAAAAAic/UdMAZSREN1U/s800/RoundImageButton.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RoundButton extends JButton {
@@ -108,7 +108,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTSRb592NI/AAAAAAAAAig/4HrfRUSkPxc/s800/RoundImageButton1.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSRb592NI/AAAAAAAAAig/4HrfRUSkPxc/s800/RoundImageButton1.png)
 
 <pre class="prettyprint"><code>private final Box box = // JDK 6 Box.createHorizontalBox();
   // JDK 5

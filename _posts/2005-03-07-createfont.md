@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTKOUJYB7I/AAAAAAAAAVo/K2rl3dXD4ic/s800/CreateFont.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKOUJYB7I/AAAAAAAAAVo/K2rl3dXD4ic/s800/CreateFont.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>Font makeFont(URL url) {
@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
 
 ### 参考リンク
 - [モナーフォント](http://monafont.sourceforge.net/index.html)
-- [Swing (Archive) - Loading TYPE1 fonts with JRE 1.5.0](https://forums.oracle.com/forums/thread.jspa?threadID=1481177)
+- [Swing (Archive) - Loading TYPE1 fonts with JRE 1.5.0](https://forums.oracle.com/thread/1483177)
 
 <!-- dummy comment line for breaking list -->
 

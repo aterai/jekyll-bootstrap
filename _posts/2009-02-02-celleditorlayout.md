@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh4.ggpht.com/_9Z4BYR88imo/TQTIlcF-6vI/AAAAAAAAATA/mS6Q_BfuY6c/s800/CellEditorLayout.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIlcF-6vI/AAAAAAAAATA/mS6Q_BfuY6c/s800/CellEditorLayout.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CustomComponentCellEditor extends DefaultCellEditor {

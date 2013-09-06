@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-24
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTWaXC_E3I/AAAAAAAAApM/H9h2pJw-VSQ/s800/UpdateSelectionOnSort.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWaXC_E3I/AAAAAAAAApM/H9h2pJw-VSQ/s800/UpdateSelectionOnSort.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>table.setUpdateSelectionOnSort(true);

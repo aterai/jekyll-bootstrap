@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-23
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTVb-HPZjI/AAAAAAAAAno/dMILsHzlipk/s800/ToolBarLayout.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVb-HPZjI/AAAAAAAAAno/dMILsHzlipk/s800/ToolBarLayout.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>String path = "/toolbarButtonGraphics/general/";
@@ -49,7 +49,7 @@ toolbar.add(createToolbarButton(url3));
 
 - - - -
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTVeG6fVBI/AAAAAAAAAns/II_0GGIdnNk/s800/ToolBarLayout1.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVeG6fVBI/AAAAAAAAAns/II_0GGIdnNk/s800/ToolBarLayout1.png)
 
 `JDK 1.6`で、`JDK 1.5`のようなボタン表示(フォーカスを取得しない)にするには、`JButton#setRequestFocusEnabled(false)`(マウスクリックではフォーカスを取得しないが、キーボードからは許可)、または、`JButton#setFocusable(false)`とする必要があるようです。
 

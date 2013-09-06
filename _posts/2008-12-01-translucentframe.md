@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-01
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTVvwg_IhI/AAAAAAAAAoI/wQpW8Msbo2Y/s800/TranslucentFrame.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVvwg_IhI/AAAAAAAAAoI/wQpW8Msbo2Y/s800/TranslucentFrame.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>try{
@@ -88,7 +88,7 @@ class TranslucentSynthSytle extends SynthStyle {
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTVyfycduI/AAAAAAAAAoM/r6DySDZjSGA/s800/TranslucentFrame1.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVyfycduI/AAAAAAAAAoM/r6DySDZjSGA/s800/TranslucentFrame1.png)
 
 - - - -
 `警告:com.sun.java.swing.Painter は Sun が所有する API であり、今後のリリースで削除される可能性があります。`といった警告が出ても良いなら、以下のように`UIDefaults#put`で`Painter`を設定する方法もあります(`JDK 1.7.0`以上なら`javax.swing.Painter`になるので、警告なしで使用可能)。

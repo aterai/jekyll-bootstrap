@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-10
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTOK8UtUUI/AAAAAAAAAb8/yiME-hTTlWA/s800/HyperlinkListener.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOK8UtUUI/AAAAAAAAAb8/yiME-hTTlWA/s800/HyperlinkListener.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>final JEditorPane editorPane = new JEditorPane();
@@ -94,7 +94,7 @@ public class ThumbnailTest {
   public JComponent makeUI() {
     StringBuilder sb = new StringBuilder();
     sb.append("&lt;html&gt;&lt;body&gt;aaaaaaaaaaaaaaaaaaaaaa&lt;br /&gt;");
-    sb.append("&lt;img width='144' height='120' src='http://lh5.ggpht.com/_9Z4BYR88imo/TQTOK8UtUUI/AAAAAAAAAb8/yiME-hTTlWA/s800/HyperlinkListener.png' /&gt;");
+    sb.append("&lt;img width='144' height='120' src='https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOK8UtUUI/AAAAAAAAAb8/yiME-hTTlWA/s800/HyperlinkListener.png' /&gt;");
     sb.append("&lt;/body&gt;&lt;/html&gt;");
     JEditorPane editorPane = new JEditorPane();
     editorPane.setEditable(false);

@@ -18,7 +18,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTRh7du1II/AAAAAAAAAhU/jcMUoOTcbTU/s800/RecursiveFileSearch.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRh7du1II/AAAAAAAAAhU/jcMUoOTcbTU/s800/RecursiveFileSearch.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>public void recursiveSearch(File dir, final Vector list)

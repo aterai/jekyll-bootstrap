@@ -18,7 +18,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-29
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTRGT4S7mI/AAAAAAAAAgo/GDUrxdRJ4x4/s800/Preferences.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRGT4S7mI/AAAAAAAAAgo/GDUrxdRJ4x4/s800/Preferences.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>public MainPanel(final JFrame frame) {

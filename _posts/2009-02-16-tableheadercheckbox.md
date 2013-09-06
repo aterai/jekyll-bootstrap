@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-16
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTUf8Li6CI/AAAAAAAAAmI/mj7-1IwK86o/s800/TableHeaderCheckBox.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUf8Li6CI/AAAAAAAAAmI/mj7-1IwK86o/s800/TableHeaderCheckBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>enum Status { SELECTED, DESELECTED, INDETERMINATE }

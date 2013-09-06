@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTPL3eZj2I/AAAAAAAAAdk/KJTR3_NeAZE/s800/LineCursor.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPL3eZj2I/AAAAAAAAAdk/KJTR3_NeAZE/s800/LineCursor.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class LineCursorTextArea extends JTextArea {

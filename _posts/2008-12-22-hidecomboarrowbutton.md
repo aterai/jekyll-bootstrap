@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-22
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTN0Yp0GRI/AAAAAAAAAbY/WvXw5vm2_LI/s800/HideComboArrowButton.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN0Yp0GRI/AAAAAAAAAbY/WvXw5vm2_LI/s800/HideComboArrowButton.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JPanel p = new JPanel(new BorderLayout(5, 5));

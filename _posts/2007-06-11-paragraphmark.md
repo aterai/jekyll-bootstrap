@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-11
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTQ3cf9HLI/AAAAAAAAAgQ/gIbt2d-Hz7k/s800/ParagraphMark.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ3cf9HLI/AAAAAAAAAgQ/gIbt2d-Hz7k/s800/ParagraphMark.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MyEditorKit extends StyledEditorKit {

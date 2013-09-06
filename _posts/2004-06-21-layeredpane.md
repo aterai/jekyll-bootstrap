@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-21
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTO8wLpaZI/AAAAAAAAAdM/mML3cGeQwrg/s800/LayeredPane.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO8wLpaZI/AAAAAAAAAdM/mML3cGeQwrg/s800/LayeredPane.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JInternalFrame iframe = new JInternalFrame("AlwaysOnTop",

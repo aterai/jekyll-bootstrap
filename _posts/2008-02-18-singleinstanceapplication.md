@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-18
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTTF6N0NjI/AAAAAAAAAj0/Ld2Nyv4QXsI/s800/SingleInstanceApplication.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTTF6N0NjI/AAAAAAAAAj0/Ld2Nyv4QXsI/s800/SingleInstanceApplication.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>ServerSocket socket = null;

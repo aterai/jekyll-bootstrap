@@ -18,7 +18,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-11
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>//Swing - ComboBox scroll and selected/highlight on glasspane

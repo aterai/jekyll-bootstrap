@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-09
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTP2Xw5rXI/AAAAAAAAAeo/3v8-ggh9ZBE/s800/MidiSystem.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTP2Xw5rXI/AAAAAAAAAeo/3v8-ggh9ZBE/s800/MidiSystem.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getResource("Mozart_toruko_k.mid");

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-13
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JLabel l1 = new JLabel("JLabelを使ってツールチップにアイコン") {

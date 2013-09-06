@@ -19,7 +19,7 @@ Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTOrYdIcmI/AAAAAAAAAcw/Ol4ZcH6Pw48/s800/JLayeredPane1.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOrYdIcmI/AAAAAAAAAcw/Ol4ZcH6Pw48/s800/JLayeredPane1.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>/** 2005/03/24

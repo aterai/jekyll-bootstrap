@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-04
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh4.ggpht.com/_9Z4BYR88imo/TQTLtEL3M0I/AAAAAAAAAYA/9HmyXI1Uw0M/s800/DockingFrames.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLtEL3M0I/AAAAAAAAAYA/9HmyXI1Uw0M/s800/DockingFrames.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>private void positionFrames(ComponentEvent e) {

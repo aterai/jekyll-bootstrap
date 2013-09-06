@@ -11,6 +11,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 
 ## JEditorPaneで長い行を折り返さない
 `JEditorPane`や、`JTextPane`で、行を`Viewport`の幅で折り返さないよう設定します。
+
 - {% jnlp %}
 - {% jar %}
 - {% src %}
@@ -18,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTQbo-LQJI/AAAAAAAAAfk/YnnnPAQE-R4/s800/NoWrapTextPane.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQbo-LQJI/AAAAAAAAAfk/YnnnPAQE-R4/s800/NoWrapTextPane.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class NoWrapParagraphView extends ParagraphView {
@@ -45,13 +46,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 `JTextArea`でも行を非常に長くしてしまうと、カーソルキーの移動などで異常に時間がかかる場合があります。
 
 - 例えば、このサンプルで、カーソルを一番最後に移動し、一行目(非常に長い行)に<kbd>Up</kbd>キーで移動すると発生する
-- [Swing - Long last line in wrappable textarea hangs GUI (bug in java?)](https://forums.oracle.com/message/5776978)
+- [Swing - Long last line in wrappable textarea hangs GUI (bug in java?)](https://forums.oracle.com/thread/1367888)
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
 以下のような方法もあります。
-- [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/forums/thread.jspa?threadID=1351861)
+- [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/thread/1353861)
     - `BoxView#layout(...)`をオーバーライド
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
     - `JTextPane#getScrollableTracksViewportWidth()`をオーバーライド
@@ -59,7 +60,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/forums/thread.jspa?threadID=1351861)
+- [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/thread/1353861)
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
 - [Bug ID: 6502558 AbstractDocument fires event not on Event Dispatch Thread](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6502558)
     - [Alexander Potochkin's Blog: Debugging Swing, the final summary](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_swing.html)

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTSJxI6T0I/AAAAAAAAAiU/uPR0zvWSEnQ/s800/RoundButton.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSJxI6T0I/AAAAAAAAAiU/uPR0zvWSEnQ/s800/RoundButton.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RoundedCornerButton extends JButton {

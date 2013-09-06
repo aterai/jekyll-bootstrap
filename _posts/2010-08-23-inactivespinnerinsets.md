@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTOcTAKgdI/AAAAAAAAAcY/R1dvME0C6UA/s800/InactiveSpinnerInsets.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOcTAKgdI/AAAAAAAAAcY/R1dvME0C6UA/s800/InactiveSpinnerInsets.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JSpinner spinner3 = new JSpinner() {

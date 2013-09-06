@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-15
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTP9wW-lJI/AAAAAAAAAe0/xQ9vJrX3MuQ/s800/ModalInternalFrame.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTP9wW-lJI/AAAAAAAAAe0/xQ9vJrX3MuQ/s800/ModalInternalFrame.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>//menuItem.setMnemonic(KeyEvent.VK_1);

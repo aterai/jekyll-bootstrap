@@ -18,7 +18,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-14
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTL5-PTzWI/AAAAAAAAAYU/G2P--5GJWSU/s800/DragSource.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL5-PTzWI/AAAAAAAAAYU/G2P--5GJWSU/s800/DragSource.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MyDragGestureListener implements DragGestureListener {

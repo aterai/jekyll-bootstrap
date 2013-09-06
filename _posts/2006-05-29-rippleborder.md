@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-29
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTR9UHQaAI/AAAAAAAAAiA/_Kn7tNr8M3s/s800/RippleBorder.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR9UHQaAI/AAAAAAAAAiA/_Kn7tNr8M3s/s800/RippleBorder.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RippleBorder extends EmptyBorder {

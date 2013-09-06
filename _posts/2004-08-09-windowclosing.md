@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-09
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTWuSq18TI/AAAAAAAAAps/aCkiOWRqfDE/s800/WindowClosing.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWuSq18TI/AAAAAAAAAps/aCkiOWRqfDE/s800/WindowClosing.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>public static final String ASTERISK_TITLEBAR = "unsaved";

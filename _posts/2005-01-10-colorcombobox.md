@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-10
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTJhY0CAaI/AAAAAAAAAUg/J70FCr-EUlI/s800/ColorComboBox.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJhY0CAaI/AAAAAAAAAUg/J70FCr-EUlI/s800/ColorComboBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>combo01.setModel(makeModel());
@@ -66,7 +66,7 @@ combo02.setSelectedIndex(0);
 - - - -
 `GTKLookAndFeel`などで、うまく`Box`(`Editor`)部分の色を変更できない場合があるようです。
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTJj4vDxSI/AAAAAAAAAUk/ZZtKylfc0k8/s800/ColorComboBox1.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJj4vDxSI/AAAAAAAAAUk/ZZtKylfc0k8/s800/ColorComboBox1.png)
 
 ### 参考リンク
 - [JComboBoxの文字色を変更する](http://terai.xrea.jp/Swing/ComboBoxForegroundColor.html)

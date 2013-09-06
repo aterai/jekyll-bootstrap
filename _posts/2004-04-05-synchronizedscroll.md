@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>ChangeListener cl = new ChangeListener() {

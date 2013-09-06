@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-20
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTMkfiP8jI/AAAAAAAAAZY/qHWqJtrcUgQ/s800/FillsViewportHeight.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMkfiP8jI/AAAAAAAAAZY/qHWqJtrcUgQ/s800/FillsViewportHeight.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>table.setFillsViewportHeight(true);
@@ -68,7 +68,7 @@ scroll.getViewport().setBackground(Color.GREEN);
 - - - -
 `JScrollPane`、`JViewport`の背景色も以下のように表示されることがあるので、実際に使う場合は`table.setBackground(scrollPane.getBackground())`するなどして、すべておなじ色になるようにしておいた方がいいかもしれません。
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTMm5lGwGI/AAAAAAAAAZc/VWaIAURiCKk/s800/FillsViewportHeight1.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTMm5lGwGI/AAAAAAAAAZc/VWaIAURiCKk/s800/FillsViewportHeight1.png)
 
 - `scrollPane.setBackground(Color.RED);`
     - 縦スクロールバーとテーブルヘッダで出来る余白の色

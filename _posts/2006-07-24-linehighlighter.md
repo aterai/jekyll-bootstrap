@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-24
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.ggpht.com/_9Z4BYR88imo/TQTPQ5j7_JI/AAAAAAAAAds/kbet-1O8x-A/s800/LineHighlighter.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPQ5j7_JI/AAAAAAAAAds/kbet-1O8x-A/s800/LineHighlighter.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class HighlightCursorTextArea extends JTextArea {
@@ -98,7 +98,7 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 
 これらの方法なら、`JTextEditor`や`JTextPane`で行の高さが異なる場合でも、うまくハイライトできるようです。
 
-![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTPTaywxYI/AAAAAAAAAdw/RIlfRHiC-JY/s800/LineHighlighter1.png)
+![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPTaywxYI/AAAAAAAAAdw/RIlfRHiC-JY/s800/LineHighlighter1.png)
 
 ### 参考リンク
 - [JTextAreaに行カーソルを表示](http://terai.xrea.jp/Swing/LineCursor.html)

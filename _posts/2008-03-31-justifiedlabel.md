@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-31
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTOwQzSk-I/AAAAAAAAAc4/bD-z_hTSHB8/s800/JustifiedLabel.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOwQzSk-I/AAAAAAAAAc4/bD-z_hTSHB8/s800/JustifiedLabel.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JLabel l0 = new JLabel("打率");

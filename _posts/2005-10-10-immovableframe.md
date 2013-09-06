@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-10
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh4.ggpht.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png)
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>BasicInternalFrameUI ui = (BasicInternalFrameUI)immovableFrame.getUI();
@@ -43,7 +43,7 @@ internalframe.setLocation(10,10);
 internalframe.pack();
 </code></pre>
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTOZ803FiI/AAAAAAAAAcU/Bj1t9F8ZKqI/s800/ImmovableFrame1.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOZ803FiI/AAAAAAAAAcU/Bj1t9F8ZKqI/s800/ImmovableFrame1.png)
 
 ### 参考リンク
 - [Swing - Lock JInternalPane](https://forums.oracle.com/thread/1392111)

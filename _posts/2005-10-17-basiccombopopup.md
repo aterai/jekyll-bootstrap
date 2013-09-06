@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-17
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTH_tpIbsI/AAAAAAAAASE/DrHgihVbnn0/s800/BasicComboPopup.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH_tpIbsI/AAAAAAAAASE/DrHgihVbnn0/s800/BasicComboPopup.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>JComboBox combo = new JComboBox(strArray);
@@ -72,7 +72,7 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
   });
 }
 </code></pre>
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTICNIyr1I/AAAAAAAAASI/CorNUGA0pF8/s800/BasicComboPopup1.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTICNIyr1I/AAAAAAAAASI/CorNUGA0pF8/s800/BasicComboPopup1.png)
 
 - ~~ただし、バージョン(`6uN`？)、`Web Start`などで実行すると、`AccessControlException`が発生します。~~
 

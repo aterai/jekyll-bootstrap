@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-03
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTUQ8ALIWI/AAAAAAAAAlw/7jfCbNrxWK8/s800/TabbedPaneWithCheckBox.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUQ8ALIWI/AAAAAAAAAlw/7jfCbNrxWK8/s800/TabbedPaneWithCheckBox.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TabbedPaneWithCompBorder implements Border, MouseListener, SwingConstants {
@@ -81,7 +81,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-03
 - - - -
 他にも、レイアウトマネージャーを利用して同様のことを行う方法があります。
 
-- [Swing - Any layout suggestions for this?](https://forums.oracle.com/forums/thread.jspa?threadID=1387350)
+- [Swing - Any layout suggestions for this?](https://forums.oracle.com/thread/1389350)
     - レイアウトマネージャーを自作するweebibさんの投稿 (reply 1)
     - `OverlayLayout`を利用するcamickrさんの投稿 (reply 2)
 

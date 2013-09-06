@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-11
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>Color BG_COLOR = new Color(1f,.8f,.8f,.2f);
@@ -63,14 +63,14 @@ field2.setBackground(BG_COLOR);
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQcFKxPuBpI/AAAAAAAAAqw/1P6cGhtr7FA/s800/TranslucentTextField1.png)
+![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQcFKxPuBpI/AAAAAAAAAqw/1P6cGhtr7FA/s800/TranslucentTextField1.png)
 
 - `GTKLookAndFeel`でのスクリーンショット
     - [Bug ID: 6531760 JTextField not honoring the background color](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6531760)
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh3.ggpht.com/_9Z4BYR88imo/TQTV55zD1gI/AAAAAAAAAoY/0PCTmGDb2AA/s800/TranslucentTextField2.png)
+![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTV55zD1gI/AAAAAAAAAoY/0PCTmGDb2AA/s800/TranslucentTextField2.png)
 
 ### 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
