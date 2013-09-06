@@ -57,7 +57,7 @@ private DefaultListModel makeList() {
 
 セルの区切りを分かりやすくするために、偶数奇数で行の背景色を変更しています。
 
-`JTextArea`にセルフォーカスがある状態を表現するために、~~EmptyBorder~~ `LineBorder`を継承して作成した`DotBorder`を使用しています。
+`JTextArea`にセルフォーカスがある状態を表現するために、 ~~EmptyBorder~~ `LineBorder`を継承して作成した`DotBorder`を使用しています。
 
 <pre class="prettyprint"><code>class DotBorder extends LineBorder {
   public boolean isBorderOpaque() {return true;}

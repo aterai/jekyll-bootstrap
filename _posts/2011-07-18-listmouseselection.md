@@ -155,7 +155,7 @@ ry$SystemColorProxy[r=39,g=118,b=218],selectionForeground=com.apple.laf.AquaImag
 - ちなみに `e.getModifiers() | Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(),`を`e.getModifiers() | 0x01`, `#0x01`は <kbd>Shift</kbd>とかに無理矢理するとクリックだけで<kbd>Shift</kbd>と同じ動作になるんですけどね・・・。もう意味が分かりません。 -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-27 (水) 10:52:51
 - あら見づらくなりすみません。 -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-27 (水) 10:54:02
 - ようするに、`convertMouseEvent`内の`e.getModifiers()`に`0x02/0x04`を`or`しても`OSX`では無視されてるようです。なぜなんでしょう？ -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-27 (水) 10:58:53
-    - ログ(勝手にすこし整形しました)どうもです。たしかにうまくいっているっぽいのに、不思議な感じですね。~~`InputEvent.CTRL_DOWN_MASK`と`InputEvent.CTRL_MASK`の違い？~~ もうすこし調べてみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-27 (水) 15:04:05
+    - ログ(勝手にすこし整形しました)どうもです。たしかにうまくいっているっぽいのに、不思議な感じですね。 ~~`InputEvent.CTRL_DOWN_MASK`と`InputEvent.CTRL_MASK`の違い？~~ もうすこし調べてみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-27 (水) 15:04:05
 - メモ: [Tailoring Java Applications for Mac OS X](http://developer.apple.com/jp/technotes/tn2042.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-27 (水) 15:18:46
 - ドラッグによる`JList`の複数選択は、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)を使用する方法もあります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-30 (水) 15:18:25
 

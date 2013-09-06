@@ -46,7 +46,7 @@ field.add(label);
 また、`JLabel`の代わりに、`JButton`などを置くこともできます(参考リンクを参照)。
 
 - - - -
-`JComboBox`の`Editor`を取得して`Margin`を指定しても、~~なぜか~~うまくいきません。
+`JComboBox`の`Editor`を取得して`Margin`を指定しても、 ~~なぜか~~ うまくいきません。
 
 - [JTextComponent#setMargin(Insets) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setMargin%28java.awt.Insets%29)
     - ただし、デフォルト以外の境界が設定されている場合は、`Border`オブジェクトが適切なマージン空白を作成します(それ以外の場合、このプロパティーは事実上無視される)。

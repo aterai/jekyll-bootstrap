@@ -75,17 +75,17 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 
 <pre class="prettyprint"><code>*** src7u5/javax/swing/PopupFactory.java	Wed May 16 07:54:10 2012
 --- src7u6/javax/swing/PopupFactory.java	Fri Aug 10 10:01:16 2012
-***************
+************** *
 *** 203,214 ****
                       popupType = HEAVY_WEIGHT_POPUP;
                       break;
                   }
--             } else if (c instanceof Window) {
--                 Window w = (Window) c;
--                 if (!w.isOpaque() || w.getOpacity() &lt; 1 || w.getShape() != null) {
--                     popupType = HEAVY_WEIGHT_POPUP;
--                     break;
--                 }
+- } else if (c instanceof Window) {
+- Window w = (Window) c;
+- if (!w.isOpaque() || w.getOpacity() &lt; 1 || w.getShape() != null) {
+- popupType = HEAVY_WEIGHT_POPUP;
+- break;
+- }
               }
               c = c.getParent();
           }

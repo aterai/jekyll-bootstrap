@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png)
+![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>ChangeListener cl = new ChangeListener() {
@@ -66,8 +66,8 @@ sp2.getHorizontalScrollBar().setModel(sp1.getHorizontalScrollBar().getModel());
 </code></pre>
 
 ### 参考リンク
-- [Swing (Archive) - link to scrollbar](https://forums.oracle.com/forums/thread.jspa?threadID=1500596)
-- [Swing (Archive) - Synchronizing scrollbars two scroll bars](https://forums.oracle.com/forums/thread.jspa?threadID=1482489)
+- [Swing (Archive) - link to scrollbar](https://forums.oracle.com/thread/1502596)
+- [Swing (Archive) - Synchronizing scrollbars two scroll bars](https://forums.oracle.com/thread/1484489)
 
 <!-- dummy comment line for breaking list -->
 

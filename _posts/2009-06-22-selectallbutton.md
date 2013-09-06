@@ -45,7 +45,7 @@ private final Action copyAction = new AbstractAction("copy") {
 
 ### コメント
 - タイトルの`typo`を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-23 (火) 18:34:44
-- `Java Web Start`で起動した場合は、~~コピーできない？~~ このサンプル内でコピーした文字列などを外部のアプリケーションにペーストすることはできない(逆も不可)？ -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-02 (金) 19:05:43
+- `Java Web Start`で起動した場合は、 ~~コピーできない？~~ このサンプル内でコピーした文字列などを外部のアプリケーションにペーストすることはできない(逆も不可)？ -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-02 (金) 19:05:43
 
 <!-- dummy comment line for breaking list -->
 

@@ -60,7 +60,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
 - `CardLayout`+`JRadioButton`
     - 上記のサンプルでは、`JRadioButton`を`GridLayout`で、均等なサイズになるように並べています。
     - `UI`を変更して、チェックは非表示にしています。
-    - マウスでタブを押した時ではなく、放した時に切り替わります~~(`Opera`風)~~。
+    - マウスでタブを押した時ではなく、 ~~(`Opera`風に)~~ 放した時に切り替わります。
 
 <!-- dummy comment line for breaking list -->
 

@@ -43,7 +43,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 - `Calendar.DAY_OF_MONTH`
     - 本日を現在の値と下限値、上限値は`null`(制限無し)、増減値を`Calendar.DAY_OF_MONTH`とした`SpinnerDateModel`を使用
         - 下限値が現在時刻(例: `Mon Aug 22 15:09:27 JST 2011`)なので、現在の値(`Mon Aug 22 00:00:00 JST 2011`)が範囲外となり、矢印ボタンで日付を変更できない
-        - 参考: [OTN Discussion Forums : DateSpinner spins only after an edit](https://forums.oracle.com/forums/thread.jspa?threadID=2266752)
+        - 参考: [Swing - DateSpinner spins only after an edit](https://forums.oracle.com/thread/2268752)
 
 <!-- dummy comment line for breaking list -->
 
@@ -73,7 +73,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [OTN Discussion Forums : DateSpinner spins only after an edit](https://forums.oracle.com/forums/thread.jspa?threadID=2266752)
+- [Swing - DateSpinner spins only after an edit](https://forums.oracle.com/thread/2268752)
 - [CellEditorをJSpinnerにして日付を変更](http://terai.xrea.jp/Swing/DateCellEditor.html)
 
 <!-- dummy comment line for breaking list -->

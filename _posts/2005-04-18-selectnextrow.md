@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-18
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh6.ggpht.com/_9Z4BYR88imo/TQTS5aM0UvI/AAAAAAAAAjg/g-wlrmrzml8/s800/SelectNextRow.png)
+![screenshot](https://lh6.ggpht.com/_9Z4BYR88imo/TQTS5aM0UvI/AAAAAAAAAjg/g-wlrmrzml8/s800/SelectNextRow.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>InputMap im = table.getInputMap(JTable.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
@@ -33,10 +33,10 @@ im.put(tab, im.get(enter));
 
 逆遷移の<kbd>Shift</kbd>+<kbd>Tab</kbd>なども対応する場合は、修飾子を`0`の代わりに`InputEvent.SHIFT_MASK`にして、同様に変更しています。
 
-[Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/forums/thread.jspa?threadID=1482284)に、編集できないセルを飛ばして、<kbd>Tab</kbd>キーでフォーカス移動することができるサンプルがあるので参考にしてください。
+[Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/thread/1484284)に、編集できないセルを飛ばして、<kbd>Tab</kbd>キーでフォーカス移動することができるサンプルがあるので参考にしてください。
 
 ### 参考リンク
-- [Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/forums/thread.jspa?threadID=1482284)
+- [Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/thread/1484284)
 
 <!-- dummy comment line for breaking list -->
 

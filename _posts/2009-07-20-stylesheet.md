@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-20
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](http://lh5.ggpht.com/_9Z4BYR88imo/TQTT6cwbhCI/AAAAAAAAAlM/PsSYnlumJJg/s800/StyleSheet.png)
+![screenshot](https://lh5.ggpht.com/_9Z4BYR88imo/TQTT6cwbhCI/AAAAAAAAAlM/PsSYnlumJJg/s800/StyleSheet.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>StyleSheet styleSheet = new StyleSheet();
@@ -37,7 +37,7 @@ editor.setText(makeTestHtml());
 
 ### 参考リンク
 - [Java Swing「JEditorPane」メモ(Hishidama's Swing-JEditorPane Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JEditorPane.html)
-- [Swing - HTMLEditorKit and CSS](https://forums.oracle.com/forums/thread.jspa?messageID=5876548)
+- [Swing - HTMLEditorKit and CSS](https://forums.oracle.com/thread/1392908)
 - [StyleSheet (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/StyleSheet.html)
     - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/CSS.html)
 - [How to add stylesheet information to a JEditorPane (jfc/swing)](http://www.devdaily.com/blog/post/jfc-swing/how-add-style-stylesheet-jeditorpane-example-code/)

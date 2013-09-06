@@ -75,7 +75,7 @@ combo02.setSelectedIndex(0);
 
 ### コメント
 - `JComboBox#setEditable(true)`は必須のようです。編集不可にするには`Editor`部分の`JTextField`に対して`setEditable(false)` -- [Y](http://terai.xrea.jp/Y.html) 2006-10-10 (火) 18:51:38
-    - ご指摘ありがとうございます。せっかく`JComboBox`を上下に並べているのだから、編集可の場合と不可の場合のサンプルにすればよかったですね。編集不可の場合(`JComboBox#setEditable(false)`)に色を着けるには、上記の方法と、以下のように`JComboBox#setBackground(Color)`メソッドを使う方法があるようです。~~編集不可の場合は、この部分の色もレンダラーが勝手にやってくれてたような気がするのですが、勘違いだったのかも。~~ バージョンや`LookAndFeel`で異なる？ようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-10-10 (火) 19:58:51
+    - ご指摘ありがとうございます。せっかく`JComboBox`を上下に並べているのだから、編集可の場合と不可の場合のサンプルにすればよかったですね。編集不可の場合(`JComboBox#setEditable(false)`)に色を着けるには、上記の方法と、以下のように`JComboBox#setBackground(Color)`メソッドを使う方法があるようです。 ~~編集不可の場合は、この部分の色もレンダラーが勝手にやってくれてたような気がするのですが、勘違いだったのかも。~~ バージョンや`LookAndFeel`で異なる？ようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-10-10 (火) 19:58:51
 
 <!-- dummy comment line for breaking list -->
 
