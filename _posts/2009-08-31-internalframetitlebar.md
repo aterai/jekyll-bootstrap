@@ -71,7 +71,7 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
 
 - 制限
     - 最大化、最小化、リサイズなどには未対応
-        - <kbd>Alt</kbd>+<kbd>Space</kbd>で最大化、最小化できるが、元のサイズに戻せなくなる場合がある
+        - <kbd>Alt+Space</kbd>で最大化、最小化できるが、元のサイズに戻せなくなる場合がある
     - 角の透明化には未対応
         - 目立たなくするために、`LookAndFeel`は`Nimbus`に変更
         - `JDK 1.7.0`なら、`frame.setBackground(new Color(0,0,0,0)); frame.add(p=new MainPanel()); p.setOpaque(false);`で角の透明化が可能

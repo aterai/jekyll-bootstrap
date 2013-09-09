@@ -130,7 +130,7 @@ private void fireUnsavedFlagChangeEvent(boolean unsaved) {
 
 - `WindowAdapter#windowClosing(WindowEvent e)`
     - システムメニューでウィンドウを閉じようとしたときに呼び出されるリスナーのメソッド
-        - `OS`が`Windows`なら、<kbd>Alt</kbd>+<kbd>F4</kbd>キーを押す
+        - `OS`が`Windows`なら、<kbd>Alt+F4</kbd>キーを押す
         - タイトルバー左上にあるアイコンをクリックし、ポップアップメニューで閉じるを選択
         - タイトルバー右上の×ボタンをクリック
         - `JButton`や`JMenu`などをクリックした時に、対象となる`frame`の`windowClosing`を呼び出したい場合は、`frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));`

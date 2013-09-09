@@ -67,7 +67,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-05
 </code></pre>
 
 ### 解説
-上記のサンプルでは、選択されている`JInternalFrame`をツールバーのボタンや<kbd>ESC</kbd>キー(`OS`が`Windows`の場合のデフォルトは、<kbd>Ctrl</kbd>+<kbd>F4</kbd>)で閉じることができます。
+上記のサンプルでは、選択されている`JInternalFrame`をツールバーのボタンや<kbd>Esc</kbd>キー(`OS`が`Windows`の場合のデフォルトは、<kbd>Ctrl+F4</kbd>)で閉じることができます。
 
 - `RED`
     - `JInternalFrame#dispose`メソッドを使用

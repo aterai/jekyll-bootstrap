@@ -86,7 +86,7 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Scrollable PopupMenu | Oracle Forums](https://forums.oracle.com/message/5775340)
+- [Swing - Scrollable PopupMenu](https://forums.oracle.com/thread/1367473)
 
 <!-- dummy comment line for breaking list -->
 

@@ -65,7 +65,7 @@ slider2.setForeground(Color.BLUE);
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Swing - Problem in changing forground color of JSlider!!](https://forums.oracle.com/message/5812389)
+- [Swing - Problem in changing forground color of JSlider!!](https://forums.oracle.com/thread/1375990)
 - [JSliderの目盛にアイコンや文字列を追加する](http://terai.xrea.jp/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->

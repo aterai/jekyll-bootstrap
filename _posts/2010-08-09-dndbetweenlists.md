@@ -70,7 +70,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-09
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- アイテムをカット(<kbd>Ctrl</kbd>+<kbd>X</kbd>)すると`ClassCastException`が発生するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-25 (金) 20:28:45
+- アイテムをカット(<kbd>Ctrl+X</kbd>)すると`ClassCastException`が発生するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-25 (金) 20:28:45
 
 <!-- dummy comment line for breaking list -->
 

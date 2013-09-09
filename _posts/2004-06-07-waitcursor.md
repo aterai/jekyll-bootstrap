@@ -80,7 +80,7 @@ button.addActionListener(new ActionListener() {
 </code></pre>
 
 - または、`TraversalKeys`を空にする
-    - 参考:[Swing - How to display "Loading data..." to the user](https://forums.oracle.com/message/5809228)
+    - 参考:[Swing - How to display "Loading data..." to the user](https://forums.oracle.com/thread/1375257)
 
 <!-- dummy comment line for breaking list -->
 
@@ -131,7 +131,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Swing - How to display "Loading data..." to the user](https://forums.oracle.com/message/5809228)
+- [Swing - How to display "Loading data..." to the user](https://forums.oracle.com/thread/1375257)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
     - [JInternalFrameをModalにする](http://terai.xrea.jp/Swing/ModalInternalFrame.html)
 - [Disabled Glass Pane « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)

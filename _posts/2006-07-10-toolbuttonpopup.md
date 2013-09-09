@@ -87,7 +87,7 @@ class MenuToggleButton extends JToggleButton {
 ### 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコン(矢印ではない)を利用しています。
-- [Swing - Swing bug? cannot set width of JToggleButton](https://forums.oracle.com/message/5809491)
+- [Swing - Swing bug? cannot set width of JToggleButton](https://forums.oracle.com/thread/1375327)
 
 <!-- dummy comment line for breaking list -->
 

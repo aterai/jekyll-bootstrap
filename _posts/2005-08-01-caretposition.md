@@ -43,7 +43,7 @@ try{
 
 ### 参考リンク
 - [JScrollPaneのオートスクロール](http://terai.xrea.jp/Swing/AutoScroll.html)
-- [Line Number in JTextPane | Oracle Forums](https://forums.oracle.com/message/5882821)
+- [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1393939)
 - [How to set AUTO-SCROLLING of JTEXTAREA in Java GUI? - Stack Overflow](http://stackoverflow.com/questions/1627028/how-to-set-auto-scrolling-of-jtextarea-in-java-gui)
 
 <!-- dummy comment line for breaking list -->

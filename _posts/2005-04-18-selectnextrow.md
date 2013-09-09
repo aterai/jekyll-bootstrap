@@ -31,7 +31,7 @@ im.put(tab, im.get(enter));
 ### 解説
 上記のサンプルでは、チェックボックスで<kbd>Tab</kbd>キーでのフォーカスの移動(セル毎に移動)が、<kbd>Enter</kbd>キーと同じ(行毎に移動)になるように切り替えています。
 
-逆遷移の<kbd>Shift</kbd>+<kbd>Tab</kbd>なども対応する場合は、修飾子を`0`の代わりに`InputEvent.SHIFT_MASK`にして、同様に変更しています。
+逆遷移の<kbd>Shift+Tab</kbd>なども対応する場合は、修飾子を`0`の代わりに`InputEvent.SHIFT_MASK`にして、同様に変更しています。
 
 [Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/thread/1484284)に、編集できないセルを飛ばして、<kbd>Tab</kbd>キーでフォーカス移動することができるサンプルがあるので参考にしてください。
 

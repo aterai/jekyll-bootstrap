@@ -38,7 +38,7 @@ private final Action copyAction = new AbstractAction("copy") {
     - `Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: javax.swing.JMenuItem cannot be cast to javax.swing.JTabl`などの例外が発生しないように
 - `JTable`から`ActionMap`を取得
 - `ActionMap`から`Action`を取得
-    - これらの`Action`は`JTable`でコピー(<kbd>Ctrl</kbd>+<kbd>C</kbd>)するのと同様
+    - これらの`Action`は`JTable`でコピー(<kbd>Ctrl+C</kbd>)するのと同様
 - `ActionListener#actionPerformed(ActionEvent)`メソッドで`Action`を実行
 
 <!-- dummy comment line for breaking list -->

@@ -65,7 +65,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
 
 
 ### 参考リンク
-- [JTable-Row color issue | Oracle Forums](https://forums.oracle.com/message/5745962)
+- [Swing - JTable-Row color issue](https://forums.oracle.com/thread/1361072)
 
 <!-- dummy comment line for breaking list -->
 
