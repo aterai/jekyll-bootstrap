@@ -68,13 +68,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-18
 
 ### 解説
 上記のサンプルではタイトルバーを、`setUndecorated(true)`で非表示にし、移動可能にした`JPanel`を追加してタイトルバーにしています。
-リサイズは、[Undecorated and resizable dialog | Oracle Forums](https://forums.oracle.com/message/5765194)や`BasicInternalFrameUI.java`、`MetalRootPaneUI#MouseInputHandler`などを参考にして、周辺にそれぞれ対応するリサイズカーソルを設定した`JLabel`を配置しています。
+リサイズは、[Swing - Undecorated and resizable dialog](https://forums.oracle.com/thread/1365156)や`BasicInternalFrameUI.java`、`MetalRootPaneUI#MouseInputHandler`などを参考にして、周辺にそれぞれ対応するリサイズカーソルを設定した`JLabel`を配置しています。
 
 - - - -
 `JDK 1.7.0`の場合、`JFrame`の背景色を透明(`frame.setBackground(new Color(0,0,0,0));`)にし、`ContentPane`の左右上の角をクリアして透明にしています。
 
 ### 参考リンク
-- [Undecorated and resizable dialog | Oracle Forums](https://forums.oracle.com/message/5765194)
+- [Swing - Undecorated and resizable dialog](https://forums.oracle.com/thread/1365156)
 - [JWindowをマウスで移動](http://terai.xrea.jp/Swing/DragWindow.html)
 - [JInternalFrameをJFrameとして表示する](http://terai.xrea.jp/Swing/InternalFrameTitleBar.html)
 

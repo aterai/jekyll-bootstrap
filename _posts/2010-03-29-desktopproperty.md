@@ -51,7 +51,7 @@ public class DesktopPropertyList {
 
 ### 参考リンク
 - [Windows デスクトップ関連のプロパティーのサポート](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/1.4/w2k_props.html)
-- [Swing - Should UIManager fire propertyChangeEvents here?](https://forums.oracle.com/message/5698661)
+- [Swing - Should UIManager fire propertyChangeEvents here?](https://forums.oracle.com/thread/1352133)
 
 <!-- dummy comment line for breaking list -->
 

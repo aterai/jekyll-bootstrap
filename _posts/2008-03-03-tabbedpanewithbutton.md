@@ -71,7 +71,7 @@ p.add(tabPane);
 - [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
 - [JTabbedPaneの余白にJCheckBoxを配置](http://terai.xrea.jp/Swing/TabbedPaneWithCheckBox.html)
 - [JTabbedPaneのタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTabLabel.html)
-- [Swing - Any layout suggestions for this?](https://forums.oracle.com/message/5864180)
+- [Swing - Any layout suggestions for this?](https://forums.oracle.com/thread/1389350)
 
 <!-- dummy comment line for breaking list -->
 

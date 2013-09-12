@@ -34,6 +34,7 @@ dh.setDrawsLayeredHighlights(false);
 - `DefaultHighlighter#setDrawsLayeredHighlights(false)`
     - 文字列の選択描画より奥にハイライトが表示されるため、ハイライトの矩形は塗り潰れさて非表示となる
     - 文字列選択で、ハイライトされている箇所がわかりづらくなる
+    - 改行を含む文字列を選択すると選択の描画がおかしくなる？
 
 <!-- dummy comment line for breaking list -->
 

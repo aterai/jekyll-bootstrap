@@ -154,7 +154,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 }
 </code></pre>
 
-- メモ: [Swing - Can popup menu events be consumed by other (e.g. background) components?](https://forums.oracle.com/message/5882085) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-10 (木) 18:24:18
+- メモ: [Swing - Can popup menu events be consumed by other (e.g. background) components?](https://forums.oracle.com/thread/1393754) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-10 (木) 18:24:18
 
 <!-- dummy comment line for breaking list -->
 

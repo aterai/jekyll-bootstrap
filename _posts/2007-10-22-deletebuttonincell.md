@@ -79,7 +79,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [JButton inside JTable Cell | Oracle Forums](https://forums.oracle.com/message/5729360)
+- [Swing - JButton inside JTable Cell](https://forums.oracle.com/thread/1357728)
 - [JTableの行を追加、削除](http://terai.xrea.jp/Swing/AddRow.html)
 - [JTableの行を全削除](http://terai.xrea.jp/Swing/ClearTable.html)
 - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)

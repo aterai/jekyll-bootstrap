@@ -28,7 +28,7 @@ try {
 }catch(IOException ioe) {
   ioe.printStackTrace();
 }
-texture = new TexturePaint(img, new Rectangle(bi.getWidth(), bi.getHeight()));
+texture = new TexturePaint(bi, new Rectangle(bi.getWidth(), bi.getHeight()));
 panel = new JPanel() {
   @Override public void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D)g;

@@ -92,7 +92,7 @@ kfm.addPropertyChangeListener(new PropertyChangeListener() {
 
 ### 参考リンク
 - [Focusの移動](http://terai.xrea.jp/Swing/FocusTraversal.html)
-- [When does requestFocusInWindow() fail | Oracle Forums](https://forums.oracle.com/message/5774979)
+- [Swing - When does requestFocusInWindow() fail](https://forums.oracle.com/thread/1367389)
 - [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)
 
 <!-- dummy comment line for breaking list -->

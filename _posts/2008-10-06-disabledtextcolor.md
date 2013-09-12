@@ -33,7 +33,7 @@ JCheckBox cbx2 = new JCheckBox("&lt;html&gt;html tag&lt;/html&gt;", true);
         - `MetalLookAndFeel`でのみ？、反映される
 - `JCheckBox` + `html`
     - `<html>`タグを使った場合、`setEnable`にかかわらず、文字色は変更不可([Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4740519))を利用
-        - 参考:[Swing - How to disable a JCheckBox and leave the text the original color?](https://forums.oracle.com/message/5740059)のMichael_Dunn さんの投稿
+        - 参考:[Swing - How to disable a JCheckBox and leave the text the original color?](https://forums.oracle.com/thread/1359798)のMichael_Dunn さんの投稿
         - [Htmlを使ったJLabelとJEditorPaneの無効化](http://terai.xrea.jp/Swing/DisabledHtmlLabel.html)
 - `JComboBox`
     - `UIManager.put("ComboBox.disabledForeground", Color.GREEN);`
