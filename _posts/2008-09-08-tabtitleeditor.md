@@ -71,7 +71,7 @@ private void renameTabTitle() {
     - マウスでタブをダブルクリック、またはタブを選択して<kbd>Enter</kbd>キーで編集開始
     - 編集中に入力欄以外をクリック、または<kbd>Enter</kbd>キーでタイトル文字列が確定
     - 編集中<kbd>Tab</kbd>キーを押しても無視
-    - <kbd>ESC</kbd>で編集をキャンセル
+    - <kbd>Esc</kbd>で編集をキャンセル
     - `0`文字で確定した場合も、キャンセル扱い
 
 <!-- dummy comment line for breaking list -->

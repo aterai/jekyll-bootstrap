@@ -108,7 +108,7 @@ field.addKeyListener(new ComboKeyHandler(combo));
 
 - <kbd>Up</kbd><kbd>Down</kbd>キー
     - ポップアップ表示
-- <kbd>ESC</kbd>キー
+- <kbd>Esc</kbd>キー
     - ポップアップ非表示
 - <kbd>Right</kbd>キー
     - 補完

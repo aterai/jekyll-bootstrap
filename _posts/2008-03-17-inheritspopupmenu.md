@@ -54,8 +54,8 @@ table.setInheritsPopupMenu(true);
 `JDK 1.6`では、`JTable`のヘッダも、`setInheritsPopupMenu(true)`で、`JScrollPane`からポップアップメニューを取得して表示することができます。ただし、`JDK 1.6` + `WindowsLookAndFeel`で、`JTableHeader`上にポップアップメニューを表示すると、以下のようにうまく再描画できない場合があるようです。
 
 1. ヘッダを右クリックしながら、右端にドラッグ、ポップアップ表示
-1. <kbd>ESC</kbd>キーで、ポップアップ非表示
-1. ヘッダ上で右クリック、ポップアップ、<kbd>ESC</kbd>キー
+1. <kbd>Esc</kbd>キーで、ポップアップ非表示
+1. ヘッダ上で右クリック、ポップアップ、<kbd>Esc</kbd>キー
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOhYdteZI/AAAAAAAAAcg/CzWZOSF9pVw/s800/InheritsPopupMenu1.png)
 

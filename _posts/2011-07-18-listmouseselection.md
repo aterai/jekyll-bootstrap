@@ -89,7 +89,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
     - `JList#setSelectionInterval`をオーバーライドして、ひとつのアイテムのセルを選択した場合は、`JList#addSelectionInterval`、`JList#removeSelectionInterval`を使用するように変更
     - マウスでアイテムをドラッグすると、選択状態になる
     - ひとつのアイテムのセル内でのドラッグでは、選択状態を変更しない
-    - 参考: [Swing - Re: JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/message/5694413#5694413)
+    - 参考: [Swing - Re: JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/thread/1351452#5694413)
     - `JList`の空白部分をクリックした場合、アイテムの選択状態をすべてクリア([JListの選択を解除](http://terai.xrea.jp/Swing/ClearSelection.html))
 
 <!-- dummy comment line for breaking list -->

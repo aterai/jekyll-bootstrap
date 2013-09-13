@@ -79,7 +79,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
     - マウスでタブをダブルクリック、またはタブを選択して<kbd>Enter</kbd>キーで編集開始
     - 編集中に入力欄以外をクリック、または<kbd>Enter</kbd>キーでタイトル文字列が確定
     - 編集中は<kbd>Tab</kbd>キーを押しても無視
-    - <kbd>ESC</kbd>キーで編集をキャンセル
+    - <kbd>Esc</kbd>キーで編集をキャンセル
     - `0`文字で確定した場合も、キャンセル扱い
 
 <!-- dummy comment line for breaking list -->

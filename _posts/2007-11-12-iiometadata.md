@@ -60,7 +60,7 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 - `JTextArea`
     - 属性は頭に`#`をつけて表示
 - `JTree`
-    - 参考:[Swing - XMLViewer](https://forums.oracle.com/message/5802717)
+    - 参考:[Swing - XMLViewer](https://forums.oracle.com/thread/1373824)
 
 <!-- dummy comment line for breaking list -->
 
@@ -68,7 +68,7 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 - [JPEG Metadata Format Specification and Usage Notes](http://docs.oracle.com/javase/jp/6/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)
     - via: [javax.imageio.metadata (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/imageio/metadata/package-summary.html)
     - 標準の (プラグインに依存しない) 形式やその他のメタデータ(`PNG`、`GIF`、`BMP`)もこちらから
-- [Swing - XMLViewer](https://forums.oracle.com/message/5802717)
+- [Swing - XMLViewer](https://forums.oracle.com/thread/1373824)
 - [MediaTrackerで画像のサイズを取得](http://terai.xrea.jp/Swing/MediaTracker.html)
 - [Utilz: 画像の位置情報](http://www.utilz.jp/wiki/ExifGps)
     - via: [Jpegのexif形式ファイルからの画像解像度（幅高）取得について - Java Solution](http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?topic=42083&forum=12&4)

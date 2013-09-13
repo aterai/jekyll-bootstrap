@@ -105,14 +105,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-20
 </code></pre>
 
 ### 解説
-[Advice for editor gutter implementation... | Oracle Forums](https://forums.oracle.com/message/6217372)を参考にして、`JTextArea`に行番号を表示しています。
+[Swing (Archive) - Advice for editor gutter implementation...](https://forums.oracle.com/thread/1479759)を参考にして、`JTextArea`に行番号を表示しています。
 
 上記のサンプルで使用する`JTextArea`は、使用するフォントや余白などは変更不可で、各行の高さは最後まで一定であると想定しています。
 
 ### 参考リンク
-- [Advice for editor gutter implementation... | Oracle Forums](https://forums.oracle.com/message/6217372)
-- [Line Number in JTextPane | Oracle Forums](https://forums.oracle.com/message/5782932)
-- [line number in jtextpane | Oracle Forums](https://forums.oracle.com/message/6267595)
+- [Swing (Archive) - Advice for editor gutter implementation...](https://forums.oracle.com/thread/1479759)
+- [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1369109)
+- [Swing - line number in jtextpane](https://forums.oracle.com/thread/1493292)
 
 <!-- dummy comment line for breaking list -->
 
@@ -122,10 +122,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-20
 - こちらのソースは非常に参考になります。現在趣味でエディタを作成しているのですが、`JTextPane`の`Document`を`JTextArea`に与えてカーソル位置を取得しています。`JTextPane`で行番号、列番号を正確に取得できないものでしょうか？ -- [shusen](http://terai.xrea.jp/shusen.html) 2007-11-09 (金) 10:22:30
 - どうもです。`JTextPane`だと、デフォルトの行の折り返しをどう扱うかで、行番号の表示が異なります。   -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-09 (金) 14:52:40
     - 折り返しても表示は前の行のままの場合
-        - [Line Number in JTextPane | Oracle Forums](https://forums.oracle.com/message/5782932)
+        - [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1369109)
         - このページのサンプルは、上記のリンク先にある`LineNumberView`(@author Alan Moore)を参考にしていますが、`JTextArea`に必要なさそうな折り返しや各行の高さが異なる場合などの処理を削っているので、`JTextPane`で使う場合は、リンク先などのオリジナルのソースを参考にしてください。
     - 折り返された行にも行番号を表示したい場合
-        - [line number in jtextpane | Oracle Forums](https://forums.oracle.com/message/6267595)
+        - [Swing - line number in jtextpane](https://forums.oracle.com/thread/1493292)
         - 上記のリンク先にあるサンプルでは、`EditorKit`を使って行番号を表示しており、`JTextPane`で折り返された行でも、表示に従って行番号が割り振られています。
 - ご返答ありがとうございます。現在はこちらにある折り返し抑制のソースを利用させていただいているので、`EditorKit`を利用する分を試してみたいと思います。 -- [shusen](http://terai.xrea.jp/shusen.html) 2007-11-09 (金) 19:16:05
 - `EditorKit`を利用した分をｺﾋﾟﾍﾟして、とりあえずそのままコンパイル・実行してみました。ここでおかしいことがありまして、コマンドプロンプトから起動すると文字が挿入された行のみ行番号が表示されるのですが、自作エディタから`ProcessBuilder`と`Process`で`"java Test"`となるように呼び出すと、未入力の行も含めて全ての行番号が表示されます。コレはプロンプトの実効環境がおかしいのでしょうか？ -- [shusen](http://terai.xrea.jp/shusen.html) 2007-11-14 (水) 17:20:54

@@ -102,7 +102,7 @@ public TabTransferHandler() {
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- `JFrame`の外にドロップした場合は、新しいフレームと`JTabbedPane`を作成して表示したいけど、<kbd>ESC</kbd>キーや右クリックでのキャンセルと区別がつかない？ので、難しそう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-01-25 (水) 19:57:10
+- `JFrame`の外にドロップした場合は、新しいフレームと`JTabbedPane`を作成して表示したいけど、<kbd>Esc</kbd>キーや右クリックでのキャンセルと区別がつかない？ので、難しそう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-01-25 (水) 19:57:10
 
 <!-- dummy comment line for breaking list -->
 

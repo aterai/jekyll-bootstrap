@@ -48,7 +48,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 
 - <kbd>F11</kbd>キー、ダブルクリック
     - フルスクリーン表示、ウィンドウ表示の切り替え
-- <kbd>ESC</kbd>キー
+- <kbd>Esc</kbd>キー
     - アプリケーション終了
 
 <!-- dummy comment line for breaking list -->
