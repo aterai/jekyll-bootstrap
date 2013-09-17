@@ -5,6 +5,7 @@ category: swing
 folder: DoubleClick
 tags: [JTable, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-28

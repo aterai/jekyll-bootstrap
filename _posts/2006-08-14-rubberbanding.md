@@ -5,6 +5,7 @@ category: swing
 folder: RubberBanding
 tags: [JList, MouseListener, MouseMotionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-14

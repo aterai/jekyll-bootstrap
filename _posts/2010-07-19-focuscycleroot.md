@@ -5,6 +5,7 @@ category: swing
 folder: FocusCycleRoot
 tags: [JPanel, Focus]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-19

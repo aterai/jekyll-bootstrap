@@ -5,6 +5,7 @@ category: swing
 folder: BrowserLauncher
 tags: [JEditorPane, Html, HyperlinkListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-06
@@ -38,7 +39,12 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 ### 解説
 ブラウザの起動には、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用しています。`Mac OS X`, `GNU/Linux`, `Unix`, `Windows XP`に対応しているようです。
 
-`Java SE 6`の新機能である、`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することができるようになっています([Using the Desktop API in Java SE 6](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/javase6/desktop_api/)、[Desktopでブラウザを起動(JDK 6)](http://terai.xrea.jp/Swing/Desktop.html))。
+- - - -
+- `Java SE 6`の新機能である、`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することができるようになっています。
+    - [Using the Desktop API in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135182.html)
+    - [Desktopでブラウザを起動(JDK 6)](http://terai.xrea.jp/Swing/Desktop.html))。
+
+<!-- dummy comment line for breaking list -->
 
 ### 参考リンク
 - [Bare Bones Browser Launch for Java • • • Use Default Browser to Open a Web Page from a Swing Application](http://www.centerkey.com/)

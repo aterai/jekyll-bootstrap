@@ -5,6 +5,7 @@ category: swing
 folder: DisableRightClick
 tags: [JComboBox, BasicComboPopup, MouseListener, JList]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29

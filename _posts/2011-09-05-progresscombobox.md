@@ -5,6 +5,7 @@ category: swing
 folder: ProgressComboBox
 tags: [JComboBox, ListCellRenderer, JProgressBar, SwingWorker]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-05

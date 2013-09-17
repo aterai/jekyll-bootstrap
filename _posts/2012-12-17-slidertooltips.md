@@ -5,6 +5,7 @@ category: swing
 folder: SliderToolTips
 tags: [JSlider, JWindow, JToolTip]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-17

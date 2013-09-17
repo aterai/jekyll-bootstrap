@@ -5,6 +5,7 @@ category: swing
 folder: TranslucentTree
 tags: [JTree, Translucent, Transparent, TreeCellRenderer, UIDefaults]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-14

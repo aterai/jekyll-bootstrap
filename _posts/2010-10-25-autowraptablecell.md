@@ -5,6 +5,7 @@ category: swing
 folder: AutoWrapTableCell
 tags: [JTable, JTextArea, TableCellRenderer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-25

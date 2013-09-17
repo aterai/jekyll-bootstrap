@@ -5,6 +5,7 @@ category: swing
 folder: HtmlDisable
 tags: [JLabel, Html, JToolTip]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-21

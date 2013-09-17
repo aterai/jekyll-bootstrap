@@ -5,6 +5,7 @@ category: swing
 folder: EditTabTitle
 tags: [JTabbedPane, GlassPane, JTextField]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27

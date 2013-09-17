@@ -5,6 +5,7 @@ category: swing
 folder: DnDTabbedPane
 tags: [JTabbedPane, DragAndDrop, GlassPane, DragGestureListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-27

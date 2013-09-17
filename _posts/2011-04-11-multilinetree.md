@@ -5,6 +5,7 @@ category: swing
 folder: MultiLineTree
 tags: [JList, TreeCellRenderer, JTextArea, Html]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11

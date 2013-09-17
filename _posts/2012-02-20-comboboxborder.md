@@ -5,6 +5,7 @@ category: swing
 folder: ComboBoxBorder
 tags: [JComboBox, UIManager, Border, ArrowButton, MouseListener, BasicComboPopup]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-20

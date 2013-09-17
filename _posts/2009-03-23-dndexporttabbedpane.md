@@ -5,6 +5,7 @@ category: swing
 folder: DnDExportTabbedPane
 tags: [JTabbedPane, TransferHandler, DragAndDrop, GlassPane, Cursor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
@@ -185,7 +186,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
 - `6u20`ぐらいから`Web Start`で、`java.security.AccessControlException: access denied (java.awt.AWTPermission accessClipboard)`? -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-17 (木) 01:57:34
     - チュートリアルのデモ[Demo - DropDemo (The Java™ Tutorials > Creating a GUI With JFC/Swing Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/dnd/dropmodedemo.html)でも同様のエラーが発生するので多分`Java 1.6.0_??`のバグ。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-17 (木) 14:31:14
     - `6u21`では、修正されている？: [6945178 2-High Defect SecurityException upon drag-and-drop(Bug/RFE fixed in JDK 6u21 build)](http://download.java.net/jdk6/6u21/promoted/b05/changes/JDK6u21.b05.list.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-17 (木) 14:32:45
-    - 修正されたようです。[Java SE 6 Update 21 Bug Fixes](http://java.sun.com/javase/6/webnotes/BugFixes6u21.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-07-08 (木) 21:54:27
+    - 修正されたようです。[Java SE 6 Update 21 Bug Fixes](http://www.oracle.com/technetwork/java/javase/bugfixes6u21-156339.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-07-08 (木) 21:54:27
 - `getTabPlacement()==RIGHT`などの場合に、`DropTarget`の描画がおかしくなるのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-05 (日) 11:13:40
 
 <!-- dummy comment line for breaking list -->

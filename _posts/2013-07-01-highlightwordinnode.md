@@ -5,6 +5,7 @@ category: swing
 folder: HighlightWordInNode
 tags: [JTree, TreeCellRenderer, JTextField, HighlightPainter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-01

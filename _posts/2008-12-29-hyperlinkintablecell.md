@@ -5,6 +5,7 @@ category: swing
 folder: HyperlinkInTableCell
 tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener, Html, Desktop]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-29

@@ -5,6 +5,7 @@ category: swing
 folder: DisabledTextColor
 tags: [JCheckBox, JComboBox, UIManager, Html, JLabel, JButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-06

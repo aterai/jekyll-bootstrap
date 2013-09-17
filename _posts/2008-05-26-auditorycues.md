@@ -5,6 +5,7 @@ category: swing
 folder: AuditoryCues
 tags: [UIManager, AuditoryCues, Sound, JOptionPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-26

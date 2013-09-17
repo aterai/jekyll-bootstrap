@@ -5,6 +5,7 @@ category: swing
 folder: DifferentCellHeight
 tags: [JList, JTextArea, ListCellRenderer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-15

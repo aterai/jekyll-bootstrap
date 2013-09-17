@@ -5,6 +5,7 @@ category: swing
 folder: CheckBoxColor
 tags: [JCheckBox, Icon, UIManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-09

@@ -5,6 +5,7 @@ category: swing
 folder: CurveLayout
 tags: [LayoutManager, FlowLayout, JPanel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-27

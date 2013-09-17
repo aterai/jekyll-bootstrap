@@ -5,6 +5,7 @@ category: swing
 folder: ToggleButtonBar
 tags: [JRadioButton, Icon, Path2D]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-19

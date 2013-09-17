@@ -5,6 +5,7 @@ category: swing
 folder: SelectAllButton
 tags: [JTable, ActionMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-22

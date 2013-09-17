@@ -5,6 +5,7 @@ category: swing
 folder: PaddingComboBox
 tags: [JComboBox, Border, LookAndFeel, JTextField]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-28

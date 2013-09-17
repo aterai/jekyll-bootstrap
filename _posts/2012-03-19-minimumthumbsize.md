@@ -5,6 +5,7 @@ category: swing
 folder: MinimumThumbSize
 tags: [JScrollBar, UIManager, JSlider]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19

@@ -5,6 +5,7 @@ category: swing
 folder: CellEditorBorder
 tags: [JTable, TableCellEditor, Border]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-22

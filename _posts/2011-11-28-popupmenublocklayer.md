@@ -5,6 +5,7 @@ category: swing
 folder: PopupMenuBlockLayer
 tags: [JLayer, GlassPane, JScrollPane, JComponent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28

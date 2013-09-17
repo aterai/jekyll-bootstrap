@@ -5,6 +5,7 @@ category: swing
 folder: TransformedShape
 tags: [Font, Shape, TextLayout, Animation, AffineTransform]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-30

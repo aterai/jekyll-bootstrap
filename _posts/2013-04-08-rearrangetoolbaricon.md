@@ -5,6 +5,7 @@ category: swing
 folder: RearrangeToolBarIcon
 tags: [JToolBar, JLabel, Icon, DragAndDrop, MouseListener, MouseMotionListener, JWindow]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08

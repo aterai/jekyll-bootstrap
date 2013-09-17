@@ -5,6 +5,7 @@ category: swing
 folder: MouseDrivenImageRotation
 tags: [ImageIcon, MouseListener, MouseMotionListener, AffineTransform]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-25

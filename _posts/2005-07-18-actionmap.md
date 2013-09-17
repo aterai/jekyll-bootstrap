@@ -5,6 +5,7 @@ category: swing
 folder: ActionMap
 tags: [JTextField, DefaultEditorKit, ActionMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-18

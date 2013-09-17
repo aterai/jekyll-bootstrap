@@ -5,6 +5,7 @@ category: swing
 folder: LightboxLikeDisplay
 tags: [GlassPane, JFrame, Animation, ImageIcon]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-08

@@ -5,6 +5,7 @@ category: swing
 folder: ComboCellEditor
 tags: [JTable, TableCellEditor, JComboBox, TableColumn]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-26

@@ -5,6 +5,7 @@ category: swing
 folder: ClearGroupSelection
 tags: [JRadioButton, JToggleButton, ButtonGroup]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-16

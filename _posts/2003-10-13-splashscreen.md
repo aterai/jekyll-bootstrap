@@ -5,6 +5,7 @@ category: swing
 folder: SplashScreen
 tags: [JWindow, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-13
@@ -83,8 +84,8 @@ public void showPanel() {
 - - - -
 `Java SE 6`では、起動時にスプラッシュ・スクリーンとして表示する画像をコマンドラインや`manifest.mf`で指定したり、`SplashScreen`オブジェクトを生成して表示することができるようです。
 
-- [SPLASH SCREENS AND JAVA SE 6](http://java.sun.com/developer/JDCTechTips/2005/tt1115.html#1)
-- [New Splash-Screen Functionality in Java SE 6](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/javase6/splashscreen/)
+- [SPLASH SCREENS AND JAVA SE 6](http://web.archive.org/web/20090419180550/http://java.sun.com/developer/JDCTechTips/2005/tt1115.html#1)
+- [New Splash-Screen Functionality in Java SE 6](http://www.oracle.com/technetwork/articles/javase/splashscreen-135938.html)
 
 <!-- dummy comment line for breaking list -->
 

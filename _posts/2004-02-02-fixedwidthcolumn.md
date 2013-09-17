@@ -5,6 +5,7 @@ category: swing
 folder: FixedWidthColumn
 tags: [JTable, JTableHeader, TableColumn]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-02-02

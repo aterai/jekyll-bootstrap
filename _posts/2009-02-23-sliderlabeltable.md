@@ -5,6 +5,7 @@ category: swing
 folder: SliderLabelTable
 tags: [JSlider, JLabel, Icon, JButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-23

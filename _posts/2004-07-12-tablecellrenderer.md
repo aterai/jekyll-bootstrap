@@ -5,6 +5,7 @@ category: swing
 folder: TableCellRenderer
 tags: [JTable, TableCellRenderer, JTextArea, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-12

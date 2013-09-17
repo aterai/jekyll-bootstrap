@@ -5,6 +5,7 @@ category: swing
 folder: MouseInfo
 tags: [MouseInfo, Timer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-29

@@ -5,6 +5,7 @@ category: swing
 folder: TreeComboBox
 tags: [JComboBox, TreeModel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-11

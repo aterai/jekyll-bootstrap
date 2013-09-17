@@ -5,6 +5,7 @@ category: swing
 folder: UndoManager
 tags: [JTextField, JTextComponent, UndoManager, ActionMap, Document]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-15

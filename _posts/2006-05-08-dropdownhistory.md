@@ -5,6 +5,7 @@ category: swing
 folder: DropDownHistory
 tags: [JComboBox]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-08

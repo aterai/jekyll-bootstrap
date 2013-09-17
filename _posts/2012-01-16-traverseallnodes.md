@@ -5,6 +5,7 @@ category: swing
 folder: TraverseAllNodes
 tags: [JTree, Enumeration, TreeModel, DefaultMutableTreeNode]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-16

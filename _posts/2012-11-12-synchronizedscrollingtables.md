@@ -5,6 +5,7 @@ category: swing
 folder: SynchronizedScrollingTables
 tags: [JTable, JScrollPane, JScrollBar, JSplitPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-12

@@ -5,6 +5,7 @@ category: swing
 folder: SortableTable
 tags: [JTable, JTableHeader]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-05

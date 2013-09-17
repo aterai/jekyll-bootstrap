@@ -5,6 +5,7 @@ category: swing
 folder: CheckedRowColor
 tags: [JTable, JCheckBox, TableModelListener, TableCellRenderer, TableCellEditor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14

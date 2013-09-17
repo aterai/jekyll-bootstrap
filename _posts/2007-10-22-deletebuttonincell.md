@@ -5,6 +5,7 @@ category: swing
 folder: DeleteButtonInCell
 tags: [JTable, JButton, TableCellRenderer, TableCellEditor, ActionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22

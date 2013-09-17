@@ -5,6 +5,7 @@ category: swing
 folder: TreeClearSelection
 tags: [JTree, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-06

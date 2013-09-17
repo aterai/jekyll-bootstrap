@@ -5,6 +5,7 @@ category: swing
 folder: DisableScrolling
 tags: [JScrollPane, JScrollBar]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-03

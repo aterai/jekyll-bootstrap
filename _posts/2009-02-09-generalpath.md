@@ -5,6 +5,7 @@ category: swing
 folder: GeneralPath
 tags: [GeneralPath, Path2D, Polygon, Icon, AffineTransform]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-09

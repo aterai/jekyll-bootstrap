@@ -5,6 +5,7 @@ category: swing
 folder: TextLayout
 tags: [Font, TextLayout, GlyphVector, LineMetrics, Graphics]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-09

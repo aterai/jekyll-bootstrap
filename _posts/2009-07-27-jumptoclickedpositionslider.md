@@ -5,6 +5,7 @@ category: swing
 folder: JumpToClickedPositionSlider
 tags: [JSlider, MouseMotionListener, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27

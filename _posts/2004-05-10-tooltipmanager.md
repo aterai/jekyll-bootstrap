@@ -5,6 +5,7 @@ category: swing
 folder: ToolTipManager
 tags: [ToolTipManager, JToolTip]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-10

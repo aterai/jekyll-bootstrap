@@ -5,6 +5,7 @@ category: swing
 folder: PersistenceService
 tags: [ServiceManager, PersistenceService, JFrame, SwingWorker, XMLEncoder, XMLDecoder]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-26

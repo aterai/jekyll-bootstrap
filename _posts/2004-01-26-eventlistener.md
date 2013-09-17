@@ -5,6 +5,7 @@ category: swing
 folder: EventListener
 tags: [EventListener, EventListenerList]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-26

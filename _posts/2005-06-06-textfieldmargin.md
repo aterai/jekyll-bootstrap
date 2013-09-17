@@ -5,6 +5,7 @@ category: swing
 folder: TextFieldMargin
 tags: [JTextField, UIManager, Border]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-06

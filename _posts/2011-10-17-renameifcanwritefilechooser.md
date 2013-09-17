@@ -5,6 +5,7 @@ category: swing
 folder: RenameIfCanWriteFileChooser
 tags: [JFileChooser, File, BasicDirectoryModel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-17

@@ -5,6 +5,7 @@ category: swing
 folder: TreeLeafIcon
 tags: [JTree, Icon, TreeCellRenderer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-14

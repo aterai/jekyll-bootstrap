@@ -5,6 +5,7 @@ category: swing
 folder: IconScrollBar
 tags: [JScrollBar]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-26

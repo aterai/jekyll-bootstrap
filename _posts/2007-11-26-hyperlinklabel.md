@@ -5,6 +5,7 @@ category: swing
 folder: HyperlinkLabel
 tags: [Html, JLabel, JButton, JEditorPane, HyperlinkListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-26

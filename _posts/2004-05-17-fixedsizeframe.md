@@ -5,6 +5,7 @@ category: swing
 folder: FixedSizeFrame
 tags: [JFrame, JDialog]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-17

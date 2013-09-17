@@ -5,6 +5,7 @@ category: swing
 folder: LeafTreeCellEditor
 tags: [JTree, TreeCellEditor, TreeNode]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-12

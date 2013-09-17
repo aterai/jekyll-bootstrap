@@ -5,6 +5,7 @@ category: swing
 folder: FileListFlavor
 tags: [DragAndDrop, JTable, DropTargetListener, TransferHandler]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-20

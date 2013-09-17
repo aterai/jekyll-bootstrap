@@ -5,6 +5,7 @@ category: swing
 folder: SelectionKeeper
 tags: [JTable, JTableHeader, TableSorter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-12

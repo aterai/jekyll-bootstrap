@@ -5,6 +5,7 @@ category: swing
 folder: PreventStartCellEditing
 tags: [JTable, TableModel, DefaultCellEditor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-16

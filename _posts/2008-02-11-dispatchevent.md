@@ -5,6 +5,7 @@ category: swing
 folder: DispatchEvent
 tags: [AWTEvent, Toolkit, AWTEventListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-11

@@ -5,6 +5,7 @@ category: swing
 folder: HorizontalFlip
 tags: [Shape, Font, AffineTransform]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-28

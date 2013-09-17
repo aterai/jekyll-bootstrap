@@ -5,6 +5,7 @@ category: swing
 folder: CenterFrame
 tags: [JFrame]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-29

@@ -5,6 +5,7 @@ category: swing
 folder: FileHistory
 tags: [JMenu, File]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-10

@@ -5,6 +5,7 @@ category: swing
 folder: DisplayMessage
 tags: [TrayIcon, ActionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-07

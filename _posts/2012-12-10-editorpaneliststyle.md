@@ -5,6 +5,7 @@ category: swing
 folder: EditorPaneListStyle
 tags: [JEditorPane, HTMLEditorKit, StyleSheet]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-10

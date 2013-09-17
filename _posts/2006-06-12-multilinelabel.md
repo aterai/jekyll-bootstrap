@@ -5,6 +5,7 @@ category: swing
 folder: MultiLineLabel
 tags: [JLabel, JTextArea, JTextPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-12

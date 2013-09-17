@@ -5,6 +5,7 @@ category: swing
 folder: DecimalFormatSymbols
 tags: [JSpinner, SpinnerNumberModel, JFormattedTextField, DecimalFormatSymbols]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-03

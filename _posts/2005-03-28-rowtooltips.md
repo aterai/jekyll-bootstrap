@@ -5,6 +5,7 @@ category: swing
 folder: RowTooltips
 tags: [JTable, JToolTip, TableCellRenderer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-28

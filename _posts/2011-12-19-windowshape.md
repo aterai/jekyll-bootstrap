@@ -5,6 +5,7 @@ category: swing
 folder: WindowShape
 tags: [JFrame, Shape, TextLayout]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-19

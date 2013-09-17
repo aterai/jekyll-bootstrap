@@ -5,6 +5,7 @@ category: swing
 folder: NumberEditor
 tags: [JSpinner]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-31

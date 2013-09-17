@@ -5,6 +5,7 @@ category: swing
 folder: LineSpacing
 tags: [JEditorPane, JTextPane, StyledEditorKit]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-02

@@ -5,6 +5,7 @@ category: swing
 folder: ProgressStringLayer
 tags: [JProgressBar, JLayer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-10

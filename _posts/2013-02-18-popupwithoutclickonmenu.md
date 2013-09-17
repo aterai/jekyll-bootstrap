@@ -5,6 +5,7 @@ category: swing
 folder: PopupWithoutClickOnMenu
 tags: [JMenu, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-18

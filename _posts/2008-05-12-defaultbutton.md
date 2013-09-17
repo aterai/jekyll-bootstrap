@@ -5,6 +5,7 @@ category: swing
 folder: DefaultButton
 tags: [JRootPane, JButton, JTextField, Focus]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-12

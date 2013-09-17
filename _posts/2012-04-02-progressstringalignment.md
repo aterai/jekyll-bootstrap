@@ -5,6 +5,7 @@ category: swing
 folder: ProgressStringAlignment
 tags: [JProgressBar, JLabel, BorderLayout, Alignment]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-02

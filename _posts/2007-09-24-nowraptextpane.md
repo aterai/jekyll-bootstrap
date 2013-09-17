@@ -5,6 +5,7 @@ category: swing
 folder: NoWrapTextPane
 tags: [JEditorPane, JTextPane, StyledDocument]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24

@@ -5,6 +5,7 @@ category: swing
 folder: MultipleButtonsInTableCell
 tags: [JTable, TableCellEditor, TableCellRenderer, JButton, JPanel, ActionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05

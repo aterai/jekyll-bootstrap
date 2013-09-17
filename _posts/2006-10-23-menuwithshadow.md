@@ -5,6 +5,7 @@ category: swing
 folder: MenuWithShadow
 tags: [JPopupMenu, UIManager, Robot, Translucent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23

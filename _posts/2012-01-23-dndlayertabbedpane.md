@@ -5,6 +5,7 @@ category: swing
 folder: DnDLayerTabbedPane
 tags: [JLayer, JTabbedPane, DragAndDrop, TransferHandler, JWindow, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-23

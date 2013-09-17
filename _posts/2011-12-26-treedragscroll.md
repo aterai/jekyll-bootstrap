@@ -5,6 +5,7 @@ category: swing
 folder: TreeDragScroll
 tags: [MouseListener, MouseMotionListener, JViewport, JScrollPane, JTree, JComponent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-26

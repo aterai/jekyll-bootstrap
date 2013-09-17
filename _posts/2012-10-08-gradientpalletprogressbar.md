@@ -5,6 +5,7 @@ category: swing
 folder: GradientPalletProgressBar
 tags: [JProgressBar, PixelGrabber, LinearGradientPaint]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-08

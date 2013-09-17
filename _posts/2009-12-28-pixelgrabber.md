@@ -5,6 +5,7 @@ category: swing
 folder: PixelGrabber
 tags: [PixelGrabber, MemoryImageSource, BufferedImage, Graphics2D]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-28

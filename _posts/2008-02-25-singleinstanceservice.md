@@ -5,6 +5,7 @@ category: swing
 folder: SingleInstanceService
 tags: [SingleInstanceService, ServiceManager, SingleInstance]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-25

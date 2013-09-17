@@ -5,6 +5,7 @@ category: swing
 folder: TableCellProgressBar
 tags: [JTable, JProgressBar, TableCellRenderer, SwingWorker]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-01

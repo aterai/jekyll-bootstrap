@@ -5,6 +5,7 @@ category: swing
 folder: TableSortIcon
 tags: [JTable, JTableHeader, Icon, UIManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-07

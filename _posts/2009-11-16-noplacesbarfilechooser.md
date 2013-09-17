@@ -5,6 +5,7 @@ category: swing
 folder: NoPlacesBarFileChooser
 tags: [JFileChooser, PlacesBar]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-16

@@ -5,6 +5,7 @@ category: swing
 folder: ScrollingMessage
 tags: [GlyphVector, LineMetrics, TextLayout, Animation, JComponent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-13

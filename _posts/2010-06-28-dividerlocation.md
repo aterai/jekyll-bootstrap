@@ -5,6 +5,7 @@ category: swing
 folder: DividerLocation
 tags: [JSplitPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-28

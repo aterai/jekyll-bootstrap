@@ -5,6 +5,7 @@ category: swing
 folder: AnimatedGif
 tags: [JLabel, Animation]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-14

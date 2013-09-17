@@ -5,6 +5,7 @@ category: swing
 folder: TabTitleHighlight
 tags: [JTabbedPane, MouseMotionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-10

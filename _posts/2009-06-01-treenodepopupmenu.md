@@ -5,6 +5,7 @@ category: swing
 folder: TreeNodePopupMenu
 tags: [JTree, JPopupMenu, TreePath]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-01

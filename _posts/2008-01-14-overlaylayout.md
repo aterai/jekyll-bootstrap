@@ -5,6 +5,7 @@ category: swing
 folder: OverlayLayout
 tags: [OverlayLayout, LayoutManager, JButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-14

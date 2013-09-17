@@ -5,6 +5,7 @@ category: swing
 folder: ScrollBarSearchHighlighter
 tags: [JScrollBar, JScrollPane, JTextArea, JTextComponent, JViewport, Icon, Highlighter, Pattern, Matcher, MatteBorder]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-28

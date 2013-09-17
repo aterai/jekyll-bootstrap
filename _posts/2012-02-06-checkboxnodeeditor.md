@@ -5,6 +5,7 @@ category: swing
 folder: CheckBoxNodeEditor
 tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, TreeModelListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06

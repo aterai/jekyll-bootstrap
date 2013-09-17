@@ -5,6 +5,7 @@ category: swing
 folder: RatingLabel
 tags: [ImageIcon, RGBImageFilter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-21

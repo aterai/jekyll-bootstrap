@@ -5,6 +5,7 @@ category: swing
 folder: ProgressMonitorInputStream
 tags: [ProgressMonitorInputStream, ProgressMonitor, JProgressBar, SwingWorker, URLConnection, JTextArea]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-22
@@ -122,7 +123,7 @@ worker.execute();
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [ProgressMonitorがダイアログを表示までの待ち時間](http://terai.xrea.jp/Swing/MillisToDecideToPopup.html)
+- [ProgressMonitorがダイアログを表示するまでの待ち時間](http://terai.xrea.jp/Swing/MillisToDecideToPopup.html)
 
 <!-- dummy comment line for breaking list -->
 

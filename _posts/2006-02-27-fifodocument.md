@@ -5,6 +5,7 @@ category: swing
 folder: FIFODocument
 tags: [JTextArea, DocumentListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-27

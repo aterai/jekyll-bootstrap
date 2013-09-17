@@ -5,6 +5,7 @@ category: swing
 folder: FocusColor
 tags: [JTextField, FocusListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-07

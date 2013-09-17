@@ -5,6 +5,7 @@ category: swing
 folder: AnimatedCursor
 tags: [Cursor, Animation]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-01

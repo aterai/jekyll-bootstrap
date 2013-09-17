@@ -5,6 +5,7 @@ category: swing
 folder: ToolTipLocation
 tags: [JToolTip, JWindow, MouseListener, MouseMotionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03

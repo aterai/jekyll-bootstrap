@@ -5,6 +5,7 @@ category: swing
 folder: EaseInOut
 tags: [JTextArea, OverlayLayout, JLabel, MouseListener, Animation]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-09

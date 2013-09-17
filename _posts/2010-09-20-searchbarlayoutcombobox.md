@@ -5,6 +5,7 @@ category: swing
 folder: SearchBarLayoutComboBox
 tags: [JComboBox, JButton, ArrowButton, LayoutManager, JTextField, PopupMenuListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20

@@ -5,6 +5,7 @@ category: swing
 folder: DeleteKeyBeep
 tags: [JTextField, Beep, ActionMap, DocumentFilter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-01

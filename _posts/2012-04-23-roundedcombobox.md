@@ -5,6 +5,7 @@ category: swing
 folder: RoundedComboBox
 tags: [JComboBox, Border, Path2D, ArrowButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-23

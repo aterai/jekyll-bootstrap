@@ -5,6 +5,7 @@ category: swing
 folder: TerminateEdit
 tags: [JTable, Focus, JTableHeader, TableCellEditor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-16

@@ -5,6 +5,7 @@ category: swing
 folder: TranslucentTextField
 tags: [JTextField, Translucent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-11

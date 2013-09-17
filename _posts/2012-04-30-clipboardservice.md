@@ -5,6 +5,7 @@ category: swing
 folder: ClipboardService
 tags: [ServiceManager, ClipboardService, JTextComponent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-30

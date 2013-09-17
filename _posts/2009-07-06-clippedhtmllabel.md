@@ -5,6 +5,7 @@ category: swing
 folder: ClippedHtmlLabel
 tags: [Html, JTable, TableCellRenderer, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-06

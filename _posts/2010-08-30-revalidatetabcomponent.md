@@ -5,6 +5,7 @@ category: swing
 folder: RevalidateTabComponent
 tags: [JTabbedPane, JPopupMenu, JButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-30

@@ -5,6 +5,7 @@ category: swing
 folder: TexturePaint
 tags: [TexturePaint, BufferedImage, Graphics2D]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-20

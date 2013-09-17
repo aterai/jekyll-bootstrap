@@ -5,6 +5,7 @@ category: swing
 folder: VolumeSlider
 tags: [JSlider]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-04

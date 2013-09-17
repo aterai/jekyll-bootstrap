@@ -5,6 +5,7 @@ category: swing
 folder: RandomDissolve
 tags: [Animation, Graphics, BufferedImage, WritableRaster]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-26

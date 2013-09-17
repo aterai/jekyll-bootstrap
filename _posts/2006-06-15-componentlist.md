@@ -5,6 +5,7 @@ category: swing
 folder: ComponentList
 tags: [BoxLayout, LayoutManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-15

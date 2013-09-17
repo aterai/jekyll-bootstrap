@@ -5,6 +5,7 @@ category: swing
 folder: SelectNextRow
 tags: [JTable, InputMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-18

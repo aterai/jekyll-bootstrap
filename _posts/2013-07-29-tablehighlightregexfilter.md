@@ -5,6 +5,7 @@ category: swing
 folder: TableHighlightRegexFilter
 tags: [JTable, RowFilter, TableRowSorter, Highlighter, TableCellRenderer, JTextField, Pattern, Matcher]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29

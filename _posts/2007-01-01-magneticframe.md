@@ -5,6 +5,7 @@ category: swing
 folder: MagneticFrame
 tags: [DesktopManager, JDesktopPane, JInternalFrame]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-01

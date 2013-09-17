@@ -5,6 +5,7 @@ category: swing
 folder: CellEditorLayout
 tags: [JTable, TableCellEditor, BorderLayout, JTextField, JButton, Focus, KeyboardFocusManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02

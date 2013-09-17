@@ -5,6 +5,7 @@ category: swing
 folder: BoldMetal
 tags: [MetalLookAndFeel, LookAndFeel, Font, UIManager, Html]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-21

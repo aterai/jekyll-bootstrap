@@ -5,6 +5,7 @@ category: swing
 folder: LineNumber
 tags: [JTextArea, FontMetrics, JScrollPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-20

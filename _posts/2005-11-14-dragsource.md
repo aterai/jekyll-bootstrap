@@ -5,6 +5,7 @@ category: swing
 folder: DragSource
 tags: [DragAndDrop, File, DragGestureListener, TransferHandler]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-14

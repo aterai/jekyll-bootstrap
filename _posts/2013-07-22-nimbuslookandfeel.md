@@ -5,6 +5,7 @@ category: swing
 folder: NimbusLookAndFeel
 tags: [LookAndFeel, NimbusLookAndFeel, UIManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-22

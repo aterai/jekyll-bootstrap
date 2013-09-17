@@ -5,6 +5,7 @@ category: swing
 folder: FlatteningPathIterator
 tags: [Shape, PathIterator, FlatteningPathIterator]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-08

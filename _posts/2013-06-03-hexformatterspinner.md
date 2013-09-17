@@ -5,6 +5,7 @@ category: swing
 folder: HexFormatterSpinner
 tags: [JSpinner, DefaultFormatter, Font]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-03

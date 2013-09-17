@@ -5,6 +5,7 @@ category: swing
 folder: AnimeIcon
 tags: [Timer, Animation, Icon]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-13

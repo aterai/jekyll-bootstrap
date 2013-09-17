@@ -5,6 +5,7 @@ category: swing
 folder: ExtractFramesFromAnimatedGif
 tags: [ImageIO, ImageReader, BufferedImage, Animation]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-18

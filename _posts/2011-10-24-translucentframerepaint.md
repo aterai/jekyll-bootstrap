@@ -5,6 +5,7 @@ category: swing
 folder: TranslucentFrameRepaint
 tags: [JFrame, Translucent, JPanel, JLabel, TexturePaint]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-24

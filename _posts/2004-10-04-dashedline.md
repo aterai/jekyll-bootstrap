@@ -5,6 +5,7 @@ category: swing
 folder: DashedLine
 tags: [BasicStroke, Graphics2D]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-04
@@ -41,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-04
 上記のサンプルでは、カンマ区切りで記入した数値を配列に分解し、これを破線のパターンとして`BasicStroke`に渡しています。
 
 ### 参考リンク
-- [Stroking and Filling Graphics Primitives](http://java.sun.com/docs/books/tutorial/2d/geometry/strokeandfill.html)
+- [Stroking and Filling Graphics Primitives (The Java™ Tutorials > 2D Graphics > Working with Geometry)](http://docs.oracle.com/javase/tutorial/2d/geometry/strokeandfill.html)
 
 <!-- dummy comment line for breaking list -->
 

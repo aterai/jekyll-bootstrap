@@ -5,6 +5,7 @@ category: swing
 folder: ComboCellRenderer
 tags: [JTable, JComboBox, TableCellRenderer, TableCellEditor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19

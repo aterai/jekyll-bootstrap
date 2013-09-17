@@ -5,6 +5,7 @@ category: swing
 folder: AutomaticallyCloseDialog
 tags: [JOptionPane, Timer, HierarchyListener, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02

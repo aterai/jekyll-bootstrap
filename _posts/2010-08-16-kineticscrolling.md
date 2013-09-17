@@ -5,6 +5,7 @@ category: swing
 folder: KineticScrolling
 tags: [JScrollPane, Animation, MouseListener, JViewport]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16

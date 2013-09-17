@@ -5,6 +5,7 @@ category: swing
 folder: RecursiveFileSearch
 tags: [File, JProgressBar, SwingWorker]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15

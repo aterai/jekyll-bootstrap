@@ -5,6 +5,7 @@ category: swing
 folder: OptionPaneDefaultFocus
 tags: [JOptionPane, Focus, JComponent, WindowListener, HierarchyListener, AncestorListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-23

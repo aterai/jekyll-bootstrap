@@ -5,6 +5,7 @@ category: swing
 folder: TranslucentButton
 tags: [JButton, Translucent, GradientPaint, Icon, Html, OverlayLayout, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31

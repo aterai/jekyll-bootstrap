@@ -5,6 +5,7 @@ category: swing
 folder: SelectedTabHeight
 tags: [JTabbedPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-05

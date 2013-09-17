@@ -5,6 +5,7 @@ category: swing
 folder: HandScroll
 tags: [JScrollPane, JViewport, MouseListener, MouseMotionListener, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-02

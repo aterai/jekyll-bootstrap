@@ -5,6 +5,7 @@ category: swing
 folder: StrokeBorder
 tags: [Border, StrokeBorder, BasicStroke]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-23

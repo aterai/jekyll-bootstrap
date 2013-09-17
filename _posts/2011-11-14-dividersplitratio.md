@@ -5,6 +5,7 @@ category: swing
 folder: DividerSplitRatio
 tags: [JSplitPane, JFrame]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-14

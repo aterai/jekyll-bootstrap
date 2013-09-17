@@ -5,6 +5,7 @@ category: swing
 folder: DesktopProperty
 tags: [Toolkit, PropertyChangeListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-29

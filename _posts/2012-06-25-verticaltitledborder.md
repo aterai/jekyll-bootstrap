@@ -5,6 +5,7 @@ category: swing
 folder: VerticalTitledBorder
 tags: [Border, TitledBorder, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-25

@@ -5,6 +5,7 @@ category: swing
 folder: ShowingDisplayableVisible
 tags: [JComponent, HierarchyListener, JScrollPane, JTabbedPane, CardLayout]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-20

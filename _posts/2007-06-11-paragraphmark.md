@@ -5,6 +5,7 @@ category: swing
 folder: ParagraphMark
 tags: [JEditorPane, StyledEditorKit]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-11

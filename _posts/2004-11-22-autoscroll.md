@@ -5,6 +5,7 @@ category: swing
 folder: AutoScroll
 tags: [JScrollPane, JViewport, JScrollPane, DragAndDrop, Timer, MouseListener, MouseMotionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22

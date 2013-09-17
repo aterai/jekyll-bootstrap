@@ -5,6 +5,7 @@ category: swing
 folder: JLayeredPane1
 tags: [JLayeredPane, JPanel, MouseListener, MouseMotionListener]
 author: Taka
+comments: true
 ---
 
 Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24

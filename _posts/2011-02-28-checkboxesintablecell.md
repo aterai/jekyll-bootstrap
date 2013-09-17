@@ -5,6 +5,7 @@ category: swing
 folder: CheckBoxesInTableCell
 tags: [JTable, JCheckBox, TableCellRenderer, TableCellEditor, JPanel, InputMap, ActionMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28

@@ -5,6 +5,7 @@ category: swing
 folder: EmptySelectionList
 tags: [JList, ListCellRenderer, ListSelectionModel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-14

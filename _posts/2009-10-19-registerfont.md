@@ -5,6 +5,7 @@ category: swing
 folder: RegisterFont
 tags: [Font, GraphicsEnvironment, Html, StyleSheet, JLabel, JEditorPane, JTextPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-19

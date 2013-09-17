@@ -5,6 +5,7 @@ category: swing
 folder: LeftClippedComboBox
 tags: [JComboBox, ListCellRenderer, ArrowButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-18

@@ -5,6 +5,7 @@ category: swing
 folder: CustomDecoratedFrame
 tags: [JFrame, MouseListener, MouseMotionListener, JPanel, JLabel, ContentPane, Transparent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-18

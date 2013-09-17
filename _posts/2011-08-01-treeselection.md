@@ -5,6 +5,7 @@ category: swing
 folder: TreeSelection
 tags: [JTree, TreePath]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-01

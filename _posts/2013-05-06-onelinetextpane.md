@@ -5,6 +5,7 @@ category: swing
 folder: OneLineTextPane
 tags: [JTextPane, StyledDocument, JScrollPane, JTextField, KeyboardFocusManager, Focus, InputMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-06

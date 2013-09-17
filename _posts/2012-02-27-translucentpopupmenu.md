@@ -5,6 +5,7 @@ category: swing
 folder: TranslucentPopupMenu
 tags: [JPopupMenu, JMenuItem, JWindow, Translucent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-27

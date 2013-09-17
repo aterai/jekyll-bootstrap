@@ -5,6 +5,7 @@ category: swing
 folder: DragSourceMotionListener
 tags: [DragAndDrop, JWindow, ImageIcon, JFrame]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-06

@@ -5,6 +5,7 @@ category: swing
 folder: HTMLAttributeID
 tags: [JEditorPane, HTMLDocument, Element, HTMLEditorKit, ParserDelegator, Highlighter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-09

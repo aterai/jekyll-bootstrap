@@ -5,6 +5,7 @@ category: swing
 folder: TabTitleEditor
 tags: [JTabbedPane, JTextField, MouseListener, ChangeListener, InputMap, ActionMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-08

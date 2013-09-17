@@ -5,6 +5,7 @@ category: swing
 folder: BooleanCellEditor
 tags: [JTable, TableCellEditor, JCheckBox]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-06

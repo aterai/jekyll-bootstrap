@@ -5,6 +5,7 @@ category: swing
 folder: RootPaneBackground
 tags: [JRootPane, BufferedImage, ContentPane, JDesktopPane, Translucent, Transparent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-07

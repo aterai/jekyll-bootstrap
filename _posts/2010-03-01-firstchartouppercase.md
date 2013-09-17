@@ -5,6 +5,7 @@ category: swing
 folder: FirstCharToUpperCase
 tags: [JTextField, DocumentFilter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-01

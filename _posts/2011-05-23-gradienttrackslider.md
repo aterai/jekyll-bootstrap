@@ -5,6 +5,7 @@ category: swing
 folder: GradientTrackSlider
 tags: [JSlider, LinearGradientPaint, Transparent, UIManager, Icon]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-23

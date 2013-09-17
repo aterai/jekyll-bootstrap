@@ -5,6 +5,7 @@ category: swing
 folder: HeaderTooltips
 tags: [JTable, JTableHeader, JToolTip]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-23

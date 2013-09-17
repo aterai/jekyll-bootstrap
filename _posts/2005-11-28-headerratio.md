@@ -5,6 +5,7 @@ category: swing
 folder: HeaderRatio
 tags: [JTable, JTableHeader, TableColumn, JScrollPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-28

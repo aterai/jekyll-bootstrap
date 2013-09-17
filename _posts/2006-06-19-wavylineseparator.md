@@ -5,6 +5,7 @@ category: swing
 folder: WavyLineSeparator
 tags: [JSeparator, Icon]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-19

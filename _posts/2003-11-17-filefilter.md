@@ -5,6 +5,7 @@ category: swing
 folder: FileFilter
 tags: [JFileChooser, FileFilter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-17

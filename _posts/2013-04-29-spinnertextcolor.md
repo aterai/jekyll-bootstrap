@@ -5,6 +5,7 @@ category: swing
 folder: SpinnerTextColor
 tags: [JSpinner, JComboBox, Html, ActionMap]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-29

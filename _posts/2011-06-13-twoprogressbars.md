@@ -5,6 +5,7 @@ category: swing
 folder: TwoProgressBars
 tags: [SwingWorker, JProgressBar, Enum, PropertyChangeListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-13

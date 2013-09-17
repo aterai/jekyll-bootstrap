@@ -5,6 +5,7 @@ category: swing
 folder: HeaderFont
 tags: [JTable, JTableHeader, TableCellRenderer, UIManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-23

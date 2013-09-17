@@ -5,6 +5,7 @@ category: swing
 folder: ButtonWidth
 tags: [JButton, JComboBox, JTextField, LayoutManager, SpringLayout]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-29

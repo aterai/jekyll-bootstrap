@@ -5,6 +5,7 @@ category: swing
 folder: InheritsPopupMenu
 tags: [JPopupMenu, JScrollPane, JViewport, JTable, JTableHeader]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-17

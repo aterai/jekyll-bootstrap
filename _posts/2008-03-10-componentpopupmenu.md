@@ -5,6 +5,7 @@ category: swing
 folder: ComponentPopupMenu
 tags: [JPopupMenu, JTextComponent, PopupMenuListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-10

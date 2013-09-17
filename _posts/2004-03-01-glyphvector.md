@@ -5,6 +5,7 @@ category: swing
 folder: GlyphVector
 tags: [JLabel, GlyphVector, JTextArea, LineBreakMeasurer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01

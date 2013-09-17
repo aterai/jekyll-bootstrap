@@ -5,6 +5,7 @@ category: swing
 folder: AffineTransformOp
 tags: [AffineTransformOp, BufferedImage, AffineTransform]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-11

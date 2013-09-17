@@ -5,6 +5,7 @@ category: swing
 folder: ButtonInTableHeader
 tags: [JTable, JTableHeader, JButton, JPopupMenu, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-07

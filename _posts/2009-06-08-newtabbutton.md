@@ -5,6 +5,7 @@ category: swing
 folder: NewTabButton
 tags: [CardLayout, LayoutManager, JRadioButton, JTabbedPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08

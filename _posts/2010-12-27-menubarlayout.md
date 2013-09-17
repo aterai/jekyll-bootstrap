@@ -5,6 +5,7 @@ category: swing
 folder: MenuBarLayout
 tags: [JMenuBar, JMenu, LayoutManager, FlowLayout]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-27

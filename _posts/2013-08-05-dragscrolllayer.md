@@ -5,6 +5,7 @@ category: swing
 folder: DragScrollLayer
 tags: [JScrollPane, JPanel, JLayer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-05

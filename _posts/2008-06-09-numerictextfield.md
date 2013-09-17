@@ -5,6 +5,7 @@ category: swing
 folder: NumericTextField
 tags: [JTextField, JFormattedTextField, InputVerifier, DocumentFilter, PlainDocument]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-09

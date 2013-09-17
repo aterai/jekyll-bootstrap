@@ -5,6 +5,7 @@ category: swing
 folder: TriStateSorting
 tags: [JTable, TableRowSorter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-15

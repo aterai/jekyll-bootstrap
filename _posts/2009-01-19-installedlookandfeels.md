@@ -5,6 +5,7 @@ category: swing
 folder: InstalledLookAndFeels
 tags: [LookAndFeel, UIManager, JMenuBar]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-19

@@ -5,6 +5,7 @@ category: swing
 folder: StartEditingPopupMenu
 tags: [JTree, JPopupMenu, TreeCellEditor, JOptionPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-19

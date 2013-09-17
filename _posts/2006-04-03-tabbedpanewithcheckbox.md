@@ -5,6 +5,7 @@ category: swing
 folder: TabbedPaneWithCheckBox
 tags: [JTabbedPane, JCheckBox, Border]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-03

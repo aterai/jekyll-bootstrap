@@ -5,6 +5,7 @@ category: swing
 folder: RemoveTableHeader
 tags: [JTable, JTableHeader, JScrollPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-01

@@ -5,6 +5,7 @@ category: swing
 folder: TabbedPaneWithText
 tags: [JTabbedPane, FontMetrics, JLayer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-26

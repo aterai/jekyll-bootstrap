@@ -5,6 +5,7 @@ category: swing
 folder: CellHighlight
 tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-21

@@ -5,6 +5,7 @@ category: swing
 folder: HideComboArrowButton
 tags: [JComboBox, ArrowButton, UIManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-22

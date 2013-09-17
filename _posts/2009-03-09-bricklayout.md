@@ -5,6 +5,7 @@ category: swing
 folder: BrickLayout
 tags: [GridBagLayout, LayoutManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-09

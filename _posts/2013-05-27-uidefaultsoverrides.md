@@ -5,6 +5,7 @@ category: swing
 folder: UIDefaultsOverrides
 tags: [NimbusLookAndFeel, UIDefaults, Painter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-27

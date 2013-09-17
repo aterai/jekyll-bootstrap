@@ -5,6 +5,7 @@ category: swing
 folder: ColorChannelSwapFilter
 tags: [JProgressBar, JLayer, RGBImageFilter, SwingWorker]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-24

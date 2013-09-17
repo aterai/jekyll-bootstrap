@@ -5,6 +5,7 @@ category: swing
 folder: InputHintPasswordField
 tags: [JPasswordField, TextLayout, Focus]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-04

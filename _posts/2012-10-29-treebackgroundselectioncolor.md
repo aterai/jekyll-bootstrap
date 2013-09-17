@@ -5,6 +5,7 @@ category: swing
 folder: TreeBackgroundSelectionColor
 tags: [JTree, TreeCellRenderer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-29

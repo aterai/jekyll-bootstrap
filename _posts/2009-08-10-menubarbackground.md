@@ -5,6 +5,7 @@ category: swing
 folder: MenuBarBackground
 tags: [JMenuBar, JMenu, JMenuItem, TexturePaint]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-10

@@ -5,6 +5,7 @@ category: swing
 folder: ClippedTitleTab
 tags: [JTabbedPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-08

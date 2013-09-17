@@ -5,6 +5,7 @@ category: swing
 folder: ClickTrayIcon
 tags: [TrayIcon, SystemTray, MouseListener, JFrame]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-13

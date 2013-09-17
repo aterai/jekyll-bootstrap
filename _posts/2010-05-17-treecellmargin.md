@@ -5,6 +5,7 @@ category: swing
 folder: TreeCellMargin
 tags: [JTree, TreeCellRenderer, Border, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-17

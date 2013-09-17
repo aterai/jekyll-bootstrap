@@ -5,6 +5,7 @@ category: swing
 folder: DisableInputLayer
 tags: [JLayer, GlassPane, InputEvent, JComponent]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10

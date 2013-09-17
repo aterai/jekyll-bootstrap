@@ -5,6 +5,7 @@ category: swing
 folder: SpinnerDateModel
 tags: [JSpinner, SpinnerDateModel, FocusListener, Calendar]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-22

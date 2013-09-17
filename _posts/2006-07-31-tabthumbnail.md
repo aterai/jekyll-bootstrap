@@ -5,6 +5,7 @@ category: swing
 folder: TabThumbnail
 tags: [JToolTip, JTabbedPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-31

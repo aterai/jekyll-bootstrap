@@ -5,6 +5,7 @@ category: swing
 folder: DeviceName
 tags: [File]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-08

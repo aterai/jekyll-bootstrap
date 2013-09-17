@@ -5,6 +5,7 @@ category: swing
 folder: ClippedTabLabel
 tags: [JTabbedPane, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-08

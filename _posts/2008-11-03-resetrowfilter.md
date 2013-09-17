@@ -5,6 +5,7 @@ category: swing
 folder: ResetRowFilter
 tags: [JTable, RowFilter, TableRowSorter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-03

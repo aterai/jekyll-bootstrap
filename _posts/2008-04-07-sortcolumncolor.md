@@ -5,6 +5,7 @@ category: swing
 folder: SortColumnColor
 tags: [JTable, TableCellRenderer, TableRowSorter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-07

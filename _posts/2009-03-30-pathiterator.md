@@ -5,6 +5,7 @@ category: swing
 folder: PathIterator
 tags: [Icon, Shape, PathIterator]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30

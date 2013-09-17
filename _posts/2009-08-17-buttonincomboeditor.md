@@ -5,6 +5,7 @@ category: swing
 folder: ButtonInComboEditor
 tags: [JComboBox, LayoutManager, JButton, JLabel, Icon, RGBImageFilter, RescaleOp]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-17

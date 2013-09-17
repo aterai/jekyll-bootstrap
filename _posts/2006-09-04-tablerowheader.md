@@ -5,6 +5,7 @@ category: swing
 folder: TableRowHeader
 tags: [JTable, JList, JScrollPane]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-04

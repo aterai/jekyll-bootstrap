@@ -5,6 +5,7 @@ category: swing
 folder: ApproveButtonText
 tags: [JFileChooser, UIManager, Mnemonic]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-20

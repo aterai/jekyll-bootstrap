@@ -5,6 +5,7 @@ category: swing
 folder: BlinkLabel
 tags: [JLabel, Timer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-12

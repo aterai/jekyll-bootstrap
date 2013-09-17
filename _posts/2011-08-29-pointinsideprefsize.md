@@ -5,6 +5,7 @@ category: swing
 folder: PointInsidePrefSize
 tags: [JTable, TableCellRenderer, MouseListener, URL]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-29

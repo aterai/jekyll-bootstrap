@@ -5,6 +5,7 @@ category: swing
 folder: SystemIcon
 tags: [SystemIcon, FileSystemView, ShellFolder]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-30

@@ -5,6 +5,7 @@ category: swing
 folder: CentredBackgroundBorder
 tags: [JTextArea, BufferedImage, Border, JViewport]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06

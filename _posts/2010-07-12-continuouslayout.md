@@ -5,6 +5,7 @@ category: swing
 folder: ContinuousLayout
 tags: [JSplitPane, PropertyChangeListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-12

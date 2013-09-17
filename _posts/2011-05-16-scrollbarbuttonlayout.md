@@ -5,6 +5,7 @@ category: swing
 folder: ScrollBarButtonLayout
 tags: [JScrollPane, JScrollBar, ArrowButton]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16

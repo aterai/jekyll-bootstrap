@@ -5,6 +5,7 @@ category: swing
 folder: CellTextAlignment
 tags: [JTable, TableCellRenderer, Alignment]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-25

@@ -5,6 +5,7 @@ category: swing
 folder: WindowOpacity
 tags: [JFrame, Translucent, Transparent, JRootPane, ContentPane, TexturePaint]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-14
@@ -48,7 +49,7 @@ frame.setVisible(true);
 
 ### 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
-- [How to Create Translucent and Shaped Windows](http://java.sun.com/developer/technicalArticles/GUI/translucent_shaped_windows/)
+- [How to Create Translucent and Shaped Windows (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Other Swing Features)](http://docs.oracle.com/javase/tutorial/uiswing/misc/trans_shaped_windows.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -5,6 +5,7 @@ category: swing
 folder: InactiveSpinnerInsets
 tags: [JSpinner, JTextField, Border, UIManager, LookAndFeel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23

@@ -5,6 +5,7 @@ category: swing
 folder: ResourceMenuBar
 tags: [JMenuBar, JMenu, JMenuItem, Properties, ResourceBundle]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-06

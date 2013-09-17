@@ -5,6 +5,7 @@ category: swing
 folder: JLayerDisabledText
 tags: [JLayer, GlassPane, Focus, Mnemonic, JPopupMenu, JToolTip]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-13

@@ -5,6 +5,7 @@ category: swing
 folder: TableHeaderCheckBox
 tags: [JTable, JTableHeader, JCheckBox, TableCellRenderer, MouseListener, Icon, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-16

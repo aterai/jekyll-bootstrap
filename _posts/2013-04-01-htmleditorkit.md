@@ -5,6 +5,7 @@ category: swing
 folder: HTMLEditorKit
 tags: [JTextPane, HTMLEditorKit, Html, JPopupMenu, JTextArea, JTabbedPane, ChangeListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-01

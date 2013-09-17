@@ -5,6 +5,7 @@ category: swing
 folder: OneTouchExpandable
 tags: [JSplitPane, ActionMap, ServiceManager, BasicService]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-05

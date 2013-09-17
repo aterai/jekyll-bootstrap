@@ -5,6 +5,7 @@ category: swing
 folder: RightPopupMenuComboBox
 tags: [JComboBox, JPopupMenu, PopupMenuListener, ArrowButton, Icon]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-22

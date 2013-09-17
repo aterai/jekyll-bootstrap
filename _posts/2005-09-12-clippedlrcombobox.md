@@ -5,6 +5,7 @@ category: swing
 folder: ClippedLRComboBox
 tags: [JComboBox, ListCellRenderer, JLabel, JPanel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-12

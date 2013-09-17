@@ -5,6 +5,7 @@ category: swing
 folder: SelectAll
 tags: [JTextField, FocusListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-02

@@ -5,6 +5,7 @@ category: swing
 folder: NineSliceScalingButton
 tags: [JButton, Icon, BufferedImage, RGBImageFilter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-12

@@ -5,6 +5,7 @@ category: swing
 folder: TwoRowsCellRenderer
 tags: [JTable, TableCellRenderer, JLabel, JPanel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-20

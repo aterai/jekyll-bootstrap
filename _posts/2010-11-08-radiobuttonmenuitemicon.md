@@ -5,6 +5,7 @@ category: swing
 folder: RadioButtonMenuItemIcon
 tags: [JRadioButtonMenuItem, Icon, UIManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-08

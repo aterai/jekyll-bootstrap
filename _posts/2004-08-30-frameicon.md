@@ -5,6 +5,7 @@ category: swing
 folder: FrameIcon
 tags: [JFrame, Icon, Image]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-30

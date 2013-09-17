@@ -5,6 +5,7 @@ category: swing
 folder: DragRowsAnotherTable
 tags: [JTable, DragAndDrop, TransferHandler, Cursor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-28

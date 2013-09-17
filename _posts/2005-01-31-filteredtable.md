@@ -5,6 +5,7 @@ category: swing
 folder: FilteredTable
 tags: [JTable, DefaultTableModel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-31

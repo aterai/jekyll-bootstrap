@@ -5,6 +5,7 @@ category: swing
 folder: DisabledAreNavigable
 tags: [JMenuItem, UIManager, LookAndFeel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-25

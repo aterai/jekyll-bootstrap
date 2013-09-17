@@ -5,6 +5,7 @@ category: swing
 folder: SpringLayout
 tags: [SpringLayout, LayoutManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22

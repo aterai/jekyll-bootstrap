@@ -5,6 +5,7 @@ category: swing
 folder: InsertComponentBaseline
 tags: [JTextPane, JComponent, Baseline]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-03

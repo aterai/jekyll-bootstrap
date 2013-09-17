@@ -5,6 +5,7 @@ category: swing
 folder: LineFocusTable
 tags: [JTable, Focus, Border]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-05

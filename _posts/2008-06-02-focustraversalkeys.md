@@ -5,6 +5,7 @@ category: swing
 folder: FocusTraversalKeys
 tags: [KeyboardFocusManager, Focus, Container]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-02

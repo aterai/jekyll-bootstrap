@@ -5,6 +5,7 @@ category: swing
 folder: DragHereIcon
 tags: [Icon, Graphics, DragAndDrop, TransferHandler]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18

@@ -5,6 +5,7 @@ category: swing
 folder: ComboPopupWidth
 tags: [JComboBox, PopupMenuListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-10

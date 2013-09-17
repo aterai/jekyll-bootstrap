@@ -5,6 +5,7 @@ category: swing
 folder: TreeRowHeightCellMargin
 tags: [JTree, TreeCellRenderer, Margin, Icon, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-16

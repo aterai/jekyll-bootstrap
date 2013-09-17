@@ -5,6 +5,7 @@ category: swing
 folder: LineCursor
 tags: [JTextArea, Caret, Highlighter]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30

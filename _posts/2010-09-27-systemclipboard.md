@@ -5,6 +5,7 @@ category: swing
 folder: SystemClipboard
 tags: [ServiceManager, ClipboardService, Transferable, JLabel]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-27

@@ -5,6 +5,7 @@ category: swing
 folder: RemoveButtonInComboItem
 tags: [JComboBox, JButton, JList, BasicComboPopup, ListCellRenderer, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-09

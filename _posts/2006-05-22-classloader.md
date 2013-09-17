@@ -5,6 +5,7 @@ category: swing
 folder: ClassLoader
 tags: [ClassLoader, Resource, URL]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-22

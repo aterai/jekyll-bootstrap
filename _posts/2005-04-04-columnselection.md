@@ -5,6 +5,7 @@ category: swing
 folder: ColumnSelection
 tags: [JTable, JTableHeader, MouseListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-04

@@ -5,6 +5,7 @@ category: swing
 folder: SnapToTicksDrag
 tags: [JSlider, MouseMotionListener]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-14

@@ -5,6 +5,7 @@ category: swing
 folder: TreeRowSelection
 tags: [JTree, TreeCellRenderer]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-17

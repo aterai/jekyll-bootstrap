@@ -5,6 +5,7 @@ category: swing
 folder: ComboBoxCellEditorInsets
 tags: [JTable, TableCellEditor, TableCellRenderer, JComboBox, LayoutManager]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-07

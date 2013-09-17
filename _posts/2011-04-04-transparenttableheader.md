@@ -5,6 +5,7 @@ category: swing
 folder: TransparentTableHeader
 tags: [JTable, JTableHeader, Transparent, JScrollPane, JViewport, TableCellRenderer, TableCellEditor]
 author: aterai
+comments: true
 ---
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
