@@ -68,7 +68,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 ~~`WebStart`(署名無し)から実行した場合、タスクバー(`Windows`)などを消してフルスクリーン化は出来ないようです。~~
 
 ### 参考リンク
-- [Lesson: Full-Screen Exclusive Mode API](http://java.sun.com/docs/books/tutorial/extra/fullscreen/index.html)
+- [Full-Screen Exclusive Mode (The Java™ Tutorials > Bonus > Full-Screen Exclusive Mode API)](http://docs.oracle.com/javase/tutorial/extra/fullscreen/exclusivemode.html)
 
 <!-- dummy comment line for breaking list -->
 

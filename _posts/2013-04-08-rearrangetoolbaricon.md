@@ -170,11 +170,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
 <!-- dummy comment line for breaking list -->
 
 - - - -
-制限
-- `JToolBar#setFloatable(false);`にしないとアイコンを移動できない
-- `JButton`などを移動できない
-- 非表示のコンポーネント(`Box.createGlue()`など)がドラッグできてしまう
-- `Ubuntu`などで移動の描画がチラつく
+- 制限
+    - `JToolBar#setFloatable(false);`にしないとアイコンを移動できない
+    - `JButton`などを移動できない
+    - 非表示のコンポーネント(`Box.createGlue()`など)がドラッグできてしまう
+    - `Ubuntu`などで移動の描画がチラつく
 
 <!-- dummy comment line for breaking list -->
 

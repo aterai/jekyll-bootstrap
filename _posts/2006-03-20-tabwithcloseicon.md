@@ -78,7 +78,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
 - [InfoNode - Java Components](http://www.infonode.net/index.html?itp)
 - [Kirill Grouchnikov's Blog: Spicing up your JTabbedPane - part II](http://weblogs.java.net/blog/kirillcool/archive/2005/12/spicing_up_your_1.html)
 - [JTabbedPaneでタブを追加削除](http://terai.xrea.jp/Swing/TabbedPane.html)
-- [More Enhancements in Java SE 6](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/javase6/enhancements/)
+- [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)
 
 <!-- dummy comment line for breaking list -->
 

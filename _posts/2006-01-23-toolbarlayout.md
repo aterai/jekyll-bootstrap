@@ -3,7 +3,7 @@ layout: post
 title: JToolBarでアイコンボタンを右寄せ
 category: swing
 folder: ToolBarLayout
-tags: [JToolBar, BoxLayout, JButton, Focus]
+tags: [JToolBar, JMenuBar, BoxLayout, JButton, Focus]
 author: aterai
 comments: true
 ---
@@ -40,7 +40,7 @@ toolbar.add(createToolbarButton(url3));
 </code></pre>
 
 ### 解説
-`JToolBar`のデフォルトレイアウトは`BoxLayout`なので、`Box.createGlue`をアイコンボタンの間に挟むことで右寄せをしています。
+`JToolBar`や`JMenuBar`のデフォルトレイアウトは`BoxLayout`なので、`Box.createGlue`を間に挟むことでボタンやメニューの右寄せが可能です。
 
 ボタンとボタンの間隔を固定値で空けたい場合は、`Box.createRigidArea`を使用します。`Box.createHorizontalStrut`や`Box.createVerticalStrut`を使うとツールバーが水平垂直に切り替わった時に、余計な余白が出来てしまうことがあります。
 
@@ -63,6 +63,7 @@ toolbar.add(createToolbarButton(url3));
 ### 参考リンク
 - [Java look and feel Graphics Repository](http://java.sun.com/developer/techDocs/hi/repository/)
 - [Swing - Buttons like Netbeans'](https://forums.oracle.com/thread/1365522)
+- [Customizing Menu Layout - How to Use Menus (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html#custom)
 
 <!-- dummy comment line for breaking list -->
 

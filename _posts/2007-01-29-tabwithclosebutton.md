@@ -59,7 +59,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
 [以前のサンプル](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)に比べると、実装も簡単でコードも短くなっています。
 
 ### 参考リンク
-- [More Enhancements in Java SE 6](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/javase6/enhancements/)
+- [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)
 - [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
 - [JTabbedPaneにタブを閉じるアイコンを追加](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)
 - [JTabbedPaneのTabTitleを左揃えに変更](http://terai.xrea.jp/Swing/TabTitleAlignment.html)

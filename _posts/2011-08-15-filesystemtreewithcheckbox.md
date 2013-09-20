@@ -103,11 +103,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 
 ### 解説
 このサンプルは、[FileSystemViewを使ってディレクトリ構造をJTreeに表示する](http://terai.xrea.jp/Swing/DirectoryTree.html)と、[JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)を組み合わせて作成しています。
+
 - - - -
 `TreeCellEditor#isCellEditable(...)`をオーバーライドして、`JCheckBox`付近をクリックした場合のみ編集可能(チェックの有無を切り替えることができる)にし、ラベールやアイコンなどをクリックした場合は、編集状態にせずノードの展開や折り畳みができるように設定しています。
+
 - - - -
-~~[JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://terai.xrea.jp/Swing/TableHeaderCheckBox.html)のように親ノードをチェックすると子ノードのチェックをすべて切り替える機能には今のところ対応していません。~~
-- 対応済み
+- ~~注: [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://terai.xrea.jp/Swing/TableHeaderCheckBox.html)のように親ノードをチェックすると子ノードのチェックをすべて切り替える機能には今のところ対応していません。~~
+    - 対応済み
 
 <!-- dummy comment line for breaking list -->
 

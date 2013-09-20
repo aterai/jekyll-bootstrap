@@ -75,7 +75,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Painting in AWT and Swing](http://java.sun.com/products/jfc/tsc/articles/painting/)
+- [Painting in AWT and Swing](http://www.oracle.com/technetwork/java/painting-140037.html)
 
 <!-- dummy comment line for breaking list -->
 

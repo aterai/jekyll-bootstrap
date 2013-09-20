@@ -79,7 +79,7 @@ protected ComparableComparator getComparator(int column) {
 
 - - - -
 - `JDK 1.6.0`から`JTable`には標準でソート機能が追加されています。
-    - [SORTING AND FILTERING TABLES](http://java.sun.com/developer/JDCTechTips/2005/tt1115.html#2)
+    - [Table Sorting and Filtering - New and Updated Desktop Features in Java SE 6, Part 2](http://www.oracle.com/technetwork/articles/javase/index-135205.html#1)
     - [TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)
 
 <!-- dummy comment line for breaking list -->

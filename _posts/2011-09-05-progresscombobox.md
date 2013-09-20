@@ -51,8 +51,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-05
 
 ### 解説
 上記のサンプルでは、`index`が負(アイテムリストではない)の場合、`JProgressBar`を返すセルレンダラーを`JComboBox`に設定して進捗を表示しています。
+
 - - - -
 ロードボタンが押されたら、以下のような`SwingWorker`で、`JComboBox`にアイテムを追加しています。
+
 <pre class="prettyprint"><code>button = new JButton(new AbstractAction("load") {
   @Override public void actionPerformed(ActionEvent e) {
     button.setEnabled(false);
