@@ -11,7 +11,7 @@ comments: true
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-09
 
 ## JTextFieldの入力を数値に制限する
-`JTextField`への入力を数値のみに制限します。ソースコードは、[Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)からの引用です。
+`JTextField`への入力を数値のみに制限します。ソースコードは、[Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)からの引用です。
 
 - {% jnlp %}
 - {% jar %}
@@ -47,7 +47,7 @@ spinner.setValue(5000);
 
 ### 解説
 - `1`:`JTextField` + `InputVerifier`
-    - [Validating with Input Verifiers](http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
+    - [Validating with Input Verifiers](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
     - `InputVerifier`を継承する`IntegerInputVerifier`を作成し、これを`JComponent#setInputVerifier`メソッドで設定しています。
     - 別コンポーネントにフォーカスが移動するときに、数値かどうか評価します。
     - 数値以外、または結果が範囲外となる場合、テキストは変化せず`beep`音が鳴り、フォーカス移動がキャンセルされます。
@@ -71,7 +71,7 @@ spinner.setValue(5000);
 </code></pre>
 
 - `2`:`JTextField` + `Custom Document`
-    - [Validating with a Custom Document](http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
+    - [Validating with a Custom Document](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
     - `PlainDocument`を継承する`IntegerDocument`を作成し、これを`JTextComponent#setDocument`メソッドで設定しています。
     - キー入力、文字列のペーストが行われたときに、数値かどうか評価します。
     - 入力が数値以外、または結果が範囲外となる場合、`beep`音が鳴り、テキストは変化しません。
@@ -130,7 +130,7 @@ spinner.setValue(5000);
 </code></pre>
 
 - `3`:`JTextField` + `DocumentFilter`
-    - [Validating with a Document Filter](http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
+    - [Validating with a Document Filter](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
     - `DocumentFilter`を継承する`IntegerDocumentFilter`を作成し、これを`AbstractDocument#setDocumentFilter`メソッドで設定しています。
     - ~~別コンポーネントにフォーカスが移動するときに、数値かどうか評価します。~~
     - キー入力、文字列のペーストが行われたときに、数値かどうか評価します。
@@ -207,7 +207,7 @@ spinner.setValue(5000);
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- ~~[Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)~~
+- [Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
 - [How to Use Formatted Text Fields](http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
 - [JSpinnerで無効な値の入力を許可しない](http://terai.xrea.jp/Swing/NumberFormatter.html)
 

@@ -61,7 +61,7 @@ class ModalInternalFrameAction2 extends AbstractAction {
 </code></pre>
 <pre class="prettyprint"><code>//menuItem.setMnemonic(KeyEvent.VK_3);
 //Creating Modal Internal Frames -- Approach 1 and Approach 2
-//http://java.sun.com/developer/JDCTechTips/2001/tt1220.html
+//http://web.archive.org/web/20090803142839/http://java.sun.com/developer/JDCTechTips/2001/tt1220.html
 class ModalInternalFrameAction3 extends AbstractAction {
   private final Component orgGlassPane;
   private final JPanel glass = new PrintGlassPane();
@@ -200,7 +200,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 この方法は、`JDK 5`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移ることがあります。
 
 ### 参考リンク
-- [Creating Modal Internal Frames -- Approach 1 and Approach 2](http://java.sun.com/developer/JDCTechTips/2001/tt1220.html)
+- [Creating Modal Internal Frames -- Approach 1 and Approach 2](http://web.archive.org/web/20090803142839/http://java.sun.com/developer/JDCTechTips/2001/tt1220.html)
 - [How to Use Root Panes](http://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
     - [Cursorを砂時計に変更](http://terai.xrea.jp/Swing/WaitCursor.html)

@@ -70,16 +70,9 @@ class Test {
 }
 </code></pre>
 
-この方法は、一々[LookAndFeel](http://java.sun.com/products/jlf/ed2/book/HIG.Glossary.html#51529)を作成してフォントを変更するのが面倒なときには便利です。[LookAndFeel](http://java.sun.com/products/jlf/ed2/book/HIG.Glossary.html#51529)を自作する場合は、以下などを参考にしてみてください。
-
-- [Developing Accessible JFC Applications](http://www.sun.com/access/developers/developing-accessible-apps/)
-    - [Appendix A - LowVisionMetalLookAndFeel](http://www.sun.com/access/developers/developing-accessible-apps/appendix.html)
-- [自分だけのカッコ良いアプリを作りたい，の巻](http://www2u.biglobe.ne.jp/~kaduhiko/java_09.html)
-
-<!-- dummy comment line for breaking list -->
 
 - - - -
-`Metal`で使用されているフォントが気に入らないといった場合は、システム`LookAndFeel`を使用するか、`Metal`でボールドフォントを無効にするなどの方法があります。
+`Metal`で使用されているフォントが気に入らないだけなら、システム`LookAndFeel`を使用するか、`Metal`でボールドフォントを無効にするなどの方法があります。
 
 - `MetalLookAndFeel`ではなく、`SystemLookAndFeel`を使用する
 

@@ -53,7 +53,7 @@ sorter.setRowFilter(RowFilter.andFilter(filters));
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Splash Screens and Java SE 6, and Sorting and Filtering Tables Tech Tips](http://java.sun.com/developer/JDCTechTips/2005/tt1115.html#2)
+- [Splash Screens and Java SE 6, and Sorting and Filtering Tables Tech Tips](http://web.archive.org/web/20090419180550/http://java.sun.com/developer/JDCTechTips/2005/tt1115.html)
 - [Sorting and Filtering (How to Use Tables)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
 
 <!-- dummy comment line for breaking list -->

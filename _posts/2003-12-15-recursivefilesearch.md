@@ -70,10 +70,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15
 
 ### 参考リンク
 - [Java入門 ファイル](http://msugai.fc2web.com/java/IO/fileObj.html)
-- [Using a Swing Worker Thread](http://java.sun.com/products/jfc/tsc/articles/threads/threads2.html)
 - [How to Use Progress Bars](http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
-- [SwingWorker.java](http://java.sun.com/products/jfc/tsc/articles/threads/src/SwingWorker.java)
+- [Using a Swing Worker Thread](http://web.archive.org/web/20090830092511/http://java.sun.com/products/jfc/tsc/articles/threads/threads2.html)
+- [SwingWorker.java](http://web.archive.org/web/20090811085550/http://java.sun.com/products/jfc/tsc/articles/threads/src/SwingWorker.java)
 - [Customize SwingWorker to improve Swing GUIs](http://www.javaworld.com/javaworld/jw-06-2003/jw-0606-swingworker-p3.html)
 
 <!-- dummy comment line for breaking list -->

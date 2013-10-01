@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-04
 ### サンプルコード
 <pre class="prettyprint"><code>JTextField textField01 = new JTextField(20) {
   //Unleash Your Creativity with Swing and the Java 2D API!
-  //http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html
+  //http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html
   @Override protected void paintComponent(Graphics g) {
     if(!isOpaque()) {
       int w = getWidth();
@@ -51,7 +51,7 @@ textField01.setText("aaaaaaaaaaa");
 ### 解説
 - 上
     - `JTextField#paintComponent(...)`をオーバーライド、`BorderをEmptyBorder`、`JTextField#setOpaque(false);`
-    - 参考: [Unleash Your Creativity with Swing and the Java 2D API!](http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
+    - 参考: [Unleash Your Creativity with Swing and the Java 2D API!](http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -89,7 +89,7 @@ textField01.setText("aaaaaaaaaaa");
 </code></pre>
 
 ### 参考リンク
-- [Unleash Your Creativity with Swing and the Java 2D API!](http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
+- [Unleash Your Creativity with Swing and the Java 2D API!](http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
 - [Border on an rounded JTextField? (Swing / AWT / SWT / JFace forum at JavaRanch)](http://www.coderanch.com/t/336048/GUI/java/Border-rounded-JTextField)
 - [java - how i remove unneeded background under roundedborder? - Stack Overflow](http://stackoverflow.com/questions/9785911/how-i-remove-unneeded-background-under-roundedborder)
 

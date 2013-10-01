@@ -76,7 +76,6 @@ pop.addPopupMenuListener(new PopupMenuListener() {
     //System.out.println("popupMenuWillBecomeInvisible");
     header.setDraggedColumn(null);
     //header.setResizingColumn(null);
-    //header.setDraggedDistance(0);
     header.repaint();
   }
   @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {}
@@ -84,6 +83,3 @@ pop.addPopupMenuListener(new PopupMenuListener() {
 </code></pre>
 
 ### コメント
-- しばらく停止して様子見。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-05 (金) 17:48:57
-
-<!-- dummy comment line for breaking list -->
