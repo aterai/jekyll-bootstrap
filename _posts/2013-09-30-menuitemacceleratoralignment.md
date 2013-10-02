@@ -3,7 +3,7 @@ layout: post
 title: JMenuItemのAccelerator表示を右揃えにする
 category: swing
 folder: MenuItemAcceleratorAlignment
-tags: [JMenuItem, Locale, KeyEvent, ResourceBundle]
+tags: [JMenuItem, Locale, KeyEvent, ResourceBundle, Alignment]
 author: aterai
 comments: true
 ---

@@ -67,10 +67,10 @@ public void fireFontChangeEvent(String cmd, Font font) {
 `Java`のイベントモデルは、`delegation event model`(委譲型のイベントモデル)です。[イベント](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/Event.html)などを参考にしてみてください。
 
 - - - -
-`Vector`ではなく、`javax.swing.event.EventListenerList`を使用する場合は、[EventListenerList (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/event/EventListenerList.html)のサンプルが参考になります。
+`Vector`ではなく、`EventListenerList`を使用する場合は、[EventListenerList (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/event/EventListenerList.html)のサンプルが参考になります。
 
 <pre class="prettyprint"><code>// http://docs.oracle.com/javase/jp/6/api/javax/swing/event/EventListenerList.html
-javax.swing.event.EventListenerList listenerList = new javax.swing.event.EventListenerList();
+EventListenerList listenerList = new EventListenerList();
 //FontChangeEvent fontChangeEvent = null;
 public void addFontChangeListener(FontChangeListener l) {
   listenerList.add(FontChangeListener.class, l);
@@ -101,7 +101,7 @@ protected void fireFontChangeEvent(String cmd, Font font) {
 
 ### 参考リンク
 - [イベント](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/Event.html)
-- [EventListenerList (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/event/EventListenerList.html)
+- [EventListenerList (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/event/EventListenerList.html)
 - [習慣の生き物 - Kazzzの日記](http://d.hatena.ne.jp/Kazzz/20080618/p1)
 
 <!-- dummy comment line for breaking list -->
