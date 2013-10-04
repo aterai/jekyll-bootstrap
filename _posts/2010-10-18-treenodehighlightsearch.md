@@ -102,7 +102,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
 - [JTreeのノードをハイライト](http://terai.xrea.jp/Swing/RollOverTree.html)
 - [JTreeの選択背景色を変更](http://terai.xrea.jp/Swing/TreeBackgroundSelectionColor.html)
 - [JTreeのノード中の文字列をハイライトする](http://terai.xrea.jp/Swing/HighlightWordInNode.html)
-    - ノードではなく一致する文字列だけをハイライト表示する場合
+    - ノードではなく一致する文字列だけをハイライトして強調表示する場合のサンプル
 
 <!-- dummy comment line for breaking list -->
 

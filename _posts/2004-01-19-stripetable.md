@@ -62,7 +62,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-19
 また、返されたコンポーネントは、セルの描画のみに利用されて、コンポーネントとしては機能しません。
 
 - - - -
-セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。使用するセルレンダラーに関係なく、テーブル全体で前処理することができます。このため、`Number`クラス用の`DefaultTableCellRenderer`がそのまま使われるので、`TableModel#getColumnClass(int)`が、`Number.class`を返すようにしておけば、勝手に右寄せしてくれます。
+セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。使用するセルレンダラーに関係なく、テーブル全体で前処理することができます。このため、`Number`クラス用のデフォルトレンダラーである`JTable$NumberRenderer`がそのまま使われるので、`TableModel#getColumnClass(int)`が、`Number.class`を返すようにしておけば、勝手に右寄せしてくれます。
 
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   private final Color evenColor = new Color(240, 240, 255);

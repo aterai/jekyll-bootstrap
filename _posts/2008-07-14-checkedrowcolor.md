@@ -49,7 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
 上記のサンプルでは、`JTable`の`prepareEditor`、`prepareRenderer`をオーバーライドしてセルエディタや行の背景色を変更しています。
 
 - - - -
-`TableModelListener`でモデルが更新されると、`table.repaint()`で全体を再描画するのではなく、更新の対象になっている行だけを、以下のように再描画しています。
+チェックボックスがクリックされてモデルが更新されると、デフォルトでは対応するセルのみ再描画されます。このサンプルでは対象セルだけではなく、そのセルが存在する行全体の背景色を変更しているので、`TableModelListener`でモデルの更新を検出し、以下のように`JTable#repaint(...)`を使って行を再描画しています。
 
 <pre class="prettyprint"><code>model.addTableModelListener(new TableModelListener() {
   @Override public void tableChanged(TableModelEvent e) {
@@ -57,13 +57,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
       //rowRepaint(table, table.convertRowIndexToView(e.getFirstRow()));
       Rectangle r = table.getCellRect(table.convertRowIndexToView(e.getFirstRow()), 0, true);
       r.width  = table.getWidth();
-      table.repaint(r);
-      //すこし無駄？: table.repaint();
+      //table.repaint(); //table全体をリペイントするのは、すこし無駄なので 
+      table.repaint(r);  //一行だけリペイント
     }
   }
 });
 </code></pre>
-
 
 ### 参考リンク
 - [Swing - JTable-Row color issue](https://forums.oracle.com/thread/1361072)
