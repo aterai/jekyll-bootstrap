@@ -47,17 +47,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
     setBackground(Color.WHITE);
     setEditable(false);
   }
-  public void clearHighlights() {
-    Highlighter highlighter = getHighlighter();
-    for(Highlighter.Highlight h: highlighter.getHighlights()) {
-      highlighter.removeHighlight(h);
-    }
-  }
   @Override public Component getTableCellRendererComponent(
-    JTable table, Object value, boolean isSelected,
-    boolean hasFocus, int row, int column) {
+        JTable table, Object value, boolean isSelected,
+        boolean hasFocus, int row, int column) {
     String txt = value!=null ? value.toString() : "";
-    clearHighlights();
+    Highlighter highlighter = getHighlighter();
+    highlighter.removeAllHighlights();
     setText(txt);
     setBackground(isSelected ? backgroundSelectionColor : Color.WHITE);
     if(pattern!=null &amp;&amp; !pattern.isEmpty() &amp;&amp; !pattern.equals(prev)) {
@@ -66,7 +61,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
         int start = matcher.start();
         int end   = matcher.end();
         try{
-          getHighlighter().addHighlight(start, end, highlightPainter);
+          highlighter.addHighlight(start, end, highlightPainter);
         }catch(BadLocationException e) {
           e.printStackTrace();
         }

@@ -23,26 +23,40 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-03
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTUOdUT3wI/AAAAAAAAAls/N2JYE_Dcr_Y/s800/TabbedPaneWithButton.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>JPanel p = new JPanel();
+<pre class="prettyprint"><code>final JButton b = new ToolBarButton(icon);
+b.addActionListener(new ActionListener() {
+  @Override public void actionPerformed(ActionEvent e) {
+    tabs.addTab("qwerqwer", new JLabel("yetyet"));
+  }
+});
+tabs = new ClippedTitleTabbedPane() {
+  @Override public void updateUI() {
+    UIManager.put("TabbedPane.tabAreaInsets", null); //uninstall
+    super.updateUI();
+    setAlignmentX(0.0f);
+    setAlignmentY(0.0f);
+    b.setBorder(BorderFactory.createEmptyBorder(3,3,3,3));
+    b.setAlignmentX(0.0f);
+    b.setAlignmentY(0.0f);
+    tabAreaInsets = getTabAreaInsets();
+    UIManager.put("TabbedPane.tabAreaInsets",
+                  getButtonPaddingTabAreaInsets(b, getTabInsets(), tabAreaInsets));
+    super.updateUI();
+  }
+  private Insets tabAreaInsets = null;
+};
+JPanel p = new JPanel();
 p.setLayout(new OverlayLayout(p));
-button.setAlignmentX(0.0f);
-button.setAlignmentY(0.0f);
-tabPane.setAlignmentX(0.0f);
-tabPane.setAlignmentY(0.0f);
 p.add(button);
-p.add(tabPane);
+p.add(tabs);
 </code></pre>
 
-<pre class="prettyprint"><code>public InsetsUIResource getButtonPaddingTabAreaInsets(JButton b) {
-  int bw = b.getPreferredSize().width;
-  int bh = b.getPreferredSize().height;
-  Insets insets = UIManager.getInsets("TabbedPane.tabInsets");
-  Insets ti = (insets!=null)?insets:new Insets(0,0,0,0);
-  insets = UIManager.getInsets("TabbedPane.tabAreaInsets");
-  Insets ai = (insets!=null)?insets:new Insets(0,0,0,0);
-  FontMetrics metrics = getFontMetrics(getFont());
-  int tih = bh - metrics.getHeight()-ti.top-ti.bottom-ai.bottom;
-  return new InsetsUIResource(Math.max(ai.top, tih), bw+ai.left, ai.bottom, ai.right);
+<pre class="prettyprint"><code>//Insets ti = UIManager.getInsets("TabbedPane.tabInsets");
+//Insets ai = UIManager.getInsets("TabbedPane.tabAreaInsets");
+public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
+  FontMetrics fm = b.getFontMetrics(b.getFont());
+  int tih = b.getPreferredSize().height-fm.getHeight()-ti.top-ti.bottom-ai.bottom;
+  return new Insets(Math.max(ai.top, tih), b.getPreferredSize().width+ai.left, ai.bottom, ai.right);
 }
 </code></pre>
 

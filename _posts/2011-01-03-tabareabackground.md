@@ -3,7 +3,7 @@ layout: post
 title: JTabbedPaneのタブエリア背景色などをテスト
 category: swing
 folder: TabAreaBackground
-tags: [JTabbedPane, UIManager]
+tags: [JTabbedPane, UIManager, MetalLookAndFeel]
 author: aterai
 comments: true
 ---
