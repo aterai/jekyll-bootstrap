@@ -31,9 +31,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JTextField`がデフォルトのフォーカスを持つように、`JComponent#requestFocusInWindow`メソッドを使用しています。
+上記のサンプルでは、`JTextField`がデフォルトのフォーカスを持つように、`JComponent#requestFocusInWindow()`メソッドを使用しています。
 
-`requestFocusInWindow`メソッドは、チュートリアル([How to Use the Focus Subsystem](http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html))にあるように、`JFrame#pack()`、もしくは`JFrame#setSize(...)`などでリサイズされた後(フォーカスを取得するコンポーネントのサイズが決まった後)で実行する必要があります。このため、このサンプルでは`EventQueue.invokeLater`を使って、待ち状態のすべてのイベントが処理された一番後で実行するようにしています。
+`JComponent#requestFocusInWindow()`メソッドは、チュートリアル([How to Use the Focus Subsystem](http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html))にあるように、`JFrame#pack()`、もしくは`JFrame#setSize(...)`などでリサイズされた後(フォーカスを取得するコンポーネントのサイズが決まった後)で実行する必要があります。このため、このサンプルでは`EventQueue.invokeLater(...)`を使って、待ち状態のすべてのイベントが処理された一番後で実行するようにしています。
 
 - - - -
 以下のように、`FocusTraversalPolicy`や`WindowListener`を使う方法でも、同様にデフォルトのフォーカスを持つコンポーネントを指定することが出来ます。
@@ -50,8 +50,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 });
 </code></pre>
 
-- `WindowListener#windowOpened`で、`requestFocusInWindow`
-    - フレームに`WindowListener`を設定して、`windowOpened`が呼び出されたときに、`requestFocusInWindow`
+- `WindowListener#windowOpened(...)`で、`requestFocusInWindow()`
+    - フレームに`WindowListener`を設定して、`windowOpened(...)`が呼び出されたときに、`requestFocusInWindow()`
 
 <!-- dummy comment line for breaking list -->
 
@@ -62,8 +62,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 });
 </code></pre>
 
-- `ComponentListener#componentShown`で、`requestFocusInWindow`
-    - フレームに`ComponentListener`を設定して、`componentShown`が呼び出されたとき(=フレームが`setVisible(true)`されたとき)に、`requestFocusInWindow`
+- `ComponentListener#componentShown(...)`で、`requestFocusInWindow()`
+    - フレームに`ComponentListener`を設定して、`componentShown(...)`が呼び出されたとき(=フレームが`setVisible(true)`されたとき)に、`requestFocusInWindow()`
 
 <!-- dummy comment line for breaking list -->
 
@@ -74,8 +74,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 });
 </code></pre>
 
-- `KeyboardFocusManager#addPropertyChangeListener`で、`requestFocusInWindow`
-    - `KeyboardFocusManager`に`PropertyChangeListener`を設定して、`propertyChange`が呼び出され、`PropertyName`が、`activeWindow`、かつ`PropertyChangeEvent#getNewValue`が`null`でないときに、`requestFocusInWindow`
+- `KeyboardFocusManager#addPropertyChangeListener(...)`で、`requestFocusInWindow()`
+    - `KeyboardFocusManager`に`PropertyChangeListener`を設定して、`propertyChange(...)`が呼び出され、`PropertyName`が、`activeWindow`、かつ`PropertyChangeEvent#getNewValue()`が`null`でないときに、`requestFocusInWindow()`
 
 <!-- dummy comment line for breaking list -->
 

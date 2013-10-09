@@ -81,10 +81,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
 
 ### 解説
 - 上: `JLabel`
+    - デフォルトの`JLabel`で右側が`...`で省略されている
 - 中: `GlyphVector`
-    - ラベルのサイズが変更されるたびに`GlyphVector`を更新することで、文字列の折り返しを行っています。
+    - コンポーネントのサイズが変更されるたびに`GlyphVector`を更新して、文字列の折り返しを行っている
 - 下: `JTextArea`
-    - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として、文字列の折り返しを行っています。
+    - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として、文字列の折り返しを行っている
 
 <!-- dummy comment line for breaking list -->
 
