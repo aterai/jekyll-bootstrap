@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-22
 ### サンプルコード
 <pre class="prettyprint"><code>private final JTable table = new JTable(model);
 private final Action copyAction = new AbstractAction("copy") {
-  public void actionPerformed(ActionEvent e) {
+  @Override public void actionPerformed(ActionEvent e) {
     e.setSource(table);
     table.getActionMap().get("copy").actionPerformed(e);
   }

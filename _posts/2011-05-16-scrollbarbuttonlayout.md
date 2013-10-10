@@ -138,7 +138,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
 上記のサンプルでは、`WindowsScrollBarUI#layoutVScrollbar(...)`をオーバーライドして、垂直スクロールバーの増加、減少ボタンが両方下側に配置されるようにレイアウトマネージャを変更しています。
 
 ### 参考リンク
-- スクロールバーのボタンの位置ではなく、スクロールバー自体の位置を変更する場合は、[JScrollBarをJScrollPaneの左と上に配置](http://terai.xrea.jp/Swing/LeftScrollBar.html)
+    - [JScrollBarをJScrollPaneの左と上に配置](http://terai.xrea.jp/Swing/LeftScrollBar.html)
+    - スクロールバーのボタンの位置ではなく、スクロールバー自体の位置を変更する場合のサンプル
 
 <!-- dummy comment line for breaking list -->
 

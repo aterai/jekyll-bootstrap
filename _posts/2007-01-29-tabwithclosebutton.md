@@ -32,7 +32,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
     this.icon = icon;
     buttonSize = new Dimension(icon.getIconWidth(), icon.getIconHeight());
   }
-  public void addTab(String title, final JComponent content) {
+  @Override public void addTab(String title, final JComponent content) {
     JPanel tab = new JPanel(new BorderLayout());
     tab.setOpaque(false);
     JLabel label = new JLabel(title);
@@ -40,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
     JButton button = new JButton(icon);
     button.setPreferredSize(buttonSize);
     button.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
+      @Override public void actionPerformed(ActionEvent e) {
         removeTabAt(indexOfComponent(content));
       }
     });

@@ -33,8 +33,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
   public AnimeListCellRenderer(final JList l) {
     super(new BorderLayout());
     this.list = l;
-    animator = new javax.swing.Timer(80, new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
+    animator = new Timer(80, new ActionListener() {
+      @Override public void actionPerformed(ActionEvent e) {
         int i = l.getSelectedIndex();
         if(isRunning=(i&gt;=0)) l.repaint(l.getCellBounds(i,i));
       }
@@ -44,7 +44,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
     add(label);
     animator.start();
   }
-  public Component getListCellRendererComponent(JList list, Object object,
+  @Override public Component getListCellRendererComponent(JList list, Object object,
             int index, boolean isSelected, boolean cellHasFocus) {
     setBackground(isSelected ? selectedColor : list.getBackground());
     label.setText((object==null) ? "" : object.toString());

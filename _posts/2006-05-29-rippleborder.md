@@ -29,8 +29,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-29
   public RippleBorder(JComponent c, int width) {
     super(width, width, width, width);
     this.comp = c;
-    animator = new javax.swing.Timer(80, new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
+    animator = new Timer(80, new ActionListener() {
+      @Override public void actionPerformed(ActionEvent e) {
         comp.repaint();
         count+=0.9f;
       }

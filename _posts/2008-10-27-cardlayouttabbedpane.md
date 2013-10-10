@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
   }
   public void addTab(final String title, final Component comp) {
     JRadioButton b = new TabButton(new AbstractAction(title) {
-      public void actionPerformed(ActionEvent e) {
+      @Override public void actionPerformed(ActionEvent e) {
         cardLayout.show(contentsPanel, title);
       }
     });

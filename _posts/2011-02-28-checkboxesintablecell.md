@@ -89,7 +89,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
       final JCheckBox b = buttons[i];
       b.addActionListener(al);
       am.put(title[i], new AbstractAction(title[i]) {
-        public void actionPerformed(ActionEvent e) {
+        @Override public void actionPerformed(ActionEvent e) {
           b.setSelected(!b.isSelected());
           fireEditingStopped();
         }
