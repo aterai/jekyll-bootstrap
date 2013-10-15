@@ -41,8 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
     }
     startPt = e.getPoint();
   }
-  @Override
-  public void mouseDragged(MouseEvent e) {
+  @Override public void mouseDragged(MouseEvent e) {
     Point pt = e.getPoint();
     JComponent parent = (JComponent)e.getComponent();
     int t = Math.sqrt(Math.pow(pt.x-startPt.x, 2)+Math.pow(pt.y-startPt.y, 2))
@@ -111,8 +110,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
     parent.repaint();
   }
 
-  @Override
-  public void mouseReleased(MouseEvent e) {
+  @Override public void mouseReleased(MouseEvent e) {
     startPt = null;
     if(!window.isVisible() || draggingComonent==null) {
       return;

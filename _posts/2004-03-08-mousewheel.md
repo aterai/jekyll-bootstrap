@@ -24,7 +24,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-08
 
 ### サンプルコード
 <pre class="prettyprint"><code>spinner.addMouseWheelListener(new MouseWheelListener() {
-  public void mouseWheelMoved(MouseWheelEvent e) {
+  @Override public void mouseWheelMoved(MouseWheelEvent e) {
     JSpinner source = (JSpinner)e.getSource();
     SpinnerNumberModel model = (SpinnerNumberModel)source.getModel();
     Integer oldValue = (Integer)source.getValue();

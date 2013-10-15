@@ -53,6 +53,8 @@ table.setAutoCreateRowSorter(true);
 
 - [Multisort Table Header Cell Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
     - 第二キー以下を薄く表示するサンプルがあります。
+- [JTableの複数キーを使ったソートをヘッダに表示する](http://terai.xrea.jp/Swing/MultisortHeaderRenderer.html)
+    - ソートキーの状態を文字列にして追加しています。
 
 <!-- dummy comment line for breaking list -->
 

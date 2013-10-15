@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
     if(e instanceof KeyEvent) {
       //System.out.println("KeyEvent");
       EventQueue.invokeLater(new Runnable() {
-        public void run() {
+        @Override public void run() {
           char kc = ((KeyEvent)e).getKeyChar();
           if(!Character.isIdentifierIgnorable(kc)) {
             field.setText(field.getText()+kc);
@@ -98,7 +98,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
     super(field);
     field.setBorder(BorderFactory.createEmptyBorder(0,2,0,BUTTON_WIDTH));
     field.addHierarchyListener(new HierarchyListener() {
-      public void hierarchyChanged(HierarchyEvent e) {
+      @Override public void hierarchyChanged(HierarchyEvent e) {
         if((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED)!=0
             &amp;&amp; field.isShowing()) {
           field.removeAll();

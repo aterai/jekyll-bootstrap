@@ -24,7 +24,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-06
 
 ### サンプルコード
 <pre class="prettyprint"><code>tree.addMouseListener(new MouseAdapter() {
-  public void mousePressed(MouseEvent e) {
+  @Overridepublic void mousePressed(MouseEvent e) {
     JTree tree = (JTree)e.getSource();
     if(tree.getRowForLocation(e.getX(), e.getY())&lt;0) {
       tree.clearSelection();

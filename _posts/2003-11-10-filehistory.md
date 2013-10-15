@@ -41,11 +41,11 @@ private void updateHistory(String str) {
 }
 class HistoryAction extends AbstractAction{
   final private File file;
-  public HistoryAction(File file_) {
+  public HistoryAction(File file) {
     super();
-    file = file_;
+    this.file = file;
   }
-  public void actionPerformed(ActionEvent evt) {
+  @Override public void actionPerformed(ActionEvent e) {
     historyActionPerformed(file);
   }
 }

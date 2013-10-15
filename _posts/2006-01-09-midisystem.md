@@ -30,12 +30,12 @@ try{
   sequencer  = MidiSystem.getSequencer();
   sequencer.open();
   sequencer.setSequence(s);
-}catch(Exception e) {
-  e.printStackTrace();
+}catch(Exception ex) {
+  ex.printStackTrace();
   return;
 }
 start = new JButton(new AbstractAction("start") {
-  public void actionPerformed(ActionEvent ae) {
+  @Override public void actionPerformed(ActionEvent ae) {
     sequencer.start();
   }
 });

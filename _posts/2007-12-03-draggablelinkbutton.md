@@ -28,26 +28,26 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-03
 final DataFlavor uriflavor = DataFlavor.stringFlavor;
 JButton b = new JButton(href);
 b.setTransferHandler(new TransferHandler("text") {
-  public boolean canImport(JComponent c, DataFlavor[] flavors) {
+  @Override public boolean canImport(JComponent c, DataFlavor[] flavors) {
     return (flavors.length&gt;0 &amp;&amp; flavors[0].equals(uriflavor));
   }
-  public Transferable createTransferable(JComponent c) {
+  @Override public Transferable createTransferable(JComponent c) {
     return new Transferable() {
-      public Object getTransferData(DataFlavor flavor) {
+      @Override public Object getTransferData(DataFlavor flavor) {
         //System.out.println(flavor.getMimeType());
         return href;
       }
-      public DataFlavor[] getTransferDataFlavors() {
+      @Override public DataFlavor[] getTransferDataFlavors() {
         return new DataFlavor[] { uriflavor };
       }
-      public boolean isDataFlavorSupported(DataFlavor flavor) {
+      @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
         return flavor.equals(uriflavor);
       }
     };
   }
 });
 b.addMouseListener(new MouseAdapter() {
-  public void mousePressed(MouseEvent e) {
+  @Override public void mousePressed(MouseEvent e) {
     JButton button = (JButton)e.getSource();
     TransferHandler handler = button.getTransferHandler();
     handler.exportAsDrag(button, e, TransferHandler.COPY);

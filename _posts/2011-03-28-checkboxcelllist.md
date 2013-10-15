@@ -3,7 +3,7 @@ layout: post
 title: JListのセルにJCheckBoxを使用する
 category: swing
 folder: CheckBoxCellList
-tags: [JList, JCheckBox, ListCellRenderer, MouseListener, JTree]
+tags: [JList, JCheckBox, ListCellRenderer, MouseListener, JTree, Box]
 author: aterai
 comments: true
 ---
@@ -20,7 +20,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TZAiQ_MSc_I/AAAAAAAAA4k/FiVk_o38jyY/s800/CheckBoxCellList.png)
+![screenshot](https://lh3.googleusercontent.com/-EfbwsqycTvg/UlyukvM4ivI/AAAAAAAAB3o/NJBvrfM4xPA/s800/CheckBoxCellList.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CheckBoxCellRenderer extends JCheckBox
@@ -84,7 +84,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 </code></pre>
 
 ### 解説
-- 左: `JCheckBox Cell in JList`
+- 左: `Box`
+    - `Box.createVerticalBox()`に`JCheckBox`を追加
+    - `JCheckBox#setAlignmentX(Component.LEFT_ALIGNMENT);`で左揃えに設定
+
+<!-- dummy comment line for breaking list -->
+
+- 中: `JList`
     - `JCheckBox`を継承する`ListCellRenderer`を設定
     - チェックボックスのロールオーバーなどは、`JList`にマウスリスナーを設定して表示
     - `JList#processMouseEvent`、`JList#processMouseMotionEvent`のオーバーライドと、`JList#putClientProperty("List.isFileList", Boolean.TRUE);`で、クリックが有効になる領域をチェックボックスの幅に制限
@@ -141,64 +147,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 };
 </code></pre>
 
-- 右: `JCheckBox in Box`
-    - `Box.createVerticalBox()`に`JCheckBox`を追加
-    - `JCheckBox#setAlignmentX(Component.LEFT_ALIGNMENT);`で左揃えに設定
+- 右: `JTree`
+    - `JCheckBox`を継承する`TreeCellRenderer`を設定
+        - [JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)のセルレンダラーを使用
+    - `JTree#setRootVisible(false)`でルートノードを非表示に設定
 
 <!-- dummy comment line for breaking list -->
 
-- - - -
-[JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)のセルレンダラーを使った`JTree`に、`JTree#setRootVisible(false)`を設定しても、ほぼ同様のチェックボックスの一覧を作成することができます。
-
-<pre class="prettyprint"><code>import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.tree.*;
-
-public class TreeCheckBoxListTest {
-  public JComponent makeUI() {
-    DefaultMutableTreeNode root = new DefaultMutableTreeNode("JTree");
-    for(int i=0; i&lt;16; i++) {
-      root.add(new DefaultMutableTreeNode(new CheckBoxNode("No."+i, i%2==0)));
-    }
-    JTree tree = new JTree(new DefaultTreeModel(root));
-    tree.setEditable(true);
-    tree.setRootVisible(false);
-    tree.setCellRenderer(new CheckBoxNodeRenderer());
-    tree.setCellEditor(new CheckBoxNodeEditor(tree));
-    return new JScrollPane(tree);
-  }
-  public static void main(String[] args) {
-    EventQueue.invokeLater(new Runnable() {
-      @Override public void run() {
-        createAndShowGUI();
-      }
-    });
-  }
-  public static void createAndShowGUI() {
-    JFrame f = new JFrame();
-    f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    f.getContentPane().add(new TreeCheckBoxListTest().makeUI());
-    f.setSize(320, 240);
-    f.setLocationRelativeTo(null);
-    f.setVisible(true);
-  }
-}
-class CheckBoxNode {
-  public final String text;
-  public final boolean selected;
-  public CheckBoxNode(String text, boolean selected) {
-    this.text = text;
-    this.selected = selected;
-  }
-  @Override public String toString() {
-    return text;
-  }
-}
-
-class CheckBoxNodeRenderer extends JCheckBox implements TreeCellRenderer {
+<pre class="prettyprint"><code>class CheckBoxNodeRenderer extends JCheckBox implements TreeCellRenderer {
   private TreeCellRenderer renderer = new DefaultTreeCellRenderer();
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
@@ -255,51 +211,16 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
   //protected EventListenerList listenerList = new EventListenerList();
   //transient protected ChangeEvent changeEvent = null;
   @Override public boolean shouldSelectCell(java.util.EventObject anEvent) {
-    return true;
-  }
-  @Override public boolean stopCellEditing() {
-    fireEditingStopped();
-    return true;
-  }
-  @Override public void  cancelCellEditing() {
-    fireEditingCanceled();
-  }
-  @Override public void addCellEditorListener(CellEditorListener l) {
-    listenerList.add(CellEditorListener.class, l);
-  }
-  @Override public void removeCellEditorListener(CellEditorListener l) {
-    listenerList.remove(CellEditorListener.class, l);
-  }
-  public CellEditorListener[] getCellEditorListeners() {
-    return listenerList.getListeners(CellEditorListener.class);
-  }
-  protected void fireEditingStopped() {
-    // Guaranteed to return a non-null array
-    Object[] listeners = listenerList.getListenerList();
-    // Process the listeners last to first, notifying
-    // those that are interested in this event
-    for(int i = listeners.length-2; i&gt;=0; i-=2) {
-      if(listeners[i]==CellEditorListener.class) {
-        // Lazily create the event:
-        if(changeEvent == null) changeEvent = new ChangeEvent(this);
-        ((CellEditorListener)listeners[i+1]).editingStopped(changeEvent);
-      }
-    }
-  }
-  protected void fireEditingCanceled() {
-    // Guaranteed to return a non-null array
-    Object[] listeners = listenerList.getListenerList();
-    // Process the listeners last to first, notifying
-    // those that are interested in this event
-    for(int i = listeners.length-2; i&gt;=0; i-=2) {
-      if(listeners[i]==CellEditorListener.class) {
-        // Lazily create the event:
-        if(changeEvent == null) changeEvent = new ChangeEvent(this);
-        ((CellEditorListener)listeners[i+1]).editingCanceled(changeEvent);
-      }
-    }
-  }
-}
+//...
 </code></pre>
 
+### 参考リンク
+- [JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)
+
+<!-- dummy comment line for breaking list -->
+
 ### コメント
+- 補足として追記していた`JTree`を使用するサンプルを本体に取り込んで、スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-15 (火) 11:56:41
+
+<!-- dummy comment line for breaking list -->
+

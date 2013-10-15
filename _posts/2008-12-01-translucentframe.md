@@ -41,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-01
   public MySynthStyleFactory(SynthStyleFactory factory) {
     this.wrappedFactory = factory;
   }
-  public SynthStyle getStyle(JComponent c, Region id) {
+  @Override public SynthStyle getStyle(JComponent c, Region id) {
     SynthStyle s = wrappedFactory.getStyle(c, id);
     //if(id==Region.INTERNAL_FRAME_TITLE_PANE||id==Region.INTERNAL_FRAME) {
     if(id==Region.INTERNAL_FRAME) {
@@ -55,7 +55,7 @@ class TranslucentSynthSytle extends SynthStyle {
   public TranslucentSynthSytle(SynthStyle s) {
     style = s;
   }
-  public SynthPainter getPainter(final SynthContext context) {
+  @Override public SynthPainter getPainter(final SynthContext context) {
     return new SynthPainter() {
       public void paintInternalFrameBackground(SynthContext context,
                            Graphics g, int x, int y, int w, int h) {
@@ -64,17 +64,17 @@ class TranslucentSynthSytle extends SynthStyle {
       }
     };
   }
-  public boolean isOpaque(SynthContext context) {
+  @Override public boolean isOpaque(SynthContext context) {
     if(context.getRegion()==Region.INTERNAL_FRAME) {
       return false;
     }else{
       return style.isOpaque(context);
     }
   }
-  public Color getColorForState(SynthContext context, ColorType type) {
+  @Override public Color getColorForState(SynthContext context, ColorType type) {
     return null; //Color.RED;
   }
-  public Font getFontForState(SynthContext context) {
+  @Override public Font getFontForState(SynthContext context) {
     return null; //new Font(Font.MONOSPACED, Font.ITALIC, 24);
   }
   //...

@@ -41,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
       super((LayoutManager)null);
       setOpaque(false);
       addMouseListener(new MouseAdapter() {
-        public void mouseClicked(MouseEvent me) {
+        @Override public void mouseClicked(MouseEvent me) {
           if(rect==null || rect.contains(me.getPoint())) return;
           renameTab();
         }
