@@ -46,14 +46,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-09
 <!-- dummy comment line for breaking list -->
 
 - [SwingUtilities.getRoot(Component c)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingUtilities.html#getRoot%28java.awt.Component%29)
-    - 親の`java.awt.Component(java.awt.Window または java.awt.Applet)`が返る
+    - 親のコンポーネント(`java.awt.Window`または`java.awt.Applet`)が返る
         - `Window`の場合は、`c.getParent()`で見つかる最初の上位`Window`オブジェクトだが、`Applet`の場合は、`JComponent#getTopLevelAncestor()`とは異なり、最後の上位`Applet`オブジェクト
     - どちらも存在しない場合は、`null`
 
 <!-- dummy comment line for breaking list -->
 
 - [JComponent#getTopLevelAncestor()](http://docs.oracle.com/javase/jp/6/api/javax/swing/JComponent.html#getTopLevelAncestor%28%29)
-    - 自身の親コンテナ(`java.awt.Window`または`java.awt.Applet`)``が返る
+    - 自身の親コンテナ(`java.awt.Window`または`java.awt.Applet`)が返る
     - 親コンテナが無い場合は、`null`
     - 下のコメント参照
 
