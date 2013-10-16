@@ -2,7 +2,7 @@
 layout: page
 title: Front Page
 #tagline: Supporting tagline
-
+comments : ture
 author :
   name : aterai
   email : at.terai@gmail.com
@@ -39,7 +39,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-25
     - [(Java Swing 引用メモ) Swingのサンプルに関するメモ](http://d.hatena.ne.jp/aterai/20071016/1192516545)
 
 ## 更新履歴
-<!-- Here's a sample "posts list". -->
 
 <ul class="posts">
   {% for post in site.posts limit:10 %}
