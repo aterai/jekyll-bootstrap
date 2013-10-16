@@ -37,17 +37,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-01
     setBackground(Color.WHITE);
     setEditable(false);
   }
-  public void removeHighlights() {
-    Highlighter highlighter = getHighlighter();
-    for(Highlighter.Highlight h: highlighter.getHighlights()) {
-      highlighter.removeHighlight(h);
-    }
-  }
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
     String txt = value!=null ? value.toString() : "";
-    removeHighlights();
+    getHighlighter().removeAllHighlights();
     setText(txt);
     setBackground(isSelected ? backgroundSelectionColor : Color.WHITE);
     if(q!=null &amp;&amp; !q.isEmpty() &amp;&amp; txt.startsWith(q)) {

@@ -34,7 +34,7 @@ public void addComp(final JComponent comp) {
   box.add(glue);
   box.revalidate();
   EventQueue.invokeLater(new Runnable() {
-    public void run() {
+    @Override public void run() {
       comp.scrollRectToVisible(comp.getBounds());
     }
   });

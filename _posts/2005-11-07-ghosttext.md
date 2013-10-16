@@ -31,7 +31,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
     hintMessage = tf.getText();
     tf.setForeground(INACTIVE_COLOR);
   }
-  public void focusGained(final FocusEvent e) {
+  @Override public void focusGained(final FocusEvent e) {
     JTextComponent textField = (JTextComponent)e.getSource();
     String str = textField.getText();
     Color col  = textField.getForeground();
@@ -40,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
       textField.setText("");
     }
   }
-  public void focusLost(final FocusEvent e) {
+  @Override public void focusLost(final FocusEvent e) {
     JTextComponent textField = (JTextComponent)e.getSource();
     String str = textField.getText().trim();
     if("".equals(str)) {

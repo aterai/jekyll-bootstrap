@@ -46,26 +46,12 @@ final int mw = 320;
 final int mh = 100;
 final JFrame frame = new JFrame();
 frame.addComponentListener(new ComponentAdapter() {
-  public void componentResized(ComponentEvent e) {
+  @Override public void componentResized(ComponentEvent e) {
     int fw = frame.getSize().width;
     int fh = frame.getSize().height;
     frame.setSize((mw&gt;fw)?mw:fw, (mh&gt;fh)?mh:fh);
   }
 });
-
-//JFrame#validateをオーバーライド
-//final Dimension minDim = new Dimension(320, 100);
-//JFrame frame = new JFrame() {
-//  public void validate() {
-//    Rectangle rect = getBounds();
-//    if(minDim.width&gt;rect.width || minDim.height&gt;rect.height) {
-//      int mw = ((minDim.width&gt;rect.width)?minDim.width:rect.width);
-//      int mh = ((minDim.height&gt;rect.height)?minDim.height:rect.height);
-//      setBounds(rect.x, rect.y, mw, mh);
-//    }
-//    super.validate();
-//  }
-//};
 </code></pre>
 
 `JFrame#setMaximumSize`が無効な環境でも、上記のように`ComponentListener`を使えば最大サイズを制限する(リサイズした後で最大サイズに戻しているだけ)ことができます。
@@ -83,7 +69,7 @@ import javax.swing.*;
 public class MaximumSizeTest{
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
-      public void run() { createAndShowGUI(); }
+      @Override public void run() { createAndShowGUI(); }
     });
   }
   private static final int MAX = 500;
@@ -95,12 +81,12 @@ public class MaximumSizeTest{
     final Robot r2;
     try{
       r = new Robot();
-    }catch (AWTException ex) {
+    }catch(AWTException ex) {
       r = null;
     }
     r2 = r;
     frame.getRootPane().addComponentListener(new ComponentAdapter() {
-      public void componentResized(ComponentEvent e) {
+      @Override public void componentResized(ComponentEvent e) {
         Point loc   = frame.getLocationOnScreen();
         Point mouse = MouseInfo.getPointerInfo().getLocation();
         if(r2!=null &amp;&amp; (mouse.getX()&gt;loc.getX()+MAX ||

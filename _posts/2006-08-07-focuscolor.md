@@ -30,10 +30,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-07
     this.dColor = dColor;
     this.oColor = oColor;
   }
-  public void focusGained(final FocusEvent e) {
+  @Override public void focusGained(final FocusEvent e) {
     ((JTextField)e.getSource()).setBackground(dColor);
   }
-  public void focusLost(final FocusEvent e) {
+  @Override public void focusLost(final FocusEvent e) {
     ((JTextField)e.getSource()).setBackground(oColor);
   }
 }

@@ -57,7 +57,7 @@ class TranslucentSynthSytle extends SynthStyle {
   }
   @Override public SynthPainter getPainter(final SynthContext context) {
     return new SynthPainter() {
-      public void paintInternalFrameBackground(SynthContext context,
+      @Override public void paintInternalFrameBackground(SynthContext context,
                            Graphics g, int x, int y, int w, int h) {
         g.setColor(new Color(100,200,100,100));
         g.fillRoundRect(x,y,w-1,h-1,15,15);
@@ -111,7 +111,7 @@ public class BackgroundPainterTest {
     JPanel p1 = new JPanel();
     p1.setOpaque(false);
     JPanel p2 = new JPanel() {
-      public void paintComponent(Graphics g) {
+      @Override public void paintComponent(Graphics g) {
         g.setColor(new Color(100,50,50,100));
         g.fillRect(0,0,getWidth(), getHeight());
       }
@@ -119,13 +119,13 @@ public class BackgroundPainterTest {
     p2.setOpaque(false);
     UIDefaults d = new UIDefaults();
     d.put("InternalFrame[Enabled].backgroundPainter", new Painter() {
-      public void paint(Graphics2D g, Object o, int w, int h) {
+      @Override public void paint(Graphics2D g, Object o, int w, int h) {
         g.setColor(new Color(100,200,100,100));
         g.fillRoundRect(0,0,w-1,h-1,15,15);
       }
     });
     d.put("InternalFrame[Enabled+WindowFocused].backgroundPainter", new Painter() {
-      public void paint(Graphics2D g, Object o, int w, int h) {
+      @Override public void paint(Graphics2D g, Object o, int w, int h) {
         g.setColor(new Color(100,250,120,100));
         g.fillRoundRect(0,0,w-1,h-1,15,15);
       }
@@ -161,7 +161,7 @@ public class BackgroundPainterTest {
   }
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
-      public void run() { createAndShowGUI(); }
+      @Override public void run() { createAndShowGUI(); }
     });
   }
   public static void createAndShowGUI() {

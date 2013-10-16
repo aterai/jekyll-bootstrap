@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
     //System.out.println("getTableCellEditorComponent");
     field.setText(value!=null?value.toString():"");
     EventQueue.invokeLater(new Runnable() {
-      public void run() {
+      @Override public void run() {
         field.requestFocusInWindow();
       }
     });
