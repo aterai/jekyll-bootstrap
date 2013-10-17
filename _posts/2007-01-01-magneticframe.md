@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-01
 ### サンプルコード
 <pre class="prettyprint"><code>desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);
 desktop.setDesktopManager(new DefaultDesktopManager() {
-  @override public void dragFrame(JComponent frame, int x, int y) {
+  @Override public void dragFrame(JComponent frame, int x, int y) {
     int e = x; int n = y;
     int w = desktop.getSize().width -frame.getSize().width -e;
     int s = desktop.getSize().height-frame.getSize().height-n;

@@ -37,7 +37,7 @@ am.put(DefaultEditorKit.pasteAction, beep);
 以下のように`copy`メソッドなどをオーバーライドする方法もあります。
 
 <pre class="prettyprint"><code>JTextField field = new JTextField() {
-  public void copy() {
+  @Override public void copy() {
     UIManager.getLookAndFeel().provideErrorFeedback(this);
     //java.awt.Toolkit.getDefaultToolkit().beep();
   }

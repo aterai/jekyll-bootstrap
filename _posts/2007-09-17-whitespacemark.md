@@ -30,7 +30,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-17
   public WhitespaceLabelView(Element elem) {
     super(elem);
   }
-  public void paint(Graphics g, Shape a) {
+  @Override public void paint(Graphics g, Shape a) {
     super.paint(g,a);
     Graphics2D g2 = (Graphics2D)g;
     Stroke stroke = g2.getStroke();

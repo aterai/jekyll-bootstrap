@@ -24,7 +24,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
 
 ### サンプルコード
 <pre class="prettyprint"><code>toolbar.setUI(new BasicToolBarUI() {
-  public boolean canDock(Component c, Point p) {
+  @Override public boolean canDock(Component c, Point p) {
     return super.canDock(c, p) ? isHorizontalDockingConstraint(c, p) : false;
   }
   private boolean isHorizontalDockingConstraint(Component c, Point p) {
@@ -51,11 +51,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
 ドッキングできるかどうかを判定している`BasicToolBarUIのgetDockingConstraint`メソッドが`private`のため、サンプルコードでは、これコピーしてすこしだけ条件を変更した`isHorizontalDockingConstraint`メソッドを作成しています。
 
 - - - -
-`BorderLayout`の`WEST`と`EAST`に、適当にダミーコンポーネントを配置するだけでも、同様にドッキングをブロック出来るようです。
+`BorderLayout`の`WEST`と`EAST`に、適当にダミーコンポーネントを配置するだけでも、同様にドッキングをブロック出来るようです。こちらの方が、`LookAndFeel`に影響もなく簡単です。
 
-<pre class="prettyprint"><code>add(toolbar, BorderLayout.NORTH);
-add(new JLabel(), BorderLayout.WEST);
-add(new JLabel(), BorderLayout.EAST);
+<pre class="prettyprint"><code>JPanel panel = new JPanel(new BorderLayout());
+panel.add(toolbar, BorderLayout.NORTH);
+panel.add(Box.createRigidArea(new Dimension()), BorderLayout.WEST);
+panel.add(Box.createRigidArea(new Dimension()), BorderLayout.EAST);
 </code></pre>
 
 ### コメント

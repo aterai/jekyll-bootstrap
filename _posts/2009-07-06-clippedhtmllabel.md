@@ -30,7 +30,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-06
   private static Rectangle trect = new Rectangle();
   private int row = -1;
   private int col = -1;
-  public Component getTableCellRendererComponent(JTable table, Object value,
+  @Override public Component getTableCellRendererComponent(JTable table, Object value,
                            boolean isSelected, boolean hasFocus,
                            int row, int column) {
     super.getTableCellRendererComponent(table, value, isSelected, false, row, column);

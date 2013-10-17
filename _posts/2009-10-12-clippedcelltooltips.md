@@ -60,7 +60,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-12
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
-  public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
+  @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
     Component c = super.prepareRenderer(tcr, row, column);
     if(c instanceof JComponent) {
        JComponent l = (JComponent)c;

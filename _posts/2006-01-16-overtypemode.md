@@ -27,7 +27,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-16
 class OvertypeCaret extends DefaultCaret {
   //The overtype caret will simply be a horizontal line
   //one pixel high (once we determine where to paint it)
-  public void paint(Graphics g) {
+  @Override public void paint(Graphics g) {
     if(isVisible()) {
       try{
         JTextComponent component = getComponent();
@@ -55,7 +55,7 @@ class OvertypeCaret extends DefaultCaret {
   // Damage must be overridden whenever the paint method is overridden
   // (The damaged area is the area the caret is painted in. We must
   // consider the area for the default caret and this caret)
-  protected synchronized void damage(Rectangle r) {
+  @Override protected synchronized void damage(Rectangle r) {
     if(r != null) {
       JTextComponent c = getComponent();
       x = r.x;
