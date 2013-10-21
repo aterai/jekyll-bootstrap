@@ -27,7 +27,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-19
 final JSeparator sep = new JSeparator();
 final ListCellRenderer lcr = combobox.getRenderer();
 combobox.setRenderer(new ListCellRenderer() {
-  public Component getListCellRendererComponent(
+  @Override public Component getListCellRendererComponent(
                JList list, Object value, int index,
                boolean isSelected, boolean cellHasFocus) {
     MyItem item = (MyItem)value;
@@ -60,7 +60,7 @@ combobox.setEditable(true);
     item = str;
     flag = flg;
   }
-  public String toString() {
+  @Override public String toString() {
     return item;
   }
   public boolean hasSeparator() {
@@ -79,7 +79,7 @@ combobox.setEditable(true);
 コンボボックスが編集不可の場合は、[JComboBox Items with Separators - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/jcombobox_items_with_separators)のようにフィールド表示(`index!=-1`の場合)で区切りが表示されないようにする必要があります。
 
 <pre class="prettyprint"><code>combobox.setRenderer(new ListCellRenderer() {
-  public Component getListCellRendererComponent(
+  @Override public Component getListCellRendererComponent(
                JList list, Object value, int index,
                boolean isSelected, boolean cellHasFocus) {
     MyItem item = (MyItem)value;

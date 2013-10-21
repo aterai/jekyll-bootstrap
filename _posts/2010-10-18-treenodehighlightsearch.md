@@ -30,7 +30,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
   public HighlightTreeCellRenderer(TreeCellRenderer renderer) {
     this.renderer = renderer;
   }
-  public Component getTreeCellRendererComponent(JTree tree, Object value,
+  @Override public Component getTreeCellRendererComponent(JTree tree, Object value,
         boolean isSelected, boolean expanded,
         boolean leaf, int row, boolean hasFocus) {
     JComponent c = (JComponent)renderer.getTreeCellRendererComponent(

@@ -122,7 +122,7 @@ public Action[] getActions() {
 
 ソースコードの方では以下のように`defaultActions`に、上記の`properties`ファイルに書いた`Action`を追加します。
 
-<pre class="prettyprint"><code>public Action[] defaultActions={
+<pre class="prettyprint"><code>public Action[] defaultActions = {
   new NewAction(),
   //new OpenAction(),
   new ExitAction(),
@@ -162,11 +162,11 @@ public Action[] getActions() {
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>ResourceBundle res = ResourceBundle.getBundle(baseName, new ResourceBundle.Control() {
-  public java.util.List&lt;String&gt; getFormats(String baseName) {
+  @Override public java.util.List&lt;String&gt; getFormats(String baseName) {
     if (baseName == null) throw new NullPointerException();
     return Arrays.asList("properties");
   }
-  public ResourceBundle newBundle(
+  @Override public ResourceBundle newBundle(
       String baseName, Locale locale, String format, ClassLoader loader, boolean reload)
         throws IllegalAccessException, InstantiationException, IOException {
     if (baseName == null || locale == null || format == null || loader == null)

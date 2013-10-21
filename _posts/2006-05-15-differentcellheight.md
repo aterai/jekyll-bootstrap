@@ -61,9 +61,11 @@ private DefaultListModel makeList() {
 `JTextArea`にセルフォーカスがある状態を表現するために、 ~~EmptyBorder~~ `LineBorder`を継承して作成した`DotBorder`を使用しています。
 
 <pre class="prettyprint"><code>class DotBorder extends LineBorder {
-  public boolean isBorderOpaque() {return true;}
   public DotBorder(Color color, int thickness) {
     super(color, thickness);
+  }
+  @Override public boolean isBorderOpaque() {
+    return true;
   }
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int w, int h) {

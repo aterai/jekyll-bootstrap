@@ -23,7 +23,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-22
 
 ### サンプルコード
 <pre class="prettyprint"><code>JFileChooser fileChooser = new JFileChooser() {
-  protected JDialog createDialog(Component parent) throws HeadlessException {
+  @Override protected JDialog createDialog(Component parent) throws HeadlessException {
     JDialog dialog = super.createDialog(parent);
     dialog.setResizable(false);
     //dialog.setMinimumSize(new Dimension(640,480)); // JDK 6

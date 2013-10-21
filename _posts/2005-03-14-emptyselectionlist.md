@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-14
 ### サンプルコード
 <pre class="prettyprint"><code>list2.setFocusable(false);
 list2.setSelectionModel(new DefaultListSelectionModel() {
-  public boolean isSelectedIndex(int index) {
+  @Override public boolean isSelectedIndex(int index) {
     return false;
   }
 });
@@ -35,7 +35,7 @@ class EmptySelectionRenderer implements ListCellRenderer {
   public EmptySelectionRenderer(ListCellRenderer renderer) {
     this.renderer = renderer;
   }
-  public Component getListCellRendererComponent(
+  @Override public Component getListCellRendererComponent(
                      JList list, Object value, int index,
                      boolean isSelected, boolean cellHasFocus) {
     return renderer.getListCellRendererComponent(

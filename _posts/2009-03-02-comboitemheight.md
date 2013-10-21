@@ -31,7 +31,7 @@ JComboBox combo2 = new JComboBox(items);
 final ListCellRenderer r = combo2.getRenderer();
 final Dimension dim = ((JLabel)r).getPreferredSize();
 combo2.setRenderer(new ListCellRenderer() {
-  public Component getListCellRendererComponent(
+  @Override public Component getListCellRendererComponent(
         JList list, Object value, int index,
         boolean isSelected, boolean cellHasFocus) {
     Component c = r.getListCellRendererComponent(

@@ -24,9 +24,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-05
 
 ### サンプルコード
 <pre class="prettyprint"><code>public void setHighlight(JTextComponent jtc, String pattern) {
-  removeHighlights(jtc);
   try{
     Highlighter hilite = jtc.getHighlighter();
+    hilite.removeAllHighlights();
     Document doc = jtc.getDocument();
     String text = doc.getText(0, doc.getLength());
     int pos = 0;
@@ -60,9 +60,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-05
 };
 private final String[] pattern = {"Swing", "win"};
 public void setHighlight(JTextComponent jtc, String[] pattern) {
-  removeHighlights(jtc);
   try{
     Highlighter hilite = jtc.getHighlighter();
+    hilite.removeAllHighlights();
     Document doc = jtc.getDocument();
     String text = doc.getText(0, doc.getLength());
     for(int i=0;i&lt;pattern.length;i++) {

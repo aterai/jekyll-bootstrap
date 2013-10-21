@@ -49,7 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-27
   for(int i=0;i&lt;col.getColumnCount();i++) {
     final TableCellRenderer r = table.getDefaultRenderer(model.getColumnClass(i));
     col.getColumn(i).setCellRenderer(new TableCellRenderer() {
-      public Component getTableCellRendererComponent(JTable table, Object value,
+      @Override public Component getTableCellRendererComponent(JTable table, Object value,
                        boolean isSelected, boolean hasFocus, int row, int column) {
         JLabel l;
         if(row==model.getRowCount()-2) {
