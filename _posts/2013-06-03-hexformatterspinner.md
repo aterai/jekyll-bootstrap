@@ -47,7 +47,7 @@ hexformatter.setOverwriteMode(true);
 上記のサンプルでは、`DefaultFormatter#stringToValue(String)`と`DefaultFormatter#valueToString(Object)`をオーバーライドして、`0`から`0x10FFFF`までの整数を`16`進数で表示する`Formatter`を作成し、`JSpinner`に設定しています。
 
 - - - -
-- `JSpinner`から取得した数値(コードポイント)から文字を生成する時、サロゲートペアなどの基本多言語面(BMP)外に対応するために以下のような方法を使用しています。
+- `JSpinner`から取得した数値(コードポイント)から文字を生成する時、サロゲートペアなどの基本多言語面(`BMP`)外に対応するために以下のような方法を使用しています。
     - 参考: [Sample Usage (The Java™ Tutorials > Internationalization > Working with Text)](http://docs.oracle.com/javase/tutorial/i18n/text/usage.html)
 
 <!-- dummy comment line for breaking list -->
@@ -58,7 +58,7 @@ String str = new String(Character.toChars(code));
 </code></pre>
 
 - - - -
-IPAmj明朝とIPAex明朝フォントがインストールされている場合、その文字の形の違いを比較することができます。
+[IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝フォント](http://ipafont.ipa.go.jp/)がインストールされている場合、その文字の形の違いを比較することができます。
 
 - [IPAmj明朝フォントダウンロード　｜　IPA 文字情報基盤](http://mojikiban.ipa.go.jp/download.html)
 - [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/)

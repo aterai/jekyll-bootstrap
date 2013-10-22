@@ -92,7 +92,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-25
                 area.append("*");
               }else{
                 try{
-                  javax.swing.text.Document doc = area.getDocument();
+                  Document doc = area.getDocument();
                   doc.remove(area.getDocument().getLength()-1, 1);
                 }catch(Exception ex) {
                     ex.printStackTrace();

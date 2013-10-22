@@ -20,27 +20,80 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-29
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIYyyZqRI/AAAAAAAAASs/SZslQQaTuFc/s800/ButtonWidth.png)
+![screenshot](https://lh5.googleusercontent.com/-B3A8vHPu9_I/UmY7hTtdmtI/AAAAAAAAB4s/7NknsHc_vwI/s800/ButtonWidth.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>Dimension dim = button1.getPreferredSize();
-button1.setPreferredSize(new Dimension(100, dim.height));
-button2.setPreferredSize(new Dimension(100, dim.height));
-Box box1 = Box.createHorizontalBox();
-box1.add(Box.createHorizontalGlue());
-box1.add(button1);
-box1.add(Box.createHorizontalStrut(5));
-box1.add(button2);
-box1.add(Box.createHorizontalStrut(5));
-box1.add(Box.createRigidArea(new Dimension(0, dim.height+10)));
+<pre class="prettyprint"><code>private static JComponent createRightAlignButtonBox2(
+    final List&lt;JButton&gt; list, final int buttonWidth, int gap) {
+  JComponent box = new JPanel() {
+    @Override public void updateUI() {
+      for(JButton b: list) {
+        b.setPreferredSize(null);
+      }
+      super.updateUI();
+      EventQueue.invokeLater(new Runnable() {
+        @Override public void run() {
+          int maxHeight = 0;
+          for(JButton b: list) {
+            maxHeight = Math.max(maxHeight, b.getPreferredSize().height);
+          }
+          Dimension d = new Dimension(buttonWidth, maxHeight);
+          for(JButton b: list) {
+            b.setPreferredSize(d);
+          }
+          revalidate();
+        }
+      });
+    }
+  };
+  box.setLayout(new BoxLayout(box, BoxLayout.X_AXIS));
+  box.add(Box.createHorizontalGlue());
+  for(JButton b: list) {
+    box.add(b);
+    box.add(Box.createHorizontalStrut(gap));
+  }
+  box.setBorder(BorderFactory.createEmptyBorder(gap, 0, gap, 0));
+  return box;
+}
 </code></pre>
 
 ### 解説
-サンプルの下段のように`JButton`の幅を一定にそろえて水平に並べたい場合や、`GridBagLayout`でウエイトを指定するのが面倒といった場合に使用します。
+上記のサンプルでは、`JButton`の高さはデフォルト、幅をその文字列によらずに一定、配置は右寄せで水平にしたい場合のレイアウト方法をテストしています。
 
-上記のサンプルでは、まず`JButton`の`UI`がフォントサイズや文字列の長さから決めたデフォルトサイズを`getPreferredSize()`で取得しています。高さはそのまま利用し、幅だけ一定の値を設定して、新たなデフォルトサイズを作成し、`setPreferredSize()`しています。これで次から`getPreferredSize()`で帰ってくる値は、どちらのボタンでも全く同じになります。
+- `Default`
+    - `Box`を使用して右寄せ
+    - `JButton`の幅は、その文字列の長さに依存
+- `getPreferredSize`
+    - `Box`を使用して右寄せ
+    - `JButton`の幅は、`JButton#setPreferredSize(...)`で固定幅を設定
+    - `JButton`の高さは、`JButton#getPreferredSize()`で取得したサイズの高さを使用
+    - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JButton#updateUI()`をオーバーライドして`JButton#setPreferredSize(...)`を使用する必要がある
+- `SpringLayout`+`Box`
+    - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
+    - `SpringLayout`で幅指定、`BoxLayout`で右寄せ
+    - `SpringLayout.Constraints`で`JButton`の固定幅を指定
+    - 親パネルの幅も`SpringLayout.Constraints`で固定し、`Box`で入れ子にして右寄せ
+    - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JComponent#getPreferredSize(...)`をオーバーライドして親パネルの高さを更新する必要がある
+- `SpringLayout`
+    - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
+    - `SpringLayout`を使用して右寄せ
+    - `SpringLayout.Constraints`で`JButton`の幅を固定
+    - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JComponent#getPreferredSize(...)`をオーバーライドして親パネルの高さを更新する必要がある
+- `GridLayout`+`Box`
+    - `GridLayout`で幅指定、`BoxLayout`で右寄せ
+    - `GridLayout`ですべての`JButton`のサイズを同じにする
+    - `Box`で入れ子にして右寄せ
 
-この`getPreferredSize()`で得られる値を使用するかどうかは、レイアウトマネージャーによって異なりますが、水平方向にコンポーネントを並べる`BoxLayout`の場合は以下のようになるため、パネルをリサイズしても、ボタンのサイズはどちらも同じで変化しません。
+<!-- dummy comment line for breaking list -->
+
+- - - -
+以下、`setPreferredSize()`を使用する際の補足、注意点です。
+
+`JButton`の`UI`がフォントサイズや文字列の長さから決めたデフォルトサイズを`getPreferredSize()`で取得しています。高さはそのまま利用し、幅だけ一定の値を設定して、新たなデフォルトサイズを作成し、`setPreferredSize()`しています。これで次から`getPreferredSize()`で返ってくる値は、どちらのボタンでも全く同じになります。
+
+この`setPreferredSize(...)`で設定したサイズは、`LookAndFeel`を変更しても残ってしまう(`DimensionUIResource`を使用しても効果がない)ため、`LookAndFeel`がデフォルトで使用する高さを取得したい場合は、`updateUI()`をオーバーライドして、一旦`JButton#setPreferredSize(null);`を設定して幅を変更した推奨サイズをクリアしてから、`super.updateUI();`で推奨サイズを更新し、その後で固定幅、`LookAndFeel`デフォルトの高さを`setPreferredSize(...)`で設定し直す必要があります。
+
+`getPreferredSize()`で得られる値を使用するかどうかは、レイアウトマネージャーによって異なりますが、水平方向にコンポーネントを並べる`BoxLayout`の場合は以下のようになるため、パネルをリサイズしても、ボタンのサイズはどちらも同じで変化しません。
 
 - 幅: 推奨サイズ(`getPreferredSize`メソッド)から取得した値
 - 高さ: 各コンポーネントの推奨サイズ(`getPreferredSize`メソッド)で得られた中からもっとも大きな値
@@ -48,7 +101,7 @@ box1.add(Box.createRigidArea(new Dimension(0, dim.height+10)));
 
 <!-- dummy comment line for breaking list -->
 
-例えば各ボタンを格納した親フレームを`pack()`する前に`JButton#getPreferredSize()`ではなく、`JButton#getSize()`でサイズを取得すると、`[width=0,height=0]`が帰ってきます。コンポーネントが表示されている場合、`getSize()`で得られるサイズは、その実際に表示されているサイズ(レイアウトマネージャーが決める)になります。
+例えば、各ボタンを格納した親フレームを`pack()`する前に`JButton#getPreferredSize()`ではなく、`JButton#getSize()`でサイズを取得すると、`[width=0,height=0]`が帰ってきます。コンポーネントが表示されている場合、`getSize()`で得られるサイズは、その実際に表示されているサイズ(レイアウトマネージャーが決める)になります。
 
 以下は`JLabel`を`getPreferredSize()`した場合の例です。初期状態(`preferredSize`が`null`)の場合は、`JLabel`の`UI`がサイズを計算しています。
 
@@ -69,43 +122,11 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 //l.getPreferredSize() -&gt; Dimension[width=12,height=26]
 </code></pre>
 
-- - - -
-`JComboBox`、`JTextField`などのコンポーネントでは、[JComboBoxなどの幅をカラム数で指定](http://terai.xrea.jp/Swing/SetColumns.html)のように、カラム数で幅を指定することもできます。
-
-- 注:
-    - `JDK 1.5.0`: カラム数で幅を指定すると、コンポーネントによってサイズや余白などが微妙に異なる
-    - `JDK 1.6.0`以上: `LookAndFeel`が同じなら、カラム数での幅指定で、どのコンポーネントでもほぼ同じサイズになる
-
-<!-- dummy comment line for breaking list -->
-
-- - - -
-`setPreferredSize()`などを使わず、`LayoutManager`で`JButton`の幅を固定したい場合は、例えば`SpringLayout`を以下のように使用する方法などがあります。
-
-<pre class="prettyprint"><code>private static JComponent createRightAlignButtonBox2(
-    List&lt;JButton&gt;list, int buttonWidth, int buttonHeight, int gap) {
-  SpringLayout layout = new SpringLayout();
-  JPanel p = new JPanel(layout);
-  SpringLayout.Constraints pCons = layout.getConstraints(p);
-  pCons.setConstraint(SpringLayout.SOUTH, Spring.constant(buttonHeight+gap+gap));
-
-  Spring x     = layout.getConstraint(SpringLayout.WIDTH, p);
-  Spring y     = Spring.constant(gap);
-  Spring g     = Spring.minus(Spring.constant(gap));
-  Spring width = Spring.constant(buttonWidth);
-  for(JButton b: list) {
-    SpringLayout.Constraints constraints = layout.getConstraints(b);
-    constraints.setConstraint(SpringLayout.EAST, x = Spring.sum(x, g));
-    constraints.setY(y);
-    constraints.setWidth(width);
-    p.add(b);
-    x = Spring.sum(x, Spring.minus(width));
-  }
-  return p;
-}
-</code></pre>
-
 ### 参考リンク
 - [JComboBoxなどの幅をカラム数で指定](http://terai.xrea.jp/Swing/SetColumns.html)
+    - `JComboBox`、`JTextField`などのコンポーネントでは、カラム数で幅を指定することもできます。
+        - `JDK 1.5.0`: カラム数で幅を指定すると、コンポーネントによってサイズや余白などが微妙に異なる
+        - `JDK 1.6.0`以上: `LookAndFeel`が同じなら、カラム数での幅指定で、どのコンポーネントでもほぼ同じサイズになる
 - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
 - [Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/how_do_you_layout_command)
     - 専用のレイアウトマネージャを作成するサンプルがあります。
@@ -114,6 +135,7 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 
 ### コメント
 - `SpringLayout`などを使って幅を固定する方法を追加(更新日時は忘れました)。スクリーンショットは未更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-14 (日) 00:36:03
+- `GridLayout`+`Box`のサンプルを追加、`LookAndFeel`を実行中に変更する場合の注意点を追加、スクリーンショットを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-22 (火) 17:33:58
 
 <!-- dummy comment line for breaking list -->
 

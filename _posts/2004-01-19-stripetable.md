@@ -59,7 +59,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-19
 
 サンプルの`TestRenderer`では、`JLabel`を継承する`DefaultTableCellRenderer`を継承しているので、自分自身(`this`)を`setForeground`、`setHorizontalAlignment`などのメソッドで修飾し直し、さらに自分自身(`this`)を戻り値としています。このようにコンポーネントを使い回しているため、セルの数が膨大になっても、オブジェクトを大量に生成しなくて済むようになっています。
 
-また、返されたコンポーネントは、セルの描画のみに利用されて、コンポーネントとしては機能しません。
+また、返されたコンポーネントはセルの描画のためだけに利用され、マウスイベントなどは無視されます。
 
 - - - -
 セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。使用するセルレンダラーに関係なく、テーブル全体で前処理することができます。このため、`Number`クラス用のデフォルトレンダラーである`JTable$NumberRenderer`がそのまま使われるので、`TableModel#getColumnClass(int)`が、`Number.class`を返すようにしておけば、勝手に右寄せしてくれます。
