@@ -3,7 +3,7 @@ layout: post
 title: JButtonなどの高さを変更せずに幅を指定
 category: swing
 folder: ButtonWidth
-tags: [JButton, JComboBox, JTextField, LayoutManager, SpringLayout]
+tags: [JButton, LayoutManager, BoxLayout, SpringLayout, GridLayout]
 author: aterai
 comments: true
 ---

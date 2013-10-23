@@ -62,8 +62,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-24
 違うのは、以下の点になります。
 
 - `Viewport`の色を`scroll.getViewport().setBackground(Color.WHITE)`にする
-- `JTextAreaをsetOpaque(false)`と透明にする
-- `JTextAreaのpaintComponent(Graphics g)`をオーバーライドするとき、カーソルのある行を塗りつぶしてから`super.paintComponent(g)`する
+- `JTextArea#setOpaque(false)`と設定して透明にする
+- `JTextArea#paintComponent(...)`をオーバーライドするとき、カーソルのある行を塗りつぶしてから`super.paintComponent(g)`する
 
 <!-- dummy comment line for breaking list -->
 

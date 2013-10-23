@@ -48,8 +48,6 @@ toolbar.add(createToolbarButton(url3));
 
 アイコンは、[Java look and feel Graphics Repository](http://java.sun.com/developer/techDocs/hi/repository/)の`jlfgr-1_0.jar`から読み込んでいます。
 
-- - - -
-
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVeG6fVBI/AAAAAAAAAns/II_0GGIdnNk/s800/ToolBarLayout1.png)
 
 `JDK 1.6`で、`JDK 1.5`のようなボタン表示(フォーカスを取得しない)にするには、`JButton#setRequestFocusEnabled(false)`(マウスクリックではフォーカスを取得しないが、キーボードからは許可)、または、`JButton#setFocusable(false)`とする必要があるようです。

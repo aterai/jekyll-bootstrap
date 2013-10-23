@@ -114,7 +114,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
 <pre class="prettyprint"><code>private final Box box = // JDK 6 Box.createHorizontalBox();
   // JDK 5
   new Box(BoxLayout.X_AXIS) {
-    protected void paintComponent(Graphics g) {
+    @Override protected void paintComponent(Graphics g) {
       if(ui != null) {
         super.paintComponent(g);
       }else if(isOpaque()) {
