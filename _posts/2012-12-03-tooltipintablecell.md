@@ -63,6 +63,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
 ### 参考リンク
 - [java - Tool tip in JPanel in JTable not working - Stack Overflow](http://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
 - [JTableのTooltipsを行ごとに変更](http://terai.xrea.jp/Swing/RowTooltips.html)
+- [JListのセル中に配置したコンポーネント毎にカーソルを変更する](http://terai.xrea.jp/Swing/CursorOfCellComponent.html)
 
 <!-- dummy comment line for breaking list -->
 
