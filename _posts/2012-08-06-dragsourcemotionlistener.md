@@ -25,13 +25,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-06
 ### サンプルコード
 <pre class="prettyprint"><code>final JWindow window = new JWindow();
 window.add(label);
-window.setAlwaysOnTop(true);
-com.sun.awt.AWTUtilities.setWindowOpaque(window, false); // JDK 1.6.0
-//window.setBackground(new Color(0, true)); // JDK 1.7.0
+//window.setAlwaysOnTop(true);
+//com.sun.awt.AWTUtilities.setWindowOpaque(window, false); // JDK 1.6.0
+window.setBackground(new Color(0, true)); // JDK 1.7.0
 DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMotionListener() {
   @Override public void dragMouseMoved(DragSourceDragEvent dsde) {
     window.setLocation(dsde.getLocation());
-    window.setVisible(true);
   }
 });
 </code></pre>
@@ -54,6 +53,7 @@ DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMoti
 - `OSX`でも表示しましたよ。ただクリックした時にアイコン周りに枠が表示されるのですが、その位置がアイコンとずれてます -- [nsby](http://terai.xrea.jp/nsby.html) 2012-08-07 (火) 11:04:46
     - ありがとうございます。[Bug ID: 4874070 invoking DragSource's startDrag with an Image renders no image on drag](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4874070)あたりの修正の詳しい内容がよく分かっていないので、逆に`Mac OS X`では競合する(二重になる)のでは？と思っていました。「アイコン周りの枠」はオフセットを変更するか、クリックした時点で`JPanel`からは削除してしまえば、何とかなるかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-07 (火) 14:19:12
 - `Web Start`で起動すると、`window.setAlwaysOnTop(true);`で`AccessControlException`が発生するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-12-07 (金) 18:20:23
+- ドラッグ中カーソルが点滅するので、`dragMouseMoved`内で無駄に`Window#setVisible(true);`を実行しないように修正(`TransferHandler#getSourceActions(...)`内でドラッグ開始時に一回だけ実行する)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-25 (金) 18:04:11
 
 <!-- dummy comment line for breaking list -->
 
