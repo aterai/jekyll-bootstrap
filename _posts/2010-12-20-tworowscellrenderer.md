@@ -11,7 +11,7 @@ comments: true
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-20
 
 ## JTableのセル内に二行だけ表示
-`JTable`のセル内に文字列をニ行分だけ表示し、あふれる場合は"..."で省略します。
+`JTable`のセル内に文字列をニ行分だけ表示し、あふれる場合は`...`で省略します。
 
 - {% jnlp %}
 - {% jar %}
@@ -69,7 +69,7 @@ table.setDefaultRenderer(String.class, new TwoRowsCellRenderer());
 </code></pre>
 
 ### 解説
-`JLabel`を上下に配置した`JPanel`を使って、`TableCellRenderer`を作成しています。"..."での省略は、二行目の`JLabel`のデフォルト動作です。
+`JLabel`を上下に配置した`JPanel`を使って、`TableCellRenderer`を作成しています。`...`での省略は、二行目の`JLabel`のデフォルト動作です。
 
 ### 参考リンク
 - [JLabelの文字列を折り返し](http://terai.xrea.jp/Swing/GlyphVector.html)

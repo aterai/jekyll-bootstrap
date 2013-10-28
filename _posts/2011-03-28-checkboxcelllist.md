@@ -221,6 +221,7 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
 
 ### コメント
 - 補足として追記していた`JTree`を使用するサンプルを本体に取り込んで、スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-15 (火) 11:56:41
-- スパム対策でコメント欄を停止。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-21 (月) 15:03:42
+- ~~スパム対策でコメント欄を停止。~~ `.htaccess`で対応するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-21 (月) 15:03:42
 
 <!-- dummy comment line for breaking list -->
+

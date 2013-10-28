@@ -13,14 +13,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-25
 ## 概要
 このページ以下では、`Java Swing`での`GUI`プログラム作成のコツなどを、 **「小さなサンプル(ソースコード付き)」** を使って紹介しています。
 
-<a href="https://picasaweb.google.com/112210866074949770793/JavaSwingTips02?noredirect=1"><img src="http://lh3.ggpht.com/_9Z4BYR88imo/TQslJy3MxYI/AAAAAAAAAts/xrxOCvbp-0A/s800/screenshots.png" /></a>
+<a href="https://picasaweb.google.com/at.terai/JavaSwingTips02"><img src="http://lh3.ggpht.com/_9Z4BYR88imo/TQslJy3MxYI/AAAAAAAAAts/xrxOCvbp-0A/s800/screenshots.png" /></a>
 
 - 上の画像をクリックするとスクリーンショットの一覧に移動します。
 
 ### Swingとは
 `Swing`は、`GUI`(グラフィカル・ユーザ・インタフェース)を作成するための、`Java`標準のコンポーネントセット(ライブラリ、`UI`ツールキット)です。
 
-[About the JFC and Swing (The Java™ Tutorials)](http://java.sun.com/docs/books/tutorial/uiswing/start/about.html)
+[About the JFC and Swing (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/start/about.html)
 
 ## 編集方針
 - **最も欲しいものはサンプルである** - [steps to phantasien t(2007-07-06)](http://dodgson.org/omo/t/?date=20070706#p02)より引用
