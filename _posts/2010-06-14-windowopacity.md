@@ -79,6 +79,7 @@ frame.setVisible(true);
         });
 </code></pre>
     - `7u6`では修正されている。`JDK 1.7.0_06`の`Bug Fixes`に載っている [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7156657) が関係している気がするけど、`Release Fixed`に、`7u6`が無い？ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-09-19 (水) 18:18:48
+        - バックポートされた[Bug ID: JDK-2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=2224554)に、`7u6`があった。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-29 (火) 19:26:30
 
 <!-- dummy comment line for breaking list -->
 

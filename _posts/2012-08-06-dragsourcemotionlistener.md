@@ -39,7 +39,9 @@ DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMoti
 上記のサンプルでは、`JPanel`中に配置した`JLabel`(アイコン)を`Drag & Drop`で別の`JPanel`など(親の`JFrame`が異なる場合も可)に移動することができます。ドラッグ中の`JLabel`は透明化した`Window`に配置され、ドラッグに合わせてその`Window`を移動しているので、`JFrame`の外でもドラッグアイコンが表示可能になっています。
 ドラッグ中のカーソル位置取得には、`MouseMotionListener`を使用する方法もありますが、このサンプルのような`TransferHandler`を使ったドラッグでは`MouseMotionListener`でマウスイベントを取得することができないので、`DefaultDragSource`に`DragSourceMotionListener`を追加してドラッグ中のカーソル位置を取得しています。
 
-- 注: `DragSourceDragEvent#getLocation()`で取得できる位置は、スクリーン上でのマウス位置なので、`MouseEvent#getPoint()`の場合のように`SwingUtilities.convertPointToScreen(pt, c);`で変換しなくて良い
+- 注:
+    - `DragSourceDragEvent#getLocation()`で取得した位置は、スクリーン座標系なので、そのまま`Window#setLocation(...)`で使用可能
+    - `Point pt = tgtLabel.getLocation();`で取得したドラッグ対象`JLabel`の位置は、親コンポーネントの座標系なので、`SwingUtilities.convertPointToScreen(pt, parent);`で変換する必要がある
 
 <!-- dummy comment line for breaking list -->
 

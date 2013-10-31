@@ -116,7 +116,7 @@ class CancelAction extends AbstractAction{
 ### 解説
 以前の`SwingWorker.java`から一部メソッド名が変更されていますが、基本的な使い方は一緒のようです。
 
-- `SwingWorker#execute()`メソッドで処理が開始され、`SwingWorker#doInBackground()`メソッドが、バックグラウンドのスレッドで実行されます。
+- `SwingWorker#execute()`メソッドで処理が開始され、`SwingWorker#doInBackground()`メソッドが、バックグラウンドのワーカースレッドで実行されます。
 - `EDT`で実行する必要のある処理(上記の例では処理中に`JTextArea`へのメッセージの書き出し)は、`SwingWorker#process()`メソッドをオーバーライドして`SwingWorker#publish()`メソッドで呼び出したり、`SwingWorker#firePropertyChange()`を使えば良いようです。
 - プログレスバーの処理には、`SwingWorker#setProgress(int)`が予め用意されているので、`SwingWorker#addPropertyChangeListener(ProgressListener)`を設定するだけで使用することが出来ます。
 - 実行中の処理のキャンセルは、`SwingWorker#cancel(boolean)`メソッドで行います。キャンセルされたかどうかは、`SwingWorker#isCancelled()`メソッドで知ることが出来ます。
@@ -124,18 +124,21 @@ class CancelAction extends AbstractAction{
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`EventQueue.isDispatchThread()`を使うと以下のようになっています。
+現在のスレッドがイベントディスパッチスレッド(以下`EDT`)かどうかを調べる`EventQueue.isDispatchThread()`を、このサンプルで使用すると以下のようになります。
 
 1. `actionPerformed() is EDT?`: `true`
+    - 現在のスレッド(このサンプルでは`EDT`)で、ボタンを選択不可にしたり、`SwingWorker#execute()`を実行している
+
+<!-- dummy comment line for breaking list -->
 1. `doInBackground() is EDT?`: `false`
-    - ここ(バックグラウンド)で重い処理を行い、`EDT`を停止(ブロック)しないようにする
+    - ワーカスレッド(バックグラウンド)で重い処理を行い、`EDT`をブロックして停止状態にならないようにする
 
 <!-- dummy comment line for breaking list -->
 1. `process() is EDT?`: `true`
-    - コンポーネントで進捗状況の表示を更新する場合は、`EDT`で行う必要があるので、ここ(`process()`メソッド内)で実行する
+1. `done() is EDT?`: `true`
+    - `Swing`関連のすべての作業(例えば`JProgressBar`の進捗表示更新)は、`EDT`で行う必要があるので、`process()`か`done()`メソッド内で実行する
 
 <!-- dummy comment line for breaking list -->
-1. `done() is EDT?`: `true`
 
 ### 参考リンク
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
