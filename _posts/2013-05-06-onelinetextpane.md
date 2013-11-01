@@ -38,13 +38,11 @@ try {
 } catch(Exception ex) {
   ex.printStackTrace();
 }
+String KEY = "Do-Nothing";
 InputMap im = textPane.getInputMap(JComponent.WHEN_FOCUSED);
-im.put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), new AbstractAction() {
-  @Override public void actionPerformed(ActionEvent e) {
-    // Do nothing
-  }
-});
-im.put(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0), new AbstractAction() {
+im.put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), KEY);
+im.put(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0), KEY);
+textPane.getActionMap().put(KEY, new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     // Do nothing
   }
@@ -94,6 +92,7 @@ JScrollPane scrollPane = new JScrollPane(
 
 ### コメント
 - `JTextField`では、`aaaaa|bbbbb`でカーソル`|`の位置に文字を追加していくと領域外にカーソルが移動した時点で`bbbbb`が表示されるようにスクロールするが、ここの`OneLineTextPane`では未対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-06 (月) 15:35:00
+- `InputMap`と`ActionMap`を間違えて使用していた箇所を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-01 (金) 17:55:13
 
 <!-- dummy comment line for breaking list -->
 

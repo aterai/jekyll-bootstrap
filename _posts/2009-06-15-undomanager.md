@@ -50,12 +50,10 @@ private static class UndoAction extends AbstractAction {
 </code></pre>
 
 ### 解説
-`Document#addUndoableEditListener(UndoManager)`メソッドを使って、`JTextField`で`Undo`、`Redo`ができるように設定しています。
+`Document#addUndoableEditListener(UndoManager)`メソッドを使って、`JTextField`で`Undo`、`Redo`が以下のキー入力で実行できるように設定しています。
 
-- `Undo`
-    - <kbd>Ctrl+Z</kbd>
-- `Redo`
-    - <kbd>Ctrl+Y</kbd>
+- `Undo` : <kbd>Ctrl+Z</kbd>
+- `Redo` : <kbd>Ctrl+Y</kbd>
 
 <!-- dummy comment line for breaking list -->
 

@@ -35,8 +35,14 @@ private final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;Ta
 private final Box box = Box.createHorizontalBox();
 private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
   //assert currentPageIndex&gt;0;
-  sorter.setRowFilter(makeRowFilter(itemsPerPage, currentPageIndex-1));
-
+  sorter.setRowFilter(new RowFilter&lt;TableModel,Integer&gt;() {
+    @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
+      int ti = currentPageIndex-1
+      int ei = entry.getIdentifier();
+      return (ti*itemsPerPage&lt;=ei &amp;&amp; ei&lt;ti*itemsPerPage+itemsPerPage);
+    }
+  };
+}
   ArrayList&lt;JRadioButton&gt; l = new ArrayList&lt;JRadioButton&gt;();
 
   int startPageIndex = currentPageIndex-LR_PAGE_SIZE;
@@ -56,11 +62,11 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
   if(endPageIndex&gt;maxPageIndex) endPageIndex = maxPageIndex;
 
   if(currentPageIndex&gt;1)
-    l.add(makePNRadioButton(itemsPerPage, currentPageIndex-1, "Prev"));
+    l.add(makePrevNextRadioButton(itemsPerPage, currentPageIndex-1, "Prev"));
   for(int i=startPageIndex;i&lt;=endPageIndex;i++)
-    l.add(makeRadioButton(itemsPerPage, currentPageIndex, i-1));
+    l.add(makeRadioButton(itemsPerPage, currentPageIndex, i));
   if(currentPageIndex&lt;maxPageIndex)
-    l.add(makePNRadioButton(itemsPerPage, currentPageIndex+1, "Next"));
+    l.add(makePrevNextRadioButton(itemsPerPage, currentPageIndex+1, "Next"));
 
   box.removeAll();
   ButtonGroup bg = new ButtonGroup();
@@ -73,25 +79,23 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
   box.repaint();
   l.clear();
 }
-</code></pre>
-
-<pre class="prettyprint"><code>private JRadioButton makeRadioButton(
+private JRadioButton makeRadioButton(
       final int itemsPerPage, final int current, final int target) {
-  JRadioButton radio = new JRadioButton(""+(target+1));
+  JRadioButton radio = new JRadioButton(""+target);
   radio.setForeground(Color.BLUE);
   radio.setUI(ui);
-  if(target+1==current) {
+  if(target==current) {
     radio.setSelected(true);
     radio.setForeground(Color.BLACK);
   }
   radio.addActionListener(new ActionListener() {
     @Override public void actionPerformed(ActionEvent e) {
-      initLinkBox(itemsPerPage, target+1);
+      initLinkBox(itemsPerPage, target);
     }
   });
   return radio;
 }
-private JRadioButton makePNRadioButton(
+private JRadioButton makePrevNextRadioButton(
       final int itemsPerPage, final int target, String title) {
   JRadioButton radio = new JRadioButton(title);
   radio.setForeground(Color.BLUE);
@@ -103,35 +107,24 @@ private JRadioButton makePNRadioButton(
   });
   return radio;
 }
-private RowFilter&lt;TableModel,Integer&gt; makeRowFilter(
-      final int itemsPerPage, final int target) {
-  return new RowFilter&lt;TableModel,Integer&gt;() {
-    @Override public boolean include(
-        Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
-      int ei = entry.getIdentifier();
-      return (target*itemsPerPage&lt;=ei &amp;&amp; ei&lt;target*itemsPerPage+itemsPerPage);
-    }
-  };
-}
-</code></pre>
 
-### 解説
+** 解説 [#uc3887af]
 上記のサンプルは、検索サイトなどでよく使われている、`Pagination`を`JTable`で行っています。
 
-~~ただし、ページ数が大量にある場合の処理や、前へ、次へなどの実装は無視して、~~
+%%ただし、ページ数が大量にある場合の処理や、前へ、次へなどの実装は無視して、%%
 
 ある位置から一定の行数だけ表示するフィルタを予め作成し、これを上部の`JRadioButton`(`BasicRadioButtonUI`を継承して見た目だけリンク風になるよう変更している)で切り替えています。
 
 また、モデルのインデックス順でフィルタリングしているため、ソートを行っても表示される行の範囲内で変化します。
 
-- 参考:[JTableのRowFilterを一旦解除してソート](http://terai.xrea.jp/Swing/ResetRowFilter.html), [TablePaginationTest.java](http://terai.xrea.jp/data/swing/TablePaginationTest.java)
+- 参考:[[JTableのRowFilterを一旦解除してソート&gt;Swing/ResetRowFilter]], [http://terai.xrea.jp/data/swing/TablePaginationTest.java TablePaginationTest.java]
 
-<!-- dummy comment line for breaking list -->
+//**参考リンク
+** コメント [#n7c8e61e]
+- `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- [[aterai]] &amp;new{2008-03-26 (水) 20:28:31};
+- ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- [[aterai]] &amp;new{2008-09-07 (日) 00:08:50};
+- [http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html blogspot]で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- [[aterai]] &amp;new{2011-08-15 (月) 15:54:08};
+- 先頭と最後にジャンプするボタンを追加。 -- [[aterai]] &amp;new{2013-11-01 (金) 16:09:21};
 
-### コメント
-- `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-26 (水) 20:28:31
-- ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-07 (日) 00:08:50
-- [blogspot](http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-08-15 (月) 15:54:08
-
-<!-- dummy comment line for breaking list -->
-
+#comment
+</code></pre>
