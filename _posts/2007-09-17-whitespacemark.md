@@ -76,7 +76,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-17
 
 ### 参考リンク
 - [Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)
-- [Design Guidelines: Text Components](http://java.sun.com/products/jlf/ed1/dg/higo.htm)
+- [Design Guidelines: Text Components](http://web.archive.org/web/20120216035951/http://java.sun.com/products/jlf/ed1/dg/higo.htm)
 - [Swing Chapter 19. (Advanced topics) Inside Text Components. Easy for reading, Click here!](http://www.javafaq.nu/java-book-30.html)
 - [JEditorPaneで改行を表示](http://terai.xrea.jp/Swing/ParagraphMark.html)
 - [JTextPaneでタブサイズを設定](http://terai.xrea.jp/Swing/TabSize.html)

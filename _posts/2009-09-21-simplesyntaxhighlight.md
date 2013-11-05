@@ -113,7 +113,7 @@ class SimpleSyntaxDocument extends DefaultStyledDocument {
 ### 参考リンク
 - [SyntaxDocument.java](http://www.discoverteenergy.com/Files/SyntaxDocument.java)
     - 作者、ライセンス、参照元のページが何処だったかなどが不明…。
-- [Customizing a Text Editor](http://java.sun.com/products/jfc/tsc/articles/text/editor_kit/index.html)
+- [Customizing a Text Editor](http://web.archive.org/web/20120802021725/http://java.sun.com/products/jfc/tsc/articles/text/editor_kit/index.html)
 - [Text Editor Tutorial](http://ostermiller.org/syntax/editor.html)
 
 <!-- dummy comment line for breaking list -->

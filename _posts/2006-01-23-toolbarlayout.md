@@ -46,7 +46,7 @@ toolbar.add(createToolbarButton(url3));
 
 ~~ツールバーが垂直になった場合のことも考えて、`VerticalGlue`も一緒に挿入していますが、特に問題ないようです。~~
 
-アイコンは、[Java look and feel Graphics Repository](http://java.sun.com/developer/techDocs/hi/repository/)の`jlfgr-1_0.jar`から読み込んでいます。
+アイコンは、[Java look and feel Graphics Repository](http://web.archive.org/web/20120818143859/http://java.sun.com/developer/techDocs/hi/repository/)の`jlfgr-1_0.jar`から読み込んでいます。
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVeG6fVBI/AAAAAAAAAns/II_0GGIdnNk/s800/ToolBarLayout1.png)
 
@@ -59,7 +59,7 @@ toolbar.add(createToolbarButton(url3));
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [Java look and feel Graphics Repository](http://java.sun.com/developer/techDocs/hi/repository/)
+- [Java look and feel Graphics Repository](http://web.archive.org/web/20120818143859/http://java.sun.com/developer/techDocs/hi/repository/)
 - [Swing - Buttons like Netbeans'](https://forums.oracle.com/thread/1365522)
 - [Customizing Menu Layout - How to Use Menus (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html#custom)
 
