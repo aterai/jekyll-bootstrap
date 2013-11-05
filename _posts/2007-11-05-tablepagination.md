@@ -107,24 +107,31 @@ private JRadioButton makePrevNextRadioButton(
   });
   return radio;
 }
+</code></pre>
 
-** 解説 [#uc3887af]
+### 解説
 上記のサンプルは、検索サイトなどでよく使われている、`Pagination`を`JTable`で行っています。
 
-%%ただし、ページ数が大量にある場合の処理や、前へ、次へなどの実装は無視して、%%
+~~ただし、ページ数が大量にある場合の処理や、前へ、次へなどの実装は無視して、~~
 
 ある位置から一定の行数だけ表示するフィルタを予め作成し、これを上部の`JRadioButton`(`BasicRadioButtonUI`を継承して見た目だけリンク風になるよう変更している)で切り替えています。
 
 また、モデルのインデックス順でフィルタリングしているため、ソートを行っても表示される行の範囲内で変化します。
 
-- 参考:[[JTableのRowFilterを一旦解除してソート&gt;Swing/ResetRowFilter]], [http://terai.xrea.jp/data/swing/TablePaginationTest.java TablePaginationTest.java]
+- 参考:[JTableのRowFilterを一旦解除してソート](http://terai.xrea.jp/Swing/ResetRowFilter.html), [TablePaginationTest.java](http://terai.xrea.jp/data/swing/TablePaginationTest.java)
 
-//**参考リンク
-** コメント [#n7c8e61e]
-- `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- [[aterai]] &amp;new{2008-03-26 (水) 20:28:31};
-- ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- [[aterai]] &amp;new{2008-09-07 (日) 00:08:50};
-- [http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html blogspot]で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- [[aterai]] &amp;new{2011-08-15 (月) 15:54:08};
-- 先頭と最後にジャンプするボタンを追加。 -- [[aterai]] &amp;new{2013-11-01 (金) 16:09:21};
+<!-- dummy comment line for breaking list -->
 
-#comment
-</code></pre>
+### 参考リンク
+- [JTableのPaginationとSwingWorkerでの逐次読み込み](http://terai.xrea.jp/Swing/PageInputForPagination.html)
+
+<!-- dummy comment line for breaking list -->
+
+### コメント
+- `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-26 (水) 20:28:31
+- ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-07 (日) 00:08:50
+- [blogspot](http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-08-15 (月) 15:54:08
+- 先頭と最後にジャンプするボタンを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-01 (金) 16:09:21
+
+<!-- dummy comment line for breaking list -->
+
