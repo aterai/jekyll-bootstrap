@@ -33,7 +33,7 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 `JFrame#setIconImage(Image)`メソッドを使用して、タイトルバーなどにあるフレームのアイコンを変更しています。
 
 - `null`
-    - デフォルトのアイコンが表示
+    - デフォルトのアイコンが表示される
 - `new ImageIcon("").getImage();`
     - `JDK 1.5`では、アイコン非表示、`JDK 1.6`からは、デフォルトのアイコンが表示される
     - `Web Start`で起動した場合、`AccessControlException: access denied ("java.io.FilePermission" "" "read")`が発生

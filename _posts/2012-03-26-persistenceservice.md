@@ -191,3 +191,16 @@ public class MainPanel extends JPanel {
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- `JScrollPane` + `JTable` + `DefalutTableModel`を`XMLEncoder`で`XML`書出しする場合のエラーなどについて: [JTable speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_speichern) -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-14 (木) 19:06:49
+
+<!-- dummy comment line for breaking list -->
+
+	java.lang.InstantiationException: javax.swing.plaf.basic.BasicTableHeaderUI$MouseInputHandler
+	Continuing ...
+	java.lang.Exception: XMLEncoder: discarding statement JTableHeader.removeMouseMotionListener(BasicTableHeaderUI$MouseInputHandler);
+	Continuing ...
+	java.lang.InstantiationException: javax.swing.plaf.basic.BasicTableUI$Handler
+	Continuing ...
+	java.lang.Exception: XMLEncoder: discarding statement JTable.removeMouseMotionListener(BasicTableUI$Handler);
+	Continuing ...
+

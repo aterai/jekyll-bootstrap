@@ -138,7 +138,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 
 ### 参考リンク
 - [CREATING ROUND SWING BUTTONS - JDC Tech Tips: August 26, 1999](http://web.archive.org/web/20090805104428/http://java.sun.com/developer/TechTips/1999/tt0826.html)
-- [http://web.archive.org/web/20090804054527/http://java.sun.com/developer/TechTips/txtarchive/1999/Aug99_PatrickC.txt](http://web.archive.org/web/20090804054527/http://java.sun.com/developer/TechTips/txtarchive/1999/Aug99_PatrickC.txt)
+    - [Aug99_PatrickC.txt](http://web.archive.org/web/20090804054527/http://java.sun.com/developer/TechTips/txtarchive/1999/Aug99_PatrickC.txt)
 - [ImageIconの形でJButtonを作成](http://terai.xrea.jp/Swing/RoundImageButton.html)
 
 <!-- dummy comment line for breaking list -->
