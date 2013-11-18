@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-22
 ## CellEditorのBorderを変更
 `JTable`の`CellEditor`に`Border`を設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIiyFXk2I/AAAAAAAAAS8/Dgu1EqDMma4/s800/CellEditorBorder.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-05
 ## JScrollPane内にある複数Componentを配置したJPanelをJLayerを使ってドラッグスクロール
 複数のネストした`Component`を配置した`JPanel`のドラッグイベントを、`JScrollPane`をラップした`JLayer`で受け取ってスクロール可能にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-5zBF0JOr6kM/UfuiEj7Do7I/AAAAAAAABxg/7tKYnrOl9eo/s800/DragScrollLayer.png)
 

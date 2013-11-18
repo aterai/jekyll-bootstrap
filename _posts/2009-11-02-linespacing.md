@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-02
 ## JEditorPaneやJTextPaneに行間を設定する
 `JEditorPane`や`JTextPane`に行間を設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPYZn_u9I/AAAAAAAAAd4/5-1ThpWwM5U/s800/LineSpacing.png)
 

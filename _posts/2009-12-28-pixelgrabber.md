@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-28
 ## PixelGrabberで画像を配列として取得し編集、書出し
 画像の配列を取り出す`PixelGrabber`を生成して、角を透過色で塗りつぶします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRBSkghZI/AAAAAAAAAgg/Ce52fcu-nQI/s800/PixelGrabber.png)
 

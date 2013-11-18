@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-29
 ## JTableのセル内でリンクだけHover可能にする
 `JTable`のセル内ではなく、内部のリンク上にカーソルがきた場合だけ`Hover`するように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-OQfktkzVBD4/Tlsepf4ePZI/AAAAAAAABBQ/bikhWupFHEk/s800/PointInsidePrefSize.png)
 

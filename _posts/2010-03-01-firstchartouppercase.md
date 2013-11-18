@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-01
 ## DocumentFilterで先頭文字を大文字に変換する
 `DocumentFilter`を使って、文字列の先頭が常に大文字になるように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMuU7OQ-I/AAAAAAAAAZo/jnaPTnPJY4w/s800/FirstCharToUpperCase.png)
 

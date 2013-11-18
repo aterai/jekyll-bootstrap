@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-28
 ## JTableHeaderの高さを変更
 `JTableHeader`の高さを変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-l20IOO5wKSo/T8MIf7FVUwI/AAAAAAAABNM/9BNN63T96Fo/s800/TableHeaderHeight.png)
 

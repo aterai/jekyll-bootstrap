@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-19
 ## JToolBarの半透明化とアニメーション
 コンポーネントにマウスカーソルがある場合だけ表示される半透明の`JToolBar`を追加します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-36mkZfbor58/Tnb1d-2vaPI/AAAAAAAABCM/Hoor7aG7K-g/s800/TranslucentToolBar.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-23
 ## JSliderのスタイルを変更する
 `JSlider`のトラックとノブを透明にし、値を半透明の色で描画します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TdnxSfPEQLI/AAAAAAAAA7k/vYTnJ_FPktg/s800/GradientTrackSlider.png)
 

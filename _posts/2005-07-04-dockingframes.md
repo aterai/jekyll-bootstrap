@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-04
 ## JFrameの移動を同期
 `JFrame`を`2`つ並べて作成し、その位置関係を保ったまま移動できるようにします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLtEL3M0I/AAAAAAAAAYA/9HmyXI1Uw0M/s800/DockingFrames.png)
 

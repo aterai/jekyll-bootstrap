@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-27
 ## JTextAreaに表示できる行数を制限
 ドキュメントのサイズを一定にして、`JTextArea`など表示できる行数を制限します。[Swing (Archive) - JTextArea Memory Overflow ??](https://forums.oracle.com/thread/1479784)にあるソースコードを参考にしています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMafjL8xI/AAAAAAAAAZI/-KMSGPcn0jM/s800/FIFODocument.png)
 

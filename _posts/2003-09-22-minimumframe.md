@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-22
 ## JFrameの最小サイズ
 `JFrame`や`JDialog`の最小サイズを指定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTP41PdCsI/AAAAAAAAAes/cxniHSm55rQ/s800/MinimumFrame.png)
 

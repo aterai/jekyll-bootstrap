@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 ## JCheckBox付きJTreeでディレクトリ構造を表示
 編集可能な`JCheckBox`をノードに追加した`JTree`でディレクトリ構造を表示します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-5ihZ2R-e4Ug/Tki-blUTxaI/AAAAAAAABA0/5KCjlm9CkSY/s800/FileSystemTreeWithCheckBox.png)
 

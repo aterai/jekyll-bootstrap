@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-23
 ## JTableHeaderのTooltipsを列ごとに変更
 `JTableHeader`の`Tooltips`が、カーソルのある列の内容などを表示するようにします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNx5xm6BI/AAAAAAAAAbU/LCSjxDNp8p0/s800/HeaderTooltips.png)
 

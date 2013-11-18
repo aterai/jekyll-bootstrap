@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-19
 ## JComboBoxのアイテムをBorderで修飾してグループ分け
 `JComboBox`のアイテムを`Border`を使用して修飾してグループ分けします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIMVjWegI/AAAAAAAAASY/yM_W_tfnios/s800/BorderSeparator.png)
 

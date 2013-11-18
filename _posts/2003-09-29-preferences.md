@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-29
 ## JFrameの位置・サイズを記憶する
 `Preferences`(レジストリなど)にフレーム(パネル)の位置・サイズを記憶しておきます。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRGT4S7mI/AAAAAAAAAgo/GDUrxdRJ4x4/s800/Preferences.png)
 

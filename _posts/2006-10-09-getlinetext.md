@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-09
 ## JTextAreaから一行ずつ文字列を取得
 `JTextArea`などのテキストコンポーネントから一行ずつ文字列を取り出してそれを処理します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTNWn74dWI/AAAAAAAAAao/pNdeF8CSOfM/s800/GetLineText.png)
 

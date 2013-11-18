@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
 ## JListの選択を解除
 `JList`のセル選択状態を解除します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TavH8_fQKAI/AAAAAAAAA5s/MyUXQnSHPUA/s800/ClearSelection.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-26
 ## Focusの移動
 `FocusTraversalPolicy`を使って、<kbd>Tab</kbd>キーなどによるフォーカスの移動を制御します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNE9BAwqI/AAAAAAAAAaM/57d2rzX7ixk/s800/FocusTraversal.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
 ## JTreeの葉ノードをJCheckBoxにする
 `JTree`の葉ノードを編集可能な`JCheckBox`にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TYb2-BFsTHI/AAAAAAAAA4U/Fs8-t9x9XSw/s800/CheckBoxNodeTree.png)
 

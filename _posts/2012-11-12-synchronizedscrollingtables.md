@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-12
 ## JSplitPaneに2つのJTableを配置してスクロールを同期する
 `JSplitPane`の左右に、`JTable`をそれぞれ配置し、スクロールや追加などが同期するようにモデルを共有します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-mAnvPJlUJSI/UJ_bYI_kJsI/AAAAAAAABWo/a_jdyUqFLwM/s800/SynchronizedScrollingTables.png)
 

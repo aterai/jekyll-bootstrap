@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-07
 ## TrayIconのポップアップメッセージをテスト
 `TrayIcon`のポップアップメッセージ表示をテストします。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TU-dbe20pkI/AAAAAAAAA0g/3fG2yE_NmHw/s800/DisplayMessage.png)
 

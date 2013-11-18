@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-31
 ## TrayIconでJPopupMenuを使用する
 `TrayIcon`をクリックして`JPopupMenu`を表示します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TUZUBCgOGJI/AAAAAAAAA0A/Ox5g3HoxmoI/s800/TrayIconPopupMenu.png)
 

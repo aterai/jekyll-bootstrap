@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-31
 ## JSpinnerの値をパーセントで指定
 `JSpinner`の値をパーセントで指定するように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQecBWSoI/AAAAAAAAAfo/IOSdDmzOIBs/s800/NumberEditor.png)
 

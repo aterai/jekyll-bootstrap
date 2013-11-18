@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-24
 ## JTextAreaに行ハイライトカーソルを表示
 `JTextArea`のカーソルがある行をハイライト表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPQ5j7_JI/AAAAAAAAAds/kbet-1O8x-A/s800/LineHighlighter.png)
 

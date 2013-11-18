@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-09
 ## TextLayoutでFontのメトリック情報を取得する
 `TextLayout`から`Font`の`Ascent`、`Descent`、`Leading`などのメトリック情報を取得して描画します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/--iErOVV0RYk/TwpnJGdl4OI/AAAAAAAABHs/pHLpQWbpTWg/s800/TextLayout.png)
 

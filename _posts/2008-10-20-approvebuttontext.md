@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-20
 ## JFileChooserのボタンテキストを変更
 `JFileChooser`のボタンテキストを変更します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTHw6_sLrI/AAAAAAAAARs/5fsN5G2p15U/s800/ApproveButtonText.png)
 

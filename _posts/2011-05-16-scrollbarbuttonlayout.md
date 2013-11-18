@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
 ## JScrollBarのButtonの位置を変更
 `JScrollBar`の`Button`の位置を変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TdC-jTZ434I/AAAAAAAAA7I/cnbdjlwODJg/s800/ScrollBarButtonLayout.png)
 

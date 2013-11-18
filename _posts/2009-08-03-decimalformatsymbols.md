@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-03
 ## JSpinnerの文字列を非表示にする
 `SpinnerNumberModel`を使用する`JSpinner`を無効にしたとき、数値を非表示にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKfhstbcI/AAAAAAAAAWE/MMaDVyQ9jNY/s800/DecimalFormatSymbols.png)
 

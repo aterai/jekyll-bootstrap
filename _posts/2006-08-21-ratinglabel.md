@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-21
 ## RGBImageFilterでアイコンの色調を変更
 `RGBImageFilter`で色調を変更したアイコンの用意し、評価用コンポーネントを作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRfRNaARI/AAAAAAAAAhQ/8Rj6Rw8bkwU/s800/RatingLabel.png)
 

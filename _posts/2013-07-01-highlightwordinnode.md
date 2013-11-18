@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-01
 ## JTreeのノード中の文字列をハイライトする
 `JTree`のノードから文字列を検索して、`HighlightPainter`で強調表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-rBf-D-8MbOM/UdBIT7ksWjI/AAAAAAAABvI/m_v7K_LuLao/s800/HighlightWordInNode.png)
 

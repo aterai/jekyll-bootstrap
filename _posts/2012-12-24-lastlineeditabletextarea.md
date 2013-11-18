@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-24
 ## JTextAreaの最終行だけ編集可能になるよう設定する
 `DocumentFilter`を使用して最終行のみ編集可能な`JTextArea`を作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-WoZIsdy2Qd0/UNcd6P73NAI/AAAAAAAABZg/a2O8KLk4hVQ/s800/LastLineEditableTextArea.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-01
 ## SynthでJInternalFrameを半透明にする
 `Synth`を使った`LookAndFeel`で、`JInternalFrame`を半透明にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVvwg_IhI/AAAAAAAAAoI/wQpW8Msbo2Y/s800/TranslucentFrame.png)
 

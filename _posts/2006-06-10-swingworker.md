@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-10
 ## SwingWorkerを使った処理の中断と進捗状況表示
 `JDK 6`で新しくなった`SwingWorker`を使って、処理の中断や進捗状況の表示更新などを行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTT8xXI-cI/AAAAAAAAAlQ/ueJc6P4EJVg/s800/SwingWorker.png)
 

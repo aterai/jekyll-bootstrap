@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-29
 ## TransferHandlerを使ったJListのドラック＆ドロップによる並べ替え
 `JList`のアイテムを複数選択し、ドラック＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLeSCyHuI/AAAAAAAAAXo/v2OLiSPdgEY/s800/DnDReorderList.png)
 

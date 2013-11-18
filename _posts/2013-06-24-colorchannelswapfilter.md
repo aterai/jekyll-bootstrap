@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-24
 ## JLayerを使ってJProgressBarの色相を変更する
 `JLayer`を使って`JProgressBar`の色相を緑から赤に変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-BOomq0cC-U4/UceBZ2TsWWI/AAAAAAAABug/yoXs3wbBVGk/s800/ColorChannelSwapFilter.png)
 

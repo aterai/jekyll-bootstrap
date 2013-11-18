@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-16
 ## JTreeのノードアイコンサイズとテキストの選択状態
 `JTree`のノードアイコンによって行の高さが変更された場合のテキストの選択状態を修正します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-W4SPLnW3RVY/UAQjez2fI3I/AAAAAAAABPY/c4v9ljR2k40/s800/TreeRowHeightCellMargin.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-08
 ## JProgressBarにUIを設定してインジケータの色を変更
 `JProgressBar`のインジケータの色を進行に応じてパレットから取得した色に変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-EjSzEK0Wc6g/UHJrTUTxG9I/AAAAAAAABT8/4AKSHxe6PNE/s800/GradientPalletProgressBar.png)
 

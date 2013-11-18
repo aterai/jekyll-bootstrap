@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-01
 ## JTableのセルにJProgressBarを表示
 `JTable`のセルに`JProgressBar`を使用して進捗を表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUYeEtfWI/AAAAAAAAAl8/47mUyOKeiQY/s800/TableCellProgressBar.png)
 

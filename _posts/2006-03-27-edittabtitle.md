@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
 ## JTabbedPaneのタブタイトルを変更
 `JTabbedPane`のタブタイトルを直接編集します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMGR-jIQI/AAAAAAAAAYo/g3tGLp5zrdY/s800/EditTabTitle.png)
 

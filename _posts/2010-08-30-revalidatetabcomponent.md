@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-30
 ## TabComponentの名前を更新
 `TabComponent`を使用する`JTabbedPane`で、タブ名称を編集更新します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR4c_40eI/AAAAAAAAAh4/dLbGOWvSzSc/s800/RevalidateTabComponent.png)
 

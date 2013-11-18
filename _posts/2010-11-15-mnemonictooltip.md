@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-15
 ## JToolTipにJButtonのMnemonicを表示
 `JButton`に`Mnemonic`が設定されている場合、`JToolTip`にそれを表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTP7StneAI/AAAAAAAAAew/RwPtDfNOEyg/s800/MnemonicToolTip.png)
 

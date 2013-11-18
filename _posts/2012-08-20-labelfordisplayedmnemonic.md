@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-20
 ## JLabelに設定したニーモニックでフォーカス移動
 `JLabel`にニーモニックを設定し、これに関連付けした`JTextField`へのフォーカス移動を行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-c8oDt2QGtY0/UDHQKTuRMGI/AAAAAAAABRQ/dzH-cDi9lEw/s800/LabelForDisplayedMnemonic.png)
 

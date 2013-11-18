@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-26
 ## AuditoryCuesでイベント音を設定する
 `UIManager`に`AuditoryCues.playList`を設定して、ダイアログが開いた時の警告音などを鳴らします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHzQ8XbXI/AAAAAAAAARw/-TGnQ_tvnnM/s800/AuditoryCues.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-07
 ## JEditorPaneで選択色を半透明化
 `JEditorPane`で選択色を半透明化し、`HighlightPainter`によるハイライトや`CSS`での背景色変更と組み合わせた場合の描画のテストを行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-vbDIDKoUbmw/UlFdSAKWCVI/AAAAAAAAB3A/wbVAmRfeTCY/s800/SelectionColor.png)
 

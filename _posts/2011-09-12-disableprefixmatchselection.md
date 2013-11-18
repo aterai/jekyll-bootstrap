@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-12
 ## JListの先頭文字キー入力による検索選択を無効にする
 `JList`にフォーカスがある状態で英数字キー入力をしたときに先頭文字が一致するアイテムを検索して選択する機能を無効にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-_wtzuIN_MvU/Tm2wga2X4hI/AAAAAAAABBs/dUuDS1gj9mM/s800/DisablePrefixMatchSelection.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-12
 ## JButtonに9分割した画像を使用する
 `JButton`を拡大縮小しても四隅などのサイズが変更しないようにように`9`分割した画像を使用します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-yYRfTw-3_BU/UgaFQAAiUcI/AAAAAAAABx4/koHqjZ3o36Q/s800/NineSliceScalingButton.png)
 

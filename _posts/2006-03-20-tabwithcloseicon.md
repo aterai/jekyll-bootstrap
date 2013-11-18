@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
 ## JTabbedPaneにタブを閉じるアイコンを追加
 `JTabbedPane`にタブを閉じるためのアイコンやボタンを追加します。以下の参考リンクから引用したコードをほぼそのまま引用して紹介しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVFao3q4I/AAAAAAAAAnE/SarJyg-AIQk/s800/TabWithCloseIcon.png)
 

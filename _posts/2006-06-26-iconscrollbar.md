@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-26
 ## ScrollBarの表示を変更
 `JScrollBar`のバー表示を変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOPy62F7I/AAAAAAAAAcE/M4J9GIXdfBY/s800/IconScrollBar.png)
 

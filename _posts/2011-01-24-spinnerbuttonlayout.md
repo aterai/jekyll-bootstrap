@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 ## JSpinnerのボタンを左右に配置する
 `JSpinner`のレイアウトを変更して、矢印ボタンを左右に配置します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TT0IT-0k7EI/AAAAAAAAAzA/8LBM7qgDVvw/s800/SpinnerButtonLayout.png)
 

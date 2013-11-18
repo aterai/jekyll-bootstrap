@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-19
 ## JTreeのノード編集をPopupからのみに制限する
 `JTree`のノード編集を、マウスクリックではなく、`Popup`からのみに制限します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTy9Cda5I/AAAAAAAAAlA/6uCGiCD2iGY/s800/StartEditingPopupMenu.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22
 ## SpringLayoutの使用
 `SpringLayout`を使用して、各ラベルのサイズとパネルからの距離が一定の比率になるような配置を指定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTwX9UR-I/AAAAAAAAAk8/TLNZjmIrPnw/s800/SpringLayout.png)
 

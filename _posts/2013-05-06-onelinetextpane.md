@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-06
 ## JTextPaneを一行に制限してスタイル可能なJTextFieldとして使用する
 `JTextPane`の行数を一行のみに制限して、文字色などのスタイル付けが可能な`JTextField`として使用します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-jckifA3Ym6c/UYZlsvWPTqI/AAAAAAAABrY/ERGHE6rtaPo/s800/OneLineTextPane.png)
 

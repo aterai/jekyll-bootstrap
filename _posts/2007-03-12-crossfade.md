@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-12
 ## Crossfadeで画像の切り替え
 `Crossfade`アニメーションで画像の切り替えを行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKRJIdouI/AAAAAAAAAVs/yU1oEsWfzvA/s800/Crossfade.png)
 

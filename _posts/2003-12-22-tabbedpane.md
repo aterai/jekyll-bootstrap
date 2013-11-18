@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-22
 ## JTabbedPaneでタブを追加削除
 ポップアップメニューを使って、`JTabbedPane`にタブを追加、削除します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTULwZD83I/AAAAAAAAAlo/NwNuK8prCFY/s800/TabbedPane.png)
 

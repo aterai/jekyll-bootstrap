@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-17
 ## JTextPaneで全角スペースやタブを可視化
 `JTextPane`に表示した文字列中の全角スペースやタブを可視化します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWpb1ogMI/AAAAAAAAApk/3IWJ2qvvECo/s800/WhitespaceMark.png)
 

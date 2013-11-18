@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-11
 ## JListのセルをカーソル移動でロールオーバー
 `JList`でマウスカーソルの下にあるセルをハイライト表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSE8rUioI/AAAAAAAAAiM/4EMPSFpuBVo/s800/RollOverListener.png)
 

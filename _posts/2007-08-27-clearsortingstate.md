@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-27
 ## TableRowSorterのSortKeysをクリアする
 `JDK 6`で導入された`TableRowSorter`での行ソートを、テーブルヘッダの<kbd>Shift</kbd>+クリックでクリアします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJF8YbgvI/AAAAAAAAAT0/NDSO1fqmVNw/s800/ClearSortingState.png)
 

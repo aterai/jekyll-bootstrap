@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-17
 ## JTreeを行クリックで選択し、行全体を選択状態の背景色で描画
 `JTree`の行をクリックして選択し、行全体を選択状態の背景色で描画します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TTPdCvaUyfI/AAAAAAAAAyQ/QnF4vHjyUiM/s800/TreeRowSelection.png)
 

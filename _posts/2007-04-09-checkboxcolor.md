@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-09
 ## JCheckBoxのチェックアイコンを変更
 `JCheckBox`で使用するチェックアイコンの色や形を変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTI225hC_I/AAAAAAAAATc/YxhkQ5Bq2sk/s800/CheckBoxColor.png)
 

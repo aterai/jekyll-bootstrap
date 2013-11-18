@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-13
 ## GridLayoutとJScrollPaneを使ったグリッド単位での表示切り替え
 `JPanel`に`GridLayout`でコンポーネントを追加し、これを`JScrollPane`に配置して、グリッド単位での表示、スクロールアニメーションによる切り替えを行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-V2E4xmdHmBE/UCiUOuOlrLI/AAAAAAAABQg/IYqzH9-WdsI/s800/GridScrollAnimation.png)
 

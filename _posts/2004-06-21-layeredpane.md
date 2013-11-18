@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-21
 ## JInternalFrameを一番手前に表示
 `JLayeredPane`を使って、常に一番手前に表示される`JInternalFrame`を作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO8wLpaZI/AAAAAAAAAdM/mML3cGeQwrg/s800/LayeredPane.png)
 

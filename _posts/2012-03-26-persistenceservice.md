@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-26
 ## PersistenceServiceを使ってJFrameの位置・サイズを記憶
 `ServiceManager`から`PersistenceService`を取得し、`JFrame`などの位置・サイズの保存、呼び出しを行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-PyOW5DW5kHU/T3APD_Cq_bI/AAAAAAAABKk/i9eivMuQZ0Y/s800/PersistenceService.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-28
 ## JScrollBarに検索結果をハイライト表示
 `JScrollBar`などに`JTextArea`の文字列検索の結果をハイライト表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-69jv_2q3f8g/UQT6FH3HXbI/AAAAAAAABcY/FmYcY3aLr6w/s800/ScrollBarSearchHighlighter.png)
 

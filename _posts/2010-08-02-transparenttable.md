@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-02
 ## JTableを半透明にする
 `JTable`に透明、半透明の背景色を設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTV-0biw5I/AAAAAAAAAog/GI9-wLqeOK8/s800/TransparentTable.png)
 

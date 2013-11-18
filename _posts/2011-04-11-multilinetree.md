@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
 ## JTreeのノードタイトルを複数行表示する
 `JTree`の各ノードで改行を使用し、タイトルを複数行表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TaKbyMKLtkI/AAAAAAAAA5M/NoozvykYAUE/s800/MultiLineTree.png)
 

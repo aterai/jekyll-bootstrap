@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-04
 ## FileSystemViewを使ってディレクトリ構造をJTreeに表示する
 `FileSystemView`を使ってディレクトリ構造を`JTree`上に表示します。主に[java - File Browser GUI - Stack Overflow](http://stackoverflow.com/questions/6182110/file-browser-gui)を参考にしています。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-FkX-8X4KxDo/ThFoeY8M64I/AAAAAAAAA-Y/Ry_RA9yVCxc/s800/DirectoryTree.png)
 

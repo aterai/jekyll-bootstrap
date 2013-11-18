@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-20
 ## JTable自体の高さを拡張
 `JDK 6`で導入された機能を使用して、`JViewport`の高さまで`JTable`を拡張します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMkfiP8jI/AAAAAAAAAZY/qHWqJtrcUgQ/s800/FillsViewportHeight.png)
 

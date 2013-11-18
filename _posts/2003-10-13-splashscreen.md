@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-13
 ## JWindowを使ったSplash Screenの表示
 `JWindow`を使って、`Splash Screen`を表示します。以下のサンプルコードは、`%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java`から引用改変したものです。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTtxuiuuI/AAAAAAAAAk4/JhuyuS80C4M/s800/SplashScreen.png)
 

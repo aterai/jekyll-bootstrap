@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 ## Windowを開いたときのフォーカスを指定
 `JFrame`や`JDialog`などの`Window`を開いたときに、デフォルトでフォーカスを持つコンポーネントを指定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKp09XXEI/AAAAAAAAAWU/p3YhSijyS90/s800/DefaultFocus.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-28
 ## JTabbedPaneのタブにJProgressBarを表示
 `JTabbedPane`のタブに`JProgressBar`を配置して、進捗を表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVHzMYZuI/AAAAAAAAAnI/7G4e4YZbiAQ/s800/TabWithProgressBar.png)
 

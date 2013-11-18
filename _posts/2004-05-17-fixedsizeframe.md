@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-17
 ## JFrameのサイズを固定
 `JFrame`や`JDialog`のサイズを固定し、変更不可にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTM4ZlDyXI/AAAAAAAAAZ4/xXHwfOJP7p0/s800/FixedSizeFrame.png)
 

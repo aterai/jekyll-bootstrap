@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-26
 ## OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成
 `4`つの扇形ボタンと円形ボタンを、`OverlayLayout`を設定した`JPanel`に配置して、複合ボタンを作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-0bLp9wWHHOw/ULIxE5DUtzI/AAAAAAAABX4/pRUF7k-l4D0/s800/CompoundButton.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-09
 ## JEditorPaneのHTMLDocumentからIDでElementを取得する
 `JEditorPane`に設定した`HTMLDocument`を検索して`id`属性を持つ`Element`を取得します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-qbmJcawN3vU/UiyAF7K-MRI/AAAAAAAABz0/i1Hw-dPyqSw/s800/HTMLAttributeID.png)
 

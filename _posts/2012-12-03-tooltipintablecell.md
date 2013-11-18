@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
 ## JTableのセルに複数配置したコンポーネントのJToolTip
 `JTable`のセル中に複数個配置したコンポーネントにそれぞれ`JToolTip`が表示されるように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-OhwzDU_Mys4/ULuQJmYCRiI/AAAAAAAABYQ/Y3Q5mVlliHs/s800/TooltipInTableCell.png)
 

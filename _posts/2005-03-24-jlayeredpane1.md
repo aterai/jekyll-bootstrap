@@ -13,7 +13,6 @@ Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24
 ## JLayeredPaneで小さなウインドを表示
 背景画像を表示可能な`JLayeredPane`に付箋紙を表示するサンプル。
 
-- {% jnlp %}
 - &jar2;
 - {% src %}
 - {% svn %}

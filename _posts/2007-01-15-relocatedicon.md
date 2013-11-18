@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
 ## DesktopManagerでアイコンの再配置
 `JDesktopPane`のサイズが変更されたとき、アイコン化している`JInternalFrame`の再配置を行います。[Bug ID: 4765256 REGRESSION: Icons in JDesktopPane not repositioned when pane is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4765256)からソースコードの大部分を引用しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRm01W30I/AAAAAAAAAhc/eBhL-DDKkSo/s800/RelocatedIcon.png)
 

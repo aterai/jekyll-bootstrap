@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-31
 ## JInternalFrameをJFrameとして表示する
 `JFrame`のタイトルバーなどを非表示にし、`JInternalFrame`のタイトルバーでこれらを代用します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOo9LcVwI/AAAAAAAAAcs/fUEpKhXr_aI/s800/InternalFrameTitleBar.png)
 

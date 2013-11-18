@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-01
 ## JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する
 `HTMLEditorKit`を使用する`JTextPane`で修飾したテキストを`JTextArea`に`Html`ソースとして表示、編集、`JTextPane`に反映するテストを行なっています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-ORS7lITRAUE/UVhL_1G6hPI/AAAAAAAABo4/5WKtBFFthJ0/s800/HTMLEditorKit.png)
 

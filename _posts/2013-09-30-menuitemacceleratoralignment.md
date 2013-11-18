@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-30
 ## JMenuItemのAccelerator表示を右揃えにする
 JMenuItemのAccelerator表示を右揃えに変更します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-vl8nnt_tGvQ/UkhDq1YV-VI/AAAAAAAAB2o/B0-hGdv35Ns/s800/MenuItemAcceleratorAlignment.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-22
 ## JMenuなどから開くPopupMenuを半透明化
 `JPopupMenu`の親の`JWindow`、`JMenu`や`JMenuItem`などを透明にして、`JPopupMenu`を半透明にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-MKRZgWcSrRw/UIT3NRGfX9I/AAAAAAAABUk/fOYdfJmIt4g/s800/TranslucentSubMenu.png)
 

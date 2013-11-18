@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
 ## JScrollPaneのスクロールを同期
 `2`つの`JScrollPane`のスクロールを同期します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png)
 

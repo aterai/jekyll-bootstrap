@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-02
 ## JTableの背景色を変更
 `JTable`を追加した`JViewport`がセルで隠れていない部分の色を変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUV7me60I/AAAAAAAAAl4/PQqRFaxI6XA/s800/TableBackground.png)
 

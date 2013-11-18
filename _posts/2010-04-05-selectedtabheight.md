@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-05
 ## JTabbedPaneで選択したタブの高さを変更
 `JTabbedPane`で選択したタブの高さを変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTS0RHzbTI/AAAAAAAAAjY/__rqkPO3bsk/s800/SelectedTabHeight.png)
 

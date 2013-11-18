@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-07
 ## JTableHeaderにJPopupMenuを追加してソート
 `JTableHeader`に`JPopupMenu`を追加してソートします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSY9WWpNI/AAAAAAAAAis/Z0YqvftAIh8/s800/RowSorterPopupMenu.png)
 

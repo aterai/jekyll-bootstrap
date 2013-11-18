@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-14
 ## JSplitPaneのDividerの位置を最大化後に変更する
 `JFrame`を最大化した後で`JSplitPane`の`Divider`の位置を変更する場合のテストをします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-w5-YQDwojUs/TsB7EdoVlLI/AAAAAAAABEw/p_PcxHKKeRk/s800/DividerSplitRatio.png)
 

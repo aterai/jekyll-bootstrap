@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-12
 ## JPEGファイルのコメントを取り出す
 `JPEG`ファイルからコメントなどのメタデータ(`XML`)を取り出して`JTree`で表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOUrdw9GI/AAAAAAAAAcM/4rakKDY0jI0/s800/IIOMetadata.png)
 

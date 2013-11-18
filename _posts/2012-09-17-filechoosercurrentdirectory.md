@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-17
 ## JFileChooserを開いた時のカレントディレクトリを設定する
 `JFileChooser`を開いた時のカレントディレクトリを設定します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-L0xUhPSuu1Y/UFaopCvyPFI/AAAAAAAABSg/JUQJkTi-0BI/s800/FileChooserCurrentDirectory.png)
 

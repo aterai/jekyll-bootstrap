@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-04
 ## JTableのPaginationとSwingWorkerでの逐次読み込み
 `JTable`で`RowFilter`を使った`Pagination`と`SwingWorker`での逐次読み込みを行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-1qIJd4HlwkQ/UnaN9fNNZtI/AAAAAAAAB5Y/JqssphQAq3Q/s800/PageInputForPagination.png)
 

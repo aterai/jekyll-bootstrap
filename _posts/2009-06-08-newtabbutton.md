@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
 ## JTabbedPane風のタブ配置をレイアウトマネージャーで変更
 `CardLayout`と`JRadioButton`で作成した`JTabbedPane`風コンポーネントのタブ配置を自作レイアウトマネージャーで変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQUU8wtpI/AAAAAAAAAfY/BJyG5weJ1VA/s800/NewTabButton.png)
 

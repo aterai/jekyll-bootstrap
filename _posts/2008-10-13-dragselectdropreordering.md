@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-13
 ## JListのアイテムをラバーバンドで複数選択、ドラック＆ドロップで並べ替え
 `JList`のアイテムを、ラバーバンドで複数選択、ドラック＆ドロップで並べ替え可能にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTL3XY_VqI/AAAAAAAAAYQ/RFVaD4w5C9w/s800/DragSelectDropReordering.png)
 

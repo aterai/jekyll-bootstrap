@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-12
 ## JComboBoxのItemを左右にクリップして配置
 `JComboBox`の`Item`にテキストをクリップして左右に分けて配置します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJSTVvNXI/AAAAAAAAAUI/RNbSh6R4xi8/s800/ClippedLRComboBox.png)
 

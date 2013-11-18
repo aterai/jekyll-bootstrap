@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-21
 ## Borderの右下にJComponentを配置
 `SpringLayout`を設定した`JLayeredPane`を使って、`Border`の右下に`JComponent`を配置します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-IPUQvbcJ2NM/TsjbIEMsMeI/AAAAAAAABE8/Fg16E6wkLtY/s800/RightAlignComponentBorder.png)
 

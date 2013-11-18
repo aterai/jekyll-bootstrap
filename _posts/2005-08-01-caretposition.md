@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-01
 ## JTextPaneで最終行に移動
 `CaretPosition`を指定して`JTextPane`の最終行に移動します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTId9wo-yI/AAAAAAAAAS0/GZbZiJfMOwI/s800/CaretPosition.png)
 

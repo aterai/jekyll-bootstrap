@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-29
 ## Screen上にあるMouseの位置を取得する
 `Screen`上にある`Mouse`の絶対位置を取得して、パネル内のラケットを移動します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQC6wobCI/AAAAAAAAAe8/3UnK314olDM/s800/MouseInfo.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-15
 ## BoxLayoutでリスト状に並べる
 高さの異なるコンポーネントをスクロールできるようにリスト状に並べます。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ_UDZVaI/AAAAAAAAAVQ/BbW1hLhenS8/s800/ComponentList.png)
 

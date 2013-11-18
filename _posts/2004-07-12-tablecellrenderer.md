@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-12
 ## JTableのセル幅で文字列を折り返し
 `JTable`のセル幅に合わせて文字列を折り返します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUbGVPssI/AAAAAAAAAmA/dPiTKpwf1Ro/s800/TableCellRenderer.png)
 

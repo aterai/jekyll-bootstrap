@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
 ## GridBagLayoutの使用
 `GridBagLayout`を使用して、左右の部品のサイズを固定、中央だけは水平方向に伸縮可になるよう配置します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNi4XckaI/AAAAAAAAAa8/8VJwvf6EScw/s800/GridBagLayout.png)
 

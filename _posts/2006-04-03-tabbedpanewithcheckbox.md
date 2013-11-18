@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-03
 ## JTabbedPaneの余白にJCheckBoxを配置
 `JTabbedPane`の余白に`JCheckBox`を配置して特定のタブの開閉を行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUQ8ALIWI/AAAAAAAAAlw/7jfCbNrxWK8/s800/TabbedPaneWithCheckBox.png)
 

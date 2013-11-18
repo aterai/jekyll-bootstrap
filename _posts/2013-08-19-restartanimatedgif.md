@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-19
 ## ImageIconのリソースを開放してAnimatedGifを最初から再生する
 `JButton`などのコンポーネントに設定した`AnimatedGif`のリソースを一旦解放して最初から再生します。[java - Animated ImageIcon as Button - Stack Overflow](http://stackoverflow.com/questions/18270701/animated-imageicon-as-button)を参考にしています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-qShu8SKEKus/UhDUybKOCYI/AAAAAAAAByg/QRDcWyIqcmU/s800/RestartAnimatedGif.png)
 

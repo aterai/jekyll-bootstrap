@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-18
 ## JTreeの展開状態を記憶・復元する
 `JTree`でノードの展開状態を記憶、復元します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-FcYsZkFYSxE/UojBcoMtHwI/AAAAAAAAB6k/A7D221doy2w/s800/ExpandedDescendants.png)
 

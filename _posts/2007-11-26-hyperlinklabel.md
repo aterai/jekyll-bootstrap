@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-26
 ## Hyperlinkを、JLabel、JButton、JEditorPaneで表示
 `Hyperlink`を、`JLabel`、`JButton`、`JEditorPane`で表示し、それぞれクリックした時のイベントを取得します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOIQH0ABI/AAAAAAAAAb4/9QlzkW-7_Es/s800/HyperlinkLabel.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-18
 ## JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする
 `JFrame`のタイトルバーなどを非表示にして独自に描画し、これに移動リサイズなどの機能も追加します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKV1P7mYI/AAAAAAAAAV0/u4qjd-ItBYU/s800/CustomDecoratedFrame.png)
 

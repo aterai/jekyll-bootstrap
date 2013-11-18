@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-29
 ## JComboBoxにJSeparatorを挿入
 `JComboBox`に選択できない`JSeparator`を挿入します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJt9fH4ZI/AAAAAAAAAU0/c9vovQi9Jvo/s800/ComboBoxSeparator.png)
 

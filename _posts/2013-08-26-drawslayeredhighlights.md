@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-26
 ## DefaultHighlighterの描画方法を変更する
 `DefaultHighlighter`の描画方法を変更して、文字列が選択されている場合のハイライト表示を変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-yXndYI0LTyA/UhoR8XLek3I/AAAAAAAABy0/BpEfTjjAGwU/s800/DrawsLayeredHighlights.png)
 

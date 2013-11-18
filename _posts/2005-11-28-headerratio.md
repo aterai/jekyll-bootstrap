@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-28
 ## TableColumnの幅を比率で設定
 `TableColumn`の幅を比率で設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TSs6oj80RcI/AAAAAAAAAxs/hm2gp4ELiDI/s800/HeaderRatio.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-23
 ## JTableのセル編集を文字入力変換中からでも可能にする
 `IME`が直接入力以外で、一時ウィンドウが表示されていても、入力確定でセル編集を開始します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKG6DmuHI/AAAAAAAAAVc/WfOft65kSaQ/s800/CompositionEnabled.png)
 

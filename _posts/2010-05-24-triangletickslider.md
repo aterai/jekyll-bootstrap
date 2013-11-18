@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-24
 ## JSliderの目盛りをアイコンに変更する
 `JSlider`の目盛りをアイコンで描画します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWS_t-t1I/AAAAAAAAApA/78UrJyqx8og/s800/TriangleTickSlider.png)
 

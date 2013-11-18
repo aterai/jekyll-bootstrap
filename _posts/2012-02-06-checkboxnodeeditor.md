@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
 ## JTreeのすべてのノードにJCheckBoxを追加する
 `JTree`のすべてのノードに編集可能な`JCheckBox`を追加します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-DK6aW3VNikg/TygxL3j8UoI/AAAAAAAABIw/6_9FyPe4v7U/s800/CheckBoxNodeEditor.png)
 

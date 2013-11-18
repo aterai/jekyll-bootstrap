@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-16
 ## ButtonGroup内のJRadioButtonなどの選択をクリア
 `JDK 6`で追加された機能を使用して、`ButtonGroup`内の選択をクリアします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTJDUnsHFI/AAAAAAAAATw/gkcmzcekHus/s800/ClearGroupSelection.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-14
 ## Animated GIFでのコマ描画時処理
 `JLabel`などで使用できる`Animated GIF`ファイルをテストします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTHnR-lE1I/AAAAAAAAARc/gDDOKXhD7hQ/s800/AnimatedGif.png)
 

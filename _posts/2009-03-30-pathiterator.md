@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30
 ## PathIteratorからSVGを生成
 `Shape`から`PathIterator`を取得し、この`Path`を`SVG`に変換します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ-2m7pMI/AAAAAAAAAgc/B55RHlb8ajM/s800/PathIterator.png)
 

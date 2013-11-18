@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-06
 ## Browserを起動
 ラベル上の`URL`がクリックされると`Browser`を起動します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIRWyBTSI/AAAAAAAAASg/pT9GD2uz8BI/s800/BrowserLauncher.png)
 

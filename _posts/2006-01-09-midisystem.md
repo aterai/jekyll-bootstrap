@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-09
 ## MIDIファイルの演奏
 `MidiSystem`から`Sequencer`を作成取得し、`MIDI`ファイルを演奏します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTP2Xw5rXI/AAAAAAAAAeo/3v8-ggh9ZBE/s800/MidiSystem.png)
 

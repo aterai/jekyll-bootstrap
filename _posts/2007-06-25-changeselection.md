@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-25
 ## JTableの選択状態を変更
 `JTable`の選択状態を`changeSelection`メソッドを使って変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTI0VFZw9I/AAAAAAAAATY/1C_mVqWcXPc/s800/ChangeSelection.png)
 

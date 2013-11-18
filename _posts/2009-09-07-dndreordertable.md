@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-07
 ## TransferHandlerを使ってJTableの行をドラック＆ドロップ、並べ替え
 `JTable`の行を複数選択し、ドラック＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLg-5HyXI/AAAAAAAAAXs/Wda5rMSf-1c/s800/DnDReorderTable.png)
 

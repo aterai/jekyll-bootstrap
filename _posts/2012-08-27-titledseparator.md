@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-27
 ## TitledBorderとMatteBorderを使用してTitledSeparatorを作成する
 `TitledBorder`と`MatteBorder`を使用して`Title`付きの`Separator`を作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/-sRtVayYL37Q/UDs_iiXRk7I/AAAAAAAABRk/71qZoe9vM60/s800/TitledSeparator.png)
 

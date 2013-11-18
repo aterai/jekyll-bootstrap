@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-16
 ## JTableでキー入力によるセル編集開始を禁止する
 キー入力やマウスクリックによる`JTable`のセル編集開始を禁止します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRLZXQW1I/AAAAAAAAAgw/ufR0d0md6Bc/s800/PreventStartCellEditing.png)
 

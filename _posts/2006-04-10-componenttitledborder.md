@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-10
 ## BorderにJComponentを配置
 `Border`に`JCheckBox`や`JButton`などを配置します。[Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh)の[ComponentTitledBorder](http://www.jroller.com/page/santhosh?entry=component_titled_border)を利用しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKEdJmyzI/AAAAAAAAAVY/FTQKJ7__MnE/s800/ComponentTitledBorder.png)
 

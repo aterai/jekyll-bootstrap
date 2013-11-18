@@ -13,11 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-05
 ## SystemTrayにアイコンを表示
 `JDK 6`で追加された機能を使って、`SystemTray`にアイコンを表示します。
 
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUJeisovI/AAAAAAAAAlk/zvAoP96Ntcs/s800/SystemTray.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
 ## Iconを生成する
 `Icon`インタフェースから固定サイズのアイコンを作成します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/-PTY9ydf9DFE/T97u-rwg5lI/AAAAAAAABN0/52xJLmkoNak/s800/DragHereIcon.png)
 

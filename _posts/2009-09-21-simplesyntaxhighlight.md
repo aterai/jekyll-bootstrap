@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-21
 ## JTextPaneでキーワードのSyntaxHighlight
 `JTextPane`で`Syntax Highlight`を行います。このサンプルは、[SyntaxDocument.java](http://www.discoverteenergy.com/Files/SyntaxDocument.java)からキーワードのハイライト部分を抜き出して作成しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTAw3RBeI/AAAAAAAAAjs/LtUs6l9UpZo/s800/SimpleSyntaxHighlight.png)
 

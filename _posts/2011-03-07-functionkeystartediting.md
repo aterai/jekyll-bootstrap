@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-07
 ## JTableでキー入力によるセル編集自動開始を一部禁止する
 `JTable`のセル編集自動開始をファンクションキーの場合だけ無効にします。[Swing - JTable starts editing when F3 is pressed - howto disable?](https://forums.oracle.com/thread/1350192)を参考にしています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TXR_CO_Z9UI/AAAAAAAAA3I/7_3ml86ybo8/s800/FunctionKeyStartEditing.png)
 

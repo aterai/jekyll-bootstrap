@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-22
 ## JTextAreaの一部を編集不可にする
 `JTextArea`の一部の行を編集不可になるよう設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQW4ZQhAI/AAAAAAAAAfc/JkImmzMvG6I/s800/NonEditableLine.png)
 

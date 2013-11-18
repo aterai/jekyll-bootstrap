@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-22
 ## ClassLoaderでリソース(URL)を取得
 クラスパスからのエントリ(相対パス風)を使って、`ClassLoader`から`URL`を取得します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTI-UTFN-I/AAAAAAAAATo/6sdQoVO0Kc4/s800/ClassLoader.png)
 

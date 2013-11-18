@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
 ## JPanelをアコーディオン風に展開
 `JPanel`の展開、折り畳みをアコーディオン風に行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTHVHwFBII/AAAAAAAAARA/QX4AmSbPoHs/s800/AccordionPanel.png)
 

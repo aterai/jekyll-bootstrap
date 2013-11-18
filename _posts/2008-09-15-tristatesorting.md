@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-15
 ## TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更
 `JDK 6`で導入された`TableRowSorter`のソートを、`TableSorter.java`のようにヘッダクリックで昇順、降順、初期状態に切り替わるように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWVWrGvdI/AAAAAAAAApE/-DL1kAZzGsM/s800/TriStateSorting.png)
 

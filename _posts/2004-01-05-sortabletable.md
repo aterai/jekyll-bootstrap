@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-05
 ## JTableのソート
 `JTable`のヘッダカラムをクリックすることで、行表示を降順、昇順にソートします。以下のサンプルは、[SortableTableExample](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples5.html)を参考にして作成しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTXXYDR5I/AAAAAAAAAkQ/DeBHN6piDhQ/s800/SortableTable.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-27
 ## LayoutManagerを拡張して曲線上にコンポーネントを配置
 `LayoutManager`を拡張して曲線上にコンポーネントを配置します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-Rww2mulIVEI/TggO-rFh_2I/AAAAAAAAA98/R3ZVsfyu3IU/s800/CurveLayout.png)
 

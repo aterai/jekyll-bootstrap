@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27
 ## JSliderでクリックした位置にノブをスライド
 `JSlider`をマウスでクリックした場合、その位置にノブをスライド、続けてドラッグ可能にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOt05WV7I/AAAAAAAAAc0/Eobj6KIAQzk/s800/JumpToClickedPositionSlider.png)
 

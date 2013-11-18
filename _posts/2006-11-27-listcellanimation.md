@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
 ## JListのセルのアニメーション
 `JList`の選択されたセルをアニメーションさせます。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPa7B8VkI/AAAAAAAAAd8/uLpJ50Oxwf8/s800/ListCellAnimation.png)
 

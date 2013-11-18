@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-05
 ## JComboBox内にJProgressBarを表示
 `JComboBox`内に`JProgressBar`を設定して進捗を表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/-wtOABuv6qdQ/TmR3t1oq-qI/AAAAAAAABBg/jbHLwwMR1gc/s800/ProgressComboBox.png)
 

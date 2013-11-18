@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-12
 ## JLabel、JTextAreaなどで複数行を表示
 `JTextPane`、`JTextArea`、`JLabel`を使った複数行のラベルをテストします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQPZi7whI/AAAAAAAAAfQ/ynZxQGkn3_A/s800/MultiLineLabel.png)
 

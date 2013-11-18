@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-31
 ## JButtonのテキストシフト量を変更
 `JButton`をクリックしたときのテキストシフト量を変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVR92SsdI/AAAAAAAAAnY/_wKFJTNu2oY/s800/TextShiftOffset.png)
 

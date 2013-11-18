@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-11
 ## JEditorPaneで改行を表示
 `JEditorPane`で改行記号を表示します。[Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)から、ソースコードの大部分を引用しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ3cf9HLI/AAAAAAAAAgQ/gIbt2d-Hz7k/s800/ParagraphMark.png)
 

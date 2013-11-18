@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22
 ## JTableのセルにJButtonを追加して行削除
 `JTable`のセルに`JButton`を追加し、クリックされたらその行を削除します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKsRqqqeI/AAAAAAAAAWY/X0y-Ph7jngA/s800/DeleteButtonInCell.png)
 

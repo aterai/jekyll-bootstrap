@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-25
 ## JTableのセルにJRadioButton
 `JTable`のセルに`JRadioButton`を配置し、全体で一つだけ選択できるように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TbUwB1XoMEI/AAAAAAAAA6M/5VwHykCV4OI/s800/RadioButtonCellEditor.png)
 

@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16
 ## JScrollPaneでキネティックスクロール
 `JScrollPane`にキネティックスクロール(慣性スクロール)風の動作をするマウスリスナーを設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTO32D08pI/AAAAAAAAAdE/TpuoGrYo-Q0/s800/KineticScrolling.png)
 

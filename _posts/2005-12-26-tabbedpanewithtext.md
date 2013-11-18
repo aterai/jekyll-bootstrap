@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-26
 ## JTabbedPaneの余白に文字列を表示
 `JTabbedPane`の右側の余白に文字列を表示します。[Swing - JTabbedPane with non-tabbed text](https://forums.oracle.com/thread/1392495)の投稿からソースコードを引用しています。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUTbAqf_I/AAAAAAAAAl0/APOrWdnvDko/s800/TabbedPaneWithText.png)
 

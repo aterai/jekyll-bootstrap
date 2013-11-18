@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-31
 ## JTreeの展開、折畳みアイコンを非表示にする
 `JTree`の展開、折畳みアイコンを変更して非表示にします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWHHSFZMI/AAAAAAAAAos/aymKObZa7WQ/s800/TreeExpandedIcon.png)
 

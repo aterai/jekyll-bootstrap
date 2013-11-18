@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-24
 ## JTableで行を選択
 `JTable`で、行を選択した場合の動作をテストします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSWRoWNRI/AAAAAAAAAio/X-jqAVKs3Bw/s800/RowSelection.png)
 

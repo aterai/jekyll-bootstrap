@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-17
 ## JPopupMenuの取得を親に委譲
 親コンポーネントに設定されている`JPopupMenu`を取得して、これを表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOe9ph-LI/AAAAAAAAAcc/iwxbgnjvxg8/s800/InheritsPopupMenu.png)
 

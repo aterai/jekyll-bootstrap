@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-02-12
 ## TableRowSorterでJTableのソート
 `JDK 6`で導入された、`TableRowSorter`を利用して、`JTable`の行を降順、昇順にソートします。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUnbg2jyI/AAAAAAAAAmU/-7yjlGSjBmo/s800/TableRowSorter.png)
 

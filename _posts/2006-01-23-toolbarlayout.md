@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-23
 ## JToolBarでアイコンボタンを右寄せ
 `JToolBar`でアイコンボタンを右寄せ、下寄せで表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVb-HPZjI/AAAAAAAAAno/dMILsHzlipk/s800/ToolBarLayout.png)
 

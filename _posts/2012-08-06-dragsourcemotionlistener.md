@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-06
 ## JFrameの外側でもドラッグアイコンを表示する
 ドラッグ中のカーソル位置を`DragSourceMotionListener`で取得し、そこにアイコンを追加した`Window`を移動することで、`JFrame`の外側でもドラッグアイコンを表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-HM5QzW5AZlk/UB9iFlbSZMI/AAAAAAAABQM/fggojAo0b-E/s800/DragSourceMotionListener.png)
 

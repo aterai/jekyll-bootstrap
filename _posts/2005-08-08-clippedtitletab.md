@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-08
 ## JTabbedPaneのタブを等幅にしてタイトルをクリップ
 `JTabbedPane`のタブを等幅にし、長いタイトルはクリップして表示します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJXdZi5MI/AAAAAAAAAUQ/5nvfRoEEDEM/s800/ClippedTitleTab.png)
 

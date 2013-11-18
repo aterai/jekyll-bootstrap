@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-15
 ## UndoManagerでJTextFieldのUndo、Redoを行う
 `JTextField`のドキュメントに`UndoManager`を追加して、`Undo`、`Redo`を行います。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWX1uwgqI/AAAAAAAAApI/zvwc9TUlj4E/s800/UndoManager.png)
 

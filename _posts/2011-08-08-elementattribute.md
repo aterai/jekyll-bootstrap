@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-08
 ## JEditorPaneのHTMLタグにToolTipTextを設定する
 `JEditorPane`で`div`や`span`タグの`title`属性を`ToolTip`で表示できるように設定します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh4.googleusercontent.com/-3HQ42PjgBfs/Tj97O_2VS6I/AAAAAAAABAc/EnrOPXrJxfE/s800/ElementAttribute.png)
 

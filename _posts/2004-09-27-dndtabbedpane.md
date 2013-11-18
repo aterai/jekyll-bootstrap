@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-27
 ## JTabbedPaneのタブをドラッグ＆ドロップ
 `JTabbedPane`のタブを`Drag&Drop`で移動します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLjYzYe0I/AAAAAAAAAXw/nr90t9LvfMI/s800/DnDTabbedPane.png)
 

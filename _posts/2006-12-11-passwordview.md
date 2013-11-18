@@ -13,12 +13,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-11
 ## JPasswordFieldのエコー文字を変更
 `JPasswordField`のエコー文字を独自の図形に変更します。
 
-- {% jnlp %}
-- {% jar %}
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
+{% download %}
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQ8cs8ApI/AAAAAAAAAgY/gxUUdKI65yA/s800/PasswordView.png)
 
