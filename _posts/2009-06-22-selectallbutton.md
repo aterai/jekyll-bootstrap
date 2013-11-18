@@ -33,7 +33,7 @@ private final Action copyAction = new AbstractAction("copy") {
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JButton`や`JMenuItem`がクリックされたときに、以下のようにしてフォーカスのない`JTable`の全選択やコピーを行っています。
+上記のサンプルでは、`JButton`や`JMenuItem`がクリックされたときに、以下のようにしてフォーカスのない`JTable`の全選択とコピーを行っています。
 
 - `AWTEvent#setSource(Object)`メソッドでイベントを`JTable`に再転送
     - `Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: javax.swing.JMenuItem cannot be cast to javax.swing.JTabl`などの例外が発生しないように

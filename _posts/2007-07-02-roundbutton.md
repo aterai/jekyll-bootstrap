@@ -98,7 +98,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 </code></pre>
 
 ### 解説
-上記のサンプルでは、ボタンの形や縁、クリック可能な領域などをラウンド矩形に置き換えています。
+上記のサンプルでは、ボタンの形や縁、クリック可能な領域をラウンド矩形などの`Shape`に置き換えています。
 
 - `JButton#paintComponent()`をオーバーライドして描画を変更
 - `JButton#contains()`をオーバーライドしてクリック可能な領域を変更
