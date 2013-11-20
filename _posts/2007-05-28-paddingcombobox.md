@@ -18,10 +18,33 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-28
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>Border padding = BorderFactory.createEmptyBorder(0,5,0,0);
-ListCellRenderer lcr = combo.getRenderer();
-((JLabel)lcr).setBorder(padding);
-combo.setRenderer(lcr);
+<pre class="prettyprint"><code>static Border padding = BorderFactory.createEmptyBorder(0,5,0,0);
+//...
+DefaultComboBoxModel&lt;String&gt; model = new DefaultComboBoxModel&lt;&gt;();
+model.addElement("aaaaaaaaaaaaaaaaaaaaaaaaa");
+model.addElement("aaaabbb");
+model.addElement("aaaabbbcc");
+model.addElement("bbb1");
+model.addElement("bbb12");
+
+JComboBox&lt;String&gt; combo = new JComboBox&lt;String&gt;(model) {
+  @Override public void updateUI() {
+    setRenderer(null);
+    super.updateUI();
+    final ListCellRenderer&lt;? super String&gt; lcr = getRenderer();
+    setRenderer(new ListCellRenderer&lt;String&gt;() {
+      @Override public Component getListCellRendererComponent(
+          JList&lt;? extends String&gt; list, String value, int index,
+          boolean isSelected, boolean hasFocus) {
+        JLabel l = (JLabel)lcr.getListCellRendererComponent(
+            list, value, index, isSelected, hasFocus);
+        l.setBorder(padding);
+        return l;
+      }
+    });
+    //XXX JDK 1.7.0 ?: ((JLabel)lcr).setBorder(padding);
+  }
+};
 </code></pre>
 
 ### 解説
@@ -83,12 +106,16 @@ combo.setRenderer(lcr);
 
 - - - -
 
-その他にも、以下のように余白を設定する方法もありますが、`LookAndFeel`によって対応が異なるようです。
-<pre class="prettyprint"><code>UIManager.put("ComboBox.padding", new InsetsUIResource(insets));
+~~その他にも、以下のように`UIManager`で余白を設定する方法もありますが、`LookAndFeel`によって対応が異なる？ようです。~~ `ComboBox.padding`は無くなっている？
+
+`JComboBox`が編集可能の場合は、`ComboBox.editorBorder`が有効かもしれない。
+
+<pre class="prettyprint"><code>//UIManager.put("ComboBox.padding", new InsetsUIResource(insets));
+UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0,5,0,0));
 </code></pre>
 
-- - - -
-上記のサンプルを、余白に色無しにして、`Ubuntu 7.04`(`GNOME 2.18.1`)、`JDK 1.6.0`で実行すると、以下のようになります。
+~~上記のサンプルを、余白に色無しにして、`Ubuntu 7.04`(`GNOME 2.18.1`)、`JDK 1.6.0`で実行すると、以下のようになります。~~
+
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQyV_2TnI/AAAAAAAAAgI/yqGoi_zqsgI/s800/PaddingComboBox1.png)
 
 - - - -
@@ -111,6 +138,7 @@ combo.setRenderer(lcr);
     - `JDK 1.6.0_10-beta-b22`で、`BasicComboBoxUI`の`padding`にすこし修正が入っている？ようです。
 - `LookAndFeel`の切り替えなどを追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-02 (水) 20:08:01
 - `1.7.0_06`で`Nimbus`などの`ComboBox.popupInsets`が修正？ [Bug ID: 7158712 Synth Property "ComboBox.popupInsets" is ignored](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7158712) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-15 (水) 13:58:34
+- `Windows 7`の`LookAndFeel`、編集不可の`JComboBox`で、`( (JLabel)combo.getRenderer() ).setBorder(padding);`が`JComboBox`本体に効かない(フォーカスのための`Border`のせい？)ため、セルレンダラーを作成して毎回余白を適用するように変更。このため、`Windows 7`の`LookAndFeel`では、`JComboBox`本体の点線によるフォーカス表示が無くなる。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-19 (火) 15:37:19
 
 <!-- dummy comment line for breaking list -->
 
