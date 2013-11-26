@@ -59,6 +59,7 @@ oos.flush();
 ### 参考リンク
 - [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
 - [Swing: Retaining JTree Expansion State](http://www.javalobby.org/java/forums/t19857.html)
+- [OR in an OB World: Auto-collapsing Tree in Java](http://orinanobworld.blogspot.jp/2013/03/auto-collapsing-tree-in-java.html)
 
 <!-- dummy comment line for breaking list -->
 

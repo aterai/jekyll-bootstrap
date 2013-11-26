@@ -69,10 +69,12 @@
 </html>
 <!-- Le styles -->
 <script async defer>
-var parent = document.getElementsByTagName('head')[0],
-    ss     = document.createElement('link');
-ss.href = '{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css';
-ss.rel  = 'stylesheet';
-ss.type = 'text/css';
-parent.insertBefore(ss, parent.firstChild);
+(function(document) {
+var p = document.getElementsByTagName('head')[0],
+    l = document.createElement('link');
+l.href = '{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css';
+l.rel  = 'stylesheet';
+l.type = 'text/css';
+p.insertBefore(l, p.firstChild);
+}(document));
 </script>
