@@ -58,10 +58,10 @@ private void repaintWindowAncestor(Component c) {
 - `JFrame`
     - 透明
         
-        <pre class="prettyprint"><code>com.sun.awt.AWTUtilities.setWindowOpaque(frame, false);
-        //frame.setBackground(new Color(0,0,0,0)); //1.7.0
+        <pre class="prettyprint"><code>com.sun.awt.AWTUtilities.setWindowOpaque(frame, false); //JDK 1.6.0
+        frame.setBackground(new Color(0,0,0,0)); //1.7.0
 </code></pre>
-    - `AWTUtilities.setWindowOpacity(...)`、`Window#setOpacity(...)`は、子コンポーネントを含めてすべて半透明になるので、このサンプルでは使用していない
+    - `Window#setOpacity(...)`(または`JDK 1.6.0`で`AWTUtilities.setWindowOpacity(...)`)は、子コンポーネントを含めてすべて半透明になるので、このサンプルでは使用していない
 
 <!-- dummy comment line for breaking list -->
 

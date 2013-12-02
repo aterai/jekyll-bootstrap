@@ -3,7 +3,7 @@ layout: post
 title: JMenuItemの内部にJButtonを配置する
 category: swing
 folder: ButtonsInMenuItem
-tags: [JMenuItem, JButton, GridBagLayout]
+tags: [JMenuItem, JButton, GridBagLayout, JLayer]
 author: aterai
 comments: true
 ---
