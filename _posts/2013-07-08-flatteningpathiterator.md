@@ -51,10 +51,10 @@ while(!i.isDone()) {
 </code></pre>
 
 - `FlatteningPathIterator`
-    - 上記の楕円から取得した`PathIterator`を`FlatteningPathIterator`で平坦化して曲線上の座標点を取得し、`Polygon`に変換して直線で描画
+    - 上記の楕円から取得した`PathIterator`を`FlatteningPathIterator`で平坦化して曲線上の等間隔な座標点を取得し、`Polygon`に変換して直線で描画
     - 参考: [FlatteningPathIterator and moving object along Shape path.](http://java-sl.com/tip_flatteningpathiterator_moving_shape.html)
         - via: [java - Converting an Ellipse2D to Polygon - Stack Overflow](http://stackoverflow.com/questions/17272912/converting-an-ellipse2d-to-polygon)
-    - `FlatteningPathIterator`を使う方法なら、どんな`Shape`でも平坦化した座標点を簡単に取得できる
+    - `FlatteningPathIterator`を使う方法なら、どんな`Shape`でもその線上から等間隔な座標点を簡単に取得できる
 
 <!-- dummy comment line for breaking list -->
 
