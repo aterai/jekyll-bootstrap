@@ -20,7 +20,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-02
 ### サンプルコード
 <pre class="prettyprint"><code>textfield.addFocusListener(new FocusAdapter() {
   @Override public void focusGained(FocusEvent e) {
-    ((JTextComponent)e.getSource()).selectAll();
+    ((JTextComponent)e.getComponent()).selectAll();
   }
 });
 </code></pre>

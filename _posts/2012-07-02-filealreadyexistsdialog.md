@@ -39,7 +39,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-02
 ### 解説
 上記のサンプルでは、ユーザーが`Save`ボタンをクリックした時に呼び出される`JFileChooser#approveSelection()`をオーバーライドし、選択されているファイルがすでに存在する場合は、上書きしても良いかを確認する`ConfirmDialog`を`JFileChooser`を親にして呼び出しています。`Yes`の場合は、`super.approveSelection()`を実行して結果を返して`JFileChooser`を閉じる、`No`の場合は、なにもせずに`JFileChooser`に戻ります。
 
-- 注: このサンプルでは上書きするを選択した場合でも、選択したファイル名をコンソールに出力するだけで、実際にファイルを保存する機能はありません。
+- 注: このサンプルでは上書きするを選択した場合でも、選択したファイル名をコンソールに出力するだけで、実際にファイルを保存する機能は実装していません。
 
 <!-- dummy comment line for breaking list -->
 

@@ -26,15 +26,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-12
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JList#getNextMatch(...)`メソッドをオーバーライドして、常に`-1`を返すようにすることで、キー入力による先頭文字検索選択を無効にしています。
+上記のサンプルでは、`JList#getNextMatch(...)`メソッドをオーバーライドして、戻り値の次にマッチする要素のインデックスが常に`-1`を返すようにすることで、キー入力による先頭文字検索選択を無効にしています。
 
 - - - -
-`JTree`にも同様に機能がありますが、`JTree#getNextMatch(...)`メソッドをオーバーライドして、戻り値の`TreePath`を`null`にすることで、無効にすることができます。
+`JTree`にも`JTree#getNextMatch(...)`メソッドが存在し、同様のキー入力による選択機能がありますが、こちらはインデックスではなく、`TreePath`が戻り値なので、`null`を返すことで無効にすることができます。
 
-<pre class="prettyprint"><code>@Override public TreePath getNextMatch(
-    String prefix, int startingRow, Position.Bias bias) {
-  return null;
-}
+<pre class="prettyprint"><code>JTree tree = new JTree() {
+  @Override public TreePath getNextMatch(String prefix, int startingRow, Position.Bias bias) {
+    return null;
+  }
+};
 </code></pre>
 
 ### コメント
