@@ -64,3 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-16
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- `src.zip`などがダウンロードできない状態(上げ忘れ？)だったのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-06 (金) 16:37:48
+
+<!-- dummy comment line for breaking list -->
+
