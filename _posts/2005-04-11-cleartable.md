@@ -41,10 +41,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-11
 </code></pre>
 
 - - - -
-`JTable#setAutoCreateColumnsFromModel(false)`としておけば、`TableModel`を入れ替えても、上記の方法と同じように既存の列はクリアされません。
+`JTable#setAutoCreateColumnsFromModel(false)`とカラムをモデルから自動生成しないようにしておけば、`TableModel`を入れ替えても、上記の方法と同様に既存の列幅などはそのまま残ります。
 
-<pre class="prettyprint"><code>//((DefaultTableModel)table.getModel()).setRowCount(0);
-table.setAutoCreateColumnsFromModel(false);
+<pre class="prettyprint"><code>table.setAutoCreateColumnsFromModel(false);
 table.setModel(new DefaultTableModel());
 </code></pre>
 
