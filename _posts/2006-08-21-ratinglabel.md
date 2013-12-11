@@ -3,7 +3,7 @@ layout: post
 title: RGBImageFilterでアイコンの色調を変更
 category: swing
 folder: RatingLabel
-tags: [ImageIcon, RGBImageFilter]
+tags: [ImageIcon, RGBImageFilter, JLabel]
 author: aterai
 comments: true
 ---
