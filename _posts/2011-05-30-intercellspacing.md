@@ -18,11 +18,30 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-30
 ![screenshot](https://lh3.googleusercontent.com/-zDg_KUxGwU4/TeNHkhhJYGI/AAAAAAAAA8M/G5R8rKLVzUg/s800/IntercellSpacing.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>Dimension d = table.getIntercellSpacing();
-table.setShowVerticalLines(false);
-table.setIntercellSpacing(new Dimension(0,d.height));
-//table.setShowHorizontalLines(false);
-//table.setIntercellSpacing(new Dimension(d.width,0));
+<pre class="prettyprint"><code>add(new JCheckBox(new AbstractAction("setShowVerticalLines") {
+  @Override public void actionPerformed(ActionEvent e) {
+    Dimension d = table.getIntercellSpacing();
+    if(((JCheckBox)e.getSource()).isSelected()) {
+      table.setShowVerticalLines(true);
+      table.setIntercellSpacing(new Dimension(1, d.height));
+    }else{
+      table.setShowVerticalLines(false);
+      table.setIntercellSpacing(new Dimension(0, d.height));
+    }
+  }
+}));
+add(new JCheckBox(new AbstractAction("setShowHorizontalLines") {
+  @Override public void actionPerformed(ActionEvent e) {
+    Dimension d = table.getIntercellSpacing();
+    if(((JCheckBox)e.getSource()).isSelected()) {
+      table.setShowHorizontalLines(true);
+      table.setIntercellSpacing(new Dimension(d.width, 1));
+    }else{
+      table.setShowHorizontalLines(false);
+      table.setIntercellSpacing(new Dimension(d.width, 0));
+    }
+  }
+}));
 </code></pre>
 
 ### 解説
