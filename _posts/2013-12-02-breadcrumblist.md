@@ -20,7 +20,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-02
 ### サンプルコード
 <pre class="prettyprint"><code>private static JComponent makeBreadcrumbList(int overlap, List&lt;String&gt; list) {
   JPanel p = new JPanel(new FlowLayout(FlowLayout.LEADING, -overlap, 0));
-  p.setBorder(BorderFactory.createEmptyBorder(4, 10, 4, 10));
+  p.setBorder(BorderFactory.createEmptyBorder(4, overlap+4, 4, 4));
   p.setOpaque(false);
   ButtonGroup bg = new ButtonGroup();
   for(String title: list) {
