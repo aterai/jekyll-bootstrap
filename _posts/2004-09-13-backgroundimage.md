@@ -32,11 +32,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-13
 </code></pre>
 
 ### 解説
-このサンプルでは、単純に`Image`を順番に並べて描画しています。コンポーネントの背景色を透明にしてから、`super.paintComponent(g)`する必要があります。
+上記のサンプルでは、`JPanel#setOpaque(false)`と背景を描画しないように設定したパネルで、`JPanel#paintComponent(Graphics)`メソッドをオーバーライドし、ここで`Image`を順番に並べて描画しています。
 
 ### 参考リンク
 - [TexturePaintを使って背景に画像を表示](http://terai.xrea.jp/Swing/TexturePaint.html)
-    - 同様に画像をタイル状に並べて表示
+    - 同様に画像から`TexturePaint`を作成してタイル状に並べて表示
 - [JTextAreaの背景に画像を表示](http://terai.xrea.jp/Swing/CentredBackgroundBorder.html)
     - ひとつの画像を中央に表示
 

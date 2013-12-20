@@ -50,7 +50,7 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 ### 解説
 上記のサンプルでは、<kbd>Shift+Tab</kbd>でポップアップメニューが表示され、<kbd>Up</kbd>, <kbd>Down</kbd>キーで移動、<kbd>Enter</kbd>で`JTextPane`のカーソルの後に選択された文字列が入力されます。
 
-コンボボックスのポップアップ部分の`UI`を表現する`BasicComboPopup`を利用することで、スクロールバーをもつポップアップメニューを実現しています。
+`JComboBox`のポップアップ部分の`UI`を表現する`BasicComboPopup`を利用することで、スクロールバーをもつポップアップメニューを実現しています。
 
 フォースを取得して、キー入力で選択を変更できるように、`BasicComboPopup#isFocusable`メソッドをオーバーライドしています。また、`BasicComboPopup#show`したあと、`BasicComboPopup#requestFocusInWindow`する必要があります。
 
