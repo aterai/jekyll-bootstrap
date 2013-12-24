@@ -49,3 +49,7 @@ combo2.setRenderer(new ListCellRenderer() {
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- `html`タグを使用するサンプルなどを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-20 (金) 20:06:03
+
+<!-- dummy comment line for breaking list -->
+
