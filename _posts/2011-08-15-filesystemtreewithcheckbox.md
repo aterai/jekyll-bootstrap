@@ -3,7 +3,7 @@ layout: post
 title: JCheckBox付きJTreeでディレクトリ構造を表示
 category: swing
 folder: FileSystemTreeWithCheckBox
-tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, File, TreeModelListener]
+tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, File, TreeModelListener, SwingWorker]
 author: aterai
 comments: true
 ---
@@ -119,6 +119,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 - [JTreeのすべてのノードにJCheckBoxを追加する](http://terai.xrea.jp/Swing/CheckBoxNodeEditor.html) で使用している`TreeModelListener`を追加して`JCheckBox`の状態を変更するように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-13 (金) 20:12:08
 - チェックされたノード(最上位となる)の一覧をコンソールに表示する`JButton`を追加(スクリーンショットなどは面倒なので更新しない)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-19 (木) 19:50:07
 - ノードをチェックしてから、そのディレクトリを開いても子ディレクトリにチェックが反映されない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-07-31 (火) 18:15:44
+- いつも勉強させていただいております。サンプルではrootはデスクトップとなっていますが、もし例えばZ:\またはZ:\aaaとTOPにしたい場合、どこを修正すれば宜しいでしょうか？ご教示をお願いいたします。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2013-12-25 (水) 14:11:08
+    - こんばんは。このサンプルでは、`fileSystemView.getRoots()`で`Desktop`フォルダ(`Windows`の場合)を取得しているので、この箇所を、例えば`File fileSystemRoot = new File("Z:/"); /* for(File fileSystemRoot: fileSystemView.getRoots()) */ {`のように変更するのはどうでしょうか。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-25 (水) 16:34:38
 
 <!-- dummy comment line for breaking list -->
 

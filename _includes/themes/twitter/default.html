@@ -32,8 +32,7 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}"  type="application/rss+xml"  rel="alternate" title="Sitewide RSS Feed"  />
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script async src="//zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+    <script async defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
 
   <body onload="prettyPrint()">
@@ -64,18 +63,16 @@
       </footer>
 
     </div>
-    {% include JB/analytics %}
-<script async defer src="//terai.xrea.jp/skin/prettify.js"></script>
-<!-- Le styles -->
-<script async defer>
-(function(document) {
-var h = document.head,
-    l = document.createElement('link');
-l.href = '{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css';
+  </body>
+  {% include JB/analytics %}
+  <script async defer src="//terai.xrea.jp/skin/prettify.js"></script>
+  <script>
+(function(d,f) {
+var h = d.head, l = d.createElement('link');
+l.href = f;
 l.rel  = 'stylesheet';
 l.type = 'text/css';
 h.insertBefore(l, h.firstChild);
-}(document));
+}(document, '{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css'));
 </script>
-  </body>
 </html>

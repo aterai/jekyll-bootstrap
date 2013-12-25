@@ -21,7 +21,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-23
 <pre class="prettyprint"><code>textField4.addAncestorListener(new AncestorListener() {
   @Override public void ancestorAdded(AncestorEvent e) {
     e.getComponent().requestFocusInWindow();
-    //or textField4.requestFocusInWindow();
   }
   @Override public void ancestorMoved(AncestorEvent e) {}
   @Override public void ancestorRemoved(AncestorEvent e) {}
