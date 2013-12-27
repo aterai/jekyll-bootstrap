@@ -121,6 +121,32 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 - ノードをチェックしてから、そのディレクトリを開いても子ディレクトリにチェックが反映されない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-07-31 (火) 18:15:44
 - いつも勉強させていただいております。サンプルではrootはデスクトップとなっていますが、もし例えばZ:\またはZ:\aaaとTOPにしたい場合、どこを修正すれば宜しいでしょうか？ご教示をお願いいたします。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2013-12-25 (水) 14:11:08
     - こんばんは。このサンプルでは、`fileSystemView.getRoots()`で`Desktop`フォルダ(`Windows`の場合)を取得しているので、この箇所を、例えば`File fileSystemRoot = new File("Z:/"); /* for(File fileSystemRoot: fileSystemView.getRoots()) */ {`のように変更するのはどうでしょうか。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-25 (水) 16:34:38
+- ご教示、ありがとうございました。ご指摘のところを見落としました。やり方は理解できました。ついでに、もしrootはデスクトップにしておいて、C:\を表示させないで(または展開させないで)、X:\,Y:\のみ操作させるには、どこを弄れば宜しいでしょうか？ありがとうございました。来年もよろしくお願いします。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2013-12-26 (木) 13:36:28
+    - `fileSystemView.getRoots()`で`Desktop`フォルダを取得すると、 マイコンピュータとか、`Desktop`フォルダが`C:\`にある場合はマイドキュメントなどを選択不可にするのが、面倒な気がします。以下のように`new File(System.getProperty("user.home")+"/Desktop")`とデスクトップを決め打ちにしてノードを作ってしまうのが簡単かもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-26 (木) 21:55:24
 
 <!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>final FileSystemView fileSystemView = FileSystemView.getFileSystemView();
+DefaultMutableTreeNode root = new DefaultMutableTreeNode();
+final DefaultTreeModel treeModel = new DefaultTreeModel(root);
+File desktopFile = new File(System.getProperty("user.home")+"/Desktop");
+DefaultMutableTreeNode desktop = new DefaultMutableTreeNode(new CheckBoxNode(desktopFile, Status.DESELECTED));
+root.add(desktop);
+for(File file: fileSystemView.getFiles(desktopFile, true)) {
+  if(file.isDirectory()) {
+    desktop.add(new DefaultMutableTreeNode(new CheckBoxNode(file, Status.DESELECTED)));
+  }
+}
+for(File fileSystemRoot: Arrays.asList(new File("X:/"), new File("Y:/"))) {
+  DefaultMutableTreeNode node = new DefaultMutableTreeNode(new CheckBoxNode(fileSystemRoot, Status.DESELECTED));
+  desktop.add(node);
+  for(File file: fileSystemView.getFiles(fileSystemRoot, true)) {
+    System.out.println(file.getAbsolutePath());
+    if(file.isDirectory()) {
+      node.add(new DefaultMutableTreeNode(new CheckBoxNode(file, Status.DESELECTED)));
+    }
+  }
+}
+treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
+</code></pre>
 
