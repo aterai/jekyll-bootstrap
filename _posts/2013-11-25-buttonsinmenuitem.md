@@ -71,8 +71,8 @@ private static AbstractButton makeButton(String title, Action action) {
   b.addActionListener(new ActionListener() {
     @Override public void actionPerformed(ActionEvent e) {
       JButton b = (JButton)e.getSource();
-      Container c = b.getParent().getParent().getParent();
-      if(c instanceof JPopupMenu) {
+      Container c = SwingUtilities.getAncestorOfClass(JPopupMenu.class, b);
+      if(c != null) {
         ((JPopupMenu)c).setVisible(false);
       }
     }
