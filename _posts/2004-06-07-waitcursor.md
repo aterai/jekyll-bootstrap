@@ -144,6 +144,8 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 - `DefaultFocusTraversalPolicy`を使うように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-07-03 (火) 16:39:12
 - `GlassPane`で、`FocusTraversalPolicy`を使わず、`print`を使って`Mnemonic`などをブロックするように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-15 (火) 17:14:09
 - `SwingWorker`を使うように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-26 (土) 23:21:11
+- 入力抑制であればAWTEventListenerを追加してInputEventをconsumeしちゃえば良いのでは・・・？ -- [sawshun](http://terai.xrea.jp/sawshun.html) 2014-01-14 (火) 08:32:09
+    - `AWTEventListener`を使うのは便利な方法だと思いますが、セキュリティマネージャの設定によっては`SecurityException`が発生したり、ドキュメントには「[アクセシビリティー、イベントの記録と再生、および診断トレースなどの特別な機能をサポートすることを主な目的としているので、アプリケーションの使用では推奨されません。](http://docs.oracle.com/javase/jp/7/api/java/awt/Toolkit.html#addAWTEventListener%28java.awt.event.AWTEventListener,%20long%29)」的な注意事項があるので、使い所を考慮する必要がありそうです。このサンプルのような場合で`InputEvent#consume()`を使うなら`1.7`以上で`JLayer`を使用する方が無難かもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-01-14 (火) 14:13:39
 
 <!-- dummy comment line for breaking list -->
 

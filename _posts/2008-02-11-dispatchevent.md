@@ -65,3 +65,7 @@ JButton button = new JButton(new AbstractAction("Connect") {
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- `java.security.AccessControlException: access denied ("java.awt.AWTPermission" "listenToAllAWTEvents")`が発生するので、`Web Start`起動のリンクを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-01-14 (火) 13:57:01
+
+<!-- dummy comment line for breaking list -->
+
