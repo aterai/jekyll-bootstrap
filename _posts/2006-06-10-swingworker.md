@@ -18,60 +18,72 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-10
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTT8xXI-cI/AAAAAAAAAlQ/ueJc6P4EJVg/s800/SwingWorker.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>class RunAction extends AbstractAction{
+<pre class="prettyprint"><code>class Task extends SwingWorker&lt;String, String&gt; {
+  //public Task(List&lt;File&gt; list) {
+  //  this.list = list;
+  //}
+  @Override public String doInBackground() {
+    System.out.println("doInBackground() is EDT?: " + EventQueue.isDispatchThread());
+    try {
+      Thread.sleep(1000);
+    } catch(InterruptedException ie) {
+      return "Interrupted";
+    }
+    int current = 0;
+    int lengthOfTask = 120; //list.size();
+    publish("Length Of Task: " + lengthOfTask);
+    publish("\n------------------------------\n");
+
+    while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
+      try {
+        Thread.sleep(50); //doSomething(file = list(current));
+      } catch(InterruptedException ie) {
+        return "Interrupted";
+      }
+      setProgress(100 * current / lengthOfTask);
+      publish(".");
+      current++;
+    }
+    publish("\n");
+    return "Done";
+  }
+}
+
+class RunAction extends AbstractAction {
   public RunAction() {
     super("run");
   }
   @Override public void actionPerformed(ActionEvent evt) {
-    //assert EventQueue.isDispatchThread();
-    System.out.println("actionPerformed() is EDT?: "
-        + EventQueue.isDispatchThread());
+    System.out.println("actionPerformed() is EDT?: " + EventQueue.isDispatchThread());
     final JProgressBar bar = new JProgressBar(0, 100);
     runButton.setEnabled(false);
     canButton.setEnabled(true);
-    icon.animationStart();
+    anil.startAnimation();
     statusPanel.removeAll();
     statusPanel.add(bar);
     statusPanel.revalidate();
     bar.setIndeterminate(true);
-    worker = new SwingWorker&lt;String, String&gt;() {
-      @Override public String doInBackground() {
-        System.out.println("doInBackground() is EDT?: "
-            + EventQueue.isDispatchThread());
-        try { // dummy task
-          Thread.sleep(1000);
-        }catch(InterruptedException ie) {
-          return "Interrupted";
+
+    worker = new Task() {
+      @Override protected void process(List&lt;String&gt; chunks) {
+        System.out.println("process() is EDT?: " + EventQueue.isDispatchThread());
+        if(!isDisplayable()) {
+          System.out.println("process: DISPOSE_ON_CLOSE");
+          cancel(true);
+          return;
         }
-        int current = 0;
-        int lengthOfTask = 120; //list.size();
-        publish("Length Of Task: " + lengthOfTask);
-        publish("------------------------------");
-        while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
-          try { // dummy task
-            Thread.sleep(50);
-          }catch(InterruptedException ie) {
-            return "Interrupted";
-          }
-          setProgress(100 * current / lengthOfTask);
-          //worker.firePropertyChange("progress", current, current+1);
-          current++;
-        }
-        return "Done";
-      }
-      @Override protected void process(java.util.List&lt;String&gt; chunks) {
-        //assert EventQueue.isDispatchThread();
-        System.out.println("process() is EDT?: "
-            + EventQueue.isDispatchThread());
         for(String message : chunks) {
-          appendLine(message);
+          appendText(message);
         }
       }
       @Override public void done() {
-        //assert EventQueue.isDispatchThread();
-        System.out.println("done() is EDT?: "
-           + EventQueue.isDispatchThread());
-        icon.animationStop();
+        System.out.println("done() is EDT?: " + EventQueue.isDispatchThread());
+        if(!isDisplayable()) {
+          System.out.println("done: DISPOSE_ON_CLOSE");
+          cancel(true);
+          return;
+        }
+        anil.stopAnimation();
         runButton.setEnabled(true);
         canButton.setEnabled(false);
         statusPanel.remove(bar);
@@ -79,15 +91,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-10
         String text = null;
         if(isCancelled()) {
           text = "Cancelled";
-        }else{
+        } else {
           try {
             text = get();
-          }catch(Exception ex) {
+          } catch(InterruptedException | ExecutionException ex) {
             ex.printStackTrace();
             text = "Exception";
           }
         }
-        appendLine(text);
+        appendText(text);
       }
     };
     worker.addPropertyChangeListener(new ProgressListener(bar));
@@ -134,6 +146,9 @@ class CancelAction extends AbstractAction{
     - `Swing`関連のすべての作業(例えば`JProgressBar`の進捗表示更新)は、`EDT`で行う必要があるので、`process()`か`done()`メソッド内で実行する
 
 <!-- dummy comment line for breaking list -->
+
+- - - -
+`SwingWorker#process()`メソッド内などで`JPanel#sDisplayable()`を呼び、アプリケーション(`frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);`が設定されている)が終了している場合は、タスクを中断することで`SwingWorker`が生き残るのを防止しています。
 
 ### 参考リンク
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)

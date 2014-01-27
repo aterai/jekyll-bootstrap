@@ -23,7 +23,8 @@ private final JLabel label = new JLabel(df.format(new Date()));
 private final Timer timer = new Timer(1000, new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
     label.setText(df.format(new Date()));
-    if(label.getParent().isOpaque()) {
+    Container parent = SwingUtilities.getUnwrappedParent(label);
+    if(parent!=null &amp;&amp; parent.isOpaque()) {
       repaintWindowAncestor(label);
     }
   }
@@ -46,10 +47,13 @@ private void repaintWindowAncestor(Component c) {
 //or
 //private void repaintWindowAncestor(JComponent c) {
 //  JRootPane root = c.getRootPane();
-//    Rectangle r = c.getBounds();
-//    r = SwingUtilities.convertRectangle(c, r, root);
-//    root.repaint(r.x, r.y, r.width, r.height);
+//  if(root==null) {
+//    return;
 //  }
+//  Rectangle r = c.getBounds();
+//  r = SwingUtilities.convertRectangle(c, r, root);
+//  root.repaint(r.x, r.y, r.width, r.height);
+//}
 </code></pre>
 
 ### 解説
