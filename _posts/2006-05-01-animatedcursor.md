@@ -26,7 +26,7 @@ animator = new javax.swing.Timer(100, new ActionListener() {
   private int count = 0;
   @Override public void actionPerformed(ActionEvent e) {
     setCursor(list[count]);
-    count = (count&lt;list.length-1)?count+1:0;
+    count = (count + 1+ list.length) % list.length;
   }
 });
 JButton button = new JButton(new AbstractAction("スタート") {
