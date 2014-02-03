@@ -26,8 +26,9 @@ private ImageIcon makeStarImageIcon(float[] filter) {
 }
 private class SelectedImageFilter extends RGBImageFilter {
   private final float[] filter;
-  public SelectedImageFilter(float[] filter) {
-    this.filter = filter;
+  public SelectedImageFilter(float[] arrays) {
+    filter = new float[arrays.length];
+    System.arraycopy(arrays, 0, filter, 0, arrays.length);
     canFilterIndexColorModel = false;
   }
   @Override public int filterRGB(int x, int y, int argb) {
