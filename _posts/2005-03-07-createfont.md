@@ -19,27 +19,36 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
 
 ### サンプルコード
 <pre class="prettyprint"><code>Font makeFont(URL url) {
-  Font font = null;
-  InputStream is = null;
-  try {
-    is = url.openStream();
-    font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(12.0f);
-    is.close();
-  }catch(IOException ioe) {
-    ioe.printStackTrace();
-  }catch(FontFormatException ffe) {
-    ffe.printStackTrace();
-  }finally{
-    if(is!=null) {
-      try{
-        is.close();
-      }catch(IOException ioex) {
-        ioex.printStackTrace();
-      }
+    Font font = null;
+    try(InputStream is = url.openStream()) {
+        font = Font.createFont(Font.TRUETYPE_FONT, is).deriveFont(12.0f);
+    }catch(IOException | FontFormatException ex) {
+        ex.printStackTrace();
     }
-  }
-  return font;
+    return font;
 }
+//Font makeFont(URL url) {
+//  Font font = null;
+//  InputStream is = null;
+//  try {
+//    is = url.openStream();
+//    font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(12.0f);
+//    is.close();
+//  }catch(IOException ioe) {
+//    ioe.printStackTrace();
+//  }catch(FontFormatException ffe) {
+//    ffe.printStackTrace();
+//  }finally{
+//    if(is!=null) {
+//      try{
+//        is.close();
+//      }catch(IOException ioex) {
+//        ioex.printStackTrace();
+//      }
+//    }
+//  }
+//  return font;
+//}
 </code></pre>
 
 ### 解説

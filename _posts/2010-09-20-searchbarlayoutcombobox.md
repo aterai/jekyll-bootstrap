@@ -113,7 +113,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
       }
       @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {
         Object o = listBox.getSelectedValue();
-        if(o!=null &amp;&amp; o instanceof SearchEngine) {
+        if(o instanceof SearchEngine) {
           SearchEngine se = (SearchEngine) o;
           arrowButton.setIcon(se.favicon);
         }

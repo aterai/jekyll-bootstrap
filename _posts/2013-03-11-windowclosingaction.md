@@ -38,7 +38,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-11
         window = SwingUtilities.getWindowAncestor(toolbar);
       }
     }else{
-      JComponent invoker = (JComponent)c.getParent();
+      Component invoker = c.getParent();
       window = SwingUtilities.getWindowAncestor(invoker);
     }
     if(window!=null) {

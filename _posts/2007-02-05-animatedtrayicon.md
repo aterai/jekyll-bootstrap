@@ -23,7 +23,7 @@ animator = new javax.swing.Timer(100, new ActionListener() {
   private int idx = 0;
   @Override public void actionPerformed(ActionEvent e) {
     icon.setImage(imglist[idx]);
-    idx = (idx + 1 + imglist.length) % imglist.length;
+    idx = (idx + 1) % imglist.length;
   }
 });
 </code></pre>

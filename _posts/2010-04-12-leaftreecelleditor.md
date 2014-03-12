@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-12
   @Override public boolean isCellEditable(java.util.EventObject e) {
     boolean b = super.isCellEditable(e);
     Object o = tree.getLastSelectedPathComponent();
-    if(b &amp;&amp; o!=null &amp;&amp; o instanceof TreeNode) {
+    if(b &amp;&amp; o instanceof TreeNode) {
       return ((TreeNode)o).isLeaf();
     }else{
       return b;

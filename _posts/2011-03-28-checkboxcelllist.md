@@ -18,14 +18,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 ![screenshot](https://lh3.googleusercontent.com/-EfbwsqycTvg/UlyukvM4ivI/AAAAAAAAB3o/NJBvrfM4xPA/s800/CheckBoxCellList.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>class CheckBoxCellRenderer extends JCheckBox
-    implements ListCellRenderer, MouseListener, MouseMotionListener {
+<pre class="prettyprint"><code>class CheckBoxCellRenderer&lt;E extends CheckBoxNode&gt; extends JCheckBox
+          implements ListCellRenderer&lt;E&gt;, MouseListener, MouseMotionListener {
+  private int rollOverRowIndex = -1;
   @Override public Component getListCellRendererComponent(
-    JList list,
-    Object value,
-    int index,
-    boolean isSelected,
-    boolean cellHasFocus) {
+      JList&lt;? extends E&gt; list, E value, int index, boolean isSelected, boolean cellHasFocus) {
     this.setOpaque(true);
     if(isSelected) {
       this.setBackground(list.getSelectionBackground());
@@ -34,47 +31,44 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
       this.setBackground(list.getBackground());
       this.setForeground(list.getForeground());
     }
-    if(value instanceof CheckBoxNode) {
-      this.setSelected(((CheckBoxNode)value).selected);
-      this.getModel().setRollover(index==rollOverRowIndex);
-    }
-    this.setText(value.toString());
+    this.setSelected(value.selected);
+    this.getModel().setRollover(index==rollOverRowIndex);
+    this.setText(value.text);
     return this;
   }
-  private int rollOverRowIndex = -1;
   @Override public void mouseExited(MouseEvent e) {
-    JList l = (JList)e.getSource();
     if(rollOverRowIndex&gt;=0) {
+      JList l = (JList)e.getComponent();
       l.repaint(l.getCellBounds(rollOverRowIndex, rollOverRowIndex));
       rollOverRowIndex = -1;
     }
   }
-  @SuppressWarnings("unchecked")
   @Override public void mouseClicked(MouseEvent e) {
     if(e.getButton()==MouseEvent.BUTTON1) {
       JList l = (JList)e.getComponent();
-      DefaultListModel m = (DefaultListModel)l.getModel();
       Point p = e.getPoint();
       int index  = l.locationToIndex(p);
       if(index&gt;=0) {
-        CheckBoxNode n = (CheckBoxNode)m.get(index);
+        @SuppressWarnings("unchecked")
+        DefaultListModel&lt;CheckBoxNode&gt; m = (DefaultListModel&lt;CheckBoxNode&gt;)l.getModel();
+        CheckBoxNode n = m.get(index);
         m.set(index, new CheckBoxNode(n.text, !n.selected));
         l.repaint(l.getCellBounds(index, index));
       }
     }
   }
   @Override public void mouseMoved(MouseEvent e) {
-    JList l = (JList)e.getSource();
+    JList l = (JList)e.getComponent();
     int index = l.locationToIndex(e.getPoint());
     if(index != rollOverRowIndex) {
       rollOverRowIndex = index;
       l.repaint();
     }
   }
-  @Override public void mouseEntered(MouseEvent e) {}
-  @Override public void mousePressed(MouseEvent e) {}
-  @Override public void mouseReleased(MouseEvent e) {}
-  @Override public void mouseDragged(MouseEvent e) {}
+  @Override public void mouseEntered(MouseEvent e)  { /* not needed */ }
+  @Override public void mousePressed(MouseEvent e)  { /* not needed */ }
+  @Override public void mouseReleased(MouseEvent e) { /* not needed */ }
+  @Override public void mouseDragged(MouseEvent e)  { /* not needed */ }
 }
 </code></pre>
 
@@ -154,10 +148,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
-    if(leaf &amp;&amp; value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
       this.setOpaque(false);
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
         this.setText(node.text);
         this.setSelected(node.selected);
@@ -185,9 +179,9 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
   @Override public Component getTreeCellEditorComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
       boolean leaf, int row) {
-    if(leaf &amp;&amp; value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         this.setSelected(((CheckBoxNode)userObject).selected);
       } else {
         this.setSelected(false);
@@ -200,7 +194,7 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
     return new CheckBoxNode(getText(), isSelected());
   }
   @Override public boolean isCellEditable(EventObject e) {
-    return (e != null &amp;&amp; e instanceof MouseEvent);
+    return (e instanceof MouseEvent);
   }
   //Copid from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();

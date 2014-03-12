@@ -42,11 +42,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
     JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
         tree, value, true, expanded, leaf, row, true);
     l.setFont(tree.getFont());
-    if(value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
         if(node.status==Status.INDETERMINATE) {
           setIcon(new IndeterminateIcon());
@@ -67,7 +67,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
     return new CheckBoxNode(str, isSelected()?Status.SELECTED:Status.DESELECTED);
   }
   @Override public boolean isCellEditable(EventObject e) {
-    if(e != null &amp;&amp; e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
+    if(e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
       MouseEvent me = (MouseEvent)e;
       JTree tree = (JTree)e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
@@ -129,11 +129,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
     JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
         tree, value, selected, expanded, leaf, row, hasFocus);
     l.setFont(tree.getFont());
-    if(value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(value instanceof DefaultMutableTreeNode) {
       check.setEnabled(tree.isEnabled());
       check.setFont(tree.getFont());
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
         if(node.status==Status.INDETERMINATE) {
           check.setIcon(new IndeterminateIcon());
@@ -200,9 +200,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
 //...
 </code></pre>
 
-- `JDK 1.7.0`で、ノードのチェックボックスをクリックしても、初回だけ反応しない。
+- `JDK 1.7.0`で、ノードのチェックボックスをクリックしても、初回だけ反応しない
     - `JDK 1.6.0_30`などは問題なし
-    - `TreeCellEditor#isCellEditable()`をオーバーライドして、初回のみセルエディタのサイズを以下のように設定。
+    - `TreeCellEditor#isCellEditable()`をオーバーライドして、初回のみセルエディタのサイズを以下のように設定
+    - `JDK 1.8.0`では、修正されている
+    - [Bug ID: JDK-8023474 First mousepress doesn't start editing in JTree](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8023474)
+    - `1.7.0_60`でも修正される予定らしい
 
 <!-- dummy comment line for breaking list -->
 

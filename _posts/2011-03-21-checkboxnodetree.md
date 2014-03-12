@@ -45,12 +45,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
   @Override public Component getTreeCellRendererComponent(JTree tree,
       Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
     this.tree = tree;
-    if(leaf &amp;&amp; value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
       this.setOpaque(false);
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
         this.setText(node.text);
         this.setSelected(node.selected);
@@ -83,9 +83,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
   }
   @Override public Component getTreeCellEditorComponent(JTree tree,
       Object value, boolean isSelected, boolean expanded, boolean leaf, int row) {
-    if(leaf &amp;&amp; value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         this.setSelected(((CheckBoxNode)userObject).selected);
       }else{
         this.setSelected(false);
@@ -98,11 +98,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
     return new CheckBoxNode(getText(), isSelected());
   }
   @Override public boolean isCellEditable(EventObject e) {
-    if(e != null &amp;&amp; e instanceof MouseEvent) {
+    if(e instanceof MouseEvent) {
       TreePath path = tree.getPathForLocation(
           ((MouseEvent)e).getX(), ((MouseEvent)e).getY());
       Object o = path.getLastPathComponent();
-      if(o!=null &amp;&amp; o instanceof TreeNode) {
+      if(o instanceof TreeNode) {
         return ((TreeNode)o).isLeaf();
       }
     }

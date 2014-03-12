@@ -31,7 +31,7 @@ private static final String nimbus  = "com.sun.java.swing.plaf.nimbus.NimbusLook
 private static String currentLookAndFeel = metal;
 private final ButtonGroup lafMenuGroup = new ButtonGroup();
 public JMenuItem createLafMenuItem(JMenu menu, String label, String laf) {
-  JMenuItem mi = (JRadioButtonMenuItem) menu.add(new JRadioButtonMenuItem(label));
+  JMenuItem mi = menu.add(new JRadioButtonMenuItem(label));
   lafMenuGroup.add(mi);
   mi.addActionListener(new ChangeLookAndFeelAction(laf));
   mi.setEnabled(isAvailableLookAndFeel(laf));

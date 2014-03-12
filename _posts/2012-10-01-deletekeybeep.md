@@ -18,9 +18,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-01
 ![screenshot](https://lh6.googleusercontent.com/-zIUmkF2C9FA/UGkqdcWDLVI/AAAAAAAABTk/F4nun0GDLZc/s800/DeleteKeyBeep.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>String key = "delete-previous";
+<pre class="prettyprint"><code>String key = DefaultEditorKit.deletePrevCharAction; //"delete-previous";
 final Action deletePreviousAction = am.get(key);
-am.put(key, new TextAction(DefaultEditorKit.deletePrevCharAction) {
+am.put(key, new TextAction(key) {
   //@see javax/swing/text/DefaultEditorKit.java DeletePrevCharAction
   @Override public void actionPerformed(ActionEvent e) {
     JTextComponent target = getTextComponent(e);
@@ -35,9 +35,9 @@ am.put(key, new TextAction(DefaultEditorKit.deletePrevCharAction) {
     deletePreviousAction.actionPerformed(e);
   }
 });
-key = "delete-next";
+key = DefaultEditorKit.deleteNextCharAction; //"delete-next";
 final Action deleteNextAction = am.get(key);
-am.put(key, new TextAction(DefaultEditorKit.deleteNextCharAction) {
+am.put(key, new TextAction(key) {
   //@see javax/swing/text/DefaultEditorKit.java DeleteNextCharAction
   @Override public void actionPerformed(ActionEvent e) {
     JTextComponent target = getTextComponent(e);

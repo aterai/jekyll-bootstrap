@@ -18,18 +18,19 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-05
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN25SyRaI/AAAAAAAAAbc/i3gVEjh-mlQ/s800/Highlighter.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>public void setHighlight(JTextComponent jtc, String pattern) {
-  try{
-    Highlighter hilite = jtc.getHighlighter();
-    hilite.removeAllHighlights();
-    Document doc = jtc.getDocument();
-    String text = doc.getText(0, doc.getLength());
-    int pos = 0;
-    while((pos = text.indexOf(pattern, pos)) &gt;= 0) {
-      hilite.addHighlight(pos, pos+pattern.length(), highlightPainter);
-      pos += pattern.length();
-    }
-  }catch(BadLocationException e) {}
+<pre class="prettyprint"><code>jtc.getHighlighter().removeAllHighlights();
+try{
+  Highlighter highlighter = jtc.getHighlighter();
+  Document doc = jtc.getDocument();
+  String text = doc.getText(0, doc.getLength());
+  Matcher matcher = Pattern.compile(pattern).matcher(text);
+  int pos = 0;
+  while(matcher.find(pos)) {
+    pos = matcher.end();
+    highlighter.addHighlight(matcher.start(), pos, highlightPainter);
+  }
+}catch(BadLocationException e) {
+  e.printStackTrace();
 }
 </code></pre>
 

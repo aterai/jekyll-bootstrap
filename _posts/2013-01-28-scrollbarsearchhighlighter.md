@@ -56,39 +56,56 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-28
 
 <pre class="prettyprint"><code>JLabel label = new JLabel(new Icon() {
   private final Color THUMB_COLOR = new Color(0,0,255,50);
+  private final Rectangle thumbRect = new Rectangle();
+  private final JTextComponent textArea;
+  private final JScrollBar scrollbar;
+  public HighlightIcon(JTextComponent textArea, JScrollBar scrollbar) {
+    this.textArea  = textArea;
+    this.scrollbar = scrollbar;
+  }
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-    Rectangle rect   = textArea.getBounds();
-    Dimension sbSize = scrollbar.getSize();
-    Insets sbInsets  = scrollbar.getInsets();
-    double sy = (sbSize.height - sbInsets.top - sbInsets.bottom) / rect.getHeight();
+    //Rectangle rect   = textArea.getBounds();
+    //Dimension sbSize = scrollbar.getSize();
+    //Insets sbInsets  = scrollbar.getInsets();
+    //double sy = (sbSize.height-sbInsets.top-sbInsets.bottom)/rect.getHeight();
+    int itop = scrollbar.getInsets().top;
+    BoundedRangeModel range = scrollbar.getModel();
+    double sy = range.getExtent()/(double)(range.getMaximum()-range.getMinimum());
     AffineTransform at = AffineTransform.getScaleInstance(1.0, sy);
     Highlighter highlighter = textArea.getHighlighter();
 
+    //paint Highlight
     g.setColor(Color.RED);
     try{
       for(Highlighter.Highlight hh: highlighter.getHighlights()) {
         Rectangle r = textArea.modelToView(hh.getStartOffset());
         Rectangle s = at.createTransformedShape(r).getBounds();
         int h = 2; //Math.max(2, s.height-2);
-        g.fillRect(x, y+sbInsets.top+s.y, getIconWidth(), h);
+        g.fillRect(x, y+itop+s.y, getIconWidth(), h);
       }
     }catch(BadLocationException e) {
       e.printStackTrace();
     }
 
     //paint Thumb
-    JViewport vport = scroll.getViewport();
-    Rectangle vrect = c.getBounds();
-    vrect.y = vport.getViewPosition().y;
-    g.setColor(THUMB_COLOR);
-    Rectangle rr = at.createTransformedShape(vrect).getBounds();
-    g.fillRect(x, y+sbInsets.top+rr.y, getIconWidth(), rr.height);
+    if(scrollbar.isVisible()) {
+      //JViewport vport = Objects.requireNonNull(
+      //  (JViewport)SwingUtilities.getAncestorOfClass(JViewport.class, textArea));
+      //Rectangle thumbRect = vport.getBounds();
+      thumbRect.height = range.getExtent();
+      thumbRect.y = range.getValue(); //vport.getViewPosition().y;
+      g.setColor(THUMB_COLOR);
+      Rectangle s = at.createTransformedShape(thumbRect).getBounds();
+      g.fillRect(x, y+itop+s.y, getIconWidth(), s.height);
+    }
   }
   @Override public int getIconWidth() {
-    return 4;
+    return 8;
   }
   @Override public int getIconHeight() {
-    return scrollbar.getHeight();
+    JViewport vport = Objects.requireNonNull(
+        (JViewport)SwingUtilities.getAncestorOfClass(JViewport.class, textArea));
+    return vport.getHeight();
   }
 });
 

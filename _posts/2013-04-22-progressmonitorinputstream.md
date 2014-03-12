@@ -18,43 +18,25 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-22
 ![screenshot](https://lh4.googleusercontent.com/-gXnU23f7iiw/UXQuzmKdfVI/AAAAAAAABp8/aPk0QR78NlY/s800/ProgressMonitorInputStream.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>worker = new SwingWorker&lt;String, Chunk&gt;() {
-  @Override public String doInBackground() {
-    Charset cs = Charset.forName("EUC-JP");
-    String ret = "Done";
-    String path = "http://terai.xrea.jp/";
-    URLConnection urlConnection;
-    try{
-      urlConnection = new URL(path).openConnection();
-      System.out.println(urlConnection.getContentEncoding());
-      System.out.println(urlConnection.getContentType());
+<pre class="prettyprint"><code>class RunAction extends AbstractAction {
+  public RunAction() {
+    super("Load");
+  }
+  @Override public void actionPerformed(ActionEvent e) {
+    runButton.setEnabled(false);
+    textArea.setText("");
 
-      String encoding = urlConnection.getContentEncoding();
-      if(encoding!=null) {
-        cs = Charset.forName(encoding);
-      }else{
-        String contentType = urlConnection.getContentType();
-        for(String value: contentType.split(";")) {
-          value = value.trim();
-          if(value.toLowerCase().startsWith("charset=")) {
-            encoding = value.substring("charset=".length());
-          }
-        }
-        if(encoding!=null) {
-          cs = Charset.forName(encoding);
-        }
-      }
-      System.out.println(cs);
-    }catch(Exception ex) {
-      ex.printStackTrace();
-      ret = "Error";
-      return ret;
+    URLConnection urlConnection = getURLConnection();
+    if(urlConnection==null) {
+      return;
     }
+    Charset cs = getCharset(urlConnection, "EUC-JP");
     int length = urlConnection.getContentLength();
-    try(InputStream is = urlConnection.getInputStream();
-        ProgressMonitorInputStream pmis = new ProgressMonitorInputStream(frame, "Loading", is);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(pmis, cs))) {
+    JFrame frame = (JFrame)SwingUtilities.getWindowAncestor((Component)e.getSource());
 
+    try{
+      InputStream is = urlConnection.getInputStream();
+      ProgressMonitorInputStream pmis = new ProgressMonitorInputStream(frame, "Loading", is);
       monitor = pmis.getProgressMonitor();
       monitor.setNote(" "); //Need for JLabel#getPreferredSize
       monitor.setMillisToDecideToPopup(0);
@@ -62,45 +44,76 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-22
       monitor.setMinimum(0);
       monitor.setMaximum(length);
 
-      int i = 0;
-      int size = 0;
-      String line;
-      while((line = reader.readLine()) != null) {
-        if(i++%50==0) { //Wait
-          Thread.sleep(10);
-        }
-        size += line.getBytes(cs).length + 1; //+1: \n
-        String note = String.format("%03d%% - %d/%d%n", 100*size/length, size, length);
-        publish(new Chunk(line, note));
-      }
-    }catch(InterruptedException | IOException ex) {
-      ret = "Exception";
-      cancel(true);
+      worker = new MonitorTask(pmis, cs, length);
+      worker.execute();
+    }catch(IOException ex) {
+      ex.printStackTrace();
     }
-    return ret;
+  }
+}
+
+private class MonitorTask extends Task {
+  public MonitorTask(ProgressMonitorInputStream pmis, Charset cs, int length) {
+    super(pmis, cs, length);
   }
   @Override protected void process(List&lt;Chunk&gt; chunks) {
     for(Chunk c: chunks) {
       textArea.append(c.line+"\n");
       monitor.setNote(c.note);
-      //System.out.println(c.note);
     }
     textArea.setCaretPosition(textArea.getDocument().getLength());
   }
   @Override public void done() {
-    frame.getGlassPane().setVisible(false);
     runButton.setEnabled(true);
     String text = null;
     try{
+      if(pmis!=null) {
+        pmis.close();
+      }
       text = isCancelled() ? "Cancelled" : get();
-    }catch(Exception ex) {
+    }catch(IOException | InterruptedException | ExecutionException ex) {
       ex.printStackTrace();
       text = "Exception";
     }
     System.out.println(text);
   }
-};
-worker.execute();
+}
+
+private static class Task extends SwingWorker&lt;String, Chunk&gt; {
+  protected final ProgressMonitorInputStream pmis;
+  protected final Charset cs;
+  protected final int length;
+  public Task(ProgressMonitorInputStream pmis, Charset cs, int length) {
+    super();
+    this.pmis = pmis;
+    this.cs = cs;
+    this.length = length;
+  }
+  @Override public String doInBackground() {
+    String ret = "Done";
+    try(BufferedReader reader = new BufferedReader(new InputStreamReader(pmis, cs));
+      Scanner scanner = new Scanner(reader)) {
+      int i = 0;
+      int size = 0;
+      while(scanner.hasNextLine()) {
+        if(i%50==0) { //Wait
+          Thread.sleep(10);
+        }
+        i++;
+        String line = scanner.nextLine();
+        size += line.getBytes(cs).length + 1; //+1: \n
+        String note = String.format("%03d%% - %d/%d%n", 100*size/length, size, length);
+        //System.out.println(note);
+        publish(new Chunk(line, note));
+      }
+    }catch(InterruptedException | IOException ex) {
+      System.out.println("Exception");
+      ret = "Exception";
+      cancel(true);
+    }
+    return ret;
+  }
+}
 </code></pre>
 
 ### 解説
@@ -123,3 +136,7 @@ worker.execute();
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- EDT外で`ProgressMonitor`を変更する(`monitor.setMinimum(0);`など)のは駄目な気がするので、修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-02-04 (火) 15:05:59
+
+<!-- dummy comment line for breaking list -->
+

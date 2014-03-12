@@ -111,6 +111,8 @@ table.setFillsViewportHeight(true);
 - - - -
 `WindowsLookAndFeel`でカーソルのチラつき防止のために、`TransferHandler#canImport(...)`内で`JTable#setCursor(...)`をしているため、ディスクトップなどからファイルをドラッグしてドロップ不可カーソルが表示されるとマウスをリリースしたあともそのカーソルが表示されたままになるバグがあります。
 
+また、このサンプルでは、各`JTable`に`TableRowSorter`などが設定され、ソートされた状態での並べ替えは想定していません。
+
 ### 参考リンク
 - [JTableの行をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTable.html)
 - [TransferHandlerを使ってJTableの行をドラック＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)

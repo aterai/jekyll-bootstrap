@@ -18,7 +18,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 ![screenshot](https://lh3.googleusercontent.com/-X8o390yxqhI/UZjhjkgUrkI/AAAAAAAABsY/Aajtim-5-uE/s800/TranslucentScrollBar.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>public JComponent makeTranslucentScrollBar(JScrollPane scrollPane) {
+<pre class="prettyprint"><code>public JComponent makeTranslucentScrollBar(JComponent c) {
+  JScrollPane scrollPane = new JScrollPane(c) {
+      @Override public boolean isOptimizedDrawingEnabled() {
+          return false; // JScrollBar is overlap
+      }
+  };
+  scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+  scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
   scrollPane.setComponentZOrder(scrollPane.getVerticalScrollBar(), 0);
   scrollPane.setComponentZOrder(scrollPane.getViewport(), 1);
   scrollPane.getVerticalScrollBar().setOpaque(false);
@@ -115,11 +123,17 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 <!-- dummy comment line for breaking list -->
 
 - 注:
-    - `WindowsLookAndFeel`などでつまみの描画がチラつく？
-    - `JTextArea`などをこのサンプルの`JViewport`に配置すると、`Caret`の点滅や、文字列の選択などでつまみの描画が乱れる
-    - `JList`などの選択でも、つまみの描画が乱れる
-        - `ListSelectionListener`や、`FocusListener`を追加して再描画することで回避
+    - ~~`WindowsLookAndFeel`などでつまみの描画がチラつく？~~
+    - ~~`JTextArea`などをこのサンプルの`JViewport`に配置すると、`Caret`の点滅や、文字列の選択などでつまみの描画が乱れる~~
+    - ~~`JList`などの選択でも、つまみの描画が乱れる~~
+        - ~~`ListSelectionListener`や、`FocusListener`を追加して再描画することで回避~~
+    - `JScrollPane#isOptimizedDrawingEnabled()`が`false`を返すようにオーバーライドして回避
     - 横スクロールバーの表示に未対応
+
+<!-- dummy comment line for breaking list -->
+
+### 参考リンク
+- ["Optimized" Drawing - Painting in AWT and Swing](http://www.oracle.com/technetwork/java/painting-140037.html)
 
 <!-- dummy comment line for breaking list -->
 

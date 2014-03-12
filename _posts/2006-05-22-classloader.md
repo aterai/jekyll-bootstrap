@@ -53,7 +53,7 @@ JLabel path = new JLabel(url.toString());
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>getClass().getResource("test.png");
+<pre class="prettyprint"><code>getClass().getResource("test.png"); //or MainPanel.class.getResource("test.png");
 //getClass().getClassLoader().getResource("example/test.png");と同じ
 </code></pre>
 

@@ -43,6 +43,7 @@ table.setDragEnabled(true);
 ### コメント
 - テスト -- [aterai](http://terai.xrea.jp/aterai.html) 2009-09-26 (土) 02:19:20
     - [JTableの行を別のJTableにドラッグして移動](http://terai.xrea.jp/Swing/DragRowsAnotherTable.html)に移動。
+- このサンプルでは、ソートされた状態での並べ替えは想定していない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-02-20 (木) 19:50:30
 
 <!-- dummy comment line for breaking list -->
 

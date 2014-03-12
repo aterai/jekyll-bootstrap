@@ -18,35 +18,44 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-25
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKk8KGiNI/AAAAAAAAAWM/dJouzZuxv6g/s800/DefaultEditorKit.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>textField.setComponentPopupMenu(new TextFieldPopupMenu(textField));
-</code></pre>
-
-<pre class="prettyprint"><code>class TextFieldPopupMenu extends JPopupMenu {
+<pre class="prettyprint"><code>//textField.setComponentPopupMenu(new TextFieldPopupMenu());
+class TextFieldPopupMenu extends JPopupMenu {
   private final Action cutAction = new DefaultEditorKit.CutAction();
   private final Action copyAction = new DefaultEditorKit.CopyAction();
   private final Action pasteAction = new DefaultEditorKit.PasteAction();
-  private final Action deleteAction;
-  private final Action cut2Action;
-  public TextFieldPopupMenu(final JTextField field) {
+  private final Action deleteAction = new AbstractAction("delete") {
+    @Override public void actionPerformed(ActionEvent e) {
+      Component c = getInvoker();
+      if(c instanceof JTextComponent) {
+        ((JTextComponent)c).replaceSelection(null);
+      }
+    }
+  };
+  private final Action cut2Action = new AbstractAction("cut2") {
+    @Override public void actionPerformed(ActionEvent e) {
+      Component c = getInvoker();
+      if(c instanceof JTextComponent) {
+        ((JTextComponent)c).cut();
+      }
+    }
+  };
+  public TextFieldPopupMenu() {
     super();
     add(cutAction);
     add(copyAction);
     add(pasteAction);
-    add(deleteAction = new AbstractAction("delete") {
-      @Override public void actionPerformed(ActionEvent evt) {
-        field.replaceSelection(null);
-      }
-    });
+    add(deleteAction);
     addSeparator();
-    add(cut2Action = new AbstractAction("cut2") {
-      @Override public void actionPerformed(ActionEvent evt) {
-        field.cut();
-      }
-    });
+    add(cut2Action);
   }
   @Override public void show(Component c, int x, int y) {
-    JTextField field = (JTextField)c;
-    boolean flg = field.getSelectedText()!=null;
+    boolean flg;
+    if(c instanceof JTextComponent) {
+      JTextComponent field = (JTextComponent)c;
+      flg = field.getSelectedText()!=null;
+    }else{
+      flg = false;
+    }
     cutAction.setEnabled(flg);
     copyAction.setEnabled(flg);
     deleteAction.setEnabled(flg);

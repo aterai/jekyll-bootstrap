@@ -3,7 +3,7 @@ layout: post
 title: JFrameの透明化と再描画
 category: swing
 folder: TranslucentFrameRepaint
-tags: [JFrame, Translucent, JPanel, JLabel, TexturePaint]
+tags: [JFrame, JRootPane, Translucent, JPanel, JLabel, TexturePaint]
 author: aterai
 comments: true
 ---
@@ -29,31 +29,14 @@ private final Timer timer = new Timer(1000, new ActionListener() {
     }
   }
 });
-private void repaintWindowAncestor(Component c) {
-  Window w = SwingUtilities.getWindowAncestor(c);
-  if(w instanceof JFrame) {
-    JFrame f = (JFrame)w;
-    JComponent cp = (JComponent)f.getContentPane();
-    //cp.repaint();
-    Rectangle r = c.getBounds();
-    r = SwingUtilities.convertRectangle(c, r, cp);
-    cp.repaint(r.x, r.y, r.width, r.height);
-    //r = SwingUtilities.convertRectangle(c, r, f);
-    //f.repaint(r.x, r.y, r.width, r.height);
-  }else{
-    c.repaint();
+private void repaintWindowAncestor(JComponent c) {
+  JRootPane root = c.getRootPane();
+  if(root==null) {
+    return;
   }
+  Rectangle r = SwingUtilities.convertRectangle(c, c.getBounds(), root);
+  root.repaint(r.x, r.y, r.width, r.height);
 }
-//or
-//private void repaintWindowAncestor(JComponent c) {
-//  JRootPane root = c.getRootPane();
-//  if(root==null) {
-//    return;
-//  }
-//  Rectangle r = c.getBounds();
-//  r = SwingUtilities.convertRectangle(c, r, root);
-//  root.repaint(r.x, r.y, r.width, r.height);
-//}
 </code></pre>
 
 ### 解説

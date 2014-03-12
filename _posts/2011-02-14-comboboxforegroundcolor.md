@@ -26,7 +26,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
   }
   @Override public Component getListCellRendererComponent(JList list,
       Object value, int index, boolean isSelected, boolean hasFocus) {
-    if(value!=null &amp;&amp; value instanceof ColorItem) {
+    if(value instanceof ColorItem) {
       ColorItem item = (ColorItem) value;
       Color ic = item.color;
       if(index&lt;0 &amp;&amp; ic!=null &amp;&amp; !ic.equals(combo.getForeground())) {
@@ -77,7 +77,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
     return l;
   }
   private static String hex(Color c) {
-    return String.format("#%06x", c.getRGB()&amp;0xffffff);
+    return String.format("#%06x", c.getRGB() &amp; 0xffffff); //Integer.toHexString(c.getRGB() &amp; 0xffffff)
   }
 }
 </code></pre>

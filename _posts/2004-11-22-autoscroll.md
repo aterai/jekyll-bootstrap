@@ -60,17 +60,17 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
     startPt.setLocation(pt);
   }
   @Override public void mousePressed(MouseEvent e) {
-    ((JComponent)e.getSource()).setCursor(hc); //label.setCursor(hc);
+    e.getComponent().setCursor(hc); //label.setCursor(hc);
     startPt.setLocation(e.getPoint());
     move.setLocation(0, 0);
     scroller.stop();
   }
   @Override public void mouseReleased(MouseEvent e) {
-    ((JComponent)e.getSource()).setCursor(dc); //label.setCursor(dc);
+    e.getComponent().setCursor(dc); //label.setCursor(dc);
     scroller.start();
   }
   @Override public void mouseExited(MouseEvent e) {
-    ((JComponent)e.getSource()).setCursor(dc); //label.setCursor(dc);
+    e.getComponent().setCursor(dc); //label.setCursor(dc);
     move.setLocation(0, 0);
     scroller.stop();
   }

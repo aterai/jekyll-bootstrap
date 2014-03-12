@@ -30,19 +30,19 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-06
   splashScreen.setLocationRelativeTo(null);
 }
 class DragWindowListener extends MouseAdapter {
-  private MouseEvent start;
+  private final Point startPt = new Point();
   //private Point  loc;
   private Window window;
   @Override public void mousePressed(MouseEvent me) {
-    start = me;
+    startPt.setLocation(me.getPoint());
   }
   @Override public void mouseDragged(MouseEvent me) {
     if(window==null) {
       window = SwingUtilities.windowForComponent(me.getComponent());
     }
     Point eventLocationOnScreen = me.getLocationOnScreen();
-    window.setLocation(eventLocationOnScreen.x - start.getX(),
-                       eventLocationOnScreen.y - start.getY());
+    window.setLocation(eventLocationOnScreen.x - startPt.x,
+                       eventLocationOnScreen.y - startPt.y);
     //loc = window.getLocation(loc);
     //int x = loc.x - start.getX() + me.getX();
     //int y = loc.y - start.getY() + me.getY();
@@ -104,7 +104,7 @@ public class MainPanel{
   }
 }
 class DragWindowListener extends MouseAdapter {
-  private MouseEvent start;
+  private final Point startPt = new Point();
   private Window window;
   @Override public void mousePressed(MouseEvent me) {
     if(window==null) {
@@ -115,13 +115,13 @@ class DragWindowListener extends MouseAdapter {
         window = SwingUtilities.windowForComponent(me.getComponent());
       }
     }
-    start = me;
+    startPt.setLocation(me.getPoint());
   }
   @Override public void mouseDragged(MouseEvent me) {
     if(window!=null) {
       Point eventLocationOnScreen = me.getLocationOnScreen();
-      window.setLocation(eventLocationOnScreen.x - start.getX(),
-                         eventLocationOnScreen.y - start.getY());
+      window.setLocation(eventLocationOnScreen.x - startPt.x,
+                         eventLocationOnScreen.y - startPt.y);
     }
   }
 }

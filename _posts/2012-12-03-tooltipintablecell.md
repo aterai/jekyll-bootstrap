@@ -33,7 +33,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
         c.doLayout();
         pt.translate(-r.x, -r.y);
         Component l = SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y);
-        if(l!=null &amp;&amp; l instanceof JLabel) {
+        if(l instanceof JLabel) {
           ImageIcon icon = (ImageIcon)((JLabel)l).getIcon();
           return icon.getDescription();
         }

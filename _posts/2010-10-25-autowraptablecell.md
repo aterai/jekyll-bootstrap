@@ -67,7 +67,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-25
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>private ArrayList&lt;ArrayList&lt;Integer&gt;&gt; rowColHeight = new ArrayList&lt;ArrayList&lt;Integer&gt;&gt;();
+<pre class="prettyprint"><code>private List&lt;List&lt;Integer&gt;&gt; rowColHeight = new ArrayList&lt;&gt;();
 private void adjustRowHeight(JTable table, int row, int column) {
   //int cWidth = table.getTableHeader().getColumnModel().getColumn(column).getWidth();
   int cWidth = table.getCellRect(row, column, false).width; //セルの内余白は含めない
@@ -79,7 +79,7 @@ private void adjustRowHeight(JTable table, int row, int column) {
   while(rowColHeight.size() &lt;= row) {
     rowColHeight.add(new ArrayList&lt;Integer&gt;(column));
   }
-  ArrayList&lt;Integer&gt; colHeights = rowColHeight.get(row);
+  List&lt;Integer&gt; colHeights = rowColHeight.get(row);
   while(colHeights.size() &lt;= column) {
     colHeights.add(0);
   }

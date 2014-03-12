@@ -47,7 +47,7 @@ tree2.scrollPathToVisible(new TreePath(child2.getPath()));
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [JTreeのノード追加、削除>Swing/AddNode]
+- [JTreeのノード追加、削除](http://terai.xrea.jp/Swing/AddNode.html)
     - ポップアップメニューで任意の位置にノードを追加
 - [JScrollPane内にあるJTableなどで追加した行が可視化されるようにスクロールする](http://terai.xrea.jp/Swing/ScrollRectToVisible.html)
     - 追加したノードが表示されるようにスクロール

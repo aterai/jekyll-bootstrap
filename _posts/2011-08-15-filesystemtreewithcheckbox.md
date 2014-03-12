@@ -44,11 +44,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
         tree, value, true, expanded, leaf, row, true);
     l.setFont(tree.getFont());
     setOpaque(false);
-    if(value != null &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if(value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject!=null &amp;&amp; userObject instanceof CheckBoxNode) {
+      if(userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
         if(node.status==Status.INDETERMINATE) {
           setIcon(new IndeterminateIcon());
@@ -70,7 +70,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
     return new CheckBoxNode(file, isSelected()?Status.SELECTED:Status.DESELECTED);
   }
   @Override public boolean isCellEditable(EventObject e) {
-    if(e != null &amp;&amp; e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
+    if(e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
       MouseEvent me = (MouseEvent)e;
       JTree tree = (JTree)e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
@@ -148,5 +148,34 @@ for(File fileSystemRoot: Arrays.asList(new File("X:/"), new File("Y:/"))) {
   }
 }
 treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
+</code></pre>
+- いつも勉強させていただいております。チェックしたファイルまたはフォルダーのチェックマークの外し方を教えていただけませんか？ -- [Tiger](http://terai.xrea.jp/Tiger.html) 2014-03-04 (火) 13:55:30
+    - こんばんは。マウスを使わずにチェックを外したいということですよね。このサンプルの場合、`MutableTreeNode#setUserObject(...)`でチェックを外した`new CheckBoxNode(node.file, Status.DESELECTED)`を設定し、そのあと[DefaultTreeModel#nodeChanged(...) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/tree/DefaultTreeModel.html#nodeChanged%28javax.swing.tree.TreeNode%29)を呼べばいいと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-03-05 (水) 18:23:39
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>//例えば、すべてのチェックを外す場合...
+private static void deselectedAll(DefaultTreeModel model, TreePath path) {
+  Object o = path.getLastPathComponent();
+  if (!(o instanceof DefaultMutableTreeNode)) {
+    return;
+  }
+  DefaultMutableTreeNode node = (DefaultMutableTreeNode) o;
+  o = node.getUserObject();
+  if (!(o instanceof CheckBoxNode)) {
+    return;
+  }
+  CheckBoxNode check = (CheckBoxNode) o;
+  if (check.status == Status.SELECTED) {
+    node.setUserObject(new CheckBoxNode(check.file, Status.DESELECTED));
+    model.nodeChanged(node);
+    //or: model.valueForPathChanged(path, new CheckBoxNode(check.file, Status.DESELECTED));
+  } else if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
+    Enumeration e = node.children();
+    while (e.hasMoreElements()) {
+      deselectedAll(model, path.pathByAddingChild(e.nextElement()));
+    }
+  }
+}
 </code></pre>
 
