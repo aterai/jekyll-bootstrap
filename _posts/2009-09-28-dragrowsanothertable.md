@@ -33,7 +33,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-28
     source = c;
     JTable table = (JTable) c;
     DefaultTableModel model = (DefaultTableModel)table.getModel();
-    ArrayList&lt;Object&gt; list = new ArrayList&lt;Object&gt;();
+    List&lt;Object&gt; list = new ArrayList&lt;&gt;();
     for(int i: rows = table.getSelectedRows())
       list.add(model.getDataVector().elementAt(i));
     transferedObjects = list.toArray();

@@ -107,16 +107,15 @@ class TableNextMatchKeyHandler extends KeyAdapter{
     if(startingRow &lt; 0 || startingRow &gt;= max) {
       throw new IllegalArgumentException();
     }
-    prefix = prefix.toUpperCase();
-
+    String uprefix = prefix.toUpperCase(Locale.ENGLISH);
     // start search from the next/previous element froom the
     // selected element
     int increment = (bias == Position.Bias.Forward) ? 1 : -1;
     int row = startingRow;
     do{
       Object value = table.getValueAt(row, TARGET_COLUMN);
-      String text = value!=null?value.toString():"";
-      if(text.toUpperCase().startsWith(prefix)) {
+      String text = Objects.toString(value, "");
+      if (text.toUpperCase(Locale.ENGLISH).startsWith(uprefix)) {
         return row;
       }
       row = (row + increment + max) % max;

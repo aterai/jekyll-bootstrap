@@ -19,7 +19,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-07
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ComboBoxPanel extends JPanel {
-  public final JComboBox comboBox = new JComboBox(new String[] {"aaaaaa", "bbb", "c"});
+  public final JComboBox&lt;String&gt; comboBox = new JComboBox&lt;&gt;(
+      new String[] {"aaaaaa", "bbb", "c"});
   public ComboBoxPanel() {
     super(new GridBagLayout());
     GridBagConstraints c = new GridBagConstraints();
@@ -32,6 +33,22 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-07
     setOpaque(true);
     add(comboBox, c);
     comboBox.setSelectedIndex(0);
+  }
+}
+class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
+  public ComboBoxCellRenderer() {
+    super();
+    setName("Table.cellRenderer");
+  }
+  @Override public Component getTableCellRendererComponent(
+      JTable table, Object value,
+      boolean isSelected, boolean hasFocus, int row, int column) {
+    this.setBackground(isSelected ? table.getSelectionBackground()
+                                  : table.getBackground());
+    if (value != null) {
+      comboBox.setSelectedItem(value);
+    }
+    return this;
   }
 }
 </code></pre>

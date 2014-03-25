@@ -20,13 +20,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-02
 ### サンプルコード
 <pre class="prettyprint"><code>KeyboardFocusManager focusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 
-Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;AWTKeyStroke&gt;(
+Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;&gt;(
     focusManager.getDefaultFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN,  0));
 focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forwardKeys);
 
-Set&lt;AWTKeyStroke&gt; backwardKeys = new HashSet&lt;AWTKeyStroke&gt;(
+Set&lt;AWTKeyStroke&gt; backwardKeys = new HashSet&lt;&gt;(
     focusManager.getDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS));
 backwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0));
 backwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_UP,   0));
@@ -46,7 +46,7 @@ focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSA
 - - - -
 各`JFrame`や`JDialog`に別々の`FocusTraversalKeys`を設定したい場合は、`Container#setFocusTraversalKeys`を使用します。
 
-<pre class="prettyprint"><code>Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;AWTKeyStroke&gt;(
+<pre class="prettyprint"><code>Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;&gt;(
     frame.getFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN,  0));

@@ -57,7 +57,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-14
   }
   private int[] getIntersectsIcons(Shape p) {
     ListModel model = getModel();
-    Vector&lt;Integer&gt; list = new Vector&lt;Integer&gt;(model.getSize());
+    Vector&lt;Integer&gt; list = new Vector&lt;&gt;(model.getSize());
     for(int i=0;i&lt;model.getSize();i++) {
       Rectangle r = getCellBounds(i,i);
       if(p.intersects(r)) {

@@ -19,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-16
 
 ### サンプルコード
 <pre class="prettyprint"><code>final ButtonGroup bg = new ButtonGroup();
-Vector&lt;AbstractButton&gt; l = new Vector&lt;AbstractButton&gt;();
+Vector&lt;AbstractButton&gt; l = new Vector&lt;&gt;();
 l.add(new JRadioButton("RadioButton1"));
 l.add(new JRadioButton("RadioButton2"));
 l.add(new JToggleButton(icon));

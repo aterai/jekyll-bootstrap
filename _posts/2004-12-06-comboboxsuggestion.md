@@ -31,7 +31,7 @@ field.addKeyListener(new ComboKeyHandler(combo));
 
 <pre class="prettyprint"><code>class ComboKeyHandler extends KeyAdapter{
   private final JComboBox comboBox;
-  private final Vector&lt;String&gt; list = new Vector&lt;String&gt;();
+  private final Vector&lt;String&gt; list = new Vector&lt;&gt;();
   public ComboKeyHandler(JComboBox combo) {
     this.comboBox = combo;
     for(int i=0;i&lt;comboBox.getModel().getSize();i++) {

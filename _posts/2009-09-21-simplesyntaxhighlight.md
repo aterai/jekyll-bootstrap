@@ -21,7 +21,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-21
 <pre class="prettyprint"><code>//This code is taken from:
 //http://www.discoverteenergy.com/Files/SyntaxDocument.java SyntaxDocument.java
 class SimpleSyntaxDocument extends DefaultStyledDocument {
-  HashMap&lt;String,AttributeSet&gt; keywords = new HashMap&lt;String,AttributeSet&gt;();
+  HashMap&lt;String,AttributeSet&gt; keywords = new HashMap&lt;&gt;();
   MutableAttributeSet normal = new SimpleAttributeSet();
   public SimpleSyntaxDocument() {
     super();

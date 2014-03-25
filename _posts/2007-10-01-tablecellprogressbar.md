@@ -112,6 +112,7 @@ executor.execute(worker); //1.6.0_18
 
 ### 参考リンク
 - [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
+- [TableCellRendererに進捗文字列を設定したJProgressBarを使用する](http://terai.xrea.jp/Swing/StringPaintedCellProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 

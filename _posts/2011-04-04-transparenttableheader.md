@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
   private final Color alphaZero = new Color(0, true);
   @Override public Component getTableCellRendererComponent(
         JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-    this.setText(value!=null?value.toString():"");
+    this.setText(Objects.toString(value, ""));
     this.setHorizontalAlignment(JLabel.CENTER);
     this.setOpaque(false);
     this.setBackground(alphaZero);

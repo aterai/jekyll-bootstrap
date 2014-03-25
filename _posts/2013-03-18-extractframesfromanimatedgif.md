@@ -35,7 +35,7 @@ if(reader == null) {
 }
 boolean isGif = reader.getFormatName().equalsIgnoreCase("gif");
 reader.setInput(imageStream, false, !isGif);
-ArrayList&lt;BufferedImage&gt; list = new ArrayList&lt;BufferedImage&gt;();
+List&lt;BufferedImage&gt; list = new ArrayList&lt;&gt;();
 for(int i=0;i&lt;reader.getNumImages(true);i++) {
   IIOImage frame = reader.readAll(i, null);
   list.add((BufferedImage)frame.getRenderedImage());

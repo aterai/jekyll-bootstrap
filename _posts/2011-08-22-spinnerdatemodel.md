@@ -44,7 +44,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 <!-- dummy comment line for breaking list -->
 
 - `min`: `set(Calendar.HOUR_OF_DAY, 0)`
-    - 下限値を以下のように本日の初めにリセット
+    - 下限値を以下のように本日の始めにリセット
         - 例: `Mon Aug 22 15:09:27 JST 2011`を`Mon Aug 22 00:00:00 JST 2011`
             
             <pre class="prettyprint"><code>Calendar today = Calendar.getInstance();

@@ -18,30 +18,71 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-10
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJhY0CAaI/AAAAAAAAAUg/J70FCr-EUlI/s800/ColorComboBox.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>combo01.setModel(makeModel());
-combo01.setRenderer(new MyListCellRenderer(combo01.getRenderer()));
-combo01.addItemListener(new ItemListener() {
-  @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()!=ItemEvent.SELECTED) return;
-    combo01.setBackground(getOEColor(combo01.getSelectedIndex()));
-  }
-});
-combo01.setSelectedIndex(0);
-combo01.setBackground(evenBGColor);
+<pre class="prettyprint"><code>class AlternateRowColorComboBox&lt;E&gt; extends JComboBox&lt;E&gt; {
+  private static final Color EVEN_BGCOLOR = new Color(225, 255, 225);
+  private static final Color ODD_BGCOLOR  = new Color(255, 255, 255);
+  private transient ItemListener itemColorListener;
 
-final JTextField field = (JTextField) combo02.getEditor().getEditorComponent();
-field.setOpaque(true);
-field.setBackground(evenBGColor);
-combo02.setEditable(true);
-combo02.setModel(makeModel());
-combo02.setRenderer(new MyListCellRenderer(combo02.getRenderer()));
-combo02.addItemListener(new ItemListener() {
-  @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()!=ItemEvent.SELECTED) return;
-    field.setBackground(getOEColor(combo02.getSelectedIndex()));
+  public AlternateRowColorComboBox() {
+    super();
   }
-});
-combo02.setSelectedIndex(0);
+  public AlternateRowColorComboBox(ComboBoxModel&lt;E&gt; aModel) {
+    super(aModel);
+  }
+  public AlternateRowColorComboBox(E[] items) {
+    super(items);
+  }
+  @Override public void setEditable(boolean aFlag) {
+    super.setEditable(aFlag);
+    if (aFlag) {
+      JTextField field = (JTextField) getEditor().getEditorComponent();
+      field.setOpaque(true);
+      field.setBackground(getAlternateRowColor(getSelectedIndex()));
+    }
+  }
+  @Override public void updateUI() {
+    removeItemListener(itemColorListener);
+    super.updateUI();
+    setRenderer(new DefaultListCellRenderer() {
+      @Override public Component getListCellRendererComponent(
+          JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+        JLabel c = (JLabel) super.getListCellRendererComponent(
+            list, value, index, isSelected, cellHasFocus);
+        c.setOpaque(true);
+        if (!isSelected) {
+          c.setBackground(getAlternateRowColor(index));
+        }
+        return c;
+      }
+    });
+    if (itemColorListener == null) {
+      itemColorListener = new ItemListener() {
+        @Override public void itemStateChanged(ItemEvent e) {
+          if (e.getStateChange() != ItemEvent.SELECTED) {
+            return;
+          }
+          JComboBox cb = (JComboBox) e.getItemSelectable();
+          Color rc = getAlternateRowColor(cb.getSelectedIndex());
+          if (cb.isEditable()) {
+            JTextField field = (JTextField) cb.getEditor().getEditorComponent();
+            field.setBackground(rc);
+          } else {
+            cb.setBackground(rc);
+          }
+        }
+      };
+    }
+    addItemListener(itemColorListener);
+    JTextField field = (JTextField) getEditor().getEditorComponent();
+    if (field != null) {
+      field.setOpaque(true);
+      field.setBackground(getAlternateRowColor(getSelectedIndex()));
+    }
+  }
+  private static Color getAlternateRowColor(int index) {
+    return (index % 2 == 0) ? EVEN_BGCOLOR : ODD_BGCOLOR;
+  }
+}
 </code></pre>
 
 ### 解説

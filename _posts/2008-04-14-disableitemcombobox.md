@@ -18,46 +18,56 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLHzjDYpI/AAAAAAAAAXE/M4bkzWJetUI/s800/DisableItemComboBox.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>class MyComboBox extends JComboBox {
-  public MyComboBox() {
+<pre class="prettyprint"><code>class DisableItemComboBox&lt;E&gt; extends JComboBox&lt;E&gt; {
+  private final Set&lt;Integer&gt; disableIndexSet = new HashSet&lt;&gt;();
+  private boolean isDisableIndex;
+  private final Action up = new AbstractAction() {
+    @Override public void actionPerformed(ActionEvent e) {
+      int si = getSelectedIndex();
+      for (int i = si - 1; i &gt;= 0; i--) {
+        if (!disableIndexSet.contains(i)) {
+          setSelectedIndex(i);
+          break;
+        }
+      }
+    }
+  };
+  private final Action down = new AbstractAction() {
+    @Override public void actionPerformed(ActionEvent e) {
+      int si = getSelectedIndex();
+      for (int i = si + 1; i &lt; getModel().getSize(); i++) {
+        if (!disableIndexSet.contains(i)) {
+          setSelectedIndex(i);
+          break;
+        }
+      }
+    }
+  };
+  public DisableItemComboBox() {
     super();
-    final ListCellRenderer r = getRenderer();
-    setRenderer(new ListCellRenderer() {
-      @Override public Component getListCellRendererComponent(JList list,
-          Object value, int index, boolean isSelected, boolean cellHasFocus) {
+  }
+  public DisableItemComboBox(ComboBoxModel&lt;E&gt; aModel) {
+    super(aModel);
+  }
+  public DisableItemComboBox(E[] items) {
+    super(items);
+  }
+  @Override public void updateUI() {
+    super.updateUI();
+    setRenderer(new DefaultListCellRenderer() {
+      @Override public Component getListCellRendererComponent(
+          JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
         Component c;
-        if(disableIndexSet.contains(index)) {
-          c = r.getListCellRendererComponent(list,value,index,false,false);
+        if (disableIndexSet.contains(index)) {
+          c = super.getListCellRendererComponent(list, value, index, false, false);
           c.setEnabled(false);
-        }else{
-          c = r.getListCellRendererComponent(list,value,index,isSelected,cellHasFocus);
+        } else {
+          c = super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
           c.setEnabled(true);
         }
         return c;
       }
     });
-    Action up = new AbstractAction() {
-      @Override public void actionPerformed(ActionEvent e) {
-        int si = getSelectedIndex();
-        for(int i = si-1;i&gt;=0;i--) {
-          if(!disableIndexSet.contains(i)) {
-            setSelectedIndex(i);
-            break;
-          }
-        }
-      }
-    };
-    Action down = new AbstractAction() {
-      @Override public void actionPerformed(ActionEvent e) {
-        int si = getSelectedIndex();
-        for(int i = si+1;i&lt;getModel().getSize();i++) {
-          if(!disableIndexSet.contains(i)) {
-            setSelectedIndex(i);
-            break;
-          }
-        }
-      }
-    };
     ActionMap am = getActionMap();
     am.put("selectPrevious3", up);
     am.put("selectNext3", down);
@@ -67,25 +77,23 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
     im.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0),    "selectNext3");
     im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
   }
-  private final HashSet&lt;Integer&gt; disableIndexSet = new HashSet&lt;Integer&gt;();
-  private boolean isDisableIndex = false;
-  public void setDisableIndex(HashSet&lt;Integer&gt; set) {
+  public void setDisableIndex(Set&lt;Integer&gt; set) {
     disableIndexSet.clear();
-    for(Integer i:set) {
+    for (Integer i : set) {
       disableIndexSet.add(i);
     }
   }
   @Override public void setPopupVisible(boolean v) {
-    if(!v &amp;&amp; isDisableIndex) {
+    if (!v &amp;&amp; isDisableIndex) {
       isDisableIndex = false;
-    }else{
+    } else {
       super.setPopupVisible(v);
     }
   }
   @Override public void setSelectedIndex(int index) {
-    if(disableIndexSet.contains(index)) {
+    if (disableIndexSet.contains(index)) {
       isDisableIndex = true;
-    }else{
+    } else {
       //isDisableIndex = false;
       super.setSelectedIndex(index);
     }

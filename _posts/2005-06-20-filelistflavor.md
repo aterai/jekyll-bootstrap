@@ -18,9 +18,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-20
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMhxsIIsI/AAAAAAAAAZU/iZ6Pn8yTFFM/s800/FileListFlavor.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>DropTargetListener dtl = new DropTargetAdapter() {
+<pre class="prettyprint"><code>final FileModel model = new FileModel();
+final JTable table = new JTable(model);
+DropTargetListener dtl = new DropTargetAdapter() {
   @Override public void dragOver(DropTargetDragEvent dtde) {
-    if(dtde.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
+    if (dtde.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
       dtde.acceptDrag(DnDConstants.ACTION_COPY);
       return;
     }
@@ -28,29 +30,28 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-20
   }
   @Override public void drop(DropTargetDropEvent dtde) {
     try {
-      if(dtde.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
+      if (dtde.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
         dtde.acceptDrop(DnDConstants.ACTION_COPY);
-        Transferable t = dtde.getTransferable();
-        java.util.List list = (java.util.List)t.getTransferData(
-                                 DataFlavor.javaFileListFlavor);
-        for(Object o: list) {
-          if(o instanceof File) {
-            File f = (File) o;
-            model.addTest(new Test(f.getName(),f.getAbsolutePath()));
+        Transferable transferable = dtde.getTransferable();
+        List list = (List) transferable.getTransferData(
+            DataFlavor.javaFileListFlavor);
+        for (Object o : list) {
+          if (o instanceof File) {
+            File file = (File) o;
+            model.addFileName(
+                new FileName(file.getName(), file.getAbsolutePath()));
           }
         }
         dtde.dropComplete(true);
         return;
       }
-    }catch(UnsupportedFlavorException ufe) {
-      ufe.printStackTrace();
-    }catch(IOException ioe) {
-      ioe.printStackTrace();
+    } catch (UnsupportedFlavorException | IOException ex) {
+      ex.printStackTrace();
     }
     dtde.rejectDrop();
   }
 };
-DropTarget dt = new DropTarget(tbl,DnDConstants.ACTION_COPY,dtl,true);
+new DropTarget(table, DnDConstants.ACTION_COPY, dtl, true);
 </code></pre>
 
 ### 解説

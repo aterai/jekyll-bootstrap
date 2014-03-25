@@ -18,7 +18,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-23
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTNRK4g8I/AAAAAAAAAkA/dn8dNaWNmxM/s800/SliderLabelTable.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>Hashtable&lt;Integer, Component&gt; labelTable = new Hashtable&lt;Integer, Component&gt;();
+<pre class="prettyprint"><code>Hashtable&lt;Integer, Component&gt; labelTable = new Hashtable&lt;&gt;();
 int c = 0;
 for(String s:Arrays.asList(
     "wi0009-16.png", "wi0054-16.png", "wi0062-16.png",

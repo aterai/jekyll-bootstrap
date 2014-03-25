@@ -23,7 +23,7 @@ JTable table = new JTable(model);
 TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
   @Override public void toggleSortOrder(int column) {
     if(column&gt;=0 &amp;&amp; column&lt;getModelWrapper().getColumnCount() &amp;&amp; isSortable(column)) {
-      List&lt;SortKey&gt; keys = new ArrayList&lt;SortKey&gt;(getSortKeys());
+      List&lt;SortKey&gt; keys = new ArrayList&lt;&gt;(getSortKeys());
       if(!keys.isEmpty()) {
         SortKey sortKey = keys.get(0);
         if(sortKey.getColumn()==column &amp;&amp; sortKey.getSortOrder()==SortOrder.DESCENDING) {

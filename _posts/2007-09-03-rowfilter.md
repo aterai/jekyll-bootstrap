@@ -18,8 +18,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-03
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTST-FvjRI/AAAAAAAAAik/ZbU9nuVVCiI/s800/RowFilter.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model);
-final Set&lt;RowFilter&lt;TableModel,Integer&gt;&gt; filters = new HashSet&lt;RowFilter&lt;TableModel,Integer&gt;&gt;(2);
+<pre class="prettyprint"><code>final TableRowSorter&lt;? extends TableModel&gt; sorter = new TableRowSorter&lt;&gt;(model);
+final Set&lt;RowFilter&lt;? super TestModel, ? super Integer&gt;&gt; filters = new HashSet&lt;&gt;(2);
 final RowFilter&lt;TableModel,Integer&gt; filter1 = new RowFilter&lt;TableModel,Integer&gt;() {
   @Override public boolean include(
       Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {

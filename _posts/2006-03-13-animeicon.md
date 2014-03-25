@@ -41,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-13
 }
 class AnimeIcon implements Icon {
   private static final Color cColor = new Color(0.5f,0.5f,0.5f);
-  private final List&lt;Shape&gt; list = new ArrayList&lt;Shape&gt;();
+  private final List&lt;Shape&gt; list = new ArrayList&lt;&gt;();
   private final Dimension dim;
   private boolean isRunning = false;
   public AnimeIcon() {
@@ -111,8 +111,8 @@ class AnimeIcon implements Icon {
 
 <pre class="prettyprint"><code>class AnimeIcon implements Icon {
   private static final Color cColor = new Color(0.5f,0.8f,0.5f);
-  //private final Vector&lt;Shape&gt; list = new Vector&lt;Shape&gt;();
-  private final List&lt;Shape&gt; list = new ArrayList&lt;Shape&gt;();
+  //private final Vector&lt;Shape&gt; list = new Vector&lt;&gt;();
+  private final List&lt;Shape&gt; list = new ArrayList&lt;&gt;();
   private final Dimension dim;
   private boolean isRunning = false;
   //int rotate = 45;

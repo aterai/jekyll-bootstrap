@@ -21,7 +21,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-03
 <pre class="prettyprint"><code>JCheckBox b = new JCheckBox("スクロールを禁止する");
 b.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent ie) {
-    JCheckBox box = (JCheckBox)ie.getSource();
+    JCheckBox box = (JCheckBox)ie.getItemSelectable();
     boolean flag = !box.isSelected();
     JScrollBar bar = scrollPane.getVerticalScrollBar();
     bar.setEnabled(flag);

@@ -28,79 +28,61 @@ private final DefaultTableModel model = new DefaultTableModel(null, columnNames)
 };
 private final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model);
 private final Box box = Box.createHorizontalBox();
+
 private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
-  //assert currentPageIndex&gt;0;
-  sorter.setRowFilter(new RowFilter&lt;TableModel,Integer&gt;() {
+  //assert currentPageIndex &gt; 0;
+  sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
     @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
-      int ti = currentPageIndex-1
+      int ti = currentPageIndex - 1;
       int ei = entry.getIdentifier();
-      return (ti*itemsPerPage&lt;=ei &amp;&amp; ei&lt;ti*itemsPerPage+itemsPerPage);
+      return ti * itemsPerPage &lt;= ei &amp;&amp; ei &lt; ti * itemsPerPage + itemsPerPage;
     }
-  };
-}
-  ArrayList&lt;JRadioButton&gt; l = new ArrayList&lt;JRadioButton&gt;();
+  });
 
-  int startPageIndex = currentPageIndex-LR_PAGE_SIZE;
-  if(startPageIndex&lt;=0) startPageIndex = 1;
+  int startPageIndex = currentPageIndex - LR_PAGE_SIZE;
+  if (startPageIndex &lt;= 0) {
+    startPageIndex = 1;
+  }
 
-//#if 0
-  //int maxPageIndex = (model.getRowCount()/itemsPerPage)+1;
+//#if 0 //BUG
+  //int maxPageIndex = (model.getRowCount() / itemsPerPage) + 1;
 //#else
   /* "maxPageIndex" gives one blank page if the module of the division is not zero.
    *   pointed out by erServi
    * e.g. rowCount=100, maxPageIndex=100
    */
   int rowCount = model.getRowCount();
-  int maxPageIndex = (rowCount/itemsPerPage) + (rowCount%itemsPerPage==0?0:1);
+  int v = rowCount % itemsPerPage == 0 ? 0 : 1;
+  int maxPageIndex = rowCount / itemsPerPage + v;
 //#endif
-  int endPageIndex = currentPageIndex+LR_PAGE_SIZE-1;
-  if(endPageIndex&gt;maxPageIndex) endPageIndex = maxPageIndex;
-
-  if(currentPageIndex&gt;1)
-    l.add(makePrevNextRadioButton(itemsPerPage, currentPageIndex-1, "Prev"));
-  for(int i=startPageIndex;i&lt;=endPageIndex;i++)
-    l.add(makeRadioButton(itemsPerPage, currentPageIndex, i));
-  if(currentPageIndex&lt;maxPageIndex)
-    l.add(makePrevNextRadioButton(itemsPerPage, currentPageIndex+1, "Next"));
+  int endPageIndex = currentPageIndex + LR_PAGE_SIZE - 1;
+  if (endPageIndex &gt; maxPageIndex) {
+    endPageIndex = maxPageIndex;
+  }
 
   box.removeAll();
+  if (startPageIndex &gt;= endPageIndex) {
+    //if I only have one page, Y don't want to see pagination buttons
+    //suggested by erServi
+    return;
+  }
+
   ButtonGroup bg = new ButtonGroup();
+  JRadioButton f = makePrevNextRadioButton(itemsPerPage, 1, "|&lt;", currentPageIndex &gt; 1);
+  box.add(f); bg.add(f);
+  JRadioButton p = makePrevNextRadioButton(itemsPerPage, currentPageIndex - 1, "&lt;", currentPageIndex &gt; 1);
+  box.add(p); bg.add(p);
   box.add(Box.createHorizontalGlue());
-  for(JRadioButton r:l) {
-    box.add(r); bg.add(r);
+  for (int i = startPageIndex; i &lt;= endPageIndex; i++) {
+    JRadioButton c = makeRadioButton(itemsPerPage, currentPageIndex, i); box.add(c); bg.add(c);
   }
   box.add(Box.createHorizontalGlue());
+  JRadioButton n = makePrevNextRadioButton(itemsPerPage, currentPageIndex + 1, "&gt;", currentPageIndex &lt; maxPageIndex);
+  box.add(n); bg.add(n);
+  JRadioButton l = makePrevNextRadioButton(itemsPerPage, maxPageIndex, "&gt;|", currentPageIndex &lt; maxPageIndex);
+  box.add(l); bg.add(l);
   box.revalidate();
   box.repaint();
-  l.clear();
-}
-private JRadioButton makeRadioButton(
-      final int itemsPerPage, final int current, final int target) {
-  JRadioButton radio = new JRadioButton(""+target);
-  radio.setForeground(Color.BLUE);
-  radio.setUI(ui);
-  if(target==current) {
-    radio.setSelected(true);
-    radio.setForeground(Color.BLACK);
-  }
-  radio.addActionListener(new ActionListener() {
-    @Override public void actionPerformed(ActionEvent e) {
-      initLinkBox(itemsPerPage, target);
-    }
-  });
-  return radio;
-}
-private JRadioButton makePrevNextRadioButton(
-      final int itemsPerPage, final int target, String title) {
-  JRadioButton radio = new JRadioButton(title);
-  radio.setForeground(Color.BLUE);
-  radio.setUI(ui);
-  radio.addActionListener(new ActionListener() {
-    @Override public void actionPerformed(ActionEvent e) {
-      initLinkBox(itemsPerPage, target);
-    }
-  });
-  return radio;
 }
 </code></pre>
 
