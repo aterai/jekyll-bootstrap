@@ -67,7 +67,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-25
               return;
             }
             publish(new Progress(Component.PAUSE, flag));
-            flag = !flag;
+            flag ^= true;
             continue;
           }
           int iv = 100 * current / lengthOfTask;

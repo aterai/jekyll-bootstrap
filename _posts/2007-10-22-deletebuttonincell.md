@@ -27,8 +27,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22
     setText("X");
   }
 }
-</code></pre>
-<pre class="prettyprint"><code>class DeleteButtonRenderer extends DeleteButton implements TableCellRenderer {
+
+class DeleteButtonRenderer extends DeleteButton implements TableCellRenderer {
   public DeleteButtonRenderer() {
     super();
     setName("Table.cellRenderer");
@@ -38,8 +38,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22
     return this;
   }
 }
-</code></pre>
-<pre class="prettyprint"><code>class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
+
+class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
   public DeleteButtonEditor(final JTable table) {
     super();
     addActionListener(new ActionListener() {

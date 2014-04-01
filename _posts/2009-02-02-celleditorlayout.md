@@ -35,7 +35,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
   @Override public Component getTableCellEditorComponent(JTable table, Object value,
                          boolean isSelected, int row, int column) {
     //System.out.println("getTableCellEditorComponent");
-    field.setText(value!=null?value.toString():"");
+    field.setText(Objects.toString(value, ""));
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         field.requestFocusInWindow();

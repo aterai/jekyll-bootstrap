@@ -3,7 +3,7 @@ layout: post
 title: JPopupMenuをボタンの長押しで表示
 category: swing
 folder: PressAndHoldButton
-tags: [JToolBar, JButton, JPopupMenu, MouseListener, GridLayout]
+tags: [JToolBar, JButton, JPopupMenu, MouseListener, GridLayout, Timer]
 author: aterai
 comments: true
 ---
@@ -18,57 +18,80 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-26
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRIzHMLNI/AAAAAAAAAgs/0_PwsyZOl-I/s800/PressAndHoldButton.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>private class ArrowButtonHandler extends AbstractAction implements MouseListener {
-  private final javax.swing.Timer autoRepeatTimer;
-  private AbstractButton arrowButton = null;
-  public ArrowButtonHandler() {
-    autoRepeatTimer = new javax.swing.Timer(1000, new ActionListener() {
-      @Override public void actionPerformed(ActionEvent e) {
-        System.out.println("InitialDelay(1000)");
-        if(arrowButton!=null &amp;&amp; arrowButton.getModel().isPressed()
-                             &amp;&amp; autoRepeatTimer.isRunning()) {
-          autoRepeatTimer.stop();
-          pop.show(arrowButton, 0, arrowButton.getHeight());
-          pop.requestFocusInWindow();
-        }
+<pre class="prettyprint"><code>class PressAndHoldHandler extends AbstractAction implements MouseListener {
+  public final JPopupMenu pop = new JPopupMenu();
+  public final ButtonGroup bg = new ButtonGroup();
+  private AbstractButton arrowButton;
+  private final Timer holdTimer = new Timer(1000, new ActionListener() {
+    @Override public void actionPerformed(ActionEvent e) {
+      System.out.println("InitialDelay(1000)");
+      if (arrowButton != null &amp;&amp; arrowButton.getModel().isPressed()
+          &amp;&amp; holdTimer.isRunning()) {
+        holdTimer.stop();
+        pop.show(arrowButton, 0, arrowButton.getHeight());
+        pop.requestFocusInWindow();
       }
-    });
-    autoRepeatTimer.setInitialDelay(1000);
-    pop.addPopupMenuListener(new PopupMenuListener() {
-      @Override public void popupMenuCanceled(PopupMenuEvent e) {}
-      @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {}
-      @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {
-        if(arrowButton!=null) {
-          arrowButton.setSelected(false);
+    }
+  });
+  public PressAndHoldHandler() {
+    super();
+    holdTimer.setInitialDelay(1000);
+    pop.setLayout(new GridLayout(0, 3, 5, 5));
+    for (MenuContext m: makeMenuList()) {
+      AbstractButton b = new JRadioButton(m.command);
+      b.setActionCommand(m.command);
+      b.setForeground(m.color);
+      b.setBorder(BorderFactory.createEmptyBorder());
+      b.addActionListener(new ActionListener() {
+        @Override public void actionPerformed(ActionEvent e) {
+          System.out.println(bg.getSelection().getActionCommand());
+          pop.setVisible(false);
         }
-      }
-    });
+      });
+      pop.add(b);
+      bg.add(b);
+    }
+  }
+  private List&lt;MenuContext&gt; makeMenuList() {
+    return Arrays.asList(
+      new MenuContext("BLACK",   Color.BLACK),
+      new MenuContext("BLUE",  Color.BLUE),
+      new MenuContext("CYAN",  Color.CYAN),
+      new MenuContext("GREEN",   Color.GREEN),
+      new MenuContext("MAGENTA", Color.MAGENTA),
+      new MenuContext("ORANGE",  Color.ORANGE),
+      new MenuContext("PINK",  Color.PINK),
+      new MenuContext("RED",   Color.RED),
+      new MenuContext("YELLOW",  Color.YELLOW));
   }
   @Override public void actionPerformed(ActionEvent e) {
-    if(autoRepeatTimer.isRunning()) {
-      System.out.println("actionPerformed");
-      System.out.println("  "+bg.getSelection().getActionCommand());
-      if(arrowButton!=null) arrowButton.setSelected(false);
-      autoRepeatTimer.stop();
+    System.out.println("actionPerformed");
+    if (holdTimer.isRunning()) {
+      ButtonModel model = bg.getSelection();
+      if (model != null) {
+        System.out.println(model.getActionCommand());
+      }
+      holdTimer.stop();
     }
   }
   @Override public void mousePressed(MouseEvent e) {
     System.out.println("mousePressed");
-    if(SwingUtilities.isLeftMouseButton(e) &amp;&amp; e.getComponent().isEnabled()) {
-      arrowButton = (AbstractButton)e.getSource();
-      autoRepeatTimer.start();
+    Component c = e.getComponent();
+    if (SwingUtilities.isLeftMouseButton(e) &amp;&amp; c.isEnabled()) {
+      arrowButton = (AbstractButton) c;
+      holdTimer.start();
     }
   }
   @Override public void mouseReleased(MouseEvent e) {
-    autoRepeatTimer.stop();
+    holdTimer.stop();
   }
   @Override public void mouseExited(MouseEvent e) {
-    if(autoRepeatTimer.isRunning()) {
-      autoRepeatTimer.stop();
+    if (holdTimer.isRunning()) {
+      holdTimer.stop();
     }
   }
-  @Override public void mouseEntered(MouseEvent e) {}
-  @Override public void mouseClicked(MouseEvent e) {}
+  @Override public void mouseEntered(MouseEvent e) { /* not needed */ }
+  @Override public void mouseClicked(MouseEvent e) { /* not needed */ }
 }
 </code></pre>
 

@@ -20,9 +20,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-12
 ### サンプルコード
 <pre class="prettyprint"><code>final JLabel label = new JLabel();
 Timer timer = new Timer(600, new ActionListener() {
-  boolean flg = true;
+  private boolean flg = true;
   @Override public void actionPerformed(ActionEvent e) {
-    label.setText((flg=!flg)?"!!!Warning!!!":"");
+    flg ^= true;
+    label.setText(flg ? "!!!Warning!!!" : "");
   }
 });
 timer.start();

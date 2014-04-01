@@ -111,6 +111,7 @@ public double easeInOut(double t) {
 - [指数関数を使ったお手軽イーズ・アウト - Radium Software](http://radiumsoftware.tumblr.com/post/5031889912)
 - [Soft maximum 関数 - Radium Software](http://radiumsoftware.tumblr.com/post/10719023826)
 - [イーズイン/アウトいろいろ - wonderfl build flash online](http://wonderfl.net/c/3GhW)
+- [本の虫: なんでGCCはa*a*a*a*a*a を (a*a*a)*(a*a*a) に最適化できないの？っと](http://cpplover.blogspot.jp/2014/03/gccaaaaaa-aaaaaa.html)
 
 <!-- dummy comment line for breaking list -->
 
