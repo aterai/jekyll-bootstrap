@@ -27,7 +27,7 @@ JLabel l5 = new JustifiedLabel("チーム出塁率");
 //...
 class JustifiedLabel extends JLabel {
   private GlyphVector gvtext;
-  private int prev_width = -1;
+  private int prevWidth = -1;
   public JustifiedLabel() {
     this(null);
   }
@@ -35,32 +35,32 @@ class JustifiedLabel extends JLabel {
     super(str);
   }
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g.create();
     Insets i = getInsets();
     int w = getWidth() - i.left - i.right;
-    if(w!=prev_width) {
-      gvtext = getJustifiedGlyphVector(
-          getText(), getFont(), g2.getFontRenderContext());
-      prev_width = w;
+    if (w != prevWidth) {
+      gvtext = getJustifiedGlyphVector(getText(), getFont(), g2.getFontRenderContext());
+      prevWidth = w;
     }
-    if(gvtext!=null) {
-      g2.drawGlyphVector(gvtext, i.left, i.top + getFont().getSize());
-    } else {
+    if (gvtext == null) {
       super.paintComponent(g);
+    } else {
+      g2.drawGlyphVector(gvtext, i.left, i.top + getFont().getSize());
     }
+    g2.dispose();
   }
-  private GlyphVector getJustifiedGlyphVector(
-      String str, Font font, FontRenderContext frc) {
+  private GlyphVector getJustifiedGlyphVector(String str, Font font, FontRenderContext frc) {
     GlyphVector gv = font.createGlyphVector(frc, str);
     Rectangle2D r = gv.getVisualBounds();
-    float jwidth = (float)getWidth();
-    float vwidth = (float)r.getWidth();
-    if(jwidth&lt;vwidth) return null;
-
-    float xx = (jwidth-vwidth) / (float)(gv.getNumGlyphs()-1);
-    float xpos = 0.0f;
+    float jwidth = (float) getWidth();
+    float vwidth = (float) r.getWidth();
+    if (jwidth &lt; vwidth) {
+      return gv;
+    }
+    float xx = (jwidth - vwidth) / (float) (gv.getNumGlyphs() - 1);
+    float xpos = 0f;
     Point2D gmPos = new Point2D.Double(0.0d, 0.0d);
-    for(int i=0; i&lt;gv.getNumGlyphs(); i++) {
+    for (int i = 0; i &lt; gv.getNumGlyphs(); i++) {
       GlyphMetrics gm = gv.getGlyphMetrics(i);
       gmPos.setLocation(xpos, 0);
       gv.setGlyphPosition(i, gmPos);

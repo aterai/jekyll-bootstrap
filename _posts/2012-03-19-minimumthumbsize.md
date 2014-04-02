@@ -24,6 +24,19 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19
 ### 解説
 上記のサンプルでは、右の`JScrollPane`で、`JScrollBar`の`Knob`(`Thumb`)が短くなりすぎないように、最小サイズ(`Horizontal`の場合は幅、`Vertical`の場合は高さ)を設定します。
 
+- 注: `LookAndFeel`によって、`UIManager.put("ScrollBar.minimumThumbSize", new Dimension(32, 32));`が有効かどうかは異なる
+    - `BasicLookAndFeel`、`WindowsLookAndFeel`: 有効
+    - `MetalLookAndFeel`、`NimbusLookAndFeel`: 無効
+        - 以下のように、縦スクロールバーならその幅が最小サイズになるよう上書きされているため
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>// @see javax/swing/plaf/metal/MetalScrollBarUI.java
+protected Dimension getMinimumThumbSize() {
+  return new Dimension(scrollBarWidth, scrollBarWidth);
+}
+</code></pre>
+
 - - - -
 `Windows 7`の`WindowsLookAndFeel`で`JSlider`を使った場合も、つまみ？のサイズが小さすぎるが、`UIManager.put("Slider.minimumHorizontalSize", new Dimension(32, 32))`などとしても効果がない？
 
@@ -36,6 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19
 
 - 参考: [Java Swing rendering bug on Windows 7 look-and-feel? - Stack Overflow](http://stackoverflow.com/questions/2754306/java-swing-rendering-bug-on-windows-7-look-and-feel)
     - `slider.setPaintTicks(true)`とした場合は、正常なサイズにみえる。
+    - トラックを表示したくない場合は、`slider.putClientProperty("Slider.paintThumbArrowShape", Boolean.TRUE);`で、つまみの形だけ変更
 
 <!-- dummy comment line for breaking list -->
 
