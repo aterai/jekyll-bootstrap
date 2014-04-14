@@ -29,28 +29,33 @@ field.setText("");
 field.addKeyListener(new ComboKeyHandler(combo));
 </code></pre>
 
-<pre class="prettyprint"><code>class ComboKeyHandler extends KeyAdapter{
-  private final JComboBox comboBox;
-  private final Vector&lt;String&gt; list = new Vector&lt;&gt;();
-  public ComboKeyHandler(JComboBox combo) {
+<pre class="prettyprint"><code>class ComboKeyHandler extends KeyAdapter {
+  private final JComboBox&lt;String&gt; comboBox;
+  private final List&lt;String&gt; list = new ArrayList&lt;&gt;();
+  private boolean shouldHide;
+
+  public ComboKeyHandler(JComboBox&lt;String&gt; combo) {
+    super();
     this.comboBox = combo;
-    for(int i=0;i&lt;comboBox.getModel().getSize();i++) {
-      list.addElement((String)comboBox.getItemAt(i));
+    for (int i = 0; i &lt; comboBox.getModel().getSize(); i++) {
+      list.add((String) comboBox.getItemAt(i));
     }
   }
-  private boolean shouldHide = false;
   @Override public void keyTyped(final KeyEvent e) {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
-        String text = ((JTextField)e.getSource()).getText();
-        if(text.length()==0) {
-          setSuggestionModel(comboBox, new DefaultComboBoxModel(list), "");
+        String text = ((JTextField) e.getComponent()).getText();
+        ComboBoxModel&lt;String&gt; m;
+        if (text.isEmpty()) {
+          String[] array = list.toArray(new String[list.size()]);
+          m = new DefaultComboBoxModel&lt;String&gt;(array);
+          setSuggestionModel(comboBox, m, "");
           comboBox.hidePopup();
-        }else{
-          ComboBoxModel m = getSuggestedModel(list, text);
-          if(m.getSize()==0 || shouldHide) {
+        } else {
+          m = getSuggestedModel(list, text);
+          if (m.getSize() == 0 || shouldHide) {
             comboBox.hidePopup();
-          }else{
+          } else {
             setSuggestionModel(comboBox, m, text);
             comboBox.showPopup();
           }
@@ -59,40 +64,45 @@ field.addKeyListener(new ComboKeyHandler(combo));
     });
   }
   @Override public void keyPressed(KeyEvent e) {
-    JTextField textField = (JTextField)e.getSource();
+    JTextField textField = (JTextField) e.getComponent();
     String text = textField.getText();
     shouldHide = false;
-    switch(e.getKeyCode()) {
-      case KeyEvent.VK_RIGHT:
-        for(String s: list) {
-          if(s.startsWith(text)) {
-            textField.setText(s);
-            return;
-          }
+    switch (e.getKeyCode()) {
+    case KeyEvent.VK_RIGHT:
+      for (String s : list) {
+        if (s.startsWith(text)) {
+          textField.setText(s);
+          return;
         }
-        break;
-      case KeyEvent.VK_ENTER:
-        if(!list.contains(text)) {
-          list.addElement(text);
-          Collections.sort(list);
-          setSuggestionModel(comboBox, getSuggestedModel(list, text), text);
-        }
-        shouldHide = true;
-        break;
-      case KeyEvent.VK_ESCAPE:
-        shouldHide = true;
-        break;
+      }
+      break;
+    case KeyEvent.VK_ENTER:
+      if (!list.contains(text)) {
+        list.add(text);
+        Collections.sort(list);
+        //setSuggestionModel(comboBox, new DefaultComboBoxModel(list), text);
+        setSuggestionModel(comboBox, getSuggestedModel(list, text), text);
+      }
+      shouldHide = true;
+      break;
+    case KeyEvent.VK_ESCAPE:
+      shouldHide = true;
+      break;
+    default:
+      break;
     }
   }
-  private static void setSuggestionModel(JComboBox comboBox, ComboBoxModel mdl, String str) {
+  private static void setSuggestionModel(JComboBox&lt;String&gt; comboBox, ComboBoxModel&lt;String&gt; mdl, String str) {
     comboBox.setModel(mdl);
     comboBox.setSelectedIndex(-1);
-    ((JTextField)comboBox.getEditor().getEditorComponent()).setText(str);
+    ((JTextField) comboBox.getEditor().getEditorComponent()).setText(str);
   }
-  private static ComboBoxModel getSuggestedModel(Vector&lt;String&gt; list, String text) {
-    DefaultComboBoxModel m = new DefaultComboBoxModel();
-    for(String s: list) {
-      if(s.startsWith(text)) m.addElement(s);
+  private static ComboBoxModel&lt;String&gt; getSuggestedModel(List&lt;String&gt; list, String text) {
+    DefaultComboBoxModel&lt;String&gt; m = new DefaultComboBoxModel&lt;&gt;();
+    for (String s : list) {
+      if (s.startsWith(text)) {
+        m.addElement(s);
+      }
     }
     return m;
   }
@@ -155,6 +165,8 @@ JComboBox = new JComboBox(model) {
 - <kbd>Enter</kbd>キーでの追加が出来なくなっていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-01-22 (木) 16:26:11
 - 下下と入力したとき、下上と入力したときの動きがおかしいです。 -- [magi](http://terai.xrea.jp/magi.html) 2011-02-19 (Sat) 22:03:02
     - 自分の環境では再現できてません。カーソルキーを、「下、下、下、上」と入力するのでしょうか？ -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-21 (月) 15:06:15
+- このページでVectorで宣言されているところが　view plain　で表示されるコードだとListで宣言されてますね --  2014-04-14 (月) 11:04:20
+    - こんばんは。ご指摘ありがとうございます。ソースコードは出来るだけ`Vector`は使用しないようにまとめて変更したのですが、`wiki`は面倒なので結構残っているかもしれません。気がつけば徐々に置き換えていこうと思っています :-) -- [aterai](http://terai.xrea.jp/aterai.html) 2014-04-14 (月) 17:51:02
 
 <!-- dummy comment line for breaking list -->
 

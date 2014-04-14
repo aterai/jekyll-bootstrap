@@ -18,26 +18,28 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-02
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNqjajfcI/AAAAAAAAAbI/Km-h7tWdYOo/s800/HandScroll.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>class HandScrollListener extends MouseInputAdapter {
-  Cursor defCursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
-  Cursor hndCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-  Point pp = new Point();
-  @Override public void mouseDragged(final MouseEvent e) {
+<pre class="prettyprint"><code>class HandScrollListener extends MouseAdapter {
+  private final Cursor defCursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
+  private final Cursor hndCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
+  private final Point pp = new Point();
+  @Override public void mouseDragged(MouseEvent e) {
+    JViewport vport = (JViewport) e.getComponent();
     Point cp = e.getPoint();
-    Point vp = vport.getViewPosition(); //= SwingUtilities.convertPoint(vport,0,0,label);
-    vp.translate(pp.x-cp.x, pp.y-cp.y);
-    //vport.setViewPosition(vp);
-    label.scrollRectToVisible(
-      new Rectangle(vp, vport.getSize()));
+    Point vp = vport.getViewPosition(); //= SwingUtilities.convertPoint(vport, 0, 0, label);
+    vp.translate(pp.x - cp.x, pp.y - cp.y);
+    //if (r1.isSelected()) {
+    label.scrollRectToVisible(new Rectangle(vp, vport.getSize()));
+    //} else {
+    //  vport.setViewPosition(vp);
+    //}
     pp.setLocation(cp);
   }
   @Override public void mousePressed(MouseEvent e) {
-    label.setCursor(hndCursor);
+    e.getComponent().setCursor(hndCursor);
     pp.setLocation(e.getPoint());
   }
   @Override public void mouseReleased(MouseEvent e) {
-    label.setCursor(defCursor);
-    label.repaint();
+    e.getComponent().setCursor(defCursor);
   }
 }
 </code></pre>
