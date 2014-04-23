@@ -32,7 +32,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-23
       String str = textField.getText().trim();
       if(!str.equals(name)) {
         column.setHeaderValue(str);
-        header.repaint();
+        header.repaint(header.getHeaderRect(index));
       }
     }
   }

@@ -45,6 +45,7 @@ class Tile2 extends JComponent {
 - `Timer: 100`
     - `10x10`個のアニメーション用タイルに一つづつ`Timer`を使用
     - `JDK 1.7.0_40`以降で低速
+    - `JDK 1.8.0`は、`JDK 1.7.0_25`と同等？
 - `Timer: 1, ActionListener: 100`
     - `Timer`は`1`個、`Timer#addActionListener(...)`で、`100`個の`ActionListener`を追加して使用
 - `Timer: 1, ActionListener: 1`
