@@ -87,6 +87,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 
 ### 参考リンク
 - [How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)
+- [ズームとパンの機能を備えたドローソフトを作成する：CodeZine](http://codezine.jp/article/detail/174)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 - [タッチ操作に対応した画像ビューワーをJavaScriptで作るならD3.jsが便利 - てっく煮ブログ](http://tech.nitoyon.com/ja/blog/2013/12/13/touch-viewer/)
 - [CanvasでAffine変換で大いにはまる（数学的センスが足りなかった・・・） - torutkの日記](http://d.hatena.ne.jp/torutk/20140415/p1)

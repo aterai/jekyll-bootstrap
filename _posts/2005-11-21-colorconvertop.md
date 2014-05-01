@@ -52,7 +52,7 @@ icon2 = new ImageIcon(destination);
     int g = (argb &gt;&gt;  8) &amp; 0xff;
     int b = (argb      ) &amp; 0xff;
     //http://ofo.jp/osakana/cgtips/grayscale.phtml
-    int m = (2*r+4*g+b)/7; //NTSC係数による加重平均法(近似)
+    int m = (2 * r + 4 * g + b) / 7; //NTSC Coefficients
     return (argb &amp; 0xff000000) | (m&lt;&lt;16) | (m&lt;&lt;8) | (m);
   }
 }
