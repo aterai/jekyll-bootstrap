@@ -109,7 +109,7 @@ table.setFillsViewportHeight(true);
 </code></pre>
 
 - - - -
-`WindowsLookAndFeel`でカーソルのチラつき防止のために、`TransferHandler#canImport(...)`内で`JTable#setCursor(...)`をしているため、ディスクトップなどからファイルをドラッグしてドロップ不可カーソルが表示されるとマウスをリリースしたあともそのカーソルが表示されたままになるバグがあります。
+`WindowsLookAndFeel`でカーソルのチラつき防止のために、`TransferHandler#canImport(...)`内で`JTable#setCursor(...)`をしているため、デスクトップなどからファイルをドラッグしてドロップ不可カーソルが表示されるとマウスをリリースしたあともそのカーソルが表示されたままになるバグがあります。
 
 また、このサンプルでは、各`JTable`に`TableRowSorter`などが設定され、ソートされた状態での並べ替えは想定していません。
 

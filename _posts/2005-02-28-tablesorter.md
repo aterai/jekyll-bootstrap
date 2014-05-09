@@ -99,7 +99,7 @@ JTable table = new JTable(sorter);
 sorter.setTableHeader(table.getTableHeader());
 </code></pre>
 
-- その後、ソートした状態で、一行づつのデータを取り出した場合、 どうすればよろしいでしょうか？例えば、`No.`欄をソートして、下り順で`No.`欄と`Name`欄のデータを`System.out.println(model.getValueAt(row, 1))`したい場合、その`row`は`sorter`に関連していると思います。 `row=?`かが分かりません。説明下手で、大変申し訳ございません。ご教示をください。よろしくお願い致します。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-08-05 (木) 06:07:47
+- その後、ソートした状態で、一行ずつのデータを取り出した場合、 どうすればよろしいでしょうか？例えば、`No.`欄をソートして、下り順で`No.`欄と`Name`欄のデータを`System.out.println(model.getValueAt(row, 1))`したい場合、その`row`は`sorter`に関連していると思います。 `row=?`かが分かりません。説明下手で、大変申し訳ございません。ご教示をください。よろしくお願い致します。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-08-05 (木) 06:07:47
     - こんにちは。多分、`sorter.modelIndex(viewIndex);`でいいと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-05 (木) 13:17:51
 
 <!-- dummy comment line for breaking list -->

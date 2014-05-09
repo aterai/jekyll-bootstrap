@@ -22,7 +22,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-20
 </code></pre>
 
 ### 解説
-各プラットフォームのディスクトップデザインに対応したシステムカラーは、`SystemColor`クラスの`static`フィールドにまとめて定義されています。
+各プラットフォームのデスクトップデザインに対応したシステムカラーは、`SystemColor`クラスの`static`フィールドにまとめて定義されています。
 
 ### 参考リンク
 - [システムカラー](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/SystemColor.html)
