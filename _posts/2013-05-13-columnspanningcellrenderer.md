@@ -119,7 +119,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-13
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- JTableをスクロールするとおかしくなる？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 13:37:19
+- `JTable`をスクロールするとおかしくなる？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 13:37:19
     - `0`行目ではなく、一番上に表示されている行の表示が原因かもしれない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 13:44:14
     - 移動の幅からみて、`TableCellRenderer`の`Border`が関連しているような気がするけど、よく分からない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 15:08:18
     - 一番上の行のみの症状なので、ヘッダレンダラーとか関係してるのかと調べてたけど、`JViewport#setViewPosition(Point)`を使って直接ジャンプ？すれは、正常にヘッダサイズを変更できるようだ。もしかしたら[次にビューポートにペイントが呼び出されたときに、クリッピング領域がビューポートサイズより小さい場合には、タイマーが開始され全体をペイントし直す](http://docs.oracle.com/javase/jp/6/api/javax/swing/JViewport.html)せいだった？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 18:29:12

@@ -33,3 +33,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JLabelとIconで作成した検索位置表示バーをマウスで操作する](http://terai.xrea.jp/Swing/BoundedRangeModel.html)のような外見の`ScrollBar`を使用した方が良いかもしれない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-14 (水) 16:05:32
+
+<!-- dummy comment line for breaking list -->
+

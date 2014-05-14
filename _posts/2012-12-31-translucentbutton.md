@@ -128,7 +128,8 @@ add(p);
     - `setOpaque(false);`, `setContentAreaFilled(false);`などを設定して`JButton`は透明にし、`JButton#paintComponent(...)`をオーバーライドして半透明の影などを描画
     - ~~`MetalLookAndFeel`で、余計なフチ？が表示される~~
     - `JButton#setBorderPainted(false);`で、フチを非表示にできる
-    - `JButton`の内余白と外余白: `setMargin(new Insets(2, 8, 2, 8));`、`setBorder(BorderFactory.createEmptyBorder(2, 8, 2, 8));`の設定と`Icon`の余白を考慮したサイズ設定が面倒？
+    - `setBorder(BorderFactory.createEmptyBorder(2, 8, 2, 8));`で設定した余白は、`Icon`自体のサイズには含めないが、`Icon`の描画は使用する
+    - `JButton#setMargin(new Insets(2, 8, 2, 8));`が有効かどうかは、環境または`LookAndFeel`に依存する？
 
 <!-- dummy comment line for breaking list -->
 
