@@ -49,7 +49,7 @@ list.setDropMode(DropMode.INSERT);
 
 ### コメント
 - Java勉強中の初心者です。コードの質問したいのですが、文字数がオーバします・・・・・ -- [java勉強中の初心者](http://terai.xrea.jp/java勉強中の初心者.html) 2013-04-23 (火) 11:08:46
-    - 一番上にある「このページを編集する」から、制限無しで編集可能です。コードだけどこか別の場所(gist.github.comなど)に張り込んでリンクするのもいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-23 (火) 12:15:08
+    - ~~一番上にある「このページを編集する」から、制限無しで編集可能です。~~ スパムが鬱陶しいので編集禁止にしました(2014-05-16)。コードだけどこか別の場所(gist.github.comなど)に張り込んでリンクするのもいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-23 (火) 12:15:08
 
 <!-- dummy comment line for breaking list -->
 

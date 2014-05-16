@@ -107,6 +107,32 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05
 ### 解説
 上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。アクションイベントを設定するのは、`CellEditor`用の`JButton`で、`CellRenderer`用の`JButton`は表示のためのダミーです。
 
+- - - -
+- `LookAndFeel`などが更新されたら、`JTable#updateUI()`内で`SwingUtilities#updateRendererOrEditorUI()`を呼び出すなどして、各セルレンダラーやセルエディタ(これらは`JTable`の子コンポーネントではないので)を更新
+    - `AbstractCellEditor`を継承するセルエディタは、`Component`も`DefaultCellEditor`も継承していないので、`LookAndFeel`を変更しても追従しない
+    - そのため、`JTable#updateUI()`をオーバーライドして、セルエディタ自体を作成し直すなどの対応が必要
+- このサンプルでは、`Component`を継承(`TableCellEditor`を実装)するセルエディタを作成し、`AbstractCellEditor`から必要なメソッドをコピーして回避する方法を使用している
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>//SwingUtilities#updateRendererOrEditorUI()
+static void updateRendererOrEditorUI(Object rendererOrEditor) {
+  if (rendererOrEditor == null) {
+    return;
+  }
+  Component component = null;
+  if (rendererOrEditor instanceof Component) {
+    component = (Component)rendererOrEditor;
+  }
+  if (rendererOrEditor instanceof DefaultCellEditor) {
+    component = ((DefaultCellEditor)rendererOrEditor).getComponent();
+  }
+  if (component != null) {
+    SwingUtilities.updateComponentTreeUI(component);
+  }
+}
+</code></pre>
+
 
 - - - -
 - `JSpinner`(`2`つの`JButton`と`JTextField`の組み合わせ)を`CellEditor`に使用する

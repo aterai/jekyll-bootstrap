@@ -57,7 +57,7 @@ private void collapseAll(JTree tree) {
 ### 解説
 - `expandAll(A)`
     - `JTree`をリストとみなして`expandAll`では先頭から順番に`JTree#expandRow(int)`メソッドを実行
-    - ループは全展開された時の`JTree`の行インデックス数だけ繰り返す
+    - ループは全展開された時の`JTree`の行数だけ繰り返す
 
 <!-- dummy comment line for breaking list -->
 
