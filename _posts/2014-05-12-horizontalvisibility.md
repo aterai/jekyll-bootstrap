@@ -29,6 +29,53 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
     - `JScrollBar`が同期しない場合がある
 - 注: `setScrollOffset: 0`
     - `JScrollBar`のノブがマウスドラッグに反応しなくなる場合がある？
+- 注: ノブの表示
+    - 文字列をすべて削除するなどしても、ノブが非表示にならない
+    - `1px`の余白？、以下のようなリスナーで回避するテストを追加
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>class EmptyThumbHandler extends ComponentAdapter implements DocumentListener {
+  private final BoundedRangeModel emptyThumbModel = new DefaultBoundedRangeModel(0, 1, 0, 1);
+  private final JTextField textField;
+  private final JScrollBar scroller;
+  public EmptyThumbHandler(JTextField textField, JScrollBar scroller) {
+    super();
+    this.textField = textField;
+    this.scroller = scroller;
+  }
+  private void changeThumbModel() {
+    EventQueue.invokeLater(new Runnable() {
+      @Override public void run() {
+        BoundedRangeModel m = textField.getHorizontalVisibility();
+        int iv = m.getMaximum() - m.getMinimum() - m.getExtent() - 1; // -1: bug?
+        if (iv &lt;= 0) {
+          scroller.setModel(emptyThumbModel);
+        } else {
+          scroller.setModel(textField.getHorizontalVisibility());
+        }
+      }
+    });
+  }
+  @Override public void componentResized(ComponentEvent e) {
+    changeThumbModel();
+  }
+  @Override public void insertUpdate(DocumentEvent e) {
+    changeThumbModel();
+  }
+  @Override public void removeUpdate(DocumentEvent e) {
+    changeThumbModel();
+  }
+  @Override public void changedUpdate(DocumentEvent e) {
+    changeThumbModel();
+  }
+}
+</code></pre>
+
+- - - -
+- `JScrollPane scroll = new JScrollPane(new JTextField(TEXT), ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);`
+    - 縦スクロールバーを非表示にした`JScrollPane`を使用する場合、`JTextField`内の文字列選択でスクロールしない
+    - 文字列を適当な長さまで削除するとノブが非表示になる
 
 <!-- dummy comment line for breaking list -->
 
