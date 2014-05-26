@@ -45,7 +45,7 @@ public static JFrame createFrame(String title) {
 [When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)によると、`Web Start`で実行する場合は`DISPOSE_ON_CLOSE`ではなく、`EXIT_ON_CLOSE`を使っておいた方が良さそうです。このため、上記のサンプルでは、解説とは異なり、コメントアウトしたコードで終了するようになっています。
 
 ### 参考リンク
-- [AWT Threading Issues](http://docs.oracle.com/javase/jp/6/api/java/awt/doc-files/AWTThreadIssues.html)
+- [AWT のスレッドの問題](http://docs.oracle.com/javase/jp/7/api/java/awt/doc-files/AWTThreadIssues.html)
 - [When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)
 
 <!-- dummy comment line for breaking list -->

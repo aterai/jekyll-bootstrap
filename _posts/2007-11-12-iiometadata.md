@@ -51,7 +51,7 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 1. `IIOMetadata`から`XML`の`DOM`(`org.w3c.dom.Node`)形式でデータを取得
 1. `com`タグの`comment`属性からコメントを取得
 
-タグやマーカなどの形式は、[JPEG Metadata Format Specification and Usage Notes](http://docs.oracle.com/javase/jp/6/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)や、以下の`XML`一覧表示を参考にしてください。
+タグやマーカなどの形式は、[JPEG メタデータ形式の仕様および使用上の注意](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)や、以下の`XML`一覧表示を参考にしてください。
 
 - `JTextArea`
     - 属性は頭に`#`をつけて表示
@@ -61,8 +61,8 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
-- [JPEG Metadata Format Specification and Usage Notes](http://docs.oracle.com/javase/jp/6/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)
-    - via: [javax.imageio.metadata (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/imageio/metadata/package-summary.html)
+- [JPEG メタデータ形式の仕様および使用上の注意](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)
+    - via: [javax.imageio.metadata (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/package-summary.html)
     - 標準の (プラグインに依存しない) 形式やその他のメタデータ(`PNG`、`GIF`、`BMP`)もこちらから
 - [Swing - XMLViewer](https://forums.oracle.com/thread/1373824)
 - [MediaTrackerで画像のサイズを取得](http://terai.xrea.jp/Swing/MediaTracker.html)

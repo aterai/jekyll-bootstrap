@@ -90,7 +90,7 @@ frame.setFocusTraversalPolicy(policy);
 </code></pre>
 
 ### 参考リンク
-- [The AWT Focus Subsystem](http://docs.oracle.com/javase/jp/6/api/java/awt/doc-files/FocusSpec.html)
+- [AWT フォーカスサブシステム](http://docs.oracle.com/javase/jp/7/api/java/awt/doc-files/FocusSpec.html)
 - [Merlinの魔術: フォーカス、フォーカス、フォーカス](http://www.ibm.com/developerworks/jp/java/library/j-mer07153/)
 - [Windowを開いたときのフォーカスを指定](http://terai.xrea.jp/Swing/DefaultFocus.html)
 - [FocusTraversalKeysに矢印キーを追加してフォーカス移動](http://terai.xrea.jp/Swing/FocusTraversalKeys.html)

@@ -44,7 +44,7 @@ JButton button = new JButton(icon9) {
 
 ### 参考リンク
 - [java - Animated ImageIcon as Button - Stack Overflow](http://stackoverflow.com/questions/18270701/animated-imageicon-as-button)
-- [Image#flush() (Java Platform SE 7 )](http://docs.oracle.com/javase/jp/7/api/java/awt/Image.html#flush%28%29)
+- [Image#flush() (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/Image.html#flush%28%29)
 
 <!-- dummy comment line for breaking list -->
 

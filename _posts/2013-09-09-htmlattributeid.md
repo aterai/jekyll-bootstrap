@@ -110,7 +110,7 @@ try{
 </code></pre>
 
 ### 参考リンク
-- [HTMLDocument (Java Platform SE 7 )](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html)
+- [HTMLDocument (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html)
 - [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](http://terai.xrea.jp/Swing/HTMLEditorKit.html)
 
 <!-- dummy comment line for breaking list -->

@@ -45,7 +45,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15
 `JDK 7`の場合は、`Files.walkFileTree(...)`などを使用する方法もあります。
 
 - [Walking the File Tree (The Java™ Tutorials > Essential Classes > Basic I/O)](http://docs.oracle.com/javase/tutorial/essential/io/walk.html)
-- [Files (Java Platform SE 7 )](http://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#walkFileTree%28java.nio.file.Path,%20java.nio.file.FileVisitor%29)
+- [Files (Java Platform SE 7)](http://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#walkFileTree%28java.nio.file.Path,%20java.nio.file.FileVisitor%29)
 
 <!-- dummy comment line for breaking list -->
 
