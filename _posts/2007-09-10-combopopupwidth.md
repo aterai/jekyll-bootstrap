@@ -39,12 +39,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-10
 </code></pre>
 
 ### 解説
-上記のサンプルでは、下二つの`JComboBox`に`PopupMenuListener`を実装したリスナーを設定しています。このリスナーでは、ポッアプメニュー(ドロップダウンリスト)が開かれる前に`JComboBox`本体の幅を指定値と比較し、小さかった場合は以下のような通常とは異なる手順でポッアプメニューの表示を行っています。
+上記のサンプルでは、下二つの`JComboBox`に`PopupMenuListener`を実装したリスナーを設定しています。このリスナーでは、ポップアップメニュー(ドロップダウンリスト)が開かれる前に`JComboBox`本体の幅を指定値と比較し、小さかった場合は以下のような通常とは異なる手順でポップアップメニューの表示を行っています。
 
 - `JComboBox`のサイズを取得し保存
 - `JComboBox`の幅を指定値まで拡大
-- `JComboBox#showPopup`でポッアプメニューを表示
-    - ポッアプメニューの幅も、指定値まで拡大している
+- `JComboBox#showPopup`でポップアップメニューを表示
+    - ポップアップメニューの幅も、指定値まで拡大している
 - `JComboBox`本体のサイズを保存していた元の値に戻す
 
 <!-- dummy comment line for breaking list -->

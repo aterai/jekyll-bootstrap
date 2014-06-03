@@ -35,7 +35,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-07
 
 ### 解説
 - `ignore: F1,F4-F7,F9-`
-    - チェックボックスをチェックしている場合、ファンクションキー(<kbd>Shift</kbd>, <kbd>Ctrl+Function</kbd>キーも含む)を押しても、セルの編集が開始されないように`JTable#editCellAt(...)`メソッドをオーバラーライド
+    - チェックボックスをチェックしている場合、ファンクションキー(<kbd>Shift</kbd>, <kbd>Ctrl+Function</kbd>キーも含む)を押しても、セルの編集が開始されないように`JTable#editCellAt(...)`メソッドをオーバーライド
 
 <!-- dummy comment line for breaking list -->
 

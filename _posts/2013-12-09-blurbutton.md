@@ -63,7 +63,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
     - [Java Swing Hacks 9. 使用不可状態のコンポーネントをぼかし表示する](http://www.oreilly.co.jp/books/4873112788/)から引用
 - 下
     - `WindowsLookAndFeel`の場合、右端`1`ドットの表示が乱れる場合があるので、`EdgeCondition`をデフォルトの`EDGE_ZERO_FILL`から、`EDGE_NO_OP`に変更
-    - `WindowsLookAndFeel`の場合、これらのぼかしを入れると文字が拡大されて？(左右の`Border`が広いから？)、文字列が省略されてしまうので、`JButton#getPreferredSize()`をオーパーライドして幅を拡大
+    - `WindowsLookAndFeel`の場合、これらのぼかしを入れると文字が拡大されて？(左右の`Border`が広いから？)、文字列が省略されてしまうので、`JButton#getPreferredSize()`をオーバーライドして幅を拡大
 
 <!-- dummy comment line for breaking list -->
 

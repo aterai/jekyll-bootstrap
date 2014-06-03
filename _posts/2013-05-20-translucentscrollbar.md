@@ -80,10 +80,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
     private final Color draggingColor = new Color(200,100,100,100);
     private final Color rolloverColor = new Color(255,120,100,100);
     @Override protected void paintThumb(Graphics g, JComponent c, Rectangle r) {
-      Graphics2D g2 = (Graphics2D)g.create();
-      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                          RenderingHints.VALUE_ANTIALIAS_ON);
-      Color color = null;
+      Color color;
       JScrollBar sb = (JScrollBar)c;
       if(!sb.isEnabled() || r.width&gt;r.height) {
         return;
@@ -94,6 +91,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
       }else{
         color = defaultColor;
       }
+      Graphics2D g2 = (Graphics2D)g.create();
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                          RenderingHints.VALUE_ANTIALIAS_ON);
       g2.setPaint(color);
       g2.fillRect(r.x,r.y,r.width-1,r.height-1);
       g2.setPaint(Color.WHITE);

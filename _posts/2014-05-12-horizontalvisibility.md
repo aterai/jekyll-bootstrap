@@ -15,7 +15,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
 
 {% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-cOeCI-IblNs/U2-HtWna-xI/AAAAAAAACFI/z53K4Pkgpfo/s800/HorizontalVisibility.png)
+![screenshot](https://lh3.googleusercontent.com/-e-5Z2Ze6fmU/U4Q5K7nrzqI/AAAAAAAACGQ/9vdUHpxI2VA/s800/HorizontalVisibility.png)
 
 ### サンプルコード
 <pre class="prettyprint"><code>scroller.setModel(textField.getHorizontalVisibility());
@@ -73,6 +73,53 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
 </code></pre>
 
 - - - -
+- 以下は、サイズ`0`の`ArrowButton`を使用する`ScrollBarUI`を設定する方法
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>class ArrowButtonlessScrollBarUI extends BasicScrollBarUI {
+  private static final Color DEFAULT_COLOR  = new Color(220, 100, 100, 100);
+  private static final Color DRAGGING_COLOR = new Color(200, 100, 100, 100);
+  private static final Color ROLLOVER_COLOR = new Color(255, 120, 100, 100);
+  @Override protected JButton createDecreaseButton(int orientation) {
+    return new ZeroSizeButton();
+  }
+  @Override protected JButton createIncreaseButton(int orientation) {
+    return new ZeroSizeButton();
+  }
+  @Override protected void paintTrack(Graphics g, JComponent c, Rectangle r) {
+    //Graphics2D g2 = (Graphics2D) g.create();
+    //g2.setPaint(new Color(100, 100, 100, 100));
+    //g2.fillRect(r.x, r.y, r.width - 1, r.height - 1);
+    //g2.dispose();
+  }
+  @Override protected void paintThumb(Graphics g, JComponent c, Rectangle r) {
+    JScrollBar sb = (JScrollBar) c;
+    if (!sb.isEnabled()) {
+      return;
+    }
+    BoundedRangeModel m = sb.getModel();
+    int iv = m.getMaximum() - m.getMinimum() - m.getExtent() - 1; // -1: bug?
+    if (iv &gt; 0) {
+      Graphics2D g2 = (Graphics2D) g.create();
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+      Color color;
+      if (isDragging) {
+        color = DRAGGING_COLOR;
+      } else if (isThumbRollover()) {
+        color = ROLLOVER_COLOR;
+      } else {
+        color = DEFAULT_COLOR;
+      }
+      g2.setPaint(color);
+      g2.fillRect(r.x, r.y, r.width - 1, r.height - 1);
+      g2.dispose();
+    }
+  }
+}
+</code></pre>
+
+- - - -
 - `JScrollPane scroll = new JScrollPane(new JTextField(TEXT), ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);`
     - 縦スクロールバーを非表示にした`JScrollPane`を使用する場合、`JTextField`内の文字列選択でスクロールしない
     - 文字列を適当な長さまで削除するとノブが非表示になる
@@ -80,7 +127,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JLabelとIconで作成した検索位置表示バーをマウスで操作する](http://terai.xrea.jp/Swing/BoundedRangeModel.html)のような外見の`ScrollBar`を使用した方が良いかもしれない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-14 (水) 16:05:32
+- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](http://terai.xrea.jp/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-14 (水) 16:05:32
+- サンプルの追加と、スクリーンショットの更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-27 (火) 16:12:38
 
 <!-- dummy comment line for breaking list -->
 

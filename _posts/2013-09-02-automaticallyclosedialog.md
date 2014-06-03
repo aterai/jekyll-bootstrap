@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02
     final JLabel l = (JLabel)e.getComponent();
     if((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED)!=0) {
       if(l.isShowing()) {
-        textArea.append("isShowing=ture\n");
+        textArea.append("isShowing=true\n");
         atomicDown.set(SECONDS);
         l.setText(String.format("Closing in %d seconds", SECONDS));
         timer = new Timer(1000, new ActionListener() {

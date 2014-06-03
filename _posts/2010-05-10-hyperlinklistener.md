@@ -46,7 +46,7 @@ editorPane.addHyperlinkListener(new HyperlinkListener() {
 以下のように、`JButton`などのコンポーネントを使用する方法もあります。
 - 編集可
 - 部分選択できない
-- ~~ベースラインスがうまく揃わない？~~ [JTextPaneに追加するコンポーネントのベースラインを揃える](http://terai.xrea.jp/Swing/InsertComponentBaseline.html) のように、`JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
+- ~~ベースラインがうまく揃わない？~~ [JTextPaneに追加するコンポーネントのベースラインを揃える](http://terai.xrea.jp/Swing/InsertComponentBaseline.html) のように、`JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
 
 <!-- dummy comment line for breaking list -->
 

@@ -37,7 +37,7 @@ area.setSelectionColor(new Color(0xC86464FF, true));
 - `HighlightPainter`
     - ハイライトの背景色は設定可能だが、文字色を変更することはできない
     - 背景色を半透明にすることは可能
-    - デフォルトのハイライトの設定(`DefaultHighlighter#setDrawsLayeredHighlights(ture)`)では、文字列の選択描画より手前にハイライトの矩形が表示される
+    - デフォルトのハイライトの設定(`DefaultHighlighter#setDrawsLayeredHighlights(true)`)では、文字列の選択描画より手前にハイライトの矩形が表示される
         - [DefaultHighlighterの描画方法を変更する](http://terai.xrea.jp/Swing/DrawsLayeredHighlights.html)
 - `StyleSheet`
     - [JEditorPaneのHTMLEditorKitにCSSを適用](http://terai.xrea.jp/Swing/StyleSheet.html)
