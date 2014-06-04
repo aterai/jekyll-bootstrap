@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TransferHandlerを使ったJListのドラック＆ドロップによる並べ替え
+title: TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え
 category: swing
 folder: DnDReorderList
 tags: [JList, TransferHandler, DragAndDrop]
@@ -10,8 +10,8 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-29
 
-## TransferHandlerを使ったJListのドラック＆ドロップによる並べ替え
-`JList`のアイテムを複数選択し、ドラック＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
+## TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え
+`JList`のアイテムを複数選択し、ドラッグ＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
 {% download %}
 
@@ -132,7 +132,7 @@ list.setDragEnabled(true);
 - [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
     - [ListTransferHandler.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)
 - [JListの項目をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDList.html)
-- [JListのアイテムをラバーバンドで複数選択、ドラック＆ドロップで並べ替え](http://terai.xrea.jp/Swing/DragSelectDropReordering.html)
+- [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://terai.xrea.jp/Swing/DragSelectDropReordering.html)
 
 <!-- dummy comment line for breaking list -->
 

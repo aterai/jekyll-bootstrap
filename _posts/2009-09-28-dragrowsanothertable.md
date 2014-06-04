@@ -94,7 +94,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-28
 </code></pre>
 
 ### 解説
-上記のサンプルでは、一つの`JTable`内での行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラック＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)を元に`TableRowTransferHandler`を作成し、`JTable`間での行移動もできるようになっています。
+上記のサンプルでは、一つの`JTable`内での行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)を元に`TableRowTransferHandler`を作成し、`JTable`間での行移動もできるようになっています。
 
 - - - -
 以下のように、`JTable#setFillsViewportHeight(true)`で、[JTable自体の高さを拡張](http://terai.xrea.jp/Swing/FillsViewportHeight.html)しておかないと、行が一つもない状態でドロップができなくなります。
@@ -115,7 +115,7 @@ table.setFillsViewportHeight(true);
 
 ### 参考リンク
 - [JTableの行をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTable.html)
-- [TransferHandlerを使ってJTableの行をドラック＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)
+- [TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)
 
 <!-- dummy comment line for breaking list -->
 

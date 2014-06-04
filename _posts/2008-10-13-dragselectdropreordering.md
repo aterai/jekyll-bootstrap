@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JListのアイテムをラバーバンドで複数選択、ドラック＆ドロップで並べ替え
+title: JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え
 category: swing
 folder: DragSelectDropReordering
 tags: [JList, TransferHandler, DragAndDrop, GlassPane, MouseListener, MouseMotionListener]
@@ -10,8 +10,8 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-13
 
-## JListのアイテムをラバーバンドで複数選択、ドラック＆ドロップで並べ替え
-`JList`のアイテムを、ラバーバンドで複数選択、ドラック＆ドロップで並べ替え可能にします。
+## JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え
+`JList`のアイテムを、ラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え可能にします。
 
 {% download %}
 
@@ -33,7 +33,7 @@ list.setDropMode(DropMode.INSERT);
 </code></pre>
 
 ### 解説
-上記のサンプルは、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)と[TransferHandlerを使ったJListのドラック＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)を使って、ラバーバンドによるアイテムの選択、ドラッグ＆ドロップでの並べ替えができるようになっています。
+上記のサンプルは、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)と[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)を使って、ラバーバンドによるアイテムの選択、ドラッグ＆ドロップでの並べ替えができるようになっています。
 
 - 注: `javax.swing.TransferHandler.TransferSupport`などを使用しているので、`JDK 1.6.0`以上が必要
 
@@ -41,7 +41,7 @@ list.setDropMode(DropMode.INSERT);
 
 
 ### 参考リンク
-- [TransferHandlerを使ったJListのドラック＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)
+- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)
 - [JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 

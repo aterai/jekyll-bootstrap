@@ -83,7 +83,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-14
 ### 参考リンク
 - [Swing - Can someone optimise the following code ?](https://forums.oracle.com/thread/1378164)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-- [JListのアイテムをラバーバンドで複数選択、ドラック＆ドロップで並べ替え](http://terai.xrea.jp/Swing/DragSelectDropReordering.html)
+- [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://terai.xrea.jp/Swing/DragSelectDropReordering.html)
 
 <!-- dummy comment line for breaking list -->
 
