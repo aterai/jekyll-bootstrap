@@ -91,7 +91,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-27
 <!-- dummy comment line for breaking list -->
 
 - - - -
-注: 縦のセパレーターには未対応
+注: 縦のセパレータには未対応
 
 ### 参考リンク
 - [TitledBorderのタイトル位置](http://terai.xrea.jp/Swing/TitledBorder.html)

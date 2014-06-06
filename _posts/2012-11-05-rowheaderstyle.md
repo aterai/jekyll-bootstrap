@@ -103,7 +103,7 @@ class ComponentIcon implements Icon {
     - 引数の行と列を両方`-1`にして、`TableCellRenderer#getTableCellRendererComponent(...)`で描画用コンポーネント(`JLabel`)をヘッダレンダラーから取得
 - `WindowsLookAndFeel`
     - ロールオーバーを描画する場合は、`TableCellRenderer#getTableCellRendererComponent(...)`で取得したコンポーネントを透明にする
-    - 右と下側に余白が発生するので、ヘッダーレンダラーからサイズを変更したアイコンを作成して、`JLabel#setIcon(Icon)`で表示
+    - 右と下側に余白が発生するので、ヘッダレンダラーからサイズを変更したアイコンを作成して、`JLabel#setIcon(Icon)`で表示
 
 <!-- dummy comment line for breaking list -->
 

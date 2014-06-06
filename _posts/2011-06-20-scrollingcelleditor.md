@@ -76,7 +76,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-20
 - `TableCellEditor#isCellEditable`, `EventQueue.invokeLater`
     - キー入力で編集開始した場合、その入力を`JTextArea`の文字列末尾に追加
 - `TableCellEditor#getTableCellEditorComponent`, `EventQueue.invokeLater`
-    - `JTextArea`にフォースを移動し、`JTextArea`のキャレットも文字列末尾に移動
+    - `JTextArea`にフォーカスを移動し、`JTextArea`のキャレットも文字列末尾に移動
 
 <!-- dummy comment line for breaking list -->
 

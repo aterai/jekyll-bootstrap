@@ -11,7 +11,7 @@ comments: true
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-05
 
 ## DynamicLayoutでレイアウトの動的評価
-ウインドウのリサイズなどに応じてレイアウトを再評価するように、`DynamicLayout`を設定します。
+ウィンドウのリサイズなどに応じてレイアウトを再評価するように、`DynamicLayout`を設定します。
 
 {% download %}
 
@@ -22,7 +22,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-05
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`DynamicLayout`にチェックするとウインドウのリサイズなどに応じて内部のレイアウトを再評価するように、`DefaultToolkit`の`setDynamicLayout`メソッドを使って`DynamicLayout`の設定をしています。
+上記のサンプルでは、`DynamicLayout`にチェックするとウィンドウのリサイズなどに応じて内部のレイアウトを再評価するように、`DefaultToolkit`の`setDynamicLayout`メソッドを使って`DynamicLayout`の設定をしています。
 
 - - - -
 `OS`などが、この機能をサポートしているかどうかは、以下のメソッドで調べることができます。

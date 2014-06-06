@@ -73,7 +73,7 @@ frame.setFocusTraversalPolicy(policy);
 <!-- dummy comment line for breaking list -->
 
 - `Layout`
-    - 以下のように`LayoutFocusTraversalPolicy`(`LayoutFocusTraversalPolicy`は`Swing`のデフォルト、`AWT`のデフォルトは`DefaultFocusTraversalPolicy`)の`accept`メソッドをオーバーライドして、中央の`JTextArea`(通常、`JTextArea`などから次のコンポーネントにフォーカス移動する場合は、<kbd>Ctrl+Tab</kbd>)が編集不可の場合は、これに<kbd>Tab</kbd>キーなどでフォースが移動しないように設定している
+    - 以下のように`LayoutFocusTraversalPolicy`(`LayoutFocusTraversalPolicy`は`Swing`のデフォルト、`AWT`のデフォルトは`DefaultFocusTraversalPolicy`)の`accept`メソッドをオーバーライドして、中央の`JTextArea`(通常、`JTextArea`などから次のコンポーネントにフォーカス移動する場合は、<kbd>Ctrl+Tab</kbd>)が編集不可の場合は、これに<kbd>Tab</kbd>キーなどでフォーカスが移動しないように設定している
 
 <!-- dummy comment line for breaking list -->
 

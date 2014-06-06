@@ -46,10 +46,10 @@ JButton button = new JButton(new AbstractAction("スタート") {
 ### 解説
 上記のサンプルでは、ボタンをクリックすると、パネル上にあるカーソルがアニメーションするようになっています。`3`枚の透過`png`ファイルをコマにして、`Timer`で順番にこれを切り替えています。
 
-各コマは、[ぶーん(通常の選択.ani、VIPポインター)](http://www11.atwiki.jp/vippointer/pages/54.html)から、[ANIめーかー](http://www.vector.co.jp/soft/win95/amuse/se195017.html)を使って生成しています。
+各コマは、[ぶーん(通常の選択.ani、VIPポインタ)](http://www11.atwiki.jp/vippointer/pages/54.html)から、[ANIめーかー](http://www.vector.co.jp/soft/win95/amuse/se195017.html)を使って生成しています。
 
 ### 参考リンク
-- [VIPポインター@Wiki - トップページ](http://www11.atwiki.jp/vippointer/)
+- [VIPポインタ@Wiki - トップページ](http://www11.atwiki.jp/vippointer/)
 - [ANIめーかー(Windows95/98/Me/アミューズメント)](http://www.vector.co.jp/soft/win95/amuse/se195017.html)
 - [Cursorオブジェクトの生成](http://terai.xrea.jp/Swing/CustomCursor.html)
 - [oreilly.co.jp -- Online Catalog: Java Swing Hacks](http://www.oreilly.co.jp/books/4873112788/download.html)

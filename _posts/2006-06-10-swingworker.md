@@ -138,7 +138,7 @@ class CancelAction extends AbstractAction{
 
 <!-- dummy comment line for breaking list -->
 1. `doInBackground() is EDT?`: `false`
-    - ワーカスレッド(バックグラウンド)で重い処理を行い、`EDT`をブロックして停止状態にならないようにする
+    - ワーカースレッド(バックグラウンド)で重い処理を行い、`EDT`をブロックして停止状態にならないようにする
 
 <!-- dummy comment line for breaking list -->
 1. `process() is EDT?`: `true`

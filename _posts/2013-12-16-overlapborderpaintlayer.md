@@ -88,7 +88,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-16
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JLayer#processMouseEvent(...)`, `JLayer#processMouseMotionEvent(...)`をオーバーライドして、カーソルの下にある`JRadioButton`を取得し、その周辺に`JLayer#paint(...)`メソッドを使って影と縁を描画しています。これらは一番手前の別レイヤに描画されるので、隣接したり奥に重なったりしているコンポーネントなどの上に描画することができます。
+上記のサンプルでは、`JLayer#processMouseEvent(...)`, `JLayer#processMouseMotionEvent(...)`をオーバーライドして、カーソルの下にある`JRadioButton`を取得し、その周辺に`JLayer#paint(...)`メソッドを使って影と縁を描画しています。これらは一番手前の別レイヤーに描画されるので、隣接したり奥に重なったりしているコンポーネントなどの上に描画することができます。
 
 ### 参考リンク
 - [FlowLayoutでボタンを重ねてパンくずリストを作成する](http://terai.xrea.jp/Swing/BreadcrumbList.html)

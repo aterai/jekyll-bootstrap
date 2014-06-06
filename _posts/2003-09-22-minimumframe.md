@@ -27,7 +27,7 @@ frame.setMinimumSize(new Dimension(320, 150));
 
 `JDK 1.6`以上の場合、`JFrame#setMinimumSize`メソッドを使用することで、最小サイズを指定することができます。
 
-`JDK 1.5`で、`JFrame#setMinimumSize`メソッドを使う場合は、`JFrame.setDefaultLookAndFeelDecorated(true)`、かつウインドウのリサイズに応じてレイアウトを再評価するようにしておく必要があるようです。
+`JDK 1.5`で、`JFrame#setMinimumSize`メソッドを使う場合は、`JFrame.setDefaultLookAndFeelDecorated(true)`、かつウィンドウのリサイズに応じてレイアウトを再評価するようにしておく必要があるようです。
 
 <pre class="prettyprint"><code>JFrame.setDefaultLookAndFeelDecorated(true);
 Toolkit.getDefaultToolkit().setDynamicLayout(true);

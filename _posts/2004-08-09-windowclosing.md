@@ -147,11 +147,11 @@ private void fireUnsavedFlagChangeEvent(boolean unsaved) {
     - `return;`と同じ
     - このサンプルでは、`WindowConstants.DO_NOTHING_ON_CLOSE`を設定しているが、システムメニューでウィンドウを閉じても、下の`exit`ボタンと同じ処理になるように、`windowClosing`の中で終了処理を行うメソッド(`maybeExit()`)を呼び出し、そこでドキュメントの保存状態によって`frame.dispose();`を呼んでいる
 - `WindowConstants.HIDE_ON_CLOSE`
-    - `windowClosing`が呼ばれた後でウインドウは非表示になる
+    - `windowClosing`が呼ばれた後でウィンドウは非表示になる
     - `setVisible(false);`と同じ
     - 初期値
 - `WindowConstants.DISPOSE_ON_CLOSE`
-    - `windowClosing`が呼ばれた後でウインドウは破棄される
+    - `windowClosing`が呼ばれた後でウィンドウは破棄される
     - `dispose();`と同じ
     - `dispose()`されるので、この後`windowClosed`が呼び出される
 - `WindowConstants.EXIT_ON_CLOSE`

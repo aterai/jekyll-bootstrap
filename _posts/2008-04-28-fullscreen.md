@@ -50,7 +50,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 <!-- dummy comment line for breaking list -->
 
 - - - -
-フルスクリーン表示とウィンドウ表示を切り替える前に、タイトルバーの非表示、表示も`setUndecorated`メソッドで切り替えていますが、このメソッドを使用する前に一旦`dispose`してウインドウのネイティブリソースを開放しておく必要があります。
+フルスクリーン表示とウィンドウ表示を切り替える前に、タイトルバーの非表示、表示も`setUndecorated`メソッドで切り替えていますが、このメソッドを使用する前に一旦`dispose`してウィンドウのネイティブリソースを開放しておく必要があります。
 
 - `setUndecorated(boolean undecorated)`は、ダイアログが表示されていないときにだけ呼び出すことができますが、この「表示されていない」は `isVisible()`ではなく、`isDisplayable()`が`false`の意味なので、`dialog.setVisible(false);`としただけでは、 `Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: The dialog is **displayable**.` が発生します。
     - [Window#dispose()](http://docs.oracle.com/javase/jp/6/api/java/awt/Window.html#dispose%28%29)

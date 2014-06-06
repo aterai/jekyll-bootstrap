@@ -39,7 +39,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 - `RIGHT_TO_LEFT`
     - `JSpinner#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`で、ボタンを左側に配置
 - `L(Prev), R(Next): 1`
-    - `BorderLayout#addLayoutComponent(...)`をオーバーライドして、`Editor`を`Center`、`Next`を`East`、`Prev`を`West`に配置するレイアウトマネージャを作成して使用
+    - `BorderLayout#addLayoutComponent(...)`をオーバーライドして、`Editor`を`Center`、`Next`を`East`、`Prev`を`West`に配置するレイアウトマネージャーを作成して使用
 
 <!-- dummy comment line for breaking list -->
 
@@ -56,7 +56,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 </code></pre>
 
 - `L(Prev), R(Next): 2`
-    - `L(Prev), R(Next: 1`と同じレイアウトマネージャを`JSpinner#setLayout(...)`メソッドをオーバーライドして設定
+    - `L(Prev), R(Next: 1`と同じレイアウトマネージャーを`JSpinner#setLayout(...)`メソッドをオーバーライドして設定
 
 <!-- dummy comment line for breaking list -->
 

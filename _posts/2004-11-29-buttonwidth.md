@@ -124,7 +124,7 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
         - `JDK 1.6.0`以上: `LookAndFeel`が同じなら、カラム数での幅指定で、どのコンポーネントでもほぼ同じサイズになる
 - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
 - [Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/how_do_you_layout_command)
-    - 専用のレイアウトマネージャを作成するサンプルがあります。
+    - 専用のレイアウトマネージャーを作成するサンプルがあります。
 
 <!-- dummy comment line for breaking list -->
 

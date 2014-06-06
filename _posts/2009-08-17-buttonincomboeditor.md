@@ -74,7 +74,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-17
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャを設定して、`JButton`や`JLabel`を配置しています。
+上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、`JButton`や`JLabel`を配置しています。
 
 - - - -
 `RolloverIcon`は、元のアイコンに以下のようなフィルタを掛けて作成しています。

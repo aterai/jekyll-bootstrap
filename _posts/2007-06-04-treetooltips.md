@@ -52,7 +52,7 @@ ToolTipManager.sharedInstance().registerComponent(tree);
 }
 </code></pre>
 
-どちらの方法を使う場合でも、`JTree`オフジェクトを`ToolTipManager`に登録する(もしくは、`JTree#setToolTipText`メソッドで`null`以外を指定しておく)必要があります。
+どちらの方法を使う場合でも、`JTree`オブジェクトを`ToolTipManager`に登録する(もしくは、`JTree#setToolTipText`メソッドで`null`以外を指定しておく)必要があります。
 
 <pre class="prettyprint"><code>ToolTipManager.sharedInstance().registerComponent(tree);
 //tree.setToolTipText("dummy");

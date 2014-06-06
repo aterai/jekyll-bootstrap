@@ -27,6 +27,6 @@ label.setHorizontalTextPosition(SwingConstants.LEFT);
 ### 解説
 上記のサンプルでは、`setVerticalAlignment`、`setVerticalTextPosition`、`setHorizontalAlignment`、`setHorizontalTextPosition`といったメソッドを使用して、`JLabel`のアイコンと文字列の位置関係を変更しています。
 
-`JButton`などにも、アイコンと文字列の位置を設定する同名のメソッドが存在します(引数は`SwingConstants`インターフェイスで定義された共通の定数が使用可)。
+`JButton`などにも、アイコンと文字列の位置を設定する同名のメソッドが存在します(引数は`SwingConstants`インタフェースで定義された共通の定数が使用可)。
 
 ### コメント

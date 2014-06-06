@@ -56,13 +56,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-23
 
 - `Lightweight`
     - `JDK1.7.0`で導入された、`TransferHandler#setDragImage(...)`メソッドを使用して描画
-    - ウインドウの外では非表示
+    - ウィンドウの外では非表示
 
 <!-- dummy comment line for breaking list -->
 
 - `Heavyweight`
     - 半透明の`JWindow`に`JLabel`を追加して表示
-    - ウインドウの外でも表示可能
+    - ウィンドウの外でも表示可能
     - 表示位置のオフセットが(0, 0)の場合、`DragOver`イベントが元の`JFrame`に伝わらない？
         - オフセットが(0, 0)でも、`JLabel#contains(...)`が常に`false`なら問題なし
 

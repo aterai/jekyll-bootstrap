@@ -45,12 +45,12 @@ slider2.setForeground(Color.BLUE);
 
 ### 解説
 - 上の`JSlider`
-    - `MetalSliderUI`を継承する`SliderUI`をセットしています。この`SliderUI`は、`paintThumb(Graphics)`メソッドをオーバライドしてつまみの形を変更、`paintTrack(Graphics)`メソッドをオーバライドしてトラックの形と色を変更します。
+    - `MetalSliderUI`を継承する`SliderUI`をセットしています。この`SliderUI`は、`paintThumb(Graphics)`メソッドをオーバーライドしてつまみの形を変更、`paintTrack(Graphics)`メソッドをオーバーライドしてトラックの形と色を変更します。
 
 <!-- dummy comment line for breaking list -->
 
 - 下の`JSlider`
-    - `JSlider#setForeground(Color)`で、目盛のキャプションの色を青にしています。また、`MetalSliderUI`を継承する`SliderUI`を作成して、`paintHorizontalLabel(Graphics, int, Component)`メソッドをオーバライドし目盛を緑色に変更しています。
+    - `JSlider#setForeground(Color)`で、目盛のキャプションの色を青にしています。また、`MetalSliderUI`を継承する`SliderUI`を作成して、`paintHorizontalLabel(Graphics, int, Component)`メソッドをオーバーライドし目盛を緑色に変更しています。
     - 別の方法: [JSliderの目盛にアイコンや文字列を追加する](http://terai.xrea.jp/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->

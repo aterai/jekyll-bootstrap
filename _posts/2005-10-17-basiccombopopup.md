@@ -52,7 +52,7 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 
 `JComboBox`のポップアップ部分の`UI`を表現する`BasicComboPopup`を利用することで、スクロールバーをもつポップアップメニューを実現しています。
 
-フォースを取得して、キー入力で選択を変更できるように、`BasicComboPopup#isFocusable`メソッドをオーバーライドしています。また、`BasicComboPopup#show`したあと、`BasicComboPopup#requestFocusInWindow`する必要があります。
+フォーカスを取得して、キー入力で選択を変更できるように、`BasicComboPopup#isFocusable`メソッドをオーバーライドしています。また、`BasicComboPopup#show`したあと、`BasicComboPopup#requestFocusInWindow`する必要があります。
 
 - - - -
 `JFrame`から、ポップアップメニューがはみ出す(親`Window`が`HeavyWeightWindow`になる)場合、カーソルキーなどで、アイテムが移動選択できないバグがあったので、`SwingUtilities.getWindowAncestor(popup).toFront();`を追加するなどの修正(`Ubuntu`ではうまく動作しない？)をしました。
