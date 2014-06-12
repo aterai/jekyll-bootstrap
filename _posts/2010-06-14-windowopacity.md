@@ -49,7 +49,7 @@ frame.setVisible(true);
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- そんな簡単にできるんですね！昔画面キャプチャしたり色々苦労した結果断念しました； -- [riki](http://terai.xrea.jp/riki.html) 2010-06-14 (月) 22:57:11
+- そんな簡単にできるんですね！昔画面キャプチャーしたり色々苦労した結果断念しました； -- [riki](http://terai.xrea.jp/riki.html) 2010-06-14 (月) 22:57:11
     - `AWTUtilities.setWindowOpaque`などが使えるようになったのは、`6u10`からですが、上記のサンプルみたいなことができるようになったのは、`6u14`から(多分[Bug ID: 6683775 Painting artifacts is seen when panel is made setOpaque(false) for a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6683775))みたいですから、最近(ちょうど一年ぐらい)のようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-15 (火) 13:26:11
 - 「`Windows 7` + `JDK 1.7.0`」で、このサンプルにある`JComboBox`のドロップダウンリストが正常に描画されない？ 「`Windows XP` + `JDK 1.7.0`」や、「`Windows 7` + `JDK 1.6.0_27`」は問題なし。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-18 (火) 19:01:43
 - `JDK 1.7.0`では、背景を切り替えたときに前の背景の残像が残る場合がある？ -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-18 (火) 19:06:07

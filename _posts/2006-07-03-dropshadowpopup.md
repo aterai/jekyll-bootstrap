@@ -134,7 +134,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- キャプチャーが遅いのは画面全体を撮っているからで、必要なサイズだけにすれば結構速いようです。サンプルを修正してみたところ、毎回キャプチャするようにしても特に気にならない速度で動いてます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-18 (火) 12:02:13
+- キャプチャーが遅いのは画面全体を撮っているからで、必要なサイズだけにすれば結構速いようです。サンプルを修正してみたところ、毎回キャプチャーするようにしても特に気にならない速度で動いてます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-18 (火) 12:02:13
 - ソース中で`isInRootPanel`がおかしい気がするのですが・・・
 
 <!-- dummy comment line for breaking list -->

@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23
 <pre class="prettyprint"><code>UIManager.put("PopupMenuUI","example.CustomPopupMenuUI");
 </code></pre>
 
-この`CustomPopupMenuUI`では、ポップアップメニューがフレームの中にあるか外にあるかで、影のつけ方を切り替えています。外にある場合は、`Robot`を使って画面をキャプチャしています。
+この`CustomPopupMenuUI`では、ポップアップメニューがフレームの中にあるか外にあるかで、影のつけ方を切り替えています。外にある場合は、`Robot`を使って画面をキャプチャーしています。
 
 ~~メニューがフレームの外にはみ出す場合に、メニューをすばやく切り替えたりすると、ゴミが残ることがあるようです。参考リンクの`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使っても同様のゴミが出る場合があります。~~ 再現しなくなった？ようです。
 

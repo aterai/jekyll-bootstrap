@@ -44,7 +44,7 @@ expandedState = tree.getExpandedDescendants(rootPath);
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>//XMLEncoderではデフオルトのJTreeの場合、展開状態などは保存されない
+<pre class="prettyprint"><code>//XMLEncoderではデフォルトのJTreeの場合、展開状態などは保存されない
 //??? 1.7.0_45では、整形式のXMLにならない場合がある ???
 XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(xmlFile)));
 xe.writeObject(tree);
