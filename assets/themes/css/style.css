@@ -44,6 +44,7 @@ h1, h2, h3, h4 {
 
 /* tag_box */
 .tag_box {
+  font-family:"Glyphicons Halflings","Helvetica Neue",Helvetica,Arial,sans-serif;
   list-style: none;
   margin: 0;
   overflow: hidden; }
