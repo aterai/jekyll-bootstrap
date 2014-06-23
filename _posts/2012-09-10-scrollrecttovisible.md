@@ -27,7 +27,7 @@ table.scrollRectToVisible(r);
 ### 解説
 - `JTable`
     - 追加した行の`0`列目のセル領域を取得して、`scrollRectToVisible`で可視化
-    - ソートやフィルターが使用されている場合を考慮して、追加した行のインデックスを`JTable#convertRowIndexToView(int)`で変換してから、セル領域を取得
+    - ソートやフィルタが使用されている場合を考慮して、追加した行のインデックスを`JTable#convertRowIndexToView(int)`で変換してから、セル領域を取得
 
 <!-- dummy comment line for breaking list -->
 

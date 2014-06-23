@@ -11,7 +11,7 @@ comments: true
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-20
 
 ## JTableのセル内に二行だけ表示
-`JTable`のセル内に文字列をニ行分だけ表示し、あふれる場合は`...`で省略します。
+`JTable`のセル内に文字列を二行分だけ表示し、あふれる場合は`...`で省略します。
 
 {% download %}
 

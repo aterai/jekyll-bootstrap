@@ -92,7 +92,7 @@ table.addMouseMotionListener(renderer);
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- `URLRenderer`のコンストラクタで`JTable`にマウスリスナを追加していたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-25 (木) 12:05:13
+- `URLRenderer`のコンストラクタで`JTable`にマウスリスナーを追加していたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-25 (木) 12:05:13
 - 「解説」中のコードではコンストラクタに`table`が渡されたままになっているようです。 -- [yosei](http://terai.xrea.jp/yosei.html) 2010-05-05 (Wed) 16:54:43
     - コメントありがとうございます。ご指摘のように修正し忘れていました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-05-06 (木) 17:04:59
 

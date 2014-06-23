@@ -71,7 +71,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-27
 
 - モデルの先頭と末尾にダミー行を追加
     - 値は、`Integer.MIN_VALUE`と、`Integer.MAX_VALUE`でソートしても先頭か末尾にくるようにしておく
-- ソートでどちらかが先頭行(表示上)になった場合、フィルターでこれを非表示にする
+- ソートでどちらかが先頭行(表示上)になった場合、フィルタでこれを非表示にする
 
 <!-- dummy comment line for breaking list -->
 

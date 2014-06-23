@@ -34,9 +34,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10
     JLayer jlayer = (JLayer)c;
     jlayer.getGlassPane().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
     jlayer.setLayerEventMask(
-      AWTEvent.MOUSE_EVENT_MASK |
-      AWTEvent.MOUSE_MOTION_EVENT_MASK |
-      AWTEvent.KEY_EVENT_MASK);
+        AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK
+      | AWTEvent.MOUSE_WHEEL_EVENT_MASK | AWTEvent.KEY_EVENT_MASK
+      | AWTEvent.FOCUS_EVENT_MASK | AWTEvent.COMPONENT_EVENT_MASK);
   }
   @Override public void uninstallUI(JComponent c) {
     JLayer jlayer = (JLayer)c;

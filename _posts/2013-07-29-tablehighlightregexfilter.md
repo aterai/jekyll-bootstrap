@@ -73,7 +73,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
     - `JTextField`を継承する`TableCellRenderer`を作成し、`JTextField#getHighlighter()#addHighlight(...)`で検索結果の文字列をハイライト表示
 - 行のフィルタリング
     - [RowFilterでJTableの行をフィルタリング](http://terai.xrea.jp/Swing/RowFilter.html)
-    - `RowFilter.regexFilter(pattern)`で正規表現を使用するフィルターを作成し、その検索にマッチする行以外は非表示
+    - `RowFilter.regexFilter(pattern)`で正規表現を使用するフィルタを作成し、その検索にマッチする行以外は非表示
 
 <!-- dummy comment line for breaking list -->
 

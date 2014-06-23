@@ -43,7 +43,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JRadioButton`が選択やロールオーバーした時の文字色を、マウスリスナではなく、`fireStateChanged`メソッドをオーバーライドして変更しています。
+上記のサンプルでは、`JRadioButton`が選択やロールオーバーした時の文字色を、マウスリスナーではなく、`fireStateChanged`メソッドをオーバーライドして変更しています。
 
 アイコンは、`setPressedIcon`、`setSelectedIcon`、`setRolloverIcon`メソッドなどが用意されているので、これを使用しています。
 
