@@ -62,7 +62,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
   @Override public Object getCellEditorValue() {
     return Integer.valueOf(getValue());
   }
-    //Copid from AbstractCellEditor
+    //Copied from AbstractCellEditor
 //......
 </code></pre>
 

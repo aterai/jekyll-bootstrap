@@ -19,8 +19,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-27
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIDefaults d = new UIDefaults();
-d.put("TextArea.borderPainter", new Painter() {
-  @Override public void paint(Graphics2D g, Object o, int w, int h) {}
+d.put("TextArea.borderPainter", new Painter&lt;JComponent&gt;() {
+  @Override public void paint(Graphics2D g, JComponent c, int w, int h) {}
 });
 MultiLineTableCellRenderer r = new MultiLineTableCellRenderer();
 r.putClientProperty("Nimbus.Overrides", d);

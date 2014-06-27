@@ -108,7 +108,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
     return i;
   }
 
-  //Copid from AbstractCellEditor
+  //Copied from AbstractCellEditor
   protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
   //......

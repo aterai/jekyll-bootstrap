@@ -27,7 +27,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-19
   if (!target.equals(source)) {
     JDesktopPane dp = null;
     Container cn = SwingUtilities.getAncestorOfClass(JDesktopPane.class, target);
-    if (cn != null) {
+    if (cn instanceof  JDesktopPane) {
       dp = (JDesktopPane) cn;
     }
 

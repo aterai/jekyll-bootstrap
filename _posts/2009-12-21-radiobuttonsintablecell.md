@@ -86,7 +86,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
     return bg.getSelection().getActionCommand();
   }
 
-  //Copid from AbstractCellEditor
+  //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
 //......

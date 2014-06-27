@@ -52,7 +52,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
 </code></pre>
 
 ### 解説
-上記のサンプルでは、`JMenuBar`(デフォルトのレイアウトマネージャーは`BoxLayout`)に、`FlowLayout`を継承して折り返しを行うレイアウトマネージャを設定して、`JMenu`がフレームの幅に収まらない場合は折り返して表示するようにしています。
+上記のサンプルでは、`JMenuBar`(デフォルトの`LayoutManager`は`BoxLayout`)に、`FlowLayout`を継承して折り返しを行う`LayoutManager`を設定して、`JMenu`がフレームの幅に収まらない場合は折り返して表示するようにしています。
 
 - - - -
 上記のサンプルでは、`BorderLayout`を設定した`JPanel#add(menubar, BorderLayout.NORTH)`として`JMenuBar`を追加していますが、`JFrame#setJMenuBar`メソッドを使用した場合、以下のような不具合？があります。

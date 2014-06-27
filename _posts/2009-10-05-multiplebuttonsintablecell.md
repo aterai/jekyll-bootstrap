@@ -95,7 +95,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05
   @Override public Object getCellEditorValue() {
     return "";
   }
-  //Copid from AbstractCellEditor
+  //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
   @Override public boolean isCellEditable(java.util.EventObject e) {
@@ -243,7 +243,7 @@ class SpinnerEditor extends SpinnerPanel implements TableCellEditor {
     return spinner.getValue();
   }
 
-  //Copid from AbstractCellEditor
+  //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
 
@@ -380,7 +380,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     return i;
   }
 
-  //Copid from AbstractCellEditor
+  //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
 

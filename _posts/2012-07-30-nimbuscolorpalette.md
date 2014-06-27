@@ -52,8 +52,8 @@ def.put("nimbusOrange", new Color(255,220,35,200));
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>UIDefaults d = new UIDefaults();
-d.put("ProgressBar[Enabled].foregroundPainter", new Painter() { //JDK 1.6.0 new com.sun.java.swing.Painter() {
-  @Override public void paint(Graphics2D g, Object o, int w, int h) {
+d.put("ProgressBar[Enabled].foregroundPainter", new Painter&lt;JProgressBar&gt;() { //JDK 1.6.0 new com.sun.java.swing.Painter() {
+  @Override public void paint(Graphics2D g, JProgressBar c, int w, int h) {
     g.setColor(new Color(100,250,120,50));
     g.fillRect(0,0,w-1,h-1);
     g.setColor(new Color(100,250,120,150));

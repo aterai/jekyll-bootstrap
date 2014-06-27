@@ -35,7 +35,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
     this.scroller = new Timer(DELAY, new ActionListener() {
       @Override public void actionPerformed(ActionEvent e) {
         Container c = SwingUtilities.getAncestorOfClass(JViewport.class, label);
-        if (c != null) {
+        if (c instanceof JViewport.class) {
           JViewport vport = (JViewport) c;
           Point vp = vport.getViewPosition(); //= SwingUtilities.convertPoint(vport, 0, 0, label);
           vp.translate(move.x, move.y);

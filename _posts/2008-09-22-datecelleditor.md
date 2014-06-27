@@ -66,7 +66,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-22
     return getValue();
   }
 
-  //Copid from AbstractCellEditor
+  //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
 

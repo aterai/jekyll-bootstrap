@@ -37,19 +37,29 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-02
     Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                         RenderingHints.VALUE_ANTIALIAS_ON);
-    g2.setPaint(progressBar.getForeground());
     double degree = 360 * progressBar.getPercentComplete();
     double sz = Math.min(barRectWidth, barRectHeight);
     double cx = b.left + barRectWidth  * .5;
     double cy = b.top  + barRectHeight * .5;
     double or = sz * .5;
     double ir = or * .5; //or - 20;
-    Shape inner = new Ellipse2D.Double(cx - ir, cy - ir, ir * 2, ir * 2);
-    Shape outer = new Arc2D.Double(
+    Shape inner  = new Ellipse2D.Double(cx - ir, cy - ir, ir * 2, ir * 2);
+    Shape outer  = new Ellipse2D.Double(cx - or, cy - or, sz, sz);
+    Shape sector = new Arc2D.Double(
         cx - or, cy - or, sz, sz, 90 - degree, degree, Arc2D.PIE);
-    Area area = new Area(outer);
-    area.subtract(new Area(inner));
-    g2.fill(area);
+
+    Area foreground = new Area(sector);
+    Area background = new Area(outer);
+    Area hole = new Area(inner);
+
+    foreground.subtract(hole);
+    background.subtract(hole);
+
+    g2.setPaint(new Color(0xDDDDDD));
+    g2.fill(background);
+
+    g2.setPaint(progressBar.getForeground());
+    g2.fill(foreground);
     g2.dispose();
 
     // Deal with possible text painting
