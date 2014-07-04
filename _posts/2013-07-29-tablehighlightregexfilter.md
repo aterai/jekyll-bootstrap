@@ -57,7 +57,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
         int end   = matcher.end();
         try{
           highlighter.addHighlight(start, end, highlightPainter);
-        }catch(BadLocationException e) {
+        }catch(BadLocationException | PatternSyntaxException e) {
           e.printStackTrace();
         }
       }

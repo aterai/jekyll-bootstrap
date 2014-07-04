@@ -69,10 +69,102 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-18
 - - - -
 `JDK 1.7.0`の場合、`JFrame`の背景色を透明(`frame.setBackground(new Color(0,0,0,0));`)にし、`ContentPane`の左右上の角をクリアして透明にしています。
 
+- - - -
+- [JRootPaneにリサイズのための装飾を設定する](http://terai.xrea.jp/Swing/WindowDecorationStyle.html)のように、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`を使用してリサイズする方法もあります。
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class WindowDecorationStyleTest {
+  public JComponent makeTitleBar() {
+    JLabel label = new JLabel("Title");
+    label.setOpaque(true);
+    label.setForeground(Color.WHITE);
+    label.setBackground(Color.BLACK);
+    DragWindowListener dwl = new DragWindowListener();
+    label.addMouseListener(dwl);
+    label.addMouseMotionListener(dwl);
+
+    JPanel title = new JPanel(new BorderLayout());
+    title.setBorder(BorderFactory.createMatteBorder(0, 4, 4, 4, Color.BLACK));
+    title.add(label);
+    title.add(new JButton(new AbstractAction("x") {
+      @Override public void actionPerformed(ActionEvent e) {
+        Window w = SwingUtilities.windowForComponent((Component) e.getSource());
+        w.dispatchEvent(new WindowEvent(w, WindowEvent.WINDOW_CLOSING));
+      }
+    }), BorderLayout.EAST);
+    return title;
+  }
+  public JComponent makeUI() {
+    return new JScrollPane(new JTree());
+  }
+  public static void main(String[] args) {
+    EventQueue.invokeLater(new Runnable() {
+      @Override public void run() {
+        createAndShowGUI();
+      }
+    });
+  }
+  public static void createAndShowGUI() {
+    JFrame frame = new JFrame();
+    frame.setUndecorated(true);
+
+    WindowDecorationStyleTest demo = new WindowDecorationStyleTest();
+    JRootPane root = frame.getRootPane();
+    root.setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);
+    root.setBorder(BorderFactory.createMatteBorder(4, 8, 8, 8, Color.BLACK));
+    JLayeredPane layeredPane = root.getLayeredPane();
+    Component c = layeredPane.getComponent(1);
+    if (c instanceof JComponent) {
+      JComponent orgTitlePane = (JComponent) c;
+      orgTitlePane.removeAll();
+      orgTitlePane.setLayout(new BorderLayout());
+      orgTitlePane.add(demo.makeTitleBar());
+    }
+    frame.setMinimumSize(new Dimension(300, 120));
+    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    frame.getContentPane().add(demo.makeUI());
+    frame.setSize(320, 240);
+    frame.setLocationRelativeTo(null);
+    frame.setVisible(true);
+  }
+}
+
+class DragWindowListener extends MouseAdapter {
+  private final transient Point startPt = new Point();
+  private Window window;
+  @Override public void mousePressed(MouseEvent me) {
+    if (window == null) {
+      Object o = me.getSource();
+      if (o instanceof Window) {
+        window = (Window) o;
+      } else if (o instanceof JComponent) {
+        window = SwingUtilities.windowForComponent(me.getComponent());
+      }
+    }
+    startPt.setLocation(me.getPoint());
+  }
+  @Override public void mouseDragged(MouseEvent me) {
+    if (window != null) {
+      Point pt = new Point();
+      pt = window.getLocation(pt);
+      int x = pt.x - startPt.x + me.getX();
+      int y = pt.y - startPt.y + me.getY();
+      window.setLocation(x, y);
+    }
+  }
+}
+</code></pre>
+
 ### 参考リンク
 - [Swing - Undecorated and resizable dialog](https://forums.oracle.com/thread/1365156)
 - [JWindowをマウスで移動](http://terai.xrea.jp/Swing/DragWindow.html)
 - [JInternalFrameをJFrameとして表示する](http://terai.xrea.jp/Swing/InternalFrameTitleBar.html)
+- [JRootPaneにリサイズのための装飾を設定する](http://terai.xrea.jp/Swing/WindowDecorationStyle.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -72,15 +72,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
       JTree tree = (JTree)e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
       Rectangle r = tree.getPathBounds(path);
-      if(r==null) return false;
+      if (r == null) {
+        return false;
+      }
       Dimension d = getPreferredSize();
       r.setSize(new Dimension(d.width, r.height));
-      if(r.contains(me.getX(), me.getY())) {
-        if(str==null &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
-          System.out.println("XXX: Java 7, only on first run\n"+getBounds());
-          setBounds(new Rectangle(0,0,d.width,r.height));
-        }
-        //System.out.println(getBounds());
+      if (r.contains(me.getPoint())) {
         return true;
       }
     }
@@ -200,12 +197,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
 //...
 </code></pre>
 
-- `JDK 1.7.0`で、ノードのチェックボックスをクリックしても、初回だけ反応しない
+- ~~`JDK 1.7.0`で、ノードのチェックボックスをクリックしても、初回だけ反応しない~~ `1.7.0_60`で修正されている
     - `JDK 1.6.0_30`などは問題なし
     - `TreeCellEditor#isCellEditable()`をオーバーライドして、初回のみセルエディタのサイズを以下のように設定
     - `JDK 1.8.0`では、修正されている
     - [Bug ID: JDK-8023474 First mousepress doesn't start editing in JTree](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8023474)
-    - `1.7.0_60`でも修正される予定らしい
 
 <!-- dummy comment line for breaking list -->
 

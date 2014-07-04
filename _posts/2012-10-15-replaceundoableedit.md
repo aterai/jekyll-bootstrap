@@ -3,7 +3,7 @@ layout: post
 title: UndoManagerを使用した文字列選択ペーストの動作を変更する
 category: swing
 folder: ReplaceUndoableEdit
-tags: [JTextField, UndoManager, PlainDocument, JTextComponent]
+tags: [JTextField, UndoManager, PlainDocument, JTextComponent, CompoundEdit, DocumentFilter, UndoableEdit]
 author: aterai
 comments: true
 ---
@@ -18,79 +18,50 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
 ![screenshot](https://lh5.googleusercontent.com/-GEc9R-QZvos/UKt2czK61tI/AAAAAAAABXk/vqH8TKxkqCM/s800/ReplaceUndoableEdit.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>Document doc = new PlainDocument() {
-  @Override public void replace(
-      int offset, int length, String text, AttributeSet attrs)
-        throws BadLocationException {
-    if(length!=0) { //replace
-      undoManager.undoableEditHappened(
-        new UndoableEditEvent(this, new ReplaceUndoableEdit(offset, length, text)));
-      replaceIgnoringUndo(offset, length, text, attrs);
-    }else{ //insert
+<pre class="prettyprint"><code>class CustomUndoPlainDocument extends PlainDocument {
+  private CompoundEdit compoundEdit;
+  @Override protected void fireUndoableEditUpdate(UndoableEditEvent e) {
+    if (compoundEdit == null) {
+      super.fireUndoableEditUpdate(e);
+    } else {
+      compoundEdit.addEdit(e.getEdit());
+    }
+  }
+  @Override public void replace(int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+    if (length == 0) { //insert
+      System.out.println("insert");
       super.replace(offset, length, text, attrs);
+    } else { //replace
+      System.out.println("replace");
+      compoundEdit = new CompoundEdit();
+      super.fireUndoableEditUpdate(new UndoableEditEvent(this, compoundEdit));
+      super.replace(offset, length, text, attrs);
+      compoundEdit.end();
+      compoundEdit = null;
     }
   }
-  private void replaceIgnoringUndo(
-      int offset, int length, String text, AttributeSet attrs)
-        throws BadLocationException {
-    removeUndoableEditListener(undoManager);
-    super.replace(offset, length, text, attrs);
-    addUndoableEditListener(undoManager);
-  }
-  class ReplaceUndoableEdit extends AbstractUndoableEdit {
-    private final String oldValue;
-    private final String newValue;
-    private int offset;
-    public ReplaceUndoableEdit(int offset, int length, String newValue) {
-      String txt;
-      try{
-        txt = getText(offset, length);
-      }catch(BadLocationException e) {
-        txt = null;
-      }
-      this.oldValue = txt;
-      this.newValue = newValue;
-      this.offset = offset;
-    }
-    @Override public void undo() throws CannotUndoException {
-      try{
-        replaceIgnoringUndo(offset, newValue.length(), oldValue, null);
-      }catch(BadLocationException ex) {
-        throw new CannotUndoException();
-      }
-    }
-    @Override public void redo() throws CannotRedoException {
-      try{
-        replaceIgnoringUndo(offset, oldValue.length(), newValue, null);
-      }catch(BadLocationException ex) {
-        throw new CannotUndoException();
-      }
-    }
-    @Override public boolean canUndo() {
-      return true;
-    }
-    @Override public boolean canRedo() {
-      return true;
-    }
-  }
-};
+}
 </code></pre>
 
 ### 解説
-- 上: デフォルト
+- 上: `Default`
     - `JTextComponent#setText(String)`や、文字列を選択してペーストした場合、`Document#replace(...)`で実行される`Document#remove(...)`と`Document#insertString(...)`が別々に`UndoManager`に登録される仕様?なので、二回`Undo`しないとペースト前の状態に戻らない
-- 下
-    - `Document#replace(...)`をオーバーライドし、直接`UndoManager#undoableEditHappened(...)`を使って取り消し可能な編集を登録
-    - 実際の置換は、`removeUndoableEditListener(...)`で`UndoManager`を一時的に削除した後に行う(直後に`addUndoableEditListener()`で再登録)
-    - 登録する`UndoableEdit`での`Undo`, `Redo`時の置換も`UndoManager`を一時的に削除して行う
+- 中: `Document#replace()+AbstractDocument#fireUndoableEditUpdate()`
+    - `Document#replace(...)`をオーバーライドし、~~直接`UndoManager#undoableEditHappened(...)`を使って取り消し可能な編集を登録~~ `setText(...)`での文字列の削除と追加を`CompoundEdit`にまとめる
+    - ~~実際の置換は、`removeUndoableEditListener(...)`で`UndoManager`を一時的に削除した後に行う(直後に`addUndoableEditListener()`で再登録)~~
+    - ~~登録する`UndoableEdit`での`Undo`, `Redo`時の置換も`UndoManager`を一時的に削除して行う~~
     - メモ: このサンプルでは選択状態を復元していない
+- 下: `DocumentFilter#replace()+UndoableEditListener#undoableEditHappened()`
+    - `DocumentFilter#replace(...)`をオーバーライドし、文字列の置換で発生する削除と追加の`UndoableEdit`を別途用意した`CompoundEdit`にまとめてから`UndoManager#addEdit(...)`で追加
 
 <!-- dummy comment line for breaking list -->
 
 ### 参考リンク
+- [Undo two or more actions at once | Oracle Community](https://community.oracle.com/thread/1509622)
 - [Undo manager : Undo Redo « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/Undomanager.htm)
 - [Compound Undo Manager ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/10/27/compound-undo-manager/)
 - [Merging UndoableEdits in one to be undone all together in JEditorPane.](http://java-sl.com/tip_merge_undo_edits.html)
+- [java - JTextArea setText() & UndoManager - Stack Overflow](http://stackoverflow.com/questions/24433089/jtextarea-settext-undomanager)
 - [java - Undo in JTextField and setText - Stack Overflow](http://stackoverflow.com/questions/12844520/undo-in-jtextfield-and-settext)
 - [Java Swing「UndoManager」メモ(Hishidama's Swing-UndoManager Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/UndoManager.html)
 - [Java Swingで複数のJTextFieldに対してUndo、Redoを行う（その2）－解決編 kyoはパソコンMaster or Slave?/ウェブリブログ](http://kyopc.at.webry.info/201007/article_1.html)
