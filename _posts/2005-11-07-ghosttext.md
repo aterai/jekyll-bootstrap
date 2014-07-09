@@ -49,6 +49,35 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 ### 解説
 上記のサンプルでは、下の`JTextField`からフォーカスが失われた時、まだ何も入力されていない場合は、その`JTextField`の説明などを薄く表示することができるようにしています。
 
+- - - -
+`JDK 1.7.0`以上の場合は、`JLayer`を使用して同様にヒント文字列を描画することができます。
+
+<pre class="prettyprint"><code>class PlaceholderLayerUI extends LayerUI&lt;JTextComponent&gt; {
+  private static final Color INACTIVE = UIManager.getColor("TextField.inactiveForeground");
+  private final JLabel hint;
+  public PlaceholderLayerUI(String hintMessage) {
+    super();
+    this.hint = new JLabel(hintMessage);
+    hint.setForeground(INACTIVE);
+  }
+  @Override public void paint(Graphics g, JComponent c) {
+    super.paint(g, c);
+    if (c instanceof JLayer) {
+      JLayer jlayer = (JLayer) c;
+      JTextComponent tc = (JTextComponent) jlayer.getView();
+      if (tc.getText().length() == 0 &amp;&amp; !tc.hasFocus()) {
+        Graphics2D g2 = (Graphics2D) g.create();
+        g2.setPaint(INACTIVE);
+        Insets i = tc.getInsets();
+        Dimension d = hint.getPreferredSize();
+        SwingUtilities.paintComponent(g2, hint, tc, i.left, i.top, d.width, d.height);
+        g2.dispose();
+      }
+      tc.repaint();
+    }
+  }
+}
+</code></pre>
 ### 参考リンク
 - [JTextFieldに透かし画像を表示する](http://terai.xrea.jp/Swing/WatermarkInTextField.html)
 - [JPasswordFieldにヒント文字列を描画する](http://terai.xrea.jp/Swing/InputHintPasswordField.html)

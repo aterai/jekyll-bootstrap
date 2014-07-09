@@ -51,6 +51,91 @@ for(c.gridx=0; c.gridx&lt;=2*SIZE; c.gridx++)
 
 列の基準となる行は、どこでも(先頭でも最後でも)構わないようです。
 
+- - - -
+- 同様に、ダミーの幅を持つ行を作成して、キーボード風に配列
+    - [java - Laying out a keyboard in Swing - Stack Overflow](http://stackoverflow.com/questions/24622279/laying-out-a-keyboard-in-swing)
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class KeyboardTest {
+  private static final String[][] keys = {
+    {"`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Backspace"},
+    {"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", ""},
+    {"Caps", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", ""},
+    {"Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "", "\u2191"},
+    {" ", " ", " ", "", "                         ", " ", "\u2190", "\u2193", "\u2192"}
+  };
+  public JComponent makeUI() {
+    JPanel keyboard = new JPanel(new GridBagLayout());
+    keyboard.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+    GridBagConstraints c = new GridBagConstraints();
+    c.weightx = 1d;
+    c.weighty = 1d;
+    c.fill = GridBagConstraints.BOTH;
+    c.gridheight = 1;
+    c.gridx = 0;
+
+    c.gridy = 50;
+    for (int i = 0; i &lt; keys[0].length * 2; i++) {
+      c.gridx = i;
+      keyboard.add(Box.createHorizontalStrut(24));
+    }
+
+    for (int row = 0; row &lt; keys.length; row++) {
+      c.gridx = 0;
+      c.gridy = row;
+      for (int col = 0; col &lt; keys[row].length; col++) {
+        String key = keys[row][col];
+        int l = key.length();
+        c.gridwidth = l &gt; 10 ? 14 :
+                      l &gt; 4  ?  4 :
+                      l &gt; 1  ?  3 :
+                      l == 1 ?  2 : 1;
+        if (l &gt; 2) {
+          keyboard.add(new JButton(key), c);
+        } else if (key.trim().length() == 0) {
+          keyboard.add(Box.createHorizontalStrut(24), c);
+        } else {
+          keyboard.add(new KeyButton(key), c);
+        }
+        c.gridx += c.gridwidth;
+      }
+    }
+    return keyboard;
+  }
+  public static void main(String[] args) {
+    EventQueue.invokeLater(new Runnable() {
+      @Override public void run() {
+        createAndShowGUI();
+      }
+    });
+  }
+  public static void createAndShowGUI() {
+    JFrame f = new JFrame("Keyboard");
+    f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    f.getContentPane().add(new KeyboardTest().makeUI());
+    f.setResizable(false);
+    f.pack();
+    f.setLocationRelativeTo(null);
+    f.setVisible(true);
+  }
+}
+
+class KeyButton extends JButton {
+  public KeyButton(String str) {
+    super(str);
+  }
+  @Override public Dimension getPreferredSize() {
+    return new Dimension(48, 48);
+  }
+}
+</code></pre>
+
 ### 参考リンク
 - [Swing - GridBagLayout to create a board](https://forums.oracle.com/thread/1357310)
 
