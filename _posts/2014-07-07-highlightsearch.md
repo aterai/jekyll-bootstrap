@@ -18,47 +18,61 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-07
 ![screenshot](https://lh5.googleusercontent.com/-jdjIr-6A1l8/U7ljpxPgxzI/AAAAAAAACJI/x2Okpzkcce8/s800/HighlightSearch.png)
 
 ### サンプルコード
-<pre class="prettyprint"><code>private void changeHighlight() {
-  layerUI.hint.setOpaque(false);
+<pre class="prettyprint"><code>private Pattern getPattern() {
+  String text = field.getText();
+  if (text == null || text.isEmpty()) {
+    return null;
+  }
+  try {
+    String cw = checkWord.isSelected() ? "\\b" : "";
+    String pattern = String.format("%s%s%s", cw, text, cw);
+    int flags = checkCase.isSelected()
+      ? 0
+      : Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE;
+    return Pattern.compile(pattern, flags);
+  } catch (PatternSyntaxException ex) {
+    field.setBackground(WARNING_COLOR);
+    return null;
+  }
+}
+
+private void changeHighlight() {
   field.setBackground(Color.WHITE);
   Highlighter highlighter = textArea.getHighlighter();
   highlighter.removeAllHighlights();
-  if (field.getText().isEmpty()) {
-    return;
-  }
-  String cw = checkWord.isSelected() ? "\\b" : "";
-  String pattern = String.format("%s%s%s", cw, field.getText(), cw);
-  int flags = checkCase.isSelected() ?
-    Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE : 0;
   Document doc = textArea.getDocument();
   try {
-    String text = doc.getText(0, doc.getLength());
-    Matcher matcher = Pattern.compile(pattern, flags).matcher(text);
-    int pos = 0;
-    while (matcher.find(pos)) {
-      int start = matcher.start();
-      int end   = matcher.end();
-      highlighter.addHighlight(start, end, highlightPainter);
-      pos = end;
+    Pattern pattern = getPattern();
+    if (pattern != null) {
+      Matcher matcher = pattern.matcher(doc.getText(0, doc.getLength()));
+      int pos = 0;
+      while (matcher.find(pos)) {
+        int start = matcher.start();
+        int end   = matcher.end();
+        highlighter.addHighlight(start, end, highlightPainter);
+        pos = end;
+      }
     }
+    JLabel label = layerUI.hint;
     Highlighter.Highlight[] array = highlighter.getHighlights();
     int hits = array.length;
-
-    if (pos == 0) {
+    if (hits == 0) {
       current = -1;
-      layerUI.hint.setOpaque(true);
+      label.setOpaque(true);
     } else {
       current = (current + hits) % hits;
+      label.setOpaque(false);
       Highlighter.Highlight hh = highlighter.getHighlights()[current];
       highlighter.removeHighlight(hh);
       highlighter.addHighlight(
           hh.getStartOffset(), hh.getEndOffset(), currentPainter);
-      scrollToCenter(hh.getStartOffset());
+      scrollToCenter(textArea, hh.getStartOffset());
     }
-    layerUI.hint.setText(String.format("%02d / %02d%n", current + 1, hits));
-  } catch (BadLocationException | PatternSyntaxException e) {
-    field.setBackground(WARNING_COLOR);
+    label.setText(String.format("%02d / %02d%n", current + 1, hits));
+  } catch (BadLocationException e) {
+    e.printStackTrace();
   }
+  field.repaint();
 }
 </code></pre>
 
@@ -70,10 +84,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-07
 - `⋁`
     - 次を検索
 - `"Match case"`
-    - `Pattern.compile(...)`の引数に、`Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE`を指定して、大文字小文字の区別をしない
+    - チェック有りで、`Pattern.compile(...)`の引数に、`0`を指定して大文字小文字の区別を行う
+    - チェック無しで、`Pattern.compile(...)`の引数に、`Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE`を指定して、大文字小文字の区別をしない
 - `"Match whole word only"`
-    - `\b`(単語境界)を検索文字列の前後に追加して、単語検索を行う
+    - チェック有りで、`\b`(単語境界)を検索文字列の前後に追加して、単語検索を行う
 
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- `Match case`の動作が逆になっていたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-07-23 (水) 17:57:58
+
+<!-- dummy comment line for breaking list -->
+

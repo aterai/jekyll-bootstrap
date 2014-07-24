@@ -27,7 +27,7 @@ author :
 #
 production_url : http://terai.xrea.jp
 
-markdown: kramdown
+markdown: redcarpet
 redcarpet:
     renderer: Redcarpet::Render::XHTML
     extensions: ["xhtml", "fenced_code_blocks", "strikethrough", "no_intra_emphasis", "lax_spacing"]
