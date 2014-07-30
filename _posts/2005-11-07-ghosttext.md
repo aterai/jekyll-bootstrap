@@ -73,11 +73,26 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
         SwingUtilities.paintComponent(g2, hint, tc, i.left, i.top, d.width, d.height);
         g2.dispose();
       }
-      tc.repaint();
     }
+  }
+  @Override public void installUI(JComponent c) {
+    super.installUI(c);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(AWTEvent.FOCUS_EVENT_MASK);
+    }
+  }
+  @Override public void uninstallUI(JComponent c) {
+    super.uninstallUI(c);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(0);
+    }
+  }
+  @Override public void processFocusEvent(FocusEvent e, JLayer&lt;? extends JTextComponent&gt; l) {
+    l.getView().repaint();
   }
 }
 </code></pre>
+
 ### 参考リンク
 - [JTextFieldに透かし画像を表示する](http://terai.xrea.jp/Swing/WatermarkInTextField.html)
 - [JPasswordFieldにヒント文字列を描画する](http://terai.xrea.jp/Swing/InputHintPasswordField.html)
@@ -87,6 +102,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 
 ### コメント
 - タイトルを変更?: `Input Hint`、`Placeholder`、`Watermark` ... -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-17 (火) 15:48:18
+- `LayerUI#paint(...)`中で、子コンポーネントの`repaint()`を呼び出して再描画が無限ループしていたバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-07-26 (土) 04:51:11
 
 <!-- dummy comment line for breaking list -->
 
