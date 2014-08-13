@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-21
 ## Caretの点滅を停止する
 `JTextComponent`の`Caret`が点滅する速さを変更します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TWH8aAgoyiI/AAAAAAAAA1o/J-ljyl_h_i8/s800/BlinkRate.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TWH8aAgoyiI/AAAAAAAAA1o/J-ljyl_h_i8/s800/BlinkRate.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>((DefaultCaret)textField.getCaret()).setBlinkRate(0);

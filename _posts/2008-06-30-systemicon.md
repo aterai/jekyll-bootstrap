@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-30
 ## FileのSystemIconを取得する
 ファイル、ディレクトリなどの`SystemIcon`を取得します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUG6tI4SI/AAAAAAAAAlg/bci1geT80EM/s800/SystemIcon.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUG6tI4SI/AAAAAAAAAlg/bci1geT80EM/s800/SystemIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>smallLabel.setIcon(FileSystemView.getFileSystemView().getSystemIcon(file));

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-07
 ## MemoryImageSourceで配列から画像を生成
 マウスのドラッグに応じて線を描画、消しゴムで消去する機能を実装します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPu_OEqoI/AAAAAAAAAec/z6MobKhblfI/s800/MemoryImageSource.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPu_OEqoI/AAAAAAAAAec/z6MobKhblfI/s800/MemoryImageSource.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>int[] pixels = new int[320 * 240];

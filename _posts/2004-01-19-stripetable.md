@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-19
 ## TableCellRendererでセルの背景色を変更
 `TableCellRenderer`を継承するレンダラーを作ってテーブルのセルを修飾します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT1bwXoBI/AAAAAAAAAlE/jmpoFwDpvqs/s800/StripeTable.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT1bwXoBI/AAAAAAAAAlE/jmpoFwDpvqs/s800/StripeTable.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class StripeTableRenderer extends DefaultTableCellRenderer {

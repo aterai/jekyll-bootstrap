@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 ## JListのセルにJCheckBoxを使用する
 `JList`のセルに`JCheckBox`を使用して、チェックボックスの一覧を作成します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-EfbwsqycTvg/UlyukvM4ivI/AAAAAAAAB3o/NJBvrfM4xPA/s800/CheckBoxCellList.png)
+{% download https://lh3.googleusercontent.com/-EfbwsqycTvg/UlyukvM4ivI/AAAAAAAAB3o/NJBvrfM4xPA/s800/CheckBoxCellList.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CheckBoxCellRenderer&lt;E extends CheckBoxNode&gt; extends JCheckBox

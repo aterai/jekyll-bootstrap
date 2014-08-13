@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-08
 ## JScrollBarをJScrollPaneの左と上に配置
 `JScrollBar`の配置位置を、`JScrollPane`の左側、上側に変更します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPG13yZbI/AAAAAAAAAdc/1a4aTgyblRo/s800/LeftScrollBar.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPG13yZbI/AAAAAAAAAdc/1a4aTgyblRo/s800/LeftScrollBar.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>scroll.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);

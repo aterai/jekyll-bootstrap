@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02
 ## JOptionPaneを自動的に閉じる
 `JOptionPane`にカウントダウンと自動クローズを行うための`JLabel`を追加します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-NvrpIdRXy8M/UiMOJmS8OMI/AAAAAAAABzg/6QK49B0s-NE/s800/AutomaticallyCloseDialog.png)
+{% download https://lh6.googleusercontent.com/-NvrpIdRXy8M/UiMOJmS8OMI/AAAAAAAABzg/6QK49B0s-NE/s800/AutomaticallyCloseDialog.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>label.addHierarchyListener(new HierarchyListener() {

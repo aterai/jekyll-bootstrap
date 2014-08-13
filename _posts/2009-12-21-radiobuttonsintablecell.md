@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
 ## JTableのセル中にJRadioButtonを配置
 `JTable`のセル中に複数の`JRadioButton`を配置します。[JTableExamples2](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples2.html)を元に修正を行っています。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRX5e43uI/AAAAAAAAAhE/QX6qn9jFOB8/s800/RadioButtonsInTableCell.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRX5e43uI/AAAAAAAAAhE/QX6qn9jFOB8/s800/RadioButtonsInTableCell.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RadioButtonsPanel extends JPanel {

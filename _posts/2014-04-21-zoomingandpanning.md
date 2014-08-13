@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 ## JPanelに表示した画像のズームとスクロール
 `JPanel`に表示した画像に`AffineTransform`による変換を適用して、マウスを使った拡大・縮小・移動を実行します。[How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)に投稿されているコードを参考・引用しています。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-c5Y9hCoRQbU/U1PhhnitgFI/AAAAAAAACD0/ZXIcyPywcr0/s800/ZoomingAndPanning.png)
+{% download https://lh3.googleusercontent.com/-c5Y9hCoRQbU/U1PhhnitgFI/AAAAAAAACD0/ZXIcyPywcr0/s800/ZoomingAndPanning.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ZoomAndPanHandler extends MouseAdapter {

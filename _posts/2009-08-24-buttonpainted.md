@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-24
 ## JButtonの描画
 `JButton`の状態描画をテストします。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIWYXt9eI/AAAAAAAAASo/se2OKkQA83U/s800/ButtonPainted.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIWYXt9eI/AAAAAAAAASo/se2OKkQA83U/s800/ButtonPainted.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>java.util.List&lt;JCheckBox&gt; clist = Arrays.asList(

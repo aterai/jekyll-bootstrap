@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-24
 ## JComboBoxのItem選択をループ
 `JComboBox`の`Item`の選択が、上下のカーソルキーでループするように設定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPicRK7pI/AAAAAAAAAeI/ApRsPHlRWe0/s800/LoopComboBox.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPicRK7pI/AAAAAAAAAeI/ApRsPHlRWe0/s800/LoopComboBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Action up = new AbstractAction() {

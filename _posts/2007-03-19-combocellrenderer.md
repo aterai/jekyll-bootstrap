@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19
 ## JTableのCellRendererにJComboBoxを設定
 `JTable`の`CellRenderer`として`JComboBox`を使用します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJ35Po_yI/AAAAAAAAAVE/z4Jn6Mv7-pc/s800/ComboCellRenderer.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJ35Po_yI/AAAAAAAAAVE/z4Jn6Mv7-pc/s800/ComboCellRenderer.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ComboCellRenderer extends JComboBox implements TableCellRenderer {

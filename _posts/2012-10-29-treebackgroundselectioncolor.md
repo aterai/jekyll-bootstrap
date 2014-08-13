@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-29
 ## JTreeの選択背景色を変更
 `JTree`のノード条件によって、その選択背景色を変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-7JA4jpNa55U/UI1VhdHlkwI/AAAAAAAABVw/dAUHGh4q014/s800/TreeBackgroundSelectionColor.png)
+{% download https://lh4.googleusercontent.com/-7JA4jpNa55U/UI1VhdHlkwI/AAAAAAAABVw/dAUHGh4q014/s800/TreeBackgroundSelectionColor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class SelectionColorTreeCellRenderer extends DefaultTreeCellRenderer {

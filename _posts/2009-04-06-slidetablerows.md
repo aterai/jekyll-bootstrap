@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-06
 ## JTableで行の追加、削除アニメーション
 `JTable`の行追加や削除をスライドアニメーションで強調します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTP0i2yxI/AAAAAAAAAkE/DQKpmn3BIQo/s800/SlideTableRows.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTP0i2yxI/AAAAAAAAAkE/DQKpmn3BIQo/s800/SlideTableRows.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private void testCreateActionPerformed(ActionEvent e) {

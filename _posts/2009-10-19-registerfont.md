@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-19
 ## GraphicsEnvironmentにFontを登録して使用する
 `GraphicsEnvironment`に`Font`を登録して、`Html`タグなどで使用できるようにします。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRkZgST0I/AAAAAAAAAhY/czEyIQL0NfY/s800/RegisterFont.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRkZgST0I/AAAAAAAAAhY/czEyIQL0NfY/s800/RegisterFont.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Font font = makeFont(getClass().getResource("Burnstown Dam.ttf"));

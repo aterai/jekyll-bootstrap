@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-11
 ## JToolTipをGlassPane上のコンポーネントで表示する
 `JToolTip`を`GlassPane`上のコンポーネントに追加した場合でも、手前に表示されるように設定します。主に[Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)を参考にしています。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>//Swing - ComboBox scroll and selected/highlight on glasspane

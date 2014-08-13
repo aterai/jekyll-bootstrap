@@ -1,12 +1,9 @@
 # -*- encoding: utf-8 -*-
 class Download < Liquid::Tag
-  def initialize(tagName, id, tokens)
+  def initialize(tagName, url, tokens)
     super
-    @id = id
+    @url = url
   end
-#   def buttonStyle(c1, c2)
-#     %Q|style="background:#{c1}" onMouseOver="this.style.background='#{c2}'" onMouseOut="this.style.background='#{c1}'" |
-#   end
   def render(context)
     #page = context.environments.first["page"]["url"]
     cat  = context.environments.first["page"]["category"].capitalize
@@ -21,9 +18,14 @@ class Download < Liquid::Tag
     gaq_svn  = %Q|_gaq.push(['_trackEvent', 'Subversion', 'View', '#{id}']);location.href='#{href_svn}'|
 
 <<"EOS"
-<ul>
-<li class="button-group">
-<div class="ad_box">
+<div class="row">
+<div class="col-md-3 pull-left">
+<p><a href="example.jar" class="btn btn-block btn-danger"  onclick="_gaq.push(['_trackEvent', 'Jar', 'Download', '#{id}']);location.href='example.jar'">Jar file&nbsp;&nbsp;<small>example.jar</small>&nbsp;&nbsp;<i class="icon-download icon-white" style="vertical-align:middle"></i></a></p>
+<p><a href="src.zip"     class="btn btn-block btn-success" onclick="_gaq.push(['_trackEvent', 'Source', 'Download', '#{id}']);location.href='src.zip'">Source code&nbsp;&nbsp;<small>src.zip</small>&nbsp;&nbsp;<i class="icon-download-alt icon-white" style="vertical-align:middle"></i></a></p>
+<p><a href="#{href_svn}" class="btn btn-block btn-info"    onclick="#{gaq_svn}">Repository&nbsp;&nbsp;<small>svn repository</small>&nbsp;&nbsp;<i class="icon-folder-open icon-white" style="vertical-align:middle"></i></a></p>
+<p><img src="#{@url}" alt="screenshot"></p>
+</div>
+<div class="col-md-offset5 pull-right">
 <!-- xrea, big, 336x280, 09/11/04 -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:336px;height:280px"
@@ -33,15 +35,8 @@ class Download < Liquid::Tag
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<a href="example.jar" class="btn btn-danger" onclick="_gaq.push(['_trackEvent', 'Jar', 'Download', '#{id}']);location.href='example.jar'">Jar file&nbsp;&nbsp;<small>example.jar</small>&nbsp;&nbsp;<i class="icon-download icon-white" style="vertical-align:middle"></i></a>
-</li>
-<li class="button-group">
-<a href="src.zip" class="btn btn-success" onclick="_gaq.push(['_trackEvent', 'Source', 'Download', '#{id}']);location.href='src.zip'">Source code&nbsp;&nbsp;<small>src.zip</small>&nbsp;&nbsp;<i class="icon-download-alt icon-white" style="vertical-align:middle"></i></a>
-</li>
-<li class="button-group">
-<a href="#{href_svn}" class="btn btn-info" onclick="#{gaq_svn}">Repository&nbsp;&nbsp;<small>svn repository</small>&nbsp;&nbsp;<i class="icon-folder-open icon-white" style="vertical-align:middle"></i></a>
-</li>
-</ul>
+<div class="clearfix">&nbsp;</div>
+</div>
 EOS
   end
   Liquid::Template.register_tag "download", self

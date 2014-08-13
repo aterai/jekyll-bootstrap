@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-26
 ## JTreeの余白をドラッグしてスクロール
 `JTree`の余白などをマウスでドラッグしてスクロールします。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-8b-0M5bS9Tw/Tvf_XhVVreI/AAAAAAAABHU/BdECxkBAdzU/s800/TreeDragScroll.png)
+{% download https://lh3.googleusercontent.com/-8b-0M5bS9Tw/Tvf_XhVVreI/AAAAAAAABHU/BdECxkBAdzU/s800/TreeDragScroll.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class DragScrollListener extends MouseAdapter {

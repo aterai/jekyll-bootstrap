@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-11
 ## JTextFieldの背景色を半透明にする
 `JTextField`の背景色を半透明にします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Color BG_COLOR = new Color(1f,.8f,.8f,.2f);

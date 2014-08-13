@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-02
 ## JScrollBarが非表示でもMouseWheelでScrollする
 `JScrollBar`が非表示の場合の`MouseWheel`による`Scroll`をテストします。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-65-zGNk3eWU/TwFLJU_DP4I/AAAAAAAABHg/mEXoePs30sk/s800/MouseWheelScroll.png)
+{% download https://lh6.googleusercontent.com/-65-zGNk3eWU/TwFLJU_DP4I/AAAAAAAABHg/mEXoePs30sk/s800/MouseWheelScroll.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JScrollBar vsb = new JScrollBar(JScrollBar.VERTICAL) {

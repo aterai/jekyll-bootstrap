@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15
 ## Fileの再帰的検索
 ファイルを再帰的に検索します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRh7du1II/AAAAAAAAAhU/jcMUoOTcbTU/s800/RecursiveFileSearch.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRh7du1II/AAAAAAAAAhU/jcMUoOTcbTU/s800/RecursiveFileSearch.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public void recursiveSearch(File dir, final Vector list)

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-16
 ## JLabelのアイコンと文字列の位置
 `JLabel`のアイコンと文字列の位置をテストします。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVPS5wBUI/AAAAAAAAAnU/2hri1cAlfoM/s800/TextPositionAndAlignment.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVPS5wBUI/AAAAAAAAAnU/2hri1cAlfoM/s800/TextPositionAndAlignment.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>label.setVerticalAlignment(SwingConstants.CENTER);

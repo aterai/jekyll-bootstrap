@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-04
 ## JScrollBarが最後までスクロールしたことを確認する
 `JScrollBar`が最後までスクロールしたかどうかを確認します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-OoIPVjne_9M/UTPo6KgN_NI/AAAAAAAABlw/7miro8ywcyg/s800/DetectScrollToBottom.png)
+{% download https://lh5.googleusercontent.com/-OoIPVjne_9M/UTPo6KgN_NI/AAAAAAAABlw/7miro8ywcyg/s800/DetectScrollToBottom.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane(c);

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-02
 ## JProgressBarの進捗文字列の字揃えを変更する
 `JProgressBar`の進捗文字列を`JLabel`にして、字揃えなどを変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-zRMPjXT7do4/T3lYdJUnilI/AAAAAAAABLA/kcpMYSYoklM/s800/ProgressStringAlignment.png)
+{% download https://lh5.googleusercontent.com/-zRMPjXT7do4/T3lYdJUnilI/AAAAAAAABLA/kcpMYSYoklM/s800/ProgressStringAlignment.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JProgressBar bar = new JProgressBar(model) {

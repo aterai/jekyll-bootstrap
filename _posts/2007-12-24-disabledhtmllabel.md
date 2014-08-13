@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-24
 ## Htmlを使ったJLabelとJEditorPaneの無効化
 `Html`を使った`JLabel`と、`JEditorPane`を`setEnabled(false)`で無効にします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTK9vV2SGI/AAAAAAAAAW0/PIlAG2B9yZA/s800/DisabledHtmlLabel.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTK9vV2SGI/AAAAAAAAAW0/PIlAG2B9yZA/s800/DisabledHtmlLabel.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final JLabel label2 = new JLabel(HTML_TEXT) {

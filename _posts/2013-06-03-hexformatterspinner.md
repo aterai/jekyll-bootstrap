@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-03
 ## JSpinnerの表記を16進数にする
 `JSpinner`の表記を`16`進数にして、その`Unicode`コードポイントに割り当てられた文字を表示します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-eTZU_kuJGK4/UauUgRcPuTI/AAAAAAAABtc/7FNouA9JcLI/s800/HexFormatterSpinner.png)
+{% download https://lh4.googleusercontent.com/-eTZU_kuJGK4/UauUgRcPuTI/AAAAAAAABtc/7FNouA9JcLI/s800/HexFormatterSpinner.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>DefaultFormatter hexformatter = new DefaultFormatter() {

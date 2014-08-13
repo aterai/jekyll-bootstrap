@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05
 ## JTableのセルに複数のJButtonを配置する
 `JTable`のセル内にクリック可能な複数の`JButton`を配置します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQRygoYeI/AAAAAAAAAfU/-Sr9o7PsQkM/s800/MultipleButtonsInTableCell.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQRygoYeI/AAAAAAAAAfU/-Sr9o7PsQkM/s800/MultipleButtonsInTableCell.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ButtonsPanel extends JPanel {

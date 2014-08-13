@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-07
 ## TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え
 `JTable`の行を複数選択し、ドラッグ＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLg-5HyXI/AAAAAAAAAXs/Wda5rMSf-1c/s800/DnDReorderTable.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLg-5HyXI/AAAAAAAAAXs/Wda5rMSf-1c/s800/DnDReorderTable.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model);

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-18
 ## JComboBoxなどの幅をカラム数で指定
 `JTextField`,`JPasswordField`,`JSpinner`,`JComboBox`の幅をカラム数で指定して比較しています。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS72PP0tI/AAAAAAAAAjk/RRG_w2fJBtA/s800/SetColumns.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS72PP0tI/AAAAAAAAAjk/RRG_w2fJBtA/s800/SetColumns.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTextField field      = new JTextField(20);

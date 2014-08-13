@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-26
 ## JSplitPaneの収納状態を維持する
 `JSplitPane`のサイズが変更されても、ディバイダの収納状態を維持するように設定します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOy71x7HI/AAAAAAAAAc8/gLDHiIJS_Yw/s800/KeepHiddenDivider.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOy71x7HI/AAAAAAAAAc8/gLDHiIJS_Yw/s800/KeepHiddenDivider.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final Container divider = ((BasicSplitPaneUI)splitPane.getUI()).getDivider();

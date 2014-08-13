@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-25
 ## JTableで文字列をクリックした場合だけセルを選択状態にする
 `JTable`の文字列以外の場所がクリックされた場合、そのセルが選択されないようにします。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUdT6R-SI/AAAAAAAAAmE/AYebcaiE77Y/s800/TableFileList.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUdT6R-SI/AAAAAAAAAmE/AYebcaiE77Y/s800/TableFileList.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>//SwingUtilities2.pointOutsidePrefSize(...)

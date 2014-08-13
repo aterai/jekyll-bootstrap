@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-05
 ## JListのセル上にToolTipを表示する
 `JList`のセル内に文字列が収まらない場合のみ、その上に`ToolTip`を重ねて表示します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-KLOWyeZG-zU/U2Zif591XkI/AAAAAAAACE0/JDZZwAWkY50/s800/ToolTipOnCellBounds.png)
+{% download https://lh3.googleusercontent.com/-KLOWyeZG-zU/U2Zif591XkI/AAAAAAAACE0/JDZZwAWkY50/s800/ToolTipOnCellBounds.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TooltipList&lt;E&gt; extends JList&lt;E&gt; {

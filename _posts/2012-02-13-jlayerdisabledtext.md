@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-13
 ## JLayerを使用して無効時のコンポーネントの文字色を変更する
 `JLayer`を使用して、`JButton`などのコンポーネントを無効にしたときの文字色を変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-_2bogxiuOec/TzilFn0ms8I/AAAAAAAABJI/oMz_T6SqCwE/s800/JLayerDisabledText.png)
+{% download https://lh5.googleusercontent.com/-_2bogxiuOec/TzilFn0ms8I/AAAAAAAABJI/oMz_T6SqCwE/s800/JLayerDisabledText.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class DisableInputLayerUI extends LayerUI&lt;JComponent&gt; {

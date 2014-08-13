@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-04
 ## BasicStrokeで点線を作成
 点線・破線を描画します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKaxPM12I/AAAAAAAAAV8/ZQON-woHuIg/s800/DashedLine.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKaxPM12I/AAAAAAAAAV8/ZQON-woHuIg/s800/DashedLine.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JLabel label = new JLabel() {

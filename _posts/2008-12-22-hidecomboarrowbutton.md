@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-22
 ## JComboBoxのArrowButtonを隠す
 `ArrowButton`を隠して、`JComboBox`の表示を`JLabel`風にします。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN0Yp0GRI/AAAAAAAAAbY/WvXw5vm2_LI/s800/HideComboArrowButton.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN0Yp0GRI/AAAAAAAAAbY/WvXw5vm2_LI/s800/HideComboArrowButton.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JPanel p = new JPanel(new BorderLayout(5, 5));

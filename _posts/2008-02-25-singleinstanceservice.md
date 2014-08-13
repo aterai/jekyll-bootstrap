@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-25
 ## SingleInstanceServiceを使って Web Start アプリケーションの重複起動を禁止
 `SingleInstanceService`を使って、`Web Start`アプリケーションの重複起動を禁止したり、引数の取得を行います。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTIU5TktI/AAAAAAAAAj4/muKNMFrhEcE/s800/SingleInstanceService.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTIU5TktI/AAAAAAAAAj4/muKNMFrhEcE/s800/SingleInstanceService.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final JFrame frame = new JFrame("@title@");

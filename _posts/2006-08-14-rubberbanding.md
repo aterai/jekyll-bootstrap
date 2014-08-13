@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-14
 ## JListのアイテムを範囲指定で選択
 `JList`のアイテムをラバーバンドで範囲指定して選択します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSd-lu2aI/AAAAAAAAAi0/AQTsBqR1OUc/s800/RubberBanding.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSd-lu2aI/AAAAAAAAAi0/AQTsBqR1OUc/s800/RubberBanding.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RubberBandingListener extends MouseInputAdapter {

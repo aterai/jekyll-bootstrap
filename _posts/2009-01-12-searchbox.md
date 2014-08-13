@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-12
 ## JTreeのノードを検索する
 `JTree`を検索して、一致するアイテムを選択します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static void searchTree(JTree tree, TreePath path, String q) {
@@ -96,6 +95,43 @@ while(depth.hasMoreElements()) {
 - ソースを拝見させていただきましたが, 要素の挿入の箇所がさっぱりわかりません... -- [taji](http://terai.xrea.jp/taji.html) 2010-01-20 (水) 00:38:18
 - 途中で切れてしまい失礼しました. できればどこで挿入しているのか教えていただけませんか? -- [taji](http://terai.xrea.jp/taji.html) 2010-01-20 (水) 00:39:44
     - `JTree`のデフォルトコンストラクタがサンプルモデルを持つ`JTree`を返しているので、`%JAVA_HOME%\src.zip`を展開して、`JTree()`を見るのがよいと思います。そこからたどって行けば`protected static TreeModel getDefaultTreeModel()`の中で、`TreeModel`を作って要素(ノード)を挿入している様子が分かります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-20 (水) 11:15:33
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>/**
+ * Creates and returns a sample &lt;code&gt;TreeModel&lt;/code&gt;.
+ * Used primarily for beanbuilders to show something interesting.
+ *
+ * @return the default &lt;code&gt;TreeModel&lt;/code&gt;
+ */
+protected static TreeModel getDefaultTreeModel() {
+    DefaultMutableTreeNode root = new DefaultMutableTreeNode("JTree");
+    DefaultMutableTreeNode parent;
+
+    parent = new DefaultMutableTreeNode("colors");
+    root.add(parent);
+    parent.add(new DefaultMutableTreeNode("blue"));
+    parent.add(new DefaultMutableTreeNode("violet"));
+    parent.add(new DefaultMutableTreeNode("red"));
+    parent.add(new DefaultMutableTreeNode("yellow"));
+
+    parent = new DefaultMutableTreeNode("sports");
+    root.add(parent);
+    parent.add(new DefaultMutableTreeNode("basketball"));
+    parent.add(new DefaultMutableTreeNode("soccer"));
+    parent.add(new DefaultMutableTreeNode("football"));
+    parent.add(new DefaultMutableTreeNode("hockey"));
+
+    parent = new DefaultMutableTreeNode("food");
+    root.add(parent);
+    parent.add(new DefaultMutableTreeNode("hot dogs"));
+    parent.add(new DefaultMutableTreeNode("pizza"));
+    parent.add(new DefaultMutableTreeNode("ravioli"));
+    parent.add(new DefaultMutableTreeNode("bananas"));
+    return new DefaultTreeModel(root);
+}
+</code></pre>
+
 - `JTree#getNextMatch(...)`は、展開されているノードのみ検索する？ -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-18 (木) 01:40:07
 - 一致するノードが複数ある場合、ボタンクリックで選択状態がループするように変更しました(いつ修正したのかは不明...)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-15 (木) 21:32:23
 

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-08
 ## GlassPaneで画像をLightbox風に表示
 `GlassPane`を使用して、`Lightbox`風にアニメーションしながら画像を表示します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPJaQROVI/AAAAAAAAAdg/MXDWfchqmso/s800/LightboxLikeDisplay.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPJaQROVI/AAAAAAAAAdg/MXDWfchqmso/s800/LightboxLikeDisplay.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class LightboxGlassPane extends JComponent {

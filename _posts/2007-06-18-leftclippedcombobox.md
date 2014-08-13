@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-18
 ## JComboBoxのアイテム文字列を左側からクリップ
 `JComboBox`のアイテム文字列がコンポーネントより長い場合、これを左側からクリップします。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPEaiR2iI/AAAAAAAAAdY/E5fxUtKW0sM/s800/LeftClippedComboBox.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPEaiR2iI/AAAAAAAAAdY/E5fxUtKW0sM/s800/LeftClippedComboBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final JButton arrowButton = getArrowButton(combo02);

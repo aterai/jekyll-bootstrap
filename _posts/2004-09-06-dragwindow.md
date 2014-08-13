@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-06
 ## JWindowをマウスで移動
 `JWindow`などのタイトルバーのないフレームをマウスで移動します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTL8cG8F0I/AAAAAAAAAYY/vZfyqnyr6-I/s800/DragWindow.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTL8cG8F0I/AAAAAAAAAYY/vZfyqnyr6-I/s800/DragWindow.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public void createSplashScreen(String path) {

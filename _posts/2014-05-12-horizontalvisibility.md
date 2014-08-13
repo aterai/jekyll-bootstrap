@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
 ## JTextFieldの表示領域をJScrollBarでスクロールする
 `JTextField`の表示領域を`JScrollBar`でスクロール可能にします。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-e-5Z2Ze6fmU/U4Q5K7nrzqI/AAAAAAAACGQ/9vdUHpxI2VA/s800/HorizontalVisibility.png)
+{% download https://lh3.googleusercontent.com/-e-5Z2Ze6fmU/U4Q5K7nrzqI/AAAAAAAACGQ/9vdUHpxI2VA/s800/HorizontalVisibility.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>scroller.setModel(textField.getHorizontalVisibility());

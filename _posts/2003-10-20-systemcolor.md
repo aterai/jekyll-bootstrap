@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-20
 ## SystemColorの使用
 `Swing`コンポーネントの色を`SystemColor`クラスから取得します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUESCOFBI/AAAAAAAAAlc/eXW_0wilSew/s800/SystemColor.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUESCOFBI/AAAAAAAAAlc/eXW_0wilSew/s800/SystemColor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Color color = SystemColor.textHighlightText;

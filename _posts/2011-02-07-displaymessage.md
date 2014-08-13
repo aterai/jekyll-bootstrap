@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-07
 ## TrayIconのポップアップメッセージをテスト
 `TrayIcon`のポップアップメッセージ表示をテストします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TU-dbe20pkI/AAAAAAAAA0g/3fG2yE_NmHw/s800/DisplayMessage.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TU-dbe20pkI/AAAAAAAAA0g/3fG2yE_NmHw/s800/DisplayMessage.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>trayIcon.displayMessage("caption", "text", TrayIcon.MessageType.ERROR);

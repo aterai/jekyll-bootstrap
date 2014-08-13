@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-21
 ## JTreeのノードをハイライト
 `JTree`のノード上にマウスカーソルがきたら、ハイライト表示します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSHWXxwwI/AAAAAAAAAiQ/MP7tLgM--lo/s800/RollOverTree.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSHWXxwwI/AAAAAAAAAiQ/MP7tLgM--lo/s800/RollOverTree.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MyTreeCellRenderer extends DefaultTreeCellRenderer implements MouseMotionListener {

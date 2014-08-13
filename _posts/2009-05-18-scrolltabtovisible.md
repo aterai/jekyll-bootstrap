@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-18
 ## JTabbedPaneのTabAreaをスクロール
 `JTabbedPane`の`TabArea`を`JSlider`を使ってスクロールします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSn6mtDdI/AAAAAAAAAjE/ja_v92IXLsU/s800/ScrollTabToVisible.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSn6mtDdI/AAAAAAAAAjE/ja_v92IXLsU/s800/ScrollTabToVisible.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static void scrollTabAt(JTabbedPane tp, int index) {

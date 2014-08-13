@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-03
 ## JCheckBoxのチェックアイコンを一行目中央に配置する
 `JCheckBox`のテキストが複数行の場合、チェックアイコンが一行目中央に配置されるよう設定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-xEdb1NQpk3A/UxNGwOHM8dI/AAAAAAAACBE/GDPtPjFUuJs/s800/VerticalIconAlignMultilineText.png)
+{% download https://lh4.googleusercontent.com/-xEdb1NQpk3A/UxNGwOHM8dI/AAAAAAAACBE/GDPtPjFUuJs/s800/VerticalIconAlignMultilineText.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class WindowsVerticalAlignmentCheckBoxUI extends WindowsCheckBoxUI {

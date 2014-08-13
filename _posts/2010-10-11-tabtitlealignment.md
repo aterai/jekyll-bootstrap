@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
 ## JTabbedPaneのTabTitleを左揃えに変更
 `JTabbedPane`の`TabTitle`をデフォルトに中央揃えから左揃えに変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MyTabbedPaneUI extends javax.swing.plaf.metal.MetalTabbedPaneUI {

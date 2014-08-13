@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-10
 ## JTableの列固定とソート
 列固定した`JTable`で、`JDK 6`で導入された`TableRowSorter`を使った行ソートを行います。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMzes1hqI/AAAAAAAAAZw/-m-PZSFzYAk/s800/FixedColumnTableSorting.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMzes1hqI/AAAAAAAAAZw/-m-PZSFzYAk/s800/FixedColumnTableSorting.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>fixedTable = new JTable(model);

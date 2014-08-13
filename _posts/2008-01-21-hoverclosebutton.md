@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-21
 ## JTabbedPaneのCloseButtonをフォーカスがある場合だけ表示
 `JTabbedPane`のタブを閉じるボタンを、タブにフォーカスがある場合だけ表示します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN-acwv2I/AAAAAAAAAbo/gFaIpQr1XGc/s800/HoverCloseButton.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN-acwv2I/AAAAAAAAAbo/gFaIpQr1XGc/s800/HoverCloseButton.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public MyJTabbedPane() {

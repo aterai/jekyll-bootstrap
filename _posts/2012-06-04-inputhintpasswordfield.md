@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-04
 ## JPasswordFieldにヒント文字列を描画する
 `JPasswordField`に入力がない場合、ヒント文字列を描画します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-UKh7dosDsR4/T8xFLnpMGwI/AAAAAAAABNY/nxgzH2XN1vo/s800/InputHintPasswordField.png)
+{% download https://lh3.googleusercontent.com/-UKh7dosDsR4/T8xFLnpMGwI/AAAAAAAABNY/nxgzH2XN1vo/s800/InputHintPasswordField.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class WatermarkPasswordField extends JPasswordField

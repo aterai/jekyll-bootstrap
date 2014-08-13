@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-26
 ## JTabbedPaneのタブを選択不可にする
 `JTabbedPane`のタブが選択できるかどうかを切り替えます。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMLdSGopI/AAAAAAAAAYw/aRU27uh4vuQ/s800/EnabledAt.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMLdSGopI/AAAAAAAAAYw/aRU27uh4vuQ/s800/EnabledAt.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>checkbox.addItemListener(new ItemListener() {

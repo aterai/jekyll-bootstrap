@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
 ## JTabbedPaneにタブを閉じるボタンを追加
 `JDK 6`の新機能を使って`JTabbedPane`にタブを閉じるボタンを追加します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVCzHeo0I/AAAAAAAAAnA/hnMCEbHXnnw/s800/TabWithCloseButton.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVCzHeo0I/AAAAAAAAAnA/hnMCEbHXnnw/s800/TabWithCloseButton.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CloseButtonTabbedPane extends JTabbedPane {

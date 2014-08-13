@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-16
 ## JFileChooserのPlacesBarを非表示にする
 `JFileChooser`(`WindowsLookAndFeel`)の`PlacesBar`を非表示にします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQZdQnWAI/AAAAAAAAAfg/Cne_bKrk8BU/s800/NoPlacesBarFileChooser.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQZdQnWAI/AAAAAAAAAfg/Cne_bKrk8BU/s800/NoPlacesBarFileChooser.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIManager.put("FileChooser.noPlacesBar", Boolean.TRUE);

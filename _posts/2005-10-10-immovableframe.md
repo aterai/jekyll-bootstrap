@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-10
 ## JInternalFrameを固定
 `JInternalFrame`をマウスなどで移動できないように固定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>BasicInternalFrameUI ui = (BasicInternalFrameUI)immovableFrame.getUI();

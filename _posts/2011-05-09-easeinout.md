@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-09
 ## JTextAreaをキャプションとして画像上にスライドイン
 画像の上に`JTextArea`をスライドインアニメーションで表示します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/Tcd9MqA6BlI/AAAAAAAAA64/Q7KLCkUETZ4/s800/EaseInOut.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/Tcd9MqA6BlI/AAAAAAAAA64/Q7KLCkUETZ4/s800/EaseInOut.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private int delay = 4;

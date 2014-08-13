@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-31
 ## JSpinnerの値をパーセントで指定
 `JSpinner`の値をパーセントで指定するように設定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQecBWSoI/AAAAAAAAAfo/IOSdDmzOIBs/s800/NumberEditor.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQecBWSoI/AAAAAAAAAfo/IOSdDmzOIBs/s800/NumberEditor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, 1, 0.01));

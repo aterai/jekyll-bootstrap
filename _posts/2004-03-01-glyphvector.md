@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
 ## JLabelの文字列を折り返し
 `GlyphVector`を使って、ラベルの文字列を折り返して表示します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNbQw2SHI/AAAAAAAAAaw/AApL8KKml8E/s800/GlyphVector.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNbQw2SHI/AAAAAAAAAaw/AApL8KKml8E/s800/GlyphVector.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class WrappedLabel extends JLabel {

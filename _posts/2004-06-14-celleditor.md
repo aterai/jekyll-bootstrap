@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-14
 ## JTableのセルを編集不可にする
 `JTable`のセルを編集不可にします。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIgUbMHLI/AAAAAAAAAS4/v0jIwB26ie4/s800/CellEditor.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIgUbMHLI/AAAAAAAAAS4/v0jIwB26ie4/s800/CellEditor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(new DefaultTableModel() {

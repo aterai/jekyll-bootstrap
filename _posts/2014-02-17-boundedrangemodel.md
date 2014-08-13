@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-17
 ## JLabelとIconで作成した検索位置表示バーをマウスで操作する
 `JScrollBar`から`BoundedRangeModel`を取得し、`JLabel`と`Icon`で表示した検索位置表示バーをマウスで操作可能にします。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-EN1vcmWX7Gs/UwDyGP5n91I/AAAAAAAACAE/tb9w7pHxtk8/s800/BoundedRangeModel.png)
+{% download https://lh4.googleusercontent.com/-EN1vcmWX7Gs/UwDyGP5n91I/AAAAAAAACAE/tb9w7pHxtk8/s800/BoundedRangeModel.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class HighlightBarHandler extends MouseAdapter {

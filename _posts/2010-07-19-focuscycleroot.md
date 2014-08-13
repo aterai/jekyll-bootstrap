@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-19
 ## JPanelをフォーカストラバーサルサイクルのルートにする
 `JPanel`がフォーカストラバーサルサイクルのルートになるように設定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNCX36INI/AAAAAAAAAaI/xunzBpsDJLk/s800/FocusCycleRoot.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNCX36INI/AAAAAAAAAaI/xunzBpsDJLk/s800/FocusCycleRoot.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JPanel p1 = new JPanel();

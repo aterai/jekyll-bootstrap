@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-15
 ## JListで異なる高さのセルを使用
 `JList`のレンダラーに`JTextArea`を使って、異なる高さのセルを作成します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK2Z8UOTI/AAAAAAAAAWo/7GoDkuVX8Fc/s800/DifferentCellHeight.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK2Z8UOTI/AAAAAAAAAWo/7GoDkuVX8Fc/s800/DifferentCellHeight.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TextAreaRenderer extends JTextArea implements ListCellRenderer {

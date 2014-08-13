@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-12
 ## JLabel、JTextAreaなどで複数行を表示
 `JTextPane`、`JTextArea`、`JLabel`を使った複数行のラベルをテストします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQPZi7whI/AAAAAAAAAfQ/ynZxQGkn3_A/s800/MultiLineLabel.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQPZi7whI/AAAAAAAAAfQ/ynZxQGkn3_A/s800/MultiLineLabel.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private final JTextPane label1 = new JTextPane();

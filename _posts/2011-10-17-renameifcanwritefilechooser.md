@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-17
 ## JFileChooserで読み取り専用ファイルのリネームを禁止
 `JFileChooser`で読み取り専用属性ファイルのリネームを禁止します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-7ODSj6DaIig/TpsQEay0NqI/AAAAAAAABDs/8fz14wjADj0/s800/RenameIfCanWriteFileChooser.png)
+{% download https://lh5.googleusercontent.com/-7ODSj6DaIig/TpsQEay0NqI/AAAAAAAABDs/8fz14wjADj0/s800/RenameIfCanWriteFileChooser.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CanWriteFileChooserUI extends MetalFileChooserUI{

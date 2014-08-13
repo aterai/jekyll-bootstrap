@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-04
 ## JTreeのToolTipsを表示
 `JTree`のノードの`ToolTips`を表示します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWQe1RL2I/AAAAAAAAAo8/6HFqbUb3UZ8/s800/TreeToolTips.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWQe1RL2I/AAAAAAAAAo8/6HFqbUb3UZ8/s800/TreeToolTips.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>//tree = new JTree();

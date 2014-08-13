@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-03
 ## JTableのRowFilterを一旦解除してソート
 `JTable`の`RowFilter`を一旦解除してソートし、再びフィルタを設定することで表示される行を更新します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRuQZLwOI/AAAAAAAAAho/ovjovr-5nuI/s800/ResetRowFilter.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRuQZLwOI/AAAAAAAAAho/ovjovr-5nuI/s800/ResetRowFilter.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final RowFilter&lt;TableModel, Integer&gt; filter = new RowFilter&lt;TableModel, Integer&gt;() {
@@ -41,16 +40,16 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
 </code></pre>
 
 ### 解説
-上記のサンプルでは、A.`viewRowIndex<5`をチェックすると、ソートされていても表示上の`0`から`4`行目までの`5`行のみ表示されるフィルタがかかります。
+上記のサンプルでは、☑ `viewRowIndex<5`をチェックすると、ソートされていても表示上の`0`から`4`行目までの`5`行のみ表示されるフィルタがかかります。
 
 - `Costom Sorting`チェック無し
-    - Aのフィルタで「AA-ee」が表示されている場合、`String`列で昇順から降順にソートすると「ee-AA」となる
+    - ☑ `viewRowIndex<5`のフィルタで`AA-ee`が表示されている場合、`String`列で昇順から降順にソートすると`ee-AA`となる
 
 <!-- dummy comment line for breaking list -->
 
 - `Costom Sorting` チェック有り
-    - Aのフィルタで「AA-ee」が表示されている場合、`String`列で昇順から降順にソートすると「OO-KK」となる
-        - `toggleSortOrder`メソッドをオーバーライドして、一旦`RowFilter`を解除(`setRowFilter(null)`)してから昇順から降順にソート「OO-KK-AA」、その後再び`RowFilter`を設定するので「OO-KK」が表示される
+    - ☑ `viewRowIndex<5`のフィルタで`AA-ee`が表示されている場合、`String`列で昇順から降順にソートすると`OO-KK`となる
+        - `toggleSortOrder`メソッドをオーバーライドして、一旦`RowFilter`を解除(`setRowFilter(null)`)してから昇順から降順にソート`OO-KK-AA`、その後再び`RowFilter`を設定するので`OO-KK`が表示される
 
 <!-- dummy comment line for breaking list -->
 

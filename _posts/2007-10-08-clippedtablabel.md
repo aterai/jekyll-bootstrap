@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-08
 ## JTabbedPaneのタイトルをクリップ
 `JDK 6`で導入されたタブにコンポーネントを追加する機能を使って、長いタイトルのタブは文字列をクリップして表示します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJU-PNaRI/AAAAAAAAAUM/yAbkpSgRNVY/s800/ClippedTabLabel.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJU-PNaRI/AAAAAAAAAUM/yAbkpSgRNVY/s800/ClippedTabLabel.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ClippedTitleTabbedPane extends JTabbedPane {

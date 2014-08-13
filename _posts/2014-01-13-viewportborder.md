@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-13
 ## JViewportにBorderを設定する
 `JViewport`に`Border`を設定して余白を作成します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-dtdRJtfyQqs/UtKoFiKxRVI/AAAAAAAAB-A/QmWEeAHNlmE/s800/ViewportBorder.png)
+{% download https://lh6.googleusercontent.com/-dtdRJtfyQqs/UtKoFiKxRVI/AAAAAAAAB-A/QmWEeAHNlmE/s800/ViewportBorder.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTextArea textArea2 = new JTextArea("JScrollPane#setViewportBorder(...)\n\n" + initTxt);

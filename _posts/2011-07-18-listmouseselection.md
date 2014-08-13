@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
 ## JListをマウスクリックのみで複数選択する
 `JList`をアイテムをマウスクリックだけで複数選択できるように設定します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-wj2xm8BlBbA/TiPrjr1sQ5I/AAAAAAAAA_c/NiXO891B5fs/s800/ListMouseSelection.png)
+{% download https://lh6.googleusercontent.com/-wj2xm8BlBbA/TiPrjr1sQ5I/AAAAAAAAA_c/NiXO891B5fs/s800/ListMouseSelection.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JList list = new JList(model) {
@@ -152,6 +151,7 @@ ry$SystemColorProxy[r=39,g=118,b=218],selectionForeground=com.apple.laf.AquaImag
 - あら見づらくなりすみません。 -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-27 (水) 10:54:02
 - ようするに、`convertMouseEvent`内の`e.getModifiers()`に`0x02/0x04`を`or`しても`OSX`では無視されてるようです。なぜなんでしょう？ -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-27 (水) 10:58:53
     - ログ(勝手にすこし整形しました)どうもです。たしかにうまくいっているっぽいのに、不思議な感じですね。 ~~`InputEvent.CTRL_DOWN_MASK`と`InputEvent.CTRL_MASK`の違い？~~ もうすこし調べてみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-27 (水) 15:04:05
+    - `Java 8`で修正されているかも？ [Bug ID: JDK-7170657 macosx - There seems to be no keyboard/mouse action to select non-contiguous items in List](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7170657) -- [aterai](http://terai.xrea.jp/aterai.html) 2014-08-12 (火) 02:10:09
 - メモ: [Tailoring Java Applications for Mac OS X](http://developer.apple.com/jp/technotes/tn2042.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-27 (水) 15:18:46
 - ドラッグによる`JList`の複数選択は、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)を使用する方法もあります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-30 (水) 15:18:25
 

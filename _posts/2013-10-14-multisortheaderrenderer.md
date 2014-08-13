@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-14
 ## JTableの複数キーを使ったソートをヘッダに表示する
 `JTable`の複数キーを使ったソートの状態をヘッダ上に別途表示します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-QNe3lJ3oXH0/Ulqu3vaS91I/AAAAAAAAB3U/Tb2kXiKV8Fs/s800/MultisortHeaderRenderer.png)
+{% download https://lh3.googleusercontent.com/-QNe3lJ3oXH0/Ulqu3vaS91I/AAAAAAAAB3U/Tb2kXiKV8Fs/s800/MultisortHeaderRenderer.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MultisortHeaderRenderer implements TableCellRenderer {

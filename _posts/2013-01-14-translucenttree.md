@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-14
 ## JTreeを透明にし、選択状態を半透明にする
 `JTree`の背景を透明にし、ノードの選択色を半透明にします。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-HxmekrVRX6M/UPLEn6O6-VI/AAAAAAAABbM/XJoGyl2khVM/s800/TranslucentTree.png)
+{% download https://lh4.googleusercontent.com/-HxmekrVRX6M/UPLEn6O6-VI/AAAAAAAABbM/XJoGyl2khVM/s800/TranslucentTree.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TransparentTreeCellRenderer extends DefaultTreeCellRenderer {

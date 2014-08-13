@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-28
 ## JComboBoxの内余白
 `JComboBox`のエディタなどに内余白を設定します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>static Border padding = BorderFactory.createEmptyBorder(0,5,0,0);

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-17
 ## JSliderのノブをドラッグ中にToolTipで値を表示
 `JSlider`のノブをドラッグ中に`ToolTip`でその現在値を表示します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-RBRHhAqSA3A/UM3gOvnmIOI/AAAAAAAABZM/LdLir_Y4dQc/s800/SliderToolTips.png)
+{% download https://lh6.googleusercontent.com/-RBRHhAqSA3A/UM3gOvnmIOI/AAAAAAAABZM/LdLir_Y4dQc/s800/SliderToolTips.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class SliderPopupListener extends MouseAdapter{

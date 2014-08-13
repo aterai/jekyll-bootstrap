@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-06
 ## TitledBorderのタイトル位置
 `TitledBorder`のタイトル位置や揃えを切り替えてテストします。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVZeDhwBI/AAAAAAAAAnk/QmV1N3Uqp3o/s800/TitledBorder.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVZeDhwBI/AAAAAAAAAnk/QmV1N3Uqp3o/s800/TitledBorder.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>VerticalOrientation vo = (VerticalOrientation)verticalOrientationChoices.getSelectedItem();

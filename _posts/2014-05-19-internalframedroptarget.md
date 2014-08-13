@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-19
 ## JInternalFrame間でのドラッグ＆ドロップによるJTableの行入れ替え
 `JInternalFrame`間で`JTable`の行をドラッグ＆ドロップを使って入れ替えます。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-UP_I_iTgtpc/U3jPL_jhwuI/AAAAAAAACFg/olJ1Sf-P_lU/s800/InternalFrameDropTarget.png)
+{% download https://lh5.googleusercontent.com/-UP_I_iTgtpc/U3jPL_jhwuI/AAAAAAAACFg/olJ1Sf-P_lU/s800/InternalFrameDropTarget.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private boolean isDropableTableIntersection(TransferSupport info) {

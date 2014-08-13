@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-05
 ## DynamicLayoutでレイアウトの動的評価
 ウィンドウのリサイズなどに応じてレイアウトを再評価するように、`DynamicLayout`を設定します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMDyaDeJI/AAAAAAAAAYk/-EIAq3TyJbw/s800/DynamicLayout.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMDyaDeJI/AAAAAAAAAYk/-EIAq3TyJbw/s800/DynamicLayout.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Toolkit.getDefaultToolkit().setDynamicLayout(true);

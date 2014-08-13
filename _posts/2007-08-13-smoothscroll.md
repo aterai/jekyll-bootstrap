@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-13
 ## JTextAreaでSmoothScrollによる行移動
 `SmoothScroll`アニメーション有りで任意の行まで移動します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTSaxFSzI/AAAAAAAAAkI/KtedLqwCXBY/s800/SmoothScroll.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTSaxFSzI/AAAAAAAAAkI/KtedLqwCXBY/s800/SmoothScroll.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Document doc = textArea.getDocument();

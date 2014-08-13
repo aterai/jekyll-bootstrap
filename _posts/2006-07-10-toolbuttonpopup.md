@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-10
 ## JToggleButtonからポップアップメニューを開く
 クリックするとポップアップメニューを表示する`JToggleButton`を作成し、これをツールバーに追加します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVg5xIBaI/AAAAAAAAAnw/ds2ybXI2lUE/s800/ToolButtonPopup.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVg5xIBaI/AAAAAAAAAnw/ds2ybXI2lUE/s800/ToolButtonPopup.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MenuArrowIcon implements Icon {

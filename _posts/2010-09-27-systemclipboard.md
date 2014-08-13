@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-27
 ## Clipboardから文字列や画像を取得する
 `Clipboard`から文字列や画像データを取得し、`JLabel`に表示します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUB2-qFWI/AAAAAAAAAlY/hlwTEjnyC_g/s800/SystemClipboard.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUB2-qFWI/AAAAAAAAAlY/hlwTEjnyC_g/s800/SystemClipboard.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private ClipboardService cs = null;

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-30
 ## JFrameのIconを変更
 `JFrame`のタイトルバー左に表示されているアイコンを別の画像に変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNO_p95yI/AAAAAAAAAac/gl0vOOoKH14/s800/FrameIcon.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNO_p95yI/AAAAAAAAAac/gl0vOOoKH14/s800/FrameIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>MainPanel panel = new MainPanel();

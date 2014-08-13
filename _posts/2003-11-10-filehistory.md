@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-10
 ## JMenuに最近使ったファイルを追加
 `JMenu`に、「最近使ったファイル(`F`)」を履歴として追加していきます。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMffElRbI/AAAAAAAAAZQ/1d47Mop5D-0/s800/FileHistory.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMffElRbI/AAAAAAAAAZQ/1d47Mop5D-0/s800/FileHistory.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private int MAXHISTORY = 3;

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-01
 ## JSpinnerのモデルの値をループさせる
 `JSpinner`のモデルで値が最大、最小を超えるとループするように設定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKYcCKxAI/AAAAAAAAAV4/T8OdovAF6EY/s800/CyclingSpinnerModel.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKYcCKxAI/AAAAAAAAAV4/T8OdovAF6EY/s800/CyclingSpinnerModel.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>spinner.setModel(new SpinnerNumberModel(20, 0, 59, 1) {

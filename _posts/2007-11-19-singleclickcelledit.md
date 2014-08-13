@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-19
 ## JTableのセルをシングルクリックで編集する
 `JTable`のセルをマウスでシングルクリックすると編集状態になるように設定します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTDScXHaI/AAAAAAAAAjw/VQhi8npFmCM/s800/SingleClickCellEdit.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTDScXHaI/AAAAAAAAAjw/VQhi8npFmCM/s800/SingleClickCellEdit.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor)table.getDefaultEditor(Object.class);

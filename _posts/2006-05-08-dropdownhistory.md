@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-08
 ## JComboBoxのアイテム履歴
 `JComboBox`で入力した文字列などのアイテムを順に保存します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL-2krEbI/AAAAAAAAAYc/9yTnbMmSi1Q/s800/DropDownHistory.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL-2krEbI/AAAAAAAAAYc/9yTnbMmSi1Q/s800/DropDownHistory.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public boolean addItem(JComboBox combo, String str, int max) {

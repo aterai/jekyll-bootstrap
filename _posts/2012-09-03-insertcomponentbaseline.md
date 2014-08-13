@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-03
 ## JTextPaneに追加するコンポーネントのベースラインを揃える
 `JTextPane`に追加するコンポーネントのベースラインが他の文字列などとを揃うように設定します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-JveOiooEbAg/UEPEjv1VW2I/AAAAAAAABR4/qts-97h_JuA/s800/InsertComponentBaseline.png)
+{% download https://lh3.googleusercontent.com/-JveOiooEbAg/UEPEjv1VW2I/AAAAAAAABR4/qts-97h_JuA/s800/InsertComponentBaseline.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JCheckBox check1 = new JCheckBox("JComponent.setAlignmentY(...)");

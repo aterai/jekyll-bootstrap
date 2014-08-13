@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-23
 ## JToolTipのアニメーション
 ツールチップにアニメーションするアイコンを使用します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHpat_rFI/AAAAAAAAARg/fzkRLOHGb7I/s800/AnimatedToolTip.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHpat_rFI/AAAAAAAAARg/fzkRLOHGb7I/s800/AnimatedToolTip.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JLabel l3 = new JLabel("Gif Animated ToolTip(html)");

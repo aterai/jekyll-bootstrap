@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-08
 ## MouseWheelを使った値の増減
 `JSpinner`や`JSlider`の値をマウスホイールを使って変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQH9EVaHI/AAAAAAAAAfE/Dv-UnuISmXM/s800/MouseWheel.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQH9EVaHI/AAAAAAAAAfE/Dv-UnuISmXM/s800/MouseWheel.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>spinner.addMouseWheelListener(new MouseWheelListener() {

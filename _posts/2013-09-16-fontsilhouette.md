@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-16
 ## Fontのアウトラインから輪郭を取得する
 `Font`から取得した字形の輪郭を抽出し、縁取りや内部の塗り潰しなどを行います。このサンプルは、[java - 'Fill' Unicode characters in labels - Stack Overflow](http://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)に投稿されているコードを参考にしています。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-kzMG9iEHFz4/UjWgNdHCh1I/AAAAAAAAB2A/0gpKBcNqz44/s800/FontSilhouette.png)
+{% download https://lh5.googleusercontent.com/-kzMG9iEHFz4/UjWgNdHCh1I/AAAAAAAAB2A/0gpKBcNqz44/s800/FontSilhouette.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public static Area getOuterShape(Shape shape) {

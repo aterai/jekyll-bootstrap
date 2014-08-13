@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-11
 ## AWTEventを取得して入力イベントを監視
 `AWTEvent`を取得して、マウスやキーボードの入力イベントを監視します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLPUOE2MI/AAAAAAAAAXQ/5qrFGk7E5GM/s800/DispatchEvent.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLPUOE2MI/AAAAAAAAAXQ/5qrFGk7E5GM/s800/DispatchEvent.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static int DELAY = 10*1000; //10s

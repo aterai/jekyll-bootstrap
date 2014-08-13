@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-26
 ## JTableのリサイズで最後のTableColumnのみリサイズする
 `JTable`がリサイズされた場合、最後にある`TableColumn`がその幅の変更を吸収するように設定します。主に、[java - JTable columns doesnt resize probably when JFrame resize - Stack Overflow](http://stackoverflow.com/questions/23201818/jtable-columns-doesnt-resize-probably-when-jframe-resize)の回答からソースを引用しています。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-uhbVwRqsa2g/U4HyPhrI8PI/AAAAAAAACF8/OJXWaFVxavE/s800/ResizingColumnAndTable.png)
+{% download https://lh4.googleusercontent.com/-uhbVwRqsa2g/U4HyPhrI8PI/AAAAAAAACF8/OJXWaFVxavE/s800/ResizingColumnAndTable.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private final JTable table = new JTable(100, 3) {

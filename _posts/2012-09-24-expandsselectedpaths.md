@@ -14,9 +14,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-24
 ## JTreeの選択されたノードを展開する
 `JTree`の選択されたノードまでのパスをすべて展開して可視状態にします。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-sOsnOftT8xE/UF_b7dSxzQI/AAAAAAAABS0/i_xYkTfxbZg/s800/ExpandsSelectedPaths.png)
+{% download https://lh6.googleusercontent.com/-sOsnOftT8xE/UF_b7dSxzQI/AAAAAAAABS0/i_xYkTfxbZg/s800/ExpandsSelectedPaths.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>tree.setExpandsSelectedPaths(true);

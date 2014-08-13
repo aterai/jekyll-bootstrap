@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-28
 ## NimbusLookAndFeelでJComponentのサイズを変更する
 `NimbusLookAndFeel`を使用している場合、クライアントプロパティを設定することで`JComponent`の表示サイズを変更することが出来ます。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-Uru9Oco4olg/U9T5RHzJ_5I/AAAAAAAACKY/7N7a3Ya3sYw/s800/ComponentSizeVariant.png)
+{% download https://lh6.googleusercontent.com/-Uru9Oco4olg/U9T5RHzJ_5I/AAAAAAAACKY/7N7a3Ya3sYw/s800/ComponentSizeVariant.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>booleanRenderer.putClientProperty("JComponent.sizeVariant", "mini");

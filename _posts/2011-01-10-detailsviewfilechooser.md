@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-10
 ## JFileChooserのデフォルトをDetails Viewに設定
 `JFileChooser`を開いたときのデフォルトをリストではなく詳細に変更します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TSq77M-soeI/AAAAAAAAAxg/0nnen-n-cAY/s800/DetailsViewFileChooser.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TSq77M-soeI/AAAAAAAAAxg/0nnen-n-cAY/s800/DetailsViewFileChooser.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>//java - How can I start the JFileChooser in the Details view? - Stack Overflow]

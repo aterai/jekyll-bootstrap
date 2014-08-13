@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-06
 ## Resourceファイルからメニューバーを生成
 リソースファイルを使ってメニューバーやツールバーを生成します。詳しくは`%JAVA_HOME%/demo/jfc/Notepad/src/Notepad.java`を参照してください。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTR15q_ELI/AAAAAAAAAh0/2H6dW1g0eiY/s800/ResourceMenuBar.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTR15q_ELI/AAAAAAAAAh0/2H6dW1g0eiY/s800/ResourceMenuBar.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public JMenuBar createMenubar() {

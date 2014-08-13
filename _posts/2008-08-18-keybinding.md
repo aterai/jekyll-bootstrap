@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-18
 ## JComponentのKeyBinding一覧を取得する
 `JComponent`から、`ActionMap`、`InputMap`を取得し、`KeyBinding`の一覧表を作成します。[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/misc.html Miscellaneous Tools - Java Swing Utilities]の[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/Mapper.java Mapper.java]を元に`UI`を変更しています。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTO1Qi0Y2I/AAAAAAAAAdA/yMsuc2sjSKg/s800/KeyBinding.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTO1Qi0Y2I/AAAAAAAAAdA/yMsuc2sjSKg/s800/KeyBinding.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final List&lt;Integer&gt; focusType = Arrays.asList(

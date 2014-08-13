@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-12
 ## JComboBoxにAnimated GIFを表示する
 `JComboBox`と、そのドロップダウンリストに`Animated GIF`を表示します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-kS7gIhaebeM/T12ukNN94JI/AAAAAAAABJ8/wM8SvLNzWEE/s800/AnimatedIconInComboBox.png)
+{% download https://lh3.googleusercontent.com/-kS7gIhaebeM/T12ukNN94JI/AAAAAAAABJ8/wM8SvLNzWEE/s800/AnimatedIconInComboBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static ImageIcon makeImageIcon(URL url, final JComboBox combo, final int row) {

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
 ## JTabbedPane間でタブのドラッグ＆ドロップ移動
 `JTabbedPane`間でタブの`Drag&Drop`による移動を行います。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLW06ZMXI/AAAAAAAAAXc/vzeXm4pwhVY/s800/DnDExportTabbedPane.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLW06ZMXI/AAAAAAAAAXc/vzeXm4pwhVY/s800/DnDExportTabbedPane.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TabTransferHandler extends TransferHandler {

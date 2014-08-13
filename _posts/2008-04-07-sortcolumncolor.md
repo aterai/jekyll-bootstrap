@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-07
 ## JTableでソート中のカラムセル色
 どのカラムでソートされているかを表示するために、セルの背景色を変更します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTZ75OnPI/AAAAAAAAAkU/k4lx4c2XKK8/s800/SortColumnColor.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTZ75OnPI/AAAAAAAAAkU/k4lx4c2XKK8/s800/SortColumnColor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {

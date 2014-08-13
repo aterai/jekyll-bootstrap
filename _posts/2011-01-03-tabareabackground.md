@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-03
 ## JTabbedPaneのタブエリア背景色などをテスト
 `MetalLookAndFeel`の`JTabbedPane`で、タブエリアの背景色などを変更するテストをしています。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TSFbcaeJLEI/AAAAAAAAAw0/zQFscoerEGk/s800/TabAreaBackground.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TSFbcaeJLEI/AAAAAAAAAw0/zQFscoerEGk/s800/TabAreaBackground.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIManager.put("TabbedPane.shadow",                Color.GRAY);

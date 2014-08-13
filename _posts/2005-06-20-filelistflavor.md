@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-20
 ## Fileのドラッグ＆ドロップ
 `Windows`などからファイルを`JTable`にドラッグ＆ドロップします。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMhxsIIsI/AAAAAAAAAZU/iZ6Pn8yTFFM/s800/FileListFlavor.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMhxsIIsI/AAAAAAAAAZU/iZ6Pn8yTFFM/s800/FileListFlavor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final FileModel model = new FileModel();

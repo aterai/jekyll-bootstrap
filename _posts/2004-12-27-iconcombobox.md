@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
 ## JComboBoxにアイコンを表示
 `JComboBox`を編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTONfr7t7I/AAAAAAAAAcA/jNQyoEApJ1I/s800/IconComboBox.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTONfr7t7I/AAAAAAAAAcA/jNQyoEApJ1I/s800/IconComboBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private static Border makeIconBorder(JComponent c, ImageIcon i) {

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-19
 ## Windowの形を変更
 `Window`の形を非矩形図形に変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-f54GogC4jCU/Tu7AbPCJhsI/AAAAAAAABGc/EzG0Tf9ITFI/s800/WindowShape.png)
+{% download https://lh4.googleusercontent.com/-f54GogC4jCU/Tu7AbPCJhsI/AAAAAAAABGc/EzG0Tf9ITFI/s800/WindowShape.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JFrame frame = new JFrame();

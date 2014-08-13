@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-15
 ## ProgressMonitorで処理の進捗を表示
 `ProgressMonitor`で処理の進捗を表示します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRQXIAu4I/AAAAAAAAAg4/bh8niw_k5AE/s800/ProgressMonitor.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRQXIAu4I/AAAAAAAAAg4/bh8niw_k5AE/s800/ProgressMonitor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>final ProgressMonitor monitor = new ProgressMonitor(this, "message", "note", 0, 100);

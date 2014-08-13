@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-15
 ## JToolTipにBorderを設定
 ツールチップに`Border`を設定します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVjcQsX6I/AAAAAAAAAn0/tieki8bniAM/s800/ToolTipBorder.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVjcQsX6I/AAAAAAAAAn0/tieki8bniAM/s800/ToolTipBorder.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JButton button = new JButton() {

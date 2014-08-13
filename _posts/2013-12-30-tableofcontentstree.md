@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-30
 ## JTreeで目次を作成する
 `JTree`のノードにリーダーとページ番号を追加表示して目次を作成します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-uecZSLw75K4/UsAxPx9ol2I/AAAAAAAAB9M/TcD_QI2Ex_Y/s800/TableOfContentsTree.png)
+{% download https://lh4.googleusercontent.com/-uecZSLw75K4/UsAxPx9ol2I/AAAAAAAAB9M/TcD_QI2Ex_Y/s800/TableOfContentsTree.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TableOfContentsTreeCellRenderer extends DefaultTreeCellRenderer {

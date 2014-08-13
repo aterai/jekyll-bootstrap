@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-05
 ## JTableのセルにAnimated GIFを表示する
 `ImageIcon`に`ImageObserver`を設定して、`JTable`のセル中で`Animated GIF`のアニメーションを行います。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-138Snht85-E/T1B6iHoG1pI/AAAAAAAABJw/XaESowuWEC4/s800/AnimatedIconInTableCell.png)
+{% download https://lh3.googleusercontent.com/-138Snht85-E/T1B6iHoG1pI/AAAAAAAABJw/XaESowuWEC4/s800/AnimatedIconInTableCell.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>ImageIcon icon = new ImageIcon(url);

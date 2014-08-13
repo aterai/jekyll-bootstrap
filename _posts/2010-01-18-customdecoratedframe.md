@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-18
 ## JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする
 `JFrame`のタイトルバーなどを非表示にして独自に描画し、これに移動リサイズなどの機能も追加します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKV1P7mYI/AAAAAAAAAV0/u4qjd-ItBYU/s800/CustomDecoratedFrame.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKV1P7mYI/AAAAAAAAAV0/u4qjd-ItBYU/s800/CustomDecoratedFrame.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ResizeWindowListener extends MouseAdapter {

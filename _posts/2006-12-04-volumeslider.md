@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-04
 ## JSliderのUIや色を変更する
 `JSlider`のトラックやつまみ、色などを変更して、音量調節風のスライダーを作成します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWc-B0OXI/AAAAAAAAApQ/t1b78yBXWUQ/s800/VolumeSlider.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWc-B0OXI/AAAAAAAAApQ/t1b78yBXWUQ/s800/VolumeSlider.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TriangleSliderUI extends javax.swing.plaf.metal.MetalSliderUI {

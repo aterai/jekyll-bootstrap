@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-14
 ## JCheckBoxMenuItemのチェックアイコンを変更する
 `JCheckBoxMenuItem`のチェックアイコンを変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTI5TuivhI/AAAAAAAAATg/nfren8EjliA/s800/CheckBoxMenuItemIcon.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTI5TuivhI/AAAAAAAAATg/nfren8EjliA/s800/CheckBoxMenuItemIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIManager.put("CheckBoxMenuItem.checkIcon", new Icon() {

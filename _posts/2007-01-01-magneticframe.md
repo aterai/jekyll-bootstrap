@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-01
 ## JDesktopPaneにJInternalFrameを吸着させる
 `JDesktopPane`と`JInternalFrame`の距離が近くなった場合、これらを自動的に吸着させます。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPnXoiDZI/AAAAAAAAAeQ/9SMGwoIqOi8/s800/MagneticFrame.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPnXoiDZI/AAAAAAAAAeQ/9SMGwoIqOi8/s800/MagneticFrame.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);

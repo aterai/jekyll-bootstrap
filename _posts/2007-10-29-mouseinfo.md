@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-29
 ## Screen上にあるMouseの位置を取得する
 `Screen`上にある`Mouse`の絶対位置を取得して、パネル内のラケットを移動します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQC6wobCI/AAAAAAAAAe8/3UnK314olDM/s800/MouseInfo.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQC6wobCI/AAAAAAAAAe8/3UnK314olDM/s800/MouseInfo.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public static final Dimension panelDim = new Dimension(320, 240);

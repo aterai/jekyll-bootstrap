@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
 ## ConvolveOpでコンポーネントにぼかしを入れる
 `ConvolveOp`を使って、使用不可状態の`JButton`にぼかしを入れます。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-KJB6Hz9n1R0/UqSGnCNV3HI/AAAAAAAAB70/sTyoJce2HZQ/s800/BlurButton.png)
+{% download https://lh6.googleusercontent.com/-KJB6Hz9n1R0/UqSGnCNV3HI/AAAAAAAAB70/sTyoJce2HZQ/s800/BlurButton.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class BlurButton extends JButton {

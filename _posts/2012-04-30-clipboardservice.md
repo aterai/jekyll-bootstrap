@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-30
 ## ClipboardServiceでシステム全体の共有クリップボードにアクセスする
 `ClipboardService`を使って`Java Web Start`で動作中のアプリケーションからシステム全体の共有クリップボードにアクセスします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/--_lXbzG-H7g/T53noZrOnHI/AAAAAAAABME/FyY8MKdHSg0/s800/ClipboardService.png)
+{% download https://lh5.googleusercontent.com/--_lXbzG-H7g/T53noZrOnHI/AAAAAAAABME/FyY8MKdHSg0/s800/ClipboardService.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private ClipboardService cs;

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 ## JButtonの形を変更
 円形や角丸の`JButton`を作成します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSJxI6T0I/AAAAAAAAAiU/uPR0zvWSEnQ/s800/RoundButton.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSJxI6T0I/AAAAAAAAAiU/uPR0zvWSEnQ/s800/RoundButton.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RoundedCornerButton extends JButton {

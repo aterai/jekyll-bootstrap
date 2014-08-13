@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-24
 ## JTreeのノード編集をコミット
 `JTree`のノード編集中に割り込みが発生した場合、変更の自動保存を行うかどうかを設定します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-KbIRjsEYzEA/Uwny844Zc3I/AAAAAAAACAY/_3w4abiuaIo/s800/InvokesStopCellEditing.png)
+{% download https://lh6.googleusercontent.com/-KbIRjsEYzEA/Uwny844Zc3I/AAAAAAAACAY/_3w4abiuaIo/s800/InvokesStopCellEditing.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>tree.setInvokesStopCellEditing(true);

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-28
 ## JSplitPaneを等分割する
 `JSplitPane`のディバイダが中央にくるように設定します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLR0Z5M_I/AAAAAAAAAXU/R6r6dvVJa9M/s800/DividerLocation.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLR0Z5M_I/AAAAAAAAAXU/R6r6dvVJa9M/s800/DividerLocation.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>EventQueue.invokeLater(new Runnable() {

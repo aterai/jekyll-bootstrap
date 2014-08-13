@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-04
 ## JTableに行ヘッダを追加
 `JTable`に行ヘッダを追加を追加します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUk9YzW7I/AAAAAAAAAmQ/wjin9CuyfBg/s800/TableRowHeader.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUk9YzW7I/AAAAAAAAAmQ/wjin9CuyfBg/s800/TableRowHeader.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class RowHeaderList extends JList {

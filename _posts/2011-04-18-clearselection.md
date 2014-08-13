@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
 ## JListの選択を解除
 `JList`のセル選択状態を解除します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TavH8_fQKAI/AAAAAAAAA5s/MyUXQnSHPUA/s800/ClearSelection.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TavH8_fQKAI/AAAAAAAAA5s/MyUXQnSHPUA/s800/ClearSelection.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ClearSelectionListener extends MouseAdapter {

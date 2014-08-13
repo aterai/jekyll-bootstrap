@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-07
 ## JSliderのつまみの形状を変更
 `JSlider`のつまみの形状を目盛り表示ありの場合と同じになるよう変更します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-wnMCy-QjKqI/U0Fp9vKfehI/AAAAAAAACDE/fem_kGyz1KM/s800/ThumbArrowShape.png)
+{% download https://lh3.googleusercontent.com/-wnMCy-QjKqI/U0Fp9vKfehI/AAAAAAAACDE/fem_kGyz1KM/s800/ThumbArrowShape.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>slider.putClientProperty("Slider.paintThumbArrowShape", Boolean.TRUE);

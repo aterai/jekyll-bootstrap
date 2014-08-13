@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-26
 ## JPopupMenuをボタンの長押しで表示
 `JToolBar`に、長押しで`JPopupMenu`、クリックで選択されたメニューを表示するボタンを追加します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRIzHMLNI/AAAAAAAAAgs/0_PwsyZOl-I/s800/PressAndHoldButton.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRIzHMLNI/AAAAAAAAAgs/0_PwsyZOl-I/s800/PressAndHoldButton.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class PressAndHoldHandler extends AbstractAction implements MouseListener {

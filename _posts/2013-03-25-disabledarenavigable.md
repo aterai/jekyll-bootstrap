@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-25
 ## DisabledなJMenuItemのハイライトをテスト
 `Disabled`な`JMenuItem`がハイライト可能かどうかを`LookAndFeel`ごとにテストします。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/--XCIC-Dhgwk/UU8M_ixmZeI/AAAAAAAABoU/aXonTNvOs0A/s800/DisabledAreNavigable.png)
+{% download https://lh4.googleusercontent.com/--XCIC-Dhgwk/UU8M_ixmZeI/AAAAAAAABoU/aXonTNvOs0A/s800/DisabledAreNavigable.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE);

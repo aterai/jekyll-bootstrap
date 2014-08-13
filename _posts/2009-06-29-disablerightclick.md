@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29
 ## JComboBoxのドロップダウンリストで右クリックを無効化
 `JComboBox`のドロップダウンリスト(ポップアップメニュー)で、マウスの右クリックを無効にします。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLKTBLgQI/AAAAAAAAAXI/mV-Gw1hPSYU/s800/DisableRightClick.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLKTBLgQI/AAAAAAAAAXI/mV-Gw1hPSYU/s800/DisableRightClick.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class BasicComboPopup2 extends BasicComboPopup {

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
 ## JComboBoxの文字色を変更する
 `JComboBox`の文字色を変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TVjIM1AMFkI/AAAAAAAAA1M/BSd3As9dxZE/s800/ComboBoxForegroundColor.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TVjIM1AMFkI/AAAAAAAAA1M/BSd3As9dxZE/s800/ComboBoxForegroundColor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ComboForegroundRenderer extends DefaultListCellRenderer {

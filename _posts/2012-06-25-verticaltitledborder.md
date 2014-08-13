@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-25
 ## TitledBorderのタイトルを縦(左側)に表示する
 `TitledBorder`のタイトル文字列を縦(左側)に表示します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-ndnU9h6kzPw/T-gQmrTVqdI/AAAAAAAABOQ/KwNEpVGLDa0/s800/VerticalTitledBorder.png)
+{% download https://lh4.googleusercontent.com/-ndnU9h6kzPw/T-gQmrTVqdI/AAAAAAAABOQ/KwNEpVGLDa0/s800/VerticalTitledBorder.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class VerticalTitledBorder extends TitledBorder{

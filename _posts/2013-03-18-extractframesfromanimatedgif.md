@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-18
 ## Animated Gifからフレーム画像を抽出する
 `AnimatedGif`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://forums.oracle.com/thread/1271862)の回答を参考に作成しています。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-_xu1jNmYJe0/UUX3d_PzwKI/AAAAAAAABoA/cyS5ABVZdkM/s800/ExtractFramesFromAnimatedGif.png)
+{% download https://lh4.googleusercontent.com/-_xu1jNmYJe0/UUX3d_PzwKI/AAAAAAAABoA/cyS5ABVZdkM/s800/ExtractFramesFromAnimatedGif.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>ImageReader reader = null;

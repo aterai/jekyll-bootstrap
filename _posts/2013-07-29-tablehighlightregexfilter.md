@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
 ## JTableの検索結果をRowFilterとHighlighterで強調表示する
 `JTable`で正規表現による検索結果を`RowFilter`と`Highlighter`を使用して表現します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-9b6L1m5fhBk/UfUzbWaYGtI/AAAAAAAABw8/xhrIa_pJXls/s800/TableHighlightRegexFilter.png)
+{% download https://lh3.googleusercontent.com/-9b6L1m5fhBk/UfUzbWaYGtI/AAAAAAAABw8/xhrIa_pJXls/s800/TableHighlightRegexFilter.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class HighlightTableCellRenderer extends JTextField implements TableCellRenderer {

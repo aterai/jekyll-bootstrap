@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-01
 ## JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する
 `HTMLEditorKit`を使用する`JTextPane`で修飾したテキストを`JTextArea`に`Html`ソースとして表示、編集、`JTextPane`に反映するテストを行なっています。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-ORS7lITRAUE/UVhL_1G6hPI/AAAAAAAABo4/5WKtBFFthJ0/s800/HTMLEditorKit.png)
+{% download https://lh6.googleusercontent.com/-ORS7lITRAUE/UVhL_1G6hPI/AAAAAAAABo4/5WKtBFFthJ0/s800/HTMLEditorKit.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>textPane.setComponentPopupMenu(new HTMLColorPopupMenu());

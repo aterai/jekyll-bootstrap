@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-01
 ## JTextFieldでのBeep音の設定を変更する
 `JTextField`などで、<kbd>Delete</kbd>、<kbd>Back Space</kbd>キーを押した時に鳴らす`Beep`音の設定を変更します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-zIUmkF2C9FA/UGkqdcWDLVI/AAAAAAAABTk/F4nun0GDLZc/s800/DeleteKeyBeep.png)
+{% download https://lh6.googleusercontent.com/-zIUmkF2C9FA/UGkqdcWDLVI/AAAAAAAABTk/F4nun0GDLZc/s800/DeleteKeyBeep.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>String key = DefaultEditorKit.deletePrevCharAction; //"delete-previous";

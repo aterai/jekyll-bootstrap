@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-08
 ## JSpinnerで無効な値の入力を許可しない
 `JSpinner`から`JFormattedTextField`を取得し、これに無効な値の入力を許可しないように設定します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQg6Td8tI/AAAAAAAAAfs/u5mXLfk3k64/s800/NumberFormatter.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQg6Td8tI/AAAAAAAAAfs/u5mXLfk3k64/s800/NumberFormatter.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JSpinner.NumberEditor editor = (JSpinner.NumberEditor)spinner.getEditor();

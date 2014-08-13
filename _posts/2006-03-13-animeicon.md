@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-13
 ## Timerでアニメーションするアイコンを作成
 `javax.swing.Timer`を使って、アニメーションするアイコンを作成します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTHuI0XeDI/AAAAAAAAARo/CVs615Dtkqs/s800/AnimeIcon.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTHuI0XeDI/AAAAAAAAARo/CVs615Dtkqs/s800/AnimeIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class AnimatedLabel extends JLabel implements ActionListener {

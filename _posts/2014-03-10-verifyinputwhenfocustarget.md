@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-10
 ## InputVerifierを設定したJTextFieldの値が不正な場合のフォーカス移動
 `InputVerifier`を設定した`JTextField`の値が適切な形式でない場合のフォーカス移動動作をテストします。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-0s6ChUywZz8/Ux0P0IVi99I/AAAAAAAACBY/8hZOhY0SCI4/s800/VerifyInputWhenFocusTarget.png)
+{% download https://lh4.googleusercontent.com/-0s6ChUywZz8/Ux0P0IVi99I/AAAAAAAACBY/8hZOhY0SCI4/s800/VerifyInputWhenFocusTarget.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>button2.setVerifyInputWhenFocusTarget(false);

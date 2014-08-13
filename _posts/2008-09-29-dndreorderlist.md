@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-29
 ## TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え
 `JList`のアイテムを複数選択し、ドラッグ＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLeSCyHuI/AAAAAAAAAXo/v2OLiSPdgEY/s800/DnDReorderList.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLeSCyHuI/AAAAAAAAAXo/v2OLiSPdgEY/s800/DnDReorderList.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ListItemTransferHandler extends TransferHandler {

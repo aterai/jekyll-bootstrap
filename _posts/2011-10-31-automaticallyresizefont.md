@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-31
 ## Fontサイズをコンポーネントの幅に応じて変更する
 `JTextPane`のフォントサイズをその幅に応じて自動変更します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-RTjWJaRHh4E/Tq4_8nk91OI/AAAAAAAABEY/mwfxMScDHec/s800/AutomaticallyResizeFont.png)
+{% download https://lh6.googleusercontent.com/-RTjWJaRHh4E/Tq4_8nk91OI/AAAAAAAABEY/mwfxMScDHec/s800/AutomaticallyResizeFont.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private final Font font = new Font(Font.MONOSPACED, Font.PLAIN, 12);

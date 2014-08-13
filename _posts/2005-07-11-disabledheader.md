@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-11
 ## JTableHeaderのカラムを選択不可にする
 `JTableHeader`のカラムを選択不可にして、ソートなどを禁止します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK7ZrULPI/AAAAAAAAAWw/fwuY_EwXQsM/s800/DisabledHeader.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK7ZrULPI/AAAAAAAAAWw/fwuY_EwXQsM/s800/DisabledHeader.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public class SortButtonRenderer extends JButton implements TableCellRenderer{

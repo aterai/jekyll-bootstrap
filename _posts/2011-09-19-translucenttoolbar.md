@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-19
 ## JToolBarの半透明化とアニメーション
 コンポーネントにマウスカーソルがある場合だけ表示される半透明の`JToolBar`を追加します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-36mkZfbor58/Tnb1d-2vaPI/AAAAAAAABCM/Hoor7aG7K-g/s800/TranslucentToolBar.png)
+{% download https://lh5.googleusercontent.com/-36mkZfbor58/Tnb1d-2vaPI/AAAAAAAABCM/Hoor7aG7K-g/s800/TranslucentToolBar.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ImageCaptionLabel extends JLabel implements HierarchyListener {

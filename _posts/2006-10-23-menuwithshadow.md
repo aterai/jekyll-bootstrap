@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23
 ## Menuに半透明の影を付ける
 メニューに半透明の影を付けます。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPz0ZEG6I/AAAAAAAAAek/pd0ErBB9eBg/s800/MenuWithShadow.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPz0ZEG6I/AAAAAAAAAek/pd0ErBB9eBg/s800/MenuWithShadow.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>public class CustomPopupMenuUI extends BasicPopupMenuUI {

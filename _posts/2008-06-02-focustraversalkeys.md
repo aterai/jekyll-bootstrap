@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-02
 ## FocusTraversalKeysに矢印キーを追加してフォーカス移動
 デフォルトの<kbd>Tab</kbd>キーに加えて、矢印キーでもフォーカス移動できるように設定します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNHR5gShI/AAAAAAAAAaQ/KUE3fbR0bXo/s800/FocusTraversalKeys.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNHR5gShI/AAAAAAAAAaQ/KUE3fbR0bXo/s800/FocusTraversalKeys.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>KeyboardFocusManager focusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();

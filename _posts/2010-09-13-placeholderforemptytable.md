@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-13
 ## JTableが空の場合、中央にJComponentを表示する
 `JTable`が空の場合、表領域の中央に任意の`JComponent`が表示されるように設定します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRDxbcszI/AAAAAAAAAgk/5iisfYFJom0/s800/PlaceholderForEmptyTable.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRDxbcszI/AAAAAAAAAgk/5iisfYFJom0/s800/PlaceholderForEmptyTable.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JEditorPane hint = new JEditorPane("text/html", "&lt;html&gt;&lt;a href='dummy'&gt;No data!&lt;/a&gt;&lt;/html&gt;");

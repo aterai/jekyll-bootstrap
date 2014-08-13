@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-07
 ## Cursorを砂時計に変更
 処理中、マウスカーソルを砂時計に変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWfYWDbsI/AAAAAAAAApU/rldJwQuVm-8/s800/WaitCursor.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWfYWDbsI/AAAAAAAAApU/rldJwQuVm-8/s800/WaitCursor.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>frame.setGlassPane(new LockingGlassPane());

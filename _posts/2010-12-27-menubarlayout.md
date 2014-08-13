@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-27
 ## JMenuBarのJMenuを折り返し
 `JMenuBar`のレイアウトマネージャーを変更して、`JMenu`を折り返して表示します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TRf4-liTfjI/AAAAAAAAAwk/CURxxE6iDqk/s800/MenuBarLayout.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TRf4-liTfjI/AAAAAAAAAwk/CURxxE6iDqk/s800/MenuBarLayout.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JMenuBar menuBar = new JMenuBar();

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-12
 ## JComboBoxのItemを左右にクリップして配置
 `JComboBox`の`Item`にテキストをクリップして左右に分けて配置します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJSTVvNXI/AAAAAAAAAUI/RNbSh6R4xi8/s800/ClippedLRComboBox.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJSTVvNXI/AAAAAAAAAUI/RNbSh6R4xi8/s800/ClippedLRComboBox.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MultiColumnCellRenderer extends JPanel implements ListCellRenderer{

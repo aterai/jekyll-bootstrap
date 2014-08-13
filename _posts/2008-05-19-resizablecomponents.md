@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-19
 ## JComponentをマウスで移動、リサイズ
 `JLayeredPane`に、マウスで移動、リサイズ可能なコンポーネントを追加します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRw-M85QI/AAAAAAAAAhs/BFyVP2IYoak/s800/ResizableComponents.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRw-M85QI/AAAAAAAAAhs/BFyVP2IYoak/s800/ResizableComponents.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent e) {

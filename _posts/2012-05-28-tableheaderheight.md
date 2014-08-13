@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-28
 ## JTableHeaderの高さを変更
 `JTableHeader`の高さを変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-l20IOO5wKSo/T8MIf7FVUwI/AAAAAAAABNM/9BNN63T96Fo/s800/TableHeaderHeight.png)
+{% download https://lh4.googleusercontent.com/-l20IOO5wKSo/T8MIf7FVUwI/AAAAAAAABNM/9BNN63T96Fo/s800/TableHeaderHeight.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane(table);

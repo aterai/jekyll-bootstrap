@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 ## JEditorPaneで長い行を折り返さない
 `JEditorPane`や、`JTextPane`で、行を`Viewport`の幅で折り返さないよう設定します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQbo-LQJI/AAAAAAAAAfk/YnnnPAQE-R4/s800/NoWrapTextPane.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQbo-LQJI/AAAAAAAAAfk/YnnnPAQE-R4/s800/NoWrapTextPane.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class NoWrapParagraphView extends ParagraphView {

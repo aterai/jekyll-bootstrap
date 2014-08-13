@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
 ## JTableのCellにJCheckBoxを複数配置する
 `JTable`のセル中に`JCheckBox`を複数個配置します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TWs6JY73P8I/AAAAAAAAA2M/wwrwT7R5K4k/s800/CheckBoxesInTableCell.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TWs6JY73P8I/AAAAAAAAA2M/wwrwT7R5K4k/s800/CheckBoxesInTableCell.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CheckBoxesPanel extends JPanel {

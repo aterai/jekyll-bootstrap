@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-25
 ## JLabelに表示したAnimated Gifのアニメーションを停止する
 `JLabel`に表示した`Animated Gif`のアニメーションを停止します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-pYT15pLG7KY/USoyuJzLxUI/AAAAAAAABfo/JgO7-MbsL5U/s800/DisableAnimatedGif.png)
+{% download https://lh6.googleusercontent.com/-pYT15pLG7KY/USoyuJzLxUI/AAAAAAAABfo/JgO7-MbsL5U/s800/DisableAnimatedGif.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JLabel label2 = new JLabel() {

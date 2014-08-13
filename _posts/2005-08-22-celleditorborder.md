@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-22
 ## CellEditorのBorderを変更
 `JTable`の`CellEditor`に`Border`を設定します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIiyFXk2I/AAAAAAAAAS8/Dgu1EqDMma4/s800/CellEditorBorder.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIiyFXk2I/AAAAAAAAAS8/Dgu1EqDMma4/s800/CellEditorBorder.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTextField field = new JTextField();

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-23
 ## LookAndFeelの変更を取得する
 `LookAndFeel`の変更を取得するリスナーの作成などを行います。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-dbduLE1mbyM/U6b3UwtJj6I/AAAAAAAACH4/AUy3dSpgxMg/s800/LookAndFeelChangeListener.png)
+{% download https://lh3.googleusercontent.com/-dbduLE1mbyM/U6b3UwtJj6I/AAAAAAAACH4/AUy3dSpgxMg/s800/LookAndFeelChangeListener.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIManager.addPropertyChangeListener(new PropertyChangeListener() {

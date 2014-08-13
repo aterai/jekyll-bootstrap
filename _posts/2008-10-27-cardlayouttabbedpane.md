@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
 ## CardLayoutを使ってJTabbedPane風のコンポーネントを作成
 `CardLayout`と`JRadioButton`や`JTableHeader`を組み合わせて`JTabbedPane`風のコンポーネントを作成します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIbe7vt7I/AAAAAAAAASw/SGFMcgCN_r4/s800/CardLayoutTabbedPane.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIbe7vt7I/AAAAAAAAASw/SGFMcgCN_r4/s800/CardLayoutTabbedPane.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class CardLayoutTabbedPane extends JPanel {

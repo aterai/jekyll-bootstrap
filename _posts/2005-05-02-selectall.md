@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-02
 ## JTextField内のテキストをすべて選択
 フォーカスが`JTextField`に移動したとき、そのテキストがすべて選択された状態にします。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSvQx8j-I/AAAAAAAAAjQ/iXgBbTGTGuw/s800/SelectAll.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSvQx8j-I/AAAAAAAAAjQ/iXgBbTGTGuw/s800/SelectAll.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>textfield.addFocusListener(new FocusAdapter() {

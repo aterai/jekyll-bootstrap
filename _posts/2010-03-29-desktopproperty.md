@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-29
 ## DesktopPropertyの変更を監視する
 `Toolkit`に`PropertyChangeListener`を追加して、ダブルクリックの速度などの変更を監視します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKxXuJ4EI/AAAAAAAAAWg/utfOkK69KBk/s800/DesktopProperty.png)
+{% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKxXuJ4EI/AAAAAAAAAWg/utfOkK69KBk/s800/DesktopProperty.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Toolkit.getDefaultToolkit().addPropertyChangeListener(

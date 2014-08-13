@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-13
 ## GlyphVectorで文字列を電光掲示板風にスクロール
 `GlyphVector`を生成して、これを電光掲示板のようにスクロールさせます。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSlbxO22I/AAAAAAAAAjA/SJLXTaAYArY/s800/ScrollingMessage.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSlbxO22I/AAAAAAAAAjA/SJLXTaAYArY/s800/ScrollingMessage.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MarqueePanel extends JComponent implements ActionListener {

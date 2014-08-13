@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-14
 ## JTreeのOpenIcon、ClosedIcon、LeafIconを変更
 `JTree`の`OpenIcon`、`ClosedIcon`、`LeafIcon`の表示表示を切り替えます。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TX24gbN5bHI/AAAAAAAAA30/l8Pn8nUfJiA/s800/TreeLeafIcon.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TX24gbN5bHI/AAAAAAAAA30/l8Pn8nUfJiA/s800/TreeLeafIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>folderCheck.addActionListener(new ActionListener() {

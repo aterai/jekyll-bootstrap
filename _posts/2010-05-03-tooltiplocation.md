@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03
 ## JToolTipの表示位置
 `JToolTip`の表示位置がドラッグでマウスカーソルに追従するように設定します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent me) {

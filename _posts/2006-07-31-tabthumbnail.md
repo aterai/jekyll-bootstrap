@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-31
 ## JTabbedPaneのサムネイルをJToolTipで表示
 ツールチップを使って、`JTabbedPane`のサムネイルを表示します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUz8_Yw-I/AAAAAAAAAmo/wLoOmG5I3oc/s800/TabThumbnail.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUz8_Yw-I/AAAAAAAAAmo/wLoOmG5I3oc/s800/TabThumbnail.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class MyTabbedPane extends JTabbedPane {

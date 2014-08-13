@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
 ## Iconを生成する
 `Icon`インタフェースから固定サイズのアイコンを作成します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-PTY9ydf9DFE/T97u-rwg5lI/AAAAAAAABN0/52xJLmkoNak/s800/DragHereIcon.png)
+{% download https://lh5.googleusercontent.com/-PTY9ydf9DFE/T97u-rwg5lI/AAAAAAAABN0/52xJLmkoNak/s800/DragHereIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class DragHereIcon implements Icon {

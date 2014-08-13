@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-10
 ## JSliderの順序をを反転
 `JSlider`の値や目盛りの表示などの順序を反転します。
 
-{% download %}
 
-![screenshot](https://lh6.googleusercontent.com/-qI_Mv8LOhi8/UvdK3TThMiI/AAAAAAAAB_0/xQR9OJ1Z8xY/s800/InvertedSlider.png)
+{% download https://lh6.googleusercontent.com/-qI_Mv8LOhi8/UvdK3TThMiI/AAAAAAAAB_0/xQR9OJ1Z8xY/s800/InvertedSlider.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>slider.setInverted(true);

@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-09
 ## GeneralPathなどで星型図形を作成する
 `GeneralPath`などを使って星型の図形をパネルに描画したり、アイコンを作成します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNT-1toKI/AAAAAAAAAak/t96zX52eOVg/s800/GeneralPath.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNT-1toKI/AAAAAAAAAak/t96zX52eOVg/s800/GeneralPath.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class StarPanel1 extends JPanel{

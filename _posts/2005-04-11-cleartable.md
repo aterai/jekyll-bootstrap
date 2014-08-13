@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-11
 ## JTableの行を全削除
 `JTable`の行を一括で全削除します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJISEHcVI/AAAAAAAAAT4/syR1Ucd5n5o/s800/ClearTable.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJISEHcVI/AAAAAAAAAT4/syR1Ucd5n5o/s800/ClearTable.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>button.addActionListener(new AbstractAction("clear") {

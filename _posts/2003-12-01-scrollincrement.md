@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-01
 ## JScrollPaneのスクロール量を変更
 スクロールがホイールの回転でスムーズに移動しない(遅い)場合は、`JScrollPane`のスクロール量を変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSi6qpTZI/AAAAAAAAAi8/nrtWKpDCdHI/s800/ScrollIncrement.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSi6qpTZI/AAAAAAAAAi8/nrtWKpDCdHI/s800/ScrollIncrement.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane();

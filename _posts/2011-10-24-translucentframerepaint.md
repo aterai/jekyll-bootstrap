@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-24
 ## JFrameの透明化と再描画
 半透明にした`JFrame`の再描画を行います。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-ujoDf8eD4vE/TqLcC0f2CHI/AAAAAAAABD4/LHaXXW6HW1k/s800/TranslucentFrameRepaint.png)
+{% download https://lh4.googleusercontent.com/-ujoDf8eD4vE/TqLcC0f2CHI/AAAAAAAABD4/LHaXXW6HW1k/s800/TranslucentFrameRepaint.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>private final SimpleDateFormat df = new SimpleDateFormat("HH:mm:ss");

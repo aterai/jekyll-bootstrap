@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-11
 ## AffineTransformOpで画像を反転する
 `AffineTransformOp`などを使って、画像の上下反転、左右反転を行います。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHczsN2NI/AAAAAAAAARM/D8gpa0-KfEI/s800/AffineTransformOp.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHczsN2NI/AAAAAAAAARM/D8gpa0-KfEI/s800/AffineTransformOp.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>int w = bi.getWidth(this);

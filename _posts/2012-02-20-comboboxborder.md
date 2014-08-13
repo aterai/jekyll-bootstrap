@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-20
 ## JComboBoxのBorderを変更する
 `JComboBox`の表示部分、矢印ボタン、ドロップダウンリストの`Border`や色を変更します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-jHpgdiBwt6s/T0H3deyce_I/AAAAAAAABJY/_3k6-paq4lM/s800/ComboBoxBorder.png)
+{% download https://lh3.googleusercontent.com/-jHpgdiBwt6s/T0H3deyce_I/AAAAAAAABJY/_3k6-paq4lM/s800/ComboBoxBorder.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>//ComboBox.border

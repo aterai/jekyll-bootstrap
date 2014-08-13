@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-30
 ## NimbusLookAndFeelのカラーパレット
 `NimbusLookAndFeel`のカラーパレットを変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/-ZPZIywXgxwc/UBYR3-EyETI/AAAAAAAABP4/Y2KglYmMKo8/s800/NimbusColorPalette.png)
+{% download https://lh4.googleusercontent.com/-ZPZIywXgxwc/UBYR3-EyETI/AAAAAAAABP4/Y2KglYmMKo8/s800/NimbusColorPalette.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>UIDefaults def = UIManager.getLookAndFeelDefaults();

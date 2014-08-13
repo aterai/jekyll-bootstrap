@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-15
 ## JComboBoxの値をMouseWheelで変更
 `JComboBox`にフォーカスがある場合、その値を`MouseWheel`の上下で変更します。
 
-{% download %}
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWm95sa5I/AAAAAAAAApg/1tiQsmg5QKw/s800/WheelCombo.png)
+{% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWm95sa5I/AAAAAAAAApg/1tiQsmg5QKw/s800/WheelCombo.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>combo.addMouseWheelListener(new MouseWheelListener() {

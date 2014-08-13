@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-13
 ## TrayIconのダブルクリック
 `TrayIcon`をダブルクリックした場合フレームを表示、シングルクリックした場合はフレームを前面に表示します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>Image image = new BufferedImage(16,16,BufferedImage.TYPE_INT_ARGB);

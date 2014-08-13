@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-13
 ## JTableのセルを横方向に連結する
 `JTable`のセルを横方向に連結するセルレンダラーを作成します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/-wcXag_bBidU/UY-uA3riCRI/AAAAAAAABrs/Q_V-fdNVRu8/s800/ColumnSpanningCellRenderer.png)
+{% download https://lh5.googleusercontent.com/-wcXag_bBidU/UY-uA3riCRI/AAAAAAAABrs/Q_V-fdNVRu8/s800/ColumnSpanningCellRenderer.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ColumnSpanningCellRenderer extends JPanel implements TableCellRenderer{

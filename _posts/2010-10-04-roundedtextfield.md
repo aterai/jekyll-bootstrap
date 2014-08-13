@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-04
 ## JTextFieldの角を丸める
 角丸の`JTextField`を作成します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSMYm3vgI/AAAAAAAAAiY/37FVcZLSXI0/s800/RoundedTextField.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSMYm3vgI/AAAAAAAAAiY/37FVcZLSXI0/s800/RoundedTextField.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>JTextField textField01 = new JTextField(20) {

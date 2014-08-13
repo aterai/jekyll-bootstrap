@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-19
 ## JRadioButtonを使ってToggleButtonBarを作成
 `JRadioButton`のアイコンを変更して、`ToggleButtonBar`を作成します。
 
-{% download %}
 
-![screenshot](https://lh3.googleusercontent.com/-5-1KU3hp2co/UKjlTJyKvRI/AAAAAAAABW8/QuYQcKDeeyM/s800/ToggleButtonBar.png)
+{% download https://lh3.googleusercontent.com/-5-1KU3hp2co/UKjlTJyKvRI/AAAAAAAABW8/QuYQcKDeeyM/s800/ToggleButtonBar.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class ToggleButtonBarCellIcon implements Icon{

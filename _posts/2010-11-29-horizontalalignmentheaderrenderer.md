@@ -13,9 +13,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-29
 ## JTableHeaderの字揃えを変更
 `JTableHeader`の字揃えを変更します。
 
-{% download %}
 
-![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN5ZuPeZI/AAAAAAAAAbg/Fivi4R1rR-Y/s800/HorizontalAlignmentHeaderRenderer.png)
+{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN5ZuPeZI/AAAAAAAAAbg/Fivi4R1rR-Y/s800/HorizontalAlignmentHeaderRenderer.png %}
 
 ### サンプルコード
 <pre class="prettyprint"><code>class HorizontalAlignmentHeaderRenderer implements TableCellRenderer{
