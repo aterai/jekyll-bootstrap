@@ -76,7 +76,7 @@ private void checkID(Element element) {
         - `element.getStartOffset()`などで取得されるオフセットは、`JEditorPane`に表示されない要素や属性は含まれない
 - `Highlight Element[@id]`
     - `id`属性を持つ`Element`をハイライト表示
-    - `HTMLDocument.BlockElement`などには、`html`の要素や属性が後で復元する場合のために`AttributeSet`に備考として保存されている
+    - `HTMLDocument.BlockElement`などには、`html`の要素や属性が後で復元するための備考として`AttributeSet`に保存されている
         - ブロック要素とインライン要素で属性の保存されている場所が異なる
     - `DefaultHighlighter#setDrawsLayeredHighlights(false)`の場合、改行を含むハイライトや選択状態の描画がおかしくなる？
 - `ParserDelegator`

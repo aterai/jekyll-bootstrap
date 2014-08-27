@@ -76,6 +76,7 @@ class RedGreenChannelSwapFilter extends RGBImageFilter{
 ### 参考リンク
 - [RGBImageFilterでアイコンの色調を変更](http://terai.xrea.jp/Swing/RatingLabel.html)
 - [JProgressBarの文字列をJLayerを使って表示する](http://terai.xrea.jp/Swing/ProgressStringLayer.html)
+- [JProgressBarの進捗状況と進捗文字列色を変更する](http://terai.xrea.jp/Swing/ProgressBarSelectionColor.html)
 
 <!-- dummy comment line for breaking list -->
 

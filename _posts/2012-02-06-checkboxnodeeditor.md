@@ -101,6 +101,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
 ### 解説
 上記のサンプルでは、`JCheckBox`を継承する`TreeCellEditor`、`TreeCellRenderer`を作成し、`TreeCellEditor#getTreeCellEditorComponent(...)`などは、この`JCheckBox`、`JLabel`(文字列、アイコン)などを含む`JPanel`を生成して返しています。
 
+マウスクリックなどでノードのチェック状態が変更されたら、子ノードと親ノードの選択状態も更新する必要があるので、`TreeModelListener`をモデルに設定して、その監視を行っています。
+
+- - - -
 `JPanel`を継承する`TreeCellEditor`、`TreeCellRenderer`でも、`JDK 1.7.0`、`JDK 1.6.0_30`などでは、問題なく動作するようです。
 
 <pre class="prettyprint"><code>class CheckBoxNodeRenderer extends JPanel implements TreeCellRenderer {
@@ -159,9 +162,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
   }
 }
 </code></pre>
-
-- - - -
-ノードのチェック変更で、子ノードのチェックをすべて揃えたり、親ノードの状態変更は、`TreeModelListener`を追加して行なっています。
 
 - - - -
 - `JDK 1.6.0`で、`LookAndFeel`を`Nimbus`などに変更すると、セルエディタなどが更新されず？表示がおかしくなる場合があるので、`JTree#updateUI()`を以下のようにオーバーライドして回避
