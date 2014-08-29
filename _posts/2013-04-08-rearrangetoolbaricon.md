@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
 ## JToolBarに配置したアイコンをドラッグして並べ替える
 `JToolBar`に配置したアイコンをドラッグ＆ドロップで並べ替えます。
 
-
 {% download https://lh6.googleusercontent.com/-bxLoJ6g9K_I/UWBOghG3kxI/AAAAAAAABpQ/tvVELkL1RV0/s800/RearrangeToolBarIcon.png %}
 
 ### サンプルコード

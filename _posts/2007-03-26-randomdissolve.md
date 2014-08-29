@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-26
 ## RandomDissolveで表示を切り替え
 `RandomDissolve`効果で表示する画像を切り替えます。このサンプルは、[Java 2D - random pixelwise fading ?](https://forums.oracle.com/thread/1270228)に投稿されているソースコードを参考にしています。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRdPqz07I/AAAAAAAAAhM/h3EaItM41Yw/s800/RandomDissolve.png %}
 
 ### サンプルコード

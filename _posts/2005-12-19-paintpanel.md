@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-19
 ## JPanelにマウスで自由曲線を描画
 マウスをドラッグしてパネル上に自由曲線を描画します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQ0y2U6WI/AAAAAAAAAgM/AAHllQ3_VHw/s800/PaintPanel.png %}
 
 ### サンプルコード

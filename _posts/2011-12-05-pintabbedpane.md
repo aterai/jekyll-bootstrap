@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-05
 ## JTabbedPaneのタブを固定する
 `JTabbedPane`に`JPopupMenu`を追加して、指定したタブのタイトルと位置を変更し、タブの固定を行います。
 
-
 {% download https://lh4.googleusercontent.com/-QqKPFV0ZzIc/TttWYFUshII/AAAAAAAABFk/6HcCBI_bg-0/s800/PinTabbedPane.png %}
 
 ### サンプルコード

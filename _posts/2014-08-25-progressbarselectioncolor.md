@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-25
 ## JProgressBarの進捗状況と進捗文字列色を変更する
 `JProgressBar`の進捗状況の色や、それで塗り潰された場合の進捗文字列色を変更します。
 
-
 {% download https://lh3.googleusercontent.com/-GXTDLsaFDf0/U_nV4WbEi0I/AAAAAAAACL0/09g79mFs9ZE/s800/ProgressBarSelectionColor.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-07
 ## JTableHeaderにJButtonを追加する
 `JTableHeader`にクリックするとポップアップメニューを表示する`JButton`を追加します。
 
-
 {% download https://lh3.googleusercontent.com/-ccZ08VSXYwE/Trd27UaeD2I/AAAAAAAABEk/1NAYoZ1NGV0/s800/ButtonInTableHeader.png %}
 
 ### サンプルコード

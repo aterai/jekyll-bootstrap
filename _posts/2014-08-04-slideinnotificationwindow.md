@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-04
 ## JWindowをデスクトップにスライドインで表示する
 `JOptionPane`を追加した`JWindow`を、スライドインアニメーションを使ってデスクトップ上に表示します。
 
-
 {% download https://lh4.googleusercontent.com/-axruZWDGZys/U98iB0eZi8I/AAAAAAAACK0/hh_jWt5nsi4/s800/SlideInNotificationWindow.png %}
 
 ### サンプルコード

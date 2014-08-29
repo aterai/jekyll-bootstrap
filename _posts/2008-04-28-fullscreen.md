@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 ## Windowのフルスクリーン化
 `JDialog`や`JFrame`などを、フルスクリーン表示に切り替えます。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNRUUD2xI/AAAAAAAAAag/G7fNPgecnss/s800/FullScreen.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 ## JScrollBarを半透明にする
 半透明の`JScrollBar`を作成して、`JViewport`内部に配置します。
 
-
 {% download https://lh3.googleusercontent.com/-X8o390yxqhI/UZjhjkgUrkI/AAAAAAAABsY/Aajtim-5-uE/s800/TranslucentScrollBar.png %}
 
 ### サンプルコード

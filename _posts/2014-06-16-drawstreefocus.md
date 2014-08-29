@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-16
 ## JTreeのノードがフォーカス状態になった場合のBorderを変更する
 `JTree`のノードが選択されてフォーカス状態になった場合の`Border`による描画を`UIManager`で変更します。 
 
-
 {% download https://lh3.googleusercontent.com/-I62wWvQhdQI/U53BUsVLj9I/AAAAAAAACHk/SSHVLXv9m28/s800/DrawsTreeFocus.png %}
 
 ### サンプルコード

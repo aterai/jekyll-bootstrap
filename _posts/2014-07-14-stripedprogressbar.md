@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-14
 ## JProgressBarの不確定状態でのアニメーションパターンを変更する
 `JProgressBar`が不確定状態の場合に描画するアニメーションパターンを変更します。
 
-
 {% download https://lh5.googleusercontent.com/-NNzCJkyUG1U/U8KcWq3YRjI/AAAAAAAACJg/tB7jz0r9Frg/s800/StripedProgressBar.png %}
 
 ### サンプルコード

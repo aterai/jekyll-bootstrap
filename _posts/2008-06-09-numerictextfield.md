@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-09
 ## JTextFieldの入力を数値に制限する
 `JTextField`への入力を数値のみに制限します。ソースコードは、[Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)からの引用です。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQjTks6aI/AAAAAAAAAfw/VCCb81SSh1s/s800/NumericTextField.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
 ## JListをマウスクリックのみで複数選択する
 `JList`をアイテムをマウスクリックだけで複数選択できるように設定します。
 
-
 {% download https://lh6.googleusercontent.com/-wj2xm8BlBbA/TiPrjr1sQ5I/AAAAAAAAA_c/NiXO891B5fs/s800/ListMouseSelection.png %}
 
 ### サンプルコード

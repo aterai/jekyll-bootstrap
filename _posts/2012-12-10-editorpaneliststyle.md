@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-10
 ## JEditorPaneのStyleSheetを使ってlist bulletを画像に変更
 `JEditorPane`の`HTMLEditorKit`から`StyleSheet`を取得し、`list-style-image`を使って`List bullet`を変更します。
 
-
 {% download https://lh4.googleusercontent.com/-cVKrTqKAhYk/UMSbt8J09jI/AAAAAAAABY0/IWonqNua5dM/s800/EditorPaneListStyle.png %}
 
 ### サンプルコード

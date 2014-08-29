@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-26
 ## EventListenerを実装して独自イベント作成
 イベント(イベントオブジェクト、イベントリスナー、イベントソース)を新たに作成し、これを使用します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMNwgwo5I/AAAAAAAAAY0/lpZGrcgRE8g/s800/EventListener.png %}
 
 ### サンプルコード

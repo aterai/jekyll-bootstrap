@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-26
 ## Fontのアウトラインを取得して文字列の内部を修飾する
 クリップを設定することで描画範囲を制限し、文字列の内部を異なる色で修飾します。
 
-
 {% download https://lh5.googleusercontent.com/-1UyXoR9Qkyo/ToAw2259JmI/AAAAAAAABC4/xHq03u7R3v4/s800/LineSplittingLabel.png %}
 
 ### サンプルコード

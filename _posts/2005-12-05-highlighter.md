@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-05
 ## Highlighterで文字列をハイライト
 `Highlighter`を使ってテキスト中の文字列を強調表示します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN25SyRaI/AAAAAAAAAbc/i3gVEjh-mlQ/s800/Highlighter.png %}
 
 ### サンプルコード

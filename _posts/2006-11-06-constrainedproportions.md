@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-06
 ## JFrameの縦横比を一定にする
 `JFrame`の幅と高さの比率が一定になるように制限します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKJeWlAAI/AAAAAAAAAVg/GMclfo0TYBM/s800/ConstrainedProportions.png %}
 
 ### サンプルコード

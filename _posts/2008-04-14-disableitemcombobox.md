@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
 ## JComboBoxのアイテムを選択不可にする
 `JComboBox`のドロップダウンリストで、指定したアイテムを選択不可にします。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLHzjDYpI/AAAAAAAAAXE/M4bkzWJetUI/s800/DisableItemComboBox.png %}
 
 ### サンプルコード

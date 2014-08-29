@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
 ## JRadioButtonの文字色を変更
 `JRadioButton`の文字色やアイコンを変更します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRa2rE0nI/AAAAAAAAAhI/A6NX-uUoYjM/s800/RadioButtonTextColor.png %}
 
 ### サンプルコード

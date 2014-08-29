@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-05
 ## JTableのフォーカスを一行全体に適用する
 `JTable`のフォーカスをセルではなく、一行全体に掛かっているように表示します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPOarzqiI/AAAAAAAAAdo/uwFLFlU_EpI/s800/LineFocusTable.png %}
 
 ### サンプルコード

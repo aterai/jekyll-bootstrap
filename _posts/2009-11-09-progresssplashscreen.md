@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-09
 ## JDialogでモーダルなJProgressBar付きSplash Screenを表示する
 `JDialog`でモーダルな`JProgressBar`付き`Splash Screen`を表示します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRSxG9iaI/AAAAAAAAAg8/Wpd3hycacS4/s800/ProgressSplashScreen.png %}
 
 ### サンプルコード

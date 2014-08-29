@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10
 ## JLayerで指定したコンポーネントへの入力を禁止
 `JDK 7`で導入された、`JLayer`を利用して、指定したコンポーネントへの入力を禁止します。
 
-
 {% download https://lh3.googleusercontent.com/-fJbneWE3WB4/TpLGoNbk1TI/AAAAAAAABDk/GJWfhRR4UB0/s800/DisableInputLayer.png %}
 
 ### サンプルコード

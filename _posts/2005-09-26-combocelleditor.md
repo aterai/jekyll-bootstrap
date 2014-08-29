@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-26
 ## JTableのCellEditorにJComboBoxを設定
 `JTable`の`CellEditor`に`JComboBox`を使用し、リストから値を選択できるようにします。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJy9xBM6I/AAAAAAAAAU8/h5YELRcY4gE/s800/ComboCellEditor.png %}
 
 ### サンプルコード

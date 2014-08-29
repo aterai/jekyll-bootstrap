@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-02
 ## JProgressBarの進捗状況を円形で表示する
 `JProgressBar`の進捗状況を円形表示するように設定します。
 
-
 {% download https://lh3.googleusercontent.com/-K2Us5zyEGJs/U4rt4SgHxVI/AAAAAAAACGo/IBfgQ2C1jxE/s800/ProgressCircle.png %}
 
 ### サンプルコード

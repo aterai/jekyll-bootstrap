@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-22
 ## JFileChooserのリサイズなどを制限
 `JFileChooser`のリサイズや、最小サイズ以下へのサイズ変更を禁止します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTM16q-C_I/AAAAAAAAAZ0/i21vjp9vPjc/s800/FixedSizeFileChooser.png %}
 
 ### サンプルコード

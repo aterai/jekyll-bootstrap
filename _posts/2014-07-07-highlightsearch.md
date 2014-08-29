@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-07
 ## JTextAreaでハイライト付き検索を行う
 `JTextArea`内の文字列を指定した条件で検索し、マッチした文字列をすべてハイライト表示します。
 
-
 {% download https://lh5.googleusercontent.com/-jdjIr-6A1l8/U7ljpxPgxzI/AAAAAAAACJI/x2Okpzkcce8/s800/HighlightSearch.png %}
 
 ### サンプルコード

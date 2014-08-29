@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-27
 ## Nimbusの外観をUIDefaultsで変更する
 `NimbusLookAndFeel`の外観を`UIDefaults`を使って部分的に変更します。
 
-
 {% download https://lh4.googleusercontent.com/-iuOm0KmZLK4/UaIp6IGdL4I/AAAAAAAABso/TUvbvWNNQuI/s800/UIDefaultsOverrides.png %}
 
 ### サンプルコード

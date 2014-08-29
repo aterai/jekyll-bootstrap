@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-08
 ## JTabbedPaneのタブにJTextFieldを配置してタイトルを編集
 `JTabbedPane`で選択されたタブに`JTextField`を配置し、そのタイトルを編集します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU43AZWdI/AAAAAAAAAmw/6klnGPa4D9o/s800/TabTitleEditor.png %}
 
 ### サンプルコード

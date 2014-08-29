@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-16
 ## JTextAreaのキャレットを上書きモード対応にする
 `JTextArea`にキャレット上の文字を上書きする上書きモードを追加します。[Swing - JTextPane edit mode (insert or overwrite)???](https://forums.oracle.com/forums/thread.jspa?threadID=1383467)のソースコードを変更して全角文字対応にしています。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQtaGO6gI/AAAAAAAAAgA/XPqHe-c_DUo/s800/OverTypeMode.png %}
 
 ### サンプルコード

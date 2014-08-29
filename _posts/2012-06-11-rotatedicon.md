@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-11
 ## Iconを回転する
 画像ファイルから`90`、`180`、`270`度回転した`Icon`を作成します。
 
-
 {% download https://lh4.googleusercontent.com/-OK_vUTiAiCA/T9WIzXvRm9I/AAAAAAAABNk/ubus049qH04/s800/RotatedIcon.png %}
 
 ### サンプルコード

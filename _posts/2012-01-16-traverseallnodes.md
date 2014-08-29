@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-16
 ## JTreeのノードを走査する
 `JTree`のノードから`Enumeration`を取得してサブツリーの走査を行います。
 
-
 {% download https://lh5.googleusercontent.com/-m8cdaUCibl0/TxPCZQMYqkI/AAAAAAAABH4/eAK9LyYkv14/s800/TraverseAllNodes.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-14
 ## OverlayLayoutの使用
 `OverlayLayout`を使用し、`JButton`を重ねて配置します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQqzbG85I/AAAAAAAAAf8/GAYWzSVrHvg/s800/OverlayLayout.png %}
 
 ### サンプルコード

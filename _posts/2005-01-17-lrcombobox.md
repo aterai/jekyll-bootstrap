@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-17
 ## JComboBoxのItemを左右に配置
 `JComboBox`の`Item`にテキストを左右に分けて配置します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPk2QD9aI/AAAAAAAAAeM/xrl0d1ms74g/s800/LRComboBox.png %}
 
 ### サンプルコード

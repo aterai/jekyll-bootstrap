@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-24
 ## Cursorオブジェクトの生成
 新しいカスタムカーソルオブジェクトを作成します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKTOEY7FI/AAAAAAAAAVw/OeBJRlIWHsQ/s800/CustomCursor.png %}
 
 ### サンプルコード

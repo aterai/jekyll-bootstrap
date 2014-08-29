@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-01
 ## JTabbedPaneのタブにMnemonicを追加
 `JTabbedPane`のタブに`Mnemonic`を追加します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUu2fjTpI/AAAAAAAAAmg/EST6gnFRH84/s800/TabMnemonic.png %}
 
 ### サンプルコード

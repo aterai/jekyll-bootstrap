@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-23
 ## JTableのColumn名を変更する
 `JTable`の`Column`名を`JPopupMenu`を使用して変更します。
 
-
 {% download https://lh4.googleusercontent.com/-axnByzuSfvw/Uj9Bj3mhK0I/AAAAAAAAB2U/GgzDuKdOje8/s800/EditColumnName.png %}
 
 ### サンプルコード

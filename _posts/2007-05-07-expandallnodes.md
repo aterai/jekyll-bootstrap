@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-07
 ## JTreeのノードを展開・折り畳み
 `JTree`のすべてのノードに対して、展開、折り畳みを行います。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMS3T9nvI/AAAAAAAAAY8/ooi4QMbp6fA/s800/ExpandAllNodes.png %}
 
 ### サンプルコード

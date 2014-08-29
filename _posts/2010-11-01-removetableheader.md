@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-01
 ## JTableHeaderを非表示にする
 `JTableHeader`の表示、非表示を切り替えます。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRpYOxz3I/AAAAAAAAAhg/7HdNawHaulI/s800/RemoveTableHeader.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-07
 ## JTableのCellEditorに設定したJComboBoxに余白を追加する
 `JTable`の`CellEditor`に設定した`JComboBox`に余白を追加します。
 
-
 {% download https://lh4.googleusercontent.com/-dIea13PoJ70/T6c7YezP1BI/AAAAAAAABMQ/e0IqDjxhjpw/s800/ComboBoxCellEditorInsets.png %}
 
 ### サンプルコード

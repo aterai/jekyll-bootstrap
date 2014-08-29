@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-20
 ## TableCellEditorをスクロール可能にする
 `JTable`の`TableCellEditor`として、`JTextArea`と`JScrollPane`を使用します。
 
-
 {% download https://lh4.googleusercontent.com/-DDRbJ9WhSJk/Tf7btYjUE7I/AAAAAAAAA9s/yVKIKC55zIw/s800/ScrollingCellEditor.png %}
 
 ### サンプルコード

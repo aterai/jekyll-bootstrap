@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-13
 ## JToolTipにアイコンを表示
 `JToolTip`にアイコンを表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png %}
 
 ### サンプルコード

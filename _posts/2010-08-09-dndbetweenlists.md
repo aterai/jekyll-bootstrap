@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-09
 ## JList間でのドラッグ＆ドロップによるアイテムの移動
 `JList`間でのドラッグ＆ドロップによるアイテムの移動や並べ替えを行います。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLUTkzH4I/AAAAAAAAAXY/tSQriEN1G_Y/s800/DnDBetweenLists.png %}
 
 ### サンプルコード

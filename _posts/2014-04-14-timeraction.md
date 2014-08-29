@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-14
 ## Timerの使用数を変更
 パネルのタイルアニメーションで使用する`java.swing.Timer`の数を変更して動作のテストを行います。
 
-
 {% download https://lh6.googleusercontent.com/-Kc02XwN3fHA/U0qu1BcXNEI/AAAAAAAACDg/UDwGuPoJmjk/s800/TimerAction.png %}
 
 ### サンプルコード

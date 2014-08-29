@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-03
 ## JListのセル内にJButtonを配置する
 `JList`のセル内に複数の`JButton`を配置します。
 
-
 {% download https://lh3.googleusercontent.com/-j4_Xv9F17Jc/TolDAZSkQUI/AAAAAAAABDU/GK_sK9k5aJE/s800/ButtonsInListCell.png %}
 
 ### サンプルコード

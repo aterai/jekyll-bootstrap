@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-17
 ## JRootPaneにリサイズのための装飾を設定する
 `JFrame`自体の装飾を削除し、`JRootPane`にリサイズのためのウィンドウ装飾(透明)を設定します。
 
-
 {% download https://lh3.googleusercontent.com/-6jloCHHvTmw/Ub30100G84I/AAAAAAAABuM/AHxMNa5jyB0/s800/WindowDecorationStyle.png %}
 
 ### サンプルコード

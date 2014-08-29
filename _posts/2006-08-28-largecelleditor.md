@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-28
 ## JTableの編集にセルより大きなセルエディタを使用
 通常のセルエディタではなく、セルより大きなアイコンを選択する為のセルエディタを使用して`JTable`を編集します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO6b-zTJI/AAAAAAAAAdI/UAROdzzun4k/s800/LargeCellEditor.png %}
 
 ### サンプルコード

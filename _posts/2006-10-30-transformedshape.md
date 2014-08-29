@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-30
 ## Fontを回転する
 文字のアウトラインを取得して、これを回転してみます。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVtRPTfJI/AAAAAAAAAoE/Qiy0jcMt_l0/s800/TransformedShape.png %}
 
 ### サンプルコード

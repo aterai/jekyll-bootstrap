@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-20
 ## JSpinnerの上下限値をBigDecimalで比較する
 `JSpinner`で浮動小数点型のモデルを使用する場合、最大値と最小値の比較を`BigDecimal`で行うよう変更します。
 
-
 {% download https://lh6.googleusercontent.com/-JztoRl3kot0/UtvN48iHZ3I/AAAAAAAAB-g/D3QcAYgr_ks/s800/BigDecimalSpinnerModel.png %}
 
 ### サンプルコード

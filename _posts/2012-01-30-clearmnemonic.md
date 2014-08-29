@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-30
 ## MnemonicをクリアしてJButtonを初期状態に戻す
 `JButton`に設定された`Mnemonic`をクリアして初期状態に戻します。
 
-
 {% download https://lh4.googleusercontent.com/-VBCuKbB3hhs/TyZJM3aWNzI/AAAAAAAABIg/01Dscav-qV4/s800/ClearMnemonic.png %}
 
 ### サンプルコード

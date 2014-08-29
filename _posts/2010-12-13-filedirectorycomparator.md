@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-13
 ## JTableでファイルとディレクトリを別々にソート
 `JTable`でファイルとディレクトリを別々にソートし、ディレクトリが常に先頭になるように設定します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQXAQuafMsI/AAAAAAAAAqU/BDQdRbMeSnE/s800/FileDirectoryComparator.png %}
 
 ### サンプルコード

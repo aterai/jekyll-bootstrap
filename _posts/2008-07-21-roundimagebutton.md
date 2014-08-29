@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
 ## ImageIconの形でJButtonを作成
 任意の`Shape`とその形に透過色を設定した画像を使って`JButton`を作成します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSO4fquKI/AAAAAAAAAic/UdMAZSREN1U/s800/RoundImageButton.png %}
 
 ### サンプルコード

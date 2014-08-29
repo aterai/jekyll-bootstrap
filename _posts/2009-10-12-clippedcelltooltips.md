@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-12
 ## JTableのセルがクリップされている場合のみJToolTipを表示
 `JTable`のセルがクリップされている場合のみ`JToolTip`を表示します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJNQAyg-I/AAAAAAAAAUA/F6oQbiUShl4/s800/ClippedCellTooltips.png %}
 
 ### サンプルコード

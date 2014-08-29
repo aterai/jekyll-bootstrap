@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-09
 ## JFrameの終了をキャンセル
 `JFrame`を閉じる前に、本当に終了してよいか、終了をキャンセルするかなどを確認するダイアログを表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWuSq18TI/AAAAAAAAAps/aCkiOWRqfDE/s800/WindowClosing.png %}
 
 ### サンプルコード

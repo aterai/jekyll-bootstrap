@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-14
 ## JSliderのSnapToTicksをマウスのドラッグでも適用する
 `JSlider`の`SnapToTicks`をマウスでのドラッグ中にも適用されるように設定します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTU-ruijI/AAAAAAAAAkM/p3Mze4pjyEk/s800/SnapToTicksDrag.png %}
 
 ### サンプルコード

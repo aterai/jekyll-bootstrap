@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
 ## JButtonを半透明にする
 半透明な`JButton`を作成します。
 
-
 {% download https://lh3.googleusercontent.com/-W5o-8ilpY6k/UOCzLo2oOeI/AAAAAAAABZ0/m1_AjYpKqiY/s800/TranslucentButton.png %}
 
 ### サンプルコード

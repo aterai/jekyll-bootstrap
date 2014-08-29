@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-16
 ## JFileChooserを編集不可にする
 `JFileChooser`内でのファイル名変更や新規フォルダ作成などの編集を不可にします。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTR_zuU1UI/AAAAAAAAAiE/nZgj97xKO24/s800/ROFileChooser.png %}
 
 ### サンプルコード

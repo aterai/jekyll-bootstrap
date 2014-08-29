@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-25
 ## JTableのセルの高さを自動調整
 `JTable`のセルの高さを、文字列の折り返しに応じて自動調整します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH4TWFB1I/AAAAAAAAAR4/8C89wEJ8EUA/s800/AutoWrapTableCell.png %}
 
 ### サンプルコード

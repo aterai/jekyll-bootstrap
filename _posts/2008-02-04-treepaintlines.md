@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-04
 ## JTreeの水平垂直線を表示しない
 `JTree`のアイコンを繋ぐ水平垂直線の表示の有無を切り替えます。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWNxTrfYI/AAAAAAAAAo4/xS9RjkcNYYM/s800/TreePaintLines.png %}
 
 ### サンプルコード

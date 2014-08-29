@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-03
 ## JScrollPaneのスクロールを禁止
 `JScrollPane`のスクロールを一時的に禁止します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLM6S99OI/AAAAAAAAAXM/9r2e_2JRA5g/s800/DisableScrolling.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-10
 ## JMenuBarの背景に画像を表示する
 `JMenuBar`の背景に画像を表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPxQA13fI/AAAAAAAAAeg/SAN79wHPkQc/s800/MenuBarBackground.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-16
 ## JLayerで隣接する別コンポーネント上に縁を描画
 `JLayer`を使用して隣接する別コンポーネント上にも縁や影を描画します。
 
-
 {% download https://lh5.googleusercontent.com/-VshDpoewqBc/Uq2wDsedThI/AAAAAAAAB8g/TFMskJO7jys/s800/OverlapBorderPaintLayer.png %}
 
 ### サンプルコード

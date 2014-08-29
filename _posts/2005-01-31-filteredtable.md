@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-31
 ## JTableに行フィルタで表示の切り替え
 `JTable`に表示する行をフィルタを使用して切り替えます。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMpQqDR4I/AAAAAAAAAZg/vitkhyUoKkI/s800/FilteredTable.png %}
 
 ### サンプルコード

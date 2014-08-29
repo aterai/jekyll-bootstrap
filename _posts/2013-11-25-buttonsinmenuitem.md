@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-25
 ## JMenuItemの内部にJButtonを配置する
 `JMenuItem`の内部に切り取り、コピー、貼り付けを行う`JButton`を配置します。
 
-
 {% download https://lh6.googleusercontent.com/-aY1o9VhHFWI/UpHzycRD8gI/AAAAAAAAB64/jaFbU_zn7hI/s800/ButtonsInMenuItem.png %}
 
 ### サンプルコード

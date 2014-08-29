@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-06
 ## JTreeの選択状態を解除する
 `JTree`でノード以外の領域をマウスでクリックした場合、選択状態を解除します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWDzni-uI/AAAAAAAAAoo/r6UW4JENwgI/s800/TreeClearSelection.png %}
 
 ### サンプルコード

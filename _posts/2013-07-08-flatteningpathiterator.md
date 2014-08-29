@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-08
 ## FlatteningPathIteratorでShape上の点を取得する
 `FlatteningPathIterator`を使って平坦化された`Shape`上の座標点を取得、描画します。
 
-
 {% download https://lh4.googleusercontent.com/-3GsdpxueSG8/Udl1tOfisII/AAAAAAAABvc/SBOIf1ZPPUk/s800/FlatteningPathIterator.png %}
 
 ### サンプルコード

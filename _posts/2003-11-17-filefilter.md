@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-17
 ## JFileChooserにファイルフィルタを追加
 `JFileChooser`にファイルフィルタを追加します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMc7NJ5UI/AAAAAAAAAZM/p-hliI-ZnLs/s800/FileFilter.png %}
 
 ### サンプルコード

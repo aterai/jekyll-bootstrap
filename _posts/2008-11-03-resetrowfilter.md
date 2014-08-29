@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-03
 ## JTableのRowFilterを一旦解除してソート
 `JTable`の`RowFilter`を一旦解除してソートし、再びフィルタを設定することで表示される行を更新します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRuQZLwOI/AAAAAAAAAho/ovjovr-5nuI/s800/ResetRowFilter.png %}
 
 ### サンプルコード

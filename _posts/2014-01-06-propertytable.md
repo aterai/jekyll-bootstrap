@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-06
 ## JTableでプロパティ一覧表を作成する
 `JTable`の行ごとにクラスに応じたセルエディタなどを適用することで、プロパティ一覧表を作成します。
 
-
 {% download https://lh4.googleusercontent.com/-ZueCWsZFbOQ/UslO6WVldNI/AAAAAAAAB9g/53vsd2t0OPo/s800/PropertyTable.png %}
 
 ### サンプルコード

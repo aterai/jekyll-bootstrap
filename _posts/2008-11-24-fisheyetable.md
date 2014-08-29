@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-24
 ## JTableの行の高さを変更する
 `JTable`の行の高さを変更して、マウスカーソルの下を魚眼レンズのように拡大します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMw3Q5yMI/AAAAAAAAAZs/0O7lUunN9Rw/s800/FishEyeTable.png %}
 
 ### サンプルコード

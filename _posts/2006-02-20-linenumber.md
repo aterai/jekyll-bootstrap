@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-20
 ## JTextAreaに行番号を表示
 `JTextArea`に行番号を表示します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPV_bkDWI/AAAAAAAAAd0/Jktuzx5j5gU/s800/LineNumber.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-14
 ## JTextComponentでサロゲートペアのテスト
 `JEditorPane`などで数値文字参照や`Unicode`エスケープを使ってサロゲートペアのテストをします。
 
-
 {% download https://lh5.googleusercontent.com/-BY6N3kDDUG8/T7ByWIn0mgI/AAAAAAAABMo/4dpU-rm8zAQ/s800/SurrogatePair.png %}
 
 ### サンプルコード

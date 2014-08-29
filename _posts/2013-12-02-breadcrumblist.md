@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-02
 ## FlowLayoutでボタンを重ねてパンくずリストを作成する
 `FlowLayout`の水平間隔をマイナスにして、`JRadioButton`を重ねて表示し、パンくずリスト風のコンポーネントを作成します。
 
-
 {% download https://lh5.googleusercontent.com/-aKK_2LaPfVQ/UpsqWSS4lUI/AAAAAAAAB7c/VSzPRuRu3IY/s800/BreadcrumbList.png %}
 
 ### サンプルコード

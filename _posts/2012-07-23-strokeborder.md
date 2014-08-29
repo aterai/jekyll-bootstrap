@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-23
 ## StrokeBorderを使用する
 `Java 1.7.0`で導入された`StrokeBorder`をテストします。
 
-
 {% download https://lh3.googleusercontent.com/-MSfWQgMprsI/UAy_-BOqVII/AAAAAAAABPo/0uH5WtaajqY/s800/StrokeBorder.png %}
 
 ### サンプルコード

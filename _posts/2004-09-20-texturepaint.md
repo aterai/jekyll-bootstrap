@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-20
 ## TexturePaintを使って背景に画像を表示
 `TexturePaint`を使用して背景にタイル状に画像を貼り付けます。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVUeXC5lI/AAAAAAAAAnc/CWUYfOODy1E/s800/TexturePaint.png %}
 
 ### サンプルコード

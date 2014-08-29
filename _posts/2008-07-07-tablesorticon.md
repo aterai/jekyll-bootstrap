@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-07
 ## JTableのソートアイコンを変更
 `JTable`のソートアイコンを非表示にしたり、別の画像に変更します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUsaUYVkI/AAAAAAAAAmc/34Qz14LqOGc/s800/TableSortIcon.png %}
 
 ### サンプルコード

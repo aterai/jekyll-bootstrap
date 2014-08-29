@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-05
 ## RowFilterでJTableのページ分割
 `JDK 6`で導入された`RowFilter`を使って、`JTable`の行を`Pagination`風に分割して表示します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUiUh8yiI/AAAAAAAAAmM/eY1zd24d0ac/s800/TablePagination.png %}
 
 ### サンプルコード

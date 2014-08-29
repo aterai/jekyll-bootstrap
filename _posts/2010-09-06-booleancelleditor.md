@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-06
 ## JTableが使用するBooleanCellEditorの背景色を変更
 `JTable`がデフォルトで使用する`BooleanCellEditor`の背景色を選択色に変更します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIJ0rZk-I/AAAAAAAAASU/JvYohArvFpU/s800/BooleanCellEditor.png %}
 
 ### サンプルコード

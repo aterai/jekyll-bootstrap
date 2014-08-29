@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-29
 ## JButtonなどの高さを変更せずに幅を指定
 高さはデフォルトのまま幅だけを指定して、`JButton`、`JComboBox`、`JTextField`などのサイズを変更します。
 
-
 {% download https://lh5.googleusercontent.com/-B3A8vHPu9_I/UmY7hTtdmtI/AAAAAAAAB4s/7NknsHc_vwI/s800/ButtonWidth.png %}
 
 ### サンプルコード

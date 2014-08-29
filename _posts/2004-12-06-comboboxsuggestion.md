@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-06
 ## JComboBoxで候補一覧を表示
 `JComboBox`に入力候補の一覧表示機能(補完機能、コードアシスト、コンテンツアシスト)を追加します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJwW_1EoI/AAAAAAAAAU4/ENqthfUJCsc/s800/ComboBoxSuggestion.png %}
 
 ### サンプルコード

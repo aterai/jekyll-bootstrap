@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-22
 ## ProgressMonitorInputStreamを使用してテキストファイルのダウンロード状況を表示
 `ProgressMonitorInputStream`を使用してテキストファイルのダウンロード状態を進捗表示します。
 
-
 {% download https://lh4.googleusercontent.com/-gXnU23f7iiw/UXQuzmKdfVI/AAAAAAAABp8/aPk0QR78NlY/s800/ProgressMonitorInputStream.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-22
 ## JComboBoxのPopupMenuを右側に表示する
 `JComboBox`の右側に`PopupMenu`が表示されるように設定します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTR6-BHykI/AAAAAAAAAh8/0mx4AWajd58/s800/RightPopupMenuComboBox.png %}
 
 ### サンプルコード

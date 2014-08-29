@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-17
 ## JFrameのアイコンを非表示
 `JFrame`などのタイトルバーにあるアイコンを非表示にします。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK49Ua_nI/AAAAAAAAAWs/Ipb_maWCOgY/s800/DisableDefaultIcon.png %}
 
 ### サンプルコード

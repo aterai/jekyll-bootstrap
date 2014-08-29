@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-31
 ## JTableのヘッダ入れ替えを禁止
 ドラッグ＆ドロップでのカラムヘッダ入れ替えを禁止します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRr3AzfQI/AAAAAAAAAhk/mfgsIhuaEz0/s800/Reordering.png %}
 
 ### サンプルコード

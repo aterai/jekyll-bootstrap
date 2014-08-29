@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-18
 ## JTableの次行にTabキーでフォーカスを移動
 <kbd>Tab</kbd>キーでセルのフォーカスが次行に移動するように設定します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTS5aM0UvI/AAAAAAAAAjg/g-wlrmrzml8/s800/SelectNextRow.png %}
 
 ### サンプルコード

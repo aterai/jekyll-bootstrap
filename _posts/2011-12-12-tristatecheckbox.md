@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-12
 ## JCheckBoxに不定状態のアイコンを追加する
 `JCheckBox`の選択状態、非選択状態に加えて、不定状態を表すアイコンを追加します。
 
-
 {% download https://lh6.googleusercontent.com/-Rs-vnlD35Cg/TuTNCuEvU_I/AAAAAAAABF4/IzDezx4Rq8M/s800/TriStateCheckBox.png %}
 
 ### サンプルコード

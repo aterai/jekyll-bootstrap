@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-21
 ## JListのセル中に配置したコンポーネント毎にカーソルを変更する
 `JList`のセルに配置されているコンポーネントをマウスの座標から検索し、それに設定されたカーソルを`JList`に適用します。
 
-
 {% download https://lh3.googleusercontent.com/-v3ugRz81Y0Q/UmPxM3SwOYI/AAAAAAAAB4Y/PqZaNMCPgN0/s800/CursorOfCellComponent.png %}
 
 ### サンプルコード

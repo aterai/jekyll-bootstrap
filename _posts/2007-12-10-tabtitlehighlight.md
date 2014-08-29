@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-10
 ## JTabbedPaneのタブ文字列をハイライト
 `JTabbedPane`のタブ上に、マウスカーソルがある場合、その文字色を変更します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU7QqLieI/AAAAAAAAAm0/dgW3rio-pzA/s800/TabTitleHighlight.png %}
 
 ### サンプルコード

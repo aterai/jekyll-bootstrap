@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-23
 ## JSpinnerのボタンにToolTipを付ける
 `JSpinner`の上下ボタンに`JToolTip`を付けます。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTmW4UoMI/AAAAAAAAAks/SXmtS71QSg0/s800/SpinnerButton.png %}
 
 ### サンプルコード

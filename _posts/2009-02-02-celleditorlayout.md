@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
 ## TableCellEditorのレイアウトを変更
 `TableCellEditor`のレイアウトを変更して、`CellEditor`の隣に`JButton`を配置します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIlcF-6vI/AAAAAAAAATA/mS6Q_BfuY6c/s800/CellEditorLayout.png %}
 
 ### サンプルコード

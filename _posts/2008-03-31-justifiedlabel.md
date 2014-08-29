@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-31
 ## JLabelの文字揃え
 `JLabel`で、左右中央両端などの文字揃えをテストします。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOwQzSk-I/AAAAAAAAAc4/bD-z_hTSHB8/s800/JustifiedLabel.png %}
 
 ### サンプルコード

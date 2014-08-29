@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-18
 ## JMenuの領域内にマウスカーソルでポップアップメニューを表示する
 `JMenu`の領域内にマウスカーソルが入ったときにポップアップメニューが開くように設定します。
 
-
 {% download https://lh3.googleusercontent.com/-shu8CDTfLvg/USCnbrWYstI/AAAAAAAABd0/qODgUmweras/s800/PopupWithoutClickOnMenu.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-03
 ## RowFilterでJTableの行をフィルタリング
 `JDK 6`で導入された`TableRowSorter`に`RowFilter`を設定して、行のフィルタリングを行います。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTST-FvjRI/AAAAAAAAAik/ZbU9nuVVCiI/s800/RowFilter.png %}
 
 ### サンプルコード

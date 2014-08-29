@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-27
 ## JPopupMenuを半透明にする
 `JPopupMenu`を半透明にします。
 
-
 {% download https://lh3.googleusercontent.com/-SKQis3B-SmY/T0dd531MovI/AAAAAAAABJk/fWIZIAeE3oE/s800/TranslucentPopupMenu.png %}
 
 ### サンプルコード

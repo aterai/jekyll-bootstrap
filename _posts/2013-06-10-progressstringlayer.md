@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-10
 ## JProgressBarの文字列をJLayerを使って表示する
 垂直`JProgressBar`の文字列を`JLayer`を使って横組で表示します。
 
-
 {% download https://lh4.googleusercontent.com/-ATDPf7XMEzg/UbTLqsulmsI/AAAAAAAABt0/_0ZOg11jmXk/s800/ProgressStringLayer.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-24
 ## TableCellRendererに進捗文字列を設定したJProgressBarを使用する
 `JTable`の`TableCellRenderer`として、進捗文字列を表示する`JProgressBar`を設定します。
 
-
 {% download https://lh4.googleusercontent.com/-XSMYQI-BTU8/Uy67ZR-E4TI/AAAAAAAACCE/2zdsU6o7iA0/s800/StringPaintedCellProgressBar.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-11
 ## TableCellRendererに複数行のHtmlテキストを表示する場合に行揃えを設定する
 `JTable`の`Cell`に複数行になる`Html`テキストを表示する場合の行揃えによる描画の変化をテストします。
 
-
 {% download https://lh5.googleusercontent.com/-Id-AlEWH0-M/U-eKsOPZf6I/AAAAAAAACLI/asLZtz0cOvk/s800/HtmlCellVerticalAlignment.png %}
 
 ### サンプルコード

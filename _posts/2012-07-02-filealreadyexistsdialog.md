@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-02
 ## JFileChooserを開いたままファイルの上書き警告ダイアログを表示する
 `JFileChooser`で名前を付けて保存する場合、すでに存在するファイルを選択してセーブボタンを押すと上書き警告ダイアログを表示するように設定します。
 
-
 {% download https://lh6.googleusercontent.com/-77H8Wl7UgV0/T_E-hZznv2I/AAAAAAAABOo/RIVqWmchCfw/s800/FileAlreadyExistsDialog.png %}
 
 ### サンプルコード

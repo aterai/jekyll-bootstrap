@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-03
 ## JTreeへのノード追加をテスト
 JTreeにノード追加をした場合、兄弟ノードの展開状態などがどうなるかをテストします。
 
-
 {% download https://lh3.googleusercontent.com/-siBaGX1oXx8/Uu8JPWZaA7I/AAAAAAAAB_Y/fzV1VSKYg9I/s800/InsertNodeInto.png %}
 
 ### サンプルコード

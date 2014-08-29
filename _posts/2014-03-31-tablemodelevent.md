@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
 ## JTableのモデルが変更されたことをイベントで受け取る
 `JTable`のモデルの変更を受け取って`JTableHeader`に追加した`JCheckBox`を更新します。
 
-
 {% download https://lh3.googleusercontent.com/-Mndxsu0wtCM/Uzg00YuVfyI/AAAAAAAACCw/HoRS9CVP_-o/s800/TableModelEvent.png %}
 
 ### サンプルコード

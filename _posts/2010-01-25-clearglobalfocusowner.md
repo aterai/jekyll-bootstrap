@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-25
 ## GlobalFocusをクリアする
 `GlobalFocus`をクリアして、フォーカスをもつコンポーネントがない状態に戻します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJA-Nc1vI/AAAAAAAAATs/mH0hhS2R1n8/s800/ClearGlobalFocusOwner.png %}
 
 ### サンプルコード

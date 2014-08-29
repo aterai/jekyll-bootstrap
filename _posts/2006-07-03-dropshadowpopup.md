@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 ## JPopupMenuに半透明の影を付ける
 `Robot`で画面をキャプチャーするなどして、半透明の影を`JPopupMenu`に付けます。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMBgsMvZI/AAAAAAAAAYg/QBh9VXR7P-I/s800/DropShadowPopup.png %}
 
 ### サンプルコード

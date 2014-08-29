@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-29
 ## Borderのアニメーション
 `Border`の描画をアニメーションさせます。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR9UHQaAI/AAAAAAAAAiA/_Kn7tNr8M3s/s800/RippleBorder.png %}
 
 ### サンプルコード

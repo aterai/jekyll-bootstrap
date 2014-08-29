@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-28
 ## JEditorPaneのHTMLDocumentに要素を追加する
 `JEditorPane`の`HTMLDocument`から`table`要素を取得し、その子要素として`tr`要素などを追加します。
 
-
 {% download https://lh5.googleusercontent.com/-hU9bkPgb4Q8/U10bg5XoDfI/AAAAAAAACEI/BJrmelBz93M/s800/InsertHtmlText.png %}
 
 ### サンプルコード

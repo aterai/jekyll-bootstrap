@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-14
 ## JFrameを半透明化
 `JFrame`を半透明にします。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWw2d9LNI/AAAAAAAAApw/NXG2EcaSv_s/s800/WindowOpacity.png %}
 
 ### サンプルコード

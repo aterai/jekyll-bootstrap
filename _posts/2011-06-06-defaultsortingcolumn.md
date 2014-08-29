@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-06
 ## JTableがデフォルトでソートする列を設定する
 `JTable`がデフォルトでソートする列とその方向を設定します。
 
-
 {% download https://lh5.googleusercontent.com/-qvzRq_TxwSg/Texuvm22ELI/AAAAAAAAA84/DhfjZ3TEATk/s800/DefaultSortingColumn.png %}
 
 ### サンプルコード

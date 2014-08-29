@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
 ## JToolBarのドッキングを上下のみに制限
 `JToolBar`のドッキングを上下のみに制限して、左右を無視するように設定します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLq6lRV0I/AAAAAAAAAX8/dKnoZJh1xrM/s800/DockingConstraint.png %}
 
 ### サンプルコード

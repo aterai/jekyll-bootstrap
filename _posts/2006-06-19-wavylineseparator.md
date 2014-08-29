@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-19
 ## Separatorを波線で表示
 波線を使った`Separator`を作成します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWkeY23gI/AAAAAAAAApc/r6W1VFeeAYA/s800/WavyLineSeparator.png %}
 
 ### サンプルコード

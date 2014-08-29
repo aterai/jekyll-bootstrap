@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-30
 ## GroupLayoutの使用
 `JDK 6`で新しく導入された`GroupLayout`と`GridBagLayout`を比較しています。`GroupLayout`のサンプルは、`API`ドキュメントの例をそのまま引用しています。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNn9AdVUI/AAAAAAAAAbE/yOFdtRVr6P4/s800/GroupLayout.png %}
 
 ### サンプルコード

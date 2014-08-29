@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
 ## JTableのCellEditorとCellRendererにJSliderを使用する
 `JTable`の`CellEditor`と`CellRenderer`に`JSlider`を使用するように設定します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
 ## JTextAreaの背景に画像を表示
 `JTextArea`の背景に画像を表示しています。[Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/thread/1395763)のコードを引用しています。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIyAIY_mI/AAAAAAAAATU/GovGMBqjzRo/s800/CentredBackgroundBorder.png %}
 
 ### サンプルコード

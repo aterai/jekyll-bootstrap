@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-03
 ## JTextField内にアイコンを追加
 `JTextField`の内部にアイコンを表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOSatpfJI/AAAAAAAAAcI/9Ghfvb82FsM/s800/IconTextField.png %}
 
 ### サンプルコード

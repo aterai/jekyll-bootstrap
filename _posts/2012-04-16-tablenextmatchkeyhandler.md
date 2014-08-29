@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-16
 ## JTableで先頭文字のキー入力による検索を行う
 `JTable`にフォーカスがある状態でキー入力をした場合、先頭文字が一致する行を検索して選択状態にします。
 
-
 {% download https://lh4.googleusercontent.com/-UATkJ0JfmBQ/T4u5j_rhkGI/AAAAAAAABLc/1rVNsbM9D98/s800/TableNextMatchKeyHandler.png %}
 
 ### サンプルコード

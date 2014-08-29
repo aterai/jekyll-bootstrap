@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-26
 ## JTableのセルエディタにJPopupMenuを設定
 `JTable`のセルエディタに、`Copy`、`Paste`、`Undo`、`Redo`などを行う`JPopupMenu`を設定します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIn7Rc6TI/AAAAAAAAATE/drRaDYiUB1w/s800/CellEditorPopupMenu.png %}
 
 ### サンプルコード

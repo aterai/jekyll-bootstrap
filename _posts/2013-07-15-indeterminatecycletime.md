@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-15
 ## JProgressBarの不確定進捗サイクル時間を設定
 `JProgressBar`の不確定進捗状態アニメーションで使用するサイクル時間などを設定します。
 
-
 {% download https://lh3.googleusercontent.com/--xwJeUKsm8k/UeK6iFE0vkI/AAAAAAAABvw/SNNt1mvM4_c/s800/IndeterminateCycleTime.png %}
 
 ### サンプルコード

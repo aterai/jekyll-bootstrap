@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-13
 ## MediaTrackerで画像のサイズを取得
 `MediaTracker`で画像のサイズを取得します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPsQMGUsI/AAAAAAAAAeY/B8MAwtKhshY/s800/MediaTracker.png %}
 
 ### サンプルコード

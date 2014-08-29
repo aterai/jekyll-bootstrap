@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-29
 ## JFrameをスクリーン中央に表示
 フレームやダイアログなどをスクリーンの中央に表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIvEn-69I/AAAAAAAAATQ/Fw4dLY4C0EE/s800/CenterFrame.png %}
 
 ### サンプルコード

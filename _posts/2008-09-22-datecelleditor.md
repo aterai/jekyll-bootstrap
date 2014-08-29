@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-22
 ## CellEditorをJSpinnerにして日付を変更
 `JTable`で、日付を表示する列のセルエディタを`JSpinner`にします。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKdTsjXPI/AAAAAAAAAWA/vtjdEFUkZA4/s800/DateCellEditor.png %}
 
 ### サンプルコード

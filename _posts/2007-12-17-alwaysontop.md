@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-17
 ## JFrameを常に前面に表示する
 `JFrame`などを常に前面に表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTHh-ILwOI/AAAAAAAAARU/SYnOw7As81Y/s800/AlwaysOnTop.png %}
 
 ### サンプルコード

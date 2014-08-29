@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
 ## JTableのヘッダを透明化
 `JTable`のヘッダ背景、セル間の垂直罫線を非表示にします。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TZl3Ci_GNnI/AAAAAAAAA40/wSbo6ySTlz0/s800/TransparentTableHeader.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
 ## JTreeのノードにJProgressBarを表示する
 `JTree`のノードに`JProgressBar`を表示する`TreeCellRenderer`を設定します。
 
-
 {% download https://lh4.googleusercontent.com/-SBg5NOTGinM/UrcLHfPzXVI/AAAAAAAAB84/HD0k-sWiJGo/s800/TreeNodeProgressBar.png %}
 
 ### サンプルコード

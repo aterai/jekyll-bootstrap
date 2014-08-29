@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-29
 ## JComboBoxをJSpinnerの代わりに使用する
 `JSpinner`の代わりに`JComboBox`を使用することで、アイテムの文字色などを変更しています。
 
-
 {% download https://lh6.googleusercontent.com/-kpruQCgOnLE/UX2r6exfrII/AAAAAAAABqo/JZnFlTBy1zw/s800/SpinnerTextColor.png %}
 
 ### サンプルコード

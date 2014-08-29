@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
 ## JLabelでイニシャル組を行う
 `JLabel`の先頭文字を拡大、残りの文字列を`TextLayout`で回り込むよう配置し、ドロップキャップで描画します。
 
-
 {% download https://lh6.googleusercontent.com/-kf9qTpS1Olg/Un-Dk5bbC-I/AAAAAAAAB5s/fAVjwJVHBqA/s800/DropcapLabel.png %}
 
 ### サンプルコード

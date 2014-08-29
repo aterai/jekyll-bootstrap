@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-16
 ## JTableのセルの編集をコミット
 セルの編集中、フォーカスが別のコンポーネントに移動した場合、その編集を確定する方法をテストします。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVKX5loMI/AAAAAAAAAnM/hbhZT30xAgc/s800/TerminateEdit.png %}
 
 ### サンプルコード

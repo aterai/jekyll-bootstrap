@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-27
 ## UIManagerで使用するFontを統一
 `Swing`の各種コンポーネントで使用する全てのフォントを一気に変更します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNJ5XQrjI/AAAAAAAAAaU/lvxCohYLmBI/s800/FontChange.png %}
 
 ### サンプルコード

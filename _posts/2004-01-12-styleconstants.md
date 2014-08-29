@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-12
 ## JTextPaneに修飾した文字列を挿入
 `JTextPane`に、スタイル付けした文字列を挿入して、ログ風に表示します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT31r9lEI/AAAAAAAAAlI/7PqL2Aa3UJU/s800/StyleConstants.png %}
 
 ### サンプルコード

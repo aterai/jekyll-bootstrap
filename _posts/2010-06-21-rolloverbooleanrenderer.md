@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-21
 ## JCheckBoxのセルをロールオーバーする
 `JTable`のセルに`JCheckBox`を使用したときでも、マウスカーソルでロールオーバーするように設定します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSCUU481I/AAAAAAAAAiI/LzyeHFbwP40/s800/RolloverBooleanRenderer.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-17
 ## JTableのセルをエクスプローラ風に表示する
 セルの中にアイコンと文字列を配置し、エクスプローラ風に見えるよう、文字列だけにフォーカスをかけます。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMWzLLVKI/AAAAAAAAAZA/k3vF14Jt-V0/s800/ExplorerLikeTable.png %}
 
 ### サンプルコード

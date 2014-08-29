@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-05
 ## JTableの行ヘッダに列ヘッダのRendererを使用する
 `JTable`の行の描画に、`JTableHeader`から取得した列ヘッダの`Renderer`を適用します。
 
-
 {% download https://lh3.googleusercontent.com/-FSdrv2BDUCo/UJaJTUVXcdI/AAAAAAAABWU/gBeKokda9h8/s800/RowHeaderStyle.png %}
 
 ### サンプルコード

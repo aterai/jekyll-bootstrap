@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-18
 ## MouseWheelEventを親のJScrollPaneに転送する
 `JLayer`を使って、ネストする`JScrollPane`への`MouseWheelEvent`を転送し、スクロールが継続するように設定します。
 
-
 {% download https://lh4.googleusercontent.com/-Ax3sBgN85bo/U_DD4w3kEjI/AAAAAAAACLg/H0QTGo7hLH4/s800/WheelOverNestedScrollPane.png %}
 
 ### サンプルコード

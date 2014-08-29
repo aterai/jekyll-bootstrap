@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-23
 ## JTableHeaderのフォントを変更
 `TableCellRenderer`を使って、`JTable`のヘッダが使用するフォントを変更します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTNshbAJvI/AAAAAAAAAbM/xYo1iOQ9fxU/s800/HeaderFont.png %}
 
 ### サンプルコード

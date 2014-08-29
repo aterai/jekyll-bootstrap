@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-23
 ## JComboBoxの角を丸める
 `JComboBox`の左上、右上の角を丸める`Border`を設定します。
 
-
 {% download https://lh6.googleusercontent.com/-0VloXBzelwQ/T5TD3KZRIzI/AAAAAAAABLs/siwBGiic6Tw/s800/RoundedComboBox.png %}
 
 ### サンプルコード

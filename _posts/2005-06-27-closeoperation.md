@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-27
 ## JFrameの複数作成と終了
 `JFrame`を複数作成し、これらをすべて閉じた時にアプリケーションを終了します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJey1HvEI/AAAAAAAAAUc/KdbEeHP-Ij0/s800/CloseOperation.png %}
 
 ### サンプルコード

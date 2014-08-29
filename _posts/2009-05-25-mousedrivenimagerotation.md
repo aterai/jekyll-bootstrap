@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-25
 ## Mouseで画像を移動、回転
 画像をマウスのドラッグで任意の位置に移動、回転します。[Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)、[その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)からの移植になります。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQAQVe8YI/AAAAAAAAAe4/y6GTZLKjqx0/s800/MouseDrivenImageRotation.png %}
 
 ### サンプルコード

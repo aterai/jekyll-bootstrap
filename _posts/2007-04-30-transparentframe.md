@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-30
 ## JInternalFrameを半透明にする
 `JInternalFrame`のフレーム内を半透明にします。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTV8kztxuI/AAAAAAAAAoc/oXSU5-bQorE/s800/TransparentFrame.png %}
 
 ### サンプルコード

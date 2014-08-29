@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-21
 ## JTabbedPaneの各タブにJButtonを右寄せで追加する
 `JTabbedPane`のタブ上にそれを閉じるための`JButton`を`JLayer`を使用して右寄せで描画します。
 
-
 {% download https://lh4.googleusercontent.com/-slZiu9Gyq8I/U8wH6A1byMI/AAAAAAAACJ0/-aLfrJeKX4Y/s800/CloseableTabbedPane.png %}
 
 ### サンプルコード

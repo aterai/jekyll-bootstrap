@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-09
 ## WindowAncestor(親ウィンドウ)の取得
 `SwingUtilities.getWindowAncestor()`などで、親ウィンドウを取得します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWr-a0yaI/AAAAAAAAApo/Wm-nQMxDh4s/s800/WindowAncestor.png %}
 
 ### サンプルコード

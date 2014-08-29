@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-18
 ## JTextFieldでコピー、貼り付けなどを禁止
 `JTextField`へのコピー、貼り付け、切り取りを禁止します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTHX8kSixI/AAAAAAAAARE/cRSBUI5TJWo/s800/ActionMap.png %}
 
 ### サンプルコード

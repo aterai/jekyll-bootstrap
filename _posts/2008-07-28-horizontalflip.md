@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-28
 ## Shapeの反転
 `AffineTransform`で図形や画像を反転します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN731lMzI/AAAAAAAAAbk/Wc0qp3ocR88/s800/HorizontalFlip.png %}
 
 ### サンプルコード

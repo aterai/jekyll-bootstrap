@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-20
 ## JEditorPaneのHTMLEditorKitにCSSを適用
 `JEditorPane`に`StyleSheet`を追加した`HTMLEditorKit`を設定します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT6cwbhCI/AAAAAAAAAlM/PsSYnlumJJg/s800/StyleSheet.png %}
 
 ### サンプルコード

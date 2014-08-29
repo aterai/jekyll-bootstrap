@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-24
 ## JTableをソートした後の選択状態
 `JDK 1.6`で導入された`RowSorter`を使って、`JTable`をソートした場合、直前の選択状態がどう変化するかテストします。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWaXC_E3I/AAAAAAAAApM/H9h2pJw-VSQ/s800/UpdateSelectionOnSort.png %}
 
 ### サンプルコード

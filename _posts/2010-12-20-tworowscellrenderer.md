@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-20
 ## JTableのセル内に二行だけ表示
 `JTable`のセル内に文字列を二行分だけ表示し、あふれる場合は`...`で省略します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQ77KlEsZJI/AAAAAAAAAuE/mc9fcp-ZmBU/s800/TwoRowsCellRenderer.png %}
 
 ### サンプルコード

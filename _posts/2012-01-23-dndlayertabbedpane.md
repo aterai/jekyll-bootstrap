@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-23
 ## JLayerを使ってJTabbedPaneのタブの挿入位置を描画する
 `JLayer`を使って、タブのドラッグ＆ドロップでの移動先を`JTabbedPane`上に描画します。
 
-
 {% download https://lh3.googleusercontent.com/-xX0rzgauC5c/Txz4AxE_u2I/AAAAAAAABIM/jHQdxU1yP9g/s800/DnDLayerTabbedPane.png %}
 
 ### サンプルコード

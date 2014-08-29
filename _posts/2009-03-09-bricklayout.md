@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-09
 ## GridBagLayoutを使ってレンガ状に配置
 `GridBagLayout`を使ってコンポーネントをレンガ状に配置します。[Swing - GridBagLayout to create a board](https://forums.oracle.com/thread/1357310)を参考にしています。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIOzg1doI/AAAAAAAAASc/V_SwABvAldE/s800/BrickLayout.png %}
 
 ### サンプルコード

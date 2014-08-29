@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-09
 ## JTreeのセルエディタにJComboBoxなどを配置したJPanelを使用する
 `JTree`のセルエディタ、セルレンダラとして、`JComboBox`などを配置した`JPanel`を使用します。
 
-
 {% download https://lh4.googleusercontent.com/-kNa0cfgyvbY/U5SIYOWjVtI/AAAAAAAACHM/XkjN37IzSas/s800/ComboBoxCellEditor.png %}
 
 ### サンプルコード

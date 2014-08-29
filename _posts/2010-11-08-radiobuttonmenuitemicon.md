@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-08
 ## JRadioButtonMenuItemのチェックアイコンを変更する
 `JRadioButtonMenuItem`のチェックアイコンを変更します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRVf_tDmI/AAAAAAAAAhA/1F6GcDuJmcg/s800/RadioButtonMenuItemIcon.png %}
 
 ### サンプルコード

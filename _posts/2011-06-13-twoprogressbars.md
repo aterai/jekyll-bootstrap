@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-13
 ## SwingWorkerで複数のJProgressBarを使用する
 ひとつの`SwingWorker`で、進捗を表示する`JProgressBar`をふたつ使用します。
 
-
 {% download https://lh6.googleusercontent.com/-S6ko35_DIi8/TfWPa08dHvI/AAAAAAAAA9I/MNhC-0LF8YQ/s800/TwoProgressBars.png %}
 
 ### サンプルコード

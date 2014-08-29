@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-02-28
 ## TableSorterでJTableをソート
 `JDK 1.5.0`以前に、`The Java™ Tutorial`にあった`TableSorter.java`を使用して、`JTable`の行を降順、昇順、初期状態にソートします。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUp0MLx6I/AAAAAAAAAmY/omjw4LoJbbc/s800/TableSorter.png %}
 
 ### サンプルコード

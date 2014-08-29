@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-21
 ## MetalLookAndFeelで太字フォントを使用しない
 `MetalLookAndFeel`で太字フォントを使用しないように設定します。
 
-
 {% download https://lh4.googleusercontent.com/-7wQtHGyNRDQ/UPv6YyOBReI/AAAAAAAABbk/_vXFoJwk-ug/s800/BoldMetal.png %}
 
 ### サンプルコード

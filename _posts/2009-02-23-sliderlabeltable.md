@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-23
 ## JSliderの目盛にアイコンや文字列を追加する
 `JSlider`の目盛に`JComponent`を表示することで、アイコンを追加したり、文字列の色などを変更します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTNRK4g8I/AAAAAAAAAkA/dn8dNaWNmxM/s800/SliderLabelTable.png %}
 
 ### サンプルコード

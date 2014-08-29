@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-25
 ## JTextAreaの行をマウスでロールオーバー表示
 `JTextArea`のマウスカーソルがある行をロールオーバー表示します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQFUVNyQI/AAAAAAAAAfA/cTsyoFPSNEg/s800/MouseOverPainter.png %}
 
 ### サンプルコード

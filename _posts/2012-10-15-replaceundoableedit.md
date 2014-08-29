@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
 ## UndoManagerを使用した文字列選択ペーストの動作を変更する
 `JTextField`などに`UndoManager`を設定し、文字列を選択してペーストした後の`Undo`の動作を変更します。
 
-
 {% download https://lh5.googleusercontent.com/-GEc9R-QZvos/UKt2czK61tI/AAAAAAAABXk/vqH8TKxkqCM/s800/ReplaceUndoableEdit.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-05
 ## JSplitPaneのディバイダを展開、収納する
 `JSplitPane`のディバイダをマウスのクリックなどで一気に展開、収納できるように設定します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQl4nQ4PI/AAAAAAAAAf0/y7DMbOexVWs/s800/OneTouchExpandable.png %}
 
 ### サンプルコード

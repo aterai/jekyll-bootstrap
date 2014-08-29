@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-10
 ## JScrollPane内にあるJTableなどで追加した行が可視化されるようにスクロールする
 `JScrollPane`の`JViewport`内にある`JTable`、`JList`、`JTree`で、それぞれ追加された最終行が可視化されるようにスクロールします。
 
-
 {% download https://lh3.googleusercontent.com/-t_4BD1mGUGk/UE1eF0Ead3I/AAAAAAAABSM/4a4aPSpMDM4/s800/ScrollRectToVisible.png %}
 
 ### サンプルコード

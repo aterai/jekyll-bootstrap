@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-22
 ## LayoutManagerを使ってパネルの展開アニメーションを行う
 パネルの展開・収納をアニメーションで行う`LayoutManager`を作成します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO_fTHG-I/AAAAAAAAAdQ/9SHzG18aVW0/s800/LayoutAnimation.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-19
 ## JSpinnerを直接入力不可にする
 `JSpinner`のエディタを編集不可にして、ボタンでしか値を変更できないようにします。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTojxcMLI/AAAAAAAAAkw/BznS8i5Xfp4/s800/SpinnerEditor.png %}
 
 ### サンプルコード

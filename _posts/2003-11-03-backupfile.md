@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-03
 ## Backup Fileを番号付きで作成
 [xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップファイルを作成します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png %}
 
 ### サンプルコード

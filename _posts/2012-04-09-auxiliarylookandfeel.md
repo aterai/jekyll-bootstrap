@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-09
 ## AuxiliaryLookAndFeelを追加する
 `AuxiliaryLookAndFeel`を追加して、`WindowsLookAndFeel`の場合の動作を変更します。
 
-
 {% download https://lh4.googleusercontent.com/-SxIyCqWRFhk/T4JxXw96NSI/AAAAAAAABLQ/gM_5mjZPn1o/s800/AuxiliaryLookAndFeel.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
 ## JComboBox内にJButtonを左右に二つレイアウトする
 `JComboBox`が使用するレイアウトを変更して、検索欄風のコンポーネントを作成します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSqLxrLoI/AAAAAAAAAjI/M2OZzogy3-Q/s800/SearchBarLayoutComboBox.png %}
 
 ### サンプルコード

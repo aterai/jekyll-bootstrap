@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-30
 ## JTabbedPaneのタブアイコンとタイトルの位置
 `JTabbedPane`のタブ中に配置するタイトルとアイコンの位置を変更します。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTU96IMXGI/AAAAAAAAAm4/LydkDv26XY8/s800/TabTitleTextPosition.png %}
 
 ### サンプルコード

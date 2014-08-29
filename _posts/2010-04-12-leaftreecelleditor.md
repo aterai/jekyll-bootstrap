@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-12
 ## JTreeの葉ノードだけ編集可能にする
 `JTree`の葉ノードだけ編集可能にします。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPB-TVk9I/AAAAAAAAAdU/Aq5YDSMvqaY/s800/LeafTreeCellEditor.png %}
 
 ### サンプルコード

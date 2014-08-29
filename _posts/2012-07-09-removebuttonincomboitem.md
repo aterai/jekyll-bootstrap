@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-09
 ## JComboBoxのドロップダウンリストにJButtonを追加
 `JButton`のドロップダウンリストで、各アイテムにクリック可能な`JButton`を追加しこれを削除します。
 
-
 {% download https://lh6.googleusercontent.com/-x9uTOO9fSds/T_pElwy8GBI/AAAAAAAABPM/Jx30phjG3bM/s800/RemoveButtonInComboItem.png %}
 
 ### サンプルコード

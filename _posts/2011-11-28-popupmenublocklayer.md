@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28
 ## JLayerで子コンポーネントへの入力を制限する
 `JLayer`を使って、子コンポーネントへのすべての入力を制限します。
 
-
 {% download https://lh5.googleusercontent.com/-Svne2X0djJ8/TtJGGlPU-OI/AAAAAAAABFM/xjZfqHHbkJ0/s800/PopupMenuBlockLayer.png %}
 
 ### サンプルコード

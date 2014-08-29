@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-17
 ## JFileChooserでの隠しファイルの非表示設定を変更する
 `JFileChooser`で隠しファイルを表示するかどうかをポップアップメニューから切り替えます。
 
-
 {% download https://lh4.googleusercontent.com/-TSMPljQ02Ao/UyWixahVFzI/AAAAAAAACBw/n_Ctee0FJGQ/s800/FileHidingEnabled.png %}
 
 ### サンプルコード

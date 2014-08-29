@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19
 ## JScrollBarのKnobの最小サイズを設定する
 `JScrollBar`の`Knob`の最小サイズを設定します。
 
-
 {% download https://lh4.googleusercontent.com/-A8TRDbOQ1p4/T2bKeM8dcvI/AAAAAAAABKI/iBKMsL6eGfM/s800/MinimumThumbSize.png %}
 
 ### サンプルコード

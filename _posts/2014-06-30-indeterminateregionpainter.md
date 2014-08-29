@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-30
 ## JProgressBarのNimbusLookAndFeelにおける不確定状態アニメーションを変更する
 `JProgressBar`を`NimbusLookAndFeel`で使用している場合、その不確定状態アニメーションを変更します。
 
-
 {% download https://lh5.googleusercontent.com/-L28C52EISs4/U7AofjsiWqI/AAAAAAAACIo/OHDDAqKKk6E/s800/IndeterminateRegionPainter.png %}
 
 ### サンプルコード

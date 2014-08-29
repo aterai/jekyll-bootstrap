@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-06
 ## JTextFieldのMarginを設定する
 `JTextField`内部の余白を設定します。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVM2PvsXI/AAAAAAAAAnQ/3wxfaHXrEUk/s800/TextFieldMargin.png %}
 
 ### サンプルコード

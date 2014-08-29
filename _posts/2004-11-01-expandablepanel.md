@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-01
 ## JPanelの展開と折り畳み
 `JPanel`の展開と折り畳みを行います。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMQbS7ipI/AAAAAAAAAY4/xXDc9VVk87A/s800/ExpandablePanel.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-06
 ## JCheckBoxなどが無効な状態での文字色を変更
 `JCheckBox`や`JComboBox`などのコンポーネントが無効な状態になった場合の文字色を変更します。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLDPDIq4I/AAAAAAAAAW8/jt2A5D74G04/s800/DisabledTextColor.png %}
 
 ### サンプルコード

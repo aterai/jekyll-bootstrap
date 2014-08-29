@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-22
 ## JTableを別コンポーネントから操作
 `JTable`の全選択や選択された行のコピーを`JButton`などの別コンポーネントから行います。
 
-
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSx9pjE3I/AAAAAAAAAjU/kU0UU-PWKSI/s800/SelectAllButton.png %}
 
 ### サンプルコード

@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 ## JTextFieldにフォーカスと文字列が無い場合の表示
 `JTextField`にフォーカスが無く文字列が空の場合、薄い色でその説明を表示します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNY3BG1nI/AAAAAAAAAas/YJB5L9kNK-c/s800/GhostText.png %}
 
 ### サンプルコード

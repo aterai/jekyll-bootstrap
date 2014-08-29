@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-25
 ## SwingWorkerの一時停止と再開
 `SwingWorker`で処理の一時停止と再開を行います。
 
-
 {% download https://lh6.googleusercontent.com/-3BCjKLnQbGM/Ti0AQV5nkwI/AAAAAAAAA_s/RY75ol3pFak/s800/PauseResumeSwingWorker.png %}
 
 ### サンプルコード

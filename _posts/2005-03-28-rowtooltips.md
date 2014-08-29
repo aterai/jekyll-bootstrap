@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-28
 ## JTableのTooltipsを行ごとに変更
 `JTable`の`Tooltips`が、カーソルのある行の内容などを表示するようにします。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSbfFU7HI/AAAAAAAAAiw/EPWumbZCrr0/s800/RowTooltips.png %}
 
 ### サンプルコード

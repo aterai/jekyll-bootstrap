@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-12
 ## JSplitPaneでディバイダの移動を連続的に再描画
 二つの`JSplitPane`のディバイダで、移動の同期と連続的な再描画を行います。
 
-
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKL-SYs6I/AAAAAAAAAVk/pXv9HlMSLf0/s800/ContinuousLayout.png %}
 
 ### サンプルコード

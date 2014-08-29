@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-25
 ## JTableのセル文字揃え
 `JTable`のセルに表示されている文字列の揃えを変更します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIs6qWcBI/AAAAAAAAATM/AnH_ZWdWA5o/s800/CellTextAlignment.png %}
 
 ### サンプルコード

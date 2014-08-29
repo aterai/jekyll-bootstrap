@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-01
 ## Cursorのアニメーション
 マウスカーソルをアニメーションさせます。
 
-
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHkbNXdwI/AAAAAAAAARY/RzDAT8xyR3c/s800/AnimatedCursor.png %}
 
 ### サンプルコード

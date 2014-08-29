@@ -13,7 +13,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-07
 ## JTextFieldにフォーカスがある場合の背景色を設定
 どの`JTextField`を編集しているのかを分かりやすくするために、フォーカスのある`JTextField`の背景色を変更します。
 
-
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTM__NmYpI/AAAAAAAAAaE/EUMDKR-Rwa4/s800/FocusColor.png %}
 
 ### サンプルコード
