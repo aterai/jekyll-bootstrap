@@ -44,7 +44,7 @@ JLabel path = new JLabel(url.toString());
 - - - -
 `ClassLoader`からでは無く、`Class#getResource`メソッドを使う方法もあります。この場合、エントリ名がメソッド内で以下のように変換されます。
 
-- 相対パス風(頭に/が付かない)の場合
+- 相対パス風(頭に`/`が付かない)の場合
     - `.`が`/`に変換された、`modified_package_name`が名前の前に補完される
     - 例えば、`com.example.Test`クラスなら、`com/example/`
     - このサンプルでは`example.MainPanel`クラスなので、`example/`が補完されて、`example/test.png`になる
@@ -84,7 +84,7 @@ JLabel path = new JLabel(url.toString());
 この場合、`src.zip`に元々入っていた`適当な場所/test.png`ではなく、`file:/C:/temp/example/test.png`という`URL`が`getResource`で取得できます。
 
 ### 参考リンク
-- [位置に依存しない方法でのリソースへのアクセス](http://docs.oracle.com/javase/jp/6/technotes/guides/lang/resources.html)
+- [位置に依存しない方法でのリソースへのアクセス](http://docs.oracle.com/javase/jp/7/technotes/guides/lang/resources.html)
 - [Loading Images Using getResource](http://docs.oracle.com/javase/tutorial/uiswing/components/icon.html#getresource)
 
 <!-- dummy comment line for breaking list -->
