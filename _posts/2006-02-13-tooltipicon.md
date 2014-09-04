@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-13
 
-## JToolTipにアイコンを表示
+## 概要
 `JToolTip`にアイコンを表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JLabel l1 = new JLabel("JLabelを使ってツールチップにアイコン") {
   @Override public JToolTip createToolTip() {
     final JLabel iconlabel = new JLabel(icon);
@@ -66,7 +66,7 @@ l2.setToolTipText("Test2");
 l3.setToolTipText("&lt;html&gt;&lt;img src='"+url+"'&gt;テスト&lt;/img&gt;&lt;/html&gt;");
 </code></pre>
 
-### 解説
+## 解説
 - 上ラベル
     - `JToolTip`に`JLabel`を追加しています。
 - 中ラベル
@@ -76,14 +76,14 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='"+url+"'&gt;テスト&lt;/img&gt;&lt
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
 - [Swing - Using text and a progress bar inside of a tooltip.](https://forums.oracle.com/thread/2199222)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `MatteBorder`を使うと`Java 1.4`と`1.5`で表示が微妙に異なるようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-02-13 (月) 14:57:57
 - `JLabel`を`JToolTip`に貼る方法を追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-05 (水) 18:40:54
 - 「`MatteBorder`でツールチップにアイコン」で、`MatteBorder`と`EmptyBorder`の内外が反対になっていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-05 (水) 19:15:11

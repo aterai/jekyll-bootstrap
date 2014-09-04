@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-03
 
-## Backup Fileを番号付きで作成
+## 概要
 [xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップファイルを作成します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private File makeBackupFile(File file, int intold, int intnew) {
   File testFile = null;
   String newfilename = file.getAbsolutePath();
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-03
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、[xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップのテストを行っています。
 
 以下の例では、古いバージョンを`2`つ、新しいバージョンを`3`つバックアップとして残します。
@@ -89,4 +89,4 @@ File file = makeBackupFile(file, 2, 3);
 tmpFile.renameTo(file);
 </code></pre>
 
-### コメント
+## コメント

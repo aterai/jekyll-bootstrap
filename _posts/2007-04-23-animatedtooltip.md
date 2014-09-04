@@ -10,17 +10,17 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-23
 
-## JToolTipのアニメーション
+## 概要
 ツールチップにアニメーションするアイコンを使用します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHpat_rFI/AAAAAAAAARg/fzkRLOHGb7I/s800/AnimatedToolTip.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JLabel l3 = new JLabel("Gif Animated ToolTip(html)");
 l3.setToolTipText("&lt;html&gt;&lt;img src='"+url+"'&gt;Test3&lt;/html&gt;");
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - `javax.swing.Timer`を使ってアニメーションするラベルを使用しています。
 
@@ -36,11 +36,11 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='"+url+"'&gt;Test3&lt;/html&gt;");
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JToolTipにアイコンを表示](http://terai.xrea.jp/Swing/ToolTipIcon.html)
 - [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)
 - [TrayIconのアニメーション](http://terai.xrea.jp/Swing/AnimatedTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

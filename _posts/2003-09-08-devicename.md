@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-08
 
-## Device Nameのチェック
+## 概要
 ファイルチューザーなどで入力されたファイル名が、デバイスファイル名(`con`、`prn`、`nul`、`aux`など)でないかチェックします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKz2LmiiI/AAAAAAAAAWk/HOTsKRHPAVo/s800/DeviceName.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private boolean isCanonicalPath(File file) {
   if(file==null) return false;
   try{
@@ -27,7 +27,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-08
 }
 </code></pre>
 
-### 解説
+## 解説
 `Windows`環境で、`Device Name`を含むような**正しくないファイルパス**(`c:\con.txt`など)を読み書きしようとすると、`Exception`が発生します。正しいファイルパスかどうかは、`File#getCanonicalPath()`メソッドが`null`を返すかどうかでチェックすることができます。
 
 - 追記: `1.5.0_08`で以下のように修正された
@@ -37,9 +37,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-08
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Windowsパス名の落とし穴](http://www.ipa.go.jp/security/awareness/vendor/programming/b08_01_main.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

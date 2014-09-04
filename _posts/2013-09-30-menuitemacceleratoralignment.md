@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-30
 
-## JMenuItemのAccelerator表示を右揃えにする
+## 概要
 JMenuItemのAccelerator表示を右揃えに変更します。
 
 {% download https://lh5.googleusercontent.com/-vl8nnt_tGvQ/UkhDq1YV-VI/AAAAAAAAB2o/B0-hGdv35Ns/s800/MenuItemAcceleratorAlignment.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public static void paintAccText(
     Graphics g, MenuItemLayoutHelper lh, MenuItemLayoutHelper.LayoutResult lr,
     Color disabledForeground, Color acceleratorForeground,
@@ -63,7 +63,7 @@ JMenuItemのAccelerator表示を右揃えに変更します。
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BasicMenuItemUI#paintMenuItem(...)`メソッドをオーバーライドして、`JMenuItem`の`Accelerator`を左寄せではなく、右寄せで表示するように変更しています。
 
 - 注
@@ -97,9 +97,9 @@ public class awt_ja extends ListResourceBundle {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Swing - Localized Accelorator Keys](https://forums.oracle.com/thread/1364746)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-18
 
-## Animated Gifからフレーム画像を抽出する
+## 概要
 `AnimatedGif`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://forums.oracle.com/thread/1271862)の回答を参考に作成しています。
 
 {% download https://lh4.googleusercontent.com/-_xu1jNmYJe0/UUX3d_PzwKI/AAAAAAAABoA/cyS5ABVZdkM/s800/ExtractFramesFromAnimatedGif.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>ImageReader reader = null;
 Iterator&lt;ImageReader&gt; readers = ImageIO.getImageReaders(imageStream);
 while(readers.hasNext()) {
@@ -41,7 +41,7 @@ for(int i=0;i&lt;reader.getNumImages(true);i++) {
 reader.dispose();
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`ImageReader`に`AnimatedGif`ファイルを読み込ませて、`IIOImage#getRenderedImage()`で各フレームの`BufferedImage`を取得しています。
 
 - 注:
@@ -50,7 +50,7 @@ reader.dispose();
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - Reading gif animation frame rates and such?](https://forums.oracle.com/thread/1271862)
 - [JPEGファイルのコメントを取り出す](http://terai.xrea.jp/Swing/IIOMetadata.html)
 - [JLabelに表示したAnimated Gifのアニメーションを停止する](http://terai.xrea.jp/Swing/DisableAnimatedGif.html)
@@ -58,4 +58,4 @@ reader.dispose();
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

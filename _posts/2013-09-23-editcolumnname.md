@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-23
 
-## JTableのColumn名を変更する
+## 概要
 `JTable`の`Column`名を`JPopupMenu`を使用して変更します。
 
 {% download https://lh4.googleusercontent.com/-axnByzuSfvw/Uj9Bj3mhK0I/AAAAAAAAB2U/GgzDuKdOje8/s800/EditColumnName.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private final JMenuItem editItem1 = new JMenuItem(
     new AbstractAction("Edit: setHeaderValue") {
   @Override public void actionPerformed(ActionEvent e) {
@@ -37,7 +37,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-23
 });
 </code></pre>
 
-### 解説
+## 解説
 - `Edit: setHeaderValue`
     - `TableColumn#getHeaderValue()`でカラム名を取得して、`TableColumn#setHeaderValue(String)`で変更
     - モデルの`ColumnIdentifier`は、変更されない
@@ -72,9 +72,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-23
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableHeaderにJPopupMenuを追加してソート](http://terai.xrea.jp/Swing/RowSorterPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

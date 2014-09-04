@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-05
 
-## JInternalFrameを閉じる
+## 概要
 `JInternalFrame`を閉じます。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJcTXtdNI/AAAAAAAAAUY/zL_wkJJa_Ks/s800/CloseInternalFrame.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>closeSelectedFrameAction1 = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     JInternalFrame f = desktop.getSelectedFrame();
@@ -60,7 +60,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-05
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、選択されている`JInternalFrame`をツールバーのボタンや<kbd>Esc</kbd>キー(`OS`が`Windows`の場合のデフォルトは、<kbd>Ctrl+F4</kbd>)で閉じることができます。
 
 - `RED`
@@ -85,4 +85,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-05
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

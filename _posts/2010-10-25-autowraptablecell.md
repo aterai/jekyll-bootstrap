@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-25
 
-## JTableのセルの高さを自動調整
+## 概要
 `JTable`のセルの高さを、文字列の折り返しに応じて自動調整します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH4TWFB1I/AAAAAAAAAR4/8C89wEJ8EUA/s800/AutoWrapTableCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   @Override public void doLayout() {
     initPreferredHeight();
@@ -48,16 +48,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-25
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、セルレンダラーに、`setLineWrap(true)`とした`JTextArea`を使用し、カラムサイズの変更などがあったときに、その`JTextArea`の高さを取得して`JTable#setRowHeight(int)`メソッドで各行の高さとして設定しています。
 
-### 参考リンク
+## 参考リンク
 - [Text Utilities « Java Tips Weblog](http://tips4java.wordpress.com/2008/10/26/text-utilities/)
 - [JTableのセル幅で文字列を折り返し](http://terai.xrea.jp/Swing/TableCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 高さが微妙に更新されない場合がある…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-10-27 (水) 14:02:02
 - フレームのサイズ(`JTable`の高さ)を微妙に調整すると、スクロールバーが表示・非表示を繰り返す場合がある。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-02 (火) 20:23:55
 - ~~上二つの原因は同じだと思うけど、今のところ何が問題なのか分からず、お手上げ状態です。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-02 (火) 20:26:21

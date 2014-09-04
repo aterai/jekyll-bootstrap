@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-12
 
-## JTextPaneに修飾した文字列を挿入
+## 概要
 `JTextPane`に、スタイル付けした文字列を挿入して、ログ風に表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT31r9lEI/AAAAAAAAAlI/7PqL2Aa3UJU/s800/StyleConstants.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>StyledDocument doc = jtp.getStyledDocument();
 Style def = StyleContext.getDefaultStyleContext().getStyle(
     StyleContext.DEFAULT_STYLE);
@@ -37,15 +37,15 @@ StyleConstants.setForeground(error, Color.RED);
 }
 </code></pre>
 
-### 解説
+## 解説
 予め設定しておいたエラー表示用のスタイル(文字属性)を、`StyledDocument#getStyle("error")`で取得し、これを文字列と一緒に`Document#insertString`メソッドを使って挿入しています。
 
-### 参考リンク
+## 参考リンク
 - [Using Text Components (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/text.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 一々、`SimpleAttributeSet`を生成していたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-06 (月) 22:24:36
 
 <!-- dummy comment line for breaking list -->

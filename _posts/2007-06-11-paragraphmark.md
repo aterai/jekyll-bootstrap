@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-11
 
-## JEditorPaneで改行を表示
+## 概要
 `JEditorPane`で改行記号を表示します。[Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)から、ソースコードの大部分を引用しています。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ3cf9HLI/AAAAAAAAAgQ/gIbt2d-Hz7k/s800/ParagraphMark.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MyEditorKit extends StyledEditorKit {
   @Override public ViewFactory getViewFactory() {
     return new MyViewFactory();
@@ -70,18 +70,18 @@ class MyParagraphView extends ParagraphView {
 }
 </code></pre>
 
-### 解説
+## 解説
 `StyledEditorKit`を継承する`EditorKit`を作成し、これを`JEditorPane#setEditorKit`メソッドで、`JEditorPane`に設定しています。
 
 この`EditorKit`は、`Element`が段落(`AbstractDocument.ParagraphElementName`)の場合、独自の改行記号を追加で描画する`View`を返す`ViewFactory`を生成しています。
 
-### 参考リンク
+## 参考リンク
 - [Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)
 - [JTextPaneで全角スペースやタブを可視化](http://terai.xrea.jp/Swing/WhitespaceMark.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 行の折り返しが発生すると、改行記号が縦長になるバグを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-09-21 (金) 17:05:03
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-23
 
-## JLayerを使ってJTabbedPaneのタブの挿入位置を描画する
+## 概要
 `JLayer`を使って、タブのドラッグ＆ドロップでの移動先を`JTabbedPane`上に描画します。
 
 {% download https://lh3.googleusercontent.com/-xX0rzgauC5c/Txz4AxE_u2I/AAAAAAAABIM/jHQdxU1yP9g/s800/DnDLayerTabbedPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DropLocationLayerUI extends LayerUI&lt;DnDTabbedPane&gt; {
   private static final int LINEWIDTH = 3;
   private final Rectangle lineRect = new Rectangle();
@@ -46,7 +46,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-23
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、[JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)や、[JTabbedPane間でタブのドラッグ＆ドロップ移動](http://terai.xrea.jp/Swing/DnDExportTabbedPane.html)のように`GlassPane`を使用する代わりに、`JDK 1.7.0`で導入された`JLayer`を使用して、タブの挿入先を描画しています。`JLayer`を使用することで、別ウィンドウにある`JTabbedPane`へのタブ移動などの描画が簡単にできるようになっています。
 
 - - - -
@@ -88,14 +88,14 @@ public TabTransferHandler() {
 //...
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)
 - [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://terai.xrea.jp/Swing/DnDExportTabbedPane.html)
 - [Free the pixel: GHOST drag and drop, over multiple windows](http://free-the-pixel.blogspot.com/2010/04/ghost-drag-and-drop-over-multiple.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JFrame`の外にドロップした場合は、新しいフレームと`JTabbedPane`を作成して表示したいけど、<kbd>Esc</kbd>キーや右クリックでのキャンセルと区別がつかない？ので、難しそう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-01-25 (水) 19:57:10
 
 <!-- dummy comment line for breaking list -->

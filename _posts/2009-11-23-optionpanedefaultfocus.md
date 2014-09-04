@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-23
 
-## JOptionPaneのデフォルトフォーカス
+## 概要
 `JOptionPane`にデフォルトでフォーカスをもつコンポーネントを追加します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQoUaDrDI/AAAAAAAAAf4/nUnrCrmb5io/s800/OptionPaneDefaultFocus.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>textField4.addAncestorListener(new AncestorListener() {
   @Override public void ancestorAdded(AncestorEvent e) {
     e.getComponent().requestFocusInWindow();
@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-23
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JOptionPane.showConfirmDialog`で表示する`JTextField`にデフォルトのフォーカスがあたるように設定しています。
 
 - 左上
@@ -89,10 +89,10 @@ if(result==JOptionPane.OK_OPTION) textArea.setText(textField3.getText());
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Windowを開いたときのフォーカスを指定](http://terai.xrea.jp/Swing/DefaultFocus.html)
 - [Swing - Input focus](https://forums.oracle.com/thread/1354218)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

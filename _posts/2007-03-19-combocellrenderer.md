@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19
 
-## JTableのCellRendererにJComboBoxを設定
+## 概要
 `JTable`の`CellRenderer`として`JComboBox`を使用します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJ35Po_yI/AAAAAAAAAVE/z4Jn6Mv7-pc/s800/ComboCellRenderer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ComboCellRenderer extends JComboBox implements TableCellRenderer {
   private static final Color ec = new Color(240, 240, 255);
   private final JTextField editor;
@@ -44,7 +44,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`1`列目(中央)のセルの表示を`JComboBox`にするために、これを継承するセルレンダラーを設定しています。`1`列目はセルエディタも`JComboBox`ですが、これらは同じ`JComboBox`のインスタンスではなく、別々に用意しています。
 
 レンダラーで使用する`JComboBox`は、セルの表示のみに使用するため、以下のように設定しています。
@@ -55,12 +55,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableのCellEditorにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - セルの幅を大きくするとセルの表示が消えますが・・・これは一体なんでしょうか？ -- [ichikawa](http://terai.xrea.jp/ichikawa.html) 2010-11-01 (月) 23:09:02
     - ご指摘ありがとうございます。リサイズなどでセルの表示がおかしくなるのは、バグです。`DefaultTableCellRenderer#invalidate()`などと同じ(パフォーマンス上の理由)にするため、何もしないようにオーバーライドした、テスト中のコードとサンプルを誤ってアップロードしていました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-02 (火) 14:23:32
 

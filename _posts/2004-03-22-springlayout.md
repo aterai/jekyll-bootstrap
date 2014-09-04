@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22
 
-## SpringLayoutの使用
+## 概要
 `SpringLayout`を使用して、各ラベルのサイズとパネルからの距離が一定の比率になるような配置を指定します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTwX9UR-I/AAAAAAAAAk8/TLNZjmIrPnw/s800/SpringLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static void setScaleAndAdd(JComponent parent, SpringLayout layout, JComponent child,
                                    float sx, float sy, float sw, float sh) {
   Spring panelw = layout.getConstraint(SpringLayout.WIDTH,  parent);
@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22
 //}
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`SpringLayout`を使って`2`つの`JComponent`をパネル内にレイアウトしています。
 
 ~~パネルのサイズが変更されるたびに、各ラベルのサイズとパネルからの距離が一定の割合になるように設定し直しています(ただしパネルの余白は無視)。~~
@@ -73,7 +73,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22
 
 ~~距離を`0`にすることも可能で、例えばサンプルコードのコメントアウトされたような指定をすると、ラベル`1`、`2`を左揃えで並べることができます。~~
 
-### コメント
+## コメント
 - 以前の内容は、[BoxLayoutでリスト状に並べる](http://terai.xrea.jp/Swing/ComponentList.html)に移動しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-15 (木) 19:40:17
 - リスナーを使わなくても次ので出来ました。 --  2010-09-02 (木) 02:41:13
 

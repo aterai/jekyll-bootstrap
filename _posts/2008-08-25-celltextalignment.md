@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-25
 
-## JTableのセル文字揃え
+## 概要
 `JTable`のセルに表示されている文字列の揃えを変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIs6qWcBI/AAAAAAAAATM/AnH_ZWdWA5o/s800/CellTextAlignment.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>TableColumn col = table.getColumnModel().getColumn(1);
 col.setCellRenderer(new HorizontalAlignmentTableRenderer());
 //...
@@ -43,7 +43,7 @@ class HorizontalAlignmentTableRenderer extends DefaultTableCellRenderer {
 }
 </code></pre>
 
-### 解説
+## 解説
 - ラジオボタンで、`JTable`の第一列のセル文字列の揃えを変更
     - `left`: 左揃え
     - `center`: 中央揃え
@@ -85,10 +85,10 @@ r.setHorizontalAlignment(JLabel.CENTER);
 table.getColumnModel().getColumn(2).setCellRenderer(r);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableHeaderの字揃え](http://terai.xrea.jp/Swing/HorizontalAlignmentHeaderRenderer.html)
     - ヘッダの文字揃えに関するテストは、上記の場所に移動
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
 
-## JTableのCellにJCheckBoxを複数配置する
+## 概要
 `JTable`のセル中に`JCheckBox`を複数個配置します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TWs6JY73P8I/AAAAAAAAA2M/wwrwT7R5K4k/s800/CheckBoxesInTableCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CheckBoxesPanel extends JPanel {
   protected final String[] title = {"r", "w", "x"};
   public JCheckBox[] buttons;
@@ -112,7 +112,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
   //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable`のセル内に`3`つの`JCheckBox`を配置した`JPanel`を作成し、これを`CellRenderer`と`CellEditor`として別々に使用しています。`JCheckBox`をマウスでクリックすると、その`JCheckBox`の選択状態だけが変化します。
 
 - - - -
@@ -122,14 +122,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
 
 
 
-### 参考リンク
+## 参考リンク
 - [JTableのセル中にJRadioButtonを配置](http://terai.xrea.jp/Swing/RadioButtonsInTableCell.html)
 - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
 - [JCheckBoxのセルをロールオーバーする](http://terai.xrea.jp/Swing/RolloverBooleanRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ビットフラグを`EnumSet`に変更するテスト -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-01 (火) 14:22:06
     - [JTableの列にEnumSetを使用する](http://terai.xrea.jp/Swing/EnumSet.html)に移動
 - `rwx`セルを選択中に<kbd>R</kbd>, <kbd>W</kbd>, <kbd>X</kbd>キーを入力するとチェックが切り替わるように`InputMap, ActionMap`を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-09 (水) 22:33:39

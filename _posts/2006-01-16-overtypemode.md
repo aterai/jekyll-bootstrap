@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-16
 
-## JTextAreaのキャレットを上書きモード対応にする
+## 概要
 `JTextArea`にキャレット上の文字を上書きする上書きモードを追加します。[Swing - JTextPane edit mode (insert or overwrite)???](https://forums.oracle.com/forums/thread.jspa?threadID=1383467)のソースコードを変更して全角文字対応にしています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQtaGO6gI/AAAAAAAAAgA/XPqHe-c_DUo/s800/OverTypeMode.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>// Paint a horizontal line the width of a column and 1 pixel high
 class OvertypeCaret extends DefaultCaret {
   //The overtype caret will simply be a horizontal line
@@ -63,17 +63,17 @@ class OvertypeCaret extends DefaultCaret {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、上書きモード用のキャレットを作成して、<kbd>Insert</kbd>キーで切り替えるようになっています。
 
 上書きモード自体の動作は、`JTextArea#replaceSelection`メソッドをオーバーライドすることで行われています。キー入力があった場合、次の文字までを選択して置き換える処理がこのメソッドに追加されています。
 
-### 参考リンク
+## 参考リンク
 - [Swing - JTextPane edit mode (insert or overwrite)???](https://forums.oracle.com/forums/thread.jspa?threadID=1383467)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 改行の処理がまだいい加減です。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-01-16 (月) 15:56:38
 - テキストを選択状態にして<kbd>Insert</kbd>キーを押すと、反転されたままになるようなので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-01-16 (月) 18:45:02
 - `IME`起動時、「あ」を入力し、<kbd>変換</kbd>キー（or <kbd>Space</kbd>キー）を押すたびに減っていきます。日本語対応のソースを心待ちにしています。 -- [初心者](http://terai.xrea.jp/初心者.html) 2006-03-24 (金) 10:40:01

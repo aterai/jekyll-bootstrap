@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-08
 
-## JTabbedPaneのタブを等幅にしてタイトルをクリップ
+## 概要
 `JTabbedPane`のタブを等幅にし、長いタイトルはクリップして表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJXdZi5MI/AAAAAAAAAUQ/5nvfRoEEDEM/s800/ClippedTitleTab.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final Insets tabInsets = UIManager.getInsets("TabbedPane.tabInsets");
 tab1.setUI(new javax.swing.plaf.basic.BasicTabbedPaneUI() {
   @Override protected int calculateTabWidth(
@@ -54,7 +54,7 @@ tab1.setUI(new javax.swing.plaf.basic.BasicTabbedPaneUI() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BasicTabbedPaneUI#calculateTabWidth`メソッドをオーバーライドして、`JTabbedPane`のタブ幅が、すべて等しくなるように設定しています。
 
 タイトル文字列のほうが、このタブ幅より長い場合は、`SwingUtilities.layoutCompoundLabel`メソッドで文字列をクリップして表示します。
@@ -68,13 +68,13 @@ tab1.setUI(new javax.swing.plaf.basic.BasicTabbedPaneUI() {
 - - - -
 `JDK 1.6.0`なら、[JTabbedPaneのタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTabLabel.html)のように、`JTabbedPane#setTabComponentAt`メソッドを使って、`JLabel`のクリップ機能をそのまま利用する方法もあります。
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTabLabel.html)
 - [JTabbedPaneのTabTitleを左揃えに変更](http://terai.xrea.jp/Swing/TabTitleAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `tabAreaInsets`を考慮するように修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-26 (火) 22:18:27
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-24
 
-## JTableの行の高さを変更する
+## 概要
 `JTable`の行の高さを変更して、マウスカーソルの下を魚眼レンズのように拡大します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMw3Q5yMI/AAAAAAAAAZs/0O7lUunN9Rw/s800/FishEyeTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseMoved(MouseEvent e) {
   int row = rowAtPoint(e.getPoint());
   if(prev_row==row) return;
@@ -48,7 +48,7 @@ public void initRowHeigth(int height, int ccRow) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、マウスカーソルの下の行の高さを、`JTable#setRowHeight()`メソッドを使って変更することで、魚眼レンズのように拡大するようになっています。
 
 - 注意
@@ -57,12 +57,12 @@ public void initRowHeigth(int height, int ccRow) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Fisheye Menus](http://www.cs.umd.edu/hcil/fisheyemenu/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - スクリーンショット更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-25 (木) 16:12:54
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-17
 
-## JTableのセルをエクスプローラ風に表示する
+## 概要
 セルの中にアイコンと文字列を配置し、エクスプローラ風に見えるよう、文字列だけにフォーカスをかけます。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMWzLLVKI/AAAAAAAAAZA/k3vF14Jt-V0/s800/ExplorerLikeTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TestRenderer extends Box implements TableCellRenderer {
   private final Border emptyBorder = BorderFactory.createEmptyBorder(1,1,1,1);
   private final ImageIcon nicon;
@@ -81,7 +81,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-17
 }
 </code></pre>
 
-### 解説
+## 解説
 `Windows Explorer`(ファイルシステム・エクスプローラ)の詳細表示風にするため、以下のような設定をしています。
 
 - セル間の罫線を非表示(`JTable#setShowHorizontalLines`, `JTable#setShowVerticalLines`)
@@ -109,11 +109,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-17
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
 - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://terai.xrea.jp/Swing/TableFileList.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

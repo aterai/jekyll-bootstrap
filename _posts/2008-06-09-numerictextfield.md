@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-09
 
-## JTextFieldの入力を数値に制限する
+## 概要
 `JTextField`への入力を数値のみに制限します。ソースコードは、[Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)からの引用です。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQjTks6aI/AAAAAAAAAfw/VCCb81SSh1s/s800/NumericTextField.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTextField textField1 = new JTextField("1000");
 textField1.setHorizontalAlignment(JTextField.RIGHT);
 textField1.setInputVerifier(new IntegerInputVerifier());
@@ -38,7 +38,7 @@ JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, Integer.MAX_VALUE, 
 spinner.setValue(5000);
 </code></pre>
 
-### 解説
+## 解説
 - `1`:`JTextField` + `InputVerifier`
     - [Validating with Input Verifiers](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
     - `InputVerifier`を継承する`IntegerInputVerifier`を作成し、これを`JComponent#setInputVerifier`メソッドで設定しています。
@@ -199,11 +199,11 @@ spinner.setValue(5000);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
 - [How to Use Formatted Text Fields](http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
 - [JSpinnerで無効な値の入力を許可しない](http://terai.xrea.jp/Swing/NumberFormatter.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

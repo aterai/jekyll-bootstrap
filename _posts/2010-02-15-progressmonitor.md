@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-15
 
-## ProgressMonitorで処理の進捗を表示
+## 概要
 `ProgressMonitor`で処理の進捗を表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRQXIAu4I/AAAAAAAAAg4/bh8niw_k5AE/s800/ProgressMonitor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final ProgressMonitor monitor = new ProgressMonitor(this, "message", "note", 0, 100);
 monitor.setProgress(0);
 worker = new SwingWorker&lt;String, String&gt;() {
@@ -64,7 +64,7 @@ worker.addPropertyChangeListener(new ProgressListener(monitor));
 worker.execute();
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`SwingWorker`を使ったタスクの進捗状態を`ProgressMonitor`で表示しています。
 
 - - - -
@@ -88,11 +88,11 @@ worker.execute();
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [How to Use Progress Bars (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
 - [ProgressMonitorがダイアログを表示するまでの待ち時間](http://terai.xrea.jp/Swing/MillisToDecideToPopup.html)
     - 処理時間が短くて`ProgressMonitor`が表示されない場合などについて
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

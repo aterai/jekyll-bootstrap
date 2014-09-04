@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-26
 
-## Hyperlinkを、JLabel、JButton、JEditorPaneで表示
+## 概要
 `Hyperlink`を、`JLabel`、`JButton`、`JEditorPane`で表示し、それぞれクリックした時のイベントを取得します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOIQH0ABI/AAAAAAAAAb4/9QlzkW-7_Es/s800/HyperlinkLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class URILabel extends JLabel {
   private final String href;
   public URILabel(String href) {
@@ -69,7 +69,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、クリックされた時に、リンクをブラウザで開く([Desktopでブラウザを起動](http://terai.xrea.jp/Swing/Desktop.html))代わりに、`beep`音を鳴らしています。
 
 - `JLabel` + `MouseListener`
@@ -92,7 +92,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JEditorPane (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JEditorPane.html)
 - [Link Buttons in Swing - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/link_buttons_in_swing)
     - こちらは、`JButton`+`MatteBorder`で表現しているようです。
@@ -101,4 +101,4 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-13
 
-## JLayerを使用して無効時のコンポーネントの文字色を変更する
+## 概要
 `JLayer`を使用して、`JButton`などのコンポーネントを無効にしたときの文字色を変更します。
 
 {% download https://lh5.googleusercontent.com/-_2bogxiuOec/TzilFn0ms8I/AAAAAAAABJI/oMz_T6SqCwE/s800/JLayerDisabledText.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DisableInputLayerUI extends LayerUI&lt;JComponent&gt; {
   private static final boolean DEBUG_POPUP_BLOCK = true;
   private static final MouseAdapter dummyMouseListener = new MouseAdapter() {};
@@ -80,15 +80,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-13
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`LayerUI#applyPropertyChange(...)`をオーバーライドして、コンポーネントを無効にした場合の文字色、`Focus`移動の禁止、`Mnemonic`、`PopupMenu`、`ToolTip`の非表示を行なっています。
 
 `JLayer`の場合、無効時の文字色は、[JCheckBoxなどが無効な状態での文字色を変更](http://terai.xrea.jp/Swing/DisabledTextColor.html)のように、`LookAndFeel`によっては反映されないといったことがありません。
 
-### 参考リンク
+## 参考リンク
 - [JCheckBoxなどが無効な状態での文字色を変更](http://terai.xrea.jp/Swing/DisabledTextColor.html)
 - [JLayerで指定したコンポーネントへの入力を禁止](http://terai.xrea.jp/Swing/DisableInputLayer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

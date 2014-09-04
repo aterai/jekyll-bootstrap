@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-19
 
-## JComboBoxのアイテムをBorderで修飾してグループ分け
+## 概要
 `JComboBox`のアイテムを`Border`を使用して修飾してグループ分けします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIMVjWegI/AAAAAAAAASY/yM_W_tfnios/s800/BorderSeparator.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JComboBox combobox = new JComboBox();
 final JSeparator sep = new JSeparator();
 final ListCellRenderer lcr = combobox.getRenderer();
@@ -63,7 +63,7 @@ combobox.setEditable(true);
 //......
 </code></pre>
 
-### 解説
+## 解説
 レンダラーの中で、`JLabel`を`MatteBorder`で修飾し、`JSeparator`を使用せずに`Item`をグループ分けしているように見せかけています。
 
 コンボボックスが編集可の場合は、フィールド表示にはレンダラーではなく、`JTextField`が使用されるため、[JComboBoxにJSeparatorを挿入](http://terai.xrea.jp/Swing/ComboBoxSeparator.html)する方法より簡単に区切りを表現することができます。
@@ -89,13 +89,13 @@ combobox.setEditable(true);
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxにJSeparatorを挿入](http://terai.xrea.jp/Swing/ComboBoxSeparator.html)
 - [JComboBox Items with Separators - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/jcombobox_items_with_separators)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `index!=-1`を追加、スクリーンショットを更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-04 (木) 17:53:47
 
 <!-- dummy comment line for breaking list -->

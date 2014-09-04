@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
 
-## GridBagLayoutの使用
+## 概要
 `GridBagLayout`を使用して、左右の部品のサイズを固定、中央だけは水平方向に伸縮可になるよう配置します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNi4XckaI/AAAAAAAAAa8/8VJwvf6EScw/s800/GridBagLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public JPanel createPanel(JComponent cmp, JButton btn, String str) {
   GridBagConstraints c = new GridBagConstraints();
   JPanel panel = new JPanel(new GridBagLayout());
@@ -46,7 +46,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`GridBagLayout`で`BorderLayout`のような配置を行っています。ただし、`GridBagLayout`の場合は、各コンポーネントが推奨する高さが生かされるように設定しています。
 
 - `BorderLayout`
@@ -69,11 +69,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
 
 `IDE`などのサポート無しでは、すこし面倒な`GridBagLayout`ですが、[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)の「紙などにマス目で下書きをしてから、コンポーネントのレイアウトを設計する」方法を使えば、凝ったレイアウトでも理解しやすく、すっきり設計できます。
 
-### 参考リンク
+## 参考リンク
 - [GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)
 - [GridBagLayoutでコンポーネントがつぶれるのを防ぎたいとき～](http://satoshi.kinokuni.org/tech/SwingTipsLayout.html#section1)
 - [GroupLayoutの使用](http://terai.xrea.jp/Swing/GroupLayout.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

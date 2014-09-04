@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 
-## JPopupMenuに半透明の影を付ける
+## 概要
 `Robot`で画面をキャプチャーするなどして、半透明の影を`JPopupMenu`に付けます。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMBgsMvZI/AAAAAAAAAYg/QBh9VXR7P-I/s800/DropShadowPopup.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ShadowBorder extends AbstractBorder {
   private final int xoff, yoff;
   private final Insets insets;
@@ -61,7 +61,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 }
 </code></pre>
 
-### 解説
+## 解説
 ポップアップメニューに半透明の影をつける際、フレームからはみ出すかどうかで異なる処理を行っています。
 
 上記のサンプルコードは、フレームからはみ出す場合に使用する`Border`クラスです。
@@ -126,12 +126,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Menuに半透明の影を付ける](http://terai.xrea.jp/Swing/MenuWithShadow.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - キャプチャーが遅いのは画面全体を撮っているからで、必要なサイズだけにすれば結構速いようです。サンプルを修正してみたところ、毎回キャプチャーするようにしても特に気にならない速度で動いてます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-18 (火) 12:02:13
 - ソース中で`isInRootPanel`がおかしい気がするのですが・・・
 

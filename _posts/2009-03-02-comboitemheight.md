@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-02
 
-## JComboBoxの高さを変更する
+## 概要
 `JComboBox`自体の高さや、ドロップダウンリスト内にあるアイテムの高さを変更します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ6VVptrI/AAAAAAAAAVI/x72zWGymqHk/s800/ComboItemHeight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JComboBox combo1 = new JComboBox(items);
 JLabel renderer1 = (JLabel)combo1.getRenderer();
 renderer1.setPreferredSize(new Dimension(0, 32));
@@ -35,7 +35,7 @@ combo2.setRenderer(new ListCellRenderer() {
 });
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - レンダラーに`setPreferredSize`で高さを設定しています。
 
@@ -46,7 +46,7 @@ combo2.setRenderer(new ListCellRenderer() {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `html`タグを使用するサンプルなどを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-20 (金) 20:06:03
 
 <!-- dummy comment line for breaking list -->

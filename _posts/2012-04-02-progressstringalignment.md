@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-02
 
-## JProgressBarの進捗文字列の字揃えを変更する
+## 概要
 `JProgressBar`の進捗文字列を`JLabel`にして、字揃えなどを変更します。
 
 {% download https://lh5.googleusercontent.com/-zRMPjXT7do4/T3lYdJUnilI/AAAAAAAABLA/kcpMYSYoklM/s800/ProgressStringAlignment.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JProgressBar bar = new JProgressBar(model) {
   private final JLabel label = new JLabel(getString(), halign);
   private final ChangeListener changeListener = new ChangeListener() {
@@ -39,7 +39,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-02
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JProgressBar`のレイアウトを`BorderLayout`に変更し、水平方向の配置方法を設定した`JLabel`を追加することで、字揃えを変更しています。
 
 - 注:
@@ -49,9 +49,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-02
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JProgressBarの文字列をJLayerを使って表示する](http://terai.xrea.jp/Swing/ProgressStringLayer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

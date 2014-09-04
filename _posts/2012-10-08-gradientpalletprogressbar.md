@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-08
 
-## JProgressBarにUIを設定してインジケータの色を変更
+## 概要
 `JProgressBar`のインジケータの色を進行に応じてパレットから取得した色に変更します。
 
 {% download https://lh5.googleusercontent.com/-EjSzEK0Wc6g/UHJrTUTxG9I/AAAAAAAABT8/4AKSHxe6PNE/s800/GradientPalletProgressBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class GradientPalletProgressBarUI extends BasicProgressBarUI{
   private final int[] pallet;
   public GradientPalletProgressBarUI() {
@@ -80,7 +80,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-08
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは高さ`1px`の画像をパレットとして予め作成し、それから`JProgressBar`の進捗に応じた色を取得して、`BasicProgressBarUI#paintDeterminate(...)`内で使用することで、色の変更を行なっています。
 
 - パレット用の画像作成は、[JSliderのスタイルを変更する](http://terai.xrea.jp/Swing/GradientTrackSlider.html)と同じ
@@ -88,10 +88,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-08
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Harmonic Code: Varying gradients...](http://harmoniccode.blogspot.jp/2011/05/varying-gradients.html)
 - [JSliderのスタイルを変更する](http://terai.xrea.jp/Swing/GradientTrackSlider.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

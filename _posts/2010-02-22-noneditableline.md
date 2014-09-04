@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-22
 
-## JTextAreaの一部を編集不可にする
+## 概要
 `JTextArea`の一部の行を編集不可になるよう設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQW4ZQhAI/AAAAAAAAAfc/JkImmzMvG6I/s800/NonEditableLine.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class NonEditableLineDocumentFilter extends DocumentFilter {
   @Override public void insertString(
       DocumentFilter.FilterBypass fb, int offset,
@@ -41,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-22
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`DocumentFilter`を使って、`JTextArea`の一行目と二行目で追加、削除などの編集ができないように設定しています。
 
 <pre class="prettyprint"><code>((AbstractDocument)textArea.getDocument()).setDocumentFilter(new NonEditableLineDocumentFilter());
@@ -64,10 +64,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-22
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Document Guard - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/date/20050622)
 - [JTextAreaの最終行だけ編集可能になるよう設定する](http://terai.xrea.jp/Swing/LastLineEditableTextArea.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

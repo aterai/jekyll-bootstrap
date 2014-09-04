@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-24
 
-## Look and Feelの変更
+## 概要
 アプリケーションの`Look and Feel`を変更します。以下のサンプルコードは、`%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java`から引用改変したものです。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPf78s81I/AAAAAAAAAeE/DIOTnqtAOnY/s800/LookAndFeel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java
 // Possible Look &amp; Feels
 private static final String mac     = "com.sun.java.swing.plaf.mac.MacLookAndFeel";
@@ -68,7 +68,7 @@ private void setLookAndFeel(String laf) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`metal`、`motif`、`windows`などの`LookAndFeel`を予め用意しておき、`isAvailableLookAndFeel(...)`メソッドで、それらが実行した環境で使用できるかを調べてメニューの選択可不可を変更しています。
 
 `Look and Feel`を切り替えて、いろんなコンポーネントの見栄えを比較したい場合は、`%JAVA_HOME%\demo\jfc\SwingSet2\SwingSet2.jar`がお手軽です。
@@ -111,14 +111,14 @@ private void setLookAndFeel(String laf) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [How to Set the Look and Feel](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html)
 - [LookAndFeelの一覧を取得する](http://terai.xrea.jp/Swing/InstalledLookAndFeels.html)
     - こちらは、`SwingSet3`からの引用です。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-28 (金) 21:37:52
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-30
 
-## JTreeで目次を作成する
+## 概要
 `JTree`のノードにリーダーとページ番号を追加表示して目次を作成します。
 
 {% download https://lh4.googleusercontent.com/-uecZSLw75K4/UsAxPx9ol2I/AAAAAAAAB9M/TcD_QI2Ex_Y/s800/TableOfContentsTree.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TableOfContentsTreeCellRenderer extends DefaultTreeCellRenderer {
   private static BasicStroke READER = new BasicStroke(
       1f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER,
@@ -90,7 +90,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-30
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `TreeCellRenderer`
     - `DefaultTreeCellRenderer`をオーバーライドし、デフォルトのレンダリングで使用する`JLabel`を`JTree`を超える十分な幅をもつ`JPanel`でラップ
         - `JTree#getScrollableTracksViewportWidth()`が常に`true`を返すようオーバーライドして、スクロールバーが表示されないよう設定(参考: [JTree cell width question | Oracle Forums](https://community.oracle.com/thread/1357473))
@@ -194,9 +194,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-30
 - - - -
 `NimbusLookAndFeel`等の場合、ノード選択時にリーダーとページ番号の文字色を変更するよう設定しています。
 
-### 参考リンク
+## 参考リンク
 - [JTree cell width question | Oracle Forums](https://community.oracle.com/thread/1357473)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

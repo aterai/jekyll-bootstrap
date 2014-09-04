@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-26
 
-## RandomDissolveで表示を切り替え
+## 概要
 `RandomDissolve`効果で表示する画像を切り替えます。このサンプルは、[Java 2D - random pixelwise fading ?](https://forums.oracle.com/thread/1270228)に投稿されているソースコードを参考にしています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRdPqz07I/AAAAAAAAAhM/h3EaItM41Yw/s800/RandomDissolve.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RandomDissolve extends JComponent implements ActionListener {
   private final javax.swing.Timer animator;
   private final BufferedImage image1;
@@ -88,12 +88,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-26
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BufferedImage`から`WritableRaster`を取得し、元画像と次の画像のコピーから、`int`配列をそれぞれ用意しています。元画像の配列を次の画像のピクセルでランダムに置き換えて、これを再描画することで画像の切り替えを行っています。
 
-### 参考リンク
+## 参考リンク
 - [Java 2D - random pixelwise fading ?](https://forums.oracle.com/thread/1270228)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

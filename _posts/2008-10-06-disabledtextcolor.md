@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-06
 
-## JCheckBoxなどが無効な状態での文字色を変更
+## 概要
 `JCheckBox`や`JComboBox`などのコンポーネントが無効な状態になった場合の文字色を変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLDPDIq4I/AAAAAAAAAW8/jt2A5D74G04/s800/DisabledTextColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("CheckBox.disabledText", Color.RED);
 JCheckBox cbx1 = new JCheckBox("default", true);
 JCheckBox cbx2 = new JCheckBox("&lt;html&gt;html tag&lt;/html&gt;", true);
 </code></pre>
 
-### 解説
+## 解説
 - `JCheckBox`
     - `UIManager.put("CheckBox.disabledText", Color.RED)`
         - `MetalLookAndFeel`でのみ？、反映される
@@ -45,4 +45,4 @@ JCheckBox cbx2 = new JCheckBox("&lt;html&gt;html tag&lt;/html&gt;", true);
 
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLFT1HGFI/AAAAAAAAAXA/W5L-yIFc61E/s800/DisabledTextColor1.png)
 
-### コメント
+## コメント

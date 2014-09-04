@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-04
 
-## JFrameの移動を同期
+## 概要
 `JFrame`を`2`つ並べて作成し、その位置関係を保ったまま移動できるようにします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLtEL3M0I/AAAAAAAAAYA/9HmyXI1Uw0M/s800/DockingFrames.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private void positionFrames(ComponentEvent e) {
   if(e.getSource().equals(frame1)) {
     int x = frame1.getBounds().x;
@@ -33,13 +33,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-04
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JFrame`を上下に並べて、それぞれに`ComponentListener`インタフェースを実装したリスナーを追加しています。片方のフレームが移動された時、残りのフレームの位置を指定する前に、一旦このリスナーを削除してやることで、処理がループしないようになっています。
 
-### 参考リンク
+## 参考リンク
 - [Swing (Archive) - how to dock two jdialogs?](https://forums.oracle.com/thread/1479997)
 - [Swing (Archive) - how to catch drag event in the title bar of a jframe](https://forums.oracle.com/thread/1492552)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-13
 
-## JViewportにBorderを設定する
+## 概要
 `JViewport`に`Border`を設定して余白を作成します。
 
 {% download https://lh6.googleusercontent.com/-dtdRJtfyQqs/UtKoFiKxRVI/AAAAAAAAB-A/QmWEeAHNlmE/s800/ViewportBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTextArea textArea2 = new JTextArea("JScrollPane#setViewportBorder(...)\n\n" + initTxt);
 textArea2.setMargin(new Insets(0,0,0,0));
 JScrollPane scroll2 = new JScrollPane(textArea2);
 scroll2.setViewportBorder(BorderFactory.createLineBorder(textArea2.getBackground(), 5));
 </code></pre>
 
-### 解説
+## 解説
 - 左: `JTextArea#setMargin(Insets)`
     - `JTextArea`に`setMargin(Insets)`で余白を設定
     - 行変更などのカーソル移動で先頭や末尾の余白分まではスクロールされない
@@ -34,4 +34,4 @@ scroll2.setViewportBorder(BorderFactory.createLineBorder(textArea2.getBackground
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

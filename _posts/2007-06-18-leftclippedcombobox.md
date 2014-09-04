@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-18
 
-## JComboBoxのアイテム文字列を左側からクリップ
+## 概要
 `JComboBox`のアイテム文字列がコンポーネントより長い場合、これを左側からクリップします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPEaiR2iI/AAAAAAAAAdY/E5fxUtKW0sM/s800/LeftClippedComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JButton arrowButton = getArrowButton(combo02);
 combo02.setRenderer(new DefaultListCellRenderer() {
   @Override public Component getListCellRendererComponent(
@@ -61,7 +61,7 @@ combo02.setRenderer(new DefaultListCellRenderer() {
 });
 </code></pre>
 
-### 解説
+## 解説
 標準の`JComboBox`では、長い文字列は右側をクリップするので、上記のサンプルでは左側を切り取り、`...`で置き換えるようにセルレンダラーを変更しています。
 
 例えば、コンボボックスのセルよりファイル名が長くても、拡張子が表示できるようにしたいといった場合に使用します。
@@ -70,14 +70,14 @@ combo02.setRenderer(new DefaultListCellRenderer() {
 
 `LookAndFeel`によって余白などのサイズが微妙に異なる場合がある？ため、うまく表示されないことがあります。
 
-### 参考リンク
+## 参考リンク
 - [Swing - JTable - right align in cell even if the text is wider than the cell](https://forums.oracle.com/thread/1389543)
     - camickr さんの投稿(2005/06/10 5:52)した`JTable`でのサンプルを参考にしています。
 - [Left Dot Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/12/left-dot-renderer/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 参考リンク、スクリーンショット更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-13 (木) 14:26:39
 
 <!-- dummy comment line for breaking list -->

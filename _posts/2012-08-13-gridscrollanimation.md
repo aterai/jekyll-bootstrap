@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-13
 
-## GridLayoutとJScrollPaneを使ったグリッド単位での表示切り替え
+## 概要
 `JPanel`に`GridLayout`でコンポーネントを追加し、これを`JScrollPane`に配置して、グリッド単位での表示、スクロールアニメーションによる切り替えを行います。
 
 {% download https://lh4.googleusercontent.com/-V2E4xmdHmBE/UCiUOuOlrLI/AAAAAAAABQg/IYqzH9-WdsI/s800/GridScrollAnimation.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class GridPanel extends JPanel implements Scrollable {
   public static int cols = 3, rows = 4;
   public static Dimension size = new Dimension(160*cols, 120*rows);
@@ -99,7 +99,7 @@ class ScrollAction extends AbstractAction {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`GridLayout`を使ってグリッド状に配置したコンポーネントを、`JScrollPane`と`scrollRectToVisible(...)`メソッドで、グリッド単位の表示と切り替え(スクロールアニメーション付き)を行なっています。
 
 - 最初に表示されるコンポーネントは、左上にある(一番最初に`JPanel`に追加した)コンポーネント
@@ -110,9 +110,9 @@ class ScrollAction extends AbstractAction {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-25
 
-## TitledBorderのタイトルを縦(左側)に表示する
+## 概要
 `TitledBorder`のタイトル文字列を縦(左側)に表示します。
 
 {% download https://lh4.googleusercontent.com/-ndnU9h6kzPw/T-gQmrTVqdI/AAAAAAAABOQ/KwNEpVGLDa0/s800/VerticalTitledBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class VerticalTitledBorder extends TitledBorder{
   private final JLabel label;
   public VerticalTitledBorder(String title) {
@@ -119,7 +119,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-25
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左
     - `TitledBorder`のデフォルト(上)
     - `JDK1.7.0`では、文字列が`Border`の幅より長い場合、省略記号`...`で省略されるようになった
@@ -130,4 +130,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-25
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

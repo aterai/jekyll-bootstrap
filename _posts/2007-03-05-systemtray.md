@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-05
 
-## SystemTrayにアイコンを表示
+## 概要
 `JDK 6`で追加された機能を使って、`SystemTray`にアイコンを表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUJeisovI/AAAAAAAAAlk/zvAoP96Ntcs/s800/SystemTray.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public MainPanel(final JFrame frame) {
   super();
   if(!SystemTray.isSupported()) {
@@ -59,20 +59,20 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-05
 }
 </code></pre>
 
-### 解説
+## 解説
 トレイアイコンでは、`JPopupMenu`ではなく、`PopupMenu`や`MenuItem`を使用します。
 
 上記のサンプルでは、フレームがアイコン化(最小化)されたときにタスクバーの表示を消して、システムトレイにアイコンだけ表示したいので、初期状態を`frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);`にしておき、アイコン化された場合でも、`frame.dispose();`するようにしています。
 
 実際に`VM`を終了する場合は、表示可能なウィンドウをすべて破棄して(`frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);`)、システムトレイからも`tray.remove(icon);`してアイコンを取り除けばいいようです。
 
-### 参考リンク
+## 参考リンク
 - [TrayIconのアニメーション](http://terai.xrea.jp/Swing/AnimatedTrayIcon.html)
 - [TrayIconのダブルクリック](http://terai.xrea.jp/Swing/ClickTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Ubuntu`だと通知スペースに表示されるのですが、背景色や位置がどうもうまくいっていないようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-08 (火) 20:23:38
     - 位置は以下みたいにすれば適当に補正できそうですが、背景色はどうしたらいいんだろう？ `g.setColor(UIManager.getColor("Panel.background"));g.fillRect(0,0,d.width,d.height);`とかするのは酷いか…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-08 (火) 21:11:09
 

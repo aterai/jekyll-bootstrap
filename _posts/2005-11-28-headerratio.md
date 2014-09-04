@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-28
 
-## TableColumnの幅を比率で設定
+## 概要
 `TableColumn`の幅を比率で設定します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TSs6oj80RcI/AAAAAAAAAxs/hm2gp4ELiDI/s800/HeaderRatio.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private void setTableHeaderColumnRaito() {
   int[] list = getWidthRaitoArray();
   //System.out.println("a: "+table.getColumnModel().getTotalColumnWidth());
@@ -51,7 +51,7 @@ private void setRaito() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTextField`にコロン区切りで入力した比率に従って、ヘッダカラムの幅を調整するようになっています。
 
 - `ComponentListener#componentResized(...)`がチェックされている場合
@@ -66,9 +66,9 @@ private void setRaito() {
 `TableColumn#setMaxWidth`メソッドでカラムの幅を指定する場合は、マウスのドラッグによるサイズの変更はできません。
 
 
-### 参考リンク
+## 参考リンク
 - [デルタの分散 - JTable#doLayout()](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTable.html#doLayout%28%29)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

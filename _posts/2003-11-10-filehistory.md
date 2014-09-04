@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-10
 
-## JMenuに最近使ったファイルを追加
+## 概要
 `JMenu`に、「最近使ったファイル(`F`)」を履歴として追加していきます。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMffElRbI/AAAAAAAAAZQ/1d47Mop5D-0/s800/FileHistory.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private int MAXHISTORY = 3;
 private void updateHistory(String str) {
   fileHistory.removeAll();
@@ -53,15 +53,15 @@ private void historyActionPerformed(File file) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、「ファイル->開く」で、ダミーファイルの履歴が残ります。履歴は`3`件まで残り、履歴をメニューから選択すると、そのファイルが履歴の先頭に移動します。
 
 実際に使用する場合は、ダミーファイルを使用している箇所を修正したり、アプリケーションを終了する際に履歴を保存したりするコードを追加する必要があります。
 
-### 参考リンク
+## 参考リンク
 - [Resourceファイルからメニューバーを生成](http://terai.xrea.jp/Swing/ResourceMenuBar.html)
 - [JFrameの位置・サイズを記憶する](http://terai.xrea.jp/Swing/Preferences.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

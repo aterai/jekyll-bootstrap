@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-26
 
-## JTableのCellEditorにJComboBoxを設定
+## 概要
 `JTable`の`CellEditor`に`JComboBox`を使用し、リストから値を選択できるようにします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJy9xBM6I/AAAAAAAAAU8/h5YELRcY4gE/s800/ComboCellEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JComboBox cb = new JComboBox(new String[] {"名前0", "名前1", "名前2"});
 cb.setBorder(BorderFactory.createEmptyBorder());
 
@@ -24,7 +24,7 @@ col.setCellEditor(new DefaultCellEditor(cb));
 //col.setCellRenderer(new ComboBoxCellRenderer());
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`1`列目のセルエディタとしてコンボボックスを使う`DefaultCellEditor`を登録しています。
 
 - - - -
@@ -39,11 +39,11 @@ col.setCellEditor(new DefaultCellEditor(cb));
 - - - -
 セルの表示にも`JComboBox`を使用する場合は、[JTableのCellRendererにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellRenderer.html)を参考に`JComboBox`を継承するセルレンダラーを使用してみてください。
 
-### 参考リンク
+## 参考リンク
 - [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples7.html)
 - [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
 - [JTableのCellRendererにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

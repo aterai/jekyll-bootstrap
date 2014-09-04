@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-27
 
-## TableRowSorterのSortKeysをクリアする
+## 概要
 `JDK 6`で導入された`TableRowSorter`での行ソートを、テーブルヘッダの<kbd>Shift</kbd>+クリックでクリアします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJF8YbgvI/AAAAAAAAAT0/NDSO1fqmVNw/s800/ClearSortingState.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>table.setAutoCreateRowSorter(true);
 table.getTableHeader().addMouseListener(new MouseAdapter() {
   @Override public void mouseClicked(MouseEvent e) {
@@ -37,7 +37,7 @@ table.getTableHeader().addMouseListener(new MouseAdapter() {
 });
 </code></pre>
 
-### 解説
+## 解説
 ヘッダにマウスリスナーを設定し、<kbd>Shift</kbd>キーを押しながらのクリックの場合は、`TableRowSorter#setSortKeys`メソッドを使って、ソートキーを空にしています。
 
 上記のサンプルでは、以下のような制限があります。
@@ -47,11 +47,11 @@ table.getTableHeader().addMouseListener(new MouseAdapter() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [TableSorter.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)
 - [TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)
 - [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](http://terai.xrea.jp/Swing/TriStateSorting.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

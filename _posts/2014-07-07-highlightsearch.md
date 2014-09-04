@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-07
 
-## JTextAreaでハイライト付き検索を行う
+## 概要
 `JTextArea`内の文字列を指定した条件で検索し、マッチした文字列をすべてハイライト表示します。
 
 {% download https://lh5.googleusercontent.com/-jdjIr-6A1l8/U7ljpxPgxzI/AAAAAAAACJI/x2Okpzkcce8/s800/HighlightSearch.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private Pattern getPattern() {
   String text = field.getText();
   if (text == null || text.isEmpty()) {
@@ -74,7 +74,7 @@ private void changeHighlight() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のような条件に一致する文字列をすべてハイライト表示(黄色)する検索を行います。また、文字列入力欄に文字列が入力されている場合、マッチした結果の総数とカレントの結果(オレンジでハイライト)の順番を`JLayer`で表示します。
 
 - `⋀`
@@ -89,7 +89,7 @@ private void changeHighlight() {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Match case`の動作が逆になっていたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-07-23 (水) 17:57:58
 
 <!-- dummy comment line for breaking list -->

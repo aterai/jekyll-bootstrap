@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-15
 
-## JScrollBarをJSliderとして使用する
+## 概要
 `JScrollBar`を`JSlider`の代わりとして使用します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSgYVysvI/AAAAAAAAAi4/5UjLktCUVb8/s800/ScrollBarAsSlider.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>int step   = 5;
 int extent = 20;
 int min    = 0;
@@ -35,7 +35,7 @@ final JSpinner spinner = new JSpinner(
 //...
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JScrollBar`を`JSlider`として使用し、`JSpinner`と連動させています。`JScrollBar`に設定する最大値は、スクロールバーのノブ(`extent`はノブの幅)の右ではなく左端になるように調整する必要があります。
 
 - このため、`JSpinner`の最大値とは異なり、`max`+`extent`が`JScrollBar`に設定する最大値となる
@@ -43,9 +43,9 @@ final JSpinner spinner = new JSpinner(
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JScrollBar](http://docs.oracle.com/javase/jp/6/api/javax/swing/JScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

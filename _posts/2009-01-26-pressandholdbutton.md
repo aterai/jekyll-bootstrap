@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-26
 
-## JPopupMenuをボタンの長押しで表示
+## 概要
 `JToolBar`に、長押しで`JPopupMenu`、クリックで選択されたメニューを表示するボタンを追加します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRIzHMLNI/AAAAAAAAAgs/0_PwsyZOl-I/s800/PressAndHoldButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class PressAndHoldHandler extends AbstractAction implements MouseListener {
   public final JPopupMenu pop = new JPopupMenu();
   public final ButtonGroup bg = new ButtonGroup();
@@ -93,10 +93,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-26
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`1000`ミリ秒ボタンを押したままにしておくと、`JRadioButton`を配置した`JPopupMenu`を表示します。普通にクリックした場合は、現在選択されている`JRadioButton`の色をコンソールに出力するようになっています。
 
 - - - -
 `JPopupMenu`のレイアウトを`pop.setLayout(new GridLayout(0,3));`で変更し、三列に`JRadioButton`を並べています。
 
-### コメント
+## コメント

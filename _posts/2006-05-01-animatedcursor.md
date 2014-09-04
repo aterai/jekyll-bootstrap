@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-01
 
-## Cursorのアニメーション
+## 概要
 マウスカーソルをアニメーションさせます。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHkbNXdwI/AAAAAAAAARY/RzDAT8xyR3c/s800/AnimatedCursor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>list[0] = tk.createCustomCursor(tk.createImage(url00), p, "00");
 list[1] = tk.createCustomCursor(tk.createImage(url01), p, "01");
 list[2] = tk.createCustomCursor(tk.createImage(url02), p, "02");
@@ -41,12 +41,12 @@ JButton button = new JButton(new AbstractAction("スタート") {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ボタンをクリックすると、パネル上にあるカーソルがアニメーションするようになっています。`3`枚の透過`png`ファイルをコマにして、`Timer`で順番にこれを切り替えています。
 
 各コマは、[ぶーん(通常の選択.ani、VIPポインタ)](http://www11.atwiki.jp/vippointer/pages/54.html)から、[ANIめーかー](http://www.vector.co.jp/soft/win95/amuse/se195017.html)を使って生成しています。
 
-### 参考リンク
+## 参考リンク
 - [VIPポインタ@Wiki - トップページ](http://www11.atwiki.jp/vippointer/)
 - [ANIめーかー(Windows95/98/Me/アミューズメント)](http://www.vector.co.jp/soft/win95/amuse/se195017.html)
 - [Cursorオブジェクトの生成](http://terai.xrea.jp/Swing/CustomCursor.html)
@@ -54,7 +54,7 @@ JButton button = new JButton(new AbstractAction("スタート") {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Cursor`に用いる`png`ファイルは、フルカラー(`24`ビット)ではなく`256`色にしておかないと、うまく透過できないようです。もしかしたら自分の`PC`の画面の色が`16`ビットになっているせいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-11 (火) 12:41:59
     - `32`ビットにしてもだめみたいです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-25 (火) 16:53:29
     - 追記: `JDK 6`なら、フルカラーでも問題なく透過できるようです。[Bug ID: 6388546 PNG with transparent background doesn't render correctly](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6388546) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-07-28 (月) 16:27:56

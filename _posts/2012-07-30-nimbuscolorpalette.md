@@ -10,17 +10,17 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-30
 
-## NimbusLookAndFeelのカラーパレット
+## 概要
 `NimbusLookAndFeel`のカラーパレットを変更します。
 
 {% download https://lh4.googleusercontent.com/-ZPZIywXgxwc/UBYR3-EyETI/AAAAAAAABP4/Y2KglYmMKo8/s800/NimbusColorPalette.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIDefaults def = UIManager.getLookAndFeelDefaults();
 def.put("nimbusOrange", new Color(255,220,35,200));
 </code></pre>
 
-### 解説
+## 解説
 - 上:
     - `NimbusLookAndFeel`の`Primary Colors`の一つ(上記のサンプルでは`nimbusOrange`)を変更して全体で色を変更
 
@@ -61,7 +61,7 @@ d.put("ProgressBar[Enabled].foregroundPainter", new Painter&lt;JProgressBar&gt;(
 progressbar.putClientProperty("Nimbus.Overrides", d);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)
 - [java - How to change the color of a single JProgressBar in Nimbus? - Stack Overflow](http://stackoverflow.com/questions/10847308/how-to-change-the-color-of-a-single-jprogressbar-in-nimbus)
 - [JLayerを使ってJProgressBarの色相を変更する](http://terai.xrea.jp/Swing/ColorChannelSwapFilter.html)
@@ -69,4 +69,4 @@ progressbar.putClientProperty("Nimbus.Overrides", d);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

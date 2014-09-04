@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-03
 
-## JTabbedPaneの余白にJButtonを配置
+## 概要
 `JTabbedPane`のタブエリアに余白を作成し、そこに`OverlayLayout`を使って`JButton`を配置します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTUOdUT3wI/AAAAAAAAAls/N2JYE_Dcr_Y/s800/TabbedPaneWithButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JButton b = new ToolBarButton(icon);
 b.addActionListener(new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
@@ -53,7 +53,7 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルは、タブブラウザ風の動作となるように設定しています。
 
 - タブエリアの左上にあるボタンをクリックするとタブが追加される
@@ -73,7 +73,7 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [famfamfam.com: Mini Icons](http://www.famfamfam.com/lab/icons/mini/)
     - 追加アイコンを拝借しています。
 - [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
@@ -83,4 +83,4 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

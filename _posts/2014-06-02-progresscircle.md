@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-02
 
-## JProgressBarの進捗状況を円形で表示する
+## 概要
 `JProgressBar`の進捗状況を円形表示するように設定します。
 
 {% download https://lh3.googleusercontent.com/-K2Us5zyEGJs/U4rt4SgHxVI/AAAAAAAACGo/IBfgQ2C1jxE/s800/ProgressCircle.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ProgressCircleUI extends BasicProgressBarUI {
   @Override public Dimension getPreferredSize(JComponent c) {
     Dimension d = super.getPreferredSize(c);
@@ -68,7 +68,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-02
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BasicProgressBarUI#paint(Graphics g, JComponent c)`をオーバーライドして進捗状況を円形で表現する`ProgressBarUI`を作成し、`JProgressBar`に設定しています。
 
 - 注:
@@ -78,10 +78,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-02
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成](http://terai.xrea.jp/Swing/CompoundButton.html)
 - [JProgressBarにUIを設定してインジケータの色を変更](http://terai.xrea.jp/Swing/GradientPalletProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

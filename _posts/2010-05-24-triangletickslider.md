@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-24
 
-## JSliderの目盛りをアイコンに変更する
+## 概要
 `JSlider`の目盛りをアイコンで描画します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWS_t-t1I/AAAAAAAAApA/78UrJyqx8og/s800/TriangleTickSlider.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JSlider slider = new JSlider(0,100);
 slider.setMajorTickSpacing(10);
 slider.setMinorTickSpacing(5);
@@ -39,17 +39,17 @@ if(dictionary != null) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JSlider`のラベル(`JLabel`)を`JSlider#getLabelTable()`メソッドで取得し、このラベルに三角形のアイコンを追加して、目盛り(`MajorTick`)の代わりとして表示しています。
 
 - 注: `JSlider#setOrientation(SwingConstants.VERTICAL)`には未対応
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JSliderのUIや色を変更する](http://terai.xrea.jp/Swing/VolumeSlider.html)
 - [JSliderの目盛にアイコンや文字列を追加する](http://terai.xrea.jp/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

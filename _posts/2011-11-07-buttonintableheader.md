@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-07
 
-## JTableHeaderにJButtonを追加する
+## 概要
 `JTableHeader`にクリックするとポップアップメニューを表示する`JButton`を追加します。
 
 {% download https://lh3.googleusercontent.com/-ccZ08VSXYwE/Trd27UaeD2I/AAAAAAAABEk/1NAYoZ1NGV0/s800/ButtonInTableHeader.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseClicked(MouseEvent e) {
   JTableHeader header = (JTableHeader)e.getSource();
   JTable table = header.getTable();
@@ -52,10 +52,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-07
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTableHeader`の各カラムにマウスカーソルがある場合、`HeaderRenderer#getTableCellRendererComponent(...)`内で、右端に`JButton`を追加しています。ボタンがクリックされたときに表示する`JPopupMenu`は、`JTableHeader`に追加したマウスリスナーでクリックされた位置などを取得して表示するようになっています。
 
-### コメント
+## コメント
 - `NimbusLookAndFeel`で、`JPopupMenu`が表示されないのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-11-07 (月) 22:15:02
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-27
 
-## Clipboardから文字列や画像を取得する
+## 概要
 `Clipboard`から文字列や画像データを取得し、`JLabel`に表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUB2-qFWI/AAAAAAAAAlY/hlwTEjnyC_g/s800/SystemClipboard.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private ClipboardService cs = null;
 public JComponent makeUI() {
   try{
@@ -53,7 +53,7 @@ public JComponent makeUI() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルを`Web Start`で実行した場合は、`Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null)`ではなく、`ClipboardService#getContents()`を使って、`Transferable`を取得するようになっています。
 
 - 文字列
@@ -63,9 +63,9 @@ public JComponent makeUI() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Javaクリップボードメモ(Hishidama's Java Clipboard Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/clipboard.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

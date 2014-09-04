@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-22
 
-## CellEditorのBorderを変更
+## 概要
 `JTable`の`CellEditor`に`Border`を設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIiyFXk2I/AAAAAAAAAS8/Dgu1EqDMma4/s800/CellEditorBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTextField field = new JTextField();
 field.setBorder(BorderFactory.createLineBorder(Color.RED, 2));
 table.setDefaultEditor(Object.class, new DefaultCellEditor(field));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BorderFactory.createLineBorder(Color.RED, 2)`を設定した`JTextField`を使用する`DefaultCellEditor`を作成し、`JTable#setDefaultEditor(...)`で、`Object.class`のデフォルトエディタとして設定しています。
 
 - - - -
@@ -44,9 +44,9 @@ table.setDefaultEditor(Object.class, new DefaultCellEditor(field));
 };
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableが使用するBooleanCellEditorの背景色を変更](http://terai.xrea.jp/Swing/BooleanCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

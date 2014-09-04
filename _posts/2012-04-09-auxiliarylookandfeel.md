@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-09
 
-## AuxiliaryLookAndFeelを追加する
+## 概要
 `AuxiliaryLookAndFeel`を追加して、`WindowsLookAndFeel`の場合の動作を変更します。
 
 {% download https://lh4.googleusercontent.com/-SxIyCqWRFhk/T4JxXw96NSI/AAAAAAAABLQ/gM_5mjZPn1o/s800/AuxiliaryLookAndFeel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JCheckBox check = (JCheckBox)e.getSource();
 String lnf = UIManager.getLookAndFeel().getName();
 if(check.isSelected() &amp;&amp; lnf.contains("Windows")) {
@@ -26,7 +26,7 @@ if(check.isSelected() &amp;&amp; lnf.contains("Windows")) {
 SwingUtilities.updateComponentTreeUI(MainPanel.this);
 </code></pre>
 
-### 解説
+## 解説
 `WindowsLookAndFeel`の場合、`JComboBox`のドロップダウンリストで右クリックを無効にするような`ComboBoxUI`を`UIManager.addAuxiliaryLookAndFeel(...)`を使って追加しています。
 
 - [JComboBoxのドロップダウンリストで右クリックを無効化](http://terai.xrea.jp/Swing/DisableRightClick.html)
@@ -72,12 +72,12 @@ SwingUtilities.updateComponentTreeUI(MainPanel.this);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Using the Multiplexing Look and Feel](http://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/multi/doc-files/multi_tsc.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - いつか修正: `AuxiliaryLookAndFeel`の作成方法、使い方などをいろいろ間違えているような気がする…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-09 (月) 14:41:52
 
 <!-- dummy comment line for breaking list -->

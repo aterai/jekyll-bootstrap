@@ -10,16 +10,16 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-04
 
-## JComboBoxのドロップダウンリストが表示する最大項目数を設定する
+## 概要
 `JComboBox`のドロップダウンリストでスクロールバーを使用しないで表示可能な項目数を変更します。
 
 {% download https://lh4.googleusercontent.com/-6YdIN-49R8M/UQ6Cpy8yQdI/AAAAAAAABdE/-6_SS6KCdDE/s800/MaximumRowCount.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>comboBox.setMaximumRowCount(newValue);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JSpinner`で指定した数値を`JComboBox#setMaximumRowCount(newValue);`で変更することができます。
 
 - 注:
@@ -28,4 +28,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-04
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

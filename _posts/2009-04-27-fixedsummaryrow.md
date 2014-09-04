@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-27
 
-## JTableにソートされないサマリー行を表示する
+## 概要
 `JTable`の行をソートしても、常に最終行にサマリーを表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTM63Y0s8I/AAAAAAAAAZ8/o3lbm9QBcIs/s800/FixedSummaryRow.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public JTable makeTable() {
   final JTable table = new JTable(model);
   final RowFilter&lt;TableModel,Integer&gt; filter = new RowFilter&lt;TableModel,Integer&gt;() {
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-27
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のようにしてサマリー行を作成しています。
 
 - モデルの先頭と末尾にダミー行を追加
@@ -73,10 +73,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-27
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Sorting Table with Summary Row - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/date/20070812)
 - [Swing - Sort rows in JTable except the last row](https://forums.oracle.com/thread/1356123)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

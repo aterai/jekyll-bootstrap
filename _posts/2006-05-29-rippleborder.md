@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-29
 
-## Borderのアニメーション
+## 概要
 `Border`の描画をアニメーションさせます。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR9UHQaAI/AAAAAAAAAiA/_Kn7tNr8M3s/s800/RippleBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RippleBorder extends EmptyBorder {
   private final javax.swing.Timer animator;
   private final JComponent comp;
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-29
 }
 </code></pre>
 
-### 解説
+## 解説
 コンポーネント上にカーソルがきた場合、`Border`をアニメーションさせることで、波紋状の効果を描画しています。
 
-### コメント
+## コメント

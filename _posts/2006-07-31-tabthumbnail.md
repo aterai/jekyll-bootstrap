@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-31
 
-## JTabbedPaneのサムネイルをJToolTipで表示
+## 概要
 ツールチップを使って、`JTabbedPane`のサムネイルを表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUz8_Yw-I/AAAAAAAAAmo/wLoOmG5I3oc/s800/TabThumbnail.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MyTabbedPane extends JTabbedPane {
   private int current = -1;
   private static final double SCALE = 0.15d;
@@ -70,14 +70,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-31
 }
 </code></pre>
 
-### 解説
+## 解説
 マウスカーソルがタブタイトル上にきた場合、そのタブ内部のコンポーネントを縮小して`JToolTip`に貼り付けています。
 
-### 参考リンク
+## 参考リンク
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-21
 
-## JListのセル中に配置したコンポーネント毎にカーソルを変更する
+## 概要
 `JList`のセルに配置されているコンポーネントをマウスの座標から検索し、それに設定されたカーソルを`JList`に適用します。
 
 {% download https://lh3.googleusercontent.com/-v3ugRz81Y0Q/UmPxM3SwOYI/AAAAAAAAB4Y/PqZaNMCPgN0/s800/CursorOfCellComponent.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JList&lt;String&gt; list = new JList&lt;String&gt;(model) {
   private LinkCellRenderer renderer;
   @Override public void updateUI() {
@@ -51,7 +51,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-21
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下の手順でイベントを取得しないセルレンダラー中のコンポーネントに応じたカーソルの変更を行っています。
 
 - `JList`上をマウスカーソルを移動した時に、カーソルのある行を取得
@@ -68,4 +68,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-21
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

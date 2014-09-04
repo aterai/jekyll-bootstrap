@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-07
 
-## JTreeのノードを展開・折り畳み
+## 概要
 `JTree`のすべてのノードに対して、展開、折り畳みを行います。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMS3T9nvI/AAAAAAAAAY8/ooi4QMbp6fA/s800/ExpandAllNodes.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//@see http://www.rgagnon.com/javadetails/java-0210.html
 //Expand or collapse a JTree - Real's Java How-to
 private void expandAll(JTree tree) {
@@ -52,7 +52,7 @@ private void collapseAll(JTree tree) {
 }
 </code></pre>
 
-### 解説
+## 解説
 - `expandAll(A)`
     - `JTree`をリストとみなして`expandAll`では先頭から順番に`JTree#expandRow(int)`メソッドを実行
     - ループは全展開された時の`JTree`の行数だけ繰り返す
@@ -77,14 +77,14 @@ private void collapseAll(JTree tree) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - ~~[Expanding or Collapsing All Nodes in a JTree Component (Java Developers Almanac Example)](http://www.exampledepot.com/egs/javax.swing.tree/ExpandAll.html)~~
 - [Expand or collapse a JTree - Real's Java How-to](http://www.rgagnon.com/javadetails/java-0210.html)
 - [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 解説のラベル`A`と`B`が、ソースとは逆になっていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-05 (火) 19:31:53
 
 <!-- dummy comment line for breaking list -->

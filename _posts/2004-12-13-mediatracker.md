@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-13
 
-## MediaTrackerで画像のサイズを取得
+## 概要
 `MediaTracker`で画像のサイズを取得します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPsQMGUsI/AAAAAAAAAeY/B8MAwtKhshY/s800/MediaTracker.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private Dimension getImageDimension(Image img) {
   MediaTracker tracker = new MediaTracker((Container)this);
   tracker.addImage(img, 0);
@@ -26,16 +26,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-13
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`MediaTracker`を使って、画像のサイズを取得しています。
 
 - - - -
 `JTable`にファイルをドロップすると、画像の幅、高さを一覧表示します。
 
-### 参考リンク
+## 参考リンク
 - [Jpegファイルのコメントを取り出す](http://terai.xrea.jp/Swing/IIOMetadata.html)
 - [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

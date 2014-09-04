@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-04
 
-## JTableのPaginationとSwingWorkerでの逐次読み込み
+## 概要
 `JTable`で`RowFilter`を使った`Pagination`と`SwingWorker`での逐次読み込みを行います。
 
 {% download https://lh5.googleusercontent.com/-1qIJd4HlwkQ/UnaN9fNNZtI/AAAAAAAAB5Y/JqssphQAq3Q/s800/PageInputForPagination.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>worker = new SwingWorker&lt;String, List&lt;Object[]&gt;&gt;() {
   private int max = 2013;
   @Override public String doInBackground() {
@@ -95,7 +95,7 @@ private void initFilterAndButton() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、[RowFilterでJTableのページ分割](http://terai.xrea.jp/Swing/TablePagination.html)に以下の変更を追加しています。
 
 - `JTextField`に数値を入力して指定ページにジャンプ
@@ -104,9 +104,9 @@ private void initFilterAndButton() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [RowFilterでJTableのページ分割](http://terai.xrea.jp/Swing/TablePagination.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

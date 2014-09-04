@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-01
 
-## JTableのセルにJProgressBarを表示
+## 概要
 `JTable`のセルに`JProgressBar`を使用して進捗を表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUYeEtfWI/AAAAAAAAAl8/47mUyOKeiQY/s800/TableCellProgressBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ProgressRenderer extends DefaultTableCellRenderer {
   private final JProgressBar b = new JProgressBar(0, 100);
   public ProgressRenderer() {
@@ -87,7 +87,7 @@ executor.execute(worker); //1.6.0_18
 //worker.execute(); //1.6.0_21
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`add`ボタンをクリックすると、`JDK 6`の`SwingWorker`を使用したダミータスクが起動して、進捗状況が`Cell`内の`JProgressBar`で表示されます。
 
 `ProgressRenderer`は、`JProgressBar`を一つ持ち、ダミータスクが動いている間は、その`JProgressBar`に値を設定して描画用のコンポーネントとして返し、タスクが終了(またはキャンセル)されたら`JLabel`(自分自身、`DefaultTableCellRenderer`)に文字列を設定して返すようになっています。
@@ -108,13 +108,13 @@ executor.execute(worker); //1.6.0_18
   private static final int MAX_WORKER_THREADS = 10;
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
 - [TableCellRendererに進捗文字列を設定したJProgressBarを使用する](http://terai.xrea.jp/Swing/StringPaintedCellProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ~~`Windows` + `Java 1.7.0-ea-b24`での動作がおかしいみたいです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-12-19 (水) 21:08:43~~
 - メモ: [Bug 87 - Icedtea 1.7.0 and SwingWorker problem](http://icedtea.classpath.org/bugzilla/show_bug.cgi?id=87) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-31 (木) 15:56:51
 - `JDK 1.6.0_18`での修正: [Bug ID: 6799345 JFC demos threw exception in the Java Console when applets are closed](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6799345) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-20 (水) 17:34:04

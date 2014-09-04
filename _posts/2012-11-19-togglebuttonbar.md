@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-19
 
-## JRadioButtonを使ってToggleButtonBarを作成
+## 概要
 `JRadioButton`のアイコンを変更して、`ToggleButtonBar`を作成します。
 
 {% download https://lh3.googleusercontent.com/-5-1KU3hp2co/UKjlTJyKvRI/AAAAAAAABW8/QuYQcKDeeyM/s800/ToggleButtonBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ToggleButtonBarCellIcon implements Icon{
   private static final Color TL = new Color(1f,1f,1f,.2f);
   private static final Color BR = new Color(0f,0f,0f,.2f);
@@ -94,7 +94,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-19
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JRadioButton`に選択またはロールオーバーでグラデーションが変化する`Icon`を設定し、これらを`ButtonGroup`に追加することで、`ToggleButtonBar`を作成しています。
 
 - 配色は、[簡単、きれい！RGBaカラーを使って横メニューを作ってみる｜Webpark](http://weboook.blog22.fc2.com/blog-entry-342.html) をそのまま引用
@@ -106,11 +106,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-19
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [簡単、きれい！RGBaカラーを使って横メニューを作ってみる｜Webpark](http://weboook.blog22.fc2.com/blog-entry-342.html)
 - [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://terai.xrea.jp/Swing/CardLayoutTabbedPane.html)
 - [JComboBoxの角を丸める](http://terai.xrea.jp/Swing/RoundedComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

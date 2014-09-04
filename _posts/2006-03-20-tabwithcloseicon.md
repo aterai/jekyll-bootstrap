@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
 
-## JTabbedPaneにタブを閉じるアイコンを追加
+## 概要
 `JTabbedPane`にタブを閉じるためのアイコンやボタンを追加します。以下の参考リンクから引用したコードをほぼそのまま引用して紹介しています。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVFao3q4I/AAAAAAAAAnE/SarJyg-AIQk/s800/TabWithCloseIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public class JTabbedPaneWithCloseIcons extends JTabbedPane {
   public JTabbedPaneWithCloseIcons() {
     super();
@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
 }
 </code></pre>
 
-### 解説
+## 解説
 - `JTabbedPaneWithCloseButton`(上)
     - `TabbedPaneLayout`を使用して、ボタンをタブの中にレイアウト
 - `JTabbedPaneWithCloseIcons`(中)
@@ -63,7 +63,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing (Archive) - Adding a close icon to a JTabbedPane tab](https://forums.oracle.com/thread/1501884)
 - [Swing - JTabbedPane with close Icons](https://forums.oracle.com/thread/1356993)
 - [Swing (Archive) - Closable Tab in JTabbedPane](https://forums.oracle.com/thread/1480617)
@@ -75,4 +75,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

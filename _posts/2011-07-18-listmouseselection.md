@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
 
-## JListをマウスクリックのみで複数選択する
+## 概要
 `JList`をアイテムをマウスクリックだけで複数選択できるように設定します。
 
 {% download https://lh6.googleusercontent.com/-wj2xm8BlBbA/TiPrjr1sQ5I/AAAAAAAAA_c/NiXO891B5fs/s800/ListMouseSelection.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JList list = new JList(model) {
   private ClearSelectionListener listener;
   @Override public void setSelectionInterval(int anchor, int lead) {
@@ -37,7 +37,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
 };
 </code></pre>
 
-### 解説
+## 解説
 - 左: `Default`
 - 中: `MouseEvent`
     - `JList#processMouseEvent`, `JList#processMouseMotionEvent`をオーバーライドして、常に<kbd>Ctrl</kbd>キーが押されている状態にする
@@ -88,14 +88,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-18
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/thread/1351452)
 - [JListの選択を解除](http://terai.xrea.jp/Swing/ClearSelection.html)
 - [JListのセルにJCheckBoxを使用する](http://terai.xrea.jp/Swing/CheckBoxCellList.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `OSX(snow leopard)`では、`MouseEvent`は複数選択が出来ません。キーボードを使っても(<kbd>command</kbd>+クリック)無理でした。 -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-20 (水) 13:15:30
     - ご指摘ありがとうございます。`OSX`では「<kbd>command</kbd>+クリック」で複数選択でしたっけ？ `InputEvent.CTRL_MASK`決め打ちではなく、`Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()`に修正した方がいいのかもしれません(ソースなどを更新しましたが、正常に動作するかは確認していません…)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-20 (水) 19:33:29
 - `Web Start`でもう一度実行してみましたが、やはり出来ませんでした。`MouseEvent`で複数選択ha -- [nsby](http://terai.xrea.jp/nsby.html) 2011-07-22 (金) 15:59:14

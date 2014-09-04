@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-15
 
-## JInternalFrameをModalにする
+## 概要
 `JInternalFrame`を`Modal`にして、他の`JInternalFrame`などを操作できないようにブロックします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTP9wW-lJI/AAAAAAAAAe0/xQ9vJrX3MuQ/s800/ModalInternalFrame.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//menuItem.setMnemonic(KeyEvent.VK_1);
 class ModalInternalFrameAction1 extends AbstractAction {
   public ModalInternalFrameAction1(String label) {
@@ -89,7 +89,7 @@ class ModalInternalFrameAction3 extends AbstractAction {
 }
 </code></pre>
 
-### 解説
+## 解説
 - <kbd>Alt+1</kbd>: `JOptionPane.showInternalMessageDialog`メソッドを使用して、簡単なメッセージを表示する`Modal`な`Dialog`を`JDesktopPane`内に表示
     - `JButton`のマウスクリックは無効になるが、`Mnemonic`が無効にならない
         - <kbd>Alt+B</kbd>でボタンを押すことが出来てしまう
@@ -192,7 +192,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 
 この方法は、`JDK 5`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移ることがあります。
 
-### 参考リンク
+## 参考リンク
 - [Creating Modal Internal Frames -- Approach 1 and Approach 2](http://web.archive.org/web/20090803142839/http://java.sun.com/developer/JDCTechTips/2001/tt1220.html)
 - [How to Use Root Panes](http://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
@@ -200,7 +200,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ~~[JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html)と、同様に`GlassPane`が`Ubuntu`(`GNOME`)などで半透明にならない場合があります。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-15 (月) 13:16:07
     - <kbd>Alt+2</kbd>で開いた場合、`JInternalFrame`に`GlassPane`を乗せるのではなく、直接`JDesktopPane`の`JLayeredPane.MODAL_LAYER`に追加するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-16 (火) 17:31:50
 - メモ: [Alexander Potochkin's Blog: Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)のサンプルでは、`Mnemonic`もちゃんとブロックできているようなので、「あとで調べる & 参考にする」こと。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-25 (金) 17:28:21

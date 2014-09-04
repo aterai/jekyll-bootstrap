@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-02-02
 
-## JTableのカラム幅を一部だけ固定する
+## 概要
 `JTable`のヘッダでカラム幅を一部だけ固定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTM9YcNZfI/AAAAAAAAAaA/sbjwdihBwqY/s800/FixedWidthColumn.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//すべてのヘッダカラムの幅を変更不可に
 //tableHeader.setResizingAllowed(false);
 
@@ -30,7 +30,7 @@ col.setMinWidth(50);
 col.setMaxWidth(50);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、一番最初のカラム幅が`50px`で固定となるように、`TableColumn#setMaxWidth(int)`、`TableColumn#setMinWidth(int)`を使用しています。カーソルも変化しないようにする場合は、`setResizable(false)`も一緒に指定します。
 
 - メモ
@@ -54,11 +54,11 @@ col.setMaxWidth(0);
 - - - -
 カラムの位置を固定してドラッグなどでの移動を禁止したい場合は、[JTableのヘッダ入れ替えを禁止](http://terai.xrea.jp/Swing/Reordering.html)を参照してください。
 
-### 参考リンク
+## 参考リンク
 - [FixedColumnExample](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples1.html)
 - [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
 - [JTableの列固定とソート](http://terai.xrea.jp/Swing/FixedColumnTableSorting.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

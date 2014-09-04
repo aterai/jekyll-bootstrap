@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-15
 
-## JProgressBarの不確定進捗サイクル時間を設定
+## 概要
 `JProgressBar`の不確定進捗状態アニメーションで使用するサイクル時間などを設定します。
 
 {% download https://lh3.googleusercontent.com/--xwJeUKsm8k/UeK6iFE0vkI/AAAAAAAABvw/SNNt1mvM4_c/s800/IndeterminateCycleTime.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("ProgressBar.repaintInterval", (Integer)repaintIntervalSpinner.getValue());
 UIManager.put("ProgressBar.cycleTime",       (Integer)cycleTimeSpinner.getValue());
 progressBar.setIndeterminate(true);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`UIManager`を使って`JProgressBar`の不確定進捗のアニメーションで使用するサイクル時間と再ペイント間隔をミリ秒で指定しています。
 
 - サイクル時間
@@ -37,9 +37,9 @@ progressBar.setIndeterminate(true);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [不確定進捗バー - Java™ 2 SDK, Standard Edition, v 1.4 での Swing の変更点および新機能](http://docs.oracle.com/javase/jp/7/technotes/guides/swing/1.4/pb.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

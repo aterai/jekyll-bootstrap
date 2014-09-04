@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-05
 
-## JTableのソート
-`JTable`のヘッダカラムをクリックすることで、行表示を降順、昇順にソートします。以下のサンプルは、[SortableTableExample](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples5.html)を参考にして作成しています。
+## 概要
+`JTable`のヘッダカラムをクリックすることで、行表示を降順、昇順にソートします。以下のサンプルは、~~[SortableTableExample](http://www2.gol.com/users/tame/swing/examples/JTableExamples5.html)~~を参考にして作成しています。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTXXYDR5I/AAAAAAAAAkQ/DeBHN6piDhQ/s800/SortableTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SortableTableModel extends DefaultTableModel{
   public SortableTableModel(String[] str, int row) {
     super(str, row);
@@ -64,20 +64,20 @@ class ColumnComparator implements Comparator{
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、カラムヘッダをクリックすることでソートできます。右クリックからポップアップメニューで、行を追加、削除したり、セルをダブルクリックして中身を色々編集するなどしてソートを試してみてください。
 
 複数の列をキーにしてソートしたい場合や、ヘッダがボタンになるのがいやな場合は、[TableSorterでJTableをソート](http://terai.xrea.jp/Swing/TableSorter.html)を参照してください。
 
 `JDK 1.6.0`では、`JTable`標準で簡単にソート機能を追加できるようになっています(参考:[TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html))。
 
-### 参考リンク
-- [SortableTableExample](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples5.html)
+## 参考リンク
+- ~~[SortableTableExample](http://www2.gol.com/users/tame/swing/examples/JTableExamples5.html)~~
 - [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 非常に参考になりました。すぐに実装に使わせていただきます。 -- [akio](http://terai.xrea.jp/akio.html) 2005-01-12 18:11:14 (水)
 - カラムをドラッグして移動したとき、矢印が残ってしまうようです。 ~~元からだったかデグレードしたのかちょっと不明です。~~ 元からのようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-02-25 19:55:01 (金)
 - 修正できたかな？ ~~確認中。~~ 確認済み。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-02-25 20:30:57 (金)

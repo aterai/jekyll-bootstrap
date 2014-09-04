@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-08
 
-## GlassPaneで画像をLightbox風に表示
+## 概要
 `GlassPane`を使用して、`Lightbox`風にアニメーションしながら画像を表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPJaQROVI/AAAAAAAAAdg/MXDWfchqmso/s800/LightboxLikeDisplay.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class LightboxGlassPane extends JComponent {
   private final ImageIcon image;
   private final AnimeIcon animatedIcon = new AnimeIcon();
@@ -102,14 +102,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-08
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JFrame`に`GlassPane`を設定して、この`GlassPane`の中央にインジケータ、高さ幅がアニメーションしながら拡大する矩形、画像を順番に表示しています。
 
 `GlassPane`に自分を`setVisible(false)`するマウスリスナーを追加しているので、任意の場所をクリックするとこの画像は非表示になります。
 
-### 参考リンク
+## 参考リンク
 - [Lightbox 2](http://www.huddletogether.com/projects/lightbox2/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

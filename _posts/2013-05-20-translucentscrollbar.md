@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 
-## JScrollBarを半透明にする
+## 概要
 半透明の`JScrollBar`を作成して、`JViewport`内部に配置します。
 
 {% download https://lh3.googleusercontent.com/-X8o390yxqhI/UZjhjkgUrkI/AAAAAAAABsY/Aajtim-5-uE/s800/TranslucentScrollBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public JComponent makeTranslucentScrollBar(JComponent c) {
   JScrollPane scrollPane = new JScrollPane(c) {
       @Override public boolean isOptimizedDrawingEnabled() {
@@ -108,7 +108,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JScrollBar`の増減ボタンのサイズを`0`、トラックを透明、つまみを半透明にして、`JViewport`内部に配置しています。
 
 - `ScrollPaneLayout#layoutContainer(...)`をオーバーライドして、`JScrollBar`を`JViewport`の内部にオーバーラップするように配置
@@ -130,12 +130,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - ["Optimized" Drawing - Painting in AWT and Swing](http://www.oracle.com/technetwork/java/painting-140037.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `ScrollPaneLayout`を変更してオーバーラップするより、`JLayer`などを使ってドラッグ可能な矩形を描画する方が簡単かもしれない…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-20 (月) 17:20:39
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-07
 
-## JEditorPaneで選択色を半透明化
+## 概要
 `JEditorPane`で選択色を半透明化し、`HighlightPainter`によるハイライトや`CSS`での背景色変更と組み合わせた場合の描画のテストを行います。
 
 {% download https://lh4.googleusercontent.com/-vbDIDKoUbmw/UlFdSAKWCVI/AAAAAAAAB3A/wbVAmRfeTCY/s800/SelectionColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JEditorPane area = new JEditorPane();
 area.setOpaque(false);
 area.setForeground(new Color(200, 200, 200));
@@ -24,7 +24,7 @@ area.setBackground(new Color(0, true));
 area.setSelectionColor(new Color(0xC86464FF, true));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JEditorPane`の選択色などを半透明化して、ハイライトや`CSS`での背景色変更と組み合わせた場合のテストをしています。
 
 - `JTextComponent#setSelectionColor`, `JTextComponent#setSelectedTextColor`
@@ -45,7 +45,7 @@ area.setSelectionColor(new Color(0xC86464FF, true));
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTextComponent#setSelectionColor(Color) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/JTextComponent.html#setSelectionColor%28java.awt.Color%29)
 - [JEditorPaneのHTMLEditorKitにCSSを適用](http://terai.xrea.jp/Swing/StyleSheet.html)
 - [Highlighterで文字列をハイライト](http://terai.xrea.jp/Swing/Highlighter.html)
@@ -54,4 +54,4 @@ area.setSelectionColor(new Color(0xC86464FF, true));
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

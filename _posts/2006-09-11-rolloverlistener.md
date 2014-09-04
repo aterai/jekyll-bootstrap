@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-11
 
-## JListのセルをカーソル移動でロールオーバー
+## 概要
 `JList`でマウスカーソルの下にあるセルをハイライト表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSE8rUioI/AAAAAAAAAiM/4EMPSFpuBVo/s800/RollOverListener.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RollOverList extends JList {
   private int rollOverRowIndex = -1;
   public RollOverList() {
@@ -54,13 +54,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-11
 }
 </code></pre>
 
-### 解説
+## 解説
 `MouseInputAdapter`をオーバーライドして、マウスカーソルのあるセルを記憶し、`JList`をリペイントしてそのセルの背景色などを変更しています。
 
-### 参考リンク
+## 参考リンク
 - [Swing - Highlight JTable rows on rollover](https://forums.oracle.com/thread/1389010)
 - [JTableのセルのハイライト](http://terai.xrea.jp/Swing/CellHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

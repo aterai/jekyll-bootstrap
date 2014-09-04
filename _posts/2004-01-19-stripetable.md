@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-19
 
-## TableCellRendererでセルの背景色を変更
+## 概要
 `TableCellRenderer`を継承するレンダラーを作ってテーブルのセルを修飾します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT1bwXoBI/AAAAAAAAAlE/jmpoFwDpvqs/s800/StripeTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class StripeTableRenderer extends DefaultTableCellRenderer {
   private static final Color evenColor = new Color(240, 240, 255);
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
@@ -35,7 +35,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-19
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のようなセルレンダラーを作成し、`Object`を継承するクラスのデフォルトレンダラーとして設定しています。
 
 - 奇数偶数で行の背景色を変更してテーブルをストライプ模様にする
@@ -117,13 +117,13 @@ class TableAlternateRowColorTest {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
 - [SwingのJTableコンポーネントでセルを描く](http://www.ibm.com/developerworks/jp/java/library/j-jtable/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JTable#prepareRenderer`メソッドを使用する場合のサンプルを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-04 (水) 19:41:37
 - メモ:[JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)。これおもしろいです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-12-10 (月) 17:25:47
 - ↑ありがとうございます．terai様のサイトは情報が充実していてすばらしいです．参考にさせていただきます． -- [KrdLab](http://terai.xrea.jp/KrdLab.html) 2008-01-27 (日) 14:27:53

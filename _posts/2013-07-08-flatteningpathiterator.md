@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-08
 
-## FlatteningPathIteratorでShape上の点を取得する
+## 概要
 `FlatteningPathIterator`を使って平坦化された`Shape`上の座標点を取得、描画します。
 
 {% download https://lh4.googleusercontent.com/-3GsdpxueSG8/Udl1tOfisII/AAAAAAAABvc/SBOIf1ZPPUk/s800/FlatteningPathIterator.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>PathIterator i = new FlatteningPathIterator(shape.getPathIterator(null), 1.0);
 float[] coords = new float[6];
 while(!i.isDone()) {
@@ -25,7 +25,7 @@ while(!i.isDone()) {
 }
 </code></pre>
 
-### 解説
+## 解説
 - `Ellipse2D`
     - `new Ellipse2D.Double`で作成した`Shape`を描画
 - `Polygon` x 2
@@ -56,11 +56,11 @@ while(!i.isDone()) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [FlatteningPathIterator (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/geom/FlatteningPathIterator.html)
 - [FlatteningPathIterator and moving object along Shape path.](http://java-sl.com/tip_flatteningpathiterator_moving_shape.html)
     - このサイトの例のように、`Shape`のパスに添ってアニメーションさせる場合などに便利です。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

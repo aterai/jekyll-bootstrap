@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-06
 
-## JTextFieldのMarginを設定する
+## 概要
 `JTextField`内部の余白を設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVM2PvsXI/AAAAAAAAAnQ/3wxfaHXrEUk/s800/TextFieldMargin.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>Insets m = UIManager.getInsets("TextField.margin");
 InsetsUIResource iur = new InsetsUIResource(m.top,m.left+5,m.bottom,m.right);
 UIManager.put("TextField.margin", iur);
@@ -29,7 +29,7 @@ Border b2 = BorderFactory.createCompoundBorder(field02.getBorder(), b1);
 field02.setBorder(b2);
 </code></pre>
 
-### 解説
+## 解説
 以下のサンプルでは、それぞれ左余白のサイズのみを変更しています。
 
 	javax.swing.plaf.InsetsUIResource[top=2,left=7,bottom=2,right=2]
@@ -49,10 +49,10 @@ field02.setBorder(b2);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
 - [JComboBoxにアイコンを表示](http://terai.xrea.jp/Swing/IconComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

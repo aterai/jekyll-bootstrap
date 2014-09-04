@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-11
 
-## JComboBoxのItemをTree状に表示する
+## 概要
 `JComboBox`のドロップダウンリストに表示する`Item`を`Tree`状に配置します。
 
 {% download https://lh6.googleusercontent.com/-5GlQEjeLoH8/ThqUIL9b4UI/AAAAAAAAA_E/9h5dxYzSSm8/s800/TreeComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TreeComboBox extends JComboBox {
   public TreeComboBox() {
     super();
@@ -97,7 +97,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-11
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`TreeModel`から取得した`TreeNode`を`JComboBox`の`Item`として、ドロップダウンリストに表示しています。
 
 - `TreeNode#isLeaf()`の場合だけ、選択可能
@@ -106,14 +106,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-11
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Tree inside JComboBox - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/tree_inside_jcombobox)
     - こちらで解説されているサンプルでは、`TreeCellRenderer`を使っているのでノードアイコンなども`JTree`のものを表示できるようになっています。
 - [JComboBoxのアイテムを選択不可にする](http://terai.xrea.jp/Swing/DisableItemComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `src.zip`などが正しいディレクトリに配置されてなかったのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-13 (水) 19:02:23
 
 <!-- dummy comment line for breaking list -->

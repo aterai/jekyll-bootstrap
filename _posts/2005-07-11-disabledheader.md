@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-11
 
-## JTableHeaderのカラムを選択不可にする
+## 概要
 `JTableHeader`のカラムを選択不可にして、ソートなどを禁止します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK7ZrULPI/AAAAAAAAAWw/fwuY_EwXQsM/s800/DisabledHeader.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public class SortButtonRenderer extends JButton implements TableCellRenderer{
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected,
@@ -40,7 +40,7 @@ public boolean isEnabledAt(int col) {
 }
 </code></pre>
 
-### 解説
+## 解説
 サンプルでは、`0`列目のヘッダカラムを常に選択不可に、`3`列目はチェックボックスで選択できるかどうかを切り替えるようにしています。
 
 `HashMap`に選択不可にするカラムヘッダを設定し、レンダラーがヘッダを描画するときにそれを`setEnabled(false)`しています。
@@ -83,4 +83,4 @@ hd.setDefaultRenderer(new TableCellRenderer() {
 });
 </code></pre>
 
-### コメント
+## コメント

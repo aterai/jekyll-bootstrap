@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
 
-## JTabbedPane風のタブ配置をレイアウトマネージャーで変更
+## 概要
 `CardLayout`と`JRadioButton`で作成した`JTabbedPane`風コンポーネントのタブ配置を自作レイアウトマネージャーで変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQUU8wtpI/AAAAAAAAAfY/BJyG5weJ1VA/s800/NewTabButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TabLayout implements LayoutManager, java.io.Serializable {
   @Override public void addLayoutComponent(String name, Component comp) {}
   @Override public void removeLayoutComponent(Component comp) {}
@@ -74,7 +74,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のような`LayoutManager`を作成して`JRadioButton`をタブ風に並べています。
 
 - 最後のタブ(タブ追加ボタン)は常に幅固定
@@ -91,13 +91,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 - [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://terai.xrea.jp/Swing/CardLayoutTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - タブの切り替えは、`mouseClicked`ではなく、`mousePressed`した時に行うように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-21 (水) 18:46:30
 
 <!-- dummy comment line for breaking list -->

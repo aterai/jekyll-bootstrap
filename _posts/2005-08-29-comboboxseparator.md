@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-29
 
-## JComboBoxにJSeparatorを挿入
+## 概要
 `JComboBox`に選択できない`JSeparator`を挿入します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJt9fH4ZI/AAAAAAAAAU0/c9vovQi9Jvo/s800/ComboBoxSeparator.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final ListCellRenderer lcr = combobox.getRenderer();
 combobox.setRenderer(new ListCellRenderer() {
   @Override public Component getListCellRendererComponent(JList list, Object value,
@@ -40,7 +40,7 @@ model.addElement("bbb1");
 combobox.setModel(model);
 </code></pre>
 
-### 解説
+## 解説
 - `ListCellRenderer`
     - `JSeparator`が選択された場合は、`JSeparator`にキャストして返すような`ListCellRenderer`を設定しています。
 
@@ -105,12 +105,12 @@ im.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0),    "selectNext3");
 im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxのアイテムをBorderで修飾してグループ分け](http://terai.xrea.jp/Swing/BorderSeparator.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - <kbd>Up</kbd><kbd>Down</kbd>キーでの選択状態移動に対応しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-08-10 (金) 18:54:05
 
 <!-- dummy comment line for breaking list -->

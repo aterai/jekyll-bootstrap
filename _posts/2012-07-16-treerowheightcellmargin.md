@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-16
 
-## JTreeのノードアイコンサイズとテキストの選択状態
+## 概要
 `JTree`のノードアイコンによって行の高さが変更された場合のテキストの選択状態を修正します。
 
 {% download https://lh3.googleusercontent.com/-W4SPLnW3RVY/UAQjez2fI3I/AAAAAAAABPY/c4v9ljR2k40/s800/TreeRowHeightCellMargin.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CompoundTreeCellRenderer extends DefaultTreeCellRenderer {
   private final JPanel p = new JPanel(new BorderLayout());
   private final JLabel icon = new JLabel();
@@ -70,7 +70,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-16
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `Default`
     - `UIManager.put("Tree.closedIcon", icon)`などで、`JTree`のノードアイコンを変更
     - ノードを選択した場合、アイコン(行)の高さまで選択色で塗られる
@@ -83,9 +83,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-16
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノードの文字列に余白を追加](http://terai.xrea.jp/Swing/TreeCellMargin.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

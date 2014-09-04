@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-03
 
-## JScrollPaneのスクロールを禁止
+## 概要
 `JScrollPane`のスクロールを一時的に禁止します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLM6S99OI/AAAAAAAAAXM/9r2e_2JRA5g/s800/DisableScrolling.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JCheckBox b = new JCheckBox("スクロールを禁止する");
 b.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent ie) {
@@ -29,7 +29,7 @@ b.addItemListener(new ItemListener() {
 });
 </code></pre>
 
-### 解説
+## 解説
 - このサンプルでは、`Disable Scrolling`をチェックして無効状態にすると
     - スクロールバーを取得し、`JScrollBar#setEnabled(boolean)`メソッドを使って、これを無効にします。
     - `JScrollPane#setWheelScrollingEnabled(boolean)`メソッドで、マウスホイールによるスクロールを無効にします。
@@ -52,10 +52,10 @@ b.addItemListener(new ItemListener() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JLayerで子コンポーネントへの入力を制限する](http://terai.xrea.jp/Swing/PopupMenuBlockLayer.html)
 - [JLayerで指定したコンポーネントへの入力を禁止](http://terai.xrea.jp/Swing/DisableInputLayer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

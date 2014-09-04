@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-29
 
-## JTableのセル内でリンクだけHover可能にする
+## 概要
 `JTable`のセル内ではなく、内部のリンク上にカーソルがきた場合だけ`Hover`するように設定します。
 
 {% download https://lh3.googleusercontent.com/-OQfktkzVBD4/Tlsepf4ePZI/AAAAAAAABBQ/bikhWupFHEk/s800/PointInsidePrefSize.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//@see SwingUtilities2.pointOutsidePrefSize(...)
 private static boolean pointInsidePrefSize(JTable table, Point p) {
   int row = table.rowAtPoint(p);
@@ -85,10 +85,10 @@ private static boolean isURLColumn(JTable table, int column) {
 }
 </code></pre>
 
-### 解説
+## 解説
 `SwingUtilities2.pointOutsidePrefSize(...)`を参考にして、セルの表示に使用するコンポーネント(`JLabel`)の標準サイズ(幅)内にカーソルがあるかどうかを比較するメソッドを作成しています。`JTable`に追加した`MouseListener`でこれを使用し、`URL`の文字列を`Hover`するか、それがクリックされたかを判断しています。
 
-### 参考リンク
+## 参考リンク
 - [JTableのセルにHyperlinkを表示](http://terai.xrea.jp/Swing/HyperlinkInTableCell.html)
 - [Htmlで修飾した文字列のクリップ](http://terai.xrea.jp/Swing/ClippedHtmlLabel.html)
 - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://terai.xrea.jp/Swing/TableFileList.html)
@@ -96,7 +96,7 @@ private static boolean isURLColumn(JTable table, int column) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `SwingSet3`の"HyperlinkCellRenderer.java"を参考にして、再描画するセルの範囲を最適化、ついでに`HyperlinkCellRenderer#checkIfPointInsideHyperlink(Point)`ではセルコンポーネントの内余白(`Insets`)が考慮されていないので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-16 (金) 18:45:29
 
 <!-- dummy comment line for breaking list -->

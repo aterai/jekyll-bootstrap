@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-25
 
-## SwingWorkerの一時停止と再開
+## 概要
 `SwingWorker`で処理の一時停止と再開を行います。
 
 {% download https://lh6.googleusercontent.com/-3BCjKLnQbGM/Ti0AQV5nkwI/AAAAAAAAA_s/RY75ol3pFak/s800/PauseResumeSwingWorker.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RunAction extends AbstractAction{
   public RunAction() {
     super("run");
@@ -116,13 +116,13 @@ class PauseAction extends AbstractAction{
 }
 </code></pre>
 
-### 解説
+## 解説
 `SwingWorker#doInBackground()`内のループで一時停止のフラグを参照し、一時停止状態の場合は本来の処理(上記のサンプルではカウントアップするだけ)を行わずに、`Thread.sleep(...)`と停止中を表現するコンポーネントの更新(`JTextArea`の文字列を点滅)のみ繰り返すようになっています。
 
-### 参考リンク
+## 参考リンク
 - [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
 - [SwingWorkerで複数のJProgressBarを使用する](http://terai.xrea.jp/Swing/TwoProgressBars.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

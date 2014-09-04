@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-23
 
-## JSliderのスタイルを変更する
+## 概要
 `JSlider`のトラックとノブを透明にし、値を半透明の色で描画します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TdnxSfPEQLI/AAAAAAAAA7k/vYTnJ_FPktg/s800/GradientTrackSlider.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("Slider.horizontalThumbIcon", new Icon() {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {}
   @Override public int getIconWidth()  { return 15; }
@@ -135,7 +135,7 @@ slider.setUI(new MetalSliderUI() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`MetalSliderUI#paintTrack(...)`メソッドをオーバーライドした`SliderUI`を設定するなどして、`JSlider`の各スタイルを変更しています。
 
 - `Track`
@@ -190,9 +190,9 @@ private static Color getColorFromPallet(int[] pallet, float x) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Harmonic Code: Varying gradients...](http://harmoniccode.blogspot.com/2011/05/varying-gradients.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

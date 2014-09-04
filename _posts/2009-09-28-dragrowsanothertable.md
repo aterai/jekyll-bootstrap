@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-28
 
-## JTableの行を別のJTableにドラッグして移動
+## 概要
 `JTable`の行を別の`JTable`に`Drag&Drop`で移動します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL05H70DI/AAAAAAAAAYM/YtTZHzrA2HU/s800/DragRowsAnotherTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TableRowTransferHandler extends TransferHandler {
   private int[] rows    = null;
   private int addIndex  = -1; //Location where items were added
@@ -91,7 +91,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-28
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、一つの`JTable`内での行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)を元に`TableRowTransferHandler`を作成し、`JTable`間での行移動もできるようになっています。
 
 - - - -
@@ -111,10 +111,10 @@ table.setFillsViewportHeight(true);
 
 また、このサンプルでは、各`JTable`に`TableRowSorter`などが設定され、ソートされた状態での並べ替えは想定していません。
 
-### 参考リンク
+## 参考リンク
 - [JTableの行をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTable.html)
 - [TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://terai.xrea.jp/Swing/DnDReorderTable.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

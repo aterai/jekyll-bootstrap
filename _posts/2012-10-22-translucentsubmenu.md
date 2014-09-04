@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-22
 
-## JMenuなどから開くPopupMenuを半透明化
+## 概要
 `JPopupMenu`の親の`JWindow`、`JMenu`や`JMenuItem`などを透明にして、`JPopupMenu`を半透明にします。
 
 {% download https://lh5.googleusercontent.com/-MKRZgWcSrRw/UIT3NRGfX9I/AAAAAAAABUk/fOYdfJmIt4g/s800/TranslucentSubMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TransparentMenu extends JMenu {
   public TransparentMenu(String title) {
     super(title);
@@ -79,7 +79,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-22
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JMenu`を継承する`TransparentMenu`を作成して、自身と`JMenuItem`などを透明化し、`JMenu`から開く`JPopupMenu`は、[JPopupMenuを半透明にする](http://terai.xrea.jp/Swing/TranslucentPopupMenu.html)を使用して半透明にしています。
 
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html) を参考に `PopupFactory#getPopup(...)`をオーバーライドし、常に`JPopupMenu`(半透明)の親に`JWindow`(完全に透明、`Heavy weight`)を使用するように設定
@@ -144,14 +144,14 @@ class TranslucentPopupFactory extends PopupFactory {
 //...
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html)
 - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7156657)
 - [JPopupMenuを半透明にする](http://terai.xrea.jp/Swing/TranslucentPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - [Java Bug Database](http://bugs.sun.com/bugdatabase/)の見た目が新しくなっている？ `Fixed Versions`の表示がシンプルになりすぎているような…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-10-22 (月) 20:22:51
 
 <!-- dummy comment line for breaking list -->

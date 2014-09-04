@@ -10,16 +10,16 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-01
 
-## JTreeの選択モードを切り替える
+## 概要
 `JTree`の選択モードを切り替えます。
 
 {% download https://lh6.googleusercontent.com/-bPltus2wD6w/TjZCCGnH40I/AAAAAAAABAE/tgmolSg-2Ys/s800/TreeSelection.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>tree.getSelectionModel().setSelectionMode(TreeSelectionModel.CONTIGUOUS_TREE_SELECTION);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`tree.getSelectionModel().setSelectionMode(...)`メソッドを使用して、選択モードを設定しています。
 
 - `TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION`
@@ -31,4 +31,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-01
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-09
 
-## JEditorPaneのHTMLDocumentからIDでElementを取得する
+## 概要
 `JEditorPane`に設定した`HTMLDocument`を検索して`id`属性を持つ`Element`を取得します。
 
 {% download https://lh6.googleusercontent.com/-qbmJcawN3vU/UiyAF7K-MRI/AAAAAAAABz0/i1Hw-dPyqSw/s800/HTMLAttributeID.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private void traverseElementById(Element element) {
   if(element.isLeaf()) {
     checkID(element);
@@ -66,7 +66,7 @@ private void checkID(Element element) {
 }
 </code></pre>
 
-### 解説
+## 解説
 - `Element#getElement(id)`
     - [HTMLDocument#getElement(String)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html#getElement%28java.lang.String%29)メソッドを使用して指定した`id`を持つ`Element`を取得
     - これらの`Element`は、`org.w3c.dom.Element`ではなく、`javax.swing.text.Element`インタフェースを実装する`HTMLDocument.BlockElement`など
@@ -107,10 +107,10 @@ try{
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [HTMLDocument (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html)
 - [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](http://terai.xrea.jp/Swing/HTMLEditorKit.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

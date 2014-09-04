@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
 
-## JToolBarのドッキングを上下のみに制限
+## 概要
 `JToolBar`のドッキングを上下のみに制限して、左右を無視するように設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLq6lRV0I/AAAAAAAAAX8/dKnoZJh1xrM/s800/DockingConstraint.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>toolbar.setUI(new BasicToolBarUI() {
   @Override public boolean canDock(Component c, Point p) {
     return super.canDock(c, p) ? isHorizontalDockingConstraint(c, p) : false;
@@ -36,7 +36,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JToolBar`は上下のみドッキングできるようになっているため、`JComboBox`のような横長のコンポーネントを配置している場合でもレイアウトが崩れにくくなっています。
 
 `ToolBarUI#canDock(Component, Point)`メソッドをオーバーライドして、左右の場合は`false`を返すようにしています。
@@ -52,4 +52,4 @@ panel.add(Box.createRigidArea(new Dimension()), BorderLayout.WEST);
 panel.add(Box.createRigidArea(new Dimension()), BorderLayout.EAST);
 </code></pre>
 
-### コメント
+## コメント

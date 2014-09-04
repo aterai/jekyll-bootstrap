@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-28
 
-## PixelGrabberで画像を配列として取得し編集、書出し
+## 概要
 画像の配列を取り出す`PixelGrabber`を生成して、角を透過色で塗りつぶします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRBSkghZI/AAAAAAAAAgg/Ce52fcu-nQI/s800/PixelGrabber.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>BufferedImage image;
 try {
   image = javax.imageio.ImageIO.read(getClass().getResource("screenshot.png"));
@@ -52,7 +52,7 @@ for(int y=0;y&lt;5;y++) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ウィンドウのスクリーンショット画像から、`PixelGrabber`で配列を生成し、左上、右上の角を`Windows XP`風に透過色で上書きしています。
 
 角を置き換えた配列は、以下のように`MemoryImageSource`などを使用して画像に変換しています。
@@ -98,4 +98,4 @@ g2d.drawLine(w-1,3,w-1,4);
 g2d.dispose();
 </code></pre>
 
-### コメント
+## コメント

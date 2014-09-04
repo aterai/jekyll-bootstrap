@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-20
 
-## JLabelに設定したニーモニックでフォーカス移動
+## 概要
 `JLabel`にニーモニックを設定し、これに関連付けした`JTextField`へのフォーカス移動を行います。
 
 {% download https://lh4.googleusercontent.com/-c8oDt2QGtY0/UDHQKTuRMGI/AAAAAAAABRQ/dzH-cDi9lEw/s800/LabelForDisplayedMnemonic.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JLabel label = new JLabel("Mail Adress: ");
 label.setDisplayedMnemonic('M');
 JTextField textField = new JTextField(12);
 label.setLabelFor(textField);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JLabel`に`setDisplayedMnemonic(...)`メソッドを使って、ニーモニックを設定し、`setLabelFor(...)`メソッドでニーモニックがアクティブになった時にフォーカス移動の対象となるコンポーネントを指定しています。
 
 - - - -
@@ -34,4 +34,4 @@ label.setLabelFor(textField);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

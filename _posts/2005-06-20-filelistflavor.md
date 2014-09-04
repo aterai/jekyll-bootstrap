@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-20
 
-## Fileのドラッグ＆ドロップ
+## 概要
 `Windows`などからファイルを`JTable`にドラッグ＆ドロップします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMhxsIIsI/AAAAAAAAAZU/iZ6Pn8yTFFM/s800/FileListFlavor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final FileModel model = new FileModel();
 final JTable table = new JTable(model);
 DropTargetListener dtl = new DropTargetAdapter() {
@@ -52,7 +52,7 @@ DropTargetListener dtl = new DropTargetAdapter() {
 new DropTarget(table, DnDConstants.ACTION_COPY, dtl, true);
 </code></pre>
 
-### 解説
+## 解説
 `Windows`のエクスプローラなどからファイルを選択(複数可)し、上記のサンプルアプリ上にドラッグ＆ドロップするとファイル名などを`JTable`に表示しています。
 
 ドロップされた`DataFlavor`が、`DataFlavor.javaFileListFlavor`の場合だけ、これをファイルとして処理する`DropTargetListener`を作成しています。
@@ -95,11 +95,11 @@ table.setTransferHandler(new FileTransferHandler());
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Java2: WindowsからのDrag and Drop](http://www5.big.or.jp/~tera/Labo/Java2/j2dnd.html)
 - [java drag and drop](http://www.ne.jp/asahi/j.nihei/personal/linuxDragDrop.html)
 - [JTable自体の高さを拡張](http://terai.xrea.jp/Swing/FillsViewportHeight.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

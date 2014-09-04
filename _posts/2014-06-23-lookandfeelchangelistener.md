@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-23
 
-## LookAndFeelの変更を取得する
+## 概要
 `LookAndFeel`の変更を取得するリスナーの作成などを行います。
 
 {% download https://lh3.googleusercontent.com/-dbduLE1mbyM/U6b3UwtJj6I/AAAAAAAACH4/AUy3dSpgxMg/s800/LookAndFeelChangeListener.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.addPropertyChangeListener(new PropertyChangeListener() {
   @Override public void propertyChange(PropertyChangeEvent e) {
     if (e.getPropertyName().equals("lookAndFeel")) {
@@ -26,7 +26,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-23
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下の三種類の方法で`LookAndFeel`の変更を取得するテストを行っています。
 
 - `UIManager: propertyChange`
@@ -41,4 +41,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-23
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

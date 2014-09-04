@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
 
-## JTableのセルに複数配置したコンポーネントのJToolTip
+## 概要
 `JTable`のセル中に複数個配置したコンポーネントにそれぞれ`JToolTip`が表示されるように設定します。
 
 {% download https://lh4.googleusercontent.com/-OhwzDU_Mys4/ULuQJmYCRiI/AAAAAAAABYQ/Y3Q5mVlliHs/s800/TooltipInTableCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   @Override public String getToolTipText(MouseEvent e) {
     Point pt = e.getPoint();
@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable#getToolTipText(MouseEvent)`をオーバーライドして、`JTable`のセルに複数配置したコンポーネントの情報を`ToolTipText`として返すように設定しています。
 
 - `JTable#getCellRect(...)`で、カーソル下のセル描画に使用されるコンポーネントを取得
@@ -53,11 +53,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [java - Tool tip in JPanel in JTable not working - Stack Overflow](http://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
 - [JTableのTooltipsを行ごとに変更](http://terai.xrea.jp/Swing/RowTooltips.html)
 - [JListのセル中に配置したコンポーネント毎にカーソルを変更する](http://terai.xrea.jp/Swing/CursorOfCellComponent.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

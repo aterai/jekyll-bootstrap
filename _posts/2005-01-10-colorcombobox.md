@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-10
 
-## JComboBoxの色を変更
+## 概要
 `JComboBox`の`Editor`部分と、`List`部分の色を変更します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJhY0CAaI/AAAAAAAAAUg/J70FCr-EUlI/s800/ColorComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class AlternateRowColorComboBox&lt;E&gt; extends JComboBox&lt;E&gt; {
   private static final Color EVEN_BGCOLOR = new Color(225, 255, 225);
   private static final Color ODD_BGCOLOR  = new Color(255, 255, 255);
@@ -83,7 +83,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-10
 }
 </code></pre>
 
-### 解説
+## 解説
 `JComboBox`を編集可にした状態で、以下のように`List`部分、`Editor`部分に背景色を設定します。
 
 - `List`部分
@@ -103,12 +103,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-10
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJj4vDxSI/AAAAAAAAAUk/ZZtKylfc0k8/s800/ColorComboBox1.png)
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxの文字色を変更する](http://terai.xrea.jp/Swing/ComboBoxForegroundColor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JComboBox#setEditable(true)`は必須のようです。編集不可にするには`Editor`部分の`JTextField`に対して`setEditable(false)` -- [Y](http://terai.xrea.jp/Y.html) 2006-10-10 (火) 18:51:38
     - ご指摘ありがとうございます。せっかく`JComboBox`を上下に並べているのだから、編集可の場合と不可の場合のサンプルにすればよかったですね。編集不可の場合(`JComboBox#setEditable(false)`)に色を着けるには、上記の方法と、以下のように`JComboBox#setBackground(Color)`メソッドを使う方法があるようです。 ~~編集不可の場合は、この部分の色もレンダラーが勝手にやってくれてたような気がするのですが、勘違いだったのかも。~~ バージョンや`LookAndFeel`で異なる？ようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-10-10 (火) 19:58:51
 

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-15
 
-## JListで異なる高さのセルを使用
+## 概要
 `JList`のレンダラーに`JTextArea`を使って、異なる高さのセルを作成します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK2Z8UOTI/AAAAAAAAAWo/7GoDkuVX8Fc/s800/DifferentCellHeight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TextAreaRenderer extends JTextArea implements ListCellRenderer {
   private final Border border = new DotBorder(2,2,2,2);
   private final Color evenColor = new Color(230,255,230);
@@ -46,7 +46,7 @@ private DefaultListModel makeList() {
 }
 </code></pre>
 
-### 解説
+## 解説
 左が複数行に対応した`JList`、右が通常の`JList`になります。左の`JList`では、`JList#getFixedCellHeight()`が`-1`で、`ListCellRenderer`に`JTextArea`を使用しているため、テキストに`\n`を含めることで複数行を作成することができます。
 
 セルの区切りを分かりやすくするために、偶数奇数で行の背景色を変更しています。
@@ -71,9 +71,9 @@ private DefaultListModel makeList() {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JList#setFixedCellHeight(int)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JList.html#setFixedCellHeight%28int%29)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

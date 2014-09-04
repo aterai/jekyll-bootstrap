@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-13
 
-## JTableでファイルとディレクトリを別々にソート
+## 概要
 `JTable`でファイルとディレクトリを別々にソートし、ディレクトリが常に先頭になるように設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQXAQuafMsI/AAAAAAAAAqU/BDQdRbMeSnE/s800/FileDirectoryComparator.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>// &gt; dir /O:GN
 // &gt; ls --group-directories-first
 class FileGroupComparator extends DefaultFileComparator{
@@ -46,7 +46,7 @@ class FileGroupComparator extends DefaultFileComparator{
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable`に`Drag & Drop`で追加したファイルやディレクトリを、以下の`3`つのモードでソートすることが出来ます。
 
 - `Default`
@@ -58,7 +58,7 @@ class FileGroupComparator extends DefaultFileComparator{
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `WindowsLookAndFeel`, `JDK 1.7.0`で`UIManager.getIcon("FileView.directoryIcon")`が取得できない？ので、`FileSystemView.getSystemIcon(...)`で`Icon`を取得するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-14 (月) 16:33:14
 
 <!-- dummy comment line for breaking list -->

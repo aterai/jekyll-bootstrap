@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-08
 
-## JComboBoxのアイテム履歴
+## 概要
 `JComboBox`で入力した文字列などのアイテムを順に保存します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL-2krEbI/AAAAAAAAAYc/9yTnbMmSi1Q/s800/DropDownHistory.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public boolean addItem(JComboBox combo, String str, int max) {
   if(str==null || str.length()==0) return false;
   combo.setVisible(false);
@@ -31,7 +31,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-08
 }
 </code></pre>
 
-### 解説
+## 解説
 `JComboBox`に検索する文字列が入力されて、検索ボタンが押されるたびに履歴を更新しています。上記のサンプルでは、`4`個まで履歴を保存し、それ以上は古いものから消されます。履歴にある文字列が再度検索された場合は、それを一番上に移動しています。
 
-### コメント
+## コメント

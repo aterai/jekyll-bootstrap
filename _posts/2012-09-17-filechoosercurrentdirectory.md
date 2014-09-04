@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-17
 
-## JFileChooserを開いた時のカレントディレクトリを設定する
+## 概要
 `JFileChooser`を開いた時のカレントディレクトリを設定します。
 
 {% download https://lh5.googleusercontent.com/-L0xUhPSuu1Y/UFaopCvyPFI/AAAAAAAABSg/JUQJkTi-0BI/s800/FileChooserCurrentDirectory.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>File f = new File(field.getText().trim());
 JFileChooser fc = check1.isSelected()?fc2:fc0;
 fc.setCurrentDirectory(f);
@@ -25,7 +25,7 @@ if(retvalue==JFileChooser.APPROVE_OPTION) {
 }
 </code></pre>
 
-### 解説
+## 解説
 `JFileChooser.DIRECTORIES_ONLY`で、ディレクトリのみ表示する場合のカレントディレクトリの設定をテストします。
 
 - [setCurrentDirectory](http://docs.oracle.com/javase/jp/6/api/javax/swing/JFileChooser.html#setCurrentDirectory%28java.io.File%29): `JFileChooser#setCurrentDirectory(File)`で`CurrentDirectory`を設定
@@ -55,4 +55,4 @@ if(retvalue==JFileChooser.APPROVE_OPTION) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

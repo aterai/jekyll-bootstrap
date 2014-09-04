@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-30
 
-## TabComponentの名前を更新
+## 概要
 `TabComponent`を使用する`JTabbedPane`で、タブ名称を編集更新します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR4c_40eI/AAAAAAAAAh4/dLbGOWvSzSc/s800/RevalidateTabComponent.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TabTitleRenamePopupMenu extends JPopupMenu {
   private final JTextField textField = new JTextField(10);
   private final Action renameAction = new AbstractAction("rename") {
@@ -73,12 +73,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-30
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、タブを閉じる`JButton`を`TabComponent`に追加した`JTabbedPane`に、タブ名称を変更する`JPopupMenu`を設定しています。
 
 [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)の`ButtonTabComponent`を使っているので、`JTabbedPane#setTitleAt(...)`と名前を変更したときに、`tabbedPane.getTabComponentAt(idx)`で取得した`JComponent`を`revalidate()`することで、文字列の長さに応じたサイズへの変更と、タブの内部レイアウトの更新を行なっています。
 
-### 参考リンク
+## 参考リンク
 - [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
 - [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://terai.xrea.jp/Swing/TabTitleEditor.html)
 - [JTabbedPaneのタブタイトルを変更](http://terai.xrea.jp/Swing/EditTabTitle.html)
@@ -86,4 +86,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-30
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

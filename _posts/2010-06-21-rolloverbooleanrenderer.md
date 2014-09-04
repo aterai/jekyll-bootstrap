@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-21
 
-## JCheckBoxのセルをロールオーバーする
+## 概要
 `JTable`のセルに`JCheckBox`を使用したときでも、マウスカーソルでロールオーバーするように設定します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSCUU481I/AAAAAAAAAiI/LzyeHFbwP40/s800/RolloverBooleanRenderer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RolloverBooleanRenderer extends JCheckBox implements TableCellRenderer, UIResource {
   private static final Border noFocusBorder = new EmptyBorder(1, 1, 1, 1);
   private final HighlightListener highlighter;
@@ -52,7 +52,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-21
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上: デフォルト
 - 下: `JTable#setDefaultRenderer`メソッドで、`Object`, `Number`, `Boolean`クラスそれぞれに、マウスカーソルに反応するレンダラーを設定
     - これらは、`JTable$BooleanRenderer`クラスなどを参考に作成
@@ -60,4 +60,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-21
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

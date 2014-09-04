@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-22
 
-## CellEditorをJSpinnerにして日付を変更
+## 概要
 `JTable`で、日付を表示する列のセルエディタを`JSpinner`にします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKdTsjXPI/AAAAAAAAAWA/vtjdEFUkZA4/s800/DateCellEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SpinnerCellEditor extends JSpinner implements TableCellEditor {
   private final JSpinner.DateEditor editor;
   public SpinnerCellEditor() {
@@ -82,7 +82,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-22
 //......
 </code></pre>
 
-### 解説
+## 解説
 `TableModel#getColumnClass(int)`で、第`2`列目が日付(`Date.class`)を返すように設定し、`JTable#setDefaultEditor(Class,CellEditor)`メソッドで上記のセルエディタを関連付けています。
 
 <pre class="prettyprint"><code>table.setDefaultEditor(Date.class, new SpinnerCellEditor());
@@ -102,12 +102,12 @@ table.setSurrendersFocusOnKeystroke(true);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JTextField`を直接編集して、<kbd>Tab</kbd>キーなどで編集終了すると`ArrayIndexOutOfBoundsException`が発生するバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-30 (木) 19:56:25
 
 <!-- dummy comment line for breaking list -->

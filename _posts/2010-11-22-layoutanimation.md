@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-22
 
-## LayoutManagerを使ってパネルの展開アニメーションを行う
+## 概要
 パネルの展開・収納をアニメーションで行う`LayoutManager`を作成します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO_fTHG-I/AAAAAAAAAdQ/9SHzG18aVW0/s800/LayoutAnimation.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private javax.swing.Timer animator = null;
 private boolean isHidden = true;
 private final JPanel controls = new JPanel(new BorderLayout(5, 5) {
@@ -58,17 +58,17 @@ private Action makeShowHideAction() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`LayoutManager#preferredLayoutSize(...)`をオーバーライドして、パネルの高さを更新するアニメーションを行っています。
 
 - - - -
 内部の`JTree`の高さを縮小せずに、重ねる状態で検索パネルを表示したい場合は、`BorderLayout`ではなく、`OverlayLayout`を[JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)のように使用する方法があります。
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
     - このサンプルで省略した、実際に`JTree`のノードを検索するコードはこちらにあります。
 - [JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

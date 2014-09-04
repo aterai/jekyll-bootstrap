@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-12
 
-## JTableのセルがクリップされている場合のみJToolTipを表示
+## 概要
 `JTable`のセルがクリップされている場合のみ`JToolTip`を表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJNQAyg-I/AAAAAAAAAUA/F6oQbiUShl4/s800/ClippedCellTooltips.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ToolTipHeaderRenderer implements TableCellRenderer {
   private final Icon icon = UIManager.getIcon("Table.ascendingSortIcon");
   @Override public Component getTableCellRendererComponent(JTable table,
@@ -40,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-12
 }
 </code></pre>
 
-### 解説
+## 解説
 - ヘッダセル
     - `TableCellRenderer`で、セルの幅と文字列の長さを比較して、`ToolTip`を設定
     - ソートアイコンと文字列の間の`gap`が不明?
@@ -71,10 +71,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-12
 };
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableHeaderのTooltipsを列ごとに変更](http://terai.xrea.jp/Swing/HeaderTooltips.html)
 - [JTableのTooltipsを行ごとに変更](http://terai.xrea.jp/Swing/RowTooltips.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

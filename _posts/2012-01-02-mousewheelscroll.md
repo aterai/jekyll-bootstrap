@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-02
 
-## JScrollBarが非表示でもMouseWheelでScrollする
+## 概要
 `JScrollBar`が非表示の場合の`MouseWheel`による`Scroll`をテストします。
 
 {% download https://lh6.googleusercontent.com/-65-zGNk3eWU/TwFLJU_DP4I/AAAAAAAABHg/mEXoePs30sk/s800/MouseWheelScroll.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JScrollBar vsb = new JScrollBar(JScrollBar.VERTICAL) {
   @Override public Dimension getPreferredSize() {
     Dimension dim = super.getPreferredSize();
@@ -24,7 +24,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-02
 };
 </code></pre>
 
-### 解説
+## 解説
 - `PreferredSize: 0, shift pressed: Horizontal WheelScrolling`
     - `ScrollBarPolicy`はそれぞれ`ALWAYS`で常に表示
         - `VerticalScrollBarPolicy`: `VERTICAL_SCROLLBAR_ALWAYS`
@@ -49,9 +49,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-02
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Bug ID: 6911375 mouseWheel has no effect without vertical scrollbar](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6911375)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

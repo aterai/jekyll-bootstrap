@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-27
 
-## JTabbedPaneのタブをドラッグ＆ドロップ
+## 概要
 `JTabbedPane`のタブを`Drag&Drop`で移動します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLjYzYe0I/AAAAAAAAAXw/nr90t9LvfMI/s800/DnDTabbedPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private int getTargetTabIndex(Point glassPt) {
   Point tabPt = SwingUtilities.convertPoint(glassPane, glassPt, DnDTabbedPane.this);
   boolean isTB = getTabPlacement()==JTabbedPane.TOP || getTabPlacement()==JTabbedPane.BOTTOM;
@@ -57,14 +57,14 @@ private void convertTab(int prev, int next) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTabbedPane`のタブをドラッグすると、マウスカーソルが変更されて、ドロップ可能な位置に青い線を描画します。
 
 ドラッグ中、半透明のタブゴーストを表示するかどうかを切り替えることが出来ます。タブ領域以外にドロップしようとすると、カーソルが変化します。`JTabbedPane`のタブが二段以上になる場合の検証はほとんどしていません。
 
 `MouseMotionListener`と`MouseListener`ではなく、`DragGestureListener`、`DragSourceListener`、`DropTargetListener`を使用する方法に変更しました。
 
-### 参考リンク
+## 参考リンク
 - [Java Swing Hacks #63 半透明のドラッグ＆ドロップ](http://www.oreilly.co.jp/books/4873112788/toc.html)
 - [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://terai.xrea.jp/Swing/CardLayoutTabbedPane.html)
 - [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://terai.xrea.jp/Swing/DnDExportTabbedPane.html)
@@ -72,7 +72,7 @@ private void convertTab(int prev, int next) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ドラッグ中のタブゴーストを表示する機能を追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-23 (金) 15:18:30
 - `java.awt.dnd`パッケージを使用する方法にソースを変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-01 (土) 16:22:48
 - `tab.setTabPlacement(JTabbedPane.RIGHT)`などへの対応と、タブのないタブエリアをドラッグすると`Exception`が発生していたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-19 (火) 18:38:18

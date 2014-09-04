@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-03
 
-## JListのセル内にJButtonを配置する
+## 概要
 `JList`のセル内に複数の`JButton`を配置します。
 
 {% download https://lh3.googleusercontent.com/-j4_Xv9F17Jc/TolDAZSkQUI/AAAAAAAABDU/GK_sK9k5aJE/s800/ButtonsInListCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ButtonsRenderer extends JPanel implements ListCellRenderer {
   public JTextArea label = new JTextArea();
   private final JButton viewButton = new JButton(new AbstractAction("view") {
@@ -79,16 +79,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-03
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JList`のセルに`2`つの`JButton`を配置する`ListCellRenderer`を設定しています。
 `JButton`のクリックイベントは、`JList`に追加したマウスリスナーで`SwingUtilities.getDeepestComponentAt(...)`を使用して対象の`JButton`を取得し、`JButton#doClick()`を呼び出すようになっています。
 
-### 参考リンク
+## 参考リンク
 - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ダミーの`view, edit`ボタンを実際に動作する行の`delete, copy`ボタンに変更(ソースを修正したのは2011年10月、スクリーンショットは未変更)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-20 (水) 16:13:40
 
 <!-- dummy comment line for breaking list -->

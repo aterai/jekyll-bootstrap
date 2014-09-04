@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-01
 
-## JTabbedPaneのタブにMnemonicを追加
+## 概要
 `JTabbedPane`のタブに`Mnemonic`を追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUu2fjTpI/AAAAAAAAAmg/EST6gnFRH84/s800/TabMnemonic.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>tab.addTab("Button", new JButton("button"));
 tab.setMnemonicAt(3, KeyEvent.VK_B);
 tab.setDisplayedMnemonicIndexAt(3, 0);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルコードは、`3`番目のタブに<kbd>Alt+B</kbd>でフォーカスが移動するように、`JTabbedPane#setMnemonicAt`メソッドを使用しています。
 また、タブタイトルの先頭文字(`B`)にアンダーラインが入るように`JTabbedPane#setDisplayedMnemonicIndexAt`メソッドで設定しています。
 
@@ -41,4 +41,4 @@ tab.setMnemonicAt(index, KeyEvent.VK_0);
 label.setDisplayedMnemonic(KeyEvent.VK_0);
 </code></pre>
 
-### コメント
+## コメント

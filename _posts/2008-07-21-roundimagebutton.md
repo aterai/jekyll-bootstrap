@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
 
-## ImageIconの形でJButtonを作成
+## 概要
 任意の`Shape`とその形に透過色を設定した画像を使って`JButton`を作成します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSO4fquKI/AAAAAAAAAic/UdMAZSREN1U/s800/RoundImageButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RoundButton extends JButton {
   public RoundButton() {
     this(null, null);
@@ -78,7 +78,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JButton`に円形の画像を貼り付けてボタンを作成しています。
 
 - 円形、同サイズの`PNG`画像(円の外側が透過色)を三種類用意して`JButton`に設定
@@ -118,11 +118,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
   };
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [アクア風の球体の描き方（GIMPチュートリアル) > ロゴ・ボタン | GIMP思い込みチュートリアル（GIMPの使い方）](http://gimp.blog.shinobi.jp/Entry/18/)
 - [JButtonの形を変更](http://terai.xrea.jp/Swing/RoundButton.html)
 - [JComponentの形状定義を変更する](http://terai.xrea.jp/Swing/MoveNonRectangularImage.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

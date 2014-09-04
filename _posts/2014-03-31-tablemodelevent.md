@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
 
-## JTableのモデルが変更されたことをイベントで受け取る
+## 概要
 `JTable`のモデルの変更を受け取って`JTableHeader`に追加した`JCheckBox`を更新します。
 
 {% download https://lh3.googleusercontent.com/-Mndxsu0wtCM/Uzg00YuVfyI/AAAAAAAACCw/HoRS9CVP_-o/s800/TableModelEvent.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HeaderCheckBoxHandler implements TableModelListener {
   private final JTable table;
   private final int targetColumnIndex;
@@ -91,7 +91,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`0`行目の値(`boolean`)の変更、行の追加、削除を受け取って`JTableHeader`のチェック状態を更新する`TableModelListener`を作成して、これを`TableModel#addTableModelListener(...)`で設定しています。
 
 - `e.getType() == TableModelEvent.DELETE`: 行の削除
@@ -107,12 +107,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://terai.xrea.jp/Swing/TableHeaderCheckBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 修正: `src.zip`などがアップロードされていない -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-09 (金) 17:17:04
 
 <!-- dummy comment line for breaking list -->

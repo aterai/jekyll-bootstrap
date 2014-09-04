@@ -10,7 +10,7 @@ comments: true
 
 Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24
 
-## JLayeredPaneで小さなウインドを表示
+## 概要
 背景画像を表示可能な`JLayeredPane`に付箋紙を表示するサンプル。
 
 - &jar2;
@@ -21,7 +21,7 @@ Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOrYdIcmI/AAAAAAAAAcw/Ol4ZcH6Pw48/s800/JLayeredPane1.png)
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>/** 2005/03/24
     JLayeredPane のサンプル
     背景画像を表示する JFrame に JLayeredPane を使って付箋紙を表示する。
@@ -180,17 +180,17 @@ public class TestJLayeredPane1 extends JFrame {
 }
 </code></pre>
 
-### 解説
+## 解説
 `JLayeredPane`のサブクラス`BGImageLayeredPane`で背景画像を描画しています。
 `JLayeredPane`に`createPanel(int i)`で作った付箋紙の部品を`add`し、マウスリスナーでクリックやドラッグを検出しています。
 
-### 参考リンク
+## 参考リンク
 - [JPanelの背景に画像を並べる](http://terai.xrea.jp/Swing/BackgroundImage.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 ほかのページで参考になりました。お礼にサンプルを差し上げます。
 不都合でしたら編集・削除してください。画像と`zip`のアップロードが
 わからないので、ソースを全部のせてあります・・・あしからず。

@@ -10,17 +10,17 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-01
 
-## JScrollPaneのスクロール量を変更
+## 概要
 スクロールがホイールの回転でスムーズに移動しない(遅い)場合は、`JScrollPane`のスクロール量を変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSi6qpTZI/AAAAAAAAAi8/nrtWKpDCdHI/s800/ScrollIncrement.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane();
 scroll.getVerticalScrollBar().setUnitIncrement(25);
 </code></pre>
 
-### 解説
+## 解説
 `JScrollPane`からスクロールバーを取得し、`JScrollBar#setUnitIncrement(int)`メソッドでユニット増分値(`unitIncrement`)を設定しています。
 
 - - - -
@@ -218,7 +218,7 @@ public class Bbb extends JPanel{
 }
 </code></pre>
 
-### コメント
+## コメント
 - `JScrollBar`の`UnitIncrement`と`BlockIncrement`についてのメモを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-07-10 (火) 21:03:39
 
 <!-- dummy comment line for breaking list -->

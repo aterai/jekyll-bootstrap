@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-08
 
-## JRadioButtonMenuItemのチェックアイコンを変更する
+## 概要
 `JRadioButtonMenuItem`のチェックアイコンを変更します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRVf_tDmI/AAAAAAAAAhA/1F6GcDuJmcg/s800/RadioButtonMenuItemIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//com.sun.java.swing.plaf.windows.WindowsIconFactory.java
 class RadioButtonMenuItemIcon1 implements Icon, UIResource, Serializable {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
@@ -46,7 +46,7 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`WindowsLookAndFeel`(`Java1.6.0`)で、`JRadioButtonMenuItem`のチェックアイコンがすこし歪？なので以下のように修正しています。
 
 - `default`
@@ -58,12 +58,12 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JCheckBoxMenuItemのチェックアイコンを変更する](http://terai.xrea.jp/Swing/CheckBoxMenuItemIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Windows 7`でテストするとアイコンの歪みはないようです。修正されてたのかも？ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-08 (水) 19:51:09
 
 <!-- dummy comment line for breaking list -->

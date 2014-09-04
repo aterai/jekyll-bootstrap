@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-13
 
-## GlyphVectorで文字列を電光掲示板風にスクロール
+## 概要
 `GlyphVector`を生成して、これを電光掲示板のようにスクロールさせます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSlbxO22I/AAAAAAAAAjA/SJLXTaAYArY/s800/ScrollingMessage.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MarqueePanel extends JComponent implements ActionListener {
   public final javax.swing.Timer animator;
   private final GlyphVector gv;
@@ -46,7 +46,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-13
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`GlyphVector`や`LineMetrics`から、テキストの`VisualBounds`や`Ascent`を取得して、文字列を描画する位置などを計算しています。
 
 以下のように`TextLayout`を使用する方法もあります。
@@ -56,4 +56,4 @@ Rectangle2D b = tl.getBounds();
 yy = tl.getAscent()/2f + (float)b.getY();
 </code></pre>
 
-### コメント
+## コメント

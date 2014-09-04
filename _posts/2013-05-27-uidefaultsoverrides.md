@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-27
 
-## Nimbusの外観をUIDefaultsで変更する
+## 概要
 `NimbusLookAndFeel`の外観を`UIDefaults`を使って部分的に変更します。
 
 {% download https://lh4.googleusercontent.com/-iuOm0KmZLK4/UaIp6IGdL4I/AAAAAAAABso/TUvbvWNNQuI/s800/UIDefaultsOverrides.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIDefaults d = new UIDefaults();
 d.put("TextArea.borderPainter", new Painter&lt;JComponent&gt;() {
   @Override public void paint(Graphics2D g, JComponent c, int w, int h) {}
@@ -25,7 +25,7 @@ r.putClientProperty("Nimbus.Overrides", d);
 r.putClientProperty("Nimbus.Overrides.InheritDefaults", false);
 </code></pre>
 
-### 解説
+## 解説
 - `JCheckBoxMenuItem`
     - `CheckBoxMenuItem[Enabled].checkIconPainter`, `CheckBoxMenuItem[MouseOver].checkIconPainter`, `CheckBoxMenuItem[Enabled+Selected].checkIconPainter`, `CheckBoxMenuItem[MouseOver+Selected].checkIconPainter`の`Painter`(これらの状態を独自に描画)を置き換えた`UIDefaults`を作成し、`putClientProperty("Nimbus.Overrides", d);`を使って上書き
 - `JTextArea`
@@ -46,7 +46,7 @@ r.putClientProperty("Nimbus.Overrides.InheritDefaults", false);
 r.putClientProperty("Nimbus.Overrides", d);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)
     - `NimbusLookAndFeel`のプロパティ一覧
 - [javax.swing.plaf.nimbus (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/plaf/nimbus/package-summary.html)
@@ -54,4 +54,4 @@ r.putClientProperty("Nimbus.Overrides", d);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

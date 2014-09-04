@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-13
 
-## SpinnerNumberModelに上限値を超える値を入力
+## 概要
 `JSpinner`のテキストフィールドに`SpinnerNumberModel`が決めた上限値を超える数値を直接入力した後に表示される値をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTrfKZbaI/AAAAAAAAAk0/znT8goHx2Es/s800/SpinnerNumberModel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>SpinnerNumberModel m1 = new SpinnerNumberModel(
     Integer.MAX_VALUE, 0, Integer.MAX_VALUE, 1);
 SpinnerNumberModel m2 = new SpinnerNumberModel(
@@ -27,7 +27,7 @@ SpinnerNumberModel m2 = new SpinnerNumberModel(
 //    Integer.MAX_VALUE, 0L, Integer.MAX_VALUE, 1L),
 </code></pre>
 
-### 解説
+## 解説
 - `Byte, Short, Integer, Long`(上)
     - 上限値は上から順に`Byte.MAX_VALUE`, `Short.MAX_VALUE`, `Integer.MAX_VALUE`, `Long.MAX_VALUE`
     - 上限値の先頭に適当な数値を入力すると上限値以外の数値に変換される場合がある
@@ -43,4 +43,4 @@ SpinnerNumberModel m2 = new SpinnerNumberModel(
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

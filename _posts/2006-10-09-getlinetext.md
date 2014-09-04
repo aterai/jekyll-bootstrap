@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-09
 
-## JTextAreaから一行ずつ文字列を取得
+## 概要
 `JTextArea`などのテキストコンポーネントから一行ずつ文字列を取り出してそれを処理します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTNWn74dWI/AAAAAAAAAao/pNdeF8CSOfM/s800/GetLineText.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>int count = 0;
 StringTokenizer st = new StringTokenizer(textArea.getText(), "\n") ;
 while(st.hasMoreTokens()) {
@@ -25,7 +25,7 @@ while(st.hasMoreTokens()) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTextArea#getText()`ですべてのテキストを取得し、`StringTokenizer`を使って行毎に分解しています。
 
 - - - -
@@ -75,4 +75,4 @@ try{
 }
 </code></pre>
 
-### コメント
+## コメント

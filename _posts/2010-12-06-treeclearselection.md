@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-06
 
-## JTreeの選択状態を解除する
+## 概要
 `JTree`でノード以外の領域をマウスでクリックした場合、選択状態を解除します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWDzni-uI/AAAAAAAAAoo/r6UW4JENwgI/s800/TreeClearSelection.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>tree.addMouseListener(new MouseAdapter() {
   @Overridepublic void mousePressed(MouseEvent e) {
     JTree tree = (JTree)e.getSource();
@@ -26,12 +26,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-06
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTree#getRowForLocation(...)`メソッドを使用して、`JTree`のノード以外のポイントがクリックされたかどうかを判断しています。ノードの選択解除自体は、`JTree#clearSelection()`が使用できます。
 
-### 参考リンク
+## 参考リンク
 - [JTree (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTree.html)のサンプルコード
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

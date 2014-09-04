@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-21
 
-## RGBImageFilterでアイコンの色調を変更
+## 概要
 `RGBImageFilter`で色調を変更したアイコンの用意し、評価用コンポーネントを作成します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRfRNaARI/AAAAAAAAAhQ/8Rj6Rw8bkwU/s800/RatingLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private final ImageProducer ip = orgIcon.getImage().getSource();
 private ImageIcon makeStarImageIcon(float[] filter) {
   SelectedImageFilter sif = new SelectedImageFilter(filter);
@@ -38,16 +38,16 @@ private class SelectedImageFilter extends RGBImageFilter {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルは、`RGBImageFilter`を使用して、一つのアイコンから複数の色の異なるアイコンを生成し、`5`段階の評価を行うコンポーネントを作成しています。クリックしたアイコンの位置が評価レベルになります。
 
-### 参考リンク
+## 参考リンク
 - [PI Diagona Icons Pack 1.0 - Download Royalty Free Icons and Stock Images For Web & Graphics Design](http://www.freeiconsdownload.com/Free_Downloads.asp?id=60)
     - アイコンを利用しています。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 素晴しい！：）--  2006-08-23 (水) 17:34:40
     - どうもです。 -- [aterai](http://terai.xrea.jp/aterai.html)
 - メモ: 一般的？には`Rating Bar`と言うみたいです。[Masuga Design » Unobtrusive AJAX Star Rating Bar](http://www.masugadesign.com/the-lab/scripts/unobtrusive-ajax-star-rating-bar/) -- [aterai](http://terai.xrea.jp/aterai.html) 2006-11-07 (火) 12:38:34

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-22
 
-## JComboBoxのArrowButtonを隠す
+## 概要
 `ArrowButton`を隠して、`JComboBox`の表示を`JLabel`風にします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN0Yp0GRI/AAAAAAAAAbY/WvXw5vm2_LI/s800/HideComboArrowButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JPanel p = new JPanel(new BorderLayout(5, 5));
 Object[] items = {"JComboBox 11111:", "JComboBox 222:", "JComboBox 33:"};
 
@@ -37,7 +37,7 @@ comboBox.setFocusable(false);
 UIManager.put("ComboBox.squareButton", Boolean.TRUE);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のようにして、`JComboBox`を`JLabel`風に表示しています。
 
 - `UIManager.put("ComboBox.squareButton", Boolean.FALSE);`で、`ArrowButton`の幅をそのまま使用するように変更
@@ -47,10 +47,10 @@ UIManager.put("ComboBox.squareButton", Boolean.TRUE);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - Hide JComboBox Arrow?](https://forums.oracle.com/thread/1359216)
 - [Bug ID: 6337518 Null Arrow Button Throws Exception in BasicComboBoxUI](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6337518)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

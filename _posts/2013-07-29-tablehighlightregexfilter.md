@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
 
-## JTableの検索結果をRowFilterとHighlighterで強調表示する
+## 概要
 `JTable`で正規表現による検索結果を`RowFilter`と`Highlighter`を使用して表現します。
 
 {% download https://lh3.googleusercontent.com/-9b6L1m5fhBk/UfUzbWaYGtI/AAAAAAAABw8/xhrIa_pJXls/s800/TableHighlightRegexFilter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HighlightTableCellRenderer extends JTextField implements TableCellRenderer {
   private static final Color backgroundSelectionColor = new Color(220, 240, 255);
   private static final Highlighter.HighlightPainter highlightPainter
@@ -65,7 +65,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
 }
 </code></pre>
 
-### 解説
+## 解説
 - セル中文字列のハイライト
     - [JTreeのノード中の文字列をハイライトする](http://terai.xrea.jp/Swing/HighlightWordInNode.html)
     - `JTextField`を継承する`TableCellRenderer`を作成し、`JTextField#getHighlighter()#addHighlight(...)`で検索結果の文字列をハイライト表示
@@ -75,10 +75,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノード中の文字列をハイライトする](http://terai.xrea.jp/Swing/HighlightWordInNode.html)
 - [RowFilterでJTableの行をフィルタリング](http://terai.xrea.jp/Swing/RowFilter.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-19
 
-## JTableのセルをシングルクリックで編集する
+## 概要
 `JTable`のセルをマウスでシングルクリックすると編集状態になるように設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTDScXHaI/AAAAAAAAAjw/VQhi8npFmCM/s800/SingleClickCellEdit.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor)table.getDefaultEditor(Object.class);
 ce.setClickCountToStart(1);
 //ce.setClickCountToStart(2); //default
 </code></pre>
 
-### 解説
+## 解説
 `DefaultCellEditor#setClickCountToStart`メソッドを使用すれば、編集開始に必要なマウスクリックの回数を設定することができます。
 
 - - - -
@@ -34,9 +34,9 @@ ce.setClickCountToStart(1);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - JTable - enable cursor blink at cell with single click](https://forums.oracle.com/thread/1367289)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

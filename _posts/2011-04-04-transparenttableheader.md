@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
 
-## JTableのヘッダを透明化
+## 概要
 `JTable`のヘッダ背景、セル間の垂直罫線を非表示にします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TZl3Ci_GNnI/AAAAAAAAA40/wSbo6ySTlz0/s800/TransparentTableHeader.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TransparentHeader extends JLabel implements TableCellRenderer {
   private final Border b = BorderFactory.createCompoundBorder(
       BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK),
@@ -34,7 +34,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
 }
 </code></pre>
 
-### 解説
+## 解説
 - `JTableHeader`
     - `JTableHeader`とヘッダレンダラーの両方を、`setOpaque(false)`, 背景色: `Color(0, true)`と設定
 - `JTable`, `JScrollPane`(`Viewport`, `ColumnHeader`)も`setOpaque(false)`, 背景色: `Color(0, true)`と設定
@@ -48,11 +48,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableを半透明にする](http://terai.xrea.jp/Swing/TransparentTable.html)
 - [JTableHeaderを非表示にする](http://terai.xrea.jp/Swing/RemoveTableHeader.html)
     - `JTable`のヘッダ自体を非表示にする場合のサンプル
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

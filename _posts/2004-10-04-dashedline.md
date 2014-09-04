@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-04
 
-## BasicStrokeで点線を作成
+## 概要
 点線・破線を描画します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKaxPM12I/AAAAAAAAAV8/ZQON-woHuIg/s800/DashedLine.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JLabel label = new JLabel() {
   BasicStroke dashed2;
   @Override protected void paintComponent(Graphics g) {
@@ -29,14 +29,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-04
 };
 </code></pre>
 
-### 解説
+## 解説
 `BasicStroke`の破線属性を指定して点線を描画します。
 
 上記のサンプルでは、カンマ区切りで記入した数値を配列に分解し、これを破線のパターンとして`BasicStroke`に渡しています。
 
-### 参考リンク
+## 参考リンク
 - [Stroking and Filling Graphics Primitives (The Java™ Tutorials > 2D Graphics > Working with Geometry)](http://docs.oracle.com/javase/tutorial/2d/geometry/strokeandfill.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

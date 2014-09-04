@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16
 
-## JScrollPaneでキネティックスクロール
+## 概要
 `JScrollPane`にキネティックスクロール(慣性スクロール)風の動作をするマウスリスナーを設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTO32D08pI/AAAAAAAAAdE/TpuoGrYo-Q0/s800/KineticScrolling.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class KineticScrollingListener2 extends MouseAdapter {
   private static final int SPEED = 6;
   private static final double D = 0.7;
@@ -95,7 +95,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16
 }
 </code></pre>
 
-### 解説
+## 解説
 - `scrollRectToVisible`
     - マウスを放したあと、タイマーを起動し、`JComponent#scrollRectToVisible(Rectangle)`メソッドでスクロール
 - `setViewPosition`
@@ -104,14 +104,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
 - [JScrollPaneのオートスクロール](http://terai.xrea.jp/Swing/AutoScroll.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 慣性(モーメンタム)スクロール、フリックスクロール(フリック+慣性スクロール？)、・・・でもやっぱり猫の掌スクロールを最初に思い出してしまう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-16 (月) 13:41:47
 - `JDK 1.7.0`では、`JViewport#setViewPosition(Point)`を使って右下外部に移動できなくなっているので、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ対応をしてソースを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-03 (月) 18:08:23
 

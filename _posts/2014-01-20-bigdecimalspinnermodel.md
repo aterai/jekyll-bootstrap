@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-20
 
-## JSpinnerの上下限値をBigDecimalで比較する
+## 概要
 `JSpinner`で浮動小数点型のモデルを使用する場合、最大値と最小値の比較を`BigDecimal`で行うよう変更します。
 
 {% download https://lh6.googleusercontent.com/-JztoRl3kot0/UtvN48iHZ3I/AAAAAAAAB-g/D3QcAYgr_ks/s800/BigDecimalSpinnerModel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class BigDecimalSpinnerModel extends SpinnerNumberModel {
   public BigDecimalSpinnerModel(double value, double minimum, double maximum, double stepSize) {
     super(value, minimum, maximum, stepSize);
@@ -50,7 +50,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-20
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上: `SpinnerNumberModel`
     - `Double`型の`SpinnerNumberModel`では、最大最小値の比較に、`Double#compare(...)`が使用されている
     - `stepSize`の`0.1`などが持つ浮動小数点の誤差のせいで、このサンプルの`JSpinner`の場合、下限(`2.0`や`29.6`)にダウンボタンで移動できない
@@ -60,11 +60,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-20
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JavaFAQ: 浮動小数 float/double](http://homepage1.nifty.com/docs/java/faq/S029.html)
 - [java - JSpinner not showing minimum value on pressing down arrow - Stack Overflow](http://stackoverflow.com/questions/21158043/jspinner-not-showing-minimum-value-on-pressing-down-arrow)
 - [SpinnerNumberModelに上限値を超える値を入力](http://terai.xrea.jp/Swing/SpinnerNumberModel.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

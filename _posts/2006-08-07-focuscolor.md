@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-07
 
-## JTextFieldにフォーカスがある場合の背景色を設定
+## 概要
 どの`JTextField`を編集しているのかを分かりやすくするために、フォーカスのある`JTextField`の背景色を変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTM__NmYpI/AAAAAAAAAaE/EUMDKR-Rwa4/s800/FocusColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static class BGFocusListener implements FocusListener {
   private final Color dColor;
   private final Color oColor;
@@ -32,7 +32,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-07
 }
 </code></pre>
 
-### 解説
+## 解説
 `JTextField`に`FocusListener`を追加することで、`focusGained`、`focusLost`した場合にそれぞれ背景色を変更しています。
 
-### コメント
+## コメント

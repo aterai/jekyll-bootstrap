@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-09
 
-## JFrameの終了をキャンセル
+## 概要
 `JFrame`を閉じる前に、本当に終了してよいか、終了をキャンセルするかなどを確認するダイアログを表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWuSq18TI/AAAAAAAAAps/aCkiOWRqfDE/s800/WindowClosing.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public static final String ASTERISK_TITLEBAR = "unsaved";
 private final JTextArea textarea = new JTextArea();
 private final JButton saveButton = new JButton("save");
@@ -119,7 +119,7 @@ private void fireUnsavedFlagChangeEvent(boolean unsaved) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、アプリケーションの終了時に、ドキュメントが保存されているかどうかで処理を変更するために、ウィンドウイベントを受け取るためのリスナーを設定しています。
 
 - `WindowAdapter#windowClosing(WindowEvent e)`
@@ -167,13 +167,13 @@ private void fireUnsavedFlagChangeEvent(boolean unsaved) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [WindowListener (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/event/WindowListener.html)
 - [When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 私は以前　この終了をキャンセルするかどうかなどを確認するダイアログを作成したことがあります。あなたのソースコードは　参考のかいがあると思います。でも　ひとつの問題があるんですけど、`textarea`に入力した文字列を削除する場合は　`JFrame`のタイトルが変化されていません、どうですか？ -- [そうがい](http://terai.xrea.jp/そうがい.html) 2007-10-08 (Mon) 15:11:56
     - こんばんは。「`123`->`12345`(`45`追加)->`123`(`45`削除)」と追加、削除をして元の状態に戻っても、タイトルが変化しないのは、仕様です。比較のコストが大きくなってしまいそうで嫌なので避けています。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-08 (月) 23:07:09
 - 変更をアスタリスクに変更、コードの構成を変更、スクリーンショット更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-22 (火) 21:35:25

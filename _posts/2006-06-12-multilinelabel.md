@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-12
 
-## JLabel、JTextAreaなどで複数行を表示
+## 概要
 `JTextPane`、`JTextArea`、`JLabel`を使った複数行のラベルをテストします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQPZi7whI/AAAAAAAAAfQ/ynZxQGkn3_A/s800/MultiLineLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private final JTextPane label1 = new JTextPane();
 private final JTextArea label2 = new JTextArea();
 private final JLabel    label3 = new JLabel();
@@ -59,7 +59,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上:`JTextPane`
     - 文字色、背景色を変更し、編集不可、フォーカスの取得不可にした`JTextPane`を使用
     - `\n`を使って改行し複数行を表示
@@ -79,14 +79,14 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
 - [JEditorPaneやJTextPaneに行間を設定する](http://terai.xrea.jp/Swing/LineSpacing.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JDK 6`で、`html`タグを使った`JLabel`での複数行表示がすこし変更(それとも自分の環境のフォントなどが変わっただけ？)されている？ようです(`Windows`環境)。行間が詰まって見易くなっているようで、わざわざ`JTextPane`+`SimpleAttributeSet`で行間を調節する必要もなさそうです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-01-10 (水) 12:44:53
 - `label.setBackground(UIManager.getColor("Label.background"));`(いつの間にか白になっていた)を`label.setOpaque(false);`に変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-01 (月) 12:12:55
 - はじめまして。`Java`初心者なのですが、`JLabel`で英字フォントを指定するとギザギザで表示されるのですが、ギザギザをなくすにはどうしたらよいでしょうか？ネットで探すと`setRenderingHint`を使うとできると出てはくるのですが、`JLabel`を使った場合の例が出てこなくて。。。ご教授よろしくお願いします。 -- [ばしばし](http://terai.xrea.jp/ばしばし.html) 2007-10-17 (水) 20:16:10

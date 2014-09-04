@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-05
 
-## RowFilterでJTableのページ分割
+## 概要
 `JDK 6`で導入された`RowFilter`を使って、`JTable`の行を`Pagination`風に分割して表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUiUh8yiI/AAAAAAAAAmM/eY1zd24d0ac/s800/TablePagination.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static int LR_PAGE_SIZE = 5;
 
 private final String[] columnNames = {"Year", "String", "Comment"};
@@ -84,7 +84,7 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルは、検索サイトなどでよく使われている、`Pagination`を`JTable`で行っています。
 
 ~~ただし、ページ数が大量にある場合の処理や、前へ、次へなどの実装は無視して、~~
@@ -97,12 +97,12 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableのPaginationとSwingWorkerでの逐次読み込み](http://terai.xrea.jp/Swing/PageInputForPagination.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-26 (水) 20:28:31
 - ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-07 (日) 00:08:50
 - [blogspot](http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-08-15 (月) 15:54:08

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-30
 
-## JListの任意のItemを選択不可にする
+## 概要
 `JList`の任意の`Item`を選択不可にするようなレンダラーを設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLAYVmo3I/AAAAAAAAAW4/3MUtTm4ixyo/s800/DisabledItem.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JList = new JList();
 final ListCellRenderer r = list.getCellRenderer();
 final Vector disableIndexSet = new Vector();
@@ -47,16 +47,16 @@ am.put("selectNextRow", new AbstractAction() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、カンマ区切りで入力したインデックスのアイテムを選択不可にすることができます。
 
 選択可か不可かはセルレンダラー中で判断しています。このセルレンダラーでは、インデックスが選択不可の場合、オリジナルのセルレンダラーから選択無し、フォーカス無しのコンポーネントを取得し、さらに`setEnabled(false)`として返しています。
 
 また、<kbd>Up</kbd><kbd>Down</kbd>キーでアイテムの選択を移動する場合、選択不可にしたアイテムを飛ばすように、`selectNextRow`などのアクションを変更しています。
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxのアイテムを選択不可にする](http://terai.xrea.jp/Swing/DisableItemComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

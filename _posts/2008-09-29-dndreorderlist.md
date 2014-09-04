@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-29
 
-## TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え
+## 概要
 `JList`のアイテムを複数選択し、ドラッグ＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLeSCyHuI/AAAAAAAAAXo/v2OLiSPdgEY/s800/DnDReorderList.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ListItemTransferHandler extends TransferHandler {
   private final DataFlavor localObjectFlavor;
   private Object[] transferedObjects = null;
@@ -97,7 +97,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-29
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルの`TransferHandler`は、主に[Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)の[ListTransferHandler.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)を参考にして作成しています。ただし、この`ListTransferHandler.java`は項目を複数選択して、`JList`内での並べ替えは想定していない？(もしくはバグ)ようなので、`importData(...)`メソッドや、`cleanup()`メソッドをすこし変更しています。
 
 <pre class="prettyprint"><code>JList list = new JList(listModel);
@@ -126,7 +126,7 @@ list.setDragEnabled(true);
 - - - -
 [JListの項目をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDList.html)とは異なり、複数アイテムを選択して`Drag&Drop`による移動が可能になっています。
 
-### 参考リンク
+## 参考リンク
 - [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
     - [ListTransferHandler.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)
 - [JListの項目をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDList.html)
@@ -134,7 +134,7 @@ list.setDragEnabled(true);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 複数選択して選択されたアイテムのインデックスに移動した場合、複写されるバグ？を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-10 (金) 21:44:34
 
 <!-- dummy comment line for breaking list -->

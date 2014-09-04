@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-06
 
-## TitledBorderのタイトル位置
+## 概要
 `TitledBorder`のタイトル位置や揃えを切り替えてテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVZeDhwBI/AAAAAAAAAnk/QmV1N3Uqp3o/s800/TitledBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>VerticalOrientation vo = (VerticalOrientation)verticalOrientationChoices.getSelectedItem();
 switch(vo) {
   case DEFAULT_POSITION: border.setTitlePosition(TitledBorder.DEFAULT_POSITION); break;
@@ -39,7 +39,7 @@ switch(jc) {
 panel.repaint();
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のような定数フィールド値をコンボボックスで指定することで、タイトルの位置や揃えを変更できるようになっています。
 
 - タイトルの位置を`TitledBorder#setTitlePosition`メソッドで指定します。
@@ -62,7 +62,7 @@ panel.repaint();
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - メモ: [TitledBorder API inconsitent with implementation: uses TOP instead of DEFAULT_POSITION](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6658876) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-12 (土) 00:35:59
 
 <!-- dummy comment line for breaking list -->

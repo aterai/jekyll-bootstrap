@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
 
-## Fontをファイルから取得
+## 概要
 独自フォント(`mona.ttf`)をファイルから読み込み、`ASCII art`を表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKOUJYB7I/AAAAAAAAAVo/K2rl3dXD4ic/s800/CreateFont.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>Font makeFont(URL url) {
     Font font = null;
     try(InputStream is = url.openStream()) {
@@ -49,18 +49,18 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
 //}
 </code></pre>
 
-### 解説
+## 解説
 `Font.createFont`メソッドでフォントを作成しています。
 
 上記のサンプルでは、[モナーフォント](http://monafont.sourceforge.net/index.html)を使用しています。
 
-### 参考リンク
+## 参考リンク
 - [モナーフォント](http://monafont.sourceforge.net/index.html)
 - [Swing (Archive) - Loading TYPE1 fonts with JRE 1.5.0](https://forums.oracle.com/thread/1483177)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JDK 1.5.0_01`でずれる？ -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-07 11:19:11 (月)
 - 応急処置済み -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-07 11:32:44 (月)
 - メモ:[Bug ID: 6313541 Fonts loaded with createFont cannot be converted into FontUIResource](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6313541) -- [aterai](http://terai.xrea.jp/aterai.html) 2006-05-25 (木) 23:34:18

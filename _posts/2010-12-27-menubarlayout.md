@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-27
 
-## JMenuBarのJMenuを折り返し
+## 概要
 `JMenuBar`のレイアウトマネージャーを変更して、`JMenu`を折り返して表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TRf4-liTfjI/AAAAAAAAAwk/CURxxE6iDqk/s800/MenuBarLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JMenuBar menuBar = new JMenuBar();
 menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
   @Override public Dimension preferredLayoutSize(Container target) {
@@ -49,7 +49,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JMenuBar`(デフォルトの`LayoutManager`は`BoxLayout`)に、`FlowLayout`を継承して折り返しを行う`LayoutManager`を設定して、`JMenu`がフレームの幅に収まらない場合は折り返して表示するようにしています。
 
 - - - -
@@ -100,9 +100,9 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Wrap Layout « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/06/wrap-layout/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

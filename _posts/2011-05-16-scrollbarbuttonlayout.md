@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
 
-## JScrollBarのButtonの位置を変更
+## 概要
 `JScrollBar`の`Button`の位置を変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TdC-jTZ434I/AAAAAAAAA7I/cnbdjlwODJg/s800/ScrollBarButtonLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>scrollbar.setUI(new WindowsScrollBarUI() {
   //Quote from javax.swing.plaf.basic.BasicScrollBarUI
   @Override protected void layoutVScrollbar(JScrollBar sb) {
@@ -127,16 +127,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`WindowsScrollBarUI#layoutVScrollbar(...)`をオーバーライドして、垂直スクロールバーの増加、減少ボタンが両方下側に配置されるようにレイアウトマネージャーを変更しています。
 
-### 参考リンク
+## 参考リンク
     - [JScrollBarをJScrollPaneの左と上に配置](http://terai.xrea.jp/Swing/LeftScrollBar.html)
     - スクロールバーのボタンの位置ではなく、スクロールバー自体の位置を変更する場合のサンプル
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 水平スクロールバーには今のところ対応していない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-05-16 (月) 15:08:24
 
 <!-- dummy comment line for breaking list -->

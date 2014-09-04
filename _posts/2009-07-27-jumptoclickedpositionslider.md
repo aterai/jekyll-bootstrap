@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27
 
-## JSliderでクリックした位置にノブをスライド
+## 概要
 `JSlider`をマウスでクリックした場合、その位置にノブをスライド、続けてドラッグ可能にします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOt05WV7I/AAAAAAAAAc0/Eobj6KIAQzk/s800/JumpToClickedPositionSlider.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>slider.setUI(new MetalSliderUI() {
   protected TrackListener createTrackListener(JSlider slider) {
     return new TrackListener() {
@@ -40,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27
 });
 </code></pre>
 
-### 解説
+## 解説
 - 左と上
     - デフォルトの動作
     - ノブをクリックすると、ドラッグ可能
@@ -55,9 +55,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JSlider question: Position after leftclick - Stack Overflow](http://stackoverflow.com/questions/518471/jslider-question-position-after-leftclick)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
 
-## JComboBoxにアイコンを表示
+## 概要
 `JComboBox`を編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTONfr7t7I/AAAAAAAAAcA/jNQyoEApJ1I/s800/IconComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static Border makeIconBorder(JComponent c, ImageIcon i) {
   int iw = i.getIconWidth();
   Border b1 = BorderFactory.createMatteBorder(0, iw, 0, 0, i);
@@ -25,7 +25,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
 }
 </code></pre>
 
-### 解説
+## 解説
 - 一番上
     - デフォルトの`ListCellRenderer`を使用する`JComboBox`です。
 - 上から二番目
@@ -37,7 +37,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [MatteBorderでラベル枠を修飾](http://terai.xrea.jp/Swing/MatteBorder.html)
 - [JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
 - [JComboBoxの内余白](http://terai.xrea.jp/Swing/PaddingComboBox.html)
@@ -45,4 +45,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

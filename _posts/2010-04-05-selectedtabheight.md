@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-05
 
-## JTabbedPaneで選択したタブの高さを変更
+## 概要
 `JTabbedPane`で選択したタブの高さを変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTS0RHzbTI/AAAAAAAAAjY/__rqkPO3bsk/s800/SelectedTabHeight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>tabbedPane.setUI(new com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI() {
   private static final int tabAreaHeight = 32;
   @Override protected int calculateTabHeight(
@@ -39,7 +39,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-05
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、選択されていないタブの高さを低くすることで、選択されたタブの高さが目立つように設定しています。
 
 - `BasicTabbedPaneUI#calculateTabHeight(...)`などをオーバーライドして、タブ(領域)の高さを変更
@@ -76,4 +76,4 @@ comboBox.addItemListener(new ItemListener() {
 });
 </code></pre>
 
-### コメント
+## コメント

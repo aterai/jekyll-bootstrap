@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
 
-## JListの選択を解除
+## 概要
 `JList`のセル選択状態を解除します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TavH8_fQKAI/AAAAAAAAA5s/MyUXQnSHPUA/s800/ClearSelection.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ClearSelectionListener extends MouseAdapter {
   private static void clearSelectionAndFocus(JList list) {
     list.clearSelection();
@@ -51,7 +51,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JList`のセル以外の領域をクリックすると、選択とフォーカスを解除するようにマウスリスナーなどを設定しています。
 
 - 選択解除
@@ -64,9 +64,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [How to Write a List Selection Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](http://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

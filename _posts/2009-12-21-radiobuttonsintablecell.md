@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
 
-## JTableのセル中にJRadioButtonを配置
+## 概要
 `JTable`のセル中に複数の`JRadioButton`を配置します。[JTableExamples2](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples2.html)を元に修正を行っています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRX5e43uI/AAAAAAAAAhE/QX6qn9jFOB8/s800/RadioButtonsInTableCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RadioButtonsPanel extends JPanel {
   private static final String OSNAME = System.getProperty("os.name");
   private final String[] answer = { "A", "B", "C" };
@@ -90,11 +90,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JRadioButton`を`3`つ配置した`JPanel`を、`CellRenderer`、`CellEditor`用に`2`つ用意しています。`CellEditor`内の各`JRadioButton`には、クリックされたら編集を終了して更新をコミットするための`ActionListener`を追加しています。
 
 
-### 参考リンク
+## 参考リンク
 - [JTableExamples2](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples2.html)
 - [Table Button Column ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
 - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
@@ -103,4 +103,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

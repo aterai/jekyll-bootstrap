@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-09
 
-## TextLayoutでFontのメトリック情報を取得する
+## 概要
 `TextLayout`から`Font`の`Ascent`、`Descent`、`Leading`などのメトリック情報を取得して描画します。
 
 {% download https://lh4.googleusercontent.com/--iErOVV0RYk/TwpnJGdl4OI/AAAAAAAABHs/pHLpQWbpTWg/s800/TextLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>String text = "abcdefthijklmnopqrstuvwxyz";
 Font font = new Font(Font.SERIF, Font.ITALIC, 64);
 FontRenderContext frc = new FontRenderContext(null,true,true);
@@ -49,7 +49,7 @@ TextLayout tl = new TextLayout(text, font, frc);
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、上の文字列は`TextLayout`を使用して、下は`GlyphVector` + `LineMetrics`で`Font`のメトリック情報を取得して描画しています。
 
 - `Color.RED`
@@ -65,4 +65,4 @@ TextLayout tl = new TextLayout(text, font, frc);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

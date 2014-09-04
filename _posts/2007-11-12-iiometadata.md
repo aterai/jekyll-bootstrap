@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-12
 
-## JPEGファイルのコメントを取り出す
+## 概要
 `JPEG`ファイルからコメントなどのメタデータ(`XML`)を取り出して`JTree`で表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOUrdw9GI/AAAAAAAAAcM/4rakKDY0jI0/s800/IIOMetadata.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>InputStream source = getClass().getResourceAsStream("test.jpg");
 Iterator readers = ImageIO.getImageReadersByFormatName("jpeg");
 ImageReader reader = (ImageReader)readers.next();
@@ -42,7 +42,7 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルは、`GIMP`を使って作成したコメント(このサンプルでは、文字コードが何かなどを考慮していないので日本語が化ける可能性がある)付きの`JPEG`画像から以下の手順でコメントを抽出しています。
 
 1. `ImageReader`から、`IIOMetadata`を取得
@@ -58,7 +58,7 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JPEG メタデータ形式の仕様および使用上の注意](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)
     - via: [javax.imageio.metadata (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/package-summary.html)
     - 標準の (プラグインに依存しない) 形式やその他のメタデータ(`PNG`、`GIF`、`BMP`)もこちらから
@@ -69,4 +69,4 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

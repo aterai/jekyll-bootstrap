@@ -10,16 +10,16 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-21
 
-## MetalLookAndFeelで太字フォントを使用しない
+## 概要
 `MetalLookAndFeel`で太字フォントを使用しないように設定します。
 
 {% download https://lh4.googleusercontent.com/-7wQtHGyNRDQ/UPv6YyOBReI/AAAAAAAABbk/_vXFoJwk-ug/s800/BoldMetal.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("swing.boldMetal", Boolean.FALSE);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`UIManager.put("swing.boldMetal", Boolean.FALSE);`として、`JLabel`、`JButton`、`TitleBorder`などのデフォルトとしてボールド(太字)フォントを使用しないように設定しています。
 
 システムプロパティー`swing.boldMetal`を`false`に設定する方法でもボールド(太字)フォントを使用しないように設定することができます。
@@ -51,9 +51,9 @@ check.addActionListener(new ActionListener() {
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [DefaultMetalTheme (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/plaf/metal/DefaultMetalTheme.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

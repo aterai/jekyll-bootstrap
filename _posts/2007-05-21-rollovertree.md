@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-21
 
-## JTreeのノードをハイライト
+## 概要
 `JTree`のノード上にマウスカーソルがきたら、ハイライト表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSHWXxwwI/AAAAAAAAAiQ/MP7tLgM--lo/s800/RollOverTree.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MyTreeCellRenderer extends DefaultTreeCellRenderer implements MouseMotionListener {
   private static final Color rollOverRowColor = new Color(220,240,255);
   private final JTree tree;
@@ -52,7 +52,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-21
 }
 </code></pre>
 
-### 解説
+## 解説
 `JTree`からデフォルトのセルレンダラーを取得し、これを委譲してセルレンダラーを作成しています。
 
 - 継承ではなく、委譲を使うのは、ノードをハイライトしない場合は、`Windows`などでのノードアイコンは選択されない、文字列だけ選択されるという描画をそのまま利用するため
@@ -63,9 +63,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-21
 このレンダラーは`MouseMotionListener`を実装し、`getTreeCellRendererComponent`メソッドの実装で、ハイライト表示したいノードの場合は、
 委譲したレンダラーから得たコンポーネントを`setOpaque(true)`、`setForeground(Color)`などで修飾して返すようになっています。
 
-### 参考リンク
+## 参考リンク
 - [JTreeで条件に一致するノードを検索しハイライト](http://terai.xrea.jp/Swing/TreeNodeHighlightSearch.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

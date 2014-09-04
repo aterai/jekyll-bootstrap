@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-03
 
-## TransferHandlerでHyperlinkをブラウザにドロップ
+## 概要
 `JButton`に`TransferHandler`を設定して、ブラウザにリンクをドロップできるようにします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLyb41hvI/AAAAAAAAAYI/uoSzZ3thyWk/s800/DraggableLinkButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final String href = "http://terai.xrea.jp/";
 //final DataFlavor uriflavor = new DataFlavor(String.class, "text/uri-list");
 final DataFlavor uriflavor = DataFlavor.stringFlavor;
@@ -48,7 +48,7 @@ b.addMouseListener(new MouseAdapter() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JButton`をマウスでブラウザにドラッグ＆ドロップすると、そのサイトに移動するようになっています。ここでは、`JButton`を使用していますが、`JLabel`などの他のコンポーネントでも同様の設定が可能です。
 
 以下のような`TransferHandler`と`Transferable`を設定しています。
@@ -64,13 +64,13 @@ b.addMouseListener(new MouseAdapter() {
 
 	http://terai.xrea.jp/
 
-### 参考リンク
+## 参考リンク
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://terai.xrea.jp/Swing/HyperlinkLabel.html)
 - [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Opera`には、ドロップできないようです(`MIME`タイプを設定しないとダメ？)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-12-03 (月) 14:41:28
 
 <!-- dummy comment line for breaking list -->

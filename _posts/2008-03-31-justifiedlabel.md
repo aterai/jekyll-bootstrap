@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-31
 
-## JLabelの文字揃え
+## 概要
 `JLabel`で、左右中央両端などの文字揃えをテストします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOwQzSk-I/AAAAAAAAAc4/bD-z_hTSHB8/s800/JustifiedLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JLabel l0 = new JLabel("打率");
 JLabel l1 = new JLabel("打率", JLabel.RIGHT);
 JLabel l2 = new JustifiedLabel("打率");
@@ -69,7 +69,7 @@ class JustifiedLabel extends JLabel {
 }
 </code></pre>
 
-### 解説
+## 解説
 `JLabel`の文字揃えは、デフォルトが左揃えで、その他に右揃え、中央揃えがあります。両端揃え(文字の均等割り付け)は存在しないようなので、上記のサンプルでは、`JustifiedLabel`(幅が足りない場合などは、通常の`JLabel`と同様にクリップ)を作成して使用しています。
 
 - - - -
@@ -181,9 +181,9 @@ class JustifiedLabel extends JLabel {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [TextLayout#getJustifiedLayout(float)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/TextLayout.html#getJustifiedLayout%28float%29)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

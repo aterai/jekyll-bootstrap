@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
 
-## JTabbedPane間でタブのドラッグ＆ドロップ移動
+## 概要
 `JTabbedPane`間でタブの`Drag&Drop`による移動を行います。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLW06ZMXI/AAAAAAAAAXc/vzeXm4pwhVY/s800/DnDExportTabbedPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TabTransferHandler extends TransferHandler {
   private final DataFlavor localObjectFlavor;
   public TabTransferHandler() {
@@ -146,7 +146,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JDK 6`で導入された、`TransferHandler.DropLocation`を継承する`DnDTabbedPane.DropLocation`などを作成して、`JTabbedPane`間でタブの移動ができるように設定しています。
 
 - 注意点
@@ -166,13 +166,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLZe_UIkI/AAAAAAAAAXg/bCzrlm037N8/s800/DnDExportTabbedPane1.png)
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)
 - [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](http://terai.xrea.jp/Swing/DnDLayerTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - タブのドラッグ中、`JTable`上などで`Cursor`が点滅するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-19 (火) 17:32:38
 - 点滅の原因は？ -- [Dad](http://terai.xrea.jp/Dad.html) 2010-01-16 (土) 01:48:13
     - おそらく、[Cursor flickering during D&D when using CellRendererPane with validation](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6700748)が原因。現在は、`canImport`メソッド内で、一々`GlassPane#setCursor(isDropable?DragSource.DefaultMoveDrop:DragSource.DefaultMoveNoDrop);`として回避中。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-16 (土) 12:25:38

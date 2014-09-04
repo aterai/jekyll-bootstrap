@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-21
 
-## JTableのセルのハイライト
+## 概要
 セル上にマウスがある場合、その色を変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIqY941CI/AAAAAAAAATI/gk-sbbRE5gw/s800/CellHighlight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HighlightListener extends MouseAdapter {
   private int row = -1;
   private int col = -1;
@@ -63,7 +63,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-21
 }
 </code></pre>
 
-### 解説
+## 解説
 セルレンダラーに`MouseListener`、`MouseMotionListener`を追加し、マウスカーソルが乗っているセルの色を変更しています。
 
 - - - -
@@ -91,12 +91,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-21
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JListのセルをカーソル移動でロールオーバー](http://terai.xrea.jp/Swing/RollOverListener.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ソースコードの整理、スクリーンショットの更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-14 (金) 16:38:10
 
 <!-- dummy comment line for breaking list -->

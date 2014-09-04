@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-05
 
-## Highlighterで文字列をハイライト
+## 概要
 `Highlighter`を使ってテキスト中の文字列を強調表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN25SyRaI/AAAAAAAAAbc/i3gVEjh-mlQ/s800/Highlighter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>jtc.getHighlighter().removeAllHighlights();
 try{
   Highlighter highlighter = jtc.getHighlighter();
@@ -32,17 +32,17 @@ try{
 }
 </code></pre>
 
-### 解説
+## 解説
 テキストコンポーネントから`Highlighter`を取得し、`Highlighter#addHighlight`メソッドで検索した文字列を追加していきます。
 
 上記のサンプルでは、ハイライト色を`DefaultHighlighter.DefaultHighlightPainter`を使って指定しています。
 
-### 参考リンク
+## 参考リンク
 - [Swing - Searching text in files & highlighting that text](https://forums.oracle.com/thread/1387954)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - こんにちは。はじめまして。Keithと言います。このプログラムだと、テキスト中の複数の異なる文字に、それぞれハイライトを割り当てることが出来ないのですが、解決策はあるでしょうか。 -- [Keith](http://terai.xrea.jp/Keith.html) 2007-11-28 (水) 19:12:19
     - こんばんは。`Highlighter#addHighlight`メソッドは、複数のハイライトを追加できるので、パターン毎に色を変えたいだけなら(効率とか、同じ文字列が含まれる場合とか、エラー処理などの面倒なことは考えない)、以下のようにパターンを配列にして繰り返すだけでもいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-28 (水) 20:25:31
 

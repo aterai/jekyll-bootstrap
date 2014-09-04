@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-17
 
-## JComboBoxのEditorComponentにJButtonを配置
+## 概要
 `JComboBox`の`EditorComponent`に`JButton`や`JLabel`などを配置します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIT4iCWGI/AAAAAAAAASk/pFFcvRBoyIg/s800/ButtonInComboEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>combo02.setLayout(new LayoutManager() {
   @Override public void addLayoutComponent(String name, Component comp) {}
   @Override public void removeLayoutComponent(Component comp) {}
@@ -71,7 +71,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-17
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、`JButton`や`JLabel`を配置しています。
 
 - - - -
@@ -125,14 +125,14 @@ static class SelectedImageFilter extends RGBImageFilter {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Feed Icons - Home of the Standard Web Feed Icon](http://feedicons.com/)
 - [JComboBoxにアイコンを表示](http://terai.xrea.jp/Swing/IconComboBox.html)
 - [JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `EditorComponent`に追加した`JButton`をクリックすると例外が発生する場合があるバグを修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-08-28 (金) 16:42:47
 
 <!-- dummy comment line for breaking list -->

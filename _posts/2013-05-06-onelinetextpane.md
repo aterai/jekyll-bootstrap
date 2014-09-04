@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-06
 
-## JTextPaneを一行に制限してスタイル可能なJTextFieldとして使用する
+## 概要
 `JTextPane`の行数を一行のみに制限して、文字色などのスタイル付けが可能な`JTextField`として使用します。
 
 {% download https://lh4.googleusercontent.com/-jckifA3Ym6c/UYZlsvWPTqI/AAAAAAAABrY/ERGHE6rtaPo/s800/OneLineTextPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTextPane textPane = new JTextPane() {
   @Override public void scrollRectToVisible(Rectangle rect) {
     int r = getBorder().getBorderInsets(this).right;
@@ -57,7 +57,7 @@ JScrollPane scrollPane = new JScrollPane(
 };
 </code></pre>
 
-### 解説
+## 解説
 - `JScrollPane`に追加
     - `JScrollBar`を常に非表示にした、`JScrollPane`に`JTextPane`を追加
 - JTextPaneの折り返しを無効化
@@ -77,13 +77,13 @@ JScrollPane scrollPane = new JScrollPane(
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JEditorPaneで長い行を折り返さない](http://terai.xrea.jp/Swing/NoWrapTextPane.html)
 - [FocusTraversalKeysに矢印キーを追加してフォーカス移動](http://terai.xrea.jp/Swing/FocusTraversalKeys.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JTextField`では、`aaaaa|bbbbb`でカーソル`|`の位置に文字を追加していくと領域外にカーソルが移動した時点で`bbbbb`が表示されるようにスクロールするが、ここの`OneLineTextPane`では未対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-06 (月) 15:35:00
 - `InputMap`と`ActionMap`を間違えて使用していた箇所を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-01 (金) 17:55:13
 

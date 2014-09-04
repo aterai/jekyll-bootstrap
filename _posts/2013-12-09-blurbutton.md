@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
 
-## ConvolveOpでコンポーネントにぼかしを入れる
+## 概要
 `ConvolveOp`を使って、使用不可状態の`JButton`にぼかしを入れます。
 
 {% download https://lh6.googleusercontent.com/-KJB6Hz9n1R0/UqSGnCNV3HI/AAAAAAAAB70/sTyoJce2HZQ/s800/BlurButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class BlurButton extends JButton {
   private final ConvolveOp op = new ConvolveOp(
       new Kernel(3, 3, new float[] {
@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - デフォルトの`JButton`
 - 中
@@ -65,7 +65,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [ConvolveOp (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/image/ConvolveOp.html)
 - [5.8.1 イメージ処理操作の使用方法](http://docs.oracle.com/javase/jp/1.4/guide/2d/spec/j2d-image.fm8.html)
 - [Java Image Processing - Blurring for Beginners](http://www.jhlabs.com/ip/blurring.html)
@@ -73,4 +73,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

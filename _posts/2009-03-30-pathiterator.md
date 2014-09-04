@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30
 
-## PathIteratorからSVGを生成
+## 概要
 `Shape`から`PathIterator`を取得し、この`Path`を`SVG`に変換します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ-2m7pMI/AAAAAAAAAgc/B55RHlb8ajM/s800/PathIterator.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private StringBuilder makeStarburstSvg(PathIterator pi, int sz, String style, String desc) {
   StringBuilder sb = new StringBuilder();
   sb.append("&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n");
@@ -46,14 +46,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`Shape`から`PathIterator`を取得し、そのパスを辿って`SVG`ファイルを生成しています。
 
 - ~~対応しているのは、`PathIterator.SEG_MOVETO`、`PathIterator.SEG_LINETO`のみ~~
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
     - [パス – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/paths.html)
 - [SVG Path](http://www.w3schools.com/svg/svg_path.asp)
@@ -61,7 +61,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - サンプルコードにはコードすべて表示（記入）した方がいいと思います。 -- [名無し](http://terai.xrea.jp/名無し.html) 2012-03-27 (火) 21:48:06
 - 追記：そうじゃなくてはわかりにくいので。例えばJavaDriveさんのように -- [名無し](http://terai.xrea.jp/名無し.html) 2012-03-27 (火) 21:48:48
     - ご指摘ありがとうございます。現状、大きめのサンプルではコードを丸ごと貼り付けるとページが長くなる、小さいサンプルでもあまり意味のないコードが毎回でてくる…、などの理由でコードの一部(`Tips for the Code Snippets`)だけ表示するようにしています。コード全部を見たい場合は、`src.zip`を展開して好みのエディタで開くか、リポジトリ(`svn repository`)をたどってくださいという姿勢なんですが、自分でもたまにリポジトリをクリックしていくのが面倒なことがあるので、一気に`*.java`にジャンプできるようなリンクでも追加できないか検討してみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-28 (水) 15:58:59

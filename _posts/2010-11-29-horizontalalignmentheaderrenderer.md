@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-29
 
-## JTableHeaderの字揃えを変更
+## 概要
 `JTableHeader`の字揃えを変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN5ZuPeZI/AAAAAAAAAbg/Fivi4R1rR-Y/s800/HorizontalAlignmentHeaderRenderer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HorizontalAlignmentHeaderRenderer implements TableCellRenderer{
   private int horizontalAlignment = SwingConstants.LEFT;
   public HorizontalAlignmentHeaderRenderer(int horizontalAlignment) {
@@ -33,7 +33,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-29
 }
 </code></pre>
 
-### 解説
+## 解説
 - `Test1`:
     - `JTableHeader`から、`DefaultRenderer`を取得し、`setHorizontalAlignment`メソッドで字揃えを設定
     - すべての列の字揃えが変更される
@@ -101,9 +101,9 @@ table.getTableHeader().setDefaultRenderer(new TableCellRenderer() {
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableHeaderのフォントを変更](http://terai.xrea.jp/Swing/HeaderFont.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

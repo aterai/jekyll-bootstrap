@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
 
-## CardLayoutを使ってJTabbedPane風のコンポーネントを作成
+## 概要
 `CardLayout`と`JRadioButton`や`JTableHeader`を組み合わせて`JTabbedPane`風のコンポーネントを作成します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIbe7vt7I/AAAAAAAAASw/SGFMcgCN_r4/s800/CardLayoutTabbedPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CardLayoutTabbedPane extends JPanel {
   protected final CardLayout cardLayout = new CardLayout();
   protected final JPanel tabPanel = new JPanel(new GridLayout(1, 0, 0, 0));
@@ -48,7 +48,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
 }
 </code></pre>
 
-### 解説
+## 解説
 `CardLayout`で`JTabbedPane`風のコンポーネントを作成すると、タブエリアのレイアウトをネストしてコンポーネントの追加したり、レイアウトマネージャーを変更することで、タブの配置を変更することが簡単になります。
 
 - `CardLayout`+`JRadioButton`
@@ -64,13 +64,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)
 - [TabbedPane風のタブ配置をレイアウトマネージャーで変更](http://terai.xrea.jp/Swing/NewTabButton.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `CloseButton`(ダミー)を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-29 (水) 18:14:02
 
 <!-- dummy comment line for breaking list -->

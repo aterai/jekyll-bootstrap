@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-04
 
-## JPasswordFieldにヒント文字列を描画する
+## 概要
 `JPasswordField`に入力がない場合、ヒント文字列を描画します。
 
 {% download https://lh3.googleusercontent.com/-UKh7dosDsR4/T8xFLnpMGwI/AAAAAAAABNY/nxgzH2XN1vo/s800/InputHintPasswordField.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class WatermarkPasswordField extends JPasswordField
                              implements FocusListener, DocumentListener {
   private boolean showWatermark = true;
@@ -57,12 +57,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-04
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JPasswordField#paintComponent(...)`をオーバーライドしてヒント文字列を描画しています。
 
 `paintComponent(...)`メソッドをオーバーライドするのは同じですが、[JTextFieldに透かし画像を表示する](http://terai.xrea.jp/Swing/WatermarkInTextField.html)とは異なり、`JPasswordField`にフォーカスがあっても、まだ入力がない場合(`DocumentListener`を追加)などに、ヒント文字列を非表示にはせず、薄く表示するようにしています(参考: [Text Prompt « Java Tips Weblog](http://tips4java.wordpress.com/2009/11/29/text-prompt/))。
 
-### 参考リンク
+## 参考リンク
 - [Text Prompt « Java Tips Weblog](http://tips4java.wordpress.com/2009/11/29/text-prompt/)
     - `JTextComponent`に`BorderLayout`を設定して、文字列やアイコンを設定した`JLabel`を追加し、これを`JLabel#setVisible(boolean)`で切り替えているので、汎用的に使用することができます。
 
@@ -78,4 +78,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-04
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

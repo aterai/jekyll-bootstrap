@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-18
 
-## JTreeの展開状態を記憶・復元する
+## 概要
 `JTree`でノードの展開状態を記憶、復元します。
 
 {% download https://lh4.googleusercontent.com/-FcYsZkFYSxE/UojBcoMtHwI/AAAAAAAAB6k/A7D221doy2w/s800/ExpandedDescendants.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>visitAll(tree, rootPath, false); //Collapse all
 if(expandedState == null) { return; }
 while(expandedState.hasMoreElements()) {
@@ -24,7 +24,7 @@ while(expandedState.hasMoreElements()) {
 expandedState = tree.getExpandedDescendants(rootPath);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTree#getExpandedDescendants(TreePath)`メソッドで展開されているノードの`TreePath`を`Enumeration`で保存しています。復元は一旦すべてのノードを折り畳んでから、`JTree#expandPath(TreePath)`で`Enumeration<TreePath>`から取得したノードを展開しています。
 
 - 注:
@@ -54,11 +54,11 @@ oos.writeObject(tree);
 oos.flush();
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
 - [Swing: Retaining JTree Expansion State](http://www.javalobby.org/java/forums/t19857.html)
 - [OR in an OB World: Auto-collapsing Tree in Java](http://orinanobworld.blogspot.jp/2013/03/auto-collapsing-tree-in-java.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-20
 
-## JTextAreaに行番号を表示
+## 概要
 `JTextArea`に行番号を表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPV_bkDWI/AAAAAAAAAd0/Jktuzx5j5gU/s800/LineNumber.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class LineNumberView extends JComponent {
   private static final int MARGIN = 5;
   private final JTextArea textArea;
@@ -98,19 +98,19 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-20
 }
 </code></pre>
 
-### 解説
+## 解説
 [Swing (Archive) - Advice for editor gutter implementation...](https://forums.oracle.com/thread/1479759)を参考にして、`JTextArea`に行番号を表示しています。
 
 上記のサンプルで使用する`JTextArea`は、使用するフォントや余白などは変更不可で、各行の高さは最後まで一定であると想定しています。
 
-### 参考リンク
+## 参考リンク
 - [Swing (Archive) - Advice for editor gutter implementation...](https://forums.oracle.com/thread/1479759)
 - [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1369109)
 - [Swing - line number in jtextpane](https://forums.oracle.com/thread/1493292)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - すごいね！私はこのような資料を探しています、どうも　ありがとうございます。 -- [ＣＫ](http://terai.xrea.jp/ＣＫ.html) 2007-04-21 (Sat) 18:29:31
     - どういたしまして。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-23 (月) 09:47:47
 - こちらのソースは非常に参考になります。現在趣味でエディタを作成しているのですが、`JTextPane`の`Document`を`JTextArea`に与えてカーソル位置を取得しています。`JTextPane`で行番号、列番号を正確に取得できないものでしょうか？ -- [shusen](http://terai.xrea.jp/shusen.html) 2007-11-09 (金) 10:22:30

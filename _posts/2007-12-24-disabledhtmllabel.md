@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-24
 
-## Htmlを使ったJLabelとJEditorPaneの無効化
+## 概要
 `Html`を使った`JLabel`と、`JEditorPane`を`setEnabled(false)`で無効にします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTK9vV2SGI/AAAAAAAAAW0/PIlAG2B9yZA/s800/DisabledHtmlLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JLabel label2 = new JLabel(HTML_TEXT) {
   @Override public void setEnabled(boolean b) {
     super.setEnabled(b);
@@ -28,7 +28,7 @@ editor1.setOpaque(false);
 editor1.setEditable(false);
 </code></pre>
 
-### 解説
+## 解説
 - 上段左
     - 通常の`JLabel`です。無効化すると文字がへこみます。
 
@@ -72,11 +72,11 @@ editor2.setFont(UIManager.getFont("Label.font"));
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4740519)
 - [Swing - JLabel with html tag can not be disabled or setForegroud?!](https://forums.oracle.com/thread/1377943)
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://terai.xrea.jp/Swing/HyperlinkLabel.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

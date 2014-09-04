@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
 
-## DesktopManagerでアイコンの再配置
+## 概要
 `JDesktopPane`のサイズが変更されたとき、アイコン化している`JInternalFrame`の再配置を行います。[Bug ID: 4765256 REGRESSION: Icons in JDesktopPane not repositioned when pane is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4765256)からソースコードの大部分を引用しています。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRm01W30I/AAAAAAAAAhc/eBhL-DDKkSo/s800/RelocatedIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ReIconifyDesktopManager extends DefaultDesktopManager {
   public void reIconifyFrame(JInternalFrame jif) {
     deiconifyFrame(jif);
@@ -36,7 +36,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JDesktopPane`がリサイズされた場合、以下のような手順で再配置を行っています。
 
 1. アイコン化した`JInternalFrame`を一旦、元のサイズと位置に復元
@@ -47,7 +47,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
 - - - -
 `GTKLookAndFeel`の場合、アイコンを移動することは出来ないので、このサンプルには意味がありません。
 
-### 参考リンク
+## 参考リンク
 - [Bug ID: 4765256 REGRESSION: Icons in JDesktopPane not repositioned when pane is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4765256)
     - via: [Swing - JInternalFrame - iconify in a JDesktopPane](https://forums.oracle.com/thread/1374482)
 - [Bug ID: 4110799 JInternalFrame icon position unchanged w/ resize](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4110799)
@@ -56,7 +56,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `1.7.0 b38`で修正されているようです。[Bug ID: 6647340 Minimized JInternalFrame icons appear in incorrect positions if the main frame is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6647340) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-10 (水) 21:27:26
 - `Windows7` + `WindowsLookAndFeel`で`JDesktopPane`の背景が黒になる: [Bug ID: 7008416 JDesktopPane - Wrong background color with Win7+WindowsLnf](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7008416) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-04 (火) 16:58:32
 

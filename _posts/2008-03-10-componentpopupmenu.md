@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-10
 
-## JPopupMenuをコンポーネントに追加
+## 概要
 `JPopupMenu`をコンポーネントに追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKBw4_YtI/AAAAAAAAAVU/J_aFRLSj-VU/s800/ComponentPopupMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTextArea textArea = new JTextArea("ComponentPopupMenu Test");
 textArea.setComponentPopupMenu(new TextComponentPopupMenu());
 </code></pre>
@@ -62,7 +62,7 @@ textArea.setComponentPopupMenu(new TextComponentPopupMenu());
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTextArea`に`setComponentPopupMenu(JPopupMenu)`メソッドで、ポップアップメニューを追加しています。
 
 `JDK 1.5`でこのメソッドが追加されたため、各コンポーネントにマウスリスナーを設定して、`e.isPopupTrigger()`でポップアップを表示するクリックかを判断するといったコードを書く必要が無くなりました。
@@ -116,13 +116,13 @@ popup.addPopupMenuListener(new PopupMenuListener() {
 textArea.setComponentPopupMenu(popup);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JPopupMenuの取得を親に委譲](http://terai.xrea.jp/Swing/InheritsPopupMenu.html)
 - [JTabbedPaneでタブを追加削除](http://terai.xrea.jp/Swing/TabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6675802) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-05 (土) 20:59:02
 - メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6299213) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-10 (木) 18:58:52
 

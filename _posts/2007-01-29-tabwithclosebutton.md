@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
 
-## JTabbedPaneにタブを閉じるボタンを追加
+## 概要
 `JDK 6`の新機能を使って`JTabbedPane`にタブを閉じるボタンを追加します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVCzHeo0I/AAAAAAAAAnA/hnMCEbHXnnw/s800/TabWithCloseButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CloseButtonTabbedPane extends JTabbedPane {
   private final Icon icon;
   private final Dimension buttonSize;
@@ -46,12 +46,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
 }
 </code></pre>
 
-### 解説
+## 解説
 `JDK 6`から追加されたタブにコンポーネントを配置する機能を使って、`JButton`をタブに追加しています。
 
 [以前のサンプル](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)に比べると、実装も簡単でコードも短くなっています。
 
-### 参考リンク
+## 参考リンク
 - [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)
 - [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
 - [JTabbedPaneにタブを閉じるアイコンを追加](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)
@@ -59,4 +59,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

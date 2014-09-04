@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
 
-## JTabbedPaneのTabTitleを左揃えに変更
+## 概要
 `JTabbedPane`の`TabTitle`をデフォルトに中央揃えから左揃えに変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MyTabbedPaneUI extends javax.swing.plaf.metal.MetalTabbedPaneUI {
   @Override protected void layoutLabel(int tabPlacement,
                                        FontMetrics metrics, int tabIndex,
@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - デフォルト(中央揃え)
 - 中
@@ -62,7 +62,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
   //...
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTitleTab.html)
 - [ButtonTabComponent.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TabComponentsDemoProject/src/components/ButtonTabComponent.java)
 - [Swing - JTabbedPane title alignment](https://forums.oracle.com/thread/1556158)
@@ -70,4 +70,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-11
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

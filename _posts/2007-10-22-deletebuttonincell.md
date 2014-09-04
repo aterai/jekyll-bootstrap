@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22
 
-## JTableのセルにJButtonを追加して行削除
+## 概要
 `JTable`のセルに`JButton`を追加し、クリックされたらその行を削除します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKsRqqqeI/AAAAAAAAAWY/X0y-Ph7jngA/s800/DeleteButtonInCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DeleteButton extends JButton {
   @Override public void updateUI() {
     super.updateUI();
@@ -61,7 +61,7 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 //......
 </code></pre>
 
-### 解説
+## 解説
 ~~上記のサンプルでは、ボタンがクリックされたときの削除自体は、`JTable`に追加したマウスリスナーで行っており、セルエディタやセルレンダラーに使っている`JButton`は表示のためのダミーです。~~
 
 - セルレンダラーに使っている`JButton`は表示のためのダミー
@@ -72,7 +72,7 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - JButton inside JTable Cell](https://forums.oracle.com/thread/1357728)
 - [JTableの行を追加、削除](http://terai.xrea.jp/Swing/AddRow.html)
 - [JTableの行を全削除](http://terai.xrea.jp/Swing/ClearTable.html)
@@ -81,7 +81,7 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ボタンのセル内でマウスを移動しても削除するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-28 (金) 16:59:11
     - メモ: `0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除できる -> [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-28 (金) 17:21:10
 

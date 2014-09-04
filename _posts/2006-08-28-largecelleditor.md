@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-28
 
-## JTableの編集にセルより大きなセルエディタを使用
+## 概要
 通常のセルエディタではなく、セルより大きなアイコンを選択する為のセルエディタを使用して`JTable`を編集します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO6b-zTJI/AAAAAAAAAdI/UAROdzzun4k/s800/LargeCellEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class IconTable extends JTable {
   private final MyGlassPane panel = new MyGlassPane();
   private final EditorFromList editor;
@@ -93,20 +93,20 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-28
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable`のセルをクリックするとそのセル上にセルエディタが表示されて編集できるようになっています。
 
 通常のセルエディタは使用しないため、すべてのセルを編集不可にしています。かわりにセルをクリックしたときに、フレームの`GlassPane`を有効にして、そこに`JList`で作成したアイコン選択エディタや、その影などを描画しています。
 
 このように`GlassPane`を使用しているため、フレームの外にセルエディタを描画することができません。このためサンプルでは`JTable`の周りに余白をかなり多めにとっています。`JTable`からはみ出す場合(端の方のセルを編集する場合)は、セルエディタの表示位置を内部にずらすように変更するようにしたほうがいいかもしれません。
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 表示をアニメーションさせたり、音を出したりしても面白そうです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-10-29 (日) 02:03:44
 
 <!-- dummy comment line for breaking list -->

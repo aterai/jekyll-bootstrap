@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-08
 
-## JTabbedPaneのタブにJTextFieldを配置してタイトルを編集
+## 概要
 `JTabbedPane`で選択されたタブに`JTextField`を配置し、そのタイトルを編集します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU43AZWdI/AAAAAAAAAmw/6klnGPa4D9o/s800/TabTitleEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private Component tabComponent = null;
 private int editing_idx = -1;
 private int len = -1;
@@ -54,7 +54,7 @@ private void renameTabTitle() {
 }
 </code></pre>
 
-### 解説
+## 解説
 `JTabbedPane`のタブタイトルを直接編集します。
 
 `JDK 6`で導入された、`JTabbedPane#setTabComponentAt`メソッドを使用してタブに`JTextField`を追加しています。
@@ -70,13 +70,13 @@ private void renameTabTitle() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタブタイトルを変更](http://terai.xrea.jp/Swing/EditTabTitle.html)
     - こちらは、`JDK 6`以前でも動作するように、`GlassPane`に`JTextField`を配置してタブタイトルの編集を行っています。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `setTabComponentAt(...)`メソッドで閉じるボタンなどと併用していた場合、編集後にそのボタンなどが消える不具合をメールで指摘してもらったので、修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-10 (火) 16:47:33
 
 <!-- dummy comment line for breaking list -->

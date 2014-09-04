@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 
-## JTextFieldにフォーカスと文字列が無い場合の表示
+## 概要
 `JTextField`にフォーカスが無く文字列が空の場合、薄い色でその説明を表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNY3BG1nI/AAAAAAAAAas/YJB5L9kNK-c/s800/GhostText.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HintTextFocusListener implements FocusListener {
   Color INACTIVE_COLOR = UIManager.getColor("TextField.inactiveForeground");
   Color ORIGINAL_COLOR = UIManager.getColor("TextField.foreground");
@@ -44,7 +44,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、下の`JTextField`からフォーカスが失われた時、まだ何も入力されていない場合は、その`JTextField`の説明などを薄く表示することができるようにしています。
 
 - - - -
@@ -91,14 +91,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTextFieldに透かし画像を表示する](http://terai.xrea.jp/Swing/WatermarkInTextField.html)
 - [JPasswordFieldにヒント文字列を描画する](http://terai.xrea.jp/Swing/InputHintPasswordField.html)
     - `JPasswordField`の場合は、`setText`などが使えないので、透かし画像と同じ要領で`paintComponent`をオーバーライドして文字列を描画する方法を使います。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - タイトルを変更?: `Input Hint`、`Placeholder`、`Watermark` ... -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-17 (火) 15:48:18
 - `LayerUI#paint(...)`中で、子コンポーネントの`repaint()`を呼び出して再描画が無限ループしていたバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-07-26 (土) 04:51:11
 

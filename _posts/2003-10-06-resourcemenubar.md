@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-06
 
-## Resourceファイルからメニューバーを生成
+## 概要
 リソースファイルを使ってメニューバーやツールバーを生成します。詳しくは`%JAVA_HOME%/demo/jfc/Notepad/src/Notepad.java`を参照してください。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTR15q_ELI/AAAAAAAAAh0/2H6dW1g0eiY/s800/ResourceMenuBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public JMenuBar createMenubar() {
   JMenuBar mb = new JMenuBar();
   String[] menuKeys = tokenize(getResourceString("menubar"));
@@ -108,7 +108,7 @@ public Action[] getActions() {
 }
 </code></pre>
 
-### 解説
+## 解説
 アプリケーションの起動時に、リソースファイルからメニューのテキストの生成、アイコン、ショートカットなどの指定を行います。
 
 上記のサンプルでは、バージョンと終了しか機能しないので、このページにある`src.zip`の`Main.properties.utf8`、`Main_ja_JP.properties.utf8`(日本語用)といったリソースファイルを編集したり、新しいリソースファイルを作成してみてください。
@@ -193,4 +193,4 @@ public Action[] getActions() {
 });
 </code></pre>
 
-### コメント
+## コメント

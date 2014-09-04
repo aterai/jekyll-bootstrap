@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-23
 
-## JSpinnerのボタンにToolTipを付ける
+## 概要
 `JSpinner`の上下ボタンに`JToolTip`を付けます。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTmW4UoMI/AAAAAAAAAks/SXmtS71QSg0/s800/SpinnerButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static class MySpinnerUI extends BasicSpinnerUI {
   @Override protected Component createNextButton() {
     JComponent nextButton = (JComponent)super.createNextButton();
@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-23
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - `BasicSpinnerUI`を継承する`SpinnerUI`を作成し、`createNextButton`、`createPreviousButton`メソッドをオーバーライドして、`ToolTipText`を設定しています。
 - 中
@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-23
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - メモ:[Bug ID: 5036022 JSpinner does not reflect new font on subsequent calls to setFont](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5036022)、[JSpinnerのフォント指定 - kaisehのブログ](http://d.hatena.ne.jp/kaiseh/20071120/1195560201) -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-26 (月) 12:10:19
 
 <!-- dummy comment line for breaking list -->

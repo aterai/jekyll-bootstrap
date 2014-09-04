@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-20
 
-## JTable自体の高さを拡張
+## 概要
 `JDK 6`で導入された機能を使用して、`JViewport`の高さまで`JTable`を拡張します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMkfiP8jI/AAAAAAAAAZY/qHWqJtrcUgQ/s800/FillsViewportHeight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>table.setFillsViewportHeight(true);
 </code></pre>
 <pre class="prettyprint"><code>table = new JTable(model) {
@@ -38,7 +38,7 @@ scroll.getViewport().setBackground(Color.GREEN);
 //table.setBackground(scroll.getBackground());
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、チェックボックスの選択状態で、`JTable#setFillsViewportHeight(boolean)`を適用するかどうかを切り替えることができます。
 
 - `getFillsViewportHeight() == false`の場合(デフォルト値)
@@ -72,7 +72,7 @@ scroll.getViewport().setBackground(Color.GREEN);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableの背景色を変更](http://terai.xrea.jp/Swing/TableBackground.html)
 - [TableCellRendererでセルの背景色を変更](http://terai.xrea.jp/Swing/StripeTable.html)
 - [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)
@@ -80,4 +80,4 @@ scroll.getViewport().setBackground(Color.GREEN);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

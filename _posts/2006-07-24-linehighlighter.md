@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-24
 
-## JTextAreaに行ハイライトカーソルを表示
+## 概要
 `JTextArea`のカーソルがある行をハイライト表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPQ5j7_JI/AAAAAAAAAds/kbet-1O8x-A/s800/LineHighlighter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HighlightCursorTextArea extends JTextArea {
   private static final Color linecolor = new Color(250,250,220);
   private final DefaultCaret caret;
@@ -49,7 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-24
 }
 </code></pre>
 
-### 解説
+## 解説
 ほぼ、[JTextAreaに行カーソルを表示](http://terai.xrea.jp/Swing/LineCursor.html)とやっていることは同じです。
 
 違うのは、以下の点になります。
@@ -94,13 +94,13 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPTaywxYI/AAAAAAAAAdw/RIlfRHiC-JY/s800/LineHighlighter1.png)
 
-### 参考リンク
+## 参考リンク
 - [JTextAreaに行カーソルを表示](http://terai.xrea.jp/Swing/LineCursor.html)
 - [Swing - Stretching background colour across whole JTextPane for one line of text](https://forums.oracle.com/thread/1364121)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 行の折り返しに対応しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-17 (月) 16:22:56
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-12
 
-## JSplitPaneでディバイダの移動を連続的に再描画
+## 概要
 二つの`JSplitPane`のディバイダで、移動の同期と連続的な再描画を行います。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKL-SYs6I/AAAAAAAAAVk/pXv9HlMSLf0/s800/ContinuousLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JSplitPane leftPane   = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 final JSplitPane rightPane  = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 final JSplitPane centerPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
@@ -46,7 +46,7 @@ leftPane.addPropertyChangeListener(pcl);
 rightPane.addPropertyChangeListener(pcl);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JSplitPane`を`3`つ使用して、`4`つのコンポーネントを分割表示しています。
 
 - - - -
@@ -57,9 +57,9 @@ rightPane.addPropertyChangeListener(pcl);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - Regading SplitPanes](https://forums.oracle.com/thread/1376808)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

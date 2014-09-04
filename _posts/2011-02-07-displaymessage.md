@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-07
 
-## TrayIconのポップアップメッセージをテスト
+## 概要
 `TrayIcon`のポップアップメッセージ表示をテストします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TU-dbe20pkI/AAAAAAAAA0g/3fG2yE_NmHw/s800/DisplayMessage.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>trayIcon.displayMessage("caption", "text", TrayIcon.MessageType.ERROR);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`TrayIcon.displayMessage(...)`メソッドを使用して、ポップアップメッセージを表示しています。
 
 - - - -
 `TrayIcon`に`ActionListener`を追加しておくと、ポップアップメッセージのクリックイベントを取得することができます。
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-03
 
-## JSpinnerの表記を16進数にする
+## 概要
 `JSpinner`の表記を`16`進数にして、その`Unicode`コードポイントに割り当てられた文字を表示します。
 
 {% download https://lh4.googleusercontent.com/-eTZU_kuJGK4/UauUgRcPuTI/AAAAAAAABtc/7FNouA9JcLI/s800/HexFormatterSpinner.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>DefaultFormatter hexformatter = new DefaultFormatter() {
   @Override public Object stringToValue(String text) throws ParseException {
     try{
@@ -36,7 +36,7 @@ hexformatter.setOverwriteMode(true);
 
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`DefaultFormatter#stringToValue(String)`と`DefaultFormatter#valueToString(Object)`をオーバーライドして、`0`から`0x10FFFF`までの整数を`16`進数で表示する`Formatter`を作成し、`JSpinner`に設定しています。
 
 - - - -
@@ -58,10 +58,10 @@ String str = new String(Character.toChars(code));
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Fontのアウトラインを取得して文字列の内部を修飾する](http://terai.xrea.jp/Swing/LineSplittingLabel.html)
 - [IPAmj明朝とIPAex明朝で形の違う字 NAOI's fotolife - 20130411131759](http://f.hatena.ne.jp/NAOI/20130411131759)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

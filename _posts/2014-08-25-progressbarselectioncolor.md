@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-25
 
-## JProgressBarの進捗状況と進捗文字列色を変更する
+## 概要
 `JProgressBar`の進捗状況の色や、それで塗り潰された場合の進捗文字列色を変更します。
 
 {% download https://lh3.googleusercontent.com/-GXTDLsaFDf0/U_nV4WbEi0I/AAAAAAAACL0/09g79mFs9ZE/s800/ProgressBarSelectionColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("ProgressBar.foreground", Color.RED);
 UIManager.put("ProgressBar.selectionForeground", Color.ORANGE);
 UIManager.put("ProgressBar.background", Color.WHITE);
@@ -35,7 +35,7 @@ progressBar2.setUI(new BasicProgressBarUI() {
 </code></pre>
 
 
-### 解説
+## 解説
 - 上: `Default`
 - 中: `UIManager.put(...);`
     - 文字色: `"ProgressBar.foreground"`
@@ -52,9 +52,9 @@ progressBar2.setUI(new BasicProgressBarUI() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JLayerを使ってJProgressBarの色相を変更する](http://terai.xrea.jp/Swing/ColorChannelSwapFilter.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

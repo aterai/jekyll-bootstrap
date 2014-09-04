@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
 
-## JTreeのノードにJProgressBarを表示する
+## 概要
 `JTree`のノードに`JProgressBar`を表示する`TreeCellRenderer`を設定します。
 
 {% download https://lh4.googleusercontent.com/-SBg5NOTGinM/UrcLHfPzXVI/AAAAAAAAB84/HD0k-sWiJGo/s800/TreeNodeProgressBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ProgressBarRenderer extends DefaultTreeCellRenderer {
   private int nodeWidth = 100;
   private static int barHeight = 4;
@@ -66,7 +66,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、タスクが実行中の場合、ノードの幅(アイコンと文字列)だけの長さを持つ`JProgressBar`を配置する`TreeCellRenderer`を作成して、これを`JTree#setCellRenderer(...)`で設定しています。
 
 - スタートボタンを押すと、`JButton`を選択不可にし、`SwingWorker`を起動して葉以外のノードをすべて捜査
@@ -76,4 +76,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

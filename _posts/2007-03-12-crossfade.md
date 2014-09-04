@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-12
 
-## Crossfadeで画像の切り替え
+## 概要
 `Crossfade`アニメーションで画像の切り替えを行います。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKRJIdouI/AAAAAAAAAVs/yU1oEsWfzvA/s800/Crossfade.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class Crossfade extends JComponent implements ActionListener {
   private final javax.swing.Timer animator;
   private final ImageIcon icon1;
@@ -57,9 +57,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-12
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、二枚の画像の描画に使用する`AlphaComposite`をそれぞれ変化させながら上書きすることで、`Crossfade`による画像の切り替えを行っています。
 
 上書きの規則には、`AlphaComposite.SRC_OVER`を使っています。
 
-### コメント
+## コメント

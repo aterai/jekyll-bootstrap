@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-09
 
-## JComboBoxのドロップダウンリストにJButtonを追加
+## 概要
 `JButton`のドロップダウンリストで、各アイテムにクリック可能な`JButton`を追加しこれを削除します。
 
 {% download https://lh6.googleusercontent.com/-x9uTOO9fSds/T_pElwy8GBI/AAAAAAAABPM/Jx30phjG3bM/s800/RemoveButtonInComboItem.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CellButtonsMouseListener extends MouseAdapter{
   private int prevIndex = -1;
   private JButton prevButton = null;
@@ -111,7 +111,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-09
 }
 </code></pre>
 
-### 解説
+## 解説
 `JComboBox`のドロップダウンリスト(`BasicComboPopup`)から`JList`を取得し、これに上記のような`MouseListener`を追加しています。この`JList`がクリックされた場合、レンダラーから対応するセルに表示されている`JButton`を取得し、`button.doClick()`を呼び出します。
 
 <pre class="prettyprint"><code>Accessible a = getAccessibleContext().getAccessibleChild(0);
@@ -130,9 +130,9 @@ if(a instanceof BasicComboPopup) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JListのセル内にJButtonを配置する](http://terai.xrea.jp/Swing/ButtonsInListCell.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

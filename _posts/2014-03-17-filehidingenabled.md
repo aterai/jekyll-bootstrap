@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-17
 
-## JFileChooserでの隠しファイルの非表示設定を変更する
+## 概要
 `JFileChooser`で隠しファイルを表示するかどうかをポップアップメニューから切り替えます。
 
 {% download https://lh4.googleusercontent.com/-TSMPljQ02Ao/UyWixahVFzI/AAAAAAAACBw/n_Ctee0FJGQ/s800/FileHidingEnabled.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>chooser = new JFileChooser();
 JPopupMenu pop = searchPopupMenu(chooser);
 pop.addSeparator();
@@ -30,7 +30,7 @@ mi.setSelected(chooser.isFileHidingEnabled());
 pop.add(mi);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JFileChooser#setFileHidingEnabled(boolean)`メソッドを使用して、隠しファイル、隠しフォルダーなどを表示するかどうかを設定しています。
 
 - - - -
@@ -61,10 +61,10 @@ System.out.println("awt.file.showHiddenFiles: " + showHiddenProperty);
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [クロノス・クラウン - 「JFileChooser」のコンテキストメニューに独自メニューを追加する方法](http://crocro.com/news/20110706140746.html)
 - [DesktopPropertyの変更を監視する](http://terai.xrea.jp/Swing/DesktopProperty.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

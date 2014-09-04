@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
 
-## JLabelの文字列を折り返し
+## 概要
 `GlyphVector`を使って、ラベルの文字列を折り返して表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNbQw2SHI/AAAAAAAAAaw/AApL8KKml8E/s800/GlyphVector.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class WrappedLabel extends JLabel {
   private GlyphVector gvtext;
   public WrappedLabel() {
@@ -72,7 +72,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上: `JLabel`
     - デフォルトの`JLabel`で右側が`...`で省略されている
 - 中: `GlyphVector`
@@ -118,13 +118,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [How to Use Labels](http://docs.oracle.com/javase/tutorial/uiswing/components/label.html)
 - [LineBreakMeasurer (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/LineBreakMeasurer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JTextArea#setLineWrap(true);`を使う方法を追加、スクリーンショットの更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-01-05 (月) 17:15:36
 - `LineBreakMeasurer`を使用する方法を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-01-01 (火) 22:38:47
 

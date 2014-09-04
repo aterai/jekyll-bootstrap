@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-01
 
-## JTextFieldでのBeep音の設定を変更する
+## 概要
 `JTextField`などで、<kbd>Delete</kbd>、<kbd>Back Space</kbd>キーを押した時に鳴らす`Beep`音の設定を変更します。
 
 {% download https://lh6.googleusercontent.com/-zIUmkF2C9FA/UGkqdcWDLVI/AAAAAAAABTk/F4nun0GDLZc/s800/DeleteKeyBeep.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>String key = DefaultEditorKit.deletePrevCharAction; //"delete-previous";
 final Action deletePreviousAction = am.get(key);
 am.put(key, new TextAction(key) {
@@ -53,7 +53,7 @@ am.put(key, new TextAction(key) {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下の二点を変更して、`Beep`音の設定を変更しています。
 
 - `TextAction(DefaultEditorKit.deleteNextCharAction)#actionPerformed(ActionEvent)`などをオーバーライドして、<kbd>Delete</kbd>キーや<kbd>Back Space</kbd>キーで文字の削除がなくても、`Beep`音を鳴らさないように変更したアクションを`ActionMap`に設定
@@ -61,10 +61,10 @@ am.put(key, new TextAction(key) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [DocumentSizeFilter.java](http://docs.oracle.com/javase/tutorial/displayCode.html?code=http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TextComponentDemoProject/src/components/DocumentSizeFilter.java)
     - via: [Text Component Features (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

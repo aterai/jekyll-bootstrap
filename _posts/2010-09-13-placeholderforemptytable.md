@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-13
 
-## JTableが空の場合、中央にJComponentを表示する
+## 概要
 `JTable`が空の場合、表領域の中央に任意の`JComponent`が表示されるように設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRDxbcszI/AAAAAAAAAgk/5iisfYFJom0/s800/PlaceholderForEmptyTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JEditorPane hint = new JEditorPane("text/html", "&lt;html&gt;&lt;a href='dummy'&gt;No data!&lt;/a&gt;&lt;/html&gt;");
 
 table.setFillsViewportHeight(true);
@@ -30,7 +30,7 @@ model.addTableModelListener(new TableModelListener() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable`に編集不可にした`JEditorPane`を追加し、以下のように設定して、常に中央にレイアウトされるように設定しています。
 
 - `JTable#setFillsViewportHeight(true)`として、`JTable`の高さが`JViewport`の高さより小さい場合、両者が同じ高さになるように設定
@@ -41,7 +41,7 @@ model.addTableModelListener(new TableModelListener() {
 ~~追加した`JEditorPane`の表示非表示の切り替えは、ポップアップメニューで行の追加削除を行ったとき、`JTable#getRowCount()==0`かどうかで判断しています。~~ `TableModelListener`を使って行の追加削除を行ったときに`JEditorPane`の表示非表示を切り替えるように変更しました。
 
 
-### コメント
+## コメント
 - 大変素晴らしいです。参考にさせていただきました。 -- [shuna](http://terai.xrea.jp/shuna.html) 2010-09-18 (土) 12:12:50
     - ありがとうございます。どうもです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-09-18 (土) 20:19:21
 

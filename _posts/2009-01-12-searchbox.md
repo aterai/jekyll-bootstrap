@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-12
 
-## JTreeのノードを検索する
+## 概要
 `JTree`を検索して、一致するアイテムを選択します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static void searchTree(JTree tree, TreePath path, String q) {
   TreeNode node = (TreeNode)path.getLastPathComponent();
   if(node==null) return;
@@ -29,7 +29,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-12
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、選択された`JTree`のノード以下に、検索文字列と一致するノードがあれば、`JTree#addSelectionPath(TreePath)`メソッドで選択するようになっています。
 
 - - - -
@@ -82,7 +82,7 @@ while(depth.hasMoreElements()) {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
 - [Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/thread/1357454)
 - [JTreeで条件に一致するノードを検索しハイライト](http://terai.xrea.jp/Swing/TreeNodeHighlightSearch.html)
@@ -90,7 +90,7 @@ while(depth.hasMoreElements()) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ソースを拝見させていただきましたが, 要素の挿入の箇所がさっぱりわかりません... -- [taji](http://terai.xrea.jp/taji.html) 2010-01-20 (水) 00:38:18
 - 途中で切れてしまい失礼しました. できればどこで挿入しているのか教えていただけませんか? -- [taji](http://terai.xrea.jp/taji.html) 2010-01-20 (水) 00:39:44
     - `JTree`のデフォルトコンストラクタがサンプルモデルを持つ`JTree`を返しているので、`%JAVA_HOME%\src.zip`を展開して、`JTree()`を見るのがよいと思います。そこからたどって行けば`protected static TreeModel getDefaultTreeModel()`の中で、`TreeModel`を作って要素(ノード)を挿入している様子が分かります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-20 (水) 11:15:33

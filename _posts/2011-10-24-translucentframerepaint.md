@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-24
 
-## JFrameの透明化と再描画
+## 概要
 半透明にした`JFrame`の再描画を行います。
 
 {% download https://lh4.googleusercontent.com/-ujoDf8eD4vE/TqLcC0f2CHI/AAAAAAAABD4/LHaXXW6HW1k/s800/TranslucentFrameRepaint.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private final SimpleDateFormat df = new SimpleDateFormat("HH:mm:ss");
 private final JLabel label = new JLabel(df.format(new Date()));
 private final Timer timer = new Timer(1000, new ActionListener() {
@@ -37,7 +37,7 @@ private void repaintWindowAncestor(JComponent c) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、実際は`JFrame`が半透明ではなく、以下のように~~半透明にした~~透明にした`JFrame`に、半透明の`JPanel`を追加、さらにその子として一秒ごとに文字列が変化する`JLabel`(時計)を配置しています。
 
 - `JFrame`
@@ -66,13 +66,13 @@ private void repaintWindowAncestor(JComponent c) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
 - [ユアネーム・7セグ・12セグフォント大全集](http://www.yourname.jp/soft/digitalfonts-20090306.shtml)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - フォントをデジタル時計ぽいものに変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-10 (金) 17:35:12
     - スクリーンショットは入れ替えるのが面倒なので、古いフォントのまま。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-17 (火) 17:26:14
 

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-13
 
-## SwingWorkerで複数のJProgressBarを使用する
+## 概要
 ひとつの`SwingWorker`で、進捗を表示する`JProgressBar`をふたつ使用します。
 
 {% download https://lh6.googleusercontent.com/-S6ko35_DIi8/TfWPa08dHvI/AAAAAAAAA9I/MNhC-0LF8YQ/s800/TwoProgressBars.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>enum Component { TOTAL, FILE, LOG }
 class Progress {
   public final Object value;
@@ -71,7 +71,7 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、デフォルトで用意されている`SwingWorker#setProgress(int)`は使用せず、以下の`3`つのコンポーネントの状態を表す`Progress`クラスを作成し、これを`SwingWorker<String, Progress>#publish(Progress)`メソッドに与えて`EDT`上でそれぞれの状態を更新しています。
 
 - 全体の進捗を表示する`JProgressBar`
@@ -101,10 +101,10 @@ class SubProgressListener implements PropertyChangeListener {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
 - [SwingWorkerの一時停止と再開](http://terai.xrea.jp/Swing/PauseResumeSwingWorker.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

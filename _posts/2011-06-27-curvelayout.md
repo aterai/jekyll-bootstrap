@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-27
 
-## LayoutManagerを拡張して曲線上にコンポーネントを配置
+## 概要
 `LayoutManager`を拡張して曲線上にコンポーネントを配置します。
 
 {% download https://lh4.googleusercontent.com/-Rww2mulIVEI/TggO-rFh_2I/AAAAAAAAA98/R3ZVsfyu3IU/s800/CurveLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final double A2 = 4.0;
 panel2.setLayout(new FlowLayout() {
   @Override public void layoutContainer(Container target) {
@@ -43,7 +43,7 @@ panel2.setLayout(new FlowLayout() {
 });
 </code></pre>
 
-### 解説
+## 解説
 - 左
     - `panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));`
 - 右
@@ -51,4 +51,4 @@ panel2.setLayout(new FlowLayout() {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

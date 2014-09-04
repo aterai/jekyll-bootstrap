@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-30
 
-## JInternalFrameを半透明にする
+## 概要
 `JInternalFrame`のフレーム内を半透明にします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTV8kztxuI/AAAAAAAAAoc/oXSU5-bQorE/s800/TransparentFrame.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JPanel p1 = new JPanel();
 p1.setOpaque(false);
 
@@ -57,7 +57,7 @@ protected JInternalFrame createFrame(JPanel panel) {
   //......
 </code></pre>
 
-### 解説
+## 解説
 各フレームは、`JInternalFrame#setContentPane(Container)`メソッドを使用して、`ContentPane`を以下のような半透明パネルに変更しています。
 
 - `Frame#1` (`Transparent`)
@@ -75,13 +75,13 @@ protected JInternalFrame createFrame(JPanel panel) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 - [SynthでJInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TranslucentFrame.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JRE6.0`だと、半透明にならずチェック模様が描画されるだけですね。仕様変わったのかな… --  2007-05-25 (金) 11:05:17
     - 御指摘ありがとうございます。`Windows XP`で、`Java 1.6.0_01`、`1.5.0_11`は、半透明になったのですが、`Ubuntu 7.04`で、`Java 1.6.0`では駄目みたいです。`Mac`は環境がないので試せてません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-25 (金) 13:02:13
     - すこし調べてみたのですが、`Ubuntu`(`GNOME`) でも半透明にするには`JInternalFrame#setOpaque(false)`も必要みたいです。修正しておきます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-25 (金) 13:07:50

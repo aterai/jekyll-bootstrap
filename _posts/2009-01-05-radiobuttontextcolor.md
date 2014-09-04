@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
 
-## JRadioButtonの文字色を変更
+## 概要
 `JRadioButton`の文字色やアイコンを変更します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRa2rE0nI/AAAAAAAAAhI/A6NX-uUoYjM/s800/RadioButtonTextColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ColorRadioButton extends JRadioButton {
   private static final Color defaultColor  = Color.BLACK;
   private static final Color pressedColor  = Color.GREEN;
@@ -40,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
 //...
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JRadioButton`が選択やロールオーバーした時の文字色を、マウスリスナーではなく、`fireStateChanged`メソッドをオーバーライドして変更しています。
 
 アイコンは、`setPressedIcon`、`setSelectedIcon`、`setRolloverIcon`メソッドなどが用意されているので、これを使用しています。
@@ -66,7 +66,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
 });
 </code></pre>
 
-### コメント
+## コメント
 - スクリーンショットのタイトルボーダーが入れ替わっていたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-03 (水) 21:27:13
 
 <!-- dummy comment line for breaking list -->

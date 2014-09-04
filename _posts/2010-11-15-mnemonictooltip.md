@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-15
 
-## JToolTipにJButtonのMnemonicを表示
+## 概要
 `JButton`に`Mnemonic`が設定されている場合、`JToolTip`にそれを表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTP7StneAI/AAAAAAAAAew/RwPtDfNOEyg/s800/MnemonicToolTip.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MnemonicToolTip extends JToolTip {
   private final JLabel mnemonicLabel = new JLabel();
   public MnemonicToolTip() {
@@ -47,7 +47,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-15
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - `setToolTipText`で直接`Mnemonic`を追加
 - 下
@@ -55,9 +55,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-15
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JToolTipにアイコンを表示](http://terai.xrea.jp/Swing/ToolTipIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

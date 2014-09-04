@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05
 
-## JTableのセルに複数のJButtonを配置する
+## 概要
 `JTable`のセル内にクリック可能な複数の`JButton`を配置します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQRygoYeI/AAAAAAAAAfU/-Sr9o7PsQkM/s800/MultipleButtonsInTableCell.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ButtonsPanel extends JPanel {
   public final List&lt;JButton&gt; buttons =
     Arrays.asList(new JButton("view"), new JButton("edit"));
@@ -102,7 +102,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。アクションイベントを設定するのは、`CellEditor`用の`JButton`で、`CellRenderer`用の`JButton`は表示のためのダミーです。
 
 - - - -
@@ -433,7 +433,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableのセルにJButtonを追加して行削除](http://terai.xrea.jp/Swing/DeleteButtonInCell.html)
 - [JTableのセルにHyperlinkを表示](http://terai.xrea.jp/Swing/HyperlinkInTableCell.html)
 - [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
@@ -442,7 +442,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 第`0`列目が編集状態でボタンをクリックした場合、パネルが二度表示されるバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-06 (火) 11:56:21
 - [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)を参考にして、`JTable#editCellAt`ではなく、逆に`TableCellEditor#stopCellEditing()`を使用してクリック直後に編集終了するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-03 (火) 04:36:55
 - <kbd>Ctrl</kbd>キーを押しながら、`edit`ボタンをクリックすると異なる行(`table.getSelectedRow()`)の内容が表示されるバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-10 (木) 02:35:35

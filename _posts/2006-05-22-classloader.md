@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-22
 
-## ClassLoaderでリソース(URL)を取得
+## 概要
 クラスパスからのエントリ(相対パス風)を使って、`ClassLoader`から`URL`を取得します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTI-UTFN-I/AAAAAAAAATo/6sdQoVO0Kc4/s800/ClassLoader.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getClassLoader().getResource("example/test.png");
 //URL url = getClass().getResource("test.png");
 JLabel icon = new JLabel(new ImageIcon(url));
 JLabel path = new JLabel(url.toString());
 </code></pre>
 
-### 解説
+## 解説
 `ClassLoader`を使用して、位置に依存しない方法でリソース(`URL`)を取得します。
 
 - 例えば`new ImageIcon(String filename)`のようにファイルパスを文字列で指定した場合、このファイルパスが位置(カレントディレクトリ)に依存しているため、実行時にカレントディレクトリを変更したり、`jar`ファイルにまとめたりするとファイルが参照できなくなります。
@@ -83,13 +83,13 @@ JLabel path = new JLabel(url.toString());
 
 この場合、`src.zip`に元々入っていた`適当な場所/test.png`ではなく、`file:/C:/temp/example/test.png`という`URL`が`getResource`で取得できます。
 
-### 参考リンク
+## 参考リンク
 - [位置に依存しない方法でのリソースへのアクセス](http://docs.oracle.com/javase/jp/7/technotes/guides/lang/resources.html)
 - [Loading Images Using getResource](http://docs.oracle.com/javase/tutorial/uiswing/components/icon.html#getresource)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 「クラスパスからのパス」などの意味が分かり辛いので、[JarURLConnection (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/net/JarURLConnection.html)を参考にして「パス」を「エントリ」に変更してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-15 (金) 18:04:14
 - `.jar`ファイルのクラスで -- [kind](http://terai.xrea.jp/kind.html) 2012-03-02 (金) 14:04:06
     - 見落としてました。最近なんか重いので途切れてしまったのでしょうか。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-05 (月) 16:26:35

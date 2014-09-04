@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-06
 
-## JTableで行の追加、削除アニメーション
+## 概要
 `JTable`の行追加や削除をスライドアニメーションで強調します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTP0i2yxI/AAAAAAAAAkE/DQKpmn3BIQo/s800/SlideTableRows.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private void testCreateActionPerformed(ActionEvent e) {
   model.addTest(new Test("New name", ""));
   (new javax.swing.Timer(DELAY, new ActionListener() {
@@ -51,7 +51,7 @@ private void deleteActionPerformed(ActionEvent evt) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`javax.swing.Timer`を使用して、徐々に行の高さを変更することで、アニメーションを行っています。
 
 - 追加
@@ -65,10 +65,10 @@ private void deleteActionPerformed(ActionEvent evt) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableの行を追加、削除](http://terai.xrea.jp/Swing/AddRow.html)
 - [JTableの行の高さを変更する](http://terai.xrea.jp/Swing/FishEyeTable.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

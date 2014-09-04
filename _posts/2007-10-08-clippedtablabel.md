@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-08
 
-## JTabbedPaneのタイトルをクリップ
+## 概要
 `JDK 6`で導入されたタブにコンポーネントを追加する機能を使って、長いタイトルのタブは文字列をクリップして表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJU-PNaRI/AAAAAAAAAUM/yAbkpSgRNVY/s800/ClippedTabLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ClippedTitleTabbedPane extends JTabbedPane {
   public ClippedTitleTabbedPane() {
     super();
@@ -86,18 +86,18 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-08
 }
 </code></pre>
 
-### 解説
+## 解説
 下の`JTabbedPane`では、タブに`JTabbedPane#setTabComponentAt`メソッドを使って`JLabel`を追加し、そのクリップ機能を利用して長いタイトル文字列の後半を省略表示しています。
 
 [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTitleTab.html)と、ほぼ同等(文字列の長さがばらばらでも、左右にタブをおいた場合は全体の`1/4`の幅に、上下にタブをおいた場合はすべてのタブ幅が均等になる)ですが、`TabbedPaneUI#paintText`で文字列の描画をオーバーライドする必要も無く、ソースも短くて実装が簡単です。
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTitleTab.html)
 - [JTabbedPaneのTabTitleを左揃えに変更](http://terai.xrea.jp/Swing/TabTitleAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `tabAreaInsets`を考慮するように修正し、`TOP-LEFT`の切り替え機能を追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-26 (火) 22:15:27
 - `SynthLookAndFeel`に仮？対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-22 (土) 12:49:05
     - `GTKLookAndFeel`に対応するのは、`JDK 1.7`以降になる予定？です。 [Bug ID: 6354790 GTK LAF: Painting bugs in JTabbedPane](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6354790) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-24 (月) 17:27:13

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-07
 
-## Cursorを砂時計に変更
+## 概要
 処理中、マウスカーソルを砂時計に変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWfYWDbsI/AAAAAAAAApU/rldJwQuVm-8/s800/WaitCursor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>frame.setGlassPane(new LockingGlassPane());
 frame.getGlassPane().setVisible(false);
 button.addActionListener(new ActionListener() {
@@ -54,7 +54,7 @@ button.addActionListener(new ActionListener() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、カーソルを砂時計に変更し、なにもしないマウスリスナーなどを設定した`GlassPane`を`JFrame#setGlassPane()`メソッドでフレームに追加しています。
 
 スタートボタンがクリックされて処理が継続している間は、この`GlassPane`が有効になり、マウス、キー、フォーカス移動などのイベントが、すべてGlassPaneに奪われるため、フレーム内のコンポーネントをアクセス不可にすることが出来ます。
@@ -124,7 +124,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - How to display "Loading data..." to the user](https://forums.oracle.com/thread/1375257)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
     - [JInternalFrameをModalにする](http://terai.xrea.jp/Swing/ModalInternalFrame.html)
@@ -132,7 +132,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - <kbd>Tab</kbd>キーで状態遷移しないようにするため、なにもしない`FocusTraversalPolicy`を追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-04-18 (月) 10:51:25
 - 相当悩みました。`JDialog`だと同じことができないのは何でなんでしょうねぇ。。。 -- [おれ](http://terai.xrea.jp/おれ.html) 2006-05-17 (水) 16:33:12
     - カーソルが変わらないのでしょうか? それともコンパイルエラーが出るとかでしょうか? -- [aterai](http://terai.xrea.jp/aterai.html) 2006-05-17 (水) 17:59:14

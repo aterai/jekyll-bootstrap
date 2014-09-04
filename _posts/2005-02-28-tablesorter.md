@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-02-28
 
-## TableSorterでJTableをソート
+## 概要
 `JDK 1.5.0`以前に、`The Java™ Tutorial`にあった`TableSorter.java`を使用して、`JTable`の行を降順、昇順、初期状態にソートします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUp0MLx6I/AAAAAAAAAmY/omjw4LoJbbc/s800/TableSorter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//DefaultTableModel model = new DefaultTableModel();
 TestModel model = new TestModel();
 TableSorter sorter = new TableSorter(model);
@@ -23,7 +23,7 @@ JTable table = new JTable(sorter);
 sorter.setTableHeader(table.getTableHeader());
 </code></pre>
 
-### 解説
+## 解説
 `The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](http://terai.xrea.jp/Swing/SortableTable.html)で使用しているものと同じ`TableModel`でソートしています。
 
 `TableSorter`には、<kbd>Ctrl</kbd>キーを押しながらヘッダをクリックすると、そのカラムを第二キーとしてソートする機能もあります。
@@ -77,7 +77,7 @@ protected ComparableComparator getComparator(int column) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
 - [How to Use Tables](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
 - [Generics - Simple method but hard with generics: compareTo()](https://forums.oracle.com/thread/1185784)
@@ -85,7 +85,7 @@ protected ComparableComparator getComparator(int column) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - いつもお世話になっております。 `jtable`を下記のように初期化します。
 
 <!-- dummy comment line for breaking list -->

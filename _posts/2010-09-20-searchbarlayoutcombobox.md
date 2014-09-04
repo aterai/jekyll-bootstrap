@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
 
-## JComboBox内にJButtonを左右に二つレイアウトする
+## 概要
 `JComboBox`が使用するレイアウトを変更して、検索欄風のコンポーネントを作成します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSqLxrLoI/AAAAAAAAAjI/M2OZzogy3-Q/s800/SearchBarLayoutComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public class BasicSearchBarComboBoxUI extends SearchBarComboBoxUI{
   public static javax.swing.plaf.ComponentUI createUI(JComponent c) {
     return new BasicSearchBarComboBoxUI();
@@ -82,7 +82,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JComboBox`が使用するレイアウトを以下のように変更しています。
 
 - 元の`ArrowButton`は、左側に表示
@@ -129,7 +129,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
 }
 </code></pre>
 
-### コメント
+## コメント
 - `editor`にフォーカスがある場合、左のボタンをクリックしてもポップアップメニューが開かないバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-09-24 (金) 20:20:42
 - `ArrowButton`をクリックして、カーソルキーを押すと`NullPointerException`が発生するバグを修正(この修正？で、ポップアップが表示されている状態で、例えば<kbd>G</kbd>キーを押しても、項目の`google`は選択されなくなった)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-01-07 (金) 16:29:00
 - `LookAndFeel`を切り替えると、`JComboBox`のフォント設定で、`NullPointerException`が発生するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-05-25 (水) 17:46:55

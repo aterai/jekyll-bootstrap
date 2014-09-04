@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 
-## JCheckBox付きJTreeでディレクトリ構造を表示
+## 概要
 編集可能な`JCheckBox`をノードに追加した`JTree`でディレクトリ構造を表示します。
 
 {% download https://lh6.googleusercontent.com/-5ihZ2R-e4Ug/Tki-blUTxaI/AAAAAAAABA0/5KCjlm9CkSY/s800/FileSystemTreeWithCheckBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CheckBoxNodeEditor extends TriStateCheckBox implements TreeCellEditor {
   private final FileSystemView fileSystemView;
   private final JPanel panel = new JPanel(new BorderLayout());
@@ -95,7 +95,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 //......
 </code></pre>
 
-### 解説
+## 解説
 このサンプルは、[FileSystemViewを使ってディレクトリ構造をJTreeに表示する](http://terai.xrea.jp/Swing/DirectoryTree.html)と、[JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)を組み合わせて作成しています。
 
 - - - -
@@ -107,13 +107,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [FileSystemViewを使ってディレクトリ構造をJTreeに表示する](http://terai.xrea.jp/Swing/DirectoryTree.html)
 - [JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - [JTreeのすべてのノードにJCheckBoxを追加する](http://terai.xrea.jp/Swing/CheckBoxNodeEditor.html) で使用している`TreeModelListener`を追加して`JCheckBox`の状態を変更するように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-13 (金) 20:12:08
 - チェックされたノード(最上位となる)の一覧をコンソールに表示する`JButton`を追加(スクリーンショットなどは面倒なので更新しない)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-19 (木) 19:50:07
 - ノードをチェックしてから、そのディレクトリを開いても子ディレクトリにチェックが反映されない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-07-31 (火) 18:15:44

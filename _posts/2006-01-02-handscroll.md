@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-02
 
-## JScrollPaneのViewportをマウスで掴んでスクロール
+## 概要
 `JScrollPane`の窓の中をマウスで掴んで画像をスクロールします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNqjajfcI/AAAAAAAAAbI/Km-h7tWdYOo/s800/HandScroll.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HandScrollListener extends MouseAdapter {
   private final Cursor defCursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
   private final Cursor hndCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
@@ -42,13 +42,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-02
 }
 </code></pre>
 
-### 解説
+## 解説
 `JViewport`の原点(左上)を ~~`SwingUtilities.convertPoint`メソッドを使って中の`JLabel`(画像)の座標に変換し、これを基準座標としています。この座標を~~ マウスの移動に応じて変更し、`JComponent#scrollRectToVisible`メソッドの引数として使用することで、覗き窓のスクロールを行っています。
 
 - - - -
 `JComponent#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると、内部コンポーネントの外側に移動することができます。
 
-### 参考リンク
+## 参考リンク
 - [JScrollPaneのオートスクロール](http://terai.xrea.jp/Swing/AutoScroll.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
     - 猫の写真を拝借しています。
@@ -58,7 +58,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-02
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - つかんで移動ということですが、移動方向が逆の気がします。 -- [名無し](http://terai.xrea.jp/名無し.html) 2006-02-25 (土) 01:24:46
     - ご指摘ありがとうございます。確かに逆ですね。画像を掴んでというより、スクロールバーを掴んでみたいな動きになってました。修正しておきます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-02-25 (土) 03:33:50
 - `SwingUtilities.convertPoint`の代わりに、`vport.getViewPosition()`を使用するように変更。スクリーンショットの更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-01-19 (Mon) 16:58:27

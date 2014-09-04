@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-14
 
-## Timerの使用数を変更
+## 概要
 パネルのタイルアニメーションで使用する`java.swing.Timer`の数を変更して動作のテストを行います。
 
 {% download https://lh6.googleusercontent.com/-Kc02XwN3fHA/U0qu1BcXNEI/AAAAAAAACDg/UDwGuPoJmjk/s800/TimerAction.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//Timer: 1, ActionListener: 100
 class Tile2 extends JComponent {
   private int red;
@@ -39,7 +39,7 @@ class Tile2 extends JComponent {
 }
 </code></pre>
 
-### 解説
+## 解説
 - `Timer: 100`
     - `10x10`個のアニメーション用タイル一つに、`Timer`を生成して使用(その為、`Timer`も`10x10`個存在する)
     - `JDK 1.7.0_40`以降で低速
@@ -51,11 +51,11 @@ class Tile2 extends JComponent {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [java - javax.swing.Timer slowdown in Java7u40 - Stack Overflow](http://stackoverflow.com/questions/18933986/javax-swing-timer-slowdown-in-java7u40)
     - `JDK 1.7.0_25`までは、どれも同じような速度でアニメーションするが、`JDK 1.7.0_40`以降は`Timer`の数を減らさないと遅くなる？
     - [Bug ID: JDK-7167780 Hang javasoft.sqe.tests.api.javax.swing.Timer.Ctor2Tests](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7167780)の修正が影響している？
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30
 
-## JTextAreaに行カーソルを表示
+## 概要
 `JTextArea`のカーソルがある行全体にアンダーラインを引きます。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPL3eZj2I/AAAAAAAAAdk/KJTR3_NeAZE/s800/LineCursor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class LineCursorTextArea extends JTextArea {
   private static final Color cfc = Color.BLUE;
   private final DefaultCaret caret;
@@ -53,14 +53,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30
 }
 </code></pre>
 
-### 解説
+## 解説
 `JTextArea#paintComponent`メソッドをオーバーライドして、カーソルがある行にアンダーラインを引いています。
 
 キャレットの移動に対応するため、`DefaultCaret#damage`メソッドを変更して、描画に使われる領域を描画し直しています。
 
 [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)のように、`Highlighter`を使っても同様のことができるようです。
 
-### 参考リンク
+## 参考リンク
 - [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1393939)
 - [Swing - Line highlighting problem in presence of text highlighting!](https://forums.oracle.com/thread/1377129)
 - [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)
@@ -68,7 +68,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Caret`の高さを使用するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-17 (月) 16:54:50
 
 <!-- dummy comment line for breaking list -->

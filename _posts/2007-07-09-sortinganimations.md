@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-09
 
-## JComboBoxのモデルとしてenumを使用する
+## 概要
 `JComboBox`のモデルとして`enum`を使用します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTcZXYeSI/AAAAAAAAAkY/_frjM9wSJsc/s800/SortingAnimations.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static enum SortAlgorithms {
   Isort    ("Insertion Sort"),
   Selsort  ("Selection Sort"),
@@ -38,7 +38,7 @@ private final JComboBox algorithmsChoices = new JComboBox(SortAlgorithms.values(
 //private final JComboBox&lt;SortAlgorithms&gt; algorithmsChoices = new JComboBox&lt;&gt;(SortAlgorithms.values());
 </code></pre>
 
-### 解説
+## 解説
 `enum`型で`JComboBox`のモデルを作成しています。上記のコードでは、`Enum#toString()`メソッドをオーバーライドして、`JComboBox`の表示はユーザーに分かりやすい名前になるようにしています。
 
 コード中で、どのアイテムが選択されているかなどを調べる場合などは、例えば以下のようにして使用します。
@@ -61,10 +61,10 @@ private final JComboBox algorithmsChoices = new JComboBox(SortAlgorithms.values(
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Sorting Algorithm Animations from Programming Pearls](http://www.cs.bell-labs.com/cm/cs/pearls/sortanim.html)
 - [Lesson: Performing Custom Painting (The Java™ Tutorials > Creating a GUI With JFC/Swing)](http://docs.oracle.com/javase/tutorial/uiswing/painting/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

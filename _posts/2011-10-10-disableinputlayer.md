@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10
 
-## JLayerで指定したコンポーネントへの入力を禁止
+## 概要
 `JDK 7`で導入された、`JLayer`を利用して、指定したコンポーネントへの入力を禁止します。
 
 {% download https://lh3.googleusercontent.com/-fJbneWE3WB4/TpLGoNbk1TI/AAAAAAAABDk/GJWfhRR4UB0/s800/DisableInputLayer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DisableInputLayerUI extends LayerUI&lt;JPanel&gt; {
   private boolean isRunning = false;
   @Override public void paint(Graphics g, JComponent c) {
@@ -66,7 +66,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JLayer`を設定した任意のコンポーネントへの入力可不可を切り替えることができるようになっています。
 
 - 入力禁止中の半透明グレー表示
@@ -78,9 +78,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Cursorを砂時計に変更](http://terai.xrea.jp/Swing/WaitCursor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

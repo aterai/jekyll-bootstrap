@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-01
 
-## JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する
+## 概要
 `HTMLEditorKit`を使用する`JTextPane`で修飾したテキストを`JTextArea`に`Html`ソースとして表示、編集、`JTextPane`に反映するテストを行なっています。
 
 {% download https://lh6.googleusercontent.com/-ORS7lITRAUE/UVhL_1G6hPI/AAAAAAAABo4/5WKtBFFthJ0/s800/HTMLEditorKit.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>textPane.setComponentPopupMenu(new HTMLColorPopupMenu());
 //textPane.setEditorKit(new HTMLEditorKit());
 textPane.setContentType("text/html");
@@ -43,7 +43,7 @@ tabbedPane.addChangeListener(new ChangeListener() {
 });
 </code></pre>
 
-### 解説
+## 解説
 `HTMLEditorKit`を使用(コンテンツ形式を"text/html"に設定)する`JTextPane`で`JEditorPane#getText()`を実行すると、`HTMLEditorKit`からスタイル(文字色)などを設定した`Html`ソースとして文字列を取得することができるので、これを`JTabbedPane`が`JTextArea`に切り替わるときに`JTextArea`に流しこんでいます。
 
 逆に、`JTextArea`で`Html`ソースを編集し、`JTabbedPane`で`JTextPane`に切り替える時には、`JEditorPane#setText(String)`内で、`HTMLEditorKit`に`HTML`形式で読み込まれるようになっています。
@@ -79,4 +79,4 @@ delegator.parse(new StringReader(str), new HTMLEditorKit.ParserCallback() {
 System.out.println(s.toString());
 </code></pre>
 
-### コメント
+## コメント

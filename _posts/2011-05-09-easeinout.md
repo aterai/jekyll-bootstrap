@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-09
 
-## JTextAreaをキャプションとして画像上にスライドイン
+## 概要
 画像の上に`JTextArea`をスライドインアニメーションで表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/Tcd9MqA6BlI/AAAAAAAAA64/Q7KLCkUETZ4/s800/EaseInOut.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private int delay = 4;
 private int count = 0;
 @Override public void mouseEntered(MouseEvent e) {
@@ -68,7 +68,7 @@ public double easeInOut(double t) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JLabel`に画像を表示し、これにマウスカーソルが入った場合、`JTextArea`がキャプションとして`ease-in`, `ease-out`でスライドインするようになっています。
 
 - `OverlayLayout#layoutContainer`内で、`JTextArea`の`y`座標を変更してアニメーション
@@ -103,7 +103,7 @@ public double easeInOut(double t) {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Math: EaseIn EaseOut, EaseInOut and Beziér Curves | Anima Entertainment GmbH](http://www.anima-entertainment.de/math-easein-easeout-easeinout-and-bezier-curves)
 - [Slide In Image Captions | CSS-Tricks](http://css-tricks.com/slide-in-image-captions/)
 - [指数関数を使ったお手軽イーズ・アウト - Radium Software](http://radiumsoftware.tumblr.com/post/5031889912)
@@ -113,4 +113,4 @@ public double easeInOut(double t) {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

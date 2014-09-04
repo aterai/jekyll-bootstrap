@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-14
 
-## JTreeを透明にし、選択状態を半透明にする
+## 概要
 `JTree`の背景を透明にし、ノードの選択色を半透明にします。
 
 {% download https://lh4.googleusercontent.com/-HxmekrVRX6M/UPLEn6O6-VI/AAAAAAAABbM/XJoGyl2khVM/s800/TranslucentTree.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TransparentTreeCellRenderer extends DefaultTreeCellRenderer {
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
@@ -42,7 +42,7 @@ class TranslucentTreeCellRenderer extends TransparentTreeCellRenderer {
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `TreeCellRenderer`を半透明化
     - `JTree#setOpaque(false);`として`JTree`や`JScrollPane`などを透明化
     - `DefaultTreeCellRenderer#getBackgroundNonSelectionColor(...)`をオーバーライドしてノードの背景色を透明化
@@ -76,10 +76,10 @@ tree2.putClientProperty("Nimbus.Overrides", d);
 tree2.putClientProperty("Nimbus.Overrides.InheritDefaults", false);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTreeを行クリックで選択し、行全体を選択状態の背景色で描画](http://terai.xrea.jp/Swing/TreeRowSelection.html)
 - [JRootPaneの背景として画像を表示](http://terai.xrea.jp/Swing/RootPaneBackground.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

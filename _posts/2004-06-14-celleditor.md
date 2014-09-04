@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-14
 
-## JTableのセルを編集不可にする
+## 概要
 `JTable`のセルを編集不可にします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIgUbMHLI/AAAAAAAAAS4/v0jIwB26ie4/s800/CellEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(new DefaultTableModel() {
   @Override public boolean isCellEditable(int row, int column) {
     return false;
@@ -23,7 +23,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-14
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルは、以下の三種類の方法で、セルを編集不可にすることが出来ます。
 
 - `Override TableModel#isCellEditable(...) { return false; }`
@@ -47,12 +47,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-14
 <pre class="prettyprint"><code>table.setEnabled(false);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTableでキー入力によるセル編集開始を禁止する](http://terai.xrea.jp/Swing/PreventStartCellEditing.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - セルや行の選択をしないのであれば、`JTable#setFocusable(false)`と`JTable#setCellSelectionEnabled(false)`を合わせて利用することでも編集不可にできるようです。こちらは編集不可というより、文字通りフォーカスしないといった感じですが。 -- [shuna](http://terai.xrea.jp/shuna.html) 2009-10-23 (Fri) 03:12:58
     - なるほど。<kbd>F2</kbd>も含めてキー入力で編集開始できなくなる(マウスクリックでは可能？)ようですね。`table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`よりすこし強力といった所でしょうか。いつか、こちらから[JTableでキー入力によるセル編集開始を禁止する](http://terai.xrea.jp/Swing/PreventStartCellEditing.html)に移動するかも。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-23 (金) 22:07:44
 

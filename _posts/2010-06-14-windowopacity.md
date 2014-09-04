@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-14
 
-## JFrameを半透明化
+## 概要
 `JFrame`を半透明にします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWw2d9LNI/AAAAAAAAApw/NXG2EcaSv_s/s800/WindowOpacity.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JFrame.setDefaultLookAndFeelDecorated(true);
 JFrame frame = new JFrame();
 //com.sun.awt.AWTUtilities.setWindowOpacity(frame, .5f);
@@ -30,7 +30,7 @@ frame.setLocationRelativeTo(null);
 frame.setVisible(true);
 </code></pre>
 
-### 解説
+## 解説
 `com.sun.awt.AWTUtilities.setWindowOpacity(frame, .5f);`を使って半透明化すると、フレームのタイトルバーや、子コンポーネントまで半透明化されるので、代わりに上記のサンプルでは以下のようにして半透明化を行っています。
 
 - `JFrame.setDefaultLookAndFeelDecorated(true);`で、タイトルバーなどを`JRootPane`に描画
@@ -40,13 +40,13 @@ frame.setVisible(true);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
 - [How to Create Translucent and Shaped Windows (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Other Swing Features)](http://docs.oracle.com/javase/tutorial/uiswing/misc/trans_shaped_windows.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - そんな簡単にできるんですね！昔画面キャプチャーしたり色々苦労した結果断念しました； -- [riki](http://terai.xrea.jp/riki.html) 2010-06-14 (月) 22:57:11
     - `AWTUtilities.setWindowOpaque`などが使えるようになったのは、`6u10`からですが、上記のサンプルみたいなことができるようになったのは、`6u14`から(多分[Bug ID: 6683775 Painting artifacts is seen when panel is made setOpaque(false) for a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6683775))みたいですから、最近(ちょうど一年ぐらい)のようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-15 (火) 13:26:11
 - 「`Windows 7` + `JDK 1.7.0`」で、このサンプルにある`JComboBox`のドロップダウンリストが正常に描画されない？ 「`Windows XP` + `JDK 1.7.0`」や、「`Windows 7` + `JDK 1.6.0_27`」は問題なし。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-18 (火) 19:01:43

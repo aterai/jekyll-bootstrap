@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-14
 
-## OverlayLayoutの使用
+## 概要
 `OverlayLayout`を使用し、`JButton`を重ねて配置します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQqzbG85I/AAAAAAAAAf8/GAYWzSVrHvg/s800/OverlayLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JButton b1 = new JButton();
 JButton b2 = new JButton();
 b1.setLayout(new OverlayLayout(b1));
@@ -40,16 +40,16 @@ b2.setAlignmentY(1.0f);
 b1.add(b2);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JButton`に`OverlayLayout`を使って、別の`JButton`を重ねて右下に配置しています。
 
-### 参考リンク
+## 参考リンク
 - [Box Layout Features](http://docs.oracle.com/javase/tutorial/uiswing/layout/box.html#features)
 - [JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ボタンサイズの指定方法を変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-17 (木) 20:39:53
 - スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-29 (水) 18:51:52
 

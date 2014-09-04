@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
 
-## JPanelをアコーディオン風に展開
+## 概要
 `JPanel`の展開、折り畳みをアコーディオン風に行います。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTHVHwFBII/AAAAAAAAARA/QX4AmSbPoHs/s800/AccordionPanel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>abstract class ExpansionPanel extends JPanel{
   abstract public JPanel makePanel();
   private final String title;
@@ -79,7 +79,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
 }
 </code></pre>
 
-### 解説
+## 解説
 各パネルに配置されたタイトルラベルがクリックされた場合、`JPanel#setVisible(boolean)`メソッドを使って、パネルの表示・非表示を切り替えています。
 
 また、パネルを非表示にするだけでは、その高さが変更されないので、以下のように、`JPanel#getPreferredSize()`もオーバーライドしています。
@@ -96,7 +96,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
 - - - -
 [L2FProd.com - Common Components](http://common.l2fprod.com/) にある`JTaskPane`で、アニメーション付きのパネルの展開や折り畳みが可能です。ソースも公開されているので、`com.l2fprod.common.swing.JCollapsiblePane`あたりを参考にしてみてください。
 
-### 参考リンク
+## 参考リンク
 - [JPanelの展開と折り畳み](http://terai.xrea.jp/Swing/ExpandablePanel.html)
 - [BoxLayoutでリスト状に並べる](http://terai.xrea.jp/Swing/ComponentList.html)
 - [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
@@ -104,7 +104,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `SpringLayout`を`BoxLayout`に変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-15 (金) 22:33:23
 - 不要なコードを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-16 (火) 21:29:33
 - 不要(になった？)なリスナクラスなどを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-21 (火) 16:33:17

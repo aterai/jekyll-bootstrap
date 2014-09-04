@@ -10,17 +10,17 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-05
 
-## JSplitPaneのディバイダを展開、収納する
+## 概要
 `JSplitPane`のディバイダをマウスのクリックなどで一気に展開、収納できるように設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQl4nQ4PI/AAAAAAAAAf0/y7DMbOexVWs/s800/OneTouchExpandable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, s1, s2);
 splitPane.setOneTouchExpandable(true);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JSplitPane#setOneTouchExpandable(true)`と設定することで、ディバイダに`JButton`が表示され、これらをクリックすることでディバイダを展開、収納することができるようになっています。
 
 - - - -
@@ -42,13 +42,13 @@ splitPane.setOneTouchExpandable(true);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5006095)
 - [JSplitPaneの収納状態を維持する](http://terai.xrea.jp/Swing/KeepHiddenDivider.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ソースファイルをダウンロードして`eclipse`でプロジェクト作成しそこにコピーしたのですが、「インポートされた `javax.jnlp` は見つかりません」と出てきて実行出来ないのですが、 `javax.jnlp`はどこに置けば良いのでしょうか？ -- [ニートン](http://terai.xrea.jp/ニートン.html) 2012-02-21 (火) 08:06:33
     - `eclipse`はほとんど使ったことがないのでインポートの詳細(もしかして`Ant`の`build.xml`を取り込む機能がある？)が分からないのですが、`javax.jnlp`パッケージは、`${java.home}/lib/javaws.jar`にあるので、ここにクラスパスが通っていないのかもしれません。このサンプルでは、`javax.jnlp.*`は使用しないので、`build.xml`から`<pathelement location="${java.home}/lib/javaws.jar" />`を削除するか、または、`eclipse`で新規プロジェクトを作成し、ソースコードだけ貼り付けるのが簡単だと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-21 (火) 17:15:21
 - ＞`eclipse`で新規プロジェクトを作成し、ソースコードだけ貼り付けるのが簡単だと思います。

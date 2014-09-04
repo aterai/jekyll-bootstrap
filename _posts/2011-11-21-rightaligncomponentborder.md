@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-21
 
-## Borderの右下にJComponentを配置
+## 概要
 `SpringLayout`を設定した`JLayeredPane`を使って、`Border`の右下に`JComponent`を配置します。
 
 {% download https://lh5.googleusercontent.com/-IPUQvbcJ2NM/TsjbIEMsMeI/AAAAAAAABE8/Fg16E6wkLtY/s800/RightAlignComponentBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public JComponent makePanel(JComponent m, JComponent c) {
   int ir = 20; //inset.right
   int ch = c.getPreferredSize().height/2;
@@ -50,7 +50,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-21
 }
 </code></pre>
 
-### 解説
+## 解説
 - 中央に表示するコンポーネントに、右下に配置するコンポーネントと同じ高さの`EtchedBorder`を設定
 - `SpringLayout`を設定した`JLayeredPane`の`DEFAULT_LAYER`に中央に表示するコンポーネント、`DEFAULT_LAYER+1`に右下に配置するコンポーネントを追加
 - `SpringLayout.Constraints`を設定して、中央に表示するコンポーネントは親の`JLayeredPane`のサイズとおなじになるように、右下に配置するコンポーネントは右下になるようにレイアウト
@@ -58,10 +58,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-21
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [BorderにJComponentを配置](http://terai.xrea.jp/Swing/ComponentTitledBorder.html)
 - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-19
 
-## JPanelをフォーカストラバーサルサイクルのルートにする
+## 概要
 `JPanel`がフォーカストラバーサルサイクルのルートになるように設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNCX36INI/AAAAAAAAAaI/xunzBpsDJLk/s800/FocusCycleRoot.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JPanel p1 = new JPanel();
 p1.setFocusCycleRoot(true);
 p1.add(new JTextField(16));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、各`JPanel`がそれぞれフォーカストラバーサルサイクルのルートになるように設定しています。
 
 - 左の`JPanel`
@@ -33,9 +33,9 @@ p1.add(new JTextField(16));
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Focusの移動](http://terai.xrea.jp/Swing/FocusTraversal.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

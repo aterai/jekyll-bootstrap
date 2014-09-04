@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-01
 
-## DocumentFilterで先頭文字を大文字に変換する
+## 概要
 `DocumentFilter`を使って、文字列の先頭が常に大文字になるように設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMuU7OQ-I/AAAAAAAAAZo/jnaPTnPJY4w/s800/FirstCharToUpperCase.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class FirstCharToUpperCaseDocumentFilter extends DocumentFilter {
   private final JTextComponent textArea;
   public FirstCharToUpperCaseDocumentFilter(JTextComponent textArea) {
@@ -49,7 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-01
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTextField`に入力された文字列の先頭一文字が、常に大文字になるように変換する`DocumentFilter`を設定しています。
 
 - - - -
@@ -58,4 +58,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-01
 <pre class="prettyprint"><code>JFormattedTextField field1 = new JFormattedTextField(new MaskFormatter("ULLLLLLLLLL"));
 </code></pre>
 
-### コメント
+## コメント

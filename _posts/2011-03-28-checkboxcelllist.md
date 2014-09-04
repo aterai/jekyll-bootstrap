@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 
-## JListのセルにJCheckBoxを使用する
+## 概要
 `JList`のセルに`JCheckBox`を使用して、チェックボックスの一覧を作成します。
 
 {% download https://lh3.googleusercontent.com/-EfbwsqycTvg/UlyukvM4ivI/AAAAAAAAB3o/NJBvrfM4xPA/s800/CheckBoxCellList.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CheckBoxCellRenderer&lt;E extends CheckBoxNode&gt; extends JCheckBox
           implements ListCellRenderer&lt;E&gt;, MouseListener, MouseMotionListener {
   private int rollOverRowIndex = -1;
@@ -70,7 +70,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-28
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `Box`
     - `Box.createVerticalBox()`に`JCheckBox`を追加
     - `JCheckBox#setAlignmentX(Component.LEFT_ALIGNMENT);`で左揃えに設定
@@ -201,14 +201,13 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
 //...
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 補足として追記していた`JTree`を使用するサンプルを本体に取り込んで、スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-15 (火) 11:56:41
-- ~~スパム対策でコメント欄を停止。~~ `.htaccess`で対応するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-21 (月) 15:03:42
 
 <!-- dummy comment line for breaking list -->
 

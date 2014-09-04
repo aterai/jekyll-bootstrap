@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-13
 
-## Timerでアニメーションするアイコンを作成
+## 概要
 `javax.swing.Timer`を使って、アニメーションするアイコンを作成します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTHuI0XeDI/AAAAAAAAARo/CVs615Dtkqs/s800/AnimeIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class AnimatedLabel extends JLabel implements ActionListener {
   private final javax.swing.Timer animator;
   private final AnimeIcon icon = new AnimeIcon();
@@ -88,7 +88,7 @@ class AnimeIcon implements Icon {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、スタートボタンを押すと(`JTextArea`に表示している作業状況はダミーで、実際は`Thread.sleep()`で時間を稼いでいるだけ)アイコンが`FireFox`風にアニメーションします。
 
 アニメーションは、`8`個の円からアイコンを生成して、それぞれのインデックスを順に変更することで行っています。
@@ -164,7 +164,7 @@ class AnimeIcon implements Icon {
 }
 </code></pre>
 
-### コメント
+## コメント
 - 色の濃い円が時計回りに回転するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-15 (水) 11:12:08
 - ロードインジケータと呼ぶらしい。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-07-11 (水) 23:49:44
 - ~~このサンプルでは、`Swing Tutorial`にあった古い`SwingWorker`を使用しているけど、~~ [Swingworker — Java.net](http://java.net/projects/swingworker) にある`JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用 ~~したほうがいいかも。そのうち修正する予定~~ するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-17 (木) 01:44:29

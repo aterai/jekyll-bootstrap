@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-10
 
-## JFileChooserのデフォルトをDetails Viewに設定
+## 概要
 `JFileChooser`を開いたときのデフォルトをリストではなく詳細に変更します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TSq77M-soeI/AAAAAAAAAxg/0nnen-n-cAY/s800/DetailsViewFileChooser.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//java - How can I start the JFileChooser in the Details view? - Stack Overflow]
 //http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view
 //for(Object key: chooser.getActionMap().allKeys()) {
@@ -25,7 +25,7 @@ Action detailsAction = chooser.getActionMap().get("viewTypeDetails");
 if(detailsAction!=null) detailsAction.actionPerformed(null);
 </code></pre>
 
-### 解説
+## 解説
 - 以下のリンクで紹介されているように、`ActionMap`から`viewTypeDetails`アクションを取得する方法が一番簡単なようです。
     - [java - How can I start the JFileChooser in the Details view? - Stack Overflow](http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)
     - 何時から使用できるようになったのか、それとも元から使用可能だったのかなどを調査中。
@@ -55,7 +55,7 @@ private static boolean searchAndClick(Container parent, Icon icon) {
 filePane.setViewType(FilePane.VIEWTYPE_DETAILS);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [java - How can I start the JFileChooser in the Details view? - Stack Overflow](http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)
 - [Swing Utils « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/13/swing-utils/)
     - via: [set jFileChooser default to details view - Java Forums](http://www.java-forums.org/awt-swing/13733-set-jfilechooser-default-details-view.html)
@@ -63,4 +63,4 @@ filePane.setViewType(FilePane.VIEWTYPE_DETAILS);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

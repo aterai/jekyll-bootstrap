@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-25
 
-## JLabelに表示したAnimated Gifのアニメーションを停止する
+## 概要
 `JLabel`に表示した`Animated Gif`のアニメーションを停止します。
 
 {% download https://lh6.googleusercontent.com/-pYT15pLG7KY/USoyuJzLxUI/AAAAAAAABfo/JgO7-MbsL5U/s800/DisableAnimatedGif.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JLabel label2 = new JLabel() {
   @Override public boolean imageUpdate(Image img, int infoflags, int x, int y, int w, int h) {
     if(!isEnabled()) {
@@ -26,7 +26,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-25
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JLabel`が`Enabled`でない場合にアニメーションを停止するよう設定しています。
 
 - `Default`
@@ -40,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-25
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
 - [ImageObserver (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/image/ImageObserver.html)
 - [ColorConvertOpで画像をグレースケールに変換](http://terai.xrea.jp/Swing/ColorConvertOp.html)
@@ -48,4 +48,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-25
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

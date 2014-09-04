@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-23
 
-## JTableのセル編集を文字入力変換中からでも可能にする
+## 概要
 `IME`が直接入力以外で、一時ウィンドウが表示されていても、入力確定でセル編集を開始します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKG6DmuHI/AAAAAAAAAVc/WfOft65kSaQ/s800/CompositionEnabled.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   @Override protected boolean processKeyBinding(
       KeyStroke ks, KeyEvent e, int condition, boolean pressed) {
@@ -39,7 +39,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-23
 //table.setSurrendersFocusOnKeystroke(true);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のような設定になっています。
 
 - <kbd>Tab</kbd>や<kbd>Enter</kbd>キーでのセルフォーカス移動では編集開始しない
@@ -49,9 +49,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-23
 
 インプットメソッドが起動中かどうかは、`Component#getInputContext#isCompositionEnabled`メソッドで判断しています。
 
-### 参考リンク
+## 参考リンク
 - [Java Input Method Framework テクノロジ](http://docs.oracle.com/javase/jp/6/technotes/guides/imf/index.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-29
 
-## JFrameの位置・サイズを記憶する
+## 概要
 `Preferences`(レジストリなど)にフレーム(パネル)の位置・サイズを記憶しておきます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRGT4S7mI/AAAAAAAAAgo/GDUrxdRJ4x4/s800/Preferences.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public MainPanel(final JFrame frame) {
   super(new BorderLayout());
   this.frame = frame;
@@ -87,17 +87,17 @@ private void saveLocation() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、対象フレームが最大化、最小化された状態で終了した場合、その前の位置サイズを記憶しておくようになっています。
 
-### 参考リンク
+## 参考リンク
 - [Preferences API の概要](http://docs.oracle.com/javase/jp/6/technotes/guides/preferences/overview.html)
     - このページの概要にある「`Java` コレクション `API` の設計に関する `FAQ`」は多分、「`Preferences API` の設計に関する `FAQ`」の間違い
 - [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://terai.xrea.jp/Swing/PersistenceService.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - メモ: [Preferences APIがJava6上では動かない - 日々是開発: SQS Development(2007-02-12)](http://sqs.cmr.sfc.keio.ac.jp/tdiary/20070212.html#p01) -- [aterai](http://terai.xrea.jp/aterai.html) 2007-06-14 (木) 14:42:00
 - 最大化した状態で終了すると、`(x,y)`が`(-4,-4)`で記録される。最大化すると、どうやら`JFrame.NORMAL`のまま左端に移動してそれから最大扱いになってるようです。だから`componentMoved`が誤爆してる。 -- [Tomopy](http://terai.xrea.jp/Tomopy.html) 2007-10-26 (金) 12:20:16
     - ご指摘ありがとうございます。位置がマイナスの場合は、保存しないほうがよさそうですね。修正しておきます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-26 (金) 13:37:15

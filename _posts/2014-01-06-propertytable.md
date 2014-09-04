@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-06
 
-## JTableでプロパティ一覧表を作成する
+## 概要
 `JTable`の行ごとにクラスに応じたセルエディタなどを適用することで、プロパティ一覧表を作成します。
 
 {% download https://lh4.googleusercontent.com/-ZueCWsZFbOQ/UslO6WVldNI/AAAAAAAAB9g/53vsd2t0OPo/s800/PropertyTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>String[] columnNames = {"Type", "Value"};
 Object[][] data = {
   {"String",  "text"    },
@@ -71,7 +71,7 @@ table.setDefaultEditor(Color.class,   new ColorEditor());
 table.setDefaultEditor(Date.class,  new DateEditor());
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable#getCellRenderer(...)`、`JTable#getCellEditor(...)`をオーバーライドして、実際のモデル値からクラスを取得し、そのクラスに応じて行毎に使用するセルレンダラ、セルエディタを変更しています。
 
 - セルレンダラ
@@ -91,11 +91,11 @@ table.setDefaultEditor(Date.class,  new DateEditor());
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [java - Property list GUI component in Swing - Stack Overflow](http://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing)
 - [CellEditorをJSpinnerにして日付を変更](http://terai.xrea.jp/Swing/DateCellEditor.html)
 - [TableDialogEditDemo](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html#TableDialogEditDemo)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

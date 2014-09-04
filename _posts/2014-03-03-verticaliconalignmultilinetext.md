@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-03
 
-## JCheckBoxのチェックアイコンを一行目中央に配置する
+## 概要
 `JCheckBox`のテキストが複数行の場合、チェックアイコンが一行目中央に配置されるよう設定します。
 
 {% download https://lh4.googleusercontent.com/-xEdb1NQpk3A/UxNGwOHM8dI/AAAAAAAACBE/GDPtPjFUuJs/s800/VerticalIconAlignMultilineText.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class WindowsVerticalAlignmentCheckBoxUI extends WindowsCheckBoxUI {
   @Override public synchronized void paint(Graphics g, JComponent c) {
     AbstractButton b = (AbstractButton) c;
@@ -47,7 +47,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-03
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `SwingConstants.TOP`
     - `JCheckBox#setVerticalTextPosition(SwingConstants.TOP);`と設定して、チェックアイコンとテキストの上辺が揃うように設定
     - フォントサイズなどが大きくなると、チェックアイコンが上に飛び出しているように見えてしまう
@@ -57,9 +57,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-03
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [java - JCheckBox: Vertical alignment for multi-line text - Stack Overflow](http://stackoverflow.com/questions/22121439/jcheckbox-vertical-alignment-for-multi-line-text)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

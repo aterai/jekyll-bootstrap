@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-21
 
-## ColorConvertOpで画像をグレースケールに変換
+## 概要
 `ColorConvertOp`を使って画像をグレースケールに変換します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTJmEhFayI/AAAAAAAAAUo/x4JGGk_f08c/s800/ColorConvertOp.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>Image img = icon1.getImage();
 BufferedImage source = new BufferedImage(
     img.getWidth(this), img.getHeight(this),
@@ -29,7 +29,7 @@ BufferedImage destination = colorConvert.filter(source, null);
 icon2 = new ImageIcon(destination);
 </code></pre>
 
-### 解説
+## 解説
 用意したアイコンから、`BufferedImage`を作成し、これを`ColorConvertOp#filter`メソッドを使ってグレースケールに変換しています。
 
 上記のサンプルでは、ラベルをクリックすると元画像とグレースケール画像とが切り替わるようになっています。
@@ -70,7 +70,7 @@ g.drawImage(img, 0, 0, this);
 g.dispose();
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Image Color Gray Effect : Java examples (example source code) » 2D Graphics GUI » Image](http://www.java2s.com/Code/Java/2D-Graphics-GUI/ImageColorGrayEffect.htm)
 - [opus-i | シンプル素材 テンプレート 音楽素材](http://opus-i.biz/)
 - ~~[フィルタによる半透明な画像の作成](http://numata.aquasky.jp/programming/java/graphics/FilteringImage.html)~~
@@ -80,7 +80,7 @@ g.dispose();
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - リンクを参考にして`RGBImageFilter`を使うサンプルを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-08-21 (火) 13:06:10
 - グレイスケールからグレースケールに変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-10 (木) 14:31:00
 

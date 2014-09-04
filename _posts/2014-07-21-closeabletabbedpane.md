@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-21
 
-## JTabbedPaneの各タブにJButtonを右寄せで追加する
+## 概要
 `JTabbedPane`のタブ上にそれを閉じるための`JButton`を`JLayer`を使用して右寄せで描画します。
 
 {% download https://lh4.googleusercontent.com/-slZiu9Gyq8I/U8wH6A1byMI/AAAAAAAACJ0/-aLfrJeKX4Y/s800/CloseableTabbedPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CloseableTabbedPaneLayerUI extends LayerUI&lt;JTabbedPane&gt; {
   private final JComponent rubberStamp = new JPanel();
   private final Point pt = new Point(-100, -100);
@@ -90,7 +90,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-21
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
     - タブに追加したコンポーネントは、中央揃えで配置される(`BasicTabbedPaneUI`などのデフォルト)
@@ -104,11 +104,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-21
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [java - Closeable JTabbedPane - alignment of the close button - Stack Overflow](http://stackoverflow.com/questions/24634047/closeable-jtabbedpane-alignment-of-the-close-button)
 - [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
 - [JTabbedPaneにタブを閉じるアイコンを追加](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

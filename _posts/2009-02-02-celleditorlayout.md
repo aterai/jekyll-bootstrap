@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
 
-## TableCellEditorのレイアウトを変更
+## 概要
 `TableCellEditor`のレイアウトを変更して、`CellEditor`の隣に`JButton`を配置します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIlcF-6vI/AAAAAAAAATA/mS6Q_BfuY6c/s800/CellEditorLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CustomComponentCellEditor extends DefaultCellEditor {
   protected final JTextField field;
   protected JButton button;
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
 }
 </code></pre>
 
-### 解説
+## 解説
 - `0`列目
     - `DefaultCellEditor`を継承する`CustomComponentCellEditor`を作成
     - `JTextField`をコンストラクタの引数にしているが、ダミー
@@ -164,13 +164,13 @@ class CustomComponentCellEditor2 extends DefaultCellEditor {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - JTable editor issue](https://forums.oracle.com/thread/1354286)
 - [JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - <kbd>F2</kbd>で編集開始した場合、フォーカスできない問題を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-08-10 (月) 15:50:27
 - ソースコードだけ変更して、こちらのページの修正を忘れていたorzので、新しく追加した`2`列目の解説と、最終列はデフォルトであることを追記。スクリーンショットは面倒なので更新しない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-08-30 (火) 18:26:59
 

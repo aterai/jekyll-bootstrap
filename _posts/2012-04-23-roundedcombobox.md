@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-23
 
-## JComboBoxの角を丸める
+## 概要
 `JComboBox`の左上、右上の角を丸める`Border`を設定します。
 
 {% download https://lh6.googleusercontent.com/-0VloXBzelwQ/T5TD3KZRIzI/AAAAAAAABLs/siwBGiic6Tw/s800/RoundedComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RoundedCornerBorder extends AbstractBorder {
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int width, int height) {
@@ -79,7 +79,7 @@ class KamabokoBorder extends RoundedCornerBorder {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`Path2D#lineTo`、`Path2D#quadTo`を使ってかまぼこ型の図形を作成し、`JComboBox`の`Border`に設定しています。
 
 以下のような方法でも、かまぼこ型の図形を作成することができます。
@@ -109,13 +109,13 @@ round.add(new Area(b));
 - - - -
 メモ: これらの方法で、角丸の`JComboBox`が作成できるのは、`BasicLookAndFeel`と`WindowsLookAndFeel`の場合のみ？
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxのBorderを変更する](http://terai.xrea.jp/Swing/ComboBoxBorder.html)
 - [JTextFieldの角を丸める](http://terai.xrea.jp/Swing/RoundedTextField.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 編集可不可の切り替えと、`WindowsLookAndFeel`に適用したサンプルを追加 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-30 (土) 04:07:30
 
 <!-- dummy comment line for breaking list -->

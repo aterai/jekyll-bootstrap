@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
 
-## JLabelでイニシャル組を行う
+## 概要
 `JLabel`の先頭文字を拡大、残りの文字列を`TextLayout`で回り込むよう配置し、ドロップキャップで描画します。
 
 {% download https://lh6.googleusercontent.com/-kf9qTpS1Olg/Un-Dk5bbC-I/AAAAAAAAB5s/fAVjwJVHBqA/s800/DropcapLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>@Override protected void paintComponent(Graphics g) {
   Graphics2D g2 = (Graphics2D)g.create();
   g2.setPaint(getBackground());
@@ -65,7 +65,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下の手順で`JLabel`にドロップキャップの装飾を行っています。
 
 - 先頭一文字を`Shape`として取得し拡大して表示
@@ -75,10 +75,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JLabelの文字列を折り返し](http://terai.xrea.jp/Swing/GlyphVector.html)
 - [Fontを回転する](http://terai.xrea.jp/Swing/TransformedShape.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23
 
-## JSpinnerを編集不可にした場合の内余白
+## 概要
 `JSpinner`を編集不可にした場合の背景色や内部余白の色などを変更します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOcTAKgdI/AAAAAAAAAcY/R1dvME0C6UA/s800/InactiveSpinnerInsets.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JSpinner spinner3 = new JSpinner() {
   @Override protected void paintComponent(Graphics g) {
     if (getUI() instanceof com.sun.java.swing.plaf.windows.WindowsSpinnerUI) {
@@ -44,7 +44,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23
 };
 </code></pre>
 
-### 解説
+## 解説
 - `Default`
     - `WindowsLookAndFeel(XP)`の場合、`JSpinner`を編集不可にしても白い余白が表示される。
 - `setOpaque(false)`
@@ -67,9 +67,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Painting in AWT and Swing](http://www.oracle.com/technetwork/java/painting-140037.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

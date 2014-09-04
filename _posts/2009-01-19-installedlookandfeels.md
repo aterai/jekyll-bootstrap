@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-19
 
-## LookAndFeelの一覧を取得する
+## 概要
 インストールされている`LookAndFeel`の一覧を取得し、これらを切り替えるためのメニューバーを作成します。[SwingSet3](https://swingset3.dev.java.net/)からの引用です。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOmfktdJI/AAAAAAAAAco/gBdSD5Qn9-Y/s800/InstalledLookAndFeels.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private ButtonGroup lookAndFeelRadioGroup;
 private String lookAndFeel;
 protected JMenu createLookAndFeelMenu() {
@@ -63,14 +63,14 @@ private void updateLookAndFeel() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`UIManager.getInstalledLookAndFeels()`メソッドを使用して`UIManager.LookAndFeelInfo`のリストを取得しています。
 
-### 参考リンク
+## 参考リンク
 - [SwingSet3](https://swingset3.dev.java.net/)
 - [Look and Feelの変更](http://terai.xrea.jp/Swing/LookAndFeel.html)
     - こちらは、`SwingSet2`からの引用です。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

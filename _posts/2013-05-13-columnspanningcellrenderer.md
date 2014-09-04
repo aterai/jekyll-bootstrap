@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-13
 
-## JTableのセルを横方向に連結する
+## 概要
 `JTable`のセルを横方向に連結するセルレンダラーを作成します。
 
 {% download https://lh5.googleusercontent.com/-wcXag_bBidU/UY-uA3riCRI/AAAAAAAABrs/Q_V-fdNVRu8/s800/ColumnSpanningCellRenderer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ColumnSpanningCellRenderer extends JPanel implements TableCellRenderer{
   private final JTextArea textArea = new JTextArea(2, 999999);
   private final JLabel label = new JLabel();
@@ -95,7 +95,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-13
 }
 </code></pre>
 
-### 解説
+## 解説
 文字列を配置した`JTextArea`を各カラムごとに`JViewport`で表示する領域を切り取ってセルに貼り付けています。さらに、`JTable`のセルの縦罫線自体は、`table.setShowVerticalLines(false);`などで非表示にすることでレンダラー内の`JTextArea`は、連続しているように見せかけ、上部の`JLabel`は`Border`を設定することで区切りを表示しています。
 
 - メモ
@@ -109,14 +109,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-13
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [PDF: Extreme GUI Makeover 2007](http://docs.huihoo.com/javaone/2007/desktop/TS-3548.pdf)
     - via: [java - JTable : Complex Cell Renderer - Stack Overflow](http://stackoverflow.com/questions/16305023/jtable-complex-cell-renderer)
 - [JTableの罫線の有無とセルの内余白を変更](http://terai.xrea.jp/Swing/IntercellSpacing.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JTable`をスクロールするとおかしくなる？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 13:37:19
     - `0`行目ではなく、一番上に表示されている行の表示が原因かもしれない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 13:44:14
     - 移動の幅からみて、`TableCellRenderer`の`Border`が関連しているような気がするけど、よく分からない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-04 (火) 15:08:18

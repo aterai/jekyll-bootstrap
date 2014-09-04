@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-20
 
-## JEditorPaneのHTMLEditorKitにCSSを適用
+## 概要
 `JEditorPane`に`StyleSheet`を追加した`HTMLEditorKit`を設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT6cwbhCI/AAAAAAAAAlM/PsSYnlumJJg/s800/StyleSheet.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>StyleSheet styleSheet = new StyleSheet();
 styleSheet.addRule("body {font-size: 12pt;}");
 styleSheet.addRule(".highlight {color: red; background: green}");
@@ -26,10 +26,10 @@ editor.setEditorKit(htmlEditorKit);
 editor.setText(makeTestHtml());
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、クラス名が`.highlight`の要素の文字色と背景色を`CSS`で変更しています。
 
-### 参考リンク
+## 参考リンク
 - [Java Swing「JEditorPane」メモ(Hishidama's Swing-JEditorPane Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JEditorPane.html)
 - [Swing - HTMLEditorKit and CSS](https://forums.oracle.com/thread/1392908)
 - [StyleSheet (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/StyleSheet.html)
@@ -40,7 +40,7 @@ editor.setText(makeTestHtml());
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `HTMLEditorKit`の`CSS`で、色は`3`桁表記(`color: #RGB`) には対応していない？(`6`桁表記 `color:#RRGGBB`は問題なく使用可) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-28 (月) 17:52:03
 
 <!-- dummy comment line for breaking list -->

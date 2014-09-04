@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-18
 
-## JMenuの領域内にマウスカーソルでポップアップメニューを表示する
+## 概要
 `JMenu`の領域内にマウスカーソルが入ったときにポップアップメニューが開くように設定します。
 
 {% download https://lh3.googleusercontent.com/-shu8CDTfLvg/USCnbrWYstI/AAAAAAAABd0/qODgUmweras/s800/PopupWithoutClickOnMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>visitAll(menubar, new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
     if(check.isSelected()) {
@@ -30,7 +30,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-18
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JMenuBar`の子コンポーネントになっている`JMenu`の領域内にマウスカーソルが入った場合に自動的にポップアップメニューが開くように、`JMenu#doClick()`を実行する`MouseListener`を追加しています。
 
 - 注:
@@ -83,10 +83,10 @@ private MenuElement[] buildMenuElementArray(JMenu leaf) {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JMenuBarの動作 － Java Solution － ＠IT](http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?topic=9327&forum=12)
 - [java - Activate JMenuBar on hover - Stack Overflow](http://stackoverflow.com/questions/12125402/activate-jmenubar-on-hover)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

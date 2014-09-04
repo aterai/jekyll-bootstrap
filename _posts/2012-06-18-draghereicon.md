@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
 
-## Iconを生成する
+## 概要
 `Icon`インタフェースから固定サイズのアイコンを作成します。
 
 {% download https://lh5.googleusercontent.com/-PTY9ydf9DFE/T97u-rwg5lI/AAAAAAAABN0/52xJLmkoNak/s800/DragHereIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DragHereIcon implements Icon {
   private static int ICON_SIZE = 100;
   private static float BORDER_WIDTH = 8f;
@@ -80,7 +80,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のように`Icon`インタフェースを実装してアイコンを作成しています。フチもアイコンの内部に描画していますが、`BasicStroke`の破線ではなく背景色と同じ色の直線でパターンを表現しています。
 
 - `Icon#paintIcon(Component c, Graphics g, int x, int y)`を実装
@@ -100,13 +100,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
 - - - -
 注: ファイルをドロップしてもコンソールにファイル名を表示するだけで他はなにもしていません。
 
-### 参考リンク
+## 参考リンク
 - [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)
 - [swing - Java application with fancy Drag & Drop - Stack Overflow](http://stackoverflow.com/questions/10751001/java-application-with-fancy-drag-drop)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `TransferHandler`でファイルがドロップされるとき、カーソルを常にコピーにする(移動ではなく)方法が分からない(のでこのサンプルでは`DropTarget`を使用)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-18 (月) 18:25:50
 
 <!-- dummy comment line for breaking list -->

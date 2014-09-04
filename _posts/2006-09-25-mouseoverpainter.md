@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-25
 
-## JTextAreaの行をマウスでロールオーバー表示
+## 概要
 `JTextArea`のマウスカーソルがある行をロールオーバー表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQFUVNyQI/AAAAAAAAAfA/cTsyoFPSNEg/s800/MouseOverPainter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HighlightCursorTextArea extends JTextArea {
   public HighlightCursorTextArea() {
     super();
@@ -55,7 +55,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-25
 }
 </code></pre>
 
-### 解説
+## 解説
 `MouseInputAdapter`を継承した`RollOverListener`で、マウスカーソルのある行を記憶し、`JTextArea#paintComponent`メソッドをオーバーライドして、その行の背景に色を付けています。
 
-### コメント
+## コメント

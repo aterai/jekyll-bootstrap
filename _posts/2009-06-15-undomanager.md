@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-15
 
-## UndoManagerでJTextFieldのUndo、Redoを行う
+## 概要
 `JTextField`のドキュメントに`UndoManager`を追加して、`Undo`、`Redo`を行います。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWX1uwgqI/AAAAAAAAApI/zvwc9TUlj4E/s800/UndoManager.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static void initUndoRedo(JTextComponent tc) {
   UndoManager manager = new UndoManager();
   tc.getDocument().addUndoableEditListener(manager);
@@ -42,7 +42,7 @@ private static class UndoAction extends AbstractAction {
 }
 </code></pre>
 
-### 解説
+## 解説
 `Document#addUndoableEditListener(UndoManager)`メソッドを使って、`JTextField`で`Undo`、`Redo`が以下のキー入力で実行できるように設定しています。
 
 - `Undo` : <kbd>Ctrl+Z</kbd>
@@ -50,10 +50,10 @@ private static class UndoAction extends AbstractAction {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Implementing Undo and Redo (Text Component Features The Java™ Tutorialsg)](http://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html#undo)
 - [UndoManagerを使用した文字列選択ペーストの動作を変更する](http://terai.xrea.jp/Swing/ReplaceUndoableEdit.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

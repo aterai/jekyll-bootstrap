@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
 
-## JTableのセルにJCheckBoxを表示して行背景色を変更
+## 概要
 `JTable`のセルに表示されている`JCheckBox`がチェックされていれば、その行の背景色を変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTI7wkSMbI/AAAAAAAAATk/uGVLWCqLJUI/s800/CheckedRowColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   @Override public Component prepareEditor(
         TableCellEditor editor, int row, int column) {
@@ -38,7 +38,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable`の`prepareEditor`、`prepareRenderer`をオーバーライドしてセルエディタや行の背景色を変更しています。
 
 - - - -
@@ -57,12 +57,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Swing - JTable-Row color issue](https://forums.oracle.com/thread/1361072)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ごちそうさまでした。 -- [tanuchan](http://terai.xrea.jp/tanuchan.html) 2009-12-14 (Mon) 04:22:08
     - まいどありです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-16 (水) 21:25:57
 - メモ: [Bug ID: 6711682 JCheckBox in JTable: checkbox doesn't alaways respond to the first mouse click](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6711682) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-07-26 (月) 14:18:03

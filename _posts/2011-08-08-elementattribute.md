@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-08
 
-## JEditorPaneのHTMLタグにToolTipTextを設定する
+## 概要
 `JEditorPane`で`div`や`span`タグの`title`属性を`ToolTip`で表示できるように設定します。
 
 {% download https://lh4.googleusercontent.com/-3HQ42PjgBfs/Tj97O_2VS6I/AAAAAAAABAc/EnrOPXrJxfE/s800/ElementAttribute.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTextPane editor1 = new JTextPane() {
   private transient Position.Bias[] bias = new Position.Bias[1];
   @Override public String getToolTipText(MouseEvent e) {
@@ -45,7 +45,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-08
 editor1.setEditorKit(new HTMLEditorKit());
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JEditorPane`で`HTMLEditorKit`を使った場合の`ToolTip`表示についてテストしています。`img`タグの`alt`属性は自動的に`ToolTip`表示され、リンクは`HyperlinkListener`を追加することで`ToolTip`を変更することができます。
 
 <pre class="prettyprint"><code>private final String htmlText =
@@ -97,9 +97,9 @@ editor1.setEditorKit(new HTMLEditorKit());
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JEditorPaneにリンクを追加](http://terai.xrea.jp/Swing/HyperlinkListener.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

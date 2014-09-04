@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-12
 
-## JButtonに9分割した画像を使用する
+## 概要
 `JButton`を拡大縮小しても四隅などのサイズが変更しないようにように`9`分割した画像を使用します。
 
 {% download https://lh5.googleusercontent.com/-yYRfTw-3_BU/UgaFQAAiUcI/AAAAAAAABx4/koHqjZ3o36Q/s800/NineSliceScalingButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class NineSliceScalingIcon implements Icon {
   private final BufferedImage image;
   private final int a, b, c, d;
@@ -69,7 +69,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-12
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BufferedImage#getSubimage`で元画像を`9`分割し、四隅はサイズ変更なし、上下辺は幅のみ拡大縮小、左右辺は高さのみ拡大縮小、中央は幅高さが拡大縮小可能になるよう、`Graphics#drawImage(...)`のスケーリングを利用して描画しています。
 
 - 四隅などの固定サイズ
@@ -80,10 +80,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-12
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Real World Illustrator: Understanding 9-Slice Scaling](http://rwillustrator.blogspot.jp/2007/04/understanding-9-slice-scaling.html)
     - テスト用の画像(`symbol_scale_2.jpg`)を拝借しています。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

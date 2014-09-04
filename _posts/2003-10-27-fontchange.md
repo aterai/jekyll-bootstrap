@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-27
 
-## UIManagerで使用するFontを統一
+## 概要
 `Swing`の各種コンポーネントで使用する全てのフォントを一気に変更します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNJ5XQrjI/AAAAAAAAAaU/lvxCohYLmBI/s800/FontChange.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private void updateFont(final Font font) {
   FontUIResource fontUIResource = new FontUIResource(font);
   for(java.util.Map.Entry&lt;?,?&gt; entry: UIManager.getDefaults().entrySet()) {
@@ -40,7 +40,7 @@ private void recursiveUpdateUI(JComponent p) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ツールバーのボタンでコンポーネントが使用するフォントを切り替えています。ただしツールバーだけは、`UI`の`update`(フォントの変更)を除外しています。
 
 全部のコンポーネントではなく、例えばテーブルのフォントだけ変更したい場合は以下のように設定します。
@@ -109,12 +109,12 @@ combo.setPrototypeDisplayValue(null); //null:default?
 };
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Re: setFont に関して](http://java-house.jp/ml/archive/j-h-b/049474.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JFileChooser`インスタンス化前に上記ソースを実行すると `ConcurrentModificationException`がスローされるのですが... 「`JDK1.4.2_02`」プロパティーが動的に変化するとしたらあまり有効な方法でないのでは? -- [MT](http://terai.xrea.jp/MT.html) 2003-12-24 (水) 14:22:15
 - 割と手軽なので重宝するのですが、ちゃんとスレッド処理考えたほうがいいのかもしれませんね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2003-12-25 (木) 20:06:15
 - レスありがとうございます _ _)m とりあえず `Container` を辿りながら含まれている `Component` 毎に `setFont` 呼ぶようなユーティリティ用意してしのいでいます＾＾； -- [MT](http://terai.xrea.jp/MT.html) 2003-12-26 (金) 16:20:14

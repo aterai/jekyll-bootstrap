@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-26
 
-## JTableのリサイズで最後のTableColumnのみリサイズする
+## 概要
 `JTable`がリサイズされた場合、最後にある`TableColumn`がその幅の変更を吸収するように設定します。主に、[java - JTable columns doesnt resize probably when JFrame resize - Stack Overflow](http://stackoverflow.com/questions/23201818/jtable-columns-doesnt-resize-probably-when-jframe-resize)の回答からソースを引用しています。
 
 {% download https://lh4.googleusercontent.com/-uhbVwRqsa2g/U4HyPhrI8PI/AAAAAAAACF8/OJXWaFVxavE/s800/ResizingColumnAndTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private final JTable table = new JTable(100, 3) {
   private transient ComponentListener resizeHandler;
   @Override public void updateUI() {
@@ -48,7 +48,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-26
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable#doLayout()`をオーバーライドして、`JFrame`がリサイズされた、`JTable`、`JTableHeader`もリサイズされたら、`JTableHeader.setResizingColumn(...)`で最後の`TableColumn`を設定し、幅の変更をすべて吸収するようにしています。
 
 - 注:
@@ -77,10 +77,10 @@ table2.getTableHeader().addComponentListener(new ComponentAdapter() {
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [java - JTable columns doesnt resize probably when JFrame resize - Stack Overflow](http://stackoverflow.com/questions/23201818/jtable-columns-doesnt-resize-probably-when-jframe-resize)
 - [java - JTable resize only selected column when container size changes - Stack Overflow](http://stackoverflow.com/questions/16368343/jtable-resize-only-selected-column-when-container-size-changes)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-14
 
-## JListを選択不可にする
+## 概要
 `JList`を選択出来ないように設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMI697_II/AAAAAAAAAYs/EhpPEXnw1bc/s800/EmptySelectionList.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>list2.setFocusable(false);
 list2.setSelectionModel(new DefaultListSelectionModel() {
   @Override public boolean isSelectedIndex(int index) {
@@ -37,7 +37,7 @@ class EmptySelectionRenderer implements ListCellRenderer {
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左
     - `JList#setEnabled(false)`で編集不可にしているため、選択も不可ですが、文字色が薄くなります。
 - 中
@@ -98,9 +98,9 @@ public class DisabledTextForegroundList {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JListの任意のItemを選択不可にする](http://terai.xrea.jp/Swing/DisabledItem.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

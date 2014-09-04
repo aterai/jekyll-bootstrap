@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
 
-## JScrollPaneのオートスクロール
+## 概要
 `JScrollPane`上でのマウスドラッグに応じてラベルをオートスクロールします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTH2GCzRoI/AAAAAAAAAR0/FR7seILhmaM/s800/AutoScroll.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ViewportDragScrollListener extends MouseAdapter
                                  implements HierarchyListener {
   private static final int SPEED = 4;
@@ -78,7 +78,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JViewport`内の画像ラベルをマウスでドラッグすると、その移動方向に応じて自動的にスクロールします。マウスをクリックすると停止します。
 
 `javax.swing.Timer`を使うことでスクロールの開始、継続、停止を行っています。
@@ -86,14 +86,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
 - - - -
 `JTextPane`で文字列を挿入したときに、最後まで自動スクロールしたい場合は、[JTextPaneで最終行に移動](http://terai.xrea.jp/Swing/CaretPosition.html)を参考にしてください。
 
-### 参考リンク
+## 参考リンク
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
 - [JTextPaneで最終行に移動](http://terai.xrea.jp/Swing/CaretPosition.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 猫の手スクロール風の動作に変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-24 (木) 19:16:16
 - ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ動作をするように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-12-22 (木) 18:38:02
 

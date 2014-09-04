@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-05
 
-## JListのセル上にToolTipを表示する
+## 概要
 `JList`のセル内に文字列が収まらない場合のみ、その上に`ToolTip`を重ねて表示します。
 
 {% download https://lh3.googleusercontent.com/-KLOWyeZG-zU/U2Zif591XkI/AAAAAAAACE0/JDZZwAWkY50/s800/ToolTipOnCellBounds.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TooltipList&lt;E&gt; extends JList&lt;E&gt; {
   public TooltipList(ListModel&lt;E&gt; m) {
     super(m);
@@ -42,7 +42,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-05
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `CellBounds`
     - `JList#getToolTipLocation()`をオーバーライドして、表示する`JToolTip`の原点を`JList#getCellBounds(int, int)`で取得したセル領域の左上に変更
 - 中: `ListCellRenderer`
@@ -74,9 +74,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-05
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JToolTipの表示位置](http://terai.xrea.jp/Swing/ToolTipLocation.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

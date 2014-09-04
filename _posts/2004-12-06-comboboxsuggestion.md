@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-06
 
-## JComboBoxで候補一覧を表示
+## 概要
 `JComboBox`に入力候補の一覧表示機能(補完機能、コードアシスト、コンテンツアシスト)を追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJwW_1EoI/AAAAAAAAAU4/ENqthfUJCsc/s800/ComboBoxSuggestion.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>String[] array = {
     "aaaa", "aaaabbb", "aaaabbbcc", "aaaabbbccddd",
     "abcde", "abefg", "bbb1", "bbb12"};
@@ -107,7 +107,7 @@ field.addKeyListener(new ComboKeyHandler(combo));
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、次のキー操作に対応しています。
 
 - <kbd>Up</kbd><kbd>Down</kbd>キー
@@ -154,7 +154,7 @@ JComboBox = new JComboBox(model) {
 };
 </code></pre>
 
-### コメント
+## コメント
 - 変換途中の日本語も、問題がないともっといいですね。 -- [toshi](http://terai.xrea.jp/toshi.html) 2006-04-24 (月) 13:45:06
     - あー、日本語のこと全然考えてなかったです…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-04-24 (月) 15:54:00
 - タイトルなどを変更するとしたら`AutoCompletion`に？ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-09 (水) 20:14:40

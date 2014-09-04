@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-26
 
-## JTableのセルエディタにJPopupMenuを設定
+## 概要
 `JTable`のセルエディタに、`Copy`、`Paste`、`Undo`、`Redo`などを行う`JPopupMenu`を設定します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIn7Rc6TI/AAAAAAAAATE/drRaDYiUB1w/s800/CellEditorPopupMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public static JPopupMenu installTextComponentPopupMenu(final JTextComponent tc) {
   final UndoManager manager = new UndoManager();
   final Action undoAction   = new UndoAction(manager);
@@ -75,7 +75,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-26
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTable`のセルエディタに、`Cut`、`Copy`、`Paste`、`Delete`、`Undo`、`Redo`を行う`JPopupMenu`を設定しています。
 
 - - - -
@@ -95,10 +95,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-26
 table.setDefaultEditor(Object.class, ce);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Java Swing「JTable」メモ(Hishidama's Swing-JTable Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JTable.html)
     - セルエディタだけではなく、行の追加、削除などを`Undo`、`Redo`するサンプルが参考になります。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

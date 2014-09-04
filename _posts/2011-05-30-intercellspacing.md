@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-30
 
-## JTableの罫線の有無とセルの内余白を変更
+## 概要
 `JTable`の罫線の表示非表示とセルの内余白を変更します。
 
 {% download https://lh3.googleusercontent.com/-zDg_KUxGwU4/TeNHkhhJYGI/AAAAAAAAA8M/G5R8rKLVzUg/s800/IntercellSpacing.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>add(new JCheckBox(new AbstractAction("setShowVerticalLines") {
   @Override public void actionPerformed(ActionEvent e) {
     Dimension d = table.getIntercellSpacing();
@@ -42,7 +42,7 @@ add(new JCheckBox(new AbstractAction("setShowHorizontalLines") {
 }));
 </code></pre>
 
-### 解説
+## 解説
 `JTable`の罫線を非表示にしてもセルの内余白が`0`でない場合、選択状態でその内余白が表示されるので、上記のサンプルでは、`JTable#setShowVerticalLines(boolean)`などと一緒に、`JTable#setIntercellSpacing(Dimension)`で余白を`0`に切り替えています。
 
 - 罫線
@@ -55,4 +55,4 @@ add(new JCheckBox(new AbstractAction("setShowHorizontalLines") {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

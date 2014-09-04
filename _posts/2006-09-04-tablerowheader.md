@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-04
 
-## JTableに行ヘッダを追加
+## 概要
 `JTable`に行ヘッダを追加を追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUk9YzW7I/AAAAAAAAAmQ/wjin9CuyfBg/s800/TableRowHeader.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RowHeaderList extends JList {
   private final JTable table;
   private final ListSelectionModel tableSelection;
@@ -62,7 +62,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-04
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JList`で作成した行ヘッダを`JScrollPane`に`setRowHeaderView`メソッドで追加しています。
 
 表の余白などに色がついているのは、テストの名残です。特に意味は無いのですが、そのまま残しています。
@@ -72,14 +72,14 @@ scrollPane.setBackground(Color.RED);
 scrollPane.getViewport().setBackground(Color.GREEN);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples1.html)
 - [Swing - excel styled table?](https://forums.oracle.com/thread/1395446)
 - [JListのセルをカーソル移動でロールオーバー](http://terai.xrea.jp/Swing/RollOverListener.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 不正なセルレンダラーを設定していたので修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-11-16 (木) 20:22:33
 - `excel`のように、行ヘッダをクリックしてその行が選択されたり、テーブルの本体にてセルをクリックしてそのセルだけが選択されたりすることはできますか？いろいろ試しましたが、なかなかできませんでした。 -- [javalover](http://terai.xrea.jp/javalover.html) 2008-03-11 (火) 09:52:12
     - セル選択は、`table.setCellSelectionEnabled(true);`で可能です。行ヘッダをクリックしてその行を選択することは、現在でも出来るような。もし、列のことなら、~~`JTableHeader`に以下のようなコードを書けばよさそうです。~~ [JTableHeaderをクリックしてそのColumnのセルを全選択](http://terai.xrea.jp/Swing/ColumnSelection.html)を参考にしてください。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-11 (火) 13:45:47

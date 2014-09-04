@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-26
 
-## JTextFieldに透かし画像を表示する
+## 概要
 `JTextField`の文字列が空でフォーカスがない場合、透かし画像を表示するように設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWh1Qjh4I/AAAAAAAAApY/bLarzjLy7-8/s800/WatermarkInTextField.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class WatermarkTextField extends JTextField implements FocusListener {
   private final ImageIcon image;
   private boolean showWatermark = true;
@@ -45,7 +45,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-26
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - [JTextFieldにフォーカスと文字列が無い場合の表示](http://terai.xrea.jp/Swing/GhostText.html)
 - 下
@@ -60,11 +60,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-26
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTextFieldにフォーカスと文字列が無い場合の表示](http://terai.xrea.jp/Swing/GhostText.html)
 - [JPasswordFieldにヒント文字列を描画する](http://terai.xrea.jp/Swing/InputHintPasswordField.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 

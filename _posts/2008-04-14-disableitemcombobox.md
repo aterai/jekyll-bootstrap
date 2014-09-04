@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
 
-## JComboBoxのアイテムを選択不可にする
+## 概要
 `JComboBox`のドロップダウンリストで、指定したアイテムを選択不可にします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLHzjDYpI/AAAAAAAAAXE/M4bkzWJetUI/s800/DisableItemComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DisableItemComboBox&lt;E&gt; extends JComboBox&lt;E&gt; {
   private final Set&lt;Integer&gt; disableIndexSet = new HashSet&lt;&gt;();
   private boolean isDisableIndex;
@@ -99,7 +99,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下の方法でドロップダウンリストの特定のアイテムを選択できないように設定しています。
 
 - 表示
@@ -113,9 +113,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JListの任意のItemを選択不可にする](http://terai.xrea.jp/Swing/DisabledItem.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

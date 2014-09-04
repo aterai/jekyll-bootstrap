@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
 
-## JTreeで条件に一致するノードを検索しハイライト
+## 概要
 `JTree`を検索し、`TreeCellRenderer`を使ってノードをハイライトします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWIqTzfbI/AAAAAAAAAow/n7eIy_ax-zY/s800/TreeNodeHighlightSearch.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HighlightTreeCellRenderer extends DefaultTreeCellRenderer {
   private static final Color rollOverRowColor = new Color(220, 240, 255);
   private final TreeCellRenderer renderer;
@@ -47,7 +47,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTextField`に入力した文字列に`startsWith(...)`で一致するノードをハイライトしています。デフォルトの`TreeCellRenderer`は、`isOpaque()==Boolean.FALSE`で、選択色は`DefaultTreeCellRenderer#paint(Graphics g)`で塗りつぶされる(ノードアイコンを除いて選択状態にするため？)ので、検索のハイライトの為にレンダラーを`setOpaque(true)`としてしまうと、マウスなどでノードを選択しても背景色が変更されません。このため、`DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、検索のハイライトはレンダラーを`setOpaque(true)`、ノードの選択は`setOpaque(false)`となるように設定しています。
 
 - - - -
@@ -89,7 +89,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
 - [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
 - [JTreeのノードをハイライト](http://terai.xrea.jp/Swing/RollOverTree.html)
@@ -99,4 +99,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

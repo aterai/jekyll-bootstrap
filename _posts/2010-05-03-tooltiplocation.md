@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03
 
-## JToolTipの表示位置
+## 概要
 `JToolTip`の表示位置がドラッグでマウスカーソルに追従するように設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent me) {
   JComponent c = (JComponent)me.getSource();
   Point p = me.getPoint();
@@ -35,7 +35,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左クリックしてドラッグ
     - `JWindow`に、`JToolTip`を追加して、`Window#setLocation()`で移動
 - 左クリック以外でドラッグ
@@ -43,9 +43,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JSliderのノブをドラッグ中にToolTipで値を表示](http://terai.xrea.jp/Swing/SliderToolTips.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

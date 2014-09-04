@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-04
 
-## JTreeのToolTipsを表示
+## 概要
 `JTree`のノードの`ToolTips`を表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWQe1RL2I/AAAAAAAAAo8/6HFqbUb3UZ8/s800/TreeToolTips.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//tree = new JTree();
 tree = new JTree() {
   @Override public String getToolTipText(MouseEvent e) {
@@ -31,7 +31,7 @@ tree = new JTree() {
 ToolTipManager.sharedInstance().registerComponent(tree);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTree#getToolTipText(MouseEvent)`をオーバーライドして`JToolTip`を表示しています。以下のようなセルレンダラーを使用する方法もあります。
 
 <pre class="prettyprint"><code>class MyTreeCellRenderer implements TreeCellRenderer {
@@ -56,4 +56,4 @@ ToolTipManager.sharedInstance().registerComponent(tree);
 //tree.setToolTipText("dummy");
 </code></pre>
 
-### コメント
+## コメント

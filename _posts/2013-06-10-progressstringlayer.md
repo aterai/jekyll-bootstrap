@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-10
 
-## JProgressBarの文字列をJLayerを使って表示する
+## 概要
 垂直`JProgressBar`の文字列を`JLayer`を使って横組で表示します。
 
 {% download https://lh4.googleusercontent.com/-ATDPf7XMEzg/UbTLqsulmsI/AAAAAAAABt0/_0ZOg11jmXk/s800/ProgressStringLayer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JLabel label = new JLabel("000/100");
 label.setBorder(BorderFactory.createEmptyBorder(4,4,4,4));
 LayerUI&lt;JProgressBar&gt; layerUI = new LayerUI&lt;JProgressBar&gt;() {
@@ -47,7 +47,7 @@ progressBar.setStringPainted(false);
 JComponent c = new JLayer&lt;JProgressBar&gt;(progressBar, layerUI);
 </code></pre>
 
-### 解説
+## 解説
 - 一番左
     - デフォルトの垂直`JProgressBar`
 - 左から二番目
@@ -62,10 +62,10 @@ JComponent c = new JLayer&lt;JProgressBar&gt;(progressBar, layerUI);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [java - Is it possible to save text horizontal in vertical JProgressbar - Stack Overflow](http://stackoverflow.com/questions/16934009/is-it-possible-to-save-text-horizontal-in-vertical-jprogressbar)
 - [JProgressBarの進捗文字列の字揃えを変更する](http://terai.xrea.jp/Swing/ProgressStringAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

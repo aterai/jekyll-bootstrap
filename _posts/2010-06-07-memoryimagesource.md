@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-07
 
-## MemoryImageSourceで配列から画像を生成
+## 概要
 マウスのドラッグに応じて線を描画、消しゴムで消去する機能を実装します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPu_OEqoI/AAAAAAAAAec/z6MobKhblfI/s800/MemoryImageSource.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>int[] pixels = new int[320 * 240];
 MemoryImageSource source = new MemoryImageSource(320, 240, pixels, 0, 320);
 int penc = 0x0;
@@ -62,7 +62,7 @@ int penc = 0x0;
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、左クリックでドラッグすると黒で、右クリックでドラッグすると透過色(`0xff000000`、消しゴム)で、自由曲線を描画することができます。
 `MemoryImageSource`に設定した画像の各ピクセルを表す`int`配列を、マウスのドラッグに応じて操作して`Image`を作成しています。
 
@@ -103,10 +103,10 @@ private BufferedImage backImage = null;
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JPanelにマウスで自由曲線を描画](http://terai.xrea.jp/Swing/PaintPanel.html)
 - [PixelGrabberで画像を配列として取得し編集、書出し](http://terai.xrea.jp/Swing/PixelGrabber.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

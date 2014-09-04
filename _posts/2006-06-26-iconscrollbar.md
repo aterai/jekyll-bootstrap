@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-26
 
-## ScrollBarの表示を変更
+## 概要
 `JScrollBar`のバー表示を変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOPy62F7I/AAAAAAAAAcE/M4J9GIXdfBY/s800/IconScrollBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>scrollPane.getVerticalScrollBar().setUI(new WindowsScrollBarUI() {
   @Override protected void paintThumb(Graphics g,
                             JComponent c, Rectangle thumbBounds) {
@@ -52,9 +52,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-26
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`WindowsScrollBarUI`を取得して、垂直スクロールバーに円状のアイコンを表示しています。このため`Windows`では、ドラッグしている状態、カーソルがバー上にあってロールオーバーしている状態、通常の状態でこのアイコンの色が変わります。
 
 スクロールバーの長さが足りない場合、アイコンの表示は行われません。
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-04
 
-## JWindowをデスクトップにスライドインで表示する
+## 概要
 `JOptionPane`を追加した`JWindow`を、スライドインアニメーションを使ってデスクトップ上に表示します。
 
 {% download https://lh4.googleusercontent.com/-axruZWDGZys/U98iB0eZi8I/AAAAAAAACK0/hh_jWt5nsi4/s800/SlideInNotificationWindow.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SlideInNotification implements PropertyChangeListener, HierarchyListener {
   private static final int DELAY = 5;
   private final JFrame frame;
@@ -99,7 +99,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-04
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`Window#setLocation(int, int)`メソッドを使用して`JOptionPane`を追加した`JWindow`のデスクトップ上での表示位置を変更し、画面右下からそれがスライドインしてくるように設定しています。
 
 - 注:
@@ -109,9 +109,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-04
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

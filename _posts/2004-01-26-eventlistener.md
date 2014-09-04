@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-26
 
-## EventListenerを実装して独自イベント作成
+## 概要
 イベント(イベントオブジェクト、イベントリスナー、イベントソース)を新たに作成し、これを使用します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMNwgwo5I/AAAAAAAAAY0/lpZGrcgRE8g/s800/EventListener.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>interface FontChangeListener extends EventListener{
   public void fontStateChanged(FontChangeEvent e);
 }
@@ -54,7 +54,7 @@ public void fireFontChangeEvent(String cmd, Font font) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルではメニューからのイベントでコンポーネントのフォントを変更しています。ラベルとボタンをリスナーとして追加しているので、`fireFontChangeEvent`でそれらのフォントサイズが変更されます。
 
 `Java`のイベントモデルは、`delegation event model`(委譲型のイベントモデル)です。[イベント](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/Event.html)などを参考にしてみてください。
@@ -92,14 +92,14 @@ protected void fireFontChangeEvent(String cmd, Font font) {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [イベント](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/Event.html)
 - [EventListenerList (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/event/EventListenerList.html)
 - [習慣の生き物 - Kazzzの日記](http://d.hatena.ne.jp/Kazzz/20080618/p1)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `EventListenerList`を使用する方法を追加、リンクを追加、整理。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-06-18 (水) 12:57:22
 
 <!-- dummy comment line for breaking list -->

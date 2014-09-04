@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-10
 
-## JToggleButtonからポップアップメニューを開く
+## 概要
 クリックするとポップアップメニューを表示する`JToggleButton`を作成し、これをツールバーに追加します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVg5xIBaI/AAAAAAAAAnw/ds2ybXI2lUE/s800/ToolButtonPopup.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MenuArrowIcon implements Icon {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
     Graphics2D g2 = (Graphics2D)g;
@@ -75,17 +75,17 @@ class MenuToggleButton extends JToggleButton {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JToggleButton`の右側に余白を設定して、そこに下向きの矢印を上書きしています。
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコン(矢印ではない)を利用しています。
 - [Swing - Swing bug? cannot set width of JToggleButton](https://forums.oracle.com/thread/1375327)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - いつもお世話になっております。`JToggleButton`を`On/Off`時、背景色を変える方法はありますか？`jToggleButton.setBackground(Color.RED);`で試してみましたが、色変化はありませんでした。ご教示、よろしくお願いいたします -- [Panda](http://terai.xrea.jp/Panda.html) 2011-04-04 (月) 14:23:21
 - こんばんは。`JToggleButton#setBackground(Color)`は、`LookAndFeel`によっては適用されない場合があります。このため、独自の`ToggleButtonUI`を用意したり、例えば以下のような方法を使用する必要があります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-04-04 (月) 17:15:55
     - 例`1`: 文字列から背景色、縁などのすべてを含めたアイコンを用意して`setSelectedIcon`で設定する

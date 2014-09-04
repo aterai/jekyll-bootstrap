@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-16
 
-## JTableで先頭文字のキー入力による検索を行う
+## 概要
 `JTable`にフォーカスがある状態でキー入力をした場合、先頭文字が一致する行を検索して選択状態にします。
 
 {% download https://lh4.googleusercontent.com/-UATkJ0JfmBQ/T4u5j_rhkGI/AAAAAAAABLc/1rVNsbM9D98/s800/TableNextMatchKeyHandler.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//@see javax/swing/plaf/basic/BasicListUI.Handler
 //@see javax/swing/plaf/basic/BasicTreeUI.Handler
 class TableNextMatchKeyHandler extends KeyAdapter{
@@ -123,7 +123,7 @@ class TableNextMatchKeyHandler extends KeyAdapter{
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、キー入力と`0`列目の文字列の先頭文字が一致(大文字小文字は無視)する行を検索、選択し、そこまでスクロールします。
 検索方法は、`BasicListUI.Handler`、`BasicTreeUI.Handler`、`JList#getNextMatch(...)`、`JTree#getNextMatch(...)`のものと、ほぼ同じ(<kbd>Shift</kbd>キーを同時に押すと逆検索を追加)です。
 
@@ -133,4 +133,4 @@ class TableNextMatchKeyHandler extends KeyAdapter{
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

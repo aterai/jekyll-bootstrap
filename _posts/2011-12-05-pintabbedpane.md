@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-05
 
-## JTabbedPaneのタブを固定する
+## 概要
 `JTabbedPane`に`JPopupMenu`を追加して、指定したタブのタイトルと位置を変更し、タブの固定を行います。
 
 {% download https://lh4.googleusercontent.com/-QqKPFV0ZzIc/TttWYFUshII/AAAAAAAABFk/6HcCBI_bg-0/s800/PinTabbedPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JCheckBoxMenuItem pinTabMenuItem = new JCheckBoxMenuItem(new AbstractAction("pin tab") {
   @Override public void actionPerformed(ActionEvent e) {
     JTabbedPane t = (JTabbedPane)getInvoker();
@@ -50,7 +50,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-05
 });
 </code></pre>
 
-### 解説
+## 解説
 - タブを固定
     - タブタイトルを空にする
     - タブの位置を左側に移動
@@ -63,9 +63,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-05
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

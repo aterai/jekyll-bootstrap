@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-10
 
-## JTabbedPaneのタブ文字列をハイライト
+## 概要
 `JTabbedPane`のタブ上に、マウスカーソルがある場合、その文字色を変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU7QqLieI/AAAAAAAAAm0/dgW3rio-pzA/s800/TabTitleHighlight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>jtp.addMouseMotionListener(new MouseMotionAdapter() {
   @Override public void mouseMoved(MouseEvent e) {
     JTabbedPane source = (JTabbedPane)e.getSource();
@@ -28,14 +28,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-10
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTabbedPane`に`MouseMotionListener`を追加し、`JTabbedPane#indexAtLocation`メソッドで、マウスカーソルの下にあるタブを取得しています。
 
 `GTKLookAndFeel`(`Ubuntu`+`GNOME`+`jdk1.6.0_03`)などでは、タブの文字色を変更出来ないようです。
 
-### 参考リンク
+## 参考リンク
 - [JTabbedPaneの選択文字色を変更](http://terai.xrea.jp/Swing/ColorTab.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

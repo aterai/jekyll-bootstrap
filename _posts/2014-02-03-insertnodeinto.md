@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-03
 
-## JTreeへのノード追加をテスト
+## 概要
 JTreeにノード追加をした場合、兄弟ノードの展開状態などがどうなるかをテストします。
 
 {% download https://lh3.googleusercontent.com/-siBaGX1oXx8/Uu8JPWZaA7I/AAAAAAAAB_Y/fzV1VSKYg9I/s800/InsertNodeInto.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>DefaultTreeModel model1 = (DefaultTreeModel)tree1.getModel();
 DefaultMutableTreeNode parent1 = (DefaultMutableTreeNode)model1.getRoot();
 DefaultMutableTreeNode child1  = new DefaultMutableTreeNode(date);
@@ -30,7 +30,7 @@ model2.insertNodeInto(child2, parent2, parent2.getChildCount());
 tree2.scrollPathToVisible(new TreePath(child2.getPath()));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`add`ボタンをクリックすると、左右の`JTree`のルートノードが持つ子の末尾に新規ノードを追加しています。
 
 - 左: `p.add(c) & m.reload(p)`
@@ -44,7 +44,7 @@ tree2.scrollPathToVisible(new TreePath(child2.getPath()));
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノード追加、削除](http://terai.xrea.jp/Swing/AddNode.html)
     - ポップアップメニューで任意の位置にノードを追加
 - [JScrollPane内にあるJTableなどで追加した行が可視化されるようにスクロールする](http://terai.xrea.jp/Swing/ScrollRectToVisible.html)
@@ -52,4 +52,4 @@ tree2.scrollPathToVisible(new TreePath(child2.getPath()));
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

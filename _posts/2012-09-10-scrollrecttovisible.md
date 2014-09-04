@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-10
 
-## JScrollPane内にあるJTableなどで追加した行が可視化されるようにスクロールする
+## 概要
 `JScrollPane`の`JViewport`内にある`JTable`、`JList`、`JTree`で、それぞれ追加された最終行が可視化されるようにスクロールします。
 
 {% download https://lh3.googleusercontent.com/-t_4BD1mGUGk/UE1eF0Ead3I/AAAAAAAABSM/4a4aPSpMDM4/s800/ScrollRectToVisible.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>model.addRow(new Object[] {date.toString(), model.getRowCount(), false});
 int i = table.convertRowIndexToView(model.getRowCount()-1);
 Rectangle r = table.getCellRect(i, 0, true);
 table.scrollRectToVisible(r);
 </code></pre>
 
-### 解説
+## 解説
 - `JTable`
     - 追加した行の`0`列目のセル領域を取得して、`scrollRectToVisible`で可視化
     - ソートやフィルタが使用されている場合を考慮して、追加した行のインデックスを`JTable#convertRowIndexToView(int)`で変換してから、セル領域を取得
@@ -58,7 +58,7 @@ tree.scrollPathToVisible(new TreePath(newChild.getPath()));
 //*/
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
     - `JComponent#scrollRectToVisible(...)`を使用してスクロール
 - [JTextPaneで最終行に移動](http://terai.xrea.jp/Swing/CaretPosition.html)
@@ -66,4 +66,4 @@ tree.scrollPathToVisible(new TreePath(newChild.getPath()));
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

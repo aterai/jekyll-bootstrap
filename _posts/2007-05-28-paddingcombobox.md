@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-28
 
-## JComboBoxの内余白
+## 概要
 `JComboBox`のエディタなどに内余白を設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>static Border padding = BorderFactory.createEmptyBorder(0,5,0,0);
 //...
 DefaultComboBoxModel&lt;String&gt; model = new DefaultComboBoxModel&lt;&gt;();
@@ -45,7 +45,7 @@ JComboBox&lt;String&gt; combo = new JComboBox&lt;String&gt;(model) {
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JComboBox`に、`Border`(`EmptyBorder`と`MatteBorder`を切り替え可能)を設定した`ListCellRenderer`を設定して、ドロップダウンリストの左余白をすこし広げています。`JComboBox`が編集不可の場合、エディタ部分もこの余白が自動的に適用されます。
 
 - `0`:編集不可
@@ -125,13 +125,13 @@ UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0,5,0,0))
 
 コードは、[JComboBoxのBorderを変更する](http://terai.xrea.jp/Swing/ComboBoxBorder.html)に移動。
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxにアイコンを表示](http://terai.xrea.jp/Swing/IconComboBox.html)
 - [Bug ID: 4515838 Can't change the border of a JComboBox](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4515838)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ~~なんだか、よく分からなくなってきましたorz。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-11 (火) 21:38:58
     - `JDK 1.6.0_10-beta-b22`で、`BasicComboBoxUI`の`padding`にすこし修正が入っている？ようです。
 - `LookAndFeel`の切り替えなどを追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-02 (水) 20:08:01

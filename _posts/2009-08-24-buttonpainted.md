@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-24
 
-## JButtonの描画
+## 概要
 `JButton`の状態描画をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIWYXt9eI/AAAAAAAAASo/se2OKkQA83U/s800/ButtonPainted.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>java.util.List&lt;JCheckBox&gt; clist = Arrays.asList(
   new JCheckBox(new AbstractAction("setFocusPainted") {
     @Override public void actionPerformed(ActionEvent e) {
@@ -48,7 +48,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-24
 );
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JButton`の状態(例えばフォーカスの有無を描画するか？など)をテストします。これらは`Look & Feel`によって効果が異なる場合があるようです。
 
 - [setFocusPainted](http://docs.oracle.com/javase/jp/6/api/javax/swing/AbstractButton.html#setFocusPainted%28boolean%29)
@@ -58,4 +58,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-24
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

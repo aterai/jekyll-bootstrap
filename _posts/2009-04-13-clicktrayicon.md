@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-13
 
-## TrayIconのダブルクリック
+## 概要
 `TrayIcon`をダブルクリックした場合フレームを表示、シングルクリックした場合はフレームを前面に表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>Image image = new BufferedImage(16,16,BufferedImage.TYPE_INT_ARGB);
 new StarIcon().paintIcon(null, image.getGraphics(), 0, 0);
 final SystemTray tray = SystemTray.getSystemTray();
@@ -56,7 +56,7 @@ try{
 }
 </code></pre>
 
-### 解説
+## 解説
 `TrayIcon`にマウスリスナーを追加してマウスでダブルクリックした場合の動作を変更します。
 
 - 左ボタンをダブルクリック
@@ -77,10 +77,10 @@ try{
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [SystemTrayにアイコンを表示](http://terai.xrea.jp/Swing/SystemTray.html)
 - [TrayIconのアニメーション](http://terai.xrea.jp/Swing/AnimatedTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

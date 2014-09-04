@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-11
 
-## JTextFieldを編集不可のJTextPaneに追加する
+## 概要
 `JTextField`を空欄として編集不可にした`JTextPane`に追加します。
 
 {% download https://lh4.googleusercontent.com/-N1aQ1F9Zrn8/UReetdvfWQI/AAAAAAAABdc/9J_2lkAgW0Y/s800/TextFieldOnReadOnlyTextPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>void insertQuestion(final JTextPane textPane, String str) {
   Document doc = textPane.getDocument();
   try{
@@ -57,7 +57,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-11
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、編集不可にした`JTextPane`内の文字列中に、編集可能な空欄として`JTextField`を追加(`JTextPane#insertComponent(...)`を使用)しています。
 
 - `JTextPane`
@@ -73,4 +73,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-11
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

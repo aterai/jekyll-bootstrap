@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-23
 
-## JToolBarでアイコンボタンを右寄せ
+## 概要
 `JToolBar`でアイコンボタンを右寄せ、下寄せで表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVb-HPZjI/AAAAAAAAAno/dMILsHzlipk/s800/ToolBarLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>String path = "/toolbarButtonGraphics/general/";
 URL url1 = getClass().getResource(path+"Copy24.gif");
 URL url2 = getClass().getResource(path+"Cut24.gif");
@@ -32,7 +32,7 @@ toolbar.add(createToolbarButton(url3));
 }
 </code></pre>
 
-### 解説
+## 解説
 `JToolBar`や`JMenuBar`のデフォルトレイアウトは`BoxLayout`なので、`Box.createGlue`を間に挟むことでボタンやメニューの右寄せが可能です。
 
 ボタンとボタンの間隔を固定値で空けたい場合は、`Box.createRigidArea`を使用します。`Box.createHorizontalStrut`や`Box.createVerticalStrut`を使うとツールバーが水平垂直に切り替わった時に、余計な余白が出来てしまうことがあります。
@@ -51,14 +51,14 @@ toolbar.add(createToolbarButton(url3));
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Java look and feel Graphics Repository](http://web.archive.org/web/20120818143859/http://java.sun.com/developer/techDocs/hi/repository/)
 - [Swing - Buttons like Netbeans'](https://forums.oracle.com/thread/1365522)
 - [Customizing Menu Layout - How to Use Menus (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html#custom)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 環境によって、上記のサンプルが右寄せにならない場合もあるようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-22 (水) 15:58:10
 - `setRequestFocusEnabled(false)`、スクリーンショット更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-27 (月) 15:20:38
 

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-08
 
-## MouseWheelを使った値の増減
+## 概要
 `JSpinner`や`JSlider`の値をマウスホイールを使って変更します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQH9EVaHI/AAAAAAAAAfE/Dv-UnuISmXM/s800/MouseWheel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>spinner.addMouseWheelListener(new MouseWheelListener() {
   @Override public void mouseWheelMoved(MouseWheelEvent e) {
     JSpinner source = (JSpinner)e.getSource();
@@ -32,7 +32,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-08
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JSpinner`や`JSlider`上でマウスホイールを回転させると値が変化します。`e.getWheelRotation()`の値は、ホイールの回転が下方向の場合は増加、上方向は減少になります。
 
-### コメント
+## コメント

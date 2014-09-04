@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-16
 
-## JTableでキー入力によるセル編集開始を禁止する
+## 概要
 キー入力やマウスクリックによる`JTable`のセル編集開始を禁止します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRLZXQW1I/AAAAAAAAAgw/ufR0d0md6Bc/s800/PreventStartCellEditing.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);
 </code></pre>
 <pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor)table.getDefaultEditor(Object.class);
 ce.setClickCountToStart(Integer.MAX_VALUE);
 </code></pre>
 
-### 解説
+## 解説
 - `default`
     - `0`列目だけ、編集禁止です。
 
@@ -48,7 +48,7 @@ ce.setClickCountToStart(Integer.MAX_VALUE);
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [片っ端から忘れていけばいいじゃない。  JTableで、セル上でキータイプされただけでは編集を開始しないようにする。JTable.autoStartsEdit](http://0xc000013a.blog96.fc2.com/blog-entry-19.html)
 - [TIPs JTable - Space Of Mind - Confluence](http://www.stateofmind.fr/confluence/display/java/TIPs+JTable)
 - [JTableのセルを編集不可にする](http://terai.xrea.jp/Swing/CellEditor.html)
@@ -56,4 +56,4 @@ ce.setClickCountToStart(Integer.MAX_VALUE);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

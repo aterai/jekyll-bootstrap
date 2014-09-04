@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-17
 
-## JTreeのノードの文字列に余白を追加
+## 概要
 `JTree`のノードにある文字列の左右に余白を追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWBZNFbLI/AAAAAAAAAok/8_0YqLhhqTk/s800/TreeCellMargin.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MyTreeCellRenderer2 extends DefaultTreeCellRenderer {
   private final JPanel p = new JPanel(new BorderLayout());
   private final JLabel icon = new JLabel();
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-17
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左
     - `Default`
 - 中
@@ -76,4 +76,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-17
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

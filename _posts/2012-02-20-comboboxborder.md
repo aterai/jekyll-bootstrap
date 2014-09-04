@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-20
 
-## JComboBoxのBorderを変更する
+## 概要
 `JComboBox`の表示部分、矢印ボタン、ドロップダウンリストの`Border`や色を変更します。
 
 {% download https://lh3.googleusercontent.com/-jHpgdiBwt6s/T0H3deyce_I/AAAAAAAABJY/_3k6-paq4lM/s800/ComboBoxBorder.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//ComboBox.border
 UIManager.put("ComboBox.border", BorderFactory.createLineBorder(Color.WHITE));
 
@@ -36,7 +36,7 @@ Object o = combo.getAccessibleContext().getAccessibleChild(0);
 ((JComponent)o).setBorder(BorderFactory.createMatteBorder(0,1,1,1,Color.WHITE));
 </code></pre>
 
-### 解説
+## 解説
 - 上: `MetalComboBoxUI`
     - `UIManager.put("ComboBox.border", border)`などで、`Border`を変更しているが、これとは別に、`UI`で独自に余白？が描画される
     - `MetalComboBoxUI`独自の余白を消す場合は、`MetalTheme`を変更して`MetalLookAndFeel.getControlShadow()`を同色にするか、`MetalComboBoxUI#paintCurrentValueBackground(...)`をオーバーライドする必要がある
@@ -219,10 +219,10 @@ public class ComboBoxUIDemo {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](http://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox)
 - [JComboBoxの内余白](http://terai.xrea.jp/Swing/PaddingComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

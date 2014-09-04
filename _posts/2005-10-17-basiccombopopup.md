@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-17
 
-## JComboBoxを使ってポップアップメニューをスクロール
+## 概要
 `JComboBox`を使ってスクロール可能なポップアップメニューを表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH_tpIbsI/AAAAAAAAASE/DrHgihVbnn0/s800/BasicComboPopup.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JComboBox combo = new JComboBox(strArray);
 BasicComboPopup popup = new BasicComboPopup(combo) {
   @Override public boolean isFocusable() {
@@ -45,7 +45,7 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、<kbd>Shift+Tab</kbd>でポップアップメニューが表示され、<kbd>Up</kbd>, <kbd>Down</kbd>キーで移動、<kbd>Enter</kbd>で`JTextPane`のカーソルの後に選択された文字列が入力されます。
 
 `JComboBox`のポップアップ部分の`UI`を表現する`BasicComboPopup`を利用することで、スクロールバーをもつポップアップメニューを実現しています。
@@ -79,12 +79,12 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - Scrollable PopupMenu](https://forums.oracle.com/thread/1367473)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 大変参考になりました。その上、マウスクリックで文字列を選定できるようにしたいですが、どうすればいかがですか？ -- [java](http://terai.xrea.jp/java.html) 2008-01-08 (火) 16:25:30
     - どうもです。とりあえず(以前は、マウスクリックでも動作していたと思うのですが、勘違いだったのかも…？)、手抜きですが、`BasicComboPopup#installListListeners`メソッドをオーバーライドしてマウスリスナーを追加してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-08 (火) 18:23:22
 - 助かりました！感動です！ご回答ありがとうございました。 -- [java](http://terai.xrea.jp/java.html) 2008-01-10 (木) 17:38:04

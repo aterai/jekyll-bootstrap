@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23
 
-## Menuに半透明の影を付ける
+## 概要
 メニューに半透明の影を付けます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPz0ZEG6I/AAAAAAAAAek/pd0ErBB9eBg/s800/MenuWithShadow.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>public class CustomPopupMenuUI extends BasicPopupMenuUI {
   public static ComponentUI createUI(JComponent c) {
     return new CustomPopupMenuUI();
@@ -45,7 +45,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`BasicPopupMenuUI`を継承した、`CustomPopupMenuUI`を作成して、これを`UIManager`に登録しています。
 
 <pre class="prettyprint"><code>UIManager.put("PopupMenuUI","example.CustomPopupMenuUI");
@@ -65,7 +65,7 @@ contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 - - - -
 `Web Start`で起動してフレームの外側にメニューが表示される場合は、`java.security.AccessControlException: access denied (java.awt.AWTPermission createRobot)`が発生します。
 
-### 参考リンク
+## 参考リンク
 - [Java Swing Hacks #11 ドロップシャドウ付きのメニューを作る](http://www.oreilly.co.jp/books/4873112788/toc.html)
 - [substance: Substance Java look and feel - main page](https://substance.dev.java.net/)
     - contrib.com.jgoodies.looks.common.ShadowPopupFactory
@@ -73,7 +73,7 @@ contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ポップアップメニューがフレーム内にあるかどうかではなく、`HeavyWeightContainer`かどうかで影のつけ方を切り替えるように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-29 (木) 16:13:30
 
 <!-- dummy comment line for breaking list -->

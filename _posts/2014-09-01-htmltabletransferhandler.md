@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-01
 
-## JTableのHTML形式コピーをカスタマイズする
+## 概要
 `JTable`のセルを選択してクリップボードに`HTML`テキストをコピーするとき、そのセルのクラスに応じて生成するタグを変更します。
 
 {% download https://lh5.googleusercontent.com/-VsQ_pmP_GKM/VAM3IR6IvyI/AAAAAAAACMI/97dngpaAQn8/s800/HtmlTableTransferHandler.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HtmlTableTransferHandler extends TransferHandler {
   //@see javax/swing/plaf/basic/
   //     BasicTableUI.TableTransferHandler#createTransferable(JComponent)
@@ -100,7 +100,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-01
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上: デフォルトの`BasicTableUI.TableTransferHandler`を使用
 - 下: `HtmlTableTransferHandler`を設定
     - `TransferHandler#createTransferable(JComponent)`をオーバーライドしてクリップボードに渡す`text/html`なテキストを独自に作成(`text/plain`は`BasicTableUI.TableTransferHandler`のコピーをそのまま使用)
@@ -111,10 +111,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-01
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
 - [JTableでプロパティ一覧表を作成する](http://terai.xrea.jp/Swing/PropertyTable.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

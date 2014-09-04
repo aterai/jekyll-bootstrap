@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-11
 
-## JTextFieldの背景色を半透明にする
+## 概要
 `JTextField`の背景色を半透明にします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>Color BG_COLOR = new Color(1f,.8f,.8f,.2f);
 
 field0 = new JTextField("aaaaaaaaa");
@@ -37,7 +37,7 @@ field2.setOpaque(false);
 field2.setBackground(BG_COLOR);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、それぞれアルファ値を使った背景色を`JTextField`に設定しています。
 
 - 上: `field0`
@@ -66,10 +66,10 @@ field2.setBackground(BG_COLOR);
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTV55zD1gI/AAAAAAAAAoY/0PCTmGDb2AA/s800/TranslucentTextField2.png)
 
-### 参考リンク
+## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
     - 名物裂から雲鶴をサンプルの壁紙として拝借しています。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

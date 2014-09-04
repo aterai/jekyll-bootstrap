@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28
 
-## JLayerで子コンポーネントへの入力を制限する
+## 概要
 `JLayer`を使って、子コンポーネントへのすべての入力を制限します。
 
 {% download https://lh5.googleusercontent.com/-Svne2X0djJ8/TtJGGlPU-OI/AAAAAAAABFM/xjZfqHHbkJ0/s800/PopupMenuBlockLayer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DisableInputLayerUI extends LayerUI&lt;JComponent&gt; {
   private static final MouseAdapter dummyMouseListener = new MouseAdapter() {};
   private boolean isBlocking = false;
@@ -52,7 +52,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JLayer`を使って、`JScrollPane(JScrollBar)`のスクロール、`JTable`のセル選択、`JToolTip`、`JTableHeader`の移動など、子コンポーネントへのすべての入力をまとめて制限しています。
 
 - [JScrollPaneのスクロールを禁止](http://terai.xrea.jp/Swing/DisableScrolling.html)のように、`JScrollPane`、`JTable`などを個別に入力禁止にする必要がない
@@ -62,14 +62,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JLayerで指定したコンポーネントへの入力を禁止](http://terai.xrea.jp/Swing/DisableInputLayer.html)
 - [JScrollPaneのスクロールを禁止](http://terai.xrea.jp/Swing/DisableScrolling.html)
 - [Cursorを砂時計に変更](http://terai.xrea.jp/Swing/WaitCursor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - また`src.zip`などを上げ忘れていたので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-11-29 (火) 17:16:11
 
 <!-- dummy comment line for breaking list -->

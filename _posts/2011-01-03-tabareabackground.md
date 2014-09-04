@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-03
 
-## JTabbedPaneのタブエリア背景色などをテスト
+## 概要
 `MetalLookAndFeel`の`JTabbedPane`で、タブエリアの背景色などを変更するテストをしています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TSFbcaeJLEI/AAAAAAAAAw0/zQFscoerEGk/s800/TabAreaBackground.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("TabbedPane.shadow",                Color.GRAY);
 UIManager.put("TabbedPane.darkShadow",            Color.GRAY);
 UIManager.put("TabbedPane.light",                 Color.GRAY);
@@ -31,7 +31,7 @@ UIManager.put("TabbedPane.selectHighlight",       Color.WHITE);
 UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JPanel`タブの`JCheckBox`で`JTabbedPane`を不透明にしたり、`JComboBox`でキーを指定し、`UIManager.put("TabbedPane.unselectedBackground",  Color.GREEN);`などとして色を変更することができます。
 
 - - - -
@@ -42,4 +42,4 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

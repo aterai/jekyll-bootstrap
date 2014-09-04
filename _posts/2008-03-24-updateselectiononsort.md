@@ -10,16 +10,16 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-24
 
-## JTableをソートした後の選択状態
+## 概要
 `JDK 1.6`で導入された`RowSorter`を使って、`JTable`をソートした場合、直前の選択状態がどう変化するかテストします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWaXC_E3I/AAAAAAAAApM/H9h2pJw-VSQ/s800/UpdateSelectionOnSort.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>table.setUpdateSelectionOnSort(true);
 </code></pre>
 
-### 解説
+## 解説
 - `UpdateSelectionOnSort`
     - ソート後の選択状態は、`JTable#setUpdateSelectionOnSort`メソッドで切り替えることが出来ます。
     - `setUpdateSelectionOnSort(true)`
@@ -47,4 +47,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-24
 });
 </code></pre>
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-31
 
-## JInternalFrameをJFrameとして表示する
+## 概要
 `JFrame`のタイトルバーなどを非表示にし、`JInternalFrame`のタイトルバーでこれらを代用します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOo9LcVwI/AAAAAAAAAcs/fUEpKhXr_aI/s800/InternalFrameTitleBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JInternalFrame internal = new JInternalFrame("@title@");
 BasicInternalFrameUI ui = (BasicInternalFrameUI)internal.getUI();
 Component title = ui.getNorthPane();
@@ -53,7 +53,7 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JInternalFrame`のタイトルバーを使用することで、タイトルバーに閉じるボタンのないフレームを作成しています。
 
 - `JFrame#setUndecorated(true)`で、`JFrame`のタイトルバーなどを非表示
@@ -72,14 +72,14 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JWindowをマウスで移動](http://terai.xrea.jp/Swing/DragWindow.html)
 - [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](http://terai.xrea.jp/Swing/CustomDecoratedFrame.html)
 - [JRootPaneにリサイズのための装飾を設定する](http://terai.xrea.jp/Swing/WindowDecorationStyle.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JFrame`のアクティブ状態が変わったら、`JInternalFrame`の選択状態も変化するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-13 (金) 14:57:18
 - リサイズ可能？にする場合のテスト。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-10 (木) 15:07:18
     - [JRootPaneにリサイズのための装飾を設定する](http://terai.xrea.jp/Swing/WindowDecorationStyle.html)に移動。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-17 (月) 02:29:47

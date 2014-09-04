@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 
-## Windowを開いたときのフォーカスを指定
+## 概要
 `JFrame`や`JDialog`などの`Window`を開いたときに、デフォルトでフォーカスを持つコンポーネントを指定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKp09XXEI/AAAAAAAAAWU/p3YhSijyS90/s800/DefaultFocus.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>EventQueue.invokeLater(new Runnable() {
   @Override public void run() {
     field.requestFocusInWindow();
@@ -23,7 +23,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTextField`がデフォルトのフォーカスを持つように、`JComponent#requestFocusInWindow()`メソッドを使用しています。
 
 `JComponent#requestFocusInWindow()`メソッドは、チュートリアル([How to Use the Focus Subsystem](http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html))にあるように、`JFrame#pack()`、もしくは`JFrame#setSize(...)`などでリサイズされた後(フォーカスを取得するコンポーネントのサイズが決まった後)で実行する必要があります。このため、このサンプルでは`EventQueue.invokeLater(...)`を使って、待ち状態のすべてのイベントが処理された一番後で実行するようにしています。
@@ -84,14 +84,14 @@ kfm.addPropertyChangeListener(new PropertyChangeListener() {
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Focusの移動](http://terai.xrea.jp/Swing/FocusTraversal.html)
 - [Swing - When does requestFocusInWindow() fail](https://forums.oracle.com/thread/1367389)
 - [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JFrame#getRootPane()#setDefaultButton()`は使用方法がよくわからない… -- [aterai](http://terai.xrea.jp/aterai.html)
 - `setDefaultButton`って、<kbd>Enter</kbd>したときに押されたとみなすボタンだったかな…… --  2004-10-14 (木) 23:21:53
     - ありがとうございます。おかげでようやく理解できました。`JTextField`などにフォーカスがある状態で<kbd>Enter</kbd>キーを入力すると`setDefaultButton`したボタンが押されるのですね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2004-10-18 (月) 12:14:15

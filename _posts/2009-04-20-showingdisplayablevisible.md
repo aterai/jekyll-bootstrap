@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-20
 
-## JComponentの表示状態
+## 概要
 `JComponent`の表示状態をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS-a1ZnQI/AAAAAAAAAjo/jB4n-1WmEIs/s800/ShowingDisplayableVisible.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>button.addHierarchyListener(new HierarchyListener() {
   @Override public void hierarchyChanged(HierarchyEvent e) {
     if((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED)!=0) {
@@ -27,7 +27,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-20
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、コンポーネント(`JButton`)に`HierarchyListener`を追加して、表示状態が切り替わった時の`isDisplayable`、`isShowing`、`isVisible`を調べています。
 
 - 開始時: `HierarchyEvent.DISPLAYABILITY_CHANGED`
@@ -65,4 +65,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-20
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

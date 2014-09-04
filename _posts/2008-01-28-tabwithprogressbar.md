@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-28
 
-## JTabbedPaneのタブにJProgressBarを表示
+## 概要
 `JTabbedPane`のタブに`JProgressBar`を配置して、進捗を表示します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVHzMYZuI/AAAAAAAAAnI/7G4e4YZbiAQ/s800/TabWithProgressBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private final Executor executor = Executors.newCachedThreadPool();
 public void addTab(String title, final Component content) {
   super.addTab(title, new JLabel("Loading..."));
@@ -55,7 +55,7 @@ public void addTab(String title, final Component content) {
 }
 </code></pre>
 
-### 解説
+## 解説
 `JDK 6`で追加された以下の機能を使用しています。
 
 - `SwingWorker`
@@ -63,10 +63,10 @@ public void addTab(String title, final Component content) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
 - [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

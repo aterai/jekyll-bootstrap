@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-10
 
-## JTableの列固定とソート
+## 概要
 列固定した`JTable`で、`JDK 6`で導入された`TableRowSorter`を使った行ソートを行います。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMzes1hqI/AAAAAAAAAZw/-m-PZSFzYAk/s800/FixedColumnTableSorting.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>fixedTable = new JTable(model);
 table      = new JTable(model);
 fixedTable.setSelectionModel(table.getSelectionModel());
@@ -62,7 +62,7 @@ scroll.getRowHeader().addChangeListener(new ChangeListener() {
 add(scroll);
 </code></pre>
 
-### 解説
+## 解説
 左の固定テーブル(`fixedTable`)と、右のテーブル(`table`)に同じ`RowSorter`を設定することで、列固定表でもソートできるようにしています。
 ただし、上記のサンプルでは、ソート中に行の追加を行うと例外が発生するので、追加の前に`sorter.setSortKeys(null);`で`SortKeys`をクリアしています。
 
@@ -102,13 +102,13 @@ add(scroll);
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [FixedColumnExample.java](http://www.google.com/search?q=FixedColumnExample.java)
 - [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - <kbd>Tab</kbd>キーによるフォーカスの移動は…、まぁいいかな。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-10 (月) 14:26:25
 - 固定列は、数字でソートするように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-10 (月) 15:27:19
 - どちらか片方の`JTable`を `setUpdateSelectionOnSort(false);`としてソート後、選択状態がおかしくならないように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-10-23 (土) 03:13:02

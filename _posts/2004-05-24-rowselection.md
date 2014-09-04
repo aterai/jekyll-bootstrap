@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-24
 
-## JTableで行を選択
+## 概要
 `JTable`で、行を選択した場合の動作をテストします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSWRoWNRI/AAAAAAAAAio/X-jqAVKs3Bw/s800/RowSelection.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>table = new JTable(model);
 table.setAutoCreateRowSorter(true);
 table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
@@ -34,12 +34,12 @@ private String getInfo() {
 }
 </code></pre>
 
-### 解説
+## 解説
 マウス、カーソルキー、<kbd>Tab</kbd>キーでの選択状態の変更に対応するために、`JTable`に`MouseListener`リスナーを設定するのではなく、`JTable#getSelectionModel`メソッドで`ListSelectionModel`を参照し、このモデルに`ListSelectionListener`リスナーを追加して利用します。
 
 `ListSelectionEvent#getValueIsAdjusting()`メソッドでイベントが重複処理を起こさないように制御しています。
 
-### コメント
+## コメント
 - ありがとう。助かります。 -- [ごん](http://terai.xrea.jp/ごん.html) 2009-10-16 (金) 19:37:37
     - どうもです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-17 (土) 00:09:01
 - どうもです。  -- [ごん?](http://terai.xrea.jp/ごん?.html) 2011-08-02 (火) 15:31:26

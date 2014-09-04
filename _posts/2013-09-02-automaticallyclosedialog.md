@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02
 
-## JOptionPaneを自動的に閉じる
+## 概要
 `JOptionPane`にカウントダウンと自動クローズを行うための`JLabel`を追加します。
 
 {% download https://lh6.googleusercontent.com/-NvrpIdRXy8M/UiMOJmS8OMI/AAAAAAAABzg/6QK49B0s-NE/s800/AutomaticallyCloseDialog.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>label.addHierarchyListener(new HierarchyListener() {
   private Timer timer = null;
   private AtomicInteger atomicDown = new AtomicInteger(SECONDS);
@@ -57,7 +57,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02
 });
 </code></pre>
 
-### 解説
+## 解説
 - `java.awt.event.HierarchyListener`
     - `HierarchyListener`を使って、`JLabel`の表示状態の変化を監視
         - [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)
@@ -69,11 +69,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JComponentの表示状態](http://terai.xrea.jp/Swing/ShowingDisplayableVisible.html)
 - [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)
 - [swing - Java: How to continuously update JLabel which uses atomicInteger to countdown after ActionListener - Stack Overflow](http://stackoverflow.com/questions/10021969/java-how-to-continuously-update-jlabel-which-uses-atomicinteger-to-countdown-af)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

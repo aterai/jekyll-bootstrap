@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
 
-## JTreeの葉ノードをJCheckBoxにする
+## 概要
 `JTree`の葉ノードを編集可能な`JCheckBox`にします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TYb2-BFsTHI/AAAAAAAAA4U/Fs8-t9x9XSw/s800/CheckBoxNodeTree.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CheckBoxNode {
   public final String text;
   public final boolean selected;
@@ -109,7 +109,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
 //......
 </code></pre>
 
-### 解説
+## 解説
 `JCheckBox`を継承する`TreeCellRenderer`、`TreeCellEditor`を作成して、`setEditable(true)`とした`JTree`に設定し、葉ノードをチェックできるようにしています。ノードがチェックされているかどうかといった状態の保存は、`DefaultMutableTreeNode#setUserObject(Object)`でタイトルと選択状態をもつオブジェクトを設定することで行っています。
 
 - - - -
@@ -126,11 +126,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [CheckNode - JTree Examples 2](http://www.crionics.com/products/opensource/faq/swing_ex/JTreeExamples2.html)
 - [JTreeの葉ノードだけ編集可能にする](http://terai.xrea.jp/Swing/LeafTreeCellEditor.html)
 - [JTreeのすべてのノードにJCheckBoxを追加する](http://terai.xrea.jp/Swing/CheckBoxNodeEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

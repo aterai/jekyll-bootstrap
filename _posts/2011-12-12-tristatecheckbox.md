@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-12
 
-## JCheckBoxに不定状態のアイコンを追加する
+## 概要
 `JCheckBox`の選択状態、非選択状態に加えて、不定状態を表すアイコンを追加します。
 
 {% download https://lh6.googleusercontent.com/-Rs-vnlD35Cg/TuTNCuEvU_I/AAAAAAAABF4/IzDezx4Rq8M/s800/TriStateCheckBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JCheckBox checkBox = new JCheckBox("TriState JCheckBox") {
   protected TriStateActionListener listener = null;
   class TriStateActionListener implements ActionListener{
@@ -73,7 +73,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-12
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`UIManager.getIcon("CheckBox.icon");`で取得した非選択状態のチェックボックスアイコンの上に横棒を引いて不定状態のアイコンを作成しています。
 
 - 不定状態かどうかは、`JCheckBox#getIcon()`が`null`かどうかで判断する手抜き版
@@ -84,11 +84,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-12
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JavaSpecialists 145 - TristateCheckBox Revisited](http://www.javaspecialists.eu/archive/Issue145.html)
     - ~~[JavaSpecialists 082 - TristateCheckBox based on the Swing JCheckBox](http://www.javaspecialists.eu/archive/Issue082.html)~~
 - [swing - Tristate Checkboxes in Java - Stack Overflow](http://stackoverflow.com/questions/1263323/tristate-checkboxes-in-java)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

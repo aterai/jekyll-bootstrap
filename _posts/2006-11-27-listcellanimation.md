@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
 
-## JListのセルのアニメーション
+## 概要
 `JList`の選択されたセルをアニメーションさせます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPa7B8VkI/AAAAAAAAAd8/uLpJ50Oxwf8/s800/ListCellAnimation.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class AnimeListCellRenderer extends JPanel implements ListCellRenderer {
   private static final Color selectedColor = new Color(230,230,255);
   private final AnimeIcon icon = new AnimeIcon();
@@ -52,19 +52,19 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
   //...
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、セルが選択されると左のアイコンがアニメーションし、文字列がクリップされている場合は、スクロールするようになっています。
 
 ~~選択されたセルだけ再描画しているのではなく、`ActionListener`を実装したセルレンダラーを作成して`JList`全体を`repaint`しています。~~
 選択されたセルだけ再描画してアニメーションを行っています。
 
-### 参考リンク
+## 参考リンク
 - [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)
 - [GlyphVectorで文字列を電光掲示板風にスクロール](http://terai.xrea.jp/Swing/ScrollingMessage.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 選択されたセルのみ再描画、`JScrollPane`に対応、スクリーンショット更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-13 (火) 14:53:51
 
 <!-- dummy comment line for breaking list -->

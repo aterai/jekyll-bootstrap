@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-02
 
-## FocusTraversalKeysに矢印キーを追加してフォーカス移動
+## 概要
 デフォルトの<kbd>Tab</kbd>キーに加えて、矢印キーでもフォーカス移動できるように設定します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNHR5gShI/AAAAAAAAAaQ/KUE3fbR0bXo/s800/FocusTraversalKeys.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>KeyboardFocusManager focusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 
 Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;&gt;(
@@ -31,7 +31,7 @@ backwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_UP,   0));
 focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, backwardKeys);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、デフォルトのトラバーサルキー(<kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>)に加えて、上下左右の矢印キーでもフォーカス移動できるようになっています。
 
 - `KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS`
@@ -51,7 +51,7 @@ forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN,  0));
 frame.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forwardKeys);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [KeyboardFocusManager#setDefaultFocusTraversalKeys](http://docs.oracle.com/javase/jp/6/api/java/awt/KeyboardFocusManager.html)
 - [Container#setFocusTraversalKeys](http://docs.oracle.com/javase/jp/6/api/java/awt/Container.html)
 - [How to Use the Focus Subsystem](http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html)
@@ -59,4 +59,4 @@ frame.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forward
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
 
-## JTreeのノードタイトルを複数行表示する
+## 概要
 `JTree`の各ノードで改行を使用し、タイトルを複数行表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TaKbyMKLtkI/AAAAAAAAA5M/NoozvykYAUE/s800/MultiLineTree.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MultiLineCellRenderer extends JPanel implements TreeCellRenderer {
   private DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
   private final JLabel icon = new JLabel();
@@ -101,7 +101,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JTree#setRowHeight(0)`として、セルレンダラーが高さを決めるように設定し、以下の`2`つの方法で改行を行っています(`JTree#getRowHeight()`の初期値(`LookAndFeel`で異なる)は、`WindowsLookAndFeel`などの場合0以下ではない)。
 
 - `Html`
@@ -116,9 +116,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Multi-line tree items](http://www.codeguru.com/java/articles/141.shtml)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

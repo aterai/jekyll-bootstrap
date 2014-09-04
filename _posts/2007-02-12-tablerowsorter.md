@@ -10,19 +10,19 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-02-12
 
-## TableRowSorterでJTableのソート
+## 概要
 `JDK 6`で導入された、`TableRowSorter`を利用して、`JTable`の行を降順、昇順にソートします。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUnbg2jyI/AAAAAAAAAmU/-7yjlGSjBmo/s800/TableRowSorter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>TableModel model = makeTestTableModel();
 JTable table = new JTable(model);
 RowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model);
 table.setRowSorter(sorter);
 </code></pre>
 
-### 解説
+## 解説
 `JDK 6`では、`JTable`に`TableRowSorter`を設定することで、カラムヘッダのクリックによる行ソートが行えます。
 
 以下のように、`JTable#autoCreateRowSorter(true);`メソッドを使用した場合も、`JTable`が自動的に`RowSorter`を作成して、ソートが出来るようになります。
@@ -100,7 +100,7 @@ public class RowSorterTest extends JPanel{
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [How to Use Tables](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
 - [TableSorterでJTableをソート](http://terai.xrea.jp/Swing/TableSorter.html)
 - [TableRowSorterのSortKeysをクリアする](http://terai.xrea.jp/Swing/ClearSortingState.html)
@@ -109,7 +109,7 @@ public class RowSorterTest extends JPanel{
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `DefaultRowSorter#setMaxSortKeys(int)`で複数のキーを用いたソートも出来ているように思います(`b86`)。ただ、ヘッダー部分がわかりにくいですが。 -- [syo](http://terai.xrea.jp/syo.html) 2006-08-03 (木) 11:12:55
     - ご指摘ありがとうございます。なるほど、こちら([Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html))を使えばうまくいきそうですね。解説を修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-08-03 (木) 12:34:53
 - `renderer`がないので、基本的に数字は左揃え、文字列は右揃えで、中央揃えするにはどうすれば宜しいでしょうか？ -- [パンダ](http://terai.xrea.jp/パンダ.html) 2007-06-14 (木) 09:40:20

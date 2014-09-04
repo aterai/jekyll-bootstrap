@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-20
 
-## JFileChooserに画像プレビューを追加
+## 概要
 `JFileChooser`に画像のプレビュー機能を追加します。プレビューを表示するコンポーネントは、チュートリアルの[ImagePreview.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java)をそのまま利用しています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRN6_UpeI/AAAAAAAAAg0/eJZas5kcb34/s800/PreviewAccessory.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>fileChooser = new JFileChooser();
 fileChooser.setAccessory(new ImagePreview(fileChooser));
 //...
@@ -88,15 +88,15 @@ class ImagePreview extends JComponent implements PropertyChangeListener {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のファイルチューザーでは、画像ファイルを選択すると、そのプレビューが表示されます。プレビューコンポーネントは、`JFileChooser#setAccessory(JComponent)`メソッドで、ファイルチューザーに追加しています。
 
 プレビュー側でファイルの選択、解除などのイベントを受け取るために、`PropertyChangeListener`を実装する必要があります。
 
-### 参考リンク
+## 参考リンク
 - [How to Use File Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

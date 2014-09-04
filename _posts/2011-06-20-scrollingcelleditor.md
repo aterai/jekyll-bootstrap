@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-20
 
-## TableCellEditorをスクロール可能にする
+## 概要
 `JTable`の`TableCellEditor`として、`JTextArea`と`JScrollPane`を使用します。
 
 {% download https://lh4.googleusercontent.com/-DDRbJ9WhSJk/Tf7btYjUE7I/AAAAAAAAA9s/yVKIKC55zIw/s800/ScrollingCellEditor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TextAreaCellEditor extends JTextArea implements TableCellEditor {
   private final JScrollPane scroll;
   public TextAreaCellEditor() {
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-20
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`0`列目にデフォルトの`TableCellEditor(JTextField)`、`1`列目に`JTextArea`を継承した`TableCellEditor`を設定しています。
 
 - `TableCellEditor#isCellEditable`
@@ -78,10 +78,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-20
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [TableCellEditorのレイアウトを変更](http://terai.xrea.jp/Swing/CellEditorLayout.html)
 - [JTableのセル幅で文字列を折り返し](http://terai.xrea.jp/Swing/TableCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

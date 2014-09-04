@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-15
 
-## ProgressMonitorがダイアログを表示するまでの待ち時間
+## 概要
 `ProgressMonitor`のダイアログが表示されるまでの待ち時間を設定します。
 
 {% download https://lh6.googleusercontent.com/-R5-8dJERlmk/UWrm3iXBukI/AAAAAAAABpk/i7YjNRcIkpM/s800/MillisToDecideToPopup.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>monitor = new ProgressMonitor(w, "message", "note", 0, 100);
 monitor.setMillisToDecideToPopup((int)millisToDecideToPopup.getValue());
 monitor.setMillisToPopup((int)millisToPopup.getValue());
 </code></pre>
 
-### 解説
+## 解説
 - [`ProgressMonitor#setMillisToDecideToPopup(int)`](http://docs.oracle.com/javase/jp/6/api/javax/swing/ProgressMonitor.html#getMillisToDecideToPopup%28%29)
     - `ProgressMonitor`のダイアログを表示するかどうかを決めるまでの待ち時間を設定
     - デフォルト: `500`ミリ秒
@@ -37,9 +37,9 @@ monitor.setMillisToPopup((int)millisToPopup.getValue());
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [ProgressMonitorで処理の進捗を表示](http://terai.xrea.jp/Swing/ProgressMonitor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

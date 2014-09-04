@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-31
 
-## TrayIconでJPopupMenuを使用する
+## 概要
 `TrayIcon`をクリックして`JPopupMenu`を表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TUZUBCgOGJI/AAAAAAAAA0A/Ox5g3HoxmoI/s800/TrayIconPopupMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final SystemTray tray  = SystemTray.getSystemTray();
 final Image image      = new ImageIcon(getClass().getResource("16x16.png")).getImage();
 final TrayIcon icon    = new TrayIcon(image, "TRAY", null);
@@ -51,7 +51,7 @@ icon.addMouseListener(new MouseAdapter() {
 });
 </code></pre>
 
-### 解説
+## 解説
 `Java 1.6.0`では、`TrayIcon`には`java.awt.PopupMenu`しか使用できないので、`setUndecorated(true)`かつ、サイズが`0x0`の`JDialog`を適当な位置(`TrayIcon`のクリックで`JPopupMenu`が開いたように見える場所)に配置し、これを親にして`javax.swing.JPopupMenu`を表示しています。
 
 - - - -
@@ -115,7 +115,7 @@ private static Point adjustPopupLocation(JPopupMenu popup, int xposition, int yp
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTrayIcon update | Java.net](http://weblogs.java.net/blog/alexfromsun/archive/2008/02/jtrayicon_updat.html)
     - [Swinghelper: Subversion: JXTrayIcon.java — Java.net](http://java.net/projects/swinghelper/sources/svn/content/trunk/src/java/org/jdesktop/swinghelper/tray/JXTrayIcon.java)
 - [How to Use the System Tray (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Other Swing Features)](http://docs.oracle.com/javase/tutorial/uiswing/misc/systemtray.html)
@@ -124,7 +124,7 @@ private static Point adjustPopupLocation(JPopupMenu popup, int xposition, int yp
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ソースを上げ忘れていたのを修正orz。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-02 (水) 19:07:51
 - `JRE1.6.0u3`で`2`度連続で右クリックすると`ClassCastException`起きちゃうんですよね・・・`BugParade`でも見つけらんなかったです -- [sawshun](http://terai.xrea.jp/sawshun.html) 2011-10-25 (火) 18:45:38
     - どうもです。こちらでも`WindowsXP`+`Java6u3`の環境で、`TrayIcon`上で右クリックを繰り返すと、`ClassCastException: java.awt.TrayIcon cannot be cast to java.awt.Component`が発生するのを確認しました。`bugs.sun.com`を調べたら、`6u10`で修正された [Bug ID: 6583251 One more ClassCastException in Swing with TrayIcon](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6583251)がそれっぽい気がします。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-26 (水) 00:56:41

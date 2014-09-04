@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-11
 
-## JPasswordFieldのエコー文字を変更
+## 概要
 `JPasswordField`のエコー文字を独自の図形に変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQ8cs8ApI/AAAAAAAAAgY/gxUUdKI65yA/s800/PasswordView.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class MyPasswordFieldUI extends BasicPasswordFieldUI {
   public View create(Element elem) {
     return new MyPasswordView(elem);
@@ -44,7 +44,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-11
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、下の`JPasswordField`のエコー文字を独自の図形に変更しています。またこの図形のサイズを上の`JPasswordField`のエコー文字と幅を合わせるために同じ文字を`setEchoChar`しています。
 
-### コメント
+## コメント

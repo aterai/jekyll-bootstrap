@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-21
 
-## JTextPaneでキーワードのSyntaxHighlight
+## 概要
 `JTextPane`で`Syntax Highlight`を行います。このサンプルは、[SyntaxDocument.java](http://www.discoverteenergy.com/Files/SyntaxDocument.java)からキーワードのハイライト部分を抜き出して作成しています。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTAw3RBeI/AAAAAAAAAjs/LtUs6l9UpZo/s800/SimpleSyntaxHighlight.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//This code is taken from:
 //http://www.discoverteenergy.com/Files/SyntaxDocument.java SyntaxDocument.java
 class SimpleSyntaxDocument extends DefaultStyledDocument {
@@ -98,12 +98,12 @@ class SimpleSyntaxDocument extends DefaultStyledDocument {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`red`, `green`, `blue`といったキーワードを入力すると、その色で文字列をハイライトするようになっています。区切り文字は、空白、`.`(ドット)、`,`(カンマ)の`3`つです。
 
 `Java`のシンタックスハイライトを行うサンプルコード([SyntaxDocument.java](http://www.discoverteenergy.com/Files/SyntaxDocument.java))からキーワードのハイライト部分を抜き出して作成しています。
 
-### 参考リンク
+## 参考リンク
 - [SyntaxDocument.java](http://www.discoverteenergy.com/Files/SyntaxDocument.java)
     - 作者、ライセンス、参照元のページが何処だったかなどが不明…。
 - [Customizing a Text Editor](http://web.archive.org/web/20120802021725/http://java.sun.com/products/jfc/tsc/articles/text/editor_kit/index.html)
@@ -111,4 +111,4 @@ class SimpleSyntaxDocument extends DefaultStyledDocument {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

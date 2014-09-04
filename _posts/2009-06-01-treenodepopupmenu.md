@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-01
 
-## JTreeのノード上でJPopupMenuを表示
+## 概要
 `JTree`のノード上でクリックした場合のみ、`JPopupMenu`を表示します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWLWQUjBI/AAAAAAAAAo0/3F3RUbU5sx8/s800/TreeNodePopupMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>static class TreePopupMenu extends JPopupMenu {
   private TreePath[] tsp;
   public TreePopupMenu() {
@@ -41,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-01
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは以下の場合、`JPopupMenu`を表示しています。
 
 - `JTree`のノードが選択されている
@@ -49,4 +49,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-01
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

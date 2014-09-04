@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-26
 
-## JTabbedPaneのタブを選択不可にする
+## 概要
 `JTabbedPane`のタブが選択できるかどうかを切り替えます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMLdSGopI/AAAAAAAAAYw/aRU27uh4vuQ/s800/EnabledAt.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>checkbox.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent e) {
     if(e.getStateChange()==ItemEvent.SELECTED) {
@@ -27,9 +27,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-26
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、チェックボックスを使って詳細設定タブが選択できるかどうかを切り替えることができます。
 
 タブが選択できるかどうかは、`JTabbedPane#setEnabledAt`メソッドで設定します。
 
-### コメント
+## コメント

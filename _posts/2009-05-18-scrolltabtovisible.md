@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-18
 
-## JTabbedPaneのTabAreaをスクロール
+## 概要
 `JTabbedPane`の`TabArea`を`JSlider`を使ってスクロールします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSn6mtDdI/AAAAAAAAAjE/ja_v92IXLsU/s800/ScrollTabToVisible.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static void scrollTabAt(JTabbedPane tp, int index) {
   JViewport vp = null;
   for(Component c:tp.getComponents()) {
@@ -36,9 +36,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-18
 }
 </code></pre>
 
-### 解説
+## 解説
 `JTabbedPane#setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT)`とした`JTabbedPane`の`TabArea`は、名前が`TabbedPane.scrollableViewport`な`JViewport`に配置されています。
 
 上記のサンプルでは、この`JViewport`を取得して、`JViewport#scrollRectToVisible(Rectangle)`メソッドを使用し、矢印ボタンをクリックせずに`TabArea`のスクロールを行っています。
 
-### コメント
+## コメント

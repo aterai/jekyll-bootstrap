@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
 
-## JComboBoxの文字色を変更する
+## 概要
 `JComboBox`の文字色を変更します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TVjIM1AMFkI/AAAAAAAAA1M/BSd3As9dxZE/s800/ComboBoxForegroundColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ComboForegroundRenderer extends DefaultListCellRenderer {
   private final Color selectionBackground = new Color(240,245,250);
   private final JComboBox combo;
@@ -46,7 +46,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、編集不可になっている`JComboBox`の文字色を、選択中のアイテムから取得した色に変更するようなセルレンダラを設定しています。
 
 - `Default`
@@ -80,9 +80,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxの色を変更](http://terai.xrea.jp/Swing/ColorComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

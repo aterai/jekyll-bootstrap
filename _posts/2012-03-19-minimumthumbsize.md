@@ -10,16 +10,16 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19
 
-## JScrollBarのKnobの最小サイズを設定する
+## 概要
 `JScrollBar`の`Knob`の最小サイズを設定します。
 
 {% download https://lh4.googleusercontent.com/-A8TRDbOQ1p4/T2bKeM8dcvI/AAAAAAAABKI/iBKMsL6eGfM/s800/MinimumThumbSize.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("ScrollBar.minimumThumbSize", new Dimension(32, 32));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、右の`JScrollPane`で、`JScrollBar`の`Knob`(`Thumb`)が短くなりすぎないように、最小サイズ(`Horizontal`の場合は幅、`Vertical`の場合は高さ)を設定します。
 
 - 注: `LookAndFeel`によって、`UIManager.put("ScrollBar.minimumThumbSize", new Dimension(32, 32));`が有効かどうかは異なる
@@ -52,10 +52,10 @@ protected Dimension getMinimumThumbSize() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Java Swing rendering bug on Windows 7 look-and-feel? - Stack Overflow](http://stackoverflow.com/questions/2754306/java-swing-rendering-bug-on-windows-7-look-and-feel)
 - [JSliderのつまみの形状を変更](http://terai.xrea.jp/Swing/ThumbArrowShape.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

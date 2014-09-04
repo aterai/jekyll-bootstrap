@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-01
 
-## JTreeのノード中の文字列をハイライトする
+## 概要
 `JTree`のノードから文字列を検索して、`HighlightPainter`で強調表示します。
 
 {% download https://lh4.googleusercontent.com/-rBf-D-8MbOM/UdBIT7ksWjI/AAAAAAAABvI/m_v7K_LuLao/s800/HighlightWordInNode.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class HighlightTreeCellRenderer extends JTextField
                                 implements TreeCellRenderer {
   Color backgroundSelectionColor = new Color(220, 240, 255);
@@ -49,14 +49,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-01
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`TreeCellRenderer`に`JLabel`ではなく、`JTextField`を使用し`JTextField#getHighlighter()#addHighlight(...)`で検索中の文字列をハイライト表示しています。
 
-### 参考リンク
+## 参考リンク
 - [JTreeで条件に一致するノードを検索しハイライト](http://terai.xrea.jp/Swing/TreeNodeHighlightSearch.html)
     - こちらは、ノードの色を変更してハイライト表示
 - [Highlighterで文字列をハイライト](http://terai.xrea.jp/Swing/Highlighter.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

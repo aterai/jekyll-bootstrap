@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-25
 
-## JTableで文字列をクリックした場合だけセルを選択状態にする
+## 概要
 `JTable`の文字列以外の場所がクリックされた場合、そのセルが選択されないようにします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUdT6R-SI/AAAAAAAAAmE/AYebcaiE77Y/s800/TableFileList.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//SwingUtilities2.pointOutsidePrefSize(...)
 private static Rectangle getCellRect2(JTable table, int row, int col) {
   TableCellRenderer tcr = table.getCellRenderer(row, col);
@@ -34,7 +34,7 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`Name`カラムのセル中にあるアイコンと文字列の上でクリックされた場合のみ、そのセルが選択されるようになっています。
 
 - ~~`JTable#columnAtPoint(Point)`メソッドをオーバーライドし `MouseAdapter`を設定し、`Name`カラムのセルの文字列上でクリックされたかどうかを判別~~
@@ -45,12 +45,12 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableのセルをエクスプローラ風に表示する](http://terai.xrea.jp/Swing/ExplorerLikeTable.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JTable#columnAtPoint(Point)`メソッドをオーバーライドする方法では、`CPU`が`100%`になってしまうので、クリック、ドラッグした場合だけ、評価するように修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-16 (月) 18:46:39
 - `JTable#getToolTipText(MouseEvent)`メソッドをオーバーライドして、`Name`カラムのセルの余白では、ツールチップも表示しないように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-16 (月) 18:49:02
 - `table.putClientProperty("Table.isFileList", Boolean.TRUE);`を使えば、`MouseListener`などもすべて必要なさそう…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-01 (金) 02:02:50

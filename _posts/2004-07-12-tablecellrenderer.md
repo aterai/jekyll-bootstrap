@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-12
 
-## JTableのセル幅で文字列を折り返し
+## 概要
 `JTable`のセル幅に合わせて文字列を折り返します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUbGVPssI/AAAAAAAAAmA/dPiTKpwf1Ro/s800/TableCellRenderer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>TableColumnModel tcm = table.getColumnModel();
 tcm.getColumn(1).setCellRenderer(new TestRenderer());
 tcm.getColumn(2).setCellRenderer(new TextAreaCellRenderer());
@@ -77,7 +77,7 @@ class MyJLabel extends JLabel {
 }
 </code></pre>
 
-### 解説
+## 解説
 - `0`列目
     - デフォルト
 
@@ -93,13 +93,13 @@ class MyJLabel extends JLabel {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [TableCellRendererでセルの背景色を変更](http://terai.xrea.jp/Swing/StripeTable.html)
 - [JTableのセルの高さを自動調整](http://terai.xrea.jp/Swing/AutoWrapTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - メモ: `TextAreaCellRenderer`を、`NimbusLookAndFeel`で使ったとき、うまく余白を消す方法が分からない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-08 (木) 18:25:18
 - ここの方法だと行の高さも自動変更してくれます。[This JDK Tutorial shows you how to wrap text inside cells of a JTable](http://www.roseindia.net/javatutorials/JTable_in_JDK.shtml) -- [とおりすがり](http://terai.xrea.jp/とおりすがり.html) 2010-12-10 (金) 10:12:40
 - ご指摘ありがとうございます。この方法なら、[JTableのセルの高さを自動調整](http://terai.xrea.jp/Swing/AutoWrapTableCell.html)で発生しているバグも修正できそうです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-10 (金) 13:50:58

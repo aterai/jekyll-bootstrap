@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-29
 
-## JComboBoxをJSpinnerの代わりに使用する
+## 概要
 `JSpinner`の代わりに`JComboBox`を使用することで、アイテムの文字色などを変更しています。
 
 {% download https://lh6.googleusercontent.com/-kpruQCgOnLE/UX2r6exfrII/AAAAAAAABqo/JZnFlTBy1zw/s800/SpinnerTextColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JButton nb = createArrowButton(SwingConstants.NORTH);
 nb.addActionListener(new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
@@ -44,7 +44,7 @@ p.add(comboBox);
 p.add(box, BorderLayout.EAST);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ドロップダウンリストを無効(表示させない)にした`JComboBox`と`2`つの`ArrowButton`を組み合わせて、`JSpinner`風のコンポーネントを作成しています。各アイテムの文字色は、`Html`の`<font>`タグを使って変更しています。
 
 - `BasicComboBoxUI#createArrowButton()`をオーバーライドして、`JComboBox`の元`ArrowButton`を非表示
@@ -57,4 +57,4 @@ p.add(box, BorderLayout.EAST);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

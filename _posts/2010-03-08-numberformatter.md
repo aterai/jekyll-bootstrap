@@ -10,18 +10,18 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-08
 
-## JSpinnerで無効な値の入力を許可しない
+## 概要
 `JSpinner`から`JFormattedTextField`を取得し、これに無効な値の入力を許可しないように設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQg6Td8tI/AAAAAAAAAfs/u5mXLfk3k64/s800/NumberFormatter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JSpinner.NumberEditor editor = (JSpinner.NumberEditor)spinner.getEditor();
 DefaultFormatter formatter = (DefaultFormatter) editor.getTextField().getFormatter();
 formatter.setAllowsInvalid(false);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`DefaultFormatter#setAllowsInvalid(false)`などを設定した`DefaultFormatterFactory`を作成して、`JSpinner`から取得した`JFormattedTextField`に`setFormatterFactory`で追加しています。
 
 - 上
@@ -92,12 +92,12 @@ private static DefaultFormatterFactory makeFFactory(final SpinnerNumberModel m) 
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTextFieldの入力を数値に制限する](http://terai.xrea.jp/Swing/NumericTextField.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 無効な値が入力されたときの背景色の変更を`DocumentListener`で行うように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-27 (火) 21:52:05
 - メモ: [Bug ID: 6423494 SpinnerNumberModel should use getMinimum and getMaximum instead of fields](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6423494)、[SpinnerNumberModelに上限値を超える値を入力](http://terai.xrea.jp/Swing/SpinnerNumberModel.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-27 (火) 22:12:46
 

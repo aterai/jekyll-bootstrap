@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-05
 
-## JScrollPane内にある複数Componentを配置したJPanelをJLayerを使ってドラッグスクロール
+## 概要
 複数のネストした`Component`を配置した`JPanel`のドラッグイベントを、`JScrollPane`をラップした`JLayer`で受け取ってスクロール可能にします。
 
 {% download https://lh5.googleusercontent.com/-5zBF0JOr6kM/UfuiEj7Do7I/AAAAAAAABxg/7tKYnrOl9eo/s800/DragScrollLayer.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DragScrollLayerUI extends LayerUI&lt;JScrollPane&gt; {
   private final Point pp = new Point();
   @Override public void installUI(JComponent c) {
@@ -60,7 +60,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-05
 }
 </code></pre>
 
-### 解説
+## 解説
 - 左: `DragScrollListener`
     - [JTreeの余白をドラッグしてスクロール](http://terai.xrea.jp/Swing/TreeDragScroll.html)
     - このリスナーを追加した一つの`Component`をドラッグしてスクロールが可能
@@ -72,11 +72,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-05
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Java Swing Tips: Mouse Dragging ViewPort Scroll](http://java-swing-tips.blogspot.jp/2009/03/mouse-dragging-viewport-scroll.html)
 - [JTreeの余白をドラッグしてスクロール](http://terai.xrea.jp/Swing/TreeDragScroll.html)
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

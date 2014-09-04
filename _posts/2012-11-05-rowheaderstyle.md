@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-05
 
-## JTableの行ヘッダに列ヘッダのRendererを使用する
+## 概要
 `JTable`の行の描画に、`JTableHeader`から取得した列ヘッダの`Renderer`を適用します。
 
 {% download https://lh3.googleusercontent.com/-FSdrv2BDUCo/UJaJTUVXcdI/AAAAAAAABWU/gBeKokda9h8/s800/RowHeaderStyle.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RowHeaderRenderer extends JLabel implements TableCellRenderer {
   public RowHeaderRenderer(JTable table) {
     super();
@@ -94,7 +94,7 @@ class ComponentIcon implements Icon {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`0`列目のセルの描画に、`JTable#getTableHeader()#getDefaultRenderer()`で取得したレンダラーを使用する`TableCellRenderer`を適用しています。
 
 - ソートアイコンが列ヘッダに表示されていても、行ヘッダには表示しない
@@ -105,10 +105,10 @@ class ComponentIcon implements Icon {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableに行ヘッダを追加](http://terai.xrea.jp/Swing/TableRowHeader.html)
 - [JTableのセルのハイライト](http://terai.xrea.jp/Swing/CellHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

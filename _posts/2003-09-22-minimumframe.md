@@ -10,17 +10,17 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-22
 
-## JFrameの最小サイズ
+## 概要
 `JFrame`や`JDialog`の最小サイズを指定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTP41PdCsI/AAAAAAAAAes/cxniHSm55rQ/s800/MinimumFrame.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//1.6以上で有効
 frame.setMinimumSize(new Dimension(320, 150));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JFrame`などを縮小する際の最小サイズを設定しています。
 
 `JDK 1.6`以上の場合、`JFrame#setMinimumSize`メソッドを使用することで、最小サイズを指定することができます。
@@ -98,13 +98,13 @@ public class MaximumSizeTest{
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Swing - Have JFrame respect the minimum size (stop resizing) - Partial solution](https://forums.oracle.com/thread/1377749)
 - [DynamicLayoutでレイアウトの動的評価](http://terai.xrea.jp/Swing/DynamicLayout.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 最大サイズも同じ要領で・・・とありますが`JFrame#setMaximumSize`はうまくいかないですね（`JDK1.6.0_u1`）色々調べているのですが、いい方法あるんでしょうか？ -- [sawshun](http://terai.xrea.jp/sawshun.html) 2009-07-27 (月) 11:51:11
     - 同じ要領なのは、`ComponentListener`を使う場合…のつもりです。 ~~わかりづらいのであとで修正しますm(_ _)m。~~ すこし修正しました。`setMaximumSize`は、ちょっと難しいのかも([Bug ID: 6200438 Frame's size must be validated against maximized bounds when resizing, win32](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6200438))。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-07-27 (月) 12:05:33
 

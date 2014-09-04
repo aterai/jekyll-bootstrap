@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
 
-## JButtonを半透明にする
+## 概要
 半透明な`JButton`を作成します。
 
 {% download https://lh3.googleusercontent.com/-W5o-8ilpY6k/UOCzLo2oOeI/AAAAAAAABZ0/m1_AjYpKqiY/s800/TranslucentButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TranslucentButton extends JButton{
   private static final Color TL = new Color(1f, 1f, 1f, .2f);
   private static final Color BR = new Color(0f, 0f, 0f, .4f);
@@ -67,7 +67,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
 }
 </code></pre>
 
-### 解説
+## 解説
 - 透明な`JButton`、全体を半透明な`Icon`、タイトルの`Icon`と文字列は`align='middle'`などを指定して配置
     - 参考: [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
     - `setOpaque(false);`, `setContentAreaFilled(false);`などで、`JButton`自体は透明化
@@ -179,10 +179,10 @@ add(p);
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
 - ["ecqlipse 2" PNG by ~chrfb on deviantART](http://chrfb.deviantart.com/art/quot-ecqlipse-2-quot-PNG-59941546)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

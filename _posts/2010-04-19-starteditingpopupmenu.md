@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-19
 
-## JTreeのノード編集をPopupからのみに制限する
+## 概要
 `JTree`のノード編集を、マウスクリックではなく、`Popup`からのみに制限します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTy9Cda5I/AAAAAAAAAlA/6uCGiCD2iGY/s800/StartEditingPopupMenu.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>tree.setCellEditor(new DefaultTreeCellEditor(
     tree, (DefaultTreeCellRenderer)tree.getCellRenderer()) {
   @Override public boolean isCellEditable(java.util.EventObject e) {
@@ -30,7 +30,7 @@ tree.setEditable(true);
 tree.setComponentPopupMenu(new TreePopupMenu());
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`DefaultTreeCellEditor#isCellEditable`メソッドをオーバーライドした`CellEditor`を設定して、ノードをマウスでクリックしても編集開始できないように制限しています。
 
 - - - -
@@ -72,9 +72,9 @@ tree.setComponentPopupMenu(new TreePopupMenu());
 //......
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノード上でJPopupMenuを表示](http://terai.xrea.jp/Swing/TreeNodePopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

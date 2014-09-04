@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-14
 
-## JTextComponentでサロゲートペアのテスト
+## 概要
 `JEditorPane`などで数値文字参照や`Unicode`エスケープを使ってサロゲートペアのテストをします。
 
 {% download https://lh5.googleusercontent.com/-BY6N3kDDUG8/T7ByWIn0mgI/AAAAAAAABMo/4dpU-rm8zAQ/s800/SurrogatePair.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final URL url = getClass().getResource("SurrogatePair.html");
 try{
   editor1.read(new InputStreamReader(url.openStream(), "UTF-8"), "html");
@@ -29,7 +29,7 @@ editor2.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
 editor2.setText("(\uD85B\uDE40) (\u26E40)\n(\uD842\uDF9F) (\u20B9F)");
 </code></pre>
 
-### 解説
+## 解説
 以下、サロゲートペア対応フォントを使えるようにしてテストしています。`Java Web Start`で起動した場合、このサンプルの"browse"ボタンで`jar`ファイル内の`SurrogatePair.html`を表示することはできません。
 
 - 上: 数値文字参照(`Numeric character reference`)
@@ -120,13 +120,13 @@ public class OTFTest {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Java Font Support - OpenType : Java Glossary](http://mindprod.com/jgloss/opentype.html#JAVASUPPORT)
 - [OpenType (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/OpenType.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 結合文字(`A&#x0300;`、`か&#x3099;`)も`JTextComponent`は未対応。~~ブラウザだと`Chrome`は対応されているが、他は部分的な対応になっている？~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-15 (火) 11:17:30
 - `Windows 7` + `JDK 1.7.0`で`OTF`フォントは使えない？？？ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-06 (水) 19:07:01
 - メモ: [Bug ID: 6836089 Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6836089) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-25 (月) 18:37:16

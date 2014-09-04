@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-22
 
-## ProgressMonitorInputStreamを使用してテキストファイルのダウンロード状況を表示
+## 概要
 `ProgressMonitorInputStream`を使用してテキストファイルのダウンロード状態を進捗表示します。
 
 {% download https://lh4.googleusercontent.com/-gXnU23f7iiw/UXQuzmKdfVI/AAAAAAAABp8/aPk0QR78NlY/s800/ProgressMonitorInputStream.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RunAction extends AbstractAction {
   public RunAction() {
     super("Load");
@@ -114,7 +114,7 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`URLConnection`から開いた`InputStream`に`ProgressMonitorInputStream`をラップして、ファイルのダウンロード進捗状態を`ProgressMonitor`で表示しています。
 
 - `ProgressMonitorInputStream`の使用する`ProgressMonitor`の最大値は、ファイルサイズ(バイト)
@@ -128,12 +128,12 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [ProgressMonitorがダイアログを表示するまでの待ち時間](http://terai.xrea.jp/Swing/MillisToDecideToPopup.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - EDT外で`ProgressMonitor`を変更する(`monitor.setMinimum(0);`など)のは駄目な気がするので、修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-02-04 (火) 15:05:59
 
 <!-- dummy comment line for breaking list -->

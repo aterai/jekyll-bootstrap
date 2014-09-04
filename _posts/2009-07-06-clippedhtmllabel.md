@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-06
 
-## Htmlで修飾した文字列のクリップ
+## 概要
 `Html`で文字列を修飾するとクリップされなくなるので、予めクリップした文字列を作成してから`Html`を使用します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJP6CTKHI/AAAAAAAAAUE/aD5gF_0luwI/s800/ClippedHtmlLabel.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class URLRenderer extends DefaultTableCellRenderer
                   implements MouseListener, MouseMotionListener {
   private static Rectangle lrect = new Rectangle();
@@ -68,7 +68,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-06
   //...
 </code></pre>
 
-### 解説
+## 解説
 - 上
     - `setText("<html><font color='blue'>"+str);`で文字列に下線を引く
 - 下
@@ -77,9 +77,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-06
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTableのセルにHyperlinkを表示](http://terai.xrea.jp/Swing/HyperlinkInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

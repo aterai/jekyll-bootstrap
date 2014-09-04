@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-24
 
-## Cursorオブジェクトの生成
+## 概要
 新しいカスタムカーソルオブジェクトを作成します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKTOEY7FI/AAAAAAAAAVw/OeBJRlIWHsQ/s800/CustomCursor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>BufferedImage bi2 = new BufferedImage(
                       32, 32, BufferedImage.TYPE_INT_ARGB);
 Graphics2D g2d2 = bi2.createGraphics();
@@ -27,7 +27,7 @@ lbl2.setCursor(getToolkit().createCustomCursor(
 label2.setIcon(new ImageIcon(bi2));
 </code></pre>
 
-### 解説
+## 解説
 `Toolkit#createCustomCursor`メソッドでカーソルオブジェクトを作成します。上記のサンプルコードでは、`32*32`のバッファの中心に、直径`16`の円をかき、この円の中心がホットスポットとなるようなカーソルを作っています。
 
-### コメント
+## コメント

@@ -10,16 +10,16 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-16
 
-## JTableのセルの編集をコミット
+## 概要
 セルの編集中、フォーカスが別のコンポーネントに移動した場合、その編集を確定する方法をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVKX5loMI/AAAAAAAAAnM/hbhZT30xAgc/s800/TerminateEdit.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);
 </code></pre>
 
-### 解説
+## 解説
 デフォルトの`JTable`では、<kbd>Tab</kbd>キーやマウスのクリックなどで同じテーブルの別セルにフォーカスが移動すると編集が確定しますが、別のコンポーネントにフォーカスが移動しても編集は確定しません。
 
 - `table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);`とすると、
@@ -109,13 +109,13 @@ frame.addWindowStateListener(new WindowStateListener() {
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950)
     - [jdk7/swing/jdk: changeset 2709:e753db9c4416](http://hg.openjdk.java.net/jdk7/swing/jdk/rev/e753db9c4416)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - どわー。助かりましたっ！ -- [shun](http://terai.xrea.jp/shun.html) 2007-05-31 (木) 19:51:20
     - お役に立てて何よりです(自分もこの辺りよく混乱します)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-06-01 (金) 17:30:34
 - `columnMarginChanged`、役に立ちました。ありがとうございます。 -- [はじめ](http://terai.xrea.jp/はじめ.html) 2008-04-04 (金) 00:35:14

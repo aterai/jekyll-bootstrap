@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-26
 
-## PersistenceServiceを使ってJFrameの位置・サイズを記憶
+## 概要
 `ServiceManager`から`PersistenceService`を取得し、`JFrame`などの位置・サイズの保存、呼び出しを行います。
 
 {% download https://lh6.googleusercontent.com/-PyOW5DW5kHU/T3APD_Cq_bI/AAAAAAAABKk/i9eivMuQZ0Y/s800/PersistenceService.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final WindowState ws = new WindowState();
 SwingWorker&lt;WindowAdapter,Void&gt; worker = new SwingWorker&lt;WindowAdapter,Void&gt;() {
   @Override public WindowAdapter doInBackground() {
@@ -67,7 +67,7 @@ SwingWorker&lt;WindowAdapter,Void&gt; worker = new SwingWorker&lt;WindowAdapter,
 worker.execute();
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`PersistenceService`で確保したファイルに、`HashMap<String, Serializable>`に格納した`JFrame`の位置、サイズを`XMLEncoder`、`XMLDecoder`を使って読み書きしています。
 
 - - - -
@@ -175,7 +175,7 @@ public class MainPanel extends JPanel {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JWS javax.jnlp.* API demos](http://pscode.org/jws/api.html)
 - [PersistenceService](http://docs.oracle.com/javase/jp/6/technotes/guides/javaws/developersguide/examples.html#PersistenceService)
 - [PersistenceService Demo](http://www.finnw.me.uk/persistencetest.html)
@@ -183,7 +183,7 @@ public class MainPanel extends JPanel {
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JScrollPane` + `JTable` + `DefalutTableModel`を`XMLEncoder`で`XML`書出しする場合のエラーなどについて: [JTable speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_speichern) -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-14 (木) 19:06:49
 
 <!-- dummy comment line for breaking list -->

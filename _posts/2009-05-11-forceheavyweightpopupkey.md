@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-11
 
-## JToolTipをGlassPane上のコンポーネントで表示する
+## 概要
 `JToolTip`を`GlassPane`上のコンポーネントに追加した場合でも、手前に表示されるように設定します。主に[Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)を参考にしています。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>//Swing - ComboBox scroll and selected/highlight on glasspane
 //https://forums.oracle.com/thread/1357949
 try {
@@ -28,7 +28,7 @@ try {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ボタンをクリックすると、二つのラベルをもつ`GlassPane`が表示されます。
 
 - `111...`(左)
@@ -53,7 +53,7 @@ field.setAccessible(true);
 combo.putClientProperty(field.get(null), Boolean.TRUE);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)
 - [JComboBox の GlassPane 上でのレンダリング](http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?mode=viewtopic&topic=42615&forum=12)
 - [Swing - Why glass pane requires setLightWeightPopupEnabled(false)?](https://forums.oracle.com/thread/1366094)
@@ -61,7 +61,7 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);`がバージョンによって効かない場合があるらしい。[java - Force HeavyWeight Tooltip with shaped JPanel - Stack Overflow](http://stackoverflow.com/questions/17150483/force-heavyweight-tooltip-with-shaped-jpanel)　 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-18 (火) 08:34:11
     - 上記のリンクのサンプルコードだと、`Windows 7` + `JDK 1.7.0_05`: `OK`, `JDK 1.7.0_06`: `NG`。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-18 (火) 08:42:24
     - [jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b)

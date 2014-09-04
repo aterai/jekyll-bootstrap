@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-06
 
-## JTableがデフォルトでソートする列を設定する
+## 概要
 `JTable`がデフォルトでソートする列とその方向を設定します。
 
 {% download https://lh5.googleusercontent.com/-qvzRq_TxwSg/Texuvm22ELI/AAAAAAAAA84/DhfjZ3TEATk/s800/DefaultSortingColumn.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model);
 table.setAutoCreateRowSorter(true);
 int index = 0;
@@ -24,7 +24,7 @@ table.getRowSorter().setSortKeys(
     Arrays.asList(new RowSorter.SortKey(index, SortOrder.DESCENDING)));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`RowSorter#setSortKeys(...)`を使って、指定の列のソート順序(ここでは、`0`列目を`SortOrder.DESCENDING`で降順)のリストを設定しています。
 
 - - - -
@@ -36,9 +36,9 @@ table.getRowSorter().setSortKeys(
 - - - -
 `table.getRowSorter().toggleSortOrder(index)`を一回で昇順、二回で降順に設定する方法もあります。
 
-### 参考リンク
+## 参考リンク
 - [TableRowSorterのSortKeysをクリアする](http://terai.xrea.jp/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

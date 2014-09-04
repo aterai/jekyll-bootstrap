@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-29
 
-## JButtonなどの高さを変更せずに幅を指定
+## 概要
 高さはデフォルトのまま幅だけを指定して、`JButton`、`JComboBox`、`JTextField`などのサイズを変更します。
 
 {% download https://lh5.googleusercontent.com/-B3A8vHPu9_I/UmY7hTtdmtI/AAAAAAAAB4s/7NknsHc_vwI/s800/ButtonWidth.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static JComponent createRightAlignButtonBox2(
     final List&lt;JButton&gt; list, final int buttonWidth, int gap) {
   JComponent box = new JPanel() {
@@ -50,7 +50,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-29
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JButton`の高さはデフォルト、幅をその文字列によらずに一定、配置は右寄せで水平にしたい場合のレイアウト方法をテストしています。
 
 - `Default`
@@ -115,7 +115,7 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 //l.getPreferredSize() -&gt; Dimension[width=12,height=26]
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxなどの幅をカラム数で指定](http://terai.xrea.jp/Swing/SetColumns.html)
     - `JComboBox`、`JTextField`などのコンポーネントでは、カラム数で幅を指定することもできます。
         - `JDK 1.5.0`: カラム数で幅を指定すると、コンポーネントによってサイズや余白などが微妙に異なる
@@ -126,7 +126,7 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `SpringLayout`などを使って幅を固定する方法を追加(更新日時は忘れました)。スクリーンショットは未更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-14 (日) 00:36:03
 - `GridLayout`+`Box`のサンプルを追加、`LookAndFeel`を実行中に変更する場合の注意点を追加、スクリーンショットを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-22 (火) 17:33:58
 

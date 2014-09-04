@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-13
 
-## JWindowを使ったSplash Screenの表示
+## 概要
 `JWindow`を使って、`Splash Screen`を表示します。以下のサンプルコードは、`%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java`から引用改変したものです。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTtxuiuuI/AAAAAAAAAk4/JhuyuS80C4M/s800/SplashScreen.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private JWindow splashScreen;
 private JLabel  splashLabel;
 public MainPanel() {
@@ -68,7 +68,7 @@ public void showPanel() {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルコードでは、クラスパスの通った場所にある`/resources/images/splash.png`を読み込んでスプラッシュ・スクリーン(起動画面)を表示しています。`JWindow`の表示、非表示は、イベントディスパッチスレッド(`EDT`)で行われるように、`EventQueue.invokeLater`の中で実行しています。
 
 - - - -
@@ -82,12 +82,12 @@ public void showPanel() {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JDialogでモーダルなJProgressBar付きSplash Screenを表示する](http://terai.xrea.jp/Swing/ProgressSplashScreen.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `Splash Screen`を`Java SE 6`の機能で表示させるために、`splashScreen.setVisible(false)`にしていたテスト版のサンプルが添付されていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-09-25 (火) 18:56:13
 
 <!-- dummy comment line for breaking list -->

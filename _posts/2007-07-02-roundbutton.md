@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 
-## JButtonの形を変更
+## 概要
 円形や角丸の`JButton`を作成します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSJxI6T0I/AAAAAAAAAiU/uPR0zvWSEnQ/s800/RoundButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RoundedCornerButton extends JButton {
   private static final float arcwidth  = 16.0f;
   private static final float archeight = 16.0f;
@@ -90,7 +90,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ボタンの形や縁、クリック可能な領域をラウンド矩形などの`Shape`に置き換えています。
 
 - `JButton#paintComponent()`をオーバーライドして描画を変更
@@ -129,14 +129,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [CREATING ROUND SWING BUTTONS - JDC Tech Tips: August 26, 1999](http://web.archive.org/web/20090805104428/http://java.sun.com/developer/TechTips/1999/tt0826.html)
     - [Aug99_PatrickC.txt](http://web.archive.org/web/20090804054527/http://java.sun.com/developer/TechTips/txtarchive/1999/Aug99_PatrickC.txt)
 - [ImageIconの形でJButtonを作成](http://terai.xrea.jp/Swing/RoundImageButton.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - アイコンを追加したスクリーンショットに更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-07-10 (木) 17:25:34
 
 <!-- dummy comment line for breaking list -->

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-14
 
-## JCheckBoxMenuItemのチェックアイコンを変更する
+## 概要
 `JCheckBoxMenuItem`のチェックアイコンを変更します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTI5TuivhI/AAAAAAAAATg/nfren8EjliA/s800/CheckBoxMenuItemIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("CheckBoxMenuItem.checkIcon", new Icon() {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
     Graphics2D g2 = (Graphics2D)g;
@@ -33,15 +33,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-14
 menu.add(new JCheckBoxMenuItem("checkIcon test"));
 </code></pre>
 
-### 解説
+## 解説
 `JCheckBox`のチェックアイコンは、`setIcon`メソッドで変更できますが、`JCheckBoxMenuItem`はチェックアイコンとは別のアイコンが設定されるので、`UIManager.put("CheckBoxMenuItem.checkIcon", icon);`を使用しています。
 
-### 参考リンク
+## 参考リンク
 - [JRadioButtonMenuItemのチェックアイコンを変更する](http://terai.xrea.jp/Swing/RadioButtonMenuItemIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `NimbusLookAndFeel`などの場合 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-20 (金) 13:54:08
 
 <!-- dummy comment line for breaking list -->

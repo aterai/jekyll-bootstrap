@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-26
 
-## OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成
+## 概要
 `4`つの扇形ボタンと円形ボタンを、`OverlayLayout`を設定した`JPanel`に配置して、複合ボタンを作成します。
 
 {% download https://lh6.googleusercontent.com/-0bLp9wWHHOw/ULIxE5DUtzI/AAAAAAAABX4/pRUF7k-l4D0/s800/CompoundButton.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static JComponent makeCompoundButton(final Dimension d) {
   JPanel p = new JPanel() {
     @Override public Dimension getPreferredSize() {
@@ -120,7 +120,7 @@ class CompoundButton extends JButton {
 }
 </code></pre>
 
-### 解説
+## 解説
 - 円形ボタン
     - [JButtonの形を変更](http://terai.xrea.jp/Swing/RoundButton.html)を使って、幅高さの半分の直径をもつ円ボタンを作成
     - `JButton#contains(...)`をオーバーライドして、図形内のみマウスカーソルが反応するように変更
@@ -136,11 +136,11 @@ class CompoundButton extends JButton {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
 - [JButtonの形を変更](http://terai.xrea.jp/Swing/RoundButton.html)
 - [Mouseで画像を移動、回転](http://terai.xrea.jp/Swing/MouseDrivenImageRotation.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

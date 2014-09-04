@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-16
 
-## JTreeのノードを走査する
+## 概要
 `JTree`のノードから`Enumeration`を取得してサブツリーの走査を行います。
 
 {% download https://lh5.googleusercontent.com/-m8cdaUCibl0/TxPCZQMYqkI/AAAAAAAABH4/eAK9LyYkv14/s800/TraverseAllNodes.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>TreeModel model = tree.getModel();
 DefaultMutableTreeNode root = (DefaultMutableTreeNode)model.getRoot();
 Enumeration e = root.breadthFirstEnumeration();
@@ -25,7 +25,7 @@ while(e.hasMoreElements()) {
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、この`JTree`の最上位ノードをルートにするサブツリーを、深さ優先、幅優先などで全走査しています。
 
 - [DefaultMutableTreeNode#depthFirstEnumeration()](http://docs.oracle.com/javase/jp/6/api/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration%28%29)
@@ -47,9 +47,9 @@ while(e.hasMoreElements()) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

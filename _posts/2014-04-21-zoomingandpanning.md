@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 
-## JPanelに表示した画像のズームとスクロール
+## 概要
 `JPanel`に表示した画像に`AffineTransform`による変換を適用して、マウスを使った拡大・縮小・移動を実行します。[How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)に投稿されているコードを参考・引用しています。
 
 {% download https://lh3.googleusercontent.com/-c5Y9hCoRQbU/U1PhhnitgFI/AAAAAAAACD0/ZXIcyPywcr0/s800/ZoomingAndPanning.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ZoomAndPanHandler extends MouseAdapter {
   private static final double ZOOM_MULTIPLICATION_FACTOR = 1.2;
   private static final int MIN_ZOOM = -10;
@@ -72,7 +72,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 }
 </code></pre>
 
-### 解説
+## 解説
 `AffineTransform#createInverse()`で取得した`AffineTransform`オブジェクトでマウス位置の逆変換を行い、現在表示されている倍率でのズームの中心や移動距離などを計算しています。
 
 - ズーム
@@ -83,7 +83,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)
 - [ズームとパンの機能を備えたドローソフトを作成する：CodeZine](http://codezine.jp/article/detail/174)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
@@ -92,7 +92,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 表示画面の中心を 基準に拡大縮小するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-04-21 (月) 14:55:12
 
 <!-- dummy comment line for breaking list -->

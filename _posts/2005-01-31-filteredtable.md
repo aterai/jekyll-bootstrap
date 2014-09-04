@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-31
 
-## JTableに行フィルタで表示の切り替え
+## 概要
 `JTable`に表示する行をフィルタを使用して切り替えます。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMpQqDR4I/AAAAAAAAAZg/vitkhyUoKkI/s800/FilteredTable.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TestModel extends DefaultTableModel {
   public static final String NUMBER  = "番号";
   public static final String MASTER  = "名前";
@@ -47,14 +47,14 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-31
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`DefaultTableModel`のフィールドにある`dataVector`を表示用に使用し、これとは別にすべての行を保持する`Vector`を作成しています。例えば、奇数行だけ表示するという条件が選択された場合、この条件に適合する行だけを保持用`Vector`から表示用の`dataVector`にコピーすることでフィルタリングを行っています。
 
 `JDK 1.6.0`では、標準でフィルタリング機能が実装されているようです([RowFilterでJTableの行をフィルタリング](http://terai.xrea.jp/Swing/RowFilter.html))。
 
-### 参考リンク
+## 参考リンク
 - [RowFilterでJTableの行をフィルタリング](http://terai.xrea.jp/Swing/RowFilter.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

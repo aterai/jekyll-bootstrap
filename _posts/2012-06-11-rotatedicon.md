@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-11
 
-## Iconを回転する
+## 概要
 画像ファイルから`90`、`180`、`270`度回転した`Icon`を作成します。
 
 {% download https://lh4.googleusercontent.com/-OK_vUTiAiCA/T9WIzXvRm9I/AAAAAAAABNk/ubus049qH04/s800/RotatedIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RotateIcon implements Icon{
   private int width, height;
   private Image image;
@@ -63,7 +63,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-11
 }
 </code></pre>
 
-### 解説
+## 解説
 - `Default`
     - 幅高さ: `83x100`
 - `Rotate`: `180`
@@ -125,11 +125,11 @@ class QuadrantRotateIcon implements Icon{
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
 - [AffineTransformOpで画像を反転する](http://terai.xrea.jp/Swing/AffineTransformOp.html)
 - [Mouseで画像を移動、回転](http://terai.xrea.jp/Swing/MouseDrivenImageRotation.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-09
 
-## JDialogでモーダルなJProgressBar付きSplash Screenを表示する
+## 概要
 `JDialog`でモーダルな`JProgressBar`付き`Splash Screen`を表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRSxG9iaI/AAAAAAAAAg8/Wpd3hycacS4/s800/ProgressSplashScreen.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JFrame frame = new JFrame();
 final JDialog splashScreen  = new JDialog(frame, Dialog.ModalityType.DOCUMENT_MODAL);
 final JProgressBar progress = new JProgressBar();
@@ -73,7 +73,7 @@ EventQueue.invokeLater(new Runnable() {
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下のようなスプラッシュスクリーンを表示しています。
 
 - モーダルな`JDialog`に、画像と`JProgressBar`を追加
@@ -193,9 +193,9 @@ class SplashScreenIcon implements Icon {
 }
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JWindowを使ったSplash Screenの表示](http://terai.xrea.jp/Swing/SplashScreen.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

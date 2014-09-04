@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-17
 
-## JComboBoxのItemを左右に配置
+## 概要
 `JComboBox`の`Item`にテキストを左右に分けて配置します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPk2QD9aI/AAAAAAAAAeM/xrl0d1ms74g/s800/LRComboBox.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class LRItem{
   private final String leftText;
   private final String rightText;
@@ -33,16 +33,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-17
 }
 </code></pre>
 
-### 解説
+## 解説
 `JComboBox`に`html`の`table`タグを使うことで、`Item`に設定した文字列を左右に振り分けています。
 
 この方法では、`JComboBox`のリストにカラムを簡単に増やすことが出来ます。
 
 上記のサンプルでは、`JComboBox`のサイズ変更に対応していません。
 
-### 参考リンク
+## 参考リンク
 - [JComboBoxのItemを左右にクリップして配置](http://terai.xrea.jp/Swing/ClippedLRComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-14
 
-## JListのアイテムを範囲指定で選択
+## 概要
 `JList`のアイテムをラバーバンドで範囲指定して選択します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTSd-lu2aI/AAAAAAAAAi0/AQTsBqR1OUc/s800/RubberBanding.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class RubberBandingListener extends MouseInputAdapter {
   @Override public void mouseDragged(MouseEvent e) {
     setFocusable(true);
@@ -71,21 +71,21 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-14
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JList`にマウスリスナーを設定して、ドラッグに応じた矩形が描画されるようになっています。
 
 この矩形の内部にアイテムアイコンが重なる場合は、それを選択状態に変更しています。選択範囲が矩形にならずに直線になっている場合は、別途その直線と交差するアイテムを選択するようにしています。
 
 `JList`内のアイテムの配置は、`JList#setLayoutOrientation(JList.HORIZONTAL_WRAP)`メソッドを使っているため、水平方向に整列されます。
 
-### 参考リンク
+## 参考リンク
 - [Swing - Can someone optimise the following code ?](https://forums.oracle.com/thread/1378164)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 - [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://terai.xrea.jp/Swing/DragSelectDropReordering.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - 点線のアニメーション: [プログラマメモ2: java ラバーバンドを表現するためのした調べ](http://programamemo2.blogspot.com/2007/08/java.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-08-01 (金) 16:24:28
 - スクリーンショットなどを更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-06 (月) 21:29:19
 

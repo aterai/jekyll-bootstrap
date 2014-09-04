@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-14
 
-## JSliderのSnapToTicksをマウスのドラッグでも適用する
+## 概要
 `JSlider`の`SnapToTicks`をマウスでのドラッグ中にも適用されるように設定します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTU-ruijI/AAAAAAAAAkM/p3Mze4pjyEk/s800/SnapToTicksDrag.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>slider.setUI(new MetalSliderUI() {
   @Override protected TrackListener createTrackListener(final JSlider slider) {
     return new TrackListener() {
@@ -65,7 +65,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-14
 });
 </code></pre>
 
-### 解説
+## 解説
 - 上:デフォルト
     - `slider.setSnapToTicks(true);`としているので、マウスをリリースした時点で、ノブを置いた位置にもっとも近い目盛にスナップされる
 - 下:
@@ -73,7 +73,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-14
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `JSlider.HORIZONTAL`にしか対応していません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-21 (月) 11:01:51
 - bobndrewさんからの指摘で、ミニマムにマイナスの値を入れるとおかしくなるバグ修正と、`MinorTickSpacing`に対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-10-26 (火) 15:32:11
 

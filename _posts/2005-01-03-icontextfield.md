@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-03
 
-## JTextField内にアイコンを追加
+## 概要
 `JTextField`の内部にアイコンを表示します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOSatpfJI/AAAAAAAAAcI/9Ghfvb82FsM/s800/IconTextField.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>ImageIcon image = new ImageIcon(getClass().getResource("16x16.png"));
 int w = image.getIconWidth();
 int h = image.getIconHeight();
@@ -32,7 +32,7 @@ label.setBounds(m.left, m.top, w, h);
 field.add(label);
 </code></pre>
 
-### 解説
+## 解説
 サンプルでは`setMargin`で`JTextField`の左に余白を作り、そこに`JLabel`を配置することでアイコン(画像)を表示しています。
 
 [JComboBoxにアイコンを追加](http://terai.xrea.jp/Swing/IconComboBox.html)のように、`Border`を使っても同様のことができますが、`JTextComponent`を継承したコンポーネントでは、`setMargin`を使用するとカーソルの指定などが簡単にできるのでおすすめです。
@@ -76,11 +76,11 @@ m = field2.getMargin();
 field2.setMargin(new Insets(m.top+2,m.left,m.bottom,m.right+w));
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Swing (Archive) - Add a clickable icon to the left corner of a JTextField](https://forums.oracle.com/thread/1489851)
 - [JTextFieldのMarginを設定する](http://terai.xrea.jp/Swing/TextFieldMargin.html)
 - [JComboBoxにアイコンを追加](http://terai.xrea.jp/Swing/IconComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

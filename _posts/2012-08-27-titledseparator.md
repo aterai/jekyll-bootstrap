@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-27
 
-## TitledBorderとMatteBorderを使用してTitledSeparatorを作成する
+## 概要
 `TitledBorder`と`MatteBorder`を使用して`Title`付きの`Separator`を作成します。
 
 {% download https://lh3.googleusercontent.com/-sRtVayYL37Q/UDs_iiXRk7I/AAAAAAAABRk/71qZoe9vM60/s800/TitledSeparator.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class TitledSeparator extends JLabel{
   private Color color;
   private final String title;
@@ -75,7 +75,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-27
 }
 </code></pre>
 
-### 解説
+## 解説
 `TitledBorder`と、左下右の`Insets`が`0`(上余白のみ設定)でタイルアイコンでグラデーションを行う`MatteBorder`を組み合わせ、これを空の`JLabel`に設定することで、`TitledSeparator`を作成しています。
 
 - 上
@@ -91,10 +91,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-27
 - - - -
 注: 縦のセパレータには未対応
 
-### 参考リンク
+## 参考リンク
 - [TitledBorderのタイトル位置](http://terai.xrea.jp/Swing/TitledBorder.html)
 - [Separatorのグラデーション](http://terai.xrea.jp/Swing/Gradient.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

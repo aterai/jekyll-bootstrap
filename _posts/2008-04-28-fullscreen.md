@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 
-## Windowのフルスクリーン化
+## 概要
 `JDialog`や`JFrame`などを、フルスクリーン表示に切り替えます。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNRUUD2xI/AAAAAAAAAag/G7fNPgecnss/s800/FullScreen.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private void toggleFullScreenWindow() {
   GraphicsEnvironment graphicsEnvironment
     = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -37,7 +37,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルは、`JDialog`をフルスクリーン表示とウィンドウ表示に切り替えることが出来ます。
 
 - <kbd>F11</kbd>キー、ダブルクリック
@@ -60,9 +60,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
 - - - -
 ~~`WebStart`(署名無し)から実行した場合、タスクバー(`Windows`)などを消してフルスクリーン化は出来ないようです。~~
 
-### 参考リンク
+## 参考リンク
 - [Full-Screen Exclusive Mode (The Java™ Tutorials > Bonus > Full-Screen Exclusive Mode API)](http://docs.oracle.com/javase/tutorial/extra/fullscreen/exclusivemode.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

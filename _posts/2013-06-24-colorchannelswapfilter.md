@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-24
 
-## JLayerを使ってJProgressBarの色相を変更する
+## 概要
 `JLayer`を使って`JProgressBar`の色相を緑から赤に変更します。
 
 {% download https://lh3.googleusercontent.com/-BOomq0cC-U4/UceBZ2TsWWI/AAAAAAAABug/yoXs3wbBVGk/s800/ColorChannelSwapFilter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class BlockedColorLayerUI extends LayerUI&lt;JProgressBar&gt;{
   public boolean isPreventing = false;
   private BufferedImage bi;
@@ -58,7 +58,7 @@ class RedGreenChannelSwapFilter extends RGBImageFilter{
 }
 </code></pre>
 
-### 解説
+## 解説
 - `setStringPainted(true)`: 上
     - `JProgressBar#setStringPainted(true)`を設定
 - `setStringPainted(true)`: 下
@@ -72,14 +72,14 @@ class RedGreenChannelSwapFilter extends RGBImageFilter{
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [RGBImageFilterでアイコンの色調を変更](http://terai.xrea.jp/Swing/RatingLabel.html)
 - [JProgressBarの文字列をJLayerを使って表示する](http://terai.xrea.jp/Swing/ProgressStringLayer.html)
 - [JProgressBarの進捗状況と進捗文字列色を変更する](http://terai.xrea.jp/Swing/ProgressBarSelectionColor.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `NimbusLookAndFeel`の場合、`JProgressBar#setOpaque(true)`として`JLayer`と`RedGreenChannelSwapFilter`を使用しないと、フチが半透明にならない。また`NimbusLookAndFeel`の場合、`JProgressBar#setForeground(Color)`で変化するのは他の`LookAndFeel`とは異なり、進捗文字列になる。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-25 (火) 20:51:09
 
 <!-- dummy comment line for breaking list -->

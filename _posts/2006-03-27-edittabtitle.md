@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
 
-## JTabbedPaneのタブタイトルを変更
+## 概要
 `JTabbedPane`のタブタイトルを直接編集します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMGR-jIQI/AAAAAAAAAYo/g3tGLp5zrdY/s800/EditTabTitle.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class EditableTabbedPane extends JTabbedPane {
   private final MyGlassPane panel  = new MyGlassPane();
   private final JTextField  editor = new JTextField();
@@ -64,7 +64,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
 }
 </code></pre>
 
-### 解説
+## 解説
 `Excel`風に`JTabbedPane`のタブタイトルを直接編集しています。
 
 編集が開始されると、対象となるタブ上に`JTextField`をレイアウトした`GlassPane`を表示しています。この`GlassPane`には、編集中はフォーカスの移動が起こらないようにするための`FocusTraversalPolicy`などを設定しています。
@@ -78,7 +78,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Cursorを砂時計に変更](http://terai.xrea.jp/Swing/WaitCursor.html)
 - [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://terai.xrea.jp/Swing/TabTitleEditor.html)
     - `JDK 6`版です。タブに`JTextField`を`JTabbedPane#setTabComponentAt`メソッドを使用して配置しています。
@@ -87,7 +87,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `1.4`系だと編集開始時にうまく選択状態にできない場合があるようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-27 (月) 15:03:01
     - 上記の問題と、選択状態がマウスの移動で外れてしまうバグを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-29 (水) 03:26:56
 - 余白などを追加するとエディタがずれるバグを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-09-01 (金) 15:04:00

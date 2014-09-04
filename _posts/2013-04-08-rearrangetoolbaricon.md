@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
 
-## JToolBarに配置したアイコンをドラッグして並べ替える
+## 概要
 `JToolBar`に配置したアイコンをドラッグ＆ドロップで並べ替えます。
 
 {% download https://lh6.googleusercontent.com/-bxLoJ6g9K_I/UWBOghG3kxI/AAAAAAAABpQ/tvVELkL1RV0/s800/RearrangeToolBarIcon.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class DragHandler extends MouseAdapter{
   private final JWindow window = new JWindow();
   private Component draggingComonent = null;
@@ -148,7 +148,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JToolBar`に`MouseListener`と`MouseMotionListener`を追加して、`JLabel`に配置したアイコンを並べ替えています。
 
 - ドラッグされて移動対象になった`JLabel`は、`JToolBar`から削除され、透明な`JWindow`に移動
@@ -169,12 +169,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JFrameの外側でもドラッグアイコンを表示する](http://terai.xrea.jp/Swing/DragSourceMotionListener.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - メモ: `JLayer`などを使用すれば、`JButton`の移動も可能…な気がする。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-08 (月) 21:04:19
 
 <!-- dummy comment line for breaking list -->

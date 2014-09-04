@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-25
 
-## JMenuItemの内部にJButtonを配置する
+## 概要
 `JMenuItem`の内部に切り取り、コピー、貼り付けを行う`JButton`を配置します。
 
 {% download https://lh6.googleusercontent.com/-aY1o9VhHFWI/UpHzycRD8gI/AAAAAAAAB64/jaFbU_zn7hI/s800/ButtonsInMenuItem.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>private static JMenuItem makeEditMenuItem(final JPanel edit) {
   JMenuItem item = new JMenuItem("Edit") {
     @Override public Dimension getPreferredSize() {
@@ -89,7 +89,7 @@ private static AbstractButton makeButton(String title, Action action) {
 }
 </code></pre>
 
-### 解説
+## 解説
 - `JMenuItem`
     - `JMenuItem#getPreferredSize()`をオーバーライドして、挿入するJButtonを考慮したサイズを返すように変更
     - `JMenuItem`自体は、選択不可になるように`JMenuItem#setEnabled(false)`を設定
@@ -110,9 +110,9 @@ private static AbstractButton makeButton(String title, Action action) {
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Custom JMenuItems in Java](http://stackoverflow.com/questions/5972368/custom-jmenuitems-in-java)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

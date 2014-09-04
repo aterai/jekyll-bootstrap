@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-10
 
-## SwingWorkerを使った処理の中断と進捗状況表示
+## 概要
 `JDK 6`で新しくなった`SwingWorker`を使って、処理の中断や進捗状況の表示更新などを行います。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTT8xXI-cI/AAAAAAAAAlQ/ueJc6P4EJVg/s800/SwingWorker.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class Task extends SwingWorker&lt;String, String&gt; {
   //public Task(List&lt;File&gt; list) {
   //  this.list = list;
@@ -118,7 +118,7 @@ class CancelAction extends AbstractAction{
 }
 </code></pre>
 
-### 解説
+## 解説
 以前の`SwingWorker.java`から一部メソッド名が変更されていますが、基本的な使い方は一緒のようです。
 
 - `SwingWorker#execute()`メソッドで処理が開始され、`SwingWorker#doInBackground()`メソッドが、バックグラウンドのワーカースレッドで実行されます。
@@ -148,7 +148,7 @@ class CancelAction extends AbstractAction{
 - - - -
 `SwingWorker#process()`メソッド内などで`JPanel#sDisplayable()`を呼び、アプリケーション(`frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);`が設定されている)が終了している場合は、タスクを中断することで`SwingWorker`が生き残るのを防止しています。
 
-### 参考リンク
+## 参考リンク
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
 - [Improve Application Performance With SwingWorker in Java SE 6](http://www.oracle.com/technetwork/articles/javase/swingworker-137249.html)
 - [Worker Threads and SwingWorker](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html)
@@ -158,7 +158,7 @@ class CancelAction extends AbstractAction{
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-02-22 (木) 17:57:58
     - [Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)は、`JDK 1.6`の`javax.swing.SwingWorker`を使用するように変更しました。
     - [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)は ~~https://swingworker.dev.java.net/ にある~~ `JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-17 (木) 01:47:38

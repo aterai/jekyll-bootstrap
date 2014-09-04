@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 
-## JSpinnerのボタンを左右に配置する
+## 概要
 `JSpinner`のレイアウトを変更して、矢印ボタンを左右に配置します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TT0IT-0k7EI/AAAAAAAAAzA/8LBM7qgDVvw/s800/SpinnerButtonLayout.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SpinnerLayout extends BorderLayout {
   @Override public void addLayoutComponent(Component comp, Object constraints) {
     String str = "";
@@ -31,7 +31,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 }
 </code></pre>
 
-### 解説
+## 解説
 - `Default`
     - デフォルト
 - `RIGHT_TO_LEFT`
@@ -65,4 +65,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 };
 </code></pre>
 
-### コメント
+## コメント

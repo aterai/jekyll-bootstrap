@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-04
 
-## JSpinnerのテキストフィールド内に選択不可の文字を追加する
+## 概要
 `JSpinner`のテキストフィールド内に選択や編集ができない文字列を追加します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQ5w9QfII/AAAAAAAAAgU/iBrVcxeaFS4/s800/ParticularyNonEditableSpinner.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class StringBorder implements Border {
   private final JComponent parent;
   private final Insets insets;
@@ -45,7 +45,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-04
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上: `JSpinner.NumberEditor` + `DecimalFormat`
     - [JSpinnerの値をパーセントで指定](http://terai.xrea.jp/Swing/NumberEditor.html)
 
@@ -84,13 +84,13 @@ cb.setGap(0);
 cb.install(editor2);
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [JSpinnerの値をパーセントで指定](http://terai.xrea.jp/Swing/NumberEditor.html)
 - [Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - `1.7.0`以上でないとコンパイルできなかったのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-10-15 (月) 18:30:23
 
 <!-- dummy comment line for breaking list -->

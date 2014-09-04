@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-17
 
-## JSliderのノブをドラッグ中にToolTipで値を表示
+## 概要
 `JSlider`のノブをドラッグ中に`ToolTip`でその現在値を表示します。
 
 {% download https://lh6.googleusercontent.com/-RBRHhAqSA3A/UM3gOvnmIOI/AAAAAAAABZM/LdLir_Y4dQc/s800/SliderToolTips.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SliderPopupListener extends MouseAdapter{
   private final JWindow toolTip = new JWindow();
   private final JLabel label = new JLabel("", SwingConstants.CENTER);
@@ -54,7 +54,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-17
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、ドラッグ中だけ`ToolTip`で値を表示したいので、`JToolTip`ではなくその背景色などが同じになるように設定した`JWindow`を使用しています。
 
 - `MouseListener`
@@ -71,10 +71,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-17
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JSliderでクリックした位置にノブをスライド](http://terai.xrea.jp/Swing/JumpToClickedPositionSlider.html)
 - [JToolTipの表示位置](http://terai.xrea.jp/Swing/ToolTipLocation.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

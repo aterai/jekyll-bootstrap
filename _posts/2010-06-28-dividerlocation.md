@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-28
 
-## JSplitPaneを等分割する
+## 概要
 `JSplitPane`のディバイダが中央にくるように設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLR0Z5M_I/AAAAAAAAAXU/R6r6dvVJa9M/s800/DividerLocation.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>EventQueue.invokeLater(new Runnable() {
   @Override public void run() {
     sp.setDividerLocation(0.5);
@@ -24,7 +24,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-28
 });
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`JSplitPane`のサイズが決まった後(例えば`JFrame#pack()`や、`JFrame#setSize(int,int)`などした後)で、`JSplitPane#setDividerLocation(0.5);`を使用し、ディバイダを中央に配置しています。
 
 - `JSplitPane#setDividerLocation(double)`
@@ -36,9 +36,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-28
 - - - -
 `JSplitPane#setResizeWeight(double)`を使用し、`JSplitPane`内に配置したコンポーネント(`JScrollPane`)の余ったスペースの配分が同じになるようにして、ディバイダを中央に配置する方法もあります。
 
-### 参考リンク
+## 参考リンク
 - [JSplitPaneのDividerの位置を最大化後に変更する](http://terai.xrea.jp/Swing/DividerSplitRatio.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

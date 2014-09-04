@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-26
 
-## Focusの移動
+## 概要
 `FocusTraversalPolicy`を使って、<kbd>Tab</kbd>キーなどによるフォーカスの移動を制御します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNE9BAwqI/AAAAAAAAAaM/57d2rzX7ixk/s800/FocusTraversal.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final JButton nb = new JButton("NORTH");
 final JButton sb = new JButton("SOUTH");
 final JButton wb = new JButton("WEST");
@@ -54,7 +54,7 @@ frame.setFocusTraversalPolicy(policy);
 //setFocusTraversalPolicy(policy);
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`FocusTraversalPolicy`を使用することで、キー入力によるフォーカスの移動を制御しています。また、ラジオボタンで以下のような`FocusTraversalPolicy`に切り替えることができます。
 
 - `Default`
@@ -87,7 +87,7 @@ frame.setFocusTraversalPolicy(policy);
 });
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [AWT フォーカスサブシステム](http://docs.oracle.com/javase/jp/7/api/java/awt/doc-files/FocusSpec.html)
 - [Merlinの魔術: フォーカス、フォーカス、フォーカス](http://www.ibm.com/developerworks/jp/java/library/j-mer07153/)
 - [Windowを開いたときのフォーカスを指定](http://terai.xrea.jp/Swing/DefaultFocus.html)
@@ -95,4 +95,4 @@ frame.setFocusTraversalPolicy(policy);
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

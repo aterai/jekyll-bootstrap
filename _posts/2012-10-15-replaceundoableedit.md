@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
 
-## UndoManagerを使用した文字列選択ペーストの動作を変更する
+## 概要
 `JTextField`などに`UndoManager`を設定し、文字列を選択してペーストした後の`Undo`の動作を変更します。
 
 {% download https://lh5.googleusercontent.com/-GEc9R-QZvos/UKt2czK61tI/AAAAAAAABXk/vqH8TKxkqCM/s800/ReplaceUndoableEdit.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class CustomUndoPlainDocument extends PlainDocument {
   private CompoundEdit compoundEdit;
   @Override protected void fireUndoableEditUpdate(UndoableEditEvent e) {
@@ -41,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
 }
 </code></pre>
 
-### 解説
+## 解説
 - 上: `Default`
     - `JTextComponent#setText(String)`や、文字列を選択してペーストした場合、`Document#replace(...)`で実行される`Document#remove(...)`と`Document#insertString(...)`が別々に`UndoManager`に登録される仕様?なので、二回`Undo`しないとペースト前の状態に戻らない
 - 中: `Document#replace()+AbstractDocument#fireUndoableEditUpdate()`
@@ -54,7 +54,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Undo two or more actions at once | Oracle Community](https://community.oracle.com/thread/1509622)
 - [Undo manager : Undo Redo « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/Undomanager.htm)
 - [Compound Undo Manager ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/10/27/compound-undo-manager/)
@@ -68,4 +68,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

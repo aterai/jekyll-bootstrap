@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29
 
-## JComboBoxのドロップダウンリストで右クリックを無効化
+## 概要
 `JComboBox`のドロップダウンリスト(ポップアップメニュー)で、マウスの右クリックを無効にします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLKTBLgQI/AAAAAAAAAXI/mV-Gw1hPSYU/s800/DisableRightClick.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class BasicComboPopup2 extends BasicComboPopup {
   private Handler2 handler2;
   @Override public void uninstallingUI() {
@@ -57,7 +57,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、`ComboBoxUI#createPopup()`をオーバーライドして、ドロップダウンリストに設定する`MouseListener`を入れ替えた`BasicComboPopup`を追加しています。
 
 <pre class="prettyprint"><code>combo02.setUI(new BasicComboBoxUI() {
@@ -98,7 +98,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29
 }
 </code></pre>
 
-### コメント
+## コメント
 - ドロップダウンリストにスクロールバーが表示されていない場合、ホイールを回すとポップアップが閉じてしまうのも地味に困る…。[Bug ID: 6982607 JComboBox closes on MouseWheelEvent scrolling if no scroll bar is visible](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6982607) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-24 (火) 18:28:39
 
 <!-- dummy comment line for breaking list -->

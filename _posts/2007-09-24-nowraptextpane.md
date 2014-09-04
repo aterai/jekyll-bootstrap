@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 
-## JEditorPaneで長い行を折り返さない
+## 概要
 `JEditorPane`や、`JTextPane`で、行を`Viewport`の幅で折り返さないよう設定します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQbo-LQJI/AAAAAAAAAfk/YnnnPAQE-R4/s800/NoWrapTextPane.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class NoWrapParagraphView extends ParagraphView {
   public NoWrapParagraphView(Element elem) {
     super(elem);
@@ -32,7 +32,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、スパンの必要サイズを計算する`calculateMinorAxisRequirements`メソッドなどをオーバーライドして、行折り返し段落のビュー(`ParagraphView`)で折り返しが発生しないようにしています。
 
 `JEditorPane`や`JTextPane`といった`StyledDocument`をモデルにしているテキストコンポーネントに非常に長い行をペーストした場合、表示が更新されなくなりますが、折り返しできなくしてしまうと多少ましになるようです。
@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/thread/1353861)
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
 - [Bug ID: 6502558 AbstractDocument fires event not on Event Dispatch Thread](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6502558)
@@ -62,4 +62,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

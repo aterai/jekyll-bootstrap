@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
 
-## JScrollPaneのスクロールを同期
+## 概要
 `2`つの`JScrollPane`のスクロールを同期します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>ChangeListener cl = new ChangeListener() {
   boolean adjflg = false;
   @Override public void stateChanged(ChangeEvent e) {
@@ -49,7 +49,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
 };
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、一方のスクロールバーを移動させると、他方も同程度移動するように設定した`ChangeListener`を使用しています。
 
 - - - -
@@ -59,10 +59,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
 sp2.getHorizontalScrollBar().setModel(sp1.getHorizontalScrollBar().getModel());
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Swing (Archive) - link to scrollbar](https://forums.oracle.com/thread/1502596)
 - [Swing (Archive) - Synchronizing scrollbars two scroll bars](https://forums.oracle.com/thread/1484489)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

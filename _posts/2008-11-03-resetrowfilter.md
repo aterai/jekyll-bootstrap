@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-03
 
-## JTableのRowFilterを一旦解除してソート
+## 概要
 `JTable`の`RowFilter`を一旦解除してソートし、再びフィルタを設定することで表示される行を更新します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRuQZLwOI/AAAAAAAAAho/ovjovr-5nuI/s800/ResetRowFilter.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>final RowFilter&lt;TableModel, Integer&gt; filter = new RowFilter&lt;TableModel, Integer&gt;() {
   @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     int vidx = table.convertRowIndexToView(entry.getIdentifier());
@@ -38,7 +38,7 @@ table.setRowSorter(sorter);
 sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING)));
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、☑ `viewRowIndex<5`をチェックすると、ソートされていても表示上の`0`から`4`行目までの`5`行のみ表示されるフィルタがかかります。
 
 - `Costom Sorting`チェック無し
@@ -68,12 +68,12 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
 };
 </code></pre>
 
-### 参考リンク
+## 参考リンク
 - [Specification for the javax.swing.DefaultRowSorter.setSortsOnUpdates/rowsUpdated method is not clear](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6301297)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント
 - もっと簡単な方法がありそう・・・。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-03 (月) 16:35:24
 
 <!-- dummy comment line for breaking list -->

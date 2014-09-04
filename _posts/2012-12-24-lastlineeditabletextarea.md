@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-24
 
-## JTextAreaの最終行だけ編集可能になるよう設定する
+## 概要
 `DocumentFilter`を使用して最終行のみ編集可能な`JTextArea`を作成します。
 
 {% download https://lh3.googleusercontent.com/-WoZIsdy2Qd0/UNcd6P73NAI/AAAAAAAABZg/a2O8KLk4hVQ/s800/LastLineEditableTextArea.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class NonEditableLineDocumentFilter extends DocumentFilter {
   public static final String PROMPT = "&gt; ";
   @Override public void insertString(
@@ -59,7 +59,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-24
 }
 </code></pre>
 
-### 解説
+## 解説
 - `DocumentFilter#replace(...)`をオーバーライド
 - `Document#getDefaultRootElement()`でルートエレメントを取得し、`Element#getElementCount()`で全体の行数を取得
 - `offset`(文字挿入位置)から`Element#getElementIndex(offset)`で、挿入位置の行番号と、`Element`を取得
@@ -68,9 +68,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-24
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - [JTextAreaの一部を編集不可にする](http://terai.xrea.jp/Swing/NonEditableLine.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

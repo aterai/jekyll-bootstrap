@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-14
 
-## JSplitPaneのDividerの位置を最大化後に変更する
+## 概要
 `JFrame`を最大化した後で`JSplitPane`の`Divider`の位置を変更する場合のテストをします。
 
 {% download https://lh3.googleusercontent.com/-w5-YQDwojUs/TsB7EdoVlLI/AAAAAAAABEw/p_PcxHKKeRk/s800/DividerSplitRatio.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SplitPaneWrapper extends JPanel {
   public SplitPaneWrapper(JSplitPane splitPane) {
     super(new BorderLayout());
@@ -53,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-14
 }
 </code></pre>
 
-### 解説
+## 解説
 - `JSplitPane#setResizeWeight(0.0)`なので、`JFrame`をマウスでリサイズしても上コンポーネントの高さが維持される
 - `JSplitPane`をラップする`JPanel`の`doLayout()`メソッドをオーバーライドして、最大化、通常化の前後で上下コンポーネントの高さの比率を維持する
     - `EventQueue.invokeLater(...)`を使って、後で`JSplitPane#setDividerLocation(int)`でディバイダの位置を調節
@@ -65,9 +65,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-14
 - - - -
 `JSplitPane#setDividerLocation(double)`は、内部で`JSplitPane#setDividerLocation(int)`を呼び出しているが、その変換の際に値を切り捨てているので、上記のサンプルでは最大化、元に戻す(縮小)を行なっても、同じ値になるように四捨五入するよう変更している。
 
-### 参考リンク
+## 参考リンク
 - [JSplitPaneを等分割する](http://terai.xrea.jp/Swing/DividerLocation.html)
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

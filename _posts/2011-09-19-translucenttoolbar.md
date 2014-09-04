@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-19
 
-## JToolBarの半透明化とアニメーション
+## 概要
 コンポーネントにマウスカーソルがある場合だけ表示される半透明の`JToolBar`を追加します。
 
 {% download https://lh5.googleusercontent.com/-36mkZfbor58/Tnb1d-2vaPI/AAAAAAAABCM/Hoor7aG7K-g/s800/TranslucentToolBar.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class ImageCaptionLabel extends JLabel implements HierarchyListener {
   private float alpha = 0.0f;
   private javax.swing.Timer animator;
@@ -59,7 +59,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-19
 //......
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、画像を表示した`JLabel`に半透明にした`JToolBar`を追加しています。
 
 - 参考
@@ -69,10 +69,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-19
 
 <!-- dummy comment line for breaking list -->
 
-### 参考リンク
+## 参考リンク
 - ["ecqlipse 2" PNG by ~chrfb on deviantART](http://chrfb.deviantart.com/art/quot-ecqlipse-2-quot-PNG-59941546)
     - アイコンを借りています。
 
 <!-- dummy comment line for breaking list -->
 
-### コメント
+## コメント

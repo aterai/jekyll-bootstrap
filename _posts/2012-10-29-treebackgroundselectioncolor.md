@@ -10,12 +10,12 @@ comments: true
 
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-29
 
-## JTreeの選択背景色を変更
+## 概要
 `JTree`のノード条件によって、その選択背景色を変更します。
 
 {% download https://lh4.googleusercontent.com/-7JA4jpNa55U/UI1VhdHlkwI/AAAAAAAABVw/dAUHGh4q014/s800/TreeBackgroundSelectionColor.png %}
 
-### サンプルコード
+## サンプルコード
 <pre class="prettyprint"><code>class SelectionColorTreeCellRenderer extends DefaultTreeCellRenderer {
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
@@ -56,7 +56,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-29
 }
 </code></pre>
 
-### 解説
+## 解説
 上記のサンプルでは、以下の条件でノードの選択背景色を変更しています。
 
 - `DefaultMutableTreeNode#getUserObject()`が`Color`の場合、その色を選択背景色に変更
@@ -70,4 +70,4 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-29
 
 `SynthLookAndFeel`で作成されている`NimbusLookAndFeel`などでは、上記のような選択背景色にならない場合があります。
 
-### コメント
+## コメント
