@@ -73,7 +73,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
     - `setOpaque(false);`, `setContentAreaFilled(false);`などで、`JButton`自体は透明化
     - タイトル`Icon`と文字列の`align`が、`top`、`middle`、`bottom`のどれにしてもきれいに揃わない
     - サイズが固定
-    - `MetalLookAndFeel`に変更しても、余計なフチ？が表示されない
+    - `MetalLookAndFeel`に変更しても、余計なフチが表示されない
     - `Html`を使っているので`GTKLookAndFeel`で、`Pressed`時の文字色変更に対応していない
 
 <!-- dummy comment line for breaking list -->

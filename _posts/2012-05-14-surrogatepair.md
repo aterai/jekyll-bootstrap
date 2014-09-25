@@ -30,7 +30,7 @@ editor2.setText("(\uD85B\uDE40) (\u26E40)\n(\uD842\uDF9F) (\u20B9F)");
 </code></pre>
 
 ## 解説
-以下、サロゲートペア対応フォントを使えるようにしてテストしています。`Java Web Start`で起動した場合、このサンプルの"browse"ボタンで`jar`ファイル内の`SurrogatePair.html`を表示することはできません。
+以下、サロゲートペア対応フォントを使えるようにしてテストしています。`Java Web Start`で起動した場合、このサンプルの`browse`ボタンで`jar`ファイル内の`SurrogatePair.html`を表示することはできません。
 
 - 上: 数値文字参照(`Numeric character reference`)
     - `JEditorPane(HTMLEditorKit)`の場合

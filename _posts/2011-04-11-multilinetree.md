@@ -102,7 +102,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#setRowHeight(0)`として、セルレンダラーが高さを決めるように設定し、以下の`2`つの方法で改行を行っています(`JTree#getRowHeight()`の初期値(`LookAndFeel`で異なる)は、`WindowsLookAndFeel`などの場合0以下ではない)。
+上記のサンプルでは、`JTree#setRowHeight(0)`として、セルレンダラーが高さを決めるように設定し、以下の`2`つの方法で改行を行っています(`JTree#getRowHeight()`の初期値(`LookAndFeel`で異なる)は、`WindowsLookAndFeel`などの場合`0`以下ではない)。
 
 - `Html`
     - `Html`タグを使用し、`<br>`で改行

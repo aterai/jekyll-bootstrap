@@ -54,7 +54,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-20
 - 上: `SpinnerNumberModel`
     - `Double`型の`SpinnerNumberModel`では、最大最小値の比較に、`Double#compare(...)`が使用されている
     - `stepSize`の`0.1`などが持つ浮動小数点の誤差のせいで、このサンプルの`JSpinner`の場合、下限(`2.0`や`29.6`)にダウンボタンで移動できない
-        - 例えば、`29.7 - 29.6 - 0.1 >= 0`は偽
+        - 例えば、`29.7 - 29.6 - 0.1 >= 0`は`false`
 - 下: `BigDecimalSpinnerModel`
     - `SpinnerNumberModel#getPreviousValue()`などをオーバーライドして、`Double#compareTo(Double)`ではなく、`BigDecimal#compareTo(BigDecimal)`で最小値との比較を行う
 

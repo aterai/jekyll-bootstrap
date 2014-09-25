@@ -56,7 +56,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23
 ~~メニューがフレームの外にはみ出す場合に、メニューをすばやく切り替えたりすると、ゴミが残ることがあるようです。参考リンクの`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使っても同様のゴミが出る場合があります。~~ 再現しなくなった？ようです。
 
 - - - -
-`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使用しても、同様の影を作成することができます。[http://www.jgoodies.com/](http://www.jgoodies.com/) などからダウンロードして、以下のように設定してみてください。
+`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使用しても、同様の影を作成することができます。[JGoodies | We make Java look good and work well](http://www.jgoodies.com/)などからダウンロードして、以下のように設定してみてください。
 
 <pre class="prettyprint"><code>//UIManager.put("PopupMenuUI","example.CustomPopupMenuUI");
 contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
@@ -67,8 +67,8 @@ contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 
 ## 参考リンク
 - [Java Swing Hacks #11 ドロップシャドウ付きのメニューを作る](http://www.oreilly.co.jp/books/4873112788/toc.html)
-- [substance: Substance Java look and feel - main page](https://substance.dev.java.net/)
-    - contrib.com.jgoodies.looks.common.ShadowPopupFactory
+- [JGoodies | We make Java look good and work well](http://www.jgoodies.com/)
+    - `contrib.com.jgoodies.looks.common.ShadowPopupFactory`
 - [JPopupMenuに半透明の影を付ける](http://terai.xrea.jp/Swing/DropShadowPopup.html)
 
 <!-- dummy comment line for breaking list -->

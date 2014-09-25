@@ -37,7 +37,7 @@ enum UnderlineStyle {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、Font#deriveFont(...)メソッドに下線の属性キーに点線や破線の属性値を設定した`TextAttribute`のマップを適用して、下線属性の付いた新しい`Font`オブジェクトを生成しています。
+上記のサンプルでは、`Font#deriveFont(...)`メソッドに下線の属性キーに点線や破線の属性値を設定した`TextAttribute`のマップを適用して、下線属性の付いた新しい`Font`オブジェクトを生成しています。
 
 - 注:
     - `JTextArea`の下にある`JTextField`のように、その高さが足りない場合、下線の種類によって表示されないことがある

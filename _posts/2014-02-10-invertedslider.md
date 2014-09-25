@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JSliderの順序をを反転
+title: JSliderの順序を反転
 category: swing
 folder: InvertedSlider
 tags: [JSlider]

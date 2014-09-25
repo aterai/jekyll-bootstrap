@@ -40,7 +40,7 @@ b.addItemListener(new ItemListener() {
 - - - -
 - このサンプルでは、`Disable Scrolling`をチェックして無効状態にしても
     - `JTableHeader`は無効にしていないので、クリックしてソートや、カラムの移動を行うことができます。
-    - `JScrollPane`に設定したJPopupMenuを表示することができます。
+    - `JScrollPane`に設定した`JPopupMenu`を表示することができます。
     - `JTable`に設定した`JToolTip`を表示することができます。
 
 <!-- dummy comment line for breaking list -->

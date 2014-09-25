@@ -60,7 +60,7 @@ class TranslucentTreeCellRenderer extends TransparentTreeCellRenderer {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`SynthLookAndFeel`系の`NimbusLookAndFeel`や`GTKLookAndFeel`などの場合、以下のようななにも描画しない`Painter`をノード選択に使用することで、選択色を半透明にすることができます。
+`SynthLookAndFeel`系の`NimbusLookAndFeel`や`GTKLookAndFeel`などの場合、以下のような何も描画しない`Painter`をノード選択に使用することで、選択色を半透明にすることができます。
 
 <pre class="prettyprint"><code>//NimbusLookAndFeel(SynthLookAndFeel) JDK 1.7.0
 UIDefaults d = new UIDefaults();

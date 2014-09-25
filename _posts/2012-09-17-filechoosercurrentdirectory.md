@@ -32,7 +32,7 @@ if(retvalue==JFileChooser.APPROVE_OPTION) {
     - 参照:コンボボックスにディレクトリ名
     - リストには、`CurrentDirectory`内のディレクトリ一覧
     - フォルダ名: テキストフィールドは前回の文字列(`setCurrentDirectory`では変化しない)
-    - 存在しないファイルを`setCurrentDirectory`で設定すると、前回の`CurrentDirectory`(初回に存在しないファイルが設定された場合はOSのデフォルト)が表示される
+    - 存在しないファイルを`setCurrentDirectory`で設定すると、前回の`CurrentDirectory`(初回に存在しないファイルが設定された場合は`OS`のデフォルト)が表示される
         - 上記のサンプルで、`Change !dir.exists() case`にチェックをした場合、前回のディレクトリではなく、参照可能な親ディレクトリを検索するよう、`setCurrentDirectory`をオーバーライドした`JFileChooser`を使用する
             
             <pre class="prettyprint"><code>JFileChooser fc2 = new JFileChooser() {
@@ -51,7 +51,7 @@ if(retvalue==JFileChooser.APPROVE_OPTION) {
         - `Metal`などの`LookAndFeel`でも、ディレクトリが選択状態にならない場合がある
         - 上記のサンプルで、`isParent reset?`にチェックをした場合、`!fileChooser.getFileSystemView().isParent(fileChooser.getCurrentDirectory(), dir)==false`になるように？`setSelectedFile`で選択ファイルをリセットする
     - フォルダ名:テキストフィールドは選択ファイルとして設定したディレクトリ
-    - 存在しないディレクトリを`setSelectedFile`で設定するとその親ディレクトリ、親ディレクトリも存在しない場合は、OSのデフォルトがカレントディレクトリとなる
+    - 存在しないディレクトリを`setSelectedFile`で設定するとその親ディレクトリ、親ディレクトリも存在しない場合は、`OS`のデフォルトがカレントディレクトリとなる
 
 <!-- dummy comment line for breaking list -->
 

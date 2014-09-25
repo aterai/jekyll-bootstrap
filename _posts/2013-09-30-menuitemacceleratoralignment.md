@@ -11,7 +11,7 @@ comments: true
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-30
 
 ## 概要
-JMenuItemのAccelerator表示を右揃えに変更します。
+`JMenuItem`の`Accelerator`表示を右揃えに変更します。
 
 {% download https://lh5.googleusercontent.com/-vl8nnt_tGvQ/UkhDq1YV-VI/AAAAAAAAB2o/B0-hGdv35Ns/s800/MenuItemAcceleratorAlignment.png %}
 
@@ -68,7 +68,7 @@ JMenuItemのAccelerator表示を右揃えに変更します。
 
 - 注
     - `Web Start`で実行すると`java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.swing")`と例外が発生してメニューが表示されない
-    - `sun.swing.MenuItemLayoutHelper`や、`sun.swing.MenuItemLayoutHelper.LayoutResult`などの内部所有のAPIを使用しているので、今後も使用できるか不明
+    - `sun.swing.MenuItemLayoutHelper`や、`sun.swing.MenuItemLayoutHelper.LayoutResult`などの内部所有の`API`を使用しているので、今後も使用できるか不明
     - `paintText(...)`、`paintCheckIcon(...)`、`paintIcon(...)`、`paintArrowIcon(...)`などの`BasicMenuItemUI`のプライベートなメソッドをほぼそのままコピーして使用している
     - `ComponentOrientation.RIGHT_TO_LEFT`が設定されて、文字列が右から左に配置される場合は考慮していない
 

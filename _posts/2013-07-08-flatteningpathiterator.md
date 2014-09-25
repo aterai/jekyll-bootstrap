@@ -28,7 +28,7 @@ while(!i.isDone()) {
 ## 解説
 - `Ellipse2D`
     - `new Ellipse2D.Double`で作成した`Shape`を描画
-- `Polygon` x 2
+- `Polygon x 2`
     - 上記の楕円を`360/60`度ごとに曲線上の座標点を取得し、`Polygon`に変換して直線で描画
 
 <!-- dummy comment line for breaking list -->

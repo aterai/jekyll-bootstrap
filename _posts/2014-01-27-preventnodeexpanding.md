@@ -11,7 +11,7 @@ comments: true
 Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-27
 
 ## 概要
-JTreeで特定のノードだけ展開できないように設定します。
+`JTree`で特定のノードだけ展開できないように設定します。
 
 {% download https://lh4.googleusercontent.com/-WcBsEg_mxgc/UuUbyvn84EI/AAAAAAAAB-0/iZ6t8_EGeZQ/s800/PreventNodeExpanding.png %}
 

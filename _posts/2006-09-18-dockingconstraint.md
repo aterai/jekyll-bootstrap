@@ -41,10 +41,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
 
 `ToolBarUI#canDock(Component, Point)`メソッドをオーバーライドして、左右の場合は`false`を返すようにしています。
 
-ドッキングできるかどうかを判定している`BasicToolBarUIのgetDockingConstraint`メソッドが`private`のため、サンプルコードでは、これコピーしてすこしだけ条件を変更した`isHorizontalDockingConstraint`メソッドを作成しています。
+ドッキングできるかどうかを判定している`BasicToolBarUIのgetDockingConstraint`メソッドが`private`のため、サンプルコードでは、これをコピーしてすこしだけ条件を変更した`isHorizontalDockingConstraint`メソッドを作成しています。
 
 - - - -
-`BorderLayout`の`WEST`と`EAST`に、適当にダミーコンポーネントを配置するだけでも、同様にドッキングをブロック出来るようです。こちらの方が、`LookAndFeel`に影響もなく簡単です。
+`BorderLayout`の`WEST`と`EAST`に、適当なダミーコンポーネント(例えばサイズ`0`の`Box`)を配置するだけで、同様にドッキングをブロック出来るようです。こちらの方が、`LookAndFeel`への影響もなく簡単です。
 
 <pre class="prettyprint"><code>JPanel panel = new JPanel(new BorderLayout());
 panel.add(toolbar, BorderLayout.NORTH);

@@ -124,9 +124,8 @@ if(a instanceof BasicComboPopup) {
 }
 </code></pre>
 
-- - - -
-- メモ: 削除ボタンがクリックされてもドロップダウンリストは表示されたままになるように、`MutableComboBoxModel#removeElementAt(index);`のあとで`comboBox.showPopup();`
-    - `BasicComboPopup`が、フレーム外に表示されている場合(`Heavy weight`)、一旦閉じたあとで再度開かれるように見える
+- 削除ボタンがクリックされてもドロップダウンリストは表示状態のまま残るように、`MutableComboBoxModel#removeElementAt(index);`のあとで`comboBox.showPopup();`を実行
+- `BasicComboPopup`が、フレーム外に表示されている場合(`Heavy weight`)、一旦閉じたあとで再度開かれるように見える
 
 <!-- dummy comment line for breaking list -->
 

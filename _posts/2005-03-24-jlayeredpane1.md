@@ -13,13 +13,7 @@ Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24
 ## 概要
 背景画像を表示可能な`JLayeredPane`に付箋紙を表示するサンプル。
 
-- &jar2;
-- {% src %}
-- {% svn %}
-
-<!-- dummy comment line for breaking list -->
-
-![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOrYdIcmI/AAAAAAAAAcw/Ol4ZcH6Pw48/s800/JLayeredPane1.png)
+{% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOrYdIcmI/AAAAAAAAAcw/Ol4ZcH6Pw48/s800/JLayeredPane1.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>/** 2005/03/24

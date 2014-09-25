@@ -46,8 +46,9 @@ scroll.setColumnHeader(new JViewport() {
           }
         });
 </code></pre>
-    - `viewport.setPreferredSize(...)`と設定しても可…?
-    - `JTableHeader#getHeight()`をオーバーライドすると、ヘッダ文字列などの描画だけ(`getHeight()`は`JTableHeader#getHeaderRect()`で使用されている)変更される
+    - `viewport.setPreferredSize(...)`と設定しても可?
+    - `JTableHeader#getHeight()`をオーバーライドすると、ヘッダ文字列などの描画だけ変更される
+        - `getHeight()`は`JTableHeader#getHeaderRect()`で使用されているため
 
 <!-- dummy comment line for breaking list -->
 

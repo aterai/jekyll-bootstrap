@@ -62,7 +62,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-21
     - このサンプルで使用している`FlowLayout`では、`JLabel`に設定する文字列の長さで後続のコンポーネントの位置が変化するので、`Component#doLayout()`が必要
     - ただし、同じ行の場合は描画用コンポーネントも前回と同じはずなのでレイアウトを更新する必要はない
     - [JListのセル内にJButtonを配置する](http://terai.xrea.jp/Swing/ButtonsInListCell.html)などのように、すべての行のレイアウトが同じ(内容に応じて変化しない)場合も同様に更新する必要はない
-- JList基準のカーソル座標を描画用コンポーネント基準に変更
+- `JList`基準のカーソル座標を描画用コンポーネント基準に変更
 - `SwingUtilities.getDeepestComponentAt(...);`で描画用コンポーネントから変更した座標の下にある子コンポーネントを取得
 - 取得した子コンポーネントのカーソルを`JList`のカーソルとして設定
 

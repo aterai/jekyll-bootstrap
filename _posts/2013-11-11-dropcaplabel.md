@@ -70,8 +70,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
 
 - 先頭一文字を`Shape`として取得し拡大して表示
 - 残りの文字から`AttributedString`を作成
-- 拡大した先頭文字の高さに行のy座標が収まる場合は、`JLabel`の幅から先頭文字幅を除いた幅に収まる文字列を`LineBreakMeasurer`で取得し描画
-- 拡大した先頭文字の高さを行のy座標が超えた場合は、`JLabel`の幅に収まる文字列を`LineBreakMeasurer`で取得し描画
+- 拡大した先頭文字の高さに行の`y`座標が収まる場合は、`JLabel`の幅から先頭文字幅を除いた幅に収まる文字列を`LineBreakMeasurer`で取得し描画
+- 拡大した先頭文字の高さを行の`y`座標が超えた場合は、`JLabel`の幅に収まる文字列を`LineBreakMeasurer`で取得し描画
 
 <!-- dummy comment line for breaking list -->
 

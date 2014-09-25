@@ -91,7 +91,7 @@ private static AbstractButton makeButton(String title, Action action) {
 
 ## 解説
 - `JMenuItem`
-    - `JMenuItem#getPreferredSize()`をオーバーライドして、挿入するJButtonを考慮したサイズを返すように変更
+    - `JMenuItem#getPreferredSize()`をオーバーライドして、挿入する`JButton`を考慮したサイズを返すように変更
     - `JMenuItem`自体は、選択不可になるように`JMenuItem#setEnabled(false)`を設定
         - `JMenuItem#setEnabled(false)`の状態でも文字色は常に黒になるように、`JMenuItem#fireStateChanged`をオーバーライドして`setForeground(Color.BLACK);`を設定
         - [JRadioButtonの文字色を変更](http://terai.xrea.jp/Swing/RadioButtonTextColor.html)
