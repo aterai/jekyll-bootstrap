@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JWindowをデスクトップにスライドインで表示する
 category: swing
 folder: SlideInNotificationWindow
+title: JWindowをデスクトップにスライドインで表示する
 tags: [JWindow, JOptionPane, Animation]
 author: aterai
+pubdate: 2014-08-04T16:21:27+09:00
+description: JOptionPaneを追加したJWindowを、スライドインアニメーションを使ってデスクトップ上に表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-04
-
 ## 概要
 `JOptionPane`を追加した`JWindow`を、スライドインアニメーションを使ってデスクトップ上に表示します。
 

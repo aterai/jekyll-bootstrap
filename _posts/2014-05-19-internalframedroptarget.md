@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrame間でのドラッグ＆ドロップによるJTableの行入れ替え
 category: swing
 folder: InternalFrameDropTarget
+title: JInternalFrame間でのドラッグ＆ドロップによるJTableの行入れ替え
 tags: [JInternalFrame, JTable, DragAndDrop]
 author: aterai
+pubdate: 2014-05-19T00:37:47+09:00
+description: JInternalFrame間でJTableの行をドラッグ＆ドロップを使って入れ替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-19
-
 ## 概要
 `JInternalFrame`間で`JTable`の行をドラッグ＆ドロップを使って入れ替えます。
 

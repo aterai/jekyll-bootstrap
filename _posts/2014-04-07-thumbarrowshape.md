@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderのつまみの形状を変更
 category: swing
 folder: ThumbArrowShape
+title: JSliderのつまみの形状を変更
 tags: [JSlider, LookAndFeel]
 author: aterai
+pubdate: 2014-04-07T00:03:19+09:00
+description: JSliderのつまみの形状を目盛り表示ありの場合と同じになるよう変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-07
-
 ## 概要
 `JSlider`のつまみの形状を目盛り表示ありの場合と同じになるよう変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fontのアウトラインから輪郭を取得する
 category: swing
 folder: FontSilhouette
+title: Fontのアウトラインから輪郭を取得する
 tags: [Font, PathIterator, Icon, AffineTransform, Shape, JLabel]
 author: aterai
+pubdate: 2013-09-16T00:01:42+09:00
+description: Fontから取得した字形の輪郭を抽出し、縁取りや内部の塗り潰しなどを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-16
-
 ## 概要
 `Font`から取得した字形の輪郭を抽出し、縁取りや内部の塗り潰しなどを行います。このサンプルは、[java - 'Fill' Unicode characters in labels - Stack Overflow](http://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)に投稿されているコードを参考にしています。
 
@@ -62,7 +61,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-16
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `src.zip`などがダウンロードできない状態(上げ忘れ？)だったのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-06 (金) 16:37:48
+- `src.zip`などがダウンロードできない状態(上げ忘れ？)だったのを修正。 -- *aterai* 2013-12-06 (金) 16:37:48
 
 <!-- dummy comment line for breaking list -->
-

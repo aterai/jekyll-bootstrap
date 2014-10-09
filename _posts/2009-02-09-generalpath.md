@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GeneralPathなどで星型図形を作成する
 category: swing
 folder: GeneralPath
+title: GeneralPathなどで星型図形を作成する
 tags: [GeneralPath, Path2D, Polygon, Icon, AffineTransform]
 author: aterai
+pubdate: 2009-02-09T18:26:33+09:00
+description: GeneralPathなどを使って星型の図形をパネルに描画したり、アイコンを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-09
-
 ## 概要
 `GeneralPath`などを使って星型の図形をパネルに描画したり、アイコンを作成します。
 

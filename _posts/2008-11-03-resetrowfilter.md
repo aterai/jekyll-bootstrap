@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのRowFilterを一旦解除してソート
 category: swing
 folder: ResetRowFilter
+title: JTableのRowFilterを一旦解除してソート
 tags: [JTable, RowFilter, TableRowSorter]
 author: aterai
+pubdate: 2008-11-03T16:35:24+09:00
+description: JTableのRowFilterを一旦解除してソートし、再びフィルタを設定することで表示される行を更新します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-03
-
 ## 概要
 `JTable`の`RowFilter`を一旦解除してソートし、再びフィルタを設定することで表示される行を更新します。
 
@@ -74,7 +73,6 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- もっと簡単な方法がありそう・・・。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-03 (月) 16:35:24
+- もっと簡単な方法がありそう・・・。 -- *aterai* 2008-11-03 (月) 16:35:24
 
 <!-- dummy comment line for breaking list -->
-

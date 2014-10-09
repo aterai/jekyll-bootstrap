@@ -1,15 +1,14 @@
 ---
 layout: post
-title: RowFilterでJTableの行をフィルタリング
 category: swing
 folder: RowFilter
+title: RowFilterでJTableの行をフィルタリング
 tags: [JTable, TableRowSorter, RowFilter]
 author: aterai
+pubdate: 2007-09-03T15:45:16+09:00
+description: JDK 6で導入されたTableRowSorterにRowFilterを設定して、行のフィルタリングを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-03
-
 ## 概要
 `JDK 6`で導入された`TableRowSorter`に`RowFilter`を設定して、行のフィルタリングを行います。
 
@@ -52,7 +51,6 @@ sorter.setRowFilter(RowFilter.andFilter(filters));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 「`IndexOutOfBoundsException`が発生する…」は、[TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)に移動しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-04 (金) 15:19:12
+- 「`IndexOutOfBoundsException`が発生する…」は、[TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)に移動しました。 -- *aterai* 2011-02-04 (金) 15:19:12
 
 <!-- dummy comment line for breaking list -->
-

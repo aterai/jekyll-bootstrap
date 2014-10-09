@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのドロップダウンリストが表示する最大項目数を設定する
 category: swing
 folder: MaximumRowCount
+title: JComboBoxのドロップダウンリストが表示する最大項目数を設定する
 tags: [JComboBox, JList]
 author: aterai
+pubdate: 2013-02-04T00:43:54+09:00
+description: JComboBoxのドロップダウンリストでスクロールバーを使用しないで表示可能な項目数を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-04
-
 ## 概要
 `JComboBox`のドロップダウンリストでスクロールバーを使用しないで表示可能な項目数を変更します。
 

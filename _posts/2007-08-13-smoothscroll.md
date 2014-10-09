@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaでSmoothScrollによる行移動
 category: swing
 folder: SmoothScroll
+title: JTextAreaでSmoothScrollによる行移動
 tags: [JScrollPane, JViewport, Animation, JTextArea]
 author: aterai
+pubdate: 2007-08-13T13:01:23+09:00
+description: SmoothScrollアニメーション有りで任意の行まで移動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-13
-
 ## 概要
 `SmoothScroll`アニメーション有りで任意の行まで移動します。
 

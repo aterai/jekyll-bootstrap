@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserにファイルフィルタを追加
 category: swing
 folder: FileFilter
+title: JFileChooserにファイルフィルタを追加
 tags: [JFileChooser, FileFilter]
 author: aterai
+pubdate: 2003-11-17
+description: JFileChooserにファイルフィルタを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-17
-
 ## 概要
 `JFileChooser`にファイルフィルタを追加します。
 
@@ -53,9 +52,9 @@ fileChooser.addChoosableFileFilter(filter);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `jpg` → `.jpg` -- [MT](http://terai.xrea.jp/MT.html) 2003-12-24 (水) 12:15:54
-    - 直しておきました。どもです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2003-12-24 (水) 12:41:13
-- `addChoosableFileFilter`を何度も呼ぶと最後に追加されたものがデフォルトになるが、例えば`2`番目に追加した`filter`を最後に再び追加すると`2`番目がデフォルトになる。 -- [Y](http://terai.xrea.jp/Y.html) 2006-11-27 (月) 15:21:26
-    - `addChoosableFileFilter(FileFilter)`は、その`FileFilter`がすでに含まれている場合は、`setFileFilter(FileFilter)`だけ実行するみたいですね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-11-28 (火) 16:44:40
+- `jpg` → `.jpg` -- *MT* 2003-12-24 (水) 12:15:54
+    - 直しておきました。どもです。 -- *aterai* 2003-12-24 (水) 12:41:13
+- `addChoosableFileFilter`を何度も呼ぶと最後に追加されたものがデフォルトになるが、例えば`2`番目に追加した`filter`を最後に再び追加すると`2`番目がデフォルトになる。 -- *Y* 2006-11-27 (月) 15:21:26
+    - `addChoosableFileFilter(FileFilter)`は、その`FileFilter`がすでに含まれている場合は、`setFileFilter(FileFilter)`だけ実行するみたいですね。 -- *aterai* 2006-11-28 (火) 16:44:40
 
 <!-- dummy comment line for breaking list -->

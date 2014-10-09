@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolBarでアイコンボタンを右寄せ
 category: swing
 folder: ToolBarLayout
+title: JToolBarでアイコンボタンを右寄せ
 tags: [JToolBar, JMenuBar, BoxLayout, JButton, Focus]
 author: aterai
+pubdate: 2006-01-23T14:20:11+09:00
+description: JToolBarでアイコンボタンを右寄せ、下寄せで表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-23
-
 ## 概要
 `JToolBar`でアイコンボタンを右寄せ、下寄せで表示します。
 
@@ -59,8 +58,7 @@ toolbar.add(createToolbarButton(url3));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 環境によって、上記のサンプルが右寄せにならない場合もあるようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-22 (水) 15:58:10
-- `setRequestFocusEnabled(false)`、スクリーンショット更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-27 (月) 15:20:38
+- 環境によって、上記のサンプルが右寄せにならない場合もあるようです。 -- *aterai* 2006-03-22 (水) 15:58:10
+- `setRequestFocusEnabled(false)`、スクリーンショット更新。 -- *aterai* 2008-10-27 (月) 15:20:38
 
 <!-- dummy comment line for breaking list -->
-

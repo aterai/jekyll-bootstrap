@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fontをファイルから取得
 category: swing
 folder: CreateFont
+title: Fontをファイルから取得
 tags: [Font, JTextArea]
 author: aterai
+pubdate: 2005-03-07T02:07:13+09:00
+description: 独自フォント(mona.ttf)をファイルから読み込み、ASCII artを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
-
 ## 概要
 独自フォント(`mona.ttf`)をファイルから読み込み、`ASCII art`を表示します。
 
@@ -61,9 +60,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-07
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JDK 1.5.0_01`でずれる？ -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-07 11:19:11 (月)
-- 応急処置済み -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-07 11:32:44 (月)
-- メモ:[Bug ID: 6313541 Fonts loaded with createFont cannot be converted into FontUIResource](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6313541) -- [aterai](http://terai.xrea.jp/aterai.html) 2006-05-25 (木) 23:34:18
+- `JDK 1.5.0_01`でずれる？ -- *aterai* 2005-03-07 11:19:11 (月)
+- 応急処置済み -- *aterai* 2005-03-07 11:32:44 (月)
+- メモ:[Bug ID: 6313541 Fonts loaded with createFont cannot be converted into FontUIResource](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6313541) -- *aterai* 2006-05-25 (木) 23:34:18
 
 <!-- dummy comment line for breaking list -->
-

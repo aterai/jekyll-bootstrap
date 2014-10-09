@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JRootPaneの背景として画像を表示
 category: swing
 folder: RootPaneBackground
+title: JRootPaneの背景として画像を表示
 tags: [JRootPane, BufferedImage, ContentPane, JDesktopPane, Translucent, Transparent]
 author: aterai
+pubdate: 2013-01-07T00:31:26+09:00
+description: JRootPaneの背景として画像を表示しています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-07
-
 ## 概要
 `JRootPane`の背景として画像を表示しています。
 

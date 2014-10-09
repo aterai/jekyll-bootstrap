@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxにAnimated GIFを表示する
 category: swing
 folder: AnimatedIconInComboBox
+title: JComboBoxにAnimated GIFを表示する
 tags: [JComboBox, ImageIcon, ImageObserver, BasicComboPopup, JList]
 author: aterai
+pubdate: 2012-03-12T17:23:26+09:00
+description: JComboBoxと、そのドロップダウンリストにAnimated GIFを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-12
-
 ## 概要
 `JComboBox`と、そのドロップダウンリストに`Animated GIF`を表示します。
 

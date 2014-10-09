@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameのIconを変更
 category: swing
 folder: FrameIcon
+title: JFrameのIconを変更
 tags: [JFrame, Icon, Image]
 author: aterai
+pubdate: 2004-08-30T05:11:06+09:00
+description: JFrameのタイトルバー左に表示されているアイコンを別の画像に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-30
-
 ## 概要
 `JFrame`のタイトルバー左に表示されているアイコンを別の画像に変更します。
 
@@ -33,7 +32,6 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~`JDK 1.6.0`で試すとアイコンの表示が乱れる？ -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-29 (木) 17:57:16~~
+- ~~`JDK 1.6.0`で試すとアイコンの表示が乱れる？ -- *aterai* 2006-06-29 (木) 17:57:16~~
 
 <!-- dummy comment line for breaking list -->
-

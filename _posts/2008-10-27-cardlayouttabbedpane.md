@@ -1,15 +1,14 @@
 ---
 layout: post
-title: CardLayoutを使ってJTabbedPane風のコンポーネントを作成
 category: swing
 folder: CardLayoutTabbedPane
+title: CardLayoutを使ってJTabbedPane風のコンポーネントを作成
 tags: [CardLayout, GridLayout, LayoutManager, JRadioButton, JTableHeader, JTabbedPane]
 author: aterai
+pubdate: 2008-10-27T13:54:48+09:00
+description: CardLayoutとJRadioButtonやJTableHeaderを組み合わせてJTabbedPane風のコンポーネントを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
-
 ## 概要
 `CardLayout`と`JRadioButton`や`JTableHeader`を組み合わせて`JTabbedPane`風のコンポーネントを作成します。
 
@@ -71,7 +70,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-27
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `CloseButton`(ダミー)を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-29 (水) 18:14:02
+- `CloseButton`(ダミー)を追加。 -- *aterai* 2008-10-29 (水) 18:14:02
 
 <!-- dummy comment line for breaking list -->
-

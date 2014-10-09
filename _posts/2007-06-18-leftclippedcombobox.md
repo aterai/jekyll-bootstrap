@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのアイテム文字列を左側からクリップ
 category: swing
 folder: LeftClippedComboBox
+title: JComboBoxのアイテム文字列を左側からクリップ
 tags: [JComboBox, ListCellRenderer, ArrowButton]
 author: aterai
+pubdate: 2007-06-18T19:09:42+09:00
+description: JComboBoxのアイテム文字列がコンポーネントより長い場合、これを左側からクリップします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-18
-
 ## 概要
 `JComboBox`のアイテム文字列がコンポーネントより長い場合、これを左側からクリップします。
 
@@ -78,7 +77,6 @@ combo02.setRenderer(new DefaultListCellRenderer() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 参考リンク、スクリーンショット更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-13 (木) 14:26:39
+- 参考リンク、スクリーンショット更新。 -- *aterai* 2008-11-13 (木) 14:26:39
 
 <!-- dummy comment line for breaking list -->
-

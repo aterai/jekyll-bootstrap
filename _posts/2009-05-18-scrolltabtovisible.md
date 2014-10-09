@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのTabAreaをスクロール
 category: swing
 folder: ScrollTabToVisible
+title: JTabbedPaneのTabAreaをスクロール
 tags: [JTabbedPane, JViewport, JSlider]
 author: aterai
+pubdate: 2009-05-18T14:51:20+09:00
+description: JTabbedPaneのTabAreaをJSliderを使ってスクロールします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-18
-
 ## 概要
 `JTabbedPane`の`TabArea`を`JSlider`を使ってスクロールします。
 

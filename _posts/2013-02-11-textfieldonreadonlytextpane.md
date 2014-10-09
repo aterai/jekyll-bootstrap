@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldを編集不可のJTextPaneに追加する
 category: swing
 folder: TextFieldOnReadOnlyTextPane
+title: JTextFieldを編集不可のJTextPaneに追加する
 tags: [JTextPane, JTextField, JScrollPane, Focus]
 author: aterai
+pubdate: 2013-02-11T00:11:13+09:00
+description: JTextFieldを空欄として編集不可にしたJTextPaneに追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-11
-
 ## 概要
 `JTextField`を空欄として編集不可にした`JTextPane`に追加します。
 

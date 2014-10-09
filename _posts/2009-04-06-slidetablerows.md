@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableで行の追加、削除アニメーション
 category: swing
 folder: SlideTableRows
+title: JTableで行の追加、削除アニメーション
 tags: [JTable, Animation]
 author: aterai
+pubdate: 2009-04-06T14:03:11+09:00
+description: JTableの行追加や削除をスライドアニメーションで強調します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-06
-
 ## 概要
 `JTable`の行追加や削除をスライドアニメーションで強調します。
 

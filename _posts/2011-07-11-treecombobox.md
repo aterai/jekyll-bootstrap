@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのItemをTree状に表示する
 category: swing
 folder: TreeComboBox
+title: JComboBoxのItemをTree状に表示する
 tags: [JComboBox, TreeModel]
 author: aterai
+pubdate: 2011-07-11T15:16:42+09:00
+description: JComboBoxのドロップダウンリストに表示するItemをTree状に配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-11
-
 ## 概要
 `JComboBox`のドロップダウンリストに表示する`Item`を`Tree`状に配置します。
 
@@ -114,7 +113,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-11
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `src.zip`などが正しいディレクトリに配置されてなかったのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-13 (水) 19:02:23
+- `src.zip`などが正しいディレクトリに配置されてなかったのを修正。 -- *aterai* 2011-07-13 (水) 19:02:23
 
 <!-- dummy comment line for breaking list -->
-

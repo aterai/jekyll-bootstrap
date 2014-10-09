@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPopupMenuを半透明にする
 category: swing
 folder: TranslucentPopupMenu
+title: JPopupMenuを半透明にする
 tags: [JPopupMenu, JMenuItem, JWindow, Translucent]
 author: aterai
+pubdate: 2012-02-27T14:25:17+09:00
+description: JPopupMenuを半透明にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-27
-
 ## 概要
 `JPopupMenu`を半透明にします。
 
@@ -89,8 +88,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-27
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7156657)、[jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-10 (金) 19:22:39
-    - `JDK 1.7.0_06`で修正されている？ [Java™ SE Development Kit 7 Update 6 Bug Fixes](http://www.oracle.com/technetwork/java/javase/2col/7u6-bugfixes-1733378.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-15 (水) 13:55:37
+- メモ: [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7156657)、[jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b) -- *aterai* 2012-08-10 (金) 19:22:39
+    - `JDK 1.7.0_06`で修正されている？ [Java™ SE Development Kit 7 Update 6 Bug Fixes](http://www.oracle.com/technetwork/java/javase/2col/7u6-bugfixes-1733378.html) -- *aterai* 2012-08-15 (水) 13:55:37
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLayerで隣接する別コンポーネント上に縁を描画
 category: swing
 folder: OverlapBorderPaintLayer
+title: JLayerで隣接する別コンポーネント上に縁を描画
 tags: [JLayer, JRadioButton, JPanel, Icon]
 author: aterai
+pubdate: 2013-12-16T00:12:50+09:00
+description: JLayerを使用して隣接する別コンポーネント上にも縁や影を描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-16
-
 ## 概要
 `JLayer`を使用して隣接する別コンポーネント上にも縁や影を描画します。
 

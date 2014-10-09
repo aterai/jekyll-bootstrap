@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPane風のタブ配置をレイアウトマネージャーで変更
 category: swing
 folder: NewTabButton
+title: JTabbedPane風のタブ配置をレイアウトマネージャーで変更
 tags: [CardLayout, LayoutManager, JRadioButton, JTabbedPane]
 author: aterai
+pubdate: 2009-06-08T13:05:45+09:00
+description: CardLayoutとJRadioButtonで作成したJTabbedPane風コンポーネントのタブ配置を自作レイアウトマネージャーで変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
-
 ## 概要
 `CardLayout`と`JRadioButton`で作成した`JTabbedPane`風コンポーネントのタブ配置を自作レイアウトマネージャーで変更します。
 
@@ -98,7 +97,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タブの切り替えは、`mouseClicked`ではなく、`mousePressed`した時に行うように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-21 (水) 18:46:30
+- タブの切り替えは、`mouseClicked`ではなく、`mousePressed`した時に行うように変更。 -- *aterai* 2012-03-21 (水) 18:46:30
 
 <!-- dummy comment line for breaking list -->
-

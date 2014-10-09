@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノード編集をコミット
 category: swing
 folder: InvokesStopCellEditing
+title: JTreeのノード編集をコミット
 tags: [JTree]
 author: aterai
+pubdate: 2014-02-24T00:00:29+09:00
+description: JTreeのノード編集中に割り込みが発生した場合、変更の自動保存を行うかどうかを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-24
-
 ## 概要
 `JTree`のノード編集中に割り込みが発生した場合、変更の自動保存を行うかどうかを設定します。
 

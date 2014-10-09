@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextPaneに修飾した文字列を挿入
 category: swing
 folder: StyleConstants
+title: JTextPaneに修飾した文字列を挿入
 tags: [JTextPane, StyledDocument]
 author: aterai
+pubdate: 2004-01-12
+description: JTextPaneに、スタイル付けした文字列を挿入して、ログ風に表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-12
-
 ## 概要
 `JTextPane`に、スタイル付けした文字列を挿入して、ログ風に表示します。
 
@@ -46,7 +45,6 @@ StyleConstants.setForeground(error, Color.RED);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 一々、`SimpleAttributeSet`を生成していたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-06 (月) 22:24:36
+- 一々、`SimpleAttributeSet`を生成していたのを修正。 -- *aterai* 2010-12-06 (月) 22:24:36
 
 <!-- dummy comment line for breaking list -->
-

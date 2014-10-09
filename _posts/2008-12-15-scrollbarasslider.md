@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarをJSliderとして使用する
 category: swing
 folder: ScrollBarAsSlider
+title: JScrollBarをJSliderとして使用する
 tags: [JScrollBar, JSlider, JSpinner]
 author: aterai
+pubdate: 2008-12-15T13:23:29+09:00
+description: JScrollBarをJSliderの代わりとして使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-15
-
 ## 概要
 `JScrollBar`を`JSlider`の代わりとして使用します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSplitPaneに2つのJTableを配置してスクロールを同期する
 category: swing
 folder: SynchronizedScrollingTables
+title: JSplitPaneに2つのJTableを配置してスクロールを同期する
 tags: [JTable, JScrollPane, JScrollBar, JSplitPane]
 author: aterai
+pubdate: 2012-11-12T02:37:41+09:00
+description: JSplitPaneの左右に、JTableをそれぞれ配置し、スクロールや追加などが同期するようにモデルを共有します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-12
-
 ## 概要
 `JSplitPane`の左右に、`JTable`をそれぞれ配置し、スクロールや追加などが同期するようにモデルを共有します。
 

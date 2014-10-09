@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのフォーカスを一行全体に適用する
 category: swing
 folder: LineFocusTable
+title: JTableのフォーカスを一行全体に適用する
 tags: [JTable, Focus, Border]
 author: aterai
+pubdate: 2006-06-05T12:54:07+09:00
+description: JTableのフォーカスをセルではなく、一行全体に掛かっているように表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-05
-
 ## 概要
 `JTable`のフォーカスをセルではなく、一行全体に掛かっているように表示します。
 

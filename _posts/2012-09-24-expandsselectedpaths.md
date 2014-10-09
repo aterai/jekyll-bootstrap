@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの選択されたノードを展開する
 category: swing
 folder: ExpandsSelectedPaths
+title: JTreeの選択されたノードを展開する
 tags: [JTree, TreePath]
 author: aterai
+pubdate: 2012-09-24T13:08:25+09:00
+description: JTreeの選択されたノードまでのパスをすべて展開して可視状態にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-24
-
 ## 概要
 `JTree`の選択されたノードまでのパスをすべて展開して可視状態にします。
 

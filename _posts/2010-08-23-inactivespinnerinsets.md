@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerを編集不可にした場合の内余白
 category: swing
 folder: InactiveSpinnerInsets
+title: JSpinnerを編集不可にした場合の内余白
 tags: [JSpinner, JTextField, Border, UIManager, LookAndFeel]
 author: aterai
+pubdate: 2010-08-23T15:50:45+09:00
+description: JSpinnerを編集不可にした場合の背景色や内部余白の色などを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-23
-
 ## 概要
 `JSpinner`を編集不可にした場合の背景色や内部余白の色などを変更します。
 

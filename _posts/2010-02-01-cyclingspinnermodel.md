@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerのモデルの値をループさせる
 category: swing
 folder: CyclingSpinnerModel
+title: JSpinnerのモデルの値をループさせる
 tags: [JSpinner, SpinnerNumberModel]
 author: aterai
+pubdate: 2010-02-01T01:53:39+09:00
+description: JSpinnerのモデルで値が最大、最小を超えるとループするように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-01
-
 ## 概要
 `JSpinner`のモデルで値が最大、最小を超えるとループするように設定します。
 

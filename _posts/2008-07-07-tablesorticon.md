@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのソートアイコンを変更
 category: swing
 folder: TableSortIcon
+title: JTableのソートアイコンを変更
 tags: [JTable, JTableHeader, Icon, UIManager]
 author: aterai
+pubdate: 2008-07-07T11:40:12+09:00
+description: JTableのソートアイコンを非表示にしたり、別の画像に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-07
-
 ## 概要
 `JTable`のソートアイコンを非表示にしたり、別の画像に変更します。
 

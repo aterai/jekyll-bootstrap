@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerの表記を16進数にする
 category: swing
 folder: HexFormatterSpinner
+title: JSpinnerの表記を16進数にする
 tags: [JSpinner, DefaultFormatter, Font]
 author: aterai
+pubdate: 2013-06-03T04:18:20+09:00
+description: JSpinnerの表記を16進数にして、そのUnicodeコードポイントに割り当てられた文字を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-03
-
 ## 概要
 `JSpinner`の表記を`16`進数にして、その`Unicode`コードポイントに割り当てられた文字を表示します。
 

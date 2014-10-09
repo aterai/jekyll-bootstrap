@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollPaneのスクロール量を変更
 category: swing
 folder: ScrollIncrement
+title: JScrollPaneのスクロール量を変更
 tags: [JScrollPane, JScrollBar]
 author: aterai
+pubdate: 2003-12-01
+description: スクロールがホイールの回転でスムーズに移動しない(遅い)場合は、JScrollPaneのスクロール量を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-01
-
 ## 概要
 スクロールがホイールの回転でスムーズに移動しない(遅い)場合は、`JScrollPane`のスクロール量を変更します。
 
@@ -219,7 +218,6 @@ public class Bbb extends JPanel{
 </code></pre>
 
 ## コメント
-- `JScrollBar`の`UnitIncrement`と`BlockIncrement`についてのメモを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-07-10 (火) 21:03:39
+- `JScrollBar`の`UnitIncrement`と`BlockIncrement`についてのメモを追加。 -- *aterai* 2012-07-10 (火) 21:03:39
 
 <!-- dummy comment line for breaking list -->
-

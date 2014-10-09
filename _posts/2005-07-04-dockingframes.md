@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameの移動を同期
 category: swing
 folder: DockingFrames
+title: JFrameの移動を同期
 tags: [JFrame, ComponentListener]
 author: aterai
+pubdate: 2005-07-04T07:42:08+09:00
+description: JFrameを2つ並べて作成し、その位置関係を保ったまま移動できるようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-04
-
 ## 概要
 `JFrame`を`2`つ並べて作成し、その位置関係を保ったまま移動できるようにします。
 

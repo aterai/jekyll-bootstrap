@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrameを固定
 category: swing
 folder: ImmovableFrame
+title: JInternalFrameを固定
 tags: [JInternalFrame, MouseMotionListener]
 author: aterai
+pubdate: 2005-10-10
+description: JInternalFrameをマウスなどで移動できないように固定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-10
-
 ## 概要
 `JInternalFrame`をマウスなどで移動できないように固定します。
 

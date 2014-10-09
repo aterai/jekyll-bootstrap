@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneにリンクを追加
 category: swing
 folder: HyperlinkListener
+title: JEditorPaneにリンクを追加
 tags: [JEditorPane, Html, HTMLEditorKit, HyperlinkListener, JButton]
 author: aterai
+pubdate: 2010-05-10T16:07:06+09:00
+description: JEditorPaneにリンクを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-10
-
 ## 概要
 `JEditorPane`にリンクを追加します。
 
@@ -76,8 +75,8 @@ try {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- いつもお世話になっております。`JEditorPane`に画像ファイルを表示したいですが、画像サイズが揃えていないため、一部表示したり、全部表示したりなどの現状です。そこで、サイズに関係なく、各画像ファイルを全体表示したいです。可能でしょうか？もしかしたら、`JEditorPane`ではなく、別の`Swing`コンポを使う必要があるかなと思います。画像全体表示の方法を教えてください。よろしくお願いいたします。 -- [panda](http://terai.xrea.jp/panda.html) 2011-07-27 (水) 08:57:42
-    - こんばんは。「サイズに関係なく、各画像ファイルを全体表示したい」とは、画像を縮小してすべて同じサイズのサムネイルを表示したいということでしょうか？ 画質にこだわらないなら、以下のように`img`タグの属性で幅と高さを指定する方法があります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-07-27 (水) 18:21:59
+- いつもお世話になっております。`JEditorPane`に画像ファイルを表示したいですが、画像サイズが揃えていないため、一部表示したり、全部表示したりなどの現状です。そこで、サイズに関係なく、各画像ファイルを全体表示したいです。可能でしょうか？もしかしたら、`JEditorPane`ではなく、別の`Swing`コンポを使う必要があるかなと思います。画像全体表示の方法を教えてください。よろしくお願いいたします。 -- *panda* 2011-07-27 (水) 08:57:42
+    - こんばんは。「サイズに関係なく、各画像ファイルを全体表示したい」とは、画像を縮小してすべて同じサイズのサムネイルを表示したいということでしょうか？ 画質にこだわらないなら、以下のように`img`タグの属性で幅と高さを指定する方法があります。 -- *aterai* 2011-07-27 (水) 18:21:59
 
 <!-- dummy comment line for breaking list -->
 
@@ -113,4 +112,3 @@ public class ThumbnailTest {
   }
 }
 </code></pre>
-

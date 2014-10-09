@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの展開、折畳みアイコンを非表示にする
 category: swing
 folder: TreeExpandedIcon
+title: JTreeの展開、折畳みアイコンを非表示にする
 tags: [JTree, Icon, UIManager]
 author: aterai
+pubdate: 2010-05-31T15:21:37+09:00
+description: JTreeの展開、折畳みアイコンを変更して非表示にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-31
-
 ## 概要
 `JTree`の展開、折畳みアイコンを変更して非表示にします。
 

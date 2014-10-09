@@ -1,15 +1,14 @@
 ---
 layout: post
-title: UndoManagerでJTextFieldのUndo、Redoを行う
 category: swing
 folder: UndoManager
+title: UndoManagerでJTextFieldのUndo、Redoを行う
 tags: [JTextField, JTextComponent, UndoManager, ActionMap, Document]
 author: aterai
+pubdate: 2009-06-15T13:35:15+09:00
+description: JTextFieldのドキュメントにUndoManagerを追加して、Undo、Redoを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-15
-
 ## 概要
 `JTextField`のドキュメントに`UndoManager`を追加して、`Undo`、`Redo`を行います。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: WindowAncestor(親ウィンドウ)の取得
 category: swing
 folder: WindowAncestor
+title: WindowAncestor(親ウィンドウ)の取得
 tags: [JFrame, Window]
 author: aterai
+pubdate: 2005-05-09
+description: SwingUtilities.getWindowAncestor()などで、親ウィンドウを取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-09
-
 ## 概要
 `SwingUtilities.getWindowAncestor()`などで、親ウィンドウを取得します。
 
@@ -66,8 +65,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-09
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JComponent#getTopLevelAncestor()`でもほぼ同じ内容が取得できるような感じですね（自分自身からスタートするか、親からスタートするかの違いはあるようですが）。ただ、この場合、`Window`の他に`Applet`が戻される場合もあるようですが。 -- [syo](http://terai.xrea.jp/syo.html) 2006-08-24 (木) 17:07:25
-    - 補足ありがとうございます。`Window`か`Applet`か気にする必要が無いのは便利そうですね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-08-25 (金) 12:46:43
+- `JComponent#getTopLevelAncestor()`でもほぼ同じ内容が取得できるような感じですね（自分自身からスタートするか、親からスタートするかの違いはあるようですが）。ただ、この場合、`Window`の他に`Applet`が戻される場合もあるようですが。 -- *syo* 2006-08-24 (木) 17:07:25
+    - 補足ありがとうございます。`Window`か`Applet`か気にする必要が無いのは便利そうですね。 -- *aterai* 2006-08-25 (金) 12:46:43
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneにタブを閉じるボタンを追加
 category: swing
 folder: TabWithCloseButton
+title: JTabbedPaneにタブを閉じるボタンを追加
 tags: [JTabbedPane, JButton]
 author: aterai
+pubdate: 2007-01-29T16:15:06+09:00
+description: JDK 6の新機能を使ってJTabbedPaneにタブを閉じるボタンを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-29
-
 ## 概要
 `JDK 6`の新機能を使って`JTabbedPane`にタブを閉じるボタンを追加します。
 

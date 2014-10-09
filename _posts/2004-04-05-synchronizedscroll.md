@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollPaneのスクロールを同期
 category: swing
 folder: SynchronizedScroll
+title: JScrollPaneのスクロールを同期
 tags: [JScrollPane, ChangeListener, JScrollBar, BoundedRangeModel]
 author: aterai
+pubdate: 2004-04-05T03:28:02+09:00
+description: 2つのJScrollPaneのスクロールを同期します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-05
-
 ## 概要
 `2`つの`JScrollPane`のスクロールを同期します。
 

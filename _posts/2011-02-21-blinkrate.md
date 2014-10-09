@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Caretの点滅を停止する
 category: swing
 folder: BlinkRate
+title: Caretの点滅を停止する
 tags: [JTextComponent, Caret, JTextField]
 author: aterai
+pubdate: 2011-02-21T14:49:17+09:00
+description: JTextComponentのCaretが点滅する速さを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-21
-
 ## 概要
 `JTextComponent`の`Caret`が点滅する速さを変更します。
 

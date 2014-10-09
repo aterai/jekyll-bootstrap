@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderのUIや色を変更する
 category: swing
 folder: VolumeSlider
+title: JSliderのUIや色を変更する
 tags: [JSlider]
 author: aterai
+pubdate: 2006-12-04T02:52:00+09:00
+description: JSliderのトラックやつまみ、色などを変更して、音量調節風のスライダーを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-04
-
 ## 概要
 `JSlider`のトラックやつまみ、色などを変更して、音量調節風のスライダーを作成します。
 
@@ -65,9 +64,8 @@ slider2.setForeground(Color.BLUE);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Java SE 6 Runtime (JRE) Update N build 12 Kernel Installer`だと、`NullPointerException`が発生する？ -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-03 (月) 19:34:50
-- ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](http://terai.xrea.jp/Swing/TriangleTickSlider.html)に移動 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-05-19 (水) 16:52:13
-- メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5099681) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-05-20 (木) 17:24:52
+- `Java SE 6 Runtime (JRE) Update N build 12 Kernel Installer`だと、`NullPointerException`が発生する？ -- *aterai* 2008-03-03 (月) 19:34:50
+- ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](http://terai.xrea.jp/Swing/TriangleTickSlider.html)に移動 -- *aterai* 2010-05-19 (水) 16:52:13
+- メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5099681) -- *aterai* 2010-05-20 (木) 17:24:52
 
 <!-- dummy comment line for breaking list -->
-

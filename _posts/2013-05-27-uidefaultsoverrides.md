@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Nimbusの外観をUIDefaultsで変更する
 category: swing
 folder: UIDefaultsOverrides
+title: Nimbusの外観をUIDefaultsで変更する
 tags: [NimbusLookAndFeel, UIDefaults, Painter]
 author: aterai
+pubdate: 2013-05-27T01:49:34+09:00
+description: NimbusLookAndFeelの外観をUIDefaultsを使って部分的に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-27
-
 ## 概要
 `NimbusLookAndFeel`の外観を`UIDefaults`を使って部分的に変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルがクリップされている場合のみJToolTipを表示
 category: swing
 folder: ClippedCellTooltips
+title: JTableのセルがクリップされている場合のみJToolTipを表示
 tags: [JTable, JTableHeader, TableCellRenderer, JToolTip]
 author: aterai
+pubdate: 2009-10-12T17:37:22+09:00
+description: JTableのセルがクリップされている場合のみJToolTipを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-12
-
 ## 概要
 `JTable`のセルがクリップされている場合のみ`JToolTip`を表示します。
 

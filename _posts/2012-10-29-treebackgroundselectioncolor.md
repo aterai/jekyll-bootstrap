@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの選択背景色を変更
 category: swing
 folder: TreeBackgroundSelectionColor
+title: JTreeの選択背景色を変更
 tags: [JTree, TreeCellRenderer]
 author: aterai
+pubdate: 2012-10-29T01:14:10+09:00
+description: JTreeのノード条件によって、その選択背景色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-29
-
 ## 概要
 `JTree`のノード条件によって、その選択背景色を変更します。
 

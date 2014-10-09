@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLayerで指定したコンポーネントへの入力を禁止
 category: swing
 folder: DisableInputLayer
+title: JLayerで指定したコンポーネントへの入力を禁止
 tags: [JLayer, GlassPane, InputEvent, JComponent]
 author: aterai
+pubdate: 2011-10-10T19:26:38+09:00
+description: JDK 7で導入された、JLayerを利用して、指定したコンポーネントへの入力を禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-10
-
 ## 概要
 `JDK 7`で導入された、`JLayer`を利用して、指定したコンポーネントへの入力を禁止します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxを使ってポップアップメニューをスクロール
 category: swing
 folder: BasicComboPopup
+title: JComboBoxを使ってポップアップメニューをスクロール
 tags: [BasicComboPopup, JTextPane, JComboBox]
 author: aterai
+pubdate: 2005-10-17
+description: JComboBoxを使ってスクロール可能なポップアップメニューを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-17
-
 ## 概要
 `JComboBox`を使ってスクロール可能なポップアップメニューを表示します。
 
@@ -85,12 +84,11 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 大変参考になりました。その上、マウスクリックで文字列を選定できるようにしたいですが、どうすればいかがですか？ -- [java](http://terai.xrea.jp/java.html) 2008-01-08 (火) 16:25:30
-    - どうもです。とりあえず(以前は、マウスクリックでも動作していたと思うのですが、勘違いだったのかも…？)、手抜きですが、`BasicComboPopup#installListListeners`メソッドをオーバーライドしてマウスリスナーを追加してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-08 (火) 18:23:22
-- 助かりました！感動です！ご回答ありがとうございました。 -- [java](http://terai.xrea.jp/java.html) 2008-01-10 (木) 17:38:04
-- こんにちは。いつもこのサイトを参考にさせていただいています。ようやく自分の`java`アプリケーションをリリースしました（[http://www.jdbckit.com](http://www.jdbckit.com)  まだ更新中ですが、）。次回のバージョンアップで、`Special Thanks`をバージョン情報画面に設けて、Terai Atsuhiro様のサイトを感謝対象にさせてよろしいでしょうか？ -- [java](http://terai.xrea.jp/java.html) 2008-02-22 (金) 15:13:04
-    - こんばんは。どうもです。おお、おめでとうございます。リンクの件はご自由にどうぞ。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-22 (金) 17:00:18
-    - 余談: ドキュメントに何か書く必要があるのって、`Apache Software License`でしたっけ？基本的(引用先を強調している`Tips`を除く)に、このサイトの`Tips`は、ちいさなサンプルを目指しているため、コピペしても単独ではあまり役に立たないものが多く、完全に無保証なので、ライセンスなどは気しなくても良いです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-22 (金) 17:01:08
+- 大変参考になりました。その上、マウスクリックで文字列を選定できるようにしたいですが、どうすればいかがですか？ -- *java* 2008-01-08 (火) 16:25:30
+    - どうもです。とりあえず(以前は、マウスクリックでも動作していたと思うのですが、勘違いだったのかも…？)、手抜きですが、`BasicComboPopup#installListListeners`メソッドをオーバーライドしてマウスリスナーを追加してみました。 -- *aterai* 2008-01-08 (火) 18:23:22
+- 助かりました！感動です！ご回答ありがとうございました。 -- *java* 2008-01-10 (木) 17:38:04
+- こんにちは。いつもこのサイトを参考にさせていただいています。ようやく自分の`java`アプリケーションをリリースしました（[http://www.jdbckit.com](http://www.jdbckit.com)  まだ更新中ですが、）。次回のバージョンアップで、`Special Thanks`をバージョン情報画面に設けて、Terai Atsuhiro様のサイトを感謝対象にさせてよろしいでしょうか？ -- *java* 2008-02-22 (金) 15:13:04
+    - こんばんは。どうもです。おお、おめでとうございます。リンクの件はご自由にどうぞ。 -- *aterai* 2008-02-22 (金) 17:00:18
+    - 余談: ドキュメントに何か書く必要があるのって、`Apache Software License`でしたっけ？基本的(引用先を強調している`Tips`を除く)に、このサイトの`Tips`は、ちいさなサンプルを目指しているため、コピペしても単独ではあまり役に立たないものが多く、完全に無保証なので、ライセンスなどは気しなくても良いです。 -- *aterai* 2008-02-22 (金) 17:01:08
 
 <!-- dummy comment line for breaking list -->
-

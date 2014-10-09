@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToggleButtonからポップアップメニューを開く
 category: swing
 folder: ToolButtonPopup
+title: JToggleButtonからポップアップメニューを開く
 tags: [JToggleButton, JPopupMenu, JToolBar, Icon]
 author: aterai
+pubdate: 2006-07-10T10:10:27+09:00
+description: クリックするとポップアップメニューを表示するJToggleButtonを作成し、これをツールバーに追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-10
-
 ## 概要
 クリックするとポップアップメニューを表示する`JToggleButton`を作成し、これをツールバーに追加します。
 
@@ -86,8 +85,8 @@ class MenuToggleButton extends JToggleButton {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- いつもお世話になっております。`JToggleButton`を`On/Off`時、背景色を変える方法はありますか？`jToggleButton.setBackground(Color.RED);`で試してみましたが、色変化はありませんでした。ご教示、よろしくお願いいたします -- [Panda](http://terai.xrea.jp/Panda.html) 2011-04-04 (月) 14:23:21
-- こんばんは。`JToggleButton#setBackground(Color)`は、`LookAndFeel`によっては適用されない場合があります。このため、独自の`ToggleButtonUI`を用意したり、例えば以下のような方法を使用する必要があります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-04-04 (月) 17:15:55
+- いつもお世話になっております。`JToggleButton`を`On/Off`時、背景色を変える方法はありますか？`jToggleButton.setBackground(Color.RED);`で試してみましたが、色変化はありませんでした。ご教示、よろしくお願いいたします -- *Panda* 2011-04-04 (月) 14:23:21
+- こんばんは。`JToggleButton#setBackground(Color)`は、`LookAndFeel`によっては適用されない場合があります。このため、独自の`ToggleButtonUI`を用意したり、例えば以下のような方法を使用する必要があります。 -- *aterai* 2011-04-04 (月) 17:15:55
     - 例`1`: 文字列から背景色、縁などのすべてを含めたアイコンを用意して`setSelectedIcon`で設定する
     - 例`2`: `setContentAreaFilled(false);`として、自前で選択時の背景を描画する
 
@@ -108,4 +107,3 @@ class MenuToggleButton extends JToggleButton {
 button.setBackground(Color.RED);
 button.setContentAreaFilled(false);
 </code></pre>
-

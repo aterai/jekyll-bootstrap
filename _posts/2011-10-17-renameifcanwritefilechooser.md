@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserで読み取り専用ファイルのリネームを禁止
 category: swing
 folder: RenameIfCanWriteFileChooser
+title: JFileChooserで読み取り専用ファイルのリネームを禁止
 tags: [JFileChooser, File, BasicDirectoryModel]
 author: aterai
+pubdate: 2011-10-17T12:57:18+09:00
+description: JFileChooserで読み取り専用属性ファイルのリネームを禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-17
-
 ## 概要
 `JFileChooser`で読み取り専用属性ファイルのリネームを禁止します。
 

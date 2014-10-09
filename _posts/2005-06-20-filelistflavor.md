@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fileのドラッグ＆ドロップ
 category: swing
 folder: FileListFlavor
+title: Fileのドラッグ＆ドロップ
 tags: [DragAndDrop, JTable, DropTargetListener, TransferHandler]
 author: aterai
+pubdate: 2005-06-20
+description: WindowsなどからファイルをJTableにドラッグ＆ドロップします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-20
-
 ## 概要
 `Windows`などからファイルを`JTable`にドラッグ＆ドロップします。
 

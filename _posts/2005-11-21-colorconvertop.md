@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ColorConvertOpで画像をグレースケールに変換
 category: swing
 folder: ColorConvertOp
+title: ColorConvertOpで画像をグレースケールに変換
 tags: [ColorConvertOp, BufferedImage, RGBImageFilter, ImageIcon]
 author: aterai
+pubdate: 2005-11-21
+description: ColorConvertOpを使って画像をグレースケールに変換します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-21
-
 ## 概要
 `ColorConvertOp`を使って画像をグレースケールに変換します。
 
@@ -81,8 +80,7 @@ g.dispose();
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- リンクを参考にして`RGBImageFilter`を使うサンプルを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-08-21 (火) 13:06:10
-- グレイスケールからグレースケールに変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-10 (木) 14:31:00
+- リンクを参考にして`RGBImageFilter`を使うサンプルを修正しました。 -- *aterai* 2007-08-21 (火) 13:06:10
+- グレイスケールからグレースケールに変更。 -- *aterai* 2008-01-10 (木) 14:31:00
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarに検索結果をハイライト表示
 category: swing
 folder: ScrollBarSearchHighlighter
+title: JScrollBarに検索結果をハイライト表示
 tags: [JScrollBar, JScrollPane, JTextArea, JTextComponent, JViewport, Icon, Highlighter, Pattern, Matcher, MatteBorder]
 author: aterai
+pubdate: 2013-01-28T02:11:33+09:00
+description: JScrollBarなどにJTextAreaの文字列検索の結果をハイライト表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-28
-
 ## 概要
 `JScrollBar`などに`JTextArea`の文字列検索の結果をハイライト表示します。
 
@@ -44,8 +43,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-28
 上記のサンプルでは、`ScrollBarUI#paintTrack(...)`メソッドをオーバーライドして、`JTextArea`内の文字列の検索結果を縦の`JScrollBar`内部に描画しています。
 
 - 注:
-    - 一行分のハイライトの高さは`2px`で固定
-    - 検索結果の位置は`JTextComponent#modelToView(Matcher#start());`を利用しているため、ハイライト対象の文字列が折り返しで二行になっても、ハイライトされるのは開始位置のある一行目のみ
+    - `1`行分のハイライトの高さは`2px`で固定
+    - 検索結果の位置は`JTextComponent#modelToView(Matcher#start());`を利用しているため、ハイライト対象の文字列が折り返しで`2`行になっても、ハイライトされるのは開始位置のある`1`行目のみ
 
 <!-- dummy comment line for breaking list -->
 
@@ -153,11 +152,10 @@ scroll.setVerticalScrollBar(scrollBar);
 </code></pre>
 
 ## コメント
-- 行ヘッダーを使用したハイライトはJava7以降でのみ有効に機能するようです。 -- [読者](http://terai.xrea.jp/読者.html) 2013-08-18 (日) 23:10:11
-    - ご指摘ありがとうございます。仰るとおり、`1.6.0_45`で行ヘッダ版が正常に動作しないことを確認しました。回避方法がないか、`Bug Database`あたりを調べてみようと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-08-19 (月) 00:04:59
-    - 修正された時期などから、[Bug ID: JDK-6910490 MatteBorder JScrollpane interaction](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6910490)が原因かもと`MatteBorder`は使用せずに直接`Icon`を`JLabel`に追加するよう変更したけど、改善しない…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-08-19 (月) 11:24:23
-    - [Bug ID: JDK-6826074 JScrollPane does not revalidate the component hierarchy after scrolling](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6826074)が原因(`HeavyWeight`, `LightWeight`だけじゃなくレイアウトがうまく更新されていない？)のようです。`JViewport#setViewPosition(...)`をオーバーライドして`revalidate()`すれば、`1.7.0`と同様の動作をするようになりました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-08-19 (月) 14:43:11
-- `Highlighter.Highlight#getStartOffset()`を使用するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-08-23 (金) 16:14:35
+- 行ヘッダーを使用したハイライトはJava7以降でのみ有効に機能するようです。 -- *読者* 2013-08-18 (日) 23:10:11
+    - ご指摘ありがとうございます。仰るとおり、`1.6.0_45`で行ヘッダ版が正常に動作しないことを確認しました。回避方法がないか、`Bug Database`あたりを調べてみようと思います。 -- *aterai* 2013-08-19 (月) 00:04:59
+    - 修正された時期などから、[Bug ID: JDK-6910490 MatteBorder JScrollpane interaction](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6910490)が原因かもと`MatteBorder`は使用せずに直接`Icon`を`JLabel`に追加するよう変更したけど、改善しない…。 -- *aterai* 2013-08-19 (月) 11:24:23
+    - [Bug ID: JDK-6826074 JScrollPane does not revalidate the component hierarchy after scrolling](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6826074)が原因(`HeavyWeight`, `LightWeight`だけじゃなくレイアウトがうまく更新されていない？)のようです。`JViewport#setViewPosition(...)`をオーバーライドして`revalidate()`すれば、`1.7.0`と同様の動作をするようになりました。 -- *aterai* 2013-08-19 (月) 14:43:11
+- `Highlighter.Highlight#getStartOffset()`を使用するように変更。 -- *aterai* 2013-08-23 (金) 16:14:35
 
 <!-- dummy comment line for breaking list -->
-

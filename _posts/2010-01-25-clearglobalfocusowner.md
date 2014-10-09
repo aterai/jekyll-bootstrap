@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GlobalFocusをクリアする
 category: swing
 folder: ClearGlobalFocusOwner
+title: GlobalFocusをクリアする
 tags: [Focus, KeyboardFocusManager, JFrame]
 author: aterai
+pubdate: 2010-01-25T13:19:35+09:00
+description: GlobalFocusをクリアして、フォーカスをもつコンポーネントがない状態に戻します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-25
-
 ## 概要
 `GlobalFocus`をクリアして、フォーカスをもつコンポーネントがない状態に戻します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeを透明にし、選択状態を半透明にする
 category: swing
 folder: TranslucentTree
+title: JTreeを透明にし、選択状態を半透明にする
 tags: [JTree, Translucent, Transparent, TreeCellRenderer, UIDefaults]
 author: aterai
+pubdate: 2013-01-14T00:01:16+09:00
+description: JTreeの背景を透明にし、ノードの選択色を半透明にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-14
-
 ## 概要
 `JTree`の背景を透明にし、ノードの選択色を半透明にします。
 

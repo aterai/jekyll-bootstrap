@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolTipのアニメーション
 category: swing
 folder: AnimatedToolTip
+title: JToolTipのアニメーション
 tags: [JToolTip, Animation, Html]
 author: aterai
+pubdate: 2007-04-23T09:48:54+09:00
+description: ツールチップにアニメーションするアイコンを使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-23
-
 ## 概要
 ツールチップにアニメーションするアイコンを使用します。
 
@@ -17,7 +16,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-23
 
 ## サンプルコード
 <pre class="prettyprint"><code>JLabel l3 = new JLabel("Gif Animated ToolTip(html)");
-l3.setToolTipText("&lt;html&gt;&lt;img src='"+url+"'&gt;Test3&lt;/html&gt;");
+l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;");
 </code></pre>
 
 ## 解説

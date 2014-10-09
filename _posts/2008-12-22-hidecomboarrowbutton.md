@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのArrowButtonを隠す
 category: swing
 folder: HideComboArrowButton
+title: JComboBoxのArrowButtonを隠す
 tags: [JComboBox, ArrowButton, UIManager]
 author: aterai
+pubdate: 2008-12-22T13:06:25+09:00
+description: ArrowButtonを隠して、JComboBoxの表示をJLabel風にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-22
-
 ## 概要
 `ArrowButton`を隠して、`JComboBox`の表示を`JLabel`風にします。
 

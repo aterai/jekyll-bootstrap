@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JList間でのドラッグ＆ドロップによるアイテムの移動
 category: swing
 folder: DnDBetweenLists
+title: JList間でのドラッグ＆ドロップによるアイテムの移動
 tags: [JList, DragAndDrop, TransferHandler]
 author: aterai
+pubdate: 2010-08-09T16:02:07+09:00
+description: JList間でのドラッグ＆ドロップによるアイテムの移動や並べ替えを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-09
-
 ## 概要
 `JList`間でのドラッグ＆ドロップによるアイテムの移動や並べ替えを行います。
 
@@ -26,16 +25,16 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-09
   }
   @Override public boolean importData(TransferSupport info) {
     if (!canImport(info)) return false;
-    JList target = (JList)info.getComponent();
-    JList.DropLocation dl = (JList.DropLocation)info.getDropLocation();
-    DefaultListModel listModel = (DefaultListModel)target.getModel();
+    JList target = (JList) info.getComponent();
+    JList.DropLocation dl = (JList.DropLocation) info.getDropLocation();
+    DefaultListModel listModel = (DefaultListModel) target.getModel();
     int index = dl.getIndex();
     int max = listModel.getSize();
-    if(index&lt;0 || index&gt;max) index = max;
+    if(index &lt; 0 || index &gt; max) index = max;
     addIndex = index;
-    try{
-      Object[] values = (Object[])info.getTransferable().getTransferData(localObjectFlavor);
-      for(int i=0;i&lt;values.length;i++) {
+    try {
+      Object[] values = (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
+      for (int i = 0; i &lt; values.length; i++) {
         int idx = index++;
         listModel.add(idx, values[i]);
         target.addSelectionInterval(idx, idx);
@@ -44,9 +43,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-09
       addCount = (target==source)? values.length : 0;
       //&lt;----
       return true;
-    }catch(UnsupportedFlavorException ufe) {
+    } catch (UnsupportedFlavorException ufe) {
       ufe.printStackTrace();
-    }catch(java.io.IOException ioe) {
+    } catch (java.io.IOException ioe) {
       ioe.printStackTrace();
     }
     return false;
@@ -64,7 +63,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-09
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- アイテムをカット(<kbd>Ctrl+X</kbd>)すると`ClassCastException`が発生するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-25 (金) 20:28:45
+- アイテムをカット(<kbd>Ctrl+X</kbd>)すると`ClassCastException`が発生するのを修正。 -- *aterai* 2011-02-25 (金) 20:28:45
 
 <!-- dummy comment line for breaking list -->
-

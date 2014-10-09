@@ -1,53 +1,46 @@
 ---
 layout: post
-title: PixelGrabberで画像を配列として取得し編集、書出し
 category: swing
 folder: PixelGrabber
+title: PixelGrabberで画像を配列として取得し編集、書出し
 tags: [PixelGrabber, MemoryImageSource, BufferedImage, Graphics2D]
 author: aterai
+pubdate: 2009-12-28T11:50:47+09:00
+description: 画像の配列を取り出すPixelGrabberを生成して、角を透過色で塗りつぶします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-28
-
 ## 概要
 画像の配列を取り出す`PixelGrabber`を生成して、角を透過色で塗りつぶします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRBSkghZI/AAAAAAAAAgg/Ce52fcu-nQI/s800/PixelGrabber.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>BufferedImage image;
-try {
-  image = javax.imageio.ImageIO.read(getClass().getResource("screenshot.png"));
-}catch(java.io.IOException ioe) {
-  ioe.printStackTrace();
-  return;
-}
-
-int width  = image.getWidth(p);
-int height = image.getHeight(p);
-int[] pix  = new int[height * width];
+<pre class="prettyprint"><code>int[] pix  = new int[height * width];
 PixelGrabber pg = new PixelGrabber(image, 0, 0, width, height, pix, 0, width);
 try {
   pg.grabPixels();
-} catch (Exception e) {
-  e.printStackTrace();
+} catch (InterruptedException ex) {
+  ex.printStackTrace();
 }
+Area area = makeNorthWestConer();
+Rectangle r = area.getBounds();
 
-//NW
-for(int y=0;y&lt;5;y++) {
-  for(int x=0;x&lt;5;x++) {
-    if((y==0 &amp;&amp; x&lt;5) || (y==1 &amp;&amp; x&lt;3) ||
-       (y==2 &amp;&amp; x&lt;2) || (y==3 &amp;&amp; x&lt;1) ||
-       (y==4 &amp;&amp; x&lt;1) ) pix[y*width+x] = 0x0;
+Shape s = area; //NW
+for (int y = 0; y &lt; r.height; y++) {
+  for (int x = 0; x &lt; r.width; x++) {
+    if (s.contains(x, y)) {
+      pix[x + y * width] = 0x0;
+    }
   }
 }
-//NE
-for(int y=0;y&lt;5;y++) {
-  for(int x=width-5;x&lt;width;x++) {
-    if((y==0 &amp;&amp; x&gt;=width-5) || (y==1 &amp;&amp; x&gt;=width-3) ||
-       (y==2 &amp;&amp; x&gt;=width-2) || (y==3 &amp;&amp; x&gt;=width-1) ||
-       (y==4 &amp;&amp; x&gt;=width-1) ) pix[y*width+x] = 0x0;
+AffineTransform at = AffineTransform.getScaleInstance(-1.0, 1.0);
+at.translate(-width, 0);
+s = at.createTransformedShape(area); //NE
+for (int y = 0; y &lt; r.height; y++) {
+  for (int x = width - r.width; x &lt; width; x++) {
+    if (s.contains(x, y)) {
+      pix[x + y * width] = 0x0;
+    }
   }
 }
 </code></pre>

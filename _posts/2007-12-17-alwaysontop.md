@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameを常に前面に表示する
 category: swing
 folder: AlwaysOnTop
+title: JFrameを常に前面に表示する
 tags: [JFrame, Window, Toolkit]
 author: aterai
+pubdate: 2007-12-17T14:31:41+09:00
+description: JFrameなどを常に前面に表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-17
-
 ## 概要
 `JFrame`などを常に前面に表示します。
 

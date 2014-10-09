@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarのButtonの位置を変更
 category: swing
 folder: ScrollBarButtonLayout
+title: JScrollBarのButtonの位置を変更
 tags: [JScrollPane, JScrollBar, ArrowButton]
 author: aterai
+pubdate: 2011-05-16T15:08:24+09:00
+description: JScrollBarのButtonの位置を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
-
 ## 概要
 `JScrollBar`の`Button`の位置を変更します。
 
@@ -106,7 +105,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
      * make sure it fits between the buttons.  Note that setting the
      * thumbs bounds will cause a repaint.
      */
-    if(thumbH &gt;= (int)trackH) {
+    if(thumbH &gt;= (int) trackH) {
       setThumbBounds(0, 0, 0, 0);
     }else{
       //if((thumbY + thumbH) &gt; incrButtonY - incrGap) {
@@ -137,7 +136,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-16
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 水平スクロールバーには今のところ対応していない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-05-16 (月) 15:08:24
+- 水平スクロールバーには今のところ対応していない。 -- *aterai* 2011-05-16 (月) 15:08:24
 
 <!-- dummy comment line for breaking list -->
-

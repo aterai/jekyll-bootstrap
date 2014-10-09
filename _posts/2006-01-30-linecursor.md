@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaに行カーソルを表示
 category: swing
 folder: LineCursor
+title: JTextAreaに行カーソルを表示
 tags: [JTextArea, Caret, Highlighter]
 author: aterai
+pubdate: 2006-01-30T12:22:18+09:00
+description: JTextAreaのカーソルがある行全体にアンダーラインを引きます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30
-
 ## 概要
 `JTextArea`のカーソルがある行全体にアンダーラインを引きます。
 
@@ -69,7 +68,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-30
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Caret`の高さを使用するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-17 (月) 16:54:50
+- `Caret`の高さを使用するように変更しました。 -- *aterai* 2008-03-17 (月) 16:54:50
 
 <!-- dummy comment line for breaking list -->
-

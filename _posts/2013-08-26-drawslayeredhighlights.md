@@ -1,15 +1,14 @@
 ---
 layout: post
-title: DefaultHighlighterの描画方法を変更する
 category: swing
 folder: DrawsLayeredHighlights
+title: DefaultHighlighterの描画方法を変更する
 tags: [DefaultHighlighter, JTextArea, JTextComponent]
 author: aterai
+pubdate: 2013-08-26T00:05:12+09:00
+description: DefaultHighlighterの描画方法を変更して、文字列が選択されている場合のハイライト表示を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-26
-
 ## 概要
 `DefaultHighlighter`の描画方法を変更して、文字列が選択されている場合のハイライト表示を変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルの高さを自動調整
 category: swing
 folder: AutoWrapTableCell
+title: JTableのセルの高さを自動調整
 tags: [JTable, JTextArea, TableCellRenderer]
 author: aterai
+pubdate: 2010-10-25T14:24:03+09:00
+description: JTableのセルの高さを、文字列の折り返しに応じて自動調整します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-25
-
 ## 概要
 `JTable`のセルの高さを、文字列の折り返しに応じて自動調整します。
 
@@ -55,11 +54,10 @@ private void adjustRowHeight(JTable table, int row, int column) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 高さが微妙に更新されない場合がある…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-10-27 (水) 14:02:02
-- フレームのサイズ(`JTable`の高さ)を微妙に調整すると、スクロールバーが表示・非表示を繰り返す場合がある。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-02 (火) 20:23:55
-- ~~上二つの原因は同じだと思うけど、今のところ何が問題なのか分からず、お手上げ状態です。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-02 (火) 20:26:21
-- レンダラーに以下のようなコードを追加して調整するサンプルを発見: [JTable multiline cell renderer](http://blog.botunge.dk/post/2009/10/09/JTable-multiline-cell-renderer.aspx) -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-21 (火) 04:18:52
-    - この方法だと、セルを描画する毎に、行の高さを調整するようになるので、これまでのドラッグでリサイズ中の微妙なサイズは無くなるはず(多少重くなるかもしれないけど、違いは全く感じられない)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-21 (火) 18:43:54
+- 高さが微妙に更新されない場合がある…。 -- *aterai* 2010-10-27 (水) 14:02:02
+- フレームのサイズ(`JTable`の高さ)を微妙に調整すると、スクロールバーが表示・非表示を繰り返す場合がある。 -- *aterai* 2010-11-02 (火) 20:23:55
+- ~~上二つの原因は同じだと思うけど、今のところ何が問題なのか分からず、お手上げ状態です。~~ -- *aterai* 2010-11-02 (火) 20:26:21
+- レンダラーに以下のようなコードを追加して調整するサンプルを発見: [JTable multiline cell renderer](http://blog.botunge.dk/post/2009/10/09/JTable-multiline-cell-renderer.aspx) -- *aterai* 2013-05-21 (火) 04:18:52
+    - この方法だと、セルを描画する毎に、行の高さを調整するようになるので、これまでのドラッグでリサイズ中の微妙なサイズは無くなるはず(多少重くなるかもしれないけど、違いは全く感じられない)。 -- *aterai* 2013-05-21 (火) 18:43:54
 
 <!-- dummy comment line for breaking list -->
-

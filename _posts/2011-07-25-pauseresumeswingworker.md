@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SwingWorkerの一時停止と再開
 category: swing
 folder: PauseResumeSwingWorker
+title: SwingWorkerの一時停止と再開
 tags: [SwingWorker, JProgressBar, JTextArea]
 author: aterai
+pubdate: 2011-07-25T14:41:32+09:00
+description: SwingWorkerで処理の一時停止と再開を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-07-25
-
 ## 概要
 `SwingWorker`で処理の一時停止と再開を行います。
 

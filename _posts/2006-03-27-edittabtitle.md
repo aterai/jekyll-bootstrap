@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブタイトルを変更
 category: swing
 folder: EditTabTitle
+title: JTabbedPaneのタブタイトルを変更
 tags: [JTabbedPane, GlassPane, JTextField]
 author: aterai
+pubdate: 2006-03-27
+description: JTabbedPaneのタブタイトルを直接編集します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
-
 ## 概要
 `JTabbedPane`のタブタイトルを直接編集します。
 
@@ -88,10 +87,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-27
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `1.4`系だと編集開始時にうまく選択状態にできない場合があるようです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-27 (月) 15:03:01
-    - 上記の問題と、選択状態がマウスの移動で外れてしまうバグを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-29 (水) 03:26:56
-- 余白などを追加するとエディタがずれるバグを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-09-01 (金) 15:04:00
-- `setTabComponentAt(...)`メソッドで閉じるボタンなどと併用していた場合、編集後に文字列の長さがおかしくなるので、`revalidate()`するように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-10 (火) 16:49:52
+- `1.4`系だと編集開始時にうまく選択状態にできない場合があるようです。 -- *aterai* 2006-03-27 (月) 15:03:01
+    - 上記の問題と、選択状態がマウスの移動で外れてしまうバグを修正しました。 -- *aterai* 2006-03-29 (水) 03:26:56
+- 余白などを追加するとエディタがずれるバグを修正しました。 -- *aterai* 2006-09-01 (金) 15:04:00
+- `setTabComponentAt(...)`メソッドで閉じるボタンなどと併用していた場合、編集後に文字列の長さがおかしくなるので、`revalidate()`するように修正。 -- *aterai* 2010-08-10 (火) 16:49:52
 
 <!-- dummy comment line for breaking list -->
-

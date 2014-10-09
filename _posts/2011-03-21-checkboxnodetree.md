@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの葉ノードをJCheckBoxにする
 category: swing
 folder: CheckBoxNodeTree
+title: JTreeの葉ノードをJCheckBoxにする
 tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor]
 author: aterai
+pubdate: 2011-03-21T16:05:37+09:00
+description: JTreeの葉ノードを編集可能なJCheckBoxにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-03-21
-
 ## 概要
 `JTree`の葉ノードを編集可能な`JCheckBox`にします。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: DocumentFilterで先頭文字を大文字に変換する
 category: swing
 folder: FirstCharToUpperCase
+title: DocumentFilterで先頭文字を大文字に変換する
 tags: [JTextField, DocumentFilter]
 author: aterai
+pubdate: 2010-03-01T12:38:41+09:00
+description: DocumentFilterを使って、文字列の先頭が常に大文字になるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-01
-
 ## 概要
 `DocumentFilter`を使って、文字列の先頭が常に大文字になるように設定します。
 

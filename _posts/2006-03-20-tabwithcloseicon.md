@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneにタブを閉じるアイコンを追加
 category: swing
 folder: TabWithCloseIcon
+title: JTabbedPaneにタブを閉じるアイコンを追加
 tags: [JTabbedPane, Icon, JButton]
 author: aterai
+pubdate: 2006-03-20T12:44:58+09:00
+description: JTabbedPaneにタブを閉じるためのアイコンやボタンを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-20
-
 ## 概要
 `JTabbedPane`にタブを閉じるためのアイコンやボタンを追加します。以下の参考リンクから引用したコードをほぼそのまま引用して紹介しています。
 

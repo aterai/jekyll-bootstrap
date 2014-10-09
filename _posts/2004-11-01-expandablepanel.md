@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPanelの展開と折り畳み
 category: swing
 folder: ExpandablePanel
+title: JPanelの展開と折り畳み
 tags: [JPanel, BorderLayout]
 author: aterai
+pubdate: 2004-11-01T01:05:24+09:00
+description: JPanelの展開と折り畳みを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-01
-
 ## 概要
 `JPanel`の展開と折り畳みを行います。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelに表示したAnimated Gifのアニメーションを停止する
 category: swing
 folder: DisableAnimatedGif
+title: JLabelに表示したAnimated Gifのアニメーションを停止する
 tags: [JLabel, Animation, ImageIcon]
 author: aterai
+pubdate: 2013-02-25T00:50:43+09:00
+description: JLabelに表示したAnimated Gifのアニメーションを停止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-25
-
 ## 概要
 `JLabel`に表示した`Animated Gif`のアニメーションを停止します。
 

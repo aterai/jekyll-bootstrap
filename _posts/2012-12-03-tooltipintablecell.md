@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルに複数配置したコンポーネントのJToolTip
 category: swing
 folder: TooltipInTableCell
+title: JTableのセルに複数配置したコンポーネントのJToolTip
 tags: [JTable, JToolTip, ImageIcon]
 author: aterai
+pubdate: 2012-12-03T02:37:08+09:00
+description: JTableのセル中に複数個配置したコンポーネントにそれぞれJToolTipが表示されるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-03
-
 ## 概要
 `JTable`のセル中に複数個配置したコンポーネントにそれぞれ`JToolTip`が表示されるように設定します。
 

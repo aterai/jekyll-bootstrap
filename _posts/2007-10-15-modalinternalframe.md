@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrameをModalにする
 category: swing
 folder: ModalInternalFrame
+title: JInternalFrameをModalにする
 tags: [JInternalFrame, GlassPane, Mnemonic, JDesktopPane, JToolTip, JLayeredPane]
 author: aterai
+pubdate: 2007-10-15T13:17:37+09:00
+description: JInternalFrameをModalにして、他のJInternalFrameなどを操作できないようにブロックします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-15
-
 ## 概要
 `JInternalFrame`を`Modal`にして、他の`JInternalFrame`などを操作できないようにブロックします。
 
@@ -201,11 +200,11 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~[JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html)と、同様に`GlassPane`が`Ubuntu`(`GNOME`)などで半透明にならない場合があります。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-15 (月) 13:16:07
-    - <kbd>Alt+2</kbd>で開いた場合、`JInternalFrame`に`GlassPane`を乗せるのではなく、直接`JDesktopPane`の`JLayeredPane.MODAL_LAYER`に追加するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-16 (火) 17:31:50
-- メモ: [Alexander Potochkin's Blog: Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)のサンプルでは、`Mnemonic`もちゃんとブロックできているようなので、「あとで調べる & 参考にする」こと。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-25 (金) 17:28:21
-- `Mnemonic`を数字キー(<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>)に変更 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-25 (金) 20:51:49
-- すべての`Mnemonic`を一時的に無効化したい場合に、`UIManager.java`の`private static final String disableMnemonicKey = "swing.disablenavaids";`は使えない？ 以下のように、`KeyboardFocusManager.setCurrentKeyboardFocusManager(...)`で、<kbd>Alt</kbd>キーなどを無視する方法もあるが…、もっと簡単な方法を調査中。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-09 (木) 11:46:38
+- ~~[JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html)と、同様に`GlassPane`が`Ubuntu`(`GNOME`)などで半透明にならない場合があります。~~ -- *aterai* 2007-10-15 (月) 13:16:07
+    - <kbd>Alt+2</kbd>で開いた場合、`JInternalFrame`に`GlassPane`を乗せるのではなく、直接`JDesktopPane`の`JLayeredPane.MODAL_LAYER`に追加するように変更しました。 -- *aterai* 2007-10-16 (火) 17:31:50
+- メモ: [Alexander Potochkin's Blog: Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)のサンプルでは、`Mnemonic`もちゃんとブロックできているようなので、「あとで調べる & 参考にする」こと。 -- *aterai* 2008-01-25 (金) 17:28:21
+- `Mnemonic`を数字キー(<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>)に変更 -- *aterai* 2008-04-25 (金) 20:51:49
+- すべての`Mnemonic`を一時的に無効化したい場合に、`UIManager.java`の`private static final String disableMnemonicKey = "swing.disablenavaids";`は使えない？ 以下のように、`KeyboardFocusManager.setCurrentKeyboardFocusManager(...)`で、<kbd>Alt</kbd>キーなどを無視する方法もあるが…、もっと簡単な方法を調査中。 -- *aterai* 2013-05-09 (木) 11:46:38
 
 <!-- dummy comment line for breaking list -->
 
@@ -229,4 +228,3 @@ JOptionPane.showInternalMessageDialog(
   desktop, combo, "modal1", JOptionPane.INFORMATION_MESSAGE);
 KeyboardFocusManager.setCurrentKeyboardFocusManager(manager);
 </code></pre>
-

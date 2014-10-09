@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneやJTextPaneに行間を設定する
 category: swing
 folder: LineSpacing
+title: JEditorPaneやJTextPaneに行間を設定する
 tags: [JEditorPane, JTextPane, StyledEditorKit]
 author: aterai
+pubdate: 2009-11-02T12:51:40+09:00
+description: JEditorPaneやJTextPaneに行間を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-02
-
 ## 概要
 `JEditorPane`や`JTextPane`に行間を設定します。
 

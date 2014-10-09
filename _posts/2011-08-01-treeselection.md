@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの選択モードを切り替える
 category: swing
 folder: TreeSelection
+title: JTreeの選択モードを切り替える
 tags: [JTree, TreePath]
 author: aterai
+pubdate: 2011-08-01T15:39:38+09:00
+description: JTreeの選択モードを切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-01
-
 ## 概要
 `JTree`の選択モードを切り替えます。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderのフォントを変更
 category: swing
 folder: HeaderFont
+title: JTableHeaderのフォントを変更
 tags: [JTable, JTableHeader, TableCellRenderer, UIManager]
 author: aterai
+pubdate: 2004-08-23T02:54:09+09:00
+description: TableCellRendererを使って、JTableのヘッダが使用するフォントを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-23
-
 ## 概要
 `TableCellRenderer`を使って、`JTable`のヘッダが使用するフォントを変更します。
 
@@ -59,8 +58,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-23
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- これでいいのでは？ `JTableHeader header = TABLE.getTableHeader(); header.setFont(FONT);` -- [いつも見てます](http://terai.xrea.jp/いつも見てます.html) 2011-11-24 (木) 06:02:05
-    - ご指摘ありがとうございます。解説などをすこし追加、修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-11-24 (木) 16:28:46
+- これでいいのでは？ `JTableHeader header = TABLE.getTableHeader(); header.setFont(FONT);` -- *いつも見てます* 2011-11-24 (木) 06:02:05
+    - ご指摘ありがとうございます。解説などをすこし追加、修正しました。 -- *aterai* 2011-11-24 (木) 16:28:46
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableに行フィルタで表示の切り替え
 category: swing
 folder: FilteredTable
+title: JTableに行フィルタで表示の切り替え
 tags: [JTable, DefaultTableModel]
 author: aterai
+pubdate: 2005-01-31
+description: JTableに表示する行をフィルタを使用して切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-31
-
 ## 概要
 `JTable`に表示する行をフィルタを使用して切り替えます。
 

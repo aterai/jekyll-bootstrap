@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Hyperlinkを、JLabel、JButton、JEditorPaneで表示
 category: swing
 folder: HyperlinkLabel
+title: Hyperlinkを、JLabel、JButton、JEditorPaneで表示
 tags: [Html, JLabel, JButton, JEditorPane, HyperlinkListener]
 author: aterai
+pubdate: 2007-11-26T04:49:23+09:00
+description: Hyperlinkを、JLabel、JButton、JEditorPaneで表示し、それぞれクリックした時のイベントを取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-26
-
 ## 概要
 `Hyperlink`を、`JLabel`、`JButton`、`JEditorPane`で表示し、それぞれクリックした時のイベントを取得します。
 

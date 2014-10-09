@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableCellRendererに複数行のHtmlテキストを表示する場合に行揃えを設定する
 category: swing
 folder: HtmlCellVerticalAlignment
+title: TableCellRendererに複数行のHtmlテキストを表示する場合に行揃えを設定する
 tags: [JTable, TableCellRenderer, Html, JLabel]
 author: aterai
+pubdate: 2014-08-11T00:16:05+09:00
+description: JTableのCellに複数行になるHtmlテキストを表示する場合の行揃えによる描画の変化をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-11
-
 ## 概要
 `JTable`の`Cell`に複数行になる`Html`テキストを表示する場合の行揃えによる描画の変化をテストします。
 

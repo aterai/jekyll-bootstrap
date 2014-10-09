@@ -1,15 +1,14 @@
 ---
 layout: post
-title: BorderにJComponentを配置
 category: swing
 folder: ComponentTitledBorder
+title: BorderにJComponentを配置
 tags: [Border, TitledBorder, JCheckBox, JButton]
 author: aterai
+pubdate: 2006-04-10T12:01:31+09:00
+description: BorderにJCheckBoxやJButtonなどを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-10
-
 ## 概要
 `Border`に`JCheckBox`や`JButton`などを配置します。[Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh)の[ComponentTitledBorder](http://www.jroller.com/page/santhosh?entry=component_titled_border)を利用しています。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderの字揃えを変更
 category: swing
 folder: HorizontalAlignmentHeaderRenderer
+title: JTableHeaderの字揃えを変更
 tags: [JTable, JTableHeader, LookAndFeel]
 author: aterai
+pubdate: 2010-11-29T14:41:04+09:00
+description: JTableHeaderの字揃えを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-29
-
 ## 概要
 `JTableHeader`の字揃えを変更します。
 

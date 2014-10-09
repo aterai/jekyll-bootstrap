@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComponentの表示状態
 category: swing
 folder: ShowingDisplayableVisible
+title: JComponentの表示状態
 tags: [JComponent, HierarchyListener, JScrollPane, JTabbedPane, CardLayout]
 author: aterai
+pubdate: 2009-04-20T14:24:13+09:00
+description: JComponentの表示状態をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-20
-
 ## 概要
 `JComponent`の表示状態をテストします。
 

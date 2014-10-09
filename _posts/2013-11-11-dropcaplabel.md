@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelでイニシャル組を行う
 category: swing
 folder: DropcapLabel
+title: JLabelでイニシャル組を行う
 tags: [JLabel, Shape, TextLayout, LineBreakMeasurer, Font]
 author: aterai
+pubdate: 2013-11-11T00:01:29+09:00
+description: JLabelの先頭文字を拡大、残りの文字列をTextLayoutで回り込むよう配置し、ドロップキャップで描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
-
 ## 概要
 `JLabel`の先頭文字を拡大、残りの文字列を`TextLayout`で回り込むよう配置し、ドロップキャップで描画します。
 
@@ -42,7 +41,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
   int rw = r.width;
   int rh = r.height;
 
-  AffineTransform at2 = AffineTransform.getTranslateInstance(x0, y0+rh);
+  AffineTransform at2 = AffineTransform.getTranslateInstance(x0, y0 + rh);
   Shape s2 = at2.createTransformedShape(s1);
   g2.setPaint(getForeground());
   g2.fill(s2);
@@ -56,7 +55,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-11
     TextLayout tl = lbm.nextLayout(w);
     tl.draw(g2, x, y + tl.getAscent());
     y += tl.getDescent() + tl.getLeading() + tl.getAscent();
-    if(y0+rh &lt; y) {
+    if(y0 + rh &lt; y) {
       x = x0;
       w = w0;
     }

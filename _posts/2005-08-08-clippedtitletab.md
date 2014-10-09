@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブを等幅にしてタイトルをクリップ
 category: swing
 folder: ClippedTitleTab
+title: JTabbedPaneのタブを等幅にしてタイトルをクリップ
 tags: [JTabbedPane]
 author: aterai
+pubdate: 2005-08-08
+description: JTabbedPaneのタブを等幅にし、長いタイトルはクリップして表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-08
-
 ## 概要
 `JTabbedPane`のタブを等幅にし、長いタイトルはクリップして表示します。
 
@@ -75,7 +74,6 @@ tab1.setUI(new javax.swing.plaf.basic.BasicTabbedPaneUI() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `tabAreaInsets`を考慮するように修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-26 (火) 22:18:27
+- `tabAreaInsets`を考慮するように修正しました。 -- *aterai* 2008-02-26 (火) 22:18:27
 
 <!-- dummy comment line for breaking list -->
-

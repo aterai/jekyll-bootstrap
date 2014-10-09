@@ -1,15 +1,14 @@
 ---
 layout: post
-title: NimbusLookAndFeelを使用する
 category: swing
 folder: NimbusLookAndFeel
+title: NimbusLookAndFeelを使用する
 tags: [LookAndFeel, NimbusLookAndFeel, UIManager]
 author: aterai
+pubdate: 2013-07-22T01:35:03+09:00
+description: LookAndFeel一覧からNimbusLookAndFeelを名前で検索取得して使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-22
-
 ## 概要
 `LookAndFeel`一覧から`NimbusLookAndFeel`を名前で検索取得して使用します。[Nimbus Look and Feel (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html)などのサンプルから引用しています。
 

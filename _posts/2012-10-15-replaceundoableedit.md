@@ -1,15 +1,14 @@
 ---
 layout: post
-title: UndoManagerを使用した文字列選択ペーストの動作を変更する
 category: swing
 folder: ReplaceUndoableEdit
+title: UndoManagerを使用した文字列選択ペーストの動作を変更する
 tags: [JTextField, UndoManager, PlainDocument, JTextComponent, CompoundEdit, DocumentFilter, UndoableEdit]
 author: aterai
+pubdate: 2012-10-15T14:31:20+09:00
+description: JTextFieldなどにUndoManagerを設定し、文字列を選択してペーストした後のUndoの動作を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-15
-
 ## 概要
 `JTextField`などに`UndoManager`を設定し、文字列を選択してペーストした後の`Undo`の動作を変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TransferHandlerでHyperlinkをブラウザにドロップ
 category: swing
 folder: DraggableLinkButton
+title: TransferHandlerでHyperlinkをブラウザにドロップ
 tags: [DragAndDrop, TransferHandler, DataFlavor, Html, JButton]
 author: aterai
+pubdate: 2007-12-03T14:41:28+09:00
+description: JButtonにTransferHandlerを設定して、ブラウザにリンクをドロップできるようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-03
-
 ## 概要
 `JButton`に`TransferHandler`を設定して、ブラウザにリンクをドロップできるようにします。
 
@@ -71,7 +70,6 @@ b.addMouseListener(new MouseAdapter() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Opera`には、ドロップできないようです(`MIME`タイプを設定しないとダメ？)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-12-03 (月) 14:41:28
+- `Opera`には、ドロップできないようです(`MIME`タイプを設定しないとダメ？)。 -- *aterai* 2007-12-03 (月) 14:41:28
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolTipにJButtonのMnemonicを表示
 category: swing
 folder: MnemonicToolTip
+title: JToolTipにJButtonのMnemonicを表示
 tags: [JToolTip, JButton, Mnemonic]
 author: aterai
+pubdate: 2010-11-15T14:41:06+09:00
+description: JButtonにMnemonicが設定されている場合、JToolTipにそれを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-15
-
 ## 概要
 `JButton`に`Mnemonic`が設定されている場合、`JToolTip`にそれを表示します。
 

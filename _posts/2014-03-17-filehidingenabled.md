@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserでの隠しファイルの非表示設定を変更する
 category: swing
 folder: FileHidingEnabled
+title: JFileChooserでの隠しファイルの非表示設定を変更する
 tags: [JFileChooser, JPopupMenu]
 author: aterai
+pubdate: 2014-03-17T00:01:02+09:00
+description: JFileChooserで隠しファイルを表示するかどうかをポップアップメニューから切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-17
-
 ## 概要
 `JFileChooser`で隠しファイルを表示するかどうかをポップアップメニューから切り替えます。
 
@@ -31,7 +30,7 @@ pop.add(mi);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFileChooser#setFileHidingEnabled(boolean)`メソッドを使用して、隠しファイル、隠しフォルダーなどを表示するかどうかを設定しています。
+上記のサンプルでは、`JFileChooser#setFileHidingEnabled(boolean)`メソッドを使用して、隠しファイル、隠しフォルダーなどの表示・非表示を設定しています。
 
 - - - -
 - 初期値は、`OS`の設定(`Windows`なら「コントロールパネル、フォルダーオプション、表示、ファイルとフォルダーの表示」)に従う

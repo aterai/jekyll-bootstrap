@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルにJCheckBoxを表示して行背景色を変更
 category: swing
 folder: CheckedRowColor
+title: JTableのセルにJCheckBoxを表示して行背景色を変更
 tags: [JTable, JCheckBox, TableModelListener, TableCellRenderer, TableCellEditor]
 author: aterai
+pubdate: 2008-07-14T14:18:45+09:00
+description: JTableのセルに表示されているJCheckBoxがチェックされていれば、その行の背景色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
-
 ## 概要
 `JTable`のセルに表示されている`JCheckBox`がチェックされていれば、その行の背景色を変更します。
 
@@ -63,9 +62,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-14
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ごちそうさまでした。 -- [tanuchan](http://terai.xrea.jp/tanuchan.html) 2009-12-14 (Mon) 04:22:08
-    - まいどありです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-16 (水) 21:25:57
-- メモ: [Bug ID: 6711682 JCheckBox in JTable: checkbox doesn't alaways respond to the first mouse click](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6711682) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-07-26 (月) 14:18:03
+- ごちそうさまでした。 -- *tanuchan* 2009-12-14 (Mon) 04:22:08
+    - まいどありです。 -- *aterai* 2009-12-16 (水) 21:25:57
+- メモ: [Bug ID: 6711682 JCheckBox in JTable: checkbox doesn't alaways respond to the first mouse click](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6711682) -- *aterai* 2010-07-26 (月) 14:18:03
 
 <!-- dummy comment line for breaking list -->
-

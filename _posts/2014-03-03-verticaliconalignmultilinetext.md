@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBoxのチェックアイコンを一行目中央に配置する
 category: swing
 folder: VerticalIconAlignMultilineText
+title: JCheckBoxのチェックアイコンを一行目中央に配置する
 tags: [JCheckBox, Html, Icon]
 author: aterai
+pubdate: 2014-03-03T00:16:40+09:00
+description: JCheckBoxのテキストが複数行の場合、チェックアイコンが一行目中央に配置されるよう設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-03
-
 ## 概要
 `JCheckBox`のテキストが複数行の場合、チェックアイコンが一行目中央に配置されるよう設定します。
 
@@ -53,7 +52,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-03
     - フォントサイズなどが大きくなると、チェックアイコンが上に飛び出しているように見えてしまう
 - 右: `First line center`
     - `WindowsCheckBoxUI#paint(...)`などをオーバーライドし、一行目の中央にチェックアイコンの中心が揃うように設定
-    - `<html>aa<font size=+5>bb</font>cc...`のような一部の文字サイズを大きくしたようなテキストを設定しても行の中央に揃えることが可能
+    - `<html>aa<font size="+5">bb</font>cc...</html>`のような一部の文字サイズを大きくしたようなテキストを設定しても行の中央に揃えることが可能
 
 <!-- dummy comment line for breaking list -->
 

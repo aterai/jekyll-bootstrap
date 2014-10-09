@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBoxMenuItemのチェックアイコンを変更する
 category: swing
 folder: CheckBoxMenuItemIcon
+title: JCheckBoxMenuItemのチェックアイコンを変更する
 tags: [JCheckBoxMenuItem, Icon, UIManager]
 author: aterai
+pubdate: 2009-09-14T14:19:06+09:00
+description: JCheckBoxMenuItemのチェックアイコンを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-14
-
 ## 概要
 `JCheckBoxMenuItem`のチェックアイコンを変更します。
 
@@ -42,7 +41,7 @@ menu.add(new JCheckBoxMenuItem("checkIcon test"));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `NimbusLookAndFeel`などの場合 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-20 (金) 13:54:08
+- `NimbusLookAndFeel`などの場合 -- *aterai* 2009-11-20 (金) 13:54:08
 
 <!-- dummy comment line for breaking list -->
 
@@ -158,4 +157,3 @@ class MyCheckBoxMenuItemPainter extends AbstractRegionPainter {
   }
 }
 </code></pre>
-

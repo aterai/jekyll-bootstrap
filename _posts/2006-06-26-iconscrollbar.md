@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ScrollBarの表示を変更
 category: swing
 folder: IconScrollBar
+title: ScrollBarの表示を変更
 tags: [JScrollBar]
 author: aterai
+pubdate: 2006-06-26T12:08:46+09:00
+description: JScrollBarのバー表示を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-26
-
 ## 概要
 `JScrollBar`のバー表示を変更します。
 

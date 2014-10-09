@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldにフォーカスがある場合の背景色を設定
 category: swing
 folder: FocusColor
+title: JTextFieldにフォーカスがある場合の背景色を設定
 tags: [JTextField, FocusListener]
 author: aterai
+pubdate: 2006-08-07T16:37:20+09:00
+description: どのJTextFieldを編集しているのかを分かりやすくするために、フォーカスのあるJTextFieldの背景色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-07
-
 ## 概要
 どの`JTextField`を編集しているのかを分かりやすくするために、フォーカスのある`JTextField`の背景色を変更します。
 

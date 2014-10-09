@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Menuに半透明の影を付ける
 category: swing
 folder: MenuWithShadow
+title: Menuに半透明の影を付ける
 tags: [JPopupMenu, UIManager, Robot, Translucent]
 author: aterai
+pubdate: 2006-10-23T14:11:21+09:00
+description: メニューに半透明の影を付けます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-23
-
 ## 概要
 メニューに半透明の影を付けます。
 
@@ -74,7 +73,6 @@ contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ポップアップメニューがフレーム内にあるかどうかではなく、`HeavyWeightContainer`かどうかで影のつけ方を切り替えるように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-29 (木) 16:13:30
+- ポップアップメニューがフレーム内にあるかどうかではなく、`HeavyWeightContainer`かどうかで影のつけ方を切り替えるように変更。 -- *aterai* 2008-05-29 (木) 16:13:30
 
 <!-- dummy comment line for breaking list -->
-

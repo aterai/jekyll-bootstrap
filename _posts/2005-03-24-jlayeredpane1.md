@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLayeredPaneで小さなウインドを表示
 category: swing
 folder: JLayeredPane1
+title: JLayeredPaneで小さなウインドを表示
 tags: [JLayeredPane, JPanel, MouseListener, MouseMotionListener]
 author: Taka
+pubdate: 2005-03-24
+description: 背景画像を表示可能なJLayeredPaneに付箋紙を表示するサンプル。
 comments: true
 ---
-
-Posted by [Taka](http://terai.xrea.jp/Taka.html) at 2005-03-24
-
 ## 概要
 背景画像を表示可能な`JLayeredPane`に付箋紙を表示するサンプル。
 
@@ -189,10 +188,9 @@ public class TestJLayeredPane1 extends JFrame {
 不都合でしたら編集・削除してください。画像と`zip`のアップロードが
 わからないので、ソースを全部のせてあります・・・あしからず。
 
-- ~~下のアイコンからファイルの添付ができるのですが、広告のせいかうまく表示や取得ができなくなっています。いい方法がないかちょっと調べてみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-25 (金) 10:04:23~~
-- ~~添付できるようにしてみました。`codehighlight`プラグインとかも入れたいのですが、今後の課題です。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-28 (月) 11:58:48~~
-- あと、言い忘れてましたが、全然不都合は無いです(投稿があるとは思ってませんでしたが)。今後ともよろしくお願いします。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-03-28 (月) 12:00:03
-- 投稿できる環境を作成するのはまだ先になりそうなので、勝手に背景とか用意させてもらいました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-10 (土) 13:50:27
+- ~~下のアイコンからファイルの添付ができるのですが、広告のせいかうまく表示や取得ができなくなっています。いい方法がないかちょっと調べてみます。 -- *aterai* 2005-03-25 (金) 10:04:23~~
+- ~~添付できるようにしてみました。`codehighlight`プラグインとかも入れたいのですが、今後の課題です。 -- *aterai* 2005-03-28 (月) 11:58:48~~
+- あと、言い忘れてましたが、全然不都合は無いです(投稿があるとは思ってませんでしたが)。今後ともよろしくお願いします。 -- *aterai* 2005-03-28 (月) 12:00:03
+- 投稿できる環境を作成するのはまだ先になりそうなので、勝手に背景とか用意させてもらいました。 -- *aterai* 2006-06-10 (土) 13:50:27
 
 <!-- dummy comment line for breaking list -->
-

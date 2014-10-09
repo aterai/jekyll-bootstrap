@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelとIconで作成した検索位置表示バーをマウスで操作する
 category: swing
 folder: BoundedRangeModel
+title: JLabelとIconで作成した検索位置表示バーをマウスで操作する
 tags: [JLabel, Icon, BoundedRangeModel, JScrollBar, JTable]
 author: aterai
+pubdate: 2014-02-17T02:41:10+09:00
+description: JScrollBarからBoundedRangeModelを取得し、JLabelとIconで表示した検索位置表示バーをマウスで操作可能にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-17
-
 ## 概要
 `JScrollBar`から`BoundedRangeModel`を取得し、`JLabel`と`Icon`で表示した検索位置表示バーをマウスで操作可能にします。
 
@@ -48,7 +47,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-17
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ハイライトのサンプルとして`JTable`を使用しているけど、実際に行数が多くなるなら[JTableの検索結果をRowFilterとHighlighterで強調表示する](http://terai.xrea.jp/Swing/TableHighlightRegexFilter.html)のようにフィルタを使用するほうが良さそう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-02-17 (月) 02:41:10
+- ハイライトのサンプルとして`JTable`を使用しているけど、実際に行数が多くなるなら[JTableの検索結果をRowFilterとHighlighterで強調表示する](http://terai.xrea.jp/Swing/TableHighlightRegexFilter.html)のようにフィルタを使用するほうが良さそう。 -- *aterai* 2014-02-17 (月) 02:41:10
 
 <!-- dummy comment line for breaking list -->
-

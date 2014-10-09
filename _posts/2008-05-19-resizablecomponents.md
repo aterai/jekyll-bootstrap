@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComponentをマウスで移動、リサイズ
 category: swing
 folder: ResizableComponents
+title: JComponentをマウスで移動、リサイズ
 tags: [JLayeredPane, MouseListener, MouseMotionListener, JComponent]
 author: aterai
+pubdate: 2008-05-19T13:41:14+09:00
+description: JLayeredPaneに、マウスで移動、リサイズ可能なコンポーネントを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-19
-
 ## 概要
 `JLayeredPane`に、マウスで移動、リサイズ可能なコンポーネントを追加します。
 

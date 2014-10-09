@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableが空の場合、中央にJComponentを表示する
 category: swing
 folder: PlaceholderForEmptyTable
+title: JTableが空の場合、中央にJComponentを表示する
 tags: [JTable, JEditorPane, GridBagLayout, URL]
 author: aterai
+pubdate: 2010-09-13T11:14:48+09:00
+description: JTableが空の場合、表領域の中央に任意のJComponentが表示されるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-13
-
 ## 概要
 `JTable`が空の場合、表領域の中央に任意の`JComponent`が表示されるように設定します。
 
@@ -24,8 +23,8 @@ table.add(hint);
 
 model.addTableModelListener(new TableModelListener() {
   @Override public void tableChanged(TableModelEvent e) {
-    DefaultTableModel model = (DefaultTableModel)e.getSource();
-    hint.setVisible(model.getRowCount()==0);
+    DefaultTableModel model = (DefaultTableModel) e.getSource();
+    hint.setVisible(model.getRowCount() == 0);
   }
 });
 </code></pre>
@@ -40,10 +39,8 @@ model.addTableModelListener(new TableModelListener() {
 
 ~~追加した`JEditorPane`の表示非表示の切り替えは、ポップアップメニューで行の追加削除を行ったとき、`JTable#getRowCount()==0`かどうかで判断しています。~~ `TableModelListener`を使って行の追加削除を行ったときに`JEditorPane`の表示非表示を切り替えるように変更しました。
 
-
 ## コメント
-- 大変素晴らしいです。参考にさせていただきました。 -- [shuna](http://terai.xrea.jp/shuna.html) 2010-09-18 (土) 12:12:50
-    - ありがとうございます。どうもです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-09-18 (土) 20:19:21
+- 大変素晴らしいです。参考にさせていただきました。 -- *shuna* 2010-09-18 (土) 12:12:50
+    - ありがとうございます。どうもです。 -- *aterai* 2010-09-18 (土) 20:19:21
 
 <!-- dummy comment line for breaking list -->
-

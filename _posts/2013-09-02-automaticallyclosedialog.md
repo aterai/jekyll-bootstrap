@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JOptionPaneを自動的に閉じる
 category: swing
 folder: AutomaticallyCloseDialog
+title: JOptionPaneを自動的に閉じる
 tags: [JOptionPane, Timer, HierarchyListener, JLabel]
 author: aterai
+pubdate: 2013-09-02T00:27:47+09:00
+description: JOptionPaneにカウントダウンと自動クローズを行うためのJLabelを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-02
-
 ## 概要
 `JOptionPane`にカウントダウンと自動クローズを行うための`JLabel`を追加します。
 

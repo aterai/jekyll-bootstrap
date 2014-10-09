@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブをドラッグ＆ドロップ
 category: swing
 folder: DnDTabbedPane
+title: JTabbedPaneのタブをドラッグ＆ドロップ
 tags: [JTabbedPane, DragAndDrop, GlassPane, DragGestureListener]
 author: aterai
+pubdate: 2004-09-27
+description: JTabbedPaneのタブをDrag&Dropで移動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-27
-
 ## 概要
 `JTabbedPane`のタブを`Drag&Drop`で移動します。
 
@@ -73,17 +72,16 @@ private void convertTab(int prev, int next) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ドラッグ中のタブゴーストを表示する機能を追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-23 (金) 15:18:30
-- `java.awt.dnd`パッケージを使用する方法にソースを変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-01 (土) 16:22:48
-- `tab.setTabPlacement(JTabbedPane.RIGHT)`などへの対応と、タブのないタブエリアをドラッグすると`Exception`が発生していたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-19 (火) 18:38:18
-- `GlassPane`の設定方法を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-08-06 (水) 12:17:51
-- 選択不可のタブを移動すると、選択可に変化するバグ(dlordeさんからの指摘、ありがとう)を修正。ついでにタブのアイコン、ツールチップにも対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-03 (金) 13:13:31
-    - 選択不可のタブを移動不可にする場合は、`DragGestureListener#dragGestureRecognized`メソッドで`if(dragTabIndex<0 || !isEnabledAt(dragTabIndex)) return;`など。、 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-03 (金) 13:15:18
-- `SCROLL_TAB_LAYOUT`での、`auto scroll`テストを追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-09 (火) 12:49:10
-- `SCROLL_TAB_LAYOUT`で、コンポーネントが`null`(`addTab("title", null)`などの場合)のタブをドラッグすると例外が発生するバグを修正(darylさんからの指摘、thx)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-30 (火) 18:56:48
-- タブのドラッグ中、`JTable`上などで`Cursor`が点滅するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-19 (火) 17:16:44
-- 参考にさせていただきました．ありがとうございます． -- [M.U](http://terai.xrea.jp/M.U.html) 2009-12-20 (日) 20:27:37
-    - どういたしまして。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-21 (月) 00:43:51
+- ドラッグ中のタブゴーストを表示する機能を追加しました。 -- *aterai* 2006-06-23 (金) 15:18:30
+- `java.awt.dnd`パッケージを使用する方法にソースを変更しました。 -- *aterai* 2006-07-01 (土) 16:22:48
+- `tab.setTabPlacement(JTabbedPane.RIGHT)`などへの対応と、タブのないタブエリアをドラッグすると`Exception`が発生していたのを修正しました。 -- *aterai* 2008-02-19 (火) 18:38:18
+- `GlassPane`の設定方法を修正 -- *aterai* 2008-08-06 (水) 12:17:51
+- 選択不可のタブを移動すると、選択可に変化するバグ(dlordeさんからの指摘、ありがとう)を修正。ついでにタブのアイコン、ツールチップにも対応。 -- *aterai* 2008-10-03 (金) 13:13:31
+    - 選択不可のタブを移動不可にする場合は、`DragGestureListener#dragGestureRecognized`メソッドで`if(dragTabIndex<0 || !isEnabledAt(dragTabIndex)) return;`など。、 -- *aterai* 2008-10-03 (金) 13:15:18
+- `SCROLL_TAB_LAYOUT`での、`auto scroll`テストを追加しました。 -- *aterai* 2008-12-09 (火) 12:49:10
+- `SCROLL_TAB_LAYOUT`で、コンポーネントが`null`(`addTab("title", null)`などの場合)のタブをドラッグすると例外が発生するバグを修正(darylさんからの指摘、thx)。 -- *aterai* 2008-12-30 (火) 18:56:48
+- タブのドラッグ中、`JTable`上などで`Cursor`が点滅するのを修正。 -- *aterai* 2009-05-19 (火) 17:16:44
+- 参考にさせていただきました．ありがとうございます． -- *M.U* 2009-12-20 (日) 20:27:37
+    - どういたしまして。 -- *aterai* 2009-12-21 (月) 00:43:51
 
 <!-- dummy comment line for breaking list -->
-

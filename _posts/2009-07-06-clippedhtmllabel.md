@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Htmlで修飾した文字列のクリップ
 category: swing
 folder: ClippedHtmlLabel
+title: Htmlで修飾した文字列のクリップ
 tags: [Html, JTable, TableCellRenderer, JLabel]
 author: aterai
+pubdate: 2009-07-06T15:24:09+09:00
+description: Htmlで文字列を修飾するとクリップされなくなるので、予めクリップした文字列を作成してからHtmlを使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-06
-
 ## 概要
 `Html`で文字列を修飾するとクリップされなくなるので、予めクリップした文字列を作成してから`Html`を使用します。
 

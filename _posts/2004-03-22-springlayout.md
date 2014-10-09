@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SpringLayoutの使用
 category: swing
 folder: SpringLayout
+title: SpringLayoutの使用
 tags: [SpringLayout, LayoutManager]
 author: aterai
+pubdate: 2004-03-22
+description: SpringLayoutを使用して、各ラベルのサイズとパネルからの距離が一定の比率になるような配置を指定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22
-
 ## 概要
 `SpringLayout`を使用して、各ラベルのサイズとパネルからの距離が一定の比率になるような配置を指定します。
 
@@ -74,7 +73,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-22
 ~~距離を`0`にすることも可能で、例えばサンプルコードのコメントアウトされたような指定をすると、ラベル`1`、`2`を左揃えで並べることができます。~~
 
 ## コメント
-- 以前の内容は、[BoxLayoutでリスト状に並べる](http://terai.xrea.jp/Swing/ComponentList.html)に移動しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-15 (木) 19:40:17
+- 以前の内容は、[BoxLayoutでリスト状に並べる](http://terai.xrea.jp/Swing/ComponentList.html)に移動しました。 -- *aterai* 2006-06-15 (木) 19:40:17
 - リスナーを使わなくても次ので出来ました。 --  2010-09-02 (木) 02:41:13
 
 <!-- dummy comment line for breaking list -->
@@ -85,7 +84,6 @@ layout.getConstraints(name).setWidth(Spring.scale(panelw, 0.9f));
 layout.getConstraints(name).setX(Spring.scale(panelw, 0.05f));
 </code></pre>
 
-- ご指摘ありがとうございます。こんなメソッドがあったんですね。サンプルを全体的に修正してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-09-02 (木) 07:01:18
+- ご指摘ありがとうございます。こんなメソッドがあったんですね。サンプルを全体的に修正してみました。 -- *aterai* 2010-09-02 (木) 07:01:18
 
 <!-- dummy comment line for breaking list -->
-

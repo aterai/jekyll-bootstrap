@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのTooltipsを行ごとに変更
 category: swing
 folder: RowTooltips
+title: JTableのTooltipsを行ごとに変更
 tags: [JTable, JToolTip, TableCellRenderer]
 author: aterai
+pubdate: 2005-03-28T02:50:10+09:00
+description: JTableのTooltipsが、カーソルのある行の内容などを表示するようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-28
-
 ## 概要
 `JTable`の`Tooltips`が、カーソルのある行の内容などを表示するようにします。
 
@@ -75,7 +74,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-28
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 名前もコメントも空の場合は、空のツールチップが表示されないように、`null`を返すようにした方がいいかも。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-04 (水) 19:26:19
+- 名前もコメントも空の場合は、空のツールチップが表示されないように、`null`を返すようにした方がいいかも。 -- *aterai* 2007-04-04 (水) 19:26:19
 
 <!-- dummy comment line for breaking list -->
-

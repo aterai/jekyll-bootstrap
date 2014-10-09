@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TitledBorderのタイトル位置
 category: swing
 folder: TitledBorder
+title: TitledBorderのタイトル位置
 tags: [TitledBorder, Border]
 author: aterai
+pubdate: 2007-08-06T12:08:09+09:00
+description: TitledBorderのタイトル位置や揃えを切り替えてテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-06
-
 ## 概要
 `TitledBorder`のタイトル位置や揃えを切り替えてテストします。
 
@@ -63,7 +62,6 @@ panel.repaint();
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [TitledBorder API inconsitent with implementation: uses TOP instead of DEFAULT_POSITION](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6658876) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-12 (土) 00:35:59
+- メモ: [TitledBorder API inconsitent with implementation: uses TOP instead of DEFAULT_POSITION](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6658876) -- *aterai* 2008-04-12 (土) 00:35:59
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードタイトルを複数行表示する
 category: swing
 folder: MultiLineTree
+title: JTreeのノードタイトルを複数行表示する
 tags: [JList, TreeCellRenderer, JTextArea, Html]
 author: aterai
+pubdate: 2011-04-11T15:20:36+09:00
+description: JTreeの各ノードで改行を使用し、タイトルを複数行表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
-
 ## 概要
 `JTree`の各ノードで改行を使用し、タイトルを複数行表示します。
 
@@ -102,7 +101,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-11
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#setRowHeight(0)`として、セルレンダラーが高さを決めるように設定し、以下の`2`つの方法で改行を行っています(`JTree#getRowHeight()`の初期値(`LookAndFeel`で異なる)は、`WindowsLookAndFeel`などの場合`0`以下ではない)。
+上記のサンプルでは、`JTree#setRowHeight(0)`として、セルレンダラーが高さを決めるように設定し、以下の`2`つの方法で改行を行っています(`JTree#getRowHeight()`の初期値は`LookAndFeel`で異なり、例えば`WindowsLookAndFeel`の場合`0`以下ではない)。
 
 - `Html`
     - `Html`タグを使用し、`<br>`で改行

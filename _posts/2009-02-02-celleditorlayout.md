@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableCellEditorのレイアウトを変更
 category: swing
 folder: CellEditorLayout
+title: TableCellEditorのレイアウトを変更
 tags: [JTable, TableCellEditor, BorderLayout, JTextField, JButton, Focus, KeyboardFocusManager]
 author: aterai
+pubdate: 2009-02-02T14:08:34+09:00
+description: TableCellEditorのレイアウトを変更して、CellEditorの隣にJButtonを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-02
-
 ## 概要
 `TableCellEditor`のレイアウトを変更して、`CellEditor`の隣に`JButton`を配置します。
 
@@ -171,8 +170,7 @@ class CustomComponentCellEditor2 extends DefaultCellEditor {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- <kbd>F2</kbd>で編集開始した場合、フォーカスできない問題を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-08-10 (月) 15:50:27
-- ソースコードだけ変更して、こちらのページの修正を忘れていたorzので、新しく追加した`2`列目の解説と、最終列はデフォルトであることを追記。スクリーンショットは面倒なので更新しない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-08-30 (火) 18:26:59
+- <kbd>F2</kbd>で編集開始した場合、フォーカスできない問題を修正。 -- *aterai* 2009-08-10 (月) 15:50:27
+- ソースコードだけ変更して、こちらのページの修正を忘れていたorzので、新しく追加した`2`列目の解説と、最終列はデフォルトであることを追記。スクリーンショットは面倒なので更新しない。 -- *aterai* 2011-08-30 (火) 18:26:59
 
 <!-- dummy comment line for breaking list -->
-

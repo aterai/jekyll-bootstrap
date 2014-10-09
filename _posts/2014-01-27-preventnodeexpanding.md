@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeで展開不可のノードを設定する
 category: swing
 folder: PreventNodeExpanding
+title: JTreeで展開不可のノードを設定する
 tags: [JTree, TreeWillExpandListener, File]
 author: aterai
+pubdate: 2014-01-27T00:45:37+09:00
+description: JTreeで特定のノードだけ展開できないように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-27
-
 ## 概要
 `JTree`で特定のノードだけ展開できないように設定します。
 
@@ -39,7 +38,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-27
 ## 解説
 - `TreeWillExpandListener`を実装し、`treeWillExpand(...)`メソッド内で、ノード(`File`)の名前がドットで始まる場合、`ExpandVetoException`を投げて展開をキャンセル
     - これらのノードは展開は不可だが、選択自体は可能
-- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、名前がドットで始まる場合、ノードを`setEnabled(false)`で無効状態にして描画
+- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、名前がドットで始まる場合、そのノードを`setEnabled(false)`で無効状態にして描画
 
 <!-- dummy comment line for breaking list -->
 

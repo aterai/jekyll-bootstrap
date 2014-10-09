@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの展開状態を記憶・復元する
 category: swing
 folder: ExpandedDescendants
+title: JTreeの展開状態を記憶・復元する
 tags: [JTree, TreePath]
 author: aterai
+pubdate: 2013-11-18T00:04:12+09:00
+description: JTreeでノードの展開状態を記憶、復元します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-18
-
 ## 概要
 `JTree`でノードの展開状態を記憶、復元します。
 

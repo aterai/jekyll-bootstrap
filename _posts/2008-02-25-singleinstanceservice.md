@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SingleInstanceServiceを使って Web Start アプリケーションの重複起動を禁止
 category: swing
 folder: SingleInstanceService
+title: SingleInstanceServiceを使って Web Start アプリケーションの重複起動を禁止
 tags: [SingleInstanceService, ServiceManager, SingleInstance]
 author: aterai
+pubdate: 2008-02-25T02:06:56+09:00
+description: SingleInstanceServiceを使って、Web Startアプリケーションの重複起動を禁止したり、引数の取得を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-25
-
 ## 概要
 `SingleInstanceService`を使って、`Web Start`アプリケーションの重複起動を禁止したり、引数の取得を行います。
 

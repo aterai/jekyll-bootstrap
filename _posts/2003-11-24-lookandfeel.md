@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Look and Feelの変更
 category: swing
 folder: LookAndFeel
+title: Look and Feelの変更
 tags: [LookAndFeel, JMenuBar]
 author: aterai
+pubdate: 2003-11-24
+description: アプリケーションのLook and Feelを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-24
-
 ## 概要
 アプリケーションの`Look and Feel`を変更します。以下のサンプルコードは、`%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java`から引用改変したものです。
 
@@ -119,7 +118,6 @@ private void setLookAndFeel(String laf) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-28 (金) 21:37:52
+- スクリーンショットなどを更新。 -- *aterai* 2008-03-28 (金) 21:37:52
 
 <!-- dummy comment line for breaking list -->
-

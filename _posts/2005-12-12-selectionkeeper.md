@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableSorterでソートしても選択状態を維持
 category: swing
 folder: SelectionKeeper
+title: TableSorterでソートしても選択状態を維持
 tags: [JTable, JTableHeader, TableSorter]
 author: aterai
+pubdate: 2005-12-12
+description: TableSorter.javaを使ってソートしても、行の選択状態を保存しておきます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-12
-
 ## 概要
 `TableSorter.java`を使ってソートしても、行の選択状態を保存しておきます。
 

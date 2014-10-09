@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの行を別のJTableにドラッグして移動
 category: swing
 folder: DragRowsAnotherTable
+title: JTableの行を別のJTableにドラッグして移動
 tags: [JTable, DragAndDrop, TransferHandler, Cursor]
 author: aterai
+pubdate: 2009-09-28T14:28:36+09:00
+description: JTableの行を別のJTableにDrag&Dropで移動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-28
-
 ## 概要
 `JTable`の行を別の`JTable`に`Drag&Drop`で移動します。
 
@@ -107,7 +106,7 @@ table.setFillsViewportHeight(true);
 </code></pre>
 
 - - - -
-`WindowsLookAndFeel`でカーソルのチラつき防止のために、`TransferHandler#canImport(...)`内で`JTable#setCursor(...)`をしているため、デスクトップなどからファイルをドラッグしてドロップ不可カーソルが表示されるとマウスをリリースしたあともそのカーソルが表示されたままになるバグがあります。
+`WindowsLookAndFeel`でカーソルのチラつき防止のために、`TransferHandler#canImport(...)`内で`JTable#setCursor(...)`をしているため、デスクトップなどからファイルをドラッグしてドロップ不可カーソルが表示されると、その後マウスをリリースしてもカーソルが表示されたままになるバグがあります。
 
 また、このサンプルでは、各`JTable`に`TableRowSorter`などが設定され、ソートされた状態での並べ替えは想定していません。
 

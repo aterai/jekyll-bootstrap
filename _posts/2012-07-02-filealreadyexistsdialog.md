@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserを開いたままファイルの上書き警告ダイアログを表示する
 category: swing
 folder: FileAlreadyExistsDialog
+title: JFileChooserを開いたままファイルの上書き警告ダイアログを表示する
 tags: [JFileChooser, JOptionPane]
 author: aterai
+pubdate: 2012-07-02T17:20:50+09:00
+description: JFileChooserで名前を付けて保存する場合、すでに存在するファイルを選択してセーブボタンを押すと上書き警告ダイアログを表示するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-02
-
 ## 概要
 `JFileChooser`で名前を付けて保存する場合、すでに存在するファイルを選択してセーブボタンを押すと上書き警告ダイアログを表示するように設定します。
 

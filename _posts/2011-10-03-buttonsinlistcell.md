@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListのセル内にJButtonを配置する
 category: swing
 folder: ButtonsInListCell
+title: JListのセル内にJButtonを配置する
 tags: [JList, JButton, ListCellRenderer]
 author: aterai
+pubdate: 2011-10-03T14:43:12+09:00
+description: JListのセル内に複数のJButtonを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-03
-
 ## 概要
 `JList`のセル内に複数の`JButton`を配置します。
 
@@ -89,7 +88,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-03
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ダミーの`view, edit`ボタンを実際に動作する行の`delete, copy`ボタンに変更(ソースを修正したのは2011年10月、スクリーンショットは未変更)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-20 (水) 16:13:40
+- ダミーの`view, edit`ボタンを実際に動作する行の`delete, copy`ボタンに変更(ソースを修正したのは2011年10月、スクリーンショットは未変更)。 -- *aterai* 2013-11-20 (水) 16:13:40
 
 <!-- dummy comment line for breaking list -->
-

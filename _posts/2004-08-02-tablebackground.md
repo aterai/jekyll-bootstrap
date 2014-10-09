@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの背景色を変更
 category: swing
 folder: TableBackground
+title: JTableの背景色を変更
 tags: [JTable, JViewport, JScrollPane]
 author: aterai
+pubdate: 2004-08-02T01:28:45+09:00
+description: JTableを追加したJViewportがセルで隠れていない部分の色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-08-02
-
 ## 概要
 `JTable`を追加した`JViewport`がセルで隠れていない部分の色を変更します。
 

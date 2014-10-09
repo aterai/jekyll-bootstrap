@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SpinnerNumberModelに上限値を超える値を入力
 category: swing
 folder: SpinnerNumberModel
+title: SpinnerNumberModelに上限値を超える値を入力
 tags: [JSpinner, SpinnerNumberModel]
 author: aterai
+pubdate: 2009-07-13T13:52:46+09:00
+description: JSpinnerのテキストフィールドにSpinnerNumberModelが決めた上限値を超える数値を直接入力した後に表示される値をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-13
-
 ## 概要
 `JSpinner`のテキストフィールドに`SpinnerNumberModel`が決めた上限値を超える数値を直接入力した後に表示される値をテストします。
 

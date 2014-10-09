@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルに複数のJButtonを配置する
 category: swing
 folder: MultipleButtonsInTableCell
+title: JTableのセルに複数のJButtonを配置する
 tags: [JTable, TableCellEditor, TableCellRenderer, JButton, JPanel, ActionListener]
 author: aterai
+pubdate: 2009-10-05T12:57:02+09:00
+description: JTableのセル内にクリック可能な複数のJButtonを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-05
-
 ## 概要
 `JTable`のセル内にクリック可能な複数の`JButton`を配置します。
 
@@ -443,11 +442,10 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 第`0`列目が編集状態でボタンをクリックした場合、パネルが二度表示されるバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-06 (火) 11:56:21
-- [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)を参考にして、`JTable#editCellAt`ではなく、逆に`TableCellEditor#stopCellEditing()`を使用してクリック直後に編集終了するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-03 (火) 04:36:55
-- <kbd>Ctrl</kbd>キーを押しながら、`edit`ボタンをクリックすると異なる行(`table.getSelectedRow()`)の内容が表示されるバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-10 (木) 02:35:35
-- すごいと思いました！ -- [いわく](http://terai.xrea.jp/いわく.html) 2013-05-24 (金) 11:57:26
-    - こんばんは。たしかに`JTable`の`TableCellRenderer`、`TableCellEditor`の仕組みは、すごい良くできているといつも感心してしまいます :) -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-24 (金) 23:59:16
+- 第`0`列目が編集状態でボタンをクリックした場合、パネルが二度表示されるバグを修正。 -- *aterai* 2009-10-06 (火) 11:56:21
+- [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)を参考にして、`JTable#editCellAt`ではなく、逆に`TableCellEditor#stopCellEditing()`を使用してクリック直後に編集終了するように変更。 -- *aterai* 2009-11-03 (火) 04:36:55
+- <kbd>Ctrl</kbd>キーを押しながら、`edit`ボタンをクリックすると異なる行(`table.getSelectedRow()`)の内容が表示されるバグを修正。 -- *aterai* 2011-03-10 (木) 02:35:35
+- すごいと思いました！ -- *いわく* 2013-05-24 (金) 11:57:26
+    - こんばんは。たしかに`JTable`の`TableCellRenderer`、`TableCellEditor`の仕組みは、すごい良くできているといつも感心してしまいます :) -- *aterai* 2013-05-24 (金) 23:59:16
 
 <!-- dummy comment line for breaking list -->
-

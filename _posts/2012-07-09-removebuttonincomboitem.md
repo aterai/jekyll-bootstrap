@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのドロップダウンリストにJButtonを追加
 category: swing
 folder: RemoveButtonInComboItem
+title: JComboBoxのドロップダウンリストにJButtonを追加
 tags: [JComboBox, JButton, JList, BasicComboPopup, ListCellRenderer, MouseListener]
 author: aterai
+pubdate: 2012-07-09T12:02:11+09:00
+description: JButtonのドロップダウンリストで、各アイテムにクリック可能なJButtonを追加しこれを削除します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-09
-
 ## 概要
 `JButton`のドロップダウンリストで、各アイテムにクリック可能な`JButton`を追加しこれを削除します。
 

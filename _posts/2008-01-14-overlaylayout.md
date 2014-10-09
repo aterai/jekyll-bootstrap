@@ -1,15 +1,14 @@
 ---
 layout: post
-title: OverlayLayoutの使用
 category: swing
 folder: OverlayLayout
+title: OverlayLayoutの使用
 tags: [OverlayLayout, LayoutManager, JButton]
 author: aterai
+pubdate: 2008-01-14T17:09:44+09:00
+description: OverlayLayoutを使用し、JButtonを重ねて配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-14
-
 ## 概要
 `OverlayLayout`を使用し、`JButton`を重ねて配置します。
 
@@ -50,8 +49,7 @@ b1.add(b2);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ボタンサイズの指定方法を変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-01-17 (木) 20:39:53
-- スクリーンショットなどを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-29 (水) 18:51:52
+- ボタンサイズの指定方法を変更しました。 -- *aterai* 2008-01-17 (木) 20:39:53
+- スクリーンショットなどを更新。 -- *aterai* 2008-10-29 (水) 18:51:52
 
 <!-- dummy comment line for breaking list -->
-

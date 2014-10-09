@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノード中の文字列をハイライトする
 category: swing
 folder: HighlightWordInNode
+title: JTreeのノード中の文字列をハイライトする
 tags: [JTree, TreeCellRenderer, JTextField, HighlightPainter]
 author: aterai
+pubdate: 2013-07-01T00:02:16+09:00
+description: JTreeのノードから文字列を検索して、HighlightPainterで強調表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-01
-
 ## 概要
 `JTree`のノードから文字列を検索して、`HighlightPainter`で強調表示します。
 

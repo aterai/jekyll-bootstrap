@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SwingWorkerを使った処理の中断と進捗状況表示
 category: swing
 folder: SwingWorker
+title: SwingWorkerを使った処理の中断と進捗状況表示
 tags: [SwingWorker, JProgressBar, JTextArea, Animation]
 author: aterai
+pubdate: 2006-06-10
+description: JDK 6で新しくなったSwingWorkerを使って、処理の中断や進捗状況の表示更新などを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-10
-
 ## 概要
 `JDK 6`で新しくなった`SwingWorker`を使って、処理の中断や進捗状況の表示更新などを行います。
 
@@ -159,11 +158,10 @@ class CancelAction extends AbstractAction{
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-02-22 (木) 17:57:58
+- ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ -- *aterai* 2007-02-22 (木) 17:57:58
     - [Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)は、`JDK 1.6`の`javax.swing.SwingWorker`を使用するように変更しました。
-    - [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)は ~~https://swingworker.dev.java.net/ にある~~ `JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-12-17 (木) 01:47:38
-    - `java.net`が新しくなって結構時間が経ったけど、[http://java.net/projects/swingworker](http://java.net/projects/swingworker) から`jar`がダウンロードできない…。[maven2 のリポジトリ](http://download.java.net/maven/2/org/jdesktop/swing-worker/1.1/)から取得するしかない？  -- [aterai](http://terai.xrea.jp/aterai.html) 2011-12-02 (金) 17:23:45
-    - 上記の`jar`は、`1.1`なので、`1.2`が必要なら、 ソースを取得して、`ant bundles` -- [aterai](http://terai.xrea.jp/aterai.html) 2011-12-02 (金) 17:38:31
+    - [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)は ~~https://swingworker.dev.java.net/ にある~~ `JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用するように変更しました。 -- *aterai* 2009-12-17 (木) 01:47:38
+    - `java.net`が新しくなって結構時間が経ったけど、[http://java.net/projects/swingworker](http://java.net/projects/swingworker) から`jar`がダウンロードできない…。[maven2 のリポジトリ](http://download.java.net/maven/2/org/jdesktop/swing-worker/1.1/)から取得するしかない？  -- *aterai* 2011-12-02 (金) 17:23:45
+    - 上記の`jar`は、`1.1`なので、`1.2`が必要なら、 ソースを取得して、`ant bundles` -- *aterai* 2011-12-02 (金) 17:38:31
 
 <!-- dummy comment line for breaking list -->
-

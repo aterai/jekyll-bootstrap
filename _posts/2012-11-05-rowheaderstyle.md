@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの行ヘッダに列ヘッダのRendererを使用する
 category: swing
 folder: RowHeaderStyle
+title: JTableの行ヘッダに列ヘッダのRendererを使用する
 tags: [JTable, JTableHeader, TableCellRenderer, Icon]
 author: aterai
+pubdate: 2012-11-05T14:47:06+09:00
+description: JTableの行の描画に、JTableHeaderから取得した列ヘッダのRendererを適用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-05
-
 ## 概要
 `JTable`の行の描画に、`JTableHeader`から取得した列ヘッダの`Renderer`を適用します。
 

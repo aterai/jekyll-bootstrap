@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのアイテム履歴
 category: swing
 folder: DropDownHistory
+title: JComboBoxのアイテム履歴
 tags: [JComboBox]
 author: aterai
+pubdate: 2006-05-08
+description: JComboBoxで入力した文字列などのアイテムを順に保存します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-08
-
 ## 概要
 `JComboBox`で入力した文字列などのアイテムを順に保存します。
 

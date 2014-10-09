@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldにフォーカスと文字列が無い場合の表示
 category: swing
 folder: GhostText
+title: JTextFieldにフォーカスと文字列が無い場合の表示
 tags: [JTextField, Focus, FocusListener]
 author: aterai
+pubdate: 2005-11-07T16:50:50+09:00
+description: JTextFieldにフォーカスが無く文字列が空の場合、薄い色でその説明を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
-
 ## 概要
 `JTextField`にフォーカスが無く文字列が空の場合、薄い色でその説明を表示します。
 
@@ -99,8 +98,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-07
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タイトルを変更?: `Input Hint`、`Placeholder`、`Watermark` ... -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-17 (火) 15:48:18
-- `LayerUI#paint(...)`中で、子コンポーネントの`repaint()`を呼び出して再描画が無限ループしていたバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-07-26 (土) 04:51:11
+- タイトルを変更?: `Input Hint`、`Placeholder`、`Watermark` ... -- *aterai* 2009-11-17 (火) 15:48:18
+- `LayerUI#paint(...)`中で、子コンポーネントの`repaint()`を呼び出して再描画が無限ループしていたバグを修正。 -- *aterai* 2014-07-26 (土) 04:51:11
 
 <!-- dummy comment line for breaking list -->
-

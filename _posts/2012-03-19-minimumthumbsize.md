@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarのKnobの最小サイズを設定する
 category: swing
 folder: MinimumThumbSize
+title: JScrollBarのKnobの最小サイズを設定する
 tags: [JScrollBar, UIManager, JSlider]
 author: aterai
+pubdate: 2012-03-19T15:02:42+09:00
+description: JScrollBarのKnobの最小サイズを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19
-
 ## 概要
 `JScrollBar`の`Knob`の最小サイズを設定します。
 
@@ -23,8 +22,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-19
 上記のサンプルでは、右の`JScrollPane`で、`JScrollBar`の`Knob`(`Thumb`)が短くなりすぎないように、最小サイズ(`Horizontal`の場合は幅、`Vertical`の場合は高さ)を設定します。
 
 - 注: `LookAndFeel`によって、`UIManager.put("ScrollBar.minimumThumbSize", new Dimension(32, 32));`が有効かどうかは異なる
-    - `BasicLookAndFeel`、`WindowsLookAndFeel`: 有効
-    - `MetalLookAndFeel`、`NimbusLookAndFeel`: 無効
+    - 有効: `BasicLookAndFeel`、`WindowsLookAndFeel`
+    - 無効: `MetalLookAndFeel`、`NimbusLookAndFeel`
         - 以下のように、縦スクロールバーならその幅が最小サイズになるよう上書きされているため
 
 <!-- dummy comment line for breaking list -->

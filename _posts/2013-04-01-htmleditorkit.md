@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する
 category: swing
 folder: HTMLEditorKit
+title: JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する
 tags: [JTextPane, HTMLEditorKit, Html, JPopupMenu, JTextArea, JTabbedPane, ChangeListener]
 author: aterai
+pubdate: 2013-04-01T00:08:05+09:00
+description: HTMLEditorKitを使用するJTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示、編集、JTextPaneに反映するテストを行なっています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-01
-
 ## 概要
 `HTMLEditorKit`を使用する`JTextPane`で修飾したテキストを`JTextArea`に`Html`ソースとして表示、編集、`JTextPane`に反映するテストを行なっています。
 

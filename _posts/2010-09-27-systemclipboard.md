@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Clipboardから文字列や画像を取得する
 category: swing
 folder: SystemClipboard
+title: Clipboardから文字列や画像を取得する
 tags: [ServiceManager, ClipboardService, Transferable, JLabel]
 author: aterai
+pubdate: 2010-09-27T15:53:12+09:00
+description: Clipboardから文字列や画像データを取得し、JLabelに表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-27
-
 ## 概要
 `Clipboard`から文字列や画像データを取得し、`JLabel`に表示します。
 

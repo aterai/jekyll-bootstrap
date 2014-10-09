@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListのセル中に配置したコンポーネント毎にカーソルを変更する
 category: swing
 folder: CursorOfCellComponent
+title: JListのセル中に配置したコンポーネント毎にカーソルを変更する
 tags: [JList, Cursor, ListCellRenderer]
 author: aterai
+pubdate: 2013-10-21T00:16:35+09:00
+description: JListのセルに配置されているコンポーネントをマウスの座標から検索し、それに設定されたカーソルをJListに適用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-21
-
 ## 概要
 `JList`のセルに配置されているコンポーネントをマウスの座標から検索し、それに設定されたカーソルを`JList`に適用します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ToolTip表示の切り替え
 category: swing
 folder: ToolTipManager
+title: ToolTip表示の切り替え
 tags: [ToolTipManager, JToolTip]
 author: aterai
+pubdate: 2004-05-10T06:09:52+09:00
+description: ツールチップ(ツールヒント)表示の有無をToolTipManagerで切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-10
-
 ## 概要
 ツールチップ(ツールヒント)表示の有無を`ToolTipManager`で切り替えます。
 

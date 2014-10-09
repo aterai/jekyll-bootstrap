@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MouseWheelを使った値の増減
 category: swing
 folder: MouseWheel
+title: MouseWheelを使った値の増減
 tags: [MouseWheelListener, JSpinner, JSlider]
 author: aterai
+pubdate: 2004-03-08T08:53:34+09:00
+description: JSpinnerやJSliderの値をマウスホイールを使って変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-08
-
 ## 概要
 `JSpinner`や`JSlider`の値をマウスホイールを使って変更します。
 

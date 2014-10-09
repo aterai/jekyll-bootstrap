@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JButtonを半透明にする
 category: swing
 folder: TranslucentButton
+title: JButtonを半透明にする
 tags: [JButton, Translucent, GradientPaint, Icon, Html, OverlayLayout, JLabel]
 author: aterai
+pubdate: 2012-12-31T06:46:18+09:00
+description: 半透明なJButtonを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
-
 ## 概要
 半透明な`JButton`を作成します。
 
@@ -70,7 +69,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
 ## 解説
 - 透明な`JButton`、全体を半透明な`Icon`、タイトルの`Icon`と文字列は`align='middle'`などを指定して配置
     - 参考: [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
-    - `setOpaque(false);`, `setContentAreaFilled(false);`などで、`JButton`自体は透明化
+    - `setOpaque(false);`、`setContentAreaFilled(false);`などで、`JButton`自体は透明化
     - タイトル`Icon`と文字列の`align`が、`top`、`middle`、`bottom`のどれにしてもきれいに揃わない
     - サイズが固定
     - `MetalLookAndFeel`に変更しても、余計なフチが表示されない

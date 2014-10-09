@@ -1,15 +1,14 @@
 ---
 layout: post
-title: DefaultButtonの設定
 category: swing
 folder: DefaultButton
+title: DefaultButtonの設定
 tags: [JRootPane, JButton, JTextField, Focus]
 author: aterai
+pubdate: 2008-05-12T14:39:12+09:00
+description: DefaultButtonをJRootPaneに設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-12
-
 ## 概要
 `DefaultButton`を`JRootPane`に設定します。
 

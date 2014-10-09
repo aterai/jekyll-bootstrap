@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableがデフォルトでソートする列を設定する
 category: swing
 folder: DefaultSortingColumn
+title: JTableがデフォルトでソートする列を設定する
 tags: [JTable, RowSorter]
 author: aterai
+pubdate: 2011-06-06T18:40:01+09:00
+description: JTableがデフォルトでソートする列とその方向を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-06
-
 ## 概要
 `JTable`がデフォルトでソートする列とその方向を設定します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルをエクスプローラ風に表示する
 category: swing
 folder: ExplorerLikeTable
+title: JTableのセルをエクスプローラ風に表示する
 tags: [JTable, TableCellRenderer, JLabel, Focus]
 author: aterai
+pubdate: 2006-07-17
+description: セルの中にアイコンと文字列を配置し、エクスプローラ風に見えるよう、文字列だけにフォーカスをかけます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-17
-
 ## 概要
 セルの中にアイコンと文字列を配置し、エクスプローラ風に見えるよう、文字列だけにフォーカスをかけます。
 

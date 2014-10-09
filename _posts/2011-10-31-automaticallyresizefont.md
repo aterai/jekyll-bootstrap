@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fontサイズをコンポーネントの幅に応じて変更する
 category: swing
 folder: AutomaticallyResizeFont
+title: Fontサイズをコンポーネントの幅に応じて変更する
 tags: [JTextPane, Font]
 author: aterai
+pubdate: 2011-10-31T15:45:05+09:00
+description: JTextPaneのフォントサイズをその幅に応じて自動変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-31
-
 ## 概要
 `JTextPane`のフォントサイズをその幅に応じて自動変更します。
 
@@ -18,11 +17,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-31
 ## サンプルコード
 <pre class="prettyprint"><code>private final Font font = new Font(Font.MONOSPACED, Font.PLAIN, 12);
 private final JTextPane editor = new JTextPane() {
-  float font_size = 0.0f;
+  float font_size = 0f;
   @Override public void doLayout() {
     Insets i = getInsets();
     float f = .08f * (getWidth() - i.left - i.right);
-    if(Math.abs(font_size-f) &gt; 1.0e-1) {
+    if(Math.abs(font_size - f) &gt; 1.0e-1) {
       setFont(font.deriveFont(f));
       font_size = f;
     }

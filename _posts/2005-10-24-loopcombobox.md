@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのItem選択をループ
 category: swing
 folder: LoopComboBox
+title: JComboBoxのItem選択をループ
 tags: [JComboBox, ActionMap, InputMap]
 author: aterai
+pubdate: 2005-10-24
+description: JComboBoxのItemの選択が、上下のカーソルキーでループするように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-24
-
 ## 概要
 `JComboBox`の`Item`の選択が、上下のカーソルキーでループするように設定します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneのHTMLDocumentに要素を追加する
 category: swing
 folder: InsertHtmlText
+title: JEditorPaneのHTMLDocumentに要素を追加する
 tags: [JEditorPane, HTMLDocument]
 author: aterai
+pubdate: 2014-04-28T15:00:16+09:00
+description: JEditorPaneのHTMLDocumentからtable要素を取得し、その子要素としてtr要素などを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-28
-
 ## 概要
 `JEditorPane`の`HTMLDocument`から`table`要素を取得し、その子要素として`tr`要素などを追加します。
 
@@ -38,7 +37,6 @@ try {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [HTMLEditorKit.html#insertHTML(HTMLDocument, int, String, int, int, HTML.Tag)](http://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.html#insertHTML-javax.swing.text.html.HTMLDocument-int-java.lang.String-int-int-javax.swing.text.html.HTML.Tag-)よりは簡単？速度などは？ -- [aterai](http://terai.xrea.jp/aterai.html) 2014-04-28 (月) 15:00:16
+- メモ: [HTMLEditorKit.html#insertHTML(HTMLDocument, int, String, int, int, HTML.Tag)](http://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.html#insertHTML-javax.swing.text.html.HTMLDocument-int-java.lang.String-int-int-javax.swing.text.html.HTML.Tag-)よりは簡単？速度などは？ -- *aterai* 2014-04-28 (月) 15:00:16
 
 <!-- dummy comment line for breaking list -->
-

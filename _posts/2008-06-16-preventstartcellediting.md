@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableでキー入力によるセル編集開始を禁止する
 category: swing
 folder: PreventStartCellEditing
+title: JTableでキー入力によるセル編集開始を禁止する
 tags: [JTable, TableModel, DefaultCellEditor]
 author: aterai
+pubdate: 2008-06-16T13:18:37+09:00
+description: キー入力やマウスクリックによるJTableのセル編集開始を禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-16
-
 ## 概要
 キー入力やマウスクリックによる`JTable`のセル編集開始を禁止します。
 

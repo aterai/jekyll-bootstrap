@@ -1,15 +1,14 @@
 ---
 layout: post
-title: DefaultEditorKitでポップアップメニューからコピー
 category: swing
 folder: DefaultEditorKit
+title: DefaultEditorKitでポップアップメニューからコピー
 tags: [DefaultEditorKit, JTextField, JTextComponent, JPopupMenu]
 author: aterai
+pubdate: 2005-07-25
+description: DefaultEditorKitを使って、JTextFieldなどでポップアップメニューを使ったコピー、貼り付け、切り取りを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-25
-
 ## 概要
 `DefaultEditorKit`を使って、`JTextField`などでポップアップメニューを使ったコピー、貼り付け、切り取りを行います。
 
@@ -83,7 +82,6 @@ class TextFieldPopupMenu extends JPopupMenu {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 「今後この警告を表示しない」をやめて、セキュリティの警告を表示したいけど、やり方が分からないorz。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-06 (水) 13:00:48
+- 「今後この警告を表示しない」をやめて、セキュリティの警告を表示したいけど、やり方が分からないorz。 -- *aterai* 2008-02-06 (水) 13:00:48
 
 <!-- dummy comment line for breaking list -->
-

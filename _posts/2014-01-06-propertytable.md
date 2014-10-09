@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableでプロパティ一覧表を作成する
 category: swing
 folder: PropertyTable
+title: JTableでプロパティ一覧表を作成する
 tags: [JTable, TableCellRenderer, TableCellEditor, JColorChooser]
 author: aterai
+pubdate: 2014-01-06T00:25:50+09:00
+description: JTableの行ごとにクラスに応じたセルエディタなどを適用することで、プロパティ一覧表を作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-06
-
 ## 概要
 `JTable`の行ごとにクラスに応じたセルエディタなどを適用することで、プロパティ一覧表を作成します。
 

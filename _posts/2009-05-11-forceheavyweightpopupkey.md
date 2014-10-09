@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolTipをGlassPane上のコンポーネントで表示する
 category: swing
 folder: ForceHeavyWeightPopupKey
+title: JToolTipをGlassPane上のコンポーネントで表示する
 tags: [JToolTip, GlassPane, ToolTipManager, PopupFactory]
 author: aterai
+pubdate: 2009-05-11T16:10:58+09:00
+description: JToolTipをGlassPane上のコンポーネントに追加した場合でも、手前に表示されるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-11
-
 ## 概要
 `JToolTip`を`GlassPane`上のコンポーネントに追加した場合でも、手前に表示されるように設定します。主に[Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)を参考にしています。
 
@@ -62,8 +61,8 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);`がバージョンによって効かない場合があるらしい。[java - Force HeavyWeight Tooltip with shaped JPanel - Stack Overflow](http://stackoverflow.com/questions/17150483/force-heavyweight-tooltip-with-shaped-jpanel)　 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-18 (火) 08:34:11
-    - 上記のリンクのサンプルコードだと、`Windows 7` + `JDK 1.7.0_05`: `OK`, `JDK 1.7.0_06`: `NG`。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-18 (火) 08:42:24
+- `ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);`がバージョンによって効かない場合があるらしい。[java - Force HeavyWeight Tooltip with shaped JPanel - Stack Overflow](http://stackoverflow.com/questions/17150483/force-heavyweight-tooltip-with-shaped-jpanel)　 -- *aterai* 2013-06-18 (火) 08:34:11
+    - 上記のリンクのサンプルコードだと、`Windows 7` + `JDK 1.7.0_05`: `OK`, `JDK 1.7.0_06`: `NG`。 -- *aterai* 2013-06-18 (火) 08:42:24
     - [jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b)
 
 <!-- dummy comment line for breaking list -->
@@ -87,8 +86,7 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 --- 203,208 ----
 </code></pre>
 
-- [Bug ID: 2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=2224554)の修正が関係しているようだ。半透明の`Window`を使わないで、変わった形の`Window`を使う場合は、丁度この記事などのようにリフレクションを使って常に`PopupFactory_FORCE_HEAVYWEIGHT_POPUP`にした方が良さそう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-18 (火) 14:11:40
-    - 去年`Swing Dev ML`で議論されている。[<Swing Dev> (8) Review request for 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://mail.openjdk.java.net/pipermail/swing-dev/2012-June/002096.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-18 (火) 14:19:21
+- [Bug ID: 2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=2224554)の修正が関係しているようだ。半透明の`Window`を使わないで、変わった形の`Window`を使う場合は、丁度この記事などのようにリフレクションを使って常に`PopupFactory_FORCE_HEAVYWEIGHT_POPUP`にした方が良さそう。 -- *aterai* 2013-06-18 (火) 14:11:40
+    - 去年`Swing Dev ML`で議論されている。[<Swing Dev> (8) Review request for 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://mail.openjdk.java.net/pipermail/swing-dev/2012-June/002096.html) -- *aterai* 2013-06-18 (火) 14:19:21
 
 <!-- dummy comment line for breaking list -->
-

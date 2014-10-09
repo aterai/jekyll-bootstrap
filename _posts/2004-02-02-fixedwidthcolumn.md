@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのカラム幅を一部だけ固定する
 category: swing
 folder: FixedWidthColumn
+title: JTableのカラム幅を一部だけ固定する
 tags: [JTable, JTableHeader, TableColumn]
 author: aterai
+pubdate: 2004-02-02
+description: JTableのヘッダでカラム幅を一部だけ固定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-02-02
-
 ## 概要
 `JTable`のヘッダでカラム幅を一部だけ固定します。
 

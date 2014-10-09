@@ -1,15 +1,14 @@
 ---
 layout: post
-title: RandomDissolveで表示を切り替え
 category: swing
 folder: RandomDissolve
+title: RandomDissolveで表示を切り替え
 tags: [Animation, Graphics, BufferedImage, WritableRaster]
 author: aterai
+pubdate: 2007-03-26
+description: RandomDissolve効果で表示する画像を切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-26
-
 ## 概要
 `RandomDissolve`効果で表示する画像を切り替えます。このサンプルは、[Java 2D - random pixelwise fading ?](https://forums.oracle.com/thread/1270228)に投稿されているソースコードを参考にしています。
 

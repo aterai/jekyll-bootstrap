@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのサムネイルをJToolTipで表示
 category: swing
 folder: TabThumbnail
+title: JTabbedPaneのサムネイルをJToolTipで表示
 tags: [JToolTip, JTabbedPane]
 author: aterai
+pubdate: 2006-07-31T12:28:44+09:00
+description: ツールチップを使って、JTabbedPaneのサムネイルを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-31
-
 ## 概要
 ツールチップを使って、`JTabbedPane`のサムネイルを表示します。
 

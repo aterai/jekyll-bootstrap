@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのColumn名を変更する
 category: swing
 folder: EditColumnName
+title: JTableのColumn名を変更する
 tags: [JTable, JTableHeader, TableColumn, DefaultTableModel, JPopupMenu]
 author: aterai
+pubdate: 2013-09-23T05:04:22+09:00
+description: JTableのColumn名をJPopupMenuを使用して変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-23
-
 ## 概要
 `JTable`の`Column`名を`JPopupMenu`を使用して変更します。
 

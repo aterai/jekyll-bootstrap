@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Timerの使用数を変更
 category: swing
 folder: TimerAction
+title: Timerの使用数を変更
 tags: [Timer, Animation]
 author: aterai
+pubdate: 2014-04-14T00:48:39+09:00
+description: パネルのタイルアニメーションで使用するjava.swing.Timerの数を変更して動作のテストを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-14
-
 ## 概要
 パネルのタイルアニメーションで使用する`java.swing.Timer`の数を変更して動作のテストを行います。
 

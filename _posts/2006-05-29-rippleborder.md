@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Borderのアニメーション
 category: swing
 folder: RippleBorder
+title: Borderのアニメーション
 tags: [Border, Animation]
 author: aterai
+pubdate: 2006-05-29T09:06:51+09:00
+description: Borderの描画をアニメーションさせます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-29
-
 ## 概要
 `Border`の描画をアニメーションさせます。
 

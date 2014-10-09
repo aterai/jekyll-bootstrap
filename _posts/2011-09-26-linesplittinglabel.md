@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fontのアウトラインを取得して文字列の内部を修飾する
 category: swing
 folder: LineSplittingLabel
+title: Fontのアウトラインを取得して文字列の内部を修飾する
 tags: [Font, Shape, Graphics, TextLayout, GlyphVector, JComponent]
 author: aterai
+pubdate: 2011-09-26T17:16:34+09:00
+description: クリップを設定することで描画範囲を制限し、文字列の内部を異なる色で修飾します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-26
-
 ## 概要
 クリップを設定することで描画範囲を制限し、文字列の内部を異なる色で修飾します。
 

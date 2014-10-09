@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MatteBorderでラベル枠を修飾
 category: swing
 folder: MatteBorder
+title: MatteBorderでラベル枠を修飾
 tags: [MatteBorder]
 author: aterai
+pubdate: 2004-12-20T00:29:03+09:00
+description: MatteBorderでラベルの枠を修飾します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-20
-
 ## 概要
 `MatteBorder`でラベルの枠を修飾します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードの文字列に余白を追加
 category: swing
 folder: TreeCellMargin
+title: JTreeのノードの文字列に余白を追加
 tags: [JTree, TreeCellRenderer, Border, JLabel]
 author: aterai
+pubdate: 2010-05-17T14:59:42+09:00
+description: JTreeのノードにある文字列の左右に余白を追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-17
-
 ## 概要
 `JTree`のノードにある文字列の左右に余白を追加します。
 

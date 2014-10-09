@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameの複数作成と終了
 category: swing
 folder: CloseOperation
+title: JFrameの複数作成と終了
 tags: [JFrame, WindowListener]
 author: aterai
+pubdate: 2005-06-27T01:43:23+09:00
+description: JFrameを複数作成し、これらをすべて閉じた時にアプリケーションを終了します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-27
-
 ## 概要
 `JFrame`を複数作成し、これらをすべて閉じた時にアプリケーションを終了します。
 
@@ -49,8 +48,7 @@ public static JFrame createFrame(String title) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `1`代目の`jframe`から複数の`2`代目の`jframe`を作り出す。また`2`代目の`jframe`から`3`代目の`jframe`を作り出す。適当に選んだ`1`つの`2`代目`jframe`を閉じると、その`2`代目から作り出した`3`代目`jframe`も同時に`dispose`したい。即ち別の`2`代目とそこから生成した`3`代目には影響（`dispose`）を及ぼさないするにはどうすれば宜しいでしょうか？宜しくご教示ください。 -- [Panda](http://terai.xrea.jp/Panda.html) 2011-03-07 (月) 15:12:52
-    - ルートになる`JFrame`は`EXIT_ON_CLOSE`、残りは`DISPOSE_ON_CLOSE`とし、各`JFrame`の親子関係をどこかに保持するなどしておけば、あとは閉じる時に自分(`JFrame`)の子も深さ優先で検索して同様に閉じていくだけで特に問題ない？と思います。   -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-07 (月) 18:58:49
+- `1`代目の`jframe`から複数の`2`代目の`jframe`を作り出す。また`2`代目の`jframe`から`3`代目の`jframe`を作り出す。適当に選んだ`1`つの`2`代目`jframe`を閉じると、その`2`代目から作り出した`3`代目`jframe`も同時に`dispose`したい。即ち別の`2`代目とそこから生成した`3`代目には影響（`dispose`）を及ぼさないするにはどうすれば宜しいでしょうか？宜しくご教示ください。 -- *Panda* 2011-03-07 (月) 15:12:52
+    - ルートになる`JFrame`は`EXIT_ON_CLOSE`、残りは`DISPOSE_ON_CLOSE`とし、各`JFrame`の親子関係をどこかに保持するなどしておけば、あとは閉じる時に自分(`JFrame`)の子も深さ優先で検索して同様に閉じていくだけで特に問題ない？と思います。   -- *aterai* 2011-03-07 (月) 18:58:49
 
 <!-- dummy comment line for breaking list -->
-

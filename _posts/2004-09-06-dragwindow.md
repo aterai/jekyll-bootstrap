@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JWindowをマウスで移動
 category: swing
 folder: DragWindow
+title: JWindowをマウスで移動
 tags: [JWindow, JFrame, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2004-09-06
+description: JWindowなどのタイトルバーのないフレームをマウスで移動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-06
-
 ## 概要
 `JWindow`などのタイトルバーのないフレームをマウスで移動します。
 
@@ -73,8 +72,8 @@ class DragWindowListener extends MouseAdapter {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JLabel`無しで`JFrame`を直接つかんで移動させようと，ソース中の`DragWindowListener`を`Frame`の引数に指定して`addMouseListener()`，`addMouseMotionListener()`に追加してみたのですが，うまく動きませんでした。ラベルではなくフレームを直接つかんで移動させるにはどうすればよいのでしょうか？ -- [hshs](http://terai.xrea.jp/hshs.html) 2013-03-14 (木) 08:00:42
-    - `frame.getContentPane().addMouseListener(dwl);...`と、`ContentPane`か`RootPane`に`DragWindowListener`を追加するか、以下のように`DragWindowListener`を変更するのはどうでしょうか？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-14 (木) 13:53:25
+- `JLabel`無しで`JFrame`を直接つかんで移動させようと，ソース中の`DragWindowListener`を`Frame`の引数に指定して`addMouseListener()`，`addMouseMotionListener()`に追加してみたのですが，うまく動きませんでした。ラベルではなくフレームを直接つかんで移動させるにはどうすればよいのでしょうか？ -- *hshs* 2013-03-14 (木) 08:00:42
+    - `frame.getContentPane().addMouseListener(dwl);...`と、`ContentPane`か`RootPane`に`DragWindowListener`を追加するか、以下のように`DragWindowListener`を変更するのはどうでしょうか？ -- *aterai* 2013-03-14 (木) 13:53:25
 
 <!-- dummy comment line for breaking list -->
 
@@ -124,14 +123,13 @@ class DragWindowListener extends MouseAdapter {
   }
 }
 </code></pre>
-- えーと、このソースは新たに`JPanel`を継承してるんですね、という事は結局、`JFrame`自体をマウスドラッグでつかむことが出来ないということなんでしょうか？ -- [hshs](http://terai.xrea.jp/hshs.html) 2013-03-15 (金) 11:08:52
-    - `JFrame`の`ContentPane`に`JPanel`を継承したダミーコンポーネントをサンプルとして追加してるだけです。必要ないなら上記のように削除して(どこを削除したかはこのページ上にある「編集された箇所をみる」などで調べてください)調査してみるのがお手軽なのでオススメです。`JFrame`に追加したリスナーで`JFrame`の移動を行うことは可能ですが、本当に「`JFrame`自体をマウスドラッグでつかむことが出来ない」かどうかについては、内部での処理を追っていないのでよく分かりません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-15 (金) 13:56:42
-- 返信ありがとうございます，最初のサンプル中の`createAndShowGUI()`内や，`showFrame()`や，`start(JFrame frame)`内などに，`DragWindowListener dwl = new DragWindowListener();`と`frame.addMouseListener(dwl);`と`frame.addMouseMotionListener(dwl);`を入れて見たりしたのですが動作しないのですが，これは何故なんでしょうか？、何か必要な命令が足りないのでしょうか。 -- [hshs](http://terai.xrea.jp/hshs.html) 2013-03-15 (金) 22:34:12
-    - 失礼、見落としてました。自分の環境(`JDK 1.7.0_17`, `Windows 7`)では、特に問題なく動作(`Exception`なども出ていない)しています。環境と変更したソース自体をどこか(例えば https://gist.github.com/ とか)に投稿できますか？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-18 (月) 15:34:53
+- えーと、このソースは新たに`JPanel`を継承してるんですね、という事は結局、`JFrame`自体をマウスドラッグでつかむことが出来ないということなんでしょうか？ -- *hshs* 2013-03-15 (金) 11:08:52
+    - `JFrame`の`ContentPane`に`JPanel`を継承したダミーコンポーネントをサンプルとして追加してるだけです。必要ないなら上記のように削除して(どこを削除したかはこのページ上にある「編集された箇所をみる」などで調べてください)調査してみるのがお手軽なのでオススメです。`JFrame`に追加したリスナーで`JFrame`の移動を行うことは可能ですが、本当に「`JFrame`自体をマウスドラッグでつかむことが出来ない」かどうかについては、内部での処理を追っていないのでよく分かりません。 -- *aterai* 2013-03-15 (金) 13:56:42
+- 返信ありがとうございます，最初のサンプル中の`createAndShowGUI()`内や，`showFrame()`や，`start(JFrame frame)`内などに，`DragWindowListener dwl = new DragWindowListener();`と`frame.addMouseListener(dwl);`と`frame.addMouseMotionListener(dwl);`を入れて見たりしたのですが動作しないのですが，これは何故なんでしょうか？、何か必要な命令が足りないのでしょうか。 -- *hshs* 2013-03-15 (金) 22:34:12
+    - 失礼、見落としてました。自分の環境(`JDK 1.7.0_17`, `Windows 7`)では、特に問題なく動作(`Exception`なども出ていない)しています。環境と変更したソース自体をどこか(例えば https://gist.github.com/ とか)に投稿できますか？ -- *aterai* 2013-03-18 (月) 15:34:53
 - あっ、動作しないというのは「`JFrame`自体をマウスドラッグでつかむことが出来ない」という意味で，通常の動作は問題ないです，上記のように追加変更して見たら，ラベルの部分だけでなく真ん中のフレーム部分を，マウスでドラッグしてつかんで移動させられるのかなと思ったのですが，実際つかんで移動させようとすると，`Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException`が出てきてつかめなかったので....。GitHubのアカウントは持ってないですｗ，環境は`JDK1.7.0_15`,`win7`,`64bit`,ソースは上の三行を追加してみただけです。 --  2013-03-19 (火) 04:21:51
-    - 「上の三行を追加してみただけ」だと`DragWindowListener`が新しくなっていない(コメントの`DragWindowListener`になっていない)ので、`NullPointerException`が発生していると考えて良さそうです(ソースコードの行とかが分からないので推測ですが)。`src.zip`やリポジトリの`DragWindowListener`も更新した(ついでに上記のコメントの`DragWindowListener`もアップデート)ので、最新版で試してみてください。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-19 (火) 16:03:51
-    - 余談: gistってアカウント必要でしたっけ？ -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-19 (火) 16:05:24
-- gistってアカウント無しで投稿出来るんですね，知りませんでしたm(__)m，再UPしていただいた`src.zip`で上記の動作を確認できました。ありがとうございます。`DragWindowListener`内部の追加されていたコードの意味が自分にはまだ理解できませんが，もっと勉強したいと思います。 -- [hshs](http://terai.xrea.jp/hshs.html) 2013-03-20 (水) 06:49:58
+    - 「上の三行を追加してみただけ」だと`DragWindowListener`が新しくなっていない(コメントの`DragWindowListener`になっていない)ので、`NullPointerException`が発生していると考えて良さそうです(ソースコードの行とかが分からないので推測ですが)。`src.zip`やリポジトリの`DragWindowListener`も更新した(ついでに上記のコメントの`DragWindowListener`もアップデート)ので、最新版で試してみてください。 -- *aterai* 2013-03-19 (火) 16:03:51
+    - 余談: gistってアカウント必要でしたっけ？ -- *aterai* 2013-03-19 (火) 16:05:24
+- gistってアカウント無しで投稿出来るんですね，知りませんでしたm(__)m，再UPしていただいた`src.zip`で上記の動作を確認できました。ありがとうございます。`DragWindowListener`内部の追加されていたコードの意味が自分にはまだ理解できませんが，もっと勉強したいと思います。 -- *hshs* 2013-03-20 (水) 06:49:58
 
 <!-- dummy comment line for breaking list -->
-

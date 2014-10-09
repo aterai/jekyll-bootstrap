@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListのセルのアニメーション
 category: swing
 folder: ListCellAnimation
+title: JListのセルのアニメーション
 tags: [JList, ListCellRenderer, Animation]
 author: aterai
+pubdate: 2006-11-27
+description: JListの選択されたセルをアニメーションさせます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
-
 ## 概要
 `JList`の選択されたセルをアニメーションさせます。
 
@@ -65,7 +64,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-27
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 選択されたセルのみ再描画、`JScrollPane`に対応、スクリーンショット更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-13 (火) 14:53:51
+- 選択されたセルのみ再描画、`JScrollPane`に対応、スクリーンショット更新。 -- *aterai* 2008-05-13 (火) 14:53:51
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JRadioButtonの文字色を変更
 category: swing
 folder: RadioButtonTextColor
+title: JRadioButtonの文字色を変更
 tags: [JRadioButton, Icon]
 author: aterai
+pubdate: 2009-01-05T12:42:32+09:00
+description: JRadioButtonの文字色やアイコンを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
-
 ## 概要
 `JRadioButton`の文字色やアイコンを変更します。
 
@@ -67,7 +66,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-05
 </code></pre>
 
 ## コメント
-- スクリーンショットのタイトルボーダーが入れ替わっていたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-03 (水) 21:27:13
+- スクリーンショットのタイトルボーダーが入れ替わっていたのを修正。 -- *aterai* 2009-06-03 (水) 21:27:13
 
 <!-- dummy comment line for breaking list -->
-

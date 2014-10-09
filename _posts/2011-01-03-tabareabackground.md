@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブエリア背景色などをテスト
 category: swing
 folder: TabAreaBackground
+title: JTabbedPaneのタブエリア背景色などをテスト
 tags: [JTabbedPane, UIManager, MetalLookAndFeel]
 author: aterai
+pubdate: 2011-01-03T14:25:13+09:00
+description: MetalLookAndFeelのJTabbedPaneで、タブエリアの背景色などを変更するテストをしています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-03
-
 ## 概要
 `MetalLookAndFeel`の`JTabbedPane`で、タブエリアの背景色などを変更するテストをしています。
 

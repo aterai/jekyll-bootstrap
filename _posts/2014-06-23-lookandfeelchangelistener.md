@@ -1,15 +1,14 @@
 ---
 layout: post
-title: LookAndFeelの変更を取得する
 category: swing
 folder: LookAndFeelChangeListener
+title: LookAndFeelの変更を取得する
 tags: [LookAndFeel, UIManager, PropertyChangeListener, JComponent]
 author: aterai
+pubdate: 2014-06-23T01:04:57+09:00
+description: LookAndFeelの変更を取得するリスナーの作成などを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-23
-
 ## 概要
 `LookAndFeel`の変更を取得するリスナーの作成などを行います。
 

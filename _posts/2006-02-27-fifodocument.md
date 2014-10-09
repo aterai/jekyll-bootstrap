@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaに表示できる行数を制限
 category: swing
 folder: FIFODocument
+title: JTextAreaに表示できる行数を制限
 tags: [JTextArea, DocumentListener]
 author: aterai
+pubdate: 2006-02-27T11:11:21+09:00
+description: ドキュメントのサイズを一定にして、JTextAreaなど表示できる行数を制限します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-27
-
 ## 概要
 ドキュメントのサイズを一定にして、`JTextArea`など表示できる行数を制限します。[Swing (Archive) - JTextArea Memory Overflow ??](https://forums.oracle.com/thread/1479784)にあるソースコードを参考にしています。
 
@@ -59,8 +58,7 @@ final Timer timer = new Timer(100, new ActionListener() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `sample`実行できないよ -- [cinik](http://terai.xrea.jp/cinik.html) 2006-11-16 (木) 01:09:03
-    - `jnlp`ファイルの名前を`sample`から`example`に変更しているので、一旦キャッシュを消してみるとうまくいくかもしれません。(じゃなくて`Exception`などが発生しているのでしょうか？) -- [aterai](http://terai.xrea.jp/aterai.html) 2006-11-16 (木) 12:39:54
+- `sample`実行できないよ -- *cinik* 2006-11-16 (木) 01:09:03
+    - `jnlp`ファイルの名前を`sample`から`example`に変更しているので、一旦キャッシュを消してみるとうまくいくかもしれません。(じゃなくて`Exception`などが発生しているのでしょうか？) -- *aterai* 2006-11-16 (木) 12:39:54
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBoxのセルをロールオーバーする
 category: swing
 folder: RolloverBooleanRenderer
+title: JCheckBoxのセルをロールオーバーする
 tags: [JTable, JCheckBox, MouseListener, TableCellRenderer]
 author: aterai
+pubdate: 2010-06-21T15:14:48+09:00
+description: JTableのセルにJCheckBoxを使用したときでも、マウスカーソルでロールオーバーするように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-21
-
 ## 概要
 `JTable`のセルに`JCheckBox`を使用したときでも、マウスカーソルでロールオーバーするように設定します。
 

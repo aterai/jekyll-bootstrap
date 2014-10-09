@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeで条件に一致するノードを検索しハイライト
 category: swing
 folder: TreeNodeHighlightSearch
+title: JTreeで条件に一致するノードを検索しハイライト
 tags: [JTree, TreeCellRenderer]
 author: aterai
+pubdate: 2010-10-18T14:37:59+09:00
+description: JTreeを検索し、TreeCellRendererを使ってノードをハイライトします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-18
-
 ## 概要
 `JTree`を検索し、`TreeCellRenderer`を使ってノードをハイライトします。
 

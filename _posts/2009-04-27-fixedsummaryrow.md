@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableにソートされないサマリー行を表示する
 category: swing
 folder: FixedSummaryRow
+title: JTableにソートされないサマリー行を表示する
 tags: [JTable, TableRowSorter, RowFilter]
 author: aterai
+pubdate: 2009-04-27T14:50:32+09:00
+description: JTableの行をソートしても、常に最終行にサマリーを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-27
-
 ## 概要
 `JTable`の行をソートしても、常に最終行にサマリーを表示します。
 

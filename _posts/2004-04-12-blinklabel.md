@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelの文字列を点滅させる
 category: swing
 folder: BlinkLabel
+title: JLabelの文字列を点滅させる
 tags: [JLabel, Timer]
 author: aterai
+pubdate: 2004-04-12
+description: javax.swing.Timerを使って文字列が点滅するJLabelを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-12
-
 ## 概要
 `javax.swing.Timer`を使って文字列が点滅する`JLabel`を作成します。
 
@@ -31,8 +30,7 @@ timer.start();
 `javax.swing.Timer`を使って、ラベルのテキスト文字列と空文字列を交互に表示しています。点滅の間隔や、文字列の色を変えたりして実験してみてください。
 
 ## コメント
-- `Timer`があいまいなら`javax.swing.Timer`で解決 -- [666](http://terai.xrea.jp/666.html) 2007-06-22 (金) 11:51:42
-    - ですね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-06-26 (火) 14:53:53
+- `Timer`があいまいなら`javax.swing.Timer`で解決 -- *666* 2007-06-22 (金) 11:51:42
+    - ですね。 -- *aterai* 2007-06-26 (火) 14:53:53
 
 <!-- dummy comment line for breaking list -->
-

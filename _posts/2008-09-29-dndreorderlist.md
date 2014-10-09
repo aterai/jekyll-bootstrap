@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え
 category: swing
 folder: DnDReorderList
+title: TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え
 tags: [JList, TransferHandler, DragAndDrop]
 author: aterai
+pubdate: 2008-09-29T13:33:14+09:00
+description: JListのアイテムを複数選択し、ドラッグ＆ドロップで並べ替えを可能にするTransferHandlerを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-29
-
 ## 概要
 `JList`のアイテムを複数選択し、ドラッグ＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
@@ -109,20 +108,16 @@ list.setDragEnabled(true);
 
 - `importData`
     - 使用されていない？`importString(...)`の内容をこちらに移動
-
-<!-- dummy comment line for breaking list -->
-
 - `cleanup`
-    - 例えば、項目`0`,`1`,`2`を複数選択して、`1`と`2`の間にドロップすると、`1`,`2`,`2`になる
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>for(int i=0;i&lt;indices.length;i++) {
-  //if(indices[i]&gt;addIndex) {
-  if(indices[i]&gt;=addIndex) {
-//...
+    - 例えば、項目`0`,`1`,`2`を複数選択して、`1`と`2`の間にドロップすると、`1`,`2`,`2`になるので、以下のように変更
+        
+        <pre class="prettyprint"><code>for(int i = 0; i &lt; indices.length; i++) {
+          //if(indices[i] &gt; addIndex) {
+          if(indices[i] &gt;= addIndex) {
+        //...
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 [JListの項目をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDList.html)とは異なり、複数アイテムを選択して`Drag&Drop`による移動が可能になっています。
 
@@ -135,7 +130,6 @@ list.setDragEnabled(true);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 複数選択して選択されたアイテムのインデックスに移動した場合、複写されるバグ？を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-10-10 (金) 21:44:34
+- 複数選択して選択されたアイテムのインデックスに移動した場合、複写されるバグ？を修正。 -- *aterai* 2008-10-10 (金) 21:44:34
 
 <!-- dummy comment line for breaking list -->
-

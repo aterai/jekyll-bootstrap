@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え
 category: swing
 folder: DragSelectDropReordering
+title: JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え
 tags: [JList, TransferHandler, DragAndDrop, GlassPane, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2008-10-13T16:02:09+09:00
+description: JListのアイテムを、ラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え可能にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-13
-
 ## 概要
 `JList`のアイテムを、ラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え可能にします。
 
@@ -37,7 +36,6 @@ list.setDropMode(DropMode.INSERT);
 
 <!-- dummy comment line for breaking list -->
 
-
 ## 参考リンク
 - [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)
 - [JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)
@@ -46,8 +44,7 @@ list.setDropMode(DropMode.INSERT);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- Java勉強中の初心者です。コードの質問したいのですが、文字数がオーバします・・・・・ -- [java勉強中の初心者](http://terai.xrea.jp/java勉強中の初心者.html) 2013-04-23 (火) 11:08:46
-    - ~~一番上にある「このページを編集する」から、制限無しで編集可能です。~~ スパムが鬱陶しいので編集禁止にしました(2014-05-16)。コードだけどこか別の場所(gist.github.comなど)に張り込んでリンクするのもいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-23 (火) 12:15:08
+- Java勉強中の初心者です。コードの質問したいのですが、文字数がオーバします・・・ -- *java勉強中の初心者* 2013-04-23 (火) 11:08:46
+    - コードだけどこか別の場所(`gist.github.com`など)に張り込んでリンクするといいかもしれません。 -- *aterai* 2013-04-23 (火) 12:15:08
 
 <!-- dummy comment line for breaking list -->
-

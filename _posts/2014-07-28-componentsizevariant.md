@@ -1,15 +1,14 @@
 ---
 layout: post
-title: NimbusLookAndFeelでJComponentのサイズを変更する
 category: swing
 folder: ComponentSizeVariant
+title: NimbusLookAndFeelでJComponentのサイズを変更する
 tags: [NimbusLookAndFeel, JComponent, Font]
 author: aterai
+pubdate: 2014-07-28T00:18:57+09:00
+description: NimbusLookAndFeelを使用している場合、クライアントプロパティを設定することでJComponentの表示サイズを変更することが出来ます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-28
-
 ## 概要
 `NimbusLookAndFeel`を使用している場合、クライアントプロパティを設定することで`JComponent`の表示サイズを変更することが出来ます。
 

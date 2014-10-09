@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameの最小サイズ
 category: swing
 folder: MinimumFrame
+title: JFrameの最小サイズ
 tags: [JFrame, JDialog]
 author: aterai
+pubdate: 2003-09-22
+description: JFrameやJDialogの最小サイズを指定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-22
-
 ## 概要
 `JFrame`や`JDialog`の最小サイズを指定します。
 
@@ -105,8 +104,7 @@ public class MaximumSizeTest{
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 最大サイズも同じ要領で・・・とありますが`JFrame#setMaximumSize`はうまくいかないですね（`JDK1.6.0_u1`）色々調べているのですが、いい方法あるんでしょうか？ -- [sawshun](http://terai.xrea.jp/sawshun.html) 2009-07-27 (月) 11:51:11
-    - 同じ要領なのは、`ComponentListener`を使う場合…のつもりです。 ~~わかりづらいのであとで修正しますm(_ _)m。~~ すこし修正しました。`setMaximumSize`は、ちょっと難しいのかも([Bug ID: 6200438 Frame's size must be validated against maximized bounds when resizing, win32](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6200438))。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-07-27 (月) 12:05:33
+- 最大サイズも同じ要領で・・・とありますが`JFrame#setMaximumSize`はうまくいかないですね（`JDK1.6.0_u1`）色々調べているのですが、いい方法あるんでしょうか？ -- *sawshun* 2009-07-27 (月) 11:51:11
+    - 同じ要領なのは、`ComponentListener`を使う場合…のつもりです。 ~~わかりづらいのであとで修正しますm(_ _)m。~~ すこし修正しました。`setMaximumSize`は、ちょっと難しいのかも([Bug ID: 6200438 Frame's size must be validated against maximized bounds when resizing, win32](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6200438))。 -- *aterai* 2009-07-27 (月) 12:05:33
 
 <!-- dummy comment line for breaking list -->
-

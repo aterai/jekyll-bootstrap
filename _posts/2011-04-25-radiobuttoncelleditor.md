@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルにJRadioButton
 category: swing
 folder: RadioButtonCellEditor
+title: JTableのセルにJRadioButton
 tags: [JTable, JRadioButton, TableCellRenderer, TableCellEditor]
 author: aterai
+pubdate: 2011-04-25T17:34:01+09:00
+description: JTableのセルにJRadioButtonを配置し、全体で一つだけ選択できるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-25
-
 ## 概要
 `JTable`のセルに`JRadioButton`を配置し、全体で一つだけ選択できるように設定します。
 

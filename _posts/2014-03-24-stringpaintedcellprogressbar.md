@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableCellRendererに進捗文字列を設定したJProgressBarを使用する
 category: swing
 folder: StringPaintedCellProgressBar
+title: TableCellRendererに進捗文字列を設定したJProgressBarを使用する
 tags: [JTable, JProgressBar, SwingWorker, TableCellRenderer]
 author: aterai
+pubdate: 2014-03-24T00:27:55+09:00
+description: JTableのTableCellRendererとして、進捗文字列を表示するJProgressBarを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-24
-
 ## 概要
 `JTable`の`TableCellRenderer`として、進捗文字列を表示する`JProgressBar`を設定します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBoxのチェックアイコンを変更
 category: swing
 folder: CheckBoxColor
+title: JCheckBoxのチェックアイコンを変更
 tags: [JCheckBox, Icon, UIManager]
 author: aterai
+pubdate: 2007-04-09T15:16:42+09:00
+description: JCheckBoxで使用するチェックアイコンの色や形を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-09
-
 ## 概要
 `JCheckBox`で使用するチェックアイコンの色や形を変更します。
 

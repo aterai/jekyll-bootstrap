@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaの一部を編集不可にする
 category: swing
 folder: NonEditableLine
+title: JTextAreaの一部を編集不可にする
 tags: [JTextArea, DocumentFilter, Highlighter]
 author: aterai
+pubdate: 2010-02-22T14:50:22+09:00
+description: JTextAreaの一部の行を編集不可になるよう設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-22
-
 ## 概要
 `JTextArea`の一部の行を編集不可になるよう設定します。
 

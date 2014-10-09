@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JRootPaneにリサイズのための装飾を設定する
 category: swing
 folder: WindowDecorationStyle
+title: JRootPaneにリサイズのための装飾を設定する
 tags: [JFrame, JRootPane, JLayeredPane, JInternalFrame, MetalLookAndFeel]
 author: aterai
+pubdate: 2013-06-17T02:37:17+09:00
+description: JFrame自体の装飾を削除し、JRootPaneにリサイズのためのウィンドウ装飾(透明)を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-17
-
 ## 概要
 `JFrame`自体の装飾を削除し、`JRootPane`にリサイズのためのウィンドウ装飾(透明)を設定します。
 

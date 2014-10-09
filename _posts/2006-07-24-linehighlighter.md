@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaに行ハイライトカーソルを表示
 category: swing
 folder: LineHighlighter
+title: JTextAreaに行ハイライトカーソルを表示
 tags: [JTextArea, Caret, JViewport]
 author: aterai
+pubdate: 2006-07-24
+description: JTextAreaのカーソルがある行をハイライト表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-24
-
 ## 概要
 `JTextArea`のカーソルがある行をハイライト表示します。
 
@@ -101,7 +100,6 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 行の折り返しに対応しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-17 (月) 16:22:56
+- 行の折り返しに対応しました。 -- *aterai* 2008-03-17 (月) 16:22:56
 
 <!-- dummy comment line for breaking list -->
-

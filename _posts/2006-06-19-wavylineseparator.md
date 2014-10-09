@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Separatorを波線で表示
 category: swing
 folder: WavyLineSeparator
+title: Separatorを波線で表示
 tags: [JSeparator, Icon]
 author: aterai
+pubdate: 2006-06-19
+description: 波線を使ったSeparatorを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-19
-
 ## 概要
 波線を使った`Separator`を作成します。
 
@@ -94,7 +93,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-19
 水平用の波パターン`Icon`を作成して、これを順番に並べてセパレータとして描画しています。垂直用のパターンは水平用を回転して生成しています。
 
 ## コメント
-- `SwingConstants.VERTICAL`に対応しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-19 (月) 14:39:49
+- `SwingConstants.VERTICAL`に対応しました。 -- *aterai* 2006-06-19 (月) 14:39:49
 
 <!-- dummy comment line for breaking list -->
-

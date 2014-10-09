@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeを行クリックで選択し、行全体を選択状態の背景色で描画
 category: swing
 folder: TreeRowSelection
+title: JTreeを行クリックで選択し、行全体を選択状態の背景色で描画
 tags: [JTree, TreeCellRenderer]
 author: aterai
+pubdate: 2011-01-17T15:24:56+09:00
+description: JTreeの行をクリックして選択し、行全体を選択状態の背景色で描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-17
-
 ## 概要
 `JTree`の行をクリックして選択し、行全体を選択状態の背景色で描画します。
 

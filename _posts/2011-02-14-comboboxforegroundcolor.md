@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxの文字色を変更する
 category: swing
 folder: ComboBoxForegroundColor
+title: JComboBoxの文字色を変更する
 tags: [JComboBox, ListCellRenderer, Html]
 author: aterai
+pubdate: 2011-02-14T15:46:36+09:00
+description: JComboBoxの文字色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-14
-
 ## 概要
 `JComboBox`の文字色を変更します。
 

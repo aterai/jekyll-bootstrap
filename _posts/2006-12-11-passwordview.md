@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPasswordFieldのエコー文字を変更
 category: swing
 folder: PasswordView
+title: JPasswordFieldのエコー文字を変更
 tags: [JPasswordField, Icon]
 author: aterai
+pubdate: 2006-12-11T14:51:59+09:00
+description: JPasswordFieldのエコー文字を独自の図形に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-11
-
 ## 概要
 `JPasswordField`のエコー文字を独自の図形に変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Iconを回転する
 category: swing
 folder: RotatedIcon
+title: Iconを回転する
 tags: [Icon, AffineTransform]
 author: aterai
+pubdate: 2012-06-11T15:18:47+09:00
+description: 画像ファイルから90、180、270度回転したIconを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-11
-
 ## 概要
 画像ファイルから`90`、`180`、`270`度回転した`Icon`を作成します。
 

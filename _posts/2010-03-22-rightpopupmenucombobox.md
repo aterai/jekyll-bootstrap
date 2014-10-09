@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのPopupMenuを右側に表示する
 category: swing
 folder: RightPopupMenuComboBox
+title: JComboBoxのPopupMenuを右側に表示する
 tags: [JComboBox, JPopupMenu, PopupMenuListener, ArrowButton, Icon]
 author: aterai
+pubdate: 2010-03-22T02:10:46+09:00
+description: JComboBoxの右側にPopupMenuが表示されるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-22
-
 ## 概要
 `JComboBox`の右側に`PopupMenu`が表示されるように設定します。
 
@@ -58,7 +57,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-03-22
 </code></pre>
 
 ## コメント
-- [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225)のせいで？、正常に動作しなくなっていたので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-24 (火) 16:54:17
+- [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225)のせいで？、正常に動作しなくなっていたので修正。 -- *aterai* 2012-04-24 (火) 16:54:17
 
 <!-- dummy comment line for breaking list -->
-

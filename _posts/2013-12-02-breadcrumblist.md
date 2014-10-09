@@ -1,15 +1,14 @@
 ---
 layout: post
-title: FlowLayoutでボタンを重ねてパンくずリストを作成する
 category: swing
 folder: BreadcrumbList
+title: FlowLayoutでボタンを重ねてパンくずリストを作成する
 tags: [FlowLayout, JRadioButton, JPanel, Shape, Icon]
 author: aterai
+pubdate: 2013-12-02T00:03:12+09:00
+description: FlowLayoutの水平間隔をマイナスにして、JRadioButtonを重ねて表示し、パンくずリスト風のコンポーネントを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-02
-
 ## 概要
 `FlowLayout`の水平間隔をマイナスにして、`JRadioButton`を重ねて表示し、パンくずリスト風のコンポーネントを作成します。
 

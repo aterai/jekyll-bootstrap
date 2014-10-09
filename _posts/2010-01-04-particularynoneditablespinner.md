@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerのテキストフィールド内に選択不可の文字を追加する
 category: swing
 folder: ParticularyNonEditableSpinner
+title: JSpinnerのテキストフィールド内に選択不可の文字を追加する
 tags: [JSpinner, Border]
 author: aterai
+pubdate: 2010-01-04T15:04:02+09:00
+description: JSpinnerのテキストフィールド内に選択や編集ができない文字列を追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-04
-
 ## 概要
 `JSpinner`のテキストフィールド内に選択や編集ができない文字列を追加します。
 
@@ -91,7 +90,6 @@ cb.install(editor2);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `1.7.0`以上でないとコンパイルできなかったのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-10-15 (月) 18:30:23
+- `1.7.0`以上でないとコンパイルできなかったのを修正。 -- *aterai* 2012-10-15 (月) 18:30:23
 
 <!-- dummy comment line for breaking list -->
-

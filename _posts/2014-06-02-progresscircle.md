@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarの進捗状況を円形で表示する
 category: swing
 folder: ProgressCircle
+title: JProgressBarの進捗状況を円形で表示する
 tags: [JProgressBar, SwingWorker]
 author: aterai
+pubdate: 2014-06-02T00:02:59+09:00
+description: JProgressBarの進捗状況を円形表示するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-06-02
-
 ## 概要
 `JProgressBar`の進捗状況を円形表示するように設定します。
 

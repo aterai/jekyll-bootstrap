@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードを展開・折り畳み
 category: swing
 folder: ExpandAllNodes
+title: JTreeのノードを展開・折り畳み
 tags: [JTree, TreeNode, TreePath]
 author: aterai
+pubdate: 2007-05-07T17:11:21+09:00
+description: JTreeのすべてのノードに対して、展開、折り畳みを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-07
-
 ## 概要
 `JTree`のすべてのノードに対して、展開、折り畳みを行います。
 
@@ -85,7 +84,6 @@ private void collapseAll(JTree tree) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 解説のラベル`A`と`B`が、ソースとは逆になっていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-05 (火) 19:31:53
+- 解説のラベル`A`と`B`が、ソースとは逆になっていたのを修正しました。 -- *aterai* 2008-02-05 (火) 19:31:53
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBox内にJButtonを左右に二つレイアウトする
 category: swing
 folder: SearchBarLayoutComboBox
+title: JComboBox内にJButtonを左右に二つレイアウトする
 tags: [JComboBox, JButton, ArrowButton, LayoutManager, JTextField, PopupMenuListener]
 author: aterai
+pubdate: 2010-09-20T12:16:36+09:00
+description: JComboBoxが使用するレイアウトを変更して、検索欄風のコンポーネントを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
-
 ## 概要
 `JComboBox`が使用するレイアウトを変更して、検索欄風のコンポーネントを作成します。
 
@@ -130,9 +129,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-09-20
 </code></pre>
 
 ## コメント
-- `editor`にフォーカスがある場合、左のボタンをクリックしてもポップアップメニューが開かないバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-09-24 (金) 20:20:42
-- `ArrowButton`をクリックして、カーソルキーを押すと`NullPointerException`が発生するバグを修正(この修正？で、ポップアップが表示されている状態で、例えば<kbd>G</kbd>キーを押しても、項目の`google`は選択されなくなった)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-01-07 (金) 16:29:00
-- `LookAndFeel`を切り替えると、`JComboBox`のフォント設定で、`NullPointerException`が発生するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-05-25 (水) 17:46:55
+- `editor`にフォーカスがある場合、左のボタンをクリックしてもポップアップメニューが開かないバグを修正。 -- *aterai* 2010-09-24 (金) 20:20:42
+- `ArrowButton`をクリックして、カーソルキーを押すと`NullPointerException`が発生するバグを修正(この修正？で、ポップアップが表示されている状態で、例えば<kbd>G</kbd>キーを押しても、項目の`google`は選択されなくなった)。 -- *aterai* 2011-01-07 (金) 16:29:00
+- `LookAndFeel`を切り替えると、`JComboBox`のフォント設定で、`NullPointerException`が発生するのを修正。 -- *aterai* 2011-05-25 (水) 17:46:55
 
 <!-- dummy comment line for breaking list -->
-

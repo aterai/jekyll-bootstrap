@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのCellEditorとCellRendererにJSliderを使用する
 category: swing
 folder: SliderInTableCell
+title: JTableのCellEditorとCellRendererにJSliderを使用する
 tags: [JTable, TableCellEditor, TableCellRenderer, JSlider, ChangeListener]
 author: aterai
+pubdate: 2010-02-08T14:27:32+09:00
+description: JTableのCellEditorとCellRendererにJSliderを使用するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
-
 ## 概要
 `JTable`の`CellEditor`と`CellRenderer`に`JSlider`を使用するように設定します。
 
@@ -68,7 +67,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-08
 上記のサンプルでは、`1`列目のセルエディタ、レンダラーに`JSlider`を使用するように設定しています。このスライダーの値を変更すると、同じ行の`0`列目の値も変更されるように、セルエディタに`ChangeListener`を追加しています。
 
 ## コメント
-- メモ: [Bug ID: 6348946 JSlider's thumb moves in the wrong direction when used as a JTable cell editor.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6348946) via. [Swing - How to insert a JComponent into a cell of JTable](https://forums.oracle.com/thread/2153323) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-01-16 (日) 02:25:31
+- メモ: [Bug ID: 6348946 JSlider's thumb moves in the wrong direction when used as a JTable cell editor.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6348946) via. [Swing - How to insert a JComponent into a cell of JTable](https://forums.oracle.com/thread/2153323) -- *aterai* 2011-01-16 (日) 02:25:31
 
 <!-- dummy comment line for breaking list -->
-

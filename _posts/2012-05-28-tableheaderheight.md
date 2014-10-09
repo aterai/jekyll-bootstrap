@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderの高さを変更
 category: swing
 folder: TableHeaderHeight
+title: JTableHeaderの高さを変更
 tags: [JTableHeader, JTable, JScrollPane, JViewport]
 author: aterai
+pubdate: 2012-05-28T14:51:47+09:00
+description: JTableHeaderの高さを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-28
-
 ## 概要
 `JTableHeader`の高さを変更します。
 

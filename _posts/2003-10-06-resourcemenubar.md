@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Resourceファイルからメニューバーを生成
 category: swing
 folder: ResourceMenuBar
+title: Resourceファイルからメニューバーを生成
 tags: [JMenuBar, JMenu, JMenuItem, Properties, ResourceBundle]
 author: aterai
+pubdate: 2003-10-06
+description: リソースファイルを使ってメニューバーやツールバーを生成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-06
-
 ## 概要
 リソースファイルを使ってメニューバーやツールバーを生成します。詳しくは`%JAVA_HOME%/demo/jfc/Notepad/src/Notepad.java`を参照してください。
 

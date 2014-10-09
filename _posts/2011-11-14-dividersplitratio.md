@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSplitPaneのDividerの位置を最大化後に変更する
 category: swing
 folder: DividerSplitRatio
+title: JSplitPaneのDividerの位置を最大化後に変更する
 tags: [JSplitPane, JFrame]
 author: aterai
+pubdate: 2011-11-14T11:39:46+09:00
+description: JFrameを最大化した後でJSplitPaneのDividerの位置を変更する場合のテストをします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-14
-
 ## 概要
 `JFrame`を最大化した後で`JSplitPane`の`Divider`の位置を変更する場合のテストをします。
 

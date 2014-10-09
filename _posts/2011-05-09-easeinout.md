@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaをキャプションとして画像上にスライドイン
 category: swing
 folder: EaseInOut
+title: JTextAreaをキャプションとして画像上にスライドイン
 tags: [JTextArea, OverlayLayout, JLabel, MouseListener, Animation]
 author: aterai
+pubdate: 2011-05-09T15:30:53+09:00
+description: 画像の上にJTextAreaをスライドインアニメーションで表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-09
-
 ## 概要
 画像の上に`JTextArea`をスライドインアニメーションで表示します。
 
@@ -19,15 +18,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-09
 <pre class="prettyprint"><code>private int delay = 4;
 private int count = 0;
 @Override public void mouseEntered(MouseEvent e) {
-  if(animator!=null &amp;&amp; animator.isRunning() ||
-     yy==textArea.getPreferredSize().height) return;
-  final double h = (double)textArea.getPreferredSize().height;
-  animator = new javax.swing.Timer(delay, new ActionListener() {
+  if (animator!=null &amp;&amp; animator.isRunning() ||
+     yy == textArea.getPreferredSize().height) return;
+  final double h = (double) textArea.getPreferredSize().height;
+  animator = new Timer(delay, new ActionListener() {
     @Override public void actionPerformed(ActionEvent e) {
-      double a = easeInOut(++count/h);
-      yy = (int)(.5d+a*h);
-      textArea.setBackground(new Color(0f,0f,0f,(float)(0.6*a)));
-      if(yy&gt;=textArea.getPreferredSize().height) {
+      double a = easeInOut(++count / h);
+      yy = (int) (.5d + a * h);
+      textArea.setBackground(new Color(0f, 0f, 0f, (float) (.6 * a)));
+      if (yy &gt;= textArea.getPreferredSize().height) {
         yy = textArea.getPreferredSize().height;
         animator.stop();
       }
@@ -38,15 +37,15 @@ private int count = 0;
   animator.start();
 }
 @Override public void mouseExited(MouseEvent e) {
-  if(animator!=null &amp;&amp; animator.isRunning() ||
-     contains(e.getPoint()) &amp;&amp; yy==textArea.getPreferredSize().height) return;
-  final double h = (double)textArea.getPreferredSize().height;
-  animator = new javax.swing.Timer(delay, new ActionListener() {
+  if (animator!=null &amp;&amp; animator.isRunning() ||
+     contains(e.getPoint()) &amp;&amp; yy == textArea.getPreferredSize().height) return;
+  final double h = (double) textArea.getPreferredSize().height;
+  animator = new Timer(delay, new ActionListener() {
     @Override public void actionPerformed(ActionEvent e) {
-      double a = easeInOut(--count/h);
-      yy = (int)(.5d+a*h);
-      textArea.setBackground(new Color(0f,0f,0f,(float)(0.6*a)));
-      if(yy&lt;=0) {
+      double a = easeInOut(--count / h);
+      yy = (int) (.5d + a * h);
+      textArea.setBackground(new Color(0f, 0f, 0f, (float) (.6 * a)));
+      if (yy &lt;= 0) {
         yy = 0;
         animator.stop();
       }
@@ -60,10 +59,10 @@ private int count = 0;
 //http://www.anima-entertainment.de/math-easein-easeout-easeinout-and-bezier-curves
 public double easeInOut(double t) {
   //range: 0.0&lt;=t&lt;=1.0
-  if(t&lt;0.5d) {
-    return 0.5d*Math.pow(t*2d, 3d);
-  }else{
-    return 0.5d*(Math.pow(t*2d-2d, 3d) + 2d);
+  if (t &lt; .5d) {
+    return 0.5d*Math.pow(t * 2d, 3d);
+  } else {
+    return .5d * (Math.pow(t * 2d - 2d, 3d) + 2d);
   }
 }
 </code></pre>
@@ -91,11 +90,11 @@ public double easeInOut(double t) {
 
 <pre class="prettyprint"><code>public static double intpow(double x, int n) {
   double aux = 1.0;
-  if(n &lt; 0) {
+  if (n &lt; 0) {
     throw new IllegalArgumentException("n must be a positive integer");
   }
-  for(; n &gt; 0; x *= x, n &gt;&gt;&gt;= 1) {
-    if((n &amp; 1) != 0) {
+  for (; n &gt; 0; x *= x, n &gt;&gt;&gt;= 1) {
+    if ((n &amp; 1) != 0) {
       aux *= x;
     }
   }

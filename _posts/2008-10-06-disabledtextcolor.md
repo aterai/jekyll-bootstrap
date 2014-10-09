@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBoxなどが無効な状態での文字色を変更
 category: swing
 folder: DisabledTextColor
+title: JCheckBoxなどが無効な状態での文字色を変更
 tags: [JCheckBox, JComboBox, UIManager, Html, JLabel, JButton]
 author: aterai
+pubdate: 2008-10-06T14:59:33+09:00
+description: JCheckBoxやJComboBoxなどのコンポーネントが無効な状態になった場合の文字色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-10-06
-
 ## 概要
 `JCheckBox`や`JComboBox`などのコンポーネントが無効な状態になった場合の文字色を変更します。
 

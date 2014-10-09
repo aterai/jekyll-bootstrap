@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarの進捗状況と進捗文字列色を変更する
 category: swing
 folder: ProgressBarSelectionColor
+title: JProgressBarの進捗状況と進捗文字列色を変更する
 tags: [JProgressBar, UIManager, LookAndFeel]
 author: aterai
+pubdate: 2014-08-25T00:01:25+09:00
+description: JProgressBarの進捗状況の色や、それで塗り潰された場合の進捗文字列色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-25
-
 ## 概要
 `JProgressBar`の進捗状況の色や、それで塗り潰された場合の進捗文字列色を変更します。
 

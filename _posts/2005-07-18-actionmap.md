@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldでコピー、貼り付けなどを禁止
 category: swing
 folder: ActionMap
+title: JTextFieldでコピー、貼り付けなどを禁止
 tags: [JTextField, DefaultEditorKit, ActionMap]
 author: aterai
+pubdate: 2005-07-18
+description: JTextFieldへのコピー、貼り付け、切り取りを禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-18
-
 ## 概要
 `JTextField`へのコピー、貼り付け、切り取りを禁止します。
 

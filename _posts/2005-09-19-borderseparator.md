@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのアイテムをBorderで修飾してグループ分け
 category: swing
 folder: BorderSeparator
+title: JComboBoxのアイテムをBorderで修飾してグループ分け
 tags: [JComboBox, Border, ListCellRenderer, MatteBorder]
 author: aterai
+pubdate: 2005-09-19
+description: JComboBoxのアイテムをBorderを使用して修飾してグループ分けします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-19
-
 ## 概要
 `JComboBox`のアイテムを`Border`を使用して修飾してグループ分けします。
 
@@ -96,7 +95,6 @@ combobox.setEditable(true);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `index!=-1`を追加、スクリーンショットを更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-04 (木) 17:53:47
+- `index!=-1`を追加、スクリーンショットを更新 -- *aterai* 2008-09-04 (木) 17:53:47
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldに透かし画像を表示する
 category: swing
 folder: WatermarkInTextField
+title: JTextFieldに透かし画像を表示する
 tags: [JTextField, Focus, ImageIcon]
 author: aterai
+pubdate: 2009-10-26T13:04:26+09:00
+description: JTextFieldの文字列が空でフォーカスがない場合、透かし画像を表示するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-26
-
 ## 概要
 `JTextField`の文字列が空でフォーカスがない場合、透かし画像を表示するように設定します。
 
@@ -67,4 +66,3 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-26
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-

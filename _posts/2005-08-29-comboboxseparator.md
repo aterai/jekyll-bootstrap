@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxにJSeparatorを挿入
 category: swing
 folder: ComboBoxSeparator
+title: JComboBoxにJSeparatorを挿入
 tags: [JComboBox, JSeparator, ListCellRenderer, ItemListener, ActionMap, InputMap]
 author: aterai
+pubdate: 2005-08-29
+description: JComboBoxに選択できないJSeparatorを挿入します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-29
-
 ## 概要
 `JComboBox`に選択できない`JSeparator`を挿入します。
 
@@ -111,7 +110,6 @@ im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- <kbd>Up</kbd><kbd>Down</kbd>キーでの選択状態移動に対応しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-08-10 (金) 18:54:05
+- <kbd>Up</kbd><kbd>Down</kbd>キーでの選択状態移動に対応しました。 -- *aterai* 2007-08-10 (金) 18:54:05
 
 <!-- dummy comment line for breaking list -->
-

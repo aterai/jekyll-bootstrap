@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollPaneでキネティックスクロール
 category: swing
 folder: KineticScrolling
+title: JScrollPaneでキネティックスクロール
 tags: [JScrollPane, Animation, MouseListener, JViewport]
 author: aterai
+pubdate: 2010-08-16T13:34:26+09:00
+description: JScrollPaneにキネティックスクロール(慣性スクロール)風の動作をするマウスリスナーを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16
-
 ## 概要
 `JScrollPane`にキネティックスクロール(慣性スクロール)風の動作をするマウスリスナーを設定します。
 
@@ -112,8 +111,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-16
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 慣性(モーメンタム)スクロール、フリックスクロール(フリック+慣性スクロール？)、・・・でもやっぱり猫の掌スクロールを最初に思い出してしまう。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-16 (月) 13:41:47
-- `JDK 1.7.0`では、`JViewport#setViewPosition(Point)`を使って右下外部に移動できなくなっているので、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ対応をしてソースを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-03 (月) 18:08:23
+- 慣性(モーメンタム)スクロール、フリックスクロール(フリック+慣性スクロール？)、・・・でもやっぱり猫の掌スクロールを最初に思い出してしまう。 -- *aterai* 2010-08-16 (月) 13:41:47
+- `JDK 1.7.0`では、`JViewport#setViewPosition(Point)`を使って右下外部に移動できなくなっているので、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ対応をしてソースを更新。 -- *aterai* 2011-10-03 (月) 18:08:23
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListの先頭文字キー入力による検索選択を無効にする
 category: swing
 folder: DisablePrefixMatchSelection
+title: JListの先頭文字キー入力による検索選択を無効にする
 tags: [JList, JTree]
 author: aterai
+pubdate: 2011-09-12T16:36:34+09:00
+description: JListにフォーカスがある状態で英数字キー入力をしたときに先頭文字が一致するアイテムを検索して選択する機能を無効にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-12
-
 ## 概要
 `JList`にフォーカスがある状態で英数字キー入力をしたときに先頭文字が一致するアイテムを検索して選択する機能を無効にします。
 

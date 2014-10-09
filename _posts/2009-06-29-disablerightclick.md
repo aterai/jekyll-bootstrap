@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのドロップダウンリストで右クリックを無効化
 category: swing
 folder: DisableRightClick
+title: JComboBoxのドロップダウンリストで右クリックを無効化
 tags: [JComboBox, BasicComboPopup, MouseListener, JList]
 author: aterai
+pubdate: 2009-06-29T10:14:32+09:00
+description: JComboBoxのドロップダウンリスト(ポップアップメニュー)で、マウスの右クリックを無効にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29
-
 ## 概要
 `JComboBox`のドロップダウンリスト(ポップアップメニュー)で、マウスの右クリックを無効にします。
 
@@ -99,7 +98,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-29
 </code></pre>
 
 ## コメント
-- ドロップダウンリストにスクロールバーが表示されていない場合、ホイールを回すとポップアップが閉じてしまうのも地味に困る…。[Bug ID: 6982607 JComboBox closes on MouseWheelEvent scrolling if no scroll bar is visible](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6982607) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-24 (火) 18:28:39
+- ドロップダウンリストにスクロールバーが表示されていない場合、ホイールを回すとポップアップが閉じてしまうのも地味に困る…。[Bug ID: 6982607 JComboBox closes on MouseWheelEvent scrolling if no scroll bar is visible](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6982607) -- *aterai* 2012-04-24 (火) 18:28:39
 
 <!-- dummy comment line for breaking list -->
 
@@ -129,7 +128,6 @@ class BasicComboPopup3 extends BasicComboPopup {
 //...
 </code></pre>
 
-- 上記の方法では、ドロップダウンリスト内では閉じなくなるが、ドロップダウンリスト外でホイールを回転するとポップアップが閉じてしまう。`Toolkit.getDefaultToolkit().addAWTEventListener(...)`でもうまくいかない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-24 (火) 20:07:13
+- 上記の方法では、ドロップダウンリスト内では閉じなくなるが、ドロップダウンリスト外でホイールを回転するとポップアップが閉じてしまう。`Toolkit.getDefaultToolkit().addAWTEventListener(...)`でもうまくいかない。 -- *aterai* 2012-04-24 (火) 20:07:13
 
 <!-- dummy comment line for breaking list -->
-

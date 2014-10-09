@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのEditorComponentにJButtonを配置
 category: swing
 folder: ButtonInComboEditor
+title: JComboBoxのEditorComponentにJButtonを配置
 tags: [JComboBox, LayoutManager, JButton, JLabel, Icon, RGBImageFilter, RescaleOp]
 author: aterai
+pubdate: 2009-08-17T12:55:55+09:00
+description: JComboBoxのEditorComponentにJButtonやJLabelなどを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-17
-
 ## 概要
 `JComboBox`の`EditorComponent`に`JButton`や`JLabel`などを配置します。
 
@@ -133,7 +132,6 @@ static class SelectedImageFilter extends RGBImageFilter {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `EditorComponent`に追加した`JButton`をクリックすると例外が発生する場合があるバグを修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-08-28 (金) 16:42:47
+- `EditorComponent`に追加した`JButton`をクリックすると例外が発生する場合があるバグを修正 -- *aterai* 2009-08-28 (金) 16:42:47
 
 <!-- dummy comment line for breaking list -->
-

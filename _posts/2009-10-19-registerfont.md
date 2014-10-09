@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GraphicsEnvironmentにFontを登録して使用する
 category: swing
 folder: RegisterFont
+title: GraphicsEnvironmentにFontを登録して使用する
 tags: [Font, GraphicsEnvironment, Html, StyleSheet, JLabel, JEditorPane, JTextPane]
 author: aterai
+pubdate: 2009-10-19T14:42:22+09:00
+description: GraphicsEnvironmentにFontを登録して、Htmlタグなどで使用できるようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-10-19
-
 ## 概要
 `GraphicsEnvironment`に`Font`を登録して、`Html`タグなどで使用できるようにします。
 

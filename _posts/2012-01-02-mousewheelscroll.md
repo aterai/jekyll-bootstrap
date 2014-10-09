@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarが非表示でもMouseWheelでScrollする
 category: swing
 folder: MouseWheelScroll
+title: JScrollBarが非表示でもMouseWheelでScrollする
 tags: [JScrollBar, JScrollPane, MouseWheelListener]
 author: aterai
+pubdate: 2012-01-02T15:22:30+09:00
+description: JScrollBarが非表示の場合のMouseWheelによるScrollをテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-02
-
 ## 概要
 `JScrollBar`が非表示の場合の`MouseWheel`による`Scroll`をテストします。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneで長い行を折り返さない
 category: swing
 folder: NoWrapTextPane
+title: JEditorPaneで長い行を折り返さない
 tags: [JEditorPane, JTextPane, StyledDocument]
 author: aterai
+pubdate: 2007-09-24T18:04:06+09:00
+description: JEditorPaneや、JTextPaneで、行をViewportの幅で折り返さないよう設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-24
-
 ## 概要
 `JEditorPane`や、`JTextPane`で、行を`Viewport`の幅で折り返さないよう設定します。
 

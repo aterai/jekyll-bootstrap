@@ -1,15 +1,14 @@
 ---
 layout: post
-title: AWTEventを取得して入力イベントを監視
 category: swing
 folder: DispatchEvent
+title: AWTEventを取得して入力イベントを監視
 tags: [AWTEvent, Toolkit, AWTEventListener]
 author: aterai
+pubdate: 2008-02-11T21:32:38+09:00
+description: AWTEventを取得して、マウスやキーボードの入力イベントを監視します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-11
-
 ## 概要
 `AWTEvent`を取得して、マウスやキーボードの入力イベントを監視します。
 
@@ -63,7 +62,6 @@ JButton button = new JButton(new AbstractAction("Connect") {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `java.security.AccessControlException: access denied ("java.awt.AWTPermission" "listenToAllAWTEvents")`が発生するので、`Web Start`起動のリンクを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-01-14 (火) 13:57:01
+- `java.security.AccessControlException: access denied ("java.awt.AWTPermission" "listenToAllAWTEvents")`が発生するので、`Web Start`起動のリンクを削除。 -- *aterai* 2014-01-14 (火) 13:57:01
 
 <!-- dummy comment line for breaking list -->
-

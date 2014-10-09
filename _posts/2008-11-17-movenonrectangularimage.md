@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComponentの形状を変更する
 category: swing
 folder: MoveNonRectangularImage
+title: JComponentの形状を変更する
 tags: [JComponent, JLabel, BufferedImage, DragAndDrop]
 author: aterai
+pubdate: 2008-11-17T16:07:53+09:00
+description: コンポーネントの形状を画像の不透明領域に合わせて変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-17
-
 ## 概要
 コンポーネントの形状を画像の不透明領域に合わせて変更します。
 

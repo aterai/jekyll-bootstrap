@@ -1,15 +1,14 @@
 ---
 layout: post
-title: BasicStrokeで点線を作成
 category: swing
 folder: DashedLine
+title: BasicStrokeで点線を作成
 tags: [BasicStroke, Graphics2D]
 author: aterai
+pubdate: 2004-10-04T03:54:35+09:00
+description: 点線・破線を描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-04
-
 ## 概要
 点線・破線を描画します。
 

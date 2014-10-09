@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JButtonのテキストシフト量を変更
 category: swing
 folder: TextShiftOffset
+title: JButtonのテキストシフト量を変更
 tags: [JButton, UIManager]
 author: aterai
+pubdate: 2007-12-31T16:51:19+09:00
+description: JButtonをクリックしたときのテキストシフト量を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-31
-
 ## 概要
 `JButton`をクリックしたときのテキストシフト量を変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Mouseで画像を移動、回転
 category: swing
 folder: MouseDrivenImageRotation
+title: Mouseで画像を移動、回転
 tags: [ImageIcon, MouseListener, MouseMotionListener, AffineTransform]
 author: aterai
+pubdate: 2009-05-25T13:21:41+09:00
+description: 画像をマウスのドラッグで任意の位置に移動、回転します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-05-25
-
 ## 概要
 画像をマウスのドラッグで任意の位置に移動、回転します。[Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)、[その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)からの移植になります。
 

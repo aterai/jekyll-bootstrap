@@ -1,15 +1,14 @@
 ---
 layout: post
-title: LayoutManagerを拡張して曲線上にコンポーネントを配置
 category: swing
 folder: CurveLayout
+title: LayoutManagerを拡張して曲線上にコンポーネントを配置
 tags: [LayoutManager, FlowLayout, JPanel]
 author: aterai
+pubdate: 2011-06-27T14:12:48+09:00
+description: LayoutManagerを拡張して曲線上にコンポーネントを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-27
-
 ## 概要
 `LayoutManager`を拡張して曲線上にコンポーネントを配置します。
 

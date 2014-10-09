@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルにJButtonを追加して行削除
 category: swing
 folder: DeleteButtonInCell
+title: JTableのセルにJButtonを追加して行削除
 tags: [JTable, JButton, TableCellRenderer, TableCellEditor, ActionListener]
 author: aterai
+pubdate: 2007-10-22T07:55:05+09:00
+description: JTableのセルにJButtonを追加し、クリックされたらその行を削除します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-22
-
 ## 概要
 `JTable`のセルに`JButton`を追加し、クリックされたらその行を削除します。
 
@@ -82,8 +81,8 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ボタンのセル内でマウスを移動しても削除するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-28 (金) 16:59:11
-    - メモ: `0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除できる -> [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-28 (金) 17:21:10
+- ボタンのセル内でマウスを移動しても削除するように変更。 -- *aterai* 2008-03-28 (金) 16:59:11
+    - メモ: `0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除できる -> [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- *aterai* 2008-03-28 (金) 17:21:10
 
 <!-- dummy comment line for breaking list -->
 
@@ -95,8 +94,7 @@ JTable table = new JTable(model) {
 };
 </code></pre>
 
-- テスト -- [aterai](http://terai.xrea.jp/aterai.html) 2009-09-27 (日) 01:34:58
+- テスト -- *aterai* 2009-09-27 (日) 01:34:58
     - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)に移動。
 
 <!-- dummy comment line for breaking list -->
-

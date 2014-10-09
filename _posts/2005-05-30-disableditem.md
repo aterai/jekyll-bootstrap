@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListの任意のItemを選択不可にする
 category: swing
 folder: DisabledItem
+title: JListの任意のItemを選択不可にする
 tags: [JList, ListCellRenderer, ActionMap]
 author: aterai
+pubdate: 2005-05-30
+description: JListの任意のItemを選択不可にするようなレンダラーを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-30
-
 ## 概要
 `JList`の任意の`Item`を選択不可にするようなレンダラーを設定します。
 

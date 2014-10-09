@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのRowSorterをフィルタありソート不可にする
 category: swing
 folder: FilterWithoutSorting
+title: JTableのRowSorterをフィルタありソート不可にする
 tags: [JTable, TableRowSorter]
 author: aterai
+pubdate: 2008-08-04T00:17:37+09:00
+description: フィルタありでソート不可のTableRowSorterを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-04
-
 ## 概要
 フィルタありでソート不可の`TableRowSorter`を作成します。
 

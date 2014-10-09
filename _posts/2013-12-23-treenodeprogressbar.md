@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードにJProgressBarを表示する
 category: swing
 folder: TreeNodeProgressBar
+title: JTreeのノードにJProgressBarを表示する
 tags: [JTree, JProgressBar, DefaultTreeCellRenderer, SwingWorker, ExecutorService]
 author: aterai
+pubdate: 2013-12-23T01:15:16+09:00
+description: JTreeのノードにJProgressBarを表示するTreeCellRendererを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
-
 ## 概要
 `JTree`のノードに`JProgressBar`を表示する`TreeCellRenderer`を設定します。
 
@@ -43,13 +42,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
-    Object o = ((DefaultMutableTreeNode)value).getUserObject();
-    JComponent c = (JComponent)super.getTreeCellRendererComponent(
+    Object o = ((DefaultMutableTreeNode) value).getUserObject();
+    JComponent c = (JComponent) super.getTreeCellRendererComponent(
         tree, value, selected, expanded, leaf, row, hasFocus);
-    if(o==null || !(o instanceof ProgressObject)) {
+    if (o==null || !(o instanceof ProgressObject)) {
       return c;
     }
-    ProgressObject n = (ProgressObject)o;
+    ProgressObject n = (ProgressObject) o;
     int i = n.getValue();
     b.setValue(i);
 
@@ -60,7 +59,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-23
 
     p.removeAll();
     p.add(c);
-    p.add(i&lt;100 ? b : Box.createVerticalStrut(barHeight), BorderLayout.SOUTH);
+    p.add(i &lt; 100 ? b : Box.createVerticalStrut(barHeight), BorderLayout.SOUTH);
     return p;
   }
 }

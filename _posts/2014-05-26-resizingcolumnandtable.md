@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのリサイズで最後のTableColumnのみリサイズする
 category: swing
 folder: ResizingColumnAndTable
+title: JTableのリサイズで最後のTableColumnのみリサイズする
 tags: [JTable, JTableHeader, TableColumn]
 author: aterai
+pubdate: 2014-05-26T00:01:15+09:00
+description: JTableがリサイズされた場合、最後にあるTableColumnがその幅の変更を吸収するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-26
-
 ## 概要
 `JTable`がリサイズされた場合、最後にある`TableColumn`がその幅の変更を吸収するように設定します。主に、[java - JTable columns doesnt resize probably when JFrame resize - Stack Overflow](http://stackoverflow.com/questions/23201818/jtable-columns-doesnt-resize-probably-when-jframe-resize)の回答からソースを引用しています。
 
@@ -49,7 +48,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-26
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable#doLayout()`をオーバーライドして、`JFrame`がリサイズされた、`JTable`、`JTableHeader`もリサイズされたら、`JTableHeader.setResizingColumn(...)`で最後の`TableColumn`を設定し、幅の変更をすべて吸収するようにしています。
+上記のサンプルでは、`JFrame`のリサイズに連動して`JTable`、`JTableHeader`もリサイズされた場合、最後の`TableColumn`が幅の変更をすべて吸収するように、`JTable#doLayout()`のオーバーライドや`JTableHeader.setResizingColumn(...)`の設定を行なっています。
 
 - 注:
     - `table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);`を設定しても、`JTableHeader`自体のリサイズではすべての`TableColumn`の幅が均等に変化する

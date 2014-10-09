@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolBarに配置したアイコンをドラッグして並べ替える
 category: swing
 folder: RearrangeToolBarIcon
+title: JToolBarに配置したアイコンをドラッグして並べ替える
 tags: [JToolBar, JLabel, Icon, DragAndDrop, MouseListener, MouseMotionListener, JWindow]
 author: aterai
+pubdate: 2013-04-08T01:18:50+09:00
+description: JToolBarに配置したアイコンをドラッグ＆ドロップで並べ替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
-
 ## 概要
 `JToolBar`に配置したアイコンをドラッグ＆ドロップで並べ替えます。
 
@@ -175,7 +174,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-08
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: `JLayer`などを使用すれば、`JButton`の移動も可能…な気がする。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-08 (月) 21:04:19
+- メモ: `JLayer`などを使用すれば、`JButton`の移動も可能…な気がする。 -- *aterai* 2013-04-08 (月) 21:04:19
 
 <!-- dummy comment line for breaking list -->
-

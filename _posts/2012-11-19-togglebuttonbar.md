@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JRadioButtonを使ってToggleButtonBarを作成
 category: swing
 folder: ToggleButtonBar
+title: JRadioButtonを使ってToggleButtonBarを作成
 tags: [JRadioButton, Icon, Path2D]
 author: aterai
+pubdate: 2012-11-19T00:07:37+09:00
+description: JRadioButtonのアイコンを変更して、ToggleButtonBarを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-19
-
 ## 概要
 `JRadioButton`のアイコンを変更して、`ToggleButtonBar`を作成します。
 

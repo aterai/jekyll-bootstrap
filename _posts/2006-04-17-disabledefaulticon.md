@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameのアイコンを非表示
 category: swing
 folder: DisableDefaultIcon
+title: JFrameのアイコンを非表示
 tags: [JFrame, Icon]
 author: aterai
+pubdate: 2006-04-17T12:43:57+09:00
+description: JFrameなどのタイトルバーにあるアイコンを非表示にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-17
-
 ## 概要
 `JFrame`などのタイトルバーにあるアイコンを非表示にします。
 
@@ -45,9 +44,8 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- thank u -- [mid](http://terai.xrea.jp/mid.html) 2006-06-15 (木) 17:15:20
-    - np -- [aterai](http://terai.xrea.jp/aterai.html) 2009-02-05 (木) 18:10:07
-- スクリーンショットなどを更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-02-05 (木) 18:15:32
+- thank u -- *mid* 2006-06-15 (木) 17:15:20
+    - np -- *aterai* 2009-02-05 (木) 18:10:07
+- スクリーンショットなどを更新 -- *aterai* 2009-02-05 (木) 18:15:32
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableで先頭文字のキー入力による検索を行う
 category: swing
 folder: TableNextMatchKeyHandler
+title: JTableで先頭文字のキー入力による検索を行う
 tags: [JTable, KeyListener]
 author: aterai
+pubdate: 2012-04-16T15:22:21+09:00
+description: JTableにフォーカスがある状態でキー入力をした場合、先頭文字が一致する行を検索して選択状態にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-16
-
 ## 概要
 `JTable`にフォーカスがある状態でキー入力をした場合、先頭文字が一致する行を検索して選択状態にします。
 

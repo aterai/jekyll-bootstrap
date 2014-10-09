@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarの文字列をJLayerを使って表示する
 category: swing
 folder: ProgressStringLayer
+title: JProgressBarの文字列をJLayerを使って表示する
 tags: [JProgressBar, JLayer]
 author: aterai
+pubdate: 2013-06-10T03:42:45+09:00
+description: 垂直JProgressBarの文字列をJLayerを使って横組で表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-10
-
 ## 概要
 垂直`JProgressBar`の文字列を`JLayer`を使って横組で表示します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLayerを使ってJProgressBarの色相を変更する
 category: swing
 folder: ColorChannelSwapFilter
+title: JLayerを使ってJProgressBarの色相を変更する
 tags: [JProgressBar, JLayer, RGBImageFilter, SwingWorker]
 author: aterai
+pubdate: 2013-06-24T08:32:54+09:00
+description: JLayerを使ってJProgressBarの色相を緑から赤に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-06-24
-
 ## 概要
 `JLayer`を使って`JProgressBar`の色相を緑から赤に変更します。
 
@@ -80,7 +79,6 @@ class RedGreenChannelSwapFilter extends RGBImageFilter{
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `NimbusLookAndFeel`の場合、`JProgressBar#setOpaque(true)`として`JLayer`と`RedGreenChannelSwapFilter`を使用しないと、フチが半透明にならない。また`NimbusLookAndFeel`の場合、`JProgressBar#setForeground(Color)`で変化するのは他の`LookAndFeel`とは異なり、進捗文字列になる。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-25 (火) 20:51:09
+- `NimbusLookAndFeel`の場合、`JProgressBar#setOpaque(true)`として`JLayer`と`RedGreenChannelSwapFilter`を使用しないと、フチが半透明にならない。また`NimbusLookAndFeel`の場合、`JProgressBar#setForeground(Color)`で変化するのは他の`LookAndFeel`とは異なり、進捗文字列になる。 -- *aterai* 2013-06-25 (火) 20:51:09
 
 <!-- dummy comment line for breaking list -->
-

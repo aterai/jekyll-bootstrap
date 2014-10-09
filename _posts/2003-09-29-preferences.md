@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameの位置・サイズを記憶する
 category: swing
 folder: Preferences
+title: JFrameの位置・サイズを記憶する
 tags: [JFrame, Preferences]
 author: aterai
+pubdate: 2003-09-29
+description: Preferences(レジストリなど)にフレーム(パネル)の位置・サイズを記憶しておきます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-29
-
 ## 概要
 `Preferences`(レジストリなど)にフレーム(パネル)の位置・サイズを記憶しておきます。
 
@@ -98,9 +97,8 @@ private void saveLocation() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Preferences APIがJava6上では動かない - 日々是開発: SQS Development(2007-02-12)](http://sqs.cmr.sfc.keio.ac.jp/tdiary/20070212.html#p01) -- [aterai](http://terai.xrea.jp/aterai.html) 2007-06-14 (木) 14:42:00
-- 最大化した状態で終了すると、`(x,y)`が`(-4,-4)`で記録される。最大化すると、どうやら`JFrame.NORMAL`のまま左端に移動してそれから最大扱いになってるようです。だから`componentMoved`が誤爆してる。 -- [Tomopy](http://terai.xrea.jp/Tomopy.html) 2007-10-26 (金) 12:20:16
-    - ご指摘ありがとうございます。位置がマイナスの場合は、保存しないほうがよさそうですね。修正しておきます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-26 (金) 13:37:15
+- メモ: [Preferences APIがJava6上では動かない - 日々是開発: SQS Development(2007-02-12)](http://sqs.cmr.sfc.keio.ac.jp/tdiary/20070212.html#p01) -- *aterai* 2007-06-14 (木) 14:42:00
+- 最大化した状態で終了すると、`(x,y)`が`(-4,-4)`で記録される。最大化すると、どうやら`JFrame.NORMAL`のまま左端に移動してそれから最大扱いになってるようです。だから`componentMoved`が誤爆してる。 -- *Tomopy* 2007-10-26 (金) 12:20:16
+    - ご指摘ありがとうございます。位置がマイナスの場合は、保存しないほうがよさそうですね。修正しておきます。 -- *aterai* 2007-10-26 (金) 13:37:15
 
 <!-- dummy comment line for breaking list -->
-

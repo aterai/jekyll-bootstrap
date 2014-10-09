@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードを検索する
 category: swing
 folder: SearchBox
+title: JTreeのノードを検索する
 tags: [JTree, TreeModel, TreePath, TreeNode]
 author: aterai
+pubdate: 2009-01-12T18:57:42+09:00
+description: JTreeを検索して、一致するアイテムを選択します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-12
-
 ## 概要
 `JTree`を検索して、一致するアイテムを選択します。
 
@@ -91,9 +90,9 @@ while(depth.hasMoreElements()) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ソースを拝見させていただきましたが, 要素の挿入の箇所がさっぱりわかりません... -- [taji](http://terai.xrea.jp/taji.html) 2010-01-20 (水) 00:38:18
-- 途中で切れてしまい失礼しました. できればどこで挿入しているのか教えていただけませんか? -- [taji](http://terai.xrea.jp/taji.html) 2010-01-20 (水) 00:39:44
-    - `JTree`のデフォルトコンストラクタがサンプルモデルを持つ`JTree`を返しているので、`%JAVA_HOME%\src.zip`を展開して、`JTree()`を見るのがよいと思います。そこからたどって行けば`protected static TreeModel getDefaultTreeModel()`の中で、`TreeModel`を作って要素(ノード)を挿入している様子が分かります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-20 (水) 11:15:33
+- ソースを拝見させていただきましたが, 要素の挿入の箇所がさっぱりわかりません... -- *taji* 2010-01-20 (水) 00:38:18
+- 途中で切れてしまい失礼しました. できればどこで挿入しているのか教えていただけませんか? -- *taji* 2010-01-20 (水) 00:39:44
+    - `JTree`のデフォルトコンストラクタがサンプルモデルを持つ`JTree`を返しているので、`%JAVA_HOME%\src.zip`を展開して、`JTree()`を見るのがよいと思います。そこからたどって行けば`protected static TreeModel getDefaultTreeModel()`の中で、`TreeModel`を作って要素(ノード)を挿入している様子が分かります。 -- *aterai* 2010-01-20 (水) 11:15:33
 
 <!-- dummy comment line for breaking list -->
 
@@ -131,8 +130,7 @@ protected static TreeModel getDefaultTreeModel() {
 }
 </code></pre>
 
-- `JTree#getNextMatch(...)`は、展開されているノードのみ検索する？ -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-18 (木) 01:40:07
-- 一致するノードが複数ある場合、ボタンクリックで選択状態がループするように変更しました(いつ修正したのかは不明...)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-15 (木) 21:32:23
+- `JTree#getNextMatch(...)`は、展開されているノードのみ検索する？ -- *aterai* 2010-11-18 (木) 01:40:07
+- 一致するノードが複数ある場合、ボタンクリックで選択状態がループするように変更しました(いつ修正したのかは不明...)。 -- *aterai* 2011-09-15 (木) 21:32:23
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelの文字列を折り返し
 category: swing
 folder: GlyphVector
+title: JLabelの文字列を折り返し
 tags: [JLabel, GlyphVector, JTextArea, LineBreakMeasurer]
 author: aterai
+pubdate: 2004-03-01
+description: GlyphVectorを使って、ラベルの文字列を折り返して表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
-
 ## 概要
 `GlyphVector`を使って、ラベルの文字列を折り返して表示します。
 
@@ -125,8 +124,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-03-01
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JTextArea#setLineWrap(true);`を使う方法を追加、スクリーンショットの更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-01-05 (月) 17:15:36
-- `LineBreakMeasurer`を使用する方法を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-01-01 (火) 22:38:47
+- `JTextArea#setLineWrap(true);`を使う方法を追加、スクリーンショットの更新。 -- *aterai* 2009-01-05 (月) 17:15:36
+- `LineBreakMeasurer`を使用する方法を追加。 -- *aterai* 2013-01-01 (火) 22:38:47
 
 <!-- dummy comment line for breaking list -->
-

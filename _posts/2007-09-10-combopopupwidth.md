@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのドロップダウンリスト幅を指定値以上に保つ
 category: swing
 folder: ComboPopupWidth
+title: JComboBoxのドロップダウンリスト幅を指定値以上に保つ
 tags: [JComboBox, PopupMenuListener]
 author: aterai
+pubdate: 2007-09-10
+description: JComboBoxのドロップダウンリストが表示されたとき、本体の幅が狭くても一定の幅以下にはならないように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-10
-
 ## 概要
 `JComboBox`のドロップダウンリストが表示されたとき、本体の幅が狭くても一定の幅以下にはならないように設定します。
 
@@ -56,7 +55,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-10
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225)  -- [aterai](http://terai.xrea.jp/aterai.html) 2011-06-05 (日) 02:34:16
+- メモ: [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225)  -- *aterai* 2011-06-05 (日) 02:34:16
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneの余白にJButtonを配置
 category: swing
 folder: TabbedPaneWithButton
+title: JTabbedPaneの余白にJButtonを配置
 tags: [JTabbedPane, OverlayLayout, JButton, UIManager]
 author: aterai
+pubdate: 2008-03-03T14:07:59+09:00
+description: JTabbedPaneのタブエリアに余白を作成し、そこにOverlayLayoutを使ってJButtonを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-03
-
 ## 概要
 `JTabbedPane`のタブエリアに余白を作成し、そこに`OverlayLayout`を使って`JButton`を配置します。
 

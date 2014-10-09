@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fileの再帰的検索
 category: swing
 folder: RecursiveFileSearch
+title: Fileの再帰的検索
 tags: [File, JProgressBar, SwingWorker]
 author: aterai
+pubdate: 2003-12-15
+description: ファイルを再帰的に検索します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15
-
 ## 概要
 ファイルを再帰的に検索します。
 
@@ -73,8 +72,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-15
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 実際に動作するサンプルを追加してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-04-28 (金) 21:50:55
-- `JDK 6`の`SwingWorker`を使用するように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-07-11 (金) 15:32:26
+- 実際に動作するサンプルを追加してみました。 -- *aterai* 2006-04-28 (金) 21:50:55
+- `JDK 6`の`SwingWorker`を使用するように変更しました。 -- *aterai* 2008-07-11 (金) 15:32:26
 
 <!-- dummy comment line for breaking list -->
-

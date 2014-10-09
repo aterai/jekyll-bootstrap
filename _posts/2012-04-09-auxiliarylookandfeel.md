@@ -1,15 +1,14 @@
 ---
 layout: post
-title: AuxiliaryLookAndFeelを追加する
 category: swing
 folder: AuxiliaryLookAndFeel
+title: AuxiliaryLookAndFeelを追加する
 tags: [LookAndFeel, UIManager, JComboBox]
 author: aterai
+pubdate: 2012-04-09T14:26:00+09:00
+description: AuxiliaryLookAndFeelを追加して、WindowsLookAndFeelの場合の動作を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-09
-
 ## 概要
 `AuxiliaryLookAndFeel`を追加して、`WindowsLookAndFeel`の場合の動作を変更します。
 
@@ -78,7 +77,6 @@ SwingUtilities.updateComponentTreeUI(MainPanel.this);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- いつか修正: `AuxiliaryLookAndFeel`の作成方法、使い方などをいろいろ間違えているような気がする…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-09 (月) 14:41:52
+- いつか修正: `AuxiliaryLookAndFeel`の作成方法、使い方などをいろいろ間違えているような気がする…。 -- *aterai* 2012-04-09 (月) 14:41:52
 
 <!-- dummy comment line for breaking list -->
-

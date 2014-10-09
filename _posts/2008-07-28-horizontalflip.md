@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Shapeの反転
 category: swing
 folder: HorizontalFlip
+title: Shapeの反転
 tags: [Shape, Font, AffineTransform]
 author: aterai
+pubdate: 2008-07-28T12:01:57+09:00
+description: AffineTransformで図形や画像を反転します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-28
-
 ## 概要
 `AffineTransform`で図形や画像を反転します。
 

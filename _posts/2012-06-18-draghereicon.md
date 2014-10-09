@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Iconを生成する
 category: swing
 folder: DragHereIcon
+title: Iconを生成する
 tags: [Icon, Graphics, DragAndDrop, TransferHandler]
 author: aterai
+pubdate: 2012-06-18T18:09:18+09:00
+description: Iconインタフェースから固定サイズのアイコンを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
-
 ## 概要
 `Icon`インタフェースから固定サイズのアイコンを作成します。
 
@@ -107,7 +106,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-18
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `TransferHandler`でファイルがドロップされるとき、カーソルを常にコピーにする(移動ではなく)方法が分からない(のでこのサンプルでは`DropTarget`を使用)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-18 (月) 18:25:50
+- `TransferHandler`でファイルがドロップされるとき、カーソルを常にコピーにする(移動ではなく)方法が分からない(のでこのサンプルでは`DropTarget`を使用)。 -- *aterai* 2012-06-18 (月) 18:25:50
 
 <!-- dummy comment line for breaking list -->
-

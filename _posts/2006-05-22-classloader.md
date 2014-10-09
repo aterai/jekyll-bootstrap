@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ClassLoaderでリソース(URL)を取得
 category: swing
 folder: ClassLoader
+title: ClassLoaderでリソース(URL)を取得
 tags: [ClassLoader, Resource, URL]
 author: aterai
+pubdate: 2006-05-22T09:59:23+09:00
+description: クラスパスからのエントリ(相対パス風)を使って、ClassLoaderからURLを取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-22
-
 ## 概要
 クラスパスからのエントリ(相対パス風)を使って、`ClassLoader`から`URL`を取得します。
 
@@ -25,7 +24,7 @@ JLabel path = new JLabel(url.toString());
 ## 解説
 `ClassLoader`を使用して、位置に依存しない方法でリソース(`URL`)を取得します。
 
-- 例えば`new ImageIcon(String filename)`のようにファイルパスを文字列で指定した場合、このファイルパスが位置(カレントディレクトリ)に依存しているため、実行時にカレントディレクトリを変更したり、`jar`ファイルにまとめたりするとファイルが参照できなくなります。
+- 例えば`new ImageIcon(String filename)`のようにファイルパスを文字列で指定した場合、このファイルパスが位置(カレントディレクトリ)に依存しているため、実行時にカレントディレクトリを変更したり、`jar`ファイルにまとめたりするとファイルが参照できなくなる
 
 <!-- dummy comment line for breaking list -->
 
@@ -90,9 +89,8 @@ JLabel path = new JLabel(url.toString());
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 「クラスパスからのパス」などの意味が分かり辛いので、[JarURLConnection (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/net/JarURLConnection.html)を参考にして「パス」を「エントリ」に変更してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-02-15 (金) 18:04:14
-- `.jar`ファイルのクラスで -- [kind](http://terai.xrea.jp/kind.html) 2012-03-02 (金) 14:04:06
-    - 見落としてました。最近なんか重いので途切れてしまったのでしょうか。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-05 (月) 16:26:35
+- 「クラスパスからのパス」などの意味が分かり辛いので、[JarURLConnection (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/net/JarURLConnection.html)を参考にして「パス」を「エントリ」に変更してみました。 -- *aterai* 2008-02-15 (金) 18:04:14
+- `.jar`ファイルのクラスで -- *kind* 2012-03-02 (金) 14:04:06
+    - 見落としてました。最近なんか重いので途切れてしまったのでしょうか。 -- *aterai* 2012-03-05 (月) 16:26:35
 
 <!-- dummy comment line for breaking list -->
-

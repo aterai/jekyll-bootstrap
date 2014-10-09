@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのCellEditorにJComboBoxを設定
 category: swing
 folder: ComboCellEditor
+title: JTableのCellEditorにJComboBoxを設定
 tags: [JTable, TableCellEditor, JComboBox, TableColumn]
 author: aterai
+pubdate: 2005-09-26
+description: JTableのCellEditorにJComboBoxを使用し、リストから値を選択できるようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-26
-
 ## 概要
 `JTable`の`CellEditor`に`JComboBox`を使用し、リストから値を選択できるようにします。
 

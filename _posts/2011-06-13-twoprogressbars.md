@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SwingWorkerで複数のJProgressBarを使用する
 category: swing
 folder: TwoProgressBars
+title: SwingWorkerで複数のJProgressBarを使用する
 tags: [SwingWorker, JProgressBar, Enum, PropertyChangeListener]
 author: aterai
+pubdate: 2011-06-13T13:44:00+09:00
+description: ひとつのSwingWorkerで、進捗を表示するJProgressBarをふたつ使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-13
-
 ## 概要
 ひとつの`SwingWorker`で、進捗を表示する`JProgressBar`をふたつ使用します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: BoxLayoutでリスト状に並べる
 category: swing
 folder: ComponentList
+title: BoxLayoutでリスト状に並べる
 tags: [BoxLayout, LayoutManager]
 author: aterai
+pubdate: 2006-06-15
+description: 高さの異なるコンポーネントをスクロールできるようにリスト状に並べます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-06-15
-
 ## 概要
 高さの異なるコンポーネントをスクロールできるようにリスト状に並べます。
 
@@ -41,8 +40,7 @@ public void addComp(final JComponent comp) {
 
 
 ## コメント
-- `SpringLayout`ではなく、`BoxLayout`を使うようにサンプルを変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-06-26 (月) 15:34:41
-- 解説がソースと異なり、`setMinimumSize`となっていたのを`setMaximumSize`に修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-15 (金) 22:58:16
+- `SpringLayout`ではなく、`BoxLayout`を使うようにサンプルを変更しました。 -- *aterai* 2006-06-26 (月) 15:34:41
+- 解説がソースと異なり、`setMinimumSize`となっていたのを`setMaximumSize`に修正。 -- *aterai* 2009-05-15 (金) 22:58:16
 
 <!-- dummy comment line for breaking list -->
-

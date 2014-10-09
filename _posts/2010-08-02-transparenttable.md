@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableを半透明にする
 category: swing
 folder: TransparentTable
+title: JTableを半透明にする
 tags: [JTable, Transparent, Translucent, TableCellEditor, JViewport, JCheckBox]
 author: aterai
+pubdate: 2010-08-02T19:24:12+09:00
+description: JTableに透明、半透明の背景色を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-02
-
 ## 概要
 `JTable`に透明、半透明の背景色を設定します。
 

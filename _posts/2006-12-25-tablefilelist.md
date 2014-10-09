@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableで文字列をクリックした場合だけセルを選択状態にする
 category: swing
 folder: TableFileList
+title: JTableで文字列をクリックした場合だけセルを選択状態にする
 tags: [JTable, TableCellRenderer]
 author: aterai
+pubdate: 2006-12-25
+description: JTableの文字列以外の場所がクリックされた場合、そのセルが選択されないようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-25
-
 ## 概要
 `JTable`の文字列以外の場所がクリックされた場合、そのセルが選択されないようにします。
 
@@ -51,11 +50,10 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JTable#columnAtPoint(Point)`メソッドをオーバーライドする方法では、`CPU`が`100%`になってしまうので、クリック、ドラッグした場合だけ、評価するように修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-16 (月) 18:46:39
-- `JTable#getToolTipText(MouseEvent)`メソッドをオーバーライドして、`Name`カラムのセルの余白では、ツールチップも表示しないように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-16 (月) 18:49:02
-- `table.putClientProperty("Table.isFileList", Boolean.TRUE);`を使えば、`MouseListener`などもすべて必要なさそう…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-01 (金) 02:02:50
-    - `putClientProperty("Table.isFileList", Boolean.TRUE)`を使用するように変更、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)での範囲選択機能を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-05 (火) 16:07:48
-- <kbd>Ctrl+A</kbd>などの`JTable#selectAll()`で、`Comment`カラムが選択できるのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-25 (水) 18:41:45
+- `JTable#columnAtPoint(Point)`メソッドをオーバーライドする方法では、`CPU`が`100%`になってしまうので、クリック、ドラッグした場合だけ、評価するように修正しました。 -- *aterai* 2007-04-16 (月) 18:46:39
+- `JTable#getToolTipText(MouseEvent)`メソッドをオーバーライドして、`Name`カラムのセルの余白では、ツールチップも表示しないように変更しました。 -- *aterai* 2007-04-16 (月) 18:49:02
+- `table.putClientProperty("Table.isFileList", Boolean.TRUE);`を使えば、`MouseListener`などもすべて必要なさそう…。 -- *aterai* 2010-01-01 (金) 02:02:50
+    - `putClientProperty("Table.isFileList", Boolean.TRUE)`を使用するように変更、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)での範囲選択機能を追加。 -- *aterai* 2010-01-05 (火) 16:07:48
+- <kbd>Ctrl+A</kbd>などの`JTable#selectAll()`で、`Comment`カラムが選択できるのを修正。 -- *aterai* 2010-08-25 (水) 18:41:45
 
 <!-- dummy comment line for breaking list -->
-

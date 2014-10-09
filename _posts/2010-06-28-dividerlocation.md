@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSplitPaneを等分割する
 category: swing
 folder: DividerLocation
+title: JSplitPaneを等分割する
 tags: [JSplitPane]
 author: aterai
+pubdate: 2010-06-28T22:43:18+09:00
+description: JSplitPaneのディバイダが中央にくるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-28
-
 ## 概要
 `JSplitPane`のディバイダが中央にくるように設定します。
 

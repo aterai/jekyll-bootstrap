@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderにJPopupMenuを追加してソート
 category: swing
 folder: RowSorterPopupMenu
+title: JTableHeaderにJPopupMenuを追加してソート
 tags: [JTable, JTableHeader, JPopupMenu, PopupMenuListener, TableRowSorter]
 author: aterai
+pubdate: 2009-12-07T14:24:46+09:00
+description: JTableHeaderにJPopupMenuを追加してソートします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-07
-
 ## 概要
 `JTableHeader`に`JPopupMenu`を追加してソートします。
 

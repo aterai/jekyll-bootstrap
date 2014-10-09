@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextPaneで最終行に移動
 category: swing
 folder: CaretPosition
+title: JTextPaneで最終行に移動
 tags: [JTextPane, JTextComponent, Caret, Document]
 author: aterai
+pubdate: 2005-08-01T02:22:59+09:00
+description: CaretPositionを指定してJTextPaneの最終行に移動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-01
-
 ## 概要
 `CaretPosition`を指定して`JTextPane`の最終行に移動します。
 

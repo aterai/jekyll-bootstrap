@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerを直接入力不可にする
 category: swing
 folder: SpinnerEditor
+title: JSpinnerを直接入力不可にする
 tags: [JSpinner]
 author: aterai
+pubdate: 2004-07-19
+description: JSpinnerのエディタを編集不可にして、ボタンでしか値を変更できないようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-19
-
 ## 概要
 `JSpinner`のエディタを編集不可にして、ボタンでしか値を変更できないようにします。
 

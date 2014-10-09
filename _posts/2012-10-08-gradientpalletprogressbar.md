@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarにUIを設定してインジケータの色を変更
 category: swing
 folder: GradientPalletProgressBar
+title: JProgressBarにUIを設定してインジケータの色を変更
 tags: [JProgressBar, PixelGrabber, LinearGradientPaint]
 author: aterai
+pubdate: 2012-10-08T15:21:36+09:00
+description: JProgressBarのインジケータの色を進行に応じてパレットから取得した色に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-08
-
 ## 概要
 `JProgressBar`のインジケータの色を進行に応じてパレットから取得した色に変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノード上でJPopupMenuを表示
 category: swing
 folder: TreeNodePopupMenu
+title: JTreeのノード上でJPopupMenuを表示
 tags: [JTree, JPopupMenu, TreePath]
 author: aterai
+pubdate: 2009-06-01T15:04:19+09:00
+description: JTreeのノード上でクリックした場合のみ、JPopupMenuを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-01
-
 ## 概要
 `JTree`のノード上でクリックした場合のみ、`JPopupMenu`を表示します。
 

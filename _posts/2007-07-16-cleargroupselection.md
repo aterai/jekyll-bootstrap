@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ButtonGroup内のJRadioButtonなどの選択をクリア
 category: swing
 folder: ClearGroupSelection
+title: ButtonGroup内のJRadioButtonなどの選択をクリア
 tags: [JRadioButton, JToggleButton, ButtonGroup]
 author: aterai
+pubdate: 2007-07-16T21:58:08+09:00
+description: JDK 6で追加された機能を使用して、ButtonGroup内の選択をクリアします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-16
-
 ## 概要
 `JDK 6`で追加された機能を使用して、`ButtonGroup`内の選択をクリアします。
 

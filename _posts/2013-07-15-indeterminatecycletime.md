@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarの不確定進捗サイクル時間を設定
 category: swing
 folder: IndeterminateCycleTime
+title: JProgressBarの不確定進捗サイクル時間を設定
 tags: [JProgressBar, UIManager]
 author: aterai
+pubdate: 2013-07-15T00:07:35+09:00
+description: JProgressBarの不確定進捗状態アニメーションで使用するサイクル時間などを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-15
-
 ## 概要
 `JProgressBar`の不確定進捗状態アニメーションで使用するサイクル時間などを設定します。
 

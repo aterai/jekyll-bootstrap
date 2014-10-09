@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameの透明化と再描画
 category: swing
 folder: TranslucentFrameRepaint
+title: JFrameの透明化と再描画
 tags: [JFrame, JRootPane, Translucent, JPanel, JLabel, TexturePaint]
 author: aterai
+pubdate: 2011-10-24T15:53:52+09:00
+description: 半透明にしたJFrameの再描画を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-10-24
-
 ## 概要
 半透明にした`JFrame`の再描画を行います。
 
@@ -73,8 +72,7 @@ private void repaintWindowAncestor(JComponent c) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- フォントをデジタル時計ぽいものに変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-10 (金) 17:35:12
-    - スクリーンショットは入れ替えるのが面倒なので、古いフォントのまま。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-17 (火) 17:26:14
+- フォントをデジタル時計ぽいものに変更。 -- *aterai* 2012-02-10 (金) 17:35:12
+    - スクリーンショットは入れ替えるのが面倒なので、古いフォントのまま。 -- *aterai* 2012-04-17 (火) 17:26:14
 
 <!-- dummy comment line for breaking list -->
-

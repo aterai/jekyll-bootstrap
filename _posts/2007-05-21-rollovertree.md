@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードをハイライト
 category: swing
 folder: RollOverTree
+title: JTreeのノードをハイライト
 tags: [JTree, TreeCellRenderer, MouseMotionListener]
 author: aterai
+pubdate: 2007-05-21T05:44:50+09:00
+description: JTreeのノード上にマウスカーソルがきたら、ハイライト表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-21
-
 ## 概要
 `JTree`のノード上にマウスカーソルがきたら、ハイライト表示します。
 

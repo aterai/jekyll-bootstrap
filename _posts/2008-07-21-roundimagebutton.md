@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ImageIconの形でJButtonを作成
 category: swing
 folder: RoundImageButton
+title: ImageIconの形でJButtonを作成
 tags: [JButton, Shape, ImageIcon]
 author: aterai
+pubdate: 2008-07-21T16:27:56+09:00
+description: 任意のShapeとその形に透過色を設定した画像を使ってJButtonを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-07-21
-
 ## 概要
 任意の`Shape`とその形に透過色を設定した画像を使って`JButton`を作成します。
 

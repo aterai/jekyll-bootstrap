@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ProgressMonitorで処理の進捗を表示
 category: swing
 folder: ProgressMonitor
+title: ProgressMonitorで処理の進捗を表示
 tags: [ProgressMonitor, SwingWorker, PropertyChangeListener, JProgressBar]
 author: aterai
+pubdate: 2010-02-15T14:18:06+09:00
+description: ProgressMonitorで処理の進捗を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-02-15
-
 ## 概要
 `ProgressMonitor`で処理の進捗を表示します。
 

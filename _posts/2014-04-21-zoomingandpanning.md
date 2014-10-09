@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPanelに表示した画像のズームとスクロール
 category: swing
 folder: ZoomingAndPanning
+title: JPanelに表示した画像のズームとスクロール
 tags: [AffineTransform, Graphics, JPanel, MouseListener, MouseMotionListener, MouseWheelListener]
 author: aterai
+pubdate: 2014-04-21T00:28:49+09:00
+description: JPanelに表示した画像にAffineTransformによる変換を適用して、マウスを使った拡大・縮小・移動を実行します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
-
 ## 概要
 `JPanel`に表示した画像に`AffineTransform`による変換を適用して、マウスを使った拡大・縮小・移動を実行します。[How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)に投稿されているコードを参考・引用しています。
 
@@ -93,7 +92,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-04-21
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 表示画面の中心を 基準に拡大縮小するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-04-21 (月) 14:55:12
+- 表示画面の中心を 基準に拡大縮小するように変更。 -- *aterai* 2014-04-21 (月) 14:55:12
 
 <!-- dummy comment line for breaking list -->
-

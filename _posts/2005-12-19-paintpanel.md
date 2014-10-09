@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPanelにマウスで自由曲線を描画
 category: swing
 folder: PaintPanel
+title: JPanelにマウスで自由曲線を描画
 tags: [JPanel, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2005-12-19
+description: マウスをドラッグしてパネル上に自由曲線を描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-19
-
 ## 概要
 マウスをドラッグしてパネル上に自由曲線を描画します。
 
@@ -64,10 +63,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-19
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- マウス右ボタンをドラッグで消しゴム…のテスト -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-12 (火) 16:16:59
-    - 追記:不要なコードを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-04-30 (金) 19:26:37
-    - [MemoryImageSourceで配列から画像を生成](http://terai.xrea.jp/Swing/MemoryImageSource.html)に移動。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-07 (月) 15:21:37
+- マウス右ボタンをドラッグで消しゴム…のテスト -- *aterai* 2010-01-12 (火) 16:16:59
+    - 追記:不要なコードを削除。 -- *aterai* 2010-04-30 (金) 19:26:37
+    - [MemoryImageSourceで配列から画像を生成](http://terai.xrea.jp/Swing/MemoryImageSource.html)に移動。 -- *aterai* 2010-06-07 (月) 15:21:37
 - わからん！！ --  2010-04-30 (金) 18:11:55
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxで候補一覧を表示
 category: swing
 folder: ComboBoxSuggestion
+title: JComboBoxで候補一覧を表示
 tags: [JComboBox, KeyListener, JPopupMenu]
 author: aterai
+pubdate: 2004-12-06
+description: JComboBoxに入力候補の一覧表示機能(補完機能、コードアシスト、コンテンツアシスト)を追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-06
-
 ## 概要
 `JComboBox`に入力候補の一覧表示機能(補完機能、コードアシスト、コンテンツアシスト)を追加します。
 
@@ -155,16 +154,15 @@ JComboBox = new JComboBox(model) {
 </code></pre>
 
 ## コメント
-- 変換途中の日本語も、問題がないともっといいですね。 -- [toshi](http://terai.xrea.jp/toshi.html) 2006-04-24 (月) 13:45:06
-    - あー、日本語のこと全然考えてなかったです…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-04-24 (月) 15:54:00
-- タイトルなどを変更するとしたら`AutoCompletion`に？ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-09 (水) 20:14:40
-- 日本語を考えると`KeyReleased`より`KeyTyped`のほうがよさそうです -- [foggi](http://terai.xrea.jp/foggi.html) 2008-05-06 (火) 17:15:39
-    - ご指摘ありがとうございます。`keyTyped`に変更してみました(ついでにスクリーンショットなども更新)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-07 (水) 12:23:19
-- <kbd>Enter</kbd>キーでの追加が出来なくなっていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-01-22 (木) 16:26:11
-- 下下と入力したとき、下上と入力したときの動きがおかしいです。 -- [magi](http://terai.xrea.jp/magi.html) 2011-02-19 (Sat) 22:03:02
-    - 自分の環境では再現できてません。カーソルキーを、「下、下、下、上」と入力するのでしょうか？ -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-21 (月) 15:06:15
+- 変換途中の日本語も、問題がないともっといいですね。 -- *toshi* 2006-04-24 (月) 13:45:06
+    - あー、日本語のこと全然考えてなかったです…。 -- *aterai* 2006-04-24 (月) 15:54:00
+- タイトルなどを変更するとしたら`AutoCompletion`に？ -- *aterai* 2007-05-09 (水) 20:14:40
+- 日本語を考えると`KeyReleased`より`KeyTyped`のほうがよさそうです -- *foggi* 2008-05-06 (火) 17:15:39
+    - ご指摘ありがとうございます。`keyTyped`に変更してみました(ついでにスクリーンショットなども更新)。 -- *aterai* 2008-05-07 (水) 12:23:19
+- <kbd>Enter</kbd>キーでの追加が出来なくなっていたのを修正しました。 -- *aterai* 2009-01-22 (木) 16:26:11
+- 下下と入力したとき、下上と入力したときの動きがおかしいです。 -- *magi* 2011-02-19 (Sat) 22:03:02
+    - 自分の環境では再現できてません。カーソルキーを、「下、下、下、上」と入力するのでしょうか？ -- *aterai* 2011-02-21 (月) 15:06:15
 - このページでVectorで宣言されているところが　view plain　で表示されるコードだとListで宣言されてますね --  2014-04-14 (月) 11:04:20
-    - こんばんは。ご指摘ありがとうございます。ソースコードは出来るだけ`Vector`は使用しないようにまとめて変更したのですが、`wiki`は面倒なので結構残っているかもしれません。気がつけば徐々に置き換えていこうと思っています :-) -- [aterai](http://terai.xrea.jp/aterai.html) 2014-04-14 (月) 17:51:02
+    - こんばんは。ご指摘ありがとうございます。ソースコードは出来るだけ`Vector`は使用しないようにまとめて変更したのですが、`wiki`は面倒なので結構残っているかもしれません。気がつけば徐々に置き換えていこうと思っています :-) -- *aterai* 2014-04-14 (月) 17:51:02
 
 <!-- dummy comment line for breaking list -->
-

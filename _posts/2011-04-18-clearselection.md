@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListの選択を解除
 category: swing
 folder: ClearSelection
+title: JListの選択を解除
 tags: [JList, Focus, MouseListener]
 author: aterai
+pubdate: 2011-04-18T14:47:37+09:00
+description: JListのセル選択状態を解除します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-18
-
 ## 概要
 `JList`のセル選択状態を解除します。
 

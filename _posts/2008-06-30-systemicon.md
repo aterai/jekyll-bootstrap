@@ -1,15 +1,14 @@
 ---
 layout: post
-title: FileのSystemIconを取得する
 category: swing
 folder: SystemIcon
+title: FileのSystemIconを取得する
 tags: [SystemIcon, FileSystemView, ShellFolder]
 author: aterai
+pubdate: 2008-06-30T17:25:49+09:00
+description: ファイル、ディレクトリなどのSystemIconを取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-30
-
 ## 概要
 ファイル、ディレクトリなどの`SystemIcon`を取得します。
 

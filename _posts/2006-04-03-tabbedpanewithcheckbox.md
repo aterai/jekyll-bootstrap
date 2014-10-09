@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneの余白にJCheckBoxを配置
 category: swing
 folder: TabbedPaneWithCheckBox
+title: JTabbedPaneの余白にJCheckBoxを配置
 tags: [JTabbedPane, JCheckBox, Border]
 author: aterai
+pubdate: 2006-04-03T01:35:12+09:00
+description: JTabbedPaneの余白にJCheckBoxを配置して特定のタブの開閉を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-04-03
-
 ## 概要
 `JTabbedPane`の余白に`JCheckBox`を配置して特定のタブの開閉を行います。
 

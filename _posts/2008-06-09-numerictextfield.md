@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldの入力を数値に制限する
 category: swing
 folder: NumericTextField
+title: JTextFieldの入力を数値に制限する
 tags: [JTextField, JFormattedTextField, InputVerifier, DocumentFilter, PlainDocument]
 author: aterai
+pubdate: 2008-06-09T10:55:29+09:00
+description: JTextFieldへの入力を数値のみに制限します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-09
-
 ## 概要
 `JTextField`への入力を数値のみに制限します。ソースコードは、[Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)からの引用です。
 

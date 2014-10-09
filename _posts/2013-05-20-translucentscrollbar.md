@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarを半透明にする
 category: swing
 folder: TranslucentScrollBar
+title: JScrollBarを半透明にする
 tags: [JScrollBar, JViewport, JScrollPane, Translucent, LayoutManager]
 author: aterai
+pubdate: 2013-05-20T17:18:43+09:00
+description: 半透明のJScrollBarを作成して、JViewport内部に配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
-
 ## 概要
 半透明の`JScrollBar`を作成して、`JViewport`内部に配置します。
 
@@ -109,7 +108,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JScrollBar`の増減ボタンのサイズを`0`、トラックを透明、つまみを半透明にして、`JViewport`内部に配置しています。
+上記のサンプルでは、`JScrollBar`の増減ボタンのサイズを`0x0`、トラックを透明、つまみを半透明にして、`JViewport`内部に配置しています。
 
 - `ScrollPaneLayout#layoutContainer(...)`をオーバーライドして、`JScrollBar`を`JViewport`の内部にオーバーラップするように配置
     - `scrollPane.setComponentZOrder(...)`で、`JScrollBar`と`JViewport`の`Z`軸の順序を変更
@@ -136,7 +135,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-20
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `ScrollPaneLayout`を変更してオーバーラップするより、`JLayer`などを使ってドラッグ可能な矩形を描画する方が簡単かもしれない…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-20 (月) 17:20:39
+- `ScrollPaneLayout`を変更してオーバーラップするより、`JLayer`などを使ってドラッグ可能な矩形を描画する方が簡単かもしれない…。 -- *aterai* 2013-05-20 (月) 17:20:39
 
 <!-- dummy comment line for breaking list -->
-

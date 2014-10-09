@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GridBagLayoutを使ってレンガ状に配置
 category: swing
 folder: BrickLayout
+title: GridBagLayoutを使ってレンガ状に配置
 tags: [GridBagLayout, LayoutManager]
 author: aterai
+pubdate: 2009-03-09T14:08:29+09:00
+description: GridBagLayoutを使ってコンポーネントをレンガ状に配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-09
-
 ## 概要
 `GridBagLayout`を使ってコンポーネントをレンガ状に配置します。[Swing - GridBagLayout to create a board](https://forums.oracle.com/thread/1357310)を参考にしています。
 

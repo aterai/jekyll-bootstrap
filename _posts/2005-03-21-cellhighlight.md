@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルのハイライト
 category: swing
 folder: CellHighlight
+title: JTableのセルのハイライト
 tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2005-03-21T07:27:38+09:00
+description: セル上にマウスがある場合、その色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-21
-
 ## 概要
 セル上にマウスがある場合、その色を変更します。
 
@@ -97,7 +96,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-21
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ソースコードの整理、スクリーンショットの更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-14 (金) 16:38:10
+- ソースコードの整理、スクリーンショットの更新 -- *aterai* 2008-03-14 (金) 16:38:10
 
 <!-- dummy comment line for breaking list -->
-

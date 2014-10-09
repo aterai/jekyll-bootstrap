@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBox内にJProgressBarを表示
 category: swing
 folder: ProgressComboBox
+title: JComboBox内にJProgressBarを表示
 tags: [JComboBox, ListCellRenderer, JProgressBar, SwingWorker]
 author: aterai
+pubdate: 2011-09-05T17:17:06+09:00
+description: JComboBox内にJProgressBarを設定して進捗を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-05
-
 ## 概要
 `JComboBox`内に`JProgressBar`を設定して進捗を表示します。
 

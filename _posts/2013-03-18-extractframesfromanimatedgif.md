@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Animated Gifからフレーム画像を抽出する
 category: swing
 folder: ExtractFramesFromAnimatedGif
+title: Animated Gifからフレーム画像を抽出する
 tags: [ImageIO, ImageReader, BufferedImage, Animation]
 author: aterai
+pubdate: 2013-03-18T02:26:09+09:00
+description: AnimatedGifから各フレームの画像を抽出します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-18
-
 ## 概要
 `AnimatedGif`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://forums.oracle.com/thread/1271862)の回答を参考に作成しています。
 

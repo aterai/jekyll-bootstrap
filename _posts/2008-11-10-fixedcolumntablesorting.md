@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの列固定とソート
 category: swing
 folder: FixedColumnTableSorting
+title: JTableの列固定とソート
 tags: [JTable, TableRowSorter, ChangeListener, JScrollPane, JViewport]
 author: aterai
+pubdate: 2008-11-10T14:26:25+09:00
+description: 列固定したJTableで、JDK 6で導入されたTableRowSorterを使った行ソートを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-10
-
 ## 概要
 列固定した`JTable`で、`JDK 6`で導入された`TableRowSorter`を使った行ソートを行います。
 
@@ -109,11 +108,10 @@ add(scroll);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- <kbd>Tab</kbd>キーによるフォーカスの移動は…、まぁいいかな。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-10 (月) 14:26:25
-- 固定列は、数字でソートするように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-11-10 (月) 15:27:19
-- どちらか片方の`JTable`を `setUpdateSelectionOnSort(false);`としてソート後、選択状態がおかしくならないように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-10-23 (土) 03:13:02
-- 下記サイトは別の手法で列を固定しています。ご参考まで。[Freezable JTables (are they extreme?) | Java.net](http://weblogs.java.net/blog/elevy/archive/2009/01/freezable_jtabl.html) -- [panda](http://terai.xrea.jp/panda.html) 2010-12-22 (水) 15:30:06
-    - 情報どうもです。ポップアップで固定する列を決めると、固定列の右が水平スクロールで移動できるのですね。最初、固定の確認でヘッダ列をリサイズしてたので迷いました(^^;。固定中は、`table.getTableHeader().setResizingAllowed(false); table.getTableHeader().setReorderingAllowed(false);`とかで、列のリサイズ、移動を禁止したほうがいいかも。でも、ソートや行選択などが簡単にできるのは便利ですね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-22 (水) 17:32:51
+- <kbd>Tab</kbd>キーによるフォーカスの移動は…、まぁいいかな。 -- *aterai* 2008-11-10 (月) 14:26:25
+- 固定列は、数字でソートするように変更。 -- *aterai* 2008-11-10 (月) 15:27:19
+- どちらか片方の`JTable`を `setUpdateSelectionOnSort(false);`としてソート後、選択状態がおかしくならないように修正。 -- *aterai* 2010-10-23 (土) 03:13:02
+- 下記サイトは別の手法で列を固定しています。ご参考まで。[Freezable JTables (are they extreme?) | Java.net](http://weblogs.java.net/blog/elevy/archive/2009/01/freezable_jtabl.html) -- *panda* 2010-12-22 (水) 15:30:06
+    - 情報どうもです。ポップアップで固定する列を決めると、固定列の右が水平スクロールで移動できるのですね。最初、固定の確認でヘッダ列をリサイズしてたので迷いました(^^;。固定中は、`table.getTableHeader().setResizingAllowed(false); table.getTableHeader().setReorderingAllowed(false);`とかで、列のリサイズ、移動を禁止したほうがいいかも。でも、ソートや行選択などが簡単にできるのは便利ですね。 -- *aterai* 2010-12-22 (水) 17:32:51
 
 <!-- dummy comment line for breaking list -->
-

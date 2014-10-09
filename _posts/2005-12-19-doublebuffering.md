@@ -1,14 +1,12 @@
 ---
 layout: post
-title: DoubleBufferingで自由曲線を描画
 category: swing
 folder: DoubleBuffering
-nofollow: true
+title: DoubleBufferingで自由曲線を描画
+noindex: true
+pubdate: 2005-12-19T16:02:40+09:00
 comments: true
 ---
-
-Posted by [](http://terai.xrea.jp/.html) at 2005-12-19
-
 以前ここに在ったサンプルは修正して、[JPanelにマウスで自由曲線を描画](http://terai.xrea.jp/Swing/PaintPanel.html)に移動しました。
 
 - `Swing`のコンポーネントでは、自動的に`Double Buffering`が行われる

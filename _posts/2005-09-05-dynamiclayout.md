@@ -1,15 +1,14 @@
 ---
 layout: post
-title: DynamicLayoutでレイアウトの動的評価
 category: swing
 folder: DynamicLayout
+title: DynamicLayoutでレイアウトの動的評価
 tags: [DefaultToolkit, LayoutManager]
 author: aterai
+pubdate: 2005-09-05T12:06:35+09:00
+description: ウィンドウのリサイズなどに応じてレイアウトを再評価するように、DynamicLayoutを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-05
-
 ## 概要
 ウィンドウのリサイズなどに応じてレイアウトを再評価するように、`DynamicLayout`を設定します。
 
@@ -29,7 +28,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-05
 </code></pre>
 
 ## 参考リンク
-- [Toolkit (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/Toolkit.html#setDynamicLayout%28boolean%29)
+- [Toolkit#setDynamicLayout(boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/java/awt/Toolkit.html#setDynamicLayout-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

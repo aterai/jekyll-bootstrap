@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneのHTMLDocumentからIDでElementを取得する
 category: swing
 folder: HTMLAttributeID
+title: JEditorPaneのHTMLDocumentからIDでElementを取得する
 tags: [JEditorPane, HTMLDocument, Element, HTMLEditorKit, ParserDelegator, Highlighter]
 author: aterai
+pubdate: 2013-09-09T03:01:50+09:00
+description: JEditorPaneに設定したHTMLDocumentを検索してid属性を持つElementを取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-09
-
 ## 概要
 `JEditorPane`に設定した`HTMLDocument`を検索して`id`属性を持つ`Element`を取得します。
 

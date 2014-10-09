@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Windowのフルスクリーン化
 category: swing
 folder: FullScreen
+title: Windowのフルスクリーン化
 tags: [GraphicsEnvironment, JFrame, JDialog]
 author: aterai
+pubdate: 2008-04-28T10:19:14+09:00
+description: JDialogやJFrameなどを、フルスクリーン表示に切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-28
-
 ## 概要
 `JDialog`や`JFrame`などを、フルスクリーン表示に切り替えます。
 

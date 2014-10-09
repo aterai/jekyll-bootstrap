@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのモデルが変更されたことをイベントで受け取る
 category: swing
 folder: TableModelEvent
+title: JTableのモデルが変更されたことをイベントで受け取る
 tags: [JTable, TableModelListener, TableModelEvent, JCheckBox]
 author: aterai
+pubdate: 2014-03-31T00:21:38+09:00
+description: JTableのモデルの変更を受け取ってJTableHeaderに追加したJCheckBoxを更新します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
-
 ## 概要
 `JTable`のモデルの変更を受け取って`JTableHeader`に追加した`JCheckBox`を更新します。
 
@@ -113,7 +112,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 修正: `src.zip`などがアップロードされていない -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-09 (金) 17:17:04
+- 修正: `src.zip`などがアップロードされていない -- *aterai* 2014-05-09 (金) 17:17:04
 
 <!-- dummy comment line for breaking list -->
-

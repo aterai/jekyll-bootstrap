@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Highlighterで文字列をハイライト
 category: swing
 folder: Highlighter
+title: Highlighterで文字列をハイライト
 tags: [JTextComponent, Highlighter]
 author: aterai
+pubdate: 2005-12-05T11:02:14+09:00
+description: Highlighterを使ってテキスト中の文字列を強調表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-05
-
 ## 概要
 `Highlighter`を使ってテキスト中の文字列を強調表示します。
 
@@ -43,8 +42,8 @@ try{
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- こんにちは。はじめまして。Keithと言います。このプログラムだと、テキスト中の複数の異なる文字に、それぞれハイライトを割り当てることが出来ないのですが、解決策はあるでしょうか。 -- [Keith](http://terai.xrea.jp/Keith.html) 2007-11-28 (水) 19:12:19
-    - こんばんは。`Highlighter#addHighlight`メソッドは、複数のハイライトを追加できるので、パターン毎に色を変えたいだけなら(効率とか、同じ文字列が含まれる場合とか、エラー処理などの面倒なことは考えない)、以下のようにパターンを配列にして繰り返すだけでもいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-28 (水) 20:25:31
+- こんにちは。はじめまして。Keithと言います。このプログラムだと、テキスト中の複数の異なる文字に、それぞれハイライトを割り当てることが出来ないのですが、解決策はあるでしょうか。 -- *Keith* 2007-11-28 (水) 19:12:19
+    - こんばんは。`Highlighter#addHighlight`メソッドは、複数のハイライトを追加できるので、パターン毎に色を変えたいだけなら(効率とか、同じ文字列が含まれる場合とか、エラー処理などの面倒なことは考えない)、以下のようにパターンを配列にして繰り返すだけでもいいかもしれません。 -- *aterai* 2007-11-28 (水) 20:25:31
 
 <!-- dummy comment line for breaking list -->
 
@@ -70,10 +69,10 @@ public void setHighlight(JTextComponent jtc, String[] pattern) {
 }
 </code></pre>
 
-- こんな簡単にハイライトできるとは！。正規表現で実装すると開始位置と終了位置がより簡単で、しかも複雑にできるかも。 -- [eternalharvest](http://terai.xrea.jp/eternalharvest.html) 2008-08-28 (木) 02:20:11
-    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ:[Swing - Content-Overlay in JTextPane](https://forums.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://terai.xrea.jp/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-01 (月) 13:47:05
-- こんにちは。Cakaiと申します。ハイライトされているテキストのカラーを設定することがありますか？ -- [Caokai](http://terai.xrea.jp/Caokai.html) 2009-10-15 (Thu) 23:12:47
-    - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](http://terai.xrea.jp/Swing/SimpleSyntaxHighlight.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-16 (金) 13:04:32
+- こんな簡単にハイライトできるとは！。正規表現で実装すると開始位置と終了位置がより簡単で、しかも複雑にできるかも。 -- *eternalharvest* 2008-08-28 (木) 02:20:11
+    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ:[Swing - Content-Overlay in JTextPane](https://forums.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://terai.xrea.jp/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。 -- *aterai* 2008-09-01 (月) 13:47:05
+- こんにちは。Cakaiと申します。ハイライトされているテキストのカラーを設定することがありますか？ -- *Caokai* 2009-10-15 (Thu) 23:12:47
+    - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](http://terai.xrea.jp/Swing/SimpleSyntaxHighlight.html) -- *aterai* 2009-10-16 (金) 13:04:32
         - 用途によっては、[JEditorPaneのHTMLEditorKitにCSSを適用](http://terai.xrea.jp/Swing/StyleSheet.html)なども使えるかもしれません。
 
 <!-- dummy comment line for breaking list -->
@@ -155,7 +154,6 @@ public class HighlightTest{
   }
 }
 </code></pre>
-- わかりました。ほんとにありがとうございました。 -- [Caokai](http://terai.xrea.jp/Caokai.html) 2009-10-16 (Fri) 16:42:07
+- わかりました。ほんとにありがとうございました。 -- *Caokai* 2009-10-16 (Fri) 16:42:07
 
 <!-- dummy comment line for breaking list -->
-

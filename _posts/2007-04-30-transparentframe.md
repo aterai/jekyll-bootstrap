@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrameを半透明にする
 category: swing
 folder: TransparentFrame
+title: JInternalFrameを半透明にする
 tags: [JInternalFrame, JDesktopPane, ContentPane, Transparent, Translucent]
 author: aterai
+pubdate: 2007-04-30T21:08:08+09:00
+description: JInternalFrameのフレーム内を半透明にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-30
-
 ## 概要
 `JInternalFrame`のフレーム内を半透明にします。
 
@@ -83,11 +82,10 @@ protected JInternalFrame createFrame(JPanel panel) {
 
 ## コメント
 - `JRE6.0`だと、半透明にならずチェック模様が描画されるだけですね。仕様変わったのかな… --  2007-05-25 (金) 11:05:17
-    - 御指摘ありがとうございます。`Windows XP`で、`Java 1.6.0_01`、`1.5.0_11`は、半透明になったのですが、`Ubuntu 7.04`で、`Java 1.6.0`では駄目みたいです。`Mac`は環境がないので試せてません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-25 (金) 13:02:13
-    - すこし調べてみたのですが、`Ubuntu`(`GNOME`) でも半透明にするには`JInternalFrame#setOpaque(false)`も必要みたいです。修正しておきます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-25 (金) 13:07:50
-    - 再度試してみたら、`JInternalFrame#setOpaque(false)`しても、`Ubuntu`(`GNOME`)+`JDK 1.6.0`+`GTKLookAndFeel`で半透明になってくれません。~~なにか`Ubuntu`の設定を弄ったから？~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-10-10 (水) 18:49:22
-- `NimbusLookAndFeel`でも透明にできないようです。どちらも`SynthLookAndFeel`がベースなので、それが原因？ -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-15 (木) 13:32:50
-    - 追記:[SynthでJInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TranslucentFrame.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-01 (月) 15:06:12
+    - 御指摘ありがとうございます。`Windows XP`で、`Java 1.6.0_01`、`1.5.0_11`は、半透明になったのですが、`Ubuntu 7.04`で、`Java 1.6.0`では駄目みたいです。`Mac`は環境がないので試せてません。 -- *aterai* 2007-05-25 (金) 13:02:13
+    - すこし調べてみたのですが、`Ubuntu`(`GNOME`) でも半透明にするには`JInternalFrame#setOpaque(false)`も必要みたいです。修正しておきます。 -- *aterai* 2007-05-25 (金) 13:07:50
+    - 再度試してみたら、`JInternalFrame#setOpaque(false)`しても、`Ubuntu`(`GNOME`)+`JDK 1.6.0`+`GTKLookAndFeel`で半透明になってくれません。~~なにか`Ubuntu`の設定を弄ったから？~~ -- *aterai* 2007-10-10 (水) 18:49:22
+- `NimbusLookAndFeel`でも透明にできないようです。どちらも`SynthLookAndFeel`がベースなので、それが原因？ -- *aterai* 2007-11-15 (木) 13:32:50
+    - 追記:[SynthでJInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TranslucentFrame.html) -- *aterai* 2008-12-01 (月) 15:06:12
 
 <!-- dummy comment line for breaking list -->
-

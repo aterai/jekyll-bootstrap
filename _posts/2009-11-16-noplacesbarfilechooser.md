@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserのPlacesBarを非表示にする
 category: swing
 folder: NoPlacesBarFileChooser
+title: JFileChooserのPlacesBarを非表示にする
 tags: [JFileChooser, PlacesBar]
 author: aterai
+pubdate: 2009-11-16T19:20:02+09:00
+description: JFileChooser(WindowsLookAndFeel)のPlacesBarを非表示にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-16
-
 ## 概要
 `JFileChooser`(`WindowsLookAndFeel`)の`PlacesBar`を非表示にします。
 

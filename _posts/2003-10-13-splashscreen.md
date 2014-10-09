@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JWindowを使ったSplash Screenの表示
 category: swing
 folder: SplashScreen
+title: JWindowを使ったSplash Screenの表示
 tags: [JWindow, JLabel]
 author: aterai
+pubdate: 2003-10-13
+description: JWindowを使って、Splash Screenを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-13
-
 ## 概要
 `JWindow`を使って、`Splash Screen`を表示します。以下のサンプルコードは、`%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java`から引用改変したものです。
 
@@ -88,7 +87,6 @@ public void showPanel() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Splash Screen`を`Java SE 6`の機能で表示させるために、`splashScreen.setVisible(false)`にしていたテスト版のサンプルが添付されていたのを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-09-25 (火) 18:56:13
+- `Splash Screen`を`Java SE 6`の機能で表示させるために、`splashScreen.setVisible(false)`にしていたテスト版のサンプルが添付されていたのを修正しました。 -- *aterai* 2007-09-25 (火) 18:56:13
 
 <!-- dummy comment line for breaking list -->
-

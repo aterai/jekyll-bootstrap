@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLayerで子コンポーネントへの入力を制限する
 category: swing
 folder: PopupMenuBlockLayer
+title: JLayerで子コンポーネントへの入力を制限する
 tags: [JLayer, GlassPane, JScrollPane, JComponent]
 author: aterai
+pubdate: 2011-11-28T15:32:54+09:00
+description: JLayerを使って、子コンポーネントへのすべての入力を制限します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28
-
 ## 概要
 `JLayer`を使って、子コンポーネントへのすべての入力を制限します。
 
@@ -70,7 +69,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-11-28
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- また`src.zip`などを上げ忘れていたので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-11-29 (火) 17:16:11
+- また`src.zip`などを上げ忘れていたので修正。 -- *aterai* 2011-11-29 (火) 17:16:11
 
 <!-- dummy comment line for breaking list -->
-

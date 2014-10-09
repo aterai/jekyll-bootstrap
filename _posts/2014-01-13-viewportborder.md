@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JViewportにBorderを設定する
 category: swing
 folder: ViewportBorder
+title: JViewportにBorderを設定する
 tags: [JViewport, Border, JScrollPane, JTextArea, Caret]
 author: aterai
+pubdate: 2014-01-13T00:01:30+09:00
+description: JViewportにBorderを設定して余白を作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-13
-
 ## 概要
 `JViewport`に`Border`を設定して余白を作成します。
 

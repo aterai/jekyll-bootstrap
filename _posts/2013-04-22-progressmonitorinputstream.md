@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ProgressMonitorInputStreamを使用してテキストファイルのダウンロード状況を表示
 category: swing
 folder: ProgressMonitorInputStream
+title: ProgressMonitorInputStreamを使用してテキストファイルのダウンロード状況を表示
 tags: [ProgressMonitorInputStream, ProgressMonitor, JProgressBar, SwingWorker, URLConnection, JTextArea]
 author: aterai
+pubdate: 2013-04-22T03:35:42+09:00
+description: ProgressMonitorInputStreamを使用してテキストファイルのダウンロード状態を進捗表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-22
-
 ## 概要
 `ProgressMonitorInputStream`を使用してテキストファイルのダウンロード状態を進捗表示します。
 
@@ -134,7 +133,6 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- EDT外で`ProgressMonitor`を変更する(`monitor.setMinimum(0);`など)のは駄目な気がするので、修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-02-04 (火) 15:05:59
+- EDT外で`ProgressMonitor`を変更する(`monitor.setMinimum(0);`など)のは駄目な気がするので、修正。 -- *aterai* 2014-02-04 (火) 15:05:59
 
 <!-- dummy comment line for breaking list -->
-

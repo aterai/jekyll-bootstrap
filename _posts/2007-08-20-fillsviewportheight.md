@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTable自体の高さを拡張
 category: swing
 folder: FillsViewportHeight
+title: JTable自体の高さを拡張
 tags: [JTable, JScrollPane, JViewport, JPopupMenu]
 author: aterai
+pubdate: 2007-08-20T11:28:51+09:00
+description: JDK 6で導入された機能を使用して、JViewportの高さまでJTableを拡張します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-20
-
 ## 概要
 `JDK 6`で導入された機能を使用して、`JViewport`の高さまで`JTable`を拡張します。
 

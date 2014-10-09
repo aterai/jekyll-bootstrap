@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolTipの表示位置
 category: swing
 folder: ToolTipLocation
+title: JToolTipの表示位置
 tags: [JToolTip, JWindow, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2010-05-03T22:32:22+09:00
+description: JToolTipの表示位置がドラッグでマウスカーソルに追従するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-03
-
 ## 概要
 `JToolTip`の表示位置がドラッグでマウスカーソルに追従するように設定します。
 

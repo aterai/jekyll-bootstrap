@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブを選択不可にする
 category: swing
 folder: EnabledAt
+title: JTabbedPaneのタブを選択不可にする
 tags: [JTabbedPane]
 author: aterai
+pubdate: 2004-07-26T06:10:38+09:00
+description: JTabbedPaneのタブが選択できるかどうかを切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-26
-
 ## 概要
 `JTabbedPane`のタブが選択できるかどうかを切り替えます。
 

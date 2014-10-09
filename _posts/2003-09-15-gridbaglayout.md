@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GridBagLayoutの使用
 category: swing
 folder: GridBagLayout
+title: GridBagLayoutの使用
 tags: [GridBagLayout, LayoutManager]
 author: aterai
+pubdate: 2003-09-15
+description: GridBagLayoutを使用して、左右の部品のサイズを固定、中央だけは水平方向に伸縮可になるよう配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-15
-
 ## 概要
 `GridBagLayout`を使用して、左右の部品のサイズを固定、中央だけは水平方向に伸縮可になるよう配置します。
 

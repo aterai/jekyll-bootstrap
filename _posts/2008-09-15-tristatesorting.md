@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更
 category: swing
 folder: TriStateSorting
+title: TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更
 tags: [JTable, TableRowSorter]
 author: aterai
+pubdate: 2008-09-15T17:36:51+09:00
+description: JDK 6で導入されたTableRowSorterのソートを、TableSorter.javaのようにヘッダクリックで昇順、降順、初期状態に切り替わるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-15
-
 ## 概要
 `JDK 6`で導入された`TableRowSorter`のソートを、`TableSorter.java`のようにヘッダクリックで昇順、降順、初期状態に切り替わるように設定します。
 
@@ -46,7 +45,6 @@ table.setRowSorter(sorter);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- スクリーンショットを更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-25 (木) 14:23:27
+- スクリーンショットを更新 -- *aterai* 2008-09-25 (木) 14:23:27
 
 <!-- dummy comment line for breaking list -->
-

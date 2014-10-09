@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListのセルをカーソル移動でロールオーバー
 category: swing
 folder: RollOverListener
+title: JListのセルをカーソル移動でロールオーバー
 tags: [JList, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2006-09-11T09:10:47+09:00
+description: JListでマウスカーソルの下にあるセルをハイライト表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-11
-
 ## 概要
 `JList`でマウスカーソルの下にあるセルをハイライト表示します。
 

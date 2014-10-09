@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MIDIファイルの演奏
 category: swing
 folder: MidiSystem
+title: MIDIファイルの演奏
 tags: [Sound, MidiSystem]
 author: aterai
+pubdate: 2006-01-09
+description: MidiSystemからSequencerを作成取得し、MIDIファイルを演奏します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-09
-
 ## 概要
 `MidiSystem`から`Sequencer`を作成取得し、`MIDI`ファイルを演奏します。
 

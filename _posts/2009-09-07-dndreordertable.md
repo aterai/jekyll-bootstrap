@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え
 category: swing
 folder: DnDReorderTable
+title: TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え
 tags: [JTable, TransferHandler, DragAndDrop]
 author: aterai
+pubdate: 2009-09-07T15:58:48+09:00
+description: JTableの行を複数選択し、ドラッグ＆ドロップで並べ替えを可能にするTransferHandlerを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-09-07
-
 ## 概要
 `JTable`の行を複数選択し、ドラッグ＆ドロップで並べ替えを可能にする`TransferHandler`を作成します。
 
@@ -39,9 +38,6 @@ table.setDragEnabled(true);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- テスト -- [aterai](http://terai.xrea.jp/aterai.html) 2009-09-26 (土) 02:19:20
-    - [JTableの行を別のJTableにドラッグして移動](http://terai.xrea.jp/Swing/DragRowsAnotherTable.html)に移動。
-- このサンプルでは、ソートされた状態での並べ替えは想定していない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-02-20 (木) 19:50:30
+- このサンプルでは、ソートされた状態での並べ替えは想定していない。 -- *aterai* 2014-02-20 (木) 19:50:30
 
 <!-- dummy comment line for breaking list -->
-

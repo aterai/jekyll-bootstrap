@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderでクリックした位置にノブをスライド
 category: swing
 folder: JumpToClickedPositionSlider
+title: JSliderでクリックした位置にノブをスライド
 tags: [JSlider, MouseMotionListener, MouseListener]
 author: aterai
+pubdate: 2009-07-27T11:47:16+09:00
+description: JSliderをマウスでクリックした場合、その位置にノブをスライド、続けてドラッグ可能にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27
-
 ## 概要
 `JSlider`をマウスでクリックした場合、その位置にノブをスライド、続けてドラッグ可能にします。
 
@@ -17,10 +16,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-27
 
 ## サンプルコード
 <pre class="prettyprint"><code>slider.setUI(new MetalSliderUI() {
-  protected TrackListener createTrackListener(JSlider slider) {
+  @Override protected TrackListener createTrackListener(JSlider slider) {
     return new TrackListener() {
       @Override public void mousePressed(MouseEvent e) {
-        JSlider slider = (JSlider)e.getSource();
+        JSlider slider = (JSlider) e.getSource();
         switch (slider.getOrientation()) {
           case JSlider.VERTICAL:
             slider.setValue(valueForYPosition(e.getY()));

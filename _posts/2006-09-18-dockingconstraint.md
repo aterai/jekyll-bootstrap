@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolBarのドッキングを上下のみに制限
 category: swing
 folder: DockingConstraint
+title: JToolBarのドッキングを上下のみに制限
 tags: [JToolBar, BorderLayout]
 author: aterai
+pubdate: 2006-09-18T18:01:15+09:00
+description: JToolBarのドッキングを上下のみに制限して、左右を無視するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-18
-
 ## 概要
 `JToolBar`のドッキングを上下のみに制限して、左右を無視するように設定します。
 

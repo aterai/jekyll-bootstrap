@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderにJCheckBoxを追加してセルの値を切り替える
 category: swing
 folder: TableHeaderCheckBox
+title: JTableHeaderにJCheckBoxを追加してセルの値を切り替える
 tags: [JTable, JTableHeader, JCheckBox, TableCellRenderer, MouseListener, Icon, JLabel]
 author: aterai
+pubdate: 2009-02-16T20:29:54+09:00
+description: JTableHeaderにJCheckBoxを追加して、同じ列のJCheckBoxで表示している値をすべて切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-16
-
 ## 概要
 `JTableHeader`に`JCheckBox`を追加して、同じ列の`JCheckBox`で表示している値をすべて切り替えます。
 
@@ -19,53 +18,67 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-16
 <pre class="prettyprint"><code>enum Status { SELECTED, DESELECTED, INDETERMINATE }
 class HeaderRenderer extends JCheckBox implements TableCellRenderer {
   private final JLabel label = new JLabel("Check All");
-  private int targetColumnIndex;
+  private final int targetColumnIndex;
   public HeaderRenderer(JTableHeader header, int index) {
-    super((String)null);
+    super((String) null);
     this.targetColumnIndex = index;
     setOpaque(false);
     setFont(header.getFont());
     header.addMouseListener(new MouseAdapter() {
       @Override public void mouseClicked(MouseEvent e) {
-        JTableHeader header = (JTableHeader)e.getSource();
+        JTableHeader header = (JTableHeader) e.getComponent();
         JTable table = header.getTable();
         TableColumnModel columnModel = table.getColumnModel();
         int vci = columnModel.getColumnIndexAtX(e.getX());
         int mci = table.convertColumnIndexToModel(vci);
-        if(mci == targetColumnIndex) {
+        if (mci == targetColumnIndex) {
           TableColumn column = columnModel.getColumn(vci);
           Object v = column.getHeaderValue();
-          boolean b = Status.DESELECTED.equals(v)?true:false;
+          boolean b = Status.DESELECTED.equals(v);
           TableModel m = table.getModel();
-          for(int i=0; i&lt;m.getRowCount(); i++) m.setValueAt(b, i, mci);
-          column.setHeaderValue(b?Status.SELECTED:Status.DESELECTED);
+          for (int i = 0; i &lt; m.getRowCount(); i++) {
+            m.setValueAt(b, i, mci);
+          }
+          column.setHeaderValue(b ? Status.SELECTED : Status.DESELECTED);
           //header.repaint();
         }
       }
     });
   }
   @Override public Component getTableCellRendererComponent(
-      JTable tbl, Object val, boolean isS, boolean hasF, int row, int col) {
+        JTable tbl, Object val, boolean isS, boolean hasF, int row, int col) {
     TableCellRenderer r = tbl.getTableHeader().getDefaultRenderer();
-    JLabel l = (JLabel)r.getTableCellRendererComponent(tbl,val,isS,hasF,row,col);
-    if(targetColumnIndex==tbl.convertColumnIndexToModel(col)) {
-      if(val instanceof Status) {
-        switch((Status)val) {
-          case SELECTED:    setSelected(true);  setEnabled(true);  break;
-          case DESELECTED:  setSelected(false); setEnabled(true);  break;
-          case INDETERMINATE: setSelected(true);  setEnabled(false); break;
+    JLabel l = (JLabel) r.getTableCellRendererComponent(tbl, val, isS, hasF, row, col);
+    if (targetColumnIndex == tbl.convertColumnIndexToModel(col)) {
+      if (val instanceof Status) {
+        switch ((Status) val) {
+        case SELECTED:
+          setSelected(true);
+          setEnabled(true);
+          break;
+        case DESELECTED:
+          setSelected(false);
+          setEnabled(true);
+          break;
+        case INDETERMINATE:
+          setSelected(true);
+          setEnabled(false);
+          break;
+        default:
+          throw new AssertionError("Unknown Status");
         }
-      }else{
-        setSelected(true); setEnabled(false);
+      } else {
+        setSelected(true);
+        setEnabled(false);
       }
       label.setIcon(new ComponentIcon(this));
       l.setIcon(new ComponentIcon(label));
-      l.setText(null); //XXX: Nimbus???
+      l.setText(null);
     }
     return l;
   }
 }
-class ComponentIcon implements Icon{
+class ComponentIcon implements Icon {
   private final JComponent cmp;
   public ComponentIcon(JComponent cmp) {
     this.cmp = cmp;
@@ -77,8 +90,7 @@ class ComponentIcon implements Icon{
     return cmp.getPreferredSize().height;
   }
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-    SwingUtilities.paintComponent(
-        g, cmp, (Container)c, x, y, getIconWidth(), getIconHeight());
+    SwingUtilities.paintComponent(g, cmp, c.getParent(), x, y, getIconWidth(), getIconHeight());
   }
 }
 </code></pre>
@@ -96,34 +108,46 @@ class ComponentIcon implements Icon{
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>model.addTableModelListener(new TableModelListener() {
+<pre class="prettyprint"><code>class HeaderCheckBoxHandler implements TableModelListener {
+  private final JTable table;
+  private final int targetColumnIndex;
+  public HeaderCheckBoxHandler(JTable table, int index) {
+    this.table = table;
+    this.targetColumnIndex = index;
+  }
   @Override public void tableChanged(TableModelEvent e) {
-    if(e.getType()==TableModelEvent.UPDATE &amp;&amp; e.getColumn()==targetColumnIndex) {
-      int vci = table.convertColumnIndexToView(targetColumnIndex);
-      TableColumn column = table.getColumnModel().getColumn(vci);
-      if(!Status.INDETERMINATE.equals(column.getHeaderValue())) {
-        column.setHeaderValue(Status.INDETERMINATE);
-      }else{
-        boolean selected = true, deselected = true;
-        TableModel m = table.getModel();
-        for(int i=0; i&lt;m.getRowCount(); i++) {
-          Boolean b = (Boolean)m.getValueAt(i, targetColumnIndex);
-          selected &amp;= b; deselected &amp;= !b;
-          if(selected==deselected) return;
+    int vci = table.convertColumnIndexToView(targetColumnIndex);
+    TableColumn column = table.getColumnModel().getColumn(vci);
+    Object status = column.getHeaderValue();
+    TableModel m = table.getModel();
+    if (e.getType() == TableModelEvent.UPDATE &amp;&amp; e.getColumn() == targetColumnIndex) {
+      //System.out.println("UPDATE");
+      if (Status.INDETERMINATE.equals(status)) {
+        boolean selected = true;
+        boolean deselected = true;
+        for (int i = 0; i &lt; m.getRowCount(); i++) {
+          Boolean b = (Boolean) m.getValueAt(i, targetColumnIndex);
+          selected &amp;= b;
+          deselected &amp;= !b;
+          if (selected == deselected) {
+            return;
+          }
         }
-        if(selected) {
-          column.setHeaderValue(Status.SELECTED);
-        }else if(deselected) {
+        if (deselected) {
           column.setHeaderValue(Status.DESELECTED);
-        }else{
+        } else if (selected) {
+          column.setHeaderValue(Status.SELECTED);
+        } else {
           return;
         }
+      } else {
+        column.setHeaderValue(Status.INDETERMINATE);
       }
-      JTableHeader h = table.getTableHeader();
-      h.repaint(h.getHeaderRect(vci));
     }
+    JTableHeader h = table.getTableHeader();
+    h.repaint(h.getHeaderRect(vci));
   }
-});
+}
 </code></pre>
 
 ## 参考リンク
@@ -134,9 +158,8 @@ class ComponentIcon implements Icon{
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `LookAndFeel`を`Nimbus`に変更したとき、`JTableHeader`の高さがおかしい？ -- [aterai](http://terai.xrea.jp/aterai.html) 2011-05-30 (月) 22:13:05
-    - レンダラー中で`label.setText(null);`や、`JLabel`を挟んで二重に`ImageIcon`を作成するなどして回避中。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-02 (金) 16:01:51
-- [Java Swing Tips: JTableHeader CheckBox](http://java-swing-tips.blogspot.com/2009/02/jtableheader-checkbox.html)で、ヘッダクリックで全選択した後、テーブル中のチェックを外すと、ヘッダのチェックボックスもチェック外した方がよくないか？との指摘を頂いたので、(`Gmail`などのチェックボックス風の)不定状態？を導入しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-06-14 (火) 14:44:19
+- `LookAndFeel`を`Nimbus`に変更したとき、`JTableHeader`の高さがおかしい？ -- *aterai* 2011-05-30 (月) 22:13:05
+    - レンダラー中で`label.setText(null);`や、`JLabel`を挟んで二重に`ImageIcon`を作成するなどして回避中。 -- *aterai* 2012-03-02 (金) 16:01:51
+- [Java Swing Tips: JTableHeader CheckBox](http://java-swing-tips.blogspot.com/2009/02/jtableheader-checkbox.html)で、ヘッダクリックで全選択した後、テーブル中のチェックを外すと、ヘッダのチェックボックスもチェック外した方がよくないか？との指摘を頂いたので、(`Gmail`などのチェックボックス風の)不定状態？を導入しました。 -- *aterai* 2011-06-14 (火) 14:44:19
 
 <!-- dummy comment line for breaking list -->
-

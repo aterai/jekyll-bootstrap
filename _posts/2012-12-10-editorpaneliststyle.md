@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneのStyleSheetを使ってlist bulletを画像に変更
 category: swing
 folder: EditorPaneListStyle
+title: JEditorPaneのStyleSheetを使ってlist bulletを画像に変更
 tags: [JEditorPane, HTMLEditorKit, StyleSheet]
 author: aterai
+pubdate: 2012-12-10T00:03:24+09:00
+description: JEditorPaneのHTMLEditorKitからStyleSheetを取得し、list-style-imageを使ってList bulletを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-10
-
 ## 概要
 `JEditorPane`の`HTMLEditorKit`から`StyleSheet`を取得し、`list-style-image`を使って`List bullet`を変更します。
 

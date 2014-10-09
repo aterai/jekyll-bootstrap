@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MemoryImageSourceで配列から画像を生成
 category: swing
 folder: MemoryImageSource
+title: MemoryImageSourceで配列から画像を生成
 tags: [BufferedImage, MouseListener, MouseMotionListener, MemoryImageSource]
 author: aterai
+pubdate: 2010-06-07T15:20:45+09:00
+description: マウスのドラッグに応じて線を描画、消しゴムで消去する機能を実装します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-06-07
-
 ## 概要
 マウスのドラッグに応じて線を描画、消しゴムで消去する機能を実装します。
 

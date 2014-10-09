@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Windowを開いたときのフォーカスを指定
 category: swing
 folder: DefaultFocus
+title: Windowを開いたときのフォーカスを指定
 tags: [JFrame, JDialog, Focus, FocusTraversalPolicy, WindowListener, ComponentListener, KeyboardFocusManager]
 author: aterai
+pubdate: 2004-10-11
+description: JFrameやJDialogなどのWindowを開いたときに、デフォルトでフォーカスを持つコンポーネントを指定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-10-11
-
 ## 概要
 `JFrame`や`JDialog`などの`Window`を開いたときに、デフォルトでフォーカスを持つコンポーネントを指定します。
 
@@ -94,12 +93,11 @@ kfm.addPropertyChangeListener(new PropertyChangeListener() {
 ## コメント
 - `JFrame#getRootPane()#setDefaultButton()`は使用方法がよくわからない… -- [aterai](http://terai.xrea.jp/aterai.html)
 - `setDefaultButton`って、<kbd>Enter</kbd>したときに押されたとみなすボタンだったかな…… --  2004-10-14 (木) 23:21:53
-    - ありがとうございます。おかげでようやく理解できました。`JTextField`などにフォーカスがある状態で<kbd>Enter</kbd>キーを入力すると`setDefaultButton`したボタンが押されるのですね。 -- [aterai](http://terai.xrea.jp/aterai.html) 2004-10-18 (月) 12:14:15
-    - というわけで、`frame.getRootPane().setDefaultButton(eb);`を追加してみました。上記のサンプルでは、中央の`JTextField`にフォーカスがある状態で、<kbd>Enter</kbd>キーを押すと、`EAST`ボタンが押されたことになります。 -- [aterai](http://terai.xrea.jp/aterai.html) 2004-10-18 (月) 12:20:58
-    - ~~いつか、`DefaultButton`のページを別に作成すること。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-07 (水) 19:19:44~~
-    - [DefaultButtonの設定](http://terai.xrea.jp/Swing/DefaultButton.html)に移動。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-12 (月) 14:40:15
-- `HierarchyListener`を使用する場合のテスト -- [aterai](http://terai.xrea.jp/aterai.html) 2009-03-19 (木) 14:51:30
+    - ありがとうございます。おかげでようやく理解できました。`JTextField`などにフォーカスがある状態で<kbd>Enter</kbd>キーを入力すると`setDefaultButton`したボタンが押されるのですね。 -- *aterai* 2004-10-18 (月) 12:14:15
+    - というわけで、`frame.getRootPane().setDefaultButton(eb);`を追加してみました。上記のサンプルでは、中央の`JTextField`にフォーカスがある状態で、<kbd>Enter</kbd>キーを押すと、`EAST`ボタンが押されたことになります。 -- *aterai* 2004-10-18 (月) 12:20:58
+    - ~~いつか、`DefaultButton`のページを別に作成すること。 -- *aterai* 2008-05-07 (水) 19:19:44~~
+    - [DefaultButtonの設定](http://terai.xrea.jp/Swing/DefaultButton.html)に移動。 -- *aterai* 2008-05-12 (月) 14:40:15
+- `HierarchyListener`を使用する場合のテスト -- *aterai* 2009-03-19 (木) 14:51:30
     - [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)に移動
 
 <!-- dummy comment line for breaking list -->
-

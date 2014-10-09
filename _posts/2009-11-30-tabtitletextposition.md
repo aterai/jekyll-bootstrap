@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブアイコンとタイトルの位置
 category: swing
 folder: TabTitleTextPosition
+title: JTabbedPaneのタブアイコンとタイトルの位置
 tags: [JTabbedPane, Icon, JLabel]
 author: aterai
+pubdate: 2009-11-30T13:18:03+09:00
+description: JTabbedPaneのタブ中に配置するタイトルとアイコンの位置を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-30
-
 ## 概要
 `JTabbedPane`のタブ中に配置するタイトルとアイコンの位置を変更します。
 

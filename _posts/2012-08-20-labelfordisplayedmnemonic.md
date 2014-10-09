@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelに設定したニーモニックでフォーカス移動
 category: swing
 folder: LabelForDisplayedMnemonic
+title: JLabelに設定したニーモニックでフォーカス移動
 tags: [JLabel, JTextField, Mnemonic]
 author: aterai
+pubdate: 2012-08-20T15:34:19+09:00
+description: JLabelにニーモニックを設定し、これに関連付けしたJTextFieldへのフォーカス移動を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-20
-
 ## 概要
 `JLabel`にニーモニックを設定し、これに関連付けした`JTextField`へのフォーカス移動を行います。
 

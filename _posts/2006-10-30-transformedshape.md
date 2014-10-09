@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Fontを回転する
 category: swing
 folder: TransformedShape
+title: Fontを回転する
 tags: [Font, Shape, TextLayout, Animation, AffineTransform]
 author: aterai
+pubdate: 2006-10-30T12:57:51+09:00
+description: 文字のアウトラインを取得して、これを回転してみます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-30
-
 ## 概要
 文字のアウトラインを取得して、これを回転してみます。
 

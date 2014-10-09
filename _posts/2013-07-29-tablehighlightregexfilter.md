@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの検索結果をRowFilterとHighlighterで強調表示する
 category: swing
 folder: TableHighlightRegexFilter
+title: JTableの検索結果をRowFilterとHighlighterで強調表示する
 tags: [JTable, RowFilter, TableRowSorter, Highlighter, TableCellRenderer, JTextField, Pattern, Matcher]
 author: aterai
+pubdate: 2013-07-29T00:24:19+09:00
+description: JTableで正規表現による検索結果をRowFilterとHighlighterを使用して表現します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-29
-
 ## 概要
 `JTable`で正規表現による検索結果を`RowFilter`と`Highlighter`を使用して表現します。
 

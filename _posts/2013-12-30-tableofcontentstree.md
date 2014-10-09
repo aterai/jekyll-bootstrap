@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeで目次を作成する
 category: swing
 folder: TableOfContentsTree
+title: JTreeで目次を作成する
 tags: [JTree, DefaultTreeCellRenderer, BasicStroke]
 author: aterai
+pubdate: 2013-12-30T00:12:31+09:00
+description: JTreeのノードにリーダーとページ番号を追加表示して目次を作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-30
-
 ## 概要
 `JTree`のノードにリーダーとページ番号を追加表示して目次を作成します。
 

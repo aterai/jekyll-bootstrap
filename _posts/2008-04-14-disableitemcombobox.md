@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのアイテムを選択不可にする
 category: swing
 folder: DisableItemComboBox
+title: JComboBoxのアイテムを選択不可にする
 tags: [JComboBox, ListCellRenderer, ActionMap, InputMap]
 author: aterai
+pubdate: 2008-04-14T13:34:30+09:00
+description: JComboBoxのドロップダウンリストで、指定したアイテムを選択不可にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-14
-
 ## 概要
 `JComboBox`のドロップダウンリストで、指定したアイテムを選択不可にします。
 

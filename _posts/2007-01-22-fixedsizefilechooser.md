@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserのリサイズなどを制限
 category: swing
 folder: FixedSizeFileChooser
+title: JFileChooserのリサイズなどを制限
 tags: [JFileChooser, JDialog]
 author: aterai
+pubdate: 2007-01-22T13:27:16+09:00
+description: JFileChooserのリサイズや、最小サイズ以下へのサイズ変更を禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-22
-
 ## 概要
 `JFileChooser`のリサイズや、最小サイズ以下へのサイズ変更を禁止します。
 

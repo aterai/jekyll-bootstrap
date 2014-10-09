@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JButtonなどの高さを変更せずに幅を指定
 category: swing
 folder: ButtonWidth
+title: JButtonなどの高さを変更せずに幅を指定
 tags: [JButton, LayoutManager, BoxLayout, SpringLayout, GridLayout]
 author: aterai
+pubdate: 2004-11-29
+description: 高さはデフォルトのまま幅だけを指定して、JButton、JComboBox、JTextFieldなどのサイズを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-29
-
 ## 概要
 高さはデフォルトのまま幅だけを指定して、`JButton`、`JComboBox`、`JTextField`などのサイズを変更します。
 
@@ -127,8 +126,7 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `SpringLayout`などを使って幅を固定する方法を追加(更新日時は忘れました)。スクリーンショットは未更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-04-14 (日) 00:36:03
-- `GridLayout`+`Box`のサンプルを追加、`LookAndFeel`を実行中に変更する場合の注意点を追加、スクリーンショットを更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-10-22 (火) 17:33:58
+- `SpringLayout`などを使って幅を固定する方法を追加(更新日時は忘れました)。スクリーンショットは未更新。 -- *aterai* 2013-04-14 (日) 00:36:03
+- `GridLayout`+`Box`のサンプルを追加、`LookAndFeel`を実行中に変更する場合の注意点を追加、スクリーンショットを更新。 -- *aterai* 2013-10-22 (火) 17:33:58
 
 <!-- dummy comment line for breaking list -->
-

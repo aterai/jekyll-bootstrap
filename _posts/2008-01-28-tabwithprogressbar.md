@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブにJProgressBarを表示
 category: swing
 folder: TabWithProgressBar
+title: JTabbedPaneのタブにJProgressBarを表示
 tags: [JTabbedPane, JProgressBar, SwingWorker]
 author: aterai
+pubdate: 2008-01-28T12:53:45+09:00
+description: JTabbedPaneのタブにJProgressBarを配置して、進捗を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-28
-
 ## 概要
 `JTabbedPane`のタブに`JProgressBar`を配置して、進捗を表示します。
 
@@ -20,23 +19,23 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-28
 public void addTab(String title, final Component content) {
   super.addTab(title, new JLabel("Loading..."));
   final JProgressBar bar = new JProgressBar();
-  final int currentIndex = getTabCount()-1;
+  final int currentIndex = getTabCount() - 1;
   final JLabel label = new JLabel(title);
   Dimension dim = label.getPreferredSize();
   int w = Math.max(80, dim.width);
   label.setPreferredSize(new Dimension(w, dim.height));
   Insets tabInsets = UIManager.getInsets("TabbedPane.tabInsets");
-  bar.setPreferredSize(new Dimension(w, dim.height-tabInsets.top-1));
+  bar.setPreferredSize(new Dimension(w, dim.height - tabInsets.top - 1));
   setTabComponentAt(currentIndex, bar);
   SwingWorker worker = new SwingWorker() {
     @Override public Object doInBackground() {
       int current = 0;
       int lengthOfTask = 180;
-      while(current&lt;lengthOfTask) {
-        if(!bar.isDisplayable()) return "NotDisplayable";
+      while (current &lt; lengthOfTask) {
+        if (!bar.isDisplayable()) return "NotDisplayable";
         try {
           Thread.sleep(25);
-        }catch(InterruptedException ie) {
+        } catch (InterruptedException ie) {
           return "Interrupted";
         }
         current++;

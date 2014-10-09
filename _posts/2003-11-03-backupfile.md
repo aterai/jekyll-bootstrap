@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Backup Fileを番号付きで作成
 category: swing
 folder: BackupFile
+title: Backup Fileを番号付きで作成
 tags: [File]
 author: aterai
+pubdate: 2003-11-03
+description: [[xyzzy]]風の番号付きバックアップファイルを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-03
-
 ## 概要
 [xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップファイルを作成します。
 

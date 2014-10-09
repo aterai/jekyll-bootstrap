@@ -1,15 +1,14 @@
 ---
 layout: post
-title: CellEditorのBorderを変更
 category: swing
 folder: CellEditorBorder
+title: CellEditorのBorderを変更
 tags: [JTable, TableCellEditor, Border]
 author: aterai
+pubdate: 2005-08-22T08:08:31+09:00
+description: JTableのCellEditorにBorderを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-22
-
 ## 概要
 `JTable`の`CellEditor`に`Border`を設定します。
 

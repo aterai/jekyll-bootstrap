@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderをクリックしてそのColumnのセルを全選択
 category: swing
 folder: ColumnSelection
+title: JTableHeaderをクリックしてそのColumnのセルを全選択
 tags: [JTable, JTableHeader, MouseListener]
 author: aterai
+pubdate: 2005-04-04T03:22:43+09:00
+description: JTableHeaderをクリックしたとき、そのColumn以下にあるセルを全選択します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-04
-
 ## 概要
 `JTableHeader`をクリックしたとき、その`Column`以下にあるセルを全選択します。
 
@@ -44,7 +43,6 @@ header.addMouseListener(new MouseAdapter() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: `2008-03-11`に[JTableのセルにあるフォーカスを解除](http://terai.xrea.jp/Swing/AnchorSelection.html)から移動でこのページを作成。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-02-20 (水) 15:21:27
+- メモ: `2008-03-11`に[JTableのセルにあるフォーカスを解除](http://terai.xrea.jp/Swing/AnchorSelection.html)から移動でこのページを作成。 -- *aterai* 2013-02-20 (水) 15:21:27
 
 <!-- dummy comment line for breaking list -->
-

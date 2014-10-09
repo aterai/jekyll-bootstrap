@@ -1,15 +1,14 @@
 ---
 layout: post
-title: AffineTransformOpで画像を反転する
 category: swing
 folder: AffineTransformOp
+title: AffineTransformOpで画像を反転する
 tags: [AffineTransformOp, BufferedImage, AffineTransform]
 author: aterai
+pubdate: 2010-01-11T23:59:17+09:00
+description: AffineTransformOpなどを使って、画像の上下反転、左右反転を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-01-11
-
 ## 概要
 `AffineTransformOp`などを使って、画像の上下反転、左右反転を行います。
 

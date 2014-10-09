@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuBarの背景に画像を表示する
 category: swing
 folder: MenuBarBackground
+title: JMenuBarの背景に画像を表示する
 tags: [JMenuBar, JMenu, JMenuItem, TexturePaint]
 author: aterai
+pubdate: 2009-08-10T15:27:32+09:00
+description: JMenuBarの背景に画像を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-10
-
 ## 概要
 `JMenuBar`の背景に画像を表示します。
 
@@ -146,9 +145,8 @@ public class MenuBarRootPaneTest {
 </code></pre>
 
 ## コメント
-- 選択状態を半透明にするテスト -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-09 (土) 23:08:42
-    - `Windows7`での`WindowsLookAndFeel`でうまくいかない場合があるようなので、すこし修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-26 (月) 21:13:47
+- 選択状態を半透明にするテスト -- *aterai* 2010-01-09 (土) 23:08:42
+    - `Windows7`での`WindowsLookAndFeel`でうまくいかない場合があるようなので、すこし修正。 -- *aterai* 2011-09-26 (月) 21:13:47
     - [JRootPaneの背景として画像を表示](http://terai.xrea.jp/Swing/RootPaneBackground.html)に移動
 
 <!-- dummy comment line for breaking list -->
-

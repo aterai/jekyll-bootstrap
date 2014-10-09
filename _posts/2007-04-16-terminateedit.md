@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルの編集をコミット
 category: swing
 folder: TerminateEdit
+title: JTableのセルの編集をコミット
 tags: [JTable, Focus, JTableHeader, TableCellEditor]
 author: aterai
+pubdate: 2007-04-16T16:28:55+09:00
+description: セルの編集中、フォーカスが別のコンポーネントに移動した場合、その編集を確定する方法をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-04-16
-
 ## 概要
 セルの編集中、フォーカスが別のコンポーネントに移動した場合、その編集を確定する方法をテストします。
 
@@ -116,11 +115,10 @@ frame.addWindowStateListener(new WindowStateListener() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- どわー。助かりましたっ！ -- [shun](http://terai.xrea.jp/shun.html) 2007-05-31 (木) 19:51:20
-    - お役に立てて何よりです(自分もこの辺りよく混乱します)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-06-01 (金) 17:30:34
-- `columnMarginChanged`、役に立ちました。ありがとうございます。 -- [はじめ](http://terai.xrea.jp/はじめ.html) 2008-04-04 (金) 00:35:14
-    - どうもです。`JTable#columnMarginChanged`メソッドの`JavaDoc`の説明では、"If a cell is being edited, then editing is stopped and the cell is redrawn."となっているので、`JTable#editingStopped`メソッドを使っている(現在の文字列が新しい値となる)のかなと思ったら、実際は、`JTable#editingCanceled`メソッド(=`JTable#removeEditor`メソッド)でキャンセルしている(編集内容は適用されない)ので、ちょっと混乱してしまいます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-04 (金) 14:11:01
-    - `1.7.0`では、[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950) で、修正済みになっているのですが、`getCellEditor().cancelCellEditing()`を使うように変更されているので、編集が消えてしまうのは同じような・・・。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-23 (木) 14:59:49
+- どわー。助かりましたっ！ -- *shun* 2007-05-31 (木) 19:51:20
+    - お役に立てて何よりです(自分もこの辺りよく混乱します)。 -- *aterai* 2007-06-01 (金) 17:30:34
+- `columnMarginChanged`、役に立ちました。ありがとうございます。 -- *はじめ* 2008-04-04 (金) 00:35:14
+    - どうもです。`JTable#columnMarginChanged`メソッドの`JavaDoc`の説明では、"If a cell is being edited, then editing is stopped and the cell is redrawn."となっているので、`JTable#editingStopped`メソッドを使っている(現在の文字列が新しい値となる)のかなと思ったら、実際は、`JTable#editingCanceled`メソッド(=`JTable#removeEditor`メソッド)でキャンセルしている(編集内容は適用されない)ので、ちょっと混乱してしまいます。 -- *aterai* 2008-04-04 (金) 14:11:01
+    - `1.7.0`では、[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950) で、修正済みになっているのですが、`getCellEditor().cancelCellEditing()`を使うように変更されているので、編集が消えてしまうのは同じような・・・。 -- *aterai* 2012-02-23 (木) 14:59:49
 
 <!-- dummy comment line for breaking list -->
-

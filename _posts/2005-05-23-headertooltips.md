@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderのTooltipsを列ごとに変更
 category: swing
 folder: HeaderTooltips
+title: JTableHeaderのTooltipsを列ごとに変更
 tags: [JTable, JTableHeader, JToolTip]
 author: aterai
+pubdate: 2005-05-23
+description: JTableHeaderのTooltipsが、カーソルのある列の内容などを表示するようにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-05-23
-
 ## 概要
 `JTableHeader`の`Tooltips`が、カーソルのある列の内容などを表示するようにします。
 
@@ -36,8 +35,7 @@ table.setTableHeader(header);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 文字列がクリップされている場合だけ、`JToolTip`を表示する -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-07 (水) 01:00:19
-    - [JTableのセルがクリップされている場合のみJToolTipを表示](http://terai.xrea.jp/Swing/ClippedCellTooltips.html)に移動 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-12 (月) 17:43:41
+- 文字列がクリップされている場合だけ、`JToolTip`を表示する -- *aterai* 2009-10-07 (水) 01:00:19
+    - [JTableのセルがクリップされている場合のみJToolTipを表示](http://terai.xrea.jp/Swing/ClippedCellTooltips.html)に移動 -- *aterai* 2009-10-12 (月) 17:43:41
 
 <!-- dummy comment line for breaking list -->
-

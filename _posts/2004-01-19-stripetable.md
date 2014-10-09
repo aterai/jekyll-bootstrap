@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableCellRendererでセルの背景色を変更
 category: swing
 folder: StripeTable
+title: TableCellRendererでセルの背景色を変更
 tags: [JTable, TableCellRenderer, UIManager]
 author: aterai
+pubdate: 2004-01-19
+description: TableCellRendererを継承するレンダラーを作ってテーブルのセルを修飾します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-19
-
 ## 概要
 `TableCellRenderer`を継承するレンダラーを作ってテーブルのセルを修飾します。
 
@@ -124,9 +123,8 @@ class TableAlternateRowColorTest {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JTable#prepareRenderer`メソッドを使用する場合のサンプルを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-04-04 (水) 19:41:37
-- メモ:[JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)。これおもしろいです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-12-10 (月) 17:25:47
-- ↑ありがとうございます．terai様のサイトは情報が充実していてすばらしいです．参考にさせていただきます． -- [KrdLab](http://terai.xrea.jp/KrdLab.html) 2008-01-27 (日) 14:27:53
+- `JTable#prepareRenderer`メソッドを使用する場合のサンプルを修正。 -- *aterai* 2007-04-04 (水) 19:41:37
+- メモ:[JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)。これおもしろいです。 -- *aterai* 2007-12-10 (月) 17:25:47
+- ↑ありがとうございます．terai様のサイトは情報が充実していてすばらしいです．参考にさせていただきます． -- *KrdLab* 2008-01-27 (日) 14:27:53
 
 <!-- dummy comment line for breaking list -->
-

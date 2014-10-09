@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuItemのAccelerator表示を右揃えにする
 category: swing
 folder: MenuItemAcceleratorAlignment
+title: JMenuItemのAccelerator表示を右揃えにする
 tags: [JMenuItem, Locale, KeyEvent, ResourceBundle, Alignment]
 author: aterai
+pubdate: 2013-09-30T05:06:53+09:00
+description: JMenuItemのAccelerator表示を右揃えに変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-09-30
-
 ## 概要
 `JMenuItem`の`Accelerator`表示を右揃えに変更します。
 

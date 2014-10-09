@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MouseWheelEventを親のJScrollPaneに転送する
 category: swing
 folder: WheelOverNestedScrollPane
+title: MouseWheelEventを親のJScrollPaneに転送する
 tags: [JScrollPane, JLayer, MouseWheelEvent]
 author: aterai
+pubdate: 2014-08-18T00:11:00+09:00
+description: JLayerを使って、ネストするJScrollPaneへのMouseWheelEventを転送し、スクロールが継続するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-08-18
-
 ## 概要
 `JLayer`を使って、ネストする`JScrollPane`への`MouseWheelEvent`を転送し、スクロールが継続するように設定します。
 

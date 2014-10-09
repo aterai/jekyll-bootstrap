@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableで行を選択
 category: swing
 folder: RowSelection
+title: JTableで行を選択
 tags: [JTable, ListSelectionListener]
 author: aterai
+pubdate: 2004-05-24
+description: JTableで、行を選択した場合の動作をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-24
-
 ## 概要
 `JTable`で、行を選択した場合の動作をテストします。
 
@@ -40,9 +39,8 @@ private String getInfo() {
 `ListSelectionEvent#getValueIsAdjusting()`メソッドでイベントが重複処理を起こさないように制御しています。
 
 ## コメント
-- ありがとう。助かります。 -- [ごん](http://terai.xrea.jp/ごん.html) 2009-10-16 (金) 19:37:37
-    - どうもです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-17 (土) 00:09:01
-- どうもです。  -- [ごん?](http://terai.xrea.jp/ごん?.html) 2011-08-02 (火) 15:31:26
+- ありがとう。助かります。 -- *ごん* 2009-10-16 (金) 19:37:37
+    - どうもです。 -- *aterai* 2009-10-17 (土) 00:09:01
+- どうもです。  -- *ごん?* 2011-08-02 (火) 15:31:26
 
 <!-- dummy comment line for breaking list -->
-

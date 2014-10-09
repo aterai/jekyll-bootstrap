@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのHTML形式コピーをカスタマイズする
 category: swing
 folder: HtmlTableTransferHandler
+title: JTableのHTML形式コピーをカスタマイズする
 tags: [JTable, TransferHandler, Html]
 author: aterai
+pubdate: 2014-09-01T00:14:35+09:00
+description: JTableのセルを選択してクリップボードにHTMLテキストをコピーするとき、そのセルのクラスに応じて生成するタグを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-01
-
 ## 概要
 `JTable`のセルを選択してクリップボードに`HTML`テキストをコピーするとき、そのセルのクラスに応じて生成するタグを変更します。
 
@@ -103,7 +102,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-01
 ## 解説
 - 上: デフォルトの`BasicTableUI.TableTransferHandler`を使用
 - 下: `HtmlTableTransferHandler`を設定
-    - `TransferHandler#createTransferable(JComponent)`をオーバーライドしてクリップボードに渡す`text/html`なテキストを独自に作成(`text/plain`は`BasicTableUI.TableTransferHandler`のコピーをそのまま使用)
+    - `TransferHandler#createTransferable(JComponent)`をオーバーライドしてクリップボードに渡す`text/html`なテキストを独自に作成
+        - `text/plain`は`BasicTableUI.TableTransferHandler`のコピーをそのまま使用
         - `<table>`タグに属性`border='1'`を追加
     - セルのクラスに応じたタグを生成
         - `Date`: `<time>...</time>`で囲む

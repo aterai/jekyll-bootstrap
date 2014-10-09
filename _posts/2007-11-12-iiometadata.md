@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPEGファイルのコメントを取り出す
 category: swing
 folder: IIOMetadata
+title: JPEGファイルのコメントを取り出す
 tags: [JTree, ImageIO, ImageReader, IIOMetadata]
 author: aterai
+pubdate: 2007-11-12T12:24:17+09:00
+description: JPEGファイルからコメントなどのメタデータ(XML)を取り出してJTreeで表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-12
-
 ## 概要
 `JPEG`ファイルからコメントなどのメタデータ(`XML`)を取り出して`JTree`で表示します。
 

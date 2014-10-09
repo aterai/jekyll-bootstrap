@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarの進捗文字列の字揃えを変更する
 category: swing
 folder: ProgressStringAlignment
+title: JProgressBarの進捗文字列の字揃えを変更する
 tags: [JProgressBar, JLabel, BorderLayout, Alignment]
 author: aterai
+pubdate: 2012-04-02T16:48:11+09:00
+description: JProgressBarの進捗文字列をJLabelにして、字揃えなどを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-02
-
 ## 概要
 `JProgressBar`の進捗文字列を`JLabel`にして、字揃えなどを変更します。
 

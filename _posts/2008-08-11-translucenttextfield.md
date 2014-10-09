@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldの背景色を半透明にする
 category: swing
 folder: TranslucentTextField
+title: JTextFieldの背景色を半透明にする
 tags: [JTextField, Translucent]
 author: aterai
+pubdate: 2008-08-11T12:27:41+09:00
+description: JTextFieldの背景色を半透明にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-11
-
 ## 概要
 `JTextField`の背景色を半透明にします。
 

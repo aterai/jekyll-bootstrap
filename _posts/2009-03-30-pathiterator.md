@@ -1,15 +1,14 @@
 ---
 layout: post
-title: PathIteratorからSVGを生成
 category: swing
 folder: PathIterator
+title: PathIteratorからSVGを生成
 tags: [Icon, Shape, PathIterator]
 author: aterai
+pubdate: 2009-03-30T14:13:46+09:00
+description: ShapeからPathIteratorを取得し、このPathをSVGに変換します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30
-
 ## 概要
 `Shape`から`PathIterator`を取得し、この`Path`を`SVG`に変換します。
 
@@ -62,12 +61,11 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-30
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- サンプルコードにはコードすべて表示（記入）した方がいいと思います。 -- [名無し](http://terai.xrea.jp/名無し.html) 2012-03-27 (火) 21:48:06
-- 追記：そうじゃなくてはわかりにくいので。例えばJavaDriveさんのように -- [名無し](http://terai.xrea.jp/名無し.html) 2012-03-27 (火) 21:48:48
-    - ご指摘ありがとうございます。現状、大きめのサンプルではコードを丸ごと貼り付けるとページが長くなる、小さいサンプルでもあまり意味のないコードが毎回でてくる…、などの理由でコードの一部(`Tips for the Code Snippets`)だけ表示するようにしています。コード全部を見たい場合は、`src.zip`を展開して好みのエディタで開くか、リポジトリ(`svn repository`)をたどってくださいという姿勢なんですが、自分でもたまにリポジトリをクリックしていくのが面倒なことがあるので、一気に`*.java`にジャンプできるようなリンクでも追加できないか検討してみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-28 (水) 15:58:59
-- `<pre>`の右上の`view plain`リンクをクリックすると`svn`リポジトリのソースコードを表示するようにしてみました。`MainPanel.java`固定で、`HogeHogeUI.java`などにはリンクしていませんが、面倒なので多分このままです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-14 (木) 21:25:49
+- サンプルコードにはコードすべて表示（記入）した方がいいと思います。 -- *名無し* 2012-03-27 (火) 21:48:06
+- 追記：そうじゃなくてはわかりにくいので。例えばJavaDriveさんのように -- *名無し* 2012-03-27 (火) 21:48:48
+    - ご指摘ありがとうございます。現状、大きめのサンプルではコードを丸ごと貼り付けるとページが長くなる、小さいサンプルでもあまり意味のないコードが毎回でてくる…、などの理由でコードの一部(`Tips for the Code Snippets`)だけ表示するようにしています。コード全部を見たい場合は、`src.zip`を展開して好みのエディタで開くか、リポジトリ(`svn repository`)をたどってくださいという姿勢なんですが、自分でもたまにリポジトリをクリックしていくのが面倒なことがあるので、一気に`*.java`にジャンプできるようなリンクでも追加できないか検討してみます。 -- *aterai* 2012-03-28 (水) 15:58:59
+- `<pre>`の右上の`view plain`リンクをクリックすると`svn`リポジトリのソースコードを表示するようにしてみました。`MainPanel.java`固定で、`HogeHogeUI.java`などにはリンクしていませんが、面倒なので多分このままです。 -- *aterai* 2012-06-14 (木) 21:25:49
 - 現状のままで良いかと。主要な部分だけ見えれば参考になりますしおすし --  2013-02-08 (金) 09:55:45
-    - おすし。もうすこし工夫すれば、多少見やすく(使いやすく)なりそうな気はするのですが、上にも書いたようにしばらくはこのままです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-02-09 (土) 00:00:18
+    - おすし。もうすこし工夫すれば、多少見やすく(使いやすく)なりそうな気はするのですが、上にも書いたようにしばらくはこのままです。 -- *aterai* 2013-02-09 (土) 00:00:18
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセル内に二行だけ表示
 category: swing
 folder: TwoRowsCellRenderer
+title: JTableのセル内に二行だけ表示
 tags: [JTable, TableCellRenderer, JLabel, JPanel]
 author: aterai
+pubdate: 2010-12-20T15:44:39+09:00
+description: JTableのセル内に文字列を二行分だけ表示し、あふれる場合は...で省略します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-20
-
 ## 概要
 `JTable`のセル内に文字列を二行分だけ表示し、あふれる場合は`...`で省略します。
 

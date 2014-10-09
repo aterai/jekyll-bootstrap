@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeで葉ノードが存在しない親ノードの描画を変更する
 category: swing
 folder: AsksAllowsChildren
+title: JTreeで葉ノードが存在しない親ノードの描画を変更する
 tags: [JTree, DefaultTreeModel, DefaultMutableTreeNode]
 author: aterai
+pubdate: 2014-09-22T00:06:58+09:00
+description: JTreeの親ノードに子として葉ノードがひとつも存在しない場合でも、フォルダアイコン表示になるよう設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-22
-
 ## 概要
 `JTree`の親ノードに子として葉ノードがひとつも存在しない場合でも、フォルダアイコン表示になるよう設定します。
 

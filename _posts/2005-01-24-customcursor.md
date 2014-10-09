@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Cursorオブジェクトの生成
 category: swing
 folder: CustomCursor
+title: Cursorオブジェクトの生成
 tags: [Cursor, BufferedImage, ImageIcon]
 author: aterai
+pubdate: 2005-01-24
+description: 新しいカスタムカーソルオブジェクトを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-24
-
 ## 概要
 新しいカスタムカーソルオブジェクトを作成します。
 

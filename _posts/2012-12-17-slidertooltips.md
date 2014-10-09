@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderのノブをドラッグ中にToolTipで値を表示
 category: swing
 folder: SliderToolTips
+title: JSliderのノブをドラッグ中にToolTipで値を表示
 tags: [JSlider, JWindow, JToolTip]
 author: aterai
+pubdate: 2012-12-17T00:06:15+09:00
+description: JSliderのノブをドラッグ中にToolTipでその現在値を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-17
-
 ## 概要
 `JSlider`のノブをドラッグ中に`ToolTip`でその現在値を表示します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPanelをフォーカストラバーサルサイクルのルートにする
 category: swing
 folder: FocusCycleRoot
+title: JPanelをフォーカストラバーサルサイクルのルートにする
 tags: [JPanel, Focus]
 author: aterai
+pubdate: 2010-07-19T23:07:24+09:00
+description: JPanelがフォーカストラバーサルサイクルのルートになるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-19
-
 ## 概要
 `JPanel`がフォーカストラバーサルサイクルのルートになるように設定します。
 

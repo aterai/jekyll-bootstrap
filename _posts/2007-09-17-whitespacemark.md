@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextPaneで全角スペースやタブを可視化
 category: swing
 folder: WhitespaceMark
+title: JTextPaneで全角スペースやタブを可視化
 tags: [JTextPane, LabelView]
 author: aterai
+pubdate: 2007-09-17T14:41:19+09:00
+description: JTextPaneに表示した文字列中の全角スペースやタブを可視化します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-09-17
-
 ## 概要
 `JTextPane`に表示した文字列中の全角スペースやタブを可視化します。
 

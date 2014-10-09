@@ -1,28 +1,29 @@
 ---
 layout: post
-title: JComboBoxなどの幅をカラム数で指定
 category: swing
 folder: SetColumns
+title: JComboBoxなどの幅をカラム数で指定
 tags: [JTextField, JPasswordField, JSpinner, JComboBox]
 author: aterai
+pubdate: 2006-12-18T16:11:14+09:00
+description: JTextField,JPasswordField,JSpinner,JComboBoxの幅をカラム数で指定して比較しています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-12-18
-
 ## 概要
 `JTextField`,`JPasswordField`,`JSpinner`,`JComboBox`の幅をカラム数で指定して比較しています。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS72PP0tI/AAAAAAAAAjk/RRG_w2fJBtA/s800/SetColumns.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JTextField field      = new JTextField(20);
+<pre class="prettyprint"><code>JTextField field = new JTextField(20);
 JPasswordField passwd = new JPasswordField(20);
-JSpinner.DefaultEditor e = (JSpinner.DefaultEditor)spinner.getEditor();
+JSpinner.DefaultEditor e = (JSpinner.DefaultEditor) spinner.getEditor();
 e.getTextField().setColumns(20);
 combo1.setEditable(true);
 Component c = combo1.getEditor().getEditorComponent();
-if(c instanceof JTextField) ((JTextField)c).setColumns(20);
+if (c instanceof JTextField) {
+  ((JTextField) c).setColumns(20);
+}
 </code></pre>
 
 ## 解説

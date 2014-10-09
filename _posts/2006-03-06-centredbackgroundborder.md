@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaの背景に画像を表示
 category: swing
 folder: CentredBackgroundBorder
+title: JTextAreaの背景に画像を表示
 tags: [JTextArea, BufferedImage, Border, JViewport]
 author: aterai
+pubdate: 2006-03-06T19:15:08+09:00
+description: JTextAreaの背景に画像を表示しています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
-
 ## 概要
 `JTextArea`の背景に画像を表示しています。[Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/thread/1395763)のコードを引用しています。
 
@@ -58,7 +57,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-03-06
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `centre`は英式の`center`のこと？らしいです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-23 (木) 00:00:58
+- `centre`は英式の`center`のこと？らしいです。 -- *aterai* 2006-03-23 (木) 00:00:58
 
 <!-- dummy comment line for breaking list -->
-

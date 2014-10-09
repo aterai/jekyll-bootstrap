@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldの文字列に下線を付ける
 category: swing
 folder: TextAttribute
+title: JTextFieldの文字列に下線を付ける
 tags: [JTextField, JTextArea, Font, TextAttribute]
 author: aterai
+pubdate: 2013-10-28T00:39:37+09:00
+description: JTextFieldにテキスト属性を設定したフォントを使用して、文字列に下線を引きます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-28
-
 ## 概要
 `JTextField`にテキスト属性を設定したフォントを使用して、文字列に下線を引きます。
 

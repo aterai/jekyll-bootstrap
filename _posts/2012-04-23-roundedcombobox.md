@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxの角を丸める
 category: swing
 folder: RoundedComboBox
+title: JComboBoxの角を丸める
 tags: [JComboBox, Border, Path2D, ArrowButton]
 author: aterai
+pubdate: 2012-04-23T11:59:28+09:00
+description: JComboBoxの左上、右上の角を丸めるBorderを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-04-23
-
 ## 概要
 `JComboBox`の左上、右上の角を丸める`Border`を設定します。
 
@@ -116,7 +115,6 @@ round.add(new Area(b));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 編集可不可の切り替えと、`WindowsLookAndFeel`に適用したサンプルを追加 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-30 (土) 04:07:30
+- 編集可不可の切り替えと、`WindowsLookAndFeel`に適用したサンプルを追加 -- *aterai* 2012-06-30 (土) 04:07:30
 
 <!-- dummy comment line for breaking list -->
-

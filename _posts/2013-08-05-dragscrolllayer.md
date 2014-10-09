@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollPane内にある複数Componentを配置したJPanelをJLayerを使ってドラッグスクロール
 category: swing
 folder: DragScrollLayer
+title: JScrollPane内にある複数Componentを配置したJPanelをJLayerを使ってドラッグスクロール
 tags: [JScrollPane, JPanel, JLayer]
 author: aterai
+pubdate: 2013-08-05T11:49:22+09:00
+description: 複数のネストしたComponentを配置したJPanelのドラッグイベントを、JScrollPaneをラップしたJLayerで受け取ってスクロール可能にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-05
-
 ## 概要
 複数のネストした`Component`を配置した`JPanel`のドラッグイベントを、`JScrollPane`をラップした`JLayer`で受け取ってスクロール可能にします。
 

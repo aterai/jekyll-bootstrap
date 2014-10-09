@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBoxに不定状態のアイコンを追加する
 category: swing
 folder: TriStateCheckBox
+title: JCheckBoxに不定状態のアイコンを追加する
 tags: [JCheckBox, Icon, UIManager, JTableHeader]
 author: aterai
+pubdate: 2011-12-12T15:00:11+09:00
+description: JCheckBoxの選択状態、非選択状態に加えて、不定状態を表すアイコンを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-12
-
 ## 概要
 `JCheckBox`の選択状態、非選択状態に加えて、不定状態を表すアイコンを追加します。
 

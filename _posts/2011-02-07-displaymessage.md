@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TrayIconのポップアップメッセージをテスト
 category: swing
 folder: DisplayMessage
+title: TrayIconのポップアップメッセージをテスト
 tags: [TrayIcon, ActionListener]
 author: aterai
+pubdate: 2011-02-07T16:27:51+09:00
+description: TrayIconのポップアップメッセージ表示をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-07
-
 ## 概要
 `TrayIcon`のポップアップメッセージ表示をテストします。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrameを閉じる
 category: swing
 folder: CloseInternalFrame
+title: JInternalFrameを閉じる
 tags: [JInternalFrame, JDesktopPane, DesktopManager]
 author: aterai
+pubdate: 2008-05-05T20:51:51+09:00
+description: JInternalFrameを閉じます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-05
-
 ## 概要
 `JInternalFrame`を閉じます。
 

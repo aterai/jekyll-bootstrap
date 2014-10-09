@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneの各タブにJButtonを右寄せで追加する
 category: swing
 folder: CloseableTabbedPane
+title: JTabbedPaneの各タブにJButtonを右寄せで追加する
 tags: [JTabbedPane, JButton, JLayer]
 author: aterai
+pubdate: 2014-07-21T03:51:17+09:00
+description: JTabbedPaneのタブ上にそれを閉じるためのJButtonをJLayerを使用して右寄せで描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-21
-
 ## 概要
 `JTabbedPane`のタブ上にそれを閉じるための`JButton`を`JLayer`を使用して右寄せで描画します。
 

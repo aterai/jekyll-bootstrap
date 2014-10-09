@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaのキャレットを上書きモード対応にする
 category: swing
 folder: OverTypeMode
+title: JTextAreaのキャレットを上書きモード対応にする
 tags: [JTextArea, Caret]
 author: aterai
+pubdate: 2006-01-16T15:56:38+09:00
+description: JTextAreaにキャレット上の文字を上書きする上書きモードを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-01-16
-
 ## 概要
 `JTextArea`にキャレット上の文字を上書きする上書きモードを追加します。[Swing - JTextPane edit mode (insert or overwrite)???](https://forums.oracle.com/forums/thread.jspa?threadID=1383467)のソースコードを変更して全角文字対応にしています。
 
@@ -74,10 +73,10 @@ class OvertypeCaret extends DefaultCaret {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 改行の処理がまだいい加減です。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-01-16 (月) 15:56:38
-- テキストを選択状態にして<kbd>Insert</kbd>キーを押すと、反転されたままになるようなので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-01-16 (月) 18:45:02
-- `IME`起動時、「あ」を入力し、<kbd>変換</kbd>キー（or <kbd>Space</kbd>キー）を押すたびに減っていきます。日本語対応のソースを心待ちにしています。 -- [初心者](http://terai.xrea.jp/初心者.html) 2006-03-24 (金) 10:40:01
-- バグですね。報告ありがとうございます。減らないように修正はしたのですが、置換は以下のように適当です。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-24 (金) 16:26:25
+- 改行の処理がまだいい加減です。 -- *aterai* 2006-01-16 (月) 15:56:38
+- テキストを選択状態にして<kbd>Insert</kbd>キーを押すと、反転されたままになるようなので修正。 -- *aterai* 2006-01-16 (月) 18:45:02
+- `IME`起動時、「あ」を入力し、<kbd>変換</kbd>キー（or <kbd>Space</kbd>キー）を押すたびに減っていきます。日本語対応のソースを心待ちにしています。 -- *初心者* 2006-03-24 (金) 10:40:01
+- バグですね。報告ありがとうございます。減らないように修正はしたのですが、置換は以下のように適当です。 -- *aterai* 2006-03-24 (金) 16:26:25
 
 <!-- dummy comment line for breaking list -->
 
@@ -85,11 +84,10 @@ class OvertypeCaret extends DefaultCaret {
 	嗚呼bbbb   //こうならずに
 	嗚呼aabbbb //こうなってしまう(まじめにやれば、なんとかなりそうだが)
 
-- 早速のご対応ありがとうございます。m時 -- [初心者](http://terai.xrea.jp/初心者.html) 2006-03-27 (月) 14:09:27
-- ごめんなさい。途中で送信してしまいました。文字という点で、半角`１`文字の上書きが全角`１`文字でOKだと個人的には思います。 -- [初心者](http://terai.xrea.jp/初心者.html) 2006-03-27 (月) 14:10:36
-- `xyzzy`を参考にして「嗚呼bbbb」の方がいかなと思ったのですが、さっき試した`excel`だと「嗚呼aabbbb」になるみたいです。ので、これは仕様ということにしておきます(^^;。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-27 (月) 15:00:06
-- `xyzzy`は使ったことがないのですが、秀丸と同じでしょうか。「嗚呼」に「a」と入力して、「a 呼」なのは、ちょっといやでした。`excel`上書できるんですね。`word`で`IME`起動中に<kbd>Insert</kbd>キー押下したら、ダイアログに驚きました。 -- [初心者](http://terai.xrea.jp/初心者.html) 2006-03-28 (火) 13:05:15
-- `xyzzy`でも「a 呼」です。他の文字の位置が上書きで出来るだけ移動しないようにするための処理だと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-03-31 (金) 16:39:04
+- 早速のご対応ありがとうございます。m時 -- *初心者* 2006-03-27 (月) 14:09:27
+- ごめんなさい。途中で送信してしまいました。文字という点で、半角`１`文字の上書きが全角`１`文字でOKだと個人的には思います。 -- *初心者* 2006-03-27 (月) 14:10:36
+- `xyzzy`を参考にして「嗚呼bbbb」の方がいかなと思ったのですが、さっき試した`excel`だと「嗚呼aabbbb」になるみたいです。ので、これは仕様ということにしておきます(^^;。 -- *aterai* 2006-03-27 (月) 15:00:06
+- `xyzzy`は使ったことがないのですが、秀丸と同じでしょうか。「嗚呼」に「a」と入力して、「a 呼」なのは、ちょっといやでした。`excel`上書できるんですね。`word`で`IME`起動中に<kbd>Insert</kbd>キー押下したら、ダイアログに驚きました。 -- *初心者* 2006-03-28 (火) 13:05:15
+- `xyzzy`でも「a 呼」です。他の文字の位置が上書きで出来るだけ移動しないようにするための処理だと思います。 -- *aterai* 2006-03-31 (金) 16:39:04
 
 <!-- dummy comment line for breaking list -->
-

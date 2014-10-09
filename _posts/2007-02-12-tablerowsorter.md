@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableRowSorterでJTableのソート
 category: swing
 folder: TableRowSorter
+title: TableRowSorterでJTableのソート
 tags: [JTable, TableRowSorter, JTableHeader]
 author: aterai
+pubdate: 2007-02-12
+description: JDK 6で導入された、TableRowSorterを利用して、JTableの行を降順、昇順にソートします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-02-12
-
 ## 概要
 `JDK 6`で導入された、`TableRowSorter`を利用して、`JTable`の行を降順、昇順にソートします。
 
@@ -110,10 +109,9 @@ public class RowSorterTest extends JPanel{
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `DefaultRowSorter#setMaxSortKeys(int)`で複数のキーを用いたソートも出来ているように思います(`b86`)。ただ、ヘッダー部分がわかりにくいですが。 -- [syo](http://terai.xrea.jp/syo.html) 2006-08-03 (木) 11:12:55
-    - ご指摘ありがとうございます。なるほど、こちら([Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html))を使えばうまくいきそうですね。解説を修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-08-03 (木) 12:34:53
-- `renderer`がないので、基本的に数字は左揃え、文字列は右揃えで、中央揃えするにはどうすれば宜しいでしょうか？ -- [パンダ](http://terai.xrea.jp/パンダ.html) 2007-06-14 (木) 09:40:20
-    - 長いので[JTableのセル文字揃え](http://terai.xrea.jp/Swing/CellTextAlignment.html)に移動しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-06-14 (木) 13:19:36
+- `DefaultRowSorter#setMaxSortKeys(int)`で複数のキーを用いたソートも出来ているように思います(`b86`)。ただ、ヘッダー部分がわかりにくいですが。 -- *syo* 2006-08-03 (木) 11:12:55
+    - ご指摘ありがとうございます。なるほど、こちら([Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html))を使えばうまくいきそうですね。解説を修正しました。 -- *aterai* 2006-08-03 (木) 12:34:53
+- `renderer`がないので、基本的に数字は左揃え、文字列は右揃えで、中央揃えするにはどうすれば宜しいでしょうか？ -- *パンダ* 2007-06-14 (木) 09:40:20
+    - 長いので[JTableのセル文字揃え](http://terai.xrea.jp/Swing/CellTextAlignment.html)に移動しました。 -- *aterai* 2007-06-14 (木) 13:19:36
 
 <!-- dummy comment line for breaking list -->
-

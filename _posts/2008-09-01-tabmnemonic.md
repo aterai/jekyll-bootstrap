@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブにMnemonicを追加
 category: swing
 folder: TabMnemonic
+title: JTabbedPaneのタブにMnemonicを追加
 tags: [JTabbedPane, Mnemonic, JLabel]
 author: aterai
+pubdate: 2008-09-01T13:22:20+09:00
+description: JTabbedPaneのタブにMnemonicを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-01
-
 ## 概要
 `JTabbedPane`のタブに`Mnemonic`を追加します。
 

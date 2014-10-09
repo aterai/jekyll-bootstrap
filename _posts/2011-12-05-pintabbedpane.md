@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブを固定する
 category: swing
 folder: PinTabbedPane
+title: JTabbedPaneのタブを固定する
 tags: [JTabbedPane, JPopupMenu, JLabel]
 author: aterai
+pubdate: 2011-12-05T14:18:41+09:00
+description: JTabbedPaneにJPopupMenuを追加して、指定したタブのタイトルと位置を変更し、タブの固定を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-05
-
 ## 概要
 `JTabbedPane`に`JPopupMenu`を追加して、指定したタブのタイトルと位置を変更し、タブの固定を行います。
 

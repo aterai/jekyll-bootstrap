@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのCellRendererにJComboBoxを設定
 category: swing
 folder: ComboCellRenderer
+title: JTableのCellRendererにJComboBoxを設定
 tags: [JTable, JComboBox, TableCellRenderer, TableCellEditor]
 author: aterai
+pubdate: 2007-03-19
+description: JTableのCellRendererとしてJComboBoxを使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19
-
 ## 概要
 `JTable`の`CellRenderer`として`JComboBox`を使用します。
 
@@ -61,8 +60,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-19
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- セルの幅を大きくするとセルの表示が消えますが・・・これは一体なんでしょうか？ -- [ichikawa](http://terai.xrea.jp/ichikawa.html) 2010-11-01 (月) 23:09:02
-    - ご指摘ありがとうございます。リサイズなどでセルの表示がおかしくなるのは、バグです。`DefaultTableCellRenderer#invalidate()`などと同じ(パフォーマンス上の理由)にするため、何もしないようにオーバーライドした、テスト中のコードとサンプルを誤ってアップロードしていました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-02 (火) 14:23:32
+- セルの幅を大きくするとセルの表示が消えますが・・・これは一体なんでしょうか？ -- *ichikawa* 2010-11-01 (月) 23:09:02
+    - ご指摘ありがとうございます。リサイズなどでセルの表示がおかしくなるのは、バグです。`DefaultTableCellRenderer#invalidate()`などと同じ(パフォーマンス上の理由)にするため、何もしないようにオーバーライドした、テスト中のコードとサンプルを誤ってアップロードしていました。 -- *aterai* 2010-11-02 (火) 14:23:32
 
 <!-- dummy comment line for breaking list -->
-

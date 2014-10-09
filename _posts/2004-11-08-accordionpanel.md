@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPanelをアコーディオン風に展開
 category: swing
 folder: AccordionPanel
+title: JPanelをアコーディオン風に展開
 tags: [JPanel, BorderLayout]
 author: aterai
+pubdate: 2004-11-08
+description: JPanelの展開、折り畳みをアコーディオン風に行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
-
 ## 概要
 `JPanel`の展開、折り畳みをアコーディオン風に行います。
 
@@ -105,9 +104,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-08
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `SpringLayout`を`BoxLayout`に変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-15 (金) 22:33:23
-- 不要なコードを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-11-16 (火) 21:29:33
-- 不要(になった？)なリスナクラスなどを削除。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-21 (火) 16:33:17
+- `SpringLayout`を`BoxLayout`に変更。 -- *aterai* 2009-05-15 (金) 22:33:23
+- 不要なコードを削除。 -- *aterai* 2010-11-16 (火) 21:29:33
+- 不要(になった？)なリスナクラスなどを削除。 -- *aterai* 2012-08-21 (火) 16:33:17
 
 <!-- dummy comment line for breaking list -->
-

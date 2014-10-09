@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuに最近使ったファイルを追加
 category: swing
 folder: FileHistory
+title: JMenuに最近使ったファイルを追加
 tags: [JMenu, File]
 author: aterai
+pubdate: 2003-11-10
+description: JMenuに、「最近使ったファイル(F)」を履歴として追加していきます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-11-10
-
 ## 概要
 `JMenu`に、「最近使ったファイル(`F`)」を履歴として追加していきます。
 

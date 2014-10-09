@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxの値をMouseWheelで変更
 category: swing
 folder: WheelCombo
+title: JComboBoxの値をMouseWheelで変更
 tags: [JComboBox, MouseWheelListener]
 author: aterai
+pubdate: 2004-11-15T02:34:50+09:00
+description: JComboBoxにフォーカスがある場合、その値をMouseWheelの上下で変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-15
-
 ## 概要
 `JComboBox`にフォーカスがある場合、その値を`MouseWheel`の上下で変更します。
 

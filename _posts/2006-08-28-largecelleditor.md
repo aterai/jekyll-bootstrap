@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの編集にセルより大きなセルエディタを使用
 category: swing
 folder: LargeCellEditor
+title: JTableの編集にセルより大きなセルエディタを使用
 tags: [JTable, JList, GlassPane]
 author: aterai
+pubdate: 2006-08-28T00:57:26+09:00
+description: 通常のセルエディタではなく、セルより大きなアイコンを選択する為のセルエディタを使用してJTableを編集します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-28
-
 ## 概要
 通常のセルエディタではなく、セルより大きなアイコンを選択する為のセルエディタを使用して`JTable`を編集します。
 
@@ -107,7 +106,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-08-28
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 表示をアニメーションさせたり、音を出したりしても面白そうです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-10-29 (日) 02:03:44
+- 表示をアニメーションさせたり、音を出したりしても面白そうです。 -- *aterai* 2006-10-29 (日) 02:03:44
 
 <!-- dummy comment line for breaking list -->
-

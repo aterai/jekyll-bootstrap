@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPopupMenuをコンポーネントに追加
 category: swing
 folder: ComponentPopupMenu
+title: JPopupMenuをコンポーネントに追加
 tags: [JPopupMenu, JTextComponent, PopupMenuListener]
 author: aterai
+pubdate: 2008-03-10T01:39:57+09:00
+description: JPopupMenuをコンポーネントに追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-10
-
 ## 概要
 `JPopupMenu`をコンポーネントに追加します。
 
@@ -123,8 +122,7 @@ textArea.setComponentPopupMenu(popup);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6675802) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-05 (土) 20:59:02
-- メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6299213) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-10 (木) 18:58:52
+- メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6675802) -- *aterai* 2008-04-05 (土) 20:59:02
+- メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6299213) -- *aterai* 2008-04-10 (木) 18:58:52
 
 <!-- dummy comment line for breaking list -->
-

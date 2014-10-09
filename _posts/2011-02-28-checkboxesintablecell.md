@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのCellにJCheckBoxを複数配置する
 category: swing
 folder: CheckBoxesInTableCell
+title: JTableのCellにJCheckBoxを複数配置する
 tags: [JTable, JCheckBox, TableCellRenderer, TableCellEditor, JPanel, InputMap, ActionMap]
 author: aterai
+pubdate: 2011-02-28T15:07:56+09:00
+description: JTableのセル中にJCheckBoxを複数個配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
-
 ## 概要
 `JTable`のセル中に`JCheckBox`を複数個配置します。
 
@@ -22,18 +21,18 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
   public CheckBoxesPanel() {
     super();
     setOpaque(false);
-    setBackground(new Color(0,0,0,0));
+    setBackground(new Color(0, 0, 0, 0));
     setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
     initButtons();
   }
   protected void initButtons() {
     buttons = new JCheckBox[title.length];
-    for(int i=0; i&lt;buttons.length; i++) {
+    for (int i = 0; i &lt; buttons.length; i++) {
       JCheckBox b = new JCheckBox(title[i]);
       b.setOpaque(false);
       b.setFocusable(false);
       b.setRolloverEnabled(false);
-      b.setBackground(new Color(0,0,0,0));
+      b.setBackground(new Color(0, 0, 0, 0));
       buttons[i] = b;
       add(b);
       add(Box.createHorizontalStrut(5));
@@ -41,7 +40,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
   }
   private static final String OSNAME = System.getProperty("os.name");
   protected void updateButtons(Object v) {
-    if("Windows 7".equals(OSNAME)) { //Windows aero?
+    if ("Windows 7".equals(OSNAME)) { //Windows aero?
       removeAll();
       initButtons();
     }
@@ -78,7 +77,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
       }
     };
     ActionMap am = getActionMap();
-    for(int i=0; i&lt;buttons.length; i++) {
+    for (int i = 0; i &lt; buttons.length; i++) {
       final JCheckBox b = buttons[i];
       b.addActionListener(al);
       am.put(title[i], new AbstractAction(title[i]) {
@@ -100,9 +99,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
   }
   @Override public Object getCellEditorValue() {
     int i = 0;
-    if(buttons[0].isSelected()) i|=1&lt;&lt;2;
-    if(buttons[1].isSelected()) i|=1&lt;&lt;1;
-    if(buttons[2].isSelected()) i|=1&lt;&lt;0;
+    if (buttons[0].isSelected()) i |= 1 &lt;&lt; 2;
+    if (buttons[1].isSelected()) i |= 1 &lt;&lt; 1;
+    if (buttons[2].isSelected()) i |= 1 &lt;&lt; 0;
     return i;
   }
 
@@ -120,8 +119,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
 
 ~~`JTable`自体に以下の様な`MouseListener`を追加してチェックボックスがクリックされるたびに`table.getCellEditor(row, col).stopCellEditing();`を呼び出しています。~~
 
-
-
 ## 参考リンク
 - [JTableのセル中にJRadioButtonを配置](http://terai.xrea.jp/Swing/RadioButtonsInTableCell.html)
 - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
@@ -130,10 +127,9 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-02-28
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ビットフラグを`EnumSet`に変更するテスト -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-01 (火) 14:22:06
+- ビットフラグを`EnumSet`に変更するテスト -- *aterai* 2011-03-01 (火) 14:22:06
     - [JTableの列にEnumSetを使用する](http://terai.xrea.jp/Swing/EnumSet.html)に移動
-- `rwx`セルを選択中に<kbd>R</kbd>, <kbd>W</kbd>, <kbd>X</kbd>キーを入力するとチェックが切り替わるように`InputMap, ActionMap`を追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-09 (水) 22:33:39
-- `Windows`環境で`Aero`効果を有効にしていると？、残像が表示される場合がある？のを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-11-01 (火) 18:12:50
+- `rwx`セルを選択中に<kbd>R</kbd>, <kbd>W</kbd>, <kbd>X</kbd>キーを入力するとチェックが切り替わるように`InputMap, ActionMap`を追加。 -- *aterai* 2011-03-09 (水) 22:33:39
+- `Windows`環境で`Aero`効果を有効にしていると？、残像が表示される場合がある？のを修正。 -- *aterai* 2011-11-01 (火) 18:12:50
 
 <!-- dummy comment line for breaking list -->
-

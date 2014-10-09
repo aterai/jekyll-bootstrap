@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListのセル上にToolTipを表示する
 category: swing
 folder: ToolTipOnCellBounds
+title: JListのセル上にToolTipを表示する
 tags: [JList, JToolTip, ListCellRenderer]
 author: aterai
+pubdate: 2014-05-05T01:10:29+09:00
+description: JListのセル内に文字列が収まらない場合のみ、その上にToolTipを重ねて表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-05
-
 ## 概要
 `JList`のセル内に文字列が収まらない場合のみ、その上に`ToolTip`を重ねて表示します。
 

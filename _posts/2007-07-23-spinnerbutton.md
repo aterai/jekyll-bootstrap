@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerのボタンにToolTipを付ける
 category: swing
 folder: SpinnerButton
+title: JSpinnerのボタンにToolTipを付ける
 tags: [JSpinner, JButton, JToolTip]
 author: aterai
+pubdate: 2007-07-23T15:06:56+09:00
+description: JSpinnerの上下ボタンにJToolTipを付けます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-23
-
 ## 概要
 `JSpinner`の上下ボタンに`JToolTip`を付けます。
 
@@ -54,7 +53,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-23
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ:[Bug ID: 5036022 JSpinner does not reflect new font on subsequent calls to setFont](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5036022)、[JSpinnerのフォント指定 - kaisehのブログ](http://d.hatena.ne.jp/kaiseh/20071120/1195560201) -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-26 (月) 12:10:19
+- メモ:[Bug ID: 5036022 JSpinner does not reflect new font on subsequent calls to setFont](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5036022)、[JSpinnerのフォント指定 - kaisehのブログ](http://d.hatena.ne.jp/kaiseh/20071120/1195560201) -- *aterai* 2007-11-26 (月) 12:10:19
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの罫線の有無とセルの内余白を変更
 category: swing
 folder: IntercellSpacing
+title: JTableの罫線の有無とセルの内余白を変更
 tags: [JTable]
 author: aterai
+pubdate: 2011-05-30T16:37:49+09:00
+description: JTableの罫線の表示非表示とセルの内余白を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-30
-
 ## 概要
 `JTable`の罫線の表示非表示とセルの内余白を変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのヘッダ入れ替えを禁止
 category: swing
 folder: Reordering
+title: JTableのヘッダ入れ替えを禁止
 tags: [JTable, JTableHeader]
 author: aterai
+pubdate: 2004-05-31T04:43:10+09:00
+description: ドラッグ＆ドロップでのカラムヘッダ入れ替えを禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-05-31
-
 ## 概要
 ドラッグ＆ドロップでのカラムヘッダ入れ替えを禁止します。
 

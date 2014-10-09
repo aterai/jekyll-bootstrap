@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPopupMenuに半透明の影を付ける
 category: swing
 folder: DropShadowPopup
+title: JPopupMenuに半透明の影を付ける
 tags: [JPopupMenu, Border, Robot, JMenuItem, Translucent]
 author: aterai
+pubdate: 2006-07-03
+description: Robotで画面をキャプチャーするなどして、半透明の影をJPopupMenuに付けます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
-
 ## 概要
 `Robot`で画面をキャプチャーするなどして、半透明の影を`JPopupMenu`に付けます。
 
@@ -132,12 +131,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- キャプチャーが遅いのは画面全体を撮っているからで、必要なサイズだけにすれば結構速いようです。サンプルを修正してみたところ、毎回キャプチャーするようにしても特に気にならない速度で動いてます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-07-18 (火) 12:02:13
+- キャプチャーが遅いのは画面全体を撮っているからで、必要なサイズだけにすれば結構速いようです。サンプルを修正してみたところ、毎回キャプチャーするようにしても特に気にならない速度で動いてます。 -- *aterai* 2006-07-18 (火) 12:02:13
 - ソース中で`isInRootPanel`がおかしい気がするのですが・・・
 
 <!-- dummy comment line for breaking list -->
-`convertPointToScreen`がいらないのと`return r.contains(pt)&&r.contains(p)`にしないとフレーム内の判定がおかしいようです -- [sawshun](http://terai.xrea.jp/sawshun.html) 2006-10-05 (木) 11:23:39
-    - ご指摘ありがとうごさいます。`convertPointToScreen`を削除して、`MyPopupMenu#isInRootPanel`は以下のように修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-10-05 (木) 12:34:12
+`convertPointToScreen`がいらないのと`return r.contains(pt)&&r.contains(p)`にしないとフレーム内の判定がおかしいようです -- *sawshun* 2006-10-05 (木) 11:23:39
+    - ご指摘ありがとうごさいます。`convertPointToScreen`を削除して、`MyPopupMenu#isInRootPanel`は以下のように修正しました。 -- *aterai* 2006-10-05 (木) 12:34:12
 
 <!-- dummy comment line for breaking list -->
 
@@ -149,7 +148,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-07-03
 }
 </code></pre>
 
-- メモ: [Swing - Can popup menu events be consumed by other (e.g. background) components?](https://forums.oracle.com/thread/1393754) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-10 (木) 18:24:18
+- メモ: [Swing - Can popup menu events be consumed by other (e.g. background) components?](https://forums.oracle.com/thread/1393754) -- *aterai* 2008-04-10 (木) 18:24:18
 
 <!-- dummy comment line for breaking list -->
 
@@ -175,10 +174,10 @@ label.setComponentPopupMenu(pop);
 //  }
 //});
 </code></pre>
-- `SynthLookAndFeel`(`Nimbus`など)で、`JSeparator`だけでなく`JMenuItem`まで透明になった修正？に対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-05 (日) 14:22:34
-- `1.7.0_03`でなにか変更があった？のか、変な挙動をするようになったので、調査中。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-21 (火) 16:45:48
-- `exit`や`close`が動作するのかと思ったのですが動かないんですよね？ `JPopupMenu`に表示させているだけでしょうか、もしそうなら`Exit`を押したときにフレームが終了するようなコードはどう書けばいいのでしょうか？ -- [hshs](http://terai.xrea.jp/hshs.html) 2013-03-02 (土) 05:32:25
-    - 影を付けるだけのサンプルコードなので、`JMenuItem`は名前だけのダミーになっています。「フレームを終了するコード…」は、複数の`JFrame`が開いているかもしれない場合を考慮して、以下のような方法を使用するのがいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-04 (月) 09:53:00
+- `SynthLookAndFeel`(`Nimbus`など)で、`JSeparator`だけでなく`JMenuItem`まで透明になった修正？に対応。 -- *aterai* 2012-02-05 (日) 14:22:34
+- `1.7.0_03`でなにか変更があった？のか、変な挙動をするようになったので、調査中。 -- *aterai* 2012-02-21 (火) 16:45:48
+- `exit`や`close`が動作するのかと思ったのですが動かないんですよね？ `JPopupMenu`に表示させているだけでしょうか、もしそうなら`Exit`を押したときにフレームが終了するようなコードはどう書けばいいのでしょうか？ -- *hshs* 2013-03-02 (土) 05:32:25
+    - 影を付けるだけのサンプルコードなので、`JMenuItem`は名前だけのダミーになっています。「フレームを終了するコード…」は、複数の`JFrame`が開いているかもしれない場合を考慮して、以下のような方法を使用するのがいいかもしれません。 -- *aterai* 2013-03-04 (月) 09:53:00
 
 <!-- dummy comment line for breaking list -->
 
@@ -192,8 +191,7 @@ label.setComponentPopupMenu(pop);
   }
 });
 </code></pre>
-- 返信ありがとうございます、当方`Netbeans`で開発してまして、上記のコードを`jPopupMenu1.add(この中);`に`new JMenuItem`以降を入れたのですが動きませんでした。よって`JMenuItem ｍ～f.dispose();`までを削除し、かわりに`jFrame1.setVisible(false);`を入れると動作しました。 -- [hshs](http://terai.xrea.jp/hshs.html) 2013-03-05 (火) 20:22:26
-    - メモ: せっかくなので？、[JPopupMenuなどからWindowを閉じる](http://terai.xrea.jp/Swing/WindowClosingAction.html)を作成してみました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-03-11 (月) 17:09:34
+- 返信ありがとうございます、当方`Netbeans`で開発してまして、上記のコードを`jPopupMenu1.add(この中);`に`new JMenuItem`以降を入れたのですが動きませんでした。よって`JMenuItem ｍ～f.dispose();`までを削除し、かわりに`jFrame1.setVisible(false);`を入れると動作しました。 -- *hshs* 2013-03-05 (火) 20:22:26
+    - メモ: せっかくなので？、[JPopupMenuなどからWindowを閉じる](http://terai.xrea.jp/Swing/WindowClosingAction.html)を作成してみました。 -- *aterai* 2013-03-11 (月) 17:09:34
 
 <!-- dummy comment line for breaking list -->
-

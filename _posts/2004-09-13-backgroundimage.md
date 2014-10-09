@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPanelの背景に画像を並べる
 category: swing
 folder: BackgroundImage
+title: JPanelの背景に画像を並べる
 tags: [JPanel, Image]
 author: aterai
+pubdate: 2004-09-13T03:00:13+09:00
+description: JPanelの背景に画像をタイル状に並べて表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-13
-
 ## 概要
 `JPanel`の背景に画像をタイル状に並べて表示します。
 

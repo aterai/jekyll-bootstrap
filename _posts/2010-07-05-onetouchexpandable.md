@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSplitPaneのディバイダを展開、収納する
 category: swing
 folder: OneTouchExpandable
+title: JSplitPaneのディバイダを展開、収納する
 tags: [JSplitPane, ActionMap, ServiceManager, BasicService]
 author: aterai
+pubdate: 2010-07-05T01:22:49+09:00
+description: JSplitPaneのディバイダをマウスのクリックなどで一気に展開、収納できるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-05
-
 ## 概要
 `JSplitPane`のディバイダをマウスのクリックなどで一気に展開、収納できるように設定します。
 
@@ -49,13 +48,12 @@ splitPane.setOneTouchExpandable(true);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ソースファイルをダウンロードして`eclipse`でプロジェクト作成しそこにコピーしたのですが、「インポートされた `javax.jnlp` は見つかりません」と出てきて実行出来ないのですが、 `javax.jnlp`はどこに置けば良いのでしょうか？ -- [ニートン](http://terai.xrea.jp/ニートン.html) 2012-02-21 (火) 08:06:33
-    - `eclipse`はほとんど使ったことがないのでインポートの詳細(もしかして`Ant`の`build.xml`を取り込む機能がある？)が分からないのですが、`javax.jnlp`パッケージは、`${java.home}/lib/javaws.jar`にあるので、ここにクラスパスが通っていないのかもしれません。このサンプルでは、`javax.jnlp.*`は使用しないので、`build.xml`から`<pathelement location="${java.home}/lib/javaws.jar" />`を削除するか、または、`eclipse`で新規プロジェクトを作成し、ソースコードだけ貼り付けるのが簡単だと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-21 (火) 17:15:21
+- ソースファイルをダウンロードして`eclipse`でプロジェクト作成しそこにコピーしたのですが、「インポートされた `javax.jnlp` は見つかりません」と出てきて実行出来ないのですが、 `javax.jnlp`はどこに置けば良いのでしょうか？ -- *ニートン* 2012-02-21 (火) 08:06:33
+    - `eclipse`はほとんど使ったことがないのでインポートの詳細(もしかして`Ant`の`build.xml`を取り込む機能がある？)が分からないのですが、`javax.jnlp`パッケージは、`${java.home}/lib/javaws.jar`にあるので、ここにクラスパスが通っていないのかもしれません。このサンプルでは、`javax.jnlp.*`は使用しないので、`build.xml`から`<pathelement location="${java.home}/lib/javaws.jar" />`を削除するか、または、`eclipse`で新規プロジェクトを作成し、ソースコードだけ貼り付けるのが簡単だと思います。 -- *aterai* 2012-02-21 (火) 17:15:21
 - ＞`eclipse`で新規プロジェクトを作成し、ソースコードだけ貼り付けるのが簡単だと思います。
 
 <!-- dummy comment line for breaking list -->
 その通りしていたのですが。。。結果的には`jnlp.jar`ファイルを`jdk1.6`の中から探して`eclipse`の「外部`jar`を追加」で動作いたしました。お騒がせしました。それと、この`javax.jnlpはBasicService`関連のクラスファイルが入ってるようなので削除できないみたいです。-- [ニートン](http://terai.xrea.jp/ニートン.html) 2012-02-22 (水) 18:41:04
-    - すいません。「このサンプルでは、`javax.jnlp.*`は使用しないので...」はデタラメで、`BasicService`が取得できるかどうかで、`Web Start`で起動したのかどうかを判断する部分を見落としていました。`Web Start`で起動した場合は、`getComponents()`でボタンを検索する方法で、ローカルから起動した場合は、リフレクションで`private`な`setKeepHidden`メソッドを取得して実行する方法を使っています。大変失礼しましたm(__)m。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-22 (水) 18:59:52
+    - すいません。「このサンプルでは、`javax.jnlp.*`は使用しないので...」はデタラメで、`BasicService`が取得できるかどうかで、`Web Start`で起動したのかどうかを判断する部分を見落としていました。`Web Start`で起動した場合は、`getComponents()`でボタンを検索する方法で、ローカルから起動した場合は、リフレクションで`private`な`setKeepHidden`メソッドを取得して実行する方法を使っています。大変失礼しましたm(__)m。 -- *aterai* 2012-02-22 (水) 18:59:52
 
 <!-- dummy comment line for breaking list -->
-

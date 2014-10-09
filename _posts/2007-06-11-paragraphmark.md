@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneで改行を表示
 category: swing
 folder: ParagraphMark
+title: JEditorPaneで改行を表示
 tags: [JEditorPane, StyledEditorKit]
 author: aterai
+pubdate: 2007-06-11
+description: JEditorPaneで改行記号を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-11
-
 ## 概要
 `JEditorPane`で改行記号を表示します。[Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)から、ソースコードの大部分を引用しています。
 
@@ -82,7 +81,6 @@ class MyParagraphView extends ParagraphView {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 行の折り返しが発生すると、改行記号が縦長になるバグを修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-09-21 (金) 17:05:03
+- 行の折り返しが発生すると、改行記号が縦長になるバグを修正しました。 -- *aterai* 2007-09-21 (金) 17:05:03
 
 <!-- dummy comment line for breaking list -->
-

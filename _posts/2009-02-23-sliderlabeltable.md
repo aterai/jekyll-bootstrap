@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderの目盛にアイコンや文字列を追加する
 category: swing
 folder: SliderLabelTable
+title: JSliderの目盛にアイコンや文字列を追加する
 tags: [JSlider, JLabel, Icon, JButton]
 author: aterai
+pubdate: 2009-02-23T12:08:35+09:00
+description: JSliderの目盛にJComponentを表示することで、アイコンを追加したり、文字列の色などを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-02-23
-
 ## 概要
 `JSlider`の目盛に`JComponent`を表示することで、アイコンを追加したり、文字列の色などを変更します。
 

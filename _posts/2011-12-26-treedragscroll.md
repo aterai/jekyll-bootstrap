@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの余白をドラッグしてスクロール
 category: swing
 folder: TreeDragScroll
+title: JTreeの余白をドラッグしてスクロール
 tags: [MouseListener, MouseMotionListener, JViewport, JScrollPane, JTree, JComponent]
 author: aterai
+pubdate: 2011-12-26T14:16:38+09:00
+description: JTreeの余白などをマウスでドラッグしてスクロールします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-26
-
 ## 概要
 `JTree`の余白などをマウスでドラッグしてスクロールします。
 

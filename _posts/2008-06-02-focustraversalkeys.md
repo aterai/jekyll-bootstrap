@@ -1,15 +1,14 @@
 ---
 layout: post
-title: FocusTraversalKeysに矢印キーを追加してフォーカス移動
 category: swing
 folder: FocusTraversalKeys
+title: FocusTraversalKeysに矢印キーを追加してフォーカス移動
 tags: [KeyboardFocusManager, Focus, Container]
 author: aterai
+pubdate: 2008-06-02T13:10:23+09:00
+description: デフォルトのKBD{Tab}キーに加えて、矢印キーでもフォーカス移動できるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-02
-
 ## 概要
 デフォルトの<kbd>Tab</kbd>キーに加えて、矢印キーでもフォーカス移動できるように設定します。
 

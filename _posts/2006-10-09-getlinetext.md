@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaから一行ずつ文字列を取得
 category: swing
 folder: GetLineText
+title: JTextAreaから一行ずつ文字列を取得
 tags: [JTextArea, StringTokenizer, LineNumberReader]
 author: aterai
+pubdate: 2006-10-09
+description: JTextAreaなどのテキストコンポーネントから一行ずつ文字列を取り出してそれを処理します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-10-09
-
 ## 概要
 `JTextArea`などのテキストコンポーネントから一行ずつ文字列を取り出してそれを処理します。
 

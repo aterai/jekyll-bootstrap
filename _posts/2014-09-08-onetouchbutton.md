@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSplitPaneのDividerを展開収納するOneTouchButtonのサイズ、色などを変更
 category: swing
 folder: OneTouchButton
+title: JSplitPaneのDividerを展開収納するOneTouchButtonのサイズ、色などを変更
 tags: [JSplitPane, SplitPaneDivider, JButton, LookAndFeel]
 author: aterai
+pubdate: 2014-09-08T00:05:45+09:00
+description: JSplitPaneのDividerをワンクリックで展開・収納するためのOneTouchButtonのサイズ、オフセット、背景色などを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-09-08
-
 ## 概要
 `JSplitPane`の`Divider`をワンクリックで展開・収納するための`OneTouchButton`のサイズ、オフセット、背景色などを変更します。
 

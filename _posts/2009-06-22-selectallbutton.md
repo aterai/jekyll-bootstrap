@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableを別コンポーネントから操作
 category: swing
 folder: SelectAllButton
+title: JTableを別コンポーネントから操作
 tags: [JTable, ActionMap]
 author: aterai
+pubdate: 2009-06-22T11:18:08+09:00
+description: JTableの全選択や選択された行のコピーをJButtonなどの別コンポーネントから行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-22
-
 ## 概要
 `JTable`の全選択や選択された行のコピーを`JButton`などの別コンポーネントから行います。
 
@@ -38,8 +37,7 @@ private final Action copyAction = new AbstractAction("copy") {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タイトルの`typo`を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-23 (火) 18:34:44
-- `Java Web Start`で起動した場合は、 ~~コピーできない？~~ このサンプル内でコピーした文字列などを外部のアプリケーションにペーストすることはできない(逆も不可)？ -- [aterai](http://terai.xrea.jp/aterai.html) 2009-10-02 (金) 19:05:43
+- タイトルの`typo`を修正 -- *aterai* 2009-06-23 (火) 18:34:44
+- `Java Web Start`で起動した場合は、 ~~コピーできない？~~ このサンプル内でコピーした文字列などを外部のアプリケーションにペーストすることはできない(逆も不可)？ -- *aterai* 2009-10-02 (金) 19:05:43
 
 <!-- dummy comment line for breaking list -->
-

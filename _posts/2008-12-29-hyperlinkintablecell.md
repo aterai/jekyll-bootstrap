@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルにHyperlinkを表示
 category: swing
 folder: HyperlinkInTableCell
+title: JTableのセルにHyperlinkを表示
 tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener, Html, Desktop]
 author: aterai
+pubdate: 2008-12-29T01:31:09+09:00
+description: JTableのセルの中に、Hyperlinkを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-12-29
-
 ## 概要
 `JTable`のセルの中に、`Hyperlink`を表示します。
 
@@ -90,9 +89,8 @@ table.addMouseMotionListener(renderer);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `URLRenderer`のコンストラクタで`JTable`にマウスリスナーを追加していたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-06-25 (木) 12:05:13
-- 「解説」中のコードではコンストラクタに`table`が渡されたままになっているようです。 -- [yosei](http://terai.xrea.jp/yosei.html) 2010-05-05 (Wed) 16:54:43
-    - コメントありがとうございます。ご指摘のように修正し忘れていました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-05-06 (木) 17:04:59
+- `URLRenderer`のコンストラクタで`JTable`にマウスリスナーを追加していたのを修正。 -- *aterai* 2009-06-25 (木) 12:05:13
+- 「解説」中のコードではコンストラクタに`table`が渡されたままになっているようです。 -- *yosei* 2010-05-05 (Wed) 16:54:43
+    - コメントありがとうございます。ご指摘のように修正し忘れていました。 -- *aterai* 2010-05-06 (木) 17:04:59
 
 <!-- dummy comment line for breaking list -->
-

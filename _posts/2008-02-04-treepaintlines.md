@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの水平垂直線を表示しない
 category: swing
 folder: TreePaintLines
+title: JTreeの水平垂直線を表示しない
 tags: [JTree, UIManager]
 author: aterai
+pubdate: 2008-02-04T16:09:01+09:00
+description: JTreeのアイコンを繋ぐ水平垂直線の表示の有無を切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-04
-
 ## 概要
 `JTree`のアイコンを繋ぐ水平垂直線の表示の有無を切り替えます。
 

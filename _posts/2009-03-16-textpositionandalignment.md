@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLabelのアイコンと文字列の位置
 category: swing
 folder: TextPositionAndAlignment
+title: JLabelのアイコンと文字列の位置
 tags: [JLabel, Icon, Alignment, JButton]
 author: aterai
+pubdate: 2009-03-16T13:43:23+09:00
+description: JLabelのアイコンと文字列の位置をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-16
-
 ## 概要
 `JLabel`のアイコンと文字列の位置をテストします。
 

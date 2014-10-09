@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneで選択色を半透明化
 category: swing
 folder: SelectionColor
+title: JEditorPaneで選択色を半透明化
 tags: [JEditorPane, Translucent, StyleSheet, HighlightPainter]
 author: aterai
+pubdate: 2013-10-07T00:14:25+09:00
+description: JEditorPaneで選択色を半透明化し、HighlightPainterによるハイライトやCSSでの背景色変更と組み合わせた場合の描画のテストを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-07
-
 ## 概要
 `JEditorPane`で選択色を半透明化し、`HighlightPainter`によるハイライトや`CSS`での背景色変更と組み合わせた場合の描画のテストを行います。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TrayIconのダブルクリック
 category: swing
 folder: ClickTrayIcon
+title: TrayIconのダブルクリック
 tags: [TrayIcon, SystemTray, MouseListener, JFrame]
 author: aterai
+pubdate: 2009-04-13T14:23:01+09:00
+description: TrayIconをダブルクリックした場合フレームを表示、シングルクリックした場合はフレームを前面に表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-04-13
-
 ## 概要
 `TrayIcon`をダブルクリックした場合フレームを表示、シングルクリックした場合はフレームを前面に表示します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrameをJFrameとして表示する
 category: swing
 folder: InternalFrameTitleBar
+title: JInternalFrameをJFrameとして表示する
 tags: [JFrame, JInternalFrame, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2009-08-31T15:27:18+09:00
+description: JFrameのタイトルバーなどを非表示にし、JInternalFrameのタイトルバーでこれらを代用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-31
-
 ## 概要
 `JFrame`のタイトルバーなどを非表示にし、`JInternalFrame`のタイトルバーでこれらを代用します。
 
@@ -80,9 +79,8 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JFrame`のアクティブ状態が変わったら、`JInternalFrame`の選択状態も変化するように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-11-13 (金) 14:57:18
-- リサイズ可能？にする場合のテスト。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-10 (木) 15:07:18
-    - [JRootPaneにリサイズのための装飾を設定する](http://terai.xrea.jp/Swing/WindowDecorationStyle.html)に移動。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-06-17 (月) 02:29:47
+- `JFrame`のアクティブ状態が変わったら、`JInternalFrame`の選択状態も変化するように変更。 -- *aterai* 2009-11-13 (金) 14:57:18
+- リサイズ可能？にする場合のテスト。 -- *aterai* 2010-06-10 (木) 15:07:18
+    - [JRootPaneにリサイズのための装飾を設定する](http://terai.xrea.jp/Swing/WindowDecorationStyle.html)に移動。 -- *aterai* 2013-06-17 (月) 02:29:47
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollPaneのスクロールを禁止
 category: swing
 folder: DisableScrolling
+title: JScrollPaneのスクロールを禁止
 tags: [JScrollPane, JScrollBar]
 author: aterai
+pubdate: 2005-10-03
+description: JScrollPaneのスクロールを一時的に禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-03
-
 ## 概要
 `JScrollPane`のスクロールを一時的に禁止します。
 

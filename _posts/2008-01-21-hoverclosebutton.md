@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのCloseButtonをフォーカスがある場合だけ表示
 category: swing
 folder: HoverCloseButton
+title: JTabbedPaneのCloseButtonをフォーカスがある場合だけ表示
 tags: [JTabbedPane, JButton, Focus]
 author: aterai
+pubdate: 2008-01-21T15:27:41+09:00
+description: JTabbedPaneのタブを閉じるボタンを、タブにフォーカスがある場合だけ表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-21
-
 ## 概要
 `JTabbedPane`のタブを閉じるボタンを、タブにフォーカスがある場合だけ表示します。
 
@@ -22,12 +21,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-21
   addMouseMotionListener(new MouseMotionAdapter() {
     private int prev = -1;
     @Override public void mouseMoved(MouseEvent e) {
-      JTabbedPane source = (JTabbedPane)e.getSource();
+      JTabbedPane source = (JTabbedPane) e.getSource();
       int focussed = source.indexAtLocation(e.getX(), e.getY());
-      if(focussed==prev) return;
-      for(int i=0;i&lt;source.getTabCount();i++) {
-        TabPanel tab = (TabPanel)source.getTabComponentAt(i);
-        tab.setButtonVisible(i==focussed);
+      if(focussed == prev) return;
+      for(int i = 0; i &lt; source.getTabCount(); i++) {
+        TabPanel tab = (TabPanel) source.getTabComponentAt(i);
+        tab.setButtonVisible(i == focussed);
       }
       prev = focussed;
     }
@@ -47,7 +46,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-01-21
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タブが選択されている場合にも`JButton`を表示していましたが、これを変更してタブ上にマウスカーソルがある場合だけ`JButton`を表示するようにしました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-19 (水) 21:09:18
+- タブが選択されている場合にも`JButton`を表示していましたが、これを変更してタブ上にマウスカーソルがある場合だけ`JButton`を表示するようにしました。 -- *aterai* 2008-03-19 (水) 21:09:18
 
 <!-- dummy comment line for breaking list -->
-

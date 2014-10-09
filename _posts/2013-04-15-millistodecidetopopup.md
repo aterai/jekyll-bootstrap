@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ProgressMonitorがダイアログを表示するまでの待ち時間
 category: swing
 folder: MillisToDecideToPopup
+title: ProgressMonitorがダイアログを表示するまでの待ち時間
 tags: [ProgressMonitor, SwingWorker, JProgressBar]
 author: aterai
+pubdate: 2013-04-15T03:02:27+09:00
+description: ProgressMonitorのダイアログが表示されるまでの待ち時間を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-15
-
 ## 概要
 `ProgressMonitor`のダイアログが表示されるまでの待ち時間を設定します。
 

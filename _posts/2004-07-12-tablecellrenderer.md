@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセル幅で文字列を折り返し
 category: swing
 folder: TableCellRenderer
+title: JTableのセル幅で文字列を折り返し
 tags: [JTable, TableCellRenderer, JTextArea, JLabel]
 author: aterai
+pubdate: 2004-07-12
+description: JTableのセル幅に合わせて文字列を折り返します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-07-12
-
 ## 概要
 `JTable`のセル幅に合わせて文字列を折り返します。
 
@@ -100,10 +99,9 @@ class MyJLabel extends JLabel {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: `TextAreaCellRenderer`を、`NimbusLookAndFeel`で使ったとき、うまく余白を消す方法が分からない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-05-08 (木) 18:25:18
-- ここの方法だと行の高さも自動変更してくれます。[This JDK Tutorial shows you how to wrap text inside cells of a JTable](http://www.roseindia.net/javatutorials/JTable_in_JDK.shtml) -- [とおりすがり](http://terai.xrea.jp/とおりすがり.html) 2010-12-10 (金) 10:12:40
-- ご指摘ありがとうございます。この方法なら、[JTableのセルの高さを自動調整](http://terai.xrea.jp/Swing/AutoWrapTableCell.html)で発生しているバグも修正できそうです。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-10 (金) 13:50:58
-    - スクロールバーの表示・非表示が繰り返されるバグは修正できそうだけど、高さが更新されない場合がある(上記の`www.roseindia.net`にある例だと、列幅をすこしずつ調整すると、`fox`が表示されなくなる)方は難しそう？ -- [aterai](http://terai.xrea.jp/aterai.html) 2010-12-10 (金) 17:43:28
+- メモ: `TextAreaCellRenderer`を、`NimbusLookAndFeel`で使ったとき、うまく余白を消す方法が分からない。 -- *aterai* 2008-05-08 (木) 18:25:18
+- ここの方法だと行の高さも自動変更してくれます。[This JDK Tutorial shows you how to wrap text inside cells of a JTable](http://www.roseindia.net/javatutorials/JTable_in_JDK.shtml) -- *とおりすがり* 2010-12-10 (金) 10:12:40
+- ご指摘ありがとうございます。この方法なら、[JTableのセルの高さを自動調整](http://terai.xrea.jp/Swing/AutoWrapTableCell.html)で発生しているバグも修正できそうです。 -- *aterai* 2010-12-10 (金) 13:50:58
+    - スクロールバーの表示・非表示が繰り返されるバグは修正できそうだけど、高さが更新されない場合がある(上記の`www.roseindia.net`にある例だと、列幅をすこしずつ調整すると、`fox`が表示されなくなる)方は難しそう？ -- *aterai* 2010-12-10 (金) 17:43:28
 
 <!-- dummy comment line for breaking list -->
-

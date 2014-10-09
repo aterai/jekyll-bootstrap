@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GroupLayoutの使用
 category: swing
 folder: GroupLayout
+title: GroupLayoutの使用
 tags: [GroupLayout, GridBagLayout, LayoutManager]
 author: aterai
+pubdate: 2007-07-30T15:46:47+09:00
+description: JDK 6で新しく導入されたGroupLayoutとGridBagLayoutを比較しています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-30
-
 ## 概要
 `JDK 6`で新しく導入された`GroupLayout`と`GridBagLayout`を比較しています。`GroupLayout`のサンプルは、`API`ドキュメントの例をそのまま引用しています。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JProgressBarの不確定状態でのアニメーションパターンを変更する
 category: swing
 folder: StripedProgressBar
+title: JProgressBarの不確定状態でのアニメーションパターンを変更する
 tags: [JProgressBar, Animation]
 author: aterai
+pubdate: 2014-07-14T00:19:43+09:00
+description: JProgressBarが不確定状態の場合に描画するアニメーションパターンを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-14
-
 ## 概要
 `JProgressBar`が不確定状態の場合に描画するアニメーションパターンを変更します。
 

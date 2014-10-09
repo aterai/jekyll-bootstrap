@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ConvolveOpでコンポーネントにぼかしを入れる
 category: swing
 folder: BlurButton
+title: ConvolveOpでコンポーネントにぼかしを入れる
 tags: [JButton, ConvolveOp, BufferedImage]
 author: aterai
+pubdate: 2013-12-09T00:54:27+09:00
+description: ConvolveOpを使って、使用不可状態のJButtonにぼかしを入れます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
-
 ## 概要
 `ConvolveOp`を使って、使用不可状態の`JButton`にぼかしを入れます。
 
@@ -31,15 +30,15 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-12-09
     //System.out.println(op.getEdgeCondition());
   }
   @Override protected void paintComponent(Graphics g) {
-    if(isEnabled()) {
+    if (isEnabled()) {
       super.paintComponent(g);
-    }else{
-      if(buf==null || iw!=getWidth() || ih!=getHeight()) {
+    } else {
+      if (buf == null || iw != getWidth() || ih != getHeight()) {
         iw = getWidth();
         ih = getHeight();
         buf = new BufferedImage(iw, ih, BufferedImage.TYPE_INT_ARGB);
       }
-      Graphics2D g2 = (Graphics2D)buf.getGraphics();
+      Graphics2D g2 = (Graphics2D) buf.getGraphics();
       super.paintComponent(g2);
       g2.dispose();
       g.drawImage(op.filter(buf, null), 0, 0, null);

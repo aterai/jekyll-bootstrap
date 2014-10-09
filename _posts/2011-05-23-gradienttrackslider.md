@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderのスタイルを変更する
 category: swing
 folder: GradientTrackSlider
+title: JSliderのスタイルを変更する
 tags: [JSlider, LinearGradientPaint, Transparent, UIManager, Icon]
 author: aterai
+pubdate: 2011-05-23T15:19:26+09:00
+description: JSliderのトラックとノブを透明にし、値を半透明の色で描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-05-23
-
 ## 概要
 `JSlider`のトラックとノブを透明にし、値を半透明の色で描画します。
 

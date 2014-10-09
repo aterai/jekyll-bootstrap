@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPane間でタブのドラッグ＆ドロップ移動
 category: swing
 folder: DnDExportTabbedPane
+title: JTabbedPane間でタブのドラッグ＆ドロップ移動
 tags: [JTabbedPane, TransferHandler, DragAndDrop, GlassPane, Cursor]
 author: aterai
+pubdate: 2009-03-23T14:24:48+09:00
+description: JTabbedPane間でタブのDrag&Dropによる移動を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
-
 ## 概要
 `JTabbedPane`間でタブの`Drag&Drop`による移動を行います。
 
@@ -173,14 +172,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-23
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タブのドラッグ中、`JTable`上などで`Cursor`が点滅するのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-19 (火) 17:32:38
-- 点滅の原因は？ -- [Dad](http://terai.xrea.jp/Dad.html) 2010-01-16 (土) 01:48:13
-    - おそらく、[Cursor flickering during D&D when using CellRendererPane with validation](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6700748)が原因。現在は、`canImport`メソッド内で、一々`GlassPane#setCursor(isDropable?DragSource.DefaultMoveDrop:DragSource.DefaultMoveNoDrop);`として回避中。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-01-16 (土) 12:25:38
-- `6u20`ぐらいから`Web Start`で、`java.security.AccessControlException: access denied (java.awt.AWTPermission accessClipboard)`? -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-17 (木) 01:57:34
-    - チュートリアルのデモ[Demo - DropDemo (The Java™ Tutorials > Creating a GUI With JFC/Swing Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/dnd/dropmodedemo.html)でも同様のエラーが発生するので多分`Java 1.6.0_??`のバグ。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-17 (木) 14:31:14
-    - `6u21`では、修正されている？: [6945178 2-High Defect SecurityException upon drag-and-drop(Bug/RFE fixed in JDK 6u21 build)](http://download.java.net/jdk6/6u21/promoted/b05/changes/JDK6u21.b05.list.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-06-17 (木) 14:32:45
-    - 修正されたようです。[Java SE 6 Update 21 Bug Fixes](http://www.oracle.com/technetwork/java/javase/bugfixes6u21-156339.html) -- [aterai](http://terai.xrea.jp/aterai.html) 2010-07-08 (木) 21:54:27
-- `getTabPlacement()==RIGHT`などの場合に、`DropTarget`の描画がおかしくなるのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-05 (日) 11:13:40
+- タブのドラッグ中、`JTable`上などで`Cursor`が点滅するのを修正。 -- *aterai* 2009-05-19 (火) 17:32:38
+- 点滅の原因は？ -- *Dad* 2010-01-16 (土) 01:48:13
+    - おそらく、[Cursor flickering during D&D when using CellRendererPane with validation](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6700748)が原因。現在は、`canImport`メソッド内で、一々`GlassPane#setCursor(isDropable?DragSource.DefaultMoveDrop:DragSource.DefaultMoveNoDrop);`として回避中。 -- *aterai* 2010-01-16 (土) 12:25:38
+- `6u20`ぐらいから`Web Start`で、`java.security.AccessControlException: access denied (java.awt.AWTPermission accessClipboard)`? -- *aterai* 2010-06-17 (木) 01:57:34
+    - チュートリアルのデモ[Demo - DropDemo (The Java™ Tutorials > Creating a GUI With JFC/Swing Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/dnd/dropmodedemo.html)でも同様のエラーが発生するので多分`Java 1.6.0_??`のバグ。 -- *aterai* 2010-06-17 (木) 14:31:14
+    - `6u21`では、修正されている？: [6945178 2-High Defect SecurityException upon drag-and-drop(Bug/RFE fixed in JDK 6u21 build)](http://download.java.net/jdk6/6u21/promoted/b05/changes/JDK6u21.b05.list.html) -- *aterai* 2010-06-17 (木) 14:32:45
+    - 修正されたようです。[Java SE 6 Update 21 Bug Fixes](http://www.oracle.com/technetwork/java/javase/bugfixes6u21-156339.html) -- *aterai* 2010-07-08 (木) 21:54:27
+- `getTabPlacement()==RIGHT`などの場合に、`DropTarget`の描画がおかしくなるのを修正。 -- *aterai* 2012-02-05 (日) 11:13:40
 
 <!-- dummy comment line for breaking list -->
-

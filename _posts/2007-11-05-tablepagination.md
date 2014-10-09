@@ -1,15 +1,14 @@
 ---
 layout: post
-title: RowFilterでJTableのページ分割
 category: swing
 folder: TablePagination
+title: RowFilterでJTableのページ分割
 tags: [JTable, RowFilter, JRadioButton]
 author: aterai
+pubdate: 2007-11-05T14:35:32+09:00
+description: JDK 6で導入されたRowFilterを使って、JTableの行をPagination風に分割して表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-05
-
 ## 概要
 `JDK 6`で導入された`RowFilter`を使って、`JTable`の行を`Pagination`風に分割して表示します。
 
@@ -21,16 +20,17 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-05
 private final String[] columnNames = {"Year", "String", "Comment"};
 private final DefaultTableModel model = new DefaultTableModel(null, columnNames) {
   @Override public Class&lt;?&gt; getColumnClass(int column) {
-    return (column==0)?Integer.class:Object.class;
+    return (column == 0) ? Integer.class : Object.class;
   }
 };
-private final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model);
-private final Box box = Box.createHorizontalBox();
+private TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model);
+private Box box = Box.createHorizontalBox();
 
 private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
   //assert currentPageIndex &gt; 0;
   sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
-    @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
+    @Override
+    public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
       int ti = currentPageIndex - 1;
       int ei = entry.getIdentifier();
       return ti * itemsPerPage &lt;= ei &amp;&amp; ei &lt; ti * itemsPerPage + itemsPerPage;
@@ -66,19 +66,29 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
   }
 
   ButtonGroup bg = new ButtonGroup();
-  JRadioButton f = makePrevNextRadioButton(itemsPerPage, 1, "|&lt;", currentPageIndex &gt; 1);
-  box.add(f); bg.add(f);
-  JRadioButton p = makePrevNextRadioButton(itemsPerPage, currentPageIndex - 1, "&lt;", currentPageIndex &gt; 1);
-  box.add(p); bg.add(p);
+  JRadioButton f = makePrevNextRadioButton(
+      itemsPerPage, 1, "|&lt;", currentPageIndex &gt; 1);
+  box.add(f);
+  bg.add(f);
+  JRadioButton p = makePrevNextRadioButton(
+      itemsPerPage, currentPageIndex - 1, "&lt;", currentPageIndex &gt; 1);
+  box.add(p);
+  bg.add(p);
   box.add(Box.createHorizontalGlue());
   for (int i = startPageIndex; i &lt;= endPageIndex; i++) {
-    JRadioButton c = makeRadioButton(itemsPerPage, currentPageIndex, i); box.add(c); bg.add(c);
+    JRadioButton c = makeRadioButton(itemsPerPage, currentPageIndex, i);
+    box.add(c);
+    bg.add(c);
   }
   box.add(Box.createHorizontalGlue());
-  JRadioButton n = makePrevNextRadioButton(itemsPerPage, currentPageIndex + 1, "&gt;", currentPageIndex &lt; maxPageIndex);
-  box.add(n); bg.add(n);
-  JRadioButton l = makePrevNextRadioButton(itemsPerPage, maxPageIndex, "&gt;|", currentPageIndex &lt; maxPageIndex);
-  box.add(l); bg.add(l);
+  JRadioButton n = makePrevNextRadioButton(
+      itemsPerPage, currentPageIndex + 1, "&gt;", currentPageIndex &lt; maxPageIndex);
+  box.add(n);
+  bg.add(n);
+  JRadioButton l = makePrevNextRadioButton(
+      itemsPerPage, maxPageIndex, "&gt;|", currentPageIndex &lt; maxPageIndex);
+  box.add(l);
+  bg.add(l);
   box.revalidate();
   box.repaint();
 }
@@ -103,10 +113,9 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-26 (水) 20:28:31
-- ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-09-07 (日) 00:08:50
-- [blogspot](http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-08-15 (月) 15:54:08
-- 先頭と最後にジャンプするボタンを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-01 (金) 16:09:21
+- `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- *aterai* 2008-03-26 (水) 20:28:31
+- ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- *aterai* 2008-09-07 (日) 00:08:50
+- [blogspot](http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- *aterai* 2011-08-15 (月) 15:54:08
+- 先頭と最後にジャンプするボタンを追加。 -- *aterai* 2013-11-01 (金) 16:09:21
 
 <!-- dummy comment line for breaking list -->
-

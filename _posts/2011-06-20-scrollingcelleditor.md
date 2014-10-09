@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableCellEditorをスクロール可能にする
 category: swing
 folder: ScrollingCellEditor
+title: TableCellEditorをスクロール可能にする
 tags: [JTable, JScrollPane, JTextArea, TableCellEditor, Focus]
 author: aterai
+pubdate: 2011-06-20T14:39:55+09:00
+description: JTableのTableCellEditorとして、JTextAreaとJScrollPaneを使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-06-20
-
 ## 概要
 `JTable`の`TableCellEditor`として、`JTextArea`と`JScrollPane`を使用します。
 

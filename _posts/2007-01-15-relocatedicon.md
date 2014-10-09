@@ -1,15 +1,14 @@
 ---
 layout: post
-title: DesktopManagerでアイコンの再配置
 category: swing
 folder: RelocatedIcon
+title: DesktopManagerでアイコンの再配置
 tags: [DesktopManager, JDesktopPane, JInternalFrame]
 author: aterai
+pubdate: 2007-01-15
+description: JDesktopPaneのサイズが変更されたとき、アイコン化しているJInternalFrameの再配置を行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
-
 ## 概要
 `JDesktopPane`のサイズが変更されたとき、アイコン化している`JInternalFrame`の再配置を行います。[Bug ID: 4765256 REGRESSION: Icons in JDesktopPane not repositioned when pane is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4765256)からソースコードの大部分を引用しています。
 
@@ -57,8 +56,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-15
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `1.7.0 b38`で修正されているようです。[Bug ID: 6647340 Minimized JInternalFrame icons appear in incorrect positions if the main frame is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6647340) -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-10 (水) 21:27:26
-- `Windows7` + `WindowsLookAndFeel`で`JDesktopPane`の背景が黒になる: [Bug ID: 7008416 JDesktopPane - Wrong background color with Win7+WindowsLnf](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7008416) -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-04 (火) 16:58:32
+- `1.7.0 b38`で修正されているようです。[Bug ID: 6647340 Minimized JInternalFrame icons appear in incorrect positions if the main frame is resized](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6647340) -- *aterai* 2008-12-10 (水) 21:27:26
+- `Windows7` + `WindowsLookAndFeel`で`JDesktopPane`の背景が黒になる: [Bug ID: 7008416 JDesktopPane - Wrong background color with Win7+WindowsLnf](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7008416) -- *aterai* 2011-10-04 (火) 16:58:32
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの選択状態を変更
 category: swing
 folder: ChangeSelection
+title: JTableの選択状態を変更
 tags: [JTable]
 author: aterai
+pubdate: 2007-06-25T18:03:27+09:00
+description: JTableの選択状態をchangeSelectionメソッドを使って変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-25
-
 ## 概要
 `JTable`の選択状態を`changeSelection`メソッドを使って変更します。
 

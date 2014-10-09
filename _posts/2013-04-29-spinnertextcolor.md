@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxをJSpinnerの代わりに使用する
 category: swing
 folder: SpinnerTextColor
+title: JComboBoxをJSpinnerの代わりに使用する
 tags: [JSpinner, JComboBox, Html, ActionMap]
 author: aterai
+pubdate: 2013-04-29T08:31:48+09:00
+description: JSpinnerの代わりにJComboBoxを使用することで、アイテムの文字色などを変更しています。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-04-29
-
 ## 概要
 `JSpinner`の代わりに`JComboBox`を使用することで、アイテムの文字色などを変更しています。
 

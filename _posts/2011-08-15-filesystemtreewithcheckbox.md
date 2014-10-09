@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JCheckBox付きJTreeでディレクトリ構造を表示
 category: swing
 folder: FileSystemTreeWithCheckBox
+title: JCheckBox付きJTreeでディレクトリ構造を表示
 tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, File, TreeModelListener, SwingWorker]
 author: aterai
+pubdate: 2011-08-15T15:43:03+09:00
+description: 編集可能なJCheckBoxをノードに追加したJTreeでディレクトリ構造を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
-
 ## 概要
 編集可能な`JCheckBox`をノードに追加した`JTree`でディレクトリ構造を表示します。
 
@@ -36,27 +35,27 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
     this.setOpaque(false);
   }
   @Override public Component getTreeCellEditorComponent(
-      JTree tree, Object value, boolean isSelected, boolean expanded,
-      boolean leaf, int row) {
-    JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
-        tree, value, true, expanded, leaf, row, true);
+    JTree tree, Object value, boolean isSelected, boolean expanded,
+    boolean leaf, int row) {
+    JLabel l = (JLabel) renderer.getTreeCellRendererComponent(
+                 tree, value, true, expanded, leaf, row, true);
     l.setFont(tree.getFont());
     setOpaque(false);
-    if(value instanceof DefaultMutableTreeNode) {
+    if (value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject instanceof CheckBoxNode) {
-        CheckBoxNode node = (CheckBoxNode)userObject;
-        if(node.status==Status.INDETERMINATE) {
+      if (userObject instanceof CheckBoxNode) {
+        CheckBoxNode node = (CheckBoxNode) userObject;
+        if (node.status == Status.INDETERMINATE) {
           setIcon(new IndeterminateIcon());
-        }else{
+        } else {
           setIcon(null);
         }
         file = node.file;
         l.setIcon(fileSystemView.getSystemIcon(file));
         l.setText(fileSystemView.getSystemDisplayName(file));
-        setSelected(node.status==Status.SELECTED);
+        setSelected(node.status == Status.SELECTED);
       }
       //panel.add(this, BorderLayout.WEST);
       panel.add(l);
@@ -65,21 +64,21 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
     return l;
   }
   @Override public Object getCellEditorValue() {
-    return new CheckBoxNode(file, isSelected()?Status.SELECTED:Status.DESELECTED);
+    return new CheckBoxNode(file, isSelected() ? Status.SELECTED : Status.DESELECTED);
   }
   @Override public boolean isCellEditable(EventObject e) {
-    if(e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
+    if (e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
       MouseEvent me = (MouseEvent)e;
       JTree tree = (JTree)e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
       Rectangle r = tree.getPathBounds(path);
-      if(r==null) return false;
+      if (r == null) return false;
       Dimension d = getPreferredSize();
       r.setSize(new Dimension(d.width, r.height));
-      if(r.contains(me.getX(), me.getY())) {
-        if(file==null &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
-          System.out.println("XXX: Java 7, only on first run\n"+getBounds());
-          setBounds(new Rectangle(0,0,d.width,r.height));
+      if (r.contains(me.getX(), me.getY())) {
+        if (file == null &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
+          System.out.println("XXX: Java 7, only on first run\n" + getBounds());
+          setBounds(new Rectangle(0, 0, d.width, r.height));
         }
         return true;
       }
@@ -88,7 +87,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
   }
   @Override public void updateUI() {
     super.updateUI();
-    if(panel!=null) panel.updateUI();
+    if (panel != null) panel.updateUI();
     //1.6.0_24 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
     renderer = new DefaultTreeCellRenderer();
   }
@@ -108,13 +107,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-15
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- [JTreeのすべてのノードにJCheckBoxを追加する](http://terai.xrea.jp/Swing/CheckBoxNodeEditor.html) で使用している`TreeModelListener`を追加して`JCheckBox`の状態を変更するように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-13 (金) 20:12:08
-- チェックされたノード(最上位となる)の一覧をコンソールに表示する`JButton`を追加(スクリーンショットなどは面倒なので更新しない)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-04-19 (木) 19:50:07
-- ノードをチェックしてから、そのディレクトリを開いても子ディレクトリにチェックが反映されない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-07-31 (火) 18:15:44
-- いつも勉強させていただいております。サンプルではrootはデスクトップとなっていますが、もし例えばZ:\またはZ:\aaaとTOPにしたい場合、どこを修正すれば宜しいでしょうか？ご教示をお願いいたします。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2013-12-25 (水) 14:11:08
-    - こんばんは。このサンプルでは、`fileSystemView.getRoots()`で`Desktop`フォルダ(`Windows`の場合)を取得しているので、この箇所を、例えば`File fileSystemRoot = new File("Z:/"); /* for(File fileSystemRoot: fileSystemView.getRoots()) */ {`のように変更するのはどうでしょうか。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-25 (水) 16:34:38
-- ご教示、ありがとうございました。ご指摘のところを見落としました。やり方は理解できました。ついでに、もしrootはデスクトップにしておいて、C:\を表示させないで(または展開させないで)、X:\,Y:\のみ操作させるには、どこを弄れば宜しいでしょうか？ありがとうございました。来年もよろしくお願いします。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2013-12-26 (木) 13:36:28
-    - `fileSystemView.getRoots()`で`Desktop`フォルダを取得すると、 マイコンピュータとか、`Desktop`フォルダが`C:\`にある場合はマイドキュメントなどを選択不可にするのが、面倒な気がします。以下のように`new File(System.getProperty("user.home")+"/Desktop")`とデスクトップを決め打ちにしてノードを作ってしまうのが簡単かもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-26 (木) 21:55:24
+- [JTreeのすべてのノードにJCheckBoxを追加する](http://terai.xrea.jp/Swing/CheckBoxNodeEditor.html) で使用している`TreeModelListener`を追加して`JCheckBox`の状態を変更するように修正。 -- *aterai* 2012-04-13 (金) 20:12:08
+- チェックされたノード(最上位となる)の一覧をコンソールに表示する`JButton`を追加(スクリーンショットなどは面倒なので更新しない)。 -- *aterai* 2012-04-19 (木) 19:50:07
+- ノードをチェックしてから、そのディレクトリを開いても子ディレクトリにチェックが反映されない。 -- *aterai* 2012-07-31 (火) 18:15:44
+- いつも勉強させていただいております。サンプルでは`root`はデスクトップとなっていますが、もし例えば`Z:\`または`Z:\aaa`と`TOP`にしたい場合、どこを修正すれば宜しいでしょうか？ご教示をお願いいたします。 -- *Tiger* 2013-12-25 (水) 14:11:08
+    - こんばんは。このサンプルでは、`fileSystemView.getRoots()`で`Desktop`フォルダ(`Windows`の場合)を取得しているので、この箇所を、例えば`File fileSystemRoot = new File("Z:/"); /* for(File fileSystemRoot: fileSystemView.getRoots()) */ {`のように変更するのはどうでしょうか。 -- *aterai* 2013-12-25 (水) 16:34:38
+- ご教示、ありがとうございました。ご指摘のところを見落としました。やり方は理解できました。ついでに、もし`root`はデスクトップにしておいて、`C:\`を表示させないで(または展開させないで)、`X:\`,`Y:\`のみ操作させるには、どこを弄れば宜しいでしょうか？ありがとうございました。来年もよろしくお願いします。 -- *Tiger* 2013-12-26 (木) 13:36:28
+    - `fileSystemView.getRoots()`で`Desktop`フォルダを取得すると、 マイコンピュータとか、`Desktop`フォルダが`C:\`にある場合はマイドキュメントなどを選択不可にするのが、面倒な気がします。以下のように`new File(System.getProperty("user.home")+"/Desktop")`とデスクトップを決め打ちにしてノードを作ってしまうのが簡単かもしれません。 -- *aterai* 2013-12-26 (木) 21:55:24
 
 <!-- dummy comment line for breaking list -->
 
@@ -124,25 +123,25 @@ final DefaultTreeModel treeModel = new DefaultTreeModel(root);
 File desktopFile = new File(System.getProperty("user.home")+"/Desktop");
 DefaultMutableTreeNode desktop = new DefaultMutableTreeNode(new CheckBoxNode(desktopFile, Status.DESELECTED));
 root.add(desktop);
-for(File file: fileSystemView.getFiles(desktopFile, true)) {
-  if(file.isDirectory()) {
+for (File file: fileSystemView.getFiles(desktopFile, true)) {
+  if (file.isDirectory()) {
     desktop.add(new DefaultMutableTreeNode(new CheckBoxNode(file, Status.DESELECTED)));
   }
 }
-for(File fileSystemRoot: Arrays.asList(new File("X:/"), new File("Y:/"))) {
+for (File fileSystemRoot: Arrays.asList(new File("X:/"), new File("Y:/"))) {
   DefaultMutableTreeNode node = new DefaultMutableTreeNode(new CheckBoxNode(fileSystemRoot, Status.DESELECTED));
   desktop.add(node);
-  for(File file: fileSystemView.getFiles(fileSystemRoot, true)) {
+  for (File file: fileSystemView.getFiles(fileSystemRoot, true)) {
     System.out.println(file.getAbsolutePath());
-    if(file.isDirectory()) {
+    if (file.isDirectory()) {
       node.add(new DefaultMutableTreeNode(new CheckBoxNode(file, Status.DESELECTED)));
     }
   }
 }
 treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
 </code></pre>
-- いつも勉強させていただいております。チェックしたファイルまたはフォルダーのチェックマークの外し方を教えていただけませんか？ -- [Tiger](http://terai.xrea.jp/Tiger.html) 2014-03-04 (火) 13:55:30
-    - こんばんは。マウスを使わずにチェックを外したいということですよね。このサンプルの場合、`MutableTreeNode#setUserObject(...)`でチェックを外した`new CheckBoxNode(node.file, Status.DESELECTED)`を設定し、そのあと[DefaultTreeModel#nodeChanged(...) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/tree/DefaultTreeModel.html#nodeChanged%28javax.swing.tree.TreeNode%29)を呼べばいいと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-03-05 (水) 18:23:39
+- いつも勉強させていただいております。チェックしたファイルまたはフォルダーのチェックマークの外し方を教えていただけませんか？ -- *Tiger* 2014-03-04 (火) 13:55:30
+    - こんばんは。マウスを使わずにチェックを外したいということですよね。このサンプルの場合、`MutableTreeNode#setUserObject(...)`でチェックを外した`new CheckBoxNode(node.file, Status.DESELECTED)`を設定し、そのあと[DefaultTreeModel#nodeChanged(...) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/tree/DefaultTreeModel.html#nodeChanged%28javax.swing.tree.TreeNode%29)を呼べばいいと思います。 -- *aterai* 2014-03-05 (水) 18:23:39
 
 <!-- dummy comment line for breaking list -->
 
@@ -170,4 +169,3 @@ private static void deselectedAll(DefaultTreeModel model, TreePath path) {
   }
 }
 </code></pre>
-

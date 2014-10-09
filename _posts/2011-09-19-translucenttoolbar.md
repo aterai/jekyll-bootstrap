@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolBarの半透明化とアニメーション
 category: swing
 folder: TranslucentToolBar
+title: JToolBarの半透明化とアニメーション
 tags: [JToolBar, Translucent, JButton]
 author: aterai
+pubdate: 2011-09-19T17:00:43+09:00
+description: コンポーネントにマウスカーソルがある場合だけ表示される半透明のJToolBarを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-09-19
-
 ## 概要
 コンポーネントにマウスカーソルがある場合だけ表示される半透明の`JToolBar`を追加します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPopupMenuなどからWindowを閉じる
 category: swing
 folder: WindowClosingAction
+title: JPopupMenuなどからWindowを閉じる
 tags: [JFrame, JPopupMenu, JToolBar, JMenuBar]
 author: aterai
+pubdate: 2013-03-11T17:04:49+09:00
+description: JPopupMenuや、JToolBarなどに親Windowを閉じるためのActionを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-03-11
-
 ## 概要
 `JPopupMenu`や、`JToolBar`などに親`Window`を閉じるための`Action`を作成します。
 

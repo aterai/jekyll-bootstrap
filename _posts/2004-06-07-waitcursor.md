@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Cursorを砂時計に変更
 category: swing
 folder: WaitCursor
+title: Cursorを砂時計に変更
 tags: [Cursor, GlassPane, FocusTraversalPolicy, SwingWorker]
 author: aterai
+pubdate: 2004-06-07
+description: 処理中、マウスカーソルを砂時計に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-07
-
 ## 概要
 処理中、マウスカーソルを砂時計に変更します。
 
@@ -133,17 +132,16 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- <kbd>Tab</kbd>キーで状態遷移しないようにするため、なにもしない`FocusTraversalPolicy`を追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2005-04-18 (月) 10:51:25
-- 相当悩みました。`JDialog`だと同じことができないのは何でなんでしょうねぇ。。。 -- [おれ](http://terai.xrea.jp/おれ.html) 2006-05-17 (水) 16:33:12
-    - カーソルが変わらないのでしょうか? それともコンパイルエラーが出るとかでしょうか? -- [aterai](http://terai.xrea.jp/aterai.html) 2006-05-17 (水) 17:59:14
-- 申し訳ない。カーソルが変わらないのだけれど、`1.5`系でコンパイルするとだめみたい。同じソースでも`1.4`系でコンパイルするとちゃんと変わる。`1.5`でのバグかな。。。 -- [おれ](http://terai.xrea.jp/おれ.html) 2006-05-18 (木) 12:58:11
+- <kbd>Tab</kbd>キーで状態遷移しないようにするため、なにもしない`FocusTraversalPolicy`を追加しました。 -- *aterai* 2005-04-18 (月) 10:51:25
+- 相当悩みました。`JDialog`だと同じことができないのは何でなんでしょうねぇ。。。 -- *おれ* 2006-05-17 (水) 16:33:12
+    - カーソルが変わらないのでしょうか? それともコンパイルエラーが出るとかでしょうか? -- *aterai* 2006-05-17 (水) 17:59:14
+- 申し訳ない。カーソルが変わらないのだけれど、`1.5`系でコンパイルするとだめみたい。同じソースでも`1.4`系でコンパイルするとちゃんと変わる。`1.5`でのバグかな。。。 -- *おれ* 2006-05-18 (木) 12:58:11
     - 追記。`JDialog`のコンストラクタに`null`を指定しているとこうなるようです。オーナフレームを指定してあげたら、`1.5`でもきちんと出ました。お騒がせしました。 -- [おれ](http://terai.xrea.jp/おれ.html)
-    - なるほど、`new JDialog((Frame)null);`で試してみるとカーソルが変わらないですね。情報どうもでした。 -- [aterai](http://terai.xrea.jp/aterai.html) 2006-05-18 (木) 21:45:15
-- `DefaultFocusTraversalPolicy`を使うように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-07-03 (火) 16:39:12
-- `GlassPane`で、`FocusTraversalPolicy`を使わず、`print`を使って`Mnemonic`などをブロックするように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-15 (火) 17:14:09
-- `SwingWorker`を使うように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-03-26 (土) 23:21:11
-- 入力抑制であればAWTEventListenerを追加してInputEventをconsumeしちゃえば良いのでは・・・？ -- [sawshun](http://terai.xrea.jp/sawshun.html) 2014-01-14 (火) 08:32:09
-    - `AWTEventListener`を使うのは便利な方法だと思いますが、セキュリティマネージャの設定によっては`SecurityException`が発生したり、ドキュメントには「[アクセシビリティー、イベントの記録と再生、および診断トレースなどの特別な機能をサポートすることを主な目的としているので、アプリケーションの使用では推奨されません。](http://docs.oracle.com/javase/jp/7/api/java/awt/Toolkit.html#addAWTEventListener%28java.awt.event.AWTEventListener,%20long%29)」的な注意事項があるので、使い所を考慮する必要がありそうです。このサンプルのような場合で`InputEvent#consume()`を使うなら`1.7`以上で`JLayer`を使用する方が無難かもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-01-14 (火) 14:13:39
+    - なるほど、`new JDialog((Frame)null);`で試してみるとカーソルが変わらないですね。情報どうもでした。 -- *aterai* 2006-05-18 (木) 21:45:15
+- `DefaultFocusTraversalPolicy`を使うように変更しました。 -- *aterai* 2007-07-03 (火) 16:39:12
+- `GlassPane`で、`FocusTraversalPolicy`を使わず、`print`を使って`Mnemonic`などをブロックするように変更しました。 -- *aterai* 2008-04-15 (火) 17:14:09
+- `SwingWorker`を使うように変更。 -- *aterai* 2011-03-26 (土) 23:21:11
+- 入力抑制であればAWTEventListenerを追加してInputEventをconsumeしちゃえば良いのでは・・・？ -- *sawshun* 2014-01-14 (火) 08:32:09
+    - `AWTEventListener`を使うのは便利な方法だと思いますが、セキュリティマネージャの設定によっては`SecurityException`が発生したり、ドキュメントには「[アクセシビリティー、イベントの記録と再生、および診断トレースなどの特別な機能をサポートすることを主な目的としているので、アプリケーションの使用では推奨されません。](http://docs.oracle.com/javase/jp/7/api/java/awt/Toolkit.html#addAWTEventListener%28java.awt.event.AWTEventListener,%20long%29)」的な注意事項があるので、使い所を考慮する必要がありそうです。このサンプルのような場合で`InputEvent#consume()`を使うなら`1.7`以上で`JLayer`を使用する方が無難かもしれません。 -- *aterai* 2014-01-14 (火) 14:13:39
 
 <!-- dummy comment line for breaking list -->
-

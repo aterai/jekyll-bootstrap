@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのItemを左右にクリップして配置
 category: swing
 folder: ClippedLRComboBox
+title: JComboBoxのItemを左右にクリップして配置
 tags: [JComboBox, ListCellRenderer, JLabel, JPanel]
 author: aterai
+pubdate: 2005-09-12T13:00:56+09:00
+description: JComboBoxのItemにテキストをクリップして左右に分けて配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-12
-
 ## 概要
 `JComboBox`の`Item`にテキストをクリップして左右に分けて配置します。
 
@@ -84,8 +83,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-09-12
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ポップアップリストが更新されなくなって？、うまくクリップできなくなっていたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-08-13 (水) 15:14:12
-- 選択時の文字色を修正(`Windows 7`などへの対応)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-02-03 (金) 14:28:48
+- ポップアップリストが更新されなくなって？、うまくクリップできなくなっていたのを修正。 -- *aterai* 2008-08-13 (水) 15:14:12
+- 選択時の文字色を修正(`Windows 7`などへの対応)。 -- *aterai* 2012-02-03 (金) 14:28:48
 
 <!-- dummy comment line for breaking list -->
-

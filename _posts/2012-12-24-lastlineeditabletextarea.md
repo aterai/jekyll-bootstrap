@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaの最終行だけ編集可能になるよう設定する
 category: swing
 folder: LastLineEditableTextArea
+title: JTextAreaの最終行だけ編集可能になるよう設定する
 tags: [DocumentFilter, Element, JTextArea, JTextComponent]
 author: aterai
+pubdate: 2012-12-24T00:48:21+09:00
+description: DocumentFilterを使用して最終行のみ編集可能なJTextAreaを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-24
-
 ## 概要
 `DocumentFilter`を使用して最終行のみ編集可能な`JTextArea`を作成します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Browserを起動
 category: swing
 folder: BrowserLauncher
+title: Browserを起動
 tags: [JEditorPane, Html, HyperlinkListener]
 author: aterai
+pubdate: 2006-02-06T14:18:59+09:00
+description: ラベル上のURLがクリックされるとBrowserを起動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-02-06
-
 ## 概要
 ラベル上の`URL`がクリックされると`Browser`を起動します。
 

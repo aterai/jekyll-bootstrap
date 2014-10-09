@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブ文字列をハイライト
 category: swing
 folder: TabTitleHighlight
+title: JTabbedPaneのタブ文字列をハイライト
 tags: [JTabbedPane, MouseMotionListener]
 author: aterai
+pubdate: 2007-12-10T16:19:56+09:00
+description: JTabbedPaneのタブ上に、マウスカーソルがある場合、その文字色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-10
-
 ## 概要
 `JTabbedPane`のタブ上に、マウスカーソルがある場合、その文字色を変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerのボタンを左右に配置する
 category: swing
 folder: SpinnerButtonLayout
+title: JSpinnerのボタンを左右に配置する
 tags: [JSpinner, ArrowButton, LayoutManager]
 author: aterai
+pubdate: 2011-01-24T14:15:43+09:00
+description: JSpinnerのレイアウトを変更して、矢印ボタンを左右に配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
-
 ## 概要
 `JSpinner`のレイアウトを変更して、矢印ボタンを左右に配置します。
 
@@ -54,7 +53,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-24
 </code></pre>
 
 - `L(Prev), R(Next): 2`
-    - `L(Prev), R(Next: 1`と同じレイアウトマネージャーを`JSpinner#setLayout(...)`メソッドをオーバーライドして設定
+    - `L(Prev), R(Next): 1`と同じレイアウトマネージャーを`JSpinner#setLayout(...)`メソッドをオーバーライドして設定
 
 <!-- dummy comment line for breaking list -->
 

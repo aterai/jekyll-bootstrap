@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルにAnimated GIFを表示する
 category: swing
 folder: AnimatedIconInTableCell
+title: JTableのセルにAnimated GIFを表示する
 tags: [JTable, ImageIcon, ImageObserver]
 author: aterai
+pubdate: 2012-03-05T01:22:05+09:00
+description: ImageIconにImageObserverを設定して、JTableのセル中でAnimated GIFのアニメーションを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-03-05
-
 ## 概要
 `ImageIcon`に`ImageObserver`を設定して、`JTable`のセル中で`Animated GIF`のアニメーションを行います。
 

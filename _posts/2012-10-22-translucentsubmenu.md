@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuなどから開くPopupMenuを半透明化
 category: swing
 folder: TranslucentSubMenu
+title: JMenuなどから開くPopupMenuを半透明化
 tags: [JMenu, JMenuItem, JPopupMenu, Translucent]
 author: aterai
+pubdate: 2012-10-22T18:38:06+09:00
+description: JPopupMenuの親のJWindow、JMenuやJMenuItemなどを透明にして、JPopupMenuを半透明にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-10-22
-
 ## 概要
 `JPopupMenu`の親の`JWindow`、`JMenu`や`JMenuItem`などを透明にして、`JPopupMenu`を半透明にします。
 
@@ -152,7 +151,6 @@ class TranslucentPopupFactory extends PopupFactory {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- [Java Bug Database](http://bugs.sun.com/bugdatabase/)の見た目が新しくなっている？ `Fixed Versions`の表示がシンプルになりすぎているような…。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-10-22 (月) 20:22:51
+- [Java Bug Database](http://bugs.sun.com/bugdatabase/)の見た目が新しくなっている？ `Fixed Versions`の表示がシンプルになりすぎているような…。 -- *aterai* 2012-10-22 (月) 20:22:51
 
 <!-- dummy comment line for breaking list -->
-

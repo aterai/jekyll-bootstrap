@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuBarのJMenuを折り返し
 category: swing
 folder: MenuBarLayout
+title: JMenuBarのJMenuを折り返し
 tags: [JMenuBar, JMenu, LayoutManager, FlowLayout]
 author: aterai
+pubdate: 2010-12-27T11:25:50+09:00
+description: JMenuBarのレイアウトマネージャーを変更して、JMenuを折り返して表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-27
-
 ## 概要
 `JMenuBar`のレイアウトマネージャーを変更して、`JMenu`を折り返して表示します。
 

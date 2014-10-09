@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneのHTMLタグにToolTipTextを設定する
 category: swing
 folder: ElementAttribute
+title: JEditorPaneのHTMLタグにToolTipTextを設定する
 tags: [JEditorPane, JTextPane, HTMLDocument, JToolTip, HyperlinkListener]
 author: aterai
+pubdate: 2011-08-08T15:04:19+09:00
+description: JEditorPaneでdivやspanタグのtitle属性をToolTipで表示できるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-08
-
 ## 概要
 `JEditorPane`で`div`や`span`タグの`title`属性を`ToolTip`で表示できるように設定します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの次行にTabキーでフォーカスを移動
 category: swing
 folder: SelectNextRow
+title: JTableの次行にTabキーでフォーカスを移動
 tags: [JTable, InputMap]
 author: aterai
+pubdate: 2005-04-18T01:45:22+09:00
+description: KBD{Tab}キーでセルのフォーカスが次行に移動するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-04-18
-
 ## 概要
 <kbd>Tab</kbd>キーでセルのフォーカスが次行に移動するように設定します。
 

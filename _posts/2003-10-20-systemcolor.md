@@ -1,15 +1,14 @@
 ---
 layout: post
-title: SystemColorの使用
 category: swing
 folder: SystemColor
+title: SystemColorの使用
 tags: [SystemColor]
 author: aterai
+pubdate: 2003-10-20
+description: Swingコンポーネントの色をSystemColorクラスから取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-20
-
 ## 概要
 `Swing`コンポーネントの色を`SystemColor`クラスから取得します。
 
@@ -28,7 +27,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-10-20
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `GTK`の環境でその`SystemColor`を取得することは出来ないようです。`UIManager`を使った方がいいかもしれません。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-07 (月) 17:04:59
+- `GTK`の環境でその`SystemColor`を取得することは出来ないようです。`UIManager`を使った方がいいかもしれません。 -- *aterai* 2007-05-07 (月) 17:04:59
 
 <!-- dummy comment line for breaking list -->
-

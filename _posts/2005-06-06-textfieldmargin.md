@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldのMarginを設定する
 category: swing
 folder: TextFieldMargin
+title: JTextFieldのMarginを設定する
 tags: [JTextField, UIManager, Border]
 author: aterai
+pubdate: 2005-06-06T00:34:45+09:00
+description: JTextField内部の余白を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-06-06
-
 ## 概要
 `JTextField`内部の余白を設定します。
 

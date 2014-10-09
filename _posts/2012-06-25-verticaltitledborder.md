@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TitledBorderのタイトルを縦(左側)に表示する
 category: swing
 folder: VerticalTitledBorder
+title: TitledBorderのタイトルを縦(左側)に表示する
 tags: [Border, TitledBorder, JLabel]
 author: aterai
+pubdate: 2012-06-25T18:19:01+09:00
+description: TitledBorderのタイトル文字列を縦(左側)に表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-06-25
-
 ## 概要
 `TitledBorder`のタイトル文字列を縦(左側)に表示します。
 

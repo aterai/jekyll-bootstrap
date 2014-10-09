@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JToolTipにBorderを設定
 category: swing
 folder: ToolTipBorder
+title: JToolTipにBorderを設定
 tags: [JToolTip, Border]
 author: aterai
+pubdate: 2005-08-15
+description: ツールチップにBorderを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-08-15
-
 ## 概要
 ツールチップに`Border`を設定します。
 

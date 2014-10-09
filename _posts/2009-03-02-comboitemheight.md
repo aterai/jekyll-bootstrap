@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxの高さを変更する
 category: swing
 folder: ComboItemHeight
+title: JComboBoxの高さを変更する
 tags: [JComboBox, ListCellRenderer]
 author: aterai
+pubdate: 2009-03-02T12:37:58+09:00
+description: JComboBox自体の高さや、ドロップダウンリスト内にあるアイテムの高さを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-03-02
-
 ## 概要
 `JComboBox`自体の高さや、ドロップダウンリスト内にあるアイテムの高さを変更します。
 
@@ -47,7 +46,6 @@ combo2.setRenderer(new ListCellRenderer() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `html`タグを使用するサンプルなどを追加。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-12-20 (金) 20:06:03
+- `html`タグを使用するサンプルなどを追加。 -- *aterai* 2013-12-20 (金) 20:06:03
 
 <!-- dummy comment line for breaking list -->
-

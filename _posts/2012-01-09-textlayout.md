@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TextLayoutでFontのメトリック情報を取得する
 category: swing
 folder: TextLayout
+title: TextLayoutでFontのメトリック情報を取得する
 tags: [Font, TextLayout, GlyphVector, LineMetrics, Graphics]
 author: aterai
+pubdate: 2012-01-09T13:16:40+09:00
+description: TextLayoutからFontのAscent、Descent、Leadingなどのメトリック情報を取得して描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-09
-
 ## 概要
 `TextLayout`から`Font`の`Ascent`、`Descent`、`Leading`などのメトリック情報を取得して描画します。
 

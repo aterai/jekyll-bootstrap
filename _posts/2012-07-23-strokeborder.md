@@ -1,15 +1,14 @@
 ---
 layout: post
-title: StrokeBorderを使用する
 category: swing
 folder: StrokeBorder
+title: StrokeBorderを使用する
 tags: [Border, StrokeBorder, BasicStroke]
 author: aterai
+pubdate: 2012-07-23T12:17:18+09:00
+description: Java 1.7.0で導入されたStrokeBorderをテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-23
-
 ## 概要
 `Java 1.7.0`で導入された`StrokeBorder`をテストします。
 
@@ -17,8 +16,8 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-23
 
 ## サンプルコード
 <pre class="prettyprint"><code>dashedStroke = new BasicStroke(5.0f,
-    ((EndCapStyle)endcapCombo.getSelectedItem()).style,
-    ((JoinStyle)joinCombo.getSelectedItem()).style,
+    ((EndCapStyle) endcapCombo.getSelectedItem()).style,
+    ((JoinStyle) joinCombo.getSelectedItem()).style,
     5.0f, getDashArray(), 0.0f);
 label.setBorder(BorderFactory.createStrokeBorder(dashedStroke, Color.RED));
 </code></pre>

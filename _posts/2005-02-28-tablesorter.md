@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableSorterでJTableをソート
 category: swing
 folder: TableSorter
+title: TableSorterでJTableをソート
 tags: [JTable, TableSorter]
 author: aterai
+pubdate: 2005-02-28
+description: JDK 1.5.0以前に、The Java™ TutorialにあったTableSorter.javaを使用して、JTableの行を降順、昇順、初期状態にソートします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-02-28
-
 ## 概要
 `JDK 1.5.0`以前に、`The Java™ Tutorial`にあった`TableSorter.java`を使用して、`JTable`の行を降順、昇順、初期状態にソートします。
 
@@ -97,8 +96,8 @@ JTable table = new JTable(sorter);
 sorter.setTableHeader(table.getTableHeader());
 </code></pre>
 
-- その後、ソートした状態で、一行ずつのデータを取り出した場合、 どうすればよろしいでしょうか？例えば、`No.`欄をソートして、下り順で`No.`欄と`Name`欄のデータを`System.out.println(model.getValueAt(row, 1))`したい場合、その`row`は`sorter`に関連していると思います。 `row=?`かが分かりません。説明下手で、大変申し訳ございません。ご教示をください。よろしくお願い致します。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-08-05 (木) 06:07:47
-    - こんにちは。多分、`sorter.modelIndex(viewIndex);`でいいと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-05 (木) 13:17:51
+- その後、ソートした状態で、一行ずつのデータを取り出した場合、 どうすればよろしいでしょうか？例えば、`No.`欄をソートして、下り順で`No.`欄と`Name`欄のデータを`System.out.println(model.getValueAt(row, 1))`したい場合、その`row`は`sorter`に関連していると思います。 `row=?`かが分かりません。説明下手で、大変申し訳ございません。ご教示をください。よろしくお願い致します。 -- *Tiger* 2010-08-05 (木) 06:07:47
+    - こんにちは。多分、`sorter.modelIndex(viewIndex);`でいいと思います。 -- *aterai* 2010-08-05 (木) 13:17:51
 
 <!-- dummy comment line for breaking list -->
 
@@ -154,8 +153,8 @@ public class SorterModelIndex {
 }
 </code></pre>
 
-- 早速のご回答、ありがとうございました。 選択された行の値を取り出すことができますが、今回表(`jTable`)の内容を`CSV`に書き出そうとしております。即ち選択した行がない場合、ソートをして(上り順`CCC`、`DDD`, `aaa`、`bbb`), `jTable.getValueAt(sorter.modelIndex(i),j);`（ `i`:行　`j`：列）、書き出した結果は（`aaa`, `bbb`, `CCC`, `DDD`）。即ち`sorter`していなかったの状態で書き出されました。読みにくいかもしれませんが、ご教示ください。 宜しくお願い致します -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-08-05 (木) 15:42:51
-    - `JTable`に表示されている見たまま(全選択、<kbd>Ctrl+C</kbd>でコピーして`TSV`)の状態でということでしょうか。それなら`sorter`は関係なく、以下のように`JTable#getValueAt`メソッドを普通に使えばいいかもしれません(`TableModel#getValueAt`と`JTable#getValueAt`の違いに注意)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-05 (木) 17:54:10
+- 早速のご回答、ありがとうございました。 選択された行の値を取り出すことができますが、今回表(`jTable`)の内容を`CSV`に書き出そうとしております。即ち選択した行がない場合、ソートをして(上り順`CCC`、`DDD`, `aaa`、`bbb`), `jTable.getValueAt(sorter.modelIndex(i),j);`（ `i`:行　`j`：列）、書き出した結果は（`aaa`, `bbb`, `CCC`, `DDD`）。即ち`sorter`していなかったの状態で書き出されました。読みにくいかもしれませんが、ご教示ください。 宜しくお願い致します -- *Tiger* 2010-08-05 (木) 15:42:51
+    - `JTable`に表示されている見たまま(全選択、<kbd>Ctrl+C</kbd>でコピーして`TSV`)の状態でということでしょうか。それなら`sorter`は関係なく、以下のように`JTable#getValueAt`メソッドを普通に使えばいいかもしれません(`TableModel#getValueAt`と`JTable#getValueAt`の違いに注意)。 -- *aterai* 2010-08-05 (木) 17:54:10
 
 <!-- dummy comment line for breaking list -->
 
@@ -174,9 +173,9 @@ public class SorterModelIndex {
 }), BorderLayout.SOUTH);
 </code></pre>
 
-- ありがとうございました。ご指摘の通り、できました。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-08-05 (木) 18:08:42
-- いつもお世話になっております。`JDK1.5`を使っています。`Name`と`Comment`欄をソートするとき、`No.`欄はソートさせないで、固定のままできますか？ご教示をよろしくお願いいたします。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-09-10 (金) 12:41:32
-    - こんにちは。以下のようなレンダラーを使って、表示を`row(View)`にしてしまうのが簡単な気がします(<kbd>Ctrl+C</kbd>などでコピーすると`Model`の値がコピーされたりしますが…)。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-09-10 (金) 14:45:58
+- ありがとうございました。ご指摘の通り、できました。 -- *Tiger* 2010-08-05 (木) 18:08:42
+- いつもお世話になっております。`JDK1.5`を使っています。`Name`と`Comment`欄をソートするとき、`No.`欄はソートさせないで、固定のままできますか？ご教示をよろしくお願いいたします。 -- *Tiger* 2010-09-10 (金) 12:41:32
+    - こんにちは。以下のようなレンダラーを使って、表示を`row(View)`にしてしまうのが簡単な気がします(<kbd>Ctrl+C</kbd>などでコピーすると`Model`の値がコピーされたりしますが…)。 -- *aterai* 2010-09-10 (金) 14:45:58
 
 <!-- dummy comment line for breaking list -->
 
@@ -190,7 +189,6 @@ col.setCellRenderer(new DefaultTableCellRenderer() {
   }
 });
 </code></pre>
-- ご教示、ありがとうございました。思ったとおりの動きです。 -- [Tiger](http://terai.xrea.jp/Tiger.html) 2010-09-10 (金) 16:32:27
+- ご教示、ありがとうございました。思ったとおりの動きです。 -- *Tiger* 2010-09-10 (金) 16:32:27
 
 <!-- dummy comment line for breaking list -->
-

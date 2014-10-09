@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Device Nameのチェック
 category: swing
 folder: DeviceName
+title: Device Nameのチェック
 tags: [File]
 author: aterai
+pubdate: 2003-09-08
+description: ファイルチューザーなどで入力されたファイル名が、デバイスファイル名(con、prn、nul、auxなど)でないかチェックします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-08
-
 ## 概要
 ファイルチューザーなどで入力されたファイル名が、デバイスファイル名(`con`、`prn`、`nul`、`aux`など)でないかチェックします。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextComponentでサロゲートペアのテスト
 category: swing
 folder: SurrogatePair
+title: JTextComponentでサロゲートペアのテスト
 tags: [JEditorPane, JTextComponent, Unicode]
 author: aterai
+pubdate: 2012-05-14T11:54:26+09:00
+description: JEditorPaneなどで数値文字参照やUnicodeエスケープを使ってサロゲートペアのテストをします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-05-14
-
 ## 概要
 `JEditorPane`などで数値文字参照や`Unicode`エスケープを使ってサロゲートペアのテストをします。
 
@@ -127,11 +126,10 @@ public class OTFTest {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 結合文字(`A&#x0300;`、`か&#x3099;`)も`JTextComponent`は未対応。~~ブラウザだと`Chrome`は対応されているが、他は部分的な対応になっている？~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-15 (火) 11:17:30
-- `Windows 7` + `JDK 1.7.0`で`OTF`フォントは使えない？？？ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-06 (水) 19:07:01
-- メモ: [Bug ID: 6836089 Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6836089) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-25 (月) 18:37:16
+- 結合文字(`A&#x0300;`、`か&#x3099;`)も`JTextComponent`は未対応。~~ブラウザだと`Chrome`は対応されているが、他は部分的な対応になっている？~~ -- *aterai* 2012-05-15 (火) 11:17:30
+- `Windows 7` + `JDK 1.7.0`で`OTF`フォントは使えない？？？ -- *aterai* 2012-06-06 (水) 19:07:01
+- メモ: [Bug ID: 6836089 Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6836089) -- *aterai* 2012-06-25 (月) 18:37:16
     - via: [<Swing Dev> <Swind Dev> <7u6> Review request for 6836089: Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://mail.openjdk.java.net/pipermail/swing-dev/2012-June/002145.html)
-    - 確かに`JDK 1.6.0_33`では、`&#x26E40;`などの数値文字参照が`JEditorPane`で正常に表示されている。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-06-25 (月) 20:42:16
+    - 確かに`JDK 1.6.0_33`では、`&#x26E40;`などの数値文字参照が`JEditorPane`で正常に表示されている。 -- *aterai* 2012-06-25 (月) 20:42:16
 
 <!-- dummy comment line for breaking list -->
-

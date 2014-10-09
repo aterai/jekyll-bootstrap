@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの選択状態を解除する
 category: swing
 folder: TreeClearSelection
+title: JTreeの選択状態を解除する
 tags: [JTree, MouseListener]
 author: aterai
+pubdate: 2010-12-06T14:44:47+09:00
+description: JTreeでノード以外の領域をマウスでクリックした場合、選択状態を解除します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-12-06
-
 ## 概要
 `JTree`でノード以外の領域をマウスでクリックした場合、選択状態を解除します。
 

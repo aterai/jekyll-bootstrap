@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TitledBorderとMatteBorderを使用してTitledSeparatorを作成する
 category: swing
 folder: TitledSeparator
+title: TitledBorderとMatteBorderを使用してTitledSeparatorを作成する
 tags: [JSeparator, TitledBorder, MatteBorder, JLabel, Icon, LinearGradientPaint]
 author: aterai
+pubdate: 2012-08-27T18:52:36+09:00
+description: TitledBorderとMatteBorderを使用してTitle付きのSeparatorを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-27
-
 ## 概要
 `TitledBorder`と`MatteBorder`を使用して`Title`付きの`Separator`を作成します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaの行をマウスでロールオーバー表示
 category: swing
 folder: MouseOverPainter
+title: JTextAreaの行をマウスでロールオーバー表示
 tags: [JTextArea, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2006-09-25
+description: JTextAreaのマウスカーソルがある行をロールオーバー表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-09-25
-
 ## 概要
 `JTextArea`のマウスカーソルがある行をロールオーバー表示します。
 

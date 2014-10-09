@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのItemを左右に配置
 category: swing
 folder: LRComboBox
+title: JComboBoxのItemを左右に配置
 tags: [JComboBox, Html]
 author: aterai
+pubdate: 2005-01-17
+description: JComboBoxのItemにテキストを左右に分けて配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-17
-
 ## 概要
 `JComboBox`の`Item`にテキストを左右に分けて配置します。
 

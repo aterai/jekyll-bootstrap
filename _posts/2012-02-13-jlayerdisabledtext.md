@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JLayerを使用して無効時のコンポーネントの文字色を変更する
 category: swing
 folder: JLayerDisabledText
+title: JLayerを使用して無効時のコンポーネントの文字色を変更する
 tags: [JLayer, GlassPane, Focus, Mnemonic, JPopupMenu, JToolTip]
 author: aterai
+pubdate: 2012-02-13T14:58:04+09:00
+description: JLayerを使用して、JButtonなどのコンポーネントを無効にしたときの文字色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-13
-
 ## 概要
 `JLayer`を使用して、`JButton`などのコンポーネントを無効にしたときの文字色を変更します。
 

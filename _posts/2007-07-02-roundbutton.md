@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JButtonの形を変更
 category: swing
 folder: RoundButton
+title: JButtonの形を変更
 tags: [JButton, Shape, Graphics]
 author: aterai
+pubdate: 2007-07-02T12:52:49+09:00
+description: 円形や角丸のJButtonを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
-
 ## 概要
 円形や角丸の`JButton`を作成します。
 
@@ -137,7 +136,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-02
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- アイコンを追加したスクリーンショットに更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-07-10 (木) 17:25:34
+- アイコンを追加したスクリーンショットに更新。 -- *aterai* 2008-07-10 (木) 17:25:34
 
 <!-- dummy comment line for breaking list -->
-

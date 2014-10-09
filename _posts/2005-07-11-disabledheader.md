@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderのカラムを選択不可にする
 category: swing
 folder: DisabledHeader
+title: JTableHeaderのカラムを選択不可にする
 tags: [JTable, JTableHeader, TableSorter]
 author: aterai
+pubdate: 2005-07-11
+description: JTableHeaderのカラムを選択不可にして、ソートなどを禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-07-11
-
 ## 概要
 `JTableHeader`のカラムを選択不可にして、ソートなどを禁止します。
 

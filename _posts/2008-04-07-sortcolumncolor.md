@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableでソート中のカラムセル色
 category: swing
 folder: SortColumnColor
+title: JTableでソート中のカラムセル色
 tags: [JTable, TableCellRenderer, TableRowSorter]
 author: aterai
+pubdate: 2008-04-07T12:47:33+09:00
+description: どのカラムでソートされているかを表示するために、セルの背景色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-07
-
 ## 概要
 どのカラムでソートされているかを表示するために、セルの背景色を変更します。
 
@@ -51,7 +50,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-04-07
 上記のサンプルでは、`JTable#getSortKeys()#getSortKeys()`で、ソート中のカラムを取得し、第一キーのカラムセル色を変更しています。
 
 ## コメント
-- このサンプルでは、`NimbusLookAndFeel`などの場合、`BooleanCellRenderer`(`JCheckBox`を使った`Boolean`用のデフォルトセルレンダラー)を使った列の背景色を変更できない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-01-15 (火) 16:33:54
+- このサンプルでは、`NimbusLookAndFeel`などの場合、`BooleanCellRenderer`(`JCheckBox`を使った`Boolean`用のデフォルトセルレンダラー)を使った列の背景色を変更できない。 -- *aterai* 2013-01-15 (火) 16:33:54
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JOptionPaneのデフォルトフォーカス
 category: swing
 folder: OptionPaneDefaultFocus
+title: JOptionPaneのデフォルトフォーカス
 tags: [JOptionPane, Focus, JComponent, WindowListener, HierarchyListener, AncestorListener]
 author: aterai
+pubdate: 2009-11-23T19:41:03+09:00
+description: JOptionPaneにデフォルトでフォーカスをもつコンポーネントを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-11-23
-
 ## 概要
 `JOptionPane`にデフォルトでフォーカスをもつコンポーネントを追加します。
 

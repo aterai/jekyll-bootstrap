@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JDesktopPaneにJInternalFrameを吸着させる
 category: swing
 folder: MagneticFrame
+title: JDesktopPaneにJInternalFrameを吸着させる
 tags: [DesktopManager, JDesktopPane, JInternalFrame]
 author: aterai
+pubdate: 2007-01-01T08:38:12+09:00
+description: JDesktopPaneとJInternalFrameの距離が近くなった場合、これらを自動的に吸着させます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-01
-
 ## 概要
 `JDesktopPane`と`JInternalFrame`の距離が近くなった場合、これらを自動的に吸着させます。
 

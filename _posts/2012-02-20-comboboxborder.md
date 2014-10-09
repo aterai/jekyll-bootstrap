@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのBorderを変更する
 category: swing
 folder: ComboBoxBorder
+title: JComboBoxのBorderを変更する
 tags: [JComboBox, UIManager, Border, ArrowButton, MouseListener, BasicComboPopup]
 author: aterai
+pubdate: 2012-02-20T16:53:02+09:00
+description: JComboBoxの表示部分、矢印ボタン、ドロップダウンリストのBorderや色を変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-20
-
 ## 概要
 `JComboBox`の表示部分、矢印ボタン、ドロップダウンリストの`Border`や色を変更します。
 

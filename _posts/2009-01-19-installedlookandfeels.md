@@ -1,15 +1,14 @@
 ---
 layout: post
-title: LookAndFeelの一覧を取得する
 category: swing
 folder: InstalledLookAndFeels
+title: LookAndFeelの一覧を取得する
 tags: [LookAndFeel, UIManager, JMenuBar]
 author: aterai
+pubdate: 2009-01-19T13:31:06+09:00
+description: インストールされているLookAndFeelの一覧を取得し、これらを切り替えるためのメニューバーを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-01-19
-
 ## 概要
 インストールされている`LookAndFeel`の一覧を取得し、これらを切り替えるためのメニューバーを作成します。[SwingSet3](https://swingset3.dev.java.net/)からの引用です。
 

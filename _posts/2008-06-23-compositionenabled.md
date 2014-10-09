@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセル編集を文字入力変換中からでも可能にする
 category: swing
 folder: CompositionEnabled
+title: JTableのセル編集を文字入力変換中からでも可能にする
 tags: [JTable, InputContext]
 author: aterai
+pubdate: 2008-06-23T13:43:43+09:00
+description: IMEが直接入力以外で、一時ウィンドウが表示されていても、入力確定でセル編集を開始します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-06-23
-
 ## 概要
 `IME`が直接入力以外で、一時ウィンドウが表示されていても、入力確定でセル編集を開始します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: FileをJavaアプリケーションからドロップ
 category: swing
 folder: DragSource
+title: FileをJavaアプリケーションからドロップ
 tags: [DragAndDrop, File, DragGestureListener, TransferHandler]
 author: aterai
+pubdate: 2005-11-14T21:13:08+09:00
+description: JavaアプリケーションからWindowsのデスクトップなどにFileをドロップします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-14
-
 ## 概要
 `Java`アプリケーションから`Windows`のデスクトップなどに`File`をドロップします。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserのデフォルトをDetails Viewに設定
 category: swing
 folder: DetailsViewFileChooser
+title: JFileChooserのデフォルトをDetails Viewに設定
 tags: [JFileChooser, FilePane]
 author: aterai
+pubdate: 2011-01-10T17:02:55+09:00
+description: JFileChooserを開いたときのデフォルトをリストではなく詳細に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-10
-
 ## 概要
 `JFileChooser`を開いたときのデフォルトをリストではなく詳細に変更します。
 

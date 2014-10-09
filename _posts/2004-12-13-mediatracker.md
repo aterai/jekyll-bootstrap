@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MediaTrackerで画像のサイズを取得
 category: swing
 folder: MediaTracker
+title: MediaTrackerで画像のサイズを取得
 tags: [MediaTracker, Image, JTable, DragAndDrop, DropTargetListener]
 author: aterai
+pubdate: 2004-12-13T02:15:06+09:00
+description: MediaTrackerで画像のサイズを取得します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-13
-
 ## 概要
 `MediaTracker`で画像のサイズを取得します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセル内でリンクだけHover可能にする
 category: swing
 folder: PointInsidePrefSize
+title: JTableのセル内でリンクだけHover可能にする
 tags: [JTable, TableCellRenderer, MouseListener, URL]
 author: aterai
+pubdate: 2011-08-29T14:18:50+09:00
+description: JTableのセル内ではなく、内部のリンク上にカーソルがきた場合だけHoverするように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-29
-
 ## 概要
 `JTable`のセル内ではなく、内部のリンク上にカーソルがきた場合だけ`Hover`するように設定します。
 
@@ -97,7 +96,6 @@ private static boolean isURLColumn(JTable table, int column) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `SwingSet3`の"HyperlinkCellRenderer.java"を参考にして、再描画するセルの範囲を最適化、ついでに`HyperlinkCellRenderer#checkIfPointInsideHyperlink(Point)`ではセルコンポーネントの内余白(`Insets`)が考慮されていないので修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-09-16 (金) 18:45:29
+- `SwingSet3`の"HyperlinkCellRenderer.java"を参考にして、再描画するセルの範囲を最適化、ついでに`HyperlinkCellRenderer#checkIfPointInsideHyperlink(Point)`ではセルコンポーネントの内余白(`Insets`)が考慮されていないので修正。 -- *aterai* 2011-09-16 (金) 18:45:29
 
 <!-- dummy comment line for breaking list -->
-

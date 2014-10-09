@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableをソートした後の選択状態
 category: swing
 folder: UpdateSelectionOnSort
+title: JTableをソートした後の選択状態
 tags: [JTable, TableRowSorter, JTableHeader, MouseListener]
 author: aterai
+pubdate: 2008-03-24T14:15:18+09:00
+description: JDK 1.6で導入されたRowSorterを使って、JTableをソートした場合、直前の選択状態がどう変化するかテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-24
-
 ## 概要
 `JDK 1.6`で導入された`RowSorter`を使って、`JTable`をソートした場合、直前の選択状態がどう変化するかテストします。
 

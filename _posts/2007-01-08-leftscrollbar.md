@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollBarをJScrollPaneの左と上に配置
 category: swing
 folder: LeftScrollBar
+title: JScrollBarをJScrollPaneの左と上に配置
 tags: [JScrollBar, JScrollPane, BorderLayout]
 author: aterai
+pubdate: 2007-01-08T14:26:45+09:00
+description: JScrollBarの配置位置を、JScrollPaneの左側、上側に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-01-08
-
 ## 概要
 `JScrollBar`の配置位置を、`JScrollPane`の左側、上側に変更します。
 
@@ -45,8 +44,7 @@ add(scroll, BorderLayout.CENTER);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- グッド -- [a1](http://terai.xrea.jp/a1.html) 2008-12-26 (金) 13:52:59
+- グッド -- *a1* 2008-12-26 (金) 13:52:59
     - どうも -- [aterai](http://terai.xrea.jp/aterai.html)
 
 <!-- dummy comment line for breaking list -->
-

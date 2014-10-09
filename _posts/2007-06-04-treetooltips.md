@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのToolTipsを表示
 category: swing
 folder: TreeToolTips
+title: JTreeのToolTipsを表示
 tags: [JTree, JToolTip, ToolTipManager, TreeCellRenderer]
 author: aterai
+pubdate: 2007-06-04
+description: JTreeのノードのToolTipsを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-06-04
-
 ## 概要
 `JTree`のノードの`ToolTips`を表示します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Htmlを使ったJLabelとJEditorPaneの無効化
 category: swing
 folder: DisabledHtmlLabel
+title: Htmlを使ったJLabelとJEditorPaneの無効化
 tags: [Html, JLabel, JEditorPane, UIManager]
 author: aterai
+pubdate: 2007-12-24T23:18:44+09:00
+description: Htmlを使ったJLabelと、JEditorPaneをsetEnabled(false)で無効にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-12-24
-
 ## 概要
 `Html`を使った`JLabel`と、`JEditorPane`を`setEnabled(false)`で無効にします。
 

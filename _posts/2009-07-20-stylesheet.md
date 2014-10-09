@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JEditorPaneのHTMLEditorKitにCSSを適用
 category: swing
 folder: StyleSheet
+title: JEditorPaneのHTMLEditorKitにCSSを適用
 tags: [JEditorPane, StyleSheet, HTMLEditorKit]
 author: aterai
+pubdate: 2009-07-20T14:20:10+09:00
+description: JEditorPaneにStyleSheetを追加したHTMLEditorKitを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-07-20
-
 ## 概要
 `JEditorPane`に`StyleSheet`を追加した`HTMLEditorKit`を設定します。
 
@@ -41,7 +40,6 @@ editor.setText(makeTestHtml());
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `HTMLEditorKit`の`CSS`で、色は`3`桁表記(`color: #RGB`) には対応していない？(`6`桁表記 `color:#RRGGBB`は問題なく使用可) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-05-28 (月) 17:52:03
+- `HTMLEditorKit`の`CSS`で、色は`3`桁表記(`color: #RGB`) には対応していない？(`6`桁表記 `color:#RRGGBB`は問題なく使用可) -- *aterai* 2012-05-28 (月) 17:52:03
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ServerSocketを使ってアプリケーションの複数起動を禁止
 category: swing
 folder: SingleInstanceApplication
+title: ServerSocketを使ってアプリケーションの複数起動を禁止
 tags: [ServerSocket, SingleInstance]
 author: aterai
+pubdate: 2008-02-18T16:46:47+09:00
+description: ServerSocketを使ってポートをロック代わりに使用し、アプリケーションの複数起動を禁止します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-18
-
 ## 概要
 `ServerSocket`を使ってポートをロック代わりに使用し、アプリケーションの複数起動を禁止します。[Java Swing Hacks #68 単一インスタンスのアプリケーションを作る](http://www.oreilly.co.jp/books/4873112788/toc.html) を参考にしています。
 
@@ -19,10 +18,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-02-18
 <pre class="prettyprint"><code>ServerSocket socket = null;
 try {
   socket = new ServerSocket(38765);
-}catch(IOException e) {
+} catch (IOException e) {
   socket = null;
 }
-if(socket==null) {
+if (socket==null) {
   JOptionPane.showMessageDialog(null, "An instance of the application is already running...");
   return;
 }

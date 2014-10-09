@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxのモデルとしてenumを使用する
 category: swing
 folder: SortingAnimations
+title: JComboBoxのモデルとしてenumを使用する
 tags: [JComboBox, Enum, Animation, SwingWorker]
 author: aterai
+pubdate: 2007-07-09T14:59:22+09:00
+description: JComboBoxのモデルとしてenumを使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-07-09
-
 ## 概要
 `JComboBox`のモデルとして`enum`を使用します。
 

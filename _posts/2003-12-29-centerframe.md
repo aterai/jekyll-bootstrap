@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameをスクリーン中央に表示
 category: swing
 folder: CenterFrame
+title: JFrameをスクリーン中央に表示
 tags: [JFrame]
 author: aterai
+pubdate: 2003-12-29
+description: フレームやダイアログなどをスクリーンの中央に表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-12-29
-
 ## 概要
 フレームやダイアログなどをスクリーンの中央に表示します。
 
@@ -36,9 +35,8 @@ frame.setVisible(true);
 どちらも、フレームを`pack()`、もしくは`setSize(int,int)`した後で実行するようにしてください。
 
 ## コメント
-- `1.4`以降なら、`setLocationRelativeTo(null)`でも中央になりますよ。 -- [Wata](http://terai.xrea.jp/Wata.html) 2004-06-07 (月) 17:47:08
-    - こんな方法があったんですね。参考になりました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2004-06-07 (月) 19:26:17
-    - というわけで、`src.zip`などを更新してみました。ありがとうございました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2004-06-07 (月) 19:44:21
+- `1.4`以降なら、`setLocationRelativeTo(null)`でも中央になりますよ。 -- *Wata* 2004-06-07 (月) 17:47:08
+    - こんな方法があったんですね。参考になりました。 -- *aterai* 2004-06-07 (月) 19:26:17
+    - というわけで、`src.zip`などを更新してみました。ありがとうございました。 -- *aterai* 2004-06-07 (月) 19:44:21
 
 <!-- dummy comment line for breaking list -->
-

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerの上下限値をBigDecimalで比較する
 category: swing
 folder: BigDecimalSpinnerModel
+title: JSpinnerの上下限値をBigDecimalで比較する
 tags: [JSpinner, BigDecimal, SpinnerNumberModel]
 author: aterai
+pubdate: 2014-01-20T02:06:20+09:00
+description: JSpinnerで浮動小数点型のモデルを使用する場合、最大値と最小値の比較をBigDecimalで行うよう変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-01-20
-
 ## 概要
 `JSpinner`で浮動小数点型のモデルを使用する場合、最大値と最小値の比較を`BigDecimal`で行うよう変更します。
 

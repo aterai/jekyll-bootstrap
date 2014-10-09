@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListで異なる高さのセルを使用
 category: swing
 folder: DifferentCellHeight
+title: JListで異なる高さのセルを使用
 tags: [JList, JTextArea, ListCellRenderer]
 author: aterai
+pubdate: 2006-05-15T09:36:24+09:00
+description: JListのレンダラーにJTextAreaを使って、異なる高さのセルを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-05-15
-
 ## 概要
 `JList`のレンダラーに`JTextArea`を使って、異なる高さのセルを作成します。
 
@@ -72,7 +71,7 @@ private DefaultListModel makeList() {
 </code></pre>
 
 ## 参考リンク
-- [JList#setFixedCellHeight(int)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JList.html#setFixedCellHeight%28int%29)
+- [JList#setFixedCellHeight(int) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/javax/swing/JList.html#setFixedCellHeight-int-)
 
 <!-- dummy comment line for breaking list -->
 

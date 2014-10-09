@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldの角を丸める
 category: swing
 folder: RoundedTextField
+title: JTextFieldの角を丸める
 tags: [JTextField, Border, Shape]
 author: aterai
+pubdate: 2010-10-04T21:07:50+09:00
+description: 角丸のJTextFieldを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-10-04
-
 ## 概要
 角丸の`JTextField`を作成します。
 
@@ -89,7 +88,6 @@ textField01.setText("aaaaaaaaaaa");
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `TextUI#paintSafely(...)`をオーバーライドして、`JTextField`内を上書きする方法はやめて、`Area#subtract`で切り抜いた図形を親の背景色で描画する方法に変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-21 (水) 02:37:10
+- `TextUI#paintSafely(...)`をオーバーライドして、`JTextField`内を上書きする方法はやめて、`Area#subtract`で切り抜いた図形を親の背景色で描画する方法に変更。 -- *aterai* 2012-03-21 (水) 02:37:10
 
 <!-- dummy comment line for breaking list -->
-

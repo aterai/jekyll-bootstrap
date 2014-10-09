@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MnemonicをクリアしてJButtonを初期状態に戻す
 category: swing
 folder: ClearMnemonic
+title: MnemonicをクリアしてJButtonを初期状態に戻す
 tags: [JButton, Mnemonic]
 author: aterai
+pubdate: 2012-01-30T16:49:29+09:00
+description: JButtonに設定されたMnemonicをクリアして初期状態に戻します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-01-30
-
 ## 概要
 `JButton`に設定された`Mnemonic`をクリアして初期状態に戻します。
 

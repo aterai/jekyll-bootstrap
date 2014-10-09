@@ -1,15 +1,14 @@
 ---
 layout: post
-title: FlatteningPathIteratorでShape上の点を取得する
 category: swing
 folder: FlatteningPathIterator
+title: FlatteningPathIteratorでShape上の点を取得する
 tags: [Shape, PathIterator, FlatteningPathIterator]
 author: aterai
+pubdate: 2013-07-08T01:45:24+09:00
+description: FlatteningPathIteratorを使って平坦化されたShape上の座標点を取得、描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-07-08
-
 ## 概要
 `FlatteningPathIterator`を使って平坦化された`Shape`上の座標点を取得、描画します。
 

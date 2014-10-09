@@ -1,15 +1,14 @@
 ---
 layout: post
-title: CellEditorをJSpinnerにして日付を変更
 category: swing
 folder: DateCellEditor
+title: CellEditorをJSpinnerにして日付を変更
 tags: [JTable, TableCellEditor, JSpinner, Focus, ChangeListener]
 author: aterai
+pubdate: 2008-09-22T13:48:58+09:00
+description: JTableで、日付を表示する列のセルエディタをJSpinnerにします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-22
-
 ## 概要
 `JTable`で、日付を表示する列のセルエディタを`JSpinner`にします。
 
@@ -108,7 +107,6 @@ table.setSurrendersFocusOnKeystroke(true);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JTextField`を直接編集して、<kbd>Tab</kbd>キーなどで編集終了すると`ArrayIndexOutOfBoundsException`が発生するバグを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-30 (木) 19:56:25
+- `JTextField`を直接編集して、<kbd>Tab</kbd>キーなどで編集終了すると`ArrayIndexOutOfBoundsException`が発生するバグを修正。 -- *aterai* 2013-05-30 (木) 19:56:25
 
 <!-- dummy comment line for breaking list -->
-

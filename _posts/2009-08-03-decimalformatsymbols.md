@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerの文字列を非表示にする
 category: swing
 folder: DecimalFormatSymbols
+title: JSpinnerの文字列を非表示にする
 tags: [JSpinner, SpinnerNumberModel, JFormattedTextField, DecimalFormatSymbols]
 author: aterai
+pubdate: 2009-08-03T20:40:16+09:00
+description: SpinnerNumberModelを使用するJSpinnerを無効にしたとき、数値を非表示にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-03
-
 ## 概要
 `SpinnerNumberModel`を使用する`JSpinner`を無効にしたとき、数値を非表示にします。
 

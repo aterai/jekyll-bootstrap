@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxにアイコンを表示
 category: swing
 folder: IconComboBox
+title: JComboBoxにアイコンを表示
 tags: [JComboBox, Icon, ListCellRenderer, MatteBorder]
 author: aterai
+pubdate: 2004-12-27T01:32:14+09:00
+description: JComboBoxを編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-12-27
-
 ## 概要
 `JComboBox`を編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
 

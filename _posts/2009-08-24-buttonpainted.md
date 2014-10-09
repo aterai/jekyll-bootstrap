@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JButtonの描画
 category: swing
 folder: ButtonPainted
+title: JButtonの描画
 tags: [JButton, Focus, Icon]
 author: aterai
+pubdate: 2009-08-24T12:58:07+09:00
+description: JButtonの状態描画をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-08-24
-
 ## 概要
 `JButton`の状態描画をテストします。
 

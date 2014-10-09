@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneの余白に文字列を表示
 category: swing
 folder: TabbedPaneWithText
+title: JTabbedPaneの余白に文字列を表示
 tags: [JTabbedPane, FontMetrics, JLayer]
 author: aterai
+pubdate: 2005-12-26T12:36:53+09:00
+description: JTabbedPaneの右側の余白に文字列を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-12-26
-
 ## 概要
 `JTabbedPane`の右側の余白に文字列を表示します。[Swing - JTabbedPane with non-tabbed text](https://forums.oracle.com/thread/1392495)の投稿からソースコードを引用しています。
 

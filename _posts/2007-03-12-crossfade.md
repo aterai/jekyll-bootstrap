@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Crossfadeで画像の切り替え
 category: swing
 folder: Crossfade
+title: Crossfadeで画像の切り替え
 tags: [Animation, ImageIcon, AlphaComposite]
 author: aterai
+pubdate: 2007-03-12T13:33:16+09:00
+description: Crossfadeアニメーションで画像の切り替えを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-03-12
-
 ## 概要
 `Crossfade`アニメーションで画像の切り替えを行います。
 

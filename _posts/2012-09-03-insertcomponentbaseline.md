@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextPaneに追加するコンポーネントのベースラインを揃える
 category: swing
 folder: InsertComponentBaseline
+title: JTextPaneに追加するコンポーネントのベースラインを揃える
 tags: [JTextPane, JComponent, Baseline]
 author: aterai
+pubdate: 2012-09-03T06:06:39+09:00
+description: JTextPaneに追加するコンポーネントのベースラインが他の文字列などとを揃うように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-09-03
-
 ## 概要
 `JTextPane`に追加するコンポーネントのベースラインが他の文字列などとを揃うように設定します。
 

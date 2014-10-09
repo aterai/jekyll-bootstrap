@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerの値をパーセントで指定
 category: swing
 folder: NumberEditor
+title: JSpinnerの値をパーセントで指定
 tags: [JSpinner]
 author: aterai
+pubdate: 2005-10-31T11:17:46+09:00
+description: JSpinnerの値をパーセントで指定するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-10-31
-
 ## 概要
 `JSpinner`の値をパーセントで指定するように設定します。
 

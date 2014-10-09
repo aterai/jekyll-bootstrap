@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFileChooserに画像プレビューを追加
 category: swing
 folder: PreviewAccessory
+title: JFileChooserに画像プレビューを追加
 tags: [JFileChooser, ImageIcon, PropertyChangeListener]
 author: aterai
+pubdate: 2006-11-20
+description: JFileChooserに画像のプレビュー機能を追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-20
-
 ## 概要
 `JFileChooser`に画像のプレビュー機能を追加します。プレビューを表示するコンポーネントは、チュートリアルの[ImagePreview.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java)をそのまま利用しています。
 

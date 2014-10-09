@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Focusの移動
 category: swing
 folder: FocusTraversal
+title: Focusの移動
 tags: [FocusTraversalPolicy, Focus]
 author: aterai
+pubdate: 2004-04-26
+description: FocusTraversalPolicyを使って、KBD{Tab}キーなどによるフォーカスの移動を制御します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-04-26
-
 ## 概要
 `FocusTraversalPolicy`を使って、<kbd>Tab</kbd>キーなどによるフォーカスの移動を制御します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuItemの内部にJButtonを配置する
 category: swing
 folder: ButtonsInMenuItem
+title: JMenuItemの内部にJButtonを配置する
 tags: [JMenuItem, JButton, GridBagLayout, JLayer]
 author: aterai
+pubdate: 2013-11-25T00:04:55+09:00
+description: JMenuItemの内部に切り取り、コピー、貼り付けを行うJButtonを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-11-25
-
 ## 概要
 `JMenuItem`の内部に切り取り、コピー、貼り付けを行う`JButton`を配置します。
 
@@ -112,6 +111,8 @@ private static AbstractButton makeButton(String title, Action action) {
 
 ## 参考リンク
 - [Custom JMenuItems in Java](http://stackoverflow.com/questions/5972368/custom-jmenuitems-in-java)
+- [JPopupMenuのレイアウトを変更して上部にメニューボタンを追加する](http://terai.xrea.jp/Swing/PopupMenuLayout.html)
+    - こちらは`JPopupMenu`のレイアウトを変更してボタンメニューを作成している
 
 <!-- dummy comment line for breaking list -->
 

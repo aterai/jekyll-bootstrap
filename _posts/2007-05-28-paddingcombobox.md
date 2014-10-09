@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JComboBoxの内余白
 category: swing
 folder: PaddingComboBox
+title: JComboBoxの内余白
 tags: [JComboBox, Border, LookAndFeel, JTextField]
 author: aterai
+pubdate: 2007-05-28T05:42:18+09:00
+description: JComboBoxのエディタなどに内余白を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-28
-
 ## 概要
 `JComboBox`のエディタなどに内余白を設定します。
 
@@ -132,11 +131,10 @@ UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0,5,0,0))
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~なんだか、よく分からなくなってきましたorz。~~ -- [aterai](http://terai.xrea.jp/aterai.html) 2008-03-11 (火) 21:38:58
+- ~~なんだか、よく分からなくなってきましたorz。~~ -- *aterai* 2008-03-11 (火) 21:38:58
     - `JDK 1.6.0_10-beta-b22`で、`BasicComboBoxUI`の`padding`にすこし修正が入っている？ようです。
-- `LookAndFeel`の切り替えなどを追加しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-04-02 (水) 20:08:01
-- `1.7.0_06`で`Nimbus`などの`ComboBox.popupInsets`が修正？ [Bug ID: 7158712 Synth Property "ComboBox.popupInsets" is ignored](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7158712) -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-15 (水) 13:58:34
-- `Windows 7`の`LookAndFeel`、編集不可の`JComboBox`で、`( (JLabel)combo.getRenderer() ).setBorder(padding);`が`JComboBox`本体に効かない(フォーカスのための`Border`のせい？)ため、セルレンダラーを作成して毎回余白を適用するように変更。このため、`Windows 7`の`LookAndFeel`では、`JComboBox`本体の点線によるフォーカス表示が無くなる。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-19 (火) 15:37:19
+- `LookAndFeel`の切り替えなどを追加しました。 -- *aterai* 2008-04-02 (水) 20:08:01
+- `1.7.0_06`で`Nimbus`などの`ComboBox.popupInsets`が修正？ [Bug ID: 7158712 Synth Property "ComboBox.popupInsets" is ignored](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7158712) -- *aterai* 2012-08-15 (水) 13:58:34
+- `Windows 7`の`LookAndFeel`、編集不可の`JComboBox`で、`( (JLabel)combo.getRenderer() ).setBorder(padding);`が`JComboBox`本体に効かない(フォーカスのための`Border`のせい？)ため、セルレンダラーを作成して毎回余白を適用するように変更。このため、`Windows 7`の`LookAndFeel`では、`JComboBox`本体の点線によるフォーカス表示が無くなる。 -- *aterai* 2013-11-19 (火) 15:37:19
 
 <!-- dummy comment line for breaking list -->
-

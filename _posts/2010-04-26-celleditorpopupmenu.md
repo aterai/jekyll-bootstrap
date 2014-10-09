@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルエディタにJPopupMenuを設定
 category: swing
 folder: CellEditorPopupMenu
+title: JTableのセルエディタにJPopupMenuを設定
 tags: [JTable, TableCellEditor, UndoManager, JPopupMenu, AncestorListener]
 author: aterai
+pubdate: 2010-04-26T16:54:26+09:00
+description: JTableのセルエディタに、Copy、Paste、Undo、Redoなどを行うJPopupMenuを設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-26
-
 ## 概要
 `JTable`のセルエディタに、`Copy`、`Paste`、`Undo`、`Redo`などを行う`JPopupMenu`を設定します。
 

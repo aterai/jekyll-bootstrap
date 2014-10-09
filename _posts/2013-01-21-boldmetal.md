@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MetalLookAndFeelで太字フォントを使用しない
 category: swing
 folder: BoldMetal
+title: MetalLookAndFeelで太字フォントを使用しない
 tags: [MetalLookAndFeel, LookAndFeel, Font, UIManager, Html]
 author: aterai
+pubdate: 2013-01-21T00:02:35+09:00
+description: MetalLookAndFeelで太字フォントを使用しないように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-01-21
-
 ## 概要
 `MetalLookAndFeel`で太字フォントを使用しないように設定します。
 

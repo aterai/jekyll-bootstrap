@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneのタブにJTextFieldを配置してタイトルを編集
 category: swing
 folder: TabTitleEditor
+title: JTabbedPaneのタブにJTextFieldを配置してタイトルを編集
 tags: [JTabbedPane, JTextField, MouseListener, ChangeListener, InputMap, ActionMap]
 author: aterai
+pubdate: 2008-09-08T14:02:08+09:00
+description: JTabbedPaneで選択されたタブにJTextFieldを配置し、そのタイトルを編集します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-09-08
-
 ## 概要
 `JTabbedPane`で選択されたタブに`JTextField`を配置し、そのタイトルを編集します。
 
@@ -77,7 +76,6 @@ private void renameTabTitle() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `setTabComponentAt(...)`メソッドで閉じるボタンなどと併用していた場合、編集後にそのボタンなどが消える不具合をメールで指摘してもらったので、修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2010-08-10 (火) 16:47:33
+- `setTabComponentAt(...)`メソッドで閉じるボタンなどと併用していた場合、編集後にそのボタンなどが消える不具合をメールで指摘してもらったので、修正。 -- *aterai* 2010-08-10 (火) 16:47:33
 
 <!-- dummy comment line for breaking list -->
-

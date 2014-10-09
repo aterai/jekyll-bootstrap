@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextFieldの表示領域をJScrollBarでスクロールする
 category: swing
 folder: HorizontalVisibility
+title: JTextFieldの表示領域をJScrollBarでスクロールする
 tags: [JTextField, JScrollBar, BoundedRangeModel]
 author: aterai
+pubdate: 2014-05-12T00:05:11+09:00
+description: JTextFieldの表示領域をJScrollBarでスクロール可能にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
-
 ## 概要
 `JTextField`の表示領域を`JScrollBar`でスクロール可能にします。
 
@@ -125,8 +124,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-05-12
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](http://terai.xrea.jp/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-14 (水) 16:05:32
-- サンプルの追加と、スクリーンショットの更新。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-27 (火) 16:12:38
+- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](http://terai.xrea.jp/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- *aterai* 2014-05-14 (水) 16:05:32
+- サンプルの追加と、スクリーンショットの更新。 -- *aterai* 2014-05-27 (火) 16:12:38
 
 <!-- dummy comment line for breaking list -->
-

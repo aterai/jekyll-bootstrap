@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TabComponentの名前を更新
 category: swing
 folder: RevalidateTabComponent
+title: TabComponentの名前を更新
 tags: [JTabbedPane, JPopupMenu, JButton]
 author: aterai
+pubdate: 2010-08-30T18:25:18+09:00
+description: TabComponentを使用するJTabbedPaneで、タブ名称を編集更新します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-08-30
-
 ## 概要
 `TabComponent`を使用する`JTabbedPane`で、タブ名称を編集更新します。
 

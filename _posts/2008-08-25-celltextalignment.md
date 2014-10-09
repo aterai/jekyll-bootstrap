@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセル文字揃え
 category: swing
 folder: CellTextAlignment
+title: JTableのセル文字揃え
 tags: [JTable, TableCellRenderer, Alignment]
 author: aterai
+pubdate: 2008-08-25T14:45:47+09:00
+description: JTableのセルに表示されている文字列の揃えを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-08-25
-
 ## 概要
 `JTable`のセルに表示されている文字列の揃えを変更します。
 

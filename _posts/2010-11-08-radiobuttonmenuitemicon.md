@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JRadioButtonMenuItemのチェックアイコンを変更する
 category: swing
 folder: RadioButtonMenuItemIcon
+title: JRadioButtonMenuItemのチェックアイコンを変更する
 tags: [JRadioButtonMenuItem, Icon, UIManager]
 author: aterai
+pubdate: 2010-11-08T16:26:30+09:00
+description: JRadioButtonMenuItemのチェックアイコンを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-08
-
 ## 概要
 `JRadioButtonMenuItem`のチェックアイコンを変更します。
 
@@ -64,7 +63,6 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Windows 7`でテストするとアイコンの歪みはないようです。修正されてたのかも？ -- [aterai](http://terai.xrea.jp/aterai.html) 2012-08-08 (水) 19:51:09
+- `Windows 7`でテストするとアイコンの歪みはないようです。修正されてたのかも？ -- *aterai* 2012-08-08 (水) 19:51:09
 
 <!-- dummy comment line for breaking list -->
-

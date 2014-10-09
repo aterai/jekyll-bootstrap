@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextPaneを一行に制限してスタイル可能なJTextFieldとして使用する
 category: swing
 folder: OneLineTextPane
+title: JTextPaneを一行に制限してスタイル可能なJTextFieldとして使用する
 tags: [JTextPane, StyledDocument, JScrollPane, JTextField, KeyboardFocusManager, Focus, InputMap, ActionMap]
 author: aterai
+pubdate: 2013-05-06T00:34:13+09:00
+description: JTextPaneの行数を一行のみに制限して、文字色などのスタイル付けが可能なJTextFieldとして使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-05-06
-
 ## 概要
 `JTextPane`の行数を一行のみに制限して、文字色などのスタイル付けが可能な`JTextField`として使用します。
 
@@ -84,8 +83,7 @@ JScrollPane scrollPane = new JScrollPane(
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JTextField`では、`aaaaa|bbbbb`でカーソル`|`の位置に文字を追加していくと領域外にカーソルが移動した時点で`bbbbb`が表示されるようにスクロールするが、ここの`OneLineTextPane`では未対応。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-05-06 (月) 15:35:00
-- `InputMap`と`ActionMap`を間違えて使用していた箇所を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2013-11-01 (金) 17:55:13
+- `JTextField`では、`aaaaa|bbbbb`でカーソル`|`の位置に文字を追加していくと領域外にカーソルが移動した時点で`bbbbb`が表示されるようにスクロールするが、ここの`OneLineTextPane`では未対応。 -- *aterai* 2013-05-06 (月) 15:35:00
+- `InputMap`と`ActionMap`を間違えて使用していた箇所を修正。 -- *aterai* 2013-11-01 (金) 17:55:13
 
 <!-- dummy comment line for breaking list -->
-

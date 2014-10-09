@@ -1,15 +1,14 @@
 ---
 layout: post
-title: OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成
 category: swing
 folder: CompoundButton
+title: OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成
 tags: [OverlayLayout, JButton, Icon]
 author: aterai
+pubdate: 2012-11-26T15:04:48+09:00
+description: 4つの扇形ボタンと円形ボタンを、OverlayLayoutを設定したJPanelに配置して、複合ボタンを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-11-26
-
 ## 概要
 `4`つの扇形ボタンと円形ボタンを、`OverlayLayout`を設定した`JPanel`に配置して、複合ボタンを作成します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableRowSorterのSortKeysをクリアする
 category: swing
 folder: ClearSortingState
+title: TableRowSorterのSortKeysをクリアする
 tags: [JTable, TableRowSorter, MouseListener]
 author: aterai
+pubdate: 2007-08-27T12:33:13+09:00
+description: JDK 6で導入されたTableRowSorterでの行ソートを、テーブルヘッダのKBD{Shift}+クリックでクリアします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-08-27
-
 ## 概要
 `JDK 6`で導入された`TableRowSorter`での行ソートを、テーブルヘッダの<kbd>Shift</kbd>+クリックでクリアします。
 

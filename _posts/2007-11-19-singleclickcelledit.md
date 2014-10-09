@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルをシングルクリックで編集する
 category: swing
 folder: SingleClickCellEdit
+title: JTableのセルをシングルクリックで編集する
 tags: [JTable, TableCellEditor]
 author: aterai
+pubdate: 2007-11-19T13:45:37+09:00
+description: JTableのセルをマウスでシングルクリックすると編集状態になるように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-11-19
-
 ## 概要
 `JTable`のセルをマウスでシングルクリックすると編集状態になるように設定します。
 

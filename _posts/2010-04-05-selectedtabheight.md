@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTabbedPaneで選択したタブの高さを変更
 category: swing
 folder: SelectedTabHeight
+title: JTabbedPaneで選択したタブの高さを変更
 tags: [JTabbedPane]
 author: aterai
+pubdate: 2010-04-05T04:28:58+09:00
+description: JTabbedPaneで選択したタブの高さを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-05
-
 ## 概要
 `JTabbedPane`で選択したタブの高さを変更します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSpinnerで日付を設定
 category: swing
 folder: SpinnerDateModel
+title: JSpinnerで日付を設定
 tags: [JSpinner, SpinnerDateModel, FocusListener, Calendar]
 author: aterai
+pubdate: 2011-08-22T15:46:11+09:00
+description: JSpinnerを使って日付を設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-08-22
-
 ## 概要
 `JSpinner`を使って日付を設定します。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Screen上にあるMouseの位置を取得する
 category: swing
 folder: MouseInfo
+title: Screen上にあるMouseの位置を取得する
 tags: [MouseInfo, Timer]
 author: aterai
+pubdate: 2007-10-29T13:39:49+09:00
+description: Screen上にあるMouseの絶対位置を取得して、パネル内のラケットを移動します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-10-29
-
 ## 概要
 `Screen`上にある`Mouse`の絶対位置を取得して、パネル内のラケットを移動します。
 
@@ -51,7 +50,6 @@ public MainPanel() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- スクリーンショットの間違いを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-12-28 (金) 14:41:53
+- スクリーンショットの間違いを修正。 -- *aterai* 2007-12-28 (金) 14:41:53
 
 <!-- dummy comment line for breaking list -->
-

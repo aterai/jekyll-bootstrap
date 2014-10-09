@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TrayIconでJPopupMenuを使用する
 category: swing
 folder: TrayIconPopupMenu
+title: TrayIconでJPopupMenuを使用する
 tags: [TrayIcon, JPopupMenu, JDialog]
 author: aterai
+pubdate: 2011-01-31T15:26:03+09:00
+description: TrayIconをクリックしてJPopupMenuを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-01-31
-
 ## 概要
 `TrayIcon`をクリックして`JPopupMenu`を表示します。
 
@@ -125,10 +124,9 @@ private static Point adjustPopupLocation(JPopupMenu popup, int xposition, int yp
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ソースを上げ忘れていたのを修正orz。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-02 (水) 19:07:51
-- `JRE1.6.0u3`で`2`度連続で右クリックすると`ClassCastException`起きちゃうんですよね・・・`BugParade`でも見つけらんなかったです -- [sawshun](http://terai.xrea.jp/sawshun.html) 2011-10-25 (火) 18:45:38
-    - どうもです。こちらでも`WindowsXP`+`Java6u3`の環境で、`TrayIcon`上で右クリックを繰り返すと、`ClassCastException: java.awt.TrayIcon cannot be cast to java.awt.Component`が発生するのを確認しました。`bugs.sun.com`を調べたら、`6u10`で修正された [Bug ID: 6583251 One more ClassCastException in Swing with TrayIcon](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6583251)がそれっぽい気がします。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-10-26 (水) 00:56:41
-- 情報ありがとうございます・・・`u10`か・・・`SynthUI`がらみの大きなパッケージ変更がイやで古代の`Ver`を利用しているのでちょっと工夫してみます -- [sawshun](http://terai.xrea.jp/sawshun.html) 2011-10-27 (木) 10:45:59
+- ソースを上げ忘れていたのを修正orz。 -- *aterai* 2011-02-02 (水) 19:07:51
+- `JRE1.6.0u3`で`2`度連続で右クリックすると`ClassCastException`起きちゃうんですよね・・・`BugParade`でも見つけらんなかったです -- *sawshun* 2011-10-25 (火) 18:45:38
+    - どうもです。こちらでも`WindowsXP`+`Java6u3`の環境で、`TrayIcon`上で右クリックを繰り返すと、`ClassCastException: java.awt.TrayIcon cannot be cast to java.awt.Component`が発生するのを確認しました。`bugs.sun.com`を調べたら、`6u10`で修正された [Bug ID: 6583251 One more ClassCastException in Swing with TrayIcon](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6583251)がそれっぽい気がします。 -- *aterai* 2011-10-26 (水) 00:56:41
+- 情報ありがとうございます・・・`u10`か・・・`SynthUI`がらみの大きなパッケージ変更がイやで古代の`Ver`を利用しているのでちょっと工夫してみます -- *sawshun* 2011-10-27 (木) 10:45:59
 
 <!-- dummy comment line for breaking list -->
-

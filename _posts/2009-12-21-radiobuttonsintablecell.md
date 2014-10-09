@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセル中にJRadioButtonを配置
 category: swing
 folder: RadioButtonsInTableCell
+title: JTableのセル中にJRadioButtonを配置
 tags: [JTable, JRadioButton, TableCellRenderer, TableCellEditor, JPanel, ActionListener]
 author: aterai
+pubdate: 2009-12-21T00:36:55+09:00
+description: JTableのセル中に複数のJRadioButtonを配置します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
-
 ## 概要
 `JTable`のセル中に複数の`JRadioButton`を配置します。[JTableExamples2](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples2.html)を元に修正を行っています。
 
@@ -91,8 +90,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-12-21
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JRadioButton`を`3`つ配置した`JPanel`を、`CellRenderer`、`CellEditor`用に`2`つ用意しています。`CellEditor`内の各`JRadioButton`には、クリックされたら編集を終了して更新をコミットするための`ActionListener`を追加しています。
-
+上記のサンプルでは、`JRadioButton`を`3`つ配置した`JPanel`を、`CellRenderer`、`CellEditor`用に`2`つ用意しています。`CellEditor`内の各`JRadioButton`には、クリックされたら編集を終了して更新を`TableModel`にコミットするための`ActionListener`を追加しています。
 
 ## 参考リンク
 - [JTableExamples2](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples2.html)

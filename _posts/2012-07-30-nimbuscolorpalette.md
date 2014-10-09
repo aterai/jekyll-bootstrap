@@ -1,15 +1,14 @@
 ---
 layout: post
-title: NimbusLookAndFeelのカラーパレット
 category: swing
 folder: NimbusColorPalette
+title: NimbusLookAndFeelのカラーパレット
 tags: [NimbusLookAndFeel, UIDefaults, JProgressBar]
 author: aterai
+pubdate: 2012-07-30T13:49:19+09:00
+description: NimbusLookAndFeelのカラーパレットを変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-30
-
 ## 概要
 `NimbusLookAndFeel`のカラーパレットを変更します。
 

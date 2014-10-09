@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのすべてのノードにJCheckBoxを追加する
 category: swing
 folder: CheckBoxNodeEditor
+title: JTreeのすべてのノードにJCheckBoxを追加する
 tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, TreeModelListener]
 author: aterai
+pubdate: 2012-02-06T14:38:59+09:00
+description: JTreeのすべてのノードに編集可能なJCheckBoxを追加します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
-
 ## 概要
 `JTree`のすべてのノードに編集可能な`JCheckBox`を追加します。
 
@@ -216,7 +215,6 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-02-06
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 親ノードまでではなく、ルートノードまで不定状態の変更を行うように修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-23 (金) 17:43:32
+- 親ノードまでではなく、ルートノードまで不定状態の変更を行うように修正。 -- *aterai* 2012-03-23 (金) 17:43:32
 
 <!-- dummy comment line for breaking list -->
-

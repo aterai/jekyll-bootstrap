@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSplitPaneの収納状態を維持する
 category: swing
 folder: KeepHiddenDivider
+title: JSplitPaneの収納状態を維持する
 tags: [JSplitPane, ActionMap, JButton]
 author: aterai
+pubdate: 2010-07-26T06:35:29+09:00
+description: JSplitPaneのサイズが変更されても、ディバイダの収納状態を維持するように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-07-26
-
 ## 概要
 `JSplitPane`のサイズが変更されても、ディバイダの収納状態を維持するように設定します。
 
@@ -90,7 +89,6 @@ smax.setModel(selectMaxModel);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JSplitPane.setOneTouchExpandable(true);`を使用せず、`JSplitPane`からコンポーネントを削除(`null`に置き換える)追加することで、収納展開する方法(`setVisible(...)`だと収納はうまくいくけど、正常に展開ができない):  [java - Hide left/right component of a JSplitPane (or different layout) - Stack Overflow](http://stackoverflow.com/questions/14644362/hide-left-right-component-of-a-jsplitpane-or-different-layout) -- [aterai](http://terai.xrea.jp/aterai.html) 2013-02-01 (金) 20:14:58
+- `JSplitPane.setOneTouchExpandable(true);`を使用せず、`JSplitPane`からコンポーネントを削除(`null`に置き換える)追加することで、収納展開する方法(`setVisible(...)`だと収納はうまくいくけど、正常に展開ができない):  [java - Hide left/right component of a JSplitPane (or different layout) - Stack Overflow](http://stackoverflow.com/questions/14644362/hide-left-right-component-of-a-jsplitpane-or-different-layout) -- *aterai* 2013-02-01 (金) 20:14:58
 
 <!-- dummy comment line for breaking list -->
-

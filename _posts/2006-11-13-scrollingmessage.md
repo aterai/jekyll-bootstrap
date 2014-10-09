@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GlyphVectorで文字列を電光掲示板風にスクロール
 category: swing
 folder: ScrollingMessage
+title: GlyphVectorで文字列を電光掲示板風にスクロール
 tags: [GlyphVector, LineMetrics, TextLayout, Animation, JComponent]
 author: aterai
+pubdate: 2006-11-13
+description: GlyphVectorを生成して、これを電光掲示板のようにスクロールさせます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-13
-
 ## 概要
 `GlyphVector`を生成して、これを電光掲示板のようにスクロールさせます。
 

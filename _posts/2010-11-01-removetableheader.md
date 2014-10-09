@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableHeaderを非表示にする
 category: swing
 folder: RemoveTableHeader
+title: JTableHeaderを非表示にする
 tags: [JTable, JTableHeader, JScrollPane]
 author: aterai
+pubdate: 2010-11-01T15:50:29+09:00
+description: JTableHeaderの表示、非表示を切り替えます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-01
-
 ## 概要
 `JTableHeader`の表示、非表示を切り替えます。
 

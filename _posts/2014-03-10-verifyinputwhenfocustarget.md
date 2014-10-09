@@ -1,15 +1,14 @@
 ---
 layout: post
-title: InputVerifierを設定したJTextFieldの値が不正な場合のフォーカス移動
 category: swing
 folder: VerifyInputWhenFocusTarget
+title: InputVerifierを設定したJTextFieldの値が不正な場合のフォーカス移動
 tags: [JTextField, InputVerifier, Focus]
 author: aterai
+pubdate: 2014-03-10T10:15:22+09:00
+description: InputVerifierを設定したJTextFieldの値が適切な形式でない場合のフォーカス移動動作をテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-10
-
 ## 概要
 `InputVerifier`を設定した`JTextField`の値が適切な形式でない場合のフォーカス移動動作をテストします。
 
@@ -20,7 +19,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-10
 </code></pre>
 
 ## 解説
-上記のサンプルでは、フォーカスが別のコンポーネントに移動する時に、現在フォーカスを持つコンポーネントの`InputVerifier`で値を検証するかを
+上記のサンプルでは、フォーカスが別のコンポーネントに移動する時に、現在フォーカスを持つコンポーネントの`InputVerifier`で値を検証するかを設定をかえてテストしています。
 
 - `Default`:
     - `JBUtton`のデフォルトで、`getVerifyInputWhenFocusTarget()`が`true`、`isFocusable()`も`true`

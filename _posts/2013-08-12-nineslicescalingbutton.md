@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JButtonに9分割した画像を使用する
 category: swing
 folder: NineSliceScalingButton
+title: JButtonに9分割した画像を使用する
 tags: [JButton, Icon, BufferedImage, RGBImageFilter]
 author: aterai
+pubdate: 2013-08-12T00:58:18+09:00
+description: JButtonを拡大縮小しても四隅などのサイズが変更しないようにように9分割した画像を使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-12
-
 ## 概要
 `JButton`を拡大縮小しても四隅などのサイズが変更しないようにように`9`分割した画像を使用します。
 

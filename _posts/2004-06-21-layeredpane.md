@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JInternalFrameを一番手前に表示
 category: swing
 folder: LayeredPane
+title: JInternalFrameを一番手前に表示
 tags: [JLayeredPane, JInternalFrame, JDesktopPane]
 author: aterai
+pubdate: 2004-06-21T07:16:58+09:00
+description: JLayeredPaneを使って、常に一番手前に表示されるJInternalFrameを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-21
-
 ## 概要
 `JLayeredPane`を使って、常に一番手前に表示される`JInternalFrame`を作成します。
 
@@ -37,9 +36,8 @@ iframe.setVisible(true);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JDK 1.5.0`で`JFrame`などは、`frame.setAlwaysOnTop(true)`が使えるようになっています。 -- [aterai](http://terai.xrea.jp/aterai.html) 2004-10-08 (金) 17:00:59
-- ありがとうございます。現在`GUI`の作成をしていて、目下この情報を探していました。ありがとうございました -- [G](http://terai.xrea.jp/G.html) 2004-12-24 (金) 12:00:00
+- `JDK 1.5.0`で`JFrame`などは、`frame.setAlwaysOnTop(true)`が使えるようになっています。 -- *aterai* 2004-10-08 (金) 17:00:59
+- ありがとうございます。現在`GUI`の作成をしていて、目下この情報を探していました。ありがとうございました -- *G* 2004-12-24 (金) 12:00:00
     - どういたしまして。 -- [aterai](http://terai.xrea.jp/aterai.html)
 
 <!-- dummy comment line for breaking list -->
-

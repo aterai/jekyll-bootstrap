@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Windowの形を変更
 category: swing
 folder: WindowShape
+title: Windowの形を変更
 tags: [JFrame, Shape, TextLayout]
 author: aterai
+pubdate: 2011-12-19T19:46:54+09:00
+description: Windowの形を非矩形図形に変更します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-12-19
-
 ## 概要
 `Window`の形を非矩形図形に変更します。
 

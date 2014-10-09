@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JScrollPaneのオートスクロール
 category: swing
 folder: AutoScroll
+title: JScrollPaneのオートスクロール
 tags: [JScrollPane, JViewport, JScrollPane, DragAndDrop, Timer, MouseListener, MouseMotionListener]
 author: aterai
+pubdate: 2004-11-22T01:00:20+09:00
+description: JScrollPane上でのマウスドラッグに応じてラベルをオートスクロールします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
-
 ## 概要
 `JScrollPane`上でのマウスドラッグに応じてラベルをオートスクロールします。
 
@@ -94,8 +93,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-11-22
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 猫の手スクロール風の動作に変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-05-24 (木) 19:16:16
-- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ動作をするように変更しました。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-12-22 (木) 18:38:02
+- 猫の手スクロール風の動作に変更しました。 -- *aterai* 2007-05-24 (木) 19:16:16
+- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ動作をするように変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
 
 <!-- dummy comment line for breaking list -->
-

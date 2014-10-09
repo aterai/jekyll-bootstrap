@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの行の高さを変更する
 category: swing
 folder: FishEyeTable
+title: JTableの行の高さを変更する
 tags: [JTable, MouseMotionListener, MouseListener]
 author: aterai
+pubdate: 2008-11-24T16:48:07+09:00
+description: JTableの行の高さを変更して、マウスカーソルの下を魚眼レンズのように拡大します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-11-24
-
 ## 概要
 `JTable`の行の高さを変更して、マウスカーソルの下を魚眼レンズのように拡大します。
 
@@ -63,7 +62,6 @@ public void initRowHeigth(int height, int ccRow) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- スクリーンショット更新 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-12-25 (木) 16:12:54
+- スクリーンショット更新 -- *aterai* 2008-12-25 (木) 16:12:54
 
 <!-- dummy comment line for breaking list -->
-

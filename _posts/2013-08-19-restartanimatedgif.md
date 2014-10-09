@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ImageIconのリソースを開放してAnimatedGifを最初から再生する
 category: swing
 folder: RestartAnimatedGif
+title: ImageIconのリソースを開放してAnimatedGifを最初から再生する
 tags: [ImageIcon, Animation, JButton, JLabel]
 author: aterai
+pubdate: 2013-08-19T00:06:01+09:00
+description: JButtonなどのコンポーネントに設定したAnimatedGifのリソースを一旦解放して最初から再生します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-08-19
-
 ## 概要
 `JButton`などのコンポーネントに設定した`AnimatedGif`のリソースを一旦解放して最初から再生します。[java - Animated ImageIcon as Button - Stack Overflow](http://stackoverflow.com/questions/18270701/animated-imageicon-as-button)を参考にしています。
 

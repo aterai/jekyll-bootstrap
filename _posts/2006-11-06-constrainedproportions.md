@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JFrameの縦横比を一定にする
 category: swing
 folder: ConstrainedProportions
+title: JFrameの縦横比を一定にする
 tags: [JFrame]
 author: aterai
+pubdate: 2006-11-06
+description: JFrameの幅と高さの比率が一定になるように制限します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2006-11-06
-
 ## 概要
 `JFrame`の幅と高さの比率が一定になるように制限します。
 
@@ -38,7 +37,6 @@ frame.addComponentListener(new ComponentAdapter() {
 
 ## コメント
 - これはドラッグ中は自由なサイズでボタンを離したときにサイズが正しく変更されます。ドラッグ中も正しい比率になるのは無理でしょうか？ --  2007-11-10 (土) 00:17:13
-    - ども。今の`Java`だけだと難しいかもしれません。すこし調べてみます。 -- [aterai](http://terai.xrea.jp/aterai.html) 2007-11-12 (月) 11:45:22
+    - ども。今の`Java`だけだと難しいかもしれません。すこし調べてみます。 -- *aterai* 2007-11-12 (月) 11:45:22
 
 <!-- dummy comment line for breaking list -->
-

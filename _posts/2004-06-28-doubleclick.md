@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのセルをダブルクリック
 category: swing
 folder: DoubleClick
+title: JTableのセルをダブルクリック
 tags: [JTable, MouseListener]
 author: aterai
+pubdate: 2004-06-28T05:48:37+09:00
+description: JTableのセルをダブルクリックして内容を表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-06-28
-
 ## 概要
 `JTable`のセルをダブルクリックして内容を表示します。
 
@@ -38,7 +37,6 @@ table.addMouseListener(new MouseAdapter() {
 上記のサンプルでは、セルをマウスでダブルクリックするとダイアログが開くようになっています。各セルはクリックで編集状態になってしまわないように、すべて編集不可にしています。
 
 ## コメント
-- 行以外の場所をダブルクリックすると、`IndexOutOfBoundsException`が発生する不具合を修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2011-02-02 (水) 19:09:18
+- 行以外の場所をダブルクリックすると、`IndexOutOfBoundsException`が発生する不具合を修正。 -- *aterai* 2011-02-02 (水) 19:09:18
 
 <!-- dummy comment line for breaking list -->
-

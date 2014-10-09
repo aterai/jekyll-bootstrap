@@ -1,15 +1,14 @@
 ---
 layout: post
-title: EventListenerを実装して独自イベント作成
 category: swing
 folder: EventListener
+title: EventListenerを実装して独自イベント作成
 tags: [EventListener, EventListenerList]
 author: aterai
+pubdate: 2004-01-26
+description: イベント(イベントオブジェクト、イベントリスナー、イベントソース)を新たに作成し、これを使用します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-01-26
-
 ## 概要
 イベント(イベントオブジェクト、イベントリスナー、イベントソース)を新たに作成し、これを使用します。
 
@@ -100,7 +99,6 @@ protected void fireFontChangeEvent(String cmd, Font font) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `EventListenerList`を使用する方法を追加、リンクを追加、整理。 -- [aterai](http://terai.xrea.jp/aterai.html) 2008-06-18 (水) 12:57:22
+- `EventListenerList`を使用する方法を追加、リンクを追加、整理。 -- *aterai* 2008-06-18 (水) 12:57:22
 
 <!-- dummy comment line for breaking list -->
-

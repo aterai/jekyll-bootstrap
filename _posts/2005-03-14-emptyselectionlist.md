@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JListを選択不可にする
 category: swing
 folder: EmptySelectionList
+title: JListを選択不可にする
 tags: [JList, ListCellRenderer, ListSelectionModel]
 author: aterai
+pubdate: 2005-03-14
+description: JListを選択出来ないように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-03-14
-
 ## 概要
 `JList`を選択出来ないように設定します。
 

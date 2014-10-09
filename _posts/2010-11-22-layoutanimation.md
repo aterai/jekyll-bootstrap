@@ -1,15 +1,14 @@
 ---
 layout: post
-title: LayoutManagerを使ってパネルの展開アニメーションを行う
 category: swing
 folder: LayoutAnimation
+title: LayoutManagerを使ってパネルの展開アニメーションを行う
 tags: [LayoutManager, Animation, BorderLayout, JTree, JPanel]
 author: aterai
+pubdate: 2010-11-22T14:41:14+09:00
+description: パネルの展開・収納をアニメーションで行うLayoutManagerを作成します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-11-22
-
 ## 概要
 パネルの展開・収納をアニメーションで行う`LayoutManager`を作成します。
 

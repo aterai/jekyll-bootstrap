@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableの複数キーを使ったソートをヘッダに表示する
 category: swing
 folder: MultisortHeaderRenderer
+title: JTableの複数キーを使ったソートをヘッダに表示する
 tags: [JTable, JTableHeader, TableRowSorter, Icon]
 author: aterai
+pubdate: 2013-10-14T00:15:08+09:00
+description: JTableの複数キーを使ったソートの状態をヘッダ上に別途表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-10-14
-
 ## 概要
 `JTable`の複数キーを使ったソートの状態をヘッダ上に別途表示します。
 

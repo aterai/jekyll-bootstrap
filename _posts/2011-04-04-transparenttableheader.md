@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTableのヘッダを透明化
 category: swing
 folder: TransparentTableHeader
+title: JTableのヘッダを透明化
 tags: [JTable, JTableHeader, Transparent, JScrollPane, JViewport, TableCellRenderer, TableCellEditor]
 author: aterai
+pubdate: 2011-04-04T16:49:46+09:00
+description: JTableのヘッダ背景、セル間の垂直罫線を非表示にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2011-04-04
-
 ## 概要
 `JTable`のヘッダ背景、セル間の垂直罫線を非表示にします。
 

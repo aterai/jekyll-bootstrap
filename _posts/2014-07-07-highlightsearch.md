@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextAreaでハイライト付き検索を行う
 category: swing
 folder: HighlightSearch
+title: JTextAreaでハイライト付き検索を行う
 tags: [JTextArea, JTextField, JLayer, Highlighter, Matcher, Pattern]
 author: aterai
+pubdate: 2014-07-07T00:34:07+09:00
+description: JTextArea内の文字列を指定した条件で検索し、マッチした文字列をすべてハイライト表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-07-07
-
 ## 概要
 `JTextArea`内の文字列を指定した条件で検索し、マッチした文字列をすべてハイライト表示します。
 
@@ -90,7 +89,6 @@ private void changeHighlight() {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Match case`の動作が逆になっていたのを修正。 -- [aterai](http://terai.xrea.jp/aterai.html) 2014-07-23 (水) 17:57:58
+- `Match case`の動作が逆になっていたのを修正。 -- *aterai* 2014-07-23 (水) 17:57:58
 
 <!-- dummy comment line for breaking list -->
-

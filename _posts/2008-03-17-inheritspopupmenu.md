@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JPopupMenuの取得を親に委譲
 category: swing
 folder: InheritsPopupMenu
+title: JPopupMenuの取得を親に委譲
 tags: [JPopupMenu, JScrollPane, JViewport, JTable, JTableHeader]
 author: aterai
+pubdate: 2008-03-17T13:34:51+09:00
+description: 親コンポーネントに設定されているJPopupMenuを取得して、これを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-03-17
-
 ## 概要
 親コンポーネントに設定されている`JPopupMenu`を取得して、これを表示します。
 

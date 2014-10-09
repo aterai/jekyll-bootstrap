@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JMenuの領域内にマウスカーソルでポップアップメニューを表示する
 category: swing
 folder: PopupWithoutClickOnMenu
+title: JMenuの領域内にマウスカーソルでポップアップメニューを表示する
 tags: [JMenu, MouseListener]
 author: aterai
+pubdate: 2013-02-18T00:29:59+09:00
+description: JMenuの領域内にマウスカーソルが入ったときにポップアップメニューが開くように設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-18
-
 ## 概要
 `JMenu`の領域内にマウスカーソルが入ったときにポップアップメニューが開くように設定します。
 
@@ -18,13 +17,13 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2013-02-18
 ## サンプルコード
 <pre class="prettyprint"><code>visitAll(menubar, new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
-    if(check.isSelected()) {
-      ((AbstractButton)e.getSource()).doClick();
+    if (check.isSelected()) {
+      ((AbstractButton) e.getSource()).doClick();
     }
   }
   @Override public void mouseEntered(MouseEvent e) {
-    if(check.isSelected()) {
-      ((AbstractButton)e.getSource()).doClick();
+    if (check.isSelected()) {
+      ((AbstractButton) e.getSource()).doClick();
     }
   }
 });

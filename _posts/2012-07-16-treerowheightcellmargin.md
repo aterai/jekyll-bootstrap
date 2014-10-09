@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeのノードアイコンサイズとテキストの選択状態
 category: swing
 folder: TreeRowHeightCellMargin
+title: JTreeのノードアイコンサイズとテキストの選択状態
 tags: [JTree, TreeCellRenderer, Margin, Icon, JLabel]
 author: aterai
+pubdate: 2012-07-16T23:28:29+09:00
+description: JTreeのノードアイコンによって行の高さが変更された場合のテキストの選択状態を修正します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-07-16
-
 ## 概要
 `JTree`のノードアイコンによって行の高さが変更された場合のテキストの選択状態を修正します。
 

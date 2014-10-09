@@ -1,15 +1,14 @@
 ---
 layout: post
-title: GridLayoutとJScrollPaneを使ったグリッド単位での表示切り替え
 category: swing
 folder: GridScrollAnimation
+title: GridLayoutとJScrollPaneを使ったグリッド単位での表示切り替え
 tags: [JScrollPane, JPanel, GridLayout, Animation]
 author: aterai
+pubdate: 2012-08-13T16:28:05+09:00
+description: JPanelにGridLayoutでコンポーネントを追加し、これをJScrollPaneに配置して、グリッド単位での表示、スクロールアニメーションによる切り替えを行います。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-08-13
-
 ## 概要
 `JPanel`に`GridLayout`でコンポーネントを追加し、これを`JScrollPane`に配置して、グリッド単位での表示、スクロールアニメーションによる切り替えを行います。
 

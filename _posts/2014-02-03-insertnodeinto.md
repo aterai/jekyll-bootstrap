@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeへのノード追加をテスト
 category: swing
 folder: InsertNodeInto
+title: JTreeへのノード追加をテスト
 tags: [JTree, DefaultTreeModel, DefaultMutableTreeNode]
 author: aterai
+pubdate: 2014-02-03T12:43:56+09:00
+description: JTreeにノード追加をした場合、兄弟ノードの展開状態などがどうなるかをテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-02-03
-
 ## 概要
 `JTree`にノード追加をした場合、兄弟ノードの展開状態などがどうなるかをテストします。
 
@@ -35,7 +34,7 @@ tree2.scrollPathToVisible(new TreePath(child2.getPath()));
 
 - 左: `p.add(c) & m.reload(p)`
     - `DefaultMutableTreeNode#add(...)`メソッドを使用して、親ノードの末尾に子ノードを追加
-        - 追加する子ノードが親ノードを持つ場合は、そこから削除される
+        - 追加する子ノードが親ノードを持つ場合、その親子関係は削除される(子ノードが持つ親ノードはひとつのみ)
     - `DefaultTreeModel#reload(...)`、または`DefaultTreeModel#nodeStructureChanged(DefaultMutableTreeNode)`でモデルに更新を通知
         - 兄弟ノードの展開状態などがすべて閉じた状態にリセットされてしまう
 - 右: `m.insertNodeInto(c, p, p.size)`

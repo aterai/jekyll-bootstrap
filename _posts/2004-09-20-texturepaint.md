@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TexturePaintを使って背景に画像を表示
 category: swing
 folder: TexturePaint
+title: TexturePaintを使って背景に画像を表示
 tags: [TexturePaint, BufferedImage, Graphics2D]
 author: aterai
+pubdate: 2004-09-20
+description: TexturePaintを使用して背景にタイル状に画像を貼り付けます。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2004-09-20
-
 ## 概要
 `TexturePaint`を使用して背景にタイル状に画像を貼り付けます。
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: TableColumnの幅を比率で設定
 category: swing
 folder: HeaderRatio
+title: TableColumnの幅を比率で設定
 tags: [JTable, JTableHeader, TableColumn, JScrollPane]
 author: aterai
+pubdate: 2005-11-28T18:26:47+09:00
+description: TableColumnの幅を比率で設定します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-11-28
-
 ## 概要
 `TableColumn`の幅を比率で設定します。
 
@@ -57,7 +56,7 @@ private void setRaito() {
 - `ComponentListener#componentResized(...)`がチェックされている場合
     - `JScrollPane`に追加した`ComponentListener`で、リサイズされる毎に全ての列幅を設定し直すので、フレームのサイズを変更してもカラムの比率は保持される
 - `ComponentListener#componentResized(...)`がチェックされていない場合
-    - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズすると、その幅の変更([デルタ](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTable.html#doLayout%28%29))が、リサイズ可能なすべての列に分散して加算減算される
+    - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズすると、その幅の変更([デルタ](http://docs.oracle.com/javase/jp/8/api/javax/swing/JTable.html#doLayout--))が、リサイズ可能なすべての列に分散して加算減算される
         - このため、入力されている比率とは異なる列幅になる
 
 <!-- dummy comment line for breaking list -->
@@ -65,9 +64,8 @@ private void setRaito() {
 - - - -
 `TableColumn#setMaxWidth`メソッドでカラムの幅を指定する場合は、マウスのドラッグによるサイズの変更はできません。
 
-
 ## 参考リンク
-- [デルタの分散 - JTable#doLayout()](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTable.html#doLayout%28%29)
+- [デルタの分散 - JTable#doLayout() (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/javax/swing/JTable.html#doLayout--)
 
 <!-- dummy comment line for breaking list -->
 

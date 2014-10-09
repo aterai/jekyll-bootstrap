@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Animated GIFでのコマ描画時処理
 category: swing
 folder: AnimatedGif
+title: Animated GIFでのコマ描画時処理
 tags: [JLabel, Animation]
 author: aterai
+pubdate: 2007-05-14T19:32:29+09:00
+description: JLabelなどで使用できるAnimated GIFファイルをテストします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2007-05-14
-
 ## 概要
 `JLabel`などで使用できる`Animated GIF`ファイルをテストします。
 
@@ -53,8 +52,7 @@ JLabel label4 = new JLabel("直前の画像に戻す",
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Swing`のバージョンを入れておいてもらえますか？現バージョンでも背景色でつぶすにしないと残像が残るんでしょうか？ -- [とおりすがり](http://terai.xrea.jp/とおりすがり.html) 2009-05-14 (木) 19:32:37
-    - `Windows XP`で現バージョン(`1.5.0_18`, `1.6.0_14`, `1.7.0`)を実行してみましたが、同様だと思います。 -- [aterai](http://terai.xrea.jp/aterai.html) 2009-05-14 (木) 21:14:04
+- `Swing`のバージョンを入れておいてもらえますか？現バージョンでも背景色でつぶすにしないと残像が残るんでしょうか？ -- *とおりすがり* 2009-05-14 (木) 19:32:37
+    - `Windows XP`で現バージョン(`1.5.0_18`, `1.6.0_14`, `1.7.0`)を実行してみましたが、同様だと思います。 -- *aterai* 2009-05-14 (木) 21:14:04
 
 <!-- dummy comment line for breaking list -->
-

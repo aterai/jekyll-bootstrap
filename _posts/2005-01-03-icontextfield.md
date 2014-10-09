@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTextField内にアイコンを追加
 category: swing
 folder: IconTextField
+title: JTextField内にアイコンを追加
 tags: [JTextField, ImageIcon, JLabel, Border]
 author: aterai
+pubdate: 2005-01-03
+description: JTextFieldの内部にアイコンを表示します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2005-01-03
-
 ## 概要
 `JTextField`の内部にアイコンを表示します。
 

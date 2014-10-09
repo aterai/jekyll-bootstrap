@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JSliderの目盛りをアイコンに変更する
 category: swing
 folder: TriangleTickSlider
+title: JSliderの目盛りをアイコンに変更する
 tags: [JSlider, Icon, JLabel]
 author: aterai
+pubdate: 2010-05-24T15:00:41+09:00
+description: JSliderの目盛りをアイコンで描画します。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-05-24
-
 ## 概要
 `JSlider`の目盛りをアイコンで描画します。
 

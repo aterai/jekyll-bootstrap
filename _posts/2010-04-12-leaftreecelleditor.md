@@ -1,15 +1,14 @@
 ---
 layout: post
-title: JTreeの葉ノードだけ編集可能にする
 category: swing
 folder: LeafTreeCellEditor
+title: JTreeの葉ノードだけ編集可能にする
 tags: [JTree, TreeCellEditor, TreeNode]
 author: aterai
+pubdate: 2010-04-12T18:23:41+09:00
+description: JTreeの葉ノードだけ編集可能にします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2010-04-12
-
 ## 概要
 `JTree`の葉ノードだけ編集可能にします。
 

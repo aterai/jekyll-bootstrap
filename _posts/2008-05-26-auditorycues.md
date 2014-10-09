@@ -1,15 +1,14 @@
 ---
 layout: post
-title: AuditoryCuesでイベント音を設定する
 category: swing
 folder: AuditoryCues
+title: AuditoryCuesでイベント音を設定する
 tags: [UIManager, AuditoryCues, Sound, JOptionPane]
 author: aterai
+pubdate: 2008-05-26T17:13:17+09:00
+description: UIManagerにAuditoryCues.playListを設定して、ダイアログが開いた時の警告音などを鳴らします。
 comments: true
 ---
-
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2008-05-26
-
 ## 概要
 `UIManager`に`AuditoryCues.playList`を設定して、ダイアログが開いた時の警告音などを鳴らします。
 
@@ -51,7 +50,7 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 - [Swing コンポーネントの音声フィードバック](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/SwingChanges.html#Miscellaneous)
 - [Merlinの魔術: Swingのオーディオ](http://www.ibm.com/developerworks/jp/java/library/j-mer0730/)
 - ["taitai studio" フリーWav素材集](http://www.taitaistudio.com/wav/)
-    - wavファイルを拝借しています。
+    - `wav`ファイルを拝借しています。
 - [Beep音を鳴らす](http://terai.xrea.jp/Swing/Beep.html)
 - [MIDIファイルの演奏](http://terai.xrea.jp/Swing/MidiSystem.html)
 - [Wavファイルの演奏](http://terai.xrea.jp/Swing/Sound.html)
