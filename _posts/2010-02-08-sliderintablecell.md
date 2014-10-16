@@ -23,8 +23,8 @@ comments: true
   }
   @Override public Component getTableCellRendererComponent(JTable table,
       Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-    Integer i = (Integer)value;
-    setBackground(isSelected?table.getSelectionBackground():table.getBackground());
+    Integer i = (Integer) value;
+    setBackground(isSelected ? table.getSelectionBackground() : table.getBackground());
     setValue(i.intValue());
     return this;
   }
@@ -51,7 +51,7 @@ comments: true
   }
   @Override public Component getTableCellEditorComponent(JTable table,
       Object value, boolean isSelected, int row, int column) {
-    Integer i = (Integer)value;
+    Integer i = (Integer) value;
     this.setBackground(table.getSelectionBackground());
     this.setValue(i.intValue());
     return this;

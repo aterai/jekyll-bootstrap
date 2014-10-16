@@ -191,6 +191,7 @@ public class MainPanel extends JPanel {
 - [PersistenceService](http://docs.oracle.com/javase/jp/6/technotes/guides/javaws/developersguide/examples.html#PersistenceService)
 - [PersistenceService Demo](http://www.finnw.me.uk/persistencetest.html)
 - [JFrameの位置・サイズを記憶する](http://terai.xrea.jp/Swing/Preferences.html)
+- [JTableのモデルをXMLファイルで保存、復元する](http://terai.xrea.jp/Swing/PersistenceDelegate.html)
 
 <!-- dummy comment line for breaking list -->
 

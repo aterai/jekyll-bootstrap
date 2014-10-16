@@ -17,23 +17,24 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class MultisortHeaderRenderer implements TableCellRenderer {
   @Override public Component getTableCellRendererComponent(
-      JTable table, Object value, boolean isSelected,
-      boolean hasFocus, int row, int column) {
-    if(table.getRowSorter()!=null) {
+      JTable table, Object value, boolean isSelected, boolean hasFocus,
+      int row, int column) {
+    String str = Objects.toString(value, "");
+    if (table.getRowSorter() != null) {
       List&lt;?&gt; keys = table.getRowSorter().getSortKeys();
       int max = keys.size();
-      for(int i=0; i&lt;max; i++) {
-        TableRowSorter.SortKey sortKey = (TableRowSorter.SortKey)keys.get(i);
-        if(column==sortKey.getColumn()) {
-          String k = sortKey.getSortOrder()==SortOrder.ASCENDING
-            ? "\u25B4 " : "\u25BE ";
-          value = "&lt;html&gt;"+value.toString()+" &lt;small color='gray'&gt;"+k+(i+1);
+      for (int i = 0; i &lt; max; i++) {
+        TableRowSorter.SortKey sortKey = (TableRowSorter.SortKey) keys.get(i);
+        if (column == sortKey.getColumn()) {
+          String k = sortKey.getSortOrder() == SortOrder.ASCENDING ? "\u25B4 "
+                                                                   : "\u25BE ";
+          str = String.format("&lt;html&gt;%s&lt;small color='gray'&gt;%s%d", str, k, i + 1);
         }
       }
     }
     TableCellRenderer r = table.getTableHeader().getDefaultRenderer();
     return r.getTableCellRendererComponent(
-        table, value, isSelected, hasFocus, row, column);
+        table, str, isSelected, hasFocus, row, column);
   }
 }
 </code></pre>

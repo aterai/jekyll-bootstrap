@@ -17,10 +17,10 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class TransparentTreeCellRenderer extends DefaultTreeCellRenderer {
   @Override public Component getTreeCellRendererComponent(
-      JTree tree, Object value, boolean isSelected, boolean expanded,
-      boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent)super.getTreeCellRendererComponent(
-        tree, value, isSelected, expanded, leaf, row, hasFocus);
+          JTree tree, Object value, boolean isSelected, boolean expanded,
+          boolean leaf, int row, boolean hasFocus) {
+    JComponent c = (JComponent) super.getTreeCellRendererComponent(
+          tree, value, isSelected, expanded, leaf, row, hasFocus);
     c.setOpaque(false);
     return c;
   }

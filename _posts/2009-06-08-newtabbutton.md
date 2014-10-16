@@ -15,15 +15,21 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQUU8wtpI/AAAAAAAAAfY/BJyG5weJ1VA/s800/NewTabButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TabLayout implements LayoutManager, java.io.Serializable {
-  @Override public void addLayoutComponent(String name, Component comp) {}
-  @Override public void removeLayoutComponent(Component comp) {}
+<pre class="prettyprint"><code>class TabLayout implements LayoutManager, Serializable {
+  private static final long serialVersionUID = 1L;
+  @Override public void addLayoutComponent(String name, Component comp) {
+    /* not needed */
+  }
+  @Override public void removeLayoutComponent(Component comp)           {
+    /* not needed */
+  }
   @Override public Dimension preferredLayoutSize(Container parent) {
     synchronized (parent.getTreeLock()) {
       Insets insets = parent.getInsets();
-      int last = parent.getComponentCount()-1;
-      int w = 0, h = 0;
-      if(last&gt;=0) {
+      int last = parent.getComponentCount() - 1;
+      int w = 0;
+      int h = 0;
+      if (last &gt;= 0) {
         Component comp = parent.getComponent(last);
         Dimension d = comp.getPreferredSize();
         w = d.width;
@@ -42,26 +48,31 @@ comments: true
 
   @Override public void layoutContainer(Container parent) {
     synchronized (parent.getTreeLock()) {
-      Insets insets = parent.getInsets();
       int ncomponents = parent.getComponentCount();
-      int nrows = 1;
-      int ncols = ncomponents-1;
-      //boolean ltr = parent.getComponentOrientation().isLeftToRight();
-
       if (ncomponents == 0) {
         return;
       }
-      int lastw = parent.getComponent(ncomponents-1).getPreferredSize().width;
-      int width = parent.getWidth() - (insets.left + insets.right) - lastw;
-      int h = parent.getHeight() - (insets.top + insets.bottom);
-      int w = (width&gt;100*(ncomponents-1))?100:width/ncols;
-      int gap = width - w*ncols;
+      //int nrows = 1;
+      //boolean ltr = parent.getComponentOrientation().isLeftToRight();
+      Insets insets = parent.getInsets();
+      int ncols = ncomponents - 1;
+      int lastw = parent.getComponent(ncomponents - 1).getPreferredSize().width;
+      int width = parent.getWidth() - insets.left - insets.right - lastw;
+      int h = parent.getHeight() - insets.top - insets.bottom;
+      int w = width &gt; 100 * (ncomponents - 1) ? 100 : width / ncols;
+      int gap = width - w * ncols;
       int x = insets.left;
       int y = insets.top;
-      for (int i=0;i&lt;ncomponents;i++) {
-        int a = (gap&gt;0)?1:0;
-        gap--;
-        int cw = (i==ncols)?lastw:w+a;
+      for (int i = 0; i &lt; ncomponents; i++) {
+        int a = 0;
+        if (gap &gt; 0) {
+          a = 1;
+          gap--;
+        }
+        int cw = w + a;
+        if (i == ncols) {
+          cw = lastw;
+        }
         parent.getComponent(i).setBounds(x, y, cw, h);
         x += w + a;
       }

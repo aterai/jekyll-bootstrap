@@ -26,9 +26,9 @@ comments: true
                   : toolBar.getSize().width;
     if (p.x &gt;= c.getWidth() - iv) {
       return false;
-    }else if (p.x &lt; iv) {
+    } else if (p.x &lt; iv) {
       return false;
-    }else{
+    } else {
       return true;
     }
   }

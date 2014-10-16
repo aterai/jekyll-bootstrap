@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: IndeterminateRegionPainter
 title: JProgressBarのNimbusLookAndFeelにおける不確定状態アニメーションを変更する
-tags: [JProgressBar, UIDefaults, Painter, NimbusLookAndFeel]
+tags: [JProgressBar, UIDefaults, Painter, NimbusLookAndFeel, Animation]
 author: aterai
 pubdate: 2014-06-30T15:57:20+09:00
 description: JProgressBarをNimbusLookAndFeelで使用している場合、その不確定状態アニメーションを変更します。

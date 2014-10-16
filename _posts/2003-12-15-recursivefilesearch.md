@@ -15,17 +15,20 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRh7du1II/AAAAAAAAAhU/jcMUoOTcbTU/s800/RecursiveFileSearch.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>public void recursiveSearch(File dir, final Vector list)
-    throws InterruptedException {
-  String[] contents = dir.list();
-  for(int i=0;i&lt;contents.length;i++) {
-    if(Thread.interrupted()) {
+<pre class="prettyprint"><code>private void recursiveSearch(File dir, final List&lt;File&gt; list)
+        throws InterruptedException {
+  for (String fname : dir.list()) {
+    if (Thread.interrupted()) {
       throw new InterruptedException();
     }
-    File sdir = new File(dir, contents[i]);
-    if(sdir.isDirectory()) {
+    File sdir = new File(dir, fname);
+    if (sdir.isDirectory()) {
       recursiveSearch(sdir, list);
-    }else if(isGraphicsFile(sdir.getName())) {
+    } else {
+      scount++;
+      if (scount % 100 == 0) {
+        publish(new Message("Results:" + scount + "\n", false));
+      }
       list.add(sdir);
     }
   }

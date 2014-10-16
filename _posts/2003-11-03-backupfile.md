@@ -6,7 +6,7 @@ title: Backup Fileを番号付きで作成
 tags: [File]
 author: aterai
 pubdate: 2003-11-03
-description: [[xyzzy]]風の番号付きバックアップファイルを作成します。
+description: 番号付きバックアップファイルを作成します。
 comments: true
 ---
 ## 概要

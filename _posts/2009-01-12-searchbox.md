@@ -15,15 +15,22 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static void searchTree(JTree tree, TreePath path, String q) {
-  TreeNode node = (TreeNode)path.getLastPathComponent();
-  if(node==null) return;
-  if(node.toString().equals(q))
-    tree.addSelectionPath(path);
-  if(!node.isLeaf() &amp;&amp; node.getChildCount()&gt;=0) {
+<pre class="prettyprint"><code>private static void searchTree(
+    JTree tree, TreePath path, String q, List&lt;TreePath&gt; rollOverPathLists) {
+  TreeNode node = (TreeNode) path.getLastPathComponent();
+  if (node == null) {
+    return;
+  }
+  if (node.toString().startsWith(q)) {
+    rollOverPathLists.add(path);
+    tree.expandPath(path.getParentPath());
+  }
+  if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
     Enumeration e = node.children();
-    while(e.hasMoreElements())
-      searchTree(tree, path.pathByAddingChild(e.nextElement()), q);
+    while (e.hasMoreElements()) {
+      searchTree(
+          tree, path.pathByAddingChild(e.nextElement()), q, rollOverPathLists);
+    }
   }
 }
 </code></pre>
@@ -38,20 +45,20 @@ comments: true
 public void traverse(JTree tree) {
   TreeModel model = tree.getModel();
   Object root;
-  if(model != null) {
+  if (model != null) {
     root = model.getRoot();
-    walk(model,root);
-  }else{
+    walk(model, root);
+  } else {
     System.out.println("Tree is empty.");
   }
 }
 protected void walk(TreeModel model, Object o) {
   int cc = model.getChildCount(o);
-  for(int i=0; i &lt; cc; i++) {
+  for (int i = 0; i &lt; cc; i++) {
     DefaultMutableTreeNode child = (DefaultMutableTreeNode) model.getChild(o, i);
-    if(model.isLeaf(child)) {
+    if (model.isLeaf(child)) {
       System.out.println(child);
-    }else{
+    } else {
       System.out.println(child);
       walk(model, child);
     }
@@ -68,11 +75,11 @@ protected void walk(TreeModel model, Object o) {
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>TreeModel model = tree.getModel();
-DefaultMutableTreeNode root = (DefaultMutableTreeNode)model.getRoot();
+DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
 Enumeration depth = root.depthFirstEnumeration();
-while(depth.hasMoreElements()) {
-  DefaultMutableTreeNode node = (DefaultMutableTreeNode)depth.nextElement();
-  if(node!=null &amp;&amp; "bananas".equals(node.toString())) {
+while (depth.hasMoreElements()) {
+  DefaultMutableTreeNode node = (DefaultMutableTreeNode) depth.nextElement();
+  if (node != null &amp;&amp; "bananas".equals(node.toString())) {
     TreePath path = new TreePath(node.getPath());
     tree.setSelectionPath(path);
     tree.scrollPathToVisible(path);
