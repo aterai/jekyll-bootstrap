@@ -5,21 +5,23 @@ class Download < Liquid::Tag
     @url = url
   end
   def render(context)
-    #page = context.environments.first["page"]["url"]
     cat  = context.environments.first["page"]["category"].capitalize
     cam  = context.environments.first["page"]["folder"]
     id   = [cat, cam].join("/")
-    href_svn = "http://java-swing-tips.googlecode.com/svn/trunk/#{cam}"
+
+    href_svn = "//github.com/aterai/java-swing-tips/tree/master/#{cam}"
 
 <<"EOS"
 <div class="row">
-<div class="col-md-6 col-xs-12 pull-left">
-<p><a href="example.jar" download class="btn btn-block btn-danger">Jar file <small>example.jar</small> <i class="icon-download icon-white" style="vertical-align:middle"></i></a></p>
-<p><a href="src.zip" download class="btn btn-block btn-success">Source code <small>src.zip</small> <i class="icon-download-alt icon-white" style="vertical-align:middle"></i></a></p>
-<p><a href="#{href_svn}" class="btn btn-block btn-info">Repository <small>svn repository</small> <i class="icon-folder-open icon-white" style="vertical-align:middle"></i></a></p>
-<p><img src="#{@url}" alt="screenshot"></p>
+<div class="col-md-5 col-xs-12">
+<div itemscope="itemscope" itemtype="http://schema.org/Code">
+<p><a href="example.jar" class="btn btn-block btn-danger"  download="example.jar" onclick="ga('send', 'event', 'button', 'download', 'example.jar');"><span class="glyphicon glyphicon-save icon-white"></span> Runnable JARファイル <small>example.jar</small></a></p>
+<p><a href="src.zip" class="btn btn-block btn-success" download="src.zip"     onclick="ga('send', 'event', 'button', 'download', 'src.zip');"><span class="glyphicon glyphicon-cloud-download icon-white"></span> ソースコード <small>src.zip</small></a></p>
+<p><a href="#{href_svn}" class="btn btn-block btn-info" itemprop="codeRepository" onclick="ga('send', 'event', 'button', 'view', 'repository');"><span class="glyphicon glyphicon-import icon-white"></span> リポジトリ <small>repository</small></a></p>
 </div>
-<div class="col-md-6 col-xs-12 pull-right">
+<p><img src="#{@url}" class="img-responsive" itemprop="image" alt="screenshot"></p>
+</div>
+<div class="col-md-6 col-md-offset-1 col-xs-12" itemscope="itemscope" itemtype="http://schema.org/WPAdBlock">
 <!-- responsive -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -30,7 +32,6 @@ class Download < Liquid::Tag
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<div class="clearfix"></div>
 </div>
 EOS
   end

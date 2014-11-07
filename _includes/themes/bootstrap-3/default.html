@@ -6,7 +6,9 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
     <meta name="author" content="{{ site.author.name }}" />
-    <link rel="canonical" href="http://terai.xrea.jp/Swing/{{ page.folder }}.html" />
+    {% if page.folder %}<link rel="canonical" href="http://ateraimemo.com/Swing/{{ page.folder }}.html" />{% endif %}
+    <meta name="google-site-verification" content="EMsBqvy875QIaZuUka2-HZrmVXmKT1hAkInD6Q46QRA" />
+    <meta name="robots" content="NOINDEX,FOLLOW" />
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +22,15 @@
     
     <!-- Custom styles -->
     <!-- link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all" -->
-    <style>h1,h2,h3,h4{color:#f22430}#footer{background-color:#fdcd60}.post>h3.title{position:relative;padding-top:10px}.post>h3.title span.date{position:absolute;right:0;font-size:.9em}.post>.more{margin:10px 0;text-align:left}.post-full .date{margin-bottom:20px;font-weight:bold}.tag_box{font-family:"Glyphicons Halflings","Helvetica Neue",Helvetica,Arial,sans-serif;list-style:none;margin:0;overflow:hidden}.tag_box li{line-height:28px}.tag_box li i{opacity:.9}.tag_box.inline li{float:left}.tag_box a{padding:3px 6px;margin:2px;background:#eee;color:#555;border-radius:3px;text-decoration:none;border:1px dashed #ccc}.tag_box a span{vertical-align:super;font-size:.8em}.tag_box a:hover{background-color:#e5e5e5}.tag_box a.active{background:#57a957;border:1px solid #4c964d;color:#FFF}.ad_box{float:right;padding:0 20px 0 0}kbd{background-color:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,0.196),0 0 0 2px #fff inset;color:#333;display:inline-block;font-family:"Arial","Helvetica",sans-serif;font-size:11px;line-height:1.4;margin:0 .1em;padding:.1em .6em;text-shadow:0 1px 0 #fff;white-space:nowrap}.button{display:inline-block;width:30%;text-align:center;vertical-align:middle;text-decoration:none;line-height:1.33;outline:0;padding:11px 19px;margin-top:6px;font-size:17.5px;font-weight:bold;color:#fff;top:-1px;-webkit-transition:none;transition:none;text-shadow:0 1px 1px rgba(0,0,0,.3)}.button::before,.button::after{position:absolute;z-index:-1;display:block;content:''}.button,.button::before,.button::after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:all .3s;transition:all .3s}.button:active{top:3px;box-shadow:none}.button:hover,.button:focus{color:white;text-decoration:none}.button-group{list-style:none;margin-bottom:5px}.button-sub{font-size:9pt;font-weight:nomal;line-height:.7}.pln{color:#000}.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun,.opn,.clo{color:#660}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}</style>
+    <style>h1,h2,h3,h4{color:#f22430}#footer{background-color:#fdcd60}.post>h3.title{position:relative;padding-top:10px}.post>h3.title span.date{position:absolute;right:0;font-size:.9em}.post>.more{margin:10px 0;text-align:left}.post-full .date{margin-bottom:20px;font-weight:bold}.tag_box{font-family:"Glyphicons Halflings","Helvetica Neue",Helvetica,Arial,sans-serif;list-style:none;margin:0;overflow:hidden}.tag_box li{line-height:28px}.tag_box li i{opacity:.9}.tag_box.inline li{float:left}.tag_box a{padding:3px 6px;margin:2px;background:#eee;color:#555;border-radius:3px;text-decoration:none;border:1px dashed #ccc}.tag_box a span{vertical-align:super;font-size:.8em}.tag_box a:hover{background-color:#e5e5e5}.tag_box a.active{background:#57a957;border:1px solid #4c964d;color:#FFF}.ad_box{float:right;padding:0 20px 0 0}
+kbd{background-color:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,0.196),0 0 0 2px #fff inset;color:#333;display:inline-block;font-family:"Arial","Helvetica",sans-serif;font-size:11px;line-height:1.4;margin:0 .1em;padding:.1em .6em;text-shadow:0 1px 0 #fff;white-space:nowrap}
+.button{display:inline-block;width:30%;text-align:center;vertical-align:middle;text-decoration:none;line-height:1.33;outline:0;padding:11px 19px;margin-top:6px;font-size:17.5px;font-weight:bold;color:#fff;top:-1px;-webkit-transition:none;transition:none;text-shadow:0 1px 1px rgba(0,0,0,.3)}.button::before,.button::after{position:absolute;z-index:-1;display:block;content:''}.button,.button::before,.button::after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:all .3s;transition:all .3s}.button:active{top:3px;box-shadow:none}.button:hover,.button:focus{color:white;text-decoration:none}.button-group{list-style:none;margin-bottom:5px}.button-sub{font-size:9pt;font-weight:nomal;line-height:.7}
+.pln{color:#000}.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun,.opn,.clo{color:#660}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}
+.responsive { width: 320px; height: 50px; }
+code,pre{overflow:auto;white-space:pre-wrap;word-wrap:break-word}
+@media(min-width: 500px) { .responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .responsive { width: 728px; height: 90px; } }
+</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,15 +50,14 @@
     -->
 
     <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed" />
-
-    <script async defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" / -->
+    <!-- link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed" / -->
   </head>
 
-  <body onload="prettyPrint()">
+  <body itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    <!-- script async="" src="//ateraimemo.com/skin/google_tm.js"></script -->
     <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
@@ -77,11 +86,20 @@
       </nav>
 
       <div class="container">
+<div class="row">
+<div class="col-md-9 col-xs-12 blog-main">
         {{ content }}
+</div><!-- /.blog-main -->
+<nav class="col-md-3 col-xs-12 blog-sidebar sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+sidebar
+</nav>
+</div><!-- /.row -->
+</div><!-- /.container -->
       </div>
 
     </div>
 
+<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
     <div id="footer">
       <div class="container">
         <p>© {{ site.time | date: '%Y' }} {{ site.author.name }}
@@ -90,14 +108,13 @@
         </p>
       </div>
     </div>
+</footer>
 
-    {% include JB/analytics %}
-
-
+    <!-- {% include JB/analytics %} -->
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-    <script async defer src="//terai.xrea.jp/skin/prettify.js"></script>
+    <!-- script async defer src="//ateraimemo.com/skin/prettify.js"></script -->
   </body>
 </html>

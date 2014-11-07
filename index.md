@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Front Page
-#tagline: Supporting tagline
 comments : ture
 author :
   name : aterai
@@ -9,7 +8,7 @@ author :
   twitter : aterai
 ---
 {% include JB/setup %}
-Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-25
+Posted by [aterai](http://ateraimemo.com/aterai.html) at 2003-09-25
 ## 概要
 このページ以下では、`Java Swing`での`GUI`プログラム作成のコツなどを、 **「小さなサンプル(ソースコード付き)」** を使って紹介しています。
 
@@ -24,19 +23,12 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2003-09-25
 
 ## 編集方針
 - **最も欲しいものはサンプルである** - [steps to phantasien t(2007-07-06)](http://dodgson.org/omo/t/?date=20070706#p02)より引用
-    - ボタンをクリックするだけで、サンプルプログラムを起動することが出来ます。
-        - これらのサンプルは、`Java Web Start`のサンドボックス内で実行され、ローカル`PC`のリソースにはアクセスしません。アクセスする必要のあるサンプルは、ソースファイルなどをダウンロードして確認してから実行してください。
-    - すべてのソースコードを[Subversionのリポジトリ](http://code.google.com/p/java-swing-tips/source/checkout)から、以下のようにして取得することができます。
-
-			svn checkout http://java-swing-tips.googlecode.com/svn/trunk/ java-swing-tips-read-only
-
-    - 一時ファイルを保持する設定の場合、[Java キャッシュビューア](http://terai.xrea.jp/data/jws/player.jnlp)から、一度試したサンプルを再度実行したり、全部まとめてアンインストール(`javaws -uninstall`)することができます。
-        - 参考: [某開発者の独り言: JWSのJavaアプリケーションキャッシュビューア](http://aqubiblog.blogspot.com/2008/02/jwsjava.html)
-        - `Java`コントロールパネル(`javaws -viewer`) から一時ファイル表示でもキャッシュ一覧が起動します。
-
-- **SSCCE** - [Short, Self Contained, Correct Example](http://sscce.org/)
-    - すべての記事にソースコードや画像などのリソース、これらを`Ant`で簡単にコンパイル、実行するための`build.xml`をまとめた`zip`ファイルを添付しています。
-    - [(Java Swing 引用メモ) Swingのサンプルに関するメモ](http://d.hatena.ne.jp/aterai/20071016/1192516545)
+    - 各ページからダブルクリックなどで実行可能な`JAR`ファイルをダウンロードすることができます。
+- `SSCCE` [Short, Self Contained, Correct Example](http://sscce.org/)
+- `MCVE` [How to create a Minimal, Complete, and Verifiable example - Help Center - Stack Overflow](http://stackoverflow.com/help/mcve)
+    - すべての記事毎にソースコードや画像などのリソース、これらを`Ant`で簡単にコンパイル、実行するための`build.xml`をまとめた`zip`ファイルを添付しています。
+    - `Git`リポジトリを取得する場合:  
+        <pre><code>git clone https://github.com/aterai/java-swing-tips.git</code></pre>
 
 ## 更新履歴
 
