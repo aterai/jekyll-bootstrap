@@ -15,49 +15,58 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUk9YzW7I/AAAAAAAAAmQ/wjin9CuyfBg/s800/TableRowHeader.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class RowHeaderList extends JList {
+<pre class="prettyprint"><code>class RowHeaderList&lt;E&gt; extends JList&lt;E&gt; {
   private final JTable table;
   private final ListSelectionModel tableSelection;
   private final ListSelectionModel rListSelection;
-  public RowHeaderList(ListModel model, JTable table) {
+  private int rollOverRowIndex = -1;
+  private int pressedRowIndex  = -1;
+
+  public RowHeaderList(ListModel&lt;E&gt; model, JTable table) {
     super(model);
     this.table = table;
     setFixedCellHeight(table.getRowHeight());
-    setCellRenderer(new RowHeaderRenderer(table.getTableHeader()));
+    setCellRenderer(new RowHeaderRenderer&lt;E&gt;(table.getTableHeader()));
     RollOverListener rol = new RollOverListener();
     addMouseListener(rol);
     addMouseMotionListener(rol);
+
     tableSelection = table.getSelectionModel();
     rListSelection = getSelectionModel();
   }
-  class RowHeaderRenderer extends JLabel implements ListCellRenderer {
-    private final JTableHeader header;
+  class RowHeaderRenderer&lt;E&gt; extends JLabel
+                             implements ListCellRenderer&lt;E&gt; {
+    private final JTableHeader header; // = table.getTableHeader();
     public RowHeaderRenderer(JTableHeader header) {
+      super();
       this.header = header;
       this.setOpaque(true);
       //this.setBorder(UIManager.getBorder("TableHeader.cellBorder"));
-      this.setBorder(BorderFactory.createMatteBorder(0,0,1,2,Color.GRAY));
+      this.setBorder(BorderFactory.createMatteBorder(
+          0, 0, 1, 2, Color.GRAY.brighter()));
       this.setHorizontalAlignment(CENTER);
       this.setForeground(header.getForeground());
       this.setBackground(header.getBackground());
       this.setFont(header.getFont());
     }
-    @Override public Component getListCellRendererComponent(JList list, Object value,
-               int index, boolean isSelected, boolean cellHasFocus) {
-      if(index==pressedRowIndex) {
+    @Override public Component getListCellRendererComponent(
+        JList&lt;? extends E&gt; list, E value, int index,
+        boolean isSelected, boolean cellHasFocus) {
+      if (index == pressedRowIndex) {
         setBackground(Color.GRAY);
-      }else if(index==rollOverRowIndex) {
+      } else if (index == rollOverRowIndex) {
         setBackground(Color.WHITE);
-      }else if(isSelected) {
+      } else if (isSelected) {
         setBackground(Color.GRAY.brighter());
-      }else{
+      } else {
         setForeground(header.getForeground());
         setBackground(header.getBackground());
       }
-      setText((value==null)?"":value.toString());
+      setText(Objects.toString(value, ""));
       return this;
     }
   }
+//...
 }
 </code></pre>
 
@@ -74,15 +83,15 @@ scrollPane.getViewport().setBackground(Color.GREEN);
 ## 参考リンク
 - [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples1.html)
 - [Swing - excel styled table?](https://forums.oracle.com/thread/1395446)
-- [JListのセルをカーソル移動でロールオーバー](http://terai.xrea.jp/Swing/RollOverListener.html)
+- [JListのセルをカーソル移動でロールオーバー](http://ateraimemo.com/Swing/RollOverListener.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 不正なセルレンダラーを設定していたので修正しました。 -- *aterai* 2006-11-16 (木) 20:22:33
 - `excel`のように、行ヘッダをクリックしてその行が選択されたり、テーブルの本体にてセルをクリックしてそのセルだけが選択されたりすることはできますか？いろいろ試しましたが、なかなかできませんでした。 -- *javalover* 2008-03-11 (火) 09:52:12
-    - セル選択は、`table.setCellSelectionEnabled(true);`で可能です。行ヘッダをクリックしてその行を選択することは、現在でも出来るような。もし、列のことなら、~~`JTableHeader`に以下のようなコードを書けばよさそうです。~~ [JTableHeaderをクリックしてそのColumnのセルを全選択](http://terai.xrea.jp/Swing/ColumnSelection.html)を参考にしてください。 -- *aterai* 2008-03-11 (火) 13:45:47
-    - あ、もしかして、[TableCellRendererでセルの背景色を変更](http://terai.xrea.jp/Swing/StripeTable.html) の例のように、`JTable#prepareRenderer`をオーバーライドして行ごとの背景色を変更していますか？　あちらの例では、行選択しか考慮していなので`isRowSelected`を使って、一行まるごと選択色で塗りつぶすかどうかを判断しています(`table.setCellSelectionEnabled(true)`しても、一行選択されているように見えるようになっている)が、セル選択する場合は、ちゃんと`isCellSelected(int,int)`でそのセルが選択されているかを判断する必要があります。 -- *aterai* 2008-03-11 (火) 14:48:45
+    - セル選択は、`table.setCellSelectionEnabled(true);`で可能です。行ヘッダをクリックしてその行を選択することは、現在でも出来るような。もし、列のことなら、~~`JTableHeader`に以下のようなコードを書けばよさそうです。~~ [JTableHeaderをクリックしてそのColumnのセルを全選択](http://ateraimemo.com/Swing/ColumnSelection.html)を参考にしてください。 -- *aterai* 2008-03-11 (火) 13:45:47
+    - あ、もしかして、[TableCellRendererでセルの背景色を変更](http://ateraimemo.com/Swing/StripeTable.html) の例のように、`JTable#prepareRenderer`をオーバーライドして行ごとの背景色を変更していますか？　あちらの例では、行選択しか考慮していなので`isRowSelected`を使って、一行まるごと選択色で塗りつぶすかどうかを判断しています(`table.setCellSelectionEnabled(true)`しても、一行選択されているように見えるようになっている)が、セル選択する場合は、ちゃんと`isCellSelected(int,int)`でそのセルが選択されているかを判断する必要があります。 -- *aterai* 2008-03-11 (火) 14:48:45
 - ここのサンプルを変更して、行列ヘッダクリックで、各行列を選択するように変更しました。 -- *aterai* 2008-03-11 (火) 15:40:58
 - プログラム自体大学で始めて触れてる者で参考にさせてもらっています。 -- &user(D.Umeda(ES)); 2009-02-26 (木) 06:14:52
 - すいません、上のミスです。改行と思って`EnterKey`を..。`DefaultTableCellRenderer r1 = (DefaultTableCellRenderer)table.getTableHeader().getDefaultRenderer()`をした上でこの`r1`を必要な`Column`に`setCellRenderer`してやれば、その機能は再現できるのではないでしょうか？
@@ -160,8 +169,8 @@ class HeaderRenderer implements TableCellRenderer {
     JTable tbl, Object val, boolean isS,
     boolean hasF, int row, int col) {
     JLabel l;
-    boolean flg = (row==rollOverRowIndex);
-    l = (JLabel)tcr.getTableCellRendererComponent(
+    boolean flg = row == rollOverRowIndex;
+    l = (JLabel) tcr.getTableCellRendererComponent(
       tbl, val, isS, flg?flg:hasF, row, col);
     l.setOpaque(!flg);
     return l;
@@ -170,14 +179,14 @@ class HeaderRenderer implements TableCellRenderer {
   private class RollOverListener extends MouseInputAdapter {
     @Override public void mouseExited(MouseEvent e) {
       rollOverRowIndex = -1;
-      JTable table = (JTable)e.getSource();
+      JTable table = (JTable) e.getSource();
       table.repaint();
     }
     @Override public void mouseMoved(MouseEvent e) {
-      JTable table = (JTable)e.getSource();
+      JTable table = (JTable) e.getSource();
       Point pt = e.getPoint();
       int column = table.columnAtPoint(pt);
-      rollOverRowIndex = (column==0)?table.rowAtPoint(pt):-1;
+      rollOverRowIndex = (column == 0) ? table.rowAtPoint(pt) : -1;
       table.repaint();
     }
     @Override public void mouseDragged(MouseEvent e) {}
@@ -187,13 +196,13 @@ class HeaderRenderer implements TableCellRenderer {
 }
 </code></pre>
 - すばやい返答ありがとうございます。わざわざサンプルまで。自分で定義する`HeaderRenderer`は無くとも`col.setCellRenderer(hr);`である程度再現できますが、やはりオンマウスやクリックでの変化は`UI`観点から見て必要ですね。やはり行ヘッダの領域を見るとどうしても`Vista`だとズレが生じてしまうのが気になりますが、結局`OS`依存しないプログラムを作ろうとすると`Metal`かカスタム`UI`ですね。列ヘッダを`Vista`,行ヘッダをクラシックにする誤差は生じないのですが。 -- *D.Umeda* 2009-02-26 (木) 19:35:46
-    - `Vista`は持ってないので、なんとも言えないのですが、`XP`でもオレンジのハイライト？が下に付くのはあれですね。まじめにやるなら右につけたいところです。-- [aterai](http://terai.xrea.jp/aterai.html)
+    - `Vista`は持ってないので、なんとも言えないのですが、`XP`でもオレンジのハイライト？が下に付くのはあれですね。まじめにやるなら右につけたいところです。-- [aterai](http://ateraimemo.com/aterai.html)
 - また醜い状態で設定してしまったorz見苦しいようであれば是非とも削除を。参考になるかは定かではありませんが、`javaForum`で掲示したところ次のようなサンプルURLを頂きました。[http://tips4java.wordpress.com/2008/11/18/row-number-table/](http://tips4java.wordpress.com/2008/11/18/row-number-table/)
-    - camickrさんとこのブログですね。どこのjavaForum かは知らないのですが、いいとこ突いてると思います。 -- [aterai](http://terai.xrea.jp/aterai.html)
+    - camickrさんとこのブログですね。どこのjavaForum かは知らないのですが、いいとこ突いてると思います。 -- [aterai](http://ateraimemo.com/aterai.html)
 - 終わりに、わざわざサンプルを提示してくださってありがとうございました。これからも活用させてもらいます。
-    - 文章で説明するより、サンプルのほうが簡単なので(^^;。 -- [aterai](http://terai.xrea.jp/aterai.html)
+    - 文章で説明するより、サンプルのほうが簡単なので(^^;。 -- [aterai](http://ateraimemo.com/aterai.html)
 - 追記になりますが、処理速度の件は私がこれをする前に`1`列`1`行だけのヘッダを`rowHeaderView`のパネルにひたすら並べ続けた、ということを書きたかったんですが、きちんと用語を用いて説明する勉強もしなければいけないようです。データ数によってはヘッダを量産するので非常に非効率だと思ったのですが、勉強しておきます。 -- *D.Umeda* 2009-02-26 (木) 19:46:39
-    - あー、前者と後者が何を指しているのか誤解してたみたいです。 -- [aterai](http://terai.xrea.jp/aterai.html)
+    - あー、前者と後者が何を指しているのか誤解してたみたいです。 -- [aterai](http://ateraimemo.com/aterai.html)
 - こんばんは。~~ページ上部の「このページを編集する」で、だれでも適当に編集できます。パスワードは日付を更新せずに編集する場合に必要なだけです。~~ スパムが鬱陶しいので編集禁止にしました(2014-05-16)。とりあえず勝手に改行入れときましたm(_ _)m。 -- *aterai* 2009-02-26 (木) 20:15:21
 
 <!-- dummy comment line for breaking list -->

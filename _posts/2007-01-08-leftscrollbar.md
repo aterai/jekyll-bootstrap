@@ -39,12 +39,12 @@ add(scroll, BorderLayout.CENTER);
 ## 参考リンク
 - [Swing - JScrollPane with scroll bar on the left](https://forums.oracle.com/thread/1375964)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
-- [JScrollBarのButtonの位置を変更](http://terai.xrea.jp/Swing/ScrollBarButtonLayout.html)
+- [JScrollBarのButtonの位置を変更](http://ateraimemo.com/Swing/ScrollBarButtonLayout.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - グッド -- *a1* 2008-12-26 (金) 13:52:59
-    - どうも -- [aterai](http://terai.xrea.jp/aterai.html)
+    - どうも -- [aterai](http://ateraimemo.com/aterai.html)
 
 <!-- dummy comment line for breaking list -->

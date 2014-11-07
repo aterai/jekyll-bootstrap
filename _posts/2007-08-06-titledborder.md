@@ -62,6 +62,6 @@ panel.repaint();
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [TitledBorder API inconsitent with implementation: uses TOP instead of DEFAULT_POSITION](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6658876) -- *aterai* 2008-04-12 (土) 00:35:59
+- メモ: [TitledBorder API inconsitent with implementation: uses TOP instead of DEFAULT_POSITION](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6658876) -- *aterai* 2008-04-12 (土) 00:35:59
 
 <!-- dummy comment line for breaking list -->

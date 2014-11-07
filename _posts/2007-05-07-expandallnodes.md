@@ -31,9 +31,8 @@ private void collapseAll(JTree tree) {
     row--;
   }
 }
-</code></pre>
 
-<pre class="prettyprint"><code>private void visitAll(JTree tree, TreePath parent, boolean expand) {
+private void visitAll(JTree tree, TreePath parent, boolean expand) {
   TreeNode node = (TreeNode) parent.getLastPathComponent();
   if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
     Enumeration e = node.children();
@@ -77,9 +76,8 @@ private void collapseAll(JTree tree) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- ~~[Expanding or Collapsing All Nodes in a JTree Component (Java Developers Almanac Example)](http://www.exampledepot.com/egs/javax.swing.tree/ExpandAll.html)~~
 - [Expand or collapse a JTree - Real's Java How-to](http://www.rgagnon.com/javadetails/java-0210.html)
-- [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
+- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 

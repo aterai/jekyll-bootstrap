@@ -32,8 +32,8 @@ comments: true
 `JTable`にファイルをドロップすると、画像の幅、高さを一覧表示します。
 
 ## 参考リンク
-- [Jpegファイルのコメントを取り出す](http://terai.xrea.jp/Swing/IIOMetadata.html)
-- [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)
+- [Jpegファイルのコメントを取り出す](http://ateraimemo.com/Swing/IIOMetadata.html)
+- [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -21,8 +21,7 @@ comments: true
   }
 };
 sorter.setRowFilter(new RowFilter&lt;TableModel,Integer&gt;() {
-  @Override public boolean include(
-      Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
+  @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     return entry.getIdentifier() % 2 == 0;
   }
 });
@@ -41,7 +40,7 @@ sorter.setRowFilter(new RowFilter&lt;TableModel,Integer&gt;() {
 
 ## 参考リンク
 - [DefaultRowSorter (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/DefaultRowSorter.html)
-- [JTableHeaderのカラムを選択不可にする](http://terai.xrea.jp/Swing/DisabledHeader.html)
+- [JTableHeaderのカラムを選択不可にする](http://ateraimemo.com/Swing/DisabledHeader.html)
 
 <!-- dummy comment line for breaking list -->
 

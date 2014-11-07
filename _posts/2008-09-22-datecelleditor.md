@@ -45,17 +45,17 @@ comments: true
         });
       }
     });
-    setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
+    setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
   }
   private void setArrowButtonEnabled(boolean flag) {
-    for(Component c: getComponents()) {
-      if(c instanceof JButton) {
-        ((JButton)c).setEnabled(flag);
+    for (Component c : getComponents()) {
+      if (c instanceof JButton) {
+        ((JButton) c).setEnabled(flag);
       }
     }
   }
   @Override public Component getTableCellEditorComponent(JTable table,
-        Object value, boolean isSelected, int row, int column) {
+      Object value, boolean isSelected, int row, int column) {
     setValue(value);
     return this;
   }
@@ -68,17 +68,16 @@ comments: true
   transient protected ChangeEvent changeEvent = null;
 
   @Override public boolean stopCellEditing() {
-    try{
+    try {
       commitEdit();
-    }catch(Exception pe) {
+    } catch (Exception pe) {
       Toolkit.getDefaultToolkit().beep();
       return false;
     }
     fireEditingStopped();
     return true;
   }
-
-//......
+//...
 </code></pre>
 
 ## 解説
@@ -102,7 +101,7 @@ table.setSurrendersFocusOnKeystroke(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
+- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

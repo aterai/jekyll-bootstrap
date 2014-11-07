@@ -147,6 +147,6 @@ public class MenuBarRootPaneTest {
 ## コメント
 - 選択状態を半透明にするテスト -- *aterai* 2010-01-09 (土) 23:08:42
     - `Windows7`での`WindowsLookAndFeel`でうまくいかない場合があるようなので、すこし修正。 -- *aterai* 2011-09-26 (月) 21:13:47
-    - [JRootPaneの背景として画像を表示](http://terai.xrea.jp/Swing/RootPaneBackground.html)に移動
+    - [JRootPaneの背景として画像を表示](http://ateraimemo.com/Swing/RootPaneBackground.html)に移動
 
 <!-- dummy comment line for breaking list -->

@@ -63,7 +63,7 @@ comments: true
 - [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1393939)
 - [Swing - Line highlighting problem in presence of text highlighting!](https://forums.oracle.com/thread/1377129)
 - [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)
-- [JTextAreaに行ハイライトカーソルを表示](http://terai.xrea.jp/Swing/LineHighlighter.html)
+- [JTextAreaに行ハイライトカーソルを表示](http://ateraimemo.com/Swing/LineHighlighter.html)
 
 <!-- dummy comment line for breaking list -->
 

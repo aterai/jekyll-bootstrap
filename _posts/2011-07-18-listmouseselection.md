@@ -18,18 +18,18 @@ comments: true
 <pre class="prettyprint"><code>JList list = new JList(model) {
   private ClearSelectionListener listener;
   @Override public void setSelectionInterval(int anchor, int lead) {
-    if(anchor==lead &amp;&amp; lead&gt;=0 &amp;&amp; anchor&gt;=0) {
-      if(listener.isDragging) {
+    if (anchor == lead &amp;&amp; lead &gt;= 0 &amp;&amp; anchor &gt;= 0) {
+      if (listener.isDragging) {
         addSelectionInterval(anchor, anchor);
-      }else if(!listener.isInCellDragging) {
-        if(isSelectedIndex(anchor)) {
+      } else if (!listener.isInCellDragging) {
+        if (isSelectedIndex(anchor)) {
           removeSelectionInterval(anchor, anchor);
-        }else{
+        } else {
           addSelectionInterval(anchor, anchor);
         }
         listener.isInCellDragging = true;
       }
-    }else{
+    } else {
       super.setSelectionInterval(anchor, lead);
     }
   }
@@ -51,11 +51,11 @@ comments: true
     super.processMouseMotionEvent(convertMouseEvent(e));
   }
   @Override protected void processMouseEvent(MouseEvent e) {
-    if(e.getID()==MouseEvent.MOUSE_PRESSED &amp;&amp;
-       !getCellBounds(0, getModel().getSize()-1).contains(e.getPoint())) {
+    if (e.getID() == MouseEvent.MOUSE_PRESSED &amp;&amp;
+        !getCellBounds(0, getModel().getSize() - 1).contains(e.getPoint())) {
       e.consume();
       requestFocusInWindow();
-    }else{
+    } else {
       super.processMouseEvent(convertMouseEvent(e));
     }
   }
@@ -63,17 +63,17 @@ comments: true
     //Swing - JList where mouse click acts like ctrl-mouse click
     //https://forums.oracle.com/thread/1351452
     return new MouseEvent(
-      (Component) e.getSource(),
-      e.getID(), e.getWhen(),
-      //e.getModifiers() | InputEvent.CTRL_MASK,
-      //select multiple objects in OS X: Command+click
-      //pointed out by nsby
-      e.getModifiers() | Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(),
-      e.getX(), e.getY(),
-      e.getXOnScreen(), e.getYOnScreen(),
-      e.getClickCount(),
-      e.isPopupTrigger(),
-      e.getButton());
+        (Component) e.getSource(),
+        e.getID(), e.getWhen(),
+        //e.getModifiers() | InputEvent.CTRL_MASK,
+        //select multiple objects in OS X: Command+click
+        //pointed out by nsby
+        e.getModifiers() | Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(),
+        e.getX(), e.getY(),
+        e.getXOnScreen(), e.getYOnScreen(),
+        e.getClickCount(),
+        e.isPopupTrigger(),
+        e.getButton());
   }
 };
 </code></pre>
@@ -83,14 +83,14 @@ comments: true
     - マウスでアイテムをドラッグすると、選択状態になる
     - ひとつのアイテムのセル内でのドラッグでは、選択状態を変更しない
     - 参考: [Swing - Re: JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/thread/1351452#5694413)
-    - `JList`の空白部分をクリックした場合、アイテムの選択状態をすべてクリア([JListの選択を解除](http://terai.xrea.jp/Swing/ClearSelection.html))
+    - `JList`の空白部分をクリックした場合、アイテムの選択状態をすべてクリア([JListの選択を解除](http://ateraimemo.com/Swing/ClearSelection.html))
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Swing - JList where mouse click acts like ctrl-mouse click](https://forums.oracle.com/thread/1351452)
-- [JListの選択を解除](http://terai.xrea.jp/Swing/ClearSelection.html)
-- [JListのセルにJCheckBoxを使用する](http://terai.xrea.jp/Swing/CheckBoxCellList.html)
+- [JListの選択を解除](http://ateraimemo.com/Swing/ClearSelection.html)
+- [JListのセルにJCheckBoxを使用する](http://ateraimemo.com/Swing/CheckBoxCellList.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -151,6 +151,6 @@ ry$SystemColorProxy[r=39,g=118,b=218],selectionForeground=com.apple.laf.AquaImag
     - ログ(勝手にすこし整形しました)どうもです。たしかにうまくいっているっぽいのに、不思議な感じですね。 ~~`InputEvent.CTRL_DOWN_MASK`と`InputEvent.CTRL_MASK`の違い？~~ もうすこし調べてみます。 -- *aterai* 2011-07-27 (水) 15:04:05
     - `Java 8`で修正されているかも？ [Bug ID: JDK-7170657 macosx - There seems to be no keyboard/mouse action to select non-contiguous items in List](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7170657) -- *aterai* 2014-08-12 (火) 02:10:09
 - メモ: [Tailoring Java Applications for Mac OS X](http://developer.apple.com/jp/technotes/tn2042.html) -- *aterai* 2011-07-27 (水) 15:18:46
-- ドラッグによる`JList`の複数選択は、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)を使用する方法もあります。 -- *aterai* 2012-05-30 (水) 15:18:25
+- ドラッグによる`JList`の複数選択は、[JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)を使用する方法もあります。 -- *aterai* 2012-05-30 (水) 15:18:25
 
 <!-- dummy comment line for breaking list -->

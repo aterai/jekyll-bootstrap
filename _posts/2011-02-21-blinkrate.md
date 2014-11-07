@@ -22,7 +22,7 @@ comments: true
 上記のサンプルでは、`JTextField#getCaret()`で取得した`CaretにsetBlinkRate(0)`で点滅間隔を`0`と設定し、キャレットが点滅しないように設定しています。
 
 ## 参考リンク
-- [Bug ID: 6289635 getDesktopProperty("awt.cursorBlinkRate") returns null](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6289635)
+- [Bug ID: 6289635 getDesktopProperty("awt.cursorBlinkRate") returns null](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6289635)
 
 <!-- dummy comment line for breaking list -->
 

@@ -37,10 +37,10 @@ public class TestJLayeredPane1 extends JFrame {
   Font FONT = new Font("ＭＳ ゴシック", Font.PLAIN, 12);
   String BG_IMG = "bg.gif";
 
-  public static void main(String[] argv){
+  public static void main(String[] argv) {
     TestJLayeredPane1 f = new TestJLayeredPane1();
     f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    f.setPreferredSize(new Dimension(700,500));
+    f.setPreferredSize(new Dimension(700, 500));
     f.pack();
     f.setVisible(true);
   }
@@ -49,13 +49,13 @@ public class TestJLayeredPane1 extends JFrame {
   static final int FORELAYER = 2;
   BGImageLayeredPane layerPane;
 
-  public TestJLayeredPane1(){
+  public TestJLayeredPane1() {
     super("TestJLayeredPane1");
 
     //背景画像
     Image img = null;
     File f = new File(BG_IMG);
-    if(f.isFile()) {
+    if (f.isFile()) {
       ImageIcon icon = new ImageIcon(BG_IMG);
       img = icon.getImage();
     }
@@ -63,9 +63,9 @@ public class TestJLayeredPane1 extends JFrame {
     layerPane = new BGImageLayeredPane();
     layerPane.setImage(img);
 
-    for(int i=0; i&lt;7; i++) {
+    for (int i = 0; i &lt; 7; i++) {
       JPanel p = createPanel(i);
-      p.setLocation(i*70 + 20, i*50 + 15);
+      p.setLocation(i * 70 + 20, i * 50 + 15);
       layerPane.add(p, BACKLAYER);
     }
     setContentPane(layerPane);
@@ -74,16 +74,16 @@ public class TestJLayeredPane1 extends JFrame {
   int[] colors = { 0xdddddd, 0xaaaaff, 0xffaaaa, 0xaaffaa, 0xffffaa, 0xffaaff, 0xaaffff };
 
   Color getColor(int i, float f) {
-    int b = (int)((i &amp; 0xff) * f);
+    int b = (int) ((i &amp; 0xff) * f);
     i = i &gt;&gt; 8;
-    int g = (int)((i &amp; 0xff) * f);
+    int g = (int) ((i &amp; 0xff) * f);
     i = i &gt;&gt; 8;
-    int r = (int)((i &amp; 0xff) * f);
-    return new Color(r,g,b);
+    int r = (int) ((i &amp; 0xff) * f);
+    return new Color(r, g, b);
   }
 
   JPanel createPanel(int i) {
-    String s = "&lt;html&gt;&lt;font color=#333333&gt;ヘッダーだよん:"+ i +"&lt;/font&gt;&lt;/html&gt;";
+    String s = "&lt;html&gt;&lt;font color=#333333&gt;ヘッダーだよん:" + i + "&lt;/font&gt;&lt;/html&gt;";
     JLabel label = new JLabel(s);
     label.setFont(FONT);
     label.setOpaque(true);
@@ -94,7 +94,7 @@ public class TestJLayeredPane1 extends JFrame {
 
     JTextArea text = new JTextArea();
     text.setBackground(new Color(colors[i]));
-    text.setMargin(new Insets(4,4,4,4));
+    text.setMargin(new Insets(4, 4, 4, 4));
     text.setLineWrap(true);
 
     JPanel p = new JPanel();
@@ -104,7 +104,7 @@ public class TestJLayeredPane1 extends JFrame {
     p.setBorder(border);
 
     //ウインド移動用の処理
-    DragMouseListener  li = new DragMouseListener(p);
+    DragMouseListener li = new DragMouseListener(p);
     p.addMouseListener(li);
     p.addMouseMotionListener(li);
 
@@ -129,7 +129,7 @@ public class TestJLayeredPane1 extends JFrame {
       layerPane.moveToFront(panel);
     }
     public void mouseDragged(MouseEvent e) {
-      if(origin == null) return;
+      if (origin == null) return;
 
       //ずれた分だけ JPanel を移動させる
       int dx = e.getX() - origin.x;
@@ -161,8 +161,8 @@ public class TestJLayeredPane1 extends JFrame {
         int imagew = bgImage.getWidth(null);
 
         Dimension d = getSize();
-        for(int h=0; h&lt;d.getHeight(); h += imageh) {
-          for(int w=0; w&lt;d.getWidth(); w += imagew) {
+        for (int h = 0; h &lt; d.getHeight(); h += imageh) {
+          for (int w = 0; w &lt; d.getWidth(); w += imagew) {
             g.drawImage(bgImage, w, h, this);
           }
         }
@@ -178,7 +178,7 @@ public class TestJLayeredPane1 extends JFrame {
 `JLayeredPane`に`createPanel(int i)`で作った付箋紙の部品を`add`し、マウスリスナーでクリックやドラッグを検出しています。
 
 ## 参考リンク
-- [JPanelの背景に画像を並べる](http://terai.xrea.jp/Swing/BackgroundImage.html)
+- [JPanelの背景に画像を並べる](http://ateraimemo.com/Swing/BackgroundImage.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 
 <!-- dummy comment line for breaking list -->

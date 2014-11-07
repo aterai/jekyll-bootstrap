@@ -33,7 +33,7 @@ for (Component c: divider.getComponents()) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane`の`Divider`をワンクリックで展開・収納するための`OneTouchButton`(`JButton`)のサイズ、オフセット、背景色などを変更しています。
+上記のサンプルでは、`OneTouchButton`(`JSplitPane`の`Divider`をワンクリックで展開・収納するための`JButton`)のサイズ、オフセット、背景色などを変更しています。
 
 - `OneTouchButton`のサイズ指定
     - `UIManager.put("SplitPane.oneTouchButtonSize", 32);`

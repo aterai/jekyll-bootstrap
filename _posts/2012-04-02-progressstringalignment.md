@@ -49,7 +49,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JProgressBarの文字列をJLayerを使って表示する](http://terai.xrea.jp/Swing/ProgressStringLayer.html)
+- [JProgressBarの文字列をJLayerを使って表示する](http://ateraimemo.com/Swing/ProgressStringLayer.html)
 
 <!-- dummy comment line for breaking list -->
 

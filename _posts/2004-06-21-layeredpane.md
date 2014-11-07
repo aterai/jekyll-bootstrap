@@ -31,13 +31,13 @@ iframe.setVisible(true);
 
 ## 参考リンク
 - メモ:[JInternalFrameは最初にアイコン化しておかないと位置が更新されない](http://d.hatena.ne.jp/tori31001/20060901)
-    - [Bug ID: 4110799 JInternalFrame icon position unchanged w/ resize](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4110799)
+    - [Bug ID: 4110799 JInternalFrame icon position unchanged w/ resize](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4110799)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - `JDK 1.5.0`で`JFrame`などは、`frame.setAlwaysOnTop(true)`が使えるようになっています。 -- *aterai* 2004-10-08 (金) 17:00:59
 - ありがとうございます。現在`GUI`の作成をしていて、目下この情報を探していました。ありがとうございました -- *G* 2004-12-24 (金) 12:00:00
-    - どういたしまして。 -- [aterai](http://terai.xrea.jp/aterai.html)
+    - どういたしまして。 -- [aterai](http://ateraimemo.com/aterai.html)
 
 <!-- dummy comment line for breaking list -->

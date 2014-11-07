@@ -18,16 +18,16 @@ comments: true
 <pre class="prettyprint"><code>private final JMenuItem editItem1 = new JMenuItem(
     new AbstractAction("Edit: setHeaderValue") {
   @Override public void actionPerformed(ActionEvent e) {
-    JTableHeader header = (JTableHeader)getInvoker();
+    JTableHeader header = (JTableHeader) getInvoker();
     TableColumn column = header.getColumnModel().getColumn(index);
     String name = column.getHeaderValue().toString();
     textField.setText(name);
     int result = JOptionPane.showConfirmDialog(
         header.getTable(), textField, getValue(NAME).toString(),
         JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-    if(result==JOptionPane.OK_OPTION) {
+    if (result == JOptionPane.OK_OPTION) {
       String str = textField.getText().trim();
-      if(!str.equals(name)) {
+      if (!str.equals(name)) {
         column.setHeaderValue(str);
         header.repaint(header.getHeaderRect(index));
       }
@@ -51,17 +51,17 @@ comments: true
 <pre class="prettyprint"><code>private final JMenuItem editItem2 = new JMenuItem(
         new AbstractAction("Edit: setColumnIdentifiers") {
   @Override public void actionPerformed(ActionEvent e) {
-    final JTableHeader header = (JTableHeader)getInvoker();
+    final JTableHeader header = (JTableHeader) getInvoker();
     final JTable table = header.getTable();
-    final DefaultTableModel model = (DefaultTableModel)table.getModel();
+    final DefaultTableModel model = (DefaultTableModel) table.getModel();
     String name = table.getColumnName(index);
     textField.setText(name);
     int result = JOptionPane.showConfirmDialog(
         table, textField, getValue(NAME).toString(),
         JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-    if(result==JOptionPane.OK_OPTION) {
+    if (result == JOptionPane.OK_OPTION) {
       String str = textField.getText().trim();
-      if(!str.equals(name)) {
+      if (!str.equals(name)) {
         columnNames[table.convertColumnIndexToModel(index)] = str;
         header.setDraggedColumn(null); //XXX
         model.setColumnIdentifiers(columnNames);
@@ -72,7 +72,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTableHeaderにJPopupMenuを追加してソート](http://terai.xrea.jp/Swing/RowSorterPopupMenu.html)
+- [JTableHeaderにJPopupMenuを追加してソート](http://ateraimemo.com/Swing/RowSorterPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 

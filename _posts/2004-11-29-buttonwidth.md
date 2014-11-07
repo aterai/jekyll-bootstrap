@@ -16,21 +16,21 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private static JComponent createRightAlignButtonBox2(
-    final List&lt;JButton&gt; list, final int buttonWidth, int gap) {
+  final List&lt;JButton&gt; list, final int buttonWidth, int gap) {
   JComponent box = new JPanel() {
     @Override public void updateUI() {
-      for(JButton b: list) {
+      for (JButton b : list) {
         b.setPreferredSize(null);
       }
       super.updateUI();
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           int maxHeight = 0;
-          for(JButton b: list) {
+          for (JButton b : list) {
             maxHeight = Math.max(maxHeight, b.getPreferredSize().height);
           }
           Dimension d = new Dimension(buttonWidth, maxHeight);
-          for(JButton b: list) {
+          for (JButton b : list) {
             b.setPreferredSize(d);
           }
           revalidate();
@@ -40,7 +40,7 @@ comments: true
   };
   box.setLayout(new BoxLayout(box, BoxLayout.X_AXIS));
   box.add(Box.createHorizontalGlue());
-  for(JButton b: list) {
+  for (JButton b : list) {
     box.add(b);
     box.add(Box.createHorizontalStrut(gap));
   }
@@ -61,13 +61,13 @@ comments: true
     - `JButton`の高さは、`JButton#getPreferredSize()`で取得したサイズの高さを使用
     - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JButton#updateUI()`をオーバーライドして`JButton#setPreferredSize(...)`を使用する必要がある
 - `SpringLayout`+`Box`
-    - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
+    - [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
     - `SpringLayout`で幅指定、`BoxLayout`で右寄せ
     - `SpringLayout.Constraints`で`JButton`の固定幅を指定
     - 親パネルの幅も`SpringLayout.Constraints`で固定し、`Box`で入れ子にして右寄せ
     - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JComponent#getPreferredSize(...)`をオーバーライドして親パネルの高さを更新する必要がある
 - `SpringLayout`
-    - [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
+    - [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
     - `SpringLayout`を使用して右寄せ
     - `SpringLayout.Constraints`で`JButton`の幅を固定
     - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JComponent#getPreferredSize(...)`をオーバーライドして親パネルの高さを更新する必要がある
@@ -99,27 +99,27 @@ comments: true
 
 <pre class="prettyprint"><code>JLabel l = new JLabel();
 l.setText("a"); //preferredSizeがnullの場合、UIがサイズを計算
-//l.getPreferredSize() -&gt; Dimension[width=6,height=13]
+//l.getPreferredSize() -&gt; Dimension[width=6, height=13]
 
 l.setText("aaaa"); //JLabelの場合、Fontサイズと文字列の長さなどで決まる
-//l.getPreferredSize() -&gt; Dimension[width=24,height=13]
+//l.getPreferredSize() -&gt; Dimension[width=24, height=13]
 
 l.setText("&lt;html&gt;aa&lt;br&gt;aa");
-//l.getPreferredSize() -&gt; Dimension[width=12,height=26]
+//l.getPreferredSize() -&gt; Dimension[width=12, height=26]
 
-l.setPreferredSize(new Dimension(10,10)); //preferredSizeを設定した場合
-//l.getPreferredSize() -&gt; Dimension[width=10,height=10]
+l.setPreferredSize(new Dimension(10, 10)); //preferredSizeを設定した場合
+//l.getPreferredSize() -&gt; Dimension[width=10, height=10]
 
 l.setPreferredSize(null); //preferredSizeをnullに戻した場合
-//l.getPreferredSize() -&gt; Dimension[width=12,height=26]
+//l.getPreferredSize() -&gt; Dimension[width=12, height=26]
 </code></pre>
 
 ## 参考リンク
-- [JComboBoxなどの幅をカラム数で指定](http://terai.xrea.jp/Swing/SetColumns.html)
+- [JComboBoxなどの幅をカラム数で指定](http://ateraimemo.com/Swing/SetColumns.html)
     - `JComboBox`、`JTextField`などのコンポーネントでは、カラム数で幅を指定することもできます。
         - `JDK 1.5.0`: カラム数で幅を指定すると、コンポーネントによってサイズや余白などが微妙に異なる
         - `JDK 1.6.0`以上: `LookAndFeel`が同じなら、カラム数での幅指定で、どのコンポーネントでもほぼ同じサイズになる
-- [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
+- [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
 - [Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/how_do_you_layout_command)
     - 専用のレイアウトマネージャーを作成するサンプルがあります。
 

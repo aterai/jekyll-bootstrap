@@ -84,7 +84,7 @@ class TranslucentSynthSytle extends SynthStyle {
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVyfycduI/AAAAAAAAAoM/r6DySDZjSGA/s800/TranslucentFrame1.png)
 
 - - - -
-`警告:com.sun.java.swing.Painter は Sun が所有する API であり、今後のリリースで削除される可能性があります。`といった警告が出ても良いなら、以下のように`UIDefaults#put`で`Painter`を設定する方法もあります(`JDK 1.7.0`以上なら`javax.swing.Painter`になるので、警告なしで使用可能)。
+`JDK 1.7.0`以上で`NimbusLookAndFeel`を使用する場合、以下のように`UIDefaults#put(...)`で`javax.swing.Painter`を設定する方法もあります。
 
 - 参考:
     - [Caffeine Induced Ramblings - Jasper Potts’s Blog  » Blog Archive   » Nimbus: The New Face of Swing - JavaOne 2008](http://www.jasperpotts.com/blog/2009/01/nimbus-the-new-face-of-swing-javaone-2008/)
@@ -95,8 +95,9 @@ class TranslucentSynthSytle extends SynthStyle {
 <pre class="prettyprint"><code>import java.awt.*;
 import javax.swing.*;
 import javax.swing.plaf.synth.*;
-import com.sun.java.swing.Painter; // 1.6
-//import javax.swing.Painter; // 1.7.0 b57
+//import com.sun.java.swing.Painter; // 1.6
+import javax.swing.Painter;
+
 public class BackgroundPainterTest {
   private final JDesktopPane desktop = new JDesktopPane();
   public JComponent makeUI() {
@@ -104,25 +105,26 @@ public class BackgroundPainterTest {
     p1.setOpaque(false);
     JPanel p2 = new JPanel() {
       @Override public void paintComponent(Graphics g) {
-        g.setColor(new Color(100,50,50,100));
-        g.fillRect(0,0,getWidth(), getHeight());
+        g.setColor(new Color(100, 50, 50, 100));
+        g.fillRect(0, 0, getWidth(), getHeight());
       }
     };
     p2.setOpaque(false);
     UIDefaults d = new UIDefaults();
-    d.put("InternalFrame[Enabled].backgroundPainter", new Painter() {
-      @Override public void paint(Graphics2D g, Object o, int w, int h) {
-        g.setColor(new Color(100,200,100,100));
-        g.fillRoundRect(0,0,w-1,h-1,15,15);
+    d.put("InternalFrame[Enabled].backgroundPainter", new Painter&lt;JComponent&gt;() {
+      @Override public void paint(Graphics2D g, JComponent c, int w, int h) {
+        g.setColor(new Color(100, 200, 100, 100));
+        g.fillRoundRect(0, 0, w - 1, h - 1, 15, 15);
       }
     });
-    d.put("InternalFrame[Enabled+WindowFocused].backgroundPainter", new Painter() {
-      @Override public void paint(Graphics2D g, Object o, int w, int h) {
-        g.setColor(new Color(100,250,120,100));
-        g.fillRoundRect(0,0,w-1,h-1,15,15);
+    d.put("InternalFrame[Enabled+WindowFocused].backgroundPainter", new Painter&lt;JComponent&gt;() {
+      @Override public void paint(Graphics2D g, JComponent c, int w, int h) {
+        g.setColor(new Color(100, 250, 120, 100));
+        g.fillRoundRect(0, 0, w - 1, h - 1, 15, 15);
       }
     });
-    createFrame(p1, d, 0); createFrame(p2, d, 1);
+    createFrame(p1, d, 0);
+    createFrame(p2, d, 1);
     JPanel p = new JPanel(new BorderLayout());
     p.add(desktop);
     p.setPreferredSize(new Dimension(320, 240));
@@ -133,7 +135,7 @@ public class BackgroundPainterTest {
     frame.putClientProperty("Nimbus.Overrides", d);
     //frame.putClientProperty("Nimbus.Overrides.InheritDefaults", false);
     frame.setOpaque(false);
-    if(panel!=null) {
+    if (panel != null) {
       frame.setContentPane(panel);
       panel.add(new JLabel("label"));
       panel.add(new JButton("button"));
@@ -141,11 +143,11 @@ public class BackgroundPainterTest {
     }
     desktop.add(frame);
     frame.setVisible(true);
-    frame.setLocation(10+60*idx, 10+40*idx);
+    frame.setLocation(10 + 60 * idx, 10 + 40 * idx);
     desktop.getDesktopManager().activateFrame(frame);
     return frame;
   }
-  static class MyInternalFrame extends JInternalFrame{
+  static class MyInternalFrame extends JInternalFrame {
     public MyInternalFrame() {
       super("title", true, true, true, true);
       setSize(160, 100);
@@ -153,14 +155,20 @@ public class BackgroundPainterTest {
   }
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
-      @Override public void run() { createAndShowGUI(); }
+      @Override public void run() {
+        createAndShowGUI();
+      }
     });
   }
   public static void createAndShowGUI() {
-    try{
-      for(UIManager.LookAndFeelInfo laf: UIManager.getInstalledLookAndFeels())
-        if("Nimbus".equals(laf.getName())) UIManager.setLookAndFeel(laf.getClassName());
-    }catch(Exception e) {
+    try {
+      for (UIManager.LookAndFeelInfo laf : UIManager.getInstalledLookAndFeels()) {
+        if ("Nimbus".equals(laf.getName())) {
+          UIManager.setLookAndFeel(laf.getClassName());
+          break;
+        }
+      }
+    } catch (Exception e) {
       e.printStackTrace();
     }
     JFrame frame = new JFrame();
@@ -174,12 +182,12 @@ public class BackgroundPainterTest {
 </code></pre>
 
 ## 参考リンク
-- [JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html)
+- [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 6919629 Nimbus L&F Nimus.Overrides option leaks significant amounts of memory](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6919629), [jdk7/jdk7/jdk: changeset 2337:042eb92f89ad](http://hg.openjdk.java.net/jdk7/jdk7/jdk/rev/042eb92f89ad) -- *aterai* 2010-05-24 (月) 15:27:28
+- メモ: [Bug ID: 6919629 Nimbus L&F Nimus.Overrides option leaks significant amounts of memory](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6919629), [jdk7/jdk7/jdk: changeset 2337:042eb92f89ad](http://hg.openjdk.java.net/jdk7/jdk7/jdk/rev/042eb92f89ad) -- *aterai* 2010-05-24 (月) 15:27:28
 - [blogger](http://java-swing-tips.blogspot.com)で、`JButton`の周りに変な矩形が描画される場合があるとの指摘を頂いたので、`p2.setOpaque(false);`を追加。 -- *aterai* 2011-02-08 (火) 04:05:50
 
 <!-- dummy comment line for breaking list -->

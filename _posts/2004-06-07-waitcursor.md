@@ -94,13 +94,13 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
     boolean oldVisible = isVisible();
     super.setVisible(isVisible);
     JRootPane rootPane = SwingUtilities.getRootPane(this);
-    if(rootPane!=null &amp;&amp; isVisible()!=oldVisible) {
+    if (rootPane != null &amp;&amp; isVisible() != oldVisible) {
       rootPane.getLayeredPane().setVisible(!isVisible);
     }
   }
   @Override public void paintComponent(Graphics g) {
     JRootPane rootPane = SwingUtilities.getRootPane(this);
-    if(rootPane!=null) {
+    if (rootPane != null) {
       // http://weblogs.java.net/blog/alexfromsun/archive/2008/01/
       // it is important to call print() instead of paint() here
       // because print() doesn't affect the frame's double buffer
@@ -119,14 +119,14 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 - - - -
 `JDK 1.7.0`の場合、`JLayer`などを使用することで、特定のコンポーネントだけ入力不可にしてカーソルを砂時計にするといった設定が簡単に出来るようになっています。
 
-- [JLayerで指定したコンポーネントへの入力を禁止](http://terai.xrea.jp/Swing/DisableInputLayer.html) に移動
+- [JLayerで指定したコンポーネントへの入力を禁止](http://ateraimemo.com/Swing/DisableInputLayer.html) に移動
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Swing - How to display "Loading data..." to the user](https://forums.oracle.com/thread/1375257)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
-    - [JInternalFrameをModalにする](http://terai.xrea.jp/Swing/ModalInternalFrame.html)
+    - [JInternalFrameをModalにする](http://ateraimemo.com/Swing/ModalInternalFrame.html)
 - [Disabled Glass Pane « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)
 
 <!-- dummy comment line for breaking list -->
@@ -136,7 +136,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 - 相当悩みました。`JDialog`だと同じことができないのは何でなんでしょうねぇ。。。 -- *おれ* 2006-05-17 (水) 16:33:12
     - カーソルが変わらないのでしょうか? それともコンパイルエラーが出るとかでしょうか? -- *aterai* 2006-05-17 (水) 17:59:14
 - 申し訳ない。カーソルが変わらないのだけれど、`1.5`系でコンパイルするとだめみたい。同じソースでも`1.4`系でコンパイルするとちゃんと変わる。`1.5`でのバグかな。。。 -- *おれ* 2006-05-18 (木) 12:58:11
-    - 追記。`JDialog`のコンストラクタに`null`を指定しているとこうなるようです。オーナフレームを指定してあげたら、`1.5`でもきちんと出ました。お騒がせしました。 -- [おれ](http://terai.xrea.jp/おれ.html)
+    - 追記。`JDialog`のコンストラクタに`null`を指定しているとこうなるようです。オーナフレームを指定してあげたら、`1.5`でもきちんと出ました。お騒がせしました。 -- [おれ](http://ateraimemo.com/おれ.html)
     - なるほど、`new JDialog((Frame)null);`で試してみるとカーソルが変わらないですね。情報どうもでした。 -- *aterai* 2006-05-18 (木) 21:45:15
 - `DefaultFocusTraversalPolicy`を使うように変更しました。 -- *aterai* 2007-07-03 (火) 16:39:12
 - `GlassPane`で、`FocusTraversalPolicy`を使わず、`print`を使って`Mnemonic`などをブロックするように変更しました。 -- *aterai* 2008-04-15 (火) 17:14:09

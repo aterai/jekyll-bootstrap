@@ -48,7 +48,7 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 - `TableHeader`に`MouseListener`を設定して、セルが編集中なら`table.getCellEditor().stopCellEditing();`とすると、
     - ヘッダをクリックしたとき、編集が確定するようになります。
     - `JDK 1.7.0`では、`TableHeader`にこの`MouseListener`を設定しなくても編集が確定するように修正されています。
-    - [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950)
+    - [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950)
 
 <!-- dummy comment line for breaking list -->
 
@@ -63,7 +63,7 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 </code></pre>
 
 - - - -
-親フレームの状態変化でテーブルのヘッダのサイズ変更が発生する場合、ヘッダのリサイズモデルによって、編集中のセルの状態変化が異なります(`JDK 1.7.0`では修正されています。[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950))。
+親フレームの状態変化でテーブルのヘッダのサイズ変更が発生する場合、ヘッダのリサイズモデルによって、編集中のセルの状態変化が異なります(`JDK 1.7.0`では修正されています。[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950))。
 
 - `JTable.AUTO_RESIZE_OFF`
     - 親フレームのリサイズや最大化は編集中のまま
@@ -109,7 +109,7 @@ frame.addWindowStateListener(new WindowStateListener() {
 </code></pre>
 
 ## 参考リンク
-- [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950)
+- [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950)
     - [jdk7/swing/jdk: changeset 2709:e753db9c4416](http://hg.openjdk.java.net/jdk7/swing/jdk/rev/e753db9c4416)
 
 <!-- dummy comment line for breaking list -->
@@ -119,6 +119,6 @@ frame.addWindowStateListener(new WindowStateListener() {
     - お役に立てて何よりです(自分もこの辺りよく混乱します)。 -- *aterai* 2007-06-01 (金) 17:30:34
 - `columnMarginChanged`、役に立ちました。ありがとうございます。 -- *はじめ* 2008-04-04 (金) 00:35:14
     - どうもです。`JTable#columnMarginChanged`メソッドの`JavaDoc`の説明では、"If a cell is being edited, then editing is stopped and the cell is redrawn."となっているので、`JTable#editingStopped`メソッドを使っている(現在の文字列が新しい値となる)のかなと思ったら、実際は、`JTable#editingCanceled`メソッド(=`JTable#removeEditor`メソッド)でキャンセルしている(編集内容は適用されない)ので、ちょっと混乱してしまいます。 -- *aterai* 2008-04-04 (金) 14:11:01
-    - `1.7.0`では、[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4330950) で、修正済みになっているのですが、`getCellEditor().cancelCellEditing()`を使うように変更されているので、編集が消えてしまうのは同じような・・・。 -- *aterai* 2012-02-23 (木) 14:59:49
+    - `1.7.0`では、[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950) で、修正済みになっているのですが、`getCellEditor().cancelCellEditing()`を使うように変更されているので、編集が消えてしまうのは同じような・・・。 -- *aterai* 2012-02-23 (木) 14:59:49
 
 <!-- dummy comment line for breaking list -->

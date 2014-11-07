@@ -68,7 +68,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextAreaの一部を編集不可にする](http://terai.xrea.jp/Swing/NonEditableLine.html)
+- [JTextAreaの一部を編集不可にする](http://ateraimemo.com/Swing/NonEditableLine.html)
 
 <!-- dummy comment line for breaking list -->
 

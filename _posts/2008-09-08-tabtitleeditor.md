@@ -58,7 +58,7 @@ private void renameTabTitle() {
 
 `JDK 6`で導入された、`JTabbedPane#setTabComponentAt`メソッドを使用してタブに`JTextField`を追加しています。
 
-操作方法などは、以下のように、`GlassPane`を使用している[JTabbedPaneのタブタイトルを変更](http://terai.xrea.jp/Swing/EditTabTitle.html)と同じですが、こちらは文字が入力されるたびに(`JTabbedPane#revalidate`しているので)タブの幅が広がります。
+操作方法などは、以下のように、`GlassPane`を使用している[JTabbedPaneのタブタイトルを変更](http://ateraimemo.com/Swing/EditTabTitle.html)と同じですが、こちらは文字が入力されるたびに(`JTabbedPane#revalidate`しているので)タブの幅が広がります。
 
 - 操作方法
     - マウスでタブをダブルクリック、またはタブを選択して<kbd>Enter</kbd>キーで編集開始
@@ -70,7 +70,7 @@ private void renameTabTitle() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneのタブタイトルを変更](http://terai.xrea.jp/Swing/EditTabTitle.html)
+- [JTabbedPaneのタブタイトルを変更](http://ateraimemo.com/Swing/EditTabTitle.html)
     - こちらは、`JDK 6`以前でも動作するように、`GlassPane`に`JTextField`を配置してタブタイトルの編集を行っています。
 
 <!-- dummy comment line for breaking list -->

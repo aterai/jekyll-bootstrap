@@ -82,7 +82,7 @@ public void showPanel() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JDialogでモーダルなJProgressBar付きSplash Screenを表示する](http://terai.xrea.jp/Swing/ProgressSplashScreen.html)
+- [JDialogでモーダルなJProgressBar付きSplash Screenを表示する](http://ateraimemo.com/Swing/ProgressSplashScreen.html)
 
 <!-- dummy comment line for breaking list -->
 

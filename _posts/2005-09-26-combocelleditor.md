@@ -36,12 +36,12 @@ col.setCellEditor(new DefaultCellEditor(cb));
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ1Ykl--I/AAAAAAAAAVA/ZRLgScHCF3s/s800/ComboCellEditor1.png)
 
 - - - -
-セルの表示にも`JComboBox`を使用する場合は、[JTableのCellRendererにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellRenderer.html)を参考に`JComboBox`を継承するセルレンダラーを使用してみてください。
+セルの表示にも`JComboBox`を使用する場合は、[JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)を参考に`JComboBox`を継承するセルレンダラーを使用してみてください。
 
 ## 参考リンク
 - [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples7.html)
 - [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
-- [JTableのCellRendererにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellRenderer.html)
+- [JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -24,21 +24,21 @@ private void adjustRowHeight(JTable table, int row, int column) {
   //doLayout();
 
   int prefH = getPreferredSize().height;
-  while(rowColHeight.size() &lt;= row) {
+  while (rowColHeight.size() &lt;= row) {
     rowColHeight.add(new ArrayList&lt;Integer&gt;(column));
   }
   List&lt;Integer&gt; colHeights = rowColHeight.get(row);
-  while(colHeights.size() &lt;= column) {
+  while (colHeights.size() &lt;= column) {
     colHeights.add(0);
   }
   colHeights.set(column, prefH);
   int maxH = prefH;
-  for(Integer colHeight : colHeights) {
-    if(colHeight &gt; maxH) {
+  for (Integer colHeight : colHeights) {
+    if (colHeight &gt; maxH) {
       maxH = colHeight;
     }
   }
-  if(table.getRowHeight(row) != maxH) {
+  if (table.getRowHeight(row) != maxH) {
     table.setRowHeight(row, maxH);
   }
 }
@@ -49,7 +49,7 @@ private void adjustRowHeight(JTable table, int row, int column) {
 
 ## 参考リンク
 - [Text Utilities « Java Tips Weblog](http://tips4java.wordpress.com/2008/10/26/text-utilities/)
-- [JTableのセル幅で文字列を折り返し](http://terai.xrea.jp/Swing/TableCellRenderer.html)
+- [JTableのセル幅で文字列を折り返し](http://ateraimemo.com/Swing/TableCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

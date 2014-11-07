@@ -65,7 +65,7 @@ comments: true
 
 ## 参考リンク
 - [Document Guard - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/date/20050622)
-- [JTextAreaの最終行だけ編集可能になるよう設定する](http://terai.xrea.jp/Swing/LastLineEditableTextArea.html)
+- [JTextAreaの最終行だけ編集可能になるよう設定する](http://ateraimemo.com/Swing/LastLineEditableTextArea.html)
 
 <!-- dummy comment line for breaking list -->
 

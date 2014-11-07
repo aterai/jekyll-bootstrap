@@ -220,7 +220,7 @@ public class ComboBoxUIDemo {
 
 ## 参考リンク
 - [java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](http://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox)
-- [JComboBoxの内余白](http://terai.xrea.jp/Swing/PaddingComboBox.html)
+- [JComboBoxの内余白](http://ateraimemo.com/Swing/PaddingComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

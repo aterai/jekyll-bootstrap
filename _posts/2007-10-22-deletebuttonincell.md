@@ -43,7 +43,7 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
       @Override public void actionPerformed(ActionEvent e) {
         int row = table.convertRowIndexToModel(table.getEditingRow());
         fireEditingStopped();
-        ((DefaultTableModel)table.getModel()).removeRow(row);
+        ((DefaultTableModel) table.getModel()).removeRow(row);
       }
     });
   }
@@ -73,28 +73,28 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 
 ## 参考リンク
 - [Swing - JButton inside JTable Cell](https://forums.oracle.com/thread/1357728)
-- [JTableの行を追加、削除](http://terai.xrea.jp/Swing/AddRow.html)
-- [JTableの行を全削除](http://terai.xrea.jp/Swing/ClearTable.html)
-- [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
-- [JTableのセルにHyperlinkを表示](http://terai.xrea.jp/Swing/HyperlinkInTableCell.html)
+- [JTableの行を追加、削除](http://ateraimemo.com/Swing/AddRow.html)
+- [JTableの行を全削除](http://ateraimemo.com/Swing/ClearTable.html)
+- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - ボタンのセル内でマウスを移動しても削除するように変更。 -- *aterai* 2008-03-28 (金) 16:59:11
-    - メモ: `0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除できる -> [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- *aterai* 2008-03-28 (金) 17:21:10
+    - メモ: `0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除できる -> [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- *aterai* 2008-03-28 (金) 17:21:10
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>//上記のBug Databaseにある回避方法
 JTable table = new JTable(model) {
   @Override public int rowAtPoint(Point pt) {
-    return (pt.y&lt;0)?-1:super.rowAtPoint(pt);
+    return (pt.y &lt; 0) ? -1 : super.rowAtPoint(pt);
   }
 };
 </code></pre>
 
 - テスト -- *aterai* 2009-09-27 (日) 01:34:58
-    - [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)に移動。
+    - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)に移動。
 
 <!-- dummy comment line for breaking list -->

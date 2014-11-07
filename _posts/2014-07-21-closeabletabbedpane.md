@@ -47,8 +47,7 @@ comments: true
     super.installUI(c);
     if (c instanceof JLayer) {
       ((JLayer) c).setLayerEventMask(
-          AWTEvent.MOUSE_EVENT_MASK |
-          AWTEvent.MOUSE_MOTION_EVENT_MASK);
+          AWTEvent.MOUSE_EVENT_MASK |AWTEvent.MOUSE_MOTION_EVENT_MASK);
     }
   }
   @Override public void uninstallUI(JComponent c) {
@@ -91,12 +90,12 @@ comments: true
 
 ## 解説
 - 上
-    - [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
+    - [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
     - タブに追加したコンポーネントは、中央揃えで配置される(`BasicTabbedPaneUI`などのデフォルト)
 - 下
     - `JLayer`を使用して、タブの余白にそれを閉じるための`JButton`を描画
         - `TabbedPaneUI`をオーバーライドする必要がない
-        - [JTabbedPaneにタブを閉じるアイコンを追加](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)では、`BasicTabbedPaneUI#createLayoutManager()`をオーバーライドして、独自の`TabbedPaneLayout`で右端に☓アイコンを描画
+        - [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)では、`BasicTabbedPaneUI#createLayoutManager()`をオーバーライドして、独自の`TabbedPaneLayout`で右端に☓アイコンを描画
     - タブの余白は`UIManager.put("TabbedPane.tabInsets", new Insets(2, 18, 2, 18));`で設定
         - この余白は、`NimbusLookAndFeel`などでは無効
         - 余白が取れないほどタブが短くなったら、ボタンがタイトルに重なってしまう
@@ -105,8 +104,8 @@ comments: true
 
 ## 参考リンク
 - [java - Closeable JTabbedPane - alignment of the close button - Stack Overflow](http://stackoverflow.com/questions/24634047/closeable-jtabbedpane-alignment-of-the-close-button)
-- [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
-- [JTabbedPaneにタブを閉じるアイコンを追加](http://terai.xrea.jp/Swing/TabWithCloseIcon.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
+- [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

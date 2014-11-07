@@ -55,7 +55,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JToolTipにアイコンを表示](http://terai.xrea.jp/Swing/ToolTipIcon.html)
+- [JToolTipにアイコンを表示](http://ateraimemo.com/Swing/ToolTipIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

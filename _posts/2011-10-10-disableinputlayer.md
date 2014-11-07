@@ -16,10 +16,12 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class DisableInputLayerUI extends LayerUI&lt;JPanel&gt; {
-  private boolean isRunning = false;
+  private boolean isRunning;
   @Override public void paint(Graphics g, JComponent c) {
     super.paint(g, c);
-    if(!isRunning) return;
+    if (!isRunning) {
+      return;
+    }
     Graphics2D g2 = (Graphics2D) g.create();
     g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .5f));
     g2.setPaint(Color.GRAY);
@@ -28,37 +30,43 @@ comments: true
   }
   @Override public void installUI(JComponent c) {
     super.installUI(c);
-    JLayer jlayer = (JLayer)c;
-    jlayer.getGlassPane().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-    jlayer.setLayerEventMask(
-        AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK
-      | AWTEvent.MOUSE_WHEEL_EVENT_MASK | AWTEvent.KEY_EVENT_MASK
-      | AWTEvent.FOCUS_EVENT_MASK | AWTEvent.COMPONENT_EVENT_MASK);
+    if (c instanceof JLayer) {
+      JLayer jlayer = (JLayer) c;
+      jlayer.getGlassPane().setCursor(
+          Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+      jlayer.setLayerEventMask(
+          AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK
+          | AWTEvent.MOUSE_WHEEL_EVENT_MASK | AWTEvent.KEY_EVENT_MASK
+          | AWTEvent.FOCUS_EVENT_MASK | AWTEvent.COMPONENT_EVENT_MASK);
+    }
   }
   @Override public void uninstallUI(JComponent c) {
-    JLayer jlayer = (JLayer)c;
-    jlayer.setLayerEventMask(0);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(0);
+    }
     super.uninstallUI(c);
   }
   @Override public void eventDispatched(AWTEvent e, JLayer l) {
-    if(isRunning &amp;&amp; e instanceof InputEvent) {
-        ((InputEvent)e).consume();
+    if (isRunning &amp;&amp; e instanceof InputEvent) {
+      ((InputEvent) e).consume();
     }
   }
   private static final String CMD_REPAINT = "repaint";
   public void start() {
-    if (isRunning) return;
+    if (isRunning) {
+      return;
+    }
     isRunning = true;
-    firePropertyChange(CMD_REPAINT,false,true);
+    firePropertyChange(CMD_REPAINT, false, true);
   }
   public void stop() {
     isRunning = false;
-    firePropertyChange(CMD_REPAINT,true,false);
+    firePropertyChange(CMD_REPAINT, true, false);
   }
   @Override public void applyPropertyChange(PropertyChangeEvent pce, JLayer l) {
     String cmd = pce.getPropertyName();
-    if(CMD_REPAINT.equals(cmd)) {
-      l.getGlassPane().setVisible((Boolean)pce.getNewValue());
+    if (CMD_REPAINT.equals(cmd)) {
+      l.getGlassPane().setVisible((Boolean) pce.getNewValue());
       l.repaint();
     }
   }
@@ -78,7 +86,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Cursorを砂時計に変更](http://terai.xrea.jp/Swing/WaitCursor.html)
+- [Cursorを砂時計に変更](http://ateraimemo.com/Swing/WaitCursor.html)
 
 <!-- dummy comment line for breaking list -->
 

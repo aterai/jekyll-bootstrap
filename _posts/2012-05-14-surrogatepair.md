@@ -16,10 +16,11 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>final URL url = getClass().getResource("SurrogatePair.html");
-try{
+try {
   editor1.read(new InputStreamReader(url.openStream(), "UTF-8"), "html");
-}catch(Exception ex) {
-  editor1.setText("&lt;html&gt;&lt;p&gt;(&amp;#xD85B;&amp;#xDE40;) (&amp;#x26E40;)&lt;br /&gt;(&amp;#xD842;&amp;#xDF9F;) (&amp;#x00020B9F;)&lt;/p&gt;&lt;/html&gt;");
+} catch (Exception ex) {
+  editor1.setText(
+    "&lt;html&gt;&lt;p&gt;(&amp;#xD85B;&amp;#xDE40;) (&amp;#x26E40;)&lt;br /&gt;(&amp;#xD842;&amp;#xDF9F;) (&amp;#x00020B9F;)&lt;/p&gt;&lt;/html&gt;");
 }
 
 JEditorPane editor2 = new JEditorPane();
@@ -71,7 +72,7 @@ editor2.setText("(\uD85B\uDE40) (\u26E40)\n(\uD842\uDF9F) (\u20B9F)");
 
 - - - -
 - `Windows 7`、`JDK 1.7.0_21`、`小塚明朝 Pr6N R`(`KozMinPr6N-Regular.otf`)で、`Font.createFont(...)`を使って`Font`を作成すると`IllegalArgumentException`が発生する場合がある
-    - [Bug ID: 5092191 RFE: CFF/Type2 embedded fonts not supported with Font.createFont()](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5092191)
+    - [Bug ID: 5092191 RFE: CFF/Type2 embedded fonts not supported with Font.createFont()](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5092191)
 
 <!-- dummy comment line for breaking list -->
 
@@ -128,7 +129,7 @@ public class OTFTest {
 ## コメント
 - 結合文字(`A&#x0300;`、`か&#x3099;`)も`JTextComponent`は未対応。~~ブラウザだと`Chrome`は対応されているが、他は部分的な対応になっている？~~ -- *aterai* 2012-05-15 (火) 11:17:30
 - `Windows 7` + `JDK 1.7.0`で`OTF`フォントは使えない？？？ -- *aterai* 2012-06-06 (水) 19:07:01
-- メモ: [Bug ID: 6836089 Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6836089) -- *aterai* 2012-06-25 (月) 18:37:16
+- メモ: [Bug ID: 6836089 Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6836089) -- *aterai* 2012-06-25 (月) 18:37:16
     - via: [<Swing Dev> <Swind Dev> <7u6> Review request for 6836089: Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://mail.openjdk.java.net/pipermail/swing-dev/2012-June/002145.html)
     - 確かに`JDK 1.6.0_33`では、`&#x26E40;`などの数値文字参照が`JEditorPane`で正常に表示されている。 -- *aterai* 2012-06-25 (月) 20:42:16
 

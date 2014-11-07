@@ -77,7 +77,7 @@ comments: true
 
 - 不定状態かどうかは、`JCheckBox#getIcon()`が`null`かどうかで判断する手抜き版
 - 横棒の色は`UIManager.getColor("CheckBox.foreground");`を使用しているが、`LookAndFeel`によっては無意味
-- [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://terai.xrea.jp/Swing/TableHeaderCheckBox.html)で使用すると、`NimbusLookAndFeel`の場合だけ、アイコンと文字列のベースラインがずれる？
+- [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://ateraimemo.com/Swing/TableHeaderCheckBox.html)で使用すると、`NimbusLookAndFeel`の場合だけ、アイコンと文字列のベースラインがずれる？
     - 文字列も`ImageIcon`にして回避
 - `NimbusLookAndFeel`で、不定状態アイコンのフォーカスやロールオーバーが表示されない
 

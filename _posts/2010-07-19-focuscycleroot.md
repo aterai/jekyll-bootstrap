@@ -33,7 +33,7 @@ p1.add(new JTextField(16));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Focusの移動](http://terai.xrea.jp/Swing/FocusTraversal.html)
+- [Focusの移動](http://ateraimemo.com/Swing/FocusTraversal.html)
 
 <!-- dummy comment line for breaking list -->
 

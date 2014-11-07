@@ -80,7 +80,7 @@ comments: true
 - - - -
 - メモ
     - [<Swing Dev> 8 Review request for 8012004: JINTERNALFRAME NOT BEING FINALIZED AFTER CLOSING](http://mail.openjdk.java.net/pipermail/swing-dev/2013-April/002688.html)
-    - [Bug ID: 4759312 JInternalFrame Not Being Finalized After Closing](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4759312)
+    - [Bug ID: 4759312 JInternalFrame Not Being Finalized After Closing](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4759312)
 
 <!-- dummy comment line for breaking list -->
 

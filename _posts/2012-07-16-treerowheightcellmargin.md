@@ -83,7 +83,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeのノードの文字列に余白を追加](http://terai.xrea.jp/Swing/TreeCellMargin.html)
+- [JTreeのノードの文字列に余白を追加](http://ateraimemo.com/Swing/TreeCellMargin.html)
 
 <!-- dummy comment line for breaking list -->
 

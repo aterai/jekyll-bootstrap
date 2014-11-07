@@ -57,7 +57,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTreeの展開、折畳みアイコンを非表示にする](http://terai.xrea.jp/Swing/TreeExpandedIcon.html)
+- [JTreeの展開、折畳みアイコンを非表示にする](http://ateraimemo.com/Swing/TreeExpandedIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

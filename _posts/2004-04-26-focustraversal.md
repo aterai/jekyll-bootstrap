@@ -32,7 +32,7 @@ FocusTraversalPolicy policy = new FocusTraversalPolicy() {
     return order.get(0);
   }
   @Override public Component getLastComponent(Container focusCycleRoot) {
-    return order.get(order.size()-1);
+    return order.get(order.size() - 1);
   }
   @Override public Component getComponentAfter(
       Container focusCycleRoot, Component aComponent) {
@@ -76,12 +76,12 @@ frame.setFocusTraversalPolicy(policy);
 
 <pre class="prettyprint"><code>frame.setFocusTraversalPolicy(new LayoutFocusTraversalPolicy() {
   @Override protected boolean accept(Component c) {
-    if(c instanceof JTextComponent &amp;&amp; !((JTextComponent)c).isEditable()) {
+    if (c instanceof JTextComponent &amp;&amp; !((JTextComponent) c).isEditable()) {
       return false;
-    }else{
+    } else {
       return super.accept(c);
     }
-    //return (c==textarea)?false:super.accept(c);
+    //return (c == textarea) ? false : super.accept(c);
   }
 });
 </code></pre>
@@ -89,8 +89,8 @@ frame.setFocusTraversalPolicy(policy);
 ## 参考リンク
 - [AWT フォーカスサブシステム](http://docs.oracle.com/javase/jp/7/api/java/awt/doc-files/FocusSpec.html)
 - [Merlinの魔術: フォーカス、フォーカス、フォーカス](http://www.ibm.com/developerworks/jp/java/library/j-mer07153/)
-- [Windowを開いたときのフォーカスを指定](http://terai.xrea.jp/Swing/DefaultFocus.html)
-- [FocusTraversalKeysに矢印キーを追加してフォーカス移動](http://terai.xrea.jp/Swing/FocusTraversalKeys.html)
+- [Windowを開いたときのフォーカスを指定](http://ateraimemo.com/Swing/DefaultFocus.html)
+- [FocusTraversalKeysに矢印キーを追加してフォーカス移動](http://ateraimemo.com/Swing/FocusTraversalKeys.html)
 
 <!-- dummy comment line for breaking list -->
 

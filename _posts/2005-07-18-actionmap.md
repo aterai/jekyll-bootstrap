@@ -37,8 +37,8 @@ am.put(DefaultEditorKit.pasteAction, beep);
 </code></pre>
 
 ## 参考リンク
-- [DefaultEditorKitでポップアップメニューからコピー](http://terai.xrea.jp/Swing/DefaultEditorKit.html)
-- [JComponentのKeyBinding一覧を取得する](http://terai.xrea.jp/Swing/KeyBinding.html)
+- [DefaultEditorKitでポップアップメニューからコピー](http://ateraimemo.com/Swing/DefaultEditorKit.html)
+- [JComponentのKeyBinding一覧を取得する](http://ateraimemo.com/Swing/KeyBinding.html)
 
 <!-- dummy comment line for breaking list -->
 

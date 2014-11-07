@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: DividerSplitRatio
 title: JSplitPaneのDividerの位置を最大化後に変更する
-tags: [JSplitPane, JFrame]
+tags: [JSplitPane, JFrame, Divider]
 author: aterai
 pubdate: 2011-11-14T11:39:46+09:00
 description: JFrameを最大化した後でJSplitPaneのDividerの位置を変更する場合のテストをします。
@@ -65,7 +65,7 @@ comments: true
 `JSplitPane#setDividerLocation(double)`は、内部で`JSplitPane#setDividerLocation(int)`を呼び出しているが、その変換の際に値を切り捨てているので、上記のサンプルでは最大化、元に戻す(縮小)を行なっても、同じ値になるように四捨五入するよう変更している。
 
 ## 参考リンク
-- [JSplitPaneを等分割する](http://terai.xrea.jp/Swing/DividerLocation.html)
+- [JSplitPaneを等分割する](http://ateraimemo.com/Swing/DividerLocation.html)
 
 <!-- dummy comment line for breaking list -->
 

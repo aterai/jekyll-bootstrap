@@ -15,29 +15,27 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNY3BG1nI/AAAAAAAAAas/YJB5L9kNK-c/s800/GhostText.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class HintTextFocusListener implements FocusListener {
-  Color INACTIVE_COLOR = UIManager.getColor("TextField.inactiveForeground");
-  Color ORIGINAL_COLOR = UIManager.getColor("TextField.foreground");
+<pre class="prettyprint"><code>class PlaceholderFocusListener implements FocusListener {
+  private static final Color INACTIVE
+    = UIManager.getColor("TextField.inactiveForeground");
   private final String hintMessage;
-  public HintTextFocusListener(final JTextComponent tf) {
+  public PlaceholderFocusListener(JTextComponent tf) {
     hintMessage = tf.getText();
-    tf.setForeground(INACTIVE_COLOR);
+    tf.setForeground(INACTIVE);
   }
-  @Override public void focusGained(final FocusEvent e) {
-    JTextComponent textField = (JTextComponent)e.getSource();
-    String str = textField.getText();
-    Color col  = textField.getForeground();
-    if(hintMessage.equals(str) &amp;&amp; INACTIVE_COLOR.equals(col)) {
-      textField.setForeground(ORIGINAL_COLOR);
-      textField.setText("");
+  @Override public void focusGained(FocusEvent e) {
+    JTextComponent tf = (JTextComponent) e.getComponent();
+    if (hintMessage.equals(tf.getText())
+        &amp;&amp; INACTIVE.equals(tf.getForeground())) {
+      tf.setForeground(UIManager.getColor("TextField.foreground"));
+      tf.setText("");
     }
   }
-  @Override public void focusLost(final FocusEvent e) {
-    JTextComponent textField = (JTextComponent)e.getSource();
-    String str = textField.getText().trim();
-    if("".equals(str)) {
-      textField.setForeground(INACTIVE_COLOR);
-      textField.setText(hintMessage);
+  @Override public void focusLost(FocusEvent e) {
+    JTextComponent tf = (JTextComponent) e.getComponent();
+    if ("".equals(tf.getText().trim())) {
+      tf.setForeground(INACTIVE);
+      tf.setText(hintMessage);
     }
   }
 }
@@ -91,8 +89,8 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTextFieldに透かし画像を表示する](http://terai.xrea.jp/Swing/WatermarkInTextField.html)
-- [JPasswordFieldにヒント文字列を描画する](http://terai.xrea.jp/Swing/InputHintPasswordField.html)
+- [JTextFieldに透かし画像を表示する](http://ateraimemo.com/Swing/WatermarkInTextField.html)
+- [JPasswordFieldにヒント文字列を描画する](http://ateraimemo.com/Swing/InputHintPasswordField.html)
     - `JPasswordField`の場合は、`setText`などが使えないので、透かし画像と同じ要領で`paintComponent`をオーバーライドして文字列を描画する方法を使います。
 
 <!-- dummy comment line for breaking list -->

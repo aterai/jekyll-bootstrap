@@ -27,15 +27,15 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
       @Override public void mouseClicked(MouseEvent e) {
         hide();
         System.out.println(comboBox.getSelectedItem());
-        append((String)combo.getSelectedItem());
+        append((String) combo.getSelectedItem());
       }
     };
-    if(listener!=null) {
+    if (listener != null) {
       list.addMouseListener(listener);
     }
   }
   @Override public void uninstallingUI() {
-    if(listener != null) {
+    if (listener != null) {
       list.removeMouseListener(listener);
       listener = null;
     }
@@ -74,7 +74,7 @@ BasicComboPopup popup = new BasicComboPopup(combo) {
 	Exception in thread "AWT-EventQueue-0" java.security.AccessControlException: access denied (java.awt.AWTPermission setWindowAlwaysOnTop)
 
 - 上記の`AccessControlException`は、`6u10 build b26`で修正されている
-    - [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6675802)
+    - [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6675802)
 
 <!-- dummy comment line for breaking list -->
 

@@ -65,11 +65,11 @@ tab1.setUI(new javax.swing.plaf.basic.BasicTabbedPaneUI() {
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJZ71XT7I/AAAAAAAAAUU/bO4iaEaR_xU/s800/ClippedTitleTab1.png)
 
 - - - -
-`JDK 1.6.0`なら、[JTabbedPaneのタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTabLabel.html)のように、`JTabbedPane#setTabComponentAt`メソッドを使って、`JLabel`のクリップ機能をそのまま利用する方法もあります。
+`JDK 1.6.0`なら、[JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)のように、`JTabbedPane#setTabComponentAt`メソッドを使って、`JLabel`のクリップ機能をそのまま利用する方法もあります。
 
 ## 参考リンク
-- [JTabbedPaneのタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTabLabel.html)
-- [JTabbedPaneのTabTitleを左揃えに変更](http://terai.xrea.jp/Swing/TabTitleAlignment.html)
+- [JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)
+- [JTabbedPaneのTabTitleを左揃えに変更](http://ateraimemo.com/Swing/TabTitleAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 

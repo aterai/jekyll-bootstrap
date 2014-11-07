@@ -53,8 +53,8 @@ comments: true
 
 ## 参考リンク
 - [Multisort Table Header Cell Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
-- [TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)
-- [JTableのソートアイコンを変更](http://terai.xrea.jp/Swing/TableSortIcon.html)
+- [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
+- [JTableのソートアイコンを変更](http://ateraimemo.com/Swing/TableSortIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

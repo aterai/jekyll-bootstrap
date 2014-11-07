@@ -33,7 +33,7 @@ Shape copyleft = at.createTransformedShape(copyright);
 ## 参考リンク
 - [コピーレフト - Wikipedia](http://en.wikipedia.org/wiki/Copyleft)
     - アイコン
-- [AffineTransformOpで画像を反転する](http://terai.xrea.jp/Swing/AffineTransformOp.html)
+- [AffineTransformOpで画像を反転する](http://ateraimemo.com/Swing/AffineTransformOp.html)
 
 <!-- dummy comment line for breaking list -->
 

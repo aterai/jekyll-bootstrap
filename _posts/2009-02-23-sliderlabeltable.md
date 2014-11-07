@@ -48,7 +48,7 @@ slider1.setPaintLabels(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JSliderのUIや色を変更する](http://terai.xrea.jp/Swing/VolumeSlider.html)
+- [JSliderのUIや色を変更する](http://ateraimemo.com/Swing/VolumeSlider.html)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 
 <!-- dummy comment line for breaking list -->

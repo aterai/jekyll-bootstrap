@@ -33,9 +33,9 @@ GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(font);
 ## 参考リンク
 - [creamundo | Fuentes Gratis TrueType TTF](http://www.creamundo.com/)
     - こちらから`TrueType`フォントを利用しています。
-- [Fontをファイルから取得](http://terai.xrea.jp/Swing/CreateFont.html)
-- [Htmlを使ったJLabelとJEditorPaneの無効化](http://terai.xrea.jp/Swing/DisabledHtmlLabel.html)
-- [JEditorPaneのHTMLEditorKitにCSSを適用](http://terai.xrea.jp/Swing/StyleSheet.html)
+- [Fontをファイルから取得](http://ateraimemo.com/Swing/CreateFont.html)
+- [Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html)
+- [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
 
 <!-- dummy comment line for breaking list -->
 

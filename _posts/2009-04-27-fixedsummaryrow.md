@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>public JTable makeTable() {
   final JTable table = new JTable(model);
-  final RowFilter&lt;TableModel,Integer&gt; filter = new RowFilter&lt;TableModel,Integer&gt;() {
+  final RowFilter&lt;TableModel, Integer&gt; filter = new RowFilter&lt;&gt;() {
     @Override public boolean include(
       Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
       int i0 = table.convertRowIndexToView(entry.getIdentifier());
@@ -38,20 +38,21 @@ comments: true
   table.setRowSorter(s);
 
   TableColumnModel col = table.getColumnModel();
-  for(int i=0;i&lt;col.getColumnCount();i++) {
-    final TableCellRenderer r = table.getDefaultRenderer(model.getColumnClass(i));
+  for (int i = 0; i &lt; col.getColumnCount(); i++) {
+    TableCellRenderer r = table.getDefaultRenderer(model.getColumnClass(i));
     col.getColumn(i).setCellRenderer(new TableCellRenderer() {
-      @Override public Component getTableCellRendererComponent(JTable table, Object value,
-                       boolean isSelected, boolean hasFocus, int row, int column) {
+      @Override public Component getTableCellRendererComponent(
+          JTable table, Object value,
+          boolean isSelected, boolean hasFocus, int row, int column) {
         JLabel l;
-        if(row==model.getRowCount()-2) {
+        if (row == model.getRowCount() - 2) {
           int i = getSum(table.convertColumnIndexToModel(column));
-          l = (JLabel)r.getTableCellRendererComponent(
-                table, i, isSelected, hasFocus, row, column);
+          l = (JLabel) r.getTableCellRendererComponent(
+              table, i, isSelected, hasFocus, row, column);
           l.setBackground(Color.ORANGE);
-        }else{
-          l = (JLabel)r.getTableCellRendererComponent(
-                table, value, isSelected, hasFocus, row, column);
+        } else {
+          l = (JLabel) r.getTableCellRendererComponent(
+              table, value, isSelected, hasFocus, row, column);
           l.setBackground(Color.WHITE);
         }
         l.setForeground(Color.BLACK);

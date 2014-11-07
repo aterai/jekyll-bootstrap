@@ -96,13 +96,13 @@ comments: true
 - `Windows Explorer`との相違点
     - アイコンと文字列以外の場所(セル内)をクリックしても、選択できてしまう
         - `WindowsLookAndFeel`での`JFileChooser`は、`JTable.putClientProperty("Table.isFileList", Boolean.TRUE)`を使用？
-        - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://terai.xrea.jp/Swing/TableFileList.html)
+        - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://ateraimemo.com/Swing/TableFileList.html)
     - 矩形による範囲指定で選択することができない
-        - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://terai.xrea.jp/Swing/TableFileList.html)
-        - [JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)
+        - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://ateraimemo.com/Swing/TableFileList.html)
+        - [JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)
     - ~~ソートすると選択状態がクリアされてしまう~~
         - `TableRowSorter`では選択状態を維持するのが標準に
-        - [TableSorterでソートしても選択状態を維持](http://terai.xrea.jp/Swing/SelectionKeeper.html)
+        - [TableSorterでソートしても選択状態を維持](http://ateraimemo.com/Swing/SelectionKeeper.html)
     - ~~<kbd>Tab</kbd>キー、矢印キーによる選択状態の移動がおかしい~~
     - 編集不可
 
@@ -111,7 +111,7 @@ comments: true
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
-- [JTableで文字列をクリックした場合だけセルを選択状態にする](http://terai.xrea.jp/Swing/TableFileList.html)
+- [JTableで文字列をクリックした場合だけセルを選択状態にする](http://ateraimemo.com/Swing/TableFileList.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -64,8 +64,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)
-- [TabbedPane風のタブ配置をレイアウトマネージャーで変更](http://terai.xrea.jp/Swing/NewTabButton.html)
+- [JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)
+- [TabbedPane風のタブ配置をレイアウトマネージャーで変更](http://ateraimemo.com/Swing/NewTabButton.html)
 
 <!-- dummy comment line for breaking list -->
 

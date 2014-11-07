@@ -15,9 +15,10 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQ0y2U6WI/AAAAAAAAAgM/AAHllQ3_VHw/s800/PaintPanel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class PaintPanel extends JPanel implements MouseMotionListener, MouseListener {
-  private Point startPoint = new Point(-1,-1);
-  private Point endPoint   = new Point(-1,-1);
+<pre class="prettyprint"><code>class PaintPanel extends JPanel
+                 implements MouseMotionListener, MouseListener {
+  private Point startPoint = new Point(-10, -10);
+  private Point p = new Point(-10, -10);
   public PaintPanel() {
     super();
     addMouseMotionListener(this);
@@ -25,25 +26,22 @@ comments: true
   }
   @Override public void paintComponent(Graphics g) {
     //super.paintComponent(g);
-    Graphics2D g2d = (Graphics2D)g;
-    g2d.setStroke(new BasicStroke(3.0F));
+    Graphics2D g2d = (Graphics2D) g.create();
+    g2d.setStroke(new BasicStroke(3f));
     g2d.setPaint(Color.BLACK);
-    g2d.drawLine(startPoint.x, startPoint.y,
-                 endPoint.x,   endPoint.y);
-    startPoint = endPoint;
+    g2d.drawLine(startPoint.x, startPoint.y, p.x, p.y);
+    g2d.dispose();
+    startPoint = p;
   }
   @Override public void mouseDragged(MouseEvent e) {
-    endPoint = e.getPoint();
+    p = e.getPoint();
     repaint();
   }
-  @Override public void mousePressed(MouseEvent e) {
-    startPoint = e.getPoint();
-  }
-  @Override public void mouseMoved(MouseEvent e) {}
-  @Override public void mouseExited(MouseEvent e) {}
-  @Override public void mouseEntered(MouseEvent e) {}
+  @Override public void mouseMoved(MouseEvent e)    {}
+  @Override public void mouseExited(MouseEvent e)   {}
+  @Override public void mouseEntered(MouseEvent e)  {}
   @Override public void mouseReleased(MouseEvent e) {}
-  @Override public void mouseClicked(MouseEvent e) {}
+  @Override public void mouseClicked(MouseEvent e)  {}
 }
 </code></pre>
 
@@ -58,14 +56,14 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [MemoryImageSourceで配列から画像を生成](http://terai.xrea.jp/Swing/MemoryImageSource.html)
+- [MemoryImageSourceで配列から画像を生成](http://ateraimemo.com/Swing/MemoryImageSource.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - マウス右ボタンをドラッグで消しゴム…のテスト -- *aterai* 2010-01-12 (火) 16:16:59
     - 追記:不要なコードを削除。 -- *aterai* 2010-04-30 (金) 19:26:37
-    - [MemoryImageSourceで配列から画像を生成](http://terai.xrea.jp/Swing/MemoryImageSource.html)に移動。 -- *aterai* 2010-06-07 (月) 15:21:37
+    - [MemoryImageSourceで配列から画像を生成](http://ateraimemo.com/Swing/MemoryImageSource.html)に移動。 -- *aterai* 2010-06-07 (月) 15:21:37
 - わからん！！ --  2010-04-30 (金) 18:11:55
 
 <!-- dummy comment line for breaking list -->

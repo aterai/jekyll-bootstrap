@@ -58,8 +58,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [BorderにJComponentを配置](http://terai.xrea.jp/Swing/ComponentTitledBorder.html)
-- [SpringLayoutの使用](http://terai.xrea.jp/Swing/SpringLayout.html)
+- [BorderにJComponentを配置](http://ateraimemo.com/Swing/ComponentTitledBorder.html)
+- [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

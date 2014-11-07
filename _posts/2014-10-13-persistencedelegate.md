@@ -75,8 +75,8 @@ comments: true
 ## 参考リンク
 - [Using XMLEncoder (web.archive.org)](http://web.archive.org/web/20090806075316/http://java.sun.com/products/jfc/tsc/articles/persistence4/)
     - [Using XMLEncoder](http://www.oracle.com/technetwork/java/persistence4-140124.html)
-- [JTable Inhalte speichern – Byte-Welt Wiki](http://terai.xrea.jp/http://wiki.byte-welt.net/wiki/JTable_speichern.html)
-- [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://terai.xrea.jp/Swing/PersistenceService.html)
+- [JTable Inhalte speichern – Byte-Welt Wiki](http://ateraimemo.com/http://wiki.byte-welt.net/wiki/JTable_speichern.html)
+- [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://ateraimemo.com/Swing/PersistenceService.html)
 
 <!-- dummy comment line for breaking list -->
 

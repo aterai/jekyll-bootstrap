@@ -17,14 +17,14 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private static int number = 0;
 public static JFrame createFrame(String title) {
-  JFrame frame = new JFrame((title==null)?"Frame #"+number:title);
+  JFrame frame = new JFrame((title==null) ? "Frame #" + number : title);
   frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
   number++;
 //frame.addWindowListener(new WindowAdapter() {
 //  @Override public void windowClosing(WindowEvent e) {
 //    number--;
-//    if(number==0) {
-//      JFrame f = (JFrame)e.getSource();
+//    if (number == 0) {
+//      JFrame f = (JFrame) e.getSource();
 //      f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //    }
 //  }

@@ -55,6 +55,6 @@ void loadSelectedRow(JTable table, Vector list, int keyCol) {
 
 上記のサンプルでは、[TableSorter.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)中の`MouseHandler`を変更し、`0`列目の番号をキーにして行の選択状態を保存するようにしています。
 
-`JDK 1.6.0`の`TableRowSorter`でソートを行う場合は、標準で選択状態が保存されるようです([TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html))。
+`JDK 1.6.0`の`TableRowSorter`でソートを行う場合は、標準で選択状態が保存されるようです([TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html))。
 
 ## コメント

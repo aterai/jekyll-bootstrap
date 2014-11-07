@@ -121,24 +121,24 @@ class CompoundButton extends JButton {
 
 ## 解説
 - 円形ボタン
-    - [JButtonの形を変更](http://terai.xrea.jp/Swing/RoundButton.html)を使って、幅高さの半分の直径をもつ円ボタンを作成
+    - [JButtonの形を変更](http://ateraimemo.com/Swing/RoundButton.html)を使って、幅高さの半分の直径をもつ円ボタンを作成
     - `JButton#contains(...)`をオーバーライドして、図形内のみマウスカーソルが反応するように変更
 - 扇形ボタン
     - 東西南北に`4`つ配置するので、角の大きさは`90`度、始角はそれぞれ、`45`、`135`、`225`、`-45`度で`Arc2D`を作成
     - これらの`Arc2D`から上記の円形ボタンの領域を取り去って扇形に変形(`Area#subtract(Area)`を使用)
-        - [Mouseで画像を移動、回転](http://terai.xrea.jp/Swing/MouseDrivenImageRotation.html)
+        - [Mouseで画像を移動、回転](http://ateraimemo.com/Swing/MouseDrivenImageRotation.html)
     - `JButton#contains(...)`をオーバーライドして、図形内のみマウスカーソルが反応するように変更
 - 複合ボタン
     - `5`つのボタンを、`OverlayLayout`を設定した`JPanel`に配置
     - `JPanel#getPreferredSize()`をオーバーライドして、サイズが`5`つのボタンと同じになるように設定
-        - [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
+        - [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
-- [JButtonの形を変更](http://terai.xrea.jp/Swing/RoundButton.html)
-- [Mouseで画像を移動、回転](http://terai.xrea.jp/Swing/MouseDrivenImageRotation.html)
+- [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
+- [JButtonの形を変更](http://ateraimemo.com/Swing/RoundButton.html)
+- [Mouseで画像を移動、回転](http://ateraimemo.com/Swing/MouseDrivenImageRotation.html)
 
 <!-- dummy comment line for breaking list -->
 

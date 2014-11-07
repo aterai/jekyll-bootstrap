@@ -36,7 +36,7 @@ l1.setBorder(new ComponentTitledBorder(c, l1, eb));
 
 ## 参考リンク
 - [ComponentTitledBorder](http://www.jroller.com/page/santhosh?entry=component_titled_border)
-- [Borderの右下にJComponentを配置](http://terai.xrea.jp/Swing/RightAlignComponentBorder.html)
+- [Borderの右下にJComponentを配置](http://ateraimemo.com/Swing/RightAlignComponentBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

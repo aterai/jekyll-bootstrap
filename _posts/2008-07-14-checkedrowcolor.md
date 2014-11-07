@@ -64,6 +64,6 @@ comments: true
 ## コメント
 - ごちそうさまでした。 -- *tanuchan* 2009-12-14 (Mon) 04:22:08
     - まいどありです。 -- *aterai* 2009-12-16 (水) 21:25:57
-- メモ: [Bug ID: 6711682 JCheckBox in JTable: checkbox doesn't alaways respond to the first mouse click](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6711682) -- *aterai* 2010-07-26 (月) 14:18:03
+- メモ: [Bug ID: 6711682 JCheckBox in JTable: checkbox doesn't alaways respond to the first mouse click](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6711682) -- *aterai* 2010-07-26 (月) 14:18:03
 
 <!-- dummy comment line for breaking list -->

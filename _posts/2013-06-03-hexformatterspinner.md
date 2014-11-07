@@ -58,7 +58,7 @@ String str = new String(Character.toChars(code));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Fontのアウトラインを取得して文字列の内部を修飾する](http://terai.xrea.jp/Swing/LineSplittingLabel.html)
+- [Fontのアウトラインを取得して文字列の内部を修飾する](http://ateraimemo.com/Swing/LineSplittingLabel.html)
 - [IPAmj明朝とIPAex明朝で形の違う字 NAOI's fotolife - 20130411131759](http://f.hatena.ne.jp/NAOI/20130411131759)
 
 <!-- dummy comment line for breaking list -->

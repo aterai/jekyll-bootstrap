@@ -78,8 +78,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Cursorを砂時計に変更](http://terai.xrea.jp/Swing/WaitCursor.html)
-- [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://terai.xrea.jp/Swing/TabTitleEditor.html)
+- [Cursorを砂時計に変更](http://ateraimemo.com/Swing/WaitCursor.html)
+- [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://ateraimemo.com/Swing/TabTitleEditor.html)
     - `JDK 6`版です。タブに`JTextField`を`JTabbedPane#setTabComponentAt`メソッドを使用して配置しています。
 - [Swing - Floating text field](https://forums.oracle.com/thread/1359811)
     - `JPopupMenu`に`JTextField`を配置することで同様のことを行うコードをKelVarnsonさんが投稿しています。

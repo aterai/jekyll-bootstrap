@@ -121,14 +121,14 @@ comments: true
 - - - -
 葉ノードだけ編集可能に制限するため、`TreeCellEditor#isCellEditable(EventObject)`でクリックしたノードが`TreeNode#isLeaf()`かを判断しています。
 
-- [JTreeの葉ノードだけ編集可能にする](http://terai.xrea.jp/Swing/LeafTreeCellEditor.html)
+- [JTreeの葉ノードだけ編集可能にする](http://ateraimemo.com/Swing/LeafTreeCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [CheckNode - JTree Examples 2](http://www.crionics.com/products/opensource/faq/swing_ex/JTreeExamples2.html)
-- [JTreeの葉ノードだけ編集可能にする](http://terai.xrea.jp/Swing/LeafTreeCellEditor.html)
-- [JTreeのすべてのノードにJCheckBoxを追加する](http://terai.xrea.jp/Swing/CheckBoxNodeEditor.html)
+- [JTreeの葉ノードだけ編集可能にする](http://ateraimemo.com/Swing/LeafTreeCellEditor.html)
+- [JTreeのすべてのノードにJCheckBoxを追加する](http://ateraimemo.com/Swing/CheckBoxNodeEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -86,7 +86,7 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 --- 203,208 ----
 </code></pre>
 
-- [Bug ID: 2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=2224554)の修正が関係しているようだ。半透明の`Window`を使わないで、変わった形の`Window`を使う場合は、丁度この記事などのようにリフレクションを使って常に`PopupFactory_FORCE_HEAVYWEIGHT_POPUP`にした方が良さそう。 -- *aterai* 2013-06-18 (火) 14:11:40
+- [Bug ID: 2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=2224554)の修正が関係しているようだ。半透明の`Window`を使わないで、変わった形の`Window`を使う場合は、丁度この記事などのようにリフレクションを使って常に`PopupFactory_FORCE_HEAVYWEIGHT_POPUP`にした方が良さそう。 -- *aterai* 2013-06-18 (火) 14:11:40
     - 去年`Swing Dev ML`で議論されている。[<Swing Dev> (8) Review request for 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://mail.openjdk.java.net/pipermail/swing-dev/2012-June/002096.html) -- *aterai* 2013-06-18 (火) 14:19:21
 
 <!-- dummy comment line for breaking list -->

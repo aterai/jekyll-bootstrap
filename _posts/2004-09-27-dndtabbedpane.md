@@ -65,9 +65,9 @@ private void convertTab(int prev, int next) {
 
 ## 参考リンク
 - [Java Swing Hacks #63 半透明のドラッグ＆ドロップ](http://www.oreilly.co.jp/books/4873112788/toc.html)
-- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://terai.xrea.jp/Swing/CardLayoutTabbedPane.html)
-- [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://terai.xrea.jp/Swing/DnDExportTabbedPane.html)
-- [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](http://terai.xrea.jp/Swing/DnDLayerTabbedPane.html)
+- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
+- [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://ateraimemo.com/Swing/DnDExportTabbedPane.html)
+- [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](http://ateraimemo.com/Swing/DnDLayerTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

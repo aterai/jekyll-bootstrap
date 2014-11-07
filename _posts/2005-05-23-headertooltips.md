@@ -29,13 +29,13 @@ table.setTableHeader(header);
 上記のサンプルでは、`JTableHeader#getToolTipText`メソッドをオーバーライドして、マウスカーソルの下にあるカラムヘッダの名前などを`Tooltips`として返すようにしています。
 
 ## 参考リンク
-- [JTableのTooltipsを行ごとに変更](http://terai.xrea.jp/Swing/RowTooltips.html)
-- [JTableのセルがクリップされている場合のみJToolTipを表示](http://terai.xrea.jp/Swing/ClippedCellTooltips.html)
+- [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
+- [JTableのセルがクリップされている場合のみJToolTipを表示](http://ateraimemo.com/Swing/ClippedCellTooltips.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 文字列がクリップされている場合だけ、`JToolTip`を表示する -- *aterai* 2009-10-07 (水) 01:00:19
-    - [JTableのセルがクリップされている場合のみJToolTipを表示](http://terai.xrea.jp/Swing/ClippedCellTooltips.html)に移動 -- *aterai* 2009-10-12 (月) 17:43:41
+    - [JTableのセルがクリップされている場合のみJToolTipを表示](http://ateraimemo.com/Swing/ClippedCellTooltips.html)に移動 -- *aterai* 2009-10-12 (月) 17:43:41
 
 <!-- dummy comment line for breaking list -->

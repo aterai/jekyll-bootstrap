@@ -117,7 +117,7 @@ comments: true
 - [ついにベールを脱いだJavaFX：第9回 アニメーションを用いてより魅力的に［応用編］｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/javafx/0009?page=2)
 - [Java2D Shapes project.](http://java-sl.com/shapes.html)
 - [プログラマメモ2: 扇形っぽいのを描く](http://programamemo2.blogspot.com/2008/12/java.html)
-- [PathIteratorからSVGを生成](http://terai.xrea.jp/Swing/PathIterator.html)
+- [PathIteratorからSVGを生成](http://ateraimemo.com/Swing/PathIterator.html)
 
 <!-- dummy comment line for breaking list -->
 

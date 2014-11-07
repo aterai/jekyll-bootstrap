@@ -100,7 +100,7 @@ comments: true
 注: ファイルをドロップしてもコンソールにファイル名を表示するだけで他はなにもしていません。
 
 ## 参考リンク
-- [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)
+- [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)
 - [swing - Java application with fancy Drag & Drop - Stack Overflow](http://stackoverflow.com/questions/10751001/java-application-with-fancy-drag-drop)
 
 <!-- dummy comment line for breaking list -->

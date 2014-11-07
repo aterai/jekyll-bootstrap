@@ -18,17 +18,17 @@ comments: true
 <pre class="prettyprint"><code>final RowFilter&lt;TableModel, Integer&gt; filter = new RowFilter&lt;TableModel, Integer&gt;() {
   @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     int vidx = table.convertRowIndexToView(entry.getIdentifier());
-    return vidx&lt;USER_SPECIFIED_NUMBER_OF_ROWS;
+    return vidx &lt; USER_SPECIFIED_NUMBER_OF_ROWS;
   }
 };
 final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
   @Override public void toggleSortOrder(int column) {
-    if(check.isSelected()) {
+    if (check.isSelected()) {
       RowFilter&lt;? super TableModel, ? super Integer&gt; f = getRowFilter();
       setRowFilter(null);
       super.toggleSortOrder(column);
       setRowFilter(f);
-    }else{
+    } else {
       super.toggleSortOrder(column);
     }
   }
@@ -57,7 +57,7 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
 <pre class="prettyprint"><code>final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
   @Override public void toggleSortOrder(int column) {
     super.toggleSortOrder(column);
-    if(check.isSelected()) {
+    if (check.isSelected()) {
       model.fireTableDataChanged();
       //??? allRowsChanged();
       //modelRowCount = getModelWrapper().getRowCount();
@@ -68,7 +68,7 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
 </code></pre>
 
 ## 参考リンク
-- [Specification for the javax.swing.DefaultRowSorter.setSortsOnUpdates/rowsUpdated method is not clear](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6301297)
+- [Specification for the javax.swing.DefaultRowSorter.setSortsOnUpdates/rowsUpdated method is not clear](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6301297)
 
 <!-- dummy comment line for breaking list -->
 

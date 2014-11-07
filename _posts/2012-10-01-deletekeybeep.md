@@ -21,11 +21,11 @@ am.put(key, new TextAction(key) {
   //@see javax/swing/text/DefaultEditorKit.java DeletePrevCharAction
   @Override public void actionPerformed(ActionEvent e) {
     JTextComponent target = getTextComponent(e);
-    if(target != null &amp;&amp; target.isEditable()) {
+    if (target != null &amp;&amp; target.isEditable()) {
       Caret caret = target.getCaret();
       int dot = caret.getDot();
       int mark = caret.getMark();
-      if(dot==0 &amp;&amp; mark==0) {
+      if (dot == 0 &amp;&amp; mark == 0) {
         return;
       }
     }
@@ -38,12 +38,12 @@ am.put(key, new TextAction(key) {
   //@see javax/swing/text/DefaultEditorKit.java DeleteNextCharAction
   @Override public void actionPerformed(ActionEvent e) {
     JTextComponent target = getTextComponent(e);
-    if(target != null &amp;&amp; target.isEditable()) {
+    if (target != null &amp;&amp; target.isEditable()) {
       Document doc = target.getDocument();
       Caret caret = target.getCaret();
       int dot = caret.getDot();
       int mark = caret.getMark();
-      if(dot==mark &amp;&amp; doc.getLength()==dot) {
+      if (dot == mark &amp;&amp; doc.getLength() == dot) {
         return;
       }
     }

@@ -15,26 +15,26 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWc-B0OXI/AAAAAAAAApQ/t1b78yBXWUQ/s800/VolumeSlider.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TriangleSliderUI extends javax.swing.plaf.metal.MetalSliderUI {
+<pre class="prettyprint"><code>class TriangleSliderUI extends MetalSliderUI {
   @Override public void paintThumb(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-    g2.fillOval(thumbRect.x,thumbRect.y,thumbRect.width,thumbRect.height);
+    g2.fillOval(thumbRect.x, thumbRect.y, thumbRect.width, thumbRect.height);
   }
   @Override public void paintTrack(Graphics g) {
     int cx, cy, cw, ch;
     int pad;
     Rectangle trackBounds = trackRect;
-    if(slider.getOrientation() == JSlider.HORIZONTAL ) {
+    if (slider.getOrientation() == JSlider.HORIZONTAL ) {
       Graphics2D g2 = (Graphics2D)g;
 
-//......
+//...
 
-slider2.setUI(new javax.swing.plaf.metal.MetalSliderUI() {
+slider2.setUI(new MetalSliderUI() {
   @Override protected void paintHorizontalLabel(Graphics g, int v, Component l) {
-    JLabel lbl = (JLabel)l;
+    JLabel lbl = (JLabel) l;
     lbl.setForeground(Color.GREEN);
-    super.paintHorizontalLabel(g,v,lbl);
+    super.paintHorizontalLabel(g, v, lbl);
   }
 });
 slider2.setForeground(Color.BLUE);
@@ -48,7 +48,7 @@ slider2.setForeground(Color.BLUE);
 
 - 下の`JSlider`
     - `JSlider#setForeground(Color)`で、目盛のキャプションの色を青にしています。また、`MetalSliderUI`を継承する`SliderUI`を作成して、`paintHorizontalLabel(Graphics, int, Component)`メソッドをオーバーライドし目盛を緑色に変更しています。
-    - 別の方法: [JSliderの目盛にアイコンや文字列を追加する](http://terai.xrea.jp/Swing/SliderLabelTable.html)
+    - 別の方法: [JSliderの目盛にアイコンや文字列を追加する](http://ateraimemo.com/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -59,13 +59,13 @@ slider2.setForeground(Color.BLUE);
 
 ## 参考リンク
 - [Swing - Problem in changing forground color of JSlider!!](https://forums.oracle.com/thread/1375990)
-- [JSliderの目盛にアイコンや文字列を追加する](http://terai.xrea.jp/Swing/SliderLabelTable.html)
+- [JSliderの目盛にアイコンや文字列を追加する](http://ateraimemo.com/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - `Java SE 6 Runtime (JRE) Update N build 12 Kernel Installer`だと、`NullPointerException`が発生する？ -- *aterai* 2008-03-03 (月) 19:34:50
-- ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](http://terai.xrea.jp/Swing/TriangleTickSlider.html)に移動 -- *aterai* 2010-05-19 (水) 16:52:13
-- メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5099681) -- *aterai* 2010-05-20 (木) 17:24:52
+- ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](http://ateraimemo.com/Swing/TriangleTickSlider.html)に移動 -- *aterai* 2010-05-19 (水) 16:52:13
+- メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5099681) -- *aterai* 2010-05-20 (木) 17:24:52
 
 <!-- dummy comment line for breaking list -->

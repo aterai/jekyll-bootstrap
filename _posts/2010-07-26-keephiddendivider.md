@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: KeepHiddenDivider
 title: JSplitPaneの収納状態を維持する
-tags: [JSplitPane, ActionMap, JButton]
+tags: [JSplitPane, ActionMap, JButton, Divider]
 author: aterai
 pubdate: 2010-07-26T06:35:29+09:00
 description: JSplitPaneのサイズが変更されても、ディバイダの収納状態を維持するように設定します。
@@ -69,7 +69,7 @@ smax.setModel(selectMaxModel);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-[Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5006095)のようにリフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行して、収納状態を維持する方法もあります。
+[Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)のようにリフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行して、収納状態を維持する方法もあります。
 
 <pre class="prettyprint"><code>try {
   splitPane.setDividerLocation(0);
@@ -83,8 +83,8 @@ smax.setModel(selectMaxModel);
 </code></pre>
 
 ## 参考リンク
-- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5006095)
-- [JSplitPaneのディバイダを展開、収納する](http://terai.xrea.jp/Swing/OneTouchExpandable.html)
+- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
+- [JSplitPaneのディバイダを展開、収納する](http://ateraimemo.com/Swing/OneTouchExpandable.html)
 
 <!-- dummy comment line for breaking list -->
 

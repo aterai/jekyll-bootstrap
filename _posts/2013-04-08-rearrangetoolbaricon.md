@@ -169,7 +169,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JFrameの外側でもドラッグアイコンを表示する](http://terai.xrea.jp/Swing/DragSourceMotionListener.html)
+- [JFrameの外側でもドラッグアイコンを表示する](http://ateraimemo.com/Swing/DragSourceMotionListener.html)
 
 <!-- dummy comment line for breaking list -->
 

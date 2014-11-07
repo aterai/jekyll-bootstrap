@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: InternalFrameDropTarget
 title: JInternalFrame間でのドラッグ＆ドロップによるJTableの行入れ替え
-tags: [JInternalFrame, JTable, DragAndDrop]
+tags: [JInternalFrame, JDesktopPane, JTable, DragAndDrop]
 author: aterai
 pubdate: 2014-05-19T00:37:47+09:00
 description: JInternalFrame間でJTableの行をドラッグ＆ドロップを使って入れ替えます。
@@ -48,10 +48,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、異なる`JInternalFrame`に配置した`JTable`の行をドラッグ＆ドロップで入れ替えています。使用する`TransferHandler`は[JTableの行を別のJTableにドラッグして移動](http://terai.xrea.jp/Swing/DragRowsAnotherTable.html)のものとほぼ同じですが、前面の`JInternalFrame`内にある`JTable`からドラッグした場合、その`JTableHeader`や`JInternalFrame`のタイトルバー上でも、背面にある`JInternalFrame`に反応してドロップ可能になってしまうため、`TransferHandler#canImport(...)`をオーバーライドして、ドラッグ元とドロップ先の`JInternalFrame`の共通部分では背面にドロップ出来ないように変更しています。
+上記のサンプルでは、異なる`JInternalFrame`に配置した`JTable`の行をドラッグ＆ドロップで入れ替えています。使用する`TransferHandler`は[JTableの行を別のJTableにドラッグして移動](http://ateraimemo.com/Swing/DragRowsAnotherTable.html)のものとほぼ同じですが、前面の`JInternalFrame`内にある`JTable`からドラッグした場合、その`JTableHeader`や`JInternalFrame`のタイトルバー上でも、背面にある`JInternalFrame`に反応してドロップ可能になってしまうため、`TransferHandler#canImport(...)`をオーバーライドして、ドラッグ元とドロップ先の`JInternalFrame`の共通部分では背面にドロップ出来ないように変更しています。
 
 ## 参考リンク
-- [JTableの行を別のJTableにドラッグして移動](http://terai.xrea.jp/Swing/DragRowsAnotherTable.html)
+- [JTableの行を別のJTableにドラッグして移動](http://ateraimemo.com/Swing/DragRowsAnotherTable.html)
 
 <!-- dummy comment line for breaking list -->
 

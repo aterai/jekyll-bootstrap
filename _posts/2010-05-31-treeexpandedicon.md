@@ -24,8 +24,8 @@ UIManager.put("Tree.collapsedIcon", new IconUIResource(emptyIcon));
 上記のサンプルでは、サイズ`0`の`Icon`を`Tree.expandedIcon`, `Tree.collapsedIcon`として使用することで、それぞれ非表示になるように設定しています。
 
 ## 参考リンク
-- [JTableのソートアイコンを変更](http://terai.xrea.jp/Swing/TableSortIcon.html)
-- [JTreeのOpenIcon、ClosedIcon、LeafIconを変更](http://terai.xrea.jp/Swing/TreeLeafIcon.html)
+- [JTableのソートアイコンを変更](http://ateraimemo.com/Swing/TableSortIcon.html)
+- [JTreeのOpenIcon、ClosedIcon、LeafIconを変更](http://ateraimemo.com/Swing/TreeLeafIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -34,24 +34,24 @@ comments: true
     this.setOpaque(false);
   }
   @Override public Component getTreeCellEditorComponent(
-      JTree tree, Object value, boolean isSelected,
-      boolean expanded, boolean leaf, int row) {
+    JTree tree, Object value, boolean isSelected,
+    boolean expanded, boolean leaf, int row) {
     JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
-        tree, value, true, expanded, leaf, row, true);
+                 tree, value, true, expanded, leaf, row, true);
     l.setFont(tree.getFont());
-    if(value instanceof DefaultMutableTreeNode) {
+    if (value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject instanceof CheckBoxNode) {
+      if (userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
-        if(node.status==Status.INDETERMINATE) {
+        if (node.status == Status.INDETERMINATE) {
           setIcon(new IndeterminateIcon());
-        }else{
+        } else {
           setIcon(null);
         }
         l.setText(node.label);
-        setSelected(node.status==Status.SELECTED);
+        setSelected(node.status == Status.SELECTED);
         str = node.label;
       }
       //panel.add(this, BorderLayout.WEST);
@@ -61,10 +61,10 @@ comments: true
     return l;
   }
   @Override public Object getCellEditorValue() {
-    return new CheckBoxNode(str, isSelected()?Status.SELECTED:Status.DESELECTED);
+    return new CheckBoxNode(str, isSelected() ? Status.SELECTED : Status.DESELECTED);
   }
   @Override public boolean isCellEditable(EventObject e) {
-    if(e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
+    if (e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
       MouseEvent me = (MouseEvent)e;
       JTree tree = (JTree)e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
@@ -83,7 +83,7 @@ comments: true
   @Override public void updateUI() {
     super.updateUI();
     setName("Tree.cellEditor");
-    if(panel!=null) {
+    if (panel != null) {
       //panel.removeAll(); //??? Change to Nimbus LnF, JDK 1.6.0
       panel.updateUI();
       //panel.add(this, BorderLayout.WEST);
@@ -110,9 +110,9 @@ comments: true
   public CheckBoxNodeRenderer() {
     super(new BorderLayout());
     String uiName = getUI().getClass().getName();
-    if(uiName.contains("Synth") &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
+    if (uiName.contains("Synth") &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
       System.out.println("XXX: FocusBorder bug?, JDK 1.7.0, Nimbus start LnF");
-      renderer.setBackgroundSelectionColor(new Color(0,0,0,0));
+      renderer.setBackgroundSelectionColor(new Color(0, 0, 0, 0));
     }
     setFocusable(false);
     setRequestFocusEnabled(false);
@@ -121,24 +121,24 @@ comments: true
     check.setOpaque(false);
   }
   @Override public Component getTreeCellRendererComponent(
-      JTree tree, Object value, boolean selected,
-      boolean expanded, boolean leaf, int row, boolean hasFocus) {
+    JTree tree, Object value, boolean selected,
+    boolean expanded, boolean leaf, int row, boolean hasFocus) {
     JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
-        tree, value, selected, expanded, leaf, row, hasFocus);
+                 tree, value, selected, expanded, leaf, row, hasFocus);
     l.setFont(tree.getFont());
-    if(value instanceof DefaultMutableTreeNode) {
+    if (value instanceof DefaultMutableTreeNode) {
       check.setEnabled(tree.isEnabled());
       check.setFont(tree.getFont());
       Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject instanceof CheckBoxNode) {
+      if (userObject instanceof CheckBoxNode) {
         CheckBoxNode node = (CheckBoxNode)userObject;
-        if(node.status==Status.INDETERMINATE) {
+        if (node.status == Status.INDETERMINATE) {
           check.setIcon(new IndeterminateIcon());
-        }else{
+        } else {
           check.setIcon(null);
         }
         l.setText(node.label);
-        check.setSelected(node.status==Status.SELECTED);
+        check.setSelected(node.status == Status.SELECTED);
       }
       add(l);
       return this;
@@ -147,7 +147,7 @@ comments: true
   }
   @Override public void updateUI() {
     super.updateUI();
-    if(check!=null) {
+    if (check != null) {
       //removeAll(); //??? Change to Nimbus LnF, JDK 1.6.0
       check.updateUI();
       //add(check, BorderLayout.WEST);
@@ -186,10 +186,9 @@ comments: true
 <pre class="prettyprint"><code>public CheckBoxNodeRenderer() {
   super();
   String uiName = getUI().getClass().getName();
-  if(uiName.contains("Synth") &amp;&amp;
-     System.getProperty("java.version").startsWith("1.7.0")) {
+  if (uiName.contains("Synth") &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
     System.out.println("XXX: FocusBorder bug?, JDK 1.7.0, Nimbus start LnF");
-    renderer.setBackgroundSelectionColor(new Color(0,0,0,0));
+    renderer.setBackgroundSelectionColor(new Color(0, true));
   }
 //...
 </code></pre>
@@ -202,15 +201,15 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>if(isFirstTime &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
-  System.out.println("XXX: Java 7, only on first run\n"+getBounds());
-  setBounds(new Rectangle(0,0,d.width,r.height));
+<pre class="prettyprint"><code>if (isFirstTime &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
+  System.out.println("XXX: Java 7, only on first run\n" + getBounds());
+  setBounds(new Rectangle(0, 0, d.width, r.height));
 }
 </code></pre>
 
 ## 参考リンク
-- [JTreeの葉ノードをJCheckBoxにする](http://terai.xrea.jp/Swing/CheckBoxNodeTree.html)
-- [JCheckBoxに不定状態のアイコンを追加する](http://terai.xrea.jp/Swing/TriStateCheckBox.html)
+- [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)
+- [JCheckBoxに不定状態のアイコンを追加する](http://ateraimemo.com/Swing/TriStateCheckBox.html)
 
 <!-- dummy comment line for breaking list -->
 

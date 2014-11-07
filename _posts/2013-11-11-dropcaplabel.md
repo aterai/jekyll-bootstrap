@@ -75,8 +75,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLabelの文字列を折り返し](http://terai.xrea.jp/Swing/GlyphVector.html)
-- [Fontを回転する](http://terai.xrea.jp/Swing/TransformedShape.html)
+- [JLabelの文字列を折り返し](http://ateraimemo.com/Swing/GlyphVector.html)
+- [Fontを回転する](http://ateraimemo.com/Swing/TransformedShape.html)
 
 <!-- dummy comment line for breaking list -->
 

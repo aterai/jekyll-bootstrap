@@ -10,7 +10,7 @@ description: 番号付きバックアップファイルを作成します。
 comments: true
 ---
 ## 概要
-[xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップファイルを作成します。
+[xyzzy](http://ateraimemo.com/xyzzy.html)風の番号付きバックアップファイルを作成します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png %}
 
@@ -64,7 +64,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[xyzzy](http://terai.xrea.jp/xyzzy.html)風の番号付きバックアップのテストを行っています。
+上記のサンプルでは、[xyzzy](http://ateraimemo.com/xyzzy.html)風の番号付きバックアップのテストを行っています。
 
 以下の例では、古いバージョンを`2`つ、新しいバージョンを`3`つバックアップとして残します。
 

@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>model.addRow(new Object[] {date.toString(), model.getRowCount(), false});
-int i = table.convertRowIndexToView(model.getRowCount()-1);
+int i = table.convertRowIndexToView(model.getRowCount() - 1);
 Rectangle r = table.getCellRect(i, 0, true);
 table.scrollRectToVisible(r);
 </code></pre>
@@ -34,7 +34,7 @@ table.scrollRectToVisible(r);
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>Rectangle cellBounds = list.getCellBounds(index, index);
-if(cellBounds != null) {
+if (cellBounds != null) {
   list.scrollRectToVisible(cellBounds);
 }
 </code></pre>
@@ -46,21 +46,21 @@ if(cellBounds != null) {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>DefaultTreeModel treeModel = (DefaultTreeModel)tree.getModel();
-DefaultMutableTreeNode parent   = (DefaultMutableTreeNode)treeModel.getRoot();
+<pre class="prettyprint"><code>DefaultTreeModel treeModel = (DefaultTreeModel) tree.getModel();
+DefaultMutableTreeNode parent = (DefaultMutableTreeNode) treeModel.getRoot();
 DefaultMutableTreeNode newChild = new DefaultMutableTreeNode(date);
 treeModel.insertNodeInto(newChild, parent, parent.getChildCount());
 /* //tree.scrollRowToVisible(row) == tree.scrollPathToVisible(tree.getPathForRow(row))
-tree.scrollRowToVisible(tree.getRowCount()-1);
+tree.scrollRowToVisible(tree.getRowCount() - 1);
 /*/
 tree.scrollPathToVisible(new TreePath(newChild.getPath()));
 //*/
 </code></pre>
 
 ## 参考リンク
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
     - `JComponent#scrollRectToVisible(...)`を使用してスクロール
-- [JTextPaneで最終行に移動](http://terai.xrea.jp/Swing/CaretPosition.html)
+- [JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)
     - キャレットの移動でスクロール
 
 <!-- dummy comment line for breaking list -->

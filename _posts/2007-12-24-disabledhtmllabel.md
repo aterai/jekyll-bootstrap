@@ -63,18 +63,18 @@ editor2.setFont(UIManager.getFont("Label.font"));
 </code></pre>
 
 - - - -
-`Html`レンダリングを無効化して、タグを文字列として表示する場合は、[JLabelなどのHtmlレンダリングを無効化](http://terai.xrea.jp/Swing/HtmlDisable.html)を参考にしてください。
+`Html`レンダリングを無効化して、タグを文字列として表示する場合は、[JLabelなどのHtmlレンダリングを無効化](http://ateraimemo.com/Swing/HtmlDisable.html)を参考にしてください。
 
 - - - -
-- [Bug ID: 4783068 Components with HTML text should gray out the text when disabled](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4783068)
+- [Bug ID: 4783068 Components with HTML text should gray out the text when disabled](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4783068)
     - `JDK 1.7.0-ea-b55`以上で、修正されている(上記のサンプルでも、無効化ですべての文字列がグレーになる)ようです。
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4740519)
+- [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519)
 - [Swing - JLabel with html tag can not be disabled or setForegroud?!](https://forums.oracle.com/thread/1377943)
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://terai.xrea.jp/Swing/HyperlinkLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: DividerDraggingColor
 title: JSplitPaneでドラッグ中のDividerの背景色を設定する
-tags: [JSplitPane, UIManager]
+tags: [JSplitPane, Divider, UIManager]
 author: aterai
 pubdate: 2014-09-15T00:00:21+09:00
 description: JSplitPaneのDividerがドラッグ中の場合に、その移動先を示す矩形の色を変更します。
@@ -29,7 +29,7 @@ divider.setBackground(Color.ORANGE);
 </code></pre>
 
 ## 参考リンク
-- [JSplitPaneでディバイダの移動を連続的に再描画](http://terai.xrea.jp/Swing/ContinuousLayout.html)
+- [JSplitPaneでディバイダの移動を連続的に再描画](http://ateraimemo.com/Swing/ContinuousLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

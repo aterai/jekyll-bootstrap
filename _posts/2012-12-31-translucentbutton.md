@@ -68,7 +68,7 @@ comments: true
 
 ## 解説
 - 透明な`JButton`、全体を半透明な`Icon`、タイトルの`Icon`と文字列は`align='middle'`などを指定して配置
-    - 参考: [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
+    - 参考: [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
     - `setOpaque(false);`、`setContentAreaFilled(false);`などで、`JButton`自体は透明化
     - タイトル`Icon`と文字列の`align`が、`top`、`middle`、`bottom`のどれにしてもきれいに揃わない
     - サイズが固定
@@ -110,9 +110,9 @@ private static AbstractButton makeButton(String title) {
 
 <pre class="prettyprint"><code>JLabel label = new JLabel("JLabel", icon, SwingConstants.CENTER);
 label.setForeground(Color.WHITE);
-label.setAlignmentX(.5f);
+label.setAlignmentX(Component.CENTER_ALIGNMENT);
 b = makeButton("");
-b.setAlignmentX(.5f);
+b.setAlignmentX(Component.CENTER_ALIGNMENT);
 JPanel p = new JPanel();
 p.setLayout(new OverlayLayout(p));
 p.setOpaque(false);
@@ -138,6 +138,12 @@ add(p);
   private static final int R = 8;
   private int width;
   private int height;
+  public TranslucentButtonIcon(JComponent c) {
+    Insets i = c.getBorder().getBorderInsets(c);
+    Dimension d = c.getPreferredSize();
+    width  = d.width - i.left - i.right;
+    height = d.height - i.top - i.bottom;
+  }
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
     if (c instanceof AbstractButton) {
       AbstractButton b = (AbstractButton) c;
@@ -179,7 +185,7 @@ add(p);
 </code></pre>
 
 ## 参考リンク
-- [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
+- [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
 - ["ecqlipse 2" PNG by ~chrfb on deviantART](http://chrfb.deviantart.com/art/quot-ecqlipse-2-quot-PNG-59941546)
 
 <!-- dummy comment line for breaking list -->

@@ -35,10 +35,10 @@ if (c instanceof JTextField) {
 1. `JComboBox` [`setEditable(true)`, `default`]
 1. `JComboBox` [`setEditable(false)`, `default`]
 
-スクリーンショットは、左が`JDK 1.6.0`、右が、`JDK 1.5.0_10`で実行したものになっています(どちらも`WindowsLookAndFeel`)。`1.6.0`ではきれいに揃っていますが、`1.5.0_10`などでは幅も高さも余白もガタガタ(左の内余白も`JTextField`は広すぎ、`JComboBox`などは狭すぎるなどバラバラ)なので、レイアウトマネージャーで工夫するか、`setPreferredSize(Dimension)`を使って幅を揃える方がよさそうです([JButtonなどの高さを変更せずに幅を指定](http://terai.xrea.jp/Swing/ButtonWidth.html))。
+スクリーンショットは、左が`JDK 1.6.0`、右が、`JDK 1.5.0_10`で実行したものになっています(どちらも`WindowsLookAndFeel`)。`1.6.0`ではきれいに揃っていますが、`1.5.0_10`などでは幅も高さも余白もガタガタ(左の内余白も`JTextField`は広すぎ、`JComboBox`などは狭すぎるなどバラバラ)なので、レイアウトマネージャーで工夫するか、`setPreferredSize(Dimension)`を使って幅を揃える方がよさそうです([JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html))。
 
 ## 参考リンク
-- [JButtonなどの高さを変更せずに幅を指定](http://terai.xrea.jp/Swing/ButtonWidth.html)
+- [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>SpinnerNumberModel model = new SpinnerNumberModel(10, 0, 1000, 1);
 JSpinner spinner = new JSpinner(model);
 //UIManager.put("FormattedTextField.inactiveBackground", Color.RED);
-JTextField field = ((JSpinner.NumberEditor)spinner.getEditor()).getTextField();
+JTextField field = ((JSpinner.NumberEditor) spinner.getEditor()).getTextField();
 field.setEditable(false);
 field.setBackground(UIManager.getColor("FormattedTextField.background"));
 </code></pre>

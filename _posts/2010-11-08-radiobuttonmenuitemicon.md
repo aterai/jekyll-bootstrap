@@ -58,7 +58,7 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JCheckBoxMenuItemのチェックアイコンを変更する](http://terai.xrea.jp/Swing/CheckBoxMenuItemIcon.html)
+- [JCheckBoxMenuItemのチェックアイコンを変更する](http://ateraimemo.com/Swing/CheckBoxMenuItemIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

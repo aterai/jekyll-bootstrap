@@ -47,7 +47,7 @@ comments: true
 - 中
     - `WindowsTabbedPaneUI#layoutLabel(...)`などをオーバーライドして左揃えに変更
 - 下
-    - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTitleTab.html)、[ButtonTabComponent.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TabComponentsDemoProject/src/components/ButtonTabComponent.java)を変更してタイトルを左揃え、`TabButton`(閉じる)を右揃え
+    - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTitleTab.html)、[ButtonTabComponent.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TabComponentsDemoProject/src/components/ButtonTabComponent.java)を変更してタイトルを左揃え、`TabButton`(閉じる)を右揃え
 
 <!-- dummy comment line for breaking list -->
 
@@ -62,10 +62,10 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTitleTab.html)
+- [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTitleTab.html)
 - [ButtonTabComponent.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TabComponentsDemoProject/src/components/ButtonTabComponent.java)
 - [Swing - JTabbedPane title alignment](https://forums.oracle.com/thread/1556158)
-- [Bug ID: 4220177 labels within JTabbedPane tabs should be alignable](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4220177)
+- [Bug ID: 4220177 labels within JTabbedPane tabs should be alignable](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4220177)
 
 <!-- dummy comment line for breaking list -->
 

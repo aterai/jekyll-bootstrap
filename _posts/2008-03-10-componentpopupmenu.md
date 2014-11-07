@@ -73,7 +73,7 @@ textArea.setComponentPopupMenu(new TextComponentPopupMenu());
 - - - -
 以下のように、`PopupMenuListener`を追加しても、同様の処理を行うことが出来ます。
 
-- 注: `JTabbedPane`などで、どのタブの上でポップアップが表示されるかなどを取得したい場合[JTabbedPaneでタブを追加削除](http://terai.xrea.jp/Swing/TabbedPane.html)は、この方法だと面倒かも…
+- 注: `JTabbedPane`などで、どのタブの上でポップアップが表示されるかなどを取得したい場合[JTabbedPaneでタブを追加削除](http://ateraimemo.com/Swing/TabbedPane.html)は、この方法だと面倒かも…
 
 <!-- dummy comment line for breaking list -->
 
@@ -116,13 +116,13 @@ textArea.setComponentPopupMenu(popup);
 </code></pre>
 
 ## 参考リンク
-- [JPopupMenuの取得を親に委譲](http://terai.xrea.jp/Swing/InheritsPopupMenu.html)
-- [JTabbedPaneでタブを追加削除](http://terai.xrea.jp/Swing/TabbedPane.html)
+- [JPopupMenuの取得を親に委譲](http://ateraimemo.com/Swing/InheritsPopupMenu.html)
+- [JTabbedPaneでタブを追加削除](http://ateraimemo.com/Swing/TabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6675802) -- *aterai* 2008-04-05 (土) 20:59:02
-- メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6299213) -- *aterai* 2008-04-10 (木) 18:58:52
+- メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6675802) -- *aterai* 2008-04-05 (土) 20:59:02
+- メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6299213) -- *aterai* 2008-04-10 (木) 18:58:52
 
 <!-- dummy comment line for breaking list -->

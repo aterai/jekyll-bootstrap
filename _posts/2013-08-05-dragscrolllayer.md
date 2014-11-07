@@ -61,7 +61,7 @@ comments: true
 
 ## 解説
 - 左: `DragScrollListener`
-    - [JTreeの余白をドラッグしてスクロール](http://terai.xrea.jp/Swing/TreeDragScroll.html)
+    - [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
     - このリスナーを追加した一つの`Component`をドラッグしてスクロールが可能
     - `JPanel`を掴んでスクロールすることができるが、その子コンポーネントの`JTabbedPane`などをドラッグしてもスクロールはできない
 - 右: `DragScrollLayer`
@@ -73,8 +73,8 @@ comments: true
 
 ## 参考リンク
 - [Java Swing Tips: Mouse Dragging ViewPort Scroll](http://java-swing-tips.blogspot.jp/2009/03/mouse-dragging-viewport-scroll.html)
-- [JTreeの余白をドラッグしてスクロール](http://terai.xrea.jp/Swing/TreeDragScroll.html)
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
+- [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
 
 <!-- dummy comment line for breaking list -->
 

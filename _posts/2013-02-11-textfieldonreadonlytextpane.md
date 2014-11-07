@@ -62,12 +62,12 @@ comments: true
 - `JTextPane`
     - 編集不可に設定
     - 行間を`1.5`倍に設定
-        - [JEditorPaneやJTextPaneに行間を設定する](http://terai.xrea.jp/Swing/LineSpacing.html)
+        - [JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)
 - `JTextField`
     - `JTextField#getMaximumSize()`をオーバーライドして幅を制限
     - `JTextFieldにMatteBorder`を設定して下線のみ表示
     - `JTextField#setAlignmentY(...)`でベースラインを揃える
-        - [JTextPaneに追加するコンポーネントのベースラインを揃える](http://terai.xrea.jp/Swing/InsertComponentBaseline.html)
+        - [JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)
     - `JTextField`に`FocusListener`を追加し、<kbd>Tab</kbd>キーなどで`Focus`が移動したら、その`JTextField`までスクロールするように設定
 
 <!-- dummy comment line for breaking list -->

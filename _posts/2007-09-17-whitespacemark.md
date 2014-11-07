@@ -64,14 +64,14 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-この`LabelView`を使用する`EditorKit(ViewFactory)`の作成は、[JEditorPaneで改行を表示](http://terai.xrea.jp/Swing/ParagraphMark.html)と同様になっています。
+この`LabelView`を使用する`EditorKit(ViewFactory)`の作成は、[JEditorPaneで改行を表示](http://ateraimemo.com/Swing/ParagraphMark.html)と同様になっています。
 
 ## 参考リンク
 - [Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)
 - [Design Guidelines: Text Components](http://web.archive.org/web/20120216035951/http://java.sun.com/products/jlf/ed1/dg/higo.htm)
 - [Swing Chapter 19. (Advanced topics) Inside Text Components. Easy for reading, Click here!](http://www.javafaq.nu/java-book-30.html)
-- [JEditorPaneで改行を表示](http://terai.xrea.jp/Swing/ParagraphMark.html)
-- [JTextPaneでタブサイズを設定](http://terai.xrea.jp/Swing/TabSize.html)
+- [JEditorPaneで改行を表示](http://ateraimemo.com/Swing/ParagraphMark.html)
+- [JTextPaneでタブサイズを設定](http://ateraimemo.com/Swing/TabSize.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -83,7 +83,7 @@ comments: true
 `JButton`のクリックイベントは、`JList`に追加したマウスリスナーで`SwingUtilities.getDeepestComponentAt(...)`を使用して対象の`JButton`を取得し、`JButton#doClick()`を呼び出すようになっています。
 
 ## 参考リンク
-- [JTableのセルに複数のJButtonを配置する](http://terai.xrea.jp/Swing/MultipleButtonsInTableCell.html)
+- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

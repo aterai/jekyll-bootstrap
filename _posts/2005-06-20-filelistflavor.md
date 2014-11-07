@@ -59,7 +59,7 @@ new DropTarget(table, DnDConstants.ACTION_COPY, dtl, true);
 - - - -
 `JDK 1.6.0`以降なら、以下のような`TransferHandler`を作成して使用する方法もあります。
 
-- [JTableでファイルとディレクトリを別々にソート](http://terai.xrea.jp/Swing/FileDirectoryComparator.html)
+- [JTableでファイルとディレクトリを別々にソート](http://ateraimemo.com/Swing/FileDirectoryComparator.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -97,7 +97,7 @@ table.setTransferHandler(new FileTransferHandler());
 ## 参考リンク
 - [Java2: WindowsからのDrag and Drop](http://www5.big.or.jp/~tera/Labo/Java2/j2dnd.html)
 - [java drag and drop](http://www.ne.jp/asahi/j.nihei/personal/linuxDragDrop.html)
-- [JTable自体の高さを拡張](http://terai.xrea.jp/Swing/FillsViewportHeight.html)
+- [JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html)
 
 <!-- dummy comment line for breaking list -->
 

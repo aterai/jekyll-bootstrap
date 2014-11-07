@@ -16,13 +16,13 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private void traverseElementById(Element element) {
-  if(element.isLeaf()) {
+  if (element.isLeaf()) {
     checkID(element);
-  }else{
-    for(int i=0;i&lt;element.getElementCount();i++) {
+  } else {
+    for (int i = 0; i &lt; element.getElementCount(); i++) {
       Element child = element.getElement(i);
       checkID(child);
-      if(!child.isLeaf()) {
+      if (!child.isLeaf()) {
         traverseElementById(child);
       }
     }
@@ -33,29 +33,29 @@ private void checkID(Element element) {
   Object elementName = attrs.getAttribute(
       AbstractDocument.ElementNameAttribute);
   Object name = (elementName != null)
-    ? null : attrs.getAttribute(StyleConstants.NameAttribute);
+      ? null : attrs.getAttribute(StyleConstants.NameAttribute);
   HTML.Tag tag;
-  if(name instanceof HTML.Tag) {
+  if (name instanceof HTML.Tag) {
     tag = (HTML.Tag)name;
-  }else{
+  } else {
     return;
   }
   textArea.append(String.format("%s%n", tag));
-  if(tag.isBlock()) { //block
+  if (tag.isBlock()) { //block
     Object bid = attrs.getAttribute(HTML.Attribute.ID);
-    if(bid!=null) {
+    if (bid != null) {
       textArea.append(String.format("block: id=%s%n", bid));
       addHighlight(element, true);
     }
-  }else{ //inline
+  } else { //inline
     Enumeration e = attrs.getAttributeNames();
-    while(e.hasMoreElements()) {
+    while (e.hasMoreElements()) {
       Object obj = attrs.getAttribute(e.nextElement());
       //System.out.println("AttributeNames: "+obj);
-      if(obj instanceof AttributeSet) {
+      if (obj instanceof AttributeSet) {
         AttributeSet a = (AttributeSet)obj;
         Object iid = a.getAttribute(HTML.Attribute.ID);
-        if(iid!=null) {
+        if (iid != null) {
           textArea.append(String.format("inline: id=%s%n", iid));
           addHighlight(element, false);
         }
@@ -88,27 +88,27 @@ private void checkID(Element element) {
 final String id = field.getText().trim();
 final String text = editorPane.getText();
 ParserDelegator delegator = new ParserDelegator();
-try{
+try {
   delegator.parse(new StringReader(text), new HTMLEditorKit.ParserCallback() {
     @Override public void handleStartTag(
         HTML.Tag tag, MutableAttributeSet a, int pos) {
       Object attrid = a.getAttribute(HTML.Attribute.ID);
       textArea.append(String.format("%s@id=%s%n", tag, attrid));
-      if(id.equals(attrid)) {
+      if (id.equals(attrid)) {
         textArea.append(String.format("found: pos=%d%n", pos));
         int endoffs = text.indexOf('&gt;', pos);
-        textArea.append(String.format("%s%n", text.substring(pos, endoffs+1)));
+        textArea.append(String.format("%s%n", text.substring(pos, endoffs + 1)));
       }
     }
   }, Boolean.TRUE);
-}catch(Exception ex) {
+} catch (Exception ex) {
   ex.printStackTrace();
 }
 </code></pre>
 
 ## 参考リンク
 - [HTMLDocument (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html)
-- [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](http://terai.xrea.jp/Swing/HTMLEditorKit.html)
+- [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](http://ateraimemo.com/Swing/HTMLEditorKit.html)
 
 <!-- dummy comment line for breaking list -->
 

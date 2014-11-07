@@ -19,7 +19,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`slider.putClientProperty("Slider.paintThumbArrowShape", Boolean.TRUE);`を使用して、つまみの形状を、目盛り表示ありの場合に使用する矢印型に変更しています。
+上記のサンプルでは、`slider.putClientProperty("Slider.paintThumbArrowShape", Boolean.TRUE);`を使用して、つまみの形状を目盛り表示ありの場合に使用する矢印型に変更しています。
 
 - メモ
     - 矢印型に変化するかどうかは、`LookAndFeel`による
@@ -31,7 +31,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JScrollBarのKnobの最小サイズを設定する](http://terai.xrea.jp/Swing/MinimumThumbSize.html)
+- [JScrollBarのKnobの最小サイズを設定する](http://ateraimemo.com/Swing/MinimumThumbSize.html)
 
 <!-- dummy comment line for breaking list -->
 

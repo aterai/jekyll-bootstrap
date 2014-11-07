@@ -34,12 +34,12 @@ comments: true
 
 同様の方法で、文字色、背景色、ボーダー、文字の中央揃え、右揃えなども変更することができます。
 
-- 字揃えを変更する場合の注意点: [JTableHeaderの字揃えを変更](http://terai.xrea.jp/Swing/HorizontalAlignmentHeaderRenderer.html)
+- 字揃えを変更する場合の注意点: [JTableHeaderの字揃えを変更](http://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-コメントで[いつも見てます](http://terai.xrea.jp/いつも見てます.html)さんが指摘しているように、以下の様に`JTableHeader#setFont()`メソッドを使用すると、全ヘッダカラムのフォントを指定することができます。
+コメントで[いつも見てます](http://ateraimemo.com/いつも見てます.html)さんが指摘しているように、以下の様に`JTableHeader#setFont()`メソッドを使用すると、全ヘッダカラムのフォントを指定することができます。
 
 <pre class="prettyprint"><code>table.getTableHeader().setFont(font);
 </code></pre>
@@ -51,9 +51,9 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [使用するフォントの統一](http://terai.xrea.jp/Swing/FontChange.html)
+- [使用するフォントの統一](http://ateraimemo.com/Swing/FontChange.html)
 - [Default Table Header Cell Renderer Java Tips Weblog](http://tips4java.wordpress.com/2009/02/27/default-table-header-cell-renderer/)
-- [JTableHeaderの字揃え](http://terai.xrea.jp/Swing/HorizontalAlignmentHeaderRenderer.html)
+- [JTableHeaderの字揃え](http://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

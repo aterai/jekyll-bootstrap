@@ -21,11 +21,11 @@ label.setBorder(BorderFactory.createCompoundBorder(outside, inside));
 </code></pre>
 
 ## 解説
-`MatteBorder`は、`4`辺それぞれに色などを表示することができます。上記のサンプルでは、左と下のみ枠を描いてタイトル風のラベルを作成しています。アイコンをタイル状に描画することもできるので、[JComboBoxにアイコンを表示](http://terai.xrea.jp/Swing/IconComboBox.html)のような使い方をする場合もあります。
+`MatteBorder`は、`4`辺それぞれに色などを表示することができます。上記のサンプルでは、左と下のみ枠を描いてタイトル風のラベルを作成しています。アイコンをタイル状に描画することもできるので、[JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)のような使い方をする場合もあります。
 
 ## 参考リンク
-- [JComboBoxにアイコンを表示](http://terai.xrea.jp/Swing/IconComboBox.html)
-- [JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
+- [JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)
+- [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 

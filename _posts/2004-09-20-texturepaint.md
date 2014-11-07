@@ -36,7 +36,7 @@ panel = new JPanel() {
 このサンプルでは、`BufferedImage`から`TexturePaint`を生成し、これを`Graphics2D#setPaint`メソッドで設定してパネル全体を塗りつぶしています。
 
 ## 参考リンク
-- [JPanelの背景に画像を並べる](http://terai.xrea.jp/Swing/BackgroundImage.html)
+- [JPanelの背景に画像を並べる](http://ateraimemo.com/Swing/BackgroundImage.html)
 
 <!-- dummy comment line for breaking list -->
 

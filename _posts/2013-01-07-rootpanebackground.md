@@ -56,18 +56,18 @@ frame.getContentPane().add(new MainPanel());
 - `JRootPane`の子コンポーネントの透明化、半透明化
     - `ContentPane`: `setOpaque(false);`で透明化
     - `JDesktopPane`:  `setOpaque(false);`で透明化
-        - 参考: [JInternalFrameを半透明にする](http://terai.xrea.jp/Swing/TransparentFrame.html)
+        - 参考: [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html)
         - `NimbusLookAndFeel`には未対応
     - `JMenuBar`: `setOpaque(false);`で透明化し、`JMenuBar#paintComponent(...)`をオーバーライドして半透明化
     - `JMenu`, `JMenuItem`など: `setOpaque(false);`で透明化、`LookAndFeel`によって、`JMenu#setBackground(new Color(0,0,0,0));`、`UIManager.put("Menu.selectionBackground", new Color(0,0,100,100));`などを使用
-        - 参考: [JMenuBarの背景に画像を表示する](http://terai.xrea.jp/Swing/MenuBarBackground.html)
-    - `JPopupMenu`: [JMenuなどから開くPopupMenuを半透明化](http://terai.xrea.jp/Swing/TranslucentSubMenu.html)などで、半透明化
+        - 参考: [JMenuBarの背景に画像を表示する](http://ateraimemo.com/Swing/MenuBarBackground.html)
+    - `JPopupMenu`: [JMenuなどから開くPopupMenuを半透明化](http://ateraimemo.com/Swing/TranslucentSubMenu.html)などで、半透明化
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/thread/1395763)
-    - [JTextAreaの背景に画像を表示](http://terai.xrea.jp/Swing/CentredBackgroundBorder.html)
+    - [JTextAreaの背景に画像を表示](http://ateraimemo.com/Swing/CentredBackgroundBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

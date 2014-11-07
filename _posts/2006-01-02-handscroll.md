@@ -22,7 +22,8 @@ comments: true
   @Override public void mouseDragged(MouseEvent e) {
     JViewport vport = (JViewport) e.getComponent();
     Point cp = e.getPoint();
-    Point vp = vport.getViewPosition(); //= SwingUtilities.convertPoint(vport, 0, 0, label);
+    Point vp = vport.getViewPosition();
+           //= SwingUtilities.convertPoint(vport, 0, 0, label);
     vp.translate(pp.x - cp.x, pp.y - cp.y);
     //if (r1.isSelected()) {
     label.scrollRectToVisible(new Rectangle(vp, vport.getSize()));
@@ -48,12 +49,12 @@ comments: true
 `JComponent#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると、内部コンポーネントの外側に移動することができます。
 
 ## 参考リンク
-- [JScrollPaneのオートスクロール](http://terai.xrea.jp/Swing/AutoScroll.html)
+- [JScrollPaneのオートスクロール](http://ateraimemo.com/Swing/AutoScroll.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
     - 猫の写真を拝借しています。
-- [Bug ID: 6333318 JViewport.scrollRectToVisible( Rectangle cr ) doesn't scroll if cr left or above](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6333318)
-- [JScrollPaneでキネティックスクロール](http://terai.xrea.jp/Swing/KineticScrolling.html)
-- [JTreeの余白をドラッグしてスクロール](http://terai.xrea.jp/Swing/TreeDragScroll.html)
+- [Bug ID: 6333318 JViewport.scrollRectToVisible( Rectangle cr ) doesn't scroll if cr left or above](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6333318)
+- [JScrollPaneでキネティックスクロール](http://ateraimemo.com/Swing/KineticScrolling.html)
+- [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -72,7 +72,7 @@ tree.setComponentPopupMenu(new TreePopupMenu());
 </code></pre>
 
 ## 参考リンク
-- [JTreeのノード上でJPopupMenuを表示](http://terai.xrea.jp/Swing/TreeNodePopupMenu.html)
+- [JTreeのノード上でJPopupMenuを表示](http://ateraimemo.com/Swing/TreeNodePopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 

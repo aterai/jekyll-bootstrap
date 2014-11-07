@@ -54,7 +54,7 @@ am.put("selectNextRow", new AbstractAction() {
 また、<kbd>Up</kbd><kbd>Down</kbd>キーでアイテムの選択を移動する場合、選択不可にしたアイテムを飛ばすように、`selectNextRow`などのアクションを変更しています。
 
 ## 参考リンク
-- [JComboBoxのアイテムを選択不可にする](http://terai.xrea.jp/Swing/DisableItemComboBox.html)
+- [JComboBoxのアイテムを選択不可にする](http://ateraimemo.com/Swing/DisableItemComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

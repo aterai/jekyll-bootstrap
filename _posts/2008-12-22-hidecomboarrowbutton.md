@@ -48,7 +48,7 @@ UIManager.put("ComboBox.squareButton", Boolean.TRUE);
 
 ## 参考リンク
 - [Swing - Hide JComboBox Arrow?](https://forums.oracle.com/thread/1359216)
-- [Bug ID: 6337518 Null Arrow Button Throws Exception in BasicComboBoxUI](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6337518)
+- [Bug ID: 6337518 Null Arrow Button Throws Exception in BasicComboBoxUI](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6337518)
 
 <!-- dummy comment line for breaking list -->
 

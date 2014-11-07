@@ -36,7 +36,7 @@ menu.add(new JCheckBoxMenuItem("checkIcon test"));
 `JCheckBox`のチェックアイコンは、`setIcon`メソッドで変更できますが、`JCheckBoxMenuItem`はチェックアイコンとは別のアイコンが設定されるので、`UIManager.put("CheckBoxMenuItem.checkIcon", icon);`を使用しています。
 
 ## 参考リンク
-- [JRadioButtonMenuItemのチェックアイコンを変更する](http://terai.xrea.jp/Swing/RadioButtonMenuItemIcon.html)
+- [JRadioButtonMenuItemのチェックアイコンを変更する](http://ateraimemo.com/Swing/RadioButtonMenuItemIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

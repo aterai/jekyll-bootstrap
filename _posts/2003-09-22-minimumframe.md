@@ -41,7 +41,7 @@ frame.addComponentListener(new ComponentAdapter() {
   @Override public void componentResized(ComponentEvent e) {
     int fw = frame.getSize().width;
     int fh = frame.getSize().height;
-    frame.setSize((mw&gt;fw)?mw:fw, (mh&gt;fh)?mh:fh);
+    frame.setSize((mw &gt; fw) ? mw : fw, (mh &gt; fh) ? mh : fh);
   }
 });
 </code></pre>
@@ -49,31 +49,31 @@ frame.addComponentListener(new ComponentAdapter() {
 `JFrame#setMaximumSize`が無効な環境でも、上記のように`ComponentListener`を使えば最大サイズを制限する(リサイズした後で最大サイズに戻しているだけ)ことができます。
 
 - - - -
-`Robot`を使う方法もあるようです。
-
-- [Bug ID: 6464548 Reopen 6383434: Frame.setMaximumSize() doesn't work](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6464548)
+- 以下、`Robot`を使用する方法
+    - 参考: [Bug ID: 6464548 Reopen 6383434: Frame.setMaximumSize() doesn't work](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6464548)
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-public class MaximumSizeTest{
+public class MaximumSizeTest {
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
-      @Override public void run() { createAndShowGUI(); }
+      @Override public void run() {
+        createAndShowGUI();
+      }
     });
   }
   private static final int MAX = 500;
   public static void createAndShowGUI() {
     final JFrame frame = new JFrame();
-    frame.setMinimumSize(new Dimension(240,120));
-    //frame.setMaximumSize(new Dimension(400,400));
+    frame.setMinimumSize(new Dimension(240, 120));
     Robot r;
     final Robot r2;
-    try{
+    try {
       r = new Robot();
-    }catch(AWTException ex) {
+    } catch (AWTException ex) {
       r = null;
     }
     r2 = r;
@@ -81,8 +81,8 @@ public class MaximumSizeTest{
       @Override public void componentResized(ComponentEvent e) {
         Point loc   = frame.getLocationOnScreen();
         Point mouse = MouseInfo.getPointerInfo().getLocation();
-        if(r2!=null &amp;&amp; (mouse.getX()&gt;loc.getX()+MAX ||
-                        mouse.getY()&gt;loc.getY()+MAX)) {
+        if (r2 != null &amp;&amp; (mouse.getX() &gt; loc.getX() + MAX ||
+                           mouse.getY() &gt; loc.getY() + MAX)) {
           r2.mouseRelease(InputEvent.BUTTON1_MASK);
           frame.setSize(Math.min(MAX, frame.getWidth()),
                         Math.min(MAX, frame.getHeight()));
@@ -99,12 +99,12 @@ public class MaximumSizeTest{
 
 ## 参考リンク
 - [Swing - Have JFrame respect the minimum size (stop resizing) - Partial solution](https://forums.oracle.com/thread/1377749)
-- [DynamicLayoutでレイアウトの動的評価](http://terai.xrea.jp/Swing/DynamicLayout.html)
+- [DynamicLayoutでレイアウトの動的評価](http://ateraimemo.com/Swing/DynamicLayout.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 最大サイズも同じ要領で・・・とありますが`JFrame#setMaximumSize`はうまくいかないですね（`JDK1.6.0_u1`）色々調べているのですが、いい方法あるんでしょうか？ -- *sawshun* 2009-07-27 (月) 11:51:11
-    - 同じ要領なのは、`ComponentListener`を使う場合…のつもりです。 ~~わかりづらいのであとで修正しますm(_ _)m。~~ すこし修正しました。`setMaximumSize`は、ちょっと難しいのかも([Bug ID: 6200438 Frame's size must be validated against maximized bounds when resizing, win32](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6200438))。 -- *aterai* 2009-07-27 (月) 12:05:33
+    - 同じ要領なのは、`ComponentListener`を使う場合…のつもりです。 ~~わかりづらいのであとで修正しますm(_ _)m。~~ すこし修正しました。`setMaximumSize`は、ちょっと難しいのかも([Bug ID: 6200438 Frame's size must be validated against maximized bounds when resizing, win32](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6200438))。 -- *aterai* 2009-07-27 (月) 12:05:33
 
 <!-- dummy comment line for breaking list -->

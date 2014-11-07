@@ -58,8 +58,8 @@ private void historyActionPerformed(File file) {
 実際に使用する場合は、ダミーファイルを使用している箇所を修正したり、アプリケーションを終了する際に履歴を保存したりするコードを追加する必要があります。
 
 ## 参考リンク
-- [Resourceファイルからメニューバーを生成](http://terai.xrea.jp/Swing/ResourceMenuBar.html)
-- [JFrameの位置・サイズを記憶する](http://terai.xrea.jp/Swing/Preferences.html)
+- [Resourceファイルからメニューバーを生成](http://ateraimemo.com/Swing/ResourceMenuBar.html)
+- [JFrameの位置・サイズを記憶する](http://ateraimemo.com/Swing/Preferences.html)
 
 <!-- dummy comment line for breaking list -->
 

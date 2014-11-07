@@ -79,7 +79,7 @@ comments: true
     - `JTextField`をコンストラクタの引数(セルエディタの実体)として使用
     - `JTextField`に`JButton`の幅の右余白を設定
     - `JTextField`が表示されたときに、余白に`JButton`を`setBounds`で配置
-    - 参考:[JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
+    - 参考:[JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -165,7 +165,7 @@ class CustomComponentCellEditor2 extends DefaultCellEditor {
 
 ## 参考リンク
 - [Swing - JTable editor issue](https://forums.oracle.com/thread/1354286)
-- [JTextField内にアイコンを追加](http://terai.xrea.jp/Swing/IconTextField.html)
+- [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 

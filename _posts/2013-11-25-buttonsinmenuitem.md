@@ -93,25 +93,25 @@ private static AbstractButton makeButton(String title, Action action) {
     - `JMenuItem#getPreferredSize()`をオーバーライドして、挿入する`JButton`を考慮したサイズを返すように変更
     - `JMenuItem`自体は、選択不可になるように`JMenuItem#setEnabled(false)`を設定
         - `JMenuItem#setEnabled(false)`の状態でも文字色は常に黒になるように、`JMenuItem#fireStateChanged`をオーバーライドして`setForeground(Color.BLACK);`を設定
-        - [JRadioButtonの文字色を変更](http://terai.xrea.jp/Swing/RadioButtonTextColor.html)
+        - [JRadioButtonの文字色を変更](http://ateraimemo.com/Swing/RadioButtonTextColor.html)
     - `JMenuItem`にレイアウトを設定し、`JMenuItem#add(...)`で`JButton`を配置した`JPanel`を追加
-        - [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
+        - [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
         - レイアウトマネージャーは、`GridBagLayout`を使用し、追加する`JButtun`は左右は右端、上下は中央に来るように設定
-        - [GridBagLayoutの使用](http://terai.xrea.jp/Swing/GridBagLayout.html)
+        - [GridBagLayoutの使用](http://ateraimemo.com/Swing/GridBagLayout.html)
 - `JPanel`
     - レイアウトを`GridLayout`に変更して同じサイズの`JButton`を複数配置
     - `JPanel#getMaximumSize()`をオーバーライドして、`JPanel#getPreferredSize()`と同じサイズを返すよう変更
-    - [JButtonの高さを変更せずに幅を指定](http://terai.xrea.jp/Swing/ButtonWidth.html)
+    - [JButtonの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
 - `JButton`
     - `DefaultEditorKit.CopyAction()`などで、`Action`を設定
     - 左右両端に配置された`JButton`のフチのラウンドなどは、`Icon`を生成して描画
-        - [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
+        - [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Custom JMenuItems in Java](http://stackoverflow.com/questions/5972368/custom-jmenuitems-in-java)
-- [JPopupMenuのレイアウトを変更して上部にメニューボタンを追加する](http://terai.xrea.jp/Swing/PopupMenuLayout.html)
+- [JPopupMenuのレイアウトを変更して上部にメニューボタンを追加する](http://ateraimemo.com/Swing/PopupMenuLayout.html)
     - こちらは`JPopupMenu`のレイアウトを変更してボタンメニューを作成している
 
 <!-- dummy comment line for breaking list -->

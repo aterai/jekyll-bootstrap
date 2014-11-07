@@ -78,7 +78,7 @@ class MyParagraphView extends ParagraphView {
 
 ## 参考リンク
 - [Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)
-- [JTextPaneで全角スペースやタブを可視化](http://terai.xrea.jp/Swing/WhitespaceMark.html)
+- [JTextPaneで全角スペースやタブを可視化](http://ateraimemo.com/Swing/WhitespaceMark.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -56,7 +56,7 @@ styleSheet.addRule("ul li:before{content: "\u00BB";}");
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JEditorPaneのHTMLEditorKitにCSSを適用](http://terai.xrea.jp/Swing/StyleSheet.html)
+- [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
 
 <!-- dummy comment line for breaking list -->
 

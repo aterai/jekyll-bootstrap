@@ -63,7 +63,7 @@ comments: true
 委譲したレンダラーから得たコンポーネントを`setOpaque(true)`、`setForeground(Color)`などで修飾して返すようになっています。
 
 ## 参考リンク
-- [JTreeで条件に一致するノードを検索しハイライト](http://terai.xrea.jp/Swing/TreeNodeHighlightSearch.html)
+- [JTreeで条件に一致するノードを検索しハイライト](http://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
 
 <!-- dummy comment line for breaking list -->
 

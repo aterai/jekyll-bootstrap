@@ -44,7 +44,7 @@ table.setDefaultEditor(Object.class, new DefaultCellEditor(field));
 </code></pre>
 
 ## 参考リンク
-- [JTableが使用するBooleanCellEditorの背景色を変更](http://terai.xrea.jp/Swing/BooleanCellEditor.html)
+- [JTableが使用するBooleanCellEditorの背景色を変更](http://ateraimemo.com/Swing/BooleanCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

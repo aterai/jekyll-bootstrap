@@ -128,7 +128,7 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [ProgressMonitorがダイアログを表示するまでの待ち時間](http://terai.xrea.jp/Swing/MillisToDecideToPopup.html)
+- [ProgressMonitorがダイアログを表示するまでの待ち時間](http://ateraimemo.com/Swing/MillisToDecideToPopup.html)
 
 <!-- dummy comment line for breaking list -->
 

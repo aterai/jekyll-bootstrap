@@ -33,7 +33,7 @@ comments: true
 
 ## 参考リンク
 - [JRootPane#setDefaultButton(javax.swing.JButton)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JRootPane.html#setDefaultButton%28javax.swing.JButton%29)
-- [Windowを開いたときのフォーカスを指定](http://terai.xrea.jp/Swing/DefaultFocus.html)
+- [Windowを開いたときのフォーカスを指定](http://ateraimemo.com/Swing/DefaultFocus.html)
 
 <!-- dummy comment line for breaking list -->
 

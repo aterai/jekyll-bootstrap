@@ -84,20 +84,20 @@ kfm.addPropertyChangeListener(new PropertyChangeListener() {
 </code></pre>
 
 ## 参考リンク
-- [Focusの移動](http://terai.xrea.jp/Swing/FocusTraversal.html)
+- [Focusの移動](http://ateraimemo.com/Swing/FocusTraversal.html)
 - [Swing - When does requestFocusInWindow() fail](https://forums.oracle.com/thread/1367389)
-- [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)
+- [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JFrame#getRootPane()#setDefaultButton()`は使用方法がよくわからない… -- [aterai](http://terai.xrea.jp/aterai.html)
+- `JFrame#getRootPane()#setDefaultButton()`は使用方法がよくわからない… -- [aterai](http://ateraimemo.com/aterai.html)
 - `setDefaultButton`って、<kbd>Enter</kbd>したときに押されたとみなすボタンだったかな…… --  2004-10-14 (木) 23:21:53
     - ありがとうございます。おかげでようやく理解できました。`JTextField`などにフォーカスがある状態で<kbd>Enter</kbd>キーを入力すると`setDefaultButton`したボタンが押されるのですね。 -- *aterai* 2004-10-18 (月) 12:14:15
     - というわけで、`frame.getRootPane().setDefaultButton(eb);`を追加してみました。上記のサンプルでは、中央の`JTextField`にフォーカスがある状態で、<kbd>Enter</kbd>キーを押すと、`EAST`ボタンが押されたことになります。 -- *aterai* 2004-10-18 (月) 12:20:58
     - ~~いつか、`DefaultButton`のページを別に作成すること。 -- *aterai* 2008-05-07 (水) 19:19:44~~
-    - [DefaultButtonの設定](http://terai.xrea.jp/Swing/DefaultButton.html)に移動。 -- *aterai* 2008-05-12 (月) 14:40:15
+    - [DefaultButtonの設定](http://ateraimemo.com/Swing/DefaultButton.html)に移動。 -- *aterai* 2008-05-12 (月) 14:40:15
 - `HierarchyListener`を使用する場合のテスト -- *aterai* 2009-03-19 (木) 14:51:30
-    - [JOptionPaneのデフォルトフォーカス](http://terai.xrea.jp/Swing/OptionPaneDefaultFocus.html)に移動
+    - [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)に移動
 
 <!-- dummy comment line for breaking list -->

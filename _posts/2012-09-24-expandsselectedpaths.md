@@ -31,7 +31,7 @@ comments: true
 - [http://docs.oracle.com/javase/1.3/docs/guide/swing/JTreeChanges.html](http://docs.oracle.com/javase/1.3/docs/guide/swing/JTreeChanges.html)
 - [http://docs.oracle.com/javase/jp/1.3/guide/swing/JTreeChanges.html](http://docs.oracle.com/javase/jp/1.3/guide/swing/JTreeChanges.html)
     - メモ: 日本語版には`docs`が付かない
-- [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
+- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 

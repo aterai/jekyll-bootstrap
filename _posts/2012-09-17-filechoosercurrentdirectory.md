@@ -16,10 +16,10 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>File f = new File(field.getText().trim());
-JFileChooser fc = check1.isSelected()?fc2:fc0;
+JFileChooser fc = check1.isSelected() ? fc2 : fc0;
 fc.setCurrentDirectory(f);
 int retvalue = fc.showOpenDialog(p);
-if(retvalue==JFileChooser.APPROVE_OPTION) {
+if (retvalue == JFileChooser.APPROVE_OPTION) {
   log.setText(fc.getSelectedFile().getAbsolutePath());
 }
 </code></pre>

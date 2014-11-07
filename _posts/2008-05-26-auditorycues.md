@@ -51,9 +51,9 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 - [Merlinの魔術: Swingのオーディオ](http://www.ibm.com/developerworks/jp/java/library/j-mer0730/)
 - ["taitai studio" フリーWav素材集](http://www.taitaistudio.com/wav/)
     - `wav`ファイルを拝借しています。
-- [Beep音を鳴らす](http://terai.xrea.jp/Swing/Beep.html)
-- [MIDIファイルの演奏](http://terai.xrea.jp/Swing/MidiSystem.html)
-- [Wavファイルの演奏](http://terai.xrea.jp/Swing/Sound.html)
+- [Beep音を鳴らす](http://ateraimemo.com/Swing/Beep.html)
+- [MIDIファイルの演奏](http://ateraimemo.com/Swing/MidiSystem.html)
+- [Wavファイルの演奏](http://ateraimemo.com/Swing/Sound.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-yXndYI0LTyA/UhoR8XLek3I/AAAAAAAABy0/BpEfTjjAGwU/s800/DrawsLayeredHighlights.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>DefaultHighlighter dh = (DefaultHighlighter)textArea.getHighlighter();
+<pre class="prettyprint"><code>DefaultHighlighter dh = (DefaultHighlighter) textArea.getHighlighter();
 dh.setDrawsLayeredHighlights(false);
 </code></pre>
 

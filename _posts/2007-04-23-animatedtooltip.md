@@ -36,9 +36,9 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;")
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JToolTipにアイコンを表示](http://terai.xrea.jp/Swing/ToolTipIcon.html)
-- [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)
-- [TrayIconのアニメーション](http://terai.xrea.jp/Swing/AnimatedTrayIcon.html)
+- [JToolTipにアイコンを表示](http://ateraimemo.com/Swing/ToolTipIcon.html)
+- [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)
+- [TrayIconのアニメーション](http://ateraimemo.com/Swing/AnimatedTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

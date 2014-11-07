@@ -42,7 +42,7 @@ scroll.getViewport().setBackground(Color.GREEN);
 
 - `getFillsViewportHeight() == false`の場合(デフォルト値)
     - 下部の余白は`JTable`ではないため、`JViewport`の背景色(緑)が表示される
-        - [JTableの背景色を変更](http://terai.xrea.jp/Swing/TableBackground.html)
+        - [JTableの背景色を変更](http://ateraimemo.com/Swing/TableBackground.html)
     - `JScrollPane`、または`JViewport`に`setComponentPopupMenu`したり、リスナーを設定していないため、下部の余白で右クリックしてもポップアップメニューは無効
 
 <!-- dummy comment line for breaking list -->
@@ -53,8 +53,8 @@ scroll.getViewport().setBackground(Color.GREEN);
     - `JTable`自体が拡張されるため、余白部分を右クリックしてもポップアップメニューが表示される
         - 縦スクロールバーとテーブルヘッダで出来る余白(赤)などは`JScrollPane`なので、ポップアップメニューは無効
     - 簡単に余白部分にドロップしたり、空の`JTable`にドロップすることができる
-        - [JTableの行をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTable.html)では、余白にドロップ出来ない
-        - [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)では、`DropTarget`を`JTable`、`JViewport`の両方に設定する必要がある
+        - [JTableの行をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTable.html)では、余白にドロップ出来ない
+        - [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)では、`DropTarget`を`JTable`、`JViewport`の両方に設定する必要がある
 
 <!-- dummy comment line for breaking list -->
 
@@ -72,9 +72,9 @@ scroll.getViewport().setBackground(Color.GREEN);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableの背景色を変更](http://terai.xrea.jp/Swing/TableBackground.html)
-- [TableCellRendererでセルの背景色を変更](http://terai.xrea.jp/Swing/StripeTable.html)
-- [Fileのドラッグ＆ドロップ](http://terai.xrea.jp/Swing/FileListFlavor.html)
+- [JTableの背景色を変更](http://ateraimemo.com/Swing/TableBackground.html)
+- [TableCellRendererでセルの背景色を変更](http://ateraimemo.com/Swing/StripeTable.html)
+- [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)
 - [JTable becomes uglier with AUTO_RESIZE_OFF - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/jtable_becomes_uglier_with_auto)
 
 <!-- dummy comment line for breaking list -->

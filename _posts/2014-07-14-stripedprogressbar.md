@@ -24,7 +24,7 @@ comments: true
     this.slope = slope;
   }
   @Override protected int getBoxLength(int availableLength, int otherDimension) {
-    return availableLength; //(int)Math.round(availableLength/6.0);
+    return availableLength; //(int) Math.round(availableLength / 6d);
   }
   @Override public void paintIndeterminate(Graphics g, JComponent c) {
     if (!(g instanceof Graphics2D)) {
@@ -80,15 +80,15 @@ comments: true
 上記のサンプルでは、`BasicProgressBarUI#paintIndeterminate(...)`をオーバーライドした`ProgressBarUI`を設定して、不確定状態で描画されるアニメーションのパターンをストライプ模様に変更しています。また、デフォルトの不確定状態アニメーションは、`JProgressBar`の内部をボックスが左右(縦の場合は上下)に跳ねるパターンですが、今回は`JProgressBar`全体をストライプで描画するため、`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライドしています。
 
 - - - -
-アニメーションのスピードなどは、[JProgressBarの不確定進捗サイクル時間を設定](http://terai.xrea.jp/Swing/IndeterminateCycleTime.html)と同様に、`UIManager.put(...)`を使って調整しています。
+アニメーションのスピードなどは、[JProgressBarの不確定進捗サイクル時間を設定](http://ateraimemo.com/Swing/IndeterminateCycleTime.html)と同様に、`UIManager.put(...)`を使って調整しています。
 
 <pre class="prettyprint"><code>UIManager.put("ProgressBar.cycleTime", 1000);
 UIManager.put("ProgressBar.repaintInterval", 10);
 </code></pre>
 
 ## 参考リンク
-- [JProgressBarのNimbusLookAndFeelにおける不確定状態アニメーションを変更する](http://terai.xrea.jp/Swing/IndeterminateRegionPainter.html)
-- [JProgressBarの不確定進捗サイクル時間を設定](http://terai.xrea.jp/Swing/IndeterminateCycleTime.html)
+- [JProgressBarのNimbusLookAndFeelにおける不確定状態アニメーションを変更する](http://ateraimemo.com/Swing/IndeterminateRegionPainter.html)
+- [JProgressBarの不確定進捗サイクル時間を設定](http://ateraimemo.com/Swing/IndeterminateCycleTime.html)
 
 <!-- dummy comment line for breaking list -->
 

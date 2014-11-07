@@ -114,7 +114,7 @@ public class HeaderPopupMenuTest {
 </code></pre>
 
 ## 参考リンク
-- [JPopupMenuをコンポーネントに追加](http://terai.xrea.jp/Swing/ComponentPopupMenu.html)
+- [JPopupMenuをコンポーネントに追加](http://ateraimemo.com/Swing/ComponentPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 

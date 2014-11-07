@@ -19,13 +19,12 @@ comments: true
   private Shape shape;
   @Override public void paint(Graphics g, JComponent c) {
     super.paint(g, c);
-    if(shape!=null) {
-      Graphics2D g2 = (Graphics2D)g.create();
-      g2.setRenderingHint(
-          RenderingHints.KEY_ANTIALIASING,
-          RenderingHints.VALUE_ANTIALIAS_ON);
+    if (shape != null) {
+      Graphics2D g2 = (Graphics2D) g.create();
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                          RenderingHints.VALUE_ANTIALIAS_ON);
 
-      Rectangle r = new Rectangle(0,0,c.getWidth(),c.getHeight());
+      Rectangle r = new Rectangle(0, 0, c.getWidth(), c.getHeight());
       Area area = new Area(r);
       area.subtract(new Area(shape));
       g2.setClip(area);
@@ -46,29 +45,33 @@ comments: true
   }
   @Override public void installUI(JComponent c) {
     super.installUI(c);
-    ((JLayer)c).setLayerEventMask(
-        AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(AWTEvent.MOUSE_EVENT_MASK
+                                   | AWTEvent.MOUSE_MOTION_EVENT_MASK);
+    }
   }
   @Override public void uninstallUI(JComponent c) {
-    ((JLayer)c).setLayerEventMask(0);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(0);
+    }
     super.uninstallUI(c);
   }
   private void update(MouseEvent e, JLayer&lt;? extends JPanel&gt; l) {
     int id = e.getID();
     Shape s = null;
-    if(id==MouseEvent.MOUSE_ENTERED || id==MouseEvent.MOUSE_MOVED) {
+    if (id == MouseEvent.MOUSE_ENTERED || id == MouseEvent.MOUSE_MOVED) {
       Component c = e.getComponent();
-      if(c instanceof AbstractButton) {
-        AbstractButton b = (AbstractButton)c;
-        if(b.getIcon() instanceof ToggleButtonBarCellIcon) {
-          ToggleButtonBarCellIcon icon = (ToggleButtonBarCellIcon)b.getIcon();
+      if (c instanceof AbstractButton) {
+        AbstractButton b = (AbstractButton) c;
+        if (b.getIcon() instanceof ToggleButtonBarCellIcon) {
+          ToggleButtonBarCellIcon icon = (ToggleButtonBarCellIcon) b.getIcon();
           Rectangle r = c.getBounds();
           AffineTransform at = AffineTransform.getTranslateInstance(r.x, r.y);
           s = at.createTransformedShape(icon.area);
         }
       }
     }
-    if(s!=shape) {
+    if (!Objects.equals(s, shape)) {
       shape = s;
       l.getView().repaint();
     }
@@ -88,8 +91,8 @@ comments: true
 上記のサンプルでは、`JLayer#processMouseEvent(...)`, `JLayer#processMouseMotionEvent(...)`をオーバーライドして、カーソルの下にある`JRadioButton`を取得し、その周辺に`JLayer#paint(...)`メソッドを使って影と縁を描画しています。これらは一番手前の別レイヤーに描画されるので、隣接したり奥に重なったりしているコンポーネントなどの上に描画することができます。
 
 ## 参考リンク
-- [FlowLayoutでボタンを重ねてパンくずリストを作成する](http://terai.xrea.jp/Swing/BreadcrumbList.html)
-- [JMenuItemの内部にJButtonを配置する](http://terai.xrea.jp/Swing/ButtonsInMenuItem.html)
+- [FlowLayoutでボタンを重ねてパンくずリストを作成する](http://ateraimemo.com/Swing/BreadcrumbList.html)
+- [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 
 <!-- dummy comment line for breaking list -->
 

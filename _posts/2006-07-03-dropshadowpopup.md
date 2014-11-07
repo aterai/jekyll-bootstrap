@@ -17,45 +17,47 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class ShadowBorder extends AbstractBorder {
   private final int xoff, yoff;
-  private final Insets insets;
-  private BufferedImage screen = null;
-  private BufferedImage shadow = null;
+  private final transient BufferedImage screen;
+  private transient BufferedImage shadow;
 
   public ShadowBorder(int x, int y, JComponent c, Point p) {
+    super();
     this.xoff = x;
     this.yoff = y;
-    this.insets = new Insets(0,0,xoff,yoff);
-    try{
+    BufferedImage bi = null;
+    try {
       Robot robot = new Robot();
       Dimension d = c.getPreferredSize();
-      screen = robot.createScreenCapture(
-          new Rectangle(p.x, p.y, d.width+xoff, d.height+yoff));
-    }catch (java.awt.AWTException ex) {
+      bi = robot.createScreenCapture(new Rectangle(p.x, p.y, d.width + xoff, d.height + yoff));
+    } catch (AWTException ex) {
       ex.printStackTrace();
     }
+    screen = bi;
   }
   @Override public Insets getBorderInsets(Component c) {
-    return insets;
+    return new Insets(0, 0, xoff, yoff);
   }
-  @Override public void paintBorder(Component c, Graphics g,
-                                    int x, int y, int w, int h) {
-    if(screen==null) return;
-    if(shadow==null || shadow.getWidth()!=w || shadow.getHeight()!=h) {
+  @Override public void paintBorder(Component c, Graphics g, int x, int y, int w, int h) {
+    if (screen == null) {
+      return;
+    }
+    if (shadow == null || shadow.getWidth() != w || shadow.getHeight() != h) {
       shadow = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
       Graphics2D g2 = shadow.createGraphics();
-      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                          RenderingHints.VALUE_ANTIALIAS_ON);
-      g2.setComposite(
-          AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.2f));
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .2f));
       g2.setPaint(Color.BLACK);
-      for(int i=0;i&lt;xoff;i++) {
-        g2.fillRoundRect(xoff, xoff, w-xoff-xoff+i, h-xoff-xoff+i, 4, 4);
+      for (int i = 0; i &lt; xoff; i++) {
+        g2.fillRoundRect(xoff, xoff, w - xoff - xoff + i, h - xoff - xoff + i, 4, 4);
       }
       g2.dispose();
     }
-    Graphics2D g2d = (Graphics2D)g;
+    Graphics2D g2d = (Graphics2D) g.create();
     g2d.drawImage(screen, 0, 0, c);
     g2d.drawImage(shadow, 0, 0, c);
+    g2d.setPaint(c.getBackground()); //??? 1.7.0_03
+    g2d.fillRect(x, y, w - xoff, h - yoff);
+    g2d.dispose();
   }
 }
 </code></pre>
@@ -79,44 +81,53 @@ comments: true
 `JDK 1.7.0`や、`1.6.0_10`以上の場合は、フレーム外でも`Robot`を使用せず、以下のように`JPopupMenu`の上位`Window`の背景色を透明にすることで影をつけることができます。
 
 <pre class="prettyprint"><code>class DropShadowPopupMenu extends JPopupMenu {
-  private static final int off = 4;
-  private BufferedImage shadow = null;
-  private Border border = null;
+  private static final int OFFSET = 4;
+  private transient BufferedImage shadow;
+  private Border border;
   @Override public boolean isOpaque() {
     return false;
   }
+  @Override public void updateUI() {
+    setBorder(null);
+    super.updateUI();
+    border = null;
+  }
   @Override public void paintComponent(Graphics g) {
-    ((Graphics2D)g).drawImage(shadow, 0, 0, this);
-    super.paintComponent(g);
+    //super.paintComponent(g);
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.drawImage(shadow, 0, 0, this);
+    g2.setPaint(getBackground()); //??? 1.7.0_03
+    g2.fillRect(0, 0, getWidth() - OFFSET, getHeight() - OFFSET);
+    g2.dispose();
   }
   @Override public void show(Component c, int x, int y) {
-    if(border==null) {
+    if (border == null) {
       Border inner = getBorder();
-      Border outer = BorderFactory.createEmptyBorder(0, 0, off, off);
+      Border outer = BorderFactory.createEmptyBorder(0, 0, OFFSET, OFFSET);
       border = BorderFactory.createCompoundBorder(outer, inner);
     }
     setBorder(border);
     Dimension d = getPreferredSize();
-    int w = d.width, h = d.height;
-    if(shadow==null || shadow.getWidth()!=w || shadow.getHeight()!=h) {
+    int w = d.width;
+    int h = d.height;
+    if (shadow == null || shadow.getWidth() != w || shadow.getHeight() != h) {
       shadow = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
       Graphics2D g2 = shadow.createGraphics();
       g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                           RenderingHints.VALUE_ANTIALIAS_ON);
-      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.2f));
+      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .2f));
       g2.setPaint(Color.BLACK);
-      for(int i=0;i&lt;off;i++) {
-        g2.fillRoundRect(off, off, w-off-off+i, h-off-off+i, 4, 4);
+      for (int i = 0; i &lt; OFFSET; i++) {
+        g2.fillRoundRect(
+            OFFSET, OFFSET, w - OFFSET - OFFSET + i, h - OFFSET - OFFSET + i, 4, 4);
       }
       g2.dispose();
     }
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         Window pop = SwingUtilities.getWindowAncestor(DropShadowPopupMenu.this);
-        if(pop instanceof JWindow) {
-          System.out.println(pop instanceof JWindow);
-          pop.setBackground(new Color(0,0,0,0)); //JDK 1.7.0
-          //com.sun.awt.AWTUtilities.setWindowOpaque(pop, false); //JDK 1.6.0_10
+        if (pop instanceof JWindow) {
+          pop.setBackground(new Color(0, true)); //JDK 1.7.0
         }
       }
     });
@@ -126,7 +137,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [Menuに半透明の影を付ける](http://terai.xrea.jp/Swing/MenuWithShadow.html)
+- [Menuに半透明の影を付ける](http://ateraimemo.com/Swing/MenuWithShadow.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -192,6 +203,6 @@ label.setComponentPopupMenu(pop);
 });
 </code></pre>
 - 返信ありがとうございます、当方`Netbeans`で開発してまして、上記のコードを`jPopupMenu1.add(この中);`に`new JMenuItem`以降を入れたのですが動きませんでした。よって`JMenuItem ｍ～f.dispose();`までを削除し、かわりに`jFrame1.setVisible(false);`を入れると動作しました。 -- *hshs* 2013-03-05 (火) 20:22:26
-    - メモ: せっかくなので？、[JPopupMenuなどからWindowを閉じる](http://terai.xrea.jp/Swing/WindowClosingAction.html)を作成してみました。 -- *aterai* 2013-03-11 (月) 17:09:34
+    - メモ: せっかくなので？、[JPopupMenuなどからWindowを閉じる](http://ateraimemo.com/Swing/WindowClosingAction.html)を作成してみました。 -- *aterai* 2013-03-11 (月) 17:09:34
 
 <!-- dummy comment line for breaking list -->

@@ -89,7 +89,7 @@ worker.execute();
 
 ## 参考リンク
 - [How to Use Progress Bars (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
-- [ProgressMonitorがダイアログを表示するまでの待ち時間](http://terai.xrea.jp/Swing/MillisToDecideToPopup.html)
+- [ProgressMonitorがダイアログを表示するまでの待ち時間](http://ateraimemo.com/Swing/MillisToDecideToPopup.html)
     - 処理時間が短くて`ProgressMonitor`が表示されない場合などについて
 
 <!-- dummy comment line for breaking list -->

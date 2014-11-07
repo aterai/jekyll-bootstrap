@@ -65,14 +65,14 @@ comments: true
 
 - - - -
 - デフォルトの`JSlider`では、ノブ以外の位置をクリックすると段階的に位置が変化するため、上記の`MouseListener`を使用するとマウスカーソルの位置とノブの表示位置がずれる
-- [JSliderでクリックした位置にノブをスライド](http://terai.xrea.jp/Swing/JumpToClickedPositionSlider.html)を使用して、クリック直後にその位置にノブ移動するように設定
+- [JSliderでクリックした位置にノブをスライド](http://ateraimemo.com/Swing/JumpToClickedPositionSlider.html)を使用して、クリック直後にその位置にノブ移動するように設定
 - `JSlider.VERTICAL`には未対応
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JSliderでクリックした位置にノブをスライド](http://terai.xrea.jp/Swing/JumpToClickedPositionSlider.html)
-- [JToolTipの表示位置](http://terai.xrea.jp/Swing/ToolTipLocation.html)
+- [JSliderでクリックした位置にノブをスライド](http://ateraimemo.com/Swing/JumpToClickedPositionSlider.html)
+- [JToolTipの表示位置](http://ateraimemo.com/Swing/ToolTipLocation.html)
 
 <!-- dummy comment line for breaking list -->
 

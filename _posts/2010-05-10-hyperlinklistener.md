@@ -17,19 +17,21 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>final JEditorPane editorPane = new JEditorPane();
 editorPane.setEditable(false);
-editorPane.setContentType("text/html"); //javax.swing.text.html.HTMLEditorKit
-editorPane.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
+editorPane.setContentType("text/html");
+editorPane.putClientProperty(
+    JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
 editorPane.setText(htmlText);
 editorPane.addHyperlinkListener(new HyperlinkListener() {
   private String tooltip;
   @Override public void hyperlinkUpdate(HyperlinkEvent e) {
-    if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
-      JOptionPane.showMessageDialog(editorPane, "You click the link with the URL " + e.getURL());
-    }else if(e.getEventType() == HyperlinkEvent.EventType.ENTERED) {
+    if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+      JOptionPane.showMessageDialog(
+          editorPane, "You click the link with the URL " + e.getURL());
+    } else if (e.getEventType() == HyperlinkEvent.EventType.ENTERED) {
       tooltip = editorPane.getToolTipText();
       URL url = e.getURL();
-      editorPane.setToolTipText((url!=null)?url.toExternalForm():null);
-    }else if(e.getEventType() == HyperlinkEvent.EventType.EXITED) {
+      editorPane.setToolTipText((url != null) ? url.toExternalForm() : null);
+    } else if (e.getEventType() == HyperlinkEvent.EventType.EXITED) {
       editorPane.setToolTipText(tooltip);
     }
   }
@@ -43,26 +45,27 @@ editorPane.addHyperlinkListener(new HyperlinkListener() {
 以下のように、`JButton`などのコンポーネントを使用する方法もあります。
 - 編集可
 - 部分選択できない
-- ~~ベースラインがうまく揃わない？~~ [JTextPaneに追加するコンポーネントのベースラインを揃える](http://terai.xrea.jp/Swing/InsertComponentBaseline.html) のように、`JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
+- ~~ベースラインがうまく揃わない？~~ [JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html) のように、`JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>HTMLDocument doc = (HTMLDocument)editorPane.getDocument();
+<pre class="prettyprint"><code>HTMLDocument doc = (HTMLDocument) editorPane.getDocument();
 Style s = doc.addStyle("button", null);
 StyleConstants.setAlignment(s, StyleConstants.ALIGN_CENTER);
 HyperlinkButton button = new HyperlinkButton(new AbstractAction(LINK) {
   @Override public void actionPerformed(ActionEvent e) {
-    AbstractButton b = (AbstractButton)e.getSource();
-    editorPane.setBackground(b.isSelected()?Color.RED:Color.WHITE);
-    JOptionPane.showMessageDialog(editorPane, "You click the link with the URL " + LINK);
+    AbstractButton b = (AbstractButton) e.getSource();
+    editorPane.setBackground(b.isSelected() ? Color.RED : Color.WHITE);
+    JOptionPane.showMessageDialog(
+        editorPane, "You click the link with the URL " + LINK);
   }
 });
-button.setToolTipText("button: "+LINK);
+button.setToolTipText("button: " + LINK);
 button.setOpaque(false);
 StyleConstants.setComponent(s, button);
 try {
   doc.insertString(doc.getLength(), "\n----\nJButton:\n", null);
-  doc.insertString(doc.getLength(), LINK +"\n", doc.getStyle("button"));
+  doc.insertString(doc.getLength(), LINK + "\n", doc.getStyle("button"));
   //doc.insertString(doc.getLength(), "\n", null);
 } catch (BadLocationException ble) {
   ble.printStackTrace();
@@ -70,7 +73,7 @@ try {
 </code></pre>
 
 ## 参考リンク
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://terai.xrea.jp/Swing/HyperlinkLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -99,7 +102,9 @@ public class ThumbnailTest {
   }
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
-      @Override public void run() { createAndShowGUI(); }
+      @Override public void run() {
+        createAndShowGUI();
+      }
     });
   }
   public static void createAndShowGUI() {

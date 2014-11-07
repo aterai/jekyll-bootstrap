@@ -25,11 +25,11 @@ tabs = new ClippedTitleTabbedPane() {
   @Override public void updateUI() {
     UIManager.put("TabbedPane.tabAreaInsets", null); //uninstall
     super.updateUI();
-    setAlignmentX(0.0f);
-    setAlignmentY(0.0f);
+    setAlignmentX(Component.LEFT_ALIGNMENT);
+    setAlignmentY(Component.TOP_ALIGNMENT);
     b.setBorder(BorderFactory.createEmptyBorder(3,3,3,3));
-    b.setAlignmentX(0.0f);
-    b.setAlignmentY(0.0f);
+    setAlignmentX(Component.LEFT_ALIGNMENT);
+    setAlignmentY(Component.TOP_ALIGNMENT);
     tabAreaInsets = getTabAreaInsets();
     UIManager.put("TabbedPane.tabAreaInsets",
                   getButtonPaddingTabAreaInsets(b, getTabInsets(), tabAreaInsets));
@@ -62,11 +62,11 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 <!-- dummy comment line for breaking list -->
 
-コンポーネントの追加には、以下の方法を使用しています(比較:[JTabbedPaneの余白にJCheckBoxを配置](http://terai.xrea.jp/Swing/TabbedPaneWithCheckBox.html))。
+コンポーネントの追加には、以下の方法を使用しています(比較:[JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html))。
 
 - ボタンの幅だけ、`tabAreaInsets`の左余白を拡大する
     - `UIManager.getInsets("TabbedPane.tabAreaInsets")`などを使用するため、`Synth`など(`GTK`, `Nimbus`)の`LookAndFeel`には対応していない
-    - [Nimbus L&F: java.lang.NullPointer Exception throws when extended BaseUI Components](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6634504)
+    - [Nimbus L&F: java.lang.NullPointer Exception throws when extended BaseUI Components](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6634504)
 - `OverlayLayout`で、`JButton`と`JTabbedPane`(上で作った余白に)を重ねて表示
     - このため、`JTabbedPane.TOP`にしか対応していない
 
@@ -75,9 +75,9 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 ## 参考リンク
 - [famfamfam.com: Mini Icons](http://www.famfamfam.com/lab/icons/mini/)
     - 追加アイコンを拝借しています。
-- [OverlayLayoutの使用](http://terai.xrea.jp/Swing/OverlayLayout.html)
-- [JTabbedPaneの余白にJCheckBoxを配置](http://terai.xrea.jp/Swing/TabbedPaneWithCheckBox.html)
-- [JTabbedPaneのタイトルをクリップ](http://terai.xrea.jp/Swing/ClippedTabLabel.html)
+- [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
+- [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
+- [JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)
 - [Swing - Any layout suggestions for this?](https://forums.oracle.com/thread/1389350)
 
 <!-- dummy comment line for breaking list -->

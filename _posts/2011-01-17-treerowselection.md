@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: TreeRowSelection
 title: JTreeを行クリックで選択し、行全体を選択状態の背景色で描画
-tags: [JTree, TreeCellRenderer]
+tags: [JTree, TreeCellRenderer, FocusListener]
 author: aterai
 pubdate: 2011-01-17T15:24:56+09:00
 description: JTreeの行をクリックして選択し、行全体を選択状態の背景色で描画します。
@@ -15,43 +15,70 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TTPdCvaUyfI/AAAAAAAAAyQ/QnF4vHjyUiM/s800/TreeRowSelection.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final Color SELC = new Color(100,150,200);
-JTree tree = new JTree() {
+<pre class="prettyprint"><code>class RowSelectionTree extends JTree {
+  private static final Color SELC = new Color(100, 150, 200);
+  private Handler handler;
+
   @Override public void paintComponent(Graphics g) {
     g.setColor(getBackground());
-    g.fillRect(0,0,getWidth(),getHeight());
-    if(getSelectionCount()&gt;0) {
-      for(int i: getSelectionRows()) {
+    g.fillRect(0, 0, getWidth(), getHeight());
+    if (getSelectionCount() &gt; 0) {
+      g.setColor(SELC);
+      for (int i : getSelectionRows()) {
         Rectangle r = getRowBounds(i);
-        g.setColor(SELC);
         g.fillRect(0, r.y, getWidth(), r.height);
       }
     }
     super.paintComponent(g);
-    if(getLeadSelectionPath()!=null) {
+    if (getLeadSelectionPath() != null) {
       Rectangle r = getRowBounds(getRowForPath(getLeadSelectionPath()));
-      g.setColor(SELC.darker());
-      g.drawRect(0, r.y, getWidth()-1, r.height-1);
+      g.setColor(hasFocus() ? SELC.darker() : SELC);
+      g.drawRect(0, r.y, getWidth() - 1, r.height - 1);
     }
   }
-};
-tree.setUI(new javax.swing.plaf.basic.BasicTreeUI() {
-  @Override public Rectangle getPathBounds(JTree tree, TreePath path) {
-    if(tree != null &amp;&amp; treeState != null) {
-      return getPathBounds(path, tree.getInsets(), new Rectangle());
-    }
-    return null;
+  @Override public void updateUI() {
+    removeFocusListener(handler);
+    super.updateUI();
+    setUI(new BasicTreeUI() {
+      @Override public Rectangle getPathBounds(JTree tree, TreePath path) {
+        if (tree != null &amp;&amp; treeState != null) {
+          return getPathBounds(path, tree.getInsets(), new Rectangle());
+        }
+        return null;
+      }
+      private Rectangle getPathBounds(
+          TreePath path, Insets insets, Rectangle bounds) {
+        Rectangle rect = treeState.getBounds(path, bounds);
+        if (rect != null) {
+          rect.width = tree.getWidth();
+          rect.y += insets.top;
+        }
+        return rect;
+      }
+    });
+    handler = new Handler();
+    addFocusListener(handler);
+    setCellRenderer(handler);
+    setOpaque(false);
   }
-  private Rectangle getPathBounds(TreePath path, Insets insets, Rectangle bounds) {
-    bounds = treeState.getBounds(path, bounds);
-    if(bounds != null) {
-      bounds.width = tree.getWidth();
-      bounds.y += insets.top;
+  static class Handler extends DefaultTreeCellRenderer implements FocusListener {
+    @Override public Component getTreeCellRendererComponent(
+        JTree tree, Object value, boolean selected, boolean expanded,
+        boolean leaf, int row, boolean hasFocus) {
+      JLabel l = (JLabel) super.getTreeCellRendererComponent(
+          tree, value, selected, expanded, leaf, row, hasFocus);
+      l.setBackground(selected ? SELC : tree.getBackground());
+      l.setOpaque(true);
+      return l;
     }
-    return bounds;
+    @Override public void focusGained(FocusEvent e) {
+      e.getComponent().repaint();
+    }
+    @Override public void focusLost(FocusEvent e) {
+      e.getComponent().repaint();
+    }
   }
-});
-tree.setOpaque(false);
+}
 </code></pre>
 
 ## 解説
@@ -60,6 +87,8 @@ tree.setOpaque(false);
 - `BasicTreeUI#getPathBounds(...)`をオーバーライドして、ノードではなく、行のクリックで選択可能に変更
 - `JTree`の背景を`setOpaque(false)`で透明(非描画)にし、`JTree#paintComponent(...)`をオーバーライドして選択された行を背景色で描画
 - 不透明にした`TreeCellRenderer`を使用して、ノードの選択色を`JTree#paintComponent(...)`の背景色と同じものに変更
+- 別コンポーネントにフォーカスが移動した場合、`LeadSelection`の`Border`を描画しない(選択背景色で上書き)ように設定
+    - デフォルトではノードのみ再描画されるので、`FocusListener`を追加して、`JTree`全体を再描画
 
 <!-- dummy comment line for breaking list -->
 

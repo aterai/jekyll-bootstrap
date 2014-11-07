@@ -23,15 +23,15 @@ comments: true
   private static final int iconSize = 16;
   @Override protected void fireStateChanged() {
     ButtonModel model = getModel();
-    if(!model.isEnabled()) {
+    if (!model.isEnabled()) {
       setForeground(Color.GRAY);
-    }else if(model.isPressed() &amp;&amp; model.isArmed()) {
+    } else if (model.isPressed() &amp;&amp; model.isArmed()) {
       setForeground(pressedColor);
-    }else if(model.isSelected()) {
+    } else if (model.isSelected()) {
       setForeground(selectedColor);
-    }else if(isRolloverEnabled() &amp;&amp; model.isRollover()) {
+    } else if (isRolloverEnabled() &amp;&amp; model.isRollover()) {
       setForeground(rolloverColor);
-    }else{
+    } else {
       setForeground(defaultColor);
     }
     super.fireStateChanged();
@@ -50,15 +50,15 @@ comments: true
 <pre class="prettyprint"><code>radioButton.addChangeListener(new javax.swing.event.ChangeListener() {
   @Override public void stateChanged(javax.swing.event.ChangeEvent e) {
     ButtonModel model = radioButton.getModel();
-    if(!model.isEnabled()) {
+    if (!model.isEnabled()) {
       radioButton.setForeground(Color.GRAY);
-    }else if(model.isPressed() &amp;&amp; model.isArmed()) {
+    } else if (model.isPressed() &amp;&amp; model.isArmed()) {
       radioButton.setForeground(pressedColor);
-    }else if(model.isSelected()) {
+    } else if (model.isSelected()) {
       radioButton.setForeground(selectedColor);
-    }else if(isRolloverEnabled() &amp;&amp; model.isRollover()) {
+    } else if (isRolloverEnabled() &amp;&amp; model.isRollover()) {
       radioButton.setForeground(rolloverColor);
-    }else{
+    } else {
       radioButton.setForeground(defaultColor);
     }
   }

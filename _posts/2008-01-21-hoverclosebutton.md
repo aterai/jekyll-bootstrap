@@ -40,8 +40,8 @@ comments: true
 `JButton`が表示されても、そのタブ幅は常に一定で、内部のタブタイトルがクリップされるようになっています。
 
 ## 参考リンク
-- [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
-- [JTabbedPaneのタブ文字列をハイライト](http://terai.xrea.jp/Swing/TabTitleHighlight.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
+- [JTabbedPaneのタブ文字列をハイライト](http://ateraimemo.com/Swing/TabTitleHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

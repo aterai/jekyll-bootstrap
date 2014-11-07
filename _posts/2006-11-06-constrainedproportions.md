@@ -30,8 +30,8 @@ frame.addComponentListener(new ComponentAdapter() {
 上記のサンプルでは、`JFrame`のサイズを変更した後、その幅から縦横比が同じになるような高さを計算して、`JFrame#setSize(int,int)`でサイズを設定し直しています。
 
 ## 参考リンク
-- [JFrameの最小サイズ](http://terai.xrea.jp/Swing/MinimumFrame.html)
-- [DynamicLayoutでレイアウトの動的評価](http://terai.xrea.jp/Swing/DynamicLayout.html)
+- [JFrameの最小サイズ](http://ateraimemo.com/Swing/MinimumFrame.html)
+- [DynamicLayoutでレイアウトの動的評価](http://ateraimemo.com/Swing/DynamicLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

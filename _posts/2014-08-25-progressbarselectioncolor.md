@@ -15,13 +15,14 @@ comments: true
 {% download https://lh3.googleusercontent.com/-GXTDLsaFDf0/U_nV4WbEi0I/AAAAAAAACL0/09g79mFs9ZE/s800/ProgressBarSelectionColor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>UIManager.put("ProgressBar.foreground", Color.RED);
+<pre class="prettyprint"><code>//progressBar1
+UIManager.put("ProgressBar.foreground", Color.RED);
 UIManager.put("ProgressBar.selectionForeground", Color.ORANGE);
 UIManager.put("ProgressBar.background", Color.WHITE);
 UIManager.put("ProgressBar.selectionBackground", Color.RED);
-</code></pre>
 
-<pre class="prettyprint"><code>progressBar2.setForeground(Color.BLUE);
+//progressBar2
+progressBar2.setForeground(Color.BLUE);
 progressBar2.setBackground(Color.CYAN.brighter());
 progressBar2.setUI(new BasicProgressBarUI() {
   @Override protected Color getSelectionForeground() {
@@ -32,7 +33,6 @@ progressBar2.setUI(new BasicProgressBarUI() {
   }
 });
 </code></pre>
-
 
 ## 解説
 - 上: `Default`
@@ -52,7 +52,7 @@ progressBar2.setUI(new BasicProgressBarUI() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLayerを使ってJProgressBarの色相を変更する](http://terai.xrea.jp/Swing/ColorChannelSwapFilter.html)
+- [JLayerを使ってJProgressBarの色相を変更する](http://ateraimemo.com/Swing/ColorChannelSwapFilter.html)
 
 <!-- dummy comment line for breaking list -->
 

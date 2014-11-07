@@ -81,7 +81,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコンを利用しています。
-- [JEditorPaneやJTextPaneに行間を設定する](http://terai.xrea.jp/Swing/LineSpacing.html)
+- [JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -116,11 +116,11 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 
 - お返事遅くなりましたm(__)m。試してみます！ありがとうございます！ -- *ばしばし* 2007-10-22 (月) 09:57:29
 - `JLabel`で`html`を使用すると`setEnabled(false)`でグレーアウトしてくれないです。どうしたものでしょう。 -- *ApplePedlar* 2007-12-11 (火) 17:34:00
-    - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4740519)ですね。今のところ、[Swing - JLabel with html tag can not be disabled or setForegroud?!](https://forums.oracle.com/thread/1377943)みたいに ~~逃げるしかない？みたいです。~~ する方法があります。 -- *aterai* 2007-12-11 (火) 18:27:05
-    - コードが長くなってしまったので、別ページを作成しました。`JEditorPane`を使用する方法も追加しています。[Htmlを使ったJLabelとJEditorPaneの無効化](http://terai.xrea.jp/Swing/DisabledHtmlLabel.html) -- *aterai* 2007-12-24 (月) 23:24:50
+    - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519)ですね。今のところ、[Swing - JLabel with html tag can not be disabled or setForegroud?!](https://forums.oracle.com/thread/1377943)みたいに ~~逃げるしかない？みたいです。~~ する方法があります。 -- *aterai* 2007-12-11 (火) 18:27:05
+    - コードが長くなってしまったので、別ページを作成しました。`JEditorPane`を使用する方法も追加しています。[Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html) -- *aterai* 2007-12-24 (月) 23:24:50
 - こんにちは。ココのおかげでとても助かっています。ところで、`1`行の高さ（文字の高さを含めた高さ）を指定したい、というときには、`setLineSpacing`ではダメってことですよね？「指定したい高さ－フォントの大きさ」を`setLineSpacing`で指定してあげなきゃいけないんですよね？（文字サイズによって`1`行の高さが揃わなくなるのはイヤで揃えたいなと思うのですが、フォントによってそれだと、そうすると、フォントの大きさを変えるたびに指定しなおさなきゃいけないってことですよね。面倒…） -- *びびあず* 2008-10-31 (金) 10:42:47
     - こんにちは。どういたしまして。`LineSpacing`はフォントサイズに依存するみたいですね。固定の間隔を指定するのなら、例えば以下のように、`ParagraphView#getBottomInset`メソッドなどをオーバーライドするのが簡単かも。 -- *aterai* 2008-10-31 (金) 14:36:51
-    - ソースコードを[JEditorPaneやJTextPaneに行間を設定する](http://terai.xrea.jp/Swing/LineSpacing.html)に移動しました。
+    - ソースコードを[JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)に移動しました。
 - （変な日本語を書いてましたね、失礼しました。）　ところで…、さっそくご親切にソースまで書いて教えていただけて嬉しいです。ありがとうございました。これを参考にして、また勉強したいと思います。本当にありがとうございました。 -- *びびあず* 2008-11-07 (金) 14:22:27
 - `Swing`初心者です。`JTextPane`での複数行表示、大変参考になりました。複数行表示自体はおかげ様でうまくいったのですが、ボーダーが思い通りにならず困っています。`TitledBorder`を設定しているのですが、タイトルを囲む線の外側（コンポーネントの枠）がくぼんだ状態になってしまいます。外枠は表示させたくないのですが、どこかで`OFF`できるのでしょうか。ご教授いただければ幸いです。 -- *ka-ka* 2008-12-25 (木) 00:03:08
     - こんばんは。`TitledBorder`の枠線を変更する場合は、`label.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEmptyBorder(), "title"));`のように、他の`Border`(この場合、`EmptyBorder`で非表示にしている)と組み合わせて使用します。[TitledBorder (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/border/TitledBorder.html#TitledBorder%28javax.swing.border.Border,%20java.lang.String%29) -- *aterai* 2008-12-25 (木) 01:46:20

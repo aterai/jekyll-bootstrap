@@ -15,95 +15,96 @@ comments: true
 {% download https://lh6.googleusercontent.com/-x9uTOO9fSds/T_pElwy8GBI/AAAAAAAABPM/Jx30phjG3bM/s800/RemoveButtonInComboItem.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class CellButtonsMouseListener extends MouseAdapter{
+<pre class="prettyprint"><code>class CellButtonsMouseListener extends MouseAdapter {
   private int prevIndex = -1;
-  private JButton prevButton = null;
+  private JButton prevButton;
+  private static void listRepaint(JList list, Rectangle rect) {
+    if (rect != null) {
+      list.repaint(rect);
+    }
+  }
   @Override public void mouseMoved(MouseEvent e) {
-    JList list = (JList)e.getComponent();
+    JList list = (JList) e.getComponent();
     Point pt = e.getPoint();
     int index  = list.locationToIndex(pt);
-    if(!list.getCellBounds(index, index).contains(pt)) {
-      if(prevIndex&gt;=0) {
+    if (!list.getCellBounds(index, index).contains(pt)) {
+      if (prevIndex &gt;= 0) {
         Rectangle r = list.getCellBounds(prevIndex, prevIndex);
-        if(r!=null) {
-          list.repaint(r);
-        }
+        listRepaint(list, r);
       }
       index = -1;
       prevButton = null;
       return;
     }
-    if(index&gt;=0) {
+    if (index &gt;= 0) {
       JButton button = getButton(list, pt, index);
-      ButtonsRenderer renderer = (ButtonsRenderer)list.getCellRenderer();
+      ButtonsRenderer renderer = (ButtonsRenderer) list.getCellRenderer();
       renderer.button = button;
-      if(button != null) {
-        button.getModel().setRollover(true);
-        renderer.rolloverIndex = index;
-        if(!button.equals(prevButton)) {
-          Rectangle r = list.getCellBounds(prevIndex, index);
-          if(r!=null) {
-            list.repaint(r);
-          }
-        }
-      }else{
+      if (button == null) {
         renderer.rolloverIndex = -1;
         Rectangle r = null;
-        if(prevIndex != index) {
+        if (prevIndex == index) {
+          if (prevIndex &gt;= 0 &amp;&amp; prevButton != null) {
+            r = list.getCellBounds(prevIndex, prevIndex);
+          }
+        } else {
           r = list.getCellBounds(index, index);
-        }else if(prevIndex&gt;=0 &amp;&amp; prevButton!=null) {
-          r = list.getCellBounds(prevIndex, prevIndex);
         }
-        if(r!=null) {
-          list.repaint(r);
-        }
+        listRepaint(list, r);
         prevIndex = -1;
+      } else {
+        button.getModel().setRollover(true);
+        renderer.rolloverIndex = index;
+        if (!button.equals(prevButton)) {
+          Rectangle r = list.getCellBounds(prevIndex, index);
+          listRepaint(list, r);
+        }
       }
       prevButton = button;
     }
     prevIndex = index;
   }
   @Override public void mousePressed(MouseEvent e) {
-    JList list = (JList)e.getComponent();
+    JList list = (JList) e.getComponent();
     Point pt = e.getPoint();
     int index  = list.locationToIndex(pt);
-    if(index&gt;=0) {
+    if (index &gt;= 0) {
       JButton button = getButton(list, pt, index);
-      if(button != null) {
-        ButtonsRenderer renderer = (ButtonsRenderer)list.getCellRenderer();
+      if (button != null) {
+        ButtonsRenderer renderer = (ButtonsRenderer) list.getCellRenderer();
         renderer.button = button;
-        list.repaint(list.getCellBounds(index, index));
+        Rectangle r = list.getCellBounds(index, index);
+        listRepaint(list, r);
       }
     }
   }
   @Override public void mouseReleased(MouseEvent e) {
-    JList list = (JList)e.getComponent();
+    JList list = (JList) e.getComponent();
     Point pt = e.getPoint();
     int index  = list.locationToIndex(pt);
-    if(index&gt;=0) {
+    if (index &gt;= 0) {
       JButton button = getButton(list, pt, index);
-      if(button != null) {
-        ButtonsRenderer renderer = (ButtonsRenderer)list.getCellRenderer();
+      if (button != null) {
+        ButtonsRenderer renderer = (ButtonsRenderer) list.getCellRenderer();
         renderer.button = null;
         button.doClick();
         Rectangle r = list.getCellBounds(index, index);
-        if(r!=null) {
-          list.repaint(r);
-        }
+        listRepaint(list, r);
       }
     }
   }
   @SuppressWarnings("unchecked")
   private static JButton getButton(JList list, Point pt, int index) {
-    Container c = (Container)list.getCellRenderer().getListCellRendererComponent(
+    Container c = (Container) list.getCellRenderer().getListCellRendererComponent(
         list, "", index, false, false);
     Rectangle r = list.getCellBounds(index, index);
     c.setBounds(r);
-    pt.translate(0,-r.y);
+    //c.doLayout(); //may be needed for mone LayoutManager
+    pt.translate(-r.x, -r.y);
     Component b = SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y);
-    if(b instanceof JButton) {
-      return (JButton)b;
-    }else{
+    if (b instanceof JButton) {
+      return (JButton) b;
+    } else {
       return null;
     }
   }
@@ -115,7 +116,7 @@ comments: true
 
 <pre class="prettyprint"><code>Accessible a = getAccessibleContext().getAccessibleChild(0);
 if(a instanceof BasicComboPopup) {
-  BasicComboPopup pop = (BasicComboPopup)a;
+  BasicComboPopup pop = (BasicComboPopup) a;
   JList list = pop.getList();
   CellButtonsMouseListener cbml = new CellButtonsMouseListener();
   list.addMouseListener(cbml);
@@ -129,7 +130,7 @@ if(a instanceof BasicComboPopup) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JListのセル内にJButtonを配置する](http://terai.xrea.jp/Swing/ButtonsInListCell.html)
+- [JListのセル内にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInListCell.html)
 
 <!-- dummy comment line for breaking list -->
 

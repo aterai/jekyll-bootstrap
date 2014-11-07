@@ -35,7 +35,7 @@ IIOMetadataNode root = (IIOMetadataNode)meta.getAsTree("javax_imageio_jpeg_image
 //root = (IIOMetadataNode) meta.getAsTree("javax_imageio_1.0");
 
 NodeList com = root.getElementsByTagName("com");
-if(com!=null &amp;&amp; com.getLength()&gt;0) {
+if (com != null &amp;&amp; com.getLength() &gt; 0) {
   String comment = ((IIOMetadataNode)com.item(0)).getAttribute("comment");
   buf.append(String.format("Comment: %s%n", comment));
 }
@@ -62,7 +62,7 @@ if(com!=null &amp;&amp; com.getLength()&gt;0) {
     - via: [javax.imageio.metadata (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/package-summary.html)
     - 標準の (プラグインに依存しない) 形式やその他のメタデータ(`PNG`、`GIF`、`BMP`)もこちらから
 - [Swing - XMLViewer](https://forums.oracle.com/thread/1373824)
-- [MediaTrackerで画像のサイズを取得](http://terai.xrea.jp/Swing/MediaTracker.html)
+- [MediaTrackerで画像のサイズを取得](http://ateraimemo.com/Swing/MediaTracker.html)
 - [Utilz: 画像の位置情報](http://www.utilz.jp/wiki/ExifGps)
     - via: [Jpegのexif形式ファイルからの画像解像度（幅高）取得について - Java Solution](http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?topic=42083&forum=12&4)
 

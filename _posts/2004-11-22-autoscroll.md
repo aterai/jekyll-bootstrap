@@ -42,21 +42,21 @@ comments: true
     });
   }
   @Override public void hierarchyChanged(HierarchyEvent e) {
-    JComponent c = (JComponent)e.getSource();
-    if((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED)!=0
-       &amp;&amp; !c.isDisplayable()) {
+    JComponent c = (JComponent) e.getSource();
+    if((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0
+        &amp;&amp; !c.isDisplayable()) {
       scroller.stop();
     }
   }
   @Override public void mouseDragged(MouseEvent e) {
-    JViewport vport = (JViewport)e.getSource();
+    JViewport vport = (JViewport) e.getSource();
     Point pt = e.getPoint();
     int dx = startPt.x - pt.x;
     int dy = startPt.y - pt.y;
     Point vp = vport.getViewPosition();
     vp.translate(dx, dy);
     label.scrollRectToVisible(new Rectangle(vp, vport.getSize()));
-    move.setLocation(SPEED*dx, SPEED*dy);
+    move.setLocation(SPEED * dx, SPEED * dy);
     startPt.setLocation(pt);
   }
   @Override public void mousePressed(MouseEvent e) {
@@ -83,17 +83,17 @@ comments: true
 `javax.swing.Timer`を使うことでスクロールの開始、継続、停止を行っています。
 
 - - - -
-`JTextPane`で文字列を挿入したときに、最後まで自動スクロールしたい場合は、[JTextPaneで最終行に移動](http://terai.xrea.jp/Swing/CaretPosition.html)を参考にしてください。
+`JTextPane`で文字列を挿入したときに、最後まで自動スクロールしたい場合は、[JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)を参考にしてください。
 
 ## 参考リンク
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)
-- [JTextPaneで最終行に移動](http://terai.xrea.jp/Swing/CaretPosition.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
+- [JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 猫の手スクロール風の動作に変更しました。 -- *aterai* 2007-05-24 (木) 19:16:16
-- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://terai.xrea.jp/Swing/HandScroll.html)と同じ動作をするように変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
+- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)と同じ動作をするように変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
 
 <!-- dummy comment line for breaking list -->

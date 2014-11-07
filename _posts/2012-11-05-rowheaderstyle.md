@@ -16,6 +16,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class RowHeaderRenderer extends JLabel implements TableCellRenderer {
+  private int rollOverRowIndex = -1;
+
   public RowHeaderRenderer(JTable table) {
     super();
     RollOverListener rol = new RollOverListener();
@@ -25,10 +27,10 @@ comments: true
   @Override public Component getTableCellRendererComponent(
       JTable tbl, Object val, boolean isS, boolean hasF, int row, int col) {
     TableCellRenderer tcr = tbl.getTableHeader().getDefaultRenderer();
-    boolean f = row==rollOverRowIndex;
-    JLabel l = (JLabel)tcr.getTableCellRendererComponent(
-        tbl, val, isS, f?f:hasF, -1, -1);
-    if(tcr.getClass().getName().indexOf("XPDefaultRenderer")&gt;0) {
+    boolean f = row == rollOverRowIndex;
+    JLabel l = (JLabel) tcr.getTableCellRendererComponent(
+        tbl, val, isS, f ? f : hasF, -1, -1);
+    if (tcr.getClass().getName().indexOf("XPDefaultRenderer") &gt;= 0) {
       l.setOpaque(!f);
       this.setIcon(new ComponentIcon(l));
       return this;
@@ -36,39 +38,42 @@ comments: true
       return l;
     }
   }
-  private int rollOverRowIndex = -1;
   class RollOverListener extends MouseAdapter {
     @Override public void mouseMoved(MouseEvent e) {
-      JTable table = (JTable)e.getSource();
+      JTable table = (JTable) e.getComponent();
       Point pt = e.getPoint();
       int col = table.columnAtPoint(pt);
       int column = table.convertColumnIndexToModel(col);
-      if(column!=0) return;
-
-      int prev_row = rollOverRowIndex;
+      if (column != 0) {
+        return;
+      }
+      int prevRow = rollOverRowIndex;
       rollOverRowIndex = table.rowAtPoint(pt);
-      if(rollOverRowIndex == prev_row) return;
+      if (rollOverRowIndex == prevRow) {
+        return;
+      }
       Rectangle repaintRect;
-      if(rollOverRowIndex &gt;= 0) {
+      if (rollOverRowIndex &gt;= 0) {
         Rectangle r = table.getCellRect(rollOverRowIndex, col, false);
-        if(prev_row &gt;= 0) {
-          repaintRect = r.union(table.getCellRect(prev_row, col, false));
+        if (prevRow &gt;= 0) {
+          repaintRect = r.union(table.getCellRect(prevRow, col, false));
         } else {
           repaintRect = r;
         }
       } else {
-        repaintRect = table.getCellRect(prev_row, col, false);
+        repaintRect = table.getCellRect(prevRow, col, false);
       }
       table.repaint(repaintRect);
     }
     @Override public void mouseExited(MouseEvent e) {
-      JTable table = (JTable)e.getSource();
+      JTable table = (JTable) e.getComponent();
       Point pt = e.getPoint();
       int col = table.columnAtPoint(pt);
       int column = table.convertColumnIndexToModel(col);
-      if(column!=0) return;
-
-      if(rollOverRowIndex &gt;= 0) {
+      if (column != 0) {
+        return;
+      }
+      if (rollOverRowIndex &gt;= 0) {
         table.repaint(table.getCellRect(rollOverRowIndex, col, false));
       }
       rollOverRowIndex = -1;
@@ -105,8 +110,8 @@ class ComponentIcon implements Icon {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableに行ヘッダを追加](http://terai.xrea.jp/Swing/TableRowHeader.html)
-- [JTableのセルのハイライト](http://terai.xrea.jp/Swing/CellHighlight.html)
+- [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)
+- [JTableのセルのハイライト](http://ateraimemo.com/Swing/CellHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

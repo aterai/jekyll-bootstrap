@@ -35,7 +35,7 @@ g2.drawImage(bi, at, this);
 </code></pre>
 
 ## 参考リンク
-- [Shapeの反転](http://terai.xrea.jp/Swing/HorizontalFlip.html)
+- [Shapeの反転](http://ateraimemo.com/Swing/HorizontalFlip.html)
 
 <!-- dummy comment line for breaking list -->
 

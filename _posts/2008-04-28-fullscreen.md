@@ -20,12 +20,12 @@ comments: true
     = GraphicsEnvironment.getLocalGraphicsEnvironment();
   GraphicsDevice graphicsDevice
     = graphicsEnvironment.getDefaultScreenDevice();
-  if(graphicsDevice.getFullScreenWindow()==null) {
+  if (graphicsDevice.getFullScreenWindow() == null) {
     dialog.dispose(); //destroy the native resources
     dialog.setUndecorated(true);
     dialog.setVisible(true); //rebuilding the native resources
     graphicsDevice.setFullScreenWindow(dialog);
-  }else{
+  } else {
     graphicsDevice.setFullScreenWindow(null);
     dialog.dispose();
     dialog.setUndecorated(false);

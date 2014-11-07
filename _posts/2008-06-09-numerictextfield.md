@@ -177,7 +177,7 @@ spinner.setValue(5000);
     - 別コンポーネントにフォーカスが移動するときに、数値かどうか評価します。
     - 数値以外の場合、テキストは以前の値に`Undo`されます。
     - 数値が範囲外となる場合、最小値、または最大値に調整されます。
-        - 注:[SpinnerNumberModelに上限値を超える値を入力](http://terai.xrea.jp/Swing/SpinnerNumberModel.html)
+        - 注:[SpinnerNumberModelに上限値を超える値を入力](http://ateraimemo.com/Swing/SpinnerNumberModel.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -201,7 +201,7 @@ spinner.setValue(5000);
 ## 参考リンク
 - [Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
 - [How to Use Formatted Text Fields](http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
-- [JSpinnerで無効な値の入力を許可しない](http://terai.xrea.jp/Swing/NumberFormatter.html)
+- [JSpinnerで無効な値の入力を許可しない](http://ateraimemo.com/Swing/NumberFormatter.html)
 
 <!-- dummy comment line for breaking list -->
 

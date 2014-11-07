@@ -20,21 +20,22 @@ panel.setBorder(BorderFactory.createTitledBorder("Brick Layout"));
 GridBagConstraints c = new GridBagConstraints();
 c.fill = GridBagConstraints.HORIZONTAL;
 //c.weightx = 1.0; c.weighty = 0.0;
-for(int i=0;i&lt;SIZE;i++) {
+for (int i = 0; i &lt; SIZE; i++) {
   int x = i &amp; 1; //= (i%2==0)?0:1;
-  for(int j=0;j&lt;SIZE;j++) {
+  for (int j = 0; j &lt; SIZE; j++) {
     c.gridy = i;
-    c.gridx = 2*j+x;
+    c.gridx = 2 * j + x;
     c.gridwidth = 2;
-    panel.add(new JButton(" "),c);
+    panel.add(new JButton(" "), c);
   }
 }
 //&lt;blockquote cite="https://forums.oracle.com/thread/1357310"&gt;
 //&lt;dummy-row&gt;
 c.gridwidth = 1;
 c.gridy = 10;
-for(c.gridx=0; c.gridx&lt;=2*SIZE; c.gridx++)
+for (c.gridx = 0; c.gridx &lt;= 2 * SIZE; c.gridx++) {
   panel.add(Box.createHorizontalStrut(24), c);
+}
 //&lt;/dummy-row&gt;
 //&lt;/blockquote&gt;
 </code></pre>

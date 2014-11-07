@@ -55,7 +55,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのCellEditorにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellEditor.html)
+- [JTableのCellEditorにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -67,7 +67,7 @@ private void updateLookAndFeel() {
 
 ## 参考リンク
 - [SwingSet3](https://swingset3.dev.java.net/)
-- [Look and Feelの変更](http://terai.xrea.jp/Swing/LookAndFeel.html)
+- [Look and Feelの変更](http://ateraimemo.com/Swing/LookAndFeel.html)
     - こちらは、`SwingSet2`からの引用です。
 
 <!-- dummy comment line for breaking list -->

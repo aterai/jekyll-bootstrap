@@ -24,7 +24,9 @@ comments: true
       compoundEdit.addEdit(e.getEdit());
     }
   }
-  @Override public void replace(int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+  @Override public void replace(
+      int offset, int length, String text, AttributeSet attrs)
+      throws BadLocationException {
     if (length == 0) { //insert
       System.out.println("insert");
       super.replace(offset, length, text, attrs);
@@ -53,6 +55,36 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+<pre class="prettyprint"><code>class DocumentFilterUndoManager extends UndoManager {
+  private CompoundEdit compoundEdit;
+  private final transient DocumentFilter undoFilter = new DocumentFilter() {
+    @Override public void replace(
+        DocumentFilter.FilterBypass fb, int offset, int length,
+        String text, AttributeSet attrs) throws BadLocationException {
+      if (length == 0) {
+        fb.insertString(offset, text, attrs);
+      } else {
+        compoundEdit = new CompoundEdit();
+        fb.replace(offset, length, text, attrs);
+        compoundEdit.end();
+        addEdit(compoundEdit);
+        compoundEdit = null;
+      }
+    }
+  };
+  public DocumentFilter getDocumentFilter() {
+    return undoFilter;
+  }
+  @Override public void undoableEditHappened(UndoableEditEvent e) {
+    if (compoundEdit == null) {
+      addEdit(e.getEdit());
+    } else {
+      compoundEdit.addEdit(e.getEdit());
+    }
+  }
+}
+</code></pre>
+
 ## 参考リンク
 - [Undo two or more actions at once | Oracle Community](https://community.oracle.com/thread/1509622)
 - [Undo manager : Undo Redo « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/Undomanager.htm)
@@ -63,7 +95,7 @@ comments: true
 - [Java Swing「UndoManager」メモ(Hishidama's Swing-UndoManager Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/UndoManager.html)
 - [Java Swingで複数のJTextFieldに対してUndo、Redoを行う（その2）－解決編 kyoはパソコンMaster or Slave?/ウェブリブログ](http://kyopc.at.webry.info/201007/article_1.html)
 - [バカが征く on Rails 2010年03月16日()](http://bakagaiku.hsbt.org/entry/20100316)
-- [UndoManagerでJTextFieldのUndo、Redoを行う](http://terai.xrea.jp/Swing/UndoManager.html)
+- [UndoManagerでJTextFieldのUndo、Redoを行う](http://ateraimemo.com/Swing/UndoManager.html)
 
 <!-- dummy comment line for breaking list -->
 

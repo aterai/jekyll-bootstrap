@@ -20,28 +20,28 @@ comments: true
     return new CustomPopupMenuUI();
   }
   private static boolean isHeavyWeightContainer(Component contents) {
-    for(Container p=contents.getParent();p!=null;p=p.getParent()) {
-      if((p instanceof JWindow) || (p instanceof Panel)) {
+    for (Container p = contents.getParent(); p != null; p = p.getParent()) {
+      if ((p instanceof JWindow) || (p instanceof Panel)) {
         return true;
       }
     }
     return false;
   }
   public Popup getPopup(JPopupMenu popup, int x, int y) {
-    Popup pp = super.getPopup(popup,x,y);
+    Popup pp = super.getPopup(popup, x, y);
     JPanel panel = (JPanel)popup.getParent();
-    if(isHeavyWeightContainer(panel)) {
-        System.out.println("outer");
-        Point p = new Point(x,y);
-        panel.setBorder(new ShadowBorder(panel,p));
-    }else{
-        System.out.println("inner");
-        panel.setBorder(new ShadowBorderInPanel());
+    if (isHeavyWeightContainer(panel)) {
+      System.out.println("outer");
+      Point p = new Point(x, y);
+      panel.setBorder(new ShadowBorder(panel, p));
+    } else {
+      System.out.println("inner");
+      panel.setBorder(new ShadowBorderInPanel());
     }
     panel.setOpaque(false);
     return pp;
   }
-//......
+//...
 </code></pre>
 
 ## 解説
@@ -68,7 +68,7 @@ contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 - [Java Swing Hacks #11 ドロップシャドウ付きのメニューを作る](http://www.oreilly.co.jp/books/4873112788/toc.html)
 - [JGoodies | We make Java look good and work well](http://www.jgoodies.com/)
     - `contrib.com.jgoodies.looks.common.ShadowPopupFactory`
-- [JPopupMenuに半透明の影を付ける](http://terai.xrea.jp/Swing/DropShadowPopup.html)
+- [JPopupMenuに半透明の影を付ける](http://ateraimemo.com/Swing/DropShadowPopup.html)
 
 <!-- dummy comment line for breaking list -->
 

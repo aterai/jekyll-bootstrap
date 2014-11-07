@@ -23,7 +23,7 @@ sorter.setTableHeader(table.getTableHeader());
 </code></pre>
 
 ## 解説
-`The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](http://terai.xrea.jp/Swing/SortableTable.html)で使用しているものと同じ`TableModel`でソートしています。
+`The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](http://ateraimemo.com/Swing/SortableTable.html)で使用しているものと同じ`TableModel`でソートしています。
 
 `TableSorter`には、<kbd>Ctrl</kbd>キーを押しながらヘッダをクリックすると、そのカラムを第二キーとしてソートする機能もあります。
 
@@ -35,7 +35,7 @@ sorter.setTableHeader(table.getTableHeader());
 <pre class="prettyprint"><code>private static class ComparableComparator implements Comparator {
   @SuppressWarnings("unchecked")
   public int compare(Object o1, Object o2) {
-    return ((Comparable)o1).compareTo(o2);
+    return ((Comparable) o1).compareTo(o2);
   }
 }
 public static final ComparableComparator COMPARABLE_COMAPRATOR
@@ -48,8 +48,8 @@ public static final ComparableComparator LEXICAL_COMPARATOR
   }
 };
 private TableModelListener tableModelListener;
-private Map&lt;Class, Comparator&gt; columnComparators = new HashMap&lt;Class, Comparator&gt;();
-private List&lt;Directive&gt; sortingColumns = new ArrayList&lt;Directive&gt;();
+private Map&lt;Class, Comparator&gt; columnComparators = new HashMap&lt;&gt;();
+private List&lt;Directive&gt; sortingColumns = new ArrayList&lt;&gt;();
 
 protected ComparableComparator getComparator(int column) {
   Class columnType = tableModel.getColumnClass(column);
@@ -72,7 +72,7 @@ protected ComparableComparator getComparator(int column) {
 - - - -
 - `JDK 1.6.0`から`JTable`には標準でソート機能が追加されています。
     - [Table Sorting and Filtering - New and Updated Desktop Features in Java SE 6, Part 2](http://www.oracle.com/technetwork/articles/javase/index-135205.html#1)
-    - [TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)
+    - [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -124,7 +124,7 @@ public class SorterModelIndex {
     table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
       public void valueChanged(ListSelectionEvent e) {
         int viewIndex = table.getSelectedRow();
-        if (!e.getValueIsAdjusting() &amp;&amp; viewIndex&gt;=0) {
+        if (!e.getValueIsAdjusting() &amp;&amp; viewIndex &gt;= 0) {
           Object o = model.getValueAt(sorter.modelIndex(viewIndex), 0);
           System.out.println(o);
         }
@@ -160,8 +160,8 @@ public class SorterModelIndex {
 
 <pre class="prettyprint"><code>p.add(new JButton(new AbstractAction("test") {
   @Override public void actionPerformed(ActionEvent e) {
-    for (int i=0; i&lt;table.getRowCount(); i++) {
-      for (int j=0; j&lt;table.getColumnCount(); j++) {
+    for (int i = 0; i &lt; table.getRowCount(); i++) {
+      for (int j = 0; j &lt; table.getColumnCount(); j++) {
         //Object o = table.getValueAt(i, table.convertColumnIndexToView(j));
         Object o = table.getValueAt(i, j);
         System.out.print(o+",");
@@ -184,7 +184,7 @@ col.setCellRenderer(new DefaultTableCellRenderer() {
   @Override public Component getTableCellRendererComponent(
       JTable table, Object v, boolean isS, boolean hasF, int row, int col) {
     Component c = super.getTableCellRendererComponent(table, v, isS, hasF, row, col);
-    if(c instanceof JLabel) ((JLabel)c).setText(""+row);
+    if (c instanceof JLabel) ((JLabel) c).setText("" + row);
     return c;
   }
 });

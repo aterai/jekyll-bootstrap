@@ -57,7 +57,8 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>combo.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createEmptyBorder(8,10,8,10), combo.getBorder()));
+<pre class="prettyprint"><code>combo.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createEmptyBorder(8, 10, 8, 10), combo.getBorder()));
 </code></pre>
 
 - `JPanel` + `JComboBox`(右)
@@ -88,7 +89,7 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 </code></pre>
 
 ## 参考リンク
-- [JTableのCellRendererにJComboBoxを設定](http://terai.xrea.jp/Swing/ComboCellRenderer.html)
+- [JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

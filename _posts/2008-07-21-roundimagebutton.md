@@ -89,7 +89,7 @@ comments: true
     - ただし、縁の線を描画するため、画像サイズより上下左右`1px`大きくなるよう`EmptyBorder`を設定している
 - `contains`をオーバーライドして、円の外側をクリックしてもボタンが反応しないようにする
     - このサンプルでは、画像の透過色から円を生成している訳ではなく、画像のサイズから円図形を別途作成している
-    - 画像の透過色から、クリック可能な領域を設定する場合は、[JComponentの形状定義を変更する](http://terai.xrea.jp/Swing/MoveNonRectangularImage.html)を参照
+    - 画像の透過色から、クリック可能な領域を設定する場合は、[JComponentの形状定義を変更する](http://ateraimemo.com/Swing/MoveNonRectangularImage.html)を参照
 - `paintBorder`をオーバーライドして、元の縁は描画せずにその幅の線で独自に円を描画する
     - `contains`で使用した図形を利用
 
@@ -97,11 +97,11 @@ comments: true
 
 - - - -
 ボタンの揃えを変更するために、`JPanel`ではなく、`Box`を利用しているので、`JDK 5`でも`JDK 6`と同じように描画するために、`Box#paintComponent`を以下のようにオーバーライドしています。
-- [Bug ID: 4907674 Box disregards setBackground() even when set Opaque(true)](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4907674)
+- [Bug ID: 4907674 Box disregards setBackground() even when set Opaque(true)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4907674)
 
 <!-- dummy comment line for breaking list -->
 
-![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSRb592NI/AAAAAAAAAig/4HrfRUSkPxc/s800/RoundImageButton1.png)
+https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSRb592NI/AAAAAAAAAig/4HrfRUSkPxc/s800/RoundImageButton1.png
 
 <pre class="prettyprint"><code>private final Box box = // JDK 6 Box.createHorizontalBox();
   // JDK 5
@@ -119,8 +119,8 @@ comments: true
 
 ## 参考リンク
 - [アクア風の球体の描き方（GIMPチュートリアル) > ロゴ・ボタン | GIMP思い込みチュートリアル（GIMPの使い方）](http://gimp.blog.shinobi.jp/Entry/18/)
-- [JButtonの形を変更](http://terai.xrea.jp/Swing/RoundButton.html)
-- [JComponentの形状定義を変更する](http://terai.xrea.jp/Swing/MoveNonRectangularImage.html)
+- [JButtonの形を変更](http://ateraimemo.com/Swing/RoundButton.html)
+- [JComponentの形状定義を変更する](http://ateraimemo.com/Swing/MoveNonRectangularImage.html)
 
 <!-- dummy comment line for breaking list -->
 

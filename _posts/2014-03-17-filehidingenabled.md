@@ -34,7 +34,7 @@ pop.add(mi);
 
 - - - -
 - 初期値は、`OS`の設定(`Windows`なら「コントロールパネル、フォルダーオプション、表示、ファイルとフォルダーの表示」)に従う
-    - 参考: [DesktopPropertyの変更を監視する](http://terai.xrea.jp/Swing/DesktopProperty.html)
+    - 参考: [DesktopPropertyの変更を監視する](http://ateraimemo.com/Swing/DesktopProperty.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -62,7 +62,7 @@ System.out.println("awt.file.showHiddenFiles: " + showHiddenProperty);
 
 ## 参考リンク
 - [クロノス・クラウン - 「JFileChooser」のコンテキストメニューに独自メニューを追加する方法](http://crocro.com/news/20110706140746.html)
-- [DesktopPropertyの変更を監視する](http://terai.xrea.jp/Swing/DesktopProperty.html)
+- [DesktopPropertyの変更を監視する](http://ateraimemo.com/Swing/DesktopProperty.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -97,7 +97,7 @@ editor1.setEditorKit(new HTMLEditorKit());
 </code></pre>
 
 ## 参考リンク
-- [JEditorPaneにリンクを追加](http://terai.xrea.jp/Swing/HyperlinkListener.html)
+- [JEditorPaneにリンクを追加](http://ateraimemo.com/Swing/HyperlinkListener.html)
 
 <!-- dummy comment line for breaking list -->
 

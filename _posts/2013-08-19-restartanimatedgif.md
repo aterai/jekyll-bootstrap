@@ -19,7 +19,7 @@ comments: true
 JButton button = new JButton(icon9) {
   @Override protected void fireStateChanged() {
     ButtonModel m = getModel();
-    if(isRolloverEnabled() &amp;&amp; m.isRollover()) {
+    if (isRolloverEnabled() &amp;&amp; m.isRollover()) {
       animatedIcon.getImage().flush();
     }
     super.fireStateChanged();

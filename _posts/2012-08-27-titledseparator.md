@@ -15,8 +15,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/-sRtVayYL37Q/UDs_iiXRk7I/AAAAAAAABRk/71qZoe9vM60/s800/TitledSeparator.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TitledSeparator extends JLabel{
-  private Color color;
+<pre class="prettyprint"><code>class TitledSeparator extends JLabel {
   private final String title;
   private final Color target;
   private final int height;
@@ -24,43 +23,20 @@ comments: true
   public TitledSeparator(String title, int height, int titlePosition) {
     this(title, null, height, titlePosition);
   }
-  public TitledSeparator(String _title, Color _target, int _height, int _titlePosition) {
+  public TitledSeparator(
+      String title, Color target, int height, int titlePosition) {
     super();
-    this.title = _title;
-    this.target = _target;
-    this.height = _height;
-    this.titlePosition = _titlePosition;
-    Icon icon = new Icon() {
-      private int width = -1;
-      private Paint painter1, painter2;
-      @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-        int w = c.getWidth();
-        if(w!=width || painter1==null || painter2==null || color==null) {
-          width = w;
-          Point2D start = new Point2D.Float(0f, 0f);
-          Point2D end   = new Point2D.Float((float)width, 0f);
-          float[] dist  = {0.0f, 1.0f};
-          color = getBackground();
-          color = color==null ? UIManager.getColor("Panel.background") : color;
-          Color tc = target==null ? color : target;
-          painter1 = new LinearGradientPaint(start, end, dist, new Color[] {tc.darker(),   color});
-          painter2 = new LinearGradientPaint(start, end, dist, new Color[] {tc.brighter(), color});
-        }
-        int h = getIconHeight()/2;
-        Graphics2D g2  = (Graphics2D)g.create();
-        g2.setPaint(painter1);
-        g2.fillRect(x, y,   width, getIconHeight());
-        g2.setPaint(painter2);
-        g2.fillRect(x, y+h, width, getIconHeight()-h);
-        g2.dispose();
-      }
-      @Override public int getIconWidth()  { return 200; } //dummy width
-      @Override public int getIconHeight() { return height; }
-    };
-    this.setBorder(BorderFactory.createTitledBorder(
-      BorderFactory.createMatteBorder(height, 0, 0, 0, icon), title,
-      TitledBorder.DEFAULT_JUSTIFICATION, titlePosition));
-    //System.out.println(getInsets());
+    this.title = title;
+    this.target = target;
+    this.height = height;
+    this.titlePosition = titlePosition;
+    updateBorder();
+  }
+  private void updateBorder() {
+    Icon icon = new TitledSeparatorIcon();
+    setBorder(BorderFactory.createTitledBorder(
+        BorderFactory.createMatteBorder(height, 0, 0, 0, icon), title,
+        TitledBorder.DEFAULT_JUSTIFICATION, titlePosition));
   }
   @Override public Dimension getMaximumSize() {
     Dimension d = super.getPreferredSize();
@@ -69,7 +45,41 @@ comments: true
   }
   @Override public void updateUI() {
     super.updateUI();
-    color = null;
+    updateBorder();
+  }
+  private class TitledSeparatorIcon implements Icon {
+    private int width = -1;
+    private Paint painter1;
+    private Paint painter2;
+    @Override public void paintIcon(Component c, Graphics g, int x, int y) {
+      int w = c.getWidth();
+      Color color = getBackground();
+      if (w != width || painter1 == null || painter2 == null) {
+        width = w;
+        Point2D start = new Point2D.Float(0f, 0f);
+        Point2D end   = new Point2D.Float((float) width, 0f);
+        float[] dist  = {0f, 1f};
+        color = color == null ? UIManager.getColor("Panel.background") : color;
+        Color tc = target == null ? color : target;
+        painter1 = new LinearGradientPaint(
+            start, end, dist, new Color[] {tc.darker(),   color});
+        painter2 = new LinearGradientPaint(
+            start, end, dist, new Color[] {tc.brighter(), color});
+      }
+      int h = getIconHeight() / 2;
+      Graphics2D g2  = (Graphics2D) g.create();
+      g2.setPaint(painter1);
+      g2.fillRect(x, y,   width, getIconHeight());
+      g2.setPaint(painter2);
+      g2.fillRect(x, y + h, width, getIconHeight() - h);
+      g2.dispose();
+    }
+    @Override public int getIconWidth() {
+      return 200; //dummy width
+    }
+    @Override public int getIconHeight() {
+      return height;
+    }
   }
 }
 </code></pre>
@@ -91,8 +101,8 @@ comments: true
 注: 縦のセパレータには未対応
 
 ## 参考リンク
-- [TitledBorderのタイトル位置](http://terai.xrea.jp/Swing/TitledBorder.html)
-- [Separatorのグラデーション](http://terai.xrea.jp/Swing/Gradient.html)
+- [TitledBorderのタイトル位置](http://ateraimemo.com/Swing/TitledBorder.html)
+- [Separatorのグラデーション](http://ateraimemo.com/Swing/Gradient.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -43,7 +43,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JSliderのノブをドラッグ中にToolTipで値を表示](http://terai.xrea.jp/Swing/SliderToolTips.html)
+- [JSliderのノブをドラッグ中にToolTipで値を表示](http://ateraimemo.com/Swing/SliderToolTips.html)
 
 <!-- dummy comment line for breaking list -->
 

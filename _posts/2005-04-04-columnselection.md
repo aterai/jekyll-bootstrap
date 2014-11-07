@@ -20,13 +20,15 @@ table.setCellSelectionEnabled(true);
 final JTableHeader header = table.getTableHeader();
 header.addMouseListener(new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
-    if(!check.isSelected()) return;
-    if(table.isEditing()) {
+    if (!check.isSelected()) {
+      return;
+    }
+    if (table.isEditing()) {
       table.getCellEditor().stopCellEditing();
     }
     int col = header.columnAtPoint(e.getPoint());
     table.changeSelection(0, col, false, false);
-    table.changeSelection(table.getRowCount()-1, col, false, true);
+    table.changeSelection(table.getRowCount() - 1, col, false, true);
   }
 });
 </code></pre>
@@ -37,12 +39,12 @@ header.addMouseListener(new MouseAdapter() {
 `Column`全体の選択は、`changeSelection`メソッドを二回使用することで行っています。
 
 ## 参考リンク
-- [JTableに行ヘッダを追加](http://terai.xrea.jp/Swing/TableRowHeader.html)
+- [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)
     - 行ヘッダをクリックして行の全選択
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: `2008-03-11`に[JTableのセルにあるフォーカスを解除](http://terai.xrea.jp/Swing/AnchorSelection.html)から移動でこのページを作成。 -- *aterai* 2013-02-20 (水) 15:21:27
+- メモ: `2008-03-11`に[JTableのセルにあるフォーカスを解除](http://ateraimemo.com/Swing/AnchorSelection.html)から移動でこのページを作成。 -- *aterai* 2013-02-20 (水) 15:21:27
 
 <!-- dummy comment line for breaking list -->

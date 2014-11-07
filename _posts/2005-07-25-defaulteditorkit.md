@@ -23,16 +23,16 @@ class TextFieldPopupMenu extends JPopupMenu {
   private final Action deleteAction = new AbstractAction("delete") {
     @Override public void actionPerformed(ActionEvent e) {
       Component c = getInvoker();
-      if(c instanceof JTextComponent) {
-        ((JTextComponent)c).replaceSelection(null);
+      if (c instanceof JTextComponent) {
+        ((JTextComponent) c).replaceSelection(null);
       }
     }
   };
   private final Action cut2Action = new AbstractAction("cut2") {
     @Override public void actionPerformed(ActionEvent e) {
       Component c = getInvoker();
-      if(c instanceof JTextComponent) {
-        ((JTextComponent)c).cut();
+      if (c instanceof JTextComponent) {
+        ((JTextComponent) c).cut();
       }
     }
   };
@@ -47,10 +47,10 @@ class TextFieldPopupMenu extends JPopupMenu {
   }
   @Override public void show(Component c, int x, int y) {
     boolean flg;
-    if(c instanceof JTextComponent) {
-      JTextComponent field = (JTextComponent)c;
-      flg = field.getSelectedText()!=null;
-    }else{
+    if (c instanceof JTextComponent) {
+      JTextComponent field = (JTextComponent) c;
+      flg = field.getSelectedText() != null;
+    } else {
       flg = false;
     }
     cutAction.setEnabled(flg);
@@ -70,14 +70,14 @@ class TextFieldPopupMenu extends JPopupMenu {
 - - - -
 サンプルを`Java Web Start`で起動した場合は、システム全体の共有クリップボードにはアクセス不可能で、アプリケーション内部のみでのコピー、貼り付けとなるようです。
 
-- [ClipboardServiceでシステム全体の共有クリップボードにアクセスする](http://terai.xrea.jp/Swing/ClipboardService.html)
+- [ClipboardServiceでシステム全体の共有クリップボードにアクセスする](http://ateraimemo.com/Swing/ClipboardService.html)
 
 <!-- dummy comment line for breaking list -->
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKnUb6nqI/AAAAAAAAAWQ/L3ylLdA-GIw/s800/DefaultEditorKit1.png)
 
 ## 参考リンク
-- [JTextFieldでコピー、貼り付けなどを禁止](http://terai.xrea.jp/Swing/ActionMap.html)
+- [JTextFieldでコピー、貼り付けなどを禁止](http://ateraimemo.com/Swing/ActionMap.html)
 
 <!-- dummy comment line for breaking list -->
 

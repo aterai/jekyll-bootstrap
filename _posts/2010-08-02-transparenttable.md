@@ -91,9 +91,9 @@ scroll.getViewport().setBackground(alphaZero);
 
 ## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
-- [JTextFieldの背景色を半透明にする](http://terai.xrea.jp/Swing/TranslucentTextField.html)
+- [JTextFieldの背景色を半透明にする](http://ateraimemo.com/Swing/TranslucentTextField.html)
 - [Unleash Your Creativity with Swing and the Java 2D API!](http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
-- [JTableのヘッダを透明化](http://terai.xrea.jp/Swing/TransparentTableHeader.html)
+- [JTableのヘッダを透明化](http://ateraimemo.com/Swing/TransparentTableHeader.html)
 
 <!-- dummy comment line for breaking list -->
 

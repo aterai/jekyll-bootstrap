@@ -58,7 +58,7 @@ comments: true
 
 ## 参考リンク
 - [Swing - Highlight JTable rows on rollover](https://forums.oracle.com/thread/1389010)
-- [JTableのセルのハイライト](http://terai.xrea.jp/Swing/CellHighlight.html)
+- [JTableのセルのハイライト](http://ateraimemo.com/Swing/CellHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

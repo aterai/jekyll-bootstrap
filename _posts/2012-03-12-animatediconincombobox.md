@@ -46,7 +46,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルにAnimated GIFを表示する](http://terai.xrea.jp/Swing/AnimatedIconInTableCell.html)
+- [JTableのセルにAnimated GIFを表示する](http://ateraimemo.com/Swing/AnimatedIconInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

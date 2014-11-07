@@ -15,15 +15,20 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLM6S99OI/AAAAAAAAAXM/9r2e_2JRA5g/s800/DisableScrolling.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JCheckBox b = new JCheckBox("スクロールを禁止する");
-b.addItemListener(new ItemListener() {
+<pre class="prettyprint"><code>JCheckBox check = new JCheckBox("Disable Scrolling");
+check.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent ie) {
-    JCheckBox box = (JCheckBox)ie.getItemSelectable();
-    boolean flag = !box.isSelected();
-    JScrollBar bar = scrollPane.getVerticalScrollBar();
-    bar.setEnabled(flag);
-    scrollPane.setWheelScrollingEnabled(flag);
-    table.setEnabled(flag);
+    table.clearSelection();
+    JScrollBar bar = scroll.getVerticalScrollBar();
+    if (ie.getStateChange() == ItemEvent.SELECTED) {
+      bar.setEnabled(false);
+      scroll.setWheelScrollingEnabled(false);
+      table.setEnabled(false);
+    } else if (ie.getStateChange() == ItemEvent.DESELECTED) {
+      bar.setEnabled(true);
+      scroll.setWheelScrollingEnabled(true);
+      table.setEnabled(true);
+    }
   }
 });
 </code></pre>
@@ -47,13 +52,13 @@ b.addItemListener(new ItemListener() {
 - - - -
 `JDK 1.7.0`で追加された`JLayer`を使用して、以下のように入力を禁止する方法もあります。
 
-- [JLayerで子コンポーネントへの入力を制限する](http://terai.xrea.jp/Swing/PopupMenuBlockLayer.html)
+- [JLayerで子コンポーネントへの入力を制限する](http://ateraimemo.com/Swing/PopupMenuBlockLayer.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLayerで子コンポーネントへの入力を制限する](http://terai.xrea.jp/Swing/PopupMenuBlockLayer.html)
-- [JLayerで指定したコンポーネントへの入力を禁止](http://terai.xrea.jp/Swing/DisableInputLayer.html)
+- [JLayerで子コンポーネントへの入力を制限する](http://ateraimemo.com/Swing/PopupMenuBlockLayer.html)
+- [JLayerで指定したコンポーネントへの入力を禁止](http://ateraimemo.com/Swing/DisableInputLayer.html)
 
 <!-- dummy comment line for breaking list -->
 

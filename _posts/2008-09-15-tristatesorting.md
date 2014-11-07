@@ -39,8 +39,8 @@ table.setRowSorter(sorter);
 上記のサンプルでは、`TableRowSorter#toggleSortOrder(int)`をオーバーライドして、クリックした列がソートの第一キーで、ソート順序が`DESCENDING`の場合、ソートキーをクリアしています。このため、同じヘッダカラムを連続して三回クリックすると、昇順(`ASCENDING`)、降順(`DESCENDING`)、初期状態(`UNSORTED`)と遷移して元に戻るようになっています。
 
 ## 参考リンク
-- [TableRowSorterでJTableのソート](http://terai.xrea.jp/Swing/TableRowSorter.html)
-- [TableRowSorterのSortKeysをクリアする](http://terai.xrea.jp/Swing/ClearSortingState.html)
+- [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
+- [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
 

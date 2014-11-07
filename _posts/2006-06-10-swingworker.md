@@ -23,7 +23,7 @@ comments: true
     System.out.println("doInBackground() is EDT?: " + EventQueue.isDispatchThread());
     try {
       Thread.sleep(1000);
-    } catch(InterruptedException ie) {
+    } catch (InterruptedException ie) {
       return "Interrupted";
     }
     int current = 0;
@@ -31,10 +31,10 @@ comments: true
     publish("Length Of Task: " + lengthOfTask);
     publish("\n------------------------------\n");
 
-    while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
+    while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
       try {
         Thread.sleep(50); //doSomething(file = list(current));
-      } catch(InterruptedException ie) {
+      } catch (InterruptedException ie) {
         return "Interrupted";
       }
       setProgress(100 * current / lengthOfTask);
@@ -64,18 +64,18 @@ class RunAction extends AbstractAction {
     worker = new Task() {
       @Override protected void process(List&lt;String&gt; chunks) {
         System.out.println("process() is EDT?: " + EventQueue.isDispatchThread());
-        if(!isDisplayable()) {
+        if (!isDisplayable()) {
           System.out.println("process: DISPOSE_ON_CLOSE");
           cancel(true);
           return;
         }
-        for(String message : chunks) {
+        for (String message : chunks) {
           appendText(message);
         }
       }
       @Override public void done() {
         System.out.println("done() is EDT?: " + EventQueue.isDispatchThread());
-        if(!isDisplayable()) {
+        if (!isDisplayable()) {
           System.out.println("done: DISPOSE_ON_CLOSE");
           cancel(true);
           return;
@@ -86,12 +86,12 @@ class RunAction extends AbstractAction {
         statusPanel.remove(bar);
         statusPanel.revalidate();
         String text = null;
-        if(isCancelled()) {
+        if (isCancelled()) {
           text = "Cancelled";
         } else {
           try {
             text = get();
-          } catch(InterruptedException | ExecutionException ex) {
+          } catch (InterruptedException | ExecutionException ex) {
             ex.printStackTrace();
             text = "Exception";
           }
@@ -104,12 +104,12 @@ class RunAction extends AbstractAction {
   }
 }
 
-class CancelAction extends AbstractAction{
+class CancelAction extends AbstractAction {
   public CancelAction() {
     super("cancel");
   }
   @Override public void actionPerformed(ActionEvent evt) {
-    if(worker!=null &amp;&amp; !worker.isDone()) {
+    if (worker != null &amp;&amp; !worker.isDone()) {
       worker.cancel(true);
     }
     worker = null;
@@ -151,16 +151,16 @@ class CancelAction extends AbstractAction{
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
 - [Improve Application Performance With SwingWorker in Java SE 6](http://www.oracle.com/technetwork/articles/javase/swingworker-137249.html)
 - [Worker Threads and SwingWorker](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html)
-- [JTableのセルにJProgressBarを表示](http://terai.xrea.jp/Swing/TableCellProgressBar.html)
-- [SwingWorkerで複数のJProgressBarを使用する](http://terai.xrea.jp/Swing/TwoProgressBars.html)
-- [SwingWorkerの一時停止と再開](http://terai.xrea.jp/Swing/PauseResumeSwingWorker.html)
+- [JTableのセルにJProgressBarを表示](http://ateraimemo.com/Swing/TableCellProgressBar.html)
+- [SwingWorkerで複数のJProgressBarを使用する](http://ateraimemo.com/Swing/TwoProgressBars.html)
+- [SwingWorkerの一時停止と再開](http://ateraimemo.com/Swing/PauseResumeSwingWorker.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ -- *aterai* 2007-02-22 (木) 17:57:58
-    - [Fileの再帰的検索](http://terai.xrea.jp/Swing/RecursiveFileSearch.html)は、`JDK 1.6`の`javax.swing.SwingWorker`を使用するように変更しました。
-    - [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)は ~~https://swingworker.dev.java.net/ にある~~ `JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用するように変更しました。 -- *aterai* 2009-12-17 (木) 01:47:38
+- ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://ateraimemo.com/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ -- *aterai* 2007-02-22 (木) 17:57:58
+    - [Fileの再帰的検索](http://ateraimemo.com/Swing/RecursiveFileSearch.html)は、`JDK 1.6`の`javax.swing.SwingWorker`を使用するように変更しました。
+    - [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)は ~~https://swingworker.dev.java.net/ にある~~ `JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用するように変更しました。 -- *aterai* 2009-12-17 (木) 01:47:38
     - `java.net`が新しくなって結構時間が経ったけど、[http://java.net/projects/swingworker](http://java.net/projects/swingworker) から`jar`がダウンロードできない…。[maven2 のリポジトリ](http://download.java.net/maven/2/org/jdesktop/swing-worker/1.1/)から取得するしかない？  -- *aterai* 2011-12-02 (金) 17:23:45
     - 上記の`jar`は、`1.1`なので、`1.2`が必要なら、 ソースを取得して、`ant bundles` -- *aterai* 2011-12-02 (金) 17:38:31
 

@@ -49,7 +49,7 @@ comments: true
 </code></pre>
 
 ## 解説
-ほぼ、[JTextAreaに行カーソルを表示](http://terai.xrea.jp/Swing/LineCursor.html)とやっていることは同じです。
+ほぼ、[JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)とやっていることは同じです。
 
 違うのは、以下の点になります。
 
@@ -94,7 +94,7 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPTaywxYI/AAAAAAAAAdw/RIlfRHiC-JY/s800/LineHighlighter1.png)
 
 ## 参考リンク
-- [JTextAreaに行カーソルを表示](http://terai.xrea.jp/Swing/LineCursor.html)
+- [JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)
 - [Swing - Stretching background colour across whole JTextPane for one line of text](https://forums.oracle.com/thread/1364121)
 
 <!-- dummy comment line for breaking list -->

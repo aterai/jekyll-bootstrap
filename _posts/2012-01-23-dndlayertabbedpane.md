@@ -19,34 +19,48 @@ comments: true
   private static final int LINEWIDTH = 3;
   private final Rectangle lineRect = new Rectangle();
   @Override public void paint(Graphics g, JComponent c) {
-    super.paint (g, c);
-    JLayer layer = (JLayer)c;
-    DnDTabbedPane tabbedPane = (DnDTabbedPane)layer.getView();
-    DnDTabbedPane.DropLocation loc = tabbedPane.getDropLocation();
-    if(loc != null &amp;&amp; loc.isDropable() &amp;&amp; loc.getIndex()&gt;=0) {
-      int index = loc.getIndex();
-      boolean isZero = index==0;
-      Rectangle r = tabbedPane.getBoundsAt(isZero?0:index-1);
-      if(tabbedPane.getTabPlacement()==JTabbedPane.TOP ||
-         tabbedPane.getTabPlacement()==JTabbedPane.BOTTOM) {
-        lineRect.setRect(
-            r.x-LINEWIDTH/2+r.width*(isZero?0:1), r.y,LINEWIDTH,r.height);
-      }else{
-        lineRect.setRect(
-            r.x,r.y-LINEWIDTH/2+r.height*(isZero?0:1), r.width,LINEWIDTH);
+    super.paint(g, c);
+    if (c instanceof JLayer) {
+      JLayer layer = (JLayer) c;
+      DnDTabbedPane tabbedPane = (DnDTabbedPane) layer.getView();
+      DnDTabbedPane.DropLocation loc = tabbedPane.getDropLocation();
+      if (loc != null &amp;&amp; loc.isDropable() &amp;&amp; loc.getIndex() &gt;= 0) {
+        Graphics2D g2 = (Graphics2D) g.create();
+        g2.setComposite(
+            AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .5f));
+        g2.setColor(Color.RED);
+        initLineRect(tabbedPane, loc);
+        g2.fill(lineRect);
+        g2.dispose();
       }
-      Graphics2D g2 = (Graphics2D)g.create();
-      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f));
-      g2.setColor(Color.RED);
-      g2.fill(lineRect);
-      g2.dispose();
     }
+  }
+  private void initLineRect(
+      DnDTabbedPane tabbedPane, DnDTabbedPane.DropLocation loc) {
+    int index = loc.getIndex();
+    boolean isZero = index == 0;
+    Rectangle r = tabbedPane.getBoundsAt(isZero ? 0 : index - 1);
+    Rectangle rect = new Rectangle();
+    int a = isZero ? 0 : 1;
+    if (tabbedPane.getTabPlacement() == JTabbedPane.TOP ||
+        tabbedPane.getTabPlacement() == JTabbedPane.BOTTOM) {
+      rect.x = r.x - LINEWIDTH / 2 + r.width * a;
+      rect.y = r.y;
+      rect.width  = LINEWIDTH;
+      rect.height = r.height;
+    } else {
+      rect.x = r.x;
+      rect.y = r.y - LINEWIDTH / 2 + r.height * a;
+      rect.width  = r.width;
+      rect.height = LINEWIDTH;
+    }
+    lineRect.setRect(rect);
   }
 }
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)や、[JTabbedPane間でタブのドラッグ＆ドロップ移動](http://terai.xrea.jp/Swing/DnDExportTabbedPane.html)のように`GlassPane`を使用する代わりに、`JDK 1.7.0`で導入された`JLayer`を使用して、タブの挿入先を描画しています。`JLayer`を使用することで、別ウィンドウにある`JTabbedPane`へのタブ移動などの描画が簡単にできるようになっています。
+上記のサンプルでは、[JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)や、[JTabbedPane間でタブのドラッグ＆ドロップ移動](http://ateraimemo.com/Swing/DnDExportTabbedPane.html)のように`GlassPane`を使用する代わりに、`JDK 1.7.0`で導入された`JLayer`を使用して、タブの挿入先を描画しています。`JLayer`を使用することで、別ウィンドウにある`JTabbedPane`へのタブ移動などの描画が簡単にできるようになっています。
 
 - - - -
 メニューバーから、ドラッグ中の半透明タブイメージの描画方法を切り替えてテストすることができます。
@@ -88,8 +102,8 @@ public TabTransferHandler() {
 </code></pre>
 
 ## 参考リンク
-- [JTabbedPaneのタブをドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTabbedPane.html)
-- [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://terai.xrea.jp/Swing/DnDExportTabbedPane.html)
+- [JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)
+- [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://ateraimemo.com/Swing/DnDExportTabbedPane.html)
 - [Free the pixel: GHOST drag and drop, over multiple windows](http://free-the-pixel.blogspot.com/2010/04/ghost-drag-and-drop-over-multiple.html)
 
 <!-- dummy comment line for breaking list -->

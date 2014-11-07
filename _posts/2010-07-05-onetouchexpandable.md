@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: OneTouchExpandable
 title: JSplitPaneのディバイダを展開、収納する
-tags: [JSplitPane, ActionMap, ServiceManager, BasicService]
+tags: [JSplitPane, Divider, ActionMap, ServiceManager, BasicService]
 author: aterai
 pubdate: 2010-07-05T01:22:49+09:00
 description: JSplitPaneのディバイダをマウスのクリックなどで一気に展開、収納できるように設定します。
@@ -26,8 +26,8 @@ splitPane.setOneTouchExpandable(true);
 `Java 1.5`以降で`JSplitPane#setDividerLocation(0);`などとしてディバイダを収納状態にした場合、`JSplitPane`自体をリサイズすると収納されているコンポーネントの最小サイズ(`setMinimumSize`)まで展開されてしまいます。
 
 - 収納状態を維持したい場合、リフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行したり、`Divider`に表示されている`JButton`を取得実行する方法があります。
-    - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5006095)
-    - [JSplitPaneの収納状態を維持する](http://terai.xrea.jp/Swing/KeepHiddenDivider.html)
+    - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
+    - [JSplitPaneの収納状態を維持する](http://ateraimemo.com/Swing/KeepHiddenDivider.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -42,8 +42,8 @@ splitPane.setOneTouchExpandable(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5006095)
-- [JSplitPaneの収納状態を維持する](http://terai.xrea.jp/Swing/KeepHiddenDivider.html)
+- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
+- [JSplitPaneの収納状態を維持する](http://ateraimemo.com/Swing/KeepHiddenDivider.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -53,7 +53,7 @@ splitPane.setOneTouchExpandable(true);
 - ＞`eclipse`で新規プロジェクトを作成し、ソースコードだけ貼り付けるのが簡単だと思います。
 
 <!-- dummy comment line for breaking list -->
-その通りしていたのですが。。。結果的には`jnlp.jar`ファイルを`jdk1.6`の中から探して`eclipse`の「外部`jar`を追加」で動作いたしました。お騒がせしました。それと、この`javax.jnlpはBasicService`関連のクラスファイルが入ってるようなので削除できないみたいです。-- [ニートン](http://terai.xrea.jp/ニートン.html) 2012-02-22 (水) 18:41:04
+その通りしていたのですが。。。結果的には`jnlp.jar`ファイルを`jdk1.6`の中から探して`eclipse`の「外部`jar`を追加」で動作いたしました。お騒がせしました。それと、この`javax.jnlpはBasicService`関連のクラスファイルが入ってるようなので削除できないみたいです。-- [ニートン](http://ateraimemo.com/ニートン.html) 2012-02-22 (水) 18:41:04
     - すいません。「このサンプルでは、`javax.jnlp.*`は使用しないので...」はデタラメで、`BasicService`が取得できるかどうかで、`Web Start`で起動したのかどうかを判断する部分を見落としていました。`Web Start`で起動した場合は、`getComponents()`でボタンを検索する方法で、ローカルから起動した場合は、リフレクションで`private`な`setKeepHidden`メソッドを取得して実行する方法を使っています。大変失礼しましたm(__)m。 -- *aterai* 2012-02-22 (水) 18:59:52
 
 <!-- dummy comment line for breaking list -->

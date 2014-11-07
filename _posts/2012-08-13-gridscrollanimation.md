@@ -110,7 +110,7 @@ class ScrollAction extends AbstractAction {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)
+- [JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 

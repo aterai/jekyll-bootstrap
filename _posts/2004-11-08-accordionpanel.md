@@ -96,9 +96,9 @@ comments: true
 [L2FProd.com - Common Components](http://common.l2fprod.com/) にある`JTaskPane`で、アニメーション付きのパネルの展開や折り畳みが可能です。ソースも公開されているので、`com.l2fprod.common.swing.JCollapsiblePane`あたりを参考にしてみてください。
 
 ## 参考リンク
-- [JPanelの展開と折り畳み](http://terai.xrea.jp/Swing/ExpandablePanel.html)
-- [BoxLayoutでリスト状に並べる](http://terai.xrea.jp/Swing/ComponentList.html)
-- [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
+- [JPanelの展開と折り畳み](http://ateraimemo.com/Swing/ExpandablePanel.html)
+- [BoxLayoutでリスト状に並べる](http://ateraimemo.com/Swing/ComponentList.html)
+- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
     - アニメーションさせる場合のサンプル
 
 <!-- dummy comment line for breaking list -->

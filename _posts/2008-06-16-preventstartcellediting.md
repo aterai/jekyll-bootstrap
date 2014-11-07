@@ -50,8 +50,8 @@ ce.setClickCountToStart(Integer.MAX_VALUE);
 ## 参考リンク
 - [片っ端から忘れていけばいいじゃない。  JTableで、セル上でキータイプされただけでは編集を開始しないようにする。JTable.autoStartsEdit](http://0xc000013a.blog96.fc2.com/blog-entry-19.html)
 - [TIPs JTable - Space Of Mind - Confluence](http://www.stateofmind.fr/confluence/display/java/TIPs+JTable)
-- [JTableのセルを編集不可にする](http://terai.xrea.jp/Swing/CellEditor.html)
-- [JTableでキー入力によるセル編集自動開始を一部禁止する](http://terai.xrea.jp/Swing/FunctionKeyStartEditing.html)
+- [JTableのセルを編集不可にする](http://ateraimemo.com/Swing/CellEditor.html)
+- [JTableでキー入力によるセル編集自動開始を一部禁止する](http://ateraimemo.com/Swing/FunctionKeyStartEditing.html)
 
 <!-- dummy comment line for breaking list -->
 

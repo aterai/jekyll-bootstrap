@@ -48,15 +48,15 @@ col.setMaxWidth(0);
 </code></pre>
 
 - - - -
-各カラムの幅を固定するのではなく、`JTable`を`2`つ使用して(`model`は`1`つ)あるカラムを常に表示(スクロールで隠れないよう固定)しておく場合は、[Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)や、[JTableの列固定とソート](http://terai.xrea.jp/Swing/FixedColumnTableSorting.html)などを参照してください。
+各カラムの幅を固定するのではなく、`JTable`を`2`つ使用して(`model`は`1`つ)あるカラムを常に表示(スクロールで隠れないよう固定)しておく場合は、[Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)や、[JTableの列固定とソート](http://ateraimemo.com/Swing/FixedColumnTableSorting.html)などを参照してください。
 
 - - - -
-カラムの位置を固定してドラッグなどでの移動を禁止したい場合は、[JTableのヘッダ入れ替えを禁止](http://terai.xrea.jp/Swing/Reordering.html)を参照してください。
+カラムの位置を固定してドラッグなどでの移動を禁止したい場合は、[JTableのヘッダ入れ替えを禁止](http://ateraimemo.com/Swing/Reordering.html)を参照してください。
 
 ## 参考リンク
 - [FixedColumnExample](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples1.html)
 - [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
-- [JTableの列固定とソート](http://terai.xrea.jp/Swing/FixedColumnTableSorting.html)
+- [JTableの列固定とソート](http://ateraimemo.com/Swing/FixedColumnTableSorting.html)
 
 <!-- dummy comment line for breaking list -->
 

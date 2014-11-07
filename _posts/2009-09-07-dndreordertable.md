@@ -23,17 +23,17 @@ table.setDragEnabled(true);
 </code></pre>
 
 ## 解説
-上記のサンプルの`TransferHandler`(`JDK 6`で導入された`TransferHandler#canImport`メソッドなどを使用)は、[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)のものとほぼ同じです。
+上記のサンプルの`TransferHandler`(`JDK 6`で導入された`TransferHandler#canImport`メソッドなどを使用)は、[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)のものとほぼ同じです。
 
 - - - -
-[JTableの行をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTable.html)とは異なり、複数行を選択して`Drag&Drop`による移動が可能になっています。
+[JTableの行をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTable.html)とは異なり、複数行を選択して`Drag&Drop`による移動が可能になっています。
 
 ## 参考リンク
 - [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
     - [ListTransferHandler.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)
-- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://terai.xrea.jp/Swing/DnDReorderList.html)
-- [JTableの行をドラッグ＆ドロップ](http://terai.xrea.jp/Swing/DnDTable.html)
-- [JTableの行を別のJTableにドラッグして移動](http://terai.xrea.jp/Swing/DragRowsAnotherTable.html)
+- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)
+- [JTableの行をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTable.html)
+- [JTableの行を別のJTableにドラッグして移動](http://ateraimemo.com/Swing/DragRowsAnotherTable.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -193,7 +193,7 @@ class SplashScreenIcon implements Icon {
 </code></pre>
 
 ## 参考リンク
-- [JWindowを使ったSplash Screenの表示](http://terai.xrea.jp/Swing/SplashScreen.html)
+- [JWindowを使ったSplash Screenの表示](http://ateraimemo.com/Swing/SplashScreen.html)
 
 <!-- dummy comment line for breaking list -->
 

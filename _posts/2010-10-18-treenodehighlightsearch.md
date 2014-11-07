@@ -52,7 +52,7 @@ comments: true
 - - - -
 以下のように、`DefaultTreeCellRenderer#getBackgroundNonSelectionColor()`をオーバーライドする方法を使用すれば、デフォルトの選択領域(ノードアイコンは含まず、ノードテキストのみ)で選択色を変更することができます。
 
-- [JTreeの選択背景色を変更](http://terai.xrea.jp/Swing/TreeBackgroundSelectionColor.html)
+- [JTreeの選択背景色を変更](http://ateraimemo.com/Swing/TreeBackgroundSelectionColor.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -89,11 +89,11 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTreeのノードを検索する](http://terai.xrea.jp/Swing/SearchBox.html)
-- [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
-- [JTreeのノードをハイライト](http://terai.xrea.jp/Swing/RollOverTree.html)
-- [JTreeの選択背景色を変更](http://terai.xrea.jp/Swing/TreeBackgroundSelectionColor.html)
-- [JTreeのノード中の文字列をハイライトする](http://terai.xrea.jp/Swing/HighlightWordInNode.html)
+- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+- [JTreeのノードを展開・折り畳み](http://ateraimemo.com/Swing/ExpandAllNodes.html)
+- [JTreeのノードをハイライト](http://ateraimemo.com/Swing/RollOverTree.html)
+- [JTreeの選択背景色を変更](http://ateraimemo.com/Swing/TreeBackgroundSelectionColor.html)
+- [JTreeのノード中の文字列をハイライトする](http://ateraimemo.com/Swing/HighlightWordInNode.html)
     - ノードではなく一致する文字列だけをハイライトして強調表示する場合のサンプル
 
 <!-- dummy comment line for breaking list -->

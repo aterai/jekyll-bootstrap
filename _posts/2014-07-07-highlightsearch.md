@@ -24,8 +24,7 @@ comments: true
     String cw = checkWord.isSelected() ? "\\b" : "";
     String pattern = String.format("%s%s%s", cw, text, cw);
     int flags = checkCase.isSelected()
-      ? 0
-      : Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE;
+      ? 0 : Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE;
     return Pattern.compile(pattern, flags);
   } catch (PatternSyntaxException ex) {
     field.setBackground(WARNING_COLOR);

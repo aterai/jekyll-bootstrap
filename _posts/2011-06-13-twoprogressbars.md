@@ -101,8 +101,8 @@ class SubProgressListener implements PropertyChangeListener {
 </code></pre>
 
 ## 参考リンク
-- [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
-- [SwingWorkerの一時停止と再開](http://terai.xrea.jp/Swing/PauseResumeSwingWorker.html)
+- [SwingWorkerを使った処理の中断と進捗状況表示](http://ateraimemo.com/Swing/SwingWorker.html)
+- [SwingWorkerの一時停止と再開](http://ateraimemo.com/Swing/PauseResumeSwingWorker.html)
 
 <!-- dummy comment line for breaking list -->
 

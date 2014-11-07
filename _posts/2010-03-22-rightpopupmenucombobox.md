@@ -57,6 +57,6 @@ comments: true
 </code></pre>
 
 ## コメント
-- [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225)のせいで？、正常に動作しなくなっていたので修正。 -- *aterai* 2012-04-24 (火) 16:54:17
+- [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4743225)のせいで？、正常に動作しなくなっていたので修正。 -- *aterai* 2012-04-24 (火) 16:54:17
 
 <!-- dummy comment line for breaking list -->

@@ -20,10 +20,10 @@ tree = new JTree() {
   @Override public String getToolTipText(MouseEvent e) {
     Object o = null;
     TreePath path = getPathForLocation(e.getX(), e.getY());
-    if(path!=null) {
+    if (path != null) {
       o = path.getLastPathComponent();
     }
-    return (o==null)?null:o.toString();
+    return (o == null) ? null : o.toString();
   }
 };
 //tree.setCellRenderer(new MyTreeCellRenderer(tree.getCellRenderer()));
@@ -41,9 +41,9 @@ ToolTipManager.sharedInstance().registerComponent(tree);
   @Override public Component getTreeCellRendererComponent(
         JTree tree, Object value, boolean isSelected,
         boolean expanded, boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent)renderer.getTreeCellRendererComponent(
+    JComponent c = (JComponent) renderer.getTreeCellRendererComponent(
       tree, value, isSelected, expanded, leaf, row, hasFocus);
-    c.setToolTipText((value==null)?null:value.toString());
+    c.setToolTipText((value == null) ? null : value.toString());
     return c;
   }
 }

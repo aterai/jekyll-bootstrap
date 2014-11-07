@@ -15,17 +15,20 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOF06rk7I/AAAAAAAAAb0/31ZBya_beYk/s800/HyperlinkInTableCell.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class URLRenderer extends DefaultTableCellRenderer implements MouseListener, MouseMotionListener {
+<pre class="prettyprint"><code>class URLRenderer extends DefaultTableCellRenderer
+                  implements MouseListener, MouseMotionListener {
   private int row = -1;
   private int col = -1;
-  @Override public Component getTableCellRendererComponent(JTable table, Object value,
-                         boolean isSelected, boolean hasFocus, int row, int column) {
-    super.getTableCellRendererComponent(table, value, isSelected, false, row, column);
-    if(!table.isEditing() &amp;&amp; this.row==row &amp;&amp; this.col==column) {
-      setText("&lt;html&gt;&lt;u&gt;&lt;font color='blue'&gt;"+value.toString());
-    }else if(hasFocus) {
-      setText("&lt;html&gt;&lt;font color='blue'&gt;"+value.toString());
-    }else{
+  @Override public Component getTableCellRendererComponent(
+      JTable table, Object value,
+      boolean isSelected, boolean hasFocus, int row, int column) {
+    super.getTableCellRendererComponent(
+        table, value, isSelected, false, row, column);
+    if (!table.isEditing() &amp;&amp; this.row == row &amp;&amp; this.col == column) {
+      setText("&lt;html&gt;&lt;u&gt;&lt;font color='blue'&gt;" + value.toString());
+    } else if (hasFocus) {
+      setText("&lt;html&gt;&lt;font color='blue'&gt;" + value.toString());
+    } else {
       setText(value.toString());
     }
     return this;
@@ -35,7 +38,7 @@ comments: true
     Point pt = e.getPoint();
     row = table.rowAtPoint(pt);
     col = table.columnAtPoint(pt);
-    if(row&lt;0 || col&lt;0) {
+    if (row &lt; 0 || col &lt; 0) {
       row = -1;
       col = -1;
     }
@@ -48,17 +51,17 @@ comments: true
     table.repaint();
   }
   @Override public void mouseClicked(MouseEvent e) {
-    JTable table = (JTable)e.getSource();
+    JTable table = (JTable) e.getSource();
     Point pt = e.getPoint();
     int crow = table.rowAtPoint(pt);
     int ccol = table.columnAtPoint(pt);
     //if(table.convertColumnIndexToModel(ccol) == 2)
-    if(table.getColumnClass(ccol).equals(URL.class)) {
-      URL url = (URL)table.getValueAt(crow, ccol);
+    if (table.getColumnClass(ccol).equals(URL.class)) {
+      URL url = (URL) table.getValueAt(crow, ccol);
       System.out.println(url);
-      try{
+      try {
         Desktop.getDesktop().browse(url.toURI());
-      }catch(Exception ex) {
+      } catch (Exception ex) {
         ex.printStackTrace();
       }
     }
@@ -83,8 +86,8 @@ table.addMouseMotionListener(renderer);
 ~~上記のサンプルでは、クリックしてもリンク先には接続せず、`System.out.println(table.getValueAt(crow, ccol));`で文字列を表示しているだけです。~~ `Java 6`以上を対象にすることにしたので、`Desktop.getDesktop().browse()`を使用するようにしました。
 
 ## 参考リンク
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://terai.xrea.jp/Swing/HyperlinkLabel.html)
-- [Htmlで修飾した文字列のクリップ](http://terai.xrea.jp/Swing/ClippedHtmlLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
+- [Htmlで修飾した文字列のクリップ](http://ateraimemo.com/Swing/ClippedHtmlLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

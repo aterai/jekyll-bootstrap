@@ -35,7 +35,7 @@ comments: true
 <pre class="prettyprint"><code>JCheckBox check = new JCheckBox("swing.boldMetal");
 check.addActionListener(new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
-    JCheckBox c = (JCheckBox)e.getSource();
+    JCheckBox c = (JCheckBox) e.getSource();
     UIManager.put("swing.boldMetal", c.isSelected());
     // re-install the Metal Look and Feel
     try{

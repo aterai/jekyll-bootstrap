@@ -45,7 +45,7 @@ progressBar1.putClientProperty("Nimbus.Overrides", d);
 上記のサンプルでは、`NimbusLookAndFeel`で`JProgressBar`の不確定状態アニメーションを変更するために、セルの描画を行う`AbstractRegionPainter#doPaint(...)`をオーバーライドし、これを`UIDefaults`に設定しています。
 
 ## 参考リンク
-- [JProgressBarの不確定状態でのアニメーションパターンを変更する](http://terai.xrea.jp/Swing/StripedProgressBar.html)
+- [JProgressBarの不確定状態でのアニメーションパターンを変更する](http://ateraimemo.com/Swing/StripedProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 

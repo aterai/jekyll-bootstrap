@@ -77,7 +77,7 @@ comments: true
 上記のサンプルでは、`JLabel`を二つ並べた`JPanel`をレンダラーにすることで、`Item`に設定した文字列を左右に表示しています。このため文字列が長い場合、`JLabel`がこれを自動的にクリップしてくれます。
 
 ## 参考リンク
-- [JComboBoxのItemを左右に配置](http://terai.xrea.jp/Swing/LRComboBox.html)
+- [JComboBoxのItemを左右に配置](http://ateraimemo.com/Swing/LRComboBox.html)
     - こちらは`html`の`table`タグを使用して同様の表示(クリップはしない)を行っています。
 
 <!-- dummy comment line for breaking list -->

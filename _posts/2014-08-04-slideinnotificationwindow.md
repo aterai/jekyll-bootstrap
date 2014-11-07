@@ -103,13 +103,13 @@ comments: true
 
 - 注:
     - マルチスクリーン環境では、メインの`JFrame`が存在する画面(`frame.getGraphicsConfiguration()`)に警告(`new JWindow(GraphicsConfiguration)`)がスライドインすることを想定しているが、テストしていない
-    - `JOptionPane.WARNING_MESSAGE`以外の`JOptionPane`はテストしていない
+    - `JOptionPane.WARNING_MESSAGE`以外の`JOptionPane`は未検証
     - スクリーンショットでは親フレーム中央に`JOptionPane`が表示されているが、これは手動で移動している
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextAreaをキャプションとして画像上にスライドイン](http://terai.xrea.jp/Swing/EaseInOut.html)
+- [JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 

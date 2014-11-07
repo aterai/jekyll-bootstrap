@@ -42,11 +42,11 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JScrollBarに検索結果をハイライト表示](http://terai.xrea.jp/Swing/ScrollBarSearchHighlighter.html)
+- [JScrollBarに検索結果をハイライト表示](http://ateraimemo.com/Swing/ScrollBarSearchHighlighter.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ハイライトのサンプルとして`JTable`を使用しているけど、実際に行数が多くなるなら[JTableの検索結果をRowFilterとHighlighterで強調表示する](http://terai.xrea.jp/Swing/TableHighlightRegexFilter.html)のようにフィルタを使用するほうが良さそう。 -- *aterai* 2014-02-17 (月) 02:41:10
+- ハイライトのサンプルとして`JTable`を使用しているけど、実際に行数が多くなるなら[JTableの検索結果をRowFilterとHighlighterで強調表示する](http://ateraimemo.com/Swing/TableHighlightRegexFilter.html)のようにフィルタを使用するほうが良さそう。 -- *aterai* 2014-02-17 (月) 02:41:10
 
 <!-- dummy comment line for breaking list -->

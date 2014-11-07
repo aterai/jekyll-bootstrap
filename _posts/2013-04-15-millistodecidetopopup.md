@@ -37,7 +37,7 @@ monitor.setMillisToPopup((int)millisToPopup.getValue());
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [ProgressMonitorで処理の進捗を表示](http://terai.xrea.jp/Swing/ProgressMonitor.html)
+- [ProgressMonitorで処理の進捗を表示](http://ateraimemo.com/Swing/ProgressMonitor.html)
 
 <!-- dummy comment line for breaking list -->
 

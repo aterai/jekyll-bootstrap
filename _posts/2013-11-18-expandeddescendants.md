@@ -16,8 +16,10 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>visitAll(tree, rootPath, false); //Collapse all
-if(expandedState == null) { return; }
-while(expandedState.hasMoreElements()) {
+if (expandedState == null) {
+  return;
+}
+while (expandedState.hasMoreElements()) {
   tree.expandPath(expandedState.nextElement());
 }
 expandedState = tree.getExpandedDescendants(rootPath);
@@ -29,7 +31,7 @@ expandedState = tree.getExpandedDescendants(rootPath);
 - 注:
     - 親ノードが閉じている場合、その子ノードの展開状態は記憶していない
         - このサンプルでの例を挙げると、`Set 004`を展開して、親の`Set 001`を折り畳んだ状態で、`JTree#getExpandedDescendants(TreePaht)`を使用した場合、戻り値の`Enumeration<TreePath>`に`Set 004`へのパスは含まれない
-    - [JTree#getExpandedDescendants(TreePath) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/JTree.html#getExpandedDescendants%28javax.swing.tree.TreePath%29)に書かれている説明がよく分からない(特に前半)が、もしかしたら上記のことを言っているのかもしれない…。
+    - [JTree#getExpandedDescendants(TreePath) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/JTree.html#getExpandedDescendants%28javax.swing.tree.TreePath%29)に書かれている説明がよく分からない(特に前半)が、もしかしたら上記のことを言っているのかもしれない…
 
 <!-- dummy comment line for breaking list -->
 
@@ -42,19 +44,19 @@ expandedState = tree.getExpandedDescendants(rootPath);
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>//XMLEncoderではデフォルトのJTreeの場合、展開状態などは保存されない
-//??? 1.7.0_45では、整形式のXMLにならない場合がある ???
-XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(xmlFile)));
-xe.writeObject(tree);
-xe.flush();
+try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(xmlFile)))) {
+  xe.writeObject(tree);
+  //xe.close(); 
+  //...
 
-//ObjectOutputStreamの場合は、選択状態、展開状態なども保存、復元可能
-ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
-oos.writeObject(tree);
-oos.flush();
+  //ObjectOutputStreamの場合は、選択状態、展開状態なども保存、復元可能
+  ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
+  oos.writeObject(tree);
+  //...
 </code></pre>
 
 ## 参考リンク
-- [JTreeのノードを展開・折り畳み](http://terai.xrea.jp/Swing/ExpandAllNodes.html)
+- [JTreeのノードを展開・折り畳み](http://ateraimemo.com/Swing/ExpandAllNodes.html)
 - [Swing: Retaining JTree Expansion State](http://www.javalobby.org/java/forums/t19857.html)
 - [OR in an OB World: Auto-collapsing Tree in Java](http://orinanobworld.blogspot.jp/2013/03/auto-collapsing-tree-in-java.html)
 

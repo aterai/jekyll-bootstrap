@@ -15,19 +15,20 @@ comments: true
 {% download https://lh3.googleusercontent.com/-BOomq0cC-U4/UceBZ2TsWWI/AAAAAAAABug/yoXs3wbBVGk/s800/ColorChannelSwapFilter.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class BlockedColorLayerUI extends LayerUI&lt;JProgressBar&gt;{
-  public boolean isPreventing = false;
-  private BufferedImage bi;
+<pre class="prettyprint"><code>class BlockedColorLayerUI extends LayerUI&lt;JProgressBar&gt; {
+  public boolean isPreventing;
+  private transient BufferedImage bi;
   private int prevw = -1;
   private int prevh = -1;
+
   @Override public void paint(Graphics g, JComponent c) {
-    if(isPreventing) {
-      JLayer jlayer = (JLayer)c;
-      JProgressBar progress = (JProgressBar)jlayer.getView();
+    if (isPreventing &amp;&amp; c instanceof JLayer) {
+      JLayer jlayer = (JLayer) c;
+      JProgressBar progress = (JProgressBar) jlayer.getView();
       int w = progress.getSize().width;
       int h = progress.getSize().height;
 
-      if(bi==null || w!=prevw || h!=prevh) {
+      if (bi == null || w != prevw || h != prevh) {
         bi = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
       }
       prevw = w;
@@ -38,21 +39,20 @@ comments: true
       g2.dispose();
 
       Image image = c.createImage(
-          new FilteredImageSource(
-              bi.getSource(), new RedGreenChannelSwapFilter()));
+        new FilteredImageSource(bi.getSource(), new RedGreenChannelSwapFilter()));
       g.drawImage(image, 0, 0, c);
-    }else{
+    } else {
       super.paint(g, c);
     }
   }
 }
 
-class RedGreenChannelSwapFilter extends RGBImageFilter{
+class RedGreenChannelSwapFilter extends RGBImageFilter {
   @Override public int filterRGB(int x, int y, int argb) {
-    int r = (int)((argb &gt;&gt; 16) &amp; 0xff);
-    int g = (int)((argb &gt;&gt;  8) &amp; 0xff);
-    int b = (int)((argb    ) &amp; 0xff);
-    return (argb &amp; 0xff000000) | (g&lt;&lt;16) | (r&lt;&lt;8) | (b);
+    int r = (int) ((argb &gt;&gt; 16) &amp; 0xff);
+    int g = (int) ((argb &gt;&gt;  8) &amp; 0xff);
+    int b = (int) ((argb)       &amp; 0xff);
+    return (argb &amp; 0xff000000) | (g &lt;&lt; 16) | (r &lt;&lt; 8) | (b);
   }
 }
 </code></pre>
@@ -72,9 +72,9 @@ class RedGreenChannelSwapFilter extends RGBImageFilter{
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [RGBImageFilterでアイコンの色調を変更](http://terai.xrea.jp/Swing/RatingLabel.html)
-- [JProgressBarの文字列をJLayerを使って表示する](http://terai.xrea.jp/Swing/ProgressStringLayer.html)
-- [JProgressBarの進捗状況と進捗文字列色を変更する](http://terai.xrea.jp/Swing/ProgressBarSelectionColor.html)
+- [RGBImageFilterでアイコンの色調を変更](http://ateraimemo.com/Swing/RatingLabel.html)
+- [JProgressBarの文字列をJLayerを使って表示する](http://ateraimemo.com/Swing/ProgressStringLayer.html)
+- [JProgressBarの進捗状況と進捗文字列色を変更する](http://ateraimemo.com/Swing/ProgressBarSelectionColor.html)
 
 <!-- dummy comment line for breaking list -->
 

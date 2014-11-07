@@ -58,7 +58,7 @@ comments: true
 
 <pre class="prettyprint"><code>class TooltipListCellRenderer extends DefaultListCellRenderer {
   @Override public Component getListCellRendererComponent(
-      JList list, Object value, int index, boolean isSelected, boolean hasFocus) {
+        JList list, Object value, int index, boolean isSelected, boolean hasFocus) {
     JLabel l = (JLabel) super.getListCellRendererComponent(
         list, value, index, isSelected, hasFocus);
     Insets i = l.getInsets();
@@ -74,7 +74,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JToolTipの表示位置](http://terai.xrea.jp/Swing/ToolTipLocation.html)
+- [JToolTipの表示位置](http://ateraimemo.com/Swing/ToolTipLocation.html)
 
 <!-- dummy comment line for breaking list -->
 

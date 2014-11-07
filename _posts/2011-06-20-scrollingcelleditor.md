@@ -34,7 +34,7 @@ comments: true
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {
     setFont(table.getFont());
-    setText((value!=null)?value.toString():"");
+    setText(Objects.toString(value, ""));
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         setCaretPosition(getText().length());
@@ -44,23 +44,23 @@ comments: true
     return scroll;
   }
   @Override public boolean isCellEditable(final EventObject e) {
-    if(e instanceof MouseEvent) {
-      return ((MouseEvent)e).getClickCount() &gt;= 2;
+    if (e instanceof MouseEvent) {
+      return ((MouseEvent) e).getClickCount() &gt;= 2;
     }
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
-        if(e instanceof KeyEvent) {
-          KeyEvent ke = (KeyEvent)e;
+        if (e instanceof KeyEvent) {
+          KeyEvent ke = (KeyEvent) e;
           char kc = ke.getKeyChar();
-          if(Character.isUnicodeIdentifierStart(kc)) {
-            setText(getText()+kc);
+          if (Character.isUnicodeIdentifierStart(kc)) {
+            setText(getText() + kc);
           }
         }
       }
     });
     return true;
   }
-//......
+//...
 </code></pre>
 
 ## 解説
@@ -78,8 +78,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TableCellEditorのレイアウトを変更](http://terai.xrea.jp/Swing/CellEditorLayout.html)
-- [JTableのセル幅で文字列を折り返し](http://terai.xrea.jp/Swing/TableCellRenderer.html)
+- [TableCellEditorのレイアウトを変更](http://ateraimemo.com/Swing/CellEditorLayout.html)
+- [JTableのセル幅で文字列を折り返し](http://ateraimemo.com/Swing/TableCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

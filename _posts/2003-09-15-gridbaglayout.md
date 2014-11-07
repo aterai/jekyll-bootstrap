@@ -71,7 +71,7 @@ comments: true
 ## 参考リンク
 - [GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)
 - [GridBagLayoutでコンポーネントがつぶれるのを防ぎたいとき～](http://satoshi.kinokuni.org/tech/SwingTipsLayout.html#section1)
-- [GroupLayoutの使用](http://terai.xrea.jp/Swing/GroupLayout.html)
+- [GroupLayoutの使用](http://ateraimemo.com/Swing/GroupLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

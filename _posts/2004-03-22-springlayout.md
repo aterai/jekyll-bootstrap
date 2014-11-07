@@ -15,8 +15,9 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTwX9UR-I/AAAAAAAAAk8/TLNZjmIrPnw/s800/SpringLayout.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static void setScaleAndAdd(JComponent parent, SpringLayout layout, JComponent child,
-                                   float sx, float sy, float sw, float sh) {
+<pre class="prettyprint"><code>private static void setScaleAndAdd(
+    JComponent parent, SpringLayout layout, JComponent child,
+    float sx, float sy, float sw, float sh) {
   Spring panelw = layout.getConstraint(SpringLayout.WIDTH,  parent);
   Spring panelh = layout.getConstraint(SpringLayout.HEIGHT, parent);
 
@@ -28,28 +29,29 @@ comments: true
 
   parent.add(child);
 }
-//public void initLayout() {
-//  SpringLayout layout = new SpringLayout();
-//  Insets i = panel.getInsets();
-//  int w = panel.getWidth()  - i.left - i.right;
-//  int h = panel.getHeight() - i.top  - i.bottom;
+
+// public void initLayout() {
+//   SpringLayout layout = new SpringLayout();
+//   Insets i = panel.getInsets();
+//   int w = panel.getWidth()  - i.left - i.right;
+//   int h = panel.getHeight() - i.top  - i.bottom;
 //
-//  l1.setPreferredSize(new Dimension( w*90/100, h*55/100 ) );
-//  l2.setPreferredSize(new Dimension( w*40/100, h*30/100 ) );
+//   l1.setPreferredSize(new Dimension(w * 90 / 100, h * 55 / 100));
+//   l2.setPreferredSize(new Dimension(w * 40 / 100, h * 30 / 100));
 //
-//  layout.putConstraint(SpringLayout.WEST,  l1, w*5/100,
-//                       SpringLayout.WEST,  panel);
-//  layout.putConstraint(SpringLayout.NORTH, l1, h*5/100,
-//                       SpringLayout.NORTH, panel);
-//  layout.putConstraint(SpringLayout.WEST,  l2, w*50/100,
-//                       SpringLayout.WEST,  panel);
-//  //layout.putConstraint(SpringLayout.WEST, l2, 0, SpringLayout.WEST, l1);
-//  layout.putConstraint(SpringLayout.SOUTH, l2, -h*5/100,
-//                       SpringLayout.SOUTH, panel);
+//   layout.putConstraint(SpringLayout.WEST,  l1, w * 5 / 100,
+//                        SpringLayout.WEST,  panel);
+//   layout.putConstraint(SpringLayout.NORTH, l1, h * 5 / 100,
+//                        SpringLayout.NORTH, panel);
+//   layout.putConstraint(SpringLayout.WEST,  l2, w * 50 / 100,
+//                        SpringLayout.WEST,  panel);
+// //layout.putConstraint(SpringLayout.WEST, l2, 0, SpringLayout.WEST, l1);
+//   layout.putConstraint(SpringLayout.SOUTH, l2, -h * 5 / 100,
+//                        SpringLayout.SOUTH, panel);
 //
-//  panel.setLayout(layout);
-//  panel.revalidate();
-//}
+//   panel.setLayout(layout);
+//   panel.revalidate();
+// }
 </code></pre>
 
 ## 解説
@@ -73,7 +75,7 @@ comments: true
 ~~距離を`0`にすることも可能で、例えばサンプルコードのコメントアウトされたような指定をすると、ラベル`1`、`2`を左揃えで並べることができます。~~
 
 ## コメント
-- 以前の内容は、[BoxLayoutでリスト状に並べる](http://terai.xrea.jp/Swing/ComponentList.html)に移動しました。 -- *aterai* 2006-06-15 (木) 19:40:17
+- 以前の内容は、[BoxLayoutでリスト状に並べる](http://ateraimemo.com/Swing/ComponentList.html)に移動しました。 -- *aterai* 2006-06-15 (木) 19:40:17
 - リスナーを使わなくても次ので出来ました。 --  2010-09-02 (木) 02:41:13
 
 <!-- dummy comment line for breaking list -->

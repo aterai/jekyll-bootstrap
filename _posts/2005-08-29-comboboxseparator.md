@@ -105,7 +105,7 @@ im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
 </code></pre>
 
 ## 参考リンク
-- [JComboBoxのアイテムをBorderで修飾してグループ分け](http://terai.xrea.jp/Swing/BorderSeparator.html)
+- [JComboBoxのアイテムをBorderで修飾してグループ分け](http://ateraimemo.com/Swing/BorderSeparator.html)
 
 <!-- dummy comment line for breaking list -->
 

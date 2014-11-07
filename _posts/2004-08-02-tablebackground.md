@@ -29,15 +29,15 @@ scroll.getViewport().setBackground(Color.WHITE);
 
 上記のサンプルでは、背景色を不透明にするを選択して背景色を設定してやると、`JViewport`の背景色が変更されます。
 
-セルの背景色を変更する場合は、`TableCellRenderer`を使用([TableCellRendererでセルの背景色を変更](http://terai.xrea.jp/Swing/StripeTable.html))します。
+セルの背景色を変更する場合は、`TableCellRenderer`を使用([TableCellRendererでセルの背景色を変更](http://ateraimemo.com/Swing/StripeTable.html))します。
 
 - - - -
-`JDK 1.6.0`で追加された`JTable#setFillsViewportHeight`メソッドを使用すると、`JTable`の背景色を設定すれば、`JViewport`の背景色を設定する必要はありません(参考:[JTable自体の高さを拡張](http://terai.xrea.jp/Swing/FillsViewportHeight.html))。
+`JDK 1.6.0`で追加された`JTable#setFillsViewportHeight`メソッドを使用すると、`JTable`の背景色を設定すれば、`JViewport`の背景色を設定する必要はありません(参考:[JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html))。
 
 ## 参考リンク
-- [JTable自体の高さを拡張](http://terai.xrea.jp/Swing/FillsViewportHeight.html)
-- [TableCellRendererでセルの背景色を変更](http://terai.xrea.jp/Swing/StripeTable.html)
-- [JTableに行ヘッダを追加](http://terai.xrea.jp/Swing/TableRowHeader.html)
+- [JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html)
+- [TableCellRendererでセルの背景色を変更](http://ateraimemo.com/Swing/StripeTable.html)
+- [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)
 
 <!-- dummy comment line for breaking list -->
 

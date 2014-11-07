@@ -52,9 +52,9 @@ comments: true
 上記のサンプルでは、`TreeCellRenderer`に`JLabel`ではなく、`JTextField`を使用し`JTextField#getHighlighter()#addHighlight(...)`で検索中の文字列をハイライト表示しています。
 
 ## 参考リンク
-- [JTreeで条件に一致するノードを検索しハイライト](http://terai.xrea.jp/Swing/TreeNodeHighlightSearch.html)
+- [JTreeで条件に一致するノードを検索しハイライト](http://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
     - こちらは、ノードの色を変更してハイライト表示
-- [Highlighterで文字列をハイライト](http://terai.xrea.jp/Swing/Highlighter.html)
+- [Highlighterで文字列をハイライト](http://ateraimemo.com/Swing/Highlighter.html)
 
 <!-- dummy comment line for breaking list -->
 

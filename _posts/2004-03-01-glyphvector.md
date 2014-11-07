@@ -83,7 +83,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-ラベルの幅ではなく、任意の場所で文字列を改行したい場合は、以下のように`JLabel`に`html`の`<br>`タグを利用したり、編集不可にした`JTextPane`、`JTextArea`などを使用します(参考:[JTextPane、JLabelなどで複数行を表示](http://terai.xrea.jp/Swing/MultiLineLabel.html))。
+ラベルの幅ではなく、任意の場所で文字列を改行したい場合は、以下のように`JLabel`に`html`の`<br>`タグを利用したり、編集不可にした`JTextPane`、`JTextArea`などを使用します(参考:[JTextPane、JLabelなどで複数行を表示](http://ateraimemo.com/Swing/MultiLineLabel.html))。
 
 <pre class="prettyprint"><code>label.setText("&lt;html&gt;文字列を適当なところで&lt;br /&gt;折り返す。");
 </code></pre>

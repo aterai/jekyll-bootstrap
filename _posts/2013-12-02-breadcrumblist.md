@@ -40,8 +40,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)
-- [JMenuItemの内部にJButtonを配置する](http://terai.xrea.jp/Swing/ButtonsInMenuItem.html)
+- [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
+- [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
     - 前後のコンポーネントのフチを共通化して(`1px`だけ重ねる)、`JLayer`でそのフォーカスを描画するサンプル
 
 <!-- dummy comment line for breaking list -->

@@ -68,8 +68,8 @@ comments: true
 
 ## 参考リンク
 - [How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#celltooltip)
-- [JTableHeaderのTooltipsを列ごとに変更](http://terai.xrea.jp/Swing/HeaderTooltips.html)
-- [JTableのセルがクリップされている場合のみJToolTipを表示](http://terai.xrea.jp/Swing/ClippedCellTooltips.html)
+- [JTableHeaderのTooltipsを列ごとに変更](http://ateraimemo.com/Swing/HeaderTooltips.html)
+- [JTableのセルがクリップされている場合のみJToolTipを表示](http://ateraimemo.com/Swing/ClippedCellTooltips.html)
 
 <!-- dummy comment line for breaking list -->
 

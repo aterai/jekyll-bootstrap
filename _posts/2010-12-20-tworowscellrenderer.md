@@ -19,18 +19,19 @@ comments: true
 table.setAutoCreateRowSorter(true);
 table.setRowHeight(table.getRowHeight() * 2);
 table.setDefaultRenderer(String.class, new TwoRowsCellRenderer());
-</code></pre>
+//...
 
-<pre class="prettyprint"><code>class TwoRowsCellRenderer extends JPanel implements TableCellRenderer {
-  JLabel top = new JLabel();
-  JLabel bottom = new JLabel();
+class TwoRowsCellRenderer extends JPanel implements TableCellRenderer {
+  private final JLabel top = new JLabel();
+  private final JLabel bottom = new JLabel();
   public TwoRowsCellRenderer() {
-    super(new GridLayout(2,1,0,0));
+    super(new GridLayout(2, 1, 0, 0));
     add(top);
     add(bottom);
   }
-  @Override public Component getTableCellRendererComponent(JTable table,
-      Object value,boolean isSelected,boolean hasFocus,int row,int column) {
+  @Override public Component getTableCellRendererComponent(
+      JTable table, Object value,
+      boolean isSelected, boolean hasFocus, int row, int column) {
     if (isSelected) {
       setForeground(table.getSelectionForeground());
       setBackground(table.getSelectionBackground());
@@ -40,16 +41,16 @@ table.setDefaultRenderer(String.class, new TwoRowsCellRenderer());
     }
     setFont(table.getFont());
     FontMetrics fm  = table.getFontMetrics(table.getFont());
-    String text   = (value==null) ? "" : value.toString();
-    String first  = text;
+    String text     = Objects.toString(value, "");
+    String first    = text;
     String second   = "";
     int columnWidth = table.getColumnModel().getColumn(column).getWidth();
     int textWidth   = 0;
-    for(int i=0; i&lt;text.length(); i++) {
+    for (int i = 0; i &lt; text.length(); i++) {
       textWidth += fm.charWidth(text.charAt(i));
-      if(textWidth&gt;columnWidth) {
-        first  = text.substring(0,i-1);
-        second = text.substring(i-1);
+      if (textWidth &gt; columnWidth) {
+        first  = text.substring(0, i - 1);
+        second = text.substring(i - 1);
         break;
       }
     }
@@ -64,7 +65,7 @@ table.setDefaultRenderer(String.class, new TwoRowsCellRenderer());
 `JLabel`を上下に配置した`JPanel`を使って、`TableCellRenderer`を作成しています。`...`での省略は、二行目の`JLabel`のデフォルト動作です。
 
 ## 参考リンク
-- [JLabelの文字列を折り返し](http://terai.xrea.jp/Swing/GlyphVector.html)
+- [JLabelの文字列を折り返し](http://ateraimemo.com/Swing/GlyphVector.html)
 
 <!-- dummy comment line for breaking list -->
 

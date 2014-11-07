@@ -59,7 +59,7 @@ field2.setBackground(BG_COLOR);
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQcFKxPuBpI/AAAAAAAAAqw/1P6cGhtr7FA/s800/TranslucentTextField1.png)
 
 - `GTKLookAndFeel`でのスクリーンショット
-    - [Bug ID: 6531760 JTextField not honoring the background color](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6531760)
+    - [Bug ID: 6531760 JTextField not honoring the background color](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6531760)
 
 <!-- dummy comment line for breaking list -->
 

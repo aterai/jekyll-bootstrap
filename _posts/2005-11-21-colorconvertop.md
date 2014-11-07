@@ -72,7 +72,6 @@ g.dispose();
 ## 参考リンク
 - [Image Color Gray Effect : Java examples (example source code) » 2D Graphics GUI » Image](http://www.java2s.com/Code/Java/2D-Graphics-GUI/ImageColorGrayEffect.htm)
 - [opus-i | シンプル素材 テンプレート 音楽素材](http://opus-i.biz/)
-- ~~[フィルタによる半透明な画像の作成](http://numata.aquasky.jp/programming/java/graphics/FilteringImage.html)~~
 - [osakana.factory - グレースケールのひみつ](http://ofo.jp/osakana/cgtips/grayscale.phtml)
     - via [プログラマメモ2: グレースケール](http://programamemo2.blogspot.com/2007/08/blog-post_21.html)
 - [Swing - image manipulation](https://forums.oracle.com/thread/1903279)

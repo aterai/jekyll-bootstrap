@@ -63,8 +63,8 @@ public void addTab(String title, final Component content) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [SwingWorkerを使った処理の中断と進捗状況表示](http://terai.xrea.jp/Swing/SwingWorker.html)
-- [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
+- [SwingWorkerを使った処理の中断と進捗状況表示](http://ateraimemo.com/Swing/SwingWorker.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -27,7 +27,7 @@ label1.setToolTipText("&lt;html&gt;&amp;lt;html&amp;gt;&amp;lt;font color=red&am
 `JLabel`に、`putClientProperty("html.disable", Boolean.TRUE)`としても、その `JLabel`の`JToolTip`には反映されないので、`<html>`タグの中で文字実体参照を使っています。
 
 ## 参考リンク
-- [Htmlを使ったJLabelとJEditorPaneの無効化](http://terai.xrea.jp/Swing/DisabledHtmlLabel.html)
+- [Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

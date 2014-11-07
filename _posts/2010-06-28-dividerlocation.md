@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: DividerLocation
 title: JSplitPaneを等分割する
-tags: [JSplitPane]
+tags: [JSplitPane, Divider]
 author: aterai
 pubdate: 2010-06-28T22:43:18+09:00
 description: JSplitPaneのディバイダが中央にくるように設定します。
@@ -28,7 +28,7 @@ comments: true
 
 - `JSplitPane#setDividerLocation(double)`
     - ディバイダ自身の幅(`JSplitPane#getDividerSize()`)は含まれない
-    - 内部では、切り捨てで`JSplitPane#setDividerLocation(int)`を使用: [JSplitPaneのDividerの位置を最大化後に変更する](http://terai.xrea.jp/Swing/DividerSplitRatio.html)
+    - 内部では、切り捨てで`JSplitPane#setDividerLocation(int)`を使用: [JSplitPaneのDividerの位置を最大化後に変更する](http://ateraimemo.com/Swing/DividerSplitRatio.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -36,7 +36,7 @@ comments: true
 `JSplitPane#setResizeWeight(double)`を使用し、`JSplitPane`内に配置したコンポーネント(`JScrollPane`)の余ったスペースの配分が同じになるようにして、ディバイダを中央に配置する方法もあります。
 
 ## 参考リンク
-- [JSplitPaneのDividerの位置を最大化後に変更する](http://terai.xrea.jp/Swing/DividerSplitRatio.html)
+- [JSplitPaneのDividerの位置を最大化後に変更する](http://ateraimemo.com/Swing/DividerSplitRatio.html)
 
 <!-- dummy comment line for breaking list -->
 

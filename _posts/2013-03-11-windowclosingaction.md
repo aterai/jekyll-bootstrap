@@ -61,8 +61,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JFrameの終了をキャンセル](http://terai.xrea.jp/Swing/WindowClosing.html)
-- [WindowAncestor(親ウィンドウ)の取得](http://terai.xrea.jp/Swing/WindowAncestor.html)
+- [JFrameの終了をキャンセル](http://ateraimemo.com/Swing/WindowClosing.html)
+- [WindowAncestor(親ウィンドウ)の取得](http://ateraimemo.com/Swing/WindowAncestor.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JMenuBar menuBar = new JMenuBar();
-menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
+menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
   @Override public Dimension preferredLayoutSize(Container target) {
     synchronized (target.getTreeLock()) {
       int targetWidth = target.getSize().width;
@@ -28,11 +28,11 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
       int height   = vgap;
       int rowWidth = hgap, rowHeight = 0;
       int nmembers = target.getComponentCount();
-      for(int i = 0; i &lt; nmembers; i++) {
+      for (int i = 0; i &lt; nmembers; i++) {
         Component m = target.getComponent(i);
-        if(m.isVisible()) {
+        if (m.isVisible()) {
           Dimension d = m.getPreferredSize();
-          if(rowWidth + d.width &gt; maxWidth) {
+          if (rowWidth + d.width &gt; maxWidth) {
             height += rowHeight;
             rowWidth = hgap;
             rowHeight = 0;
@@ -62,15 +62,15 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
             EventQueue.invokeLater(new Runnable() {
               @Override public void run() {
                 System.out.println("windowStateChanged");
-                JFrame f = (JFrame)e.getWindow();
-                ((JComponent)f.getContentPane()).revalidate();
+                JFrame f = (JFrame) e.getWindow();
+                ((JComponent) f.getContentPane()).revalidate();
               }
             });
           }
         });
         //frame.getContentPane().addComponentListener(new ComponentAdapter() {
         //  @Override public void componentResized(ComponentEvent e) {
-        //    ((JComponent)e.getSource()).revalidate();
+        //    ((JComponent) e.getSource()).revalidate();
         //  }
         //});
 </code></pre>
@@ -82,12 +82,12 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT,2,2) {
         private Dimension preferredLayoutSize;
         @Override public void layoutContainer(Container target) {
           Dimension size = preferredLayoutSize(target);
-          if(size.equals(preferredLayoutSize)) {
+          if (size.equals(preferredLayoutSize)) {
             super.layoutContainer(target);
-          }else{
+          } else {
             preferredLayoutSize = size;
             Container top = target;
-            while(!(top instanceof Window) &amp;&amp; top.getParent() != null) {
+            while (!(top instanceof Window) &amp;&amp; top.getParent() != null) {
               top = top.getParent();
             }
             top.validate();

@@ -15,7 +15,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/-wcXag_bBidU/UY-uA3riCRI/AAAAAAAABrs/Q_V-fdNVRu8/s800/ColumnSpanningCellRenderer.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class ColumnSpanningCellRenderer extends JPanel implements TableCellRenderer{
+<pre class="prettyprint"><code>class ColumnSpanningCellRenderer extends JPanel implements TableCellRenderer {
   private final JTextArea textArea = new JTextArea(2, 999999);
   private final JLabel label = new JLabel();
   private final JLabel iconLabel = new JLabel();
@@ -55,15 +55,15 @@ comments: true
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {
     Test test;
-    if(value instanceof Test) {
+    if (value instanceof Test) {
       test = (Test)value;
       add(iconLabel, BorderLayout.WEST);
-    }else{
+    } else {
       int mrow = table.convertRowIndexToModel(row);
-      String title = value!=null ? value.toString() : "";
+      String title = value != null ? value.toString() : "";
       Test t = (Test)table.getModel().getValueAt(mrow, 0);
-      String text = t!=null ? t.text : "";
-      Icon icon = t!=null ? t.icon : null;
+      String text = t != null ? t.text : "";
+      Icon icon = t != null ? t.icon : null;
       test = new Test(title, icon, text);
       remove(iconLabel);
     }
@@ -72,21 +72,13 @@ comments: true
     iconLabel.setIcon(test.icon);
 
     Rectangle cr = table.getCellRect(row, column, false);
-/*/ //Flickering on first visible row ?
-    if(column==0) {
-      cr.x = 0;
-      cr.width -= iconLabel.getPreferredSize().width;
-    }else{
+    if (column != 0) {
       cr.x -= iconLabel.getPreferredSize().width;
     }
-    textArea.scrollRectToVisible(cr);
-/*/
-    if(column!=0) cr.x -= iconLabel.getPreferredSize().width;
     scroll.getViewport().setViewPosition(cr.getLocation());
-//*/
-    if(isSelected) {
+    if (isSelected) {
       setBackground(Color.ORANGE);
-    }else{
+    } else {
       setBackground(Color.WHITE);
     }
     return this;
@@ -111,7 +103,7 @@ comments: true
 ## 参考リンク
 - [PDF: Extreme GUI Makeover 2007](http://docs.huihoo.com/javaone/2007/desktop/TS-3548.pdf)
     - via: [java - JTable : Complex Cell Renderer - Stack Overflow](http://stackoverflow.com/questions/16305023/jtable-complex-cell-renderer)
-- [JTableの罫線の有無とセルの内余白を変更](http://terai.xrea.jp/Swing/IntercellSpacing.html)
+- [JTableの罫線の有無とセルの内余白を変更](http://ateraimemo.com/Swing/IntercellSpacing.html)
 
 <!-- dummy comment line for breaking list -->
 

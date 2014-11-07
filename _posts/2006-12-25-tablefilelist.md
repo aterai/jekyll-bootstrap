@@ -45,7 +45,7 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルをエクスプローラ風に表示する](http://terai.xrea.jp/Swing/ExplorerLikeTable.html)
+- [JTableのセルをエクスプローラ風に表示する](http://ateraimemo.com/Swing/ExplorerLikeTable.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -53,7 +53,7 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 - `JTable#columnAtPoint(Point)`メソッドをオーバーライドする方法では、`CPU`が`100%`になってしまうので、クリック、ドラッグした場合だけ、評価するように修正しました。 -- *aterai* 2007-04-16 (月) 18:46:39
 - `JTable#getToolTipText(MouseEvent)`メソッドをオーバーライドして、`Name`カラムのセルの余白では、ツールチップも表示しないように変更しました。 -- *aterai* 2007-04-16 (月) 18:49:02
 - `table.putClientProperty("Table.isFileList", Boolean.TRUE);`を使えば、`MouseListener`などもすべて必要なさそう…。 -- *aterai* 2010-01-01 (金) 02:02:50
-    - `putClientProperty("Table.isFileList", Boolean.TRUE)`を使用するように変更、[JListのアイテムを範囲指定で選択](http://terai.xrea.jp/Swing/RubberBanding.html)での範囲選択機能を追加。 -- *aterai* 2010-01-05 (火) 16:07:48
+    - `putClientProperty("Table.isFileList", Boolean.TRUE)`を使用するように変更、[JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)での範囲選択機能を追加。 -- *aterai* 2010-01-05 (火) 16:07:48
 - <kbd>Ctrl+A</kbd>などの`JTable#selectAll()`で、`Comment`カラムが選択できるのを修正。 -- *aterai* 2010-08-25 (水) 18:41:45
 
 <!-- dummy comment line for breaking list -->

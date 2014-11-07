@@ -22,7 +22,7 @@ com.sun.awt.AWTUtilities.setWindowOpaque(frame, false);
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 JPanel p = new JPanel();
 p.add(new JButton("JButton"));
-p.setBackground(new Color(.5f,.8f,.5f,.5f));
+p.setBackground(new Color(.5f, .8f, .5f, .5f));
 frame.getContentPane().add(p);
 frame.setSize(320, 240);
 frame.setLocationRelativeTo(null);
@@ -47,7 +47,7 @@ frame.setVisible(true);
 
 ## コメント
 - そんな簡単にできるんですね！昔画面キャプチャーしたり色々苦労した結果断念しました； -- *riki* 2010-06-14 (月) 22:57:11
-    - `AWTUtilities.setWindowOpaque`などが使えるようになったのは、`6u10`からですが、上記のサンプルみたいなことができるようになったのは、`6u14`から(多分[Bug ID: 6683775 Painting artifacts is seen when panel is made setOpaque(false) for a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6683775))みたいですから、最近(ちょうど一年ぐらい)のようです。 -- *aterai* 2010-06-15 (火) 13:26:11
+    - `AWTUtilities.setWindowOpaque`などが使えるようになったのは、`6u10`からですが、上記のサンプルみたいなことができるようになったのは、`6u14`から(多分[Bug ID: 6683775 Painting artifacts is seen when panel is made setOpaque(false) for a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6683775))みたいですから、最近(ちょうど一年ぐらい)のようです。 -- *aterai* 2010-06-15 (火) 13:26:11
 - 「`Windows 7` + `JDK 1.7.0`」で、このサンプルにある`JComboBox`のドロップダウンリストが正常に描画されない？ 「`Windows XP` + `JDK 1.7.0`」や、「`Windows 7` + `JDK 1.6.0_27`」は問題なし。 -- *aterai* 2011-10-18 (火) 19:01:43
 - `JDK 1.7.0`では、背景を切り替えたときに前の背景の残像が残る場合がある？ -- *aterai* 2011-10-18 (火) 19:06:07
     - こちらは`((JFrame)w).getContentPane().repaint();`でうまく~~いくが理由が不明…~~ ようなので修正。 -- *aterai* 2011-10-18 (火) 19:19:00
@@ -58,10 +58,10 @@ frame.setVisible(true);
           @Override public void popupMenuWillBecomeVisible(final PopupMenuEvent e) {
             EventQueue.invokeLater(new Runnable() {
               @Override public void run() {
-                JComboBox c = (JComboBox)e.getSource();
+                JComboBox c = (JComboBox) e.getSource();
                 Object o = c.getAccessibleContext().getAccessibleChild(0);
-                if(o instanceof JComponent) { //BasicComboPopup
-                  ((JComponent)o).repaint();
+                if (o instanceof JComponent) { //BasicComboPopup
+                  ((JComponent) o).repaint();
                 }
               }
             });
@@ -70,7 +70,7 @@ frame.setVisible(true);
           @Override public void popupMenuCanceled(PopupMenuEvent e) {}
         });
 </code></pre>
-    - `7u6`では修正されている。`JDK 1.7.0_06`の`Bug Fixes`に載っている [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7156657) が関係している気がするけど、`Release Fixed`に、`7u6`が無い？ -- *aterai* 2012-09-19 (水) 18:18:48
-        - バックポートされた[Bug ID: JDK-2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=2224554)に、`7u6`があった。 -- *aterai* 2013-10-29 (火) 19:26:30
+    - `7u6`では修正されている。`JDK 1.7.0_06`の`Bug Fixes`に載っている [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7156657) が関係している気がするけど、`Release Fixed`に、`7u6`が無い？ -- *aterai* 2012-09-19 (水) 18:18:48
+        - バックポートされた[Bug ID: JDK-2224554 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=2224554)に、`7u6`があった。 -- *aterai* 2013-10-29 (火) 19:26:30
 
 <!-- dummy comment line for breaking list -->

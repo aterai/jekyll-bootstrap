@@ -15,14 +15,14 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ8wQD77I/AAAAAAAAAVM/Ade6cu49JUQ/s800/ComboPopupWidth.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class MinWidthPopupMenuListener implements PopupMenuListener{
+<pre class="prettyprint"><code>class MinWidthPopupMenuListener implements PopupMenuListener {
   private static final int POPUP_MIN_WIDTH = 320;
   private boolean adjusting = false;
   @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
-    JComboBox combo = (JComboBox)e.getSource();
+    JComboBox combo = (JComboBox) e.getSource();
     Dimension size  = combo.getSize();
-    if(size.width&gt;=POPUP_MIN_WIDTH) return;
-    if(!adjusting) {
+    if (size.width &gt;= POPUP_MIN_WIDTH) return;
+    if (!adjusting) {
       adjusting = true;
       combo.setSize(POPUP_MIN_WIDTH, size.height);
       combo.showPopup();
@@ -55,6 +55,6 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225)  -- *aterai* 2011-06-05 (日) 02:34:16
+- メモ: [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4743225)  -- *aterai* 2011-06-05 (日) 02:34:16
 
 <!-- dummy comment line for breaking list -->

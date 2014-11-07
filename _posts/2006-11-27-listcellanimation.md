@@ -58,8 +58,8 @@ comments: true
 選択されたセルだけ再描画してアニメーションを行っています。
 
 ## 参考リンク
-- [Timerでアニメーションするアイコンを作成](http://terai.xrea.jp/Swing/AnimeIcon.html)
-- [GlyphVectorで文字列を電光掲示板風にスクロール](http://terai.xrea.jp/Swing/ScrollingMessage.html)
+- [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)
+- [GlyphVectorで文字列を電光掲示板風にスクロール](http://ateraimemo.com/Swing/ScrollingMessage.html)
 
 <!-- dummy comment line for breaking list -->
 

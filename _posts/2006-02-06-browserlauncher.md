@@ -35,7 +35,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 - - - -
 - `Java SE 6`の新機能である、`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することができるようになっています。
     - [Using the Desktop API in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135182.html)
-    - [Desktopでブラウザを起動(JDK 6)](http://terai.xrea.jp/Swing/Desktop.html))。
+    - [Desktopでブラウザを起動(JDK 6)](http://ateraimemo.com/Swing/Desktop.html))。
 
 <!-- dummy comment line for breaking list -->
 

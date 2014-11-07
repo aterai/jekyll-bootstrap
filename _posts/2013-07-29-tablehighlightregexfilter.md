@@ -16,16 +16,16 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class HighlightTableCellRenderer extends JTextField implements TableCellRenderer {
-  private static final Color backgroundSelectionColor = new Color(220, 240, 255);
-  private static final Highlighter.HighlightPainter highlightPainter
+  private static final Color BACKGROUND_SELECTION_COLOR = new Color(220, 240, 255);
+  private final transient Highlighter.HighlightPainter highlightPainter
     = new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW);
   private String pattern = "";
-  private String prev = null;
+  private String prev;
 
   public boolean setPattern(String str) {
-    if(str==null || str.equals(pattern)) {
+    if (str == null || str.equals(pattern)) {
       return false;
-    }else{
+    } else {
       prev = pattern;
       pattern = str;
       return true;
@@ -40,23 +40,25 @@ comments: true
     setEditable(false);
   }
   @Override public Component getTableCellRendererComponent(
-        JTable table, Object value, boolean isSelected,
-        boolean hasFocus, int row, int column) {
-    String txt = value!=null ? value.toString() : "";
+      JTable table, Object value, boolean isSelected,
+      boolean hasFocus, int row, int column) {
+    String txt = Objects.toString(value, "");
     Highlighter highlighter = getHighlighter();
     highlighter.removeAllHighlights();
     setText(txt);
-    setBackground(isSelected ? backgroundSelectionColor : Color.WHITE);
-    if(pattern!=null &amp;&amp; !pattern.isEmpty() &amp;&amp; !pattern.equals(prev)) {
+    setBackground(isSelected ? BACKGROUND_SELECTION_COLOR : Color.WHITE);
+    if (pattern != null &amp;&amp; !pattern.isEmpty() &amp;&amp; !pattern.equals(prev)) {
       Matcher matcher = Pattern.compile(pattern).matcher(txt);
-      if(matcher.find()) {
+      int pos = 0;
+      while (matcher.find(pos)) {
         int start = matcher.start();
         int end   = matcher.end();
-        try{
+        try {
           highlighter.addHighlight(start, end, highlightPainter);
-        }catch(BadLocationException | PatternSyntaxException e) {
+        } catch (BadLocationException | PatternSyntaxException e) {
           e.printStackTrace();
         }
+        pos = end;
       }
     }
     return this;
@@ -66,17 +68,17 @@ comments: true
 
 ## 解説
 - セル中文字列のハイライト
-    - [JTreeのノード中の文字列をハイライトする](http://terai.xrea.jp/Swing/HighlightWordInNode.html)
+    - [JTreeのノード中の文字列をハイライトする](http://ateraimemo.com/Swing/HighlightWordInNode.html)
     - `JTextField`を継承する`TableCellRenderer`を作成し、`JTextField#getHighlighter()#addHighlight(...)`で検索結果の文字列をハイライト表示
 - 行のフィルタリング
-    - [RowFilterでJTableの行をフィルタリング](http://terai.xrea.jp/Swing/RowFilter.html)
+    - [RowFilterでJTableの行をフィルタリング](http://ateraimemo.com/Swing/RowFilter.html)
     - `RowFilter.regexFilter(pattern)`で正規表現を使用するフィルタを作成し、その検索にマッチする行以外は非表示
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeのノード中の文字列をハイライトする](http://terai.xrea.jp/Swing/HighlightWordInNode.html)
-- [RowFilterでJTableの行をフィルタリング](http://terai.xrea.jp/Swing/RowFilter.html)
+- [JTreeのノード中の文字列をハイライトする](http://ateraimemo.com/Swing/HighlightWordInNode.html)
+- [RowFilterでJTableの行をフィルタリング](http://ateraimemo.com/Swing/RowFilter.html)
 
 <!-- dummy comment line for breaking list -->
 

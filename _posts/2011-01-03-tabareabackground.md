@@ -36,8 +36,8 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 - - - -
 タブ文字色は、`JTabbedPane#setForegroundAt(...)`メソッドを使用して切り替えています。
 
-- [JTabbedPaneの選択文字色を変更](http://terai.xrea.jp/Swing/ColorTab.html)
-- [JTabbedPaneのタブ文字列をハイライト](http://terai.xrea.jp/Swing/TabTitleHighlight.html)
+- [JTabbedPaneの選択文字色を変更](http://ateraimemo.com/Swing/ColorTab.html)
+- [JTabbedPaneのタブ文字列をハイライト](http://ateraimemo.com/Swing/TabTitleHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

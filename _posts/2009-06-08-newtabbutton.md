@@ -103,7 +103,7 @@ comments: true
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://terai.xrea.jp/Swing/CardLayoutTabbedPane.html)
+- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

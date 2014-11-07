@@ -58,7 +58,7 @@ comments: true
 カラム幅を変更するなどの操作を行っても、セル上下の水平点線のつなぎ目でドットが重ならないようにするため、偶数奇数ドット目のどちらで始まっているかで開始位置をずらしています。
 
 ## 参考リンク
-- [JTableの次行にTabキーでフォーカスを移動](http://terai.xrea.jp/Swing/SelectNextRow.html)
+- [JTableの次行にTabキーでフォーカスを移動](http://ateraimemo.com/Swing/SelectNextRow.html)
 
 <!-- dummy comment line for breaking list -->
 

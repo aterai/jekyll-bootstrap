@@ -33,7 +33,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>class EmptyThumbHandler extends ComponentAdapter implements DocumentListener {
-  private final BoundedRangeModel emptyThumbModel = new DefaultBoundedRangeModel(0, 1, 0, 1);
+  private final BoundedRangeModel emptyThumbModel
+    = new DefaultBoundedRangeModel(0, 1, 0, 1);
   private final JTextField textField;
   private final JScrollBar scroller;
   public EmptyThumbHandler(JTextField textField, JScrollBar scroller) {
@@ -45,7 +46,7 @@ comments: true
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         BoundedRangeModel m = textField.getHorizontalVisibility();
-        int iv = m.getMaximum() - m.getMinimum() - m.getExtent() - 1; // -1: bug?
+        int iv = m.getMaximum() - m.getMinimum() - m.getExtent() - 1; //-1:bug?
         if (iv &lt;= 0) {
           scroller.setModel(emptyThumbModel);
         } else {
@@ -96,10 +97,11 @@ comments: true
       return;
     }
     BoundedRangeModel m = sb.getModel();
-    int iv = m.getMaximum() - m.getMinimum() - m.getExtent() - 1; // -1: bug?
+    int iv = m.getMaximum() - m.getMinimum() - m.getExtent() - 1; //-1:bug?
     if (iv &gt; 0) {
       Graphics2D g2 = (Graphics2D) g.create();
-      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                          RenderingHints.VALUE_ANTIALIAS_ON);
       Color color;
       if (isDragging) {
         color = DRAGGING_COLOR;
@@ -124,7 +126,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](http://terai.xrea.jp/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- *aterai* 2014-05-14 (水) 16:05:32
+- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- *aterai* 2014-05-14 (水) 16:05:32
 - サンプルの追加と、スクリーンショットの更新。 -- *aterai* 2014-05-27 (火) 16:12:38
 
 <!-- dummy comment line for breaking list -->

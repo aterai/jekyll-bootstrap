@@ -96,7 +96,7 @@ round.add(new Area(b));
 - 中: `BasicComboBoxUI`
     - `RoundRectangle2D`に、下の角を上書きするような矩形を追加して作成
     - `UIManager.put("ComboBox.foreground", color)`などで、`JComboBox`の色を変更しているが、`ArrowButton`の色がうまく変更できない
-    - [JComboBoxのBorderを変更する](http://terai.xrea.jp/Swing/ComboBoxBorder.html)
+    - [JComboBoxのBorderを変更する](http://ateraimemo.com/Swing/ComboBoxBorder.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -109,8 +109,8 @@ round.add(new Area(b));
 メモ: これらの方法で、角丸の`JComboBox`が作成できるのは、`BasicLookAndFeel`と`WindowsLookAndFeel`の場合のみ？
 
 ## 参考リンク
-- [JComboBoxのBorderを変更する](http://terai.xrea.jp/Swing/ComboBoxBorder.html)
-- [JTextFieldの角を丸める](http://terai.xrea.jp/Swing/RoundedTextField.html)
+- [JComboBoxのBorderを変更する](http://ateraimemo.com/Swing/ComboBoxBorder.html)
+- [JTextFieldの角を丸める](http://ateraimemo.com/Swing/RoundedTextField.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -46,7 +46,7 @@ comments: true
 
 ## 解説
 - 上: `JSpinner.NumberEditor` + `DecimalFormat`
-    - [JSpinnerの値をパーセントで指定](http://terai.xrea.jp/Swing/NumberEditor.html)
+    - [JSpinnerの値をパーセントで指定](http://ateraimemo.com/Swing/NumberEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -84,7 +84,7 @@ cb.install(editor2);
 </code></pre>
 
 ## 参考リンク
-- [JSpinnerの値をパーセントで指定](http://terai.xrea.jp/Swing/NumberEditor.html)
+- [JSpinnerの値をパーセントで指定](http://ateraimemo.com/Swing/NumberEditor.html)
 - [Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/)
 
 <!-- dummy comment line for breaking list -->

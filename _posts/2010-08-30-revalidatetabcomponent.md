@@ -79,9 +79,9 @@ comments: true
 
 ## 参考リンク
 - [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
-- [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://terai.xrea.jp/Swing/TabTitleEditor.html)
-- [JTabbedPaneのタブタイトルを変更](http://terai.xrea.jp/Swing/EditTabTitle.html)
-- [JTabbedPaneにタブを閉じるボタンを追加](http://terai.xrea.jp/Swing/TabWithCloseButton.html)
+- [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://ateraimemo.com/Swing/TabTitleEditor.html)
+- [JTabbedPaneのタブタイトルを変更](http://ateraimemo.com/Swing/EditTabTitle.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
 
 <!-- dummy comment line for breaking list -->
 

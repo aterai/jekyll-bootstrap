@@ -27,14 +27,14 @@ tabbedPane.addChangeListener(new ChangeListener() {
   @Override public void stateChanged(ChangeEvent e) {
     JTabbedPane t = (JTabbedPane)e.getSource();
     int i = t.getSelectedIndex();
-    try{
-      if(i==0) {
+    try {
+      if (i == 0) {
         textPane.setText(textArea.getText());
-      }else{
+      } else {
         String str = textPane.getText();
         textArea.setText(str);
       }
-    }catch(Exception ex) {
+    } catch (Exception ex) {
       ex.printStackTrace();
     }
     t.revalidate();
@@ -55,8 +55,8 @@ tabbedPane.addChangeListener(new ChangeListener() {
 
 <pre class="prettyprint"><code>//textPane.setText(textArea.getText());
 textPane.setText("");
-HTMLEditorKit hek = (HTMLEditorKit)textPane.getEditorKit();
-HTMLDocument doc = (HTMLDocument)textPane.getStyledDocument();
+HTMLEditorKit hek = (HTMLEditorKit) textPane.getEditorKit();
+HTMLDocument doc = (HTMLDocument) textPane.getStyledDocument();
 hek.insertHTML(doc, 0, textArea.getText(), 0, 0, null);
 </code></pre>
 

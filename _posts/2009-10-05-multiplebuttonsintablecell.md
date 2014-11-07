@@ -21,7 +21,7 @@ comments: true
   public ButtonsPanel() {
     super();
     setOpaque(true);
-    for(JButton b: buttons) {
+    for (JButton b: buttons) {
       b.setFocusable(false);
       b.setRolloverEnabled(false);
       add(b);
@@ -51,9 +51,9 @@ comments: true
     //       -&gt; remain selection color
     MouseListener ml = new MouseAdapter() {
       @Override public void mousePressed(MouseEvent e) {
-        ButtonModel m = ((JButton)e.getSource()).getModel();
-        if(m.isPressed() &amp;&amp; table.isRowSelected(table.getEditingRow())
-                         &amp;&amp; e.isControlDown()) {
+        ButtonModel m = ((JButton) e.getSource()).getModel();
+        if (m.isPressed() &amp;&amp; table.isRowSelected(table.getEditingRow())
+                          &amp;&amp; e.isControlDown()) {
           setBackground(table.getBackground());
         }
       }
@@ -74,7 +74,7 @@ comments: true
         int row = table.convertRowIndexToModel(table.getEditingRow());
         Object o = table.getModel().getValueAt(row, 0);
         fireEditingStopped();
-        JOptionPane.showMessageDialog(table, "Editing: "+o);
+        JOptionPane.showMessageDialog(table, "Editing: " + o);
       }
     });
 
@@ -119,10 +119,10 @@ static void updateRendererOrEditorUI(Object rendererOrEditor) {
   }
   Component component = null;
   if (rendererOrEditor instanceof Component) {
-    component = (Component)rendererOrEditor;
+    component = (Component) rendererOrEditor;
   }
   if (rendererOrEditor instanceof DefaultCellEditor) {
-    component = ((DefaultCellEditor)rendererOrEditor).getComponent();
+    component = ((DefaultCellEditor) rendererOrEditor).getComponent();
   }
   if (component != null) {
     SwingUtilities.updateComponentTreeUI(component);
@@ -133,7 +133,7 @@ static void updateRendererOrEditorUI(Object rendererOrEditor) {
 
 - - - -
 - `JSpinner`(`2`つの`JButton`と`JTextField`の組み合わせ)を`CellEditor`に使用する
-    - [CellEditorをJSpinnerにして日付を変更](http://terai.xrea.jp/Swing/DateCellEditor.html)
+    - [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -209,8 +209,8 @@ class SpinnerRenderer extends SpinnerPanel implements TableCellRenderer {
   }
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-    setBackground(isSelected?table.getSelectionBackground():table.getBackground());
-    spinner.setValue((Integer)value);
+    setBackground(isSelected ? table.getSelectionBackground() : table.getBackground());
+    spinner.setValue((Integer) value);
     return this;
   }
 }
@@ -222,7 +222,7 @@ class SpinnerEditor extends SpinnerPanel implements TableCellEditor {
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {
     this.setBackground(table.getSelectionBackground());
-    spinner.setValue((Integer)value);
+    spinner.setValue((Integer) value);
     return this;
   }
   @Override public Object getCellEditorValue() {
@@ -234,7 +234,7 @@ class SpinnerEditor extends SpinnerPanel implements TableCellEditor {
     //  // the last valid value, you could revert the spinner to show that:
     //  JComponent editor = spinner.getEditor();
     //  if (editor instanceof JSpinner.DefaultEditor) {
-    //    ((JSpinner.DefaultEditor)editor).getTextField().setValue(spinner.getValue());
+    //    ((JSpinner.DefaultEditor) editor).getTextField().setValue(spinner.getValue());
     //  }
     //}
     return spinner.getValue();
@@ -261,7 +261,7 @@ class SpinnerEditor extends SpinnerPanel implements TableCellEditor {
       // the last valid value, you could revert the spinner to show that:
       //JComponent editor = spinner.getEditor();
       //if (editor instanceof JSpinner.DefaultEditor) {
-      //  ((JSpinner.DefaultEditor)editor).getTextField().setValue(spinner.getValue());
+      //  ((JSpinner.DefaultEditor) editor).getTextField().setValue(spinner.getValue());
       //}
     }
     fireEditingStopped();
@@ -284,11 +284,11 @@ class SpinnerEditor extends SpinnerPanel implements TableCellEditor {
     Object[] listeners = listenerList.getListenerList();
     // Process the listeners last to first, notifying
     // those that are interested in this event
-    for(int i = listeners.length-2; i&gt;=0; i-=2) {
-      if(listeners[i]==CellEditorListener.class) {
+    for (int i = listeners.length - 2; i &gt;= 0; i -= 2) {
+      if (listeners[i] == CellEditorListener.class) {
         // Lazily create the event:
-        if(changeEvent == null) changeEvent = new ChangeEvent(this);
-        ((CellEditorListener)listeners[i+1]).editingStopped(changeEvent);
+        if (changeEvent == null) changeEvent = new ChangeEvent(this);
+        ((CellEditorListener) listeners[i + 1]).editingStopped(changeEvent);
       }
     }
   }
@@ -297,11 +297,11 @@ class SpinnerEditor extends SpinnerPanel implements TableCellEditor {
     Object[] listeners = listenerList.getListenerList();
     // Process the listeners last to first, notifying
     // those that are interested in this event
-    for(int i = listeners.length-2; i&gt;=0; i-=2) {
-      if(listeners[i]==CellEditorListener.class) {
+    for (int i = listeners.length - 2; i &gt;= 0; i -= 2) {
+      if (listeners[i] == CellEditorListener.class) {
         // Lazily create the event:
-        if(changeEvent == null) changeEvent = new ChangeEvent(this);
-        ((CellEditorListener)listeners[i+1]).editingCanceled(changeEvent);
+        if (changeEvent == null) changeEvent = new ChangeEvent(this);
+        ((CellEditorListener) listeners[i + 1]).editingCanceled(changeEvent);
       }
     }
   }
@@ -322,7 +322,7 @@ class ButtonsPanel extends JPanel {
     label.setHorizontalAlignment(SwingConstants.RIGHT);
     setOpaque(true);
     add(label);
-    for(JButton b: buttons) {
+    for (JButton b: buttons) {
       b.setFocusable(false);
       b.setRolloverEnabled(false);
       add(b);
@@ -336,8 +336,8 @@ class ButtonsRenderer extends ButtonsPanel implements TableCellRenderer {
   }
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-    this.setBackground(isSelected?table.getSelectionBackground():table.getBackground());
-    label.setText(value!=null?value.toString():"");
+    this.setBackground(isSelected ? table.getSelectionBackground() : table.getBackground());
+    label.setText(value != null ? value.toString() : "");
     return this;
   }
 }
@@ -347,7 +347,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     buttons.get(0).addActionListener(new ActionListener() {
       @Override public void actionPerformed(ActionEvent e) {
         i++;
-        label.setText(""+i);
+        label.setText("" + i);
         fireEditingStopped();
       }
     });
@@ -355,7 +355,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     buttons.get(1).addActionListener(new ActionListener() {
       @Override public void actionPerformed(ActionEvent e) {
         i--;
-        label.setText(""+i);
+        label.setText("" + i);
         fireEditingStopped();
       }
     });
@@ -369,8 +369,8 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {
     this.setBackground(table.getSelectionBackground());
-    i = (Integer)value;
-    label.setText(""+i);
+    i = (Integer) value;
+    label.setText("" + i);
     return this;
   }
   @Override public Object getCellEditorValue() {
@@ -408,11 +408,11 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     Object[] listeners = listenerList.getListenerList();
     // Process the listeners last to first, notifying
     // those that are interested in this event
-    for(int i = listeners.length-2; i&gt;=0; i-=2) {
-      if(listeners[i]==CellEditorListener.class) {
+    for (int i = listeners.length - 2; i &gt;= 0; i -= 2) {
+      if (listeners[i]==CellEditorListener.class) {
         // Lazily create the event:
-        if(changeEvent == null) changeEvent = new ChangeEvent(this);
-        ((CellEditorListener)listeners[i+1]).editingStopped(changeEvent);
+        if (changeEvent == null) changeEvent = new ChangeEvent(this);
+        ((CellEditorListener) listeners[i + 1]).editingStopped(changeEvent);
       }
     }
   }
@@ -421,11 +421,11 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     Object[] listeners = listenerList.getListenerList();
     // Process the listeners last to first, notifying
     // those that are interested in this event
-    for(int i = listeners.length-2; i&gt;=0; i-=2) {
-      if(listeners[i]==CellEditorListener.class) {
+    for (int i = listeners.length - 2; i &gt;= 0; i -= 2) {
+      if (listeners[i]==CellEditorListener.class) {
         // Lazily create the event:
-        if(changeEvent == null) changeEvent = new ChangeEvent(this);
-        ((CellEditorListener)listeners[i+1]).editingCanceled(changeEvent);
+        if (changeEvent == null) changeEvent = new ChangeEvent(this);
+        ((CellEditorListener) listeners[i + 1]).editingCanceled(changeEvent);
       }
     }
   }
@@ -433,11 +433,11 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
 </code></pre>
 
 ## 参考リンク
-- [JTableのセルにJButtonを追加して行削除](http://terai.xrea.jp/Swing/DeleteButtonInCell.html)
-- [JTableのセルにHyperlinkを表示](http://terai.xrea.jp/Swing/HyperlinkInTableCell.html)
+- [JTableのセルにJButtonを追加して行削除](http://ateraimemo.com/Swing/DeleteButtonInCell.html)
+- [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
 - [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
-- [JTableのセル中にJRadioButtonを配置](http://terai.xrea.jp/Swing/RadioButtonsInTableCell.html)
-- [JTableのCellにJCheckBoxを複数配置する](http://terai.xrea.jp/Swing/CheckBoxesInTableCell.html)
+- [JTableのセル中にJRadioButtonを配置](http://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
+- [JTableのCellにJCheckBoxを複数配置する](http://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -80,7 +80,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JComboBoxの色を変更](http://terai.xrea.jp/Swing/ColorComboBox.html)
+- [JComboBoxの色を変更](http://ateraimemo.com/Swing/ColorComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 
