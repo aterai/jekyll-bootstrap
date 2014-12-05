@@ -7,6 +7,9 @@ tags: [JTabbedPane]
 author: aterai
 pubdate: 2010-04-05T04:28:58+09:00
 description: JTabbedPaneで選択したタブの高さを変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/04/jtabbedpane-selected-tab-height.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -24,12 +27,12 @@ comments: true
   @Override protected void paintTab(
       Graphics g, int tabPlacement, Rectangle[] rects,
       int tabIndex, Rectangle iconRect, Rectangle textRect) {
-    if(tabPane.getSelectedIndex()!=tabIndex &amp;&amp;
-       tabPlacement!=JTabbedPane.LEFT &amp;&amp;
-       tabPlacement!=JTabbedPane.RIGHT) {
-      int tabHeight = tabAreaHeight/2 + 3;
+    if (tabPane.getSelectedIndex() != tabIndex &amp;&amp;
+        tabPlacement != JTabbedPane.LEFT &amp;&amp;
+        tabPlacement != JTabbedPane.RIGHT) {
+      int tabHeight = tabAreaHeight / 2 + 3;
       rects[tabIndex].height = tabHeight;
-      if(tabPlacement==JTabbedPane.TOP) {
+      if (tabPlacement == JTabbedPane.TOP) {
         rects[tabIndex].y = tabAreaHeight - tabHeight + 3;
       }
     }
@@ -68,8 +71,8 @@ private final JTabbedPane tabbedPane = new JTabbedPane(
 //...
 comboBox.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()==ItemEvent.SELECTED) {
-      tabbedPane.setTabPlacement(((TabPlacements)e.getItem()).tabPlacement);
+    if (e.getStateChange() == ItemEvent.SELECTED) {
+      tabbedPane.setTabPlacement(((TabPlacements) e.getItem()).tabPlacement);
     }
   }
 });

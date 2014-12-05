@@ -21,7 +21,7 @@ comments: true
   private int yy = 0;
   private JToolBar toolBox = new JToolBar() {
     @Override protected void paintComponent(Graphics g) {
-      Graphics2D g2 = (Graphics2D)g;
+      Graphics2D g2 = (Graphics2D) g;
       g2.setPaint(getBackground());
       g2.fillRect(0, 0, getWidth(), getHeight());
       super.paintComponent(g);

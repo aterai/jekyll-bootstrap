@@ -6,20 +6,20 @@ title: JComponentの表示状態
 tags: [JComponent, HierarchyListener, JScrollPane, JTabbedPane, CardLayout]
 author: aterai
 pubdate: 2009-04-20T14:24:13+09:00
-description: JComponentの表示状態をテストします。
+description: JComponentの表示状態が切り替わった時、そのisDisplayable、isShowing、isVisibleメソッドが返す値をテストします。
 comments: true
 ---
 ## 概要
-`JComponent`の表示状態をテストします。
+`JComponent`の表示状態が切り替わった時、その`isDisplayable`、`isShowing`、`isVisible`メソッドが返す値をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS-a1ZnQI/AAAAAAAAAjo/jB4n-1WmEIs/s800/ShowingDisplayableVisible.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>button.addHierarchyListener(new HierarchyListener() {
   @Override public void hierarchyChanged(HierarchyEvent e) {
-    if((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED)!=0) {
+    if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0) {
       printInfo("SHOWING_CHANGED");
-    }else if((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED)!=0) {
+    } else if ((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0) {
       printInfo("DISPLAYABILITY_CHANGED");
     }
   }

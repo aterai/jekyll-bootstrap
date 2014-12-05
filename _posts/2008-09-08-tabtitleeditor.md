@@ -7,6 +7,9 @@ tags: [JTabbedPane, JTextField, MouseListener, ChangeListener, InputMap, ActionM
 author: aterai
 pubdate: 2008-09-08T14:02:08+09:00
 description: JTabbedPaneで選択されたタブにJTextFieldを配置し、そのタイトルを編集します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/09/double-click-on-each-tab-and-change-its.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -34,7 +37,7 @@ private void startEditing() {
 }
 private void cancelEditing() {
   //System.out.println("cancel");
-  if(editing_idx&gt;=0) {
+  if (editing_idx &gt;= 0) {
     tabbedPane.setTabComponentAt(editing_idx, tabComponent);
     editor.setVisible(false);
     editing_idx = -1;
@@ -46,7 +49,7 @@ private void cancelEditing() {
 private void renameTabTitle() {
   //System.out.println("rename");
   String title = editor.getText().trim();
-  if(editing_idx&gt;=0 &amp;&amp; !title.isEmpty()) {
+  if (editing_idx &gt;= 0 &amp;&amp; !title.isEmpty()) {
     tabbedPane.setTitleAt(editing_idx, title);
   }
   cancelEditing();

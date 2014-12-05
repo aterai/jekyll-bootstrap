@@ -37,7 +37,7 @@ comments: true
     super.doLayout();
   }
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     if(gvtext!=null) {
       Insets i = getInsets();
       g2.setPaint(Color.RED);
@@ -76,7 +76,7 @@ comments: true
     - デフォルトの`JLabel`で右側が`...`で省略されている
 - 中: `GlyphVector`
     - コンポーネントのサイズが変更されるたびに`GlyphVector`を更新して、文字列の折り返しを行っている
-    - 欧文などで合字(リガチャ)がある場合は、`GlyphVector gv = font.createGlyphVector(frc, str);`ではなく、[GlyphVector bounds and kerning, ligatures | Oracle Forums](https://forums.oracle.com/thread/1289266)のように、`char[] chars = text.toCharArray(); GlyphVector gv = font.layoutGlyphVector(frc, chars, 0, chars.length, Font.LAYOUT_LEFT_TO_RIGHT);`とした方が良いかもしれない。
+    - 欧文などで合字(リガチャ)がある場合は、`GlyphVector gv = font.createGlyphVector(frc, str);`ではなく、[GlyphVector bounds and kerning, ligatures | Oracle Forums](https://community.oracle.com/thread/1289266)のように、`char[] chars = text.toCharArray(); GlyphVector gv = font.layoutGlyphVector(frc, chars, 0, chars.length, Font.LAYOUT_LEFT_TO_RIGHT);`とした方が良いかもしれない。
 - 下: `JTextArea`
     - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として、文字列の折り返しを行っている
 
@@ -96,7 +96,7 @@ comments: true
     super(text);
   }
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setPaint(getForeground());
     Insets i = getInsets();
     float x = i.left;

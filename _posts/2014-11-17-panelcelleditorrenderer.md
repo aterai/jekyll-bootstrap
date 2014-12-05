@@ -1,0 +1,120 @@
+---
+layout: post
+category: swing
+folder: PanelCellEditorRenderer
+title: JTableのCellEditorにJPanelを使用して複数コンポーネントを配置
+tags: [JTable, TableCellEditor, TableCellRenderer, JPanel, JButton, JSpinner]
+author: aterai
+pubdate: 2014-11-17T00:00:08+09:00
+description: JTableのCellEditor、CellRendererにJPanelを使用することで、内部に複数コンポーネントを配置したり、セル内の余白を追加します。
+comments: true
+---
+## 概要
+`JTable`の`CellEditor`、`CellRenderer`に`JPanel`を使用することで、内部に複数コンポーネントを配置したり、セル内の余白を追加します。
+
+{% download https://lh4.googleusercontent.com/-_MCc8pkoFGY/VGitX9B0RsI/AAAAAAAANpg/zAG38GESdsU/s800/PanelCellEditorRenderer.png %}
+
+## サンプルコード
+<pre class="prettyprint"><code>class ButtonsPanel extends JPanel {
+  public final List&lt;JButton&gt; buttons = Arrays.asList(
+      new JButton("+"), new JButton("-"));
+  public final JLabel label = new JLabel() {
+    @Override public Dimension getPreferredSize() {
+      Dimension d = super.getPreferredSize();
+      d.width = 50;
+      return d;
+    }
+  };
+  public int i = -1;
+  public ButtonsPanel() {
+    super();
+    label.setHorizontalAlignment(SwingConstants.RIGHT);
+    setOpaque(true);
+    add(label);
+    for (JButton b : buttons) {
+      b.setFocusable(false);
+      b.setRolloverEnabled(false);
+      add(b);
+    }
+  }
+}
+
+class ButtonsRenderer extends ButtonsPanel implements TableCellRenderer {
+  public ButtonsRenderer() {
+    super();
+    setName("Table.cellRenderer");
+  }
+  @Override public Component getTableCellRendererComponent(
+      JTable table, Object value, boolean isSelected,
+      boolean hasFocus, int row, int column) {
+    this.setBackground(isSelected ? table.getSelectionBackground()
+                                  : table.getBackground());
+    label.setForeground(isSelected ? table.getSelectionForeground()
+                                   : table.getForeground());
+    label.setText(Objects.toString(value, ""));
+    return this;
+  }
+}
+
+class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
+  public ButtonsEditor() {
+    super();
+    buttons.get(0).addActionListener(new ActionListener() {
+      @Override public void actionPerformed(ActionEvent e) {
+        i++;
+        label.setText("" + i);
+        fireEditingStopped();
+      }
+    });
+
+    buttons.get(1).addActionListener(new ActionListener() {
+      @Override public void actionPerformed(ActionEvent e) {
+        i--;
+        label.setText("" + i);
+        fireEditingStopped();
+      }
+    });
+
+    addMouseListener(new MouseAdapter() {
+      @Override public void mousePressed(MouseEvent e) {
+        fireEditingStopped();
+      }
+    });
+  }
+  @Override public Component getTableCellEditorComponent(
+    JTable table, Object value, boolean isSelected, int row, int column) {
+    this.setBackground(table.getSelectionBackground());
+    label.setForeground(table.getSelectionForeground());
+    i = (Integer) value;
+    label.setText("" + i);
+    return this;
+  }
+  @Override public Object getCellEditorValue() {
+    return i;
+  }
+
+  //Copied from AbstractCellEditor
+  //...
+</code></pre>
+
+## 解説
+- 左: `JPanel` + `JSpinner`
+    - `TableCellEditor`, `TableCellRenderer`に`JSpinner`を配置した`JPanel`を使用
+    - `JPanel`に`GridBagLayout`を指定し、`insets = new Insets(0, 10, 0, 10)`、`fill = GridBagConstraints.HORIZONTAL`で余白を設定
+    - [JTableのCellEditorに設定したJComboBoxに余白を追加する](http://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
+- 右: `JPanel` + `JLabel` + `JButton`
+    - `TableCellEditor`, `TableCellRenderer`に`JLabel`と`2`つの`JButton`を配置した`JPanel`を使用
+    - `JPanel`には`FlowLayout`を指定(カラム幅が狭くなって、折り返しが発生してもセルの高さは一定)
+    - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [TableCellEditorのレイアウトを変更](http://ateraimemo.com/Swing/CellEditorLayout.html)
+- [JTableのCellEditorに設定したJComboBoxに余白を追加する](http://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
+- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

@@ -6,20 +6,20 @@ title: JToolTipにBorderを設定
 tags: [JToolTip, Border]
 author: aterai
 pubdate: 2005-08-15
-description: ツールチップにBorderを設定します。
+description: JComponentのcreateToolTip()メソッドをオーバーライドして、Borderを変更したJToolTipを生成します。
 comments: true
 ---
 ## 概要
-ツールチップに`Border`を設定します。
+`JComponent`の`createToolTip()`メソッドをオーバーライドして、`Border`を変更した`JToolTip`を生成します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVjcQsX6I/AAAAAAAAAn0/tieki8bniAM/s800/ToolTipBorder.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JButton button = new JButton() {
-  public JToolTip createToolTip() {
+  @Override public JToolTip createToolTip() {
     JToolTip tip = new JToolTip();
     Border b1 = tip.getBorder();
-    Border b2 = BorderFactory.createMatteBorder(0,10,0,0,Color.GREEN);
+    Border b2 = BorderFactory.createMatteBorder(0, 10, 0, 0, Color.GREEN);
     tip.setBorder(BorderFactory.createCompoundBorder(b1, b2));
     tip.setComponent(this);
     return tip;
@@ -29,6 +29,6 @@ button.setToolTipText("テスト");
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComponent#createToolTip`メソッドをオーバーライドし、その中で`Border`を設定した`JToolTip`を生成しています。
+上記のサンプルでは、`JComponent#createToolTip()`メソッドをオーバーライドし、その中で`Border`を設定した`JToolTip`を生成しています。
 
 ## コメント

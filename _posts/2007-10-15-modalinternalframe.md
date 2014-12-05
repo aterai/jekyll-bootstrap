@@ -7,6 +7,9 @@ tags: [JInternalFrame, GlassPane, Mnemonic, JDesktopPane, JToolTip, JLayeredPane
 author: aterai
 pubdate: 2007-10-15T13:17:37+09:00
 description: JInternalFrameをModalにして、他のJInternalFrameなどを操作できないようにブロックします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/10/modal-internal-frame.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -35,7 +38,7 @@ class ModalInternalFrameAction2 extends AbstractAction {
     super(label);
     Rectangle screen = frame.getGraphicsConfiguration().getBounds();
     glass.setBorder(BorderFactory.createEmptyBorder());
-    glass.setLocation(0,0);
+    glass.setLocation(0, 0);
     glass.setSize(screen.width, screen.height);
     glass.setOpaque(false);
     glass.setVisible(false);
@@ -76,12 +79,12 @@ class ModalInternalFrameAction3 extends AbstractAction {
     });
     glass.add(modal);
     //Rectangle screen = desktop.getBounds();
-    //modal.setLocation(screen.x + screen.width/2  - modal.getSize().width/2,
-    //                  screen.y + screen.height/2 - modal.getSize().height/2);
+    //modal.setLocation(screen.x + screen.width / 2  - modal.getSize().width / 2,
+    //                  screen.y + screen.height / 2 - modal.getSize().height / 2);
     frame.setGlassPane(glass);
     glass.setVisible(true);
     modal.setVisible(true);
-    try{
+    try {
       modal.setSelected(true);
     }catch(java.beans.PropertyVetoException ex) {}
   }
@@ -126,12 +129,12 @@ class ModalInternalFrameAction3 extends AbstractAction {
 <pre class="prettyprint"><code>JInternalFrame modal = optionPane.createInternalFrame(desktop, "modal3");
 JComboBox combo = new JComboBox(new String[] {"Banana", "Apple", "Pear", "Grape"});
 combo.setEditable(true);
-try{
+try {
   Field field;
-  if(System.getProperty("java.version").startsWith("1.6.0")) {
+  if (System.getProperty("java.version").startsWith("1.6.0")) {
     Class clazz = Class.forName("javax.swing.PopupFactory");
     field = clazz.getDeclaredField("forceHeavyWeightPopupKey");
-  }else{ //1.7.0, 1.8.0
+  } else { //1.7.0, 1.8.0
     Class clazz = Class.forName("javax.swing.ClientPropertyKey");
     field = clazz.getDeclaredField("PopupFactory_FORCE_HEAVYWEIGHT_POPUP");
   }
@@ -167,13 +170,13 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
     boolean oldVisible = isVisible();
     super.setVisible(isVisible);
     JRootPane rootPane = SwingUtilities.getRootPane(this);
-    if(rootPane!=null &amp;&amp; isVisible()!=oldVisible) {
+    if (rootPane != null &amp;&amp; isVisible() != oldVisible) {
       rootPane.getLayeredPane().setVisible(!isVisible);
     }
   }
   @Override public void paintComponent(Graphics g) {
     JRootPane rootPane = SwingUtilities.getRootPane(this);
-    if(rootPane!=null) {
+    if (rootPane != null) {
       //http://weblogs.java.net/blog/alexfromsun/archive/2008/01/
       // it is important to call print() instead of paint() here
       // because print() doesn't affect the frame's double buffer
@@ -181,7 +184,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
     }
     Graphics2D g2 = (Graphics2D) g;
     g2.setPaint(texture);
-    g2.fillRect(0,0,getWidth(),getHeight());
+    g2.fillRect(0, 0, getWidth(), getHeight());
   }
 }
 </code></pre>
@@ -211,9 +214,9 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 <pre class="prettyprint"><code>KeyboardFocusManager manager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 KeyboardFocusManager.setCurrentKeyboardFocusManager(new DefaultKeyboardFocusManager() {
   @Override public boolean dispatchEvent(AWTEvent e) {
-    if(e instanceof KeyEvent) {
-      KeyEvent ke = (KeyEvent)e;
-      if((ke.getModifiers() &amp; InputEvent.ALT_MASK) != 0) {
+    if (e instanceof KeyEvent) {
+      KeyEvent ke = (KeyEvent) e;
+      if ((ke.getModifiers() &amp; InputEvent.ALT_DOWN_MASK) != 0) {
         System.out.println("----\n"+ke);
         return false;
       }

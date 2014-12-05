@@ -7,6 +7,9 @@ tags: [JMenuItem, Locale, KeyEvent, ResourceBundle, Alignment, GridBagLayout]
 author: aterai
 pubdate: 2013-09-30T05:06:53+09:00
 description: JMenuItemのAccelerator表示を右揃えに変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2014/10/jmenuitem-accelerator-text-alignment.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -144,7 +147,7 @@ public class awt_ja extends ListResourceBundle {
 </code></pre>
 
 ## 参考リンク
-- [Swing - Localized Accelorator Keys](https://forums.oracle.com/thread/1364746)
+- [Swing - Localized Accelorator Keys](https://community.oracle.com/thread/1364746)
 - [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 
 <!-- dummy comment line for breaking list -->

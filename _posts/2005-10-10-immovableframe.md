@@ -39,7 +39,7 @@ internalframe.pack();
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOZ803FiI/AAAAAAAAAcU/Bj1t9F8ZKqI/s800/ImmovableFrame1.png)
 
 ## 参考リンク
-- [Swing - Lock JInternalPane](https://forums.oracle.com/thread/1392111)
+- [Swing - Lock JInternalPane](https://community.oracle.com/thread/1392111)
 
 <!-- dummy comment line for breaking list -->
 

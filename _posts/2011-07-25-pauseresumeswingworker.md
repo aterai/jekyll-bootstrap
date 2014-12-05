@@ -7,6 +7,9 @@ tags: [SwingWorker, JProgressBar, JTextArea]
 author: aterai
 pubdate: 2011-07-25T14:41:32+09:00
 description: SwingWorkerで処理の一時停止と再開を行います。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/07/pause-and-resume-swingworker.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -35,14 +38,14 @@ comments: true
         int lengthOfTask = 12; //filelist.size();
         publish(new Progress(Component.LOG, "Length Of Task: " + lengthOfTask));
         publish(new Progress(Component.LOG, "\n---------------------------\n"));
-        while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
+        while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
           publish(new Progress(Component.LOG, "*"));
-          if(!bar1.isDisplayable()) {
+          if (!bar1.isDisplayable()) {
             return "Disposed";
           }
-          try{
+          try {
             convertFileToSomething();
-          }catch(InterruptedException ie) {
+          } catch (InterruptedException ie) {
             return "Interrupted";
           }
           publish(new Progress(Component.TOTAL, 100 * current / lengthOfTask));
@@ -55,12 +58,12 @@ comments: true
       private void convertFileToSomething() throws InterruptedException{
         boolean flag = false;
         int current = 0;
-        int lengthOfTask = 10+r.nextInt(50);
-        while(current&lt;=lengthOfTask &amp;&amp; !isCancelled()) {
-          if(isPaused) {
-            try{
+        int lengthOfTask = 10 + r.nextInt(50);
+        while (current &lt;= lengthOfTask &amp;&amp; !isCancelled()) {
+          if (isPaused) {
+            try {
               Thread.sleep(500);
-            }catch(InterruptedException ie) {
+            } catch (InterruptedException ie) {
               return;
             }
             publish(new Progress(Component.PAUSE, flag));
@@ -69,24 +72,24 @@ comments: true
           }
           int iv = 100 * current / lengthOfTask;
           Thread.sleep(20); // dummy
-          publish(new Progress(Component.FILE, iv+1));
+          publish(new Progress(Component.FILE, iv + 1));
           current++;
         }
       }
       @Override protected void process(java.util.List&lt;Progress&gt; chunks) {
-        for(Progress s: chunks) {
-          switch(s.component) {
-            case TOTAL: bar1.setValue((Integer)s.value); break;
-            case FILE:  bar2.setValue((Integer)s.value); break;
-            case LOG:   area.append((String)s.value); break;
+        for (Progress s: chunks) {
+          switch (s.component) {
+            case TOTAL: bar1.setValue((Integer) s.value); break;
+            case FILE:  bar2.setValue((Integer) s.value); break;
+            case LOG:   area.append((String) s.value); break;
             case PAUSE: {
-              if((Boolean)s.value) {
+              if ((Boolean) s.value) {
                 area.append("*");
-              }else{
-                try{
+              } else {
+                try {
                   Document doc = area.getDocument();
-                  doc.remove(area.getDocument().getLength()-1, 1);
-                }catch(Exception ex) {
+                  doc.remove(area.getDocument().getLength() - 1, 1);
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
               }
@@ -103,14 +106,14 @@ comments: true
   }
 }
 private boolean isPaused = false;
-class PauseAction extends AbstractAction{
+class PauseAction extends AbstractAction {
   public PauseAction() {
     super("pause");
   }
   @Override public void actionPerformed(ActionEvent evt) {
-    isPaused = (worker!=null &amp;&amp; !worker.isCancelled() &amp;&amp; !isPaused);
-    JButton b = (JButton)evt.getSource();
-    b.setText(isPaused?"resume":"pause");
+    isPaused = (worker != null &amp;&amp; !worker.isCancelled() &amp;&amp; !isPaused);
+    JButton b = (JButton) evt.getSource();
+    b.setText(isPaused ? "resume" : "pause");
   }
 }
 </code></pre>

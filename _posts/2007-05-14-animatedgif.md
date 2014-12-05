@@ -15,13 +15,13 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTHnR-lE1I/AAAAAAAAARc/gDDOKXhD7hQ/s800/AnimatedGif.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JLabel label1 = new JLabel("何もしない　　　",
+<pre class="prettyprint"><code>JLabel label1 = new JLabel("何もしない",
   new ImageIcon(getClass().getResource("no_disposal_specified.gif")),
   JLabel.LEFT);
-JLabel label2 = new JLabel("そのまま残す　　",
+JLabel label2 = new JLabel("そのまま残す",
   new ImageIcon(getClass().getResource("do_not_dispose.gif")),
   JLabel.LEFT);
-JLabel label3 = new JLabel("背景色でつぶす　",
+JLabel label3 = new JLabel("背景色でつぶす",
   new ImageIcon(getClass().getResource("restore_to_background_color.gif")),
   JLabel.LEFT);
 JLabel label4 = new JLabel("直前の画像に戻す",

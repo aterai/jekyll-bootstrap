@@ -7,6 +7,9 @@ tags: [JToolBar, JButton, JPopupMenu, MouseListener, GridLayout, Timer]
 author: aterai
 pubdate: 2009-01-26T13:29:29+09:00
 description: JToolBarに、長押しでJPopupMenu、クリックで選択されたメニューを表示するボタンを追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2014/03/long-pressing-jbutton-to-get-jpopupmenu.html
+    lang: en
 comments: true
 ---
 ## 概要

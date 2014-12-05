@@ -6,16 +6,16 @@ title: DefaultButtonの設定
 tags: [JRootPane, JButton, JTextField, Focus]
 author: aterai
 pubdate: 2008-05-12T14:39:12+09:00
-description: DefaultButtonをJRootPaneに設定します。
+description: 自身の親となるJRootPaneを取得し、これにEnterキー入力で起動するデフォルトのJButtonを設定します。
 comments: true
 ---
 ## 概要
-`DefaultButton`を`JRootPane`に設定します。
+自身の親となる`JRootPane`を取得し、これに<kbd>Enter</kbd>キー入力で起動するデフォルトの`JButton`を設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKiSOjSTI/AAAAAAAAAWI/e462LXNNrYU/s800/DefaultButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>frame.getRootPane().setDefaultButton(button1);
+<pre class="prettyprint"><code>button1.getRootPane().setDefaultButton(button1);
 </code></pre>
 
 ## 解説

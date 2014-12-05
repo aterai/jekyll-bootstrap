@@ -20,7 +20,7 @@ comments: true
   @Override public Component getTableCellRendererComponent(JTable t,
       Object val, boolean isS, boolean hasF, int row, int col) {
     TableCellRenderer r = t.getTableHeader().getDefaultRenderer();
-    JLabel l = (JLabel)r.getTableCellRendererComponent(t, val, isS, hasF, row, col);
+    JLabel l = (JLabel) r.getTableCellRendererComponent(t, val, isS, hasF, row, col);
     l.setFont(font);
     return l;
   }
@@ -39,7 +39,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-コメントで[いつも見てます](http://ateraimemo.com/いつも見てます.html)さんが指摘しているように、以下の様に`JTableHeader#setFont()`メソッドを使用すると、全ヘッダカラムのフォントを指定することができます。
+コメントで*いつも見てます*さんが指摘しているように、以下の様に`JTableHeader#setFont()`メソッドを使用すると、全ヘッダカラムのフォントを指定することができます。
 
 <pre class="prettyprint"><code>table.getTableHeader().setFont(font);
 </code></pre>

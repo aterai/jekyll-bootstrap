@@ -36,8 +36,8 @@ comments: true
 上記のサンプルでは、`JFrame`を上下に並べて、それぞれに`ComponentListener`インタフェースを実装したリスナーを追加しています。片方のフレームが移動された時、残りのフレームの位置を指定する前に、一旦このリスナーを削除してやることで、処理がループしないようになっています。
 
 ## 参考リンク
-- [Swing (Archive) - how to dock two jdialogs?](https://forums.oracle.com/thread/1479997)
-- [Swing (Archive) - how to catch drag event in the title bar of a jframe](https://forums.oracle.com/thread/1492552)
+- [Swing (Archive) - how to dock two jdialogs?](https://community.oracle.com/thread/1479997)
+- [Swing (Archive) - how to catch drag event in the title bar of a jframe](https://community.oracle.com/thread/1492552)
 
 <!-- dummy comment line for breaking list -->
 

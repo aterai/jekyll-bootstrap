@@ -7,6 +7,9 @@ tags: [JProgressBar, SwingWorker]
 author: aterai
 pubdate: 2014-06-02T00:02:59+09:00
 description: JProgressBarの進捗状況を円形表示するように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2014/06/how-to-create-circular-progress.html
+    lang: en
 comments: true
 ---
 ## 概要

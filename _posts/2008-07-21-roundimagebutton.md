@@ -7,6 +7,9 @@ tags: [JButton, Shape, ImageIcon]
 author: aterai
 pubdate: 2008-07-21T16:27:56+09:00
 description: 任意のShapeとその形に透過色を設定した画像を使ってJButtonを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/07/create-round-image-jbutton.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -59,7 +62,7 @@ comments: true
   }
   @Override protected void paintBorder(Graphics g) {
     initShape();
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                         RenderingHints.VALUE_ANTIALIAS_ON);
     g2.setColor(getBackground());

@@ -7,6 +7,9 @@ tags: [Icon, Shape, PathIterator]
 author: aterai
 pubdate: 2009-03-30T14:13:46+09:00
 description: ShapeからPathIteratorを取得し、このPathをSVGに変換します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/02/get-svg-from-pathiterator.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -23,20 +26,21 @@ comments: true
   sb.append(String.format("  &lt;desc&gt;%s&lt;/desc&gt;%n", desc));
   sb.append("  &lt;path d=\"");
   double[] c = new double[6];
-  while(!pi.isDone()) {
-    switch(pi.currentSegment(c)) {
+  while (!pi.isDone()) {
+    switch (pi.currentSegment(c)) {
       case PathIterator.SEG_MOVETO:
         sb.append(String.format("M%.2f,%.2f ", c[0], c[1])); break;
       case PathIterator.SEG_LINETO:
         sb.append(String.format("L%.2f,%.2f ", c[0], c[1])); break;
       case PathIterator.SEG_QUADTO:
-        sb.append(String.format("Q%.2f,%.2f,%.2f,%.2f ",c[0],c[1],c[2],c[3]));
+        sb.append(String.format("Q%.2f,%.2f,%.2f,%.2f ", c[0], c[1], c[2], c[3]));
         break;
       case PathIterator.SEG_CUBICTO:
-        sb.append(String.format("C%.2f,%.2f,%.2f,%.2f,%.2f,%.2f ",c[0],c[1],c[2],c[3],c[4],c[5]));
+        sb.append(String.format("C%.2f,%.2f,%.2f,%.2f,%.2f,%.2f ", c[0], c[1], c[2], c[3], c[4], c[5]));
         break;
       case PathIterator.SEG_CLOSE:
-        sb.append("Z"); break;
+        sb.append("Z");
+        break;
     }
     pi.next();
   }

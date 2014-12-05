@@ -74,7 +74,7 @@ comments: true
 - - - -
 他にも、レイアウトマネージャーを利用して同様のことを行う方法があります。
 
-- [Swing - Any layout suggestions for this?](https://forums.oracle.com/thread/1389350)
+- [Swing - Any layout suggestions for this?](https://community.oracle.com/thread/1389350)
     - レイアウトマネージャーを自作するweebibさんの投稿 (reply 1)
     - `OverlayLayout`を利用するcamickrさんの投稿 (reply 2)
 

@@ -6,11 +6,11 @@ title: JTableのセルのハイライト
 tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener]
 author: aterai
 pubdate: 2005-03-21T07:27:38+09:00
-description: セル上にマウスがある場合、その色を変更します。
+description: JTableのセル上にマウスカーソルが存在する場合、その背景色を変更します。
 comments: true
 ---
 ## 概要
-セル上にマウスがある場合、その色を変更します。
+`JTable`のセル上にマウスカーソルが存在する場合、その背景色を変更します。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIqY941CI/AAAAAAAAATI/gk-sbbRE5gw/s800/CellHighlight.png %}
 
@@ -23,19 +23,21 @@ comments: true
     this.table = table;
   }
   public boolean isHighlightableCell(int row, int column) {
-    return this.row==row &amp;&amp; this.col==column;
+    return this.row == row &amp;&amp; this.col == column;
   }
   @Override public void mouseMoved(MouseEvent e) {
     Point pt = e.getPoint();
     row = table.rowAtPoint(pt);
     col = table.columnAtPoint(pt);
-    if(row&lt;0 || col&lt;0) {
-      row = -1; col = -1;
+    if (row &lt; 0 || col &lt; 0) {
+      row = -1;
+      col = -1;
     }
     table.repaint();
   }
   @Override public void mouseExited(MouseEvent e) {
-    row = -1; col = -1;
+    row = -1;
+    col = -1;
     table.repaint();
   }
 }
@@ -51,11 +53,11 @@ comments: true
   @Override public Component getTableCellRendererComponent(JTable table,
       Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-    setHorizontalAlignment((value instanceof Number)?RIGHT:LEFT);
-    if(highlighter.isHighlightableCell(row, column)) {
+    setHorizontalAlignment((value instanceof Number) ? RIGHT : LEFT);
+    if (highlighter.isHighlightableCell(row, column)) {
       setBackground(Color.RED);
-    }else{
-      setBackground(isSelected?table.getSelectionBackground():table.getBackground());
+    } else {
+      setBackground(isSelected ? table.getSelectionBackground() : table.getBackground());
     }
     return this;
   }
@@ -78,11 +80,11 @@ comments: true
   }
   @Override public Component prepareRenderer(TableCellRenderer r, int row, int column) {
     Component c = super.prepareRenderer(r, row, column);
-    if(highlighter.isHighlightableCell(row, column)) {
+    if (highlighter.isHighlightableCell(row, column)) {
       c.setBackground(Color.RED);
-    }else if(isRowSelected(row)) {
+    } else if (isRowSelected(row)) {
       c.setBackground(getSelectionBackground());
-    }else{
+    } else {
       c.setBackground(Color.WHITE);
     }
     return c;

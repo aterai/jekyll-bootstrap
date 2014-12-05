@@ -7,6 +7,9 @@ tags: [JTable, TableCellRenderer, JTextArea, JScrollPane]
 author: aterai
 pubdate: 2013-05-13T16:59:22+09:00
 description: JTableのセルを横方向に連結するセルレンダラーを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/05/column-spanning-tablecellrenderer.html
+    lang: en
 comments: true
 ---
 ## 概要

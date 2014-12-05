@@ -57,7 +57,7 @@ rightPane.addPropertyChangeListener(pcl);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - Regading SplitPanes](https://forums.oracle.com/thread/1376808)
+- [Swing - Regading SplitPanes](https://community.oracle.com/thread/1376808)
 
 <!-- dummy comment line for breaking list -->
 

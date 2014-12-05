@@ -7,6 +7,9 @@ tags: [JFrame, MouseListener, MouseMotionListener, JPanel, JLabel, ContentPane, 
 author: aterai
 pubdate: 2010-01-18T11:27:29+09:00
 description: JFrameのタイトルバーなどを非表示にして独自に描画し、これに移動リサイズなどの機能も追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/05/custom-decorated-titlebar-jframe.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -61,7 +64,7 @@ comments: true
 
 ## 解説
 上記のサンプルではタイトルバーを、`setUndecorated(true)`で非表示にし、移動可能にした`JPanel`を追加してタイトルバーにしています。
-リサイズは、[Swing - Undecorated and resizable dialog](https://forums.oracle.com/thread/1365156)や`BasicInternalFrameUI.java`、`MetalRootPaneUI#MouseInputHandler`などを参考にして、周辺にそれぞれ対応するリサイズカーソルを設定した`JLabel`を配置しています。
+リサイズは、[Swing - Undecorated and resizable dialog](https://community.oracle.com/thread/1365156)や`BasicInternalFrameUI.java`、`MetalRootPaneUI#MouseInputHandler`などを参考にして、周辺にそれぞれ対応するリサイズカーソルを設定した`JLabel`を配置しています。
 
 - - - -
 `JDK 1.7.0`の場合、`JFrame`の背景色を透明(`frame.setBackground(new Color(0,0,0,0));`)にし、`ContentPane`の左右上の角をクリアして透明にしています。
@@ -158,7 +161,7 @@ class DragWindowListener extends MouseAdapter {
 </code></pre>
 
 ## 参考リンク
-- [Swing - Undecorated and resizable dialog](https://forums.oracle.com/thread/1365156)
+- [Swing - Undecorated and resizable dialog](https://community.oracle.com/thread/1365156)
 - [JWindowをマウスで移動](http://ateraimemo.com/Swing/DragWindow.html)
 - [JInternalFrameをJFrameとして表示する](http://ateraimemo.com/Swing/InternalFrameTitleBar.html)
 - [JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)

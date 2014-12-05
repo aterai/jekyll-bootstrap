@@ -16,8 +16,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent e) {
-  if(startPos==null || startingBounds==null) return;
-  Point p = SwingUtilities.convertPoint((Component)e.getSource(), e.getX(), e.getY(), null);
+  if (startPos == null || startingBounds == null) return;
+  Point p = SwingUtilities.convertPoint(
+      (Component) e.getSource(), e.getX(), e.getY(), null);
   int deltaX = startPos.x - p.x;
   int deltaY = startPos.y - p.y;
   int newX = getX();
@@ -27,17 +28,19 @@ comments: true
 
   JComponent parent = (JComponent)getParent();
   Rectangle parentBounds = parent.getBounds();
-  Dimension min = new Dimension(50,50);
-  Dimension max = new Dimension(500,500);
+  Dimension min = new Dimension(50, 50);
+  Dimension max = new Dimension(500, 500);
 
-  switch(cursor) {
+  switch (cursor) {
     case Cursor.N_RESIZE_CURSOR: {
-      if(startingBounds.height + deltaY &lt; min.height) {
+      if (startingBounds.height + deltaY &lt; min.height) {
         deltaY = -(startingBounds.height - min.height);
-      }else if(startingBounds.height + deltaY &gt; max.height) {
+      } else if (startingBounds.height + deltaY &gt; max.height) {
         deltaY = max.height - startingBounds.height;
       }
-      if(startingBounds.y - deltaY &lt; 0) { deltaY = startingBounds.y; }
+      if (startingBounds.y - deltaY &lt; 0) {
+        deltaY = startingBounds.y;
+      }
       newX = startingBounds.x;
       newY = startingBounds.y - deltaY;
       newW = startingBounds.width;
@@ -45,9 +48,9 @@ comments: true
       break;
     }
     case Cursor.NE_RESIZE_CURSOR: {
-      if(startingBounds.height + deltaY &lt; min.height) {
+      if (startingBounds.height + deltaY &lt; min.height) {
         deltaY = -(startingBounds.height - min.height);
-//......
+//...
 </code></pre>
 
 ## 解説

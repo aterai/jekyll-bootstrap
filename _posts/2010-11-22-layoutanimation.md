@@ -15,24 +15,29 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO_fTHG-I/AAAAAAAAAdQ/9SHzG18aVW0/s800/LayoutAnimation.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private javax.swing.Timer animator = null;
+<pre class="prettyprint"><code>private Timer animator;
 private boolean isHidden = true;
 private final JPanel controls = new JPanel(new BorderLayout(5, 5) {
-  private int controlsHeight = 0;
-  private int controlsPreferredHeight = 0;
+  private int controlsHeight;
+  private int controlsPreferredHeight;
   @Override public Dimension preferredLayoutSize(Container target) {
+    //synchronized (target.getTreeLock()) {
     Dimension ps = super.preferredLayoutSize(target);
     controlsPreferredHeight = ps.height;
-    if(animator!=null) {
-      if(isHidden) {
-        if(controls.getHeight()&lt;controlsPreferredHeight) controlsHeight += 5;
-      }else{
-        if(controls.getHeight()&gt;0) controlsHeight -= 5;
+    if (animator != null) {
+      if (isHidden) {
+        if (controls.getHeight() &lt; controlsPreferredHeight) {
+          controlsHeight += 5;
+        }
+      } else {
+        if (controls.getHeight() &gt; 0) {
+          controlsHeight -= 5;
+        }
       }
-      if(controlsHeight&lt;=0) {
+      if (controlsHeight &lt;= 0) {
         controlsHeight = 0;
         animator.stop();
-      }else if(controlsHeight&gt;=controlsPreferredHeight) {
+      } else if (controlsHeight &gt;= controlsPreferredHeight) {
         controlsHeight = controlsPreferredHeight;
         animator.stop();
       }
@@ -41,12 +46,15 @@ private final JPanel controls = new JPanel(new BorderLayout(5, 5) {
     return ps;
   }
 });
+
 private Action makeShowHideAction() {
   return new AbstractAction("Show/Hide Search Box") {
     @Override public void actionPerformed(ActionEvent e) {
-      if(animator!=null &amp;&amp; animator.isRunning()) return;
-      isHidden = controls.getHeight()==0;
-      animator = new javax.swing.Timer(5, new ActionListener() {
+      if (animator!=null &amp;&amp; animator.isRunning()) {
+        return;
+      }
+      isHidden = controls.getHeight() == 0;
+      animator = new Timer(5, new ActionListener() {
         @Override public void actionPerformed(ActionEvent e) {
           controls.revalidate();
         }

@@ -17,10 +17,10 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>String[] columnNames = {"Type", "Value"};
 Object[][] data = {
-  {"String",  "text"    },
-  {"Date",  new Date()  },
-  {"Integer", 12      },
-  {"Double",  3.45    },
+  {"String",  "text"      },
+  {"Date",    new Date()  },
+  {"Integer", 12          },
+  {"Double",  3.45        },
   {"Boolean", Boolean.TRUE},
   {"Color",   Color.RED   }
 };
@@ -33,7 +33,7 @@ JTable table = new JTable(data, columnNames) {
   }
   @Override public TableCellRenderer getCellRenderer(int row, int column) {
     //editingClass = null;
-    if(convertColumnIndexToModel(column)==1) {
+    if (convertColumnIndexToModel(column) == 1) {
       //System.out.println("getCellRenderer");
       return getDefaultRenderer(getClassAt(row, column));
     }else{
@@ -41,11 +41,11 @@ JTable table = new JTable(data, columnNames) {
     }
   }
   @Override public TableCellEditor getCellEditor(int row, int column) {
-    if(convertColumnIndexToModel(column)==1) {
+    if (convertColumnIndexToModel(column) == 1) {
       //System.out.println("getCellEditor");
       editingClass = getClassAt(row, column);
       return getDefaultEditor(editingClass);
-    }else{
+    } else {
       editingClass = null;
       return super.getCellEditor(row, column);
     }
@@ -56,10 +56,10 @@ JTable table = new JTable(data, columnNames) {
   // editor was invoked so the proper class can be created.
   @Override public Class getColumnClass(int column) {
     //return editingClass != null ? editingClass : super.getColumnClass(column);
-    if(convertColumnIndexToModel(column)==1) {
+    if (convertColumnIndexToModel(column) == 1) {
       //System.out.println("getColumnClass");
       return editingClass;
-    }else{
+    } else {
       return super.getColumnClass(column);
     }
   }
@@ -67,7 +67,7 @@ JTable table = new JTable(data, columnNames) {
 table.setAutoCreateRowSorter(true);
 table.setDefaultRenderer(Color.class, new ColorRenderer());
 table.setDefaultEditor(Color.class,   new ColorEditor());
-table.setDefaultEditor(Date.class,  new DateEditor());
+table.setDefaultEditor(Date.class,    new DateEditor());
 </code></pre>
 
 ## 解説

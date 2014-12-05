@@ -33,7 +33,7 @@ comments: true
   //private static Shape ARROW = new TextLayout("\u2B07", font, frc).getOutline(null);
   private static Color LINE_COLOR = Color.GRAY;
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                         RenderingHints.VALUE_ANTIALIAS_ON);
     g2.translate(x, y);
@@ -88,7 +88,7 @@ comments: true
     - 直線で格子状のスリットを上書き
     - 矢印のアウトラインをフォントから取得して中心に描画
     - 原点を戻す(直接`g.translate(x, y)`していた場合、戻しておかないとラベル文字列の描画位置がズレる)
-        - もしくは(`Graphics2D g2 = (Graphics2D)g.create()`していた場合)、`g2.dispose()`
+        - もしくは(`Graphics2D g2 = (Graphics2D) g.create()`していた場合)、`g2.dispose()`
 
 <!-- dummy comment line for breaking list -->
 

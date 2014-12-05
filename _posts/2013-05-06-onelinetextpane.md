@@ -40,11 +40,11 @@ textPane.getActionMap().put(KEY, new AbstractAction() {
   }
 });
 
-// @see http://terai.xrea.jp/Swing/FocusTraversalKeys.html
+// @see http://ateraimemo.com/Swing/FocusTraversalKeys.html
 Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;AWTKeyStroke&gt;(
     textPane.getFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0));
-forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, KeyEvent.SHIFT_MASK));
+forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, InputEvent.SHIFT_DOWN_MASK));
 textPane.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forwardKeys);
 
 JScrollPane scrollPane = new JScrollPane(

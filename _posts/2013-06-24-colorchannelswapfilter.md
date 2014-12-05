@@ -7,6 +7,9 @@ tags: [JProgressBar, JLayer, RGBImageFilter, SwingWorker]
 author: aterai
 pubdate: 2013-06-24T08:32:54+09:00
 description: JLayerを使ってJProgressBarの色相を緑から赤に変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/06/turn-jprogressbar-red-with-jlayer-and.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -40,7 +43,8 @@ comments: true
 
       Image image = c.createImage(
         new FilteredImageSource(bi.getSource(), new RedGreenChannelSwapFilter()));
-      g.drawImage(image, 0, 0, c);
+      //BUG: cause an infinite repaint loop: g.drawImage(image, 0, 0, c);
+      g.drawImage(image, 0, 0, null);
     } else {
       super.paint(g, c);
     }

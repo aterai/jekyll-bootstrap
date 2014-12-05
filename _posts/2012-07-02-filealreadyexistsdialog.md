@@ -7,6 +7,9 @@ tags: [JFileChooser, JOptionPane]
 author: aterai
 pubdate: 2012-07-02T17:20:50+09:00
 description: JFileChooserで名前を付けて保存する場合、すでに存在するファイルを選択してセーブボタンを押すと上書き警告ダイアログを表示するように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/08/jfilechooser-with-file-already-exists.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -18,13 +21,13 @@ comments: true
 <pre class="prettyprint"><code>JFileChooser fileChooser = new JFileChooser() {
   @Override public void approveSelection() {
     File f = getSelectedFile();
-    if(f.exists() &amp;&amp; getDialogType() == SAVE_DIALOG) {
+    if (f.exists() &amp;&amp; getDialogType() == SAVE_DIALOG) {
       String m = String.format(
           "&lt;html&gt;%s already exists.&lt;br&gt;Do you want to replace it?",
           f.getAbsolutePath());
       int rv = JOptionPane.showConfirmDialog(
           this, m, "Save As", JOptionPane.YES_NO_OPTION);
-      if(rv!=JOptionPane.YES_OPTION) {
+      if (rv != JOptionPane.YES_OPTION) {
         return;
       }
     }
@@ -41,7 +44,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - How to react on events fired by a JFileChooser?](https://forums.oracle.com/thread/1391852)
+- [Swing - How to react on events fired by a JFileChooser?](https://community.oracle.com/thread/1391852)
 - [java - JFileChooser with confirmation dialog - Stack Overflow](http://stackoverflow.com/questions/3651494/jfilechooser-with-confirmation-dialog)
 
 <!-- dummy comment line for breaking list -->

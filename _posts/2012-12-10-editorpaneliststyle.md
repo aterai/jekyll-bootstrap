@@ -15,7 +15,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/-cVKrTqKAhYk/UMSbt8J09jI/AAAAAAAABY0/IWonqNua5dM/s800/EditorPaneListStyle.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>HTMLEditorKit htmlEditorKit = (HTMLEditorKit)pane.getEditorKit();
+<pre class="prettyprint"><code>HTMLEditorKit htmlEditorKit = (HTMLEditorKit) pane.getEditorKit();
 StyleSheet styleSheet = htmlEditorKit.getStyleSheet();
 String u = getClass().getResource(bullet).toString();
 styleSheet.addRule(String.format("ul{list-style-image:url(%s);margin:0px 20px;}", u));
@@ -47,7 +47,7 @@ styleSheet.addRule(String.format("ul{list-style-image:url(%s);margin:0px 20px;}"
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>styleSheet.addRule("ul{list-style-type:none;margin:0px 20px;}");
-styleSheet.addRule("ul li:before{content: "\u00BB";}");
+styleSheet.addRule("ul li:before{content:'\u00BB';}");
 </code></pre>
 
 - - - -

@@ -70,11 +70,14 @@ JLabel path = new JLabel(url.toString());
 
 - `src.zip`をダウンロードして適当な場所に展開する
 - `c:\temp\example\test.png`という画像ファイルを別途用意する
-- 展開したフォルダにある`run.bat`の`6`行目(クラスパス)を以下のように変更
+- 展開したフォルダにある`run.bat`の`8`行目付近にあるクラスパスを以下のように変更(`c:\temp`を最初に追加)
 
 <!-- dummy comment line for breaking list -->
 
-	set LOCALCLASSPATH=c:\temp;.\target\classes
+<pre class="prettyprint"><code>set MAIN_CLASS=example.MainPanel
+rem set CLASSPATH=.\target\classes
+set CLASSPATH=c:\temp;.\target\classes
+</code></pre>
 
 - `ant`などでコンパイルして、修正した`run.bat`で実行
 

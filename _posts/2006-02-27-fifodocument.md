@@ -10,7 +10,7 @@ description: ドキュメントのサイズを一定にして、JTextAreaなど�
 comments: true
 ---
 ## 概要
-ドキュメントのサイズを一定にして、`JTextArea`など表示できる行数を制限します。[Swing (Archive) - JTextArea Memory Overflow ??](https://forums.oracle.com/thread/1479784)にあるソースコードを参考にしています。
+ドキュメントのサイズを一定にして、`JTextArea`など表示できる行数を制限します。[Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)にあるソースコードを参考にしています。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMafjL8xI/AAAAAAAAAZI/-KMSGPcn0jM/s800/FIFODocument.png %}
 
@@ -50,10 +50,10 @@ final Timer timer = new Timer(100, new ActionListener() {
 ## 解説
 一行追加された時に、規定の行数を越えている場合は、先頭から一行を削除しています。
 
-上記のサンプルでは、`10`行以上になると先頭行から削除されていきます。また、複数行の入力やペーストには対応していません。それらにも対応する場合は、[Swing (Archive) - JTextArea Memory Overflow ??](https://forums.oracle.com/thread/1479784)を参考にしてみてください。
+上記のサンプルでは、`10`行以上になると先頭行から削除されていきます。また、複数行の入力やペーストには対応していません。それらにも対応する場合は、[Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)を参考にしてみてください。
 
 ## 参考リンク
-- [Swing (Archive) - JTextArea Memory Overflow ??](https://forums.oracle.com/thread/1479784)
+- [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)
 
 <!-- dummy comment line for breaking list -->
 

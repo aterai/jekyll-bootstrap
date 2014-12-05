@@ -7,6 +7,9 @@ tags: [JScrollPane, JViewport, MouseListener, MouseMotionListener, JLabel]
 author: aterai
 pubdate: 2006-01-02
 description: JScrollPaneの窓の中をマウスで掴んで画像をスクロールします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/03/mouse-dragging-viewport-scroll.html
+    lang: en
 comments: true
 ---
 ## 概要

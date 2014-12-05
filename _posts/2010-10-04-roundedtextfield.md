@@ -6,11 +6,14 @@ title: JTextFieldの角を丸める
 tags: [JTextField, Border, Shape]
 author: aterai
 pubdate: 2010-10-04T21:07:50+09:00
-description: 角丸のJTextFieldを作成します。
+description: JTextFieldの角を丸めて表示するようBorderを設定しています。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/03/rounded-border-for-jtextfield.html
+    lang: en
 comments: true
 ---
 ## 概要
-角丸の`JTextField`を作成します。
+`JTextField`の角を丸めて表示するよう`Border`を設定しています。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSMYm3vgI/AAAAAAAAAiY/37FVcZLSXI0/s800/RoundedTextField.png %}
 
@@ -19,23 +22,23 @@ comments: true
   //Unleash Your Creativity with Swing and the Java 2D API!
   //http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html
   @Override protected void paintComponent(Graphics g) {
-    if(!isOpaque()) {
+    if (!isOpaque()) {
       int w = getWidth();
       int h = getHeight();
-      Graphics2D g2 = (Graphics2D)g.create();
+      Graphics2D g2 = (Graphics2D) g.create();
       g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                           RenderingHints.VALUE_ANTIALIAS_ON);
       g2.setColor(UIManager.getColor("TextField.background"));
-      g2.fillRoundRect(0, 0, w-1, h-1, h, h);
+      g2.fillRoundRect(0, 0, w - 1, h - 1, h, h);
       g2.setColor(Color.GRAY);
-      g2.drawRoundRect(0, 0, w-1, h-1, h, h);
+      g2.drawRoundRect(0, 0, w - 1, h - 1, h, h);
       g2.dispose();
     }
     super.paintComponent(g);
   }
 };
 textField01.setOpaque(false);
-textField01.setBackground(new Color(0,0,0,0)); //Nimbus
+textField01.setBackground(new Color(0, 0, 0, 0)); //Nimbus
 textField01.setBorder(BorderFactory.createEmptyBorder(4, 8, 4, 8));
 textField01.setText("aaaaaaaaaaa");
 </code></pre>
@@ -53,13 +56,16 @@ textField01.setText("aaaaaaaaaaa");
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>class RoundedCornerBorder extends AbstractBorder {
-  @Override public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
-    Graphics2D g2 = (Graphics2D)g.create();
-    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-    int r = height-1;
-    RoundRectangle2D round = new RoundRectangle2D.Float(x, y, width-1, height-1, r, r);
+  @Override public void paintBorder(
+      Component c, Graphics g, int x, int y, int width, int height) {
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON);
+    int r = height - 1;
+    RoundRectangle2D round = new RoundRectangle2D.Float(
+        x, y, width - 1, height - 1, r, r);
     Container parent = c.getParent();
-    if(parent!=null) {
+    if (parent != null) {
       g2.setColor(parent.getBackground());
       Area corner = new Area(new Rectangle2D.Float(x, y, width, height));
       corner.subtract(new Area(round));
@@ -73,8 +79,7 @@ textField01.setText("aaaaaaaaaaa");
     return new Insets(4, 8, 4, 8);
   }
   @Override public Insets getBorderInsets(Component c, Insets insets) {
-    insets.left = insets.right = 8;
-    insets.top = insets.bottom = 4;
+    insets.set(4, 8, 4, 8);
     return insets;
   }
 }

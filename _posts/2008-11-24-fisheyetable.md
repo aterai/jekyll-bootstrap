@@ -7,6 +7,9 @@ tags: [JTable, MouseMotionListener, MouseListener]
 author: aterai
 pubdate: 2008-11-24T16:48:07+09:00
 description: JTableの行の高さを変更して、マウスカーソルの下を魚眼レンズのように拡大します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/12/jtable-fisheye-row.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -22,25 +25,25 @@ comments: true
   prev_row = row;
 }
 public void initRowHeigth(int height, int ccRow) {
-  int rd2      = (fishEyeRowList.size()-1)/2;
+  int rd2      = (fishEyeRowList.size() - 1) / 2;
   int rowCount = getModel().getRowCount();
   int view_rc  = getViewableColoredRowCount(ccRow);
-  int view_h   = 0; for(int i=0;i&lt;view_rc;i++) view_h += fishEyeRowHeightList.get(i);
+  int view_h   = 0; for (int i=0; i &lt; view_rc; i++) view_h += fishEyeRowHeightList.get(i);
   int rest_rc  = rowCount - view_rc;
   int rest_h   = height - view_h;
-  int rest_rh  = rest_h/rest_rc; rest_rh = rest_rh&gt;0?rest_rh:1;
-  int a        = rest_h - rest_rh*rest_rc;
+  int rest_rh  = rest_h / rest_rc; rest_rh = rest_rh &gt; 0 ? rest_rh : 1;
+  int a        = rest_h - rest_rh * rest_rc;
   int index    = -1;
-  for(int i=-rd2;i&lt;rowCount;i++) {
+  for (int i =- rd2; i &lt; rowCount; i++) {
     int crh;
-    if(ccRow-rd2&lt;=i &amp;&amp; i&lt;=ccRow+rd2) {
+    if (ccRow - rd2 &lt;= i &amp;&amp; i &lt;= ccRow + rd2) {
       index++;
-      if(i&lt;0) continue;
+      if(i &lt; 0) continue;
       crh = fishEyeRowHeightList.get(index);
-    }else{
-      if(i&lt;0) continue;
-      crh = rest_rh+(a&gt;0?1:0);
-      a = a-1;
+    } else {
+      if (i &lt; 0) continue;
+      crh = rest_rh + (a &gt; 0 ? 1 : 0);
+      a = a - 1;
     }
     setRowHeight(i, crh);
   }

@@ -7,6 +7,9 @@ tags: [JRadioButton, Icon, Path2D]
 author: aterai
 pubdate: 2012-11-19T00:07:37+09:00
 description: JRadioButtonのアイコンを変更して、ToggleButtonBarを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/11/make-togglebuttonbar-with-jradiobuttons.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -16,10 +19,10 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ToggleButtonBarCellIcon implements Icon{
-  private static final Color TL = new Color(1f,1f,1f,.2f);
-  private static final Color BR = new Color(0f,0f,0f,.2f);
-  private static final Color ST = new Color(1f,1f,1f,.4f);
-  private static final Color SB = new Color(1f,1f,1f,.1f);
+  private static final Color TL = new Color(1f, 1f, 1f, .2f);
+  private static final Color BR = new Color(0f, 0f, 0f, .2f);
+  private static final Color ST = new Color(1f, 1f, 1f, .4f);
+  private static final Color SB = new Color(1f, 1f, 1f, .1f);
 
   private Color ssc;
   private Color bgc;
@@ -30,16 +33,16 @@ comments: true
     int h = c.getHeight();
 
     Container parent = c.getParent();
-    if(parent==null) {
+    if (parent == null) {
       return;
     }
 
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                         RenderingHints.VALUE_ANTIALIAS_ON);
     Path2D.Float p = new Path2D.Float();
 
-    if(c==parent.getComponent(0)) {
+    if (c == parent.getComponent(0)) {
       //:first-child
       p.moveTo(x, y + r);
       p.quadTo(x, y, x + r, y);
@@ -47,15 +50,15 @@ comments: true
       p.lineTo(x + w, y + h);
       p.lineTo(x + r, y + h);
       p.quadTo(x, y + h, x, y + h - r);
-    }else if(c==parent.getComponent(parent.getComponentCount()-1)) {
+    } else if (c == parent.getComponent(parent.getComponentCount() - 1)) {
       //:last-child
       p.moveTo(x, y);
       p.lineTo(x + w - r, y);
       p.quadTo(x + w, y, x + w, y + r);
       p.lineTo(x + w, y + h - r);
-      p.quadTo(x + w, y + h, x + w -r, y + h);
+      p.quadTo(x + w, y + h, x + w - r, y + h);
       p.lineTo(x, y + h);
-    }else{
+    } else {
       p.moveTo(x, y);
       p.lineTo(x + w, y);
       p.lineTo(x + w, y + h);
@@ -69,14 +72,14 @@ comments: true
 
     ssc = TL;
     bgc = BR;
-    if(c instanceof AbstractButton) {
-      ButtonModel m = ((AbstractButton)c).getModel();
-      if(m.isSelected() || m.isRollover()) {
+    if (c instanceof AbstractButton) {
+      ButtonModel m = ((AbstractButton) c).getModel();
+      if (m.isSelected() || m.isRollover()) {
         ssc = ST;
         bgc = SB;
       }
     }
-    g2.setPaint(new GradientPaint(x, y, ssc, x, y+h, bgc, true));
+    g2.setPaint(new GradientPaint(x, y, ssc, x, y + h, bgc, true));
     g2.fill(area);
 
     g2.setPaint(BR);

@@ -32,7 +32,7 @@ comments: true
 `JDK 6`では、`Windows`環境でも、オーバーライドした`createDialog`メソッド内で、`JDialog#setMinimumSize(Dimension)`を使うだけで、最小サイズの設定が出来るようになっています。
 
 ## 参考リンク
-- [Swing - JFileChooser setMinimunSize not working?](https://forums.oracle.com/thread/1374445)
+- [Swing - JFileChooser setMinimunSize not working?](https://community.oracle.com/thread/1374445)
 - [JFrameの最小サイズ](http://ateraimemo.com/Swing/MinimumFrame.html)
 
 <!-- dummy comment line for breaking list -->

@@ -59,8 +59,8 @@ sp2.getHorizontalScrollBar().setModel(sp1.getHorizontalScrollBar().getModel());
 </code></pre>
 
 ## 参考リンク
-- [Swing (Archive) - link to scrollbar](https://forums.oracle.com/thread/1502596)
-- [Swing (Archive) - Synchronizing scrollbars two scroll bars](https://forums.oracle.com/thread/1484489)
+- [Swing (Archive) - link to scrollbar](https://community.oracle.com/thread/1502596)
+- [Swing (Archive) - Synchronizing scrollbars two scroll bars](https://community.oracle.com/thread/1484489)
 
 <!-- dummy comment line for breaking list -->
 

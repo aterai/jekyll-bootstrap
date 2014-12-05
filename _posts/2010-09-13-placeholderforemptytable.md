@@ -7,6 +7,9 @@ tags: [JTable, JEditorPane, GridBagLayout, URL]
 author: aterai
 pubdate: 2010-09-13T11:14:48+09:00
 description: JTableが空の場合、表領域の中央に任意のJComponentが表示されるように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/09/placeholder-for-empty-jtable.html
+    lang: en
 comments: true
 ---
 ## 概要

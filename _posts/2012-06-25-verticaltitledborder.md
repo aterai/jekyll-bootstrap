@@ -51,7 +51,7 @@ comments: true
       }
       border.paintBorder(c, g, borderX, borderY, borderW, borderH);
 
-      Graphics2D g2 = (Graphics2D)g.create();
+      Graphics2D g2 = (Graphics2D) g.create();
       g2.translate(0, (height+labelW)/2);
       g2.rotate(Math.toRadians(-90));
       //or: g2.transform(AffineTransform.getQuadrantRotateInstance(-1));

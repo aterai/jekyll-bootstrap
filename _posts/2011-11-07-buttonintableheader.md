@@ -7,6 +7,9 @@ tags: [JTable, JTableHeader, JButton, JPopupMenu, MouseListener]
 author: aterai
 pubdate: 2011-11-07T22:14:09+09:00
 description: JTableHeaderにクリックするとポップアップメニューを表示するJButtonを追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/12/dropdown-menu-button-in-jtableheader.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -16,7 +19,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseClicked(MouseEvent e) {
-  JTableHeader header = (JTableHeader)e.getSource();
+  JTableHeader header = (JTableHeader) e.getSource();
   JTable table = header.getTable();
   TableColumnModel columnModel = table.getColumnModel();
   int vci = columnModel.getColumnIndexAtX(e.getX());
@@ -24,16 +27,16 @@ comments: true
   TableColumn column = table.getColumnModel().getColumn(mci);
   Rectangle r = header.getHeaderRect(vci);
   Container c = (Container)getTableCellRendererComponent(table, "", true, true, -1, vci);
-  //if(!isNimbus) {
+  //if (!isNimbus) {
   //  Insets i = c.getInsets();
-  //  r.translate(r.width-i.right, 0);
-  //}else{
-  r.translate(r.width-BUTTON_WIDTH, 0);
+  //  r.translate(r.width - i.right, 0);
+  //} else {
+  r.translate(r.width - BUTTON_WIDTH, 0);
   r.setSize(BUTTON_WIDTH, r.height);
   Point pt = e.getPoint();
-  if(c.getComponentCount()&gt;0 &amp;&amp; r.contains(pt) &amp;&amp; pop!=null) {
+  if (c.getComponentCount() &gt; 0 &amp;&amp; r.contains(pt) &amp;&amp; pop != null) {
     pop.show(header, r.x, r.height);
-    JButton b = (JButton)c.getComponent(0);
+    JButton b = (JButton) c.getComponent(0);
     b.doClick();
     e.consume();
   }
@@ -42,7 +45,7 @@ comments: true
   rolloverIndex = -1;
 }
 @Override public void mouseMoved(MouseEvent e) {
-  JTableHeader header = (JTableHeader)e.getSource();
+  JTableHeader header = (JTableHeader) e.getSource();
   JTable table = header.getTable();
   TableColumnModel columnModel = table.getColumnModel();
   int vci = columnModel.getColumnIndexAtX(e.getX());

@@ -6,11 +6,11 @@ title: Windowの形を変更
 tags: [JFrame, Shape, TextLayout]
 author: aterai
 pubdate: 2011-12-19T19:46:54+09:00
-description: Windowの形を非矩形図形に変更します。
+description: JFrameのタイトルバーなどを非表示にし、Windowの形を非矩形図形に変更します。
 comments: true
 ---
 ## 概要
-`Window`の形を非矩形図形に変更します。
+`JFrame`のタイトルバーなどを非表示にし、`Window`の形を非矩形図形に変更します。
 
 {% download https://lh4.googleusercontent.com/-f54GogC4jCU/Tu7AbPCJhsI/AAAAAAAABGc/EzG0Tf9ITFI/s800/WindowShape.png %}
 

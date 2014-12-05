@@ -7,6 +7,9 @@ tags: [JToggleButton, JPopupMenu, JToolBar, Icon]
 author: aterai
 pubdate: 2006-07-10T10:10:27+09:00
 description: クリックするとポップアップメニューを表示するJToggleButtonを作成し、これをツールバーに追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/12/adding-jpopupmenu-to-jtoolbar-button.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -17,16 +20,20 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class MenuArrowIcon implements Icon {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setPaint(Color.BLACK);
     g2.translate(x,y);
-    g2.drawLine( 2, 3, 6, 3 );
-    g2.drawLine( 3, 4, 5, 4 );
-    g2.drawLine( 4, 5, 4, 5 );
-    g2.translate(-x,-y);
+    g2.drawLine(2, 3, 6, 3);
+    g2.drawLine(3, 4, 5, 4);
+    g2.drawLine(4, 5, 4, 5);
+    g2.dispose();
   }
-  @Override public int getIconWidth()  { return 9; }
-  @Override public int getIconHeight() { return 9; }
+  @Override public int getIconWidth()  {
+    return 9;
+  }
+  @Override public int getIconHeight() {
+    return 9;
+  }
 }
 class MenuToggleButton extends JToggleButton {
   private static final Icon i = new MenuArrowIcon();
@@ -43,14 +50,14 @@ class MenuToggleButton extends JToggleButton {
     super();
     Action a = new AbstractAction(text) {
       @Override public void actionPerformed(ActionEvent ae) {
-        MenuToggleButton b = (MenuToggleButton)ae.getSource();
+        MenuToggleButton b = (MenuToggleButton) ae.getSource();
         if(pop!=null) pop.show(b, 0, b.getHeight());
       }
     };
     a.putValue(Action.SMALL_ICON, icon);
     setAction(a);
     setFocusable(false);
-    setBorder(BorderFactory.createEmptyBorder(4, 4, 4, 4+i.getIconWidth()));
+    setBorder(BorderFactory.createEmptyBorder(4, 4, 4, 4 + i.getIconWidth()));
   }
   protected JPopupMenu pop;
   @Override public void setPopupMenu(final JPopupMenu pop) {
@@ -67,8 +74,8 @@ class MenuToggleButton extends JToggleButton {
     super.paintComponent(g);
     Dimension dim = getSize();
     Insets ins = getInsets();
-    int x = dim.width-ins.right;
-    int y = ins.top+(dim.height-ins.top-ins.bottom-i.getIconHeight())/2;
+    int x = dim.width - ins.right;
+    int y = ins.top + (dim.height - ins.top - ins.bottom - i.getIconHeight()) / 2;
     i.paintIcon(this, g, x, y);
   }
 }
@@ -80,7 +87,7 @@ class MenuToggleButton extends JToggleButton {
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
     - アイコン(矢印ではない)を利用しています。
-- [Swing - Swing bug? cannot set width of JToggleButton](https://forums.oracle.com/thread/1375327)
+- [Swing - Swing bug? cannot set width of JToggleButton](https://community.oracle.com/thread/1375327)
 
 <!-- dummy comment line for breaking list -->
 
@@ -94,8 +101,8 @@ class MenuToggleButton extends JToggleButton {
 
 <pre class="prettyprint"><code>JToggleButton button = new JToggleButton("text", icon) {
   @Override public void paintComponent(Graphics g) {
-    if(getModel().isSelected()) {
-      Graphics2D g2 = (Graphics2D)g.create();
+    if (getModel().isSelected()) {
+      Graphics2D g2 = (Graphics2D) g.create();
       g2.setColor(getBackground());
       g2.fillRoundRect(0,0,getWidth(),getHeight(),4,4);
       g2.dispose();

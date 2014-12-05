@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: FocusCycleRoot
 title: JPanelをフォーカストラバーサルサイクルのルートにする
-tags: [JPanel, Focus]
+tags: [JPanel, Focus, KeyboardFocusManager]
 author: aterai
 pubdate: 2010-07-19T23:07:24+09:00
 description: JPanelがフォーカストラバーサルサイクルのルートになるように設定します。

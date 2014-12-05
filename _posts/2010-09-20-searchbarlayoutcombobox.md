@@ -7,6 +7,9 @@ tags: [JComboBox, JButton, ArrowButton, LayoutManager, JTextField, PopupMenuList
 author: aterai
 pubdate: 2010-09-20T12:16:36+09:00
 description: JComboBoxが使用するレイアウトを変更して、検索欄風のコンポーネントを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/09/searchbar-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -37,8 +40,8 @@ comments: true
         return parent.getMinimumSize();
       }
       @Override public void layoutContainer(Container parent) {
-        if(!(parent instanceof JComboBox)) return;
-        JComboBox cb     = (JComboBox)parent;
+        if (!(parent instanceof JComboBox)) return;
+        JComboBox cb     = (JComboBox) parent;
         int width        = cb.getWidth();
         int height       = cb.getHeight();
         Insets insets    = cb.getInsets();
@@ -46,31 +49,31 @@ comments: true
         int buttonWidth  = buttonHeight;
         int loupeWidth   = buttonHeight;
 
-        JButton arrowButton = (JButton)cb.getComponent(0);
-        if(arrowButton != null) {
+        JButton arrowButton = (JButton) cb.getComponent(0);
+        if (arrowButton != null) {
           Insets arrowInsets = arrowButton.getInsets();
           buttonWidth = arrowButton.getPreferredSize().width +
             arrowInsets.left + arrowInsets.right;
           arrowButton.setBounds(insets.left, insets.top, buttonWidth, buttonHeight);
         }
         JButton loupeButton = null;
-        for(Component c: cb.getComponents()) {
-          if("ComboBox.loupeButton".equals(c.getName())) {
-            loupeButton = (JButton)c;
+        for (Component c: cb.getComponents()) {
+          if ("ComboBox.loupeButton".equals(c.getName())) {
+            loupeButton = (JButton) c;
             break;
           }
         }
         //= (JButton)cb.getComponent(3);
-        if(loupeButton != null) {
+        if (loupeButton != null) {
           Insets loupeInsets = loupeButton.getInsets();
           loupeWidth = loupeButton.getPreferredSize().width +
             loupeInsets.left + loupeInsets.right;
           loupeButton.setBounds(width - (insets.right + loupeWidth),
                                 insets.top, loupeWidth, buttonHeight);
         }
-        JTextField editor = (JTextField)cb.getEditor().getEditorComponent();
-        //JTextField editor = (JTextField)cb.getComponent(1);
-        if(editor != null) {
+        JTextField editor = (JTextField) cb.getEditor().getEditorComponent();
+        //JTextField editor = (JTextField) cb.getComponent(1);
+        if (editor != null) {
           editor.setBounds(insets.left + buttonWidth, insets.top,
                width  - (insets.left + insets.right + buttonWidth + loupeWidth),
                height - (insets.top  + insets.bottom));
@@ -101,20 +104,20 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>protected PopupMenuListener createPopupMenuListener() {
-  if(popupMenuListener == null) {
+  if (popupMenuListener == null) {
     popupMenuListener = new PopupMenuListener() {
       private String str;
       @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
-        JComboBox combo = (JComboBox)e.getSource();
+        JComboBox combo = (JComboBox) e.getSource();
         str = combo.getEditor().getItem().toString();
       }
       @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {
         Object o = listBox.getSelectedValue();
-        if(o instanceof SearchEngine) {
+        if (o instanceof SearchEngine) {
           SearchEngine se = (SearchEngine) o;
           arrowButton.setIcon(se.favicon);
         }
-        final JComboBox combo = (JComboBox)e.getSource();
+        final JComboBox combo = (JComboBox) e.getSource();
         EventQueue.invokeLater(new Runnable() {
           @Override public void run() {
             combo.getEditor().setItem(str);

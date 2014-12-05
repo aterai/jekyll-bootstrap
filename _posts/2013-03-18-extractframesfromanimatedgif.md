@@ -10,7 +10,7 @@ description: AnimatedGifから各フレームの画像を抽出します。
 comments: true
 ---
 ## 概要
-`AnimatedGif`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://forums.oracle.com/thread/1271862)の回答を参考に作成しています。
+`AnimatedGif`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://community.oracle.com/thread/1271862)の回答を参考に作成しています。
 
 {% download https://lh4.googleusercontent.com/-_xu1jNmYJe0/UUX3d_PzwKI/AAAAAAAABoA/cyS5ABVZdkM/s800/ExtractFramesFromAnimatedGif.png %}
 
@@ -50,7 +50,7 @@ reader.dispose();
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - Reading gif animation frame rates and such?](https://forums.oracle.com/thread/1271862)
+- [Swing - Reading gif animation frame rates and such?](https://community.oracle.com/thread/1271862)
 - [JPEGファイルのコメントを取り出す](http://ateraimemo.com/Swing/IIOMetadata.html)
 - [JLabelに表示したAnimated Gifのアニメーションを停止する](http://ateraimemo.com/Swing/DisableAnimatedGif.html)
 - [Animated GIFでのコマ描画時処理](http://ateraimemo.com/Swing/AnimatedGif.html)

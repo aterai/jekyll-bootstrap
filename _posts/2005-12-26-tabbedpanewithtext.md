@@ -10,7 +10,7 @@ description: JTabbedPaneの右側の余白に文字列を表示します。
 comments: true
 ---
 ## 概要
-`JTabbedPane`の右側の余白に文字列を表示します。[Swing - JTabbedPane with non-tabbed text](https://forums.oracle.com/thread/1392495)の投稿からソースコードを引用しています。
+`JTabbedPane`の右側の余白に文字列を表示します。[Swing - JTabbedPane with non-tabbed text](https://community.oracle.com/thread/1392495)の投稿からソースコードを引用しています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUTbAqf_I/AAAAAAAAAl0/APOrWdnvDko/s800/TabbedPaneWithText.png %}
 
@@ -80,7 +80,7 @@ class TopRightCornerLabelLayerUI extends LayerUI&lt;JComponent&gt; {
 </code></pre>
 
 ## 参考リンク
-- [Swing - JTabbedPane with non-tabbed text](https://forums.oracle.com/thread/1392495)
+- [Swing - JTabbedPane with non-tabbed text](https://community.oracle.com/thread/1392495)
 - [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
 
 <!-- dummy comment line for breaking list -->

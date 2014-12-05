@@ -3,14 +3,14 @@ layout: post
 category: swing
 folder: CellEditor
 title: JTableのセルを編集不可にする
-tags: [JTable, TableCellEditor]
+tags: [JTable, TableModel, TableCellEditor]
 author: aterai
 pubdate: 2004-06-14
-description: JTableのセルを編集不可にします。
+description: JTableのすべてのセルを編集不可にする方法をテストします。
 comments: true
 ---
 ## 概要
-`JTable`のセルを編集不可にします。
+`JTable`のすべてのセルを編集不可にする方法をテストします。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIgUbMHLI/AAAAAAAAAS4/v0jIwB26ie4/s800/CellEditor.png %}
 
@@ -23,15 +23,15 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルは、以下の三種類の方法で、セルを編集不可にすることが出来ます。
+上記のサンプルは、以下の三種類の設定で、セルを編集不可にする方法をテストしています。
 
 - `Override TableModel#isCellEditable(...) { return false; }`
-    - テーブルモデルの`TableModel#isCellEditable()`メソッドが常に`false`を返すようにオーバーライドして、すべてのセルを編集不可にしています。
+    - テーブルモデルの`TableModel#isCellEditable()`メソッドが常に`false`を返すようにオーバーライドして、すべてのセルを編集不可に設定
 
 <!-- dummy comment line for breaking list -->
 
 - `JTable#setDefaultEditor(Object.class, null);`
-    - 各カラムにセルエディタを設定しない、かつ`Object.class`が使用するデフォルトセルエディタを`null`にした場合も、すべてのセルを編集不可にすることができます。
+    - 各カラムにセルエディタを設定しない、かつ`Object.class`が使用するデフォルトセルエディタを`null`にすることで、すべてのセルを編集不可にする
 
 <!-- dummy comment line for breaking list -->
 
@@ -39,7 +39,7 @@ comments: true
 </code></pre>
 
 - `JTable#setEnabled(false)`
-    - `JTable#setEnabled(false)`してしまえば、すべてのセルでの編集を禁止することができますが、セルや行の選択なども不可能になってしまいます。
+    - `JTable#setEnabled(false)`で、セルや行の選択なども含めて、すべてのセルでの編集を禁止する
 
 <!-- dummy comment line for breaking list -->
 

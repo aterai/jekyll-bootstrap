@@ -7,6 +7,9 @@ tags: [JTabbedPane, GlassPane, JTextField]
 author: aterai
 pubdate: 2006-03-27
 description: JTabbedPaneのタブタイトルを直接編集します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/09/double-click-on-each-tab-and-change-its.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -30,7 +33,7 @@ comments: true
   }
   class MyGlassPane extends JPanel{
     public MyGlassPane() {
-      super((LayoutManager)null);
+      super((LayoutManager) null);
       setOpaque(false);
       addMouseListener(new MouseAdapter() {
         @Override public void mouseClicked(MouseEvent me) {
@@ -42,7 +45,7 @@ comments: true
   }
   private void initEditor() {
     rect = getUI().getTabBounds(this, getSelectedIndex());
-    rect.setRect(rect.x+2, rect.y+2, rect.width-2, rect.height-2);
+    rect.setRect(rect.x + 2, rect.y + 2, rect.width - 2, rect.height - 2);
     editor.setBounds(rect);
     editor.setText(getTitleAt(getSelectedIndex()));
   }
@@ -55,7 +58,7 @@ comments: true
     panel.setVisible(false);
   }
   private void renameTab() {
-    if(editor.getText().trim().length()&gt;0) {
+    if (editor.getText().trim().length() &gt; 0) {
       setTitleAt(getSelectedIndex(), editor.getText());
     }
     panel.setVisible(false);
@@ -81,7 +84,7 @@ comments: true
 - [Cursorを砂時計に変更](http://ateraimemo.com/Swing/WaitCursor.html)
 - [JTabbedPaneのタブにJTextFieldを配置してタイトルを編集](http://ateraimemo.com/Swing/TabTitleEditor.html)
     - `JDK 6`版です。タブに`JTextField`を`JTabbedPane#setTabComponentAt`メソッドを使用して配置しています。
-- [Swing - Floating text field](https://forums.oracle.com/thread/1359811)
+- [Swing - Floating text field](https://community.oracle.com/thread/1359811)
     - `JPopupMenu`に`JTextField`を配置することで同様のことを行うコードをKelVarnsonさんが投稿しています。
 
 <!-- dummy comment line for breaking list -->

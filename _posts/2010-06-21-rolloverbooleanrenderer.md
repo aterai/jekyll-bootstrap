@@ -7,6 +7,9 @@ tags: [JTable, JCheckBox, MouseListener, TableCellRenderer]
 author: aterai
 pubdate: 2010-06-21T15:14:48+09:00
 description: JTableのセルにJCheckBoxを使用したときでも、マウスカーソルでロールオーバーするように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/07/create-jcheckbox-rollover-effect-in.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -28,22 +31,22 @@ comments: true
   }
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
                                boolean isSelected, boolean hasFocus, int row, int column) {
-    if(highlighter.isHighlightableCell(row, column)) {
+    if (highlighter.isHighlightableCell(row, column)) {
       getModel().setRollover(true);
-    }else{
+    } else {
       getModel().setRollover(false);
     }
-    if(isSelected) {
+    if (isSelected) {
       setForeground(table.getSelectionForeground());
       super.setBackground(table.getSelectionBackground());
-    }else{
+    } else {
       setForeground(table.getForeground());
       setBackground(table.getBackground());
     }
-    setSelected((value != null &amp;&amp; ((Boolean)value).booleanValue()));
-    if(hasFocus) {
+    setSelected((value != null &amp;&amp; ((Boolean) value).booleanValue()));
+    if (hasFocus) {
       setBorder(UIManager.getBorder("Table.focusCellHighlightBorder"));
-    }else{
+    } else {
       setBorder(noFocusBorder);
     }
     return this;

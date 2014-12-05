@@ -7,6 +7,9 @@ tags: [JTable, JTableHeader, JCheckBox, TableCellRenderer, MouseListener, Icon, 
 author: aterai
 pubdate: 2009-02-16T20:29:54+09:00
 description: JTableHeaderにJCheckBoxを追加して、同じ列のJCheckBoxで表示している値をすべて切り替えます。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/02/jtableheader-checkbox.html
+    lang: en
 comments: true
 ---
 ## 概要

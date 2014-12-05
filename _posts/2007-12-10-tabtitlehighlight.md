@@ -17,11 +17,10 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>jtp.addMouseMotionListener(new MouseMotionAdapter() {
   @Override public void mouseMoved(MouseEvent e) {
-    JTabbedPane source = (JTabbedPane)e.getSource();
+    JTabbedPane source = (JTabbedPane) e.getSource();
     int tgt = source.indexAtLocation(e.getX(), e.getY());
-    for(int i=0;i&lt;source.getTabCount();i++) {
-      source.setForegroundAt(i, i==tgt ? Color.GREEN
-                                       : Color.BLACK);
+    for (int i = 0; i &lt; source.getTabCount(); i++) {
+      source.setForegroundAt(i, i == tgt ? Color.GREEN : Color.BLACK);
     }
   }
 });
@@ -33,7 +32,7 @@ comments: true
 `GTKLookAndFeel`(`Ubuntu`+`GNOME`+`jdk1.6.0_03`)などでは、タブの文字色を変更出来ないようです。
 
 ## 参考リンク
-- [JTabbedPaneの選択文字色を変更](http://terai.xrea.jp/Swing/ColorTab.html)
+- [JTabbedPaneの選択文字色を変更](http://ateraimemo.com/Swing/ColorTab.html)
 
 <!-- dummy comment line for breaking list -->
 

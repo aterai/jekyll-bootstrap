@@ -6,11 +6,11 @@ title: JTableの行を全削除
 tags: [JTable, DefaultTableModel]
 author: aterai
 pubdate: 2005-04-11
-description: JTableの行を一括で全削除します。
+description: JTableのモデルから、カラムヘッダの状態は変更せず、すべての行を一括で削除します。
 comments: true
 ---
 ## 概要
-`JTable`の行を一括で全削除します。
+`JTable`のモデルから、カラムヘッダの状態は変更せず、すべての行を一括で削除します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJISEHcVI/AAAAAAAAAT4/syR1Ucd5n5o/s800/ClearTable.png %}
 

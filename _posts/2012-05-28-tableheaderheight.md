@@ -6,11 +6,14 @@ title: JTableHeaderの高さを変更
 tags: [JTableHeader, JTable, JScrollPane, JViewport]
 author: aterai
 pubdate: 2012-05-28T14:51:47+09:00
-description: JTableHeaderの高さを変更します。
+description: 内部の文字サイズなどはそのままで、JTableHeaderの高さだけを変更する方法をテストします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/06/height-of-jtableheader.html
+    lang: en
 comments: true
 ---
 ## 概要
-`JTableHeader`の高さを変更します。
+内部の文字サイズなどはそのままで、`JTableHeader`の高さだけを変更する方法をテストします。
 
 {% download https://lh4.googleusercontent.com/-l20IOO5wKSo/T8MIf7FVUwI/AAAAAAAABNM/9BNN63T96Fo/s800/TableHeaderHeight.png %}
 

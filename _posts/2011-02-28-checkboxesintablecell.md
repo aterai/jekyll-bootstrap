@@ -7,6 +7,9 @@ tags: [JTable, JCheckBox, TableCellRenderer, TableCellEditor, JPanel, InputMap, 
 author: aterai
 pubdate: 2011-02-28T15:07:56+09:00
 description: JTableのセル中にJCheckBoxを複数個配置します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/03/checkboxes-in-jtable-cell.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -7,6 +7,9 @@ tags: [JTree, TreeCellRenderer, FocusListener]
 author: aterai
 pubdate: 2011-01-17T15:24:56+09:00
 description: JTreeの行をクリックして選択し、行全体を選択状態の背景色で描画します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/02/highlight-entire-jtree-row-on-selection.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -95,7 +98,7 @@ comments: true
 ## 参考リンク
 - [JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)
 - [Highlight a node's descendants in JTree - Santhosh Kumar's Weblog](http://jroller.com/santhosh/entry/highlight_a_node_s_descendants)
-    - via: [Swing - JTree - highlight entire row on selection](https://forums.oracle.com/thread/2160338)
+    - via: [Swing - JTree - highlight entire row on selection](https://community.oracle.com/thread/2160338)
 
 <!-- dummy comment line for breaking list -->
 

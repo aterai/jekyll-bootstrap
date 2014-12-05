@@ -3,14 +3,14 @@ layout: post
 category: swing
 folder: CustomCursor
 title: Cursorオブジェクトの生成
-tags: [Cursor, BufferedImage, ImageIcon]
+tags: [Cursor, BufferedImage, ImageIcon, JComponent]
 author: aterai
 pubdate: 2005-01-24
-description: 新しいカスタムカーソルオブジェクトを作成します。
+description: BufferedImageからカーソルオブジェクトを作成し、これをコンポーネントに設定します。
 comments: true
 ---
 ## 概要
-新しいカスタムカーソルオブジェクトを作成します。
+`BufferedImage`からカーソルオブジェクトを作成し、これをコンポーネントに設定します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKTOEY7FI/AAAAAAAAAVw/OeBJRlIWHsQ/s800/CustomCursor.png %}
 

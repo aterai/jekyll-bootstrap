@@ -24,7 +24,7 @@ comments: true
   }
   @Override public void paint(Graphics g, Shape a) {
     super.paint(g,a);
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     Stroke stroke = g2.getStroke();
     Rectangle alloc = (a instanceof Rectangle) ? (Rectangle)a : a.getBounds();
     FontMetrics fontMetrics = g.getFontMetrics();
@@ -67,7 +67,7 @@ comments: true
 この`LabelView`を使用する`EditorKit(ViewFactory)`の作成は、[JEditorPaneで改行を表示](http://ateraimemo.com/Swing/ParagraphMark.html)と同様になっています。
 
 ## 参考リンク
-- [Swing - JTextPane View Problem](https://forums.oracle.com/thread/1374478)
+- [Swing - JTextPane View Problem](https://community.oracle.com/thread/1374478)
 - [Design Guidelines: Text Components](http://web.archive.org/web/20120216035951/http://java.sun.com/products/jlf/ed1/dg/higo.htm)
 - [Swing Chapter 19. (Advanced topics) Inside Text Components. Easy for reading, Click here!](http://www.javafaq.nu/java-book-30.html)
 - [JEditorPaneで改行を表示](http://ateraimemo.com/Swing/ParagraphMark.html)

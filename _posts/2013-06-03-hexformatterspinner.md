@@ -15,24 +15,19 @@ comments: true
 {% download https://lh4.googleusercontent.com/-eTZU_kuJGK4/UauUgRcPuTI/AAAAAAAABtc/7FNouA9JcLI/s800/HexFormatterSpinner.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>DefaultFormatter hexformatter = new DefaultFormatter() {
-  @Override public Object stringToValue(String text) throws ParseException {
-    try{
+<pre class="prettyprint"><code>private static DefaultFormatterFactory makeFFactory() {
+  DefaultFormatter formatter = new DefaultFormatter() {
+    @Override public Object stringToValue(String text) throws ParseException {
       return Integer.valueOf(text, 16);
-    }catch(NumberFormatException nfe) {
-      throw new ParseException(text, 0);
     }
-  }
-  private final String MASK = "000000";
-  @Override public String valueToString(Object value) throws ParseException {
-    String str = MASK + Integer.toHexString((Integer)value).toUpperCase();
-    int i = str.length() - MASK.length();
-    return str.substring(i);
-  }
-};
-hexformatter.setValueClass(Integer.class);
-hexformatter.setOverwriteMode(true);
-
+    @Override public String valueToString(Object value) throws ParseException {
+      return String.format("%06X", (Integer) value);
+    }
+  };
+  formatter.setValueClass(Integer.class);
+  formatter.setOverwriteMode(true);
+  return new DefaultFormatterFactory(formatter);
+}
 </code></pre>
 
 ## 解説
@@ -44,7 +39,7 @@ hexformatter.setOverwriteMode(true);
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>int code = ((Integer)spinner.getValue()).intValue();
+<pre class="prettyprint"><code>int code = ((Integer) spinner.getValue()).intValue();
 //char[] ca = Character.toChars(code);
 String str = new String(Character.toChars(code));
 </code></pre>
@@ -52,7 +47,7 @@ String str = new String(Character.toChars(code));
 - - - -
 [IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝フォント](http://ipafont.ipa.go.jp/)がインストールされている場合、その文字の形の違いを比較することができます。
 
-- [IPAmj明朝フォントダウンロード　｜　IPA 文字情報基盤](http://mojikiban.ipa.go.jp/download.html)
+- [IPAmj明朝フォント | 文字情報基盤整備事業](http://mojikiban.ipa.go.jp/1300.html)
 - [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/)
 
 <!-- dummy comment line for breaking list -->

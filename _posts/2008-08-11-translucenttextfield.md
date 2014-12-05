@@ -6,16 +6,16 @@ title: JTextFieldの背景色を半透明にする
 tags: [JTextField, Translucent]
 author: aterai
 pubdate: 2008-08-11T12:27:41+09:00
-description: JTextFieldの背景色を半透明にします。
+description: JTextFieldの背景色を半透明にしても、文字列選択やキャレットの点滅などで描画が乱れないようにする方法をテストします。
 comments: true
 ---
 ## 概要
-`JTextField`の背景色を半透明にします。
+`JTextField`の背景色を半透明にしても、文字列選択やキャレットの点滅などで描画が乱れないようにする方法をテストします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>Color BG_COLOR = new Color(1f,.8f,.8f,.2f);
+<pre class="prettyprint"><code>Color BG_COLOR = new Color(1f, .8f, .8f, .2f);
 
 field0 = new JTextField("aaaaaaaaa");
 field0.setBackground(BG_COLOR);
@@ -26,9 +26,10 @@ field1.setBackground(BG_COLOR);
 
 field2 = new JTextField("cccccccccccccccccccccc") {
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setPaint(getBackground());
     g2.fillRect(0, 0, getWidth(), getHeight());
+    g2.dispose();
     super.paintComponent(g);
   }
 };
@@ -37,7 +38,7 @@ field2.setBackground(BG_COLOR);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、それぞれアルファ値を使った背景色を`JTextField`に設定しています。
+上記のサンプルでは、それぞれアルファ値を使った半透明の背景色を`JTextField`に設定しています。
 
 - 上: `field0`
     - 文字列を選択すると、再描画がおかしくなる(残像が表示される)
@@ -47,7 +48,7 @@ field2.setBackground(BG_COLOR);
     - `NimbusLookAndFeel`では、背景色が描画される
         - 参考: [Laird Nelson's Blog: Nimbus and Opacity](http://weblogs.java.net/blog/ljnelson/archive/2008/07/nimbus_and_opac.html)
 - 下: `field2`
-    - `setOpaque(false)`とし、`paintComponent`をオーバーライドして、背景色を描画している
+    - `setOpaque(false)`とし、`paintComponent`をオーバーライドして背景色を描画
 
 <!-- dummy comment line for breaking list -->
 
@@ -68,6 +69,7 @@ field2.setBackground(BG_COLOR);
 ## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
     - 名物裂から雲鶴をサンプルの壁紙として拝借しています。
+- [Backgrounds With Transparency « Java Tips Weblog](http://tips4java.wordpress.com/2009/05/31/backgrounds-with-transparency/)
 
 <!-- dummy comment line for breaking list -->
 

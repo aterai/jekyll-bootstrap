@@ -7,6 +7,9 @@ tags: [JPopupMenu, GridBagLayout, JMenuItem, Icon]
 author: aterai
 pubdate: 2014-09-29T00:00:12+09:00
 description: JPopupMenuのレイアウトを変更することで、上部にメニューボタンを水平に並べて表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2014/09/change-layout-of-jpopupmenu-to-use.html
+    lang: en
 comments: true
 ---
 ## 概要

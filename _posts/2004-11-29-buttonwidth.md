@@ -7,6 +7,9 @@ tags: [JButton, LayoutManager, BoxLayout, SpringLayout, GridLayout]
 author: aterai
 pubdate: 2004-11-29
 description: 高さはデフォルトのまま幅だけを指定して、JButton、JComboBox、JTextFieldなどのサイズを変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/10/fixed-width-jbuttons-in-bottom-right.html
+    lang: en
 comments: true
 ---
 ## 概要

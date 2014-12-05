@@ -35,6 +35,13 @@ protected Dimension getMinimumThumbSize() {
 </code></pre>
 
 - - - -
+- `JDK 1.8.0_20`で修正されて、この記事のスクリーンショットのようにノブのサイズが小さくなり過ぎることはなくなった
+    - `WindowsScrollBarUI`(`XPStyle`)でのバグだったようだ
+    - [Bug ID: JDK-8039464 The scrollbar in JScrollPane has no right border if used WindowsLookAndFeel](http://bugs.java.com/view_bug.do?bug_id=8039464)
+
+<!-- dummy comment line for breaking list -->
+
+- - - -
 `Windows 7`の`WindowsLookAndFeel`で`JSlider`を使った場合も、つまみ？のサイズが小さすぎるが、`UIManager.put("Slider.minimumHorizontalSize", new Dimension(32, 32))`などとしても効果がない？
 
 	Slider.horizontalSize

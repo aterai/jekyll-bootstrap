@@ -15,7 +15,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLyb41hvI/AAAAAAAAAYI/uoSzZ3thyWk/s800/DraggableLinkButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final String href = "http://terai.xrea.jp/";
+<pre class="prettyprint"><code>final String href = "http://ateraimemo.com/";
 //final DataFlavor uriflavor = new DataFlavor(String.class, "text/uri-list");
 final DataFlavor uriflavor = DataFlavor.stringFlavor;
 JButton b = new JButton(href);
@@ -61,10 +61,10 @@ b.addMouseListener(new MouseAdapter() {
 
 <!-- dummy comment line for breaking list -->
 
-	http://terai.xrea.jp/
+	http://ateraimemo.com/
 
 ## 参考リンク
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://terai.xrea.jp/Swing/HyperlinkLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
 - [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
 
 <!-- dummy comment line for breaking list -->

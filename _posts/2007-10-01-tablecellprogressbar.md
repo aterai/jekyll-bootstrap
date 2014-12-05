@@ -7,6 +7,9 @@ tags: [JTable, JProgressBar, TableCellRenderer, SwingWorker]
 author: aterai
 pubdate: 2007-10-01T16:23:32+09:00
 description: JTableのセルにJProgressBarを使用して進捗を表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/03/jprogressbar-in-jtable-cell.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -23,13 +26,12 @@ comments: true
     b.setBorder(BorderFactory.createEmptyBorder(1,1,1,1));
   }
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
-                                               boolean isSelected, boolean hasFocus,
-                                               int row, int column) {
+      boolean isSelected, boolean hasFocus, int row, int column) {
     Integer i = (Integer)value;
     String text = "Done";
-    if(i&lt;0) {
+    if (i &lt; 0) {
       text = "Canceled";
-    }else if(i&lt;100) {
+    } else if (i &lt; 100) {
       b.setValue(i);
       return b;
     }
@@ -46,20 +48,20 @@ SwingWorker&lt;Integer, Integer&gt; worker = new SwingWorker&lt;Integer, Integer
   private int lengthOfTask = 120;
   @Override protected Integer doInBackground() {
     int current = 0;
-    while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
+    while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
       current++;
       try {
         Thread.sleep(sleepDummy);
-      }catch(InterruptedException ie) {
+      } catch (InterruptedException ie) {
         publish(-1);
         break;
       }
       publish(100 * current / lengthOfTask);
     }
-    return sleepDummy*lengthOfTask;
+    return sleepDummy * lengthOfTask;
   }
-  @Override protected void process(java.util.List&lt;Integer&gt; chunks) {
-    for(Integer value : chunks) {
+  @Override protected void process(List&lt;Integer&gt; chunks) {
+    for (Integer value: chunks) {
       model.setValueAt(value, rowNumber, 2);
     }
     //model.fireTableCellUpdated(rowNumber, 2);
@@ -67,18 +69,18 @@ SwingWorker&lt;Integer, Integer&gt; worker = new SwingWorker&lt;Integer, Integer
   @Override protected void done() {
     String text = null;
     int i = -1;
-    if(isCancelled()) {
+    if (isCancelled()) {
       text = "Canceled";
-    }else{
-      try{
+    } else {
+      try {
         i = get();
         text = "Done";
-      }catch(Exception ignore) {
+      } catch (Exception ignore) {
         ignore.printStackTrace();
         text = ignore.getMessage();
       }
     }
-    System.out.println(rowNumber +":"+text+"("+i+"ms)");
+    System.out.println(rowNumber + ":" + text + "(" + i + "ms)");
   }
 };
 model.addTest(new Test("example", 0), worker);
@@ -96,7 +98,7 @@ executor.execute(worker); //1.6.0_18
 
 - - - -
 - メモ
-    - [Swing - Maximum number of SwingWorker objects in a Swing app?](https://forums.oracle.com/thread/1364600)
+    - [Swing - Maximum number of SwingWorker objects in a Swing app?](https://community.oracle.com/thread/1364600)
 
 <!-- dummy comment line for breaking list -->
 

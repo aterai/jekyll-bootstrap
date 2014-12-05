@@ -7,6 +7,9 @@ tags: [JSeparator, TitledBorder, MatteBorder, JLabel, Icon, LinearGradientPaint]
 author: aterai
 pubdate: 2012-08-27T18:52:36+09:00
 description: TitledBorderとMatteBorderを使用してTitle付きのSeparatorを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/09/create-gradient-titled-separator.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -6,11 +6,14 @@ title: JTableに行ヘッダを追加
 tags: [JTable, JList, JScrollPane]
 author: aterai
 pubdate: 2006-09-04
-description: JTableに行ヘッダを追加を追加します。
+description: JTableを設定したJScrollPaneのRowHeaderViewに、JListで作成した行ヘッダを追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/01/jtable-rowheader.html
+    lang: en
 comments: true
 ---
 ## 概要
-`JTable`に行ヘッダを追加を追加します。
+`JTable`を設定した`JScrollPane`の`RowHeaderView`に、`JList`で作成した行ヘッダを追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUk9YzW7I/AAAAAAAAAmQ/wjin9CuyfBg/s800/TableRowHeader.png %}
 
@@ -66,7 +69,7 @@ comments: true
       return this;
     }
   }
-//...
+  //...
 }
 </code></pre>
 
@@ -82,7 +85,7 @@ scrollPane.getViewport().setBackground(Color.GREEN);
 
 ## 参考リンク
 - [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples1.html)
-- [Swing - excel styled table?](https://forums.oracle.com/thread/1395446)
+- [Swing - excel styled table?](https://community.oracle.com/thread/1395446)
 - [JListのセルをカーソル移動でロールオーバー](http://ateraimemo.com/Swing/RollOverListener.html)
 
 <!-- dummy comment line for breaking list -->
@@ -108,7 +111,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.table.*;
-public class HeaderRendererTest{
+public class HeaderRendererTest {
   public JComponent makeUI() {
     String[] columnNames = {"", "String", "Boolean"};
     Object[][] data = {
@@ -132,7 +135,7 @@ public class HeaderRendererTest{
 
     JPanel p = new JPanel(new BorderLayout());
     p.add(new JScrollPane(table));
-    p.setPreferredSize(new Dimension(320, 160));
+    p.setPreferredSize(new Dimension(320, 240));
     return p;
   }
   public static void main(String[] args) {
@@ -143,10 +146,10 @@ public class HeaderRendererTest{
     });
   }
   public static void createAndShowGUI() {
-    try{
+    try {
       UIManager.setLookAndFeel(
         UIManager.getSystemLookAndFeelClassName());
-    }catch(Exception e) {
+    } catch (Exception e) {
       e.printStackTrace();
     }
     JFrame frame = new JFrame();
@@ -171,7 +174,7 @@ class HeaderRenderer implements TableCellRenderer {
     JLabel l;
     boolean flg = row == rollOverRowIndex;
     l = (JLabel) tcr.getTableCellRendererComponent(
-      tbl, val, isS, flg?flg:hasF, row, col);
+          tbl, val, isS, flg ? flg : hasF, row, col);
     l.setOpaque(!flg);
     return l;
   }

@@ -26,7 +26,7 @@ comments: true
   @Override public void paintComponent(Graphics g) {
     super.paintComponent(g);
     if(showWatermark) {
-      Graphics2D g2 = (Graphics2D)g.create();
+      Graphics2D g2 = (Graphics2D) g.create();
       Insets i = getInsets();
       Font font = getFont();
       FontRenderContext frc = g2.getFontRenderContext();

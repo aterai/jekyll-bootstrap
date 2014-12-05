@@ -67,6 +67,6 @@ comments: true
 上記のサンプルでは、`1`列目のセルエディタ、レンダラーに`JSlider`を使用するように設定しています。このスライダーの値を変更すると、同じ行の`0`列目の値も変更されるように、セルエディタに`ChangeListener`を追加しています。
 
 ## コメント
-- メモ: [Bug ID: 6348946 JSlider's thumb moves in the wrong direction when used as a JTable cell editor.](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6348946) via. [Swing - How to insert a JComponent into a cell of JTable](https://forums.oracle.com/thread/2153323) -- *aterai* 2011-01-16 (日) 02:25:31
+- メモ: [Bug ID: 6348946 JSlider's thumb moves in the wrong direction when used as a JTable cell editor.](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6348946) via. [Swing - How to insert a JComponent into a cell of JTable](https://community.oracle.com/thread/2153323) -- *aterai* 2011-01-16 (日) 02:25:31
 
 <!-- dummy comment line for breaking list -->

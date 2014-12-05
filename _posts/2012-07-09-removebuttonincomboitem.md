@@ -7,6 +7,9 @@ tags: [JComboBox, JButton, JList, BasicComboPopup, ListCellRenderer, MouseListen
 author: aterai
 pubdate: 2012-07-09T12:02:11+09:00
 description: JButtonのドロップダウンリストで、各アイテムにクリック可能なJButtonを追加しこれを削除します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/10/delete-button-in-jcombobox-popup-menu.html
+    lang: en
 comments: true
 ---
 ## 概要

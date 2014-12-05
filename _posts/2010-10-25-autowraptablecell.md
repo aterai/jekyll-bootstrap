@@ -15,31 +15,30 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH4TWFB1I/AAAAAAAAAR4/8C89wEJ8EUA/s800/AutoWrapTableCell.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private List&lt;List&lt;Integer&gt;&gt; rowColHeight = new ArrayList&lt;&gt;();
+<pre class="prettyprint"><code>private List&lt;List&lt;Integer&gt;&gt; rowAndCellHeightList= new ArrayList&lt;&gt;();
 private void adjustRowHeight(JTable table, int row, int column) {
   //int cWidth = table.getTableHeader().getColumnModel().getColumn(column).getWidth();
-  int cWidth = table.getCellRect(row, column, false).width; //セルの内余白は含めない
+  //int cWidth = table.getCellRect(row, column, false).width; //セルの内余白は含めない
   //setSize(new Dimension(cWidth, 1000)); //注目
-  setBounds(table.getCellRect(row, column, false)); //もしくは？
-  //doLayout();
+  setBounds(table.getCellRect(row, column, false)); //もしくはsetBoundsを使用する
+  //doLayout(); //必要なさそう
 
-  int prefH = getPreferredSize().height;
-  while (rowColHeight.size() &lt;= row) {
-    rowColHeight.add(new ArrayList&lt;Integer&gt;(column));
+  int preferredHeight = getPreferredSize().height;
+  while (rowAndCellHeightList.size() &lt;= row) {
+    rowAndCellHeightList.add(new ArrayList&lt;Integer&gt;(column));
   }
-  List&lt;Integer&gt; colHeights = rowColHeight.get(row);
-  while (colHeights.size() &lt;= column) {
-    colHeights.add(0);
+  List&lt;Integer&gt; cellHeightList = rowAndCellHeightList.get(row);
+  while (cellHeightList.size() &lt;= column) {
+    cellHeightList.add(0);
   }
-  colHeights.set(column, prefH);
-  int maxH = prefH;
-  for (Integer colHeight : colHeights) {
-    if (colHeight &gt; maxH) {
-      maxH = colHeight;
-    }
+  cellHeightList.set(column, preferredHeight);
+  //JDK 1.8.0: int max = cellHeightList.stream().max(Integer::compare).get();
+  int max = preferredHeight;
+  for (int h: cellHeightList) {
+    max = Math.max(h, max);
   }
-  if (table.getRowHeight(row) != maxH) {
-    table.setRowHeight(row, maxH);
+  if (table.getRowHeight(row) != max) {
+    table.setRowHeight(row, max);
   }
 }
 </code></pre>

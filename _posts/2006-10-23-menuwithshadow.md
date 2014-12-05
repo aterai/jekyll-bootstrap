@@ -3,14 +3,14 @@ layout: post
 category: swing
 folder: MenuWithShadow
 title: Menuに半透明の影を付ける
-tags: [JPopupMenu, UIManager, Robot, Translucent]
+tags: [JMenu, JPopupMenu, UIManager, Border, Robot, Translucent]
 author: aterai
 pubdate: 2006-10-23T14:11:21+09:00
-description: メニューに半透明の影を付けます。
+description: JMenuから開くJPopupMenuにBorderを設定して半透明の影を付けます。
 comments: true
 ---
 ## 概要
-メニューに半透明の影を付けます。
+`JMenu`から開く`JPopupMenu`に`Border`を設定して半透明の影を付けます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPz0ZEG6I/AAAAAAAAAek/pd0ErBB9eBg/s800/MenuWithShadow.png %}
 

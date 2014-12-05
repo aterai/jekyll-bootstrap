@@ -7,6 +7,9 @@ tags: [JToolBar, JLabel, Icon, DragAndDrop, MouseListener, MouseMotionListener, 
 author: aterai
 pubdate: 2013-04-08T01:18:50+09:00
 description: JToolBarに配置したアイコンをドラッグ＆ドロップで並べ替えます。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/04/rearrange-jtoolbar-icon-by-drag-and-drop.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -26,8 +29,8 @@ comments: true
     window.setBackground(new Color(0, true));
   }
   @Override public void mousePressed(MouseEvent e) {
-    JComponent parent = (JComponent)e.getComponent();
-    if(parent.getComponentCount()&lt;=1) {
+    JComponent parent = (JComponent) e.getComponent();
+    if (parent.getComponentCount() &lt;= 1) {
       startPt = null;
       return;
     }
@@ -35,13 +38,13 @@ comments: true
   }
   @Override public void mouseDragged(MouseEvent e) {
     Point pt = e.getPoint();
-    JComponent parent = (JComponent)e.getComponent();
-    int t = Math.sqrt(Math.pow(pt.x-startPt.x, 2)+Math.pow(pt.y-startPt.y, 2))
-    if(startPt != null &amp;&amp; t&gt;gestureMotionThreshold) {
+    JComponent parent = (JComponent) e.getComponent();
+    int t = Math.sqrt(Math.pow(pt.x - startPt.x, 2) + Math.pow(pt.y - startPt.y, 2))
+    if (startPt != null &amp;&amp; t &gt; gestureMotionThreshold) {
       startPt = null;
       Component c = parent.getComponentAt(pt);
       index = parent.getComponentZOrder(c);
-      if(c == parent || index &lt; 0) {
+      if (c == parent || index &lt; 0) {
         return;
       }
       draggingComonent = c;
@@ -55,39 +58,39 @@ comments: true
       window.pack();
 
       Dimension d = draggingComonent.getPreferredSize();
-      Point p = new Point(pt.x - d.width/2, pt.y - d.height/2);
+      Point p = new Point(pt.x - d.width / 2, pt.y - d.height / 2);
       SwingUtilities.convertPointToScreen(p, parent);
       window.setLocation(p);
       window.setVisible(true);
 
       return;
     }
-    if(!window.isVisible() || draggingComonent==null) {
+    if (!window.isVisible() || draggingComonent==null) {
       return;
     }
 
     Dimension d = draggingComonent.getPreferredSize();
-    Point p = new Point(pt.x - d.width/2, pt.y - d.height/2);
+    Point p = new Point(pt.x - d.width / 2, pt.y - d.height / 2);
     SwingUtilities.convertPointToScreen(p, parent);
     window.setLocation(p);
 
-    for(int i=0; i&lt;parent.getComponentCount(); i++) {
+    for (int i = 0; i &lt; parent.getComponentCount(); i++) {
       Component c = parent.getComponent(i);
       Rectangle r = c.getBounds();
-      Rectangle r1 = new Rectangle(r.x, r.y, r.width/2, r.height);
-      Rectangle r2 = new Rectangle(r.x+r.width/2, r.y, r.width/2, r.height);
-      if(r1.contains(pt)) {
-        if(c==gap) {
+      Rectangle r1 = new Rectangle(r.x, r.y, r.width / 2, r.height);
+      Rectangle r2 = new Rectangle(r.x + r.width / 2, r.y, r.width / 2, r.height);
+      if (r1.contains(pt)) {
+        if (c == gap) {
           return;
         }
-        int n = i-1&gt;=0 ? i : 0;
+        int n = i - 1 &gt;= 0 ? i : 0;
         parent.remove(gap);
         parent.add(gap, n);
         parent.revalidate();
         parent.repaint();
         return;
-      }else if(r2.contains(pt)) {
-        if(c==gap) {
+      } else if (r2.contains(pt)) {
+        if (c == gap) {
           return;
         }
         parent.remove(gap);
@@ -104,29 +107,29 @@ comments: true
 
   @Override public void mouseReleased(MouseEvent e) {
     startPt = null;
-    if(!window.isVisible() || draggingComonent==null) {
+    if (!window.isVisible() || draggingComonent==null) {
       return;
     }
     Point pt = e.getPoint();
-    JComponent parent = (JComponent)e.getComponent();
+    JComponent parent = (JComponent) e.getComponent();
 
     Component cmp = draggingComonent;
     draggingComonent = null;
     window.setVisible(false);
 
-    for(int i=0; i&lt;parent.getComponentCount(); i++) {
+    for (int i = 0; i &lt; parent.getComponentCount(); i++) {
       Component c = parent.getComponent(i);
       Rectangle r = c.getBounds();
-      Rectangle r1 = new Rectangle(r.x, r.y, r.width/2, r.height);
-      Rectangle r2 = new Rectangle(r.x+r.width/2, r.y, r.width/2, r.height);
-      if(r1.contains(pt)) {
-        int n = i-1&gt;=0 ? i : 0;
+      Rectangle r1 = new Rectangle(r.x, r.y, r.width / 2, r.height);
+      Rectangle r2 = new Rectangle(r.x + r.width / 2, r.y, r.width / 2, r.height);
+      if (r1.contains(pt)) {
+        int n = i - 1 &gt;= 0 ? i : 0;
         parent.remove(gap);
         parent.add(cmp, n);
         parent.revalidate();
         parent.repaint();
         return;
-      }else if(r2.contains(pt)) {
+      } else if (r2.contains(pt)) {
         parent.remove(gap);
         parent.add(cmp, i);
         parent.revalidate();
@@ -134,10 +137,10 @@ comments: true
         return;
       }
     }
-    if(parent.getBounds().contains(pt)) {
+    if (parent.getBounds().contains(pt)) {
       parent.remove(gap);
       parent.add(cmp);
-    }else{
+    } else {
       parent.remove(gap);
       parent.add(cmp, index);
     }

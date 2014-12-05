@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class StarPanel1 extends JPanel{
   @Override public void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     int w = getWidth();
     int h = getHeight();
     //&lt;blockquote cite="%JAVA_HOME%/demo/jfc/Java2D/src/java2d/demos/Lines/Joins.java"&gt;

@@ -7,6 +7,9 @@ tags: [JComboBox, LayoutManager, JButton, JLabel, Icon, RGBImageFilter, RescaleO
 author: aterai
 pubdate: 2009-08-17T12:55:55+09:00
 description: JComboBoxのEditorComponentにJButtonやJLabelなどを配置します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/08/jbutton-in-comboeditor.html
+    lang: en
 comments: true
 ---
 ## 概要

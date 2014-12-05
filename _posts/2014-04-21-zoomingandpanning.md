@@ -10,7 +10,7 @@ description: JPanelに表示した画像にAffineTransformによる変換を適�
 comments: true
 ---
 ## 概要
-`JPanel`に表示した画像に`AffineTransform`による変換を適用して、マウスを使った拡大・縮小・移動を実行します。[How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)に投稿されているコードを参考・引用しています。
+`JPanel`に表示した画像に`AffineTransform`による変換を適用して、マウスを使った拡大・縮小・移動を実行します。[How to implement Zoom & Pan in Java using Graphics2D](https://community.oracle.com/thread/1263955)に投稿されているコードを参考・引用しています。
 
 {% download https://lh3.googleusercontent.com/-c5Y9hCoRQbU/U1PhhnitgFI/AAAAAAAACD0/ZXIcyPywcr0/s800/ZoomingAndPanning.png %}
 
@@ -54,7 +54,7 @@ comments: true
     coordTransform.translate(p2.getX() - p1.getX(), p2.getY() - p1.getY());
     c.repaint();
   }
-  //https://forums.oracle.com/thread/1263955
+  //https://community.oracle.com/thread/1263955
   //How to implement Zoom &amp; Pan in Java using Graphics2D
   private Point transformPoint(Point p1) {
     Point p2 = new Point();
@@ -84,7 +84,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [How to implement Zoom & Pan in Java using Graphics2D](https://forums.oracle.com/thread/1263955)
+- [How to implement Zoom & Pan in Java using Graphics2D](https://community.oracle.com/thread/1263955)
 - [ズームとパンの機能を備えたドローソフトを作成する：CodeZine](http://codezine.jp/article/detail/174)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 - [タッチ操作に対応した画像ビューワーをJavaScriptで作るならD3.jsが便利 - てっく煮ブログ](http://tech.nitoyon.com/ja/blog/2013/12/13/touch-viewer/)

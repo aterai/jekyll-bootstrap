@@ -98,7 +98,7 @@ public class MaximumSizeTest {
 </code></pre>
 
 ## 参考リンク
-- [Swing - Have JFrame respect the minimum size (stop resizing) - Partial solution](https://forums.oracle.com/thread/1377749)
+- [Swing - Have JFrame respect the minimum size (stop resizing) - Partial solution](https://community.oracle.com/thread/1377749)
 - [DynamicLayoutでレイアウトの動的評価](http://ateraimemo.com/Swing/DynamicLayout.html)
 
 <!-- dummy comment line for breaking list -->

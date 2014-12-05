@@ -6,11 +6,11 @@ title: JInternalFrameを閉じる
 tags: [JInternalFrame, JDesktopPane, DesktopManager]
 author: aterai
 pubdate: 2008-05-05T20:51:51+09:00
-description: JInternalFrameを閉じます。
+description: 選択中のJInternalFrameをDesktopManagerなどを使用して外部から閉じる(JDesktopPaneから除去する)方法をテストします。
 comments: true
 ---
 ## 概要
-`JInternalFrame`を閉じます。
+選択中の`JInternalFrame`を`DesktopManager`などを使用して外部から閉じる(`JDesktopPane`から除去する)方法をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJcTXtdNI/AAAAAAAAAUY/zL_wkJJa_Ks/s800/CloseInternalFrame.png %}
 

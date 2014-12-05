@@ -62,7 +62,7 @@ comments: true
       rootPane.getLayeredPane().print(g);
     }
     super.paintComponent(g);
-    Graphics2D g2d = (Graphics2D)g;
+    Graphics2D g2d = (Graphics2D) g;
 
     if(h&lt;image.getIconHeight()+5+5) {
       h += image.getIconHeight()/16;

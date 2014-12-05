@@ -7,6 +7,9 @@ tags: [JComboBox, Border, Path2D, ArrowButton]
 author: aterai
 pubdate: 2012-04-23T11:59:28+09:00
 description: JComboBoxの左上、右上の角を丸めるBorderを設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/07/rounded-corner-jcombobox-border.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -18,15 +21,15 @@ comments: true
 <pre class="prettyprint"><code>class RoundedCornerBorder extends AbstractBorder {
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int width, int height) {
-    Graphics2D g2 = (Graphics2D)g.create();
-    g2.setRenderingHint(
-        RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON);
     int r = 12;
     int w = width  - 1;
     int h = height - 1;
     Area round = new Area(new RoundRectangle2D.Float(x, y, w, h, r, r));
     Container parent = c.getParent();
-    if(parent!=null) {
+    if (parent!=null) {
       g2.setColor(parent.getBackground());
       Area corner = new Area(new Rectangle2D.Float(x, y, width, height));
       corner.subtract(round);
@@ -49,9 +52,9 @@ comments: true
 class KamabokoBorder extends RoundedCornerBorder {
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int width, int height) {
-    Graphics2D g2 = (Graphics2D)g.create();
-    g2.setRenderingHint(
-        RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON);
     int r = 12;
     int w = width  - 1;
     int h = height - 1;
@@ -65,7 +68,7 @@ class KamabokoBorder extends RoundedCornerBorder {
     p.closePath();
     Area round = new Area(p);
     Container parent = c.getParent();
-    if(parent!=null) {
+    if (parent!=null) {
       g2.setColor(parent.getBackground());
       Area corner = new Area(new Rectangle2D.Float(x, y, width, height));
       corner.subtract(round);

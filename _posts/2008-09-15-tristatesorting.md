@@ -7,6 +7,9 @@ tags: [JTable, TableRowSorter]
 author: aterai
 pubdate: 2008-09-15T17:36:51+09:00
 description: JDK 6で導入されたTableRowSorterのソートを、TableSorter.javaのようにヘッダクリックで昇順、降順、初期状態に切り替わるように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/09/jdk6-cycle-through-ascending-descending.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -19,11 +22,11 @@ comments: true
 JTable table = new JTable(model);
 TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
   @Override public void toggleSortOrder(int column) {
-    if(column&gt;=0 &amp;&amp; column&lt;getModelWrapper().getColumnCount() &amp;&amp; isSortable(column)) {
+    if (column &gt;= 0 &amp;&amp; column &lt; getModelWrapper().getColumnCount() &amp;&amp; isSortable(column)) {
       List&lt;SortKey&gt; keys = new ArrayList&lt;&gt;(getSortKeys());
-      if(!keys.isEmpty()) {
+      if (!keys.isEmpty()) {
         SortKey sortKey = keys.get(0);
-        if(sortKey.getColumn()==column &amp;&amp; sortKey.getSortOrder()==SortOrder.DESCENDING) {
+        if (sortKey.getColumn() == column &amp;&amp; sortKey.getSortOrder() == SortOrder.DESCENDING) {
           setSortKeys(null);
           return;
         }

@@ -20,10 +20,10 @@ MemoryImageSource source = new MemoryImageSource(320, 240, pixels, 0, 320);
 int penc = 0x0;
 @Override public void paintComponent(Graphics g) {
   super.paintComponent(g);
-  if(backImage!=null) {
-    ((Graphics2D)g).drawImage(backImage, 0, 0, this);
+  if (backImage != null) {
+    ((Graphics2D) g).drawImage(backImage, 0, 0, this);
   }
-  if(source!=null) {
+  if (source != null) {
     g.drawImage(createImage(source), 0, 0, null);
   }
 }
@@ -37,19 +37,19 @@ int penc = 0x0;
   double yIncrement = yDelta / delta;
   double xStart = startPoint.x;
   double yStart = startPoint.y;
-  for(int i=0; i&lt;delta; i++) {
+  for (int i = 0; i &lt; delta; i++) {
     Point p = new Point((int)xStart, (int)yStart);
-    if(p.x&lt;0 || p.y&lt;0 || p.x&gt;=320 || p.y&gt;=240) break;
+    if (p.x &lt; 0 || p.y &lt; 0 || p.x &gt;= 320 || p.y &gt;= 240) break;
     pixels[p.x + p.y * 320] = penc;
-    for(int n=-1;n&lt;=1;n++) {
-      for(int m=-1;m&lt;=1;m++) {
-        int t = (p.x+n) + (p.y+m) * 320;
-        if(t&gt;=0 &amp;&amp; t&lt;320*240) {
+    for (int n = -1; n &lt;= 1; n++) {
+      for (int m = -1; m &lt;= 1; m++) {
+        int t = (p.x + n) + (p.y + m) * 320;
+        if (t &gt;= 0 &amp;&amp; t &lt; 320 * 240) {
           pixels[t] = penc;
         }
       }
     }
-    repaint(p.x-2, p.y-2, 4, 4);
+    repaint(p.x - 2, p.y - 2, 4, 4);
     xStart += xIncrement;
     yStart += yIncrement;
   }
@@ -57,7 +57,7 @@ int penc = 0x0;
 }
 @Override public void mousePressed(MouseEvent e) {
   startPoint = e.getPoint();
-  penc = (e.getButton()==MouseEvent.BUTTON1)?0xff000000:0x0;
+  penc = (e.getButton() == MouseEvent.BUTTON1) ? 0xff000000 : 0x0;
 }
 </code></pre>
 
@@ -67,17 +67,17 @@ int penc = 0x0;
 
 - - - -
 以下のような方法もあります。
-<pre class="prettyprint"><code>private static final Color ERASER = new Color(0,0,0,0);
+<pre class="prettyprint"><code>private static final Color ERASER = new Color(0, 0, 0, 0);
 private boolean isPen = true;
-private Point startPoint = new Point(-10,-10);
+private Point startPoint = new Point(-10, -10);
 private BufferedImage currentImage = null;
 private BufferedImage backImage = null;
 @Override public void paintComponent(Graphics g) {
   super.paintComponent(g);
-  if(backImage!=null) {
+  if (backImage != null) {
     g.drawImage(backImage, 0, 0, this);
   }
-  if(currentImage!=null) {
+  if (currentImage != null) {
     g.drawImage(currentImage, 0, 0, this);
   }
 }
@@ -85,9 +85,9 @@ private BufferedImage backImage = null;
   Point pt = e.getPoint();
   Graphics2D g2d = currentImage.createGraphics();
   g2d.setStroke(new BasicStroke(3.0F));
-  if(isPen) {
+  if (isPen) {
     g2d.setPaint(Color.BLACK);
-  }else{
+  } else {
     g2d.setComposite(AlphaComposite.Clear);
     g2d.setPaint(ERASER);
   }
@@ -98,7 +98,7 @@ private BufferedImage backImage = null;
 }
 @Override public void mousePressed(MouseEvent e) {
   startPoint = e.getPoint();
-  isPen = e.getButton()==MouseEvent.BUTTON1;
+  isPen = e.getButton() == MouseEvent.BUTTON1;
 }
 </code></pre>
 

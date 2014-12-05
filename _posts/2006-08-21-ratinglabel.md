@@ -7,6 +7,9 @@ tags: [ImageIcon, RGBImageFilter, JLabel]
 author: aterai
 pubdate: 2006-08-21T11:55:27+09:00
 description: RGBImageFilterで色調を変更したアイコンの用意し、評価用コンポーネントを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/12/jlabel-star-rating-bar.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -29,9 +32,9 @@ private class SelectedImageFilter extends RGBImageFilter {
     canFilterIndexColorModel = false;
   }
   @Override public int filterRGB(int x, int y, int argb) {
-    int r = (int)(((argb &gt;&gt; 16) &amp; 0xff) * filter[0]);
-    int g = (int)(((argb &gt;&gt;  8) &amp; 0xff) * filter[1]);
-    int b = (int)(((argb      ) &amp; 0xff) * filter[2]);
+    int r = (int) (((argb &gt;&gt; 16) &amp; 0xff) * filter[0]);
+    int g = (int) (((argb &gt;&gt;  8) &amp; 0xff) * filter[1]);
+    int b = (int) (((argb      ) &amp; 0xff) * filter[2]);
     return (argb &amp; 0xff000000) | (r&lt;&lt;16) | (g&lt;&lt;8) | (b);
   }
 }

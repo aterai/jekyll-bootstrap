@@ -159,7 +159,7 @@ comments: true
 }
 </code></pre>
 
-- メモ: [Swing - Can popup menu events be consumed by other (e.g. background) components?](https://forums.oracle.com/thread/1393754) -- *aterai* 2008-04-10 (木) 18:24:18
+- メモ: [Swing - Can popup menu events be consumed by other (e.g. background) components?](https://community.oracle.com/thread/1393754) -- *aterai* 2008-04-10 (木) 18:24:18
 
 <!-- dummy comment line for breaking list -->
 

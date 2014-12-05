@@ -73,7 +73,7 @@ editor2.setFont(UIManager.getFont("Label.font"));
 
 ## 参考リンク
 - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519)
-- [Swing - JLabel with html tag can not be disabled or setForegroud?!](https://forums.oracle.com/thread/1377943)
+- [Swing - JLabel with html tag can not be disabled or setForegroud?!](https://community.oracle.com/thread/1377943)
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
 
 <!-- dummy comment line for breaking list -->

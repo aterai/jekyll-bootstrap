@@ -6,11 +6,11 @@ title: JSpinnerで日付を設定
 tags: [JSpinner, SpinnerDateModel, FocusListener, Calendar]
 author: aterai
 pubdate: 2011-08-22T15:46:11+09:00
-description: JSpinnerを使って日付を設定します。
+description: JSpinnerに、下限値を設定したSpinnerDateModelを設定して、日付の変更をテストします。
 comments: true
 ---
 ## 概要
-`JSpinner`を使って日付を設定します。
+`JSpinner`に、下限値を設定した`SpinnerDateModel`を設定して、日付の変更をテストします。
 
 {% download https://lh5.googleusercontent.com/-llHXaOVDQbQ/TlH5yRAODSI/AAAAAAAABBE/XsSUtm7J_U0/s800/SpinnerDateModel.png %}
 
@@ -25,7 +25,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         int i = dateFormatPattern.lastIndexOf("dd");
-        editor.getTextField().select(i, i+2);
+        editor.getTextField().select(i, i + 2);
       }
     });
   }
@@ -36,7 +36,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 - `Calendar.DAY_OF_MONTH`
     - 本日を現在の値と下限値、上限値は`null`(制限無し)、増減値を`Calendar.DAY_OF_MONTH`とした`SpinnerDateModel`を使用
         - 下限値が現在時刻(例: `Mon Aug 22 15:09:27 JST 2011`)なので、現在の値(`Mon Aug 22 00:00:00 JST 2011`)が範囲外となり、矢印ボタンで日付を変更できない
-        - 参考: [Swing - DateSpinner spins only after an edit](https://forums.oracle.com/thread/2268752)
+        - 参考: [Swing - DateSpinner spins only after an edit](https://community.oracle.com/thread/2268752)
 
 <!-- dummy comment line for breaking list -->
 
@@ -66,7 +66,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - DateSpinner spins only after an edit](https://forums.oracle.com/thread/2268752)
+- [Swing - DateSpinner spins only after an edit](https://community.oracle.com/thread/2268752)
 - [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
 
 <!-- dummy comment line for breaking list -->

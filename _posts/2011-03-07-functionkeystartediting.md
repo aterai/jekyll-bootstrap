@@ -10,14 +10,14 @@ description: JTableのセル編集自動開始をファンクションキーの�
 comments: true
 ---
 ## 概要
-`JTable`のセル編集自動開始をファンクションキーの場合だけ無効にします。[Swing - JTable starts editing when F3 is pressed - howto disable?](https://forums.oracle.com/thread/1350192)を参考にしています。
+`JTable`のセル編集自動開始をファンクションキーの場合だけ無効にします。[Swing - JTable starts editing when F3 is pressed - howto disable?](https://community.oracle.com/thread/1350192)を参考にしています。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TXR_CO_Z9UI/AAAAAAAAA3I/7_3ml86ybo8/s800/FunctionKeyStartEditing.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   //Swing - JTable starts editing when F3 is pressed - howto disable?
-  //https://forums.oracle.com/thread/1350192
+  //https://community.oracle.com/thread/1350192
   @Override public boolean editCellAt(int row, int column, EventObject e) {
     if (e instanceof KeyEvent) {
       int c = ((KeyEvent)e).getKeyCode();
@@ -50,7 +50,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - JTable starts editing when F3 is pressed - howto disable?](https://forums.oracle.com/thread/1350192)
+- [Swing - JTable starts editing when F3 is pressed - howto disable?](https://community.oracle.com/thread/1350192)
 - [JTableでキー入力によるセル編集開始を禁止する](http://ateraimemo.com/Swing/PreventStartCellEditing.html)
 
 <!-- dummy comment line for breaking list -->

@@ -6,11 +6,14 @@ title: JButtonを半透明にする
 tags: [JButton, Translucent, GradientPaint, Icon, Html, OverlayLayout, JLabel]
 author: aterai
 pubdate: 2012-12-31T06:46:18+09:00
-description: 半透明なJButtonを作成します。
+description: 背景が透明なJButtonに半透明なIconを設定するなどして、ボタンテキスト以外が半透明なJButtonを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/01/make-translucent-jbutton.html
+    lang: en
 comments: true
 ---
 ## 概要
-半透明な`JButton`を作成します。
+背景が透明な`JButton`に半透明な`Icon`を設定するなどして、ボタンテキスト以外が半透明な`JButton`を作成します。
 
 {% download https://lh3.googleusercontent.com/-W5o-8ilpY6k/UOCzLo2oOeI/AAAAAAAABZ0/m1_AjYpKqiY/s800/TranslucentButton.png %}
 

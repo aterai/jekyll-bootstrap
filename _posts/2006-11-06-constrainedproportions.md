@@ -15,13 +15,14 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKJeWlAAI/AAAAAAAAAVg/GMclfo0TYBM/s800/ConstrainedProportions.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final int mw = 320;
-final int mh = 200;
+<pre class="prettyprint"><code>private static final int MW = 320;
+private static final int MH = 200;
+//...
 frame.addComponentListener(new ComponentAdapter() {
   @Override public void componentResized(ComponentEvent e) {
     int fw = frame.getSize().width;
-    int fh = mh*fw/mw;
-    frame.setSize((mw&gt;fw)?mw:fw, (mh&gt;fh)?mh:fh);
+    int fh = MH * fw / MW;
+    frame.setSize(MW &gt; fw ? MW : fw, MH &gt; fh ? MH : fh);
   }
 });
 </code></pre>

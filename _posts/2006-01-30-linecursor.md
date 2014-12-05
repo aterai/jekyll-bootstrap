@@ -37,7 +37,7 @@ comments: true
   }
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     Insets i = getInsets();
     //int y = g2.getFontMetrics().getHeight()*getLineAtCaret(this)+i.top;
     int y = caret.y+caret.height-1;
@@ -60,8 +60,8 @@ comments: true
 [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)のように、`Highlighter`を使っても同様のことができるようです。
 
 ## 参考リンク
-- [Swing - Line Number in JTextPane](https://forums.oracle.com/thread/1393939)
-- [Swing - Line highlighting problem in presence of text highlighting!](https://forums.oracle.com/thread/1377129)
+- [Swing - Line Number in JTextPane](https://community.oracle.com/thread/1393939)
+- [Swing - Line highlighting problem in presence of text highlighting!](https://community.oracle.com/thread/1377129)
 - [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)
 - [JTextAreaに行ハイライトカーソルを表示](http://ateraimemo.com/Swing/LineHighlighter.html)
 

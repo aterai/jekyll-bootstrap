@@ -6,11 +6,11 @@ title: Cursorのアニメーション
 tags: [Cursor, Animation]
 author: aterai
 pubdate: 2006-05-01T12:35:56+09:00
-description: マウスカーソルをアニメーションさせます。
+description: Timerを使ったCursorの切り替えで、マウスポインタのループアニメーションを行います。
 comments: true
 ---
 ## 概要
-マウスカーソルをアニメーションさせます。
+`Timer`を使った`Cursor`の切り替えで、マウスポインタのループアニメーションを行います。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHkbNXdwI/AAAAAAAAARY/RzDAT8xyR3c/s800/AnimatedCursor.png %}
 

@@ -6,11 +6,11 @@ title: JTextField内にアイコンを追加
 tags: [JTextField, ImageIcon, JLabel, Border]
 author: aterai
 pubdate: 2005-01-03
-description: JTextFieldの内部にアイコンを表示します。
+description: JTextFieldの内部に余白を生成し、そこにImageIconを設定したJLabelを配置します。
 comments: true
 ---
 ## 概要
-`JTextField`の内部にアイコンを表示します。
+`JTextField`の内部に余白を生成し、そこに`ImageIcon`を設定した`JLabel`を配置します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOSatpfJI/AAAAAAAAAcI/9Ghfvb82FsM/s800/IconTextField.png %}
 
@@ -72,11 +72,11 @@ JTextField field2 = new JTextField("ccccccccccccccccccccccccccc") {
   }
 };
 m = field2.getMargin();
-field2.setMargin(new Insets(m.top+2,m.left,m.bottom,m.right+w));
+field2.setMargin(new Insets(m.top + 2, m.left, m.bottom, m.right + w));
 </code></pre>
 
 ## 参考リンク
-- [Swing (Archive) - Add a clickable icon to the left corner of a JTextField](https://forums.oracle.com/thread/1489851)
+- [Swing (Archive) - Add a clickable icon to the left corner of a JTextField](https://community.oracle.com/thread/1489851)
 - [JTextFieldのMarginを設定する](http://ateraimemo.com/Swing/TextFieldMargin.html)
 - [JComboBoxにアイコンを追加](http://ateraimemo.com/Swing/IconComboBox.html)
 

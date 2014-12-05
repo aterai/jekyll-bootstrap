@@ -45,14 +45,14 @@ toolbar.add(createToolbarButton(url3));
 `JDK 1.6`で、`JDK 1.5`のようなボタン表示(フォーカスを取得しない)にするには、`JButton#setRequestFocusEnabled(false)`(マウスクリックではフォーカスを取得しないが、キーボードからは許可)、または、`JButton#setFocusable(false)`とする必要があるようです。
 
 - マウスクリックでツールバーボタンにフォーカスが移動すると、コピーボタンを押したらテキストエディタでの文字列選択状態がクリアされたり、参考の質問のような不具合が起こる
-- 参考: [Swing - JTextPane selection color problem](https://forums.oracle.com/thread/1358842)の camickr さんの投稿(2008/10/25 0:34)
+- 参考: [Swing - JTextPane selection color problem](https://community.oracle.com/thread/1358842)の camickr さんの投稿(2008/10/25 0:34)
 - `%JAVA_HOME%\demo\jfc\Notepad\src\Notepad.java`
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Java look and feel Graphics Repository](http://web.archive.org/web/20120818143859/http://java.sun.com/developer/techDocs/hi/repository/)
-- [Swing - Buttons like Netbeans'](https://forums.oracle.com/thread/1365522)
+- [Swing - Buttons like Netbeans'](https://community.oracle.com/thread/1365522)
 - [Customizing Menu Layout - How to Use Menus (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html#custom)
 
 <!-- dummy comment line for breaking list -->

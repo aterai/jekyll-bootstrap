@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: SelectNextRow
 title: JTableの次行にTabキーでフォーカスを移動
-tags: [JTable, InputMap]
+tags: [JTable, InputMap, Focus]
 author: aterai
 pubdate: 2005-04-18T01:45:22+09:00
 description: KBD{Tab}キーでセルのフォーカスが次行に移動するように設定します。
@@ -24,12 +24,11 @@ im.put(tab, im.get(enter));
 ## 解説
 上記のサンプルでは、チェックボックスで<kbd>Tab</kbd>キーでのフォーカスの移動(セル毎に移動)が、<kbd>Enter</kbd>キーと同じ(行毎に移動)になるように切り替えています。
 
-逆遷移の<kbd>Shift+Tab</kbd>なども対応する場合は、修飾子を`0`の代わりに`InputEvent.SHIFT_MASK`にして、同様に変更しています。
-
-[Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/thread/1484284)に、編集できないセルを飛ばして、<kbd>Tab</kbd>キーでフォーカス移動することができるサンプルがあるので参考にしてください。
+逆遷移の<kbd>Shift+Tab</kbd>などに対応する場合は、修飾子を`0`ではなく、`InputEvent.SHIFT_DOWN_MASK`にした`KeyStroke`を`InputMap`に設定します。
 
 ## 参考リンク
-- [Swing (Archive) - JTable skiping the cells disableds](https://forums.oracle.com/thread/1484284)
+- [Swing (Archive) - JTable skiping the cells disableds](https://community.oracle.com/thread/1484284)
+    - 編集できないセルを飛ばして、<kbd>Tab</kbd>キーでフォーカス移動を行うサンプル
 
 <!-- dummy comment line for breaking list -->
 

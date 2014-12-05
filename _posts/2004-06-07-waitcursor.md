@@ -6,11 +6,11 @@ title: Cursorを砂時計に変更
 tags: [Cursor, GlassPane, FocusTraversalPolicy, SwingWorker]
 author: aterai
 pubdate: 2004-06-07
-description: 処理中、マウスカーソルを砂時計に変更します。
+description: バックグラウンドで処理が実行されている間は、Cursorに砂時計が設定されたGlassPaneを有効にします。
 comments: true
 ---
 ## 概要
-処理中、マウスカーソルを砂時計に変更します。
+バックグラウンドで処理が実行されている間は、`Cursor`に砂時計が設定された`GlassPane`を有効にします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWfYWDbsI/AAAAAAAAApU/rldJwQuVm-8/s800/WaitCursor.png %}
 
@@ -39,7 +39,9 @@ button.addActionListener(new ActionListener() {
   public LockingGlassPane() {
     setOpaque(false);
     setFocusTraversalPolicy(new DefaultFocusTraversalPolicy() {
-      @Override public boolean accept(Component c) {return false;}
+      @Override public boolean accept(Component c) {
+        return false;
+      }
     });
     addKeyListener(new KeyAdapter() {});
     addMouseListener(new MouseAdapter() {});
@@ -68,12 +70,14 @@ button.addActionListener(new ActionListener() {
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>setFocusTraversalPolicy(new DefaultFocusTraversalPolicy() {
-  @Override public boolean accept(Component c) {return false;}
+  @Override public boolean accept(Component c) {
+    return false;
+  }
 });
 </code></pre>
 
 - または、`TraversalKeys`を空にする
-    - 参考:[Swing - How to display "Loading data..." to the user](https://forums.oracle.com/thread/1375257)
+    - 参考:[Swing - How to display "Loading data..." to the user](https://community.oracle.com/thread/1375257)
 
 <!-- dummy comment line for breaking list -->
 
@@ -124,7 +128,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - How to display "Loading data..." to the user](https://forums.oracle.com/thread/1375257)
+- [Swing - How to display "Loading data..." to the user](https://community.oracle.com/thread/1375257)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
     - [JInternalFrameをModalにする](http://ateraimemo.com/Swing/ModalInternalFrame.html)
 - [Disabled Glass Pane « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)

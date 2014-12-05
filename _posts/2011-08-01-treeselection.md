@@ -3,14 +3,14 @@ layout: post
 category: swing
 folder: TreeSelection
 title: JTreeの選択モードを切り替える
-tags: [JTree, TreePath]
+tags: [JTree, TreeSelectionModel, TreePath]
 author: aterai
 pubdate: 2011-08-01T15:39:38+09:00
-description: JTreeの選択モードを切り替えます。
+description: JTreeからSelectionModelを取得し、ノードの選択モードを切り替えます。
 comments: true
 ---
 ## 概要
-`JTree`の選択モードを切り替えます。
+`JTree`から`SelectionModel`を取得し、ノードの選択モードを切り替えます。
 
 {% download https://lh6.googleusercontent.com/-bPltus2wD6w/TjZCCGnH40I/AAAAAAAABAE/tgmolSg-2Ys/s800/TreeSelection.png %}
 
@@ -22,7 +22,7 @@ comments: true
 上記のサンプルでは、`tree.getSelectionModel().setSelectionMode(...)`メソッドを使用して、選択モードを設定しています。
 
 - `TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION`
-    - Ctrl-クリック、Shift-クリックなどで、自由に`TreePath`を選択状態にすることができます。
+    - <kbd>Ctrl+Click</kbd>、<kbd>Shift+Click</kbd>などで、自由に`TreePath`を選択状態にすることができます。
 - `TreeSelectionModel.SINGLE_TREE_SELECTION`
     - `TreePath`をひとつだけ選択状態にすることができます。
 - `TreeSelectionModel.CONTIGUOUS_TREE_SELECTION`

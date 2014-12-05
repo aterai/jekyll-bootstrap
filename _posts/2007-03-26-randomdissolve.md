@@ -10,7 +10,7 @@ description: RandomDissolve効果で表示する画像を切り替えます。
 comments: true
 ---
 ## 概要
-`RandomDissolve`効果で表示する画像を切り替えます。このサンプルは、[Java 2D - random pixelwise fading ?](https://forums.oracle.com/thread/1270228)に投稿されているソースコードを参考にしています。
+`RandomDissolve`効果で表示する画像を切り替えます。このサンプルは、[Java 2D - random pixelwise fading ?](https://community.oracle.com/thread/1270228)に投稿されているソースコードを参考にしています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRdPqz07I/AAAAAAAAAhM/h3EaItM41Yw/s800/RandomDissolve.png %}
 
@@ -72,7 +72,7 @@ comments: true
   }
   @Override public void paintComponent(Graphics g) {
     super.paintComponent(g);
-    Graphics2D g2d = (Graphics2D)g;
+    Graphics2D g2d = (Graphics2D) g;
     g2d.setPaint(getBackground());
     g2d.fillRect(0, 0, getWidth(), getHeight());
     g2d.drawImage(srcimg, 0, 0, srcimg.getWidth(), srcimg.getHeight(), this);
@@ -91,7 +91,7 @@ comments: true
 上記のサンプルでは、`BufferedImage`から`WritableRaster`を取得し、元画像と次の画像のコピーから、`int`配列をそれぞれ用意しています。元画像の配列を次の画像のピクセルでランダムに置き換えて、これを再描画することで画像の切り替えを行っています。
 
 ## 参考リンク
-- [Java 2D - random pixelwise fading ?](https://forums.oracle.com/thread/1270228)
+- [Java 2D - random pixelwise fading ?](https://community.oracle.com/thread/1270228)
 
 <!-- dummy comment line for breaking list -->
 

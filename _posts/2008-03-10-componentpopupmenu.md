@@ -3,14 +3,14 @@ layout: post
 category: swing
 folder: ComponentPopupMenu
 title: JPopupMenuをコンポーネントに追加
-tags: [JPopupMenu, JTextComponent, PopupMenuListener]
+tags: [JPopupMenu, JTextComponent, PopupMenuListener, DefaultEditorKit]
 author: aterai
 pubdate: 2008-03-10T01:39:57+09:00
-description: JPopupMenuをコンポーネントに追加します。
+description: コンポーネントに右クリックなどでポップアップするJPopupMenuを追加します。
 comments: true
 ---
 ## 概要
-`JPopupMenu`をコンポーネントに追加します。
+コンポーネントに右クリックなどでポップアップする`JPopupMenu`を追加します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKBw4_YtI/AAAAAAAAAVU/J_aFRLSj-VU/s800/ComponentPopupMenu.png %}
 
@@ -32,13 +32,13 @@ textArea.setComponentPopupMenu(new TextComponentPopupMenu());
     addSeparator();
     add(deleteAction = new AbstractAction("delete") {
       @Override public void actionPerformed(ActionEvent evt) {
-        ((JTextComponent)getInvoker()).replaceSelection(null);
+        ((JTextComponent) getInvoker()).replaceSelection(null);
       }
     });
     addSeparator();
     add(selectAllAction = new AbstractAction("select all") {
       @Override public void actionPerformed(ActionEvent evt) {
-        ((JTextComponent)getInvoker()).selectAll();
+        ((JTextComponent) getInvoker()).selectAll();
       }
     });
     //ActionMap am = textArea.getActionMap();
@@ -51,8 +51,8 @@ textArea.setComponentPopupMenu(new TextComponentPopupMenu());
     //add(am.get("select-all"));
   }
   @Override public void show(Component c, int x, int y) {
-    JTextComponent textArea = (JTextComponent)c;
-    boolean flg = textArea.getSelectedText()!=null;
+    JTextComponent textArea = (JTextComponent) c;
+    boolean flg = textArea.getSelectedText() != null;
     cutAction.setEnabled(flg);
     copyAction.setEnabled(flg);
     deleteAction.setEnabled(flg);
@@ -83,14 +83,14 @@ final Action copyAction = new DefaultEditorKit.CopyAction();
 final Action pasteAction = new DefaultEditorKit.PasteAction();
 final Action deleteAction = new AbstractAction("delete") {
   @Override public void actionPerformed(ActionEvent e) {
-    JPopupMenu p = (JPopupMenu)e.getSource();
-    ((JTextComponent)p.getInvoker()).replaceSelection(null);
+    JPopupMenu p = (JPopupMenu) e.getSource();
+    ((JTextComponent) p.getInvoker()).replaceSelection(null);
   }
 };
 final Action selectAllAction = new AbstractAction("select all") {
   @Override public void actionPerformed(ActionEvent e) {
-    JPopupMenu p = (JPopupMenu)e.getSource();
-    ((JTextComponent)p.getInvoker()).selectAll();
+    JPopupMenu p = (JPopupMenu) e.getSource();
+    ((JTextComponent) p.getInvoker()).selectAll();
   }
 };
 popup.add(cutAction);
@@ -104,9 +104,9 @@ popup.addPopupMenuListener(new PopupMenuListener() {
   @Override public void popupMenuCanceled(PopupMenuEvent e) {}
   @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {}
   @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
-    JPopupMenu p = (JPopupMenu)e.getSource();
-    JTextComponent c = (JTextComponent)p.getInvoker();
-    boolean flg = c.getSelectedText()!=null;
+    JPopupMenu p = (JPopupMenu) e.getSource();
+    JTextComponent c = (JTextComponent) p.getInvoker();
+    boolean flg = c.getSelectedText() != null;
     cutAction.setEnabled(flg);
     copyAction.setEnabled(flg);
     deleteAction.setEnabled(flg);

@@ -6,51 +6,46 @@ title: JPopupMenuを半透明にする
 tags: [JPopupMenu, JMenuItem, JWindow, Translucent]
 author: aterai
 pubdate: 2012-02-27T14:25:17+09:00
-description: JPopupMenuを半透明にします。
+description: JPopupMenu自体の背景を透明に設定し、別途そのpaintComponent(...)メソッドをオーバーライドして半透明の背景を描画します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/07/translucent-jpopupmenu.html
+    lang: en
 comments: true
 ---
 ## 概要
-`JPopupMenu`を半透明にします。
+`JPopupMenu`自体の背景を透明に設定し、別途その`paintComponent(...)`メソッドをオーバーライドして半透明の背景を描画します。
 
 {% download https://lh3.googleusercontent.com/-SKQis3B-SmY/T0dd531MovI/AAAAAAAABJk/fWIZIAeE3oE/s800/TranslucentPopupMenu.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TranslucentPopupMenu extends JPopupMenu{
+<pre class="prettyprint"><code>class TranslucentPopupMenu extends JPopupMenu {
   private static final Color ALPHA_ZERO = new Color(0, true);
-  private static final Color POPUP_BACK = new Color(250,250,250,200);
-  private static final Color POPUP_LEFT = new Color(230,230,230,200);
+  private static final Color POPUP_BACK = new Color(250, 250, 250, 200);
+  private static final Color POPUP_LEFT = new Color(230, 230, 230, 200);
   private static final int LEFT_WIDTH = 24;
   @Override public boolean isOpaque() {
     return false;
   }
   @Override public void updateUI() {
     super.updateUI();
-    boolean isNimbus = UIManager.getBorder("PopupMenu.border")==null;
-    if(isNimbus) {
+    if (UIManager.getBorder("PopupMenu.border") == null) {
       setBorder(new BorderUIResource(BorderFactory.createLineBorder(Color.GRAY)));
     }
   }
   @Override public JMenuItem add(JMenuItem menuItem) {
     menuItem.setOpaque(false);
+    //menuItem.setBackground(ALPHA_ZERO);
     return super.add(menuItem);
   }
   @Override public void show(Component c, int x, int y) {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         Window p = SwingUtilities.getWindowAncestor(TranslucentPopupMenu.this);
-        if(p!=null &amp;&amp; p instanceof JWindow) {
+        if (p instanceof JWindow) {
           System.out.println("Heavy weight");
-          JWindow w = (JWindow)p;
-          if(System.getProperty("java.version").startsWith("1.6.0")) {
-            w.dispose();
-            if(com.sun.awt.AWTUtilities.isWindowOpaque(w)) {
-              com.sun.awt.AWTUtilities.setWindowOpaque(w, false);
-            }
-            w.setVisible(true);
-          }else{
-            w.setBackground(ALPHA_ZERO);
-          }
-        }else{
+          JWindow w = (JWindow) p;
+          w.setBackground(ALPHA_ZERO);
+        } else {
           System.out.println("Light weight");
         }
       }
@@ -58,11 +53,11 @@ comments: true
     super.show(c, x, y);
   }
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setPaint(POPUP_LEFT);
-    g2.fillRect(0,0,LEFT_WIDTH,getHeight());
+    g2.fillRect(0, 0, LEFT_WIDTH, getHeight());
     g2.setPaint(POPUP_BACK);
-    g2.fillRect(LEFT_WIDTH,0,getWidth(),getHeight());
+    g2.fillRect(LEFT_WIDTH, 0, getWidth(), getHeight());
     g2.dispose();
     //super.paintComponent(g);
   }

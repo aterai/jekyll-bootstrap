@@ -3,10 +3,13 @@ layout: post
 category: swing
 folder: CardLayoutTabbedPane
 title: CardLayoutを使ってJTabbedPane風のコンポーネントを作成
-tags: [CardLayout, GridLayout, LayoutManager, JRadioButton, JTableHeader, JTabbedPane]
+tags: [CardLayout, GridLayout, LayoutManager, JRadioButton, JTableHeader, JTabbedPane, DragAndDrop]
 author: aterai
 pubdate: 2008-10-27T13:54:48+09:00
 description: CardLayoutとJRadioButtonやJTableHeaderを組み合わせてJTabbedPane風のコンポーネントを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/11/create-jtabbedpane-like-component-using.html
+    lang: en
 comments: true
 ---
 ## 概要

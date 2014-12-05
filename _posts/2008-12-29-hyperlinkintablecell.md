@@ -7,6 +7,9 @@ tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener, Html, Desk
 author: aterai
 pubdate: 2008-12-29T01:31:09+09:00
 description: JTableのセルの中に、Hyperlinkを表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/02/hyperlink-in-jtable-cell.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -7,6 +7,9 @@ tags: [CardLayout, LayoutManager, JRadioButton, JTabbedPane]
 author: aterai
 pubdate: 2009-06-08T13:05:45+09:00
 description: CardLayoutとJRadioButtonで作成したJTabbedPane風コンポーネントのタブ配置を自作レイアウトマネージャーで変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/06/new-tab-button.html
+    lang: en
 comments: true
 ---
 ## 概要

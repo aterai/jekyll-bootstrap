@@ -7,6 +7,9 @@ tags: [JInternalFrame, JDesktopPane, ContentPane, Transparent, Translucent]
 author: aterai
 pubdate: 2007-04-30T21:08:08+09:00
 description: JInternalFrameのフレーム内を半透明にします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/02/translucent-jinternalframe-nimbus.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -21,29 +24,23 @@ p1.setOpaque(false);
 JPanel p2 = new JPanel() {
   @Override protected void paintComponent(Graphics g) {
     //super.paintComponent(g);
-    g.setColor(new Color(100,50,50,100));
-    g.fillRect(0,0,getWidth(), getHeight());
+    g.setColor(new Color(100, 50, 50, 100));
+    g.fillRect(0, 0, getWidth(), getHeight());
   }
 };
 
 JPanel p3 = new JPanel() {
   @Override protected void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g;
-    //g2.setPaint(new Color(100,120,100,100));
+    //g2.setPaint(new Color(100, 120, 100, 100));
     g2.setPaint(texture);
-    g2.fillRect(0,0,getWidth(),getHeight());
-    //int cs = 4;
-    //for(int i=0;i*cs&lt;getWidth();i++) {
-    //  for(int j=0;j*cs&lt;getHeight();j++) {
-    //    if((i+j)%2==0) g2.fillRect(i*cs, j*cs, cs, cs);
-    //  }
-    //}
+    g2.fillRect(0, 0, getWidth(), getHeight());
   }
 };
 
 protected JInternalFrame createFrame(JPanel panel) {
   MyInternalFrame frame = new MyInternalFrame();
-  if(panel!=null) {
+  if (panel != null) {
     frame.setContentPane(panel);
     //JButton button = new JButton("button");
     //button.setOpaque(false);
@@ -53,7 +50,7 @@ protected JInternalFrame createFrame(JPanel panel) {
   desktop.add(frame);
   frame.setOpaque(false);
   frame.setVisible(true);
-  //......
+  //...
 </code></pre>
 
 ## 解説

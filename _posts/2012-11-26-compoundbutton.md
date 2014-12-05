@@ -7,6 +7,9 @@ tags: [OverlayLayout, JButton, Icon]
 author: aterai
 pubdate: 2012-11-26T15:04:48+09:00
 description: 4つの扇形ボタンと円形ボタンを、OverlayLayoutを設定したJPanelに配置して、複合ボタンを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/12/combine-five-jbuttons-to-make.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -31,8 +34,8 @@ comments: true
 }
 
 class CompoundButton extends JButton {
-  protected final Color fc = new Color(100,150,255,200);
-  protected final Color ac = new Color(230,230,230);
+  protected final Color fc = new Color(100, 150, 255, 200);
+  protected final Color ac = new Color(230, 230, 230);
   protected final Color rc = Color.ORANGE;
   protected Shape shape;
   protected Shape base = null;
@@ -44,17 +47,17 @@ class CompoundButton extends JButton {
     this.bl = bl;
     setIcon(new Icon() {
       @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-        Graphics2D g2 = (Graphics2D)g.create();
+        Graphics2D g2 = (Graphics2D) g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                   RenderingHints.VALUE_ANTIALIAS_ON);
-        if(getModel().isArmed()) {
+        if (getModel().isArmed()) {
           g2.setColor(ac);
           g2.fill(shape);
-        }else if(isRolloverEnabled() &amp;&amp; getModel().isRollover()) {
+        } else if (isRolloverEnabled() &amp;&amp; getModel().isRollover()) {
           paintFocusAndRollover(g2, rc);
-        }else if(hasFocus()) {
+        } else if (hasFocus()) {
           paintFocusAndRollover(g2, fc);
-        }else{
+        } else {
           g2.setColor(getBackground());
           g2.fill(shape);
         }
@@ -76,14 +79,14 @@ class CompoundButton extends JButton {
     return dim;
   }
   protected void initShape() {
-    if(!getBounds().equals(base)) {
+    if (!getBounds().equals(base)) {
       base = getBounds();
       float ww = getWidth() * 0.5f;
       float xx = ww * 0.5f;
       Shape inner = new Ellipse2D.Float(xx, xx, ww, ww);
-      if(ButtonLocation.CENTER==bl) {
+      if (ButtonLocation.CENTER==bl) {
         shape = inner;
-      }else{
+      } else {
         Shape outer = new Arc2D.Float(
           1, 1, getWidth()-2, getHeight()-2,
           bl.getStartDegree(), 90f, Arc2D.PIE);
@@ -104,13 +107,12 @@ class CompoundButton extends JButton {
     super.paintComponent(g);
   }
   @Override protected void paintBorder(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-              RenderingHints.VALUE_ANTIALIAS_ON);
+                        RenderingHints.VALUE_ANTIALIAS_ON);
     g2.setColor(getForeground());
     g2.draw(shape);
-    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-              RenderingHints.VALUE_ANTIALIAS_OFF);
+    g2.dispose();
   }
   @Override public boolean contains(int x, int y) {
     //initShape();

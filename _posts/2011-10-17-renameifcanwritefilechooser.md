@@ -46,7 +46,7 @@ comments: true
 `sun.swing.FilePane#canWrite(File)`をオーバーライドすれば、編集開始自体を禁止にすることもできそうですが、`MetalFileChooserUI`などの`UI`で`FilePane`が`private`になっているためかなり面倒です。
 
 ## 参考リンク
-- [Swing - How does the JFileChooser "readOnly" property work?](https://forums.oracle.com/thread/2300004)
+- [Swing - How does the JFileChooser "readOnly" property work?](https://community.oracle.com/thread/2300004)
 - [JFileChooserを編集不可にする](http://ateraimemo.com/Swing/ROFileChooser.html)
 
 <!-- dummy comment line for breaking list -->

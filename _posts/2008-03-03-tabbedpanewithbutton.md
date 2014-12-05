@@ -78,7 +78,7 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 - [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
 - [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
 - [JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)
-- [Swing - Any layout suggestions for this?](https://forums.oracle.com/thread/1389350)
+- [Swing - Any layout suggestions for this?](https://community.oracle.com/thread/1389350)
 
 <!-- dummy comment line for breaking list -->
 

@@ -7,6 +7,9 @@ tags: [JTree, JPopupMenu, TreeCellEditor, JOptionPane]
 author: aterai
 pubdate: 2010-04-19T13:46:44+09:00
 description: JTreeのノード編集を、マウスクリックではなく、Popupからのみに制限します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/03/jtree-node-edit-only-from-jpopupmenu.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -7,6 +7,9 @@ tags: [JTable, TableCellEditor, UndoManager, JPopupMenu, AncestorListener]
 author: aterai
 pubdate: 2010-04-26T16:54:26+09:00
 description: JTableのセルエディタに、Copy、Paste、Undo、Redoなどを行うJPopupMenuを設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/11/jtable-celleditor-popupmenu.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -24,8 +27,8 @@ comments: true
   final Action pasteAction  = new DefaultEditorKit.PasteAction();
   final Action deleteAction = new AbstractAction("delete") {
     @Override public void actionPerformed(ActionEvent e) {
-      JPopupMenu pop = (JPopupMenu)e.getSource();
-      ((JTextComponent)pop.getInvoker()).replaceSelection(null);
+      JPopupMenu pop = (JPopupMenu) e.getSource();
+      ((JTextComponent) pop.getInvoker()).replaceSelection(null);
     }
   };
   tc.addAncestorListener(new AncestorListener() {
@@ -40,8 +43,8 @@ comments: true
   tc.getActionMap().put("undo", undoAction);
   tc.getActionMap().put("redo", redoAction);
   InputMap imap = tc.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-  imap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK), "undo");
-  imap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Y, Event.CTRL_MASK), "redo");
+  imap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Z, InputEvent.CTRL_DOWN_MASK), "undo");
+  imap.put(KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_DOWN_MASK), "redo");
 
   JPopupMenu popup = new JPopupMenu();
   popup.add(cutAction);
@@ -59,9 +62,9 @@ comments: true
       redoAction.setEnabled(true);
     }
     @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
-      JPopupMenu pop = (JPopupMenu)e.getSource();
-      JTextField field = (JTextField)pop.getInvoker();
-      boolean flg = field.getSelectedText()!=null;
+      JPopupMenu pop = (JPopupMenu) e.getSource();
+      JTextField field = (JTextField) pop.getInvoker();
+      boolean flg = field.getSelectedText() != null;
       cutAction.setEnabled(flg);
       copyAction.setEnabled(flg);
       deleteAction.setEnabled(flg);
@@ -85,7 +88,7 @@ comments: true
 <pre class="prettyprint"><code>DefaultCellEditor ce = new DefaultCellEditor(new JTextField()) {
   @Override public boolean isCellEditable(EventObject e) {
     boolean b = super.isCellEditable(e);
-    if(b) {
+    if (b) {
       manager.discardAllEdits();
     }
     return b;

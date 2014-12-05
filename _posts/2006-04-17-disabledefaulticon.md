@@ -39,7 +39,7 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - Java Default Icon](https://forums.oracle.com/thread/1381127)
+- [Swing - Java Default Icon](https://community.oracle.com/thread/1381127)
 
 <!-- dummy comment line for breaking list -->
 

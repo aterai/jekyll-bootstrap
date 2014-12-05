@@ -7,6 +7,9 @@ tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, File, TreeModelListen
 author: aterai
 pubdate: 2011-08-15T15:43:03+09:00
 description: 編集可能なJCheckBoxをノードに追加したJTreeでディレクトリ構造を表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/08/filesystemtree-with-jcheckbox.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -35,10 +38,10 @@ comments: true
     this.setOpaque(false);
   }
   @Override public Component getTreeCellEditorComponent(
-    JTree tree, Object value, boolean isSelected, boolean expanded,
-    boolean leaf, int row) {
+      JTree tree, Object value, boolean isSelected, boolean expanded,
+      boolean leaf, int row) {
     JLabel l = (JLabel) renderer.getTreeCellRendererComponent(
-                 tree, value, true, expanded, leaf, row, true);
+      tree, value, true, expanded, leaf, row, true);
     l.setFont(tree.getFont());
     setOpaque(false);
     if (value instanceof DefaultMutableTreeNode) {

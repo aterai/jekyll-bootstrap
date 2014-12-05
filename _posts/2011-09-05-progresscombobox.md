@@ -7,6 +7,9 @@ tags: [JComboBox, ListCellRenderer, JProgressBar, SwingWorker]
 author: aterai
 pubdate: 2011-09-05T17:17:06+09:00
 description: JComboBox内にJProgressBarを設定して進捗を表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/09/jprogressbar-in-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -24,19 +27,21 @@ comments: true
   @Override public Component getListCellRendererComponent(
       JList list, Object value, int index,
       boolean isSelected, boolean cellHasFocus) {
-    if(index&lt;0 &amp;&amp; worker!=null &amp;&amp; !worker.isDone()) {
+    if (index &lt; 0 &amp;&amp; worker != null &amp;&amp; !worker.isDone()) {
       bar.setFont(list.getFont());
-      bar.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
+      bar.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
       bar.setValue(count);
       return bar;
-    }else{
+    } else {
       return super.getListCellRendererComponent(
-          list,value,index,isSelected,cellHasFocus);
+        list,value,index,isSelected,cellHasFocus);
     }
   }
   @Override public void updateUI() {
     super.updateUI();
-    if(bar!=null) SwingUtilities.updateComponentTreeUI(bar);
+    if (bar != null) {
+      SwingUtilities.updateComponentTreeUI(bar);
+    }
   }
 }
 </code></pre>
@@ -56,7 +61,7 @@ comments: true
       private int max = 30;
       @Override public String doInBackground() {
         int current = 0;
-        while(current&lt;=max &amp;&amp; !isCancelled()) {
+        while (current &lt;= max &amp;&amp; !isCancelled()) {
           try {
             Thread.sleep(50);
             //setProgress(100 * current / max);
@@ -69,9 +74,9 @@ comments: true
         }
         return "Done";
       }
-      @Override protected void process(java.util.List&lt;String&gt; chunks) {
-        DefaultComboBoxModel m = (DefaultComboBoxModel)combo.getModel();
-        for(String s: chunks) {
+      @Override protected void process(List&lt;String&gt; chunks) {
+        DefaultComboBoxModel m = (DefaultComboBoxModel) combo.getModel();
+        for (String s: chunks) {
           m.addElement(s);
         }
         combo.setSelectedIndex(-1);
@@ -79,7 +84,7 @@ comments: true
       }
       @Override public void done() {
         String text = null;
-        if(!isCancelled()) {
+        if (!isCancelled()) {
           combo.setSelectedIndex(0);
         }
         combo.setEnabled(true);

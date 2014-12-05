@@ -72,7 +72,7 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - JButton inside JTable Cell](https://forums.oracle.com/thread/1357728)
+- [Swing - JButton inside JTable Cell](https://community.oracle.com/thread/1357728)
 - [JTableの行を追加、削除](http://ateraimemo.com/Swing/AddRow.html)
 - [JTableの行を全削除](http://ateraimemo.com/Swing/ClearTable.html)
 - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)

@@ -55,7 +55,7 @@ comments: true
 
 ## 参考リンク
 - [モナーフォント](http://monafont.sourceforge.net/index.html)
-- [Swing (Archive) - Loading TYPE1 fonts with JRE 1.5.0](https://forums.oracle.com/thread/1483177)
+- [Swing (Archive) - Loading TYPE1 fonts with JRE 1.5.0](https://community.oracle.com/thread/1483177)
 
 <!-- dummy comment line for breaking list -->
 

@@ -6,11 +6,11 @@ title: JListを選択不可にする
 tags: [JList, ListCellRenderer, ListSelectionModel]
 author: aterai
 pubdate: 2005-03-14
-description: JListを選択出来ないように設定します。
+description: JListのセルアイテムをマウスクリックなどの操作で選択出来ないように設定します。
 comments: true
 ---
 ## 概要
-`JList`を選択出来ないように設定します。
+`JList`のセルアイテムをマウスクリックなどの操作で選択出来ないように設定します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMI697_II/AAAAAAAAAYs/EhpPEXnw1bc/s800/EmptySelectionList.png %}
 

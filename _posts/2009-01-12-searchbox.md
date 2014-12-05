@@ -39,9 +39,9 @@ comments: true
 上記のサンプルでは、選択された`JTree`のノード以下に、検索文字列と一致するノードがあれば、`JTree#addSelectionPath(TreePath)`メソッドで選択するようになっています。
 
 - - - -
-[Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/thread/1357454)のAndre_Uhresさんの投稿のように、`TreeModel`を使って検索する方法もあります。
+[Swing - how to get everything in DefaultTreeNode](https://community.oracle.com/thread/1357454)のAndre_Uhresさんの投稿のように、`TreeModel`を使って検索する方法もあります。
 
-<pre class="prettyprint"><code>//&lt;blockquote cite="https://forums.oracle.com/thread/1357454"&gt;
+<pre class="prettyprint"><code>//&lt;blockquote cite="https://community.oracle.com/thread/1357454"&gt;
 public void traverse(JTree tree) {
   TreeModel model = tree.getModel();
   Object root;
@@ -90,7 +90,7 @@ while (depth.hasMoreElements()) {
 
 ## 参考リンク
 - [JTreeのノードを展開・折り畳み](http://ateraimemo.com/Swing/ExpandAllNodes.html)
-- [Swing - how to get everything in DefaultTreeNode](https://forums.oracle.com/thread/1357454)
+- [Swing - how to get everything in DefaultTreeNode](https://community.oracle.com/thread/1357454)
 - [JTreeで条件に一致するノードを検索しハイライト](http://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
 - [JTreeのノードを走査する](http://ateraimemo.com/Swing/TraverseAllNodes.html)
 

@@ -7,6 +7,9 @@ tags: [JTable, JProgressBar, SwingWorker, TableCellRenderer]
 author: aterai
 pubdate: 2014-03-24T00:27:55+09:00
 description: JTableのTableCellRendererとして、進捗文字列を表示するJProgressBarを設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2014/05/jprogressbar-in-jtable-cell-render.html
+    lang: en
 comments: true
 ---
 ## 概要

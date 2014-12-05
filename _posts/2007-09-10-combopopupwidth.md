@@ -47,7 +47,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - How to widen the drop-down list in a JComboBox](https://forums.oracle.com/thread/1368300)
+- [Swing - How to widen the drop-down list in a JComboBox](https://community.oracle.com/thread/1368300)
     - dlinderm さんの投稿(2007/06/08 23:24)を参考にして、`PopupMenuListener`を使用しています。
 - [Make JComboBox popup wide enough - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/make_jcombobox_popup_wide_enough)
     - こちらには、`JComboBox#doLayout()`と、`JComboBox#getSize()`をオーバーライドして、十分な幅のドロップダウンリストを表示するサンプルがあります。

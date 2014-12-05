@@ -10,7 +10,7 @@ description: JTextAreaにキャレット上の文字を上書きする上書き�
 comments: true
 ---
 ## 概要
-`JTextArea`にキャレット上の文字を上書きする上書きモードを追加します。[Swing - JTextPane edit mode (insert or overwrite)???](https://forums.oracle.com/forums/thread.jspa?threadID=1383467)のソースコードを変更して全角文字対応にしています。
+`JTextArea`にキャレット上の文字を上書きする上書きモードを追加します。[Swing - JTextPane edit mode (insert or overwrite)???](https://community.oracle.com/forums/thread.jspa?threadID=1383467)のソースコードを変更して全角文字対応にしています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQtaGO6gI/AAAAAAAAAgA/XPqHe-c_DUo/s800/OverTypeMode.png %}
 
@@ -68,7 +68,7 @@ class OvertypeCaret extends DefaultCaret {
 上書きモード自体の動作は、`JTextArea#replaceSelection`メソッドをオーバーライドすることで行われています。キー入力があった場合、次の文字までを選択して置き換える処理がこのメソッドに追加されています。
 
 ## 参考リンク
-- [Swing - JTextPane edit mode (insert or overwrite)???](https://forums.oracle.com/forums/thread.jspa?threadID=1383467)
+- [Swing - JTextPane edit mode (insert or overwrite)???](https://community.oracle.com/forums/thread.jspa?threadID=1383467)
 
 <!-- dummy comment line for breaking list -->
 

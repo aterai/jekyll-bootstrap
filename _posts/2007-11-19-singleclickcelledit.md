@@ -34,7 +34,7 @@ ce.setClickCountToStart(1);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - JTable - enable cursor blink at cell with single click](https://forums.oracle.com/thread/1367289)
+- [Swing - JTable - enable cursor blink at cell with single click](https://community.oracle.com/thread/1367289)
 
 <!-- dummy comment line for breaking list -->
 

@@ -7,6 +7,9 @@ tags: [JTable, RowFilter, TableRowSorter, Highlighter, TableCellRenderer, JTextF
 author: aterai
 pubdate: 2013-07-29T00:24:19+09:00
 description: JTableで正規表現による検索結果をRowFilterとHighlighterを使用して表現します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/07/jtable-highlighting-and-filtering-with.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -15,34 +15,34 @@ comments: true
 {% download https://lh3.googleusercontent.com/-FkX-8X4KxDo/ThFoeY8M64I/AAAAAAAAA-Y/Ry_RA9yVCxc/s800/DirectoryTree.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class FolderSelectionListener implements TreeSelectionListener{
+<pre class="prettyprint"><code>class FolderSelectionListener implements TreeSelectionListener {
   private final FileSystemView fileSystemView;
   public FolderSelectionListener(FileSystemView fileSystemView) {
     this.fileSystemView = fileSystemView;
   }
   @Override public void valueChanged(TreeSelectionEvent e) {
-    final JTree tree = (JTree)e.getSource();
+    final JTree tree = (JTree) e.getSource();
     final DefaultMutableTreeNode node =
-      (DefaultMutableTreeNode)e.getPath().getLastPathComponent();
-    final DefaultTreeModel model = (DefaultTreeModel)tree.getModel();
+      (DefaultMutableTreeNode) e.getPath().getLastPathComponent();
+    final DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
     //final TreePath path = e.getPath();
 
-    if(!node.isLeaf()) return;
-    final File parent = (File)node.getUserObject();
-    if(!parent.isDirectory()) return;
+    if (!node.isLeaf()) return;
+    final File parent = (File) node.getUserObject();
+    if (!parent.isDirectory()) return;
 
     SwingWorker&lt;String, File&gt; worker = new SwingWorker&lt;String, File&gt;() {
       @Override public String doInBackground() {
         File[] children = fileSystemView.getFiles(parent, true);
-        for(File child: children) {
-          if(child.isDirectory()) {
+        for (File child: children) {
+          if (child.isDirectory()) {
             publish(child);
           }
         }
         return "done";
       }
-      @Override protected void process(java.util.List&lt;File&gt; chunks) {
-        for(File file: chunks) {
+      @Override protected void process(List&lt;File&gt; chunks) {
+        for (File file: chunks) {
           node.add(new DefaultMutableTreeNode(file));
         }
         model.nodeStructureChanged(node);

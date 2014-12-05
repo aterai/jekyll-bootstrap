@@ -7,6 +7,9 @@ tags: [JScrollBar, JScrollPane, JTextArea, JTextComponent, JViewport, Icon, High
 author: aterai
 pubdate: 2013-01-28T02:11:33+09:00
 description: JScrollBarなどにJTextAreaの文字列検索の結果をハイライト表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2013/01/jscrollbar-search-highlighter.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -26,13 +29,13 @@ comments: true
     Highlighter highlighter = textArea.getHighlighter();
     g.setColor(Color.YELLOW);
     try{
-      for(Highlighter.Highlight hh: highlighter.getHighlights()) {
+      for (Highlighter.Highlight hh: highlighter.getHighlights()) {
         Rectangle r = textArea.modelToView(hh.getStartOffset());
         Rectangle s = at.createTransformedShape(r).getBounds();
-        int h = 2; //Math.max(2, s.height-2);
-        g.fillRect(trackBounds.x, trackBounds.y+s.y, trackBounds.width, h);
+        int h = 2; //Math.max(2, s.height - 2);
+        g.fillRect(trackBounds.x, trackBounds.y + s.y, trackBounds.width, h);
       }
-    }catch(BadLocationException e) {
+    } catch (BadLocationException e) {
       e.printStackTrace();
     }
   }
@@ -52,7 +55,7 @@ comments: true
 以下のような`Icon`を設定した`JLabel`を`JScrollPane#setRowHeaderView(...)`で追加する方法もあります。こちらは、縦`JScrollBar`に直接ハイライトを描画しないので、上下の増減ボタンは考慮せず、またノブの代わりに現在表示位置を示す領域を半透明で描画しています。
 
 <pre class="prettyprint"><code>JLabel label = new JLabel(new Icon() {
-  private final Color THUMB_COLOR = new Color(0,0,255,50);
+  private final Color THUMB_COLOR = new Color(0, 0, 255, 50);
   private final Rectangle thumbRect = new Rectangle();
   private final JTextComponent textArea;
   private final JScrollBar scrollbar;
@@ -64,36 +67,36 @@ comments: true
     //Rectangle rect   = textArea.getBounds();
     //Dimension sbSize = scrollbar.getSize();
     //Insets sbInsets  = scrollbar.getInsets();
-    //double sy = (sbSize.height-sbInsets.top-sbInsets.bottom)/rect.getHeight();
+    //double sy = (sbSize.height - sbInsets.top - sbInsets.bottom) / rect.getHeight();
     int itop = scrollbar.getInsets().top;
     BoundedRangeModel range = scrollbar.getModel();
-    double sy = range.getExtent()/(double)(range.getMaximum()-range.getMinimum());
+    double sy = range.getExtent() / (double) (range.getMaximum() - range.getMinimum());
     AffineTransform at = AffineTransform.getScaleInstance(1.0, sy);
     Highlighter highlighter = textArea.getHighlighter();
 
     //paint Highlight
     g.setColor(Color.RED);
-    try{
-      for(Highlighter.Highlight hh: highlighter.getHighlights()) {
+    try {
+      for (Highlighter.Highlight hh: highlighter.getHighlights()) {
         Rectangle r = textArea.modelToView(hh.getStartOffset());
         Rectangle s = at.createTransformedShape(r).getBounds();
-        int h = 2; //Math.max(2, s.height-2);
-        g.fillRect(x, y+itop+s.y, getIconWidth(), h);
+        int h = 2; //Math.max(2, s.height - 2);
+        g.fillRect(x, y + itop + s.y, getIconWidth(), h);
       }
-    }catch(BadLocationException e) {
+    } catch (BadLocationException e) {
       e.printStackTrace();
     }
 
     //paint Thumb
-    if(scrollbar.isVisible()) {
+    if (scrollbar.isVisible()) {
       //JViewport vport = Objects.requireNonNull(
-      //  (JViewport)SwingUtilities.getAncestorOfClass(JViewport.class, textArea));
+      //  (JViewport) SwingUtilities.getAncestorOfClass(JViewport.class, textArea));
       //Rectangle thumbRect = vport.getBounds();
       thumbRect.height = range.getExtent();
       thumbRect.y = range.getValue(); //vport.getViewPosition().y;
       g.setColor(THUMB_COLOR);
       Rectangle s = at.createTransformedShape(thumbRect).getBounds();
-      g.fillRect(x, y+itop+s.y, getIconWidth(), s.height);
+      g.fillRect(x, y + itop + s.y, getIconWidth(), s.height);
     }
   }
   @Override public int getIconWidth() {
@@ -101,7 +104,7 @@ comments: true
   }
   @Override public int getIconHeight() {
     JViewport vport = Objects.requireNonNull(
-        (JViewport)SwingUtilities.getAncestorOfClass(JViewport.class, textArea));
+      (JViewport) SwingUtilities.getAncestorOfClass(JViewport.class, textArea));
     return vport.getHeight();
   }
 });

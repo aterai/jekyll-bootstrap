@@ -84,13 +84,13 @@ if(result==JOptionPane.OK_OPTION) textArea.setText(textField3.getText());
 
 - 右下
     - `textField`に`addAncestorListener`を追加し、`ancestorAdded`が呼ばれたときに、`textField.requestFocusInWindow();`
-    - [Swing - Input focus](https://forums.oracle.com/thread/1354218)
+    - [Swing - Input focus](https://community.oracle.com/thread/1354218)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Windowを開いたときのフォーカスを指定](http://ateraimemo.com/Swing/DefaultFocus.html)
-- [Swing - Input focus](https://forums.oracle.com/thread/1354218)
+- [Swing - Input focus](https://community.oracle.com/thread/1354218)
 
 <!-- dummy comment line for breaking list -->
 

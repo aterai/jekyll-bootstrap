@@ -19,9 +19,9 @@ comments: true
   @Override public Component prepareEditor(
         TableCellEditor editor, int row, int column) {
     Component cmp = super.prepareEditor(editor, row, column);
-    if(convertColumnIndexToModel(column) == BOOLEAN_COLUMN) {
-      JCheckBox c = (JCheckBox)cmp;
-      c.setBackground(c.isSelected()? Color.ORANGE:getBackground());
+    if (convertColumnIndexToModel(column) == BOOLEAN_COLUMN) {
+      JCheckBox c = (JCheckBox) cmp;
+      c.setBackground(c.isSelected() ? Color.ORANGE : getBackground());
     }
     return cmp;
   }
@@ -31,7 +31,7 @@ comments: true
     Boolean isChecked = (Boolean) model.getValueAt(
       convertRowIndexToModel(row), BOOLEAN_COLUMN);
     c.setForeground(getForeground());
-    c.setBackground(isChecked? Color.ORANGE:getBackground());
+    c.setBackground(isChecked ? Color.ORANGE : getBackground());
     return c;
   }
 };
@@ -45,7 +45,7 @@ comments: true
 
 <pre class="prettyprint"><code>model.addTableModelListener(new TableModelListener() {
   @Override public void tableChanged(TableModelEvent e) {
-    if(e.getType()==TableModelEvent.UPDATE) {
+    if (e.getType() == TableModelEvent.UPDATE) {
       //rowRepaint(table, table.convertRowIndexToView(e.getFirstRow()));
       Rectangle r = table.getCellRect(table.convertRowIndexToView(e.getFirstRow()), 0, true);
       r.width  = table.getWidth();
@@ -57,7 +57,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [Swing - JTable-Row color issue](https://forums.oracle.com/thread/1361072)
+- [Swing - JTable-Row color issue](https://community.oracle.com/thread/1361072)
 
 <!-- dummy comment line for breaking list -->
 

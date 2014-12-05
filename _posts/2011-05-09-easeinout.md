@@ -7,6 +7,9 @@ tags: [JTextArea, OverlayLayout, JLabel, MouseListener, Animation]
 author: aterai
 pubdate: 2011-05-09T15:30:53+09:00
 description: 画像の上にJTextAreaをスライドインアニメーションで表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/05/translucent-image-caption-using.html
+    lang: en
 comments: true
 ---
 ## 概要

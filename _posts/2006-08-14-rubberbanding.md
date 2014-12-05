@@ -7,6 +7,9 @@ tags: [JList, MouseListener, MouseMotionListener]
 author: aterai
 pubdate: 2006-08-14T01:35:31+09:00
 description: JListのアイテムをラバーバンドで範囲指定して選択します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/10/using-rubber-band-selection-in-jlist.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -76,7 +79,7 @@ comments: true
 `JList`内のアイテムの配置は、`JList#setLayoutOrientation(JList.HORIZONTAL_WRAP)`メソッドを使っているため、水平方向に整列されます。
 
 ## 参考リンク
-- [Swing - Can someone optimise the following code ?](https://forums.oracle.com/thread/1378164)
+- [Swing - Can someone optimise the following code ?](https://community.oracle.com/thread/1378164)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 - [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://ateraimemo.com/Swing/DragSelectDropReordering.html)
 

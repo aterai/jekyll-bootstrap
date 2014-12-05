@@ -29,7 +29,7 @@ comments: true
 - 左: デフォルト
 - 右: ノードを折り畳み不可
     - `TreeWillExpandListener#treeWillCollapse()`で、`ExpandVetoException`を発生させることで、マウスやキー入力による折り畳みを不可に設定
-    - ノードの展開、移動、編集、選択などは可能
+    - ノードの展開、編集、選択などは可能
 
 <!-- dummy comment line for breaking list -->
 

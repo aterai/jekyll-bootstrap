@@ -7,6 +7,9 @@ tags: [JTable, TableCellRenderer]
 author: aterai
 pubdate: 2006-12-25
 description: JTableの文字列以外の場所がクリックされた場合、そのセルが選択されないようにします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/01/make-explorer-like-jtable-file-list.html
+    lang: en
 comments: true
 ---
 ## 概要

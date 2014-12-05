@@ -7,6 +7,9 @@ tags: [JComboBox, ListCellRenderer, JTextField]
 author: aterai
 pubdate: 2005-01-10
 description: JComboBoxのEditor部分と、List部分の色を変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/06/color-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -7,6 +7,9 @@ tags: [JTabbedPane, TransferHandler, DragAndDrop, GlassPane, Cursor]
 author: aterai
 pubdate: 2009-03-23T14:24:48+09:00
 description: JTabbedPane間でタブのDrag&Dropによる移動を行います。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/02/tabtransferhandler.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -35,7 +38,7 @@ comments: true
   private DnDTabbedPane source = null;
   @Override protected Transferable createTransferable(JComponent c) {
     System.out.println("createTransferable");
-    if(c instanceof DnDTabbedPane) source = (DnDTabbedPane)c;
+    if (c instanceof DnDTabbedPane) source = (DnDTabbedPane)c;
     return new DataHandler(c, localObjectFlavor.getMimeType());
   }
   @Override public boolean canImport(TransferSupport support) {
@@ -46,19 +49,19 @@ comments: true
     support.setDropAction(MOVE);
     DropLocation tdl = support.getDropLocation();
     Point pt = tdl.getDropPoint();
-    DnDTabbedPane target = (DnDTabbedPane)support.getComponent();
+    DnDTabbedPane target = (DnDTabbedPane) support.getComponent();
     target.autoScrollTest(pt);
     DnDTabbedPane.DropLocation dl =
-      (DnDTabbedPane.DropLocation)target.dropLocationForPoint(pt);
+      (DnDTabbedPane.DropLocation) target.dropLocationForPoint(pt);
     int idx = dl.getIndex();
     boolean isDropable = false;
 
-    if (target==source) {
-      isDropable = target.getTabAreaBounds().contains(pt) &amp;&amp; idx&gt;=0 &amp;&amp;
-                   idx!=target.dragTabIndex &amp;&amp; idx!=target.dragTabIndex+1;
+    if (target == source) {
+      isDropable = target.getTabAreaBounds().contains(pt) &amp;&amp; idx &gt;= 0 &amp;&amp;
+                   idx != target.dragTabIndex &amp;&amp; idx != target.dragTabIndex + 1;
     } else {
-      if (source!=null &amp;&amp; target!=source.getComponentAt(source.dragTabIndex)) {
-        isDropable = target.getTabAreaBounds().contains(pt) &amp;&amp; idx&gt;=0;
+      if (source != null &amp;&amp; target != source.getComponentAt(source.dragTabIndex)) {
+        isDropable = target.getTabAreaBounds().contains(pt) &amp;&amp; idx &gt;= 0;
       }
     }
 
@@ -84,29 +87,29 @@ comments: true
     Graphics g = image.getGraphics();
     tabbedPane.paint(g);
     g.dispose();
-    if (rect.x&lt;0) {
-      rect.translate(-rect.x,0);
+    if (rect.x &lt; 0) {
+      rect.translate(-rect.x, 0);
     }
-    if (rect.y&lt;0) {
-      rect.translate(0,-rect.y);
+    if (rect.y &lt; 0) {
+      rect.translate(0, -rect.y);
     }
-    if (rect.x+rect.width&gt;image.getWidth()) {
+    if (rect.x + rect.width &gt; image.getWidth()) {
       rect.width = image.getWidth() - rect.x;
     }
-    if (rect.y+rect.height&gt;image.getHeight()) {
+    if (rect.y + rect.height &gt; image.getHeight()) {
       rect.height = image.getHeight() - rect.y;
     }
-    return image.getSubimage(rect.x,rect.y,rect.width,rect.height);
+    return image.getSubimage(rect.x, rect.y, rect.width, rect.height);
   }
 
   private static GhostGlassPane glassPane;
   @Override public int getSourceActions(JComponent c) {
     System.out.println("getSourceActions");
-    DnDTabbedPane src = (DnDTabbedPane)c;
-    if (glassPane==null) {
+    DnDTabbedPane src = (DnDTabbedPane) c;
+    if (glassPane == null) {
       c.getRootPane().setGlassPane(glassPane = new GhostGlassPane(src));
     }
-    if (src.dragTabIndex&lt;0) return NONE;
+    if (src.dragTabIndex &lt; 0) return NONE;
     glassPane.setImage(makeDragTabImage(src));
     source = src;
     //setDragImage(img); //java 1.7.0-ea-b84
@@ -117,13 +120,13 @@ comments: true
     System.out.println("importData");
     if (!canImport(support)) return false;
 
-    DnDTabbedPane target = (DnDTabbedPane)support.getComponent();
+    DnDTabbedPane target = (DnDTabbedPane) support.getComponent();
     DnDTabbedPane.DropLocation dl = target.getDropLocation();
     try {
-      DnDTabbedPane source = (DnDTabbedPane)support.getTransferable()
+      DnDTabbedPane source = (DnDTabbedPane) support.getTransferable()
         .getTransferData(localObjectFlavor);
       int index = dl.getIndex(); //boolean insert = dl.isInsert();
-      if (target==source) {
+      if (target == source) {
         source.convertTab(source.dragTabIndex, index);
       } else {
         source.exportTab(source.dragTabIndex, target, index);
@@ -131,7 +134,7 @@ comments: true
       return true;
     } catch (UnsupportedFlavorException ufe) {
       ufe.printStackTrace();
-    } catch (java.io.IOException ioe) {
+    } catch (IOException ioe) {
       ioe.printStackTrace();
     }
     return false;

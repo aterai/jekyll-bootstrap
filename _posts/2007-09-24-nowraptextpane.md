@@ -39,13 +39,13 @@ comments: true
 `JTextArea`でも行を非常に長くしてしまうと、カーソルキーの移動などで異常に時間がかかる場合があります。
 
 - 例えば、このサンプルで、カーソルを一番最後に移動し、一行目(非常に長い行)に<kbd>Up</kbd>キーで移動すると発生する
-- [Swing - Long last line in wrappable textarea hangs GUI (bug in java?)](https://forums.oracle.com/thread/1367888)
+- [Swing - Long last line in wrappable textarea hangs GUI (bug in java?)](https://community.oracle.com/thread/1367888)
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
 以下のような方法もあります。
-- [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/thread/1353861)
+- [Swing - Disabling word wrap for JTextPane](https://community.oracle.com/thread/1353861)
     - `BoxView#layout(...)`をオーバーライド
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
     - `JTextPane#getScrollableTracksViewportWidth()`をオーバーライド
@@ -53,7 +53,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - Disabling word wrap for JTextPane](https://forums.oracle.com/thread/1353861)
+- [Swing - Disabling word wrap for JTextPane](https://community.oracle.com/thread/1353861)
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
 - [Bug ID: 6502558 AbstractDocument fires event not on Event Dispatch Thread](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6502558)
     - [Alexander Potochkin's Blog: Debugging Swing, the final summary](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_swing.html)

@@ -7,6 +7,9 @@ tags: [JTable, RowFilter, JRadioButton]
 author: aterai
 pubdate: 2007-11-05T14:35:32+09:00
 description: JDK 6で導入されたRowFilterを使って、JTableの行をPagination風に分割して表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -103,7 +106,8 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 
 また、モデルのインデックス順でフィルタリングしているため、ソートを行っても表示される行の範囲内で変化します。
 
-- 参考:[JTableのRowFilterを一旦解除してソート](http://ateraimemo.com/Swing/ResetRowFilter.html), [TablePaginationTest.java](http://terai.xrea.jp/data/swing/TablePaginationTest.java)
+- 参考: [JTableのRowFilterを一旦解除してソート](http://ateraimemo.com/Swing/ResetRowFilter.html)
+    - [TablePaginationTest.java](http://ateraimemo.com/data/swing/TablePaginationTest.java)
 
 <!-- dummy comment line for breaking list -->
 

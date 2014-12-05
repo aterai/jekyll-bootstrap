@@ -10,13 +10,13 @@ description: JToolTipをGlassPane上のコンポーネントに追加した場�
 comments: true
 ---
 ## 概要
-`JToolTip`を`GlassPane`上のコンポーネントに追加した場合でも、手前に表示されるように設定します。主に[Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)を参考にしています。
+`JToolTip`を`GlassPane`上のコンポーネントに追加した場合でも、手前に表示されるように設定します。主に[Swing - ComboBox scroll and selected/highlight on glasspane](https://community.oracle.com/thread/1357949)を参考にしています。
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>//Swing - ComboBox scroll and selected/highlight on glasspane
-//https://forums.oracle.com/thread/1357949
+//https://community.oracle.com/thread/1357949
 try {
   Class clazz = Class.forName("javax.swing.PopupFactory");
   Field field = clazz.getDeclaredField("forceHeavyWeightPopupKey");
@@ -37,7 +37,7 @@ try {
 - `222...`(右)
     - 正常に表示されるように、常に、`JToolTip`を重量コンポーネントとして表示している
     - `PopupFactory`クラスの`forceHeavyWeightPopupKey`をリフレクションで取得して、`JComponent#putClientProperty`メソッドで設定
-    - [Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)の`GlassPane`で`JComboBox`のポップアップを正常に表示する方法を引用
+    - [Swing - ComboBox scroll and selected/highlight on glasspane](https://community.oracle.com/thread/1357949)の`GlassPane`で`JComboBox`のポップアップを正常に表示する方法を引用
     - `ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);`としておかないと前面に表示されない環境がある？
 
 <!-- dummy comment line for breaking list -->
@@ -53,10 +53,10 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 </code></pre>
 
 ## 参考リンク
-- [Swing - ComboBox scroll and selected/highlight on glasspane](https://forums.oracle.com/thread/1357949)
+- [Swing - ComboBox scroll and selected/highlight on glasspane](https://community.oracle.com/thread/1357949)
 - [JComboBox の GlassPane 上でのレンダリング](http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?mode=viewtopic&topic=42615&forum=12)
-- [Swing - Why glass pane requires setLightWeightPopupEnabled(false)?](https://forums.oracle.com/thread/1366094)
-- [JInternalFrameをModalにする](http://terai.xrea.jp/Swing/ModalInternalFrame.html)
+- [Swing - Why glass pane requires setLightWeightPopupEnabled(false)?](https://community.oracle.com/thread/1366094)
+- [JInternalFrameをModalにする](http://ateraimemo.com/Swing/ModalInternalFrame.html)
 
 <!-- dummy comment line for breaking list -->
 

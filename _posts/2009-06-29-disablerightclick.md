@@ -7,6 +7,9 @@ tags: [JComboBox, BasicComboPopup, MouseListener, JList]
 author: aterai
 pubdate: 2009-06-29T10:14:32+09:00
 description: JComboBoxのドロップダウンリスト(ポップアップメニュー)で、マウスの右クリックを無効にします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/06/disable-right-click-in-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -16,7 +19,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class BasicComboPopup2 extends BasicComboPopup {
-  private Handler2 handler2;
+  private transient Handler2 handler2;
   @Override public void uninstallingUI() {
     super.uninstallingUI();
     handler2 = null;
@@ -25,29 +28,29 @@ comments: true
     super(combo);
   }
   @Override protected MouseListener createListMouseListener() {
-    if(handler2==null) handler2 = new Handler2();
+    if (handler2 == null) {
+      handler2 = new Handler2();
+    }
     return handler2;
   }
-  private class Handler2 implements MouseListener{
-    @Override public void mouseEntered(MouseEvent e) {}
-    @Override public void mouseExited(MouseEvent e)  {}
-    @Override public void mouseClicked(MouseEvent e) {}
-    @Override public void mousePressed(MouseEvent e) {}
+  private class Handler2 extends MouseAdapter {
     @Override public void mouseReleased(MouseEvent e) {
-      if(e.getSource() == list) {
-        if(list.getModel().getSize() &gt; 0) {
+      if (e.getSource().equals(list)) {
+        if (list.getModel().getSize() &gt; 0) {
           // &lt;ins&gt;
-          if(!SwingUtilities.isLeftMouseButton(e) || !comboBox.isEnabled()) return;
+          if (!SwingUtilities.isLeftMouseButton(e) || !comboBox.isEnabled()) {
+            return;
+          }
           // &lt;/ins&gt;
           // JList mouse listener
-          if(comboBox.getSelectedIndex() == list.getSelectedIndex()) {
+          if (comboBox.getSelectedIndex() == list.getSelectedIndex()) {
             comboBox.getEditor().setItem(list.getSelectedValue());
           }
           comboBox.setSelectedIndex(list.getSelectedIndex());
         }
         comboBox.setPopupVisible(false);
         // workaround for cancelling an edited item (bug 4530953)
-        if(comboBox.isEditable() &amp;&amp; comboBox.getEditor() != null) {
+        if (comboBox.isEditable() &amp;&amp; comboBox.getEditor() != null) {
           comboBox.configureEditor(comboBox.getEditor(), comboBox.getSelectedItem());
         }
       }
@@ -61,7 +64,7 @@ comments: true
 
 <pre class="prettyprint"><code>combo02.setUI(new BasicComboBoxUI() {
   @Override protected ComboPopup createPopup() {
-    return new BasicComboPopup2( comboBox );
+    return new BasicComboPopup2(comboBox);
   }
 });
 </code></pre>
@@ -72,25 +75,28 @@ comments: true
 以下のような方法もあります。
 
 <pre class="prettyprint"><code>class BasicComboPopup3 extends BasicComboPopup {
-  public BasicComboPopup3(JComboBox combo) {
-    super(combo);
-  }
+  @SuppressWarnings("unchecked")
   @Override protected JList createList() {
     return new JList(comboBox.getModel()) {
       @Override public void processMouseEvent(MouseEvent e) {
-        if(SwingUtilities.isRightMouseButton(e)) return;
-        if(e.isControlDown()) {
+        if (SwingUtilities.isRightMouseButton(e)) {
+          return;
+        }
+        MouseEvent ev = e;
+        if (e.isControlDown()) {
           // Fix for 4234053. Filter out the Control Key from the list.
           // ie., don't allow CTRL key deselection.
-          e = new MouseEvent((Component)e.getSource(), e.getID(), e.getWhen(),
-                     e.getModifiers() ^ InputEvent.CTRL_MASK,
-                     e.getX(), e.getY(),
-                     e.getXOnScreen(), e.getYOnScreen(),
-                     e.getClickCount(),
-                     e.isPopupTrigger(),
-                     MouseEvent.NOBUTTON);
+          Toolkit toolkit = Toolkit.getDefaultToolkit();
+          ev = new MouseEvent(e.getComponent(), e.getID(), e.getWhen(),
+                              //e.getModifiers() ^ InputEvent.CTRL_MASK,
+                              e.getModifiers() ^ toolkit.getMenuShortcutKeyMask(),
+                              e.getX(), e.getY(),
+                              e.getXOnScreen(), e.getYOnScreen(),
+                              e.getClickCount(),
+                              e.isPopupTrigger(),
+                              MouseEvent.NOBUTTON);
         }
-        super.processMouseEvent(e);
+        super.processMouseEvent(ev);
       }
     };
   }
@@ -112,10 +118,10 @@ class BasicComboPopup3 extends BasicComboPopup {
                      ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
                      ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER) {
       @Override protected void processEvent(AWTEvent e) {
-        if(e instanceof MouseWheelEvent) {
+        if (e instanceof MouseWheelEvent) {
           JScrollBar toScroll = getVerticalScrollBar();
-          if(toScroll == null || !toScroll.isVisible()) {
-            ((MouseWheelEvent)e).consume();
+          if (toScroll == null || !toScroll.isVisible()) {
+            ((MouseWheelEvent) e).consume();
             return;
           }
         }

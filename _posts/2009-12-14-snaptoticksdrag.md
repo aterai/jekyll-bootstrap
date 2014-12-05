@@ -7,6 +7,9 @@ tags: [JSlider, MouseMotionListener]
 author: aterai
 pubdate: 2009-12-14T13:49:28+09:00
 description: JSliderのSnapToTicksをマウスでのドラッグ中にも適用されるように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/12/snap-to-ticks-drag-jslider.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -19,7 +22,7 @@ comments: true
   @Override protected TrackListener createTrackListener(final JSlider slider) {
     return new TrackListener() {
       @Override public void mouseDragged(MouseEvent e) {
-        if(!slider.getSnapToTicks() || slider.getMajorTickSpacing()==0) {
+        if (!slider.getSnapToTicks() || slider.getMajorTickSpacing() == 0) {
           super.mouseDragged(e);
           return;
         }
@@ -30,24 +33,25 @@ comments: true
         final int trackRight  = trackRect.x + trackRect.width - 1 + halfThumbWidth;
         int xPos = e.getX();
         int snappedPos = xPos;
-        if(xPos &lt;= trackLeft) {
+        if (xPos &lt;= trackLeft) {
           snappedPos = trackLeft;
-        }else if(xPos &gt;= trackRight) {
+        } else if (xPos &gt;= trackRight) {
           snappedPos = trackRight;
-        }else{
+        } else {
           //int tickSpacing = slider.getMajorTickSpacing();
-          //float actualPixelsForOneTick = trackLength * tickSpacing / (float)slider.getMaximum();
+          //float actualPixelsForOneTick = trackLength * tickSpacing / (float) slider.getMaximum();
 
           // a problem if you choose to set a negative MINIMUM for the JSlider;
           // the calculated drag-positions are wrong.
           // Fixed by bobndrew:
           int possibleTickPositions = slider.getMaximum() - slider.getMinimum();
-          int tickSpacing = (slider.getMinorTickSpacing()==0)
+          int tickSpacing = (slider.getMinorTickSpacing() == 0)
                       ? slider.getMajorTickSpacing()
                       : slider.getMinorTickSpacing();
           float actualPixelsForOneTick = trackLength * tickSpacing / (float) possibleTickPositions;
           xPos -= trackLeft;
-          snappedPos = (int) (Math.round(xPos/actualPixelsForOneTick) * actualPixelsForOneTick + 0.5) + trackLeft;
+          snappedPos = (int) (Math.round(
+            xPos / actualPixelsForOneTick) * actualPixelsForOneTick + .5) + trackLeft;
           offset = 0;
           //System.out.println(snappedPos);
         }

@@ -7,6 +7,9 @@ tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, TreeModelListener]
 author: aterai
 pubdate: 2012-02-06T14:38:59+09:00
 description: JTreeのすべてのノードに編集可能なJCheckBoxを追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2012/02/jcheckbox-node-jtree.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -34,17 +37,17 @@ comments: true
     this.setOpaque(false);
   }
   @Override public Component getTreeCellEditorComponent(
-    JTree tree, Object value, boolean isSelected,
-    boolean expanded, boolean leaf, int row) {
-    JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
-                 tree, value, true, expanded, leaf, row, true);
+      JTree tree, Object value, boolean isSelected,
+      boolean expanded, boolean leaf, int row) {
+    JLabel l = (JLabel) renderer.getTreeCellRendererComponent(
+      tree, value, true, expanded, leaf, row, true);
     l.setFont(tree.getFont());
     if (value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
-      Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
+      Object userObject = ((DefaultMutableTreeNode) value).getUserObject();
       if (userObject instanceof CheckBoxNode) {
-        CheckBoxNode node = (CheckBoxNode)userObject;
+        CheckBoxNode node = (CheckBoxNode) userObject;
         if (node.status == Status.INDETERMINATE) {
           setIcon(new IndeterminateIcon());
         } else {
@@ -65,8 +68,8 @@ comments: true
   }
   @Override public boolean isCellEditable(EventObject e) {
     if (e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
-      MouseEvent me = (MouseEvent)e;
-      JTree tree = (JTree)e.getSource();
+      MouseEvent me = (MouseEvent) e;
+      JTree tree = (JTree) e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
       Rectangle r = tree.getPathBounds(path);
       if (r == null) {
@@ -121,17 +124,17 @@ comments: true
     check.setOpaque(false);
   }
   @Override public Component getTreeCellRendererComponent(
-    JTree tree, Object value, boolean selected,
-    boolean expanded, boolean leaf, int row, boolean hasFocus) {
-    JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
-                 tree, value, selected, expanded, leaf, row, hasFocus);
+      JTree tree, Object value, boolean selected,
+      boolean expanded, boolean leaf, int row, boolean hasFocus) {
+    JLabel l = (JLabel) renderer.getTreeCellRendererComponent(
+      tree, value, selected, expanded, leaf, row, hasFocus);
     l.setFont(tree.getFont());
     if (value instanceof DefaultMutableTreeNode) {
       check.setEnabled(tree.isEnabled());
       check.setFont(tree.getFont());
-      Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
+      Object userObject = ((DefaultMutableTreeNode) value).getUserObject();
       if (userObject instanceof CheckBoxNode) {
-        CheckBoxNode node = (CheckBoxNode)userObject;
+        CheckBoxNode node = (CheckBoxNode) userObject;
         if (node.status == Status.INDETERMINATE) {
           check.setIcon(new IndeterminateIcon());
         } else {

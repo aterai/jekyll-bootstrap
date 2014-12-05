@@ -7,6 +7,9 @@ tags: [JComboBox, ListCellRenderer, ActionMap, InputMap]
 author: aterai
 pubdate: 2008-04-14T13:34:30+09:00
 description: JComboBoxのドロップダウンリストで、指定したアイテムを選択不可にします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/03/non-selectable-jcombobox-items.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -76,7 +79,7 @@ comments: true
   }
   public void setDisableIndex(Set&lt;Integer&gt; set) {
     disableIndexSet.clear();
-    for (Integer i : set) {
+    for (Integer i: set) {
       disableIndexSet.add(i);
     }
   }

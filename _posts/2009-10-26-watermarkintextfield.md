@@ -26,7 +26,7 @@ comments: true
   @Override public void paintComponent(Graphics g) {
     super.paintComponent(g);
     if(showWatermark) {
-      Graphics2D g2d = (Graphics2D)g;
+      Graphics2D g2d = (Graphics2D) g;
       //Insets i = getMargin();
       Insets i = getInsets();
       int yy = (getHeight()-image.getIconHeight())/2;

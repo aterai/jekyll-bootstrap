@@ -7,6 +7,9 @@ tags: [JTable, Animation]
 author: aterai
 pubdate: 2009-04-06T14:03:11+09:00
 description: JTableの行追加や削除をスライドアニメーションで強調します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/04/animating-jtable-rows.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -17,14 +20,14 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private void testCreateActionPerformed(ActionEvent e) {
   model.addTest(new Test("New name", ""));
-  (new javax.swing.Timer(DELAY, new ActionListener() {
-    int i = table.convertRowIndexToView(model.getRowCount()-1);
+  (new Timer(DELAY, new ActionListener() {
+    int i = table.convertRowIndexToView(model.getRowCount() - 1);
     int h = START_HEIGHT;
     @Override public void actionPerformed(ActionEvent e) {
-      if(h&lt;END_HEIGHT) {
+      if (h &lt; END_HEIGHT) {
         table.setRowHeight(i, h++);
       }else{
-        ((javax.swing.Timer)e.getSource()).stop();
+        ((Timer) e.getSource()).stop();
       }
     }
   })).start();
@@ -32,18 +35,19 @@ comments: true
 
 private void deleteActionPerformed(ActionEvent evt) {
   final int[] selection = table.getSelectedRows();
-  if(selection==null || selection.length&lt;=0) return;
-  (new javax.swing.Timer(DELAY, new ActionListener() {
+  if (selection == null || selection.length &lt;= 0) return;
+  (new Timer(DELAY, new ActionListener() {
     int h = END_HEIGHT;
     @Override public void actionPerformed(ActionEvent e) {
       h--;
-      if(h&gt;START_HEIGHT) {
-        for(int i=selection.length-1;i&gt;=0;i--)
+      if (h &gt; START_HEIGHT) {
+        for (int i = selection.length - 1; i &gt;= 0; i--)
           table.setRowHeight(selection[i], h);
-      }else{
-        ((javax.swing.Timer)e.getSource()).stop();
-        for(int i=selection.length-1;i&gt;=0;i--)
+      } else {
+        ((Timer) e.getSource()).stop();
+        for (int i = selection.length - 1; i &gt;= 0; i--) {
           model.removeRow(table.convertRowIndexToModel(selection[i]));
+        }
       }
     }
   })).start();

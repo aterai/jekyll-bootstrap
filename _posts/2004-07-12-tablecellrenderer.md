@@ -66,7 +66,7 @@ class MyJLabel extends JLabel {
   public MyJLabel() {super();}
   @Override protected void paintComponent(Graphics g) {
     //super.paintComponent(g);
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     //......
     g2.drawGlyphVector(gvtext,
                        getInsets().left,

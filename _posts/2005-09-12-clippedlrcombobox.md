@@ -6,25 +6,28 @@ title: JComboBoxのItemを左右にクリップして配置
 tags: [JComboBox, ListCellRenderer, JLabel, JPanel]
 author: aterai
 pubdate: 2005-09-12T13:00:56+09:00
-description: JComboBoxのItemにテキストをクリップして左右に分けて配置します。
+description: JComboBoxのItem内のレイアウトをメインとサブの二つに分割し、それぞれ適当な長さに省略した文字列を表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/08/multi-column-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要
-`JComboBox`の`Item`にテキストをクリップして左右に分けて配置します。
+`JComboBox`の`Item`内のレイアウトをメインとサブの二つに分割し、それぞれ適当な長さに省略した文字列を表示します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJSTVvNXI/AAAAAAAAAUI/RNbSh6R4xi8/s800/ClippedLRComboBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class MultiColumnCellRenderer extends JPanel implements ListCellRenderer{
+<pre class="prettyprint"><code>class MultiColumnCellRenderer extends JPanel implements ListCellRenderer {
   private final JLabel leftLabel = new JLabel();
   private final JLabel rightLabel;
 
   public MultiColumnCellRenderer(int rightWidth) {
     super(new BorderLayout());
-    this.setBorder(BorderFactory.createEmptyBorder(1,1,1,1));
+    this.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
     leftLabel.setOpaque(false);
-    leftLabel.setBorder(BorderFactory.createEmptyBorder(0,2,0,0));
+    leftLabel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 0));
 
     final Dimension dim = new Dimension(rightWidth, 0);
     rightLabel = new JLabel() {
@@ -33,7 +36,7 @@ comments: true
       }
     };
     rightLabel.setOpaque(false);
-    rightLabel.setBorder(BorderFactory.createEmptyBorder(0,2,0,2));
+    rightLabel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 2));
     rightLabel.setForeground(Color.GRAY);
     rightLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 
@@ -50,14 +53,14 @@ comments: true
     leftLabel.setFont(list.getFont());
     rightLabel.setFont(list.getFont());
 
-    if(index&lt;0) {
+    if (index &lt; 0) {
       leftLabel.setForeground(list.getForeground());
       this.setOpaque(false);
-    }else{
+    } else {
       leftLabel.setForeground(
-          isSelected?list.getSelectionForeground():list.getForeground());
+          isSelected ? list.getSelectionForeground() : list.getForeground());
       this.setBackground(
-          isSelected?list.getSelectionBackground():list.getBackground());
+          isSelected ? list.getSelectionBackground() : list.getBackground());
       this.setOpaque(true);
     }
     return this;

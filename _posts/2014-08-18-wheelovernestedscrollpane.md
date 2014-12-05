@@ -7,6 +7,9 @@ tags: [JScrollPane, JLayer, MouseWheelEvent]
 author: aterai
 pubdate: 2014-08-18T00:11:00+09:00
 description: JLayerを使って、ネストするJScrollPaneへのMouseWheelEventを転送し、スクロールが継続するように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2014/09/forward-mouse-wheel-scroll-event-in.html
+    lang: en
 comments: true
 ---
 ## 概要

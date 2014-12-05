@@ -34,10 +34,10 @@ add(new JCheckBox(new AbstractAction("Tree.paintLines") {
 
 元々、線を表示しない`GTKLookAndFeel`などでは、`UIManager.put("Tree.paintLines", Boolean.TRUE);`としても線は描画されないようです。
 
-複数の`JTree`の表示を個別に切り替えたい場合は、[Hide horizontal and vertical lines in a JTree | Oracle Forums](https://forums.oracle.com/thread/1367209)で、Michael_Dunn さんが投稿(`2007/10/24 2:42`)したコードのように、`BasicTreeUI#paintHorizontalLine`メソッドなどをオーバーライドする方法もあります。
+複数の`JTree`の表示を個別に切り替えたい場合は、[Hide horizontal and vertical lines in a JTree | Oracle Forums](https://community.oracle.com/thread/1367209)で、Michael_Dunn さんが投稿(`2007/10/24 2:42`)したコードのように、`BasicTreeUI#paintHorizontalLine`メソッドなどをオーバーライドする方法もあります。
 
 ## 参考リンク
-- [Hide horizontal and vertical lines in a JTree | Oracle Forums](https://forums.oracle.com/thread/1367209)
+- [Hide horizontal and vertical lines in a JTree | Oracle Forums](https://community.oracle.com/thread/1367209)
 
 <!-- dummy comment line for breaking list -->
 

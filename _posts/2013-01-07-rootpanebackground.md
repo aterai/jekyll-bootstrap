@@ -21,7 +21,7 @@ comments: true
       //private final TexturePaint texture = makeCheckerTexture();
       @Override protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        Graphics2D g2 = (Graphics2D)g.create();
+        Graphics2D g2 = (Graphics2D) g.create();
         g2.setPaint(texture);
         g2.fillRect(0, 0, getWidth(), getHeight());
         g2.dispose();
@@ -47,7 +47,7 @@ frame.getContentPane().add(new MainPanel());
 ## 解説
 このサンプルでは、`JFrame#createRootPane()`メソッドをオーバーライドして、以下の方法で背景に画像を描画する`JRootPane`を作成しています。
 
-- 中央の画像: [CentredBackgroundBorder](https://forums.oracle.com/thread/1395763)を使用
+- 中央の画像: [CentredBackgroundBorder](https://community.oracle.com/thread/1395763)を使用
 - チェック柄: `JRootPane#paintComponent(...)`をオーバーライド
 
 <!-- dummy comment line for breaking list -->
@@ -66,7 +66,7 @@ frame.getContentPane().add(new MainPanel());
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing - How can I use TextArea with Background Picture ?](https://forums.oracle.com/thread/1395763)
+- [Swing - How can I use TextArea with Background Picture ?](https://community.oracle.com/thread/1395763)
     - [JTextAreaの背景に画像を表示](http://ateraimemo.com/Swing/CentredBackgroundBorder.html)
 
 <!-- dummy comment line for breaking list -->

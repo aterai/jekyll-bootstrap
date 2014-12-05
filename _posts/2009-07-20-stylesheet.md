@@ -30,7 +30,7 @@ editor.setText(makeTestHtml());
 
 ## 参考リンク
 - [Java Swing「JEditorPane」メモ(Hishidama's Swing-JEditorPane Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JEditorPane.html)
-- [Swing - HTMLEditorKit and CSS](https://forums.oracle.com/thread/1392908)
+- [Swing - HTMLEditorKit and CSS](https://community.oracle.com/thread/1392908)
 - [StyleSheet (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/StyleSheet.html)
     - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/CSS.html)
 - [How to add stylesheet information to a JEditorPane (jfc/swing)](http://www.devdaily.com/blog/post/jfc-swing/how-add-style-stylesheet-jeditorpane-example-code/)

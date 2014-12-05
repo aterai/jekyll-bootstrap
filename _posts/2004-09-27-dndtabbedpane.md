@@ -7,6 +7,9 @@ tags: [JTabbedPane, DragAndDrop, GlassPane, DragGestureListener]
 author: aterai
 pubdate: 2004-09-27
 description: JTabbedPaneのタブをDrag&Dropで移動します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2008/04/drag-and-drop-tabs-in-jtabbedpane.html
+    lang: en
 comments: true
 ---
 ## 概要

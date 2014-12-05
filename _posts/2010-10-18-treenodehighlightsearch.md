@@ -7,6 +7,9 @@ tags: [JTree, TreeCellRenderer]
 author: aterai
 pubdate: 2010-10-18T14:37:59+09:00
 description: JTreeを検索し、TreeCellRendererを使ってノードをハイライトします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2010/10/jtree-node-highlight-search.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -25,18 +28,18 @@ comments: true
   @Override public Component getTreeCellRendererComponent(JTree tree, Object value,
         boolean isSelected, boolean expanded,
         boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent)renderer.getTreeCellRendererComponent(
+    JComponent c = (JComponent) renderer.getTreeCellRendererComponent(
         tree, value, isSelected, expanded, leaf, row, hasFocus);
-    if(isSelected) {
+    if (isSelected) {
       c.setOpaque(false);
       c.setForeground(getTextSelectionColor());
       //c.setBackground(Color.BLUE); //getBackgroundSelectionColor());
-    }else{
+    } else {
       c.setOpaque(true);
-      if(q!=null &amp;&amp; !q.isEmpty() &amp;&amp; value.toString().startsWith(q)) {
+      if (q != null &amp;&amp; !q.isEmpty() &amp;&amp; value.toString().startsWith(q)) {
         c.setForeground(getTextNonSelectionColor());
         c.setBackground(rollOverRowColor);
-      }else{
+      } else {
         c.setForeground(getTextNonSelectionColor());
         c.setBackground(getBackgroundNonSelectionColor());
       }
@@ -74,12 +77,12 @@ comments: true
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected,
       boolean expanded, boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent)super.getTreeCellRendererComponent(
+    JComponent c = (JComponent) super.getTreeCellRendererComponent(
         tree, value, isSelected, expanded, leaf, row, hasFocus);
-    if(isSelected) {
+    if (isSelected) {
       c.setForeground(getTextSelectionColor());
-    }else{
-      rollOver = q!=null &amp;&amp; !q.isEmpty() &amp;&amp; value.toString().startsWith(q);
+    } else {
+      rollOver = q != null &amp;&amp; !q.isEmpty() &amp;&amp; value.toString().startsWith(q);
       c.setForeground(getTextNonSelectionColor());
       c.setBackground(getBackgroundNonSelectionColor());
     }

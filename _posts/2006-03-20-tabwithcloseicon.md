@@ -63,9 +63,9 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Swing (Archive) - Adding a close icon to a JTabbedPane tab](https://forums.oracle.com/thread/1501884)
-- [Swing - JTabbedPane with close Icons](https://forums.oracle.com/thread/1356993)
-- [Swing (Archive) - Closable Tab in JTabbedPane](https://forums.oracle.com/thread/1480617)
+- [Swing (Archive) - Adding a close icon to a JTabbedPane tab](https://community.oracle.com/thread/1501884)
+- [Swing - JTabbedPane with close Icons](https://community.oracle.com/thread/1356993)
+- [Swing (Archive) - Closable Tab in JTabbedPane](https://community.oracle.com/thread/1480617)
 - [CloseAndMaxTabbedPane: An enhanced JTabbedPane](http://www.javaworld.com/javaworld/jw-09-2004/jw-0906-tabbedpane.html)
 - [InfoNode - Java Components](http://www.infonode.net/index.html?itp)
 - [Kirill Grouchnikov's Blog: Spicing up your JTabbedPane - part II](http://weblogs.java.net/blog/kirillcool/archive/2005/12/spicing_up_your_1.html)

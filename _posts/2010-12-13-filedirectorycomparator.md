@@ -7,6 +7,9 @@ tags: [JTable, RowSorter, File, Comparator, DragAndDrop, UIManager, Icon, FileSy
 author: aterai
 pubdate: 2010-12-13T15:54:21+09:00
 description: JTableでファイルとディレクトリを別々にソートし、ディレクトリが常に先頭になるように設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2011/11/jtable-group-directories-first-sorting.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -17,28 +20,29 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>// &gt; dir /O:GN
 // &gt; ls --group-directories-first
-class FileGroupComparator extends DefaultFileComparator{
+class FileGroupComparator extends DefaultFileComparator {
+  private static final long serialVersionUID = 1L;
   private final JTable table;
   public FileGroupComparator(JTable table, int column) {
     super(column);
     this.table = table;
   }
-  @Override public int compare((File a, File b) {
+  @Override public int compare(File a, File b) {
     int flag = 1;
-    java.util.List&lt;? extends TableRowSorter.SortKey&gt; keys
-        = table.getRowSorter().getSortKeys();
-    if(!keys.isEmpty()) {
+    List&lt;? extends TableRowSorter.SortKey&gt; keys
+      = table.getRowSorter().getSortKeys();
+    if (!keys.isEmpty()) {
       TableRowSorter.SortKey sortKey = keys.get(0);
-      if(sortKey.getColumn()==column &amp;&amp;
-         sortKey.getSortOrder()==SortOrder.DESCENDING) {
+      if (sortKey.getColumn() == column &amp;&amp;
+          sortKey.getSortOrder() == SortOrder.DESCENDING) {
         flag = -1;
       }
     }
-    if(a.isDirectory() &amp;&amp; !b.isDirectory()) {
-      return -1*flag;
-    }else if(!a.isDirectory() &amp;&amp; b.isDirectory()) {
-      return  1*flag;
-    }else{
+    if (a.isDirectory() &amp;&amp; !b.isDirectory()) {
+      return -1 * flag;
+    } else if (!a.isDirectory() &amp;&amp; b.isDirectory()) {
+      return 1 * flag;
+    } else {
       return super.compare(a, b);
     }
   }
@@ -54,6 +58,11 @@ class FileGroupComparator extends DefaultFileComparator{
     - 「ディレクトリ < ファイル」となるような`Comparator`を設定
 - `Group Sorting`
     - 昇順の場合は「ディレクトリ < ファイル」、降順の場合は、「ディレクトリ > ファイル」として、ディレクトリが常に先頭になる`Comparator`を設定
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JTreeのソート](http://ateraimemo.com/Swing/SortTree.html)
 
 <!-- dummy comment line for breaking list -->
 

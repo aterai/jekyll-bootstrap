@@ -75,7 +75,7 @@ comments: true
 
 ## 参考リンク
 - [Sorting Table with Summary Row - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/date/20070812)
-- [Swing - Sort rows in JTable except the last row](https://forums.oracle.com/thread/1356123)
+- [Swing - Sort rows in JTable except the last row](https://community.oracle.com/thread/1356123)
 
 <!-- dummy comment line for breaking list -->
 

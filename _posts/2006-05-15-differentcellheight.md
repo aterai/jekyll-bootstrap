@@ -61,7 +61,7 @@ private DefaultListModel makeList() {
   }
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int w, int h) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     g2.translate(x,y);
     g2.setPaint(getLineColor());
     BasicGraphicsUtils.drawDashedRect(g2, 0, 0, w, h);

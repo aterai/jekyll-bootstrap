@@ -7,6 +7,9 @@ tags: [JComboBox, KeyListener, JPopupMenu]
 author: aterai
 pubdate: 2004-12-06
 description: JComboBoxに入力候補の一覧表示機能(補完機能、コードアシスト、コンテンツアシスト)を追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2009/01/create-auto-suggest-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要

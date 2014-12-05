@@ -47,7 +47,7 @@ comments: true
     trans.quadrantRotate(numquadrants);
   }
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.translate(x, y);
     g2.drawImage(image, trans, c);
     g2.translate(-x, -y);
@@ -102,7 +102,7 @@ class QuadrantRotateIcon implements Icon{
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
     int w = icon.getIconWidth();
     int h = icon.getIconHeight();
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.translate(x, y);
     switch(rotate) {
       case CLOCKWISE:         g2.translate(h, 0); break;

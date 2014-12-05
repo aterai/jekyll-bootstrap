@@ -37,7 +37,7 @@ comments: true
     setCaret(caret);
   }
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D)g;
+    Graphics2D g2 = (Graphics2D) g;
     Insets i = getInsets();
     int h = caret.height;
     int y = caret.y;
@@ -60,7 +60,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-[Swing - Stretching background colour across whole JTextPane for one line of text](https://forums.oracle.com/thread/1364121) の Darryl.Burke さんのコード(以下に部分コピー)のように、`BasicTextPaneUI#paintBackground`をオーバーライドする方法(こちらの方がシンプルで美しいかも)もあります。
+[Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121) の Darryl.Burke さんのコード(以下に部分コピー)のように、`BasicTextPaneUI#paintBackground`をオーバーライドする方法(こちらの方がシンプルで美しいかも)もあります。
 
 <pre class="prettyprint"><code>//JTextPane textPane = new JTextPane();
 //textPane.setUI(new LineHighlightTextPaneUI(textPane));
@@ -95,7 +95,7 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 
 ## 参考リンク
 - [JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)
-- [Swing - Stretching background colour across whole JTextPane for one line of text](https://forums.oracle.com/thread/1364121)
+- [Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121)
 
 <!-- dummy comment line for breaking list -->
 

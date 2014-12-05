@@ -37,7 +37,7 @@ try{
 上記のサンプルでは、ハイライト色を`DefaultHighlighter.DefaultHighlightPainter`を使って指定しています。
 
 ## 参考リンク
-- [Swing - Searching text in files & highlighting that text](https://forums.oracle.com/thread/1387954)
+- [Swing - Searching text in files & highlighting that text](https://community.oracle.com/thread/1387954)
 
 <!-- dummy comment line for breaking list -->
 
@@ -70,90 +70,11 @@ public void setHighlight(JTextComponent jtc, String[] pattern) {
 </code></pre>
 
 - こんな簡単にハイライトできるとは！。正規表現で実装すると開始位置と終了位置がより簡単で、しかも複雑にできるかも。 -- *eternalharvest* 2008-08-28 (木) 02:20:11
-    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ:[Swing - Content-Overlay in JTextPane](https://forums.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。 -- *aterai* 2008-09-01 (月) 13:47:05
+    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ:[Swing - Content-Overlay in JTextPane](https://community.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。 -- *aterai* 2008-09-01 (月) 13:47:05
 - こんにちは。Cakaiと申します。ハイライトされているテキストのカラーを設定することがありますか？ -- *Caokai* 2009-10-15 (Thu) 23:12:47
     - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html) -- *aterai* 2009-10-16 (金) 13:04:32
         - 用途によっては、[JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)なども使えるかもしれません。
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>import java.awt.*;
-import javax.swing.*;
-import javax.swing.text.*;
-public class HighlightTest{
-  public static void main(String[] args) {
-    EventQueue.invokeLater(new Runnable() {
-      @Override public void run() { createAndShowGUI(); }
-    });
-  }
-  private static void addHighlightTest(JTextComponent textarea,
-                     String pattern,
-                     Highlighter.HighlightPainter painter) {
-    String text = textarea.getText();
-    try {
-      int pos = 0;
-      while ((pos = text.indexOf(pattern, pos)) &gt;= 0) {
-        textarea.getHighlighter().addHighlight(
-          pos, pos+pattern.length(), painter);
-        pos += pattern.length();
-      }
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
-  }
-  private static JTextArea makeTestTextArea() {
-    JTextArea textArea = new JTextArea();
-    textArea.setText("JTextArea\nRed and Blue");
-    addHighlightTest(textArea, "Red",
-      new DefaultHighlighter.DefaultHighlightPainter(Color.RED));
-    addHighlightTest(textArea, "Blue",
-      new DefaultHighlighter.DefaultHighlightPainter(Color.BLUE));
-    return textArea;
-  }
-  private static void addStyleTest(JTextPane textPane, String pattern) {
-    String text = textPane.getText();
-    StyledDocument doc = textPane.getStyledDocument();
-    Style s = doc.getStyle(pattern.toLowerCase());
-    try{
-        int pos = 0;
-        while ((pos = text.indexOf(pattern, pos)) &gt;= 0) {
-            doc.setCharacterAttributes(pos, pattern.length(), s, false);
-            pos += pattern.length();
-        }
-    } catch (Exception ex) {
-        ex.printStackTrace();
-    }
-  }
-  private static JTextPane makeTestTextPane() {
-    JTextPane textPane = new JTextPane();
-    textPane.setText("JTextPane\nRed and Blue");
-
-    StyledDocument doc = textPane.getStyledDocument();
-    Style def = StyleContext.getDefaultStyleContext().getStyle(
-        StyleContext.DEFAULT_STYLE);
-    Style regular = doc.addStyle("regular", def);
-
-    Style red = doc.addStyle("red", regular);
-    StyleConstants.setForeground(red, Color.RED);
-    Style blue = doc.addStyle("blue", regular);
-    StyleConstants.setForeground(blue, Color.BLUE);
-    addStyleTest(textPane, "Red");
-    addStyleTest(textPane, "Blue");
-    return textPane;
-  }
-  public static void createAndShowGUI() {
-    JPanel p = new JPanel(new GridLayout(2,1));
-    p.add(new JScrollPane(makeTestTextArea()));
-    p.add(new JScrollPane(makeTestTextPane()));
-    JFrame frame = new JFrame();
-    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    frame.getContentPane().add(p);
-    frame.setSize(320, 240);
-    frame.setLocationRelativeTo(null);
-    frame.setVisible(true);
-  }
-}
-</code></pre>
+    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/HighlightTextForeground.html)にサンプルソースコードを移動。
 - わかりました。ほんとにありがとうございました。 -- *Caokai* 2009-10-16 (Fri) 16:42:07
 
 <!-- dummy comment line for breaking list -->

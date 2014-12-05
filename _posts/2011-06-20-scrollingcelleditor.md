@@ -16,13 +16,19 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TextAreaCellEditor extends JTextArea implements TableCellEditor {
+  private static final String KEY = "Stop-Cell-Editing";
+  protected transient ChangeEvent changeEvent;
   private final JScrollPane scroll;
   public TextAreaCellEditor() {
+    super();
     scroll = new JScrollPane(this);
+    scroll.setBorder(BorderFactory.createEmptyBorder());
     setLineWrap(true);
+    setBorder(BorderFactory.createEmptyBorder(2, 4, 2, 4));
     KeyStroke enter = KeyStroke.getKeyStroke(
-        KeyEvent.VK_ENTER, InputEvent.CTRL_MASK);
-    getInputMap(JComponent.WHEN_FOCUSED).put(enter, new AbstractAction() {
+        KeyEvent.VK_ENTER, InputEvent.CTRL_DOWN_MASK);
+    getInputMap(JComponent.WHEN_FOCUSED).put(enter, KEY);
+    getActionMap().put(KEY, new AbstractAction() {
       @Override public void actionPerformed(ActionEvent e) {
         stopCellEditing();
       }
@@ -33,12 +39,14 @@ comments: true
   }
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {
+    System.out.println("getTableCellEditorComponent");
     setFont(table.getFont());
     setText(Objects.toString(value, ""));
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         setCaretPosition(getText().length());
         requestFocusInWindow();
+        System.out.println("invokeLater: getTableCellEditorComponent");
       }
     });
     return scroll;
@@ -47,6 +55,7 @@ comments: true
     if (e instanceof MouseEvent) {
       return ((MouseEvent) e).getClickCount() &gt;= 2;
     }
+    System.out.println("isCellEditable");
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         if (e instanceof KeyEvent) {
@@ -54,13 +63,15 @@ comments: true
           char kc = ke.getKeyChar();
           if (Character.isUnicodeIdentifierStart(kc)) {
             setText(getText() + kc);
+            System.out.println("invokeLater: isCellEditable");
           }
         }
       }
     });
     return true;
   }
-//...
+  //...
+}
 </code></pre>
 
 ## 解説
