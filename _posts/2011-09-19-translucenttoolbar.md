@@ -31,9 +31,9 @@ comments: true
     setIcon(image);
     toolBox.setFloatable(false);
     toolBox.setOpaque(false);
-    toolBox.setBackground(new Color(0,0,0,0));
+    toolBox.setBackground(new Color(0, 0, 0, 0));
     toolBox.setForeground(Color.WHITE);
-    toolBox.setBorder(BorderFactory.createEmptyBorder(2,4,4,4));
+    toolBox.setBorder(BorderFactory.createEmptyBorder(2, 4, 4, 4));
 
     //toolBox.setLayout(new BoxLayout(toolBox, BoxLayout.X_AXIS));
     toolBox.add(Box.createGlue());
@@ -55,7 +55,7 @@ comments: true
       }
     };
     toolBox.addMouseListener(ma);
-//......
+    //...
 </code></pre>
 
 ## 解説

@@ -16,11 +16,11 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>TreeModel model = tree.getModel();
-DefaultMutableTreeNode root = (DefaultMutableTreeNode)model.getRoot();
+DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
 Enumeration e = root.breadthFirstEnumeration();
-while(e.hasMoreElements()) {
-  DefaultMutableTreeNode node = (DefaultMutableTreeNode)e.nextElement();
-  textArea.append(node.toString()+"\n");
+while (e.hasMoreElements()) {
+  DefaultMutableTreeNode node = (DefaultMutableTreeNode) e.nextElement();
+  textArea.append(node.toString() + "\n");
 }
 </code></pre>
 

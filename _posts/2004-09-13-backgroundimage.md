@@ -19,9 +19,9 @@ comments: true
   Dimension d = getSize();
   int w = bgimage.getIconWidth();
   int h = bgimage.getIconHeight();
-  for(int i=0;i*w&lt;d.width;i++) {
-    for(int j=0;j*h&lt;d.height;j++) {
-      g.drawImage(bgimage.getImage(), i*w, j*h, w, h, this);
+  for (int i = 0; i * w &lt; d.width; i++) {
+    for (int j = 0; j * h &lt; d.height; j++) {
+      g.drawImage(bgimage.getImage(), i * w, j * h, w, h, this);
     }
   }
   super.paintComponent(g);

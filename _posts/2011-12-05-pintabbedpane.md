@@ -17,8 +17,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JCheckBoxMenuItem pinTabMenuItem = new JCheckBoxMenuItem(new AbstractAction("pin tab") {
   @Override public void actionPerformed(ActionEvent e) {
-    JTabbedPane t = (JTabbedPane)getInvoker();
-    JCheckBoxMenuItem check = (JCheckBoxMenuItem)e.getSource();
+    JTabbedPane t = (JTabbedPane) getInvoker();
+    JCheckBoxMenuItem check = (JCheckBoxMenuItem) e.getSource();
     int idx       = t.getSelectedIndex();
     Component cmp = t.getComponentAt(idx);
     Component tab = t.getTabComponentAt(idx);
@@ -27,24 +27,30 @@ comments: true
     boolean flg   = t.isEnabledAt(idx);
 
     int i;
-    if(check.isSelected()) {
-      for(i=0;i&lt;idx;i++) {
+    if (check.isSelected()) {
+      for (i = 0; i &lt; idx; i++) {
         String s = t.getTitleAt(i);
-        if(s==null || s.length()==0) continue;
+        if (s == null || s.length() == 0) {
+          continue;
+        }
         break;
       }
-    }else{
-      for(i=t.getTabCount()-1;i&gt;idx;i--) {
+    } else {
+      for (i = t.getTabCount() - 1; i &gt; idx; i--) {
         String s = t.getTitleAt(i);
-        if(s!=null &amp;&amp; s.length()&gt;0) continue;
+        if (s != null &amp;&amp; s.length() &gt; 0) {
+          continue;
+        }
         break;
       }
     }
     t.remove(idx);
-    t.insertTab(check.isSelected()?"":tip, icon, cmp, tip, i);
+    t.insertTab(check.isSelected() ? "" : tip, icon, cmp, tip, i);
     t.setTabComponentAt(i, tab);
     t.setEnabledAt(i, flg);
-    if(flg) t.setSelectedIndex(i);
+    if (flg) {
+      t.setSelectedIndex(i);
+    }
   }
 });
 </code></pre>

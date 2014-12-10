@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: HyperlinkListener
 title: JEditorPaneにリンクを追加
-tags: [JEditorPane, Html, HTMLEditorKit, HyperlinkListener, JButton]
+tags: [JEditorPane, Html, HTMLEditorKit, HyperlinkListener, JButton, Hyperlink]
 author: aterai
 pubdate: 2010-05-10T16:07:06+09:00
 description: JEditorPaneに追加したリンクのクリックイベントなどをHyperlinkListenerで処理します。

@@ -6,11 +6,11 @@ title: JTableHeaderを非表示にする
 tags: [JTable, JTableHeader, JScrollPane]
 author: aterai
 pubdate: 2010-11-01T15:50:29+09:00
-description: JTableHeaderの表示、非表示を切り替えます。
+description: JTableでJTableHeaderを表示するかどうかを、動的に切り替えます。
 comments: true
 ---
 ## 概要
-`JTableHeader`の表示、非表示を切り替えます。
+`JTable`で`JTableHeader`を表示するかどうかを、動的に切り替えます。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRpYOxz3I/AAAAAAAAAhg/7HdNawHaulI/s800/RemoveTableHeader.png %}
 

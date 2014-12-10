@@ -41,7 +41,7 @@ if (dictionary != null) {
 ## 解説
 上記のサンプルでは、`JSlider`のラベル(`JLabel`)を`JSlider#getLabelTable()`メソッドで取得し、このラベルに三角形のアイコンを追加して、目盛り(`MajorTick`)の代わりとして表示しています。
 
-- 注: `JSlider#setOrientation(SwingConstants.VERTICAL)`には未対応
+- 注: このサンプルのアイコンは、`JSlider#setOrientation(SwingConstants.VERTICAL)`には未対応
 
 <!-- dummy comment line for breaking list -->
 

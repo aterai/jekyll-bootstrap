@@ -21,11 +21,11 @@ fixedTable.setSelectionModel(table.getSelectionModel());
 fixedTable.setUpdateSelectionOnSort(false);
 //table.setUpdateSelectionOnSort(true);
 
-for(int i=model.getColumnCount()-1;i&gt;=0;i--) {
-  if(i&lt;2) {
+for (int i = model.getColumnCount() - 1; i &gt;= 0; i--) {
+  if (i &lt; 2) {
     table.removeColumn(table.getColumnModel().getColumn(i));
     fixedTable.getColumnModel().getColumn(i).setResizable(false);
-  }else{
+  } else {
     fixedTable.removeColumn(fixedTable.getColumnModel().getColumn(i));
   }
 }
@@ -69,8 +69,8 @@ add(scroll);
   @Override public void actionPerformed(ActionEvent e) {
     //List&lt;? extends RowSorter.SortKey&gt; keys = sorter.getSortKeys();
     sorter.setSortKeys(null);
-    for(int i=0;i&lt;100;i++) {
-      model.addRow(new Object[] {i, i+1, "A"+i, "B"+i});
+    for (int i = 0; i &lt; 100; i++) {
+      model.addRow(new Object[] {i, i + 1, "A" + i, "B" + i});
     }
     //sorter.setSortKeys(keys);
   }

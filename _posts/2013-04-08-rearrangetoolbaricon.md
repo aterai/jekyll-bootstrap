@@ -173,6 +173,7 @@ comments: true
 
 ## 参考リンク
 - [JFrameの外側でもドラッグアイコンを表示する](http://ateraimemo.com/Swing/DragSourceMotionListener.html)
+- [JPanelの並び順をドラッグ＆ドロップで入れ替える](http://ateraimemo.com/Swing/RearrangeOrderOfPanels.html)
 
 <!-- dummy comment line for breaking list -->
 
