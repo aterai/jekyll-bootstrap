@@ -15,7 +15,8 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TU-dbe20pkI/AAAAAAAAA0g/3fG2yE_NmHw/s800/DisplayMessage.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>trayIcon.displayMessage("caption", "text", TrayIcon.MessageType.ERROR);
+<pre class="prettyprint"><code>//TrayIcon.MessageType: ERROR, WARNING, INFO, NONE
+trayIcon.displayMessage("caption", "text", TrayIcon.MessageType.ERROR);
 </code></pre>
 
 ## 解説

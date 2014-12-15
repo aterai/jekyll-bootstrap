@@ -18,11 +18,13 @@ comments: true
 <pre class="prettyprint"><code>class URILabel extends JLabel {
   private final String href;
   public URILabel(String href) {
-    super("&lt;html&gt;&lt;a href='"+href+"'&gt;"+href+"&lt;/a&gt;");
+    super("&lt;html&gt;&lt;a href='" + href + "'&gt;" + href + "&lt;/a&gt;");
     this.href = href;
     setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     addMouseListener(new MouseAdapter() {
-      @Override public void mousePressed(MouseEvent e) {open(href);}
+      @Override public void mousePressed(MouseEvent e) {
+        open(href);
+      }
     });
   }
 }
@@ -34,7 +36,7 @@ button.setUI(LinkViewButtonUI.createUI(button));
 class LinkViewButtonUI extends BasicButtonUI {
   private final static LinkViewButtonUI linkViewButtonUI = new LinkViewButtonUI();
   public static ButtonUI createUI(JButton b) {
-    b.setBorder(BorderFactory.createEmptyBorder(0,0,2,0));
+    b.setBorder(BorderFactory.createEmptyBorder(0, 0, 2, 0));
     b.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     return linkViewButtonUI;
   }
@@ -54,15 +56,16 @@ class LinkViewButtonUI extends BasicButtonUI {
     //...
 </code></pre>
 
-<pre class="prettyprint"><code>JEditorPane editor = new JEditorPane("text/html", "&lt;html&gt;&lt;a href='"+MYSITE+"'&gt;"+MYSITE+"&lt;/a&gt;");
+<pre class="prettyprint"><code>JEditorPane editor = new JEditorPane(
+    "text/html", "&lt;html&gt;&lt;a href='" + MYSITE + "'&gt;" + MYSITE + "&lt;/a&gt;");
 editor.setOpaque(false);
 //editor.setBackground(getBackground());
 //editor.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
 editor.setEditable(false); //REQUIRED
 editor.addHyperlinkListener(new HyperlinkListener() {
   @Override public void hyperlinkUpdate(HyperlinkEvent e) {
-    if(e.getEventType()==HyperlinkEvent.EventType.ACTIVATED) {
-      java.awt.Toolkit.getDefaultToolkit().beep();
+    if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+      Toolkit.getDefaultToolkit().beep();
     }
   }
 });

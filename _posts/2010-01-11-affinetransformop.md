@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>int w = bi.getWidth(this);
 int h = bi.getHeight(this);
-AffineTransform at = AffineTransform.getScaleInstance(-1.0, 1.0);
+AffineTransform at = AffineTransform.getScaleInstance(-1d, 1d);
 at.translate(-w, 0);
 AffineTransformOp atOp = new AffineTransformOp(at, null);
 g.drawImage(atOp.filter(bi, null), 0, 0, w, h, this);
@@ -29,7 +29,7 @@ g.drawImage(atOp.filter(bi, null), 0, 0, w, h, this);
 - - - -
 以下のような方法で上下反転することもできます。
 
-<pre class="prettyprint"><code>AffineTransform at = AffineTransform.getScaleInstance(1.0, -1.0);
+<pre class="prettyprint"><code>AffineTransform at = AffineTransform.getScaleInstance(1d, -1d);
 at.translate(0, -h);
 g2.drawImage(bi, at, this);
 </code></pre>

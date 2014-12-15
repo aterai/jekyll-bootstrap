@@ -20,24 +20,24 @@ comments: true
   public MnemonicToolTip() {
     setLayout(new BorderLayout());
     mnemonicLabel.setForeground(Color.GRAY);
-    mnemonicLabel.setBorder(BorderFactory.createEmptyBorder(0,2,0,2));
+    mnemonicLabel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 2));
     add(mnemonicLabel, BorderLayout.EAST);
   }
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
-    if(mnemonicLabel.isVisible()) {
+    if (mnemonicLabel.isVisible()) {
       d.width += mnemonicLabel.getPreferredSize().width;
     }
     return d;
   }
   @Override public void setComponent(JComponent c) {
-    if(c instanceof AbstractButton) {
-      AbstractButton b = (AbstractButton)c;
+    if (c instanceof AbstractButton) {
+      AbstractButton b = (AbstractButton) c;
       int mnemonic = b.getMnemonic();
-      if(mnemonic&gt;0) {
+      if (mnemonic &gt; 0) {
         mnemonicLabel.setVisible(true);
-        mnemonicLabel.setText("Alt+"+KeyEvent.getKeyText(mnemonic));
-      }else{
+        mnemonicLabel.setText("Alt + " + KeyEvent.getKeyText(mnemonic));
+      } else {
         mnemonicLabel.setVisible(false);
       }
     }

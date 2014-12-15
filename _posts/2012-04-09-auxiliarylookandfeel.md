@@ -15,11 +15,11 @@ comments: true
 {% download https://lh4.googleusercontent.com/-SxIyCqWRFhk/T4JxXw96NSI/AAAAAAAABLQ/gM_5mjZPn1o/s800/AuxiliaryLookAndFeel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JCheckBox check = (JCheckBox)e.getSource();
+<pre class="prettyprint"><code>JCheckBox check = (JCheckBox) e.getSource();
 String lnf = UIManager.getLookAndFeel().getName();
-if(check.isSelected() &amp;&amp; lnf.contains("Windows")) {
+if (check.isSelected() &amp;&amp; lnf.contains("Windows")) {
   UIManager.addAuxiliaryLookAndFeel(auxLookAndFeel);
-}else{
+} else {
   UIManager.removeAuxiliaryLookAndFeel(auxLookAndFeel);
 }
 SwingUtilities.updateComponentTreeUI(MainPanel.this);
@@ -42,12 +42,12 @@ SwingUtilities.updateComponentTreeUI(MainPanel.this);
   @Override public void addEditor() {
     removeEditor();
     ComboBoxEditor cbe = comboBox.getEditor();
-    if(cbe != null) {
+    if (cbe != null) {
       editor = cbe.getEditorComponent();
-      if(editor != null) {
+      if (editor != null) {
         configureEditor();
         comboBox.add(editor);
-        if(comboBox.isFocusOwner()) {
+        if (comboBox.isFocusOwner()) {
           editor.requestFocusInWindow();
         }
       }

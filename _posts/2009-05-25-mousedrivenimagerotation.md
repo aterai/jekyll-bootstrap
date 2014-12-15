@@ -10,91 +10,110 @@ description: 画像をマウスのドラッグで任意の位置に移動、回�
 comments: true
 ---
 ## 概要
-画像をマウスのドラッグで任意の位置に移動、回転します。[Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)、[その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)からの移植になります。
+画像をマウスのドラッグで任意の位置に移動、回転します。[Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)、[その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)の`UI`を参考にしています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQAQVe8YI/AAAAAAAAAe4/y6GTZLKjqx0/s800/MouseDrivenImageRotation.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class DraggableImageMouseListener extends MouseAdapter{
-  private static final Color color = new Color(100,255,200,100);
-  private static final int ir = 40, or = ir*3;
-  public final Ellipse2D.Double inner = new Ellipse2D.Double(0,0,ir,ir);
-  public final Ellipse2D.Double outer = new Ellipse2D.Double(0,0,or,or);
+<pre class="prettyprint"><code>class DraggableImageMouseListener extends MouseAdapter {
+  private static final Color HOVER_COLOR = new Color(100, 255, 200, 100);
+  private static final int IR = 40;
+  private static final int OR = IR * 3;
+  private static final BasicStroke BORDER_STROKE = new BasicStroke(4f);
+  private final RoundRectangle2D.Double border;
+  private final Ellipse2D.Double inner = new Ellipse2D.Double(0, 0, IR, IR);
+  private final Ellipse2D.Double outer = new Ellipse2D.Double(0, 0, OR, OR);
   public final Image image;
   public final int width;
   public final int height;
   public final double centerX, centerY;
-  public double x = 10.0, y = 50.0, rotate = 45.0 * (Math.PI / 180.0);
+  public double x = 10d, y = 50d, radian = 45d * (Math.PI / 180d);
   public double startX, startY, startA;
   private boolean moverHover, rotatorHover;
-
   public DraggableImageMouseListener(ImageIcon ii) {
-    image   = ii.getImage();
-    width   = ii.getIconWidth();
-    height  = ii.getIconHeight();
-    centerX = width/2.0;
-    centerY = height/2.0;
-    inner.x = (x+centerX-ir/2);
-    inner.y = (y+centerY-ir/2);
-    outer.x = (x+centerX-or/2);
-    outer.y = (y+centerY-or/2);
+    super();
+    image = ii.getImage();
+    width = ii.getIconWidth();
+    height = ii.getIconHeight();
+    centerX = width / 2.0;
+    centerY = height / 2.0;
+    inner.x = x + centerX - IR / 2;
+    inner.y = y + centerY - IR / 2;
+    outer.x = x + centerX - OR / 2;
+    outer.y = y + centerY - OR / 2;
+    border = new RoundRectangle2D.Double(0d, 0d, width, height, 10d, 10d);
   }
   public void paint(Graphics g, ImageObserver ior) {
-    Graphics2D g2d = (Graphics2D) g;
+    Graphics2D g2d = (Graphics2D) g.create();
+    g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                         RenderingHints.VALUE_ANTIALIAS_ON);
     AffineTransform at = AffineTransform.getTranslateInstance(x, y);
-    at.rotate(rotate, centerX, centerY);
+    at.rotate(radian, centerX, centerY);
+    g2d.setPaint(Color.WHITE);
+    g2d.setStroke(BORDER_STROKE);
+    Shape s = new Rectangle2D.Double(
+        border.x - 2, border.y - 2, border.width + 4, border.height + 20);
+    g2d.fill(at.createTransformedShape(s));
+    g2d.draw(at.createTransformedShape(s));
     g2d.drawImage(image, at, ior);
-    g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-    if(rotatorHover) {
+    if (rotatorHover) {
       Area donut = new Area(outer);
       donut.subtract(new Area(inner));
-      g2d.setPaint(color);
+      g2d.setPaint(HOVER_COLOR);
       g2d.fill(donut);
-    }else if(moverHover) {
-      g2d.setPaint(color);
+    } else if (moverHover) {
+      g2d.setPaint(HOVER_COLOR);
       g2d.fill(inner);
     }
+    g2d.setStroke(BORDER_STROKE);
+    g2d.setPaint(Color.WHITE);
+    g2d.draw(at.createTransformedShape(border));
+    g2d.dispose();
   }
   @Override public void mouseMoved(MouseEvent e) {
-    if(outer.contains(e.getX(), e.getY()) &amp;&amp; !inner.contains(e.getX(), e.getY())) {
-      moverHover = false; rotatorHover = true;
-    }else if(inner.contains(e.getX(), e.getY())) {
-      moverHover = true;  rotatorHover = false;
-    }else{
-      moverHover = rotatorHover =false;
+    if (outer.contains(e.getX(), e.getY()) &amp;&amp; !inner.contains(e.getX(), e.getY())) {
+      moverHover = false;
+      rotatorHover = true;
+    } else if (inner.contains(e.getX(), e.getY())) {
+      moverHover = true;
+      rotatorHover = false;
+    } else {
+      moverHover = false;
+      rotatorHover = false;
     }
-    ((JComponent)e.getSource()).repaint();
+    e.getComponent().repaint();
   }
   @Override public void mouseReleased(MouseEvent e) {
-    rotatorHover = moverHover = false;
-    ((JComponent)e.getSource()).repaint();
+    rotatorHover = false;
+    moverHover = false;
+    e.getComponent().repaint();
   }
   @Override public void mousePressed(MouseEvent e) {
-    if(outer.contains(e.getX(), e.getY()) &amp;&amp; !inner.contains(e.getX(), e.getY())) {
+    if (outer.contains(e.getX(), e.getY()) &amp;&amp; !inner.contains(e.getX(), e.getY())) {
       rotatorHover = true;
-      startA = rotate - Math.atan2(e.getY()-y-centerY, e.getX()-x-centerX);
-      ((JComponent)e.getSource()).repaint();
-    }else if(inner.contains(e.getX(), e.getY())) {
+      startA = radian - Math.atan2(e.getY() - y - centerY, e.getX() - x - centerX);
+      e.getComponent().repaint();
+    } else if (inner.contains(e.getX(), e.getY())) {
       moverHover = true;
       startX = e.getX();
       startY = e.getY();
-      ((JComponent)e.getSource()).repaint();
+      e.getComponent().repaint();
     }
   }
   @Override public void mouseDragged(MouseEvent e) {
-    if(rotatorHover) {
-      rotate = startA + Math.atan2(e.getY()-y-centerY, e.getX()-x-centerX);
-      ((JComponent)e.getSource()).repaint();
-    }else if(moverHover) {
+    if (rotatorHover) {
+      radian = startA + Math.atan2(e.getY() - y - centerY, e.getX() - x - centerX);
+      e.getComponent().repaint();
+    } else if (moverHover) {
       x += e.getX() - startX;
       y += e.getY() - startY;
-      inner.x = (x+centerX-ir/2);
-      inner.y = (y+centerY-ir/2);
-      outer.x = (x+centerX-or/2);
-      outer.y = (y+centerY-or/2);
-      startX  = e.getX();
-      startY  = e.getY();
-      ((JComponent)e.getSource()).repaint();
+      inner.x = x + centerX - IR / 2;
+      inner.y = y + centerY - IR / 2;
+      outer.x = x + centerX - OR / 2;
+      outer.y = y + centerY - OR / 2;
+      startX = e.getX();
+      startY = e.getY();
+      e.getComponent().repaint();
     }
   }
 }

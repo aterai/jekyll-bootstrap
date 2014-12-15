@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-RBRHhAqSA3A/UM3gOvnmIOI/AAAAAAAABZM/LdLir_Y4dQc/s800/SliderToolTips.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class SliderPopupListener extends MouseAdapter{
+<pre class="prettyprint"><code>class SliderPopupListener extends MouseAdapter {
   private final JWindow toolTip = new JWindow();
   private final JLabel label = new JLabel("", SwingConstants.CENTER);
   private final Dimension size = new Dimension(30, 20);
@@ -28,14 +28,14 @@ comments: true
   }
   private int prevValue = -1;
   protected void updateToolTip(MouseEvent me) {
-    JSlider slider = (JSlider)me.getSource();
-    int intValue = (int)slider.getValue();
-    if(prevValue!=intValue) {
+    JSlider slider = (JSlider) me.getSource();
+    int intValue = (int) slider.getValue();
+    if (prevValue != intValue) {
       label.setText(String.format("%03d", slider.getValue()));
       Point pt = me.getPoint();
       pt.y = -size.height;
-      SwingUtilities.convertPointToScreen(pt, (Component)me.getSource());
-      pt.translate(-size.width/2, 0);
+      SwingUtilities.convertPointToScreen(pt, (Component) me.getSource());
+      pt.translate(-size.width / 2, 0);
       toolTip.setLocation(pt);
     }
     prevValue = intValue;

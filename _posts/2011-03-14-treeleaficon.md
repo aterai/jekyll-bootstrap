@@ -17,11 +17,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>folderCheck.addActionListener(new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
-    DefaultTreeCellRenderer r = (DefaultTreeCellRenderer)tree.getCellRenderer();
-    if(((JCheckBox)e.getSource()).isSelected()) {
+    DefaultTreeCellRenderer r = (DefaultTreeCellRenderer) tree.getCellRenderer();
+    if (((JCheckBox) e.getSource()).isSelected()) {
       r.setOpenIcon(r.getDefaultOpenIcon());
       r.setClosedIcon(r.getDefaultClosedIcon());
-    }else{
+    } else {
       r.setOpenIcon(emptyIcon);
       r.setClosedIcon(emptyIcon);
     }
@@ -45,11 +45,11 @@ comments: true
 - - - -
 各アイコンの幅が変化するので、表示を切り替えた後で、以下のようにすべてのノードを更新しています。
 <pre class="prettyprint"><code>private static void allNodesChanged(JTree tree) {
-  DefaultTreeModel model = (DefaultTreeModel)tree.getModel();
-  DefaultMutableTreeNode root = (DefaultMutableTreeNode)model.getRoot();
-  java.util.Enumeration depth = root.depthFirstEnumeration();
-  while(depth.hasMoreElements()) {
-    model.nodeChanged((TreeNode)depth.nextElement());
+  DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+  DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+  Enumeration depth = root.depthFirstEnumeration();
+  while (depth.hasMoreElements()) {
+    model.nodeChanged((TreeNode) depth.nextElement());
   }
   //tree.revalidate();
   //tree.repaint();

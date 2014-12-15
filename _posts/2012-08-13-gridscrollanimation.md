@@ -17,24 +17,24 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class GridPanel extends JPanel implements Scrollable {
   public static int cols = 3, rows = 4;
-  public static Dimension size = new Dimension(160*cols, 120*rows);
+  public static Dimension size = new Dimension(160 * cols, 120 * rows);
   public GridPanel() {
     super(new GridLayout(rows, cols, 0, 0));
     //putClientProperty("JScrollBar.fastWheelScrolling", Boolean.FALSE);
   }
   @Override public Dimension getPreferredScrollableViewportSize() {
     Dimension d = getPreferredSize();
-    return new Dimension(d.width/cols, d.height/rows);
+    return new Dimension(d.width / cols, d.height / rows);
   }
   @Override public int getScrollableUnitIncrement(
-      Rectangle visibleRect, int orientation, int direction) {
-    return orientation==SwingConstants.HORIZONTAL ?
-      visibleRect.width : visibleRect.height;
+    Rectangle visibleRect, int orientation, int direction) {
+    return orientation == SwingConstants.HORIZONTAL ?
+           visibleRect.width : visibleRect.height;
   }
   @Override public int getScrollableBlockIncrement(
-      Rectangle visibleRect, int orientation, int direction) {
-    return orientation==SwingConstants.HORIZONTAL ?
-      visibleRect.width : visibleRect.height;
+    Rectangle visibleRect, int orientation, int direction) {
+    return orientation == SwingConstants.HORIZONTAL ?
+           visibleRect.width : visibleRect.height;
   }
   @Override public boolean getScrollableTracksViewportWidth() {
     return false;
@@ -64,15 +64,15 @@ class ScrollAction extends AbstractAction {
               sx  = vport.getViewPosition().x,
               sy  = vport.getViewPosition().y;
     final Rectangle rect = new Rectangle(w, h);
-    if(scroller!=null &amp;&amp; scroller.isRunning()) return;
+    if (scroller != null &amp;&amp; scroller.isRunning()) return;
     scroller = new Timer(5, new ActionListener() {
       double MAX = 100d;
-      int count = (int)MAX;
+      int count = (int) MAX;
       @Override public void actionPerformed(ActionEvent e) {
-        double a = easeInOut(--count/MAX);
-        int dx = (int)(w - a*w + 0.5d);
-        int dy = (int)(h - a*h + 0.5d);
-        if(count&lt;=0) {
+        double a = easeInOut(--count / MAX);
+        int dx = (int) (w - a * w + .5);
+        int dy = (int) (h - a * h + .5);
+        if (count &lt;= 0) {
           dx = w;
           dy = h;
           scroller.stop();
@@ -85,10 +85,10 @@ class ScrollAction extends AbstractAction {
   }
   private static double easeInOut(double t) {
     //range: 0.0&lt;=t&lt;=1.0
-    if(t&lt;0.5d) {
-      return 0.5d*pow3(t*2d);
+    if (t &lt; .5) {
+      return .5 * pow3(t * 2d);
     } else {
-      return 0.5d*(pow3(t*2d-2d) + 2d);
+      return .5 * (pow3(t * 2d - 2d) + 2d);
     }
   }
   private static double pow3(double a) {

@@ -22,9 +22,11 @@ icon.setImageObserver(new ImageObserver() {
   @Override public boolean imageUpdate(
       Image img, int infoflags, int x, int y, int w, int h) {
     //@see javax.swing.JLabel#imageUpdate(...)
-    if(!table.isShowing()) return false;
+    if (!table.isShowing()) {
+      return false;
+    }
     //@see java.awt.Component#imageUpdate(...)
-    if((infoflags &amp; (FRAMEBITS|ALLBITS)) != 0) {
+    if ((infoflags &amp; (FRAMEBITS|ALLBITS)) != 0) {
       int vr = table.convertRowIndexToView(row); //JDK 1.6.0
       int vc = table.convertColumnIndexToView(col);
       table.repaint(table.getCellRect(vr, vc, false));

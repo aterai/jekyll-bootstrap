@@ -15,35 +15,37 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRSxG9iaI/AAAAAAAAAg8/Wpd3hycacS4/s800/ProgressSplashScreen.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final JFrame frame = new JFrame();
-final JDialog splashScreen  = new JDialog(frame, Dialog.ModalityType.DOCUMENT_MODAL);
+<pre class="prettyprint"><code>final JFrame frame = new JFrame("@title@");
+final JDialog splashScreen = new JDialog(
+    frame, Dialog.ModalityType.DOCUMENT_MODAL);
 final JProgressBar progress = new JProgressBar();
+System.out.println(splashScreen.getModalityType());
 EventQueue.invokeLater(new Runnable() {
   @Override public void run() {
     splashScreen.setUndecorated(true);
     splashScreen.getContentPane().add(
-      new JLabel(new ImageIcon(getClass().getResource("splash.png"))));
+        new JLabel(new ImageIcon(getClass().getResource("splash.png"))));
     splashScreen.getContentPane().add(progress, BorderLayout.SOUTH);
     splashScreen.pack();
     splashScreen.setLocationRelativeTo(null);
     splashScreen.setVisible(true);
   }
 });
-SwingWorker&lt;Void,Void&gt; worker = new SwingWorker&lt;Void,Void&gt;() {
+SwingWorker&lt;Void, Void&gt; worker = new SwingWorker&lt;Void, Void&gt;() {
   @Override public Void doInBackground() {
-    try{
+    try {
       int current = 0;
       int lengthOfTask = 120;
-      while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
+      while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
         try {
           Thread.sleep(50);
-        }catch(InterruptedException ie) {
+        } catch (InterruptedException ie) {
           ie.printStackTrace();
           return null;
         }
         setProgress(100 * current++ / lengthOfTask);
       }
-    }catch(Exception ex) {
+    } catch (Exception ex) {
       ex.printStackTrace();
     }
     return null;
@@ -52,15 +54,14 @@ SwingWorker&lt;Void,Void&gt; worker = new SwingWorker&lt;Void,Void&gt;() {
     splashScreen.dispose();
   }
 };
-worker.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-  @Override public void propertyChange(java.beans.PropertyChangeEvent e) {
-    if("progress".equals(e.getPropertyName())) {
-      progress.setValue((Integer)e.getNewValue());
+worker.addPropertyChangeListener(new PropertyChangeListener() {
+  @Override public void propertyChange(PropertyChangeEvent e) {
+    if ("progress".equals(e.getPropertyName())) {
+      progress.setValue((Integer) e.getNewValue());
     }
   }
 });
 worker.execute();
-
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 frame.getContentPane().add(new MainPanel());
 frame.pack();
@@ -123,33 +124,33 @@ public class ProgressSplashScreenTest {
       }
     });
 
-    SwingWorker&lt;Void,String&gt; worker = new SwingWorker&lt;Void,String&gt;() {
+    SwingWorker&lt;Void, String&gt; worker = new SwingWorker&lt;Void, String&gt;() {
       @Override public Void doInBackground() {
         try {
           int current = 0;
           int lengthOfTask = 120;
-          while(current&lt;=lengthOfTask &amp;&amp; !isCancelled()) {
+          while (current &lt;= lengthOfTask &amp;&amp; !isCancelled()) {
             try {
               Thread.sleep(50); //dummy
-            } catch(InterruptedException ie) {
+            } catch (InterruptedException ie) {
               ie.printStackTrace();
               return null;
             }
-            if(current == 20) {
+            if (current == 20) {
               publish("showFrame");
-            } else if(current%24==0) {
+            } else if (current % 24 == 0) {
               publish("title: "+current);
             }
             setProgress(100 * current++ / lengthOfTask);
           }
-        } catch(Exception ex) {
+        } catch (Exception ex) {
           ex.printStackTrace();
         }
         return null;
       }
       @Override protected void process(List&lt;String&gt; chunks) {
-        for(String cmd : chunks) {
-          if(cmd.equals("showFrame")) {
+        for (String cmd : chunks) {
+          if (cmd.equals("showFrame")) {
             frame.setSize(512, 320);
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
@@ -166,7 +167,7 @@ public class ProgressSplashScreenTest {
     };
     worker.addPropertyChangeListener(new PropertyChangeListener() {
       @Override public void propertyChange(PropertyChangeEvent e) {
-        if("progress".equals(e.getPropertyName())) {
+        if ("progress".equals(e.getPropertyName())) {
           progress.setValue((Integer)e.getNewValue());
         }
       }
@@ -179,8 +180,8 @@ class SplashScreenIcon implements Icon {
     Graphics2D g2 = (Graphics2D) g.create();
     g2.translate(x, y);
     g2.setPaint(Color.GREEN);
-    g2.fillRect(10,10,180,80);
-    g2.translate(-x,-y);
+    g2.fillRect(10, 10, 180, 80);
+    g2.translate(-x, -y);
     g2.dispose();
   }
   @Override public int getIconWidth()  {

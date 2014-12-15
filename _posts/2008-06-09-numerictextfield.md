@@ -24,7 +24,7 @@ textField2.setDocument(new IntegerDocument());
 textField2.setText("2000");
 
 JTextField textField3 = new JTextField();
-((AbstractDocument)textField3.getDocument()).setDocumentFilter(new IntegerDocumentFilter());
+((AbstractDocument) textField3.getDocument()).setDocumentFilter(new IntegerDocumentFilter());
 textField3.setText("3000");
 
 JFormattedTextField textField4 = new JFormattedTextField();
@@ -33,7 +33,7 @@ textField4.setHorizontalAlignment(JTextField.RIGHT);
 textField4.setValue(4000);
 
 JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, Integer.MAX_VALUE, 1));
-((JSpinner.NumberEditor)spinner.getEditor()).getFormat().setGroupingUsed(false);
+((JSpinner.NumberEditor) spinner.getEditor()).getFormat().setGroupingUsed(false);
 spinner.setValue(5000);
 </code></pre>
 
@@ -49,11 +49,11 @@ spinner.setValue(5000);
 <pre class="prettyprint"><code>class IntegerInputVerifier extends InputVerifier{
   @Override public boolean verify(JComponent c) {
     boolean verified = false;
-    JTextField textField = (JTextField)c;
-    try{
+    JTextField textField = (JTextField) c;
+    try {
       Integer.parseInt(textField.getText());
       verified = true;
-    }catch(NumberFormatException e) {
+    } catch (NumberFormatException e) {
       UIManager.getLookAndFeel().provideErrorFeedback(c);
       //Toolkit.getDefaultToolkit().beep();
     }
@@ -80,14 +80,14 @@ spinner.setValue(5000);
   }
   @Override public void insertString(int offset, String str, AttributeSet attributes)
         throws BadLocationException {
-    if(str==null) {
+    if (str == null) {
       return;
-    }else{
+    } else {
       String newValue;
       int length = getLength();
-      if(length==0) {
+      if (length==0) {
         newValue = str;
-      }else{
+      } else {
         String currentContent = getText(0, length);
         StringBuffer currentBuffer = new StringBuffer(currentContent);
         currentBuffer.insert(offset, str);
@@ -101,20 +101,20 @@ spinner.setValue(5000);
     int currentLength = getLength();
     String currentContent = getText(0, currentLength);
     String before = currentContent.substring(0, offset);
-    String after = currentContent.substring(length+offset, currentLength);
+    String after = currentContent.substring(length + offset, currentLength);
     String newValue = before + after;
     currentValue = checkInput(newValue, offset);
     super.remove(offset, length);
   }
   private int checkInput(String proposedValue, int offset) throws BadLocationException {
-    if(proposedValue.length()&gt;0) {
-      try{
+    if (proposedValue.length() &gt; 0) {
+      try {
         int newValue = Integer.parseInt(proposedValue);
         return newValue;
-      }catch(NumberFormatException e) {
+      } catch (NumberFormatException e) {
         throw new BadLocationException(proposedValue, offset);
       }
-    }else{
+    } else {
       return 0;
     }
   }
@@ -134,9 +134,9 @@ spinner.setValue(5000);
   //int currentValue = 0;
   @Override public void insertString(DocumentFilter.FilterBypass fb,
       int offset, String string, AttributeSet attr) throws BadLocationException {
-    if(string == null) {
+    if (string == null) {
       return;
-    }else{
+    } else {
       replace(fb, offset, 0, string, attr);
     }
   }
@@ -159,10 +159,10 @@ spinner.setValue(5000);
   private static int checkInput(String proposedValue, int offset)
       throws BadLocationException {
     int newValue = 0;
-    if(proposedValue.length() &gt; 0) {
+    if (proposedValue.length() &gt; 0) {
       try {
         newValue = Integer.parseInt(proposedValue);
-      }catch(NumberFormatException e) {
+      } catch (NumberFormatException e) {
         throw new BadLocationException(proposedValue, offset);
       }
     }
@@ -182,14 +182,14 @@ spinner.setValue(5000);
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>class NumberFormatterFactory extends DefaultFormatterFactory{
-    private static NumberFormatter numberFormatter = new NumberFormatter();
-    static{
-        numberFormatter.setValueClass(Integer.class);
-        ((NumberFormat)numberFormatter.getFormat()).setGroupingUsed(false);
-    }
-    public NumberFormatterFactory() {
-        super(numberFormatter, numberFormatter, numberFormatter);
-    }
+  private static NumberFormatter numberFormatter = new NumberFormatter();
+  static {
+    numberFormatter.setValueClass(Integer.class);
+    ((NumberFormat) numberFormatter.getFormat()).setGroupingUsed(false);
+  }
+  public NumberFormatterFactory() {
+    super(numberFormatter, numberFormatter, numberFormatter);
+  }
 }
 </code></pre>
 
