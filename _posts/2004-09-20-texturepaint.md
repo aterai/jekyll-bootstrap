@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>BufferedImage bi = null;
 try {
   bi = ImageIO.read(getClass().getResource("16x16.png"));
-}catch(IOException ioe) {
+} catch (IOException ioe) {
   ioe.printStackTrace();
 }
 texture = new TexturePaint(bi, new Rectangle(bi.getWidth(), bi.getHeight()));

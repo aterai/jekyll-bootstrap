@@ -17,12 +17,12 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getResource("Mozart_toruko_k.mid");
 final Sequencer sequencer;
-try{
+try {
   Sequence s = MidiSystem.getSequence(url);
   sequencer  = MidiSystem.getSequencer();
   sequencer.open();
   sequencer.setSequence(s);
-}catch(Exception ex) {
+} catch (Exception ex) {
   ex.printStackTrace();
   return;
 }

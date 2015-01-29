@@ -30,14 +30,14 @@ comments: true
   @Override public Component getTableCellRendererComponent(JTable table,
       Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     removeAllItems();
-    if(isSelected) {
+    if (isSelected) {
       editor.setForeground(table.getSelectionForeground());
       editor.setBackground(table.getSelectionBackground());
-    }else{
+    } else {
       editor.setForeground(table.getForeground());
-      editor.setBackground((row%2==0)?ec:table.getBackground());
+      editor.setBackground((row % 2 == 0) ? ec : table.getBackground());
     }
-    addItem((value==null)?"":value.toString());
+    addItem((value == null) ? "" : value.toString());
     return this;
   }
 }

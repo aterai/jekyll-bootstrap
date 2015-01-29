@@ -20,20 +20,20 @@ class OvertypeCaret extends DefaultCaret {
   //The overtype caret will simply be a horizontal line
   //one pixel high (once we determine where to paint it)
   @Override public void paint(Graphics g) {
-    if(isVisible()) {
-      try{
+    if (isVisible()) {
+      try {
         JTextComponent component = getComponent();
         TextUI mapper = component.getUI();
         Rectangle r = mapper.modelToView(component, getDot());
         g.setColor(component.getCaretColor());
         int width = g.getFontMetrics().charWidth('w');
         //全角などに対応
-        if(isOvertypeMode()) {
+        if (isOvertypeMode()) {
           int pos = getCaretPosition();
-          if(pos&lt;getDocument().getLength()) {
-            if(getSelectedText()!=null) {
+          if (pos &lt; getDocument().getLength()) {
+            if (getSelectedText() != null) {
               width = 0;
-            }else{
+            } else {
               String str = getText(pos, 1);
               width = g.getFontMetrics().stringWidth(str);
             }
@@ -41,14 +41,14 @@ class OvertypeCaret extends DefaultCaret {
         } //ここまで追加
         int y = r.y + r.height - 2;
         g.drawLine(r.x, y, r.x + width - 2, y);
-      }catch(BadLocationException e) {}
+      } catch (BadLocationException e) {}
     }
   }
   // Damage must be overridden whenever the paint method is overridden
   // (The damaged area is the area the caret is painted in. We must
   // consider the area for the default caret and this caret)
   @Override protected synchronized void damage(Rectangle r) {
-    if(r != null) {
+    if (r != null) {
       JTextComponent c = getComponent();
       x = r.x;
       y = r.y;

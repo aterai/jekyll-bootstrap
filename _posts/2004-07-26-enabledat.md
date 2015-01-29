@@ -17,9 +17,9 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>checkbox.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()==ItemEvent.SELECTED) {
+    if (e.getStateChange() == ItemEvent.SELECTED) {
       tab.setEnabledAt(1, true);
-    }else if(e.getStateChange()==ItemEvent.DESELECTED) {
+    } else if (e.getStateChange() == ItemEvent.DESELECTED) {
       tab.setEnabledAt(1, false);
     }
   }

@@ -25,10 +25,10 @@ comments: true
 
     Rectangle rect = textArea.getBounds();
     double sy = trackBounds.getHeight() / rect.getHeight();
-    AffineTransform at = AffineTransform.getScaleInstance(1.0, sy);
+    AffineTransform at = AffineTransform.getScaleInstance(1d, sy);
     Highlighter highlighter = textArea.getHighlighter();
     g.setColor(Color.YELLOW);
-    try{
+    try {
       for (Highlighter.Highlight hh: highlighter.getHighlights()) {
         Rectangle r = textArea.modelToView(hh.getStartOffset());
         Rectangle s = at.createTransformedShape(r).getBounds();

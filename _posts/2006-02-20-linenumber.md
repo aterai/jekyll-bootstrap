@@ -86,7 +86,7 @@ comments: true
     int end   = getLineAtPoint(base + clip.height);
     int y     = start * fontHeight;
     int rmg   = getBorder().getBorderInsets(this).right;
-    for(int i=start;i&lt;=end;i++) {
+    for (int i = start; i &lt;= end; i++) {
       String text = String.valueOf(i + 1);
       int x = getComponentWidth() - rmg - fontMetrics.stringWidth(text);
       y += fontAscent;

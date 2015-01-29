@@ -71,14 +71,14 @@ comments: true
     float value = sb.getValue(); //ins
 
     int thumbH = (range &lt;= 0) ? getMaximumThumbSize().height
-                              : (int)(trackH * (extent / range));
+                              : (int) (trackH * (extent / range));
     thumbH = Math.max(thumbH, getMinimumThumbSize().height);
     thumbH = Math.min(thumbH, getMaximumThumbSize().height);
 
     int thumbY = incrButtonY - incrGap - thumbH;
-    if(value &lt; (sb.getMaximum() - sb.getVisibleAmount())) {
+    if (value &lt; (sb.getMaximum() - sb.getVisibleAmount())) {
       float thumbRange = trackH - thumbH;
-      thumbY = (int)(0.5f + (thumbRange * ((value - min) / (range - extent))));
+      thumbY = (int) (.5f + (thumbRange * ((value - min) / (range - extent))));
       //thumbY +=  decrButtonY + decrButtonH + decrGap; //del
     }
 
@@ -86,7 +86,7 @@ comments: true
      * space to each and move the lower one (incrButton) down.
      */
     int sbAvailButtonH = (sbSize.height - sbInsetsH);
-    if(sbAvailButtonH &lt; sbButtonsH) {
+    if (sbAvailButtonH &lt; sbButtonsH) {
       incrButtonH = decrButtonH = sbAvailButtonH / 2;
       incrButtonY = sbSize.height - (sbInsets.bottom + incrButtonH);
     }
@@ -105,19 +105,19 @@ comments: true
      * make sure it fits between the buttons.  Note that setting the
      * thumbs bounds will cause a repaint.
      */
-    if(thumbH &gt;= (int) trackH) {
+    if (thumbH &gt;= (int) trackH) {
       setThumbBounds(0, 0, 0, 0);
-    }else{
-      //if((thumbY + thumbH) &gt; incrButtonY - incrGap) {
+    } else {
+      //if ((thumbY + thumbH) &gt; incrButtonY - incrGap) {
       //  thumbY = incrButtonY - incrGap - thumbH;
       //}
-      //if(thumbY &lt; (decrButtonY + decrButtonH + decrGap)) {
+      //if (thumbY &lt; (decrButtonY + decrButtonH + decrGap)) {
       //  thumbY = decrButtonY + decrButtonH + decrGap + 1;
       //}
-      if((thumbY + thumbH) &gt; decrButtonY - decrGap) {
+      if ((thumbY + thumbH) &gt; decrButtonY - decrGap) {
         thumbY = decrButtonY - decrGap - thumbH;
       }
-      if(thumbY &lt; 0) { //(decrButtonY + decrButtonH + decrGap)) {
+      if (thumbY &lt; 0) { //(decrButtonY + decrButtonH + decrGap)) {
         thumbY = 1; //decrButtonY + decrButtonH + decrGap + 1;
       }
       setThumbBounds(itemX, thumbY, itemW, thumbH);

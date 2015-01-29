@@ -17,8 +17,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>int count = 0;
 StringTokenizer st = new StringTokenizer(textArea.getText(), "\n") ;
-while(st.hasMoreTokens()) {
-  if(st.nextToken().startsWith("#")) {
+while (st.hasMoreTokens()) {
+  if (st.nextToken().startsWith("#")) {
     count++;
   }
 }
@@ -32,8 +32,8 @@ while(st.hasMoreTokens()) {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>for(String line: textArea.getText().split("\\n")) {
-  if(line.startsWith("#")) {
+<pre class="prettyprint"><code>for (String line: textArea.getText().split("\\n")) {
+  if (line.startsWith("#")) {
     count++;
   }
 }
@@ -43,14 +43,14 @@ while(st.hasMoreTokens()) {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>try(LineNumberReader lnr = new LineNumberReader(new StringReader(textArea.getText()))) {
+<pre class="prettyprint"><code>try (LineNumberReader lnr = new LineNumberReader(new StringReader(textArea.getText()))) {
   String line = null;
-  while((line = lnr.readLine()) != null) {
-    if(line.startsWith("#")) {
+  while ((line = lnr.readLine()) != null) {
+    if (line.startsWith("#")) {
       count++;
     }
   }
-}catch(IOException ioe) {
+} catch (IOException ioe) {
   ioe.printStackTrace();
 }
 </code></pre>
@@ -61,15 +61,15 @@ while(st.hasMoreTokens()) {
 
 <pre class="prettyprint"><code>Document doc = textArea.getDocument();
 Element root = doc.getDefaultRootElement();
-try{
-  for(int i=0;i&lt;root.getElementCount();i++) {
+try {
+  for (int i = 0; i &lt; root.getElementCount(); i++) {
     Element elem = root.getElement(i);
-    String line = doc.getText(elem.getStartOffset(), elem.getEndOffset()-elem.getStartOffset());
-    if(line.startsWith("#")) {
+    String line = doc.getText(elem.getStartOffset(), elem.getEndOffset() - elem.getStartOffset());
+    if (line.startsWith("#")) {
       count++;
     }
   }
-}catch(BadLocationException ble) {
+} catch (BadLocationException ble) {
   ble.printStackTrace();
 }
 </code></pre>

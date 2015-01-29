@@ -15,12 +15,12 @@ comments: true
 {% download https://lh4.googleusercontent.com/-OK_vUTiAiCA/T9WIzXvRm9I/AAAAAAAABNk/ubus049qH04/s800/RotatedIcon.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class RotateIcon implements Icon{
+<pre class="prettyprint"><code>class RotateIcon implements Icon {
   private int width, height;
   private Image image;
   private AffineTransform trans;
   public RotateIcon(Icon icon, int rotate) {
-    if((rotate%90)!=0) {
+    if ((rotate % 90) != 0) {
       throw new IllegalArgumentException(
         rotate + ": Rotate must be (rotate % 90 == 0)");
     }
@@ -33,15 +33,19 @@ comments: true
     g.dispose();
 
     int numquadrants = (rotate / 90) % 4;
-    if(numquadrants==1 || numquadrants==-3) {
+    if (numquadrants == 1 || numquadrants == -3) {
       trans = AffineTransform.getTranslateInstance(height, 0);
-      int v = width; width = height; height = v;
-    }else if(numquadrants==-1 || numquadrants==3) {
+      int v = width;
+      width = height;
+      height = v;
+    } else if (numquadrants == -1 || numquadrants == 3) {
       trans = AffineTransform.getTranslateInstance(0, width);
-      int v = width; width = height; height = v;
-    }else if(Math.abs(numquadrants)==2) {
+      int v = width;
+      width = height;
+      height = v;
+    } else if (Math.abs(numquadrants) == 2) {
       trans = AffineTransform.getTranslateInstance(width, height);
-    }else{
+    } else {
       trans = AffineTransform.getTranslateInstance(0, 0);
     }
     trans.quadrantRotate(numquadrants);
@@ -92,7 +96,7 @@ comments: true
     return numquadrants;
   }
 }
-class QuadrantRotateIcon implements Icon{
+class QuadrantRotateIcon implements Icon {
   private final QuadrantRotate rotate;
   private final Icon icon;
   public QuadrantRotateIcon(Icon icon, QuadrantRotate rotate) {
@@ -104,22 +108,28 @@ class QuadrantRotateIcon implements Icon{
     int h = icon.getIconHeight();
     Graphics2D g2 = (Graphics2D) g.create();
     g2.translate(x, y);
-    switch(rotate) {
-      case CLOCKWISE:         g2.translate(h, 0); break;
-      case VERTICAL_FLIP:     g2.translate(w, h); break;
-      case COUNTER_CLOCKWISE: g2.translate(0, w); break;
+    switch (rotate) {
+    case CLOCKWISE:
+      g2.translate(h, 0);
+      break;
+    case VERTICAL_FLIP:
+      g2.translate(w, h);
+      break;
+    case COUNTER_CLOCKWISE:
+      g2.translate(0, w);
+      break;
     }
-    g2.rotate(Math.toRadians(90*rotate.getNumQuadrants()));
+    g2.rotate(Math.toRadians(90 * rotate.getNumQuadrants()));
     icon.paintIcon(c, g2, 0, 0);
     g2.dispose();
   }
   @Override public int getIconWidth()  {
-    return rotate==QuadrantRotate.VERTICAL_FLIP
-      ? icon.getIconWidth() : icon.getIconHeight();
+    return rotate == QuadrantRotate.VERTICAL_FLIP
+           ? icon.getIconWidth() : icon.getIconHeight();
   }
   @Override public int getIconHeight() {
-    return rotate==QuadrantRotate.VERTICAL_FLIP
-      ? icon.getIconHeight() : icon.getIconWidth();
+    return rotate == QuadrantRotate.VERTICAL_FLIP
+           ? icon.getIconHeight() : icon.getIconWidth();
   }
 }
 </code></pre>

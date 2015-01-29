@@ -75,7 +75,7 @@ comments: true
 kfm.addPropertyChangeListener(new PropertyChangeListener() {
   @Override public void propertyChange(PropertyChangeEvent e) {
     String prop = e.getPropertyName();
-    if("activeWindow".equals(prop) &amp;&amp; e.getNewValue()!=null) {
+    if ("activeWindow".equals(prop) &amp;&amp; e.getNewValue() != null) {
       System.out.println("activeWindow");
       field.requestFocusInWindow();
     }

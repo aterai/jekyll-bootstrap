@@ -17,9 +17,9 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Font makeFont(URL url) {
     Font font = null;
-    try(InputStream is = url.openStream()) {
+    try (InputStream is = url.openStream()) {
         font = Font.createFont(Font.TRUETYPE_FONT, is).deriveFont(12.0f);
-    }catch(IOException | FontFormatException ex) {
+    } catch (IOException | FontFormatException ex) {
         ex.printStackTrace();
     }
     return font;
@@ -31,15 +31,15 @@ comments: true
 //    is = url.openStream();
 //    font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(12.0f);
 //    is.close();
-//  }catch(IOException ioe) {
+//  } catch (IOException ioe) {
 //    ioe.printStackTrace();
-//  }catch(FontFormatException ffe) {
+//  } catch (FontFormatException ffe) {
 //    ffe.printStackTrace();
-//  }finally{
-//    if(is!=null) {
-//      try{
+//  } finally {
+//    if (is != null) {
+//      try {
 //        is.close();
-//      }catch(IOException ioex) {
+//      } catch (IOException ioex) {
 //        ioex.printStackTrace();
 //      }
 //    }

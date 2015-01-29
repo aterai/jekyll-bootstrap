@@ -15,47 +15,47 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTHVHwFBII/AAAAAAAAARA/QX4AmSbPoHs/s800/AccordionPanel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>abstract class ExpansionPanel extends JPanel{
-  abstract public JPanel makePanel();
+<pre class="prettyprint"><code>abstract class AbstractExpansionPanel extends JPanel {
   private final String title;
   private final JLabel label;
   private final JPanel panel;
-
-  public ExpansionPanel(String title) {
+  public abstract JPanel makePanel();
+  public AbstractExpansionPanel(String title) {
     super(new BorderLayout());
     this.title = title;
-    label = new JLabel("↓ "+title) {
+    label = new JLabel("\u25BC " + title) {
       @Override protected void paintComponent(Graphics g) {
-        Graphics2D g2 = (Graphics2D) g;
+        Graphics2D g2 = (Graphics2D) g.create();
         //Insets ins = getInsets();
-        g2.setPaint(new GradientPaint(50, 0, Color.WHITE,
-            getWidth(), getHeight(), new Color(200,200,255)));
+        g2.setPaint(new GradientPaint(
+            50, 0, Color.WHITE, getWidth(), getHeight(),
+            new Color(200, 200, 255)));
         g2.fillRect(0, 0, getWidth(), getHeight());
+        g2.dispose();
         super.paintComponent(g);
       }
     };
     label.addMouseListener(new MouseAdapter() {
-      @Override public void mousePressed(MouseEvent evt) {
+      @Override public void mousePressed(MouseEvent e) {
         initPanel();
       }
     });
     label.setForeground(Color.BLUE);
-    label.setBorder(BorderFactory.createEmptyBorder(2,5,2,2));
+    label.setBorder(BorderFactory.createEmptyBorder(2, 5, 2, 2));
     add(label, BorderLayout.NORTH);
-
     panel = makePanel();
     panel.setVisible(false);
     panel.setOpaque(true);
     panel.setBackground(new Color(240, 240, 255));
-    Border b1 = BorderFactory.createMatteBorder(0,2,2,2,Color.WHITE);
-    Border b2 = BorderFactory.createEmptyBorder(10,10,10,10);
-    Border b3 = BorderFactory.createCompoundBorder(b1, b2);
-    panel.setBorder(b3);
+    Border outBorder = BorderFactory.createMatteBorder(0, 2, 2, 2, Color.WHITE);
+    Border inBorder = BorderFactory.createEmptyBorder(10, 10, 10, 10);
+    Border border = BorderFactory.createCompoundBorder(outBorder, inBorder);
+    panel.setBorder(border);
     add(panel);
   }
   @Override public Dimension getPreferredSize() {
     Dimension d = label.getPreferredSize();
-    if(panel.isVisible()) {
+    if (panel.isVisible()) {
       d.height += panel.getPreferredSize().height;
     }
     return d;
@@ -67,8 +67,10 @@ comments: true
   }
   protected void initPanel() {
     panel.setVisible(!panel.isVisible());
-    label.setText((panel.isVisible()?"↑ ":"↓ ")+title);
+    label.setText(String.format(
+        "%s %s", panel.isVisible() ? "\u25B3" : "\u25BC", title));
     revalidate();
+    //fireExpansionEvent();
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         panel.scrollRectToVisible(panel.getBounds());
@@ -85,7 +87,7 @@ comments: true
 
 <pre class="prettyprint"><code>@Override public Dimension getPreferredSize() {
   Dimension d = label.getPreferredSize();
-  if(panel.isVisible()) {
+  if (panel.isVisible()) {
     d.height += panel.getPreferredSize().height;
   }
   return d;

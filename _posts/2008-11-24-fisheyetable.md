@@ -20,7 +20,9 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseMoved(MouseEvent e) {
   int row = rowAtPoint(e.getPoint());
-  if(prev_row==row) return;
+  if (prev_row == row) {
+    return;
+  }
   initRowHeigth(prev_height, row);
   prev_row = row;
 }
@@ -28,7 +30,7 @@ public void initRowHeigth(int height, int ccRow) {
   int rd2      = (fishEyeRowList.size() - 1) / 2;
   int rowCount = getModel().getRowCount();
   int view_rc  = getViewableColoredRowCount(ccRow);
-  int view_h   = 0; for (int i=0; i &lt; view_rc; i++) view_h += fishEyeRowHeightList.get(i);
+  int view_h   = 0; for (int i = 0; i &lt; view_rc; i++) view_h += fishEyeRowHeightList.get(i);
   int rest_rc  = rowCount - view_rc;
   int rest_h   = height - view_h;
   int rest_rh  = rest_h / rest_rc; rest_rh = rest_rh &gt; 0 ? rest_rh : 1;
@@ -38,7 +40,7 @@ public void initRowHeigth(int height, int ccRow) {
     int crh;
     if (ccRow - rd2 &lt;= i &amp;&amp; i &lt;= ccRow + rd2) {
       index++;
-      if(i &lt; 0) continue;
+      if (i &lt; 0) continue;
       crh = fishEyeRowHeightList.get(index);
     } else {
       if (i &lt; 0) continue;
@@ -53,9 +55,9 @@ public void initRowHeigth(int height, int ccRow) {
 ## 解説
 上記のサンプルでは、マウスカーソルの下の行の高さを、`JTable#setRowHeight()`メソッドを使って変更することで、魚眼レンズのように拡大するようになっています。
 
-- 注意
-    - `JTable#setFillsViewportHeight(true);`を使用しているので、`JDK 1.6.0`以上が必要です。
-    - `JTable`自体の高さが変化することは想定していません。
+- 注:
+    - `JTable#setFillsViewportHeight(true);`を使用しているので、`JDK 1.6.0`以上が必要
+    - `JTable`自体の高さが変化することは想定していない
 
 <!-- dummy comment line for breaking list -->
 

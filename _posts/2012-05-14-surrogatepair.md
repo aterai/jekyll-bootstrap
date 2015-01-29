@@ -33,20 +33,25 @@ editor2.setText("(\uD85B\uDE40) (\u26E40)\n(\uD842\uDF9F) (\u20B9F)");
 以下、サロゲートペア対応フォントを使えるようにしてテストしています。`Java Web Start`で起動した場合、このサンプルの`browse`ボタンで`jar`ファイル内の`SurrogatePair.html`を表示することはできません。
 
 - 上: 数値文字参照(`Numeric character reference`)
+    - [Bug ID: 6836089 Swing HTML parser can't properly decode codepoints outside the Unicode Plane 0 into a surrogate pair](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6836089)で修正されたので、`&#x26E40;`などでも正常に文字が表示される(上記のスクリーンショットのように文字化けしない)
     - `JEditorPane(HTMLEditorKit)`の場合
-    
-    		JEditorPane OK: &amp;#xD85B;&amp;#xDE40;
-    		JEditorPane NG: &amp;#x26E40;
-    - ブラウザ(試したのは`IE`, `FireFox`, `Chrome`, `Opera`)の場合
-    
-    		Browser NG: &amp;#xD85B;&amp;#xDE40;
-    		Browser OK: &amp;#x26E40;
-- 下: `Unicode`エスケープ(`Unicode escapes`)
-
-		JEditorPane OK: \uD85B\uDE40
-		JEditorPane NG: \u26E40
+        - `JEditorPane` + `&#xD85B;&#xDE40;`: `OK`
+        - `JEditorPane` + `&#x26E40;`: `~~NG~~ OK`
 
 <!-- dummy comment line for breaking list -->
+
+    - ブラウザ(試したのは`IE`, `FireFox`, `Chrome`, `Opera`)の場合
+        - `Browser` + `&#xD85B;&#xDE40;`: `NG`
+        - `Browser` + `&#x26E40;`: `OK`
+
+<!-- dummy comment line for breaking list -->
+
+- 下: `Unicode`エスケープ(`Unicode escapes`)
+        - `JEditorPane` + `\uD85B\uDE40`: `OK`
+        - `JEditorPane` + `\u26E40`: `NG`
+
+<!-- dummy comment line for breaking list -->
+
 - - - -
 `JTextComponent`とブラウザでサロゲートペアの表現が異なるようなので、これらの文字をどちらの環境でも正しく表示したい場合は、数値文字参照や`Unicode`エスケープは使用せず、ソースコードなどを`UTF-8`にしてそのまま𦹀や𠮟と書く(メモ帳などの対応済みエディタで)のがよさそうです。
 
@@ -91,11 +96,11 @@ public class OTFTest {
     //String str = "file:///C:/Windows/Fonts/meiryo.ttc";
     //String str = "file:///C:/Windows/Fonts/ipaexg.ttf";
     //String str = "file:///C:/Windows/Fonts/A-OTF-ShinGoPro-Regular.otf";
-    try(InputStream is = (new URL(str)).openStream()) {
-      Font font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(32.0f);
+    try (InputStream is = (new URL(str)).openStream()) {
+      Font font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(32f);
       textArea.setFont(font);
       is.close();
-    }catch(IOException|FontFormatException ex) {
+    } catch (IOException | FontFormatException ex) {
       ex.printStackTrace();
     }
     JPanel p = new JPanel(new BorderLayout());

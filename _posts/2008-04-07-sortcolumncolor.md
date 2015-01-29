@@ -20,10 +20,10 @@ comments: true
   @Override public Component prepareRenderer(
       TableCellRenderer tcr, int row, int column) {
     Component c = super.prepareRenderer(tcr, row, column);
-    if(isRowSelected(row)) {
+    if (isRowSelected(row)) {
       c.setForeground(getSelectionForeground());
       c.setBackground(getSelectionBackground());
-    }else{
+    } else {
       c.setForeground(getForeground());
       c.setBackground(isSortingColumn(column) ? evenColor
                                               : getBackground());
@@ -32,11 +32,11 @@ comments: true
   }
   private boolean isSortingColumn(int column) {
     RowSorter sorter = getRowSorter();
-    if(sorter!=null) {
-      java.util.List list = sorter.getSortKeys();
-      if(list.size()&gt;0) {
+    if (sorter != null) {
+      List list = sorter.getSortKeys();
+      if (list.size() &gt; 0) {
         RowSorter.SortKey key0 = (RowSorter.SortKey)list.get(0);
-        if(column==convertColumnIndexToView(key0.getColumn())) {
+        if (column == convertColumnIndexToView(key0.getColumn())) {
           return true;
         }
       }

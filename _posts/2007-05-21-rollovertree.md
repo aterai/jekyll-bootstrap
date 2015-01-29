@@ -29,11 +29,11 @@ comments: true
           boolean expanded, boolean leaf, int row, boolean hasFocus) {
     JComponent c = (JComponent)renderer.getTreeCellRendererComponent(
         tree, value, isSelected, expanded, leaf, row, hasFocus);
-    if(row==rollOverRowIndex) {
+    if (row == rollOverRowIndex) {
       c.setOpaque(true);
       c.setBackground(rollOverRowColor);
-      if(isSelected) c.setForeground(getTextNonSelectionColor());
-    }else{
+      if (isSelected) c.setForeground(getTextNonSelectionColor());
+    } else {
       c.setOpaque(false);
     }
     return c;
@@ -41,7 +41,7 @@ comments: true
   private int rollOverRowIndex = -1;
   @Override public void mouseMoved(MouseEvent e) {
     int row = tree.getRowForLocation(e.getX(), e.getY());
-    if(row!=rollOverRowIndex) {
+    if (row != rollOverRowIndex) {
       //System.out.println(row);
       rollOverRowIndex = row;
       tree.repaint();

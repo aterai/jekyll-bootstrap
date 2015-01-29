@@ -35,7 +35,7 @@ comments: true
     editor = new EditorFromList(list);
     editor.addKeyListener(new KeyAdapter() {
       @Override public void keyPressed(KeyEvent e) {
-        if(e.getKeyCode()==KeyEvent.VK_ESCAPE) {
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
           cancelEditing();
         }
       }
@@ -55,7 +55,7 @@ comments: true
     tableHeader.setResizingAllowed(false);
     tableHeader.setReorderingAllowed(false);
     TableColumnModel m = getColumnModel();
-    for(int i=0;i&lt;m.getColumnCount();i++) {
+    for (int i = 0; i &lt; m.getColumnCount(); i++) {
       TableColumn col = m.getColumn(i);
       col.setMinWidth(size);
       col.setMaxWidth(size);
@@ -65,10 +65,10 @@ comments: true
   private void initEditor() {
     Dimension dim = editor.getPreferredSize();
     rect = getCellRect(getSelectedRow(), getSelectedColumn(), true);
-    int iv = (dim.width-rect.width)/2;
+    int iv = (dim.width - rect.width) / 2;
     Point p = SwingUtilities.convertPoint(this,
                 rect.getLocation(), panel);
-    rect.setRect(p.x-iv, p.y-iv, dim.width, dim.height);
+    rect.setRect(p.x - iv, p.y - iv, dim.width, dim.height);
     editor.setBounds(rect);
     Object o = getValueAt(getSelectedRow(), getSelectedColumn());
     editor.setSelectedValue(o, true);
@@ -84,7 +84,7 @@ comments: true
   private void changeValue(Point p) {
     int index = editor.locationToIndex(p);
     Object o = editor.getModel().getElementAt(index);
-    if(o != null) {
+    if (o != null) {
       setValueAt(o, getSelectedRow(), getSelectedColumn());
     }
     panel.setVisible(false);

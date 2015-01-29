@@ -15,7 +15,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/-ndnU9h6kzPw/T-gQmrTVqdI/AAAAAAAABOQ/KwNEpVGLDa0/s800/VerticalTitledBorder.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class VerticalTitledBorder extends TitledBorder{
+<pre class="prettyprint"><code>class VerticalTitledBorder extends TitledBorder {
   private final JLabel label;
   public VerticalTitledBorder(String title) {
     super(title);
@@ -27,7 +27,7 @@ comments: true
       Component c, Graphics g, int x, int y, int width, int height) {
     Border border = getBorder();
     String title = getTitle();
-    if((title != null) &amp;&amp; !title.isEmpty() &amp;&amp; border != null) {
+    if ((title != null) &amp;&amp; !title.isEmpty() &amp;&amp; border != null) {
       int edge = (border instanceof TitledBorder) ? 0 : EDGE_SPACING;
       JLabel label = getLabel(c);
       Dimension size = label.getPreferredSize();
@@ -40,25 +40,25 @@ comments: true
 
       int labelH = size.height;
       int labelW = height - insets.top - insets.bottom; //TEST: - (edge * 8);
-      if(labelW &gt; size.width) {
+      if (labelW &gt; size.width) {
         labelW = size.width;
       }
 
-      int ileft = edge + insets.left/2 - labelH/2;
-      if(ileft &lt; edge) {
+      int ileft = edge + insets.left / 2 - labelH / 2;
+      if (ileft &lt; edge) {
         borderX -= ileft;
         borderW += ileft;
       }
       border.paintBorder(c, g, borderX, borderY, borderW, borderH);
 
       Graphics2D g2 = (Graphics2D) g.create();
-      g2.translate(0, (height+labelW)/2);
+      g2.translate(0, (height + labelW) / 2);
       g2.rotate(Math.toRadians(-90));
       //or: g2.transform(AffineTransform.getQuadrantRotateInstance(-1));
       label.setSize(labelW, labelH);
       label.paint(g2);
       g2.dispose();
-    }else{
+    } else {
       super.paintBorder(c, g, x, y, width, height);
     }
   }
@@ -66,11 +66,11 @@ comments: true
     Border border = getBorder();
     insets = getBorderInsets(border, c, insets);
     String title = getTitle();
-    if((title != null) &amp;&amp; !title.isEmpty()) {
+    if ((title != null) &amp;&amp; !title.isEmpty()) {
       int edge = (border instanceof TitledBorder) ? 0 : EDGE_SPACING;
       JLabel label = getLabel(c);
       Dimension size = label.getPreferredSize();
-      if(insets.left &lt; size.height) {
+      if (insets.left &lt; size.height) {
         insets.left = size.height - edge;
       }
       insets.top += edge + TEXT_SPACING;
@@ -84,11 +84,11 @@ comments: true
   //Copied from TitledBorder
   private Color getColor(Component c) {
     Color color = getTitleColor();
-    if(color != null) {
+    if (color != null) {
       return color;
     }
     color = UIManager.getColor("TitledBorder.titleColor");
-    if(color != null) {
+    if (color != null) {
       return color;
     }
     return (c != null) ? c.getForeground() : null;
@@ -104,12 +104,12 @@ comments: true
   }
   private static Insets getBorderInsets(
       Border border, Component c, Insets insets) {
-    if(border == null) {
+    if (border == null) {
       insets.set(0, 0, 0, 0);
-    }else if(border instanceof AbstractBorder) {
+    } else if (border instanceof AbstractBorder) {
       AbstractBorder ab = (AbstractBorder) border;
       insets = ab.getBorderInsets(c, insets);
-    }else{
+    } else {
       Insets i = border.getBorderInsets(c);
       insets.set(i.top, i.left, i.bottom, i.right);
     }

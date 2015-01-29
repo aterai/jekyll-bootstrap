@@ -20,12 +20,12 @@ comments: true
 <pre class="prettyprint"><code>table = new JTable(model) {
   @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
     Component c = super.prepareRenderer(tcr, row, column);
-    if(isRowSelected(row)) {
+    if (isRowSelected(row)) {
       c.setForeground(getSelectionForeground());
       c.setBackground(getSelectionBackground());
-    }else{
+    } else {
       c.setForeground(getForeground());
-      c.setBackground((row%2==0)?evenColor:getBackground());
+      c.setBackground((row % 2 == 0) ? evenColor : getBackground());
     }
     return c;
   }

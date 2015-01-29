@@ -31,13 +31,13 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
     int lengthOfTask = 12; //filelist.size();
     publish(new Progress(Component.LOG, "Length Of Task: " + lengthOfTask));
     publish(new Progress(Component.LOG, "\n------------------------------\n"));
-    while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
-      if(!bar1.isDisplayable()) {
+    while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
+      if (!bar1.isDisplayable()) {
         return "Disposed";
       }
-      try{
+      try {
         convertFileToSomething();
-      }catch(InterruptedException ie) {
+      } catch (InterruptedException ie) {
         return "Interrupted";
       }
       publish(new Progress(Component.LOG, "*"));
@@ -51,23 +51,23 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
   private void convertFileToSomething() throws InterruptedException{
     int current = 0;
     int lengthOfTask = 10+r.nextInt(50); //long lengthOfTask = file.length();
-    while(current&lt;=lengthOfTask &amp;&amp; !isCancelled()) {
+    while (current &lt;= lengthOfTask &amp;&amp; !isCancelled()) {
       int iv = 100 * current / lengthOfTask;
       Thread.sleep(20); // dummy
-      publish(new Progress(Component.FILE, iv+1));
+      publish(new Progress(Component.FILE, iv + 1));
       current++;
     }
   }
-  @Override protected void process(java.util.List&lt;Progress&gt; chunks) {
-    for(Progress s: chunks) {
-      switch(s.component) {
-        case TOTAL: bar1.setValue((Integer)s.value); break;
-        case FILE:  bar2.setValue((Integer)s.value); break;
-        case LOG:  area.append((String)s.value); break;
+  @Override protected void process(List&lt;Progress&gt; chunks) {
+    for (Progress s: chunks) {
+      switch (s.component) {
+        case TOTAL: bar1.setValue((Integer) s.value); break;
+        case FILE:  bar2.setValue((Integer) s.value); break;
+        case LOG:   area.append((String) s.value); break;
       }
     }
   }
-//......
+//...
 </code></pre>
 
 ## 解説
@@ -92,8 +92,8 @@ class SubProgressListener implements PropertyChangeListener {
   }
   @Override public void propertyChange(PropertyChangeEvent e) {
     String strPropertyName = e.getPropertyName();
-    if("file-progress".equals(strPropertyName)) {
-      int progress = (Integer)e.getNewValue();
+    if ("file-progress".equals(strPropertyName)) {
+      int progress = (Integer) e.getNewValue();
       progressBar.setValue(progress);
     }
   }

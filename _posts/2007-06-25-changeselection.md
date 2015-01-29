@@ -18,10 +18,10 @@ comments: true
 <pre class="prettyprint"><code>box.add(new JButton(new AbstractAction("changeSelection") {
   @Override public void actionPerformed(ActionEvent e) {
     int row = -1, col = -1;
-    try{
+    try {
       row = Integer.parseInt(rowField.getText().trim());
       col = Integer.parseInt(colField.getText().trim());
-    }catch(Exception ex) {
+    } catch (Exception ex) {
       ex.printStackTrace();
     }
     table.changeSelection(row, col, toggle.isSelected(), extend.isSelected());
@@ -34,7 +34,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`JTable#changeSelection`は、`toggle`と`extend`の`2`つのフラグで、セルの選択状態を以下のようにいろいろ変更することができます([JTable#changeSelection(int, int, boolean, boolean)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTable.html#changeSelection%28int,%20int,%20boolean,%20boolean%29) より引用)。
+`JTable#changeSelection`は、`toggle`と`extend`の`2`つのフラグで、セルの選択状態を以下のようにいろいろ変更することができます([JTable#changeSelection(int, int, boolean, boolean)](http://docs.oracle.com/javase/jp/8/api/javax/swing/JTable.html#changeSelection-int-int-boolean-boolean-) より引用)。
 
 - `toggle`:`false`、`extend`:`false`
     - 既存の選択をクリアし、新しいセルが確実に選択されるようにする。

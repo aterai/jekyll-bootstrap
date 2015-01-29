@@ -18,10 +18,10 @@ comments: true
 <pre class="prettyprint"><code>add(new JCheckBox(new AbstractAction("setShowVerticalLines") {
   @Override public void actionPerformed(ActionEvent e) {
     Dimension d = table.getIntercellSpacing();
-    if(((JCheckBox)e.getSource()).isSelected()) {
+    if (((JCheckBox) e.getSource()).isSelected()) {
       table.setShowVerticalLines(true);
       table.setIntercellSpacing(new Dimension(1, d.height));
-    }else{
+    } else {
       table.setShowVerticalLines(false);
       table.setIntercellSpacing(new Dimension(0, d.height));
     }
@@ -30,10 +30,10 @@ comments: true
 add(new JCheckBox(new AbstractAction("setShowHorizontalLines") {
   @Override public void actionPerformed(ActionEvent e) {
     Dimension d = table.getIntercellSpacing();
-    if(((JCheckBox)e.getSource()).isSelected()) {
+    if (((JCheckBox) e.getSource()).isSelected()) {
       table.setShowHorizontalLines(true);
       table.setIntercellSpacing(new Dimension(d.width, 1));
-    }else{
+    } else {
       table.setShowHorizontalLines(false);
       table.setIntercellSpacing(new Dimension(d.width, 0));
     }

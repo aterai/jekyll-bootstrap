@@ -19,9 +19,9 @@ comments: true
   private final JPanel p = new JPanel(new BorderLayout());
   private final JLabel icon = new JLabel();
   private final JLabel text = new JLabel();
-  private final Border innerBorder = BorderFactory.createEmptyBorder(1,2,1,2);
+  private final Border innerBorder = BorderFactory.createEmptyBorder(1, 2, 1, 2);
   private final Border emptyBorder = BorderFactory.createCompoundBorder(
-                     BorderFactory.createEmptyBorder(1,1,1,1), innerBorder);
+      BorderFactory.createEmptyBorder(1, 1, 1, 1), innerBorder);
   private final Border hasFocusBorder;
 
   public CompoundTreeCellRenderer() {
@@ -31,7 +31,7 @@ comments: true
     hasFocusBorder = BorderFactory.createCompoundBorder(
         new DotBorder(focusBGColor, bsColor), innerBorder);
 
-    icon.setBorder(BorderFactory.createEmptyBorder(0,0,0,2));
+    icon.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 2));
     text.setBorder(emptyBorder);
     text.setOpaque(true);
     p.setOpaque(false);
@@ -48,18 +48,18 @@ comments: true
     JLabel l = (JLabel)super.getTreeCellRendererComponent(
         tree, value, selected, expanded, leaf, row, hasFocus);
     Color bColor, fColor;
-    if(selected) {
+    if (selected) {
       bColor = getBackgroundSelectionColor();
       fColor = getTextSelectionColor();
-    }else{
+    } else {
       bColor = getBackgroundNonSelectionColor();
       fColor = getTextNonSelectionColor();
-      if(bColor == null) bColor = getBackground();
-      if(fColor == null) fColor = getForeground();
+      if (bColor == null) bColor = getBackground();
+      if (fColor == null) fColor = getForeground();
     }
     text.setForeground(fColor);
     text.setBackground(bColor);
-    text.setBorder(hasFocus?hasFocusBorder:emptyBorder);
+    text.setBorder(hasFocus ? hasFocusBorder : emptyBorder);
     text.setText(l.getText());
     icon.setIcon(l.getIcon());
 

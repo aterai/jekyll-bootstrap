@@ -19,17 +19,19 @@ comments: true
 combobox.setRenderer(new ListCellRenderer() {
   @Override public Component getListCellRendererComponent(JList list, Object value,
                     int index, boolean isSelected, boolean cellHasFocus) {
-    if(value instanceof JSeparator) {
-      return (JSeparator)value;
-    }else{
-      return (JLabel)lcr.getListCellRendererComponent(
-                  list,value,index,isSelected,cellHasFocus);
+    if (value instanceof JSeparator) {
+      return (JSeparator) value;
+    } else {
+      return (JLabel) lcr.getListCellRendererComponent(
+                  list, value, index, isSelected, cellHasFocus);
     }
  }
 });
 DefaultComboBoxModel model = new DefaultComboBoxModel() {
   @Override public void setSelectedItem(Object o) {
-    if(o instanceof JSeparator) return;
+    if (o instanceof JSeparator) {
+      return;
+    }
     super.setSelectedItem(o);
   }
 };
@@ -55,12 +57,14 @@ combobox.setModel(model);
 <pre class="prettyprint"><code>combobox.addItemListener(new ItemListener() {
   private Object prev;
   @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()==ItemEvent.SELECTED) {
+    if (e.getStateChange() == ItemEvent.SELECTED) {
       Object obj = e.getItem();
-      if(obj instanceof JSeparator) {
-        if(prev==null) prev = combobox.getItemAt(0);
+      if (obj instanceof JSeparator) {
+        if (prev == null) {
+          prev = combobox.getItemAt(0);
+        }
         combobox.setSelectedItem(prev);
-      }else{
+      } else {
         prev = obj;
       }
     }
@@ -73,24 +77,28 @@ combobox.setModel(model);
 <pre class="prettyprint"><code>Action up = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     int index = combobox.getSelectedIndex();
-    if(index==0) return;
-    Object o = combobox.getItemAt(index-1);
-    if(o instanceof JSeparator) {
-      combobox.setSelectedIndex(index-2);
-    }else{
-      combobox.setSelectedIndex(index-1);
+    if (index == 0) {
+      return;
+    }
+    Object o = combobox.getItemAt(index - 1);
+    if (o instanceof JSeparator) {
+      combobox.setSelectedIndex(index - 2);
+    } else {
+      combobox.setSelectedIndex(index - 1);
     }
   }
 };
 Action down = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     int index = combobox.getSelectedIndex();
-    if(index==combobox.getItemCount()-1) return;
-    Object o = combobox.getItemAt(index+1);
-    if(o instanceof JSeparator) {
-      combobox.setSelectedIndex(index+2);
-    }else{
-      combobox.setSelectedIndex(index+1);
+    if (index == combobox.getItemCount() - 1) {
+      return;
+    }
+    Object o = combobox.getItemAt(index + 1);
+    if (o instanceof JSeparator) {
+      combobox.setSelectedIndex(index + 2);
+    } else {
+      combobox.setSelectedIndex(index + 1);
     }
   }
 };

@@ -19,13 +19,17 @@ comments: true
 table.getTableHeader().addMouseListener(new MouseAdapter() {
   @Override public void mouseClicked(MouseEvent e) {
     final RowSorter&lt;? extends TableModel&gt; sorter = table.getRowSorter();
-    if(sorter==null || sorter.getSortKeys().size()==0) return;
-    JTableHeader h = (JTableHeader)e.getComponent();
+    if (sorter == null || sorter.getSortKeys().size() == 0) {
+      return;
+    }
+    JTableHeader h = (JTableHeader) e.getComponent();
     TableColumnModel columnModel = h.getColumnModel();
     int viewColumn = columnModel.getColumnIndexAtX(e.getX());
-    if(viewColumn&lt;0) return;
+    if (viewColumn &lt; 0) {
+      return;
+    }
     int column = columnModel.getColumn(viewColumn).getModelIndex();
-    if(column != -1 &amp;&amp; e.isShiftDown()) {
+    if (column != -1 &amp;&amp; e.isShiftDown()) {
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           sorter.setSortKeys(null);

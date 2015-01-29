@@ -23,7 +23,7 @@ comments: true
   p.setBorder(BorderFactory.createEmptyBorder(4, overlap + 4, 4, 4));
   p.setOpaque(false);
   ButtonGroup bg = new ButtonGroup();
-  for(String title: list) {
+  for (String title: list) {
     AbstractButton b = makeButton(title, Color.PINK);
     p.add(b);
     bg.add(b);

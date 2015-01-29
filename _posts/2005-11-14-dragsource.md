@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>class MyDragGestureListener implements DragGestureListener {
   @Override public void dragGestureRecognized(DragGestureEvent dge) {
     final File tmpfile = getFile();
-    if(tmpfile==null) {
+    if (tmpfile == null) {
       return;
     }
     Transferable tran = new Transferable() {
@@ -36,7 +36,7 @@ comments: true
     };
     DragSourceAdapter dsa = new DragSourceAdapter() {
       @Override public void dragDropEnd(DragSourceDropEvent dsde) {
-        if(dsde.getDropSuccess()) {
+        if (dsde.getDropSuccess()) {
           clearFile();
         }
       }
@@ -65,9 +65,9 @@ dragSource.createDefaultDragGestureRecognizer(label,
   }
   @Override protected Transferable createTransferable(JComponent c) {
     File tmpfile = getFile();
-    if(tmpfile==null) {
+    if (tmpfile == null) {
       return null;
-    }else{
+    } else {
       return new TempFileTransferable(tmpfile);
     }
   }
@@ -75,7 +75,7 @@ dragSource.createDefaultDragGestureRecognizer(label,
     cleanup(c, a == MOVE);
   }
   private void cleanup(JComponent c, boolean removeFile) {
-    if(removeFile) {
+    if (removeFile) {
       clearFile();
       c.repaint();
     }
@@ -84,7 +84,7 @@ dragSource.createDefaultDragGestureRecognizer(label,
 label.addMouseListener(new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
     System.out.println(e);
-    JComponent c = (JComponent)e.getSource();
+    JComponent c = (JComponent) e.getSource();
     c.getTransferHandler().exportAsDrag(c, e, TransferHandler.COPY);
   }
 });

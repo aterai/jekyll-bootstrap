@@ -18,12 +18,12 @@ comments: true
 <pre class="prettyprint"><code>spinner.setModel(new SpinnerNumberModel(20, 0, 59, 1) {
   @Override public Object getNextValue() {
     Object n = super.getNextValue();
-    if(n==null) n = getMinimum();
+    if (n == null) n = getMinimum();
     return n;
   }
   @Override public Object getPreviousValue() {
     Object n = super.getPreviousValue();
-    if(n==null) n = getMaximum();
+    if (n == null) n = getMaximum();
     return n;
   }
 });

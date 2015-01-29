@@ -32,7 +32,7 @@ combo.setUI(new BasicComboBoxUI() {
 
 //DropDownList
 Object o = combo.getAccessibleContext().getAccessibleChild(0);
-((JComponent)o).setBorder(BorderFactory.createMatteBorder(0,1,1,1,Color.WHITE));
+((JComponent) o).setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.WHITE));
 </code></pre>
 
 ## 解説
@@ -55,8 +55,8 @@ Object o = combo.getAccessibleContext().getAccessibleChild(0);
 
 <pre class="prettyprint"><code>combo.addMouseListener(new MouseAdapter() {
   private ButtonModel getButtonModel(MouseEvent e) {
-    JComboBox cb = (JComboBox)e.getSource();
-    JButton b = (JButton)cb.getComponent(0);
+    JComboBox cb = (JComboBox) e.getSource();
+    JButton b = (JButton) cb.getComponent(0);
     return b.getModel();
   }
   @Override public void mouseEntered(MouseEvent e) {
@@ -78,7 +78,7 @@ Object o = combo.getAccessibleContext().getAccessibleChild(0);
 [java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](http://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox) を参考にして、`JComboBox`から以下のように、`BasicComboPopup`を取得し、`MatteBorder`を設定
 
 <pre class="prettyprint"><code>Object o = combo.getAccessibleContext().getAccessibleChild(0);
-((JComponent)o).setBorder(BorderFactory.createMatteBorder(0,1,1,1,Color.WHITE));
+((JComponent) o).setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.WHITE));
 </code></pre>
 
 - - - -
@@ -109,9 +109,9 @@ public class ComboBoxUIDemo {
     Box box = Box.createVerticalBox();
 
     UIManager.put("ComboBox.border", BorderFactory.createEmptyBorder());
-    for(int i=0; i&lt;2; i++) { // Defalut
+    for (int i = 0; i &lt; 2; i++) { // Defalut
       JComboBox&lt;String&gt; cb = new JComboBox&lt;&gt;(makeModel());
-      if(i%2==0) setEditable(cb);
+      if (i % 2 == 0) setEditable(cb);
       setPopupBorder(cb);
       box.add(cb);
       box.add(Box.createVerticalStrut(10));
@@ -122,9 +122,9 @@ public class ComboBoxUIDemo {
       JComboBox&lt;String&gt; cb = new JComboBox&lt;&gt;(makeModel());
       cb.setUI(new MetalComboBoxUI() {
         @Override public void paintCurrentValueBackground(
-        Graphics g, Rectangle bounds, boolean hasFocus) {
+          Graphics g, Rectangle bounds, boolean hasFocus) {
           //if (MetalLookAndFeel.usingOcean()) {
-          if(MetalLookAndFeel.getCurrentTheme() instanceof OceanTheme) {
+          if (MetalLookAndFeel.getCurrentTheme() instanceof OceanTheme) {
             g.setColor(MetalLookAndFeel.getControlDarkShadow());
             g.drawRect(bounds.x, bounds.y, bounds.width, bounds.height - 1);
             //COMMENTOUT&gt;&gt;&gt;
@@ -158,9 +158,9 @@ public class ComboBoxUIDemo {
     }
 
     UIManager.put("ComboBox.border", BorderFactory.createLineBorder(BORDER));
-    for(int i=0; i&lt;2; i++) { // BasicComboBoxUI
+    for (int i = 0; i &lt; 2; i++) { // BasicComboBoxUI
       JComboBox&lt;String&gt; cb = new JComboBox&lt;&gt;(makeModel());
-      if(i%2==0) setEditable(cb);
+      if (i % 2 == 0) setEditable(cb);
       cb.setUI(new BasicComboBoxUI());
       setPopupBorder(cb);
       box.add(cb);
@@ -168,7 +168,7 @@ public class ComboBoxUIDemo {
     }
 
     JPanel p = new JPanel(new BorderLayout());
-    p.setBorder(BorderFactory.createEmptyBorder(10,20,10,20));
+    p.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
     p.add(box, BorderLayout.NORTH);
     return p;
   }
@@ -176,15 +176,15 @@ public class ComboBoxUIDemo {
     cb.setEditable(true);
     ComboBoxEditor editor = cb.getEditor();
     Component c = editor.getEditorComponent();
-    if(c instanceof JTextField) {
+    if (c instanceof JTextField) {
       JTextField tf = (JTextField)c;
-      tf.setBorder(BorderFactory.createMatteBorder(1,1,1,0,BORDER));
+      tf.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 0, BORDER));
     }
   }
   private static void setPopupBorder(JComboBox cb) {
     Object o = cb.getAccessibleContext().getAccessibleChild(0);
     JComponent c = (JComponent)o;
-    c.setBorder(BorderFactory.createMatteBorder(0,1,1,1,BORDER));
+    c.setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, BORDER));
   }
   private static DefaultComboBoxModel&lt;String&gt; makeModel() {
     DefaultComboBoxModel&lt;String&gt; m = new DefaultComboBoxModel&lt;&gt;();

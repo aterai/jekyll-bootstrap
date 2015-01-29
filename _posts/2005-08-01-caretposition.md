@@ -16,10 +16,10 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>Document doc = jtp.getDocument();
-try{
-  doc.insertString(doc.getLength(), str+"\n", null);
+try {
+  doc.insertString(doc.getLength(), str + "\n", null);
   jtp.setCaretPosition(doc.getLength());
-}catch(BadLocationException e) {}
+} catch (BadLocationException e) {}
 </code></pre>
 
 ## 解説

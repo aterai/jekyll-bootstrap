@@ -47,42 +47,44 @@ comments: true
     int index = dl.getIndex();
     //boolean insert = dl.isInsert();
     int max = listModel.getSize();
-    if(index&lt;0 || index&gt;max) {
+    if (index &lt; 0 || index &gt; max) {
       index = max;
     }
     addIndex = index;
 
     try {
-      Object[] values = (Object[])info.getTransferable().getTransferData(localObjectFlavor);
+      Object[] values =
+        (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
       addCount = values.length;
-      for(int i=0;i&lt;values.length;i++) {
+      for (int i = 0; i &lt; values.length; i++) {
         int idx = index++;
         listModel.add(idx, values[i]);
         target.addSelectionInterval(idx, idx);
       }
       return true;
-    }catch(UnsupportedFlavorException ufe) {
+    } catch (UnsupportedFlavorException ufe) {
       ufe.printStackTrace();
-    }catch(java.io.IOException ioe) {
+    } catch (java.io.IOException ioe) {
       ioe.printStackTrace();
     }
     return false;
   }
-  @Override protected void exportDone(JComponent c, Transferable data, int action) {
+  @Override protected void exportDone(
+      JComponent c, Transferable data, int action) {
     cleanup(c, action == TransferHandler.MOVE);
   }
   private void cleanup(JComponent c, boolean remove) {
-    if(remove &amp;&amp; indices != null) {
+    if (remove &amp;&amp; indices != null) {
       JList source = (JList)c;
       DefaultListModel model  = (DefaultListModel)source.getModel();
-      if(addCount &gt; 0) {
-        for(int i=0;i&lt;indices.length;i++) {
-          if(indices[i]&gt;=addIndex) {
+      if (addCount &gt; 0) {
+        for (int i = 0; i &lt; indices.length; i++) {
+          if (indices[i] &gt;= addIndex) {
             indices[i] += addCount;
           }
         }
       }
-      for(int i=indices.length-1;i&gt;=0;i--) {
+      for (int i = indices.length - 1; i &gt;= 0; i--) {
         model.remove(indices[i]);
       }
     }
@@ -111,9 +113,9 @@ list.setDragEnabled(true);
 - `cleanup`
     - 例えば、項目`0`,`1`,`2`を複数選択して、`1`と`2`の間にドロップすると、`1`,`2`,`2`になるので、以下のように変更
         
-        <pre class="prettyprint"><code>for(int i = 0; i &lt; indices.length; i++) {
-          //if(indices[i] &gt; addIndex) {
-          if(indices[i] &gt;= addIndex) {
+        <pre class="prettyprint"><code>for (int i = 0; i &lt; indices.length; i++) {
+          //if (indices[i] &gt; addIndex) {
+          if (indices[i] &gt;= addIndex) {
         //...
 </code></pre>
 

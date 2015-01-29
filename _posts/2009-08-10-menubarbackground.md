@@ -23,16 +23,19 @@ comments: true
   JMenuBar mb = new JMenuBar() {
     @Override protected void paintComponent(Graphics g) {
       super.paintComponent(g);
-      Graphics2D g2 = (Graphics2D) g;
+      Graphics2D g2 = (Graphics2D) g.create();
       g2.setPaint(texture);
       g2.fillRect(0, 0, getWidth(), getHeight());
+      g2.dispose();
     }
   };
   mb.setOpaque(false);
   String[] menuKeys = {"File", "Edit", "Help"};
   for (String key: menuKeys) {
     JMenu m = createMenu(key);
-    if (m != null) mb.add(m);
+    if (m != null) {
+      mb.add(m);
+    }
   }
   return mb;
 }
@@ -42,18 +45,18 @@ private JMenu createMenu(String key) {
       ButtonModel m = getModel();
       if (m.isPressed() &amp;&amp; m.isArmed()) {
         setOpaque(true);
-      }else if (m.isSelected()) {
+      } else if (m.isSelected()) {
         setOpaque(true);
-      }else if (isRolloverEnabled() &amp;&amp; m.isRollover()) {
+      } else if (isRolloverEnabled() &amp;&amp; m.isRollover()) {
         setOpaque(true);
-      }else{
+      } else {
         setOpaque(false);
       }
       super.fireStateChanged();
     };
   };
   if ("Windows XP".equals(System.getProperty("os.name"))) {
-    menu.setBackground(new Color(0,0,0,0)); //XXX Windows XP lnf?
+    menu.setBackground(new Color(0, 0, 0, 0)); //XXX Windows XP lnf?
   }
   menu.add("dummy1"); menu.add("dummy2"); menu.add("dummy3");
   return menu;
@@ -84,7 +87,9 @@ public class MenuBarRootPaneTest {
     String[] menuKeys = {"File", "Edit", "Help"};
     for (String key: menuKeys) {
       JMenu m = createMenu(key);
-      if (m != null) mb.add(m);
+      if (m != null) {
+        mb.add(m);
+      }
     }
     return mb;
   }
@@ -111,11 +116,13 @@ public class MenuBarRootPaneTest {
     g2.fillRect(0, 0, sz, sz);
     for (int i = 0; i * cs &lt; sz; i++) {
       for (int j = 0; j * cs &lt; sz; j++) {
-        if ((i + j) % 2 == 0) g2.fillRect(i * cs, j * cs, cs, cs);
+        if ((i + j) % 2 == 0) {
+          g2.fillRect(i * cs, j * cs, cs, cs);
+        }
       }
     }
     g2.dispose();
-    return new TexturePaint(img, new Rectangle(0,0,sz,sz));
+    return new TexturePaint(img, new Rectangle(0, 0, sz, sz));
   }
   public static void createAndShowGUI() {
     JFrame frame = new JFrame() {

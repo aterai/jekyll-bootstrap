@@ -21,12 +21,12 @@ comments: true
                            boolean isSelected, boolean hasFocus,
                            int row, int column) {
     super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-    if(isSelected) {
+    if (isSelected) {
       setForeground(table.getSelectionForeground());
       setBackground(table.getSelectionBackground());
-    }else{
+    } else {
       setForeground(table.getForeground());
-      setBackground((row%2==0)?evenColor:table.getBackground());
+      setBackground((row % 2 == 0) ? evenColor : table.getBackground());
     }
     setHorizontalAlignment((value instanceof Number)?RIGHT:LEFT);
     return this;
@@ -60,12 +60,12 @@ comments: true
   private final Color evenColor = new Color(240, 240, 255);
   @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
     Component c = super.prepareRenderer(tcr, row, column);
-    if(isRowSelected(row)) {
+    if (isRowSelected(row)) {
       c.setForeground(getSelectionForeground());
       c.setBackground(getSelectionBackground());
-    }else{
+    } else {
       c.setForeground(getForeground());
-      c.setBackground((row%2==0)?evenColor:getBackground());
+      c.setBackground((row % 2 == 0) ? evenColor : getBackground());
     }
     return c;
   }
@@ -99,7 +99,7 @@ class TableAlternateRowColorTest {
     UIManager.put("Table.alternateRowColor", Color.ORANGE);
     String[] columnNames = {"String", "Integer", "Boolean"};
     Object[][] data = {
-      {"A",1,true},{"B",2,false},{"C",0,true}
+      {"A", 1, true}, {"B", 2, false}, {"C", 0, true}
     };
     TableModel model = new DefaultTableModel(data, columnNames) {
       @Override public Class&lt;?&gt; getColumnClass(int column) {

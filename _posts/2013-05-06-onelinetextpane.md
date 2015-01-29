@@ -72,7 +72,7 @@ JScrollPane scrollPane = new JScrollPane(
     - `JTextPane`から`InputMap`を取得して、`KeyEvent.VK_TAB`をなにもしない`Action`で置き換え、`JTextPane#setFocusTraversalKeys(...)`で、<kbd>Tab</kbd>キーでフォーカス移動するように設定
 - 文字スタイルの変更
     - [JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html)
-    - [SyntaxDocument.java](http://www.discoverteenergy.com/files/SyntaxDocument.java)を使って、入力された`red`, `green`, `blue`の文字色を変更
+    - `SyntaxDocument.java`を使って、入力された`red`, `green`, `blue`の文字色を変更
 
 <!-- dummy comment line for breaking list -->
 

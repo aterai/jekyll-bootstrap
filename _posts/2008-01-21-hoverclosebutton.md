@@ -15,22 +15,40 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN-acwv2I/AAAAAAAAAbo/gFaIpQr1XGc/s800/HoverCloseButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>public MyJTabbedPane() {
-  super();
-  setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
-  addMouseMotionListener(new MouseMotionAdapter() {
-    private int prev = -1;
-    @Override public void mouseMoved(MouseEvent e) {
-      JTabbedPane source = (JTabbedPane) e.getSource();
-      int focussed = source.indexAtLocation(e.getX(), e.getY());
-      if(focussed == prev) return;
-      for(int i = 0; i &lt; source.getTabCount(); i++) {
-        TabPanel tab = (TabPanel) source.getTabComponentAt(i);
-        tab.setButtonVisible(i == focussed);
-      }
-      prev = focussed;
+<pre class="prettyprint"><code>class HoverCloseButtonTabbedPane extends JTabbedPane {
+  private transient MouseMotionListener hoverHandler;
+  public HoverCloseButtonTabbedPane() {
+    super(TOP, SCROLL_TAB_LAYOUT);
+  }
+  public HoverCloseButtonTabbedPane(int tabPlacement) {
+    super(tabPlacement, SCROLL_TAB_LAYOUT);
+  }
+  @Override public void updateUI() {
+    removeMouseMotionListener(hoverHandler);
+    super.updateUI();
+    if (hoverHandler == null) {
+      hoverHandler = new MouseMotionAdapter() {
+        private int prev = -1;
+        @Override public void mouseMoved(MouseEvent e) {
+          JTabbedPane source = (JTabbedPane) e.getComponent();
+          int focussed = source.indexAtLocation(e.getX(), e.getY());
+          if (focussed == prev) {
+            return;
+          }
+          for (int i = 0; i &lt; source.getTabCount(); i++) {
+            TabPanel tab = (TabPanel) source.getTabComponentAt(i);
+            tab.setButtonVisible(i == focussed);
+          }
+          prev = focussed;
+        }
+      };
     }
-  });
+    addMouseMotionListener(hoverHandler);
+  }
+  @Override public void addTab(String title, final Component content) {
+    super.addTab(title, content);
+    setTabComponentAt(getTabCount() - 1, new TabPanel(this, title, content));
+  }
 }
 </code></pre>
 

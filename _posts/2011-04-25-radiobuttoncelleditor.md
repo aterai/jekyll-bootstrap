@@ -20,11 +20,11 @@ comments: true
     return getValueAt(0, column).getClass();
   }
   @Override public void setValueAt(Object v, int row, int column) {
-    if(v instanceof Boolean) {
-      for(int i=0; i&lt;getRowCount(); i++) {
-        super.setValueAt(i==row, i, column);
+    if (v instanceof Boolean) {
+      for (int i = 0; i &lt; getRowCount(); i++) {
+        super.setValueAt(i == row, i, column);
       }
-    }else{
+    } else {
       super.setValueAt(v, row, column);
     }
   }

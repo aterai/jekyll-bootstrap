@@ -17,25 +17,25 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>ImageReader reader = null;
 Iterator&lt;ImageReader&gt; readers = ImageIO.getImageReaders(imageStream);
-while(readers.hasNext()) {
+while (readers.hasNext()) {
   reader = readers.next();
   String metaFormat = reader.getOriginatingProvider().getNativeImageMetadataFormatName();
-  if("gif".equalsIgnoreCase(reader.getFormatName()) &amp;&amp;
-            !"javax_imageio_gif_image_1.0".equals(metaFormat)) {
+  if ("gif".equalsIgnoreCase(reader.getFormatName()) &amp;&amp;
+          !"javax_imageio_gif_image_1.0".equals(metaFormat)) {
     continue;
-  }else{
+  } else {
     break;
   }
 }
-if(reader == null) {
+if (reader == null) {
   throw new IOException("Can not read image format!");
 }
 boolean isGif = reader.getFormatName().equalsIgnoreCase("gif");
 reader.setInput(imageStream, false, !isGif);
 List&lt;BufferedImage&gt; list = new ArrayList&lt;&gt;();
-for(int i=0;i&lt;reader.getNumImages(true);i++) {
+for (int i = 0; i &lt; reader.getNumImages(true); i++) {
   IIOImage frame = reader.readAll(i, null);
-  list.add((BufferedImage)frame.getRenderedImage());
+  list.add((BufferedImage) frame.getRenderedImage());
 }
 reader.dispose();
 </code></pre>

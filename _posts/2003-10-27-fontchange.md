@@ -17,8 +17,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private void updateFont(final Font font) {
   FontUIResource fontUIResource = new FontUIResource(font);
-  for(java.util.Map.Entry&lt;?,?&gt; entry: UIManager.getDefaults().entrySet()) {
-    if(entry.getKey().toString().toLowerCase().endsWith("font")) {
+  for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet()) {
+    if (entry.getKey().toString().toLowerCase().endsWith("font")) {
       UIManager.put(entry.getKey(), fontUIResource);
     }
   }
@@ -27,13 +27,15 @@ comments: true
   frame.pack();
 }
 private void recursiveUpdateUI(JComponent p) {
-  for(Component c: p.getComponents()) {
-    if(c instanceof JToolBar) {
+  for (Component c: p.getComponents()) {
+    if (c instanceof JToolBar) {
       continue;
-    }else if(c instanceof JComponent) {
-      JComponent jc = (JComponent)c;
+    } else if (c instanceof JComponent) {
+      JComponent jc = (JComponent) c;
       jc.updateUI();
-      if(jc.getComponentCount()&gt;0) recursiveUpdateUI(jc);
+      if (jc.getComponentCount() &gt; 0) {
+        recursiveUpdateUI(jc);
+      }
     }
   }
 }
@@ -54,14 +56,13 @@ import java.util.Map;
 import javax.swing.UIManager;
 class Test {
   public static void main(String[] args) {
-    //for(Object o:UIManager.getDefaults().keySet()) //は、うまくいかない？
-    //for(Object o:UIManager.getLookAndFeelDefaults().keySet())
-    for(Map.Entry&lt;?,?&gt; entry: UIManager.getDefaults().entrySet())
+    //for (Object o:UIManager.getDefaults().keySet()) //は、うまくいかない？
+    //for (Object o:UIManager.getLookAndFeelDefaults().keySet())
+    for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet())
       System.out.println(entry.getKey());
   }
 }
 </code></pre>
-
 
 - - - -
 `Metal`で使用されているフォントが気に入らないだけなら、システム`LookAndFeel`を使用するか、`Metal`でボールドフォントを無効にするなどの方法があります。
@@ -70,9 +71,9 @@ class Test {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>try{
+<pre class="prettyprint"><code>try {
   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-}catch(Exception e) {
+} catch(Exception e) {
   e.printStackTrace();
 }
 </code></pre>

@@ -20,8 +20,8 @@ comments: true
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {
     JButton button = this;
-    if(!isEnabledAt(column)) {
-      button.setText((value ==null) ? "" : value.toString());
+    if (!isEnabledAt(column)) {
+      button.setText((value == null) ? "" : value.toString());
       button.getModel().setEnabled(false);
       return button;
     }
@@ -30,10 +30,10 @@ comments: true
 private final HashMap dmap = new HashMap();
 public boolean isEnabledAt(int col) {
   Integer oi = Integer.valueOf(col);
-  if(dmap.containsKey(oi)) {
-    Boolean b = (Boolean)dmap.get(oi);
+  if (dmap.containsKey(oi)) {
+    Boolean b = (Boolean) dmap.get(oi);
     return b.booleanValue();
-  }else{
+  } else {
     return true;
   }
 }
@@ -73,11 +73,11 @@ final TableCellRenderer headerRenderer = hd.getDefaultRenderer();
 hd.setDefaultRenderer(new TableCellRenderer() {
   @Override public Component getTableCellRendererComponent(JTable tbl, Object val,
       boolean isS, boolean hasF, int row, int col) {
-  JLabel lbl = (JLabel)headerRenderer.getTableCellRendererComponent(
-    tbl, val, isS, hasF, row, col);
-  int modelColumnIndex = tbl.convertColumnIndexToModel(col);
-  lbl.setForeground(sorter.isSortable(modelColumnIndex)?Color.BLACK:Color.GRAY);
-  return lbl;
+    JLabel lbl = (JLabel) headerRenderer.getTableCellRendererComponent(
+      tbl, val, isS, hasF, row, col);
+    int modelColumnIndex = tbl.convertColumnIndexToModel(col);
+    lbl.setForeground(sorter.isSortable(modelColumnIndex) ? Color.BLACK : Color.GRAY);
+    return lbl;
   }
 });
 </code></pre>

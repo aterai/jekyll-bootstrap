@@ -15,15 +15,15 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOy71x7HI/AAAAAAAAAc8/gLDHiIJS_Yw/s800/KeepHiddenDivider.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final Container divider = ((BasicSplitPaneUI)splitPane.getUI()).getDivider();
+<pre class="prettyprint"><code>final Container divider = ((BasicSplitPaneUI) splitPane.getUI()).getDivider();
 ButtonModel selectMinModel = null;
 ButtonModel selectMaxModel = null;
-for(Component c: divider.getComponents()) {
-  if(c instanceof JButton) {
-    ButtonModel m = ((JButton)c).getModel();
-    if(selectMinModel==null &amp;&amp; selectMaxModel==null) {
+for (Component c: divider.getComponents()) {
+  if (c instanceof JButton) {
+    ButtonModel m = ((JButton) c).getModel();
+    if (selectMinModel == null &amp;&amp; selectMaxModel == null) {
       selectMinModel = m;
-    }else if(selectMaxModel==null) {
+    } else if (selectMaxModel == null) {
       selectMaxModel = m;
     }
   }
@@ -77,7 +77,7 @@ smax.setModel(selectMaxModel);
       "setKeepHidden", new Class[] { Boolean.class });
   setKeepHidden.setAccessible(true);
   setKeepHidden.invoke(splitPane.getUI(), new Object[] { Boolean.TRUE });
-}catch(Exception e) {
+} catch (Exception e) {
   e.printStackTrace();
 }
 </code></pre>

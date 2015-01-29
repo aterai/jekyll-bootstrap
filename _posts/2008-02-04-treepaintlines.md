@@ -18,9 +18,9 @@ comments: true
 <pre class="prettyprint"><code>final JTree tree = new JTree();
 add(new JCheckBox(new AbstractAction("Tree.paintLines") {
   @Override public void actionPerformed(ActionEvent e) {
-    if(((JCheckBox)e.getSource()).isSelected()) {
+    if (((JCheckBox) e.getSource()).isSelected()) {
       UIManager.put("Tree.paintLines", Boolean.TRUE);
-    }else{
+    } else {
       UIManager.put("Tree.paintLines", Boolean.FALSE);
     }
     tree.updateUI(); // 左のJTreeだけ更新

@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Hashtable&lt;Integer, Component&gt; labelTable = new Hashtable&lt;&gt;();
 int c = 0;
-for(String s:Arrays.asList(
+for (String s: Arrays.asList(
     "wi0009-16.png", "wi0054-16.png", "wi0062-16.png",
     "wi0063-16.png", "wi0064-16.png", "wi0096-16.png",
     "wi0111-16.png", "wi0122-16.png", "wi0124-16.png",
@@ -27,7 +27,7 @@ for(String s:Arrays.asList(
                SwingConstants.RIGHT));
 }
 labelTable.put(c, new JButton("aaa"));
-JSlider slider1 = new JSlider(JSlider.VERTICAL,0,10,0);
+JSlider slider1 = new JSlider(JSlider.VERTICAL, 0, 10, 0);
 slider1.setLabelTable(labelTable);
 slider1.setSnapToTicks(true);
 slider1.setPaintTicks(true);

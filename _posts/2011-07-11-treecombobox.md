@@ -23,22 +23,22 @@ comments: true
           JList list, Object value, int index,
           boolean isSelected, boolean cellHasFocus) {
         JComponent c;
-        if(value instanceof DefaultMutableTreeNode) {
-          DefaultMutableTreeNode node = (DefaultMutableTreeNode)value;
-          int indent = 2 + (index&lt;0?0:(node.getPath().length-2)*16);
-          if(node.isLeaf()) {
-            c = (JComponent)super.getListCellRendererComponent(
+        if (value instanceof DefaultMutableTreeNode) {
+          DefaultMutableTreeNode node = (DefaultMutableTreeNode) value;
+          int indent = 2 + (index &lt; 0 ? 0 : (node.getPath().length - 2) * 16);
+          if (node.isLeaf()) {
+            c = (JComponent) super.getListCellRendererComponent(
                 list,value,index,isSelected,cellHasFocus);
-          }else{
-            c = (JComponent)super.getListCellRendererComponent(
-                list,value,index,false,false);
-            JLabel l = (JLabel)c;
+          } else {
+            c = (JComponent) super.getListCellRendererComponent(
+                list, value, index, false, false);
+            JLabel l = (JLabel) c;
             l.setForeground(Color.WHITE);
             l.setBackground(Color.GRAY.darker());
           }
-          c.setBorder(BorderFactory.createEmptyBorder(0,indent,0,0));
-        }else{
-          c = (JComponent)super.getListCellRendererComponent(
+          c.setBorder(BorderFactory.createEmptyBorder(0, indent, 0, 0));
+        } else {
+          c = (JComponent) super.getListCellRendererComponent(
               list,value,index,isSelected,cellHasFocus);
         }
         return c;
@@ -47,9 +47,9 @@ comments: true
     Action up = new AbstractAction() {
       @Override public void actionPerformed(ActionEvent e) {
         int si = getSelectedIndex();
-        for(int i = si-1;i&gt;=0;i--) {
+        for (int i = si - 1; i &gt;= 0; i--) {
           Object o = getItemAt(i);
-          if(o instanceof TreeNode &amp;&amp; ((TreeNode)o).isLeaf()) {
+          if (o instanceof TreeNode &amp;&amp; ((TreeNode) o).isLeaf()) {
             setSelectedIndex(i);
             break;
           }
@@ -59,9 +59,9 @@ comments: true
     Action down = new AbstractAction() {
       @Override public void actionPerformed(ActionEvent e) {
         int si = getSelectedIndex();
-        for(int i = si+1;i&lt;getModel().getSize();i++) {
+        for (int i = si + 1; i &lt; getModel().getSize(); i++) {
           Object o = getItemAt(i);
-          if(o instanceof TreeNode &amp;&amp; ((TreeNode)o).isLeaf()) {
+          if (o instanceof TreeNode &amp;&amp; ((TreeNode) o).isLeaf()) {
             setSelectedIndex(i);
             break;
           }
@@ -79,17 +79,17 @@ comments: true
   }
   private boolean isNotSelectableIndex = false;
   @Override public void setPopupVisible(boolean v) {
-    if(!v &amp;&amp; isNotSelectableIndex) {
+    if (!v &amp;&amp; isNotSelectableIndex) {
       isNotSelectableIndex = false;
-    }else{
+    } else {
       super.setPopupVisible(v);
     }
   }
   @Override public void setSelectedIndex(int index) {
     Object o = getItemAt(index);
-    if(o instanceof TreeNode &amp;&amp; !((TreeNode)o).isLeaf()) {
+    if (o instanceof TreeNode &amp;&amp; !((TreeNode) o).isLeaf()) {
       isNotSelectableIndex = true;
-    }else{
+    } else {
       super.setSelectedIndex(index);
     }
   }

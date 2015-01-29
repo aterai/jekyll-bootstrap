@@ -34,11 +34,13 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>DefaultCellEditor dce = (DefaultCellEditor)table.getDefaultEditor(Object.class);
+<pre class="prettyprint"><code>DefaultCellEditor dce = (DefaultCellEditor) table.getDefaultEditor(Object.class);
 dce.getComponent().addFocusListener(new FocusAdapter() {
   @Override public void focusLost(FocusEvent e) {
-    if(!focusCheck.isSelected()) return;
-    if(table.isEditing()) {
+    if (!focusCheck.isSelected()) {
+      return;
+    }
+    if (table.isEditing()) {
       table.getCellEditor().stopCellEditing();
     }
   }
@@ -54,8 +56,10 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 
 <pre class="prettyprint"><code>table.getTableHeader().addMouseListener(new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
-    if(!headerCheck.isSelected()) return;
-    if(table.isEditing()) {
+    if (!headerCheck.isSelected()) {
+      return;
+    }
+    if (table.isEditing()) {
       table.getCellEditor().stopCellEditing();
     }
   }
@@ -83,7 +87,7 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 
 <pre class="prettyprint"><code>table = new JTable(sorter) {
   @Override public void columnMarginChanged(ChangeEvent e) {
-    if(table.isEditing()) {
+    if (table.isEditing()) {
       table.getCellEditor().stopCellEditing();
     }
     super.columnMarginChanged(e);
@@ -92,7 +96,7 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 
 frame.addWindowListener(new WindowAdapter() {
   @Override public void windowClosing(WindowEvent e) {
-    if(table.isEditing()) {
+    if (table.isEditing()) {
       table.getCellEditor().stopCellEditing();
     }
   }
@@ -100,8 +104,7 @@ frame.addWindowListener(new WindowAdapter() {
 
 frame.addWindowStateListener(new WindowStateListener() {
   @Override public void windowStateChanged(WindowEvent e) {
-    if(frame.getExtendedState()==JFrame.MAXIMIZED_BOTH
-       &amp;&amp; table.isEditing()) {
+    if (frame.getExtendedState() == JFrame.MAXIMIZED_BOTH &amp;&amp; table.isEditing()) {
       table.getCellEditor().stopCellEditing();
     }
   }

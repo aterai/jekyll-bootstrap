@@ -28,7 +28,7 @@ comments: true
   protected void initButtons() {
     bg = new ButtonGroup();
     buttons = new JRadioButton[answer.length];
-    for(int i=0;i&lt;buttons.length;i++) {
+    for (int i = 0; i &lt; buttons.length; i++) {
       buttons[i] = new JRadioButton(answer[i]);
       buttons[i].setActionCommand(answer[i]);
       buttons[i].setFocusable(false);
@@ -38,15 +38,15 @@ comments: true
     }
   }
   protected void updateSelectedButton(Object v) {
-    if("Windows 7".equals(OSNAME)) { //Windows aero?
+    if ("Windows 7".equals(OSNAME)) { //Windows aero?
       removeAll();
       initButtons();
     }
-    if("A".equals(v)) {
+    if ("A".equals(v)) {
       buttons[0].setSelected(true);
-    }else if("B".equals(v)) {
+    } else if ("B".equals(v)) {
       buttons[1].setSelected(true);
-    }else{
+    } else {
       buttons[2].setSelected(true);
     }
   }
@@ -72,7 +72,9 @@ comments: true
         fireEditingStopped();
       }
     };
-    for(AbstractButton b: buttons) b.addActionListener(al);
+    for (AbstractButton b: buttons) {
+      b.addActionListener(al);
+    }
   }
   @Override public Component getTableCellEditorComponent(JTable table,
         Object value, boolean isSelected, int row, int column) {

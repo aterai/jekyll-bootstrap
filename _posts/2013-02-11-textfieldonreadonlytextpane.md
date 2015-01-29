@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>void insertQuestion(final JTextPane textPane, String str) {
   Document doc = textPane.getDocument();
-  try{
+  try {
     doc.insertString(doc.getLength(), str, null);
     final int pos = doc.getLength();
     System.out.println(pos);
@@ -26,15 +26,15 @@ comments: true
         return getPreferredSize();
       }
     };
-    field.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+    field.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
     field.addFocusListener(new FocusListener() {
       @Override public void focusGained(FocusEvent e) {
-        try{
+        try {
           Rectangle rect = textPane.modelToView(pos);
           rect.grow(0, 4);
           rect.setSize(field.getSize());
           textPane.scrollRectToVisible(rect);
-        }catch(BadLocationException ex) {
+        } catch (BadLocationException ex) {
           ex.printStackTrace();
         }
       }
@@ -42,7 +42,7 @@ comments: true
     });
     Dimension d = field.getPreferredSize();
     int baseline = field.getBaseline(d.width, d.height);
-    field.setAlignmentY(baseline/(float)d.height);
+    field.setAlignmentY(baseline / (float) d.height);
 
     SimpleAttributeSet a = new SimpleAttributeSet();
     StyleConstants.setLineSpacing(a, 1.5f);
@@ -50,7 +50,7 @@ comments: true
 
     textPane.insertComponent(field);
     doc.insertString(doc.getLength(), "\n", null);
-  }catch(BadLocationException e) {
+  } catch (BadLocationException e) {
     e.printStackTrace();
   }
 }

@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TestRenderer extends Box implements TableCellRenderer {
-  private final Border emptyBorder = BorderFactory.createEmptyBorder(1,1,1,1);
+  private final Border emptyBorder = BorderFactory.createEmptyBorder(1, 1, 1, 1);
   private final ImageIcon nicon;
   private final ImageIcon sicon;
   private final JLabel textLabel;
@@ -42,21 +42,21 @@ comments: true
       Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     textLabel.setText(Objects.toString(value, ""));
     FontMetrics fm = table.getFontMetrics(table.getFont());
-    int swidth = fm.stringWidth(textLabel.getText())+textLabel.getInsets().left
-                                +textLabel.getInsets().right;
+    int swidth = fm.stringWidth(textLabel.getText()) + textLabel.getInsets().left
+                              + textLabel.getInsets().right;
     int cwidth = table.getColumnModel().getColumn(column).getWidth()
                    -iconLabel.getPreferredSize().width;
-    textLabel.setPreferredSize(new Dimension(swidth&gt;cwidth?cwidth:swidth,0));
-    if(isSelected) {
+    textLabel.setPreferredSize(new Dimension(swidth &gt; cwidth ? cwidth : swidth, 0));
+    if (isSelected) {
       textLabel.setForeground(table.getSelectionForeground());
       textLabel.setBackground(table.getSelectionBackground());
-    }else{
+    } else {
       textLabel.setForeground(table.getForeground());
       textLabel.setBackground(table.getBackground());
     }
-    if(hasFocus) {
+    if (hasFocus) {
       textLabel.setBorder(UIManager.getBorder("Table.focusCellHighlightBorder"));
-    }else{
+    } else {
       textLabel.setBorder(emptyBorder);
     }
     textLabel.setFont(table.getFont());
@@ -71,7 +71,7 @@ comments: true
       //Color color = new Color(argb,true);
       //float[] array = new float[4];
       //color.getComponents(array);
-      //return new Color(array[0]*0.5f, array[1]*0.5f, array[2], array[3]).getRGB();
+      //return new Color(array[0] * .5f, array[1] * .5f, array[2], array[3]).getRGB();
       int r = (argb &gt;&gt; 16) &amp; 0xff;
       int g = (argb &gt;&gt;  8) &amp; 0xff;
       return (argb &amp; 0xff0000ff) | ((r &gt;&gt; 1) &lt;&lt; 16) | ((g &gt;&gt; 1) &lt;&lt; 8);

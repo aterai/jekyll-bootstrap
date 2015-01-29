@@ -17,33 +17,21 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);
 </code></pre>
-<pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor)table.getDefaultEditor(Object.class);
+<pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor) table.getDefaultEditor(Object.class);
 ce.setClickCountToStart(Integer.MAX_VALUE);
 </code></pre>
 
 ## 解説
-- `default`
-    - `0`列目だけ、編集禁止です。
-
-<!-- dummy comment line for breaking list -->
-
+- `default`(上記のサンプルでのデフォルト)
+    - `0`列目だけ`TableModel#isCellEditable`が`false`を返すように設定
 - `prevent KeyStroke autoStartsEdit`
-    - `table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`で、キー入力(<kbd>F2</kbd>は除く)によるセルの編集開始を禁止します。
-
-<!-- dummy comment line for breaking list -->
-
+    - `table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`で、キー入力(<kbd>F2</kbd>は除く)によるセルの編集開始を禁止
 - `prevent mouse from starting edit`
-    - `DefaultCellEditor#setClickCountToStart`に大きな値を設定して、事実上マウスクリックによる編集開始が不可能になっています。
-
-<!-- dummy comment line for breaking list -->
-
+    - `DefaultCellEditor#setClickCountToStart`に大きな値を設定して、事実上マウスクリックによる編集開始を禁止
 - `start cell editing only F2`
-    - 上二つを設定して、セルの編集開始は、<kbd>F2</kbd>キーのみ可能になっています。
-
-<!-- dummy comment line for breaking list -->
-
+    - 上二つを設定して、セルの編集開始は<kbd>F2</kbd>キーのみ可能に設定
 - `isCellEditable retrun false`
-    - `TableModel#isCellEditable`が常に`false`を返し、セルエディタは起動されません。
+    - `TableModel#isCellEditable`が常に`false`を返すように設定し、すべてのカラムでセルエディタの起動を禁止
 
 <!-- dummy comment line for breaking list -->
 

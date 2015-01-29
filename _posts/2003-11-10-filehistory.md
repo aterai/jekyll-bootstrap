@@ -17,38 +17,36 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private int MAXHISTORY = 3;
 private void updateHistory(String str) {
-  fileHistory.removeAll();
-  fh.removeElement(str);
-  fh.insertElementAt(str, 0);
-  if(fh.size()&gt;MAXHISTORY) fh.remove(fh.size()-1);
-  for(int i=0;i&lt;fh.size();i++) {
-    String name = (String)fh.elementAt(i);
-    String num  = Integer.toString(i+1);
-    JMenuItem mi = new JMenuItem(new HistoryAction(new File(name)));
-    mi.setText(num + ": "+ name);
-    byte[] bt = num.getBytes();
-    mi.setMnemonic((int) bt[0]);
-    fileHistory.add(mi, i);
+  fileHistoryMenu.removeAll();
+  fileHistoryCache.remove(str);
+  fileHistoryCache.add(0, str);
+  if (fileHistoryCache.size() &gt; MAX_HISTORY) {
+    fileHistoryCache.remove(fileHistoryCache.size() - 1);
+  }
+  for (int i = 0; i &lt; fileHistoryCache.size(); i++) {
+    String name = fileHistoryCache.get(i);
+    String num  = Integer.toString(i + 1);
+    JMenuItem mi = new JMenuItem(new HistoryAction(name));
+    mi.setText(num + ": " + name);
+    mi.setMnemonic((int) num.charAt(0));
+    fileHistoryMenu.add(mi, i);
   }
 }
-class HistoryAction extends AbstractAction{
-  final private File file;
-  public HistoryAction(File file) {
+class HistoryAction extends AbstractAction {
+  private final String fileName;
+  public HistoryAction(String fileName) {
     super();
-    this.file = file;
+    this.fileName = fileName;
   }
   @Override public void actionPerformed(ActionEvent e) {
-    historyActionPerformed(file);
+    Object[] obj = {"本来はファイルを開いたりする。\n",
+                    "このサンプルではなにもせずに\n",
+                    "履歴の先頭にファイルを移動する。"};
+    JComponent c = (JComponent) e.getSource();
+    JOptionPane.showMessageDialog(c.getRootPane(), obj, VersionAction.APP_NAME,
+        JOptionPane.INFORMATION_MESSAGE);
+    updateHistory(fileName);
   }
-}
-private void historyActionPerformed(File file) {
-  Object[] obj = {"本来はファイルを開いたりする。\n",
-                  "このサンプルではなにもせずに\n",
-                  "履歴の先頭にファイルを移動する。"};
-  JOptionPane.showMessageDialog(this, obj, APP_NAME,
-                  JOptionPane.INFORMATION_MESSAGE);
-  repaint();
-  updateHistory(file.getAbsolutePath());
 }
 </code></pre>
 

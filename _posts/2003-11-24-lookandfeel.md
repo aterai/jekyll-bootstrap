@@ -95,9 +95,9 @@ private void setLookAndFeel(String laf) {
 - - - -
 `SystemLookAndFeel`を使用する場合は、`UIManager.getSystemLookAndFeelClassName()`でその実装クラス名を取得して設定します。
 
-<pre class="prettyprint"><code>try{
+<pre class="prettyprint"><code>try {
   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-}catch(Exception e) {
+} catch (Exception e) {
   e.printStackTrace();
 }
 </code></pre>

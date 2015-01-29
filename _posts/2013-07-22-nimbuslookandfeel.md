@@ -15,14 +15,14 @@ comments: true
 {% download https://lh5.googleusercontent.com/-40dXjNq1HbU/UewL67WFpWI/AAAAAAAABwg/zOHVr2U7KiM/s800/NimbusLookAndFeel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>try{
-  for(UIManager.LookAndFeelInfo laf: UIManager.getInstalledLookAndFeels()) {
-    if("Nimbus".equals(laf.getName())) {
+<pre class="prettyprint"><code>try {
+  for (UIManager.LookAndFeelInfo laf: UIManager.getInstalledLookAndFeels()) {
+    if ("Nimbus".equals(laf.getName())) {
       UIManager.setLookAndFeel(laf.getClassName());
     }
   }
-}catch(Exception e) {
-  //e.printStackTrace();
+} catch (Exception e) {
+  e.printStackTrace();
 }
 </code></pre>
 

@@ -26,11 +26,11 @@ Style error = doc.addStyle("error", regular);
 StyleConstants.setForeground(error, Color.RED);
 </code></pre>
 <pre class="prettyprint"><code>private void append(String str, boolean flg) {
-  String style = flg?"regular":"error";
+  String style = flg ? "regular" : "error";
   StyledDocument doc = jtp.getStyledDocument();
-  try{
-    doc.insertString(doc.getLength(), str+"\n", doc.getStyle(style));
-  }catch(BadLocationException e) {
+  try {
+    doc.insertString(doc.getLength(), str + "\n", doc.getStyle(style));
+  } catch (BadLocationException e) {
     e.printStackTrace();
   }
 }

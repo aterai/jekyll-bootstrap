@@ -15,8 +15,10 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>Image image = new BufferedImage(16,16,BufferedImage.TYPE_INT_ARGB);
-new StarIcon().paintIcon(null, image.getGraphics(), 0, 0);
+<pre class="prettyprint"><code>Image image = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
+Graphics g = image.getGraphics();
+new StarIcon().paintIcon(null, g, 0, 0);
+g.dispose();
 final SystemTray tray = SystemTray.getSystemTray();
 PopupMenu popup       = new PopupMenu();
 MenuItem open         = new MenuItem("Option");
@@ -26,9 +28,9 @@ popup.add(open);
 popup.add(exit);
 icon.addMouseListener(new MouseAdapter() {
   @Override public void mouseClicked(MouseEvent e) {
-    if(e.getButton()==MouseEvent.BUTTON1 &amp;&amp; e.getClickCount()==2) {
+    if (e.getButton() == MouseEvent.BUTTON1 &amp;&amp; e.getClickCount() == 2) {
       frame.setVisible(true);
-    }else if(frame.isVisible()) {
+    } else if (frame.isVisible()) {
       frame.setExtendedState(JFrame.NORMAL);
       frame.toFront();
     }
@@ -48,9 +50,9 @@ exit.addActionListener(new ActionListener() {
       new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
   }
 });
-try{
+try {
   tray.add(icon);
-}catch(AWTException e) {
+} catch (AWTException e) {
   e.printStackTrace();
 }
 </code></pre>

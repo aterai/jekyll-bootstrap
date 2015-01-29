@@ -16,16 +16,18 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent me) {
-  JComponent c = (JComponent)me.getSource();
+  JComponent c = (JComponent) me.getSource();
   Point p = me.getPoint();
-  if(SwingUtilities.isLeftMouseButton(me)) {
+  if (SwingUtilities.isLeftMouseButton(me)) {
     tip.setTipText(String.format("Window(x,y)=(%4d,%4d)", p.x, p.y));
     //tip.revalidate();
     tip.repaint();
     //window.pack();
     window.setLocation(getToolTipLocation(me));
-  }else{
-    if(popup!=null) popup.hide();
+  } else {
+    if (popup != null) {
+      popup.hide();
+    }
     tip.setTipText(String.format("Popup(x,y)=(%d,%d)", p.x, p.y));
     p = getToolTipLocation(me);
     popup = factory.getPopup(c, tip, p.x, p.y);

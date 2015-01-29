@@ -15,8 +15,8 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVZeDhwBI/AAAAAAAAAnk/QmV1N3Uqp3o/s800/TitledBorder.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>VerticalOrientation vo = (VerticalOrientation)verticalOrientationChoices.getSelectedItem();
-switch(vo) {
+<pre class="prettyprint"><code>VerticalOrientation vo = (VerticalOrientation) verticalOrientationChoices.getSelectedItem();
+switch (vo) {
   case DEFAULT_POSITION: border.setTitlePosition(TitledBorder.DEFAULT_POSITION); break;
   case ABOVE_TOP:        border.setTitlePosition(TitledBorder.ABOVE_TOP);        break;
   case TOP:              border.setTitlePosition(TitledBorder.TOP);              break;
@@ -25,8 +25,8 @@ switch(vo) {
   case BOTTOM:           border.setTitlePosition(TitledBorder.BOTTOM);           break;
   case BELOW_BOTTOM:     border.setTitlePosition(TitledBorder.BELOW_BOTTOM);     break;
 }
-Justification jc = (Justification)justificationChoices.getSelectedItem();
-switch(jc) {
+Justification jc = (Justification) justificationChoices.getSelectedItem();
+switch (jc) {
   case DEFAULT_JUSTIFICATION: border.setTitleJustification(
                                               TitledBorder.DEFAULT_JUSTIFICATION); break;
   case LEFT:     border.setTitleJustification(TitledBorder.LEFT);     break;

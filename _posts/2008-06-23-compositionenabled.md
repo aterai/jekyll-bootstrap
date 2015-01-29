@@ -19,16 +19,16 @@ comments: true
   @Override protected boolean processKeyBinding(
       KeyStroke ks, KeyEvent e, int condition, boolean pressed) {
     boolean retValue = super.processKeyBinding(ks, e, condition, pressed);
-    //if(!check.isSelected()) return retValue;
-    if(KeyStroke.getKeyStroke('\t').equals(ks) || KeyStroke.getKeyStroke('\n').equals(ks)) {
+    //if (!check.isSelected()) return retValue;
+    if (KeyStroke.getKeyStroke('\t').equals(ks) || KeyStroke.getKeyStroke('\n').equals(ks)) {
       System.out.println("tab or enter typed");
       return retValue;
     }
-    if(getInputContext().isCompositionEnabled() &amp;&amp; !isEditing() &amp;&amp;
-       !pressed &amp;&amp; !ks.isOnKeyRelease()) {
+    if (getInputContext().isCompositionEnabled() &amp;&amp; !isEditing() &amp;&amp;
+        !pressed &amp;&amp; !ks.isOnKeyRelease()) {
       int selectedRow = getSelectedRow();
       int selectedColumn = getSelectedColumn();
-      if(selectedRow!=-1 &amp;&amp; selectedColumn!=-1 &amp;&amp; !editCellAt(selectedRow, selectedColumn)) {
+      if (selectedRow != -1 &amp;&amp; selectedColumn != -1 &amp;&amp; !editCellAt(selectedRow, selectedColumn)) {
         return retValue;
       }
     }

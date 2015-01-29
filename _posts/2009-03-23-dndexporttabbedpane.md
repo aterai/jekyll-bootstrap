@@ -27,8 +27,8 @@ comments: true
   }
   //private static DnDTabbedPane source;
   //private synchronized static void setComponent(JComponent comp) {
-  //  if(comp instanceof DnDTabbedPane) {
-  //    source = (DnDTabbedPane)comp;
+  //  if (comp instanceof DnDTabbedPane) {
+  //    source = (DnDTabbedPane) comp;
   //  }
   //}
   //@Override public void exportAsDrag(JComponent comp, InputEvent e, int action) {
@@ -38,7 +38,7 @@ comments: true
   private DnDTabbedPane source = null;
   @Override protected Transferable createTransferable(JComponent c) {
     System.out.println("createTransferable");
-    if (c instanceof DnDTabbedPane) source = (DnDTabbedPane)c;
+    if (c instanceof DnDTabbedPane) source = (DnDTabbedPane) c;
     return new DataHandler(c, localObjectFlavor.getMimeType());
   }
   @Override public boolean canImport(TransferSupport support) {
@@ -141,7 +141,7 @@ comments: true
   }
   @Override protected void exportDone(JComponent c, Transferable data, int action) {
     System.out.println("exportDone");
-    DnDTabbedPane src = (DnDTabbedPane)c;
+    DnDTabbedPane src = (DnDTabbedPane) c;
     c.getRootPane().getGlassPane().setVisible(false);
     src.setDropLocation(null, null, false);
   }

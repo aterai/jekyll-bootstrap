@@ -18,8 +18,8 @@ comments: true
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   @Override public Component prepareEditor(TableCellEditor editor, int row, int column) {
     Component c = super.prepareEditor(editor, row, column);
-    if(c instanceof JCheckBox) {
-      JCheckBox b = (JCheckBox)c;
+    if (c instanceof JCheckBox) {
+      JCheckBox b = (JCheckBox) c;
       b.setBackground(getSelectionBackground());
       b.setBorderPainted(true);
     }

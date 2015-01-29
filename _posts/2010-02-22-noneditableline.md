@@ -19,9 +19,9 @@ comments: true
   @Override public void insertString(
       DocumentFilter.FilterBypass fb, int offset,
       String string, AttributeSet attr) throws BadLocationException {
-    if(string == null) {
+    if (string == null) {
       return;
-    }else{
+    } else {
       replace(fb, offset, 0, string, attr);
     }
   }
@@ -34,7 +34,9 @@ comments: true
       DocumentFilter.FilterBypass fb, int offset, int length,
       String text, AttributeSet attrs) throws BadLocationException {
     Document doc = fb.getDocument();
-    if(doc.getDefaultRootElement().getElementIndex(offset)&lt;2) return;
+    if (doc.getDefaultRootElement().getElementIndex(offset) &lt; 2) {
+      return;
+    }
     fb.replace(offset, length, text, attrs);
   }
 }
@@ -43,22 +45,22 @@ comments: true
 ## 解説
 上記のサンプルでは、`DocumentFilter`を使って、`JTextArea`の一行目と二行目で追加、削除などの編集ができないように設定しています。
 
-<pre class="prettyprint"><code>((AbstractDocument)textArea.getDocument()).setDocumentFilter(new NonEditableLineDocumentFilter());
+<pre class="prettyprint"><code>((AbstractDocument) textArea.getDocument()).setDocumentFilter(new NonEditableLineDocumentFilter());
 </code></pre>
 
 - - - -
 一行目と二行目の背景色は、編集不可のための`DocumentFilter`とは関係なく、`Highlighter`を使って別途設定しています。
-<pre class="prettyprint"><code>try{
+<pre class="prettyprint"><code>try {
   Highlighter hilite = textArea.getHighlighter();
   Document doc = textArea.getDocument();
   Element root = doc.getDefaultRootElement();
-  for(int i=0;i&lt;2;i++) {
+  for (int i = 0; i &lt; 2; i++) {
     Element elem = root.getElement(i);
     hilite.addHighlight(elem.getStartOffset(),
-                        elem.getEndOffset()-1,
+                        elem.getEndOffset() - 1,
                         highlightPainter);
   }
-}catch(BadLocationException ble) {
+} catch (BadLocationException ble) {
   ble.printStackTrace();
 }
 </code></pre>

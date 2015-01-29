@@ -10,7 +10,7 @@ description: インストールされているLookAndFeelの一覧を取得し�
 comments: true
 ---
 ## 概要
-インストールされている`LookAndFeel`の一覧を取得し、これらを切り替えるためのメニューバーを作成します。[SwingSet3](https://swingset3.dev.java.net/)からの引用です。
+インストールされている`LookAndFeel`の一覧を取得し、これらを切り替えるためのメニューバーを作成します。[Swingset3 — Project Kenai](https://java.net/projects/Swingset3)からの引用です。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOmfktdJI/AAAAAAAAAco/gBdSD5Qn9-Y/s800/InstalledLookAndFeels.png %}
 
@@ -21,7 +21,7 @@ protected JMenu createLookAndFeelMenu() {
   JMenu menu = new JMenu("LookAndFeel");
   lookAndFeel = UIManager.getLookAndFeel().getClass().getName();
   lookAndFeelRadioGroup = new ButtonGroup();
-  for(UIManager.LookAndFeelInfo lafInfo: UIManager.getInstalledLookAndFeels()) {
+  for (UIManager.LookAndFeelInfo lafInfo: UIManager.getInstalledLookAndFeels()) {
     menu.add(createLookAndFeelItem(lafInfo.getName(), lafInfo.getClassName()));
   }
   return menu;
@@ -33,9 +33,9 @@ protected JRadioButtonMenuItem createLookAndFeelItem(String lafName, String lafC
   lafItem.setAction(new AbstractAction() {
     @Override public void actionPerformed(ActionEvent e) {
       ButtonModel m = lookAndFeelRadioGroup.getSelection();
-      try{
+      try {
         setLookAndFeel(m.getActionCommand());
-      }catch(Exception ex) {
+      } catch (Exception ex) {
         ex.printStackTrace();
       }
     }
@@ -48,7 +48,7 @@ protected JRadioButtonMenuItem createLookAndFeelItem(String lafName, String lafC
 public void setLookAndFeel(String lookAndFeel) throws ClassNotFoundException,
       InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
   String oldLookAndFeel = this.lookAndFeel;
-  if(!oldLookAndFeel.equals(lookAndFeel)) {
+  if (!oldLookAndFeel.equals(lookAndFeel)) {
     UIManager.setLookAndFeel(lookAndFeel);
     this.lookAndFeel = lookAndFeel;
     updateLookAndFeel();
@@ -56,7 +56,7 @@ public void setLookAndFeel(String lookAndFeel) throws ClassNotFoundException,
   }
 }
 private void updateLookAndFeel() {
-  for(Window window: Frame.getWindows()) {
+  for (Window window: Frame.getWindows()) {
     SwingUtilities.updateComponentTreeUI(window);
   }
 }
@@ -66,7 +66,7 @@ private void updateLookAndFeel() {
 上記のサンプルでは、`UIManager.getInstalledLookAndFeels()`メソッドを使用して`UIManager.LookAndFeelInfo`のリストを取得しています。
 
 ## 参考リンク
-- [SwingSet3](https://swingset3.dev.java.net/)
+- [Swingset3 — Project Kenai](https://java.net/projects/Swingset3)
 - [Look and Feelの変更](http://ateraimemo.com/Swing/LookAndFeel.html)
     - こちらは、`SwingSet2`からの引用です。
 

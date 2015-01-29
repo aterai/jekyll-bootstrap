@@ -15,9 +15,9 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>BasicInternalFrameUI ui = (BasicInternalFrameUI)immovableFrame.getUI();
+<pre class="prettyprint"><code>BasicInternalFrameUI ui = (BasicInternalFrameUI) immovableFrame.getUI();
 Component titleBar = ui.getNorthPane();
-for(MouseMotionListener l:titleBar.getListeners(MouseMotionListener.class)) {
+for (MouseMotionListener l: titleBar.getListeners(MouseMotionListener.class)) {
   titleBar.removeMouseMotionListener(l);
 }
 </code></pre>

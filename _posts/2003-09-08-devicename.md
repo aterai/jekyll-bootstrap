@@ -16,10 +16,12 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private boolean isCanonicalPath(File file) {
-  if(file==null) return false;
-  try{
-    if(file.getCanonicalPath()==null) return false;
-  }catch(IOException ioe) {
+  if (file==null) return false;
+  try {
+    if (file.getCanonicalPath() == null) {
+      return false;
+    }
+  } catch (IOException ioe) {
     return false;
   }
   return true;

@@ -26,10 +26,12 @@ comments: true
 </code></pre>
 <pre class="prettyprint"><code>private void doReIconify(JDesktopPane desktopPane) {
   DesktopManager dm = desktopPane.getDesktopManager();
-  if(dm instanceof ReIconifyDesktopManager) {
-    ReIconifyDesktopManager rdm = (ReIconifyDesktopManager)dm;
-    for(JInternalFrame f: desktopPane.getAllFrames()) {
-      if(f.isIcon()) rdm.reIconifyFrame(f);
+  if (dm instanceof ReIconifyDesktopManager) {
+    ReIconifyDesktopManager rdm = (ReIconifyDesktopManager) dm;
+    for (JInternalFrame f: desktopPane.getAllFrames()) {
+      if (f.isIcon()) {
+        rdm.reIconifyFrame(f);
+      }
     }
   }
 }

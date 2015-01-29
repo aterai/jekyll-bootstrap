@@ -17,18 +17,13 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>public MainPanel(final JFrame frame) {
   super();
-  if(!SystemTray.isSupported()) {
+  if (!SystemTray.isSupported()) {
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     return;
   }
-  frame.addWindowStateListener(new WindowAdapter() {
-    @Override public void windowIconified(WindowEvent e) {
-      frame.dispose();
-    }
-  });
   final SystemTray tray = SystemTray.getSystemTray();
   final Image image     = new ImageIcon(
-                            getClass().getResource("16x16.png")).getImage();
+    getClass().getResource("16x16.png")).getImage();
   final PopupMenu popup = new PopupMenu();
   final TrayIcon icon   = new TrayIcon(image, "TRAY", popup);
 
@@ -50,9 +45,9 @@ comments: true
   popup.add(item1);
   popup.add(item2);
 
-  try{
+  try {
     tray.add(icon);
-  }catch(AWTException e) {
+  } catch (AWTException e) {
     e.printStackTrace();
   }
 }
@@ -80,10 +75,10 @@ comments: true
 <pre class="prettyprint"><code>SystemTray tray = SystemTray.getSystemTray();
 Dimension d = tray.getTrayIconSize();
 //Image image = new ImageIcon(getClass().getResource("16x16.png")).getImage();
-BufferedImage image = new BufferedImage(d.width,d.height,BufferedImage.TYPE_INT_ARGB);
+BufferedImage image = new BufferedImage(d.width, d.height, BufferedImage.TYPE_INT_ARGB);
 ImageIcon i = new ImageIcon(getClass().getResource("16x16.png"));
 Graphics g = image.createGraphics();
-i.paintIcon(null,g,(d.width-i.getIconWidth())/2,(d.height-i.getIconWidth())/2);
+i.paintIcon(null, g, (d.width - i.getIconWidth()) / 2, (d.height - i.getIconWidth()) / 2);
 g.dispose();
 PopupMenu popup = new PopupMenu();
 TrayIcon icon   = new TrayIcon(image, "TRAY", popup);
@@ -97,5 +92,7 @@ TrayIcon icon   = new TrayIcon(image, "TRAY", popup);
 - スクリーンショットで`JST`システムトレイとタスクバーにあるやつです --  2010-03-08 (月) 17:30:21
     - `JFrame`の代わりに、`JWindow`を使うのはどうでしょうか。 -- *aterai* 2010-03-09 (火) 16:26:47
     - もしくは、[JFrameのアイコンを非表示](http://ateraimemo.com/Swing/DisableDefaultIcon.html)のように透明なアイコンを設定する(クリックすると反応してしまいますが…)とか。 -- [aterai](http://ateraimemo.com/aterai.html)
+    - `4`年以上前で、いまさら過ぎるのですが、やっと理解しました。自分の回答は的外れすぎですね。アイコン化したときにタスクバーボタンを非表示にするには、`Window#dispose()`を実行するとよさそうです。このサンプルを修正して非表示にするよう変更しました。 -- *aterai* 2014-12-25 (火) 16:35:38
+    - [TrayIconの使用中にJFrameを最小化したとき、タスクバーボタンを非表示にする](http://ateraimemo.com/Swing/HideTaskbarButton.html)に移動
 
 <!-- dummy comment line for breaking list -->

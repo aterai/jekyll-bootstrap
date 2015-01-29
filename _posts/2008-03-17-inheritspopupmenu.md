@@ -32,7 +32,7 @@ table.setInheritsPopupMenu(true);
   }
   @Override public void show(Component c, int x, int y) {
     int[] l = table.getSelectedRows();
-    deleteAction.setEnabled(l!=null &amp;&amp; l.length&gt;0);
+    deleteAction.setEnabled(l != null &amp;&amp; l.length &gt; 0);
     super.show(c, x, y);
   }
 }
@@ -86,7 +86,7 @@ public class HeaderPopupMenuTest {
       add(new DummyAction("delete"));
     }
   }
-  class DummyAction extends AbstractAction{
+  class DummyAction extends AbstractAction {
     public DummyAction(String label) {
       super(label);
     }
@@ -94,13 +94,15 @@ public class HeaderPopupMenuTest {
   }
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
-      @Override public void run() { createAndShowGUI(); }
+      @Override public void run() {
+        createAndShowGUI();
+      }
     });
   }
   public static void createAndShowGUI() {
-    try{
+    try {
       UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-    }catch(Exception e) {
+    } catch (Exception e) {
       e.printStackTrace();
     }
     JFrame f = new JFrame();

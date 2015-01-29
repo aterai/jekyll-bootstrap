@@ -22,11 +22,28 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 </code></pre>
 
 ## 解説
-`JFrame#setIconImage`メソッドでアイコンを設定しています。
+`JFrame#setIconImage`メソッドで`JFrame`のタイトルバーなどに表示される画像を設定しています。
 
-サンプルでは[GIMP](http://www.gimp.org/)を使って作成した`16x16`の透過`PNG`をアイコンとして使用しています。
+- サンプル画像として[GIMP](http://www.gimp.org/)を使って作成したサイズ`16x16`の透過`PNG`を使用
+- `JDK 1.6.0`から、[Window#setIconImage(Image) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/Window.html#setIconImage%28java.awt.Image%29)が使用されるようになった
+- また、`JDK 1.6.0`から[Window#setIconImages(java.util.List) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/Window.html#setIconImages%28java.util.List%29)で、複数のイメージを設定可能になった
+    - 同サイズのイメージがある場合は、先頭から検索して最初のイメージが使用される
+    - どのサイズのイメージが使用されるかは環境に依存する
+    - 参考: [java - Sizes of frame icons used in Swing - Stack Overflow](http://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
+    - `setIconImage(Image)`と、`setIconImages(List<Image>)`を両方使用した場合、後に実行したメソッドが有効になる
+        - 以下の例の場合、タイトルバーのアイコンは、`ATTACHMENT_16x16-32.png`になる
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>Toolkit tk = Toolkit.getDefaultToolkit();
+frame.setIconImage(tk.createImage(MainPanel.class.getResource("RECYCLE BIN - EMPTY_16x16-32.png")));
+frame.setIconImages(java.util.Arrays.asList(
+    tk.createImage(MainPanel.class.getResource("ATTACHMENT_16x16-32.png")),
+    tk.createImage(MainPanel.class.getResource("wi0054-32.png"))));
+</code></pre>
 
 ## 参考リンク
+- [java - Sizes of frame icons used in Swing - Stack Overflow](http://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
 - [GIMP](http://www.gimp.org/)
 
 <!-- dummy comment line for breaking list -->

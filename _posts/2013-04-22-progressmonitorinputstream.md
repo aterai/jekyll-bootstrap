@@ -22,28 +22,27 @@ comments: true
   @Override public void actionPerformed(ActionEvent e) {
     runButton.setEnabled(false);
     textArea.setText("");
-
     URLConnection urlConnection = getURLConnection();
-    if(urlConnection==null) {
+    if (urlConnection == null) {
       return;
     }
-    Charset cs = getCharset(urlConnection, "EUC-JP");
+    Charset cs = getCharset(urlConnection, "UTF-8");
     int length = urlConnection.getContentLength();
-    JFrame frame = (JFrame)SwingUtilities.getWindowAncestor((Component)e.getSource());
-
-    try{
+    JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(
+        (Component) e.getSource());
+    try {
       InputStream is = urlConnection.getInputStream();
-      ProgressMonitorInputStream pmis = new ProgressMonitorInputStream(frame, "Loading", is);
+      ProgressMonitorInputStream pmis = new ProgressMonitorInputStream(
+          frame, "Loading", is);
       monitor = pmis.getProgressMonitor();
       monitor.setNote(" "); //Need for JLabel#getPreferredSize
       monitor.setMillisToDecideToPopup(0);
       monitor.setMillisToPopup(0);
       monitor.setMinimum(0);
       monitor.setMaximum(length);
-
       worker = new MonitorTask(pmis, cs, length);
       worker.execute();
-    }catch(IOException ex) {
+    } catch (IOException ex) {
       ex.printStackTrace();
     }
   }
@@ -54,8 +53,8 @@ private class MonitorTask extends Task {
     super(pmis, cs, length);
   }
   @Override protected void process(List&lt;Chunk&gt; chunks) {
-    for(Chunk c: chunks) {
-      textArea.append(c.line+"\n");
+    for (Chunk c : chunks) {
+      textArea.append(c.line + "\n");
       monitor.setNote(c.note);
     }
     textArea.setCaretPosition(textArea.getDocument().getLength());
@@ -63,12 +62,12 @@ private class MonitorTask extends Task {
   @Override public void done() {
     runButton.setEnabled(true);
     String text = null;
-    try{
-      if(pmis!=null) {
+    try {
+      if (pmis != null) {
         pmis.close();
       }
       text = isCancelled() ? "Cancelled" : get();
-    }catch(IOException | InterruptedException | ExecutionException ex) {
+    } catch (IOException | InterruptedException | ExecutionException ex) {
       ex.printStackTrace();
       text = "Exception";
     }
@@ -88,22 +87,23 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
   }
   @Override public String doInBackground() {
     String ret = "Done";
-    try(BufferedReader reader = new BufferedReader(new InputStreamReader(pmis, cs));
-      Scanner scanner = new Scanner(reader)) {
+    try (BufferedReader r = new BufferedReader(new InputStreamReader(pmis, cs));
+         Scanner scanner = new Scanner(r)) {
       int i = 0;
       int size = 0;
-      while(scanner.hasNextLine()) {
-        if(i%50==0) { //Wait
+      while (scanner.hasNextLine()) {
+        if (i % 50 == 0) { //Wait
           Thread.sleep(10);
         }
         i++;
         String line = scanner.nextLine();
         size += line.getBytes(cs).length + 1; //+1: \n
-        String note = String.format("%03d%% - %d/%d%n", 100*size/length, size, length);
+        String note = String.format(
+            "%03d%% - %d/%d%n", 100 * size / length, size, length);
         //System.out.println(note);
         publish(new Chunk(line, note));
       }
-    }catch(InterruptedException | IOException ex) {
+    } catch (InterruptedException | IOException ex) {
       System.out.println("Exception");
       ret = "Exception";
       cancel(true);

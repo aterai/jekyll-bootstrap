@@ -19,51 +19,51 @@ comments: true
   private int max = 2013;
   @Override public String doInBackground() {
     int current = 1;
-    int c = max/itemsPerPage;
+    int c = max / itemsPerPage;
     int i = 0;
-    while(i&lt;c &amp;&amp; !isCancelled()) {
+    while (i &lt; c &amp;&amp; !isCancelled()) {
       current = makeRowListAndPublish(current, itemsPerPage);
       i++;
     }
-    int m = max%itemsPerPage;
-    if(m&gt;0) {
+    int m = max % itemsPerPage;
+    if (m &gt; 0) {
       makeRowListAndPublish(current, m);
     }
     return "Done";
   }
   private int makeRowListAndPublish(int current, int size) {
-    try{
+    try {
       Thread.sleep(500); //dummy
-    }catch(Exception ex) {
+    } catch (Exception ex) {
       ex.printStackTrace();
     }
     List&lt;Object[]&gt; result = new ArrayList&lt;Object[]&gt;(size);
     int j = current;
-    while(j&lt;current+size) {
-      result.add(new Object[] {j, "Test: "+j, (j%2==0)?"":"comment..."});
+    while (j &lt; current + size) {
+      result.add(new Object[] {j, "Test: " + j, (j % 2 == 0) ? "" : "comment..."});
       j++;
     }
     publish(result);
     return j;
   }
   @Override protected void process(List&lt;List&lt;Object[]&gt;&gt; chunks) {
-    for(List&lt;Object[]&gt; list: chunks) {
-      for(Object[] o: list) {
+    for (List&lt;Object[]&gt; list : chunks) {
+      for (Object[] o : list) {
         model.addRow(o);
       }
     }
     int rowCount = model.getRowCount();
-    maxPageIndex = (rowCount/itemsPerPage) + (rowCount%itemsPerPage==0?0:1);
+    maxPageIndex = (rowCount / itemsPerPage) + (rowCount % itemsPerPage == 0 ? 0 : 1);
     initFilterAndButton();
   }
   @Override public void done() {
     String text = null;
-    if(isCancelled()) {
+    if (isCancelled()) {
       text = "Cancelled";
-    }else{
-      try{
+    } else {
+      try {
         text = get();
-      }catch(Exception ex) {
+      } catch (Exception ex) {
         ex.printStackTrace();
         text = "Exception";
       }
@@ -79,16 +79,16 @@ private int currentPageIndex = 1;
 private void initFilterAndButton() {
   sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
     @Override public boolean include(
-        Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
+      Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
       int ti = currentPageIndex - 1;
       int ei = entry.getIdentifier();
-      return ti*itemsPerPage&lt;=ei &amp;&amp; ei&lt;ti*itemsPerPage+itemsPerPage;
+      return ti * itemsPerPage &lt;= ei &amp;&amp; ei &lt; ti * itemsPerPage + itemsPerPage;
     }
   });
-  first.setEnabled(currentPageIndex&gt;1);
-  prev.setEnabled(currentPageIndex&gt;1);
-  next.setEnabled(currentPageIndex&lt;maxPageIndex);
-  last.setEnabled(currentPageIndex&lt;maxPageIndex);
+  first.setEnabled(currentPageIndex &gt; 1);
+  prev.setEnabled(currentPageIndex &gt; 1);
+  next.setEnabled(currentPageIndex &lt; maxPageIndex);
+  last.setEnabled(currentPageIndex &lt; maxPageIndex);
   field.setText(Integer.toString(currentPageIndex));
   label.setText(String.format("/ %d", maxPageIndex));
 }

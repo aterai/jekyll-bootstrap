@@ -17,11 +17,13 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>//java - How can I start the JFileChooser in the Details view? - Stack Overflow]
 //http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view
-//for(Object key: chooser.getActionMap().allKeys()) {
+//for (Object key: chooser.getActionMap().allKeys()) {
 //    System.out.println(key);
 //}
 Action detailsAction = chooser.getActionMap().get("viewTypeDetails");
-if(detailsAction!=null) detailsAction.actionPerformed(null);
+if (detailsAction != null) {
+  detailsAction.actionPerformed(null);
+}
 </code></pre>
 
 ## 解説
@@ -36,12 +38,14 @@ if(detailsAction!=null) detailsAction.actionPerformed(null);
 
 <pre class="prettyprint"><code>//searchAndClick(chooser, UIManager.getIcon("FileChooser.detailsViewIcon"));
 private static boolean searchAndClick(Container parent, Icon icon) {
-  for(Component c:parent.getComponents()) {
-    if(c instanceof JToggleButton &amp;&amp; ((JToggleButton)c).getIcon()==icon) {
-      ((AbstractButton)c).doClick();
+  for (Component c:parent.getComponents()) {
+    if (c instanceof JToggleButton &amp;&amp; ((JToggleButton) c).getIcon() == icon) {
+      ((AbstractButton) c).doClick();
       return true;
-    }else{
-      if(searchAndClick((Container)c, icon)) return true;
+    } else {
+      if (searchAndClick((Container) c, icon)) {
+        return true;
+      }
     }
   }
   return false;
@@ -50,7 +54,7 @@ private static boolean searchAndClick(Container parent, Icon icon) {
 
 - - - -
 警告されますが、以下のように`sun.swing.FilePane#setViewType(sun.swing.FilePane.VIEWTYPE_DETAILS)`メソッドを使用する方法もあります。
-<pre class="prettyprint"><code>FilePane filePane = (FilePane)findChildComponent(chooser, FilePane.class);
+<pre class="prettyprint"><code>FilePane filePane = (FilePane) findChildComponent(chooser, FilePane.class);
 filePane.setViewType(FilePane.VIEWTYPE_DETAILS);
 </code></pre>
 

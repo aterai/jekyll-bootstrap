@@ -16,13 +16,13 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JEditorPane editor = new JEditorPane("text/html",
-  "&lt;html&gt;&lt;a href='"+MYSITE+"'&gt;"+MYSITE+"&lt;/a&gt;");
+  "&lt;html&gt;&lt;a href='" + MYSITE + "'&gt;" + MYSITE + "&lt;/a&gt;");
 editor.setOpaque(false);
 editor.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
 editor.setEditable(false);
 editor.addHyperlinkListener(new HyperlinkListener() {
   @Override public void hyperlinkUpdate(HyperlinkEvent e) {
-    if(e.getEventType()==HyperlinkEvent.EventType.ACTIVATED) {
+    if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
       BrowserLauncher.openURL(MYSITE);
     }
   }
@@ -33,9 +33,9 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 ブラウザの起動には、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用しています。`Mac OS X`, `GNU/Linux`, `Unix`, `Windows XP`に対応しているようです。
 
 - - - -
-- `Java SE 6`の新機能である、`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することができるようになっています。
+- `Java SE 6`の新機能である`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することが可能
     - [Using the Desktop API in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135182.html)
-    - [Desktopでブラウザを起動(JDK 6)](http://ateraimemo.com/Swing/Desktop.html))。
+    - [Desktopでブラウザを起動(JDK 6)](http://ateraimemo.com/Swing/Desktop.html)
 
 <!-- dummy comment line for breaking list -->
 

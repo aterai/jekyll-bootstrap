@@ -15,54 +15,57 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUz8_Yw-I/AAAAAAAAAmo/wLoOmG5I3oc/s800/TabThumbnail.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class MyTabbedPane extends JTabbedPane {
+<pre class="prettyprint"><code>class TabThumbnailTabbedPane extends JTabbedPane {
   private int current = -1;
   private static final double SCALE = 0.15d;
   private Component getTabThumbnail(int index) {
     Component c = getComponentAt(index);
     Icon icon = null;
-    if(c instanceof JScrollPane) {
-      c = ((JScrollPane)c).getViewport().getView();
+    if (c instanceof JScrollPane) {
+      c = ((JScrollPane) c).getViewport().getView();
       Dimension d = c.getPreferredSize();
       int newW = (int)(d.width  * SCALE);
       int newH = (int)(d.height * SCALE);
       BufferedImage image = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
-      Graphics2D g2 = (Graphics2D)image.getGraphics();
+      Graphics2D g2 = image.createGraphics();
       g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
-                RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-      g2.scale(SCALE,SCALE);
+                          RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+      g2.scale(SCALE, SCALE);
       c.paint(g2);
       g2.dispose();
       icon = new ImageIcon(image);
-    }else if(c instanceof JLabel) {
-      icon = ((JLabel)c).getIcon();
+    } else if (c instanceof JLabel) {
+      icon = ((JLabel) c).getIcon();
     }
     return new JLabel(icon);
   }
   @Override public JToolTip createToolTip() {
     int index = current;
-    if(index&lt;0) return null;
+    if (index &lt; 0) {
+      return null;
+    }
+
     final JPanel p = new JPanel(new BorderLayout());
     p.setBorder(BorderFactory.createEmptyBorder());
     p.add(new JLabel(getTitleAt(index)), BorderLayout.NORTH);
     p.add(getTabThumbnail(index));
+
     JToolTip tip = new JToolTip() {
       @Override public Dimension getPreferredSize() {
         Insets i = getInsets();
         Dimension d = p.getPreferredSize();
-        return new Dimension(d.width+i.left+i.right,d.height+i.top+i.bottom);
+        return new Dimension(d.width  + i.left + i.right, d.height + i.top  + i.bottom);
       }
     };
     tip.setComponent(this);
-    LookAndFeel.installColorsAndFont(
-        p, "ToolTip.background", "ToolTip.foreground", "ToolTip.font");
+    LookAndFeel.installColorsAndFont(p, "ToolTip.background", "ToolTip.foreground", "ToolTip.font");
     tip.setLayout(new BorderLayout());
     tip.add(p);
     return tip;
   }
   @Override public String getToolTipText(MouseEvent e) {
     int index = indexAtLocation(e.getX(), e.getY());
-    String str = (current!=index)?null:super.getToolTipText(e);
+    String str = (current == index) ? super.getToolTipText(e) : null;
     current = index;
     return str;
   }

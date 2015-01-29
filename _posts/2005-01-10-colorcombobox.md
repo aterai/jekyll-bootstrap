@@ -119,8 +119,10 @@ comments: true
 <pre class="prettyprint"><code>final JComboBox c = new JComboBox();
 c.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()!=ItemEvent.SELECTED) return;
-    c.setBackground((c.getSelectedIndex()%2==0)?evenBGColor:oddBGColor);
+    if (e.getStateChange() != ItemEvent.SELECTED) {
+      return;
+    }
+    c.setBackground((c.getSelectedIndex() % 2 == 0) ? evenBGColor : oddBGColor);
   }
 });
 </code></pre>
@@ -137,11 +139,11 @@ c.addItemListener(new ItemListener() {
     return new MetalPropertyChangeListener() {
       @Override public void propertyChange(PropertyChangeEvent e) {
         String propertyName = e.getPropertyName();
-        if(propertyName=="background") {
-          Color color = (Color)e.getNewValue();
+        if (propertyName == "background") {
+          Color color = (Color) e.getNewValue();
           //arrowButton.setBackground(color);
           listBox.setBackground(color);
-        }else{
+        } else {
           super.propertyChange( e );
         }
       }
@@ -152,7 +154,9 @@ combo01.setModel(makeModel());
 combo01.setRenderer(new MyListCellRenderer(combo01.getRenderer()));
 combo01.addItemListener(new ItemListener() {
   @Override public void itemStateChanged(ItemEvent e) {
-    if(e.getStateChange()!=ItemEvent.SELECTED) return;
+    if (e.getStateChange() != ItemEvent.SELECTED) {
+      return;
+    }
     combo01.setBackground(getOEColor(combo01.getSelectedIndex()));
   }
 });

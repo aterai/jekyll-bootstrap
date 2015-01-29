@@ -19,9 +19,9 @@ comments: true
   private final JPanel p = new JPanel(new BorderLayout());
   private final JLabel icon = new JLabel();
   private final JLabel text = new JLabel();
-  private final Border innerBorder = BorderFactory.createEmptyBorder(1,2,1,2);
+  private final Border innerBorder = BorderFactory.createEmptyBorder(1, 2, 1, 2);
   private final Border emptyBorder = BorderFactory.createCompoundBorder(
-                      BorderFactory.createEmptyBorder(1,1,1,1), innerBorder);
+      BorderFactory.createEmptyBorder(1, 1, 1, 1), innerBorder);
   private final Border hasFocusBorder;
   private final TreeCellRenderer renderer;
 
@@ -31,20 +31,21 @@ comments: true
     Color bsColor = getBorderSelectionColor();
     Color focusBGColor = new Color(~getBackgroundSelectionColor().getRGB());
     hasFocusBorder = BorderFactory.createCompoundBorder(
-                         new DotBorder(focusBGColor, bsColor), innerBorder);
-    icon.setBorder(BorderFactory.createEmptyBorder(0,0,0,2));
+                       new DotBorder(focusBGColor, bsColor), innerBorder);
+    icon.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 2));
     text.setBorder(emptyBorder);
     text.setOpaque(true);
     p.setOpaque(false);
     p.add(icon, BorderLayout.WEST);
     p.add(text);
   }
-  @Override public Component getTreeCellRendererComponent(JTree tree, Object value,
-          boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
+  @Override public Component getTreeCellRendererComponent(
+      JTree tree, Object value, boolean selected, boolean expanded,
+      boolean leaf, int row, boolean hasFocus) {
     JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
-          tree, value, selected, expanded, leaf, row, hasFocus);
+                 tree, value, selected, expanded, leaf, row, hasFocus);
     Color bColor, fColor;
-    if(selected) {
+    if (selected) {
       bColor = getBackgroundSelectionColor();
       fColor = getTextSelectionColor();
     } else {
@@ -55,7 +56,7 @@ comments: true
     }
     text.setForeground(fColor);
     text.setBackground(bColor);
-    text.setBorder(hasFocus?hasFocusBorder:emptyBorder);
+    text.setBorder(hasFocus ? hasFocusBorder : emptyBorder);
     text.setText(l.getText());
     icon.setIcon(l.getIcon());
     return p;

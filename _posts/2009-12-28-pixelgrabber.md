@@ -61,7 +61,7 @@ g.dispose();
 //try {
 //  javax.imageio.ImageIO.write(
 //    bi, "png", java.io.File.createTempFile("screenshot", ".png"));
-//}catch(java.io.IOException ioe) {
+//} catch (IOException ioe) {
 //  ioe.printStackTrace();
 //}
 </code></pre>

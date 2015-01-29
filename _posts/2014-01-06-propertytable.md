@@ -36,7 +36,7 @@ JTable table = new JTable(data, columnNames) {
     if (convertColumnIndexToModel(column) == 1) {
       //System.out.println("getCellRenderer");
       return getDefaultRenderer(getClassAt(row, column));
-    }else{
+    } else {
       return super.getCellRenderer(row, column);
     }
   }

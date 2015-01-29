@@ -19,20 +19,20 @@ comments: true
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent)super.getTreeCellRendererComponent(
+    JComponent c = (JComponent) super.getTreeCellRendererComponent(
         tree, value, isSelected, expanded, leaf, row, hasFocus);
-    if(isSelected) {
+    if (isSelected) {
       setParticularCondition(value);
       c.setForeground(getTextSelectionColor());
       c.setBackground(getBackgroundSelectionColor());
-      if(leaf &amp;&amp; value.toString().startsWith("a")) {
+      if (leaf &amp;&amp; value.toString().startsWith("a")) {
         c.setOpaque(true);
         c.setBackground(Color.RED);
-      }else{
+      } else {
         c.setOpaque(false);
         c.setBackground(getBackgroundSelectionColor());
       }
-    }else{
+    } else {
       c.setForeground(getTextNonSelectionColor());
       c.setBackground(getBackgroundNonSelectionColor());
     }
@@ -40,17 +40,17 @@ comments: true
   }
   private Color color = null;
   private void setParticularCondition(Object value) {
-    if(value instanceof DefaultMutableTreeNode) {
-      Object uo = ((DefaultMutableTreeNode)value).getUserObject();
-      if(uo instanceof Color) {
-        color = (Color)uo;
+    if (value instanceof DefaultMutableTreeNode) {
+      Object uo = ((DefaultMutableTreeNode) value).getUserObject();
+      if (uo instanceof Color) {
+        color = (Color) uo;
         return;
       }
     }
     color = null;
   }
   @Override public Color getBackgroundSelectionColor() {
-    return color!=null ? color : super.getBackgroundSelectionColor();
+    return color != null ? color : super.getBackgroundSelectionColor();
   }
 }
 </code></pre>

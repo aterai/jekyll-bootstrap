@@ -15,21 +15,31 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK2Z8UOTI/AAAAAAAAAWo/7GoDkuVX8Fc/s800/DifferentCellHeight.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TextAreaRenderer extends JTextArea implements ListCellRenderer {
-  private final Border border = new DotBorder(2,2,2,2);
-  private final Color evenColor = new Color(230,255,230);
+<pre class="prettyprint"><code>class TextAreaRenderer extends JTextArea implements ListCellRenderer&lt;String&gt; {
+  private Border focusBorder;
+  private static final Border NOMAL_BORDER =
+    BorderFactory.createEmptyBorder(2, 2, 2, 2);
+  private static final Color EVEN_COLOR = new Color(230, 255, 230);
   @Override public Component getListCellRendererComponent(
-      JList list, Object object, int index,
+      JList list, String str, int index,
       boolean isSelected, boolean cellHasFocus) {
-    setText((object==null) ? "" : object.toString());
-    setBorder(cellHasFocus ? border
-                : BorderFactory.createEmptyBorder(2,2,2,2));
-    if(isSelected) {
+    //setLineWrap(true);
+    setText(Objects.toString(str, ""));
+    if (isSelected) {
       setBackground(list.getSelectionBackground());
       setForeground(list.getSelectionForeground());
-    }else{
-      setBackground(index%2==0 ? evenColor : list.getBackground());
+    } else {
+      setBackground(index % 2 == 0 ? EVEN_COLOR : list.getBackground());
       setForeground(list.getForeground());
+    }
+    if (cellHasFocus) {
+      if (focusBorder == null) {
+        focusBorder = new DotBorder(
+            new Color(~list.getSelectionBackground().getRGB()), 2);
+      }
+      setBorder(focusBorder);
+    } else {
+      setBorder(NOMAL_BORDER);
     }
     return this;
   }
@@ -62,10 +72,10 @@ private DefaultListModel makeList() {
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int w, int h) {
     Graphics2D g2 = (Graphics2D) g;
-    g2.translate(x,y);
+    g2.translate(x, y);
     g2.setPaint(getLineColor());
     BasicGraphicsUtils.drawDashedRect(g2, 0, 0, w, h);
-    g2.translate(-x,-y);
+    g2.translate(-x, -y);
   }
 }
 </code></pre>

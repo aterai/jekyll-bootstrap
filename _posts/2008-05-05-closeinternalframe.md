@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>closeSelectedFrameAction1 = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     JInternalFrame f = desktop.getSelectedFrame();
-    if(f!=null) {
+    if (f != null) {
       desktop.getDesktopManager().closeFrame(f);
     }
   }
@@ -28,7 +28,7 @@ comments: true
 <pre class="prettyprint"><code>closeSelectedFrameAction2 = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     JInternalFrame f = desktop.getSelectedFrame();
-    if(f!=null) {
+    if (f != null) {
       f.doDefaultCloseAction();
     }
   }
@@ -37,12 +37,12 @@ comments: true
 
 <pre class="prettyprint"><code>closeSelectedFrameAction3 = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
-    try{
+    try {
       JInternalFrame f = desktop.getSelectedFrame();
-      if(f!=null) {
+      if (f != null) {
         f.setClosed(true);
       }
-    }catch(java.beans.PropertyVetoException ex) {
+    } catch (PropertyVetoException ex) {
       ex.printStackTrace();
     }
   }
@@ -52,7 +52,7 @@ comments: true
 <pre class="prettyprint"><code>disposeSelectedFrameAction = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     JInternalFrame f = desktop.getSelectedFrame();
-    if(f!=null) {
+    if (f != null) {
       f.dispose();
     }
   }

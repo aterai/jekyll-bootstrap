@@ -32,17 +32,17 @@ comments: true
 Vector saveSelectedRow(JTable table, int keyCol) {
   Vector list = new Vector();
   int[] ilist = table.getSelectedRows();
-  if(ilist==null || ilist.length&lt;=0) return;
-  TestModel model = (TestModel)tableModel;
-  for(int i=ilist.length-1;i&gt;=0;i--) {
+  if (ilist == null || ilist.length &lt;= 0) return;
+  TestModel model = (TestModel) tableModel;
+  for (int i = ilist.length - 1; i &gt;= 0; i--) {
     list.add(model.getValueAt(modelIndex(ilist[i]), keyCol));
   }
   return list;
 }
 void loadSelectedRow(JTable table, Vector list, int keyCol) {
-  if(list==null || list.size()&lt;=0) return;
-  for(int i=0;i&lt;tableModel.getRowCount();i++) {
-    if(list.contains(tableModel.getValueAt(modelIndex(i), keyCol))) {
+  if (list == null || list.size() &lt;= 0) return;
+  for (int i = 0; i &lt; tableModel.getRowCount(); i++) {
+    if (list.contains(tableModel.getValueAt(modelIndex(i), keyCol))) {
       table.getSelectionModel().addSelectionInterval(i, i);
     }
   }

@@ -26,27 +26,27 @@ comments: true
     text.setFont(icon.getFont());
     text.setBorder(BorderFactory.createEmptyBorder());
     icon.setOpaque(true);
-    icon.setBorder(BorderFactory.createEmptyBorder(1,1,1,2));
+    icon.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 2));
     icon.setVerticalAlignment(JLabel.TOP);
     setOpaque(false);
-    setBorder(BorderFactory.createEmptyBorder(1,1,1,1));
+    setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
     add(icon, BorderLayout.WEST);
     add(text);
   }
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
-    JLabel l = (JLabel)renderer.getTreeCellRendererComponent(
+    JLabel l = (JLabel) renderer.getTreeCellRendererComponent(
       tree, value, isSelected, expanded, leaf, row, hasFocus);
     Color bColor, fColor;
-    if(isSelected) {
+    if (isSelected) {
       bColor = renderer.getBackgroundSelectionColor();
       fColor = renderer.getTextSelectionColor();
     } else {
       bColor = renderer.getBackgroundNonSelectionColor();
       fColor = renderer.getTextNonSelectionColor();
-      if(bColor == null) bColor = renderer.getBackground();
-      if(fColor == null) fColor = renderer.getForeground();
+      if (bColor == null) bColor = renderer.getBackground();
+      if (fColor == null) fColor = renderer.getForeground();
     }
     text.setFont(l.getFont());
     text.setText(l.getText());
@@ -68,9 +68,9 @@ comments: true
     Dimension d = new Dimension(10, 10);
     Insets i = getInsets();
     d.width  = Math.max(
-      d.width,  getColumns()*getColumnWidth() + i.left + i.right);
+      d.width,  getColumns() * getColumnWidth() + i.left + i.right);
     d.height = Math.max(
-      d.height, getRows()*getRowHeight() + i.top + i.bottom);
+      d.height, getRows() * getRowHeight() + i.top + i.bottom);
     return d;
   }
   @Override public void setText(String str) {
@@ -80,22 +80,22 @@ comments: true
     Element root   = doc.getDefaultRootElement();
     int lineCount  = root.getElementCount();
     int maxWidth   = 10;
-    try{
-      for(int i = 0; i &lt; lineCount; i++) {
+    try {
+      for (int i = 0; i &lt; lineCount; i++) {
         Element e = root.getElement(i);
         int rangeStart = e.getStartOffset();
         int rangeEnd = e.getEndOffset();
         String line = doc.getText(rangeStart, rangeEnd - rangeStart);
         int width = fm.stringWidth(line);
-        if(maxWidth &lt; width) {
+        if (maxWidth &lt; width) {
           maxWidth = width;
         }
       }
-    }catch(Exception ex) {
+    } catch (Exception ex) {
       ex.printStackTrace();
     }
     setRows(lineCount);
-    setColumns(1+maxWidth/getColumnWidth());
+    setColumns(1 + maxWidth / getColumnWidth());
   }
 }
 </code></pre>

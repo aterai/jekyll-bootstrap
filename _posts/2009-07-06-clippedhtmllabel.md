@@ -54,11 +54,11 @@ comments: true
       trect, //text
       this.getIconTextGap());
 
-    if(!table.isEditing() &amp;&amp; this.row==row &amp;&amp; this.col==column) {
-      setText("&lt;html&gt;&lt;u&gt;&lt;font color='blue'&gt;"+str);
-    }else if(hasFocus) {
-      setText("&lt;html&gt;&lt;font color='blue'&gt;"+str);
-    }else{
+    if (!table.isEditing() &amp;&amp; this.row == row &amp;&amp; this.col == column) {
+      setText("&lt;html&gt;&lt;u&gt;&lt;font color='blue'&gt;" + str);
+    } else if (hasFocus) {
+      setText("&lt;html&gt;&lt;font color='blue'&gt;" + str);
+    } else {
       setText(str);
       //setText(value.toString());
     }

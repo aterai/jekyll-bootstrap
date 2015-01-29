@@ -20,7 +20,7 @@ jta.getDocument().addDocumentListener(new DocumentListener() {
   @Override public void insertUpdate(DocumentEvent e) {
     final Document doc = jta.getDocument();
     final Element root = doc.getDefaultRootElement();
-    if(root.getElementCount()&lt;=maxLines) return;
+    if (root.getElementCount() &lt;= maxLines) return;
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         removeLines(doc, root);
@@ -30,9 +30,9 @@ jta.getDocument().addDocumentListener(new DocumentListener() {
   }
   private void removeLines(Document doc, Element root) {
     Element fl = root.getElement(0);
-    try{
+    try {
       doc.remove(0, fl.getEndOffset());
-    }catch(BadLocationException ble) {
+    } catch (BadLocationException ble) {
       System.out.println(ble);
     }
   }
@@ -42,7 +42,7 @@ jta.getDocument().addDocumentListener(new DocumentListener() {
 final Timer timer = new Timer(100, new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
     String s = new Date().toString();
-    jta.append((jta.getDocument().getLength()&gt;0)?"\n"+s:s);
+    jta.append((jta.getDocument().getLength() &gt; 0) ? "\n" + s : s);
   }
 });
 </code></pre>

@@ -18,9 +18,9 @@ comments: true
 <pre class="prettyprint"><code>public JMenuBar createMenubar() {
   JMenuBar mb = new JMenuBar();
   String[] menuKeys = tokenize(getResourceString("menubar"));
-  for(int i=0;i&lt;menuKeys.length;i++) {
+  for (int i = 0; i &lt; menuKeys.length; i++) {
     JMenu m = createMenu(menuKeys[i]);
-    if(m != null) {
+    if (m != null) {
       mb.add(m);
     }
   }
@@ -32,20 +32,20 @@ private JMenu createMenu(String key) {
   String mitext = getResourceString(key + labelSuffix);
   JMenu menu = new JMenu(mitext);
   String mn = getResourceString(key + mneSuffix);
-  if(mn!=null) {
+  if (mn != null) {
     String tmp = mn.toUpperCase().trim();
-    if(tmp.length()==1) {
-      if(mitext.indexOf(tmp)&lt;0) {
-       menu.setText(mitext+" ("+tmp+")");
+    if (tmp.length() == 1) {
+      if (mitext.indexOf(tmp) &lt; 0) {
+        menu.setText(mitext + " (" + tmp + ")");
       }
       byte[] bt = tmp.getBytes();
       menu.setMnemonic((int) bt[0]);
     }
   }
-  for(int i=0;i&lt;itemKeys.length;i++) {
-    if(itemKeys[i].equals("-")) {
+  for (int i = 0; i &lt; itemKeys.length; i++) {
+    if (itemKeys[i].equals("-")) {
       menu.addSeparator();
-    }else{
+    } else {
       JMenuItem mi = createMenuItem(itemKeys[i]);
       menu.add(mi);
     }
@@ -57,21 +57,21 @@ private JMenu createMenu(String key) {
 private JMenuItem createMenuItem(String cmd) {
   String mitext = getResourceString(cmd + labelSuffix);
   JMenuItem mi = new JMenuItem(mitext);
-  URL url = getResource(cmd+imageSuffix);
-  if(url!=null) {
+  URL url = getResource(cmd + imageSuffix);
+  if (url != null) {
     mi.setHorizontalTextPosition(JButton.RIGHT);
     mi.setIcon(new ImageIcon(url));
   }
   String astr = getResourceString(cmd + actionSuffix);
-  if(astr == null) {
+  if (astr == null) {
     astr = cmd;
   }
   String mn = getResourceString(cmd + mneSuffix);
-  if(mn!=null) {
+  if (mn != null) {
     String tmp = mn.toUpperCase().trim();
-    if(tmp.length()==1) {
-      if(mitext.indexOf(tmp)&lt;0) {
-        mi.setText(mitext+" ("+tmp+")");
+    if (tmp.length() == 1) {
+      if (mitext.indexOf(tmp) &lt; 0) {
+        mi.setText(mitext + " (" + tmp + ")");
       }
       byte[] bt = tmp.getBytes();
       mi.setMnemonic((int) bt[0]);
@@ -79,11 +79,11 @@ private JMenuItem createMenuItem(String cmd) {
   }
   mi.setActionCommand(astr);
   Action a = getAction(astr);
-  if(a!=null) {
+  if (a != null) {
     mi.addActionListener(a);
     //a.addPropertyChangeListener(createActionChangeListener(mi));
     mi.setEnabled(a.isEnabled());
-  }else{
+  } else {
     mi.setEnabled(false);
   }
   menuItems.put(cmd, mi);

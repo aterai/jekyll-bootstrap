@@ -86,7 +86,7 @@ class ModalInternalFrameAction3 extends AbstractAction {
     modal.setVisible(true);
     try {
       modal.setSelected(true);
-    }catch(java.beans.PropertyVetoException ex) {}
+    } catch (PropertyVetoException ex) {}
   }
 }
 </code></pre>
@@ -140,7 +140,7 @@ try {
   }
   field.setAccessible(true);
   modal.putClientProperty(field.get(null), Boolean.TRUE);
-}catch(Exception ex) {
+} catch (Exception ex) {
   ex.printStackTrace();
 }
 optionPane.setMessage(combo);
@@ -163,7 +163,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 <pre class="prettyprint"><code>class PrintGlassPane extends JPanel {
   TexturePaint texture = TextureFactory.createCheckerTexture(4);
   public PrintGlassPane() {
-    super((LayoutManager)null);
+    super((LayoutManager) null);
     setOpaque(false);
   }
   @Override public void setVisible(boolean isVisible) {
@@ -217,7 +217,7 @@ KeyboardFocusManager.setCurrentKeyboardFocusManager(new DefaultKeyboardFocusMana
     if (e instanceof KeyEvent) {
       KeyEvent ke = (KeyEvent) e;
       if ((ke.getModifiers() &amp; InputEvent.ALT_DOWN_MASK) != 0) {
-        System.out.println("----\n"+ke);
+        System.out.println("----\n" + ke);
         return false;
       }
     }

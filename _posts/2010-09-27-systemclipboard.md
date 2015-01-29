@@ -17,9 +17,9 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private ClipboardService cs = null;
 public JComponent makeUI() {
-  try{
+  try {
     cs = (ClipboardService)ServiceManager.lookup("javax.jnlp.ClipboardService");
-  }catch(UnavailableServiceException e) {
+  } catch(UnavailableServiceException e) {
     cs = null;
   }
   JPanel p = new JPanel(new BorderLayout());
@@ -27,9 +27,9 @@ public JComponent makeUI() {
   p.add(new JButton(new AbstractAction("get Clipboard DataFlavor") {
     @Override public void actionPerformed(ActionEvent e) {
       try {
-        Transferable t = (cs==null)
-          ?Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null)
-          :cs.getContents();
+        Transferable t = (cs == null)
+          ? Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null)
+          : cs.getContents();
         if (t==null) {
           java.awt.Toolkit.getDefaultToolkit().beep();
           return;

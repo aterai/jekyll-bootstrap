@@ -16,14 +16,14 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class HighlightCursorTextArea extends JTextArea {
-  private static final Color linecolor = new Color(250,250,220);
+  private static final Color linecolor = new Color(250, 250, 220);
   private final DefaultCaret caret;
   public HighlightCursorTextArea() {
     super();
     setOpaque(false);
     caret = new DefaultCaret() {
       @Override protected synchronized void damage(Rectangle r) {
-        if(r!=null) {
+        if (r != null) {
           JTextComponent c = getComponent();
           x = 0;
           y = r.y;
@@ -42,7 +42,7 @@ comments: true
     int h = caret.height;
     int y = caret.y;
     g2.setPaint(linecolor);
-    g2.fillRect(i.left, y, getSize().width-i.left-i.right, h);
+    g2.fillRect(i.left, y, getSize().width - i.left - i.right, h);
     super.paintComponent(g);
   }
 }
@@ -76,13 +76,13 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
   }
   @Override public void paintBackground(Graphics g) {
     super.paintBackground(g);
-    try{
+    try {
       Rectangle rect = modelToView(tc, tc.getCaretPosition());
       int y = rect.y;
       int h = rect.height;
       g.setColor(Color.YELLOW);
       g.fillRect(0, y, tc.getWidth(), h);
-    }catch(BadLocationException ex) {
+    } catch (BadLocationException ex) {
       ex.printStackTrace();
     }
   }

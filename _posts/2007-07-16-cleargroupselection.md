@@ -20,7 +20,9 @@ Vector&lt;AbstractButton&gt; l = new Vector&lt;&gt;();
 l.add(new JRadioButton("RadioButton1"));
 l.add(new JRadioButton("RadioButton2"));
 l.add(new JToggleButton(icon));
-for(AbstractButton b:l) { bg.add(b); add(b); }
+for (AbstractButton b: l) {
+  bg.add(b); add(b);
+}
 add(new JButton(new AbstractAction("clearSelection") {
   @Override public void actionPerformed(ActionEvent e) {
     bg.clearSelection();

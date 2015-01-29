@@ -54,11 +54,11 @@ comments: true
   int w0 = getWidth() - i.left - i.right;
   int w = w0 - rw;
   LineBreakMeasurer lbm = new LineBreakMeasurer(aci, frc);
-  while(lbm.getPosition() &lt; aci.getEndIndex()) {
+  while (lbm.getPosition() &lt; aci.getEndIndex()) {
     TextLayout tl = lbm.nextLayout(w);
     tl.draw(g2, x, y + tl.getAscent());
     y += tl.getDescent() + tl.getLeading() + tl.getAscent();
-    if(y0 + rh &lt; y) {
+    if (y0 + rh &lt; y) {
       x = x0;
       w = w0;
     }

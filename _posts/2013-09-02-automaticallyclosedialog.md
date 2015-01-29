@@ -19,7 +19,7 @@ comments: true
   private Timer timer = null;
   private AtomicInteger atomicDown = new AtomicInteger(SECONDS);
   @Override public void hierarchyChanged(HierarchyEvent e) {
-    final JLabel l = (JLabel)e.getComponent();
+    final JLabel l = (JLabel) e.getComponent();
     if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0) {
       if (l.isShowing()) {
         textArea.append("isShowing=true\n");

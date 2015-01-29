@@ -15,7 +15,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQg6Td8tI/AAAAAAAAAfs/u5mXLfk3k64/s800/NumberFormatter.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JSpinner.NumberEditor editor = (JSpinner.NumberEditor)spinner.getEditor();
+<pre class="prettyprint"><code>JSpinner.NumberEditor editor = (JSpinner.NumberEditor) spinner.getEditor();
 DefaultFormatter formatter = (DefaultFormatter) editor.getTextField().getFormatter();
 formatter.setAllowsInvalid(false);
 </code></pre>
@@ -37,8 +37,8 @@ formatter.setAllowsInvalid(false);
 
 <pre class="prettyprint"><code>private static JSpinner makeSpinner2(SpinnerNumberModel m) {
   JSpinner s = new JSpinner(m);
-  JSpinner.NumberEditor editor = (JSpinner.NumberEditor)s.getEditor();
-  final JFormattedTextField ftf = (JFormattedTextField)editor.getTextField();
+  JSpinner.NumberEditor editor = (JSpinner.NumberEditor) s.getEditor();
+  final JFormattedTextField ftf = (JFormattedTextField) editor.getTextField();
   ftf.setFormatterFactory(makeFFactory(m));
   ftf.getDocument().addDocumentListener(new DocumentListener() {
     private final Color color = new Color(255,200,200);
@@ -54,7 +54,7 @@ formatter.setAllowsInvalid(false);
     private void updateEditValid() {
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
-          ftf.setBackground(ftf.isEditValid()?Color.WHITE:color);
+          ftf.setBackground(ftf.isEditValid() ? Color.WHITE : color);
         }
       });
     }
@@ -66,17 +66,17 @@ private static DefaultFormatterFactory makeFFactory(final SpinnerNumberModel m) 
   NumberFormatter displayFormatter = new NumberFormatter(format);
   NumberFormatter editFormatter = new NumberFormatter(format) {
     @Override public Object stringToValue(String text) throws ParseException {
-      try{
+      try {
         Long.parseLong(text);
-      }catch(NumberFormatException e) {
+      } catch (NumberFormatException e) {
         throw new ParseException("xxx", 0);
       }
       Object o = format.parse(text);
-      if(o instanceof Long) {
-        Long val = (Long)format.parse(text);
-        Long max = (Long)m.getMaximum();
-        Long min = (Long)m.getMinimum();
-        if(max.compareTo(val)&lt;0 || min.compareTo(val)&gt;0) {
+      if (o instanceof Long) {
+        Long val = (Long) format.parse(text);
+        Long max = (Long) m.getMaximum();
+        Long min = (Long) m.getMinimum();
+        if (max.compareTo(val) &lt; 0 || min.compareTo(val) &gt; 0) {
           throw new ParseException("xxx", 0);
         }
         return val;

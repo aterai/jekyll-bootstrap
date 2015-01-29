@@ -17,16 +17,16 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JCheckBox checkBox = new JCheckBox("TriState JCheckBox") {
   protected TriStateActionListener listener = null;
-  class TriStateActionListener implements ActionListener{
+  class TriStateActionListener implements ActionListener {
     protected Icon icon;
     public void setIcon(Icon icon) {
       this.icon = icon;
     }
     @Override public void actionPerformed(ActionEvent e) {
-      JCheckBox cb = (JCheckBox)e.getSource();
-      if(!cb.isSelected()) {
+      JCheckBox cb = (JCheckBox) e.getSource();
+      if (!cb.isSelected()) {
         cb.setIcon(icon);
-      }else if(cb.getIcon()!=null){
+      } else if (cb.getIcon() != null) {
         cb.setIcon(null);
         cb.setSelected(false);
       }
@@ -39,43 +39,46 @@ comments: true
     super.updateUI();
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
-        if(listener==null) {
+        if (listener == null) {
           listener = new TriStateActionListener();
         }
         Icon icon = new IndeterminateIcon();
         listener.setIcon(icon);
         addActionListener(listener);
-        if(oi!=null) {
+        if (oi != null) {
           setIcon(icon);
         }
       }
     });
   }
 };
-</code></pre>
 
-<pre class="prettyprint"><code>class IndeterminateIcon implements Icon {
-    private final Color color = UIManager.getColor("CheckBox.foreground");
-    private final Icon icon = UIManager.getIcon("CheckBox.icon");
-    @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-        icon.paintIcon(c, g, x, y);
-        int w = getIconWidth(), h = getIconHeight();
-        int a = 4, b = 2;
-        Graphics2D g2 = (Graphics2D) g;
-        g2.setPaint(Color.BLACK);
-        g2.translate(x, y);
-        g2.fillRect(a, (h-b)/2, w-a-a, b);
-        g2.translate(-x, -y);
-    }
-    @Override public int getIconWidth()  { return icon.getIconWidth();  }
-    @Override public int getIconHeight() { return icon.getIconHeight(); }
+class IndeterminateIcon implements Icon {
+  private final Color color = UIManager.getColor("CheckBox.foreground");
+  private final Icon icon = UIManager.getIcon("CheckBox.icon");
+  @Override public void paintIcon(Component c, Graphics g, int x, int y) {
+    icon.paintIcon(c, g, x, y);
+    int w = getIconWidth(), h = getIconHeight();
+    int a = 4, b = 2;
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setPaint(Color.BLACK);
+    g2.translate(x, y);
+    g2.fillRect(a, (h - b) / 2, w - a - a, b);
+    g2.dispose();
+  }
+  @Override public int getIconWidth() {
+    return icon.getIconWidth();
+  }
+  @Override public int getIconHeight() {
+    return icon.getIconHeight();
+  }
 }
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`UIManager.getIcon("CheckBox.icon");`で取得した非選択状態のチェックボックスアイコンの上に横棒を引いて不定状態のアイコンを作成しています。
 
-- 不定状態かどうかは、`JCheckBox#getIcon()`が`null`かどうかで判断する手抜き版
+- 不定状態かどうかは、`JCheckBox#getIcon()`が`null`かどうかで判断している
 - 横棒の色は`UIManager.getColor("CheckBox.foreground");`を使用しているが、`LookAndFeel`によっては無意味
 - [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://ateraimemo.com/Swing/TableHeaderCheckBox.html)で使用すると、`NimbusLookAndFeel`の場合だけ、アイコンと文字列のベースラインがずれる？
     - 文字列も`ImageIcon`にして回避

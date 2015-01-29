@@ -19,9 +19,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>final JInternalFrame internal = new JInternalFrame("@title@");
-BasicInternalFrameUI ui = (BasicInternalFrameUI)internal.getUI();
+BasicInternalFrameUI ui = (BasicInternalFrameUI) internal.getUI();
 Component title = ui.getNorthPane();
-for(MouseMotionListener l:title.getListeners(MouseMotionListener.class)) {
+for (MouseMotionListener l: title.getListeners(MouseMotionListener.class)) {
   title.removeMouseMotionListener(l);
 }
 DragWindowListener dwl = new DragWindowListener();
@@ -31,7 +31,7 @@ JPanel p = new JPanel(new BorderLayout());
 p.add(new JScrollPane(new JTree()));
 p.add(new JButton(new AbstractAction("close") {
   @Override public void actionPerformed(ActionEvent e) {
-    Window w = SwingUtilities.windowForComponent((Component)e.getSource());
+    Window w = SwingUtilities.windowForComponent((Component) e.getSource());
     //w.dispose();
     w.getToolkit().getSystemEventQueue().postEvent(
       new WindowEvent(w, WindowEvent.WINDOW_CLOSING));

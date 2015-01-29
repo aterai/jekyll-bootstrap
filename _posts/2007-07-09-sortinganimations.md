@@ -42,13 +42,13 @@ private final JComboBox algorithmsChoices = new JComboBox(SortAlgorithms.values(
 
 コード中で、どのアイテムが選択されているかなどを調べる場合などは、例えば以下のようにして使用します。
 
-<pre class="prettyprint"><code>switch((SortAlgorithms)algorithmsChoices.getSelectedItem()) {
-  case Isort:     isort(number);       break;
-  case Selsort:   ssort(number);       break;
-  case Shellsort: shellsort(number);   break;
-  case Hsort:     heapsort(number);    break;
-  case Qsort:     qsort(0, number-1);  break;
-  case Qsort2:    qsort2(0, number-1); break;
+<pre class="prettyprint"><code>switch ((SortAlgorithms) algorithmsChoices.getSelectedItem()) {
+  case Isort:     isort(number);         break;
+  case Selsort:   ssort(number);         break;
+  case Shellsort: shellsort(number);     break;
+  case Hsort:     heapsort(number);      break;
+  case Qsort:     qsort(0, number - 1);  break;
+  case Qsort2:    qsort2(0, number - 1); break;
 }
 </code></pre>
 

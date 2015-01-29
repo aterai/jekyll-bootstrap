@@ -26,7 +26,7 @@ comments: true
     @Override public void actionPerformed(ActionEvent e) {
       if (h &lt; END_HEIGHT) {
         table.setRowHeight(i, h++);
-      }else{
+      } else {
         ((Timer) e.getSource()).stop();
       }
     }

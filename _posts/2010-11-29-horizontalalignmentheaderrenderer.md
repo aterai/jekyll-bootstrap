@@ -24,7 +24,7 @@ comments: true
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {
     TableCellRenderer r = table.getTableHeader().getDefaultRenderer();
-    JLabel l = (JLabel)r.getTableCellRendererComponent(
+    JLabel l = (JLabel) r.getTableCellRendererComponent(
         table,value,isSelected,hasFocus,row,column);
     l.setHorizontalAlignment(horizontalAlignment);
     return l;
@@ -39,7 +39,7 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>((JLabel)table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+<pre class="prettyprint"><code>((JLabel) table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 </code></pre>
 
 - `Test2`:
@@ -53,10 +53,10 @@ comments: true
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {
     super.getTableCellRendererComponent(
-        table,value,isSelected,hasFocus,row,column);
+        table, value, isSelected, hasFocus, row, column);
     setHorizontalAlignment(SwingConstants.CENTER);
     return this;
-    }
+  }
 });
 </code></pre>
 
@@ -77,9 +77,9 @@ table.getColumnModel().getColumn(2).setHeaderRenderer(
 - - - -
 以下の方法でも `0`列目だけ中央揃えにすることが可能だが、初回が`WindowsLookAndFeel`などの`SystemLookAndFeel`の場合、`LookAndFeel`を変更すると`NullPointerException`が発生する(それ以外の場合でもヘッダの`LookAndFeel`が切り替わらない)。
 
-<pre class="prettyprint"><code>try{
+<pre class="prettyprint"><code>try {
   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-}catch(Exception e) {
+} catch (Exception e) {
   e.printStackTrace();
 }
 //...
@@ -88,11 +88,11 @@ final TableCellRenderer renderer = table.getTableHeader().getDefaultRenderer();
 table.getTableHeader().setDefaultRenderer(new TableCellRenderer() {
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
           boolean isSelected, boolean hasFocus, int row, int column) {
-    JLabel l = (JLabel)renderer.getTableCellRendererComponent(
-          table,value,isSelected,hasFocus,row,column);
-    if(table.convertColumnIndexToModel(column)==0) {
+    JLabel l = (JLabel) renderer.getTableCellRendererComponent(
+          table, value, isSelected, hasFocus, row, column);
+    if (table.convertColumnIndexToModel(column) == 0) {
       l.setHorizontalAlignment(SwingConstants.CENTER);
-    }else{
+    } else {
       l.setHorizontalAlignment(SwingConstants.LEFT);
     }
     return l;

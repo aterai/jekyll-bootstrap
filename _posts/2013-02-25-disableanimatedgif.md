@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JLabel label2 = new JLabel() {
   @Override public boolean imageUpdate(Image img, int infoflags, int x, int y, int w, int h) {
-    if(!isEnabled()) {
+    if (!isEnabled()) {
       infoflags &amp;= ~FRAMEBITS;
     }
     return super.imageUpdate(img, infoflags, x, y, w, h);

@@ -15,17 +15,17 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRQXIAu4I/AAAAAAAAAg4/bh8niw_k5AE/s800/ProgressMonitor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final ProgressMonitor monitor = new ProgressMonitor(this, "message", "note", 0, 100);
+<pre class="prettyprint"><code>final ProgressMonitor monitor = new ProgressMonitor(
+    this, "message", "note", 0, 100);
 monitor.setProgress(0);
 worker = new SwingWorker&lt;String, String&gt;() {
   @Override public String doInBackground() {
     int current = 0;
     int lengthOfTask = 120; //list.size();
-    while(current&lt;lengthOfTask &amp;&amp; !isCancelled()) {
-    //while(current&lt;lengthOfTask &amp;&amp; !monitor.isCanceled()) {
+    while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
       try {
         Thread.sleep(50);
-      }catch(InterruptedException ie) {
+      } catch (InterruptedException ie) {
         return "Interrupted";
       }
       setProgress(100 * current / lengthOfTask);
@@ -35,7 +35,7 @@ worker = new SwingWorker&lt;String, String&gt;() {
     return "Done";
   }
   @Override protected void process(java.util.List&lt;String&gt; chunks) {
-    for(String message : chunks) {
+    for (String message : chunks) {
       monitor.setNote(message);
     }
   }
@@ -43,18 +43,18 @@ worker = new SwingWorker&lt;String, String&gt;() {
     runButton.setEnabled(true);
     monitor.close();
     String text = null;
-    if(isCancelled()) {
+    if (isCancelled()) {
       text = "Cancelled";
-    }else{
+    } else {
       try {
         text = get();
-      }catch(Exception ex) {
+      } catch (Exception ex) {
         ex.printStackTrace();
         text = "Exception";
       }
     }
     //System.out.println(text);
-    area.append(text+"\n");
+    area.append(text + "\n");
     area.setCaretPosition(area.getDocument().getLength());
     //appendLine(text);
   }
@@ -77,10 +77,10 @@ worker.execute();
   }
   @Override public void propertyChange(PropertyChangeEvent e) {
     String strPropertyName = e.getPropertyName();
-    if("progress".equals(strPropertyName)) {
-      monitor.setProgress((Integer)e.getNewValue());
-      if(monitor.isCanceled()) {
-        ((SwingWorker)e.getSource()).cancel(true);
+    if ("progress".equals(strPropertyName)) {
+      monitor.setProgress((Integer) e.getNewValue());
+      if (monitor.isCanceled()) {
+        ((SwingWorker) e.getSource()).cancel(true);
       }
     }
   }

@@ -17,25 +17,25 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private static class MySpinnerUI extends BasicSpinnerUI {
   @Override protected Component createNextButton() {
-    JComponent nextButton = (JComponent)super.createNextButton();
+    JComponent nextButton = (JComponent) super.createNextButton();
     nextButton.setToolTipText("SpinnerUI: next next");
     return nextButton;
   }
   @Override protected Component createPreviousButton() {
-    JComponent previousButton = (JComponent)super.createPreviousButton();
+    JComponent previousButton = (JComponent) super.createPreviousButton();
     previousButton.setToolTipText("SpinnerUI: prev prev");
     return previousButton;
   }
 }
 </code></pre>
 <pre class="prettyprint"><code>private static void searchSpinnerButtons(Container comp) {
-  for(Component c: comp.getComponents()) {
-    if("Spinner.nextButton".equals(c.getName())) {
-      ((JButton)c).setToolTipText("getName: next next");
-    }else if("Spinner.previousButton".equals(c.getName())) {
-      ((JButton)c).setToolTipText("getName: prev prev");
-    }else if(c instanceof Container) {
-      searchSpinnerButtons((Container)c);
+  for (Component c: comp.getComponents()) {
+    if ("Spinner.nextButton".equals(c.getName())) {
+      ((JButton) c).setToolTipText("getName: next next");
+    } else if ("Spinner.previousButton".equals(c.getName())) {
+      ((JButton) c).setToolTipText("getName: prev prev");
+    } else if (c instanceof Container) {
+      searchSpinnerButtons((Container) c);
     }
   }
 }

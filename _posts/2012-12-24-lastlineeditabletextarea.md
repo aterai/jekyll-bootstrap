@@ -20,9 +20,9 @@ comments: true
   @Override public void insertString(
       DocumentFilter.FilterBypass fb, int offset, String string,
       AttributeSet attr) throws BadLocationException {
-    if(string == null) {
+    if (string == null) {
       return;
-    }else{
+    } else {
       replace(fb, offset, 0, string, attr);
     }
   }
@@ -40,17 +40,17 @@ comments: true
     int index = root.getElementIndex(offset);
     Element cur = root.getElement(index);
     int promptPosition = cur.getStartOffset()+PROMPT.length();
-    if(index==count-1 &amp;&amp; offset-promptPosition&gt;=0) {
-      if(text.equals("\n")) {
-        String line = doc.getText(promptPosition, offset-promptPosition);
+    if (index == count - 1 &amp;&amp; offset - promptPosition &gt;= 0) {
+      if (text.equals("\n")) {
+        String line = doc.getText(promptPosition, offset - promptPosition);
         String[] args = line.split(" ");
         String cmd = args[0];
-        if(cmd.isEmpty()) {
+        if (cmd.isEmpty()) {
           text = "";
-        }else{
+        } else {
           text = String.format("%n%s: command not found", cmd);
         }
-        text += "\n"+PROMPT;
+        text += "\n" + PROMPT;
       }
       fb.replace(offset, length, text, attrs);
     }

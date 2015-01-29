@@ -16,9 +16,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JFrame frame = new JFrame();
-try{
+try {
   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-}catch(Exception e) {
+} catch (Exception e) {
   e.printStackTrace();
 }
 //XXX: JFrame frame = new JFrame();
@@ -28,8 +28,8 @@ JRootPane root = frame.getRootPane();
 root.setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);
 JLayeredPane layeredPane = root.getLayeredPane();
 Component c = layeredPane.getComponent(1);
-if(c instanceof JComponent) {
-  JComponent orgTitlePane = (JComponent)c;
+if (c instanceof JComponent) {
+  JComponent orgTitlePane = (JComponent) c;
   orgTitlePane.setVisible(false);
   //layeredPane.remove(orgTitlePane);
 }
@@ -38,8 +38,8 @@ if(c instanceof JComponent) {
 //dummyTitlePane.setVisible(true);
 
 JPanel p = new JPanel(new BorderLayout());
-p.setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-p.setBackground(new Color(1f,1f,1f,.01f));
+p.setBorder(BorderFactory.createEmptyBorder(2, 2, 2, 2));
+p.setBackground(new Color(1f, 1f, 1f, .01f));
 
 p.add(internalFrame);
 frame.getContentPane().add(p);
@@ -66,9 +66,9 @@ frame.getContentPane().add(p);
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>for(Window window: Frame.getWindows()) {
-  if(window instanceof RootPaneContainer) {
-    RootPaneContainer rpc = (RootPaneContainer)window;
+<pre class="prettyprint"><code>for (Window window: Frame.getWindows()) {
+  if (window instanceof RootPaneContainer) {
+    RootPaneContainer rpc = (RootPaneContainer) window;
     SwingUtilities.updateComponentTreeUI(rpc.getContentPane());
   }
 }

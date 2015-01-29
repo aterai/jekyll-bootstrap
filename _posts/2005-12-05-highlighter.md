@@ -16,17 +16,17 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>jtc.getHighlighter().removeAllHighlights();
-try{
+try {
   Highlighter highlighter = jtc.getHighlighter();
   Document doc = jtc.getDocument();
   String text = doc.getText(0, doc.getLength());
   Matcher matcher = Pattern.compile(pattern).matcher(text);
   int pos = 0;
-  while(matcher.find(pos)) {
+  while (matcher.find(pos)) {
     pos = matcher.end();
     highlighter.addHighlight(matcher.start(), pos, highlightPainter);
   }
-}catch(BadLocationException e) {
+} catch (BadLocationException e) {
   e.printStackTrace();
 }
 </code></pre>
@@ -38,6 +38,7 @@ try{
 
 ## 参考リンク
 - [Swing - Searching text in files & highlighting that text](https://community.oracle.com/thread/1387954)
+- [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/Swing/HighlightTextForeground.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -53,28 +54,30 @@ try{
 };
 private final String[] pattern = {"Swing", "win"};
 public void setHighlight(JTextComponent jtc, String[] pattern) {
-  try{
+  try {
     Highlighter hilite = jtc.getHighlighter();
     hilite.removeAllHighlights();
     Document doc = jtc.getDocument();
     String text = doc.getText(0, doc.getLength());
-    for(int i=0;i&lt;pattern.length;i++) {
+    for (int i = 0; i &lt; pattern.length; i++) {
       int pos = 0;
-      while((pos = text.indexOf(pattern[i], pos)) &gt;= 0) {
+      while ((pos = text.indexOf(pattern[i], pos)) &gt;= 0) {
         hilite.addHighlight(pos, pos+pattern[i].length(), highlightPainter[i]);
         pos += pattern[i].length();
       }
     }
-  }catch(BadLocationException e) { e.printStackTrace(); }
+  } catch (BadLocationException e) {
+    e.printStackTrace();
+  }
 }
 </code></pre>
 
 - こんな簡単にハイライトできるとは！。正規表現で実装すると開始位置と終了位置がより簡単で、しかも複雑にできるかも。 -- *eternalharvest* 2008-08-28 (木) 02:20:11
-    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ:[Swing - Content-Overlay in JTextPane](https://community.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。 -- *aterai* 2008-09-01 (月) 13:47:05
+    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ:[Swing - Content-Overlay in JTextPane](https://community.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。追記2: このサンプルでも正規表現を使用するように変更。 -- *aterai* 2008-09-01 (月) 13:47:05
 - こんにちは。Cakaiと申します。ハイライトされているテキストのカラーを設定することがありますか？ -- *Caokai* 2009-10-15 (Thu) 23:12:47
     - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html) -- *aterai* 2009-10-16 (金) 13:04:32
         - 用途によっては、[JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)なども使えるかもしれません。
-    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/HighlightTextForeground.html)にサンプルソースコードを移動。
+    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/Swing/HighlightTextForeground.html)にサンプルソースコードを移動。
 - わかりました。ほんとにありがとうございました。 -- *Caokai* 2009-10-16 (Fri) 16:42:07
 
 <!-- dummy comment line for breaking list -->

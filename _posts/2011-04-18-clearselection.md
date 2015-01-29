@@ -22,9 +22,9 @@ comments: true
     list.getSelectionModel().setLeadSelectionIndex(-1);
   }
   private static boolean contains(JList list, Point pt) {
-    for(int i=0;i&lt;list.getModel().getSize();i++) {
+    for (int i = 0; i &lt; list.getModel().getSize(); i++) {
       Rectangle r = list.getCellBounds(i, i);
-      if(r.contains(pt)) return true;
+      if (r.contains(pt)) return true;
     }
     return false;
   }
@@ -32,7 +32,7 @@ comments: true
   @Override public void mousePressed(MouseEvent e) {
     JList list = (JList)e.getSource();
     startOutside = !contains(list, e.getPoint());
-    if(startOutside) {
+    if (startOutside) {
       clearSelectionAndFocus(list);
     }
   }
@@ -40,10 +40,10 @@ comments: true
     startOutside = false;
   }
   @Override public void mouseDragged(MouseEvent e) {
-    JList list = (JList)e.getSource();
-    if(contains(list, e.getPoint())) {
+    JList list = (JList) e.getSource();
+    if (contains(list, e.getPoint())) {
       startOutside = false;
-    }else if(startOutside) {
+    } else if (startOutside) {
       clearSelectionAndFocus(list);
     }
   }

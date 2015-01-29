@@ -40,21 +40,23 @@ comments: true
 </code></pre>
 <pre class="prettyprint"><code>class CheckBoxNodeRenderer extends JCheckBox implements TreeCellRenderer {
   @Override public Component getTreeCellRendererComponent(JTree tree,
-      Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
+      Object value, boolean selected, boolean expanded,
+      boolean leaf, int row, boolean hasFocus) {
     this.tree = tree;
-    if(leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
+    if (leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
       this.setEnabled(tree.isEnabled());
       this.setFont(tree.getFont());
       this.setOpaque(false);
-      Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject instanceof CheckBoxNode) {
-        CheckBoxNode node = (CheckBoxNode)userObject;
+      Object userObject = ((DefaultMutableTreeNode) value).getUserObject();
+      if (userObject instanceof CheckBoxNode) {
+        CheckBoxNode node = (CheckBoxNode) userObject;
         this.setText(node.text);
         this.setSelected(node.selected);
       }
       return this;
     }
-    return renderer.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
+    return renderer.getTreeCellRendererComponent(
+        tree, value, selected, expanded, leaf, row, hasFocus);
   }
   private JTree tree = null;
   private DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
@@ -80,11 +82,11 @@ comments: true
   }
   @Override public Component getTreeCellEditorComponent(JTree tree,
       Object value, boolean isSelected, boolean expanded, boolean leaf, int row) {
-    if(leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
-      Object userObject = ((DefaultMutableTreeNode)value).getUserObject();
-      if(userObject instanceof CheckBoxNode) {
-        this.setSelected(((CheckBoxNode)userObject).selected);
-      }else{
+    if (leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
+      Object userObject = ((DefaultMutableTreeNode) value).getUserObject();
+      if (userObject instanceof CheckBoxNode) {
+        this.setSelected(((CheckBoxNode) userObject).selected);
+      } else {
         this.setSelected(false);
       }
       this.setText(value.toString());
@@ -95,12 +97,12 @@ comments: true
     return new CheckBoxNode(getText(), isSelected());
   }
   @Override public boolean isCellEditable(EventObject e) {
-    if(e instanceof MouseEvent) {
+    if (e instanceof MouseEvent) {
       TreePath path = tree.getPathForLocation(
-          ((MouseEvent)e).getX(), ((MouseEvent)e).getY());
+          ((MouseEvent) e).getX(), ((MouseEvent) e).getY());
       Object o = path.getLastPathComponent();
-      if(o instanceof TreeNode) {
-        return ((TreeNode)o).isLeaf();
+      if (o instanceof TreeNode) {
+        return ((TreeNode) o).isLeaf();
       }
     }
     return false;

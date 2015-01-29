@@ -21,7 +21,7 @@ comments: true
   public static final String COMMENT = "コメント";
   private final Vector list = new Vector();
   public TestModel() {
-    super(new String[]{NUMBER, MASTER, COMMENT}, 0);
+    super(new String[] {NUMBER, MASTER, COMMENT}, 0);
   }
   public void addRow(Test tst) {
     list.add(tst);
@@ -32,11 +32,10 @@ comments: true
   public void filterRows(boolean flg) {
     //Vector v = new Vector(list.size());
     dataVector.clear();
-    for(int i=0;i&lt;list.size();i++) {
-      //if(flg &amp;&amp; i%2!=0) continue;
-      if(flg &amp;&amp; i%2==0) continue;
-      Test t = (Test)list.elementAt(i);
-      Object[] o = {Integer.valueOf(i+1), t.getName(), t.getComment()};
+    for (int i = 0; i &lt; list.size(); i++) {
+      if (flg &amp;&amp; i % 2 == 0) continue;
+      Test t = (Test) list.elementAt(i);
+      Object[] o = {Integer.valueOf(i + 1), t.getName(), t.getComment()};
       //v.add(convertToVector(o));
       dataVector.add(convertToVector(o));
     }

@@ -30,12 +30,12 @@ table.setDefaultEditor(Object.class, new DefaultCellEditor(field));
   @Override public Component prepareEditor(
       TableCellEditor editor, int row, int column) {
     Component c = super.prepareEditor(editor, row, column);
-    if(c instanceof JCheckBox) {
-      JCheckBox b = (JCheckBox)c;
+    if (c instanceof JCheckBox) {
+      JCheckBox b = (JCheckBox) c;
       b.setBorderPainted(true);
       b.setBackground(getSelectionBackground());
-    }else if(c instanceof JComponent &amp;&amp; convertColumnIndexToModel(column)==1) {
-      ((JComponent)c).setBorder(
+    } else if (c instanceof JComponent &amp;&amp; convertColumnIndexToModel(column) == 1) {
+      ((JComponent) c).setBorder(
         BorderFactory.createLineBorder(Color.GREEN, 2));
     }
     return c;
