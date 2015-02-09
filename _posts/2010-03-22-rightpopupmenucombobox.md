@@ -19,10 +19,10 @@ comments: true
   @Override public void popupMenuWillBecomeVisible(final PopupMenuEvent e) {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
-        JComboBox combo = (JComboBox)e.getSource();
+        JComboBox combo = (JComboBox) e.getSource();
         Accessible a = combo.getUI().getAccessibleChild(combo, 0);
-        if(a instanceof BasicComboPopup) {
-          BasicComboPopup pop = (BasicComboPopup)a;
+        if (a instanceof BasicComboPopup) {
+          BasicComboPopup pop = (BasicComboPopup) a;
           Point p = new Point(combo.getSize().width, 0);
           SwingUtilities.convertPointToScreen(p, combo);
           pop.setLocation(p);
@@ -41,7 +41,7 @@ comments: true
 - - - -
 `JComboBox`の矢印アイコンも、以下のようにして変更しています。
 
-<pre class="prettyprint"><code>combo2.setUI(new com.sun.java.swing.plaf.windows.WindowsComboBoxUI() {
+<pre class="prettyprint"><code>combo2.setUI(new WindowsComboBoxUI() {
   @Override protected JButton createArrowButton() {
     JButton button = new JButton(icon) {
       @Override public Dimension getPreferredSize() {

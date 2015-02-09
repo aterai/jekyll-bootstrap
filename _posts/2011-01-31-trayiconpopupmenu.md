@@ -34,7 +34,7 @@ popup.addPopupMenuListener(new PopupMenuListener() {
 });
 icon.addMouseListener(new MouseAdapter() {
   private void showJPopupMenu(MouseEvent e) {
-    if(e.isPopupTrigger()) {
+    if (e.isPopupTrigger()) {
       Point p = adjustPopupLocation(popup, e.getX(), e.getY());
       dummy.setLocation(p);
       dummy.setVisible(true);
@@ -67,8 +67,9 @@ icon.addMouseListener(new MouseAdapter() {
 <pre class="prettyprint"><code>//Copied from JPopupMenu.java: JPopupMenu#adjustPopupLocationToFitScreen(...)
 private static Point adjustPopupLocation(JPopupMenu popup, int xposition, int yposition) {
   Point p = new Point(xposition, yposition);
-  if (GraphicsEnvironment.isHeadless()) return p;
-
+  if (GraphicsEnvironment.isHeadless()) {
+    return p;
+  }
   Rectangle screenBounds;
   GraphicsConfiguration gc = null;
   // Try to find GraphicsConfiguration, that includes mouse pointer position

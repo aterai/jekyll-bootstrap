@@ -27,7 +27,7 @@ comments: true
     cbox.setFocusPainted(false);
     cbox.addMouseListener(new MouseAdapter() {
       @Override public void mouseClicked(MouseEvent me) {
-        JCheckBox cb = (JCheckBox)me.getSource();
+        JCheckBox cb = (JCheckBox) me.getSource();
         cb.setSelected(!cb.isSelected());
       }
     });
@@ -37,20 +37,24 @@ comments: true
     int xx = tab.getSize().width - size.width;
     Rectangle lastTab = tab.getUI().getTabBounds(tab, tab.getTabCount()-1);
     int tabEnd = lastTab.x + lastTab.width;
-    if(xx&lt;tabEnd) xx = tabEnd;
+    if (xx &lt; tabEnd) {
+      xx = tabEnd;
+    }
     rect = new Rectangle(xx, -2, size.width, size.height);
     SwingUtilities.paintComponent(g, cbox, dummy, rect);
   }
   @Override public Insets getBorderInsets(Component c) {
-    return new Insets(0,0,0,0);
+    return new Insets(0, 0, 0, 0);
   }
   @Override public boolean isBorderOpaque() {
     return true;
   }
   private void dispatchEvent(MouseEvent me) {
-    if(rect==null || !rect.contains(me.getX(), me.getY())) return;
+    if (rect == null || !rect.contains(me.getX(), me.getY())) {
+      return;
+    }
     cbox.setBounds(rect);
-    cbox.dispatchEvent(SwingUtilities.convertMouseEvent(tab,me,cbox));
+    cbox.dispatchEvent(SwingUtilities.convertMouseEvent(tab, me, cbox));
   }
   @Override public void mouseClicked(MouseEvent me)  { dispatchEvent(me); }
   @Override public void mouseEntered(MouseEvent me)  { dispatchEvent(me); }

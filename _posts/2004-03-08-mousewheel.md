@@ -17,15 +17,14 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>spinner.addMouseWheelListener(new MouseWheelListener() {
   @Override public void mouseWheelMoved(MouseWheelEvent e) {
-    JSpinner source = (JSpinner)e.getSource();
-    SpinnerNumberModel model = (SpinnerNumberModel)source.getModel();
-    Integer oldValue = (Integer)source.getValue();
-    int newValue = oldValue.intValue()
-                  -e.getWheelRotation()*model.getStepSize().intValue();
-    int max = ((Integer)model.getMaximum()).intValue(); //1000
-    int min = ((Integer)model.getMinimum()).intValue(); //0
-    if(min&lt;=newValue &amp;&amp; newValue&lt;=max) {
-      source.setValue(newValue);
+    JSpinner source = (JSpinner) e.getComponent();
+    SpinnerNumberModel model = (SpinnerNumberModel) source.getModel();
+    Integer oldValue = (Integer) source.getValue();
+    int intValue = oldValue.intValue() - e.getWheelRotation() * model.getStepSize().intValue();
+    int max = ((Integer) model.getMaximum()).intValue(); //1000
+    int min = ((Integer) model.getMinimum()).intValue(); //0
+    if (min &lt;= intValue &amp;&amp; intValue &lt;= max) {
+      source.setValue(intValue);
     }
   }
 });

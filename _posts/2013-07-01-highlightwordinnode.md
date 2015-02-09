@@ -36,10 +36,10 @@ comments: true
     getHighlighter().removeAllHighlights();
     setText(txt);
     setBackground(isSelected ? backgroundSelectionColor : Color.WHITE);
-    if(q!=null &amp;&amp; !q.isEmpty() &amp;&amp; txt.startsWith(q)) {
+    if (q != null &amp;&amp; !q.isEmpty() &amp;&amp; txt.startsWith(q)) {
       try {
         getHighlighter().addHighlight(0, q.length(), highlightPainter);
-      } catch(BadLocationException e) {
+      } catch (BadLocationException e) {
         e.printStackTrace();
       }
     }

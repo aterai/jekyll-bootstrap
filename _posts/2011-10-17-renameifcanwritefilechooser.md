@@ -15,21 +15,24 @@ comments: true
 {% download https://lh5.googleusercontent.com/-7ODSj6DaIig/TpsQEay0NqI/AAAAAAAABDs/8fz14wjADj0/s800/RenameIfCanWriteFileChooser.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class CanWriteFileChooserUI extends MetalFileChooserUI{
-  protected CanWriteFileChooserUI(JFileChooser chooser) {
+<pre class="prettyprint"><code>class MetalCanWriteFileChooserUI extends MetalFileChooserUI {
+  private BasicDirectoryModel model2;
+  protected MetalCanWriteFileChooserUI(JFileChooser chooser) {
     super(chooser);
   }
   public static ComponentUI createUI(JComponent c) {
-    return new CanWriteFileChooserUI((JFileChooser)c);
+    if (c instanceof JFileChooser) {
+      return new MetalCanWriteFileChooserUI((JFileChooser) c);
+    }
+    throw new InternalError("Should never happen");
   }
-  private BasicDirectoryModel model2 = null;
   @Override public void createModel() {
-    if(model2!=null) {
+    if (model2 != null) {
       model2.invalidateFileCache();
     }
     model2 = new BasicDirectoryModel(getFileChooser()) {
       @Override public boolean renameFile(File oldFile, File newFile) {
-        return oldFile.canWrite()?super.renameFile(oldFile, newFile):false;
+        return oldFile.canWrite() ? super.renameFile(oldFile, newFile) : false;
       }
     };
   }

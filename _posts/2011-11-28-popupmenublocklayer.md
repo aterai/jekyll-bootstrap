@@ -16,36 +16,40 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class DisableInputLayerUI extends LayerUI&lt;JComponent&gt; {
-  private static final MouseAdapter dummyMouseListener = new MouseAdapter() {};
-  private boolean isBlocking = false;
+  private final transient MouseAdapter dummyMouseListener = new MouseAdapter() {};
+  private boolean isBlocking;
   @Override public void installUI(JComponent c) {
     super.installUI(c);
-    JLayer jlayer = (JLayer)c;
-    jlayer.getGlassPane().addMouseListener(dummyMouseListener);
-    jlayer.setLayerEventMask(
-      AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK |
-      AWTEvent.MOUSE_WHEEL_EVENT_MASK | AWTEvent.KEY_EVENT_MASK);
+    if (c instanceof JLayer) {
+      JLayer jlayer = (JLayer) c;
+      jlayer.getGlassPane().addMouseListener(dummyMouseListener);
+      jlayer.setLayerEventMask(
+          AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK
+        | AWTEvent.MOUSE_WHEEL_EVENT_MASK | AWTEvent.KEY_EVENT_MASK);
+    }
   }
   @Override public void uninstallUI(JComponent c) {
-    JLayer jlayer = (JLayer)c;
-    jlayer.setLayerEventMask(0);
-    jlayer.getGlassPane().removeMouseListener(dummyMouseListener);
+    if (c instanceof JLayer) {
+      JLayer jlayer = (JLayer) c;
+      jlayer.setLayerEventMask(0);
+      jlayer.getGlassPane().removeMouseListener(dummyMouseListener);
+    }
     super.uninstallUI(c);
   }
   @Override public void eventDispatched(AWTEvent e, JLayer l) {
-    if(isBlocking &amp;&amp; e instanceof InputEvent) {
-      ((InputEvent)e).consume();
+    if (isBlocking &amp;&amp; e instanceof InputEvent) {
+      ((InputEvent) e).consume();
     }
   }
   private static final String CMD_REPAINT = "lock";
   public void setLocked(boolean flag) {
-    firePropertyChange(CMD_REPAINT,isBlocking,flag);
+    firePropertyChange(CMD_REPAINT, isBlocking, flag);
     isBlocking = flag;
   }
   @Override public void applyPropertyChange(PropertyChangeEvent pce, JLayer l) {
     String cmd = pce.getPropertyName();
-    if(CMD_REPAINT.equals(cmd)) {
-      l.getGlassPane().setVisible((Boolean)pce.getNewValue());
+    if (CMD_REPAINT.equals(cmd)) {
+      l.getGlassPane().setVisible((Boolean) pce.getNewValue());
     }
   }
 }

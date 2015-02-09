@@ -21,18 +21,18 @@ comments: true
     super();
     add(new AbstractAction("path") {
       @Override public void actionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(null, tsp, "path",
-          JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(
+          null, tsp, "path", JOptionPane.INFORMATION_MESSAGE);
       }
     });
     add(new JMenuItem("dummy"));
   }
   @Override public void show(Component c, int x, int y) {
-    JTree tree = (JTree)c;
+    JTree tree = (JTree) c;
     tsp = tree.getSelectionPaths();
-    if(tsp!=null) {
+    if (tsp != null) {
       TreePath path = tree.getPathForLocation(x, y);
-      if(path!=null &amp;&amp; Arrays.asList(tsp).contains(path)) {
+      if (path != null &amp;&amp; Arrays.asList(tsp).contains(path)) {
         super.show(c, x, y);
       }
     }

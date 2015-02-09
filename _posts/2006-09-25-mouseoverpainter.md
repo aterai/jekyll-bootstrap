@@ -16,24 +16,30 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class HighlightCursorTextArea extends JTextArea {
-  public HighlightCursorTextArea() {
-    super();
+  private static final Color LINE_COLOR = new Color(250, 250, 220);
+  private int rollOverRowIndex = -1;
+  private MouseAdapter rolloverHandler;
+
+  @Override public void updateUI() {
+    removeMouseMotionListener(rolloverHandler);
+    removeMouseListener(rolloverHandler);
+    super.updateUI();
     setOpaque(false);
-    RollOverListener rol = new RollOverListener();
-    addMouseMotionListener(rol);
-    addMouseListener(rol);
+    setBackground(new Color(0, true)); // Nimbus
+    rolloverHandler = new RollOverListener();
+    addMouseMotionListener(rolloverHandler);
+    addMouseListener(rolloverHandler);
   }
-  private final Color linecolor = new Color(250,250,220);
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D) g;
+    Graphics2D g2 = (Graphics2D) g.create();
     Insets i = getInsets();
     int h = g2.getFontMetrics().getHeight();
-    int y = rollOverRowIndex*h+i.top;
-    g2.setPaint(linecolor);
-    g2.fillRect(i.left, y, getSize().width-i.left-i.right, h);
+    int y = rollOverRowIndex * h + i.top;
+    g2.setPaint(LINE_COLOR);
+    g2.fillRect(i.left, y, getSize().width - i.left - i.right, h);
+    g2.dispose();
     super.paintComponent(g);
   }
-  private int rollOverRowIndex = -1;
   private class RollOverListener extends MouseInputAdapter {
     @Override public void mouseExited(MouseEvent e) {
       rollOverRowIndex = -1;
@@ -41,12 +47,12 @@ comments: true
     }
     @Override public void mouseMoved(MouseEvent e) {
       int row = getLineAtPoint(e.getPoint());
-      if(row != rollOverRowIndex) {
+      if (row != rollOverRowIndex) {
         rollOverRowIndex = row;
         repaint();
       }
     }
-    @Override public int getLineAtPoint(Point pt) {
+    public int getLineAtPoint(Point pt) {
       Element root = getDocument().getDefaultRootElement();
       return root.getElementIndex(viewToModel(pt));
     }

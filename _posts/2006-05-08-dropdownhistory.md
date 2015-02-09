@@ -15,13 +15,15 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL-2krEbI/AAAAAAAAAYc/9yTnbMmSi1Q/s800/DropDownHistory.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>public boolean addItem(JComboBox combo, String str, int max) {
-  if(str==null || str.length()==0) return false;
+<pre class="prettyprint"><code>public static boolean addItem(JComboBox&lt;String&gt; combo, String str, int max) {
+  if (str == null || str.length() == 0) {
+    return false;
+  }
   combo.setVisible(false);
-  DefaultComboBoxModel model = (DefaultComboBoxModel) combo.getModel();
+  DefaultComboBoxModel&lt;String&gt; model = (DefaultComboBoxModel&lt;String&gt;) combo.getModel();
   model.removeElement(str);
   model.insertElementAt(str, 0);
-  if(model.getSize()&gt;max) {
+  if (model.getSize() &gt; max) {
     model.removeElementAt(max);
   }
   combo.setSelectedIndex(0);

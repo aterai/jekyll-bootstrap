@@ -19,17 +19,17 @@ comments: true
   private final JTextField textField = new JTextField(10);
   private final Action renameAction = new AbstractAction("rename") {
     @Override public void actionPerformed(ActionEvent e) {
-      JTabbedPane t = (JTabbedPane)getInvoker();
+      JTabbedPane t = (JTabbedPane) getInvoker();
       int idx = t.getSelectedIndex();
       String title = t.getTitleAt(idx);
       textField.setText(title);
-      int result = JOptionPane.showConfirmDialog(
-        t, textField, "Rename", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-      if(result==JOptionPane.OK_OPTION) {
+      int result = JOptionPane.showConfirmDialog(t, textField, "Rename",
+          JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+      if (result == JOptionPane.OK_OPTION) {
         String str = textField.getText();
-        if(!str.trim().isEmpty()) {
+        if (!str.trim().isEmpty()) {
           t.setTitleAt(idx, str);
-          JComponent c = (JComponent)t.getTabComponentAt(idx);
+          JComponent c = (JComponent) t.getTabComponentAt(idx);
           c.revalidate();
         }
       }
@@ -37,7 +37,7 @@ comments: true
   };
   private final Action newTabAction = new AbstractAction("new tab") {
     @Override public void actionPerformed(ActionEvent evt) {
-      JTabbedPane t = (JTabbedPane)getInvoker();
+      JTabbedPane t = (JTabbedPane) getInvoker();
       int count = t.getTabCount();
       String title = "Tab " + count;
       t.add(title, new JLabel(title));
@@ -46,7 +46,7 @@ comments: true
   };
   private final Action closeAllAction = new AbstractAction("close all") {
     @Override public void actionPerformed(ActionEvent evt) {
-      JTabbedPane t = (JTabbedPane)getInvoker();
+      JTabbedPane t = (JTabbedPane) getInvoker();
       t.removeAll();
     }
   };
@@ -65,8 +65,8 @@ comments: true
     add(closeAllAction);
   }
   @Override public void show(Component c, int x, int y) {
-    JTabbedPane t = (JTabbedPane)c;
-    renameAction.setEnabled(t.indexAtLocation(x, y)&gt;=0);
+    JTabbedPane t = (JTabbedPane) c;
+    renameAction.setEnabled(t.indexAtLocation(x, y) &gt;= 0);
     super.show(c, x, y);
   }
 };

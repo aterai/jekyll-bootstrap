@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class AnimeListCellRenderer extends JPanel implements ListCellRenderer {
-  private static final Color selectedColor = new Color(230,230,255);
+  private static final Color selectedColor = new Color(230, 230, 255);
   private final AnimeIcon icon = new AnimeIcon();
   private final MarqueeLabel label = new MarqueeLabel();
   private final javax.swing.Timer animator;
@@ -28,7 +28,9 @@ comments: true
     animator = new Timer(80, new ActionListener() {
       @Override public void actionPerformed(ActionEvent e) {
         int i = l.getSelectedIndex();
-        if(isRunning=(i&gt;=0)) l.repaint(l.getCellBounds(i,i));
+        if (isRunning = (i &gt;= 0)) {
+          l.repaint(l.getCellBounds(i, i));
+        }
       }
     });
     setOpaque(true);
@@ -37,14 +39,14 @@ comments: true
     animator.start();
   }
   @Override public Component getListCellRendererComponent(JList list, Object object,
-            int index, boolean isSelected, boolean cellHasFocus) {
+      int index, boolean isSelected, boolean cellHasFocus) {
     setBackground(isSelected ? selectedColor : list.getBackground());
-    label.setText((object==null) ? "" : object.toString());
+    label.setText((object == null) ? "" : object.toString());
     animate_index = index;
     return this;
   }
   private boolean isAnimatingCell() {
-    return isRunning &amp;&amp; animate_index==list.getSelectedIndex();
+    return isRunning &amp;&amp; animate_index == list.getSelectedIndex();
   }
   int animate_index = -1;
   private class MarqueeLabel extends JLabel {

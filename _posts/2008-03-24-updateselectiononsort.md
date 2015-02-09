@@ -40,7 +40,9 @@ comments: true
 
 <pre class="prettyprint"><code>table.getTableHeader().addMouseListener(new MouseAdapter() {
   @Override public void mouseClicked(MouseEvent e) { //mousePressed(MouseEvent e) {
-    if(table.isEditing()) table.getCellEditor().stopCellEditing();
+    if (table.isEditing()) {
+      table.getCellEditor().stopCellEditing();
+    }
     table.clearSelection();
   }
 });

@@ -16,18 +16,17 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class FontRotateAnimation extends JComponent implements ActionListener {
-  private final javax.swing.Timer animator;
+  private final Timer animator;
   private int rotate;
   private final Shape shape;
   private Shape s;
   public FontRotateAnimation(String str) {
     super();
-    animator = new javax.swing.Timer(5, this);
+    animator = new Timer(10, this);
     addHierarchyListener(new HierarchyListener() {
       @Override public void hierarchyChanged(HierarchyEvent e) {
-        JComponent c = (JComponent)e.getSource();
-        if((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED)!=0 &amp;&amp;
-           animator!=null &amp;&amp; !c.isDisplayable()) {
+        if ((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0
+            &amp;&amp; animator != null &amp;&amp; !e.getComponent().isDisplayable()) {
           animator.stop();
         }
       }
@@ -39,25 +38,26 @@ comments: true
     animator.start();
   }
   @Override public void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D) g;
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                         RenderingHints.VALUE_ANTIALIAS_ON);
     g2.setPaint(Color.BLACK);
     g2.fill(s);
+    g2.dispose();
   }
   @Override public void actionPerformed(ActionEvent e) {
     repaint(s.getBounds());
     Rectangle2D b = shape.getBounds();
     Point2D.Double p = new Point2D.Double(
-        b.getX() + b.getWidth()/2d, b.getY() + b.getHeight()/2d);
+        b.getX() + b.getWidth() / 2d, b.getY() + b.getHeight() / 2d);
     AffineTransform at = AffineTransform.getRotateInstance(
         Math.toRadians(rotate), p.getX(), p.getY());
     AffineTransform toCenterAT = AffineTransform.getTranslateInstance(
-        getWidth()/2d - p.getX(), getHeight()/2d - p.getY());
+        getWidth() / 2d - p.getX(), getHeight() / 2d - p.getY());
     Shape s1 = at.createTransformedShape(shape);
     s = toCenterAT.createTransformedShape(s1);
     repaint(s.getBounds());
-    rotate = (rotate&gt;=360) ? 0 : rotate+2;
+    rotate = rotate &gt;= 360 ? 0 : rotate + 2;
   }
 }
 </code></pre>

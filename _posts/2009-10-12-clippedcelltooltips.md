@@ -20,20 +20,20 @@ comments: true
   @Override public Component getTableCellRendererComponent(JTable table,
       Object value,boolean isSelected,boolean hasFocus,int row,int column) {
     TableCellRenderer renderer = table.getTableHeader().getDefaultRenderer();
-    JLabel l = (JLabel)renderer.getTableCellRendererComponent(
+    JLabel l = (JLabel) renderer.getTableCellRendererComponent(
       table, value, isSelected, hasFocus, row, column);
     Insets i = l.getInsets();
     Rectangle rect = table.getCellRect(row, column, false);
     rect.width -= i.left + i.right;
     RowSorter&lt;? extends TableModel&gt; sorter = table.getRowSorter();
-    if(sorter!=null &amp;&amp; !sorter.getSortKeys().isEmpty()
-                    &amp;&amp; sorter.getSortKeys().get(0).getColumn()==column) {
+    if (sorter != null &amp;&amp; !sorter.getSortKeys().isEmpty()
+                       &amp;&amp; sorter.getSortKeys().get(0).getColumn() == column) {
       rect.width -= icon.getIconWidth() + 2; //XXX
     }
     FontMetrics fm = l.getFontMetrics(l.getFont());
     String str = value.toString();
     int cellTextWidth = fm.stringWidth(str);
-    l.setToolTipText(cellTextWidth&gt;rect.width?str:null);
+    l.setToolTipText(cellTextWidth &gt; rect.width ? str : null);
     return l;
   }
 }
@@ -54,8 +54,8 @@ comments: true
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
     Component c = super.prepareRenderer(tcr, row, column);
-    if(c instanceof JComponent) {
-       JComponent l = (JComponent)c;
+    if (c instanceof JComponent) {
+       JComponent l = (JComponent) c;
        Object o = getValueAt(row, column);
        Insets i = l.getInsets();
        Rectangle rect = getCellRect(row, column, false);
@@ -63,7 +63,7 @@ comments: true
        FontMetrics fm = l.getFontMetrics(l.getFont());
        String str = o.toString();
        int cellTextWidth = fm.stringWidth(str);
-       l.setToolTipText(cellTextWidth&gt;rect.width?str:null);
+       l.setToolTipText(cellTextWidth &gt; rect.width ? str : null);
     }
     return c;
   }

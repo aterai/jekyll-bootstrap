@@ -92,7 +92,7 @@ comments: true
       //panel.add(this, BorderLayout.WEST);
     }
     //???#1: JDK 1.6.0 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
-    //if(System.getProperty("java.version").startsWith("1.6.0")) {
+    //if (System.getProperty("java.version").startsWith("1.6.0")) {
     //  renderer = new DefaultTreeCellRenderer();
     //}
   }
@@ -157,7 +157,7 @@ comments: true
     }
     setName("Tree.cellRenderer");
     //???#1: JDK 1.6.0 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
-    //if(System.getProperty("java.version").startsWith("1.6.0")) {
+    //if (System.getProperty("java.version").startsWith("1.6.0")) {
     //  renderer = new DefaultTreeCellRenderer();
     //}
   }
@@ -213,6 +213,7 @@ comments: true
 ## 参考リンク
 - [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)
 - [JCheckBoxに不定状態のアイコンを追加する](http://ateraimemo.com/Swing/TriStateCheckBox.html)
+- [JCheckBox付きJTreeでディレクトリ構造を表示](http://ateraimemo.com/Swing/FileSystemTreeWithCheckBox.html)
 
 <!-- dummy comment line for breaking list -->
 

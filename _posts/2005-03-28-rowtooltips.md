@@ -19,8 +19,8 @@ comments: true
   @Override public String getToolTipText(MouseEvent e) {
     int row = convertRowIndexToModel(rowAtPoint(e.getPoint()));
     TableModel m = getModel();
-    return "&lt;html&gt;"+m.getValueAt(row, 1)+"&lt;br&gt;"
-                   +m.getValueAt(row, 2)+"&lt;/html&gt;";
+    return "&lt;html&gt;" + m.getValueAt(row, 1) + "&lt;br&gt;"
+                    + m.getValueAt(row, 2) + "&lt;/html&gt;";
   }
 };
 </code></pre>
@@ -34,20 +34,19 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 
-
 - - - -
 以下のように、`JTable#prepareRenderer`メソッドや、`CellRenderer`などで`setToolTipText`を使用する方法でも、ツールチップを設定することができます。
 
 <pre class="prettyprint"><code>JTable table = new JTable() {
   @Override public Component prepareRenderer(
-        TableCellRenderer tcr, int row, int column) {
+      TableCellRenderer tcr, int row, int column) {
     Component c = super.prepareRenderer(tcr, row, column);
-    if(c instanceof JComponent) {
+    if (c instanceof JComponent) {
       int mr = convertRowIndexToModel(row);
       int mc = convertColumnIndexToModel(column);
       Object o = getModel().getValueAt(mr, mc);
-      String s = (o!=null)?o.toString():null;
-      ((JComponent)c).setToolTipText(s.isEmpty()?null:s);
+      String s = (o != null) ? o.toString() : null;
+      ((JComponent) c).setToolTipText(s.isEmpty() ? null : s);
     }
     return c;
   }

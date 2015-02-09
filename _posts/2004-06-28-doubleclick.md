@@ -18,15 +18,15 @@ comments: true
 <pre class="prettyprint"><code>table.setAutoCreateRowSorter(true);
 table.addMouseListener(new MouseAdapter() {
   @Override public void mouseClicked(MouseEvent me) {
-    if(me.getClickCount()==2) {
+    if (me.getClickCount() == 2) {
       Point pt = me.getPoint();
       int idx = table.rowAtPoint(pt);
-      if(idx&gt;=0) {
+      if (idx &gt;= 0) {
         int row = table.convertRowIndexToModel(idx);
-        String str = String.format("%s (%s)", model.getValueAt(row, 1),
-                                   model.getValueAt(row, 2));
-        JOptionPane.showMessageDialog(table, str, "title",
-                                      JOptionPane.INFORMATION_MESSAGE);
+        String str = String.format(
+          "%s (%s)", model.getValueAt(row, 1), model.getValueAt(row, 2));
+        JOptionPane.showMessageDialog(
+          table, str, "title", JOptionPane.INFORMATION_MESSAGE);
       }
     }
   }

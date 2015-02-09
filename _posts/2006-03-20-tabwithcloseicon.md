@@ -19,7 +19,7 @@ comments: true
   public JTabbedPaneWithCloseIcons() {
     super();
     addMouseListener(new MouseAdapter() {
-      public void mouseClicked(MouseEvent e) {
+      @Override public void mouseClicked(MouseEvent e) {
         tabClicked(e);
       }
     });
@@ -32,9 +32,11 @@ comments: true
   }
   private void tabClicked(MouseEvent e) {
     int index = getUI().tabForCoordinate(this, e.getX(), e.getY());
-    if(index&lt;0) return;
-    Rectangle rect = ((CloseTabIcon)getIconAt(index)).getBounds();
-    if(rect.contains(e.getX(), e.getY())) {
+    if (index &lt; 0) {
+      return;
+    }
+    Rectangle rect = ((CloseTabIcon) getIconAt(index)).getBounds();
+    if (rect.contains(e.getX(), e.getY())) {
       removeTabAt(index);
     }
   }

@@ -19,22 +19,24 @@ comments: true
   private final Point pp = new Point();
   @Override public void installUI(JComponent c) {
     super.installUI(c);
-    JLayer jlayer = (JLayer)c;
-    jlayer.setLayerEventMask(
-        AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(
+          AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK);
+    }
   }
   @Override public void uninstallUI(JComponent c) {
-    JLayer jlayer = (JLayer)c;
-    jlayer.setLayerEventMask(0);
+    if (c instanceof JLayer) {
+      ((JLayer) c).setLayerEventMask(0);
+    }
     super.uninstallUI(c);
   }
   @Override protected void processMouseEvent(
       MouseEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
     Component c = e.getComponent();
-    if(c instanceof JScrollBar || c instanceof JSlider) {
+    if (c instanceof JScrollBar || c instanceof JSlider) {
       return;
     }
-    if(e.getID()==MouseEvent.MOUSE_PRESSED) {
+    if (e.getID() == MouseEvent.MOUSE_PRESSED) {
       JViewport vport = l.getView().getViewport();
       Point cp = SwingUtilities.convertPoint(c, e.getPoint(), vport);
       pp.setLocation(cp);
@@ -43,15 +45,15 @@ comments: true
   @Override protected void processMouseMotionEvent(
       MouseEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
     Component c = e.getComponent();
-    if(c instanceof JScrollBar || c instanceof JSlider) {
+    if (c instanceof JScrollBar || c instanceof JSlider) {
       return;
     }
-    if(e.getID()==MouseEvent.MOUSE_DRAGGED) {
+    if (e.getID() == MouseEvent.MOUSE_DRAGGED) {
       JViewport vport = l.getView().getViewport();
-      JComponent cmp = (JComponent)vport.getView();
+      JComponent cmp = (JComponent) vport.getView();
       Point cp = SwingUtilities.convertPoint(c, e.getPoint(), vport);
       Point vp = vport.getViewPosition();
-      vp.translate(pp.x-cp.x, pp.y-cp.y);
+      vp.translate(pp.x - cp.x, pp.y - cp.y);
       cmp.scrollRectToVisible(new Rectangle(vp, vport.getSize()));
       pp.setLocation(cp);
     }

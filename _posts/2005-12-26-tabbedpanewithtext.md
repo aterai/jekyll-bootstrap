@@ -20,12 +20,14 @@ comments: true
     super.paintComponent(g);
     String text = "←ちょっとしたタブの説明など";
     FontMetrics fm = getFontMetrics(getFont());
-    int stringWidth = fm.stringWidth(text)+10;
-    int x = getSize().width-stringWidth;
-    Rectangle lastTab = getUI().getTabBounds(this, getTabCount()-1);
+    int stringWidth = fm.stringWidth(text) + 10;
+    int x = getSize().width - stringWidth;
+    Rectangle lastTab = getUI().getTabBounds(this, getTabCount() - 1);
     int tabEnd = lastTab.x + lastTab.width;
-    if(x&lt;tabEnd) x = tabEnd;
-    g.drawString(text, x+5, 18);
+    if (x &lt; tabEnd) {
+      x = tabEnd;
+    }
+    g.drawString(text, x + 5, 18);
   }
 };
 </code></pre>

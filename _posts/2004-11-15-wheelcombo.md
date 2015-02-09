@@ -15,12 +15,15 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWm95sa5I/AAAAAAAAApg/1tiQsmg5QKw/s800/WheelCombo.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>combo.addMouseWheelListener(new MouseWheelListener() {
+<pre class="prettyprint"><code>JComboBox&lt;String&gt; combo = makeComboBox();
+combo.addMouseWheelListener(new MouseWheelListener() {
   @Override public void mouseWheelMoved(MouseWheelEvent e) {
-    JComboBox source = (JComboBox) e.getSource();
-    if(!source.hasFocus()) return;
+    JComboBox source = (JComboBox) e.getComponent();
+    if (!source.hasFocus()) {
+      return;
+    }
     int ni = source.getSelectedIndex() + e.getWheelRotation();
-    if(ni&gt;=0 &amp;&amp; ni&lt;source.getItemCount()) {
+    if (ni &gt;= 0 &amp;&amp; ni &lt; source.getItemCount()) {
       source.setSelectedIndex(ni);
     }
   }

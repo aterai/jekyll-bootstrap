@@ -25,12 +25,13 @@ comments: true
   }
   @Override public void paintComponent(Graphics g) {
     super.paintComponent(g);
-    if(showWatermark) {
-      Graphics2D g2d = (Graphics2D) g;
+    if (showWatermark) {
+      Graphics2D g2d = (Graphics2D) g.create();
       //Insets i = getMargin();
       Insets i = getInsets();
-      int yy = (getHeight()-image.getIconHeight())/2;
+      int yy = (getHeight() - image.getIconHeight()) / 2;
       g2d.drawImage(image.getImage(), i.left, yy, this);
+      g2d.dispose();
     }
   }
   @Override public void focusGained(FocusEvent e) {
