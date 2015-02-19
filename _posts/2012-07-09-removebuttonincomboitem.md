@@ -118,7 +118,7 @@ comments: true
 `JComboBox`のドロップダウンリスト(`BasicComboPopup`)から`JList`を取得し、これに上記のような`MouseListener`を追加しています。この`JList`がクリックされた場合、レンダラーから対応するセルに表示されている`JButton`を取得し、`button.doClick()`を呼び出します。
 
 <pre class="prettyprint"><code>Accessible a = getAccessibleContext().getAccessibleChild(0);
-if(a instanceof BasicComboPopup) {
+if (a instanceof BasicComboPopup) {
   BasicComboPopup pop = (BasicComboPopup) a;
   JList list = pop.getList();
   CellButtonsMouseListener cbml = new CellButtonsMouseListener();

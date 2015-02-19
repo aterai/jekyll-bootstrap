@@ -71,11 +71,13 @@ comments: true
   }
   @Override public boolean isCellEditable(EventObject e) {
     if (e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
-      MouseEvent me = (MouseEvent)e;
-      JTree tree = (JTree)e.getSource();
+      MouseEvent me = (MouseEvent) e;
+      JTree tree = (JTree) e.getSource();
       TreePath path = tree.getPathForLocation(me.getX(), me.getY());
       Rectangle r = tree.getPathBounds(path);
-      if (r == null) return false;
+      if (r == null) {
+        return false;
+      }
       Dimension d = getPreferredSize();
       r.setSize(new Dimension(d.width, r.height));
       if (r.contains(me.getX(), me.getY())) {
@@ -90,7 +92,9 @@ comments: true
   }
   @Override public void updateUI() {
     super.updateUI();
-    if (panel != null) panel.updateUI();
+    if (panel != null) {
+      panel.updateUI();
+    }
     //1.6.0_24 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
     renderer = new DefaultTreeCellRenderer();
   }

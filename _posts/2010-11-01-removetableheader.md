@@ -19,7 +19,7 @@ comments: true
 JCheckBox check = new JCheckBox("JTableHeader visible: ", true);
 check.addActionListener(new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
-    JCheckBox cb = (JCheckBox)e.getSource();
+    JCheckBox cb = (JCheckBox) e.getSource();
     //table.getTableHeader().setVisible(cb.isSelected());
     scrollPane.getColumnHeader().setVisible(cb.isSelected());
     scrollPane.revalidate();

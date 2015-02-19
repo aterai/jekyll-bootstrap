@@ -139,7 +139,7 @@ public class ProgressSplashScreenTest {
             if (current == 20) {
               publish("showFrame");
             } else if (current % 24 == 0) {
-              publish("title: "+current);
+              publish("title: " + current);
             }
             setProgress(100 * current++ / lengthOfTask);
           }
@@ -149,15 +149,15 @@ public class ProgressSplashScreenTest {
         return null;
       }
       @Override protected void process(List&lt;String&gt; chunks) {
-        for (String cmd : chunks) {
+        for (String cmd: chunks) {
           if (cmd.equals("showFrame")) {
             frame.setSize(512, 320);
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
           } else {
             tabbedPane.addTab(cmd, new JLabel(cmd));
-            tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
-            progress.setString("Loading: "+cmd);
+            tabbedPane.setSelectedIndex(tabbedPane.getTabCount() - 1);
+            progress.setString("Loading: " + cmd);
           }
         }
       }
@@ -168,7 +168,7 @@ public class ProgressSplashScreenTest {
     worker.addPropertyChangeListener(new PropertyChangeListener() {
       @Override public void propertyChange(PropertyChangeEvent e) {
         if ("progress".equals(e.getPropertyName())) {
-          progress.setValue((Integer)e.getNewValue());
+          progress.setValue((Integer) e.getNewValue());
         }
       }
     });

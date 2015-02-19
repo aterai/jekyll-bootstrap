@@ -18,17 +18,24 @@ comments: true
 <pre class="prettyprint"><code>desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);
 desktop.setDesktopManager(new DefaultDesktopManager() {
   @Override public void dragFrame(JComponent frame, int x, int y) {
-    int e = x; int n = y;
-    int w = desktop.getSize().width -frame.getSize().width -e;
-    int s = desktop.getSize().height-frame.getSize().height-n;
-    if(isNear(e) || isNear(n) || isNear(w) || isNear(s)) {
-      x = (e&lt;w)?(isNear(e)?0:e):(isNear(w)?w+e:e);
-      y = (n&lt;s)?(isNear(n)?0:n):(isNear(s)?s+n:n);
+    int e = x;
+    int n = y;
+    int w = desktop.getSize().width - frame.getSize().width - e;
+    int s = desktop.getSize().height - frame.getSize().height - n;
+    if (isNear(e) || isNear(n) || isNear(w) || isNear(s)) {
+      super.dragFrame(frame, getX(e, w), getY(n, s));
+    } else {
+      super.dragFrame(frame, x, y);
     }
-    super.dragFrame(frame, x, y);
   }
-  private boolean isNear(int c) {
-    return (Math.abs(c)&lt;10);
+  private static int getX(int e, int w) {
+    return e &lt; w ? isNear(e) ? 0 : e : isNear(w) ? w + e : e;
+  }
+  private static int getY(int n, int s) {
+    return n &lt; s ? isNear(n) ? 0 : n : isNear(s) ? s + n : n;
+  }
+  private static boolean isNear(int c) {
+    return Math.abs(c) &lt; 10;
   }
 });
 </code></pre>

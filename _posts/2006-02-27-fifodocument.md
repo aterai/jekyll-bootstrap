@@ -52,6 +52,26 @@ final Timer timer = new Timer(100, new ActionListener() {
 
 上記のサンプルでは、`10`行以上になると先頭行から削除されていきます。また、複数行の入力やペーストには対応していません。それらにも対応する場合は、[Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)を参考にしてみてください。
 
+- - - -
+- `DocumentListener`ではなく、以下のような`DocumentFilter`を設定する方法もある
+    - `((AbstractDocument) jta.getDocument()).setDocumentFilter(new FIFODocumentFilter());`
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>class FIFODocumentFilter extends DocumentFilter {
+  private static final int MAX_LINES = 10;
+  @Override public void insertString(
+      DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr)
+      throws BadLocationException {
+    fb.insertString(offset, string, attr);
+    Element root = fb.getDocument().getDefaultRootElement();
+    if (root.getElementCount() &gt; MAX_LINES) {
+      fb.remove(0, root.getElement(0).getEndOffset());
+    }
+  }
+}
+</code></pre>
+
 ## 参考リンク
 - [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)
 

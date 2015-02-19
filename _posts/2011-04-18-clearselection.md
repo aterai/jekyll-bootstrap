@@ -30,7 +30,7 @@ comments: true
   }
   private boolean startOutside = false;
   @Override public void mousePressed(MouseEvent e) {
-    JList list = (JList)e.getSource();
+    JList list = (JList) e.getSource();
     startOutside = !contains(list, e.getPoint());
     if (startOutside) {
       clearSelectionAndFocus(list);

@@ -42,12 +42,12 @@ comments: true
   }
   @Override public boolean isCellEditable(final java.util.EventObject e) {
     //System.out.println("isCellEditable");
-    if(e instanceof KeyEvent) {
+    if (e instanceof KeyEvent) {
       //System.out.println("KeyEvent");
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
-          char kc = ((KeyEvent)e).getKeyChar();
-          if(!Character.isIdentifierIgnorable(kc)) {
+          char kc = ((KeyEvent) e).getKeyChar();
+          if (!Character.isIdentifierIgnorable(kc)) {
             field.setText(field.getText()+kc);
           }
           field.setCaretPosition(field.getText().length());
@@ -91,12 +91,12 @@ comments: true
     field.setBorder(BorderFactory.createEmptyBorder(0,2,0,BUTTON_WIDTH));
     field.addHierarchyListener(new HierarchyListener() {
       @Override public void hierarchyChanged(HierarchyEvent e) {
-        if((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED)!=0
+        if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0
             &amp;&amp; field.isShowing()) {
           field.removeAll();
           field.add(button);
           Rectangle r = field.getBounds();
-          button.setBounds(r.width-BUTTON_WIDTH, 0, BUTTON_WIDTH, r.height);
+          button.setBounds(r.width - BUTTON_WIDTH, 0, BUTTON_WIDTH, r.height);
         }
       }
     });
@@ -122,14 +122,14 @@ comments: true
   public final JTextField field = new JTextField();
   protected JButton button;
   public CustomComponent() {
-    super(new BorderLayout(0,0));
+    super(new BorderLayout(0, 0));
     button = new JButton();
     this.add(field);
     this.add(button, BorderLayout.EAST);
   }
   @Override protected boolean processKeyBinding(
       final KeyStroke ks, final KeyEvent e, int condition, boolean pressed) {
-    if(!field.isFocusOwner() &amp;&amp; !pressed) {
+    if (!field.isFocusOwner() &amp;&amp; !pressed) {
       field.requestFocusInWindow();
       SwingUtilities.invokeLater(new Runnable() {
         @Override public void run() {
@@ -149,7 +149,7 @@ class CustomComponentCellEditor2 extends DefaultCellEditor {
   }
   @Override public Component getTableCellEditorComponent(JTable table,
         Object value, boolean isSelected, int row, int column) {
-    component.field.setText(value!=null?value.toString():"");
+    component.field.setText(value != null ? value.toString() : "");
     return component;
   }
   @Override public Component getComponent() {

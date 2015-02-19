@@ -25,7 +25,7 @@ private final javax.swing.Timer timer = new javax.swing.Timer(DELAY, new ActionL
 });
 private final AWTEventListener awtEvent = new AWTEventListener() {
   @Override public void eventDispatched(AWTEvent e) {
-    if(timer!=null &amp;&amp; timer.isRunning()) {
+    if (timer != null &amp;&amp; timer.isRunning()) {
       //System.out.println("timer.restart()");
       timer.restart();
     }
@@ -44,7 +44,6 @@ JButton button = new JButton(new AbstractAction("Connect") {
 
 ## 解説
 上記のサンプルでは、一定時間(`10`秒)、マウスやキーボードからの入力が無い場合、接続(ダミー)を切るようになっています。
-
 
 - - - -
 [Application Inactivity « Java Tips Weblog](http://tips4java.wordpress.com/2008/10/24/application-inactivity/)を参考にして、`Toolkit.getDefaultToolkit().getSystemEventQueue().push(eventQueue)`は使用せず、以下のように`Toolkit.getDefaultToolkit().addAWTEventListener(AWTEventListener)`を使う方法に変更しました。

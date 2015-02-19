@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>textfield.addFocusListener(new FocusAdapter() {
   @Override public void focusGained(FocusEvent e) {
-    ((JTextComponent)e.getComponent()).selectAll();
+    ((JTextComponent) e.getComponent()).selectAll();
   }
 });
 </code></pre>

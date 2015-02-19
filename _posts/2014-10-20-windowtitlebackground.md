@@ -56,7 +56,7 @@ JTable table = new JTable(model);
 //...
 model.addTableModelListener(new TableModelListener() {
   @Override public void tableChanged(TableModelEvent e) {
-    if(e.getType()==TableModelEvent.UPDATE &amp;&amp; e.getColumn() == 1) {
+    if (e.getType() == TableModelEvent.UPDATE &amp;&amp; e.getColumn() == 1) {
       int row = e.getFirstRow();
       String key = (String) model.getValueAt(row, 0);
       Color color = (Color) model.getValueAt(row, 1);

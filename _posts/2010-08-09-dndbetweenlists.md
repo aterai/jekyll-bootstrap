@@ -33,7 +33,7 @@ comments: true
     DefaultListModel listModel = (DefaultListModel) target.getModel();
     int index = dl.getIndex();
     int max = listModel.getSize();
-    if(index &lt; 0 || index &gt; max) index = max;
+    if (index &lt; 0 || index &gt; max) index = max;
     addIndex = index;
     try {
       Object[] values = (Object[]) info.getTransferable().getTransferData(localObjectFlavor);

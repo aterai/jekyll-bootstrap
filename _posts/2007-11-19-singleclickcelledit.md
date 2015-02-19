@@ -15,7 +15,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTDScXHaI/AAAAAAAAAjw/VQhi8npFmCM/s800/SingleClickCellEdit.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor)table.getDefaultEditor(Object.class);
+<pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor) table.getDefaultEditor(Object.class);
 ce.setClickCountToStart(1);
 //ce.setClickCountToStart(2); //default
 </code></pre>

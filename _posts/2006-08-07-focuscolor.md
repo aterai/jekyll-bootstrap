@@ -23,10 +23,10 @@ comments: true
     this.oColor = oColor;
   }
   @Override public void focusGained(final FocusEvent e) {
-    ((JTextField)e.getSource()).setBackground(dColor);
+    ((JTextField) e.getSource()).setBackground(dColor);
   }
   @Override public void focusLost(final FocusEvent e) {
-    ((JTextField)e.getSource()).setBackground(oColor);
+    ((JTextField) e.getSource()).setBackground(oColor);
   }
 }
 </code></pre>

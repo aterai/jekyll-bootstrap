@@ -36,7 +36,7 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
             
             <pre class="prettyprint"><code>JFileChooser fc2 = new JFileChooser() {
               @Override public void setCurrentDirectory(File dir) {
-                if(dir!=null &amp;&amp; !dir.exists()) {
+                if (dir != null &amp;&amp; !dir.exists()) {
                   this.setCurrentDirectory(dir.getParentFile());
                 }
                 super.setCurrentDirectory(dir);

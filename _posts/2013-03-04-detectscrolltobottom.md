@@ -18,11 +18,11 @@ comments: true
 <pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane(c);
 scroll.getVerticalScrollBar().getModel().addChangeListener(new ChangeListener() {
   @Override public void stateChanged(ChangeEvent e) {
-    BoundedRangeModel m = (BoundedRangeModel)e.getSource();
+    BoundedRangeModel m = (BoundedRangeModel) e.getSource();
     int extent  = m.getExtent();
     int maximum = m.getMaximum();
     int value   = m.getValue();
-    if(value + extent &gt;= maximum) {
+    if (value + extent &gt;= maximum) {
       check.setEnabled(true);
     }
   }

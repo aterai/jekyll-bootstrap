@@ -27,17 +27,17 @@ comments: true
     FontRenderContext frc = new FontRenderContext(null,true,true);
     gv = font.createGlyphVector(frc, text);
     LineMetrics lm = font.getLineMetrics(text, frc);
-    yy = lm.getAscent()/2f + (float)gv.getVisualBounds().getY();
+    yy = lm.getAscent() / 2f + (float) gv.getVisualBounds().getY();
   }
   @Override public void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g;
     int cw = getWidth();
     int ch = getHeight();
     g2.setPaint(Color.WHITE);
-    g2.draw(new Line2D.Float(0,ch/2f,cw,ch/2f));
+    g2.draw(new Line2D.Float(0, ch / 2f, cw, ch / 2f));
     g2.setPaint(Color.BLACK);
-    g2.drawGlyphVector(gv, cw-xx, ch/2f-yy);
-    xx = (cw+gv.getVisualBounds().getWidth()-xx &gt; 0) ? xx+2f : 0f;
+    g2.drawGlyphVector(gv, cw - xx, ch / 2f - yy);
+    xx = (cw + gv.getVisualBounds().getWidth() - xx &gt; 0) ? xx + 2f : 0f;
   }
   @Override public void actionPerformed(ActionEvent e) {
     repaint();
@@ -52,7 +52,7 @@ comments: true
 
 <pre class="prettyprint"><code>TextLayout tl = new TextLayout(text, font, frc);
 Rectangle2D b = tl.getBounds();
-yy = tl.getAscent()/2f + (float)b.getY();
+yy = tl.getAscent() / 2f + (float) b.getY();
 </code></pre>
 
 ## コメント

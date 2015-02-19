@@ -80,7 +80,7 @@ add(scroll);
 - - - -
 ~~行を追加したとき、うまく描画されない場合があるので、以下のような`JPanel`をラッパーとして使用しています。~~
 
-- 以下を間違えてしていたため、描画がおかしくなっていた。
+- 以下を取り違えていたため、描画がおかしくなっていた
     - `JScrollPane#setRowHeaderView(Component)`
     - `JScrollPane#setRowHeader(JViewport)`
 

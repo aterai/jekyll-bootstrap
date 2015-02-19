@@ -34,7 +34,9 @@ comments: true
 
 <pre class="prettyprint"><code>int result = JOptionPane.showConfirmDialog(frame, textField, "Input Text",
                  JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-if(result==JOptionPane.OK_OPTION) textArea.setText(textField.getText());
+if (result == JOptionPane.OK_OPTION) {
+  textArea.setText(textField.getText());
+}
 </code></pre>
 
 - 右上
@@ -54,10 +56,12 @@ dialog.addWindowListener(new WindowAdapter() {
 dialog.setVisible(true);
 Object selectedValue = pane.getValue();
 int result = JOptionPane.CLOSED_OPTION;
-if(selectedValue != null &amp;&amp; selectedValue instanceof Integer) {
-  result = ((Integer)selectedValue).intValue();
+if (selectedValue != null &amp;&amp; selectedValue instanceof Integer) {
+  result = ((Integer) selectedValue).intValue();
 }
-result==JOptionPane.OK_OPTION) textArea.setText(textField.getText());
+if (result == JOptionPane.OK_OPTION) {
+  textArea.setText(textField.getText());
+}
 </code></pre>
 
 - 左下
@@ -67,8 +71,8 @@ result==JOptionPane.OK_OPTION) textArea.setText(textField.getText());
 
 <pre class="prettyprint"><code>textField3.addHierarchyListener(new HierarchyListener() {
   @Override public void hierarchyChanged(HierarchyEvent e) {
-    if((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED)!=0
-       &amp;&amp; textField3.isShowing()) {
+    if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0
+         &amp;&amp; textField3.isShowing()) {
       EventQueue.invokeLater(new Runnable(){
         @Override public void run() {
           textField3.requestFocusInWindow();
@@ -79,7 +83,9 @@ result==JOptionPane.OK_OPTION) textArea.setText(textField.getText());
 });
 int result = JOptionPane.showConfirmDialog(frame, textField3, "Input Text",
                  JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-if(result==JOptionPane.OK_OPTION) textArea.setText(textField3.getText());
+if (result == JOptionPane.OK_OPTION) {
+  textArea.setText(textField3.getText());
+}
 </code></pre>
 
 - 右下

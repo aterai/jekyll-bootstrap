@@ -37,7 +37,7 @@ comments: true
     return this;
   }
   @Override public void mouseMoved(MouseEvent e) {
-    JTable table = (JTable)e.getSource();
+    JTable table = (JTable) e.getSource();
     Point pt = e.getPoint();
     row = table.rowAtPoint(pt);
     col = table.columnAtPoint(pt);
@@ -48,7 +48,7 @@ comments: true
     table.repaint();
   }
   @Override public void mouseExited(MouseEvent e)  {
-    JTable table = (JTable)e.getSource();
+    JTable table = (JTable) e.getSource();
     row = -1;
     col = -1;
     table.repaint();
@@ -58,7 +58,7 @@ comments: true
     Point pt = e.getPoint();
     int crow = table.rowAtPoint(pt);
     int ccol = table.columnAtPoint(pt);
-    //if(table.convertColumnIndexToModel(ccol) == 2)
+    //if (table.convertColumnIndexToModel(ccol) == 2)
     if (table.getColumnClass(ccol).equals(URL.class)) {
       URL url = (URL) table.getValueAt(crow, ccol);
       System.out.println(url);

@@ -19,13 +19,13 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>tree.setCellEditor(new DefaultTreeCellEditor(
-    tree, (DefaultTreeCellRenderer)tree.getCellRenderer()) {
-  @Override public boolean isCellEditable(java.util.EventObject e) {
-    return (e instanceof MouseEvent)?false:super.isCellEditable(e);
+    tree, (DefaultTreeCellRenderer) tree.getCellRenderer()) {
+  @Override public boolean isCellEditable(EventObject e) {
+    return (e instanceof MouseEvent) ? false : super.isCellEditable(e);
   }
 //@Override protected boolean canEditImmediately(EventObject e) {
-////((MouseEvent)e).getClickCount()&gt;2
-//  return (e instanceof MouseEvent)?false:super.canEditImmediately(e);
+////((MouseEvent) e).getClickCount() &gt; 2
+//  return (e instanceof MouseEvent) ? false : super.canEditImmediately(e);
 //}
 });
 tree.setEditable(true);
@@ -48,25 +48,29 @@ tree.setComponentPopupMenu(new TreePopupMenu());
   super();
   add(new JMenuItem(new AbstractAction("Edit") {
     @Override public void actionPerformed(ActionEvent e) {
-      JTree tree = (JTree)getInvoker();
-      if(path!=null) tree.startEditingAtPath(path);
+      JTree tree = (JTree) getInvoker();
+      if (path != null) {
+        tree.startEditingAtPath(path);
+      }
     }
   }));
   add(new JMenuItem(new AbstractAction("Edit Dialog") {
     @Override public void actionPerformed(ActionEvent e) {
-      JTree tree = (JTree)getInvoker();
-      if(path==null) return;
+      JTree tree = (JTree) getInvoker();
+      if (path == null) {
+        return;
+      }
       Object node = path.getLastPathComponent();
-      if(node instanceof DefaultMutableTreeNode) {
+      if (node instanceof DefaultMutableTreeNode) {
         DefaultMutableTreeNode leaf = (DefaultMutableTreeNode) node;
         textField.setText(leaf.getUserObject().toString());
         int result = JOptionPane.showConfirmDialog(
           tree, textField, "Rename",
           JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-        if(result==JOptionPane.OK_OPTION) {
+        if (result == JOptionPane.OK_OPTION) {
           String str = textField.getText();
-          if(!str.trim().isEmpty())
-            ((DefaultTreeModel)tree.getModel()).valueForPathChanged(path, str);
+          if (!str.trim().isEmpty())
+            ((DefaultTreeModel) tree.getModel()).valueForPathChanged(path, str);
         }
       }
     }

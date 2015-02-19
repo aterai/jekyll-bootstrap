@@ -17,12 +17,12 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>String text = "abcdefthijklmnopqrstuvwxyz";
 Font font = new Font(Font.SERIF, Font.ITALIC, 64);
-FontRenderContext frc = new FontRenderContext(null,true,true);
+FontRenderContext frc = new FontRenderContext(null, true, true);
 TextLayout tl = new TextLayout(text, font, frc);
 @Override public void paintComponent(Graphics g) {
   Graphics2D g2 = (Graphics2D) g;
   int w = getWidth();
-  float baseline = getHeight()/2f;
+  float baseline = getHeight() / 2f;
 
   g2.setPaint(Color.RED);
   g2.draw(new Line2D.Float(0, baseline, w, baseline));
@@ -40,7 +40,7 @@ TextLayout tl = new TextLayout(text, font, frc);
   g2.draw(new Line2D.Float(0, leading, w, leading));
 
   g2.setPaint(Color.CYAN);
-  float xheight = baseline - (float)tl.getBlackBoxBounds(23, 24).getBounds().getHeight();
+  float xheight = baseline - (float) tl.getBlackBoxBounds(23, 24).getBounds().getHeight();
   g2.draw(new Line2D.Float(0, xheight, w, xheight));
 
   g2.setPaint(Color.BLACK);

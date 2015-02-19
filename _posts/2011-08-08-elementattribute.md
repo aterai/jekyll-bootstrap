@@ -20,20 +20,20 @@ comments: true
   @Override public String getToolTipText(MouseEvent e) {
     String title = super.getToolTipText(e);
     JEditorPane editor = (JEditorPane) e.getSource();
-    if(!editor.isEditable()) {
+    if (!editor.isEditable()) {
       Point pt = new Point(e.getX(), e.getY());
       int pos = editor.getUI().viewToModel(editor, pt, bias);
-      if(bias[0] == Position.Bias.Backward &amp;&amp; pos &gt; 0) {
+      if (bias[0] == Position.Bias.Backward &amp;&amp; pos &gt; 0) {
         pos--;
       }
-      if(pos &gt;= 0 &amp;&amp;(editor.getDocument() instanceof HTMLDocument)) {
-        HTMLDocument hdoc = (HTMLDocument)editor.getDocument();
+      if (pos &gt;= 0 &amp;&amp;(editor.getDocument() instanceof HTMLDocument)) {
+        HTMLDocument hdoc = (HTMLDocument) editor.getDocument();
         Element elem = hdoc.getCharacterElement(pos);
-        if(elem != null) {
+        if (elem != null) {
           AttributeSet a = elem.getAttributes();
-          AttributeSet span = (AttributeSet)a.getAttribute(HTML.Tag.SPAN);
-          if(span != null) {
-            title = (String)span.getAttribute(HTML.Attribute.TITLE);
+          AttributeSet span = (AttributeSet) a.getAttribute(HTML.Tag.SPAN);
+          if (span != null) {
+            title = (String) span.getAttribute(HTML.Attribute.TITLE);
           }
         }
       }
@@ -73,15 +73,15 @@ editor1.setEditorKit(new HTMLEditorKit());
             AbstractDocument.ElementNameAttribute);
         Object o = (elementName != null)
           ? null : attrs.getAttribute(StyleConstants.NameAttribute);
-        if(o instanceof HTML.Tag) {
+        if (o instanceof HTML.Tag) {
           HTML.Tag kind = (HTML.Tag) o;
-          if(kind == HTML.Tag.DIV) {
+          if (kind == HTML.Tag.DIV) {
             return new BlockView(elem, View.Y_AXIS) {
               @Override public String getToolTipText(
                   float x, float y, Shape allocation) {
                 String s = super.getToolTipText(x, y, allocation);
-                if(s==null) {
-                  s = (String)getElement().getAttributes().getAttribute(
+                if (s == null) {
+                  s = (String) getElement().getAttributes().getAttribute(
                       HTML.Attribute.TITLE);
                 }
                 return s;

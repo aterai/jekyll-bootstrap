@@ -46,7 +46,7 @@ comments: true
   }
   @Override public void hierarchyChanged(HierarchyEvent e) {
     JComponent c = (JComponent) e.getSource();
-    if((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0
+    if ((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0
         &amp;&amp; !c.isDisplayable()) {
       scroller.stop();
     }

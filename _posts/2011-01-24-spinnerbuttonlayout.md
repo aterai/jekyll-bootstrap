@@ -18,11 +18,11 @@ comments: true
 <pre class="prettyprint"><code>class SpinnerLayout extends BorderLayout {
   @Override public void addLayoutComponent(Component comp, Object constraints) {
     String str = "";
-    if("Editor".equals(constraints)) {
+    if ("Editor".equals(constraints)) {
       str = "Center";
-    } else if("Next".equals(constraints)) {
+    } else if ("Next".equals(constraints)) {
       str = "East";
-    } else if("Previous".equals(constraints)) {
+    } else if ("Previous".equals(constraints)) {
       str = "West";
     }
     super.addLayoutComponent(comp, str);

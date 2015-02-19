@@ -22,7 +22,7 @@ comments: true
     add(sp);
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
-        sp.setDividerLocation(0.5);
+        sp.setDividerLocation(.5);
       }
     });
   }
@@ -34,15 +34,17 @@ comments: true
   private int prev_state = Frame.NORMAL;
   @Override public void doLayout() {
     int size = getOrientedSize(sp);
-    final double proportionalLocation = sp.getDividerLocation()/(double)size;
+    final double proportionalLocation = sp.getDividerLocation() / (double) size;
     super.doLayout();
-    if(!flag) return;
-    int state = ((Frame)SwingUtilities.getWindowAncestor(sp)).getExtendedState();
-    if(sp.isShowing() &amp;&amp; state!=prev_state) {
+    if (!flag) {
+      return;
+    }
+    int state = ((Frame) SwingUtilities.getWindowAncestor(sp)).getExtendedState();
+    if (sp.isShowing() &amp;&amp; state != prev_state) {
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           int s = getOrientedSize(sp);
-          int iv = (int)Math.round(s * proportionalLocation);
+          int iv = (int) Math.round(s * proportionalLocation);
           sp.setDividerLocation(iv);
         }
       });

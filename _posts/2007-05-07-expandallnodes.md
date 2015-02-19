@@ -42,7 +42,7 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
       visitAll(tree, path, expand);
     }
   }
-  if(expand) {
+  if (expand) {
     tree.expandPath(parent);
   } else {
     tree.collapsePath(parent);

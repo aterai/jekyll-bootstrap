@@ -56,7 +56,7 @@ private static boolean isURLColumn(JTable table, int column) {
     Rectangle r = table.getCellRect(row, col, false);
     repaintRect = prev_ro ?
       r.union(table.getCellRect(prev_row, prev_col, false)) : r;
-  } else { //if(prev_ro) {
+  } else { //if (prev_ro) {
     repaintRect = table.getCellRect(prev_row, prev_col, false);
   }
   table.repaint(repaintRect);
@@ -73,7 +73,7 @@ private static boolean isURLColumn(JTable table, int column) {
   }
 }
 @Override public void mouseClicked(MouseEvent e) {
-  JTable table = (JTable)e.getSource();
+  JTable table = (JTable) e.getSource();
   Point pt = e.getPoint();
   int ccol = table.columnAtPoint(pt);
   if (isURLColumn(table, ccol) &amp;&amp; pointInsidePrefSize(table, pt)) {

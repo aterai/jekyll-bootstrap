@@ -21,7 +21,7 @@ final DataFlavor uriflavor = DataFlavor.stringFlavor;
 JButton b = new JButton(href);
 b.setTransferHandler(new TransferHandler("text") {
   @Override public boolean canImport(JComponent c, DataFlavor[] flavors) {
-    return (flavors.length&gt;0 &amp;&amp; flavors[0].equals(uriflavor));
+    return flavors.length &gt; 0 &amp;&amp; flavors[0].equals(uriflavor);
   }
   @Override public Transferable createTransferable(JComponent c) {
     return new Transferable() {
@@ -40,7 +40,7 @@ b.setTransferHandler(new TransferHandler("text") {
 });
 b.addMouseListener(new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
-    JButton button = (JButton)e.getSource();
+    JButton button = (JButton) e.getSource();
     TransferHandler handler = button.getTransferHandler();
     handler.exportAsDrag(button, e, TransferHandler.COPY);
   }

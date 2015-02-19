@@ -24,23 +24,21 @@ frame.getContentPane().setBackground(Color.GREEN);
 frame.pack();
 
 String str = textField.getText().trim();
-//label.setText(str);
 TextLayout tl = new TextLayout(str, font, frc);
 Rectangle2D b = tl.getBounds();
-Shape shape = tl.getOutline(AffineTransform.getTranslateInstance(-b.getX(),-b.getY()));
+Shape shape = tl.getOutline(AffineTransform.getTranslateInstance(-b.getX(), -b.getY()));
 
 frame.setBounds(shape.getBounds());
-//frame.setSize(shape.getBounds().width, shape.getBounds().height);
-com.sun.awt.AWTUtilities.setWindowShape(frame, shape);
-//frame.setShape(shape); // 1.7.0
+//com.sun.awt.AWTUtilities.setWindowShape(frame, shape); // JDK 1.6.0
+frame.setShape(shape);
 frame.setLocationRelativeTo(parent);
 frame.setVisible(true);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`com.sun.awt.AWTUtilities.setWindowShape(...)`メソッドを使用して、`JFrame`の形を変更しています。
+上記のサンプルでは、`Window#setShape(Shape)`メソッドを使用して、`JFrame`の形を変更しています。
 
-- `Java 1.7.0`の場合は、`Window#setShape(Shape)`を使用
+- `JDK 1.6.0_10`の場合は、`com.sun.awt.AWTUtilities.setWindowShape(...)`を使用する
 
 <!-- dummy comment line for breaking list -->
 

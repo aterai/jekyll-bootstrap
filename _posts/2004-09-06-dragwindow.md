@@ -34,7 +34,7 @@ class DragWindowListener extends MouseAdapter {
     startPt.setLocation(me.getPoint());
   }
   @Override public void mouseDragged(MouseEvent me) {
-    if(window==null) {
+    if (window == null) {
       window = SwingUtilities.windowForComponent(me.getComponent());
     }
     Point eventLocationOnScreen = me.getLocationOnScreen();
@@ -104,18 +104,18 @@ class DragWindowListener extends MouseAdapter {
   private final Point startPt = new Point();
   private Window window;
   @Override public void mousePressed(MouseEvent me) {
-    if(window==null) {
+    if (window == null) {
       Object o = me.getSource();
-      if(o instanceof Window) {
-        window = (Window)o;
-      } else if(o instanceof JComponent) {
+      if (o instanceof Window) {
+        window = (Window) o;
+      } else if (o instanceof JComponent) {
         window = SwingUtilities.windowForComponent(me.getComponent());
       }
     }
     startPt.setLocation(me.getPoint());
   }
   @Override public void mouseDragged(MouseEvent me) {
-    if(window!=null) {
+    if (window != null) {
       Point eventLocationOnScreen = me.getLocationOnScreen();
       window.setLocation(eventLocationOnScreen.x - startPt.x,
                          eventLocationOnScreen.y - startPt.y);
