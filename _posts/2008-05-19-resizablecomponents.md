@@ -26,7 +26,7 @@ comments: true
   int newW = getWidth();
   int newH = getHeight();
 
-  JComponent parent = (JComponent)getParent();
+  JComponent parent = (JComponent) getParent();
   Rectangle parentBounds = parent.getBounds();
   Dimension min = new Dimension(50, 50);
   Dimension max = new Dimension(500, 500);

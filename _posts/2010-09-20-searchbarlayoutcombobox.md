@@ -63,7 +63,7 @@ comments: true
             break;
           }
         }
-        //= (JButton)cb.getComponent(3);
+        //= (JButton) cb.getComponent(3);
         if (loupeButton != null) {
           Insets loupeInsets = loupeButton.getInsets();
           loupeWidth = loupeButton.getPreferredSize().width +

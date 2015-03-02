@@ -21,7 +21,7 @@ comments: true
 <pre class="prettyprint"><code>private int delay = 4;
 private int count = 0;
 @Override public void mouseEntered(MouseEvent e) {
-  if (animator!=null &amp;&amp; animator.isRunning() ||
+  if (animator != null &amp;&amp; animator.isRunning() ||
      yy == textArea.getPreferredSize().height) return;
   final double h = (double) textArea.getPreferredSize().height;
   animator = new Timer(delay, new ActionListener() {
@@ -40,7 +40,7 @@ private int count = 0;
   animator.start();
 }
 @Override public void mouseExited(MouseEvent e) {
-  if (animator!=null &amp;&amp; animator.isRunning() ||
+  if (animator != null &amp;&amp; animator.isRunning() ||
      contains(e.getPoint()) &amp;&amp; yy == textArea.getPreferredSize().height) return;
   final double h = (double) textArea.getPreferredSize().height;
   animator = new Timer(delay, new ActionListener() {

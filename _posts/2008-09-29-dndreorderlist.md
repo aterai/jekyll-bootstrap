@@ -41,9 +41,9 @@ comments: true
     if (!canImport(info)) {
       return false;
     }
-    JList target = (JList)info.getComponent();
-    JList.DropLocation dl = (JList.DropLocation)info.getDropLocation();
-    DefaultListModel listModel = (DefaultListModel)target.getModel();
+    JList target = (JList) info.getComponent();
+    JList.DropLocation dl = (JList.DropLocation) info.getDropLocation();
+    DefaultListModel listModel = (DefaultListModel) target.getModel();
     int index = dl.getIndex();
     //boolean insert = dl.isInsert();
     int max = listModel.getSize();
@@ -75,8 +75,8 @@ comments: true
   }
   private void cleanup(JComponent c, boolean remove) {
     if (remove &amp;&amp; indices != null) {
-      JList source = (JList)c;
-      DefaultListModel model  = (DefaultListModel)source.getModel();
+      JList source = (JList) c;
+      DefaultListModel model  = (DefaultListModel) source.getModel();
       if (addCount &gt; 0) {
         for (int i = 0; i &lt; indices.length; i++) {
           if (indices[i] &gt;= addIndex) {

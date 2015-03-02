@@ -86,10 +86,14 @@ public class WheelScrollTest {
     Scrollable view = (Scrollable) vp.getView();
     Rectangle vr = vp.getViewRect();
 
-    System.out.println("FixedCellHeight: " + list.getFixedCellHeight());
-    System.out.println("getUnitIncrement: " + scrollPane.getVerticalScrollBar().getUnitIncrement(1));
-    System.out.println("getBlockIncrement: " + scrollPane.getVerticalScrollBar().getBlockIncrement(1));
-    System.out.println("getScrollableUnitIncrement: " + view.getScrollableUnitIncrement(
+    System.out.println(
+        "FixedCellHeight: " + list.getFixedCellHeight());
+    System.out.println(
+        "getUnitIncrement: " + scrollPane.getVerticalScrollBar().getUnitIncrement(1));
+    System.out.println(
+        "getBlockIncrement: " + scrollPane.getVerticalScrollBar().getBlockIncrement(1));
+    System.out.println(
+        "getScrollableUnitIncrement: " + view.getScrollableUnitIncrement(
         vr, scrollPane.getVerticalScrollBar().getOrientation(), 1));
     System.out.println("getScrollableBlockIncrement: " + view.getScrollableBlockIncrement(
         vr, scrollPane.getVerticalScrollBar().getOrientation(), 1));
@@ -124,21 +128,24 @@ public class WheelScrollTest {
       model.addElement("Item: " + i);
     }
     JList list = new JList(model) {
-//       @Override public int getScrollableUnitIncrement(Rectangle visibleRect, int orientation, int direction) {
+//       @Override public int getScrollableUnitIncrement(
+//           Rectangle visibleRect, int orientation, int direction) {
 //         return 64;
 //       }
-//       @Override public int getScrollableBlockIncrement(Rectangle visibleRect, int orientation, int direction) {
+//       @Override public int getScrollableBlockIncrement(
+//           Rectangle visibleRect, int orientation, int direction) {
 //         if (orientation == SwingConstants.VERTICAL) {
 //           int inc = visibleRect.height;
 //           /* Scroll Down */
 //           if (direction &gt; 0) {
 //             // last cell is the lowest left cell
-//             int last = locationToIndex(new Point(visibleRect.x, visibleRect.y+visibleRect.height-1));
+//             int last = locationToIndex(
+//               new Point(visibleRect.x, visibleRect.y+visibleRect.height-1));
 //             if (last != -1) {
 //               Rectangle lastRect = getCellBounds(last,last);
 //               if (lastRect != null) {
 //                 inc = lastRect.y - visibleRect.y;
-//                 if ( (inc == 0) &amp;&amp; (last &lt; getModel().getSize()-1) ) {
+//                 if ( (inc == 0) &amp;&amp; (last &lt; getModel().getSize() - 1) ) {
 //                   inc = lastRect.height;
 //                 }
 //               }
@@ -146,7 +153,8 @@ public class WheelScrollTest {
 //           }
 //           /* Scroll Up */
 //           else {
-//             int newFirst = locationToIndex(new Point(visibleRect.x, visibleRect.y-visibleRect.height));
+//             int newFirst = locationToIndex(
+//               new Point(visibleRect.x, visibleRect.y - visibleRect.height));
 //             int first = getFirstVisibleIndex();
 //             if (newFirst != -1) {
 //               if (first == -1) {
@@ -154,7 +162,7 @@ public class WheelScrollTest {
 //               }
 //               Rectangle newFirstRect = getCellBounds(newFirst,newFirst);
 //               Rectangle firstRect = getCellBounds(first,first);
-//               if ((newFirstRect != null) &amp;&amp; (firstRect!=null)) {
+//               if ((newFirstRect != null) &amp;&amp; (firstRect != null)) {
 //                 while ( (newFirstRect.y + visibleRect.height &lt;
 //                      firstRect.y + firstRect.height) &amp;&amp;
 //                     (newFirstRect.y &lt; firstRect.y) ) {
@@ -162,9 +170,9 @@ public class WheelScrollTest {
 //                   newFirstRect = getCellBounds(newFirst,newFirst);
 //                 }
 //                 inc = visibleRect.y - newFirstRect.y;
-//                 if ( (inc &lt;= 0) &amp;&amp; (newFirstRect.y &gt; 0)) {
+//                 if ((inc &lt;= 0) &amp;&amp; (newFirstRect.y &gt; 0)) {
 //                   newFirst--;
-//                   newFirstRect = getCellBounds(newFirst,newFirst);
+//                   newFirstRect = getCellBounds(newFirst, newFirst);
 //                   if (newFirstRect != null) {
 //                     inc = visibleRect.y - newFirstRect.y;
 //                   }
@@ -180,7 +188,7 @@ public class WheelScrollTest {
     list.setCellRenderer(new DefaultListCellRenderer() {
       private final Color ec = new Color(240, 240, 240);
       @Override public Component getListCellRendererComponent(
-          JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+        JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
         super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
         if (isSelected) {
           setForeground(list.getSelectionForeground());

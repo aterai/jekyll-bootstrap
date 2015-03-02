@@ -16,19 +16,19 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JComboBox combo1 = new JComboBox(items);
-JLabel renderer1 = (JLabel)combo1.getRenderer();
+JLabel renderer1 = (JLabel) combo1.getRenderer();
 renderer1.setPreferredSize(new Dimension(0, 32));
 
 JComboBox combo2 = new JComboBox(items);
 final ListCellRenderer r = combo2.getRenderer();
-final Dimension dim = ((JLabel)r).getPreferredSize();
+final Dimension dim = ((JLabel) r).getPreferredSize();
 combo2.setRenderer(new ListCellRenderer() {
   @Override public Component getListCellRendererComponent(
         JList list, Object value, int index,
         boolean isSelected, boolean cellHasFocus) {
     Component c = r.getListCellRendererComponent(
       list, value, index, isSelected, cellHasFocus);
-    c.setPreferredSize(new Dimension(100, (index&lt;0)?dim.height:32));
+    c.setPreferredSize(new Dimension(100, (index &lt; 0) ? dim.height : 32));
     return c;
   }
 });

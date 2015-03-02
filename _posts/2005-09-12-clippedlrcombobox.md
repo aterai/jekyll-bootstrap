@@ -46,7 +46,7 @@ comments: true
   @Override public Component getListCellRendererComponent(
       JList list, Object value, int index,
       boolean isSelected, boolean cellHasFocus) {
-    LRItem item = (LRItem)value;
+    LRItem item = (LRItem) value;
     leftLabel.setText(item.getLeftText());
     rightLabel.setText(item.getRightText());
 

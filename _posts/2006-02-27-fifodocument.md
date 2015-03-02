@@ -54,25 +54,23 @@ final Timer timer = new Timer(100, new ActionListener() {
 
 - - - -
 - `DocumentListener`ではなく、以下のような`DocumentFilter`を設定する方法もある
-    - `((AbstractDocument) jta.getDocument()).setDocumentFilter(new FIFODocumentFilter());`
 
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class FIFODocumentFilter extends DocumentFilter {
-  private static final int MAX_LINES = 10;
-  @Override public void insertString(
-      DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr)
-      throws BadLocationException {
-    fb.insertString(offset, string, attr);
-    Element root = fb.getDocument().getDefaultRootElement();
-    if (root.getElementCount() &gt; MAX_LINES) {
-      fb.remove(0, root.getElement(0).getEndOffset());
+		((AbstractDocument) jta.getDocument()).setDocumentFilter(new FIFODocumentFilter());
+    
+    <pre class="prettyprint"><code>class FIFODocumentFilter extends DocumentFilter {
+      private static final int MAX_LINES = 10;
+      @Override public void insertString(
+          DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr)
+          throws BadLocationException {
+        fb.insertString(offset, string, attr);
+        Element root = fb.getDocument().getDefaultRootElement();
+        if (root.getElementCount() &gt; MAX_LINES) {
+          fb.remove(0, root.getElement(0).getEndOffset());
+        }
+      }
     }
-  }
-}
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#z483e8cb]
 - [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)
 
 <!-- dummy comment line for breaking list -->

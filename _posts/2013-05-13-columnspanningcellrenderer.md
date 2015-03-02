@@ -59,12 +59,12 @@ comments: true
       boolean hasFocus, int row, int column) {
     Test test;
     if (value instanceof Test) {
-      test = (Test)value;
+      test = (Test) value;
       add(iconLabel, BorderLayout.WEST);
     } else {
       int mrow = table.convertRowIndexToModel(row);
       String title = value != null ? value.toString() : "";
-      Test t = (Test)table.getModel().getValueAt(mrow, 0);
+      Test t = (Test) table.getModel().getValueAt(mrow, 0);
       String text = t != null ? t.text : "";
       Icon icon = t != null ? t.icon : null;
       test = new Test(title, icon, text);

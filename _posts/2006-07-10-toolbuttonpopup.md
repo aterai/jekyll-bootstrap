@@ -51,7 +51,7 @@ class MenuToggleButton extends JToggleButton {
     Action a = new AbstractAction(text) {
       @Override public void actionPerformed(ActionEvent ae) {
         MenuToggleButton b = (MenuToggleButton) ae.getSource();
-        if (pop!=null) {
+        if (pop != null) {
           pop.show(b, 0, b.getHeight());
         }
       }
@@ -106,7 +106,7 @@ class MenuToggleButton extends JToggleButton {
     if (getModel().isSelected()) {
       Graphics2D g2 = (Graphics2D) g.create();
       g2.setColor(getBackground());
-      g2.fillRoundRect(0,0,getWidth(),getHeight(),4,4);
+      g2.fillRoundRect(0, 0, getWidth(), getHeight(), 4, 4);
       g2.dispose();
     }
     super.paintComponent(g);

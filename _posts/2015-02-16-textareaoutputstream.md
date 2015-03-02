@@ -7,6 +7,9 @@ tags: [JTextArea, OutputStream, StreamHandler, Logger]
 author: aterai
 pubdate: 2015-02-16T00:00:51+09:00
 description: Loggerのログ出力をJTextAreaに表示するためのOutputStreamとStreamHandlerを作成します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2015/02/logging-into-jtextarea.html
+    lang: en
 comments: true
 ---
 ## 概要

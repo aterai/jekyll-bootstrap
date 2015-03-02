@@ -169,7 +169,7 @@ public class MainPanel extends JPanel {
     JFrame frame = null;
     try (XMLDecoder d = new XMLDecoder(new BufferedInputStream(
         new FileInputStream(PROPERTIES_XML)))) {
-      frame = (JFrame)d.readObject();
+      frame = (JFrame) d.readObject();
       //d.close();
     } catch (Exception ex) {
       ex.printStackTrace();

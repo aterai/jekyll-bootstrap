@@ -177,13 +177,13 @@ public class ComboBoxUIDemo {
     ComboBoxEditor editor = cb.getEditor();
     Component c = editor.getEditorComponent();
     if (c instanceof JTextField) {
-      JTextField tf = (JTextField)c;
+      JTextField tf = (JTextField) c;
       tf.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 0, BORDER));
     }
   }
   private static void setPopupBorder(JComboBox cb) {
     Object o = cb.getAccessibleContext().getAccessibleChild(0);
-    JComponent c = (JComponent)o;
+    JComponent c = (JComponent) o;
     c.setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, BORDER));
   }
   private static DefaultComboBoxModel&lt;String&gt; makeModel() {

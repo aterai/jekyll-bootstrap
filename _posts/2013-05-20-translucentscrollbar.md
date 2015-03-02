@@ -32,7 +32,7 @@ comments: true
 
   scrollPane.setLayout(new ScrollPaneLayout() {
     @Override public void layoutContainer(Container parent) {
-      JScrollPane scrollPane = (JScrollPane)parent;
+      JScrollPane scrollPane = (JScrollPane) parent;
 
       Rectangle availR = scrollPane.getBounds();
       availR.x = availR.y = 0;
@@ -80,7 +80,7 @@ comments: true
     @Override protected void paintTrack(Graphics g, JComponent c, Rectangle r) {}
     @Override protected void paintThumb(Graphics g, JComponent c, Rectangle r) {
       Color color;
-      JScrollBar sb = (JScrollBar)c;
+      JScrollBar sb = (JScrollBar) c;
       if (!sb.isEnabled() || r.width &gt; r.height) {
         return;
       } else if (isDragging) {

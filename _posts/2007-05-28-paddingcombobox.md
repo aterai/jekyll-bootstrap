@@ -33,13 +33,13 @@ JComboBox&lt;String&gt; combo = new JComboBox&lt;String&gt;(model) {
       @Override public Component getListCellRendererComponent(
           JList&lt;? extends String&gt; list, String value, int index,
           boolean isSelected, boolean hasFocus) {
-        JLabel l = (JLabel)lcr.getListCellRendererComponent(
+        JLabel l = (JLabel) lcr.getListCellRendererComponent(
             list, value, index, isSelected, hasFocus);
         l.setBorder(padding);
         return l;
       }
     });
-    //XXX JDK 1.7.0 ?: ((JLabel)lcr).setBorder(padding);
+    //XXX JDK 1.7.0 ?: ((JLabel) lcr).setBorder(padding);
   }
 };
 </code></pre>
@@ -108,7 +108,7 @@ JComboBox&lt;String&gt; combo = new JComboBox&lt;String&gt;(model) {
 `JComboBox`が編集可能の場合は、`ComboBox.editorBorder`が有効かもしれない。
 
 <pre class="prettyprint"><code>//UIManager.put("ComboBox.padding", new InsetsUIResource(insets));
-UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0,5,0,0));
+UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0, 5, 0, 0));
 </code></pre>
 
 ~~上記のサンプルを、余白に色無しにして、`Ubuntu 7.04`(`GNOME 2.18.1`)、`JDK 1.6.0`で実行すると、以下のようになります。~~
@@ -135,6 +135,6 @@ UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0,5,0,0))
     - `JDK 1.6.0_10-beta-b22`で、`BasicComboBoxUI`の`padding`にすこし修正が入っている？ようです。
 - `LookAndFeel`の切り替えなどを追加しました。 -- *aterai* 2008-04-02 (水) 20:08:01
 - `1.7.0_06`で`Nimbus`などの`ComboBox.popupInsets`が修正？ [Bug ID: 7158712 Synth Property "ComboBox.popupInsets" is ignored](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7158712) -- *aterai* 2012-08-15 (水) 13:58:34
-- `Windows 7`の`LookAndFeel`、編集不可の`JComboBox`で、`( (JLabel)combo.getRenderer() ).setBorder(padding);`が`JComboBox`本体に効かない(フォーカスのための`Border`のせい？)ため、セルレンダラーを作成して毎回余白を適用するように変更。このため、`Windows 7`の`LookAndFeel`では、`JComboBox`本体の点線によるフォーカス表示が無くなる。 -- *aterai* 2013-11-19 (火) 15:37:19
+- `Windows 7`の`LookAndFeel`、編集不可の`JComboBox`で、`( (JLabel) combo.getRenderer() ).setBorder(padding);`が`JComboBox`本体に効かない(フォーカスのための`Border`のせい？)ため、セルレンダラーを作成して毎回余白を適用するように変更。このため、`Windows 7`の`LookAndFeel`では、`JComboBox`本体の点線によるフォーカス表示が無くなる。 -- *aterai* 2013-11-19 (火) 15:37:19
 
 <!-- dummy comment line for breaking list -->

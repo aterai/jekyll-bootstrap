@@ -40,7 +40,7 @@ comments: true
   @Override public Component add(Component c) {
     ensurePopupMenuCreated();
     if (c instanceof JComponent) {
-      ((JComponent)c).setOpaque(false);
+      ((JComponent) c).setOpaque(false);
     }
     popupMenu.add(c);
     return c;

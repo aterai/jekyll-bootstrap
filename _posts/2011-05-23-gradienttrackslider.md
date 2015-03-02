@@ -63,7 +63,7 @@ slider.setUI(new MetalSliderUI() {
     if (slider.isEnabled()) {
       g.setColor(controlDarkShadow);
       g.drawRect(trackLeft, trackTop,
-                 (trackRight - trackLeft) - 1, (trackBottom - trackTop) - 1);
+                (trackRight - trackLeft) - 1, (trackBottom - trackTop) - 1);
 
       g.setColor(controlHighlight);
       g.drawLine(trackLeft + 1, trackBottom, trackRight, trackBottom);
@@ -183,7 +183,7 @@ private static Color getColorFromPallet(int[] pallet, float x) {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>trackWidth = ((Integer)UIManager.get("Slider.trackWidth")).intValue();
+<pre class="prettyprint"><code>trackWidth = ((Integer) UIManager.get("Slider.trackWidth")).intValue();
 </code></pre>
 
 - なぜ`UIManager.getInt(...)`ではないのか不明

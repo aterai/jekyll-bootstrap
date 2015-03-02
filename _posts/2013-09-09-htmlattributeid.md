@@ -36,7 +36,7 @@ private void checkID(Element element) {
       ? null : attrs.getAttribute(StyleConstants.NameAttribute);
   HTML.Tag tag;
   if (name instanceof HTML.Tag) {
-    tag = (HTML.Tag)name;
+    tag = (HTML.Tag) name;
   } else {
     return;
   }
@@ -53,7 +53,7 @@ private void checkID(Element element) {
       Object obj = attrs.getAttribute(e.nextElement());
       //System.out.println("AttributeNames: "+obj);
       if (obj instanceof AttributeSet) {
-        AttributeSet a = (AttributeSet)obj;
+        AttributeSet a = (AttributeSet) obj;
         Object iid = a.getAttribute(HTML.Attribute.ID);
         if (iid != null) {
           textArea.append(String.format("inline: id=%s%n", iid));

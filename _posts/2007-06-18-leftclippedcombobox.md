@@ -39,7 +39,7 @@ combo02.setRenderer(new DefaultListCellRenderer() {
         buttonSize = arrowButton.getWidth();
       }
       availableWidth -= buttonSize;
-      JTextField tf = (JTextField)combo02.getEditor().getEditorComponent();
+      JTextField tf = (JTextField) combo02.getEditor().getEditorComponent();
       insets = tf.getMargin();
       availableWidth -= (insets.left + insets.right);
     }

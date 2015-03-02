@@ -16,8 +16,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>monitor = new ProgressMonitor(w, "message", "note", 0, 100);
-monitor.setMillisToDecideToPopup((int)millisToDecideToPopup.getValue());
-monitor.setMillisToPopup((int)millisToPopup.getValue());
+monitor.setMillisToDecideToPopup((int) millisToDecideToPopup.getValue());
+monitor.setMillisToPopup((int) millisToPopup.getValue());
 </code></pre>
 
 ## 解説

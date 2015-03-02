@@ -35,7 +35,7 @@ comments: true
     if (sorter != null) {
       List list = sorter.getSortKeys();
       if (list.size() &gt; 0) {
-        RowSorter.SortKey key0 = (RowSorter.SortKey)list.get(0);
+        RowSorter.SortKey key0 = (RowSorter.SortKey) list.get(0);
         if (column == convertColumnIndexToView(key0.getColumn())) {
           return true;
         }

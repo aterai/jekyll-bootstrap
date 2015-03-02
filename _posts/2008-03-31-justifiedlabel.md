@@ -56,7 +56,7 @@ class JustifiedLabel extends JLabel {
     }
     float xx = (jwidth - vwidth) / (float) (gv.getNumGlyphs() - 1);
     float xpos = 0f;
-    Point2D gmPos = new Point2D.Double(0.0d, 0.0d);
+    Point2D gmPos = new Point2D.Double(0d, 0d);
     for (int i = 0; i &lt; gv.getNumGlyphs(); i++) {
       GlyphMetrics gm = gv.getGlyphMetrics(i);
       gmPos.setLocation(xpos, 0);
@@ -131,7 +131,7 @@ class JustifiedLabel extends JLabel {
     super(str);
     Dimension d = getPreferredSize();
     int baseline = getBaseline(d.width, d.height);
-    setAlignmentY(baseline / (float)d.height);
+    setAlignmentY(baseline / (float) d.height);
   }
   @Override public Dimension getMinimumSize() {
     return getPreferredSize();
@@ -161,11 +161,11 @@ class JustifiedLabel extends JLabel {
   private GlyphVector getJustifiedGlyphVector(String str, Font font, FontRenderContext frc) {
     GlyphVector gv = font.createGlyphVector(frc, str);
     Rectangle2D r = gv.getVisualBounds();
-    float jwidth = (float)getWidth();
-    float vwidth = (float)r.getWidth();
+    float jwidth = (float) getWidth();
+    float vwidth = (float) r.getWidth();
     if (jwidth &lt; vwidth) return null;
     int num = gv.getNumGlyphs();
-    float xx = (jwidth - vwidth) / (float)(num - 1);
+    float xx = (jwidth - vwidth) / (float) (num - 1);
     float xpos = num == 1 ? (jwidth - vwidth) * .5f : 0f;
     Point2D gmPos = new Point2D.Double(0.0d, 0.0d);
     if (num == 1) System.out.println(gmPos);

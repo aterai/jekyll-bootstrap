@@ -38,7 +38,7 @@ int penc = 0x0;
   double xStart = startPoint.x;
   double yStart = startPoint.y;
   for (int i = 0; i &lt; delta; i++) {
-    Point p = new Point((int)xStart, (int)yStart);
+    Point p = new Point((int) xStart, (int) yStart);
     if (p.x &lt; 0 || p.y &lt; 0 || p.x &gt;= 320 || p.y &gt;= 240) break;
     pixels[p.x + p.y * 320] = penc;
     for (int n = -1; n &lt;= 1; n++) {
@@ -84,7 +84,7 @@ private BufferedImage backImage = null;
 @Override public void mouseDragged(MouseEvent e) {
   Point pt = e.getPoint();
   Graphics2D g2d = currentImage.createGraphics();
-  g2d.setStroke(new BasicStroke(3.0F));
+  g2d.setStroke(new BasicStroke(3f));
   if (isPen) {
     g2d.setPaint(Color.BLACK);
   } else {

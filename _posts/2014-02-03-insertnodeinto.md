@@ -15,15 +15,15 @@ comments: true
 {% download https://lh3.googleusercontent.com/-siBaGX1oXx8/Uu8JPWZaA7I/AAAAAAAAB_Y/fzV1VSKYg9I/s800/InsertNodeInto.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>DefaultTreeModel model1 = (DefaultTreeModel)tree1.getModel();
-DefaultMutableTreeNode parent1 = (DefaultMutableTreeNode)model1.getRoot();
+<pre class="prettyprint"><code>DefaultTreeModel model1 = (DefaultTreeModel) tree1.getModel();
+DefaultMutableTreeNode parent1 = (DefaultMutableTreeNode) model1.getRoot();
 DefaultMutableTreeNode child1  = new DefaultMutableTreeNode(date);
 parent1.add(child1);
 model1.reload(parent1);
 tree1.scrollPathToVisible(new TreePath(child1.getPath()));
 
-DefaultTreeModel model2 = (DefaultTreeModel)tree2.getModel();
-DefaultMutableTreeNode parent2 = (DefaultMutableTreeNode)model2.getRoot();
+DefaultTreeModel model2 = (DefaultTreeModel) tree2.getModel();
+DefaultMutableTreeNode parent2 = (DefaultMutableTreeNode) model2.getRoot();
 DefaultMutableTreeNode child2  = new DefaultMutableTreeNode(date);
 model2.insertNodeInto(child2, parent2, parent2.getChildCount());
 tree2.scrollPathToVisible(new TreePath(child2.getPath()));

@@ -23,11 +23,11 @@ comments: true
   public ProgressRenderer() {
     super();
     setOpaque(true);
-    b.setBorder(BorderFactory.createEmptyBorder(1,1,1,1));
+    b.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
   }
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
       boolean isSelected, boolean hasFocus, int row, int column) {
-    Integer i = (Integer)value;
+    Integer i = (Integer) value;
     String text = "Done";
     if (i &lt; 0) {
       text = "Canceled";

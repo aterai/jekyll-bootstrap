@@ -29,7 +29,7 @@ comments: true
   }
   public Popup getPopup(JPopupMenu popup, int x, int y) {
     Popup pp = super.getPopup(popup, x, y);
-    JPanel panel = (JPanel)popup.getParent();
+    JPanel panel = (JPanel) popup.getParent();
     if (isHeavyWeightContainer(panel)) {
       System.out.println("outer");
       Point p = new Point(x, y);

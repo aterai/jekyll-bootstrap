@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>final JLabel label = new JLabel("000/100");
-label.setBorder(BorderFactory.createEmptyBorder(4,4,4,4));
+label.setBorder(BorderFactory.createEmptyBorder(4, 4, 4, 4));
 LayerUI&lt;JProgressBar&gt; layerUI = new LayerUI&lt;JProgressBar&gt;() {
   private final JPanel rubberStamp = new JPanel();
   @Override public void paint(Graphics g, JComponent c) {
@@ -24,8 +24,8 @@ LayerUI&lt;JProgressBar&gt; layerUI = new LayerUI&lt;JProgressBar&gt;() {
     Dimension d = label.getPreferredSize();
     int x = (c.getWidth()  - d.width)  / 2;
     int y = (c.getHeight() - d.height) / 2;
-    JLayer jlayer = (JLayer)c;
-    JProgressBar progress = (JProgressBar)jlayer.getView();
+    JLayer jlayer = (JLayer) c;
+    JProgressBar progress = (JProgressBar) jlayer.getView();
     int iv = (int)(100 * progress.getPercentComplete());
     label.setText(String.format("%03d/100", iv));
     //label.setText(progress.getString());

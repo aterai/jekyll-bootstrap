@@ -20,8 +20,8 @@ comments: true
     Point pt = e.getPoint();
     Component c = e.getComponent();
     BoundedRangeModel m = scrollbar.getModel();
-    int h = m.getMaximum()-m.getMinimum();
-    int iv = (int)(.5 - m.getExtent() * .5 + pt.y * h / (double)c.getHeight());
+    int h = m.getMaximum() - m.getMinimum();
+    int iv = (int) (.5 - m.getExtent() * .5 + pt.y * h / (double) c.getHeight());
     m.setValue(iv);
   }
   @Override public void mousePressed(MouseEvent e) {

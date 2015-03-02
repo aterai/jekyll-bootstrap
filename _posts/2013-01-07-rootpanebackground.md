@@ -39,7 +39,7 @@ comments: true
 //frame.getRootPane().setBackground(Color.BLUE);
 //frame.getLayeredPane().setBackground(Color.GREEN);
 //frame.getContentPane().setBackground(Color.RED);
-((JComponent)frame.getContentPane()).setOpaque(false);
+((JComponent) frame.getContentPane()).setOpaque(false);
 frame.setJMenuBar(createMenubar());
 frame.getContentPane().add(new MainPanel());
 </code></pre>

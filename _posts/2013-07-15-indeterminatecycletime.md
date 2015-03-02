@@ -15,8 +15,8 @@ comments: true
 {% download https://lh3.googleusercontent.com/--xwJeUKsm8k/UeK6iFE0vkI/AAAAAAAABvw/SNNt1mvM4_c/s800/IndeterminateCycleTime.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>UIManager.put("ProgressBar.repaintInterval", (Integer)repaintIntervalSpinner.getValue());
-UIManager.put("ProgressBar.cycleTime",       (Integer)cycleTimeSpinner.getValue());
+<pre class="prettyprint"><code>UIManager.put("ProgressBar.repaintInterval", (Integer) repaintIntervalSpinner.getValue());
+UIManager.put("ProgressBar.cycleTime",       (Integer) cycleTimeSpinner.getValue());
 progressBar.setIndeterminate(true);
 </code></pre>
 

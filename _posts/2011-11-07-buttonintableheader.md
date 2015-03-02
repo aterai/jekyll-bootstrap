@@ -26,7 +26,7 @@ comments: true
   int mci = table.convertColumnIndexToModel(vci);
   TableColumn column = table.getColumnModel().getColumn(mci);
   Rectangle r = header.getHeaderRect(vci);
-  Container c = (Container)getTableCellRendererComponent(table, "", true, true, -1, vci);
+  Container c = (Container) getTableCellRendererComponent(table, "", true, true, -1, vci);
   //if (!isNimbus) {
   //  Insets i = c.getInsets();
   //  r.translate(r.width - i.right, 0);

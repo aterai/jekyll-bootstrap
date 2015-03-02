@@ -73,7 +73,7 @@ comments: true
     // "3" is magic number @see BasicTabbedPaneUI#calculateTabWidth
     tabWidth = tabWidth - tabInsets.left - tabInsets.right - 3;
     for (int i = 0; i &lt; tabCount; i++) {
-      JComponent l = (JComponent)getTabComponentAt(i);
+      JComponent l = (JComponent) getTabComponentAt(i);
       if (l == null) break;
       l.setPreferredSize(new Dimension(tabWidth + (i &lt; gap ? 1 : 0), l.getPreferredSize().height));
     }

@@ -41,7 +41,7 @@ panel.repaint();
 ## 解説
 上記のサンプルでは、以下のような定数フィールド値をコンボボックスで指定することで、タイトルの位置や揃えを変更できるようになっています。
 
-- タイトルの位置を`TitledBorder#setTitlePosition`メソッドで指定します。
+- タイトルの位置を`TitledBorder#setTitlePosition`メソッドで指定
     - `DEFAULT_POSITION`
     - `ABOVE_TOP`
     - `TOP`
@@ -52,7 +52,7 @@ panel.repaint();
 
 <!-- dummy comment line for breaking list -->
 
-- タイトルの揃えを`TitledBorder#setTitleJustification`メソッドで指定します。
+- タイトルの揃えを`TitledBorder#setTitleJustification`メソッドで指定
     - `LEFT`
     - `CENTER`
     - `RIGHT`

@@ -20,7 +20,7 @@ comments: true
   //https://community.oracle.com/thread/1350192
   @Override public boolean editCellAt(int row, int column, EventObject e) {
     if (e instanceof KeyEvent) {
-      int c = ((KeyEvent)e).getKeyCode();
+      int c = ((KeyEvent) e).getKeyCode();
       if (KeyEvent.VK_F1 &lt;= c &amp;&amp; c &lt;= KeyEvent.VK_F21) {
         return false;
       }
