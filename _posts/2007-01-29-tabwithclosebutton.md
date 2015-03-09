@@ -28,7 +28,7 @@ comments: true
     JPanel tab = new JPanel(new BorderLayout());
     tab.setOpaque(false);
     JLabel label = new JLabel(title);
-    label.setBorder(BorderFactory.createEmptyBorder(0,0,0,4));
+    label.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 4));
     JButton button = new JButton(icon);
     button.setPreferredSize(buttonSize);
     button.addActionListener(new ActionListener() {
@@ -38,9 +38,9 @@ comments: true
     });
     tab.add(label,  BorderLayout.WEST);
     tab.add(button, BorderLayout.EAST);
-    tab.setBorder(BorderFactory.createEmptyBorder(2,1,1,1));
+    tab.setBorder(BorderFactory.createEmptyBorder(2, 1, 1, 1));
     super.addTab(null, content);
-    setTabComponentAt(getTabCount()-1, tab);
+    setTabComponentAt(getTabCount() - 1, tab);
   }
 }
 </code></pre>

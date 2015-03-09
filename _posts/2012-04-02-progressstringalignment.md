@@ -31,7 +31,7 @@ comments: true
         setLayout(new BorderLayout());
         addChangeListener(changeListener);
         add(label);
-        label.setBorder(BorderFactory.createEmptyBorder(0,4,0,4));
+        label.setBorder(BorderFactory.createEmptyBorder(0, 4, 0, 4));
       }
     });
   }

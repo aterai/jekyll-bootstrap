@@ -29,7 +29,7 @@ comments: true
     int h = height - 1;
     Area round = new Area(new RoundRectangle2D.Float(x, y, w, h, r, r));
     Container parent = c.getParent();
-    if (parent!=null) {
+    if (parent != null) {
       g2.setColor(parent.getBackground());
       Area corner = new Area(new Rectangle2D.Float(x, y, width, height));
       corner.subtract(round);
@@ -68,7 +68,7 @@ class KamabokoBorder extends RoundedCornerBorder {
     p.closePath();
     Area round = new Area(p);
     Container parent = c.getParent();
-    if (parent!=null) {
+    if (parent != null) {
       g2.setColor(parent.getBackground());
       Area corner = new Area(new Rectangle2D.Float(x, y, width, height));
       corner.subtract(round);

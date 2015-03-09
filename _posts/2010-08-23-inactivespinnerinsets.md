@@ -17,11 +17,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JSpinner spinner3 = new JSpinner() {
   @Override protected void paintComponent(Graphics g) {
-    if (getUI() instanceof com.sun.java.swing.plaf.windows.WindowsSpinnerUI) {
+    if (getUI() instanceof WindowsSpinnerUI) {
       Graphics2D g2d = (Graphics2D) g.create();
-      g2d.setPaint(isEnabled()?UIManager.getColor("FormattedTextField.background")
-                   :UIManager.getColor("FormattedTextField.inactiveBackground"));
-      g2d.fillRect(0,0,getWidth(),getHeight());
+      g2d.setPaint(isEnabled() ? UIManager.getColor("FormattedTextField.background")
+                               : UIManager.getColor("FormattedTextField.inactiveBackground"));
+      g2d.fillRect(0, 0, getWidth(),getHeight());
       g2d.dispose();
     }
   }
@@ -55,10 +55,10 @@ comments: true
         
         <pre class="prettyprint"><code>JSpinner spinner2 = new JSpinner();
         spinner2.setBorder(BorderFactory.createEmptyBorder());
-        JSpinner.DefaultEditor editor2 = (JSpinner.DefaultEditor)spinner2.getEditor();
-        editor2.setBorder(BorderFactory.createMatteBorder(1,1,1,0, new Color(127,157,185)));
+        JSpinner.DefaultEditor editor2 = (JSpinner.DefaultEditor) spinner2.getEditor();
+        editor2.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 0, new Color(127, 157, 185)));
         JTextField field2 = editor2.getTextField();
-        field2.setBorder(BorderFactory.createEmptyBorder(2,2,2,0));
+        field2.setBorder(BorderFactory.createEmptyBorder(2, 2, 2, 0));
 </code></pre>
 - `paintComponent, paintChildren`
     - `JSpinner#paintComponent()`をオーバーライドして, `WindowsLookAndFeel(XP)`の場合表示される余白(背景色)を`UIManager.getColor("FormattedTextField.inactiveBackground")`で塗りつぶしている。

@@ -15,7 +15,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>static Border padding = BorderFactory.createEmptyBorder(0,5,0,0);
+<pre class="prettyprint"><code>static Border padding = BorderFactory.createEmptyBorder(0, 5, 0, 0);
 //...
 DefaultComboBoxModel&lt;String&gt; model = new DefaultComboBoxModel&lt;&gt;();
 model.addElement("aaaaaaaaaaaaaaaaaaaaaaaaa");

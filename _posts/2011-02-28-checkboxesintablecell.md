@@ -47,10 +47,10 @@ comments: true
       removeAll();
       initButtons();
     }
-    Integer i = (Integer)(v==null?0:v);
-    buttons[0].setSelected((i&amp;(1&lt;&lt;2))!=0);
-    buttons[1].setSelected((i&amp;(1&lt;&lt;1))!=0);
-    buttons[2].setSelected((i&amp;(1&lt;&lt;0))!=0);
+    Integer i = (Integer) (v == null ? 0 : v);
+    buttons[0].setSelected((i &amp; (1 &lt;&lt; 2)) != 0);
+    buttons[1].setSelected((i &amp; (1 &lt;&lt; 1)) != 0);
+    buttons[2].setSelected((i &amp; (1 &lt;&lt; 0)) != 0);
   }
 }
 </code></pre>

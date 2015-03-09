@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private static int number = 0;
 public static JFrame createFrame(String title) {
-  JFrame frame = new JFrame((title==null) ? "Frame #" + number : title);
+  JFrame frame = new JFrame((title == null) ? "Frame #" + number : title);
   frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
   number++;
 //frame.addWindowListener(new WindowAdapter() {
@@ -25,7 +25,7 @@ public static JFrame createFrame(String title) {
 //    number--;
 //    if (number == 0) {
 //      JFrame f = (JFrame) e.getSource();
-//      f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//      f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 //    }
 //  }
 //});
@@ -34,7 +34,7 @@ public static JFrame createFrame(String title) {
 </code></pre>
 
 ## 解説
-~~このサンプルでは、`WindowListener`で終了時に自分が最後のフレームの場合だけ`setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)`するように設定しています。~~
+~~このサンプルでは、`WindowListener`で終了時に自分が最後のフレームの場合だけ`setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)`するように設定しています。~~
 
 すべてのフレームに、`setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE)`を設定して、`Java VM`内で最後の表示可能なウィンドウが破棄されると、`VM`が終了するようになっています。
 

@@ -65,7 +65,7 @@ comments: true
 
       return;
     }
-    if (!window.isVisible() || draggingComonent==null) {
+    if (!window.isVisible() || draggingComonent == null) {
       return;
     }
 
@@ -107,7 +107,7 @@ comments: true
 
   @Override public void mouseReleased(MouseEvent e) {
     startPt = null;
-    if (!window.isVisible() || draggingComonent==null) {
+    if (!window.isVisible() || draggingComonent == null) {
       return;
     }
     Point pt = e.getPoint();

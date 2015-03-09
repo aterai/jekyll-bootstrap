@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TWH8aAgoyiI/AAAAAAAAA1o/J-ljyl_h_i8/s800/BlinkRate.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>((DefaultCaret)textField.getCaret()).setBlinkRate(0);
+<pre class="prettyprint"><code>((DefaultCaret) textField.getCaret()).setBlinkRate(0);
 </code></pre>
 
 ## 解説

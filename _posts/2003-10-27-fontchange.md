@@ -73,7 +73,7 @@ class Test {
 
 <pre class="prettyprint"><code>try {
   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-} catch(Exception e) {
+} catch (Exception e) {
   e.printStackTrace();
 }
 </code></pre>
@@ -95,7 +95,7 @@ class Test {
 <pre class="prettyprint"><code>combo.setFont(font);
 //以下回避方法
 combo.setPrototypeDisplayValue(null); //null:default?
-//or combo.firePropertyChange("prototypeDisplayValue",0,1); //0,1:dummy
+//or combo.firePropertyChange("prototypeDisplayValue", 0, 1); //0, 1:dummy
 </code></pre>
 
 - - - -

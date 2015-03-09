@@ -24,7 +24,7 @@ comments: true
 プラットフォームで、最前面がサポートされていない場合は、何も起こらないようです。サポートされているかどうかは、`JDK 1.6.0`で導入された、`Window#isAlwaysOnTopSupported()`か、`Toolkit.isAlwaysOnTopSupported()`で調べることができます。
 
 ## 参考リンク
-- [Window.html#setAlwaysOnTop(boolean)](https://docs.oracle.com/javase/jp/8/api/java/awt/Window.html#setAlwaysOnTop-boolean-)
+- [Window.html#setAlwaysOnTop(boolean)](https://docs.oracle.com/javase/jp/8/api/docs/java/awt/Window.html#setAlwaysOnTop-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

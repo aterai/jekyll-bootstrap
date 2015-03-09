@@ -25,7 +25,7 @@ comments: true
     this.str = str;
     FontRenderContext frc = new FontRenderContext(null, true, true);
     rect = parent.getFont().getStringBounds(str, frc).getBounds();
-    insets = new Insets(0,0,0,rect.width);
+    insets = new Insets(0, 0, 0, rect.width);
   }
   @Override public Insets getBorderInsets(Component c) {
     return insets;
@@ -37,7 +37,7 @@ comments: true
       Component c, Graphics g, int x, int y, int width, int height) {
     Graphics2D g2 = (Graphics2D) g;
     float tx = x + width - rect.width;
-    float ty = y - rect.y + (height - rect.height)/2;
+    float ty = y - rect.y + (height - rect.height) / 2;
     //g2.setPaint(Color.RED);
     g2.drawString(str, tx, ty);
   }
@@ -68,7 +68,7 @@ editor2.setBackground(Color.WHITE);
 //Border b = new StringBorder(editor2, "percent");
 Border b = new StringBorder(editor2, "%");
 Border c = editor2.getBorder();
-editor2.setBorder((c==null)?b:BorderFactory.createCompoundBorder(c,b));
+editor2.setBorder((c == null) ? b : BorderFactory.createCompoundBorder(c, b));
 </code></pre>
 
 - - - -

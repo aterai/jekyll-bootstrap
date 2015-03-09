@@ -20,7 +20,7 @@ comments: true
     return new ViewFactory() {
       @Override public View create(Element elem) {
         String kind = elem.getName();
-        if (kind!=null) {
+        if (kind != null) {
           if (kind.equals(AbstractDocument.ContentElementName)) {
             return new LabelView(elem);
           } else if (kind.equals(AbstractDocument.ParagraphElementName)) {
@@ -50,10 +50,10 @@ comments: true
 
 <pre class="prettyprint"><code>SimpleAttributeSet a = new SimpleAttributeSet();
 StyleConstants.setLineSpacing(a, .5f);
-//StyleConstants.setSpaceAbove(a, 5.0f);
-//StyleConstants.setSpaceBelow(a, 5.0f);
-//StyleConstants.setLeftIndent(a, 5.0f);
-//StyleConstants.setRightIndent(a, 5.0f);
+//StyleConstants.setSpaceAbove(a, 5f);
+//StyleConstants.setSpaceBelow(a, 5f);
+//StyleConstants.setLeftIndent(a, 5f);
+//StyleConstants.setRightIndent(a, 5f);
 editor1.setParagraphAttributes(a, true);
 setDummyText(editor1);
 </code></pre>
@@ -65,7 +65,7 @@ setDummyText(editor1);
 
 - - - -
 - スタイルシートで`line-height`を指定しても反映されない(`line-height`は、モデル化されているが、現在は描画されない)
-    - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/CSS.html)
+    - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/text/html/CSS.html)
 - ブロックレベルで一行だけ固定の行間が指定したい場合は、`margin-bottom`が使用可能
 
 <!-- dummy comment line for breaking list -->

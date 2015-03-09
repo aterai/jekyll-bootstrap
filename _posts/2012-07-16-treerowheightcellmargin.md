@@ -45,7 +45,7 @@ comments: true
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
-    JLabel l = (JLabel)super.getTreeCellRendererComponent(
+    JLabel l = (JLabel) super.getTreeCellRendererComponent(
         tree, value, selected, expanded, leaf, row, hasFocus);
     Color bColor, fColor;
     if (selected) {

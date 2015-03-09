@@ -28,8 +28,8 @@ comments: true
     super(new BorderLayout());
     int left  = 1;
     int right = 3;
-    tabPanel.setBorder(BorderFactory.createEmptyBorder(1,left,0,right));
-    contentsPanel.setBorder(BorderFactory.createEmptyBorder(4,left,2,right));
+    tabPanel.setBorder(BorderFactory.createEmptyBorder(1, left, 0, right));
+    contentsPanel.setBorder(BorderFactory.createEmptyBorder(4, left, 2, right));
     wrapPanel.add(tabPanel);
     wrapPanel.add(new JLabel("test:"), BorderLayout.WEST);
     add(wrapPanel, BorderLayout.NORTH);

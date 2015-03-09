@@ -55,7 +55,7 @@ scrollToCenter(textPane, hh.getStartOffset());
 - [JTextAreaでハイライト付き検索を行う](http://ateraimemo.com/Swing/HighlightSearch.html)
 - [JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html)
 - [Highlighterで文字列をハイライト](http://ateraimemo.com/Swing/Highlighter.html)
-    - こちらのコメントからソースコードを移動。
+    - こちらのコメントからソースコードを移動して、この記事を作成
 
 <!-- dummy comment line for breaking list -->
 

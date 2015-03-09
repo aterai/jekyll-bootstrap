@@ -28,7 +28,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [Toolkit#setDynamicLayout(boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/java/awt/Toolkit.html#setDynamicLayout-boolean-)
+- [Toolkit#setDynamicLayout(boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/java/awt/Toolkit.html#setDynamicLayout-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

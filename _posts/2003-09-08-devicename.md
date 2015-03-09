@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private boolean isCanonicalPath(File file) {
-  if (file==null) return false;
+  if (file == null) return false;
   try {
     if (file.getCanonicalPath() == null) {
       return false;

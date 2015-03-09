@@ -3,14 +3,14 @@ layout: post
 category: swing
 folder: AnimatedToolTip
 title: JToolTipのアニメーション
-tags: [JToolTip, Animation, Html]
+tags: [JToolTip, JLabel, Animation, Html]
 author: aterai
 pubdate: 2007-04-23T09:48:54+09:00
-description: ツールチップにアニメーションするアイコンを使用します。
+description: JToolTipが表示されたとき、内部のJLabelでアイコンのアニメーションを行う方法をテストします。
 comments: true
 ---
 ## 概要
-ツールチップにアニメーションするアイコンを使用します。
+`JToolTip`が表示されたとき、内部の`JLabel`でアイコンのアニメーションを行う方法をテストします。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHpat_rFI/AAAAAAAAARg/fzkRLOHGb7I/s800/AnimatedToolTip.png %}
 
@@ -21,17 +21,12 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;")
 
 ## 解説
 - 上
-    - `javax.swing.Timer`を使ってアニメーションするラベルを使用しています。
-
-<!-- dummy comment line for breaking list -->
-
+    - `javax.swing.Timer`を使ってアニメーションを行う`JLabel`を使用
+    - [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)
 - 中
-    - アニメ`GIF`ファイルをアイコンとして使用しています。
-
-<!-- dummy comment line for breaking list -->
-
+    - `Animated GIF`ファイルを`JLabel`のアイコンとして使用
 - 下
-    - アニメ`GIF`ファイルを`html`タグを使って貼り付けています。
+    - `Animated GIF`ファイルを`<html>`タグを使って`JLabel`に貼り付けて使用
 
 <!-- dummy comment line for breaking list -->
 

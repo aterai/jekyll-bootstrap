@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>final JFrame frame = new JFrame("@title@");
 try {
   SingleInstanceService sis =
-      (SingleInstanceService)ServiceManager.lookup("javax.jnlp.SingleInstanceService");
+      (SingleInstanceService) ServiceManager.lookup("javax.jnlp.SingleInstanceService");
   sis.addSingleInstanceListener(new SingleInstanceListener() {
     private int count = 0;
     @Override public void newActivation(String[] args) {
@@ -26,13 +26,13 @@ try {
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           JOptionPane.showMessageDialog(frame, "");
-          frame.setTitle("title:"+count);
+          frame.setTitle("title:" + count);
           count++;
         }
       });
     }
   });
-} catch(UnavailableServiceException use) {
+} catch (UnavailableServiceException use) {
   use.printStackTrace();
   return;
 }

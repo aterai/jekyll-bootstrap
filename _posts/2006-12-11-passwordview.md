@@ -41,4 +41,9 @@ comments: true
 ## 解説
 上記のサンプルでは、下の`JPasswordField`のエコー文字を独自の図形に変更しています。またこの図形のサイズを上の`JPasswordField`のエコー文字と幅を合わせるために同じ文字を`setEchoChar`しています。
 
+## 参考リンク
+- [JPasswordFieldでパスワードを可視化する](http://ateraimemo.com/Swing/ShowHidePasswordField.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

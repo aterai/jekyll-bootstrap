@@ -50,7 +50,7 @@ private final JPanel controls = new JPanel(new BorderLayout(5, 5) {
 private Action makeShowHideAction() {
   return new AbstractAction("Show/Hide Search Box") {
     @Override public void actionPerformed(ActionEvent e) {
-      if (animator!=null &amp;&amp; animator.isRunning()) {
+      if (animator != null &amp;&amp; animator.isRunning()) {
         return;
       }
       isHidden = controls.getHeight() == 0;

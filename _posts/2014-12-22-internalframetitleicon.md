@@ -38,7 +38,7 @@ for (Color c: Arrays.asList(Color.RED, Color.GREEN, Color.BLUE)) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JInternalFrame#setFrameIcon(Icon) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/javax/swing/JInternalFrame.html#setFrameIcon-javax.swing.Icon-)
+- [JInternalFrame#setFrameIcon(Icon) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/JInternalFrame.html#setFrameIcon-javax.swing.Icon-)
 
 <!-- dummy comment line for breaking list -->
 

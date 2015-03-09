@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>ImageIcon icon = new ImageIcon(url);
-//Wastefulness: icon.setImageObserver((ImageObserver)table);
+//Wastefulness: icon.setImageObserver((ImageObserver) table);
 icon.setImageObserver(new ImageObserver() {
   //@see http://www2.gol.com/users/tame/swing/examples/SwingExamples.html
   @Override public boolean imageUpdate(
@@ -31,7 +31,7 @@ icon.setImageObserver(new ImageObserver() {
       int vc = table.convertColumnIndexToView(col);
       table.repaint(table.getCellRect(vr, vc, false));
     }
-    return (infoflags &amp; (ALLBITS|ABORT)) == 0;
+    return (infoflags &amp; (ALLBITS | ABORT)) == 0;
   };
 });
 </code></pre>

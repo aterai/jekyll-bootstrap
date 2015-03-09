@@ -38,7 +38,7 @@ comments: true
 - `ComponentListener#componentResized(...)`がチェックされている場合
     - `JScrollPane`に追加した`ComponentListener`で、リサイズされる毎に全ての列幅を設定し直すので、フレームのサイズを変更してもカラムの比率は保持される
 - `ComponentListener#componentResized(...)`がチェックされていない場合
-    - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズすると、その幅の変更([デルタ](http://docs.oracle.com/javase/jp/8/api/javax/swing/JTable.html#doLayout--))が、リサイズ可能なすべての列に分散して加算減算される
+    - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズすると、その幅の変更([デルタ](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/JTable.html#doLayout--))が、リサイズ可能なすべての列に分散して加算減算される
         - このため、入力されている比率とは異なる列幅になる
 
 <!-- dummy comment line for breaking list -->
@@ -47,7 +47,7 @@ comments: true
 `TableColumn#setMaxWidth`メソッドでカラムの幅を指定する場合は、マウスのドラッグによるサイズの変更はできません。
 
 ## 参考リンク
-- [デルタの分散 - JTable#doLayout() (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/javax/swing/JTable.html#doLayout--)
+- [デルタの分散 - JTable#doLayout() (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/JTable.html#doLayout--)
 
 <!-- dummy comment line for breaking list -->
 

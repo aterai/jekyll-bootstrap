@@ -18,8 +18,8 @@ comments: true
 <pre class="prettyprint"><code>private ClipboardService cs = null;
 public JComponent makeUI() {
   try {
-    cs = (ClipboardService)ServiceManager.lookup("javax.jnlp.ClipboardService");
-  } catch(UnavailableServiceException e) {
+    cs = (ClipboardService) ServiceManager.lookup("javax.jnlp.ClipboardService");
+  } catch (UnavailableServiceException e) {
     cs = null;
   }
   JPanel p = new JPanel(new BorderLayout());
@@ -30,7 +30,7 @@ public JComponent makeUI() {
         Transferable t = (cs == null)
           ? Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null)
           : cs.getContents();
-        if (t==null) {
+        if (t == null) {
           java.awt.Toolkit.getDefaultToolkit().beep();
           return;
         }

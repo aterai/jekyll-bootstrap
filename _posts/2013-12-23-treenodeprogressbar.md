@@ -45,7 +45,7 @@ comments: true
     Object o = ((DefaultMutableTreeNode) value).getUserObject();
     JComponent c = (JComponent) super.getTreeCellRendererComponent(
         tree, value, selected, expanded, leaf, row, hasFocus);
-    if (o==null || !(o instanceof ProgressObject)) {
+    if (!(o instanceof ProgressObject)) {
       return c;
     }
     ProgressObject n = (ProgressObject) o;

@@ -81,7 +81,7 @@ private DefaultListModel makeList() {
 </code></pre>
 
 ## 参考リンク
-- [JList#setFixedCellHeight(int) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/javax/swing/JList.html#setFixedCellHeight-int-)
+- [JList#setFixedCellHeight(int) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/JList.html#setFixedCellHeight-int-)
 
 <!-- dummy comment line for breaking list -->
 
