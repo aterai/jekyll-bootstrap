@@ -41,7 +41,7 @@ layout.setVerticalGroup(vGroup);
 
 <pre class="prettyprint"><code>//GridBagLayout
 JPanel p2 = new JPanel(new GridBagLayout());
-Border inside  = BorderFactory.createEmptyBorder(10,5+2,10,10+2);
+Border inside  = BorderFactory.createEmptyBorder(10, 5 + 2, 10, 10 + 2);
 Border outside = BorderFactory.createTitledBorder("GridBagLayout");
 p2.setBorder(BorderFactory.createCompoundBorder(outside, inside));
 GridBagConstraints c = new GridBagConstraints();

@@ -41,7 +41,7 @@ formatter.setAllowsInvalid(false);
   final JFormattedTextField ftf = (JFormattedTextField) editor.getTextField();
   ftf.setFormatterFactory(makeFFactory(m));
   ftf.getDocument().addDocumentListener(new DocumentListener() {
-    private final Color color = new Color(255,200,200);
+    private final Color color = new Color(255, 200, 200);
     @Override public void changedUpdate(DocumentEvent e) {
       updateEditValid();
     }

@@ -82,7 +82,7 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
 - - - -
 `SwingWorker`に別の`PropertyChangeListener`を追加して使用する方法もあります。
 
-<pre class="prettyprint"><code>worker.firePropertyChange("file-progress", iv, iv+1);
+<pre class="prettyprint"><code>worker.firePropertyChange("file-progress", iv, iv + 1);
 //...
 class SubProgressListener implements PropertyChangeListener {
   private final JProgressBar progressBar;

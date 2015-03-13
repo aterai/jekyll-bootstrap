@@ -19,7 +19,7 @@ comments: true
   @Override protected JDialog createDialog(Component parent) throws HeadlessException {
     JDialog dialog = super.createDialog(parent);
     dialog.setResizable(false);
-    //dialog.setMinimumSize(new Dimension(640,480)); // JDK 6
+    //dialog.setMinimumSize(new Dimension(640, 480)); // JDK 6
     //dialog.addComponentListener(new MinimumSizeAdapter());
     return dialog;
   }

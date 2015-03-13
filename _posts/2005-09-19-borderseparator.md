@@ -24,7 +24,7 @@ combobox.setRenderer(new ListCellRenderer() {
                boolean isSelected, boolean cellHasFocus) {
     MyItem item = (MyItem) value;
     JLabel label = (JLabel) lcr.getListCellRendererComponent(
-                    list,item,index,isSelected,cellHasFocus);
+                    list, item, index, isSelected, cellHasFocus);
     if (item.hasSeparator()) {
       label.setBorder(
              BorderFactory.createMatteBorder(1, 0, 0, 0, Color.GRAY));
@@ -76,7 +76,7 @@ combobox.setEditable(true);
                boolean isSelected, boolean cellHasFocus) {
     MyItem item = (MyItem) value;
     JLabel label = (JLabel) lcr.getListCellRendererComponent(
-                    list,item,index,isSelected,cellHasFocus);
+                    list, item, index, isSelected, cellHasFocus);
     if (index != -1 &amp;&amp; item.hasSeparator()) {
       label.setBorder(
              BorderFactory.createMatteBorder(1, 0, 0, 0, Color.GRAY));

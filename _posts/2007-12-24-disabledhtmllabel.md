@@ -11,6 +11,11 @@ comments: true
 ---
 ## 概要
 `Html`を使った`JLabel`と、`JEditorPane`を`setEnabled(false)`で無効にします。
+- [Bug ID: 4783068 Components with HTML text should gray out the text when disabled](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4783068)
+    - `JDK 1.7.0-ea-b55`で、以下の描画は修正された
+    - このサンプルを実行すると、スクリーンショットとは異なり、無効化ですべての文字列がグレーになる
+
+<!-- dummy comment line for breaking list -->
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTK9vV2SGI/AAAAAAAAAW0/PIlAG2B9yZA/s800/DisabledHtmlLabel.png %}
 
@@ -64,12 +69,6 @@ editor2.setFont(UIManager.getFont("Label.font"));
 
 - - - -
 `Html`レンダリングを無効化して、タグを文字列として表示する場合は、[JLabelなどのHtmlレンダリングを無効化](http://ateraimemo.com/Swing/HtmlDisable.html)を参考にしてください。
-
-- - - -
-- [Bug ID: 4783068 Components with HTML text should gray out the text when disabled](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4783068)
-    - `JDK 1.7.0-ea-b55`以上で、修正されている(上記のサンプルでも、無効化ですべての文字列がグレーになる)ようです。
-
-<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519)

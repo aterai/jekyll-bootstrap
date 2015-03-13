@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class MyTreeCellRenderer extends DefaultTreeCellRenderer implements MouseMotionListener {
-  private static final Color rollOverRowColor = new Color(220,240,255);
+  private static final Color rollOverRowColor = new Color(220, 240, 255);
   private final JTree tree;
   private final TreeCellRenderer renderer;
   public MyTreeCellRenderer(JTree tree, TreeCellRenderer renderer) {

@@ -21,7 +21,7 @@ comments: true
   true,  //maximizable
   true); //iconifiable
 iframe.setSize(180, 180);
-desktop.add(iframe, Integer.valueOf(JLayeredPane.MODAL_LAYER+1));
+desktop.add(iframe, Integer.valueOf(JLayeredPane.MODAL_LAYER + 1));
 iframe.setVisible(true);
 </code></pre>
 

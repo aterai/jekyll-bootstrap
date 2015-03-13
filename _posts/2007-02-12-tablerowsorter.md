@@ -63,7 +63,7 @@ import javax.swing.table.*;
 public class RowSorterTest extends JPanel{
   public RowSorterTest() {
     super(new BorderLayout());
-    final DefaultTableModel model = new DefaultTableModel(null, new String[] {"A","B","C"});
+    final DefaultTableModel model = new DefaultTableModel(null, new String[] {"A", "B", "C"});
     JTable table = new JTable(model);
     TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model);
     //table.setRowSorter(sorter); // OK
@@ -87,7 +87,7 @@ public class RowSorterTest extends JPanel{
     JFrame frame = new JFrame("Test");
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     frame.getContentPane().add(new RowSorterTest());
-    frame.setSize(320,240);
+    frame.setSize(320, 240);
     frame.setLocationRelativeTo(null);
     frame.setVisible(true);
   }

@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>class ToolTipHeaderRenderer implements TableCellRenderer {
   private final Icon icon = UIManager.getIcon("Table.ascendingSortIcon");
   @Override public Component getTableCellRendererComponent(JTable table,
-      Object value,boolean isSelected,boolean hasFocus,int row,int column) {
+      Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     TableCellRenderer renderer = table.getTableHeader().getDefaultRenderer();
     JLabel l = (JLabel) renderer.getTableCellRendererComponent(
       table, value, isSelected, hasFocus, row, column);

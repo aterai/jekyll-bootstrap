@@ -25,7 +25,7 @@ comments: true
       boolean hasFocus, int row, int column) {
     TableCellRenderer r = table.getTableHeader().getDefaultRenderer();
     JLabel l = (JLabel) r.getTableCellRendererComponent(
-        table,value,isSelected,hasFocus,row,column);
+        table, value, isSelected, hasFocus, row, column);
     l.setHorizontalAlignment(horizontalAlignment);
     return l;
   }

@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>final TableRowSorter&lt;? extends TableModel&gt; sorter = new TableRowSorter&lt;&gt;(model);
 final Set&lt;RowFilter&lt;? super TestModel, ? super Integer&gt;&gt; filters = new HashSet&lt;&gt;(2);
-final RowFilter&lt;TableModel,Integer&gt; filter1 = new RowFilter&lt;TableModel,Integer&gt;() {
+final RowFilter&lt;TableModel, Integer&gt; filter1 = new RowFilter&lt;TableModel, Integer&gt;() {
   @Override public boolean include(
       Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     TableModel model = entry.getModel();
@@ -25,7 +25,7 @@ final RowFilter&lt;TableModel,Integer&gt; filter1 = new RowFilter&lt;TableModel,
     return !t.getComment().trim().isEmpty();
   }
 };
-final RowFilter&lt;TableModel,Integer&gt; filter2 = new RowFilter&lt;TableModel,Integer&gt;() {
+final RowFilter&lt;TableModel, Integer&gt; filter2 = new RowFilter&lt;TableModel, Integer&gt;() {
   @Override public boolean include(
       Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     return entry.getIdentifier() % 2 == 0;

@@ -30,7 +30,7 @@ try {
 <pre class="prettyprint"><code>public static int getLineAtCaret(JTextComponent component) {
   int caretPosition = component.getCaretPosition();
   Element root = component.getDocument().getDefaultRootElement();
-  return root.getElementIndex(caretPosition)+1;
+  return root.getElementIndex(caretPosition) + 1;
 }
 </code></pre>
 

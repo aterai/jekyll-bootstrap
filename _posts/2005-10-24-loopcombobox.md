@@ -18,13 +18,13 @@ comments: true
 <pre class="prettyprint"><code>Action up = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     int index = combo.getSelectedIndex();
-    combo.setSelectedIndex((index==0)?combo.getItemCount()-1:index-1);
+    combo.setSelectedIndex((index == 0) ? combo.getItemCount() - 1 : index - 1);
   }
 };
 Action down = new AbstractAction() {
   @Override public void actionPerformed(ActionEvent e) {
     int index = combo.getSelectedIndex();
-    combo.setSelectedIndex((index==combo.getItemCount()-1)?0:index+1);
+    combo.setSelectedIndex((index == combo.getItemCount() - 1) ? 0 : index + 1);
   }
 };
 ActionMap amc = combo.getActionMap();

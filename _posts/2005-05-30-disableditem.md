@@ -35,8 +35,7 @@ list.setCellRenderer(new ListCellRenderer() {
 ActionMap am = list.getActionMap();
 am.put("selectNextRow", new AbstractAction() {
   @Override public void actionPerformed(ActionEvent ae) {
-    int index = list.getSelectedIndex()+1;
-    for (int i = index; i &lt; list.getModel().getSize(); i++) {
+    for (int i = list.getSelectedIndex() + 1; i &lt; list.getModel().getSize(); i++) {
       if (!disableIndexSet.contains(Integer.valueOf(i))) {
         list.setSelectedIndex(i);
         break;

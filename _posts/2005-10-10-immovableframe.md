@@ -30,9 +30,9 @@ for (MouseMotionListener l: titleBar.getListeners(MouseMotionListener.class)) {
 
 <pre class="prettyprint"><code>ui.setNorthPane(null);
 internalframe.setBorder(BorderFactory.createEmptyBorder());
-internalframe.setSize(200,50);
+internalframe.setSize(200, 50);
 internalframe.add(new JLabel("移動できないフレーム", SwingConstants.CENTER));
-internalframe.setLocation(10,10);
+internalframe.setLocation(10, 10);
 internalframe.pack();
 </code></pre>
 
