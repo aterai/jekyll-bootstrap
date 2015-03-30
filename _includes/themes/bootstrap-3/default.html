@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- 雀の往来 -->
+<html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <meta charset="utf-8" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="canonical" href="http://terai.xrea.jp/Swing/{{ page.folder }}.html" />
 
     <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,12 +37,13 @@
     -->
 
     <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed" />
 
+    <script async defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
 
-  <body>
+  <body onload="prettyPrint()">
     <div id="wrap">
       <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -80,19 +81,27 @@
 
     <div id="footer">
       <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <p>c {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
         </p>
       </div>
-    </div>
-
-    {% include JB/analytics %}
-
-
-    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    </div id="footer">
   </body>
+
+<!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+{% include JB/analytics %}
+<script async defer src="//terai.xrea.jp/skin/prettify.js"></script>
+<script>
+(function(d,f) {
+var h = d.head, l = d.createElement('link');
+l.href = f;
+l.rel  = 'stylesheet';
+l.type = 'text/css';
+h.insertBefore(l, h.firstChild);
+}(document, '{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css'));
+</script>
 </html>

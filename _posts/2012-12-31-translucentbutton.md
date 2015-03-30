@@ -19,10 +19,10 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
 
 ### サンプルコード
 <pre class="prettyprint"><code>class TranslucentButton extends JButton{
-  private static final Color TL = new Color(1f,1f,1f,.2f);
-  private static final Color BR = new Color(0f,0f,0f,.4f);
-  private static final Color ST = new Color(1f,1f,1f,.2f);
-  private static final Color SB = new Color(1f,1f,1f,.1f);
+  private static final Color TL = new Color(1f, 1f, 1f, .2f);
+  private static final Color BR = new Color(0f, 0f, 0f, .4f);
+  private static final Color ST = new Color(1f, 1f, 1f, .2f);
+  private static final Color SB = new Color(1f, 1f, 1f, .1f);
   private Color ssc;
   private Color bgc;
   private int r = 8;
@@ -44,22 +44,22 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2012-12-31
     int y = 0;
     int w = getWidth();
     int h = getHeight();
-    Graphics2D g2 = (Graphics2D)g.create();
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(
       RenderingHints.KEY_ANTIALIASING,
       RenderingHints.VALUE_ANTIALIAS_ON);
-    Shape area = new RoundRectangle2D.Float(x, y, w-1, h-1, r, r);
+    Shape area = new RoundRectangle2D.Float(x, y, w - 1, h - 1, r, r);
     ssc = TL;
     bgc = BR;
     ButtonModel m = getModel();
-    if(m.isPressed()) {
+    if (m.isPressed()) {
       ssc = SB;
       bgc = ST;
-    }else if(m.isRollover()) {
+    } else if (m.isRollover()) {
       ssc = ST;
       bgc = SB;
     }
-    g2.setPaint(new GradientPaint(x, y, ssc, x, y+h, bgc, true));
+    g2.setPaint(new GradientPaint(x, y, ssc, x, y + h, bgc, true));
     g2.fill(area);
     g2.setPaint(BR);
     g2.draw(area);
@@ -92,7 +92,8 @@ private static AbstractButton makeButton(String title) {
       setVerticalTextPosition(SwingConstants.CENTER);
       setHorizontalAlignment(SwingConstants.CENTER);
       setHorizontalTextPosition(SwingConstants.CENTER);
-      setBorder(BorderFactory.createEmptyBorder());
+      setMargin(new Insets(2, 8, 2, 8));
+      setBorder(BorderFactory.createEmptyBorder(2, 8, 2, 8));
       //setBorderPainted(false);
       setContentAreaFilled(false);
       setFocusPainted(false);
@@ -123,12 +124,61 @@ p.add(b);
 add(p);
 </code></pre>
 
-- 半透明な`JButton`
+- 透明な`JButton`、全体を半透明な`Icon`
     - `setOpaque(false);`, `setContentAreaFilled(false);`などを設定して`JButton`は透明にし、`JButton#paintComponent(...)`をオーバーライドして半透明の影などを描画
     - ~~`MetalLookAndFeel`で、余計なフチ？が表示される~~
     - `JButton#setBorderPainted(false);`で、フチを非表示にできる
+    - `JButton`の内余白と外余白: `setMargin(new Insets(2, 8, 2, 8));`、`setBorder(BorderFactory.createEmptyBorder(2, 8, 2, 8));`の設定と`Icon`の余白を考慮したサイズ設定が面倒？
 
 <!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>class TranslucentButtonIcon implements Icon {
+  private static final Color TL = new Color(1f, 1f, 1f, .2f);
+  private static final Color BR = new Color(0f, 0f, 0f, .4f);
+  private static final Color ST = new Color(1f, 1f, 1f, .2f);
+  private static final Color SB = new Color(1f, 1f, 1f, .1f);
+  private static final int R = 8;
+  private int width;
+  private int height;
+  @Override public void paintIcon(Component c, Graphics g, int x, int y) {
+    if (c instanceof AbstractButton) {
+      AbstractButton b = (AbstractButton) c;
+      //XXX: Insets i = b.getMargin();
+      Insets i = b.getBorder().getBorderInsets(b);
+      int w = c.getWidth();
+      int h = c.getHeight();
+      width  = w - i.left - i.right;
+      height = h - i.top - i.bottom;
+      Graphics2D g2 = (Graphics2D) g.create();
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                          RenderingHints.VALUE_ANTIALIAS_ON);
+      Shape area = new RoundRectangle2D.Float(
+          x - i.left, y - i.top, w - 1, h - 1, R, R);
+      Color ssc = TL;
+      Color bgc = BR;
+      ButtonModel m = b.getModel();
+      if (m.isPressed()) {
+        ssc = SB;
+        bgc = ST;
+      } else if (m.isRollover()) {
+        ssc = ST;
+        bgc = SB;
+      }
+      g2.setPaint(new GradientPaint(0, 0, ssc, 0, h, bgc, true));
+      g2.fill(area);
+      g2.setPaint(BR);
+      g2.draw(area);
+      g2.dispose();
+    }
+  }
+  @Override public int getIconWidth()  {
+    return Math.max(width, 100);
+  }
+  @Override public int getIconHeight() {
+    return Math.max(height, 20);
+  }
+}
+</code></pre>
 
 ### 参考リンク
 - [JRadioButtonを使ってToggleButtonBarを作成](http://terai.xrea.jp/Swing/ToggleButtonBar.html)

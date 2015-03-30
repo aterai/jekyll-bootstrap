@@ -115,3 +115,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2014-03-31
 <!-- dummy comment line for breaking list -->
 
 ### コメント
+- 修正: `src.zip`などがアップロードされていない -- [aterai](http://terai.xrea.jp/aterai.html) 2014-05-09 (金) 17:17:04
+
+<!-- dummy comment line for breaking list -->
+

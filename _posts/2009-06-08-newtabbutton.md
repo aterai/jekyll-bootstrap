@@ -100,7 +100,7 @@ Posted by [aterai](http://terai.xrea.jp/aterai.html) at 2009-06-08
 <!-- dummy comment line for breaking list -->
 
 ### コメント
-- タブをクリックした時ではなく、`mousePressed`で切り替えるように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-21 (水) 18:46:30
+- タブの切り替えは、`mouseClicked`ではなく、`mousePressed`した時に行うように変更。 -- [aterai](http://terai.xrea.jp/aterai.html) 2012-03-21 (水) 18:46:30
 
 <!-- dummy comment line for breaking list -->
 
