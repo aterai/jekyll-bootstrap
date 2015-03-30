@@ -18,7 +18,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/-W5o-8ilpY6k/UOCzLo2oOeI/AAAAAAAABZ0/m1_AjYpKqiY/s800/TranslucentButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TranslucentButton extends JButton{
+<pre class="prettyprint"><code>class TranslucentButton extends JButton {
   private static final Color TL = new Color(1f, 1f, 1f, .2f);
   private static final Color BR = new Color(0f, 0f, 0f, .4f);
   private static final Color ST = new Color(1f, 1f, 1f, .2f);

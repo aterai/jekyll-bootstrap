@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-xWsEbhvjfDY/UT2P-83x0FI/AAAAAAAABmc/7isd5KoGMQc/s800/WindowClosingAction.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static class ExitAction extends AbstractAction{
+<pre class="prettyprint"><code>private static class ExitAction extends AbstractAction {
   public ExitAction() {
     super("Exit");
   }

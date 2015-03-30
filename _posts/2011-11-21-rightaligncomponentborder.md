@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>public JComponent makePanel(JComponent m, JComponent c) {
   int ir = 20; //inset.right
-  int ch = c.getPreferredSize().height/2;
+  int ch = c.getPreferredSize().height / 2;
   Border ib = BorderFactory.createEmptyBorder(0, 0, ch, 0);
   Border eb = BorderFactory.createEtchedBorder();
   Border bo = BorderFactory.createCompoundBorder(eb, ib);

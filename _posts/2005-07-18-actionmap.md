@@ -31,7 +31,7 @@ am.put(DefaultEditorKit.pasteAction, beep);
 <pre class="prettyprint"><code>JTextField field = new JTextField() {
   @Override public void copy() {
     UIManager.getLookAndFeel().provideErrorFeedback(this);
-    //java.awt.Toolkit.getDefaultToolkit().beep();
+    //Toolkit.getDefaultToolkit().beep();
   }
 };
 </code></pre>

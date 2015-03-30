@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>Font makeFont(URL url) {
     Font font = null;
     try (InputStream is = url.openStream()) {
-        font = Font.createFont(Font.TRUETYPE_FONT, is).deriveFont(12.0f);
+        font = Font.createFont(Font.TRUETYPE_FONT, is).deriveFont(12f);
     } catch (IOException | FontFormatException ex) {
         ex.printStackTrace();
     }
@@ -29,7 +29,7 @@ comments: true
 //  InputStream is = null;
 //  try {
 //    is = url.openStream();
-//    font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(12.0f);
+//    font = (Font.createFont(Font.TRUETYPE_FONT, is)).deriveFont(12f);
 //    is.close();
 //  } catch (IOException ioe) {
 //    ioe.printStackTrace();

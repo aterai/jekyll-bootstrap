@@ -27,7 +27,7 @@ private int count = 0;
   animator = new Timer(delay, new ActionListener() {
     @Override public void actionPerformed(ActionEvent e) {
       double a = easeInOut(++count / h);
-      yy = (int) (.5d + a * h);
+      yy = (int) (.5 + a * h);
       textArea.setBackground(new Color(0f, 0f, 0f, (float) (.6 * a)));
       if (yy &gt;= textArea.getPreferredSize().height) {
         yy = textArea.getPreferredSize().height;
@@ -46,7 +46,7 @@ private int count = 0;
   animator = new Timer(delay, new ActionListener() {
     @Override public void actionPerformed(ActionEvent e) {
       double a = easeInOut(--count / h);
-      yy = (int) (.5d + a * h);
+      yy = (int) (.5 + a * h);
       textArea.setBackground(new Color(0f, 0f, 0f, (float) (.6 * a)));
       if (yy &lt;= 0) {
         yy = 0;
@@ -61,11 +61,11 @@ private int count = 0;
 //@see Math: EaseIn EaseOut, EaseInOut and Beziér Curves | Anima Entertainment GmbH
 //http://www.anima-entertainment.de/math-easein-easeout-easeinout-and-bezier-curves
 public double easeInOut(double t) {
-  //range: 0.0&lt;=t&lt;=1.0
-  if (t &lt; .5d) {
-    return 0.5d*Math.pow(t * 2d, 3d);
+  //range: 0.0 &lt;= t &lt;= 1.0
+  if (t &lt; .5) {
+    return .5 * Math.pow(t * 2d, 3d);
   } else {
-    return .5d * (Math.pow(t * 2d - 2d, 3d) + 2d);
+    return .5 * (Math.pow(t * 2d - 2d, 3d) + 2d);
   }
 }
 </code></pre>
@@ -92,7 +92,7 @@ public double easeInOut(double t) {
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>public static double intpow(double x, int n) {
-  double aux = 1.0;
+  double aux = 1d;
   if (n &lt; 0) {
     throw new IllegalArgumentException("n must be a positive integer");
   }

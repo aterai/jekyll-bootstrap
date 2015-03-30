@@ -21,7 +21,7 @@ GridBagConstraints c = new GridBagConstraints();
 c.fill = GridBagConstraints.HORIZONTAL;
 //c.weightx = 1.0; c.weighty = 0.0;
 for (int i = 0; i &lt; SIZE; i++) {
-  int x = i &amp; 1; //= (i%2==0)?0:1;
+  int x = i &amp; 1; //= (i % 2 == 0) ? 0 : 1;
   for (int j = 0; j &lt; SIZE; j++) {
     c.gridy = i;
     c.gridx = 2 * j + x;

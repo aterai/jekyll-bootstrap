@@ -126,9 +126,9 @@ slider.setUI(new MetalSliderUI() {
       g.fillRect(fillLeft, fillTop, fillRight - fillLeft, trackBottom - trackTop);
     }
 
-    int yy = trackTop + (trackBottom - trackTop) /2;
+    int yy = trackTop + (trackBottom - trackTop) / 2;
     for (int i = 10; i &gt;= 0; i--) {
-      g.setColor(new Color(1f, 1f, 1f, i * 0.07f));
+      g.setColor(new Color(1f, 1f, 1f, i * .07f));
       g.drawLine(trackLeft + 2, yy, (trackRight - trackLeft), yy);
       yy--;
     }
@@ -155,7 +155,7 @@ slider.setUI(new MetalSliderUI() {
   Graphics2D g2  = image.createGraphics();
   Point2D start  = new Point2D.Float(0f, 0f);
   Point2D end    = new Point2D.Float(99f, 0f);
-  float[] dist   = {0.0f, 0.5f, 1.0f};
+  float[] dist   = {0f, .5f, 1f};
   Color[] colors = {Color.RED, Color.YELLOW, Color.GREEN};
   g2.setPaint(new LinearGradientPaint(start, end, dist, colors));
   g2.fillRect(0, 0, 100, 1);

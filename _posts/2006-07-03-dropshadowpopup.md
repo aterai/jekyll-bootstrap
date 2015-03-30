@@ -155,7 +155,7 @@ comments: true
   Rectangle r = root.getBounds();
   Dimension d = this.getPreferredSize();
   //pointed out by sawshun
-  return r.contains(p.x, p.y, d.width+off, d.height+off);
+  return r.contains(p.x, p.y, d.width + off, d.height + off);
 }
 </code></pre>
 

@@ -26,7 +26,7 @@ LayerUI&lt;JProgressBar&gt; layerUI = new LayerUI&lt;JProgressBar&gt;() {
     int y = (c.getHeight() - d.height) / 2;
     JLayer jlayer = (JLayer) c;
     JProgressBar progress = (JProgressBar) jlayer.getView();
-    int iv = (int)(100 * progress.getPercentComplete());
+    int iv = (int) (100 * progress.getPercentComplete());
     label.setText(String.format("%03d/100", iv));
     //label.setText(progress.getString());
     SwingUtilities.paintComponent(

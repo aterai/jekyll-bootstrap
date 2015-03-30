@@ -28,7 +28,7 @@ comments: true
       setForeground(table.getForeground());
       setBackground((row % 2 == 0) ? evenColor : table.getBackground());
     }
-    setHorizontalAlignment((value instanceof Number)?RIGHT:LEFT);
+    setHorizontalAlignment((value instanceof Number) ? RIGHT : LEFT);
     return this;
   }
 }

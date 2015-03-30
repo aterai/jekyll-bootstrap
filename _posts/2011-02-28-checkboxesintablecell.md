@@ -66,8 +66,7 @@ comments: true
     updateButtons(value);
     return this;
   }
-  public static class UIResource extends CheckBoxesRenderer
-                                 implements UIResource{}
+  public static class UIResource extends CheckBoxesRenderer implements UIResource {}
 }
 </code></pre>
 

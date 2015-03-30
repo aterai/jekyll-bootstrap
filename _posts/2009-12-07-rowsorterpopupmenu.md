@@ -36,7 +36,7 @@ comments: true
     super.show(c, x, y);
   }
 }
-private class SortAction extends AbstractAction{
+private class SortAction extends AbstractAction {
   private final SortOrder dir;
   public SortAction(SortOrder dir) {
     super(dir.toString());

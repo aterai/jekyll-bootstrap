@@ -45,7 +45,7 @@ area.setSelectionColor(new Color(0xC86464FF, true));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextComponent#setSelectionColor(Color) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/text/JTextComponent.html#setSelectionColor-java.awt.Color-)
+- [JTextComponent#setSelectionColor(Color) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#setSelectionColor-java.awt.Color-)
 - [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
 - [Highlighterで文字列をハイライト](http://ateraimemo.com/Swing/Highlighter.html)
 - [JTextAreaの背景に画像を表示](http://ateraimemo.com/Swing/CentredBackgroundBorder.html)

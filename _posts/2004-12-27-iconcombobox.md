@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: IconComboBox
 title: JComboBoxにアイコンを表示
-tags: [JComboBox, Icon, ListCellRenderer, MatteBorder]
+tags: [JComboBox, JTextField, Icon, ListCellRenderer, MatteBorder, JLabel]
 author: aterai
 pubdate: 2004-12-27T01:32:14+09:00
 description: JComboBoxを編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
@@ -12,7 +12,7 @@ comments: true
 ## 概要
 `JComboBox`を編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
 
-{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTONfr7t7I/AAAAAAAAAcA/jNQyoEApJ1I/s800/IconComboBox.png %}
+{% download https://lh5.googleusercontent.com/-4rGEnYRGuys/VQfEDJHomCI/AAAAAAAAN0o/vja8KE3Cm-o/s800/IconComboBox.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>private static Border makeIconBorder(JComponent c, ImageIcon i) {
@@ -25,14 +25,18 @@ comments: true
 </code></pre>
 
 ## 解説
-- 一番上
-    - デフォルトの`ListCellRenderer`を使用する`JComboBox`です。
-- 上から二番目
-    - `JComboBox`フィールドが編集不可の場合、`ListCellRenderer`を実装することでアイコン表示することができます。
-- 下から二番目
-    - `JComboBox`フィールドが編集可の場合、`ListCellRenderer`を実装しても、`Editor`部分はアイコン表示されません。
-- 一番下
-    - `JComboBox`フィールドが編集可の場合でも、`MatteBorder`を使用することでエディタ部分にもアイコンを表示することができます。
+上記のサンプルでは、`JLabel#setIcon(...)`でアイコンを追加し、リスト内の各項目にアイコンが表示されるように設定した`ListCellRenderer`を`JComboBox`に設定しています。
+
+- `setEditable(false)`
+    - `JComboBox`の文字列入力欄が編集不可の場合、リスト内の各項目だけでなく、`JComboBox`にもアイコンが表示される
+- `setEditable(true)`
+    - 上:
+        - `JComboBox`の文字列入力欄には、アイコンが表示されない
+    - 中:
+        - `combo.getEditor().getEditorComponent()`で取得した`JTextField`に`MatteBorder`を追加して、文字列入力欄にアイコンを表示
+    - 下:
+        - `combo.getEditor().getEditorComponent()`で取得した`JTextField`にアイコンを追加した`JLabel`を追加
+        - `JLabel`が文字列と重ならないように、`JTextField`にはその幅だけ余白をとるように設定
 
 <!-- dummy comment line for breaking list -->
 

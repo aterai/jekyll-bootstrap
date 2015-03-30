@@ -60,7 +60,7 @@ table.setAutoCreateRowSorter(true);
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.*;
-public class RowSorterTest extends JPanel{
+public class RowSorterTest extends JPanel {
   public RowSorterTest() {
     super(new BorderLayout());
     final DefaultTableModel model = new DefaultTableModel(null, new String[] {"A", "B", "C"});

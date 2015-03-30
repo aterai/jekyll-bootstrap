@@ -15,10 +15,10 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMNwgwo5I/AAAAAAAAAY0/lpZGrcgRE8g/s800/EventListener.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>interface FontChangeListener extends EventListener{
+<pre class="prettyprint"><code>interface FontChangeListener extends EventListener {
   public void fontStateChanged(FontChangeEvent e);
 }
-class FontChangeEvent extends EventObject{
+class FontChangeEvent extends EventObject {
   private final String command;
   private final Font font;
   public String getCommand() {

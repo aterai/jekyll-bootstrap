@@ -18,9 +18,9 @@ comments: true
 <pre class="prettyprint"><code>private final JPopupMenu pop = new JPopupMenu() {
   @Override public void show(Component c, int x, int y) {
     //JDK 1.3 tabindex = tab.getUI().tabForCoordinate(tab, x, y);
-    closePageAction.setEnabled(tab.indexAtLocation(x, y)&gt;=0);
-    closeAllAction.setEnabled(tab.getTabCount()&gt;0);
-    closeAllButActiveAction.setEnabled(tab.getTabCount()&gt;0);
+    closePageAction.setEnabled(tab.indexAtLocation(x, y) &gt;= 0);
+    closeAllAction.setEnabled(tab.getTabCount() &gt; 0);
+    closeAllButActiveAction.setEnabled(tab.getTabCount() &gt; 0);
     super.show(c, x, y);
   }
 };

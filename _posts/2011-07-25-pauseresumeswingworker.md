@@ -18,7 +18,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-3BCjKLnQbGM/Ti0AQV5nkwI/AAAAAAAAA_s/RY75ol3pFak/s800/PauseResumeSwingWorker.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class RunAction extends AbstractAction{
+<pre class="prettyprint"><code>class RunAction extends AbstractAction {
   public RunAction() {
     super("run");
   }
@@ -55,7 +55,7 @@ comments: true
         return "Done";
       }
       private final Random r = new Random();
-      private void convertFileToSomething() throws InterruptedException{
+      private void convertFileToSomething() throws InterruptedException {
         boolean flag = false;
         int current = 0;
         int lengthOfTask = 10 + r.nextInt(50);

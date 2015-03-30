@@ -34,7 +34,7 @@ comments: true
       return bar;
     } else {
       return super.getListCellRendererComponent(
-        list,value,index,isSelected,cellHasFocus);
+        list, value, index, isSelected, cellHasFocus);
     }
   }
   @Override public void updateUI() {

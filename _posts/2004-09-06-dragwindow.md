@@ -80,7 +80,7 @@ class DragWindowListener extends MouseAdapter {
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-public class MainPanel{
+public class MainPanel {
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {

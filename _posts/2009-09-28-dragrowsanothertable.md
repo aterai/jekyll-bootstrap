@@ -13,7 +13,7 @@ hreflang:
 comments: true
 ---
 ## 概要
-`JTable`の行を別の`JTable`に`Drag&Drop`で移動します。
+`JTable`の行を別の`JTable`に`Drag & Drop`で移動します。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL05H70DI/AAAAAAAAAYM/YtTZHzrA2HU/s800/DragRowsAnotherTable.png %}
 
@@ -98,7 +98,7 @@ comments: true
   private void cleanup(JComponent c, boolean remove) {
     if (remove &amp;&amp; indices != null) {
       c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-      DefaultTableModel model = (DefaultTableModel)((JTable) c).getModel();
+      DefaultTableModel model = (DefaultTableModel) ((JTable) c).getModel();
       if (addCount &gt; 0) {
         for (int i = 0; i &lt; indices.length; i++) {
           if (indices[i] &gt;= addIndex) {

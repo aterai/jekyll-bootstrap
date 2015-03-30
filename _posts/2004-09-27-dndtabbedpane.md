@@ -24,7 +24,7 @@ comments: true
   for (int i = 0; i &lt; getTabCount(); i++) {
     Rectangle r = getBoundsAt(i);
     if (isTB) r.setRect(r.x - r.width / 2, r.y, r.width, r.height);
-    else      r.setRect(r.x, r.y-r.height / 2, r.width, r.height);
+    else      r.setRect(r.x, r.y - r.height / 2, r.width, r.height);
     if (r.contains(tabPt)) return i;
   }
   Rectangle r = getBoundsAt(getTabCount() - 1);

@@ -15,7 +15,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN5ZuPeZI/AAAAAAAAAbg/Fivi4R1rR-Y/s800/HorizontalAlignmentHeaderRenderer.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class HorizontalAlignmentHeaderRenderer implements TableCellRenderer{
+<pre class="prettyprint"><code>class HorizontalAlignmentHeaderRenderer implements TableCellRenderer {
   private int horizontalAlignment = SwingConstants.LEFT;
   public HorizontalAlignmentHeaderRenderer(int horizontalAlignment) {
     this.horizontalAlignment = horizontalAlignment;

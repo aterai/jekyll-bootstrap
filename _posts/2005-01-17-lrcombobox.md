@@ -15,7 +15,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPk2QD9aI/AAAAAAAAAeM/xrl0d1ms74g/s800/LRComboBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class LRItem{
+<pre class="prettyprint"><code>class LRItem {
   private final String leftText;
   private final String rightText;
   public LRItem(String strLeft, String strRight) {
@@ -23,8 +23,8 @@ comments: true
     rightText = strRight;
   }
   public String getHtmlText() {
-    return "&lt;html&gt;&lt;table width='240'&gt;&lt;tr&gt;&lt;td align='left'&gt;"+leftText+
-    "&lt;/td&gt;&lt;td align='right'&gt;"+rightText+"&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/html&gt;";
+    return "&lt;html&gt;&lt;table width='240'&gt;&lt;tr&gt;&lt;td align='left'&gt;" + leftText +
+    "&lt;/td&gt;&lt;td align='right'&gt;" + rightText + "&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/html&gt;";
   }
   public String getLeftText()  { return leftText; }
   public String getRightText() { return rightText; }

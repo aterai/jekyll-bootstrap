@@ -46,7 +46,7 @@ spinner.setValue(5000);
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>class IntegerInputVerifier extends InputVerifier{
+<pre class="prettyprint"><code>class IntegerInputVerifier extends InputVerifier {
   @Override public boolean verify(JComponent c) {
     boolean verified = false;
     JTextField textField = (JTextField) c;
@@ -85,7 +85,7 @@ spinner.setValue(5000);
     } else {
       String newValue;
       int length = getLength();
-      if (length==0) {
+      if (length == 0) {
         newValue = str;
       } else {
         String currentContent = getText(0, length);
@@ -150,7 +150,7 @@ spinner.setValue(5000);
     int currentLength = doc.getLength();
     String currentContent = doc.getText(0, currentLength);
     String before = currentContent.substring(0, offset);
-    String after = currentContent.substring(length+offset, currentLength);
+    String after = currentContent.substring(length + offset, currentLength);
     String newValue = before + (text == null ? "" : text) + after;
     //currentValue =
     checkInput(newValue, offset);
@@ -181,7 +181,7 @@ spinner.setValue(5000);
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>class NumberFormatterFactory extends DefaultFormatterFactory{
+<pre class="prettyprint"><code>class NumberFormatterFactory extends DefaultFormatterFactory {
   private static NumberFormatter numberFormatter = new NumberFormatter();
   static {
     numberFormatter.setValueClass(Integer.class);

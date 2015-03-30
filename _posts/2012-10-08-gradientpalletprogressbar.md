@@ -45,7 +45,7 @@ comments: true
     if (x &lt; 0d || x &gt; 1d) {
       throw new IllegalArgumentException("Parameter outside of expected range");
     }
-    int i = (int)(pallet.length * x);
+    int i = (int) (pallet.length * x);
     int max = pallet.length - 1;
     int index = i &lt; 0 ? 0 : i &gt; max ? max : i;
     return new Color(pallet[index] &amp; 0x00ffffff);

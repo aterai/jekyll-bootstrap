@@ -18,7 +18,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSqLxrLoI/AAAAAAAAAjI/M2OZzogy3-Q/s800/SearchBarLayoutComboBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>public class BasicSearchBarComboBoxUI extends SearchBarComboBoxUI{
+<pre class="prettyprint"><code>public class BasicSearchBarComboBoxUI extends SearchBarComboBoxUI {
   public static javax.swing.plaf.ComponentUI createUI(JComponent c) {
     return new BasicSearchBarComboBoxUI();
   }

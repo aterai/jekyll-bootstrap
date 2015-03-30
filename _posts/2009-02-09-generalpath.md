@@ -15,9 +15,9 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNT-1toKI/AAAAAAAAAak/t96zX52eOVg/s800/GeneralPath.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class StarPanel1 extends JPanel{
+<pre class="prettyprint"><code>class StarPanel1 extends JPanel {
   @Override public void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D) g;
+    Graphics2D g2 = (Graphics2D) g.create();
     int w = getWidth();
     int h = getHeight();
     //&lt;blockquote cite="%JAVA_HOME%/demo/jfc/Java2D/src/java2d/demos/Lines/Joins.java"&gt;
@@ -34,11 +34,12 @@ comments: true
     g2.fill(p);
     g2.setColor(Color.BLACK);
     g2.draw(p);
+    g2.dispose();
   }
 }
 </code></pre>
 
-<pre class="prettyprint"><code>class StarIcon2 implements Icon{
+<pre class="prettyprint"><code>class StarIcon2 implements Icon {
   private static final int R1 = 20;
   private static final int R2 = 40;
   //double R1 = R2 * Math.sin(Math.PI / 10d) / Math.cos(Math.PI / 5d); //= 15d;

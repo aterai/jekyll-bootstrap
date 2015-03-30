@@ -62,10 +62,8 @@ comments: true
         target.addSelectionInterval(idx, idx);
       }
       return true;
-    } catch (UnsupportedFlavorException ufe) {
-      ufe.printStackTrace();
-    } catch (java.io.IOException ioe) {
-      ioe.printStackTrace();
+    } catch (UnsupportedFlavorException | IOException ex) {
+      ex.printStackTrace();
     }
     return false;
   }

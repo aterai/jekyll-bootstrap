@@ -51,7 +51,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [ImageView#setLoadsSynchronously(boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/text/html/ImageView.html#setLoadsSynchronously-boolean-)
+- [ImageView#setLoadsSynchronously(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/ImageView.html#setLoadsSynchronously-boolean-)
 - [setAsynchronousLoadPriority on JTextPane does not seem to work in 1.6 | Oracle Community](https://community.oracle.com/thread/1353113)
     - via: [java - JScrollPane does not update its scroll to go down to follow the caret position because of Image in JEditorPane - Stack Overflow](http://stackoverflow.com/questions/27044987/jscrollpane-does-not-update-its-scroll-to-go-down-to-follow-the-caret-position-b)
 

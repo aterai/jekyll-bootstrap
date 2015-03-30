@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLPUOE2MI/AAAAAAAAAXQ/5qrFGk7E5GM/s800/DispatchEvent.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static int DELAY = 10*1000; //10s
+<pre class="prettyprint"><code>private static int DELAY = 10 * 1000; //10s
 private final javax.swing.Timer timer = new javax.swing.Timer(DELAY, new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
     setTestConnected(false);

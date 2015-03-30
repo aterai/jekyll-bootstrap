@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK7ZrULPI/AAAAAAAAAWw/fwuY_EwXQsM/s800/DisabledHeader.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>public class SortButtonRenderer extends JButton implements TableCellRenderer{
+<pre class="prettyprint"><code>public class SortButtonRenderer extends JButton implements TableCellRenderer {
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {

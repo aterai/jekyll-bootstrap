@@ -15,10 +15,10 @@ comments: true
 {% download https://lh3.googleusercontent.com/-MSfWQgMprsI/UAy_-BOqVII/AAAAAAAABPo/0uH5WtaajqY/s800/StrokeBorder.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>dashedStroke = new BasicStroke(5.0f,
+<pre class="prettyprint"><code>dashedStroke = new BasicStroke(5f,
     ((EndCapStyle) endcapCombo.getSelectedItem()).style,
     ((JoinStyle) joinCombo.getSelectedItem()).style,
-    5.0f, getDashArray(), 0.0f);
+    5f, getDashArray(), 0f);
 label.setBorder(BorderFactory.createStrokeBorder(dashedStroke, Color.RED));
 </code></pre>
 

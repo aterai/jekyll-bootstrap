@@ -95,13 +95,13 @@ AbstractButton b3 = new JToggleButton(new AbstractAction() {
 
 - - - -
 - メモ: `passwordField.setEchoChar((char) 0);`を使用するサンプルを追加
-    - [JPasswordField#setEchoChar(...) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/JPasswordField.html#setEchoChar-char-)に、「値0に設定すると、標準のJTextFieldの動作と同様に、テキストが入力したとおりに表示されます。」とあるように、`passwordField.setEchoChar((char) 0);`とすれば、パスワードを表示することが可能
+    - [JPasswordField#setEchoChar(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JPasswordField.html#setEchoChar-char-)に、「値0に設定すると、標準のJTextFieldの動作と同様に、テキストが入力したとおりに表示されます。」とあるように、`passwordField.setEchoChar((char) 0);`とすれば、パスワードを表示することが可能
     - `CardLayout`を使って`JTextField`を表示する方法は一旦削除したが、表示のパスワードをコピーできるので、残しておくことにした
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JPasswordField#setEchoChar(...) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/JPasswordField.html#setEchoChar-char-)
+- [JPasswordField#setEchoChar(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JPasswordField.html#setEchoChar-char-)
 - [JPasswordFieldのエコー文字を変更](http://ateraimemo.com/Swing/PasswordView.html)
 
 <!-- dummy comment line for breaking list -->

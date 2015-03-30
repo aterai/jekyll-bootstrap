@@ -140,12 +140,12 @@ public class WheelScrollTest {
 //           if (direction &gt; 0) {
 //             // last cell is the lowest left cell
 //             int last = locationToIndex(
-//               new Point(visibleRect.x, visibleRect.y+visibleRect.height-1));
+//               new Point(visibleRect.x, visibleRect.y + visibleRect.height - 1));
 //             if (last != -1) {
-//               Rectangle lastRect = getCellBounds(last,last);
+//               Rectangle lastRect = getCellBounds(last, last);
 //               if (lastRect != null) {
 //                 inc = lastRect.y - visibleRect.y;
-//                 if ( (inc == 0) &amp;&amp; (last &lt; getModel().getSize() - 1) ) {
+//                 if ((inc == 0) &amp;&amp; (last &lt; getModel().getSize() - 1)) {
 //                   inc = lastRect.height;
 //                 }
 //               }
@@ -160,14 +160,14 @@ public class WheelScrollTest {
 //               if (first == -1) {
 //                 first = locationToIndex(visibleRect.getLocation());
 //               }
-//               Rectangle newFirstRect = getCellBounds(newFirst,newFirst);
-//               Rectangle firstRect = getCellBounds(first,first);
+//               Rectangle newFirstRect = getCellBounds(newFirst, newFirst);
+//               Rectangle firstRect = getCellBounds(first, first);
 //               if ((newFirstRect != null) &amp;&amp; (firstRect != null)) {
 //                 while ( (newFirstRect.y + visibleRect.height &lt;
 //                      firstRect.y + firstRect.height) &amp;&amp;
 //                     (newFirstRect.y &lt; firstRect.y) ) {
 //                   newFirst++;
-//                   newFirstRect = getCellBounds(newFirst,newFirst);
+//                   newFirstRect = getCellBounds(newFirst, newFirst);
 //                 }
 //                 inc = visibleRect.y - newFirstRect.y;
 //                 if ((inc &lt;= 0) &amp;&amp; (newFirstRect.y &gt; 0)) {

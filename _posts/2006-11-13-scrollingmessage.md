@@ -24,7 +24,7 @@ comments: true
     animator = new javax.swing.Timer(10, this);
     String text = "asffdfaaAAASFDsfasdfsdfasdfasd";
     Font font = new Font(Font.SERIF, Font.PLAIN, 100);
-    FontRenderContext frc = new FontRenderContext(null,true,true);
+    FontRenderContext frc = new FontRenderContext(null, true, true);
     gv = font.createGlyphVector(frc, text);
     LineMetrics lm = font.getLineMetrics(text, frc);
     yy = lm.getAscent() / 2f + (float) gv.getVisualBounds().getY();

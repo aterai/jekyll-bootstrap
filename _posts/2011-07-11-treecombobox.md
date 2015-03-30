@@ -28,7 +28,7 @@ comments: true
           int indent = 2 + (index &lt; 0 ? 0 : (node.getPath().length - 2) * 16);
           if (node.isLeaf()) {
             c = (JComponent) super.getListCellRendererComponent(
-                list,value,index,isSelected,cellHasFocus);
+                list, value, index, isSelected, cellHasFocus);
           } else {
             c = (JComponent) super.getListCellRendererComponent(
                 list, value, index, false, false);
@@ -39,7 +39,7 @@ comments: true
           c.setBorder(BorderFactory.createEmptyBorder(0, indent, 0, 0));
         } else {
           c = (JComponent) super.getListCellRendererComponent(
-              list,value,index,isSelected,cellHasFocus);
+              list, value, index, isSelected, cellHasFocus);
         }
         return c;
       }

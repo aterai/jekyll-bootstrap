@@ -20,7 +20,7 @@ comments: true
     return false;
   }
 };
-sorter.setRowFilter(new RowFilter&lt;TableModel,Integer&gt;() {
+sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
   @Override public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     return entry.getIdentifier() % 2 == 0;
   }

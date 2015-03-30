@@ -42,11 +42,11 @@ combobox.setModel(model);
 combobox.setEditable(true);
 </code></pre>
 
-<pre class="prettyprint"><code>class MyItem{
+<pre class="prettyprint"><code>class MyItem {
   private final String  item;
   private final boolean flag;
   public MyItem(String str) {
-    this(str,false);
+    this(str, false);
   }
   public MyItem(String str, boolean flg) {
     item = str;

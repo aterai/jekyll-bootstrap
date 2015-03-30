@@ -35,7 +35,7 @@ comments: true
                                        textIconGap);
     tabPane.putClientProperty("html", null);
     textRect.translate(tabInsets.left, 0); //&lt;----
-    textRect.width -= tabInsets.left+tabInsets.right;
+    textRect.width -= tabInsets.left + tabInsets.right;
     //...
   }
 }

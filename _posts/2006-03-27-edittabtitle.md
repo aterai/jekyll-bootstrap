@@ -31,7 +31,7 @@ comments: true
     frame.setGlassPane(panel);
     panel.setVisible(false);
   }
-  class MyGlassPane extends JPanel{
+  class MyGlassPane extends JPanel {
     public MyGlassPane() {
       super((LayoutManager) null);
       setOpaque(false);

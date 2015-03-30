@@ -58,13 +58,13 @@ comments: true
 ## 解説
 上記のサンプルでは、`JButton`の状態(例えばフォーカスの有無を描画するか？など)をテストします。これらは`Look & Feel`によって効果が異なる場合があります。
 
-- [setFocusPainted](https://docs.oracle.com/javase/jp/8/api/docs/javax/swing/AbstractButton.html#setFocusPainted-boolean-)
+- [setFocusPainted](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setFocusPainted-boolean-)
     - フォーカス状態を描画するか？
-- [setBorderPainted](https://docs.oracle.com/javase/jp/8/api/docs/javax/swing/AbstractButton.html#setBorderPainted-boolean-)
+- [setBorderPainted](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setBorderPainted-boolean-)
     - ボーダー(フチの装飾)を描画するか？
-- [setContentAreaFilled](https://docs.oracle.com/javase/jp/8/api/docs/javax/swing/AbstractButton.html#setContentAreaFilled-boolean-)
+- [setContentAreaFilled](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setContentAreaFilled-boolean-)
     - ボタンのコンテンツ領域(ボタンのテキストやアイコン以外の領域)を描画するか？
-- [setRolloverEnabled](https://docs.oracle.com/javase/jp/8/api/docs/javax/swing/AbstractButton.html#setRolloverEnabled-boolean-)
+- [setRolloverEnabled](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setRolloverEnabled-boolean-)
     - ロールオーバー効果を描画するか？
 
 <!-- dummy comment line for breaking list -->

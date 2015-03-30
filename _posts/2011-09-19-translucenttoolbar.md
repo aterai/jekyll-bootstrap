@@ -16,14 +16,15 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ImageCaptionLabel extends JLabel implements HierarchyListener {
-  private float alpha = 0.0f;
+  private float alpha = 0f;
   private javax.swing.Timer animator;
   private int yy = 0;
   private JToolBar toolBox = new JToolBar() {
     @Override protected void paintComponent(Graphics g) {
-      Graphics2D g2 = (Graphics2D) g;
+      Graphics2D g2 = (Graphics2D) g.create();
       g2.setPaint(getBackground());
       g2.fillRect(0, 0, getWidth(), getHeight());
+      g2.dispose();
       super.paintComponent(g);
     }
   };

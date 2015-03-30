@@ -23,7 +23,7 @@ label.setVerticalTextPosition(SwingConstants.BOTTOM);
 label.setHorizontalTextPosition(SwingConstants.CENTER);
 //Dimension dim = label.getPreferredSize();
 //label.setPreferredSize(new Dimension(60, dim.height));
-tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, label);
+tabbedPane.setTabComponentAt(tabbedPane.getTabCount() - 1, label);
 </code></pre>
 
 ## 解説

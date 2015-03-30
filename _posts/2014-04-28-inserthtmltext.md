@@ -37,6 +37,6 @@ try {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [HTMLEditorKit.html#insertHTML(HTMLDocument, int, String, int, int, HTML.Tag) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/docs/javax/swing/text/html/HTMLEditorKit.html#insertHTML-javax.swing.text.html.HTMLDocument-int-java.lang.String-int-int-javax.swing.text.html.HTML.Tag-)よりは簡単？速度などは？ -- *aterai* 2014-04-28 (月) 15:00:16
+- メモ: [HTMLEditorKit.html#insertHTML(HTMLDocument, int, String, int, int, HTML.Tag) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/HTMLEditorKit.html#insertHTML-javax.swing.text.html.HTMLDocument-int-java.lang.String-int-int-javax.swing.text.html.HTML.Tag-)よりは簡単？速度などは？ -- *aterai* 2014-04-28 (月) 15:00:16
 
 <!-- dummy comment line for breaking list -->

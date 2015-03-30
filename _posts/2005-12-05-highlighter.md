@@ -62,7 +62,7 @@ public void setHighlight(JTextComponent jtc, String[] pattern) {
     for (int i = 0; i &lt; pattern.length; i++) {
       int pos = 0;
       while ((pos = text.indexOf(pattern[i], pos)) &gt;= 0) {
-        hilite.addHighlight(pos, pos+pattern[i].length(), highlightPainter[i]);
+        hilite.addHighlight(pos, pos + pattern[i].length(), highlightPainter[i]);
         pos += pattern[i].length();
       }
     }

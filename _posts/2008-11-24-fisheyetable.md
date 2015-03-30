@@ -36,7 +36,7 @@ public void initRowHeigth(int height, int ccRow) {
   int rest_rh  = rest_h / rest_rc; rest_rh = rest_rh &gt; 0 ? rest_rh : 1;
   int a        = rest_h - rest_rh * rest_rc;
   int index    = -1;
-  for (int i =- rd2; i &lt; rowCount; i++) {
+  for (int i = -rd2; i &lt; rowCount; i++) {
     int crh;
     if (ccRow - rd2 &lt;= i &amp;&amp; i &lt;= ccRow + rd2) {
       index++;

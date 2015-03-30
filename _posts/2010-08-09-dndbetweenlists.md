@@ -43,13 +43,11 @@ comments: true
         target.addSelectionInterval(idx, idx);
       }
       //----&gt;
-      addCount = (target==source)? values.length : 0;
+      addCount = (target == source) ? values.length : 0;
       //&lt;----
       return true;
-    } catch (UnsupportedFlavorException ufe) {
-      ufe.printStackTrace();
-    } catch (java.io.IOException ioe) {
-      ioe.printStackTrace();
+    } catch (UnsupportedFlavorException | IOException ex) {
+      ex.printStackTrace();
     }
     return false;
   }

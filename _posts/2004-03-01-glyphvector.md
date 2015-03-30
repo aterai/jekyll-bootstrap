@@ -51,7 +51,7 @@ comments: true
       String str, float width, Font font, FontRenderContext frc) {
     Point2D gmPos = new Point2D.Double(0d, 0d);
     GlyphVector gv = font.createGlyphVector(frc, str);
-    float lineheight = (float)(gv.getLogicalBounds().getHeight());
+    float lineheight = (float) (gv.getLogicalBounds().getHeight());
     float xpos = 0f;
     float advance = 0f;
     int lineCount = 0;

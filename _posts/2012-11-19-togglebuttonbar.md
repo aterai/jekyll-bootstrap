@@ -18,7 +18,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/-5-1KU3hp2co/UKjlTJyKvRI/AAAAAAAABW8/QuYQcKDeeyM/s800/ToggleButtonBar.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class ToggleButtonBarCellIcon implements Icon{
+<pre class="prettyprint"><code>class ToggleButtonBarCellIcon implements Icon {
   private static final Color TL = new Color(1f, 1f, 1f, .2f);
   private static final Color BR = new Color(0f, 0f, 0f, .2f);
   private static final Color ST = new Color(1f, 1f, 1f, .4f);

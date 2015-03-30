@@ -18,7 +18,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-bxLoJ6g9K_I/UWBOghG3kxI/AAAAAAAABpQ/tvVELkL1RV0/s800/RearrangeToolBarIcon.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class DragHandler extends MouseAdapter{
+<pre class="prettyprint"><code>class DragHandler extends MouseAdapter {
   private final JWindow window = new JWindow();
   private Component draggingComonent = null;
   private int index = -1;
