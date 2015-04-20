@@ -115,7 +115,7 @@ comments: true
     String uiName = getUI().getClass().getName();
     if (uiName.contains("Synth") &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
       System.out.println("XXX: FocusBorder bug?, JDK 1.7.0, Nimbus start LnF");
-      renderer.setBackgroundSelectionColor(new Color(0, 0, 0, 0));
+      renderer.setBackgroundSelectionColor(new Color(0x0, true));
     }
     setFocusable(false);
     setRequestFocusEnabled(false);
@@ -191,7 +191,7 @@ comments: true
   String uiName = getUI().getClass().getName();
   if (uiName.contains("Synth") &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
     System.out.println("XXX: FocusBorder bug?, JDK 1.7.0, Nimbus start LnF");
-    renderer.setBackgroundSelectionColor(new Color(0, true));
+    renderer.setBackgroundSelectionColor(new Color(0x0, true));
   }
 //...
 </code></pre>

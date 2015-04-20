@@ -7,6 +7,9 @@ tags: [JScrollBar, JViewport, JScrollPane, Translucent, LayoutManager]
 author: aterai
 pubdate: 2013-05-20T17:18:43+09:00
 description: 半透明のJScrollBarを作成して、JViewport内部に配置します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2015/03/create-translucent-jscrollbar.html
+    lang: en
 comments: true
 ---
 ## 概要

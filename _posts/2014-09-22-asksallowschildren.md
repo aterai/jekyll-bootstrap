@@ -22,9 +22,9 @@ model.setAsksAllowsChildren(true);
 ## 解説
 - 左: `DefaultTreeModel#setAsksAllowsChildren(false)`
     - デフォルト
-    - `DefaultMutableTreeNode`が親ノード(`DefaultMutableTreeNode#getAllowsChildren()==ture`)であっても、子として葉ノードがひとつも存在しない場合、そのアイコンは、葉ノードアイコンになる
+    - `DefaultMutableTreeNode`が親ノード(`DefaultMutableTreeNode#getAllowsChildren() == true`)であっても、子として葉ノードがひとつも存在しない場合、そのアイコンは、葉ノードアイコンになる
 - 右: `DefaultTreeModel#setAsksAllowsChildren(true)` (チェックボックスで選択した場合)
-    - `DefaultMutableTreeNode`が親ノード(`DefaultMutableTreeNode#getAllowsChildren()==ture`)の場合、子として葉ノードが存在するかどうかにかかわらず、そのアイコンは、親ノードアイコンになる
+    - `DefaultMutableTreeNode`が親ノード(`DefaultMutableTreeNode#getAllowsChildren() == true`)の場合、子として葉ノードが存在するかどうかにかかわらず、そのアイコンは、親ノードアイコンになる
 
 <!-- dummy comment line for breaking list -->
 

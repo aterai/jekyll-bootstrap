@@ -15,20 +15,22 @@ comments: true
 {% download https://lh4.googleusercontent.com/-eqirUqK4YWc/VM4--ZB0j_I/AAAAAAAANwI/rsoFU67UgI8/s800/SpinnerLocalDateTimeModel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class SpinnerLocalDateTimeModel extends AbstractSpinnerModel {
+<pre class="prettyprint"><code>class SpinnerLocalDateTimeModel extends AbstractSpinnerModel implements Serializable {
   private Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; start, end;
-  private LocalDateTime value;
+  private ChronoLocalDateTime&lt;?&gt; value;
   private TemporalUnit temporalUnit;
 
   public SpinnerLocalDateTimeModel(
-      LocalDateTime value, Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; start,
-      Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; end, TemporalUnit temporalUnit) {
+      ChronoLocalDateTime&lt;?&gt; value,
+      Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; start,
+      Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; end,
+      TemporalUnit temporalUnit) {
     super();
-    if (value == null) {
+    if (Objects.isNull(value)) {
       throw new IllegalArgumentException("value is null");
     }
-    if (!(start == null || start.compareTo(value) &lt;= 0)
-        &amp;&amp; (end == null || end.compareTo(value) &gt;= 0)) {
+    if (!(Objects.isNull(start) || start.compareTo(value) &lt;= 0)
+        &amp;&amp; (Objects.isNull(end) || end.compareTo(value) &gt;= 0)) {
       throw new IllegalArgumentException("(start &lt;= value &lt;= end) is false");
     }
     this.value = value;
@@ -38,7 +40,8 @@ comments: true
   }
 
   public void setStart(Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; start) {
-    if (start == null ? this.start != null : !start.equals(this.start)) {
+    if (Objects.isNull(start) ? Objects.nonNull(this.start)
+                              : !Objects.equals(start, this.start)) {
       this.start = start;
       fireStateChanged();
     }
@@ -49,7 +52,8 @@ comments: true
   }
 
   public void setEnd(Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; end) {
-    if (end == null ? this.end != null : !end.equals(this.end)) {
+    if (Objects.isNull(end) ? Objects.nonNull(this.end)
+                            : !Objects.equals(end, this.end)) {
       this.end = end;
       fireStateChanged();
     }
@@ -75,8 +79,8 @@ comments: true
     //cal.setTime(value.getTime());
     //cal.add(calendarField, 1);
     //Date next = cal.getTime();
-    LocalDateTime next = value.plus(1, temporalUnit);
-    return end == null || end.compareTo(next) &gt;= 0 ? next : null;
+    ChronoLocalDateTime&lt;?&gt; next = value.plus(1, temporalUnit);
+    return Objects.isNull(end) || end.compareTo(next) &gt;= 0 ? next : null;
   }
 
   @Override public Object getPreviousValue() {
@@ -84,11 +88,11 @@ comments: true
     //cal.setTime(value.getTime());
     //cal.add(calendarField, -1);
     //Date prev = cal.getTime();
-    LocalDateTime prev = value.minus(1, temporalUnit);
-    return start == null || start.compareTo(prev) &lt;= 0 ? prev : null;
+    ChronoLocalDateTime&lt;?&gt; prev = value.minus(1, temporalUnit);
+    return Objects.isNull(start) || start.compareTo(prev) &lt;= 0 ? prev : null;
   }
 
-  public LocalDateTime getLocalDateTime() {
+  public ChronoLocalDateTime&lt;?&gt; getLocalDateTime() {
     return value;
   }
 
@@ -97,7 +101,7 @@ comments: true
   }
 
   @Override public void setValue(Object value) {
-    if (!(value instanceof LocalDateTime)) {
+    if (!(value instanceof ChronoLocalDateTime&lt;?&gt;)) {
       throw new IllegalArgumentException("illegal value");
     }
     if (!value.equals(this.value)) {
@@ -135,8 +139,90 @@ comments: true
         JSpinner spinner2 = new JSpinner(new SpinnerLocalDateTimeModel(
             d, s, e, ChronoUnit.DAYS));
 </code></pre>
-    - * 参考リンク [#jd46cbda]
+    - スピナーエディタも、以下のような`LocalDateTime`を扱うものに変更
+        - 参考: [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
+            
+            <pre class="prettyprint"><code>class LocalDateTimeEditor extends JSpinner.DefaultEditor {
+              private final DateTimeFormatter dateTimeFormatter;
+              private final SpinnerLocalDateTimeModel model;
+            
+              public LocalDateTimeEditor(final JSpinner spinner, String dateFormatPattern) {
+                super(spinner);
+                if (!(spinner.getModel() instanceof SpinnerLocalDateTimeModel)) {
+                  throw new IllegalArgumentException("model not a SpinnerLocalDateTimeModel");
+                }
+                dateTimeFormatter = DateTimeFormatter.ofPattern(dateFormatPattern);
+                model = (SpinnerLocalDateTimeModel) spinner.getModel();
+                final DefaultFormatter formatter = new LocalDateTimeFormatter();
+            
+                EventQueue.invokeLater(new Runnable() {
+                  @Override public void run() {
+                    formatter.setValueClass(LocalDateTime.class);
+                    DefaultFormatterFactory factory = new DefaultFormatterFactory(formatter);
+                    JFormattedTextField ftf = (JFormattedTextField) getTextField();
+                    try {
+                      String maxString = formatter.valueToString(model.getStart());
+                      String minString = formatter.valueToString(model.getEnd());
+                      ftf.setColumns(Math.max(maxString.length(), minString.length()));
+                    } catch (ParseException e) {
+                      // PENDING: hmuller
+                      e.printStackTrace();
+                    }
+                    ftf.setHorizontalAlignment(JTextField.LEFT);
+                    ftf.setEditable(true);
+                    ftf.setFormatterFactory(factory);
+                  }
+                });
+              }
+            
+              public SpinnerLocalDateTimeModel getModel() {
+                return (SpinnerLocalDateTimeModel) getSpinner().getModel();
+              }
+            
+              class LocalDateTimeFormatter extends InternationalFormatter {
+                public LocalDateTimeFormatter() {
+                  super(dateTimeFormatter.toFormat());
+                }
+                @Override public String valueToString(Object value) throws ParseException {
+                  //System.out.println(value.getClass().getName());
+                  if (value instanceof TemporalAccessor) {
+                    //return ((LocalDateTime) value).format(dateTimeFormatter);
+                    return dateTimeFormatter.format((TemporalAccessor) value);
+                  } else {
+                    return "";
+                  }
+                }
+                @Override public Object stringToValue(String text) throws ParseException {
+                  //System.out.println("stringToValue:" + text);
+                  try {
+                    //LocalDateTime value = LocalDate.parse(text, dateTimeFormatter).atStartOfDay();
+                    TemporalAccessor ta = dateTimeFormatter.parse(text);
+                    ChronoLocalDateTime&lt;?&gt; value = model.getLocalDateTime();
+                    //@see https://tips4java.wordpress.com/2015/04/09/temporal-spinners/
+                    for (ChronoField field : ChronoField.values()) {
+                      if (field.isSupportedBy(value) &amp;&amp; ta.isSupported(field)) {
+                        value = field.adjustInto(value, ta.getLong(field));
+                      }
+                    }
+                    Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; min = model.getStart();
+                    Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; max = model.getEnd();
+                    if (Objects.nonNull(min) &amp;&amp; min.compareTo(value) &gt; 0 
+                     || Objects.nonNull(max) &amp;&amp; max.compareTo(value) &lt; 0) {
+                      throw new ParseException(text + " is out of range", 0);
+                    }
+                    return value;
+                  } catch (DateTimeParseException e) {
+                    ParseException pe = new ParseException(e.getMessage(), e.getErrorIndex());
+                    pe.setStackTrace(e.getStackTrace());
+                    throw pe;
+                  }
+                }
+              }
+            }
+</code></pre>
+        - * 参考リンク [#jd46cbda]
 - [JSpinnerで日付を設定](http://ateraimemo.com/Swing/SpinnerDateModel.html)
+- [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
 
 <!-- dummy comment line for breaking list -->
 

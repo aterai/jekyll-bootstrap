@@ -50,7 +50,7 @@ frame.getContentPane().add(p);
     - `JFrame#setUndecorated(true);`
 - `JInternalFrame`を`ContentPane`に追加
     - [JInternalFrameをJFrameとして表示する](http://ateraimemo.com/Swing/InternalFrameTitleBar.html)
-    - `JFrame`の背景色を`JFrame#setBackground(new Color(0,0,0,0));`で透明化
+    - `JFrame`の背景色を`JFrame#setBackground(new Color(0x0, true));`で透明化
 - `JRootPane`に装飾を追加、変更
     - `JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`で装飾を追加し、リサイズのための`MouseMotionListener`などを利用
         - [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](http://ateraimemo.com/Swing/CustomDecoratedFrame.html)は、このリサイズのための`MouseMotionListener`も独自に追加している

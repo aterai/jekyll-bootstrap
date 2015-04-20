@@ -44,7 +44,7 @@ comments: true
 - 画像を中央に表示するようにした`Border`を作成し、これを`Viewport`の`Border`として設定
 - `Viewport`に追加した`JTextArea`の背景を透明化
     - `textarea.setOpaque(false);`
-    - `textarea.setBackground(new Color(0, 0, 0, 0)));`
+    - `textarea.setBackground(new Color(0x0, true)));`
 
 <!-- dummy comment line for breaking list -->
 

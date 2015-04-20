@@ -30,7 +30,7 @@ comments: true
 
   public RearrangingHandler() {
     super();
-    window.setBackground(new Color(0, true));
+    window.setBackground(new Color(0x0, true));
   }
   @Override public void mousePressed(MouseEvent e) {
     if (((JComponent) e.getComponent()).getComponentCount() &lt;= 1) {

@@ -88,7 +88,7 @@ public class TestJLayeredPane1 extends JFrame {
     label.setFont(FONT);
     label.setOpaque(true);
     label.setHorizontalAlignment(SwingConstants.CENTER);
-    label.setBackground(getColor(colors[i], 0.85f));
+    label.setBackground(getColor(colors[i], .85f));
     Border border1 = BorderFactory.createEmptyBorder(4, 4, 4, 4);
     label.setBorder(border1);
 
@@ -99,7 +99,7 @@ public class TestJLayeredPane1 extends JFrame {
 
     JPanel p = new JPanel();
 
-    Color col = getColor(colors[i], 0.5f);
+    Color col = getColor(colors[i], .5f);
     Border border = BorderFactory.createLineBorder(col, 1);
     p.setBorder(border);
 

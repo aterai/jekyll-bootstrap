@@ -19,7 +19,7 @@ comments: true
 window.add(label);
 //window.setAlwaysOnTop(true);
 //com.sun.awt.AWTUtilities.setWindowOpaque(window, false); // JDK 1.6.0
-window.setBackground(new Color(0, true)); // JDK 1.7.0
+window.setBackground(new Color(0x0, true)); // JDK 1.7.0
 DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMotionListener() {
   @Override public void dragMouseMoved(DragSourceDragEvent dsde) {
     window.setLocation(dsde.getLocation());

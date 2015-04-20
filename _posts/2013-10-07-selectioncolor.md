@@ -19,7 +19,7 @@ comments: true
 area.setOpaque(false);
 area.setForeground(new Color(200, 200, 200));
 area.setSelectedTextColor(Color.WHITE);
-area.setBackground(new Color(0, true));
+area.setBackground(new Color(0x0, true));
 area.setSelectionColor(new Color(0xC86464FF, true));
 </code></pre>
 

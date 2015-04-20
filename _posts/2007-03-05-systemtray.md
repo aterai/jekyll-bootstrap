@@ -84,7 +84,7 @@ PopupMenu popup = new PopupMenu();
 TrayIcon icon   = new TrayIcon(image, "TRAY", popup);
 </code></pre>
 
-    - `g.setBackground(new Color(0,0,0,0));g.clearRect(0,0,d.width,d.height);`とかしても変化無し。 -- *aterai* 2007-05-09 (水) 13:54:25
+    - `g.setBackground(new Color(0x0, true)); g.clearRect(0, 0, d.width, d.height);`などを設定しても変化無し。 -- *aterai* 2007-05-09 (水) 13:54:25
 - メモ: [TrayIcon does not support 8-bit alpha channel in Windows XP](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6707273) -- *aterai* 2009-12-08 (火) 09:28:46
 - タスクバーのアイコンがなくなりシステムトレイのアイコンだけになりませんか？ --  2010-03-05 (金) 21:05:36
     - `Windows`でしか試していませんが、`JFrame`の代わりに、`JDialog`を使えばタスクバーには何も表示されないと思います(質問の意味を取り違えてなければいいのですが……)。 -- *aterai* 2010-03-06 (土) 23:22:39

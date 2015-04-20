@@ -82,8 +82,8 @@ comments: true
 
 <pre class="prettyprint"><code>panel.setLayout(layout);
 Spring panelw = layout.getConstraint(SpringLayout.WIDTH, panel);
-layout.getConstraints(name).setWidth(Spring.scale(panelw, 0.9f));
-layout.getConstraints(name).setX(Spring.scale(panelw, 0.05f));
+layout.getConstraints(name).setWidth(Spring.scale(panelw, .9f));
+layout.getConstraints(name).setX(Spring.scale(panelw, .05f));
 </code></pre>
 
 - ご指摘ありがとうございます。こんなメソッドがあったんですね。サンプルを全体的に修正してみました。 -- *aterai* 2010-09-02 (木) 07:01:18

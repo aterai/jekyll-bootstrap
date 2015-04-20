@@ -127,7 +127,7 @@ comments: true
       @Override public void run() {
         Window pop = SwingUtilities.getWindowAncestor(DropShadowPopupMenu.this);
         if (pop instanceof JWindow) {
-          pop.setBackground(new Color(0, true)); //JDK 1.7.0
+          pop.setBackground(new Color(0x0, true)); //JDK 1.7.0
         }
       }
     });

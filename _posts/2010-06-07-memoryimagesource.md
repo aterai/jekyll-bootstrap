@@ -67,7 +67,7 @@ int penc = 0x0;
 
 - - - -
 以下のような方法もあります。
-<pre class="prettyprint"><code>private static final Color ERASER = new Color(0, 0, 0, 0);
+<pre class="prettyprint"><code>private static final Color ERASER = new Color(0x0, true);
 private boolean isPen = true;
 private Point startPoint = new Point(-10, -10);
 private BufferedImage currentImage = null;

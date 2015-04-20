@@ -26,7 +26,7 @@ comments: true
     Graphics2D g2 = image.createGraphics();
     Point2D start = new Point2D.Float(0f, 0f);
     Point2D end = new Point2D.Float(99f, 0f);
-    float[] dist = {.0f, .5f, 1f};
+    float[] dist = {0f, .5f, 1f};
     Color[] colors = {Color.RED, Color.YELLOW, Color.GREEN};
     g2.setPaint(new LinearGradientPaint(start, end, dist, colors));
     g2.fillRect(0, 0, 100, 1);
@@ -64,16 +64,18 @@ comments: true
     //int cellSpacing = getCellSpacing();
     // amount of progress to draw
     int amountFull = getAmountFull(b, barRectWidth, barRectHeight);
-    if (progressBar.getOrientation() == JProgressBar.HORIZONTAL) {
-      // draw the cells
+
+    // draw the cells
+    if (progressBar.getOrientation() == SwingConstants.HORIZONTAL) {
       float x = amountFull / (float) barRectWidth;
       g.setColor(getColorFromPallet(pallet, x));
       g.fillRect(b.left, b.top, amountFull, barRectHeight);
     } else { // VERTICAL
-      //XXX
-      super.paintDeterminate(g, c);
-      return;
+      float y = amountFull / (float) barRectHeight;
+      g.setColor(getColorFromPallet(pallet, y));
+      g.fillRect(b.left, barRectHeight + b.bottom - amountFull, barRectWidth, amountFull);
     }
+
     // Deal with possible text painting
     if (progressBar.isStringPainted()) {
       paintString(g, b.left, b.top, barRectWidth, barRectHeight, amountFull, b);
@@ -86,7 +88,7 @@ comments: true
 上記のサンプルでは高さ`1px`の画像をパレットとして予め作成し、それから`JProgressBar`の進捗に応じた色を取得して、`BasicProgressBarUI#paintDeterminate(...)`内で使用することで、色の変更を行なっています。
 
 - パレット用の画像作成は、[JSliderのスタイルを変更する](http://ateraimemo.com/Swing/GradientTrackSlider.html)と同じ
-- 注: `VERTICAL`と、不確定モードには未対応
+- 注: ~~`VERTICAL`と、~~ 不確定モードには未対応
 
 <!-- dummy comment line for breaking list -->
 

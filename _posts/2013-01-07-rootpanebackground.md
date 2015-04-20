@@ -59,7 +59,7 @@ frame.getContentPane().add(new MainPanel());
         - 参考: [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html)
         - `NimbusLookAndFeel`には未対応
     - `JMenuBar`: `setOpaque(false);`で透明化し、`JMenuBar#paintComponent(...)`をオーバーライドして半透明化
-    - `JMenu`, `JMenuItem`など: `setOpaque(false);`で透明化、`LookAndFeel`によって、`JMenu#setBackground(new Color(0,0,0,0));`、`UIManager.put("Menu.selectionBackground", new Color(0,0,100,100));`などを使用
+    - `JMenu`, `JMenuItem`など: `setOpaque(false);`で透明化、`LookAndFeel`によって、`JMenu#setBackground(new Color(0x0, true));`、`UIManager.put("Menu.selectionBackground", new Color(0, 0, 100, 100));`などを使用
         - 参考: [JMenuBarの背景に画像を表示する](http://ateraimemo.com/Swing/MenuBarBackground.html)
     - `JPopupMenu`: [JMenuなどから開くPopupMenuを半透明化](http://ateraimemo.com/Swing/TranslucentSubMenu.html)などで、半透明化
 

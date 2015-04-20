@@ -70,7 +70,7 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
         - <kbd>Alt+Space</kbd>で最大化、最小化できるが、元のサイズに戻せなくなる場合がある
     - 角の透明化には未対応
         - 目立たなくするために、`LookAndFeel`は`Nimbus`に変更
-        - `JDK 1.7.0`なら、`frame.setBackground(new Color(0,0,0,0)); frame.add(p=new MainPanel()); p.setOpaque(false);`で角の透明化が可能
+        - `JDK 1.7.0`なら、`frame.setBackground(new Color(0x0, true)); frame.add(p = new MainPanel()); p.setOpaque(false);`で角の透明化が可能
 
 <!-- dummy comment line for breaking list -->
 

@@ -53,7 +53,7 @@ comments: true
     isSynth = getUI().getClass().getName().contains("Synth");
     if (isSynth) {
       //System.out.println("XXX: FocusBorder bug?, JDK 1.7.0, Nimbus start LnF");
-      setBackgroundSelectionColor(new Color(0, true));
+      setBackgroundSelectionColor(new Color(0x0, true));
     }
   }
   @Override public Component getTreeCellRendererComponent(

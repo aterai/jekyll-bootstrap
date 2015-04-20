@@ -38,7 +38,7 @@ comments: true
   }
 };
 textField01.setOpaque(false);
-textField01.setBackground(new Color(0, 0, 0, 0)); //Nimbus
+textField01.setBackground(new Color(0x0, true)); //Nimbus
 textField01.setBorder(BorderFactory.createEmptyBorder(4, 8, 4, 8));
 textField01.setText("aaaaaaaaaaa");
 </code></pre>

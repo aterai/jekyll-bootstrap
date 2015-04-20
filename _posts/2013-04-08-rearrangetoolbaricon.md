@@ -26,7 +26,7 @@ comments: true
   private Point startPt = null;
   private int gestureMotionThreshold = DragSource.getDragThreshold();
   public DragHandler() {
-    window.setBackground(new Color(0, true));
+    window.setBackground(new Color(0x0, true));
   }
   @Override public void mousePressed(MouseEvent e) {
     JComponent parent = (JComponent) e.getComponent();

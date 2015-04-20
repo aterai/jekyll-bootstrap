@@ -32,7 +32,7 @@ comments: true
     setIcon(image);
     toolBox.setFloatable(false);
     toolBox.setOpaque(false);
-    toolBox.setBackground(new Color(0, 0, 0, 0));
+    toolBox.setBackground(new Color(0x0, true));
     toolBox.setForeground(Color.WHITE);
     toolBox.setBorder(BorderFactory.createEmptyBorder(2, 4, 4, 4));
 

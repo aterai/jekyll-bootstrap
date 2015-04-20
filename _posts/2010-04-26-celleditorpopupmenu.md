@@ -27,8 +27,7 @@ comments: true
   final Action pasteAction  = new DefaultEditorKit.PasteAction();
   final Action deleteAction = new AbstractAction("delete") {
     @Override public void actionPerformed(ActionEvent e) {
-      JPopupMenu pop = (JPopupMenu) e.getSource();
-      ((JTextComponent) pop.getInvoker()).replaceSelection(null);
+      ((JTextComponent) getInvoker()).replaceSelection(null);
     }
   };
   tc.addAncestorListener(new AncestorListener() {

@@ -21,10 +21,10 @@ UIManager.putBoolean("Tree.drawDashedFocusIndicator", false);
 
 ## 解説
 - `Tree.drawsFocusBorderAroundIcon`
-    - `ture`の場合、`JTree`のノードアイコンを囲むように`Border`が拡張される(背景色で塗りつぶされる範囲は変化しない)
+    - `true`の場合、`JTree`のノードアイコンを囲むように`Border`が拡張される(背景色で塗りつぶされる範囲は変化しない)
     - `MotifLookAndFeel`の初期値は`true`
 - `Tree.drawDashedFocusIndicator`
-    - `ture`の場合、`JTree`のフォーカスの描画に使用する`Border`が点線になる
+    - `true`の場合、`JTree`のフォーカスの描画に使用する`Border`が点線になる
     - `WindowsLookAndFeel`の初期値は`true`
 
 <!-- dummy comment line for breaking list -->
