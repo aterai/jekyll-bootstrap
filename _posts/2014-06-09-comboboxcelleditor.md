@@ -72,12 +72,12 @@ comments: true
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
         Point pt = SwingUtilities.convertPoint(tree, me.getPoint(), panel);
-        Object o = SwingUtilities.getDeepestComponentAt(panel, pt.x, pt.y);
+        Component o = SwingUtilities.getDeepestComponentAt(panel, pt.x, pt.y);
         if (o instanceof JComboBox) {
           panel.comboBox.showPopup();
         } else if (o != null) {
-          Object oo = SwingUtilities.getAncestorOfClass(JComboBox.class, (Component) o);
-          if (oo instanceof JComboBox) {
+          Container c = SwingUtilities.getAncestorOfClass(JComboBox.class, (Component) o);
+          if (c instanceof JComboBox) {
             panel.comboBox.showPopup();
           }
         }

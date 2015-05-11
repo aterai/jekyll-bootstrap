@@ -21,4 +21,13 @@ comments: true
 ## 解説
 上記のサンプルでは、`JFrame`をクリックしたときに、`KeyboardFocusManager#clearGlobalFocusOwner()`メソッドを使用して、`GlobalFocus`をクリアしています。
 
+- - - -
+`JDK1.8.0`以降の場合は、[KeyboardFocusManager#clearFocusOwner()](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html#clearFocusOwner--)を使用したほうがよさそう？
+
+## 参考リンク
+- [KeyboardFocusManager#clearGlobalFocusOwner() (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html#clearGlobalFocusOwner--)
+- [KeyboardFocusManager#clearFocusOwner() (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html#clearFocusOwner--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

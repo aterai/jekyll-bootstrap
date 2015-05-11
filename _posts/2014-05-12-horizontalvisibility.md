@@ -7,6 +7,9 @@ tags: [JTextField, JScrollBar, BoundedRangeModel]
 author: aterai
 pubdate: 2014-05-12T00:05:11+09:00
 description: JTextFieldの表示領域をJScrollBarでスクロール可能にします。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2015/04/scrollbar-for-jtextfield.html
+    lang: en
 comments: true
 ---
 ## 概要
