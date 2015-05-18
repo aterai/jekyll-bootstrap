@@ -39,6 +39,7 @@ if (c instanceof JTextField) {
 
 ## 参考リンク
 - [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
+- [JComboBoxのセルサイズを決定するためのプロトタイプ値を設定する](http://ateraimemo.com/Swing/PrototypeDisplayValue.html)
 
 <!-- dummy comment line for breaking list -->
 
