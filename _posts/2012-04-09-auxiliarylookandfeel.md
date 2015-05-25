@@ -22,7 +22,7 @@ if (check.isSelected() &amp;&amp; lnf.contains("Windows")) {
 } else {
   UIManager.removeAuxiliaryLookAndFeel(auxLookAndFeel);
 }
-SwingUtilities.updateComponentTreeUI(MainPanel.this);
+SwingUtilities.updateComponentTreeUI(getRootPane());
 </code></pre>
 
 ## 解説

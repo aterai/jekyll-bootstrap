@@ -15,7 +15,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMr425A3I/AAAAAAAAAZk/ZFpsuUZWGcQ/s800/FilterWithoutSorting.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
+<pre class="prettyprint"><code>final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;&gt;(model) {
   @Override public boolean isSortable(int column) {
     return false;
   }

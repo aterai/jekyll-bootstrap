@@ -23,8 +23,7 @@ add(new JCheckBox(new AbstractAction("Tree.paintLines") {
     } else {
       UIManager.put("Tree.paintLines", Boolean.FALSE);
     }
-    tree.updateUI(); // 左のJTreeだけ更新
-    //SwingUtilities.updateComponentTreeUI(MainPanel.this);
+    SwingUtilities.updateComponentTreeUI(tree); // 左のJTreeだけ更新
   }
 }), BorderLayout.NORTH);
 </code></pre>

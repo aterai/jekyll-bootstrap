@@ -117,12 +117,8 @@ comments: true
           SearchEngine se = (SearchEngine) o;
           arrowButton.setIcon(se.favicon);
         }
-        final JComboBox combo = (JComboBox) e.getSource();
-        EventQueue.invokeLater(new Runnable() {
-          @Override public void run() {
-            combo.getEditor().setItem(str);
-          }
-        });
+        JComboBox combo = (JComboBox) e.getSource();
+        combo.getEditor().setItem(str);
       }
       @Override public void popupMenuCanceled(PopupMenuEvent e) {}
     };

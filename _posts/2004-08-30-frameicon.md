@@ -42,6 +42,37 @@ frame.setIconImages(java.util.Arrays.asList(
     tk.createImage(MainPanel.class.getResource("wi0054-32.png"))));
 </code></pre>
 
+- - - -
+- `JFrame.setDefaultLookAndFeelDecorated(true);`で、デフォルト`LookAndFeel`のウィンドウ修飾をタイトルバーに適用する場合、`JFrame#setIconImage(...)`で設定したアイコンが透過されない
+    - [#JDK-6429220 Default LAF decorated frame does not support transparent icons - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6429220)
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>import java.awt.*;
+import javax.swing.*;
+
+public class TransparentIconTest {
+  public static void main(String[] args) {
+    EventQueue.invokeLater(new Runnable() {
+      @Override public void run() {
+        createAndShowGUI();
+      }
+    });
+  }
+  public static void createAndShowGUI() {
+    JFrame.setDefaultLookAndFeelDecorated(true);
+    JFrame f = new JFrame();
+    f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    ImageIcon icon = new ImageIcon(
+        TransparentIconTest.class.getResource("16x16.png"));
+    f.setIconImage(icon.getImage());
+    f.setSize(320, 240);
+    f.setLocationRelativeTo(null);
+    f.setVisible(true);
+  }
+}
+</code></pre>
+
 ## 参考リンク
 - [java - Sizes of frame icons used in Swing - Stack Overflow](http://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
 - [GIMP](http://www.gimp.org/)
