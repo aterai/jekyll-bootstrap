@@ -19,13 +19,12 @@ comments: true
   private static final Rectangle R1 = new Rectangle();
   private static final Rectangle R2 = new Rectangle();
   private static final Rectangle R3 = new Rectangle();
-  private static Rectangle prevRect;
-
-  private final int gestureMotionThreshold = DragSource.getDragThreshold();
+  private final Rectangle prevRect = new Rectangle();
+  private final Rectangle draggingRect = new Rectangle();
   private final Point startPt = new Point(-100, -100);
   private final Point dragOffset = new Point();
   private final JComponent rubberStamp = new JPanel();
-  private final Rectangle draggingRect = new Rectangle();
+  private final int gestureMotionThreshold = DragSource.getDragThreshold();
 
   private Component draggingComonent;
   private Component gap;
@@ -34,16 +33,15 @@ comments: true
   @Override public void paint(Graphics g, JComponent c) {
     super.paint(g, c);
     if (c instanceof JLayer &amp;&amp; Objects.nonNull(draggingComonent)) {
-      SwingUtilities.paintComponent(
-          g, draggingComonent, rubberStamp, draggingRect);
+      SwingUtilities.paintComponent(g, draggingComonent, rubberStamp, draggingRect);
     }
   }
 
   @Override public void installUI(JComponent c) {
     super.installUI(c);
     if (c instanceof JLayer) {
-      ((JLayer) c).setLayerEventMask(AWTEvent.MOUSE_EVENT_MASK
-                                   | AWTEvent.MOUSE_MOTION_EVENT_MASK);
+      ((JLayer) c).setLayerEventMask(
+          AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK);
     }
   }
 
@@ -94,6 +92,8 @@ comments: true
       }
       l.repaint();
       break;
+    default:
+      break;
     }
   }
 
@@ -103,17 +103,13 @@ comments: true
       Point pt = e.getPoint();
       JComponent parent = l.getView();
 
-      //MotionThreshold
-      double a = Math.pow(pt.x - startPt.x, 2);
-      double b = Math.pow(pt.y - startPt.y, 2);
-      if (Objects.isNull(draggingComonent)
-          &amp;&amp; Math.sqrt(a + b) &gt; gestureMotionThreshold) {
-        startDragging(parent, pt);
-        return;
-      }
-
-      //dragging...
       if (Objects.isNull(draggingComonent)) {
+        //MotionThreshold
+        double a = Math.pow(pt.x - startPt.x, 2);
+        double b = Math.pow(pt.y - startPt.y, 2);
+        if (Math.sqrt(a + b) &gt; gestureMotionThreshold) {
+          startDragging(parent, pt);
+        }
         return;
       }
 
@@ -121,7 +117,7 @@ comments: true
       updateWindowLocation(pt, parent);
       l.repaint();
 
-      if (Objects.nonNull(prevRect) &amp;&amp; prevRect.contains(pt)) {
+      if (prevRect.contains(pt)) {
         return;
       }
 
@@ -167,21 +163,19 @@ comments: true
     int x = r.x;
     int y = pt.y - dragOffset.y;
     int h = draggingRect.height;
-    int yy = y &lt; i.top ? i.top
-                       : r.contains(x, y + h) ? y
-                                              : r.height + i.top - h;
+    int yy = y &lt; i.top ? i.top : r.contains(x, y + h) ? y : r.height + i.top - h;
     draggingRect.setLocation(x, yy);
   }
 
-  private static int getTargetIndex(Rectangle r, Point pt, int i) {
+  private int getTargetIndex(Rectangle r, Point pt, int i) {
     int ht2 = (int)(.5 + r.height * .5);
     R1.setBounds(r.x, r.y,       r.width, ht2);
     R2.setBounds(r.x, r.y + ht2, r.width, ht2);
     if (R1.contains(pt)) {
-      prevRect = R1;
+      prevRect.setBounds(R1);
       return i - 1 &gt; 0 ? i : 0;
     } else if (R2.contains(pt)) {
-      prevRect = R2;
+      prevRect.setBounds(R2);
       return i;
     }
     return -1;

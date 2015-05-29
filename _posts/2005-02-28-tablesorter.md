@@ -70,6 +70,25 @@ protected ComparableComparator getComparator(int column) {
 </code></pre>
 
 - - - -
+`LookAndFeel`を動作中に切り替える場合は、`sorter.setTableHeader(table.getTableHeader());`で設定した`JTableHeader`を新しい`LookAndFeel`を適用したものに入れ替えておかないと、`NullPointerException`が発生します。
+
+<pre class="prettyprint"><code>private final TableSorter sorter = new TableSorter(model);
+private final JTable table = new JTable(sorter) {
+  @Override public void updateUI() {
+    sorter.setTableHeader(null);
+    super.updateUI();
+    EventQueue.invokeLater(new Runnable() {
+      @Override public void run() {
+        JTableHeader h = table.getTableHeader();
+        sorter.setTableHeader(h);
+        h.repaint();
+      }
+    });
+  }
+};
+</code></pre>
+
+- - - -
 - `JDK 1.6.0`から`JTable`には標準でソート機能が追加されています。
     - [Table Sorting and Filtering - New and Updated Desktop Features in Java SE 6, Part 2](http://www.oracle.com/technetwork/articles/javase/index-135205.html#1)
     - [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)

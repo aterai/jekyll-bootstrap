@@ -16,17 +16,16 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class RearrangingHandler extends MouseAdapter {
-  private static final int xoffset = 16;
   private static final Rectangle R1 = new Rectangle();
   private static final Rectangle R2 = new Rectangle();
-  private static Rectangle prevRect;
+  private final Rectangle prevRect = new Rectangle();
   private final int gestureMotionThreshold = DragSource.getDragThreshold();
   private final JWindow window = new JWindow();
+  private final Point startPt = new Point();
   private int index = -1;
   private Component draggingComonent;
   private Component gap;
-  private Point startPt;
-  private Point dragOffset;
+  private final Point dragOffset = new Point();
 
   public RearrangingHandler() {
     super();
@@ -34,9 +33,9 @@ comments: true
   }
   @Override public void mousePressed(MouseEvent e) {
     if (((JComponent) e.getComponent()).getComponentCount() &lt;= 1) {
-      startPt = null;
+      startPt.setLocation(0, 0);
     } else {
-      startPt = e.getPoint();
+      startPt.setLocation(e.getPoint());
     }
   }
   private void startDragging(JComponent parent, Point pt) {
@@ -49,7 +48,7 @@ comments: true
     Dimension d = draggingComonent.getSize();
 
     Point dp = draggingComonent.getLocation();
-    dragOffset = new Point(pt.x - dp.x, pt.y - dp.y);
+    dragOffset.setLocation(pt.x - dp.x, pt.y - dp.y);
 
     gap = Box.createRigidArea(d);
     swapComponentLocation(parent, c, gap, index);
@@ -62,19 +61,21 @@ comments: true
     window.setVisible(true);
   }
   private void updateWindowLocation(Point pt, JComponent parent) {
-    Point p = new Point(pt.x - dragOffset.x, pt.y - dragOffset.y);
-    SwingUtilities.convertPointToScreen(p, parent);
-    window.setLocation(p);
+    if (window.isVisible() &amp;&amp; Objects.nonNull(draggingComonent)) {
+      Point p = new Point(pt.x - dragOffset.x, pt.y - dragOffset.y);
+      SwingUtilities.convertPointToScreen(p, parent);
+      window.setLocation(p);
+    }
   }
-  private static int getTargetIndex(Rectangle r, Point pt, int i) {
-    int ht2 = (int) (.5 + r.height * .5);
+  private int getTargetIndex(Rectangle r, Point pt, int i) {
+    int ht2 = (int)(.5 + r.height * .5);
     R1.setBounds(r.x, r.y,       r.width, ht2);
     R2.setBounds(r.x, r.y + ht2, r.width, ht2);
     if (R1.contains(pt)) {
-      prevRect = R1;
+      prevRect.setBounds(R1);
       return i - 1 &gt; 0 ? i : 0;
     } else if (R2.contains(pt)) {
-      prevRect = R2;
+      prevRect.setBounds(R2);
       return i;
     }
     return -1;
@@ -89,21 +90,19 @@ comments: true
   @Override public void mouseDragged(MouseEvent e) {
     Point pt = e.getPoint();
     JComponent parent = (JComponent) e.getComponent();
-    double a = Math.pow(pt.x - startPt.x, 2);
-    double b = Math.pow(pt.y - startPt.y, 2);
-    if (draggingComonent == null &amp;&amp;
-        Math.sqrt(a + b) &gt; gestureMotionThreshold) {
-      startDragging(parent, pt);
-      return;
-    }
-    if (!window.isVisible() || draggingComonent == null) {
+    if (Objects.isNull(draggingComonent)) {
+      double a = Math.pow(pt.x - startPt.x, 2);
+      double b = Math.pow(pt.y - startPt.y, 2);
+      if (Math.sqrt(a + b) &gt; gestureMotionThreshold) {
+        startDragging(parent, pt);
+      }
       return;
     }
     updateWindowLocation(pt, parent);
-    if (prevRect != null &amp;&amp; prevRect.contains(pt)) {
+
+    if (prevRect.contains(pt)) {
       return;
     }
-
     for (int i = 0; i &lt; parent.getComponentCount(); i++) {
       Component c = parent.getComponent(i);
       Rectangle r = c.getBounds();
@@ -122,19 +121,15 @@ comments: true
   }
 
   @Override public void mouseReleased(MouseEvent e) {
-    startPt = null;
-    if (!window.isVisible() || draggingComonent == null) {
-      return;
-    }
+    startPt.setLocation(0, 0);
+    dragOffset.setLocation(0, 0);
+    prevRect.setBounds(0, 0, 0, 0);
+    window.setVisible(false);
+
     Point pt = e.getPoint();
     JComponent parent = (JComponent) e.getComponent();
-
     Component cmp = draggingComonent;
     draggingComonent = null;
-    prevRect = null;
-    startPt = null;
-    dragOffset = null;
-    window.setVisible(false);
 
     for (int i = 0; i &lt; parent.getComponentCount(); i++) {
       Component c = parent.getComponent(i);
