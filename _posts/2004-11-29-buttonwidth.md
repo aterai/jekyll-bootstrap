@@ -119,12 +119,13 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 
 ## 参考リンク
 - [JComboBoxなどの幅をカラム数で指定](http://ateraimemo.com/Swing/SetColumns.html)
-    - `JComboBox`、`JTextField`などのコンポーネントでは、カラム数で幅を指定することもできます。
+    - `JComboBox`、`JTextField`などのコンポーネントでは、カラム数で幅を指定することが可能
         - `JDK 1.5.0`: カラム数で幅を指定すると、コンポーネントによってサイズや余白などが微妙に異なる
         - `JDK 1.6.0`以上: `LookAndFeel`が同じなら、カラム数での幅指定で、どのコンポーネントでもほぼ同じサイズになる
 - [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
 - [Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/how_do_you_layout_command)
-    - 専用のレイアウトマネージャーを作成するサンプルがあります。
+    - 専用のレイアウトマネージャーを作成するサンプル
+- [JOptionPaneで使用するボタンのサイズを揃える](http://ateraimemo.com/Swing/SameSizeButtons.html)
 
 <!-- dummy comment line for breaking list -->
 

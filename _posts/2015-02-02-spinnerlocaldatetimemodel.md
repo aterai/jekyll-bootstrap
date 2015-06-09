@@ -29,8 +29,8 @@ comments: true
     if (Objects.isNull(value)) {
       throw new IllegalArgumentException("value is null");
     }
-    if (!(Objects.isNull(start) || start.compareTo(value) &lt;= 0)
-        &amp;&amp; (Objects.isNull(end) || end.compareTo(value) &gt;= 0)) {
+    if (Objects.nonNull(start) &amp;&amp; start.compareTo(value) &gt;= 0
+     || Objects.nonNull(end)   &amp;&amp; end.compareTo(value)   &lt;= 0) {
       throw new IllegalArgumentException("(start &lt;= value &lt;= end) is false");
     }
     this.value = value;
