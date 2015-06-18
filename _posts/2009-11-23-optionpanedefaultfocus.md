@@ -73,7 +73,7 @@ if (result == JOptionPane.OK_OPTION) {
   @Override public void hierarchyChanged(HierarchyEvent e) {
     if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0
          &amp;&amp; textField3.isShowing()) {
-      EventQueue.invokeLater(new Runnable(){
+      EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           textField3.requestFocusInWindow();
         }
