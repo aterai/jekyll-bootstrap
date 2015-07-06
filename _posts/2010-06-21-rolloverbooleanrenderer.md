@@ -24,7 +24,7 @@ comments: true
   public RolloverBooleanRenderer(HighlightListener highlighter) {
     super();
     this.highlighter = highlighter;
-    setHorizontalAlignment(JLabel.CENTER);
+    setHorizontalAlignment(SwingConstants.CENTER);
     setBorderPainted(true);
     setRolloverEnabled(true);
     setOpaque(true);

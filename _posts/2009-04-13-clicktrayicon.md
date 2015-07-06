@@ -31,7 +31,7 @@ icon.addMouseListener(new MouseAdapter() {
     if (e.getButton() == MouseEvent.BUTTON1 &amp;&amp; e.getClickCount() == 2) {
       frame.setVisible(true);
     } else if (frame.isVisible()) {
-      frame.setExtendedState(JFrame.NORMAL);
+      frame.setExtendedState(Frame.NORMAL);
       frame.toFront();
     }
   }

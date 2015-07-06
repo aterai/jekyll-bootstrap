@@ -61,7 +61,7 @@ scroll.getViewport().setBackground(alphaZero);
   private final Border noFocusBorder = new EmptyBorder(1, 1, 1, 1);
   public TranslucentBooleanRenderer() {
     super();
-    setHorizontalAlignment(JLabel.CENTER);
+    setHorizontalAlignment(SwingConstants.CENTER);
     setBorderPainted(true);
   }
   @Override public Component getTableCellRendererComponent(

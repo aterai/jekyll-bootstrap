@@ -26,7 +26,7 @@ comments: true
   @Override public Component getTableCellRendererComponent(
         JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     this.setText(Objects.toString(value, ""));
-    this.setHorizontalAlignment(JLabel.CENTER);
+    this.setHorizontalAlignment(SwingConstants.CENTER);
     this.setOpaque(false);
     this.setBackground(alphaZero);
     this.setForeground(Color.BLACK);

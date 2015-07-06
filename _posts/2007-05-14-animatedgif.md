@@ -17,16 +17,16 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JLabel label1 = new JLabel("何もしない",
   new ImageIcon(getClass().getResource("no_disposal_specified.gif")),
-  JLabel.LEFT);
+  SwingConstants.LEFT);
 JLabel label2 = new JLabel("そのまま残す",
   new ImageIcon(getClass().getResource("do_not_dispose.gif")),
-  JLabel.LEFT);
+  SwingConstants.LEFT);
 JLabel label3 = new JLabel("背景色でつぶす",
   new ImageIcon(getClass().getResource("restore_to_background_color.gif")),
-  JLabel.LEFT);
+  SwingConstants.LEFT);
 JLabel label4 = new JLabel("直前の画像に戻す",
   new ImageIcon(getClass().getResource("restore_to_previous.gif")),
-  JLabel.LEFT);
+  SwingConstants.LEFT);
 </code></pre>
 
 ## 解説

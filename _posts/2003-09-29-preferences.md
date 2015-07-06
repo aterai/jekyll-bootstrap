@@ -28,7 +28,7 @@ comments: true
   frame.addComponentListener(new ComponentAdapter() {
     @Override public void componentMoved(ComponentEvent e) {
       JFrame frame = (JFrame) e.getComponent();
-      if (frame.getExtendedState() == JFrame.NORMAL) {
+      if (frame.getExtendedState() == Frame.NORMAL) {
         Point pt = frame.getLocationOnScreen();
         if (pt.x &lt; 0 || pt.y &lt; 0) {
           return;
@@ -42,7 +42,7 @@ comments: true
     }
     @Override public void componentResized(ComponentEvent e) {
       JFrame frame = (JFrame) e.getComponent();
-      if (frame.getExtendedState() == JFrame.NORMAL) {
+      if (frame.getExtendedState() == Frame.NORMAL) {
         dim.setSize(getSize());
       }
     }
@@ -92,7 +92,7 @@ private void saveLocation() {
 
 ## コメント
 - メモ: [Preferences APIがJava6上では動かない - 日々是開発: SQS Development(2007-02-12)](http://sqs.cmr.sfc.keio.ac.jp/tdiary/20070212.html#p01) -- *aterai* 2007-06-14 (木) 14:42:00
-- 最大化した状態で終了すると、`(x,y)`が`(-4,-4)`で記録される。最大化すると、どうやら`JFrame.NORMAL`のまま左端に移動してそれから最大扱いになってるようです。だから`componentMoved`が誤爆してる。 -- *Tomopy* 2007-10-26 (金) 12:20:16
+- 最大化した状態で終了すると、`(x,y)`が`(-4,-4)`で記録される。最大化すると、どうやら`Frame.NORMAL`のまま左端に移動してそれから最大扱いになってるようです。だから`componentMoved`が誤爆してる。 -- *Tomopy* 2007-10-26 (金) 12:20:16
     - ご指摘ありがとうございます。位置がマイナスの場合は、保存しないほうがよさそうですね。修正しておきます。 -- *aterai* 2007-10-26 (金) 13:37:15
 
 <!-- dummy comment line for breaking list -->

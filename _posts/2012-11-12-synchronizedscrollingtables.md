@@ -16,8 +16,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JScrollPane scroll1 = new JScrollPane(leftTable);
-//scroll1.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-scroll1.setVerticalScrollBar(new JScrollBar(JScrollBar.VERTICAL) {
+//scroll1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+scroll1.setVerticalScrollBar(new JScrollBar(Adjustable.VERTICAL) {
   @Override public Dimension getPreferredSize() {
     Dimension dim = super.getPreferredSize();
     return new Dimension(0, dim.height);

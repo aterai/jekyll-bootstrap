@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTS5aM0UvI/AAAAAAAAAjg/g-wlrmrzml8/s800/SelectNextRow.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>InputMap im = table.getInputMap(JTable.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+<pre class="prettyprint"><code>InputMap im = table.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 KeyStroke tab   = KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0);
 KeyStroke enter = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0);
 im.put(tab, im.get(enter));

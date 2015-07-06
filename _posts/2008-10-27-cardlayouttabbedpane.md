@@ -15,7 +15,7 @@ comments: true
 ## 概要
 `CardLayout`と`JRadioButton`や`JTableHeader`を組み合わせて`JTabbedPane`風のコンポーネントを作成します。
 
-{% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIbe7vt7I/AAAAAAAAASw/SGFMcgCN_r4/s800/CardLayoutTabbedPane.png %}
+{% download https://lh3.googleusercontent.com/-i_zX5mZNCL0/VZBOp7c2kwI/AAAAAAAAN74/yEHMZL9l8xs/s800/CardLayoutTabbedPane.png %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class CardLayoutTabbedPane extends JPanel {
@@ -51,24 +51,16 @@ comments: true
 </code></pre>
 
 ## 解説
-`CardLayout`で`JTabbedPane`風のコンポーネントを作成すると、タブエリアのレイアウトをネストしてコンポーネントの追加したり、レイアウトマネージャーを変更することで、タブの配置を変更することが簡単になります。
+このサンプルでは、`CardLayout`で`JTabbedPane`風のコンポーネントを作成しています。`CardLayout`でパネルを切り替えるためのタブには`UI`を変更してチェックアイコンを非表示にした`JRadioButton`を使用し、これらのタブを配置するタブエリア(`JPanel`)のレイアウトマネージャーに`GridLayout`を適用して、すべてのタブサイズが均等になるように設定しています。
 
-- `CardLayout`+`JRadioButton`
-    - 上記のサンプルでは、`JRadioButton`を`GridLayout`で、均等なサイズになるように並べています。
-    - `UI`を変更して、チェックは非表示にしています。
-    - マウスでタブを押した時ではなく、 ~~(`Opera`風に)~~ 放した時に切り替わります。
 
-<!-- dummy comment line for breaking list -->
-
-- `CardLayout`+`JTableHeader`
-    - 空の`JTable`を作成して`JTableHeader`を取り出して利用しています。
-    - `JTableHeader`のドラッグ＆ドロップによる入れ替えや、ヘッダ(タブ)幅のリサイズが利用できます。
-
-<!-- dummy comment line for breaking list -->
+- - - -
+`CardLayout`+`JTableHeader`を使用したサンプルは、[JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](http://ateraimemo.com/Swing/TableHeaderTabArea.html)に移動しました。
 
 ## 参考リンク
 - [JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)
 - [TabbedPane風のタブ配置をレイアウトマネージャーで変更](http://ateraimemo.com/Swing/NewTabButton.html)
+- [JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](http://ateraimemo.com/Swing/TableHeaderTabArea.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -16,9 +16,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JLabel l0 = new JLabel("打率");
-JLabel l1 = new JLabel("打率", JLabel.RIGHT);
+JLabel l1 = new JLabel("打率", SwingConstants.RIGHT);
 JLabel l2 = new JustifiedLabel("打率");
-JLabel l3 = new JLabel("出塁率", JLabel.CENTER);
+JLabel l3 = new JLabel("出塁率", SwingConstants.CENTER);
 JLabel l4 = new JustifiedLabel("出塁率");
 JLabel l5 = new JustifiedLabel("チーム出塁率");
 //...

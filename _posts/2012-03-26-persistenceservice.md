@@ -40,7 +40,7 @@ comments: true
       return new WindowAdapter() {
         @Override public void windowClosing(WindowEvent e) {
           JFrame f = (JFrame) e.getComponent();
-          if (f.getExtendedState() == JFrame.NORMAL) {
+          if (f.getExtendedState() == Frame.NORMAL) {
             windowState.setSize(f.getSize());
             windowState.setLocation(f.getLocationOnScreen());
           }

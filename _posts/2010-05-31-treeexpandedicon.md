@@ -15,7 +15,15 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWHHSFZMI/AAAAAAAAAos/aymKObZa7WQ/s800/TreeExpandedIcon.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>Icon emptyIcon = new EmptyIcon();
+<pre class="prettyprint"><code>Icon emptyIcon = new Icon() {
+  @Override public void paintIcon(Component c, Graphics g, int x, int y) {}
+  @Override public int getIconWidth() {
+    return 0;
+  }
+  @Override public int getIconHeight() {
+    return 0;
+  }
+};
 UIManager.put("Tree.expandedIcon",  new IconUIResource(emptyIcon));
 UIManager.put("Tree.collapsedIcon", new IconUIResource(emptyIcon));
 </code></pre>

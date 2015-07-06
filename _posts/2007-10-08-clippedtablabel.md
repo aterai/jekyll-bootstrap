@@ -82,7 +82,7 @@ comments: true
   @Override public void insertTab(
       String title, Icon icon, Component component, String tip, int index) {
     super.insertTab(title, icon, component, tip == null ? title : tip, index);
-    JLabel label = new JLabel(title, JLabel.CENTER);
+    JLabel label = new JLabel(title, SwingConstants.CENTER);
     Dimension dim = label.getPreferredSize();
     Insets tabInsets = getTabInsets();
     label.setPreferredSize(new Dimension(0, dim.height + tabInsets.top + tabInsets.bottom));
