@@ -24,10 +24,10 @@ comments: true
       @Override public void mousePressed(MouseEvent e) {
         JSlider slider = (JSlider) e.getSource();
         switch (slider.getOrientation()) {
-          case JSlider.VERTICAL:
+          case SwingConstants.VERTICAL:
             slider.setValue(valueForYPosition(e.getY()));
             break;
-          case JSlider.HORIZONTAL:
+          case SwingConstants.HORIZONTAL:
             slider.setValue(valueForXPosition(e.getX()));
             break;
         }

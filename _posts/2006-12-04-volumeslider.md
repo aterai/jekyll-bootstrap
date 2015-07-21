@@ -17,16 +17,17 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class TriangleSliderUI extends MetalSliderUI {
   @Override public void paintThumb(Graphics g) {
-    Graphics2D g2 = (Graphics2D) g;
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
     g2.fillOval(thumbRect.x, thumbRect.y, thumbRect.width, thumbRect.height);
+    g2.dispose();
   }
   @Override public void paintTrack(Graphics g) {
     int cx, cy, cw, ch;
     int pad;
     Rectangle trackBounds = trackRect;
-    if (slider.getOrientation() == JSlider.HORIZONTAL ) {
-      Graphics2D g2 = (Graphics2D) g;
+    if (slider.getOrientation() == SwingConstants.HORIZONTAL ) {
+      Graphics2D g2 = (Graphics2D) g.create();
 
 //...
 

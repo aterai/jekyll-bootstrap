@@ -130,7 +130,7 @@ scroll.setRowHeader(vp);
 - - - -
 縦`JScrollBar`の中ではなく、左横などにハイライト位置用の`Icon`を表示したい場合は、`MatteBorder`を利用する方法があります。
 
-<pre class="prettyprint"><code>JScrollBar scrollBar = new JScrollBar(JScrollBar.VERTICAL) {
+<pre class="prettyprint"><code>JScrollBar scrollBar = new JScrollBar(Adjustable.VERTICAL) {
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
     d.width += getInsets().left;

@@ -45,7 +45,7 @@ slider.setUI(new MetalSliderUI() {
     int trackBottom = 0;
 
     // Draw the track
-    if (slider.getOrientation() == JSlider.HORIZONTAL) {
+    if (slider.getOrientation() == SwingConstants.HORIZONTAL) {
       trackBottom = (trackRect.height - 1) - getThumbOverhang();
       trackTop = trackBottom - (getTrackWidth() - 1);
       trackRight = trackRect.width - 1;
@@ -85,7 +85,7 @@ slider.setUI(new MetalSliderUI() {
     int fillBottom = 0;
     int fillRight = 0;
 
-    if (slider.getOrientation() == JSlider.HORIZONTAL) {
+    if (slider.getOrientation() == SwingConstants.HORIZONTAL) {
       middleOfThumb = thumbRect.x + (thumbRect.width / 2);
       middleOfThumb -= trackRect.x; // To compensate for the g.translate()
       fillTop = !slider.isEnabled() ? trackTop : trackTop + 1;

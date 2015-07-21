@@ -15,9 +15,10 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUG6tI4SI/AAAAAAAAAlg/bci1geT80EM/s800/SystemIcon.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>smallLabel.setIcon(FileSystemView.getFileSystemView().getSystemIcon(file));
-</code></pre>
-<pre class="prettyprint"><code>largeLabel.setIcon(new ImageIcon(ShellFolder.getShellFolder(file).getIcon(true)));
+<pre class="prettyprint"><code>//16x16
+smallLabel.setIcon(FileSystemView.getFileSystemView().getSystemIcon(file));
+//32x32
+largeLabel.setIcon(new ImageIcon(ShellFolder.getShellFolder(file).getIcon(true)));
 </code></pre>
 
 ## 解説
@@ -25,13 +26,9 @@ comments: true
 
 - `16x16`
     - `FileSystemView#getSystemIcon(File f)`で小さいアイコンを取得
-
-<!-- dummy comment line for breaking list -->
-
 - `32x32`
     - `ShellFolder.getShellFolder(file).getIcon(true)`で大きいアイコンを取得
-    - ~~「`sun.awt.shell.ShellFolder` は Sun が所有する `API` であり、今後のリリースで削除される可能性があります。」と警告される~~
-    - 「`ShellFolder`は内部所有の`API`であり、今後のリリースで削除される可能性があります」と警告される
+    - コンパイル時に「`ShellFolder`は内部所有の`API`であり、今後のリリースで削除される可能性があります」と警告が発生する
 
 <!-- dummy comment line for breaking list -->
 

@@ -15,7 +15,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-65-zGNk3eWU/TwFLJU_DP4I/AAAAAAAABHg/mEXoePs30sk/s800/MouseWheelScroll.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JScrollBar vsb = new JScrollBar(JScrollBar.VERTICAL) {
+<pre class="prettyprint"><code>JScrollBar vsb = new JScrollBar(Adjustable.VERTICAL) {
   @Override public Dimension getPreferredSize() {
     Dimension dim = super.getPreferredSize();
     return new Dimension(0, dim.height);

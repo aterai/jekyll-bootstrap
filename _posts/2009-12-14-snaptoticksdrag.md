@@ -26,7 +26,7 @@ comments: true
           super.mouseDragged(e);
           return;
         }
-        //case JSlider.HORIZONTAL:
+        //case SwingConstants.HORIZONTAL:
         int halfThumbWidth = thumbRect.width / 2;
         final int trackLength = trackRect.width;
         final int trackLeft   = trackRect.x - halfThumbWidth;
@@ -77,7 +77,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JSlider.HORIZONTAL`にしか対応していません。 -- *aterai* 2009-12-21 (月) 11:01:51
+- `SwingConstants.HORIZONTAL`にしか対応していません。 -- *aterai* 2009-12-21 (月) 11:01:51
 - bobndrewさんからの指摘で、ミニマムにマイナスの値を入れるとおかしくなるバグ修正と、`MinorTickSpacing`に対応。 -- *aterai* 2010-10-26 (火) 15:32:11
 
 <!-- dummy comment line for breaking list -->
