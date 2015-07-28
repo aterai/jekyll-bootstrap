@@ -20,7 +20,7 @@ SwingUtilities.updateComponentTreeUI(this);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、テキストシフト量を、`0`、`1`、`-1`と切り替えることができます。
+上記のサンプルでは、`JButton`をクリックした際に、あわせて内部の文字列が移動する距離を、`0`、`1`、`-1`と切り替えることができます。
 
 - メモ
     - `Java 1.5.0` + `WindowsLookAndFeel`のデフォルトは`1`

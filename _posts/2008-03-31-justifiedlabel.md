@@ -31,39 +31,49 @@ class JustifiedLabel extends JLabel {
   public JustifiedLabel(String str) {
     super(str);
   }
+  @Override public void setText(String text) {
+    super.setText(text);
+    prevWidth = -1;
+  }
   @Override protected void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g.create();
-    Insets i = getInsets();
-    int w = getWidth() - i.left - i.right;
+    Insets ins = getInsets();
+    int w = getSize().width - ins.left - ins.right;
     if (w != prevWidth) {
-      gvtext = getJustifiedGlyphVector(getText(), getFont(), g2.getFontRenderContext());
+      gvtext = getJustifiedGlyphVector(
+          w, getText(), getFont(), g2.getFontRenderContext());
       prevWidth = w;
     }
-    if (gvtext == null) {
-      super.paintComponent(g);
+    if (Objects.nonNull(gvtext)) {
+      g2.setPaint(getBackground());
+      g2.fillRect(0, 0, getWidth(), getHeight());
+      g2.setPaint(getForeground());
+      g2.drawGlyphVector(gvtext, ins.left, ins.top + getFont().getSize());
     } else {
-      g2.drawGlyphVector(gvtext, i.left, i.top + getFont().getSize());
+      super.paintComponent(g);
     }
     g2.dispose();
   }
-  private GlyphVector getJustifiedGlyphVector(String str, Font font, FontRenderContext frc) {
+  private GlyphVector getJustifiedGlyphVector(
+      int width, String str, Font font, FontRenderContext frc) {
     GlyphVector gv = font.createGlyphVector(frc, str);
     Rectangle2D r = gv.getVisualBounds();
-    float jwidth = (float) getWidth();
+    float jwidth = (float) width;
     float vwidth = (float) r.getWidth();
-    if (jwidth &lt; vwidth) {
+    if (jwidth &gt; vwidth) {
+      int num = gv.getNumGlyphs();
+      float xx = (jwidth - vwidth) / (float) (num - 1);
+      float xpos = num == 1 ? (jwidth - vwidth) * .5f : 0f;
+      Point2D gmPos = new Point2D.Double(0d, 0d);
+      for (int i = 0; i &lt; num; i++) {
+        GlyphMetrics gm = gv.getGlyphMetrics(i);
+        gmPos.setLocation(xpos, 0);
+        gv.setGlyphPosition(i, gmPos);
+        xpos += gm.getAdvance() + xx;
+      }
       return gv;
     }
-    float xx = (jwidth - vwidth) / (float) (gv.getNumGlyphs() - 1);
-    float xpos = 0f;
-    Point2D gmPos = new Point2D.Double(0d, 0d);
-    for (int i = 0; i &lt; gv.getNumGlyphs(); i++) {
-      GlyphMetrics gm = gv.getGlyphMetrics(i);
-      gmPos.setLocation(xpos, 0);
-      gv.setGlyphPosition(i, gmPos);
-      xpos = xpos + gm.getAdvance() + xx;
-    }
-    return gv;
+    return null;
   }
 }
 </code></pre>
@@ -181,7 +191,8 @@ class JustifiedLabel extends JLabel {
 </code></pre>
 
 ## 参考リンク
-- [TextLayout#getJustifiedLayout(float)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/TextLayout.html#getJustifiedLayout%28float%29)
+- [JTableのセル内文字列を両端揃えにする](http://ateraimemo.com/Swing/InterIdeographJustify.html)
+    - [TextLayout#getJustifiedLayout(float)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/TextLayout.html#getJustifiedLayout%28float%29)を使用して`JTable`のセルで両端揃えを行うサンプル
 
 <!-- dummy comment line for breaking list -->
 

@@ -19,7 +19,7 @@ comments: true
 table.getTableHeader().addMouseListener(new MouseAdapter() {
   @Override public void mouseClicked(MouseEvent e) {
     final RowSorter&lt;? extends TableModel&gt; sorter = table.getRowSorter();
-    if (sorter == null || sorter.getSortKeys().size() == 0) {
+    if (sorter == null || sorter.getSortKeys().isEmpty()) {
       return;
     }
     JTableHeader h = (JTableHeader) e.getComponent();

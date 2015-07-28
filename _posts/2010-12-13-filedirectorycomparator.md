@@ -29,8 +29,7 @@ class FileGroupComparator extends DefaultFileComparator {
   }
   @Override public int compare(File a, File b) {
     int flag = 1;
-    List&lt;? extends TableRowSorter.SortKey&gt; keys
-      = table.getRowSorter().getSortKeys();
+    List&lt;? extends TableRowSorter.SortKey&gt; keys = table.getRowSorter().getSortKeys();
     if (!keys.isEmpty()) {
       TableRowSorter.SortKey sortKey = keys.get(0);
       if (sortKey.getColumn() == column &amp;&amp;

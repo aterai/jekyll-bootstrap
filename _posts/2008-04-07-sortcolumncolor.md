@@ -31,14 +31,14 @@ comments: true
     return c;
   }
   private boolean isSortingColumn(int column) {
-    RowSorter sorter = getRowSorter();
-    if (sorter != null) {
-      List list = sorter.getSortKeys();
-      if (list.size() &gt; 0) {
-        RowSorter.SortKey key0 = (RowSorter.SortKey) list.get(0);
-        if (column == convertColumnIndexToView(key0.getColumn())) {
-          return true;
-        }
+    RowSorter&lt;? extends TableModel&gt; sorter = getRowSorter();
+    if (Objects.nonNull(sorter)) {
+      List&lt;? extends RowSorter.SortKey&gt; keys = sorter.getSortKeys();
+      if (keys.isEmpty()) {
+        return false;
+      }
+      if (column == convertColumnIndexToView(keys.get(0).getColumn())) {
+        return true;
       }
     }
     return false;

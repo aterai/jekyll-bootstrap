@@ -20,11 +20,11 @@ comments: true
       JTable table, Object value, boolean isSelected, boolean hasFocus,
       int row, int column) {
     String str = Objects.toString(value, "");
-    if (table.getRowSorter() != null) {
-      List&lt;?&gt; keys = table.getRowSorter().getSortKeys();
-      int max = keys.size();
-      for (int i = 0; i &lt; max; i++) {
-        TableRowSorter.SortKey sortKey = (TableRowSorter.SortKey) keys.get(i);
+    RowSorter&lt;? extends TableModel&gt; sorter = table.getRowSorter();
+    if (Objects.nonNull(sorter)) {
+      List&lt;? extends TableRowSorter.SortKey&gt; keys = sorter.getSortKeys();
+      for (int i = 0; i &lt; keys.size(); i++) {
+        TableRowSorter.SortKey sortKey = keys.get(i);
         if (column == sortKey.getColumn()) {
           String k = sortKey.getSortOrder() == SortOrder.ASCENDING ? "\u25B4 "
                                                                    : "\u25BE ";
