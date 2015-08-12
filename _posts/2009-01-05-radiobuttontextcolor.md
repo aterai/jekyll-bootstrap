@@ -35,7 +35,7 @@ comments: true
       setForeground(defaultColor);
     }
     super.fireStateChanged();
-  };
+  }
 //...
 </code></pre>
 
@@ -47,8 +47,8 @@ comments: true
 - - - -
 以下のような、`ChangeListener`を使用する方法もあります。
 
-<pre class="prettyprint"><code>radioButton.addChangeListener(new javax.swing.event.ChangeListener() {
-  @Override public void stateChanged(javax.swing.event.ChangeEvent e) {
+<pre class="prettyprint"><code>radioButton.addChangeListener(new ChangeListener() {
+  @Override public void stateChanged(ChangeEvent e) {
     ButtonModel model = radioButton.getModel();
     if (!model.isEnabled()) {
       radioButton.setForeground(Color.GRAY);

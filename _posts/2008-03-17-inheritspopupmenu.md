@@ -31,8 +31,7 @@ table.setInheritsPopupMenu(true);
     add(deleteAction);
   }
   @Override public void show(Component c, int x, int y) {
-    int[] l = table.getSelectedRows();
-    deleteAction.setEnabled(l != null &amp;&amp; l.length &gt; 0);
+    deleteAction.setEnabled(table.getSelectedRowCount() &gt; 0);
     super.show(c, x, y);
   }
 }

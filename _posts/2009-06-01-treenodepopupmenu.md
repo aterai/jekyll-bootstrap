@@ -30,11 +30,9 @@ comments: true
   @Override public void show(Component c, int x, int y) {
     JTree tree = (JTree) c;
     tsp = tree.getSelectionPaths();
-    if (tsp != null) {
-      TreePath path = tree.getPathForLocation(x, y);
-      if (path != null &amp;&amp; Arrays.asList(tsp).contains(path)) {
-        super.show(c, x, y);
-      }
+    TreePath path = tree.getPathForLocation(x, y);
+    if (path != null &amp;&amp; Arrays.asList(tsp).contains(path)) {
+      super.show(c, x, y);
     }
   }
 }

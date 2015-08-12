@@ -35,7 +35,9 @@ comments: true
 
 private void deleteActionPerformed(ActionEvent evt) {
   final int[] selection = table.getSelectedRows();
-  if (selection == null || selection.length &lt;= 0) return;
+  if (selection.length &lt;= 0) {
+    return;
+  }
   (new Timer(DELAY, new ActionListener() {
     int h = END_HEIGHT;
     @Override public void actionPerformed(ActionEvent e) {

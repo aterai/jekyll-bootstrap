@@ -19,7 +19,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSpinner`で指定した数値を`JComboBox#setMaximumRowCount(newValue);`で変更することができます。
+上記のサンプルでは、`JSpinner`で指定した数値を`JComboBox#setMaximumRowCount(newValue)`で設定することができます。
 
 - 注:
     - デフォルトの`JComboBox`最大表示項目数は、`8`で固定

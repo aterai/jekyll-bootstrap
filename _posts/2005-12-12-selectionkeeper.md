@@ -32,7 +32,6 @@ comments: true
 Vector saveSelectedRow(JTable table, int keyCol) {
   Vector list = new Vector();
   int[] ilist = table.getSelectedRows();
-  if (ilist == null || ilist.length &lt;= 0) return;
   TestModel model = (TestModel) tableModel;
   for (int i = ilist.length - 1; i &gt;= 0; i--) {
     list.add(model.getValueAt(modelIndex(ilist[i]), keyCol));
