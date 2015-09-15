@@ -7,6 +7,9 @@ tags: [JProgressBar, Animation]
 author: aterai
 pubdate: 2014-07-14T00:19:43+09:00
 description: JProgressBarが不確定状態の場合に描画するアニメーションパターンを変更します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2015/08/change-indeterminate-jprogressbar.html
+    lang: en
 comments: true
 ---
 ## 概要

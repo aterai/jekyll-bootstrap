@@ -7,6 +7,9 @@ tags: [JList, TransferHandler, DragAndDrop, BufferedImage]
 author: aterai
 pubdate: 2014-10-06T00:03:35+09:00
 description: JListのアイテムをドラッグ中に表示するイメージをカスタマイズしてTransferHandlerに設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2015/08/create-custom-drag-ghost-image.html
+    lang: en
 comments: true
 ---
 ## 概要

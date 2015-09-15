@@ -31,9 +31,9 @@ comments: true
     animator.start();
   }
   @Override public void paintComponent(Graphics g) {
-    Graphics2D g2d = (Graphics2D) g;
-    g2d.setPaint(getBackground());
-    g2d.fillRect(0, 0, getWidth(), getHeight());
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setPaint(getBackground());
+    g2.fillRect(0, 0, getWidth(), getHeight());
     if (direction &amp;&amp; alpha &lt; 10) {
       alpha = alpha + 1;
     } else if (!direction &amp;&amp; alpha &gt; 0) {
@@ -41,14 +41,15 @@ comments: true
     } else {
       animator.stop();
     }
-    g2d.setComposite(AlphaComposite.getInstance(
+    g2.setComposite(AlphaComposite.getInstance(
         AlphaComposite.SRC_OVER, 1f - alpha * .1f));
-    g2d.drawImage(icon1.getImage(), 0, 0,
+    g2.drawImage(icon1.getImage(), 0, 0,
         (int) icon1.getIconWidth(), (int) icon1.getIconHeight(), this);
-    g2d.setComposite(AlphaComposite.getInstance(
+    g2.setComposite(AlphaComposite.getInstance(
         AlphaComposite.SRC_OVER, alpha * .1f));
-    g2d.drawImage(icon2.getImage(), 0, 0,
+    g2.drawImage(icon2.getImage(), 0, 0,
         (int) icon2.getIconWidth(), (int) icon2.getIconHeight(), this);
+    g2.dispose();
   }
   @Override public void actionPerformed(ActionEvent e) {
     repaint();
