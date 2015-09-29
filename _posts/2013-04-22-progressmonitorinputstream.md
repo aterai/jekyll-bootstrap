@@ -87,8 +87,7 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
   }
   @Override public String doInBackground() {
     String ret = "Done";
-    try (BufferedReader r = new BufferedReader(new InputStreamReader(pmis, cs));
-         Scanner scanner = new Scanner(r)) {
+    try (Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(pmis, cs)))) {
       int i = 0;
       int size = 0;
       while (scanner.hasNextLine()) {
