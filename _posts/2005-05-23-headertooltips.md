@@ -18,8 +18,7 @@ comments: true
 <pre class="prettyprint"><code>JTableHeader header = new JTableHeader(table.getColumnModel()) {
   @Override public String getToolTipText(MouseEvent e) {
     int c = columnAtPoint(e.getPoint());
-    return getTable().getColumnName(c)
-      +"################################";
+    return getTable().getColumnName(c) + DUMMY_LONG_TEXT;
   }
 };
 table.setTableHeader(header);

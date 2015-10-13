@@ -50,6 +50,20 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+- メモ
+    - `ColumnHeader`には、`scroll.setColumnHeader(new JViewport());`とダミーの`JViewport`を設定しておかないと、`NullPointerException`が発生する
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>scroll.setOpaque(false);
+scroll.setBackground(alphaZero);
+scroll.getViewport().setOpaque(false);
+scroll.getViewport().setBackground(alphaZero);
+scroll.setColumnHeader(new JViewport()); // Dummy JViewport
+scroll.getColumnHeader().setOpaque(false);
+scroll.getColumnHeader().setBackground(alphaZero);
+</code></pre>
+
 ## 参考リンク
 - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)
 - [JTableHeaderを非表示にする](http://ateraimemo.com/Swing/RemoveTableHeader.html)

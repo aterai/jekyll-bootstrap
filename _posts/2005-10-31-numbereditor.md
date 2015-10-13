@@ -15,7 +15,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQecBWSoI/AAAAAAAAAfo/IOSdDmzOIBs/s800/NumberEditor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, 1, 0.01));
+<pre class="prettyprint"><code>JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, 1, .01));
 JSpinner.NumberEditor editor = new JSpinner.NumberEditor(spinner, "0%");
 editor.getTextField().setEditable(false);
 spinner.setEditor(editor);

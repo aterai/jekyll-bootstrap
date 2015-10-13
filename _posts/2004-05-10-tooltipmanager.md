@@ -25,8 +25,12 @@ offRadio.addActionListener(al);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ボタンにツールチップを設定してあり、表示するかどうかを`ToolTipManager`を使って切り替えています。
+上記のサンプルでは、`JButton#setToolTipText(...)`でボタンにツールチップを設定し、かつ表示するかどうかを`ToolTipManager`を使って切り替えています。
 
-`ToolTipManager`は、アプリケーション全体でのツールチップの表示時間、表示までの遅延時間などを設定することができます。
+- メモ
+    - コンポーネントに`setToolTipText(...)`メソッドで`null`以外が設定された場合、「表示する」がデフォルト
+    - `ToolTipManager`は、アプリケーション全体でのツールチップの表示時間、表示までの遅延時間などが設定可能
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
