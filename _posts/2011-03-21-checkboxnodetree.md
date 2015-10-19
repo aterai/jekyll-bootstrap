@@ -128,7 +128,6 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [CheckNode - JTree Examples 2](http://www.crionics.com/products/opensource/faq/swing_ex/JTreeExamples2.html)
 - [JTreeの葉ノードだけ編集可能にする](http://ateraimemo.com/Swing/LeafTreeCellEditor.html)
 - [JTreeのすべてのノードにJCheckBoxを追加する](http://ateraimemo.com/Swing/CheckBoxNodeEditor.html)
 

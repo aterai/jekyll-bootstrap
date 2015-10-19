@@ -39,7 +39,6 @@ col.setCellEditor(new DefaultCellEditor(cb));
 セルの表示にも`JComboBox`を使用する場合は、[JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)を参考に`JComboBox`を継承するセルレンダラーを使用してみてください。
 
 ## 参考リンク
-- [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples7.html)
 - [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
 - [JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)
 

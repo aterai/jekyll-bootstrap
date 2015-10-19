@@ -16,37 +16,39 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>int count = 0;
-StringTokenizer st = new StringTokenizer(textArea.getText(), "\n") ;
+StringTokenizer st = new StringTokenizer(textArea.getText(), "\n");
 while (st.hasMoreTokens()) {
-  if (st.nextToken().startsWith("#")) {
+  if (st.nextToken().codePointAt(0) == '#') {
     count++;
   }
 }
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTextArea#getText()`ですべてのテキストを取得し、`StringTokenizer`を使って行毎に分解しています。
+上記のサンプルでは、`JTextArea#getText()`ですべてのテキストを取得し、`StringTokenizer`を使って行毎に分解しています。`returnDelims`フラグが`false`なので、トークンが空行になることはありません。
 
 - - - -
 - `String#split`を使用する場合
+    - 空行あり
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>for (String line: textArea.getText().split("\\n")) {
-  if (line.startsWith("#")) {
+  if (!line.isEmpty() &amp;&amp; line.codePointAt(0) == '#') {
     count++;
   }
 }
 </code></pre>
 
 - `LineNumberReader`を使用する場合
+    - 空行あり
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>try (LineNumberReader lnr = new LineNumberReader(new StringReader(textArea.getText()))) {
   String line = null;
   while ((line = lnr.readLine()) != null) {
-    if (line.startsWith("#")) {
+    if (!line.isEmpty() &amp;&amp; line.codePointAt(0) == '#') {
       count++;
     }
   }
@@ -56,6 +58,7 @@ while (st.hasMoreTokens()) {
 </code></pre>
 
 - `Element#getElementCount`を使用する場合
+    - 空行なし(`Element`には少なくとも長さ`1`の改行が存在する)
 
 <!-- dummy comment line for breaking list -->
 
@@ -65,7 +68,7 @@ try {
   for (int i = 0; i &lt; root.getElementCount(); i++) {
     Element elem = root.getElement(i);
     String line = doc.getText(elem.getStartOffset(), elem.getEndOffset() - elem.getStartOffset());
-    if (line.startsWith("#")) {
+    if (line.codePointAt(0) == '#') {
       count++;
     }
   }

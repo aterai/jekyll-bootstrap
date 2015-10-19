@@ -84,7 +84,6 @@ scrollPane.getViewport().setBackground(Color.GREEN);
 </code></pre>
 
 ## 参考リンク
-- [JTable Examples](http://www.crionics.com/products/opensource/faq/swing_ex/JTableExamples1.html)
 - [Swing - excel styled table?](https://community.oracle.com/thread/1395446)
 - [JListのセルをカーソル移動でロールオーバー](http://ateraimemo.com/Swing/RollOverListener.html)
 

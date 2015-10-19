@@ -44,7 +44,7 @@ p.add(box, BorderLayout.EAST);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ドロップダウンリストを無効(表示させない)にした`JComboBox`と`2`つの`ArrowButton`を組み合わせて、`JSpinner`風のコンポーネントを作成しています。各アイテムの文字色は、`Html`の`<font>`タグを使って変更しています。
+上記のサンプルでは、ドロップダウンリストの表示を無効にした`JComboBox`と`2`つの`ArrowButton`を組み合わせて、`JSpinner`風のコンポーネントを作成しています。各アイテムの文字色は、`Html`の`<font>`タグを使って変更しています。
 
 - `BasicComboBoxUI#createArrowButton()`をオーバーライドして、`JComboBox`の元`ArrowButton`を非表示
     - [JComboBoxのArrowButtonを隠す](http://ateraimemo.com/Swing/HideComboArrowButton.html)

@@ -15,18 +15,16 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUsaUYVkI/AAAAAAAAAmc/34Qz14LqOGc/s800/TableSortIcon.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>UIManager.put("Table.ascendingSortIcon",  new IconUIResource(emptyIcon));
+<pre class="prettyprint"><code>Icon emptyIcon = new Icon() {
+  @Override public void paintIcon(Component c, Graphics g, int x, int y) {}
+  @Override public int getIconWidth()  { return 0; }
+  @Override public int getIconHeight() { return 0; }
+};
+UIManager.put("Table.ascendingSortIcon",  new IconUIResource(emptyIcon));
 UIManager.put("Table.descendingSortIcon", new IconUIResource(emptyIcon));
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`UIManager`を使用して、以下のようなサイズ`0`の`Icon`や、透過`png`画像などを`JTable`のヘッダに表示されるソートアイコンを変更しています。
-
-<pre class="prettyprint"><code>private static final Icon emptyIcon = new Icon() {
-  @Override public void paintIcon(Component c, Graphics g, int x, int y) {}
-  @Override public int getIconWidth()  { return 0; }
-  @Override public int getIconHeight() { return 0; }
-};
-</code></pre>
 
 ## コメント

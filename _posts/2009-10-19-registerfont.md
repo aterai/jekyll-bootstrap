@@ -20,19 +20,18 @@ GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(font);
 </code></pre>
 
 ## 解説
-- 1. `JLabel#setFont`メソッドでフォントを設定しています。
-- 2. 登録したフォントを`Html`タグで指定して使用しています。
+- `1`: `JLabel#setFont`メソッドでフォントを設定して使用
+- `2`: 登録したフォントを`Html`タグで指定して使用
     - `label.setText("<html><font size='+3' face='Burnstown Dam'>2: html,font,size,+3</font></html>");`
-- 3. `StyleSheet`で`body`タグのフォントを設定しています。
+- `3`: `StyleSheet`で`body`タグのフォントを設定して使用
     - `styleSheet.addRule("body {font-size: 24pt; font-family: Burnstown Dam;}");`
-- 4. `JTextPane#setFont`メソッドでフォントを設定しています。
-    - `body`タグで指定されているフォントを無視して、`JTextPane`のデフォルトのフォントを使用したい場合は、`editor.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);`としておく必要があります。
+- `4`: `JTextPane#setFont`メソッドでフォントを設定して使用
+    - `body`タグにデフォルトで指定されているフォントを無視して、`JTextPane`のデフォルトのフォントを使用したい場合は、`editor.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);`とする必要がある
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [creamundo | Fuentes Gratis TrueType TTF](http://www.creamundo.com/)
-    - こちらから`TrueType`フォントを利用しています。
 - [Fontをファイルから取得](http://ateraimemo.com/Swing/CreateFont.html)
 - [Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html)
 - [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
