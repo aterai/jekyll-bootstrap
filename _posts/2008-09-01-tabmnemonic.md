@@ -21,7 +21,7 @@ tab.setDisplayedMnemonicIndexAt(3, 0);
 </code></pre>
 
 ## 解説
-上記のサンプルコードは、`3`番目のタブに<kbd>Alt+B</kbd>でフォーカスが移動するように、`JTabbedPane#setMnemonicAt`メソッドを使用しています。
+上記のサンプルコードは、例えばタブタイトルの先頭文字が`B`のタブに<kbd>Alt+B</kbd>でフォーカスが移動するように、`JTabbedPane#setMnemonicAt`メソッドを使用して`Mnemonic`を設定しています。
 また、タブタイトルの先頭文字(`B`)にアンダーラインが入るように`JTabbedPane#setDisplayedMnemonicIndexAt`メソッドで設定しています。
 
 - - - -

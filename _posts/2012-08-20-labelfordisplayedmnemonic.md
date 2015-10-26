@@ -24,12 +24,18 @@ label.setLabelFor(textField);
 ## 解説
 上記のサンプルでは、`JLabel`に`setDisplayedMnemonic(...)`メソッドを使って、ニーモニックを設定し、`setLabelFor(...)`メソッドでニーモニックがアクティブになった時にフォーカス移動の対象となるコンポーネントを指定しています。
 
-- - - -
 - 編集不可の`JComboBox`などで、この方法ではフォーカスが移動しない？
     - <kbd>Tab</kbd>キーなどによるフォーカス移動や`JComboBox#requestFocusInWindow()`を実行した場合のようにならない
-    - [JLabel#setLabelFor(Component) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JLabel.html#setLabelFor%28java.awt.Component%29)
+- [JLabel#setLabelFor(Component) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JLabel.html#setLabelFor%28java.awt.Component%29)
     - 「ニーモニックがアクティブになったときに、`labelFor`プロパティーで指定されているコンポーネントの`requestFocus`メソッドを呼び出します。」
-- `JTextComponent`などのフォーカスアクセラレータ: [JTextComponent#setFocusAccelerator(char) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setFocusAccelerator%28char%29)
+- [JTextComponent#setFocusAccelerator(char) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setFocusAccelerator%28char%29)
+    - `JTextComponent`などに直接`JTextComponent#setFocusAccelerator(char)`でフォーカスアクセラレータキーを設定し、`JLabel#setLabelFor(Component)`の設定と競合する場合は？
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JLabel#setLabelFor(Component) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JLabel.html#setLabelFor%28java.awt.Component%29)
+- [JTextComponent#setFocusAccelerator(char) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setFocusAccelerator%28char%29)
 
 <!-- dummy comment line for breaking list -->
 

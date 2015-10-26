@@ -22,12 +22,14 @@ comments: true
 - `setMnemonic(...)`
     - `JTextField`の最初の文字を`JButton`の`Mnemonic`に設定
     - `JTextField`が空の場合は、`JButton`のラベルの先頭文字を`Mnemonic`に設定
+- `clear Mnemonic`
+    - `Mnemonic`にヌル文字(`\u0000`, `\0`, `0`)を設定して初期状態に戻す
+    - `button.setMnemonic('\0');`、`button.setMnemonic('\u0000');`と同様
 
 <!-- dummy comment line for breaking list -->
 
-- `clear Mnemonic`
-    - `Mnemonic`に`0`を設定して初期状態に戻す
-    - `button.setMnemonic(0);`
+## 参考リンク
+- [AbstractButton#setMnemonic(int) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setMnemonic-int-)
 
 <!-- dummy comment line for breaking list -->
 

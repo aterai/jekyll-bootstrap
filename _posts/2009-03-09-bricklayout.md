@@ -19,25 +19,35 @@ comments: true
 panel.setBorder(BorderFactory.createTitledBorder("Brick Layout"));
 GridBagConstraints c = new GridBagConstraints();
 c.fill = GridBagConstraints.HORIZONTAL;
-//c.weightx = 1.0; c.weighty = 0.0;
-for (int i = 0; i &lt; SIZE; i++) {
-  int x = i &amp; 1; //= (i % 2 == 0) ? 0 : 1;
-  for (int j = 0; j &lt; SIZE; j++) {
-    c.gridy = i;
-    c.gridx = 2 * j + x;
-    c.gridwidth = 2;
+c.gridy = GridBagConstraints.RELATIVE;
+for (int y = 0; y &lt; YSIZE; y++) {
+  ////c.gridy = GridBagConstraints.RELATIVE; //c.gridy = y;
+  //int d = y &amp; 0b1; //= y % 2 == 0 ? 0 : 1; //start x offset
+  //if (d == 1) {
+  //  c.gridwidth = 1;
+  //  c.gridx = 0;
+  //  panel.add(new JButton("a"), c);
+  //}
+  c.gridx = y &amp; 0b1; //start x offset
+  c.gridwidth = WIDTH;
+  for (int x = 0; x &lt; XSIZE; x++) {
     panel.add(new JButton(" "), c);
+    c.gridx += WIDTH;
   }
+  //if (d == 0) {
+  //  c.gridwidth = 1;
+  //  panel.add(new JButton("c"), c);
+  //}
 }
-//&lt;blockquote cite="https://community.oracle.com/thread/1357310"&gt;
+//GridBagLayout to create a board
+//https://community.oracle.com/thread/1357310
 //&lt;dummy-row&gt;
 c.gridwidth = 1;
-c.gridy = 10;
-for (c.gridx = 0; c.gridx &lt;= 2 * SIZE; c.gridx++) {
+//c.gridy = GridBagConstraints.REMAINDER;
+for (c.gridx = 0; c.gridx &lt;= WIDTH * XSIZE; c.gridx++) {
   panel.add(Box.createHorizontalStrut(24), c);
 }
 //&lt;/dummy-row&gt;
-//&lt;/blockquote&gt;
 </code></pre>
 
 ## 解説

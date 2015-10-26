@@ -44,7 +44,8 @@ class TwoRowsCellRenderer extends JPanel implements TableCellRenderer {
     String text     = Objects.toString(value, "");
     String first    = text;
     String second   = "";
-    int columnWidth = table.getColumnModel().getColumn(column).getWidth();
+    //int columnWidth = table.getColumnModel().getColumn(column).getWidth();
+    int columnWidth = table.getCellRect(0, column, false).width;
     int textWidth   = 0;
     for (int i = 0; i &lt; text.length(); i++) {
       textWidth += fm.charWidth(text.charAt(i));
@@ -64,8 +65,28 @@ class TwoRowsCellRenderer extends JPanel implements TableCellRenderer {
 ## 解説
 `JLabel`を上下に配置した`JPanel`を使って、`TableCellRenderer`を作成しています。`...`での省略は、二行目の`JLabel`のデフォルト動作です。
 
+- - - -
+- 補助文字(サロゲートペアなど)を含む文字列を扱う場合は、`String#charAt(int)`ではなく、`String#codePointAt(int)`や`Character.charCount(codePoint)`などを使用する必要がある
+    - 参考: [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>int i = 0;
+while (i &lt; text.length()) {
+  int cp = text.codePointAt(i);
+  textWidth += fm.charWidth(cp);
+  if (textWidth &gt; columnWidth) {
+    first  = text.substring(0, i);
+    second = text.substring(i);
+    break;
+  }
+  i += Character.charCount(cp);
+}
+</code></pre>
+
 ## 参考リンク
 - [JLabelの文字列を折り返し](http://ateraimemo.com/Swing/GlyphVector.html)
+- [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
 
 <!-- dummy comment line for breaking list -->
 

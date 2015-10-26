@@ -26,14 +26,12 @@ table.getRowSorter().setSortKeys(
 ## 解説
 上記のサンプルでは、`RowSorter#setSortKeys(...)`を使って、指定の列のソート順序(ここでは、`0`列目を`SortOrder.DESCENDING`で降順)のリストを設定しています。
 
-- - - -
-- `RowSorter#setSortKeys(null)`で、ソート無し状態になる
-    - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
+- メモ
+    - `table.getRowSorter().toggleSortOrder(index)`を一回で昇順、二回で降順に設定する方法もある
+    - `RowSorter#setSortKeys(null)`で、ソート無し状態になる
+        - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
-
-- - - -
-`table.getRowSorter().toggleSortOrder(index)`を一回で昇順、二回で降順に設定する方法もあります。
 
 ## 参考リンク
 - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)

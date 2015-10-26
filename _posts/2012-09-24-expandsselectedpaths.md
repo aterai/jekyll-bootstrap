@@ -19,11 +19,13 @@ comments: true
 </code></pre>
 
 ## 解説
+上記のサンプルでは、マウスによるノード選択ではなく、`JTree#addSelectionPath(TreePath)`などによるノード選択が行われた場合、そのノードまでのパスを展開するかどうかを、`JTree#setExpandsSelectedPaths(...)`メソッドを使って切り替えるテストを行っています。
+
 - `JTree#setExpandsSelectedPaths(false);`
-    - ノード選択を変更しても親パスを展開しない
+    - ノード選択を変更しても親パスが閉じている場合は展開しない
 - `JTree#setExpandsSelectedPaths(true);`
     - デフォルト(`JDK 1.3`から)
-    - マウスによる選択ではない、`JTree#addSelectionPath(TreePath)`などによるノード選択が行われた場合、選択されたノードまでのパスをすべて展開して可視化(スクロールはしない)
+    - 選択されたノードまでのパスをすべて展開して可視化(スクロールはしない)
 
 <!-- dummy comment line for breaking list -->
 

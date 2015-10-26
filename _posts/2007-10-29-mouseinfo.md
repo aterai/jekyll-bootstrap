@@ -40,8 +40,8 @@ public MainPanel() {
 
 1. `10`ミリ秒ごとに`MouseInfo`から`PointerInfo`を取得
 1. `PointerInfo`から画面上でのポインタ座標を取得
-1. `SwingUtilities.convertPointFromScreen`メソッドで、これをパネル相対のポインタ座標に変換
-1. ラケットに変換した座標を与えて、`repaint`
+1. `SwingUtilities.convertPointFromScreen`メソッドで、これをパネル相対の座標に変換
+1. ラケットに変換した座標を与えて`JPanel#repaint()`メソッドで再描画
 
 ## 参考リンク
 - [J2SE 5.0 Tiger 虎の穴 マウスの位置](http://www.javainthebox.net/laboratory/J2SE1.5/GUI/MouseLocation/MouseLocation.html)

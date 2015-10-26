@@ -19,7 +19,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`JDK 1.5.0`以上の場合、`UIManager.put("FileChooser.readOnly", Boolean.TRUE)`とすることで、簡単に`JFileChooser`でのファイル名の変更や新規フォルダの作成を禁止することができます。
+`JDK 1.5.0`以上の場合、`UIManager.put("FileChooser.readOnly", Boolean.TRUE)`とすることで、`JFileChooser`をリードオンリーにし、ファイル名の変更や新規フォルダの作成などを禁止することができます。
 
 ## 参考リンク
 - [Swing - disabling "rename" on JFileChooser](https://community.oracle.com/thread/1377535)
