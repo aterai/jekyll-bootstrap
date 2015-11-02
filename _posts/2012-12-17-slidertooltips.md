@@ -7,6 +7,9 @@ tags: [JSlider, JWindow, JToolTip]
 author: aterai
 pubdate: 2012-12-17T00:06:15+09:00
 description: JSliderのノブをドラッグ中にToolTipでその現在値を表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2015/10/display-tooltip-while-dragging-jslider.html
+    lang: en
 comments: true
 ---
 ## 概要

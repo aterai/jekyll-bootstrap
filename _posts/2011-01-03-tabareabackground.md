@@ -31,11 +31,16 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JPanel`タブの`JCheckBox`で`JTabbedPane`を不透明にしたり、`JComboBox`でキーを指定し、`UIManager.put("TabbedPane.unselectedBackground",  Color.GREEN);`などとして色を変更することができます。
+上記のサンプルでは、`UIManager.put("TabbedPane.unselectedBackground",  Color.GREEN);`などを利用して、タブエリアの背景色などを変更することができます。
 
-- - - -
-タブ文字色は、`JTabbedPane#setForegroundAt(...)`メソッドを使用して切り替えています。
+- メモ
+    - `JPanel`タブ内に配置されている`JCheckBox`で、`JTabbedPane`を不透明に設定可能
+    - `JPanel`タブ内に配置されている`JComboBox`で、`TabbedPane.tabAreaBackground`などのキーを指定し、その色を変更することが可能
+- タブ文字色は、`JTabbedPane#setForegroundAt(...)`メソッドを使用して切り替え
 
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
 - [JTabbedPaneの選択文字色を変更](http://ateraimemo.com/Swing/ColorTab.html)
 - [JTabbedPaneのタブ文字列をハイライト](http://ateraimemo.com/Swing/TabTitleHighlight.html)
 

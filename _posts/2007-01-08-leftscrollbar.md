@@ -25,14 +25,11 @@ add(scroll, BorderLayout.CENTER);
 </code></pre>
 
 ## 解説
-- 水平スクロールバーを右から左に
-    - パネルのレイアウトを、`BorderLayout`にして、`JScrollPane`をそのパネルの中央(`BorderLayout.CENTER`)に追加し、`JScrollPane#setComponentOrientation`メソッドで、`ComponentOrientation.RIGHT_TO_LEFT`を設定しています。
-
-<!-- dummy comment line for breaking list -->
-
-- 垂直スクロールバーを下から上に
-    - `JScrollPane#getHorizontalScrollBar()`メソッドでスクロールバーを取得し、パネルレイアウトを使って`JScrollPane`の上部(`BorderLayout.NORTH`)に配置されているように見せかけています。
-    - 左上隅の余白は、`Box.createHorizontalStrut`(縦スクロールバーの幅)です。
+- 水平スクロールバーを右から左に移動
+    - パネルのレイアウトを、`BorderLayout`にして、`JScrollPane`をそのパネルの中央(`BorderLayout.CENTER`)に追加し、`JScrollPane#setComponentOrientation`メソッドで、`ComponentOrientation.RIGHT_TO_LEFT`を設定
+- 垂直スクロールバーを下から上に移動
+    - `JScrollPane#getHorizontalScrollBar()`メソッドでスクロールバーを取得し、パネルレイアウトを使って`JScrollPane`の上部(`BorderLayout.NORTH`)に配置されているように表示
+    - 左上隅の余白は、`Box.createHorizontalStrut`(縦スクロールバーの幅)
 
 <!-- dummy comment line for breaking list -->
 
@@ -45,6 +42,6 @@ add(scroll, BorderLayout.CENTER);
 
 ## コメント
 - グッド -- *a1* 2008-12-26 (金) 13:52:59
-    - どうも -- [aterai](http://ateraimemo.com/aterai.html)
+    - どうもです。 -- [aterai](http://ateraimemo.com/aterai.html)
 
 <!-- dummy comment line for breaking list -->

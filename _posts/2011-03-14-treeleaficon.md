@@ -6,11 +6,11 @@ title: JTreeのOpenIcon、ClosedIcon、LeafIconを変更
 tags: [JTree, Icon, TreeCellRenderer]
 author: aterai
 pubdate: 2011-03-14T15:52:42+09:00
-description: JTreeのOpenIcon、ClosedIcon、LeafIconの表示表示を切り替えます。
+description: JTreeのOpenIcon、ClosedIcon、LeafIconの表示を切り替えます。
 comments: true
 ---
 ## 概要
-`JTree`の`OpenIcon`、`ClosedIcon`、`LeafIcon`の表示表示を切り替えます。
+`JTree`の`OpenIcon`、`ClosedIcon`、`LeafIcon`の表示を切り替えます。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TX24gbN5bHI/AAAAAAAAA30/l8Pn8nUfJiA/s800/TreeLeafIcon.png %}
 
