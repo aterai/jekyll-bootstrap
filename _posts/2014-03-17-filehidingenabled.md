@@ -18,11 +18,9 @@ comments: true
 <pre class="prettyprint"><code>chooser = new JFileChooser();
 JPopupMenu pop = searchPopupMenu(chooser);
 pop.addSeparator();
-JCheckBoxMenuItem mi = new JCheckBoxMenuItem(
-    new AbstractAction("isFileHidingEnabled") {
+JCheckBoxMenuItem mi = new JCheckBoxMenuItem(new AbstractAction("isFileHidingEnabled") {
   @Override public void actionPerformed(ActionEvent e) {
-    chooser.setFileHidingEnabled(
-        ((JCheckBoxMenuItem) e.getSource()).isSelected());
+    chooser.setFileHidingEnabled(((JCheckBoxMenuItem) e.getSource()).isSelected());
   }
 });
 mi.setSelected(chooser.isFileHidingEnabled());

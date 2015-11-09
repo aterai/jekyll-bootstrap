@@ -19,7 +19,13 @@ comments: true
 </code></pre>
 
 ## 解説
-各プラットフォームのデスクトップデザインに対応したシステムカラーは、`SystemColor`クラスの`static`フィールドにまとめて定義されています。例えば、`Windows`プラットフォームでデスクトップのカスタマイズでテーマなどを変更すると、この`SystemColor`も動的にその変更に追従します(`LookAndFeel`の変更では変化しない)。
+各プラットフォームのデスクトップデザインに対応したシステムカラーは、`SystemColor`クラスの`static`フィールドにまとめて定義されています。例えば、`Windows`プラットフォームでデスクトップのカスタマイズでテーマなどを変更すると、この`SystemColor`も動的にその変更に追従します。
+
+- メモ
+    - `SystemColor`は`LookAndFeel`の変更では変化しない
+    - `GTKLookAndFeel`がシステムデフォルトになる環境では`SystemColor`を取得することが出来ない
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [システムカラー](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/SystemColor.html)
@@ -27,6 +33,3 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `GTK`の環境でその`SystemColor`を取得することは出来ないようです。`UIManager`を使った方がいいかもしれません。 -- *aterai* 2007-05-07 (月) 17:04:59
-
-<!-- dummy comment line for breaking list -->

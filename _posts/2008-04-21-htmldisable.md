@@ -21,7 +21,7 @@ label1.setToolTipText("&lt;html&gt;&amp;lt;html&amp;gt;&amp;lt;font color=red&am
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLabel`などに`putClientProperty("html.disable", Boolean.TRUE)`を設定することで、タグをレンダリングせずにそのまま文字列として表示しています。
+上記のサンプルでは、`JLabel`などに`putClientProperty("html.disable", Boolean.TRUE)`を設定することで、`<html>`タグとしてレンダリングせずにそのまま文字列として表示しています。
 
 - - - -
 `JLabel`に、`putClientProperty("html.disable", Boolean.TRUE)`としても、その `JLabel`の`JToolTip`には反映されないので、`<html>`タグの中で文字実体参照を使っています。

@@ -19,10 +19,15 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DynamicLayout`にチェックするとウィンドウのリサイズなどに応じて内部のレイアウトを再評価するように、`DefaultToolkit`の`setDynamicLayout`メソッドを使って`DynamicLayout`の設定をしています。
+上記のサンプルでは、`JCheckBox`をチェックすると`DefaultToolkit`の`setDynamicLayout`メソッドを使って`DynamicLayout`の設定を切り替えています。
 
-- - - -
-`OS`などが、この機能をサポートしているかどうかは、以下のメソッドで調べることができます。
+- `DynamicLayout`: `false`
+    - ウィンドウのリサイズが完了してから、内部コンテナのレイアウトを静的に評価する
+- `DynamicLayout`: `true`
+    - ウィンドウのリサイズに応じて、内部コンテナのレイアウトを動的に評価する
+    - `OS`が、この動的レイアウト機能をサポートしているかどうかは、以下のメソッドで調べることが可能
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>Toolkit.getDefaultToolkit().getDesktopProperty("awt.dynamicLayoutSupported");
 </code></pre>

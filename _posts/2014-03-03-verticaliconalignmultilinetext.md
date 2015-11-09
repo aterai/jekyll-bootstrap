@@ -52,7 +52,7 @@ comments: true
     - フォントサイズなどが大きくなると、チェックアイコンが上に飛び出しているように見えてしまう
 - 右: `First line center`
     - `WindowsCheckBoxUI#paint(...)`などをオーバーライドし、一行目の中央にチェックアイコンの中心が揃うように設定
-    - `<html>aa<font size="+5">bb</font>cc...</html>`のような一部の文字サイズを大きくしたようなテキストを設定しても行の中央に揃えることが可能
+    - `<html>aa<font size="+5">bb</font>cc...</html>`のような一部の文字サイズを大きくしたテキストを設定しても行の中央に揃えることが可能
 
 <!-- dummy comment line for breaking list -->
 

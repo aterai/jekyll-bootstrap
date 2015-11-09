@@ -20,7 +20,7 @@ comments: true
 
 ## 解説
 - `WindowsLookAndFeel`の場合、`UIManager.getBoolean("MenuItem.disabledAreNavigable")`のデフォルトは`true`で、`Disabled`な`JMenuItem`でもハイライトが可能
-- `MetalLookAndFeel`の場合、`UIManager.getBoolean("MenuItem.disabledAreNavigable")`のデフォルトは`false`だが、`UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`とすれば、`Disabled`な`JMenuItem`でもハイライトが可能になる
+- `MetalLookAndFeel`の場合、`UIManager.getBoolean("MenuItem.disabledAreNavigable")`のデフォルトは`false`だが、`UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`とすれば、`Disabled`な`JMenuItem`でもハイライトが可能
 
 <!-- dummy comment line for breaking list -->
 

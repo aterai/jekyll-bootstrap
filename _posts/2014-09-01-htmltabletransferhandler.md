@@ -43,7 +43,6 @@ comments: true
         cols = table.getSelectedColumns();
       } else {
         int colCount = table.getColumnCount();
-
         cols = new int[colCount];
         for (int counter = 0; counter &lt; colCount; counter++) {
           cols[counter] = counter;
@@ -73,7 +72,7 @@ comments: true
             htmlBuf.append("  &lt;td&gt;&lt;time&gt;" + v + "&lt;/time&gt;&lt;/td&gt;\n");
           } else  if (obj instanceof Color) {
             htmlBuf.append(String.format(
-                "  &lt;td style='background-color:#%06x'&gt;&amp;nbsp;&lt;/td&gt;%n",
+                "  &lt;td style='background-color:#%06X'&gt;&amp;nbsp;&lt;/td&gt;%n",
                 ((Color) obj).getRGB() &amp; 0xffffff));
           } else {
             htmlBuf.append("  &lt;td&gt;" + Objects.toString(obj, "") + "&lt;/td&gt;\n");

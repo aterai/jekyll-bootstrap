@@ -55,12 +55,7 @@ public void addTab(String title, final Component content) {
 </code></pre>
 
 ## 解説
-`JDK 6`で追加された以下の機能を使用しています。
-
-- `SwingWorker`
-- `JTabbedPane`のタブにコンポーネントを配置
-
-<!-- dummy comment line for breaking list -->
+上記のサンプルでは、`JDK 6`で追加された`JTabbedPane`のタブにコンポーネントを配置する機能を使用して、`JProgressBar`をタブ内に追加し、コンテナ読み込みの進捗を表示しています。
 
 ## 参考リンク
 - [SwingWorkerを使った処理の中断と進捗状況表示](http://ateraimemo.com/Swing/SwingWorker.html)

@@ -26,17 +26,17 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、デフォルトではすべて再生しないように設定されている聴覚フィードバックを、`JOptionPane`でダイアログを開いた時には有効になるように変更しています。
+上記のサンプルでは、デフォルトではすべて再生しないように設定されている聴覚フィードバックを、`JOptionPane`でダイアログを開いた場合は有効になるように変更しています。
 
 - `showMessageDialog1`
     - `LookAndFeel`デフォルトの音が鳴る(`LookAndFeel`にデフォルトの音が無い場合は鳴らない)
-    - `WindowsLookAndFeel`では、「コントロールパネル」「サウンドとオーディオデバイスのプロパティ」で、プログラムイベントが設定されている場合は鳴る
+    - `WindowsLookAndFeel`では、「コントロールパネル」「サウンドとオーディオデバイスのプロパティ」で、プログラムイベントが設定されている場合は音が鳴る
 
 <!-- dummy comment line for breaking list -->
 
 - `showMessageDialog2`
     - `wav`ファイルで音を鳴らす
-    - `UIManager.put("AuditoryCues.playList", UIManager.get("AuditoryCues.noAuditoryCues"))`として、二重に鳴らないようにしている
+    - `UIManager.put("AuditoryCues.playList", UIManager.get("AuditoryCues.noAuditoryCues"))`として、二重に鳴らないように制限
 
 <!-- dummy comment line for breaking list -->
 
