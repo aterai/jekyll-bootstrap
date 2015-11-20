@@ -34,18 +34,14 @@ check.addItemListener(new ItemListener() {
 </code></pre>
 
 ## 解説
-- このサンプルでは、`Disable Scrolling`をチェックして無効状態にすると
-    - スクロールバーを取得し、`JScrollBar#setEnabled(boolean)`メソッドを使って、これを無効にします。
-    - `JScrollPane#setWheelScrollingEnabled(boolean)`メソッドで、マウスホイールによるスクロールを無効にします。
-    - `JScrollPane`に配置したコンポーネントを`setEnabled(false)`とし、フォーカスの移動などによるスクロールを無効にします。
-
-<!-- dummy comment line for breaking list -->
-
-- - - -
-- このサンプルでは、`Disable Scrolling`をチェックして無効状態にしても
-    - `JTableHeader`は無効にしていないので、クリックしてソートや、カラムの移動を行うことができます。
-    - `JScrollPane`に設定した`JPopupMenu`を表示することができます。
-    - `JTable`に設定した`JToolTip`を表示することができます。
+- `Disable Scrolling`をチェックして無効状態にする
+    - スクロールバーを取得し、`JScrollBar#setEnabled(boolean)`メソッドを使って、これを無効化
+    - `JScrollPane#setWheelScrollingEnabled(boolean)`メソッドで、マウスホイールによるスクロールを無効化
+    - `JScrollPane`に配置したコンポーネントを`setEnabled(false)`とし、フォーカスの移動などによるスクロールを無効化
+- `Disable Scrolling`をチェックして無効状態にしても実行可能な操作
+    - `JTableHeader`は無効にしていないので、クリックしてソートや、カラムの移動を行うことが可能
+    - `JScrollPane`に設定した`JPopupMenu`を表示することが可能
+    - `JTable`に設定した`JToolTip`を表示することが可能
 
 <!-- dummy comment line for breaking list -->
 

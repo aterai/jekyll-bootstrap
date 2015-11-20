@@ -34,9 +34,9 @@ header.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTableHeader`にマウスリスナーを追加し、`JTableHeader#columnAtPoint(Point)`メソッドを使って、クリックされた`Column`を取得するようになっています。
+上記のサンプルでは、`JTableHeader`に`MouseListener`を追加し、`JTableHeader#columnAtPoint(Point)`メソッドを使って、マウスでクリックされた位置にある`Column`を取得しています。
 
-`Column`全体の選択は、`changeSelection`メソッドを二回使用することで行っています。
+`Column`全体の選択は、`changeSelection`メソッドを二回使用することで実現しています。
 
 ## 参考リンク
 - [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)

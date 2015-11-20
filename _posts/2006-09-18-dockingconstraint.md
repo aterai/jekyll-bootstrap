@@ -36,14 +36,14 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JToolBar`は上下のみドッキングできるようになっているため、`JComboBox`のような横長のコンポーネントを配置している場合でもレイアウトが崩れにくくなっています。
+上記のサンプルでは、`JToolBar`は上下にのみドッキングできるようになっているため、`JComboBox`のような横長のコンポーネントを配置している場合でもレイアウトが崩れにくくなっています。
 
 `ToolBarUI#canDock(Component, Point)`メソッドをオーバーライドして、左右の場合は`false`を返すようにしています。
 
 ドッキングできるかどうかを判定している`BasicToolBarUIのgetDockingConstraint`メソッドが`private`のため、サンプルコードでは、これをコピーしてすこしだけ条件を変更した`isHorizontalDockingConstraint`メソッドを作成しています。
 
 - - - -
-`BorderLayout`の`WEST`と`EAST`に、適当なダミーコンポーネント(例えばサイズ`0`の`Box`)を配置するだけで、同様にドッキングをブロック出来るようです。こちらの方が、`LookAndFeel`への影響もなく簡単です。
+`BorderLayout`の`WEST`と`EAST`に、適当なダミーコンポーネント(例えばサイズ`0`の`Box`)を配置するだけで、`LookAndFeel`を変更しなくてもドッキングを制限することができます。
 
 <pre class="prettyprint"><code>JPanel panel = new JPanel(new BorderLayout());
 panel.add(toolbar, BorderLayout.NORTH);

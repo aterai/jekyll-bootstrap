@@ -18,12 +18,12 @@ comments: true
 <pre class="prettyprint"><code>visitAll(menubar, new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
     if (check.isSelected()) {
-      ((AbstractButton) e.getSource()).doClick();
+      ((AbstractButton) e.getComponent()).doClick();
     }
   }
   @Override public void mouseEntered(MouseEvent e) {
     if (check.isSelected()) {
-      ((AbstractButton) e.getSource()).doClick();
+      ((AbstractButton) e.getComponent()).doClick();
     }
   }
 });

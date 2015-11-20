@@ -138,6 +138,6 @@ protected static TreeModel getDefaultTreeModel() {
 </code></pre>
 
 - `JTree#getNextMatch(...)`は、展開されているノードのみ検索する？ -- *aterai* 2010-11-18 (木) 01:40:07
-- 一致するノードが複数ある場合、ボタンクリックで選択状態がループするように変更しました(いつ修正したのかは不明...)。 -- *aterai* 2011-09-15 (木) 21:32:23
+- 一致するノードが複数ある場合、ボタンクリックで選択状態がループするように変更。 -- *aterai* 2011-09-15 (木) 21:32:23
 
 <!-- dummy comment line for breaking list -->

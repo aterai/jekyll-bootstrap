@@ -26,7 +26,7 @@ expandedState = tree.getExpandedDescendants(rootPath);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#getExpandedDescendants(TreePath)`メソッドで展開されているノードの`TreePath`を`Enumeration`で保存しています。復元は一旦すべてのノードを折り畳んでから、`JTree#expandPath(TreePath)`で`Enumeration<TreePath>`から取得したノードを展開しています。
+上記のサンプルでは、`JTree#getExpandedDescendants(TreePath)`メソッドを使用して、展開されているノードの`TreePath`を`Enumeration`に保存しています。復元は一旦すべてのノードを折り畳んでから、`JTree#expandPath(TreePath)`メソッドを使用して`Enumeration<TreePath>`から取得したノードを展開しています。
 
 - 注:
     - 親ノードが閉じている場合、その子ノードの展開状態は記憶していない

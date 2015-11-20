@@ -55,7 +55,7 @@ am.put(key, new TextAction(key) {
 ## 解説
 上記のサンプルでは、以下の二点を変更して、`Beep`音の設定を変更しています。
 
-- `TextAction(DefaultEditorKit.deleteNextCharAction)#actionPerformed(ActionEvent)`などをオーバーライドして、<kbd>Delete</kbd>キーや<kbd>Back Space</kbd>キーで文字の削除がなくても、`Beep`音を鳴らさないように変更したアクションを`ActionMap`に設定
+- `TextAction(DefaultEditorKit.deleteNextCharAction)#actionPerformed(ActionEvent)`メソッドなどをオーバーライドして、<kbd>Delete</kbd>キーや<kbd>Back Space</kbd>キーで文字の削除がなくても、`Beep`音を鳴らさないように変更したアクションを`ActionMap`に設定
 - `5`文字以上入力できないように制限し、超える場合は`Beep`音を鳴らす`DocumentFilter`を作成して、`AbstractDocument#setDocumentFilter(DocumentFilter)`で設定
 
 <!-- dummy comment line for breaking list -->

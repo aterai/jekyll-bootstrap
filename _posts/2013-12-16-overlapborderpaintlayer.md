@@ -24,7 +24,7 @@ comments: true
       g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                           RenderingHints.VALUE_ANTIALIAS_ON);
 
-      Rectangle r = new Rectangle(0, 0, c.getWidth(), c.getHeight());
+      Rectangle r = new Rectangle(c.getWidth(), c.getHeight());
       Area area = new Area(r);
       area.subtract(new Area(shape));
       g2.setClip(area);

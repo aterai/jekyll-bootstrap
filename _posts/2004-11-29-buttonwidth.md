@@ -78,6 +78,7 @@ comments: true
     - `GridLayout`で幅指定、`BoxLayout`で右寄せ
     - `GridLayout`ですべての`JButton`のサイズを同じにする
     - `Box`で入れ子にして右寄せ
+    - 幅が最大の`JButton`のテキストが変更されると、親の`Box`の幅が変化してしまう
 
 <!-- dummy comment line for breaking list -->
 
