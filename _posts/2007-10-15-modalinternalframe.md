@@ -149,7 +149,8 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 - `JFrame`のシステムメニューはブロックできない
 - モーダルにした`JInternalFrame`のシステムメニューは表示されない
     - ただし表示されないだけで、クリックしてからカーソル移動やダブルクリックなどが動いてしまう
-- モーダルにした`JInternalFrame`の右上の閉じるボタンの`JToolTip`が`JDesktopPane`内で表示される場合、空白になる ~~`JDK 6`では`JToolTip`は表示されない~~
+- モーダルにした`JInternalFrame`の右上の閉じるボタンの`JToolTip`が`JDesktopPane`内で表示される場合、空の`JToolTip`が背面に表示される
+    - `UIManager.put("InternalFrame.titleButtonToolTipsOn", Boolean.FALSE);`で非表示にすることが可能
 
 <!-- dummy comment line for breaking list -->
 

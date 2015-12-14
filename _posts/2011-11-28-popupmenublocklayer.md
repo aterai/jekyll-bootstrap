@@ -36,7 +36,7 @@ comments: true
     }
     super.uninstallUI(c);
   }
-  @Override public void eventDispatched(AWTEvent e, JLayer l) {
+  @Override public void eventDispatched(AWTEvent e, JLayer&lt;? extends JComponent&gt; l) {
     if (isBlocking &amp;&amp; e instanceof InputEvent) {
       ((InputEvent) e).consume();
     }
@@ -46,7 +46,7 @@ comments: true
     firePropertyChange(CMD_REPAINT, isBlocking, flag);
     isBlocking = flag;
   }
-  @Override public void applyPropertyChange(PropertyChangeEvent pce, JLayer l) {
+  @Override public void applyPropertyChange(PropertyChangeEvent pce, JLayer&lt;? extends JComponent&gt; l) {
     String cmd = pce.getPropertyName();
     if (CMD_REPAINT.equals(cmd)) {
       l.getGlassPane().setVisible((Boolean) pce.getNewValue());

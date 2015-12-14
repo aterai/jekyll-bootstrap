@@ -15,33 +15,42 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH_tpIbsI/AAAAAAAAASE/DrHgihVbnn0/s800/BasicComboPopup.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JComboBox combo = new JComboBox(strArray);
-BasicComboPopup popup = new BasicComboPopup(combo) {
-  @Override public boolean isFocusable() {
-    return true;
+<pre class="prettyprint"><code>class EditorComboPopup extends BasicComboPopup {
+  private final JTextComponent textArea;
+  private transient MouseAdapter listener;
+  protected EditorComboPopup(JTextComponent textArea, JComboBox cb) {
+    super(cb);
+    this.textArea = textArea;
   }
-  private MouseAdapter listener = null;
   @Override protected void installListListeners() {
     super.installListListeners();
     listener = new MouseAdapter() {
       @Override public void mouseClicked(MouseEvent e) {
         hide();
-        System.out.println(comboBox.getSelectedItem());
-        append((String) combo.getSelectedItem());
+        String str = (String) comboBox.getSelectedItem();
+        try {
+          Document doc = textArea.getDocument();
+          doc.insertString(textArea.getCaretPosition(), str, null);
+        } catch (BadLocationException ex) {
+          ex.printStackTrace();
+        }
       }
     };
-    if (listener != null) {
+    if (Objects.nonNull(list)) {
       list.addMouseListener(listener);
     }
   }
   @Override public void uninstallingUI() {
-    if (listener != null) {
+    if (Objects.nonNull(listener)) {
       list.removeMouseListener(listener);
       listener = null;
     }
     super.uninstallingUI();
   }
-};
+  @Override public boolean isFocusable() {
+    return true;
+  }
+}
 </code></pre>
 
 ## 解説

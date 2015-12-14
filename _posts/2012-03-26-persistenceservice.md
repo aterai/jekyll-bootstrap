@@ -134,6 +134,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import javax.swing.*;
 
 public class MainPanel extends JPanel {
@@ -142,7 +143,7 @@ public class MainPanel extends JPanel {
     super(new BorderLayout());
     JTextArea textArea = new JTextArea();
     try (Reader fr = new InputStreamReader(
-        new FileInputStream(PROPERTIES_XML), "UTF-8")) {
+        new FileInputStream(PROPERTIES_XML), StandardCharsets.UTF_8)) {
       textArea.read(fr, "File");
     } catch (Exception ex) {
       ex.printStackTrace();

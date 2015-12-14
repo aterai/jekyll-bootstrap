@@ -57,8 +57,9 @@ comments: true
 ## 解説
 このサンプルでは、[java - File Browser GUI - Stack Overflow](http://stackoverflow.com/questions/6182110/file-browser-gui)のディレクトリ表示部分を抜き出して、ルートパーティション(`Windows`の場合、`Desktop`フォルダ)をルートノードにして`JTree`で表示しています。
 
-- - - -
-クリックされたノードがディレクトリだった場合、子ファイルの検索と`JTree`へのそれらの追加が`SwingWorker`を使って別々のスレッドで行われます。
+- 　クリックされたノードがディレクトリの場合、子ファイルの検索と`JTree`へのそれらの追加を`SwingWorker`を使用して別スレッドで実行する
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [FileSystemView (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/filechooser/FileSystemView.html)

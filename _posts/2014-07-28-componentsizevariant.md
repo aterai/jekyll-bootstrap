@@ -19,7 +19,7 @@ comments: true
 </code></pre>
 
 ## 解説
-- `NimbusLookAndFeel`を使用している場合、`JComponent#putClientProperty("JComponent.sizeVariant", "mini");`のように、クライアントプロパティを設定することで、その表示サイズを変更可能
+- `NimbusLookAndFeel`を使用している場合、`JComponent#putClientProperty("JComponent.sizeVariant", "mini");`のように、クライアントプロパティを設定することで、コンポーネントの表示サイズを変更することができる
     - デフォルトは`regular`、その他は小さい順に`mini`, `small`, `large`が設定可能
     - `JComponent#updateUI()`を実行しないと、更新されない
         - このサンプルでは、`SwingUtilities.updateComponentTreeUI(window);`で実行

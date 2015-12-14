@@ -19,7 +19,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane#setContinuousLayout(false)`で、`JSplitPane`の`Divider`がドラッグ中の場合に、`Divider`の移動先を示す矩形の色を変更しています。
+上記のサンプルでは、`JSplitPane#setContinuousLayout(false)`を使用して、`JSplitPane`の`Divider`がドラッグ中の場合に`Divider`の移動先を示す矩形の色を変更しています。
 
 - - - -
 ドラッグ中ではない`Divider`の色は、`LookAndFeel`によっては、以下のような方法で変更することができます。

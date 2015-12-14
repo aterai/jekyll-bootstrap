@@ -15,13 +15,15 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ8wQD77I/AAAAAAAAAVM/Ade6cu49JUQ/s800/ComboPopupWidth.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class MinWidthPopupMenuListener implements PopupMenuListener {
-  private static final int POPUP_MIN_WIDTH = 320;
-  private boolean adjusting = false;
+<pre class="prettyprint"><code>class WidePopupMenuListener implements PopupMenuListener {
+  private static final int POPUP_MIN_WIDTH = 300;
+  private boolean adjusting;
   @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
     JComboBox combo = (JComboBox) e.getSource();
-    Dimension size  = combo.getSize();
-    if (size.width &gt;= POPUP_MIN_WIDTH) return;
+    Dimension size = combo.getSize();
+    if (size.width &gt;= POPUP_MIN_WIDTH) {
+      return;
+    }
     if (!adjusting) {
       adjusting = true;
       combo.setSize(POPUP_MIN_WIDTH, size.height);

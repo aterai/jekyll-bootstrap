@@ -15,42 +15,55 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQ0y2U6WI/AAAAAAAAAgM/AAHllQ3_VHw/s800/PaintPanel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class PaintPanel extends JPanel
-                 implements MouseMotionListener, MouseListener {
-  private Point startPoint = new Point(-10, -10);
-  private Point p = new Point(-10, -10);
-  public PaintPanel() {
-    super();
-    addMouseMotionListener(this);
-    addMouseListener(this);
+<pre class="prettyprint"><code>class PaintPanel extends JPanel {
+  private static final Stroke STROKE = new BasicStroke(
+    3f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
+  private transient List&lt;Shape&gt; list;
+  private transient Path2D.Double path;
+  private transient MouseAdapter handler;
+  @Override public void updateUI() {
+    removeMouseMotionListener(handler);
+    removeMouseListener(handler);
+    super.updateUI();
+    handler = new MouseAdapter() {
+      @Override public void mousePressed(MouseEvent e) {
+        path = new Path2D.Double();
+        list.add(path);
+        Point p = e.getPoint();
+        path.moveTo(p.x, p.y);
+        repaint();
+      }
+      @Override public void mouseDragged(MouseEvent e) {
+        Point p = e.getPoint();
+        path.lineTo(p.x, p.y);
+        repaint();
+      }
+    };
+    addMouseMotionListener(handler);
+    addMouseListener(handler);
+    list = new ArrayList&lt;Shape&gt;();
   }
-  @Override public void paintComponent(Graphics g) {
-    //super.paintComponent(g);
-    Graphics2D g2d = (Graphics2D) g.create();
-    g2d.setStroke(new BasicStroke(3f));
-    g2d.setPaint(Color.BLACK);
-    g2d.drawLine(startPoint.x, startPoint.y, p.x, p.y);
-    g2d.dispose();
-    startPoint = p;
+  @Override protected void paintComponent(Graphics g) {
+    super.paintComponent(g);
+    if (list != null) {
+      Graphics2D g2 = (Graphics2D) g.create();
+      g2.setPaint(Color.BLACK);
+      g2.setStroke(STROKE);
+      for (Shape s : list) {
+        g2.draw(s);
+      }
+      g2.dispose();
+    }
   }
-  @Override public void mouseDragged(MouseEvent e) {
-    p = e.getPoint();
-    repaint();
-  }
-  @Override public void mouseMoved(MouseEvent e)    {}
-  @Override public void mouseExited(MouseEvent e)   {}
-  @Override public void mouseEntered(MouseEvent e)  {}
-  @Override public void mouseReleased(MouseEvent e) {}
-  @Override public void mouseClicked(MouseEvent e)  {}
 }
 </code></pre>
 
 ## 解説
 上記のサンプルでは、パネル上でマウスがドラッグされた場合、その軌跡を短い直線でつなぎ合わせることで、曲線を描画しています。
 
-- マウスがクリックされた場所を始点にする
-- ドラッグされた時の位置を終点にしてパネルを`repaint()`
-- `paintComponent(...)`をオーバーライドして、上記の始点、終点で直線を描画
+- 新規`Path2D`を生成し、マウスがクリックされた場所を始点(`Path2D.moveTo(...)`)に設定
+- ドラッグされた時の位置を終点(`Path2D.lineTo(...)`)にしてパネルを`repaint()`
+- `paintComponent(...)`をオーバーライドして、上記の直線のリスト(`Path2D`のリスト)を描画
 - 次の直線のための始点を現在の終点に変更
 
 <!-- dummy comment line for breaking list -->

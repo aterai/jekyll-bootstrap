@@ -10,7 +10,7 @@ description: JSliderの数値テキストラベルの値を変更した場合、
 comments: true
 ---
 ## 概要
-JSliderの数値テキストラベルの値を変更した場合、その位置やサイズが正しく描画されるように更新を行うメソッドを実行します。
+`JSlider`の数値テキストラベルの値を変更した場合、その位置やサイズが正しく描画されるように更新を行うメソッドを実行します。
 
 {% download https://lh5.googleusercontent.com/-xP4QgpDpRec/VOn2C7a0GLI/AAAAAAAANxQ/HQ3F4rVgoUI/s800/UpdateSliderLabel.png %}
 

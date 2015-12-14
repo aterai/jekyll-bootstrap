@@ -34,26 +34,15 @@ try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStrea
 
 - 注:
     - `TableModel`は、別途、[JTableのモデルをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/PersistenceDelegate.html)を使用
-    - ヘッダカラムの幅や順序には対応していない
+    - このサンプルでは、ヘッダカラムの幅や順序には対応していない
         - メモ: [JTable Inhalte speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_Inhalte_speichern)
-        - または、以下のような`DefaultPersistenceDelegate`を使ってヘッダカラムの幅や順序を保存する方法がある
+        - または、[TableColumnModelをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/ColumnModelPersistence.html)のような`DefaultPersistenceDelegate`を使ってヘッダカラムの幅や順序を保存する方法がある
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>class DefaultTableColumnModelPersistenceDelegate extends DefaultPersistenceDelegate {
-  @Override protected void initialize(Class&lt;?&gt; type, Object oldInstance, Object newInstance, Encoder encoder) {
-    super.initialize(type, oldInstance, newInstance, encoder);
-    DefaultTableColumnModel m = (DefaultTableColumnModel) oldInstance;
-    for (int col = 0; col &lt; m.getColumnCount(); col++) {
-      Object[] o = {m.getColumn(col)};
-      encoder.writeStatement(new Statement(oldInstance, "addColumn", o));
-    }
-  }
-}
-</code></pre>
-
 ## 参考リンク
 - [JTableのモデルをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/PersistenceDelegate.html)
+- [TableColumnModelをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/ColumnModelPersistence.html)
 
 <!-- dummy comment line for breaking list -->
 

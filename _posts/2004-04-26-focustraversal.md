@@ -54,7 +54,7 @@ frame.setFocusTraversalPolicy(policy);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`FocusTraversalPolicy`を使用することで、キー入力によるフォーカスの移動を制御しています。また、ラジオボタンで以下のような`FocusTraversalPolicy`に切り替えることができます。
+上記のサンプルでは、`FocusTraversalPolicy`を使用することで、キー入力によるフォーカスの移動を制御しています。また、`JRadioButton`で以下のような`FocusTraversalPolicy`に切り替えることができます。
 
 - `Default`
     - `JPanel`のデフォルトは、`null`

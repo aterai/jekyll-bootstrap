@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>jtp.addMouseMotionListener(new MouseMotionAdapter() {
   @Override public void mouseMoved(MouseEvent e) {
-    JTabbedPane source = (JTabbedPane) e.getSource();
+    JTabbedPane source = (JTabbedPane) e.getComponent();
     int tgt = source.indexAtLocation(e.getX(), e.getY());
     for (int i = 0; i &lt; source.getTabCount(); i++) {
       source.setForegroundAt(i, i == tgt ? Color.GREEN : Color.BLACK);

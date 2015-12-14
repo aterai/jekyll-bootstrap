@@ -24,7 +24,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane`のサイズが決まった後(例えば`JFrame#pack()`や、`JFrame#setSize(int,int)`などした後)で、`JSplitPane#setDividerLocation(0.5);`を使用し、ディバイダを中央に配置しています。
+上記のサンプルでは、`JSplitPane`のサイズが決まった後(例えば`JFrame#pack()`や、`JFrame#setSize(int,int)`などした後)で、`JSplitPane#setDividerLocation(0.5);`を使用することで、ディバイダを中央に配置しています。
 
 - `JSplitPane#setDividerLocation(double)`
     - ディバイダ自身の幅(`JSplitPane#getDividerSize()`)は含まれない

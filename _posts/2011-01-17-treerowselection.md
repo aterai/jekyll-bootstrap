@@ -92,6 +92,7 @@ comments: true
 - 不透明にした`TreeCellRenderer`を使用して、ノードの選択色を`JTree#paintComponent(...)`の背景色と同じものに変更
 - 別コンポーネントにフォーカスが移動した場合、`LeadSelection`の`Border`を描画しない(選択背景色で上書き)ように設定
     - デフォルトではノードのみ再描画されるので、`FocusListener`を追加して、`JTree`全体を再描画
+    - `UIManager.put("Tree.repaintWholeRow", Boolean.TRUE);`を設定することでも回避可能
 
 <!-- dummy comment line for breaking list -->
 
@@ -99,6 +100,8 @@ comments: true
 - [JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)
 - [Highlight a node's descendants in JTree - Santhosh Kumar's Weblog](http://jroller.com/santhosh/entry/highlight_a_node_s_descendants)
     - via: [Swing - JTree - highlight entire row on selection](https://community.oracle.com/thread/2160338)
+- [NimbusLookAndFeelでJTreeのセル選択を行全体ではなくノードに限定する](http://ateraimemo.com/Swing/TreeCellSelectionBackground.html)
+    - こちらは逆に、`NimbusLookAndFeel`で行全体の選択を行わないようにする方法
 
 <!-- dummy comment line for breaking list -->
 

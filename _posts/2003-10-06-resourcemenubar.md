@@ -182,9 +182,9 @@ public Action[] getActions() {
       }
       if (stream != null) {
         //BufferedInputStream bis = new BufferedInputStream(stream);
-        Reader r = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
-        bundle = new PropertyResourceBundle(r);
-        r.close();
+        try (Reader r = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
+          bundle = new PropertyResourceBundle(r);
+        }
       }
     }
     return bundle;

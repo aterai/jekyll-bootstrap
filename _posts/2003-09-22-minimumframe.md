@@ -58,6 +58,7 @@ frame.addComponentListener(new ComponentAdapter() {
 import java.awt.event.*;
 import javax.swing.*;
 public class MaximumSizeTest {
+  private static final int MAX = 500;
   public static void main(String[] args) {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
@@ -65,7 +66,6 @@ public class MaximumSizeTest {
       }
     });
   }
-  private static final int MAX = 500;
   public static void createAndShowGUI() {
     final JFrame frame = new JFrame();
     frame.setMinimumSize(new Dimension(240, 120));

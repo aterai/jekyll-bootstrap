@@ -39,7 +39,7 @@ comments: true
 ## 解説
 - `Edit: setHeaderValue`
     - `TableColumn#getHeaderValue()`でカラム名を取得して、`TableColumn#setHeaderValue(String)`で変更
-    - モデルの`ColumnIdentifier`は、変更されない
+    - カラムモデルの`ColumnIdentifier`は、変更されない
 - `Edit: setColumnIdentifiers`
     - `DefaultTableModel#setColumnIdentifiers(Object[])`でモデルの列識別子を置き換え、`JTableHeader`を作り直しているため、列の入れ替えなどは初期化される
     - ドラッグ中のカラムが存在する状態で、`DefaultTableModel#setColumnIdentifiers(Object[])`を実行すると、`ArrayIndexOutOfBoundsException: -1`が発生する

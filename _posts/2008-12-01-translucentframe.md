@@ -40,14 +40,14 @@ comments: true
     SynthStyle s = wrappedFactory.getStyle(c, id);
     //if (id == Region.INTERNAL_FRAME_TITLE_PANE||id == Region.INTERNAL_FRAME) {
     if (id == Region.INTERNAL_FRAME) {
-      s = new TranslucentSynthSytle(s);
+      s = new TranslucentSynthStyle(s);
     }
     return s;
   }
 }
-class TranslucentSynthSytle extends SynthStyle {
+class TranslucentSynthStyle extends SynthStyle {
   private final SynthStyle style;
-  public TranslucentSynthSytle(SynthStyle s) {
+  public TranslucentSynthStyle(SynthStyle s) {
     style = s;
   }
   @Override public SynthPainter getPainter(final SynthContext context) {

@@ -18,16 +18,18 @@ comments: true
 <pre class="prettyprint"><code>JLabel label = new JLabel() {
   BasicStroke dashedStroke;
   @Override protected void paintComponent(Graphics g) {
-    Graphics2D g2 = (Graphics2D) g.create();
-    super.paintComponent(g2);
+    super.paintComponent(g);
     if (dashedStroke == null) {
       dashedStroke = new BasicStroke(
           5f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 10f,
           getDashArray(), 0f);
     }
+    Insets i = getInsets();
+    int w = getWidth();
+    int h = getHeight() / 2;
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.setStroke(dashedStroke);
-    g2.drawLine(5, label.getHeight() / 2,
-                label.getWidth() - 10, label.getHeight() / 2);
+    g2.drawLine(i.left, h, w - i.right, h);
     g2.dispose();
   }
 };

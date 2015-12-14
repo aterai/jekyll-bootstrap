@@ -45,7 +45,8 @@ comments: true
     //xe.flush();
     //xe.close();
   }
-  try (Reader r = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))) {
+  try (Reader r = new BufferedReader(new InputStreamReader(
+                  new FileInputStream(file), StandardCharsets.UTF_8))) {
     textArea.read(r, "temp");
   }
 } catch (IOException ex) {
@@ -77,6 +78,8 @@ comments: true
     - [Using XMLEncoder](http://www.oracle.com/technetwork/java/persistence4-140124.html)
 - [JTable Inhalte speichern – Byte-Welt Wiki](http://ateraimemo.com/http://wiki.byte-welt.net/wiki/JTable_speichern.html)
 - [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://ateraimemo.com/Swing/PersistenceService.html)
+- [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](http://ateraimemo.com/Swing/SortKeyPersistence.html)
+- [TableColumnModelをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/ColumnModelPersistence.html)
 
 <!-- dummy comment line for breaking list -->
 

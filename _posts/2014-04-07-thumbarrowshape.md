@@ -25,7 +25,7 @@ comments: true
     - 矢印型に変化するかどうかは、`LookAndFeel`による
         - `NimbusLookAndFeel`では、目盛り表示ありの場合でも矢印型にはならないが、`Slider.paintThumbArrowShape`で三角形になる
     - `WindowsLookAndFeel`でつまみが小さすぎる場合に使用可
-        - `slider.putClientProperty("Slider.minimumHorizontalSize", new Dimension(30, 30));`などは効果がない
+        - `slider.putClientProperty("Slider.minimumHorizontalSize", new Dimension(30, 30));`を設定してもサイズは変化しない
     - `slider.setPaintTicks(true);`だけ使用する場合と異なり、目盛り表示領域の余白がない
 
 <!-- dummy comment line for breaking list -->

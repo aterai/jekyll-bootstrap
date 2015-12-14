@@ -16,8 +16,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>final URL url = getClass().getResource("SurrogatePair.html");
-try {
-  editor1.read(new InputStreamReader(url.openStream(), "UTF-8"), "html");
+try (Reader reader = new InputStreamReader(url.openStream(), StandardCharsets.UTF_8)) {
+  editor1.read(reader , "html");
 } catch (Exception ex) {
   editor1.setText(
     "&lt;html&gt;&lt;p&gt;(&amp;#xD85B;&amp;#xDE40;) (&amp;#x26E40;)&lt;br /&gt;(&amp;#xD842;&amp;#xDF9F;) (&amp;#x00020B9F;)&lt;/p&gt;&lt;/html&gt;");

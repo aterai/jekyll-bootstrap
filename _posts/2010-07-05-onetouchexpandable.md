@@ -20,23 +20,16 @@ splitPane.setOneTouchExpandable(true);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane#setOneTouchExpandable(true)`と設定することで、ディバイダに`JButton`が表示され、これらをクリックすることでディバイダを展開、収納することができるようになっています。
+上記のサンプルでは、`JSplitPane#setOneTouchExpandable(true)`と設定することで、ディバイダに`JButton`が表示され、これらをクリックすることで`JSplitPane`を展開、収納することができます。
 
-- - - -
-`Java 1.5`以降で`JSplitPane#setDividerLocation(0);`などとしてディバイダを収納状態にした場合、`JSplitPane`自体をリサイズすると収納されているコンポーネントの最小サイズ(`setMinimumSize`)まで展開されてしまいます。
-
-- 収納状態を維持したい場合、リフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行したり、`Divider`に表示されている`JButton`を取得実行する方法があります。
+- `Java 1.5`以降で`JSplitPane#setDividerLocation(0);`などとしてディバイダを収納状態にした場合、`JSplitPane`自体をリサイズすると収納されているコンポーネントの最小サイズ(`setMinimumSize`)まで展開される
+- 収納状態を維持したい場合、リフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行したり、`Divider`に表示されている`JButton`を取得実行する方法がある
     - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
     - [JSplitPaneの収納状態を維持する](http://ateraimemo.com/Swing/KeepHiddenDivider.html)
-
-<!-- dummy comment line for breaking list -->
-
-- - - -
-<kbd>HOME</kbd>キーや<kbd>END</kbd>キー(<kbd>F8</kbd>キーなどで`Divider`にフォーカスを移動した状態で)を押して展開、収納する方法では、`Divider`中の`JButton`を押して展開、収納した場合と動作が異なります。
-
-- <kbd>HOME</kbd>キー、<kbd>END</kbd>キーで展開、収納
-    - 前回の状態に一旦戻らずに展開、収納される
-    - `JSplitPane`自体をリサイズすると、収納されているコンポーネントの最小サイズ(`setMinimumSize`)まで勝手に展開される
+- <kbd>HOME</kbd>キーや<kbd>END</kbd>キー(<kbd>F8</kbd>キーなどで`Divider`にフォーカスを移動した状態で)を押して展開、収納する方法では、`Divider`中の`JButton`を押して展開、収納した場合と動作が異なる
+    - <kbd>HOME</kbd>キー、<kbd>END</kbd>キーで展開、収納
+        - 前回の状態に一旦戻らずに展開、収納される
+        - `JSplitPane`自体をリサイズすると、収納されているコンポーネントの最小サイズ(`setMinimumSize`)まで勝手に展開される
         - `JSplitPane#getActionMap()#get("selectMin")`などで取得できる`Action`では、`setKeepHidden(boolean)`が使われていない
 
 <!-- dummy comment line for breaking list -->

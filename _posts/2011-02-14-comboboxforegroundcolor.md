@@ -50,7 +50,7 @@ comments: true
 
 ## 解説
 - 上: `Default`
-    - セルレンダラはデフォルト
+    - デフォルトのセルレンダラを使用
 - 中: `setForeground`
     - `ListCellRenderer`で`JList`の選択時文字色(`JList#setSelectionForeground`)、選択時背景色(`JList#setSelectionBackground`)を変更
     - `XPStyle.getXP()!=null`な`Windows LookAndFeel`や、`Motif LookAndFeel`の場合、フィールド部分の非選択時文字色は、`JComboBox`の文字色(`getForeground()`)が使用されるため、セルレンダラで、`JComboBox#setForeground(Color)`を使用

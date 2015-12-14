@@ -130,12 +130,14 @@ comments: true
     - ~~`JList`などの選択でも、つまみの描画が乱れる~~
         - ~~`ListSelectionListener`や、`FocusListener`を追加して再描画することで回避~~
     - `JScrollPane#isOptimizedDrawingEnabled()`が`false`を返すようにオーバーライドして回避
-    - 横スクロールバーの表示に未対応
+    - このサンプルでは、横スクロールバーの表示、カラムヘッダの表示に未対応
+        - [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](http://ateraimemo.com/Swing/OverlappedScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - ["Optimized" Drawing - Painting in AWT and Swing](http://www.oracle.com/technetwork/java/painting-140037.html)
+- [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](http://ateraimemo.com/Swing/OverlappedScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 

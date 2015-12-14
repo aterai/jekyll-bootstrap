@@ -50,8 +50,8 @@ r.putClientProperty("Nimbus.Overrides", d);
 ## 参考リンク
 - [Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)
     - `NimbusLookAndFeel`のプロパティ一覧
-- [javax.swing.plaf.nimbus (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/plaf/nimbus/package-summary.html)
-    - [NimbusStyle (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/plaf/nimbus/NimbusStyle.html)
+- [javax.swing.plaf.nimbus (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/nimbus/package-summary.html)
+    - [NimbusStyle (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/nimbus/NimbusStyle.html)
 
 <!-- dummy comment line for breaking list -->
 
