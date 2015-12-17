@@ -53,7 +53,7 @@ comments: true
     return isDropable;
   }
   @Override public int getSourceActions(JComponent c) {
-    return MOVE; //TransferHandler.COPY_OR_MOVE;
+    return TransferHandler.MOVE; //TransferHandler.COPY_OR_MOVE;
   }
   @Override public boolean importData(TransferSupport info) {
     if (!canImport(info)) {

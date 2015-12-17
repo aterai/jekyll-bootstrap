@@ -22,7 +22,7 @@ comments: true
   @Override public int getSourceActions(JComponent c) {
     System.out.println("getSourceActions");
     if (!(c instanceof JList)) {
-      return NONE;
+      return TransferHandler.NONE;
     }
     JList source = (JList) c;
     Point pt;
@@ -38,7 +38,7 @@ comments: true
     if (pt != null) {
       setDragImageOffset(pt);
     }
-    return MOVE; //TransferHandler.COPY_OR_MOVE;
+    return TransferHandler.MOVE; //TransferHandler.COPY_OR_MOVE;
   }
   private static BufferedImage createDragImage(JList source) {
     int w = source.getWidth();

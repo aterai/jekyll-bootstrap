@@ -93,7 +93,7 @@ comments: true
     return null;
   }
   @Override public int getSourceActions(JComponent c) {
-    return COPY;
+    return TransferHandler.COPY;
   }
 }
 </code></pre>

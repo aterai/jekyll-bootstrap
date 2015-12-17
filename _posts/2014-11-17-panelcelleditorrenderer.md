@@ -104,7 +104,8 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     - [JTableのCellEditorに設定したJComboBoxに余白を追加する](http://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
 - 右: `JPanel` + `JLabel` + `JButton`
     - `TableCellEditor`, `TableCellRenderer`に`JLabel`と`2`つの`JButton`を配置した`JPanel`を使用
-    - `JPanel`には`FlowLayout`を指定(カラム幅が狭くなって、折り返しが発生してもセルの高さは一定)
+    - `JPanel`には`FlowLayout`を指定
+        - カラム幅が狭くなって折り返しが発生しても、セルの高さは変化しないので、コンポーネントが見切れてしまう
     - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->

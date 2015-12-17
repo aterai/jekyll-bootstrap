@@ -24,8 +24,17 @@ comments: true
 </code></pre>
 
 ## 解説
-モデルが`DefaultTableModel`を継承しているなら、`setRowCount(0)`ですべての行を削除することができます。この場合、モデルを作り直している訳ではないので、カラムの幅などは削除する前と同じ値を保っています。
+- `TableModel`が`DefaultTableModel`を継承している場合、`model.setRowCount(0)`ですべての行を削除することが可能
+- 空の`TableModel`を`JTable`に設定することでも、行の全削除を行うことが可能だが、ヘッダモデルの再作成が発生し、カラム幅や順番などが初期化されてしまう
+    - `JTable#setAutoCreateColumnsFromModel(false)`とカラムをモデルから自動生成しないようにしておけば、`TableModel`を入れ替えても、列幅などは保存される
 
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>table.setAutoCreateColumnsFromModel(false);
+table.setModel(new DefaultTableModel());
+</code></pre>
+
+- - - -
 `DefaultTableModel`を継承していない場合は、モデルに以下の要領(詳細は`DefaultTableModel.java`のソースを参照)で行を全削除するメソッドを実装します。
 
 <pre class="prettyprint"><code>public void clear() {
@@ -35,13 +44,6 @@ comments: true
   fireTableRowsDeleted(0, size - 1);
   //fireTableDataChanged();
 }
-</code></pre>
-
-- - - -
-`JTable#setAutoCreateColumnsFromModel(false)`とカラムをモデルから自動生成しないようにしておけば、`TableModel`を入れ替えても、上記の方法と同様に既存の列幅などはそのまま残ります。
-
-<pre class="prettyprint"><code>table.setAutoCreateColumnsFromModel(false);
-table.setModel(new DefaultTableModel());
 </code></pre>
 
 ## 参考リンク

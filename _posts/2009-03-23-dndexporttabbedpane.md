@@ -46,7 +46,7 @@ comments: true
     if (!support.isDrop() || !support.isDataFlavorSupported(localObjectFlavor)) {
       return false;
     }
-    support.setDropAction(MOVE);
+    support.setDropAction(TransferHandler.MOVE);
     DropLocation tdl = support.getDropLocation();
     Point pt = tdl.getDropPoint();
     DnDTabbedPane target = (DnDTabbedPane) support.getComponent();
@@ -109,12 +109,12 @@ comments: true
     if (glassPane == null) {
       c.getRootPane().setGlassPane(glassPane = new GhostGlassPane(src));
     }
-    if (src.dragTabIndex &lt; 0) return NONE;
+    if (src.dragTabIndex &lt; 0) return TransferHandler.NONE;
     glassPane.setImage(makeDragTabImage(src));
     source = src;
     //setDragImage(img); //java 1.7.0-ea-b84
     glassPane.setVisible(true);
-    return MOVE;
+    return TransferHandler.MOVE;
   }
   @Override public boolean importData(TransferSupport support) {
     System.out.println("importData");

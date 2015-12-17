@@ -61,7 +61,7 @@ dragSource.createDefaultDragGestureRecognizer(label,
 
 <pre class="prettyprint"><code>label.setTransferHandler(new TransferHandler() {
   @Override public int getSourceActions(JComponent c) {
-    return COPY_OR_MOVE;
+    return TransferHandler.COPY_OR_MOVE;
   }
   @Override protected Transferable createTransferable(JComponent c) {
     File tmpfile = getFile();

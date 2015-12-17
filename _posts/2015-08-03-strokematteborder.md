@@ -39,8 +39,8 @@ comments: true
                           RenderingHints.VALUE_ANTIALIAS_ON);
       g2.translate(x, y);
 
-      int s = (int)(.5f + size);
-      int sd2 = (int)(.5f + size / 2d);
+      int s = (int) (.5f + size);
+      int sd2 = (int) (.5f + size / 2d);
       if (insets.top &gt; 0) {
         g2.drawLine(0, sd2, width - s, sd2);
       }
