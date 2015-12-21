@@ -142,7 +142,7 @@ comments: true
     - `dispose();`と同じ
     - `dispose()`されるので、この後`windowClosed`が呼び出される
 - `WindowConstants.EXIT_ON_CLOSE`
-    - `windowClosing`が呼ばれた後で`JVM`がシャットダウンれさる
+    - `windowClosing`が呼ばれた後で`JVM`がシャットダウンされる
     - `System.exit(0);`と同じ
     - `dispose()`されないので、`windowClosed`は呼び出されない
 

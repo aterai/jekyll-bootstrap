@@ -41,6 +41,7 @@ col.setCellEditor(new DefaultCellEditor(cb));
 ## 参考リンク
 - [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
 - [JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)
+- [JComboBoxセルエディタのドロップダウンリストを編集開始直後は表示しないよう設定する](http://ateraimemo.com/Swing/CellEditorTogglePopup.html)
 
 <!-- dummy comment line for breaking list -->
 

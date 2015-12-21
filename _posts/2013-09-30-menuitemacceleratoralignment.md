@@ -67,7 +67,7 @@ comments: true
 
 ## 解説
 - `Defalut`
-    - デフォルト、`WindowsLoolAndFeel`の場合でも、`Accelerator`は左寄せで表示される
+    - デフォルトでは、`WindowsLoolAndFeel`の場合でも、`Accelerator`は左寄せで表示される
 - `RightAcc`
     - `BasicMenuItemUI#paintMenuItem(...)`メソッドをオーバーライドして、`JMenuItem`の`Accelerator`を左寄せではなく、右寄せで表示
     - `Web Start`で実行すると`java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.swing")`と例外が発生してメニューが表示されない

@@ -55,13 +55,13 @@ comments: true
   private List&lt;MenuContext&gt; makeMenuList() {
     return Arrays.asList(
       new MenuContext("BLACK",   Color.BLACK),
-      new MenuContext("BLUE",  Color.BLUE),
-      new MenuContext("CYAN",  Color.CYAN),
+      new MenuContext("BLUE",  　Color.BLUE),
+      new MenuContext("CYAN",  　Color.CYAN),
       new MenuContext("GREEN",   Color.GREEN),
       new MenuContext("MAGENTA", Color.MAGENTA),
       new MenuContext("ORANGE",  Color.ORANGE),
-      new MenuContext("PINK",  Color.PINK),
-      new MenuContext("RED",   Color.RED),
+      new MenuContext("PINK",  　Color.PINK),
+      new MenuContext("RED",   　Color.RED),
       new MenuContext("YELLOW",  Color.YELLOW));
   }
   @Override public void actionPerformed(ActionEvent e) {

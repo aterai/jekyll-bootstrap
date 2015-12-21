@@ -18,7 +18,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-aY1o9VhHFWI/UpHzycRD8gI/AAAAAAAAB64/jaFbU_zn7hI/s800/ButtonsInMenuItem.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static JMenuItem makeEditMenuItem(final JPanel edit) {
+<pre class="prettyprint"><code>private static JMenuItem makeEditMenuItem(final JComponent edit) {
   JMenuItem item = new JMenuItem("Edit") {
     @Override public Dimension getPreferredSize() {
       Dimension d = super.getPreferredSize();
@@ -35,18 +35,12 @@ comments: true
 
   GridBagConstraints c = new GridBagConstraints();
   item.setLayout(new GridBagLayout());
-  c.gridheight = 1;
-  c.gridwidth  = 1;
-  c.gridy = 0;
-  c.gridx = 0;
+  c.anchor  = GridBagConstraints.LINE_END;
+  c.weightx = 1d;
 
-  c.weightx = 1.0;
   c.fill = GridBagConstraints.HORIZONTAL;
   item.add(Box.createHorizontalGlue(), c);
-  c.gridx = 1;
   c.fill = GridBagConstraints.NONE;
-  c.weightx = 0.0;
-  c.anchor = GridBagConstraints.EAST;
   item.add(edit, c);
 
   return item;
