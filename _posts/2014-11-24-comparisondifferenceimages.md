@@ -37,7 +37,7 @@ private static int[] getData(ImageIcon imageIcon, int w, int h) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、以下の手順で同じサイズの画像からそれぞれのピクセル配列を取得し、比較を行っています。
+上記のサンプルでは、以下の手順で同サイズの画像から、それぞれのピクセル配列を取得して比較を行っています。
 
 1. `ImageIcon`から`Image`を取得
 1. `BufferedImage.TYPE_INT_RGB`で作成した`BufferedImage`に`Image`をコピー

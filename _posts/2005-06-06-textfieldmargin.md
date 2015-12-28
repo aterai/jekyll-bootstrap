@@ -31,7 +31,6 @@ field02.setBorder(b2);
 ## 解説
 以下のサンプルでは、それぞれ左側の内余白のサイズのみを変更しています。
 
-	javax.swing.plaf.InsetsUIResource[top=2,left=7,bottom=2,right=2]
 
 - 上: `UIManager.put()`ですべての`JTextField`の余白を指定
     - `getMargin().left`: `7`

@@ -68,7 +68,7 @@ comments: true
 セルレンダラーに`MouseListener`、`MouseMotionListener`を追加し、マウスカーソルが乗っているセルの色を変更しています。
 
 - - - -
-`JTable#prepareRenderer`をオーバーライドする場合も、同様の方法が使用できます。
+`JTable#prepareRenderer(...)`メソッドをオーバーライドする方法もあります。
 
 <pre class="prettyprint"><code>class HighlightableTable extends JTable {
   private final HighlightListener highlighter;

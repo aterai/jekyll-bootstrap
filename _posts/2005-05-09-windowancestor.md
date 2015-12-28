@@ -50,6 +50,7 @@ comments: true
 - [JComponent#getTopLevelAncestor()](http://docs.oracle.com/javase/jp/6/api/javax/swing/JComponent.html#getTopLevelAncestor%28%29)
     - 自身の親コンテナ(`java.awt.Window`または`java.awt.Applet`)が返る
     - 親コンテナが無い場合は、`null`
+    - `java.awt.Window`または`java.awt.Applet`から呼ばれた場合は、そのまま自身が返る
     - 下のコメント参照
 
 <!-- dummy comment line for breaking list -->

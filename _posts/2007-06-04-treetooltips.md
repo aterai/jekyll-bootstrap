@@ -15,15 +15,14 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWQe1RL2I/AAAAAAAAAo8/6HFqbUb3UZ8/s800/TreeToolTips.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//tree = new JTree();
-tree = new JTree() {
+<pre class="prettyprint"><code>tree = new JTree() {
   @Override public String getToolTipText(MouseEvent e) {
     Object o = null;
     TreePath path = getPathForLocation(e.getX(), e.getY());
-    if (path != null) {
+    if (Objects.nonNull(path)) {
       o = path.getLastPathComponent();
     }
-    return (o == null) ? null : o.toString();
+    return Objects.toString(o, "getToolTipText");
   }
 };
 //tree.setCellRenderer(new MyTreeCellRenderer(tree.getCellRenderer()));
@@ -43,7 +42,7 @@ ToolTipManager.sharedInstance().registerComponent(tree);
         boolean expanded, boolean leaf, int row, boolean hasFocus) {
     JComponent c = (JComponent) renderer.getTreeCellRendererComponent(
       tree, value, isSelected, expanded, leaf, row, hasFocus);
-    c.setToolTipText((value == null) ? null : value.toString());
+    c.setToolTipText(Objects.nonNull(value) ? value.toString() : null);
     return c;
   }
 }

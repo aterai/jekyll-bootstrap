@@ -105,7 +105,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。アクションイベントを設定するのは、`CellEditor`用の`JButton`で、`CellRenderer`用の`JButton`は表示のためのダミーです。
+上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。`CellRenderer`用の`JButton`は表示のみに使用するため、アクションイベントを設定するのは`CellEditor`用の`JButton`のみです。
 
 - - - -
 - `LookAndFeel`などが更新されたら、`JTable#updateUI()`内で`SwingUtilities#updateRendererOrEditorUI()`を呼び出すなどして、各セルレンダラーやセルエディタ(これらは`JTable`の子コンポーネントではないので)を更新

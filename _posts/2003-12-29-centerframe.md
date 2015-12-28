@@ -32,7 +32,7 @@ frame.setVisible(true);
 
 `JFrame#setLocation`メソッドなどで任意の位置を指定する場合は、フレームの左上隅座標を計算します。
 
-どちらも、フレームを`pack()`、もしくは`setSize(int, int)`した後で実行するようにしてください。
+どちらも、フレームを`pack()`、もしくは`setSize(int, int)`でサイズを設定した後で実行するようにしてください。
 
 ## コメント
 - `1.4`以降なら、`setLocationRelativeTo(null)`でも中央になりますよ。 -- *Wata* 2004-06-07 (月) 17:47:08

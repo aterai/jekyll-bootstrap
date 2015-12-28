@@ -95,7 +95,7 @@ class ProgressRenderer extends DefaultTableCellRenderer {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`2`列目の`TableCellRenderer`として、`JProgressBar#setStringPainted(true)`と進捗文字列を表示するように設定した`JProgressBar`を使用しています。進捗状況文字列は、現在値/最大値の形式で表示するため、`SwingWorker#publish(...)`には、この`2`つの値を保持する`ProgressValue`オブジェクトを作成して渡しています。`TableCellRenderer`は、この`ProgressValue`オブジェクトを受け取り、`JProgressBar#setMaximum(int)`(最大値は、各行ごとにランダムなので)、`JProgressBar#setValue(int)`、`JProgressBar#setString(String)`の`3`つを設定した`JProgressBar`をセル描画用コンポーネントとして返しています。
+上記のサンプルでは、`2`列目の`TableCellRenderer`として、`JProgressBar#setStringPainted(true)`と進捗文字列を表示するように設定した`JProgressBar`を使用しています。進捗状況文字列は、現在値/最大値の形式で表示するため、`SwingWorker#publish(...)`には、この`2`つの値を保持する`ProgressValue`オブジェクトを作成して渡しています。`TableCellRenderer`は、この`ProgressValue`オブジェクトを受け取り、`JProgressBar#setMaximum(int)`(最大値は、各行ごとにランダムなので)、`JProgressBar#setValue(int)`、`JProgressBar#setString(String)`の`3`つを設定した`JProgressBar`をセルの描画用コンポーネントとして返しています。
 
 ## 参考リンク
 - [JTableのセルにJProgressBarを表示](http://ateraimemo.com/Swing/TableCellProgressBar.html)
