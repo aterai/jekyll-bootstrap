@@ -75,9 +75,9 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`BufferedImage#getSubimage`で元画像を`9`分割し、四隅はサイズ変更なし、上下辺は幅のみ拡大縮小、左右辺は高さのみ拡大縮小、中央は幅高さが拡大縮小可能になるよう、`Graphics#drawImage(...)`のスケーリングを利用して描画しています。
+上記のサンプルでは、`BufferedImage#getSubimage(...)`メソッドで元画像を`9`分割し、`4`隅はサイズ変更なし、上下辺は幅のみ拡大縮小、左右辺は高さのみ拡大縮小、中央は幅高さが拡大縮小可能になるように、`Graphics#drawImage(...)`メソッドのスケーリングを利用して描画しています。
 
-- 四隅などの固定サイズ
+- `4`隅などの固定サイズ
     - `a`: 左上下隅の幅
     - `b`: 右上下隅の幅
     - `c`: 左右上隅の高さ
@@ -87,7 +87,7 @@ comments: true
 
 ## 参考リンク
 - [Real World Illustrator: Understanding 9-Slice Scaling](http://rwillustrator.blogspot.jp/2007/04/understanding-9-slice-scaling.html)
-    - テスト用の画像(`symbol_scale_2.jpg`)を拝借しています。
+    - テスト用の画像(`symbol_scale_2.jpg`)を拝借
 
 <!-- dummy comment line for breaking list -->
 

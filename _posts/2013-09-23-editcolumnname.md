@@ -63,7 +63,7 @@ comments: true
       String str = textField.getText().trim();
       if (!str.equals(name)) {
         columnNames[table.convertColumnIndexToModel(index)] = str;
-        header.setDraggedColumn(null); //XXX
+        header.setDraggedColumn(null); //clear column dragging
         model.setColumnIdentifiers(columnNames);
       }
     }

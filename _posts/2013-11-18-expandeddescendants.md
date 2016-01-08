@@ -6,11 +6,11 @@ title: JTreeの展開状態を記憶・復元する
 tags: [JTree, TreePath]
 author: aterai
 pubdate: 2013-11-18T00:04:12+09:00
-description: JTreeでノードの展開状態を記憶、復元します。
+description: JTreeのノードが展開されているかどうかを記憶、復元します。
 comments: true
 ---
 ## 概要
-`JTree`でノードの展開状態を記憶、復元します。
+`JTree`のノードが展開されているかどうかを記憶、復元します。
 
 {% download https://lh4.googleusercontent.com/-FcYsZkFYSxE/UojBcoMtHwI/AAAAAAAAB6k/A7D221doy2w/s800/ExpandedDescendants.png %}
 

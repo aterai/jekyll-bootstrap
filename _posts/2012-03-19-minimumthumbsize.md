@@ -25,15 +25,14 @@ comments: true
     - 有効: `BasicLookAndFeel`、`WindowsLookAndFeel`
     - 無効: `MetalLookAndFeel`、`NimbusLookAndFeel`
         - 以下のように、縦スクロールバーならその幅が最小サイズになるよう上書きされているため
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>// @see javax/swing/plaf/metal/MetalScrollBarUI.java
-protected Dimension getMinimumThumbSize() {
-  return new Dimension(scrollBarWidth, scrollBarWidth);
-}
+            
+            <pre class="prettyprint"><code>// @see javax/swing/plaf/metal/MetalScrollBarUI.java
+            protected Dimension getMinimumThumbSize() {
+              return new Dimension(scrollBarWidth, scrollBarWidth);
+            }
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 - `JDK 1.8.0_20`で修正されて、この記事のスクリーンショットのようにノブのサイズが小さくなり過ぎることはなくなった
     - `WindowsScrollBarUI`(`XPStyle`)でのバグだったようだ
