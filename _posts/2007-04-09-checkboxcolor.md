@@ -47,13 +47,14 @@ comments: true
 
 ## 解説
 - `org`
-    - 通常の`JCheckBox`です。
+    - デフォルトの`JCheckBox`
 - `check1`
-    - `com/sun/java/swing/plaf/windows/WindowsIconFactory.java`から、`XP`スタイルではない場合のアイコンをコピーし、一部色などを変更しています。
+    - `com/sun/java/swing/plaf/windows/WindowsIconFactory.java`から、`XP`スタイルではない場合のアイコンをコピーし、一部色などを変更
 - `check2`
-    - `UIManager.getIcon("CheckBox.icon")`で取得したオリジナルのアイコンを、アルファ値を設定した色で上書きし、チェック(レ)も色を変えて塗り潰しています。ただしチェックの形は`WindowsIconFactory`からコピーしているので、別の`LookAndFeel`では枠からはみ出してしまいます。
+    - `UIManager.getIcon("CheckBox.icon")`で取得したオリジナルのアイコンを、アルファ値を設定した色で上書きし、チェック(レ)も色を変えて塗り潰し
+    - チェックの形は`WindowsIconFactory`からコピーしているので、別の`LookAndFeel`では枠からはみ出してしまう
 - `check3`
-    - `javax.swing.plaf.metal.MetalCheckBoxIcon`をアルファ値を設定した色で上書きしています。
+    - `javax.swing.plaf.metal.MetalCheckBoxIcon`をアルファ値を設定した色で上書き
 
 <!-- dummy comment line for breaking list -->
 

@@ -15,7 +15,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTM9YcNZfI/AAAAAAAAAaA/sbjwdihBwqY/s800/FixedWidthColumn.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//すべてのヘッダカラムの幅を変更不可に
+<pre class="prettyprint"><code>//すべてのカラムヘッダの幅を変更不可に
 //tableHeader.setResizingAllowed(false);
 
 //JTable.AUTO_RESIZE_OFFで、あるカラムの幅を変更不可にしたい場合

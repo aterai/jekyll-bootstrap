@@ -28,7 +28,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`0`番目のヘッダカラムだけフォントを変更しています。`JTableHeader`のセルを修飾する場合も、`JTable`中のセルの場合と同様に、`TableCellRenderer`を実装したセルレンダラーを使用することができます。
+上記のサンプルでは、`0`番目のカラムヘッダだけフォントを変更しています。`JTableHeader`のセルを修飾する場合も、`JTable`中のセルの場合と同様に、`TableCellRenderer`を実装したセルレンダラーを使用することができます。
 
 サンプルのセルレンダラーは、`TableCellRenderer#getTableCellRendererComponent`メソッドの中で、委譲しているヘッダのデフォルトのレンダラーから描画に使用するコンポーネント(`JLabel`)を取得し、そのラベルのフォントだけ`JLabel#setFont`メソッドで置き換えています。
 
@@ -39,7 +39,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-コメントで*いつも見てます*さんが指摘しているように、以下の様に`JTableHeader#setFont()`メソッドを使用すると、全ヘッダカラムのフォントを指定することができます。
+コメントで*いつも見てます*さんが指摘しているように、以下の様に`JTableHeader#setFont()`メソッドを使用すると、全カラムヘッダのフォントを指定することができます。
 
 <pre class="prettyprint"><code>table.getTableHeader().setFont(font);
 </code></pre>

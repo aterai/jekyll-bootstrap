@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: ClearSortingState
 title: TableRowSorterのSortKeysをクリアする
-tags: [JTable, TableRowSorter, MouseListener]
+tags: [JTable, TableRowSorter, JTableHeader, MouseListener]
 author: aterai
 pubdate: 2007-08-27T12:33:13+09:00
 description: JDK 6で導入されたTableRowSorterでの行ソートを、テーブルヘッダのKBD{Shift}+クリックでクリアします。
@@ -45,7 +45,7 @@ table.getTableHeader().addMouseListener(new MouseAdapter() {
 
 上記のサンプルでは、以下のような制限があります。
 
-- ソートキーになっていないヘッダカラムを<kbd>Shift</kbd>+クリックした場合でも、ソート状態をクリアする
+- ソートキーになっていないカラムヘッダを<kbd>Shift</kbd>+クリックした場合でも、ソート状態をクリアする
 - ~~行がソートされている場合は、ドラッグ&ドロップで行を入れ替え不可~~ `D&D`機能は削除
 
 <!-- dummy comment line for breaking list -->

@@ -47,24 +47,18 @@ comments: true
     - セル間の幅を`0`にして、選択時に罫線のあとが表示されないように設定: `table.setIntercellSpacing(new Dimension(0,1));`
 - `Boolean.class`の`DefaultRenderer`
     - 透明化した`BooleanCellRenderer`や`BooleanCellEditor`を設定
-
-<!-- dummy comment line for breaking list -->
-
-- メモ
+- 注:
     - `ColumnHeader`には、`scroll.setColumnHeader(new JViewport());`とダミーの`JViewport`を設定しておかないと、`NullPointerException`が発生する
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>scroll.setOpaque(false);
-scroll.setBackground(alphaZero);
-scroll.getViewport().setOpaque(false);
-scroll.getViewport().setBackground(alphaZero);
-scroll.setColumnHeader(new JViewport()); // Dummy JViewport
-scroll.getColumnHeader().setOpaque(false);
-scroll.getColumnHeader().setBackground(alphaZero);
+        
+        <pre class="prettyprint"><code>scroll.setOpaque(false);
+        scroll.setBackground(alphaZero);
+        scroll.getViewport().setOpaque(false);
+        scroll.getViewport().setBackground(alphaZero);
+        scroll.setColumnHeader(new JViewport()); // Dummy JViewport
+        scroll.getColumnHeader().setOpaque(false);
+        scroll.getColumnHeader().setBackground(alphaZero);
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#ef89274d]
 - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)
 - [JTableHeaderを非表示にする](http://ateraimemo.com/Swing/RemoveTableHeader.html)
     - `JTable`のヘッダ自体を非表示にする場合のサンプル

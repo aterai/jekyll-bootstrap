@@ -6,11 +6,11 @@ title: JTableのソート
 tags: [JTable, JTableHeader]
 author: aterai
 pubdate: 2004-01-05
-description: JTableのヘッダカラムをクリックすることで、行表示を降順、昇順にソートします。
+description: JTableのカラムヘッダをクリックすることで、行表示を降順、昇順にソートします。
 comments: true
 ---
 ## 概要
-`JTable`のヘッダカラムをクリックすることで、行表示を降順、昇順にソートします。以下のサンプルは、~~[SortableTableExample](http://www2.gol.com/users/tame/swing/examples/JTableExamples5.html)~~を参考にして作成しています。
+`JTable`のカラムヘッダをクリックすることで、行表示を降順、昇順にソートします。以下のサンプルは、~~[SortableTableExample](http://www2.gol.com/users/tame/swing/examples/JTableExamples5.html)~~を参考にして作成しています。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTXXYDR5I/AAAAAAAAAkQ/DeBHN6piDhQ/s800/SortableTable.png %}
 

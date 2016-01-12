@@ -93,15 +93,13 @@ comments: true
 - 上
     - タイトルの垂直位置をデフォルトの`TitledBorder.DEFAULT_POSITION`にして、`Separator`上に重なるように表示
     - `Java 1.6.0`では、タイトルの上に`Separator`が表示される場合がある？(`1.7.0`では正常)
+    - 注: 垂直方向は未対応
 - 中
     - タイトルの垂直位置が上(`TitledBorder.ABOVE_TOP`)で、`Separator`の上に表示
 - 下
-    - `JSeparator`を使用
+    - デフォルトの`JSeparator`を使用
 
 <!-- dummy comment line for breaking list -->
-
-- - - -
-注: 縦のセパレータには未対応
 
 ## 参考リンク
 - [TitledBorderのタイトル位置](http://ateraimemo.com/Swing/TitledBorder.html)

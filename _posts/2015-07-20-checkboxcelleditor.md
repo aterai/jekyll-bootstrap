@@ -73,7 +73,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、JTableのBooleanに対応するTableCellEditorとして、中央にJCheckBoxを配置したJPanelを適用しています。
+上記のサンプルでは、`JTable`の`Boolean`に対応する`TableCellEditor`として、中央に`JCheckBox`を配置した`JPanel`を適用しています。
 
 - デフォルトの`JTable.BooleanEditor`
     - セル全体が`JCheckBox`になるため、チェックアイコン以外の余白をクリックしても選択状態が変化する

@@ -52,9 +52,6 @@ comments: true
 ## 解説
 上記のサンプルでは、`Shape`から`PathIterator`を取得し、そのパスを辿って`SVG`ファイルを生成しています。
 
-- ~~対応しているのは、`PathIterator.SEG_MOVETO`、`PathIterator.SEG_LINETO`のみ~~
-
-<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)

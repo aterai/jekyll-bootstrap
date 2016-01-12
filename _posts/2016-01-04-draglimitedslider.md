@@ -21,14 +21,13 @@ JSliderの最小・最大値とは別に、マウスドラッグによる値の�
       @Override public void mouseDragged(MouseEvent e) {
         //case HORIZONTAL:
         int halfThumbWidth = thumbRect.width / 2;
-        int trackLength = trackRect.width;
-        int trackLeft   = trackRect.x - halfThumbWidth;
-        int maxPos = trackLeft + (int)(.5 + trackLength * MAXD);
-        if (e.getX() &gt; maxPos) {
-          offset = 0;
+        int thumbLeft = e.getX() - offset;
+        int maxPos = xPositionForValue(MAXI) - halfThumbWidth;
+        if (thumbLeft &gt; maxPos) {
+          int x = maxPos + offset;
           MouseEvent me = new MouseEvent(
             e.getComponent(), e.getID(), e.getWhen(), e.getModifiers(),
-            maxPos, e.getY(),
+            x, e.getY(),
             e.getXOnScreen(), e.getYOnScreen(),
             e.getClickCount(), e.isPopupTrigger(), e.getButton());
           e.consume();

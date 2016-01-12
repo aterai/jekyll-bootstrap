@@ -40,7 +40,7 @@ public boolean isEnabledAt(int col) {
 </code></pre>
 
 ## 解説
-サンプルでは、`0`列目のヘッダカラムを常に選択不可に、`3`列目はチェックボックスで選択できるかどうかを切り替えるようにしています。
+サンプルでは、`0`列目のカラムヘッダを常に選択不可に、`3`列目はチェックボックスで選択できるかどうかを切り替えるようにしています。
 
 `HashMap`に選択不可にするカラムヘッダを設定し、レンダラーがヘッダを描画するときにそれを`setEnabled(false)`しています。
 
@@ -52,7 +52,7 @@ public boolean isEnabledAt(int col) {
     TableColumnModel columnModel = h.getColumnModel();
     int viewColumn = columnModel.getColumnIndexAtX(e.getX());
     int column = columnModel.getColumn(viewColumn).getModelIndex();
-    // ここをちょっと変更
+    // ここを変更
     if (isSortableIndex(column)) { //column != -1 ) {
       int status = getSortingStatus(column);
       if (!e.isControlDown()) {

@@ -31,7 +31,7 @@ add(new JButton(new AbstractAction("clearSelection") {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JRadioButton`、`JToggleButton`を`ButtonGroup`に追加し、これらの選択状態を、`ButtonGroup#clearSelection`メソッドを使ってクリアしています。
+上記のサンプルでは、`JRadioButton`、`JToggleButton`を`ButtonGroup`に追加し、これらの選択状態を`ButtonGroup#clearSelection`メソッドを使ってクリアしています。
 
 ## 参考リンク
 - [「Java SE 6完全攻略」第34回 Swingのその他の新機能：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20070622/275590/)
