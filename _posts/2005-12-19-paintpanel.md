@@ -19,7 +19,7 @@ comments: true
   private static final Stroke STROKE = new BasicStroke(
     3f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
   private transient List&lt;Shape&gt; list;
-  private transient Path2D.Double path;
+  private transient Path2D path;
   private transient MouseAdapter handler;
   @Override public void updateUI() {
     removeMouseMotionListener(handler);

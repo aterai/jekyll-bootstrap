@@ -17,7 +17,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private static Area getOuterShape(Shape shape) {
   Area area = new Area();
-  Path2D.Double path = new Path2D.Double();
+  Path2D path = new Path2D.Double();
   PathIterator pi = shape.getPathIterator(null);
   double[] coords = new double[6];
   while (!pi.isDone()) {

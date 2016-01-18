@@ -61,7 +61,7 @@ comments: true
 </code></pre>
 
 - `Test3`:
-    - `TableCellRenderer#getTableCellRendererComponent(...)`メソッド内で、デフォルトのヘッダレンダラーを取得し、字揃えを設定
+    - `TableCellRenderer#getTableCellRendererComponent(...)`メソッド内で、デフォルトのヘッダセルレンダラーを取得し、字揃えを設定
     - 上記の`HorizontalAlignmentHeaderRenderer`を全ての列に設定
 
 <!-- dummy comment line for breaking list -->
@@ -75,7 +75,10 @@ table.getColumnModel().getColumn(2).setHeaderRenderer(
 </code></pre>
 
 - - - -
-以下の方法でも `0`列目だけ中央揃えにすることが可能だが、初回が`WindowsLookAndFeel`などの`SystemLookAndFeel`の場合、`LookAndFeel`を変更すると`NullPointerException`が発生する(それ以外の場合でもヘッダの`LookAndFeel`が切り替わらない)。
+- 以下の方法でも `0`列目だけ中央揃えにすることが可能だが、初回が`WindowsLookAndFeel`などの`SystemLookAndFeel`の場合、`LookAndFeel`を変更すると`NullPointerException`が発生する
+    - それ以外の場合でもヘッダの`LookAndFeel`が切り替わらない
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>try {
   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());

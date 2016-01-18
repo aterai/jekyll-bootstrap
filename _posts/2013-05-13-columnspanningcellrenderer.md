@@ -100,6 +100,7 @@ comments: true
         - ~~`0`行目だけ高さ`1`のダミー行を追加して回避(ソートなどで問題が残る)~~
     - ~~`JTable`のクリック(セル選択？)などで表示が乱れる場合がある~~
         - ~~`JTable#repaint(Rectangle)`をオーバーライドして常に全体を描画することで回避~~
+    - `JScrollPane`内に`JTextArea`を配置せずに、直接`JTextArea`から表示領域を切り取っても良さそう？
 
 <!-- dummy comment line for breaking list -->
 
@@ -114,6 +115,6 @@ comments: true
 - `JTable`をスクロールするとおかしくなる？ -- *aterai* 2013-06-04 (火) 13:37:19
     - `0`行目ではなく、一番上に表示されている行の表示が原因かもしれない。 -- *aterai* 2013-06-04 (火) 13:44:14
     - 移動の幅からみて、`TableCellRenderer`の`Border`が関連しているような気がするけど、よく分からない。 -- *aterai* 2013-06-04 (火) 15:08:18
-    - 一番上の行のみの症状なので、ヘッダレンダラーとか関係してるのかと調べてたけど、`JViewport#setViewPosition(Point)`を使って直接ジャンプ？すれは、正常にヘッダサイズを変更できるようだ。もしかしたら[次にビューポートにペイントが呼び出されたときに、クリッピング領域がビューポートサイズより小さい場合には、タイマーが開始され全体をペイントし直す](http://docs.oracle.com/javase/jp/6/api/javax/swing/JViewport.html)せいだった？ -- *aterai* 2013-06-04 (火) 18:29:12
+    - 一番上の行のみの症状なので、ヘッダセルレンダラーとか関係してるのかと調べてたけど、`JViewport#setViewPosition(Point)`を使って直接ジャンプ？すれは、正常にヘッダサイズを変更できるようだ。もしかしたら[次にビューポートにペイントが呼び出されたときに、クリッピング領域がビューポートサイズより小さい場合には、タイマーが開始され全体をペイントし直す](http://docs.oracle.com/javase/jp/6/api/javax/swing/JViewport.html)せいだった？ -- *aterai* 2013-06-04 (火) 18:29:12
 
 <!-- dummy comment line for breaking list -->

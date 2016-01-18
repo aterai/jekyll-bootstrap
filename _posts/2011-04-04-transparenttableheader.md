@@ -38,7 +38,7 @@ comments: true
 
 ## 解説
 - `JTableHeader`
-    - `JTableHeader`とヘッダレンダラーの両方を、`setOpaque(false)`, 背景色: `Color(0x0, true)`と設定
+    - `JTableHeader`とヘッダセルレンダラーの両方を、`setOpaque(false)`, 背景色: `Color(0x0, true)`と設定
 - `JTable`, `JScrollPane`(`Viewport`, `ColumnHeader`)も`setOpaque(false)`, 背景色: `Color(0x0, true)`と設定
     - 背景パターンは、`JScrollPane#paintComponent(...)`をオーバーライドして描画
         - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)は、`JViewport#paintComponent(...)`をオーバーライド

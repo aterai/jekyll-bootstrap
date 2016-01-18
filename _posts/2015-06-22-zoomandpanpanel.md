@@ -46,7 +46,7 @@ comments: true
     g2.drawImage(img, coordTransform, this);
     g2.fill(coordTransform.createTransformedShape(r));
 
-    //XXX
+    //BAD EXAMPLE
     //g2.setTransform(coordTransform);
     //g2.drawImage(img, 0, 0, this);
 
@@ -111,17 +111,18 @@ comments: true
 
 - [JPanelに表示した画像のズームとスクロール](http://ateraimemo.com/Swing/ZoomingAndPanning.html)のようにズームを行うための`AffineTransform`(このサンプルでは`coordTransform`)を直接`Graphics2D`に設定すると、元からある`Graphics2D`コンテキスト内の`AffineTransform`(`JScrollBar`による移動)と競合して描画が乱れてしまう
     
-    <pre class="prettyprint"><code>g2.setTransform(coordTransform);
+    <pre class="prettyprint"><code>//BAD EXAMPLE
+    g2.setTransform(coordTransform);
     g2.drawImage(img, 0, 0, this);
 </code></pre>
-- 2つの`AffineTransform`を`AffineTransform#concatenate(AffineTransform)`で連結してから、`Graphics2D#setTransform(AffineTransform)`で設定することで回避
+- `2`つの`AffineTransform`を`AffineTransform#concatenate(AffineTransform)`で連結してから、`Graphics2D#setTransform(AffineTransform)`で設定することで回避
     
     <pre class="prettyprint"><code>AffineTransform at = g2.getTransform();
     at.concatenate(coordTransform);
     g2.setTransform(at);
     g2.drawImage(img, 0, 0, this);
 </code></pre>
-- または、[Graphics2D#drawImage(Image, AffineTransform, ImageObserver) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/Graphics2D.html#drawImage-java.awt.Image-java.awt.geom.AffineTransform-java.awt.image.ImageObserver-)を使用することで、`Graphics2D`コンテキスト内の`AffineTransform`が適用される前にイメージにズーム変換を適用しておくことで回避
+- または、[Graphics2D#drawImage(Image, AffineTransform, ImageObserver) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/Graphics2D.html#drawImage-java.awt.Image-java.awt.geom.AffineTransform-java.awt.image.ImageObserver-)を使用し、`Graphics2D`コンテキスト内の`AffineTransform`が適用される前にイメージにズーム変換を適用しておくことで回避
     
     <pre class="prettyprint"><code>g2.drawImage(img, coordTransform, this);
 
