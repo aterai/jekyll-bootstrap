@@ -15,7 +15,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH67VnIQI/AAAAAAAAAR8/JMqkIoI8n1Y/s800/BackgroundImage.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>@Override public void paintComponent(Graphics g) {
+<pre class="prettyprint"><code>@Override protected void paintComponent(Graphics g) {
   Dimension d = getSize();
   int w = bgimage.getIconWidth();
   int h = bgimage.getIconHeight();

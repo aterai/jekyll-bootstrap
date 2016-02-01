@@ -7,6 +7,9 @@ tags: [JTable, JTableHeader, TableColumnModel, XMLEncoder, XMLDecoder]
 author: aterai
 pubdate: 2015-12-14T02:58:18+09:00
 description: JTableのヘッダからTableColumnModelを取得し、XMLEncoderとXMLDecoderを使って、XMLファイルで保存、復元します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2016/01/save-and-load-state-of-jtable-and.html
+    lang: en
 comments: true
 ---
 ## 概要

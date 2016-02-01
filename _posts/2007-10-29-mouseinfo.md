@@ -22,7 +22,7 @@ public MainPanel() {
   setPreferredSize(panelDim);
   new javax.swing.Timer(10, this).start();
 }
-@Override public void paintComponent(Graphics g) {
+@Override protected void paintComponent(Graphics g) {
   super.paintComponent(g);
   racket.draw(g);
 }

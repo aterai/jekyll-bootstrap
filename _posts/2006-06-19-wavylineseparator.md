@@ -30,7 +30,7 @@ comments: true
       setBorder(BorderFactory.createEmptyBorder(1, 2, 1, 2));
     }
   }
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     //super.paintComponent(g);
     //g.setClip(0, 0, getWidth(), getHeight());
     int pos;

@@ -75,7 +75,7 @@ comments: true
   @Override public Dimension getPreferredSize() {
     return new Dimension(getComponentWidth(), textArea.getHeight());
   }
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     g.setColor(getBackground());
     Rectangle clip = g.getClipBounds();
     g.fillRect(clip.x, clip.y, clip.width, clip.height);

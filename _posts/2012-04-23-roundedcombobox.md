@@ -85,7 +85,7 @@ class KamabokoBorder extends RoundedCornerBorder {
 上記のサンプルでは、`Path2D#lineTo`、`Path2D#quadTo`を使ってかまぼこ型の図形を作成し、`JComboBox`の`Border`に設定しています。
 
 以下のような方法でも、かまぼこ型の図形を作成することができます。
-<pre class="prettyprint"><code>Area round = new Area(new RoundRectangle2D.Float(x, y, width-1, height-1, r, r));
+<pre class="prettyprint"><code>Area round = new Area(new RoundRectangle2D.Float(x, y, width - 1, height - 1, r, r));
 Rectangle b = round.getBounds();
 b.setBounds(b.x, b.y + r, b.width, b.height - r);
 round.add(new Area(b));
@@ -93,16 +93,10 @@ round.add(new Area(b));
 
 - 上: `MetalComboBoxUI`
     - `BasicComboBoxUI`を設定
-
-<!-- dummy comment line for breaking list -->
-
 - 中: `BasicComboBoxUI`
     - `RoundRectangle2D`に、下の角を上書きするような矩形を追加して作成
     - `UIManager.put("ComboBox.foreground", color)`などで、`JComboBox`の色を変更しているが、`ArrowButton`の色がうまく変更できない
     - [JComboBoxのBorderを変更する](http://ateraimemo.com/Swing/ComboBoxBorder.html)
-
-<!-- dummy comment line for breaking list -->
-
 - 下: `BasicComboBoxUI#createArrowButton()`
     - `BasicComboBoxUI#createArrowButton()`をオーバーライドして、`ArrowButton`の背景色などを変更
 

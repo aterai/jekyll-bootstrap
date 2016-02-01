@@ -18,7 +18,7 @@ comments: true
 <pre class="prettyprint"><code>int[] pixels = new int[320 * 240];
 MemoryImageSource source = new MemoryImageSource(320, 240, pixels, 0, 320);
 int penc = 0x0;
-@Override public void paintComponent(Graphics g) {
+@Override protected void paintComponent(Graphics g) {
   super.paintComponent(g);
   if (backImage != null) {
     ((Graphics2D) g).drawImage(backImage, 0, 0, this);

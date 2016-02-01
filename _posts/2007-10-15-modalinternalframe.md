@@ -168,7 +168,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
       rootPane.getLayeredPane().setVisible(!isVisible);
     }
   }
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     JRootPane rootPane = SwingUtilities.getRootPane(this);
     if (rootPane != null) {
       //http://weblogs.java.net/blog/alexfromsun/archive/2008/01/
