@@ -102,7 +102,7 @@ class MenuToggleButton extends JToggleButton {
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>JToggleButton button = new JToggleButton("text", icon) {
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     if (getModel().isSelected()) {
       Graphics2D g2 = (Graphics2D) g.create();
       g2.setColor(getBackground());

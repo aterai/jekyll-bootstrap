@@ -23,7 +23,7 @@ comments: true
   private final TexturePaint texture = makeImageTexture();
   @Override protected JViewport createViewport() {
     return new JViewport() {
-      @Override public void paintComponent(Graphics g) {
+      @Override protected void paintComponent(Graphics g) {
         if (texture != null) {
           Graphics2D g2 = (Graphics2D) g;
           g2.setPaint(texture);
