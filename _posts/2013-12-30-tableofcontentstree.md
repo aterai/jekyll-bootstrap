@@ -27,7 +27,7 @@ comments: true
   private int rxs, rxe, ry;
   private boolean isSynth = false;
   private final JPanel p = new JPanel(new BorderLayout()) {
-    @Override public void paintComponent(Graphics g) {
+    @Override protected void paintComponent(Graphics g) {
       super.paintComponent(g);
       if (pn != null) {
         Graphics2D g2 = (Graphics2D) g.create();
@@ -57,8 +57,8 @@ comments: true
     }
   }
   @Override public Component getTreeCellRendererComponent(
-    JTree tree, Object value, boolean selected, boolean expanded,
-    boolean leaf, int row, boolean hasFocus) {
+      JTree tree, Object value, boolean selected, boolean expanded,
+      boolean leaf, int row, boolean hasFocus) {
     JLabel l = (JLabel) super.getTreeCellRendererComponent(
         tree, value, selected, expanded, leaf, row, hasFocus);
     if (value instanceof DefaultMutableTreeNode) {
@@ -147,7 +147,7 @@ comments: true
     }
     return visRect;
   }
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     g.setColor(getBackground());
     g.fillRect(0, 0, getWidth(), getHeight());
     super.paintComponent(g);

@@ -29,7 +29,7 @@ comments: true
     LineMetrics lm = font.getLineMetrics(text, frc);
     yy = lm.getAscent() / 2f + (float) gv.getVisualBounds().getY();
   }
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g;
     int cw = getWidth();
     int ch = getHeight();

@@ -56,7 +56,7 @@ comments: true
     polygonColor = r &gt; g ? r &gt; b ? new Color(r, 0, 0) : new Color(0, 0, b)
                          : g &gt; b ? new Color(0, g, 0) : new Color(0, 0, b);
   }
-  @Override public void paintComponent(Graphics g) {
+  @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     if (renderer != null &amp;&amp; renderer.polygon != null) {
       Graphics2D g2 = (Graphics2D) g.create();
