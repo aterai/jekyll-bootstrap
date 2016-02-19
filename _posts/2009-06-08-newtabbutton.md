@@ -20,10 +20,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class TabLayout implements LayoutManager, Serializable {
   private static final long serialVersionUID = 1L;
+  private static final int TAB_WIDTH = 100;
   @Override public void addLayoutComponent(String name, Component comp) {
     /* not needed */
   }
-  @Override public void removeLayoutComponent(Component comp)           {
+  @Override public void removeLayoutComponent(Component comp) {
     /* not needed */
   }
   @Override public Dimension preferredLayoutSize(Container parent) {
@@ -62,22 +63,14 @@ comments: true
       int lastw = parent.getComponent(ncomponents - 1).getPreferredSize().width;
       int width = parent.getWidth() - insets.left - insets.right - lastw;
       int h = parent.getHeight() - insets.top - insets.bottom;
-      int w = width &gt; 100 * (ncomponents - 1) ? 100 : width / ncols;
+      int w = width &gt; TAB_WIDTH * ncols ? TAB_WIDTH : width / ncols;
       int gap = width - w * ncols;
       int x = insets.left;
       int y = insets.top;
       for (int i = 0; i &lt; ncomponents; i++) {
-        int a = 0;
-        if (gap &gt; 0) {
-          a = 1;
-          gap--;
-        }
-        int cw = w + a;
-        if (i == ncols) {
-          cw = lastw;
-        }
+        int cw = i == ncols ? lastw : w + (gap-- &gt; 0 ? 1 : 0);
         parent.getComponent(i).setBounds(x, y, cw, h);
-        x += w + a;
+        x += cw;
       }
     }
   }
@@ -88,7 +81,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、以下のような`LayoutManager`を作成して`JRadioButton`をタブ風に並べています。
+上記のサンプルでは、以下のような`LayoutManager`を作成して`JRadioButton`を`JTabbedPane`風に並べています。
 
 - 最後のタブ(タブ追加ボタン)は常に幅固定
 - 最後のタブの高さがタブエリアの高さ

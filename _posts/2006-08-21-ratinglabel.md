@@ -35,7 +35,7 @@ private class SelectedImageFilter extends RGBImageFilter {
     int r = (int) (((argb &gt;&gt; 16) &amp; 0xff) * filter[0]);
     int g = (int) (((argb &gt;&gt;  8) &amp; 0xff) * filter[1]);
     int b = (int) (((argb      ) &amp; 0xff) * filter[2]);
-    return (argb &amp; 0xff000000) | (r&lt;&lt;16) | (g&lt;&lt;8) | (b);
+    return (argb &amp; 0xff000000) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | (b);
   }
 }
 </code></pre>
@@ -45,7 +45,7 @@ private class SelectedImageFilter extends RGBImageFilter {
 
 ## 参考リンク
 - [PI Diagona Icons Pack 1.0 - Download Royalty Free Icons and Stock Images For Web & Graphics Design](http://www.freeiconsdownload.com/Free_Downloads.asp?id=60)
-    - アイコンを利用しています。
+    - アイコンを引用
 
 <!-- dummy comment line for breaking list -->
 

@@ -74,7 +74,7 @@ private void renameTabTitle() {
 
 ## 参考リンク
 - [JTabbedPaneのタブタイトルを変更](http://ateraimemo.com/Swing/EditTabTitle.html)
-    - こちらは、`JDK 6`以前でも動作するように、`GlassPane`に`JTextField`を配置してタブタイトルの編集を行っています。
+    - こちらは、`JDK 6`以前でも動作するように、`GlassPane`に`JTextField`を配置してタブタイトルを編集している
 
 <!-- dummy comment line for breaking list -->
 

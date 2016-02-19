@@ -40,7 +40,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 
 <!-- dummy comment line for breaking list -->
 
-- `min`: `set(Calendar.HOUR_OF_DAY, 0)`
+- `min: set(Calendar.HOUR_OF_DAY, 0)`
     - 下限値を以下のように本日の始めにリセット
         - 例: `Mon Aug 22 15:09:27 JST 2011`を`Mon Aug 22 00:00:00 JST 2011`
             
@@ -58,7 +58,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
                 date, start, null, Calendar.DAY_OF_MONTH));
             spinner2.setEditor(new JSpinner.DateEditor(spinner2, dateFormatPattern));
 </code></pre>
-- `JSpinner.DateEditor` + `FocusListener`
+- `JSpinner.DateEditor + FocusListener`
     - フォーカスがエディタに移動した場合、日付部分が選択状態になるようリスナーを設定
         - 矢印ボタンのクリックで編集開始した場合、先頭の年度部分ではなく日付が増減する
         - 参考: [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)

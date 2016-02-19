@@ -45,15 +45,12 @@ String str = new String(Character.toChars(code));
 </code></pre>
 
 - - - -
-[IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝フォント](http://ipafont.ipa.go.jp/)がインストールされている場合、その文字の形の違いを比較することができます。
-
-- [IPAmj明朝フォント | 文字情報基盤整備事業](http://mojikiban.ipa.go.jp/1300.html)
-- [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/)
-
-<!-- dummy comment line for breaking list -->
+[IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝](http://ipafont.ipa.go.jp/)フォントがインストールされている場合、その文字の形の違いを比較することができます。
 
 ## 参考リンク
 - [Fontのアウトラインを取得して文字列の内部を修飾する](http://ateraimemo.com/Swing/LineSplittingLabel.html)
+- [IPAmj明朝フォント | 文字情報基盤整備事業](http://mojikiban.ipa.go.jp/1300.html)
+- [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/)
 - [IPAmj明朝とIPAex明朝で形の違う字 NAOI's fotolife - 20130411131759](http://f.hatena.ne.jp/NAOI/20130411131759)
 
 <!-- dummy comment line for breaking list -->

@@ -90,16 +90,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、`JButton`や`JLabel`を配置しています。
+上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、内部に`JButton`や`JLabel`を配置しています。
 
 - - - -
 `RolloverIcon`は、元のアイコンに以下のようなフィルタを掛けて作成しています。
 
-- `RGBImageFilter`を使用
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>private static ImageIcon makeFilteredImage(ImageIcon srcIcon) {
+<pre class="prettyprint"><code>// RGBImageFilter を使用
+private static ImageIcon makeFilteredImage(ImageIcon srcIcon) {
   RGBImageFilter filter = new SelectedImageFilter();
   FilteredImageSource fis = new FilteredImageSource(srcIcon.getImage().getSource(), filter);
   return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
@@ -114,13 +111,9 @@ class SelectedImageFilter extends RGBImageFilter {
     return (argb &amp; 0xff000000) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | (b);
   }
 }
-</code></pre>
 
-- `RescaleOp`を使用
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>private static ImageIcon makeFilteredImage2(ImageIcon srcIcon) {
+// RescaleOp を使用
+private static ImageIcon makeFilteredImage2(ImageIcon srcIcon) {
   RescaleOp op = new RescaleOp(
       new float[] { 1.2f, 1.2f, 1.2f, 1f },
       new float[] { 0f, 0f, 0f, 0f }, null);

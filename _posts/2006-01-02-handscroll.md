@@ -46,7 +46,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`JViewport`の原点(左上)を ~~`SwingUtilities.convertPoint`メソッドを使って中の`JLabel`(画像)の座標に変換し、これを基準座標としています。この座標を~~ マウスの移動に応じて変更し、`JComponent#scrollRectToVisible`メソッドの引数として使用することで、覗き窓のスクロールを行っています。
+`JViewport`の原点(左上)をマウスの移動に応じて変更し、`JComponent#scrollRectToVisible`メソッドの引数として使用することで、覗き窓のスクロールを行っています。
 
 - - - -
 `JComponent#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると、内部コンポーネントの外側に移動することができます。
@@ -54,7 +54,7 @@ comments: true
 ## 参考リンク
 - [JScrollPaneのオートスクロール](http://ateraimemo.com/Swing/AutoScroll.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
-    - 猫の写真を拝借しています。
+    - 猫の写真を引用
 - [Bug ID: 6333318 JViewport.scrollRectToVisible( Rectangle cr ) doesn't scroll if cr left or above](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6333318)
 - [JScrollPaneでキネティックスクロール](http://ateraimemo.com/Swing/KineticScrolling.html)
 - [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)

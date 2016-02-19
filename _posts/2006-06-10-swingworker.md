@@ -16,9 +16,6 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class Task extends SwingWorker&lt;String, String&gt; {
-  //public Task(List&lt;File&gt; list) {
-  //  this.list = list;
-  //}
   @Override public String doInBackground() {
     System.out.println("doInBackground() is EDT?: " + EventQueue.isDispatchThread());
     try {
@@ -52,7 +49,7 @@ class RunAction extends AbstractAction {
   }
   @Override public void actionPerformed(ActionEvent evt) {
     System.out.println("actionPerformed() is EDT?: " + EventQueue.isDispatchThread());
-    final JProgressBar bar = new JProgressBar(0, 100);
+    final JProgressBar bar = new JProgressBar();
     runButton.setEnabled(false);
     canButton.setEnabled(true);
     anil.startAnimation();
@@ -124,6 +121,13 @@ class CancelAction extends AbstractAction {
 - `EDT`で実行する必要のある処理(上記の例では処理中に`JTextArea`へのメッセージの書き出し)は、`SwingWorker#process()`メソッドをオーバーライドして`SwingWorker#publish()`メソッドで呼び出したり、`SwingWorker#firePropertyChange()`を使用する
 - プログレスバーの処理には、`SwingWorker#setProgress(int)`が予め用意されているので、`SwingWorker#addPropertyChangeListener(ProgressListener)`を設定するだけで使用することが可能
 - `SwingWorker#setProgress(int)`で設定できるのは`0`から`100`で固定
+    
+    <pre class="prettyprint"><code>protected final void setProgress(int progress) {
+      if (progress &lt; 0 || progress &gt; 100) {
+        throw new IllegalArgumentException("the value should be from 0 to 100");
+      }
+    //...
+</code></pre>
 - 実行中の処理のキャンセルは、`SwingWorker#cancel(boolean)`メソッドで行います。キャンセルされたかどうかは、`SwingWorker#isCancelled()`メソッドで判定可能
 
 <!-- dummy comment line for breaking list -->

@@ -18,27 +18,27 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTS0RHzbTI/AAAAAAAAAjY/__rqkPO3bsk/s800/SelectedTabHeight.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>tabbedPane.setUI(new com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI() {
-  private static final int tabAreaHeight = 32;
+<pre class="prettyprint"><code>class WindowsTabHeightTabbedPaneUI extends WindowsTabbedPaneUI {
+  private static final int TAB_AREA_HEIGHT = 32;
   @Override protected int calculateTabHeight(
       int tabPlacement, int tabIndex, int fontHeight) {
-    return tabAreaHeight;
+    return TAB_AREA_HEIGHT;
   }
   @Override protected void paintTab(
       Graphics g, int tabPlacement, Rectangle[] rects,
       int tabIndex, Rectangle iconRect, Rectangle textRect) {
-    if (tabPane.getSelectedIndex() != tabIndex &amp;&amp;
-        tabPlacement != JTabbedPane.LEFT &amp;&amp;
-        tabPlacement != JTabbedPane.RIGHT) {
-      int tabHeight = tabAreaHeight / 2 + 3;
+    if (tabPane.getSelectedIndex() != tabIndex
+        &amp;&amp; tabPlacement != JTabbedPane.LEFT
+        &amp;&amp; tabPlacement != JTabbedPane.RIGHT) {
+      int tabHeight = TAB_AREA_HEIGHT / 2 + 3;
       rects[tabIndex].height = tabHeight;
       if (tabPlacement == JTabbedPane.TOP) {
-        rects[tabIndex].y = tabAreaHeight - tabHeight + 3;
+        rects[tabIndex].y = TAB_AREA_HEIGHT - tabHeight + 3;
       }
     }
     super.paintTab(g, tabPlacement, rects, tabIndex, iconRect, textRect);
   }
-});
+}
 </code></pre>
 
 ## 解説
