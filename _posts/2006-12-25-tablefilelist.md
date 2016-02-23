@@ -39,11 +39,8 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 ## 解説
 上記のサンプルでは、`Name`カラムのセル中にあるアイコンと文字列の上でクリックされた場合のみ、そのセルが選択されるようになっています。
 
-- ~~`JTable#columnAtPoint(Point)`メソッドをオーバーライドし `MouseAdapter`を設定し、`Name`カラムのセルの文字列上でクリックされたかどうかを判別~~
-- ~~クリックされたポイントがそのセルの文字列上に無い場合、別のセル(幅`0`のダミーカラム)がクリックされたように偽装し、現在の選択状態を解除~~
 - `JTable.putClientProperty("Table.isFileList", Boolean.TRUE)`で、`0`列目の文字列以外がクリックされても選択されないように変更
     - `WindowsLookAndFeel`のみ？
-- ~~範囲選択の場合は、文字列の幅を自前で計算~~
 
 <!-- dummy comment line for breaking list -->
 

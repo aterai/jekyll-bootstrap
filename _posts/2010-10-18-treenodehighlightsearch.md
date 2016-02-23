@@ -53,43 +53,10 @@ comments: true
 上記のサンプルでは、`JTextField`に入力した文字列に`startsWith(...)`で一致するノードをハイライトしています。デフォルトの`TreeCellRenderer`は、`isOpaque()==Boolean.FALSE`で、選択色は`DefaultTreeCellRenderer#paint(Graphics g)`で塗りつぶされる(ノードアイコンを除いて選択状態にするため？)ので、検索のハイライトの為にレンダラーを`setOpaque(true)`としてしまうと、マウスなどでノードを選択しても背景色が変更されません。このため、`DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、検索のハイライトはレンダラーを`setOpaque(true)`、ノードの選択は`setOpaque(false)`となるように設定しています。
 
 - - - -
-以下のように、`DefaultTreeCellRenderer#getBackgroundNonSelectionColor()`をオーバーライドする方法を使用すれば、デフォルトの選択領域(ノードアイコンは含まず、ノードテキストのみ)で選択色を変更することができます。
-
-- [JTreeの選択背景色を変更](http://ateraimemo.com/Swing/TreeBackgroundSelectionColor.html)
+- `DefaultTreeCellRenderer#getBackgroundNonSelectionColor()`をオーバーライドする場合、デフォルトの選択領域(ノードアイコンは含まず、ノードテキストのみ)で選択色を変更することが可能
+    - [JTreeの選択背景色を変更](http://ateraimemo.com/Swing/TreeBackgroundSelectionColor.html)に移動
 
 <!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class HighlightTreeCellRenderer extends DefaultTreeCellRenderer {
-  private static final Color rollOverRowColor = new Color(220, 240, 255);
-  public String q;
-  @Override public void updateUI() {
-    setTextSelectionColor(null);
-    setTextNonSelectionColor(null);
-    setBackgroundSelectionColor(null);
-    setBackgroundNonSelectionColor(null);
-    super.updateUI();
-  }
-  boolean rollOver = false;
-  @Override public Color getBackgroundNonSelectionColor() {
-    return rollOver ? rollOverRowColor
-                    : super.getBackgroundNonSelectionColor();
-  }
-  @Override public Component getTreeCellRendererComponent(
-      JTree tree, Object value, boolean isSelected,
-      boolean expanded, boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent) super.getTreeCellRendererComponent(
-        tree, value, isSelected, expanded, leaf, row, hasFocus);
-    if (isSelected) {
-      c.setForeground(getTextSelectionColor());
-    } else {
-      rollOver = q != null &amp;&amp; !q.isEmpty() &amp;&amp; value.toString().startsWith(q);
-      c.setForeground(getTextNonSelectionColor());
-      c.setBackground(getBackgroundNonSelectionColor());
-    }
-    return c;
-  }
-}
-</code></pre>
 
 ## 参考リンク
 - [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
