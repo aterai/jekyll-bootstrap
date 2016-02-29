@@ -30,28 +30,20 @@ styleSheet.addRule(String.format("ul{list-style-image:url(%s);margin:0px 20px;}"
 
 <!-- dummy comment line for breaking list -->
 
-- - - -
-- `javax.swing.text.html.CSS`は、`list-style-type`プロパティも対応しているので、`circle`, `square`, `decimal`などが`bullet`として使用できるが、サイズは固定
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>styleSheet.addRule("ul{list-style-type:circle;margin:0px 20px;}");
-//styleSheet.addRule("ul{list-style-type:disc;margin:0px 20px;}");
-//styleSheet.addRule("ul{list-style-type:square;margin:0px 20px;}");
-//styleSheet.addRule("ul{list-style-type:decimal;margin:0px 20px;}");
+- メモ
+    - `javax.swing.text.html.CSS`は、`list-style-type`プロパティも対応しているので、`circle`, `square`, `decimal`などが`bullet`として使用可能(サイズは固定)
+        
+        <pre class="prettyprint"><code>styleSheet.addRule("ul{list-style-type:circle;margin:0px 20px;}");
+        //styleSheet.addRule("ul{list-style-type:disc;margin:0px 20px;}");
+        //styleSheet.addRule("ul{list-style-type:square;margin:0px 20px;}");
+        //styleSheet.addRule("ul{list-style-type:decimal;margin:0px 20px;}");
 </code></pre>
-
-- - - -
-- `javax.swing.text.html.CSS`は、`a:hover`などの擬似クラス(`pseudo-classes`)や、`:before`などの擬似要素(`pseudo elements`)に対応していないので、以下のように`list-style-type:none`として`:before`で任意の文字を`bullet`に適用することができない
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>styleSheet.addRule("ul{list-style-type:none;margin:0px 20px;}");
-styleSheet.addRule("ul li:before{content:'\u00BB';}");
+    - `javax.swing.text.html.CSS`は、`a:hover`などの擬似クラス(`pseudo-classes`)や、`:before`などの擬似要素(`pseudo elements`)に対応していないので、以下のように`list-style-type:none`として`:before`で任意の文字を`bullet`に適用することができない
+        
+        <pre class="prettyprint"><code>styleSheet.addRule("ul{list-style-type:none;margin:0px 20px;}");
+        styleSheet.addRule("ul li:before{content:'\u00BB';}");
 </code></pre>
-
-- - - -
-- `javax.swing.text.html.StyleSheet.ListPainter#drawShape(...)`などをオーバーライドできれば直接`bullet`の形やサイズを変更できそうだが、コンストラクタがパッケージプライベート
+    - `javax.swing.text.html.StyleSheet.ListPainter#drawShape(...)`などをオーバーライドできれば直接`bullet`の形やサイズを変更できそうだが、コンストラクタがパッケージプライベートのため変更不可
 
 <!-- dummy comment line for breaking list -->
 

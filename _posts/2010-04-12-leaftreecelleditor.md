@@ -16,28 +16,25 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class LeafTreeCellEditor extends DefaultTreeCellEditor {
-  public LeafTreeCellEditor(JTree tree, DefaultTreeCellRenderer renderer) {
+  protected LeafTreeCellEditor(JTree tree, DefaultTreeCellRenderer renderer) {
     super(tree, renderer);
   }
-  @Override public boolean isCellEditable(java.util.EventObject e) {
-    boolean b = super.isCellEditable(e);
+  @Override public boolean isCellEditable(EventObject e) {
     Object o = tree.getLastSelectedPathComponent();
-    if (b &amp;&amp; o instanceof TreeNode) {
+    if (super.isCellEditable(e) &amp;&amp; o instanceof TreeNode) {
       return ((TreeNode) o).isLeaf();
     } else {
-      return b;
+      return false;
     }
   }
 }
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`CellEditor#isCellEditable`メソッドを葉ノードの場合だけ、編集を開始できるようにオーバーライドしたセルエディタを作成、設定しています。
+上記のサンプルでは、`CellEditor#isCellEditable(...)`メソッドをオーバーライドし、葉ノードの場合だけ編集が可能にしたセルエディタを作成し、これを`JTree#setCellEditor(...)`で設定しています。
 
 <pre class="prettyprint"><code>tree.setCellEditor(new LeafTreeCellEditor(tree, (DefaultTreeCellRenderer) tree.getCellRenderer()));
 </code></pre>
-
-ルートノードなどの枝ノードは、トリプルクリックしても編集不可になっています。
 
 ## 参考リンク
 - [Swing - How can I persist all changes I made to these edited leaves and nodes??](https://community.oracle.com/thread/1371600)

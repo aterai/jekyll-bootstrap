@@ -56,11 +56,11 @@ tab1.setUI(new BasicTabbedPaneUI() {
 ## 解説
 上記のサンプルでは、`BasicTabbedPaneUI#calculateTabWidth`メソッドをオーバーライドして、`JTabbedPane`のタブ幅が、すべて等しくなるように設定しています。
 
-タイトル文字列のほうが、このタブ幅より長い場合は、`SwingUtilities.layoutCompoundLabel`メソッドで文字列をクリップして表示します。
+- タイトル文字列のほうが、このタブ幅より長い場合は、`SwingUtilities.layoutCompoundLabel`メソッドで文字列をクリップして表示
+- タイトルがクリップされていても、ツールチップで元の文字列を表示する
+- タブの位置を左右にした場合、このサンプルでは全体の幅の`1/4`のタブ幅になるように設定
 
-タイトルがクリップされていても、ツールチップで元の文字列を表示することができます。
-
-タブの位置を左右にした場合、このサンプルでは全体の幅の`1/4`のタブ幅になるようにしています。
+<!-- dummy comment line for breaking list -->
 
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJZ71XT7I/AAAAAAAAAUU/bO4iaEaR_xU/s800/ClippedTitleTab1.png)
 

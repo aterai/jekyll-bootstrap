@@ -75,22 +75,22 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 上記のサンプルでは、クリックされた時に、リンクをブラウザで開く([Desktopでブラウザを起動](http://ateraimemo.com/Swing/Desktop.html))代わりに、`beep`音を鳴らしています。
 
 - `JLabel` + `MouseListener`
-    - `JLabel`に`MouseListener`を設定しています。
-    - リンクの表示には`<a>`タグを使っています。
+    - `JLabel`に`MouseListener`を設定
+    - リンクの表示には`<a>`タグを使用
 
 <!-- dummy comment line for breaking list -->
 
 - `JButton` + `ButtonUI`
-    - `JButton`に、文字の描画を変更する`ButtonUI`を設定しています。
+    - `JButton`に、文字の描画を変更する`ButtonUI`を設定
         - `Rollover`: アンダーライン
         - `Pressed`: 黒
 
 <!-- dummy comment line for breaking list -->
 
 - `JEditorPane` + `HyperlinkListener`
-    - 編集不可にした`JEditorPane`に`HyperlinkListener`を設定しています。
-    - リンクの表示には`<a>`タグを使っています。
-    - 選択してコピーできます。
+    - 編集不可にした`JEditorPane`に`HyperlinkListener`を設定
+    - リンクの表示には`<a>`タグを使用
+    - 文字列選択してコピーが可能
 
 <!-- dummy comment line for breaking list -->
 

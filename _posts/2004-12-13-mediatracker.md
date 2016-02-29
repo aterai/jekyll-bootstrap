@@ -16,12 +16,13 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private Dimension getImageDimension(Image img) {
+  int id = 0;
   MediaTracker tracker = new MediaTracker((Container) this);
-  tracker.addImage(img, 0);
+  tracker.addImage(img, id);
   try {
-    tracker.waitForID(0);
+    tracker.waitForID(id);
   } catch (InterruptedException e) {}
-  return new Dimension(img.getWidth(null), img.getHeight(null));
+  return new Dimension(img.getWidth(this), img.getHeight(this));
 }
 </code></pre>
 

@@ -22,11 +22,11 @@ comments: true
 上記のサンプルでは、`tree.getSelectionModel().setSelectionMode(...)`メソッドを使用して、選択モードを設定しています。
 
 - `TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION`
-    - <kbd>Ctrl+Click</kbd>、<kbd>Shift+Click</kbd>などで、自由に`TreePath`を選択状態にすることができます。
+    - <kbd>Ctrl+Click</kbd>、<kbd>Shift+Click</kbd>などで、自由に`TreePath`を選択可能
 - `TreeSelectionModel.SINGLE_TREE_SELECTION`
-    - `TreePath`をひとつだけ選択状態にすることができます。
+    - `TreePath`をひとつだけ選択可能
 - `TreeSelectionModel.CONTIGUOUS_TREE_SELECTION`
-    - `TreePath`が連続している場合は、複数選択できます。
+    - `TreePath`が連続している場合は、複数選択が可能
 
 <!-- dummy comment line for breaking list -->
 

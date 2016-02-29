@@ -23,7 +23,7 @@ label.setBorder(BorderFactory.createCompoundBorder(outside, inside));
 ## 解説
 `MatteBorder`は、`4`辺それぞれに異なる幅の直線を描画することができます。上記のサンプルでは、左と下のみ枠を描いてタイトル風のラベルを作成しています。
 
-アイコンをタイル状に描画することもできるので、[JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)のような使い方をする場合もあります。
+`Icon`をタイル状に描画することもできるので、[JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)のような使い方をすることもできます。
 
 ## 参考リンク
 - [JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)

@@ -57,17 +57,17 @@ protected JInternalFrame createFrame(JPanel panel) {
 各フレームは、`JInternalFrame#setContentPane(Container)`メソッドを使用して、`ContentPane`を以下のような半透明パネルに変更しています。
 
 - `Frame#1` (`Transparent`)
-    - `ContentPane`を`setOpaque(false)`して透過しています。
+    - `ContentPane`を`setOpaque(false)`して透過
 
 <!-- dummy comment line for breaking list -->
 
 - `Frame#2` (`Translucent`)
-    - `ContentPane`を半透明な色で塗りつぶしています。
+    - `ContentPane`を半透明な色で塗りつぶし
 
 <!-- dummy comment line for breaking list -->
 
 - `Frame#3` (`Translucent`)
-    - `ContentPane`を半透明な色を使ってチェック柄で塗りつぶしています。
+    - `ContentPane`を半透明な色を使ってチェック柄で塗りつぶし
 
 <!-- dummy comment line for breaking list -->
 
