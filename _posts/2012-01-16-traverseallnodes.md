@@ -28,18 +28,12 @@ while (e.hasMoreElements()) {
 上記のサンプルでは、この`JTree`の最上位ノードをルートにするサブツリーを、深さ優先、幅優先などで全走査しています。
 
 - [DefaultMutableTreeNode#depthFirstEnumeration()](http://docs.oracle.com/javase/jp/6/api/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration%28%29)
-    - [DefaultMutableTreeNode#postorderEnumeration()](http://docs.oracle.com/javase/jp/6/api/javax/swing/tree/DefaultMutableTreeNode.html#postorderEnumeration%28%29)と同じ
-    - 深さ優先走査(後順走査)
+    - 深さ優先走査
+    - [DefaultMutableTreeNode#postorderEnumeration()](http://docs.oracle.com/javase/jp/6/api/javax/swing/tree/DefaultMutableTreeNode.html#postorderEnumeration%28%29)の後順走査と同一
     - `blue, violet, red, yellow, colors, basketball, ... , JTree`
-
-<!-- dummy comment line for breaking list -->
-
 - [DefaultMutableTreeNode#breadthFirstEnumeration()](http://docs.oracle.com/javase/jp/6/api/javax/swing/tree/DefaultMutableTreeNode.html#breadthFirstEnumeration%28%29)
     - 幅優先走査
     - `JTree, colors, sports, food, blue, violet, red, ...`
-
-<!-- dummy comment line for breaking list -->
-
 - [DefaultMutableTreeNode#preorderEnumeration()](http://docs.oracle.com/javase/jp/6/api/javax/swing/tree/DefaultMutableTreeNode.html#preorderEnumeration%28%29)
     - 前順走査
     - `JTree, colors, blue, violet, red, yellow, sports, basketball, soccer, ...`

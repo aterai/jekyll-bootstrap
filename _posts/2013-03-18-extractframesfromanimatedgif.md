@@ -41,10 +41,10 @@ reader.dispose();
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`ImageReader`に`AnimatedGif`ファイルを読み込ませて、`IIOImage#getRenderedImage()`で各フレームの`BufferedImage`を取得しています。
+上記のサンプルでは、`ImageReader`に`AnimatedGif`ファイルを読み込んで、`IIOImage#getRenderedImage()`メソッドで各フレームの`BufferedImage`を取得しています。
 
 - 注:
-    - 背景色や差分フレームを無視している
+    - 背景色や差分フレームは無視している
     - `try-with-resources`を使っているので、`JDK 1.7.0`以上が必要
 
 <!-- dummy comment line for breaking list -->
