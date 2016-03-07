@@ -76,8 +76,8 @@ comments: true
   });
   private static boolean isInside(JViewport vport, JComponent comp) {
     Point vp = vport.getViewPosition();
-    return vp.x &gt;= 0 &amp;&amp; vp.x + vport.getWidth() - comp.getWidth() &lt;= 0
-           &amp;&amp; vp.y &gt;= 0 &amp;&amp; vp.y + vport.getHeight() - comp.getHeight() &lt;= 0;
+    return vp.x &gt;= 0 &amp;&amp; vp.x + vport.getWidth()  - comp.getWidth()  &lt;= 0
+        &amp;&amp; vp.y &gt;= 0 &amp;&amp; vp.y + vport.getHeight() - comp.getHeight() &lt;= 0;
   }
   public KineticScrollingListener2(JComponent comp) {
     super();

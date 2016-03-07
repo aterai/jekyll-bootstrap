@@ -21,7 +21,7 @@ Shape copyright = new TextLayout("\u00a9", font, frc).getOutline(null);
 AffineTransform at = AffineTransform.getScaleInstance(-1d, 1d);
 //Rectangle r = copyright.getBounds();
 //at.translate(r.getWidth(), r.getHeight());
-//AffineTransform at = new AffineTransform(-1d, 0, 0, 1d, r.getWidth(), r.getHeight());
+//AffineTransform at = new AffineTransform(-1d, 0d, 0d, 1d, r.getWidth(), r.getHeight());
 Shape copyleft = at.createTransformedShape(copyright);
 </code></pre>
 
@@ -32,7 +32,6 @@ Shape copyleft = at.createTransformedShape(copyright);
 
 ## 参考リンク
 - [コピーレフト - Wikipedia](http://en.wikipedia.org/wiki/Copyleft)
-    - アイコン
 - [AffineTransformOpで画像を反転する](http://ateraimemo.com/Swing/AffineTransformOp.html)
 
 <!-- dummy comment line for breaking list -->

@@ -24,7 +24,7 @@ JLabel path = new JLabel(url.toString());
 ## 解説
 `ClassLoader`を使用して、位置に依存しない方法でリソース(`URL`)を取得します。
 
-- 例えば`new ImageIcon(String filename)`のようにファイルパスを文字列で指定した場合、このファイルパスが位置(カレントディレクトリ)に依存しているため、実行時にカレントディレクトリを変更したり、`jar`ファイルにまとめたりするとファイルが参照できなくなる
+- 例えば`new ImageIcon(String filename)`のようにファイルパスを文字列で指定した場合、このファイルパスが位置(カレントディレクトリ)に依存しているため、実行時に別のディレクトリから起動したり、`jar`ファイルにまとめたりするとファイルが参照できなくなる
 
 <!-- dummy comment line for breaking list -->
 

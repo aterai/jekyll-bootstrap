@@ -28,7 +28,7 @@ frame.addComponentListener(new ComponentAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFrame`のサイズを変更した後、その幅から縦横比が同じになるような高さを計算して、`JFrame#setSize(int,int)`でサイズを設定し直しています。
+上記のサンプルでは、`JFrame`のサイズを変更した後、その幅から縦横比が変更前と同じになるような高さを計算して`JFrame#setSize(int,int)`で設定し直しています。
 
 ## 参考リンク
 - [JFrameの最小サイズ](http://ateraimemo.com/Swing/MinimumFrame.html)

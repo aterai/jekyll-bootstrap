@@ -65,7 +65,7 @@ comments: true
         - [JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)
 - `JTextField`
     - `JTextField#getMaximumSize()`をオーバーライドして幅を制限
-    - `JTextFieldにMatteBorder`を設定して下線のみ表示
+    - `JTextField`に`MatteBorder`を設定して下線のみ表示
     - `JTextField#setAlignmentY(...)`でベースラインを揃える
         - [JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)
     - `JTextField`に`FocusListener`を追加し、<kbd>Tab</kbd>キーなどで`Focus`が移動したら、その`JTextField`までスクロールするように設定

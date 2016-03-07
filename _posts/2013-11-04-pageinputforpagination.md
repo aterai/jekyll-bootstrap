@@ -40,7 +40,7 @@ comments: true
     List&lt;Object[]&gt; result = new ArrayList&lt;Object[]&gt;(size);
     int j = current;
     while (j &lt; current + size) {
-      result.add(new Object[] {j, "Test: " + j, (j % 2 == 0) ? "" : "comment..."});
+      result.add(new Object[] {j, "Test: " + j, j % 2 == 0 ? "" : "comment..."});
       j++;
     }
     publish(result);
