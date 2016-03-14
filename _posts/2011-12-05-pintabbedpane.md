@@ -30,7 +30,7 @@ comments: true
     if (check.isSelected()) {
       for (i = 0; i &lt; idx; i++) {
         String s = t.getTitleAt(i);
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
           continue;
         }
         break;
@@ -38,7 +38,7 @@ comments: true
     } else {
       for (i = t.getTabCount() - 1; i &gt; idx; i--) {
         String s = t.getTitleAt(i);
-        if (s != null &amp;&amp; s.length() &gt; 0) {
+        if (s != null &amp;&amp; !s.isEmpty()) {
           continue;
         }
         break;

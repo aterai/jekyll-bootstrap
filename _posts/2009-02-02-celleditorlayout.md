@@ -131,7 +131,7 @@ comments: true
       final KeyStroke ks, final KeyEvent e, int condition, boolean pressed) {
     if (!field.isFocusOwner() &amp;&amp; !pressed) {
       field.requestFocusInWindow();
-      SwingUtilities.invokeLater(new Runnable() {
+      EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           KeyboardFocusManager.getCurrentKeyboardFocusManager()
             .redispatchEvent(field, e);

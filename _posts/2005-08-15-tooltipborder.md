@@ -25,7 +25,7 @@ comments: true
     return tip;
   }
 };
-button.setToolTipText("テスト");
+button.setToolTipText("Test - ToolTipText1");
 </code></pre>
 
 ## 解説

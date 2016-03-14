@@ -15,7 +15,8 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHkbNXdwI/AAAAAAAAARY/RzDAT8xyR3c/s800/AnimatedCursor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>list[0] = tk.createCustomCursor(tk.createImage(url00), pt, "00");
+<pre class="prettyprint"><code>Toolkit tk = Toolkit.getDefaultToolkit();
+list[0] = tk.createCustomCursor(tk.createImage(url00), pt, "00");
 list[1] = tk.createCustomCursor(tk.createImage(url01), pt, "01");
 list[2] = tk.createCustomCursor(tk.createImage(url02), pt, "02");
 animator = new Timer(100, new ActionListener() {

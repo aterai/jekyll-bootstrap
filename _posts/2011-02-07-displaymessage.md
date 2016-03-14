@@ -16,13 +16,16 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>//TrayIcon.MessageType: ERROR, WARNING, INFO, NONE
-trayIcon.displayMessage("caption", "text", TrayIcon.MessageType.ERROR);
+trayIcon.displayMessage("caption", "text text...", TrayIcon.MessageType.ERROR);
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`TrayIcon.displayMessage(...)`メソッドを使用して、ポップアップメッセージを表示しています。
 
-- - - -
-`TrayIcon`に`ActionListener`を追加しておくと、ポップアップメッセージのクリックイベントを取得することができます。
+- メモ:
+    - `TrayIcon`に`ActionListener`を追加しておくと、ポップアップメッセージのクリックイベントを取得することが可能
+    - `Windows 10`で`TrayIcon.MessageType.NONE`を使用する場合、`TrayIcon#setImage(...)`がポップアップメッセージのアイコンとして表示されるが、`TrayIcon.setImageAutoSize(false)`でも自動的にリサイズされ、背景色は透過せず黒になる
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

@@ -43,34 +43,13 @@ editorPane.addHyperlinkListener(new HyperlinkListener() {
 
 - - - -
 以下のように、`JButton`などのコンポーネントを使用する方法もあります。
+
 - 編集可
 - 部分選択できない
-- ~~ベースラインがうまく揃わない？~~ [JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html) のように、`JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
+- ~~ベースラインがうまく揃わない？~~ `JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
+    - サンプルコードは、[JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)に移動
 
 <!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>HTMLDocument doc = (HTMLDocument) editorPane.getDocument();
-Style s = doc.addStyle("button", null);
-StyleConstants.setAlignment(s, StyleConstants.ALIGN_CENTER);
-HyperlinkButton button = new HyperlinkButton(new AbstractAction(LINK) {
-  @Override public void actionPerformed(ActionEvent e) {
-    AbstractButton b = (AbstractButton) e.getSource();
-    editorPane.setBackground(b.isSelected() ? Color.RED : Color.WHITE);
-    JOptionPane.showMessageDialog(
-        editorPane, "You click the link with the URL " + LINK);
-  }
-});
-button.setToolTipText("button: " + LINK);
-button.setOpaque(false);
-StyleConstants.setComponent(s, button);
-try {
-  doc.insertString(doc.getLength(), "\n----\nJButton:\n", null);
-  doc.insertString(doc.getLength(), LINK + "\n", doc.getStyle("button"));
-  //doc.insertString(doc.getLength(), "\n", null);
-} catch (BadLocationException ble) {
-  ble.printStackTrace();
-}
-</code></pre>
 
 ## 参考リンク
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)

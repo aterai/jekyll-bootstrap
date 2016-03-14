@@ -18,6 +18,7 @@ comments: true
 <pre class="prettyprint"><code>class MnemonicToolTip extends JToolTip {
   private final JLabel mnemonicLabel = new JLabel();
   public MnemonicToolTip() {
+    super();
     setLayout(new BorderLayout());
     mnemonicLabel.setForeground(Color.GRAY);
     mnemonicLabel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 2));

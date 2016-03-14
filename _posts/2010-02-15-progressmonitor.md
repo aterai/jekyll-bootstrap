@@ -76,11 +76,13 @@ worker.execute();
     this.monitor.setProgress(0);
   }
   @Override public void propertyChange(PropertyChangeEvent e) {
+    Object o = e.getSource();
     String strPropertyName = e.getPropertyName();
-    if ("progress".equals(strPropertyName)) {
+    if ("progress".equals(strPropertyName) &amp;&amp; o instanceof SwingWorker) {
+      SwingWorker task = (SwingWorker) o;
       monitor.setProgress((Integer) e.getNewValue());
-      if (monitor.isCanceled()) {
-        ((SwingWorker) e.getSource()).cancel(true);
+      if (monitor.isCanceled() || task.isDone()) {
+        task.cancel(true);
       }
     }
   }
@@ -90,7 +92,7 @@ worker.execute();
 ## 参考リンク
 - [How to Use Progress Bars (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
 - [ProgressMonitorがダイアログを表示するまでの待ち時間](http://ateraimemo.com/Swing/MillisToDecideToPopup.html)
-    - 処理時間が短くて`ProgressMonitor`が表示されない場合などについて
+    - 処理時間が短くて`ProgressMonitor`が表示されない場合の待ち時間をテスト
 
 <!-- dummy comment line for breaking list -->
 
