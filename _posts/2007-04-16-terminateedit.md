@@ -21,16 +21,13 @@ comments: true
 ## 解説
 デフォルトの`JTable`では、<kbd>Tab</kbd>キーやマウスのクリックなどで同じテーブルの別セルにフォーカスが移動すると編集が確定しますが、別のコンポーネントにフォーカスが移動しても編集は確定しません。
 
-- `table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);`とすると、
-    - 同じフレームを親に持つコンポーネントにフォーカスが移動したとき、編集が確定するようになります。
-    - 別フレームのコンポーネントにフォーカスが移動しても編集中のままです。
-    - ヘッダをクリック、入れ替え、サイズ変更すると、編集はキャンセルされます。
-
-<!-- dummy comment line for breaking list -->
-
-- `DefaultCellEditor`からエディタコンポーネントを取得し、`FocusListener`を設定して、セルが編集中なら`table.getCellEditor().stopCellEditing();`とすると、
-    - 別フレームのコンポーネントにフォーカスが移動したときも、編集が確定するようになります。
-    - ヘッダをクリック、入れ替え、サイズ変更すると、編集はキャンセルされます。
+- `table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);`を設定:
+    - 同じフレームを親に持つコンポーネントにフォーカスが移動したとき、編集が確定する
+    - 別フレームのコンポーネントにフォーカスが移動しても編集中のまま
+    - ヘッダをクリック、入れ替え、サイズ変更すると、編集はキャンセルされる
+- `DefaultCellEditor`からエディタコンポーネントを取得し、`FocusListener`を設定し、セルが編集中なら`table.getCellEditor().stopCellEditing();`を実行:
+    - 別フレームのコンポーネントにフォーカスが移動したときも、編集が確定する
+    - ヘッダをクリック、入れ替え、サイズ変更すると、編集はキャンセルされる
 
 <!-- dummy comment line for breaking list -->
 
@@ -47,9 +44,12 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 });
 </code></pre>
 
-- `TableHeader`に`MouseListener`を設定して、セルが編集中なら`table.getCellEditor().stopCellEditing();`とすると、
-    - ヘッダをクリックしたとき、編集が確定するようになります。
-    - `JDK 1.7.0`では、`TableHeader`にこの`MouseListener`を設定しなくても編集が確定するように修正されています。
+- `TableHeader`に`MouseListener`を設定して、セルが編集中なら`table.getCellEditor().stopCellEditing();`
+
+<!-- dummy comment line for breaking list -->
+を実行:
+    - ヘッダをクリックしたとき、編集が確定する
+    - `JDK 1.7.0`では、このような`MouseListener`を`TableHeader`に設定しなくても、編集が確定するように修正済み
     - [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950)
 
 <!-- dummy comment line for breaking list -->

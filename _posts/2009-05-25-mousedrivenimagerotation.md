@@ -120,10 +120,11 @@ comments: true
 </code></pre>
 
 ## 解説
-画像の中心をドラッグすると移動、すこし外側をドラッグすると画像を回転することができます。
+- 画像の移動: 画像の中心にマウスが近づくと表示される円図形をドラッグ
+- 画像の回転: 上記の円図形の外側に表示されるドーナツ型図形をドラッグ
+    - ドーナツ型図形は、`Area#subtract`メソッドを使用して作成
 
-- - - -
-回転のためのドーナツ状の図形は、`Area#subtract`メソッドを使用して作成しています。
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)

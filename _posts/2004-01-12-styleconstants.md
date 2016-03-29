@@ -16,17 +16,13 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>StyledDocument doc = jtp.getStyledDocument();
-Style def = StyleContext.getDefaultStyleContext().getStyle(
-    StyleContext.DEFAULT_STYLE);
-
-Style regular = doc.addStyle("regular", def);
-//StyleConstants.setForeground(def, Color.BLACK);
-
-Style error = doc.addStyle("error", regular);
+Style def = doc.getStyle(StyleContext.DEFAULT_STYLE);
+Style error = doc.addStyle("error", def);
 StyleConstants.setForeground(error, Color.RED);
 </code></pre>
+
 <pre class="prettyprint"><code>private void append(String str, boolean flg) {
-  String style = flg ? "regular" : "error";
+  String style = flg ? StyleContext.DEFAULT_STYLE : "error";
   StyledDocument doc = jtp.getStyledDocument();
   try {
     doc.insertString(doc.getLength(), str + "\n", doc.getStyle(style));

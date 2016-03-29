@@ -37,13 +37,13 @@ comments: true
 `JTable#changeSelection`は、`toggle`と`extend`の`2`つのフラグで、セルの選択状態を以下のようにいろいろ変更することができます([JTable#changeSelection(int, int, boolean, boolean)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#changeSelection-int-int-boolean-boolean-) より引用)。
 
 - `toggle`:`false`、`extend`:`false`
-    - 既存の選択をクリアし、新しいセルが確実に選択されるようにする。
+    - 既存の選択をクリアし、新しいセルが確実に選択されるようにする
 - `toggle`:`false`、`extend`:`true`
-    - 既存の選択をアンカーから指定のセルまで拡張して、ほかのすべての選択をクリアする。
+    - 既存の選択をアンカーから指定のセルまで拡張して、ほかのすべての選択をクリアする
 - `toggle`:`true`、`extend`:`false`
-    - 指定されたセルが選択されている場合、そのセルを選択解除する。選択されていない場合、そのセルを選択する。
+    - 指定されたセルが選択されている場合、そのセルを選択解除する。選択されていない場合、そのセルを選択する
 - `toggle`:`true`、`extend`:`true`
-    - アンカーの選択状態を、そのアンカーと指定されたセル間のすべてのセルに適用する。
+    - アンカーの選択状態を、そのアンカーと指定されたセル間のすべてのセルに適用する
 
 <!-- dummy comment line for breaking list -->
 

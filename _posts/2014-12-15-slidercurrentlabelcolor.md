@@ -42,10 +42,10 @@ comments: true
 
 - 上: デフォルト
 - 中: `setMajorTickSpacing(10)`
-    - 現在値をハイライトするリスナーを追加
+    - 現在値をハイライトするための`ChangeListener`を追加
     - 現在値が大目盛りになったら(`model.getValue() % slider.getMajorTickSpacing() == 0`)、対応する`JLabel`を`JSlider#getLabelTable()`から取得して、文字色を変更
 - 下: `setMajorTickSpacing(0)`
-    - 現在値をハイライトするリスナーを追加
+    - 現在値をハイライトするための`ChangeListener`を追加
     - 現在値(`slider.getMajorTickSpacing()`が`0`なので)に対応する`JLabel`を`JSlider#getLabelTable()`から取得して、文字色を変更
 
 <!-- dummy comment line for breaking list -->

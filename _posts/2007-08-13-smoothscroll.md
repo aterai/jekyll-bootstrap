@@ -49,7 +49,7 @@ try {
 </code></pre>
 
 ## 解説
-`java.swing.Timer`でイベントを発生させ、目的位置と現在位置の差の半分だけ`ViewRect`のスクロールを繰り返すことで、アニメーションを行っています。
+`java.swing.Timer`でイベントを発生させ、目的位置と現在位置の差の半分だけ`ViewRect`のスクロールを繰り返すことで、行の移動アニメーションを行っています。
 
 ## 参考リンク
 - [JTextAreaの任意の行に移動](http://ateraimemo.com/Swing/GotoLine.html)

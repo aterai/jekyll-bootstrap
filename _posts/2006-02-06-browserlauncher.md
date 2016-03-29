@@ -30,7 +30,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 </code></pre>
 
 ## 解説
-ブラウザの起動には、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用しています。`Mac OS X`, `GNU/Linux`, `Unix`, `Windows XP`に対応しているようです。
+上記のサンプルでは、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用して、指定した`URL`をブラウザで開いています。`Mac OS X`, `GNU/Linux`, `Unix`, `Windows XP`に対応しているようです。
 
 - - - -
 - `Java SE 6`の新機能である`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することが可能

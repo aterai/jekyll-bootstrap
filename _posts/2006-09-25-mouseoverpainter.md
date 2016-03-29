@@ -40,7 +40,7 @@ comments: true
     g2.dispose();
     super.paintComponent(g);
   }
-  private class RollOverListener extends MouseInputAdapter {
+  private class RollOverListener extends MouseAdapter {
     @Override public void mouseExited(MouseEvent e) {
       rollOverRowIndex = -1;
       repaint();
@@ -61,6 +61,6 @@ comments: true
 </code></pre>
 
 ## 解説
-`MouseInputAdapter`を継承した`RollOverListener`で、マウスカーソルのある行を記憶し、`JTextArea#paintComponent`メソッドをオーバーライドして、その行の背景に色を付けています。
+`MouseAdapter`を継承した`RollOverListener`で、マウスカーソルのある行を記憶し、`JTextArea#paintComponent`メソッドをオーバーライドして、その行の背景に色を付けています。
 
 ## コメント
