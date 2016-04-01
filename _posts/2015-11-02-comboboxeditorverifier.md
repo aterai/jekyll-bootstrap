@@ -7,6 +7,9 @@ tags: [JComboBox, ComboBoxEditor, JLayer, InputVerifier]
 author: aterai
 pubdate: 2015-11-02T00:47:14+09:00
 description: JComboBoxのComboBoxEditorにJLayerを設定し、その入力が妥当でない場合はアイコンを表示します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2016/03/validating-input-on-editable-jcombobox.html
+    lang: en
 comments: true
 ---
 ## 概要

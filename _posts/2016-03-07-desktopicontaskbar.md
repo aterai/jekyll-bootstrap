@@ -6,7 +6,7 @@ title: JDesktopPaneにTaskBarを配置してJInternalFrameの一覧を表示す�
 tags: [JDesktopPane, JInternalFrame, NimbusLookAndFeel]
 author: aterai
 pubdate: 2016-03-07T09:09:57+09:00
-description: AffineTransformで図形や画像を反転して表示します。
+description: JDesktopPaneに追加されているJInternalFrameの一覧を表示するタスクバーを設定します。
 comments: true
 ---
 ## JDesktopPaneにTaskBarを配置してJInternalFrameの一覧を表示する

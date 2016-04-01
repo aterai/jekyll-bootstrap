@@ -10,7 +10,7 @@ description: JComboBoxがそのセルサイズを決定するために使用す�
 comments: true
 ---
 ## 概要
-JComboBoxがそのセルサイズを決定するために使用するプロトタイプ値を設定します。
+`JComboBox`がそのセルサイズを決定するために使用するプロトタイプ値を設定します。
 
 {% download https://lh3.googleusercontent.com/-DafUFitik9w/VVidadY7TNI/AAAAAAAAN4U/D40YKz8mMUY/s800/PrototypeDisplayValue.png %}
 
