@@ -34,7 +34,11 @@ comments: true
 ## 解説
 上記のサンプルでは、`2`列目のカラムクラスを`Boolean`に設定し、`JRadioButton`を継承するセルレンダラ、セルエディタを使って`Boolean`値の表示、編集を行っています。
 
-`ButtonGroup`を使用することが出来ないので、ある`2`列目セルの値を`TRUE`にすると、ほかの行の`2`列目セルの値がすべて`FALSE`になるよう、`TableModel#setValueAt(...)`メソッドをオーバーライドしています。
+- セルレンダラとセルエディタの`JRadioButton`は、行数分ではなく、描画用にそれぞれ一つだけ作成して使用
+- `ButtonGroup`を使用して、表中の`JRadioButton`を一つだけ選択状態に制限することは出来ない
+- 代わりに、ある`2`列目セルの値を`TRUE`にすると、ほかの行の`2`列目セルの値がすべて`FALSE`になるよう、`TableModel#setValueAt(...)`メソッドをオーバーライド
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JTableのセル中にJRadioButtonを配置](http://ateraimemo.com/Swing/RadioButtonsInTableCell.html)

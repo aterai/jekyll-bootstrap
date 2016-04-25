@@ -89,12 +89,9 @@ comments: true
 `JComboBox`を編集可にした状態で、以下のように`List`部分、`Editor`部分に背景色を設定します。
 
 - `List`部分
-    - `ListCellRenderer`を使用することで背景色を変更しています。
-
-<!-- dummy comment line for breaking list -->
-
+    - `ListCellRenderer`を使用することで背景色を変更
 - `Editor`部分
-    - `getEditor().getEditorComponent()`で`JTextField`オブジェクトを取得して背景色を変更しています。
+    - `getEditor().getEditorComponent()`で`JTextField`オブジェクトを取得して背景色を変更
 
 <!-- dummy comment line for breaking list -->
 

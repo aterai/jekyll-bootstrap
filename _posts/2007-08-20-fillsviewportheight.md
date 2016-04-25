@@ -15,21 +15,9 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMkfiP8jI/AAAAAAAAAZY/qHWqJtrcUgQ/s800/FillsViewportHeight.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>table.setFillsViewportHeight(true);
-</code></pre>
-<pre class="prettyprint"><code>table = new JTable(model) {
-  @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
-    Component c = super.prepareRenderer(tcr, row, column);
-    if (isRowSelected(row)) {
-      c.setForeground(getSelectionForeground());
-      c.setBackground(getSelectionBackground());
-    } else {
-      c.setForeground(getForeground());
-      c.setBackground((row % 2 == 0) ? evenColor : getBackground());
-    }
-    return c;
-  }
-};
+<pre class="prettyprint"><code>JTable table = new JTable(model);
+table.setFillsViewportHeight(true);
+
 JScrollPane scroll = new JScrollPane(table);
 scroll.setBackground(Color.RED);
 scroll.getViewport().setBackground(Color.GREEN);
@@ -40,7 +28,7 @@ scroll.getViewport().setBackground(Color.GREEN);
 ## 解説
 上記のサンプルでは、チェックボックスの選択状態で、`JTable#setFillsViewportHeight(boolean)`を適用するかどうかを切り替えることができます。
 
-- `getFillsViewportHeight() == false`の場合(デフォルト値)
+- `getFillsViewportHeight() == false`(デフォルト値)の場合
     - 下部の余白は`JTable`ではないため、`JViewport`の背景色(緑)が表示される
         - [JTableの背景色を変更](http://ateraimemo.com/Swing/TableBackground.html)
     - `JScrollPane`、または`JViewport`に`setComponentPopupMenu`したり、リスナーを設定していないため、下部の余白で右クリックしてもポップアップメニューは無効

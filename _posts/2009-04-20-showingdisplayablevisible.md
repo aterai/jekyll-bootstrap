@@ -29,42 +29,27 @@ comments: true
 ## 解説
 上記のサンプルでは、コンポーネント(`JButton`)に`HierarchyListener`を追加して、表示状態が切り替わった時の`isDisplayable`、`isShowing`、`isVisible`を調べています。
 
-- 対象ボタンを作成した後、かつパネルにそれを追加して`frame.setVisible(true)`を実行する前の場合
+- 対象ボタンを作成してパネルに追加した状態で、`frame.setVisible(true)`を実行する前の場合:
     - `isDisplayable`: `false`
     - `isShowing`: `false`
     - `isVisible`: `true`
-
-<!-- dummy comment line for breaking list -->
-
 - `frame.setVisible(true)`後: `HierarchyEvent.DISPLAYABILITY_CHANGED`
     - `isDisplayable`: `true`
     - `isShowing`: `false`
     - `isVisible`: `true`
-
-<!-- dummy comment line for breaking list -->
-
 - `HierarchyEvent.SHOWING_CHANGED`
     - `isDisplayable`: `true`
     - `isShowing`: `true`⇔`false`
     - `isVisible`: `true`
-
-<!-- dummy comment line for breaking list -->
-
-- コンポーネントが`JScrollPane`の表示領域にない、フレームがアイコン化、別パネルの裏に隠れているといった場合
+- コンポーネントが`JScrollPane`の表示領域にない、フレームがアイコン化、別パネルの裏に隠れているといった場合:
     - `isDisplayable`: `true`
     - `isShowing`: `true`
     - `isVisible`: `true`
-
-<!-- dummy comment line for breaking list -->
-
-- コンポーネントが`JTabbedPane`や`CardLayout`の表示領域にないなど(親コンポーネントが非表示)の場合
+- コンポーネントが`JTabbedPane`や`CardLayout`の表示領域にないなど(親コンポーネントが非表示)の場合:
     - `isDisplayable`: `true`
     - `isShowing`: `false`
     - `isVisible`: `true`
-
-<!-- dummy comment line for breaking list -->
-
-- コンポーネントが`setVisible(false)`と設定された場合
+- コンポーネントが`setVisible(false)`と設定された場合:
     - `isDisplayable`: `true`
     - `isShowing`: `false`
     - `isVisible`: `false`

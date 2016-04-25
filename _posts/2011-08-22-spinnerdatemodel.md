@@ -68,7 +68,10 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 ## 参考リンク
 - [Swing - DateSpinner spins only after an edit](https://community.oracle.com/thread/2268752)
 - [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
+- [JSpinnerでLocalDateTimeを使用する](http://ateraimemo.com/Swing/SpinnerLocalDateTimeModel.html)
+    - `Date`ではなく、`LocalDateTime`を使用する方法
 
 <!-- dummy comment line for breaking list -->
+
 
 ## コメント

@@ -26,7 +26,7 @@ try {
   ex.printStackTrace();
   return;
 }
-start = new JButton(new AbstractAction("start") {
+startButton = new JButton(new AbstractAction("start") {
   @Override public void actionPerformed(ActionEvent ae) {
     sequencer.start();
   }
@@ -36,7 +36,7 @@ start = new JButton(new AbstractAction("start") {
 ## 解説
 `MidiSystem.getSequencer`メソッドで`Sequencer`を取得し、これに`MidiSystem.getSequence`メソッドで`MIDI`ファイルから生成した`Sequence`を設定します。
 
-`Sequencer.start`メソッドで演奏を開始することができます。
+`Sequencer#start()`メソッドで演奏を開始することができます。
 
 ## 参考リンク
 - [Javaでゲーム - サウンドメモ](http://muimi.com/j/game/sound/)

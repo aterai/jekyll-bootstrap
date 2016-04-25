@@ -15,17 +15,16 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJt9fH4ZI/AAAAAAAAAU0/c9vovQi9Jvo/s800/ComboBoxSeparator.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final ListCellRenderer lcr = combobox.getRenderer();
-combobox.setRenderer(new ListCellRenderer() {
-  @Override public Component getListCellRendererComponent(JList list, Object value,
-                    int index, boolean isSelected, boolean cellHasFocus) {
+<pre class="prettyprint"><code>JComboBox&lt;Object&gt; combo = new JComboBox&lt;&gt;();
+combo.setRenderer(new DefaultListCellRenderer() {
+  @Override public Component getListCellRendererComponent(
+      JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
     if (value instanceof JSeparator) {
-      return (JSeparator) value;
+      return (Component) value;
     } else {
-      return (JLabel) lcr.getListCellRendererComponent(
-                  list, value, index, isSelected, cellHasFocus);
+      return super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
     }
- }
+  }
 });
 DefaultComboBoxModel model = new DefaultComboBoxModel() {
   @Override public void setSelectedItem(Object o) {
@@ -35,20 +34,17 @@ DefaultComboBoxModel model = new DefaultComboBoxModel() {
     super.setSelectedItem(o);
   }
 };
-model.addElement("aaaa");
+model.addElement("aaaaa");
 model.addElement(new JSeparator());
-model.addElement("bbb1");
-combobox.setModel(model);
+model.addElement("bbbbb");
+combo.setModel(model);
 </code></pre>
 
 ## 解説
 - `ListCellRenderer`
-    - `JSeparator`が選択された場合は、`JSeparator`にキャストして返すような`ListCellRenderer`を設定しています。
-
-<!-- dummy comment line for breaking list -->
-
+    - `JSeparator`が選択された場合は、セル描画`Component`として`JSeparator`を返すような`ListCellRenderer`を設定
 - `DefaultComboBoxModel`
-    - `JSeparator`が選択された場合は何もしないよう、`setSelectedItem`メソッドをオーバーライドしています。
+    - `JSeparator`が選択された場合は何もしないよう、`setSelectedItem`メソッドをオーバーライド
 
 <!-- dummy comment line for breaking list -->
 

@@ -49,9 +49,7 @@ comments: true
 </code></pre>
 
 ## 解説
-ほぼ、[JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)とやっていることは同じです。
-
-違うのは、以下の点になります。
+ほぼ、[JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)と同様のコードを使用していますが、行全体を塗り潰すために、以下の`3`点を変更しています。
 
 - `Viewport`の色を`scroll.getViewport().setBackground(Color.WHITE)`にする
 - `JTextArea#setOpaque(false)`と設定して透明にする

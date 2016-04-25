@@ -71,10 +71,7 @@ public void showPanel() {
 上記のサンプルコードでは、クラスパスの通った場所にある`/resources/images/splash.png`を読み込んでスプラッシュ・スクリーン(起動画面)を表示しています。`JWindow`の表示、非表示は、イベントディスパッチスレッド(`EDT`)で行われるように、`EventQueue.invokeLater`の中で実行しています。
 
 - - - -
-サンプルの画像は、[n-Gen](http://www.n-generate.com/download.html)を使って生成しています。
-
-- - - -
-`Java SE 6`では、起動時にスプラッシュ・スクリーンとして表示する画像をコマンドラインや`manifest.mf`で指定したり、`SplashScreen`オブジェクトを生成して表示することができるようです。
+`Java SE 6`では、起動時にスプラッシュ・スクリーンとして表示する画像をコマンドラインや`manifest.mf`で指定したり、`SplashScreen`オブジェクトを生成して表示することができます。
 
 - [SPLASH SCREENS AND JAVA SE 6](http://web.archive.org/web/20090419180550/http://java.sun.com/developer/JDCTechTips/2005/tt1115.html#1)
 - [New Splash-Screen Functionality in Java SE 6](http://www.oracle.com/technetwork/articles/javase/splashscreen-135938.html)
@@ -83,6 +80,8 @@ public void showPanel() {
 
 ## 参考リンク
 - [JDialogでモーダルなJProgressBar付きSplash Screenを表示する](http://ateraimemo.com/Swing/ProgressSplashScreen.html)
+- ~~[n-Gen](http://www.n-generate.com/download.html)~~
+    - サンプルの画像の生成に利用
 
 <!-- dummy comment line for breaking list -->
 

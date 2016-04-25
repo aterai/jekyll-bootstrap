@@ -16,8 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class RadioButtonsPanel extends JPanel {
-  private static final String OSNAME = System.getProperty("os.name");
-  private final String[] answer = { "A", "B", "C" };
+  private final String[] answer = {Answer.A.toString(), Answer.B.toString(), Answer.C.toString()};
   public JRadioButton[] buttons;
   public ButtonGroup bg = new ButtonGroup();
   public RadioButtonsPanel() {
@@ -38,16 +37,24 @@ comments: true
     }
   }
   protected void updateSelectedButton(Object v) {
-    if ("Windows 7".equals(OSNAME)) { //Windows aero?
+    if (v instanceof Answer) {
+      //if ("Windows 7".equals(OSNAME)) { //Windows aero?
       removeAll();
       initButtons();
-    }
-    if ("A".equals(v)) {
-      buttons[0].setSelected(true);
-    } else if ("B".equals(v)) {
-      buttons[1].setSelected(true);
-    } else {
-      buttons[2].setSelected(true);
+      //}
+      switch ((Answer) v) {
+        case A:
+          buttons[0].setSelected(true);
+          break;
+        case B:
+          buttons[1].setSelected(true);
+          break;
+        case C:
+          buttons[2].setSelected(true);
+          break;
+        default:
+          break;
+      }
     }
   }
 }
