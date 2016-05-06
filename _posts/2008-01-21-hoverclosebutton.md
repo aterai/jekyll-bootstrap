@@ -55,7 +55,10 @@ comments: true
 ## 解説
 上記のサンプルでは、`JDK 6`で導入されたタブにコンポーネントを追加する機能を使って、タブ上にマウスカーソルがある場合だけ`JButton`を表示しています。
 
-`JButton`が表示されても、そのタブ幅は常に一定で、内部のタブタイトルがクリップされるようになっています。
+- `JButton`が表示されても、そのタブ幅は常に一定
+- `JButton`が表示されて、内部のタブタイトル表示幅が短くなった場合は、文字列を`...`でクリップ
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)

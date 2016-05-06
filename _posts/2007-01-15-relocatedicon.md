@@ -59,6 +59,6 @@ comments: true
 
 ## コメント
 - `1.7.0 b38`で修正されているようです。[Bug ID: 6647340 Minimized JInternalFrame icons appear in incorrect positions if the main frame is resized](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6647340) -- *aterai* 2008-12-10 (水) 21:27:26
-- `Windows7` + `WindowsLookAndFeel`で`JDesktopPane`の背景が黒になる: [Bug ID: 7008416 JDesktopPane - Wrong background color with Win7+WindowsLnf](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7008416) -- *aterai* 2011-10-04 (火) 16:58:32
+- `Windows7` + `WindowsLookAndFeel`で`JDesktopPane`の背景が黒になる: [Bug ID: JDK-7012008 JDesktopPane - Wrong background color with Win7+WindowsLnf](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7012008) -- *aterai* 2011-10-04 (火) 16:58:32
 
 <!-- dummy comment line for breaking list -->

@@ -10,7 +10,7 @@ description: JTreeのノードに追加したJCheckBoxのチェック状態な�
 comments: true
 ---
 ## 概要
-JTreeのノードに追加したJCheckBoxのチェック状態など保持する`UserObject`を永続化可能になるよう設定し、その保存と復元を行います。
+`JTree`のノードに追加した`JCheckBox`のチェック状態など保持する`UserObject`を永続化可能になるよう設定し、その保存と復元を行います。
 
 {% download https://lh3.googleusercontent.com/-Foeg7fF4Uj4/VxzbvHpNTUI/AAAAAAAAOTY/LnDkJRi6CtQXJcQAGJ2boc27LJrY_lT-QCCo/s800/UserObjectPersistence.png %}
 
@@ -43,7 +43,7 @@ JTreeのノードに追加したJCheckBoxのチェック状態など保持する
 ## 参考リンク
 - [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](http://ateraimemo.com/Swing/SortKeyPersistence.html)
 - [JTreeのすべてのノードにJCheckBoxを追加する](http://ateraimemo.com/Swing/CheckBoxNodeEditor.html)
-- [JTreeの展開状態を記憶・復元する](http://ateraimemo.com/ExpandedDescendants.html)
+- [JTreeの展開状態を記憶・復元する](http://ateraimemo.com/Swing/ExpandedDescendants.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -15,22 +15,40 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKYcCKxAI/AAAAAAAAAV4/T8OdovAF6EY/s800/CyclingSpinnerModel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>spinner.setModel(new SpinnerNumberModel(20, 0, 59, 1) {
+<pre class="prettyprint"><code>spinner03.setModel(new SpinnerNumberModel(20, 0, 59, 1) {
   @Override public Object getNextValue() {
     Object n = super.getNextValue();
-    if (n == null) n = getMinimum();
-    return n;
+    return Objects.nonNull(n) ? n : getMinimum();
   }
   @Override public Object getPreviousValue() {
     Object n = super.getPreviousValue();
-    if (n == null) n = getMaximum();
-    return n;
+    return Objects.nonNull(n) ? n : getMaximum();
   }
 });
 </code></pre>
 
 ## 解説
-上記のサンプルでは、各モデルの`getNextValue`、`getPreviousValue`メソッドをオーバーライドすることでループするように設定しています。
+上記のサンプルでは、各モデルの`getNextValue()`、`getPreviousValue()`メソッドをオーバーライドすることでループするように設定しています。
+
+- 数値: `SpinnerNumberModel`
+    - `SpinnerNumberModel#getNextValue()`などが`null`になる場合、`SpinnerNumberModel#getMinimum()`で最小値を取得してループ
+- リスト: `SpinnerListModel`
+    - `SpinnerListModel#getNextValue()`などが`null`になる場合、`SpinnerListModel#getList()#get(0)`でリスト先頭の取得してループ
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>spinner04.setModel(new SpinnerListModel(weeks) {
+  @Override public Object getNextValue() {
+    Object o = super.getNextValue();
+    return Objects.nonNull(o) ? o : getList().get(0);
+  }
+  @Override public Object getPreviousValue() {
+    List l = getList();
+    Object o = super.getPreviousValue();
+    return Objects.nonNull(o) ? o : l.get(l.size() - 1);
+  }
+});
+</code></pre>
 
 ## 参考リンク
 - [Creating Custom Spinner Models and Editors](http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html#model)

@@ -21,9 +21,9 @@ comments: true
   }
   @Override public Dimension getMinimumSize() {
     Dimension d = super.getMinimumSize();
-    if (d != null) {
-      d.width = value;
-      d.height = value;
+    if (Objects.nonNull(d)) {
+      int i = ((Integer) spinner.getValue()).intValue();
+      d.setSize(i, i);
     }
     return d;
   }

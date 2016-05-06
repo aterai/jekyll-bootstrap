@@ -54,4 +54,9 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
 
 <!-- dummy comment line for breaking list -->
 
+- メモ
+    - `UIManager.getBoolean("FileChooser.usesSingleFilePane")`の動作が良く分からない...
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: TriStateCheckBox
 title: JCheckBoxに不定状態のアイコンを追加する
-tags: [JCheckBox, Icon, UIManager, JTableHeader]
+tags: [JCheckBox, Icon, UIManager, JTableHeader, JTable]
 author: aterai
 pubdate: 2011-12-12T15:00:11+09:00
 description: JCheckBoxの選択状態、非選択状態に加えて、不定状態を表すアイコンを追加します。
@@ -88,7 +88,7 @@ class IndeterminateIcon implements Icon {
 
 ## 参考リンク
 - [JavaSpecialists 145 - TristateCheckBox Revisited](http://www.javaspecialists.eu/archive/Issue145.html)
-    - ~~[JavaSpecialists 082 - TristateCheckBox based on the Swing JCheckBox](http://www.javaspecialists.eu/archive/Issue082.html)~~
+    - [JavaSpecialists 082 - TristateCheckBox based on the Swing JCheckBox](http://www.javaspecialists.eu/archive/Issue082.html)
 - [swing - Tristate Checkboxes in Java - Stack Overflow](http://stackoverflow.com/questions/1263323/tristate-checkboxes-in-java)
 
 <!-- dummy comment line for breaking list -->

@@ -15,32 +15,41 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent me) {
-  JComponent c = (JComponent) me.getSource();
-  Point p = me.getPoint();
-  if (SwingUtilities.isLeftMouseButton(me)) {
-    tip.setTipText(String.format("Window(x,y)=(%4d,%4d)", p.x, p.y));
-    //tip.revalidate();
-    tip.repaint();
-    //window.pack();
-    window.setLocation(getToolTipLocation(me));
+<pre class="prettyprint"><code>private void updateTipText(MouseEvent e) {
+  Point pt = e.getPoint();
+  String txt = String.format("Window(x, y)=(%d, %d)", pt.x, pt.y);
+  tip.setTipText(txt);
+  Point p = getToolTipLocation(e);
+  if (SwingUtilities.isLeftMouseButton(e)) {
+    if (prev.length() != txt.length()) {
+      window.pack();
+    }
+    window.setLocation(p);
+    window.setAlwaysOnTop(true);
   } else {
     if (popup != null) {
       popup.hide();
     }
-    tip.setTipText(String.format("Popup(x,y)=(%d,%d)", p.x, p.y));
-    p = getToolTipLocation(me);
-    popup = factory.getPopup(c, tip, p.x, p.y);
-    popup.show();
+    popup = factory.getPopup(e.getComponent(), tip, p.x, p.y);
+    Container c = tip.getTopLevelAncestor();
+    if (c instanceof JWindow &amp;&amp;
+        ((JWindow) c).getType() == Window.Type.POPUP) {
+      System.out.println("Popup$HeavyWeightWindow");
+    } else {
+      popup.show();
+    }
   }
+  prev = txt;
 }
 </code></pre>
 
 ## 解説
 - 左クリックしてドラッグ
     - `JWindow`に、`JToolTip`を追加して、`Window#setLocation()`で移動
+    - テキスト文字数が変更された場合のみ、`JWindow#pack()`を呼び出してサイズを更新
 - 左クリック以外でドラッグ
     - `PopupFactory#getPopup()`で座標を指定した、`Popup`を取得し表示
+    - `Popup`の位置が変更できずこれを再作成しているため、親フレームの外に`JToolTip`が表示される場合(`HeavyWeightな`JWindow`を再作成すると表示がチラつく)は非表示にしている
 
 <!-- dummy comment line for breaking list -->
 

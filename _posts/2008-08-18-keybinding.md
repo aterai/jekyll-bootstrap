@@ -10,7 +10,8 @@ description: JComponentから、ActionMap、InputMapを取得し、KeyBindingの
 comments: true
 ---
 ## 概要
-`JComponent`から、`ActionMap`、`InputMap`を取得し、`KeyBinding`の一覧表を作成します。[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/misc.html Miscellaneous Tools - Java Swing Utilities]の[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/Mapper.java Mapper.java]を元に`UI`を変更しています。
+`JComponent`から、`ActionMap`、`InputMap`を取得し、`KeyBinding`の一覧表を作成します。
+
 
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTO1Qi0Y2I/AAAAAAAAAdA/yMsuc2sjSKg/s800/KeyBinding.png %}
 
@@ -37,8 +38,8 @@ p.add(new JButton(new AbstractAction("show") {
 上記のサンプルでは、`JComboBox`で選択されたコンポーネントに割り当てられているデフォルトの`KeyBinding`を、`JTable`に表示することができます。
 
 ## 参考リンク
-- [ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/misc.html Miscellaneous Tools - Java Swing Utilities]
-    - [ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/Mapper.java Mapper.java]
+- ~~[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/misc.html Miscellaneous Tools - Java Swing Utilities]~~
+    - ~~[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/Mapper.java Mapper.java]~~
 - [How to Use Key Bindings (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/misc/keybinding.html)
 
 <!-- dummy comment line for breaking list -->
