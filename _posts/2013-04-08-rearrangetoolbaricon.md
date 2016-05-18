@@ -39,8 +39,7 @@ comments: true
   @Override public void mouseDragged(MouseEvent e) {
     Point pt = e.getPoint();
     JComponent parent = (JComponent) e.getComponent();
-    int t = Math.sqrt(Math.pow(pt.x - startPt.x, 2) + Math.pow(pt.y - startPt.y, 2))
-    if (startPt != null &amp;&amp; t &gt; gestureMotionThreshold) {
+    if (startPt != null &amp;&amp; startPt.distance(pt) &gt; gestureMotionThreshold) {
       startPt = null;
       Component c = parent.getComponentAt(pt);
       index = parent.getComponentZOrder(c);

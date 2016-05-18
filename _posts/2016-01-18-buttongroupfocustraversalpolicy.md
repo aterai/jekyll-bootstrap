@@ -7,6 +7,9 @@ tags: [ButtonGroup, FocusTraversalPolicy, JRadioButton, Focus]
 author: aterai
 pubdate: 2016-01-18T00:09:46+09:00
 description: Tabキーによるフォーカス移動が発生した場合、ButtonGroup内で現在選択されているJRadioButtonにフォーカスが移動するよう設定します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2016/05/the-jradiobutton-that-is-currently_10.html
+    lang: en
 comments: true
 ---
 ## 概要

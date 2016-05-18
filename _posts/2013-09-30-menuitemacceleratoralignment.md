@@ -74,10 +74,14 @@ comments: true
     - `sun.swing.MenuItemLayoutHelper`や、`sun.swing.MenuItemLayoutHelper.LayoutResult`などの内部所有の`API`を使用しているので、今後も使用できるか不明
     - `paintText(...)`、`paintCheckIcon(...)`、`paintIcon(...)`、`paintArrowIcon(...)`などの`BasicMenuItemUI`のプライベートなメソッドをほぼそのままコピーして使用している
     - `ComponentOrientation.RIGHT_TO_LEFT`が設定されて、文字列が右から左に配置される場合は考慮していない
+
+<!-- dummy comment line for breaking list -->
+
+- - - -
 - `EastAcc`
+    - `Windows 7`環境の`WindowsLoolAndFeel`でのみ正常に動作？
     - `JMenuItem`に`GridBagLayout`を設定し、`c.anchor = GridBagConstraints.EAST;`で、`Accelerator`文字列を設定した`JLabel`を配置
-    - 本来の`Accelerator`文字列は、`UIManager.put("MenuItem.acceleratorForeground", background);`などで非表示に設定
-        - このラベルは透明で、`WindowsLoolAndFeel`以外の場合は想定していない
+    - 本来の`Accelerator`文字列は、`UIManager.put("MenuItem.acceleratorForeground", background);`などで背景色と同化して非表示
     - 参考: [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 
 <!-- dummy comment line for breaking list -->

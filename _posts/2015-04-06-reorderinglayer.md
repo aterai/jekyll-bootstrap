@@ -105,9 +105,7 @@ comments: true
 
       if (Objects.isNull(draggingComonent)) {
         //MotionThreshold
-        double a = Math.pow(pt.x - startPt.x, 2);
-        double b = Math.pow(pt.y - startPt.y, 2);
-        if (Math.sqrt(a + b) &gt; gestureMotionThreshold) {
+        if (startPt.distance(pt) &gt; gestureMotionThreshold) {
           startDragging(parent, pt);
         }
         return;
