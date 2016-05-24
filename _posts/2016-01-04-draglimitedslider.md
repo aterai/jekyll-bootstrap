@@ -10,7 +10,7 @@ description: JSliderの最小・最大値とは別に、マウスドラッグに
 comments: true
 ---
 ## 概要
-JSliderの最小・最大値とは別に、マウスドラッグによる値の変更可能範囲を制限します。
+`JSlider`の最小・最大値とは別に、マウスドラッグによる値の変更可能範囲を制限します。
 
 {% download https://lh3.googleusercontent.com/-g2NOF6rEUgk/VokzS6_rd_I/AAAAAAAAOKc/UhGy1ZKCdpQ/s800-Ic42/DragLimitedSlider.png %}
 

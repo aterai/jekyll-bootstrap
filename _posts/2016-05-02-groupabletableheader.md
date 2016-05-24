@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: GroupableTableHeader
 title: JTableHeaderでTableColumnのグループ化を行う
-tags: [JTable, JTableHeaer, TableColumn]
+tags: [JTable, JTableHeader, TableColumn]
 author: aterai
 pubdate: 2016-05-02T00:35:46+09:00
 description: TableColumnのグループ化を可能にし、JTableHeaderでの列結合を実現します。

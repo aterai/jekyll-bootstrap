@@ -10,7 +10,7 @@ description: JTableの各カラムヘッダにアイコンとタイトル文字�
 comments: true
 ---
 ## 概要
-JTableの各カラムヘッダにアイコンとタイトル文字列を表示するよう設定します。
+`JTable`の各カラムヘッダにアイコンとタイトル文字列を表示するよう設定します。
 
 {% download https://lh3.googleusercontent.com/-yQYpkrDnAcQ/VqT3Oq7tovI/AAAAAAAAOL8/YbbgnXgZ9B4/s800-Ic42/TableColumnHeaderIcon.png %}
 

@@ -16,38 +16,74 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class IconTable extends JTable {
-  private final MyGlassPane panel = new MyGlassPane();
-  private final EditorFromList editor;
-  private final JFrame frame;
-  private Rectangle rect;
+  private static final int XOFF = 4;
+  private final JList&lt;IconItem&gt; editor;
+  private final JComponent glassPane = new JComponent() {
+    @Override public void setVisible(boolean flag) {
+      super.setVisible(flag);
+      setFocusTraversalPolicyProvider(flag);
+      setFocusCycleRoot(flag);
+    }
+    @Override protected void paintComponent(Graphics g) {
+      g.setColor(new Color(0x64FFFFFF, true));
+      g.fillRect(0, 0, getWidth(), getHeight());
+      BufferedImage bufimg = new BufferedImage(
+          getWidth(), getHeight(), BufferedImage.TYPE_INT_ARGB);
+      Graphics2D g2 = bufimg.createGraphics();
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                          RenderingHints.VALUE_ANTIALIAS_ON);
+      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .15f));
+      g2.setPaint(Color.BLACK);
+      Rectangle r = editor.getBounds();
+      for (int i = 0; i &lt; XOFF; i++) {
+        g2.fillRoundRect(
+            r.x - i, r.y + XOFF, r.width + i + i, r.height - XOFF + i, 5, 5);
+      }
+      g2.dispose();
+      g.drawImage(bufimg, 0, 0, null);
+    }
+  };
 
-  public IconTable(JFrame _frame, TableModel model, Vector list) {
+  protected IconTable(TableModel model, ListModel&lt;IconItem&gt; list) {
     super(model);
-    setDefaultRenderer(Object.class, new TestRenderer());
+    setDefaultRenderer(Object.class, new IconTableCellRenderer());
     setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     initCellSize(50);
-    frame = _frame;
     addMouseListener(new MouseAdapter() {
-      @Override public void mouseClicked(MouseEvent me) {
+      @Override public void mouseClicked(MouseEvent e) {
         startEditing();
       }
     });
-    editor = new EditorFromList(list);
-    editor.addKeyListener(new KeyAdapter() {
-      @Override public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-          cancelEditing();
-        }
+
+    editor = new EditorFromList&lt;&gt;(list);
+    editor.getInputMap(JComponent.WHEN_FOCUSED).put(
+        KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancel-editing");
+    editor.getActionMap().put("cancel-editing", new AbstractAction() {
+      @Override public void actionPerformed(ActionEvent e) {
+        cancelEditing();
       }
     });
     editor.addMouseListener(new MouseAdapter() {
-      @Override public void mouseClicked(MouseEvent me) {
-        changeValue(me.getPoint());
+      @Override public void mouseClicked(MouseEvent e) {
+        Point p = e.getPoint();
+        IconItem item = editor.getModel().getElementAt(editor.locationToIndex(p));
+        setValueAt(item, getSelectedRow(), getSelectedColumn());
+        cancelEditing();
       }
     });
-    panel.add(editor);
-    frame.setGlassPane(panel);
-    panel.setVisible(false);
+
+    glassPane.addMouseListener(new MouseAdapter() {
+      @Override public void mouseClicked(MouseEvent e) {
+        cancelEditing();
+      }
+    });
+    glassPane.setFocusTraversalPolicy(new DefaultFocusTraversalPolicy() {
+      @Override public boolean accept(Component c) {
+        return Objects.equals(c, editor);
+      }
+    });
+    glassPane.add(editor);
+    glassPane.setVisible(false);
   }
   private void initCellSize(int size) {
     setRowHeight(size);
@@ -62,42 +98,40 @@ comments: true
     }
     setBorder(BorderFactory.createLineBorder(Color.BLACK));
   }
-  private void initEditor() {
-    Dimension dim = editor.getPreferredSize();
-    rect = getCellRect(getSelectedRow(), getSelectedColumn(), true);
-    int iv = (dim.width - rect.width) / 2;
-    Point p = SwingUtilities.convertPoint(this,
-                rect.getLocation(), panel);
-    rect.setRect(p.x - iv, p.y - iv, dim.width, dim.height);
-    editor.setBounds(rect);
-    Object o = getValueAt(getSelectedRow(), getSelectedColumn());
-    editor.setSelectedValue(o, true);
-  }
   public void startEditing() {
-    initEditor();
-    panel.setVisible(true);
+    getRootPane().setGlassPane(glassPane);
+
+    Dimension d = editor.getPreferredSize();
+    editor.setSize(d);
+
+    int sr = getSelectedRow();
+    int sc = getSelectedColumn();
+    Rectangle r = getCellRect(sr, sc, true);
+    Point p = SwingUtilities.convertPoint(this, r.getLocation(), glassPane);
+    p.translate((r.width - d.width) / 2, (r.height - d.height) / 2);
+    editor.setLocation(p);
+
+    glassPane.setVisible(true);
+    editor.setSelectedValue(getValueAt(sr, sc), true);
     editor.requestFocusInWindow();
   }
   private void cancelEditing() {
-    panel.setVisible(false);
-  }
-  private void changeValue(Point p) {
-    int index = editor.locationToIndex(p);
-    Object o = editor.getModel().getElementAt(index);
-    if (o != null) {
-      setValueAt(o, getSelectedRow(), getSelectedColumn());
-    }
-    panel.setVisible(false);
+    glassPane.setVisible(false);
   }
 }
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`のセルをクリックするとそのセル上にセルエディタが表示されて編集できるようになっています。
+上記のサンプルでは、`JTable`のセルをクリックすると、そのセル上にセルエディタ(`JList`)が表示され、アイコンを選択、変更可能になっています。
 
-通常のセルエディタは使用しないため、すべてのセルを編集不可にしています。かわりにセルをクリックしたときに、フレームの`GlassPane`を有効にして、そこに`JList`で作成したアイコン選択エディタや、その影などを描画しています。
+- デフォルトの`TableCellEditor`は使用しないため、すべてのセルを編集不可に設定
+- セルをクリックしたときに、`JRootPane`の`GlassPane`を可視化
+    - この`GlassPane`にアイコン選択エディタとして`JList`を追加
+    - `JList`の半透明の影なども`GlassPane`上に描画
+    - `GlassPane`を使用しているため、`JFrame`の外にセルエディタを描画できない
+        - `JTable`の周りに余白を設定することで回避
 
-このように`GlassPane`を使用しているため、フレームの外にセルエディタを描画することができません。このためサンプルでは`JTable`の周りに余白をかなり多めにとっています。`JTable`からはみ出す場合(端の方のセルを編集する場合)は、セルエディタの表示位置を内部にずらすように変更するようにしたほうがいいかもしれません。
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)

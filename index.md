@@ -1,14 +1,15 @@
 ---
 layout: page
 title: Front Page
-comments : ture
-author :
-  name : aterai
-  email : at.terai@gmail.com
-  twitter : aterai
+comments: ture
+author:
+  name: aterai
+  email: aterai@outlook.com
+  twitter: aterai
 ---
 {% include JB/setup %}
-Posted by [aterai](http://ateraimemo.com/aterai.html) at 2003-09-25
+Posted by [aterai](http://ateraimemo.com/:Users/aterai.html) at 2003-09-25
+
 ## 概要
 このページ以下では、`Java Swing`での`GUI`プログラム作成のコツなどを、 **「小さなサンプル(ソースコード付き)」** を使って紹介しています。
 
@@ -22,7 +23,7 @@ Posted by [aterai](http://ateraimemo.com/aterai.html) at 2003-09-25
 [About the JFC and Swing (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/start/about.html)
 
 ## 編集方針
-- **最も欲しいものはサンプルである** - [steps to phantasien t(2007-07-06)](http://dodgson.org/omo/t/?date=20070706#p02)より引用
+- **最も欲しいものはサンプルである** - [steps to phantasien t(2007-07-06)](http://steps.dodgson.org/bn/2007/07/06/#p02)より引用
     - 各ページからダブルクリックなどで実行可能な`JAR`ファイルをダウンロードすることができます。
 - `SSCCE` [Short, Self Contained, Correct Example](http://sscce.org/)
 - `MCVE` [How to create a Minimal, Complete, and Verifiable example - Help Center - Stack Overflow](http://stackoverflow.com/help/mcve)
@@ -37,4 +38,3 @@ Posted by [aterai](http://ateraimemo.com/aterai.html) at 2003-09-25
     <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-

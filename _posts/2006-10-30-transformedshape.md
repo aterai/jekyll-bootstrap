@@ -47,7 +47,7 @@ comments: true
   }
   @Override public void actionPerformed(ActionEvent e) {
     repaint(s.getBounds());
-    Rectangle2D b = shape.getBounds();
+    Rectangle2D b = shape.getBounds2D();
     Point2D p = new Point2D.Double(
         b.getX() + b.getWidth() / 2d, b.getY() + b.getHeight() / 2d);
     AffineTransform at = AffineTransform.getRotateInstance(
