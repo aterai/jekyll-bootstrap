@@ -107,7 +107,7 @@ comments: true
 
 ## 参考リンク
 - [Tree inside JComboBox - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/tree_inside_jcombobox)
-    - こちらで解説されているサンプルでは、`TreeCellRenderer`を使っているのでノードアイコンなども`JTree`のものを表示できるようになっています。
+    - `TreeCellRenderer`を使用し、ノードアイコンなども含めて`JTree`をドロップダウンリストに表示するサンプルがある
 - [JComboBoxのアイテムを選択不可にする](http://ateraimemo.com/Swing/DisableItemComboBox.html)
 
 <!-- dummy comment line for breaking list -->

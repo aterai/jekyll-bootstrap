@@ -51,7 +51,7 @@ comments: true
 - `check1`
     - `com/sun/java/swing/plaf/windows/WindowsIconFactory.java`から、`XP`スタイルではない場合のアイコンをコピーし、一部色などを変更
 - `check2`
-    - `UIManager.getIcon("CheckBox.icon")`で取得したオリジナルのアイコンを、アルファ値を設定した色で上書きし、チェック(レ)も色を変えて塗り潰し
+    - `UIManager.getIcon("CheckBox.icon")`で取得したオリジナルのアイコンを、アルファ値を設定した色で上書きし、✔マークも色を変えて塗り潰し
     - チェックの形は`WindowsIconFactory`からコピーしているので、別の`LookAndFeel`では枠からはみ出してしまう
 - `check3`
     - `javax.swing.plaf.metal.MetalCheckBoxIcon`をアルファ値を設定した色で上書き
@@ -70,7 +70,7 @@ JCheckBox cb = new JCheckBox("check box");
 
 ## 参考リンク
 - [進歩したSynth](http://www.ibm.com/developerworks/jp/java/library/j-synth/)
-    - `SynthLookAndFeel`を使って、画像でチェックを描画するサンプルなどが紹介されています。
+    - `SynthLookAndFeel`を使って、画像でチェックを描画するサンプルなどが紹介されている
 
 <!-- dummy comment line for breaking list -->
 

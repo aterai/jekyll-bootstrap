@@ -179,18 +179,15 @@ private static Color getColorFromPallet(int[] pallet, float x) {
 </code></pre>
 
 - - - -
-- メモ: 例えば`WindowsLookAndFeel`では、`UIManager.get("Slider.trackWidth")`は`null`なので、`MetalSliderUI#installUI()`中にある以下のコードでエラーになる。
+- メモ: 例えば`WindowsLookAndFeel`では、`UIManager.get("Slider.trackWidth")`は`null`なので、`MetalSliderUI#installUI()`中にある以下のコードでエラーになる
+    - なぜ`UIManager.getInt(...)`ではないのか不明
+    - `UIManager.put("Slider.majorTickLength", 6);`などで回避
+    - `MetalSliderUI`ではなく、`BasicSliderUI`を継承するぺき？
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>trackWidth = ((Integer) UIManager.get("Slider.trackWidth")).intValue();
 </code></pre>
-
-- なぜ`UIManager.getInt(...)`ではないのか不明
-- `UIManager.put("Slider.majorTickLength", 6);`などで回避
-- `MetalSliderUI`ではなく、`BasicSliderUI`を継承するぺき？
-
-<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Harmonic Code: Varying gradients...](http://harmoniccode.blogspot.com/2011/05/varying-gradients.html)

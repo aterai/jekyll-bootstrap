@@ -190,7 +190,7 @@ comments: true
 </code></pre>
 
 ## 解説
-並べ替えの処理などは、[JPanelの並び順をドラッグ＆ドロップで入れ替える](http://ateraimemo.com/Swing/RearrangeOrderOfPanels.html)と同じものを使用していますが、こちらはドラッグ中のコンポーネントの描画を親のJPanel内でのみに制限しているので、`JWindow`ではなく`JLayer`を使用しています。
+並べ替えの処理などは、[JPanelの並び順をドラッグ＆ドロップで入れ替える](http://ateraimemo.com/Swing/RearrangeOrderOfPanels.html)と同じものを使用していますが、こちらはドラッグ中のコンポーネントの描画を親の`JPanel`内でのみに制限しているので、`JWindow`ではなく`JLayer`を使用しています。
 
 - ドラッグ中のコンポーネントの位置・サイズ
     - 位置: 親の`JPanel`から内部余白を除いた部分をドラッグ可能な領域(`SwingUtilities.calculateInnerArea(...)`で取得)に設定し、その範囲内に位置を制限

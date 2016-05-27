@@ -51,7 +51,7 @@ comments: true
 	Slider.verticalThumbIcon
 
 - 参考: [Java Swing rendering bug on Windows 7 look-and-feel? - Stack Overflow](http://stackoverflow.com/questions/2754306/java-swing-rendering-bug-on-windows-7-look-and-feel)
-    - `slider.setPaintTicks(true)`とした場合は、正常なサイズにみえる。
+    - `slider.setPaintTicks(true)`とした場合は、正常なサイズで描画される
 - [JSliderのつまみの形状を変更](http://ateraimemo.com/Swing/ThumbArrowShape.html)
     - トラックを表示したくない場合は、`slider.putClientProperty("Slider.paintThumbArrowShape", Boolean.TRUE);`で、つまみの形だけ変更
 

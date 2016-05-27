@@ -95,6 +95,6 @@ JTable table = new JTable(model) {
 </code></pre>
 
 - テスト -- *aterai* 2009-09-27 (日) 01:34:58
-    - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)に移動。
+    - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)に移動。 -- *aterai* 2009-10-05 (日) 01:34:58
 
 <!-- dummy comment line for breaking list -->

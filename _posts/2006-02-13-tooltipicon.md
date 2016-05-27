@@ -77,7 +77,7 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;テスト&lt;/img&gt
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-    - アイコンを利用しています。
+    - アイコンを借用
 - [Swing - Using text and a progress bar inside of a tooltip.](https://community.oracle.com/thread/2199222)
 
 <!-- dummy comment line for breaking list -->

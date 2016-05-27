@@ -135,7 +135,7 @@ comments: true
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-    - アイコンを利用しています。
+    - アイコンを借用
 
 <!-- dummy comment line for breaking list -->
 

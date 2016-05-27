@@ -81,7 +81,7 @@ comments: true
 
 ## 参考リンク
 - [JComboBoxのItemを左右に配置](http://ateraimemo.com/Swing/LRComboBox.html)
-    - こちらは`html`の`table`タグを使用して同様の表示(クリップはしない)を行っています。
+    - こちらは`html`の`table`タグを使用して同様の表示(クリップはしない)を行っている
 
 <!-- dummy comment line for breaking list -->
 

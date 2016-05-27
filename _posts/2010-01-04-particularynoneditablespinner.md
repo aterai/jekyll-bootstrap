@@ -56,7 +56,7 @@ spinner1.setEditor(editor1);
 </code></pre>
 
 - 下: `JSpinner` + `StringBorder`
-    - `JSpinner`のエディタに余白を設定し、そこに文字列を描画しています。
+    - `JSpinner`のエディタに設定した余白内に文字列を描画
 
 <!-- dummy comment line for breaking list -->
 

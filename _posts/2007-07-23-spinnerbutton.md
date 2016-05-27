@@ -42,13 +42,13 @@ comments: true
 </code></pre>
 
 ## 解説
-- 上
-    - `BasicSpinnerUI`を継承する`SpinnerUI`を作成し、`createNextButton`、`createPreviousButton`メソッドをオーバーライドして、`ToolTipText`を設定しています。
-- 中
-    - 名前が`Spinner.nextButton`、`Spinner.previousButton`となっているコンポーネントを検索して、`ToolTipText`を設定しています。
-    - `WindowsLookAndFeel`(`XP`スタイル)の場合、`JSpinner`の各ボタンに名前が付けられていないため、うまく動作しません。
-- 下
-    - `Windows`環境の場合は`WindowsSpinnerUI`を継承して、それ以外の場合は、名前で検索して`ToolTipText`を設定しています。
+- 上:
+    - `BasicSpinnerUI`を継承する`SpinnerUI`を作成し、`createNextButton`、`createPreviousButton`メソッドをオーバーライドして、`ToolTipText`を設定
+- 中:
+    - 名前が`Spinner.nextButton`、`Spinner.previousButton`となっているコンポーネントを検索して、`ToolTipText`を設定
+    - `WindowsLookAndFeel`(`XP`スタイル)の場合、`JSpinner`の各ボタンに名前が付けられていないため、正常に動作しない
+- 下:
+    - `Windows`環境の場合は`WindowsSpinnerUI`を継承して、それ以外の場合は、名前で検索して`ToolTipText`を設定
 
 <!-- dummy comment line for breaking list -->
 

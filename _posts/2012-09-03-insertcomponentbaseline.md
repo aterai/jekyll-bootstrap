@@ -39,9 +39,15 @@ check2.setOpaque(false);
 check2.setFocusable(false);
 </code></pre>
 
+- - - -
+- [JTextPane#insertComponent(Component) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
+
+<!-- dummy comment line for breaking list -->
+<blockquote><p>
+ コンポーネントは、`Component.getAlignmentY`によって返された値に従って、テキストベースラインに相対的に配置されます。`Swing`コンポーネントの場合、`JComponent.setAlignmentY`メソッドを使うと、この値を簡単に設定できます。たとえば、値を`0.75`に設定すると、コンポーネントの`75%`がベースラインの上に、`25%`がベースラインの下になります。
+</p></blockquote>
+
 ## 参考リンク
-- [JTextPane#insertComponent(java.awt.Component) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTextPane.html#insertComponent%28java.awt.Component%29)
-    - 引用: コンポーネントは、`Component.getAlignmentY`によって返された値に従って、テキストベースラインに相対的に配置されます。`Swing`コンポーネントの場合、`JComponent.setAlignmentY`メソッドを使うと、この値を簡単に設定できます。たとえば、値を`0.75`に設定すると、コンポーネントの`75%`がベースラインの上に、`25%`がベースラインの下になります。
 - [java - How to appropriately adding JLabel to JEditorPane? - Stack Overflow](http://stackoverflow.com/questions/12151158/how-to-appropriately-adding-jlabel-to-jeditorpane)
 
 <!-- dummy comment line for breaking list -->

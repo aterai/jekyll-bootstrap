@@ -70,9 +70,7 @@ comments: true
 `JDK 1.7.0`の場合、`JFrame`の背景色を透明(`frame.setBackground(new Color(0x0, true));`)にし、`ContentPane`の左右上の角をクリアして透明にしています。
 
 - - - -
-- [JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)のように、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`を使用してリサイズする方法もあります。
-
-<!-- dummy comment line for breaking list -->
+[JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)のように、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`を使用してリサイズする方法もあります。
 
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;

@@ -99,7 +99,7 @@ if (fm.stringWidth(cellText) &gt; availableWidth) {
 
 ## 参考リンク
 - [Swing - JTable - right align in cell even if the text is wider than the cell](https://community.oracle.com/thread/1389543)
-    - camickr さんの投稿(2005/06/10 5:52)した`JTable`でのサンプルを参考にしています。
+    - camickr さんが投稿(2005/06/10 5:52)した`JTable`でのサンプルがある
 - [Left Dot Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/12/left-dot-renderer/)
 - [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
 

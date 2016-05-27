@@ -45,13 +45,13 @@ comments: true
 
 ## 解説
 - `Default`
-    - `WindowsLookAndFeel(XP)`の場合、`JSpinner`を編集不可にしても白い余白が表示される。
+    - `WindowsLookAndFeel(XP)`の場合、`JSpinner`を編集不可にしても白い余白が表示される
 - `setOpaque(false)`
-    - `JSpinner#getEditor()`で取得した`JSpinner.DefaultEditor`と、`JSpinner.DefaultEditor#getTextField()`で取得した`JTextField`をそれぞれ、`setOpaque(false)`としている。
-    - `WindowsLookAndFeel(XP)`で、`JSpinner`を編集不可にしても背景色は白いままになる。
+    - `JSpinner#getEditor()`で取得した`JSpinner.DefaultEditor`と、`JSpinner.DefaultEditor#getTextField()`で取得した`JTextField`をそれぞれ、`setOpaque(false)`としている
+    - `WindowsLookAndFeel(XP)`で、`JSpinner`を編集不可にしても背景色は白いままになる
     - `UIManager.put("FormattedTextField.inactiveBackground", Color.WHITE);`
 - `setBorder(...)`
-    - 上記と同様に取得した`JSpinner.DefaultEditor`(=`JPanel`)と`JTextField`に以下のような`WindowsLookAndFeel(XP)`用の`Border`を設定している。
+    - 上記と同様に取得した`JSpinner.DefaultEditor`(=`JPanel`)と`JTextField`に以下のような`WindowsLookAndFeel(XP)`用の`Border`を設定している
         
         <pre class="prettyprint"><code>JSpinner spinner2 = new JSpinner();
         spinner2.setBorder(BorderFactory.createEmptyBorder());
@@ -61,8 +61,8 @@ comments: true
         field2.setBorder(BorderFactory.createEmptyBorder(2, 2, 2, 0));
 </code></pre>
 - `paintComponent, paintChildren`
-    - `JSpinner#paintComponent()`をオーバーライドして, `WindowsLookAndFeel(XP)`の場合表示される余白(背景色)を`UIManager.getColor("FormattedTextField.inactiveBackground")`で塗りつぶしている。
-    - `JSpinner#paintChildren()`をオーバーライドして,  `WindowsLookAndFeel(XP)`の場合表示されるボタン周りの白い余白を塗りつぶしている。
+    - `JSpinner#paintComponent()`をオーバーライドして, `WindowsLookAndFeel(XP)`の場合表示される余白(背景色)を`UIManager.getColor("FormattedTextField.inactiveBackground")`で塗りつぶしている
+    - `JSpinner#paintChildren()`をオーバーライドして,  `WindowsLookAndFeel(XP)`の場合表示されるボタン周りの白い余白を塗りつぶしている
 
 <!-- dummy comment line for breaking list -->
 

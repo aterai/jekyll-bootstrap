@@ -74,7 +74,7 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 ## 参考リンク
 - [famfamfam.com: Mini Icons](http://www.famfamfam.com/lab/icons/mini/)
-    - 追加アイコンを拝借しています。
+    - アイコンを借用
 - [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
 - [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
 - [JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)

@@ -68,12 +68,10 @@ comments: true
 上記のサンプルコードは、フレームからはみ出す場合に使用する`Border`クラスです。
 
 - フレーム内
-    - `JPopupMenu#paintComponent`メソッドで半透明の影を描画しています。
-
-<!-- dummy comment line for breaking list -->
-
+    - `JPopupMenu#paintComponent`メソッドで半透明の影を描画
 - フレーム外
-    - `Robot`を使って画面全体をキャプチャーし、これを利用して半透明の影を`Border`として作成しています。このためポップアップメニューがはみ出しても、影を付けることができますが、多少時間が掛かります。
+    - `Robot`を使って画面全体をキャプチャーし、これを利用して半透明の影を`Border`として作成
+    - このためポップアップメニューがはみ出しても、影を付けることが可能
 
 <!-- dummy comment line for breaking list -->
 

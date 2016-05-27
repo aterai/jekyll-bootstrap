@@ -114,7 +114,7 @@ private void setLookAndFeel(String laf) {
 ## 参考リンク
 - [How to Set the Look and Feel](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html)
 - [LookAndFeelの一覧を取得する](http://ateraimemo.com/Swing/InstalledLookAndFeels.html)
-    - こちらは、`SwingSet3`からの引用です。
+    - `SwingSet3`からコードを引用したサンプル
 
 <!-- dummy comment line for breaking list -->
 

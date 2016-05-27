@@ -160,8 +160,8 @@ comments: true
         - ~~`Windows`環境のみ？~~
     - 子コンポーネントが`JTextArea`などの場合、ドラッグ中のタブゴーストが表示できない
         - ~~`JTable`、`JTextArea`どちらも、`JScrollPane`が影響している？~~
-        - `Java 1.7.0-ea-b84`以上で、`TransferHandler#setDragImage(Image)`を使用するとちゃんと表示される
-        - `textArea.setTransferHandler(null);`とすれば、`1.6.0`でも正常に表示される。
+        - `Java 1.7.0-ea-b84`以上で、`TransferHandler#setDragImage(Image)`を使用すると正常に表示される
+        - `textArea.setTransferHandler(null);`とすれば、`1.6.0`でも正常に表示される
     - `SCROLL_TAB_LAYOUT`の場合、タブゴーストにスクロールボタンが表示される場合がある
 
 <!-- dummy comment line for breaking list -->

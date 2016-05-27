@@ -58,7 +58,7 @@ while (!i.isDone()) {
 ## 参考リンク
 - [FlatteningPathIterator (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/geom/FlatteningPathIterator.html)
 - [FlatteningPathIterator and moving object along Shape path.](http://java-sl.com/tip_flatteningpathiterator_moving_shape.html)
-    - このサイトの例のように、`Shape`のパスに添ってアニメーションさせる場合などに便利です。
+    - `Shape`のパスに添ってアニメーションを行うサンプルがある
 
 <!-- dummy comment line for breaking list -->
 

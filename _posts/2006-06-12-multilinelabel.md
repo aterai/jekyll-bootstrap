@@ -63,15 +63,9 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
     - 文字色、背景色を変更し、編集不可、フォーカスの取得不可にした`JTextPane`を使用
     - `\n`を使って改行し複数行を表示
     - `SimpleAttributeSet`を使って、行間を詰めている
-
-<!-- dummy comment line for breaking list -->
-
 - 中:`JTextArea`
     - 文字色、背景色を変更し、編集不可、フォーカスの取得不可にした`JTextArea`を使用
     - `\n`を使って改行し複数行を表示
-
-<!-- dummy comment line for breaking list -->
-
 - 下:`JLabel`+`html`
     - `JLabel`の文字列に`html`タグを使用
     - `<br>`タグを使って改行し複数行を表示
@@ -80,7 +74,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-    - アイコンを利用しています。
+    - アイコンを借用
 - [JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)
 
 <!-- dummy comment line for breaking list -->
@@ -120,7 +114,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
     - コードが長くなってしまったので、別ページを作成しました。`JEditorPane`を使用する方法も追加しています。[Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html) -- *aterai* 2007-12-24 (月) 23:24:50
 - こんにちは。ココのおかげでとても助かっています。ところで、`1`行の高さ（文字の高さを含めた高さ）を指定したい、というときには、`setLineSpacing`ではダメってことですよね？「指定したい高さ－フォントの大きさ」を`setLineSpacing`で指定してあげなきゃいけないんですよね？（文字サイズによって`1`行の高さが揃わなくなるのはイヤで揃えたいなと思うのですが、フォントによってそれだと、そうすると、フォントの大きさを変えるたびに指定しなおさなきゃいけないってことですよね。面倒…） -- *びびあず* 2008-10-31 (金) 10:42:47
     - こんにちは。どういたしまして。`LineSpacing`はフォントサイズに依存するみたいですね。固定の間隔を指定するのなら、例えば以下のように、`ParagraphView#getBottomInset`メソッドなどをオーバーライドするのが簡単かも。 -- *aterai* 2008-10-31 (金) 14:36:51
-    - ソースコードを[JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)に移動しました。
+    - ソースコードを[JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)に移動しました。 -- *aterai* 2009-11-02 (月) 12:54:44
 - （変な日本語を書いてましたね、失礼しました。）　ところで…、さっそくご親切にソースまで書いて教えていただけて嬉しいです。ありがとうございました。これを参考にして、また勉強したいと思います。本当にありがとうございました。 -- *びびあず* 2008-11-07 (金) 14:22:27
 - `Swing`初心者です。`JTextPane`での複数行表示、大変参考になりました。複数行表示自体はおかげ様でうまくいったのですが、ボーダーが思い通りにならず困っています。`TitledBorder`を設定しているのですが、タイトルを囲む線の外側（コンポーネントの枠）がくぼんだ状態になってしまいます。外枠は表示させたくないのですが、どこかで`OFF`できるのでしょうか。ご教授いただければ幸いです。 -- *ka-ka* 2008-12-25 (木) 00:03:08
     - こんばんは。`TitledBorder`の枠線を変更する場合は、`label.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEmptyBorder(), "title"));`のように、他の`Border`(この場合、`EmptyBorder`で非表示にしている)と組み合わせて使用します。[TitledBorder (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/border/TitledBorder.html#TitledBorder%28javax.swing.border.Border,%20java.lang.String%29) -- *aterai* 2008-12-25 (木) 01:46:20

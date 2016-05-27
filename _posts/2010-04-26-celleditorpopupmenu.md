@@ -100,7 +100,7 @@ table.setDefaultEditor(Object.class, ce);
 
 ## 参考リンク
 - [Java Swing「JTable」メモ(Hishidama's Swing-JTable Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JTable.html)
-    - セルエディタだけではなく、行の追加、削除などを`Undo`、`Redo`するサンプルが参考になります。
+    - セルエディタ内だけではなく、行の追加、削除などを`Undo`、`Redo`するサンプルが参考になる
 
 <!-- dummy comment line for breaking list -->
 

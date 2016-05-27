@@ -21,7 +21,7 @@ comments: true
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   int prevHeight = -1;
   int prevCount = -1;
-  public void updateRowsHeigth(JViewport vport) {
+  public void updateRowsHeight(JViewport vport) {
     int height = vport.getExtentSize().height;
     int rowCount = getModel().getRowCount();
     int defautlRowHeight = height / rowCount;
@@ -39,7 +39,7 @@ comments: true
     super.doLayout();
     Container p = SwingUtilities.getAncestorOfClass(JViewport.class, this);
     if (p instanceof JViewport) {
-      updateRowsHeigth((JViewport) p);
+      updateRowsHeight((JViewport) p);
     }
   }
 };

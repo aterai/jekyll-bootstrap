@@ -82,7 +82,7 @@ comments: true
 <pre class="prettyprint"><code>UIManager.put("Table.alternateRowColor", Color.PINK);
 </code></pre>
 
-- 注:デフォルトの`Boolean`用レンダラーの背景色が変わらないようです。
+- 注: デフォルトの`Boolean`用レンダラーの背景色は変更されない
 
 <!-- dummy comment line for breaking list -->
 

@@ -73,7 +73,7 @@ private Action makeShowHideAction() {
 
 ## 参考リンク
 - [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
-    - このサンプルで省略した、実際に`JTree`のノードを検索するコードはこちらにあります。
+    - `JTree`のノードを検索するサンプル
 - [JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->

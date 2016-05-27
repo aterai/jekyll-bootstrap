@@ -97,7 +97,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 ## 参考リンク
 - [JEditorPane (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JEditorPane.html)
 - [Link Buttons in Swing - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/link_buttons_in_swing)
-    - こちらは、`JButton`+`MatteBorder`で表現しているようです。
+    - `JButton`+`MatteBorder`でリンクを表現するサンプルがある
 - [TransferHandlerでHyperlinkをブラウザにドロップ](http://ateraimemo.com/Swing/DraggableLinkButton.html)
 - [Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html)
 

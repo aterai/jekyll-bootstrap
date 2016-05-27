@@ -68,7 +68,7 @@ field2.setBackground(BG_COLOR);
 
 ## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
-    - 名物裂から雲鶴をサンプルの壁紙として拝借しています。
+    - 背景画像として名物裂から雲鶴を借用
 - [Backgrounds With Transparency « Java Tips Weblog](http://tips4java.wordpress.com/2009/05/31/backgrounds-with-transparency/)
 
 <!-- dummy comment line for breaking list -->

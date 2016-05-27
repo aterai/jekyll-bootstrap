@@ -50,7 +50,6 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 - [Swing コンポーネントの音声フィードバック](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/SwingChanges.html#Miscellaneous)
 - [Merlinの魔術: Swingのオーディオ](http://www.ibm.com/developerworks/jp/java/library/j-mer0730/)
 - ["taitai studio" フリーWav素材集](http://www.taitaistudio.com/wav/)
-    - `wav`ファイルを拝借しています。
 - [Beep音を鳴らす](http://ateraimemo.com/Swing/Beep.html)
 - [MIDIファイルの演奏](http://ateraimemo.com/Swing/MidiSystem.html)
 - [Wavファイルの演奏](http://ateraimemo.com/Swing/Sound.html)

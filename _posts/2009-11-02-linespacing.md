@@ -43,7 +43,7 @@ comments: true
 </code></pre>
 
 ## 解説
-- 上: `StyleConstants.setLineSpacing`で、行間を指定した`AttributeSet`を作成し、`JTextPane#setParagraphAttributes`で設定しています。
+- 上: `StyleConstants.setLineSpacing`で、行間を指定した`AttributeSet`を作成し、`JTextPane#setParagraphAttributes`で設定
     - フォントサイズ相対の行間になる
 
 <!-- dummy comment line for breaking list -->
@@ -58,7 +58,7 @@ editor1.setParagraphAttributes(a, true);
 setDummyText(editor1);
 </code></pre>
 
-- 下: `ParagraphView#getBottomInset`をオーバーライドして、固定の行間をピクセルで指定しています。
+- 下: `ParagraphView#getBottomInset`をオーバーライドして、固定の行間をピクセルで指定
     - フォントサイズに関係なく、アキ`5px`
 
 <!-- dummy comment line for breaking list -->

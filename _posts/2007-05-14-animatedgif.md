@@ -33,21 +33,38 @@ JLabel label4 = new JLabel("直前の画像に戻す",
 `Animated GIF`で、次のコマを描画する時、直前の画像を異なる方法で消去する`Animated GIF`ファイルを作成し、これらを`JLabel`に貼り付けてアニメーションをテストしています。上記のように透過色を使用する場合、`Swing`では、`3`番目の「背景色でつぶす」にしておかないと残像が出てしまうようです。
 
 - 何もしない
-    - No disposal specified. The decoder is not required to take any action.
-- そのまま残す
-    - Do not dispose. The graphic is to be left in place.
-- 背景色でつぶす
-    - Restore to background color. The area used by the graphic must be restored to the background color.
-- 直前の画像に戻す
-    - Restore to previous. The decoder is required to restore the area overwritten by the graphic with what was there prior to rendering the graphic.
 
 <!-- dummy comment line for breaking list -->
+<blockquote><p>
+ No disposal specified. The decoder is not required to take any action.
+</p></blockquote>
+
+- そのまま残す
+
+<!-- dummy comment line for breaking list -->
+<blockquote><p>
+ Do not dispose. The graphic is to be left in place.
+</p></blockquote>
+
+- 背景色でつぶす
+
+<!-- dummy comment line for breaking list -->
+<blockquote><p>
+ Restore to background color. The area used by the graphic must be restored to the background color.
+</p></blockquote>
+
+- 直前の画像に戻す
+
+<!-- dummy comment line for breaking list -->
+<blockquote><p>
+ Restore to previous. The decoder is required to restore the area overwritten by the graphic with what was there prior to rendering the graphic.
+</p></blockquote>
 
 ## 参考リンク
 - [Cover Sheet for the GIF89a Specification](http://www.w3.org/Graphics/GIF/spec-gif89a.txt)
-    - 23. Graphic Control Extension. の、iv) Disposal Method から説明を引用しています。
+    - 「23. Graphic Control Extension.」の、「iv) Disposal Method」から説明を引用
 - [Giam ダウンロードのページ](http://homepage3.nifty.com/furumizo/giamd.htm)
-    - `Giam`を使って、各`Animated GIF`を生成しています。
+    - `Giam`を使って、各`Animated GIF`を生成
 
 <!-- dummy comment line for breaking list -->
 

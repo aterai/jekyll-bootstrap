@@ -71,7 +71,7 @@ comments: true
 
 ## 参考リンク
 - ["ecqlipse 2" PNG by ~chrfb on deviantART](http://chrfb.deviantart.com/art/quot-ecqlipse-2-quot-PNG-59941546)
-    - アイコンを借りています。
+    - アイコンを借用
 
 <!-- dummy comment line for breaking list -->
 

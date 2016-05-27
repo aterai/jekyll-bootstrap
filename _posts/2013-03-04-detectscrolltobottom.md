@@ -34,7 +34,7 @@ scroll.getVerticalScrollBar().getModel().addChangeListener(new ChangeListener() 
 
 ## 参考リンク
 - [java - How to know if a JScrollBar has reached the bottom of the JScrollPane? - Stack Overflow](http://stackoverflow.com/questions/12916192/how-to-know-if-a-jscrollbar-has-reached-the-bottom-of-the-jscrollpane)
-    - `JScrollBar`に`AdjustmentListener`を設定する方法と、`BoundedRangeModel`に`ChangeListener`を設定する方法が回答されています。
+    - `JScrollBar`に`AdjustmentListener`を設定する方法と、`BoundedRangeModel`に`ChangeListener`を設定する方法が回答されている
 - [JScrollBarをJSliderとして使用する](http://ateraimemo.com/Swing/ScrollBarAsSlider.html)
 
 <!-- dummy comment line for breaking list -->

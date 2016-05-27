@@ -89,7 +89,7 @@ private final JTable table = new JTable(sorter) {
 </code></pre>
 
 - - - -
-- `JDK 1.6.0`から`JTable`には標準でソート機能が追加されています。
+- `JDK 1.6.0`から`JTable`には標準でソート機能が追加された
     - [Table Sorting and Filtering - New and Updated Desktop Features in Java SE 6, Part 2](http://www.oracle.com/technetwork/articles/javase/index-135205.html#1)
     - [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
 

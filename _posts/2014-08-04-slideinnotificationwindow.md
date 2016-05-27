@@ -72,12 +72,12 @@ comments: true
           a = AnimationUtil.easeInOut(count++ / (double) d.height);
           break;
         }
-        int visibleHeidht = (int) (.5 + a * d.height);
-        if (visibleHeidht &gt;= d.height) {
-          visibleHeidht = d.height;
+        int visibleHeight = (int) (.5 + a * d.height);
+        if (visibleHeight &gt;= d.height) {
+          visibleHeight = d.height;
           animator.stop();
         }
-        dialog.setLocation(new Point(dx, dy - visibleHeidht));
+        dialog.setLocation(new Point(dx, dy - visibleHeight));
       }
     });
     animator.start();

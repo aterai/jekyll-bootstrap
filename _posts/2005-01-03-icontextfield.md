@@ -34,18 +34,21 @@ field.add(label);
 ## 解説
 サンプルでは`setMargin`で`JTextField`の左に余白を作り、そこに`JLabel`を配置することでアイコン(画像)を表示しています。
 
-[JComboBoxにアイコンを追加](http://ateraimemo.com/Swing/IconComboBox.html)のように、`Border`を使っても同様のことができますが、`JTextComponent`を継承したコンポーネントでは、`setMargin`を使用するとカーソルの指定などが簡単にできるのでおすすめです。
+[JComboBoxにアイコンを追加](http://ateraimemo.com/Swing/IconComboBox.html)のように、`Border`を使っても同様のことができますが、`JTextComponent`を継承したコンポーネントでは、`setMargin`を使用するとカーソルの指定などが簡単に実現できます。
 
-また、`JLabel`の代わりに、`JButton`などを置くこともできます(参考リンクを参照)。
+また、`JLabel`の代わりに、`JButton`などのコンポーネントを配置することも可能です。
 
 - - - -
-`JComboBox`の`Editor`を取得して`Margin`を指定しても、 ~~なぜか~~ うまくいきません。
-
-- [JTextComponent#setMargin(Insets) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setMargin%28java.awt.Insets%29)
-    - ただし、デフォルト以外の境界が設定されている場合は、`Border`オブジェクトが適切なマージン空白を作成します(それ以外の場合、このプロパティーは事実上無視される)。
-    - via: [java - JTextField margin doesnt work with border - Stack Overflow](http://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
+- メモ
+    - `JComboBox`の`Editor`を取得して`Margin`を指定しても、反映されない
+    - [JTextComponent#setMargin(Insets) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setMargin%28java.awt.Insets%29)
+        - via: [java - JTextField margin doesnt work with border - Stack Overflow](http://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
 
 <!-- dummy comment line for breaking list -->
+
+<blockquote><p>
+ ただし、デフォルト以外の境界が設定されている場合は、`Border`オブジェクトが適切なマージン空白を作成します(それ以外の場合、このプロパティーは事実上無視される)。
+</p></blockquote>
 
 - - - -
 `JTextField`の右端に`JLabel`を置く場合は、以下のように`SpringLayout`を使用する方法があります。
