@@ -66,8 +66,8 @@ comments: true
 </code></pre>
 
 ## 解説
-- `Defalut`
-    - デフォルトでは、`WindowsLoolAndFeel`の場合でも、`Accelerator`は左寄せで表示される
+- `Default`
+    - デフォルトでは、`WindowsLookAndFeel`の場合でも、`Accelerator`は左寄せで表示される
 - `RightAcc`
     - `BasicMenuItemUI#paintMenuItem(...)`メソッドをオーバーライドして、`JMenuItem`の`Accelerator`を左寄せではなく、右寄せで表示
     - `Web Start`で実行すると`java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.swing")`と例外が発生してメニューが表示されない
@@ -79,7 +79,7 @@ comments: true
 
 - - - -
 - `EastAcc`
-    - `Windows 7`環境の`WindowsLoolAndFeel`でのみ正常に動作？
+    - `Windows 7`環境の`WindowsLookAndFeel`でのみ正常に動作？
     - `JMenuItem`に`GridBagLayout`を設定し、`c.anchor = GridBagConstraints.EAST;`で、`Accelerator`文字列を設定した`JLabel`を配置
     - 本来の`Accelerator`文字列は、`UIManager.put("MenuItem.acceleratorForeground", background);`などで背景色と同化して非表示
     - 参考: [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
@@ -141,7 +141,7 @@ comments: true
 import java.util.ListResourceBundle;
 //ant package
 //cd target
-//"%JAVA_HOME%\bin\java" -Xbootclasspath/p:example.jar -jar example.jar
+//"%JAVA_HOME%/bin/java" -Xbootclasspath/p:example.jar -jar example.jar
 public class awt_ja extends ListResourceBundle {
   @Override protected Object[][] getContents() {
     System.out.println("---- awt_ja ----");

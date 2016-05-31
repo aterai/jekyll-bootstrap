@@ -163,8 +163,7 @@ class CancelAction extends AbstractAction {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://ateraimemo.com/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ -- *aterai* 2007-02-22 (木) 17:57:58
-    - [Fileの再帰的検索](http://ateraimemo.com/Swing/RecursiveFileSearch.html)は、`JDK 1.6`の`javax.swing.SwingWorker`を使用するように変更しました。
+- ~~以前の`SwingWorker`の使い方などは、[Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)、[Fileの再帰的検索](http://ateraimemo.com/Swing/RecursiveFileSearch.html)などのソースコードやリンク先を参考にしてみてください。~~ [Fileの再帰的検索](http://ateraimemo.com/Swing/RecursiveFileSearch.html)は、`JDK 1.6`の`javax.swing.SwingWorker`を使用するように変更しました。 -- *aterai* 2007-02-22 (木) 17:57:58
     - [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)は ~~https://swingworker.dev.java.net/ にある~~ `JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用するように変更しました。 -- *aterai* 2009-12-17 (木) 01:47:38
     - `java.net`が新しくなって結構時間が経ったけど、[http://java.net/projects/swingworker](http://java.net/projects/swingworker) から`jar`がダウンロードできない…。[maven2 のリポジトリ](http://download.java.net/maven/2/org/jdesktop/swing-worker/1.1/)から取得するしかない？  -- *aterai* 2011-12-02 (金) 17:23:45
     - 上記の`jar`は、`1.1`なので、`1.2`が必要なら、 ソースを取得して、`ant bundles` -- *aterai* 2011-12-02 (金) 17:38:31

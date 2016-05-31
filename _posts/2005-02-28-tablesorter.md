@@ -104,7 +104,7 @@ private final JTable table = new JTable(sorter) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- いつもお世話になっております。 `jtable`を下記のように初期化します。
+- いつもお世話になっております。 `jtable`を下記のように初期化します。 -- *Tiger* 2010-08-05 (木) 06:07:47
 
 <!-- dummy comment line for breaking list -->
 

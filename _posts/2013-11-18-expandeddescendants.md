@@ -30,7 +30,7 @@ expandedState = tree.getExpandedDescendants(rootPath);
 
 - 注:
     - 親ノードが閉じている場合、その子ノードの展開状態は記憶していない
-        - このサンプルでの例を挙げると、`Set 004`を展開して、親の`Set 001`を折り畳んだ状態で、`JTree#getExpandedDescendants(TreePaht)`を使用した場合、戻り値の`Enumeration<TreePath>`に`Set 004`へのパスは含まれない
+        - このサンプルでの例を挙げると、`Set 004`を展開して、親の`Set 001`を折り畳んだ状態で、`JTree#getExpandedDescendants(TreePath)`を使用した場合、戻り値の`Enumeration<TreePath>`に`Set 004`へのパスは含まれない
     - [JTree#getExpandedDescendants(TreePath) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/JTree.html#getExpandedDescendants%28javax.swing.tree.TreePath%29)に書かれている説明がよく分からない(特に前半)が、もしかしたら上記のことを言っているのかもしれない…
 
 <!-- dummy comment line for breaking list -->

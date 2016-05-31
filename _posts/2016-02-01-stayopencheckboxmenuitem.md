@@ -7,6 +7,9 @@ tags: [JCheckBoxMenuItem, JCheckBox, JPopupMenu]
 author: aterai
 pubdate: 2016-02-01T01:14:27+09:00
 description: JPopupMenuにクリックしてもポップアップが開いたままの状態を維持するように設定したJCheckBoxMenuItemやJCheckBoxを追加します。
+hreflang:
+    href: http://java-swing-tips.blogspot.com/2016/05/keep-visible-jpopupmenu-while-clicking.html
+    lang: en
 comments: true
 ---
 ## 概要

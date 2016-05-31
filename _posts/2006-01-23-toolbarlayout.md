@@ -46,7 +46,7 @@ toolbar.add(createToolbarButton(url3));
 
 - マウスクリックでツールバーボタンにフォーカスが移動すると、コピーボタンを押したらテキストエディタでの文字列選択状態がクリアされたり、参考の質問のような不具合が起こる
 - 参考: [Swing - JTextPane selection color problem](https://community.oracle.com/thread/1358842)の camickr さんの投稿(2008/10/25 0:34)
-- `%JAVA_HOME%\demo\jfc\Notepad\src\Notepad.java`
+- `%JAVA_HOME%/demo/jfc/Notepad/src/Notepad.java`
 
 <!-- dummy comment line for breaking list -->
 

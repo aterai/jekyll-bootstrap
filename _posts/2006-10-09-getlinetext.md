@@ -28,7 +28,7 @@ while (st.hasMoreTokens()) {
 上記のサンプルでは、`JTextArea#getText()`ですべてのテキストを取得し、`StringTokenizer`を使って行毎に分解しています。`returnDelims`フラグが`false`なので、トークンが空行になることはありません。
 
 - - - -
-- `String#split`を使用する場合
+- `String#split(...)`を使用する場合
     - 空行あり
 
 <!-- dummy comment line for breaking list -->
@@ -57,7 +57,7 @@ while (st.hasMoreTokens()) {
 }
 </code></pre>
 
-- `Element#getElementCount`を使用する場合
+- `Element#getElementCount()`を使用する場合
     - 空行なし(`Element`には少なくとも長さ`1`の改行が存在する)
 
 <!-- dummy comment line for breaking list -->

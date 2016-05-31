@@ -109,7 +109,7 @@ public class ComboBoxUIDemo {
     Box box = Box.createVerticalBox();
 
     UIManager.put("ComboBox.border", BorderFactory.createEmptyBorder());
-    for (int i = 0; i &lt; 2; i++) { // Defalut
+    for (int i = 0; i &lt; 2; i++) { // Default
       JComboBox&lt;String&gt; cb = new JComboBox&lt;&gt;(makeModel());
       if (i % 2 == 0) setEditable(cb);
       setPopupBorder(cb);

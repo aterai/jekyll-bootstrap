@@ -21,7 +21,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`JDesktopPane`に追加されている`JInternalFrame`の一覧を表示するタスクバーを使用するかどうかを、`UIManager.put("InternalFrame.useTaskBar", ...);`で切り替えています。
 
-- `InternalFrame.useTaskBar`が有効かどうかは、`LoolAndFeel`に依存する
+- `InternalFrame.useTaskBar`が有効かどうかは、`LookAndFeel`に依存する
     - `NimbusLookAndFeel`は有効で、`JInternalFrame`がアイコン化されているかどうかにかかわらず、`TaskBar`にその一覧が表示される
     - また、`JInternalFrame`がアイコン化されている場合でも、その`DesktopIcon`は`TaskBar`から移動できない
 

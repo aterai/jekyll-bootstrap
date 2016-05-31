@@ -132,6 +132,6 @@ private static class Task extends SwingWorker&lt;String, Chunk&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- EDT外で`ProgressMonitor`を変更する(`monitor.setMinimum(0);`など)のは駄目な気がするので、修正。 -- *aterai* 2014-02-04 (火) 15:05:59
+- `EDT`外で`ProgressMonitor`を変更する(`monitor.setMinimum(0);`など)のは駄目な気がするので、修正。 -- *aterai* 2014-02-04 (火) 15:05:59
 
 <!-- dummy comment line for breaking list -->

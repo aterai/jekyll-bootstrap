@@ -6,11 +6,11 @@ title: Animated Gifからフレーム画像を抽出する
 tags: [ImageIO, ImageReader, BufferedImage, Animation]
 author: aterai
 pubdate: 2013-03-18T02:26:09+09:00
-description: AnimatedGifから各フレームの画像を抽出します。
+description: Animated GIFから各フレームの画像を抽出します。
 comments: true
 ---
 ## 概要
-`AnimatedGif`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://community.oracle.com/thread/1271862)の回答を参考に作成しています。
+`Animated GIF`から各フレームの画像を抽出します。主に[Swing - Reading gif animation frame rates and such?](https://community.oracle.com/thread/1271862)の回答を参考に作成しています。
 
 {% download https://lh4.googleusercontent.com/-_xu1jNmYJe0/UUX3d_PzwKI/AAAAAAAABoA/cyS5ABVZdkM/s800/ExtractFramesFromAnimatedGif.png %}
 
@@ -41,7 +41,7 @@ reader.dispose();
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`ImageReader`に`AnimatedGif`ファイルを読み込んで、`IIOImage#getRenderedImage()`メソッドで各フレームの`BufferedImage`を取得しています。
+上記のサンプルでは、`ImageReader`に`Animated GIF`ファイルを読み込んで、`IIOImage#getRenderedImage()`メソッドで各フレームの`BufferedImage`を取得しています。
 
 - 注:
     - 背景色や差分フレームは無視している
