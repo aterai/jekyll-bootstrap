@@ -82,7 +82,7 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 
 ## コメント
 - ボタンのセル内でマウスを移動しても削除するように変更。 -- *aterai* 2008-03-28 (金) 16:59:11
-    - メモ: `0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除できる -> [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- *aterai* 2008-03-28 (金) 17:21:10
+    - メモ: ~~`0`行目のボタンをクリックし、真上のヘッダ上でリリースしても削除可能~~ 修正済み: [Bug ID: 6291631 JTable: rowAtPoint returns 0 for negative y](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6291631) (追記: このバグは未修正になっているけど、`JDK 1.6, 1.7`などのソースではコメントにある修正が追加されている) -- *aterai* 2008-03-28 (金) 17:21:10
 
 <!-- dummy comment line for breaking list -->
 

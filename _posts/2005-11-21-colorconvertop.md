@@ -59,7 +59,7 @@ icon2 = new ImageIcon(Toolkit.getDefaultToolkit().createImage(ip));
 </code></pre>
 
 - - - -
-`BufferedImage.TYPE_BYTE_GRAY`で、`BufferedImage`を作成して複写してもグレースケールに変換できますが、透過色を使用している場合はすこし注意が必要なようです(参考:[Swing - Color to Grayscale to Binary](https://community.oracle.com/thread/1373262))。
+`BufferedImage.TYPE_BYTE_GRAY`で、`BufferedImage`を作成して複写してもグレースケールに変換できますが、透過色を使用している場合はすこし注意が必要なようです(参考: [Swing - Color to Grayscale to Binary](https://community.oracle.com/thread/1373262))。
 
 <pre class="prettyprint"><code>BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_BYTE_GRAY);
 Graphics g = bi.createGraphics();
@@ -73,7 +73,7 @@ g.dispose();
 - [Image Color Gray Effect : Java examples (example source code) » 2D Graphics GUI » Image](http://www.java2s.com/Code/Java/2D-Graphics-GUI/ImageColorGrayEffect.htm)
 - [opus-i | シンプル素材 テンプレート 音楽素材](http://opus-i.biz/)
 - [osakana.factory - グレースケールのひみつ](http://ofo.jp/osakana/cgtips/grayscale.phtml)
-    - via [プログラマメモ2: グレースケール](http://programamemo2.blogspot.com/2007/08/blog-post_21.html)
+    - via: [プログラマメモ2: グレースケール](http://programamemo2.blogspot.com/2007/08/blog-post_21.html)
 - [Swing - image manipulation](https://community.oracle.com/thread/1903279)
 
 <!-- dummy comment line for breaking list -->

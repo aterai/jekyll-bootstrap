@@ -83,6 +83,6 @@ protected JInternalFrame createFrame(JPanel panel) {
     - すこし調べてみたのですが、`Ubuntu`(`GNOME`) でも半透明にするには`JInternalFrame#setOpaque(false)`も必要みたいです。修正しておきます。 -- *aterai* 2007-05-25 (金) 13:07:50
     - 再度試してみたら、`JInternalFrame#setOpaque(false)`しても、`Ubuntu`(`GNOME`)+`JDK 1.6.0`+`GTKLookAndFeel`で半透明になってくれません。~~なにか`Ubuntu`の設定を弄ったから？~~ -- *aterai* 2007-10-10 (水) 18:49:22
 - `NimbusLookAndFeel`でも透明にできないようです。どちらも`SynthLookAndFeel`がベースなので、それが原因？ -- *aterai* 2007-11-15 (木) 13:32:50
-    - 追記:[SynthでJInternalFrameを半透明にする](http://ateraimemo.com/Swing/TranslucentFrame.html) -- *aterai* 2008-12-01 (月) 15:06:12
+    - 追記: [SynthでJInternalFrameを半透明にする](http://ateraimemo.com/Swing/TranslucentFrame.html) -- *aterai* 2008-12-01 (月) 15:06:12
 
 <!-- dummy comment line for breaking list -->

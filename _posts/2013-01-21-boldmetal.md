@@ -19,7 +19,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`UIManager.put("swing.boldMetal", Boolean.FALSE);`として、`JLabel`、`JButton`、`TitleBorder`などのデフォルトとしてボールド(太字)フォントを使用しないように設定しています。
+上記のサンプルでは、`UIManager.put("swing.boldMetal", Boolean.FALSE);`として、`JLabel`、`JButton`、`TitledBorder`などのデフォルトとしてボールド(太字)フォントを使用しないように設定しています。
 
 システムプロパティー`swing.boldMetal`を`false`に設定する方法でもボールド(太字)フォントを使用しないように設定することができます。
 

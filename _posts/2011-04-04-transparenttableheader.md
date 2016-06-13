@@ -44,7 +44,7 @@ comments: true
         - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)は、`JViewport#paintComponent(...)`をオーバーライド
 - `VerticalLine`
     - セル間の垂直線を非表示: `table.setShowVerticalLines(false);`
-    - セル間の幅を`0`にして、選択時に罫線のあとが表示されないように設定: `table.setIntercellSpacing(new Dimension(0,1));`
+    - セル間の幅を`0`にして、選択時に罫線のあとが表示されないように設定: `table.setIntercellSpacing(new Dimension(0, 1));`
 - `Boolean.class`の`DefaultRenderer`
     - 透明化した`BooleanCellRenderer`や`BooleanCellEditor`を設定
 - 注:

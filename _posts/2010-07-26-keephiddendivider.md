@@ -36,7 +36,7 @@ smax.setModel(selectMaxModel);
 
 ## 解説
 - `Min:DividerLocation, Max:DividerLocation`
-    - `JSplitPane#setDividerLocation`メソッドで`Divider`の位置を設定
+    - `JSplitPane#setDividerLocation(...)`メソッドで`Divider`の位置を設定
     - `JSplitPane`のリサイズで収納状態が解除される
         
         <pre class="prettyprint"><code>panel.add(new JButton(new AbstractAction("Min:DividerLocation") {

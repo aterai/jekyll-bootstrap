@@ -44,7 +44,7 @@ comments: true
 - 注:
     - `JProgressBar#setStringPainted(true)`を同時に使用すると、二重に表示される
     - 進捗状況に応じた文字色の変化には対応していない
-    - `NimbusLookAndFeel`の場合で、`TitleBorder`などを直接`JProgressBar`に設定しても、進捗文字列の垂直位置がずれない
+    - `NimbusLookAndFeel`の場合で、`TitledBorder`などを直接`JProgressBar`に設定しても、進捗文字列の垂直位置がずれない
 
 <!-- dummy comment line for breaking list -->
 

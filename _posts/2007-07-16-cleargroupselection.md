@@ -16,7 +16,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>final ButtonGroup bg = new ButtonGroup();
-Vector&lt;AbstractButton&gt; l = new Vector&lt;&gt;();
+List&lt;? extends AbstractButton&gt; l = new ArrayList&lt;&gt;();
 l.add(new JRadioButton("RadioButton1"));
 l.add(new JRadioButton("RadioButton2"));
 l.add(new JToggleButton(icon));

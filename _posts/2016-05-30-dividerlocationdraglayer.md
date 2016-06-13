@@ -61,7 +61,7 @@ comments: true
 上記のサンプルでは、`JSplitPane`の`Divider`をマウスでドラッグするだけでなく、`JSplitPane#setRightComponent(...)`などで追加した子コンポーネントをマウスでドラッグすることで、分割位置を変更できるように、`JSplitPane`にマウスイベントを取得する`LayerUI`を設定しています。
 
 - ドラッグ可能になるのは、`JSplitPane`の子コンポーネントの余白(そのコンポーネントが別途マウスイベントを処理しない領域)
-    - 例: マウスリスナを追加していない`JLabel`はドラッグ可能、`JButton`などはドラッグ不可となる
+    - 例: マウスリスナーを追加していない`JLabel`はドラッグ可能、`JButton`などはドラッグ不可となる
 
 <!-- dummy comment line for breaking list -->
 

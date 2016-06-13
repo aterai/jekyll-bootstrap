@@ -70,7 +70,7 @@ comments: true
     - 実体は`JPanel`で、これをセルエディタとして表示(`TableCellEditor#getTableCellEditorComponent`が`JPanel`を返す)
     - この`JPanel`のレイアウトを`BorderLayout`にして、`JTextField`と`JButton`を配置
     - `TableCellEditor#getCellEditorValue`は`JTextField`の値を返し、フォーカス、キー入力時の編集開始なども`JTextField`になるように変更
-    - 参考: [Swing - JTable editor issue](https://community.oracle.com/thread/1354286):Darryl.Burke さんの投稿(2009/01/27 20:12 (reply 6 of 8))
+    - 参考: [Swing - JTable editor issue](https://community.oracle.com/thread/1354286)の、Darryl.Burke さんの投稿(2009/01/27 20:12 (reply 6 of 8))
 
 <!-- dummy comment line for breaking list -->
 
@@ -79,7 +79,7 @@ comments: true
     - `JTextField`をコンストラクタの引数(セルエディタの実体)として使用
     - `JTextField`に`JButton`の幅の右余白を設定
     - `JTextField`が表示されたときに、余白に`JButton`を`setBounds`で配置
-    - 参考:[JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
+    - 参考: [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -62,7 +62,7 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 <!-- dummy comment line for breaking list -->
 
-コンポーネントの追加には、以下の方法を使用しています(比較:[JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html))。
+コンポーネントの追加には、以下の方法を使用しています(比較: [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html))。
 
 - ボタンの幅だけ、`tabAreaInsets`の左余白を拡大する
     - `UIManager.getInsets("TabbedPane.tabAreaInsets")`などを使用するため、`Synth`など(`GTK`, `Nimbus`)の`LookAndFeel`には対応していない

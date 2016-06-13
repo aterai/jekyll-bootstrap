@@ -69,9 +69,9 @@ comments: true
 </code></pre>
 
 ## 解説
-- 上:デフォルト
+- 上: `Default SnapToTicks`
     - `slider.setSnapToTicks(true);`としているので、マウスをリリースした時点で、ノブを置いた位置にもっとも近い目盛にスナップされる
-- 下:
+- 下: `Custom SnapToTicks`
     - `TrackListener#mouseDragged`をオーバーライドして、マウスでドラッグ中でもカーソルからもっとも近い目盛にスナップされる
 
 <!-- dummy comment line for breaking list -->

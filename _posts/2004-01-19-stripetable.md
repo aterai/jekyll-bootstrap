@@ -121,7 +121,7 @@ public class TableAlternateRowColorTest {
 
 ## コメント
 - `JTable#prepareRenderer`メソッドを使用する場合のサンプルを修正。 -- *aterai* 2007-04-04 (水) 19:41:37
-- メモ:[JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)。これおもしろいです。 -- *aterai* 2007-12-10 (月) 17:25:47
+- メモ: [JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)。これおもしろいです。 -- *aterai* 2007-12-10 (月) 17:25:47
 - ↑ありがとうございます．terai様のサイトは情報が充実していてすばらしいです．参考にさせていただきます． -- *KrdLab* 2008-01-27 (日) 14:27:53
 
 <!-- dummy comment line for breaking list -->

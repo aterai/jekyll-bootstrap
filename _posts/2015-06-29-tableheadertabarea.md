@@ -6,11 +6,11 @@ title: JTableHeaderで作成したタブエリアでCardLayoutのコンテナを
 tags: [JTabbedPane, CardLayout, TableColumn, MouseListener]
 author: aterai
 pubdate: 2015-06-29T04:23:18+09:00
-description: JTableHeaderをタブエリアとして使用し、TableColumnをクリックするとCardLayoutのコンテナが切り替わるようにマウスリスナを設定します。
+description: JTableHeaderをタブエリアとして使用し、TableColumnをクリックするとCardLayoutのコンテナが切り替わるようにマウスリスナーを設定します。
 comments: true
 ---
 ## 概要
-`JTableHeader`をタブエリアとして使用し、`TableColumn`をクリックすると`CardLayout`のコンテナが切り替わるようにマウスリスナを設定します。
+`JTableHeader`をタブエリアとして使用し、`TableColumn`をクリックすると`CardLayout`のコンテナが切り替わるようにマウスリスナーを設定します。
 
 {% download https://lh3.googleusercontent.com/-ZfZAc1Xgx9Q/VZBDTAXsteI/AAAAAAAAN7c/VEw9Z6haOP0/s800/TableHeaderTabArea.png %}
 

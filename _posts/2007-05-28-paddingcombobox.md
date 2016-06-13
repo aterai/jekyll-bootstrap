@@ -88,7 +88,7 @@ JComboBox&lt;String&gt; combo = new JComboBox&lt;String&gt;(model) {
 
 - - - -
 
-- `5`: `JComboBoxのBorder` + 任意の`Border`で余白を`JComboBox`自身に設定
+- `5`: `JComboBox`の`Border` + 任意の`Border`で余白を`JComboBox`自身に設定
     - `JComboBox#setBorder()`で、元の`Border`の内側に余白を指定
     - `WindowsLookAndFeel`, `MotifLookAndFeel`で有効？
     - `MetalLookAndFeel`, `NimbusLookAndFeel`では、`JComboBox`の外側に余白が付く

@@ -30,7 +30,7 @@ iframe.setVisible(true);
 このサンプルでは、タイトルが`AlwaysOnTop`の`JInternalFrame`を、`JLayeredPane.MODAL_LAYER`の一つ上に設定し、他の`JInternalFrame`(ここでは後から追加する`JInternalFrame`)より常に手前に表示されるように設定しています。
 
 ## 参考リンク
-- メモ:[JInternalFrameは最初にアイコン化しておかないと位置が更新されない](http://d.hatena.ne.jp/tori31001/20060901)
+- メモ: [JInternalFrameは最初にアイコン化しておかないと位置が更新されない](http://d.hatena.ne.jp/tori31001/20060901)
     - [Bug ID: 4110799 JInternalFrame icon position unchanged w/ resize](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4110799)
 
 <!-- dummy comment line for breaking list -->

@@ -172,7 +172,7 @@ public class SorterModelIndex {
 }
 </code></pre>
 
-- 早速のご回答、ありがとうございました。 選択された行の値を取り出すことができますが、今回表(`jTable`)の内容を`CSV`に書き出そうとしております。即ち選択した行がない場合、ソートをして(上り順`CCC`、`DDD`, `aaa`、`bbb`), `jTable.getValueAt(sorter.modelIndex(i),j);`（ `i`:行　`j`：列）、書き出した結果は（`aaa`, `bbb`, `CCC`, `DDD`）。即ち`sorter`していなかったの状態で書き出されました。読みにくいかもしれませんが、ご教示ください。 宜しくお願い致します -- *Tiger* 2010-08-05 (木) 15:42:51
+- 早速のご回答、ありがとうございました。 選択された行の値を取り出すことができますが、今回表(`jTable`)の内容を`CSV`に書き出そうとしております。即ち選択した行がない場合、ソートをして(上り順`CCC`、`DDD`、`aaa`、`bbb`), `jTable.getValueAt(sorter.modelIndex(i), j);`（`i`:行 `j`：列）、書き出した結果は（`aaa`, `bbb`, `CCC`, `DDD`）。即ち`sorter`していなかったの状態で書き出されました。読みにくいかもしれませんが、ご教示ください。 宜しくお願い致します -- *Tiger* 2010-08-05 (木) 15:42:51
     - `JTable`に表示されている見たまま(全選択、<kbd>Ctrl+C</kbd>でコピーして`TSV`)の状態でということでしょうか。それなら`sorter`は関係なく、以下のように`JTable#getValueAt`メソッドを普通に使えばいいかもしれません(`TableModel#getValueAt`と`JTable#getValueAt`の違いに注意)。 -- *aterai* 2010-08-05 (木) 17:54:10
 
 <!-- dummy comment line for breaking list -->

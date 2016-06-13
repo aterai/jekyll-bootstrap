@@ -77,7 +77,7 @@ button.addActionListener(new ActionListener() {
 </code></pre>
 
 - または、`TraversalKeys`を空にする
-    - 参考:[Swing - How to display "Loading data..." to the user](https://community.oracle.com/thread/1375257)
+    - 参考: [Swing - How to display "Loading data..." to the user](https://community.oracle.com/thread/1375257)
 
 <!-- dummy comment line for breaking list -->
 
@@ -87,7 +87,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 </code></pre>
 
 - - - -
-`Mnemonic`なども禁止したい場合は、以下のような`GlassPane`を使用する方法があります(参考:[Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/))。
+`Mnemonic`なども禁止したい場合は、以下のような`GlassPane`を使用する方法があります(参考: [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/))。
 
 <pre class="prettyprint"><code>class LockingGlassPane extends JComponent {
   public LockingGlassPane() {

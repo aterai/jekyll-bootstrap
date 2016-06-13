@@ -29,9 +29,9 @@ comments: true
 </code></pre>
 
 ## 解説
-- 上:デフォルト
+- 上: デフォルト
     - セルをクリックして編集状態になると`CellEditor`として、背景色が白の`JCheckBox`が表示される
-- 下:`JTable#getSelectionBackground()`
+- 下: `JTable#getSelectionBackground()`
     - `BooleanCellEditor`として使用する`JCheckBox`の背景色が常に`JTable#getSelectionBackground()`になるように`JTable#prepareEditor(...)`をオーバーライド
 
 <!-- dummy comment line for breaking list -->

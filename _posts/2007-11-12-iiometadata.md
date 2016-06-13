@@ -53,7 +53,7 @@ if (com != null &amp;&amp; com.getLength() &gt; 0) {
 - `JTextArea`
     - 属性は頭に`#`をつけて表示
 - `JTree`
-    - 参考:[Swing - XMLViewer](https://community.oracle.com/thread/1373824)
+    - 参考: [Swing - XMLViewer](https://community.oracle.com/thread/1373824)
 
 <!-- dummy comment line for breaking list -->
 

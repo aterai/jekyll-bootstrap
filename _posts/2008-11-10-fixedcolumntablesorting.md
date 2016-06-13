@@ -89,7 +89,7 @@ add(scroll);
 - - - -
 固定列でキーボードなどによるスクロールに対応するために以下のような`ChangeListener`を追加しています。
 
-- 参考:[Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
+- 参考: [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
 
 <!-- dummy comment line for breaking list -->
 

@@ -53,7 +53,7 @@ frame.setVisible(true);
     - `AWTUtilities.setWindowOpaque`などが使えるようになったのは、`6u10`からですが、上記のサンプルみたいなことができるようになったのは、`6u14`から(多分[Bug ID: 6683775 Painting artifacts is seen when panel is made setOpaque(false) for a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6683775))みたいですから、最近(ちょうど一年ぐらい)のようです。 -- *aterai* 2010-06-15 (火) 13:26:11
 - 「`Windows 7` + `JDK 1.7.0`」で、このサンプルにある`JComboBox`のドロップダウンリストが正常に描画されない？ 「`Windows XP` + `JDK 1.7.0`」や、「`Windows 7` + `JDK 1.6.0_27`」は問題なし。 -- *aterai* 2011-10-18 (火) 19:01:43
 - `JDK 1.7.0`では、背景を切り替えたときに前の背景の残像が残る場合がある？ -- *aterai* 2011-10-18 (火) 19:06:07
-    - こちらは`((JFrame)w).getContentPane().repaint();`でうまく~~いくが理由が不明…~~ ようなので修正。 -- *aterai* 2011-10-18 (火) 19:19:00
+    - こちらは`((JFrame) w).getContentPane().repaint();`でうまく~~いくが理由が不明…~~ ようなので修正。 -- *aterai* 2011-10-18 (火) 19:19:00
 - `JDK 1.7.0_04`で？、透明にした`JFrame`に`JComboBox`を追加すると、ドロップダウンリストがおかしい？ -- *aterai* 2012-05-15 (火) 12:49:23
     - 以下のような`PopupMenuListener`を追加すれば回避できるが…。 -- *aterai* 2012-05-15 (火) 14:16:17
         

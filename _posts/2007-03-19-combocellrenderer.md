@@ -37,7 +37,7 @@ comments: true
       editor.setForeground(table.getForeground());
       editor.setBackground((row % 2 == 0) ? ec : table.getBackground());
     }
-    addItem((value == null) ? "" : value.toString());
+    addItem(Objects.toString(value, ""));
     return this;
   }
 }

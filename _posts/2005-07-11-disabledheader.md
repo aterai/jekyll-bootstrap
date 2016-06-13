@@ -66,7 +66,7 @@ public boolean isEnabledAt(int col) {
 }
 </code></pre>
 
-`JDK 1.6.0`で導入された、`TableRowSorter`を使っている場合は、ソート不可にするカラムを`DefaultRowSorter#setSortable(int, boolean)`で指定し、表示を以下のようなレンダラーで切り替えます(参考:[TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html))。
+`JDK 1.6.0`で導入された、`TableRowSorter`を使っている場合は、ソート不可にするカラムを`DefaultRowSorter#setSortable(int, boolean)`で指定し、表示を以下のようなレンダラーで切り替えます(参考: [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html))。
 
 <pre class="prettyprint"><code>final JTableHeader hd = table.getTableHeader();
 final TableCellRenderer headerRenderer = hd.getDefaultRenderer();
