@@ -21,14 +21,9 @@ comments: true
 <pre class="prettyprint"><code>buttons.setFocusTraversalPolicyProvider(true);
 buttons.setFocusTraversalPolicy(new LayoutFocusTraversalPolicy() {
   @Override public Component getDefaultComponent(Container focusCycleRoot) {
-    ButtonModel selection = bg.getSelection();
-    for (Component c: focusCycleRoot.getComponents()) {
-      JRadioButton r = (JRadioButton) c;
-      if (r.getModel().equals(selection)) {
-        return r;
-      }
-    }
-    return super.getDefaultComponent(focusCycleRoot);
+    return Stream.of(focusCycleRoot.getComponents())
+                 .filter(c -&gt; ((JRadioButton) c).getModel().equals(selection))
+                 .findFirst().orElse(super.getDefaultComponent(focusCycleRoot));
   }
 });
 </code></pre>

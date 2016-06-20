@@ -22,8 +22,6 @@ comments: true
     .05f, .60f, .05f,
     .05f, .05f, .05f
   }), ConvolveOp.EDGE_NO_OP, null);
-  private int iw = -1;
-  private int ih = -1;
   private BufferedImage buf;
   public BlurButton(String label) {
     super(label);
@@ -33,11 +31,11 @@ comments: true
     if (isEnabled()) {
       super.paintComponent(g);
     } else {
-      if (buf == null || iw != getWidth() || ih != getHeight()) {
-        iw = getWidth();
-        ih = getHeight();
-        buf = new BufferedImage(iw, ih, BufferedImage.TYPE_INT_ARGB);
-      }
+      int w = getWidth();
+      int h = getHeight();
+      buf = Optional.ofNullable(buf)
+                    .filter(bi -&gt; bi.getWidth() == w &amp;&amp; bi.getHeight() == h)
+                    .orElseGet(() -&gt; new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB));
       Graphics2D g2 = buf.createGraphics();
       super.paintComponent(g2);
       g2.dispose();

@@ -26,14 +26,12 @@ comments: true
       Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; end,
       TemporalUnit temporalUnit) {
     super();
-    if (Objects.isNull(value)) {
-      throw new IllegalArgumentException("value is null");
-    }
     if (Objects.nonNull(start) &amp;&amp; start.compareTo(value) &gt;= 0
      || Objects.nonNull(end)   &amp;&amp; end.compareTo(value)   &lt;= 0) {
       throw new IllegalArgumentException("(start &lt;= value &lt;= end) is false");
     }
-    this.value = value;
+    this.value = Optional.ofNullable(value)
+                         .orElseThrow(() -&gt; new IllegalArgumentException("value is null"));
     this.start = start;
     this.end = end;
     this.temporalUnit = temporalUnit;

@@ -55,6 +55,8 @@ comments: true
 
 ## 参考リンク
 - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://ateraimemo.com/Swing/TableFileList.html)
+- [JTableの列を編集可、かつ選択不可に設定](http://ateraimemo.com/Swing/DisableColumnSelection.html)
+    - こちらは、選択不可だが、編集は可能な列を設定する場合のサンプル
 
 <!-- dummy comment line for breaking list -->
 

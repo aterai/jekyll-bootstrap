@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: TableBackground
 title: JTableの背景色を変更
-tags: [JTable, JViewport, JScrollPane]
+tags: [JTable, JViewport, JScrollPane, JColorChooser]
 author: aterai
 pubdate: 2004-08-02T01:28:45+09:00
 description: JTableを追加したJViewportがセルで隠れていない部分の色を変更します。

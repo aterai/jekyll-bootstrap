@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: HtmlTableTransferHandler
 title: JTableのHTML形式コピーをカスタマイズする
-tags: [JTable, TransferHandler, Html]
+tags: [JTable, TransferHandler, Html, JColorChooser]
 author: aterai
 pubdate: 2014-09-01T00:14:35+09:00
 description: JTableのセルを選択してクリップボードにHTMLテキストをコピーするとき、そのセルのクラスに応じて生成するタグを変更します。

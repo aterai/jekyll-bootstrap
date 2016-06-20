@@ -17,10 +17,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>//@see javax.swint.text.Utilities.getWordStart(...)
 int getWordStart(JTextComponent c, int offs) throws BadLocationException {
-  Element line = Utilities.getParagraphElement(c, offs);
-  if (line == null) {
-    throw new BadLocationException("No word at " + offs, offs);
-  }
+  Element line = Optional.ofNullable(Utilities.getParagraphElement(c, offs))
+                         .orElseThrow(() -&gt; new BadLocationException("No word at " + offs, offs));
   Document doc = c.getDocument();
   int lineStart = line.getStartOffset();
   int lineEnd = Math.min(line.getEndOffset(), doc.getLength());

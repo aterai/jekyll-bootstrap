@@ -27,9 +27,7 @@ while (readers.hasNext()) {
     break;
   }
 }
-if (reader == null) {
-  throw new IOException("Can not read image format!");
-}
+reader = Objects.requireNonNull(reader, "Can not read image format!");
 boolean isGif = reader.getFormatName().equalsIgnoreCase("gif");
 reader.setInput(imageStream, false, !isGif);
 List&lt;BufferedImage&gt; list = new ArrayList&lt;&gt;();
