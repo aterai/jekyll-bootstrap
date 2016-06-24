@@ -23,6 +23,7 @@ comments: true
 
 ## 参考リンク
 - [Swing - disabling "rename" on JFileChooser](https://community.oracle.com/thread/1377535)
+- [JFileChooserで読み取り専用ファイルのリネームを禁止](http://ateraimemo.com/Swing/RenameIfCanWriteFileChooser.html)
 
 <!-- dummy comment line for breaking list -->
 

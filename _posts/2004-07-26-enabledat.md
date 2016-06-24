@@ -29,6 +29,11 @@ comments: true
 ## 解説
 上記のサンプルでは、チェックボックスを使って詳細設定タブが選択できるかどうかを切り替えることができます。
 
-タブが選択できるかどうかは、`JTabbedPane#setEnabledAt`メソッドで設定します。
+タブが選択できるかどうかは、`JTabbedPane#setEnabledAt(...)`メソッドで設定します。
+
+## 参考リンク
+- [JTabbedPane#setEnabledAt(int, boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setEnabledAt-int-boolean-)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

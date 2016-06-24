@@ -19,6 +19,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>final JScrollPane scrollPane = new JScrollPane(table);
+//scrollPane.setColumnHeader(new JViewport()); // Dummy JViewport
 JCheckBox check = new JCheckBox("JTableHeader visible: ", true);
 check.addActionListener(new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {

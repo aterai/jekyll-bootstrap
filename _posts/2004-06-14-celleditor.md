@@ -40,7 +40,7 @@ comments: true
         <pre class="prettyprint"><code>table.setEnabled(false);
 
 </code></pre>
-    - * 参考リンク [#h3c8692e]
+## 参考リンク
 - [JTableでキー入力によるセル編集開始を禁止する](http://ateraimemo.com/Swing/PreventStartCellEditing.html)
 
 <!-- dummy comment line for breaking list -->

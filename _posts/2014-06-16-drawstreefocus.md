@@ -10,7 +10,7 @@ description: JTreeのノードが選択されてフォーカス状態になっ�
 comments: true
 ---
 ## 概要
-`JTree`のノードが選択されてフォーカス状態になった場合の`Border`による描画を`UIManager`で変更します。 
+`JTree`のノードが選択されてフォーカス状態になった場合の`Border`による描画を`UIManager`で変更します。
 
 {% download https://lh3.googleusercontent.com/-I62wWvQhdQI/U53BUsVLj9I/AAAAAAAACHk/SSHVLXv9m28/s800/DrawsTreeFocus.png %}
 

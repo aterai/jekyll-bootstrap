@@ -6,11 +6,11 @@ title: TrayIconのアニメーション
 tags: [SystemTray, Icon, Animation]
 author: aterai
 pubdate: 2007-02-05T02:07:43+09:00
-description: SystemTrayに追加したアイコン(JDK 6以上)をアニメーションさせます。
+description: SystemTrayに追加したトレイアイコンをアニメーションさせます。
 comments: true
 ---
 ## 概要
-`SystemTray`に追加したアイコン(`JDK 6`以上)をアニメーションさせます。
+`SystemTray`に追加したトレイアイコンをアニメーションさせます。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHtWabBgI/AAAAAAAAARk/J0ExgthCnn4/s800/AnimatedTrayIcon.png %}
 

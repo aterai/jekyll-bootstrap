@@ -33,7 +33,7 @@ comments: true
         SwingUtilities.updateComponentTreeUI(op);
         op.createDialog(getRootPane(), "title").setVisible(true);
 </code></pre>
-    - * 参考リンク [#hbe70b64]
+## 参考リンク
 - [java - JOptionPane button size (Nimbus LAF) - Stack Overflow](http://stackoverflow.com/questions/30138984/joptionpane-button-size-nimbus-laf)
 - [JOptionPane固有のプロパティ](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/synth/doc-files/componentProperties.html)
 - [Nimbusの外観をUIDefaultsで変更する](http://ateraimemo.com/Swing/UIDefaultsOverrides.html)

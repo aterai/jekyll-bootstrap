@@ -51,7 +51,7 @@ comments: true
         StyleConstants.setIcon(face, new FaceIcon());
         StyleConstants.setForeground(face, Color.RED);
 </code></pre>
-    - * 参考リンク [#j487c36f]
+## 参考リンク
 - [Replacing text in JTextPane with an image (think smileys) | Oracle Community](https://community.oracle.com/message/5853611)
 
 <!-- dummy comment line for breaking list -->

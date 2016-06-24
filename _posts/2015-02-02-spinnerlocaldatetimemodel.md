@@ -204,7 +204,7 @@ comments: true
                     }
                     Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; min = model.getStart();
                     Comparable&lt;ChronoLocalDateTime&lt;?&gt;&gt; max = model.getEnd();
-                    if (Objects.nonNull(min) &amp;&amp; min.compareTo(value) &gt; 0 
+                    if (Objects.nonNull(min) &amp;&amp; min.compareTo(value) &gt; 0
                      || Objects.nonNull(max) &amp;&amp; max.compareTo(value) &lt; 0) {
                       throw new ParseException(text + " is out of range", 0);
                     }
@@ -218,7 +218,7 @@ comments: true
               }
             }
 </code></pre>
-        - * 参考リンク [#jd46cbda]
+## 参考リンク
 - [JSpinnerで日付を設定](http://ateraimemo.com/Swing/SpinnerDateModel.html)
 - [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
 

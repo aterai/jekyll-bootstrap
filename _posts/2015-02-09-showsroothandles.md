@@ -36,7 +36,7 @@ comments: true
     - [http://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-](http://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-)
     
     		newValue - true if root handles should be displayed; otherwise, false
-    - * 参考リンク [#o16f3827]
+## 参考リンク
 - [JTreeの展開、折畳みアイコンを非表示にする](http://ateraimemo.com/Swing/TreeExpandedIcon.html)
 - [JTreeのルートノードを非表示に設定する](http://ateraimemo.com/Swing/TreeRootVisible.html)
 

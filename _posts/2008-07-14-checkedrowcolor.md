@@ -49,7 +49,7 @@ comments: true
       //rowRepaint(table, table.convertRowIndexToView(e.getFirstRow()));
       Rectangle r = table.getCellRect(table.convertRowIndexToView(e.getFirstRow()), 0, true);
       r.width  = table.getWidth();
-      //table.repaint(); //table全体をリペイントするのは、すこし無駄なので 
+      //table.repaint(); //table全体をリペイントする必要はないので
       table.repaint(r);  //一行だけリペイント
     }
   }

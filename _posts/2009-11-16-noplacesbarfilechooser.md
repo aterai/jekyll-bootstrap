@@ -19,7 +19,9 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`WindowsLookAndFeel`を使用している場合の`JFileChooser`で、左側に表示される`PlacesBar`を非表示にしています。
+上記のサンプルでは、`PlacesBar`(`WindowsLookAndFeel`を使用している場合の`JFileChooser`で左側に表示されるパネル)が非表示になるように、`UIManager.put("FileChooser.noPlacesBar", Boolean.TRUE);`を使用しています。
+
+`WindowsLookAndFeel`以外の`JFileChooser`場合、`FileChooser.noPlacesBar`の指定は無視されます。
 
 ## 参考リンク
 - [Swing - Disable something -- JFileChooser](https://community.oracle.com/thread/1354867)

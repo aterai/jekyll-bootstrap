@@ -128,7 +128,7 @@ comments: true
     <pre class="prettyprint"><code>g2.drawImage(img, zoomTransform, this);
 
 </code></pre>
-- * 参考リンク [#pd1ded23]
+## 参考リンク
 - [JPanelに表示した画像のズームとスクロール](http://ateraimemo.com/Swing/ZoomingAndPanning.html)
     - マウスホイールによるズーム用のリスナを引用
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)

@@ -46,7 +46,7 @@ expandedState = tree.getExpandedDescendants(rootPath);
 <pre class="prettyprint"><code>//XMLEncoderではデフォルトのJTreeの場合、展開状態などは保存されない
 try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(xmlFile)))) {
   xe.writeObject(tree);
-  //xe.close(); 
+  //xe.close();
   //...
 
   //ObjectOutputStreamの場合は、選択状態、展開状態なども保存、復元可能
