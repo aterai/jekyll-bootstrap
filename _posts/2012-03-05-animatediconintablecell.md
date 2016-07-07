@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: AnimatedIconInTableCell
 title: JTableのセルにAnimated GIFを表示する
-tags: [JTable, ImageIcon, ImageObserver]
+tags: [JTable, ImageIcon, ImageObserver, Animation]
 author: aterai
 pubdate: 2012-03-05T01:22:05+09:00
 description: ImageIconにImageObserverを設定して、JTableのセル中でAnimated GIFのアニメーションを行います。
@@ -49,6 +49,7 @@ icon.setImageObserver(new ImageObserver() {
 ## 参考リンク
 - [AnimatedIconTableExample.java](http://www2.gol.com/users/tame/swing/examples/SwingExamples.html)
     - 元サイトには繋がらないので、[animatedicontableexample.java - Google 検索](https://www.google.com/search?q=AnimatedIconTableExample.java)などのミラーを参考
+- [JTreeのTreeNodeにAnimated GIFを表示する](http://ateraimemo.com/Swing/AnimatedTreeNode.html)
 
 <!-- dummy comment line for breaking list -->
 

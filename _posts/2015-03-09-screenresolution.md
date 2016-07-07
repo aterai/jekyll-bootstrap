@@ -66,8 +66,7 @@ public static float getSizeOfText() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Toolkit (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#getScreenResolution--)
-    - ~~日本語版がすべて参照できない？~~ 移転の模様...
+- [Toolkit#getScreenResolution() (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#getScreenResolution--)
 - [UIManagerで使用するFontを統一](http://ateraimemo.com/Swing/FontChange.html)
 
 <!-- dummy comment line for breaking list -->

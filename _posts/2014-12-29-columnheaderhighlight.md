@@ -35,11 +35,8 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>TableColumnModel cm = table.getColumnModel();
-cm.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
-  @Override public void valueChanged(ListSelectionEvent e) {
-    header.repaint();
-  }
+<pre class="prettyprint"><code>table.getColumnModel().getSelectionModel().addListSelectionListener(e -&gt; {
+  header.repaint();
 });
 </code></pre>
 

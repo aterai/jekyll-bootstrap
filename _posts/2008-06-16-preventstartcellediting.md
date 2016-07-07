@@ -24,6 +24,7 @@ ce.setClickCountToStart(Integer.MAX_VALUE);
 ## 解説
 - `default`(上記のサンプルでのデフォルト)
     - `0`列目だけ`TableModel#isCellEditable`が`false`を返すように設定
+    - `JTable#isCellEditable`をオーバーライドする場合は、列の入れ替えに注意
 - `prevent KeyStroke autoStartsEdit`
     - `table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`で、キー入力(<kbd>F2</kbd>は除く)によるセルの編集開始を禁止
 - `prevent mouse from starting edit`

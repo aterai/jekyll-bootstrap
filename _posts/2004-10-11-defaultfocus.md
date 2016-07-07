@@ -43,7 +43,7 @@ comments: true
 </code></pre>
 
 - `WindowListener#windowOpened(...)`で、`requestFocusInWindow()`
-    - フレームに`WindowListener`を設定して、`windowOpened(...)`が呼び出されたときに、`requestFocusInWindow()`
+    - フレームに`WindowListener`を設定して、`windowOpened(...)`が呼び出されたときに、`requestFocusInWindow()`を実行
 
 <!-- dummy comment line for breaking list -->
 
@@ -55,7 +55,7 @@ comments: true
 </code></pre>
 
 - `ComponentListener#componentShown(...)`で、`requestFocusInWindow()`
-    - フレームに`ComponentListener`を設定して、`componentShown(...)`が呼び出されたとき(=フレームが`setVisible(true)`されたとき)に、`requestFocusInWindow()`
+    - フレームに`ComponentListener`を設定して、`componentShown(...)`が呼び出されたとき(=フレームが`setVisible(true)`されたとき)に、`requestFocusInWindow()`を実行
 
 <!-- dummy comment line for breaking list -->
 
@@ -67,7 +67,7 @@ comments: true
 </code></pre>
 
 - `KeyboardFocusManager#addPropertyChangeListener(...)`で、`requestFocusInWindow()`
-    - `KeyboardFocusManager`に`PropertyChangeListener`を設定して、`propertyChange(...)`が呼び出され、`PropertyName`が、`activeWindow`、かつ`PropertyChangeEvent#getNewValue()`が`null`でないときに、`requestFocusInWindow()`
+    - `KeyboardFocusManager`に`PropertyChangeListener`を設定して、`propertyChange(...)`が呼び出され、`PropertyName`が、`activeWindow`、かつ`PropertyChangeEvent#getNewValue()`が`null`でないときに、`requestFocusInWindow()`を実行
 
 <!-- dummy comment line for breaking list -->
 

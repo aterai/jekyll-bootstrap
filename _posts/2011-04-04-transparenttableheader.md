@@ -58,7 +58,7 @@ comments: true
         scroll.getColumnHeader().setOpaque(false);
         scroll.getColumnHeader().setBackground(alphaZero);
 </code></pre>
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)
 - [JTableHeaderを非表示にする](http://ateraimemo.com/Swing/RemoveTableHeader.html)
     - `JTable`のヘッダ自体を非表示にする場合のサンプル

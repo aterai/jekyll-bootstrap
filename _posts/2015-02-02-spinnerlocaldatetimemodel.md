@@ -218,7 +218,7 @@ comments: true
               }
             }
 </code></pre>
-## 参考リンク
+        - * 参考リンク [#reference]
 - [JSpinnerで日付を設定](http://ateraimemo.com/Swing/SpinnerDateModel.html)
 - [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
 

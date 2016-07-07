@@ -26,7 +26,7 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
 </code></pre>
 
 ## 解説
-`WindowsLookAndFeel`の場合、`JComboBox`のドロップダウンリストで右クリックを無効にするような`ComboBoxUI`を`UIManager.addAuxiliaryLookAndFeel(...)`を使って追加しています。
+`WindowsLookAndFeel`の場合、それを修正することなく、`JComboBox`のドロップダウンリストで右クリックを無効にするような`ComboBoxUI`を`UIManager.addAuxiliaryLookAndFeel(...)`を使って追加しています。
 
 - [JComboBoxのドロップダウンリストで右クリックを無効化](http://ateraimemo.com/Swing/DisableRightClick.html)
 
@@ -62,7 +62,7 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
   //...
 </code></pre>
 
-- 注
+- 注:
     - `LookAndFeel`を`Nimbus`にすると`ClassCastException`が発生する
         - [Bug ID: 6631956 Nimbus: ClassCastException when running with MultiLookAndFeel](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6631956)
     - `UIManager.addPropertyChangeListener(new PropertyChangeListener() {...});`を追加して、`WindowsLookAndFeel`以外の場合は、`UIManager.removeAuxiliaryLookAndFeel(auxLookAndFeel);`
@@ -72,11 +72,11 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Using the Multiplexing Look and Feel](http://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/multi/doc-files/multi_tsc.html)
+- [多重Look & Feelの使用](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/multi/doc-files/multi_tsc.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- いつか修正: `AuxiliaryLookAndFeel`の作成方法、使い方などをいろいろ間違えているような気がする…。 -- *aterai* 2012-04-09 (月) 14:41:52
+- `AuxiliaryLookAndFeel`の作成方法、使い方などを間違えているような気がするが…。 -- *aterai* 2012-04-09 (月) 14:41:52
 
 <!-- dummy comment line for breaking list -->
