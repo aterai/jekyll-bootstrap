@@ -17,22 +17,20 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class NonEditableLineDocumentFilter extends DocumentFilter {
   @Override public void insertString(
-      DocumentFilter.FilterBypass fb, int offset,
-      String string, AttributeSet attr) throws BadLocationException {
-    if (string == null) {
-      return;
-    } else {
+      FilterBypass fb, int offset, String string, AttributeSet attr)
+      throws BadLocationException {
+    if (Objects.nonNull(string)) {
       replace(fb, offset, 0, string, attr);
     }
   }
   @Override public void remove(
-      DocumentFilter.FilterBypass fb, int offset,
-      int length) throws BadLocationException {
+      FilterBypass fb, int offset, int length)
+      throws BadLocationException {
     replace(fb, offset, length, "", null);
   }
   @Override public void replace(
-      DocumentFilter.FilterBypass fb, int offset, int length,
-      String text, AttributeSet attrs) throws BadLocationException {
+      FilterBypass fb, int offset, int length, String text, AttributeSet attrs)
+      throws BadLocationException {
     Document doc = fb.getDocument();
     if (doc.getDefaultRootElement().getElementIndex(offset) &lt; 2) {
       return;

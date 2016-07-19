@@ -31,7 +31,7 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`UIManager.put("TabbedPane.unselectedBackground", Color.GREEN);`などを利用して、タブエリアの背景色などを変更することができます。
+上記のサンプルでは、`UIManager.put("TabbedPane.unselectedBackground", Color.GREEN);`などを利用して、`MetalLookAndFeel`でのタブエリアの背景色などを変更することができます。
 
 - メモ
     - `JPanel`タブ内に配置されている`JCheckBox`で、`JTabbedPane`を不透明に設定可能
