@@ -147,6 +147,7 @@ class TranslucentPopupFactory extends PopupFactory {
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html)
 - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7156657)
 - [JPopupMenuを半透明にする](http://ateraimemo.com/Swing/TranslucentPopupMenu.html)
+- [JRootPaneの背景として画像を表示](http://ateraimemo.com/Swing/RootPaneBackground.html)
 
 <!-- dummy comment line for breaking list -->
 
