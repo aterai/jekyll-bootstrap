@@ -31,6 +31,6 @@ combo.addMouseWheelListener(new MouseWheelListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、一番上のコンボボックスに`MouseWheelListener`が設定され、マウスホイールの上下回転に反応して、表示される内容が順次変更されるようになっています。
+上記のサンプルでは、`JComboBox`に`MouseWheelListener`を設定し、それにフォーカスがある場合はマウスホイールの上下回転イベントに反応して、表示される内容を順次変更されるようになっています。
 
 ## コメント

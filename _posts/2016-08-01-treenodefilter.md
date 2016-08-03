@@ -1,0 +1,62 @@
+---
+layout: post
+category: swing
+folder: TreeNodeFilter
+title: JTreeのノードを名前で検索して表示のフィルタリングを行う
+tags: [JTree, TreePath, TreeCellRenderer, DefaultMutableTreeNode]
+author: aterai
+pubdate: 2016-08-01T03:05:47+09:00
+description: JTreeのノードを検索し、そのTreePathが条件に一致しないノードを非表示にするフィルタリングを行います。
+comments: true
+---
+## 概要
+`JTree`のノードを検索し、その`TreePath`が条件に一致しないノードを非表示にするフィルタリングを行います。
+
+{% download https://lh3.googleusercontent.com/-Yx3QDfFydt0/V541DweTtLI/AAAAAAAAOe8/WUkpvRT7RVYVM-7tLkFsIlXkFpbPe2N9ACCo/s800/TreeNodeFilter.png %}
+
+## サンプルコード
+<pre class="prettyprint"><code>tree.setCellRenderer(new DefaultTreeCellRenderer() {
+  private final JLabel emptyLabel = new JLabel();
+  @Override public Component getTreeCellRendererComponent(
+        JTree tree, Object value, boolean selected, boolean expanded, boolean leaf,
+        int row, boolean hasFocus) {
+    Component c = super.getTreeCellRendererComponent(
+        tree, value, selected, expanded, leaf, row, hasFocus);
+    DefaultMutableTreeNode node = (DefaultMutableTreeNode) value;
+    FilterableNode uo = (FilterableNode) node.getUserObject();
+    return uo.status ? c : emptyLabel;
+  }
+});
+fireDocumentChangeEvent();
+//...
+private void fireDocumentChangeEvent() {
+  String q = field.getText();
+  TreePath rtp = tree.getPathForRow(0);
+  if (q.isEmpty()) {
+    resetAll(tree, rtp, true);
+    ((DefaultTreeModel) tree.getModel()).reload();
+    //visitAll(tree, rtp, true);
+  } else {
+    visitAll(tree, rtp, false);
+    searchTree(tree, rtp, q);
+  }
+}
+</code></pre>
+
+## 解説
+上記のサンプルでは、指定された条件に一致しないノードを高さ`0`の`TreeCellRenderer`で描画することで、ノードのフィルタリングを行っています。
+
+- `TreePath`に指定された接頭辞で始まる`TreeNode`が含まれている場合、そのノードの`UserObject`に表示フラグを立てる
+    - 例: `foo`で検索した場合、`food`ノード以下の子ノードも表示される
+- `TreeCellRenderer`で、`UserObject`を取得し、非表示の場合は高さ`0`の`JLabel`をレンダラーとして返す
+    - `tree.setRowHeight(-1);`と設定しているので、各ノードの推奨サイズが行の高さとして使用される
+- 高さ`0`のノードに対しても関連ノード間を繋ぐ点線が引かれる場合がある(`LookAndFeel`に依存)ので、これを非表示にする場合は、`UIManager.put("Tree.paintLines", Boolean.FALSE);`、または`tree.putClientProperty("JTree.lineStyle", "None");`などを使用する
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [java - Filter jtree - keeping all nodes and children of nodes that match criteria - Stack Overflow](http://stackoverflow.com/questions/38369170/filter-jtree-keeping-all-nodes-and-children-of-nodes-that-match-criteria)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント
