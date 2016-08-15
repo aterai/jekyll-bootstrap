@@ -7,6 +7,7 @@ tags: [JScrollPane, MouseWheelListener]
 author: aterai
 pubdate: 2015-03-30T00:02:11+09:00
 description: JScrollPaneで水平スクロールを行えるように、その内部のコンポーネントやHorizontalScrollBarにMouseWheelListenerを設定します。
+image: https://lh4.googleusercontent.com/-4Kw_wS64XRE/VRgM0GXPtuI/AAAAAAAAN1Y/V-bAnSy4pFY/s800/HorizontalMouseWheel.png
 comments: true
 ---
 ## 概要

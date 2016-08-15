@@ -7,6 +7,7 @@ tags: [JTable, CellEditor, Focus]
 author: aterai
 pubdate: 2015-06-15T00:00:18+09:00
 description: JTableのセルを編集開始したときに、セルエディタがフォーカスを取得するかどうかを設定で切り替えます。
+image: https://lh3.googleusercontent.com/-Kzqx4xhc2CM/VX2WWWF2AYI/AAAAAAAAN6o/MQEBYdlaDP4/s800/SurrendersFocusOnKeystroke.png
 comments: true
 ---
 ## 概要

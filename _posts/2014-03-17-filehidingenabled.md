@@ -7,6 +7,7 @@ tags: [JFileChooser, JPopupMenu]
 author: aterai
 pubdate: 2014-03-17T00:01:02+09:00
 description: JFileChooserで隠しファイルを表示するかどうかをポップアップメニューから切り替えます。
+image: https://lh4.googleusercontent.com/-TSMPljQ02Ao/UyWixahVFzI/AAAAAAAACBw/n_Ctee0FJGQ/s800/FileHidingEnabled.png
 comments: true
 ---
 ## 概要

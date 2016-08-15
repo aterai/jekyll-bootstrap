@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, TableCellRenderer, JSlider, ChangeListener]
 author: aterai
 pubdate: 2010-02-08T14:27:32+09:00
 description: JTableのCellEditorとCellRendererにJSliderを使用するように設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png
 comments: true
 ---
 ## 概要

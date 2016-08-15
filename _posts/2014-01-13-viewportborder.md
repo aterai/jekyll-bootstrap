@@ -7,6 +7,7 @@ tags: [JViewport, Border, JScrollPane, JTextArea, Caret]
 author: aterai
 pubdate: 2014-01-13T00:01:30+09:00
 description: JViewportにBorderを設定して余白を作成します。
+image: https://lh6.googleusercontent.com/-dtdRJtfyQqs/UtKoFiKxRVI/AAAAAAAAB-A/QmWEeAHNlmE/s800/ViewportBorder.png
 comments: true
 ---
 ## 概要

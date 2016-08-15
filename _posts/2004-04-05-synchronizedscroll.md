@@ -7,6 +7,7 @@ tags: [JScrollPane, ChangeListener, JScrollBar, BoundedRangeModel]
 author: aterai
 pubdate: 2004-04-05T03:28:02+09:00
 description: 2つのJScrollPaneのスクロールを同期します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTT_c3UmrI/AAAAAAAAAlU/adQEhxZ2FXc/s800/SynchronizedScroll.png
 comments: true
 ---
 ## 概要
@@ -53,10 +54,10 @@ sp2.getViewport().addChangeListener(cl);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、一方のスクロールバーを移動させると、他方も同程度移動するように設定した`ChangeListener`を使用しています。
+上記のサンプルでは、一方のスクロールバーを移動させると、他方も同程度の割合で移動するように設定した`ChangeListener`を使用しています。
 
 - - - -
-内部コンポーネントのサイズが等しい場合は、それぞれの`JScrollBar`の`BoundedRangeModel`を共有するだけで、スクロールを同期することができます。
+内部コンポーネントのサイズが等しい場合は、それぞれの垂直・水平`JScrollBar`で使用する`BoundedRangeModel`を共有するだけで、スクロールを同期することができます。
 
 <pre class="prettyprint"><code>sp2.getVerticalScrollBar().setModel(sp1.getVerticalScrollBar().getModel());
 sp2.getHorizontalScrollBar().setModel(sp1.getHorizontalScrollBar().getModel());

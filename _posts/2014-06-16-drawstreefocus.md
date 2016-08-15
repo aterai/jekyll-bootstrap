@@ -7,6 +7,7 @@ tags: [JTree, UIManager, Border, Focus, LookAndFeel]
 author: aterai
 pubdate: 2014-06-16T01:26:31+09:00
 description: JTreeのノードが選択されてフォーカス状態になった場合のBorderによる描画をUIManagerで変更します。
+image: https://lh3.googleusercontent.com/-I62wWvQhdQI/U53BUsVLj9I/AAAAAAAACHk/SSHVLXv9m28/s800/DrawsTreeFocus.png
 comments: true
 ---
 ## 概要

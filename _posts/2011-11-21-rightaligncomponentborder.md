@@ -7,6 +7,7 @@ tags: [Border, SpringLayout, JLayeredPane, JComponent]
 author: aterai
 pubdate: 2011-11-21T15:47:08+09:00
 description: SpringLayoutを設定したJLayeredPaneを使って、Borderの右下にJComponentを配置します。
+image: https://lh5.googleusercontent.com/-IPUQvbcJ2NM/TsjbIEMsMeI/AAAAAAAABE8/Fg16E6wkLtY/s800/RightAlignComponentBorder.png
 comments: true
 ---
 ## 概要

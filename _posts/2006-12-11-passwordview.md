@@ -7,6 +7,7 @@ tags: [JPasswordField, Icon]
 author: aterai
 pubdate: 2006-12-11T14:51:59+09:00
 description: JPasswordFieldのエコー文字を独自のIcon図形に変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQ8cs8ApI/AAAAAAAAAgY/gxUUdKI65yA/s800/PasswordView.png
 comments: true
 ---
 ## 概要

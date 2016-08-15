@@ -7,6 +7,7 @@ tags: [JInternalFrame, JDesktopPane, MetalLookAndFeel]
 author: aterai
 pubdate: 2016-03-21T22:17:29+09:00
 description: パレット化したJInternalFrameをJDesktopPaneのパレットレイヤーに追加します。
+image: https://lh3.googleusercontent.com/-WI8tV2GL8no/Vu_vV8kqSCI/AAAAAAAAOQ4/Os6hBhlLlCYP7L87Qkn_RBlFp8qkUEZrwCCo/s800-Ic42/PaletteInternalFrame.png
 comments: true
 ---
 ## 概要

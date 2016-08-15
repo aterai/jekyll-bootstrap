@@ -7,6 +7,7 @@ tags: [JProgressBar, UIManager]
 author: aterai
 pubdate: 2013-07-15T00:07:35+09:00
 description: JProgressBarの不確定進捗状態アニメーションで使用するサイクル時間などを設定します。
+image: https://lh3.googleusercontent.com/--xwJeUKsm8k/UeK6iFE0vkI/AAAAAAAABvw/SNNt1mvM4_c/s800/IndeterminateCycleTime.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [BufferedImage, MouseListener, MouseMotionListener, MemoryImageSource]
 author: aterai
 pubdate: 2010-06-07T15:20:45+09:00
 description: マウスのドラッグに応じて線を描画、消しゴムで消去する機能を実装します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPu_OEqoI/AAAAAAAAAec/z6MobKhblfI/s800/MemoryImageSource.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JFileChooser, ImageIcon, PropertyChangeListener]
 author: aterai
 pubdate: 2006-11-20
 description: JFileChooserに選択した画像ファイルのプレビューを表示する機能を追加します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRN6_UpeI/AAAAAAAAAg0/eJZas5kcb34/s800/PreviewAccessory.png
 comments: true
 ---
 ## 概要

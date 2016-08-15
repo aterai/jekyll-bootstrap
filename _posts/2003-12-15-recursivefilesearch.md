@@ -7,6 +7,7 @@ tags: [File, JProgressBar, SwingWorker]
 author: aterai
 pubdate: 2003-12-15
 description: 指定したDirectory以下のFileを再帰的に検索し、その進捗状況をJProgressBarで表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRh7du1II/AAAAAAAAAhU/jcMUoOTcbTU/s800/RecursiveFileSearch.png
 comments: true
 ---
 ## 概要

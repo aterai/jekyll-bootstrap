@@ -7,6 +7,7 @@ tags: [JComboBox, ListCellRenderer]
 author: aterai
 pubdate: 2009-03-02T12:37:58+09:00
 description: JComboBox自体の高さや、ドロップダウンリスト内にあるアイテムの高さを変更します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ6VVptrI/AAAAAAAAAVI/x72zWGymqHk/s800/ComboItemHeight.png
 comments: true
 ---
 ## 概要

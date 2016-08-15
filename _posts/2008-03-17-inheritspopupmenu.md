@@ -7,6 +7,7 @@ tags: [JPopupMenu, JScrollPane, JViewport, JTable, JTableHeader]
 author: aterai
 pubdate: 2008-03-17T13:34:51+09:00
 description: 親コンポーネントに設定されているJPopupMenuを取得して、これを表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOe9ph-LI/AAAAAAAAAcc/iwxbgnjvxg8/s800/InheritsPopupMenu.png
 comments: true
 ---
 ## 概要

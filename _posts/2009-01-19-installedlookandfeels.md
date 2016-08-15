@@ -7,6 +7,7 @@ tags: [LookAndFeel, UIManager, JMenuBar]
 author: aterai
 pubdate: 2009-01-19T13:31:06+09:00
 description: インストールされているLookAndFeelの一覧を取得し、これらを切り替えるためのメニューバーを作成します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOmfktdJI/AAAAAAAAAco/gBdSD5Qn9-Y/s800/InstalledLookAndFeels.png
 comments: true
 ---
 ## 概要

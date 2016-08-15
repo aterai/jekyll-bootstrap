@@ -7,6 +7,7 @@ tags: [JScrollPane, JScrollBar, ArrowButton, LayoutManager]
 author: aterai
 pubdate: 2011-05-16T15:08:24+09:00
 description: JScrollBarのスクロール移動Buttonの配置位置をレイアウトマネージャーを使って変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TdC-jTZ434I/AAAAAAAAA7I/cnbdjlwODJg/s800/ScrollBarButtonLayout.png
 comments: true
 ---
 ## 概要

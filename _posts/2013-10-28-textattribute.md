@@ -7,6 +7,7 @@ tags: [JTextField, JTextArea, Font, TextAttribute]
 author: aterai
 pubdate: 2013-10-28T00:39:37+09:00
 description: JTextFieldにテキスト属性を設定したフォントを使用して、文字列に下線を引きます。
+image: https://lh4.googleusercontent.com/-OkP81Y9wnSg/Um0wk_H3a5I/AAAAAAAAB5A/KfDBXqlXF3o/s800/TextAttribute.png
 comments: true
 ---
 ## 概要

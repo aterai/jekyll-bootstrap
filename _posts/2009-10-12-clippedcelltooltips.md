@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableCellRenderer, JToolTip]
 author: aterai
 pubdate: 2009-10-12T17:37:22+09:00
 description: JTableのセルがクリップされている場合のみJToolTipを表示します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJNQAyg-I/AAAAAAAAAUA/F6oQbiUShl4/s800/ClippedCellTooltips.png
 comments: true
 ---
 ## 概要

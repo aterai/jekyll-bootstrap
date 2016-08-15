@@ -7,6 +7,7 @@ tags: [TrayIcon, SystemTray, JFrame]
 author: aterai
 pubdate: 2015-01-12T02:04:17+09:00
 description: TrayIconを使用中にJFrameを最小化した場合に、そのアプリケーションのタスクバーボタンを表示するかどうかを切り替えます。
+image: https://lh4.googleusercontent.com/-tzpDxy7_qEA/VLKpHbpgC8I/AAAAAAAANuw/sRLjm08PrO8/s800/HideTaskbarButton.png
 comments: true
 ---
 ## 概要

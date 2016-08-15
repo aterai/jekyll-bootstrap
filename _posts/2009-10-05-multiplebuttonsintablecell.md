@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, TableCellRenderer, JButton, JPanel, ActionListen
 author: aterai
 pubdate: 2009-10-05T12:57:02+09:00
 description: JTableのセル内にクリック可能な複数のJButtonを配置します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQRygoYeI/AAAAAAAAAfU/-Sr9o7PsQkM/s800/MultipleButtonsInTableCell.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2009/10/multiple-jbuttons-in-jtable-cell.html
     lang: en

@@ -7,6 +7,7 @@ tags: [JTree, DefaultTreeModel, DefaultMutableTreeNode]
 author: aterai
 pubdate: 2014-02-03T12:43:56+09:00
 description: JTreeにノード追加をした場合、兄弟ノードの展開状態などがどうなるかをテストします。
+image: https://lh3.googleusercontent.com/-siBaGX1oXx8/Uu8JPWZaA7I/AAAAAAAAB_Y/fzV1VSKYg9I/s800/InsertNodeInto.png
 comments: true
 ---
 ## 概要

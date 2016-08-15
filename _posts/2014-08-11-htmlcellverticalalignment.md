@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, Html, JLabel]
 author: aterai
 pubdate: 2014-08-11T00:16:05+09:00
 description: JTableのCellに複数行になるHtmlテキストを表示する場合の行揃えによる描画の変化をテストします。
+image: https://lh5.googleusercontent.com/-Id-AlEWH0-M/U-eKsOPZf6I/AAAAAAAACLI/asLZtz0cOvk/s800/HtmlCellVerticalAlignment.png
 comments: true
 ---
 ## 概要

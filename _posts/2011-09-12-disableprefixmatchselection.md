@@ -7,6 +7,7 @@ tags: [JList, JTree]
 author: aterai
 pubdate: 2011-09-12T16:36:34+09:00
 description: JListにフォーカスがある状態で英数字キー入力をしたときに先頭文字が一致するアイテムを検索して選択する機能を無効にします。
+image: https://lh6.googleusercontent.com/-_wtzuIN_MvU/Tm2wga2X4hI/AAAAAAAABBs/dUuDS1gj9mM/s800/DisablePrefixMatchSelection.png
 comments: true
 ---
 ## 概要

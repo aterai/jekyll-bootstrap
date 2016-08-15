@@ -7,6 +7,7 @@ tags: [JTable, JScrollPane, JViewport, JPopupMenu]
 author: aterai
 pubdate: 2007-08-20T11:28:51+09:00
 description: JDK 6で導入された機能を使用して、JViewportの高さまでJTableを拡張します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMkfiP8jI/AAAAAAAAAZY/qHWqJtrcUgQ/s800/FillsViewportHeight.png
 comments: true
 ---
 ## 概要

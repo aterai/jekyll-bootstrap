@@ -7,6 +7,7 @@ tags: [ProgressMonitor, SwingWorker, PropertyChangeListener, JProgressBar]
 author: aterai
 pubdate: 2010-02-15T14:18:06+09:00
 description: ProgressMonitorで処理の進捗を表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRQXIAu4I/AAAAAAAAAg4/bh8niw_k5AE/s800/ProgressMonitor.png
 comments: true
 ---
 ## 概要

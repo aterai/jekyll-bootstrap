@@ -7,6 +7,7 @@ tags: [JFileChooser]
 author: aterai
 pubdate: 2012-09-17T13:37:55+09:00
 description: JFileChooserを開いた時のカレントディレクトリを設定します。
+image: https://lh5.googleusercontent.com/-L0xUhPSuu1Y/UFaopCvyPFI/AAAAAAAABSg/JUQJkTi-0BI/s800/FileChooserCurrentDirectory.png
 comments: true
 ---
 ## 概要

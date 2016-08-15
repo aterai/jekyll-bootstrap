@@ -7,6 +7,7 @@ tags: [JTextArea, MouseListener, MouseMotionListener]
 author: aterai
 pubdate: 2006-09-25
 description: JTextAreaのマウスカーソルがある行をロールオーバー表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQFUVNyQI/AAAAAAAAAfA/cTsyoFPSNEg/s800/MouseOverPainter.png
 comments: true
 ---
 ## 概要

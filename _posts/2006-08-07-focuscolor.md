@@ -7,6 +7,7 @@ tags: [JTextField, FocusListener]
 author: aterai
 pubdate: 2006-08-07T16:37:20+09:00
 description: どのJTextFieldを編集しているのかを分かりやすくするために、フォーカスのあるJTextFieldの背景色を変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTM__NmYpI/AAAAAAAAAaE/EUMDKR-Rwa4/s800/FocusColor.png
 comments: true
 ---
 ## 概要

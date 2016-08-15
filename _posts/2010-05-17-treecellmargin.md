@@ -7,6 +7,7 @@ tags: [JTree, TreeCellRenderer, Border, JLabel]
 author: aterai
 pubdate: 2010-05-17T14:59:42+09:00
 description: JTreeのノードにある文字列の左右に余白を追加します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWBZNFbLI/AAAAAAAAAok/8_0YqLhhqTk/s800/TreeCellMargin.png
 comments: true
 ---
 ## 概要

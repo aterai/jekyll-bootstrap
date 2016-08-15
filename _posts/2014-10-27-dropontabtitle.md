@@ -7,6 +7,7 @@ tags: [JTabbedPane, JList, DragAndDrop]
 author: aterai
 pubdate: 2014-10-27T00:01:06+09:00
 description: JTabbedPaneのタブ上にドロップすることで、選択しているListItemをそのタブ内にあるJListへ移動します。
+image: https://lh5.googleusercontent.com/-oMjKQSnXvmM/VEzg70T1BQI/AAAAAAAANnU/Exu8u5wYyAw/s800/DropOnTabTitle.png
 comments: true
 ---
 ## 概要

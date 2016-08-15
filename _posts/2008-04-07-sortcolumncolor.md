@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, TableRowSorter]
 author: aterai
 pubdate: 2008-04-07T12:47:33+09:00
 description: どのカラムでソートされているかを表示するために、セルの背景色を変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTZ75OnPI/AAAAAAAAAkU/k4lx4c2XKK8/s800/SortColumnColor.png
 comments: true
 ---
 ## 概要

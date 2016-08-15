@@ -7,6 +7,7 @@ tags: [JRadioButton, JToggleButton, ButtonGroup]
 author: aterai
 pubdate: 2007-07-16T21:58:08+09:00
 description: JDK 6で追加された機能を使用して、ButtonGroup内の選択をクリアします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTJDUnsHFI/AAAAAAAAATw/gkcmzcekHus/s800/ClearGroupSelection.png
 comments: true
 ---
 ## 概要

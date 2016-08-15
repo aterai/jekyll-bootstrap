@@ -7,6 +7,7 @@ tags: [JTree, Translucent, Transparent, TreeCellRenderer, UIDefaults]
 author: aterai
 pubdate: 2013-01-14T00:01:16+09:00
 description: JTreeの背景を透明にし、ノードの選択色を半透明にします。
+image: https://lh4.googleusercontent.com/-HxmekrVRX6M/UPLEn6O6-VI/AAAAAAAABbM/XJoGyl2khVM/s800/TranslucentTree.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2014/11/make-transparent-jtree-and-translucent.html
     lang: en

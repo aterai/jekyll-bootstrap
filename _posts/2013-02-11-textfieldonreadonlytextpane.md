@@ -7,6 +7,7 @@ tags: [JTextPane, JTextField, JScrollPane, Focus]
 author: aterai
 pubdate: 2013-02-11T00:11:13+09:00
 description: JTextFieldを空欄として編集不可にしたJTextPaneに追加します。
+image: https://lh4.googleusercontent.com/-N1aQ1F9Zrn8/UReetdvfWQI/AAAAAAAABdc/9J_2lkAgW0Y/s800/TextFieldOnReadOnlyTextPane.png
 comments: true
 ---
 ## 概要

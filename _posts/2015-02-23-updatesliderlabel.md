@@ -7,6 +7,7 @@ tags: [JSlider, JLabel]
 author: aterai
 pubdate: 2015-02-23T00:36:42+09:00
 description: JSliderの数値テキストラベルの値を変更した場合、その位置やサイズが正しく描画されるように更新を行うメソッドを実行します。
+image: https://lh5.googleusercontent.com/-xP4QgpDpRec/VOn2C7a0GLI/AAAAAAAANxQ/HQ3F4rVgoUI/s800/UpdateSliderLabel.png
 comments: true
 ---
 ## 概要

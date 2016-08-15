@@ -7,6 +7,7 @@ tags: [JSlider, Icon, JLabel]
 author: aterai
 pubdate: 2010-05-24T15:00:41+09:00
 description: JSliderの目盛りに使用するJLabelを取得し、アイコンを追加したり文字色を変更するなどの変更を行います。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWS_t-t1I/AAAAAAAAApA/78UrJyqx8og/s800/TriangleTickSlider.png
 comments: true
 ---
 ## 概要

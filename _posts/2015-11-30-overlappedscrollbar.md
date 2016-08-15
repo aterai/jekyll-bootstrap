@@ -7,6 +7,7 @@ tags: [JScrollPane, JScrollBar, JTable, LayoutManager]
 author: aterai
 pubdate: 2015-11-30T00:46:26+09:00
 description: 半透明のJScrollBarをJTable上に重ねてレイアウトするJScrollPaneを作成します。
+image: https://lh3.googleusercontent.com/-IHqUJwyfm8A/Vlsa4OUr4XI/AAAAAAAAOHk/QWKZO4xmtQo/s800-Ic42/OverlappedScrollBar.png
 comments: true
 ---
 ## 概要

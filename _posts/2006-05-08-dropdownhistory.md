@@ -7,6 +7,7 @@ tags: [JComboBox]
 author: aterai
 pubdate: 2006-05-08
 description: JComboBoxで入力した文字列などのアイテムを順に保存します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTL-2krEbI/AAAAAAAAAYc/9yTnbMmSi1Q/s800/DropDownHistory.png
 comments: true
 ---
 ## 概要
@@ -16,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>public static boolean addItem(JComboBox&lt;String&gt; combo, String str, int max) {
-  if (str == null || str.length() == 0) {
+  if (Objects.isNull(str) || str.isEmpty()) {
     return false;
   }
   combo.setVisible(false);

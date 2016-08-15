@@ -7,6 +7,7 @@ tags: [JSlider, JLabel, ChangeListener]
 author: aterai
 pubdate: 2014-12-15T00:11:41+09:00
 description: JSliderの大目盛りなどに設定した値ラベルが現在値を表すノブにもっとも近い場合、その色を変更します。
+image: https://lh3.googleusercontent.com/-QQwUIqqviTE/VI2lBcawp1I/AAAAAAAANtA/VWJPpQJoyyo/s800/SliderCurrentLabelColor.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2016/06/change-color-of-label-represents.html
     lang: en

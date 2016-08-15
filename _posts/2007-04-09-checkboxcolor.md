@@ -7,6 +7,7 @@ tags: [JCheckBox, Icon, UIManager]
 author: aterai
 pubdate: 2007-04-09T15:16:42+09:00
 description: JCheckBoxで使用するチェックアイコンの色や形を変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTI225hC_I/AAAAAAAAATc/YxhkQ5Bq2sk/s800/CheckBoxColor.png
 comments: true
 ---
 ## 概要

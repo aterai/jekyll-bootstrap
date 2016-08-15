@@ -7,6 +7,7 @@ tags: [JTable]
 author: aterai
 pubdate: 2007-06-25T18:03:27+09:00
 description: JTableの選択状態をchangeSelectionメソッドを使って変更します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTI0VFZw9I/AAAAAAAAATY/1C_mVqWcXPc/s800/ChangeSelection.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [Shape, Font, AffineTransform]
 author: aterai
 pubdate: 2008-07-28T12:01:57+09:00
 description: AffineTransformで図形や画像を反転して表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN731lMzI/AAAAAAAAAbk/Wc0qp3ocR88/s800/HorizontalFlip.png
 comments: true
 ---
 ## 概要

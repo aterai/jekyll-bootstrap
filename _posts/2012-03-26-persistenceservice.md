@@ -7,6 +7,7 @@ tags: [ServiceManager, PersistenceService, JFrame, SwingWorker, XMLEncoder, XMLD
 author: aterai
 pubdate: 2012-03-26T15:45:39+09:00
 description: ServiceManagerからPersistenceServiceを取得し、JFrameなどの位置・サイズの保存、呼び出しを行います。
+image: https://lh6.googleusercontent.com/-PyOW5DW5kHU/T3APD_Cq_bI/AAAAAAAABKk/i9eivMuQZ0Y/s800/PersistenceService.png
 comments: true
 ---
 ## 概要

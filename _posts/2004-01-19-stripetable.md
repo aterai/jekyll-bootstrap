@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, UIManager]
 author: aterai
 pubdate: 2004-01-19
 description: TableCellRendererを継承するレンダラーを作ってテーブルのセルを修飾します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT1bwXoBI/AAAAAAAAAlE/jmpoFwDpvqs/s800/StripeTable.png
 comments: true
 ---
 ## 概要

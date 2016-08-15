@@ -7,6 +7,7 @@ tags: [Timer, Animation, Icon]
 author: aterai
 pubdate: 2006-03-13
 description: javax.swing.Timerを使って、アニメーションするアイコンを作成します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTHuI0XeDI/AAAAAAAAARo/CVs615Dtkqs/s800/AnimeIcon.png
 comments: true
 ---
 ## 概要

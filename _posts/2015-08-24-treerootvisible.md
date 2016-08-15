@@ -7,6 +7,7 @@ tags: [JTree]
 author: aterai
 pubdate: 2015-08-24T02:45:44+09:00
 description: JTreeに表示しているTreeModelのルートノードを表示するかどうかを切り替えます。
+image: https://lh3.googleusercontent.com/-XEFtRsrOd3Q/VdoESnrikqI/AAAAAAAAN_0/wxHSA5WkDVg/s800-Ic42/TreeRootVisible.png
 comments: true
 ---
 ## 概要

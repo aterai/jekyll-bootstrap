@@ -7,6 +7,7 @@ tags: [JEditorPane, HTMLEditorKit, Font, StyleSheet, HTML]
 author: aterai
 pubdate: 2015-08-31T03:59:20+09:00
 description: HTMLEditorKitでbodyタグにデフォルトで指定されている文字サイズではなく、JEditorPaneに設定したフォントをHTMLテキストで使用します。
+image: https://lh3.googleusercontent.com/-eKfbGIGltkw/VeNSQCA5DkI/AAAAAAAAOAg/PyS8lMWBPu0/s800-Ic42/HonorDisplayProperties.png
 comments: true
 ---
 ## 概要

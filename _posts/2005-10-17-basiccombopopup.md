@@ -7,6 +7,7 @@ tags: [BasicComboPopup, JTextPane, JComboBox]
 author: aterai
 pubdate: 2005-10-17
 description: JComboBoxを使ってスクロール可能なポップアップメニューを表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH_tpIbsI/AAAAAAAAASE/DrHgihVbnn0/s800/BasicComboPopup.png
 comments: true
 ---
 ## 概要

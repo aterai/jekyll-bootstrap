@@ -7,6 +7,7 @@ tags: [JSplitPane, Divider, ActionMap, ServiceManager, BasicService]
 author: aterai
 pubdate: 2010-07-05T01:22:49+09:00
 description: JSplitPaneのディバイダをマウスのクリックなどで一気に展開、収納できるように設定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQl4nQ4PI/AAAAAAAAAf0/y7DMbOexVWs/s800/OneTouchExpandable.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [Html, JLabel, JButton, JEditorPane, HyperlinkListener, Hyperlink]
 author: aterai
 pubdate: 2007-11-26T04:49:23+09:00
 description: Hyperlinkを、JLabel、JButton、JEditorPaneで表示し、それぞれクリックした時のイベントを取得します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOIQH0ABI/AAAAAAAAAb4/9QlzkW-7_Es/s800/HyperlinkLabel.png
 comments: true
 ---
 ## 概要

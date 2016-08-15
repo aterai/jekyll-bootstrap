@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, LookAndFeel, TableCellRenderer]
 author: aterai
 pubdate: 2010-11-29T14:41:04+09:00
 description: JTableHeaderの字揃えをTableCellRendererを使って変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTN5ZuPeZI/AAAAAAAAAbg/Fivi4R1rR-Y/s800/HorizontalAlignmentHeaderRenderer.png
 comments: true
 ---
 ## 概要

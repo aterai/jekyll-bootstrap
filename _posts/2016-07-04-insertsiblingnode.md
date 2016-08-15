@@ -7,6 +7,7 @@ tags: [JTree, JPopupMenu, DefaultMutableTreeNode, TreeNode, TreeModel]
 author: aterai
 pubdate: 2016-07-04T00:56:54+09:00
 description: JTreeのノードを選択してポップアップメニューを開き、その前または後ろに新規ノードを挿入します。
+image: https://lh3.googleusercontent.com/-P_GnYongQ64/V3kweryY25I/AAAAAAAAOdI/CqWS6tum8402qaWo1130iBF5r1tVPkJCwCCo/s800/InsertSiblingNode.png
 comments: true
 ---
 ## 概要

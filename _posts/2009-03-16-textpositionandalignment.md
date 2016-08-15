@@ -7,6 +7,7 @@ tags: [JLabel, Icon, Alignment, JButton]
 author: aterai
 pubdate: 2009-03-16T13:43:23+09:00
 description: JLabelのアイコンと文字列の位置をテストします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVPS5wBUI/AAAAAAAAAnU/2hri1cAlfoM/s800/TextPositionAndAlignment.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [Shape, PathIterator, FlatteningPathIterator]
 author: aterai
 pubdate: 2013-07-08T01:45:24+09:00
 description: FlatteningPathIteratorを使って平坦化されたShape上の座標点を取得、描画します。
+image: https://lh4.googleusercontent.com/-3GsdpxueSG8/Udl1tOfisII/AAAAAAAABvc/SBOIf1ZPPUk/s800/FlatteningPathIterator.png
 comments: true
 ---
 ## 概要

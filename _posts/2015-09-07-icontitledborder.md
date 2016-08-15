@@ -7,6 +7,7 @@ tags: [Border, TitledBorder, ImageIcon, Html]
 author: aterai
 pubdate: 2015-09-07T00:03:04+09:00
 description: TitledBorderのタイトルに文字列だけでなく、アイコンを表示するように設定します。
+image: https://lh3.googleusercontent.com/-CoxU1H7Z550/VexP9UAQdbI/AAAAAAAAOBI/QIVGOXu5MNE/s800-Ic42/IconTitledBorder.png
 comments: true
 ---
 ## 概要

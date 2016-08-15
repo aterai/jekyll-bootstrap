@@ -7,6 +7,7 @@ tags: [JMenuBar, JMenu, JMenuItem, LookAndFeel]
 author: aterai
 pubdate: 2016-07-18T01:53:49+09:00
 description: JMenuに追加したJMenuItemやJLabelなどのコンポーネントのテキスト位置を揃えて表示します。
+image: https://lh3.googleusercontent.com/-S49YgtIvzc8/V4upKl0JAFI/AAAAAAAAOd4/9vWtFW4DvY4xR0bL0sM9iGRBvHz_u7AcQCCo/s800/MenuItemTextAlignment.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JComponent, HierarchyListener, JScrollPane, JTabbedPane, CardLayout]
 author: aterai
 pubdate: 2009-04-20T14:24:13+09:00
 description: JComponentの表示状態が切り替わった時、そのisDisplayable、isShowing、isVisibleメソッドが返す値をテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS-a1ZnQI/AAAAAAAAAjo/jB4n-1WmEIs/s800/ShowingDisplayableVisible.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JToggleButton, FlowLayout, Icon, EmptyBorder]
 author: aterai
 pubdate: 2015-05-04T00:58:14+09:00
 description: ボタンテキストが左揃えの非矩形JToggleButtonをFlowLayoutを使って任意の幅だけ重ねて配置します。
+image: https://lh3.googleusercontent.com/-1OUh7yWnn3o/VUZELyRwR_I/AAAAAAAAN3s/ZgylrxCIOjQ/s800/BackgroundButtonIcon.png
 comments: true
 ---
 ## 概要

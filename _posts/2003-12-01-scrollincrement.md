@@ -7,6 +7,7 @@ tags: [JScrollPane, JScrollBar]
 author: aterai
 pubdate: 2003-12-01
 description: スクロールがホイールの回転でスムーズに移動しない(遅い)場合は、JScrollPaneのスクロール量を変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSi6qpTZI/AAAAAAAAAi8/nrtWKpDCdHI/s800/ScrollIncrement.png
 comments: true
 ---
 ## 概要

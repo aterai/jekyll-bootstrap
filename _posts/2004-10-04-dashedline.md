@@ -7,6 +7,7 @@ tags: [BasicStroke, Graphics2D]
 author: aterai
 pubdate: 2004-10-04T03:54:35+09:00
 description: 破線パターンの配列からBasicStrokeを作成し、これを描画します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKaxPM12I/AAAAAAAAAV8/ZQON-woHuIg/s800/DashedLine.png
 comments: true
 ---
 ## 概要

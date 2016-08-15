@@ -7,6 +7,7 @@ tags: [UIManager, Font]
 author: aterai
 pubdate: 2003-10-27
 description: Swingの各種コンポーネントで使用する全てのフォントを一気に変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNJ5XQrjI/AAAAAAAAAaU/lvxCohYLmBI/s800/FontChange.png
 comments: true
 ---
 ## 概要

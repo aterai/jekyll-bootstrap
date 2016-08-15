@@ -7,6 +7,7 @@ tags: [JSpinner, JTextField, Border, UIManager, LookAndFeel]
 author: aterai
 pubdate: 2010-08-23T15:50:45+09:00
 description: JSpinnerを編集不可にした場合の背景色や内部余白の色などを変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOcTAKgdI/AAAAAAAAAcY/R1dvME0C6UA/s800/InactiveSpinnerInsets.png
 comments: true
 ---
 ## 概要

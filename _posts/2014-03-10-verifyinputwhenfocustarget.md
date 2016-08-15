@@ -7,6 +7,7 @@ tags: [JTextField, InputVerifier, Focus]
 author: aterai
 pubdate: 2014-03-10T10:15:22+09:00
 description: InputVerifierを設定したJTextFieldの値が適切な形式でない場合のフォーカス移動動作をテストします。
+image: https://lh4.googleusercontent.com/-0s6ChUywZz8/Ux0P0IVi99I/AAAAAAAACBY/8hZOhY0SCI4/s800/VerifyInputWhenFocusTarget.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JFrame, JPopupMenu, JToolBar, JMenuBar]
 author: aterai
 pubdate: 2013-03-11T17:04:49+09:00
 description: JPopupMenuや、JToolBarなどに親Windowを閉じるためのActionを作成します。
+image: https://lh6.googleusercontent.com/-xWsEbhvjfDY/UT2P-83x0FI/AAAAAAAABmc/7isd5KoGMQc/s800/WindowClosingAction.png
 comments: true
 ---
 ## 概要

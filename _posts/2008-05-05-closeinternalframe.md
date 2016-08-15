@@ -7,6 +7,7 @@ tags: [JInternalFrame, JDesktopPane, DesktopManager]
 author: aterai
 pubdate: 2008-05-05T20:51:51+09:00
 description: 選択中のJInternalFrameをDesktopManagerなどを使用して外部から閉じる(JDesktopPaneから除去する)方法をテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJcTXtdNI/AAAAAAAAAUY/zL_wkJJa_Ks/s800/CloseInternalFrame.png
 comments: true
 ---
 ## 概要

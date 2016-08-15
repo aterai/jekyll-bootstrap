@@ -7,6 +7,7 @@ tags: [JButton, UIManager]
 author: aterai
 pubdate: 2007-12-31T16:51:19+09:00
 description: JButtonをクリックしたときのテキストシフト量を変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVR92SsdI/AAAAAAAAAnY/_wKFJTNu2oY/s800/TextShiftOffset.png
 comments: true
 ---
 ## 概要

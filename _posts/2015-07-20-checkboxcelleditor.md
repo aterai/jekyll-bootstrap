@@ -7,6 +7,7 @@ tags: [JTable, JCheckBox, TableCellEditor, JPanel]
 author: aterai
 pubdate: 2015-07-20T03:24:10+09:00
 description: JTableのセルエディタとしてJPanel中央に配置したJCheckBoxを設定し、そのJCheckBoxをクリックした場合のみ選択状態が変化するように設定します。
+image: https://lh3.googleusercontent.com/-t1TDt_cSOzU/VavlaZDRBaI/AAAAAAAAN9c/nVCdYcC71e8/s800-Ic42/CheckBoxCellEditor.png
 comments: true
 ---
 ## 概要

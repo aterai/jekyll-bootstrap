@@ -7,6 +7,7 @@ tags: [JComboBox, Html]
 author: aterai
 pubdate: 2005-01-17
 description: JComboBoxのItemにテキストを左右に分けて配置します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPk2QD9aI/AAAAAAAAAeM/xrl0d1ms74g/s800/LRComboBox.png
 comments: true
 ---
 ## 概要

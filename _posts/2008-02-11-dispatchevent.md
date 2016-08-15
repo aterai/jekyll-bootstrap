@@ -7,6 +7,7 @@ tags: [AWTEvent, Toolkit, AWTEventListener]
 author: aterai
 pubdate: 2008-02-11T21:32:38+09:00
 description: AWTEventを取得して、マウスやキーボードの入力イベントを監視します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLPUOE2MI/AAAAAAAAAXQ/5qrFGk7E5GM/s800/DispatchEvent.png
 comments: true
 ---
 ## 概要

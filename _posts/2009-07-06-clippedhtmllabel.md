@@ -7,6 +7,7 @@ tags: [Html, JTable, TableCellRenderer, JLabel, Hyperlink]
 author: aterai
 pubdate: 2009-07-06T15:24:09+09:00
 description: Htmlで文字列を修飾するとクリップされなくなるので、予めクリップした文字列を作成してからHtmlを使用します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJP6CTKHI/AAAAAAAAAUE/aD5gF_0luwI/s800/ClippedHtmlLabel.png
 comments: true
 ---
 ## 概要
@@ -71,7 +72,7 @@ comments: true
 - 上
     - `setText("<html><font color='blue'>"+str);`で文字列に下線を引く
 - 下
-    - `SwingUtilities.layoutCompoundLabel`メソッドを使用して文字列をセル幅でクリップ
+    - `SwingUtilities.layoutCompoundLabel(...)`メソッドを使用して文字列をセル幅分のみに省略
     - `setText("<html><font color='blue'>"+str);`で文字列に下線を引く
 
 <!-- dummy comment line for breaking list -->

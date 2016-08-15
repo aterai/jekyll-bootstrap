@@ -7,6 +7,7 @@ tags: [GlyphVector, LineMetrics, TextLayout, Animation, JComponent]
 author: aterai
 pubdate: 2006-11-13
 description: GlyphVectorを生成して、これを電光掲示板のようにスクロールさせます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSlbxO22I/AAAAAAAAAjA/SJLXTaAYArY/s800/ScrollingMessage.png
 comments: true
 ---
 ## 概要

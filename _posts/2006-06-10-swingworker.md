@@ -7,6 +7,7 @@ tags: [SwingWorker, JProgressBar, JTextArea, Animation]
 author: aterai
 pubdate: 2006-06-10
 description: JDK 6で新しくなったSwingWorkerを使って、処理の中断や進捗状況の表示更新などを行います。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTT8xXI-cI/AAAAAAAAAlQ/ueJc6P4EJVg/s800/SwingWorker.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JFrame, JDialog]
 author: aterai
 pubdate: 2003-09-22
 description: JFrameやJDialogの最小サイズを指定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTP41PdCsI/AAAAAAAAAes/cxniHSm55rQ/s800/MinimumFrame.png
 comments: true
 ---
 ## 概要

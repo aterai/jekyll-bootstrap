@@ -7,6 +7,7 @@ tags: [ColorConvertOp, BufferedImage, RGBImageFilter, ImageIcon]
 author: aterai
 pubdate: 2005-11-21
 description: ColorConvertOpを使って画像をグレースケールに変換します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTJmEhFayI/AAAAAAAAAUo/x4JGGk_f08c/s800/ColorConvertOp.png
 comments: true
 ---
 ## 概要

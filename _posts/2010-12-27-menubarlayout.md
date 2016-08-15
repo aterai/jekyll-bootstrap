@@ -7,6 +7,7 @@ tags: [JMenuBar, JMenu, LayoutManager, FlowLayout]
 author: aterai
 pubdate: 2010-12-27T11:25:50+09:00
 description: JMenuBarのレイアウトマネージャーを変更して、JMenuを折り返して表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TRf4-liTfjI/AAAAAAAAAwk/CURxxE6iDqk/s800/MenuBarLayout.png
 comments: true
 ---
 ## 概要

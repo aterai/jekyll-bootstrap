@@ -7,6 +7,7 @@ tags: [JList, JButton, ListCellRenderer]
 author: aterai
 pubdate: 2011-10-03T14:43:12+09:00
 description: JListのセル内に複数のJButtonを配置します。
+image: https://lh3.googleusercontent.com/-j4_Xv9F17Jc/TolDAZSkQUI/AAAAAAAABDU/GK_sK9k5aJE/s800/ButtonsInListCell.png
 comments: true
 ---
 ## 概要

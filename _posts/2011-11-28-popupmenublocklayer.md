@@ -7,6 +7,7 @@ tags: [JLayer, GlassPane, JScrollPane, JComponent]
 author: aterai
 pubdate: 2011-11-28T15:32:54+09:00
 description: JLayerを使って、子コンポーネントへのすべての入力を制限します。
+image: https://lh5.googleusercontent.com/-Svne2X0djJ8/TtJGGlPU-OI/AAAAAAAABFM/xjZfqHHbkJ0/s800/PopupMenuBlockLayer.png
 comments: true
 ---
 ## 概要

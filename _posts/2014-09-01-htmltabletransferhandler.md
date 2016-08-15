@@ -7,6 +7,7 @@ tags: [JTable, TransferHandler, Html, JColorChooser]
 author: aterai
 pubdate: 2014-09-01T00:14:35+09:00
 description: JTableのセルを選択してクリップボードにHTMLテキストをコピーするとき、そのセルのクラスに応じて生成するタグを変更します。
+image: https://lh5.googleusercontent.com/-VsQ_pmP_GKM/VAM3IR6IvyI/AAAAAAAACMI/97dngpaAQn8/s800/HtmlTableTransferHandler.png
 comments: true
 ---
 ## 概要

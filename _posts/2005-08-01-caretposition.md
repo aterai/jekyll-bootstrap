@@ -7,6 +7,7 @@ tags: [JTextPane, JTextComponent, Caret, Document]
 author: aterai
 pubdate: 2005-08-01T02:22:59+09:00
 description: CaretPositionを指定してJTextPaneの最終行に移動します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTId9wo-yI/AAAAAAAAAS0/GZbZiJfMOwI/s800/CaretPosition.png
 comments: true
 ---
 ## 概要

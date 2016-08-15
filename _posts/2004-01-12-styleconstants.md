@@ -7,6 +7,7 @@ tags: [JTextPane, StyledDocument]
 author: aterai
 pubdate: 2004-01-12
 description: JTextPaneに、スタイル付けした文字列を挿入して、ログ風に表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT31r9lEI/AAAAAAAAAlI/7PqL2Aa3UJU/s800/StyleConstants.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTextArea, BufferedImage, Border, JViewport]
 author: aterai
 pubdate: 2006-03-06T19:15:08+09:00
 description: JTextAreaなどのコンポーネントの背景に、Borderを使って中心揃えした画像を表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIyAIY_mI/AAAAAAAAATU/GovGMBqjzRo/s800/CentredBackgroundBorder.png
 comments: true
 ---
 ## 概要

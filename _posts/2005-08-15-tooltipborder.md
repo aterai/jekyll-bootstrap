@@ -5,8 +5,9 @@ folder: ToolTipBorder
 title: JToolTipにBorderを設定
 tags: [JToolTip, Border]
 author: aterai
-pubdate: 2005-08-15
+pubdate: 2005-08-15T00:22:53+09:00
 description: JComponentのcreateToolTip()メソッドをオーバーライドして、Borderを変更したJToolTipを生成します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVjcQsX6I/AAAAAAAAAn0/tieki8bniAM/s800/ToolTipBorder.png
 comments: true
 ---
 ## 概要

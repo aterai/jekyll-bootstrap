@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableRowSorter, Icon]
 author: aterai
 pubdate: 2013-10-14T00:15:08+09:00
 description: JTableの複数キーを使ったソートの状態をヘッダ上に別途表示します。
+image: https://lh3.googleusercontent.com/-QNe3lJ3oXH0/Ulqu3vaS91I/AAAAAAAAB3U/Tb2kXiKV8Fs/s800/MultisortHeaderRenderer.png
 comments: true
 ---
 ## 概要

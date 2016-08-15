@@ -7,6 +7,7 @@ tags: [Border, Animation, Timer]
 author: aterai
 pubdate: 2006-05-29T09:06:51+09:00
 description: Timerを使って、波紋風のアニメーションを描画するBorderを作成します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR9UHQaAI/AAAAAAAAAiA/_Kn7tNr8M3s/s800/RippleBorder.png
 comments: true
 ---
 ## 概要

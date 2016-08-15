@@ -7,6 +7,7 @@ tags: [JFrame, Window]
 author: aterai
 pubdate: 2005-05-09
 description: SwingUtilities.getWindowAncestor()などで、親ウィンドウを取得します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWr-a0yaI/AAAAAAAAApo/Wm-nQMxDh4s/s800/WindowAncestor.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTable, ActionMap]
 author: aterai
 pubdate: 2009-06-22T11:18:08+09:00
 description: JTableの全選択や選択された行のコピーをJButtonなどの別コンポーネントから行います。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSx9pjE3I/AAAAAAAAAjU/kU0UU-PWKSI/s800/SelectAllButton.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JList, TreeCellRenderer, JTextArea, Html]
 author: aterai
 pubdate: 2011-04-11T15:20:36+09:00
 description: JTreeの各ノードで改行を使用し、タイトルを複数行表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TaKbyMKLtkI/AAAAAAAAA5M/NoozvykYAUE/s800/MultiLineTree.png
 comments: true
 ---
 ## 概要

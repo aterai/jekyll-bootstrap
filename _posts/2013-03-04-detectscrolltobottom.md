@@ -7,6 +7,7 @@ tags: [JScrollBar, JScrollPane, ChangeListener]
 author: aterai
 pubdate: 2013-03-04T10:01:01+09:00
 description: JScrollBarが最後までスクロールしたかどうかを確認します。
+image: https://lh5.googleusercontent.com/-OoIPVjne_9M/UTPo6KgN_NI/AAAAAAAABlw/7miro8ywcyg/s800/DetectScrollToBottom.png
 comments: true
 ---
 ## 概要

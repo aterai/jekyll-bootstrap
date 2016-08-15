@@ -7,6 +7,7 @@ tags: [JTextPane, LabelView]
 author: aterai
 pubdate: 2007-09-17T14:41:19+09:00
 description: JTextPaneに表示した文字列中の全角スペースやタブを可視化します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWpb1ogMI/AAAAAAAAApk/3IWJ2qvvECo/s800/WhitespaceMark.png
 comments: true
 ---
 ## 概要

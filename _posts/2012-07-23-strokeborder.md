@@ -7,6 +7,7 @@ tags: [Border, StrokeBorder, BasicStroke]
 author: aterai
 pubdate: 2012-07-23T12:17:18+09:00
 description: Java 1.7.0で導入されたStrokeBorderをテストします。
+image: https://lh3.googleusercontent.com/-MSfWQgMprsI/UAy_-BOqVII/AAAAAAAABPo/0uH5WtaajqY/s800/StrokeBorder.png
 comments: true
 ---
 ## 概要

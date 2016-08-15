@@ -7,6 +7,7 @@ tags: [DefaultHighlighter, JTextArea, JTextComponent]
 author: aterai
 pubdate: 2013-08-26T00:05:12+09:00
 description: DefaultHighlighterの描画方法を変更して、文字列が選択されている場合のハイライト表示を変更します。
+image: https://lh6.googleusercontent.com/-yXndYI0LTyA/UhoR8XLek3I/AAAAAAAABy0/BpEfTjjAGwU/s800/DrawsLayeredHighlights.png
 comments: true
 ---
 ## 概要

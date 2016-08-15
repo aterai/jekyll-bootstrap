@@ -7,6 +7,7 @@ tags: [JTextArea, JTextField, JLayer, Highlighter, Matcher, Pattern]
 author: aterai
 pubdate: 2014-07-07T00:34:07+09:00
 description: JTextArea内の文字列を指定した条件で検索し、マッチした文字列をすべてハイライト表示します。
+image: https://lh5.googleusercontent.com/-jdjIr-6A1l8/U7ljpxPgxzI/AAAAAAAACJI/x2Okpzkcce8/s800/HighlightSearch.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2014/07/highlight-all-search-pattern-matches-in.html
     lang: en

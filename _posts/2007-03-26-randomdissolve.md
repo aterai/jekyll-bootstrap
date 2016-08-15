@@ -7,6 +7,7 @@ tags: [Animation, Graphics, BufferedImage, WritableRaster]
 author: aterai
 pubdate: 2007-03-26
 description: RandomDissolve効果で表示する画像を切り替えます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRdPqz07I/AAAAAAAAAhM/h3EaItM41Yw/s800/RandomDissolve.png
 comments: true
 ---
 ## 概要

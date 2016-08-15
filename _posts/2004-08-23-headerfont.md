@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableCellRenderer, UIManager]
 author: aterai
 pubdate: 2004-08-23T02:54:09+09:00
 description: TableCellRendererを使って、JTableのヘッダが使用するフォントを変更します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTNshbAJvI/AAAAAAAAAbM/xYo1iOQ9fxU/s800/HeaderFont.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTextArea, Caret]
 author: aterai
 pubdate: 2006-01-16T15:56:38+09:00
 description: JTextAreaにキャレット上の文字を上書きする上書きモードを追加します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQtaGO6gI/AAAAAAAAAgA/XPqHe-c_DUo/s800/OverTypeMode.png
 comments: true
 ---
 ## 概要

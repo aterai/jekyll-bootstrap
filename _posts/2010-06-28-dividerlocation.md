@@ -7,6 +7,7 @@ tags: [JSplitPane, Divider]
 author: aterai
 pubdate: 2010-06-28T22:43:18+09:00
 description: JSplitPaneのディバイダが中央にくるように設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLR0Z5M_I/AAAAAAAAAXU/R6r6dvVJa9M/s800/DividerLocation.png
 comments: true
 ---
 ## 概要

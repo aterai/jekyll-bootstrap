@@ -7,6 +7,7 @@ tags: [JTree, JProgressBar, DefaultTreeCellRenderer, SwingWorker, ExecutorServic
 author: aterai
 pubdate: 2013-12-23T01:15:16+09:00
 description: JTreeのノードにJProgressBarを表示するTreeCellRendererを設定します。
+image: https://lh4.googleusercontent.com/-SBg5NOTGinM/UrcLHfPzXVI/AAAAAAAAB84/HD0k-sWiJGo/s800/TreeNodeProgressBar.png
 comments: true
 ---
 ## 概要

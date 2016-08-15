@@ -7,6 +7,7 @@ tags: [JTextField, Beep, ActionMap, DocumentFilter]
 author: aterai
 pubdate: 2012-10-01T14:42:41+09:00
 description: JTextFieldなどで、KBD{Delete}、KBD{Back Space}キーを押した時に鳴らすBeep音の設定を変更します。
+image: https://lh6.googleusercontent.com/-zIUmkF2C9FA/UGkqdcWDLVI/AAAAAAAABTk/F4nun0GDLZc/s800/DeleteKeyBeep.png
 comments: true
 ---
 ## 概要

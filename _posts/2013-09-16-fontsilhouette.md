@@ -7,6 +7,7 @@ tags: [Font, PathIterator, Icon, AffineTransform, Shape, JLabel]
 author: aterai
 pubdate: 2013-09-16T00:01:42+09:00
 description: Fontから取得した字形の輪郭を抽出し、縁取りや内部の塗り潰しなどを行います。
+image: https://lh5.googleusercontent.com/-kzMG9iEHFz4/UjWgNdHCh1I/AAAAAAAAB2A/0gpKBcNqz44/s800/FontSilhouette.png
 comments: true
 ---
 ## 概要

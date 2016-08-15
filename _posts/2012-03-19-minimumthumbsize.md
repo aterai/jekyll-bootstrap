@@ -7,6 +7,7 @@ tags: [JScrollBar, UIManager, JSlider]
 author: aterai
 pubdate: 2012-03-19T15:02:42+09:00
 description: JScrollBarのKnobの最小サイズを設定します。
+image: https://lh4.googleusercontent.com/-A8TRDbOQ1p4/T2bKeM8dcvI/AAAAAAAABKI/iBKMsL6eGfM/s800/MinimumThumbSize.png
 comments: true
 ---
 ## 概要

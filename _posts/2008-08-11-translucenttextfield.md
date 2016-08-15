@@ -7,6 +7,7 @@ tags: [JTextField, Translucent]
 author: aterai
 pubdate: 2008-08-11T12:27:41+09:00
 description: JTextFieldの背景色を半透明にしても、文字列選択やキャレットの点滅などで描画が乱れないようにする方法をテストします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTV03Q10yI/AAAAAAAAAoQ/xH8xmeARg4k/s800/TranslucentTextField.png
 comments: true
 ---
 ## 概要

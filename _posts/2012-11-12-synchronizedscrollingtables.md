@@ -7,6 +7,7 @@ tags: [JTable, JScrollPane, JScrollBar, JSplitPane]
 author: aterai
 pubdate: 2012-11-12T02:37:41+09:00
 description: JSplitPaneの左右に、JTableをそれぞれ配置し、スクロールや追加などが同期するようにモデルを共有します。
+image: https://lh4.googleusercontent.com/-mAnvPJlUJSI/UJ_bYI_kJsI/AAAAAAAABWo/a_jdyUqFLwM/s800/SynchronizedScrollingTables.png
 comments: true
 ---
 ## 概要

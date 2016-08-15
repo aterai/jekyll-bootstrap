@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableSorter]
 author: aterai
 pubdate: 2005-12-12
 description: TableSorter.javaを使ってソートしても、行の選択状態を保存しておきます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTS229Uo9I/AAAAAAAAAjc/ay3eckOCWco/s800/SelectionKeeper.png
 comments: true
 ---
 ## 概要

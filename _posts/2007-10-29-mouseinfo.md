@@ -7,6 +7,7 @@ tags: [MouseInfo, Timer]
 author: aterai
 pubdate: 2007-10-29T13:39:49+09:00
 description: Screen上にあるMouseの絶対位置を取得して、パネル内のラケットを移動します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQC6wobCI/AAAAAAAAAe8/3UnK314olDM/s800/MouseInfo.png
 comments: true
 ---
 ## 概要

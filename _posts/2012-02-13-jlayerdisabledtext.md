@@ -7,6 +7,7 @@ tags: [JLayer, GlassPane, Focus, Mnemonic, JPopupMenu, JToolTip]
 author: aterai
 pubdate: 2012-02-13T14:58:04+09:00
 description: JLayerを使用して、JButtonなどのコンポーネントを無効にしたときの文字色を変更します。
+image: https://lh5.googleusercontent.com/-_2bogxiuOec/TzilFn0ms8I/AAAAAAAABJI/oMz_T6SqCwE/s800/JLayerDisabledText.png
 comments: true
 ---
 ## 概要

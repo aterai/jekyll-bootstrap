@@ -7,6 +7,7 @@ tags: [JComboBox, JSeparator, ListCellRenderer, ItemListener, ActionMap, InputMa
 author: aterai
 pubdate: 2005-08-29
 description: JComboBoxに選択できないJSeparatorを挿入します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJt9fH4ZI/AAAAAAAAAU0/c9vovQi9Jvo/s800/ComboBoxSeparator.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTabbedPane, JButton, JLayer]
 author: aterai
 pubdate: 2014-07-21T03:51:17+09:00
 description: JTabbedPaneのタブ上にそれを閉じるためのJButtonをJLayerを使用して右寄せで描画します。
+image: https://lh4.googleusercontent.com/-slZiu9Gyq8I/U8wH6A1byMI/AAAAAAAACJ0/-aLfrJeKX4Y/s800/CloseableTabbedPane.png
 comments: true
 ---
 ## 概要

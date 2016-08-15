@@ -7,6 +7,7 @@ tags: [ProgressMonitorInputStream, ProgressMonitor, JProgressBar, SwingWorker, U
 author: aterai
 pubdate: 2013-04-22T03:35:42+09:00
 description: ProgressMonitorInputStreamを使用してテキストファイルのダウンロード状態を進捗表示します。
+image: https://lh4.googleusercontent.com/-gXnU23f7iiw/UXQuzmKdfVI/AAAAAAAABp8/aPk0QR78NlY/s800/ProgressMonitorInputStream.png
 comments: true
 ---
 ## 概要

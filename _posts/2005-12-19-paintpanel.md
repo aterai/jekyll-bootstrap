@@ -7,6 +7,7 @@ tags: [JPanel, MouseListener, MouseMotionListener]
 author: aterai
 pubdate: 2005-12-19
 description: マウスをドラッグしてパネル上に自由曲線を描画します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQ0y2U6WI/AAAAAAAAAgM/AAHllQ3_VHw/s800/PaintPanel.png
 comments: true
 ---
 ## 概要

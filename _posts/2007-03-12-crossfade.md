@@ -7,6 +7,7 @@ tags: [Animation, ImageIcon, AlphaComposite]
 author: aterai
 pubdate: 2007-03-12T13:33:16+09:00
 description: Crossfadeアニメーションで画像の切り替えを行います。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKRJIdouI/AAAAAAAAAVs/yU1oEsWfzvA/s800/Crossfade.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JRootPane, BufferedImage, ContentPane, JDesktopPane, Translucent, Transpa
 author: aterai
 pubdate: 2013-01-07T00:31:26+09:00
 description: JRootPaneの背景として画像を表示しています。
+image: https://lh6.googleusercontent.com/-2HEcpl-4XqA/UOmSieyPnxI/AAAAAAAABaI/KBA4i6QGH3E/s800/RootPaneBackground.png
 comments: true
 ---
 ## 概要

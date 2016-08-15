@@ -7,6 +7,7 @@ tags: [JDialog, JProgressBar, SwingWorker, ModalityType]
 author: aterai
 pubdate: 2009-11-09T14:54:41+09:00
 description: JDialogでモーダルなJProgressBar付きSplash Screenを表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTRSxG9iaI/AAAAAAAAAg8/Wpd3hycacS4/s800/ProgressSplashScreen.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JDesktopPane, JInternalFrame, NimbusLookAndFeel]
 author: aterai
 pubdate: 2016-03-07T09:09:57+09:00
 description: JDesktopPaneに追加されているJInternalFrameの一覧を表示するタスクバーを設定します。
+image: https://lh3.googleusercontent.com/-RFRKt-CvY4E/VtzC8EelOgI/AAAAAAAAOQQ/NK8GMY49kGY/s800-Ic42/DesktopIconTaskBar.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JScrollPane, JPanel, JLayer]
 author: aterai
 pubdate: 2013-08-05T11:49:22+09:00
 description: 複数のネストしたComponentを配置したJPanelのドラッグイベントを、JScrollPaneをラップしたJLayerで受け取ってスクロール可能にします。
+image: https://lh5.googleusercontent.com/-5zBF0JOr6kM/UfuiEj7Do7I/AAAAAAAABxg/7tKYnrOl9eo/s800/DragScrollLayer.png
 comments: true
 ---
 ## 概要
@@ -62,11 +63,11 @@ comments: true
 </code></pre>
 
 ## 解説
-- 左: `DragScrollListener`
+- `DragScrollListener` (左)
     - [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
     - このリスナーを追加した一つの`Component`をドラッグしてスクロールが可能
     - `JPanel`を掴んでスクロールすることができるが、その子コンポーネントの`JTabbedPane`などをドラッグしてもスクロールはできない
-- 右: `DragScrollLayer`
+- `DragScrollLayer` (右)
     - すべての下位コンポーネントの`MouseEvent`をキャッチするよう`JLayer#setLayerEventMask(...)`と設定した`JLayer`を作成
     - この`JLayer`で`JScrollPane`をラップし、子にマウスイベントを消費するコンポーネントがあっても、ビューである`JPanel`をドラッグに応じてスクロール
     - `JScrollBar`や`JSlider`のように、ノブのドラッグを使用するコンポーネントは二重にスクロールしてしまうので除外

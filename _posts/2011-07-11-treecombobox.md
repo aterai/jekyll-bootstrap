@@ -7,6 +7,7 @@ tags: [JComboBox, TreeModel]
 author: aterai
 pubdate: 2011-07-11T15:16:42+09:00
 description: JComboBoxのドロップダウンリストに表示するItemをTree状に配置します。
+image: https://lh6.googleusercontent.com/-5GlQEjeLoH8/ThqUIL9b4UI/AAAAAAAAA_E/9h5dxYzSSm8/s800/TreeComboBox.png
 comments: true
 ---
 ## 概要

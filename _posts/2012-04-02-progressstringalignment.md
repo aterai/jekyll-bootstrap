@@ -7,6 +7,7 @@ tags: [JProgressBar, JLabel, BorderLayout, Alignment]
 author: aterai
 pubdate: 2012-04-02T16:48:11+09:00
 description: JProgressBarの進捗文字列をJLabelにして、字揃えなどを変更します。
+image: https://lh5.googleusercontent.com/-zRMPjXT7do4/T3lYdJUnilI/AAAAAAAABLA/kcpMYSYoklM/s800/ProgressStringAlignment.png
 comments: true
 ---
 ## 概要

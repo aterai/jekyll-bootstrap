@@ -7,6 +7,7 @@ tags: [JScrollPane, JViewport, JScrollPane, DragAndDrop, Timer, MouseListener, M
 author: aterai
 pubdate: 2004-11-22T01:00:20+09:00
 description: JScrollPane上でのマウスドラッグに応じてラベルをオートスクロールします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTH2GCzRoI/AAAAAAAAAR0/FR7seILhmaM/s800/AutoScroll.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2008/06/mouse-drag-auto-scrolling.html
     lang: en

@@ -7,6 +7,7 @@ tags: [JList, Cursor, ListCellRenderer]
 author: aterai
 pubdate: 2013-10-21T00:16:35+09:00
 description: JListのセルに配置されているコンポーネントをマウスの座標から検索し、それに設定されたカーソルをJListに適用します。
+image: https://lh3.googleusercontent.com/-v3ugRz81Y0Q/UmPxM3SwOYI/AAAAAAAAB4Y/PqZaNMCPgN0/s800/CursorOfCellComponent.png
 comments: true
 ---
 ## 概要

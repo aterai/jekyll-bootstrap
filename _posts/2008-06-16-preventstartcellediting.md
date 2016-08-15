@@ -7,6 +7,7 @@ tags: [JTable, TableModel, DefaultCellEditor]
 author: aterai
 pubdate: 2008-06-16T13:18:37+09:00
 description: キー入力やマウスクリックによるJTableのセル編集開始を禁止します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRLZXQW1I/AAAAAAAAAgw/ufR0d0md6Bc/s800/PreventStartCellEditing.png
 comments: true
 ---
 ## 概要
@@ -30,7 +31,7 @@ ce.setClickCountToStart(Integer.MAX_VALUE);
 - `prevent mouse from starting edit`
     - `DefaultCellEditor#setClickCountToStart`に大きな値を設定して、事実上マウスクリックによる編集開始を禁止
 - `start cell editing only F2`
-    - 上二つを設定して、セルの編集開始は<kbd>F2</kbd>キーのみ可能に設定
+    - 上二つを設定して、セルの編集は<kbd>F2</kbd>キーでのみ開始可能になるよう設定
 - `isCellEditable retrun false`
     - `TableModel#isCellEditable`が常に`false`を返すように設定し、すべてのカラムでセルエディタの起動を禁止
 

@@ -7,6 +7,7 @@ tags: [JTree, DefaultTreeModel, DefaultMutableTreeNode, Icon]
 author: aterai
 pubdate: 2014-09-22T00:06:58+09:00
 description: JTreeの親ノードに子として葉ノードがひとつも存在しない場合でも、フォルダアイコン表示になるよう設定します。
+image: https://lh6.googleusercontent.com/-vfEqezCRy2w/VB7mN-AcppI/AAAAAAAACNg/VkZLdGkiDRQ/s800/AsksAllowsChildren.png
 comments: true
 ---
 ## 概要

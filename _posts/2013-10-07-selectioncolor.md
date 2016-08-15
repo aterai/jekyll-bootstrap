@@ -7,6 +7,7 @@ tags: [JEditorPane, Translucent, StyleSheet, HighlightPainter]
 author: aterai
 pubdate: 2013-10-07T00:14:25+09:00
 description: JEditorPaneで選択色を半透明化し、HighlightPainterによるハイライトやCSSでの背景色変更と組み合わせた場合の描画のテストを行います。
+image: https://lh4.googleusercontent.com/-vbDIDKoUbmw/UlFdSAKWCVI/AAAAAAAAB3A/wbVAmRfeTCY/s800/SelectionColor.png
 comments: true
 ---
 ## 概要

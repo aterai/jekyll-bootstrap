@@ -7,6 +7,7 @@ tags: [ImageIcon, MouseListener, MouseMotionListener, AffineTransform]
 author: aterai
 pubdate: 2009-05-25T13:21:41+09:00
 description: 画像をマウスのドラッグで任意の位置に移動、回転します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQAQVe8YI/AAAAAAAAAe4/y6GTZLKjqx0/s800/MouseDrivenImageRotation.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTextField, JPasswordField, JSpinner, JComboBox]
 author: aterai
 pubdate: 2006-12-18T16:11:14+09:00
 description: JTextField,JPasswordField,JSpinner,JComboBoxの幅をカラム数で指定して比較しています。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS72PP0tI/AAAAAAAAAjk/RRG_w2fJBtA/s800/SetColumns.png
 comments: true
 ---
 ## 概要

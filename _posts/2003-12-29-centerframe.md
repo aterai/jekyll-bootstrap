@@ -7,6 +7,7 @@ tags: [JFrame]
 author: aterai
 pubdate: 2003-12-29
 description: JFrameやJDialogなどのWindowがスクリーンの中央に配置されるように設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIvEn-69I/AAAAAAAAATQ/Fw4dLY4C0EE/s800/CenterFrame.png
 comments: true
 ---
 ## 概要

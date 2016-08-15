@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, Alignment]
 author: aterai
 pubdate: 2008-08-25T14:45:47+09:00
 description: JTableのセルに表示されている文字列の揃えを変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIs6qWcBI/AAAAAAAAATM/AnH_ZWdWA5o/s800/CellTextAlignment.png
 comments: true
 ---
 ## 概要

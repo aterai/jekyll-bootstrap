@@ -7,6 +7,7 @@ tags: [JFrame, UIManager]
 author: aterai
 pubdate: 2014-10-20T00:23:21+09:00
 description: JFrameがデフォルトのウィンドウ装飾を使用する場合、タイトルバーの文字色、背景色などを変更します。
+image: https://lh5.googleusercontent.com/-kMDDoLGWoSA/VEPUosVXWPI/AAAAAAAACQw/94kmPEN2CT8/s800/WindowTitleBackground.png
 comments: true
 ---
 ## 概要

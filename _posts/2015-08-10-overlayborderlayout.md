@@ -7,6 +7,7 @@ tags: [LayoutManager, JPanel, Timer, Animation, InputMap, ActionMap]
 author: aterai
 pubdate: 2015-08-10T13:10:18+09:00
 description: Component上に重ねて配置した検索用ダイアログの位置をアニメーション付きで変更するレイアウトマネージャーを作成し、その表示非表示をキー入力で切り替えます。
+image: https://lh3.googleusercontent.com/-gEMKmLyIHno/VcgZ2tpTyMI/AAAAAAAAN-0/HLb8wuLN_LE/s800-Ic42/OverlayBorderLayout.png
 comments: true
 ---
 ## 概要

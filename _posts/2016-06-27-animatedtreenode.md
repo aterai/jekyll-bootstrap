@@ -7,6 +7,7 @@ tags: [JTree, ImageIcon, ImageObserver, Animation]
 author: aterai
 pubdate: 2016-06-27T01:54:58+09:00
 description: JTreeのノードに設定したAnimated GIFのImageIconがアニメーションを行えるようにImageObserverを設定します。
+image: https://lh3.googleusercontent.com/-U9WtOD4nOug/V3AE4msfadI/AAAAAAAAOcY/VDwIROM5Ju4gNFBm47FDBJTOtIazp7iyACCo/s800/AnimatedTreeNode.png
 comments: true
 ---
 ## 概要

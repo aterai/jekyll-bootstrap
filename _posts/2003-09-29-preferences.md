@@ -7,6 +7,7 @@ tags: [JFrame, Preferences]
 author: aterai
 pubdate: 2003-09-29
 description: Preferences(レジストリなど)にフレーム(パネル)の位置・サイズを記憶しておきます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRGT4S7mI/AAAAAAAAAgo/GDUrxdRJ4x4/s800/Preferences.png
 comments: true
 ---
 ## 概要

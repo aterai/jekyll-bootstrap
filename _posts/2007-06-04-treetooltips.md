@@ -7,6 +7,7 @@ tags: [JTree, JToolTip, ToolTipManager, TreeCellRenderer]
 author: aterai
 pubdate: 2007-06-04
 description: ノード毎に内容の異なるJToolTipを表示するJTreeを作成します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWQe1RL2I/AAAAAAAAAo8/6HFqbUb3UZ8/s800/TreeToolTips.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JInternalFrame, JDesktopPane, LookAndFeel]
 author: aterai
 pubdate: 2016-02-15T00:00:57+09:00
 description: JInternalFrameをアイコン化したときに使用されるJDesktopIconのサイズを変更します。
+image: https://lh3.googleusercontent.com/-TEU2w7fUDtA/VsCIqEiNtoI/AAAAAAAAONk/VP5SO5nYnuw/s800-Ic42/DesktopIconSize.png
 comments: true
 ---
 ## 概要

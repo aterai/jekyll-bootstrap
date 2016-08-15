@@ -7,6 +7,7 @@ tags: [GraphicsEnvironment, JFrame, JDialog]
 author: aterai
 pubdate: 2008-04-28T10:19:14+09:00
 description: JDialogやJFrameなどを、フルスクリーン表示に切り替えます。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNRUUD2xI/AAAAAAAAAag/G7fNPgecnss/s800/FullScreen.png
 comments: true
 ---
 ## 概要

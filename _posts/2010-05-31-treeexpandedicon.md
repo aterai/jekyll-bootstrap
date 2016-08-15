@@ -7,6 +7,7 @@ tags: [JTree, Icon, UIManager]
 author: aterai
 pubdate: 2010-05-31T15:21:37+09:00
 description: JTreeの展開、折畳みアイコンを変更して非表示にします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWHHSFZMI/AAAAAAAAAos/aymKObZa7WQ/s800/TreeExpandedIcon.png
 comments: true
 ---
 ## 概要

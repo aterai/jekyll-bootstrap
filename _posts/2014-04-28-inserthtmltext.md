@@ -7,6 +7,7 @@ tags: [JEditorPane, HTMLDocument]
 author: aterai
 pubdate: 2014-04-28T15:00:16+09:00
 description: JEditorPaneのHTMLDocumentからtable要素を取得し、その子要素としてtr要素などを追加します。
+image: https://lh5.googleusercontent.com/-hU9bkPgb4Q8/U10bg5XoDfI/AAAAAAAACEI/BJrmelBz93M/s800/InsertHtmlText.png
 comments: true
 ---
 ## 概要

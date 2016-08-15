@@ -7,6 +7,7 @@ tags: [Font, GraphicsEnvironment, Html, StyleSheet, JLabel, JEditorPane, JTextPa
 author: aterai
 pubdate: 2009-10-19T14:42:22+09:00
 description: GraphicsEnvironmentにFontを登録して、Htmlタグなどで使用できるようにします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRkZgST0I/AAAAAAAAAhY/czEyIQL0NfY/s800/RegisterFont.png
 comments: true
 ---
 ## 概要

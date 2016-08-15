@@ -7,6 +7,7 @@ tags: [JToolTip, JButton, Mnemonic]
 author: aterai
 pubdate: 2010-11-15T14:41:06+09:00
 description: JButtonにMnemonicが設定されている場合、JToolTipにそれを表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTP7StneAI/AAAAAAAAAew/RwPtDfNOEyg/s800/MnemonicToolTip.png
 comments: true
 ---
 ## 概要

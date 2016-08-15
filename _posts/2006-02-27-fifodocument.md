@@ -7,6 +7,7 @@ tags: [JTextArea, DocumentListener]
 author: aterai
 pubdate: 2006-02-27T11:11:21+09:00
 description: ドキュメントのサイズを一定にして、JTextAreaなど表示できる行数を制限します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMafjL8xI/AAAAAAAAAZI/-KMSGPcn0jM/s800/FIFODocument.png
 comments: true
 ---
 ## 概要

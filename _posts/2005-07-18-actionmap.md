@@ -7,6 +7,7 @@ tags: [JTextField, DefaultEditorKit, ActionMap]
 author: aterai
 pubdate: 2005-07-18
 description: JTextFieldへのコピー、貼り付け、切り取りを禁止します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTHX8kSixI/AAAAAAAAARE/cRSBUI5TJWo/s800/ActionMap.png
 comments: true
 ---
 ## 概要

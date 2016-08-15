@@ -7,6 +7,7 @@ tags: [DragAndDrop, JWindow, ImageIcon, JFrame]
 author: aterai
 pubdate: 2012-08-06T15:46:37+09:00
 description: ドラッグ中のカーソル位置をDragSourceMotionListenerで取得し、そこにアイコンを追加したWindowを移動することで、JFrameの外側でもドラッグアイコンを表示します。
+image: https://lh4.googleusercontent.com/-HM5QzW5AZlk/UB9iFlbSZMI/AAAAAAAABQM/fggojAo0b-E/s800/DragSourceMotionListener.png
 comments: true
 ---
 ## 概要

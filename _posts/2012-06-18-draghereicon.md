@@ -7,6 +7,7 @@ tags: [Icon, Graphics, DragAndDrop, TransferHandler]
 author: aterai
 pubdate: 2012-06-18T18:09:18+09:00
 description: Iconインタフェースから固定サイズのアイコンを作成します。
+image: https://lh5.googleusercontent.com/-PTY9ydf9DFE/T97u-rwg5lI/AAAAAAAABN0/52xJLmkoNak/s800/DragHereIcon.png
 comments: true
 ---
 ## 概要

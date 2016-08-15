@@ -7,6 +7,7 @@ tags: [JSplitPane, Divider, JLayer]
 author: aterai
 pubdate: 2016-05-30T00:20:49+09:00
 description: JSplitPaneに追加した子コンポーネントの余白などをドラッグしてDividerの位置を変更可能にするJLayerを設定します。
+image: https://lh3.googleusercontent.com/-XN3zaDJCb4g/V0sFzBq9QTI/AAAAAAAAOYQ/B2Y_715QARo0KbrhzgyG73OaYqKmeZwvgCCo/s800/DividerLocationDragLayer.png
 comments: true
 ---
 ## 概要

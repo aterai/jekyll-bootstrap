@@ -7,6 +7,7 @@ tags: [JFrame, ComponentListener]
 author: aterai
 pubdate: 2005-07-04T07:42:08+09:00
 description: JFrameを2つ並べて作成し、その位置関係を保ったまま移動できるようにします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLtEL3M0I/AAAAAAAAAYA/9HmyXI1Uw0M/s800/DockingFrames.png
 comments: true
 ---
 ## 概要

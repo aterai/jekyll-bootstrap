@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, MouseListener]
 author: aterai
 pubdate: 2005-04-04T03:22:43+09:00
 description: JTableHeaderをクリックしたとき、そのColumn以下にあるセルを全選択します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJrC8DyhI/AAAAAAAAAUw/SO1wMAudBiE/s800/ColumnSelection.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [GridBagLayout, LayoutManager]
 author: aterai
 pubdate: 2009-03-09T14:08:29+09:00
 description: GridBagLayoutを使ってコンポーネントをレンガ状に配置します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIOzg1doI/AAAAAAAAASc/V_SwABvAldE/s800/BrickLayout.png
 comments: true
 ---
 ## 概要

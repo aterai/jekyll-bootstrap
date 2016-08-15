@@ -7,6 +7,7 @@ tags: [JTree]
 author: aterai
 pubdate: 2014-02-24T00:00:29+09:00
 description: JTreeのノード編集中に割り込みが発生した場合、変更の自動保存を行うかどうかを設定します。
+image: https://lh6.googleusercontent.com/-KbIRjsEYzEA/Uwny844Zc3I/AAAAAAAACAY/_3w4abiuaIo/s800/InvokesStopCellEditing.png
 comments: true
 ---
 ## 概要

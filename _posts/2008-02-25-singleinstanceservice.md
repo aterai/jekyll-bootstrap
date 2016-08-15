@@ -7,6 +7,7 @@ tags: [SingleInstanceService, ServiceManager, SingleInstance]
 author: aterai
 pubdate: 2008-02-25T02:06:56+09:00
 description: SingleInstanceServiceを使って、Web Startアプリケーションの重複起動を禁止したり、引数の取得を行います。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTIU5TktI/AAAAAAAAAj4/muKNMFrhEcE/s800/SingleInstanceService.png
 comments: true
 ---
 ## 概要

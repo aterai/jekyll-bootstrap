@@ -7,6 +7,7 @@ tags: [JTable, JRadioButton, TableCellRenderer, TableCellEditor]
 author: aterai
 pubdate: 2011-04-25T17:34:01+09:00
 description: JTableのセルにJRadioButtonを配置し、全体で一つだけ選択できるように設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TbUwB1XoMEI/AAAAAAAAA6M/5VwHykCV4OI/s800/RadioButtonCellEditor.png
 comments: true
 ---
 ## 概要

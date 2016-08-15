@@ -7,6 +7,7 @@ tags: [JComboBox, BasicComboPopup, JPopupMenu, Border]
 author: aterai
 pubdate: 2016-01-11T00:02:17+09:00
 description: JComboBoxからBasicComboPopupを取得し、これに角丸のBorderを設定します。
+image: https://lh3.googleusercontent.com/-hO6OrwNE6O4/VpJu21j7FbI/AAAAAAAAOLA/mUBgzYUJpes/s800-Ic42/RoundedDropDownList.png
 comments: true
 ---
 ## 概要

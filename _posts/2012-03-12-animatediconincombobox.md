@@ -7,6 +7,7 @@ tags: [JComboBox, ImageIcon, ImageObserver, BasicComboPopup, JList]
 author: aterai
 pubdate: 2012-03-12T17:23:26+09:00
 description: JComboBoxと、そのドロップダウンリストにAnimated GIFを表示します。
+image: https://lh3.googleusercontent.com/-kS7gIhaebeM/T12ukNN94JI/AAAAAAAABJ8/wM8SvLNzWEE/s800/AnimatedIconInComboBox.png
 comments: true
 ---
 ## 概要

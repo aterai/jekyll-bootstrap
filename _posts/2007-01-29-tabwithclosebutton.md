@@ -7,6 +7,7 @@ tags: [JTabbedPane, JButton]
 author: aterai
 pubdate: 2007-01-29T16:15:06+09:00
 description: JDK 6の新機能を使用し、JTabbedPaneのタブ内に自身を閉じるためのボタンを追加します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVCzHeo0I/AAAAAAAAAnA/hnMCEbHXnnw/s800/TabWithCloseButton.png
 comments: true
 ---
 ## 概要

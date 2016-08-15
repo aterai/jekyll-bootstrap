@@ -7,6 +7,7 @@ tags: [JSlider, LookAndFeel]
 author: aterai
 pubdate: 2014-04-07T00:03:19+09:00
 description: JSliderのつまみの形状を目盛り表示ありの場合と同じになるよう変更します。
+image: https://lh3.googleusercontent.com/-wnMCy-QjKqI/U0Fp9vKfehI/AAAAAAAACDE/fem_kGyz1KM/s800/ThumbArrowShape.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [HTML, CSS, StyleSheet, JLabel]
 author: aterai
 pubdate: 2016-02-08T00:00:25+09:00
 description: JLabelなどのコンポーネントにHTMLのtableタグを使用して描画する表の罫線を分離表示ではなく結合表示に変更します。
+image: https://lh3.googleusercontent.com/-KUe25svxTkQ/VrdVpBBO6TI/AAAAAAAAONE/x6Lvt2P_x_c/s800-Ic42/HtmlTableBorderStyle.png
 comments: true
 ---
 ## 概要

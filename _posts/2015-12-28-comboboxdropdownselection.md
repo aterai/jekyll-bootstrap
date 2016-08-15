@@ -7,6 +7,7 @@ tags: [JComboBox, JPopupMenu, PopupMenuListener]
 author: aterai
 pubdate: 2015-12-28T00:09:10+09:00
 description: JComboBoxで編集した後の文字列がドロップダウンリスト中に存在する場合、そのアイテムを選択するように設定します。
+image: https://lh3.googleusercontent.com/-EomuM0qaNtw/Vn_-BRt08_I/AAAAAAAAOJ0/hrUTPDKhroE/s800-Ic42/ComboBoxDropdownSelection.png
 comments: true
 ---
 ## 概要

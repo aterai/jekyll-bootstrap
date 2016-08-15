@@ -7,6 +7,7 @@ tags: [ImageIO, ImageReader, BufferedImage, Animation]
 author: aterai
 pubdate: 2013-03-18T02:26:09+09:00
 description: Animated GIFから各フレームの画像を抽出します。
+image: https://lh4.googleusercontent.com/-_xu1jNmYJe0/UUX3d_PzwKI/AAAAAAAABoA/cyS5ABVZdkM/s800/ExtractFramesFromAnimatedGif.png
 comments: true
 ---
 ## 概要

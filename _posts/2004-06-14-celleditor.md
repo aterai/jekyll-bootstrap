@@ -7,6 +7,7 @@ tags: [JTable, TableModel, TableCellEditor]
 author: aterai
 pubdate: 2004-06-14
 description: JTableのすべてのセルを編集不可にする方法をテストします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIgUbMHLI/AAAAAAAAAS4/v0jIwB26ie4/s800/CellEditor.png
 comments: true
 ---
 ## 概要

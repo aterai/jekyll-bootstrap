@@ -7,6 +7,7 @@ tags: [JComboBox, JTextField, Icon, ListCellRenderer, MatteBorder, JLabel]
 author: aterai
 pubdate: 2004-12-27T01:32:14+09:00
 description: JComboBoxを編集可にしてテキスト入力部分とリスト部分にアイコンを表示します。
+image: https://lh5.googleusercontent.com/-4rGEnYRGuys/VQfEDJHomCI/AAAAAAAAN0o/vja8KE3Cm-o/s800/IconComboBox.png
 comments: true
 ---
 ## 概要

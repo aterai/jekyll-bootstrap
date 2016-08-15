@@ -7,6 +7,7 @@ tags: [JToolBar]
 author: aterai
 pubdate: 2015-06-01T00:19:48+09:00
 description: JToolBarをドラッグで同コンテナ内で移動することは可能だが、別ウインドウへの分離は不可になるよう設定します。
+image: https://lh3.googleusercontent.com/-YGC3PvuL8Vg/VWsjz3ObkoI/AAAAAAAAN5w/_XAG0E-FOpM/s800/NonDetachableToolBar.png
 comments: true
 ---
 ## 概要

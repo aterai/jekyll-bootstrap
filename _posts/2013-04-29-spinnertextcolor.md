@@ -7,6 +7,7 @@ tags: [JSpinner, JComboBox, Html, ActionMap]
 author: aterai
 pubdate: 2013-04-29T08:31:48+09:00
 description: JSpinnerの代わりにJComboBoxを使用することで、アイテムの文字色などを変更しています。
+image: https://lh6.googleusercontent.com/-kpruQCgOnLE/UX2r6exfrII/AAAAAAAABqo/JZnFlTBy1zw/s800/SpinnerTextColor.png
 comments: true
 ---
 ## 概要

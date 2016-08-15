@@ -7,6 +7,7 @@ tags: [JTabbedPane, JPopupMenu, JButton]
 author: aterai
 pubdate: 2010-08-30T18:25:18+09:00
 description: TabComponentを使用するJTabbedPaneで、タブ名称を編集更新します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTR4c_40eI/AAAAAAAAAh4/dLbGOWvSzSc/s800/RevalidateTabComponent.png
 comments: true
 ---
 ## 概要

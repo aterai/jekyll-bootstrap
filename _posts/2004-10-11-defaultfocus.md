@@ -7,6 +7,7 @@ tags: [JFrame, JDialog, Focus, FocusTraversalPolicy, WindowListener, ComponentLi
 author: aterai
 pubdate: 2004-10-11
 description: JFrameやJDialogなどのWindowを開いたときに、デフォルトでフォーカスを持つコンポーネントを指定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKp09XXEI/AAAAAAAAAWU/p3YhSijyS90/s800/DefaultFocus.png
 comments: true
 ---
 ## 概要

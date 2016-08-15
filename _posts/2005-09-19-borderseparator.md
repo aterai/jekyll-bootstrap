@@ -7,6 +7,7 @@ tags: [JComboBox, Border, ListCellRenderer, MatteBorder]
 author: aterai
 pubdate: 2005-09-19
 description: JComboBoxのアイテムをBorderを使用して修飾してグループ分けします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIMVjWegI/AAAAAAAAASY/yM_W_tfnios/s800/BorderSeparator.png
 comments: true
 ---
 ## 概要

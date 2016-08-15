@@ -7,6 +7,7 @@ tags: [JTextField, UIManager, Border]
 author: aterai
 pubdate: 2005-06-06T00:34:45+09:00
 description: JTextFieldにMargin、または二重のBorderを設定して、内余白の変化をテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVM2PvsXI/AAAAAAAAAnQ/3wxfaHXrEUk/s800/TextFieldMargin.png
 comments: true
 ---
 ## 概要

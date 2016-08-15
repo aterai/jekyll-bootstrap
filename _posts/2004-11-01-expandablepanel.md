@@ -7,6 +7,7 @@ tags: [JPanel, BorderLayout]
 author: aterai
 pubdate: 2004-11-01T01:05:24+09:00
 description: JPanelにBorderLayoutを設定し、JButtonのクリックで子コンポーネントの配置を入れ替えることで、それらの展開と折り畳みを行います。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMQbS7ipI/AAAAAAAAAY4/xXDc9VVk87A/s800/ExpandablePanel.png
 comments: true
 ---
 ## 概要

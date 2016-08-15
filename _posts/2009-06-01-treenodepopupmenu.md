@@ -7,6 +7,7 @@ tags: [JTree, JPopupMenu, TreePath]
 author: aterai
 pubdate: 2009-06-01T15:04:19+09:00
 description: JTreeのノード上でクリックした場合のみ、JPopupMenuを表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWLWQUjBI/AAAAAAAAAo0/3F3RUbU5sx8/s800/TreeNodePopupMenu.png
 comments: true
 ---
 ## 概要

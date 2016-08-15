@@ -7,6 +7,7 @@ tags: [DefaultEditorKit, JTextField, JTextComponent, JPopupMenu]
 author: aterai
 pubdate: 2005-07-25
 description: DefaultEditorKitを使って、JTextFieldなどでポップアップメニューを使ったコピー、貼り付け、切り取りを行います。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKk8KGiNI/AAAAAAAAAWM/dJouzZuxv6g/s800/DefaultEditorKit.png
 comments: true
 ---
 ## 概要

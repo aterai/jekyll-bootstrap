@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, MouseListener, MouseMotionListener]
 author: aterai
 pubdate: 2005-03-21T07:27:38+09:00
 description: JTableのセル上にマウスカーソルが存在する場合、その背景色を変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIqY941CI/AAAAAAAAATI/gk-sbbRE5gw/s800/CellHighlight.png
 comments: true
 ---
 ## 概要

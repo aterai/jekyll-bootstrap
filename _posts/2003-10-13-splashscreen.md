@@ -7,6 +7,7 @@ tags: [JWindow, JLabel]
 author: aterai
 pubdate: 2003-10-13
 description: JWindowを使って、Splash Screenを表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTtxuiuuI/AAAAAAAAAk4/JhuyuS80C4M/s800/SplashScreen.png
 comments: true
 ---
 ## 概要

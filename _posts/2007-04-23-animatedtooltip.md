@@ -7,6 +7,7 @@ tags: [JToolTip, JLabel, Animation, Html]
 author: aterai
 pubdate: 2007-04-23T09:48:54+09:00
 description: JToolTipが表示されたとき、内部のJLabelでアイコンのアニメーションを行う方法をテストします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHpat_rFI/AAAAAAAAARg/fzkRLOHGb7I/s800/AnimatedToolTip.png
 comments: true
 ---
 ## 概要

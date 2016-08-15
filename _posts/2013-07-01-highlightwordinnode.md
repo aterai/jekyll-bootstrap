@@ -7,6 +7,7 @@ tags: [JTree, TreeCellRenderer, JTextField, HighlightPainter]
 author: aterai
 pubdate: 2013-07-01T00:02:16+09:00
 description: JTreeのノードから文字列を検索して、HighlightPainterで強調表示します。
+image: https://lh4.googleusercontent.com/-rBf-D-8MbOM/UdBIT7ksWjI/AAAAAAAABvI/m_v7K_LuLao/s800/HighlightWordInNode.png
 comments: true
 ---
 ## 概要

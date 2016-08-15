@@ -7,6 +7,7 @@ tags: [JTextField, DocumentFilter]
 author: aterai
 pubdate: 2010-03-01T12:38:41+09:00
 description: DocumentFilterを使って、文字列の先頭が常に大文字になるように設定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMuU7OQ-I/AAAAAAAAAZo/jnaPTnPJY4w/s800/FirstCharToUpperCase.png
 comments: true
 ---
 ## 概要

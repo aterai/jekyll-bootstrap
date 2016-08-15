@@ -7,6 +7,7 @@ tags: [JTabbedPane, Alignment, JButton]
 author: aterai
 pubdate: 2010-10-11T18:19:33+09:00
 description: JTabbedPaneのTabTitleをデフォルトに中央揃えから左揃えに変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png
 comments: true
 ---
 ## 概要

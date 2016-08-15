@@ -7,6 +7,7 @@ tags: [JTable, MouseListener]
 author: aterai
 pubdate: 2004-06-28T05:48:37+09:00
 description: JTableのセルをダブルクリックして内容を表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLv3qaXoI/AAAAAAAAAYE/aAnkonlteYo/s800/DoubleClick.png
 comments: true
 ---
 ## 概要
@@ -34,7 +35,7 @@ table.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、セルをマウスでダブルクリックするとダイアログが開くようになっています。各セルはクリックで編集状態になってしまわないように、すべて編集不可にしています。
+上記のサンプルでは、`JTable`に`MouseListener`を設定し、マウスでのセルのマウスでダブルクリックイベントを取得しています。各セルはクリックで編集状態になってしまわないように、すべて編集不可にしています。
 
 ## コメント
 - 行以外の場所をダブルクリックすると、`IndexOutOfBoundsException`が発生する不具合を修正。 -- *aterai* 2011-02-02 (水) 19:09:18

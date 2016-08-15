@@ -7,6 +7,7 @@ tags: [TitledBorder, JToolTip, JLabel]
 author: aterai
 pubdate: 2015-09-28T01:33:50+09:00
 description: TitledBorderのタイトルが設定したコンポーネントの幅より長くなって末尾の文字列が省略される場合、JToolTipでタイトル全体を表示します。
+image: https://lh3.googleusercontent.com/-_haLcd_rxx8/VggXa21_nHI/AAAAAAAAOCo/FLlSmRfIUqo/s800-Ic42/TitledBorderToolTip.png
 comments: true
 ---
 ## 概要

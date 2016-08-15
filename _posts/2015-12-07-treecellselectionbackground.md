@@ -7,6 +7,7 @@ tags: [JTree, LookAndFeel, NimbusLookAndFeel, UIDefaults]
 author: aterai
 pubdate: 2015-12-07T02:44:17+09:00
 description: JTreeのセル選択色で塗りつぶす範囲をNimbusLookAndFeelのデフォルトである行全体ではなくノードのみになるように設定します。
+image: https://lh3.googleusercontent.com/-iMbDreRXOYI/VmRwiLsVZmI/AAAAAAAAOIg/tfanc-vemfo/s800-Ic42/TreeCellSelectionBackground.png
 comments: true
 ---
 ## 概要

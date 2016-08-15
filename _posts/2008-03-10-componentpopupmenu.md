@@ -7,6 +7,7 @@ tags: [JPopupMenu, JTextComponent, PopupMenuListener, DefaultEditorKit]
 author: aterai
 pubdate: 2008-03-10T01:39:57+09:00
 description: コンポーネントに右クリックなどでポップアップするJPopupMenuを追加します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKBw4_YtI/AAAAAAAAAVU/J_aFRLSj-VU/s800/ComponentPopupMenu.png
 comments: true
 ---
 ## 概要

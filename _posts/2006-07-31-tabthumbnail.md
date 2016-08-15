@@ -7,6 +7,7 @@ tags: [JToolTip, JTabbedPane]
 author: aterai
 pubdate: 2006-07-31T12:28:44+09:00
 description: ツールチップを使って、JTabbedPaneのサムネイルを表示します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUz8_Yw-I/AAAAAAAAAmo/wLoOmG5I3oc/s800/TabThumbnail.png
 comments: true
 ---
 ## 概要

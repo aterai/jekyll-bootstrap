@@ -7,6 +7,7 @@ tags: [LookAndFeel, AuxiliaryLookAndFeel, UIManager, JComboBox]
 author: aterai
 pubdate: 2012-04-09T14:26:00+09:00
 description: AuxiliaryLookAndFeelを追加して、WindowsLookAndFeelの場合の動作を変更します。
+image: https://lh4.googleusercontent.com/-SxIyCqWRFhk/T4JxXw96NSI/AAAAAAAABLQ/gM_5mjZPn1o/s800/AuxiliaryLookAndFeel.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JOptionPane, Focus, JComponent, WindowListener, HierarchyListener, Ancest
 author: aterai
 pubdate: 2009-11-23T19:41:03+09:00
 description: JOptionPaneにデフォルトでフォーカスをもつコンポーネントを追加します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQoUaDrDI/AAAAAAAAAf4/nUnrCrmb5io/s800/OptionPaneDefaultFocus.png
 comments: true
 ---
 ## 概要

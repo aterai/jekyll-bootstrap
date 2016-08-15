@@ -7,6 +7,7 @@ tags: [JButton, ConvolveOp, BufferedImage]
 author: aterai
 pubdate: 2013-12-09T00:54:27+09:00
 description: ConvolveOpを使って、使用不可状態のJButtonにぼかしを入れます。
+image: https://lh6.googleusercontent.com/-KJB6Hz9n1R0/UqSGnCNV3HI/AAAAAAAAB70/sTyoJce2HZQ/s800/BlurButton.png
 comments: true
 ---
 ## 概要

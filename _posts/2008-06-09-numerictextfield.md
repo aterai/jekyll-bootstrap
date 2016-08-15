@@ -7,6 +7,7 @@ tags: [JTextField, JFormattedTextField, InputVerifier, DocumentFilter, PlainDocu
 author: aterai
 pubdate: 2008-06-09T10:55:29+09:00
 description: JTextFieldへのキー入力や貼り込みを数値のみに制限する方法をテストします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQjTks6aI/AAAAAAAAAfw/VCCb81SSh1s/s800/NumericTextField.png
 comments: true
 ---
 ## 概要

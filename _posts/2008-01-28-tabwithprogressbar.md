@@ -7,6 +7,7 @@ tags: [JTabbedPane, JProgressBar, SwingWorker]
 author: aterai
 pubdate: 2008-01-28T12:53:45+09:00
 description: JTabbedPaneのタブにJProgressBarを配置して、進捗を表示します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVHzMYZuI/AAAAAAAAAnI/7G4e4YZbiAQ/s800/TabWithProgressBar.png
 comments: true
 ---
 ## 概要

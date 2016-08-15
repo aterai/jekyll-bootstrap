@@ -7,6 +7,7 @@ tags: [JToolTip, Icon, JLabel, Html, MatteBorder]
 author: aterai
 pubdate: 2006-02-13T14:40:55+09:00
 description: JToolTipにJLabel、MatteBorder、またはHtmlタグを使用してアイコンを表示する方法をテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVl25jXSI/AAAAAAAAAn4/-g0LJzeMmbc/s800/ToolTipIcon.png
 comments: true
 ---
 ## 概要

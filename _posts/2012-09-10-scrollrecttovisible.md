@@ -7,6 +7,7 @@ tags: [JScrollPane, JViewport, JTable, JList, JTree]
 author: aterai
 pubdate: 2012-09-10T16:06:04+09:00
 description: JScrollPaneのJViewport内にあるJTable、JList、JTreeで、それぞれ追加された最終行が可視化されるようにスクロールします。
+image: https://lh3.googleusercontent.com/-t_4BD1mGUGk/UE1eF0Ead3I/AAAAAAAABSM/4a4aPSpMDM4/s800/ScrollRectToVisible.png
 comments: true
 ---
 ## 概要

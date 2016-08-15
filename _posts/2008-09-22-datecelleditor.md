@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, JSpinner, Focus, ChangeListener]
 author: aterai
 pubdate: 2008-09-22T13:48:58+09:00
 description: JTableで、日付を表示する列のセルエディタをJSpinnerにします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKdTsjXPI/AAAAAAAAAWA/vtjdEFUkZA4/s800/DateCellEditor.png
 comments: true
 ---
 ## 概要

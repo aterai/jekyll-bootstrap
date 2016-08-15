@@ -7,6 +7,7 @@ tags: [JTree, TreeSelectionModel, TreePath]
 author: aterai
 pubdate: 2011-08-01T15:39:38+09:00
 description: JTreeからSelectionModelを取得し、ノードの選択モードを切り替えます。
+image: https://lh6.googleusercontent.com/-bPltus2wD6w/TjZCCGnH40I/AAAAAAAABAE/tgmolSg-2Ys/s800/TreeSelection.png
 comments: true
 ---
 ## 概要

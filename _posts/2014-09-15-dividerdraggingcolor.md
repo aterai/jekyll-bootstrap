@@ -7,6 +7,7 @@ tags: [JSplitPane, Divider, UIManager]
 author: aterai
 pubdate: 2014-09-15T00:00:21+09:00
 description: JSplitPaneのDividerがドラッグ中の場合に、その移動先を示す矩形の色を変更します。
+image: https://lh5.googleusercontent.com/-M9cMsnuWpL0/VBWl0TfGYyI/AAAAAAAACNI/qvejKL7NGVk/s800/DividerDraggingColor.png
 comments: true
 ---
 ## 概要

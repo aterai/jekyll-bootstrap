@@ -7,6 +7,7 @@ tags: [JRadioButton, Icon]
 author: aterai
 pubdate: 2009-01-05T12:42:32+09:00
 description: JRadioButtonの状態の変化に応じて、その文字色やアイコンを変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRa2rE0nI/AAAAAAAAAhI/A6NX-uUoYjM/s800/RadioButtonTextColor.png
 comments: true
 ---
 ## 概要

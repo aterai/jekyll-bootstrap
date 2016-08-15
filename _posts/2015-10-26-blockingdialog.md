@@ -7,6 +7,7 @@ tags: [JDialog, JFrame]
 author: aterai
 pubdate: 2015-10-26T04:45:10+09:00
 description: Modalで透明なJDialogを表示することで、親のJFrame全体への入力操作をブロックします。
+image: https://lh3.googleusercontent.com/-BlvRwXum2Vc/Vi0ubz6y1mI/AAAAAAAAOE4/XKHozK0runE/s800-Ic42/BlockingDialog.png
 comments: true
 ---
 ## 概要

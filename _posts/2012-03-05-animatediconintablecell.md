@@ -7,6 +7,7 @@ tags: [JTable, ImageIcon, ImageObserver, Animation]
 author: aterai
 pubdate: 2012-03-05T01:22:05+09:00
 description: ImageIconにImageObserverを設定して、JTableのセル中でAnimated GIFのアニメーションを行います。
+image: https://lh3.googleusercontent.com/-138Snht85-E/T1B6iHoG1pI/AAAAAAAABJw/XaESowuWEC4/s800/AnimatedIconInTableCell.png
 comments: true
 ---
 ## 概要

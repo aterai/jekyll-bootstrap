@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableCellRenderer, Icon]
 author: aterai
 pubdate: 2012-11-05T14:47:06+09:00
 description: JTableの行の描画に、JTableHeaderから取得した列ヘッダのRendererを適用します。
+image: https://lh3.googleusercontent.com/-FSdrv2BDUCo/UJaJTUVXcdI/AAAAAAAABWU/gBeKokda9h8/s800/RowHeaderStyle.png
 comments: true
 ---
 ## 概要

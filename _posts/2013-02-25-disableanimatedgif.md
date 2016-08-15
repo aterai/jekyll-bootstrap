@@ -7,6 +7,7 @@ tags: [JLabel, Animation, ImageIcon]
 author: aterai
 pubdate: 2013-02-25T00:50:43+09:00
 description: JLabelに表示したAnimated GIFのアニメーションを停止します。
+image: https://lh6.googleusercontent.com/-pYT15pLG7KY/USoyuJzLxUI/AAAAAAAABfo/JgO7-MbsL5U/s800/DisableAnimatedGif.png
 comments: true
 ---
 ## 概要

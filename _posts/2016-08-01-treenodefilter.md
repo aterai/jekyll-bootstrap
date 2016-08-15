@@ -7,6 +7,7 @@ tags: [JTree, TreePath, TreeCellRenderer, DefaultMutableTreeNode]
 author: aterai
 pubdate: 2016-08-01T03:05:47+09:00
 description: JTreeのノードを検索し、そのTreePathが条件に一致しないノードを非表示にするフィルタリングを行います。
+image: https://lh3.googleusercontent.com/-Yx3QDfFydt0/V541DweTtLI/AAAAAAAAOe8/WUkpvRT7RVYVM-7tLkFsIlXkFpbPe2N9ACCo/s800/TreeNodeFilter.png
 comments: true
 ---
 ## 概要

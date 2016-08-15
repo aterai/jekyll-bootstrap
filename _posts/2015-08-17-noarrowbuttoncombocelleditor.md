@@ -7,6 +7,7 @@ tags: [JTable, CellEditor, JComboBox, ArrowButton, LocalDateTime]
 author: aterai
 pubdate: 2015-08-17T01:24:54+09:00
 description: JTableのCellEditorとしてArrowButtonを非表示にしたJComboBoxを使用します。
+image: https://lh3.googleusercontent.com/-rMRAQF0w4iQ/VdC10-8iyjI/AAAAAAAAN_c/5hX5mZ8KFUg/s800-Ic42/NoArrowButtonComboCellEditor.png
 comments: true
 ---
 ## 概要

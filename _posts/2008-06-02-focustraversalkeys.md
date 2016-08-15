@@ -7,6 +7,7 @@ tags: [KeyboardFocusManager, Focus, Container]
 author: aterai
 pubdate: 2008-06-02T13:10:23+09:00
 description: デフォルトのKBD{Tab}キーに加えて、矢印キーでもフォーカス移動できるように設定します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNHR5gShI/AAAAAAAAAaQ/KUE3fbR0bXo/s800/FocusTraversalKeys.png
 comments: true
 ---
 ## 概要

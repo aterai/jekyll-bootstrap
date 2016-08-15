@@ -7,6 +7,7 @@ tags: [JTabbedPane, Icon, JLabel]
 author: aterai
 pubdate: 2009-11-30T13:18:03+09:00
 description: JTabbedPaneのタブ中に配置するタイトルとアイコンの位置を変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTU96IMXGI/AAAAAAAAAm4/LydkDv26XY8/s800/TabTitleTextPosition.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableSorter]
 author: aterai
 pubdate: 2005-07-11
 description: JTableHeaderのカラムを選択不可にして、ソートなどを禁止します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK7ZrULPI/AAAAAAAAAWw/fwuY_EwXQsM/s800/DisabledHeader.png
 comments: true
 ---
 ## 概要

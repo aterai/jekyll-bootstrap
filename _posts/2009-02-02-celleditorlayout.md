@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, BorderLayout, JTextField, JButton, Focus, Keyboa
 author: aterai
 pubdate: 2009-02-02T14:08:34+09:00
 description: TableCellEditorのレイアウトを変更して、CellEditorの隣にJButtonを配置します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIlcF-6vI/AAAAAAAAATA/mS6Q_BfuY6c/s800/CellEditorLayout.png
 comments: true
 ---
 ## 概要

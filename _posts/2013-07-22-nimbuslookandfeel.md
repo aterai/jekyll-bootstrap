@@ -7,6 +7,7 @@ tags: [LookAndFeel, NimbusLookAndFeel, UIManager]
 author: aterai
 pubdate: 2013-07-22T01:35:03+09:00
 description: LookAndFeel一覧からNimbusLookAndFeelを名前で検索取得して使用します。
+image: https://lh5.googleusercontent.com/-40dXjNq1HbU/UewL67WFpWI/AAAAAAAABwg/zOHVr2U7KiM/s800/NimbusLookAndFeel.png
 comments: true
 ---
 ## 概要

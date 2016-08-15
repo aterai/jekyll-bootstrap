@@ -7,6 +7,7 @@ tags: [JToolBar, JLabel, Icon, DragAndDrop, MouseListener, MouseMotionListener, 
 author: aterai
 pubdate: 2013-04-08T01:18:50+09:00
 description: JToolBarに配置したアイコンをドラッグ＆ドロップで並べ替えます。
+image: https://lh6.googleusercontent.com/-bxLoJ6g9K_I/UWBOghG3kxI/AAAAAAAABpQ/tvVELkL1RV0/s800/RearrangeToolBarIcon.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2013/04/rearrange-jtoolbar-icon-by-drag-and-drop.html
     lang: en

@@ -7,6 +7,7 @@ tags: [JSpinner, SpinnerNumberModel, JFormattedTextField, DecimalFormatSymbols]
 author: aterai
 pubdate: 2009-08-03T20:40:16+09:00
 description: SpinnerNumberModelを使用するJSpinnerを無効にしたとき、数値を非表示にします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKfhstbcI/AAAAAAAAAWE/MMaDVyQ9jNY/s800/DecimalFormatSymbols.png
 comments: true
 ---
 ## 概要

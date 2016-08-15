@@ -7,6 +7,7 @@ tags: [JTable, TableModelListener, TableModelEvent, JCheckBox]
 author: aterai
 pubdate: 2014-03-31T00:21:38+09:00
 description: JTableのモデルの変更を受け取ってJTableHeaderに追加したJCheckBoxを更新します。
+image: https://lh3.googleusercontent.com/-Mndxsu0wtCM/Uzg00YuVfyI/AAAAAAAACCw/HoRS9CVP_-o/s800/TableModelEvent.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JComboBox, MouseWheelListener]
 author: aterai
 pubdate: 2004-11-15T02:34:50+09:00
 description: JComboBoxにフォーカスがある場合、その値をMouseWheelの上下で変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWm95sa5I/AAAAAAAAApg/1tiQsmg5QKw/s800/WheelCombo.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JLayer, GlassPane, InputEvent, JComponent]
 author: aterai
 pubdate: 2011-10-10T19:26:38+09:00
 description: JDK 7で導入された、JLayerを利用して、指定したコンポーネントへの入力を禁止します。
+image: https://lh3.googleusercontent.com/-fJbneWE3WB4/TpLGoNbk1TI/AAAAAAAABDk/GJWfhRR4UB0/s800/DisableInputLayer.png
 comments: true
 ---
 ## 概要

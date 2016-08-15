@@ -7,6 +7,7 @@ tags: [JSlider, MouseMotionListener]
 author: aterai
 pubdate: 2016-01-04T00:01:14+09:00
 description: JSliderの最小・最大値とは別に、マウスドラッグによる値の変更可能範囲を制限します。
+image: https://lh3.googleusercontent.com/-g2NOF6rEUgk/VokzS6_rd_I/AAAAAAAAOKc/UhGy1ZKCdpQ/s800-Ic42/DragLimitedSlider.png
 comments: true
 ---
 ## 概要

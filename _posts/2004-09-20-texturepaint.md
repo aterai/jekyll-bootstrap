@@ -7,6 +7,7 @@ tags: [TexturePaint, BufferedImage, Graphics2D]
 author: aterai
 pubdate: 2004-09-20
 description: TexturePaintを使用して背景にタイル状に画像を貼り付けます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVUeXC5lI/AAAAAAAAAnc/CWUYfOODy1E/s800/TexturePaint.png
 comments: true
 ---
 ## 概要

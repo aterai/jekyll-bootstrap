@@ -7,6 +7,7 @@ tags: [Timer, Animation]
 author: aterai
 pubdate: 2014-04-14T00:48:39+09:00
 description: パネルのタイルアニメーションで使用するjava.swing.Timerの数を変更して動作のテストを行います。
+image: https://lh6.googleusercontent.com/-Kc02XwN3fHA/U0qu1BcXNEI/AAAAAAAACDg/UDwGuPoJmjk/s800/TimerAction.png
 comments: true
 ---
 ## 概要

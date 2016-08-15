@@ -7,6 +7,7 @@ tags: [JTable, RowSorter, XMLDecoder, XMLEncoder]
 author: aterai
 pubdate: 2015-09-21T01:26:03+09:00
 description: JTableのSortKeyを永続化して、そのソート状態をXMLファイルで保存、復元できるように設定します。
+image: https://lh3.googleusercontent.com/-x9GESOvXeyc/Vf7c-CY1veI/AAAAAAAAOCE/lUO7hcq8-fw/s800-Ic42/SortKeyPersistence.png
 comments: true
 ---
 ## 概要

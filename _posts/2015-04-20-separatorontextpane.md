@@ -7,6 +7,7 @@ tags: [JTextPane, HTMLEditorKit, HTMLDocument, JSeparator, JLabel, MatteBorder]
 author: aterai
 pubdate: 2015-04-20T00:00:12+09:00
 description: JTextPaneにセパレータとして、hr要素やJSeparator、MatteBorderを設定したJLabelなどを追加します。
+image: https://lh3.googleusercontent.com/-DttSBuXmfOs/VTOx9lKJR2I/AAAAAAAAN2s/3ZCvhgC8QDw/s800/SeparatorOnTextPane.png
 comments: true
 ---
 ## 概要

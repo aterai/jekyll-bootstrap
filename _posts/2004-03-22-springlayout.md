@@ -7,6 +7,7 @@ tags: [SpringLayout, LayoutManager]
 author: aterai
 pubdate: 2004-03-22
 description: SpringLayoutを使用して、各ラベルのサイズとパネルからの距離が一定の比率になるような配置を指定します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTwX9UR-I/AAAAAAAAAk8/TLNZjmIrPnw/s800/SpringLayout.png
 comments: true
 ---
 ## 概要

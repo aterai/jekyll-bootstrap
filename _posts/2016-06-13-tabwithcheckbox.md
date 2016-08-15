@@ -7,6 +7,7 @@ tags: [JTabbedPane, JCheckBox, JPanel, JLabel]
 author: aterai
 pubdate: 2016-06-13T01:27:42+09:00
 description: JTabbedPaneのタブ内にクリック可能なJCheckBoxを追加します。
+image: https://lh3.googleusercontent.com/-b5jcwNkPYZc/V12KPOBZsFI/AAAAAAAAObI/5fJ6EGqkXMg7fYFyLSDa_MwGJ3hXZGE-QCCo/s800/TabWithCheckBox.png
 comments: true
 ---
 ## 概要

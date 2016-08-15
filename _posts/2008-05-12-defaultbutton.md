@@ -7,6 +7,7 @@ tags: [JRootPane, JButton, JTextField, Focus]
 author: aterai
 pubdate: 2008-05-12T14:39:12+09:00
 description: 自身の親となるJRootPaneを取得し、これにEnterキー入力で起動するデフォルトのJButtonを設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKiSOjSTI/AAAAAAAAAWI/e462LXNNrYU/s800/DefaultButton.png
 comments: true
 ---
 ## 概要

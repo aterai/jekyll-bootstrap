@@ -7,6 +7,7 @@ tags: [JTextComponent, Highlighter]
 author: aterai
 pubdate: 2005-12-05T11:02:14+09:00
 description: Highlighterを使ってテキスト中の文字列を強調表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN25SyRaI/AAAAAAAAAbc/i3gVEjh-mlQ/s800/Highlighter.png
 comments: true
 ---
 ## 概要

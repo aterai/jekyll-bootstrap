@@ -7,6 +7,7 @@ tags: [JSlider, NimbusLookAndFeel]
 author: aterai
 pubdate: 2016-05-16T00:30:20+09:00
 description: NimbusLookAndFeelを適用したJSliderでトラックの現在値を示す範囲の背景を塗りつぶします。
+image: https://lh3.googleusercontent.com/-dCrSqcYLbEg/VziRkYw8_xI/AAAAAAAAOXg/0oS6CVwRbkIa02qT5nmfNEMzLqdckmAkwCCo/s800/NimbusFilledSlider.png
 comments: true
 ---
 ## 概要

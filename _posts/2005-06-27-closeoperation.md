@@ -7,6 +7,7 @@ tags: [JFrame, WindowListener]
 author: aterai
 pubdate: 2005-06-27T01:43:23+09:00
 description: JFrameを複数作成し、これらをすべて閉じた時にアプリケーションを終了します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJey1HvEI/AAAAAAAAAUc/KdbEeHP-Ij0/s800/CloseOperation.png
 comments: true
 ---
 ## 概要

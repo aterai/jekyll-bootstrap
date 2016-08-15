@@ -7,6 +7,7 @@ tags: [JTable]
 author: aterai
 pubdate: 2011-05-30T16:37:49+09:00
 description: JTableの罫線の表示非表示とセルの内余白を変更します。
+image: https://lh3.googleusercontent.com/-zDg_KUxGwU4/TeNHkhhJYGI/AAAAAAAAA8M/G5R8rKLVzUg/s800/IntercellSpacing.png
 comments: true
 ---
 ## 概要

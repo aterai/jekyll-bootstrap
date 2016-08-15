@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableColumn, DefaultTableModel, JPopupMenu]
 author: aterai
 pubdate: 2013-09-23T05:04:22+09:00
 description: JTableのColumn名をJPopupMenuを使用して変更します。
+image: https://lh4.googleusercontent.com/-axnByzuSfvw/Uj9Bj3mhK0I/AAAAAAAAB2U/GgzDuKdOje8/s800/EditColumnName.png
 comments: true
 ---
 ## 概要

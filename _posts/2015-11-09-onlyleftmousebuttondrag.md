@@ -7,6 +7,7 @@ tags: [JSlider, UIManager]
 author: aterai
 pubdate: 2015-11-09T00:56:22+09:00
 description: JSliderのノブをマウスの右ボタンで操作可能かどうかを設定で切り替えます。
+image: https://lh3.googleusercontent.com/-coZSnO6AOYE/Vj9vbNsYp8I/AAAAAAAAOGA/2KnLThlR9u4/s800-Ic42/OnlyLeftMouseButtonDrag.png
 comments: true
 ---
 ## 概要

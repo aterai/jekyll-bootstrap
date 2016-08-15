@@ -7,6 +7,7 @@ tags: [JTable, JComboBox, TableCellEditor, AncestorListener]
 author: aterai
 pubdate: 2015-12-21T00:46:38+09:00
 description: JTableのセルエディタとしてJComboBoxを設定し、そのセルを編集開始した場合、すぐにはドロップダウンリストを表示せず、選択状態になるように変更します。
+image: https://lh3.googleusercontent.com/-F2cSZ7OFy4Y/VnbEpVP-sUI/AAAAAAAAOJc/L25fo3nesxE/s800-Ic42/CellEditorTogglePopup.png
 comments: true
 ---
 ## 概要

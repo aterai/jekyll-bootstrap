@@ -7,6 +7,7 @@ tags: [JEditorPane, StyledEditorKit]
 author: aterai
 pubdate: 2007-06-11
 description: JEditorPaneのパラグラフ終了位置に改行を意味する図形を追加表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ3cf9HLI/AAAAAAAAAgQ/gIbt2d-Hz7k/s800/ParagraphMark.png
 comments: true
 ---
 ## 概要

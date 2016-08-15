@@ -7,6 +7,7 @@ tags: [JTree]
 author: aterai
 pubdate: 2014-11-03T00:09:16+09:00
 description: JTreeのノードをマウスでクリックしても折り畳まれないように設定します。
+image: https://lh3.googleusercontent.com/-lmIva1c-vxw/VFZHTSmTigI/AAAAAAAANo0/jeRoJW178as/s800/TreeNodeCollapseVeto.png
 comments: true
 ---
 ## 概要

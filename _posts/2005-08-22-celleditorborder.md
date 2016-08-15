@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, Border]
 author: aterai
 pubdate: 2005-08-22T08:08:31+09:00
 description: Borderを変更したJTextFieldを、JTableのデフォルトセルエディタとして設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIiyFXk2I/AAAAAAAAAS8/Dgu1EqDMma4/s800/CellEditorBorder.png
 comments: true
 ---
 ## 概要

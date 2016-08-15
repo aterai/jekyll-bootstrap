@@ -7,6 +7,7 @@ tags: [JTree, TreeWillExpandListener, File]
 author: aterai
 pubdate: 2014-01-27T00:45:37+09:00
 description: JTreeで特定のノードだけ展開できないように設定します。
+image: https://lh4.googleusercontent.com/-WcBsEg_mxgc/UuUbyvn84EI/AAAAAAAAB-0/iZ6t8_EGeZQ/s800/PreventNodeExpanding.png
 comments: true
 ---
 ## 概要

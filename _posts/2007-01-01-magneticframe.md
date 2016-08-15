@@ -7,6 +7,7 @@ tags: [DesktopManager, JDesktopPane, JInternalFrame]
 author: aterai
 pubdate: 2007-01-01T08:38:12+09:00
 description: JDesktopPaneとJInternalFrameの距離が近くなった場合、これらを自動的に吸着させます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPnXoiDZI/AAAAAAAAAeQ/9SMGwoIqOi8/s800/MagneticFrame.png
 comments: true
 ---
 ## 概要

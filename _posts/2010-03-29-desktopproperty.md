@@ -7,6 +7,7 @@ tags: [Toolkit, PropertyChangeListener]
 author: aterai
 pubdate: 2010-03-29T15:07:50+09:00
 description: ToolkitにPropertyChangeListenerを追加して、ダブルクリックの速度などの変更を監視します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKxXuJ4EI/AAAAAAAAAWg/utfOkK69KBk/s800/DesktopProperty.png
 comments: true
 ---
 ## 概要

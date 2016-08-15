@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, JLabel]
 author: aterai
 pubdate: 2015-07-27T01:01:41+09:00
 description: JTableのセル内に配置した文字列を両端揃えに設定します。
+image: https://lh3.googleusercontent.com/-TCAfQOApIl0/VbUAibr0qaI/AAAAAAAAN94/StM8EiBCt_w/s800-Ic42/InterIdeographJustify.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JComboBox, JPopupMenu, PopupMenuListener, ArrowButton, Icon]
 author: aterai
 pubdate: 2010-03-22T02:10:46+09:00
 description: JComboBoxの右側にPopupMenuが表示されるように設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTR6-BHykI/AAAAAAAAAh8/0mx4AWajd58/s800/RightPopupMenuComboBox.png
 comments: true
 ---
 ## 概要
@@ -36,7 +37,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox`の`PopupMenu`が開くときに、その位置を変更するような`PopupMenuListener`を作成し、`addPopupMenuListener`メソッドで追加しています。
+上記のサンプルでは、`JComboBox`の`PopupMenu`が開くとき、その位置を変更するための`PopupMenuListener`を作成し、`JComboBox#addPopupMenuListener(...)`メソッドで追加しています。
 
 - - - -
 `JComboBox`の矢印アイコンも、以下のようにして変更しています。

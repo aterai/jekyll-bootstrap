@@ -7,6 +7,7 @@ tags: [JTextArea, JOptionPane, JScrollPane]
 author: aterai
 pubdate: 2016-04-04T00:35:06+09:00
 description: JOptionPaneに配置するJTextAreaの最大幅を指定し、テキストが複数行になってもその幅を超えず、スクロールバーも表示されない高さまで拡張されるよう設定します。
+image: https://lh3.googleusercontent.com/-wvgqUKEkJe8/VwE0eREDhVI/AAAAAAAAOSM/aEgf3UtLBX0g-u9CKBFg_8nCbt7-0CLngCCo/s800-Ic42/MaxWidthWrapOptionPane.png
 comments: true
 ---
 ## 概要

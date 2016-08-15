@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, JTextArea, JLabel]
 author: aterai
 pubdate: 2004-07-12
 description: JTableのセル幅に合わせて文字列を折り返します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUbGVPssI/AAAAAAAAAmA/dPiTKpwf1Ro/s800/TableCellRenderer.png
 comments: true
 ---
 ## 概要

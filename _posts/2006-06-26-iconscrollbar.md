@@ -7,6 +7,7 @@ tags: [JScrollBar, JScrollPane]
 author: aterai
 pubdate: 2006-06-26T12:08:46+09:00
 description: JScrollPaneから縦JScrollBarを取得し、そのノブ上にアイコンを追加表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTOPy62F7I/AAAAAAAAAcE/M4J9GIXdfBY/s800/IconScrollBar.png
 comments: true
 ---
 ## 概要

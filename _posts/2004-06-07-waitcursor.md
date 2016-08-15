@@ -7,6 +7,7 @@ tags: [Cursor, GlassPane, FocusTraversalPolicy, SwingWorker]
 author: aterai
 pubdate: 2004-06-07
 description: バックグラウンドで処理が実行されている間は、Cursorに砂時計が設定されたGlassPaneを有効にします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWfYWDbsI/AAAAAAAAApU/rldJwQuVm-8/s800/WaitCursor.png
 comments: true
 ---
 ## 概要

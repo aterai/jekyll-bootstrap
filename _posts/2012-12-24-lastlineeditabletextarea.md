@@ -7,6 +7,7 @@ tags: [DocumentFilter, Element, JTextArea, JTextComponent]
 author: aterai
 pubdate: 2012-12-24T00:48:21+09:00
 description: DocumentFilterを使用して最終行のみ編集可能なJTextAreaを作成します。
+image: https://lh3.googleusercontent.com/-WoZIsdy2Qd0/UNcd6P73NAI/AAAAAAAABZg/a2O8KLk4hVQ/s800/LastLineEditableTextArea.png
 comments: true
 ---
 ## 概要

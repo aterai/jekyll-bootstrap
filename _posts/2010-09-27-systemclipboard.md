@@ -7,6 +7,7 @@ tags: [ServiceManager, ClipboardService, Transferable, JLabel]
 author: aterai
 pubdate: 2010-09-27T15:53:12+09:00
 description: Clipboardから文字列や画像データを取得し、JLabelに表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUB2-qFWI/AAAAAAAAAlY/hlwTEjnyC_g/s800/SystemClipboard.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTable, JButton, TableCellRenderer, TableCellEditor, ActionListener]
 author: aterai
 pubdate: 2007-10-22T07:55:05+09:00
 description: JTableのセルにJButtonを追加し、クリックされたらその行を削除します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKsRqqqeI/AAAAAAAAAWY/X0y-Ph7jngA/s800/DeleteButtonInCell.png
 comments: true
 ---
 ## 概要

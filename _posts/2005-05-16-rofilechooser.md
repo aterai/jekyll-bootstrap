@@ -7,6 +7,7 @@ tags: [JFileChooser, UIManager]
 author: aterai
 pubdate: 2005-05-16T06:02:26+09:00
 description: JFileChooser内でのファイル名変更や新規フォルダ作成などの編集を不可にします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTR_zuU1UI/AAAAAAAAAiE/nZgj97xKO24/s800/ROFileChooser.png
 comments: true
 ---
 ## 概要

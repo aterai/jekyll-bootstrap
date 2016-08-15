@@ -7,6 +7,7 @@ tags: [JEditorPane, JTextComponent, Unicode]
 author: aterai
 pubdate: 2012-05-14T11:54:26+09:00
 description: JEditorPaneなどで数値文字参照やUnicodeエスケープを使ってサロゲートペアのテストをします。
+image: https://lh5.googleusercontent.com/-BY6N3kDDUG8/T7ByWIn0mgI/AAAAAAAABMo/4dpU-rm8zAQ/s800/SurrogatePair.png
 comments: true
 ---
 ## 概要

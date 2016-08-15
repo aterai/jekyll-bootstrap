@@ -7,6 +7,7 @@ tags: [JTable, TableRowSorter, JTableHeader]
 author: aterai
 pubdate: 2007-02-12
 description: JDK 6で導入された、TableRowSorterを利用して、JTableの行を降順、昇順にソートします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUnbg2jyI/AAAAAAAAAmU/-7yjlGSjBmo/s800/TableRowSorter.png
 comments: true
 ---
 ## 概要

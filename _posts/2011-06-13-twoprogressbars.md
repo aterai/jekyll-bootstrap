@@ -7,6 +7,7 @@ tags: [SwingWorker, JProgressBar, Enum, PropertyChangeListener]
 author: aterai
 pubdate: 2011-06-13T13:44:00+09:00
 description: ひとつのSwingWorkerで、進捗を表示するJProgressBarをふたつ使用します。
+image: https://lh6.googleusercontent.com/-S6ko35_DIi8/TfWPa08dHvI/AAAAAAAAA9I/MNhC-0LF8YQ/s800/TwoProgressBars.png
 comments: true
 ---
 ## 概要

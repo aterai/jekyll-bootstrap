@@ -7,6 +7,7 @@ tags: [LookAndFeel, UIManager, PropertyChangeListener, JComponent]
 author: aterai
 pubdate: 2014-06-23T01:04:57+09:00
 description: LookAndFeelの変更を取得するリスナーの作成などを行います。
+image: https://lh3.googleusercontent.com/-dbduLE1mbyM/U6b3UwtJj6I/AAAAAAAACH4/AUy3dSpgxMg/s800/LookAndFeelChangeListener.png
 comments: true
 ---
 ## 概要

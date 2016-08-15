@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader]
 author: aterai
 pubdate: 2004-05-31T04:43:10+09:00
 description: JTableのカラムヘッダをマウスによるドラッグ＆ドロップで並べ替え可能かどうかを切り替えます。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRr3AzfQI/AAAAAAAAAhk/mfgsIhuaEz0/s800/Reordering.png
 comments: true
 ---
 ## 概要

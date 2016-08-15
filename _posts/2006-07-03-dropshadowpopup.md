@@ -7,6 +7,7 @@ tags: [JPopupMenu, Border, Robot, JMenuItem, Translucent]
 author: aterai
 pubdate: 2006-07-03
 description: Robotで画面をキャプチャーするなどして、半透明の影をJPopupMenuに付けます。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMBgsMvZI/AAAAAAAAAYg/QBh9VXR7P-I/s800/DropShadowPopup.png
 comments: true
 ---
 ## 概要

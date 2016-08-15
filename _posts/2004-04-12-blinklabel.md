@@ -7,6 +7,7 @@ tags: [JLabel, Timer]
 author: aterai
 pubdate: 2004-04-12
 description: javax.swing.Timerを使って文字列が点滅するJLabelを作成します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTIHWUuKaI/AAAAAAAAASQ/gfrtJsq0Xck/s800/BlinkLabel.png
 comments: true
 ---
 ## 概要

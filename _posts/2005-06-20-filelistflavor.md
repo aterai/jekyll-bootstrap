@@ -7,6 +7,7 @@ tags: [DragAndDrop, JTable, DropTargetListener, TransferHandler]
 author: aterai
 pubdate: 2005-06-20
 description: WindowsなどからファイルをJTableにドラッグ＆ドロップします。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMhxsIIsI/AAAAAAAAAZU/iZ6Pn8yTFFM/s800/FileListFlavor.png
 comments: true
 ---
 ## 概要
@@ -76,10 +77,8 @@ table.setTransferHandler(new FileTransferHandler());
         for (Object o: (List) support.getTransferable().getTransferData(
             DataFlavor.javaFileListFlavor)) {
           if (o instanceof File) {
-            File file = (File) o;
-            model.addRow(new Object[] {
-                file, file.length(), file.getAbsolutePath()
-            });
+            File f= (File) o;
+            model.addRow(new Object[] { f, f.length(), f.getAbsolutePath() });
           }
         }
         return true;

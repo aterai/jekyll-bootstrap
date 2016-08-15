@@ -7,6 +7,7 @@ tags: [JTable, JViewport, JScrollPane, JColorChooser]
 author: aterai
 pubdate: 2004-08-02T01:28:45+09:00
 description: JTableを追加したJViewportがセルで隠れていない部分の色を変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUV7me60I/AAAAAAAAAl4/PQqRFaxI6XA/s800/TableBackground.png
 comments: true
 ---
 ## 概要

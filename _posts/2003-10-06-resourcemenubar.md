@@ -7,6 +7,7 @@ tags: [JMenuBar, JMenu, JMenuItem, Properties, ResourceBundle]
 author: aterai
 pubdate: 2003-10-06
 description: リソースファイルを使ってメニューバーやツールバーを生成します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTR15q_ELI/AAAAAAAAAh0/2H6dW1g0eiY/s800/ResourceMenuBar.png
 comments: true
 ---
 ## 概要

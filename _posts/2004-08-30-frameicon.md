@@ -7,6 +7,7 @@ tags: [JFrame, Icon, Image]
 author: aterai
 pubdate: 2004-08-30T05:11:06+09:00
 description: JFrameのタイトルバー左に表示されているアイコンを別の画像に変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNO_p95yI/AAAAAAAAAac/gl0vOOoKH14/s800/FrameIcon.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JButton, LayoutManager, BoxLayout, SpringLayout, GridLayout]
 author: aterai
 pubdate: 2004-11-29
 description: 高さはデフォルトのまま幅だけを指定して、JButton、JComboBox、JTextFieldなどのサイズを変更します。
+image: https://lh5.googleusercontent.com/-B3A8vHPu9_I/UmY7hTtdmtI/AAAAAAAAB4s/7NknsHc_vwI/s800/ButtonWidth.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2011/10/fixed-width-jbuttons-in-bottom-right.html
     lang: en
@@ -56,7 +57,7 @@ comments: true
 上記のサンプルでは、`JButton`の高さはデフォルト、幅をその文字列によらずに一定、配置は右寄せで水平にしたい場合のレイアウト方法をテストしています。
 
 - `Default`
-    - `Box`を使用して右寄せ
+    - `BoxLayout`で`Box.createHorizontalGlue()`を使用して右寄せ
     - `JButton`の幅は、その文字列の長さに依存
 - `getPreferredSize`
     - `Box`を使用して右寄せ

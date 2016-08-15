@@ -7,6 +7,7 @@ tags: [JLabel, HTML, JTableHeader, JCheckBox, NimbusLookAndFeel]
 author: aterai
 pubdate: 2016-02-29T00:30:08+09:00
 description: JLabelを継承するヘッダのTableCellRendererにHTMLフォーマットのinputタグで生成したcheckboxを表示し、クリックに応じてその状態を変更します。
+image: https://lh3.googleusercontent.com/-vnWIjLh4mRA/VtMSSVOc3gI/AAAAAAAAOPo/41aAmP3gMuc/s800-Ic42/InputTypeCheckBox.png
 comments: true
 ---
 ## 概要

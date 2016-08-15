@@ -7,6 +7,7 @@ tags: [JList, JCheckBox, ListCellRenderer, MouseListener, JTree, Box]
 author: aterai
 pubdate: 2011-03-28T15:00:17+09:00
 description: JListのセルにJCheckBoxを使用して、チェックボックスの一覧を作成します。
+image: https://lh3.googleusercontent.com/-EfbwsqycTvg/UlyukvM4ivI/AAAAAAAAB3o/NJBvrfM4xPA/s800/CheckBoxCellList.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2013/10/scrollable-list-of-jcheckboxes.html
     lang: en

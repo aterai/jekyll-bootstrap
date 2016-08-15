@@ -7,6 +7,7 @@ tags: [JTree, TreePath]
 author: aterai
 pubdate: 2013-11-18T00:04:12+09:00
 description: JTreeのノードが展開されているかどうかを記憶、復元します。
+image: https://lh4.googleusercontent.com/-FcYsZkFYSxE/UojBcoMtHwI/AAAAAAAAB6k/A7D221doy2w/s800/ExpandedDescendants.png
 comments: true
 ---
 ## 概要

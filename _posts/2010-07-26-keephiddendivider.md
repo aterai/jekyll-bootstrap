@@ -7,6 +7,7 @@ tags: [JSplitPane, ActionMap, JButton, Divider]
 author: aterai
 pubdate: 2010-07-26T06:35:29+09:00
 description: JSplitPaneのサイズが変更されても、ディバイダの収納状態を維持するように設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTOy71x7HI/AAAAAAAAAc8/gLDHiIJS_Yw/s800/KeepHiddenDivider.png
 comments: true
 ---
 ## 概要

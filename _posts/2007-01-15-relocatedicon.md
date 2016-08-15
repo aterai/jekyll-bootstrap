@@ -7,6 +7,7 @@ tags: [DesktopManager, JDesktopPane, JInternalFrame]
 author: aterai
 pubdate: 2007-01-15
 description: JDesktopPaneのサイズが変更されたとき、アイコン化しているJInternalFrameの再配置を行います。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRm01W30I/AAAAAAAAAhc/eBhL-DDKkSo/s800/RelocatedIcon.png
 comments: true
 ---
 ## 概要

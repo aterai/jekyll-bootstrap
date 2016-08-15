@@ -7,6 +7,7 @@ tags: [JTable, JScrollPane, JTextArea, TableCellEditor, Focus]
 author: aterai
 pubdate: 2011-06-20T14:39:55+09:00
 description: JTableのTableCellEditorとして、JTextAreaとJScrollPaneを使用します。
+image: https://lh4.googleusercontent.com/-DDRbJ9WhSJk/Tf7btYjUE7I/AAAAAAAAA9s/yVKIKC55zIw/s800/ScrollingCellEditor.png
 comments: true
 ---
 ## 概要

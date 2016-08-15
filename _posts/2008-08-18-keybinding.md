@@ -7,6 +7,7 @@ tags: [JComponent, ActionMap, InputMap]
 author: aterai
 pubdate: 2008-08-18T11:17:11+09:00
 description: JComponentから、ActionMap、InputMapを取得し、KeyBindingの一覧表を作成します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTO1Qi0Y2I/AAAAAAAAAdA/yMsuc2sjSKg/s800/KeyBinding.png
 comments: true
 ---
 ## 概要

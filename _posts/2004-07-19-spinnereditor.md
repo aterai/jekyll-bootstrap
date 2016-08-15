@@ -7,6 +7,7 @@ tags: [JSpinner]
 author: aterai
 pubdate: 2004-07-19
 description: JSpinnerのエディタを編集不可にして、ボタンでしか値を変更できないようにします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTojxcMLI/AAAAAAAAAkw/BznS8i5Xfp4/s800/SpinnerEditor.png
 comments: true
 ---
 ## 概要

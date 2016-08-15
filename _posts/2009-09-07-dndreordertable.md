@@ -7,6 +7,7 @@ tags: [JTable, TransferHandler, DragAndDrop]
 author: aterai
 pubdate: 2009-09-07T15:58:48+09:00
 description: JTableの行を複数選択し、ドラッグ＆ドロップで並べ替えを可能にするTransferHandlerを作成します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLg-5HyXI/AAAAAAAAAXs/Wda5rMSf-1c/s800/DnDReorderTable.png
 comments: true
 ---
 ## 概要

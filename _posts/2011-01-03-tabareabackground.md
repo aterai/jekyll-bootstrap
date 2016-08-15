@@ -7,6 +7,7 @@ tags: [JTabbedPane, UIManager, MetalLookAndFeel]
 author: aterai
 pubdate: 2011-01-03T14:25:13+09:00
 description: MetalLookAndFeelのJTabbedPaneで、タブエリアの背景色などを変更するテストをしています。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TSFbcaeJLEI/AAAAAAAAAw0/zQFscoerEGk/s800/TabAreaBackground.png
 comments: true
 ---
 ## 概要

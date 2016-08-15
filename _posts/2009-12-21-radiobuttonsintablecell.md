@@ -7,6 +7,7 @@ tags: [JTable, JRadioButton, TableCellRenderer, TableCellEditor, JPanel, ActionL
 author: aterai
 pubdate: 2009-12-21T00:36:55+09:00
 description: JTableのセル中に複数のJRadioButtonを配置します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRX5e43uI/AAAAAAAAAhE/QX6qn9jFOB8/s800/RadioButtonsInTableCell.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTextField, Focus, FocusListener]
 author: aterai
 pubdate: 2005-11-07T16:50:50+09:00
 description: JTextFieldにフォーカスが無く文字列が空の場合、薄い色でその説明を表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNY3BG1nI/AAAAAAAAAas/YJB5L9kNK-c/s800/GhostText.png
 comments: true
 ---
 ## 概要

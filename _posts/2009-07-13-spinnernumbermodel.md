@@ -7,6 +7,7 @@ tags: [JSpinner, SpinnerNumberModel]
 author: aterai
 pubdate: 2009-07-13T13:52:46+09:00
 description: JSpinnerのテキストフィールドにSpinnerNumberModelが決めた上限値を超える数値を直接入力した後に表示される値をテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTrfKZbaI/AAAAAAAAAk0/znT8goHx2Es/s800/SpinnerNumberModel.png
 comments: true
 ---
 ## 概要

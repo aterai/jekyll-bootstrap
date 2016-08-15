@@ -7,6 +7,7 @@ tags: [JOptionPane, JButton, UIManager, NimbusLookAndFeel]
 author: aterai
 pubdate: 2015-05-11T00:39:58+09:00
 description: NimbusLookAndFeelでJOptionPaneを使用した場合、そのJButtonのサイズを揃えるかどうかを設定します。
+image: https://lh3.googleusercontent.com/-vidT_rr0mcE/VU97kF6HGpI/AAAAAAAAN4A/ByrWGh41AQg/s800/SameSizeButtons.png
 comments: true
 ---
 ## 概要

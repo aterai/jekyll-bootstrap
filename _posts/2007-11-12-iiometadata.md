@@ -7,6 +7,7 @@ tags: [JTree, ImageIO, ImageReader, IIOMetadata]
 author: aterai
 pubdate: 2007-11-12T12:24:17+09:00
 description: JPEGファイルからコメントなどのメタデータ(XML)を取り出してJTreeで表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOUrdw9GI/AAAAAAAAAcM/4rakKDY0jI0/s800/IIOMetadata.png
 comments: true
 ---
 ## 概要

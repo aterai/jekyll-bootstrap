@@ -7,6 +7,7 @@ tags: [JRadioButtonMenuItem, Icon, UIManager]
 author: aterai
 pubdate: 2010-11-08T16:26:30+09:00
 description: JRadioButtonMenuItemのチェックアイコンを変更します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTRVf_tDmI/AAAAAAAAAhA/1F6GcDuJmcg/s800/RadioButtonMenuItemIcon.png
 comments: true
 ---
 ## 概要

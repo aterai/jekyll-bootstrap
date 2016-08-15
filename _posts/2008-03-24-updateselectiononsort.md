@@ -7,6 +7,7 @@ tags: [JTable, TableRowSorter, JTableHeader, MouseListener]
 author: aterai
 pubdate: 2008-03-24T14:15:18+09:00
 description: JDK 1.6で導入されたRowSorterを使って、JTableをソートした場合、直前の選択状態がどう変化するかテストします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTWaXC_E3I/AAAAAAAAApM/H9h2pJw-VSQ/s800/UpdateSelectionOnSort.png
 comments: true
 ---
 ## 概要

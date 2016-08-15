@@ -7,6 +7,7 @@ tags: [JTree, MouseListener]
 author: aterai
 pubdate: 2010-12-06T14:44:47+09:00
 description: JTreeでノード以外の領域をマウスでクリックした場合、選択状態を解除します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWDzni-uI/AAAAAAAAAoo/r6UW4JENwgI/s800/TreeClearSelection.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JSpinner, DefaultFormatter, Font]
 author: aterai
 pubdate: 2013-06-03T04:18:20+09:00
 description: JSpinnerの表記を16進数にして、そのUnicodeコードポイントに割り当てられた文字を表示します。
+image: https://lh4.googleusercontent.com/-eTZU_kuJGK4/UauUgRcPuTI/AAAAAAAABtc/7FNouA9JcLI/s800/HexFormatterSpinner.png
 comments: true
 ---
 ## 概要

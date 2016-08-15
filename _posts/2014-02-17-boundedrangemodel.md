@@ -7,6 +7,7 @@ tags: [JLabel, Icon, BoundedRangeModel, JScrollBar, JTable]
 author: aterai
 pubdate: 2014-02-17T02:41:10+09:00
 description: JScrollBarからBoundedRangeModelを取得し、JLabelとIconで表示した検索位置表示バーをマウスで操作可能にします。
+image: https://lh4.googleusercontent.com/-EN1vcmWX7Gs/UwDyGP5n91I/AAAAAAAACAE/tb9w7pHxtk8/s800/BoundedRangeModel.png
 comments: true
 ---
 ## 概要

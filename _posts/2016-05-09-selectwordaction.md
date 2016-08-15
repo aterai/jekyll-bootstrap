@@ -7,6 +7,7 @@ tags: [JTextArea, Segment, Document]
 author: aterai
 pubdate: 2016-05-09T00:37:01+09:00
 description: JTextAreaで文字列のダブルクリックによる単語選択を実行した場合、単語の区切りとみなす文字を追加します。
+image: https://lh3.googleusercontent.com/-FkLFDSXe14A/Vy9ZM9GU81I/AAAAAAAAOUE/RMwBLf19Nb0uXaKdI9VA3l3wvXSOegS6gCCo/s800/SelectWordAction.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTextArea, Caret, Highlighter]
 author: aterai
 pubdate: 2006-01-30T12:22:18+09:00
 description: JTextAreaのカーソルがある行全体にアンダーラインを引きます。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPL3eZj2I/AAAAAAAAAdk/KJTR3_NeAZE/s800/LineCursor.png
 comments: true
 ---
 ## 概要

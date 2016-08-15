@@ -7,6 +7,7 @@ tags: [JTextPane, HTMLEditorKit, Html, JPopupMenu, JTextArea, JTabbedPane, Chang
 author: aterai
 pubdate: 2013-04-01T00:08:05+09:00
 description: HTMLEditorKitを使用するJTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示、編集、JTextPaneに反映するテストを行なっています。
+image: https://lh6.googleusercontent.com/-ORS7lITRAUE/UVhL_1G6hPI/AAAAAAAABo4/5WKtBFFthJ0/s800/HTMLEditorKit.png
 comments: true
 ---
 ## 概要

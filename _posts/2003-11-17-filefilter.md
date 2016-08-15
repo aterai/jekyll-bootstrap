@@ -7,6 +7,7 @@ tags: [JFileChooser, FileFilter]
 author: aterai
 pubdate: 2003-11-17
 description: JFileChooserにファイルフィルタを追加します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTMc7NJ5UI/AAAAAAAAAZM/p-hliI-ZnLs/s800/FileFilter.png
 comments: true
 ---
 ## 概要

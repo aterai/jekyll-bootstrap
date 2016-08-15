@@ -7,6 +7,7 @@ tags: [JSpinner, BigDecimal, SpinnerNumberModel]
 author: aterai
 pubdate: 2014-01-20T02:06:20+09:00
 description: JSpinnerで浮動小数点型のモデルを使用する場合、最大値と最小値の比較をBigDecimalで行うよう変更します。
+image: https://lh6.googleusercontent.com/-JztoRl3kot0/UtvN48iHZ3I/AAAAAAAAB-g/D3QcAYgr_ks/s800/BigDecimalSpinnerModel.png
 comments: true
 ---
 ## 概要

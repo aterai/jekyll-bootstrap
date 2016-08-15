@@ -7,6 +7,7 @@ tags: [Cursor, BufferedImage, ImageIcon, JComponent]
 author: aterai
 pubdate: 2005-01-24
 description: BufferedImageからカーソルオブジェクトを作成し、これをコンポーネントに設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTKTOEY7FI/AAAAAAAAAVw/OeBJRlIWHsQ/s800/CustomCursor.png
 comments: true
 ---
 ## 概要

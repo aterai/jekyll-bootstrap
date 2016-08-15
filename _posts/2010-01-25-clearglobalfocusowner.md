@@ -7,6 +7,7 @@ tags: [Focus, KeyboardFocusManager, JFrame]
 author: aterai
 pubdate: 2010-01-25T13:19:35+09:00
 description: GlobalFocusをクリアして、フォーカスをもつコンポーネントがない状態に戻します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJA-Nc1vI/AAAAAAAAATs/mH0hhS2R1n8/s800/ClearGlobalFocusOwner.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTextField, Focus, ImageIcon]
 author: aterai
 pubdate: 2009-10-26T13:04:26+09:00
 description: JTextFieldの文字列が空でフォーカスがない場合、透かし画像を表示するように設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTWh1Qjh4I/AAAAAAAAApY/bLarzjLy7-8/s800/WatermarkInTextField.png
 comments: true
 ---
 ## 概要

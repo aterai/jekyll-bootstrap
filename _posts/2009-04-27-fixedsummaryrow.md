@@ -7,6 +7,7 @@ tags: [JTable, TableRowSorter, RowFilter]
 author: aterai
 pubdate: 2009-04-27T14:50:32+09:00
 description: JTableの行をソートしても、常に最終行にサマリーを表示します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTM63Y0s8I/AAAAAAAAAZ8/o3lbm9QBcIs/s800/FixedSummaryRow.png
 comments: true
 ---
 ## 概要

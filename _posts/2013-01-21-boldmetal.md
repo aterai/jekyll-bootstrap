@@ -7,6 +7,7 @@ tags: [MetalLookAndFeel, LookAndFeel, Font, UIManager, Html]
 author: aterai
 pubdate: 2013-01-21T00:02:35+09:00
 description: MetalLookAndFeelで太字フォントを使用しないように設定します。
+image: https://lh4.googleusercontent.com/-7wQtHGyNRDQ/UPv6YyOBReI/AAAAAAAABbk/_vXFoJwk-ug/s800/BoldMetal.png
 comments: true
 ---
 ## 概要

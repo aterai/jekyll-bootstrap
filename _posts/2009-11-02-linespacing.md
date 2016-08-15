@@ -7,6 +7,7 @@ tags: [JEditorPane, JTextPane, StyledEditorKit]
 author: aterai
 pubdate: 2009-11-02T12:51:40+09:00
 description: JEditorPaneやJTextPaneに行間を設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPYZn_u9I/AAAAAAAAAd4/5-1ThpWwM5U/s800/LineSpacing.png
 comments: true
 ---
 ## 概要

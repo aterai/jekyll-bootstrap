@@ -7,6 +7,7 @@ tags: [Font, JTextArea]
 author: aterai
 pubdate: 2005-03-07T02:07:13+09:00
 description: 独自フォント(mona.ttf)をファイルから読み込み、ASCII artを表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTKOUJYB7I/AAAAAAAAAVo/K2rl3dXD4ic/s800/CreateFont.png
 comments: true
 ---
 ## 概要

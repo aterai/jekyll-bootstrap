@@ -7,6 +7,7 @@ tags: [UIManager, AuditoryCues, Sound, JOptionPane]
 author: aterai
 pubdate: 2008-05-26T17:13:17+09:00
 description: UIManagerにAuditoryCues.playListを設定して、ダイアログが開いた時の警告音などを鳴らします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHzQ8XbXI/AAAAAAAAARw/-TGnQ_tvnnM/s800/AuditoryCues.png
 comments: true
 ---
 ## 概要

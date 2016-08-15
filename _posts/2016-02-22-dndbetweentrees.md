@@ -7,6 +7,7 @@ tags: [JTree, DragAndDrop, TransferHandler]
 author: aterai
 pubdate: 2016-02-22T00:58:53+09:00
 description: JTree間でのドラッグ＆ドロップによるノードの移動を行います。
+image: https://lh3.googleusercontent.com/-orv222AWr0E/VsnVITv64uI/AAAAAAAAOPE/vGmbPDCu4nY/s800-Ic42/DnDBetweenTrees.png
 comments: true
 ---
 ## 概要

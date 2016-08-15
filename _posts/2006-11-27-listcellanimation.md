@@ -7,6 +7,7 @@ tags: [JList, ListCellRenderer, Animation]
 author: aterai
 pubdate: 2006-11-27
 description: JListの選択されたセルをアニメーションさせます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPa7B8VkI/AAAAAAAAAd8/uLpJ50Oxwf8/s800/ListCellAnimation.png
 comments: true
 ---
 ## 概要

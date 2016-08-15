@@ -7,6 +7,7 @@ tags: [JMenu, MouseListener]
 author: aterai
 pubdate: 2013-02-18T00:29:59+09:00
 description: JMenuの領域内にマウスカーソルが入ったときにポップアップメニューが開くように設定します。
+image: https://lh3.googleusercontent.com/-shu8CDTfLvg/USCnbrWYstI/AAAAAAAABd0/qODgUmweras/s800/PopupWithoutClickOnMenu.png
 comments: true
 ---
 ## 概要

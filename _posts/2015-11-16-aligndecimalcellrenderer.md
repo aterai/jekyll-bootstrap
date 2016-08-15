@@ -7,6 +7,7 @@ tags: [JTable, JTextPane, TabSet, TabStop]
 author: aterai
 pubdate: 2015-11-16T00:43:30+09:00
 description: JTableのセルレンダーとしてTabSetを設定したJTextPaneを使用し、数値の小数点揃えを行います。
+image: https://lh3.googleusercontent.com/-IFQyVmxHhh0/VkilPqJfutI/AAAAAAAAOGk/ZzzXd8SaK_g/s800-Ic42/AlignDecimalCellRenderer.png
 comments: true
 ---
 ## 概要

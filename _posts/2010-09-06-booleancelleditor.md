@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, JCheckBox]
 author: aterai
 pubdate: 2010-09-06T11:51:11+09:00
 description: JTableがデフォルトで使用するBooleanCellEditorの背景色を選択色に変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTIJ0rZk-I/AAAAAAAAASU/JvYohArvFpU/s800/BooleanCellEditor.png
 comments: true
 ---
 ## 概要

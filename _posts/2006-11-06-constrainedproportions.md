@@ -7,6 +7,7 @@ tags: [JFrame]
 author: aterai
 pubdate: 2006-11-06
 description: JFrameの幅と高さの比率が一定になるように制限します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTKJeWlAAI/AAAAAAAAAVg/GMclfo0TYBM/s800/ConstrainedProportions.png
 comments: true
 ---
 ## 概要

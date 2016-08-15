@@ -7,6 +7,7 @@ tags: [File]
 author: aterai
 pubdate: 2003-11-03
 description: 番号付きバックアップファイルを作成します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png
 comments: true
 ---
 ## 概要
@@ -64,7 +65,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[xyzzy](http://ateraimemo.com/xyzzy.html)風の番号付きバックアップのテストを行っています。
+上記のサンプルでは、[xyzzy](http://ateraimemo.com/xyzzy.html)風の番号付きバックアップファイル作成のテストを行っています。
 
 以下の例では、古いバージョンを`2`つ、新しいバージョンを`3`つバックアップとして残します。
 

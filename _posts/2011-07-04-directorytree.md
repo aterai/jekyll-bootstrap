@@ -7,6 +7,7 @@ tags: [JTree, File, FileSystemView, SwingWorker]
 author: aterai
 pubdate: 2011-07-04T16:26:25+09:00
 description: FileSystemViewを使ってディレクトリ構造をJTree上に表示します。
+image: https://lh3.googleusercontent.com/-FkX-8X4KxDo/ThFoeY8M64I/AAAAAAAAA-Y/Ry_RA9yVCxc/s800/DirectoryTree.png
 comments: true
 ---
 ## 概要

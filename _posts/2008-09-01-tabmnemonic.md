@@ -7,6 +7,7 @@ tags: [JTabbedPane, Mnemonic, JLabel]
 author: aterai
 pubdate: 2008-09-01T13:22:20+09:00
 description: JTabbedPaneのタブにMnemonicを追加します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUu2fjTpI/AAAAAAAAAmg/EST6gnFRH84/s800/TabMnemonic.png
 comments: true
 ---
 ## 概要

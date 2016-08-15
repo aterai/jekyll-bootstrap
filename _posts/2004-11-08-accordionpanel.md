@@ -7,6 +7,7 @@ tags: [JPanel, BorderLayout]
 author: aterai
 pubdate: 2004-11-08
 description: JPanelの展開、折り畳みをアコーディオン風に行います。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTHVHwFBII/AAAAAAAAARA/QX4AmSbPoHs/s800/AccordionPanel.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [Border, MatteBorder, StrokeBorder]
 author: aterai
 pubdate: 2015-08-03T02:50:24+09:00
 description: MatteBorderの縁の塗り潰しの代わりにBasicStrokeで点線を描画するBorderを作成します。
+image: https://lh3.googleusercontent.com/-HScDivtTraE/Vb46osyI3fI/AAAAAAAAN-c/-Tgk6AYSPN8/s800-Ic42/StrokeMatteBorder.png
 comments: true
 ---
 ## 概要

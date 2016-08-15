@@ -7,6 +7,7 @@ tags: [JList, Focus, MouseListener]
 author: aterai
 pubdate: 2011-04-18T14:47:37+09:00
 description: JListのセル選択状態をセル以外の余白領域をクリックすることで解除できるように設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TavH8_fQKAI/AAAAAAAAA5s/MyUXQnSHPUA/s800/ClearSelection.png
 comments: true
 ---
 ## 概要

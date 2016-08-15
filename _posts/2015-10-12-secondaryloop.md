@@ -7,6 +7,7 @@ tags: [SecondaryLoop, InputEvent, JLayer]
 author: aterai
 pubdate: 2015-10-12T05:29:04+09:00
 description: SecondaryLoopを使用して、イベント・ディスパッチ・スレッドをブロックせずに、別スレッドをイベント・ループを実行します。
+image: https://lh3.googleusercontent.com/-eAqnf0aNSsQ/VhrDDmUQQeI/AAAAAAAAODs/fwDgjYwjTbk/s800-Ic42/SecondaryLoop.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [DefaultToolkit, LayoutManager]
 author: aterai
 pubdate: 2005-09-05T12:06:35+09:00
 description: ウィンドウのリサイズなどに応じてレイアウトを再評価するように、DynamicLayoutを設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMDyaDeJI/AAAAAAAAAYk/-EIAq3TyJbw/s800/DynamicLayout.png
 comments: true
 ---
 ## 概要

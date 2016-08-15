@@ -7,6 +7,7 @@ tags: [JToolBar, Translucent, JButton]
 author: aterai
 pubdate: 2011-09-19T17:00:43+09:00
 description: コンポーネントにマウスカーソルがある場合だけ表示される半透明のJToolBarを追加します。
+image: https://lh5.googleusercontent.com/-36mkZfbor58/Tnb1d-2vaPI/AAAAAAAABCM/Hoor7aG7K-g/s800/TranslucentToolBar.png
 comments: true
 ---
 ## 概要

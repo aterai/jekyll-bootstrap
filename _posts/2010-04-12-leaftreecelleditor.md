@@ -7,6 +7,7 @@ tags: [JTree, TreeCellEditor, TreeNode]
 author: aterai
 pubdate: 2010-04-12T18:23:41+09:00
 description: JTreeのノードラベル編集が、葉ノードの場合だけ可能になるよう設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPB-TVk9I/AAAAAAAAAdU/Aq5YDSMvqaY/s800/LeafTreeCellEditor.png
 comments: true
 ---
 ## 概要

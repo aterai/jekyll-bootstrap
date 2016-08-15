@@ -7,6 +7,7 @@ tags: [JInternalFrame, JDesktopPane, Icon]
 author: aterai
 pubdate: 2014-12-22T00:07:25+09:00
 description: JInternalFrameのタイトルバー左上隅に表示されるアイコンを各JInternalFrame毎に設定します。
+image: https://lh3.googleusercontent.com/-rFS_L31nMfg/VJbgMqwW0UI/AAAAAAAANtY/z1JvoM0odco/s800/InternalFrameTitleIcon.png
 comments: true
 ---
 ## 概要

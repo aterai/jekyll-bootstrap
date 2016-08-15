@@ -7,6 +7,7 @@ tags: [TitledBorder, Border]
 author: aterai
 pubdate: 2007-08-06T12:08:09+09:00
 description: TitledBorderのタイトル位置や揃えを切り替えてテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVZeDhwBI/AAAAAAAAAnk/QmV1N3Uqp3o/s800/TitledBorder.png
 comments: true
 ---
 ## 概要

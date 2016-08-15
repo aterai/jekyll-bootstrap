@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, TableCellRenderer, JComboBox, LayoutManager]
 author: aterai
 pubdate: 2012-05-07T12:28:04+09:00
 description: JTableのCellEditorに設定したJComboBoxに余白を追加します。
+image: https://lh4.googleusercontent.com/-dIea13PoJ70/T6c7YezP1BI/AAAAAAAABMQ/e0IqDjxhjpw/s800/ComboBoxCellEditorInsets.png
 comments: true
 ---
 ## 概要

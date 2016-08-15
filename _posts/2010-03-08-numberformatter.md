@@ -7,6 +7,7 @@ tags: [JSpinner, JFormattedTextField, SpinnerNumberModel, DocumentListener, Numb
 author: aterai
 pubdate: 2010-03-08T15:39:14+09:00
 description: JSpinnerからJFormattedTextFieldを取得し、これに無効な値の入力を許可しないように設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQg6Td8tI/AAAAAAAAAfs/u5mXLfk3k64/s800/NumberFormatter.png
 comments: true
 ---
 ## 概要

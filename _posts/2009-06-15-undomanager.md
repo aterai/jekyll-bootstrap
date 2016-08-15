@@ -7,6 +7,7 @@ tags: [JTextField, JTextComponent, UndoManager, ActionMap, Document]
 author: aterai
 pubdate: 2009-06-15T13:35:15+09:00
 description: JTextFieldのドキュメントにUndoManagerを追加して、Undo、Redoを行います。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWX1uwgqI/AAAAAAAAApI/zvwc9TUlj4E/s800/UndoManager.png
 comments: true
 ---
 ## 概要

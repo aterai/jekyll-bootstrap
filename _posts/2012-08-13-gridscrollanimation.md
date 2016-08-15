@@ -7,6 +7,7 @@ tags: [JScrollPane, JPanel, GridLayout, Animation]
 author: aterai
 pubdate: 2012-08-13T16:28:05+09:00
 description: JPanelにGridLayoutでコンポーネントを追加し、これをJScrollPaneに配置して、グリッド単位での表示、スクロールアニメーションによる切り替えを行います。
+image: https://lh4.googleusercontent.com/-V2E4xmdHmBE/UCiUOuOlrLI/AAAAAAAABQg/IYqzH9-WdsI/s800/GridScrollAnimation.png
 comments: true
 ---
 ## 概要

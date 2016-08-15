@@ -7,6 +7,7 @@ tags: [JTabbedPane, JButton, Focus]
 author: aterai
 pubdate: 2008-01-21T15:27:41+09:00
 description: JTabbedPaneのタブを閉じるボタンを、タブにフォーカスがある場合だけ表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN-acwv2I/AAAAAAAAAbo/gFaIpQr1XGc/s800/HoverCloseButton.png
 comments: true
 ---
 ## 概要

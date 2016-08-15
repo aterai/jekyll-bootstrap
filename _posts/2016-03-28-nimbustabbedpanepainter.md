@@ -7,6 +7,7 @@ tags: [JTabbedPane, Painter, NimbusLookAndFeel]
 author: aterai
 pubdate: 2016-03-28T02:33:36+09:00
 description: NimbusLookAndFeelにおけるJTabbedPaneのタブ、タブエリアなどのスタイルを変更します。
+image: https://lh3.googleusercontent.com/-TJwPLjNC_3w/VvgUy3r36LI/AAAAAAAAORk/izF9EpBGdeEZ4exmIEiNN0elbLCjGQVOACCo/s800-Ic42/NimbusTabbedPanePainter.png
 comments: true
 ---
 ## 概要

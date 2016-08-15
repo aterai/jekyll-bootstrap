@@ -7,6 +7,7 @@ tags: [JFileChooser, JDialog]
 author: aterai
 pubdate: 2007-01-22T13:27:16+09:00
 description: JFileChooserのリサイズや、最小サイズ以下へのサイズ変更を禁止します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTM16q-C_I/AAAAAAAAAZ0/i21vjp9vPjc/s800/FixedSizeFileChooser.png
 comments: true
 ---
 ## 概要

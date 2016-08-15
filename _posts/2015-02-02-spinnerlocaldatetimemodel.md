@@ -7,6 +7,7 @@ tags: [JSpinner, SpinnerModel, LocalDateTime]
 author: aterai
 pubdate: 2015-02-02T00:12:04+09:00
 description: DateやCalendarなどを使用するSpinnerDateModelの代わりに、JDK 8で導入されたLocalDateTimeなどを使用するSpinnerModelを作成して、JSpinnerで日付を選択します。
+image: https://lh4.googleusercontent.com/-eqirUqK4YWc/VM4--ZB0j_I/AAAAAAAANwI/rsoFU67UgI8/s800/SpinnerLocalDateTimeModel.png
 comments: true
 ---
 ## 概要

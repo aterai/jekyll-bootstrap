@@ -7,6 +7,7 @@ tags: [JComboBox, JButton, ArrowButton, LayoutManager, JTextField, PopupMenuList
 author: aterai
 pubdate: 2010-09-20T12:16:36+09:00
 description: JComboBoxが使用するレイアウトを変更して、検索欄風のコンポーネントを作成します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTSqLxrLoI/AAAAAAAAAjI/M2OZzogy3-Q/s800/SearchBarLayoutComboBox.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2010/09/searchbar-jcombobox.html
     lang: en

@@ -7,6 +7,7 @@ tags: [JFileChooser, PlacesBar]
 author: aterai
 pubdate: 2009-11-16T19:20:02+09:00
 description: JFileChooser(WindowsLookAndFeel)のPlacesBarを非表示にします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQZdQnWAI/AAAAAAAAAfg/Cne_bKrk8BU/s800/NoPlacesBarFileChooser.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JFrame, JRootPane, JLayeredPane, JInternalFrame, MetalLookAndFeel]
 author: aterai
 pubdate: 2013-06-17T02:37:17+09:00
 description: JFrame自体の装飾を削除し、JRootPaneにリサイズのためのウィンドウ装飾(透明)を設定します。
+image: https://lh3.googleusercontent.com/-6jloCHHvTmw/Ub30100G84I/AAAAAAAABuM/AHxMNa5jyB0/s800/WindowDecorationStyle.png
 comments: true
 ---
 ## 概要

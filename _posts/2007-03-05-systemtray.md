@@ -7,6 +7,7 @@ tags: [SystemTray, Icon]
 author: aterai
 pubdate: 2007-03-05
 description: JDK 6で追加された機能を使って、SystemTrayにアイコンを表示します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUJeisovI/AAAAAAAAAlk/zvAoP96Ntcs/s800/SystemTray.png
 comments: true
 ---
 ## 概要

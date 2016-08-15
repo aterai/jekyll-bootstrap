@@ -7,6 +7,7 @@ tags: [MouseWheelListener, JSpinner, JSlider]
 author: aterai
 pubdate: 2004-03-08T08:53:34+09:00
 description: JSpinnerやJSliderの値をマウスホイールを使って変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQH9EVaHI/AAAAAAAAAfE/Dv-UnuISmXM/s800/MouseWheel.png
 comments: true
 ---
 ## 概要

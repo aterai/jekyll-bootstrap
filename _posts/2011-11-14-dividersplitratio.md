@@ -7,6 +7,7 @@ tags: [JSplitPane, JFrame, Divider]
 author: aterai
 pubdate: 2011-11-14T11:39:46+09:00
 description: JFrameを最大化した後でJSplitPaneのDividerの位置を変更する場合のテストをします。
+image: https://lh3.googleusercontent.com/-w5-YQDwojUs/TsB7EdoVlLI/AAAAAAAABEw/p_PcxHKKeRk/s800/DividerSplitRatio.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [Font, Shape, Graphics, TextLayout, GlyphVector, JComponent]
 author: aterai
 pubdate: 2011-09-26T17:16:34+09:00
 description: クリップを設定することで描画範囲を制限し、文字列の内部を異なる色で修飾します。
+image: https://lh5.googleusercontent.com/-1UyXoR9Qkyo/ToAw2259JmI/AAAAAAAABC4/xHq03u7R3v4/s800/LineSplittingLabel.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JCheckBox, JComboBox, UIManager, Html, JLabel, JButton]
 author: aterai
 pubdate: 2008-10-06T14:59:33+09:00
 description: JCheckBoxやJComboBoxなどのコンポーネントが無効な状態になった場合の文字色を変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLDPDIq4I/AAAAAAAAAW8/jt2A5D74G04/s800/DisabledTextColor.png
 comments: true
 ---
 ## 概要

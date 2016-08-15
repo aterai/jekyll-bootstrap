@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, JLabel, JPanel]
 author: aterai
 pubdate: 2010-12-20T15:44:39+09:00
 description: JTableのセル内に文字列を二行分だけ表示し、あふれる場合は...で省略します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQ77KlEsZJI/AAAAAAAAAuE/mc9fcp-ZmBU/s800/TwoRowsCellRenderer.png
 comments: true
 ---
 ## 概要

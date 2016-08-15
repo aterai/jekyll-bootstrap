@@ -7,6 +7,7 @@ tags: [JTextPane, StyledDocument, Element, Highlight]
 author: aterai
 pubdate: 2009-09-21T02:07:00+09:00
 description: JTextPaneでキーワードのSyntax Highlightを行います。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTAw3RBeI/AAAAAAAAAjs/LtUs6l9UpZo/s800/SimpleSyntaxHighlight.png
 comments: true
 ---
 ## 概要

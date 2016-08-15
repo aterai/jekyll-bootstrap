@@ -7,6 +7,7 @@ tags: [ClassLoader, Resource, URL]
 author: aterai
 pubdate: 2006-05-22T09:59:23+09:00
 description: クラスパスからのエントリ(相対パス風)を使って、ClassLoaderからURLを取得します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTI-UTFN-I/AAAAAAAAATo/6sdQoVO0Kc4/s800/ClassLoader.png
 comments: true
 ---
 ## 概要

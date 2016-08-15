@@ -7,6 +7,7 @@ tags: [EventListener, EventListenerList]
 author: aterai
 pubdate: 2004-01-26
 description: イベント(イベントオブジェクト、イベントリスナー、イベントソース)を新たに作成し、これを使用します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMNwgwo5I/AAAAAAAAAY0/lpZGrcgRE8g/s800/EventListener.png
 comments: true
 ---
 ## 概要

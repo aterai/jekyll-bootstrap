@@ -7,6 +7,7 @@ tags: [JSpinner, ArrowButton, LayoutManager]
 author: aterai
 pubdate: 2011-01-24T14:15:43+09:00
 description: JSpinnerのレイアウトを変更して、矢印ボタンを左右に配置します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TT0IT-0k7EI/AAAAAAAAAzA/8LBM7qgDVvw/s800/SpinnerButtonLayout.png
 comments: true
 ---
 ## 概要

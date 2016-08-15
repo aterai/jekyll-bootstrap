@@ -7,6 +7,7 @@ tags: [JScrollBar, JScrollPane, BorderLayout]
 author: aterai
 pubdate: 2007-01-08T14:26:45+09:00
 description: JScrollBarの配置位置を、JScrollPaneの左側、上側に変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPG13yZbI/AAAAAAAAAdc/1a4aTgyblRo/s800/LeftScrollBar.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JList, ListCellRenderer, ActionMap]
 author: aterai
 pubdate: 2005-05-30
 description: JListの任意のItemを選択不可にするようなレンダラーを設定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLAYVmo3I/AAAAAAAAAW4/3MUtTm4ixyo/s800/DisabledItem.png
 comments: true
 ---
 ## 概要

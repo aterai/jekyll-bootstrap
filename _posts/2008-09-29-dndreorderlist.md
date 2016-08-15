@@ -7,6 +7,7 @@ tags: [JList, TransferHandler, DragAndDrop]
 author: aterai
 pubdate: 2008-09-29T13:33:14+09:00
 description: JListのアイテムを複数選択し、ドラッグ＆ドロップで並べ替えを可能にするTransferHandlerを作成します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLeSCyHuI/AAAAAAAAAXo/v2OLiSPdgEY/s800/DnDReorderList.png
 comments: true
 ---
 ## 概要

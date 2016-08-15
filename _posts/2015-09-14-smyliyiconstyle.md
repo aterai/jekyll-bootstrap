@@ -7,6 +7,7 @@ tags: [JTextPane, Icon, StyledDocument, StyleContext]
 author: aterai
 pubdate: 2015-09-14T03:54:53+09:00
 description: JTextPaneに入力した文字を顔文字アイコンに変換して表示します。
+image: https://lh3.googleusercontent.com/-NLmesRy01ro/VfXFpQeOQSI/AAAAAAAAOBo/L7P-9nfFeNk/s800-Ic42/SmyliyIconStyle.png
 comments: true
 ---
 ## 概要

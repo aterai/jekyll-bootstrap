@@ -7,6 +7,7 @@ tags: [JLabel, Html, JEditorPane, HTMLEditorKit, StyleSheet]
 author: aterai
 pubdate: 2015-03-23T00:19:09+09:00
 description: JLabelやJEditorPaneで表示されるHtmlアンカータグのデフォルト文字色を変更するテストを行います。
+image: https://lh4.googleusercontent.com/-tilzZhgELFk/VQ7ZWC4xblI/AAAAAAAAN1E/bR7KsSRQuRg/s800/AnchorTextColor.png
 comments: true
 ---
 ## 概要

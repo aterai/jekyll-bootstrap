@@ -7,6 +7,7 @@ tags: [AffineTransform, Graphics, JPanel, MouseListener, MouseMotionListener, Mo
 author: aterai
 pubdate: 2014-04-21T00:28:49+09:00
 description: JPanelに表示した画像にAffineTransformによる変換を適用して、マウスを使った拡大・縮小・移動を実行します。
+image: https://lh3.googleusercontent.com/-c5Y9hCoRQbU/U1PhhnitgFI/AAAAAAAACD0/ZXIcyPywcr0/s800/ZoomingAndPanning.png
 comments: true
 ---
 ## 概要

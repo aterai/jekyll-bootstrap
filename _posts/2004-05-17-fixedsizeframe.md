@@ -7,6 +7,7 @@ tags: [JFrame, JDialog]
 author: aterai
 pubdate: 2004-05-17
 description: JFrameやJDialogのサイズを固定し、変更不可にします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTM4ZlDyXI/AAAAAAAAAZ4/xXHwfOJP7p0/s800/FixedSizeFrame.png
 comments: true
 ---
 ## 概要

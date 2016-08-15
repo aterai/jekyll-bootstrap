@@ -7,6 +7,7 @@ tags: [JTree, TreeCellRenderer]
 author: aterai
 pubdate: 2010-10-18T14:37:59+09:00
 description: JTreeを検索し、TreeCellRendererを使ってノードをハイライトします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWIqTzfbI/AAAAAAAAAow/n7eIy_ax-zY/s800/TreeNodeHighlightSearch.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2010/10/jtree-node-highlight-search.html
     lang: en

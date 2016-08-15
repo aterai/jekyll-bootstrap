@@ -7,6 +7,7 @@ tags: [JTable, DefaultTableModel]
 author: aterai
 pubdate: 2005-04-11
 description: JTableのモデルから、カラムヘッダの状態は変更せず、すべての行を一括で削除します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJISEHcVI/AAAAAAAAAT4/syR1Ucd5n5o/s800/ClearTable.png
 comments: true
 ---
 ## 概要

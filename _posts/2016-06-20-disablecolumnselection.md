@@ -7,6 +7,7 @@ tags: [JTable, ListSelectionModel]
 author: aterai
 pubdate: 2016-06-20T00:15:58+09:00
 description: JTableの指定した列を編集は可能、ただし選択することができなくなるように設定します。
+image: https://lh3.googleusercontent.com/-goXZsRlvEdI/V2a1zMod1iI/AAAAAAAAOcA/ZX8_9YIkBwYS45vkDbZRBa6wf2PyjUS1QCCo/s800/DisableColumnSelection.png
 comments: true
 ---
 ## 概要

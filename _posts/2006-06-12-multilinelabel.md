@@ -7,6 +7,7 @@ tags: [JLabel, JTextArea, JTextPane]
 author: aterai
 pubdate: 2006-06-12
 description: JTextPane、JTextArea、JLabelを使った複数行のラベルをテストします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQPZi7whI/AAAAAAAAAfQ/ynZxQGkn3_A/s800/MultiLineLabel.png
 comments: true
 ---
 ## 概要

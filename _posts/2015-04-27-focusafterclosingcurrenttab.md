@@ -7,6 +7,7 @@ tags: [JTabbedPane]
 author: aterai
 pubdate: 2015-04-27T00:35:47+09:00
 description: JTabbedPaneでタブ選択の履歴を保存し、これを参照して現在選択されているタブを閉じた後に選択するタブを決定します。
+image: https://lh3.googleusercontent.com/-_mItwH72EqU/VTy9MH6jOJI/AAAAAAAAN3A/rVSueixCerw/s800/FocusAfterClosingCurrentTab.png
 comments: true
 ---
 ## 概要

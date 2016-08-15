@@ -7,6 +7,7 @@ tags: [BufferedImage, WritableRaster, DataBuffer]
 author: aterai
 pubdate: 2014-11-24T00:02:03+09:00
 description: 2つの画像からそれぞれピクセル配列を取得して比較を行い、完全に一致するピクセルのアルファ値を下げることで違いを強調表示します。
+image: https://lh3.googleusercontent.com/-wz-vsrJ2L3Y/VHHvorDnjaI/AAAAAAAANp0/i3riWECvTsA/s800/ComparisonDifferenceImages.png
 comments: true
 ---
 ## 概要

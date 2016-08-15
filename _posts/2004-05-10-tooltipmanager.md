@@ -7,6 +7,7 @@ tags: [ToolTipManager, JToolTip]
 author: aterai
 pubdate: 2004-05-10T06:09:52+09:00
 description: ツールチップ(ツールヒント)表示の有無をToolTipManagerで切り替えます。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVq857V2I/AAAAAAAAAoA/yRQeWtxd-78/s800/ToolTipManager.png
 comments: true
 ---
 ## 概要

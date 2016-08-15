@@ -7,6 +7,7 @@ tags: [JComboBox, JList]
 author: aterai
 pubdate: 2013-02-04T00:43:54+09:00
 description: JComboBoxのドロップダウンリストでスクロールバーを使用しないで表示可能な項目数を変更します。
+image: https://lh4.googleusercontent.com/-6YdIN-49R8M/UQ6Cpy8yQdI/AAAAAAAABdE/-6_SS6KCdDE/s800/MaximumRowCount.png
 comments: true
 ---
 ## 概要

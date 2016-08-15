@@ -7,6 +7,7 @@ tags: [JSpinner, SpinnerDateModel, FocusListener, Calendar]
 author: aterai
 pubdate: 2011-08-22T15:46:11+09:00
 description: JSpinnerに、下限値を設定したSpinnerDateModelを設定して、日付の変更をテストします。
+image: https://lh5.googleusercontent.com/-llHXaOVDQbQ/TlH5yRAODSI/AAAAAAAABBE/XsSUtm7J_U0/s800/SpinnerDateModel.png
 comments: true
 ---
 ## 概要

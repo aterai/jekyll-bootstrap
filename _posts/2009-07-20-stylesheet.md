@@ -7,6 +7,7 @@ tags: [JEditorPane, StyleSheet, HTMLEditorKit]
 author: aterai
 pubdate: 2009-07-20T14:20:10+09:00
 description: JEditorPaneにStyleSheetを追加したHTMLEditorKitを設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTT6cwbhCI/AAAAAAAAAlM/PsSYnlumJJg/s800/StyleSheet.png
 comments: true
 ---
 ## 概要

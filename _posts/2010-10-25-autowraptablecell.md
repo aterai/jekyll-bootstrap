@@ -7,6 +7,7 @@ tags: [JTable, JTextArea, TableCellRenderer]
 author: aterai
 pubdate: 2010-10-25T14:24:03+09:00
 description: JTableのセルの高さを、文字列の折り返しに応じて自動調整します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH4TWFB1I/AAAAAAAAAR4/8C89wEJ8EUA/s800/AutoWrapTableCell.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JLayer, DragAndDrop, BoxLayout]
 author: aterai
 pubdate: 2015-04-06T00:00:32+09:00
 description: JPanel内に配置したコンポーネントの並べ替えで、ドラッグ中のコンポーネントをJLayerで描画します。
+image: https://lh3.googleusercontent.com/-gW9pryNmoYY/VSFFArmXElI/AAAAAAAAN2A/CYZqhoCR0EE/s800/ReorderingLayer.png
 comments: true
 ---
 ## 概要

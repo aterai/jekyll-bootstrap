@@ -7,6 +7,7 @@ tags: [JTextPane, StyledDocument, Style, Highlighter, Matcher, Pattern]
 author: aterai
 pubdate: 2014-11-10T00:02:14+09:00
 description: Highlighter.HighlightPainterを使用したハイライト表示では文字色を変更することが出来ないので、JTextPaneにStyleを適用してこれを同時に行います。
+image: https://lh6.googleusercontent.com/-fNEZKm4idgc/VF96YuCU_UI/AAAAAAAANpM/7YVQ1GL5sjw/s800/HighlightTextForeground.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JEditorPane, Html, HyperlinkListener]
 author: aterai
 pubdate: 2006-02-06T14:18:59+09:00
 description: ラベル上のURLがクリックされるとBrowserを起動します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTIRWyBTSI/AAAAAAAAASg/pT9GD2uz8BI/s800/BrowserLauncher.png
 comments: true
 ---
 ## 概要

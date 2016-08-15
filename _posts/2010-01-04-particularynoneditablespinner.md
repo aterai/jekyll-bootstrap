@@ -7,6 +7,7 @@ tags: [JSpinner, Border]
 author: aterai
 pubdate: 2010-01-04T15:04:02+09:00
 description: JSpinnerのテキストフィールド内に選択や編集ができない文字列を追加します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQ5w9QfII/AAAAAAAAAgU/iBrVcxeaFS4/s800/ParticularyNonEditableSpinner.png
 comments: true
 ---
 ## 概要

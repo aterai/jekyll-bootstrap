@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, JComboBox, DefaultComboBoxModel]
 author: aterai
 pubdate: 2016-07-25T00:38:48+09:00
 description: JTableのセルエディタとして編集可能なJComboBoxを適用し、セルの値の追加などを行います。
+image: https://lh3.googleusercontent.com/-qEx3-yOwZzY/V5Td7p-XE0I/AAAAAAAAOeI/Ac2sgZB4y1E7pW5x33cb_KxNhv1x9AN5QCCo/s800/EditableComboCellEditor.png
 comments: true
 ---
 ## 概要

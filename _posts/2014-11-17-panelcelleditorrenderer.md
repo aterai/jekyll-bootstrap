@@ -7,6 +7,7 @@ tags: [JTable, TableCellEditor, TableCellRenderer, JPanel, JButton, JSpinner]
 author: aterai
 pubdate: 2014-11-17T00:00:08+09:00
 description: JTableのCellEditor、CellRendererにJPanelを使用することで、内部に複数コンポーネントを配置したり、セル内の余白を追加します。
+image: https://lh4.googleusercontent.com/-_MCc8pkoFGY/VGitX9B0RsI/AAAAAAAANpg/zAG38GESdsU/s800/PanelCellEditorRenderer.png
 comments: true
 ---
 ## 概要

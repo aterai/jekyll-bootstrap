@@ -7,6 +7,7 @@ tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, TreeModelListener]
 author: aterai
 pubdate: 2012-02-06T14:38:59+09:00
 description: JTreeのすべてのノードに編集可能なJCheckBoxを追加します。
+image: https://lh4.googleusercontent.com/-DK6aW3VNikg/TygxL3j8UoI/AAAAAAAABIw/6_9FyPe4v7U/s800/CheckBoxNodeEditor.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2012/02/jcheckbox-node-jtree.html
     lang: en

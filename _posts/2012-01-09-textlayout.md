@@ -7,6 +7,7 @@ tags: [Font, TextLayout, GlyphVector, LineMetrics, Graphics]
 author: aterai
 pubdate: 2012-01-09T13:16:40+09:00
 description: TextLayoutからFontのAscent、Descent、Leadingなどのメトリック情報を取得して描画します。
+image: https://lh4.googleusercontent.com/--iErOVV0RYk/TwpnJGdl4OI/AAAAAAAABHs/pHLpQWbpTWg/s800/TextLayout.png
 comments: true
 ---
 ## 概要

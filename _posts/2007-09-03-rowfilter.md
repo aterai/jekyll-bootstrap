@@ -7,6 +7,7 @@ tags: [JTable, TableRowSorter, RowFilter]
 author: aterai
 pubdate: 2007-09-03T15:45:16+09:00
 description: JDK 6で導入されたTableRowSorterにRowFilterを設定して、行のフィルタリングを行います。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTST-FvjRI/AAAAAAAAAik/ZbU9nuVVCiI/s800/RowFilter.png
 comments: true
 ---
 ## 概要

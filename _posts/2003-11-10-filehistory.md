@@ -7,6 +7,7 @@ tags: [JMenu, File]
 author: aterai
 pubdate: 2003-11-10
 description: JMenuに、「最近使ったファイル(F)」を履歴として追加していきます。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMffElRbI/AAAAAAAAAZQ/1d47Mop5D-0/s800/FileHistory.png
 comments: true
 ---
 ## 概要

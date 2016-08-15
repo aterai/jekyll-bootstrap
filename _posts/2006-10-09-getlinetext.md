@@ -7,6 +7,7 @@ tags: [JTextArea, StringTokenizer, LineNumberReader]
 author: aterai
 pubdate: 2006-10-09
 description: JTextAreaなどのテキストコンポーネントから一行ずつ文字列を取り出してそれを処理します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTNWn74dWI/AAAAAAAAAao/pNdeF8CSOfM/s800/GetLineText.png
 comments: true
 ---
 ## 概要

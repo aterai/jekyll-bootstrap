@@ -7,6 +7,7 @@ tags: [JOptionPane, Timer, HierarchyListener, JLabel]
 author: aterai
 pubdate: 2013-09-02T00:27:47+09:00
 description: JOptionPaneにカウントダウンと自動クローズを行うためのJLabelを追加します。
+image: https://lh6.googleusercontent.com/-NvrpIdRXy8M/UiMOJmS8OMI/AAAAAAAABzg/6QK49B0s-NE/s800/AutomaticallyCloseDialog.png
 comments: true
 ---
 ## 概要

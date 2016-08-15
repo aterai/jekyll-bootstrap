@@ -7,6 +7,7 @@ tags: [JSlider]
 author: aterai
 pubdate: 2014-02-10T00:01:53+09:00
 description: JSliderの値や目盛りの表示などの順序を反転します。
+image: https://lh6.googleusercontent.com/-qI_Mv8LOhi8/UvdK3TThMiI/AAAAAAAAB_0/xQR9OJ1Z8xY/s800/InvertedSlider.png
 comments: true
 ---
 ## 概要

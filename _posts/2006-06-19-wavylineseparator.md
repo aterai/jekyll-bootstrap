@@ -7,6 +7,7 @@ tags: [JSeparator, Icon]
 author: aterai
 pubdate: 2006-06-19T06:28:53+09:00
 description: Iconで波パターンを作成し、これを順番に並べて波線を描画するJSeparatorを作成します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWkeY23gI/AAAAAAAAApc/r6W1VFeeAYA/s800/WavyLineSeparator.png
 comments: true
 ---
 ## 概要

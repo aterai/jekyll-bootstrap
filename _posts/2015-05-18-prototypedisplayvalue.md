@@ -7,6 +7,7 @@ tags: [JComboBox, ListCellRenderer]
 author: aterai
 pubdate: 2015-05-18T00:01:40+09:00
 description: JComboBoxがそのセルサイズを決定するために使用するプロトタイプ値を設定します。
+image: https://lh3.googleusercontent.com/-DafUFitik9w/VVidadY7TNI/AAAAAAAAN4U/D40YKz8mMUY/s800/PrototypeDisplayValue.png
 comments: true
 ---
 ## 概要

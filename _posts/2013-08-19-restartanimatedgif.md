@@ -7,6 +7,7 @@ tags: [ImageIcon, Animation, JButton, JLabel]
 author: aterai
 pubdate: 2013-08-19T00:06:01+09:00
 description: JButtonなどのコンポーネントに設定したAnimatedGifのリソースを一旦解放して最初から再生します。
+image: https://lh4.googleusercontent.com/-qShu8SKEKus/UhDUybKOCYI/AAAAAAAAByg/QRDcWyIqcmU/s800/RestartAnimatedGif.png
 comments: true
 ---
 ## 概要

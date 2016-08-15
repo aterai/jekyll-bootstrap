@@ -7,6 +7,7 @@ tags: [JTabbedPane, OverlayLayout, JButton, UIManager]
 author: aterai
 pubdate: 2008-03-03T14:07:59+09:00
 description: JTabbedPaneのタブエリアに余白を作成し、そこにOverlayLayoutを使ってJButtonを配置します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTUOdUT3wI/AAAAAAAAAls/N2JYE_Dcr_Y/s800/TabbedPaneWithButton.png
 comments: true
 ---
 ## 概要

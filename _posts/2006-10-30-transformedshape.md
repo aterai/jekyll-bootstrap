@@ -7,6 +7,7 @@ tags: [Font, Shape, TextLayout, Animation, AffineTransform]
 author: aterai
 pubdate: 2006-10-30T12:57:51+09:00
 description: 文字のアウトラインを取得して、これを回転してみます。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVtRPTfJI/AAAAAAAAAoE/Qiy0jcMt_l0/s800/TransformedShape.png
 comments: true
 ---
 ## 概要

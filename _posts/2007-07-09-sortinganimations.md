@@ -7,6 +7,7 @@ tags: [JComboBox, Enum, Animation, SwingWorker]
 author: aterai
 pubdate: 2007-07-09T14:59:22+09:00
 description: JComboBoxのモデルとしてenumを使用します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTcZXYeSI/AAAAAAAAAkY/_frjM9wSJsc/s800/SortingAnimations.png
 comments: true
 ---
 ## 概要

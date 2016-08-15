@@ -7,6 +7,7 @@ tags: [JEditorPane, HTMLEditorKit, HTML, ImageIO, Graphics]
 author: aterai
 pubdate: 2014-12-01T00:02:34+09:00
 description: JEditorPaneに画像付きのHTMLを読み込み、描画が完了した段階で全体のスクリーンショットを撮る方法をテストします。
+image: https://lh5.googleusercontent.com/-JPZBF-3MA9o/VHskydE02OI/AAAAAAAANrs/7WXsb2t0ahg/s800/LoadsSynchronously.png
 comments: true
 ---
 ## 概要

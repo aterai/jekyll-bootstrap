@@ -7,6 +7,7 @@ tags: [JTabbedPane, JPopupMenu, JLabel]
 author: aterai
 pubdate: 2011-12-05T14:18:41+09:00
 description: JTabbedPaneにJPopupMenuを追加して、指定したタブのタイトルと位置を変更し、タブの固定を行います。
+image: https://lh4.googleusercontent.com/-QqKPFV0ZzIc/TttWYFUshII/AAAAAAAABFk/6HcCBI_bg-0/s800/PinTabbedPane.png
 comments: true
 ---
 ## 概要

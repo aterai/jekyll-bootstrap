@@ -7,6 +7,7 @@ tags: [JTextPane, JComponent, Baseline]
 author: aterai
 pubdate: 2012-09-03T06:06:39+09:00
 description: JTextPaneに追加するコンポーネントのベースラインが他の文字列などとを揃うように設定します。
+image: https://lh3.googleusercontent.com/-JveOiooEbAg/UEPEjv1VW2I/AAAAAAAABR4/qts-97h_JuA/s800/InsertComponentBaseline.png
 comments: true
 ---
 ## 概要

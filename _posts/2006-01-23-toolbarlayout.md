@@ -7,6 +7,7 @@ tags: [JToolBar, JMenuBar, BoxLayout, JButton, Focus]
 author: aterai
 pubdate: 2006-01-23T14:20:11+09:00
 description: JToolBarでアイコンボタンを右寄せ、下寄せで表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVb-HPZjI/AAAAAAAAAno/dMILsHzlipk/s800/ToolBarLayout.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JSplitPane, Divider, PropertyChangeListener]
 author: aterai
 pubdate: 2010-07-12T15:30:54+09:00
 description: 二つのJSplitPaneのディバイダで、移動の同期と連続的な再描画を行います。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKL-SYs6I/AAAAAAAAAVk/pXv9HlMSLf0/s800/ContinuousLayout.png
 comments: true
 ---
 ## 概要

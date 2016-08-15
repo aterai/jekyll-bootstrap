@@ -7,6 +7,7 @@ tags: [JTable, JList, GlassPane]
 author: aterai
 pubdate: 2006-08-28T00:57:26+09:00
 description: 通常のセルエディタではなく、セルより大きなアイコンを選択する為のセルエディタを使用してJTableを編集します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTO6b-zTJI/AAAAAAAAAdI/UAROdzzun4k/s800/LargeCellEditor.png
 comments: true
 ---
 ## 概要

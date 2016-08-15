@@ -7,6 +7,7 @@ tags: [JMenu, JMenuItem, JPopupMenu, Translucent]
 author: aterai
 pubdate: 2012-10-22T18:38:06+09:00
 description: JPopupMenuの親のJWindow、JMenuやJMenuItemなどを透明にして、JPopupMenuを半透明にします。
+image: https://lh5.googleusercontent.com/-MKRZgWcSrRw/UIT3NRGfX9I/AAAAAAAABUk/fOYdfJmIt4g/s800/TranslucentSubMenu.png
 comments: true
 ---
 ## 概要

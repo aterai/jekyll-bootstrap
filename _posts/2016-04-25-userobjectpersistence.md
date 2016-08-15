@@ -7,6 +7,7 @@ tags: [JTree, JCheckBox, XMLEncoder, XMLDecoder]
 author: aterai
 pubdate: 2016-04-25T00:07:44+09:00
 description: JTreeのノードに追加したJCheckBoxのチェック状態など保持するUserObjectを永続化可能になるよう設定し、その保存と復元を行います。
+image: https://lh3.googleusercontent.com/-Foeg7fF4Uj4/VxzbvHpNTUI/AAAAAAAAOTY/LnDkJRi6CtQXJcQAGJ2boc27LJrY_lT-QCCo/s800/UserObjectPersistence.png
 comments: true
 ---
 ## 概要

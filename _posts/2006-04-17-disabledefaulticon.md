@@ -7,6 +7,7 @@ tags: [JFrame, Icon]
 author: aterai
 pubdate: 2006-04-17T12:43:57+09:00
 description: JFrameなどのタイトルバーにあるアイコンを非表示にします。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK49Ua_nI/AAAAAAAAAWs/Ipb_maWCOgY/s800/DisableDefaultIcon.png
 comments: true
 ---
 ## 概要

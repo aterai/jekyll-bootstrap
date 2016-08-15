@@ -7,6 +7,7 @@ tags: [AffineTransformOp, BufferedImage, AffineTransform]
 author: aterai
 pubdate: 2010-01-11T23:59:17+09:00
 description: AffineTransformOpなどを使って、画像の上下反転、左右反転を行います。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTHczsN2NI/AAAAAAAAARM/D8gpa0-KfEI/s800/AffineTransformOp.png
 comments: true
 ---
 ## 概要

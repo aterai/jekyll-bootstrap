@@ -7,6 +7,7 @@ tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor]
 author: aterai
 pubdate: 2011-03-21T16:05:37+09:00
 description: JTreeの葉ノードを編集可能なJCheckBoxにします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TYb2-BFsTHI/AAAAAAAAA4U/Fs8-t9x9XSw/s800/CheckBoxNodeTree.png
 comments: true
 ---
 ## 概要

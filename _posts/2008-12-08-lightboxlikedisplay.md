@@ -7,6 +7,7 @@ tags: [GlassPane, JFrame, Animation, ImageIcon]
 author: aterai
 pubdate: 2008-12-08T13:07:38+09:00
 description: GlassPaneを使用して、Lightbox風にアニメーションしながら画像を表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTPJaQROVI/AAAAAAAAAdg/MXDWfchqmso/s800/LightboxLikeDisplay.png
 comments: true
 ---
 ## 概要

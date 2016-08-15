@@ -7,6 +7,7 @@ tags: [OverlayLayout, LayoutManager, JButton]
 author: aterai
 pubdate: 2008-01-14T17:09:44+09:00
 description: OverlayLayoutを使用し、JButtonを重ねて配置します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQqzbG85I/AAAAAAAAAf8/GAYWzSVrHvg/s800/OverlayLayout.png
 comments: true
 ---
 ## 概要

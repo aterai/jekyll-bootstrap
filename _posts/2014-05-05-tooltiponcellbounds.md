@@ -7,6 +7,7 @@ tags: [JList, JToolTip, ListCellRenderer]
 author: aterai
 pubdate: 2014-05-05T01:10:29+09:00
 description: JListのセル内に文字列が収まらない場合のみ、その上にToolTipを重ねて表示します。
+image: https://lh3.googleusercontent.com/-KLOWyeZG-zU/U2Zif591XkI/AAAAAAAACE0/JDZZwAWkY50/s800/ToolTipOnCellBounds.png
 comments: true
 ---
 ## 概要

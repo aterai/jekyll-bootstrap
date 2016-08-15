@@ -7,6 +7,7 @@ tags: [JTree]
 author: aterai
 pubdate: 2015-02-09T00:08:57+09:00
 description: JTreeのルートノードにノードの展開と折り畳みやその状態を表示するアイコン(ルートハンドル)を表示するかどうかを切り替えます。
+image: https://lh3.googleusercontent.com/-UsJgMi0D1h0/VNd47dUqy8I/AAAAAAAANwc/NyIfxKP0SVw/s800/ShowsRootHandles.png
 comments: true
 ---
 ## 概要

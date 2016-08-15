@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableColumn]
 author: aterai
 pubdate: 2014-05-26T00:01:15+09:00
 description: JTableがリサイズされた場合、最後にあるTableColumnがその幅の変更を吸収するように設定します。
+image: https://lh4.googleusercontent.com/-uhbVwRqsa2g/U4HyPhrI8PI/AAAAAAAACF8/OJXWaFVxavE/s800/ResizingColumnAndTable.png
 comments: true
 ---
 ## 概要

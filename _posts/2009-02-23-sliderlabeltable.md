@@ -7,6 +7,7 @@ tags: [JSlider, JLabel, Icon, JButton]
 author: aterai
 pubdate: 2009-02-23T12:08:35+09:00
 description: JSliderの目盛にJComponentを表示することで、アイコンを追加したり、文字列の色などを変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTNRK4g8I/AAAAAAAAAkA/dn8dNaWNmxM/s800/SliderLabelTable.png
 comments: true
 ---
 ## 概要

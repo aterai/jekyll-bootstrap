@@ -7,6 +7,7 @@ tags: [JScrollPane, JViewport, Animation, JTextArea]
 author: aterai
 pubdate: 2007-08-13T13:01:23+09:00
 description: SmoothScrollアニメーション有りでJTextAreaの任意の行まで移動します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTSaxFSzI/AAAAAAAAAkI/KtedLqwCXBY/s800/SmoothScroll.png
 comments: true
 ---
 ## 概要

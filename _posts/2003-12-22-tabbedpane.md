@@ -7,6 +7,7 @@ tags: [JTabbedPane, JPopupMenu]
 author: aterai
 pubdate: 2003-12-22
 description: ポップアップメニューを使って、JTabbedPaneにタブを追加、削除します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTULwZD83I/AAAAAAAAAlo/NwNuK8prCFY/s800/TabbedPane.png
 comments: true
 ---
 ## 概要

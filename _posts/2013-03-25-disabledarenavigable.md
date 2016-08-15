@@ -7,6 +7,7 @@ tags: [JMenuItem, UIManager, LookAndFeel]
 author: aterai
 pubdate: 2013-03-25T00:06:25+09:00
 description: DisabledなJMenuItemがハイライト可能かどうかをLookAndFeelごとにテストします。
+image: https://lh4.googleusercontent.com/--XCIC-Dhgwk/UU8M_ixmZeI/AAAAAAAABoU/aXonTNvOs0A/s800/DisabledAreNavigable.png
 comments: true
 ---
 ## 概要

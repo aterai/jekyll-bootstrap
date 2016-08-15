@@ -7,6 +7,7 @@ tags: [JTextPane, StyledDocument, JScrollPane, JTextField, KeyboardFocusManager,
 author: aterai
 pubdate: 2013-05-06T00:34:13+09:00
 description: JTextPaneの行数を一行のみに制限して、文字色などのスタイル付けが可能なJTextFieldとして使用します。
+image: https://lh4.googleusercontent.com/-jckifA3Ym6c/UYZlsvWPTqI/AAAAAAAABrY/ERGHE6rtaPo/s800/OneLineTextPane.png
 comments: true
 ---
 ## 概要

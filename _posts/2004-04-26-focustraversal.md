@@ -7,6 +7,7 @@ tags: [FocusTraversalPolicy, Focus]
 author: aterai
 pubdate: 2004-04-26
 description: FocusTraversalPolicyを使って、KBD{Tab}キーなどによるフォーカスの移動を制御します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNE9BAwqI/AAAAAAAAAaM/57d2rzX7ixk/s800/FocusTraversal.png
 comments: true
 ---
 ## 概要

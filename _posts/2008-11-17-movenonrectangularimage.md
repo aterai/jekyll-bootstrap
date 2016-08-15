@@ -7,6 +7,7 @@ tags: [JComponent, JLabel, BufferedImage, DragAndDrop]
 author: aterai
 pubdate: 2008-11-17T16:07:53+09:00
 description: マウスカーソルに反応するコンポーネントの領域をJLabelに設定した画像アイコンの不透明領域に合わせて変更します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQKdiDk4I/AAAAAAAAAfI/tb322r8ngL0/s800/MoveNonRectangularImage.png
 comments: true
 ---
 ## 概要

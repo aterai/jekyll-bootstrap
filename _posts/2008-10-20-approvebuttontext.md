@@ -7,6 +7,7 @@ tags: [JFileChooser, UIManager, Mnemonic]
 author: aterai
 pubdate: 2008-10-20T14:22:27+09:00
 description: JFileChooserのボタンテキストを変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTHw6_sLrI/AAAAAAAAARs/5fsN5G2p15U/s800/ApproveButtonText.png
 comments: true
 ---
 ## 概要

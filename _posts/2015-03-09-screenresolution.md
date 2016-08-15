@@ -7,6 +7,7 @@ tags: [Toolkit, UIManager, Font, JPanel, JTree, JTable]
 author: aterai
 pubdate: 2015-03-09T09:59:02+09:00
 description: ディスプレイの解像度の設定によってパネルの初期サイズ、フォントサイズ、行の高さなどを変更するテストを行います。
+image: https://lh3.googleusercontent.com/-Ckc4ZMaD6-8/VPzorX2t8MI/AAAAAAAAN0A/XSE6tpiT92A/s800/ScreenResolution.png
 comments: true
 ---
 ## 概要

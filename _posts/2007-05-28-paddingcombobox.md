@@ -7,6 +7,7 @@ tags: [JComboBox, Border, LookAndFeel, JTextField]
 author: aterai
 pubdate: 2007-05-28T05:42:18+09:00
 description: JComboBoxのエディタなどに内余白を設定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQv1E_b9I/AAAAAAAAAgE/nxvnwwFoDyU/s800/PaddingComboBox.png
 comments: true
 ---
 ## 概要

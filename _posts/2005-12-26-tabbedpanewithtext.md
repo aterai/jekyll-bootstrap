@@ -7,6 +7,7 @@ tags: [JTabbedPane, FontMetrics, JLayer]
 author: aterai
 pubdate: 2005-12-26T12:36:53+09:00
 description: JTabbedPaneの右側の余白に文字列を表示します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUTbAqf_I/AAAAAAAAAl0/APOrWdnvDko/s800/TabbedPaneWithText.png
 comments: true
 ---
 ## 概要

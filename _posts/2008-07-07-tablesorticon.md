@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, Icon, UIManager]
 author: aterai
 pubdate: 2008-07-07T11:40:12+09:00
 description: JTableのソートアイコンを非表示にしたり、別の画像に変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTUsaUYVkI/AAAAAAAAAmc/34Qz14LqOGc/s800/TableSortIcon.png
 comments: true
 ---
 ## 概要

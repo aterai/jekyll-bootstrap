@@ -7,6 +7,7 @@ tags: [JTabbedPane, UIManager, LookAndFeel]
 author: aterai
 pubdate: 2016-03-14T00:04:15+09:00
 description: JTabbedPaneのタブ、タブエリア、コンテンツエリアなどを半透明に設定します。
+image: https://lh3.googleusercontent.com/-GLtzHl48JaY/VuWAq1hSxSI/AAAAAAAAOQk/HbrQluUnNH8_5fTM2gOIHhcoJMU21hmEgCCo/s800-Ic42/TranslucentTabbedPane.png
 comments: true
 ---
 ## 概要

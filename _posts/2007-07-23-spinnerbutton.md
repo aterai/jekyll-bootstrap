@@ -7,6 +7,7 @@ tags: [JSpinner, JButton, JToolTip]
 author: aterai
 pubdate: 2007-07-23T15:06:56+09:00
 description: JSpinnerの上下ボタンにJToolTipを付けます。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTTmW4UoMI/AAAAAAAAAks/SXmtS71QSg0/s800/SpinnerButton.png
 comments: true
 ---
 ## 概要

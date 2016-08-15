@@ -7,6 +7,7 @@ tags: [JFileChooser, FilePane]
 author: aterai
 pubdate: 2011-01-10T17:02:55+09:00
 description: JFileChooserを開いたときのデフォルトをリストではなく詳細に変更します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TSq77M-soeI/AAAAAAAAAxg/0nnen-n-cAY/s800/DetailsViewFileChooser.png
 comments: true
 ---
 ## 概要

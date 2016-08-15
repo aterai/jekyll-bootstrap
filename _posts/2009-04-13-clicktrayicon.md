@@ -7,6 +7,7 @@ tags: [TrayIcon, SystemTray, MouseListener, JFrame]
 author: aterai
 pubdate: 2009-04-13T14:23:01+09:00
 description: TrayIconをダブルクリックした場合フレームを表示、シングルクリックした場合はフレームを前面に表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTJK3dhHYI/AAAAAAAAAT8/1MUtk0Z-NQU/s800/ClickTrayIcon.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JToolTip, JWindow, MouseListener, MouseMotionListener]
 author: aterai
 pubdate: 2010-05-03T22:32:22+09:00
 description: JToolTipの表示位置がドラッグでマウスカーソルに追従するように設定します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVoUwnbfI/AAAAAAAAAn8/lAHqv08RJKA/s800/ToolTipLocation.png
 comments: true
 ---
 ## 概要

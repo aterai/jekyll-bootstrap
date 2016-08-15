@@ -7,6 +7,7 @@ tags: [JTable, RowSorter]
 author: aterai
 pubdate: 2011-06-06T18:40:01+09:00
 description: JTableがデフォルトでソートする列とその方向を設定します。
+image: https://lh5.googleusercontent.com/-qvzRq_TxwSg/Texuvm22ELI/AAAAAAAAA84/DhfjZ3TEATk/s800/DefaultSortingColumn.png
 comments: true
 ---
 ## 概要

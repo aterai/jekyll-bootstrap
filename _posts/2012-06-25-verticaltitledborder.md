@@ -7,6 +7,7 @@ tags: [Border, TitledBorder, JLabel]
 author: aterai
 pubdate: 2012-06-25T18:19:01+09:00
 description: TitledBorderのタイトル文字列を縦(左側)に表示します。
+image: https://lh4.googleusercontent.com/-ndnU9h6kzPw/T-gQmrTVqdI/AAAAAAAABOQ/KwNEpVGLDa0/s800/VerticalTitledBorder.png
 comments: true
 ---
 ## 概要

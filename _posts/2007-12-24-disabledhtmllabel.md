@@ -7,6 +7,7 @@ tags: [Html, JLabel, JEditorPane, UIManager]
 author: aterai
 pubdate: 2007-12-24T23:18:44+09:00
 description: Htmlを使ったJLabelと、JEditorPaneをsetEnabled(false)で無効にします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTK9vV2SGI/AAAAAAAAAW0/PIlAG2B9yZA/s800/DisabledHtmlLabel.png
 comments: true
 ---
 ## 概要

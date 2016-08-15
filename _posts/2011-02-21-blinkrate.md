@@ -7,6 +7,7 @@ tags: [JTextComponent, Caret, JTextField]
 author: aterai
 pubdate: 2011-02-21T14:49:17+09:00
 description: JTextComponentのCaretが点滅する速さを変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TWH8aAgoyiI/AAAAAAAAA1o/J-ljyl_h_i8/s800/BlinkRate.png
 comments: true
 ---
 ## 概要

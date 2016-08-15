@@ -7,6 +7,7 @@ tags: [Icon, AffineTransform]
 author: aterai
 pubdate: 2012-06-11T15:18:47+09:00
 description: 画像ファイルから90、180、270度回転したIconを作成します。
+image: https://lh4.googleusercontent.com/-OK_vUTiAiCA/T9WIzXvRm9I/AAAAAAAABNk/ubus049qH04/s800/RotatedIcon.png
 comments: true
 ---
 ## 概要

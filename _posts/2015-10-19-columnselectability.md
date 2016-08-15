@@ -7,6 +7,7 @@ tags: [JTable, TableColumn]
 author: aterai
 pubdate: 2015-10-19T00:12:40+09:00
 description: JTableの任意の列でマウスクリックなどによる選択ができないように制限します。
+image: https://lh3.googleusercontent.com/-kvjA0RzkNxQ/ViOrBhPfAiI/AAAAAAAAOEc/meMBIUCKAmc/s800-Ic42/ColumnSelectability.png
 comments: true
 ---
 ## 概要

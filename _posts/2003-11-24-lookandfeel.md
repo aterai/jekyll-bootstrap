@@ -7,6 +7,7 @@ tags: [LookAndFeel, JMenuBar]
 author: aterai
 pubdate: 2003-11-24
 description: メニューバーから選択したLook and Feelを起動中のアプリケーションに適用します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPf78s81I/AAAAAAAAAeE/DIOTnqtAOnY/s800/LookAndFeel.png
 comments: true
 ---
 ## 概要

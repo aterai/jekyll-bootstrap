@@ -7,6 +7,7 @@ tags: [GeneralPath, Path2D, Polygon, Icon, AffineTransform]
 author: aterai
 pubdate: 2009-02-09T18:26:33+09:00
 description: GeneralPathなどを使って星型の図形をパネルに描画したり、アイコンを作成します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNT-1toKI/AAAAAAAAAak/t96zX52eOVg/s800/GeneralPath.png
 comments: true
 ---
 ## 概要

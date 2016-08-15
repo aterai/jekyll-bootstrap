@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableColumn]
 author: aterai
 pubdate: 2004-02-02
 description: JTableのヘッダでカラム幅を一部だけ固定します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTM9YcNZfI/AAAAAAAAAaA/sbjwdihBwqY/s800/FixedWidthColumn.png
 comments: true
 ---
 ## 概要

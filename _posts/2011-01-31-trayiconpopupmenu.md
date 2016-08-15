@@ -7,6 +7,7 @@ tags: [TrayIcon, JPopupMenu, JDialog]
 author: aterai
 pubdate: 2011-01-31T15:26:03+09:00
 description: TrayIconをクリックしてJPopupMenuを表示します。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TUZUBCgOGJI/AAAAAAAAA0A/Ox5g3HoxmoI/s800/TrayIconPopupMenu.png
 comments: true
 ---
 ## 概要

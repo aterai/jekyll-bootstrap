@@ -7,6 +7,7 @@ tags: [Border, TitledBorder, JCheckBox, JButton]
 author: aterai
 pubdate: 2006-04-10T12:01:31+09:00
 description: BorderにJCheckBoxやJButtonなどを配置します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKEdJmyzI/AAAAAAAAAVY/FTQKJ7__MnE/s800/ComponentTitledBorder.png
 comments: true
 ---
 ## 概要

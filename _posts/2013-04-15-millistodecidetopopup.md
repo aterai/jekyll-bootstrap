@@ -7,6 +7,7 @@ tags: [ProgressMonitor, SwingWorker, JProgressBar]
 author: aterai
 pubdate: 2013-04-15T03:02:27+09:00
 description: ProgressMonitorのダイアログが表示されるまでの待ち時間を設定します。
+image: https://lh6.googleusercontent.com/-R5-8dJERlmk/UWrm3iXBukI/AAAAAAAABpk/i7YjNRcIkpM/s800/MillisToDecideToPopup.png
 comments: true
 ---
 ## 概要

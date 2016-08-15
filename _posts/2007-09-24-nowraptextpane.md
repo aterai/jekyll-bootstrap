@@ -7,6 +7,7 @@ tags: [JEditorPane, JTextPane, StyledDocument]
 author: aterai
 pubdate: 2007-09-24T18:04:06+09:00
 description: JEditorPaneや、JTextPaneで、行をViewportの幅で折り返さないよう設定します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTQbo-LQJI/AAAAAAAAAfk/YnnnPAQE-R4/s800/NoWrapTextPane.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTable, JList, DragAndDrop, TransferHandler, Icon]
 author: aterai
 pubdate: 2015-05-25T00:03:51+09:00
 description: JTableのセルを選択可能にし、ドラッグ＆ドロップでそのセル内のIconをJListにコピーできるようにTransferHandlerを設定します。
+image: https://lh3.googleusercontent.com/-TUrxk7yYqYM/VWHkR1mENvI/AAAAAAAAN4w/bEU29WIgjOE/s800/TableCellTransferHandler.png
 comments: true
 ---
 ## 概要

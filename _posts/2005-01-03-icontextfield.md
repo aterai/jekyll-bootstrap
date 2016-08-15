@@ -7,6 +7,7 @@ tags: [JTextField, ImageIcon, JLabel, Border]
 author: aterai
 pubdate: 2005-01-03
 description: JTextFieldの内部に余白を生成し、そこにImageIconを設定したJLabelを配置します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOSatpfJI/AAAAAAAAAcI/9Ghfvb82FsM/s800/IconTextField.png
 comments: true
 ---
 ## 概要

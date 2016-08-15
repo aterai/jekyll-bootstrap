@@ -7,6 +7,7 @@ tags: [JEditorPane, JTextPane, HTMLDocument, JToolTip, HyperlinkListener]
 author: aterai
 pubdate: 2011-08-08T15:04:19+09:00
 description: JEditorPaneでdivやspanタグのtitle属性をToolTipで表示できるように設定します。
+image: https://lh4.googleusercontent.com/-3HQ42PjgBfs/Tj97O_2VS6I/AAAAAAAABAc/EnrOPXrJxfE/s800/ElementAttribute.png
 comments: true
 ---
 ## 概要

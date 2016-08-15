@@ -7,6 +7,7 @@ tags: [JButton, ActionListener, MouseListener, Timer]
 author: aterai
 pubdate: 2015-06-08T00:00:32+09:00
 description: JButtonがマウスで押されている間は指定したアクションを繰り返し実行するTimerを設定します。
+image: https://lh3.googleusercontent.com/-zp2-TOEE4JE/VXRXk25rFUI/AAAAAAAAN6I/_Kn4GsC9a1g/s800/AutoRepeatTimer.png
 comments: true
 ---
 ## 概要

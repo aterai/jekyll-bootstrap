@@ -7,6 +7,7 @@ tags: [MatteBorder, JLabel]
 author: aterai
 pubdate: 2004-12-20T00:29:03+09:00
 description: JLabelの装飾にMatteBorderを使用し、4辺でそれぞれ異なる線幅の枠を描画します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPp-xSv1I/AAAAAAAAAeU/K5lHH6YMz_E/s800/MatteBorder.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JComboBox, ActionMap, InputMap]
 author: aterai
 pubdate: 2005-10-24
 description: JComboBoxのItemの選択が、上下のカーソルキーでループするように設定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPicRK7pI/AAAAAAAAAeI/ApRsPHlRWe0/s800/LoopComboBox.png
 comments: true
 ---
 ## 概要

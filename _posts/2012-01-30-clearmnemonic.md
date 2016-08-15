@@ -7,6 +7,7 @@ tags: [JButton, Mnemonic]
 author: aterai
 pubdate: 2012-01-30T16:49:29+09:00
 description: JButtonに設定されたMnemonicをクリアして初期状態に戻します。
+image: https://lh4.googleusercontent.com/-VBCuKbB3hhs/TyZJM3aWNzI/AAAAAAAABIg/01Dscav-qV4/s800/ClearMnemonic.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTable, TableCellRenderer, TableCellEditor, JColorChooser]
 author: aterai
 pubdate: 2014-01-06T00:25:50+09:00
 description: JTableの行ごとにクラスに応じたセルエディタなどを適用することで、プロパティ一覧表を作成します。
+image: https://lh4.googleusercontent.com/-ZueCWsZFbOQ/UslO6WVldNI/AAAAAAAAB9g/53vsd2t0OPo/s800/PropertyTable.png
 comments: true
 ---
 ## 概要

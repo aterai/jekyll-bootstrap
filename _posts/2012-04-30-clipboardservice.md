@@ -7,6 +7,7 @@ tags: [ServiceManager, ClipboardService, JTextComponent]
 author: aterai
 pubdate: 2012-04-30T10:43:03+09:00
 description: ClipboardServiceを使ってJava Web Startで動作中のアプリケーションからシステム全体の共有クリップボードにアクセスします。
+image: https://lh5.googleusercontent.com/--_lXbzG-H7g/T53noZrOnHI/AAAAAAAABME/FyY8MKdHSg0/s800/ClipboardService.png
 comments: true
 ---
 ## 概要

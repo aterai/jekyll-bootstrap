@@ -7,6 +7,7 @@ tags: [JDesktopPane, JInternalFrame, JTabbedPane, CardLayout]
 author: aterai
 pubdate: 2015-04-13T00:00:05+09:00
 description: JDesktopPaneとJTabbedPaneをCardLayoutで切り替えるとき、その内部のJInternalFrameとタブもすべて入れ替えます。
+image: https://lh4.googleusercontent.com/-mNR8hjjt8Ao/VSp_fRS8WZI/AAAAAAAAN2Y/rTsBE6-6Ekg/s800/SwapInternalFramesWithTabs.png
 comments: true
 ---
 ## 概要

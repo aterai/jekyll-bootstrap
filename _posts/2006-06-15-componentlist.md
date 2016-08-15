@@ -7,6 +7,7 @@ tags: [BoxLayout, LayoutManager]
 author: aterai
 pubdate: 2006-06-15
 description: 高さの異なるコンポーネントをスクロールできるようにリスト状に並べます。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ_UDZVaI/AAAAAAAAAVQ/BbW1hLhenS8/s800/ComponentList.png
 comments: true
 ---
 ## 概要

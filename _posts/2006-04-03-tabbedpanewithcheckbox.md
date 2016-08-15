@@ -7,6 +7,7 @@ tags: [JTabbedPane, JCheckBox, Border]
 author: aterai
 pubdate: 2006-04-03T01:35:12+09:00
 description: JTabbedPaneの余白にJCheckBoxを配置して特定のタブの開閉を行います。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUQ8ALIWI/AAAAAAAAAlw/7jfCbNrxWK8/s800/TabbedPaneWithCheckBox.png
 comments: true
 ---
 ## 概要

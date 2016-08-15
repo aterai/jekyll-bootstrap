@@ -7,6 +7,7 @@ tags: [NimbusLookAndFeel, UIDefaults, JProgressBar]
 author: aterai
 pubdate: 2012-07-30T13:49:19+09:00
 description: NimbusLookAndFeelのカラーパレットを変更します。
+image: https://lh4.googleusercontent.com/-ZPZIywXgxwc/UBYR3-EyETI/AAAAAAAABP4/Y2KglYmMKo8/s800/NimbusColorPalette.png
 comments: true
 ---
 ## 概要

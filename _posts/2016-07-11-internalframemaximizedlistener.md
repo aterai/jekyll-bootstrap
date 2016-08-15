@@ -7,6 +7,7 @@ tags: [JInternalFrame, JDesktopPane, PropertyChangeListener]
 author: aterai
 pubdate: 2016-07-11T00:34:23+09:00
 description: JInternalFrameの最大化ボタン、最大化からの復元ボタンをクリックした場合のイベントを取得します。
+image: https://lh3.googleusercontent.com/-CxgwsouF5Cw/V4JonwQumzI/AAAAAAAAOdc/-F66XgbHf28_pt-Rc-zgv8f47E--2hvqgCCo/s800/InternalFrameMaximizedListener.png
 comments: true
 ---
 ## 概要

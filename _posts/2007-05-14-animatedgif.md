@@ -7,6 +7,7 @@ tags: [JLabel, Animation]
 author: aterai
 pubdate: 2007-05-14T19:32:29+09:00
 description: JLabelなどで使用できるAnimated GIFファイルをテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTHnR-lE1I/AAAAAAAAARc/gDDOKXhD7hQ/s800/AnimatedGif.png
 comments: true
 ---
 ## 概要

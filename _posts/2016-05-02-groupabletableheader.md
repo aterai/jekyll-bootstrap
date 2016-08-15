@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableColumn]
 author: aterai
 pubdate: 2016-05-02T00:35:46+09:00
 description: TableColumnのグループ化を可能にし、JTableHeaderでの列結合を実現します。
+image: https://lh3.googleusercontent.com/-DIZZyiOX9YU/VyYbXr9opNI/AAAAAAAAOTs/QhLBqtw5Z34ULclU9aZHnVjnEZMJvhJmgCCo/s800/GroupableTableHeader.png
 comments: true
 ---
 ## 概要

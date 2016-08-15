@@ -7,6 +7,7 @@ tags: [JTable, DefaultTableModel, XMLEncoder, XMLDecoder]
 author: aterai
 pubdate: 2014-10-13T03:04:26+09:00
 description: JTableのモデルをXMLEncoderとXMLDecoderを使って、XMLファイルで保存、復元します。
+image: https://lh4.googleusercontent.com/-QHfYzslScHI/VDq8gaSQpBI/AAAAAAAACO4/AI-q_jZ-qpA/s800/PersistenceDelegate.png
 comments: true
 ---
 ## 概要

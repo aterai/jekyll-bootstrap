@@ -7,6 +7,7 @@ tags: [JSpinner, SpinnerNumberModel]
 author: aterai
 pubdate: 2010-02-01T01:53:39+09:00
 description: JSpinnerのモデルで値が最大、最小を超えるとループするように設定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKYcCKxAI/AAAAAAAAAV4/T8OdovAF6EY/s800/CyclingSpinnerModel.png
 comments: true
 ---
 ## 概要

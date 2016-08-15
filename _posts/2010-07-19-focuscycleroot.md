@@ -7,6 +7,7 @@ tags: [JPanel, Focus, KeyboardFocusManager]
 author: aterai
 pubdate: 2010-07-19T23:07:24+09:00
 description: JPanelがフォーカストラバーサルサイクルのルートになるように設定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTNCX36INI/AAAAAAAAAaI/xunzBpsDJLk/s800/FocusCycleRoot.png
 comments: true
 ---
 ## 概要

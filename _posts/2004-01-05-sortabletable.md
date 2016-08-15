@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader]
 author: aterai
 pubdate: 2004-01-05
 description: JTableのカラムヘッダをクリックすることで、行表示を降順、昇順にソートします。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTXXYDR5I/AAAAAAAAAkQ/DeBHN6piDhQ/s800/SortableTable.png
 comments: true
 ---
 ## 概要

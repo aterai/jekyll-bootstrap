@@ -7,6 +7,7 @@ tags: [SwingWorker, JProgressBar, JTextArea]
 author: aterai
 pubdate: 2011-07-25T14:41:32+09:00
 description: SwingWorkerで処理の一時停止と再開を行います。
+image: https://lh6.googleusercontent.com/-3BCjKLnQbGM/Ti0AQV5nkwI/AAAAAAAAA_s/RY75ol3pFak/s800/PauseResumeSwingWorker.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2011/07/pause-and-resume-swingworker.html
     lang: en

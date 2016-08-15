@@ -7,6 +7,7 @@ tags: [JTable, JTableHeader, TableColumn, JScrollPane]
 author: aterai
 pubdate: 2005-11-28T18:26:47+09:00
 description: 列幅調整がデフォルトのJTableで、ヘッダの各TableColumnが指定した比率の幅になるように設定します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TSs6oj80RcI/AAAAAAAAAxs/hm2gp4ELiDI/s800/HeaderRatio.png
 comments: true
 ---
 ## 概要

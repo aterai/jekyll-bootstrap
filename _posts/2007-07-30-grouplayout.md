@@ -7,6 +7,7 @@ tags: [GroupLayout, GridBagLayout, LayoutManager]
 author: aterai
 pubdate: 2007-07-30T15:46:47+09:00
 description: JDK 6で新しく導入されたGroupLayoutとGridBagLayoutを比較しています。
+image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTNn9AdVUI/AAAAAAAAAbE/yOFdtRVr6P4/s800/GroupLayout.png
 comments: true
 ---
 ## 概要

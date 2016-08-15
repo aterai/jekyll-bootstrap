@@ -7,6 +7,7 @@ tags: [SystemColor]
 author: aterai
 pubdate: 2003-10-20
 description: Swingコンポーネントの色をSystemColorクラスから取得します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTUESCOFBI/AAAAAAAAAlc/eXW_0wilSew/s800/SystemColor.png
 comments: true
 ---
 ## 概要

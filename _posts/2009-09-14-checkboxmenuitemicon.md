@@ -7,6 +7,7 @@ tags: [JCheckBoxMenuItem, Icon, UIManager]
 author: aterai
 pubdate: 2009-09-14T14:19:06+09:00
 description: JCheckBoxMenuItemのチェックアイコンを変更します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTI5TuivhI/AAAAAAAAATg/nfren8EjliA/s800/CheckBoxMenuItemIcon.png
 hreflang:
     href: http://java-swing-tips.blogspot.com/2009/10/jcheckboxmenuitem-icon.html
     lang: en

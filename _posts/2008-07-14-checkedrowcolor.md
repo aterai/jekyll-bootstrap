@@ -7,6 +7,7 @@ tags: [JTable, JCheckBox, TableModelListener, TableCellRenderer, TableCellEditor
 author: aterai
 pubdate: 2008-07-14T14:18:45+09:00
 description: JTableのセルに表示されているJCheckBoxがチェックされていれば、その行の背景色を変更します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTI7wkSMbI/AAAAAAAAATk/uGVLWCqLJUI/s800/CheckedRowColor.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JTable, TableRowSorter, ChangeListener, JScrollPane, JViewport]
 author: aterai
 pubdate: 2008-11-10T14:26:25+09:00
 description: 列固定したJTableで、JDK 6で導入されたTableRowSorterを使った行ソートを行います。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTMzes1hqI/AAAAAAAAAZw/-m-PZSFzYAk/s800/FixedColumnTableSorting.png
 comments: true
 ---
 ## 概要

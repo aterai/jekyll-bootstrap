@@ -7,6 +7,7 @@ tags: [JFileChooser, File, BasicDirectoryModel]
 author: aterai
 pubdate: 2011-10-17T12:57:18+09:00
 description: JFileChooserで読み取り専用属性ファイルのリネームを禁止します。
+image: https://lh5.googleusercontent.com/-7ODSj6DaIig/TpsQEay0NqI/AAAAAAAABDs/8fz14wjADj0/s800/RenameIfCanWriteFileChooser.png
 comments: true
 ---
 ## 概要

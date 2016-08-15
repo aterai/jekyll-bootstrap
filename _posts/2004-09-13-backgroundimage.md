@@ -7,6 +7,7 @@ tags: [JPanel, Image]
 author: aterai
 pubdate: 2004-09-13T03:00:13+09:00
 description: JPanelの背景に画像をタイル状に並べて表示します。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTH67VnIQI/AAAAAAAAAR8/JMqkIoI8n1Y/s800/BackgroundImage.png
 comments: true
 ---
 ## 概要

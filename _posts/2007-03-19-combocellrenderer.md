@@ -7,6 +7,7 @@ tags: [JTable, JComboBox, TableCellRenderer, TableCellEditor]
 author: aterai
 pubdate: 2007-03-19
 description: JTableのCellRendererとしてJComboBoxを使用します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJ35Po_yI/AAAAAAAAAVE/z4Jn6Mv7-pc/s800/ComboCellRenderer.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [ButtonGroup, JToggleButton]
 author: aterai
 pubdate: 2016-06-06T00:23:27+09:00
 description: ButtonGroup中にある選択状態のJToggleButtonをもう一度クリックして選択を解除することができるように設定します。
+image: https://lh3.googleusercontent.com/-xZ1YFhJedcg/V1Q_LKyzhzI/AAAAAAAAOao/S-uPsKtdlg8k1eWf2yCIGnh4Hw2r7bGNACCo/s800/ToggleButtonGroup.png
 comments: true
 ---
 ## 概要

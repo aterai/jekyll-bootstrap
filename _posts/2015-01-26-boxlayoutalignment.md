@@ -7,6 +7,7 @@ tags: [BoxLayout, JLabel]
 author: aterai
 pubdate: 2015-01-26T00:15:23+09:00
 description: BoxLayoutを設定したJPanelに、最小サイズを設定したJLabelを中央揃えで配置するテストを行います。
+image: https://lh3.googleusercontent.com/-OKh2kmuDUus/VMUE-LLN_NI/AAAAAAAANvk/FtPEqk8f820/s800/BoxLayoutAlignment.png
 comments: true
 ---
 ## 概要

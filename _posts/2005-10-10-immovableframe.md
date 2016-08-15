@@ -7,6 +7,7 @@ tags: [JInternalFrame, MouseMotionListener]
 author: aterai
 pubdate: 2005-10-10
 description: JInternalFrameをマウスなどで移動できないように固定します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png
 comments: true
 ---
 ## 概要

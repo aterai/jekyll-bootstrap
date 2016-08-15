@@ -7,6 +7,7 @@ tags: [JComboBox, UIManager, Border, ArrowButton, MouseListener, BasicComboPopup
 author: aterai
 pubdate: 2012-02-20T16:53:02+09:00
 description: JComboBoxの表示部分、矢印ボタン、ドロップダウンリストのBorderや色を変更します。
+image: https://lh3.googleusercontent.com/-jHpgdiBwt6s/T0H3deyce_I/AAAAAAAABJY/_3k6-paq4lM/s800/ComboBoxBorder.png
 comments: true
 ---
 ## 概要

@@ -7,6 +7,7 @@ tags: [JLabel, Html, JToolTip]
 author: aterai
 pubdate: 2008-04-21T13:43:08+09:00
 description: JLabelなどのHtmlレンダリングを無効化して、タグ文字列をそのまま表示します。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTODbO-ktI/AAAAAAAAAbw/bTVYI0sgEY4/s800/HtmlDisable.png
 comments: true
 ---
 ## 概要

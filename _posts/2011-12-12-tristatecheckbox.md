@@ -7,6 +7,7 @@ tags: [JCheckBox, Icon, UIManager, JTableHeader, JTable]
 author: aterai
 pubdate: 2011-12-12T15:00:11+09:00
 description: JCheckBoxの選択状態、非選択状態に加えて、不定状態を表すアイコンを追加します。
+image: https://lh6.googleusercontent.com/-Rs-vnlD35Cg/TuTNCuEvU_I/AAAAAAAABF4/IzDezx4Rq8M/s800/TriStateCheckBox.png
 comments: true
 ---
 ## 概要

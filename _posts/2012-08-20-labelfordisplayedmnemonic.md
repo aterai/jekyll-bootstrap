@@ -7,6 +7,7 @@ tags: [JLabel, JTextField, Mnemonic]
 author: aterai
 pubdate: 2012-08-20T15:34:19+09:00
 description: JLabelにニーモニックを設定し、これに関連付けしたJTextFieldへのフォーカス移動を行います。
+image: https://lh4.googleusercontent.com/-c8oDt2QGtY0/UDHQKTuRMGI/AAAAAAAABRQ/dzH-cDi9lEw/s800/LabelForDisplayedMnemonic.png
 comments: true
 ---
 ## 概要

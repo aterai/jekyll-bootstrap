@@ -7,6 +7,7 @@ tags: [JToolTip, GlassPane, ToolTipManager, PopupFactory]
 author: aterai
 pubdate: 2009-05-11T16:10:58+09:00
 description: JToolTipをGlassPane上のコンポーネントに追加した場合でも、手前に表示されるように設定します。
+image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNMeZI4ZI/AAAAAAAAAaY/8XHy9j6jQw0/s800/ForceHeavyWeightPopupKey.png
 comments: true
 ---
 ## 概要

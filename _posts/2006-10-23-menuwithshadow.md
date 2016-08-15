@@ -7,6 +7,7 @@ tags: [JMenu, JPopupMenu, UIManager, Border, Robot, Translucent]
 author: aterai
 pubdate: 2006-10-23T14:11:21+09:00
 description: JMenuから開くJPopupMenuにBorderを設定して半透明の影を付けます。
+image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPz0ZEG6I/AAAAAAAAAek/pd0ErBB9eBg/s800/MenuWithShadow.png
 comments: true
 ---
 ## 概要

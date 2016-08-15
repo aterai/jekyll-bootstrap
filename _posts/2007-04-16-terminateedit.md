@@ -7,6 +7,7 @@ tags: [JTable, Focus, JTableHeader, TableCellEditor]
 author: aterai
 pubdate: 2007-04-16T16:28:55+09:00
 description: セルの編集中、フォーカスが別のコンポーネントに移動した場合、その編集を確定する方法をテストします。
+image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVKX5loMI/AAAAAAAAAnM/hbhZT30xAgc/s800/TerminateEdit.png
 comments: true
 ---
 ## 概要

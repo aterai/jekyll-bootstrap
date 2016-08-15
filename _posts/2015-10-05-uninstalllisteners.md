@@ -7,6 +7,7 @@ tags: [MouseListener, MouseMotionListener, JSlider]
 author: aterai
 pubdate: 2015-10-05T00:07:30+09:00
 description: MouseListenerやMouseMotionListenerなどを削除することで、JSliderへの入力操作を制限します。
+image: https://lh3.googleusercontent.com/-R8lyg28qxOc/VhE8l7UdVnI/AAAAAAAAODQ/XDVHIbj2uyY/s800-Ic42/UninstallListeners.png
 comments: true
 ---
 ## 概要
