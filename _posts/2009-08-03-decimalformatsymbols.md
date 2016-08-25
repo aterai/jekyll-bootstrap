@@ -39,7 +39,7 @@ comments: true
 ## 解説
 1. デフォルト
 1. `JSpinner`から`JFormattedTextField`を取得し、この無効の場合の文字色を無効場合の背景色と同じにして非表示化
-1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列をスペースに変更
+1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列を半角スペース(`U+0020`)に変更
 1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列を`----`に変更
 
 ## コメント
