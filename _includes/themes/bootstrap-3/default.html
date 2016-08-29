@@ -3,22 +3,24 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <title>{{ page.title }} - {{ site.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
     <meta name="author" content="{{ site.author.name }}" />
     {% if page.folder %}<link rel="canonical" href="http://ateraimemo.com/Swing/{{ page.folder }}.html" />{% endif %}
     <meta name="google-site-verification" content="EMsBqvy875QIaZuUka2-HZrmVXmKT1hAkInD6Q46QRA" />
-    <meta name="robots" content="NOINDEX,FOLLOW" />
+    <!-- meta name="robots" content="NOINDEX,FOLLOW" / -->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap styles -->
-    <link href="{{ ASSET_PATH }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Optional theme -->
-    <link href="{{ ASSET_PATH }}bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <!-- Sticky Footer -->
-    <link href="{{ ASSET_PATH }}bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bs-sticky-footer.css" rel="stylesheet" />
     
     <!-- Custom styles -->
     <!-- link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all" -->
@@ -55,7 +57,7 @@ code,pre{overflow:auto;white-space:pre-wrap;word-wrap:break-word}
   </head>
 
   <body itemscope="itemscope" itemtype="http://schema.org/WebPage">
-    <!-- script async="" src="//ateraimemo.com/skin/google_tm.js"></script -->
+    <script async="" src="//ateraimemo.com/skin/google_tm.js"></script>
     <div id="wrap">
       <nav class="navbar navbar-default" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -113,6 +115,5 @@ sidebar
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-    <!-- script async defer src="//ateraimemo.com/skin/prettify.js"></script -->
   </body>
 </html>
