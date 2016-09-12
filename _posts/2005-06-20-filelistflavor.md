@@ -5,7 +5,7 @@ folder: FileListFlavor
 title: Fileのドラッグ＆ドロップ
 tags: [DragAndDrop, JTable, DropTargetListener, TransferHandler]
 author: aterai
-pubdate: 2005-06-20
+pubdate: 2005-06-20T11:06:07+09:00
 description: WindowsなどからファイルをJTableにドラッグ＆ドロップします。
 image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMhxsIIsI/AAAAAAAAAZU/iZ6Pn8yTFFM/s800/FileListFlavor.png
 comments: true
@@ -53,7 +53,7 @@ new DropTarget(table, DnDConstants.ACTION_COPY, dtl, true);
 </code></pre>
 
 ## 解説
-`Windows`のエクスプローラなどからファイルを選択(複数可)し、上記のサンプルアプリ上にドラッグ＆ドロップするとファイル名などを`JTable`に表示しています。
+上記のサンプルでは、`Windows`のエクスプローラなどからファイルを選択(複数選択可)、ドラッグ、`JTable`上にドロップで、ファイル名などを一覧表示することができます。
 
 ドロップされた`DataFlavor`が、`DataFlavor.javaFileListFlavor`の場合だけ、これをファイルとして処理する`DropTargetListener`を作成しています。
 

@@ -5,7 +5,7 @@ folder: ImmovableFrame
 title: JInternalFrameを固定
 tags: [JInternalFrame, MouseMotionListener]
 author: aterai
-pubdate: 2005-10-10
+pubdate: 2005-10-10T17:53:41+09:00
 description: JInternalFrameをマウスなどで移動できないように固定します。
 image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOXXz-C5I/AAAAAAAAAcQ/0qYBPzKq7js/s800/ImmovableFrame.png
 comments: true
@@ -27,7 +27,7 @@ for (MouseMotionListener l: titleBar.getListeners(MouseMotionListener.class)) {
 `JInternalFrame`の`MouseMotionListener`をすべて削除することで、マウスによる移動を不可能にしています。
 
 - - - -
-以下のようにしてタイトルバー自体を削除して移動できないフレームを作成する方法もあります。
+以下のように、タイトルバー自体を削除して移動できないフレームを作成する方法もあります。
 
 <pre class="prettyprint"><code>ui.setNorthPane(null);
 internalframe.setBorder(BorderFactory.createEmptyBorder());

@@ -82,10 +82,10 @@ comments: true
       Dimension d = getPreferredSize();
       r.setSize(new Dimension(d.width, r.height));
       if (r.contains(me.getX(), me.getY())) {
-        if (file == null &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
-          System.out.println("XXX: Java 7, only on first run\n" + getBounds());
-          setBounds(new Rectangle(0, 0, d.width, r.height));
-        }
+        //if (file == null &amp;&amp; System.getProperty("java.version").startsWith("1.7.0")) {
+        //  System.out.println("XXX: Java 7, only on first run\n" + getBounds());
+        //  setBounds(new Rectangle(0, 0, d.width, r.height));
+        //}
         return true;
       }
     }

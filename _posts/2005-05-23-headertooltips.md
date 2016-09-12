@@ -5,7 +5,7 @@ folder: HeaderTooltips
 title: JTableHeaderのTooltipsを列ごとに変更
 tags: [JTable, JTableHeader, JToolTip]
 author: aterai
-pubdate: 2005-05-23
+pubdate: 2005-05-23T10:16:01+09:00
 description: JTableHeaderのTooltipsが、カーソルのある列の内容などを表示するようにします。
 image: https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNx5xm6BI/AAAAAAAAAbU/LCSjxDNp8p0/s800/HeaderTooltips.png
 comments: true
@@ -26,7 +26,7 @@ table.setTableHeader(header);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTableHeader#getToolTipText`メソッドをオーバーライドして、マウスカーソルの下にあるカラムヘッダの名前などを`Tooltips`として返すようにしています。
+上記のサンプルでは、`JTableHeader#getToolTipText()`メソッドをオーバーライドして、マウスカーソルの下にあるカラムヘッダの名前などを`Tooltips`として返すように設定しています。
 
 ## 参考リンク
 - [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
