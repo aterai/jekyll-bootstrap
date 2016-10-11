@@ -128,6 +128,6 @@ class ComponentIcon implements Icon {
 ## コメント
 - `LookAndFeel`を`Nimbus`に変更したとき、`JTableHeader`の高さがおかしい？ -- *aterai* 2011-05-30 (月) 22:13:05
     - レンダラー中で`label.setText(null);`や、`JLabel`を挟んで二重に`ImageIcon`を作成するなどして回避中。 -- *aterai* 2012-03-02 (金) 16:01:51
-- [Java Swing Tips: JTableHeader CheckBox](http://java-swing-tips.blogspot.com/2009/02/jtableheader-checkbox.html)で、ヘッダクリックで全選択した後、テーブル中のチェックを外すと、ヘッダのチェックボックスもチェック外した方がよくないか？との指摘を頂いたので、(`Gmail`などのチェックボックス風の)不定状態？を導入しました。 -- *aterai* 2011-06-14 (火) 14:44:19
+- [Java Swing Tips: JTableHeader CheckBox](https://java-swing-tips.blogspot.com/2009/02/jtableheader-checkbox.html)で、ヘッダクリックで全選択した後、テーブル中のチェックを外すと、ヘッダのチェックボックスもチェック外した方がよくないか？との指摘を頂いたので、(`Gmail`などのチェックボックス風の)不定状態？を導入しました。 -- *aterai* 2011-06-14 (火) 14:44:19
 
 <!-- dummy comment line for breaking list -->

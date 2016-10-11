@@ -169,7 +169,7 @@ class DragWindowListener extends MouseAdapter {
 
 ## コメント
 - `blogger`の方にコメントをもらって、調査、修正中だけど、`dual-monitor`環境が無いのでテストしづらい…。 -- *aterai* 2010-10-06 (水) 13:01:36
-- [blogspot](http://java-swing-tips.blogspot.com/2010/05/custom-decorated-titlebar-jframe.html)で指摘されていた件について: このサンプルを`1.6.0_xx`+`WebStart`で実行すると、画面の外にフレームをドラッグすることが出来なかったのですが、`JRE`のバージョンを`1.7.0`にすると、`WebStart`で起動しても画面外に移動可能になっているみたいです。もしかしてデュアルディスプレイでも移動できるようになっているのかも？(確認してないですが...) -- *aterai* 2011-09-06 (火) 21:27:18
+- [blogspot](https://java-swing-tips.blogspot.com/2010/05/custom-decorated-titlebar-jframe.html)で指摘されていた件について: このサンプルを`1.6.0_xx`+`WebStart`で実行すると、画面の外にフレームをドラッグすることが出来なかったのですが、`JRE`のバージョンを`1.7.0`にすると、`WebStart`で起動しても画面外に移動可能になっているみたいです。もしかしてデュアルディスプレイでも移動できるようになっているのかも？(確認してないですが...) -- *aterai* 2011-09-06 (火) 21:27:18
 - マルチモニター関係のメモ: [Bug ID: 7123767 Wrong tooltip location in Multi-Monitor configurations](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7123767) -- *aterai* 2012-08-14 (火) 13:55:29
 
 <!-- dummy comment line for breaking list -->

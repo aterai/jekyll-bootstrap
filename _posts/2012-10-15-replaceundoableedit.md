@@ -80,11 +80,7 @@ comments: true
     return undoFilter;
   }
   @Override public void undoableEditHappened(UndoableEditEvent e) {
-    if (compoundEdit == null) {
-      addEdit(e.getEdit());
-    } else {
-      compoundEdit.addEdit(e.getEdit());
-    }
+    Optional.ofNullable(compoundEdit).orElse(this).addEdit(e.getEdit());
   }
 }
 </code></pre>

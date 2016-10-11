@@ -43,8 +43,8 @@ comments: true
 ## 解説
 - 左: `Default`
 - 中: `MouseEvent`
-    - `JList#processMouseEvent`, `JList#processMouseMotionEvent`をオーバーライドして、常に<kbd>Ctrl</kbd>キーが押されている状態にする
-    - マウスでアイテムをドラッグしても選択状態は変わらない
+    - `JList#processMouseEvent`, `JList#processMouseMotionEvent`をオーバーライドして、常に<kbd>Ctrl</kbd>キーが押されている状態に設定
+    - マウスでアイテムをドラッグしても選択状態は変化しない
     - `JList`の空白部分をクリックした場合、アイテムの選択状態は変更せず(`MouseEvent#consume()`)、フォーカスだけ`JList`に移動
     - 参考: [Swing - JList where mouse click acts like ctrl-mouse click](https://community.oracle.com/thread/1351452)
 

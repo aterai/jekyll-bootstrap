@@ -32,12 +32,12 @@ class GroupableTableHeader extends JTableHeader {
     super.updateUI();
     setUI(new GroupableTableHeaderUI());
   }
-  //@Override public boolean getReorderingAllowed() {
-  //  return false;
-  //}
-  @Override public void setReorderingAllowed(boolean b) {
-    super.setReorderingAllowed(false);
+  @Override public boolean getReorderingAllowed() {
+    return false;
   }
+  //@Override public void setReorderingAllowed(boolean b) {
+  //  super.setReorderingAllowed(false);
+  //}
   public void addColumnGroup(ColumnGroup g) {
     if (columnGroups == null) {
       columnGroups = new ArrayList&lt;&gt;();

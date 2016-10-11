@@ -24,9 +24,7 @@ comments: true
   protected ComboCellEditor() {
     super();
     combo.setEditable(true);
-    combo.addActionListener(e -&gt; {
-      fireEditingStopped();
-    });
+    combo.addActionListener(e -&gt; fireEditingStopped());
   }
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {

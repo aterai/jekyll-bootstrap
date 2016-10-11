@@ -68,7 +68,7 @@ dce.getComponent().addFocusListener(new FocusAdapter() {
 </code></pre>
 
 - - - -
-親フレームの状態変化でテーブルのヘッダのサイズ変更が発生する場合、ヘッダのリサイズモデルによって、編集中のセルの状態変化が異なります(`JDK 1.7.0`では修正されています。[Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950))。
+親フレームの状態変化でテーブルのヘッダのサイズ変更が発生する場合、ヘッダのリサイズモデルによって、編集中のセルの状態変化が異なります(`JDK 1.7.0`では修正済み: [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4330950))。
 
 - `JTable.AUTO_RESIZE_OFF`
     - 親フレームのリサイズや最大化は編集中のまま

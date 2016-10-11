@@ -75,7 +75,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Java Swing Tips: Mouse Dragging ViewPort Scroll](http://java-swing-tips.blogspot.com/2009/03/mouse-dragging-viewport-scroll.html)
+- [Java Swing Tips: Mouse Dragging ViewPort Scroll](https://java-swing-tips.blogspot.com/2009/03/mouse-dragging-viewport-scroll.html)
 - [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
 

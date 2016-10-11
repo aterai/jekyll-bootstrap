@@ -118,7 +118,7 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 ## コメント
 - `Prev`、`Next`ボタンなどを追加して、Google風の`Pagination`を行うように変更しました。 -- *aterai* 2008-03-26 (水) 20:28:31
 - ブログで指摘されていた恥ずかしいバグ(`paint`メソッドでコンポーネントの状態を変更し、無限ループ、`CPU100%`)を修正 -- *aterai* 2008-09-07 (日) 00:08:50
-- [blogspot](http://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- *aterai* 2011-08-15 (月) 15:54:08
+- [blogspot](https://java-swing-tips.blogspot.com/2008/03/jtable-pagination-example-using.html)で、無駄な空白ページができるバグを指摘してもらったので、こちらも修正しました。 -- *aterai* 2011-08-15 (月) 15:54:08
 - 先頭と最後にジャンプするボタンを追加。 -- *aterai* 2013-11-01 (金) 16:09:21
 
 <!-- dummy comment line for breaking list -->
