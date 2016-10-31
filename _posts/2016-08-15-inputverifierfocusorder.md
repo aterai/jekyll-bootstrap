@@ -57,7 +57,7 @@ setFocusCycleRoot(true);
 ## 解説
 上記のサンプルでは、パネル内の`JTextField`がすべて入力検証に成功した場合、`JButton`をクリック可能に更新する`UI`のテストを行っています。
 
-- <kbd>Tab</kbd>キーを押してフォーカス移動するとき、すべての`JTextField`がすべて入力検証に成功する場合は、`JButton`をクリック可能に更新し、`JButton`にフォーカスを移動し、むすぐに<kbd>Space</kbd>キーなどでクリックしたい
+- <kbd>Tab</kbd>キーを押してフォーカス移動するとき、すべての`JTextField`がすべて入力検証に成功する場合は、`JButton`をクリック可能に更新し、`JButton`にフォーカスを移動し、すぐに<kbd>Space</kbd>キーなどでクリックしたい
 - `InputVerifier#shouldYieldFocus(...)`や`FocusListener#focusLost(...)`で、`JButton#setEnabled(true)`としても、フォーカスは`JButton`に移動しない(初めて`JButton`がクリック可能になったときは、先頭の`JCheckBox`にフォーカスが移動する)
     - これらの実行より先に`LayoutFocusTraversalPolicy#getComponentAfter(...)`で、次にフォーカスが移動するコンポーネントが決定されるため、この時点で`JButton#setEnabled(true)`になっていない`JButton`はスキップされる
 - 回避方法:

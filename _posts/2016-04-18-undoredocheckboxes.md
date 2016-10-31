@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2016-04-18T00:42:25+09:00
 description: 複数のJCheckBoxの選択状態をBigIntegerで記憶し、UndoManagerを使用してアンドゥ・リドゥを行います。
 image: https://lh3.googleusercontent.com/-lcOSQhE6Wp4/VxOpe3dlKII/AAAAAAAAOTE/_lpl9dzIlw8hXFZ-GfuX8HT2fGsENQNvgCCo/s800-Ic42/UndoRedoCheckBoxes.png
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2016/10/undo-redo-selected-state-of-checkboxes.html
+    lang: en
 comments: true
 ---
 ## 概要
