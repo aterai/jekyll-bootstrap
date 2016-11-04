@@ -16,15 +16,17 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTVb-HPZjI/AAAAAAAAAno/dMILsHzlipk/s800/ToolBarLayout.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>String path = "/toolbarButtonGraphics/general/";
-URL url1 = getClass().getResource(path+"Copy24.gif");
-URL url2 = getClass().getResource(path+"Cut24.gif");
-URL url3 = getClass().getResource(path+"Help24.gif");
+<pre class="prettyprint"><code>// jlfgr-1_0.jar
+String path = "/toolbarButtonGraphics/general/";
+URL url1 = getClass().getResource(path + "Copy24.gif");
+URL url2 = getClass().getResource(path + "Cut24.gif");
+URL url3 = getClass().getResource(path + "Help24.gif");
 toolbar.add(createToolbarButton(url1));
 toolbar.add(createToolbarButton(url2));
 toolbar.add(Box.createGlue());
 toolbar.add(createToolbarButton(url3));
 </code></pre>
+
 <pre class="prettyprint"><code>private static JButton createToolbarButton(URL url) {
   JButton b = new JButton(new ImageIcon(url));
   b.setRequestFocusEnabled(false);
@@ -37,13 +39,12 @@ toolbar.add(createToolbarButton(url3));
 
 ボタンとボタンの間隔を固定値で空けたい場合は、`Box.createRigidArea`を使用します。`Box.createHorizontalStrut(...)`や`Box.createVerticalStrut(...)`を使うとツールバーが水平垂直に切り替わった時に、余計な余白が出来てしまうことがあります。
 
-~~ツールバーが垂直になった場合のことも考えて、`VerticalGlue`も一緒に挿入していますが、特に問題ないようです。~~
-
 アイコンは、[Java look and feel Graphics Repository](http://web.archive.org/web/20120818143859/http://java.sun.com/developer/techDocs/hi/repository/)の`jlfgr-1_0.jar`から読み込んでいます。
 
-![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVeG6fVBI/AAAAAAAAAns/II_0GGIdnNk/s800/ToolBarLayout1.png)
-
+- - - -
 `JDK 1.6`で、`JDK 1.5`のようなボタン表示(フォーカスを取得しない)にするには、`JButton#setRequestFocusEnabled(false)`(マウスクリックではフォーカスを取得しないが、キーボードからは許可)、または、`JButton#setFocusable(false)`とする必要があるようです。
+
+![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVeG6fVBI/AAAAAAAAAns/II_0GGIdnNk/s800/ToolBarLayout1.png)
 
 - マウスクリックでツールバーボタンにフォーカスが移動すると、コピーボタンを押したらテキストエディタでの文字列選択状態がクリアされたり、参考の質問のような不具合が起こる
 - 参考: [Swing - JTextPane selection color problem](https://community.oracle.com/thread/1358842)の camickr さんの投稿(2008/10/25 0:34)

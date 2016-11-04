@@ -59,8 +59,8 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
 <!-- dummy comment line for breaking list -->
 
 - `collapseAll(A)`
-    - 末尾から順番に`JTree#collapseRow(int)`メソッドを実行し、見かけ上すべてのノードを折り畳み
-    - 子ノードは展開されているが、親ノードが折り畳まれている場合、その子ノードは折り畳まれない
+    - 末尾から順番に`JTree#collapseRow(int)`メソッドを実行し、表示されているすべてのノードを折り畳む
+    - 子ノードは展開されているが、親ノードが折り畳まれている場合、その非表示となっている子ノードに対しては折り畳みを実行しない
 
 <!-- dummy comment line for breaking list -->
 
@@ -83,6 +83,6 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 解説のラベル`A`と`B`が、ソースとは逆になっていたのを修正しました。 -- *aterai* 2008-02-05 (火) 19:31:53
+- 解説中のラベル`A`と`B`が、ソースコードとは逆になっていたので、これをソースコードと同じになるよう修正。 -- *aterai* 2008-02-05 (火) 19:31:53
 
 <!-- dummy comment line for breaking list -->

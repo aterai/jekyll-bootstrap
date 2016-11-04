@@ -22,7 +22,7 @@ comments: true
 <pre class="prettyprint"><code>tree.setCellEditor(new DefaultTreeCellEditor(
     tree, (DefaultTreeCellRenderer) tree.getCellRenderer()) {
   @Override public boolean isCellEditable(EventObject e) {
-    return (e instanceof MouseEvent) ? false : super.isCellEditable(e);
+    return !(e instanceof MouseEvent) &amp;&amp; super.isCellEditable(e);
   }
 //@Override protected boolean canEditImmediately(EventObject e) {
 ////((MouseEvent) e).getClickCount() &gt; 2

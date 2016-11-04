@@ -41,7 +41,7 @@ col.setMaxWidth(50);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-以下のようにカラム幅を`0`に固定すると、表示されない列を作成することができます。一時的にカラムを隠したいけど、`JTable#removeColumn(TableColumn)`、`JTable#addColumn(TableColumn)`、`JTable#moveColumn(TableColumn)`のように元の場所に戻すのが面倒なときに使えるかもしれません(ただし、<kbd>Tab</kbd>キーなどによるフォーカス移動がおかしくなります)。
+以下のようにカラム幅を`0`に固定すると、表示されない列を作成することができます。一時的にカラムを非表示にしたいが、`JTable#removeColumn(TableColumn)`、`JTable#addColumn(TableColumn)`、`JTable#moveColumn(TableColumn)`などで元の位置に戻すのが面倒な場合に使用できるかもしれません(ただし、<kbd>Tab</kbd>キーなどによるフォーカス移動が不正になる)。
 
 <pre class="prettyprint"><code>TableColumn col = table.getColumnModel().getColumn(1);
 col.setMinWidth(0);
