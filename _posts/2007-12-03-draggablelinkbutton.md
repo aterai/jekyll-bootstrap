@@ -49,20 +49,18 @@ b.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JButton`をマウスでブラウザにドラッグ＆ドロップすると、そのサイトに移動するようになっています。ここでは、`JButton`を使用していますが、`JLabel`などの他のコンポーネントでも同様の設定が可能です。
+上記のサンプルでは、`URL`文字列を設定した`JButton`をマウスでドラッグし、ブラウザにドロップすると、そのサイトに移動することができます。
 
-以下のような`TransferHandler`と`Transferable`を設定しています。
+このような`URL`のドラッグ＆ドロップを実行するために、以下のような`TransferHandler`と`Transferable`を設定しています。
 
 - 転送するプロパティー
     - `text`
 - `DataFlavor`
     - `DataFlavor.stringFlavor`
 - 転送するデータ
-    - 文字列
+    - 文字列: `[http://ateraimemo.com/](http://ateraimemo.com/)`
 
 <!-- dummy comment line for breaking list -->
-
-	http://ateraimemo.com/
 
 ## 参考リンク
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)

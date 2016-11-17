@@ -28,7 +28,7 @@ comments: true
       }
     };
     field.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
-    field.addFocusListener(new FocusListener() {
+    field.addFocusListener(new FocusAdapter() {
       @Override public void focusGained(FocusEvent e) {
         try {
           Rectangle rect = textPane.modelToView(pos);
@@ -39,7 +39,6 @@ comments: true
           ex.printStackTrace();
         }
       }
-      @Override public void focusLost(FocusEvent e) {}
     });
     Dimension d = field.getPreferredSize();
     int baseline = field.getBaseline(d.width, d.height);

@@ -19,8 +19,9 @@ comments: true
 {% download https://lh3.googleusercontent.com/-HoabV0pfQ0M/VZlcgaYfaeI/AAAAAAAAN8g/BTN-tzs9aUw/s800/CopyOnSelect.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class CopyOnSelectListener extends MouseAdapter implements CaretListener {
+<pre class="prettyprint"><code>class CopyOnSelectListener extends MouseAdapter implements CaretListener, KeyListener {
   private boolean dragActive;
+  private boolean shiftActive;
   private int dot;
   private int mark;
   @Override public final void caretUpdate(CaretEvent e) {
@@ -35,6 +36,16 @@ comments: true
     dragActive = false;
     fire(e.getSource());
   }
+  @Override public void keyPressed(KeyEvent e) {
+    shiftActive = (e.getModifiersEx() &amp; KeyEvent.SHIFT_DOWN_MASK) != 0;
+  }
+  @Override public void keyReleased(KeyEvent e) {
+    shiftActive = (e.getModifiersEx() &amp; KeyEvent.SHIFT_DOWN_MASK) != 0;
+    if (!shiftActive) {
+      fire(e.getSource());
+    }
+  }
+  @Override public void keyTyped(KeyEvent e) { /* empty */ }
   private void fire(Object c) {
     if (c instanceof JTextComponent) {
       JTextComponent tc = (JTextComponent) c;
@@ -58,12 +69,16 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、マウス操作を使って文字列を選択する場合のみ、選択文字列を自動的にクリップボードにコピーするリスナーを`JTextArea`に設定しています。
+上記のサンプルでは、マウス操作を使って文字列を選択する場合~~のみ~~、選択文字列を自動的にクリップボードにコピーするリスナーを`JTextArea`に設定しています。
 
-- マウスカーソルのドラッグで文字列選択した場合は、選択終了後にクリップボードにその文字列をコピーする
-- <kbd>Shift</kbd>+カーソルキーによる文字列選択は無視する
-- <kbd>Shift</kbd>+マウスクリックによる文字列選択は、選択終了後にクリップボードにその文字列をコピーする
-- マウスのダブルクリックによる文字列選択は、クリップボードにその操作で選択された文字列をコピーする
+- マウスのドラッグで文字列選択:
+    - ドラッグ終了後に、クリップボードへ選択されている文字列をコピー
+- <kbd>Shift</kbd>+カーソルキーによる文字列選択:
+    - ~~無視する~~ <kbd>Shift</kbd>キーをリリース後、クリップボードへ選択されている文字列をコピー
+- <kbd>Shift</kbd>+マウスクリックによる文字列選択:
+    - マウスリリース後、クリップボードへ選択されている文字列をコピー
+- マウスのダブルクリックによる文字列選択:
+    - ダブルクリック終了後、クリップボードへ選択されている文字列をコピー
 
 <!-- dummy comment line for breaking list -->
 
