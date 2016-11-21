@@ -107,5 +107,6 @@ comments: true
 
 ## コメント
 - ダミーの`view, edit`ボタンを実際に動作する行の`delete, copy`ボタンに変更(ソースを修正したのは2011年10月、スクリーンショットは未変更)。 -- *aterai* 2013-11-20 (水) 16:13:40
+- `VerticalScrollBar`が表示されると、セルの幅が縮むように変更。 -- *aterai* 2016-04-19 (火) 16:13:40
 
 <!-- dummy comment line for breaking list -->

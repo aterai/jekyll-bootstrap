@@ -85,5 +85,6 @@ class RedGreenChannelSwapFilter extends RGBImageFilter {
 
 ## コメント
 - `NimbusLookAndFeel`の場合、`JProgressBar#setOpaque(true)`として`JLayer`と`RedGreenChannelSwapFilter`を使用しないと、フチが半透明にならない。また`NimbusLookAndFeel`の場合、`JProgressBar#setForeground(Color)`で変化するのは他の`LookAndFeel`とは異なり、進捗文字列になる。 -- *aterai* 2013-06-25 (火) 20:51:09
+- 再描画が無限ループするバグを修正。 -- *aterai* 2014-11-30 (日) 17:57:58
 
 <!-- dummy comment line for breaking list -->

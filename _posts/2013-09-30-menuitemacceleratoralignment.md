@@ -158,3 +158,6 @@ public class awt_ja extends ListResourceBundle {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
+- `JMenuItem`に`GridBagLayout`を設定して右寄せする方法を追加。 -- *aterai* 2014-11-30 (日) 17:57:58
+
+<!-- dummy comment line for breaking list -->

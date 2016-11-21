@@ -139,3 +139,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
+- 画像上でのマウスドラッグによる移動のあとで、スクロールバーを使用した移動を行うと表示位置がおかしくなるバグがある。 -- *aterai* 2015-06-22 (月) 17:57:58
+    - ズームによるビュー移動には、`JViewport#setViewPosition(Point)`を使用するように変更し、またマウスドラッグによるスクロールは別のリスナを使用することでバグを回避。 -- *aterai* 2015-06-23 (火) 17:57:58
+
+<!-- dummy comment line for breaking list -->

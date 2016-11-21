@@ -206,3 +206,6 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
+- `src.zip`などがダウンロードできない不具合を修正。 -- *aterai* 2015-04-20 (月) 17:57:58
+
+<!-- dummy comment line for breaking list -->

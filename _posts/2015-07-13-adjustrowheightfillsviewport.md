@@ -60,3 +60,6 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
+- このページへのリンクがサイト全体で間違えていたのを修正。 -- *aterai* 2015-07-27 (水) 17:57:58
+
+<!-- dummy comment line for breaking list -->

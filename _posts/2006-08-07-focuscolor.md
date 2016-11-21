@@ -16,23 +16,21 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTM__NmYpI/AAAAAAAAAaE/EUMDKR-Rwa4/s800/FocusColor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static class BGFocusListener implements FocusListener {
-  private final Color dColor;
-  private final Color oColor;
-  public BGFocusListener(Color oColor, Color dColor) {
-    this.dColor = dColor;
-    this.oColor = oColor;
+<pre class="prettyprint"><code>class BGFocusListener implements FocusListener {
+  private final Color color;
+  protected BGFocusListener(Color color) {
+    this.color = color;
   }
-  @Override public void focusGained(final FocusEvent e) {
-    ((JTextField) e.getSource()).setBackground(dColor);
+  @Override public void focusGained(FocusEvent e) {
+    e.getComponent().setBackground(color);
   }
-  @Override public void focusLost(final FocusEvent e) {
-    ((JTextField) e.getSource()).setBackground(oColor);
+  @Override public void focusLost(FocusEvent e) {
+    e.getComponent().setBackground(UIManager.getColor("TextField.background"));
   }
 }
 </code></pre>
 
 ## 解説
-`JTextField`に`FocusListener`を追加することで、`focusGained`、`focusLost`した場合にそれぞれ背景色を変更しています。
+上記のサンプルでは、`JTextField`に`FocusListener`を追加し、`focusGained`で背景色を指定した色に変更、`focusLost`で`JTextField`のデフォルト背景色(`UIManager.getColor("TextField.background")`)に戻しています。
 
 ## コメント

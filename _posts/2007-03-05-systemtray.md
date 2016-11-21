@@ -95,5 +95,6 @@ TrayIcon icon   = new TrayIcon(image, "TRAY", popup);
     - もしくは、[JFrameのアイコンを非表示](http://ateraimemo.com/Swing/DisableDefaultIcon.html)のように透明なアイコンを設定する(クリックすると反応してしまいますが…)とか。 -- [aterai](http://ateraimemo.com/aterai.html)
     - `4`年以上前で、いまさら過ぎるのですが、やっと理解しました。自分の回答は的外れすぎですね。アイコン化したときにタスクバーボタンを非表示にするには、`Window#dispose()`を実行するとよさそうです。このサンプルを修正して非表示にするよう変更しました。 -- *aterai* 2014-12-25 (火) 16:35:38
     - [TrayIconの使用中にJFrameを最小化したとき、タスクバーボタンを非表示にする](http://ateraimemo.com/Swing/HideTaskbarButton.html)に移動
+- 間違えて、`Window#addWindowStateListener(...)`を使用していたので、`Window#addWindowListener(...)`を使用するように修正。 -- *aterai* 2014-12-25 (水) 17:57:58
 
 <!-- dummy comment line for breaking list -->
