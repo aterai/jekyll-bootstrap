@@ -89,7 +89,7 @@ comments: true
               } else {
                 try {
                   Document doc = area.getDocument();
-                  doc.remove(area.getDocument().getLength() - 1, 1);
+                  doc.remove(doc.getLength() - 1, 1);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }

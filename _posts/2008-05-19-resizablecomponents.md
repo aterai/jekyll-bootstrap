@@ -18,8 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>@Override public void mouseDragged(MouseEvent e) {
   if (startPos == null || startingBounds == null) return;
-  Point p = SwingUtilities.convertPoint(
-      (Component) e.getSource(), e.getX(), e.getY(), null);
+  Point p = SwingUtilities.convertPoint(e.getComponent(), e.getX(), e.getY(), null);
   int deltaX = startPos.x - p.x;
   int deltaY = startPos.y - p.y;
   int newX = getX();
