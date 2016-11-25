@@ -32,6 +32,6 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSpinner`や`JSlider`上でマウスホイールを回転させると値が変化します。`e.getWheelRotation()`の値は、ホイールの回転が下方向の場合は増加、上方向は減少になります。
+上記のサンプルでは、`JSpinner`や`JSlider`上でマウスホイールを回転させるとその値を変更することができます。`MouseWheelEvent#getWheelRotation()`の値は、ホイールの回転が下方向の場合は増加で正、上方向は減少で負になります。
 
 ## コメント

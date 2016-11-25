@@ -20,9 +20,9 @@ comments: true
 </code></pre>
 
 ## 解説
-`JDK 1.5.0`で導入された、`Window#setAlwaysOnTop(boolean)`メソッドを使って、フレームを常に最前面に表示します。
+`JDK 1.5.0`で導入された、`Window#setAlwaysOnTop(boolean)`メソッドを使用して、フレームを常に最前面に表示します。
 
-プラットフォームで、最前面がサポートされていない場合は、何も起こらないようです。サポートされているかどうかは、`JDK 1.6.0`で導入された、`Window#isAlwaysOnTopSupported()`か、`Toolkit.isAlwaysOnTopSupported()`で調べることができます。
+プラットフォームで、「常に最前面」がサポートされていない場合は、何も変化しません。これがサポートされているかどうかは、`JDK 1.6.0`で導入された`Window#isAlwaysOnTopSupported()`(または`Toolkit.isAlwaysOnTopSupported()`)で調べることが可能です。
 
 ## 参考リンク
 - [Window.html#setAlwaysOnTop(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setAlwaysOnTop-boolean-)
