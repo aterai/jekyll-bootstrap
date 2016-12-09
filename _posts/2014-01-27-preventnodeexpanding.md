@@ -37,9 +37,9 @@ comments: true
 </code></pre>
 
 ## 解説
-- `TreeWillExpandListener`を実装し、`treeWillExpand(...)`メソッド内で、ノード(`File`)の名前がドットで始まる場合、`ExpandVetoException`を投げて展開をキャンセル
+- `TreeWillExpandListener`を実装し、`treeWillExpand(...)`メソッド内で、ノード(`File`)の名前がドットで始まる場合、`ExpandVetoException`を投げてマウスクリックなどによる展開をキャンセル
     - これらのノードは展開は不可だが、選択自体は可能
-- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、名前がドットで始まる場合、そのノードを`setEnabled(false)`で無効状態にして描画
+- 名前がドットで始まる場合、`DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、そのノードを`setEnabled(false)`で無効状態に変更して描画
 
 <!-- dummy comment line for breaking list -->
 

@@ -69,7 +69,7 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-セルの中にある`JComboBox`の幅を可変ではなく固定にする場合は、以下のような`FlowLayout`のパネルに`getPreferredSize()`をオーバーライドして幅を固定した`JComboBox`を使用する方法がある。
+セルの中にある`JComboBox`の幅を可変ではなく固定にする場合は、以下のような`FlowLayout`のパネルに`getPreferredSize()`をオーバーライドして幅を固定した`JComboBox`を使用する方法もあります。
 
 <pre class="prettyprint"><code>class ComboBoxPanel extends JPanel {
   private String[] m = new String[] {"a", "b", "c"};

@@ -74,7 +74,7 @@ model.addTableModelListener(new TableModelListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFrame.setDefaultLookAndFeelDecorated(true);`で`JFrame`がデフォルトのウィンドウ装飾を使用するよう設定し、`UIManager.setColor(...)`を使用して、タイトルバーの文字色、背景色を変更するテストを実行することが可能です。
+上記のサンプルでは、`JFrame`がデフォルトのウィンドウ装飾を使用するように`JFrame.setDefaultLookAndFeelDecorated(true);`を指定し、`UIManager.setColor(...)`を使用してタイトルバーの文字色、背景色を変更するテストを行っています。
 
 - `activeCaption`: タイトルバーの背景色
 - `activeCaptionBorder`: タイトルバーの`Border`の色

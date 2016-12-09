@@ -97,32 +97,28 @@ import javax.swing.*;
 
 public class ProgressSplashScreenTest {
   public static void main(String[] args) {
-    EventQueue.invokeLater(new Runnable() {
-      @Override public void run() {
-        createAndShowGUI();
-      }
+    EventQueue.invokeLater(() -&gt; {
+      createAndShowGUI();
     });
   }
   public static void createAndShowGUI() {
-    final JFrame frame = new JFrame();
-    final JDialog splashScreen  = new JDialog(
+    JFrame frame = new JFrame();
+    JDialog splashScreen  = new JDialog(
       frame, Dialog.ModalityType.DOCUMENT_MODAL);
-    final JProgressBar progress = new JProgressBar();
-    final JTabbedPane tabbedPane = new JTabbedPane();
+    JProgressBar progress = new JProgressBar();
+    JTabbedPane tabbedPane = new JTabbedPane();
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     frame.getContentPane().add(tabbedPane);
     progress.setStringPainted(true);
 
-    EventQueue.invokeLater(new Runnable() {
-      @Override public void run() {
-        splashScreen.setUndecorated(true);
-        splashScreen.getContentPane().add(
-            new JLabel(new SplashScreenIcon()));
-        splashScreen.getContentPane().add(progress, BorderLayout.SOUTH);
-        splashScreen.pack();
-        splashScreen.setLocationRelativeTo(null);
-        splashScreen.setVisible(true);
-      }
+    EventQueue.invokeLater(() -&gt; {
+      splashScreen.setUndecorated(true);
+      splashScreen.getContentPane().add(
+          new JLabel(new SplashScreenIcon()));
+      splashScreen.getContentPane().add(progress, BorderLayout.SOUTH);
+      splashScreen.pack();
+      splashScreen.setLocationRelativeTo(null);
+      splashScreen.setVisible(true);
     });
 
     SwingWorker&lt;Void, String&gt; worker = new SwingWorker&lt;Void, String&gt;() {
@@ -166,11 +162,9 @@ public class ProgressSplashScreenTest {
         splashScreen.dispose();
       }
     };
-    worker.addPropertyChangeListener(new PropertyChangeListener() {
-      @Override public void propertyChange(PropertyChangeEvent e) {
-        if ("progress".equals(e.getPropertyName())) {
-          progress.setValue((Integer) e.getNewValue());
-        }
+    worker.addPropertyChangeListener(e -&gt; {
+      if ("progress".equals(e.getPropertyName())) {
+        progress.setValue((Integer) e.getNewValue());
       }
     });
     worker.execute();

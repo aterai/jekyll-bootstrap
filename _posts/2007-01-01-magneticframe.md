@@ -17,16 +17,23 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);
-desktop.setDesktopManager(new DefaultDesktopManager() {
+desktop.setDesktopManager(new MagneticDesktopManager());
+
+//...
+class MagneticDesktopManager extends DefaultDesktopManager {
   @Override public void dragFrame(JComponent frame, int x, int y) {
-    int e = x;
-    int n = y;
-    int w = desktop.getSize().width - frame.getSize().width - e;
-    int s = desktop.getSize().height - frame.getSize().height - n;
-    if (isNear(e) || isNear(n) || isNear(w) || isNear(s)) {
-      super.dragFrame(frame, getX(e, w), getY(n, s));
-    } else {
-      super.dragFrame(frame, x, y);
+    Container c = SwingUtilities.getAncestorOfClass(JDesktopPane.class, frame);
+    if (c instanceof JDesktopPane) {
+      JDesktopPane desktop = (JDesktopPane) c;
+      int e = x;
+      int n = y;
+      int w = desktop.getSize().width  - frame.getSize().width  - e;
+      int s = desktop.getSize().height - frame.getSize().height - n;
+      if (isNear(e) || isNear(n) || isNear(w) || isNear(s)) {
+        super.dragFrame(frame, getX(e, w), getY(n, s));
+      } else {
+        super.dragFrame(frame, x, y);
+      }
     }
   }
   private static int getX(int e, int w) {
@@ -38,7 +45,7 @@ desktop.setDesktopManager(new DefaultDesktopManager() {
   private static boolean isNear(int c) {
     return Math.abs(c) &lt; 10;
   }
-});
+}
 </code></pre>
 
 ## 解説

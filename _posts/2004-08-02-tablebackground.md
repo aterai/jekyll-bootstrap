@@ -42,7 +42,7 @@ scroll.getColumnHeader().setBackground(Color.RED);
 </code></pre>
 
 - - - -
-`JDK 1.6.0`で追加された`JTable#setFillsViewportHeight`メソッドを使用すると、`JTable`の背景色を設定すれば、`JViewport`の背景色を設定する必要はありません(参考: [JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html))。
+`JDK 1.6.0`で追加された`JTable#setFillsViewportHeight`メソッドを使用して`JTable`を`JViewport`の高さまで拡張しておけば、直接`JTable`の背景色を設定するだけでこのサンプルと同様の状態になります。(参考: [JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html))。
 
 ## 参考リンク
 - [JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html)

@@ -19,8 +19,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOF06rk7I/AAAAAAAAAb0/31ZBya_beYk/s800/HyperlinkInTableCell.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class URLRenderer extends DefaultTableCellRenderer
-                  implements MouseListener, MouseMotionListener {
+<pre class="prettyprint"><code>class URLRenderer extends DefaultTableCellRenderer implements MouseInputListener {
   private int row = -1;
   private int col = -1;
   @Override public Component getTableCellRendererComponent(

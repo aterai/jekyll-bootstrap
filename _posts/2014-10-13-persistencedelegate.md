@@ -32,7 +32,7 @@ comments: true
 </code></pre>
 
 ## 解説
-- `XMLEncoder`
+- `XMLEncoder`ボタンをクリック
     - `XMLEncoder#setPersistenceDelegate(...)`で、`DefaultTableModel`の書き出しを自作の`DefaultTableModelPersistenceDelegate`に設定
     - テンポラリディレクトリに`XML`ファイルの書き出しと、`JTextArea`にその`XML`ファイルの読み込み
 
@@ -55,7 +55,7 @@ comments: true
 }
 </code></pre>
 
-- `XMLDecoder`
+- `XMLDecoder`ボタンをクリック
     - `JTextArea`に読み込まれている`XML`ファイルを`XMLDecoder`で`DefaultTableModel`に復元、`JTable#setModel(...)`で設定
 
 <!-- dummy comment line for breaking list -->
@@ -69,7 +69,7 @@ comments: true
 }
 </code></pre>
 
-- `clear`
+- `clear`ボタンをクリック
     - 初期状態の`DefaultTableModel`を`JTable`に設定
 
 <!-- dummy comment line for breaking list -->
