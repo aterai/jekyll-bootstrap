@@ -32,7 +32,7 @@ private final JTextPane editor = new JTextPane() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTextPane#doLayout`メソッドをオーバーライドし、幅の変更に応じて使用するフォントサイズを変更(`Font#deriveFont(float)`)しています。
+上記のサンプルでは、`JTextPane#doLayout`メソッドをオーバーライドし、その幅の変更に応じて使用するフォントのサイズを`Font#deriveFont(float)`で変更しています。
 
 ## 参考リンク
 - [Harmonic Code: Friday Fun Component XI](http://harmoniccode.blogspot.com/2011/10/friday-fun-component-xi.html)

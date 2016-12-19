@@ -44,7 +44,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-上記のサンプルには、`InputMap`、`ActionMap`に<kbd>F3</kbd>キーで`beep`が鳴るようにキーストロークとアクションを追加しています。このキーストロークは`JTable#editCellAt`メソッドでのキー入力チェックとは別に実行されるので、デフォルトの<kbd>F2</kbd>キーでの`startEditing`、<kbd>F8</kbd>キーでの`focusHeader`は、`JTable#editCellAt(...)`の戻り値とは関係なく有効になっています。
+上記のサンプルでは、`InputMap`、`ActionMap`に<kbd>F3</kbd>キーで`beep`が鳴るようにキーストロークとアクションを追加しています。このキーストロークは`JTable#editCellAt`メソッドでのキー入力チェックとは別に実行されるので、デフォルトの<kbd>F2</kbd>キーでの`startEditing`、<kbd>F8</kbd>キーでの`focusHeader`は、`JTable#editCellAt(...)`の戻り値とは関係なく有効になっています。
 
 - `JTable#processKeyBinding(...)`をオーバーライドしてキー入力自体を弾くと、`InputMap`に追加したキーストロークも除かれるので、これらのアクションも実行されない
 

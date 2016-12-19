@@ -25,7 +25,7 @@ comments: true
       Component c = e.getComponent();
       if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0
           &amp;&amp; c.isShowing()) {
-        Window w = SwingUtilities.windowForComponent(c);
+        Window w = SwingUtilities.getWindowAncestor(c);
         if (w instanceof JWindow) {
           ((JWindow) w).setBackground(new Color(0x0, true));
         }
@@ -70,11 +70,22 @@ comments: true
 </code></pre>
 
 ## 解説
-- `JToolTop`に`HierarchyListener`を追加し、その`JToolTop`が表示状態になったら親の`JWindow`を透明に設定
-    - `JWindow#setShape(...)`で形状を変更することも可能だが、この場合フチを滑らかにすることが難しい
 - `setOpaque(false)`で背景色を描画しない`JToolTop`を作成し、`JToolTop#paintComponent(...)`をオーバーライドして吹き出し風の背景を描画
+- `JToolTop`に`HierarchyListener`を追加し、その`JToolTop`が表示状態になった時、親が`JWindow`かどうかを調べてこれを透明に設定
+    - `JToolTop`が元`JFrame`外に表示される場合は、`HeavyWeightWindow`(`JWindow`)に配置して表示されるため、`JWindow`を透明にする必要がある
+    - `JToolTop`が元`JFrame`内に表示される場合は、その`JFrame`の`JLayeredPane`の`POPUP_LAYER`に`JToolTop`が描画されるので、`setOpaque(false)`な`JToolTop`の背景は描画されない
+    - `JWindow#setShape(...)`で形状を変更することも可能だが、この場合フチを滑らかにすることが難しい
 - `JList#createToolTip()`をオーバーライドし、通常の`JToolTip`の代わりに`BalloonToolTip`(上記の`JToolTip`)を作成して返すように設定
 
 <!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>JList&lt;String&gt; list = new JList&lt;String&gt;(model) {
+  @Override public JToolTip createToolTip() {
+    JToolTip tip = new BalloonToolTip();
+    tip.setComponent(this);
+    return tip;
+  }
+};
+</code></pre>
 
 ## コメント

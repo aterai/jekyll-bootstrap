@@ -91,7 +91,7 @@ private static boolean isURLColumn(JTable table, int column) {
 </code></pre>
 
 ## 解説
-`SwingUtilities2.pointOutsidePrefSize(...)`を参考にして、セルの表示に使用するコンポーネント(`JLabel`)の標準サイズ(幅)内にカーソルがあるかどうかを比較するメソッドを作成しています。`JTable`に追加した`MouseListener`でこれを使用し、`URL`の文字列を`Hover`するか、それがクリックされたかを判断しています。
+`SwingUtilities2.pointOutsidePrefSize(...)`を参考にして、セルの表示に使用するコンポーネント(`JLabel`)の推奨サイズの範囲内にカーソルがあるかどうかを比較するメソッドを作成しています。`JTable`に追加した`MouseListener`でこれを使用し、`URL`の文字列を`Hover`状態に変更するか、またはクリックされたかなどを判断しています。
 
 ## 参考リンク
 - [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
