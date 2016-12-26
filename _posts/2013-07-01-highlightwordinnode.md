@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class HighlightTreeCellRenderer extends JTextField
                                 implements TreeCellRenderer {
-  Color backgroundSelectionColor = new Color(220, 240, 255);
+  private static final Color BACKGROUND_SELECTION_COLOR = new Color(220, 240, 255);
   Highlighter.HighlightPainter highlightPainter =
     new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW);
   public String q;
@@ -36,7 +36,7 @@ comments: true
     String txt = Objects.toString(value, "");
     getHighlighter().removeAllHighlights();
     setText(txt);
-    setBackground(isSelected ? backgroundSelectionColor : Color.WHITE);
+    setBackground(isSelected ? BACKGROUND_SELECTION_COLOR : Color.WHITE);
     if (q != null &amp;&amp; !q.isEmpty() &amp;&amp; txt.startsWith(q)) {
       try {
         getHighlighter().addHighlight(0, q.length(), highlightPainter);

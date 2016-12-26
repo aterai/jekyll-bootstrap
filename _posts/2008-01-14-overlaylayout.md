@@ -49,7 +49,7 @@ b1.add(b2);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JButton`に`OverlayLayout`を使って、別の`JButton`を重ねて右下に配置しています。
+上記のサンプルでは、`JButton`に`OverlayLayout`を使って、別の`JButton`を右下に重ねて配置しています。
 
 ## 参考リンク
 - [Box Layout Features](http://docs.oracle.com/javase/tutorial/uiswing/layout/box.html#features)

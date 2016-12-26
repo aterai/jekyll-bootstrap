@@ -42,23 +42,28 @@ panel.repaint();
 ## 解説
 上記のサンプルでは、以下のような定数フィールド値をコンボボックスで指定することで、タイトルの位置や揃えを変更できるようになっています。
 
-- タイトルの位置を`TitledBorder#setTitlePosition`メソッドで指定
-    - `DEFAULT_POSITION`
-    - `ABOVE_TOP`
-    - `TOP`
-    - `BELOW_TOP`
-    - `ABOVE_BOTTOM`
-    - `BOTTOM`
-    - `BELOW_BOTTOM`
+- タイトルの位置を`TitledBorder#setTitlePosition(int)`メソッドで指定
+    - `TitledBorder.DEFAULT_POSITION`
+    - `TitledBorder.ABOVE_TOP`
+    - `TitledBorder.TOP`
+    - `TitledBorder.BELOW_TOP`
+    - `TitledBorder.ABOVE_BOTTOM`
+    - `TitledBorder.BOTTOM`
+    - `TitledBorder.BELOW_BOTTOM`
 
 <!-- dummy comment line for breaking list -->
 
-- タイトルの揃えを`TitledBorder#setTitleJustification`メソッドで指定
-    - `LEFT`
-    - `CENTER`
-    - `RIGHT`
-    - `LEADING`
-    - `TRAILING`
+- タイトルの揃えを`TitledBorder#setTitleJustification(int)`メソッドで指定
+    - `TitledBorder.LEFT`
+    - `TitledBorder.CENTER`
+    - `TitledBorder.RIGHT`
+    - `TitledBorder.LEADING`
+    - `TitledBorder.TRAILING`
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [TitledBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/TitledBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

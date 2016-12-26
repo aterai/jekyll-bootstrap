@@ -90,6 +90,7 @@ table.getColumnModel().getColumn(2).setCellRenderer(r);
 ## 参考リンク
 - [JTableHeaderの字揃え](http://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
     - ヘッダの文字揃えに関するテストは、上記の場所に移動
+- [JTableのセル内文字列を両端揃えにする](http://ateraimemo.com/Swing/InterIdeographJustify.html)
 
 <!-- dummy comment line for breaking list -->
 
