@@ -37,7 +37,7 @@ comments: true
         - `combo.getEditor().getEditorComponent()`で取得した`JTextField`に`MatteBorder`を追加して、文字列入力欄にアイコンを表示
     - 下:
         - `combo.getEditor().getEditorComponent()`で取得した`JTextField`にアイコンを追加した`JLabel`を追加
-        - `JLabel`が文字列と重ならないように、`JTextField`にはその幅だけ余白をとるように設定
+        - アイコン(`JLabel`)が文字列と重ならないように、`JTextField`にはその幅だけ余白をとるように設定
 
 <!-- dummy comment line for breaking list -->
 
