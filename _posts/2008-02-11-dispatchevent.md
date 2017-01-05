@@ -53,6 +53,7 @@ JButton button = new JButton(new AbstractAction("Connect") {
 - `Toolkit.getDefaultToolkit().addAWTEventListener`で、`AWTEventListener`を設定
 - `AWTEvent`が発生した時に`timer.restart();`でタイマーをリセット
 - 時間がきたら`Toolkit.getDefaultToolkit().removeAWTEventListener`で`AWTEvent`を取り除く
+- `JDK 1.7.0`以上の場合、[LayerUI (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/LayerUI.html)で同様の処理が可能
 
 <!-- dummy comment line for breaking list -->
 
