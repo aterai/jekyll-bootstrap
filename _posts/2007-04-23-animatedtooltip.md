@@ -24,6 +24,16 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;")
 - 上
     - `javax.swing.Timer`を使ってアニメーションを行う`JLabel`を使用
     - [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)
+        
+        <pre class="prettyprint"><code>JLabel l1 = new JLabel("Timer Animated ToolTip") {
+          @Override public JToolTip createToolTip() {
+            JToolTip tip = new AnimatedToolTip(new AnimatedLabel(""));
+            tip.setComponent(this);
+            return tip;
+          }
+        };
+        l1.setToolTipText("dummy");
+</code></pre>
 - 中
     - `Animated GIF`ファイルを`JLabel`のアイコンとして使用
 - 下

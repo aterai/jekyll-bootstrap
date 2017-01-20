@@ -25,8 +25,7 @@ comments: true
   private final Action startEditing = new AbstractAction() {
     @Override public void actionPerformed(ActionEvent e) {
       getRootPane().setGlassPane(glassPane);
-      Rectangle rect = getUI().getTabBounds(
-          EditableTabbedPane.this, getSelectedIndex());
+      Rectangle rect = getBoundsAt(getSelectedIndex());
       Point p = SwingUtilities.convertPoint(
           EditableTabbedPane.this, rect.getLocation(), glassPane);
       //rect.setBounds(p.x + 2, p.y + 2, rect.width - 4, rect.height - 4);

@@ -23,7 +23,7 @@ comments: true
     FontMetrics fm = getFontMetrics(getFont());
     int stringWidth = fm.stringWidth(text) + 10;
     int x = getSize().width - stringWidth;
-    Rectangle lastTab = getUI().getTabBounds(this, getTabCount() - 1);
+    Rectangle lastTab = getBoundsAt(getTabCount() - 1);
     int tabEnd = lastTab.x + lastTab.width;
     if (x &lt; tabEnd) {
       x = tabEnd;

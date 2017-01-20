@@ -17,8 +17,10 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JSpinner.NumberEditor editor = (JSpinner.NumberEditor) spinner.getEditor();
-DefaultFormatter formatter = (DefaultFormatter) editor.getTextField().getFormatter();
-formatter.setAllowsInvalid(false);
+JFormattedTextField.AbstractFormatter formatter = editor.getTextField().getFormatter();
+if (formatter instanceof DefaultFormatter) {
+  ((DefaultFormatter) formatter).setAllowsInvalid(false);
+}
 </code></pre>
 
 ## 解説
