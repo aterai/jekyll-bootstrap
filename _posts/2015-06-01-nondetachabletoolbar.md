@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: NonDetachableToolBar
 title: JToolBarをドラッグによる移動は可能だが分離は不可に設定する
-tags: [JToolBar]
+tags: [JToolBar, Window]
 author: aterai
 pubdate: 2015-06-01T00:19:48+09:00
 description: JToolBarをドラッグで同コンテナ内で移動することは可能だが、別ウインドウへの分離は不可になるよう設定します。
@@ -26,7 +26,7 @@ comments: true
 
 ## 解説
 - `Floatable(movable)`
-    - `JToolBar#setFloatable(boolean)`で、ドラッグによる移動の可不可を設定
+    - `JToolBar#setFloatable(boolean)`で、マウスドラッグによる移動の可・不可を設定
     - 別ウィンドウへのドラッグアウトが不可になるだけでなく、同コンテナ内での移動も不可になる
 - `Floating(detachable)`
     - `BasicToolBarUI#setFloating(...)`をオーバーライドして、`JToolBar`が別ウインドウに分離できないように設定
@@ -36,6 +36,7 @@ comments: true
 
 ## 参考リンク
 - [java - Can you make a JToolBar undetachable? - Stack Overflow](http://stackoverflow.com/questions/30484769/can-you-make-a-jtoolbar-undetachable)
+- [JToolBarが起動時に指定した位置でフローティング状態になるよう設定する](http://ateraimemo.com/Swing/FloatingToolBarStartingLocation.html)
 
 <!-- dummy comment line for breaking list -->
 
