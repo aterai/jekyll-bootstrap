@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class TabThumbnailTabbedPane extends JTabbedPane {
   private int current = -1;
-  private static final double SCALE = 0.15d;
+  private static final double SCALE = .15;
   private Component getTabThumbnail(int index) {
     Component c = getComponentAt(index);
     Icon icon = null;
@@ -27,7 +27,8 @@ comments: true
       Dimension d = c.getPreferredSize();
       int newW = (int) (d.width  * SCALE);
       int newH = (int) (d.height * SCALE);
-      BufferedImage image = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
+      BufferedImage image = new BufferedImage(
+          newW, newH, BufferedImage.TYPE_INT_ARGB);
       Graphics2D g2 = image.createGraphics();
       g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
                           RenderingHints.VALUE_INTERPOLATION_BILINEAR);
@@ -55,11 +56,13 @@ comments: true
       @Override public Dimension getPreferredSize() {
         Insets i = getInsets();
         Dimension d = p.getPreferredSize();
-        return new Dimension(d.width  + i.left + i.right, d.height + i.top  + i.bottom);
+        return new Dimension(
+            d.width + i.left + i.right, d.height + i.top + i.bottom);
       }
     };
     tip.setComponent(this);
-    LookAndFeel.installColorsAndFont(p, "ToolTip.background", "ToolTip.foreground", "ToolTip.font");
+    LookAndFeel.installColorsAndFont(
+        p, "ToolTip.background", "ToolTip.foreground", "ToolTip.font");
     tip.setLayout(new BorderLayout());
     tip.add(p);
     return tip;

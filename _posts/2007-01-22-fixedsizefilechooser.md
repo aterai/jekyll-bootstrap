@@ -30,7 +30,7 @@ comments: true
 ## 解説
 `JFileChooser`の`createDialog`メソッドをオーバーライドして、リサイズを制限したり、最小サイズを設定したりしています。
 
-`JDK 6`では、`Windows`環境でも、オーバーライドした`createDialog`メソッド内で、`JDialog#setMinimumSize(Dimension)`を使うだけで、最小サイズの設定が出来るようになっています。
+`Windows`環境でも、`JDK 6`以上でオーバーライドした`createDialog`メソッド内で`JDialog#setMinimumSize(Dimension)`を使用すれば、最小サイズの設定が可能です。
 
 ## 参考リンク
 - [Swing - JFileChooser setMinimunSize not working?](https://community.oracle.com/thread/1374445)

@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2017-01-16T03:46:40+09:00
 description: JTabbedPaneのタブの形を台形に変更し、左側にあるタブが上に表示されるよう設定します。
 image: https://drive.google.com/uc?export=view&id=1NeVPi85J0fLf7nSH0xB03Rk9tclob08S7w
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2017/01/change-tab-shape-of-jtabbedpane-to.html
+    lang: en
 comments: true
 ---
 ## 概要
@@ -109,7 +112,7 @@ comments: true
 - [JTabbedPaneのタブエリア背景色などをテスト](http://ateraimemo.com/Swing/TabAreaBackground.html)
 - [JTabbedPaneのNimbusLookAndFeelにおけるスタイルを変更する](http://ateraimemo.com/Swing/NimbusTabbedPanePainter.html)
     - `SynthLookAndFeel`などの場合は、`javax.swing.plaf.Painter`を変更する
-- [java - Tabs Rendering Order in Custom JTabbedPane - Stack Overflow](http://stackoverflow.com/questions/41566659/tabs-rendering-order-in-custom-jtabbedpane)
+- [java - Tabs Rendering Order in Custom JTabbedPane - Stack Overflow](https://stackoverflow.com/questions/41566659/tabs-rendering-order-in-custom-jtabbedpane)
 
 <!-- dummy comment line for breaking list -->
 
