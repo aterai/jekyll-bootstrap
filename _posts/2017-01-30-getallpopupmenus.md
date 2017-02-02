@@ -33,6 +33,7 @@ tabs.getActionMap().put("next2", new AbstractAction() {
 ## 解説
 - <kbd>Ctrl+1</kbd>: `prev1`
     - `JTable`に設定した`JPopupMenu`を開いた状態で、`JTabbedPane`に設定したキー入力(`JComponent.WHEN_IN_FOCUSED_WINDOW`)によるタブ切替アクションを実行すると、`JPopupMenu`が開いたまま前のタブの選択が実行される
+    - `requestFocusInWindow()`などでフォーカスを`JTable`以外に移動しても、`JPopupMenu`は閉じない
 - <kbd>Ctrl+2</kbd>: `next1`
     - `JTable`に設定した`JPopupMenu`を開いた状態(`JPopupMenu`にフォーカスがある)の場合、`JTabbedPane`に設定したキー入力(`JComponent.WHEN_FOCUSED`)によるタブ切替アクションは、実行することはできない
 - <kbd>Ctrl+3</kbd>: `prev2`

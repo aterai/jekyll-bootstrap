@@ -55,11 +55,7 @@ private class SortAction extends AbstractAction {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、マウスカーソルの下にある`JTableHeader`カラムをクリック(`WindowsLookAndFeel`:右クリック)することで、`JPopupMenu`を表示してソートすることができます。
-
-- 左クリックではソートしない
-
-<!-- dummy comment line for breaking list -->
+上記のサンプルでは、マウスカーソルの下にある`JTableHeader`カラムをクリック(`WindowsLookAndFeel`:右クリック)して`JPopupMenu`を表示し、昇順か降順の`JMenuItem`を指定してのソートが可能になっています。デフォルトのカラム左クリックによるソートは、`TableRowSorter#toggleSortOrder(...)`をオーバーライドして無効にしています。
 
 - - - -
 ソートしたあとで、`JTableHeader`のフォーカスペイントをクリアするために以下のような`PopupMenuListener`を追加しています。
