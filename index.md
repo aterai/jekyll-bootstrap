@@ -24,10 +24,10 @@ Posted by [aterai](http://ateraimemo.com/:Users/aterai.html) at 2003-09-25
 
 ## 編集方針
 - **最も欲しいものはサンプルである** - [steps to phantasien t(2007-07-06)](http://steps.dodgson.org/bn/2007/07/06/#p02)より引用
-    - 各ページからダブルクリックなどで実行可能な`JAR`ファイルをダウンロードすることができます。
+    - 各ページからダブルクリックなどで実行可能な`JAR`ファイルをダウンロード可能
 - `SSCCE` [Short, Self Contained, Correct Example](http://sscce.org/)
 - `MCVE` [How to create a Minimal, Complete, and Verifiable example - Help Center - Stack Overflow](https://stackoverflow.com/help/mcve)
-    - すべての記事毎にソースコードや画像などのリソース、これらを`Ant`で簡単にコンパイル、実行するための`build.xml`をまとめた`zip`ファイルを添付しています。
+    - すべての記事ごとにソースコードや画像などのリソース、これらを`Ant`で簡単にコンパイル、実行するための`build.xml`をまとめた`zip`ファイルを添付
     - `Git`リポジトリを取得する場合:  
         <pre><code>git clone https://github.com/aterai/java-swing-tips.git</code></pre>
 
