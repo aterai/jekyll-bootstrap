@@ -36,12 +36,12 @@ comments: true
     - このため、`JToolBar`をフローティング状態に移行する前に、`BasicToolBarUI#setFloatingLocation(...)`でその位置を指定しておく必要がある
 - フローティング状態の`JToolBar`から親`Window`を取得し、直接`Window#setLocation(...)`でその位置を指定する方法もある
     
-    <pre class="prettyprint"><code>//ドッキング元のメインウィンドウ
+    <pre class="prettyprint"><code>//ドッキング元のメインWindow
     Window w = (Window) getTopLevelAncestor();
     Point pt = w.getLocation();
     //フローティング状態に移行
     ((BasicToolBarUI) toolbar.getUI()).setFloating(true, null);
-    //`JToolBar`(フローティング状態)のウィンドウ
+    //JToolBar(フローティング状態)のWindow
     Container c = toolbar.getTopLevelAncestor();
     if (c instanceof Window) {
       ((Window) c).setLocation(pt.x + 120, pt.y + 160);

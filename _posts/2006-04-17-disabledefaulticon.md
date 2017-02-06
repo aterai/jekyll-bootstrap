@@ -32,10 +32,10 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
     - `Web Start`で起動した場合、`AccessControlException: access denied ("java.io.FilePermission" "" "read")`が発生
 - `new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);`
     - サイズが`1x1`で、透明な`Image`を表示
-    - タイトルバーの左端をクリックするとタイトルメニューは表示することができる
+    - タイトルアイコンは非表示でもクリックするとタイトルメニューは開く
 - `toolkit.createImage(url_16x16transparent);`
     - 透過色で塗りつぶした`16x16`の`PNG`画像をアイコンとして使用
-    - タイトルバーの左端をクリックするとタイトルメニューは表示することができる
+    - タイトルアイコンは非表示でもクリックするとタイトルメニューは開く
 
 <!-- dummy comment line for breaking list -->
 
