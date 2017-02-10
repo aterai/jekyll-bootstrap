@@ -29,25 +29,40 @@ stream(chooser)
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFileChooser`の詳細表示で使用されている`JTable`を取得(`JDK1.8`で導入された`Stream`を使用)し、その自動サイズ変更モードを変更しています。
+上記のサンプルでは、`JFileChooser`の詳細表示で使用されている`JTable`を取得し、その自動サイズ変更モードを変更しています。
 
-- - - -
-以下のように、`Stream`を使用しない方法も多数あります。
-
-<pre class="prettyprint"><code>public static boolean searchAndResizeMode(Container parent) {
-  for (Component c: parent.getComponents()) {
-    if (c instanceof JTable) {
-      ((JTable) c).setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
-      return true;
-    } else if (c instanceof Container &amp;&amp; searchAndResizeMode((Container) c)) {
-      return true;
-    }
-  }
-  return false;
-}
+- メモ
+    - `JPopupMenu`などの子`Component`は取得しない
+        - [JFileChooserでの隠しファイルの非表示設定を変更する](http://ateraimemo.com/Swing/FileHidingEnabled.html)
+    - `JDK1.8`で導入された`Stream`を使用
+        - 以下のように`flatMap`を使用する方法もある
+            
+            <pre class="prettyprint"><code>public static Stream&lt;Component&gt; stream5(Container parent) {
+              return Arrays.stream(parent.getComponents())
+                .filter(Container.class::isInstance).map(Container.class::cast)
+                .flatMap(c -&gt; Stream.concat(Stream.of(c), stream5(c)));
+            }
+            public static Stream&lt;Component&gt; stream6(Container parent) {
+              return Stream.concat(Stream.of(parent), Arrays.stream(parent.getComponents())
+                .filter(Container.class::isInstance).map(Container.class::cast)
+                .flatMap(MainPanel::stream6));
+            }
 </code></pre>
-
-## 参考リンク
+        - 以下のように、`Stream`を使用しない方法もある
+            
+            <pre class="prettyprint"><code>public static boolean searchAndResizeMode(Container parent) {
+              for (Component c: parent.getComponents()) {
+                if (c instanceof JTable) {
+                  ((JTable) c).setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
+                  return true;
+                } else if (c instanceof Container &amp;&amp; searchAndResizeMode((Container) c)) {
+                  return true;
+                }
+              }
+              return false;
+            }
+</code></pre>
+        - * 参考リンク [#reference]
 - [JFileChooserのデフォルトをDetails Viewに設定](http://ateraimemo.com/Swing/DetailsViewFileChooser.html)
 - [JFileChooserでの隠しファイルの非表示設定を変更する](http://ateraimemo.com/Swing/FileHidingEnabled.html)
 - [Get All Components in a container : Container « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/GetAllComponentsinacontainer.htm)

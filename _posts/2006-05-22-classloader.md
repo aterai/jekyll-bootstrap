@@ -87,8 +87,8 @@ set CLASSPATH=c:\temp;.\target\classes
 この場合、`src.zip`に元々入っていた`適当な場所/test.png`ではなく、`file:/C:/temp/example/test.png`という`URL`が`getResource`で取得できます。
 
 ## 参考リンク
-- [位置に依存しない方法でのリソースへのアクセス](http://docs.oracle.com/javase/jp/7/technotes/guides/lang/resources.html)
-- [Loading Images Using getResource](http://docs.oracle.com/javase/tutorial/uiswing/components/icon.html#getresource)
+- [位置に依存しない方法でのリソースへのアクセス](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/lang/resources.html)
+- [Loading Images Using getResource](https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html#getresource)
 
 <!-- dummy comment line for breaking list -->
 

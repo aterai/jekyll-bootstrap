@@ -62,7 +62,7 @@ comments: true
     - `HierarchyListener`を使って、`JLabel`の表示状態の変化を監視
         - [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
 - `javax.swing.Timer`
-    - `JLabel`の表示状態が変化(`JLabel#isShowing()`が`true`になる)し、親の`JOptionPane`が表示されたら、`Timer#start()`でカウントダウンを開始
+    - `JLabel`の表示状態が変化し(`JLabel#isShowing()`が`true`になる)、親の`JOptionPane`が表示されたら、`Timer#start()`でカウントダウンを開始
         - [JComponentの表示状態](http://ateraimemo.com/Swing/ShowingDisplayableVisible.html)
     - 指定した時間が経過したら、`Window#dispose()`を使って、親の`JOptionPane`を自動的に閉じる
         - `Window#dispose()`を使うので、`JOptionPane.showConfirmDialog(...)`の戻り値は、`JOptionPane.CLOSED_OPTION`になる

@@ -69,7 +69,9 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DropTarget`に`JTabbedPane`を設定し、`DropTargetListener#dragOver(...)`メソッドをオーバーライドして、マウスのドラッグポイントがタブ上(現在選択されているタブ以外)にある場合のみドロップ可能になるように、`DropTargetDragEvent#acceptDrag(...)`、`DropTargetDragEvent#rejectDrag()`で切り替えています。
+上記のサンプルでは、`DropTarget`として`JTabbedPane`を指定し、`DropTargetListener#dragOver(...)`メソッドをオーバーライドして、マウスのドラッグポイントがそのタブ上(現在選択されているタブ以外)にある場合のみドロップ可能になるように設定しています。
+
+ドロップの可・不可は、`DropTargetDragEvent#acceptDrag(...)`、`DropTargetDragEvent#rejectDrag()`メソッドで切り替えることができます。
 
 ## 参考リンク
 - [JListの項目をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDList.html)

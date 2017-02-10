@@ -35,12 +35,11 @@ private void collapseAll(JTree tree) {
 
 private void visitAll(JTree tree, TreePath parent, boolean expand) {
   TreeNode node = (TreeNode) parent.getLastPathComponent();
+  //children(node).forEach(n -&gt; visitAll(tree, parent.pathByAddingChild(n), expand));
   if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
-    Enumeration e = node.children();
+    Enumeration&lt;?&gt; e = node.children();
     while (e.hasMoreElements()) {
-      TreeNode n = (TreeNode) e.nextElement();
-      TreePath path = parent.pathByAddingChild(n);
-      visitAll(tree, path, expand);
+      visitAll(tree, parent.pathByAddingChild(e.nextElement()), expand);
     }
   }
   if (expand) {
@@ -49,6 +48,11 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
     tree.collapsePath(parent);
   }
 }
+
+//private static Stream&lt;TreeNode&gt; children(TreeNode node) {
+//  return Collections.list((Enumeration&lt;?&gt;) node.children())
+//    .stream().filter(TreeNode.class::isInstance).map(TreeNode.class::cast);
+//}
 </code></pre>
 
 ## 解説
