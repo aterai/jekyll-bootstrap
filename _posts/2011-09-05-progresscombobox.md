@@ -48,7 +48,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`index`が負(アイテムリストではない)の場合、`JProgressBar`を返すセルレンダラーを`JComboBox`に設定して進捗を表示しています。
+上記のサンプルでは、`index`が`-1`(アイテムリストのインデックスではない)の場合、`JProgressBar`を返すセルレンダラーを`JComboBox`に設定して進捗を表示しています。
 
 - - - -
 ロードボタンが押されたら、以下のような`SwingWorker`で、`JComboBox`にアイテムを追加しています。
