@@ -108,7 +108,7 @@ comments: true
 
 ## 解説
 - `Default BevelBorder`
-    - 射影の高さは`1px`で固定
+    - 射影の高さは`2px`で固定
     - `BevelBorder#getBorderInsets(...)`をオーバーライドして内余白を変更しても変化しない
 - `Custom BevelBorder`
     - `BevelBorder#getBorderInsets(...)`をオーバーライドして内余白を変更

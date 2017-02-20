@@ -75,13 +75,13 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
 上記のサンプルでは、デフォルトで用意されている`SwingWorker#setProgress(int)`は使用せず、以下の`3`つのコンポーネントの状態を表す`Progress`クラスを作成し、これを`SwingWorker<String, Progress>#publish(Progress)`メソッドに与えて`EDT`上でそれぞれの状態を更新しています。
 
 - 全体の進捗を表示する`JProgressBar`
-- 個々のファイル処理(このサンプルでは`Thread.sleep`するだけのダミー)の進捗を表示する`JProgressBar`
+- 個々のファイル処理(このサンプルでは`Thread.sleep(...)`するだけのダミー)の進捗を表示する`JProgressBar`
 - ログを表示する`JTextArea`
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`SwingWorker`に別の`PropertyChangeListener`を追加して使用する方法もあります。
+`SwingWorker`に別の`PropertyChangeListener`を追加する方法もあります。
 
 <pre class="prettyprint"><code>worker.firePropertyChange("file-progress", iv, iv + 1);
 //...
