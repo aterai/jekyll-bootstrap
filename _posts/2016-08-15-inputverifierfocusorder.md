@@ -7,13 +7,13 @@ tags: [JTextField, InputVerifier, FocusTraversalPolicy, FocusListener]
 author: aterai
 pubdate: 2016-08-15T02:09:37+09:00
 description: InputVerifierを設定したコンポーネントの入力の検証とフォーカス移動イベントの順番をテストします。
-image: https://drive.google.com/uc?export=view&id=19ojUQl6rF4StwHNdQO_xPRlqnkOognwULw
+image: https://drive.google.com/uc?export=view&amp;id=19ojUQl6rF4StwHNdQO_xPRlqnkOognwULw
 comments: true
 ---
 ## 概要
 `InputVerifier`を設定したコンポーネントの入力の検証とフォーカス移動イベントの順番をテストします。
 
-{% download https://drive.google.com/uc?export=view&id=19ojUQl6rF4StwHNdQO_xPRlqnkOognwULw %}
+{% download https://drive.google.com/uc?export=view&amp;id=19ojUQl6rF4StwHNdQO_xPRlqnkOognwULw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTextField textField = new JTextField(24);

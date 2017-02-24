@@ -7,13 +7,13 @@ tags: [JTree, Icon, DefaultTreeCellEditor, DefaultTreeCellRenderer]
 author: aterai
 pubdate: 2016-12-05T02:23:19+09:00
 description: JTreeのノードが編集開始されたときに表示するノードアイコンを変更します。
-image: https://drive.google.com/uc?export=view&id=1bjb1mUD5NQcTmyA9lBFKu1Zu5gPs9po_sw
+image: https://drive.google.com/uc?export=view&amp;id=1bjb1mUD5NQcTmyA9lBFKu1Zu5gPs9po_sw
 comments: true
 ---
 ## 概要
 `JTree`のノードが編集開始されたときに表示するノードアイコンを変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1bjb1mUD5NQcTmyA9lBFKu1Zu5gPs9po_sw %}
+{% download https://drive.google.com/uc?export=view&amp;id=1bjb1mUD5NQcTmyA9lBFKu1Zu5gPs9po_sw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTree tree2 = new JTree();

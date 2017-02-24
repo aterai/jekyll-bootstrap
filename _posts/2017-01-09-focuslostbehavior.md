@@ -7,13 +7,13 @@ tags: [JFormattedTextField, Focus]
 author: aterai
 pubdate: 2017-01-09T03:41:25+09:00
 description: JFormattedTextFieldからフォーカスが失われた場合に実行するアクションを設定してテストします。
-image: https://drive.google.com/uc?export=view&id=1v2TdYvIAIuNFlxDutW3g3476R3mqqff2rQ
+image: https://drive.google.com/uc?export=view&amp;id=1v2TdYvIAIuNFlxDutW3g3476R3mqqff2rQ
 comments: true
 ---
 ## 概要
 `JFormattedTextField`からフォーカスが失われた場合に実行するアクションを設定してテストします。
 
-{% download https://drive.google.com/uc?export=view&id=1v2TdYvIAIuNFlxDutW3g3476R3mqqff2rQ %}
+{% download https://drive.google.com/uc?export=view&amp;id=1v2TdYvIAIuNFlxDutW3g3476R3mqqff2rQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JFormattedTextField ftf = new JFormattedTextField();

@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: CheckBoxNodeEditor
 title: JTreeのすべてのノードにJCheckBoxを追加する
-tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, TreeModelListener]
+tags: [JTree, JCheckBox, TreeCellRenderer, TreeCellEditor, TreeModelListener, Icon]
 author: aterai
 pubdate: 2012-02-06T14:38:59+09:00
 description: JTreeのすべてのノードに編集可能なJCheckBoxを追加します。
@@ -166,7 +166,7 @@ comments: true
 </code></pre>
 
 - - - -
-- `JDK 1.6.0`で、`LookAndFeel`を`Nimbus`などに変更すると、セルエディタなどが更新されず？表示がおかしくなる場合があるので、`JTree#updateUI()`を以下のようにオーバーライドして回避
+- `JDK 1.6.0`で`LookAndFeel`を`Nimbus`などに変更すると、セルエディタなどが更新されず、表示が不正になる場合があるので、`JTree#updateUI()`を以下のようにオーバーライドして回避
 
 <!-- dummy comment line for breaking list -->
 

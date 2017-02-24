@@ -41,7 +41,7 @@ private void repaintWindowAncestor(JComponent c) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、実際は`JFrame`が半透明ではなく、以下のように~~半透明にした~~透明にした`JFrame`に、半透明の`JPanel`を追加、さらにその子として一秒ごとに文字列が変化する`JLabel`(時計)を配置しています。
+上記のサンプルでは、実際は`JFrame`が半透明ではなく、以下のように透明にした`JFrame`に、半透明の`JPanel`を追加、さらにその子として一秒ごとに文字列が変化する`JLabel`(時計)を配置しています。
 
 - `JFrame`
     - 透明
@@ -71,7 +71,7 @@ private void repaintWindowAncestor(JComponent c) {
 
 ## 参考リンク
 - [江戸の文様（和風素材・デスクトップ壁紙）](http://www.viva-edo.com/komon/edokomon.html)
-- [ユアネーム・7セグ・12セグフォント大全集](http://www.yourname.jp/soft/digitalfonts-20090306.shtml)
+- ~~[ユアネーム・7セグ・12セグフォント大全集](http://www.yourname.jp/soft/digitalfonts-20090306.shtml)~~
 
 <!-- dummy comment line for breaking list -->
 
