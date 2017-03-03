@@ -7,13 +7,13 @@ tags: [JTree, JLayer, TreeCellRenderer, Icon]
 author: aterai
 pubdate: 2016-11-21T02:08:30+09:00
 description: JTreeのルートノードアイコンのみ、そのサイズを拡大し、アイコンの中央に垂直の接続線が描画されるように設定します。
-image: https://drive.google.com/uc?export=view&amp;id=1L1Zx1voPr1qT2nXuxhHn1hJ8Kzqg1mK95A
+image: https://drive.google.com/uc?export=view&id=1L1Zx1voPr1qT2nXuxhHn1hJ8Kzqg1mK95A
 comments: true
 ---
 ## 概要
 `JTree`のルートノードアイコンのみ、そのサイズを拡大し、アイコンの中央に垂直の接続線が描画されるように設定します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1L1Zx1voPr1qT2nXuxhHn1hJ8Kzqg1mK95A %}
+{% download https://drive.google.com/uc?export=view&id=1L1Zx1voPr1qT2nXuxhHn1hJ8Kzqg1mK95A %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>int ow = UIManager.getIcon("Tree.openIcon").getIconWidth();

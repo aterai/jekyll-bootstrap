@@ -7,13 +7,13 @@ tags: [Container, Component, JFileChooser, JTable]
 author: aterai
 pubdate: 2017-02-06T14:11:50+09:00
 description: Containerの子Componentを再帰的にすべて取得するメソッドを作成し、JFileChooserに配置されたJTableを取得します。
-image: https://drive.google.com/uc?export=view&amp;id=1NedWhPhVuMDTwrHRaFdW-YXZjdH-019yuw
+image: https://drive.google.com/uc?export=view&id=1NedWhPhVuMDTwrHRaFdW-YXZjdH-019yuw
 comments: true
 ---
 ## 概要
 `Container`の子`Component`を再帰的にすべて取得するメソッドを作成し、`JFileChooser`に配置された`JTable`を取得します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1NedWhPhVuMDTwrHRaFdW-YXZjdH-019yuw %}
+{% download https://drive.google.com/uc?export=view&id=1NedWhPhVuMDTwrHRaFdW-YXZjdH-019yuw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>public static Stream&lt;Component&gt; stream(Container parent) {

@@ -7,13 +7,13 @@ tags: [Focus, FocusTraversalPolicy]
 author: aterai
 pubdate: 2016-10-24T00:34:35+09:00
 description: SortingFocusTraversalPolicyを設定したパネルで、暗黙的にフォーカスをダウンサイクルで移動しないように設定します。
-image: https://drive.google.com/uc?export=view&amp;id=1BhqefPKEKZ7kqrsjy2ySEncqitLXR7qrfw
+image: https://drive.google.com/uc?export=view&id=1BhqefPKEKZ7kqrsjy2ySEncqitLXR7qrfw
 comments: true
 ---
 ## 概要
 `SortingFocusTraversalPolicy`を設定したパネルで、暗黙的にフォーカスをダウンサイクルで移動しないように設定します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1BhqefPKEKZ7kqrsjy2ySEncqitLXR7qrfw %}
+{% download https://drive.google.com/uc?export=view&id=1BhqefPKEKZ7kqrsjy2ySEncqitLXR7qrfw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JPanel p = new JPanel();

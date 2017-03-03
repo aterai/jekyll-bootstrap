@@ -7,13 +7,13 @@ tags: [JTree, MetalLookAndFeel]
 author: aterai
 pubdate: 2016-08-08T01:48:44+09:00
 description: JTreeのノード間の接続線のスタイルを変更、または非表示にします。
-image: https://drive.google.com/uc?export=view&amp;id=1pbnpWXAOC1SNWnBA7miVxg8WiwCgX0w34w
+image: https://drive.google.com/uc?export=view&id=1pbnpWXAOC1SNWnBA7miVxg8WiwCgX0w34w
 comments: true
 ---
 ## 概要
 `JTree`のノード間の接続線のスタイルを変更、または非表示にします。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1pbnpWXAOC1SNWnBA7miVxg8WiwCgX0w34w %}
+{% download https://drive.google.com/uc?export=view&id=1pbnpWXAOC1SNWnBA7miVxg8WiwCgX0w34w %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTree tree0 = new JTree();

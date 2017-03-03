@@ -21,14 +21,14 @@ area.setOpaque(false);
 area.setForeground(new Color(200, 200, 200));
 area.setSelectedTextColor(Color.WHITE);
 area.setBackground(new Color(0x0, true));
-area.setSelectionColor(new Color(0xC86464FF, true));
+area.setSelectionColor(new Color(0xC8_64_64_FF, true));
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`JEditorPane`の選択色などを半透明化して、ハイライトや`CSS`での背景色変更と組み合わせた場合のテストをしています。
 
 - `JTextComponent#setSelectionColor`, `JTextComponent#setSelectedTextColor`
-    - 選択色、選択文字色を変更することができる
+    - 選択色、選択文字色を変更可能
     - どちらも半透明色を使用可能
     - デフォルトでは、選択が一番手前に描画されるので、半透明にしておくと他の選択色とアルファで乗算されて表示される
     - [JTextComponent#setSelectionColor(Color)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/JTextComponent.html#setSelectionColor%28java.awt.Color%29)では、「色に `null` を設定することは、`Color.white` を設定することと同じです。」となっているが、上記のサンプルで、`"setSelectionColor(#C86464FF)"`のチェックを外して`null`を設定すると、選択の描画が一行目とそれ以降で異なる

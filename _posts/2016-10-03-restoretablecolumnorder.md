@@ -7,13 +7,13 @@ tags: [JTable, JTableHeader, TableColumn, TableColumnModel]
 author: aterai
 pubdate: 2016-10-03T00:51:19+09:00
 description: JTableのTableColumnの表示順が入れ替えられていた場合、それを初期状態(モデル順)に戻します。
-image: https://drive.google.com/uc?export=view&amp;id=1uR48L0Uvm0mBLPOYXx8IR1VJYp0KVzuiAQ
+image: https://drive.google.com/uc?export=view&id=1uR48L0Uvm0mBLPOYXx8IR1VJYp0KVzuiAQ
 comments: true
 ---
 ## 概要
 `JTable`の`TableColumn`の表示順が入れ替えられていた場合、それを初期状態(モデル順)に戻します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1uR48L0Uvm0mBLPOYXx8IR1VJYp0KVzuiAQ %}
+{% download https://drive.google.com/uc?export=view&id=1uR48L0Uvm0mBLPOYXx8IR1VJYp0KVzuiAQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>TableColumnModel m = table.getColumnModel();

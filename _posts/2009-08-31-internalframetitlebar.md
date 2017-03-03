@@ -63,15 +63,15 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
 - `BasicInternalFrameUI#getNorthPane()`で`JInternalFrame`のタイトルバーを取得
     - 元の`MouseMotionListener`を削除
     - `JInternalFrame`をドラッグすると親の`JFrame`が移動する`MouseMotionListener`を追加
+- `JDK 1.7.0`以上の場合、`frame.setBackground(new Color(0x0, true)); frame.add(p = new MainPanel()); p.setOpaque(false);`で角の透明化が可能
 
 <!-- dummy comment line for breaking list -->
 
 - 制限
     - 最大化、最小化、リサイズなどには未対応
         - <kbd>Alt+Space</kbd>で最大化、最小化できるが、元のサイズに戻せなくなる場合がある
-    - 角の透明化には未対応
+    - ~~角の透明化には未対応~~
         - 目立たなくするために、`LookAndFeel`は`Nimbus`に変更
-        - `JDK 1.7.0`なら、`frame.setBackground(new Color(0x0, true)); frame.add(p = new MainPanel()); p.setOpaque(false);`で角の透明化が可能
 
 <!-- dummy comment line for breaking list -->
 

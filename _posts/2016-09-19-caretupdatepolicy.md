@@ -7,13 +7,13 @@ tags: [JTextArea, DefaultCaret, JTextComponent, JScrollPane]
 author: aterai
 pubdate: 2016-09-19T15:50:56+09:00
 description: JTextAreaのドキュメントが更新された時、Caretのアップデートポリシーによって、その位置がどのように移動するかをテストします。
-image: https://drive.google.com/uc?export=view&amp;id=1lEAsdjscriBkK232QDUjR95IJEIuxvnTQg
+image: https://drive.google.com/uc?export=view&id=1lEAsdjscriBkK232QDUjR95IJEIuxvnTQg
 comments: true
 ---
 ## 概要
 `JTextArea`のドキュメントが更新された時、`Caret`のアップデートポリシーによって、その位置がどのように移動するかをテストします。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1lEAsdjscriBkK232QDUjR95IJEIuxvnTQg %}
+{% download https://drive.google.com/uc?export=view&id=1lEAsdjscriBkK232QDUjR95IJEIuxvnTQg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>((DefaultCaret) ta0.getCaret()).setUpdatePolicy(DefaultCaret.UPDATE_WHEN_ON_EDT); //default

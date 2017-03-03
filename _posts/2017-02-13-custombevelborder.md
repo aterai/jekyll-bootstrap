@@ -7,13 +7,13 @@ tags: [BevelBorder, Border, JButton]
 author: aterai
 pubdate: 2017-02-13T15:04:11+09:00
 description: BevelBorderの射影のサイズを変更し、それをJButtonに設定します。
-image: https://drive.google.com/uc?export=view&amp;id=1fuHYW5tx-oxLY2qD2ARNOmLzj85ZtxEzjg
+image: https://drive.google.com/uc?export=view&id=1fuHYW5tx-oxLY2qD2ARNOmLzj85ZtxEzjg
 comments: true
 ---
 ## 概要
 `BevelBorder`の射影のサイズを変更し、それを`JButton`に設定します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1fuHYW5tx-oxLY2qD2ARNOmLzj85ZtxEzjg %}
+{% download https://drive.google.com/uc?export=view&id=1fuHYW5tx-oxLY2qD2ARNOmLzj85ZtxEzjg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class CustomBevelBorder extends BevelBorder {

@@ -7,13 +7,13 @@ tags: [JFileChooser, NimbusLookAndFeel, Focus]
 author: aterai
 pubdate: 2016-10-17T00:34:37+09:00
 description: NimbusLookAndFeelを使用しているJFileChooserを開いた場合、ファイル名表示用のJTextFieldに初期フォーカスを設定します。
-image: https://drive.google.com/uc?export=view&amp;id=1uW5FnfU0V3Yi9iBBMFV7uoN8M9IA2sskmg
+image: https://drive.google.com/uc?export=view&id=1uW5FnfU0V3Yi9iBBMFV7uoN8M9IA2sskmg
 comments: true
 ---
 ## 概要
 `NimbusLookAndFeel`を使用している`JFileChooser`を開いた場合、ファイル名表示用の`JTextField`に初期フォーカスを設定します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1uW5FnfU0V3Yi9iBBMFV7uoN8M9IA2sskmg %}
+{% download https://drive.google.com/uc?export=view&id=1uW5FnfU0V3Yi9iBBMFV7uoN8M9IA2sskmg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>fileChooser.setSelectedFile(new File(field.getText().trim()));

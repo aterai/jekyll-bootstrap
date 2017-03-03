@@ -7,13 +7,13 @@ tags: [JTree, UIManager]
 author: aterai
 pubdate: 2016-11-14T02:01:08+09:00
 description: JTreeのインデント量を指定して子ノードが描画される位置を変更します。
-image: https://drive.google.com/uc?export=view&amp;id=151DaTPRP49CvxXAWZMrKGyNaZqCo9IMDSA
+image: https://drive.google.com/uc?export=view&id=151DaTPRP49CvxXAWZMrKGyNaZqCo9IMDSA
 comments: true
 ---
 ## 概要
 `JTree`のインデント量を指定して子ノードが描画される位置を変更します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=151DaTPRP49CvxXAWZMrKGyNaZqCo9IMDSA %}
+{% download https://drive.google.com/uc?export=view&id=151DaTPRP49CvxXAWZMrKGyNaZqCo9IMDSA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("Tree.leftChildIndent", 0);

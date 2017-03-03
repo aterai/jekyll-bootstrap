@@ -48,7 +48,7 @@ frame.getContentPane().add(new MainPanel());
 ## 解説
 このサンプルでは、`JFrame#createRootPane()`メソッドをオーバーライドして、以下の方法で背景に画像を描画する`JRootPane`を作成しています。
 
-- 中央の画像: [CentredBackgroundBorder](https://community.oracle.com/thread/1395763)を使用
+- 中央に配置された背景画像: [CentredBackgroundBorder](https://community.oracle.com/thread/1395763)を使用
 - チェック柄: `JRootPane#paintComponent(...)`をオーバーライド
 
 <!-- dummy comment line for breaking list -->

@@ -7,13 +7,13 @@ tags: [JList, JEditorPane, ListCellRenderer, HyperlinkListener, MouseListener, H
 author: aterai
 pubdate: 2016-11-28T02:00:47+09:00
 description: JListのセルレンダラーとして使用しているJEditorPaneに複数リンクを表示し、マウスクリックイベントを転送してHyperlinkEventが発生するように設定します。
-image: https://drive.google.com/uc?export=view&amp;id=1ZRAf_BbeW7l2RWn7LDGbJAZwkwtXgKZuuA
+image: https://drive.google.com/uc?export=view&id=1ZRAf_BbeW7l2RWn7LDGbJAZwkwtXgKZuuA
 comments: true
 ---
 ## 概要
 `JList`のセルレンダラーとして使用している`JEditorPane`に複数リンクを表示し、マウスクリックイベントを転送して`HyperlinkEvent`が発生するように設定します。
 
-{% download https://drive.google.com/uc?export=view&amp;id=1ZRAf_BbeW7l2RWn7LDGbJAZwkwtXgKZuuA %}
+{% download https://drive.google.com/uc?export=view&id=1ZRAf_BbeW7l2RWn7LDGbJAZwkwtXgKZuuA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>DefaultListModel&lt;SiteItem&gt; m = new DefaultListModel&lt;&gt;();
