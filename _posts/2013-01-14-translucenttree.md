@@ -20,6 +20,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TransparentTreeCellRenderer extends DefaultTreeCellRenderer {
+  private final Color ALPHA_OF_ZERO = new Color(0x0, true);
   @Override public Component getTreeCellRendererComponent(
           JTree tree, Object value, boolean isSelected, boolean expanded,
           boolean leaf, int row, boolean hasFocus) {
@@ -28,7 +29,6 @@ comments: true
     c.setOpaque(false);
     return c;
   }
-  private final Color ALPHA_OF_ZERO = new Color(0x0, true);
   @Override public Color getBackgroundNonSelectionColor() {
     return ALPHA_OF_ZERO;
   }

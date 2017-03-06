@@ -69,8 +69,7 @@ frame.getContentPane().add(p);
 
 <pre class="prettyprint"><code>for (Window window: Frame.getWindows()) {
   if (window instanceof RootPaneContainer) {
-    RootPaneContainer rpc = (RootPaneContainer) window;
-    SwingUtilities.updateComponentTreeUI(rpc.getContentPane());
+    SwingUtilities.updateComponentTreeUI(((RootPaneContainer) window).getContentPane());
   }
 }
 </code></pre>

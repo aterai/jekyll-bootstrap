@@ -21,8 +21,7 @@ comments: true
     if (((AbstractButton) e.getSource()).isSelected()) {
       Arrays.stream(desktopPane.getAllFrames())
         .sorted(Comparator.comparing(JInternalFrame::getTitle))
-        .forEach(f -&gt; tabbedPane.addTab(
-            f.getTitle(), f.getFrameIcon(), f.getContentPane()));
+        .forEach(f -&gt; tabbedPane.addTab(f.getTitle(), f.getFrameIcon(), f.getContentPane()));
 
       JInternalFrame sf = desktopPane.getSelectedFrame();
       if (Objects.nonNull(sf)) {
@@ -31,9 +30,8 @@ comments: true
       cardLayout.show(panel, tabbedPane.getClass().getName());
     } else {
       Arrays.stream(desktopPane.getAllFrames())
-      .forEach(f -&gt; f.setContentPane(
-          (Container) tabbedPane.getComponentAt(
-              tabbedPane.indexOfTab(f.getTitle()))));
+        .forEach(f -&gt; f.setContentPane(
+          (Container) tabbedPane.getComponentAt(tabbedPane.indexOfTab(f.getTitle()))));
       cardLayout.show(panel, desktopPane.getClass().getName());
     }
   }
