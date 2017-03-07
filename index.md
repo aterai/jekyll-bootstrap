@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Front Page
+description: Introduce the GUI program of Java Swing using small source code examples.
 comments: ture
 author:
   name: aterai
@@ -13,9 +14,7 @@ Posted by [aterai](http://ateraimemo.com/:Users/aterai.html) at 2003-09-25
 ## 概要
 このページ以下では、`Java Swing`での`GUI`プログラム作成のコツなどを、 **「小さなサンプル(ソースコード付き)」** を使って紹介しています。
 
-<img alt="screenshots" src="https://lh3.ggpht.com/_9Z4BYR88imo/TQslJy3MxYI/AAAAAAAAAts/xrxOCvbp-0A/s800/screenshots.png" />
-
-- 上の画像をクリックするとスクリーンショットの一覧に移動します。
+![screenshots](https://lh3.ggpht.com/_9Z4BYR88imo/TQslJy3MxYI/AAAAAAAAAts/xrxOCvbp-0A/s800/screenshots.png)
 
 ### Swingとは
 `Swing`は、`GUI`(グラフィカル・ユーザ・インタフェース)を作成するための、`Java`標準のコンポーネントセット(ライブラリ、`UI`ツールキット)です。
