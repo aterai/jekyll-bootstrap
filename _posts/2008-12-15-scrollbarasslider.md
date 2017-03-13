@@ -39,15 +39,16 @@ final JSpinner spinner = new JSpinner(
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JScrollBar`を`JSlider`として使用し、`JSpinner`と連動させています。`JScrollBar`に設定する最大値は、スクロールバーのノブ(`extent`はノブの幅)の右ではなく左端になるように調整する必要があります。
+上記のサンプルでは、`JScrollBar`を`JSlider`として使用し、`JSpinner`と連動させています。
 
-- このため、`JSpinner`の最大値とは異なり、`max`+`extent`が`JScrollBar`に設定する最大値となる
-- 垂直なら上端
+- `JScrollBar`に設定する最大値は、ノブ(`extent`はノブの幅)の右端ではなく左端になるように調整する必要がある
+    - `JSpinner`の最大値とは異なり、`max`+`extent`の値が`JScrollBar`の最大値となる
+    - 垂直なら上端
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JScrollBar](http://docs.oracle.com/javase/jp/6/api/javax/swing/JScrollBar.html)
+- [JScrollBar (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 

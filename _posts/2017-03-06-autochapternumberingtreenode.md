@@ -40,6 +40,7 @@ comments: true
 ## 解説
 上記のサンプルでは、ルートノードを除く各ノードに章番号を付加する`TreeCellRenderer`を作成して、`JTree`に設定しています。
 
+- `JTree#setRootVisible(false)`でルートノードを非表示に設定
 - `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`をオーバーライド
     - `DefaultMutableTreeNode#getPath()`で、ルートノードから自ノードまでのノード配列を取得
     - ルートノードを除く各ノードで、自ノードが何番目のノードかを`TreeNode#getIndex()`で取得し、文字列に変換

@@ -72,9 +72,9 @@ table.setDefaultEditor(Date.class,    new DateEditor());
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable#getCellRenderer(...)`、`JTable#getCellEditor(...)`をオーバーライドして、実際のモデル値からクラスを取得し、そのクラスに応じて行ごとに使用するセルレンダラ、セルエディタを変更しています。
+上記のサンプルでは、`JTable#getCellRenderer(...)`、`JTable#getCellEditor(...)`をオーバーライドして、実際のモデル値からクラスを取得し、そのクラスに応じて行ごとに使用するセルレンダラー、セルエディタを変更しています。
 
-- セルレンダラ
+- セルレンダラー
     - `String`, `Integer`, `Double`, `Date`, `Boolean`クラスは、それぞれデフォルトの`DefaultTableCellRenderer`, `JTable$NumberRenderer`, `JTable$DoubleRenderer`, `JTable$BooleanRenderer`を使用
     - `Color`クラスは、`table.setDefaultRenderer(Color.class, new ColorRenderer());`で、自作の`ColorRenderer`を使用
 - セルエディタ

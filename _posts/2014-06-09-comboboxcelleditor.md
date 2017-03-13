@@ -6,12 +6,12 @@ title: JTreeのセルエディタにJComboBoxなどを配置したJPanelを使�
 tags: [JTree, TreeCellEditor, TreeCellRenderer, JComboBox, JPanel]
 author: aterai
 pubdate: 2014-06-09T01:29:59+09:00
-description: JTreeのセルエディタ、セルレンダラとして、JComboBoxなどを配置したJPanelを使用します。
+description: JTreeのセルエディタ、セルレンダラーとして、JComboBoxなどを配置したJPanelを使用します。
 image: https://lh4.googleusercontent.com/-kNa0cfgyvbY/U5SIYOWjVtI/AAAAAAAACHM/XkjN37IzSas/s800/ComboBoxCellEditor.png
 comments: true
 ---
 ## 概要
-`JTree`のセルエディタ、セルレンダラとして、`JComboBox`などを配置した`JPanel`を使用します。
+`JTree`のセルエディタ、セルレンダラーとして、`JComboBox`などを配置した`JPanel`を使用します。
 
 {% download https://lh4.googleusercontent.com/-kNa0cfgyvbY/U5SIYOWjVtI/AAAAAAAACHM/XkjN37IzSas/s800/ComboBoxCellEditor.png %}
 
