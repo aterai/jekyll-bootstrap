@@ -21,7 +21,7 @@ comments: true
 
 ## 解説
 - `default`
-    - `NimbusLookAndFeel`のデフォルトでは、`JOptionPane`で使用する`JButton`のサイズは各ボタンのテキストの長さに依存する
+    - デフォルトの`NimbusLookAndFeel`で`JOptionPane`が使用する`JButton`のサイズは、各ボタンのテキストの長さに依存する
     - 注: `MetalLookAndFeel`などは、常にこれらのボタンは同じサイズ
 - `SameSizeButtons`
     - `UIManager.getLookAndFeelDefaults().put("OptionPane.sameSizeButtons", true);`で、最も長いボタンテキストから作成される`JButton`のサイズに揃えられる

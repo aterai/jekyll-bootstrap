@@ -93,9 +93,9 @@ comments: true
 </code></pre>
 
 ## 解説
-下の`JTabbedPane`では、タブに`JTabbedPane#setTabComponentAt`メソッドを使って`JLabel`を追加し、そのクリップ機能を利用して長いタイトル文字列の後半を省略表示しています。
+上記の`JTabbedPane`では、`JTabbedPane#setTabComponentAt(...)`メソッドを使って各タブ内に`JLabel`を追加し、そのクリップ機能を利用して長いタイトル文字列の後半を省略表示しています。
 
-[JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTitleTab.html)と、ほぼ同等(文字列の長さがばらばらでも、左右にタブをおいた場合は全体の`1/4`の幅に、上下にタブをおいた場合はすべてのタブ幅が均等になる)ですが、`TabbedPaneUI#paintText`で文字列の描画をオーバーライドする必要も無く、ソースも短くて実装が簡単です。
+[JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTitleTab.html)と、ほぼ同等(文字列の長さがばらばらでも、左右にタブをおいた場合は全体の`1/4`の幅に、上下にタブをおいた場合はすべてのタブ幅が均等になる)ですが、`TabbedPaneUI#paintText`で文字列の描画をオーバーライドする必要も無く、ソースも短くて実装が簡単になっています。
 
 ## 参考リンク
 - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTitleTab.html)

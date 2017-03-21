@@ -102,17 +102,17 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#setRowHeight(0)`として、セルレンダラーが高さを決めるように設定し、以下の`2`つの方法で改行を行っています(`JTree#getRowHeight()`の初期値は`LookAndFeel`で異なり、例えば`WindowsLookAndFeel`の場合`0`以下ではない)。
+上記のサンプルでは、`JTreeの`デフォルトの行の高さを`0`にすることで、セルレンダラーが行の高さを決めるように設定し、以下の`2`つの方法で改行を行っています。
 
 - `Html`
     - `Html`タグを使用し、`<br>`で改行
     - `parent.add(new DefaultMutableTreeNode("<html>blue<br>blue, blue"));`
-
-<!-- dummy comment line for breaking list -->
-
 - `TextAreaRenderer`
     - `JTextArea`をノードタイトルの表示に使用する`TreeCellRenderer`を作成し、`\n`で改行
     - `parent.add(new DefaultMutableTreeNode("blue\nblue, blue"));`
+- 注:
+    - デフォルトの行の高さを`0`にする場合、`JTree#setRowHeight(0)`を実行する
+    - `JTree#getRowHeight()`の初期値は`LookAndFeel`で異なり、例えば`WindowsLookAndFeel`の場合`0`以下ではない
 
 <!-- dummy comment line for breaking list -->
 

@@ -21,20 +21,21 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class GradientPalletProgressBarUI extends BasicProgressBarUI {
   private final int[] pallet;
-  public GradientPalletProgressBarUI() {
+  protected GradientPalletProgressBarUI() {
     super();
     this.pallet = makeGradientPallet();
   }
   private static int[] makeGradientPallet() {
     BufferedImage image = new BufferedImage(100, 1, BufferedImage.TYPE_INT_RGB);
-    Graphics2D g2 = image.createGraphics();
-    Point2D start = new Point2D.Float(0f, 0f);
-    Point2D end = new Point2D.Float(99f, 0f);
-    float[] dist = {0f, .5f, 1f};
+    Graphics2D g2  = image.createGraphics();
+    Point2D start  = new Point2D.Float();
+    Point2D end    = new Point2D.Float(99, 0);
+    float[] dist   = {0f, .5f, 1f};
     Color[] colors = {Color.RED, Color.YELLOW, Color.GREEN};
     g2.setPaint(new LinearGradientPaint(start, end, dist, colors));
     g2.fillRect(0, 0, 100, 1);
     g2.dispose();
+
     int width = image.getWidth(null);
     int[] pallet = new int[width];
     PixelGrabber pg = new PixelGrabber(image, 0, 0, width, 1, pallet, 0, width);
@@ -46,21 +47,21 @@ comments: true
     return pallet;
   }
   private static Color getColorFromPallet(int[] pallet, float x) {
-    if (x &lt; 0d || x &gt; 1d) {
+    if (x &lt; 0f || x &gt; 1f) {
       throw new IllegalArgumentException("Parameter outside of expected range");
     }
     int i = (int) (pallet.length * x);
     int max = pallet.length - 1;
-    int index = i &lt; 0 ? 0 : i &gt; max ? max : i;
-    return new Color(pallet[index] &amp; 0x00ffffff);
+    int index = Math.min(Math.max(i, 0), max);
+    return new Color(pallet[index] &amp; 0x00FFFFFF);
     //translucent
-    //int pix = pallet[index] &amp; 0x00ffffff | (0x64 &lt;&lt; 24);
+    //int pix = pallet[index] &amp; 0x00FFFFFF | (0x64 &lt;&lt; 24);
     //return new Color(pix), true);
   }
   @Override public void paintDeterminate(Graphics g, JComponent c) {
     Insets b = progressBar.getInsets(); // area for border
-    int barRectWidth = progressBar.getWidth() - b.right - b.left;
-    int barRectHeight = progressBar.getHeight() - b.top - b.bottom;
+    int barRectWidth  = progressBar.getWidth()  - b.right - b.left;
+    int barRectHeight = progressBar.getHeight() - b.top   - b.bottom;
     if (barRectWidth &lt;= 0 || barRectHeight &lt;= 0) {
       return;
     }
@@ -79,7 +80,6 @@ comments: true
       g.setColor(getColorFromPallet(pallet, y));
       g.fillRect(b.left, barRectHeight + b.bottom - amountFull, barRectWidth, amountFull);
     }
-
     // Deal with possible text painting
     if (progressBar.isStringPainted()) {
       paintString(g, b.left, b.top, barRectWidth, barRectHeight, amountFull, b);

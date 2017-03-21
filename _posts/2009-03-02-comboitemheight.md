@@ -22,10 +22,10 @@ combo2.setRenderer(new DefaultListCellRenderer() {
   @Override public Component getListCellRendererComponent(
       JList list, Object value, int index,
       boolean isSelected, boolean cellHasFocus) {
-    Component c = super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+    super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
     Dimension d = super.getPreferredSize();
     cheight = index &lt; 0 ? d.height : 32;
-    return c;
+    return this;
   }
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();

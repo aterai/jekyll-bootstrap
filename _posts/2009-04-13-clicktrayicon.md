@@ -66,15 +66,9 @@ try {
 - 左ボタンをシングルクリック
     - フレームが表示、または最小化されている場合、元のサイズに戻して最前面に表示
     - フレームが非表示の場合は、なにもしない
-
-<!-- dummy comment line for breaking list -->
-
-- 中ボタンのクリック
+- 中ボタンでクリック
     - なにもしない
-
-<!-- dummy comment line for breaking list -->
-
-- 右ボタンのクリック
+- 右ボタンでクリック
     - ポップアップメニューを表示
 
 <!-- dummy comment line for breaking list -->

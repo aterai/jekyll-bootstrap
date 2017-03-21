@@ -86,7 +86,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox`が使用するレイアウトを以下のように変更しています。
+上記のサンプルでは、`JComboBox`が使用する`LayoutManager`を以下のように変更しています。
 
 - 元の`ArrowButton`は、左側に表示
     - `JComboBox#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);`とした場合のコードを流用
@@ -100,7 +100,7 @@ comments: true
 ポップアップを表示、選択しても`JTextField`が変更されないようにしています。
 
 - `JComboBox#putClientProperty("JComboBox.isTableCellEditor", Boolean.TRUE);`として、カーソル移動で変更されないように設定
-- 選択されても`PopupMenuListener`で`setText`し直すように設定
+- 選択されても`PopupMenuListener`で`setText(...)`し直すように設定
 
 <!-- dummy comment line for breaking list -->
 

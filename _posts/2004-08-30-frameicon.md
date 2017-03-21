@@ -26,12 +26,12 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 `JFrame#setIconImage`メソッドで`JFrame`のタイトルバーなどに表示される画像を設定しています。
 
 - サンプル画像として[GIMP](http://www.gimp.org/)を使って作成したサイズ`16x16`の透過`PNG`を使用
-- `JDK 1.6.0`から、[Window#setIconImage(Image) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/Window.html#setIconImage%28java.awt.Image%29)が使用されるようになった
-- また、`JDK 1.6.0`から[Window#setIconImages(java.util.List) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/Window.html#setIconImages%28java.util.List%29)で、複数のイメージを設定可能になった
+- `JDK 1.6.0`から、[JFrame#setIconImage(Image)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFrame.html#setIconImage-java.awt.Image-)は、[Window#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImage-java.awt.Image-)を使用するようになった
+- また、`JDK 1.6.0`から[Window#setIconImages(List<? extends Image>)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImages-java.util.List-)で、複数のイメージを設定可能になった
     - 同サイズのイメージがある場合は、先頭から検索して最初のイメージが使用される
     - どのサイズのイメージが使用されるかは環境に依存する
     - 参考: [java - Sizes of frame icons used in Swing - Stack Overflow](http://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
-    - `setIconImage(Image)`と、`setIconImages(List<Image>)`を両方使用した場合、後に実行したメソッドが有効になる
+    - `Window#setIconImage(Image)`と、`Window#setIconImages(List<? extends Image>)`を両方使用した場合、後に実行したメソッドの設定が有効になる
         - 以下の例の場合、タイトルバーのアイコンは、`ATTACHMENT_16x16-32.png`になる
 
 <!-- dummy comment line for breaking list -->

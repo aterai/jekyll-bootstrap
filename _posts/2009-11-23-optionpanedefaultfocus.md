@@ -33,8 +33,9 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>int result = JOptionPane.showConfirmDialog(frame, textField, "Input Text",
-                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+<pre class="prettyprint"><code>int result = JOptionPane.showConfirmDialog(
+    frame, textField, "Input Text",
+    JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
 if (result == JOptionPane.OK_OPTION) {
   textArea.setText(textField.getText());
 }
@@ -46,8 +47,9 @@ if (result == JOptionPane.OK_OPTION) {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>JOptionPane pane = new JOptionPane(textField, JOptionPane.PLAIN_MESSAGE,
-                                   JOptionPane.OK_CANCEL_OPTION, null, null, null);
+<pre class="prettyprint"><code>JOptionPane pane = new JOptionPane(
+    textField, JOptionPane.PLAIN_MESSAGE,
+    JOptionPane.OK_CANCEL_OPTION, null, null, null);
 JDialog dialog = pane.createDialog(frame, "Input Text");
 dialog.addWindowListener(new WindowAdapter() {
   @Override public void windowOpened(WindowEvent e) {
@@ -82,8 +84,9 @@ if (result == JOptionPane.OK_OPTION) {
     }
   }
 });
-int result = JOptionPane.showConfirmDialog(frame, textField3, "Input Text",
-                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+int result = JOptionPane.showConfirmDialog(
+    frame, textField3, "Input Text",
+    JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
 if (result == JOptionPane.OK_OPTION) {
   textArea.setText(textField3.getText());
 }
