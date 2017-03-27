@@ -26,6 +26,8 @@ trayIcon.displayMessage("caption", "text text...", TrayIcon.MessageType.ERROR);
 - メモ:
     - `TrayIcon`に`ActionListener`を追加しておくと、ポップアップメッセージのクリックイベントを取得することが可能
     - `Windows 10`で`TrayIcon.MessageType.NONE`を使用する場合、`TrayIcon#setImage(...)`がポップアップメッセージのアイコンとして表示されるが、`TrayIcon.setImageAutoSize(false)`でも自動的にリサイズされ、背景色は透過せず黒になる
+    - [JDK-8146537 TrayIcon Action Listener doesnt work in WIndows 10 - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8146537)
+        - 修正中になっているが、`8u66`で修正されているらしい
 
 <!-- dummy comment line for breaking list -->
 

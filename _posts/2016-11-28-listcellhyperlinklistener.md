@@ -56,7 +56,7 @@ list.addMouseListener(new MouseAdapter() {
 
 ## 参考リンク
 - [JListのセル中に配置したコンポーネント毎にカーソルを変更する](http://ateraimemo.com/Swing/CursorOfCellComponent.html)
-    - `JList`からセルレンダラーへの座標返還は、こちらと同じものを使用
+    - `JList`からセルレンダラーへの座標変換は、こちらと同じものを使用
 
 <!-- dummy comment line for breaking list -->
 

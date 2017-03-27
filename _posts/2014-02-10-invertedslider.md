@@ -20,7 +20,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSlider#setInverted(true)`で、値や目盛りの表示を反転しています。
+上記のサンプルでは、`JSlider#setInverted(true)`で、値や目盛りの表示位置を反転しています。
 
 - - - -
 - `JSlider#setInverted(true)`と`setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`で言語に依存する方向を同時に指定可能
@@ -28,6 +28,11 @@ comments: true
     - `SwingConstants.VERTICAL`の場合、`JSlider#setInverted(true)`で上最小、下最大に変化し、`setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`で目盛りの位置が右から左に変化する
 - 範囲の塗り潰しが可能な`MetalLookAndFeel`の場合、これも反転する
 - 縦の`JSlider`で`ComponentOrientation.RIGHT_TO_LEFT`、`WindowsLookAndFeel`を設定した場合、ノブのフォーカスが描画されない
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JSlider#setInverted(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSlider.html#setInverted-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

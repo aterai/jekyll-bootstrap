@@ -41,7 +41,7 @@ check.addItemListener(new ItemListener() {
     - `JScrollPane`に配置したコンポーネントを`setEnabled(false)`とし、フォーカスの移動などによるスクロールを無効化
 - `Disable Scrolling`をチェックして無効状態にしても実行可能な操作
     - `JTableHeader`は無効にしていないので、クリックしてソートや、カラムの移動を行うことが可能
-    - `JScrollPane`に設定した`JPopupMenu`を表示することが可能
+    - `JTable`に設定した`JPopupMenu`を表示することが可能
     - `JTable`に設定した`JToolTip`を表示することが可能
 
 <!-- dummy comment line for breaking list -->
