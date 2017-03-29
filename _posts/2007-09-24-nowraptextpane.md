@@ -35,10 +35,10 @@ comments: true
 ## 解説
 上記のサンプルでは、スパンの必要サイズを計算する`calculateMinorAxisRequirements`メソッドなどをオーバーライドして、行折り返し段落のビュー(`ParagraphView`)で折り返しが発生しないようにしています。
 
-`JEditorPane`や`JTextPane`といった`StyledDocument`をモデルにしているテキストコンポーネントに非常に長い行をペーストした場合、表示が更新されなくなりますが、折り返しできなくしてしまうと多少ましになるようです。
+`JEditorPane`や`JTextPane`といった`StyledDocument`をモデルにしているテキストコンポーネントに極めて長い行をペーストした場合、表示が更新されなくなりますが、折り返しできなくしてしまうと多少ましになるようです。
 
 
-- `JTextArea`でも行を非常に長くしてしまうと、カーソルキーの移動などで異常に時間がかかる場合がある
+- `JTextArea`でも行を極めて長くしてしまうと、カーソルキーの移動などで異常に時間がかかる場合がある
     - 例えば、このサンプルの`JTextArea`で、カーソルを末尾(`EOF`)に移動し、一行目(非常に長い行)に<kbd>Up</kbd>キーで移動すると発生する
     - [Swing - Long last line in wrappable textarea hangs GUI (bug in java?)](https://community.oracle.com/thread/1367888)
 

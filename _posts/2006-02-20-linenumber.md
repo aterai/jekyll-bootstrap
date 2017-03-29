@@ -101,7 +101,7 @@ comments: true
 ## 解説
 [Swing (Archive) - Advice for editor gutter implementation...](https://community.oracle.com/thread/1479759)を参考にして、`JTextArea`に行番号を表示しています。
 
-上記のサンプルで使用する`JTextArea`は、使用するフォントや余白などは変更不可で、各行の高さは最後まで一定であると想定しています。
+上記のサンプルで使用する`JTextArea`は、使用するフォントや余白などは変更不可で、各行の高さはすべて同一で不変と想定しています。
 
 - - - -
 - `JTextPane`での行番号表示

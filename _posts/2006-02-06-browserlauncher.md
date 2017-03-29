@@ -34,7 +34,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 上記のサンプルでは、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用して、指定した`URL`をブラウザで開いています。`Mac OS X`, `GNU/Linux`, `Unix`, `Windows XP`に対応しているようです。
 
 - - - -
-- `Java SE 6`の新機能である`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーを起動することが可能
+- `Java SE 6`の新規追加された`java.awt.Desktop`を使用すると、同じようにブラウザやメーラーの起動が可能
     - [Using the Desktop API in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135182.html)
     - [Desktopでブラウザを起動(JDK 6)](http://ateraimemo.com/Swing/Desktop.html)
 

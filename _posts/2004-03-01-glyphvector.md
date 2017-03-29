@@ -120,8 +120,8 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [How to Use Labels](http://docs.oracle.com/javase/tutorial/uiswing/components/label.html)
-- [LineBreakMeasurer (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/LineBreakMeasurer.html)
+- [Drawing Multiple Lines of Text (The Java™ Tutorials > 2D Graphics > Working with Text APIs)](https://docs.oracle.com/javase/tutorial/2d/text/drawmulstring.html)
+- [LineBreakMeasurer (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/LineBreakMeasurer.html)
 
 <!-- dummy comment line for breaking list -->
 

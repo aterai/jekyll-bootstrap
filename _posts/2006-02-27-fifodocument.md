@@ -78,6 +78,6 @@ final Timer timer = new Timer(100, new ActionListener() {
 
 ## コメント
 - `sample`実行できないよ -- *cinik* 2006-11-16 (木) 01:09:03
-    - `jnlp`ファイルの名前を`sample`から`example`に変更しているので、一旦キャッシュを消してみるとうまくいくかもしれません。(じゃなくて`Exception`などが発生しているのでしょうか？) -- *aterai* 2006-11-16 (木) 12:39:54
+    - `jnlp`ファイルの名前を`sample`から`example`に変更しているので、一旦キャッシュを消してみるとうまくいくかもしれません。(そうではなく`Exception`などが発生しているのでしょうか？) -- *aterai* 2006-11-16 (木) 12:39:54
 
 <!-- dummy comment line for breaking list -->

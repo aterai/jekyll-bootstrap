@@ -66,10 +66,10 @@ comments: true
 - `DragScrollListener` (左)
     - [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
     - このリスナーを追加した一つの`Component`をドラッグしてスクロールが可能
-    - `JPanel`を掴んでスクロールすることができるが、その子コンポーネントの`JTabbedPane`などをドラッグしてもスクロールはできない
+    - `JPanel`を掴んでのスクロールが実行可能だが、その子コンポーネントの`JTabbedPane`などをドラッグしてもスクロールは不可
 - `DragScrollLayer` (右)
     - すべての下位コンポーネントの`MouseEvent`をキャッチするよう`JLayer#setLayerEventMask(...)`と設定した`JLayer`を作成
-    - この`JLayer`で`JScrollPane`をラップし、子にマウスイベントを消費するコンポーネントがあっても、ビューである`JPanel`をドラッグに応じてスクロール
+    - この`JLayer`で`JScrollPane`をラップし、子にマウスイベントを消費するコンポーネントが存在する場合でも、ビューの`JPanel`をドラッグに応じてスクロール
     - `JScrollBar`や`JSlider`のように、ノブのドラッグを使用するコンポーネントは二重にスクロールしてしまうので除外
 
 <!-- dummy comment line for breaking list -->

@@ -178,6 +178,6 @@ class AnimeIcon implements Icon, Serializable {
 ## コメント
 - 色の濃い円が時計回りに回転するように変更しました。 -- *aterai* 2006-03-15 (水) 11:12:08
 - ロードインジケータと呼ぶらしい。 -- *aterai* 2007-07-11 (水) 23:49:44
-- ~~このサンプルでは、`Swing Tutorial`にあった古い`SwingWorker`を使用しているけど、~~ [Swingworker — Java.net](http://java.net/projects/swingworker) にある`JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用 ~~したほうがいいかも。そのうち修正する予定~~ するように変更しました。 -- *aterai* 2009-12-17 (木) 01:44:29
+- ~~このサンプルでは、`Swing Tutorial`に存在した古い`SwingWorker`を使用しているが、~~ [Swingworker — Java.net](http://java.net/projects/swingworker) にある`JDK 1.6`からバックポートされた`org.jdesktop.swingworker.SwingWorker`を使用 ~~したほうが良さそう。そのうち修正する予定。~~ 変更修正済。 -- *aterai* 2009-12-17 (木) 01:44:29
 
 <!-- dummy comment line for breaking list -->

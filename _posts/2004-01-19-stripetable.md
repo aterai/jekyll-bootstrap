@@ -55,7 +55,7 @@ comments: true
 また、返されたコンポーネントはセルの描画のためだけに利用され、マウスイベントなどは無視されます。
 
 - - - -
-セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。使用するセルレンダラーに関係なく、テーブル全体で前処理することができます。このため、`Number`クラス用のデフォルトレンダラーである`JTable$NumberRenderer`がそのまま使われるので、`TableModel#getColumnClass(int)`が、`Number.class`を返すようにしておけば、勝手に右寄せしてくれます。
+セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。使用するセルレンダラーに関係なく、テーブル全体で前処理することができます。このため`Number`クラス用デフォルトレンダラーの`JTable$NumberRenderer`がそのまま使用され、`TableModel#getColumnClass(int)`が`Number.class`を返すようにしておけば勝手に右寄せになります。
 
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   private final Color evenColor = new Color(240, 240, 255);

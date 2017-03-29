@@ -46,7 +46,7 @@ comments: true
     - マウスイベントを作成し、`menu.dispatchEvent(new MouseEvent(menu, MouseEvent.MOUSE_ENTERED, e.getWhen(), 0, 0, 0, 0, false));`を実行する
         - [java - Programmatically expand sub JMenuItems - Stack Overflow](http://stackoverflow.com/questions/25260684/programmatically-expand-sub-jmenuitems)
     - `MenuElement`の配列を作成し、`MenuSelectionManager.defaultManager().setSelectedPath(new MenuElement[]{...});`を実行する
-        - ドキュメントには、[「このメソッドは public ですが、Look & Feel エンジンで使用されるため、クライアントアプリケーションからは呼び出さないでください。」](http://docs.oracle.com/javase/jp/7/api/javax/swing/MenuSelectionManager.html#setSelectedPath%28javax.swing.MenuElement%5B%5D%29)とあるが、現状では`JMenu`の`buildMenuElementArray(...)`が以下の状態なので仕方ない
+        - ドキュメントには、[「このメソッドは public ですが、Look & Feel エンジンで使用されるため、クライアントアプリケーションからは呼び出さないでください。」](http://docs.oracle.com/javase/jp/7/api/javax/swing/MenuSelectionManager.html#setSelectedPath%28javax.swing.MenuElement%5B%5D%29)と記述されているが、現状では`JMenu`の`buildMenuElementArray(...)`が以下の状態なので仕方ない
 
 <!-- dummy comment line for breaking list -->
 

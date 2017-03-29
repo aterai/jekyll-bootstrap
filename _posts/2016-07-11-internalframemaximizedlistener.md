@@ -29,7 +29,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`InternalFrameListener`で、閉じるボタン、最小化(アイコン化)ボタン、最小化(アイコン化)からの復元などのイベントを取得することが可能ですが、最大化ボタン、最大化からの復元ボタンをクリックした場合などのイベントは取得できないので、`PropertyChangeListener`を利用して、このイベントを取得します。
+`InternalFrameListener`で、閉じるボタン、最小化(アイコン化)ボタン、最小化(アイコン化)からの復元などのイベントを取得できますが、最大化ボタン、最大化からの復元ボタンをクリックした場合などのイベントは取得できないので、`PropertyChangeListener`を利用して、このイベントを取得します。
 
 - 最大化ボタンをクリック
     - プロパティ名: `JInternalFrame.IS_MAXIMUM_PROPERTY`で値が`Boolean.TRUE`のイベントが発生

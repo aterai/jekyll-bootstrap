@@ -112,7 +112,7 @@ class SimpleSyntaxDocument extends DefaultStyledDocument {
 ## 参考リンク
 - [Fast styled JTextPane editor | Oracle Community](https://community.oracle.com/thread/2105230)
     - ~~オリジナルの作者、ライセンス、参照元のページが何処だったかなどが不明…~~
-    - [Java Code Example for](http://www.programcreek.com/java-api-examples/index.php?example_code_path=weka-weka.gui.scripting-SyntaxDocument.java)によると、元は[Fast styled JTextPane editor | Oracle Community](https://community.oracle.com/thread/2105230)の投稿で、作者は camickr さん、David Underhill さん。そう言われるとなんとなくそんな記憶があるような…、あのフォーラムはもういろいろ変更されすぎててどうにも…
+    - [Java Code Example for](http://www.programcreek.com/java-api-examples/index.php?example_code_path=weka-weka.gui.scripting-SyntaxDocument.java)によると、元は[Fast styled JTextPane editor | Oracle Community](https://community.oracle.com/thread/2105230)の投稿で、作者は camickr さん、David Underhill さん。そう言われるとなんとなくそんな記憶があるような…、あのフォーラムはもういろいろ変更されすぎていてどうにも…
 - [Customizing a Text Editor](http://web.archive.org/web/20120802021725/http://java.sun.com/products/jfc/tsc/articles/text/editor_kit/index.html)
 - [Text Editor Tutorial](http://ostermiller.org/syntax/editor.html)
 

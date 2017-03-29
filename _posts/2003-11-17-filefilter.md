@@ -47,7 +47,7 @@ FileFilter filter = new FileNameExtensionFilter("JPEGファイル(*.jpg)", "jpg"
 fileChooser.addChoosableFileFilter(filter);
 </code></pre>
 
-上記のように説明の後に、可変長引数で拡張子を複数指定することが可能です。ドットは必要なく、大文字小文字も区別されないようです。
+上記のように説明の後に、可変長引数で拡張子を複数指定できます。ドットは必要なく、大文字小文字も区別されません。
 
 ## 参考リンク
 - [Bug ID: 6400960 Swing File*Filters should extend java.io.File*Filters](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6400960)

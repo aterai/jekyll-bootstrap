@@ -92,7 +92,7 @@ comments: true
 上記のサンプルでは、`JLabel`と`JComboBox`を配置した`JPanel`を描画や編集に移譲する`TreeCellRenderer`と`TreeCellEditor`を作成して、それぞれ、`JTree#setCellRenderer(...)`、`JTree#setCellEditor(...)`で設定しています。
 
 - - - -
-`TreeCellEditor`には、コンストラクタで`JComboBox`を設定する`DefaultCellEditor`を使用していますが、この`JComboBox`は`JPanel`の子要素になるため、一回目のクリックでノードが編集開始されたときに`JComboBox`のドロップダウンリストを開くことができません(二回目ならすでにセルエディタである`JPanel`自体が`JTree`の前面に表示されているので、子コンポーネントの`JComboBox`をクリックすればドロップダウンリストが開く)。そのため、このサンプルでは、`TreeCellEditor#isCellEditable(...)`をオーバーライドし、ノード(`JPanel`)のクリックされた位置に存在するコンポーネントが`JComboBox`(または`JComboBox`内にある`ArrowButton`)だった場合は、編集が開始された後(`EventQueue.invokeLater(...)`を使用してセルエディタが表示された後で実行)、`JComboBox.showPopup()`メソッドでドロップダウンリストを開くように設定しています。
+`TreeCellEditor`には、コンストラクタで`JComboBox`を設定する`DefaultCellEditor`を使用していますが、この`JComboBox`は`JPanel`の子要素になるため、一回目のクリックでノードが編集開始されたときに`JComboBox`のドロップダウンリストを開くことができません(二回目ならすでにセルエディタとして`JPanel`自体が`JTree`の前面に表示されているので、子コンポーネントの`JComboBox`をクリックすればドロップダウンリストが開く)。そのため、このサンプルでは、`TreeCellEditor#isCellEditable(...)`をオーバーライドし、ノード(`JPanel`)のクリックされた位置に存在するコンポーネントが`JComboBox`(または`JComboBox`内にある`ArrowButton`)だった場合は、編集が開始された後(`EventQueue.invokeLater(...)`を使用してセルエディタが表示された後で実行)、`JComboBox.showPopup()`メソッドでドロップダウンリストを開くように設定しています。
 
 ## 参考リンク
 - [java - JTree selection issue - Stack Overflow](http://stackoverflow.com/questions/23900512/jtree-selection-issue)
