@@ -98,6 +98,6 @@ private void changeHighlight() {
 
 ## コメント
 - `Match case`の動作が逆になっていたのを修正。 -- *aterai* 2014-07-23 (水) 17:57:58
-- 参考リンクのリンク先が`404`だったのを修正。 -- *aterai* 2015-07-27 (水) 17:57:58
+- 参考リンクのリンク先が`404`になっていたのを修正。 -- *aterai* 2015-07-27 (水) 17:57:58
 
 <!-- dummy comment line for breaking list -->

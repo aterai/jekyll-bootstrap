@@ -116,7 +116,7 @@ class AnimeIcon implements Icon, Serializable {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-一々自分で座標を計算して`new Ellipse2D`を`8`個も並べるのが嫌だったり、もうすこし正確に円を配置したい場合は、`AffineTransform`などを使ってアイコンを生成する方法もあります。
+一々自分で座標を計算して`new Ellipse2D`を`8`個も並べるのを避けたい、またはもうすこし正確に円を配置したい場合は、`AffineTransform`などを使ってアイコンを生成する方法もあります。
 
 <pre class="prettyprint"><code>class AnimeIcon2 implements Icon, Serializable {
   private static final long serialVersionUID = 1L;

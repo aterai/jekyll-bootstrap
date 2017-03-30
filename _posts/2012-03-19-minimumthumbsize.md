@@ -36,7 +36,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 - - - -
 - `JDK 1.8.0_20`で修正されて、この記事のスクリーンショットのようにノブのサイズが小さくなり過ぎることはなくなった
-    - `WindowsScrollBarUI`(`XPStyle`)でのバグだったようだ
+    - `WindowsScrollBarUI`(`XPStyle`)が修正された
     - [Bug ID: JDK-8039464 The scrollbar in JScrollPane has no right border if used WindowsLookAndFeel](http://bugs.java.com/view_bug.do?bug_id=8039464)
 
 <!-- dummy comment line for breaking list -->

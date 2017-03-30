@@ -46,7 +46,7 @@ p.add(new JButton(new AbstractAction("show") {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メールで質問があったので: このサンプルは、`properties.xml`の、`compile.source`を`1.5`にして、`MainPanel.java`の`table.setAutoCreateRowSorter(true);`をコメントアウトすれば、`JDK 1.5`でも動作するはずです。 -- *aterai* 2008-08-18 (月) 11:17:11
+- メールで質問がきたので追記: このサンプルは、`properties.xml`の、`compile.source`を`1.5`にして、`MainPanel.java`の`table.setAutoCreateRowSorter(true);`をコメントアウトすれば、`JDK 1.5`でも動作するはずです。 -- *aterai* 2008-08-18 (月) 11:17:11
 - `JFileChooser`をコメントアウトして、`Web Start`でも実行できるように修正。 -- *aterai* 2013-11-02 (土) 01:11:59
 
 <!-- dummy comment line for breaking list -->

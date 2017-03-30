@@ -63,7 +63,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `src.zip`などがダウンロードできない状態(上げ忘れ？)だったのを修正。 -- *aterai* 2013-12-06 (金) 16:37:48
+- `src.zip`などがダウンロードできるように修正。 -- *aterai* 2013-12-06 (金) 16:37:48
 - [漢字の線に囲まれた部分だけを塗りつぶした画像で何の四字熟語か当てるスレ：キニ速](http://blog.livedoor.jp/kinisoku/archives/4204798.html) のような問題を作成するツールを作ってみた。~~アンチエイリアスのせいでフチがボケてしまう。~~ `Area#exclusiveOr(...)`を使用するように修正した。 -- *aterai* 2014-10-16 (金) 19:00:48
 
 <!-- dummy comment line for breaking list -->

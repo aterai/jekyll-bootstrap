@@ -87,6 +87,6 @@ layout.getConstraints(name).setWidth(Spring.scale(panelw, .9f));
 layout.getConstraints(name).setX(Spring.scale(panelw, .05f));
 </code></pre>
 
-- ご指摘ありがとうございます。こんなメソッドがあったんですね。サンプルを全体的に修正してみました。 -- *aterai* 2010-09-02 (木) 07:01:18
+- ご指摘ありがとうございます。こんなメソッドが有ったのですね。サンプルを全体的に修正してみました。 -- *aterai* 2010-09-02 (木) 07:01:18
 
 <!-- dummy comment line for breaking list -->
