@@ -31,6 +31,13 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- `Windows 10` + `JDK 1.8.0_121` + `WindowsLookAndFeel`では、縦スライダーのつまみが横スライダーのものと同じになるが、仕様？
+
+<!-- dummy comment line for breaking list -->
+
+
+
 ## 参考リンク
 - [JScrollBarのKnobの最小サイズを設定する](http://ateraimemo.com/Swing/MinimumThumbSize.html)
 

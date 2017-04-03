@@ -23,13 +23,13 @@ largeLabel.setIcon(new ImageIcon(ShellFolder.getShellFolder(file).getIcon(true))
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Windows`環境でファイルをドロップするとそのファイルの`SystemIcon`を表示することが出来ます。
+上記のサンプルでは、`Windows`環境などからファイルをドロップするとそのファイルの`SystemIcon`を表示することができます。
 
 - `16x16`
     - `FileSystemView#getSystemIcon(File f)`で小さいアイコンを取得
 - `32x32`
     - `ShellFolder.getShellFolder(file).getIcon(true)`で大きいアイコンを取得
-    - コンパイル時に「`ShellFolder`は内部所有の`API`であり、今後のリリースで削除される可能性があります」と警告が発生する
+    - コンパイル時に「`ShellFolder`は内部所有の`API`であり、今後のリリースで削除される可能性があります」と警告される
 
 <!-- dummy comment line for breaking list -->
 

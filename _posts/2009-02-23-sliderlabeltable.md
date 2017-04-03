@@ -36,13 +36,10 @@ slider1.setPaintLabels(true);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSlider#setLabelTable(Dictionary)`メソッドを使用して、任意のキーと値のペアで作成したマップを追加し、スライダーのラベルを以下のように変更しています。
+上記のサンプルでは、`JSlider#setLabelTable(Dictionary)`メソッドを使用して任意のキーと値のペアで作成したマップを追加し、スライダーのラベルを以下のように変更しています。
 
 - 左
     - アイコンを設定した`JLabel`と、`JButton`を追加
-
-<!-- dummy comment line for breaking list -->
-
 - 右、下
     - `JLabel`を追加して、目盛の文字列と色を変更
 

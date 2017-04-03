@@ -27,7 +27,13 @@ model.setAsksAllowsChildren(true);
     - `JTree`に`TreeWillExpandListener`などを追加し、この親ノード(葉ノードが存在しない)をクリックした場合、`treeWillExpand(...)`は発生しない
 - 右: `DefaultTreeModel#setAsksAllowsChildren(true)` (チェックボックスで選択した場合)
     - `DefaultMutableTreeNode`が親ノード(`DefaultMutableTreeNode#getAllowsChildren() == true`)の場合、子として葉ノードが存在するかどうかにかかわらず、そのアイコンは、親ノードアイコンになる
-    - `JTree`に`TreeWillExpandListener`などを追加し、この親ノード(葉ノードが存在しない)をクリックした場合、`treeWillExpand(...)`が発生する(このタイミングで後からノードを追加するといった処理が可能になる)
+    - `JTree`に`TreeWillExpandListener`などを追加し、この親ノード(葉ノードが存在しない)をクリックした場合、`treeWillExpand(...)`が発生する
+        - このタイミングで後からノードを追加するといった処理が可能になる
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [DefaultTreeModel#setAsksAllowsChildren(boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeModel.html#setAsksAllowsChildren-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

@@ -109,7 +109,7 @@ comments: true
     - `GTKLookAndFeel`に対応するのは、`JDK 1.7`以降になる予定？です。 [Bug ID: 6354790 GTK LAF: Painting bugs in JTabbedPane](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6354790) -- *aterai* 2008-03-24 (月) 17:27:13
 - `JTabbedPane#doLayout()`をオーバーライドするように変更。 -- *aterai* 2010-10-08 (金) 15:47:34
 - `SynthLookAndFeel`で`setForegroundAt`が反映されないため困っていたため参考にさせていただきました。`setForegroundAt`を`Override`して`getTabComponentAt(index).setForeground(foreground)`するといい感じです。 -- *sawshun* 2012-01-05 (木) 20:23:28
-    - 情報ありがとうございます。`Java 7`で修正されてなかったっけ？[Bug ID: 6939001 Nimbus: JTabbedPane setBackgroundAt and setForegroundAt have no effect](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6939001)とか思ったのですが、よく見たらドキュメントに`It is up to the look and feel to honor this property, some may choose to ignore it.`と注意書きが追加されるだけだったみたいですね(^^;。 -- *aterai* 2012-01-05 (木) 21:35:02
+    - 情報ありがとうございます。`Java 7`で修正されてなかったっけ？[Bug ID: 6939001 Nimbus: JTabbedPane setBackgroundAt and setForegroundAt have no effect](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6939001)とか思ったのですが、よく見たらドキュメントに`It is up to the look and feel to honor this property, some may choose to ignore it.`と注意書きが追加されるだけの修正みたいですね。 -- *aterai* 2012-01-05 (木) 21:35:02
 - メモ: 省略記号、`Truncating`、`3 periods(dots) ellipsis`、`CSS3`の`text-overflow`プロパティに`clip`|`ellipsis`|`string`、省略記号を表示しているのでタイトルは`ellipsis`にした方がよかったかも。 -- *aterai* 2012-06-24 (日) 05:18:37
 
 <!-- dummy comment line for breaking list -->
