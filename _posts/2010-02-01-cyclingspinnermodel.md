@@ -52,7 +52,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [Creating Custom Spinner Models and Editors](http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html#model)
+- [Creating Custom Spinner Models and Editors](https://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html#model)
 
 <!-- dummy comment line for breaking list -->
 

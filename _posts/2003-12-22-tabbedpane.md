@@ -33,7 +33,7 @@ comments: true
 削除メニューは、タブタイトル上で右クリックされた場合のみ選択可となります。タブタイトル上でマウスがクリックされたかどうかは、`JDK 1.4`で導入された`JTabbedPane#indexAtLocation(...)`メソッドで判定(タブ以外の場所の場合、`-1`が返される)しています。
 
 ## 参考リンク
-[JTabbedPane##indexAtLocation(int, int) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#indexAtLocation-int-int-)
+[JTabbedPane##indexAtLocation(int, int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#indexAtLocation-int-int-)
 
 ## コメント
 - スクリーンショットなどを更新 -- *aterai* 2008-03-13 (Thu) 21:58:23

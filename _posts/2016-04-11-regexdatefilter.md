@@ -103,6 +103,6 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
 </code></pre>
 
 - - - -
-`Date`を文字列ではなく、日付として各条件を指定し、フィルタリングする場合は、[RowFilter#dateFilter (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#dateFilter-javax.swing.RowFilter.ComparisonType-java.util.Date-int...-)を使用します。
+`Date`を文字列ではなく、日付として各条件を指定し、フィルタリングする場合は、[RowFilter#dateFilter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#dateFilter-javax.swing.RowFilter.ComparisonType-java.util.Date-int...-)を使用します。
 
 ## コメント

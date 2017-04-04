@@ -33,7 +33,7 @@ comments: true
 タブが選択できるかどうかは、`JTabbedPane#setEnabledAt(...)`メソッドで設定します。
 
 ## 参考リンク
-- [JTabbedPane#setEnabledAt(int, boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setEnabledAt-int-boolean-)
+- [JTabbedPane#setEnabledAt(int, boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setEnabledAt-int-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

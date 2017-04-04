@@ -73,7 +73,7 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [多重Look & Feelの使用](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/multi/doc-files/multi_tsc.html)
+- [多重Look & Feelの使用](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/multi/doc-files/multi_tsc.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -41,7 +41,7 @@ check2.setFocusable(false);
 </code></pre>
 
 - - - -
-- [JTextPane#insertComponent(Component) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
+- [JTextPane#insertComponent(Component) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
 
 <!-- dummy comment line for breaking list -->
 <blockquote><p>

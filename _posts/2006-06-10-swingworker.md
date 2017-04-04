@@ -156,7 +156,7 @@ class CancelAction extends AbstractAction {
 ## 参考リンク
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
 - [Improve Application Performance With SwingWorker in Java SE 6](http://www.oracle.com/technetwork/articles/javase/swingworker-137249.html)
-- [Worker Threads and SwingWorker](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html)
+- [Worker Threads and SwingWorker](https://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html)
 - [JTableのセルにJProgressBarを表示](http://ateraimemo.com/Swing/TableCellProgressBar.html)
 - [SwingWorkerで複数のJProgressBarを使用する](http://ateraimemo.com/Swing/TwoProgressBars.html)
 - [SwingWorkerの一時停止と再開](http://ateraimemo.com/Swing/PauseResumeSwingWorker.html)

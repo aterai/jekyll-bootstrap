@@ -37,7 +37,7 @@ StyleConstants.setForeground(error, Color.RED);
 予め設定しておいたエラー表示用のスタイル(文字属性)を、`StyledDocument#getStyle("error")`で取得し、これを文字列と一緒に`Document#insertString`メソッドを使って挿入しています。
 
 ## 参考リンク
-- [Using Text Components (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/text.html)
+- [Using Text Components (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/text.html)
 
 <!-- dummy comment line for breaking list -->
 

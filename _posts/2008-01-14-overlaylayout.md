@@ -52,7 +52,7 @@ b1.add(b2);
 上記のサンプルでは、`JButton`に`OverlayLayout`を使って、別の`JButton`を右下に重ねて配置しています。
 
 ## 参考リンク
-- [Box Layout Features](http://docs.oracle.com/javase/tutorial/uiswing/layout/box.html#features)
+- [Box Layout Features](https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html#features)
 - [JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->

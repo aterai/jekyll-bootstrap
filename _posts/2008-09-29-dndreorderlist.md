@@ -98,7 +98,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルの`TransferHandler`は、主に[Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)の[ListTransferHandler.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)を参考にして作成しています。ただし、この`ListTransferHandler.java`は項目を複数選択して、`JList`内での並べ替えは想定していない(もしくはバグ？)ようなので、`importData(...)`メソッドや、`cleanup()`メソッドを修正しています。
+上記のサンプルの`TransferHandler`は、主に[Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)の[ListTransferHandler.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)を参考にして作成しています。ただし、この`ListTransferHandler.java`は項目を複数選択して、`JList`内での並べ替えは想定していない(もしくはバグ？)ようなので、`importData(...)`メソッドや、`cleanup()`メソッドを修正しています。
 
 <pre class="prettyprint"><code>JList list = new JList(listModel);
 list.getSelectionModel().setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
@@ -123,8 +123,8 @@ list.setDragEnabled(true);
 [JListの項目をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDList.html)とは異なり、複数アイテムを選択して`Drag&Drop`による移動が可能になっています。
 
 ## 参考リンク
-- [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
-    - [ListTransferHandler.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)
+- [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
+    - [ListTransferHandler.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)
 - [JListの項目をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDList.html)
 - [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://ateraimemo.com/Swing/DragSelectDropReordering.html)
 

@@ -119,7 +119,7 @@ private static Point adjustPopupLocation(JPopupMenu popup, int xposition, int yp
 ## 参考リンク
 - [JTrayIcon update | Java.net](http://weblogs.java.net/blog/alexfromsun/archive/2008/02/jtrayicon_updat.html)
     - [Swinghelper: Subversion: JXTrayIcon.java — Java.net](http://java.net/projects/swinghelper/sources/svn/content/trunk/src/java/org/jdesktop/swinghelper/tray/JXTrayIcon.java)
-- [How to Use the System Tray (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Other Swing Features)](http://docs.oracle.com/javase/tutorial/uiswing/misc/systemtray.html)
+- [How to Use the System Tray (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Other Swing Features)](https://docs.oracle.com/javase/tutorial/uiswing/misc/systemtray.html)
 - [Bug ID: 6285881 JTrayIcon: support Swing JPopupMenus for tray icons](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6285881)
 - [Bug ID: 6453521 TrayIcon should support transparency](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6453521)
 

@@ -62,7 +62,7 @@ private final JComboBox algorithmsChoices = new JComboBox(SortAlgorithms.values(
 
 ## 参考リンク
 - ~~[Sorting Algorithm Animations from Programming Pearls](http://www.cs.bell-labs.com/cm/cs/pearls/sortanim.html)~~
-- [Lesson: Performing Custom Painting (The Java™ Tutorials > Creating a GUI With JFC/Swing)](http://docs.oracle.com/javase/tutorial/uiswing/painting/)
+- [Lesson: Performing Custom Painting (The Java™ Tutorials > Creating a GUI With JFC/Swing)](https://docs.oracle.com/javase/tutorial/uiswing/painting/)
 
 <!-- dummy comment line for breaking list -->
 

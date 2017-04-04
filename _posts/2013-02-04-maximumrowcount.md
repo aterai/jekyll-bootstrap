@@ -20,11 +20,16 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSpinner`で指定した数値を`JComboBox#setMaximumRowCount(newValue)`で設定することができます。
+上記のサンプルでは、`JSpinner`で指定した数値を`JComboBox#setMaximumRowCount(int)`で設定し、スクロールバーを使用しないでリストに表示できる最大の項目数を変更するテストが実行できます。
 
 - 注:
-    - デフォルトの`JComboBox`最大表示項目数は、`8`で固定
+    - デフォルトの`JComboBox`最大表示項目数は、`LookAndFeel`に依存せず`8`が初期値
     - `0`、負の値を設定してもエラーにはならないが、`1`の場合より余分な領域が表示される？
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JComboBox#setMaximumRowCount(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComboBox.html#setMaximumRowCount-int-)
 
 <!-- dummy comment line for breaking list -->
 

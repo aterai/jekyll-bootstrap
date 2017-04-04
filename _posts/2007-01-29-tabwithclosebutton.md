@@ -53,7 +53,7 @@ comments: true
 
 ## 参考リンク
 - [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)
-- [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
+- [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
 - [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)
 - [JTabbedPaneのTabTitleを左揃えに変更](http://ateraimemo.com/Swing/TabTitleAlignment.html)
 

@@ -53,7 +53,7 @@ private static class UndoAction extends AbstractAction {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Implementing Undo and Redo (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html#undo)
+- [Implementing Undo and Redo (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html#undo)
 - [UndoManagerを使用した文字列選択ペーストの動作を変更する](http://ateraimemo.com/Swing/ReplaceUndoableEdit.html)
 
 <!-- dummy comment line for breaking list -->

@@ -89,7 +89,7 @@ private void setLookAndFeel(String laf) {
 - - - -
 `%JAVA_HOME%/lib`以下に`swing.properties`を作ってデフォルトの`Look and Feel`を指定する方法もあります。
 
-- [Specifying the Look and Feel: swing.properties File](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html#properties)
+- [Specifying the Look and Feel: swing.properties File](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html#properties)
 
 <!-- dummy comment line for breaking list -->
 
@@ -113,7 +113,7 @@ private void setLookAndFeel(String laf) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [How to Set the Look and Feel](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html)
+- [How to Set the Look and Feel](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html)
 - [LookAndFeelの一覧を取得する](http://ateraimemo.com/Swing/InstalledLookAndFeels.html)
     - `SwingSet3`からコードを引用したサンプル
 

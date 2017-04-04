@@ -97,10 +97,10 @@ private final JTable table = new JTable(sorter) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
-- [How to Use Tables](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
+- [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
+- [How to Use Tables](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
 - [Generics - Simple method but hard with generics: compareTo()](https://community.oracle.com/thread/1185784)
-- [TableSorter.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)
+- [TableSorter.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)
 
 <!-- dummy comment line for breaking list -->
 

@@ -26,7 +26,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`JTextField`がデフォルトのフォーカスを持つように、`JComponent#requestFocusInWindow()`メソッドを使用しています。
 
-`JComponent#requestFocusInWindow()`メソッドは、チュートリアル([How to Use the Focus Subsystem](http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html))にあるように、`JFrame#pack()`、もしくは`JFrame#setSize(...)`などでリサイズされた後(フォーカスを取得するコンポーネントのサイズが決まった後)で実行する必要があります。このため、このサンプルでは`EventQueue.invokeLater(...)`を使って、待ち状態のすべてのイベントが処理された一番後で実行するようにしています。
+`JComponent#requestFocusInWindow()`メソッドは、チュートリアル([How to Use the Focus Subsystem](https://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html))にあるように、`JFrame#pack()`、もしくは`JFrame#setSize(...)`などでリサイズされた後(フォーカスを取得するコンポーネントのサイズが決まった後)で実行する必要があります。このため、このサンプルでは`EventQueue.invokeLater(...)`を使って、待ち状態のすべてのイベントが処理された一番後で実行するようにしています。
 
 - - - -
 以下のように、`FocusTraversalPolicy`や`WindowListener`を使う方法でも、同様にデフォルトのフォーカスを持つコンポーネントを指定することが出来ます。

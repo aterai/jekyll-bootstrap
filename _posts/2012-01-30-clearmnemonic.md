@@ -30,7 +30,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [AbstractButton#setMnemonic(int) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setMnemonic-int-)
+- [AbstractButton#setMnemonic(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setMnemonic-int-)
 
 <!-- dummy comment line for breaking list -->
 

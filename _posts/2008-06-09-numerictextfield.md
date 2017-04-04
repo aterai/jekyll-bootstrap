@@ -173,7 +173,7 @@ spinner.setValue(5000);
 </code></pre>
 
 - `4`:`JFormattedTextField` + `DefaultFormatterFactory`
-    - [How to Use Formatted Text Fields](http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
+    - [How to Use Formatted Text Fields](https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
     - `DefaultFormatterFactory`を継承する`NumberFormatterFactory`を作成し、これを`JFormattedTextField#setFormatterFactory`メソッドで設定
     - 別コンポーネントにフォーカスが移動するときに、数値かどうか評価する
     - 数値以外の場合、テキストは以前の値に`Undo`される
@@ -201,7 +201,7 @@ spinner.setValue(5000);
 
 ## 参考リンク
 - [Validating Text and Filtering Documents and Accessibility and the Java Access Bridge Tech Tips](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
-- [How to Use Formatted Text Fields](http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
+- [How to Use Formatted Text Fields](https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
 - [JSpinnerで無効な値の入力を許可しない](http://ateraimemo.com/Swing/NumberFormatter.html)
 
 <!-- dummy comment line for breaking list -->

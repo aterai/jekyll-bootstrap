@@ -62,8 +62,8 @@ am.put(key, new TextAction(key) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [DocumentSizeFilter.java](http://docs.oracle.com/javase/tutorial/displayCode.html?code=http://docs.oracle.com/javase/tutorial/uiswing/examples/components/TextComponentDemoProject/src/components/DocumentSizeFilter.java)
-    - via: [Text Component Features (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html)
+- [DocumentSizeFilter.java](https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TextComponentDemoProject/src/components/DocumentSizeFilter.java)
+    - via: [Text Component Features (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html)
 
 <!-- dummy comment line for breaking list -->
 

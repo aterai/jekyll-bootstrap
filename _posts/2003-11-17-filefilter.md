@@ -40,7 +40,7 @@ fileChooser.setFileFilter(fileChooser.getAcceptAllFileFilter());
 </code></pre>
 
 - - - -
-`JDK 6`では、新しく[javax.swing.filechooser.FileNameExtensionFilter](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/filechooser/FileNameExtensionFilter.html)クラスが追加されており、拡張子で選択できるファイルフィルタを簡単に作成することが出来ます(参考: [JavaSE6の便利クラス - きしだのはてな](http://d.hatena.ne.jp/nowokay/20070228#1172660818))。
+`JDK 6`では、新しく[javax.swing.filechooser.FileNameExtensionFilter](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/filechooser/FileNameExtensionFilter.html)クラスが追加されており、拡張子で選択できるファイルフィルタを簡単に作成することが出来ます(参考: [JavaSE6の便利クラス - きしだのはてな](http://d.hatena.ne.jp/nowokay/20070228#1172660818))。
 
 <pre class="prettyprint"><code>//FileNameExtensionFilter(String description, String... extensions)
 FileFilter filter = new FileNameExtensionFilter("JPEGファイル(*.jpg)", "jpg", "jpeg");

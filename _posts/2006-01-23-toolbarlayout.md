@@ -55,7 +55,7 @@ toolbar.add(createToolbarButton(url3));
 ## 参考リンク
 - [Java look and feel Graphics Repository](http://web.archive.org/web/20120818143859/http://java.sun.com/developer/techDocs/hi/repository/)
 - [Swing - Buttons like Netbeans'](https://community.oracle.com/thread/1365522)
-- [Customizing Menu Layout - How to Use Menus (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html#custom)
+- [Customizing Menu Layout - How to Use Menus (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html#custom)
 
 <!-- dummy comment line for breaking list -->
 

@@ -76,7 +76,7 @@ class ColumnComparator implements Comparator {
 
 ## 参考リンク
 - ~~[SortableTableExample](http://www2.gol.com/users/tame/swing/examples/JTableExamples5.html)~~
-- [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
+- [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
 
 <!-- dummy comment line for breaking list -->
 

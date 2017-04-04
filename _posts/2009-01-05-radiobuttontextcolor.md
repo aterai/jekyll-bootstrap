@@ -41,7 +41,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JRadioButton`が選択やロールオーバーした時の文字色を、マウスリスナーではなく、`fireStateChanged`メソッドをオーバーライドして変更しています。
+上記のサンプルでは、`JRadioButton`が選択やロールオーバーした時の文字色をマウスリスナーではなく`AbstractButton#fireStateChanged()`メソッドをオーバーライドして変更しています。
 
 アイコンは、`setPressedIcon`、`setSelectedIcon`、`setRolloverIcon`メソッドなどが用意されているので、これを使用しています。
 
@@ -65,6 +65,11 @@ comments: true
   }
 });
 </code></pre>
+
+## 参考リンク
+- [AbstractButton#fireStateChanged() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#fireStateChanged--)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
 - スクリーンショットのタイトルボーダーが入れ替わっていたのを修正。 -- *aterai* 2009-06-03 (水) 21:27:13

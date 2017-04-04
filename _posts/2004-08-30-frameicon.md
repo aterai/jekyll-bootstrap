@@ -26,7 +26,7 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 `JFrame#setIconImage`メソッドで`JFrame`のタイトルバーなどに表示される画像を設定しています。
 
 - サンプル画像として[GIMP](http://www.gimp.org/)を使って作成したサイズ`16x16`の透過`PNG`を使用
-- `JDK 1.6.0`から、[JFrame#setIconImage(Image)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFrame.html#setIconImage-java.awt.Image-)は、[Window#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImage-java.awt.Image-)を使用するようになった
+- `JDK 1.6.0`から、[JFrame#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFrame.html#setIconImage-java.awt.Image-)は、[Window#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImage-java.awt.Image-)を使用するようになった
 - また、`JDK 1.6.0`から[Window#setIconImages(List<? extends Image>)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImages-java.util.List-)で、複数のイメージを設定可能になった
     - 同サイズのイメージがある場合は、先頭から検索して最初のイメージが使用される
     - どのサイズのイメージが使用されるかは環境に依存する

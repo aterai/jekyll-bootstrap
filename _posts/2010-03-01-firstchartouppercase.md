@@ -17,37 +17,29 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class FirstCharToUpperCaseDocumentFilter extends DocumentFilter {
-  private final JTextComponent textArea;
-  public FirstCharToUpperCaseDocumentFilter(JTextComponent textArea) {
+  private final JTextComponent textField;
+  protected FirstCharToUpperCaseDocumentFilter(JTextComponent textField) {
     super();
-    this.textArea = textArea;
-  }
-  @Override public void insertString(
-      DocumentFilter.FilterBypass fb, int offset, String text, AttributeSet attrs)
-      throws BadLocationException {
-    if (text == null) {
-      return;
-    }
-    replace(fb, offset, 0, text, attrs);
+    this.textField = textField;
   }
   @Override public void remove(
       DocumentFilter.FilterBypass fb, int offset, int length)
       throws BadLocationException {
     Document doc = fb.getDocument();
     if (offset == 0 &amp;&amp; doc.getLength() - length &gt; 0) {
-      fb.replace(0, length + 1, doc.getText(length, 1).toUpperCase(), null);
-      textArea.setCaretPosition(0);
-    } else {
-      fb.remove(offset, length);
+      fb.replace(length, 1, doc.getText(length, 1).toUpperCase(Locale.ENGLISH), null);
+      textField.setCaretPosition(offset);
     }
+    fb.remove(offset, length);
   }
   @Override public void replace(
       DocumentFilter.FilterBypass fb, int offset, int length, String text, AttributeSet attrs)
       throws BadLocationException {
-    if (offset == 0 &amp;&amp; text != null &amp;&amp; text.length() &gt; 0) {
-      text = text.substring(0, 1).toUpperCase() + text.substring(1);
+    String str = text;
+    if (offset == 0 &amp;&amp; Objects.nonNull(text) &amp;&amp; !text.isEmpty()) {
+      str = text.substring(0, 1).toUpperCase(Locale.ENGLISH) + text.substring(1);
     }
-    fb.replace(offset, length, text, attrs);
+    fb.replace(offset, length, str, attrs);
   }
 }
 </code></pre>

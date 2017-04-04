@@ -11,7 +11,7 @@ image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRN6_UpeI/AAAAAAAAAg0/eJ
 comments: true
 ---
 ## 概要
-`JFileChooser`に選択した画像ファイルのプレビューを表示する機能を追加します。プレビューを表示するコンポーネントは、チュートリアルの[ImagePreview.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java)をそのまま利用しています。
+`JFileChooser`に選択した画像ファイルのプレビューを表示する機能を追加します。プレビューを表示するコンポーネントは、チュートリアルの[ImagePreview.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java)をそのまま利用しています。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTRN6_UpeI/AAAAAAAAAg0/eJZas5kcb34/s800/PreviewAccessory.png %}
 
@@ -20,7 +20,7 @@ comments: true
 fileChooser.setAccessory(new ImagePreview(fileChooser));
 //...
 
-//http://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java
+//https://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java
 class ImagePreview extends JComponent implements PropertyChangeListener {
   private static final int PREVIEW_WIDTH  = 90;
   private static final int PREVIEW_MARGIN = 5;
@@ -99,7 +99,7 @@ class ImagePreview extends JComponent implements PropertyChangeListener {
 プレビュー側でファイルの選択、解除などのイベントを受け取るために、`PropertyChangeListener`を実装する必要があります。
 
 ## 参考リンク
-- [How to Use File Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html)
+- [How to Use File Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 
 <!-- dummy comment line for breaking list -->

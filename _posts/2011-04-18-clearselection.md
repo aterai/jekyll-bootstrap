@@ -65,7 +65,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [How to Write a List Selection Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](http://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html)
+- [How to Write a List Selection Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html)
 
 <!-- dummy comment line for breaking list -->
 

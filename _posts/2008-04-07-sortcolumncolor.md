@@ -48,7 +48,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable#getSortKeys()#getSortKeys()`で、ソート中のカラムを取得し、第一キーのカラムセル色を変更しています。
+上記のサンプルでは、`JTable#getSortKeys()#getSortKeys()`でソート中のカラムを取得し、第`1`キーになっているカラムのセル背景色を変更しています。
+
+## 参考リンク
+- [RowSorter#getSortKeys() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowSorter.html#getSortKeys--)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
 - このサンプルでは、`NimbusLookAndFeel`などの場合、`BooleanCellRenderer`(`JCheckBox`を使った`Boolean`用のデフォルトセルレンダラー)を使った列の背景色を変更できない。 -- *aterai* 2013-01-15 (火) 16:33:54

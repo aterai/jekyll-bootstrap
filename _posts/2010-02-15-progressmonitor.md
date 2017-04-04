@@ -68,7 +68,7 @@ worker.execute();
 上記のサンプルでは、`SwingWorker`を使ったタスクの進捗状態を`ProgressMonitor`で表示しています。
 
 - - - -
-`ProgressListener`は、`Tutorial`の[ProgressMonitorDemo.java](http://docs.oracle.com/javase/tutorial/uiswing/examples/components/ProgressMonitorDemoProject/src/components/ProgressMonitorDemo.java)を変更して使用しています。
+`ProgressListener`は、`Tutorial`の[ProgressMonitorDemo.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/ProgressMonitorDemoProject/src/components/ProgressMonitorDemo.java)を変更して使用しています。
 
 <pre class="prettyprint"><code>class ProgressListener implements PropertyChangeListener {
   private final ProgressMonitor monitor;
@@ -91,7 +91,7 @@ worker.execute();
 </code></pre>
 
 ## 参考リンク
-- [How to Use Progress Bars (The Java™ Tutorials)](http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
+- [How to Use Progress Bars (The Java™ Tutorials)](https://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
 - [ProgressMonitorがダイアログを表示するまでの待ち時間](http://ateraimemo.com/Swing/MillisToDecideToPopup.html)
     - 処理時間が短くて`ProgressMonitor`が表示されない場合の待ち時間をテスト
 

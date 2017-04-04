@@ -224,7 +224,7 @@ comments: true
 - - - -
 - [JDK-8169482 java.time.DateTimeFormatter javadoc: F is not week-of-month - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8169482)
 - [time - Java 8 DateFormatter week of month and year key symbols difference - Stack Overflow](http://stackoverflow.com/questions/40389916/java-8-dateformatter-week-of-month-and-year-key-symbols-difference)
-    - メモ: [DateTimeFormatter](http://docs.oracle.com/javase/jp/8/docs/api/java/time/format/DateTimeFormatter.html#patterns)のパターン文字で、`W`と`F`の説明が両方`week-of-month`になっている
+    - メモ: [DateTimeFormatter](https://docs.oracle.com/javase/jp/8/docs/api/java/time/format/DateTimeFormatter.html#patterns)のパターン文字で、`W`と`F`の説明が両方`week-of-month`になっている
     - 実際は`F`が`day_of_week_in_month`で、`JDK 1.9.0`ではドキュメントが修正されている
 - `day_of_week_in_month`について
     - [ChronoField#ALIGNED_DAY_OF_WEEK_IN_MONTH (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/time/temporal/ChronoField.html#ALIGNED_DAY_OF_WEEK_IN_MONTH)

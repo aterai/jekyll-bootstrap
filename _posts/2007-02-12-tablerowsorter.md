@@ -95,7 +95,7 @@ public class RowSorterTest extends JPanel {
 }
 </code></pre>
 
-- [RowSorter (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowSorter.html)
+- [RowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowSorter.html)
 
 <!-- dummy comment line for breaking list -->
 <blockquote><p>
@@ -103,7 +103,7 @@ public class RowSorterTest extends JPanel {
 </p></blockquote>
 
 ## 参考リンク
-- [How to Use Tables](http://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
+- [How to Use Tables](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
 - [TableSorterでJTableをソート](http://ateraimemo.com/Swing/TableSorter.html)
 - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
 - [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](http://ateraimemo.com/Swing/TriStateSorting.html)

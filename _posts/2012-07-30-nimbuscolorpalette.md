@@ -26,7 +26,7 @@ def.put("nimbusOrange", new Color(255, 220, 35, 200));
 
 <!-- dummy comment line for breaking list -->
 
-以下の一覧は、[Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)より引用
+以下の一覧は、[Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)より引用
 |240|240|80|c
 |Key                       |Value                |Preview          |h
 |control                   |#d6d9df (214,217,223)|BGCOLOR(#d6d9df):|
@@ -62,7 +62,7 @@ progressbar.putClientProperty("Nimbus.Overrides", d);
 </code></pre>
 
 ## 参考リンク
-- [Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)
+- [Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)
 - [java - How to change the color of a single JProgressBar in Nimbus? - Stack Overflow](http://stackoverflow.com/questions/10847308/how-to-change-the-color-of-a-single-jprogressbar-in-nimbus)
 - [JLayerを使ってJProgressBarの色相を変更する](http://ateraimemo.com/Swing/ColorChannelSwapFilter.html)
     - `JLayer`+`RGBImageFilter`+`JProgressBar#setOpaque(true);`で`JProgressBar`の色を変更

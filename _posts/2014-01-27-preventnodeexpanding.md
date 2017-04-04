@@ -44,7 +44,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [How to Write a Tree-Will-Expand Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](http://docs.oracle.com/javase/tutorial/uiswing/events/treewillexpandlistener.html)
+- [How to Write a Tree-Will-Expand Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/treewillexpandlistener.html)
 
 <!-- dummy comment line for breaking list -->
 

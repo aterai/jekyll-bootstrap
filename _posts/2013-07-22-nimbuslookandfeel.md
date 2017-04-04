@@ -11,7 +11,7 @@ image: https://lh5.googleusercontent.com/-40dXjNq1HbU/UewL67WFpWI/AAAAAAAABwg/zO
 comments: true
 ---
 ## 概要
-`LookAndFeel`一覧から`NimbusLookAndFeel`を名前で検索取得して使用します。[Nimbus Look and Feel (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html)などのサンプルから引用しています。
+`LookAndFeel`一覧から`NimbusLookAndFeel`を名前で検索取得して使用します。[Nimbus Look and Feel (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html)などのサンプルから引用しています。
 
 {% download https://lh5.googleusercontent.com/-40dXjNq1HbU/UewL67WFpWI/AAAAAAAABwg/zOHVr2U7KiM/s800/NimbusLookAndFeel.png %}
 
@@ -36,7 +36,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Nimbus Look and Feel (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html)
+- [Nimbus Look and Feel (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html)
 
 <!-- dummy comment line for breaking list -->
 
