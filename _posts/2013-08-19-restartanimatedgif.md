@@ -11,7 +11,7 @@ image: https://lh4.googleusercontent.com/-qShu8SKEKus/UhDUybKOCYI/AAAAAAAAByg/QR
 comments: true
 ---
 ## 概要
-`JButton`などのコンポーネントに設定した`AnimatedGif`のリソースを一旦解放して最初から再生します。[java - Animated ImageIcon as Button - Stack Overflow](http://stackoverflow.com/questions/18270701/animated-imageicon-as-button)を参考にしています。
+`JButton`などのコンポーネントに設定した`AnimatedGif`のリソースを一旦解放して最初から再生します。[java - Animated ImageIcon as Button - Stack Overflow](https://stackoverflow.com/questions/18270701/animated-imageicon-as-button)を参考にしています。
 
 {% download https://lh4.googleusercontent.com/-qShu8SKEKus/UhDUybKOCYI/AAAAAAAAByg/QRDcWyIqcmU/s800/RestartAnimatedGif.png %}
 
@@ -41,8 +41,8 @@ JButton button = new JButton(icon9) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Animated ImageIcon as Button - Stack Overflow](http://stackoverflow.com/questions/18270701/animated-imageicon-as-button)
-- [Image#flush() (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/Image.html#flush%28%29)
+- [java - Animated ImageIcon as Button - Stack Overflow](https://stackoverflow.com/questions/18270701/animated-imageicon-as-button)
+- [Image#flush() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Image.html#flush--)
 
 <!-- dummy comment line for breaking list -->
 

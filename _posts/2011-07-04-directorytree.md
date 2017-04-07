@@ -11,7 +11,7 @@ image: https://lh3.googleusercontent.com/-FkX-8X4KxDo/ThFoeY8M64I/AAAAAAAAA-Y/Ry
 comments: true
 ---
 ## 概要
-`FileSystemView`を使ってディレクトリ構造を`JTree`上に表示します。主に[java - File Browser GUI - Stack Overflow](http://stackoverflow.com/questions/6182110/file-browser-gui)を参考にしています。
+`FileSystemView`を使ってディレクトリ構造を`JTree`上に表示します。主に[java - File Browser GUI - Stack Overflow](https://stackoverflow.com/questions/6182110/file-browser-gui)を参考にしています。
 
 {% download https://lh3.googleusercontent.com/-FkX-8X4KxDo/ThFoeY8M64I/AAAAAAAAA-Y/Ry_RA9yVCxc/s800/DirectoryTree.png %}
 
@@ -56,7 +56,7 @@ comments: true
 </code></pre>
 
 ## 解説
-このサンプルでは、[java - File Browser GUI - Stack Overflow](http://stackoverflow.com/questions/6182110/file-browser-gui)のディレクトリ表示部分を抜き出して、ルートパーティション(`Windows`の場合、`Desktop`フォルダ)をルートノードにして`JTree`で表示しています。
+このサンプルでは、[java - File Browser GUI - Stack Overflow](https://stackoverflow.com/questions/6182110/file-browser-gui)のディレクトリ表示部分を抜き出して、ルートパーティション(`Windows`の場合、`Desktop`フォルダ)をルートノードにして`JTree`で表示しています。
 
 - クリックされたノードがディレクトリの場合、子ファイルの検索と`JTree`へのそれらの追加を`SwingWorker`を使用して別スレッドで実行する
 
@@ -64,7 +64,7 @@ comments: true
 
 ## 参考リンク
 - [FileSystemView (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/filechooser/FileSystemView.html)
-- [java - File Browser GUI - Stack Overflow](http://stackoverflow.com/questions/6182110/file-browser-gui)
+- [java - File Browser GUI - Stack Overflow](https://stackoverflow.com/questions/6182110/file-browser-gui)
 - [Showing the file system as a Swing JTree ・ Pushing Pixels](http://www.pushing-pixels.org/2007/07/22/showing-the-file-system-as-a-swing-jtree.html)
 
 <!-- dummy comment line for breaking list -->

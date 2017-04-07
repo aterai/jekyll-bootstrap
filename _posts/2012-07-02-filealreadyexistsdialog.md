@@ -50,7 +50,7 @@ comments: true
 
 ## 参考リンク
 - [Swing - How to react on events fired by a JFileChooser?](https://community.oracle.com/thread/1391852)
-- [java - JFileChooser with confirmation dialog - Stack Overflow](http://stackoverflow.com/questions/3651494/jfilechooser-with-confirmation-dialog)
+- [java - JFileChooser with confirmation dialog - Stack Overflow](https://stackoverflow.com/questions/3651494/jfilechooser-with-confirmation-dialog)
 
 <!-- dummy comment line for breaking list -->
 

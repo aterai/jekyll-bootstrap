@@ -64,7 +64,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Use width and max-width to wrap text in JOptionPane - Stack Overflow](http://stackoverflow.com/questions/35405672/use-width-and-max-width-to-wrap-text-in-joptionpane)
+- [java - Use width and max-width to wrap text in JOptionPane - Stack Overflow](https://stackoverflow.com/questions/35405672/use-width-and-max-width-to-wrap-text-in-joptionpane)
 - [JTextComponent#modelToView(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#modelToView-int-)
 
 <!-- dummy comment line for breaking list -->

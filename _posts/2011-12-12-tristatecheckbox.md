@@ -90,7 +90,7 @@ class IndeterminateIcon implements Icon {
 ## 参考リンク
 - [JavaSpecialists 145 - TristateCheckBox Revisited](http://www.javaspecialists.eu/archive/Issue145.html)
     - [JavaSpecialists 082 - TristateCheckBox based on the Swing JCheckBox](http://www.javaspecialists.eu/archive/Issue082.html)
-- [swing - Tristate Checkboxes in Java - Stack Overflow](http://stackoverflow.com/questions/1263323/tristate-checkboxes-in-java)
+- [swing - Tristate Checkboxes in Java - Stack Overflow](https://stackoverflow.com/questions/1263323/tristate-checkboxes-in-java)
 
 <!-- dummy comment line for breaking list -->
 

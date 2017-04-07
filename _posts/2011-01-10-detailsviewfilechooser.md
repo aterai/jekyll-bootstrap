@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>//java - How can I start the JFileChooser in the Details view? - Stack Overflow]
-//http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view
+//https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view
 //for (Object key: chooser.getActionMap().allKeys()) {
 //    System.out.println(key);
 //}
@@ -28,7 +28,7 @@ if (detailsAction != null) {
 </code></pre>
 
 ## 解説
-[java - How can I start the JFileChooser in the Details view? - Stack Overflow](http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)で紹介されているように、`ActionMap`から`viewTypeDetails`アクションを取得する方法が一番簡単なようです。
+[java - How can I start the JFileChooser in the Details view? - Stack Overflow](https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)で紹介されているように、`ActionMap`から`viewTypeDetails`アクションを取得する方法が一番簡単なようです。
 
 <pre class="prettyprint"><code>//@see javax/swing/plaf/basic/BasicFileChooserUI.java
 ActionMap map = new ActionMapUIResource();
@@ -79,7 +79,7 @@ filePane.setViewType(FilePane.VIEWTYPE_DETAILS);
 </code></pre>
 
 ## 参考リンク
-- [java - How can I start the JFileChooser in the Details view? - Stack Overflow](http://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)
+- [java - How can I start the JFileChooser in the Details view? - Stack Overflow](https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)
 - [Swing Utils « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/13/swing-utils/)
     - via: [set jFileChooser default to details view - Java Forums](http://www.java-forums.org/awt-swing/13733-set-jfilechooser-default-details-view.html)
 - [sun.swing: FilePane.java](http://www.docjar.com/html/api/sun/swing/FilePane.java.html)

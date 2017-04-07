@@ -58,7 +58,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - JCheckBox: Vertical alignment for multi-line text - Stack Overflow](http://stackoverflow.com/questions/22121439/jcheckbox-vertical-alignment-for-multi-line-text)
+- [java - JCheckBox: Vertical alignment for multi-line text - Stack Overflow](https://stackoverflow.com/questions/22121439/jcheckbox-vertical-alignment-for-multi-line-text)
 
 <!-- dummy comment line for breaking list -->
 

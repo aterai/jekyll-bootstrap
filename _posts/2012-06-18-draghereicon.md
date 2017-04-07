@@ -101,7 +101,7 @@ comments: true
 
 ## 参考リンク
 - [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)
-- [swing - Java application with fancy Drag & Drop - Stack Overflow](http://stackoverflow.com/questions/10751001/java-application-with-fancy-drag-drop)
+- [swing - Java application with fancy Drag & Drop - Stack Overflow](https://stackoverflow.com/questions/10751001/java-application-with-fancy-drag-drop)
 
 <!-- dummy comment line for breaking list -->
 

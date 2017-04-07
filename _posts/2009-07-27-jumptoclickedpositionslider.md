@@ -66,7 +66,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JSlider question: Position after leftclick - Stack Overflow](http://stackoverflow.com/questions/518471/jslider-question-position-after-leftclick)
+- [JSlider question: Position after leftclick - Stack Overflow](https://stackoverflow.com/questions/518471/jslider-question-position-after-leftclick)
 
 <!-- dummy comment line for breaking list -->
 

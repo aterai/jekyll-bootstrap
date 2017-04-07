@@ -11,7 +11,7 @@ image: https://lh5.googleusercontent.com/-kzMG9iEHFz4/UjWgNdHCh1I/AAAAAAAAB2A/0g
 comments: true
 ---
 ## 概要
-`Font`から取得した字形の輪郭を抽出し、縁取りや内部の塗り潰しなどを行います。このサンプルは、[java - 'Fill' Unicode characters in labels - Stack Overflow](http://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)に投稿されているコードを参考にしています。
+`Font`から取得した字形の輪郭を抽出し、縁取りや内部の塗り潰しなどを行います。このサンプルは、[java - 'Fill' Unicode characters in labels - Stack Overflow](https://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)に投稿されているコードを参考にしています。
 
 {% download https://lh5.googleusercontent.com/-kzMG9iEHFz4/UjWgNdHCh1I/AAAAAAAAB2A/0gpKBcNqz44/s800/FontSilhouette.png %}
 
@@ -58,7 +58,7 @@ comments: true
 字形(`Shape`)の輪郭は、`Shape#getPathIterator(...)`で`PathIterator`を取得し、~~開始点が一番外側にある~~パスの集合を`Path2D`に変換、`Area`に追加することで作成しています。
 
 ## 参考リンク
-- [java - 'Fill' Unicode characters in labels - Stack Overflow](http://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)
+- [java - 'Fill' Unicode characters in labels - Stack Overflow](https://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)
 
 <!-- dummy comment line for breaking list -->
 

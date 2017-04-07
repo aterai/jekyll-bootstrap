@@ -46,7 +46,7 @@ enum UnderlineStyle {
 
 ## 参考リンク
 - [TextAttribute (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/font/TextAttribute.html)
-- [java - Is it possible to underline text on JTextField?If Yes, How? - Stack Overflow](http://stackoverflow.com/questions/19478966/is-it-possible-to-underline-text-on-jtextfieldif-yes-how)
+- [java - Is it possible to underline text on JTextField?If Yes, How? - Stack Overflow](https://stackoverflow.com/questions/19478966/is-it-possible-to-underline-text-on-jtextfieldif-yes-how)
 
 <!-- dummy comment line for breaking list -->
 

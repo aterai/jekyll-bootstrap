@@ -62,7 +62,7 @@ for (c.gridx = 0; c.gridx &lt;= WIDTH * XSIZE; c.gridx++) {
 
 - - - -
 - 同様に、ダミーの幅を持つ行を作成して、キーボード風に配列
-    - [java - Laying out a keyboard in Swing - Stack Overflow](http://stackoverflow.com/questions/24622279/laying-out-a-keyboard-in-swing)
+    - [java - Laying out a keyboard in Swing - Stack Overflow](https://stackoverflow.com/questions/24622279/laying-out-a-keyboard-in-swing)
 
 <!-- dummy comment line for breaking list -->
 

@@ -74,7 +74,7 @@ private static JLabel makeLabel(String title, Color c) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Is it possible to use Color Hex in JLabel like #02f7fc? - Stack Overflow](http://stackoverflow.com/questions/39949076/is-it-possible-to-use-color-hex-in-jlabel-like-02f7fc)
+- [java - Is it possible to use Color Hex in JLabel like #02f7fc? - Stack Overflow](https://stackoverflow.com/questions/39949076/is-it-possible-to-use-color-hex-in-jlabel-like-02f7fc)
 
 <!-- dummy comment line for breaking list -->
 

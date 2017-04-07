@@ -53,7 +53,7 @@ f.setDesktopIcon(new JInternalFrame.JDesktopIcon(f) {
 </code></pre>
 
 ## 参考リンク
-- [java - Changing DesktopIcon.width on nimbus - Stack Overflow](http://stackoverflow.com/questions/35287367/changing-desktopicon-width-on-nimbus)
+- [java - Changing DesktopIcon.width on nimbus - Stack Overflow](https://stackoverflow.com/questions/35287367/changing-desktopicon-width-on-nimbus)
 
 <!-- dummy comment line for breaking list -->
 

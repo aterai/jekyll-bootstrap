@@ -153,7 +153,7 @@ private static class TabContentPainter implements Painter&lt;JComponent&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [How to achieve four side shadow effect for TabbedPane in Java swing? - Stack Overflow](http://stackoverflow.com/questions/35622718/how-to-achieve-four-side-shadow-effect-for-tabbedpane-in-java-swing)
+- [How to achieve four side shadow effect for TabbedPane in Java swing? - Stack Overflow](https://stackoverflow.com/questions/35622718/how-to-achieve-four-side-shadow-effect-for-tabbedpane-in-java-swing)
 - [JTabbedPaneのタブエリア背景色などをテスト](http://ateraimemo.com/Swing/TabAreaBackground.html)
 
 <!-- dummy comment line for breaking list -->

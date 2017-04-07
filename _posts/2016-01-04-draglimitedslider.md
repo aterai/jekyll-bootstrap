@@ -55,7 +55,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - How can I prevent a JSlider from moving full-range? - Stack Overflow](http://stackoverflow.com/questions/34561596/how-can-i-prevent-a-jslider-from-moving-full-range)
+- [java - How can I prevent a JSlider from moving full-range? - Stack Overflow](https://stackoverflow.com/questions/34561596/how-can-i-prevent-a-jslider-from-moving-full-range)
 
 <!-- dummy comment line for breaking list -->
 

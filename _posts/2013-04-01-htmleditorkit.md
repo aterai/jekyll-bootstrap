@@ -63,7 +63,7 @@ hek.insertHTML(doc, 0, textArea.getText(), 0, 0, null);
 
 - - - -
 - `HTMLEditorKit`から、`HTML Tag`を取り除いた文字列を取得するサンプル
-    - [Removing HTML from a Java String - Stack Overflow](http://stackoverflow.com/questions/240546/removing-html-from-a-java-string)
+    - [Removing HTML from a Java String - Stack Overflow](https://stackoverflow.com/questions/240546/removing-html-from-a-java-string)
 
 <!-- dummy comment line for breaking list -->
 

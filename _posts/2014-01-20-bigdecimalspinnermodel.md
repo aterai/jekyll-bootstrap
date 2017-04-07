@@ -60,7 +60,7 @@ comments: true
 
 ## 参考リンク
 - [JavaFAQ: 浮動小数 float/double](http://homepage1.nifty.com/docs/java/faq/S029.html)
-- [java - JSpinner not showing minimum value on pressing down arrow - Stack Overflow](http://stackoverflow.com/questions/21158043/jspinner-not-showing-minimum-value-on-pressing-down-arrow)
+- [java - JSpinner not showing minimum value on pressing down arrow - Stack Overflow](https://stackoverflow.com/questions/21158043/jspinner-not-showing-minimum-value-on-pressing-down-arrow)
 - [SpinnerNumberModelに上限値を超える値を入力](http://ateraimemo.com/Swing/SpinnerNumberModel.html)
 
 <!-- dummy comment line for breaking list -->

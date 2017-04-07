@@ -70,7 +70,7 @@ Object o = combo.getAccessibleContext().getAccessibleChild(0);
 </code></pre>
 
 - - - -
-[java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](http://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox) を参考にして、`JComboBox`から以下のように、`BasicComboPopup`を取得し、`MatteBorder`を設定
+[java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](https://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox) を参考にして、`JComboBox`から以下のように、`BasicComboPopup`を取得し、`MatteBorder`を設定
 
 <pre class="prettyprint"><code>Object o = combo.getAccessibleContext().getAccessibleChild(0);
 ((JComponent) o).setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.WHITE));
@@ -214,7 +214,7 @@ public class ComboBoxUIDemo {
 </code></pre>
 
 ## 参考リンク
-- [java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](http://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox)
+- [java - How do you change border of the pop up section of a JComboBox? - Stack Overflow](https://stackoverflow.com/questions/9322903/how-do-you-change-border-of-the-pop-up-section-of-a-jcombobox)
 - [JComboBoxの内余白](http://ateraimemo.com/Swing/PaddingComboBox.html)
 
 <!-- dummy comment line for breaking list -->

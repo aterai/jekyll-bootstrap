@@ -64,7 +64,7 @@ LayerUI&lt;JTree&gt; layerUI = new LayerUI&lt;JTree&gt;() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - JTree - Move nodes to the right - Stack Overflow](http://stackoverflow.com/questions/40544376/jtree-move-nodes-to-the-right)
+- [java - JTree - Move nodes to the right - Stack Overflow](https://stackoverflow.com/questions/40544376/jtree-move-nodes-to-the-right)
 
 <!-- dummy comment line for breaking list -->
 

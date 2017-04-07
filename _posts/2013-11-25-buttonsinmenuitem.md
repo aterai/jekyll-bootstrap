@@ -108,7 +108,7 @@ private static AbstractButton makeButton(String title, Action action) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Custom JMenuItems in Java](http://stackoverflow.com/questions/5972368/custom-jmenuitems-in-java)
+- [Custom JMenuItems in Java](https://stackoverflow.com/questions/5972368/custom-jmenuitems-in-java)
 - [JPopupMenuのレイアウトを変更して上部にメニューボタンを追加する](http://ateraimemo.com/Swing/PopupMenuLayout.html)
     - こちらは`JPopupMenu`のレイアウトを変更してボタンメニューを作成している
 

@@ -47,7 +47,7 @@ slider.setLabelTable(labelTable);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - JSlider is drawn incomplete, Working with Netbeans - Stack Overflow](http://stackoverflow.com/questions/28491041/jslider-is-drawn-incomplete-working-with-netbeans)
+- [java - JSlider is drawn incomplete, Working with Netbeans - Stack Overflow](https://stackoverflow.com/questions/28491041/jslider-is-drawn-incomplete-working-with-netbeans)
 
 <!-- dummy comment line for breaking list -->
 

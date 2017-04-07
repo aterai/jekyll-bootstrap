@@ -51,7 +51,7 @@ JTable table = new JTable(data, columnNames) {
       return super.getCellEditor(row, column);
     }
   }
-  // http://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing
+  // https://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing
   // This method is also invoked by the editor when the value in the editor
   // component is saved in the TableModel. The class was saved when the
   // editor was invoked so the proper class can be created.
@@ -87,12 +87,12 @@ table.setDefaultEditor(Date.class,    new DateEditor());
 
 - - - -
 - `JTable#getColumnClass(int)`メソッドの引数は列のみなので、`1`列目の場合は、`JTable#getCellEditor(...)`で取得したクラスを返すようにオーバーライド
-    - 参考: [java - Property list GUI component in Swing - Stack Overflow](http://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing)
+    - 参考: [java - Property list GUI component in Swing - Stack Overflow](https://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Property list GUI component in Swing - Stack Overflow](http://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing)
+- [java - Property list GUI component in Swing - Stack Overflow](https://stackoverflow.com/questions/1464691/property-list-gui-component-in-swing)
 - [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
 - [TableDialogEditDemo](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html#TableDialogEditDemo)
 

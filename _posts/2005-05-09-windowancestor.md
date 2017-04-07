@@ -59,7 +59,7 @@ comments: true
 
 ## 参考リンク
 - [SwingUtilities.getRoot(Component c)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SwingUtilities.html#getRoot-java.awt.Component-) を追加
-    - via: [Java/Swing: Obtain Window/JFrame from inside a JPanel - Stack Overflow](http://stackoverflow.com/questions/9650874/java-swing-obtain-window-jframe-from-inside-a-jpanel)
+    - via: [Java/Swing: Obtain Window/JFrame from inside a JPanel - Stack Overflow](https://stackoverflow.com/questions/9650874/java-swing-obtain-window-jframe-from-inside-a-jpanel)
 
 <!-- dummy comment line for breaking list -->
 

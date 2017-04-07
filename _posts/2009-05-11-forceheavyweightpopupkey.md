@@ -68,7 +68,7 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);`がバージョンによって効かない場合があるらしい。[java - Force HeavyWeight Tooltip with shaped JPanel - Stack Overflow](http://stackoverflow.com/questions/17150483/force-heavyweight-tooltip-with-shaped-jpanel) -- *aterai* 2013-06-18 (火) 08:34:11
+- `ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);`がバージョンによって効かない場合があるらしい。[java - Force HeavyWeight Tooltip with shaped JPanel - Stack Overflow](https://stackoverflow.com/questions/17150483/force-heavyweight-tooltip-with-shaped-jpanel) -- *aterai* 2013-06-18 (火) 08:34:11
     - 上記のリンクのサンプルコードだと、`Windows 7` + `JDK 1.7.0_05`: `OK`, `JDK 1.7.0_06`: `NG`。 -- *aterai* 2013-06-18 (火) 08:42:24
     - [jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b)
 

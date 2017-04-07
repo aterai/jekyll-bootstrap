@@ -111,7 +111,7 @@ class RoundedCornerBorder extends AbstractBorder {
 ## 参考リンク
 - [Unleash Your Creativity with Swing and the Java 2D API!](http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
 - [Border on an rounded JTextField? (Swing / AWT / SWT / JFace forum at JavaRanch)](http://www.coderanch.com/t/336048/GUI/java/Border-rounded-JTextField)
-- [java - how i remove unneeded background under roundedborder? - Stack Overflow](http://stackoverflow.com/questions/9785911/how-i-remove-unneeded-background-under-roundedborder)
+- [java - how i remove unneeded background under roundedborder? - Stack Overflow](https://stackoverflow.com/questions/9785911/how-i-remove-unneeded-background-under-roundedborder)
 
 <!-- dummy comment line for breaking list -->
 

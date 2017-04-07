@@ -57,7 +57,7 @@ tabs.getActionMap().put("next2", new AbstractAction() {
     }
 </code></pre>
 - * 参考リンク [#reference]
-- [java - JPopupMenu not closing on keyevent - Stack Overflow](http://stackoverflow.com/questions/41867173/jpopupmenu-not-closing-on-keyevent)
+- [java - JPopupMenu not closing on keyevent - Stack Overflow](https://stackoverflow.com/questions/41867173/jpopupmenu-not-closing-on-keyevent)
 
 <!-- dummy comment line for breaking list -->
 

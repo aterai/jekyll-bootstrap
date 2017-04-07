@@ -107,7 +107,7 @@ comments: true
 
 ## 参考リンク
 - [PDF: Extreme GUI Makeover 2007](http://docs.huihoo.com/javaone/2007/desktop/TS-3548.pdf)
-    - via: [java - JTable : Complex Cell Renderer - Stack Overflow](http://stackoverflow.com/questions/16305023/jtable-complex-cell-renderer)
+    - via: [java - JTable : Complex Cell Renderer - Stack Overflow](https://stackoverflow.com/questions/16305023/jtable-complex-cell-renderer)
 - [JTableの罫線の有無とセルの内余白を変更](http://ateraimemo.com/Swing/IntercellSpacing.html)
 
 <!-- dummy comment line for breaking list -->

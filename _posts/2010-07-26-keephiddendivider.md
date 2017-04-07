@@ -90,6 +90,6 @@ smax.setModel(selectMaxModel);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `JSplitPane.setOneTouchExpandable(true);`を使用せず、`JSplitPane`からコンポーネントを削除(`null`に置き換える)追加することで、収納展開する方法(`setVisible(...)`だと収納はうまくいくけど、正常に展開ができない):  [java - Hide left/right component of a JSplitPane (or different layout) - Stack Overflow](http://stackoverflow.com/questions/14644362/hide-left-right-component-of-a-jsplitpane-or-different-layout) -- *aterai* 2013-02-01 (金) 20:14:58
+- `JSplitPane.setOneTouchExpandable(true);`を使用せず、`JSplitPane`からコンポーネントを削除(`null`に置き換える)追加することで、収納展開する方法(`setVisible(...)`だと収納はうまくいくけど、正常に展開ができない):  [java - Hide left/right component of a JSplitPane (or different layout) - Stack Overflow](https://stackoverflow.com/questions/14644362/hide-left-right-component-of-a-jsplitpane-or-different-layout) -- *aterai* 2013-02-01 (金) 20:14:58
 
 <!-- dummy comment line for breaking list -->

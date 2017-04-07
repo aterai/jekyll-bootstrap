@@ -50,14 +50,14 @@ comments: true
 
 - `JTable#getCellRect(...)`で、カーソル下のセル描画に使用されるコンポーネントを取得
 - 取得したコンポーネントの位置、サイズ、レイアウトを更新
-    - 参考: [java - Tool tip in JPanel in JTable not working - Stack Overflow](http://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
+    - 参考: [java - Tool tip in JPanel in JTable not working - Stack Overflow](https://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
 - 更新したコンポーネント内から、`SwingUtilities.getDeepestComponentAt()`で、カーソル下のアイコン(`JLabel`)を取得
 - `ImageIcon#getDescription()`で取得した文字列を`ToolTipText`として返す
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Tool tip in JPanel in JTable not working - Stack Overflow](http://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
+- [java - Tool tip in JPanel in JTable not working - Stack Overflow](https://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
 - [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
 - [JListのセル中に配置したコンポーネント毎にカーソルを変更する](http://ateraimemo.com/Swing/CursorOfCellComponent.html)
 

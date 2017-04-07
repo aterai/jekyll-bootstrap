@@ -104,7 +104,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Closeable JTabbedPane - alignment of the close button - Stack Overflow](http://stackoverflow.com/questions/24634047/closeable-jtabbedpane-alignment-of-the-close-button)
+- [java - Closeable JTabbedPane - alignment of the close button - Stack Overflow](https://stackoverflow.com/questions/24634047/closeable-jtabbedpane-alignment-of-the-close-button)
 - [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
 - [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)
 

@@ -52,7 +52,7 @@ class Tile2 extends JComponent {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - javax.swing.Timer slowdown in Java7u40 - Stack Overflow](http://stackoverflow.com/questions/18933986/javax-swing-timer-slowdown-in-java7u40)
+- [java - javax.swing.Timer slowdown in Java7u40 - Stack Overflow](https://stackoverflow.com/questions/18933986/javax-swing-timer-slowdown-in-java7u40)
     - `JDK 1.7.0_25`までは、どれも同じような速度でアニメーションするが、`JDK 1.7.0_40`以降は`Timer`の数を減らさないと遅くなる(`JDK 1.8.0`は`JDK 1.7.0_25`と同等に速い)
     - [Bug ID: JDK-7167780 Hang javasoft.sqe.tests.api.javax.swing.Timer.Ctor2Tests](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7167780)の修正が影響している？
 

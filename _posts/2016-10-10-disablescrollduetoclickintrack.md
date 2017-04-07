@@ -70,7 +70,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [java - Stopping the jslider from moving when clicked - Stack Overflow](http://stackoverflow.com/questions/39904127/stopping-the-jslider-from-moving-when-clicked)
+- [java - Stopping the jslider from moving when clicked - Stack Overflow](https://stackoverflow.com/questions/39904127/stopping-the-jslider-from-moving-when-clicked)
 
 <!-- dummy comment line for breaking list -->
 

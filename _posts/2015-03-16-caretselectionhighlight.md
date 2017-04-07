@@ -48,7 +48,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - How to retain selected text in JTextField when focus lost? - Stack Overflow](http://stackoverflow.com/questions/18237317/how-to-retain-selected-text-in-jtextfield-when-focus-lost)
+- [java - How to retain selected text in JTextField when focus lost? - Stack Overflow](https://stackoverflow.com/questions/18237317/how-to-retain-selected-text-in-jtextfield-when-focus-lost)
 
 <!-- dummy comment line for breaking list -->
 

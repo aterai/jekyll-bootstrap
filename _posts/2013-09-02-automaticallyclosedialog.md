@@ -72,7 +72,7 @@ comments: true
 ## 参考リンク
 - [JComponentの表示状態](http://ateraimemo.com/Swing/ShowingDisplayableVisible.html)
 - [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
-- [swing - Java: How to continuously update JLabel which uses atomicInteger to countdown after ActionListener - Stack Overflow](http://stackoverflow.com/questions/10021969/java-how-to-continuously-update-jlabel-which-uses-atomicinteger-to-countdown-af)
+- [swing - Java: How to continuously update JLabel which uses atomicInteger to countdown after ActionListener - Stack Overflow](https://stackoverflow.com/questions/10021969/java-how-to-continuously-update-jlabel-which-uses-atomicinteger-to-countdown-af)
 
 <!-- dummy comment line for breaking list -->
 

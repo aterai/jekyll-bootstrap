@@ -66,7 +66,7 @@ popup.add(new JCheckBoxMenuItem("keeping open #2") {
 - `keeping open #2`
     - `JCheckBoxMenuItem`に`BasicCheckBoxMenuItemUI#doClick(MenuSelectionManager)`メソッドをオーバーライドした`CheckBoxMenuItemUI`を設定
         - このイベントでクリック後にポップアップを閉じない代わりに、`menuItem.doClick(0);`でチェック状態のみ変更する
-        - 参考: [swing - How to prevent JPopUpMenu disappearing when checking checkboxes in it? - Stack Overflow](http://stackoverflow.com/questions/3759379/how-to-prevent-jpopupmenu-disappearing-when-checking-checkboxes-in-it)
+        - 参考: [swing - How to prevent JPopUpMenu disappearing when checking checkboxes in it? - Stack Overflow](https://stackoverflow.com/questions/3759379/how-to-prevent-jpopupmenu-disappearing-when-checking-checkboxes-in-it)
 
 <!-- dummy comment line for breaking list -->
 
@@ -77,7 +77,7 @@ popup.add(new JCheckBoxMenuItem("keeping open #2") {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [swing - How to prevent JPopUpMenu disappearing when checking checkboxes in it? - Stack Overflow](http://stackoverflow.com/questions/3759379/how-to-prevent-jpopupmenu-disappearing-when-checking-checkboxes-in-it)
+- [swing - How to prevent JPopUpMenu disappearing when checking checkboxes in it? - Stack Overflow](https://stackoverflow.com/questions/3759379/how-to-prevent-jpopupmenu-disappearing-when-checking-checkboxes-in-it)
 
 <!-- dummy comment line for breaking list -->
 

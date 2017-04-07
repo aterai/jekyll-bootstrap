@@ -25,7 +25,7 @@ JLabel label3 = new JLabel("&lt;html&gt;&lt;a style='color:#00FF00' href='" + MY
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[Customize detault html link color in java swing - Stack Overflow](http://stackoverflow.com/questions/26749495/customize-detault-html-link-color-in-java-swing)を参考にして、
+上記のサンプルでは、[Customize detault html link color in java swing - Stack Overflow](https://stackoverflow.com/questions/26749495/customize-detault-html-link-color-in-java-swing)を参考にして、
 `Html`のアンカータグ(`<a href='...'>...</a>`)のデフォルト文字色を変更しています。
 
 - デフォルトの`StyleSheet`(`HTMLEditorKit#getStyleSheet()`)は、グローバルな`AppContext`で管理されているため、これに`a{color:#FF0000;}`などのルールを追加すると、`Swing`アプリ全体でアンカータグの文字色を変更できる
@@ -35,7 +35,7 @@ JLabel label3 = new JLabel("&lt;html&gt;&lt;a style='color:#00FF00' href='" + MY
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Customize detault html link color in java swing - Stack Overflow](http://stackoverflow.com/questions/26749495/customize-detault-html-link-color-in-java-swing)
+- [Customize detault html link color in java swing - Stack Overflow](https://stackoverflow.com/questions/26749495/customize-detault-html-link-color-in-java-swing)
 
 <!-- dummy comment line for breaking list -->
 

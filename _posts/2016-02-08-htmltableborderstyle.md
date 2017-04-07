@@ -40,12 +40,12 @@ String html3 = "&lt;html&gt;&lt;table " + TS3 + "&gt;" + "&lt;tr&gt;" + TD3 + TD
 - `cellspacing`
     - 表の属性に`cellspacing='1px'`を指定し、表の背景色(`background-color:red`)を代わりに`1px`の罫線として表示
     - すべての罫線が同じ色になる
-    - 参考: [java - 1 pixel table border in JTextPane using HTML - Stack Overflow](http://stackoverflow.com/questions/3355469/1-pixel-table-border-in-jtextpane-using-html)
+    - 参考: [java - 1 pixel table border in JTextPane using HTML - Stack Overflow](https://stackoverflow.com/questions/3355469/1-pixel-table-border-in-jtextpane-using-html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - 1 pixel table border in JTextPane using HTML - Stack Overflow](http://stackoverflow.com/questions/3355469/1-pixel-table-border-in-jtextpane-using-html)
+- [java - 1 pixel table border in JTextPane using HTML - Stack Overflow](https://stackoverflow.com/questions/3355469/1-pixel-table-border-in-jtextpane-using-html)
 - [BasicStrokeで指定した辺の描画を行うBorderを作成する](http://ateraimemo.com/Swing/StrokeMatteBorder.html)
 
 <!-- dummy comment line for breaking list -->

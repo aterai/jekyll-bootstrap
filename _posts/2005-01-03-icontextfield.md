@@ -43,7 +43,7 @@ field.add(label);
 - メモ
     - `JComboBox`の`Editor`を取得して`Margin`を指定しても、反映されない
     - [JTextComponent#setMargin(Insets) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setMargin%28java.awt.Insets%29)
-        - via: [java - JTextField margin doesnt work with border - Stack Overflow](http://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
+        - via: [java - JTextField margin doesnt work with border - Stack Overflow](https://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
 
 <!-- dummy comment line for breaking list -->
 

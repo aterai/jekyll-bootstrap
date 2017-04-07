@@ -56,7 +56,7 @@ private void fireDocumentChangeEvent() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Filter jtree - keeping all nodes and children of nodes that match criteria - Stack Overflow](http://stackoverflow.com/questions/38369170/filter-jtree-keeping-all-nodes-and-children-of-nodes-that-match-criteria)
+- [java - Filter jtree - keeping all nodes and children of nodes that match criteria - Stack Overflow](https://stackoverflow.com/questions/38369170/filter-jtree-keeping-all-nodes-and-children-of-nodes-that-match-criteria)
 
 <!-- dummy comment line for breaking list -->
 

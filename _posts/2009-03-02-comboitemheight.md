@@ -88,7 +88,7 @@ combo2.setRenderer(new DefaultListCellRenderer() {
         });
 </code></pre>
     - * 参考リンク [#reference]
-- メモ: [java - DefaultListCellRenderer does not render empty String correctly when using an editable combo box - Stack Overflow](http://stackoverflow.com/questions/30755058/defaultlistcellrenderer-does-not-render-empty-string-correctly-when-using-an-edi)
+- メモ: [java - DefaultListCellRenderer does not render empty String correctly when using an editable combo box - Stack Overflow](https://stackoverflow.com/questions/30755058/defaultlistcellrenderer-does-not-render-empty-string-correctly-when-using-an-edi)
     - `DefaultListCellRenderer`を編集可能にした`JComboBox`に設定すると、リストアイテム文字列が空`""`の場合、ドロップダウンリスト内でのそのアイテムの高さが余白分のみ(`2px`)になってしまう
         - 上記のサンプルも`DefaultListCellRenderer`を使用しているが、直接高さを指定しているので、編集可にしてもこの状態にはならない
     - `JComboBox#setPrototypeDisplayValue(...)`で文字列を設定していても、高さには効果がない

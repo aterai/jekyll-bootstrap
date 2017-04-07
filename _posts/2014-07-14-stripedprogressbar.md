@@ -81,7 +81,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`BasicProgressBarUI#paintIndeterminate(...)`をオーバーライドした`ProgressBarUI`を設定して、不確定状態で描画されるアニメーションのパターンをストライプ模様に変更しています。また、デフォルトの不確定状態アニメーションは、`JProgressBar`の内部をボックスが左右(縦の場合は上下)に跳ねるパターンですが、今回は`JProgressBar`全体をストライプで描画するため、`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライドしています。
+上記のサンプルでは、`BasicProgressBarUI#paintIndeterminate(...)`メソッドをオーバーライドした`ProgressBarUI`を設定して、不確定状態で描画されるアニメーションのパターンをストライプ模様に変更しています。
+
+- メモ
+    - デフォルトの不確定状態アニメーションは、`JProgressBar`の内部をボックスが左右(縦の場合は上下)に移動するパターン
+    - `JProgressBar`全体をストライプで描画するため、`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライド
+
+<!-- dummy comment line for breaking list -->
 
 - - - -
 アニメーションのスピードなどは、[JProgressBarの不確定進捗サイクル時間を設定](http://ateraimemo.com/Swing/IndeterminateCycleTime.html)と同様に、`UIManager.put(...)`を使って調整しています。

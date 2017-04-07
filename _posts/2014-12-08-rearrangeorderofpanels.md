@@ -162,7 +162,7 @@ comments: true
 
 ## 参考リンク
 - [JToolBarに配置したアイコンをドラッグして並べ替える](http://ateraimemo.com/Swing/RearrangeToolBarIcon.html)
-- [swing - Java, drag and drop to change the order of panels - Stack Overflow](http://stackoverflow.com/questions/27245283/java-drag-and-drop-to-change-the-order-of-panels)
+- [swing - Java, drag and drop to change the order of panels - Stack Overflow](https://stackoverflow.com/questions/27245283/java-drag-and-drop-to-change-the-order-of-panels)
 
 <!-- dummy comment line for breaking list -->
 

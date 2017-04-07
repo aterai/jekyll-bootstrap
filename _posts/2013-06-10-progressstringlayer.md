@@ -63,7 +63,7 @@ JComponent c = new JLayer&lt;JProgressBar&gt;(progressBar, layerUI);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Is it possible to save text horizontal in vertical JProgressbar - Stack Overflow](http://stackoverflow.com/questions/16934009/is-it-possible-to-save-text-horizontal-in-vertical-jprogressbar)
+- [java - Is it possible to save text horizontal in vertical JProgressbar - Stack Overflow](https://stackoverflow.com/questions/16934009/is-it-possible-to-save-text-horizontal-in-vertical-jprogressbar)
 - [JProgressBarの進捗文字列の字揃えを変更する](http://ateraimemo.com/Swing/ProgressStringAlignment.html)
 
 <!-- dummy comment line for breaking list -->

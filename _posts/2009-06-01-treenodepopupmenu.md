@@ -16,24 +16,24 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTWLWQUjBI/AAAAAAAAAo0/3F3RUbU5sx8/s800/TreeNodePopupMenu.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>static class TreePopupMenu extends JPopupMenu {
-  private TreePath[] tsp;
-  public TreePopupMenu() {
+<pre class="prettyprint"><code>class TreePopupMenu extends JPopupMenu {
+  protected TreePopupMenu() {
     super();
-    add(new AbstractAction("path") {
-      @Override public void actionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(
-          null, tsp, "path", JOptionPane.INFORMATION_MESSAGE);
-      }
+    add("path").addActionListener(e -&gt; {
+      JTree tree = (JTree) getInvoker();
+      JOptionPane.showMessageDialog(
+        tree, tree.getSelectionPaths(), "path", JOptionPane.INFORMATION_MESSAGE);
     });
-    add(new JMenuItem("dummy"));
+    add("dummy");
   }
   @Override public void show(Component c, int x, int y) {
-    JTree tree = (JTree) c;
-    tsp = tree.getSelectionPaths();
-    TreePath path = tree.getPathForLocation(x, y);
-    if (path != null &amp;&amp; Arrays.asList(tsp).contains(path)) {
-      super.show(c, x, y);
+    if (c instanceof JTree) {
+      JTree tree = (JTree) c;
+      TreePath path = tree.getPathForLocation(x, y);
+      if (tree.getSelectionCount() &gt; 0
+          &amp;&amp; Arrays.asList(tree.getSelectionPaths()).contains(path)) {
+        super.show(c, x, y);
+      }
     }
   }
 }

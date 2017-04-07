@@ -40,7 +40,7 @@ comments: true
 
 ## 参考リンク
 - [How to Write an Internal Frame Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/internalframelistener.html)
-- [java - Capture maximise/restore event in JInternalFrame - Stack Overflow](http://stackoverflow.com/questions/38219219/capture-maximise-restore-event-in-jinternalframe/38220378#38220378)
+- [java - Capture maximise/restore event in JInternalFrame - Stack Overflow](https://stackoverflow.com/questions/38219219/capture-maximise-restore-event-in-jinternalframe/38220378#38220378)
 
 <!-- dummy comment line for breaking list -->
 

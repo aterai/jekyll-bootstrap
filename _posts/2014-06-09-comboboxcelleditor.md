@@ -99,7 +99,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - JTree selection issue - Stack Overflow](http://stackoverflow.com/questions/23900512/jtree-selection-issue)
+- [java - JTree selection issue - Stack Overflow](https://stackoverflow.com/questions/23900512/jtree-selection-issue)
 
 <!-- dummy comment line for breaking list -->
 

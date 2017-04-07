@@ -64,12 +64,12 @@ comments: true
 
 - `checked`属性を使用して選択状態の`JCheckBox`を表示可能だが、`disabled`属性で無効状態にできない
 - 代わりに、`HTML`コンポーネントのレンダリングを行うコンポーネントを`JLabel`から取得し、その子要素から`JCheckBox`自体を取得して、直接`JCheckBox#setEnabled(...)`、`JCheckBox#setSelected(...)`で状態を変更
-    - 参考: [java - Listening to HTML check boxes in jTextPane (or an alternative)? - Stack Overflow](http://stackoverflow.com/questions/7958378/listening-to-html-check-boxes-in-jtextpane-or-an-alternative)
+    - 参考: [java - Listening to HTML check boxes in jTextPane (or an alternative)? - Stack Overflow](https://stackoverflow.com/questions/7958378/listening-to-html-check-boxes-in-jtextpane-or-an-alternative)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Listening to HTML check boxes in jTextPane (or an alternative)? - Stack Overflow](http://stackoverflow.com/questions/7958378/listening-to-html-check-boxes-in-jtextpane-or-an-alternative)
+- [java - Listening to HTML check boxes in jTextPane (or an alternative)? - Stack Overflow](https://stackoverflow.com/questions/7958378/listening-to-html-check-boxes-in-jtextpane-or-an-alternative)
 - [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://ateraimemo.com/Swing/TableHeaderCheckBox.html)
 
 <!-- dummy comment line for breaking list -->

@@ -11,7 +11,7 @@ image: https://lh3.googleusercontent.com/-vidT_rr0mcE/VU97kF6HGpI/AAAAAAAAN4A/By
 comments: true
 ---
 ## 概要
-`NimbusLookAndFeel`で`JOptionPane`を使用した場合、その`JButton`のサイズを揃えるかどうかを設定します。[java - JOptionPane button size (Nimbus LAF) - Stack Overflow](http://stackoverflow.com/questions/30138984/joptionpane-button-size-nimbus-laf)の回答を参考にしています。
+`NimbusLookAndFeel`で`JOptionPane`を使用した場合、その`JButton`のサイズを揃えるかどうかを設定します。[java - JOptionPane button size (Nimbus LAF) - Stack Overflow](https://stackoverflow.com/questions/30138984/joptionpane-button-size-nimbus-laf)の回答を参考にしています。
 
 {% download https://lh3.googleusercontent.com/-vidT_rr0mcE/VU97kF6HGpI/AAAAAAAAN4A/ByrWGh41AQg/s800/SameSizeButtons.png %}
 
@@ -35,7 +35,7 @@ comments: true
         op.createDialog(getRootPane(), "title").setVisible(true);
 </code></pre>
     - * 参考リンク [#reference]
-- [java - JOptionPane button size (Nimbus LAF) - Stack Overflow](http://stackoverflow.com/questions/30138984/joptionpane-button-size-nimbus-laf)
+- [java - JOptionPane button size (Nimbus LAF) - Stack Overflow](https://stackoverflow.com/questions/30138984/joptionpane-button-size-nimbus-laf)
 - [JOptionPane固有のプロパティ](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/synth/doc-files/componentProperties.html)
 - [Nimbusの外観をUIDefaultsで変更する](http://ateraimemo.com/Swing/UIDefaultsOverrides.html)
 - [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)

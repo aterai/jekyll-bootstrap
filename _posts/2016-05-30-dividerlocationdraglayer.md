@@ -67,7 +67,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - JSplitPane small border but big grab-hitbox - Stack Overflow](http://stackoverflow.com/questions/37462651/jsplitpane-small-border-but-big-grab-hitbox)
+- [java - JSplitPane small border but big grab-hitbox - Stack Overflow](https://stackoverflow.com/questions/37462651/jsplitpane-small-border-but-big-grab-hitbox)
 
 <!-- dummy comment line for breaking list -->
 

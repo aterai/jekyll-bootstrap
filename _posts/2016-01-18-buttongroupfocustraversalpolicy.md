@@ -39,7 +39,7 @@ buttons.setFocusTraversalPolicy(new LayoutFocusTraversalPolicy() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [java - Get the focus in a ButtonGroup of JRadioButtons to go to the currently selected item instead of first - Stack Overflow](http://stackoverflow.com/questions/34820018/get-the-focus-in-a-buttongroup-of-jradiobuttons-to-go-to-the-currently-selected/34832814#34832814)
+- [java - Get the focus in a ButtonGroup of JRadioButtons to go to the currently selected item instead of first - Stack Overflow](https://stackoverflow.com/questions/34820018/get-the-focus-in-a-buttongroup-of-jradiobuttons-to-go-to-the-currently-selected/34832814#34832814)
 
 <!-- dummy comment line for breaking list -->
 

@@ -47,7 +47,7 @@ p2.add(Box.createVerticalGlue());
 </code></pre>
 
 ## 解説
-上記のサンプルは、[swing - Alignment of Single Characters in Java BoxLayout on Y-Axis Is Off-Center - Stack Overflow](http://stackoverflow.com/questions/27790417/alignment-of-single-characters-in-java-boxlayout-on-y-axis-is-off-center)を参考にして、`BoxLayout`の中央揃えのバグ？を検証するために作成しています。
+上記のサンプルは、[swing - Alignment of Single Characters in Java BoxLayout on Y-Axis Is Off-Center - Stack Overflow](https://stackoverflow.com/questions/27790417/alignment-of-single-characters-in-java-boxlayout-on-y-axis-is-off-center)を参考にして、`BoxLayout`の中央揃えのバグ？を検証するために作成しています。
 
 - `setAlignmentX(Component.CENTER_ALIGNMENT)`、`setAlignmentY(Component.CENTER_ALIGNMENT)`を設定した`JLabel`を作成
 - `BoxLayout.X_AXIS`の`Box`に、この`JLabel`が左右中央に配置されるよう、`Box.createHorizontalGlue()`で挟んで追加
@@ -68,7 +68,7 @@ p2.add(Box.createVerticalGlue());
 
 ## 参考リンク
 - [How to Use BoxLayout (The Java™ Tutorials > Creating a GUI With JFC/Swing > Laying Out Components Within a Container)](https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html)
-- [swing - Alignment of Single Characters in Java BoxLayout on Y-Axis Is Off-Center - Stack Overflow](http://stackoverflow.com/questions/27790417/alignment-of-single-characters-in-java-boxlayout-on-y-axis-is-off-center)
+- [swing - Alignment of Single Characters in Java BoxLayout on Y-Axis Is Off-Center - Stack Overflow](https://stackoverflow.com/questions/27790417/alignment-of-single-characters-in-java-boxlayout-on-y-axis-is-off-center)
 
 <!-- dummy comment line for breaking list -->
 

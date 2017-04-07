@@ -90,7 +90,7 @@ comments: true
 
 - 中: `JList`
     - `JCheckBox`を継承する`ListCellRenderer`を設定
-    - チェックボックスのロールオーバーなどは、`JList`にマウスリスナーを設定して表示
+    - チェックボックスのロールオーバーなどは、`JList`にマウスリスナーを設定して描画
     - `JList#processMouseEvent`、`JList#processMouseMotionEvent`のオーバーライドと、`JList#putClientProperty("List.isFileList", Boolean.TRUE);`で、クリックが有効になる領域をチェックボックスの幅に制限
 
 <!-- dummy comment line for breaking list -->
@@ -147,7 +147,7 @@ comments: true
 
 - 右: `JTree`
     - `JCheckBox`を継承する`TreeCellRenderer`を設定
-        - [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)のセルレンダラーを使用
+        - [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)で作成したセルレンダラーを使用
     - `JTree#setRootVisible(false)`でルートノードを非表示に設定
         - [JTreeのルートノードを非表示に設定する](http://ateraimemo.com/Swing/TreeRootVisible.html)
 

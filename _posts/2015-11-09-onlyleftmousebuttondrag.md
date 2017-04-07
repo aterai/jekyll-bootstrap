@@ -31,7 +31,7 @@ comments: true
 
 ## 参考リンク
 - [Bug ID: JDK-6614972 JSlider value should not change on right-click](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6614972)
-- [java - How to disable position change of JSlider on mouse right click - Stack Overflow](http://stackoverflow.com/questions/9736237/how-to-disable-position-change-of-jslider-on-mouse-right-click)
+- [java - How to disable position change of JSlider on mouse right click - Stack Overflow](https://stackoverflow.com/questions/9736237/how-to-disable-position-change-of-jslider-on-mouse-right-click)
 
 <!-- dummy comment line for breaking list -->
 
