@@ -18,7 +18,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getResource("16x16.png");
 String path = url.toString();
-String title = String.format("&lt;html&gt;&lt;table cellpadding='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='%s'&gt;&lt;/td&gt;&lt;td&gt;test&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/html&gt;", path);
+String title = String.format(
+  "&lt;html&gt;&lt;table cellpadding='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='%s'&gt;&lt;/td&gt;&lt;td&gt;test&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/html&gt;", path);
 panel.setBorder(BorderFactory.createTitledBorder(title));
 </code></pre>
 

@@ -30,7 +30,7 @@ comments: true
 
 - - - -
 - メモ
-    - `apidoc`の日本語版は誤訳(実際の動作とは逆になっている)
+    - 現在の`Javadoc`日本語版は誤訳がある(実際の動作とは逆になっている)
     - https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-
     
     		newValue - ルート・ハンドルを表示しない場合は true、そうでない場合はfalse

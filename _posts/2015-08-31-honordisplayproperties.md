@@ -20,7 +20,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`HTMLEditorKit`のデフォルトスタイルシートでは、`body`タグに`font-size: 14pt`などが設定されており、これがHTMLテキストのデフォルト文字サイズになっているため、`JEditorPane#setFont(new Font("Serif", Font.PLAIN, 16))`でフォントを指定しても反映されません。`JEditorPane`に設定されたフォントを使用する場合は、`JEditorPane#putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE)`としてコンポーネントのデフォルトのフォントを使用するように設定する必要があります。
+`HTMLEditorKit`のデフォルトスタイルシートでは、`body`タグに`font-size: 14pt`などが設定されており、これが`HTML`テキストのデフォルト文字サイズになっているため、`JEditorPane#setFont(new Font("Serif", Font.PLAIN, 16))`でフォントを指定しても反映されません。`JEditorPane`に設定されたフォントを使用する場合は、`JEditorPane#putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE)`としてコンポーネントのデフォルトのフォントを使用するように設定する必要があります。
 
 - `body`タグのスタイルを表示するサンプルコード
     - [StyleSheet (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/StyleSheet.html)のサンプル(`ShowStyles`)を参考
