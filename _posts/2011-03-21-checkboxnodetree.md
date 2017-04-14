@@ -112,19 +112,14 @@ comments: true
 </code></pre>
 
 ## 解説
-`JCheckBox`を継承する`TreeCellRenderer`、`TreeCellEditor`を作成して、`setEditable(true)`とした`JTree`に設定し、葉ノードをチェックできるようにしています。ノードがチェックされているかどうかといった状態の保存は、`DefaultMutableTreeNode#setUserObject(Object)`でタイトルと選択状態をもつオブジェクトを設定することで行っています。
+`JCheckBox`を継承する`TreeCellRenderer`、`TreeCellEditor`を作成して、`setEditable(true)`とした`JTree`に設定し、葉ノードをチェックできるようにしています。ノードがチェックされているかどうかといった状態の保存は、ノードのタイトル文字列と選択状態を保持する不変オブジェクトを`DefaultMutableTreeNode#setUserObject(Object)`メソッドで設定することで実行しています。
 
-- - - -
-葉ノードでない場合、表示には`DefaultTreeCellRenderer`を使っています。逆に`DefaultTreeCellRenderer`を継承する`TreeCellRenderer`で、葉ノードの表示を`JCheckBox`に委譲する方法でも同様となりますが、この場合、`JDK 1.6.0`では`Look And Feel`を変更してもアイコンや選択色が更新されないようです。
-
-- `JDK 1.7.0`で修正されている
-
-<!-- dummy comment line for breaking list -->
-
-- - - -
-葉ノードだけ編集可能に制限するため、`TreeCellEditor#isCellEditable(EventObject)`でクリックしたノードが`TreeNode#isLeaf()`かを判断しています。
-
-- [JTreeの葉ノードだけ編集可能にする](http://ateraimemo.com/Swing/LeafTreeCellEditor.html)
+- 葉ノードだけ編集可能に制限するため、`TreeCellEditor#isCellEditable(EventObject)`でクリックしたノードが`TreeNode#isLeaf()`かどうかを判断
+    - [JTreeの葉ノードだけ編集可能にする](http://ateraimemo.com/Swing/LeafTreeCellEditor.html)
+- 葉以外のノードの描画には、`DefaultTreeCellRenderer`を使用
+    - `DefaultTreeCellRenderer`を継承する`TreeCellRenderer`で、葉ノードの表示を`JCheckBox`に委譲する方法でも同様
+        - `JDK 1.6.0`では`Look And Feel`を変更してもアイコンや選択色が更新されない
+        - `JDK 1.7.0`で修正済み
 
 <!-- dummy comment line for breaking list -->
 

@@ -90,7 +90,8 @@ comments: true
     return this;
   }
   @Override public Object getCellEditorValue() {
-    return bg.getSelection().getActionCommand();
+    //bug: return bg.getSelection().getActionCommand();
+    return Answer.valueOf(bg.getSelection().getActionCommand());
   }
 
   //Copied from AbstractCellEditor

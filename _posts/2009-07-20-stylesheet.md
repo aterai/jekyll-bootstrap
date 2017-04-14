@@ -32,8 +32,8 @@ editor.setText(makeTestHtml());
 ## 参考リンク
 - [Java Swing「JEditorPane」メモ(Hishidama's Swing-JEditorPane Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JEditorPane.html)
 - [Swing - HTMLEditorKit and CSS](https://community.oracle.com/thread/1392908)
-- [StyleSheet (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/StyleSheet.html)
-    - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/html/CSS.html)
+- [StyleSheet (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/StyleSheet.html)
+    - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/CSS.html)
 - [How to add stylesheet information to a JEditorPane | alvinalexander.com](http://alvinalexander.com/blog/post/jfc-swing/how-add-style-stylesheet-jeditorpane-example-code)
 - [GraphicsEnvironmentにFontを登録して使用する](http://ateraimemo.com/Swing/RegisterFont.html)
 - [Rhinoでgoogle-prettify.jsを実行する](http://ateraimemo.com/Tips/GooglePrettifyRhino.html)
