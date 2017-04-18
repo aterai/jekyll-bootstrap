@@ -67,10 +67,11 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-`IDE`などのサポート無しでは、すこし面倒な`GridBagLayout`ですが、[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)の「紙などにマス目で下書きをしてから、コンポーネントのレイアウトを設計する」方法を使えば、凝ったレイアウトでも理解しやすく、すっきり設計できます。
+`IDE`などのサポート無しではすこし面倒な`GridBagLayout`ですが、~~[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)~~の「紙などにマス目で下書きをしてから、コンポーネントのレイアウトを設計する」方法を使えば、凝ったレイアウトでも理解しやすくすっきり設計できます。
 
 ## 参考リンク
-- [GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)
+- [GridBagLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/GridBagLayout.html)
+- ~~[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)~~
 - [GridBagLayoutでコンポーネントがつぶれるのを防ぎたいとき～](http://satoshi.kinokuni.org/tech/SwingTipsLayout.html#section1)
 - [GroupLayoutの使用](http://ateraimemo.com/Swing/GroupLayout.html)
 
