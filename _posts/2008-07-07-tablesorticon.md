@@ -26,6 +26,11 @@ UIManager.put("Table.descendingSortIcon", new IconUIResource(emptyIcon));
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`UIManager`を使用して、以下のようなサイズ`0`の`Icon`や、透過`png`画像などを`JTable`のヘッダに表示されるソートアイコンを変更しています。
+上記のサンプルでは、`UIManager`を使用して`JTable`のヘッダに表示されるソートアイコンを変更しています。
+
+- サイズ`0`の`Icon`でソートアイコンを非表示
+- 透過`png`画像から生成したソートアイコンを表示
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

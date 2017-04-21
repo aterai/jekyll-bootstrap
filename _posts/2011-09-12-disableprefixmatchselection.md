@@ -36,4 +36,10 @@ comments: true
 };
 </code></pre>
 
+## 参考リンク
+- [JList#getNextMatch(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#getNextMatch-java.lang.String-int-javax.swing.text.Position.Bias-)
+- [JTree#getNextMatch(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getNextMatch-java.lang.String-int-javax.swing.text.Position.Bias-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

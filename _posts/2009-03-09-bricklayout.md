@@ -61,7 +61,7 @@ for (c.gridx = 0; c.gridx &lt;= WIDTH * XSIZE; c.gridx++) {
 列の基準となる行は、どこでも(先頭でも最後でも)構わないようです。
 
 - - - -
-- 同様に、ダミーの幅を持つ行を作成して、キーボード風に配列
+- 同様に、ダミーの幅を持つ行を作成して、`JButton`をキーボード風に配置
     - [java - Laying out a keyboard in Swing - Stack Overflow](https://stackoverflow.com/questions/24622279/laying-out-a-keyboard-in-swing)
 
 <!-- dummy comment line for breaking list -->

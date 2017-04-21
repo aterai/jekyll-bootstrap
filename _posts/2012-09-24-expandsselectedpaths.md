@@ -31,9 +31,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [http://docs.oracle.com/javase/1.3/docs/guide/swing/JTreeChanges.html](http://docs.oracle.com/javase/1.3/docs/guide/swing/JTreeChanges.html)
-- [http://docs.oracle.com/javase/jp/1.3/guide/swing/JTreeChanges.html](http://docs.oracle.com/javase/jp/1.3/guide/swing/JTreeChanges.html)
-    - メモ: 日本語版には`docs`が付かない
+- [JTree の expandsSelectedPaths 新規プロパティおよび removeDescendantSelectedPaths 新規メソッド](http://docs.oracle.com/javase/jp/1.3/guide/swing/JTreeChanges.html)
+- [JTree#setExpandsSelectedPaths(boolean) (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setExpandsSelectedPaths-boolean-)
 - [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->

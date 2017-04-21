@@ -87,4 +87,9 @@ textPane.insertComponent(new JLabel(" TEST"));
  In most implementations, a vertical separator has a preferred height of 0, and a horizontal separator has a preferred width of 0. This means a separator is not visible unless you either set its preferred size or put it in under the control of a layout manager such as BorderLayout or BoxLayout that stretches it to fill its available display area.
 </p></blockquote>
 
+## 参考リンク
+- [How to Use Separators (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/separator.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

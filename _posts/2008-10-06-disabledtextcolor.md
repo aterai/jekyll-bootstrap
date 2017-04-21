@@ -40,7 +40,7 @@ JCheckBox cbx2 = new JCheckBox("&lt;html&gt;html tag&lt;/html&gt;", true);
     - `UIManager.put("Label.disabledForeground", Color.ORANGE);`
 - `JButton`
     - `UIManager.put("Button.disabledText", Color.YELLOW)`
-        - `MetalLookAndFeel`でのみ？、反映される
+        - `MetalLookAndFeel`でのみ反映
 
 <!-- dummy comment line for breaking list -->
 

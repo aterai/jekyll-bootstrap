@@ -99,8 +99,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-ボタンの揃えを変更するために、`JPanel`ではなく、`Box`を利用しているので、`JDK 5`でも`JDK 6`と同じように描画するために、`Box#paintComponent`を以下のようにオーバーライドしています。
-- [Bug ID: 4907674 Box disregards setBackground() even when set Opaque(true)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4907674)
+- ~~ボタンの揃えを変更するために、`JPanel`ではなく、`Box`を利用しているので、`JDK 5`でも`JDK 6`と同じように描画するために、`Box#paintComponent`を以下のようにオーバーライド~~ `JDK 6`で修正済み
+    - [Bug ID: 4907674 Box disregards setBackground() even when set Opaque(true)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4907674)
 
 <!-- dummy comment line for breaking list -->
 
@@ -121,7 +121,6 @@ https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSRb592NI/AAAAAAAAAig/4HrfRUSkP
 </code></pre>
 
 ## 参考リンク
-- [アクア風の球体の描き方（GIMPチュートリアル) > ロゴ・ボタン | GIMP思い込みチュートリアル（GIMPの使い方）](http://gimp.blog.shinobi.jp/Entry/18/)
 - [JButtonの形を変更](http://ateraimemo.com/Swing/RoundButton.html)
 - [JComponentの形状定義を変更する](http://ateraimemo.com/Swing/MoveNonRectangularImage.html)
 
