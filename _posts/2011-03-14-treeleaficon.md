@@ -32,12 +32,12 @@ comments: true
 </code></pre>
 
 ## 解説
-- `DefaultTreeCellRenderer#setOpenIcon(Icon)`
-- `DefaultTreeCellRenderer#getDefaultOpenIcon()`
-- `DefaultTreeCellRenderer#setClosedIcon(Icon)`
-- `DefaultTreeCellRenderer#getDefaultClosedIcon()`
-- `DefaultTreeCellRenderer#setLeafIcon(Icon)`
-- `DefaultTreeCellRenderer#getDefaultLeafIcon()`
+- [DefaultTreeCellRenderer#setOpenIcon(Icon)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setOpenIcon-javax.swing.Icon-)
+- [DefaultTreeCellRenderer#getDefaultOpenIcon()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultOpenIcon--)
+- [DefaultTreeCellRenderer#setClosedIcon(Icon)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setClosedIcon-javax.swing.Icon-)
+- [DefaultTreeCellRenderer#getDefaultClosedIcon()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultClosedIcon--)
+- [DefaultTreeCellRenderer#setLeafIcon(Icon)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setLeafIcon-javax.swing.Icon-)
+- [DefaultTreeCellRenderer#getDefaultLeafIcon()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultLeafIcon--)
 
 <!-- dummy comment line for breaking list -->
 

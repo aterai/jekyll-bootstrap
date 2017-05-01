@@ -20,10 +20,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JCheckBox`をチェックすると`DefaultToolkit`の`setDynamicLayout`メソッドを使って`DynamicLayout`の設定を切り替えています。
+上記のサンプルでは、`DefaultToolkit`の`setDynamicLayout`メソッドを使って`DynamicLayout`の設定を切り替えています。
 
 - `DynamicLayout`: `false`
-    - ウィンドウのリサイズが完了してから、内部コンテナのレイアウトを静的に評価する
+    - ウィンドウのリサイズが完了した後、内部コンテナのレイアウトを評価する
 - `DynamicLayout`: `true`
     - ウィンドウのリサイズに応じて、内部コンテナのレイアウトを動的に評価する
     - `OS`が、この動的レイアウト機能をサポートしているかどうかは、以下のメソッドで調べることが可能

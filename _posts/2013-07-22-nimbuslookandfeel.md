@@ -17,13 +17,16 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>try {
-  for (UIManager.LookAndFeelInfo laf: UIManager.getInstalledLookAndFeels()) {
-    if ("Nimbus".equals(laf.getName())) {
-      UIManager.setLookAndFeel(laf.getClassName());
-    }
-  }
-} catch (Exception e) {
-  e.printStackTrace();
+  UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+  // // 以下はJDK 1.7.0 以前を考慮する場合の指定方法
+  // for (UIManager.LookAndFeelInfo laf: UIManager.getInstalledLookAndFeels()) {
+  //   if ("Nimbus".equals(laf.getName())) {
+  //     UIManager.setLookAndFeel(laf.getClassName());
+  //   }
+  // }
+} catch (ClassNotFoundException | InstantiationException
+       | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+  ex.printStackTrace();
 }
 </code></pre>
 

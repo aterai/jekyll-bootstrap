@@ -32,7 +32,7 @@ focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSA
 </code></pre>
 
 ## 解説
-上記のサンプルでは、デフォルトのトラバーサルキー(<kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>)に加えて、上下左右の矢印キーでもフォーカス移動できるように設定しています。
+上記のサンプルでは、デフォルトのフォーカストラバーサルキー(<kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>)に加えて、上下左右の矢印キーでもフォーカス移動できるように設定しています。
 
 - `KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS`
     - `KeyEvent.VK_RIGHT`, `KeyEvent.VK_DOWN`

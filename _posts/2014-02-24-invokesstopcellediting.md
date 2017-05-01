@@ -34,7 +34,7 @@ comments: true
 ノード編集の割り込みは、その`JTree`内の別のノードがクリックされた場合などに発生します。<kbd>Tab</kbd>キーなどで`JTree`以外のコンポーネントにフォーカスが移動したり、親`Window`がフォーカスを失っても、割り込みは発生しないため、編集中の状態が維持され、再度`JTree`にフォーカスを戻せば編集を再開することができます。
 
 ## 参考リンク
-- [JTree#setInvokesStopCellEditing(boolean) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/JTree.html#setInvokesStopCellEditing%28boolean%29)
+- [JTree#setInvokesStopCellEditing(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setInvokesStopCellEditing-boolean-)
 - [JTableのセルの編集をコミット](http://ateraimemo.com/Swing/TerminateEdit.html)
 
 <!-- dummy comment line for breaking list -->

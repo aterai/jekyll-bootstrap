@@ -26,8 +26,9 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Windows L&F Bugs: Part 2 | Java.net](http://weblogs.java.net/blog/joshy/archive/2006/08/windows_lf_bugs.html)
-    - [4515765 Win L&F: Disabled menu items should show highlight](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4515765)
+- ~~[Windows L&F Bugs: Part 2 | Java.net](http://weblogs.java.net/blog/joshy/archive/2006/08/windows_lf_bugs.html)~~
+    - [JDK-4515765 Win L&F: Disabled menu items should show highlight - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4515765)
+    - [JDK-6325555 Only Partial Fix in for 4515765 in B53 Swing PIT - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6325555)
 
 <!-- dummy comment line for breaking list -->
 

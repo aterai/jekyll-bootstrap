@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2005-05-30T09:46:59+09:00
 description: JListの任意のItemを選択不可にするようなレンダラーを設定します。
 image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTLAYVmo3I/AAAAAAAAAW4/3MUtTm4ixyo/s800/DisabledItem.png
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2017/04/disable-any-items-in-jlist.html
+    lang: en
 comments: true
 ---
 ## 概要

@@ -25,7 +25,8 @@ table.setDragEnabled(true);
 
 ## 解説
 上記のサンプルの`TransferHandler`(`JDK 6`で導入された`TransferHandler#canImport`メソッドなどを使用)は、[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)のものとほぼ同じです。
-[JTableの行をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTable.html)とは異なり、複数行を選択して`Drag&Drop`による移動が可能になっています。
+
+[JTableの行をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTable.html)とは異なり、複数行を選択して`Drag&Drop`による移動に対応しています。
 
 ## 参考リンク
 - [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
