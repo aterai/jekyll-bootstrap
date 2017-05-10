@@ -127,7 +127,9 @@ UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0, 5, 0, 
 
 ## 参考リンク
 - [JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)
-- [Bug ID: 4515838 Can't change the border of a JComboBox](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4515838)
+- [JDK-4515838 Can't change the border of a JComboBox - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4515838)
+- [JDK-8179027 JComboBox too small under Windows LAF - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8179027)
+    - 上記のスクリーンショットのような`WindowsLookAndFeel`で`JComboBox`の高さが小さすぎる件が修正される？
 
 <!-- dummy comment line for breaking list -->
 

@@ -70,6 +70,8 @@ public static float getSizeOfText() {
 - [Toolkit#getScreenResolution() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#getScreenResolution--)
 - [UIManagerで使用するFontを統一](http://ateraimemo.com/Swing/FontChange.html)
 - [JDK-8147440 HiDPI (Windows): Swing components have incorrect sizes after changing display resolution - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8147440)
+- [JDK-8174845 Bad scaling on Windows with large fonts with Java 9ea - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8174845)
+- [JDK-8176883 Enable antialiasing for Metal L&F icons on HiDPI display - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8176883)
 
 <!-- dummy comment line for breaking list -->
 

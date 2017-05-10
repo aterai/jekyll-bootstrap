@@ -1,0 +1,61 @@
+---
+layout: post
+category: swing
+folder: AdjustPopupLocation
+title: JPopupMenuの表示を親コンポーネント領域内のみに制限する
+tags: [JPopupMenu]
+author: aterai
+pubdate: 2017-05-08T14:26:08+09:00
+description: JPopupMenuを設定したコンポーネントの表示領域内に収まるように、JPopupMenuの表示位置を調整します。
+image: https://drive.google.com/uc?export=view&id=1P6r7-2s31EBtrsPd4FGrzQidQKTrYhS7Wg
+comments: true
+---
+## 概要
+`JPopupMenu`を設定したコンポーネントの表示領域内に収まるように、`JPopupMenu`の表示位置を調整します。
+
+{% download https://drive.google.com/uc?export=view&id=1P6r7-2s31EBtrsPd4FGrzQidQKTrYhS7Wg %}
+
+## サンプルコード
+<pre class="prettyprint"><code>JPopupMenu popup = new JPopupMenu() {
+  @Override public void show(Component c, int x, int y) {
+    if (check.isSelected()) {
+      Point p = new Point(x, y);
+      Rectangle r = c.getBounds();
+      Dimension d = getPreferredSize();
+      if (p.x + d.width &gt; r.width) {
+        p.x -= d.width;
+      }
+      if (p.y + d.height &gt; r.height) {
+        p.y -= d.height;
+      }
+      super.show(c, Math.max(p.x, 0), Math.max(p.y, 0));
+    } else {
+      super.show(c, x, y);
+    }
+  }
+};
+popup.add("aaa");
+popup.add("bbbbbb");
+popup.add("cc");
+
+JLabel label = new JLabel("aaaaaaaaaaaa");
+label.setOpaque(true);
+label.setComponentPopupMenu(popup);
+</code></pre>
+
+## 解説
+上記のサンプルでは、`JPopupMenu#show(...)`メソッドをオーバーライドし、`JPopupMenu`の表示位置を調整することでコンポーネント(この場合`JLabel`)の表示領域内に`JPopupMenu`全体が収まるように設定しています。
+
+- 注:
+- 例えば親コンポーネントの右下で右クリックによる`JPopupMenu`の表示を行った場合、そのクリック位置に`JPopupMenu`の右下隅が重なるように表示される
+    - `JPopupMenu`のサイズが親コンポーネントの表示上のサイズより大きくなる場合は考慮していない
+        - 例えば`JPopupMenu`の高さが親コンポーネントの高さより高い場合、クリックした位置とは無関係に`JPopupMenu`の上辺が親コンポーネントの上辺と同じ位置になるよう表示される
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [TrayIconでJPopupMenuを使用する](http://ateraimemo.com/Swing/TrayIconPopupMenu.html)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

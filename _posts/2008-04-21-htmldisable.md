@@ -16,9 +16,9 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTODbO-ktI/AAAAAAAAAbw/bTVYI0sgEY4/s800/HtmlDisable.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>label1.putClientProperty("html.disable", Boolean.TRUE);
-label1.setText("&lt;html&gt;&lt;font color=red&gt;Html Test&lt;/font&gt;&lt;/html&gt;");
-label1.setToolTipText("&lt;html&gt;&amp;lt;html&amp;gt;&amp;lt;font color=red&amp;gt;Html Test&amp;lt;/font&amp;gt;&amp;lt;/html&amp;gt;&lt;/html&gt;");
+<pre class="prettyprint"><code>label.putClientProperty("html.disable", Boolean.TRUE);
+label.setText("&lt;html&gt;&lt;font color=red&gt;Html Test&lt;/font&gt;&lt;/html&gt;");
+label.setToolTipText("&lt;html&gt;&amp;lt;html&amp;gt;&amp;lt;font color=red&amp;gt;Html Test&amp;lt;/font&amp;gt;&amp;lt;/html&amp;gt;&lt;/html&gt;");
 </code></pre>
 
 ## 解説

@@ -122,6 +122,7 @@ comments: true
 ## 参考リンク
 - [Drawing Multiple Lines of Text (The Java™ Tutorials > 2D Graphics > Working with Text APIs)](https://docs.oracle.com/javase/tutorial/2d/text/drawmulstring.html)
 - [LineBreakMeasurer (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/LineBreakMeasurer.html)
+- [JDK-6479801 java.awt.font.LineBreakMeasurer code incorrect - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6479801)
 
 <!-- dummy comment line for breaking list -->
 

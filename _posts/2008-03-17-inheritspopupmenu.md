@@ -54,6 +54,7 @@ table.setInheritsPopupMenu(true);
 
 
 ## 参考リンク
+- [JComponent#setInheritsPopupMenu(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComponent.html#setInheritsPopupMenu-boolean-)
 - [JPopupMenuをコンポーネントに追加](http://ateraimemo.com/Swing/ComponentPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->

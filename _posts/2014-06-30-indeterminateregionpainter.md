@@ -38,8 +38,8 @@ d.put("ProgressBar[Enabled+Indeterminate].foregroundPainter", new AbstractRegion
   }
   //...
 });
-progressBar1 = new JProgressBar(model);
-progressBar1.putClientProperty("Nimbus.Overrides", d);
+progress = new JProgressBar(model);
+progress.putClientProperty("Nimbus.Overrides", d);
 </code></pre>
 
 ## 解説

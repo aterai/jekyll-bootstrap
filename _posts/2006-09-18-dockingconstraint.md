@@ -22,9 +22,9 @@ comments: true
   }
   private boolean isHorizontalDockingConstraint(Component c, Point p) {
     if (!c.contains(p)) return false;
-    int iv = (toolBar.getOrientation() == JToolBar.HORIZONTAL)
-                  ? toolBar.getSize().height
-                  : toolBar.getSize().width;
+    int iv = toolBar.getOrientation() == JToolBar.HORIZONTAL
+               ? toolBar.getSize().height
+               : toolBar.getSize().width;
     if (p.x &gt;= c.getWidth() - iv) {
       return false;
     } else if (p.x &lt; iv) {
@@ -37,7 +37,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JToolBar`は上下にのみドッキングできるようになっているため、`JComboBox`のような横長のコンポーネントを配置している場合でもレイアウトが崩れにくくなっています。
+上記のサンプルでは、`JToolBar`は上下にのみドッキングできるようになっているため、`JComboBox`のような横長のコンポーネントを配置している場合でも`JToolBar`のレイアウトが崩れにくくなっています。
 
 `ToolBarUI#canDock(Component, Point)`メソッドをオーバーライドして、左右の場合は`false`を返すようにしています。
 

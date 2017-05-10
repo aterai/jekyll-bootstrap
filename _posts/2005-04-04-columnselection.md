@@ -16,9 +16,9 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTJrC8DyhI/AAAAAAAAAUw/SO1wMAudBiE/s800/ColumnSelection.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final JTable table = new JTable(model);
+<pre class="prettyprint"><code>JTable table = new JTable(model);
 table.setCellSelectionEnabled(true);
-final JTableHeader header = table.getTableHeader();
+JTableHeader header = table.getTableHeader();
 header.addMouseListener(new MouseAdapter() {
   @Override public void mousePressed(MouseEvent e) {
     if (!check.isSelected()) {
@@ -37,7 +37,7 @@ header.addMouseListener(new MouseAdapter() {
 ## 解説
 上記のサンプルでは、`JTableHeader`に`MouseListener`を追加し、`JTableHeader#columnAtPoint(Point)`メソッドを使って、マウスでクリックされた位置にある`Column`を取得しています。
 
-`Column`全体の選択は、`changeSelection`メソッドを二回使用することで実現しています。
+`Column`全体の選択は、`changeSelection`メソッドを`2`回使用することで実現しています。
 
 ## 参考リンク
 - [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)
