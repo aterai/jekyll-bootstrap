@@ -89,7 +89,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLayer#processMouseEvent(...)`, `JLayer#processMouseMotionEvent(...)`をオーバーライドして、カーソルの下にある`JRadioButton`を取得し、その周辺に`JLayer#paint(...)`メソッドを使って影と縁を描画しています。これらは一番手前の別レイヤーに描画されるので、隣接したり奥に重なったりしているコンポーネントなどの上に描画することができます。
+上記のサンプルでは、`JLayer#processMouseEvent(...)`と`JLayer#processMouseMotionEvent(...)`メソッドをオーバーライドして、カーソルの下にある`JRadioButton`を取得し、その周辺に`JLayer#paint(...)`メソッドを使って影と縁を描画しています。
+
+- `JLayer`を使用しているので、これらの影と縁は各コンポーネントより一番手前の別レイヤーに描画される
+    - 隣接したり奥に重なったりしているコンポーネントなどの上に描画が可能
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [FlowLayoutでボタンを重ねてパンくずリストを作成する](http://ateraimemo.com/Swing/BreadcrumbList.html)

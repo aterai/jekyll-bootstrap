@@ -25,6 +25,21 @@ label.setHorizontalTextPosition(SwingConstants.LEFT);
 ## 解説
 上記のサンプルでは、`JLabel#setVerticalAlignment(...)`、`JLabel#setVerticalTextPosition(...)`、`JLabel#setHorizontalAlignment(...)`、`JLabel#setHorizontalTextPosition(...)`などのメソッドを使用して、`JLabel`のアイコンと文字列の位置関係を変更しています。
 
-`AbstractButton`を継承する`JButton`などにも、アイコンと文字列の位置を設定する同名のメソッドが存在します(引数は`SwingConstants`インタフェースで定義された共通の定数が使用可)。
+- `AbstractButton`を継承する`JButton`などにも、アイコンと文字列の位置を設定する同名のメソッドが存在する
+    - 引数は`SwingConstants`インタフェースで定義された共通の定数が使用可能
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JLabel#setVerticalAlignment(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JLabel.html#setVerticalAlignment-int-)
+- [JLabel#setVerticalTextPosition(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JLabel.html#setVerticalTextPosition-int-)
+- [JLabel#setHorizontalAlignment(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JLabel.html#setHorizontalAlignment-int-)
+- [JLabel#setHorizontalTextPosition(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JLabel.html#setHorizontalTextPosition-int-)
+- [AbstractButton#setVerticalAlignment(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setVerticalAlignment-int-)
+- [AbstractButton#setVerticalTextPosition(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setVerticalTextPosition-int-)
+- [AbstractButton#setHorizontalAlignment(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setHorizontalAlignment-int-)
+- [AbstractButton#setHorizontalTextPosition(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setHorizontalTextPosition-int-)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

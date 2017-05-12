@@ -20,16 +20,15 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane#setContinuousLayout(false)`を使用して、`JSplitPane`の`Divider`がドラッグ中の場合に`Divider`の移動先を示す矩形の色を変更しています。
-
-- - - -
-ドラッグ中ではない`Divider`の色は、`LookAndFeel`によっては、以下のような方法で変更することができます。
-
-<pre class="prettyprint"><code>BasicSplitPaneDivider divider = ((BasicSplitPaneUI) getUI()).getDivider();
-divider.setBackground(Color.ORANGE);
+- `JSplitPane`の`Divider`がドラッグ中の場合、その移動先を示す矩形の色を変更: `SplitPaneDivider.draggingColor`を半透明の色に変更
+    - `JSplitPane#setContinuousLayout(false)`が設定されている`JSplitPane`のみ半透明は有効
+- ドラッグ中ではない`Divider`の色は、以下のような方法で変更可能
+    - `LookAndFeel`に依存する
+        
+        <pre class="prettyprint"><code>BasicSplitPaneDivider divider = ((BasicSplitPaneUI) getUI()).getDivider();
+        divider.setBackground(Color.ORANGE);
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JSplitPaneでディバイダの移動を連続的に再描画](http://ateraimemo.com/Swing/ContinuousLayout.html)
 
 <!-- dummy comment line for breaking list -->
