@@ -1,0 +1,45 @@
+---
+layout: post
+category: swing
+folder: CompoundBorder
+title: CompoundBorderを使用する
+tags: [CompoundBorder, Border, TitledBorder]
+author: aterai
+pubdate: 2017-05-22T19:09:33+09:00
+description: CompoundBorderを使用して複数のBorderを合成し、新たに単一のボーダーを生成します。
+image: https://drive.google.com/uc?export=view&id=1ICJ1AyKfK7OoNjHF2mcaIlMv3HiJGkBm5g
+comments: true
+---
+## 概要
+`CompoundBorder`を使用して複数の`Border`を合成し、新たに単一のボーダーを生成します。
+
+{% download https://drive.google.com/uc?export=view&id=1ICJ1AyKfK7OoNjHF2mcaIlMv3HiJGkBm5g %}
+
+## サンプルコード
+<pre class="prettyprint"><code>Border raisedBevel = BorderFactory.createRaisedBevelBorder();
+Border topLine = BorderFactory.createMatteBorder(10, 0, 0, 0, Color.GRAY.brighter());
+Border loweredBevel = BorderFactory.createLoweredBevelBorder();
+Border compound1 = BorderFactory.createCompoundBorder(raisedBevel, topLine);
+Border compound2 = BorderFactory.createCompoundBorder(compound1, loweredBevel);
+TitledBorder topTitle2 = BorderFactory.createTitledBorder(compound2, "CompoundBorder");
+topTitle2.setTitleJustification(TitledBorder.CENTER);
+
+JPanel p2 = new JPanel();
+p2.setBorder(topTitle2);
+</code></pre>
+
+## 解説
+- `TitledBorder`
+    - タイトルを追加する`Border`として線幅`1`の`LineBorder`を使用する`TitledBorder`を作成してパネルに設定
+- `CompoundBorder`
+    - 外側から`RaisedBevelBorder`、`MatteBorder`、`LoweredBevelBorder`の順番に`CompoundBorder`を使用してBorderを合成
+    - 合成された上記の`Border`を使用する`TitledBorder`を作成してパネルに設定
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [CompoundBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/CompoundBorder.html)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

@@ -11,7 +11,7 @@ image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOmfktdJI/AAAAAAAAAco/gB
 comments: true
 ---
 ## 概要
-インストールされている`LookAndFeel`の一覧を取得し、これらを切り替えるためのメニューバーを作成します。[Swingset3 — Project Kenai](https://java.net/projects/Swingset3)からの引用です。
+インストールされている`LookAndFeel`の一覧を取得し、これらを切り替えるためのメニューバーを作成します。このサンプルは、`Swingset3`からの引用です。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOmfktdJI/AAAAAAAAAco/gBdSD5Qn9-Y/s800/InstalledLookAndFeels.png %}
 
@@ -67,7 +67,7 @@ private void updateLookAndFeel() {
 上記のサンプルでは、`UIManager.getInstalledLookAndFeels()`メソッドを使用して`UIManager.LookAndFeelInfo`のリストを取得しています。
 
 ## 参考リンク
-- [Swingset3 — Project Kenai](https://java.net/projects/Swingset3)
+- ~~[Swingset3](https://java.net/projects/Swingset3)~~
 - [Look and Feelの変更](http://ateraimemo.com/Swing/LookAndFeel.html)
     - `SwingSet2`版
 

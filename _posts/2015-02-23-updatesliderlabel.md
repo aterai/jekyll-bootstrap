@@ -24,8 +24,8 @@ slider.setPaintLabels(true);
 slider.setPaintTicks(true);
 slider.setSnapToTicks(true);
 //slider.setBorder(BorderFactory.createLineBorder(Color.WHITE, 10));
-Dictionary labelTable = slider.getLabelTable();
-Enumeration ed = labelTable.keys();
+Dictionary&lt;?, ?&gt; labelTable = slider.getLabelTable();
+Enumeration&lt;?&gt; ed = labelTable.keys();
 while (ed.hasMoreElements()) {
   Integer i = (Integer) ed.nextElement();
   JLabel label = (JLabel) labelTable.get(i);

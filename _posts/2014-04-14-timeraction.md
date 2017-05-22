@@ -42,7 +42,7 @@ class Tile2 extends JComponent {
 ## 解説
 - `Timer: 100`
     - `10x10`個のアニメーション用タイル(`JComponent`)一つに、それぞれ`Timer`を生成して使用(その為、`Timer`も`10x10`個存在する)
-    - `JDK 1.7.0_40`以降で低速
+    - ~~`JDK 1.7.0_40`以降で低速~~ すでに修正済みで、上記のサンプルは意味がなくなっている
     - `JDK 1.8.0`以降は、`JDK 1.7.0_25`と同等
 - `Timer: 1, ActionListener: 100`
     - `Timer`は`1`個、`Timer#addActionListener(...)`で、`100`個の`ActionListener`を追加して使用
@@ -54,7 +54,7 @@ class Tile2 extends JComponent {
 ## 参考リンク
 - [java - javax.swing.Timer slowdown in Java7u40 - Stack Overflow](https://stackoverflow.com/questions/18933986/javax-swing-timer-slowdown-in-java7u40)
     - `JDK 1.7.0_25`までは、どれも同じような速度でアニメーションするが、`JDK 1.7.0_40`以降は`Timer`の数を減らさないと遅くなる(`JDK 1.8.0`は`JDK 1.7.0_25`と同等に速い)
-    - [Bug ID: JDK-7167780 Hang javasoft.sqe.tests.api.javax.swing.Timer.Ctor2Tests](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7167780)の修正が影響している？
+    - [JDK-7167780 Hang javasoft.sqe.tests.api.javax.swing.Timer.Ctor2Tests - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-7167780)の修正が影響していた？
 
 <!-- dummy comment line for breaking list -->
 
