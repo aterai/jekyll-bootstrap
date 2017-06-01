@@ -50,12 +50,12 @@ comments: true
     - `JList#createToolTip()`をオーバーライドして、セルの描画に使用するセルレンダラー自体を`JToolTip`に追加
         - このため、対象セルが選択状態なら、`JToolTip`の背景色もそのセル選択色と同じになる
 - 右: `Default`
-    - `JToolTip`の表示位置はデフォルトで、マウスカーソルの右下
+    - `JToolTip`の表示位置は、デフォルトのマウスカーソルの右下
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-セル内に文字列が収まっているかどうかは、以下のようなセルレンダラーで判定しています。
+セル内に文字列が収まっているかどうかは、以下のようなセルレンダラーを使用して判定しています。
 
 <pre class="prettyprint"><code>class TooltipListCellRenderer extends DefaultListCellRenderer {
   @Override public Component getListCellRendererComponent(

@@ -139,14 +139,14 @@ public Action[] getActions() {
 &lt;/target&gt;
 </code></pre>
 
-面倒な場合は、`JDK 1.5`での、`XML`に対応した`Properties`を使用するようにしてみてください。
+`JDK 1.5.0`で導入された`XML`に対応した`Properties`で代用する方法もあります。
 
 - 参考: [J2SE 5.0 Tiger 虎の穴 Properties](http://www.javainthebox.net/laboratory/J2SE1.5/TinyTips/Properties/Properties.html)
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`JDK 1.6`なら、`native2ascii`で変換しなくても、リソースファイルのエンコードを指定して読み込むことが出来ます。
+`JDK 1.6.0`なら、`native2ascii`で変換しなくても、リソースファイルのエンコードを指定して読み込むことが出来ます。
 
 - 参考
     - [Java 小ネタ千夜一夜 第13夜 Java SE 6はnative2ascii使わなくていいのはみんな知っていると思うが](http://d.hatena.ne.jp/shin/20090707/p4)

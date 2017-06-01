@@ -21,7 +21,7 @@ comments: true
     = GraphicsEnvironment.getLocalGraphicsEnvironment();
   GraphicsDevice graphicsDevice
     = graphicsEnvironment.getDefaultScreenDevice();
-  if (graphicsDevice.getFullScreenWindow() == null) {
+  if (Objects.isNull(graphicsDevice.getFullScreenWindow())) {
     dialog.dispose(); //destroy the native resources
     dialog.setUndecorated(true);
     dialog.setVisible(true); //rebuilding the native resources
@@ -48,9 +48,9 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-フルスクリーン表示とウィンドウ表示を切り替える前に、タイトルバーの非表示、表示も`setUndecorated`メソッドで切り替えていますが、このメソッドを使用する前に一旦`dispose`してウィンドウのネイティブリソースを開放しておく必要があります。
+フルスクリーン表示とウィンドウ表示を切り替える前に、タイトルバーの非表示、表示も`setUndecorated(...)`メソッドで切り替えていますが、このメソッドを使用する前に一旦`dispose`してウィンドウのネイティブリソースを開放しておく必要があります。
 
-- `setUndecorated(boolean undecorated)`は、ウィンドウが表示されていない状態の場合のみ、呼び出し可能だが、この「表示されていない」は `isVisible()`ではなく、`isDisplayable()`が`false`の意味なので、`dialog.setVisible(false);`としただけでは、 `Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: The dialog is **displayable**.` が発生する
+- `setUndecorated(boolean undecorated)`は、ウィンドウが表示されていない状態の場合のみ、呼び出し可能だが、この「表示されていない」は `isVisible()`ではなく、`isDisplayable()`が`false`の意味なので、`dialog.setVisible(false);`のみ実行すると、 `Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: The dialog is **displayable**.` が発生する
     - [Window#dispose()](http://docs.oracle.com/javase/jp/6/api/java/awt/Window.html#dispose%28%29)
     - [Dialog#setUndecorated(boolean)](http://docs.oracle.com/javase/jp/6/api/java/awt/Dialog.html#setUndecorated%28boolean%29)
     - [Component#isDisplayable()](http://docs.oracle.com/javase/jp/6/api/java/awt/Component.html#isDisplayable%28%29)

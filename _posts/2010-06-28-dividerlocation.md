@@ -25,9 +25,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane`のサイズが決まった後(例えば`JFrame#pack()`や、`JFrame#setSize(int,int)`などした後)で、`JSplitPane#setDividerLocation(0.5);`を使用することで、ディバイダを中央に配置しています。
+上記のサンプルの`JSplitPane`は、初期状態でそのディバイダが中央に配置されるよう、`JSplitPane#setDividerLocation(.5);`を設定しています。
 
-- `JSplitPane#setDividerLocation(double)`
+- 注:
+    - `JFrame#pack()`や、`JFrame#setSize(int, int)`などが実行されて親コンポーネントのサイズが決定した後で、`JSplitPane#setDividerLocation(...)`メソッドを実行しないと効果がない
     - ディバイダ自身の幅(`JSplitPane#getDividerSize()`)は含まれない
     - 内部では、切り捨てで`JSplitPane#setDividerLocation(int)`を使用: [JSplitPaneのDividerの位置を最大化後に変更する](http://ateraimemo.com/Swing/DividerSplitRatio.html)
 
@@ -37,6 +38,7 @@ comments: true
 `JSplitPane#setResizeWeight(double)`を使用し、`JSplitPane`内に配置したコンポーネント(`JScrollPane`)の余ったスペースの配分が同じになるようにして、ディバイダを中央に配置する方法もあります。
 
 ## 参考リンク
+- [JSplitPane#setDividerLocation(double) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSplitPane.html#setDividerLocation-double-)
 - [JSplitPaneのDividerの位置を最大化後に変更する](http://ateraimemo.com/Swing/DividerSplitRatio.html)
 
 <!-- dummy comment line for breaking list -->

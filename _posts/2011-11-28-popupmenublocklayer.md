@@ -57,7 +57,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLayer`を使って、`JScrollPane(JScrollBar)`のスクロール、`JTable`のセル選択、`JToolTip`、`JTableHeader`の移動など、子コンポーネントへのすべての入力をまとめて制限しています。
+上記のサンプルでは、`JLayer`を使用して、`JScrollBar`の移動、`JTable`のセル選択、`JToolTip`の表示、`JTableHeader`の移動など、子コンポーネントに対するすべての入力をまとめて制限しています。
 
 - [JScrollPaneのスクロールを禁止](http://ateraimemo.com/Swing/DisableScrolling.html)のように、`JScrollPane`、`JTable`などを個別に入力禁止にする必要がない
 - [JLayerで指定したコンポーネントへの入力を禁止](http://ateraimemo.com/Swing/DisableInputLayer.html)と、ほとんど同じだが、その場合、`setComponentPopupMenu(...)`で設定した`JPopupMenu`が制限できない

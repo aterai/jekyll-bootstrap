@@ -29,6 +29,7 @@ comments: true
 - `Override TableModel#isCellEditable(...) { return false; }`
     - テーブルモデルの`TableModel#isCellEditable()`メソッドが常に`false`を返すようにオーバーライドして、すべてのセルを編集不可に設定
     - `JTable#isCellEditable()`メソッドをオーバーライドする方法もある
+        - この場合、例えば同じ`TableModel`を使用する`2`つの`JTable`で、片方だけ編集不可にする設定が可能
 - `JTable#setDefaultEditor(Object.class, null);`
     - 各カラムにセルエディタを設定しない、かつ`Object.class`が使用するデフォルトセルエディタを`null`にすることで、すべてのセルを編集不可にする
         

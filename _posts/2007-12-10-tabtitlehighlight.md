@@ -30,7 +30,11 @@ comments: true
 ## 解説
 上記のサンプルでは、`JTabbedPane`に`MouseMotionListener`を追加し、`JTabbedPane#indexAtLocation`メソッドで、マウスカーソルの下にあるタブを取得しています。
 
-`GTKLookAndFeel`(`Ubuntu`+`GNOME`+`jdk1.6.0_03`)などでは、タブの文字色を変更出来ないようです。
+- 注:
+    - タブ文字色の変更が可能かは`LookAndFeel`依存
+    - `GTKLookAndFeel`では変更不可
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JTabbedPaneの選択文字色を変更](http://ateraimemo.com/Swing/ColorTab.html)

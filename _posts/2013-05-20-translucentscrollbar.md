@@ -130,7 +130,7 @@ comments: true
     - ~~`JTextArea`などをこのサンプルの`JViewport`に配置すると、`Caret`の点滅や、文字列の選択などでつまみの描画が乱れる~~
     - ~~`JList`などの選択でも、つまみの描画が乱れる~~
         - ~~`ListSelectionListener`や、`FocusListener`を追加して再描画することで回避~~
-    - `JScrollPane#isOptimizedDrawingEnabled()`が`false`を返すようにオーバーライドして回避
+    - `JScrollPane#isOptimizedDrawingEnabled()`が`false`を返すようにオーバーライドすることで回避
     - このサンプルでは、横スクロールバーの表示、カラムヘッダの表示に未対応
         - [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](http://ateraimemo.com/Swing/OverlappedScrollBar.html)
 

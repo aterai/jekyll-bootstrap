@@ -31,34 +31,28 @@ table.scrollRectToVisible(r);
 
 - `JList`
     - [JList#ensureIndexIsVisible(int)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JList.html#ensureIndexIsVisible%28int%29)を使って、追加した最終行を可視化(このメソッド内部で`scrollRectToVisible`を使用)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>Rectangle cellBounds = list.getCellBounds(index, index);
-if (cellBounds != null) {
-  list.scrollRectToVisible(cellBounds);
-}
+        
+        <pre class="prettyprint"><code>Rectangle cellBounds = list.getCellBounds(index, index);
+        if (cellBounds != null) {
+          list.scrollRectToVisible(cellBounds);
+        }
 </code></pre>
-
 - `JTree`
     - [JTree#scrollRowToVisible(int)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTree.html#scrollRowToVisible%28int%29)、または[JTree#scrollPathToVisible(TreePath)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTree.html#scrollPathToVisible%28javax.swing.tree.TreePath%29)で追加した最終行を可視化
     - `tree.scrollRowToVisible(row)`は `tree.scrollPathToVisible(tree.getPathForRow(row))`と同等
     - `JTree#scrollPathToVisible(TreePath)`は内部で、`tree.scrollRectToVisible(tree.getPathBounds(path))`を使用
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>DefaultTreeModel treeModel = (DefaultTreeModel) tree.getModel();
-DefaultMutableTreeNode parent = (DefaultMutableTreeNode) treeModel.getRoot();
-DefaultMutableTreeNode newChild = new DefaultMutableTreeNode(date);
-treeModel.insertNodeInto(newChild, parent, parent.getChildCount());
-/* //tree.scrollRowToVisible(row) == tree.scrollPathToVisible(tree.getPathForRow(row))
-tree.scrollRowToVisible(tree.getRowCount() - 1);
-/*/
-tree.scrollPathToVisible(new TreePath(newChild.getPath()));
-//*/
+        
+        <pre class="prettyprint"><code>DefaultTreeModel treeModel = (DefaultTreeModel) tree.getModel();
+        DefaultMutableTreeNode parent = (DefaultMutableTreeNode) treeModel.getRoot();
+        DefaultMutableTreeNode newChild = new DefaultMutableTreeNode(date);
+        treeModel.insertNodeInto(newChild, parent, parent.getChildCount());
+        /* //tree.scrollRowToVisible(row) == tree.scrollPathToVisible(tree.getPathForRow(row))
+        tree.scrollRowToVisible(tree.getRowCount() - 1);
+        /*/
+        tree.scrollPathToVisible(new TreePath(newChild.getPath()));
+        //*/
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
     - `JComponent#scrollRectToVisible(...)`を使用してスクロール
 - [JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)
