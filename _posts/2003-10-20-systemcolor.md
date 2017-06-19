@@ -29,7 +29,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [システムカラー](http://www.asahi-net.or.jp/~dp8t-asm/java/tips/SystemColor.html)
+- [SystemColor (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/SystemColor.html)
+- [Color#getColor(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Color.html#getColor-java.lang.String-)
 
 <!-- dummy comment line for breaking list -->
 

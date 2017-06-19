@@ -45,34 +45,31 @@ comments: true
     - `DefaultTableModel#setColumnIdentifiers(Object[])`でモデルの列識別子を置き換え、`JTableHeader`を作り直しているため、列の入れ替えなどは初期化される
     - ドラッグ中のカラムが存在する状態で、`DefaultTableModel#setColumnIdentifiers(Object[])`を実行すると、`ArrayIndexOutOfBoundsException: -1`が発生する
         - このサンプルでは、`JTableHeader#setDraggedColumn(null);`で、ドラッグ中のカラムをクリアしている
-        - `DefaultTableModel#setColumnIdentifiers(Object[])`を使用する場合は、`table.getTableHeader().setReorderingAllowed(false);`とドラッグによる列の順序変更を禁止しておいた方が良いかもしれない
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>private final JMenuItem editItem2 = new JMenuItem(
-        new AbstractAction("Edit: setColumnIdentifiers") {
-  @Override public void actionPerformed(ActionEvent e) {
-    final JTableHeader header = (JTableHeader) getInvoker();
-    final JTable table = header.getTable();
-    final DefaultTableModel model = (DefaultTableModel) table.getModel();
-    String name = table.getColumnName(index);
-    textField.setText(name);
-    int result = JOptionPane.showConfirmDialog(
-        table, textField, getValue(NAME).toString(),
-        JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-    if (result == JOptionPane.OK_OPTION) {
-      String str = textField.getText().trim();
-      if (!str.equals(name)) {
-        columnNames[table.convertColumnIndexToModel(index)] = str;
-        header.setDraggedColumn(null); //clear column dragging
-        model.setColumnIdentifiers(columnNames);
-      }
-    }
-  }
-});
+        - `DefaultTableModel#setColumnIdentifiers(Object[])`を使用する場合は、`table.getTableHeader().setReorderingAllowed(false);`でドラッグによる列の順序変更を禁止しておいた方が良さそう
+            
+            <pre class="prettyprint"><code>private final JMenuItem editItem2 = new JMenuItem(
+                    new AbstractAction("Edit: setColumnIdentifiers") {
+              @Override public void actionPerformed(ActionEvent e) {
+                final JTableHeader header = (JTableHeader) getInvoker();
+                final JTable table = header.getTable();
+                final DefaultTableModel model = (DefaultTableModel) table.getModel();
+                String name = table.getColumnName(index);
+                textField.setText(name);
+                int result = JOptionPane.showConfirmDialog(
+                    table, textField, getValue(NAME).toString(),
+                    JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+                if (result == JOptionPane.OK_OPTION) {
+                  String str = textField.getText().trim();
+                  if (!str.equals(name)) {
+                    columnNames[table.convertColumnIndexToModel(index)] = str;
+                    header.setDraggedColumn(null); //clear column dragging
+                    model.setColumnIdentifiers(columnNames);
+                  }
+                }
+              }
+            });
 </code></pre>
-
-## 参考リンク
+        - * 参考リンク [#reference]
 - [JTableHeaderにJPopupMenuを追加してソート](http://ateraimemo.com/Swing/RowSorterPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->

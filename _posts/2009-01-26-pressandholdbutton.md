@@ -97,9 +97,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`1000`ミリ秒ボタンを押したままにしておくと、`JRadioButton`を配置した`JPopupMenu`を表示します。普通にクリックした場合は、現在選択されている`JRadioButton`の色をコンソールに出力するようになっています。
+- 長押し
+    - ボタンクリックが`1000`ミリ秒以上継続されると、`JRadioButton`を配置した`JPopupMenu`を表示
+        - `JPopupMenu`のレイアウトを`pop.setLayout(new GridLayout(0, 3))`で変更し、`JRadioButton`を`3`列並べて表示
+- シングルリック
+    - 現在選択されている`JRadioButton`の色をコンソールに出力
 
-- - - -
-`JPopupMenu`のレイアウトを`pop.setLayout(new GridLayout(0,3));`で変更し、三列に`JRadioButton`を並べています。
+<!-- dummy comment line for breaking list -->
 
 ## コメント

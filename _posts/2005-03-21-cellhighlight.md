@@ -66,7 +66,7 @@ comments: true
 </code></pre>
 
 ## 解説
-セルレンダラーに`MouseListener`、`MouseMotionListener`を追加し、マウスカーソルが乗っているセルの色を変更しています。
+上記のサンプルでは、`JTable`に`MouseListener`、`MouseMotionListener`を追加してマウスカーソルが乗っているセルを取得し、セルレンダラーでこれを参照してその背景色を変更しています。
 
 - - - -
 `JTable#prepareRenderer(...)`メソッドをオーバーライドする方法もあります。

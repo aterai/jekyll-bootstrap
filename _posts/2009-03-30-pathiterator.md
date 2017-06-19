@@ -55,6 +55,7 @@ comments: true
 
 
 ## 参考リンク
+- [PathIterator (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/PathIterator.html)
 - [SVG 1.1 仕様 （第２版） 日本語訳](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/index.html)
     - [パス – SVG 1.1 （第２版）](http://www.hcn.zaq.ne.jp/___/SVG11-2nd/paths.html)
 - [SVG Path](http://www.w3schools.com/svg/svg_path.asp)

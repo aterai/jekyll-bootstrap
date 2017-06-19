@@ -42,7 +42,7 @@ comments: true
 - - - -
 `JDK 1.7.0`以上の場合は、`Files.walkFileTree(...)`などを使用する方法もあります。
 
-- [Files#walkFileTree(...) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/nio/file/Files.html#walkFileTree%28java.nio.file.Path,%20java.nio.file.FileVisitor%29)
+- [Files#walkFileTree(...) (Java Platform SE 7)](https://docs.oracle.com/javase/jp/7/api/java/nio/file/Files.html#walkFileTree%28java.nio.file.Path,%20java.nio.file.FileVisitor%29)
 - [Walking the File Tree (The Java™ Tutorials > Essential Classes > Basic I/O)](https://docs.oracle.com/javase/tutorial/essential/io/walk.html)
 
 <!-- dummy comment line for breaking list -->
@@ -93,13 +93,13 @@ public class FilesWalkTest {
 ## 参考リンク
 - [Java入門 ファイル](http://msugai.fc2web.com/java/IO/fileObj.html)
 - [How to Use Progress Bars](https://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
-- [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
+- [SwingWorker (Java Platform SE 6)](https://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
 - [Using a Swing Worker Thread](http://web.archive.org/web/20090830092511/http://java.sun.com/products/jfc/tsc/articles/threads/threads2.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 実際に動作するサンプルを追加してみました。 -- *aterai* 2006-04-28 (金) 21:50:55
-- `JDK 6`の`SwingWorker`を使用するように変更しました。 -- *aterai* 2008-07-11 (金) 15:32:26
+- ダミーではなく実際に動作するサンプルに変更。 -- *aterai* 2006-04-28 (金) 21:50:55
+- `JDK 6`の`SwingWorker`を使用するように変更。 -- *aterai* 2008-07-11 (金) 15:32:26
 
 <!-- dummy comment line for breaking list -->

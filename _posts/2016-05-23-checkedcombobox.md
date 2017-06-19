@@ -63,8 +63,7 @@ comments: true
     if (isPopupVisible()) {
       E item = getItemAt(index);
       item.selected ^= true;
-      removeItemAt(index);
-      insertItemAt(item, index);
+      setSelectedIndex(-1);
       setSelectedItem(item);
     }
   }
@@ -87,6 +86,11 @@ comments: true
     - この場合は、ドロップダウンリストを閉じないように、`JComboBox#setPopupVisible(...)`をオーバーライド
 - <kbd>Space</kbd>キーでアイテムが選択された場合は、`BasicComboPopup`から`JList`を取得し、その選択アイテムを取得する
     - この場合、`JComboBox#getSelectedIndex()`などを使用すると、ハイライト(`cellHasFocus`)されているアイテムではなく、選択状態(`isSelected`)のアイテムが取得される
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JComboBoxのドロップダウンリスト中にあるアイテムの状態を更新する](http://ateraimemo.com/Swing/UpdateComboBoxItem.html)
 
 <!-- dummy comment line for breaking list -->
 

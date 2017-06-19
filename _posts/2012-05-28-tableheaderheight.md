@@ -58,7 +58,7 @@ scroll.setColumnHeader(new JViewport() {
 ## 参考リンク
 - [JTableのJTalbeHeaderの高さを変更して列幅の合計が１２００ピクセルを超えて横スクロールするとバグった。 - kensir0uのしくみ](http://d.hatena.ne.jp/kensir0u/20090416/1239898154)
     - このバグ？の状態を適切に示す良いサンプルコードがある
-- [#JDK-4473075 JTable header rendering problem (after setting preferred size) - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4473075)
+- [JDK-4473075 JTable header rendering problem (after setting preferred size) - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4473075)
     - `JDK 9`で修正されている
 
 <!-- dummy comment line for breaking list -->

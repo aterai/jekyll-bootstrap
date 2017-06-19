@@ -34,7 +34,7 @@ dh.setDrawsLayeredHighlights(false);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [DefaultHighlighter#setDrawsLayeredHighlights(boolean) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/DefaultHighlighter.html#setDrawsLayeredHighlights%28boolean%29)
+- [DefaultHighlighter#setDrawsLayeredHighlights(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultHighlighter.html#setDrawsLayeredHighlights-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

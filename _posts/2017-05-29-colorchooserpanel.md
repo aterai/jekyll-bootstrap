@@ -70,7 +70,7 @@ button.addActionListener(e -&gt; {
 - - - -
 - 注:
     - `JColorChooser`のタブなどに表示される`AbstractColorChooserPanel#getDisplayName()`の値は`Locale`に依存する
-    - 上記のサンプルの「すべて未選択」以外で表示される`JDialog`の`OK`ボタンなどはすべてダミーでクリックしても無効
+    - ~~上記のサンプルの「すべて未選択」以外で表示される`JDialog`の`OK`ボタンなどはすべてダミーでクリックしても無効~~ `JColorChooser.createDialog(...)`メソッドを使用するよう修正
 
 <!-- dummy comment line for breaking list -->
 

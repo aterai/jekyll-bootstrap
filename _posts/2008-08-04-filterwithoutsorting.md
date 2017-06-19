@@ -29,7 +29,7 @@ sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、行フィルタだけ利用して、行のソートは不可にしておきたいので、`sorter`に以下のような設定をしています。
+上記のサンプルでは、行フィルタだけ利用して、行のソートは不可にしておきたいので、`TableRowSorter`に以下のような設定をしています。
 
 - `DefaultRowSorter#setRowFilter(RowFilter)`で偶数行だけ表示するフィルタを設定
 - `DefaultRowSorter#isSortable(int)`をオーバーライドして常に`false`を返す
@@ -40,7 +40,7 @@ sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
 `DefaultRowSorter#setSortable(int, boolean)`を使用して、一部の列だけソート不可にする方法もあります。
 
 ## 参考リンク
-- [DefaultRowSorter (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/DefaultRowSorter.html)
+- [DefaultRowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultRowSorter.html)
 - [JTableHeaderのカラムを選択不可にする](http://ateraimemo.com/Swing/DisabledHeader.html)
 
 <!-- dummy comment line for breaking list -->

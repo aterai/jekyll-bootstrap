@@ -106,13 +106,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。`CellRenderer`用の`JButton`は表示のみに使用するため、アクションイベントを設定するのは`CellEditor`用の`JButton`のみです。
+上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。`CellRenderer`用の`JButton`は表示のみに使用するため、アクションを設定するのは`CellEditor`用の`JButton`のみです。
 
 - - - -
-- `LookAndFeel`などが更新されたら、`JTable#updateUI()`内で`SwingUtilities#updateRendererOrEditorUI()`を呼び出すなどして、各セルレンダラーやセルエディタ(これらは`JTable`の子コンポーネントではないので)を更新
+- `LookAndFeel`などが更新されたら、`JTable#updateUI()`メソッド内で`SwingUtilities#updateRendererOrEditorUI()`メソッドを呼び出すなどして、各セルレンダラーやセルエディタ(これらは`JTable`の子コンポーネントではないので)を更新
     - `AbstractCellEditor`を継承するセルエディタは、`Component`も`DefaultCellEditor`も継承していないので、`LookAndFeel`を変更しても追従しない
-    - そのため、`JTable#updateUI()`をオーバーライドして、セルエディタ自体を作成し直すなどの対応が必要
-- このサンプルでは、`Component`を継承(`TableCellEditor`を実装)するセルエディタを作成し、`AbstractCellEditor`から必要なメソッドをコピーして回避する方法を使用している
+    - そのため、`JTable#updateUI()`をオーバーライドして、セルエディタ自体を再作成するなどの対応が必要
+- このサンプルでは、`Component`を継承(`TableCellEditor`を実装)するセルエディタを作成し、`AbstractCellEditor`から必要なメソッドをコピーして回避している
 
 <!-- dummy comment line for breaking list -->
 
@@ -150,7 +150,7 @@ static void updateRendererOrEditorUI(Object rendererOrEditor) {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 第`0`列目が編集状態でボタンをクリックした場合、パネルが二度表示されるバグを修正。 -- *aterai* 2009-10-06 (火) 11:56:21
+- 第`0`列目が編集状態でボタンをクリックした場合、パネルが`2`度表示されるバグを修正。 -- *aterai* 2009-10-06 (火) 11:56:21
 - [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)を参考にして、`JTable#editCellAt`ではなく、逆に`TableCellEditor#stopCellEditing()`を使用してクリック直後に編集終了するように変更。 -- *aterai* 2009-11-03 (火) 04:36:55
 - <kbd>Ctrl</kbd>キーを押しながら、`edit`ボタンをクリックすると異なる行(`table.getSelectedRow()`)の内容が表示されるバグを修正。 -- *aterai* 2011-03-10 (木) 02:35:35
 - すごいと思いました！ -- *いわく* 2013-05-24 (金) 11:57:26

@@ -136,6 +136,6 @@ class BasicComboPopup3 extends BasicComboPopup {
 </code></pre>
 
 - 上記の方法では、ドロップダウンリスト内では閉じなくなるが、ドロップダウンリスト外でホイールを回転するとポップアップが閉じてしまう。`Toolkit.getDefaultToolkit().addAWTEventListener(...)`でもうまくいかない。 -- *aterai* 2012-04-24 (火) 20:07:13
-- [#JDK-8033069 mouse wheel scroll closes combobox popup - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8033069)で、ホイール回転の方は修正される予定(`JDK 9`)。 -- *aterai* 2015-05-07 (木) 15:59:53
+- [JDK-8033069 mouse wheel scroll closes combobox popup - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8033069)で、ホイール回転の方は修正される予定(`JDK 9`)。 -- *aterai* 2015-05-07 (木) 15:59:53
 
 <!-- dummy comment line for breaking list -->

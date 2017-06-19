@@ -34,7 +34,7 @@ list.setDropMode(DropMode.INSERT);
 </code></pre>
 
 ## 解説
-上記のサンプルは、[JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)と[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)を適用し、`JList`でラバーバンドによるアイテムの選択、ドラッグ＆ドロップでのアイテム並べ替えが可能になっています。
+上記のサンプルは、[JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)と[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)を適用し、`JList`でラバーバンドによるアイテムの選択、ドラッグ＆ドロップによるアイテム並べ替えが可能です。
 
 - 注: `javax.swing.TransferHandler.TransferSupport`などを使用しているので、`JDK 1.6.0`以上が必要
 

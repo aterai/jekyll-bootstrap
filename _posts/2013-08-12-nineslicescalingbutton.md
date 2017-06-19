@@ -87,6 +87,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [BufferedImage#getSubimage(int, int, int, int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/image/BufferedImage.html#getSubimage-int-int-int-int-)
 - [Real World Illustrator: Understanding 9-Slice Scaling](http://rwillustrator.blogspot.jp/2007/04/understanding-9-slice-scaling.html)
     - テスト用の画像(`symbol_scale_2.jpg`)を拝借
 

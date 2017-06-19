@@ -68,7 +68,7 @@ comments: true
     JTable target = (JTable) info.getComponent();
     DefaultTableModel model = (DefaultTableModel) target.getModel();
     int index = dl.getRow();
-//boolean insert = dl.isInsert();
+    //boolean insert = dl.isInsert();
     int max = model.getRowCount();
     if (index &lt; 0 || index &gt; max) {
       index = max;
@@ -119,14 +119,14 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、一つの`JTable`内での行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://ateraimemo.com/Swing/DnDReorderTable.html)を元に`TableRowTransferHandler`を作成し、`JTable`間での行移動もできるようになっています。
+上記のサンプルでは、`1`つの`JTable`内で行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://ateraimemo.com/Swing/DnDReorderTable.html)を元に、複数`JTable`間で行移動が可能になるよう`TableRowTransferHandler`を拡張しています。
 
 - - - -
-以下のように、`JTable#setFillsViewportHeight(true)`で、[JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html)しておかないと、行が一つもない状態でドロップができなくなります。
+以下のように、`JTable#setFillsViewportHeight(true)`で[JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html)しておかないと、`JTable`が空の状態でドロップが不可になります。
 
 <pre class="prettyprint"><code>TransferHandler handler = new TableRowTransferHandler();
 table.getSelectionModel().setSelectionMode(
-            ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+    ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 table.setTransferHandler(handler);
 table.setDropMode(DropMode.INSERT_ROWS);
 table.setDragEnabled(true);

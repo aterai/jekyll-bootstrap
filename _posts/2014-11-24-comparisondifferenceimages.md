@@ -56,6 +56,7 @@ private static int[] getData(ImageIcon imageIcon, int w, int h) {
 ## 参考リンク
 - [MemoryImageSourceで配列から画像を生成](http://ateraimemo.com/Swing/MemoryImageSource.html)
 - [PixelGrabberで画像を配列として取得し編集、書出し](http://ateraimemo.com/Swing/PixelGrabber.html)
+- [MemoryImageSource (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/image/MemoryImageSource.html)
 
 <!-- dummy comment line for breaking list -->
 
