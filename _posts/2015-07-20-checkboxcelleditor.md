@@ -77,7 +77,7 @@ comments: true
 上記のサンプルでは、`JTable`の`Boolean`に対応する`TableCellEditor`として、中央に`JCheckBox`を配置した`JPanel`を適用しています。
 
 - デフォルトの`JTable.BooleanEditor`
-    - セル全体が`JCheckBox`になるため、チェックアイコン以外の余白をクリックしても選択状態が変化する
+    - セル全体が`JCheckBox`になるため、チェックアイコン以外の余白をマウスでクリックした場合でも選択状態が変化する
 - `CheckBoxPanelEditor`
     - `JPanel`の中央に`JCheckBox`を配置して作成
     - 余白となる`JPanel`部分をクリックしても、`JCheckBox`の状態は変化しない
@@ -87,38 +87,35 @@ comments: true
 
 - - - -
 - 以下のように`getTableCellEditorComponent(...)`内で`JPanel`の背景色をセルの選択色にする場合、<kbd>Ctrl</kbd>キーを押しながら`JCheckBox`をクリックするとセルの選択状態にズレが発生する
-    - このサンプルでは、`JCheckBox`にマウスリスナーを追加することで回避している
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class CheckBoxPanelEditor extends AbstractCellEditor implements TableCellEditor {
-  private final JPanel p = new JPanel(new GridBagLayout());
-  private final JCheckBox checkBox = new JCheckBox();
-  public CheckBoxPanelEditor() {
-    super();
-    checkBox.setOpaque(false);
-    checkBox.setFocusable(false);
-    checkBox.setRolloverEnabled(false);
-    checkBox.addActionListener(new ActionListener() {
-      @Override public void actionPerformed(ActionEvent e) {
-        fireEditingStopped();
-      }
-    });
-    p.add(checkBox);
-    p.setBorder(UIManager.getBorder("Table.noFocusBorder"));
-  }
-  @Override public Component getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column) {
-    checkBox.setSelected(Objects.equals(value, Boolean.TRUE));
-    p.setBackground(table.getSelectionBackground());
-    return p;
-  }
-  @Override public Object getCellEditorValue() {
-    return checkBox.isSelected();
-  }
-}
+    - このサンプルでは、セルエディタの`JCheckBox`に以下のようなマウスリスナーを追加することで回避
+        
+        <pre class="prettyprint"><code>class CheckBoxPanelEditor extends AbstractCellEditor implements TableCellEditor {
+          private final JPanel p = new JPanel(new GridBagLayout());
+          private final JCheckBox checkBox = new JCheckBox();
+          public CheckBoxPanelEditor() {
+            super();
+            checkBox.setOpaque(false);
+            checkBox.setFocusable(false);
+            checkBox.setRolloverEnabled(false);
+            checkBox.addActionListener(new ActionListener() {
+              @Override public void actionPerformed(ActionEvent e) {
+                fireEditingStopped();
+              }
+            });
+            p.add(checkBox);
+            p.setBorder(UIManager.getBorder("Table.noFocusBorder"));
+          }
+          @Override public Component getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column) {
+            checkBox.setSelected(Objects.equals(value, Boolean.TRUE));
+            p.setBackground(table.getSelectionBackground());
+            return p;
+          }
+          @Override public Object getCellEditorValue() {
+            return checkBox.isSelected();
+          }
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JTableのCellにJCheckBoxを複数配置する](http://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
 - [JCheckBoxのセルをロールオーバーする](http://ateraimemo.com/Swing/RolloverBooleanRenderer.html)
 

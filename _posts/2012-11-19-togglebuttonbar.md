@@ -98,14 +98,14 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JRadioButton`に選択またはロールオーバーでグラデーションが変化する`Icon`を設定し、これらを`ButtonGroup`に追加することで、`ToggleButtonBar`を作成しています。
+上記のサンプルでは、`JRadioButton`に選択またはロールオーバーでハイライトが変化する`Icon`を設定し、これらを`ButtonGroup`に追加することで、`ToggleButtonBar`を作成しています。
 
-- 配色は、[簡単、きれい！RGBaカラーを使って横メニューを作ってみる｜Webpark](http://weboook.blog22.fc2.com/blog-entry-342.html) をそのまま引用
+- 配色は、[簡単、きれい！RGBaカラーを使って横メニューを作ってみる｜Webpark](http://weboook.blog22.fc2.com/blog-entry-342.html) を引用
 - `JRadioButton`のサイズは`Icon`のサイズと等しくなるように、テキストとアイコンは中央揃えで重ねて表示し、`Border`も`0`に設定
     - `GridLayout`の水平間隔なども`0`にして隙間ができないように配置
 - 最初の`JRadioButton`は左、最後の`JRadioButton`は右の角を丸める
     - 参考: [JComboBoxの角を丸める](http://ateraimemo.com/Swing/RoundedComboBox.html)
-    - `JRadioButton#setContentAreaFilled(false)`として、描画をすべてアイコンで行う(角を丸めた時に背景色を描画しないように)
+    - 角を丸めた時に背景色を描画しないようにするため、`JRadioButton#setContentAreaFilled(false)`を設定して描画をすべてアイコンで行う
 
 <!-- dummy comment line for breaking list -->
 

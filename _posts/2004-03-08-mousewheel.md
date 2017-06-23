@@ -34,4 +34,9 @@ comments: true
 ## 解説
 上記のサンプルでは、`JSpinner`や`JSlider`上でマウスホイールを回転させるとその値を変更することができます。`MouseWheelEvent#getWheelRotation()`の値は、ホイールの回転が下方向の場合は増加で正、上方向は減少で負になります。
 
+## 参考リンク
+- [MouseWheelListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/MouseWheelListener.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

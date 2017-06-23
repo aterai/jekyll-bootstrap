@@ -27,7 +27,7 @@ comments: true
     col.setPreferredWidth(colwidth);
     total -= colwidth;
   }
-  //最後のカラムで誤差を吸収
+  //最後のカラムで余りを解消
   m.getColumn(m.getColumnCount() - 1).setPreferredWidth(total);
   table.revalidate();
 }
@@ -41,11 +41,10 @@ comments: true
 - `ComponentListener#componentResized(...)`がチェックされていない場合
     - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズすると、その幅の変更([デルタ](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#doLayout--))が、リサイズ可能なすべての列に分散して加算減算される
         - このため、入力されている比率とは異なる列幅になる
+- 注:
+    - `TableColumn#setMaxWidth`メソッドでカラムの幅を指定する場合、マウスのドラッグによるリサイズは不可
 
 <!-- dummy comment line for breaking list -->
-
-- - - -
-`TableColumn#setMaxWidth`メソッドでカラムの幅を指定する場合は、マウスのドラッグによるサイズの変更はできません。
 
 ## 参考リンク
 - [デルタの分散 - JTable#doLayout() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#doLayout--)
