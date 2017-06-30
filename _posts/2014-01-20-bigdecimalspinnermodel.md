@@ -28,18 +28,16 @@ comments: true
     return incrValue(+1);
   }
   private Number incrValue(int dir) {
-    Number v = getNumber();
-    BigDecimal value    = new BigDecimal(v.toString());
-    BigDecimal stepSize = new BigDecimal(getStepSize().toString());
-
+    BigDecimal value    = BigDecimal.valueOf((Double) getNumber());
+    BigDecimal stepSize = BigDecimal.valueOf((Double) getStepSize());
     BigDecimal newValue = dir &gt; 0 ? value.add(stepSize) : value.subtract(stepSize);
 
-    BigDecimal maximum  = new BigDecimal(getMaximum().toString());
+    BigDecimal maximum  = BigDecimal.valueOf((Double) getMaximum());
     if (maximum.compareTo(newValue) &lt; 0) {
       return null;
     }
 
-    BigDecimal minimum  = new BigDecimal(getMinimum().toString());
+    BigDecimal minimum  = BigDecimal.valueOf((Double) getMinimum());
     if (minimum.compareTo(newValue) &gt; 0) {
       return null;
     }

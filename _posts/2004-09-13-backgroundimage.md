@@ -36,7 +36,7 @@ comments: true
 - [TexturePaintを使って背景に画像を表示](http://ateraimemo.com/Swing/TexturePaint.html)
     - 同様に画像から`TexturePaint`を作成してタイル状に並べて表示
 - [JTextAreaの背景に画像を表示](http://ateraimemo.com/Swing/CentredBackgroundBorder.html)
-    - ひとつの画像を中央に表示
+    - ひとつの画像をパネル中央に表示
 
 <!-- dummy comment line for breaking list -->
 

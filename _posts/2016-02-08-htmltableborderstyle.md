@@ -30,7 +30,7 @@ String html3 = "&lt;html&gt;&lt;table " + TS3 + "&gt;" + "&lt;tr&gt;" + TD3 + TD
 </code></pre>
 
 ## 解説
-`Swing`の[CSS](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/CSS.html)では、`table`の`border-collapse`プロパティに対応していないので、`border-bottom`などを組み合わせて罫線を結合表示します。
+`Swing`の[CSS](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/CSS.html)は、`table`の`border-collapse`プロパティに未対応なので、`border-bottom`などを組み合わせて罫線を結合表示します。
 
 - `border-left, border-bottom`
     - 表に`border-left`と`border-bottom`、セルに`border-right`と`border-top`の罫線を`1px`の実線で描画

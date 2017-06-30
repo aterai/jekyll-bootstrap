@@ -130,9 +130,4 @@ comments: true
 
 `GlassPane`に自分を`setVisible(false)`するマウスリスナーを追加しているので、任意の場所をクリックするとこの画像は非表示になります。
 
-## 参考リンク
-- [Lightbox 2](http://www.huddletogether.com/projects/lightbox2/)
-
-<!-- dummy comment line for breaking list -->
-
 ## コメント

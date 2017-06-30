@@ -92,9 +92,9 @@ comments: true
 </code></pre>
 
 ## 解説
-水平用の波パターン`Icon`を作成して、これを順番に並べてセパレータとして描画しています。垂直用のパターンは水平用を回転して生成しています。
+上記のサンプルでは、水平用の波パターン`Icon`を作成し、これを順番に並べてセパレータとして描画しています。垂直用のパターンは水平用を`90`度回転して生成しています。
 
 ## コメント
-- `SwingConstants.VERTICAL`に対応しました。 -- *aterai* 2006-06-19 (月) 14:39:49
+- `SwingConstants.VERTICAL`に対応。 -- *aterai* 2006-06-19 (月) 14:39:49
 
 <!-- dummy comment line for breaking list -->

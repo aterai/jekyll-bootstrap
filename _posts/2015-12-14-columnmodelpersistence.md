@@ -38,6 +38,7 @@ comments: true
 ## 参考リンク
 - [JTableのモデルをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/PersistenceDelegate.html)
 - [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](http://ateraimemo.com/Swing/SortKeyPersistence.html)
+- [JTableのColumn名を変更する](http://ateraimemo.com/Swing/EditColumnName.html)
 
 <!-- dummy comment line for breaking list -->
 
