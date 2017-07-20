@@ -34,11 +34,9 @@ model.addTableModelListener(new TableModelListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`に編集不可にした`JEditorPane`を追加し、以下のように設定して、常に中央にレイアウトされるように設定しています。
-
 - `JTable#setFillsViewportHeight(true)`として、`JTable`の高さが`JViewport`の高さより小さい場合、両者が同じ高さになるように設定
-- `JTable`のレイアウトを`null`から、`GridBagLayout`に変更
-- `TableModelListener#tableChanged(...)`イベントが発生したとき、モデルに行が残っているかどうかで`JEditorPane`の表示非表示を切り替え
+- `JTable`のレイアウトを`null`から`GridBagLayout`に変更し、追加した編集不可の`JEditorPane`が中央に配置されるよう設定
+- `TableModelListener#tableChanged(...)`イベントが発生したとき、モデルに行が存在するかどうかで`JEditorPane`の表示・非表示を切り替え
 
 <!-- dummy comment line for breaking list -->
 

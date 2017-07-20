@@ -23,10 +23,16 @@ combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
 </code></pre>
 
 ## 解説
-1. デフォルトの`JComboBox`で、モデルの中からサイズが最大となる要素を検索し、`JComboBox`の推奨サイズを決定する
+1. デフォルト
+    - モデルの中からサイズが最大となる要素を検索し、`JComboBox`の推奨サイズを決定する
+    - 上記のサンプルでは、モデルが空なのでボタンの幅と余白が`JComboBox`の推奨サイズになっている
+
+<!-- dummy comment line for breaking list -->
 1. `JComboBox#setPrototypeDisplayValue(...)`で指定した要素から、`JComboBox`の推奨サイズを決定する
 1. 編集可能な場合の`JComboBox`に`JComboBox#setPrototypeDisplayValue(...)`を設定
-1. [Bug ID: JDK-6422966 Editable JComboBox.setPrototypeDisplayValue: size can not be smaller than editor](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6422966)
+    - [Bug ID: JDK-6422966 Editable JComboBox.setPrototypeDisplayValue: size can not be smaller than editor](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6422966)
+
+<!-- dummy comment line for breaking list -->
 1. 独自の要素`E`を使用する`JComboBox<E>`に、その要素を表示するための`ListCellRenderer<E>`を設定
 1. 上記の`JComboBox<E>`に`JComboBox#setPrototypeDisplayValue(E)`でプロトタイプ値を設定
 1. 上記の`JComboBox<E>`でモデルを空にして`ListCellRenderer`で値が`null`になる場合、`JComboBox#setPrototypeDisplayValue(E)`で設定した値が表示されてしまう

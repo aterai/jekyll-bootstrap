@@ -27,6 +27,7 @@ label.setBorder(BorderFactory.createCompoundBorder(outside, inside));
 `Icon`をタイル状に描画することもできるので、[JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)のような使い方をすることもできます。
 
 ## 参考リンク
+- [MatteBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/MatteBorder.html)
 - [JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)
 - [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
 

@@ -59,8 +59,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、二枚の画像の描画に使用する`AlphaComposite`をそれぞれ変化させながら上書きすることで、`Crossfade`による画像の切り替えを行っています。
+上記のサンプルでは、`2`枚の画像の描画に使用する`AlphaComposite`をそれぞれ変化させながら上書きすることで、`Crossfade`による画像の切り替えを行っています。
 
-上書きの規則には、`AlphaComposite.SRC_OVER`を使っています。
+上書き規則には、`AlphaComposite.SRC_OVER`を使っています。
+
+## 参考リンク
+- [AlphaComposite.SRC_OVER (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/AlphaComposite.html#SRC_OVER)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

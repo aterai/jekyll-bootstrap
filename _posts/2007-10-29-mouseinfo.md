@@ -39,12 +39,13 @@ public MainPanel() {
 ## 解説
 上記のサンプルでは、マウスカーソルがパネル外に移動した場合でもラケットを動かせるように、以下のような方法を使用しています。
 
-1. `10`ミリ秒ごとに`MouseInfo`から`PointerInfo`を取得
+1. `Timer`を使用して`10`ミリ秒ごとに`MouseInfo`から`PointerInfo`を取得
 1. `PointerInfo`から画面上でのポインタ座標を取得
 1. `SwingUtilities.convertPointFromScreen`メソッドで、これをパネル相対の座標に変換
 1. ラケットに変換した座標を与えて`JPanel#repaint()`メソッドで再描画
 
 ## 参考リンク
+- [MouseInfo (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/MouseInfo.html)
 - [J2SE 5.0 Tiger 虎の穴 マウスの位置](http://www.javainthebox.net/laboratory/J2SE1.5/GUI/MouseLocation/MouseLocation.html)
 - [ラケットを動かす - Javaでゲーム作りますが何か？](http://d.hatena.ne.jp/aidiary/20070601/1251545490)
 

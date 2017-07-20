@@ -91,6 +91,7 @@ worker.execute();
 </code></pre>
 
 ## 参考リンク
+- [ProgressMonitor (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ProgressMonitor.html)
 - [How to Use Progress Bars (The Java™ Tutorials)](https://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
 - [ProgressMonitorがダイアログを表示するまでの待ち時間](http://ateraimemo.com/Swing/MillisToDecideToPopup.html)
     - 処理時間が短くて`ProgressMonitor`が表示されない場合の待ち時間をテスト

@@ -84,13 +84,10 @@ comments: true
 ## 解説
 上記のサンプルでは、以下のような`LayoutManager`を作成して`JRadioButton`を`JTabbedPane`風に並べています。
 
-- 最後のタブ(タブ追加ボタン)は常に幅固定
+- 最後のタブ(タブ追加ボタン)の幅は常に固定
 - 最後のタブの高さがタブエリアの高さ
 - タブエリアの幅に余裕がある場合は、各タブ幅は`100px`で一定
 - タブエリアの幅に余裕がない場合は、各タブ幅は均等
-
-<!-- dummy comment line for breaking list -->
-
 - その他
     - タブを削除した場合、先頭タブにフォーカスが移動する
     - 左の`JButton`(ダミー)は、タブエリアをラップする`JPanel(BorderLayout)`の`BorderLayout.WEST`に配置

@@ -68,14 +68,14 @@ private void renameTabTitle() {
     - マウスでタブをダブルクリック、またはタブを選択して<kbd>Enter</kbd>キーで編集開始
     - 編集中に入力欄以外をクリック、または<kbd>Enter</kbd>キーでタイトル文字列が確定
     - 編集中<kbd>Tab</kbd>キーを押しても無視
-    - <kbd>Esc</kbd>で編集をキャンセル
-    - `0`文字で確定した場合も、キャンセル扱い
+    - <kbd>Esc</kbd>キーで編集をキャンセル
+    - 文字列が空の状態で確定された場合、編集をキャンセル
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JTabbedPaneのタブタイトルを変更](http://ateraimemo.com/Swing/EditTabTitle.html)
-    - こちらは、`JDK 6`以前でも動作するように、`GlassPane`に`JTextField`を配置してタブタイトルを編集している
+    - こちらは、`GlassPane`に`JTextField`を配置してタブタイトルを編集しているため`JDK 6`以前でも動作可
 
 <!-- dummy comment line for breaking list -->
 

@@ -41,13 +41,14 @@ comments: true
 
 - 左: `default`
     - デフォルトの`HTMLEditorKit`を使用
-    - `<img>`タグの画像が非同期で読み込まれるため、スクリーンショットは文字のみ
+    - `<img>`タグの画像が非同期で読み込まれるため、スクリーンショットは文字のみ表示される
     - 文書の末尾までスクロールした後で、画像のサイズが決まる
 - 中: `<img width='%d' ...`
     - デフォルトの`HTMLEditorKit`を使用
     - `<img>`タグに予めサイズを属性で指定しているので、スクリーンショット全体のサイズや、スクロールは正常だが、スクリーンショットに画像は表示されない
 - 右: `LoadsSynchronously`
     - `HTMLEditorKit#getViewFactory()`と`ViewFactory#create(Element)`をオーバーライドし、`ImageView`に`setLoadsSynchronously(true)`を設定することで画像の読み込みを同期的に行う
+    - スクリーンショットに画像がすべてロードされた状態で表示される
 
 <!-- dummy comment line for breaking list -->
 

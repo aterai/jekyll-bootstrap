@@ -98,8 +98,8 @@ private void initFilterAndButton() {
 ## 解説
 上記のサンプルでは、[RowFilterでJTableのページ分割](http://ateraimemo.com/Swing/TablePagination.html)に以下の変更を追加しています。
 
-- `JTextField`に数値を入力して指定ページにジャンプ
-- `First`, `Prev`, `Next`, `Last`に`JRadioButton`ではなく、`JButton`を使用
+- `JTextField`に数値を入力して指定ページにジャンプ可能
+- `First(|<)`, `Prev(<)`, `Next(>)`, `Last(>|)`に`JRadioButton`ではなく、`JButton`を使用
 - `SwingWorker`を使ってページ単位での逐次読み込み(最大ページの表示を更新)
 
 <!-- dummy comment line for breaking list -->

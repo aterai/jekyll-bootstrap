@@ -27,9 +27,10 @@ Shape copyleft = at.createTransformedShape(copyright);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、コピーライトの文字を鏡像(左右)反転して、コピーレフトのアイコンを作成しています。
+上記のサンプルでは、コピーライトの文字を鏡像(左右)反転して、コピーレフトの文字アイコンを作成しています。
 
-上下反転の場合は、`AffineTransform.getScaleInstance(1d, -1d)`を使用します。
+- - - -
+上下反転の場合は、`AffineTransform.getScaleInstance(1d, -1d)`が使用可能です。
 
 ## 参考リンク
 - [コピーレフト - Wikipedia](http://en.wikipedia.org/wiki/Copyleft)

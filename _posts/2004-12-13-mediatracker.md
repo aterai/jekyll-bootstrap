@@ -34,6 +34,7 @@ comments: true
 `JTable`にファイルをドロップすると、画像の幅、高さを一覧表示します。
 
 ## 参考リンク
+- [MediaTracker (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/MediaTracker.html)
 - [Jpegファイルのコメントを取り出す](http://ateraimemo.com/Swing/IIOMetadata.html)
 - [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)
 

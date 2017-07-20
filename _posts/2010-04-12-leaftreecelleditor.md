@@ -38,6 +38,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
+- [CellEditor#isCellEditable(EventObject) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/CellEditor.html#isCellEditable-java.util.EventObject-)
 - [Swing - How can I persist all changes I made to these edited leaves and nodes??](https://community.oracle.com/thread/1371600)
 
 <!-- dummy comment line for breaking list -->

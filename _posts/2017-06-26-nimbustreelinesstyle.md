@@ -38,6 +38,7 @@ tree.putClientProperty("Nimbus.Overrides", d);
     - `UIManager.put("Tree.drawVerticalLines", true);`で変更に失敗し、`UIManager.getLookAndFeelDefaults().put("Tree.drawVerticalLines", true);`で成功する場合がある？
         - [swing - Nimbus JTree presentation error under java version 1.8 - Stack Overflow](https://stackoverflow.com/questions/44655203/nimbus-jtree-presentation-error-under-java-version-1-8)
         - `JTree`の生成のタイミングで変更に失敗したり、`UIManager.put("Tree.drawHorizontalLines", true);`は問題ない場合もあって、原因不明
+        - `UIManager.getBoolean("Tree.paintLines")`が更新されていない？
 - メモ
     - `BasicLookAndFeel`、`MetalLookAndFeel`、`WindowsLookAndFeel`などは、`Tree.linesStyle`の設定は効果がないが、`Tree.lineTypeDashed`が使用可能
         
@@ -47,6 +48,7 @@ tree.putClientProperty("Nimbus.Overrides", d);
     - * 参考リンク [#reference]
 - [JTreeの水平垂直線を表示しない](http://ateraimemo.com/Swing/TreePaintLines.html)
 - [JTreeのノード間の接続線のスタイルを変更する](http://ateraimemo.com/Swing/TreeLineStyle.html)
+- [swing - Nimbus JTree presentation error under java version 1.8 - Stack Overflow](https://stackoverflow.com/questions/44655203/nimbus-jtree-presentation-error-under-java-version-1-8)
 
 <!-- dummy comment line for breaking list -->
 

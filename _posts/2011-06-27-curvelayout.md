@@ -52,7 +52,12 @@ panel2.setLayout(new FlowLayout() {
 - 左: `FlowLayout(LEFT)`
     - `new FlowLayout(FlowLayout.LEFT)`を設定した`JPanel`にコンポーネントを配置
 - 右: `y=Math.pow(x/4.0,2.0)`
-    - `FlowLayout#layoutContainer(...)`をオーバーライドして、二次曲線の上にコンポーネントを配置するレイアウトを`JPanel`に設定
+    - `FlowLayout#layoutContainer(...)`をオーバーライドし、二次曲線の上にコンポーネントを配置するレイアウトを`JPanel`に設定
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [FlowLayout#layoutContainer(Container) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/FlowLayout.html#layoutContainer-java.awt.Container-)
 
 <!-- dummy comment line for breaking list -->
 

@@ -67,7 +67,8 @@ int penc = 0x0;
 `MemoryImageSource`に設定した画像の各ピクセルを表す`int`配列を、マウスのドラッグに応じて操作して`Image`を作成しています。
 
 - - - -
-以下のような方法もあります。
+以下のように、`AlphaComposite.Clear`を使用する方法もあります。
+
 <pre class="prettyprint"><code>private static final Color ERASER = new Color(0x0, true);
 private boolean isPen = true;
 private Point startPoint = new Point(-10, -10);

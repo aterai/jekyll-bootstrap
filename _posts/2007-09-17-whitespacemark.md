@@ -61,7 +61,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`LabelView`を継承し、`LabelView#paint`メソッドをオーバーライドして全角スペースやタブの場合だけ、それぞれの図形を描画しています。
 
-- 注: タブの図形は、`xyzzy`風だが、ドットの数は面倒なので適当
+- 注: タブの表示図形は、`xyzzy`風だがドットの数は面倒なので適当
 
 <!-- dummy comment line for breaking list -->
 
@@ -73,6 +73,7 @@ comments: true
 - [Swing Chapter 19. (Advanced topics) Inside Text Components. Easy for reading, Click here!](http://www.javafaq.nu/java-book-30.html)
 - [JEditorPaneで改行を表示](http://ateraimemo.com/Swing/ParagraphMark.html)
 - [JTextPaneでタブサイズを設定](http://ateraimemo.com/Swing/TabSize.html)
+- [LabelView (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/LabelView.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -133,6 +133,7 @@ class QuadrantRotateIcon implements Icon {
 </code></pre>
 
 ## 参考リンク
+- [AffineTransform#quadrantRotate(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/AffineTransform.html#quadrantRotate-int-)
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
 - [AffineTransformOpで画像を反転する](http://ateraimemo.com/Swing/AffineTransformOp.html)
 - [Mouseで画像を移動、回転](http://ateraimemo.com/Swing/MouseDrivenImageRotation.html)

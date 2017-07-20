@@ -74,4 +74,7 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+[Graphics#setClip(Shape) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Graphics.html#setClip-java.awt.Shape-)
+
 ## コメント

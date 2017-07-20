@@ -60,4 +60,9 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JDK-8184272 JFileChooserOperator.enterSubDir does not navigate to sub directory - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8184272)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

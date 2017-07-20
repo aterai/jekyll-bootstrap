@@ -31,4 +31,9 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [TreeSelectionModel#setSelectionMode(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/TreeSelectionModel.html#setSelectionMode-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -91,7 +91,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、内部に`JButton`や`JLabel`を配置しています。
+上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、そのエディタ内部に`JButton`や`JLabel`を配置しています。
 
 - - - -
 `RolloverIcon`は、元のアイコンに以下のようなフィルタを掛けて作成しています。

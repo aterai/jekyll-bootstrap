@@ -20,23 +20,27 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private final ImageProducer ip = orgIcon.getImage().getSource();
-private ImageIcon makeStarImageIcon(float[] filter) {
-  SelectedImageFilter sif = new SelectedImageFilter(filter);
-  return new ImageIcon(
-    createImage(new FilteredImageSource(ip, sif)));
+private static ImageIcon makeStarImageIcon(
+    ImageProducer ip, float rf, float gf, float bf) {
+  return new ImageIcon(Toolkit.getDefaultToolkit().createImage(
+    new FilteredImageSource(ip, new SelectedImageFilter(rf, gf, bf))));
 }
-private class SelectedImageFilter extends RGBImageFilter {
-  private final float[] filter;
-  public SelectedImageFilter(float[] arrays) {
-    filter = new float[arrays.length];
-    System.arraycopy(arrays, 0, filter, 0, arrays.length);
+class SelectedImageFilter extends RGBImageFilter {
+  private final float rf;
+  private final float gf;
+  private final float bf;
+  protected SelectedImageFilter(float rf, float gf, float bf) {
+    super();
+    this.rf = Math.min(1f, rf);
+    this.gf = Math.min(1f, gf);
+    this.bf = Math.min(1f, bf);
     canFilterIndexColorModel = false;
   }
   @Override public int filterRGB(int x, int y, int argb) {
-    int r = (int) (((argb &gt;&gt; 16) &amp; 0xff) * filter[0]);
-    int g = (int) (((argb &gt;&gt;  8) &amp; 0xff) * filter[1]);
-    int b = (int) (((argb      ) &amp; 0xff) * filter[2]);
-    return (argb &amp; 0xff000000) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | (b);
+    int r = (int) (((argb &gt;&gt; 16) &amp; 0xFF) * rf);
+    int g = (int) (((argb &gt;&gt;  8) &amp; 0xFF) * gf);
+    int b = (int) (((argb)       &amp; 0xFF) * bf);
+    return (argb &amp; 0xFF000000) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | (b);
   }
 }
 </code></pre>
