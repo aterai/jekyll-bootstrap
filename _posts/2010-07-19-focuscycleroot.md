@@ -22,7 +22,7 @@ p1.add(new JTextField(16));
 </code></pre>
 
 ## 解説
-上記のサンプルでは、各`JPanel`がそれぞれフォーカストラバーサルサイクルのルートになるように設定しています。
+上記のサンプルでは、各`JPanel`がそれぞれフォーカストラバーサルサイクルのルートコンテナになるように設定しています。
 
 - 左の`JPanel`
     - `setFocusCycleRoot(true);`
@@ -34,6 +34,8 @@ p1.add(new JTextField(16));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [Container#setFocusCycleRoot(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Container.html#setFocusCycleRoot-boolean-)
+- [Container#setFocusTraversalPolicyProvider(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Container.html#setFocusTraversalPolicyProvider-boolean-)
 - [Focusの移動](http://ateraimemo.com/Swing/FocusTraversal.html)
 
 <!-- dummy comment line for breaking list -->

@@ -40,15 +40,16 @@ editorPane.addHyperlinkListener(new HyperlinkListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JEditorPane`(`HTMLEditorKit`,編集不可)に挿入したタグ`<a href='...'>...</a>`のクリックなどを受信する`HyperlinkListener`を追加しています。
+上記のサンプルでは、`JEditorPane`(`HTMLEditorKit`,編集不可)に挿入したタグ`<a href='...'>...</a>`のクリックなどを受け取る`HyperlinkListener`を追加しています。
 
 - - - -
-以下のように、`JButton`などのコンポーネントを使用する方法もあります。
+以下のように、`JButton`などのコンポーネントをアンカータグの代わりに使用する方法もあります。
 
-- 編集可
-- 部分選択できない
-- ~~ベースラインがうまく揃わない？~~ `JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
-    - サンプルコードは、[JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)に移動
+- `JEditorPane`に`JButton`で作成したリンクを追加
+    - 編集可の`JEditorPane`で使用可能
+    - リンク文字列の部分選択が不可
+    - ~~ベースラインがうまく揃わない？~~ `JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
+        - サンプルコードは、[JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)に移動
 
 <!-- dummy comment line for breaking list -->
 

@@ -17,9 +17,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JInternalFrame palette = new JInternalFrame("Palette", true, false, true, true);
+palette.putClientProperty("JInternalFrame.isPalette", Boolean.TRUE);
 palette.setBounds(0, 0, 120, 120);
 palette.setMinimumSize(new Dimension(50, 50));
-palette.putClientProperty("JInternalFrame.isPalette", Boolean.TRUE);
 palette.add(new JScrollPane(new JTree()));
 palette.setVisible(true);
 desktop.add(palette, JDesktopPane.PALETTE_LAYER);
