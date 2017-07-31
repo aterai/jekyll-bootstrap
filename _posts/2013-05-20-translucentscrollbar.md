@@ -144,5 +144,6 @@ comments: true
 
 ## コメント
 - `ScrollPaneLayout`を変更してオーバーラップするより、`JLayer`などを使ってドラッグ可能な矩形を描画する方が簡単かもしれない…。 -- *aterai* 2013-05-20 (月) 17:20:39
+    - `JLayer`を使用するサンプルを追加: [JScrollPane上にマウスカーソルが存在する場合のみJScrollBarを表示する](http://ateraimemo.com/Swing/ScrollBarOnHover.html) -- *aterai* 2017-07-31 (月) 16:12:57
 
 <!-- dummy comment line for breaking list -->

@@ -50,12 +50,10 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JMenuBar`(デフォルトの`LayoutManager`は`BoxLayout`)に、`FlowLayout`を継承して折り返しを行う`LayoutManager`を設定して、`JMenu`がフレームの幅に収まらない場合は折り返して表示するようにしています。
+上記のサンプルでは、`JMenuBar`に`FlowLayout`を継承して折り返しを行う`LayoutManager`を設定して(`JMenuBar`のデフォルト`LayoutManager`は`BoxLayout`)、内部の`JMenu`などがフレームの幅に収まらない場合は折り返して表示しています。
 
-- - - -
-上記のサンプルでは、`BorderLayout`を設定した`JPanel#add(menubar, BorderLayout.NORTH)`として`JMenuBar`を追加していますが、`JFrame#setJMenuBar`メソッドを使用した場合、以下のような不具合？があります。
-
-- `JFrame`の最大化、最小化で折り返しが更新されない
+- `BorderLayout`を設定した`JPanel#add(menubar, BorderLayout.NORTH)`として`JMenuBar`を追加して`JFrame#setJMenuBar(...)`メソッドを使用した場合、以下のような不具合が存在する？
+    - `JFrame`の最大化、最小化で折り返しが更新されない
     - 以下のような、`WindowStateListener`を`JFrame`に追加し、`ContentPane`を`revalidate()`して回避
         
         <pre class="prettyprint"><code>frame.addWindowStateListener(new WindowStateListener() {
@@ -95,7 +93,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
           }
         }
 </code></pre>
-- `JFrame#pack()`しても、`JFrame`のサイズが変更されない
+    - `JFrame#pack()`しても、`JFrame`のサイズが変更されない
     - `JFrame#setSize(...)`に変更することで回避
 
 <!-- dummy comment line for breaking list -->

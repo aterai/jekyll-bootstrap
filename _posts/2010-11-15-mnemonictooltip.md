@@ -50,7 +50,7 @@ comments: true
 
 ## 解説
 - 上
-    - `setToolTipText`で直接`Mnemonic`を追加
+    - `setToolTipText(...)`メソッドで直接`Mnemonic`を追加
 - 下
     - `JToolTip`に`BorderLayout`を設定して、`Mnemonic`用の`JLabel`を追加
 

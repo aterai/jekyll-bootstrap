@@ -16,10 +16,10 @@ comments: true
 {% download https://lh5.googleusercontent.com/-llHXaOVDQbQ/TlH5yRAODSI/AAAAAAAABBE/XsSUtm7J_U0/s800/SpinnerDateModel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final String dateFormatPattern = "yyyy/MM/dd";
+<pre class="prettyprint"><code>String dateFormatPattern = "yyyy/MM/dd";
 JSpinner s = new JSpinner(
     new SpinnerDateModel(date, start, null, Calendar.DAY_OF_MONTH));
-final JSpinner.DateEditor editor = new JSpinner.DateEditor(s, dateFormatPattern);
+JSpinner.DateEditor editor = new JSpinner.DateEditor(s, dateFormatPattern);
 s.setEditor(editor);
 editor.getTextField().addFocusListener(new FocusAdapter() {
   @Override public void focusGained(FocusEvent e) {

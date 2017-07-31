@@ -71,12 +71,10 @@ comments: true
 ## 解説
 上記のサンプルでは、以下の手順で`JLabel`にドロップキャップの装飾を行っています。
 
-- 先頭一文字の`Shape`を取得し、これを拡大して表示
-- 残りの文字から`AttributedString`を作成
-- 拡大した先頭文字の高さに行の`y`座標が収まる場合は、`JLabel`の幅から先頭文字幅を除いた幅に収まる文字列を`LineBreakMeasurer`で取得し描画
-- 拡大した先頭文字の高さを行の`y`座標が超えた場合は、`JLabel`の幅に収まる文字列を`LineBreakMeasurer`で取得し描画
-
-<!-- dummy comment line for breaking list -->
+1. 先頭一文字の`Shape`を取得し、これを拡大して表示
+1. 残りの文字から`AttributedString`を作成
+1. 拡大した先頭文字の高さに行の`y`座標が収まる場合は、`JLabel`の幅から先頭文字幅を除いた幅に収まる文字列を`LineBreakMeasurer`で取得し描画
+1. 拡大した先頭文字の高さを行の`y`座標が超えた場合は、`JLabel`の幅に収まる文字列を`LineBreakMeasurer`で取得し描画
 
 ## 参考リンク
 - [JLabelの文字列を折り返し](http://ateraimemo.com/Swing/GlyphVector.html)
