@@ -145,7 +145,7 @@ slider.setUI(new MetalSliderUI() {
     - `JSlider#setOpaque(false)`で透明化
     - `MetalSliderUI#paintTrack(...)`内で、`Fill`の後でハイライトを描画
 - `Thumb`
-    - `UIManager.put("Slider.horizontalThumbIcon", emptyIcon)`で、空のアイコンを設定して非表示
+    - `UIManager.put("Slider.horizontalThumbIcon", emptyIcon)`で、透明なアイコンを設定して非表示化
 - `Fill`
     - `MetalSliderUI#paintTrack(...)`内で、値に応じて`LinearGradientPaint`から作成した色で描画
 
@@ -181,14 +181,12 @@ private static Color getColorFromPallet(int[] pallet, float x) {
 
 - - - -
 - メモ: 例えば`WindowsLookAndFeel`では、`UIManager.get("Slider.trackWidth")`は`null`なので、`MetalSliderUI#installUI()`中にある以下のコードでエラーになる
-    - なぜ`UIManager.getInt(...)`ではないのか不明
-    - `UIManager.put("Slider.majorTickLength", 6);`などで回避
+    - `trackWidth = ( (Integer) UIManager.get("Slider.trackWidth") ).intValue();`
+    - なぜ`UIManager.getInt(...)`を使用しないのかは不明
+    - `UIManager.put("Slider.majorTickLength", 6);`などで適当な値を代入して回避
     - `MetalSliderUI`ではなく、`BasicSliderUI`を継承するぺき？
 
 <!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>trackWidth = ((Integer) UIManager.get("Slider.trackWidth")).intValue();
-</code></pre>
 
 ## 参考リンク
 - [Harmonic Code: Varying gradients...](http://harmoniccode.blogspot.com/2011/05/varying-gradients.html)

@@ -11,7 +11,7 @@ image: https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS-a1ZnQI/AAAAAAAAAjo/jB
 comments: true
 ---
 ## 概要
-`JComponent`の表示状態が切り替わった時、その`isDisplayable`、`isShowing`、`isVisible`メソッドが返す値をテストします。
+`JComponent`の表示状態が切り替わった時、その`isDisplayable()`、`isShowing()`、`isVisible()`メソッドが返す値をテストします。
 
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTS-a1ZnQI/AAAAAAAAAjo/jB4n-1WmEIs/s800/ShowingDisplayableVisible.png %}
 
@@ -54,6 +54,13 @@ comments: true
     - `isDisplayable`: `true`
     - `isShowing`: `false`
     - `isVisible`: `false`
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [Component#isDisplayable() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Component.html#isDisplayable--)
+- [Component#isShowing() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Component.html#isShowing--)
+- [Component#isVisible() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Component.html#isVisible--)
 
 <!-- dummy comment line for breaking list -->
 

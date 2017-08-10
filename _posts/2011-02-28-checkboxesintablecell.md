@@ -132,7 +132,7 @@ comments: true
 ## コメント
 - ビットフラグを`EnumSet`に変更するテスト -- *aterai* 2011-03-01 (火) 14:22:06
     - [JTableの列にEnumSetを使用する](http://ateraimemo.com/Swing/EnumSet.html)に移動
-- `rwx`セルを選択中に<kbd>R</kbd>, <kbd>W</kbd>, <kbd>X</kbd>キーを入力するとチェックが切り替わるように`InputMap, ActionMap`を追加。 -- *aterai* 2011-03-09 (水) 22:33:39
-- `Windows`環境で`Aero`効果を有効にしていると？、残像が表示される場合がある？のを修正。 -- *aterai* 2011-11-01 (火) 18:12:50
+- `rwx`セルを選択中に<kbd>R</kbd>、<kbd>W</kbd>、<kbd>X</kbd>キーを入力すると、そのチェックが切り替わるように`InputMap`、`ActionMap`を追加。 -- *aterai* 2011-03-09 (水) 22:33:39
+- `Windows`環境で`Aero`効果を有効にしていると？、残像が表示される場合がある障害を修正。 -- *aterai* 2011-11-01 (火) 18:12:50
 
 <!-- dummy comment line for breaking list -->

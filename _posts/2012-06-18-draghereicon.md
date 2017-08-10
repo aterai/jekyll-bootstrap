@@ -87,17 +87,12 @@ comments: true
     - ラウンド矩形でフチを描画
     - 直線で格子状のスリットを上書き
     - 矢印のアウトラインをフォントから取得して中心に描画
-    - 原点を戻す(直接`g.translate(x, y)`していた場合、戻しておかないとラベル文字列の描画位置がズレる)
-        - もしくは(`Graphics2D g2 = (Graphics2D) g.create()`していた場合)、`g2.dispose()`
+    - 原点を戻す
+        - 直接`g.translate(x, y)`で原点を変更した場合、``g.translate(-x, -y)`で元に戻す必要がある
+        - または、`Graphics2D g2 = (Graphics2D) g.create()`で別の`Graphics`を生成し、原点を移動した場合は、最後に`g2.dispose()`で破棄する
+- `Icon#getIconWidth()`, `Icon#getIconHeight()`を実装してアイコンのサイズを指定-
 
 <!-- dummy comment line for breaking list -->
-
-- `Icon#getIconWidth()`, `Icon#getIconHeight()`を実装してアイコンのサイズを指定
-
-<!-- dummy comment line for breaking list -->
-
-- - - -
-注: ファイルをドロップしてもコンソールにファイル名を表示するだけで他はなにもしていません。
 
 ## 参考リンク
 - [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)

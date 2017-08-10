@@ -11,7 +11,7 @@ image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQAQVe8YI/AAAAAAAAAe4/y6
 comments: true
 ---
 ## 概要
-画像をマウスのドラッグで任意の位置に移動、回転します。[Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)、[その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)の`UI`を参考にしています。
+画像をマウスのドラッグで任意の位置に移動、回転します。
 
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQAQVe8YI/AAAAAAAAAe4/y6GTZLKjqx0/s800/MouseDrivenImageRotation.png %}
 
@@ -139,8 +139,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Life is beautiful: 習作UI：初めてのFlash その２](http://satoshi.blogs.com/life/2007/05/uiflash_1.html)
 - [Life is beautiful: 習作UI：初めてのFlash その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)
+    - `Flash`の`UI`を参考
 
 <!-- dummy comment line for breaking list -->
 

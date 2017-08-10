@@ -57,7 +57,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、編集不可にした`JTextPane`内の文字列中に、編集可能な空欄として`JTextField`を追加(`JTextPane#insertComponent(...)`を使用)しています。
+上記のサンプルでは、編集不可状態の`JTextPane`内の文字列中に編集可能な`JTextField`を`JTextPane#insertComponent(...)`を使用メソッドを使用して追加しています。
 
 - `JTextPane`
     - 編集不可に設定
@@ -65,10 +65,16 @@ comments: true
         - [JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)
 - `JTextField`
     - `JTextField#getMaximumSize()`をオーバーライドして幅を制限
-    - `JTextField`に`MatteBorder`を設定して下線のみ表示
+    - `JTextField`に`MatteBorder`を設定して下線のみの空欄を表示
     - `JTextField#setAlignmentY(...)`でベースラインを揃える
         - [JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)
     - `JTextField`に`FocusListener`を追加し、<kbd>Tab</kbd>キーなどで`Focus`が移動したら、その`JTextField`までスクロールするように設定
+        - [FocusTraversalPolicyを使用してフォーカスを取得したコンポーネントまでスクロールする](http://ateraimemo.com/Swing/AutoScrollOnFocus.html)
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JTextPane#insertComponent(Component) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
 
 <!-- dummy comment line for breaking list -->
 

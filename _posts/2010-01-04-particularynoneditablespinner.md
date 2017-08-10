@@ -48,43 +48,36 @@ comments: true
 ## 解説
 - 上: `JSpinner.NumberEditor` + `DecimalFormat`
     - [JSpinnerの値をパーセントで指定](http://ateraimemo.com/Swing/NumberEditor.html)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>JSpinner spinner1 = new JSpinner(new SpinnerNumberModel(0, 0, 1, 0.01));
-JSpinner.NumberEditor editor1 = new JSpinner.NumberEditor(spinner1, "0%");
-spinner1.setEditor(editor1);
+        
+        <pre class="prettyprint"><code>JSpinner spinner1 = new JSpinner(new SpinnerNumberModel(0, 0, 1, 0.01));
+        JSpinner.NumberEditor editor1 = new JSpinner.NumberEditor(spinner1, "0%");
+        spinner1.setEditor(editor1);
 </code></pre>
-
 - 下: `JSpinner` + `StringBorder`
     - `JSpinner`のエディタに設定した余白内に文字列を描画
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>JSpinner spinner2 = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
-JSpinner.NumberEditor editor2 = new JSpinner.NumberEditor(spinner2);
-spinner2.setEditor(editor2);
-editor2.setOpaque(true);
-editor2.setBackground(Color.WHITE);
-//Border b = new StringBorder(editor2, "percent");
-Border b = new StringBorder(editor2, "%");
-Border c = editor2.getBorder();
-editor2.setBorder((c == null) ? b : BorderFactory.createCompoundBorder(c, b));
+        
+        <pre class="prettyprint"><code>JSpinner spinner2 = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
+        JSpinner.NumberEditor editor2 = new JSpinner.NumberEditor(spinner2);
+        spinner2.setEditor(editor2);
+        editor2.setOpaque(true);
+        editor2.setBackground(Color.WHITE);
+        //Border b = new StringBorder(editor2, "percent");
+        Border b = new StringBorder(editor2, "%");
+        Border c = editor2.getBorder();
+        editor2.setBorder((c == null) ? b : BorderFactory.createCompoundBorder(c, b));
 </code></pre>
-
-- - - -
-以下のように、[Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/)を利用して、`JLabel`を余白に描画する方法もあります。
-
-<pre class="prettyprint"><code>JLabel label = new JLabel("%");
-label.setBorder(BorderFactory.createEmptyBorder());
-label.setOpaque(true);
-label.setBackground(Color.WHITE);
-ComponentBorder cb = new ComponentBorder(label);
-cb.setGap(0);
-cb.install(editor2);
+- メモ
+    - 以下のように、`JLabel`を余白に描画する方法(参考: [Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/))もある
+        
+        <pre class="prettyprint"><code>JLabel label = new JLabel("%");
+        label.setBorder(BorderFactory.createEmptyBorder());
+        label.setOpaque(true);
+        label.setBackground(Color.WHITE);
+        ComponentBorder cb = new ComponentBorder(label);
+        cb.setGap(0);
+        cb.install(editor2);
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JSpinnerの値をパーセントで指定](http://ateraimemo.com/Swing/NumberEditor.html)
 - [Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/)
 

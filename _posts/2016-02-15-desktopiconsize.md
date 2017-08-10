@@ -38,21 +38,29 @@ f.setDesktopIcon(new JInternalFrame.JDesktopIcon(f) {
 - メモ:
     - デフォルト状態の`NimbusLookAndFeel`で、`JDesktopIcon`の高さが`JInternalFrame`によって変化する？
         - 起動時からの`JInternalFrame`: `height=33`、後でボタンから追加した`JInternalFrame`: `height=27`
-        - これは無関係？ [JDK-7126823 JInternalFrame.getNormalBounds() returns bad value after iconify/deiconify - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-7126823)
-    - `DefaultDesktopManager#getBoundsForIconOf(...)`メソッドをオーバーライドしてサイズ変更することも可能だが、アイコンの位置を計算し直す必要がある
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>desktop.setDesktopManager(new DefaultDesktopManager() {
-  @Override protected Rectangle getBoundsForIconOf(JInternalFrame f) {
-    Rectangle r = super.getBoundsForIconOf(f);
-    r.width = 200;
-    return r;
-  }
-});
+        - [JDK-7126823 JInternalFrame.getNormalBounds() returns bad value after iconify/deiconify - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-7126823)
+    - `DefaultDesktopManager#getBoundsForIconOf(...)`メソッドをオーバーライドしてサイズ変更~~することも可能だが、アイコンの位置を計算し直す必要がある~~
+        
+        <pre class="prettyprint"><code>desktop.setDesktopManager(new DefaultDesktopManager() {
+          @Override protected Rectangle getBoundsForIconOf(JInternalFrame f) {
+            Rectangle r = super.getBoundsForIconOf(f);
+            r.width = 200;
+            return r;
+          }
+        });
 </code></pre>
-
-## 参考リンク
+    - `DefaultDesktopManager#getBoundsForIconOf(...)`メソッドをオーバーライドする方法もある
+        
+        <pre class="prettyprint"><code>desktop.setDesktopManager(new DefaultDesktopManager() {
+          @Override public void iconifyFrame(JInternalFrame f) {
+            Rectangle r = this.getBoundsForIconOf(f);
+            r.width = f.getDesktopIcon().getPreferredSize().width;
+            f.getDesktopIcon().setBounds(r);
+            super.iconifyFrame(f);
+          }
+        });
+</code></pre>
+    - * 参考リンク [#reference]
 - [java - Changing DesktopIcon.width on nimbus - Stack Overflow](https://stackoverflow.com/questions/35287367/changing-desktopicon-width-on-nimbus)
 - [JInternalFrame.JDesktopIcon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html)
 

@@ -68,7 +68,7 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
           }
           //...
 </code></pre>
-    - 例: `12`ではすべての行が非表示だが、`Dec`では二行表示される
+    - 例: `12`ではすべての行が非表示だが、`Dec`では`2`行表示される
 - `new RowFilter()`
     - `RowFilter<TableModel, Integer>`を継承するフィルタを作成して設定
     - このフィルタでは、以下のように、`DateRenderer`が表示に使用しているデフォルトの`DateFormat`を使用して`Date`を文字列に変換し、フィルタリングを行う
@@ -102,7 +102,11 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
 };
 </code></pre>
 
-- - - -
-`Date`を文字列ではなく、日付として各条件を指定し、フィルタリングする場合は、[RowFilter#dateFilter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#dateFilter-javax.swing.RowFilter.ComparisonType-java.util.Date-int...-)を使用します。
+## 参考リンク
+- [RowFilter#regexFilter(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#regexFilter-java.lang.String-int...-)
+- [RowFilter#dateFilter(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#dateFilter-javax.swing.RowFilter.ComparisonType-java.util.Date-int...-)
+    - `Date`を文字列ではなく、日付として各条件を指定しフィルタリングする場合は、`RowFilter#dateFilter(...)を使用する
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

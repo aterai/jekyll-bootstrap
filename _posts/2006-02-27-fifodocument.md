@@ -49,29 +49,28 @@ final Timer timer = new Timer(100, new ActionListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、一行追加した時に規定の行数を越えている場合、先頭の一行を削除する`DocumentListener`を作成し、これを`JTextArea`に設定しています。
+上記のサンプルでは、`1`行追加した時に規定の行数を越えている場合、先頭の`1`行を削除する`DocumentListener`を作成し、これを`JTextArea`に設定しています。
 
-- メモ
-    - `10`行以上になると先頭行から削除
-    - 複数行の貼り付けなどには未対応
-        - 参考: [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)は、複数行貼り込みに対応している
-    - `DocumentListener`ではなく、以下のような`DocumentFilter`を設定する方法もある
-        
-        <pre class="prettyprint"><code>//((AbstractDocument) jta.getDocument()).setDocumentFilter(new FIFODocumentFilter());
-        class FIFODocumentFilter extends DocumentFilter {
-          private static final int MAX_LINES = 10;
-          @Override public void insertString(
-              DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr)
-              throws BadLocationException {
-            fb.insertString(offset, string, attr);
-            Element root = fb.getDocument().getDefaultRootElement();
-            if (root.getElementCount() &gt; MAX_LINES) {
-              fb.remove(0, root.getElement(0).getEndOffset());
-            }
-          }
+- `10`行以上になると先頭行から削除
+- 複数行テキストのペーストには未対応
+    - 参考: [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)は、複数行貼り込みに対応している
+- `DocumentListener`ではなく、以下のような`DocumentFilter`を設定する方法もある
+    
+    <pre class="prettyprint"><code>//((AbstractDocument) jta.getDocument()).setDocumentFilter(new FIFODocumentFilter());
+    class FIFODocumentFilter extends DocumentFilter {
+      private static final int MAX_LINES = 10;
+      @Override public void insertString(
+          DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr)
+          throws BadLocationException {
+        fb.insertString(offset, string, attr);
+        Element root = fb.getDocument().getDefaultRootElement();
+        if (root.getElementCount() &gt; MAX_LINES) {
+          fb.remove(0, root.getElement(0).getEndOffset());
         }
+      }
+    }
 </code></pre>
-    - * 参考リンク [#reference]
+- * 参考リンク [#reference]
 - [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)
 
 <!-- dummy comment line for breaking list -->

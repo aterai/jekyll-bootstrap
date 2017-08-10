@@ -29,7 +29,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、各モデルの`getNextValue()`、`getPreviousValue()`メソッドをオーバーライドすることでループするように設定しています。
+上記のサンプルでは、各`SpinnerModel`の`getNextValue()`、`getPreviousValue()`メソッドをオーバーライドすることで、例えば下限値に達した場合は上限値にループするよう設定しています。
 
 - 数値: `SpinnerNumberModel`
     - `SpinnerNumberModel#getNextValue()`などが`null`になる場合、`SpinnerNumberModel#getMinimum()`で最小値を取得してループ

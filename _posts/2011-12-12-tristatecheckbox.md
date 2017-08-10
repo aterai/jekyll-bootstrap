@@ -79,7 +79,7 @@ class IndeterminateIcon implements Icon {
 ## 解説
 上記のサンプルでは、`UIManager.getIcon("CheckBox.icon");`で取得した非選択状態のチェックボックスアイコンの上に横棒を引いて不定状態のアイコンを作成しています。
 
-- 不定状態かどうかは、`JCheckBox#getIcon()`が`null`かどうかで判断している
+- `JCheckBox#getIcon()`が`null`の場合、チェックボックスは不定状態であると判定
 - 横棒の色は`UIManager.getColor("CheckBox.foreground");`を使用しているが、`LookAndFeel`によっては無意味
 - [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://ateraimemo.com/Swing/TableHeaderCheckBox.html)で使用すると、`NimbusLookAndFeel`の場合だけ、アイコンと文字列のベースラインがずれる？
     - 文字列も`ImageIcon`にして回避
