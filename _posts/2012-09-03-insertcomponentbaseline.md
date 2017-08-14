@@ -49,6 +49,7 @@ check2.setFocusable(false);
 </p></blockquote>
 
 ## 参考リンク
+- [JTextPane#insertComponent(Component) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
 - [java - How to appropriately adding JLabel to JEditorPane? - Stack Overflow](https://stackoverflow.com/questions/12151158/how-to-appropriately-adding-jlabel-to-jeditorpane)
 
 <!-- dummy comment line for breaking list -->

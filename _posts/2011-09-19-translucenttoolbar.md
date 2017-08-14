@@ -61,7 +61,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、画像を表示した`JLabel`に半透明にした`JToolBar`を追加しています。
+上記のサンプルでは、画像アイコンを表示した`JLabel`に半透明にした`JToolBar`を追加しています。
 
 - 参考
     - `JToolBar`などの透明化は、[JMenuBarの背景に画像を表示する](http://ateraimemo.com/Swing/MenuBarBackground.html)
