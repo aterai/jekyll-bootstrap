@@ -94,7 +94,7 @@ comments: true
   }
   @Override protected void exportDone(
       JComponent source, Transferable data, int action) {
-    if (action == MOVE) {
+    if (action == TransferHandler.MOVE) {
       JTree tree = (JTree) source;
       DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
       for (TreePath path : tree.getSelectionPaths()) {

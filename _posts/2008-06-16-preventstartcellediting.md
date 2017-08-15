@@ -32,7 +32,7 @@ ce.setClickCountToStart(Integer.MAX_VALUE);
     - `DefaultCellEditor#setClickCountToStart`に大きな値を設定して、事実上マウスクリックによる編集開始を禁止
 - `start cell editing only F2`
     - 上二つを設定して、セルの編集は<kbd>F2</kbd>キーでのみ開始可能になるよう設定
-- `isCellEditable retrun false`
+- `isCellEditable return false`
     - `TableModel#isCellEditable`が常に`false`を返すように設定し、すべてのカラムでセルエディタの起動を禁止
 
 <!-- dummy comment line for breaking list -->

@@ -201,7 +201,7 @@ label.setComponentPopupMenu(pop);
   }
 });
 </code></pre>
-- 返信ありがとうございます、当方`Netbeans`で開発してまして、上記のコードを`jPopupMenu1.add(この中);`に`new JMenuItem`以降を入れたのですが動きませんでした。よって`JMenuItem ｍ～f.dispose();`までを削除し、かわりに`jFrame1.setVisible(false);`を入れると動作しました。 -- *hshs* 2013-03-05 (火) 20:22:26
+- 返信ありがとうございます、当方`NetBeans`で開発してまして、上記のコードを`jPopupMenu1.add(この中);`に`new JMenuItem`以降を入れたのですが動きませんでした。よって`JMenuItem m`～`f.dispose();`までを削除し、かわりに`jFrame1.setVisible(false);`を入れると動作しました。 -- *hshs* 2013-03-05 (火) 20:22:26
     - メモ: せっかくなので？、[JPopupMenuなどからWindowを閉じる](http://ateraimemo.com/Swing/WindowClosingAction.html)を作成してみました。 -- *aterai* 2013-03-11 (月) 17:09:34
 
 <!-- dummy comment line for breaking list -->

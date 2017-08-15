@@ -47,7 +47,7 @@ JTextField textField01 = new JTextField(20) {
 
 ## 解説
 - 上
-    - `JTextField#paintComponent(...)`をオーバーライド、`BorderをEmptyBorder`、`JTextField#setOpaque(false);`
+    - `JTextField#paintComponent(...)`をオーバーライド、`Border`を`EmptyBorder`、`JTextField#setOpaque(false);`
     - 参考: [Unleash Your Creativity with Swing and the Java 2D API!](http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html)
     - 背景が画像などの場合でも角丸が描画可能
 

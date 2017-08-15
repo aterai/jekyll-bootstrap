@@ -28,7 +28,7 @@ comments: true
       JLayer layer = (JLayer) c;
       DnDTabbedPane tabbedPane = (DnDTabbedPane) layer.getView();
       DnDTabbedPane.DropLocation loc = tabbedPane.getDropLocation();
-      if (loc != null &amp;&amp; loc.isDropable() &amp;&amp; loc.getIndex() &gt;= 0) {
+      if (loc != null &amp;&amp; loc.isDroppable() &amp;&amp; loc.getIndex() &gt;= 0) {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.setComposite(
             AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .5f));

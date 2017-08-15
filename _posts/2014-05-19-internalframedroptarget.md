@@ -16,7 +16,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/-UP_I_iTgtpc/U3jPL_jhwuI/AAAAAAAACFg/olJ1Sf-P_lU/s800/InternalFrameDropTarget.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private boolean isDropableTableIntersection(TransferSupport info) {
+<pre class="prettyprint"><code>private boolean isDroppableTableIntersection(TransferSupport info) {
   Component c = info.getComponent();
   if (!(c instanceof JTable)) {
     return false;
