@@ -26,7 +26,9 @@ comments: true
             return new LabelView(elem);
           } else if (kind.equals(AbstractDocument.ParagraphElementName)) {
             return new javax.swing.text.ParagraphView(elem) {
-              @Override protected short getBottomInset() { return 5; }
+              @Override protected short getBottomInset() {
+                return 5;
+              }
             };
           } else if (kind.equals(AbstractDocument.SectionElementName)) {
             return new BoxView(elem, View.Y_AXIS);
@@ -80,5 +82,11 @@ htmlEditorKit.setStyleSheet(styleSheet);
 editor1.setEditorKit(htmlEditorKit);
 editor1.setText("&lt;html&gt;&lt;body&gt;&lt;div class='test'&gt;12&lt;br /&gt;a&lt;br /&gt;n&lt;font size='32'&gt;123&lt;br /&gt;sd&lt;/font&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;");
 </code></pre>
+
+## 参考リンク
+- [JTextPane#setParagraphAttributes(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#setParagraphAttributes-javax.swing.text.AttributeSet-boolean-)
+- [CompositeView#getBottomInset() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/CompositeView.html#getBottomInset--)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

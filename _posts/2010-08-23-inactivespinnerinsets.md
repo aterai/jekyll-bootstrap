@@ -52,7 +52,7 @@ comments: true
     - `WindowsLookAndFeel(XP)`で、`JSpinner`を編集不可にしても背景色は白いままになる
     - `UIManager.put("FormattedTextField.inactiveBackground", Color.WHITE);`
 - `setBorder(...)`
-    - 上記と同様に取得した`JSpinner.DefaultEditor`(=`JPanel`)と`JTextField`に以下のような`WindowsLookAndFeel(XP)`用の`Border`を設定している
+    - 上記と同様に取得した`JSpinner.DefaultEditor`(デフォルトは`JPanel`)と`JTextField`に以下のような`WindowsLookAndFeel(XP)`用の`Border`を設定している
         
         <pre class="prettyprint"><code>JSpinner spinner2 = new JSpinner();
         spinner2.setBorder(BorderFactory.createEmptyBorder());

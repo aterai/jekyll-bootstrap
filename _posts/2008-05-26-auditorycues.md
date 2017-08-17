@@ -36,7 +36,7 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 <!-- dummy comment line for breaking list -->
 
 - `showMessageDialog2`
-    - `wav`ファイルで音を鳴らす
+    - 別途用意した`wav`ファイルを再生する
     - `UIManager.put("AuditoryCues.playList", UIManager.get("AuditoryCues.noAuditoryCues"))`として、二重に鳴らないように制限
 
 <!-- dummy comment line for breaking list -->

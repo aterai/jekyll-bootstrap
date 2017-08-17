@@ -36,6 +36,7 @@ splitPane.setOneTouchExpandable(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [JSplitPane#setOneTouchExpandable(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSplitPane.html#setOneTouchExpandable-boolean-)
 - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
 - [JSplitPaneの収納状態を維持する](http://ateraimemo.com/Swing/KeepHiddenDivider.html)
 

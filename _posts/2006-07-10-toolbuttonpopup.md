@@ -85,7 +85,7 @@ class MenuToggleButton extends JToggleButton {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JToggleButton`の右側に余白を設定して、そこに下向きの矢印を上書きしています。
+上記のサンプルでは、`JToggleButton`の右側に余白を設定して、そこに下向きの矢印アイコンを上書きしています。
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)

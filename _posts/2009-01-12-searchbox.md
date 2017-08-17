@@ -16,21 +16,22 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSs3gdysI/AAAAAAAAAjM/r_j-mrb83aU/s800/SearchBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private static void searchTree(
-    JTree tree, TreePath path, String q, List&lt;TreePath&gt; rollOverPathLists) {
-  TreeNode node = (TreeNode) path.getLastPathComponent();
-  if (node == null) {
-    return;
-  }
-  if (node.toString().startsWith(q)) {
-    rollOverPathLists.add(path);
-    tree.expandPath(path.getParentPath());
-  }
-  if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
-    Enumeration e = node.children();
-    while (e.hasMoreElements()) {
-      searchTree(
-          tree, path.pathByAddingChild(e.nextElement()), q, rollOverPathLists);
+<pre class="prettyprint"><code>protected static void searchTree(
+    JTree tree, TreePath path, String q,
+    List&lt;TreePath&gt; rollOverPathLists) {
+  Object o = path.getLastPathComponent();
+  if (o instanceof TreeNode) {
+    TreeNode node = (TreeNode) o;
+    if (node.toString().startsWith(q)) {
+      rollOverPathLists.add(path);
+      tree.expandPath(path.getParentPath());
+    }
+    if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
+      Enumeration&lt;?&gt; e = node.children();
+      while (e.hasMoreElements()) {
+        searchTree(tree, path.pathByAddingChild(e.nextElement()),
+                   q, rollOverPathLists);
+      }
     }
   }
 }
