@@ -49,7 +49,7 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: style
 
-gems: ["jekyll-sitemap"]
+plugins: ["jekyll-sitemap"]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
