@@ -151,7 +151,7 @@ class CancelAction extends AbstractAction {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`SwingWorker#process()`メソッド内などで`JPanel#sDisplayable()`を呼び、アプリケーション(`frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);`が設定されている)が終了している場合は、タスクを中断することで`SwingWorker`が生き残るのを防止しています。
+`SwingWorker#process()`メソッド内などで`JPanel#isDisplayable()`を呼び、アプリケーション(`frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);`が設定されている)が終了している場合は、タスクを中断することで`SwingWorker`が生き残るのを防止しています。
 
 ## 参考リンク
 - [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)

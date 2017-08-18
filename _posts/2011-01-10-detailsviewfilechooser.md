@@ -21,10 +21,8 @@ comments: true
 //for (Object key: chooser.getActionMap().allKeys()) {
 //    System.out.println(key);
 //}
-Action detailsAction = chooser.getActionMap().get("viewTypeDetails");
-if (detailsAction != null) {
-  detailsAction.actionPerformed(null);
-}
+Optional.ofNullable(chooser.getActionMap().get("viewTypeDetails"))
+  .ifPresent(a -&gt; a.actionPerformed(null));
 </code></pre>
 
 ## 解説
