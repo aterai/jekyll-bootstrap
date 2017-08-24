@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: MouseDrivenImageRotation
 title: Mouseで画像を移動、回転
-tags: [ImageIcon, MouseListener, MouseMotionListener, AffineTransform]
+tags: [ImageIcon, MouseListener, MouseMotionListener, AffineTransform, Area]
 author: aterai
 pubdate: 2009-05-25T13:21:41+09:00
 description: 画像をマウスのドラッグで任意の位置に移動、回転します。
@@ -141,6 +141,7 @@ comments: true
 ## 参考リンク
 - [Life is beautiful: 習作UI：初めてのFlash その３](http://satoshi.blogs.com/life/2007/05/uiflash_2.html)
     - `Flash`の`UI`を参考
+- [Area#subtract(Area) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/Area.html#subtract-java.awt.geom.Area-)
 
 <!-- dummy comment line for breaking list -->
 

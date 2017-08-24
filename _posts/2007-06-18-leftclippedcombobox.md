@@ -67,38 +67,34 @@ combo02.setRenderer(new DefaultListCellRenderer() {
 </code></pre>
 
 ## 解説
-標準の`JComboBox`では、長い文字列は右側をクリップするので、上記のサンプルでは左側を切り取り、`...`で置き換えるようにセルレンダラーを変更しています。
-
-例えば、コンボボックスのセルよりファイル名が長くても、拡張子が表示できるようにしたいといった場合に使用します。
-
+- 標準の`JComboBox`が使用する`DefaultListCellRenderer`は`JLabel`を継承しているので、長い文字列は右側から省略される
+- 上記のサンプルでは左側から省略し、`...`で置き換えるようにセルレンダラーを変更
+    - 例えば、コンボボックスのセルよりファイル名が長くても、拡張子が表示できるようにしたいといった場合に使用可能
 - 注:
     - エディタ部分(`index < 0`の場合)を描画するときは、矢印ボタンの幅を考慮する必要がある
     - `LookAndFeel`によって余白などのサイズが微妙に異なる場合があるため、うまく表示されない場合がある？
     - 補助文字(サロゲートペアなど)を含む文字列を扱う場合は、`String#charAt(int)`ではなく、`String#codePointAt(int)`や`Character.charCount(codePoint)`などを使用する必要がある
         - 参考: [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>FontMetrics fm = getFontMetrics(getFont());
-if (fm.stringWidth(cellText) &gt; availableWidth) {
-  String dots = "...";
-  int textWidth = fm.stringWidth(dots);
-  int len = cellText.length();
-  int[] acp = new int[cellText.codePointCount(0, len)];
-  int j = acp.length;
-  for (int i = len; i &gt; 0; i = cellText.offsetByCodePoints(i, -1)) {
-    int cp = cellText.codePointBefore(i);
-    textWidth += fm.charWidth(cp);
-    if (textWidth &gt; availableWidth) {
-      break;
-    }
-    acp[--j] = cp;
-  }
-  setText(dots + new String(acp, j, acp.length - j));
-}
+        
+        <pre class="prettyprint"><code>FontMetrics fm = getFontMetrics(getFont());
+        if (fm.stringWidth(cellText) &gt; availableWidth) {
+          String dots = "...";
+          int textWidth = fm.stringWidth(dots);
+          int len = cellText.length();
+          int[] acp = new int[cellText.codePointCount(0, len)];
+          int j = acp.length;
+          for (int i = len; i &gt; 0; i = cellText.offsetByCodePoints(i, -1)) {
+            int cp = cellText.codePointBefore(i);
+            textWidth += fm.charWidth(cp);
+            if (textWidth &gt; availableWidth) {
+              break;
+            }
+            acp[--j] = cp;
+          }
+          setText(dots + new String(acp, j, acp.length - j));
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Swing - JTable - right align in cell even if the text is wider than the cell](https://community.oracle.com/thread/1389543)
     - camickr さんが投稿(2005/06/10 5:52)した`JTable`でのサンプルがある
 - [Left Dot Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/12/left-dot-renderer/)

@@ -68,7 +68,7 @@ private void checkID(Element element) {
 
 ## 解説
 - `Element#getElement(id)`
-    - [HTMLDocument#getElement(String)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html#getElement%28java.lang.String%29)メソッドを使用して指定した`id`を持つ`Element`を取得
+    - [HTMLDocument#getElement(String)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/HTMLDocument.html#getElement-java.lang.String-)メソッドを使用して指定した`id`を持つ`Element`を取得
     - これらの`Element`(`HTMLDocument.BlockElement`など)は、`org.w3c.dom.Element`ではなく、`javax.swing.text.Element`インタフェースを実装しているので、`org.w3c.dom.Document#getElementById(String)`メソッドは使用できない
     - 指定した`id`の`Element`が存在した場合、`editorPane.select(element.getStartOffset(), element.getEndOffset());`で選択
         - `element.getStartOffset()`などで取得されるオフセットは、`JEditorPane`に表示されない要素や属性は含まれない
@@ -107,7 +107,7 @@ try {
 </code></pre>
 
 ## 参考リンク
-- [HTMLDocument (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/text/html/HTMLDocument.html)
+[HTMLDocument (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/HTMLDocument.html)
 - [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](http://ateraimemo.com/Swing/HTMLEditorKit.html)
 
 <!-- dummy comment line for breaking list -->

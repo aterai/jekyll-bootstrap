@@ -34,7 +34,7 @@ comments: true
     - https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-
     
     		newValue - ルート・ハンドルを表示しない場合は true、そうでない場合はfalse
-    - [http://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-](http://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-)
+    - https://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-
     
     		newValue - true if root handles should be displayed; otherwise, false
     - * 参考リンク [#reference]

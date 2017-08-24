@@ -57,7 +57,7 @@ comments: true
 ## 参考リンク
 - [JTextFieldにフォーカスと文字列が無い場合の表示](http://ateraimemo.com/Swing/GhostText.html)
 - [JPasswordFieldにヒント文字列を描画する](http://ateraimemo.com/Swing/InputHintPasswordField.html)
-    - [JTextFieldにフォーカスと文字列が無い場合の表示](http://ateraimemo.com/Swing/GhostText.html)では、`JPasswordField`に応用できないので、`JLabel`を配置することでヒント文字列を表示
+    - [JTextFieldにフォーカスと文字列が無い場合の表示](http://ateraimemo.com/Swing/GhostText.html)の方法は`JPasswordField`に応用できないので、`JLabel`を配置することでヒント文字列を表示
 
 <!-- dummy comment line for breaking list -->
 
