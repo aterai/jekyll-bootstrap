@@ -118,7 +118,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
     - ソースコードを[JEditorPaneやJTextPaneに行間を設定する](http://ateraimemo.com/Swing/LineSpacing.html)に移動しました。 -- *aterai* 2009-11-02 (月) 12:54:44
 - （変な日本語を書いてましたね、失礼しました。）　ところで…、さっそくご親切にソースまで書いて教えていただけて嬉しいです。ありがとうございました。これを参考にして、また勉強したいと思います。本当にありがとうございました。 -- *びびあず* 2008-11-07 (金) 14:22:27
 - `Swing`初心者です。`JTextPane`での複数行表示、大変参考になりました。複数行表示自体はおかげ様でうまくいったのですが、ボーダーが思い通りにならず困っています。`TitledBorder`を設定しているのですが、タイトルを囲む線の外側（コンポーネントの枠）がくぼんだ状態になってしまいます。外枠は表示させたくないのですが、どこかで`OFF`できるのでしょうか。ご教授いただければ幸いです。 -- *ka-ka* 2008-12-25 (木) 00:03:08
-    - こんばんは。`TitledBorder`の枠線を変更する場合は、`label.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEmptyBorder(), "title"));`のように、他の`Border`(この場合、`EmptyBorder`で非表示にしている)と組み合わせて使用します。[TitledBorder (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/border/TitledBorder.html#TitledBorder%28javax.swing.border.Border,%20java.lang.String%29) -- *aterai* 2008-12-25 (木) 01:46:20
+    - こんばんは。`TitledBorder`の枠線を変更する場合は、`label.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEmptyBorder(), "title"));`のように、他の`Border`(この場合、`EmptyBorder`で非表示にしている)と組み合わせて使用します。[TitledBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/TitledBorder.html#TitledBorder-javax.swing.border.Border-java.lang.String-) -- *aterai* 2008-12-25 (木) 01:46:20
 - ありがとうございます。`NetBeans`で開発しているのですが、あ～でもないこ～でもないとプロパティ画面をいじっていたら、`JScrollPane`と`JTextPane`の組み合わせで思い描いたものはできました。`Swing`も`NetBeans`も初めてなので色々と思い通りにできずに四苦八苦しております。。。今後ともこちらのサイトで勉強させていただきます！ -- *ka-ka* 2008-12-26 (金) 00:38:15
 
 <!-- dummy comment line for breaking list -->

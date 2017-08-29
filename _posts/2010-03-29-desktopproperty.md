@@ -28,9 +28,9 @@ comments: true
 ## 解説
 上記のサンプルでは、`Toolkit`に`PropertyChangeListener`を追加して、ダブルクリックの速度と、`Windows`環境での画面の配色(画面のプロパティ、デザイン、配色の規定(青)、オリーブグリーン、シルバー)の変更を監視しています。
 
-その他、サポートされている`Windows`デスクトップ関連のプロパティー一覧は、以下のようにして取得することができます。
+その他のサポートされている`Windows`デスクトップ関連のプロパティー一覧は、以下のようにして取得することができます。
 
-- [Windows デスクトップ関連のプロパティーのサポート](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/1.4/w2k_props.html)のサンプルより
+- [Windowsデスクトップ関連のプロパティのサポート](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/w2k_props.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -44,7 +44,7 @@ public class DesktopPropertyList {
 </code></pre>
 
 ## 参考リンク
-- [Windows デスクトップ関連のプロパティーのサポート](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/1.4/w2k_props.html)
+- [Windowsデスクトップ関連のプロパティのサポート](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/w2k_props.html)
 - [Swing - Should UIManager fire propertyChangeEvents here?](https://community.oracle.com/thread/1352133)
 
 <!-- dummy comment line for breaking list -->

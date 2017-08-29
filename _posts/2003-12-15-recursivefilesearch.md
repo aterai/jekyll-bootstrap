@@ -42,7 +42,7 @@ comments: true
 - - - -
 `JDK 1.7.0`以上の場合は、`Files.walkFileTree(...)`などを使用する方法もあります。
 
-- [Files#walkFileTree(...) (Java Platform SE 7)](https://docs.oracle.com/javase/jp/7/api/java/nio/file/Files.html#walkFileTree%28java.nio.file.Path,%20java.nio.file.FileVisitor%29)
+- [Files#walkFileTree(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/nio/file/Files.html#walkFileTree-java.nio.file.Path-java.nio.file.FileVisitor-)
 - [Walking the File Tree (The Java™ Tutorials > Essential Classes > Basic I/O)](https://docs.oracle.com/javase/tutorial/essential/io/walk.html)
 
 <!-- dummy comment line for breaking list -->

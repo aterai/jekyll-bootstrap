@@ -31,6 +31,11 @@ frame.addComponentListener(new ComponentAdapter() {
 ## 解説
 上記のサンプルでは、`JFrame`のサイズを変更した後、その幅から縦横比が変更前と同じになるような高さを計算して`JFrame#setSize(int,int)`で設定し直しています。
 
+- 注:
+    - 現状`Windows 10` + `JDK 1.8.0_141`の環境では正常に動作していない
+
+<!-- dummy comment line for breaking list -->
+
 ## 参考リンク
 - [JFrameの最小サイズ](http://ateraimemo.com/Swing/MinimumFrame.html)
 - [DynamicLayoutでレイアウトの動的評価](http://ateraimemo.com/Swing/DynamicLayout.html)

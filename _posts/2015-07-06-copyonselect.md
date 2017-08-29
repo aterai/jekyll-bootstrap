@@ -69,16 +69,21 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、マウス操作を使って文字列を選択する場合~~のみ~~、選択文字列を自動的にクリップボードにコピーするリスナーを`JTextArea`に設定しています。
+上記のサンプルでは、マウス操作を使って文字列を選択する場合、選択文字列を自動的にクリップボードにコピーするリスナーを`JTextArea`に設定しています。
 
 - マウスのドラッグで文字列選択:
     - ドラッグ終了後に、クリップボードへ選択されている文字列をコピー
 - <kbd>Shift</kbd>+カーソルキーによる文字列選択:
-    - ~~無視する~~ <kbd>Shift</kbd>キーをリリース後、クリップボードへ選択されている文字列をコピー
+    - <kbd>Shift</kbd>キーをリリース後、クリップボードへ選択されている文字列をコピー
 - <kbd>Shift</kbd>+マウスクリックによる文字列選択:
     - マウスリリース後、クリップボードへ選択されている文字列をコピー
 - マウスのダブルクリックによる文字列選択:
     - ダブルクリック終了後、クリップボードへ選択されている文字列をコピー
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JTextComponent#copy() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#copy--)
 
 <!-- dummy comment line for breaking list -->
 

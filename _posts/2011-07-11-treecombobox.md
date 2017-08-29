@@ -102,7 +102,7 @@ comments: true
 
 - `TreeNode#isLeaf()`の場合だけ、選択可能
     - [JComboBoxのアイテムを選択不可にする](http://ateraimemo.com/Swing/DisableItemComboBox.html)
-- 子要素のインデントは`BorderFactory.createEmptyBorder(0,indent,0,0)`
+- 子要素のインデントは`BorderFactory.createEmptyBorder(0, indent, 0, 0)`で設定
 
 <!-- dummy comment line for breaking list -->
 

@@ -25,6 +25,7 @@ comments: true
 - 注:
     - デフォルトの`JComboBox`最大表示項目数は、`LookAndFeel`に依存せず`8`が初期値
     - `0`、負の値を設定してもエラーにはならないが、`1`の場合より余分な領域が表示される？
+    - 画面サイズよりリストが大きくなる場合は、末尾のアイテムが表示できなくなる
 
 <!-- dummy comment line for breaking list -->
 

@@ -111,6 +111,9 @@ private static AbstractButton makeButton(String title, Action action) {
 - [Custom JMenuItems in Java](https://stackoverflow.com/questions/5972368/custom-jmenuitems-in-java)
 - [JPopupMenuのレイアウトを変更して上部にメニューボタンを追加する](http://ateraimemo.com/Swing/PopupMenuLayout.html)
     - こちらは`JPopupMenu`のレイアウトを変更してボタンメニューを作成している
+- [DefaultEditorKit.CutAction (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultEditorKit.CutAction.html)
+- [DefaultEditorKit.CopyAction (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultEditorKit.CopyAction.html)
+- [DefaultEditorKit.PasteAction (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultEditorKit.PasteAction.html)
 
 <!-- dummy comment line for breaking list -->
 

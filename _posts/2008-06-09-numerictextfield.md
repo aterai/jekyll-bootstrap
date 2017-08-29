@@ -125,7 +125,6 @@ spinner.setValue(5000);
 - `3`:`JTextField` + `DocumentFilter`
     - [Validating with a Document Filter](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
     - `DocumentFilter`を継承する`IntegerDocumentFilter`を作成し、これを`AbstractDocument#setDocumentFilter`メソッドで設定
-    - ~~別コンポーネントにフォーカスが移動するときに、数値かどうか評価する~~
     - キー入力、文字列のペーストが行われたときに、数値かどうか評価する
     - 入力が数値以外、または結果が範囲外となる場合、`beep`音が鳴り、テキストは変化しない
 

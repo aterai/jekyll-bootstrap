@@ -77,6 +77,7 @@ comments: true
 
 ## 参考リンク
 - [JFileChooserに画像プレビューを追加](http://ateraimemo.com/Swing/PreviewAccessory.html)
+- [Containerの子Componentを再帰的にすべて取得する](http://ateraimemo.com/Swing/GetComponentsRecursively.html)
 - [Container#add(Component, int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Container.html#add-java.awt.Component-int-)
 
 <!-- dummy comment line for breaking list -->
