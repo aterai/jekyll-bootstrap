@@ -66,4 +66,10 @@ comments: true
 ## 解説
 上記のサンプルでは、`TextLayout`から文字列のアウトラインを`Shape`として取得しています。
 
+## 参考リンク
+- [TextLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/TextLayout.html)
+- [TextLayoutでFontのメトリック情報を取得する](http://ateraimemo.com/Swing/TextLayout.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
