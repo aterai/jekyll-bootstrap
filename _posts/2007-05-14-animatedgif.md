@@ -63,7 +63,7 @@ JLabel label4 = new JLabel("直前の画像に戻す",
 
 ## 参考リンク
 - [Cover Sheet for the GIF89a Specification](http://www.w3.org/Graphics/GIF/spec-gif89a.txt)
-    - 「23. Graphic Control Extension.」の、「iv) Disposal Method」から説明を引用
+    - 「`23. Graphic Control Extension.`」の、「`iv) Disposal Method`」から説明を引用
 - [Giam ダウンロードのページ](http://homepage3.nifty.com/furumizo/giamd.htm)
     - `Giam`を使って、各`Animated GIF`を生成
 

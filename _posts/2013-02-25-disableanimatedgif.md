@@ -27,7 +27,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLabel`が`Enabled`でない場合にアニメーションを停止するよう設定しています。
+上記のサンプルでは、`JLabel#isEnabled()`が`false`の場合は、`setIcon()`メソッドで設定した`Animated Gif`のアニメーションを停止するなどのテストを行っています。
 
 - `Default`
     - デフォルトの`JLabel`では、`JLabel#setEnabled(false);`としてもアニメーションは停止しない
