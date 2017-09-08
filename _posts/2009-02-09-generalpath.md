@@ -103,6 +103,9 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [GeneralPath (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/GeneralPath.html)
+- [Polygon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Polygon.html)
+- [Path2D (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/Path2D.html)
 - `%JAVA_HOME%/demo/jfc/Java2D/src/java2d/demos/Lines/Joins.java`
 - [ついにベールを脱いだJavaFX：第9回 アニメーションを用いてより魅力的に［応用編］｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/javafx/0009?page=2)
 - [Java2D Shapes project.](http://java-sl.com/shapes.html)

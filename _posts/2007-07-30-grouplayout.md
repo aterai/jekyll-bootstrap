@@ -62,12 +62,12 @@ c.gridy   = 1; p2.add(tf4, c);
 </code></pre>
 
 ## 解説
-`GroupLayout`を手で書く場合は、少ないかもしれませんが、それでも`GridBagLayout`と同程度の記述で同じようなレイアウトも作成できるようです。また手書きでも、`GroupLayout`の場合、コンテナとコンポーネントの間に、ギャップを自動的に作成してくれる`GroupLayout#setAutoCreateContainerGaps`などが便利です。
+`GroupLayout`を手で書くことはあまりなさそうですが、それでも`GridBagLayout`と同程度の記述で同じようなレイアウトも作成できるようです。また`GroupLayout`を手書きする場合、コンテナとコンポーネントの間にギャップを自動的に作成してくれる`GroupLayout#setAutoCreateContainerGaps`などが便利です。
 
-上記のサンプルでは、`GroupLayout`、`GridBagLayout`でレイアウトしたパネルを、`GridLayout`(`BorderLayout.CENTER`と同じで、推奨サイズが無視される)で上下に並べているため、フレームを拡大すると、`GroupLayout`は上揃え、`GridBagLayout`は中央揃えになっています。
+上記のサンプルでは、`GroupLayout`と`GridBagLayout`でレイアウトしたパネルを`GridLayout`(`BorderLayout.CENTER`と同じで推奨サイズが無視される)で上下に並べているため、フレームを拡大すると`GroupLayout`は上揃え、`GridBagLayout`は中央揃えになっています。
 
 ## 参考リンク
-- [GroupLayout (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/GroupLayout.html)
+- [GroupLayout (Java Platform SE 8 )](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/GroupLayout.html)
 - [GridBagLayoutの使用](http://ateraimemo.com/Swing/GridBagLayout.html)
 - [GroupLayoutの考え方２ - ばかの一つ覚え。](http://d.hatena.ne.jp/jawagenjin/20080127/1201444435)
     - `GroupLayout`のイメージが、図で分かりやすく解説されている

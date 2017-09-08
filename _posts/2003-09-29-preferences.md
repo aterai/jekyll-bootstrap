@@ -81,12 +81,13 @@ private void saveLocation() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、対象フレームが最大化、最小化された状態で終了した場合、その前の位置サイズを記憶しておくようになっています。
+上記のサンプルでは、対象フレームが最大化、最小化された状態で終了した場合、その前の位置サイズを記憶するよう設定しています。
 
 ## 参考リンク
-- [Preferences API の概要](http://docs.oracle.com/javase/jp/6/technotes/guides/preferences/overview.html)
-    - このページの概要にある「`Java` コレクション `API` の設計に関する `FAQ`」は多分、「`Preferences API` の設計に関する `FAQ`」の間違い
-    - `Java 8`の[Preferences APIの概要](https://docs.oracle.com/javase/jp/8/technotes/guides/preferences/overview.html)では修正済み
+- [Preferences (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/util/prefs/Preferences.html)
+- [Preferences APIの概要](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/preferences/overview.html)
+    - メモ: `Java 6`の[Preferences API の概要](http://docs.oracle.com/javase/jp/6/technotes/guides/preferences/overview.html)にある「`Java` コレクション `API` の設計に関する `FAQ`」は、「`Preferences API` の設計に関する `FAQ`」の間違い
+    - `Java 8`の「`Preferences API`の概要」で修正済み
 - [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://ateraimemo.com/Swing/PersistenceService.html)
 
 <!-- dummy comment line for breaking list -->

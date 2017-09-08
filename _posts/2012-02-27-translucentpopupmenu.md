@@ -72,7 +72,7 @@ comments: true
 
 - - - -
 - メモ: `JPopupMenu`(ルート)が`Light weight`で、その`JMenu`から開く`JPopupMenu`(サブメニュー) が`Heavy weight`のときに半透明にならない
-    - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7156657)
+    - [JDK-7156657 Version 7 doesn't support translucent popup menus against a translucent window - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-7156657)
     - `JDK 1.7.0_06`などで修正された
 
 <!-- dummy comment line for breaking list -->
@@ -84,7 +84,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7156657)、[jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b) -- *aterai* 2012-08-10 (金) 19:22:39
+- メモ: [JDK-7156657 Version 7 doesn't support translucent popup menus against a translucent window - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-7156657)、[jdk8/jdk8/jdk: changeset 5453:4acd0211f48b](http://hg.openjdk.java.net/jdk8/jdk8/jdk/rev/4acd0211f48b) -- *aterai* 2012-08-10 (金) 19:22:39
     - `JDK 1.7.0_06`で修正されている？ [Java™ SE Development Kit 7 Update 6 Bug Fixes](http://www.oracle.com/technetwork/java/javase/2col/7u6-bugfixes-1733378.html) -- *aterai* 2012-08-15 (水) 13:55:37
 
 <!-- dummy comment line for breaking list -->

@@ -63,6 +63,7 @@ comments: true
 - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)
 - [JTableHeaderを非表示にする](http://ateraimemo.com/Swing/RemoveTableHeader.html)
     - `JTable`のヘッダ自体を非表示にする場合のサンプル
+- [JTable#setShowVerticalLines(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setShowVerticalLines-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

@@ -46,4 +46,9 @@ comments: true
 });
 </code></pre>
 
+## 参考リンク
+- [JTable#setUpdateSelectionOnSort(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setUpdateSelectionOnSort-boolean-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
