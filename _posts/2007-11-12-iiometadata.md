@@ -43,7 +43,7 @@ if (com != null &amp;&amp; com.getLength() &gt; 0) {
 </code></pre>
 
 ## 解説
-上記のサンプルは、`GIMP`を使って作成したコメント(このサンプルでは、文字コードが何かなどを考慮していないので日本語が化ける可能性がある)付きの`JPEG`画像から以下の手順でコメントを抽出しています。
+上記のサンプルは、コメント付きの`JPEG`画像から以下の手順でコメントを抽出しています。
 
 1. `ImageReader`から、`IIOMetadata`を取得
 1. `IIOMetadata`から`XML`の`DOM`(`org.w3c.dom.Node`)形式でデータを取得
@@ -55,6 +55,11 @@ if (com != null &amp;&amp; com.getLength() &gt; 0) {
     - 属性は頭に`#`をつけて表示
 - `JTree`
     - 参考: [Swing - XMLViewer](https://community.oracle.com/thread/1373824)
+
+<!-- dummy comment line for breaking list -->
+
+- 注:
+    - このサンプルでは、`GIMP`を使用してコメントを追加して文字コードについては考慮していないので日本語が化ける可能性がある
 
 <!-- dummy comment line for breaking list -->
 

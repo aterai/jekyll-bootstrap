@@ -44,11 +44,12 @@ comments: true
 
 - 画像を中央に表示するようにした`Border`を作成し、これを`Viewport`の`Border`として設定
 - `Viewport`に追加した`JTextArea`の背景を透明化
-    - `textarea.setOpaque(false);`
-    - `textarea.setBackground(new Color(0x0, true)));`
+    
+    <pre class="prettyprint"><code>textarea.setOpaque(false);
+    textarea.setBackground(new Color(0x0, true)));
+</code></pre>
 
 <!-- dummy comment line for breaking list -->
-
 - - - -
 `Border`を使って背景に画像を表示する方法は、`JDesktopPane`(参考: [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html))や、その他の`JComponent`でも使用することが出来ます。
 

@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: FileHistory
 title: JMenuに最近使ったファイルを追加
-tags: [JMenu, File]
+tags: [JMenu, JMenuBar, File]
 author: aterai
 pubdate: 2003-11-10
 description: JMenuに、「最近使ったファイル(F)」を履歴として追加していきます。
@@ -57,6 +57,7 @@ class HistoryAction extends AbstractAction {
 実際に使用する場合は、ダミーファイルを使用している箇所を修正したり、アプリケーションを終了する際に履歴を保存したりするコードを追加する必要があります。
 
 ## 参考リンク
+- [JMenu (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JMenu.html)
 - [Resourceファイルからメニューバーを生成](http://ateraimemo.com/Swing/ResourceMenuBar.html)
 - [JFrameの位置・サイズを記憶する](http://ateraimemo.com/Swing/Preferences.html)
 
