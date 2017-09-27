@@ -63,4 +63,9 @@ int getWordStart(JTextComponent c, int offs) throws BadLocationException {
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [Utilities#getWordEnd(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Utilities.html#getWordEnd-javax.swing.text.JTextComponent-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -66,7 +66,7 @@ try {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [SingleInstanceService (JNLP API Reference 1.5)](http://docs.oracle.com/javase/jp/6/jre/api/javaws/jnlp/javax/jnlp/SingleInstanceService.html)
+- [SingleInstanceService (JNLP API リファレンス 1.7.0_45)](https://docs.oracle.com/javase/jp/7/jre/api/javaws/jnlp/javax/jnlp/SingleInstanceService.html)
 - [Bug ID: 6631056 SingleInstanceService does not work on JRE 1.6.0_03](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6631056)
     - via: [Java Web Start & JNLP - How to use singleinstance service with a JWS application](https://community.oracle.com/thread/1307009)
 - [Java Web Start SingleInstanceService - appframework(JSR-296)](https://appframework.dev.java.net/servlets/ReadMsg?listName=users&msgNo=396)

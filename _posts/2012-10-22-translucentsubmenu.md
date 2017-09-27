@@ -80,7 +80,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JMenu`を継承する`TransparentMenu`を作成して、自身と`JMenuItem`などを透明化し、`JMenu`から開く`JPopupMenu`は、[JPopupMenuを半透明にする](http://ateraimemo.com/Swing/TranslucentPopupMenu.html)を使用して半透明にしています。
+上記のサンプルでは、`JMenu`を継承する`TransparentMenu`を作成し、`JMenu`自身と子の`JMenuItem`などを透明化しています。また`JMenu`から開く`JPopupMenu`も、[JPopupMenuを半透明にする](http://ateraimemo.com/Swing/TranslucentPopupMenu.html)を使用して半透明になるよう設定しています。
 
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html) を参考に `PopupFactory#getPopup(...)`をオーバーライドし、常に`JPopupMenu`(半透明)の親に`JWindow`(完全に透明、`Heavy weight`)を使用するように設定
 

@@ -42,7 +42,7 @@ comments: true
 上記のサンプルでは、`JTable`の`prepareEditor`、`prepareRenderer`をオーバーライドして編集中のセルエディタ(`JCheckBox`)や同じ行の背景色を変更しています。
 
 - - - -
-チェックボックスがクリックされてモデルが更新されると、デフォルトでは対応するセルのみ再描画されます。このサンプルでは対象セルだけではなく、そのセルが存在する行全体の背景色を変更しているので、`TableModelListener`でモデルの更新を検出し、以下のように`JTable#repaint(...)`を使って行を再描画しています。
+チェックボックスがクリックされてモデルが更新されると、デフォルトでは対応するセルのみ再描画されます。このサンプルでは対象セルだけではなく、そのセルが存在する行全体の背景色を変更しているので、`TableModelListener`でモデルの更新を検出し、以下のように`JTable#repaint(...)`メソッドを使って行を再描画しています。
 
 <pre class="prettyprint"><code>model.addTableModelListener(new TableModelListener() {
   @Override public void tableChanged(TableModelEvent e) {
@@ -58,6 +58,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
+- [JTable#prepareRenderer(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#prepareRenderer-javax.swing.table.TableCellRenderer-int-int-)
 - [Swing - JTable-Row color issue](https://community.oracle.com/thread/1361072)
 
 <!-- dummy comment line for breaking list -->

@@ -36,6 +36,7 @@ comments: true
 
 ## 参考リンク
 - [入力の検証](http://docs.oracle.com/javase/jp/1.4/guide/swing/1.3/InputChanges.html)
+- [JComponent#setVerifyInputWhenFocusTarget(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComponent.html#setVerifyInputWhenFocusTarget-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

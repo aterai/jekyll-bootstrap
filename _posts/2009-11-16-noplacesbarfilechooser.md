@@ -20,7 +20,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`PlacesBar`(`WindowsLookAndFeel`を使用している場合の`JFileChooser`で左側に表示されるパネル)が非表示になるように、`UIManager.put("FileChooser.noPlacesBar", Boolean.TRUE);`を使用しています。
+上記のサンプルでは、`PlacesBar`(`WindowsLookAndFeel`を使用している場合の`JFileChooser`で左側に表示されるパネル)が非表示になるように、`UIManager.put("FileChooser.noPlacesBar", Boolean.TRUE);`を指定しています。
 
 `WindowsLookAndFeel`以外の`JFileChooser`場合、`FileChooser.noPlacesBar`の指定は無視されます。
 

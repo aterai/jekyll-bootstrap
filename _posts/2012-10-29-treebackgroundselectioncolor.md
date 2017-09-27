@@ -63,11 +63,16 @@ comments: true
     - `DefaultTreeCellRenderer#getBackgroundSelectionColor()`をオーバーライド
     - ノードアイコンの背景は選択状態にならず、ノードテキストの背景色のみ変更される
 - ノードテキストが`a`で始まる場合、選択背景色を`Color.RED`に変更
-    - `TreeCellRenderer#getTreeCellRendererComponent(...)`で取得したコンポーネント(=`JLabel`)を`setOpaque(true)`で不透明、`setBackground(Color.RED)`で背景色を変更
+    - `TreeCellRenderer#getTreeCellRendererComponent(...)`で取得したコンポーネント(`JLabel`)を`setOpaque(true)`で不透明、`setBackground(Color.RED)`で背景色を変更
     - ノードアイコン、テキストの背景色が共に選択状態になる
+- 注:
+    - `SynthLookAndFeel`で作成されている`NimbusLookAndFeel`などでは、上記のような選択背景色にならない場合がある
 
 <!-- dummy comment line for breaking list -->
 
-`SynthLookAndFeel`で作成されている`NimbusLookAndFeel`などでは、上記のような選択背景色にならない場合があります。
+## 参考リンク
+- [DefaultTreeCellRenderer (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

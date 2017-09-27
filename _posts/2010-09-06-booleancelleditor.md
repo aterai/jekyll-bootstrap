@@ -33,9 +33,12 @@ comments: true
 - 上: デフォルト
     - セルをクリックして編集状態になると`CellEditor`として、背景色が白の`JCheckBox`が表示される
 - 下: `JTable#getSelectionBackground()`
-    - `BooleanCellEditor`として使用する`JCheckBox`の背景色が常に`JTable#getSelectionBackground()`になるように`JTable#prepareEditor(...)`をオーバーライド
+    - `BooleanCellEditor`として使用する`JCheckBox`の背景色が常に`JTable#getSelectionBackground()`になるように`JTable#prepareEditor(...)`メソッドをオーバーライド
 
 <!-- dummy comment line for breaking list -->
+
+## 参考リンク
+[JTable#prepareEditor(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#prepareEditor-javax.swing.table.TableCellEditor-int-int-)
 
 ## コメント
 - <kbd>Ctrl</kbd>キーを押しながら選択されている行にある`JCheckBox`をマウスで選択すると、リリースするまで`JCheckBox`の背景色が残っている、`NimbusLookAndFeel`から別の`LookAndFeel`に変更すると選択色が残ってしまうなどの問題に対応しました。 -- *aterai* 2012-02-23 (木) 15:05:20

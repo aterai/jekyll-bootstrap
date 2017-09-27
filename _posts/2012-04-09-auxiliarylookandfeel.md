@@ -74,6 +74,7 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
 
 ## 参考リンク
 - [多重Look & Feelの使用](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/multi/doc-files/multi_tsc.html)
+- [UIManager#addAuxiliaryLookAndFeel(LookAndFeel) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/UIManager.html#addAuxiliaryLookAndFeel-javax.swing.LookAndFeel-)
 
 <!-- dummy comment line for breaking list -->
 

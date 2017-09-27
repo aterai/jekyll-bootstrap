@@ -122,11 +122,16 @@ comments: true
 ## 解説
 - 左
     - `TitledBorder`のデフォルト(上)
-    - `JDK 7`では、文字列が`Border`の幅より長い場合、省略記号`...`で省略されるようになった
+    - `JDK 7`から文字列が`Border`の幅より長い場合、`...`で省略されるようになった
 - 中
-    - `TitledBorder#paintBorder(...)`などをオーバーライドして、縦で左側に表示
+    - `TitledBorder#paintBorder(...)`などをオーバーライドして、タイトルを左側に縦表示
 - 右
     - `TitledBorder`と`VerticalTitledBorder`の組み合わせ
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [TitledBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/TitledBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

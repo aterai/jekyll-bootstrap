@@ -33,11 +33,12 @@ try {
 </code></pre>
 
 ## 解説
-テキストコンポーネントから`Highlighter`を取得し、`Highlighter#addHighlight`メソッドで検索した文字列を追加していきます。
+テキストコンポーネントから`Highlighter`を取得し、`Highlighter#addHighlight(...)`メソッドで検索した文字列を追加していきます。
 
 上記のサンプルでは、ハイライト色を`DefaultHighlighter.DefaultHighlightPainter`を使って指定しています。
 
 ## 参考リンク
+- [Highlighter#addHighlight(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Highlighter.html#addHighlight-int-int-javax.swing.text.Highlighter.HighlightPainter-)
 - [Swing - Searching text in files & highlighting that text](https://community.oracle.com/thread/1387954)
 - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/Swing/HighlightTextForeground.html)
 

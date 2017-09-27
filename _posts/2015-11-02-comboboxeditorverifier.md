@@ -35,7 +35,7 @@ comboBox.setEditor(new BasicComboBoxEditor() {
 
 ## 解説
 - `6`文字以上入力すると赤い`×`アイコンを表示する`LayerUI`を作成
-    - アイコンは[JLayerを使用したコンポーネントのデコレート方法](http://www.oracle.com/technetwork/jp/articles/java/jlayer-439461-ja.html)から引用
+    - アイコンは[JLayerを使用したコンポーネントのデコレート方法](https://www.oracle.com/technetwork/jp/articles/java/jlayer-439461-ja.html)から引用
     - 入力の妥当性の検証自体は、`JComboBox`に設定した`InputVerifier`を使用
 - `JComboBox`に`BasicComboBoxEditor#getEditorComponent()`をオーバーライドしてエディタコンポーネントを`JLayer`(上記の`LayerUI`を使用する)に変更した`ComboBoxEditor`を設定
     - `BasicComboBoxEditor#createEditorComponent()`をオーバーライドすることでエディタの`JTextField`に`JLayer`をする場合は、`BasicComboBoxEditor#getItem()`などのメソッドも修正する
@@ -66,5 +66,10 @@ comboBox.setEditor(new BasicComboBoxEditor() {
   }
 };
 </code></pre>
+
+## 参考リンク
+- [JLayerを使用したコンポーネントのデコレート方法](https://www.oracle.com/technetwork/jp/articles/java/jlayer-439461-ja.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

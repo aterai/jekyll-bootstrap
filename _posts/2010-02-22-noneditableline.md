@@ -42,13 +42,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DocumentFilter`を使って、`JTextArea`の一行目と二行目で追加、削除などの編集ができないように設定しています。
+上記のサンプルでは、`DocumentFilter`を使って、`JTextArea`の`1`行目と`2`行目で追加、削除などの編集ができないように設定しています。
 
 <pre class="prettyprint"><code>((AbstractDocument) textArea.getDocument()).setDocumentFilter(new NonEditableLineDocumentFilter());
 </code></pre>
 
 - - - -
-一行目と二行目の背景色は、編集不可のための`DocumentFilter`とは関係なく、`Highlighter`を使って別途設定しています。
+`1`行目と`2`行目の背景色は、編集不可のための`DocumentFilter`とは関係なく、`Highlighter`を使って別途設定しています。
 <pre class="prettyprint"><code>try {
   Highlighter hilite = textArea.getHighlighter();
   Document doc = textArea.getDocument();

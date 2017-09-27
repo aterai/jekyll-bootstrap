@@ -35,4 +35,9 @@ check.addActionListener(new ActionListener() {
 ## 解説
 上記のサンプルでは、`table.setTableHeader(null)`や、`table.setTableHeader(new JTableHeader(table.getColumnModel()))`は使用せず、`JTable`を配置した`JScrollPane`の`JScrollPane#getColumnHeader().setVisible(boolean)`メソッドを使って、`JTableHeader`の表示、非表示を変更しています。
 
+## 参考リンク
+- [JScrollPane#getColumnHeader() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JScrollPane.html#getColumnHeader--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

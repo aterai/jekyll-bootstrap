@@ -50,11 +50,10 @@ comments: true
 </code></pre>
 
 ## 解説
-`Font.createFont`メソッドでフォントを作成しています。
-
-上記のサンプルでは、[モナーフォント](http://monafont.sourceforge.net/index.html)を使用しています。
+上記のサンプルでは、`Font.createFont(...)`メソッドでフォントを作成しています。
 
 ## 参考リンク
+- [Font (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Font.html#createFont-int-java.io.File-)
 - [モナーフォント](http://monafont.sourceforge.net/index.html)
 - [Swing (Archive) - Loading TYPE1 fonts with JRE 1.5.0](https://community.oracle.com/thread/1483177)
 

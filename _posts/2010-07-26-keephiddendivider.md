@@ -70,20 +70,20 @@ smax.setModel(selectMaxModel);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-[Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)のようにリフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行して、収納状態を維持する方法もあります。
-
-<pre class="prettyprint"><code>try {
-  splitPane.setDividerLocation(0);
-  Method setKeepHidden = BasicSplitPaneUI.class.getDeclaredMethod(
-      "setKeepHidden", new Class[] { Boolean.class });
-  setKeepHidden.setAccessible(true);
-  setKeepHidden.invoke(splitPane.getUI(), new Object[] { Boolean.TRUE });
-} catch (Exception e) {
-  e.printStackTrace();
-}
+- メモ: [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)のサンプルコード
+    - 収納状態を維持するために`BasicSplitPaneUI#setKeepHidden(true)`メソッドをリフレクションを使って実行する方法もある
+        
+        <pre class="prettyprint"><code>try {
+          splitPane.setDividerLocation(0);
+          Method setKeepHidden = BasicSplitPaneUI.class.getDeclaredMethod(
+              "setKeepHidden", new Class[] { Boolean.class });
+          setKeepHidden.setAccessible(true);
+          setKeepHidden.invoke(splitPane.getUI(), new Object[] { Boolean.TRUE });
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
 - [JSplitPaneのディバイダを展開、収納する](http://ateraimemo.com/Swing/OneTouchExpandable.html)
 

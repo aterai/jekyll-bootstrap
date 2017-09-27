@@ -77,6 +77,11 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [BasicSliderUI.TrackListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - `SwingConstants.HORIZONTAL`にしか対応していません。 -- *aterai* 2009-12-21 (月) 11:01:51
 - bobndrewさんからの指摘で、ミニマムにマイナスの値を入れるとおかしくなるバグ修正と、`MinorTickSpacing`に対応。 -- *aterai* 2010-10-26 (火) 15:32:11

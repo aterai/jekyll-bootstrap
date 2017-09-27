@@ -22,7 +22,7 @@ while (readers.hasNext()) {
   reader = readers.next();
   String metaFormat = reader.getOriginatingProvider().getNativeImageMetadataFormatName();
   if ("gif".equalsIgnoreCase(reader.getFormatName()) &amp;&amp;
-          !"javax_imageio_gif_image_1.0".equals(metaFormat)) {
+      !"javax_imageio_gif_image_1.0".equals(metaFormat)) {
     continue;
   } else {
     break;

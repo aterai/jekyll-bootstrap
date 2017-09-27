@@ -42,8 +42,8 @@ icon.setImageObserver(new ImageObserver() {
 
 - [AnimatedIconTableExample.java](http://www2.gol.com/users/tame/swing/examples/SwingExamples.html)からの変更点
     - `JTable#isShowing(...)==false`で、非表示の場合は`JTable#repaint(...)`しない
-    - `JDK 1.6.0`以降に導入された`JTable#convertRowIndexToView(row)`を使って、行がソートされていても正しいセルを再描画する
-    - `JTable#convertColumnIndexToView(col)`を使って、列の入れ替えがあっても正しいセルを再描画する
+    - `JDK 1.6.0`以降に導入された[JTable#convertRowIndexToView(row)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#convertRowIndexToView-int-)メソッドを使用し、行がソートされていても正しいセルのみを再描画する
+    - [JTable#convertColumnIndexToView(col)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#convertColumnIndexToView-int-)メソッドを使って、列の入れ替えがあっても正しいセルのみを再描画する
 
 <!-- dummy comment line for breaking list -->
 

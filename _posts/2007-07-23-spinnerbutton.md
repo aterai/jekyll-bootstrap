@@ -53,6 +53,11 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [BasicSpinnerUI#createNextButton() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicSpinnerUI.html#createNextButton--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - メモ: [Bug ID: 5036022 JSpinner does not reflect new font on subsequent calls to setFont](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5036022)、[JSpinnerのフォント指定 - kaisehのブログ](http://d.hatena.ne.jp/kaiseh/20071120/1195560201) -- *aterai* 2007-11-26 (月) 12:10:19
 

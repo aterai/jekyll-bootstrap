@@ -16,14 +16,17 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTMLdSGopI/AAAAAAAAAYw/aRU27uh4vuQ/s800/EnabledAt.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>checkbox.addItemListener(new ItemListener() {
-  @Override public void itemStateChanged(ItemEvent e) {
-    if (e.getStateChange() == ItemEvent.SELECTED) {
-      tab.setEnabledAt(1, true);
-    } else if (e.getStateChange() == ItemEvent.DESELECTED) {
-      tab.setEnabledAt(1, false);
-    }
-  }
+<pre class="prettyprint"><code>// checkbox.addItemListener(new ItemListener() {
+//   @Override public void itemStateChanged(ItemEvent e) {
+//     if (e.getStateChange() == ItemEvent.SELECTED) {
+//       tab.setEnabledAt(1, true);
+//     } else if (e.getStateChange() == ItemEvent.DESELECTED) {
+//       tab.setEnabledAt(1, false);
+//     }
+//   }
+// });
+checkbox.addItemListener(e -&gt; {
+  tab.setEnabledAt(1, e.getStateChange() == ItemEvent.SELECTED);
 });
 </code></pre>
 

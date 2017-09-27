@@ -41,4 +41,9 @@ comments: true
 });
 </code></pre>
 
+## 参考リンク
+- [TableColumn#setHeaderRenderer(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/TableColumn.html#setHeaderRenderer-javax.swing.table.TableCellRenderer-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

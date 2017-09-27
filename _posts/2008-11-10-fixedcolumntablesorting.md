@@ -105,6 +105,7 @@ add(scroll);
 ## 参考リンク
 - [FixedColumnExample.java](http://www.google.com/search?q=FixedColumnExample.java)
 - [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
+- [JTable#setUpdateSelectionOnSort(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setUpdateSelectionOnSort-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

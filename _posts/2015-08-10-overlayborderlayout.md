@@ -65,4 +65,11 @@ p.add(new JScrollPane(tree));
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)
+- [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
+- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

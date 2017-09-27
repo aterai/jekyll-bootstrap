@@ -54,7 +54,7 @@ private final JComboBox&lt;? extends Enum&gt; algorithmsChoices = new JComboBox&
 - - - -
 - ソートアニメーション自体は、~~[Sorting Algorithm Animations from Programming Pearls](http://www.cs.bell-labs.com/cm/cs/pearls/sortanim.html)~~のアプレットから基本部分をコピーして`Swing`に移植
     - `SwingWorker`(`JDK 6`以上)を使用したキャンセル機能を追加
-    - 全画面の書き換えを止めて、移動する点のみウェイトを入れて再描画するように変更
+    - 全画面の書き換えを止めて、移動する円図形の領域のみウェイトを入れて再描画するように変更
 
 <!-- dummy comment line for breaking list -->
 

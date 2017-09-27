@@ -21,7 +21,7 @@ table.getTableHeader().setReorderingAllowed(false);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTableHeader`を取得し、これに`setReorderingAllowed(false)`を指定して、列の入れ替えを禁止しています。`JTable#setDragEnabled(...)`は自動ドラッグ処理用のメソッドなので、列の入れ替えには関係ありません。
+上記のサンプルでは、`JTableHeader#setReorderingAllowed(false)`を実行して、マウスドラッグによる列の入れ替えを禁止しています。`JTable#setDragEnabled(...)`は自動ドラッグ処理用のメソッドなので、列の入れ替えには関係ありません。
 
 ## 参考リンク
 - [JTableHeader#setReorderingAllowed(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/JTableHeader.html#setReorderingAllowed-boolean-)
