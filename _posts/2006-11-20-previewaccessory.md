@@ -41,7 +41,9 @@ class ImagePreview extends JComponent implements PropertyChangeListener {
     if (tmpIcon.getIconWidth() &gt; PREVIEW_WIDTH) {
       //Image img = tmpIcon.getImage().getScaledInstance(PREVIEW_WIDTH, -1, Image.SCALE_DEFAULT);
       //The Perils of Image.getScaledInstance() | Java.net
-      //http://today.java.net/pub/a/today/2007/04/03/perils-of-image-getscaledinstance.html
+      //ttp://today.java.net/pub/a/today/2007/04/03/perils-of-image-getscaledinstance.html
+      //The Perils of Image.getScaledInstance() Blog | Oracle Community
+      //https://community.oracle.com/docs/DOC-983611
       float scale = PREVIEW_WIDTH / (float) tmpIcon.getIconWidth();
       int newW = (int) (tmpIcon.getIconWidth()  * scale);
       int newH = (int) (tmpIcon.getIconHeight() * scale);
@@ -100,6 +102,7 @@ class ImagePreview extends JComponent implements PropertyChangeListener {
 
 ## 参考リンク
 - [How to Use File Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html)
+- [The Perils of Image.getScaledInstance() Blog | Oracle Community](https://community.oracle.com/docs/DOC-983611)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 - [MetalLookAndFeelでJFileChooserの下部にコンポーネントを追加する](http://ateraimemo.com/Swing/FileChooserBottomAccessory.html)
 

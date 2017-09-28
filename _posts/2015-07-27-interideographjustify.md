@@ -65,8 +65,11 @@ class JustifiedLabel extends JLabel {
 ## 解説
 上記のサンプルでは、セルレンダラーとして文字列を両端揃えで表示する`JLabel`を作成し、`0`列目に設定しています。
 
-- - - -
-この`JLabel`では、`TextLayout#getJustifiedLayout(float)`メソッドを使用して両端揃えを行った`TextLayout`を描画しているため、セルの幅が文字列幅より短くなる場合は文字が重なるようになっています(セル幅が足りない場合でもデフォルトの`JLabel`のように`...`で省略する処理を省いている)。
+- 注:
+    - この`JLabel`は`TextLayout#getJustifiedLayout(float)`メソッドを使用して両端揃えを行った`TextLayout`を描画しているため、セルの幅が文字列幅より短くなる場合は文字が重なる
+    - デフォルトの`JLabel`のようにセル幅が足りない場合は`...`で省略する機能を実装していない
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JLabelの文字揃え](http://ateraimemo.com/Swing/JustifiedLabel.html)
