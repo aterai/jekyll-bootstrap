@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2017-08-14T15:32:42+09:00
 description: MetalLookAndFeelを適用しているJFileChooserのファイルフィルタとボタンパネルの間にJComboBoxのような横長のコンポーネントを追加します。
 image: https://drive.google.com/uc?export=view&id=1Nyb4wo_ryaaCsJEgpGBxbIlYazx3FQVFfw
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2017/09/add-jcombobox-that-selects-encoding-at.html
+    lang: en
 comments: true
 ---
 ## 概要

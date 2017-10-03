@@ -35,7 +35,12 @@ table.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`に`MouseListener`を設定し、マウスでのセルのマウスでダブルクリックイベントを取得しています。各セルはクリックで編集状態になってしまわないように、すべて編集不可にしています。
+上記のサンプルでは、`JTable`に`MouseListener`を設定し、`MouseEvent#getClickCount()`メソッドでマウスクリック数を取得してセルがダブルクリックされたかを判断しています。各セルはクリックで編集状態にならないように、すべて編集不可にしています。
+
+## 参考リンク
+- [MouseEvent#getClickCount() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/MouseEvent.html#getClickCount--)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
 - 行以外の場所をダブルクリックすると、`IndexOutOfBoundsException`が発生する不具合を修正。 -- *aterai* 2011-02-02 (水) 19:09:18

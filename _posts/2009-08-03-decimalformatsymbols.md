@@ -42,4 +42,9 @@ comments: true
 1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列を半角スペース(`U+0020`)に変更
 1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列を`----`に変更
 
+## 参考リンク
+- [DecimalFormatSymbols (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/text/DecimalFormatSymbols.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

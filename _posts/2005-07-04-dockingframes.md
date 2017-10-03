@@ -39,6 +39,7 @@ comments: true
 ## 参考リンク
 - [Swing (Archive) - how to dock two jdialogs?](https://community.oracle.com/thread/1479997)
 - [Swing (Archive) - how to catch drag event in the title bar of a jframe](https://community.oracle.com/thread/1492552)
+- [ComponentListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/ComponentListener.html)
 
 <!-- dummy comment line for breaking list -->
 

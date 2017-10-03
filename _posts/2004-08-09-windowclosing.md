@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: WindowClosing
 title: JFrameの終了をキャンセル
-tags: [JFrame, WindowListener]
+tags: [JFrame, WindowListener, JOptionPane]
 author: aterai
 pubdate: 2004-08-09T01:11:16+09:00
 description: JFrameを閉じる前に、本当に終了してよいか、終了をキャンセルするかなどを確認するダイアログを表示します。
@@ -112,23 +112,23 @@ comments: true
 ## 解説
 上記のサンプルでは、アプリケーションの終了時に、ドキュメントが保存されているかどうかで処理を変更するために、ウィンドウイベントを受け取るためのリスナーを設定しています。
 
-- `WindowAdapter#windowClosing(WindowEvent e)`
+- `WindowListener#windowClosing(WindowEvent e)`
     - システムメニューでウィンドウを閉じようとしたときに呼び出されるリスナーのメソッド
         - `OS`が`Windows`なら、<kbd>Alt+F4</kbd>キーを押す
         - タイトルバー左上にあるアイコンをクリックし、ポップアップメニューで閉じるを選択
         - タイトルバー右上の`×`ボタンをクリック
         - `JButton`や`JMenu`などをクリックした時に、対象となる`frame`の`windowClosing`を呼び出したい場合は、`frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));`
     - `frame.dispose();`では、このメソッドは呼び出されない
-- `WindowAdapter#windowClosed(WindowEvent e)`
+- `WindowListener#windowClosed(WindowEvent e)`
     - `frame.dispose()`で、ウィンドウがクローズされたときに呼び出されるリスナーのメソッド
     - `windowClosing`の後、自動的に`windowClosed`が呼び出されるのは、`WindowConstants.DISPOSE_ON_CLOSE`の場合のみ
     - このサンプルでは、`Web Start`から起動しても終了できるように、`frame.dispose()`すれば必ず呼び出されるこのメソッド中で`System.exit(0);`を使い、`JVM`ごとシャットダウンしている
-        - `Web Start`でシャットダウンする必要性については、[When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)を参考に
+        - 参考: [When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`JFrame#setDefaultCloseOperation`メソッドで、タイトルバー右上の×ボタンをクリック(=デフォルトの終了処理)し、`windowClosing`が呼ばれた後(このため`windowClosing`中で変更しても有効)の動作を設定できます(これらの動作については、`JFrame#processWindowEvent(WindowEvent)`のソースを参照)。
+`JFrame#setDefaultCloseOperation`メソッドで、タイトルバー右上の×ボタンをクリック(デフォルトの終了処理)し、`windowClosing`が呼ばれた後(このため`windowClosing`中で変更しても有効)の動作を設定できます(これらの動作については、`JFrame#processWindowEvent(WindowEvent)`のソースを参照)。
 
 - `WindowConstants.DO_NOTHING_ON_CLOSE`
     - `windowClosing`が呼ばれた後になにもしない(終了しない)
