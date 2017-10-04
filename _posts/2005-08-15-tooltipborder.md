@@ -32,4 +32,9 @@ button.setToolTipText("Test - ToolTipText1");
 ## 解説
 上記のサンプルでは、`JComponent#createToolTip()`メソッドをオーバーライドし、その中で`Border`を設定した`JToolTip`を生成しています。
 
+## 参考リンク
+- [JComponent#createToolTip() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComponent.html#createToolTip--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -50,7 +50,8 @@ comments: true
 インプットメソッドが起動中かどうかは、`Component#getInputContext#isCompositionEnabled()`メソッドで判断しています。
 
 ## 参考リンク
-- [Java Input Method Framework テクノロジ](http://docs.oracle.com/javase/jp/6/technotes/guides/imf/index.html)
+- [Java Input Method Framework](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/imf/index.html)
+- [InputContext#isCompositionEnabled() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/im/InputContext.html#isCompositionEnabled--)
 
 <!-- dummy comment line for breaking list -->
 

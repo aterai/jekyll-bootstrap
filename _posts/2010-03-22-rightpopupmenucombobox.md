@@ -37,25 +37,28 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox`の`PopupMenu`が開くとき、その位置を変更するための`PopupMenuListener`を作成し、`JComboBox#addPopupMenuListener(...)`メソッドで追加しています。
-
-- - - -
-`JComboBox`の矢印アイコンも、以下のようにして変更しています。
-
-<pre class="prettyprint"><code>combo2.setUI(new WindowsComboBoxUI() {
-  @Override protected JButton createArrowButton() {
-    JButton button = new JButton(icon) {
-      @Override public Dimension getPreferredSize() {
-        return new Dimension(14, 14);
+- `JComboBox`のドロップダウンリストである`PopupMenu`が開くとき、その位置を変更する`PopupMenuListener`を作成
+    - `JComboBox#addPopupMenuListener(...)`メソッドで追加
+- `JComboBox`の矢印アイコンも、以下のように変更
+    
+    <pre class="prettyprint"><code>combo2.setUI(new WindowsComboBoxUI() {
+      @Override protected JButton createArrowButton() {
+        JButton button = new JButton(icon) {
+          @Override public Dimension getPreferredSize() {
+            return new Dimension(14, 14);
+          }
+        };
+        button.setRolloverIcon(makeRolloverIcon(icon));
+        button.setFocusPainted(false);
+        button.setContentAreaFilled(false);
+        return button;
       }
-    };
-    button.setRolloverIcon(makeRolloverIcon(icon));
-    button.setFocusPainted(false);
-    button.setContentAreaFilled(false);
-    return button;
-  }
-});
+    });
 </code></pre>
+- * 参考リンク [#reference]
+- [PopupMenuListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/PopupMenuListener.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
 - [Bug ID: 4743225 Size of JComboBox list is wrong when list is populated via PopupMenuListener](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4743225)のせいで？、正常に動作しなくなっていたので修正。 -- *aterai* 2012-04-24 (火) 16:54:17
