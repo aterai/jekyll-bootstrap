@@ -25,6 +25,7 @@ comments: true
 ## 参考リンク
 - [Swing - disabling "rename" on JFileChooser](https://community.oracle.com/thread/1377535)
 - [JFileChooserで読み取り専用ファイルのリネームを禁止](http://ateraimemo.com/Swing/RenameIfCanWriteFileChooser.html)
+- [JDK-8021379 JFileChooser Create New Folder button enabled in write proteced directory - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8021379)
 
 <!-- dummy comment line for breaking list -->
 

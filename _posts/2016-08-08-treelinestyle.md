@@ -27,7 +27,7 @@ tree2.putClientProperty("JTree.lineStyle", "None");
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#putClientProperty("JTree.lineStyle", "Angled");`などでノード間の接続線のスタイルを変更してます。`MetalLookAndFeel`を使用している場合のみ、この指定は有効になります。
+上記のサンプルでは、`JTree#putClientProperty("JTree.lineStyle", "Angled");`などでノード間の接続線のスタイルを変更してます。この設定は`MetalLookAndFeel`を使用している場合のみ有効になります。
 
 - `Angled`(`default`)
     - ノード間を接続する水平垂直線を表示する

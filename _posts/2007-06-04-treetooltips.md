@@ -55,4 +55,8 @@ ToolTipManager.sharedInstance().registerComponent(tree);
 //tree.setToolTipText("dummy");
 </code></pre>
 
+## 参考リンク
+- [JTree#getToolTipText() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getToolTipText-java.awt.event.MouseEvent-)
+
+<!-- dummy comment line for breaking list -->
 ## コメント

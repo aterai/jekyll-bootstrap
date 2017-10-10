@@ -104,6 +104,61 @@ private void initFilterAndButton() {
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- `SwingWorker`を使って`sqlite`から`JTable`にデータを読み込むテスト
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>class LoadTask extends SwingWorker&lt;String, List&lt;Object[]&gt;&gt; {
+  private final int max;
+  private final int itemsPerPage;
+  protected LoadTask(int max, int itemsPerPage) {
+    super();
+    this.max = max;
+    this.itemsPerPage = itemsPerPage;
+  }
+  @Override public String doInBackground() {
+    File file = new File("C:/Users/(name)/AppData/Roaming/Mozilla/Firefox/Profiles/xx.default/places.sqlite");
+    String db = "jdbc:sqlite:/" + file.getAbsolutePath();
+    try (Connection conn = DriverManager.getConnection(db); Statement stat = conn.createStatement()) {
+      int current = 1;
+      int c = max / itemsPerPage;
+      int i = 0;
+      while (i &lt; c &amp;&amp; !isCancelled()) {
+        try {
+          Thread.sleep(500); //dummy
+        } catch (InterruptedException ex) {
+          //ex.printStackTrace();
+          return "Interrupted";
+        }
+        current = load(stat, current, itemsPerPage);
+        i++;
+      }
+      int surplus = max % itemsPerPage;
+      if (surplus &gt; 0) {
+        load(stat, current, surplus);
+      }
+    } catch (SQLException ex) {
+      //ex.printStackTrace();
+      return "Error";
+    }
+    return "Done";
+  }
+  private int load(Statement stat, int current, int limit) throws SQLException {
+    List&lt;Object[]&gt; result = new ArrayList&lt;&gt;(limit);
+    String q = String.format("select * from moz_bookmarks limit %d offset %d", limit, current - 1);
+    ResultSet rs = stat.executeQuery(q);
+    int i = current;
+    while (rs.next() &amp;&amp; !isCancelled()) {
+      result.add(new Object[] {i, rs.getInt("id"), rs.getString("title")});
+      i++;
+    }
+    publish(result);
+    return current + result.size();
+  }
+}
+</code></pre>
+
 ## 参考リンク
 - [RowFilterでJTableのページ分割](http://ateraimemo.com/Swing/TablePagination.html)
 

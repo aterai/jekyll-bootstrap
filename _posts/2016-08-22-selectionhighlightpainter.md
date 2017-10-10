@@ -50,6 +50,7 @@ field2.setCaret(caret);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [DefaultHighlighter.DefaultHighlightPainter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html)
 - [Rectangle Painter « Java Tips Weblog](https://tips4java.wordpress.com/2008/10/28/rectangle-painter/)
 
 <!-- dummy comment line for breaking list -->

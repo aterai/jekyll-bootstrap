@@ -40,6 +40,7 @@ am.put(DefaultEditorKit.pasteAction, beep);
 ## 参考リンク
 - [DefaultEditorKitでポップアップメニューからコピー](http://ateraimemo.com/Swing/DefaultEditorKit.html)
 - [JComponentのKeyBinding一覧を取得する](http://ateraimemo.com/Swing/KeyBinding.html)
+- [DefaultEditorKit (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultEditorKit.html)
 
 <!-- dummy comment line for breaking list -->
 

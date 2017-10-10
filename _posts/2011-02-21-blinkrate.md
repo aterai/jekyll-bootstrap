@@ -23,7 +23,7 @@ comments: true
 上記のサンプルでは、`JTextField#getCaret()`で取得した`Caret`に、`setBlinkRate(...)`メソッドでミリ秒単位の点滅間隔を設定しています。
 
 - 上: デフォルト
-- 下: `Caret#setBlinkRate(0)`と`0`を設定することで、キャレットの点滅を停止
+- 下: `Caret#setBlinkRate(0)`で点滅間隔を`0`に設定し、キャレットの点滅を停止
 
 <!-- dummy comment line for breaking list -->
 

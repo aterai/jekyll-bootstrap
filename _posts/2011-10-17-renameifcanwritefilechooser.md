@@ -50,6 +50,7 @@ comments: true
 `sun.swing.FilePane#canWrite(File)`をオーバーライドすれば、ファイル名の編集開始自体を禁止にすることもできそうですが、`MetalFileChooserUI`などの`UI`で`FilePane`が`private`になっているためかなり面倒です。
 
 ## 参考リンク
+- [BasicDirectoryModel#renameFile(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicDirectoryModel.html#renameFile-java.io.File-java.io.File-)
 - [Swing - How does the JFileChooser "readOnly" property work?](https://community.oracle.com/thread/2300004)
 - [JFileChooserを編集不可にする](http://ateraimemo.com/Swing/ROFileChooser.html)
 

@@ -35,8 +35,8 @@ comments: true
     - `SwingUtilities.windowForComponent(Component c)`は、この`getWindowAncestor`をラップしただけのメソッド
     - 親の`java.awt.Window`が返る
     - 親`Window`が無い場合は、`null`が返る
-    - 引数の`Component`自体が`Window`の場合、その`Window`のオーナウィンドウが返る
-        - オーナウィンドウが`null`の場合は、`null`が返る
+    - 引数の`Component`自体が`Window`の場合、その`Window`のオーナー`Window`が返る
+        - オーナー`Window`が`null`の場合は、`null`が返る
 - [SwingUtilities.getRoot(Component c)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SwingUtilities.html#getRoot-java.awt.Component-)
     - 親の`Component`(`java.awt.Window`または`java.awt.Applet`)が返る
         - `Window`の場合は、`c.getParent()`で見つかる最初の上位`Window`オブジェクトだが、`Applet`の場合は、`JComponent#getTopLevelAncestor()`とは異なり、最後の上位`Applet`オブジェクト

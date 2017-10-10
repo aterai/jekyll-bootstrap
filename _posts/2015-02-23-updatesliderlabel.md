@@ -48,6 +48,7 @@ slider.setLabelTable(labelTable);
 
 ## 参考リンク
 - [java - JSlider is drawn incomplete, Working with Netbeans - Stack Overflow](https://stackoverflow.com/questions/28491041/jslider-is-drawn-incomplete-working-with-netbeans)
+- [JSlider#updateLabelUIs() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSlider.html#updateLabelUIs--)
 
 <!-- dummy comment line for breaking list -->
 
