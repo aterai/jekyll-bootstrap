@@ -103,6 +103,7 @@ public class RowSorterTest extends JPanel {
 </p></blockquote>
 
 ## 参考リンク
+- [TableRowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/TableRowSorter.html)
 - [How to Use Tables](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
 - [TableSorterでJTableをソート](http://ateraimemo.com/Swing/TableSorter.html)
 - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)

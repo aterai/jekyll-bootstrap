@@ -61,7 +61,7 @@ private void filter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ニュースペーパー・スタイルレイアウトに設定した`JList`で、アイテム(セル)のタイトル文字列が`JTextField`に入力したパターンにマッチするかどうかによる表示のフィルタリングを行っています。
+上記のサンプルでは、水平[ニュースペーパー・スタイル](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#HORIZONTAL_WRAP)レイアウトに設定した`JList`で、アイテム(セル)のタイトル文字列が`JTextField`に入力したパターンにマッチするかどうかによる表示のフィルタリングを行っています。
 
 - - - -
 - `JList`デフォルトのセルを垂直方向に`1`列に並べたレイアウトで、フィルタリングを行う場合は、ヘッダを非表示にした`JTable`と`RowFilter`で代用できる

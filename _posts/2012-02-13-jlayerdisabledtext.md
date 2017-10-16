@@ -92,6 +92,7 @@ comments: true
 ## 参考リンク
 - [JCheckBoxなどが無効な状態での文字色を変更](http://ateraimemo.com/Swing/DisabledTextColor.html)
 - [JLayerで指定したコンポーネントへの入力を禁止](http://ateraimemo.com/Swing/DisableInputLayer.html)
+- [LayerUI#applyPropertyChange(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/LayerUI.html#applyPropertyChange-java.beans.PropertyChangeEvent-javax.swing.JLayer-)
 
 <!-- dummy comment line for breaking list -->
 

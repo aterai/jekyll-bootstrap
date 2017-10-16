@@ -35,6 +35,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [TreeWillExpandListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/TreeWillExpandListener.html)
 - [JTreeで展開不可のノードを設定する](http://ateraimemo.com/Swing/PreventNodeExpanding.html)
 
 <!-- dummy comment line for breaking list -->

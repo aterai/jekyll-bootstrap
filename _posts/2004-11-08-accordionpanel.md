@@ -102,7 +102,7 @@ comments: true
 - [JPanelの展開と折り畳み](http://ateraimemo.com/Swing/ExpandablePanel.html)
 - [BoxLayoutでリスト状に並べる](http://ateraimemo.com/Swing/ComponentList.html)
 - [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
-    - アニメーションさせる場合のサンプル
+    - 展開アニメーションのサンプル
 
 <!-- dummy comment line for breaking list -->
 

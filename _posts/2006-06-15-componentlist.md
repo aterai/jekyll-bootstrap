@@ -40,6 +40,11 @@ public void addComp(final JComponent comp) {
 コンポーネントの高さの合計がフレームの高さより小さい場合は、下部に余白が出来るように、最後に`Box.createVerticalGlue()`を追加しています。
 
 
+## 参考リンク
+- [Box (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/Box.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - `SpringLayout`ではなく、`BoxLayout`を使うようにサンプルを変更しました。 -- *aterai* 2006-06-26 (月) 15:34:41
 - 解説がソースと異なり、`setMinimumSize`となっていたのを`setMaximumSize`に修正。 -- *aterai* 2009-05-15 (金) 22:58:16

@@ -18,11 +18,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Image img = icon1.getImage();
 BufferedImage source = new BufferedImage(
-    img.getWidth(this), img.getHeight(this),
-    BufferedImage.TYPE_INT_ARGB);
+    img.getWidth(this), img.getHeight(this), BufferedImage.TYPE_INT_ARGB);
 Graphics g = source.createGraphics();
 g.drawImage(img, 0, 0, this);
 g.dispose();
+
 ColorConvertOp colorConvert = new ColorConvertOp(
     ColorSpace.getInstance(ColorSpace.CS_GRAY), null);
 BufferedImage destination = colorConvert.filter(source, null);
@@ -32,10 +32,10 @@ icon2 = new ImageIcon(destination);
 ## 解説
 用意したアイコンから、`BufferedImage`を作成し、これを`ColorConvertOp#filter`メソッドを使ってグレースケールに変換しています。
 
-上記のサンプルでは、各`JLabel`をクリックすると`Icon`として表示されている元画像とグレースケール画像とが切り替わるようになっています。
+上記のサンプルでは、各`JLabel`をクリックで`Icon`として表示されている元画像とグレースケール画像を切り替えています。
 
 - - - -
-以下のように`GrayFilter.createDisabledImage`を使った場合よりきれいに変換できるようです。
+以下のように`GrayFilter.createDisabledImage(...)`を使った場合よりきれいに変換できるようです。
 
 <pre class="prettyprint"><code>icon2 = new ImageIcon(GrayFilter.createDisabledImage(img));
 </code></pre>

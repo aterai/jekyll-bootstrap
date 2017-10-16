@@ -24,6 +24,11 @@ comments: true
 
 この設定を切り替えると、`LookAndFeel`によっては装飾が変化して`JFrame`自体のサイズが変化する場合があります。
 
+## 参考リンク
+- [Frame#setResizable(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Frame.html#setResizable-boolean-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - アイコン化ボタンを無効化する方法はないようですね。`JInternalFrame`ならクローズも最大化もアイコン化も全部いじれるのに。 -- *さく* 2004-08-12 (木) 15:17:30
 - なんだか無さそうですね。`JDialog`を使うか、以下のように誤魔化すか…、`LookAndFeel`を自作すれば何とかなるのかな？ -- *aterai* 2004-08-12 (木) 17:01:45

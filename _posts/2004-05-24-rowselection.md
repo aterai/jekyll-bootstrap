@@ -42,6 +42,11 @@ private String getInfo() {
 
 `ListSelectionEvent#getValueIsAdjusting()`メソッドでイベントが重複処理を起こさないように制御しています。
 
+## 参考リンク
+- [JTable#getSelectionModel() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#getSelectionModel--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - ありがとう。助かります。 -- *ごん* 2009-10-16 (金) 19:37:37
     - どうもです。 -- *aterai* 2009-10-17 (土) 00:09:01

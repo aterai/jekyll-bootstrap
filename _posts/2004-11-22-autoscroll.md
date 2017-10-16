@@ -82,7 +82,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JViewport`内の画像ラベルをマウスでドラッグすると、その移動方向に応じて自動的にスクロールします。マウスをクリックすると停止します。
+上記のサンプルでは、`JViewport`内の画像ラベルをマウスでドラッグすると、その移動方向に応じて自動的にスクロールします。自動スクロール中に画像をマウスでクリックすると移動停止します。
 
 `javax.swing.Timer`を使うことでスクロールの開始、継続、停止を行っています。
 
@@ -98,6 +98,6 @@ comments: true
 
 ## コメント
 - 猫の手スクロール風の動作に変更しました。 -- *aterai* 2007-05-24 (木) 19:16:16
-- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)と同じ動作をするように変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
+- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)と同じ動作にるよう変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
 
 <!-- dummy comment line for breaking list -->

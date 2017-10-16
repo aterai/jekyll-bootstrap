@@ -64,6 +64,7 @@ sp2.getHorizontalScrollBar().setModel(sp1.getHorizontalScrollBar().getModel());
 </code></pre>
 
 ## 参考リンク
+- [ChangeListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/ChangeListener.html)
 - [Swing (Archive) - link to scrollbar](https://community.oracle.com/thread/1502596)
 - [Swing (Archive) - Synchronizing scrollbars two scroll bars](https://community.oracle.com/thread/1484489)
 

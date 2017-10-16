@@ -76,6 +76,7 @@ class TextFieldPopupMenu extends JPopupMenu {
 
 ## 参考リンク
 - [JTextFieldでコピー、貼り付けなどを禁止](http://ateraimemo.com/Swing/ActionMap.html)
+- [DefaultEditorKit (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultEditorKit.html)
 
 <!-- dummy comment line for breaking list -->
 
