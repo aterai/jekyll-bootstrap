@@ -53,7 +53,7 @@ new DropTarget(table, DnDConstants.ACTION_COPY, dtl, true);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Windows`のエクスプローラなどからファイルを選択(複数選択可)、ドラッグ、`JTable`上にドロップで、ファイル名などを一覧表示することができます。
+上記のサンプルでは、`Windows`のファイルエクスプローラなどからファイルを選択(複数選択可)、ドラッグ、`JTable`上にドロップで、ファイル名などを一覧表示することができます。
 
 ドロップされた`DataFlavor`が、`DataFlavor.javaFileListFlavor`の場合だけ、これをファイルとして処理する`DropTargetListener`を作成しています。
 
@@ -74,8 +74,7 @@ table.setTransferHandler(new FileTransferHandler());
       if (canImport(support)) {
         JTable table = (JTable) support.getComponent();
         DefaultTableModel model = (DefaultTableModel) table.getModel();
-        for (Object o: (List) support.getTransferable().getTransferData(
-            DataFlavor.javaFileListFlavor)) {
+        for (Object o: (List) support.getTransferable().getTransferData(DataFlavor.javaFileListFlavor)) {
           if (o instanceof File) {
             File f= (File) o;
             model.addRow(new Object[] { f, f.length(), f.getAbsolutePath() });

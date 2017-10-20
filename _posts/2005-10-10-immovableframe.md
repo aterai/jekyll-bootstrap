@@ -40,6 +40,7 @@ internalframe.pack();
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTOZ803FiI/AAAAAAAAAcU/Bj1t9F8ZKqI/s800/ImmovableFrame1.png)
 
 ## 参考リンク
+- [BasicInternalFrameUI#getNorthPane() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicInternalFrameUI.html#getNorthPane--)
 - [Swing - Lock JInternalPane](https://community.oracle.com/thread/1392111)
 
 <!-- dummy comment line for breaking list -->

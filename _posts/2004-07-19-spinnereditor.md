@@ -25,8 +25,20 @@ field.setBackground(UIManager.getColor("FormattedTextField.background"));
 </code></pre>
 
 ## 解説
-上記のサンプルでは、「直接編集不可」の場合、上下ボタンで値を変更することはできますが、直接キーボードから値を入力することができないように設定しています。
 
-`JSpinner`の編集可・不可を変更するのではなく、`JSpinner`で使用するエディタから取得した`JTextField`の編集可・不可を切り替えています。
+- `Default`
+    - デフォルトの`JSpinner`
+- `spinner.setEnabled(false)`
+    - `JSpinner#setEnabled(false)`で`JSpinner`全体を編集不可に設定
+- `field.setEnabled(false)`
+    - `( (JSpinner.NumberEditor) spinner.getEditor() ).getTextField()`で`JSpinner`のテキスト入力欄を取得し、これを`JTextField#setEditable(false)`で編集不可に設定
+    - 上下ボタンで値を変更可能だが、キーボードでの値の入力は不可
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [JSpinner#getEditor() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSpinner.html#getEditor--)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

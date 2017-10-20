@@ -21,8 +21,8 @@ comments: true
 
 ## 解説
 - セルエディタで値を編集、変更
-    - `SortsOnUpdates(false)`の場合、ソートに変化なし(デフォルト)
-    - `SortsOnUpdates(true)`の場合、`CellEditor`が値をコミットした(`rowsUpdated`が呼び出された)後にソートが実行される
+    - `SortsOnUpdates(false)`の場合、ソート状態に変化なし(デフォルト)
+    - `SortsOnUpdates(true)`の場合、`CellEditor`が値をコミットした(`DefaultRowSorter#rowsUpdated(...)`メソッドが呼び出された)後にソートが実行される
 - モデルに行を追加、削除
     - `SortsOnUpdates`の値には依存せず、常にソートが実行される
 

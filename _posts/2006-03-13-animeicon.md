@@ -175,6 +175,11 @@ class AnimeIcon implements Icon, Serializable {
 }
 </code></pre>
 
+## 参考リンク
+- [Icon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/Icon.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - 色の濃い円が時計回りに回転するように変更しました。 -- *aterai* 2006-03-15 (水) 11:12:08
 - ロードインジケータと呼ぶらしい。 -- *aterai* 2007-07-11 (水) 23:49:44

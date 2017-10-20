@@ -35,6 +35,11 @@ JFileChooser fileChooser = new JFileChooser();
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JFileChooser (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - `Java 1.6.0_12`以降、デフォルトでは`Mnemonic`の表示がなくなっているようです(もしかしてバグ？)。 -- *aterai* 2009-10-09 (金) 20:01:14
     - メモ: [Bug ID: 5045878 &#91;ja&#93; extra mnemonic characters on control buttons in JFileChooser](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5045878) でも、`1.6.0`は関係なさそう…。 -- *aterai* 2009-10-09 (金) 20:16:41

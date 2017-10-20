@@ -102,7 +102,7 @@ comments: true
         - [JTableで文字列をクリックした場合だけセルを選択状態にする](http://ateraimemo.com/Swing/TableFileList.html)
         - [JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)
     - ~~ソートすると選択状態がクリアされてしまう~~
-        - `TableRowSorter`では選択状態を維持するのが標準に
+        - `TableRowSorter`では標準で選択状態を維持するようになった
         - [TableSorterでソートしても選択状態を維持](http://ateraimemo.com/Swing/SelectionKeeper.html)
     - ~~<kbd>Tab</kbd>キー、矢印キーによる選択状態の移動がおかしい~~
     - 編集不可

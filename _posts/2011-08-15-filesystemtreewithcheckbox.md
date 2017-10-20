@@ -149,7 +149,7 @@ for (File fileSystemRoot: Arrays.asList(new File("X:/"), new File("Y:/"))) {
 treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
 </code></pre>
 - いつも勉強させていただいております。チェックしたファイルまたはフォルダーのチェックマークの外し方を教えていただけませんか？ -- *Tiger* 2014-03-04 (火) 13:55:30
-    - こんばんは。マウスを使わずにチェックを外したいということですよね。このサンプルの場合、`MutableTreeNode#setUserObject(...)`でチェックを外した`new CheckBoxNode(node.file, Status.DESELECTED)`を設定し、そのあと[DefaultTreeModel#nodeChanged(...) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/javax/swing/tree/DefaultTreeModel.html#nodeChanged%28javax.swing.tree.TreeNode%29)を呼べばいいと思います。 -- *aterai* 2014-03-05 (水) 18:23:39
+    - こんばんは。マウスを使わずにチェックを外したいということですよね。このサンプルの場合、`MutableTreeNode#setUserObject(...)`でチェックを外した`new CheckBoxNode(node.file, Status.DESELECTED)`を設定し、そのあと[DefaultTreeModel#nodeChanged(...)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeModel.html#nodeChanged-javax.swing.tree.TreeNode-)メソッドを呼べばいいと思います。 -- *aterai* 2014-03-05 (水) 18:23:39
 
 <!-- dummy comment line for breaking list -->
 

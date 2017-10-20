@@ -76,7 +76,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`MouseAdapter`をオーバーライドしてマウスカーソルのあるセルを記憶し、`JList`をリペイントしてそのセルの背景色などを変更しています。
+上記のサンプルでは、`MouseAdapter`をオーバーライドしてマウスカーソルのあるセルを記憶し、そのセルの背景色などの変更を`JList#repaint(Rectangle)`メソッドで再描画しています。
 
 ## 参考リンク
 - [Swing - Highlight JTable rows on rollover](https://community.oracle.com/thread/1389010)

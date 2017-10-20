@@ -91,4 +91,9 @@ comments: true
 };
 </code></pre>
 
+## 参考リンク
+- [HierarchyListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/HierarchyListener.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
