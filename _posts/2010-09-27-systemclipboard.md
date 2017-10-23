@@ -64,6 +64,7 @@ public JComponent makeUI() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [Clipboard (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/datatransfer/Clipboard.html)
 - [Javaクリップボードメモ(Hishidama's Java Clipboard Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/clipboard.html)
 
 <!-- dummy comment line for breaking list -->

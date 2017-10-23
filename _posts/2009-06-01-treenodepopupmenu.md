@@ -47,4 +47,9 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JTree#getPathForLocation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getPathForLocation-int-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

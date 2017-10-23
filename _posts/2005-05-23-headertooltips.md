@@ -29,6 +29,7 @@ table.setTableHeader(header);
 上記のサンプルでは、`JTableHeader#getToolTipText()`メソッドをオーバーライドして、マウスカーソルの下にあるカラムヘッダの名前などを`Tooltips`として返すように設定しています。
 
 ## 参考リンク
+- [JTableHeader#getToolTipText() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/JTableHeader.html#getToolTipText-java.awt.event.MouseEvent-)
 - [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
 - [JTableのセルがクリップされている場合のみJToolTipを表示](http://ateraimemo.com/Swing/ClippedCellTooltips.html)
 
