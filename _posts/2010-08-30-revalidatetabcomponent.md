@@ -76,7 +76,10 @@ comments: true
 ## 解説
 上記のサンプルでは、タブを閉じる`JButton`を`TabComponent`に追加した`JTabbedPane`に、タブ名称を変更する`JPopupMenu`を設定しています。
 
-[How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)の`ButtonTabComponent`を使っているので、`JTabbedPane#setTitleAt(...)`と名前を変更したときに、`tabbedPane.getTabComponentAt(idx)`で取得した`JComponent`を`revalidate()`することで、文字列の長さに応じたサイズへの変更と、タブの内部レイアウトの更新を行なっています。
+- [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)の`ButtonTabComponent`を使用
+    - `JTabbedPane#setTitleAt(...)`メソッドで名前を変更したときに、`tabbedPane.getTabComponentAt(idx)`で取得した`JComponent`を`revalidate()`することで、文字列の長さに応じたサイズへの変更とタブの内部レイアウトの更新を実行
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
