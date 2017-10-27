@@ -75,7 +75,7 @@ f.setDesktopIcon(new JInternalFrame.JDesktopIcon(f) {
 
 ## 解説
 - `JInternalFrame.JDesktopIcon#getPreferredSize()`メソッドをオーバーライドし、`JInternalFrame`をアイコン化した場合の推奨サイズを変更
-    - [JInternalFrameをアイコン化した場合のサイズを変更する](http://ateraimemo.com/Swing/DesktopIconSize.html)
+    - [JInternalFrameをアイコン化した場合のサイズを変更する](https://ateraimemo.com/Swing/DesktopIconSize.html)
     - `JInternalFrame`のタイトル文字列を取得し、`SwingUtilities.computeStringWidth(...)`で文字列幅を計算する
         - `JInternalFrame`では`SwingUtilities2.stringWidth(...)`メソッドなどで省略された場合などを考慮しているが、このサンプルでは無視する
     - `ClosableButton`、`MaximizableButton`、`IconifiableButton`などの合計幅を計算する
@@ -90,7 +90,7 @@ f.setDesktopIcon(new JInternalFrame.JDesktopIcon(f) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JInternalFrameをアイコン化した場合のサイズを変更する](http://ateraimemo.com/Swing/DesktopIconSize.html)
+- [JInternalFrameをアイコン化した場合のサイズを変更する](https://ateraimemo.com/Swing/DesktopIconSize.html)
 - [JInternalFrame.JDesktopIcon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JInternalFrame.JDesktopIcon.html)
 - [java - Set JInternalFrame minimised size - Stack Overflow](https://stackoverflow.com/questions/45467212/set-jinternalframe-minimised-size/45499229#45499229)
 

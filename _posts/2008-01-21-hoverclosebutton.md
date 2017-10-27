@@ -62,8 +62,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
-- [JTabbedPaneのタブ文字列をハイライト](http://ateraimemo.com/Swing/TabTitleHighlight.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](https://ateraimemo.com/Swing/TabWithCloseButton.html)
+- [JTabbedPaneのタブ文字列をハイライト](https://ateraimemo.com/Swing/TabTitleHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

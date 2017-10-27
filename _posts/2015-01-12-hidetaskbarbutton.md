@@ -43,7 +43,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [SystemTrayにアイコンを表示](http://ateraimemo.com/Swing/SystemTray.html)
+- [SystemTrayにアイコンを表示](https://ateraimemo.com/Swing/SystemTray.html)
 - [SystemTray (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/SystemTray.html)
 
 <!-- dummy comment line for breaking list -->

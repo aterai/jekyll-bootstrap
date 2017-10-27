@@ -76,15 +76,15 @@ focusManager.addPropertyChangeListener(new PropertyChangeListener() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JWindowをマウスで移動](http://ateraimemo.com/Swing/DragWindow.html)
-- [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](http://ateraimemo.com/Swing/CustomDecoratedFrame.html)
-- [JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)
+- [JWindowをマウスで移動](https://ateraimemo.com/Swing/DragWindow.html)
+- [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](https://ateraimemo.com/Swing/CustomDecoratedFrame.html)
+- [JRootPaneにリサイズのための装飾を設定する](https://ateraimemo.com/Swing/WindowDecorationStyle.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - `JFrame`のアクティブ状態が変わったら、`JInternalFrame`の選択状態も変化するように変更。 -- *aterai* 2009-11-13 (金) 14:57:18
 - リサイズ可能？にする場合のテスト。 -- *aterai* 2010-06-10 (木) 15:07:18
-    - [JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)に移動。 -- *aterai* 2013-06-17 (月) 02:29:47
+    - [JRootPaneにリサイズのための装飾を設定する](https://ateraimemo.com/Swing/WindowDecorationStyle.html)に移動。 -- *aterai* 2013-06-17 (月) 02:29:47
 
 <!-- dummy comment line for breaking list -->

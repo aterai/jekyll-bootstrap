@@ -68,7 +68,7 @@ c.gridy   = 1; p2.add(tf4, c);
 
 ## 参考リンク
 - [GroupLayout (Java Platform SE 8 )](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/GroupLayout.html)
-- [GridBagLayoutの使用](http://ateraimemo.com/Swing/GridBagLayout.html)
+- [GridBagLayoutの使用](https://ateraimemo.com/Swing/GridBagLayout.html)
 - [GroupLayoutの考え方２ - ばかの一つ覚え。](http://d.hatena.ne.jp/jawagenjin/20080127/1201444435)
     - `GroupLayout`のイメージが、図で分かりやすく解説されている
 

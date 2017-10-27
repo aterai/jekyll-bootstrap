@@ -87,17 +87,17 @@ comments: true
 `javax.swing.Timer`を使うことでスクロールの開始、継続、停止を行っています。
 
 - - - -
-`JTextPane`で文字列を挿入したときに、最後まで自動スクロールしたい場合は、[JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)を参考にしてください。
+`JTextPane`で文字列を挿入したときに、最後まで自動スクロールしたい場合は、[JTextPaneで最終行に移動](https://ateraimemo.com/Swing/CaretPosition.html)を参考にしてください。
 
 ## 参考リンク
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
-- [JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)
+- [JTextPaneで最終行に移動](https://ateraimemo.com/Swing/CaretPosition.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 猫の手スクロール風の動作に変更しました。 -- *aterai* 2007-05-24 (木) 19:16:16
-- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)と同じ動作にるよう変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
+- ドラッグ中は、[JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)と同じ動作にるよう変更しました。 -- *aterai* 2011-12-22 (木) 18:38:02
 
 <!-- dummy comment line for breaking list -->

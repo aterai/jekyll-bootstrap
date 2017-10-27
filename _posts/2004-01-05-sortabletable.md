@@ -68,9 +68,9 @@ class ColumnComparator implements Comparator {
 上記のサンプルでは、カラムヘッダをクリックすることでソートできます。右クリックからポップアップメニューで、行を追加、削除したり、セルをダブルクリックして中身を色々編集するなどしてソートを試してみてください。
 
 - メモ
-    - 複数の列をキーにしてソートしたい場合は、[TableSorterでJTableをソート](http://ateraimemo.com/Swing/TableSorter.html)を参照
+    - 複数の列をキーにしてソートしたい場合は、[TableSorterでJTableをソート](https://ateraimemo.com/Swing/TableSorter.html)を参照
     - `JDK 1.6.0`で、`JTable`のソートが標準機能として追加された
-        - [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
+        - [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -85,7 +85,7 @@ class ColumnComparator implements Comparator {
 - カラムをドラッグして移動したとき、矢印が残ってしまうようです。 ~~元からかデグレードしたのかちょっと不明です。~~ 元からのようです。 -- *aterai* 2005-02-25 19:55:01 (金)
 - 修正できたかな？ ~~確認中。~~ 確認済み。 -- *aterai* 2005-02-25 20:30:57 (金)
 - `Swing`初心者の為このサイトのソースを参考に勉強させて頂いています。 -- *ao* 2005-03-11 14:37:03 (金)
-- 行を削除した後にソートを降順ソート、昇順ソート、初期状態と３回ソートを行うと削除した行が元に戻ってしまうようです。`TestModel.java`の`removeRow`に`list.remove(index);`を追加したらうまくいきましたが、本当にこれでよいのでしょうか？-- [ao](http://ateraimemo.com/ao.html) 2005-03-11 14:40:10 (金)
+- 行を削除した後にソートを降順ソート、昇順ソート、初期状態と３回ソートを行うと削除した行が元に戻ってしまうようです。`TestModel.java`の`removeRow`に`list.remove(index);`を追加したらうまくいきましたが、本当にこれでよいのでしょうか？-- [ao](https://ateraimemo.com/ao.html) 2005-03-11 14:40:10 (金)
 - ~~いいと思います。バグなので修正しておきますm(_ _m)。~~ あ、ダメみたいです。以下のように行番号をキーにして削除しないとソート中は別の行を削除してしまいます。 -- *aterai* 2005-03-11 19:13:45 (金)
 
 <!-- dummy comment line for breaking list -->
@@ -99,7 +99,7 @@ class ColumnComparator implements Comparator {
 </code></pre>
 
 - 初期状態に戻すのを止めたほうがいいかもしれません(エクスプローラも初期状態に戻したりしないし)。わざわざ`Vector`で`list`を別に持つ必要も、キーとして番号の列を作る必要もなくなります。 -- *aterai* 2005-03-11 19:23:16 (金)
-- こちらのサンプルでは初期状態に戻すのを止めてみました。初期状態戻し有りにしたい場合は、[TableSorterでJTableをソート](http://ateraimemo.com/Swing/TableSorter.html)の方を参考にしてみてください。 -- *aterai* 2005-03-11 21:08:34 (金)
+- こちらのサンプルでは初期状態に戻すのを止めてみました。初期状態戻し有りにしたい場合は、[TableSorterでJTableをソート](https://ateraimemo.com/Swing/TableSorter.html)の方を参考にしてみてください。 -- *aterai* 2005-03-11 21:08:34 (金)
 - ありがとうございます！ -- *G* 2012-07-12 (木) 14:05:48
     - どうもです。関係ない話ですが、元サンプル(`SortableTableExample`)が公開されているところを探してリンクを修正する予定です。 -- *aterai* 2012-07-13 (金) 17:35:04
 

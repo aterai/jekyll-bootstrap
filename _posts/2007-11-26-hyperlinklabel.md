@@ -91,7 +91,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 
 - - - -
 - 注: このサンプルでは、クリックされた時に実行するイベントは`beep`音を鳴らすだけのダミー
-- リンクをブラウザで開く場合は、[Desktopでブラウザを起動](http://ateraimemo.com/Swing/Desktop.html)などを参照
+- リンクをブラウザで開く場合は、[Desktopでブラウザを起動](https://ateraimemo.com/Swing/Desktop.html)などを参照
 
 <!-- dummy comment line for breaking list -->
 
@@ -99,8 +99,8 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 - [JEditorPane (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JEditorPane.html)
 - [Link Buttons in Swing - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/link_buttons_in_swing)
     - `JButton`+`MatteBorder`でリンクを表現するサンプルがある
-- [TransferHandlerでHyperlinkをブラウザにドロップ](http://ateraimemo.com/Swing/DraggableLinkButton.html)
-- [Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html)
+- [TransferHandlerでHyperlinkをブラウザにドロップ](https://ateraimemo.com/Swing/DraggableLinkButton.html)
+- [Htmlを使ったJLabelとJEditorPaneの無効化](https://ateraimemo.com/Swing/DisabledHtmlLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

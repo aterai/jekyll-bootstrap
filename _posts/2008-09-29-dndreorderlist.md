@@ -120,13 +120,13 @@ list.setDragEnabled(true);
 
 <!-- dummy comment line for breaking list -->
 - - - -
-[JListの項目をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDList.html)とは異なり、複数アイテムを選択して`Drag&Drop`による移動が可能になっています。
+[JListの項目をドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDList.html)とは異なり、複数アイテムを選択して`Drag&Drop`による移動が可能になっています。
 
 ## 参考リンク
 - [Drag and Drop and Data Transfer: Examples (The Java™ Tutorials > Creating a GUI with JFC/Swing > Drag and Drop and Data Transfer)](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/index.html#BasicDnD)
     - [ListTransferHandler.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/dnd/DropDemoProject/src/dnd/ListTransferHandler.java)
-- [JListの項目をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDList.html)
-- [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://ateraimemo.com/Swing/DragSelectDropReordering.html)
+- [JListの項目をドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDList.html)
+- [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](https://ateraimemo.com/Swing/DragSelectDropReordering.html)
 
 <!-- dummy comment line for breaking list -->
 

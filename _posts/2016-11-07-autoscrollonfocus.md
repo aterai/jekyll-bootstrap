@@ -54,7 +54,7 @@ add(new JScrollPane(box));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextFieldを編集不可のJTextPaneに追加する](http://ateraimemo.com/Swing/TextFieldOnReadOnlyTextPane.html)
+- [JTextFieldを編集不可のJTextPaneに追加する](https://ateraimemo.com/Swing/TextFieldOnReadOnlyTextPane.html)
     - 同様に`JComponent#scrollRectToVisible(...)`を使用しているが、こちらは`FocusListener`を各`JTextField`に設定している
 - [Scrolling a Form « Java Tips Weblog](https://tips4java.wordpress.com/2010/05/09/scrolling-a-form/)
 

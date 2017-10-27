@@ -70,7 +70,7 @@ comments: true
             });
 </code></pre>
         - * 参考リンク [#reference]
-- [JTableHeaderにJPopupMenuを追加してソート](http://ateraimemo.com/Swing/RowSorterPopupMenu.html)
+- [JTableHeaderにJPopupMenuを追加してソート](https://ateraimemo.com/Swing/RowSorterPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -144,7 +144,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- *aterai* 2014-05-14 (水) 16:05:32
+- 可視領域の幅の表示を考えると`ArrowButton`は不要なので、[JScrollBarを半透明にする](https://ateraimemo.com/Swing/TranslucentScrollBar.html)のような外見の`JScrollBar`を使用した方が良いかもしれない。 -- *aterai* 2014-05-14 (水) 16:05:32
 - サンプルの追加と、スクリーンショットの更新。 -- *aterai* 2014-05-27 (火) 16:12:38
 
 <!-- dummy comment line for breaking list -->

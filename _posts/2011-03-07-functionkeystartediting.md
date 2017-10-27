@@ -39,7 +39,7 @@ comments: true
 
 - `table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`
     - キー入力(<kbd>F2</kbd>は除く)によるセルの編集開始を禁止
-    - [JTableでキー入力によるセル編集開始を禁止する](http://ateraimemo.com/Swing/PreventStartCellEditing.html)
+    - [JTableでキー入力によるセル編集開始を禁止する](https://ateraimemo.com/Swing/PreventStartCellEditing.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -52,7 +52,7 @@ comments: true
 
 ## 参考リンク
 - [Swing - JTable starts editing when F3 is pressed - howto disable?](https://community.oracle.com/thread/1350192)
-- [JTableでキー入力によるセル編集開始を禁止する](http://ateraimemo.com/Swing/PreventStartCellEditing.html)
+- [JTableでキー入力によるセル編集開始を禁止する](https://ateraimemo.com/Swing/PreventStartCellEditing.html)
 
 <!-- dummy comment line for breaking list -->
 

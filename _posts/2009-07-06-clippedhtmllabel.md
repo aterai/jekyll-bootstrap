@@ -79,7 +79,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
+- [JTableのセルにHyperlinkを表示](https://ateraimemo.com/Swing/HyperlinkInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

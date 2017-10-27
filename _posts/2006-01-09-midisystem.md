@@ -43,9 +43,9 @@ startButton = new JButton(new AbstractAction("start") {
 - [MidiSystem (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/sound/midi/MidiSystem.html)
 - [Javaでゲーム - サウンドメモ](http://muimi.com/j/game/sound/)
 - [クラシックMIDI ラインムジーク](http://classic-midi.com/)
-- [Wavファイルの演奏](http://ateraimemo.com/Swing/Sound.html)
-- [Beep音を鳴らす](http://ateraimemo.com/Swing/Beep.html)
-- [AuditoryCuesでイベント音を設定する](http://ateraimemo.com/Swing/AuditoryCues.html)
+- [Wavファイルの演奏](https://ateraimemo.com/Swing/Sound.html)
+- [Beep音を鳴らす](https://ateraimemo.com/Swing/Beep.html)
+- [AuditoryCuesでイベント音を設定する](https://ateraimemo.com/Swing/AuditoryCues.html)
 
 <!-- dummy comment line for breaking list -->
 

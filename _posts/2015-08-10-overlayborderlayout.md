@@ -54,21 +54,21 @@ p.add(new JScrollPane(tree));
     - 検索ダイアログの幅は、`BorderLayout`の`BorderLayout.NORTH`配置のように親コンポーネントの幅まで拡張せず、`FlowLayout`などと同様に`PreferredSize`固定
     - `UIManager.getInt("ScrollBar.width")`で取得したスクロールバーの幅だけ右側に余白を作成して検索ダイアログを配置
 - `Timer`を使った検索ダイアログ位置変更によるスライドインアニメーション
-    - 参考: [JToolBarの半透明化とアニメーション](http://ateraimemo.com/Swing/TranslucentToolBar.html)、[JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
+    - 参考: [JToolBarの半透明化とアニメーション](https://ateraimemo.com/Swing/TranslucentToolBar.html)、[JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
 - `JTree`を配置した`JScrollPane`と検索用ダイアログ(`JPanel`)といった子コンポーネント同士がオーバーラップするので、親の`JPanel`の`isOptimizedDrawingEnabled()`が`false`を返すようにオーバーライドする必要がある
-    - 参考: [JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)
+    - 参考: [JScrollBarを半透明にする](https://ateraimemo.com/Swing/TranslucentScrollBar.html)
 - 検索用ダイアログが開くと内部の`JTextField`にフォーカスが移動するように`AncestorListener`を設定
-    - 参考: [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
+    - 参考: [JOptionPaneのデフォルトフォーカス](https://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
 - `JTree`のノード検索
-    - 参考: [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+    - 参考: [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)
 - <kbd>Ctrl+F</kbd>で検索用ダイアログの表示非表示切り替え、<kbd>Esc</kbd>で検索用ダイアログを閉じる、<kbd>Enter</kbd>で`JTree`のノードを検索
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)
-- [JOptionPaneのデフォルトフォーカス](http://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
-- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+- [JScrollBarを半透明にする](https://ateraimemo.com/Swing/TranslucentScrollBar.html)
+- [JOptionPaneのデフォルトフォーカス](https://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
+- [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 

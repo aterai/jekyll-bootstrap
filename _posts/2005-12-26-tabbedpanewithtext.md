@@ -84,7 +84,7 @@ class TopRightCornerLabelLayerUI extends LayerUI&lt;JComponent&gt; {
 
 ## 参考リンク
 - [Swing - JTabbedPane with non-tabbed text](https://community.oracle.com/thread/1392495)
-- [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
+- [JTabbedPaneの余白にJCheckBoxを配置](https://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
 
 <!-- dummy comment line for breaking list -->
 

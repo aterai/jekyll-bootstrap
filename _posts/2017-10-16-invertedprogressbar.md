@@ -49,18 +49,18 @@ progress.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
 </code></pre>
     - 右から`1`番目: `JLayer`で表示を上下反転した垂直スクロールバー
         - `JProgressBar#paintComponent(...)`をオーバーライドした場合と同様に進捗文字列も上下反転してしまう
-        - [JProgressBarの文字列をJLayerを使って表示する](http://ateraimemo.com/Swing/ProgressStringLayer.html)のように、別の`JLabel`などで進捗文字列を描画すれば回避可能
+        - [JProgressBarの文字列をJLayerを使って表示する](https://ateraimemo.com/Swing/ProgressStringLayer.html)のように、別の`JLabel`などで進捗文字列を描画すれば回避可能
 - その他
     - 以下のようにノブやメモリを非表示、かつ操作不可に設定し、`JSlider#setInverted(true)`で描画を反転した、`JSlider`で代用する方法もある
-        - [JSliderのスタイルを変更する](http://ateraimemo.com/Swing/GradientTrackSlider.html)
-        - [MouseListenerなどを削除してコンポーネントの入力操作を制限する](http://ateraimemo.com/Swing/UninstallListeners.html)
-        - [JSliderの順序を反転](http://ateraimemo.com/Swing/InvertedSlider.html)
+        - [JSliderのスタイルを変更する](https://ateraimemo.com/Swing/GradientTrackSlider.html)
+        - [MouseListenerなどを削除してコンポーネントの入力操作を制限する](https://ateraimemo.com/Swing/UninstallListeners.html)
+        - [JSliderの順序を反転](https://ateraimemo.com/Swing/InvertedSlider.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Component#setComponentOrientation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Component.html#setComponentOrientation-java.awt.ComponentOrientation-)
-- [JSliderの順序を反転](http://ateraimemo.com/Swing/InvertedSlider.html)
+- [JSliderの順序を反転](https://ateraimemo.com/Swing/InvertedSlider.html)
 
 <!-- dummy comment line for breaking list -->
 

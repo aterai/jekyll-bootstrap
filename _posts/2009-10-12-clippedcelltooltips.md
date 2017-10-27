@@ -72,8 +72,8 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTableHeaderのTooltipsを列ごとに変更](http://ateraimemo.com/Swing/HeaderTooltips.html)
-- [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
+- [JTableHeaderのTooltipsを列ごとに変更](https://ateraimemo.com/Swing/HeaderTooltips.html)
+- [JTableのTooltipsを行ごとに変更](https://ateraimemo.com/Swing/RowTooltips.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -90,7 +90,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JComboBoxのドロップダウンリスト中にあるアイテムの状態を更新する](http://ateraimemo.com/Swing/UpdateComboBoxItem.html)
+- [JComboBoxのドロップダウンリスト中にあるアイテムの状態を更新する](https://ateraimemo.com/Swing/UpdateComboBoxItem.html)
 
 <!-- dummy comment line for breaking list -->
 

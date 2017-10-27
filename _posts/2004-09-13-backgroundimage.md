@@ -33,9 +33,9 @@ comments: true
 上記のサンプルでは、`JPanel#setOpaque(false)`と背景を描画しないように設定したパネルで、`JPanel#paintComponent(Graphics)`メソッドをオーバーライドし、ここで`Image`を順番に並べて描画しています。
 
 ## 参考リンク
-- [TexturePaintを使って背景に画像を表示](http://ateraimemo.com/Swing/TexturePaint.html)
+- [TexturePaintを使って背景に画像を表示](https://ateraimemo.com/Swing/TexturePaint.html)
     - 同様に画像から`TexturePaint`を作成してタイル状に並べて表示
-- [JTextAreaの背景に画像を表示](http://ateraimemo.com/Swing/CentredBackgroundBorder.html)
+- [JTextAreaの背景に画像を表示](https://ateraimemo.com/Swing/CentredBackgroundBorder.html)
     - ひとつの画像をパネル中央に表示
 
 <!-- dummy comment line for breaking list -->

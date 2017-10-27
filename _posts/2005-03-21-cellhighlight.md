@@ -94,7 +94,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JListのセルをカーソル移動でロールオーバー](http://ateraimemo.com/Swing/RollOverListener.html)
+- [JListのセルをカーソル移動でロールオーバー](https://ateraimemo.com/Swing/RollOverListener.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -34,12 +34,12 @@ panel.setBorder(BorderFactory.createTitledBorder(title));
     - `TitledBorder#paintBorder(...)`をオーバーライドしてアイコンを描画
     - タイトル文字列に半角空白で余白を作成し、位置を決め打ちでアイコンを描画
 - `ComponentTitledBorder`
-    - [BorderにJComponentを配置](http://ateraimemo.com/Swing/ComponentTitledBorder.html)からマウスリスナーなどを削除し、アイコンを追加した`JLabel`を適用
+    - [BorderにJComponentを配置](https://ateraimemo.com/Swing/ComponentTitledBorder.html)からマウスリスナーなどを削除し、アイコンを追加した`JLabel`を適用
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [BorderにJComponentを配置](http://ateraimemo.com/Swing/ComponentTitledBorder.html)
+- [BorderにJComponentを配置](https://ateraimemo.com/Swing/ComponentTitledBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

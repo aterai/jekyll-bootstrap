@@ -41,7 +41,7 @@ sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
 
 ## 参考リンク
 - [DefaultRowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultRowSorter.html)
-- [JTableHeaderのカラムを選択不可にする](http://ateraimemo.com/Swing/DisabledHeader.html)
+- [JTableHeaderのカラムを選択不可にする](https://ateraimemo.com/Swing/DisabledHeader.html)
 
 <!-- dummy comment line for breaking list -->
 

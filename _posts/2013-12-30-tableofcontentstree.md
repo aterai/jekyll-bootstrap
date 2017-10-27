@@ -199,7 +199,7 @@ comments: true
 
 ## 参考リンク
 - [JTree cell width question | Oracle Forums](https://community.oracle.com/thread/1357473)
-- [Swing/AutoChapterNumberingTreeNode](http://ateraimemo.com/Swing/AutoChapterNumberingTreeNode.html)
+- [Swing/AutoChapterNumberingTreeNode](https://ateraimemo.com/Swing/AutoChapterNumberingTreeNode.html)
 
 <!-- dummy comment line for breaking list -->
 

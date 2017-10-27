@@ -30,13 +30,13 @@ table.setTableHeader(header);
 
 ## 参考リンク
 - [JTableHeader#getToolTipText() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/JTableHeader.html#getToolTipText-java.awt.event.MouseEvent-)
-- [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
-- [JTableのセルがクリップされている場合のみJToolTipを表示](http://ateraimemo.com/Swing/ClippedCellTooltips.html)
+- [JTableのTooltipsを行ごとに変更](https://ateraimemo.com/Swing/RowTooltips.html)
+- [JTableのセルがクリップされている場合のみJToolTipを表示](https://ateraimemo.com/Swing/ClippedCellTooltips.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 文字列がクリップされている場合だけ、`JToolTip`を表示する -- *aterai* 2009-10-07 (水) 01:00:19
-    - [JTableのセルがクリップされている場合のみJToolTipを表示](http://ateraimemo.com/Swing/ClippedCellTooltips.html)に移動 -- *aterai* 2009-10-12 (月) 17:43:41
+    - [JTableのセルがクリップされている場合のみJToolTipを表示](https://ateraimemo.com/Swing/ClippedCellTooltips.html)に移動 -- *aterai* 2009-10-12 (月) 17:43:41
 
 <!-- dummy comment line for breaking list -->

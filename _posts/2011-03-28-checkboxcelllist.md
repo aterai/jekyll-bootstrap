@@ -147,9 +147,9 @@ comments: true
 
 - 右: `JTree`
     - `JCheckBox`を継承する`TreeCellRenderer`を設定
-        - [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)で作成したセルレンダラーを使用
+        - [JTreeの葉ノードをJCheckBoxにする](https://ateraimemo.com/Swing/CheckBoxNodeTree.html)で作成したセルレンダラーを使用
     - `JTree#setRootVisible(false)`でルートノードを非表示に設定
-        - [JTreeのルートノードを非表示に設定する](http://ateraimemo.com/Swing/TreeRootVisible.html)
+        - [JTreeのルートノードを非表示に設定する](https://ateraimemo.com/Swing/TreeRootVisible.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -214,8 +214,8 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
 </code></pre>
 
 ## 参考リンク
-- [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)
-- [JTreeのルートノードを非表示に設定する](http://ateraimemo.com/Swing/TreeRootVisible.html)
+- [JTreeの葉ノードをJCheckBoxにする](https://ateraimemo.com/Swing/CheckBoxNodeTree.html)
+- [JTreeのルートノードを非表示に設定する](https://ateraimemo.com/Swing/TreeRootVisible.html)
 
 <!-- dummy comment line for breaking list -->
 

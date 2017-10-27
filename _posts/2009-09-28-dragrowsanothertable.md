@@ -119,10 +119,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`1`つの`JTable`内で行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://ateraimemo.com/Swing/DnDReorderTable.html)を元に、複数`JTable`間で行移動が可能になるよう`TableRowTransferHandler`を拡張しています。
+上記のサンプルでは、`1`つの`JTable`内で行の並べ替えを行う[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](https://ateraimemo.com/Swing/DnDReorderTable.html)を元に、複数`JTable`間で行移動が可能になるよう`TableRowTransferHandler`を拡張しています。
 
 - - - -
-以下のように、`JTable#setFillsViewportHeight(true)`で[JTable自体の高さを拡張](http://ateraimemo.com/Swing/FillsViewportHeight.html)しておかないと、`JTable`が空の状態でドロップが不可になります。
+以下のように、`JTable#setFillsViewportHeight(true)`で[JTable自体の高さを拡張](https://ateraimemo.com/Swing/FillsViewportHeight.html)しておかないと、`JTable`が空の状態でドロップが不可になります。
 
 <pre class="prettyprint"><code>TransferHandler handler = new TableRowTransferHandler();
 table.getSelectionModel().setSelectionMode(
@@ -139,8 +139,8 @@ table.setFillsViewportHeight(true);
 また、このサンプルでは、各`JTable`に`TableRowSorter`などが設定され、ソートされた状態での並べ替えは想定していません。
 
 ## 参考リンク
-- [JTableの行をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTable.html)
-- [TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](http://ateraimemo.com/Swing/DnDReorderTable.html)
+- [JTableの行をドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDTable.html)
+- [TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](https://ateraimemo.com/Swing/DnDReorderTable.html)
 
 <!-- dummy comment line for breaking list -->
 

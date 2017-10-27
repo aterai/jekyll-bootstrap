@@ -89,7 +89,7 @@ comments: true
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 - [タッチ操作に対応した画像ビューワーをJavaScriptで作るならD3.jsが便利 - てっく煮ブログ](http://tech.nitoyon.com/ja/blog/2013/12/13/touch-viewer/)
 - [CanvasでAffine変換で大いにはまる（数学的センスが足りなかった・・・） - torutkの日記](http://d.hatena.ne.jp/torutk/20140415/p1)
-- [JScrollPane内に配置したJPanelをマウスで拡大、縮小、移動する](http://ateraimemo.com/Swing/ZoomAndPanPanel.html)
+- [JScrollPane内に配置したJPanelをマウスで拡大、縮小、移動する](https://ateraimemo.com/Swing/ZoomAndPanPanel.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -179,7 +179,7 @@ public class TestJLayeredPane1 extends JFrame {
 `JLayeredPane`に`createPanel(int i)`で作った付箋紙の部品を`add`し、マウスリスナーでクリックやドラッグを検出しています。
 
 ## 参考リンク
-- [JPanelの背景に画像を並べる](http://ateraimemo.com/Swing/BackgroundImage.html)
+- [JPanelの背景に画像を並べる](https://ateraimemo.com/Swing/BackgroundImage.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 
 <!-- dummy comment line for breaking list -->

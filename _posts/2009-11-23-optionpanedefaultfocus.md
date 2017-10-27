@@ -43,7 +43,7 @@ if (result == JOptionPane.OK_OPTION) {
 
 - 右上
     - `JOptionPane#createDialog(...)`で`JDialog`を取得し、`WindowListener#windowOpened`で、`textField.requestFocusInWindow();`
-    - [Windowを開いたときのフォーカスを指定](http://ateraimemo.com/Swing/DefaultFocus.html)など
+    - [Windowを開いたときのフォーカスを指定](https://ateraimemo.com/Swing/DefaultFocus.html)など
 
 <!-- dummy comment line for breaking list -->
 
@@ -99,7 +99,7 @@ if (result == JOptionPane.OK_OPTION) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Windowを開いたときのフォーカスを指定](http://ateraimemo.com/Swing/DefaultFocus.html)
+- [Windowを開いたときのフォーカスを指定](https://ateraimemo.com/Swing/DefaultFocus.html)
 - [Swing - Input focus](https://community.oracle.com/thread/1354218)
 
 <!-- dummy comment line for breaking list -->

@@ -193,12 +193,12 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 - [Creating Modal Internal Frames -- Approach 1 and Approach 2](http://web.archive.org/web/20090803142839/http://java.sun.com/developer/JDCTechTips/2001/tt1220.html)
 - [How to Use Root Panes](https://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
-    - [Cursorを砂時計に変更](http://ateraimemo.com/Swing/WaitCursor.html)
+    - [Cursorを砂時計に変更](https://ateraimemo.com/Swing/WaitCursor.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ~~[JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html)と、同様に`GlassPane`が`Ubuntu`(`GNOME`)などで半透明にならない場合があります。~~ -- *aterai* 2007-10-15 (月) 13:16:07
+- ~~[JInternalFrameを半透明にする](https://ateraimemo.com/Swing/TransparentFrame.html)と、同様に`GlassPane`が`Ubuntu`(`GNOME`)などで半透明にならない場合があります。~~ -- *aterai* 2007-10-15 (月) 13:16:07
     - <kbd>Alt+2</kbd>で開いた場合、`JInternalFrame`に`GlassPane`を乗せるのではなく、直接`JDesktopPane`の`JLayeredPane.MODAL_LAYER`に追加するように変更しました。 -- *aterai* 2007-10-16 (火) 17:31:50
 - メモ: [Alexander Potochkin's Blog: Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)のサンプルでは、`Mnemonic`もちゃんとブロックできているようなので、「あとで調べる & 参考にする」こと。 -- *aterai* 2008-01-25 (金) 17:28:21
 - `Mnemonic`を数字キー(<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>)に変更 -- *aterai* 2008-04-25 (金) 20:51:49

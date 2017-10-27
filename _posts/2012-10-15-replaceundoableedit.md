@@ -95,7 +95,7 @@ comments: true
 - [Java Swing「UndoManager」メモ(Hishidama's Swing-UndoManager Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/UndoManager.html)
 - [Java Swingで複数のJTextFieldに対してUndo、Redoを行う（その2）－解決編 kyoはパソコンMaster or Slave?/ウェブリブログ](http://kyopc.at.webry.info/201007/article_1.html)
 - [バカが征く on Rails 2010年03月16日()](http://bakagaiku.hsbt.org/entry/20100316)
-- [UndoManagerでJTextFieldのUndo、Redoを行う](http://ateraimemo.com/Swing/UndoManager.html)
+- [UndoManagerでJTextFieldのUndo、Redoを行う](https://ateraimemo.com/Swing/UndoManager.html)
 
 <!-- dummy comment line for breaking list -->
 

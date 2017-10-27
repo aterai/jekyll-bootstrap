@@ -64,12 +64,12 @@ editor2.setFont(UIManager.getFont("Label.font"));
 </code></pre>
 
 - - - -
-`Html`レンダリングを無効化して、タグを文字列として表示する場合は、[JLabelなどのHtmlレンダリングを無効化](http://ateraimemo.com/Swing/HtmlDisable.html)を参考にしてください。
+`Html`レンダリングを無効化して、タグを文字列として表示する場合は、[JLabelなどのHtmlレンダリングを無効化](https://ateraimemo.com/Swing/HtmlDisable.html)を参考にしてください。
 
 ## 参考リンク
 - [JDK-4783068 Components with HTML text should gray out the text when disabled - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4783068)
 - [Swing - JLabel with html tag can not be disabled or setForegroud?!](https://community.oracle.com/thread/1377943)
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](https://ateraimemo.com/Swing/HyperlinkLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

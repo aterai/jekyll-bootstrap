@@ -36,7 +36,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JFileChooserのPlacesBarを非表示にする](http://ateraimemo.com/Swing/NoPlacesBarFileChooser.html)
+- [JFileChooserのPlacesBarを非表示にする](https://ateraimemo.com/Swing/NoPlacesBarFileChooser.html)
 - [JDK-8183529 JFilleChooser in "Detail view" does not change the Language of the column headings - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8183529)
 
 <!-- dummy comment line for breaking list -->

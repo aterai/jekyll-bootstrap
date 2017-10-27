@@ -46,7 +46,7 @@ String html3 = "&lt;html&gt;&lt;table " + TS3 + "&gt;" + "&lt;tr&gt;" + TD3 + TD
 
 ## 参考リンク
 - [java - 1 pixel table border in JTextPane using HTML - Stack Overflow](https://stackoverflow.com/questions/3355469/1-pixel-table-border-in-jtextpane-using-html)
-- [BasicStrokeで指定した辺の描画を行うBorderを作成する](http://ateraimemo.com/Swing/StrokeMatteBorder.html)
+- [BasicStrokeで指定した辺の描画を行うBorderを作成する](https://ateraimemo.com/Swing/StrokeMatteBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

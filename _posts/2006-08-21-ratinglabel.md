@@ -56,7 +56,7 @@ class SelectedImageFilter extends RGBImageFilter {
 
 ## コメント
 - 素晴しい！：）--  2006-08-23 (水) 17:34:40
-    - どうもです。 -- [aterai](http://ateraimemo.com/aterai.html)
+    - どうもです。 -- [aterai](https://ateraimemo.com/aterai.html)
 - メモ: 一般的？には`Rating Bar`と言うみたいです。[Masuga Design » Unobtrusive AJAX Star Rating Bar](http://www.masugadesign.com/the-lab/scripts/unobtrusive-ajax-star-rating-bar/) -- *aterai* 2006-11-07 (火) 12:38:34
 - アイコンを変更、アイコンの間隔を設定 -- *aterai* 2008-10-20 (月) 18:20:50
 - スクリーンショットを更新 -- *aterai* 2008-11-25 (火) 11:19:25

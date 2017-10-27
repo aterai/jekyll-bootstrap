@@ -39,7 +39,7 @@ public static float getSizeOfText() {
 
 - 例: `Medium-125%`の場合
     - `ContentPane`のサイズを`(320 * 1.25, 240 * 1.25)`の`(400, 300)`になるよう、`getPreferredSize()`をオーバーライド
-    - [UIManagerで使用するFontを統一](http://ateraimemo.com/Swing/FontChange.html)で、すべてのコンポーネントのフォントサイズを元の`1.25`倍に変更
+    - [UIManagerで使用するFontを統一](https://ateraimemo.com/Swing/FontChange.html)で、すべてのコンポーネントのフォントサイズを元の`1.25`倍に変更
     - `JTree`の行の高さは、`JTree#isFixedRowHeight()`の場合のみ、元の`1.25`倍に変更
     - `JTable`の行の高さは、`LookAndFeel`依存で一定で、フォントサイズを変更しても追従しないので、`table.setRowHeight( (int) (table.getRowHeight() * getSizeOfText() ) );`として、自前で`1.25`倍に変更
         
@@ -68,7 +68,7 @@ public static float getSizeOfText() {
 
 ## 参考リンク
 - [Toolkit#getScreenResolution() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#getScreenResolution--)
-- [UIManagerで使用するFontを統一](http://ateraimemo.com/Swing/FontChange.html)
+- [UIManagerで使用するFontを統一](https://ateraimemo.com/Swing/FontChange.html)
 - [JDK-8147440 HiDPI (Windows): Swing components have incorrect sizes after changing display resolution - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8147440)
 - [JDK-8174845 Bad scaling on Windows with large fonts with Java 9ea - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8174845)
 - [JDK-8176883 Enable antialiasing for Metal L&F icons on HiDPI display - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8176883)

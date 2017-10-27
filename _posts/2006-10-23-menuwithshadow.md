@@ -74,7 +74,7 @@ contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 - [Java Swing Hacks #11 ドロップシャドウ付きのメニューを作る](http://www.oreilly.co.jp/books/4873112788/toc.html)
 - [JGoodies | We make Java look good and work well](http://www.jgoodies.com/)
     - `contrib.com.jgoodies.looks.common.ShadowPopupFactory`
-- [JPopupMenuに半透明の影を付ける](http://ateraimemo.com/Swing/DropShadowPopup.html)
+- [JPopupMenuに半透明の影を付ける](https://ateraimemo.com/Swing/DropShadowPopup.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -116,8 +116,8 @@ comments: true
         }
 </code></pre>
     - * 参考リンク [#reference]
-- [JTableのCellにJCheckBoxを複数配置する](http://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
-- [JCheckBoxのセルをロールオーバーする](http://ateraimemo.com/Swing/RolloverBooleanRenderer.html)
+- [JTableのCellにJCheckBoxを複数配置する](https://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
+- [JCheckBoxのセルをロールオーバーする](https://ateraimemo.com/Swing/RolloverBooleanRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

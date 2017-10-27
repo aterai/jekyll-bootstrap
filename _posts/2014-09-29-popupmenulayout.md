@@ -80,9 +80,9 @@ b.setOpaque(true);
 </code></pre>
 
 ## 参考リンク
-- [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
+- [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
     - こちらは、`JPopupMenu`のレイアウトを変更するのではなく、`JMenuItem`のレイアウトを変更して、`JMenuItem`の子としてボタンを追加している
-- [JPopupMenuをボタンの長押しで表示](http://ateraimemo.com/Swing/PressAndHoldButton.html)
+- [JPopupMenuをボタンの長押しで表示](https://ateraimemo.com/Swing/PressAndHoldButton.html)
 
 <!-- dummy comment line for breaking list -->
 

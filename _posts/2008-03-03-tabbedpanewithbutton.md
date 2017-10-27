@@ -63,7 +63,7 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 <!-- dummy comment line for breaking list -->
 
-コンポーネントの追加には、以下の方法を使用しています(比較: [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html))。
+コンポーネントの追加には、以下の方法を使用しています(比較: [JTabbedPaneの余白にJCheckBoxを配置](https://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html))。
 
 - ボタンの幅だけ、`tabAreaInsets`の左余白を拡大する
     - `UIManager.getInsets("TabbedPane.tabAreaInsets")`などを使用するため、`Synth`など(`GTK`, `Nimbus`)の`LookAndFeel`には対応していない
@@ -76,9 +76,9 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 ## 参考リンク
 - [famfamfam.com: Mini Icons](http://www.famfamfam.com/lab/icons/mini/)
     - アイコンを借用
-- [OverlayLayoutの使用](http://ateraimemo.com/Swing/OverlayLayout.html)
-- [JTabbedPaneの余白にJCheckBoxを配置](http://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
-- [JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)
+- [OverlayLayoutの使用](https://ateraimemo.com/Swing/OverlayLayout.html)
+- [JTabbedPaneの余白にJCheckBoxを配置](https://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
+- [JTabbedPaneのタイトルをクリップ](https://ateraimemo.com/Swing/ClippedTabLabel.html)
 - [Swing - Any layout suggestions for this?](https://community.oracle.com/thread/1389350)
 
 <!-- dummy comment line for breaking list -->

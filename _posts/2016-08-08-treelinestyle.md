@@ -41,7 +41,7 @@ tree2.putClientProperty("JTree.lineStyle", "None");
 
 ## 参考リンク
 - [How to Use Trees (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/tree.html)
-- [JTreeの水平垂直線を表示しない](http://ateraimemo.com/Swing/TreePaintLines.html)
+- [JTreeの水平垂直線を表示しない](https://ateraimemo.com/Swing/TreePaintLines.html)
 
 <!-- dummy comment line for breaking list -->
 

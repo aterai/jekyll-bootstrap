@@ -50,9 +50,9 @@ reader.dispose();
 
 ## 参考リンク
 - [Swing - Reading gif animation frame rates and such?](https://community.oracle.com/thread/1271862)
-- [JPEGファイルのコメントを取り出す](http://ateraimemo.com/Swing/IIOMetadata.html)
-- [JLabelに表示したAnimated Gifのアニメーションを停止する](http://ateraimemo.com/Swing/DisableAnimatedGif.html)
-- [Animated GIFでのコマ描画時処理](http://ateraimemo.com/Swing/AnimatedGif.html)
+- [JPEGファイルのコメントを取り出す](https://ateraimemo.com/Swing/IIOMetadata.html)
+- [JLabelに表示したAnimated Gifのアニメーションを停止する](https://ateraimemo.com/Swing/DisableAnimatedGif.html)
+- [Animated GIFでのコマ描画時処理](https://ateraimemo.com/Swing/AnimatedGif.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -52,7 +52,7 @@ class HorizontalAlignmentTableRenderer extends DefaultTableCellRenderer {
     - `right`: 右揃え
     - `custom`: 行ごとに左、中央、右揃えを変更
 - メモ
-    - セルエディタなどにラジオボタンを配置する場合は、[JTableのセル中にJRadioButtonを配置](http://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
+    - セルエディタなどにラジオボタンを配置する場合は、[JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -88,9 +88,9 @@ table.getColumnModel().getColumn(2).setCellRenderer(r);
 </code></pre>
 
 ## 参考リンク
-- [JTableHeaderの字揃え](http://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
+- [JTableHeaderの字揃え](https://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
     - ヘッダの文字揃えに関するテストは、上記の場所に移動
-- [JTableのセル内文字列を両端揃えにする](http://ateraimemo.com/Swing/InterIdeographJustify.html)
+- [JTableのセル内文字列を両端揃えにする](https://ateraimemo.com/Swing/InterIdeographJustify.html)
 
 <!-- dummy comment line for breaking list -->
 

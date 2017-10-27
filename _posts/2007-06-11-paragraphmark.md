@@ -79,7 +79,7 @@ class ParagraphWithEopmView extends ParagraphView {
 
 ## 参考リンク
 - [Swing - JTextPane View Problem](https://community.oracle.com/thread/1374478)
-- [JTextPaneで全角スペースやタブを可視化](http://ateraimemo.com/Swing/WhitespaceMark.html)
+- [JTextPaneで全角スペースやタブを可視化](https://ateraimemo.com/Swing/WhitespaceMark.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -90,8 +90,8 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTextFieldに透かし画像を表示する](http://ateraimemo.com/Swing/WatermarkInTextField.html)
-- [JPasswordFieldにヒント文字列を描画する](http://ateraimemo.com/Swing/InputHintPasswordField.html)
+- [JTextFieldに透かし画像を表示する](https://ateraimemo.com/Swing/WatermarkInTextField.html)
+- [JPasswordFieldにヒント文字列を描画する](https://ateraimemo.com/Swing/InputHintPasswordField.html)
     - `JPasswordField`の場合、`setText(String)`は使用できないので、透かし画像と同じ要領で`paintComponent`をオーバーライドして文字列を描画
 
 <!-- dummy comment line for breaking list -->

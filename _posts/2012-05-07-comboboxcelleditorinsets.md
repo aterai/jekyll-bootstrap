@@ -89,7 +89,7 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 </code></pre>
 
 ## 参考リンク
-- [JTableのCellRendererにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellRenderer.html)
+- [JTableのCellRendererにJComboBoxを設定](https://ateraimemo.com/Swing/ComboCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

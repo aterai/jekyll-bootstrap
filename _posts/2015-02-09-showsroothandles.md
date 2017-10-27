@@ -38,8 +38,8 @@ comments: true
     
     		newValue - true if root handles should be displayed; otherwise, false
     - * 参考リンク [#reference]
-- [JTreeの展開、折畳みアイコンを非表示にする](http://ateraimemo.com/Swing/TreeExpandedIcon.html)
-- [JTreeのルートノードを非表示に設定する](http://ateraimemo.com/Swing/TreeRootVisible.html)
+- [JTreeの展開、折畳みアイコンを非表示にする](https://ateraimemo.com/Swing/TreeExpandedIcon.html)
+- [JTreeのルートノードを非表示に設定する](https://ateraimemo.com/Swing/TreeRootVisible.html)
 
 <!-- dummy comment line for breaking list -->
 

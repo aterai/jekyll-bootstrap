@@ -87,7 +87,7 @@ class RowDataRenderer implements TableCellRenderer {
 </code></pre>
     - * 参考リンク [#reference]
 - [java - Swing - sort a JTable's rows but keep them grouped by one column and only show the value once on top of each group - Stack Overflow](https://stackoverflow.com/questions/43011596/swing-sort-a-jtables-rows-but-keep-them-grouped-by-one-column-and-only-show-t)
-- [JTableでファイルとディレクトリを別々にソート](http://ateraimemo.com/Swing/FileDirectoryComparator.html)
+- [JTableでファイルとディレクトリを別々にソート](https://ateraimemo.com/Swing/FileDirectoryComparator.html)
 
 <!-- dummy comment line for breaking list -->
 

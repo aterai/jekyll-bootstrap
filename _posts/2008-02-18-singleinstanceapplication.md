@@ -44,7 +44,7 @@ if (socket == null) {
 
 ## 参考リンク
 - [Java Swing Hacks #68 単一インスタンスのアプリケーションを作る](http://www.oreilly.co.jp/books/4873112788/toc.html)
-- [SingleInstanceServiceを使って Web Start アプリケーションの重複起動を禁止](http://ateraimemo.com/Swing/SingleInstanceService.html)
+- [SingleInstanceServiceを使って Web Start アプリケーションの重複起動を禁止](https://ateraimemo.com/Swing/SingleInstanceService.html)
     - `javax.jnlp.SingleInstanceService`を使用して複数起動を禁止する
 
 <!-- dummy comment line for breaking list -->

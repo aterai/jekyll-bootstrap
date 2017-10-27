@@ -49,7 +49,7 @@ comments: true
 </code></pre>
 - * 参考リンク [#reference]
 - [java - Setting a specific location for a floating JToolBar - Stack Overflow](https://stackoverflow.com/questions/41701664/setting-a-specific-location-for-a-floating-jtoolbar)
-- [JToolBarをドラッグによる移動は可能だが分離は不可に設定する](http://ateraimemo.com/Swing/NonDetachableToolBar.html)
+- [JToolBarをドラッグによる移動は可能だが分離は不可に設定する](https://ateraimemo.com/Swing/NonDetachableToolBar.html)
 - [BasicToolBarUI#setFloatingLocation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingLocation-int-int-)
     - 現在の`BasicToolBarUI#setFloatingLocation(...)`や`setFloating(...)`のドキュメントは空なので、詳細が知りたい場合は、ソースコードを参照する必要がある
 

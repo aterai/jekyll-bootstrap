@@ -24,7 +24,7 @@ sorter.setTableHeader(table.getTableHeader());
 </code></pre>
 
 ## 解説
-`The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](http://ateraimemo.com/Swing/SortableTable.html)で使用しているものと同じ`TableModel`でソートしています。
+`The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](https://ateraimemo.com/Swing/SortableTable.html)で使用しているものと同じ`TableModel`でソートしています。
 
 `TableSorter`には、<kbd>Ctrl</kbd>キーを押しながらヘッダをクリックすると、そのカラムを第二キーとしてソートする機能もあります。
 
@@ -92,7 +92,7 @@ private final JTable table = new JTable(sorter) {
 - - - -
 - `JDK 1.6.0`から`JTable`には標準でソート機能が追加された
     - [Table Sorting and Filtering - New and Updated Desktop Features in Java SE 6, Part 2](http://www.oracle.com/technetwork/articles/javase/index-135205.html#1)
-    - [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
+    - [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
 
 <!-- dummy comment line for breaking list -->
 

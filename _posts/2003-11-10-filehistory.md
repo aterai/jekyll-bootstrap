@@ -58,8 +58,8 @@ class HistoryAction extends AbstractAction {
 
 ## 参考リンク
 - [JMenu (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JMenu.html)
-- [Resourceファイルからメニューバーを生成](http://ateraimemo.com/Swing/ResourceMenuBar.html)
-- [JFrameの位置・サイズを記憶する](http://ateraimemo.com/Swing/Preferences.html)
+- [Resourceファイルからメニューバーを生成](https://ateraimemo.com/Swing/ResourceMenuBar.html)
+- [JFrameの位置・サイズを記憶する](https://ateraimemo.com/Swing/Preferences.html)
 
 <!-- dummy comment line for breaking list -->
 

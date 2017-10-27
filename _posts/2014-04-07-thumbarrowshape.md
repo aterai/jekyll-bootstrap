@@ -39,7 +39,7 @@ comments: true
 
 
 ## 参考リンク
-- [JScrollBarのKnobの最小サイズを設定する](http://ateraimemo.com/Swing/MinimumThumbSize.html)
+- [JScrollBarのKnobの最小サイズを設定する](https://ateraimemo.com/Swing/MinimumThumbSize.html)
 
 <!-- dummy comment line for breaking list -->
 

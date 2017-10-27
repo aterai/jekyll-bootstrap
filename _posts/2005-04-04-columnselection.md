@@ -40,12 +40,12 @@ header.addMouseListener(new MouseAdapter() {
 `Column`全体の選択は、`changeSelection`メソッドを`2`回使用することで実現しています。
 
 ## 参考リンク
-- [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)
+- [JTableに行ヘッダを追加](https://ateraimemo.com/Swing/TableRowHeader.html)
     - 行ヘッダをクリックして行の全選択
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: `2008-03-11`に[JTableのセルにあるフォーカスを解除](http://ateraimemo.com/Swing/AnchorSelection.html)から移動でこのページを作成。 -- *aterai* 2013-02-20 (水) 15:21:27
+- メモ: `2008-03-11`に[JTableのセルにあるフォーカスを解除](https://ateraimemo.com/Swing/AnchorSelection.html)から移動でこのページを作成。 -- *aterai* 2013-02-20 (水) 15:21:27
 
 <!-- dummy comment line for breaking list -->

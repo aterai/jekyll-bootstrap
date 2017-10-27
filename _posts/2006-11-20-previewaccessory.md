@@ -104,7 +104,7 @@ class ImagePreview extends JComponent implements PropertyChangeListener {
 - [How to Use File Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html)
 - [The Perils of Image.getScaledInstance() Blog | Oracle Community](https://community.oracle.com/docs/DOC-983611)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
-- [MetalLookAndFeelでJFileChooserの下部にコンポーネントを追加する](http://ateraimemo.com/Swing/FileChooserBottomAccessory.html)
+- [MetalLookAndFeelでJFileChooserの下部にコンポーネントを追加する](https://ateraimemo.com/Swing/FileChooserBottomAccessory.html)
 
 <!-- dummy comment line for breaking list -->
 

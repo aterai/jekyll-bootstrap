@@ -100,8 +100,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TitledBorderのタイトル位置](http://ateraimemo.com/Swing/TitledBorder.html)
-- [Separatorのグラデーション](http://ateraimemo.com/Swing/Gradient.html)
+- [TitledBorderのタイトル位置](https://ateraimemo.com/Swing/TitledBorder.html)
+- [Separatorのグラデーション](https://ateraimemo.com/Swing/Gradient.html)
 
 <!-- dummy comment line for breaking list -->
 

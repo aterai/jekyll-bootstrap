@@ -170,8 +170,8 @@ comments: true
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTLZe_UIkI/AAAAAAAAAXg/bCzrlm037N8/s800/DnDExportTabbedPane1.png)
 
 ## 参考リンク
-- [JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)
-- [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](http://ateraimemo.com/Swing/DnDLayerTabbedPane.html)
+- [JTabbedPaneのタブをドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDTabbedPane.html)
+- [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](https://ateraimemo.com/Swing/DnDLayerTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

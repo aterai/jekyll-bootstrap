@@ -77,8 +77,8 @@ comments: true
 1. 拡大した先頭文字の高さを行の`y`座標が超えた場合は、`JLabel`の幅に収まる文字列を`LineBreakMeasurer`で取得し描画
 
 ## 参考リンク
-- [JLabelの文字列を折り返し](http://ateraimemo.com/Swing/GlyphVector.html)
-- [Fontを回転する](http://ateraimemo.com/Swing/TransformedShape.html)
+- [JLabelの文字列を折り返し](https://ateraimemo.com/Swing/GlyphVector.html)
+- [Fontを回転する](https://ateraimemo.com/Swing/TransformedShape.html)
 
 <!-- dummy comment line for breaking list -->
 

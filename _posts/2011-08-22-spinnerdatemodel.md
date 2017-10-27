@@ -62,14 +62,14 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
 - `JSpinner.DateEditor + FocusListener`
     - フォーカスがエディタに移動した場合、日付部分が選択状態になるようリスナーを設定
         - 矢印ボタンのクリックで編集開始した場合、先頭の年度部分ではなく日付が増減する
-        - 参考: [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
+        - 参考: [CellEditorをJSpinnerにして日付を変更](https://ateraimemo.com/Swing/DateCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Swing - DateSpinner spins only after an edit](https://community.oracle.com/thread/2268752)
-- [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
-- [JSpinnerでLocalDateTimeを使用する](http://ateraimemo.com/Swing/SpinnerLocalDateTimeModel.html)
+- [CellEditorをJSpinnerにして日付を変更](https://ateraimemo.com/Swing/DateCellEditor.html)
+- [JSpinnerでLocalDateTimeを使用する](https://ateraimemo.com/Swing/SpinnerLocalDateTimeModel.html)
     - `Date`ではなく、`LocalDateTime`を使用する方法
 
 <!-- dummy comment line for breaking list -->

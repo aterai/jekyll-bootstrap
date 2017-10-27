@@ -67,7 +67,7 @@ combobox.setEditable(true);
 レンダラーの中で、`JLabel`を`MatteBorder`で修飾し、`JSeparator`を使用せずに`Item`をグループ分けしているように見せかけています。
 
 - `JComboBox`が編集可
-    - フィールド表示には`ListCellRenderer`ではなく`JTextField`が使用されるため、[JComboBoxにJSeparatorを挿入](http://ateraimemo.com/Swing/ComboBoxSeparator.html)する方法より簡単に区切りを表現することが可能
+    - フィールド表示には`ListCellRenderer`ではなく`JTextField`が使用されるため、[JComboBoxにJSeparatorを挿入](https://ateraimemo.com/Swing/ComboBoxSeparator.html)する方法より簡単に区切りを表現することが可能
 - `JComboBox`が編集不可
     - [JComboBox Items with Separators - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/jcombobox_items_with_separators)のようにフィールド表示(`index!=-1`の場合)で区切りが表示されないようにする必要がある
         
@@ -89,7 +89,7 @@ combobox.setEditable(true);
         });
 </code></pre>
     - * 参考リンク [#reference]
-- [JComboBoxにJSeparatorを挿入](http://ateraimemo.com/Swing/ComboBoxSeparator.html)
+- [JComboBoxにJSeparatorを挿入](https://ateraimemo.com/Swing/ComboBoxSeparator.html)
 - [JComboBox Items with Separators - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/jcombobox_items_with_separators)
 
 <!-- dummy comment line for breaking list -->

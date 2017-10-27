@@ -128,7 +128,7 @@ comments: true
         JSpinner spinner1 = new JSpinner(new SpinnerDateModel(
             date, start, end, Calendar.DAY_OF_MONTH));
 </code></pre>
-    - 参考: [JSpinnerで日付を設定](http://ateraimemo.com/Swing/SpinnerDateModel.html)
+    - 参考: [JSpinnerで日付を設定](https://ateraimemo.com/Swing/SpinnerDateModel.html)
 - 下: `SpinnerLocalDateTimeModel`
     - 内部で、`Date`ではなく、`LocalDateTime`を使用する`SpinnerLocalDateTimeModel`(`AbstractSpinnerModel`を継承)を作成
         
@@ -238,7 +238,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JSpinnerで日付を設定](http://ateraimemo.com/Swing/SpinnerDateModel.html)
+- [JSpinnerで日付を設定](https://ateraimemo.com/Swing/SpinnerDateModel.html)
 - [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
 
 <!-- dummy comment line for breaking list -->

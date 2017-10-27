@@ -186,7 +186,7 @@ public class BackgroundPainterTest {
 </code></pre>
 
 ## 参考リンク
-- [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html)
+- [JInternalFrameを半透明にする](https://ateraimemo.com/Swing/TransparentFrame.html)
 
 <!-- dummy comment line for breaking list -->
 

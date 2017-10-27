@@ -36,7 +36,7 @@ comments: true
 
 ## 参考リンク
 - [java - Can you make a JToolBar undetachable? - Stack Overflow](https://stackoverflow.com/questions/30484769/can-you-make-a-jtoolbar-undetachable)
-- [JToolBarが起動時に指定した位置でフローティング状態になるよう設定する](http://ateraimemo.com/Swing/FloatingToolBarStartingLocation.html)
+- [JToolBarが起動時に指定した位置でフローティング状態になるよう設定する](https://ateraimemo.com/Swing/FloatingToolBarStartingLocation.html)
 
 <!-- dummy comment line for breaking list -->
 

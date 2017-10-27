@@ -50,8 +50,8 @@ dialog.setVisible(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Cursorを砂時計に変更](http://ateraimemo.com/Swing/WaitCursor.html)
-- [JLayerで指定したコンポーネントへの入力を禁止](http://ateraimemo.com/Swing/DisableInputLayer.html)
+- [Cursorを砂時計に変更](https://ateraimemo.com/Swing/WaitCursor.html)
+- [JLayerで指定したコンポーネントへの入力を禁止](https://ateraimemo.com/Swing/DisableInputLayer.html)
 
 <!-- dummy comment line for breaking list -->
 

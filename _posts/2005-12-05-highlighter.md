@@ -40,7 +40,7 @@ try {
 ## 参考リンク
 - [Highlighter#addHighlight(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Highlighter.html#addHighlight-int-int-javax.swing.text.Highlighter.HighlightPainter-)
 - [Swing - Searching text in files & highlighting that text](https://community.oracle.com/thread/1387954)
-- [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/Swing/HighlightTextForeground.html)
+- [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](https://ateraimemo.com/Swing/HighlightTextForeground.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -75,11 +75,11 @@ public void setHighlight(JTextComponent jtc, String[] pattern) {
 </code></pre>
 
 - こんな簡単にハイライトできるとは！。正規表現で実装すると開始位置と終了位置がより簡単で、しかも複雑にできるかも。 -- *eternalharvest* 2008-08-28 (木) 02:20:11
-    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ: [Swing - Content-Overlay in JTextPane](https://community.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。追記2: このサンプルでも正規表現を使用するように変更。 -- *aterai* 2008-09-01 (月) 13:47:05
+    - ちょっと夏休みで帰省してました。正規表現 > そうですね。基本的には同じような要領で大丈夫だと思います。メモ: [Swing - Content-Overlay in JTextPane](https://community.oracle.com/thread/1382907)、追記: [DefaultHighlighterの描画方法を変更する](https://ateraimemo.com/Swing/DrawsLayeredHighlights.html)に、`Matcher matcher = Pattern.compile(pattern).matcher(text);`と正規表現でハイライトするサンプルを追加。追記2: このサンプルでも正規表現を使用するように変更。 -- *aterai* 2008-09-01 (月) 13:47:05
 - こんにちは。Cakaiと申します。ハイライトされているテキストのカラーを設定することがありますか？ -- *Caokai* 2009-10-15 (Thu) 23:12:47
-    - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html) -- *aterai* 2009-10-16 (金) 13:04:32
-        - 用途によっては、[JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)なども使えるかもしれません。 -- *aterai* 2009-10-16 (金) 13:05:35
-    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/Swing/HighlightTextForeground.html)にサンプルソースコードを移動。 -- *aterai* 2014-11-10 (月) 00:05:55
+    - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](https://ateraimemo.com/Swing/SimpleSyntaxHighlight.html) -- *aterai* 2009-10-16 (金) 13:04:32
+        - 用途によっては、[JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)なども使えるかもしれません。 -- *aterai* 2009-10-16 (金) 13:05:35
+    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](https://ateraimemo.com/Swing/HighlightTextForeground.html)にサンプルソースコードを移動。 -- *aterai* 2014-11-10 (月) 00:05:55
 - わかりました。ほんとにありがとうございました。 -- *Caokai* 2009-10-16 (Fri) 16:42:07
 
 <!-- dummy comment line for breaking list -->

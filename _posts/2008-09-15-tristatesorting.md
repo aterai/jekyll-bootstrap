@@ -44,8 +44,8 @@ table.setRowSorter(sorter);
 
 ## 参考リンク
 - [DefaultRowSorter#toggleSortOrder(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultRowSorter.html#toggleSortOrder-int-)
-- [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
-- [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
+- [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
+- [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
 

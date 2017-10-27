@@ -42,7 +42,7 @@ while (e.hasMoreElements()) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+- [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -60,7 +60,7 @@ comments: true
 - - - -
 `JDK 1.6.0`では、`JTabbedPane`のタブ部分に、文字列・アイコンに加え`Swing`コンポーネントが使えるようになっているので、上記のサンプルはもっと簡単に実現できるようになっています。
 
-- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](https://ateraimemo.com/Swing/TabWithCloseButton.html)
 - [Java SE 6 Mustangの新機能](http://www.02.246.ne.jp/~torutk/jvm/mustang.html)
 
 <!-- dummy comment line for breaking list -->
@@ -72,7 +72,7 @@ comments: true
 - [CloseAndMaxTabbedPane: An enhanced JTabbedPane](http://www.javaworld.com/javaworld/jw-09-2004/jw-0906-tabbedpane.html)
 - [InfoNode - Java Components](http://www.infonode.net/index.html?itp)
 - [Kirill Grouchnikov's Blog: Spicing up your JTabbedPane - part II](http://weblogs.java.net/blog/kirillcool/archive/2005/12/spicing_up_your_1.html)
-- [JTabbedPaneでタブを追加削除](http://ateraimemo.com/Swing/TabbedPane.html)
+- [JTabbedPaneでタブを追加削除](https://ateraimemo.com/Swing/TabbedPane.html)
 - [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)
 
 <!-- dummy comment line for breaking list -->

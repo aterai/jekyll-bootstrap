@@ -64,7 +64,7 @@ progressbar.putClientProperty("Nimbus.Overrides", d);
 ## 参考リンク
 - [Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)
 - [java - How to change the color of a single JProgressBar in Nimbus? - Stack Overflow](https://stackoverflow.com/questions/10847308/how-to-change-the-color-of-a-single-jprogressbar-in-nimbus)
-- [JLayerを使ってJProgressBarの色相を変更する](http://ateraimemo.com/Swing/ColorChannelSwapFilter.html)
+- [JLayerを使ってJProgressBarの色相を変更する](https://ateraimemo.com/Swing/ColorChannelSwapFilter.html)
     - こちらは`JLayer`+`RGBImageFilter`で`JProgressBar`全体の色を変更するサンプル
 
 <!-- dummy comment line for breaking list -->

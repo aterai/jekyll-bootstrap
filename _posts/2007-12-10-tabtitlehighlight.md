@@ -37,7 +37,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneの選択文字色を変更](http://ateraimemo.com/Swing/ColorTab.html)
+- [JTabbedPaneの選択文字色を変更](https://ateraimemo.com/Swing/ColorTab.html)
 
 <!-- dummy comment line for breaking list -->
 

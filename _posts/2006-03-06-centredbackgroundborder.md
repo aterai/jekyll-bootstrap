@@ -51,11 +51,11 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 - - - -
-`Border`を使って背景に画像を表示する方法は、`JDesktopPane`(参考: [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html))や、その他の`JComponent`でも使用することが出来ます。
+`Border`を使って背景に画像を表示する方法は、`JDesktopPane`(参考: [JInternalFrameを半透明にする](https://ateraimemo.com/Swing/TransparentFrame.html))や、その他の`JComponent`でも使用することが出来ます。
 
 ## 参考リンク
 - [Swing - How can I use TextArea with Background Picture ?](https://community.oracle.com/thread/1395763)
-- [JInternalFrameを半透明にする](http://ateraimemo.com/Swing/TransparentFrame.html)
+- [JInternalFrameを半透明にする](https://ateraimemo.com/Swing/TransparentFrame.html)
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 
 <!-- dummy comment line for breaking list -->

@@ -70,14 +70,14 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [MemoryImageSourceで配列から画像を生成](http://ateraimemo.com/Swing/MemoryImageSource.html)
+- [MemoryImageSourceで配列から画像を生成](https://ateraimemo.com/Swing/MemoryImageSource.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - マウス右ボタンをドラッグで消しゴム…のテスト -- *aterai* 2010-01-12 (火) 16:16:59
     - 追記:不要なコードを削除。 -- *aterai* 2010-04-30 (金) 19:26:37
-    - [MemoryImageSourceで配列から画像を生成](http://ateraimemo.com/Swing/MemoryImageSource.html)に移動。 -- *aterai* 2010-06-07 (月) 15:21:37
+    - [MemoryImageSourceで配列から画像を生成](https://ateraimemo.com/Swing/MemoryImageSource.html)に移動。 -- *aterai* 2010-06-07 (月) 15:21:37
 - わからん！！ --  2010-04-30 (金) 18:11:55
 - 直線を`Path2D`で保存する方法に変更。 -- *aterai* 2015-12-08 (火) 16:16:59
 

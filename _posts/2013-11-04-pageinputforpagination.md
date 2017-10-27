@@ -96,7 +96,7 @@ private void initFilterAndButton() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[RowFilterでJTableのページ分割](http://ateraimemo.com/Swing/TablePagination.html)に以下の変更を追加しています。
+上記のサンプルでは、[RowFilterでJTableのページ分割](https://ateraimemo.com/Swing/TablePagination.html)に以下の変更を追加しています。
 
 - `JTextField`に数値を入力して指定ページにジャンプ可能
 - `First(|<)`, `Prev(<)`, `Next(>)`, `Last(>|)`に`JRadioButton`ではなく、`JButton`を使用
@@ -160,7 +160,7 @@ private void initFilterAndButton() {
 </code></pre>
 
 ## 参考リンク
-- [RowFilterでJTableのページ分割](http://ateraimemo.com/Swing/TablePagination.html)
+- [RowFilterでJTableのページ分割](https://ateraimemo.com/Swing/TablePagination.html)
 
 <!-- dummy comment line for breaking list -->
 

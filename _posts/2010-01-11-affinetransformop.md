@@ -37,7 +37,7 @@ g2.drawImage(bi, at, this);
 
 ## 参考リンク
 - [AffineTransform#getScaleInstance(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/AffineTransform.html#getScaleInstance-double-double-)
-- [Shapeの反転](http://ateraimemo.com/Swing/HorizontalFlip.html)
+- [Shapeの反転](https://ateraimemo.com/Swing/HorizontalFlip.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -102,20 +102,20 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
 - 左: `JPanel` + `JSpinner`
     - `TableCellEditor`, `TableCellRenderer`に`JSpinner`を配置した`JPanel`を使用
     - `JPanel`に`GridBagLayout`を指定し、`insets = new Insets(0, 10, 0, 10)`、`fill = GridBagConstraints.HORIZONTAL`で余白を設定
-    - [JTableのCellEditorに設定したJComboBoxに余白を追加する](http://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
+    - [JTableのCellEditorに設定したJComboBoxに余白を追加する](https://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
 - 右: `JPanel` + `JLabel` + `JButton`
     - `TableCellEditor`, `TableCellRenderer`に`JLabel`と`2`つの`JButton`を配置した`JPanel`を使用
     - `JPanel`には`FlowLayout`を指定
         - カラム幅が狭くなって折り返しが発生してもセルの高さは変化しないので、コンポーネントが見切れてしまう
-    - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+    - [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TableCellEditorのレイアウトを変更](http://ateraimemo.com/Swing/CellEditorLayout.html)
-- [JTableのCellEditorに設定したJComboBoxに余白を追加する](http://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
-- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
-- [CellEditorをJSpinnerにして日付を変更](http://ateraimemo.com/Swing/DateCellEditor.html)
+- [TableCellEditorのレイアウトを変更](https://ateraimemo.com/Swing/CellEditorLayout.html)
+- [JTableのCellEditorに設定したJComboBoxに余白を追加する](https://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
+- [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [CellEditorをJSpinnerにして日付を変更](https://ateraimemo.com/Swing/DateCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

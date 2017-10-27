@@ -35,8 +35,8 @@ editor.setText(makeTestHtml());
 - [StyleSheet (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/StyleSheet.html)
     - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/CSS.html)
 - [How to add stylesheet information to a JEditorPane | alvinalexander.com](http://alvinalexander.com/blog/post/jfc-swing/how-add-style-stylesheet-jeditorpane-example-code)
-- [GraphicsEnvironmentにFontを登録して使用する](http://ateraimemo.com/Swing/RegisterFont.html)
-- [Rhinoでgoogle-prettify.jsを実行する](http://ateraimemo.com/Tips/GooglePrettifyRhino.html)
+- [GraphicsEnvironmentにFontを登録して使用する](https://ateraimemo.com/Swing/RegisterFont.html)
+- [Rhinoでgoogle-prettify.jsを実行する](https://ateraimemo.com/Tips/GooglePrettifyRhino.html)
 
 <!-- dummy comment line for breaking list -->
 

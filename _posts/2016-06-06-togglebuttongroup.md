@@ -48,7 +48,7 @@ comments: true
 
 ## 参考リンク
 - [java - How to deselect already selected JRadioButton by clicking on it - Stack Overflow](https://stackoverflow.com/questions/37598206/how-to-deselect-already-selected-jradiobutton-by-clicking-on-it/37607560#37607560)
-- [ButtonGroup内のJRadioButtonなどの選択をクリア](http://ateraimemo.com/Swing/ClearGroupSelection.html)
+- [ButtonGroup内のJRadioButtonなどの選択をクリア](https://ateraimemo.com/Swing/ClearGroupSelection.html)
 
 <!-- dummy comment line for breaking list -->
 

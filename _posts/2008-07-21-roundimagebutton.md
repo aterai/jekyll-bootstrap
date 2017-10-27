@@ -92,7 +92,7 @@ comments: true
     - ただし、縁の線を描画するため、画像サイズより上下左右`1px`大きくなるよう`EmptyBorder`を設定
 - `contains`をオーバーライドして、円の外側をクリックしてもボタンが反応しないようにする
     - このサンプルでは、画像の透過色から円を生成している訳ではなく、画像のサイズから円図形を別途作成
-    - 画像の透過色から、クリック可能な領域を設定する場合は、[JComponentの形状定義を変更する](http://ateraimemo.com/Swing/MoveNonRectangularImage.html)を参照
+    - 画像の透過色から、クリック可能な領域を設定する場合は、[JComponentの形状定義を変更する](https://ateraimemo.com/Swing/MoveNonRectangularImage.html)を参照
 - `paintBorder`をオーバーライドして、元の縁は描画せずにその幅の線で独自に円を描画する
     - `contains`で使用した図形を利用
 
@@ -121,8 +121,8 @@ https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTSRb592NI/AAAAAAAAAig/4HrfRUSkP
 </code></pre>
 
 ## 参考リンク
-- [JButtonの形を変更](http://ateraimemo.com/Swing/RoundButton.html)
-- [JComponentの形状定義を変更する](http://ateraimemo.com/Swing/MoveNonRectangularImage.html)
+- [JButtonの形を変更](https://ateraimemo.com/Swing/RoundButton.html)
+- [JComponentの形状定義を変更する](https://ateraimemo.com/Swing/MoveNonRectangularImage.html)
 
 <!-- dummy comment line for breaking list -->
 

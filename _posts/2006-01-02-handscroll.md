@@ -53,13 +53,13 @@ comments: true
 `JComponent#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると、内部コンポーネントの外側に移動することができます。
 
 ## 参考リンク
-- [JScrollPaneのオートスクロール](http://ateraimemo.com/Swing/AutoScroll.html)
+- [JScrollPaneのオートスクロール](https://ateraimemo.com/Swing/AutoScroll.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
     - 猫の写真を引用
 - [JDK-6333318 JViewPort.scrollRectToVisible( Rectangle cr ) doesn't scroll if cr left or above - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6333318)
     - `JDK 1.7.0`から、`JViewport#setViewPosition(Point)`などで左上外部に移動不可になっている
-- [JScrollPaneでキネティックスクロール](http://ateraimemo.com/Swing/KineticScrolling.html)
-- [JTreeの余白をドラッグしてスクロール](http://ateraimemo.com/Swing/TreeDragScroll.html)
+- [JScrollPaneでキネティックスクロール](https://ateraimemo.com/Swing/KineticScrolling.html)
+- [JTreeの余白をドラッグしてスクロール](https://ateraimemo.com/Swing/TreeDragScroll.html)
 
 <!-- dummy comment line for breaking list -->
 

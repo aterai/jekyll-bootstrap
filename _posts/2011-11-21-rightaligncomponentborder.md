@@ -59,8 +59,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [BorderにJComponentを配置](http://ateraimemo.com/Swing/ComponentTitledBorder.html)
-- [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
+- [BorderにJComponentを配置](https://ateraimemo.com/Swing/ComponentTitledBorder.html)
+- [SpringLayoutの使用](https://ateraimemo.com/Swing/SpringLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -50,7 +50,7 @@ icon.setImageObserver(new ImageObserver() {
 ## 参考リンク
 - [AnimatedIconTableExample.java](http://www2.gol.com/users/tame/swing/examples/SwingExamples.html)
     - 元サイトには繋がらないので、[animatedicontableexample.java - Google 検索](https://www.google.com/search?q=AnimatedIconTableExample.java)などのミラーを参考
-- [JTreeのTreeNodeにAnimated GIFを表示する](http://ateraimemo.com/Swing/AnimatedTreeNode.html)
+- [JTreeのTreeNodeにAnimated GIFを表示する](https://ateraimemo.com/Swing/AnimatedTreeNode.html)
 
 <!-- dummy comment line for breaking list -->
 

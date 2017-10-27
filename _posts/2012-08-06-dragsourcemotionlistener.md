@@ -39,7 +39,7 @@ DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMoti
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](http://ateraimemo.com/Swing/DnDLayerTabbedPane.html)
+- [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](https://ateraimemo.com/Swing/DnDLayerTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

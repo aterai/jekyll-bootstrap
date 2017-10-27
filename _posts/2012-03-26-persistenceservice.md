@@ -210,8 +210,8 @@ public class MainPanel extends JPanel {
 - [JWS javax.jnlp.* API demos](http://pscode.org/jws/api.html)
 - [PersistenceService](http://docs.oracle.com/javase/jp/6/technotes/guides/javaws/developersguide/examples.html#PersistenceService)
 - [PersistenceService Demo](http://www.finnw.me.uk/persistencetest.html)
-- [JFrameの位置・サイズを記憶する](http://ateraimemo.com/Swing/Preferences.html)
-- [JTableのモデルをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/PersistenceDelegate.html)
+- [JFrameの位置・サイズを記憶する](https://ateraimemo.com/Swing/Preferences.html)
+- [JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)
 
 <!-- dummy comment line for breaking list -->
 

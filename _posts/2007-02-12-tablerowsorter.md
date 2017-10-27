@@ -35,9 +35,9 @@ table.setAutoCreateRowSorter(true);
 `TableRowSorter`のデフォルトでは、ヘッダクリックで(降順、昇順)とソートが切り替わり、`TableSorter.java`のように(降順、昇順、初期状態)ではなくなっています。上記のサンプルでは、下のボタンをクリックすると、`DefaultRowSorter#setSortKeys(List)`に`null`を代入することで初期状態に戻るようにしています。
 
 - `SwingLabs`の`JXTable`のように「<kbd>Shift</kbd>+ヘッダクリック」で初期状態
-    - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
+    - [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
 - `TableSorter.java`のようにヘッダクリックで降順、昇順、初期状態とループ
-    - [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](http://ateraimemo.com/Swing/TriStateSorting.html)
+    - [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](https://ateraimemo.com/Swing/TriStateSorting.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -46,7 +46,7 @@ table.setAutoCreateRowSorter(true);
 
 - [Multisort Table Header Cell Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
     - 第二キー以下を薄く表示するサンプルがある
-- [JTableの複数キーを使ったソートをヘッダに表示する](http://ateraimemo.com/Swing/MultisortHeaderRenderer.html)
+- [JTableの複数キーを使ったソートをヘッダに表示する](https://ateraimemo.com/Swing/MultisortHeaderRenderer.html)
     - ソートキーの状態を文字列にして追加
 
 <!-- dummy comment line for breaking list -->
@@ -105,9 +105,9 @@ public class RowSorterTest extends JPanel {
 ## 参考リンク
 - [TableRowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/TableRowSorter.html)
 - [How to Use Tables](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html)
-- [TableSorterでJTableをソート](http://ateraimemo.com/Swing/TableSorter.html)
-- [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
-- [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](http://ateraimemo.com/Swing/TriStateSorting.html)
+- [TableSorterでJTableをソート](https://ateraimemo.com/Swing/TableSorter.html)
+- [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
+- [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](https://ateraimemo.com/Swing/TriStateSorting.html)
 - [Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html)
 
 <!-- dummy comment line for breaking list -->
@@ -116,6 +116,6 @@ public class RowSorterTest extends JPanel {
 - `DefaultRowSorter#setMaxSortKeys(int)`で複数のキーを用いたソートも出来ているように思います(`b86`)。ただ、ヘッダー部分がわかりにくいですが。 -- *syo* 2006-08-03 (木) 11:12:55
     - ご指摘ありがとうございます。なるほど、こちら([Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html))を使えばうまくいきそうですね。解説を修正しました。 -- *aterai* 2006-08-03 (木) 12:34:53
 - `renderer`がないので、基本的に数字は左揃え、文字列は右揃えで、中央揃えするにはどうすれば宜しいでしょうか？ -- *パンダ* 2007-06-14 (木) 09:40:20
-    - 長いので[JTableのセル文字揃え](http://ateraimemo.com/Swing/CellTextAlignment.html)に移動しました。 -- *aterai* 2007-06-14 (木) 13:19:36
+    - 長いので[JTableのセル文字揃え](https://ateraimemo.com/Swing/CellTextAlignment.html)に移動しました。 -- *aterai* 2007-06-14 (木) 13:19:36
 
 <!-- dummy comment line for breaking list -->

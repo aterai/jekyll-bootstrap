@@ -53,7 +53,7 @@ b1.add(b2);
 
 ## 参考リンク
 - [Box Layout Features](https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html#features)
-- [JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
+- [JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 

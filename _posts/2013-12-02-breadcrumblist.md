@@ -44,10 +44,10 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
-- [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
+- [JRadioButtonを使ってToggleButtonBarを作成](https://ateraimemo.com/Swing/ToggleButtonBar.html)
+- [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
     - 前後のコンポーネントのフチを共通化して(`1px`だけ重ねる)、`JLayer`でそのフォーカスを描画するサンプル
-- [JToggleButtonをFlowLayoutで重ねて表示する](http://ateraimemo.com/Swing/BackgroundButtonIcon.html)
+- [JToggleButtonをFlowLayoutで重ねて表示する](https://ateraimemo.com/Swing/BackgroundButtonIcon.html)
     - 中央揃えではなく、左揃えのボタンを作成するサンプル
 
 <!-- dummy comment line for breaking list -->

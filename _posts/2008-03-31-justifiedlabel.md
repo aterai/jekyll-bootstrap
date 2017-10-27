@@ -192,7 +192,7 @@ class JustifiedLabel extends JLabel {
 </code></pre>
 
 ## 参考リンク
-- [JTableのセル内文字列を両端揃えにする](http://ateraimemo.com/Swing/InterIdeographJustify.html)
+- [JTableのセル内文字列を両端揃えにする](https://ateraimemo.com/Swing/InterIdeographJustify.html)
     - [TextLayout#getJustifiedLayout(float)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/TextLayout.html#getJustifiedLayout%28float%29)を使用して`JTable`のセルで両端揃えを行うサンプル
 
 <!-- dummy comment line for breaking list -->

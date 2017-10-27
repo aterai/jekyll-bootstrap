@@ -34,8 +34,8 @@ comments: true
 
 ## 参考リンク
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
-- [JButtonの形を変更](http://ateraimemo.com/Swing/RoundButton.html)
-- [ImageIconの形でJButtonを作成](http://ateraimemo.com/Swing/RoundImageButton.html)
+- [JButtonの形を変更](https://ateraimemo.com/Swing/RoundButton.html)
+- [ImageIconの形でJButtonを作成](https://ateraimemo.com/Swing/RoundImageButton.html)
 
 <!-- dummy comment line for breaking list -->
 

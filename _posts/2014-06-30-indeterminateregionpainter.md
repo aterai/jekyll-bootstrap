@@ -48,7 +48,7 @@ progress.putClientProperty("Nimbus.Overrides", d);
 `AbstractRegionPainter#doPaint(...)`の中身は`ProgressBarPainter#paintForegroundEnabled(...)`と同等ですが、このメソッドや関連する`ProgressBarPainter#decodePath1()`などのメソッドは`protected`ではなくすべて`private`のため、コピーすることで対応しています。
 
 ## 参考リンク
-- [JProgressBarの不確定状態でのアニメーションパターンを変更する](http://ateraimemo.com/Swing/StripedProgressBar.html)
+- [JProgressBarの不確定状態でのアニメーションパターンを変更する](https://ateraimemo.com/Swing/StripedProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -72,8 +72,8 @@ private void deleteActionPerformed(ActionEvent evt) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableの行を追加、削除](http://ateraimemo.com/Swing/AddRow.html)
-- [JTableの行の高さを変更する](http://ateraimemo.com/Swing/FishEyeTable.html)
+- [JTableの行を追加、削除](https://ateraimemo.com/Swing/AddRow.html)
+- [JTableの行の高さを変更する](https://ateraimemo.com/Swing/FishEyeTable.html)
 
 <!-- dummy comment line for breaking list -->
 

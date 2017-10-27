@@ -53,8 +53,8 @@ private void adjustRowHeight(JTable table, int row, int column) {
 ## 参考リンク
 - [JTable multiline cell renderer](http://blog.botunge.dk/post/2009/10/09/JTable-multiline-cell-renderer.aspx)
 - [Text Utilities « Java Tips Weblog](http://tips4java.wordpress.com/2008/10/26/text-utilities/)
-- [JTableのセル幅で文字列を折り返し](http://ateraimemo.com/Swing/TableCellRenderer.html)
-- [ToolkitからScreenResolutionを取得し、コンポーネントで使用するフォントの倍率を変更する](http://ateraimemo.com/Swing/ScreenResolution.html)
+- [JTableのセル幅で文字列を折り返し](https://ateraimemo.com/Swing/TableCellRenderer.html)
+- [ToolkitからScreenResolutionを取得し、コンポーネントで使用するフォントの倍率を変更する](https://ateraimemo.com/Swing/ScreenResolution.html)
     - `JTable`の行の高さは`LookAndFeel`依存で一定のため、フォントサイズの変更に応じた自動調整などは行われない(自前で高さを変更する必要がある)
 
 <!-- dummy comment line for breaking list -->

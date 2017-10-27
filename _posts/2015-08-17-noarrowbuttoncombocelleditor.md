@@ -105,8 +105,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JComboBoxのArrowButtonを隠す](http://ateraimemo.com/Swing/HideComboArrowButton.html)
-- [JTableのCellEditorにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellEditor.html)
+- [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
+- [JTableのCellEditorにJComboBoxを設定](https://ateraimemo.com/Swing/ComboCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

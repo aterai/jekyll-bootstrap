@@ -79,7 +79,7 @@ comments: true
 
 ## 参考リンク
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html)
-- [JMenuなどから開くPopupMenuを半透明化](http://ateraimemo.com/Swing/TranslucentSubMenu.html)
+- [JMenuなどから開くPopupMenuを半透明化](https://ateraimemo.com/Swing/TranslucentSubMenu.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -49,10 +49,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、異なる`JInternalFrame`に配置した`JTable`の行をドラッグ＆ドロップで入れ替えています。使用する`TransferHandler`は[JTableの行を別のJTableにドラッグして移動](http://ateraimemo.com/Swing/DragRowsAnotherTable.html)のものとほぼ同じですが、前面の`JInternalFrame`内にある`JTable`からドラッグを開始した場合、その`JTableHeader`や`JInternalFrame`のタイトルバー上でも、背面にある`JInternalFrame`に反応してドロップ可能になってしまうため、`TransferHandler#canImport(...)`をオーバーライドして、ドラッグ元とドロップ先の`JInternalFrame`の重なる共通領域では背面にドロップ出来ないように変更しています。
+上記のサンプルでは、異なる`JInternalFrame`に配置した`JTable`の行をドラッグ＆ドロップで入れ替えています。使用する`TransferHandler`は[JTableの行を別のJTableにドラッグして移動](https://ateraimemo.com/Swing/DragRowsAnotherTable.html)のものとほぼ同じですが、前面の`JInternalFrame`内にある`JTable`からドラッグを開始した場合、その`JTableHeader`や`JInternalFrame`のタイトルバー上でも、背面にある`JInternalFrame`に反応してドロップ可能になってしまうため、`TransferHandler#canImport(...)`をオーバーライドして、ドラッグ元とドロップ先の`JInternalFrame`の重なる共通領域では背面にドロップ出来ないように変更しています。
 
 ## 参考リンク
-- [JTableの行を別のJTableにドラッグして移動](http://ateraimemo.com/Swing/DragRowsAnotherTable.html)
+- [JTableの行を別のJTableにドラッグして移動](https://ateraimemo.com/Swing/DragRowsAnotherTable.html)
 
 <!-- dummy comment line for breaking list -->
 

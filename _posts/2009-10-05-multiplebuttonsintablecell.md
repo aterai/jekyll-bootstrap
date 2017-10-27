@@ -136,16 +136,16 @@ static void updateRendererOrEditorUI(Object rendererOrEditor) {
 
 - - - -
 - `JSpinner`(`2`つの`JButton`と`JTextField`の組み合わせ)を`CellEditor`に使用する
-    - [JTableのCellEditorにJPanelを使用して複数コンポーネントを配置](http://ateraimemo.com/Swing/PanelCellEditorRenderer.html)に移動
+    - [JTableのCellEditorにJPanelを使用して複数コンポーネントを配置](https://ateraimemo.com/Swing/PanelCellEditorRenderer.html)に移動
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルにJButtonを追加して行削除](http://ateraimemo.com/Swing/DeleteButtonInCell.html)
-- [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
+- [JTableのセルにJButtonを追加して行削除](https://ateraimemo.com/Swing/DeleteButtonInCell.html)
+- [JTableのセルにHyperlinkを表示](https://ateraimemo.com/Swing/HyperlinkInTableCell.html)
 - [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
-- [JTableのセル中にJRadioButtonを配置](http://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
-- [JTableのCellにJCheckBoxを複数配置する](http://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
+- [JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
+- [JTableのCellにJCheckBoxを複数配置する](https://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

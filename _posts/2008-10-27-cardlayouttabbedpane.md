@@ -56,12 +56,12 @@ comments: true
 
 
 - - - -
-`CardLayout`+`JTableHeader`を使用したサンプルは、[JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](http://ateraimemo.com/Swing/TableHeaderTabArea.html)に移動しました。
+`CardLayout`+`JTableHeader`を使用したサンプルは、[JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](https://ateraimemo.com/Swing/TableHeaderTabArea.html)に移動しました。
 
 ## 参考リンク
-- [JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)
-- [TabbedPane風のタブ配置をレイアウトマネージャーで変更](http://ateraimemo.com/Swing/NewTabButton.html)
-- [JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](http://ateraimemo.com/Swing/TableHeaderTabArea.html)
+- [JTabbedPaneのタブをドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDTabbedPane.html)
+- [TabbedPane風のタブ配置をレイアウトマネージャーで変更](https://ateraimemo.com/Swing/NewTabButton.html)
+- [JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](https://ateraimemo.com/Swing/TableHeaderTabArea.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -130,8 +130,8 @@ private static ImageIcon makeFilteredImage2(ImageIcon srcIcon) {
 
 ## 参考リンク
 - [Feed Icons - Home of the Standard Web Feed Icon](http://feedicons.com/)
-- [JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)
-- [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
+- [JComboBoxにアイコンを表示](https://ateraimemo.com/Swing/IconComboBox.html)
+- [JTextField内にアイコンを追加](https://ateraimemo.com/Swing/IconTextField.html)
 
 <!-- dummy comment line for breaking list -->
 

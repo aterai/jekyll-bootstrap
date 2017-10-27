@@ -64,7 +64,7 @@ panel.repaint();
 
 ## 参考リンク
 - [TitledBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/TitledBorder.html)
-- [TitledBorderのタイトルにアイコンを表示する](http://ateraimemo.com/Swing/IconTitledBorder.html)
+- [TitledBorderのタイトルにアイコンを表示する](https://ateraimemo.com/Swing/IconTitledBorder.html)
 - [JDK-4199867 TitledBorder MIDDLE Veritcal Alignment - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4199867)
 
 <!-- dummy comment line for breaking list -->

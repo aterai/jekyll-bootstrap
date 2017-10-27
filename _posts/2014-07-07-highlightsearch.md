@@ -92,7 +92,7 @@ private void changeHighlight() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](http://ateraimemo.com/Swing/HighlightTextForeground.html)
+- [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](https://ateraimemo.com/Swing/HighlightTextForeground.html)
 
 <!-- dummy comment line for breaking list -->
 

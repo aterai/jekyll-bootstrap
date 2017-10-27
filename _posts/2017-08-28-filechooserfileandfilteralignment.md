@@ -63,8 +63,8 @@ class RightAlignmentWindowsFileChooserUI extends WindowsFileChooserUI {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [MetalLookAndFeelでJFileChooserの下部にコンポーネントを追加する](http://ateraimemo.com/Swing/FileChooserBottomAccessory.html)
-- [Containerの子Componentを再帰的にすべて取得する](http://ateraimemo.com/Swing/GetComponentsRecursively.html)
+- [MetalLookAndFeelでJFileChooserの下部にコンポーネントを追加する](https://ateraimemo.com/Swing/FileChooserBottomAccessory.html)
+- [Containerの子Componentを再帰的にすべて取得する](https://ateraimemo.com/Swing/GetComponentsRecursively.html)
 
 <!-- dummy comment line for breaking list -->
 

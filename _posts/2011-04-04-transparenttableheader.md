@@ -42,7 +42,7 @@ comments: true
     - `JTableHeader`とヘッダセルレンダラーの両方を、`setOpaque(false)`, 背景色: `Color(0x0, true)`と設定
 - `JTable`, `JScrollPane`(`Viewport`, `ColumnHeader`)も`setOpaque(false)`, 背景色: `Color(0x0, true)`と設定
     - 背景パターンは、`JScrollPane#paintComponent(...)`をオーバーライドして描画
-        - [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)は、`JViewport#paintComponent(...)`をオーバーライド
+        - [JTableを半透明にする](https://ateraimemo.com/Swing/TransparentTable.html)は、`JViewport#paintComponent(...)`をオーバーライド
 - `VerticalLine`
     - セル間の垂直線を非表示: `table.setShowVerticalLines(false);`
     - セル間の幅を`0`にして、選択時に罫線のあとが表示されないように設定: `table.setIntercellSpacing(new Dimension(0, 1));`
@@ -60,8 +60,8 @@ comments: true
         scroll.getColumnHeader().setBackground(alphaZero);
 </code></pre>
     - * 参考リンク [#reference]
-- [JTableを半透明にする](http://ateraimemo.com/Swing/TransparentTable.html)
-- [JTableHeaderを非表示にする](http://ateraimemo.com/Swing/RemoveTableHeader.html)
+- [JTableを半透明にする](https://ateraimemo.com/Swing/TransparentTable.html)
+- [JTableHeaderを非表示にする](https://ateraimemo.com/Swing/RemoveTableHeader.html)
     - `JTable`のヘッダ自体を非表示にする場合のサンプル
 - [JTable#setShowVerticalLines(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setShowVerticalLines-boolean-)
 

@@ -108,7 +108,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](http://ateraimemo.com/Swing/TableHeaderCheckBox.html)
+- [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](https://ateraimemo.com/Swing/TableHeaderCheckBox.html)
 
 <!-- dummy comment line for breaking list -->
 

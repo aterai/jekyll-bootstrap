@@ -66,7 +66,7 @@ model.addTableModelListener(e -&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのRowFilterを一旦解除してソート](http://ateraimemo.com/Swing/ResetRowFilter.html)
+- [JTableのRowFilterを一旦解除してソート](https://ateraimemo.com/Swing/ResetRowFilter.html)
 
 <!-- dummy comment line for breaking list -->
 

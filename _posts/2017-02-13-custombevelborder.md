@@ -128,7 +128,7 @@ comments: true
 ## 参考リンク
 - [BevelBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/BevelBorder.html)
 - [Create BevelBorder of certain width in Java Swing - Stack Overflow](https://stackoverflow.com/questions/38967517/create-bevelborder-of-certain-width-in-java-swing)
-- [JButtonの描画](http://ateraimemo.com/Swing/ButtonPainted.html)
+- [JButtonの描画](https://ateraimemo.com/Swing/ButtonPainted.html)
 
 <!-- dummy comment line for breaking list -->
 

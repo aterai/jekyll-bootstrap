@@ -88,7 +88,7 @@ private void saveLocation() {
 - [Preferences APIの概要](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/preferences/overview.html)
     - メモ: `Java 6`の[Preferences API の概要](http://docs.oracle.com/javase/jp/6/technotes/guides/preferences/overview.html)にある「`Java` コレクション `API` の設計に関する `FAQ`」は、「`Preferences API` の設計に関する `FAQ`」の間違い
     - `Java 8`の「`Preferences API`の概要」で修正済み
-- [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://ateraimemo.com/Swing/PersistenceService.html)
+- [PersistenceServiceを使ってJFrameの位置・サイズを記憶](https://ateraimemo.com/Swing/PersistenceService.html)
 
 <!-- dummy comment line for breaking list -->
 

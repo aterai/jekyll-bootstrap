@@ -33,7 +33,7 @@ stream(chooser)
 
 - メモ
     - `JPopupMenu`が`JComponent#setComponentPopupMenu(...)`で設定されていても、その子`Component`は取得しない
-        - [JFileChooserでの隠しファイルの非表示設定を変更する](http://ateraimemo.com/Swing/FileHidingEnabled.html)
+        - [JFileChooserでの隠しファイルの非表示設定を変更する](https://ateraimemo.com/Swing/FileHidingEnabled.html)
     - `JDK1.8`で導入された`Stream`を使用
         - 以下のように`flatMap`を使用する方法もある
             
@@ -63,8 +63,8 @@ stream(chooser)
             }
 </code></pre>
         - * 参考リンク [#reference]
-- [JFileChooserのデフォルトをDetails Viewに設定](http://ateraimemo.com/Swing/DetailsViewFileChooser.html)
-- [JFileChooserでの隠しファイルの非表示設定を変更する](http://ateraimemo.com/Swing/FileHidingEnabled.html)
+- [JFileChooserのデフォルトをDetails Viewに設定](https://ateraimemo.com/Swing/DetailsViewFileChooser.html)
+- [JFileChooserでの隠しファイルの非表示設定を変更する](https://ateraimemo.com/Swing/FileHidingEnabled.html)
 - [Get All Components in a container : Container « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/GetAllComponentsinacontainer.htm)
 
 <!-- dummy comment line for breaking list -->

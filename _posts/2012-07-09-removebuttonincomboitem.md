@@ -133,7 +133,7 @@ if (a instanceof BasicComboPopup) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JListのセル内にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInListCell.html)
+- [JListのセル内にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInListCell.html)
 
 <!-- dummy comment line for breaking list -->
 

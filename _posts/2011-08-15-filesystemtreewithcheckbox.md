@@ -103,19 +103,19 @@ comments: true
 </code></pre>
 
 ## 解説
-このサンプルは、[FileSystemViewを使ってディレクトリ構造をJTreeに表示する](http://ateraimemo.com/Swing/DirectoryTree.html)と、[JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)を組み合わせて作成しています。
+このサンプルは、[FileSystemViewを使ってディレクトリ構造をJTreeに表示する](https://ateraimemo.com/Swing/DirectoryTree.html)と、[JTreeの葉ノードをJCheckBoxにする](https://ateraimemo.com/Swing/CheckBoxNodeTree.html)を組み合わせて作成しています。
 
 - - - -
 `TreeCellEditor#isCellEditable(...)`をオーバーライドして、`JCheckBox`付近をクリックした場合のみ編集可能(チェックの有無を切り替えることができる)にし、ラベルやアイコンなどをクリックした場合は、編集状態にせずノードの展開や折り畳みができるように設定しています。
 
 ## 参考リンク
-- [FileSystemViewを使ってディレクトリ構造をJTreeに表示する](http://ateraimemo.com/Swing/DirectoryTree.html)
-- [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)
+- [FileSystemViewを使ってディレクトリ構造をJTreeに表示する](https://ateraimemo.com/Swing/DirectoryTree.html)
+- [JTreeの葉ノードをJCheckBoxにする](https://ateraimemo.com/Swing/CheckBoxNodeTree.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- [JTreeのすべてのノードにJCheckBoxを追加する](http://ateraimemo.com/Swing/CheckBoxNodeEditor.html) で使用している`TreeModelListener`を追加して`JCheckBox`の状態を変更するように修正。 -- *aterai* 2012-04-13 (金) 20:12:08
+- [JTreeのすべてのノードにJCheckBoxを追加する](https://ateraimemo.com/Swing/CheckBoxNodeEditor.html) で使用している`TreeModelListener`を追加して`JCheckBox`の状態を変更するように修正。 -- *aterai* 2012-04-13 (金) 20:12:08
 - チェックされたノード(最上位となる)の一覧をコンソールに表示する`JButton`を追加(スクリーンショットなどは面倒なので更新しない)。 -- *aterai* 2012-04-19 (木) 19:50:07
 - ノードをチェックしてから、そのディレクトリを開いても子ディレクトリにチェックが反映されない。 -- *aterai* 2012-07-31 (火) 18:15:44
 - いつも勉強させていただいております。サンプルでは`root`はデスクトップとなっていますが、もし例えば`Z:\`または`Z:\aaa`と`TOP`にしたい場合、どこを修正すれば宜しいでしょうか？ご教示をお願いいたします。 -- *Tiger* 2013-12-25 (水) 14:11:08

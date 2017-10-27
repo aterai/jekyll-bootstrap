@@ -30,7 +30,7 @@ comments: true
 - 注:
     - `JFrame#pack()`や、`JFrame#setSize(int, int)`などが実行されて親コンポーネントのサイズが決定した後で、`JSplitPane#setDividerLocation(...)`メソッドを実行しないと効果がない
     - ディバイダ自身の幅(`JSplitPane#getDividerSize()`)は含まれない
-    - 内部では、切り捨てで`JSplitPane#setDividerLocation(int)`を使用: [JSplitPaneのDividerの位置を最大化後に変更する](http://ateraimemo.com/Swing/DividerSplitRatio.html)
+    - 内部では、切り捨てで`JSplitPane#setDividerLocation(int)`を使用: [JSplitPaneのDividerの位置を最大化後に変更する](https://ateraimemo.com/Swing/DividerSplitRatio.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -39,7 +39,7 @@ comments: true
 
 ## 参考リンク
 - [JSplitPane#setDividerLocation(double) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSplitPane.html#setDividerLocation-double-)
-- [JSplitPaneのDividerの位置を最大化後に変更する](http://ateraimemo.com/Swing/DividerSplitRatio.html)
+- [JSplitPaneのDividerの位置を最大化後に変更する](https://ateraimemo.com/Swing/DividerSplitRatio.html)
 
 <!-- dummy comment line for breaking list -->
 

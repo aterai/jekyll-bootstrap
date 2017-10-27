@@ -32,7 +32,7 @@ comments: true
     - `BasicSliderUI#createTrackListener(...)`をオーバーライドし、`shouldScroll(...)`メソッドが常に`false`を返す`TrackListener`を生成する
     - `BasicSliderUI#scrollDueToClickInTrack(...)`を空にしても、長押しでスクロールを行う`Timer`が起動し、`BasicSliderUI#scrollByBlock(...)`などが実行されて値が変化する
     - `UIManager.put("Slider.onlyLeftMouseButtonDrag", false);`を設定し、マウスの右ボタンでノブのドラッグを可能に設定し、`JLayer`を使用して左ボタンの押下を右ボタンの押下に入れ替える
-    - 参考: [JSliderのノブをマウスの右ボタンで操作不可に設定する](http://ateraimemo.com/Swing/OnlyLeftMouseButtonDrag.html)
+    - 参考: [JSliderのノブをマウスの右ボタンで操作不可に設定する](https://ateraimemo.com/Swing/OnlyLeftMouseButtonDrag.html)
     - トラックの右クリックは、元々無効なので、この入れ替えにより、トラックのクリックによる値変更は無効になる
 
 <!-- dummy comment line for breaking list -->

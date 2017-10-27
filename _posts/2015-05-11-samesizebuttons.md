@@ -37,8 +37,8 @@ comments: true
     - * 参考リンク [#reference]
 - [java - JOptionPane button size (Nimbus LAF) - Stack Overflow](https://stackoverflow.com/questions/30138984/joptionpane-button-size-nimbus-laf)
 - [JOptionPane固有のプロパティ](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/synth/doc-files/componentProperties.html)
-- [Nimbusの外観をUIDefaultsで変更する](http://ateraimemo.com/Swing/UIDefaultsOverrides.html)
-- [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
+- [Nimbusの外観をUIDefaultsで変更する](https://ateraimemo.com/Swing/UIDefaultsOverrides.html)
+- [JButtonなどの高さを変更せずに幅を指定](https://ateraimemo.com/Swing/ButtonWidth.html)
 
 <!-- dummy comment line for breaking list -->
 

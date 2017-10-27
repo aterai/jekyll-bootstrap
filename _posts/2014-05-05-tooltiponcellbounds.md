@@ -75,7 +75,7 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JToolTipの表示位置](http://ateraimemo.com/Swing/ToolTipLocation.html)
+- [JToolTipの表示位置](https://ateraimemo.com/Swing/ToolTipLocation.html)
 
 <!-- dummy comment line for breaking list -->
 

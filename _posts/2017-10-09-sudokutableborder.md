@@ -71,7 +71,7 @@ comments: true
 上記のサンプルでは、以下のような設定で`3x3`のブロック罫線の太さを変更し、数独風のセル罫線をもつ`JTable`を作成しています。
 
 - すべてのセルの罫線を非表示、セルの内余白を`0`に設定
-    - [JTableの罫線の有無とセルの内余白を変更](http://ateraimemo.com/Swing/IntercellSpacing.html)
+    - [JTableの罫線の有無とセルの内余白を変更](https://ateraimemo.com/Swing/IntercellSpacing.html)
     - `JTable#setShowVerticalLines(false)`、`JTable#setShowHorizontalLines(false)`、`JTable#setIntercellSpacing(new Dimension());`
 - 列幅、行高を罫線分だけ増加
     - `2,5,8`列目のセル列幅をブロック罫線の幅だけ増加、その他のセル列幅はセル罫線の幅だけ増加: `TableColumn#setPreferredWidth(int)`
@@ -85,8 +85,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLabelに表示するtableタグの罫線を変更する](http://ateraimemo.com/Swing/HtmlTableBorderStyle.html)
-- [JTableの罫線の有無とセルの内余白を変更](http://ateraimemo.com/Swing/IntercellSpacing.html)
+- [JLabelに表示するtableタグの罫線を変更する](https://ateraimemo.com/Swing/HtmlTableBorderStyle.html)
+- [JTableの罫線の有無とセルの内余白を変更](https://ateraimemo.com/Swing/IntercellSpacing.html)
 
 <!-- dummy comment line for breaking list -->
 

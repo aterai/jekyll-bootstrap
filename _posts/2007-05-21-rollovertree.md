@@ -64,7 +64,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeで条件に一致するノードを検索しハイライト](http://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
+- [JTreeで条件に一致するノードを検索しハイライト](https://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
 
 <!-- dummy comment line for breaking list -->
 

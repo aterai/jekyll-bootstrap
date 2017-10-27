@@ -52,8 +52,8 @@ table.getTableHeader().addMouseListener(new MouseAdapter() {
 
 ## 参考リンク
 - [TableSorter.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)
-- [TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)
-- [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](http://ateraimemo.com/Swing/TriStateSorting.html)
+- [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
+- [TableRowSorterのソートをヘッダクリックで昇順、降順、初期状態に変更](https://ateraimemo.com/Swing/TriStateSorting.html)
 
 <!-- dummy comment line for breaking list -->
 

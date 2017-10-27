@@ -77,7 +77,7 @@ private void setLookAndFeel(String laf) {
 - - - -
 `SwingSet3`では、`UIManager.getInstalledLookAndFeels()`メソッドを使って利用可能な`LookAndFeel`の一覧を取得し、これをメニューに表示しているようです。
 
-- [LookAndFeelの一覧を取得する](http://ateraimemo.com/Swing/InstalledLookAndFeels.html)
+- [LookAndFeelの一覧を取得する](https://ateraimemo.com/Swing/InstalledLookAndFeels.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -114,7 +114,7 @@ private void setLookAndFeel(String laf) {
 
 ## 参考リンク
 - [How to Set the Look and Feel](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html)
-- [LookAndFeelの一覧を取得する](http://ateraimemo.com/Swing/InstalledLookAndFeels.html)
+- [LookAndFeelの一覧を取得する](https://ateraimemo.com/Swing/InstalledLookAndFeels.html)
     - `SwingSet3`からコードを引用したサンプル
 
 <!-- dummy comment line for breaking list -->

@@ -47,7 +47,7 @@ class CheckedComboBox4&lt;E extends CheckableItem&gt; extends CheckedComboBox&lt
 
 1. `setSelectedIndex(-1/idx)`
     - `JComboBox#setSelectedIndex(-1)`メソッドを使用して選択解除後、クリックされたアイテムを再選択することで描画を更新
-    - 参考: [JComboBoxのアイテムとして表示したJCheckBoxを複数選択する](http://ateraimemo.com/Swing/CheckedComboBox.html)
+    - 参考: [JComboBoxのアイテムとして表示したJCheckBoxを複数選択する](https://ateraimemo.com/Swing/CheckedComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 1. `contentsChanged(...)`
@@ -57,7 +57,7 @@ class CheckedComboBox4&lt;E extends CheckableItem&gt; extends CheckedComboBox&lt
 <!-- dummy comment line for breaking list -->
 1. `repaint()`
     - アイテム更新後、`JComboBox`と`BasicComboPopup`から取得した`JList`の両方の`repaint()`メソッドを実行して、全体を再描画
-    - 参考: [JComboBoxにAnimated GIFを表示する](http://ateraimemo.com/Swing/AnimatedIconInComboBox.html)
+    - 参考: [JComboBoxにAnimated GIFを表示する](https://ateraimemo.com/Swing/AnimatedIconInComboBox.html)
         - `list.repaint(list.getCellBounds(index, index));`を使用して再描画範囲を限定することも可能
 
 <!-- dummy comment line for breaking list -->
@@ -71,8 +71,8 @@ class CheckedComboBox4&lt;E extends CheckableItem&gt; extends CheckedComboBox&lt
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JComboBoxのアイテムとして表示したJCheckBoxを複数選択する](http://ateraimemo.com/Swing/CheckedComboBox.html)
-- [JListのセルにJCheckBoxを使用する](http://ateraimemo.com/Swing/CheckBoxCellList.html)
+- [JComboBoxのアイテムとして表示したJCheckBoxを複数選択する](https://ateraimemo.com/Swing/CheckedComboBox.html)
+- [JListのセルにJCheckBoxを使用する](https://ateraimemo.com/Swing/CheckBoxCellList.html)
     - こちらは`JList#processMouseEvent(...)`をオーバーライドして対応
 
 <!-- dummy comment line for breaking list -->

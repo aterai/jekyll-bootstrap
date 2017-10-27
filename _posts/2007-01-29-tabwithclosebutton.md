@@ -49,14 +49,14 @@ comments: true
 ## 解説
 `JDK 6`から追加されたタブにコンポーネントを配置する機能を使って、`JButton`をタブに追加しています。
 
-[以前のサンプル](http://ateraimemo.com/Swing/TabWithCloseIcon.html)に比べると、実装も簡単でコードも短くなっています。
+[以前のサンプル](https://ateraimemo.com/Swing/TabWithCloseIcon.html)に比べると、実装も簡単でコードも短くなっています。
 
 ## 参考リンク
 - [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)
 - [How to Use Tabbed Panes (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html)
 - [JTabbedPane#setTabComponentAt(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setTabComponentAt-int-java.awt.Component-)
-- [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)
-- [JTabbedPaneのTabTitleを左揃えに変更](http://ateraimemo.com/Swing/TabTitleAlignment.html)
+- [JTabbedPaneにタブを閉じるアイコンを追加](https://ateraimemo.com/Swing/TabWithCloseIcon.html)
+- [JTabbedPaneのTabTitleを左揃えに変更](https://ateraimemo.com/Swing/TabTitleAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 

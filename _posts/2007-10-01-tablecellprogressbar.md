@@ -97,7 +97,7 @@ executor.execute(worker); //1.6.0_18
 - - - -
 - このサンプルでは、行番号をキーにしているため、例えばモデルから行を削除するときに実行中のタスクが手前の行などに存在する場合はエラーが発生する
     - これを回避するため、実際には行の削除を実行せず、フィルタを使って行を非表示に設定する
-    - 参考: [RowFilterでJTableの行をフィルタリング](http://ateraimemo.com/Swing/RowFilter.html)
+    - 参考: [RowFilterでJTableの行をフィルタリング](https://ateraimemo.com/Swing/RowFilter.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -115,8 +115,8 @@ executor.execute(worker); //1.6.0_18
 </code></pre>
 
 ## 参考リンク
-- [SwingWorkerを使った処理の中断と進捗状況表示](http://ateraimemo.com/Swing/SwingWorker.html)
-- [TableCellRendererに進捗文字列を設定したJProgressBarを使用する](http://ateraimemo.com/Swing/StringPaintedCellProgressBar.html)
+- [SwingWorkerを使った処理の中断と進捗状況表示](https://ateraimemo.com/Swing/SwingWorker.html)
+- [TableCellRendererに進捗文字列を設定したJProgressBarを使用する](https://ateraimemo.com/Swing/StringPaintedCellProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 

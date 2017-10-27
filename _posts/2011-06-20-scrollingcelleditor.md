@@ -95,8 +95,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TableCellEditorのレイアウトを変更](http://ateraimemo.com/Swing/CellEditorLayout.html)
-- [JTableのセル幅で文字列を折り返し](http://ateraimemo.com/Swing/TableCellRenderer.html)
+- [TableCellEditorのレイアウトを変更](https://ateraimemo.com/Swing/CellEditorLayout.html)
+- [JTableのセル幅で文字列を折り返し](https://ateraimemo.com/Swing/TableCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

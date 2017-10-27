@@ -101,7 +101,7 @@ comments: true
 上記のサンプルでは、`TreeModel`から取得した`TreeNode`を`JComboBox`の`Item`として、ドロップダウンリストに表示しています。
 
 - `TreeNode#isLeaf()`の場合だけ、選択可能
-    - [JComboBoxのアイテムを選択不可にする](http://ateraimemo.com/Swing/DisableItemComboBox.html)
+    - [JComboBoxのアイテムを選択不可にする](https://ateraimemo.com/Swing/DisableItemComboBox.html)
 - 子要素のインデントは`BorderFactory.createEmptyBorder(0, indent, 0, 0)`で設定
 
 <!-- dummy comment line for breaking list -->
@@ -109,7 +109,7 @@ comments: true
 ## 参考リンク
 - [Tree inside JComboBox - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/tree_inside_jcombobox)
     - `TreeCellRenderer`を使用し、ノードアイコンなども含めて`JTree`をドロップダウンリストに表示するサンプルがある
-- [JComboBoxのアイテムを選択不可にする](http://ateraimemo.com/Swing/DisableItemComboBox.html)
+- [JComboBoxのアイテムを選択不可にする](https://ateraimemo.com/Swing/DisableItemComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

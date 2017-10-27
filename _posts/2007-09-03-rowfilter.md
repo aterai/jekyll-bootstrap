@@ -52,6 +52,6 @@ sorter.setRowFilter(RowFilter.andFilter(filters));
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 「`IndexOutOfBoundsException`が発生する…」は、[TableRowSorterでJTableのソート](http://ateraimemo.com/Swing/TableRowSorter.html)に移動しました。 -- *aterai* 2011-02-04 (金) 15:19:12
+- 「`IndexOutOfBoundsException`が発生する…」は、[TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)に移動しました。 -- *aterai* 2011-02-04 (金) 15:19:12
 
 <!-- dummy comment line for breaking list -->

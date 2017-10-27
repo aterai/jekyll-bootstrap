@@ -34,7 +34,7 @@ comments: true
 
 ## 参考リンク
 - [Swing - JFileChooser setMinimunSize not working?](https://community.oracle.com/thread/1374445)
-- [JFrameの最小サイズ](http://ateraimemo.com/Swing/MinimumFrame.html)
+- [JFrameの最小サイズ](https://ateraimemo.com/Swing/MinimumFrame.html)
 
 <!-- dummy comment line for breaking list -->
 

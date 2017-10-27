@@ -72,17 +72,17 @@ comments: true
 
 ## 解説
 - セル中文字列のハイライト
-    - 参考: [JTreeのノード中の文字列をハイライトする](http://ateraimemo.com/Swing/HighlightWordInNode.html)
+    - 参考: [JTreeのノード中の文字列をハイライトする](https://ateraimemo.com/Swing/HighlightWordInNode.html)
     - `JTextField`を継承する`TableCellRenderer`を作成し、`JTextField#getHighlighter()#addHighlight(...)`メソッドで検索結果をハイライト表示
 - 行のフィルタリング
-    - 参考: [RowFilterでJTableの行をフィルタリング](http://ateraimemo.com/Swing/RowFilter.html)
+    - 参考: [RowFilterでJTableの行をフィルタリング](https://ateraimemo.com/Swing/RowFilter.html)
     - `RowFilter.regexFilter(pattern)`で正規表現を使用するフィルタを作成し、その検索にマッチする行以外は非表示
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeのノード中の文字列をハイライトする](http://ateraimemo.com/Swing/HighlightWordInNode.html)
-- [RowFilterでJTableの行をフィルタリング](http://ateraimemo.com/Swing/RowFilter.html)
+- [JTreeのノード中の文字列をハイライトする](https://ateraimemo.com/Swing/HighlightWordInNode.html)
+- [RowFilterでJTableの行をフィルタリング](https://ateraimemo.com/Swing/RowFilter.html)
 
 <!-- dummy comment line for breaking list -->
 

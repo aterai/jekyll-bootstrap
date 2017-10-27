@@ -53,7 +53,7 @@ try {
 `java.swing.Timer`でイベントを発生させ、`scrollRectToVisible(...)`メソッドを使用して目的位置と現在位置の差の半分だけ`ViewRect`のスクロールを繰り返すことで行移動アニメーションを行っています。
 
 ## 参考リンク
-- [JTextAreaの任意の行に移動](http://ateraimemo.com/Swing/GotoLine.html)
+- [JTextAreaの任意の行に移動](https://ateraimemo.com/Swing/GotoLine.html)
 
 <!-- dummy comment line for breaking list -->
 

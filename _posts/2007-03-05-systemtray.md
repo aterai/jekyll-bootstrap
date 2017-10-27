@@ -62,8 +62,8 @@ comments: true
 実際に`VM`を終了する場合は、表示可能なウィンドウをすべて破棄して(`frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);`)、システムトレイからも`tray.remove(icon);`してアイコンを取り除けばいいようです。
 
 ## 参考リンク
-- [TrayIconのアニメーション](http://ateraimemo.com/Swing/AnimatedTrayIcon.html)
-- [TrayIconのダブルクリック](http://ateraimemo.com/Swing/ClickTrayIcon.html)
+- [TrayIconのアニメーション](https://ateraimemo.com/Swing/AnimatedTrayIcon.html)
+- [TrayIconのダブルクリック](https://ateraimemo.com/Swing/ClickTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -92,9 +92,9 @@ TrayIcon icon   = new TrayIcon(image, "TRAY", popup);
 - 消したいのはタイトルバーではなくてシステムトレイの隣のタスクバーアイコンです。文字で伝えるのは難しいですね。 --  2010-03-08 (月) 17:28:43
 - スクリーンショットで`JST`システムトレイとタスクバーにあるやつです --  2010-03-08 (月) 17:30:21
     - `JFrame`の代わりに、`JWindow`を使うのはどうでしょうか。 -- *aterai* 2010-03-09 (火) 16:26:47
-    - もしくは、[JFrameのアイコンを非表示](http://ateraimemo.com/Swing/DisableDefaultIcon.html)のように透明なアイコンを設定する(クリックすると反応してしまいますが…)とか。 -- [aterai](http://ateraimemo.com/aterai.html)
+    - もしくは、[JFrameのアイコンを非表示](https://ateraimemo.com/Swing/DisableDefaultIcon.html)のように透明なアイコンを設定する(クリックすると反応してしまいますが…)とか。 -- [aterai](https://ateraimemo.com/aterai.html)
     - `4`年以上前で、いまさら過ぎるのですが、やっと理解しました。自分の回答は的外れすぎですね。アイコン化したときにタスクバーボタンを非表示にするには、`Window#dispose()`を実行するとよさそうです。このサンプルを修正して非表示にするよう変更しました。 -- *aterai* 2014-12-25 (火) 16:35:38
-    - [TrayIconの使用中にJFrameを最小化したとき、タスクバーボタンを非表示にする](http://ateraimemo.com/Swing/HideTaskbarButton.html)に移動
+    - [TrayIconの使用中にJFrameを最小化したとき、タスクバーボタンを非表示にする](https://ateraimemo.com/Swing/HideTaskbarButton.html)に移動
 - 間違えて、`Window#addWindowStateListener(...)`を使用していたので、`Window#addWindowListener(...)`を使用するように修正。 -- *aterai* 2014-12-25 (水) 17:57:58
 
 <!-- dummy comment line for breaking list -->

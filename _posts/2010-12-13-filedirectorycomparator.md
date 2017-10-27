@@ -62,7 +62,7 @@ class FileGroupComparator extends DefaultFileComparator {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeのソート](http://ateraimemo.com/Swing/SortTree.html)
+- [JTreeのソート](https://ateraimemo.com/Swing/SortTree.html)
 
 <!-- dummy comment line for breaking list -->
 

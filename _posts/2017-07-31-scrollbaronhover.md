@@ -63,7 +63,7 @@ comments: true
 
 ## 参考リンク
 - [JLayer#setLayerEventMask(long) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JLayer.html#setLayerEventMask-long-)
-- [JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)
+- [JScrollBarを半透明にする](https://ateraimemo.com/Swing/TranslucentScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -44,8 +44,8 @@ private String makeTitle(String t, String p) {
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-- [JLabelのアイコンと文字列の位置](http://ateraimemo.com/Swing/TextPositionAndAlignment.html)
-- [JTabbedPaneのタイトルをクリップ](http://ateraimemo.com/Swing/ClippedTabLabel.html)
+- [JLabelのアイコンと文字列の位置](https://ateraimemo.com/Swing/TextPositionAndAlignment.html)
+- [JTabbedPaneのタイトルをクリップ](https://ateraimemo.com/Swing/ClippedTabLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

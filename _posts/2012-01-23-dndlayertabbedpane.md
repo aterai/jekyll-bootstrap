@@ -56,7 +56,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)や、[JTabbedPane間でタブのドラッグ＆ドロップ移動](http://ateraimemo.com/Swing/DnDExportTabbedPane.html)のように`GlassPane`を使用する代わりに、`JDK 1.7.0`で導入された`JLayer`を使用して、タブの挿入先を描画しています。`JLayer`を使用することで、別ウィンドウにある`JTabbedPane`へのタブ移動などの描画が簡単にできるようになっています。
+上記のサンプルでは、[JTabbedPaneのタブをドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDTabbedPane.html)や、[JTabbedPane間でタブのドラッグ＆ドロップ移動](https://ateraimemo.com/Swing/DnDExportTabbedPane.html)のように`GlassPane`を使用する代わりに、`JDK 1.7.0`で導入された`JLayer`を使用して、タブの挿入先を描画しています。`JLayer`を使用することで、別ウィンドウにある`JTabbedPane`へのタブ移動などの描画が簡単にできるようになっています。
 
 - - - -
 メニューバーから、ドラッグ中の半透明タブイメージの描画方法を切り替えてテストすることができます。
@@ -98,8 +98,8 @@ public TabTransferHandler() {
 </code></pre>
 
 ## 参考リンク
-- [JTabbedPaneのタブをドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDTabbedPane.html)
-- [JTabbedPane間でタブのドラッグ＆ドロップ移動](http://ateraimemo.com/Swing/DnDExportTabbedPane.html)
+- [JTabbedPaneのタブをドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDTabbedPane.html)
+- [JTabbedPane間でタブのドラッグ＆ドロップ移動](https://ateraimemo.com/Swing/DnDExportTabbedPane.html)
 - [Free the pixel: GHOST drag and drop, over multiple windows](http://free-the-pixel.blogspot.com/2010/04/ghost-drag-and-drop-over-multiple.html)
 
 <!-- dummy comment line for breaking list -->

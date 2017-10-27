@@ -54,7 +54,7 @@ combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
 ## 参考リンク
 - [JComboBox#setPrototypeDisplayValue(E) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComboBox.html#setPrototypeDisplayValue-E-)
 - [JList#setPrototypeCellValue(E) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#setPrototypeCellValue-E-)
-- [JComboBoxなどの幅をカラム数で指定](http://ateraimemo.com/Swing/SetColumns.html)
+- [JComboBoxなどの幅をカラム数で指定](https://ateraimemo.com/Swing/SetColumns.html)
 
 <!-- dummy comment line for breaking list -->
 

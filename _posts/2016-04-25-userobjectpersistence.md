@@ -31,7 +31,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[JTreeのすべてのノードにJCheckBoxを追加する](http://ateraimemo.com/Swing/CheckBoxNodeEditor.html)などで使用しているチェックボックス付き`JTree`を、そのチェック状態も含めて永続化を行っています。
+上記のサンプルでは、[JTreeのすべてのノードにJCheckBoxを追加する](https://ateraimemo.com/Swing/CheckBoxNodeEditor.html)などで使用しているチェックボックス付き`JTree`を、そのチェック状態も含めて永続化を行っています。
 
 - `JTree`の`DefaultTreeModel`や`DefaultMutableTreeNode`は、デフォルトで`XMLEncoder`に対応
 - `UserObject`として名前とチェック状態を保持する`CheckBoxNode`クラスは`XMLEncoder`に未対応なので、`DefaultPersistenceDelegate`で書き出し保存するプロパティを指定
@@ -42,9 +42,9 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](http://ateraimemo.com/Swing/SortKeyPersistence.html)
-- [JTreeのすべてのノードにJCheckBoxを追加する](http://ateraimemo.com/Swing/CheckBoxNodeEditor.html)
-- [JTreeの展開状態を記憶・復元する](http://ateraimemo.com/Swing/ExpandedDescendants.html)
+- [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](https://ateraimemo.com/Swing/SortKeyPersistence.html)
+- [JTreeのすべてのノードにJCheckBoxを追加する](https://ateraimemo.com/Swing/CheckBoxNodeEditor.html)
+- [JTreeの展開状態を記憶・復元する](https://ateraimemo.com/Swing/ExpandedDescendants.html)
 
 <!-- dummy comment line for breaking list -->
 

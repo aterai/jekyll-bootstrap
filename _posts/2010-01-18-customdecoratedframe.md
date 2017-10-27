@@ -71,7 +71,7 @@ comments: true
 `JDK 1.7.0`の場合、`JFrame`の背景色を透明(`frame.setBackground(new Color(0x0, true));`)にし、`ContentPane`の左右上の角をクリアして透明にしています。
 
 - - - -
-[JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)のように、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`を使用してリサイズする方法もあります。
+[JRootPaneにリサイズのための装飾を設定する](https://ateraimemo.com/Swing/WindowDecorationStyle.html)のように、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`を使用してリサイズする方法もあります。
 
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;
@@ -161,9 +161,9 @@ class DragWindowListener extends MouseAdapter {
 
 ## 参考リンク
 - [Swing - Undecorated and resizable dialog](https://community.oracle.com/thread/1365156)
-- [JWindowをマウスで移動](http://ateraimemo.com/Swing/DragWindow.html)
-- [JInternalFrameをJFrameとして表示する](http://ateraimemo.com/Swing/InternalFrameTitleBar.html)
-- [JRootPaneにリサイズのための装飾を設定する](http://ateraimemo.com/Swing/WindowDecorationStyle.html)
+- [JWindowをマウスで移動](https://ateraimemo.com/Swing/DragWindow.html)
+- [JInternalFrameをJFrameとして表示する](https://ateraimemo.com/Swing/InternalFrameTitleBar.html)
+- [JRootPaneにリサイズのための装飾を設定する](https://ateraimemo.com/Swing/WindowDecorationStyle.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -87,7 +87,7 @@ comments: true
 ## 参考リンク
 - [JDK-5094219 JEditorPane doesn't recognize CSS vertical-align property - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-5094219)
 - [ImageView#getAlignment(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/ImageView.html#getAlignment-int-)
-- [JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)
+- [JTextPaneに追加するコンポーネントのベースラインを揃える](https://ateraimemo.com/Swing/InsertComponentBaseline.html)
 
 <!-- dummy comment line for breaking list -->
 

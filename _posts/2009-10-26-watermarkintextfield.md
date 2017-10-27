@@ -48,16 +48,16 @@ comments: true
 
 ## 解説
 - 上
-    - [JTextFieldにフォーカスと文字列が無い場合の表示](http://ateraimemo.com/Swing/GhostText.html)
+    - [JTextFieldにフォーカスと文字列が無い場合の表示](https://ateraimemo.com/Swing/GhostText.html)
 - 下
     - `JTextField`の文字列が空でフォーカスも無い場合、文字列ではなく画像を表示
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextFieldにフォーカスと文字列が無い場合の表示](http://ateraimemo.com/Swing/GhostText.html)
-- [JPasswordFieldにヒント文字列を描画する](http://ateraimemo.com/Swing/InputHintPasswordField.html)
-    - [JTextFieldにフォーカスと文字列が無い場合の表示](http://ateraimemo.com/Swing/GhostText.html)の方法は`JPasswordField`に応用できないので、`JLabel`を配置することでヒント文字列を表示
+- [JTextFieldにフォーカスと文字列が無い場合の表示](https://ateraimemo.com/Swing/GhostText.html)
+- [JPasswordFieldにヒント文字列を描画する](https://ateraimemo.com/Swing/InputHintPasswordField.html)
+    - [JTextFieldにフォーカスと文字列が無い場合の表示](https://ateraimemo.com/Swing/GhostText.html)の方法は`JPasswordField`に応用できないので、`JLabel`を配置することでヒント文字列を表示
 
 <!-- dummy comment line for breaking list -->
 

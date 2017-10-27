@@ -68,7 +68,7 @@ JComboBox&lt;String&gt; combo2 = new JComboBox&lt;String&gt;(model) {
     - `ComboPopup#getList()`メソッドでドロップダウンリストで使用される`JList`を取得
     - `JList#setSelectionForeground(...)`、`JList#setSelectionBackground(...)`メソッドを使用してその選択背景色と選択文字色を変更
 - `DefaultListCellRenderer`
-    - 参考: [JComboBoxの文字色を変更する](http://ateraimemo.com/Swing/ComboBoxForegroundColor.html)
+    - 参考: [JComboBoxの文字色を変更する](https://ateraimemo.com/Swing/ComboBoxForegroundColor.html)
     - `DefaultListCellRenderer#getListCellRendererComponent(...)`メソッドをオーバーライドして選択背景色と選択文字色を変更
     - `JComboBox`本体のフォーカス時の`Border`(`WindowsLookAndFeel`の場合は`WindowsBorders.DashedBorder`)が非表示になる
         - 回避方法: セルの描画を`DefaultListCellRenderer`を継承するレンダラーではなく、`JComboBox#getRenderer()`で取得した`LookAndFeel`デフォルトのレンダラーに移譲するなどの方法がある
@@ -98,8 +98,8 @@ JComboBox&lt;String&gt; combo2 = new JComboBox&lt;String&gt;(model) {
             };
 </code></pre>
         - * 参考リンク [#reference]
-- [JComboBoxの色を変更](http://ateraimemo.com/Swing/ColorComboBox.html)
-- [JComboBoxの文字色を変更する](http://ateraimemo.com/Swing/ComboBoxForegroundColor.html)
+- [JComboBoxの色を変更](https://ateraimemo.com/Swing/ColorComboBox.html)
+- [JComboBoxの文字色を変更する](https://ateraimemo.com/Swing/ComboBoxForegroundColor.html)
 - [ComboPopup#getList() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/ComboPopup.html#getList--)
 
 <!-- dummy comment line for breaking list -->

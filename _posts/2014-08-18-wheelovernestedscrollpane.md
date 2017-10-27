@@ -58,7 +58,7 @@ comments: true
 上記のサンプルでは、子`JScrollPane`の縦スクロールバーが最下部にあるなら下方向(最上部なら上方向)の`MouseWheelEvent`は親`JScrollPane`に転送する`LayerUI`を作成し、これを親`JScrollPane`の`JLayer<JScrollPane>`に適用しています。
 
 ## 参考リンク
-- [JScrollBarが最後までスクロールしたことを確認する](http://ateraimemo.com/Swing/DetectScrollToBottom.html)
+- [JScrollBarが最後までスクロールしたことを確認する](https://ateraimemo.com/Swing/DetectScrollToBottom.html)
 
 <!-- dummy comment line for breaking list -->
 

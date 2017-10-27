@@ -84,8 +84,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成](http://ateraimemo.com/Swing/CompoundButton.html)
-- [JProgressBarにUIを設定してインジケータの色を変更](http://ateraimemo.com/Swing/GradientPalletProgressBar.html)
+- [OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成](https://ateraimemo.com/Swing/CompoundButton.html)
+- [JProgressBarにUIを設定してインジケータの色を変更](https://ateraimemo.com/Swing/GradientPalletProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 

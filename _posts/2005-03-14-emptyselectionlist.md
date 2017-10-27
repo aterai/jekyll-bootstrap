@@ -102,7 +102,7 @@ public class DisabledTextForegroundList {
 </code></pre>
 
 ## 参考リンク
-- [JListの任意のItemを選択不可にする](http://ateraimemo.com/Swing/DisabledItem.html)
+- [JListの任意のItemを選択不可にする](https://ateraimemo.com/Swing/DisabledItem.html)
 
 <!-- dummy comment line for breaking list -->
 

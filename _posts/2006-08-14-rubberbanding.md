@@ -106,7 +106,7 @@ comments: true
 ## 参考リンク
 - [Swing - Can someone optimise the following code ?](https://community.oracle.com/thread/1378164)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-- [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](http://ateraimemo.com/Swing/DragSelectDropReordering.html)
+- [JListのアイテムをラバーバンドで複数選択、ドラッグ＆ドロップで並べ替え](https://ateraimemo.com/Swing/DragSelectDropReordering.html)
     - このラバーバンドで選択したアイテムを実際にドラッグして並べ替えるサンプル
 
 <!-- dummy comment line for breaking list -->

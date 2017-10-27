@@ -68,14 +68,14 @@ class TextFieldPopupMenu extends JPopupMenu {
 - - - -
 サンプルを`Java Web Start`で起動した場合は、システム全体の共有クリップボードにはアクセス不可能で、アプリケーション内部のみでのコピー、貼り付けとなります。
 
-- [ClipboardServiceでシステム全体の共有クリップボードにアクセスする](http://ateraimemo.com/Swing/ClipboardService.html)
+- [ClipboardServiceでシステム全体の共有クリップボードにアクセスする](https://ateraimemo.com/Swing/ClipboardService.html)
 
 <!-- dummy comment line for breaking list -->
 
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTKnUb6nqI/AAAAAAAAAWQ/L3ylLdA-GIw/s800/DefaultEditorKit1.png)
 
 ## 参考リンク
-- [JTextFieldでコピー、貼り付けなどを禁止](http://ateraimemo.com/Swing/ActionMap.html)
+- [JTextFieldでコピー、貼り付けなどを禁止](https://ateraimemo.com/Swing/ActionMap.html)
 - [DefaultEditorKit (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultEditorKit.html)
 
 <!-- dummy comment line for breaking list -->

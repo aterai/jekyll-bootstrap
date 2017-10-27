@@ -80,7 +80,7 @@ class Test {
 </code></pre>
 
 - `MetalLookAndFeel`で、`bold fonts`を無効にする場合
-    - [MetalLookAndFeelで太字フォントを使用しない](http://ateraimemo.com/Swing/BoldMetal.html)
+    - [MetalLookAndFeelで太字フォントを使用しない](https://ateraimemo.com/Swing/BoldMetal.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -125,11 +125,11 @@ combo.setPrototypeDisplayValue(null); //null:default?
 - すべてのコンポーネントに一々設定するのが面倒な場合のための方法なので、上記の場合は使用する意味が無いですね(^^;。ある独自コンポーネントのみフォントを変えたいのなら、コンストラクタなどで普通に`setFont`すればいいのでないかと思うのですが、どうなんでしょう？そうではなく、あるパネル以下のコンポーネントのフォントを一気に変えたいということなんでしょうか？ -- *aterai* 2004-01-23 (金) 12:13:27
 - たびたびすみません。全体のフォントの大きさをツールバーの選択によって変化させるようにしたいです。フォントだけ変化させたいのですが、コンストラクタなどで勝手に`setBackground`しているコンポーネントは`Look and Feel`で設定しているデフォルトの`background`に変わってしまいました。また`new`するわけではないので、そのコンポーネントのみのデフォルトをどこかで設定できたらいいなー、と思いました。`Look and Feel`でも`panel`だったら`panel`全ての設定しかできないのでしょうか？有効な方法があれば教えてください。よろしくお願いいたします。 -- *mari* 2004-01-23 (金) 14:05:47
 - `Look and Feel`で変更するのではなく、イベントリスナーを作って実装するのはどうでしょう？はずしてるかもしれませんが、とりあえずサンプル置いておきます。初期値はコンストラクタで指定してます。ツールバーじゃなくてメニューで、フォントを切り替えてます。コンボボックスを切り替えたときにサイズがおかしいのは愛嬌ということで…。 -- *aterai* 2004-01-23 (金) 15:39:27
-    - [EventListenerを実装して独自イベント作成](http://ateraimemo.com/Swing/EventListener.html)
+    - [EventListenerを実装して独自イベント作成](https://ateraimemo.com/Swing/EventListener.html)
 - すばらしいサンプルありがとうございます！参考にさせていただきました☆フォントの変更を`Look and Feel`で行って、残りの描画できなかった背景色などを`PropertyChangeListener`を実装して描画しなおす、という方法も考えたのですが、こちらでも問題ないでしょうか？主題から外れてしまって申し訳ありません・・・。 -- *mari* 2004-01-26 (月) 09:56:38
 - 次のネタ用にイベント作っただけなので、`PropertyChangeListener`使うのはまったく問題ないと思います。むしろちゃんと`JavaBeans`にして`PropertyChangeListener`使うほうがいいかもしれません(^^;。 -- *aterai* 2004-01-26 (月) 12:54:00
 - `updateUI()`をオーバーライドする方法を追記。 -- *aterai* 2013-02-26 (火) 16:15:09
 - `Nimbus`の場合は、この方法では駄目でした。バグのようです。回避策は、`UIManager.getLookAndFeelDefaults().put("defaultFont", new Font(Font.SANS_SERIF, 0, 20));`をフレームを`new`する前に実行する事でした。 参考：[swing - Java: Altering UI fonts (Nimbus) doesn't work! - Stack Overflow](https://stackoverflow.com/questions/949353/java-altering-ui-fonts-nimbus-doesnt-work) -- *匿名* 2013-05-25 (土) 09:14:08
-    - 情報ありがとうございます。これバグだとすると修正されるのかな？(仕様になりそうな気がしますが) 参考のリンク先にある[Nimbus Defaults](http://jasperpotts.com/blogfiles/nimbusdefaults/nimbus.html)一覧が便利ですね(チュートリアル[Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)にも転載されています)。このサイトでは、そちらを参考にして`NimbusLookAndFeel`の色をまとめて変換するサンプル([NimbusLookAndFeelのカラーパレット](http://ateraimemo.com/Swing/NimbusColorPalette.html))を作成しています。 -- *aterai* 2013-05-26 (日) 00:51:21
+    - 情報ありがとうございます。これバグだとすると修正されるのかな？(仕様になりそうな気がしますが) 参考のリンク先にある[Nimbus Defaults](http://jasperpotts.com/blogfiles/nimbusdefaults/nimbus.html)一覧が便利ですね(チュートリアル[Nimbus Defaults (The Java™ Tutorials > Creating a GUI With JFC/Swing > Modifying the Look and Feel)](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/_nimbusDefaults.html)にも転載されています)。このサイトでは、そちらを参考にして`NimbusLookAndFeel`の色をまとめて変換するサンプル([NimbusLookAndFeelのカラーパレット](https://ateraimemo.com/Swing/NimbusColorPalette.html))を作成しています。 -- *aterai* 2013-05-26 (日) 00:51:21
 
 <!-- dummy comment line for breaking list -->

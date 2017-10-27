@@ -23,7 +23,7 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;")
 ## 解説
 - 上
     - `javax.swing.Timer`を使ってアニメーションを行う`JLabel`を使用
-    - [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)
+    - [Timerでアニメーションするアイコンを作成](https://ateraimemo.com/Swing/AnimeIcon.html)
         
         <pre class="prettyprint"><code>JLabel l1 = new JLabel("Timer Animated ToolTip") {
           @Override public JToolTip createToolTip() {
@@ -42,9 +42,9 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;")
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JToolTipにアイコンを表示](http://ateraimemo.com/Swing/ToolTipIcon.html)
-- [Timerでアニメーションするアイコンを作成](http://ateraimemo.com/Swing/AnimeIcon.html)
-- [TrayIconのアニメーション](http://ateraimemo.com/Swing/AnimatedTrayIcon.html)
+- [JToolTipにアイコンを表示](https://ateraimemo.com/Swing/ToolTipIcon.html)
+- [Timerでアニメーションするアイコンを作成](https://ateraimemo.com/Swing/AnimeIcon.html)
+- [TrayIconのアニメーション](https://ateraimemo.com/Swing/AnimatedTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

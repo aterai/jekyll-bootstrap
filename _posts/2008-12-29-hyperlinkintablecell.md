@@ -89,8 +89,8 @@ table.addMouseMotionListener(renderer);
 ~~上記のサンプルでは、クリックしてもリンク先には接続せず、`System.out.println(table.getValueAt(crow, ccol));`で文字列を表示しているだけです。~~ `Java 6`以上を対象にすることにしたので、`Desktop.getDesktop().browse()`を使用するようにしました。
 
 ## 参考リンク
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
-- [Htmlで修飾した文字列のクリップ](http://ateraimemo.com/Swing/ClippedHtmlLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](https://ateraimemo.com/Swing/HyperlinkLabel.html)
+- [Htmlで修飾した文字列のクリップ](https://ateraimemo.com/Swing/ClippedHtmlLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

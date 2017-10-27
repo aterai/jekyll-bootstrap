@@ -65,13 +65,13 @@ comments: true
     - `JButton`の高さは、`JButton#getPreferredSize()`で取得したサイズの高さを使用
     - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JButton#updateUI()`をオーバーライドして`JButton#setPreferredSize(...)`を使用する必要がある
 - `SpringLayout`+`Box`
-    - [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
+    - [SpringLayoutの使用](https://ateraimemo.com/Swing/SpringLayout.html)
     - `SpringLayout`で幅指定、`BoxLayout`で右寄せ
     - `SpringLayout.Constraints`で`JButton`の固定幅を指定
     - 親パネルの幅も`SpringLayout.Constraints`で固定し、`Box`で入れ子にして右寄せ
     - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JComponent#getPreferredSize(...)`をオーバーライドして親パネルの高さを更新する必要がある
 - `SpringLayout`
-    - [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
+    - [SpringLayoutの使用](https://ateraimemo.com/Swing/SpringLayout.html)
     - `SpringLayout`を使用して右寄せ
     - `SpringLayout.Constraints`で`JButton`の幅を固定
     - `LookAndFeel`を変更すると`JButton`の高さが変化するので、その場合は`JComponent#getPreferredSize(...)`をオーバーライドして親パネルの高さを更新する必要がある
@@ -120,14 +120,14 @@ l.setPreferredSize(null); //preferredSizeをnullに戻した場合
 </code></pre>
 
 ## 参考リンク
-- [JComboBoxなどの幅をカラム数で指定](http://ateraimemo.com/Swing/SetColumns.html)
+- [JComboBoxなどの幅をカラム数で指定](https://ateraimemo.com/Swing/SetColumns.html)
     - `JComboBox`、`JTextField`などのコンポーネントでは、カラム数による幅の指定が可能
         - `JDK 1.5.0`: カラム数で幅を指定すると、コンポーネントによってサイズや余白などが微妙に異なる
         - `JDK 1.6.0`以上: `LookAndFeel`が同じなら、カラム数での幅指定で、どのコンポーネントでもほぼ同じサイズになる
-- [SpringLayoutの使用](http://ateraimemo.com/Swing/SpringLayout.html)
+- [SpringLayoutの使用](https://ateraimemo.com/Swing/SpringLayout.html)
 - [Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/how_do_you_layout_command)
     - 専用のレイアウトマネージャーを作成するサンプル
-- [JOptionPaneで使用するボタンのサイズを揃える](http://ateraimemo.com/Swing/SameSizeButtons.html)
+- [JOptionPaneで使用するボタンのサイズを揃える](https://ateraimemo.com/Swing/SameSizeButtons.html)
 
 <!-- dummy comment line for breaking list -->
 

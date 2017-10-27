@@ -123,15 +123,15 @@ comments: true
 ~~`JTable`自体に以下の様な`MouseListener`を追加してチェックボックスがクリックされるたびに`table.getCellEditor(row, col).stopCellEditing();`を呼び出しています。~~
 
 ## 参考リンク
-- [JTableのセル中にJRadioButtonを配置](http://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
-- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
-- [JCheckBoxのセルをロールオーバーする](http://ateraimemo.com/Swing/RolloverBooleanRenderer.html)
+- [JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
+- [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [JCheckBoxのセルをロールオーバーする](https://ateraimemo.com/Swing/RolloverBooleanRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - ビットフラグを`EnumSet`に変更するテスト -- *aterai* 2011-03-01 (火) 14:22:06
-    - [JTableの列にEnumSetを使用する](http://ateraimemo.com/Swing/EnumSet.html)に移動
+    - [JTableの列にEnumSetを使用する](https://ateraimemo.com/Swing/EnumSet.html)に移動
 - `rwx`セルを選択中に<kbd>R</kbd>、<kbd>W</kbd>、<kbd>X</kbd>キーを入力すると、そのチェックが切り替わるように`InputMap`、`ActionMap`を追加。 -- *aterai* 2011-03-09 (水) 22:33:39
 - `Windows`環境で`Aero`効果を有効にしていると？、残像が表示される場合がある障害を修正。 -- *aterai* 2011-11-01 (火) 18:12:50
 

@@ -91,14 +91,14 @@ comments: true
 ## 解説
 上記のサンプルでは高さ`1px`の画像をパレットとして予め作成し、それから`JProgressBar`の進捗に応じた色を取得して、`BasicProgressBarUI#paintDeterminate(...)`内で使用することで、色の変更を行なっています。
 
-- パレット用の画像作成は、[JSliderのスタイルを変更する](http://ateraimemo.com/Swing/GradientTrackSlider.html)と同じ
+- パレット用の画像作成は、[JSliderのスタイルを変更する](https://ateraimemo.com/Swing/GradientTrackSlider.html)と同じ
 - 注: ~~`VERTICAL`と、~~ 不確定モードには未対応
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Harmonic Code: Varying gradients...](http://harmoniccode.blogspot.jp/2011/05/varying-gradients.html)
-- [JSliderのスタイルを変更する](http://ateraimemo.com/Swing/GradientTrackSlider.html)
+- [JSliderのスタイルを変更する](https://ateraimemo.com/Swing/GradientTrackSlider.html)
 
 <!-- dummy comment line for breaking list -->
 

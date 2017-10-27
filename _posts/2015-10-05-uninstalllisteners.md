@@ -54,7 +54,7 @@ comments: true
 
 ## 参考リンク
 - [JSlider Problem | Oracle Community](https://community.oracle.com/threads/1360123)
-- [JLayerで子コンポーネントへの入力を制限する](http://ateraimemo.com/Swing/PopupMenuBlockLayer.html)
+- [JLayerで子コンポーネントへの入力を制限する](https://ateraimemo.com/Swing/PopupMenuBlockLayer.html)
     - `JDK 1.7.0`以降の場合、`JLayer`を使用した入力制限が可能
 
 <!-- dummy comment line for breaking list -->

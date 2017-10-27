@@ -35,7 +35,7 @@ field.add(label);
 ## 解説
 サンプルでは`setMargin`で`JTextField`の左に余白を作り、そこに`JLabel`を配置することでアイコン(画像)を表示しています。
 
-[JComboBoxにアイコンを追加](http://ateraimemo.com/Swing/IconComboBox.html)のように、`Border`を使っても同様のことができますが、`JTextComponent`を継承したコンポーネントでは、`setMargin`を使用するとカーソルの指定などが簡単に実現できます。
+[JComboBoxにアイコンを追加](https://ateraimemo.com/Swing/IconComboBox.html)のように、`Border`を使っても同様のことができますが、`JTextComponent`を継承したコンポーネントでは、`setMargin`を使用するとカーソルの指定などが簡単に実現できます。
 
 また、`JLabel`の代わりに、`JButton`などのコンポーネントを配置することも可能です。
 
@@ -54,7 +54,7 @@ field.add(label);
 - - - -
 `JTextField`の右端に`JLabel`を置く場合は、以下のように`SpringLayout`を使用する方法があります。
 
-- [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
+- [JButtonなどの高さを変更せずに幅を指定](https://ateraimemo.com/Swing/ButtonWidth.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -81,8 +81,8 @@ field2.setMargin(new Insets(m.top + 2, m.left, m.bottom, m.right + w));
 
 ## 参考リンク
 - [Swing (Archive) - Add a clickable icon to the left corner of a JTextField](https://community.oracle.com/thread/1489851)
-- [JTextFieldのMarginを設定する](http://ateraimemo.com/Swing/TextFieldMargin.html)
-- [JComboBoxにアイコンを追加](http://ateraimemo.com/Swing/IconComboBox.html)
+- [JTextFieldのMarginを設定する](https://ateraimemo.com/Swing/TextFieldMargin.html)
+- [JComboBoxにアイコンを追加](https://ateraimemo.com/Swing/IconComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

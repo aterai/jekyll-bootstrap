@@ -42,10 +42,10 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [MatteBorderでラベル枠を修飾](http://ateraimemo.com/Swing/MatteBorder.html)
-- [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
-- [JComboBoxの内余白](http://ateraimemo.com/Swing/PaddingComboBox.html)
-- [JComboBoxのEditorComponentにJButtonを配置](http://ateraimemo.com/Swing/ButtonInComboEditor.html)
+- [MatteBorderでラベル枠を修飾](https://ateraimemo.com/Swing/MatteBorder.html)
+- [JTextField内にアイコンを追加](https://ateraimemo.com/Swing/IconTextField.html)
+- [JComboBoxの内余白](https://ateraimemo.com/Swing/PaddingComboBox.html)
+- [JComboBoxのEditorComponentにJButtonを配置](https://ateraimemo.com/Swing/ButtonInComboEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

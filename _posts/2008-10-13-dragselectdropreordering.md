@@ -34,15 +34,15 @@ list.setDropMode(DropMode.INSERT);
 </code></pre>
 
 ## 解説
-上記のサンプルは、[JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)と[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)を適用し、`JList`でラバーバンドによるアイテムの選択、ドラッグ＆ドロップによるアイテム並べ替えが可能です。
+上記のサンプルは、[JListのアイテムを範囲指定で選択](https://ateraimemo.com/Swing/RubberBanding.html)と[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)を適用し、`JList`でラバーバンドによるアイテムの選択、ドラッグ＆ドロップによるアイテム並べ替えが可能です。
 
 - 注: `javax.swing.TransferHandler.TransferSupport`などを使用しているので、`JDK 1.6.0`以上が必要
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](http://ateraimemo.com/Swing/DnDReorderList.html)
-- [JListのアイテムを範囲指定で選択](http://ateraimemo.com/Swing/RubberBanding.html)
+- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)
+- [JListのアイテムを範囲指定で選択](https://ateraimemo.com/Swing/RubberBanding.html)
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 
 <!-- dummy comment line for breaking list -->

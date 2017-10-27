@@ -48,21 +48,21 @@ p.add(box, BorderLayout.EAST);
 上記のサンプルでは、ドロップダウンリストの表示を無効にした`JComboBox`と`2`つの`ArrowButton`を組み合わせて、`JSpinner`風のコンポーネントを作成しています。各アイテムの文字色は、`Html`の`<font>`タグを使って変更しています。
 
 - `BasicComboBoxUI#createArrowButton()`メソッドをオーバーライドして、`JComboBox`の`ArrowButton`を非表示に設定
-    - [JComboBoxのArrowButtonを隠す](http://ateraimemo.com/Swing/HideComboArrowButton.html)
+    - [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
 - `BasicComboBoxUI#setPopupVisible(...)`、`BasicComboBoxUI#createPopup()`、`BasicComboPopup#show()`メソッドなどをオーバーライドしてドロップダウンリストを無効化
 - `JComboBox#getActionMap()#get("selectNext2")`などで取得したアクションを実行する`ArrowButton`を作成してレイアウト
-    - [JTableを別コンポーネントから操作](http://ateraimemo.com/Swing/SelectAllButton.html)
-    - [JComponentのKeyBinding一覧を取得する](http://ateraimemo.com/Swing/KeyBinding.html)
+    - [JTableを別コンポーネントから操作](https://ateraimemo.com/Swing/SelectAllButton.html)
+    - [JComponentのKeyBinding一覧を取得する](https://ateraimemo.com/Swing/KeyBinding.html)
 - ボタンをクリックしたままの場合、値変更が繰り返し実行されるリピート機能には未対応
-    - [JButtonがマウスで押されている間、アクションを繰り返すTimerを設定する](http://ateraimemo.com/Swing/AutoRepeatTimer.html)
+    - [JButtonがマウスで押されている間、アクションを繰り返すTimerを設定する](https://ateraimemo.com/Swing/AutoRepeatTimer.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JComboBoxのArrowButtonを隠す](http://ateraimemo.com/Swing/HideComboArrowButton.html)
-- [JTableを別コンポーネントから操作](http://ateraimemo.com/Swing/SelectAllButton.html)
-- [JComponentのKeyBinding一覧を取得する](http://ateraimemo.com/Swing/KeyBinding.html)
-- [JButtonがマウスで押されている間、アクションを繰り返すTimerを設定する](http://ateraimemo.com/Swing/AutoRepeatTimer.html)
+- [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
+- [JTableを別コンポーネントから操作](https://ateraimemo.com/Swing/SelectAllButton.html)
+- [JComponentのKeyBinding一覧を取得する](https://ateraimemo.com/Swing/KeyBinding.html)
+- [JButtonがマウスで押されている間、アクションを繰り返すTimerを設定する](https://ateraimemo.com/Swing/AutoRepeatTimer.html)
 
 <!-- dummy comment line for breaking list -->
 

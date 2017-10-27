@@ -58,8 +58,8 @@ comments: true
 
 ## 参考リンク
 - [java - Tool tip in JPanel in JTable not working - Stack Overflow](https://stackoverflow.com/questions/10854831/tool-tip-in-jpanel-in-jtable-not-working)
-- [JTableのTooltipsを行ごとに変更](http://ateraimemo.com/Swing/RowTooltips.html)
-- [JListのセル中に配置したコンポーネント毎にカーソルを変更する](http://ateraimemo.com/Swing/CursorOfCellComponent.html)
+- [JTableのTooltipsを行ごとに変更](https://ateraimemo.com/Swing/RowTooltips.html)
+- [JListのセル中に配置したコンポーネント毎にカーソルを変更する](https://ateraimemo.com/Swing/CursorOfCellComponent.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -67,8 +67,8 @@ class DragWindowListener extends MouseAdapter {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JInternalFrameをJFrameとして表示する](http://ateraimemo.com/Swing/InternalFrameTitleBar.html)
-- [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](http://ateraimemo.com/Swing/CustomDecoratedFrame.html)
+- [JInternalFrameをJFrameとして表示する](https://ateraimemo.com/Swing/InternalFrameTitleBar.html)
+- [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](https://ateraimemo.com/Swing/CustomDecoratedFrame.html)
 
 <!-- dummy comment line for breaking list -->
 

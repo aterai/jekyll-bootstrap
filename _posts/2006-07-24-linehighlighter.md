@@ -50,7 +50,7 @@ comments: true
 </code></pre>
 
 ## 解説
-ほぼ、[JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)と同様のコードを使用していますが、行全体を塗り潰すために、以下の`3`点を変更しています。
+ほぼ、[JTextAreaに行カーソルを表示](https://ateraimemo.com/Swing/LineCursor.html)と同様のコードを使用していますが、行全体を塗り潰すために、以下の`3`点を変更しています。
 
 - `Viewport`の色を`scroll.getViewport().setBackground(Color.WHITE)`にする
 - `JTextArea#setOpaque(false)`と設定して透明にする
@@ -93,7 +93,7 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPTaywxYI/AAAAAAAAAdw/RIlfRHiC-JY/s800/LineHighlighter1.png)
 
 ## 参考リンク
-- [JTextAreaに行カーソルを表示](http://ateraimemo.com/Swing/LineCursor.html)
+- [JTextAreaに行カーソルを表示](https://ateraimemo.com/Swing/LineCursor.html)
 - [Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121)
 
 <!-- dummy comment line for breaking list -->

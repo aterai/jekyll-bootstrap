@@ -34,16 +34,16 @@ try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStrea
 <!-- dummy comment line for breaking list -->
 
 - 注:
-    - `TableModel`は、別途、[JTableのモデルをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/PersistenceDelegate.html)を使用
+    - `TableModel`は、別途、[JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)を使用
     - このサンプルでは、カラムヘッダの幅や順序には対応していない
         - メモ: [JTable Inhalte speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_Inhalte_speichern)
-        - または、[TableColumnModelをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/ColumnModelPersistence.html)のような`DefaultPersistenceDelegate`を使ってカラムヘッダの幅や順序を保存する方法がある
+        - または、[TableColumnModelをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/ColumnModelPersistence.html)のような`DefaultPersistenceDelegate`を使ってカラムヘッダの幅や順序を保存する方法がある
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのモデルをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/PersistenceDelegate.html)
-- [TableColumnModelをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/ColumnModelPersistence.html)
+- [JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)
+- [TableColumnModelをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/ColumnModelPersistence.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -83,7 +83,7 @@ comments: true
     - `Windows 7`環境の`WindowsLookAndFeel`でのみ正常に動作？
     - `JMenuItem`に`GridBagLayout`を設定し、`c.anchor = GridBagConstraints.EAST;`で、`Accelerator`文字列を設定した`JLabel`を配置
     - 本来の`Accelerator`文字列は、`UIManager.put("MenuItem.acceleratorForeground", background);`などで背景色と同化して非表示
-    - 参考: [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
+    - 参考: [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -153,7 +153,7 @@ public class awt_ja extends ListResourceBundle {
 
 ## 参考リンク
 - [Swing - Localized Accelorator Keys](https://community.oracle.com/thread/1364746)
-- [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
+- [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 
 <!-- dummy comment line for breaking list -->
 

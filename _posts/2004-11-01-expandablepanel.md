@@ -48,7 +48,7 @@ comments: true
 [L2FProd.com - Common Components](http://common.l2fprod.com/) にある`JOutlookBar`で、アニメーション付きでパネルの展開や折り畳みが可能です。ソースも公開されているので参考にしてみてください。
 
 ## 参考リンク
-- [JPanelをアコーディオン風に展開](http://ateraimemo.com/Swing/AccordionPanel.html)
+- [JPanelをアコーディオン風に展開](https://ateraimemo.com/Swing/AccordionPanel.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -54,7 +54,7 @@ comments: true
     - via: [Swing - JInternalFrame - iconify in a JDesktopPane](https://community.oracle.com/thread/1374482)
 - [Bug ID: 4110799 JInternalFrame icon position unchanged w/ resize](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4110799)
     - [JInternalFrameは最初にアイコン化しておかないと位置が更新されない](http://d.hatena.ne.jp/tori31001/20060901)
-    - [JInternalFrameを一番手前に表示](http://ateraimemo.com/Swing/LayeredPane.html)
+    - [JInternalFrameを一番手前に表示](https://ateraimemo.com/Swing/LayeredPane.html)
 
 <!-- dummy comment line for breaking list -->
 

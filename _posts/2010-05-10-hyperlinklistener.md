@@ -49,12 +49,12 @@ editorPane.addHyperlinkListener(new HyperlinkListener() {
     - 編集可の`JEditorPane`で使用可能
     - リンク文字列の部分選択が不可
     - ~~ベースラインがうまく揃わない？~~ `JComponent#setAlignmentY(...)`でテキストベースラインに揃えることが可能
-        - サンプルコードは、[JTextPaneに追加するコンポーネントのベースラインを揃える](http://ateraimemo.com/Swing/InsertComponentBaseline.html)に移動
+        - サンプルコードは、[JTextPaneに追加するコンポーネントのベースラインを揃える](https://ateraimemo.com/Swing/InsertComponentBaseline.html)に移動
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](http://ateraimemo.com/Swing/HyperlinkLabel.html)
+- [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](https://ateraimemo.com/Swing/HyperlinkLabel.html)
 
 <!-- dummy comment line for breaking list -->
 

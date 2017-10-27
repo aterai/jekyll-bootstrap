@@ -42,7 +42,7 @@ scrollToCenter(textPane, hh.getStartOffset());
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[JTextAreaでハイライト付き検索を行う](http://ateraimemo.com/Swing/HighlightSearch.html)に、以下のような変更を追加することで、検索結果のハイライト表示と文字色変更を同時に行っています。
+上記のサンプルでは、[JTextAreaでハイライト付き検索を行う](https://ateraimemo.com/Swing/HighlightSearch.html)に、以下のような変更を追加することで、検索結果のハイライト表示と文字色変更を同時に行っています。
 
 - ~~`StyledDocument`にスタイル名`regular`で`Style`を追加~~
 - `StyledDocument`にスタイル名`highlight-text-foreground`で文字色のみデフォルトから変更した`Style`を追加
@@ -52,9 +52,9 @@ scrollToCenter(textPane, hh.getStartOffset());
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextAreaでハイライト付き検索を行う](http://ateraimemo.com/Swing/HighlightSearch.html)
-- [JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html)
-- [Highlighterで文字列をハイライト](http://ateraimemo.com/Swing/Highlighter.html)
+- [JTextAreaでハイライト付き検索を行う](https://ateraimemo.com/Swing/HighlightSearch.html)
+- [JTextPaneでキーワードのSyntaxHighlight](https://ateraimemo.com/Swing/SimpleSyntaxHighlight.html)
+- [Highlighterで文字列をハイライト](https://ateraimemo.com/Swing/Highlighter.html)
     - こちらのコメントからソースコードを移動して、この記事を作成
 
 <!-- dummy comment line for breaking list -->

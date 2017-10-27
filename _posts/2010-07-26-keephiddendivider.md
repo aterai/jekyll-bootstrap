@@ -85,7 +85,7 @@ smax.setModel(selectMaxModel);
 </code></pre>
     - * 参考リンク [#reference]
 - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
-- [JSplitPaneのディバイダを展開、収納する](http://ateraimemo.com/Swing/OneTouchExpandable.html)
+- [JSplitPaneのディバイダを展開、収納する](https://ateraimemo.com/Swing/OneTouchExpandable.html)
 
 <!-- dummy comment line for breaking list -->
 

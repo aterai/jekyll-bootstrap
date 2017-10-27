@@ -29,7 +29,7 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
 ## 解説
 `WindowsLookAndFeel`の場合、それを修正することなく、`JComboBox`のドロップダウンリストで右クリックを無効にするような`ComboBoxUI`を`UIManager.addAuxiliaryLookAndFeel(...)`を使って追加しています。
 
-- [JComboBoxのドロップダウンリストで右クリックを無効化](http://ateraimemo.com/Swing/DisableRightClick.html)
+- [JComboBoxのドロップダウンリストで右クリックを無効化](https://ateraimemo.com/Swing/DisableRightClick.html)
 
 <!-- dummy comment line for breaking list -->
 

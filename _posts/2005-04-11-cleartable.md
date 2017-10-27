@@ -48,8 +48,8 @@ table.setModel(new DefaultTableModel());
 </code></pre>
 
 ## 参考リンク
-- [JTableの行を追加、削除](http://ateraimemo.com/Swing/AddRow.html)
-- [JTableのセルにJButtonを追加して行削除](http://ateraimemo.com/Swing/DeleteButtonInCell.html)
+- [JTableの行を追加、削除](https://ateraimemo.com/Swing/AddRow.html)
+- [JTableのセルにJButtonを追加して行削除](https://ateraimemo.com/Swing/DeleteButtonInCell.html)
 - [JDK-8032874 ArrayIndexOutOfBoundsException in JTable while clearing data in JTable - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8032874)
     - コメントの`ArrayIndexOutOfBoundsException`と似ている？`JDK-8032874`の件は修正済み
 

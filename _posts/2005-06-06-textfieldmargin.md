@@ -49,8 +49,8 @@ field02.setBorder(b2);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextField内にアイコンを追加](http://ateraimemo.com/Swing/IconTextField.html)
-- [JComboBoxにアイコンを表示](http://ateraimemo.com/Swing/IconComboBox.html)
+- [JTextField内にアイコンを追加](https://ateraimemo.com/Swing/IconTextField.html)
+- [JComboBoxにアイコンを表示](https://ateraimemo.com/Swing/IconComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

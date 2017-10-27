@@ -108,7 +108,7 @@ table.getTableHeader().setDefaultRenderer(new TableCellRenderer() {
 </code></pre>
 
 ## 参考リンク
-- [JTableHeaderのフォントを変更](http://ateraimemo.com/Swing/HeaderFont.html)
+- [JTableHeaderのフォントを変更](https://ateraimemo.com/Swing/HeaderFont.html)
 
 <!-- dummy comment line for breaking list -->
 

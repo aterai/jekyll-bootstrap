@@ -109,9 +109,9 @@ comments: true
 上記のサンプルでは、`JPanel#getPreferredSize()`を拡大後の画像サイズを返すようにオーバーライドすることで、画像が`JViewport`より大きくなる場合は、スクロールバーが表示されるように設定しています。
 
 - - - -
-ズーム自体は、[JPanelに表示した画像のズームとスクロール](http://ateraimemo.com/Swing/ZoomingAndPanning.html)で使用しているものとほぼ同じ`MouseWheelListener`を設定して実行していますが、画像を描画している`JPanel`を`JScrollPane`内に設定してスクロールバーでのスクロールを可能にしているため、`JPanel#paintComponent(...)`内での`AffineTransform`の使用方法などを変更しています。
+ズーム自体は、[JPanelに表示した画像のズームとスクロール](https://ateraimemo.com/Swing/ZoomingAndPanning.html)で使用しているものとほぼ同じ`MouseWheelListener`を設定して実行していますが、画像を描画している`JPanel`を`JScrollPane`内に設定してスクロールバーでのスクロールを可能にしているため、`JPanel#paintComponent(...)`内での`AffineTransform`の使用方法などを変更しています。
 
-- [JPanelに表示した画像のズームとスクロール](http://ateraimemo.com/Swing/ZoomingAndPanning.html)のようにズームを行うための`AffineTransform`(このサンプルでは`zoomTransform`)を直接`Graphics2D`に設定すると、元からある`Graphics2D`コンテキスト内の`AffineTransform`(`JScrollBar`による移動)と競合して描画が乱れてしまう
+- [JPanelに表示した画像のズームとスクロール](https://ateraimemo.com/Swing/ZoomingAndPanning.html)のようにズームを行うための`AffineTransform`(このサンプルでは`zoomTransform`)を直接`Graphics2D`に設定すると、元からある`Graphics2D`コンテキスト内の`AffineTransform`(`JScrollBar`による移動)と競合して描画が乱れてしまう
     
     <pre class="prettyprint"><code>//BAD EXAMPLE
     g2.setTransform(zoomTransform);
@@ -130,9 +130,9 @@ comments: true
 
 </code></pre>
 - * 参考リンク [#reference]
-- [JPanelに表示した画像のズームとスクロール](http://ateraimemo.com/Swing/ZoomingAndPanning.html)
+- [JPanelに表示した画像のズームとスクロール](https://ateraimemo.com/Swing/ZoomingAndPanning.html)
     - マウスホイールによるズーム用のリスナを引用
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)
     - マウスドラッグによるスクロール用のリスナを引用
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 

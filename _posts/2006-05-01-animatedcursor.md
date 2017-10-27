@@ -49,7 +49,7 @@ button = new JButton(new AbstractAction("Start") {
 ## 参考リンク
 - [VIPポインタ@Wiki - トップページ](http://www11.atwiki.jp/vippointer/)
 - [ANIめーかー(Windows95/98/Me/アミューズメント)](http://www.vector.co.jp/soft/win95/amuse/se195017.html)
-- [Cursorオブジェクトの生成](http://ateraimemo.com/Swing/CustomCursor.html)
+- [Cursorオブジェクトの生成](https://ateraimemo.com/Swing/CustomCursor.html)
 - [oreilly.co.jp -- Online Catalog: Java Swing Hacks](http://www.oreilly.co.jp/books/4873112788/download.html)
 - [Toolkit (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#createCustomCursor-java.awt.Image-java.awt.Point-java.lang.String-)
 

@@ -35,8 +35,8 @@ comments: true
 
 ## 参考リンク
 - [MediaTracker (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/MediaTracker.html)
-- [Jpegファイルのコメントを取り出す](http://ateraimemo.com/Swing/IIOMetadata.html)
-- [Fileのドラッグ＆ドロップ](http://ateraimemo.com/Swing/FileListFlavor.html)
+- [Jpegファイルのコメントを取り出す](https://ateraimemo.com/Swing/IIOMetadata.html)
+- [Fileのドラッグ＆ドロップ](https://ateraimemo.com/Swing/FileListFlavor.html)
 
 <!-- dummy comment line for breaking list -->
 

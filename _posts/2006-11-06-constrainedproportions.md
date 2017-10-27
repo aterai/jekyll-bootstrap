@@ -37,8 +37,8 @@ frame.addComponentListener(new ComponentAdapter() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JFrameの最小サイズ](http://ateraimemo.com/Swing/MinimumFrame.html)
-- [DynamicLayoutでレイアウトの動的評価](http://ateraimemo.com/Swing/DynamicLayout.html)
+- [JFrameの最小サイズ](https://ateraimemo.com/Swing/MinimumFrame.html)
+- [DynamicLayoutでレイアウトの動的評価](https://ateraimemo.com/Swing/DynamicLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

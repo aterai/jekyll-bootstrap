@@ -45,7 +45,7 @@ menu.add(new JCheckBoxMenuItem("checkIcon test"));
 
 ## 参考リンク
 - [JCheckBoxMenuItem (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JCheckBoxMenuItem.html)
-- [JRadioButtonMenuItemのチェックアイコンを変更する](http://ateraimemo.com/Swing/RadioButtonMenuItemIcon.html)
+- [JRadioButtonMenuItemのチェックアイコンを変更する](https://ateraimemo.com/Swing/RadioButtonMenuItemIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

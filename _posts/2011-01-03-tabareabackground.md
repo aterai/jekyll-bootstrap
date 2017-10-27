@@ -42,8 +42,8 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneの選択文字色を変更](http://ateraimemo.com/Swing/ColorTab.html)
-- [JTabbedPaneのタブ文字列をハイライト](http://ateraimemo.com/Swing/TabTitleHighlight.html)
+- [JTabbedPaneの選択文字色を変更](https://ateraimemo.com/Swing/ColorTab.html)
+- [JTabbedPaneのタブ文字列をハイライト](https://ateraimemo.com/Swing/TabTitleHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -41,7 +41,7 @@ comments: true
 上記のサンプルでは、`JComboBox`のサイズ変更に対応していません。
 
 ## 参考リンク
-- [JComboBoxのItemを左右にクリップして配置](http://ateraimemo.com/Swing/ClippedLRComboBox.html)
+- [JComboBoxのItemを左右にクリップして配置](https://ateraimemo.com/Swing/ClippedLRComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

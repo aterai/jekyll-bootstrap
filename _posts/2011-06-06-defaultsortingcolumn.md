@@ -32,12 +32,12 @@ table.getRowSorter().setSortKeys(
 - メモ
     - `table.getRowSorter().toggleSortOrder(index)`を`1`回で昇順、`2`回で降順に設定する方法もある
     - `RowSorter#setSortKeys(null)`で、ソート無し状態になる
-        - [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
+        - [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TableRowSorterのSortKeysをクリアする](http://ateraimemo.com/Swing/ClearSortingState.html)
+- [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
 

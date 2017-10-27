@@ -102,7 +102,7 @@ table.setSurrendersFocusOnKeystroke(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

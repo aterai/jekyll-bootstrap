@@ -54,7 +54,7 @@ JComponent c = new JLayer&lt;JProgressBar&gt;(progressBar, layerUI);
     - 文字列表示有りの垂直`JProgressBar`
 - 右から二番目
     - 垂直`JProgressBar`に`BorderLayout`を設定して、中央に`JLabel`を配置
-    - [JProgressBarの進捗文字列の字揃えを変更する](http://ateraimemo.com/Swing/ProgressStringAlignment.html)
+    - [JProgressBarの進捗文字列の字揃えを変更する](https://ateraimemo.com/Swing/ProgressStringAlignment.html)
     - `JLabel`の幅と任意の余白から、垂直`JProgressBar`の幅を決定するよう、`JProgressBar#getPreferredSize()`をオーバーライド
 - 一番右
     - `JLayer`を使って、垂直`JProgressBar`上に文字列を描画
@@ -64,7 +64,7 @@ JComponent c = new JLayer&lt;JProgressBar&gt;(progressBar, layerUI);
 
 ## 参考リンク
 - [java - Is it possible to save text horizontal in vertical JProgressbar - Stack Overflow](https://stackoverflow.com/questions/16934009/is-it-possible-to-save-text-horizontal-in-vertical-jprogressbar)
-- [JProgressBarの進捗文字列の字揃えを変更する](http://ateraimemo.com/Swing/ProgressStringAlignment.html)
+- [JProgressBarの進捗文字列の字揃えを変更する](https://ateraimemo.com/Swing/ProgressStringAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 

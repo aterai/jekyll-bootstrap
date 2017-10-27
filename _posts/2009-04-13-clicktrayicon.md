@@ -74,8 +74,8 @@ try {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [SystemTrayにアイコンを表示](http://ateraimemo.com/Swing/SystemTray.html)
-- [TrayIconのアニメーション](http://ateraimemo.com/Swing/AnimatedTrayIcon.html)
+- [SystemTrayにアイコンを表示](https://ateraimemo.com/Swing/SystemTray.html)
+- [TrayIconのアニメーション](https://ateraimemo.com/Swing/AnimatedTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

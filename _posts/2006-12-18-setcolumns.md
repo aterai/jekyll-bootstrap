@@ -44,13 +44,13 @@ if (c instanceof JTextField) {
         - `JTextField`の左内余白が広すぎる
         - `JComboBox`などの左内余白が狭すぎる
     - レイアウトマネージャーで工夫するか、`setPreferredSize(Dimension)`を使って幅を揃える必要がある
-        - 参考: [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
+        - 参考: [JButtonなどの高さを変更せずに幅を指定](https://ateraimemo.com/Swing/ButtonWidth.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JButtonなどの高さを変更せずに幅を指定](http://ateraimemo.com/Swing/ButtonWidth.html)
-- [JComboBoxのセルサイズを決定するためのプロトタイプ値を設定する](http://ateraimemo.com/Swing/PrototypeDisplayValue.html)
+- [JButtonなどの高さを変更せずに幅を指定](https://ateraimemo.com/Swing/ButtonWidth.html)
+- [JComboBoxのセルサイズを決定するためのプロトタイプ値を設定する](https://ateraimemo.com/Swing/PrototypeDisplayValue.html)
 
 <!-- dummy comment line for breaking list -->
 

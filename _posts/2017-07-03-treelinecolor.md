@@ -60,7 +60,7 @@ tree2.setUI(new BasicTreeUI() {
     - `UIManager.put("Tree.hash", Color.RED);`で線色を変更可能
 - `lineStyle`
     - `tree1.putClientProperty("JTree.lineStyle", "Horizontal");`を設定して親ノードの上下に水平線を表示するスタイルに変更
-        - 参考: [JTreeのノード間の接続線のスタイルを変更する](http://ateraimemo.com/Swing/TreeLineStyle.html)
+        - 参考: [JTreeのノード間の接続線のスタイルを変更する](https://ateraimemo.com/Swing/TreeLineStyle.html)
     - `UIManager.put("Tree.line", Color.GREEN);`で水平線の線色を変更可能
         - 接続線の線色には影響しない
 - `BasicTreeUI`
@@ -83,7 +83,7 @@ tree2.setUI(new BasicTreeUI() {
         }
 </code></pre>
     - * 参考リンク [#reference]
-- [JTreeのノード間の接続線のスタイルを変更する](http://ateraimemo.com/Swing/TreeLineStyle.html)
+- [JTreeのノード間の接続線のスタイルを変更する](https://ateraimemo.com/Swing/TreeLineStyle.html)
 
 <!-- dummy comment line for breaking list -->
 

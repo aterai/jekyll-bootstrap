@@ -64,9 +64,9 @@ comments: true
 上記のサンプルでは、画像アイコンを表示した`JLabel`に半透明にした`JToolBar`を追加しています。
 
 - 参考
-    - `JToolBar`などの透明化は、[JMenuBarの背景に画像を表示する](http://ateraimemo.com/Swing/MenuBarBackground.html)
-    - 表示アニメーションは、[JTextAreaをキャプションとして画像上にスライドイン](http://ateraimemo.com/Swing/EaseInOut.html)
-    - `JToolBar`内部の`JButton`は、[JButtonの描画](http://ateraimemo.com/Swing/ButtonPainted.html)
+    - `JToolBar`などの透明化は、[JMenuBarの背景に画像を表示する](https://ateraimemo.com/Swing/MenuBarBackground.html)
+    - 表示アニメーションは、[JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
+    - `JToolBar`内部の`JButton`は、[JButtonの描画](https://ateraimemo.com/Swing/ButtonPainted.html)
 
 <!-- dummy comment line for breaking list -->
 

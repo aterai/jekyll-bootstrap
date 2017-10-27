@@ -38,7 +38,7 @@ add(new JCheckBox(new AbstractAction("Tree.paintLines") {
 
 ## 参考リンク
 - [Hide horizontal and vertical lines in a JTree | Oracle Forums](https://community.oracle.com/thread/1367209)
-- [JTreeのノード間の接続線のスタイルを変更する](http://ateraimemo.com/Swing/TreeLineStyle.html)
+- [JTreeのノード間の接続線のスタイルを変更する](https://ateraimemo.com/Swing/TreeLineStyle.html)
 
 <!-- dummy comment line for breaking list -->
 

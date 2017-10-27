@@ -35,7 +35,7 @@ protected static final int TEXT_INSET_H = 10; //5;
     - タイトル文字列までの内余白は変化しないが、中身のコンポーネントが`10px`右に移動する
 - `ComponentTitledBorder + EmptyBorder`
     - 文字列ではなく、`JLabel`をタイトルとして描画する`ComponentTitledBorder`を使用し、`JLabel`の描画開始位置を`10px`右に移動
-        - 参考: [BorderにJComponentを配置](http://ateraimemo.com/Swing/ComponentTitledBorder.html)
+        - 参考: [BorderにJComponentを配置](https://ateraimemo.com/Swing/ComponentTitledBorder.html)
     - タイトル文字列までの`10px`の内余白にボーダーが描画され、タイトルに使用する`JLabel`に設定した`EmptyBorder`分の`5px`は空白になり、合計`15px`の内余白が生成される
 - `TitledBorder2: copied from TitledBorder`
     - 内余白の設定が外部から変更できないので、`TitledBorder`を全てコピーして`TEXT_SPACING`と`TEXT_INSET_H`の値だけ変更
@@ -47,7 +47,7 @@ protected static final int TEXT_INSET_H = 10; //5;
 
 ## 参考リンク
 - [TitledBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/TitledBorder.html)
-- [BorderにJComponentを配置](http://ateraimemo.com/Swing/ComponentTitledBorder.html)
+- [BorderにJComponentを配置](https://ateraimemo.com/Swing/ComponentTitledBorder.html)
 
 <!-- dummy comment line for breaking list -->
 

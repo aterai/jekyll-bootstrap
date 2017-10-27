@@ -38,9 +38,9 @@ scroll2.getVerticalScrollBar().setModel(scroll1.getVerticalScrollBar().getModel(
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableの列固定とソート](http://ateraimemo.com/Swing/FixedColumnTableSorting.html)
+- [JTableの列固定とソート](https://ateraimemo.com/Swing/FixedColumnTableSorting.html)
     - `ChangeListener`を使用、`1`つの`JScrollPane`に、`JTable`を`2`つ配置
-- [JScrollPaneのスクロールを同期](http://ateraimemo.com/Swing/SynchronizedScroll.html)
+- [JScrollPaneのスクロールを同期](https://ateraimemo.com/Swing/SynchronizedScroll.html)
     - `ChangeListener`を使用
 - [2つのJTableを同時にスクロール - argius note](http://d.hatena.ne.jp/argius/20080325/1206454660)
     - `AdjustmentListener`を使用

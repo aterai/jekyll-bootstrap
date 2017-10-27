@@ -104,15 +104,15 @@ comments: true
 - `JRadioButton`のサイズは`Icon`のサイズと等しくなるように、テキストとアイコンは中央揃えで重ねて表示し、`Border`も`0`に設定
     - `GridLayout`の水平間隔なども`0`にして隙間ができないように配置
 - 最初の`JRadioButton`は左、最後の`JRadioButton`は右の角を丸める
-    - 参考: [JComboBoxの角を丸める](http://ateraimemo.com/Swing/RoundedComboBox.html)
+    - 参考: [JComboBoxの角を丸める](https://ateraimemo.com/Swing/RoundedComboBox.html)
     - 角を丸めた時に背景色を描画しないようにするため、`JRadioButton#setContentAreaFilled(false)`を設定して描画をすべてアイコンで行う
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [簡単、きれい！RGBaカラーを使って横メニューを作ってみる｜Webpark](http://weboook.blog22.fc2.com/blog-entry-342.html)
-- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
-- [JComboBoxの角を丸める](http://ateraimemo.com/Swing/RoundedComboBox.html)
+- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](https://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
+- [JComboBoxの角を丸める](https://ateraimemo.com/Swing/RoundedComboBox.html)
 
 <!-- dummy comment line for breaking list -->
 

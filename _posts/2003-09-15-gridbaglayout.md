@@ -73,7 +73,7 @@ comments: true
 - [GridBagLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/GridBagLayout.html)
 - ~~[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)~~
 - [GridBagLayoutでコンポーネントがつぶれるのを防ぎたいとき～](http://satoshi.kinokuni.org/tech/SwingTipsLayout.html#section1)
-- [GroupLayoutの使用](http://ateraimemo.com/Swing/GroupLayout.html)
+- [GroupLayoutの使用](https://ateraimemo.com/Swing/GroupLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -43,7 +43,7 @@ icon.setImageObserver(new ImageObserver() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルにAnimated GIFを表示する](http://ateraimemo.com/Swing/AnimatedIconInTableCell.html)
+- [JTableのセルにAnimated GIFを表示する](https://ateraimemo.com/Swing/AnimatedIconInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 

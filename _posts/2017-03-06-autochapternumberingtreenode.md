@@ -49,7 +49,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeで目次を作成する](http://ateraimemo.com/Swing/TableOfContentsTree.html)
+- [JTreeで目次を作成する](https://ateraimemo.com/Swing/TableOfContentsTree.html)
 
 <!-- dummy comment line for breaking list -->
 

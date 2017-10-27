@@ -48,8 +48,8 @@ if (dictionary != null) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JSliderのUIや色を変更する](http://ateraimemo.com/Swing/VolumeSlider.html)
-- [JSliderの目盛にアイコンや文字列を追加する](http://ateraimemo.com/Swing/SliderLabelTable.html)
+- [JSliderのUIや色を変更する](https://ateraimemo.com/Swing/VolumeSlider.html)
+- [JSliderの目盛にアイコンや文字列を追加する](https://ateraimemo.com/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->
 

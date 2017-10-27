@@ -72,9 +72,9 @@ class JustifiedLabel extends JLabel {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLabelの文字揃え](http://ateraimemo.com/Swing/JustifiedLabel.html)
+- [JLabelの文字揃え](https://ateraimemo.com/Swing/JustifiedLabel.html)
     - `GlyphVector`を使用して`JLabel`で両端揃えを行うサンプル
-- [JTableのセル文字揃え](http://ateraimemo.com/Swing/CellTextAlignment.html)
+- [JTableのセル文字揃え](https://ateraimemo.com/Swing/CellTextAlignment.html)
 
 <!-- dummy comment line for breaking list -->
 

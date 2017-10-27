@@ -82,7 +82,7 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
 
 ## 参考リンク
 - [Expand or collapse a JTree - Real's Java How-to](http://www.rgagnon.com/javadetails/java-0210.html)
-- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+- [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)
 
 <!-- dummy comment line for breaking list -->
 

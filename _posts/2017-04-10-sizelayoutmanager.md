@@ -66,7 +66,7 @@ Stream.of("b1", "b2", "b3").forEach(s -&gt; {
 
 ## 参考リンク
 - [Should I avoid the use of set(Preferred|Maximum|Minimum)Size methods in Java Swing? - Stack Overflow](http://stackoverflow.com/questions/7229226/should-i-avoid-the-use-of-setpreferredmaximumminimumsize-methods-in-java-swi)
-- [JTreeのノードを検索する](http://ateraimemo.com/Swing/SearchBox.html)
+- [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)
     - `Timer`を使用してサイズ変更のアニメーションを行う`BorderLayout`のサンプル
 
 <!-- dummy comment line for breaking list -->

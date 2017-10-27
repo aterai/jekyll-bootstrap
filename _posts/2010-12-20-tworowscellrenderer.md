@@ -86,7 +86,7 @@ while (i &lt; text.length()) {
 </code></pre>
 
 ## 参考リンク
-- [JLabelの文字列を折り返し](http://ateraimemo.com/Swing/GlyphVector.html)
+- [JLabelの文字列を折り返し](https://ateraimemo.com/Swing/GlyphVector.html)
 - [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
 
 <!-- dummy comment line for breaking list -->

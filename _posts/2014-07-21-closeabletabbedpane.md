@@ -91,12 +91,12 @@ comments: true
 
 ## 解説
 - 上
-    - [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
+    - [JTabbedPaneにタブを閉じるボタンを追加](https://ateraimemo.com/Swing/TabWithCloseButton.html)
     - タブに追加したコンポーネントは、中央揃えで配置される(`BasicTabbedPaneUI`などのデフォルト)
 - 下
     - `JLayer`を使用して、タブの余白にそれを閉じるための`JButton`を描画
         - `TabbedPaneUI`をオーバーライドする必要がない
-        - [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)では、`BasicTabbedPaneUI#createLayoutManager()`をオーバーライドして、独自の`TabbedPaneLayout`で右端に☓アイコンを描画
+        - [JTabbedPaneにタブを閉じるアイコンを追加](https://ateraimemo.com/Swing/TabWithCloseIcon.html)では、`BasicTabbedPaneUI#createLayoutManager()`をオーバーライドして、独自の`TabbedPaneLayout`で右端に☓アイコンを描画
     - タブの余白は`UIManager.put("TabbedPane.tabInsets", new Insets(2, 18, 2, 18));`で設定
         - この余白設定は、`NimbusLookAndFeel`などでは無効
         - 左右の余白の合計よりタブが短くなる場合、ボタンがタイトルに重なってしまう
@@ -105,8 +105,8 @@ comments: true
 
 ## 参考リンク
 - [java - Closeable JTabbedPane - alignment of the close button - Stack Overflow](https://stackoverflow.com/questions/24634047/closeable-jtabbedpane-alignment-of-the-close-button)
-- [JTabbedPaneにタブを閉じるボタンを追加](http://ateraimemo.com/Swing/TabWithCloseButton.html)
-- [JTabbedPaneにタブを閉じるアイコンを追加](http://ateraimemo.com/Swing/TabWithCloseIcon.html)
+- [JTabbedPaneにタブを閉じるボタンを追加](https://ateraimemo.com/Swing/TabWithCloseButton.html)
+- [JTabbedPaneにタブを閉じるアイコンを追加](https://ateraimemo.com/Swing/TabWithCloseIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

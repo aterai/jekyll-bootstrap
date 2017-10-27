@@ -56,7 +56,7 @@ public static void collapseFirstHierarchy(JTree tree) {
 
 - 第`1`階層のノードのみを対象にしているため、ルートノードや、第`2`階層以下のノードの展開、折り畳みには影響しない
     - ノードの階層には`DefaultMutableTreeNode#getLevel()`で取得した値を使用して、ルートノードを第`0`階層としている
-    - 参考: [JTreeでノード階層の深さを取得する](http://ateraimemo.com/Swing/TreeNodeMaxLevel.html)
+    - 参考: [JTreeでノード階層の深さを取得する](https://ateraimemo.com/Swing/TreeNodeMaxLevel.html)
 
 <!-- dummy comment line for breaking list -->
 

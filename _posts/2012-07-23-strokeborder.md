@@ -28,7 +28,7 @@ label.setBorder(BorderFactory.createStrokeBorder(dashedStroke, Color.RED));
 
 ## 参考リンク
 - [StrokeBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/StrokeBorder.html)
-- [BasicStrokeで点線を作成](http://ateraimemo.com/Swing/DashedLine.html)
+- [BasicStrokeで点線を作成](https://ateraimemo.com/Swing/DashedLine.html)
 
 <!-- dummy comment line for breaking list -->
 

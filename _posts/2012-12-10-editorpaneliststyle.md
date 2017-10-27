@@ -52,7 +52,7 @@ styleSheet.addRule(String.format("ul{list-style-image:url(%s);margin:0px 20px;}"
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
+- [JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)
 
 <!-- dummy comment line for breaking list -->
 

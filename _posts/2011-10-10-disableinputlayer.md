@@ -87,7 +87,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Cursorを砂時計に変更](http://ateraimemo.com/Swing/WaitCursor.html)
+- [Cursorを砂時計に変更](https://ateraimemo.com/Swing/WaitCursor.html)
 
 <!-- dummy comment line for breaking list -->
 

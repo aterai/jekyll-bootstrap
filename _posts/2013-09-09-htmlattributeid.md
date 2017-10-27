@@ -108,7 +108,7 @@ try {
 
 ## 参考リンク
 [HTMLDocument (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/HTMLDocument.html)
-- [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](http://ateraimemo.com/Swing/HTMLEditorKit.html)
+- [JTextPaneで修飾したテキストをJTextAreaにHtmlソースとして表示する](https://ateraimemo.com/Swing/HTMLEditorKit.html)
 
 <!-- dummy comment line for breaking list -->
 

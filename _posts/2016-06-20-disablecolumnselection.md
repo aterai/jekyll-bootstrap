@@ -69,7 +69,7 @@ table2.getColumnModel().setSelectionModel(new DefaultListSelectionModel() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableで選択可能な列を制限する](http://ateraimemo.com/Swing/ColumnSelectability.html)
+- [JTableで選択可能な列を制限する](https://ateraimemo.com/Swing/ColumnSelectability.html)
     - こちらは編集、選択ともに不可の列を設定する場合のサンプル
 - [java - JTable disable Column Selection - Stack Overflow](https://stackoverflow.com/questions/37690017/jtable-disable-column-selection/37741006#37741006)
 

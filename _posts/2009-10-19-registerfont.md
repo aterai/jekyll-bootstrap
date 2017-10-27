@@ -34,9 +34,9 @@ GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(font);
 ## 参考リンク
 - [GraphicsEnvironment#registerFont(Font) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/GraphicsEnvironment.html#registerFont-java.awt.Font-)
 - [creamundo | Fuentes Gratis TrueType TTF](http://www.creamundo.com/)
-- [Fontをファイルから取得](http://ateraimemo.com/Swing/CreateFont.html)
-- [Htmlを使ったJLabelとJEditorPaneの無効化](http://ateraimemo.com/Swing/DisabledHtmlLabel.html)
-- [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
+- [Fontをファイルから取得](https://ateraimemo.com/Swing/CreateFont.html)
+- [Htmlを使ったJLabelとJEditorPaneの無効化](https://ateraimemo.com/Swing/DisabledHtmlLabel.html)
+- [JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)
 
 <!-- dummy comment line for breaking list -->
 

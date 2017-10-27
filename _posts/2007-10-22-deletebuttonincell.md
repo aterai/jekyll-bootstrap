@@ -74,10 +74,10 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
 
 ## 参考リンク
 - [Swing - JButton inside JTable Cell](https://community.oracle.com/thread/1357728)
-- [JTableの行を追加、削除](http://ateraimemo.com/Swing/AddRow.html)
-- [JTableの行を全削除](http://ateraimemo.com/Swing/ClearTable.html)
-- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
-- [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
+- [JTableの行を追加、削除](https://ateraimemo.com/Swing/AddRow.html)
+- [JTableの行を全削除](https://ateraimemo.com/Swing/ClearTable.html)
+- [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [JTableのセルにHyperlinkを表示](https://ateraimemo.com/Swing/HyperlinkInTableCell.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -96,6 +96,6 @@ JTable table = new JTable(model) {
 </code></pre>
 
 - テスト -- *aterai* 2009-09-27 (日) 01:34:58
-    - [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)に移動。 -- *aterai* 2009-10-05 (日) 01:34:58
+    - [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)に移動。 -- *aterai* 2009-10-05 (日) 01:34:58
 
 <!-- dummy comment line for breaking list -->

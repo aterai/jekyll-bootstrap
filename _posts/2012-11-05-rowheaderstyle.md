@@ -111,8 +111,8 @@ class ComponentIcon implements Icon {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableに行ヘッダを追加](http://ateraimemo.com/Swing/TableRowHeader.html)
-- [JTableのセルのハイライト](http://ateraimemo.com/Swing/CellHighlight.html)
+- [JTableに行ヘッダを追加](https://ateraimemo.com/Swing/TableRowHeader.html)
+- [JTableのセルのハイライト](https://ateraimemo.com/Swing/CellHighlight.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -57,7 +57,7 @@ tree2.addMouseListener(ma);
 </code></pre>
 
 - - - -
-[JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)と、ほとんど同じことをしていますが、`JLabel`とは異なり、`JTree`にはデフォルトで`MouseListener`, `MouseMotionListener`が設定されているため、`JViewport`にリスナーを設定しても`JTree`までマウスイベントが伝わりません。例えば、以下のように`JComponent#dispatchEvent(...)`で、`JTree`の親の`JViewport`にイベントを投げる必要があります。
+[JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)と、ほとんど同じことをしていますが、`JLabel`とは異なり、`JTree`にはデフォルトで`MouseListener`, `MouseMotionListener`が設定されているため、`JViewport`にリスナーを設定しても`JTree`までマウスイベントが伝わりません。例えば、以下のように`JComponent#dispatchEvent(...)`で、`JTree`の親の`JViewport`にイベントを投げる必要があります。
 
 <pre class="prettyprint"><code>MouseAdapter ma = new HandScrollListener();
 JScrollPane scroll = new JScrollPane(tree1);
@@ -80,8 +80,8 @@ MouseAdapter dummy = new MouseAdapter() {
 </code></pre>
 
 ## 参考リンク
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
-- [JScrollPane内にある複数Componentを配置したJPanelをJLayerを使ってドラッグスクロール](http://ateraimemo.com/Swing/DragScrollLayer.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)
+- [JScrollPane内にある複数Componentを配置したJPanelをJLayerを使ってドラッグスクロール](https://ateraimemo.com/Swing/DragScrollLayer.html)
     - `JDK 1.7.0`以上の場合、`JComponent#dispatchEvent(...)`を伝搬させるリスナーを追加なくても、`JLayer`を使用すればすべての子コンポーネントで`MouseEvent`が取得できる
 
 <!-- dummy comment line for breaking list -->

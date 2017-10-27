@@ -115,7 +115,7 @@ panel.add(pf);
 
 ## 参考リンク
 - [JPasswordField#setEchoChar(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JPasswordField.html#setEchoChar-char-)
-- [JPasswordFieldのエコー文字を変更](http://ateraimemo.com/Swing/PasswordView.html)
+- [JPasswordFieldのエコー文字を変更](https://ateraimemo.com/Swing/PasswordView.html)
 
 <!-- dummy comment line for breaking list -->
 

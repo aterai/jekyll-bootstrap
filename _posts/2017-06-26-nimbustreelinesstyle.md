@@ -46,8 +46,8 @@ tree.putClientProperty("Nimbus.Overrides", d);
         UIManager.put("Tree.lineTypeDashed", true);
 </code></pre>
     - * 参考リンク [#reference]
-- [JTreeの水平垂直線を表示しない](http://ateraimemo.com/Swing/TreePaintLines.html)
-- [JTreeのノード間の接続線のスタイルを変更する](http://ateraimemo.com/Swing/TreeLineStyle.html)
+- [JTreeの水平垂直線を表示しない](https://ateraimemo.com/Swing/TreePaintLines.html)
+- [JTreeのノード間の接続線のスタイルを変更する](https://ateraimemo.com/Swing/TreeLineStyle.html)
 - [swing - Nimbus JTree presentation error under java version 1.8 - Stack Overflow](https://stackoverflow.com/questions/44655203/nimbus-jtree-presentation-error-under-java-version-1-8)
 
 <!-- dummy comment line for breaking list -->

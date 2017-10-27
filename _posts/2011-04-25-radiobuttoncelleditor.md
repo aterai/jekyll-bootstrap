@@ -42,7 +42,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセル中にJRadioButtonを配置](http://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
+- [JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
     - 一つのセルの中に複数の`JRadioButton`を配置(`ButtonGroup`を使用して、セル中で一つだけ選択可能)
 
 <!-- dummy comment line for breaking list -->

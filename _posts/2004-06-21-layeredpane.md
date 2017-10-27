@@ -40,6 +40,6 @@ iframe.setVisible(true);
 ## コメント
 - `JDK 1.5.0`で`JFrame`などは、`frame.setAlwaysOnTop(true)`が使えるようになっています。 -- *aterai* 2004-10-08 (金) 17:00:59
 - ありがとうございます。現在`GUI`の作成をしていて、目下この情報を探していました。ありがとうございました -- *G* 2004-12-24 (金) 12:00:00
-    - どういたしまして。 -- [aterai](http://ateraimemo.com/aterai.html)
+    - どういたしまして。 -- [aterai](https://ateraimemo.com/aterai.html)
 
 <!-- dummy comment line for breaking list -->

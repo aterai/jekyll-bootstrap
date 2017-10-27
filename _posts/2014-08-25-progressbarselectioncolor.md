@@ -53,7 +53,7 @@ progressBar2.setUI(new BasicProgressBarUI() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JLayerを使ってJProgressBarの色相を変更する](http://ateraimemo.com/Swing/ColorChannelSwapFilter.html)
+- [JLayerを使ってJProgressBarの色相を変更する](https://ateraimemo.com/Swing/ColorChannelSwapFilter.html)
 
 <!-- dummy comment line for breaking list -->
 

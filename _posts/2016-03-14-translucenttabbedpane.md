@@ -40,7 +40,7 @@ UIManager.put("TabbedPane.borderHightlightColor", fgc);
     - `Swing`のコンポーネントは、背景色が半透明かどうかを判断して再描画しているわけではないため、例えばマウスカーソルの下の領域を再描画するイベントなどで背景色が重複上書きされて、残像が残ったり、次第に色が濃くなる現象などが発生する
         - 半透明色で全体を再描画するように`JPanel#paintComponent(...)`をオーバーライドしたコンポーネントを挟んで回避する必要がある
         - [Backgrounds With Transparency « Java Tips Weblog](https://tips4java.wordpress.com/2009/05/31/backgrounds-with-transparency/)
-        - [JFrameの透明化と再描画](http://ateraimemo.com/Swing/TranslucentFrameRepaint.html)
+        - [JFrameの透明化と再描画](https://ateraimemo.com/Swing/TranslucentFrameRepaint.html)
     - `UIManager.put(...)`で半透明になるかどうかは`LookAndFeel`に依存する
         - `NimbusLookAndFeel`では、タブなどが半透明にならない
         - `Classic`ではない`WindowsLookAndFeel`では、半透明にならない
@@ -48,7 +48,7 @@ UIManager.put("TabbedPane.borderHightlightColor", fgc);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneのタブエリア背景色などをテスト](http://ateraimemo.com/Swing/TabAreaBackground.html)
+- [JTabbedPaneのタブエリア背景色などをテスト](https://ateraimemo.com/Swing/TabAreaBackground.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -132,7 +132,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](http://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
+- [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](https://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

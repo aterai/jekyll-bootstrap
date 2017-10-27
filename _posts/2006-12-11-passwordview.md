@@ -49,7 +49,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JPasswordFieldでパスワードを可視化する](http://ateraimemo.com/Swing/ShowHidePasswordField.html)
+- [JPasswordFieldでパスワードを可視化する](https://ateraimemo.com/Swing/ShowHidePasswordField.html)
 
 <!-- dummy comment line for breaking list -->
 

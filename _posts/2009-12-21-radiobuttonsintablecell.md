@@ -105,9 +105,9 @@ comments: true
 
 ## 参考リンク
 - [Table Button Column ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
-- [JTableのセルに複数のJButtonを配置する](http://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
-- [JTableのCellにJCheckBoxを複数配置する](http://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
-- [JTableのセルにJRadioButton](http://ateraimemo.com/Swing/RadioButtonCellEditor.html)
+- [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
+- [JTableのCellにJCheckBoxを複数配置する](https://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
+- [JTableのセルにJRadioButton](https://ateraimemo.com/Swing/RadioButtonCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

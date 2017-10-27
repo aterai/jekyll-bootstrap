@@ -105,8 +105,8 @@ private BufferedImage backImage = null;
 </code></pre>
 
 ## 参考リンク
-- [JPanelにマウスで自由曲線を描画](http://ateraimemo.com/Swing/PaintPanel.html)
-- [PixelGrabberで画像を配列として取得し編集、書出し](http://ateraimemo.com/Swing/PixelGrabber.html)
+- [JPanelにマウスで自由曲線を描画](https://ateraimemo.com/Swing/PaintPanel.html)
+- [PixelGrabberで画像を配列として取得し編集、書出し](https://ateraimemo.com/Swing/PixelGrabber.html)
 
 <!-- dummy comment line for breaking list -->
 

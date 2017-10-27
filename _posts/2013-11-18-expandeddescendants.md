@@ -55,7 +55,7 @@ expandedState = tree.getExpandedDescendants(rootPath);
 </code></pre>
 - * 参考リンク [#reference]
 - [JTree#getExpandedDescendants(TreePath) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getExpandedDescendants-javax.swing.tree.TreePath-)
-- [JTreeのノードを展開・折り畳み](http://ateraimemo.com/Swing/ExpandAllNodes.html)
+- [JTreeのノードを展開・折り畳み](https://ateraimemo.com/Swing/ExpandAllNodes.html)
 - [Swing: Retaining JTree Expansion State](http://www.javalobby.org/java/forums/t19857.html)
 - [OR in an OB World: Auto-collapsing Tree in Java](http://orinanobworld.blogspot.jp/2013/03/auto-collapsing-tree-in-java.html)
 

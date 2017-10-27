@@ -58,7 +58,7 @@ comments: true
 
 ## 参考リンク
 - [JComboBox#addActionListener(ActionListener) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComboBox.html#addActionListener-java.awt.event.ActionListener-)
-- [JTextFieldにActionListenerを追加する](http://ateraimemo.com/Swing/TextFieldActionListener.html)
+- [JTextFieldにActionListenerを追加する](https://ateraimemo.com/Swing/TextFieldActionListener.html)
 
 <!-- dummy comment line for breaking list -->
 

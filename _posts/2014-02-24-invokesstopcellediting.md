@@ -35,7 +35,7 @@ comments: true
 
 ## 参考リンク
 - [JTree#setInvokesStopCellEditing(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setInvokesStopCellEditing-boolean-)
-- [JTableのセルの編集をコミット](http://ateraimemo.com/Swing/TerminateEdit.html)
+- [JTableのセルの編集をコミット](https://ateraimemo.com/Swing/TerminateEdit.html)
 
 <!-- dummy comment line for breaking list -->
 

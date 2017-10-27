@@ -69,7 +69,7 @@ comments: true
     - 幅高さ: `83x100`
 - `Rotate`: `180`
     - 幅高さ: `83x100`
-    - 上下反転と同等: [AffineTransformOpで画像を反転する](http://ateraimemo.com/Swing/AffineTransformOp.html)
+    - 上下反転と同等: [AffineTransformOpで画像を反転する](https://ateraimemo.com/Swing/AffineTransformOp.html)
 - `Rotate`: `90`(時計回りに`90`度)
     - 幅高さ: `100x83`(元画像の幅高さを入れ替え)
     - 左上を原点に`90`度回転し、元画像の高さだけ`X`軸プラス方向に移動
@@ -135,8 +135,8 @@ class QuadrantRotateIcon implements Icon {
 ## 参考リンク
 - [AffineTransform#quadrantRotate(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/AffineTransform.html#quadrantRotate-int-)
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
-- [AffineTransformOpで画像を反転する](http://ateraimemo.com/Swing/AffineTransformOp.html)
-- [Mouseで画像を移動、回転](http://ateraimemo.com/Swing/MouseDrivenImageRotation.html)
+- [AffineTransformOpで画像を反転する](https://ateraimemo.com/Swing/AffineTransformOp.html)
+- [Mouseで画像を移動、回転](https://ateraimemo.com/Swing/MouseDrivenImageRotation.html)
 
 <!-- dummy comment line for breaking list -->
 

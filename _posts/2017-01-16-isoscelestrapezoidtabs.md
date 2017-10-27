@@ -109,8 +109,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneのタブエリア背景色などをテスト](http://ateraimemo.com/Swing/TabAreaBackground.html)
-- [JTabbedPaneのNimbusLookAndFeelにおけるスタイルを変更する](http://ateraimemo.com/Swing/NimbusTabbedPanePainter.html)
+- [JTabbedPaneのタブエリア背景色などをテスト](https://ateraimemo.com/Swing/TabAreaBackground.html)
+- [JTabbedPaneのNimbusLookAndFeelにおけるスタイルを変更する](https://ateraimemo.com/Swing/NimbusTabbedPanePainter.html)
     - `SynthLookAndFeel`などの場合は、`javax.swing.plaf.Painter`を変更する
 - [java - Tabs Rendering Order in Custom JTabbedPane - Stack Overflow](https://stackoverflow.com/questions/41566659/tabs-rendering-order-in-custom-jtabbedpane)
 

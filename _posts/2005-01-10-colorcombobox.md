@@ -104,7 +104,7 @@ comments: true
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJj4vDxSI/AAAAAAAAAUk/ZZtKylfc0k8/s800/ColorComboBox1.png)
 
 ## 参考リンク
-- [JComboBoxの文字色を変更する](http://ateraimemo.com/Swing/ComboBoxForegroundColor.html)
+- [JComboBoxの文字色を変更する](https://ateraimemo.com/Swing/ComboBoxForegroundColor.html)
 
 <!-- dummy comment line for breaking list -->
 

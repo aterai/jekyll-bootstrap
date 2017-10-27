@@ -90,7 +90,7 @@ class KamabokoBorder extends RoundedCornerBorder {
 - 中: `BasicComboBoxUI`
     - `RoundRectangle2D`に、下の角を上書きするような矩形を追加して作成
     - `UIManager.put("ComboBox.foreground", color)`などで、`JComboBox`の色を変更しているが、`ArrowButton`の色がうまく変更できない
-    - [JComboBoxのBorderを変更する](http://ateraimemo.com/Swing/ComboBoxBorder.html)
+    - [JComboBoxのBorderを変更する](https://ateraimemo.com/Swing/ComboBoxBorder.html)
 - 下: `BasicComboBoxUI#createArrowButton()`
     - `BasicComboBoxUI#createArrowButton()`をオーバーライドして、`ArrowButton`の背景色などを変更
 
@@ -107,8 +107,8 @@ class KamabokoBorder extends RoundedCornerBorder {
         round.add(new Area(b));
 </code></pre>
     - * 参考リンク [#reference]
-- [JComboBoxのBorderを変更する](http://ateraimemo.com/Swing/ComboBoxBorder.html)
-- [JTextFieldの角を丸める](http://ateraimemo.com/Swing/RoundedTextField.html)
+- [JComboBoxのBorderを変更する](https://ateraimemo.com/Swing/ComboBoxBorder.html)
+- [JTextFieldの角を丸める](https://ateraimemo.com/Swing/RoundedTextField.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -132,18 +132,18 @@ comments: true
         - ~~`ListSelectionListener`や、`FocusListener`を追加して再描画することで回避~~
     - `JScrollPane#isOptimizedDrawingEnabled()`が`false`を返すようにオーバーライドすることで回避
     - このサンプルでは、横スクロールバーの表示、カラムヘッダの表示に未対応
-        - [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](http://ateraimemo.com/Swing/OverlappedScrollBar.html)
+        - [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](https://ateraimemo.com/Swing/OverlappedScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - ["Optimized" Drawing - Painting in AWT and Swing](http://www.oracle.com/technetwork/java/painting-140037.html)
-- [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](http://ateraimemo.com/Swing/OverlappedScrollBar.html)
+- [JScrollBarをJTable上に重ねて表示するJScrollPaneを作成する](https://ateraimemo.com/Swing/OverlappedScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - `ScrollPaneLayout`を変更してオーバーラップするより、`JLayer`などを使ってドラッグ可能な矩形を描画する方が簡単かもしれない…。 -- *aterai* 2013-05-20 (月) 17:20:39
-    - `JLayer`を使用するサンプルを追加: [JScrollPane上にマウスカーソルが存在する場合のみJScrollBarを表示する](http://ateraimemo.com/Swing/ScrollBarOnHover.html) -- *aterai* 2017-07-31 (月) 16:12:57
+    - `JLayer`を使用するサンプルを追加: [JScrollPane上にマウスカーソルが存在する場合のみJScrollBarを表示する](https://ateraimemo.com/Swing/ScrollBarOnHover.html) -- *aterai* 2017-07-31 (月) 16:12:57
 
 <!-- dummy comment line for breaking list -->

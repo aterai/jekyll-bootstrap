@@ -72,7 +72,7 @@ protected void walk(TreeModel model, Object o) {
 - - - -
 以下は、`DefaultMutableTreeNode#depthFirstEnumeration()`を使用して、`bananas`を検索しています。
 
-- [JTreeのノードを走査する](http://ateraimemo.com/Swing/TraverseAllNodes.html)
+- [JTreeのノードを走査する](https://ateraimemo.com/Swing/TraverseAllNodes.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -91,10 +91,10 @@ while (depth.hasMoreElements()) {
 </code></pre>
 
 ## 参考リンク
-- [JTreeのノードを展開・折り畳み](http://ateraimemo.com/Swing/ExpandAllNodes.html)
+- [JTreeのノードを展開・折り畳み](https://ateraimemo.com/Swing/ExpandAllNodes.html)
 - [Swing - how to get everything in DefaultTreeNode](https://community.oracle.com/thread/1357454)
-- [JTreeで条件に一致するノードを検索しハイライト](http://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
-- [JTreeのノードを走査する](http://ateraimemo.com/Swing/TraverseAllNodes.html)
+- [JTreeで条件に一致するノードを検索しハイライト](https://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)
+- [JTreeのノードを走査する](https://ateraimemo.com/Swing/TraverseAllNodes.html)
 
 <!-- dummy comment line for breaking list -->
 

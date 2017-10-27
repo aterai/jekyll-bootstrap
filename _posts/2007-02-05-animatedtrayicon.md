@@ -30,8 +30,8 @@ animator = new javax.swing.Timer(100, new ActionListener() {
 `16x16`の画像を`3`パターン用意し、これを`JDK 6`で追加された`TrayIcon#setImage(Image)`メソッドを使って切り替えることでアニメーションを行っています。
 
 ## 参考リンク
-- [SystemTrayにアイコンを表示](http://ateraimemo.com/Swing/SystemTray.html)
-- [TrayIconのダブルクリック](http://ateraimemo.com/Swing/ClickTrayIcon.html)
+- [SystemTrayにアイコンを表示](https://ateraimemo.com/Swing/SystemTray.html)
+- [TrayIconのダブルクリック](https://ateraimemo.com/Swing/ClickTrayIcon.html)
 
 <!-- dummy comment line for breaking list -->
 

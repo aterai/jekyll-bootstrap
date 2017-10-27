@@ -36,9 +36,9 @@ area.setSelectionColor(new Color(0xC8_64_64_FF, true));
     - ハイライトの背景色は設定可能だが、文字色を変更することはできない
     - 背景色を半透明にすることは可能
     - デフォルトのハイライトの設定(`DefaultHighlighter#setDrawsLayeredHighlights(true)`)では、文字列の選択描画より手前にハイライトの矩形が表示される
-        - [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)
+        - [DefaultHighlighterの描画方法を変更する](https://ateraimemo.com/Swing/DrawsLayeredHighlights.html)
 - `StyleSheet`
-    - [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
+    - [JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)
     - `styleSheet.addRule(".highlight {color: blue; background: #FF5533; opacity: 0.5;}");`などで、文字色、背景色を変更可能
     - デフォルトの`HTMLEditorKit`は`CSS`の`opacity: 0.5`、`background: rgba(255,100,100,0.6);`などに未対応で、半透明化は不可
 - 文字列選択の描画や、ハイライトの矩形より奥に描画される
@@ -47,10 +47,10 @@ area.setSelectionColor(new Color(0xC8_64_64_FF, true));
 
 ## 参考リンク
 - [JTextComponent#setSelectionColor(Color) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#setSelectionColor-java.awt.Color-)
-- [JEditorPaneのHTMLEditorKitにCSSを適用](http://ateraimemo.com/Swing/StyleSheet.html)
-- [Highlighterで文字列をハイライト](http://ateraimemo.com/Swing/Highlighter.html)
-- [JTextAreaの背景に画像を表示](http://ateraimemo.com/Swing/CentredBackgroundBorder.html)
-- [DefaultHighlighterの描画方法を変更する](http://ateraimemo.com/Swing/DrawsLayeredHighlights.html)
+- [JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)
+- [Highlighterで文字列をハイライト](https://ateraimemo.com/Swing/Highlighter.html)
+- [JTextAreaの背景に画像を表示](https://ateraimemo.com/Swing/CentredBackgroundBorder.html)
+- [DefaultHighlighterの描画方法を変更する](https://ateraimemo.com/Swing/DrawsLayeredHighlights.html)
 
 <!-- dummy comment line for breaking list -->
 

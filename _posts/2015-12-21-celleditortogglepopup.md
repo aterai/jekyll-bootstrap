@@ -48,7 +48,7 @@ table.getColumnModel().getColumn(1).setCellEditor(new DefaultCellEditor(combo));
 
 ## 参考リンク
 - [java - JTable with JCombobox editor: handle mouse clicks - Stack Overflow](https://stackoverflow.com/questions/34284553/jtable-with-jcombobox-editor-handle-mouse-clicks)
-- [JTableのCellEditorにJComboBoxを設定](http://ateraimemo.com/Swing/ComboCellEditor.html)
+- [JTableのCellEditorにJComboBoxを設定](https://ateraimemo.com/Swing/ComboCellEditor.html)
 
 <!-- dummy comment line for breaking list -->
 

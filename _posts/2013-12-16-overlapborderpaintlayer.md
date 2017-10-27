@@ -97,8 +97,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [FlowLayoutでボタンを重ねてパンくずリストを作成する](http://ateraimemo.com/Swing/BreadcrumbList.html)
-- [JMenuItemの内部にJButtonを配置する](http://ateraimemo.com/Swing/ButtonsInMenuItem.html)
+- [FlowLayoutでボタンを重ねてパンくずリストを作成する](https://ateraimemo.com/Swing/BreadcrumbList.html)
+- [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 
 <!-- dummy comment line for breaking list -->
 

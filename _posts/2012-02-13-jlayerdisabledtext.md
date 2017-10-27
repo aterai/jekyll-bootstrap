@@ -87,11 +87,11 @@ comments: true
 ## 解説
 上記のサンプルでは、`LayerUI#applyPropertyChange(...)`をオーバーライドして、コンポーネントを無効にした場合の文字色の設定と、`Focus`移動の禁止、`Mnemonic`、`PopupMenu`、`ToolTip`の非表示設定を行なっています。
 
-`JLayer`を使用した無効時の文字色設定は、[JCheckBoxなどが無効な状態での文字色を変更](http://ateraimemo.com/Swing/DisabledTextColor.html)のように`LookAndFeel`に依存しません。
+`JLayer`を使用した無効時の文字色設定は、[JCheckBoxなどが無効な状態での文字色を変更](https://ateraimemo.com/Swing/DisabledTextColor.html)のように`LookAndFeel`に依存しません。
 
 ## 参考リンク
-- [JCheckBoxなどが無効な状態での文字色を変更](http://ateraimemo.com/Swing/DisabledTextColor.html)
-- [JLayerで指定したコンポーネントへの入力を禁止](http://ateraimemo.com/Swing/DisableInputLayer.html)
+- [JCheckBoxなどが無効な状態での文字色を変更](https://ateraimemo.com/Swing/DisabledTextColor.html)
+- [JLayerで指定したコンポーネントへの入力を禁止](https://ateraimemo.com/Swing/DisableInputLayer.html)
 - [LayerUI#applyPropertyChange(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/LayerUI.html#applyPropertyChange-java.beans.PropertyChangeEvent-javax.swing.JLayer-)
 
 <!-- dummy comment line for breaking list -->

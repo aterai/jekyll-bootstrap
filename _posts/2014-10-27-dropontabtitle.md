@@ -74,7 +74,7 @@ comments: true
 ドロップの可・不可は、`DropTargetDragEvent#acceptDrag(...)`、`DropTargetDragEvent#rejectDrag()`メソッドで切り替えることができます。
 
 ## 参考リンク
-- [JListの項目をドラッグ＆ドロップ](http://ateraimemo.com/Swing/DnDList.html)
+- [JListの項目をドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDList.html)
     - コメントを参照
 
 <!-- dummy comment line for breaking list -->

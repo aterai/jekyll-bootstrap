@@ -52,19 +52,19 @@ slider2.setForeground(Color.BLUE);
     - `JSlider#setForeground(Color)`で、目盛のキャプションの色を青に変更
     - `MetalSliderUI`を継承する`SliderUI`を作成
         - `paintHorizontalLabel(Graphics, int, Component)`メソッドをオーバーライドし目盛を緑色に変更
-    - 目盛の色は、[JSliderの目盛にアイコンや文字列を追加する](http://ateraimemo.com/Swing/SliderLabelTable.html)でも変更可能
+    - 目盛の色は、[JSliderの目盛にアイコンや文字列を追加する](https://ateraimemo.com/Swing/SliderLabelTable.html)でも変更可能
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Swing - Problem in changing forground color of JSlider!!](https://community.oracle.com/thread/1375990)
-- [JSliderの目盛にアイコンや文字列を追加する](http://ateraimemo.com/Swing/SliderLabelTable.html)
+- [JSliderの目盛にアイコンや文字列を追加する](https://ateraimemo.com/Swing/SliderLabelTable.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - `Java SE 6 Runtime (JRE) Update N build 12 Kernel Installer`だと、`NullPointerException`が発生する？ -- *aterai* 2008-03-03 (月) 19:34:50
-- ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](http://ateraimemo.com/Swing/TriangleTickSlider.html)に移動。 -- *aterai* 2010-05-19 (水) 16:52:13
+- ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](https://ateraimemo.com/Swing/TriangleTickSlider.html)に移動。 -- *aterai* 2010-05-19 (水) 16:52:13
 - メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5099681) -- *aterai* 2010-05-20 (木) 17:24:52
 
 <!-- dummy comment line for breaking list -->

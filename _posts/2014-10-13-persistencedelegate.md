@@ -77,10 +77,10 @@ comments: true
 ## 参考リンク
 - [Using XMLEncoder (web.archive.org)](http://web.archive.org/web/20090806075316/http://java.sun.com/products/jfc/tsc/articles/persistence4/)
     - [Using XMLEncoder](http://www.oracle.com/technetwork/java/persistence4-140124.html)
-- [JTable Inhalte speichern – Byte-Welt Wiki](http://ateraimemo.com/http://wiki.byte-welt.net/wiki/JTable_speichern.html)
-- [PersistenceServiceを使ってJFrameの位置・サイズを記憶](http://ateraimemo.com/Swing/PersistenceService.html)
-- [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](http://ateraimemo.com/Swing/SortKeyPersistence.html)
-- [TableColumnModelをXMLファイルで保存、復元する](http://ateraimemo.com/Swing/ColumnModelPersistence.html)
+- [JTable Inhalte speichern – Byte-Welt Wiki](https://ateraimemo.com/http://wiki.byte-welt.net/wiki/JTable_speichern.html)
+- [PersistenceServiceを使ってJFrameの位置・サイズを記憶](https://ateraimemo.com/Swing/PersistenceService.html)
+- [JTableのSortKeyを永続化し、ソート状態の保存と復元を行う](https://ateraimemo.com/Swing/SortKeyPersistence.html)
+- [TableColumnModelをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/ColumnModelPersistence.html)
 
 <!-- dummy comment line for breaking list -->
 

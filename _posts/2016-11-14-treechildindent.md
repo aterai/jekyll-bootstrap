@@ -33,8 +33,8 @@ UIManager.put("Tree.rightChildIndent", 0);
 `Tree.leftChildIndent`と`Tree.rightChildIndent`の合計から子ノードのインデント量になるので、この合計が`0`になるように設定すると、`JList`のような`JTree`を作成することができます。
 
 ## 参考リンク
-- [JTreeの展開、折畳みアイコンを非表示にする](http://ateraimemo.com/Swing/TreeExpandedIcon.html)
-- [JTreeの水平垂直線を表示しない](http://ateraimemo.com/Swing/TreePaintLines.html)
+- [JTreeの展開、折畳みアイコンを非表示にする](https://ateraimemo.com/Swing/TreeExpandedIcon.html)
+- [JTreeの水平垂直線を表示しない](https://ateraimemo.com/Swing/TreePaintLines.html)
 
 <!-- dummy comment line for breaking list -->
 

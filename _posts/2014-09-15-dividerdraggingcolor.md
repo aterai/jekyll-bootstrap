@@ -29,7 +29,7 @@ comments: true
         divider.setBackground(Color.ORANGE);
 </code></pre>
     - * 参考リンク [#reference]
-- [JSplitPaneでディバイダの移動を連続的に再描画](http://ateraimemo.com/Swing/ContinuousLayout.html)
+- [JSplitPaneでディバイダの移動を連続的に再描画](https://ateraimemo.com/Swing/ContinuousLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -49,7 +49,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JComboBoxの角を丸める](http://ateraimemo.com/Swing/RoundedComboBox.html)
+- [JComboBoxの角を丸める](https://ateraimemo.com/Swing/RoundedComboBox.html)
 - [java - Rounded Corner for JComboBox - Stack Overflow](https://stackoverflow.com/questions/34503780/rounded-corner-for-jcombobox/34534091#34534091)
 
 <!-- dummy comment line for breaking list -->

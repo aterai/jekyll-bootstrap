@@ -61,7 +61,7 @@ JScrollPane scrollPane = new JScrollPane(
 - `JScrollPane`に追加
     - `JScrollBar`を常に非表示にした、`JScrollPane`に`JTextPane`を追加
 - `JTextPane`の折り返しを無効化
-    - [JEditorPaneで長い行を折り返さない](http://ateraimemo.com/Swing/NoWrapTextPane.html)の`ParagraphView`を使用して、折り返しを無効化
+    - [JEditorPaneで長い行を折り返さない](https://ateraimemo.com/Swing/NoWrapTextPane.html)の`ParagraphView`を使用して、折り返しを無効化
 - 文字列の最後にある`Caret`が表示されないのを修正
     - `JTextPane#scrollRectToVisible(Rectangle)`をオーバーライドして、余白までスクロールするように設定
     - メモ: [No Wrap Text Pane ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/01/25/no-wrap-text-pane/)のように、`CaretListener`を使用する方法もある
@@ -69,17 +69,17 @@ JScrollPane scrollPane = new JScrollPane(
     - `JTextPane`から`InputMap`と`ActionMap`を取得して、`KeyEvent.VK_ENTER`をなにもしない`Action`に置き換える
     - `Document#insertString(...)`をオーバーライドして、コピー・ペーストなどで張り込まれた文字列から、改行を空白に置換
 - <kbd>Tab</kbd>キーでフォーカス移動
-    - [FocusTraversalKeysに矢印キーを追加してフォーカス移動](http://ateraimemo.com/Swing/FocusTraversalKeys.html)
+    - [FocusTraversalKeysに矢印キーを追加してフォーカス移動](https://ateraimemo.com/Swing/FocusTraversalKeys.html)
     - `JTextPane`から`InputMap`を取得して、`KeyEvent.VK_TAB`をなにもしない`Action`に置き換え、`JTextPane#setFocusTraversalKeys(...)`で、<kbd>Tab</kbd>キーでフォーカス移動するように設定
 - 文字スタイルの変更
-    - [JTextPaneでキーワードのSyntaxHighlight](http://ateraimemo.com/Swing/SimpleSyntaxHighlight.html)
+    - [JTextPaneでキーワードのSyntaxHighlight](https://ateraimemo.com/Swing/SimpleSyntaxHighlight.html)
     - `SyntaxDocument.java`を使って、入力された`red`, `green`, `blue`の文字色を変更
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JEditorPaneで長い行を折り返さない](http://ateraimemo.com/Swing/NoWrapTextPane.html)
-- [FocusTraversalKeysに矢印キーを追加してフォーカス移動](http://ateraimemo.com/Swing/FocusTraversalKeys.html)
+- [JEditorPaneで長い行を折り返さない](https://ateraimemo.com/Swing/NoWrapTextPane.html)
+- [FocusTraversalKeysに矢印キーを追加してフォーカス移動](https://ateraimemo.com/Swing/FocusTraversalKeys.html)
 
 <!-- dummy comment line for breaking list -->
 

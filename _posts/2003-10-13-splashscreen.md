@@ -80,7 +80,7 @@ public void showPanel() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JDialogでモーダルなJProgressBar付きSplash Screenを表示する](http://ateraimemo.com/Swing/ProgressSplashScreen.html)
+- [JDialogでモーダルなJProgressBar付きSplash Screenを表示する](https://ateraimemo.com/Swing/ProgressSplashScreen.html)
 - ~~[n-Gen](http://www.n-generate.com/download.html)~~
     - サンプルの画像の生成に利用
 

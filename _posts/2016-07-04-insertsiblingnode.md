@@ -47,7 +47,7 @@ Action addBelowAction = new AbstractAction("insert following sibling node") {
 ## 解説
 - `add child node`
     - 選択されたノードの子ノードとして新規ノードを追加
-    - [JTreeのノード追加、削除](http://ateraimemo.com/Swing/AddNode.html)
+    - [JTreeのノード追加、削除](https://ateraimemo.com/Swing/AddNode.html)
 - `insert preceding sibling node`
     - 選択されたノードの兄ノードとして新規ノードを追加
 - `insert following sibling node`
@@ -56,7 +56,7 @@ Action addBelowAction = new AbstractAction("insert following sibling node") {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTreeのノード追加、削除](http://ateraimemo.com/Swing/AddNode.html)
+- [JTreeのノード追加、削除](https://ateraimemo.com/Swing/AddNode.html)
 - [MutableTreeNode#insert(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/MutableTreeNode.html#insert-javax.swing.tree.MutableTreeNode-int-)
 
 <!-- dummy comment line for breaking list -->

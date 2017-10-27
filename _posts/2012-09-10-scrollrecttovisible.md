@@ -53,9 +53,9 @@ table.scrollRectToVisible(r);
         //*/
 </code></pre>
     - * 参考リンク [#reference]
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)
     - `JComponent#scrollRectToVisible(...)`を使用してスクロール
-- [JTextPaneで最終行に移動](http://ateraimemo.com/Swing/CaretPosition.html)
+- [JTextPaneで最終行に移動](https://ateraimemo.com/Swing/CaretPosition.html)
     - キャレットの移動でスクロール
 
 <!-- dummy comment line for breaking list -->

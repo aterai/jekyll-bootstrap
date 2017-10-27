@@ -130,14 +130,14 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)
-- [JScrollPaneのオートスクロール](http://ateraimemo.com/Swing/AutoScroll.html)
+- [JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)
+- [JScrollPaneのオートスクロール](https://ateraimemo.com/Swing/AutoScroll.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
 - 慣性(モーメンタム)スクロール、フリックスクロール(フリック+慣性スクロール？)、・・・でもやっぱり猫の掌スクロールを最初に思い出してしまう。 -- *aterai* 2010-08-16 (月) 13:41:47
-- `JDK 1.7.0`では、`JViewport#setViewPosition(Point)`を使って右下外部に移動できなくなっているので、[JScrollPaneのViewportをマウスで掴んでスクロール](http://ateraimemo.com/Swing/HandScroll.html)と同じ対応をしてソースを更新。 -- *aterai* 2011-10-03 (月) 18:08:23
+- `JDK 1.7.0`では、`JViewport#setViewPosition(Point)`を使って右下外部に移動できなくなっているので、[JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)と同じ対応をしてソースを更新。 -- *aterai* 2011-10-03 (月) 18:08:23
 
 <!-- dummy comment line for breaking list -->

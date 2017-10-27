@@ -212,9 +212,9 @@ comments: true
 </code></pre>
 
 ## 参考リンク
-- [JTreeの葉ノードをJCheckBoxにする](http://ateraimemo.com/Swing/CheckBoxNodeTree.html)
-- [JCheckBoxに不定状態のアイコンを追加する](http://ateraimemo.com/Swing/TriStateCheckBox.html)
-- [JCheckBox付きJTreeでディレクトリ構造を表示](http://ateraimemo.com/Swing/FileSystemTreeWithCheckBox.html)
+- [JTreeの葉ノードをJCheckBoxにする](https://ateraimemo.com/Swing/CheckBoxNodeTree.html)
+- [JCheckBoxに不定状態のアイコンを追加する](https://ateraimemo.com/Swing/TriStateCheckBox.html)
+- [JCheckBox付きJTreeでディレクトリ構造を表示](https://ateraimemo.com/Swing/FileSystemTreeWithCheckBox.html)
 
 <!-- dummy comment line for breaking list -->
 

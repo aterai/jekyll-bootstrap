@@ -50,11 +50,11 @@ frame.getContentPane().add(p);
 - `JFrame`の装飾を削除
     - `JFrame#setUndecorated(true);`
 - `JInternalFrame`を`ContentPane`に追加
-    - [JInternalFrameをJFrameとして表示する](http://ateraimemo.com/Swing/InternalFrameTitleBar.html)
+    - [JInternalFrameをJFrameとして表示する](https://ateraimemo.com/Swing/InternalFrameTitleBar.html)
     - `JFrame`の背景色を`JFrame#setBackground(new Color(0x0, true));`で透明化
 - `JRootPane`に装飾を追加、変更
     - `JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`で装飾を追加し、リサイズのための`MouseMotionListener`などを利用
-        - [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](http://ateraimemo.com/Swing/CustomDecoratedFrame.html)は、このリサイズのための`MouseMotionListener`も独自に追加している
+        - [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](https://ateraimemo.com/Swing/CustomDecoratedFrame.html)は、このリサイズのための`MouseMotionListener`も独自に追加している
     - `JLayeredPane`からタイトルバーを削除
         - 上辺でリサイズできない
     - マウスでリサイズ可能な領域を作成するために、`ContentPane`にほぼ透明な`Border`をもつ`JPanel`を追加
@@ -75,8 +75,8 @@ frame.getContentPane().add(p);
 </code></pre>
 
 ## 参考リンク
-- [JInternalFrameをJFrameとして表示する](http://ateraimemo.com/Swing/InternalFrameTitleBar.html)
-- [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](http://ateraimemo.com/Swing/CustomDecoratedFrame.html)
+- [JInternalFrameをJFrameとして表示する](https://ateraimemo.com/Swing/InternalFrameTitleBar.html)
+- [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](https://ateraimemo.com/Swing/CustomDecoratedFrame.html)
 
 <!-- dummy comment line for breaking list -->
 

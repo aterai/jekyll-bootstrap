@@ -90,15 +90,15 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-アニメーションのスピードなどは、[JProgressBarの不確定進捗サイクル時間を設定](http://ateraimemo.com/Swing/IndeterminateCycleTime.html)と同様に、`UIManager.put(...)`を使って調整しています。
+アニメーションのスピードなどは、[JProgressBarの不確定進捗サイクル時間を設定](https://ateraimemo.com/Swing/IndeterminateCycleTime.html)と同様に、`UIManager.put(...)`を使って調整しています。
 
 <pre class="prettyprint"><code>UIManager.put("ProgressBar.cycleTime", 1000);
 UIManager.put("ProgressBar.repaintInterval", 10);
 </code></pre>
 
 ## 参考リンク
-- [JProgressBarのNimbusLookAndFeelにおける不確定状態アニメーションを変更する](http://ateraimemo.com/Swing/IndeterminateRegionPainter.html)
-- [JProgressBarの不確定進捗サイクル時間を設定](http://ateraimemo.com/Swing/IndeterminateCycleTime.html)
+- [JProgressBarのNimbusLookAndFeelにおける不確定状態アニメーションを変更する](https://ateraimemo.com/Swing/IndeterminateRegionPainter.html)
+- [JProgressBarの不確定進捗サイクル時間を設定](https://ateraimemo.com/Swing/IndeterminateCycleTime.html)
 
 <!-- dummy comment line for breaking list -->
 

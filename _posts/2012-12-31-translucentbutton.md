@@ -72,7 +72,7 @@ comments: true
 
 ## 解説
 - 透明な`JButton`、全体を半透明な`Icon`、タイトルの`Icon`と文字列は`align='middle'`などを指定して配置
-    - 参考: [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
+    - 参考: [JRadioButtonを使ってToggleButtonBarを作成](https://ateraimemo.com/Swing/ToggleButtonBar.html)
     - `setOpaque(false);`、`setContentAreaFilled(false);`などで、`JButton`自体は透明化
     - タイトル`Icon`と文字列の`align`に、`top`、`middle`、`bottom`のどれを設定してもベースラインで揃わない
     - サイズが固定
@@ -189,7 +189,7 @@ add(p);
 </code></pre>
 
 ## 参考リンク
-- [JRadioButtonを使ってToggleButtonBarを作成](http://ateraimemo.com/Swing/ToggleButtonBar.html)
+- [JRadioButtonを使ってToggleButtonBarを作成](https://ateraimemo.com/Swing/ToggleButtonBar.html)
 - ["ecqlipse 2" PNG by ~chrfb on deviantART](http://chrfb.deviantart.com/art/quot-ecqlipse-2-quot-PNG-59941546)
 
 <!-- dummy comment line for breaking list -->

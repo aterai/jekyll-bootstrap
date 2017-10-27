@@ -75,7 +75,7 @@ comments: true
 </code></pre>
 
 ## 解説
-[JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)とほぼ同様の`ScrollPaneLayout`を使用していますが、`JTable`のヘッダを表示するために、`JScrollPane`のカラムヘッダのレイアウトに対応するよう追加修正しています。
+[JScrollBarを半透明にする](https://ateraimemo.com/Swing/TranslucentScrollBar.html)とほぼ同様の`ScrollPaneLayout`を使用していますが、`JTable`のヘッダを表示するために、`JScrollPane`のカラムヘッダのレイアウトに対応するよう追加修正しています。
 
 - 横スクロールバーにも対応しているが、右下のコーナーコンポーネントは常に空き状態になる
     - 片方のスクロールバーが非表示でもその領域まで拡張しない
@@ -84,7 +84,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JScrollBarを半透明にする](http://ateraimemo.com/Swing/TranslucentScrollBar.html)
+- [JScrollBarを半透明にする](https://ateraimemo.com/Swing/TranslucentScrollBar.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -54,7 +54,7 @@ label.setComponentPopupMenu(popup);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [TrayIconでJPopupMenuを使用する](http://ateraimemo.com/Swing/TrayIconPopupMenu.html)
+- [TrayIconでJPopupMenuを使用する](https://ateraimemo.com/Swing/TrayIconPopupMenu.html)
 
 <!-- dummy comment line for breaking list -->
 

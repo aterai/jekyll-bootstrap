@@ -39,7 +39,7 @@ panel = new JPanel() {
 
 ## 参考リンク
 - [TexturePaint (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/TexturePaint.html)
-- [JPanelの背景に画像を並べる](http://ateraimemo.com/Swing/BackgroundImage.html)
+- [JPanelの背景に画像を並べる](https://ateraimemo.com/Swing/BackgroundImage.html)
 
 <!-- dummy comment line for breaking list -->
 

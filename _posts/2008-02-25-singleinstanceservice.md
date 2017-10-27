@@ -70,7 +70,7 @@ try {
 - [Bug ID: 6631056 SingleInstanceService does not work on JRE 1.6.0_03](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6631056)
     - via: [Java Web Start & JNLP - How to use singleinstance service with a JWS application](https://community.oracle.com/thread/1307009)
 - [Java Web Start SingleInstanceService - appframework(JSR-296)](https://appframework.dev.java.net/servlets/ReadMsg?listName=users&msgNo=396)
-- [ServerSocketを使ってアプリケーションの複数起動を禁止](http://ateraimemo.com/Swing/SingleInstanceApplication.html)
+- [ServerSocketを使ってアプリケーションの複数起動を禁止](https://ateraimemo.com/Swing/SingleInstanceApplication.html)
 
 <!-- dummy comment line for breaking list -->
 

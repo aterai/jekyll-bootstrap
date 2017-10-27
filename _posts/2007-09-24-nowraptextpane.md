@@ -58,7 +58,7 @@ comments: true
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
 - [Bug ID: 6502558 AbstractDocument fires event not on Event Dispatch Thread](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6502558)
     - [Alexander Potochkin's Blog: Debugging Swing, the final summary](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_swing.html)
-- [JTextPaneを一行に制限してスタイル可能なJTextFieldとして使用する](http://ateraimemo.com/Swing/OneLineTextPane.html)
+- [JTextPaneを一行に制限してスタイル可能なJTextFieldとして使用する](https://ateraimemo.com/Swing/OneLineTextPane.html)
 
 <!-- dummy comment line for breaking list -->
 

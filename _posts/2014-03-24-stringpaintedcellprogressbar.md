@@ -107,7 +107,7 @@ class ProgressRenderer extends DefaultTableCellRenderer {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTableのセルにJProgressBarを表示](http://ateraimemo.com/Swing/TableCellProgressBar.html)
+- [JTableのセルにJProgressBarを表示](https://ateraimemo.com/Swing/TableCellProgressBar.html)
 
 <!-- dummy comment line for breaking list -->
 

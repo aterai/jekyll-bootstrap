@@ -86,8 +86,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTabbedPaneの余白に文字列を表示](http://ateraimemo.com/Swing/TabbedPaneWithText.html)
-- [JTabbedPaneの余白にJButtonを配置](http://ateraimemo.com/Swing/TabbedPaneWithButton.html)
+- [JTabbedPaneの余白に文字列を表示](https://ateraimemo.com/Swing/TabbedPaneWithText.html)
+- [JTabbedPaneの余白にJButtonを配置](https://ateraimemo.com/Swing/TabbedPaneWithButton.html)
 
 <!-- dummy comment line for breaking list -->
 

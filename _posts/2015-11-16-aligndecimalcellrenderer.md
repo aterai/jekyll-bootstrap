@@ -62,7 +62,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTextPaneにTabSetを設定してTabStopの文字列揃えをテストする](http://ateraimemo.com/Swing/TabSet.html)
+- [JTextPaneにTabSetを設定してTabStopの文字列揃えをテストする](https://ateraimemo.com/Swing/TabSet.html)
 
 <!-- dummy comment line for breaking list -->
 

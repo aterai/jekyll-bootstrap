@@ -94,9 +94,9 @@ private static boolean isURLColumn(JTable table, int column) {
 `SwingUtilities2.pointOutsidePrefSize(...)`を参考にして、セルの表示に使用するコンポーネント(`JLabel`)の推奨サイズの範囲内にカーソルがあるかどうかを比較するメソッドを作成しています。`JTable`に追加した`MouseListener`でこれを使用し、`URL`の文字列を`Hover`状態に変更するか、またはクリックされたかなどを判断しています。
 
 ## 参考リンク
-- [JTableのセルにHyperlinkを表示](http://ateraimemo.com/Swing/HyperlinkInTableCell.html)
-- [Htmlで修飾した文字列のクリップ](http://ateraimemo.com/Swing/ClippedHtmlLabel.html)
-- [JTableで文字列をクリックした場合だけセルを選択状態にする](http://ateraimemo.com/Swing/TableFileList.html)
+- [JTableのセルにHyperlinkを表示](https://ateraimemo.com/Swing/HyperlinkInTableCell.html)
+- [Htmlで修飾した文字列のクリップ](https://ateraimemo.com/Swing/ClippedHtmlLabel.html)
+- [JTableで文字列をクリックした場合だけセルを選択状態にする](https://ateraimemo.com/Swing/TableFileList.html)
 - [SwingSet3: HyperlinkCellRenderer.java](http://java.net/projects/swingset3/sources/svn/content/trunk/SwingSet3/src/com/sun/swingset3/demos/table/HyperlinkCellRenderer.java)
 
 <!-- dummy comment line for breaking list -->
