@@ -158,7 +158,7 @@ public class MenuBarRootPaneTest {
   }
 
   // TranslucentPopupMenu
-  // http://ateraimemo.com/Swing/TranslucentPopupMenu.html
+  // https://ateraimemo.com/Swing/TranslucentPopupMenu.html
   static class TranslucentPopupMenu extends JPopupMenu {
     @Override public boolean isOpaque() {
       return false;
@@ -266,7 +266,7 @@ public class MenuBarRootPaneTest {
     return new TexturePaint(img, new Rectangle(sz, sz));
   }
 }
-// //http://ateraimemo.com/Swing/TranslucentPopupMenu.html
+// //https://ateraimemo.com/Swing/TranslucentPopupMenu.html
 // class TranslucentPopupMenu extends JPopupMenu {
 </code></pre>
 

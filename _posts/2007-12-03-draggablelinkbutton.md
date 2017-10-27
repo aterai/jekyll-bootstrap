@@ -16,7 +16,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTLyb41hvI/AAAAAAAAAYI/uoSzZ3thyWk/s800/DraggableLinkButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final String href = "http://ateraimemo.com/";
+<pre class="prettyprint"><code>final String href = "https://ateraimemo.com/";
 //final DataFlavor uriflavor = new DataFlavor(String.class, "text/uri-list");
 final DataFlavor uriflavor = DataFlavor.stringFlavor;
 JButton b = new JButton(href);
@@ -58,7 +58,7 @@ b.addMouseListener(new MouseAdapter() {
 - `DataFlavor`
     - `DataFlavor.stringFlavor`
 - 転送するデータ
-    - 文字列: `[http://ateraimemo.com/](http://ateraimemo.com/)`
+    - 文字列: `https://ateraimemo.com/`
 
 <!-- dummy comment line for breaking list -->
 

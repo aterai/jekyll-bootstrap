@@ -9,7 +9,7 @@ author:
   twitter: aterai
 ---
 {% include JB/setup %}
-Posted by [aterai](http://ateraimemo.com/:Users/aterai.html) at 2003-09-25
+Posted by [aterai](https://ateraimemo.com/:Users/aterai.html) at 2003-09-25
 
 ## 概要
 このページ以下では、`Java Swing`での`GUI`プログラム作成のコツなどを、 **「小さなサンプル(ソースコード付き)」** を使って紹介しています。

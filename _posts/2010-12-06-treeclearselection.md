@@ -30,7 +30,7 @@ comments: true
 上記のサンプルでは、`JTree#getRowForLocation(...)`メソッドを使用して、`JTree`のノード以外の場所がクリックされたかどうかを判断しています。ノードの選択解除自体は、`JTree#clearSelection()`を使用しています。
 
 ## 参考リンク
-- [JTree (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTree.html)のサンプルコード
+- [JTree (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html)のサンプルコード
 
 <!-- dummy comment line for breaking list -->
 

@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>DefaultListModel&lt;SiteItem&gt; m = new DefaultListModel&lt;&gt;();
 m.addElement(new SiteItem("aterai",
-  Arrays.asList("http://ateraimemo.com", "https://github.com/aterai")));
+  Arrays.asList("https://ateraimemo.com", "https://github.com/aterai")));
 m.addElement(new SiteItem("example",
   Arrays.asList("http://www.example.com", "https://www.example.com")));
 

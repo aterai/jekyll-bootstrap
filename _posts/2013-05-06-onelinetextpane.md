@@ -41,7 +41,7 @@ textPane.getActionMap().put(KEY, new AbstractAction() {
   }
 });
 
-// @see http://ateraimemo.com/Swing/FocusTraversalKeys.html
+// @see https://ateraimemo.com/Swing/FocusTraversalKeys.html
 Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;AWTKeyStroke&gt;(
     textPane.getFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0));

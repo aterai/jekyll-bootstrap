@@ -77,14 +77,13 @@ frame.setFocusTraversalPolicy(policy);
 
 <pre class="prettyprint"><code>frame.setFocusTraversalPolicy(new LayoutFocusTraversalPolicy() {
   @Override protected boolean accept(Component c) {
-    if (c instanceof JTextComponent &amp;&amp; !((JTextComponent) c).isEditable()) {
-      return false;
+    if (c instanceof JTextComponent) {
+      return ((JTextComponent) c).isEditable();
     } else {
       return super.accept(c);
     }
-    //return (c == textarea) ? false : super.accept(c);
   }
-});
+};
 </code></pre>
 
 ## 参考リンク

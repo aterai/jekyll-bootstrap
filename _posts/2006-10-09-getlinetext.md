@@ -78,4 +78,11 @@ try {
 }
 </code></pre>
 
+## 参考リンク
+- [StringTokenizer (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/util/StringTokenizer.html)
+- [LineNumberReader (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/io/LineNumberReader.html)
+- [Element#getElementCount() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Element.html#getElementCount--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

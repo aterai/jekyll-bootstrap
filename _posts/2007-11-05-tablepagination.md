@@ -106,7 +106,7 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 また、モデルのインデックス順でフィルタリングしているため、ソートを行っても表示される行の範囲内で変化します。
 
 - 参考: [JTableのRowFilterを一旦解除してソート](http://ateraimemo.com/Swing/ResetRowFilter.html)
-    - [TablePaginationTest.java](http://ateraimemo.com/data/swing/TablePaginationTest.java)
+    - [TablePaginationTest.java](https://ateraimemo.com/data/swing/TablePaginationTest.java)
 
 <!-- dummy comment line for breaking list -->
 

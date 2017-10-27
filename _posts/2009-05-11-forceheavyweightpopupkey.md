@@ -63,7 +63,7 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 - [Swing - ComboBox scroll and selected/highlight on glasspane](https://community.oracle.com/thread/1357949)
 - [JComboBox の GlassPane 上でのレンダリング](http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?mode=viewtopic&topic=42615&forum=12)
 - [Swing - Why glass pane requires setLightWeightPopupEnabled(false)?](https://community.oracle.com/thread/1366094)
-- [JInternalFrameをModalにする](http://ateraimemo.com/Swing/ModalInternalFrame.html)
+- [JInternalFrameをModalにする](https://ateraimemo.com/Swing/ModalInternalFrame.html)
 - [Mixing Heavyweight and Lightweight Components](http://www.oracle.com/technetwork/articles/java/mixing-components-433992.html)
 
 <!-- dummy comment line for breaking list -->

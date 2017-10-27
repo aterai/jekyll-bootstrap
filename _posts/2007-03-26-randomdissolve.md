@@ -95,6 +95,7 @@ comments: true
 
 ## 参考リンク
 - [Java 2D - random pixelwise fading ?](https://community.oracle.com/thread/1270228)
+- [WritableRaster (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/image/WritableRaster.html)
 
 <!-- dummy comment line for breaking list -->
 

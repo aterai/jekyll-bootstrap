@@ -40,6 +40,7 @@ startButton = new JButton(new AbstractAction("start") {
 `Sequencer#start()`メソッドで演奏を開始することができます。
 
 ## 参考リンク
+- [MidiSystem (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/sound/midi/MidiSystem.html)
 - [Javaでゲーム - サウンドメモ](http://muimi.com/j/game/sound/)
 - [クラシックMIDI ラインムジーク](http://classic-midi.com/)
 - [Wavファイルの演奏](http://ateraimemo.com/Swing/Sound.html)

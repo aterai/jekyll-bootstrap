@@ -53,7 +53,7 @@ editor1.setEditorKit(new HTMLEditorKit());
   "&lt;span style='background:#88ff88;' title='tooltip: span[@title]'&gt;span&lt;/span&gt;&lt;br /&gt;" +
   "&lt;div title='tooltip: div[@title]'&gt;div tag: div div div div&lt;/div&gt;" +
   "&lt;div style='padding: 2 24;'&gt;&lt;img src='"+ image +"' alt='16x16 favicon' /&gt;&amp;nbsp;" +
-  "&lt;a href='http://ateraimemo.com/'&gt;Java Swing Tips&lt;/a&gt;&lt;/div&gt;" +
+  "&lt;a href='https://ateraimemo.com/'&gt;Java Swing Tips&lt;/a&gt;&lt;/div&gt;" +
   "&lt;/body&gt;&lt;/html&gt;";
 </code></pre>
 

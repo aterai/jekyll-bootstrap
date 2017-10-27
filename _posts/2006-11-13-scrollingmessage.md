@@ -56,4 +56,10 @@ Rectangle2D b = tl.getBounds();
 yy = tl.getAscent() / 2f + (float) b.getY();
 </code></pre>
 
+## 参考リンク
+- [GlyphVector (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/GlyphVector.html)
+- [TextLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/TextLayout.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
