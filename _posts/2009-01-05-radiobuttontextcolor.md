@@ -68,6 +68,8 @@ comments: true
 
 ## 参考リンク
 - [AbstractButton#fireStateChanged() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#fireStateChanged--)
+- [ButtonModel (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ButtonModel.html)
+- [ChangeListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/ChangeListener.html)
 
 <!-- dummy comment line for breaking list -->
 

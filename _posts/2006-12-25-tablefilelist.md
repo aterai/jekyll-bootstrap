@@ -38,7 +38,7 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Name`カラムのセル中にあるアイコンと文字列の上でクリックされた場合のみ、そのセルが選択されるようになっています。
+上記のサンプルでは、`0`列目の`Name`カラムのセル中にあるアイコンと文字列の上でクリックされた場合のみ、そのセルが選択されるよう設定しています。
 
 - `JTable.putClientProperty("Table.isFileList", Boolean.TRUE)`で、`0`列目の文字列以外がクリックされても選択されないように変更
     - `WindowsLookAndFeel`のみ？

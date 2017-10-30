@@ -39,4 +39,10 @@ imc.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "myDown");
 ## 解説
 上記のサンプルでは、下のコンボボックスの`ActionMap`と`InputMap`を使って、上下キーに対応する新しいアクションを設定しています。
 
+## 参考リンク
+- [ActionMap (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ActionMap.html)
+- [InputMap (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/InputMap.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -114,11 +114,11 @@ comments: true
 </code></pre>
 
 ## 解説
-`JComboBox`のドロップダウンリスト(`BasicComboPopup`)から`JList`を取得し、これに上記のような`MouseListener`を追加しています。この`JList`がクリックされた場合、レンダラーから対応するセルに表示されている`JButton`を取得し、`button.doClick()`を呼び出します。
+`JComboBox`のドロップダウンリスト(`ComboPopup`)から`JList`を取得し、これに上記のような`MouseListener`を追加しています。この`JList`がクリックされた場合、レンダラーから対応するセルに表示されている`JButton`を取得し、`button.doClick()`を呼び出します。
 
 <pre class="prettyprint"><code>Accessible a = getAccessibleContext().getAccessibleChild(0);
-if (a instanceof BasicComboPopup) {
-  BasicComboPopup pop = (BasicComboPopup) a;
+if (a instanceof ComboPopup) {
+  ComboPopup pop = (ComboPopup) a;
   JList list = pop.getList();
   CellButtonsMouseListener cbml = new CellButtonsMouseListener();
   list.addMouseListener(cbml);
@@ -126,9 +126,9 @@ if (a instanceof BasicComboPopup) {
 }
 </code></pre>
 
-- 削除ボタンがクリックされてもドロップダウンリスト(`BasicComboPopup`)は表示状態のまま残したい
+- 削除ボタンがクリックされてもドロップダウンリスト(`ComboPopup`)は表示状態のまま残したい
     - `MutableComboBoxModel#removeElementAt(index);`のあとで`comboBox.showPopup();`を実行して開き直す
-    - `BasicComboPopup`が`JFrame`の外に表示されている(`Heavy weight`)場合、一旦閉じてから再度開く様子が見えてしまう
+    - `ComboPopup`が`JFrame`の外に表示されている(`Heavy weight`)場合、一旦閉じてから再度開く様子が見えてしまう
 
 <!-- dummy comment line for breaking list -->
 
