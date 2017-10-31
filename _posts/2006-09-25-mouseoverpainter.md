@@ -64,4 +64,9 @@ comments: true
 ## 解説
 `MouseAdapter`を継承した`RollOverListener`で、マウスカーソルのある行を記憶し、`JTextArea#paintComponent`メソッドをオーバーライドして、その行の背景に色を付けています。
 
+## 参考リンク
+- [Element#getElementIndex(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Element.html#getElementIndex-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
