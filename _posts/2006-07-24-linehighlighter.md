@@ -50,16 +50,16 @@ comments: true
 </code></pre>
 
 ## 解説
-ほぼ、[JTextAreaに行カーソルを表示](https://ateraimemo.com/Swing/LineCursor.html)と同様のコードを使用していますが、行全体を塗り潰すために、以下の`3`点を変更しています。
+[JTextAreaに行カーソルを表示](https://ateraimemo.com/Swing/LineCursor.html)と同様のコードを使用していますが、行全体を塗り潰すために以下の`3`点を変更しています。
 
-- `Viewport`の色を`scroll.getViewport().setBackground(Color.WHITE)`にする
-- `JTextArea#setOpaque(false)`と設定して透明にする
-- `JTextArea#paintComponent(...)`をオーバーライドするとき、カーソルのある行を塗りつぶしてから`super.paintComponent(g)`する
+- `Viewport`の色を`scroll.getViewport().setBackground(Color.WHITE)`に変更
+- `JTextArea#setOpaque(false)`で透明に設定
+- `JTextArea#paintComponent(...)`をオーバーライドするとき、カーソルのある行を塗りつぶしてから`super.paintComponent(g)`を実行
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-[Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121) の Darryl.Burke さんのコード(以下に部分コピー)のように、`BasicTextPaneUI#paintBackground`をオーバーライドする方法(こちらの方がシンプルで美しいかも)もあります。
+[Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121) の Darryl.Burke さんのコード(以下に部分コピー)のように、`BasicTextPaneUI#paintBackground`をオーバーライドするシンプルな方法もあります。
 
 <pre class="prettyprint"><code>//JTextPane textPane = new JTextPane();
 //textPane.setUI(new LineHighlightTextPaneUI(textPane));
