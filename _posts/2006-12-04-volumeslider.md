@@ -65,6 +65,6 @@ slider2.setForeground(Color.BLUE);
 ## コメント
 - `Java SE 6 Runtime (JRE) Update N build 12 Kernel Installer`だと、`NullPointerException`が発生する？ -- *aterai* 2008-03-03 (月) 19:34:50
 - ~~別方法のメモ:~~ [JSliderの目盛りをアイコンに変更する](https://ateraimemo.com/Swing/TriangleTickSlider.html)に移動。 -- *aterai* 2010-05-19 (水) 16:52:13
-- メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5099681) -- *aterai* 2010-05-20 (木) 17:24:52
+- メモ: [Bug ID: 5099681 Windows/Motif L&F: JSlider should use foreground color for ticks.](https://bugs.openjdk.java.net/browse/JDK-5099681) -- *aterai* 2010-05-20 (木) 17:24:52
 
 <!-- dummy comment line for breaking list -->

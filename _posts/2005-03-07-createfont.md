@@ -62,6 +62,6 @@ comments: true
 ## コメント
 - `JDK 1.5.0_01`でずれる？ -- *aterai* 2005-03-07 11:19:11 (月)
     - 応急処置済み -- *aterai* 2005-03-07 11:32:44 (月)
-- メモ: [Bug ID: 6313541 Fonts loaded with createFont cannot be converted into FontUIResource](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6313541) -- *aterai* 2006-05-25 (木) 23:34:18
+- メモ: [Bug ID: 6313541 Fonts loaded with createFont cannot be converted into FontUIResource](https://bugs.openjdk.java.net/browse/JDK-6313541) -- *aterai* 2006-05-25 (木) 23:34:18
 
 <!-- dummy comment line for breaking list -->

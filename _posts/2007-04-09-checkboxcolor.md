@@ -75,7 +75,7 @@ JCheckBox cb = new JCheckBox("check box");
 </code></pre>
 
 ## 参考リンク
-- [進歩したSynth](http://www.ibm.com/developerworks/jp/java/library/j-synth/)
+- [進歩したSynth](https://www.ibm.com/developerworks/jp/java/library/j-synth/)
     - `SynthLookAndFeel`を使って、画像でチェックを描画するサンプルなどが紹介されている
 
 <!-- dummy comment line for breaking list -->

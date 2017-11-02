@@ -48,8 +48,8 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 </code></pre>
 
 ## 参考リンク
-- [Swing コンポーネントの音声フィードバック](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/SwingChanges.html#Miscellaneous)
-- [Merlinの魔術: Swingのオーディオ](http://www.ibm.com/developerworks/jp/java/library/j-mer0730/)
+- [Swing コンポーネントの音声フィードバック](https://docs.oracle.com/javase/jp/6/technotes/guides/swing/SwingChanges.html#Miscellaneous)
+- [Merlinの魔術: Swingのオーディオ](https://www.ibm.com/developerworks/jp/java/library/j-mer0730/)
 - ["taitai studio" フリーWav素材集](http://www.taitaistudio.com/wav/)
 - [Beep音を鳴らす](https://ateraimemo.com/Swing/Beep.html)
 - [MIDIファイルの演奏](https://ateraimemo.com/Swing/MidiSystem.html)

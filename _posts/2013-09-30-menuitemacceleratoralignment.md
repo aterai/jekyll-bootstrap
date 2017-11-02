@@ -130,7 +130,7 @@ comments: true
 
 - - - -
 - `JMenuItem`の`Accelerator`が、`JMenuItem#setLocale(Locale.ENGLISH)`としても変化しない
-    - [Bug ID: JDK-6292739 Locale change at runtime doesn't affect text displayed for accelerator keys](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6292739)
+    - [Bug ID: JDK-6292739 Locale change at runtime doesn't affect text displayed for accelerator keys](https://bugs.openjdk.java.net/browse/JDK-6292739)
 - `JDK 1.7.0`から`Locale.getLocale()`が`Locale.JAPAN`などの場合、`KeyEvent#getKeyText(...)`で取得できる文字列が翻訳されている
     - 例: `Space`が「スペース」
 - [KeyEvent#getKeyText(int) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/event/KeyEvent.html#getKeyText%28int%29)では、「これらの文字列は`awt.properties`ファイルを変更することによりローカライズが可能です。」となっているが、`%JAVA_HOME%/jre/lib/rt.jar`内に`sun/awt/resources/awt.class`などの優先順位が高いクラスがあるため、`awt_ja.properties`などを作成しても読み込まれない

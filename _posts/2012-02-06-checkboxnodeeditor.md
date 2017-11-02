@@ -201,7 +201,7 @@ comments: true
     - `JDK 1.6.0_30`などは問題なし
     - `TreeCellEditor#isCellEditable()`をオーバーライドして、初回のみセルエディタのサイズを以下のように設定
     - `JDK 1.8.0`では、修正されている
-    - [Bug ID: JDK-8023474 First mousepress doesn't start editing in JTree](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8023474)
+    - [Bug ID: JDK-8023474 First mousepress doesn't start editing in JTree](https://bugs.openjdk.java.net/browse/JDK-8023474)
 
 <!-- dummy comment line for breaking list -->
 

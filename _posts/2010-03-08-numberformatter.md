@@ -101,6 +101,6 @@ private static DefaultFormatterFactory makeFFactory(final SpinnerNumberModel m) 
 
 ## コメント
 - 無効な値が入力されたときの背景色の変更を`DocumentListener`で行うように修正。 -- *aterai* 2011-09-27 (火) 21:52:05
-- メモ: [Bug ID: 6423494 SpinnerNumberModel should use getMinimum and getMaximum instead of fields](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6423494)、[SpinnerNumberModelに上限値を超える値を入力](https://ateraimemo.com/Swing/SpinnerNumberModel.html) -- *aterai* 2011-09-27 (火) 22:12:46
+- メモ: [Bug ID: 6423494 SpinnerNumberModel should use getMinimum and getMaximum instead of fields](https://bugs.openjdk.java.net/browse/JDK-6423494)、[SpinnerNumberModelに上限値を超える値を入力](https://ateraimemo.com/Swing/SpinnerNumberModel.html) -- *aterai* 2011-09-27 (火) 22:12:46
 
 <!-- dummy comment line for breaking list -->

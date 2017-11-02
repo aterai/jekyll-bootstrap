@@ -39,7 +39,7 @@ comments: true
       }
     });
 </code></pre>
-- ~~[Go state-of-the-art with IFrame](http://www.ibm.com/developerworks/library/j-iframe/)~~も面白そうです。IBMだから`SWT`使ってるのかなと思ったら`JFrame`を継承して作られています。 -- *aterai* 2004-08-12 (木) 18:31:16
+- ~~[Go state-of-the-art with IFrame](https://www.ibm.com/developerworks/library/j-iframe/)~~(リンク切れ)も面白そうです。IBMだから`SWT`使ってるのかなと思ったら`JFrame`を継承して作られています。 -- *aterai* 2004-08-12 (木) 18:31:16
 - レイアウト変更したときに`setAlwaysOnTop`が紛れ込んで、`Java Web Start`でサンプルが起動できなくなっていた不具合を修正。 -- *aterai* 2009-03-14 (土) 17:44:18
 
 <!-- dummy comment line for breaking list -->

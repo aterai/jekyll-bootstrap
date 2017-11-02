@@ -51,7 +51,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- [Multisort Table Header Cell Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
+- [Multisort Table Header Cell Renderer « Java Tips Weblog](https://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
     - 第`2`キー以下を薄く表示するサンプル
     - `Windows 7`でデフォルトの`WindowsLookAndFeel`が使用するヘッダセルレンダラー(ソートのマークが文字列の右ではなく上部に表示される)と併用したい場合は、修正が必要
         - この修正を行ったレンダラーを、他の`LookAndFeel`で使用すると第`1`ソートキーが非表示になる
@@ -59,7 +59,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Multisort Table Header Cell Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
+- [Multisort Table Header Cell Renderer « Java Tips Weblog](https://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
 - [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
 - [JTableのソートアイコンを変更](https://ateraimemo.com/Swing/TableSortIcon.html)
 

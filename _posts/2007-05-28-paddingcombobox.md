@@ -136,7 +136,7 @@ UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0, 5, 0, 
 ## コメント
 - ~~なんだか、よく分からなくなってきましたorz。~~ `JDK 1.6.0_10-beta-b22`で、`BasicComboBoxUI`の`padding`にすこし修正が入っている？ようです。 -- *aterai* 2008-03-11 (火) 21:38:58
 - `LookAndFeel`の切り替えなどを追加しました。 -- *aterai* 2008-04-02 (水) 20:08:01
-- `1.7.0_06`で`Nimbus`などの`ComboBox.popupInsets`が修正？ [Bug ID: 7158712 Synth Property "ComboBox.popupInsets" is ignored](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7158712) -- *aterai* 2012-08-15 (水) 13:58:34
+- `1.7.0_06`で`Nimbus`などの`ComboBox.popupInsets`が修正？ [Bug ID: 7158712 Synth Property "ComboBox.popupInsets" is ignored](https://bugs.openjdk.java.net/browse/JDK-7158712) -- *aterai* 2012-08-15 (水) 13:58:34
 - `Windows 7`の`LookAndFeel`、編集不可の`JComboBox`で、`((JLabel) combo.getRenderer() ).setBorder(padding);`が`JComboBox`本体に効かない(フォーカスのための`Border`のせい？)ため、セルレンダラーを作成して毎回余白を適用するように変更。このため、`Windows 7`の`LookAndFeel`では、`JComboBox`本体の点線によるフォーカス表示が無くなる。 -- *aterai* 2013-11-19 (火) 15:37:19
 
 <!-- dummy comment line for breaking list -->

@@ -26,7 +26,7 @@ scroll.getVerticalScrollBar().setUnitIncrement(25);
 - - - -
 メモ: `JScrollBar`の`UnitIncrement`と`BlockIncrement`について
 
-- [Mouse Wheel Controller « Java Tips Weblog](http://tips4java.wordpress.com/2010/01/10/mouse-wheel-controller/)
+- [Mouse Wheel Controller « Java Tips Weblog](https://tips4java.wordpress.com/2010/01/10/mouse-wheel-controller/)
     - `Windows 7`環境での`e.getScrollAmount()`のデフォルト値: `3`
     - `DesktopProperty`などを経由せず、`OS`のコントロールパネルのマウスのプロパティを直接参照している模様？
 - [How to Write a Mouse-Wheel Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/mousewheellistener.html)

@@ -191,7 +191,7 @@ public class BackgroundPainterTest {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 6919629 Nimbus L&F Nimus.Overrides option leaks significant amounts of memory](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6919629), [jdk7/jdk7/jdk: changeset 2337:042eb92f89ad](http://hg.openjdk.java.net/jdk7/jdk7/jdk/rev/042eb92f89ad) -- *aterai* 2010-05-24 (月) 15:27:28
+- メモ: [Bug ID: 6919629 Nimbus L&F Nimus.Overrides option leaks significant amounts of memory](https://bugs.openjdk.java.net/browse/JDK-6919629), [jdk7/jdk7/jdk: changeset 2337:042eb92f89ad](http://hg.openjdk.java.net/jdk7/jdk7/jdk/rev/042eb92f89ad) -- *aterai* 2010-05-24 (月) 15:27:28
 - [blogger](https://java-swing-tips.blogspot.com)で、`JButton`の周りに変な矩形が描画される場合があるとの指摘を頂いたので、`p2.setOpaque(false);`を追加。 -- *aterai* 2011-02-08 (火) 04:05:50
 
 <!-- dummy comment line for breaking list -->

@@ -47,7 +47,7 @@ JButton button = new JButton(new AbstractAction("Connect") {
 上記のサンプルでは、一定時間(`10`秒)、マウスやキーボードからの入力が無い場合、接続(ダミー)を切るようになっています。
 
 - - - -
-[Application Inactivity « Java Tips Weblog](http://tips4java.wordpress.com/2008/10/24/application-inactivity/)を参考にして、`Toolkit.getDefaultToolkit().getSystemEventQueue().push(eventQueue)`は使用せず、以下のように`Toolkit.getDefaultToolkit().addAWTEventListener(AWTEventListener)`を使う方法に変更しました。
+[Application Inactivity « Java Tips Weblog](https://tips4java.wordpress.com/2008/10/24/application-inactivity/)を参考にして、`Toolkit.getDefaultToolkit().getSystemEventQueue().push(eventQueue)`は使用せず、以下のように`Toolkit.getDefaultToolkit().addAWTEventListener(AWTEventListener)`を使う方法に変更しました。
 
 - `timer`を`timer.setRepeats(false);`でスタート(一回で終了する)
 - `Toolkit.getDefaultToolkit().addAWTEventListener`で、`AWTEventListener`を設定
@@ -58,7 +58,7 @@ JButton button = new JButton(new AbstractAction("Connect") {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Application Inactivity « Java Tips Weblog](http://tips4java.wordpress.com/2008/10/24/application-inactivity/)
+- [Application Inactivity « Java Tips Weblog](https://tips4java.wordpress.com/2008/10/24/application-inactivity/)
 
 <!-- dummy comment line for breaking list -->
 

@@ -44,7 +44,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Bug ID: 6911375 mouseWheel has no effect without vertical scrollbar](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6911375)
+- [Bug ID: 6911375 mouseWheel has no effect without vertical scrollbar](https://bugs.openjdk.java.net/browse/JDK-6911375)
 
 <!-- dummy comment line for breaking list -->
 

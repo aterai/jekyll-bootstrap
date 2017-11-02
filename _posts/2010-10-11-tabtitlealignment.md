@@ -66,7 +66,7 @@ comments: true
 - [JTabbedPaneのタブを等幅にしてタイトルをクリップ](https://ateraimemo.com/Swing/ClippedTitleTab.html)
 - [ButtonTabComponent.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TabComponentsDemoProject/src/components/ButtonTabComponent.java)
 - [Swing - JTabbedPane title alignment](https://community.oracle.com/thread/1556158)
-- [Bug ID: 4220177 labels within JTabbedPane tabs should be alignable](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4220177)
+- [Bug ID: 4220177 labels within JTabbedPane tabs should be alignable](https://bugs.openjdk.java.net/browse/JDK-4220177)
 
 <!-- dummy comment line for breaking list -->
 

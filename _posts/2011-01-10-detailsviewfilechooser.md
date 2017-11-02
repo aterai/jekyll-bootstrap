@@ -78,7 +78,7 @@ filePane.setViewType(FilePane.VIEWTYPE_DETAILS);
 
 ## 参考リンク
 - [java - How can I start the JFileChooser in the Details view? - Stack Overflow](https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)
-- [Swing Utils « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/13/swing-utils/)
+- [Swing Utils « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/13/swing-utils/)
     - via: [set jFileChooser default to details view - Java Forums](http://www.java-forums.org/awt-swing/13733-set-jfilechooser-default-details-view.html)
 - [sun.swing: FilePane.java](http://www.docjar.com/html/api/sun/swing/FilePane.java.html)
 

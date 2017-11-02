@@ -26,8 +26,8 @@ JCheckBox cbx2 = new JCheckBox("&lt;html&gt;html tag&lt;/html&gt;", true);
     - `UIManager.put("CheckBox.disabledText", Color.RED)`
         - `MetalLookAndFeel`でのみ？、反映される
 - `JCheckBox` + `html`
-    - `JDK 1.7.0`で以下の動作は修正され、無効化で`HTML`文字列もグレーになる([Bug ID: 4783068 Components with HTML text should gray out the text when disabled](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4783068))
-    - ~~`<html>`タグを使った場合、文字色は常に不変で`isEnabled()`の状態に依存しない([Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519))を利用~~
+    - `JDK 1.7.0`で以下の動作は修正され、無効化で`HTML`文字列もグレーになる([Bug ID: 4783068 Components with HTML text should gray out the text when disabled](https://bugs.openjdk.java.net/browse/JDK-4783068))
+    - ~~`<html>`タグを使った場合、文字色は常に不変で`isEnabled()`の状態に依存しない([Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](https://bugs.openjdk.java.net/browse/JDK-4740519))を利用~~
         - 参考: [Swing - How to disable a JCheckBox and leave the text the original color?](https://community.oracle.com/thread/1359798)のMichael_Dunn さんの投稿
         - [Htmlを使ったJLabelとJEditorPaneの無効化](https://ateraimemo.com/Swing/DisabledHtmlLabel.html)
 - `JComboBox`
@@ -47,9 +47,9 @@ JCheckBox cbx2 = new JCheckBox("&lt;html&gt;html tag&lt;/html&gt;", true);
 ![screenshot](https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTLFT1HGFI/AAAAAAAAAXA/W5L-yIFc61E/s800/DisabledTextColor1.png)
 
 ## 参考リンク
-- [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519)
+- [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](https://bugs.openjdk.java.net/browse/JDK-4740519)
 - [Swing - How to disable a JCheckBox and leave the text the original color?](https://community.oracle.com/thread/1359798)
-- [Bug ID: 4783068 Components with HTML text should gray out the text when disabled](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4783068)
+- [Bug ID: 4783068 Components with HTML text should gray out the text when disabled](https://bugs.openjdk.java.net/browse/JDK-4783068)
 - [Htmlを使ったJLabelとJEditorPaneの無効化](https://ateraimemo.com/Swing/DisabledHtmlLabel.html)
 
 <!-- dummy comment line for breaking list -->

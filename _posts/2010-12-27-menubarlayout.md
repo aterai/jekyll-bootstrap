@@ -75,7 +75,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
 </code></pre>
     - または、以下のように、`FlowLayout#layoutContainer`をオーバーライドすることで回避
         
-        <pre class="prettyprint"><code>//http://tips4java.wordpress.com/2008/11/06/wrap-layout/
+        <pre class="prettyprint"><code>//https://tips4java.wordpress.com/2008/11/06/wrap-layout/
         //WrapLayout.java
         //Rob Camick on November 6, 2008
         private Dimension preferredLayoutSize;
@@ -99,7 +99,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Wrap Layout « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/06/wrap-layout/)
+- [Wrap Layout « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/06/wrap-layout/)
 
 <!-- dummy comment line for breaking list -->
 

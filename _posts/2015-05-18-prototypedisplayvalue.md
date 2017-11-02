@@ -30,7 +30,7 @@ combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
 <!-- dummy comment line for breaking list -->
 1. `JComboBox#setPrototypeDisplayValue(...)`で指定した要素から、`JComboBox`の推奨サイズを決定する
 1. 編集可能な場合の`JComboBox`に`JComboBox#setPrototypeDisplayValue(...)`を設定
-    - [Bug ID: JDK-6422966 Editable JComboBox.setPrototypeDisplayValue: size can not be smaller than editor](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6422966)
+    - [Bug ID: JDK-6422966 Editable JComboBox.setPrototypeDisplayValue: size can not be smaller than editor](https://bugs.openjdk.java.net/browse/JDK-6422966)
 
 <!-- dummy comment line for breaking list -->
 1. 独自の要素`E`を使用する`JComboBox<E>`に、その要素を表示するための`ListCellRenderer<E>`を設定

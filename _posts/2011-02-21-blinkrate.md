@@ -29,7 +29,7 @@ comments: true
 
 ## 参考リンク
 - [Caret#setBlinkRate(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Caret.html#setBlinkRate-int-)
-- [Bug ID: 6289635 getDesktopProperty("awt.cursorBlinkRate") returns null](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6289635)
+- [Bug ID: 6289635 getDesktopProperty("awt.cursorBlinkRate") returns null](https://bugs.openjdk.java.net/browse/JDK-6289635)
 
 <!-- dummy comment line for breaking list -->
 

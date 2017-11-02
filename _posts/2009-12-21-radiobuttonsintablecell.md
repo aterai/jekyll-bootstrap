@@ -104,7 +104,7 @@ comments: true
 上記のサンプルでは、`JRadioButton`を`3`つ配置した`JPanel`を、`CellRenderer`、`CellEditor`用に`2`つ用意しています。`CellEditor`内の各`JRadioButton`には、クリックされたら編集を終了して更新を`TableModel`にコミットするための`ActionListener`を追加しています。
 
 ## 参考リンク
-- [Table Button Column ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
+- [Table Button Column ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/07/12/table-button-column/)
 - [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 - [JTableのCellにJCheckBoxを複数配置する](https://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
 - [JTableのセルにJRadioButton](https://ateraimemo.com/Swing/RadioButtonCellEditor.html)

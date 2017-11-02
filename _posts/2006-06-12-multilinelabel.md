@@ -111,7 +111,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 
 - お返事遅くなりましたm(__)m。試してみます！ありがとうございます！ -- *ばしばし* 2007-10-22 (月) 09:57:29
 - `JLabel`で`html`を使用すると`setEnabled(false)`でグレーアウトしてくれないです。どうしたものでしょう。 -- *ApplePedlar* 2007-12-11 (火) 17:34:00
-    - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4740519)ですね。今のところ、[Swing - JLabel with html tag can not be disabled or setForegroud?!](https://community.oracle.com/thread/1377943)みたいに ~~逃げるしかない？みたいです。~~ する方法があります。 -- *aterai* 2007-12-11 (火) 18:27:05
+    - [Bug ID: 4740519 HTML JLabel not greyed out on setEnabled(false)](https://bugs.openjdk.java.net/browse/JDK-4740519)ですね。今のところ、[Swing - JLabel with html tag can not be disabled or setForegroud?!](https://community.oracle.com/thread/1377943)みたいに ~~逃げるしかない？みたいです。~~ する方法があります。 -- *aterai* 2007-12-11 (火) 18:27:05
     - コードが長くなってしまったので、別ページを作成しました。`JEditorPane`を使用する方法も追加しています。[Htmlを使ったJLabelとJEditorPaneの無効化](https://ateraimemo.com/Swing/DisabledHtmlLabel.html) -- *aterai* 2007-12-24 (月) 23:24:50
 - こんにちは。ココのおかげでとても助かっています。ところで、`1`行の高さ（文字の高さを含めた高さ）を指定したい、というときには、`setLineSpacing`ではダメってことですよね？「指定したい高さ－フォントの大きさ」を`setLineSpacing`で指定してあげなきゃいけないんですよね？（文字サイズによって`1`行の高さが揃わなくなるのはイヤで揃えたいなと思うのですが、フォントによってそれだと、そうすると、フォントの大きさを変えるたびに指定しなおさなきゃいけないってことですよね。面倒…） -- *びびあず* 2008-10-31 (金) 10:42:47
     - こんにちは。どういたしまして。`LineSpacing`はフォントサイズに依存するみたいですね。固定の間隔を指定するのなら、例えば以下のように、`ParagraphView#getBottomInset`メソッドなどをオーバーライドするのが簡単かも。 -- *aterai* 2008-10-31 (金) 14:36:51

@@ -69,7 +69,7 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
 </code></pre>
 
 ## 参考リンク
-- [Specification for the javax.swing.DefaultRowSorter.setSortsOnUpdates/rowsUpdated method is not clear](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6301297)
+- [Specification for the javax.swing.DefaultRowSorter.setSortsOnUpdates/rowsUpdated method is not clear](https://bugs.openjdk.java.net/browse/JDK-6301297)
 
 <!-- dummy comment line for breaking list -->
 

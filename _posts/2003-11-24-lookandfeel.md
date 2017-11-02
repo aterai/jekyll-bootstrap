@@ -108,7 +108,7 @@ private void setLookAndFeel(String laf) {
 - [JDK1.6 で使うと JDK 側のバグ (6389282) に引っかかってしまうのか NPE](http://blogs.sun.com/katakai/entry/omegat_in_mdi_mode)
 - [Java6 の痛いバグ… NetBeans デスクトップアプリが Linux で動かず… - Masaki Katakai's Weblog](http://blogs.sun.com/katakai/entry/bad_issue_for_swing_gtk)
 - `6u10`で修正済
-    - [Bug ID: 6389282 NPE in GTKLookAndFeel.initSystemColorDefaults() on mustang when remote X11 displaying.](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6389282)
+    - [Bug ID: 6389282 NPE in GTKLookAndFeel.initSystemColorDefaults() on mustang when remote X11 displaying.](https://bugs.openjdk.java.net/browse/JDK-6389282)
 
 <!-- dummy comment line for breaking list -->
 

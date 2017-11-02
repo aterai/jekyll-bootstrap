@@ -88,7 +88,7 @@ comments: true
 ## 参考リンク
 - [Undo two or more actions at once | Oracle Community](https://community.oracle.com/thread/1509622)
 - [Undo manager : Undo Redo « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/Undomanager.htm)
-- [Compound Undo Manager ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/10/27/compound-undo-manager/)
+- [Compound Undo Manager ≪ Java Tips Weblog](https://tips4java.wordpress.com/2008/10/27/compound-undo-manager/)
 - [Merging UndoableEdits in one to be undone all together in JEditorPane.](http://java-sl.com/tip_merge_undo_edits.html)
 - [java - JTextArea setText() & UndoManager - Stack Overflow](https://stackoverflow.com/questions/24433089/jtextarea-settext-undomanager)
 - [java - Undo in JTextField and setText - Stack Overflow](https://stackoverflow.com/questions/12844520/undo-in-jtextfield-and-settext)

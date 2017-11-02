@@ -122,7 +122,7 @@ textArea.setComponentPopupMenu(popup);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6675802) -- *aterai* 2008-04-05 (土) 20:59:02
-- メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6299213) -- *aterai* 2008-04-10 (木) 18:58:52
+- メモ: [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](https://bugs.openjdk.java.net/browse/JDK-6675802) -- *aterai* 2008-04-05 (土) 20:59:02
+- メモ: [Bug ID: 6299213 The PopupMenu is not updated if the LAF is changed (incomplete fix of 4962731)](https://bugs.openjdk.java.net/browse/JDK-6299213) -- *aterai* 2008-04-10 (木) 18:58:52
 
 <!-- dummy comment line for breaking list -->

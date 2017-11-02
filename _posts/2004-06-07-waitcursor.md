@@ -117,7 +117,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 </code></pre>
 
 - - - -
-`JDK 1.6.0`の場合、[Disabled Glass Pane « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)のようにキー入力を無効にするキーリスナーを追加する方法もあります。
+`JDK 1.6.0`の場合、[Disabled Glass Pane « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)のようにキー入力を無効にするキーリスナーを追加する方法もあります。
 
 この方法は、`JDK 1.5.0`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移ることがあります。
 
@@ -132,7 +132,7 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 - [Swing - How to display "Loading data..." to the user](https://community.oracle.com/thread/1375257)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)
     - [JInternalFrameをModalにする](https://ateraimemo.com/Swing/ModalInternalFrame.html)
-- [Disabled Glass Pane « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)
+- [Disabled Glass Pane « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)
 
 <!-- dummy comment line for breaking list -->
 

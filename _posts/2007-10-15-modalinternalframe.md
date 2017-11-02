@@ -185,7 +185,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 </code></pre>
 
 - - - -
-`JDK 6`の場合、[Disabled Glass Pane « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)のようにキー入力を無効にするキーリスナーを追加する方法もあります。
+`JDK 6`の場合、[Disabled Glass Pane « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)のようにキー入力を無効にするキーリスナーを追加する方法もあります。
 
 この方法は、`JDK 5`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移ることがあります。
 

@@ -81,7 +81,7 @@ comments: true
 - ~~ただし、バージョン(`6uN`？)、`Web Start`などで実行すると、`AccessControlException`が発生する~~
     - `Exception in thread "AWT-EventQueue-0" java.security.AccessControlException: access denied (java.awt.AWTPermission setWindowAlwaysOnTop)`
 - 上記の`AccessControlException`は、`6u10 build b26`で修正されている
-    - [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6675802)
+    - [Bug ID: 6675802 Regression: heavyweight popups cause SecurityExceptions in applets](https://bugs.openjdk.java.net/browse/JDK-6675802)
 
 <!-- dummy comment line for breaking list -->
 

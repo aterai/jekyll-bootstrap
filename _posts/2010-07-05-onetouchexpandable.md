@@ -25,7 +25,7 @@ splitPane.setOneTouchExpandable(true);
 
 - `Java 1.5`以降で`JSplitPane#setDividerLocation(0);`などとしてディバイダを収納状態にした場合、`JSplitPane`自体をリサイズすると収納されているコンポーネントの最小サイズ(`setMinimumSize`)まで展開される
 - 収納状態を維持したい場合、リフレクションを使って、`BasicSplitPaneUI#setKeepHidden(true)`メソッドを実行したり、`Divider`に表示されている`JButton`を取得実行する方法がある
-    - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
+    - [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](https://bugs.openjdk.java.net/browse/JDK-5006095)
     - [JSplitPaneの収納状態を維持する](https://ateraimemo.com/Swing/KeepHiddenDivider.html)
 - <kbd>HOME</kbd>キーや<kbd>END</kbd>キー(<kbd>F8</kbd>キーなどで`Divider`にフォーカスを移動した状態で)を押して展開、収納する方法では、`Divider`中の`JButton`を押して展開、収納した場合と動作が異なる
     - <kbd>HOME</kbd>キー、<kbd>END</kbd>キーで展開、収納
@@ -37,7 +37,7 @@ splitPane.setOneTouchExpandable(true);
 
 ## 参考リンク
 - [JSplitPane#setOneTouchExpandable(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSplitPane.html#setOneTouchExpandable-boolean-)
-- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006095)
+- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](https://bugs.openjdk.java.net/browse/JDK-5006095)
 - [JSplitPaneの収納状態を維持する](https://ateraimemo.com/Swing/KeepHiddenDivider.html)
 
 <!-- dummy comment line for breaking list -->

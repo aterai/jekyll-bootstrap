@@ -46,7 +46,7 @@ DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMoti
 ## コメント
 - `OSX`などの場合はどうなるか不明(テストしていない)。 -- *aterai* 2012-08-06 (月) 15:50:35
 - `OSX`でも表示しましたよ。ただクリックした時にアイコン周りに枠が表示されるのですが、その位置がアイコンとずれてます -- *nsby* 2012-08-07 (火) 11:04:46
-    - ありがとうございます。[Bug ID: 4874070 invoking DragSource's startDrag with an Image renders no image on drag](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4874070)あたりの修正の詳しい内容がよく分かっていないので、逆に`Mac OS X`では競合する(二重になる)のでは？と思っていました。「アイコン周りの枠」はオフセットを変更するか、クリックした時点で`JPanel`からは削除してしまえば、何とかなるかもしれません。 -- *aterai* 2012-08-07 (火) 14:19:12
+    - ありがとうございます。[Bug ID: 4874070 invoking DragSource's startDrag with an Image renders no image on drag](https://bugs.openjdk.java.net/browse/JDK-4874070)あたりの修正の詳しい内容がよく分かっていないので、逆に`Mac OS X`では競合する(二重になる)のでは？と思っていました。「アイコン周りの枠」はオフセットを変更するか、クリックした時点で`JPanel`からは削除してしまえば、何とかなるかもしれません。 -- *aterai* 2012-08-07 (火) 14:19:12
 - `Web Start`で起動すると、`window.setAlwaysOnTop(true);`で`AccessControlException`が発生するのを修正。 -- *aterai* 2012-12-07 (金) 18:20:23
 - ドラッグ中カーソルが点滅するので、`dragMouseMoved`内で無駄に`Window#setVisible(true);`を実行しないように修正(`TransferHandler#getSourceActions(...)`内でドラッグ開始時に一回だけ実行する)。 -- *aterai* 2013-10-25 (金) 18:04:11
 

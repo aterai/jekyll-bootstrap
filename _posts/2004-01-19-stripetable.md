@@ -116,7 +116,7 @@ public class TableAlternateRowColorTest {
 
 ## 参考リンク
 - [Sorting and Otherwise Manipulating Data - How to Use Tables (The Java™ Tutorials > Creating a GUI with JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
-- [SwingのJTableコンポーネントでセルを描く](http://www.ibm.com/developerworks/jp/java/library/j-jtable/)
+- [SwingのJTableコンポーネントでセルを描く](https://www.ibm.com/developerworks/jp/java/library/j-jtable/)
 
 <!-- dummy comment line for breaking list -->
 

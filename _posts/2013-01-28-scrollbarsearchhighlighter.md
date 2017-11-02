@@ -116,7 +116,7 @@ scroll.setVerticalScrollBar(scrollbar);
 scroll.setRowHeaderView(label);
 /*/
 // 6826074 JScrollPane does not revalidate the component hierarchy after scrolling
-// http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6826074
+// https://bugs.openjdk.java.net/browse/JDK-6826074
 // Affected Versions: 6u12,6u16,7
 JViewport vp = new JViewport() {
   @Override public void setViewPosition(Point p) {
@@ -158,8 +158,8 @@ scroll.setVerticalScrollBar(scrollBar);
 ## コメント
 - 行ヘッダーを使用したハイライトは`Java7`以降でのみ有効に機能するようです。 -- *読者* 2013-08-18 (日) 23:10:11
     - ご指摘ありがとうございます。仰るとおり、`1.6.0_45`で行ヘッダ版が正常に動作しないことを確認しました。回避方法がないか、`Bug Database`あたりを調べてみようと思います。 -- *aterai* 2013-08-19 (月) 00:04:59
-    - 修正された時期などから、[Bug ID: JDK-6910490 MatteBorder JScrollpane interaction](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6910490)が原因かもと`MatteBorder`は使用せずに直接`Icon`を`JLabel`に追加するよう変更したけど、改善しない…。 -- *aterai* 2013-08-19 (月) 11:24:23
-    - [Bug ID: JDK-6826074 JScrollPane does not revalidate the component hierarchy after scrolling](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6826074)が原因(`HeavyWeight`、`LightWeight`だけではなくレイアウトがうまく更新されていない？)のようです。`JViewport#setViewPosition(...)`をオーバーライドして`revalidate()`すれば、`1.7.0`と同様の動作をするようになりました。 -- *aterai* 2013-08-19 (月) 14:43:11
+    - 修正された時期などから、[Bug ID: JDK-6910490 MatteBorder JScrollpane interaction](https://bugs.openjdk.java.net/browse/JDK-6910490)が原因かもと`MatteBorder`は使用せずに直接`Icon`を`JLabel`に追加するよう変更したけど、改善しない…。 -- *aterai* 2013-08-19 (月) 11:24:23
+    - [Bug ID: JDK-6826074 JScrollPane does not revalidate the component hierarchy after scrolling](https://bugs.openjdk.java.net/browse/JDK-6826074)が原因(`HeavyWeight`、`LightWeight`だけではなくレイアウトがうまく更新されていない？)のようです。`JViewport#setViewPosition(...)`をオーバーライドして`revalidate()`すれば、`1.7.0`と同様の動作をするようになりました。 -- *aterai* 2013-08-19 (月) 14:43:11
 - `Highlighter.Highlight#getStartOffset()`を使用するように変更。 -- *aterai* 2013-08-23 (金) 16:14:35
 
 <!-- dummy comment line for breaking list -->

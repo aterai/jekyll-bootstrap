@@ -123,11 +123,11 @@ executor.execute(worker); //1.6.0_18
 ## コメント
 - ~~`Windows` + `Java 1.7.0-ea-b24`での動作がおかしいみたいです。 -- *aterai* 2007-12-19 (水) 21:08:43~~
 - メモ: [Bug 87 - Icedtea 1.7.0 and SwingWorker problem](http://icedtea.classpath.org/bugzilla/show_bug.cgi?id=87) -- *aterai* 2008-01-31 (木) 15:56:51
-- `JDK 1.6.0_18`での修正: [Bug ID: 6799345 JFC demos threw exception in the Java Console when applets are closed](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6799345) -- *aterai* 2010-01-20 (水) 17:34:04
+- `JDK 1.6.0_18`での修正: [Bug ID: 6799345 JFC demos threw exception in the Java Console when applets are closed](https://bugs.openjdk.java.net/browse/JDK-6799345) -- *aterai* 2010-01-20 (水) 17:34:04
     - 代わりに、`Executors.newCachedThreadPool().execute(worker);`のようにしているけど、これでいいのだろうか？ 実行中にアプリケーションを終了する場合は、`ExecutorService#shutdown()`などを呼んだほうがよさそうだけど、このサンプルでは、`WindowConstants.EXIT_ON_CLOSE`で`VM`ごと落としているので、関係ない？ -- *aterai* 2010-01-20 (水) 17:43:10
     - 正常に動かなくなっている[Improve Application Performance With SwingWorker in Java SE 6](http://www.oracle.com/technetwork/articles/javase/swingworker-137249.html)などのサンプルがどう修正されるか、様子見。 -- *aterai* 2010-01-20 (水) 17:47:11
-    - メモ: [Bug ID: 6880336 SwingWorker deadlocks due one thread in the swingworker-pool](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880336) -- *aterai* 2010-03-15 (月) 18:01:12
+    - メモ: [Bug ID: 6880336 SwingWorker deadlocks due one thread in the swingworker-pool](https://bugs.openjdk.java.net/browse/JDK-6880336) -- *aterai* 2010-03-15 (月) 18:01:12
     - 修正されたようです。[Java SE 6 Update 21 Bug Fixes](http://www.oracle.com/technetwork/java/javase/bugfixes6u21-156339.html) -- *aterai* 2010-07-08 (木) 21:48:24
-- メモ: [Bug ID: 6826514 SwingWorker: done() called before doInBackground() returns, when cancelled](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6826514) -- *aterai* 2010-02-04 (木) 16:54:27
+- メモ: [Bug ID: 6826514 SwingWorker: done() called before doInBackground() returns, when cancelled](https://bugs.openjdk.java.net/browse/JDK-6826514) -- *aterai* 2010-02-04 (木) 16:54:27
 
 <!-- dummy comment line for breaking list -->

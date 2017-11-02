@@ -143,7 +143,7 @@ static void updateRendererOrEditorUI(Object rendererOrEditor) {
 ## 参考リンク
 - [JTableのセルにJButtonを追加して行削除](https://ateraimemo.com/Swing/DeleteButtonInCell.html)
 - [JTableのセルにHyperlinkを表示](https://ateraimemo.com/Swing/HyperlinkInTableCell.html)
-- [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)
+- [Table Button Column « Java Tips Weblog](https://tips4java.wordpress.com/2009/07/12/table-button-column/)
 - [JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
 - [JTableのCellにJCheckBoxを複数配置する](https://ateraimemo.com/Swing/CheckBoxesInTableCell.html)
 
@@ -151,7 +151,7 @@ static void updateRendererOrEditorUI(Object rendererOrEditor) {
 
 ## コメント
 - 第`0`列目が編集状態でボタンをクリックした場合、パネルが`2`度表示されるバグを修正。 -- *aterai* 2009-10-06 (火) 11:56:21
-- [Table Button Column « Java Tips Weblog](http://tips4java.wordpress.com/2009/07/12/table-button-column/)を参考にして、`JTable#editCellAt`ではなく、逆に`TableCellEditor#stopCellEditing()`を使用してクリック直後に編集終了するように変更。 -- *aterai* 2009-11-03 (火) 04:36:55
+- [Table Button Column « Java Tips Weblog](https://tips4java.wordpress.com/2009/07/12/table-button-column/)を参考にして、`JTable#editCellAt`ではなく、逆に`TableCellEditor#stopCellEditing()`を使用してクリック直後に編集終了するように変更。 -- *aterai* 2009-11-03 (火) 04:36:55
 - <kbd>Ctrl</kbd>キーを押しながら、`edit`ボタンをクリックすると異なる行(`table.getSelectedRow()`)の内容が表示されるバグを修正。 -- *aterai* 2011-03-10 (木) 02:35:35
 - すごいと思いました！ -- *いわく* 2013-05-24 (金) 11:57:26
     - こんばんは。たしかに`JTable`の`TableCellRenderer`、`TableCellEditor`の仕組みは、すごい良くできているといつも感心してしまいます :) -- *aterai* 2013-05-24 (金) 23:59:16

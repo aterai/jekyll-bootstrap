@@ -89,7 +89,7 @@ class Test {
 
 - - - -
 - `JComboBox#setFont`をしても、`JComboBox`自体のサイズが更新されない
-    - [JCombobox doesn't get resized according to font size change](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=5006246)
+    - [JCombobox doesn't get resized according to font size change](https://bugs.openjdk.java.net/browse/JDK-5006246)
 
 <!-- dummy comment line for breaking list -->
 

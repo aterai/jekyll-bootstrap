@@ -49,7 +49,7 @@ scroll.setRowHeader(viewport);
 scroll.setCorner(ScrollPaneConstants.UPPER_LEFT_CORNER, fixedTable.getTableHeader());
 scroll.getViewport().setBackground(Color.WHITE);
 viewport.setBackground(Color.WHITE);
-//&lt;blockquote cite="http://tips4java.wordpress.com/2008/11/05/fixed-column-table/"&gt;
+//&lt;blockquote cite="https://tips4java.wordpress.com/2008/11/05/fixed-column-table/"&gt;
 //@auther Rob Camick
 //@title Fixed Column Table ≪ Java Tips Weblog
 scroll.getRowHeader().addChangeListener(new ChangeListener() {
@@ -90,7 +90,7 @@ add(scroll);
 - - - -
 固定列でキーボードなどによるスクロールに対応するために以下のような`ChangeListener`を追加しています。
 
-- 参考: [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
+- 参考: [Fixed Column Table ≪ Java Tips Weblog](https://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
 
 <!-- dummy comment line for breaking list -->
 
@@ -104,7 +104,7 @@ add(scroll);
 
 ## 参考リンク
 - [FixedColumnExample.java](http://www.google.com/search?q=FixedColumnExample.java)
-- [Fixed Column Table ≪ Java Tips Weblog](http://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
+- [Fixed Column Table ≪ Java Tips Weblog](https://tips4java.wordpress.com/2008/11/05/fixed-column-table/)
 - [JTable#setUpdateSelectionOnSort(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setUpdateSelectionOnSort-boolean-)
 
 <!-- dummy comment line for breaking list -->

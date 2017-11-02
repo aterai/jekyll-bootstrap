@@ -53,7 +53,7 @@ comments: true
 
 ## 参考リンク
 - [使用するフォントの統一](https://ateraimemo.com/Swing/FontChange.html)
-- [Default Table Header Cell Renderer Java Tips Weblog](http://tips4java.wordpress.com/2009/02/27/default-table-header-cell-renderer/)
+- [Default Table Header Cell Renderer Java Tips Weblog](https://tips4java.wordpress.com/2009/02/27/default-table-header-cell-renderer/)
 - [JTableHeaderの字揃え](https://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
 
 <!-- dummy comment line for breaking list -->

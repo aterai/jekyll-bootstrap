@@ -20,7 +20,7 @@ comments: true
   public TransparentMenu(String title) {
     super(title);
   }
-  //http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4688783
+  //https://bugs.openjdk.java.net/browse/JDK-4688783
   private JPopupMenu popupMenu;
   private void ensurePopupMenuCreated() {
     if (popupMenu == null) {
@@ -98,7 +98,7 @@ class TranslucentPopupFactory extends PopupFactory {
 
 - - - -
 - [JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)では、`JPopupMenu#show(...)`メソッドをオーバーライドし、ポップアップが親フレームからはみ出して `Heavy weight`の`JWindow`が`JPopupMenu`の親となる場合のみ、`JWindow#setBackground(ALPHA_ZERO)`などで透明化(`JPopupMenu`は半透明)
-    - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7156657) が原因？で、`1.7.0_06`以前では、サブメニューが半透明化されない場合がある
+    - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](https://bugs.openjdk.java.net/browse/JDK-7156657) が原因？で、`1.7.0_06`以前では、サブメニューが半透明化されない場合がある
     - `PopupFactory.setSharedInstance(new TranslucentPopupFactory())`を使用する場合はバグの影響を受けない
     - 上記のバグ？以外にも、[JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)でサブメニューを半透明にする場合、`Heavy weight`の`JPopupMenu`に使用する`JWindow`の`ContentPane`と`JRootPane`の不透明設定(`isOpaque()`)に注意する必要がある
 
@@ -146,13 +146,10 @@ class TranslucentPopupFactory extends PopupFactory {
 
 ## 参考リンク
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html)
-- [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7156657)
+- [JDK-7156657 Version 7 doesn't support translucent popup menus against a translucent window](https://bugs.openjdk.java.net/browse/JDK-7156657)
 - [JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)
 - [JRootPaneの背景として画像を表示](https://ateraimemo.com/Swing/RootPaneBackground.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- [Java Bug Database](http://bugs.java.com/bugdatabase/)の見た目が新しくなっている？ `Fixed Versions`の表示がシンプルになりすぎているような…。 -- *aterai* 2012-10-22 (月) 20:22:51
-
-<!-- dummy comment line for breaking list -->

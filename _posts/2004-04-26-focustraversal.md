@@ -64,7 +64,7 @@ frame.setFocusTraversalPolicy(policy);
 <!-- dummy comment line for breaking list -->
 
 - `Custom`
-    - [Merlinの魔術: フォーカス、フォーカス、フォーカス](http://www.ibm.com/developerworks/jp/java/library/j-mer07153/)からの引用
+    - [Merlinの魔術: フォーカス、フォーカス、フォーカス](https://www.ibm.com/developerworks/jp/java/library/j-mer07153/)からの引用
     - <kbd>Tab</kbd>キーを押していくと、東西南北の順でボタンのフォーカスが移動(<kbd>Shift+Tab</kbd>キーでは逆順)
     - `4`つの`JButton`以外には、<kbd>Tab</kbd>キーでフォーカスは移動しない
 
@@ -87,8 +87,8 @@ frame.setFocusTraversalPolicy(policy);
 </code></pre>
 
 ## 参考リンク
-- [AWT フォーカスサブシステム](http://docs.oracle.com/javase/jp/7/api/java/awt/doc-files/FocusSpec.html)
-- [Merlinの魔術: フォーカス、フォーカス、フォーカス](http://www.ibm.com/developerworks/jp/java/library/j-mer07153/)
+- [AWTフォーカス・サブシステム](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/doc-files/FocusSpec.html)
+- [Merlinの魔術: フォーカス、フォーカス、フォーカス](https://www.ibm.com/developerworks/jp/java/library/j-mer07153/)
 - [Windowを開いたときのフォーカスを指定](https://ateraimemo.com/Swing/DefaultFocus.html)
 - [FocusTraversalKeysに矢印キーを追加してフォーカス移動](https://ateraimemo.com/Swing/FocusTraversalKeys.html)
 

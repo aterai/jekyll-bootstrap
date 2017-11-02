@@ -68,7 +68,7 @@ class TwoRowsCellRenderer extends JPanel implements TableCellRenderer {
 
 - - - -
 - 補助文字(サロゲートペアなど)を含む文字列を扱う場合は、`String#charAt(int)`ではなく、`String#codePointAt(int)`や`Character.charCount(codePoint)`などを使用する必要がある
-    - 参考: [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
+    - 参考: [Java による Unicode サロゲートプログラミング](https://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -87,7 +87,7 @@ while (i &lt; text.length()) {
 
 ## 参考リンク
 - [JLabelの文字列を折り返し](https://ateraimemo.com/Swing/GlyphVector.html)
-- [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
+- [Java による Unicode サロゲートプログラミング](https://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
 
 <!-- dummy comment line for breaking list -->
 

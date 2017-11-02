@@ -45,7 +45,7 @@ combo02.setRenderer(new DefaultListCellRenderer() {
       availableWidth -= (insets.left + insets.right);
     }
     String cellText = (value != null) ? value.toString() : "";
-    //&lt;blockquote cite="http://tips4java.wordpress.com/2008/11/12/left-dot-renderer/"&gt;
+    //&lt;blockquote cite="https://tips4java.wordpress.com/2008/11/12/left-dot-renderer/"&gt;
     //@title Left Dot Renderer
     //@auther Rob Camick
     FontMetrics fm = getFontMetrics(getFont());
@@ -74,7 +74,7 @@ combo02.setRenderer(new DefaultListCellRenderer() {
     - エディタ部分(`index < 0`の場合)を描画するときは、矢印ボタンの幅を考慮する必要がある
     - `LookAndFeel`によって余白などのサイズが微妙に異なる場合があるため、うまく表示されない場合がある？
     - 補助文字(サロゲートペアなど)を含む文字列を扱う場合は、`String#charAt(int)`ではなく、`String#codePointAt(int)`や`Character.charCount(codePoint)`などを使用する必要がある
-        - 参考: [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
+        - 参考: [Java による Unicode サロゲートプログラミング](https://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
         
         <pre class="prettyprint"><code>FontMetrics fm = getFontMetrics(getFont());
         if (fm.stringWidth(cellText) &gt; availableWidth) {
@@ -97,8 +97,8 @@ combo02.setRenderer(new DefaultListCellRenderer() {
     - * 参考リンク [#reference]
 - [Swing - JTable - right align in cell even if the text is wider than the cell](https://community.oracle.com/thread/1389543)
     - camickr さんが投稿(2005/06/10 5:52)した`JTable`でのサンプルがある
-- [Left Dot Renderer « Java Tips Weblog](http://tips4java.wordpress.com/2008/11/12/left-dot-renderer/)
-- [Java による Unicode サロゲートプログラミング](http://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
+- [Left Dot Renderer « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/12/left-dot-renderer/)
+- [Java による Unicode サロゲートプログラミング](https://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -67,7 +67,7 @@ comments: true
         editor2.setBorder((c == null) ? b : BorderFactory.createCompoundBorder(c, b));
 </code></pre>
 - メモ
-    - 以下のように、`JLabel`を余白に描画する方法(参考: [Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/))もある
+    - 以下のように、`JLabel`を余白に描画する方法(参考: [Component Border ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/09/27/component-border/))もある
         
         <pre class="prettyprint"><code>JLabel label = new JLabel("%");
         label.setBorder(BorderFactory.createEmptyBorder());
@@ -79,7 +79,7 @@ comments: true
 </code></pre>
     - * 参考リンク [#reference]
 - [JSpinnerの値をパーセントで指定](https://ateraimemo.com/Swing/NumberEditor.html)
-- [Component Border ≪ Java Tips Weblog](http://tips4java.wordpress.com/2009/09/27/component-border/)
+- [Component Border ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/09/27/component-border/)
 
 <!-- dummy comment line for breaking list -->
 
