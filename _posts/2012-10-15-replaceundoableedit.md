@@ -48,7 +48,7 @@ comments: true
 
 ## 解説
 - 上: `Default`
-    - `JTextComponent#setText(String)`や、文字列を選択してペーストした場合、`Document#replace(...)`で実行される`Document#remove(...)`と`Document#insertString(...)`が別々に`UndoManager`に登録される仕様なので、二回`Undo`しないとペースト前の状態まで戻らない
+    - `JTextComponent#setText(String)`メソッドや文字列を選択してペーストした場合、`Document#replace(...)`で実行される`Document#remove(...)`と`Document#insertString(...)`が別々に`UndoManager`に登録される仕様なので、`2`回`Undo`しないとペースト前の状態まで戻らない
 - 中: `Document#replace()+AbstractDocument#fireUndoableEditUpdate()`
     - `Document#replace(...)`をオーバーライドし、~~直接`UndoManager#undoableEditHappened(...)`を使って取り消し可能な編集を登録~~ `setText(...)`での文字列の削除と追加を`CompoundEdit`にまとめる
     - ~~実際の置換は、`removeUndoableEditListener(...)`で`UndoManager`を一時的に削除した後に行う(直後に`addUndoableEditListener()`で再登録)~~
@@ -56,36 +56,33 @@ comments: true
     - メモ: このサンプルでは選択状態を復元していない
 - 下: `DocumentFilter#replace()+UndoableEditListener#undoableEditHappened()`
     - `DocumentFilter#replace(...)`をオーバーライドし、文字列の置換で発生する削除と追加の`UndoableEdit`を別途用意した`CompoundEdit`にまとめてから`UndoManager#addEdit(...)`で追加
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class DocumentFilterUndoManager extends UndoManager {
-  private CompoundEdit compoundEdit;
-  private final transient DocumentFilter undoFilter = new DocumentFilter() {
-    @Override public void replace(
-        DocumentFilter.FilterBypass fb, int offset, int length,
-        String text, AttributeSet attrs) throws BadLocationException {
-      if (length == 0) {
-        fb.insertString(offset, text, attrs);
-      } else {
-        compoundEdit = new CompoundEdit();
-        fb.replace(offset, length, text, attrs);
-        compoundEdit.end();
-        addEdit(compoundEdit);
-        compoundEdit = null;
-      }
-    }
-  };
-  public DocumentFilter getDocumentFilter() {
-    return undoFilter;
-  }
-  @Override public void undoableEditHappened(UndoableEditEvent e) {
-    Optional.ofNullable(compoundEdit).orElse(this).addEdit(e.getEdit());
-  }
-}
+        
+        <pre class="prettyprint"><code>class DocumentFilterUndoManager extends UndoManager {
+          private CompoundEdit compoundEdit;
+          private final transient DocumentFilter undoFilter = new DocumentFilter() {
+            @Override public void replace(
+                DocumentFilter.FilterBypass fb, int offset, int length,
+                String text, AttributeSet attrs) throws BadLocationException {
+              if (length == 0) {
+                fb.insertString(offset, text, attrs);
+              } else {
+                compoundEdit = new CompoundEdit();
+                fb.replace(offset, length, text, attrs);
+                compoundEdit.end();
+                addEdit(compoundEdit);
+                compoundEdit = null;
+              }
+            }
+          };
+          public DocumentFilter getDocumentFilter() {
+            return undoFilter;
+          }
+          @Override public void undoableEditHappened(UndoableEditEvent e) {
+            Optional.ofNullable(compoundEdit).orElse(this).addEdit(e.getEdit());
+          }
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Undo two or more actions at once | Oracle Community](https://community.oracle.com/thread/1509622)
 - [Undo manager : Undo Redo « Swing JFC « Java](http://www.java2s.com/Code/Java/Swing-JFC/Undomanager.htm)
 - [Compound Undo Manager ≪ Java Tips Weblog](https://tips4java.wordpress.com/2008/10/27/compound-undo-manager/)

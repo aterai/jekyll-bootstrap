@@ -28,7 +28,7 @@ showMnemonicsCheck.addActionListener(e -&gt; {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Mnemonic`を設定した`JMenuItem`で下線の表示方法の切り替えをテストしています。
+上記のサンプルでは、`JMenuItem`に設定した`Mnemonic`の下線表示の切り替えをテストしています。
 
 - `UIManager.put("Button.showMnemonics", false);`
     - `WindowsLookAndFeel`の場合、`Mnemonic`の下線が非表示になる

@@ -57,4 +57,10 @@ void loadSelectedRow(JTable table, Vector list, int keyCol) {
 
 `JDK 1.6.0`の`TableRowSorter`でソートを行う場合は、標準で選択状態が保存されるようです([TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html))。
 
+## 参考リンク
+- [TableSorter.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)
+- [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

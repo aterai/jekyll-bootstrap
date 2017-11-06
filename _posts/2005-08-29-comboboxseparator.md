@@ -43,7 +43,7 @@ combo.setModel(model);
 
 ## 解説
 - `ListCellRenderer`
-    - `JSeparator`が選択された場合は、セル描画`Component`として`JSeparator`を返すような`ListCellRenderer`を設定
+    - `JSeparator`が選択された場合は、セル描画`Component`として`JSeparator`を返す`ListCellRenderer`を設定
 - `DefaultComboBoxModel`
     - `JSeparator`が選択された場合は何もしないよう、`setSelectedItem`メソッドをオーバーライド
 
