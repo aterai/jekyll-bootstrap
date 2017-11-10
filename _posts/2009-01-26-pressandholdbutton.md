@@ -100,8 +100,13 @@ comments: true
 - 長押し
     - ボタンクリックが`1000`ミリ秒以上継続されると、`JRadioButton`を配置した`JPopupMenu`を表示
         - `JPopupMenu`のレイアウトを`pop.setLayout(new GridLayout(0, 3))`で変更し、`JRadioButton`を`3`列並べて表示
-- シングルリック
+- シングルクリック
     - 現在選択されている`JRadioButton`の色をコンソールに出力
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [Timer#setInitialDelay(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/Timer.html#setInitialDelay-int-)
 
 <!-- dummy comment line for breaking list -->
 

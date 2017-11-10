@@ -74,7 +74,7 @@ comments: true
     - 文字列は省略されない
 - 下
     - `SwingUtilities.layoutCompoundLabel(...)`メソッドを使用して文字列をセル幅分のみに省略
-    - `setText("<html><font color='blue'>"+str);`で文字列に下線を引く
+    - `setText("<html><font color='blue'>"+clippedTxt);`で省略済みの文字列に下線を引く
 
 <!-- dummy comment line for breaking list -->
 

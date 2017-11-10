@@ -54,7 +54,7 @@ public void initRowHeight(int height, int ccRow) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、マウスカーソルの下の行の高さを、`JTable#setRowHeight()`メソッドを使用して動的に変更し、魚眼レンズのような拡大強調表示を行っています。
+上記のサンプルでは、マウスカーソルの下の行の高さを`JTable#setRowHeight(int, int)`メソッドを使用して動的に変更し、魚眼レンズのような拡大強調表示を行っています。
 
 - 注:
     - `JTable#setFillsViewportHeight(true);`を使用しているので、`JDK 1.6.0`以上が必要
@@ -63,6 +63,7 @@ public void initRowHeight(int height, int ccRow) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [JTable#setRowHeight(int, int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setRowHeight-int-int-)
 - [Fisheye Menus](http://www.cs.umd.edu/hcil/fisheyemenu/)
 
 <!-- dummy comment line for breaking list -->

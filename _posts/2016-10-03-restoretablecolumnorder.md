@@ -58,4 +58,9 @@ class SortableTableColumnModel extends DefaultTableColumnModel {
 }
 </code></pre>
 
+## 参考リンク
+- [TableColumnModelEvent (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/TableColumnModelEvent.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

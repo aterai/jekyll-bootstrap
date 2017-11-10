@@ -166,12 +166,7 @@ public class BackgroundPainterTest {
   }
   public static void createAndShowGUI() {
     try {
-      for (UIManager.LookAndFeelInfo laf : UIManager.getInstalledLookAndFeels()) {
-        if ("Nimbus".equals(laf.getName())) {
-          UIManager.setLookAndFeel(laf.getClassName());
-          break;
-        }
-      }
+      UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
     } catch (Exception e) {
       e.printStackTrace();
     }

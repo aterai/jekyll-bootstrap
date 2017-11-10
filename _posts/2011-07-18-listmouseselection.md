@@ -42,6 +42,7 @@ comments: true
 
 ## 解説
 - 左: `Default`
+    - <kbd>Ctrl</kbd>キーを押しながらマウスクリックで複数選択可能
 - 中: `MouseEvent`
     - `JList#processMouseEvent`, `JList#processMouseMotionEvent`をオーバーライドして、常に<kbd>Ctrl</kbd>キーが押されている状態に設定
     - マウスでアイテムをドラッグしても選択状態は変化しない

@@ -36,9 +36,11 @@ comments: true
 ## 解説
 `JComboBox`に`html`の`table`タグを使うことで、`Item`に設定した文字列を左右に振り分けています。
 
-この方法では、`JComboBox`のリストにカラムを簡単に増やすことが出来ます。
+- メモ:
+    - `JComboBox`のリストにカラムを追加・削除することが簡単に可能
+    - `JComboBox`のサイズ変更に未対応
 
-上記のサンプルでは、`JComboBox`のサイズ変更に対応していません。
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JComboBoxのItemを左右にクリップして配置](https://ateraimemo.com/Swing/ClippedLRComboBox.html)

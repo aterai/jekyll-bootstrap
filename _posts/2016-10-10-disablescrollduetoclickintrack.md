@@ -28,48 +28,48 @@ comments: true
 </code></pre>
 
 ## 解説
+上記のサンプルでは、以下の`2`種類の方法で`Slider`のトラックをマウスでクリックしても値変更が発生しないように設定しています。
+
 - `Override TrackListener#shouldScroll(...): false`
     - `BasicSliderUI#createTrackListener(...)`をオーバーライドし、`shouldScroll(...)`メソッドが常に`false`を返す`TrackListener`を生成する
     - `BasicSliderUI#scrollDueToClickInTrack(...)`を空にしても、長押しでスクロールを行う`Timer`が起動し、`BasicSliderUI#scrollByBlock(...)`などが実行されて値が変化する
+- `JLayer + Slider.onlyLeftMouseButtonDrag: false`
     - `UIManager.put("Slider.onlyLeftMouseButtonDrag", false);`を設定し、マウスの右ボタンでノブのドラッグを可能に設定し、`JLayer`を使用して左ボタンの押下を右ボタンの押下に入れ替える
     - 参考: [JSliderのノブをマウスの右ボタンで操作不可に設定する](https://ateraimemo.com/Swing/OnlyLeftMouseButtonDrag.html)
     - トラックの右クリックは、元々無効なので、この入れ替えにより、トラックのクリックによる値変更は無効になる
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class DisableLeftPressedLayerUI extends LayerUI&lt;JSlider&gt; {
-  @Override public void installUI(JComponent c) {
-    super.installUI(c);
-    if (c instanceof JLayer) {
-      ((JLayer) c).setLayerEventMask(AWTEvent.MOUSE_EVENT_MASK);
-    }
-  }
-  @Override public void uninstallUI(JComponent c) {
-    if (c instanceof JLayer) {
-      ((JLayer) c).setLayerEventMask(0);
-    }
-    super.uninstallUI(c);
-  }
-  @Override protected void processMouseEvent(
-      MouseEvent e, JLayer&lt;? extends JSlider&gt; l) {
-    if (e.getID() == MouseEvent.MOUSE_PRESSED
-        &amp;&amp; SwingUtilities.isLeftMouseButton(e)) {
-      e.getComponent().dispatchEvent(new MouseEvent(
-          e.getComponent(),
-          e.getID(), e.getWhen(),
-          InputEvent.BUTTON3_DOWN_MASK, //e.getModifiers(),
-          e.getX(), e.getY(),
-          e.getXOnScreen(), e.getYOnScreen(),
-          e.getClickCount(),
-          e.isPopupTrigger(),
-          MouseEvent.BUTTON3)); //e.getButton());
-      e.consume();
-    }
-  }
-}
+        
+        <pre class="prettyprint"><code>class DisableLeftPressedLayerUI extends LayerUI&lt;JSlider&gt; {
+          @Override public void installUI(JComponent c) {
+            super.installUI(c);
+            if (c instanceof JLayer) {
+              ((JLayer) c).setLayerEventMask(AWTEvent.MOUSE_EVENT_MASK);
+            }
+          }
+          @Override public void uninstallUI(JComponent c) {
+            if (c instanceof JLayer) {
+              ((JLayer) c).setLayerEventMask(0);
+            }
+            super.uninstallUI(c);
+          }
+          @Override protected void processMouseEvent(
+              MouseEvent e, JLayer&lt;? extends JSlider&gt; l) {
+            if (e.getID() == MouseEvent.MOUSE_PRESSED
+                &amp;&amp; SwingUtilities.isLeftMouseButton(e)) {
+              e.getComponent().dispatchEvent(new MouseEvent(
+                  e.getComponent(),
+                  e.getID(), e.getWhen(),
+                  InputEvent.BUTTON3_DOWN_MASK, //e.getModifiers(),
+                  e.getX(), e.getY(),
+                  e.getXOnScreen(), e.getYOnScreen(),
+                  e.getClickCount(),
+                  e.isPopupTrigger(),
+                  MouseEvent.BUTTON3)); //e.getButton());
+              e.consume();
+            }
+          }
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [java - Stopping the jslider from moving when clicked - Stack Overflow](https://stackoverflow.com/questions/39904127/stopping-the-jslider-from-moving-when-clicked)
 
 <!-- dummy comment line for breaking list -->

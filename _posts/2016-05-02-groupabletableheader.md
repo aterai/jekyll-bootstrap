@@ -63,10 +63,10 @@ class GroupableTableHeader extends JTableHeader {
 上記のサンプルでは、`JTableHeader`に列のグループ化設定を追加し、`BasicTableHeaderUI#paint(...)`をオーバーライドしてヘッダセルの描画領域を変更することで、`TableColumn`の列結合を実現しています。
 
 - ~~[オリジナル](http://www2.gol.com/users/tame/swing/examples/JTableExamples1.html)~~からの主な変更点:
-    - `header.getColumnModel().getColumnMargin()`で取得した余白を無視(ヘッダセルと本体セルがずれてしまう)
+    - ヘッダセルと本体セルがずれてしまうので、`header.getColumnModel().getColumnMargin()`で取得した余白を無視
     - グループ化設定の保持に、`Vector`ではなく`ArrayList`を使用
     - グループ化設定がない場合は、`null`ではなく`Collections.emptyList()`を返す
-    - `BasicTableHeaderUI`からコピーしている`private`メソッド？を最新版に更新
+    - `BasicTableHeaderUI`からコピーしている各`private`メソッドを最新版に更新
 
 <!-- dummy comment line for breaking list -->
 

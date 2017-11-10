@@ -75,7 +75,7 @@ button.addActionListener(e -&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [How to Use Color Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](http://docs.oracle.com/javase/tutorial/uiswing/components/colorchooser.html)
+- [How to Use Color Choosers (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/colorchooser.html)
 
 <!-- dummy comment line for breaking list -->
 

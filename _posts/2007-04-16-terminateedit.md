@@ -22,51 +22,50 @@ comments: true
 ## 解説
 デフォルトの`JTable`では、<kbd>Tab</kbd>キーやマウスのクリックなどで同じテーブルの別セルにフォーカスが移動すると編集が確定しますが、別のコンポーネントにフォーカスが移動しても編集は確定しません。
 
-- `table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);`を設定:
+- `terminateEditOnFocusLost`
+    - `table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);`を設定
     - 同じフレームを親に持つコンポーネントにフォーカスが移動したとき、編集が確定する
     - 別フレームのコンポーネントにフォーカスが移動しても編集中のまま
     - ヘッダをクリック、入れ替え、サイズ変更すると、編集はキャンセルされる
-- `DefaultCellEditor`からエディタコンポーネントを取得し、`FocusListener`を設定し、セルが編集中なら`table.getCellEditor().stopCellEditing();`を実行:
+- `DefaultCellEditor:focusLost`
+    - `DefaultCellEditor`からエディタコンポーネントを取得してこれに`FocusListener`を設定し、セルが編集中なら`table.getCellEditor().stopCellEditing();`を実行
     - 別フレームのコンポーネントにフォーカスが移動したときも、編集が確定する
     - ヘッダをクリック、入れ替え、サイズ変更すると、編集はキャンセルされる
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>DefaultCellEditor dce = (DefaultCellEditor) table.getDefaultEditor(Object.class);
-dce.getComponent().addFocusListener(new FocusAdapter() {
-  @Override public void focusLost(FocusEvent e) {
-    if (!focusCheck.isSelected()) {
-      return;
-    }
-    if (table.isEditing()) {
-      table.getCellEditor().stopCellEditing();
-    }
-  }
-});
+        
+        <pre class="prettyprint"><code>DefaultCellEditor dce = (DefaultCellEditor) table.getDefaultEditor(Object.class);
+        dce.getComponent().addFocusListener(new FocusAdapter() {
+          @Override public void focusLost(FocusEvent e) {
+            if (!focusCheck.isSelected()) {
+              return;
+            }
+            if (table.isEditing()) {
+              table.getCellEditor().stopCellEditing();
+            }
+          }
+        });
 </code></pre>
-
-- `TableHeader`に`MouseListener`を設定して、セルが編集中なら`table.getCellEditor().stopCellEditing();`
+- `TableHeader:mousePressed`
+    - `TableHeader`に`MouseListener`を設定して、セルが編集中なら`table.getCellEditor().stopCellEditing();`
 
 <!-- dummy comment line for breaking list -->
-を実行:
+を実行
     - ヘッダをクリックしたとき、編集が確定する
     - `JDK 1.7.0`では、このような`MouseListener`を`TableHeader`に設定しなくても、編集が確定するように修正済み
     - [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](https://bugs.openjdk.java.net/browse/JDK-4330950)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>table.getTableHeader().addMouseListener(new MouseAdapter() {
-  @Override public void mousePressed(MouseEvent e) {
-    if (!headerCheck.isSelected()) {
-      return;
-    }
-    if (table.isEditing()) {
-      table.getCellEditor().stopCellEditing();
-    }
-  }
-});
+        
+        <pre class="prettyprint"><code>table.getTableHeader().addMouseListener(new MouseAdapter() {
+          @Override public void mousePressed(MouseEvent e) {
+            if (!headerCheck.isSelected()) {
+              return;
+            }
+            if (table.isEditing()) {
+              table.getCellEditor().stopCellEditing();
+            }
+          }
+        });
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 親フレームの状態変化でテーブルのヘッダのサイズ変更が発生する場合、ヘッダのリサイズモデルによって、編集中のセルの状態変化が異なります(`JDK 1.7.0`では修正済み: [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](https://bugs.openjdk.java.net/browse/JDK-4330950))。
 
@@ -114,7 +113,7 @@ frame.addWindowStateListener(new WindowStateListener() {
 
 ## 参考リンク
 - [Bug ID: 4330950 Lost newly entered data in the cell when resizing column width](https://bugs.openjdk.java.net/browse/JDK-4330950)
-    - [jdk7/swing/jdk: changeset 2709:e753db9c4416](http://hg.openjdk.java.net/jdk7/swing/jdk/rev/e753db9c4416)
+- [jdk7/swing/jdk: changeset 2709:e753db9c4416](http://hg.openjdk.java.net/jdk7/swing/jdk/rev/e753db9c4416)
 
 <!-- dummy comment line for breaking list -->
 

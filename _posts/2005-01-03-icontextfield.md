@@ -40,13 +40,10 @@ field.add(label);
 また、`JLabel`の代わりに、`JButton`などのコンポーネントを配置することも可能です。
 
 - - - -
-- メモ
-    - `JComboBox`の`Editor`を取得して`Margin`を指定しても、反映されない
-    - [JTextComponent#setMargin(Insets) (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/text/JTextComponent.html#setMargin%28java.awt.Insets%29)
-        - via: [java - JTextField margin doesnt work with border - Stack Overflow](https://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
+- `JComboBox`の`Editor`を取得して`Margin`を指定しても、反映されない
+- [JTextComponent#setMargin(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#setMargin-java.awt.Insets-)
 
 <!-- dummy comment line for breaking list -->
-
 <blockquote><p>
  ただし、デフォルト以外の境界が設定されている場合は、`Border`オブジェクトが適切なマージン空白を作成します(それ以外の場合、このプロパティーは事実上無視される)。
 </p></blockquote>
@@ -81,6 +78,7 @@ field2.setMargin(new Insets(m.top + 2, m.left, m.bottom, m.right + w));
 
 ## 参考リンク
 - [Swing (Archive) - Add a clickable icon to the left corner of a JTextField](https://community.oracle.com/thread/1489851)
+- [java - JTextField margin doesnt work with border - Stack Overflow](https://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
 - [JTextFieldのMarginを設定する](https://ateraimemo.com/Swing/TextFieldMargin.html)
 - [JComboBoxにアイコンを追加](https://ateraimemo.com/Swing/IconComboBox.html)
 
