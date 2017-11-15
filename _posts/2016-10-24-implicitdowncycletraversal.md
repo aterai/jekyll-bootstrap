@@ -36,7 +36,7 @@ p.setFocusTraversalPolicy(ftp);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [SortingFocusTraversalPolicy (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SortingFocusTraversalPolicy.html#setImplicitDownCycleTraversal-boolean-)
+- [SortingFocusTraversalPolicy#setImplicitDownCycleTraversal(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SortingFocusTraversalPolicy.html#setImplicitDownCycleTraversal-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

@@ -51,4 +51,9 @@ class MagneticDesktopManager extends DefaultDesktopManager {
 ## 解説
 `DesktopManager#dragFrame(JInternalFrame,int,int)`メソッドをオーバーライドすることで`JInternalFrame`の位置を調整しています。上記のサンプルでは、`JDesktopPane`と`JInternalFrame`の距離が`10px`以下になった場合、それぞれ吸着するよう設定しています。
 
+## 参考リンク
+- [DefaultDesktopManager#dragFrame(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultDesktopManager.html#dragFrame-javax.swing.JComponent-int-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

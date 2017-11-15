@@ -101,4 +101,9 @@ fileChooser = new JFileChooser() {
 };
 </code></pre>
 
+## 参考リンク
+- [Windowを開いたときのフォーカスを指定](https://ateraimemo.com/Swing/DefaultFocus.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

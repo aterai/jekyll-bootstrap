@@ -40,7 +40,7 @@ comments: true
     removeActionListener(listener);
     super.updateUI();
     listener = e -&gt; {
-      if (e.getModifiers() == InputEvent.BUTTON1_MASK) {
+      if ((e.getModifiers() &amp; InputEvent.MOUSE_EVENT_MASK) != 0) {
         updateItem(getSelectedIndex());
         keepOpen = true;
       }

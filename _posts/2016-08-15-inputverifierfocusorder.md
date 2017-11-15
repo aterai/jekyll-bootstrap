@@ -66,4 +66,9 @@ setFocusCycleRoot(true);
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [InputVerifier#shouldYieldFocus(JComponent) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/InputVerifier.html#shouldYieldFocus-javax.swing.JComponent-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
