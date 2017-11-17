@@ -83,7 +83,7 @@ comments: true
 ## 参考リンク
 - [JTreeのノード中の文字列をハイライトする](https://ateraimemo.com/Swing/HighlightWordInNode.html)
 - [RowFilterでJTableの行をフィルタリング](https://ateraimemo.com/Swing/RowFilter.html)
-- [JTableのセル内文字列をHTMLタグを使用してハイライト - Java Swing Tips](https://ateraimemo.com/https://ateraimemo.com/Swing/TableCellHtmlHighlighter.html)
+- [JTableのセル内文字列をHTMLタグを使用してハイライト](https://ateraimemo.com/Swing/TableCellHtmlHighlighter.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -16,36 +16,36 @@ comments: true
 {% download https://lh3.googleusercontent.com/-TUrxk7yYqYM/VWHkR1mENvI/AAAAAAAAN4w/bEU29WIgjOE/s800/TableCellTransferHandler.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//DataFlavor FLAVOR = new ActivationDataFlavor(JTable.class, DataFlavor.javaJVMLocalObjectMimeType, "JTable");
-class CellIconTransferHandler extends TransferHandler {
-  private final DataFlavor localObjectFlavor;
-  public CellIconTransferHandler(DataFlavor flavor) {
-    super();
-    localObjectFlavor = flavor;
-  }
+<pre class="prettyprint"><code>class CellIconTransferHandler extends TransferHandler {
+  protected final DataFlavor localObjectFlavor = new DataFlavor(Icon.class, "Icon");
   @Override protected Transferable createTransferable(JComponent c) {
-    JTable table = (JTable) c;
-    int idx = table.getSelectedColumn();
-    if (Icon.class.isAssignableFrom(table.getColumnClass(idx))) {
-        return new DataHandler(table, localObjectFlavor.getMimeType());
+    if (c instanceof JTable) {
+      JTable table = (JTable) c;
+      int row = table.getSelectedRow();
+      int col = table.getSelectedColumn();
+      if (Icon.class.isAssignableFrom(table.getColumnClass(col))) {
+        // return new DataHandler(table, localObjectFlavor.getMimeType());
+        return new Transferable() {
+          @Override public DataFlavor[] getTransferDataFlavors() {
+            return new DataFlavor[] {localObjectFlavor};
+          }
+          @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
+            return Objects.equals(localObjectFlavor, flavor);
+          }
+          @Override public Object getTransferData(DataFlavor flavor)
+              throws UnsupportedFlavorException, IOException {
+            if (isDataFlavorSupported(flavor)) {
+              return table.getValueAt(row, col);
+            } else {
+              throw new UnsupportedFlavorException(flavor);
+            }
+          }
+        };
+      }
     }
     return null;
   }
-  @Override public boolean canImport(TransferSupport info) {
-    return false;
-  }
-  @Override public int getSourceActions(JComponent c) {
-    return TransferHandler.COPY;
-  }
-}
-
-class TableCellTransferHandler extends TransferHandler {
-  private final DataFlavor localObjectFlavor;
-  public TableCellTransferHandler(DataFlavor flavor) {
-    super();
-    localObjectFlavor = flavor;
-  }
-  @Override public boolean canImport(TransferSupport info) {
+  @Override public boolean canImport(TransferHandler.TransferSupport info) {
     Component c = info.getComponent();
     if (c instanceof JList) {
       return info.isDrop() &amp;&amp; info.isDataFlavorSupported(localObjectFlavor);
@@ -56,17 +56,15 @@ class TableCellTransferHandler extends TransferHandler {
     return TransferHandler.COPY;
   }
   @SuppressWarnings("unchecked")
-  @Override public boolean importData(TransferSupport info) {
+  @Override public boolean importData(TransferHandler.TransferSupport info) {
     if (!canImport(info)) {
       return false;
     }
     JList l = (JList) info.getComponent();
     try {
       Object o = info.getTransferable().getTransferData(localObjectFlavor);
-      if (o instanceof JTable) {
-        JTable t = (JTable) o;
-        Object obj = t.getValueAt(t.getSelectedRow(), t.getSelectedColumn());
-        ((DefaultListModel) l.getModel()).addElement(obj);
+      if (o instanceof Icon) {
+        ((DefaultListModel) l.getModel()).addElement(o);
       }
       return true;
     } catch (UnsupportedFlavorException | IOException ex) {
@@ -78,11 +76,16 @@ class TableCellTransferHandler extends TransferHandler {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ドラッグ元の`JTable`に`CellIconTransferHandler`を設定して特定の列のアイコンのみドラッグ可能にし、ドロップ先の`JList`には`TableCellTransferHandler`を設定してアイコンを受け取り(実際は`JTable`ごと受け取って選択されたアイコンを取得)、これを一行で表示しています。
+上記のサンプルでは、ドラッグ元の`JTable`に`CellIconTransferHandler`を設定して特定の列のアイコンのみドラッグ可能にし、ドロップ先の`JList`は~~`TableCellTransferHandler`を設定して~~アイコンを受け取って~~(実際は`JTable`ごと受け取って選択されたアイコンを取得)~~表示しています。
 
 - テスト
     - `clear`ボタン: `JList`にドロップされたアイコンをクリア
     - `filter`ボタン: `JList`にドロップされたアイコンを含む行のみ表示するフィルタを`JTable`に設定
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [TransferHandler (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/TransferHandler.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -27,9 +27,7 @@ comments: true
   private JComponent source;
   public TableRowTransferHandler() {
     super();
-    localObjectFlavor = new ActivationDataFlavor(
-        Object[].class,
-        DataFlavor.javaJVMLocalObjectMimeType, "Array of items");
+    localObjectFlavor = new DataFlavor(Object[].class, "Array of items");
   }
   @Override protected Transferable createTransferable(JComponent c) {
     source = c;
@@ -41,8 +39,22 @@ comments: true
       list.add(model.getDataVector().elementAt(i));
     }
     Object[] transferedObjects = list.toArray();
-    return new DataHandler(
-        transferedObjects, localObjectFlavor.getMimeType());
+    return new Transferable() {
+      @Override public DataFlavor[] getTransferDataFlavors() {
+        return new DataFlavor[] {FLAVOR};
+      }
+      @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
+        return Objects.equals(FLAVOR, flavor);
+      }
+      @Override public Object getTransferData(DataFlavor flavor)
+            throws UnsupportedFlavorException, IOException {
+        if (isDataFlavorSupported(flavor)) {
+          return nodes;
+        } else {
+          throw new UnsupportedFlavorException(flavor);
+        }
+      }
+    };
   }
   @Override public boolean canImport(TransferSupport info) {
     JTable table = (JTable) info.getComponent();

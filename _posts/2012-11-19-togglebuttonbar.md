@@ -44,7 +44,8 @@ comments: true
     Path2D p = new Path2D.Float();
 
     if (c == parent.getComponent(0)) {
-      //:first-child
+      // JButton.segmentPosition: first
+      // :first-child
       p.moveTo(x, y + r);
       p.quadTo(x, y, x + r, y);
       p.lineTo(x + w, y);
@@ -52,7 +53,8 @@ comments: true
       p.lineTo(x + r, y + h);
       p.quadTo(x, y + h, x, y + h - r);
     } else if (c == parent.getComponent(parent.getComponentCount() - 1)) {
-      //:last-child
+      // JButton.segmentPosition: last
+      // :last-child
       p.moveTo(x, y);
       p.lineTo(x + w - r, y);
       p.quadTo(x + w, y, x + w, y + r);
@@ -60,6 +62,7 @@ comments: true
       p.quadTo(x + w, y + h, x + w - r, y + h);
       p.lineTo(x, y + h);
     } else {
+      // JButton.segmentPosition: middle
       p.moveTo(x, y);
       p.lineTo(x + w, y);
       p.lineTo(x + w, y + h);

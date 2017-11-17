@@ -33,15 +33,17 @@ col.setMaxWidth(50);
 ## 解説
 上記のサンプルでは、一番最初のカラム幅が`50px`で固定となるように、`TableColumn#setMaxWidth(int)`、`TableColumn#setMinWidth(int)`を使用しています。カーソルも変化しないようにする場合は、`setResizable(false)`も一緒に指定します。
 
-- メモ
-    - `JTableHeader#setResizingAllowed(boolean)`を使うと、すべてのカラム幅が変更不可となる
-    - `TableColumn#setResizable(boolean)`は、`JTable#setAutoResizeMode(JTable.AUTO_RESIZE_OFF)`の場合のみ有効
-    - `TableColumn#setMaxWidth(int)`、`TableColumn#setMinWidth(int)`を使用して、カラム幅を固定すると、`JTable.AUTO_RESIZE_OFF`でなくても有効
+- `JTableHeader#setResizingAllowed(boolean)`を使うと、すべてのカラム幅が変更不可となる
+- `TableColumn#setResizable(boolean)`は、`JTable#setAutoResizeMode(JTable.AUTO_RESIZE_OFF)`の場合のみ有効
+- `TableColumn#setMaxWidth(int)`、`TableColumn#setMinWidth(int)`を使用して、カラム幅を固定すると、`JTable.AUTO_RESIZE_OFF`でなくても有効
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-以下のようにカラム幅を`0`に固定すると、表示されない列を作成することができます。一時的にカラムを非表示にしたいが、`JTable#removeColumn(TableColumn)`、`JTable#addColumn(TableColumn)`、`JTable#moveColumn(TableColumn)`などで元の位置に戻すのが面倒な場合に使用できるかもしれません(ただし、<kbd>Tab</kbd>キーなどによるフォーカス移動が不正になる)。
+- カラム幅を`0`に固定して非表示する方法もある
+    - 一時的にカラムを非表示にしたいが、`JTable#removeColumn(TableColumn)`、`JTable#addColumn(TableColumn)`、`JTable#moveColumn(TableColumn)`などで元の位置に戻すのが面倒な場合に使用できるが、<kbd>Tab</kbd>キーなどによるフォーカス移動が不正になってしまう
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>TableColumn col = table.getColumnModel().getColumn(1);
 col.setMinWidth(0);

@@ -124,10 +124,17 @@ class TableNextMatchKeyHandler extends KeyAdapter {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、キー入力を行うと、`0`列目の文字列の先頭文字が一致(大文字小文字は無視)する行を検索、選択し、その位置までスクロールします。
+上記のサンプルでは、キー入力で`0`列目の文字列の先頭文字が一致(大文字小文字は無視)する行を検索、選択し、その行位置までスクロールします。
 
-検索方法は、`BasicListUI.Handler`、`BasicTreeUI.Handler`、`JList#getNextMatch(...)`、`JTree#getNextMatch(...)`のものと、ほぼ同じ(<kbd>Shift</kbd>キーを同時に押すと逆検索を追加)です。
+検索方法は、`BasicListUI.Handler`、`BasicTreeUI.Handler`、`JList#getNextMatch(...)`、`JTree#getNextMatch(...)`のものと同等(<kbd>Shift</kbd>キーを同時に押すと逆検索)です。
 
-`JList`などとは異なり、デフォルトの`JTable`はキー入力でセルエディタが起動するため、キー入力による検索が実行するためには、`table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`として、キー入力による編集開始を無効(マウスクリック、<kbd>F2</kbd>キーでの編集は可能)にする必要があります。
+`JList`などとは異なり、デフォルトの`JTable`はキー入力でセルエディタが起動するため、このキー入力による検索を実行するためには`table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`としてキー入力による編集開始を無効(マウスクリック、<kbd>F2</kbd>キーでの編集は可能)にする必要があります。
+
+## 参考リンク
+- [JListの先頭文字キー入力による検索選択を無効にする](https://ateraimemo.com/Swing/DisablePrefixMatchSelection.html)
+- [JList#getNextMatch(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#getNextMatch-java.lang.String-int-javax.swing.text.Position.Bias-)
+- [JTree#getNextMatch(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getNextMatch-java.lang.String-int-javax.swing.text.Position.Bias-)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

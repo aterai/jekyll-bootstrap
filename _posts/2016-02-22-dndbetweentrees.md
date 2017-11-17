@@ -17,9 +17,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TreeTransferHandler extends TransferHandler {
-  private static final DataFlavor FLAVOR = new ActivationDataFlavor(
+  private static final DataFlavor FLAVOR = new DataFlavor(
       DefaultMutableTreeNode[].class,
-      DataFlavor.javaJVMLocalObjectMimeType,
       "Array of DefaultMutableTreeNode");
   private JTree source;
 
@@ -30,7 +29,22 @@ comments: true
     for (int i = 0; i &lt; paths.length; i++) {
       nodes[i] = (DefaultMutableTreeNode) paths[i].getLastPathComponent();
     }
-    return new DataHandler(nodes, FLAVOR.getMimeType());
+    return new Transferable() {
+      @Override public DataFlavor[] getTransferDataFlavors() {
+        return new DataFlavor[] {FLAVOR};
+      }
+      @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
+        return Objects.equals(FLAVOR, flavor);
+      }
+      @Override public Object getTransferData(DataFlavor flavor)
+            throws UnsupportedFlavorException, IOException {
+        if (isDataFlavorSupported(flavor)) {
+          return nodes;
+        } else {
+          throw new UnsupportedFlavorException(flavor);
+        }
+      }
+    };
   }
 
   @Override public int getSourceActions(JComponent c) {

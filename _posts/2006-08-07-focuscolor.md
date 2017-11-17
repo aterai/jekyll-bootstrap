@@ -33,4 +33,9 @@ comments: true
 ## 解説
 上記のサンプルでは、`JTextField`に`FocusListener`を追加し、`focusGained`で背景色を指定した色に変更、`focusLost`で`JTextField`のデフォルト背景色(`UIManager.getColor("TextField.background")`)に戻しています。
 
+## 参考リンク
+- [FocusListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/FocusListener.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

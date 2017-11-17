@@ -221,6 +221,13 @@ public class WheelScrollTest {
 }
 </code></pre>
 
+## 参考リンク
+- [JScrollBar#setUnitIncrement(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JScrollBar.html#setUnitIncrement-int-)
+- [Mouse Wheel Controller « Java Tips Weblog](https://tips4java.wordpress.com/2010/01/10/mouse-wheel-controller/)
+- [How to Write a Mouse-Wheel Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/mousewheellistener.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - `JScrollBar`の`UnitIncrement`と`BlockIncrement`についてのメモを追加。 -- *aterai* 2012-07-10 (火) 21:03:39
 
