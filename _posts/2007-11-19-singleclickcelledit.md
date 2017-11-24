@@ -35,6 +35,7 @@ ce.setClickCountToStart(1);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [DefaultCellEditor#setClickCountToStart(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultCellEditor.html#setClickCountToStart-int-)
 - [Swing - JTable - enable cursor blink at cell with single click](https://community.oracle.com/thread/1367289)
 
 <!-- dummy comment line for breaking list -->

@@ -39,8 +39,13 @@ comments: true
 </code></pre>
 
 ## 解説
-`JTabbedPane`のタブレイアウトをスクロールタブレイアウト(`JTabbedPane#setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT)`)に設定した場合、各タブを格納するための`JViewport`コンポーネント(名前は「`TabbedPane.scrollableViewport`」)が作成され、これが`JTabbedPane`のタブ領域(`TabArea`)として配置されます。
+`JTabbedPane`のタブレイアウトを`JTabbedPane#setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT)`でスクロールタブレイアウトに設定した場合、各タブを格納するための`JViewport`コンポーネント(名前は`TabbedPane.scrollableViewport`)が作成され、これが`JTabbedPane`のタブ領域(`TabArea`)として配置されます。
 
 上記のサンプルでは、このタブ領域の`JViewport`を取得し、`JViewport#scrollRectToVisible(Rectangle)`メソッドを使用することで、矢印ボタンをクリックせずにタブのスクロールを行っています。
+
+## 参考リンク
+- [JViewport#scrollRectToVisible(Rectangle) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JViewport.html#scrollRectToVisible-java.awt.Rectangle-)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

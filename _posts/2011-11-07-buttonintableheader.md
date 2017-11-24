@@ -58,7 +58,12 @@ comments: true
 ## 解説
 上記のサンプルでは、`JTableHeader`の各カラムにマウスカーソルがある場合、`HeaderRenderer#getTableCellRendererComponent(...)`内で、右端に`JButton`を追加表示しています。ボタンがクリックされたときに開く`JPopupMenu`は、`JTableHeader`に追加したマウスリスナーでクリックされた座標を取得して表示しています。
 
+## 参考リンク
+- [TableColumnModel#getColumnIndexAtX(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/TableColumnModel.html#getColumnIndexAtX-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
-- `NimbusLookAndFeel`で、`JPopupMenu`が表示されないのを修正。 -- *aterai* 2011-11-07 (月) 22:15:02
+- `NimbusLookAndFeel`で`JPopupMenu`が表示されないバグを修正。 -- *aterai* 2011-11-07 (月) 22:15:02
 
 <!-- dummy comment line for breaking list -->

@@ -98,7 +98,7 @@ comments: true
 
 ## 解説
 上記のサンプルでは、`JList`のセルに`2`つの`JButton`を配置する`ListCellRenderer`を設定しています。
-`JButton`のクリックイベントは、`JList`に追加したマウスリスナーで`SwingUtilities.getDeepestComponentAt(...)`を使用して対象の`JButton`を取得し、`JButton#doClick()`を呼び出すようになっています。
+`JButton`のクリックイベントは、`JList`本体に追加したマウスリスナーで`SwingUtilities.getDeepestComponentAt(...)`を使用して`ListCellRenderer`から対象の`JButton`を取得し、`JButton#doClick()`を呼び出しています。
 
 ## 参考リンク
 - [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)

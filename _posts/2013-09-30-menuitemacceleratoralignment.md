@@ -84,50 +84,49 @@ comments: true
     - `JMenuItem`に`GridBagLayout`を設定し、`c.anchor = GridBagConstraints.EAST;`で、`Accelerator`文字列を設定した`JLabel`を配置
     - 本来の`Accelerator`文字列は、`UIManager.put("MenuItem.acceleratorForeground", background);`などで背景色と同化して非表示
     - 参考: [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>private static JMenuItem makeMenuItem2(JMenuItem mi) {
-  final JLabel label = new JLabel(MenuItemUIHelper.getAccText(mi, "+"));
-  label.setOpaque(true);
-  JMenuItem item = new JMenuItem(mi.getText()) {
-    @Override public void updateUI() {
-      super.updateUI();
-      if (getUI() instanceof WindowsMenuItemUI) {
-        setUI(new WindowsMenuItemUI() {
-          @Override protected void installDefaults() {
-            super.installDefaults();
-            acceleratorForeground = UIManager.getColor("MenuItem.background");
-            acceleratorSelectionForeground = acceleratorForeground;
-          }
-        });
-      }
-    }
-  };
-
-  GridBagConstraints c = new GridBagConstraints();
-  item.setLayout(new GridBagLayout());
-  c.gridheight = 1;
-  c.gridwidth  = 1;
-  c.gridy = 0;
-  c.gridx = 0;
-  c.insets = new Insets(0, 0, 0, 4);
-
-  c.weightx = 1d;
-  c.fill = GridBagConstraints.HORIZONTAL;
-  item.add(Box.createHorizontalGlue(), c);
-  c.gridx = 1;
-  c.fill = GridBagConstraints.NONE;
-  c.weightx = 0d;
-  c.anchor = GridBagConstraints.EAST;
-  item.add(label, c);
-
-  item.setMnemonic(mi.getMnemonic());
-  item.setAccelerator(mi.getAccelerator());
-  return item;
-}
+        
+        <pre class="prettyprint"><code>private static JMenuItem makeMenuItem2(JMenuItem mi) {
+          final JLabel label = new JLabel(MenuItemUIHelper.getAccText(mi, "+"));
+          label.setOpaque(true);
+          JMenuItem item = new JMenuItem(mi.getText()) {
+            @Override public void updateUI() {
+              super.updateUI();
+              if (getUI() instanceof WindowsMenuItemUI) {
+                setUI(new WindowsMenuItemUI() {
+                  @Override protected void installDefaults() {
+                    super.installDefaults();
+                    acceleratorForeground = UIManager.getColor("MenuItem.background");
+                    acceleratorSelectionForeground = acceleratorForeground;
+                  }
+                });
+              }
+            }
+          };
+        
+          GridBagConstraints c = new GridBagConstraints();
+          item.setLayout(new GridBagLayout());
+          c.gridheight = 1;
+          c.gridwidth  = 1;
+          c.gridy = 0;
+          c.gridx = 0;
+          c.insets = new Insets(0, 0, 0, 4);
+        
+          c.weightx = 1d;
+          c.fill = GridBagConstraints.HORIZONTAL;
+          item.add(Box.createHorizontalGlue(), c);
+          c.gridx = 1;
+          c.fill = GridBagConstraints.NONE;
+          c.weightx = 0d;
+          c.anchor = GridBagConstraints.EAST;
+          item.add(label, c);
+        
+          item.setMnemonic(mi.getMnemonic());
+          item.setAccelerator(mi.getAccelerator());
+          return item;
+        }
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 - `JMenuItem`の`Accelerator`が、`JMenuItem#setLocale(Locale.ENGLISH)`としても変化しない
     - [Bug ID: JDK-6292739 Locale change at runtime doesn't affect text displayed for accelerator keys](https://bugs.openjdk.java.net/browse/JDK-6292739)
@@ -135,23 +134,24 @@ comments: true
     - 例: `Space`が「スペース」
 - [KeyEvent#getKeyText(int) (Java Platform SE 7)](http://docs.oracle.com/javase/jp/7/api/java/awt/event/KeyEvent.html#getKeyText%28int%29)では、「これらの文字列は`awt.properties`ファイルを変更することによりローカライズが可能です。」となっているが、`%JAVA_HOME%/jre/lib/rt.jar`内に`sun/awt/resources/awt.class`などの優先順位が高いクラスがあるため、`awt_ja.properties`などを作成しても読み込まれない
     - `-Xbootclasspath/p:`などで、`rt.jar`より先に以下のような`sun.awt.resources.awt_ja.class`を読み込むよう指定
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>package sun.awt.resources;
-import java.util.ListResourceBundle;
-//ant package
-//cd target
-//"%JAVA_HOME%/bin/java" -Xbootclasspath/p:example.jar -jar example.jar
-public class awt_ja extends ListResourceBundle {
-  @Override protected Object[][] getContents() {
-    System.out.println("---- awt_ja ----");
-    return new Object[][] { { "AWT.space", "XXXXX" } };
-  }
-}
+        
+        <pre class="prettyprint"><code>package sun.awt.resources;
+        import java.util.ListResourceBundle;
+        // ant package
+        // cd target
+        // "%JAVA_HOME%\bin\java" -Xbootclasspath/p:example.jar -jar example.jar
+        // Class names should begin with an uppercase character
+        @SuppressWarnings({"PMD.ClassNamingConventions", "checkstyle:typename"})
+        public final class awt_ja extends ListResourceBundle {
+          @Override protected Object[][] getContents() {
+            System.out.println("awt_ja");
+            return new Object[][] {
+              {"AWT.space", "XXXXX"}
+            };
+          }
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Swing - Localized Accelorator Keys](https://community.oracle.com/thread/1364746)
 - [JMenuItemの内部にJButtonを配置する](https://ateraimemo.com/Swing/ButtonsInMenuItem.html)
 

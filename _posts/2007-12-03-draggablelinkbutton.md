@@ -31,7 +31,7 @@ b.setTransferHandler(new TransferHandler("text") {
         return href;
       }
       @Override public DataFlavor[] getTransferDataFlavors() {
-        return new DataFlavor[] { uriflavor };
+        return new DataFlavor[] {uriflavor};
       }
       @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
         return flavor.equals(uriflavor);
@@ -49,7 +49,7 @@ b.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`URL`文字列を設定した`JButton`をマウスでドラッグし、ブラウザにドロップすると、そのサイトに移動することができます。
+上記のサンプルでは、`URL`文字列を設定した`JButton`をマウスでドラッグしてブラウザなどにドロップすると、そのサイトに移動することができます。
 
 このような`URL`のドラッグ＆ドロップを実行するために、以下のような`TransferHandler`と`Transferable`を設定しています。
 
