@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2017-10-09T16:29:33+09:00
 description: JTableのセル罫線をMatteBorderで描画することで3x3のブロック罫線を太さを変更しています。
 image: https://drive.google.com/uc?export=view&id=17i0Wt64_TblvMzPrEX2YBqxGvdF7_L74Ew
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2017/10/set-sudoku-style-border-lines-created.html
+    lang: en
 comments: true
 ---
 ## 概要

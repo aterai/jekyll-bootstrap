@@ -84,7 +84,9 @@ EventQueue.invokeLater(new Runnable() {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`JTabbedPane`に順次タブを追加していくテスト
+- `JTabbedPane`にタブを順次追加する`SwingWorker`のテスト
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>//package example;
 //-*- mode:java; encoding:utf8n; coding:utf-8 -*-

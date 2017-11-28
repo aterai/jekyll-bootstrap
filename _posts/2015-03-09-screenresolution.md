@@ -37,6 +37,10 @@ public static float getSizeOfText() {
 ## 解説
 上記のサンプルでは、`Windows`環境で`Smaller-100%`、`Medium-125%`、`Larger-150%`とディスプレイの設定を切り替えて、`ContentPane`のサイズ、`JTable`、`JTree`のフォントサイズや行の高さを変更するテストしています。
 
+- 注: `Java 9`で修正済みで`JDK 1.8.0_XX`にもバックポートされているためこのサンプルは無意味だが、解像度の取得方法のメモとして残しておく
+
+<!-- dummy comment line for breaking list -->
+
 - 例: `Medium-125%`の場合
     - `ContentPane`のサイズを`(320 * 1.25, 240 * 1.25)`の`(400, 300)`になるよう、`getPreferredSize()`をオーバーライド
     - [UIManagerで使用するFontを統一](https://ateraimemo.com/Swing/FontChange.html)で、すべてのコンポーネントのフォントサイズを元の`1.25`倍に変更

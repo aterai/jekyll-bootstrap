@@ -46,12 +46,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`BasicPopupMenuUI`を継承した`CustomPopupMenuUI`を作成して、`UIManager`に登録しています。
+上記のサンプルでは、`BasicPopupMenuUI`を継承した`CustomPopupMenuUI`を作成し、`UIManager`で登録しています。
 
 <pre class="prettyprint"><code>UIManager.put("PopupMenuUI","example.CustomPopupMenuUI");
 </code></pre>
 
-この`CustomPopupMenuUI`では、ポップアップメニューがフレームの中にあるか外にあるかで、影のつけ方を切り替えています。
+この`CustomPopupMenuUI`では、ポップアップメニューの表示位置がフレームの内か外かで影のつけ方を切り替えています。
 
 - 内側: ポップアップメニューに半透明の`Border`を設定して影を描画
 - 外側: 別`Window`でポップアップメニューが開くため、`Robot`を使って背景画面をキャプチャーし、その上に影を描画して`Border`に設定

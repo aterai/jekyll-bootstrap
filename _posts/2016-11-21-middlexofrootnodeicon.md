@@ -51,7 +51,7 @@ LayerUI&lt;JTree&gt; layerUI = new LayerUI&lt;JTree&gt;() {
 - 左: デフォルト
     - `tree.setRowHeight(0)`でセルレンダラーが行の高さを決めるように設定
     - ルートノードのアイコンのみサイズを変更する`TreeCellRenderer`を設定
-    - アイコンを繋ぐ垂直の接続線は、左側寄りの位置に描画される
+    - ルートノードアイコンを繋ぐ垂直の接続線は、左側寄りの位置に描画される
 - 右: `setBorder` + `JLayer`
     - `tree.setRowHeight(0)`でセルレンダラーが行の高さを決めるように設定
     - `JTree`に、別途`JLayer`で描画するルートノードのアイコンの幅だけ余白を設定
@@ -59,7 +59,7 @@ LayerUI&lt;JTree&gt; layerUI = new LayerUI&lt;JTree&gt;() {
     - ルートノードのアイコンのみ、幅はデフォルトで高さを変更する`TreeCellRenderer`を設定
         - `JLabel#setIconTextGap(...)`メソッドで、別途`JLayer`で描画するアイコンの幅だけ余白を設定しておく
     - 本来`JTree`のルートノードアイコンとして設定したいアイコンを`JLayer`を使用して描画
-    - アイコンを繋ぐ垂直の接続線は、中央に描画される
+    - ルートノードアイコンを繋ぐ垂直の接続線は、中央に描画される
 
 <!-- dummy comment line for breaking list -->
 

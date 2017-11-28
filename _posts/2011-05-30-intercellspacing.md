@@ -55,4 +55,11 @@ add(new JCheckBox(new AbstractAction("setShowHorizontalLines") {
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JTable#setShowVerticalLines(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setShowVerticalLines-boolean-)
+- [JTable#setShowHorizontalLines(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setShowHorizontalLines-boolean-)
+- [JTable#setIntercellSpacing(Dimension) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setIntercellSpacing-java.awt.Dimension-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
