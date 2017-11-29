@@ -54,13 +54,10 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 - `Border`(左)
     - `JComboBox`自身に余白を設定し、これを`CellRenderer`, `CellEditor`に使用
     - ドロップダウンリストの位置、サイズが余白を含んだ幅になる
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>combo.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createEmptyBorder(8, 10, 8, 10), combo.getBorder()));
+        
+        <pre class="prettyprint"><code>combo.setBorder(BorderFactory.createCompoundBorder(
+                        BorderFactory.createEmptyBorder(8, 10, 8, 10), combo.getBorder()));
 </code></pre>
-
 - `JPanel` + `JComboBox`(右)
     - `GridBagLayout`を使用する`JPanel`に`JComboBox`を追加
     - `fill`フィールドを`GridBagConstraints.HORIZONTAL`として、垂直には`JComboBox`のサイズを変更しない

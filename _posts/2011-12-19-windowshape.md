@@ -44,7 +44,8 @@ frame.setVisible(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Translucent and Shaped Windows in JDK7 (The Java Tutorials' Weblog)](http://blogs.oracle.com/thejavatutorials/entry/translucent_and_shaped_windows_in)
+- [Translucent and Shaped Windows in JDK7 (The Java Tutorials' Weblog)](https://blogs.oracle.com/thejavatutorials/entry/translucent_and_shaped_windows_in)
+- [Window#setShape(Shape) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setShape-java.awt.Shape-)
 
 <!-- dummy comment line for breaking list -->
 
