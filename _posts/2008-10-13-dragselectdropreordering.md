@@ -48,7 +48,7 @@ list.setDropMode(DropMode.INSERT);
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- Java勉強中の初心者です。コードの質問したいのですが、文字数がオーバします・・・ -- *java勉強中の初心者* 2013-04-23 (火) 11:08:46
+- Java勉強中の初心者です。コードの質問したいのですが、文字数がオーバーします・・・ -- *java勉強中の初心者* 2013-04-23 (火) 11:08:46
     - コードだけどこか別の場所(`gist.github.com`など)に張り込んでリンクするといいかもしれません。 -- *aterai* 2013-04-23 (火) 12:15:08
 
 <!-- dummy comment line for breaking list -->

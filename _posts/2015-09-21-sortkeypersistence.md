@@ -48,8 +48,8 @@ try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStrea
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 大変勉強になります。JTableの列入替え(Drag&Drop操作による)の状態も保存することは可能なのでしょうか？ -- *hirohiro* 2015-11-11 (水) 17:57:58
-    - @hirohiro さん、こんばんは。JTableの列入替えの状態を保存する場合、DefaultTableColumnModel用のDefaultPersistenceDelegateを作成してヘッダカラムの幅や順序を保存する方法があります(記事の解説も追加・修正しました)。 -- *aterai* 2015-11-13 (金) 17:57:58
+- 大変勉強になります。`JTable`の列入替え(`Drag&Drop`操作による)の状態も保存することは可能なのでしょうか？ -- *hirohiro* 2015-11-11 (水) 17:57:58
+    - @hirohiro さん、こんばんは。`JTable`の列入替えの状態を保存する場合、`DefaultTableColumnModel`用の`DefaultPersistenceDelegate`を作成してヘッダカラムの幅や順序を保存する方法があります(記事の解説も追加・修正しました)。 -- *aterai* 2015-11-13 (金) 17:57:58
     - サンプルコード: [DefaultTableColumnModelPersistenceDelegateTest.java](https://gist.github.com/aterai/c9b8d33d04f848d552fa)
     - 他にも、[JTable Inhalte speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_Inhalte_speichern)のように`getter`や`setter`を`DefaultTableColumnModel`に追加して`XMLEncoder/XMLDecoder`する方法もあるようです。
 

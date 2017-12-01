@@ -43,7 +43,7 @@ tree3.setCellEditor(new DefaultTreeCellEditor(tree3, renderer3));
     - ノード編集中は`DefaultTreeCellEditor`が上記の`TreeCellRenderer`からアイコンを取得するため、編集中も同じアイコンが表示される
 - 右
     - `DefaultTreeCellRenderer#setOpenIcon(...)`、`DefaultTreeCellRenderer#setClosedIcon(...)`、`DefaultTreeCellRenderer#setLeafIcon(...)`メソッドを使用してアイコンを変更した`TreeCellRenderer`を`JTree#setCellRenderer(...)`メソッドで設定
-    - `DefaultTreeCellEditor`で使用する`TreeCellRenderer`を表示用とは異なるアイコンを設定し、`JTree#setCellEditor(...)`メソッドで設定ているため、編集中は異なるアイコンが表示される
+    - `DefaultTreeCellEditor`で使用する`TreeCellRenderer`には表示用とは異なるアイコンを設定して`JTree#setCellEditor(...)`メソッドで設定しているため、編集中は異なるアイコンが表示される
 
 <!-- dummy comment line for breaking list -->
 

@@ -79,7 +79,7 @@ public void setHighlight(JTextComponent jtc, String[] pattern) {
 - こんにちは。Cakaiと申します。ハイライトされているテキストのカラーを設定することがありますか？ -- *Caokai* 2009-10-15 (Thu) 23:12:47
     - こんにちは。はじめまして。`Highlighter.HighlightPainter`で、文字色は変更できないかもしれません。以下のように`AttributeSet`を使うのはどうでしょう。[JTextPaneでキーワードのSyntaxHighlight](https://ateraimemo.com/Swing/SimpleSyntaxHighlight.html) -- *aterai* 2009-10-16 (金) 13:04:32
         - 用途によっては、[JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)なども使えるかもしれません。 -- *aterai* 2009-10-16 (金) 13:05:35
-    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](https://ateraimemo.com/Swing/HighlightTextForeground.html)にサンプルソースコードを移動。 -- *aterai* 2014-11-10 (月) 00:05:55
+    - [JTextPaneで検索結果のハイライト表示と文字色変更を同時に行う](https://ateraimemo.com/Swing/HighlightTextForeground.html)にサンプルコードを移動。 -- *aterai* 2014-11-10 (月) 00:05:55
 - わかりました。ほんとにありがとうございました。 -- *Caokai* 2009-10-16 (Fri) 16:42:07
 
 <!-- dummy comment line for breaking list -->

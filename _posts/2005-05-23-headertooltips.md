@@ -16,13 +16,12 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTNx5xm6BI/AAAAAAAAAbU/LCSjxDNp8p0/s800/HeaderTooltips.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JTableHeader header = new JTableHeader(table.getColumnModel()) {
+<pre class="prettyprint"><code>table.setTableHeader(new JTableHeader(table.getColumnModel()) {
   @Override public String getToolTipText(MouseEvent e) {
     int c = columnAtPoint(e.getPoint());
-    return getTable().getColumnName(c) + DUMMY_LONG_TEXT;
+    return getTable().getColumnName(c) + DUMMY_TEXT;
   }
-};
-table.setTableHeader(header);
+});
 </code></pre>
 
 ## 解説

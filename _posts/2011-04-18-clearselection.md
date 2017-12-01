@@ -56,7 +56,7 @@ comments: true
 
 - 選択解除
     - `JList#clearSelection();`
-    - `ListSelectionModel#clearSelection()`のラッパー
+        - `ListSelectionModel#clearSelection()`のカバーメソッド
 - フォーカス解除
     - `list.getSelectionModel().setAnchorSelectionIndex(-1);`
     - `list.getSelectionModel().setLeadSelectionIndex(-1);`
@@ -66,6 +66,8 @@ comments: true
 
 ## 参考リンク
 - [How to Write a List Selection Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html)
+- [JList#clearSelection() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#clearSelection--)
+- [ListSelectionModel#clearSelection() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ListSelectionModel.html#clearSelection--)
 
 <!-- dummy comment line for breaking list -->
 

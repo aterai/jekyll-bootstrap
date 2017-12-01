@@ -2,16 +2,16 @@
 layout: post
 category: swing
 folder: ComboBoxPlaceholder
-title: JComboBoxでアイテムが選択されていない場合のプレースホルダー文字列を設定する
+title: JComboBoxでアイテムが選択されていない場合のプレースホルダ文字列を設定する
 tags: [JComboBox]
 author: aterai
 pubdate: 2017-05-01T14:53:34+09:00
-description: JComboBoxでアイテムが選択されていない場合、代わりに表示するプレースホルダー文字列を設定します。
+description: JComboBoxでアイテムが選択されていない場合、代わりに表示するプレースホルダ文字列を設定します。
 image: https://drive.google.com/uc?export=view&id=1R3IHJMxqNMm4oHGv9wmZ8FXpeZJn0AvEwA
 comments: true
 ---
 ## 概要
-`JComboBox`でアイテムが選択されていない場合、代わりに表示するプレースホルダー文字列を設定します。
+`JComboBox`でアイテムが選択されていない場合、代わりに表示するプレースホルダ文字列を設定します。
 
 {% download https://drive.google.com/uc?export=view&id=1R3IHJMxqNMm4oHGv9wmZ8FXpeZJn0AvEwA %}
 
@@ -30,9 +30,9 @@ combo1.setRenderer(new DefaultListCellRenderer() {
 </code></pre>
 
 ## 解説
-- `DefaultListCellRenderer#getListCellRendererComponent(...)`メソッドをオーバーライドし、引数の値が`null`の場合のみ代わりにプレースホルダー文字列を表示するコンポーネントを返す
-    - インデックスが`-1`の場合にプレースホルダー文字列を表示するように設定すると、選択が変更できなくなる？
-    - `JComboBox`のモデルにはプレースホルダー文字列を含める必要がない
+- `DefaultListCellRenderer#getListCellRendererComponent(...)`メソッドをオーバーライドし、引数の値が`null`の場合のみ代わりにプレースホルダ文字列を表示するコンポーネントを返す
+    - インデックスが`-1`の場合にプレースホルダ文字列を表示するように設定すると、選択が変更できなくなる？
+    - `JComboBox`のモデルにはプレースホルダ文字列を含める必要がない
 
 <!-- dummy comment line for breaking list -->
 

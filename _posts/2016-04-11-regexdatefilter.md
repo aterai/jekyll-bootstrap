@@ -105,7 +105,7 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
 ## 参考リンク
 - [RowFilter#regexFilter(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#regexFilter-java.lang.String-int...-)
 - [RowFilter#dateFilter(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowFilter.html#dateFilter-javax.swing.RowFilter.ComparisonType-java.util.Date-int...-)
-    - `Date`を文字列ではなく、日付として各条件を指定しフィルタリングする場合は、`RowFilter#dateFilter(...)を使用する
+    - `Date`を文字列ではなく、日付として各条件を指定しフィルタリングする場合は、`RowFilter#dateFilter(...)`を使用する
 
 <!-- dummy comment line for breaking list -->
 
