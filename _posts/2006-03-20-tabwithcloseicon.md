@@ -58,7 +58,7 @@ comments: true
 
 
 - - - -
-`JDK 1.6.0`では、`JTabbedPane`のタブ部分に、文字列・アイコンに加え`Swing`コンポーネントが使えるようになっているので、上記のサンプルはもっと簡単に実現できるようになっています。
+`JDK 1.6.0`では、`JTabbedPane`のタブ部分に[JTabbedPane#setTabComponentAt(Component)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setTabComponentAt-int-java.awt.Component-)メソッドで`Component`を設定可能になったので、上記のサンプルより手軽に同様の機能を実装できるようになりました。
 
 - [JTabbedPaneにタブを閉じるボタンを追加](https://ateraimemo.com/Swing/TabWithCloseButton.html)
 - [Java SE 6 Mustangの新機能](http://www.02.246.ne.jp/~torutk/jvm/mustang.html)

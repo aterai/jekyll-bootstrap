@@ -35,40 +35,34 @@ comments: true
 - `XMLEncoder`ボタンをクリック
     - `XMLEncoder#setPersistenceDelegate(...)`で、`DefaultTableModel`の書き出しを自作の`DefaultTableModelPersistenceDelegate`に設定
     - テンポラリディレクトリに`XML`ファイルの書き出しと、`JTextArea`にその`XML`ファイルの読み込み
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>try {
-  File file = File.createTempFile("output", ".xml");
-  try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(file)))) {
-    xe.setPersistenceDelegate(DefaultTableModel.class, new DefaultTableModelPersistenceDelegate());
-    xe.writeObject(model);
-    //xe.flush();
-    //xe.close();
-  }
-  try (Reader r = new BufferedReader(new InputStreamReader(
-                  new FileInputStream(file), StandardCharsets.UTF_8))) {
-    textArea.read(r, "temp");
-  }
-} catch (IOException ex) {
-  ex.printStackTrace();
-}
+        
+        <pre class="prettyprint"><code>try {
+          File file = File.createTempFile("output", ".xml");
+          try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(file)))) {
+            xe.setPersistenceDelegate(DefaultTableModel.class, new DefaultTableModelPersistenceDelegate());
+            xe.writeObject(model);
+            //xe.flush();
+            //xe.close();
+          }
+          try (Reader r = new BufferedReader(new InputStreamReader(
+                          new FileInputStream(file), StandardCharsets.UTF_8))) {
+            textArea.read(r, "temp");
+          }
+        } catch (IOException ex) {
+          ex.printStackTrace();
+        }
 </code></pre>
-
 - `XMLDecoder`ボタンをクリック
     - `JTextArea`に読み込まれている`XML`ファイルを`XMLDecoder`で`DefaultTableModel`に復元、`JTable#setModel(...)`で設定
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>try (XMLDecoder xd = new XMLDecoder(new BufferedInputStream(
-        new ByteArrayInputStream(textArea.getText().getBytes("UTF-8"))))) {
-  model = (DefaultTableModel) xd.readObject();
-  table.setModel(model);
-} catch (IOException ex) {
-  ex.printStackTrace();
-}
+        
+        <pre class="prettyprint"><code>try (XMLDecoder xd = new XMLDecoder(new BufferedInputStream(
+                new ByteArrayInputStream(textArea.getText().getBytes("UTF-8"))))) {
+          model = (DefaultTableModel) xd.readObject();
+          table.setModel(model);
+        } catch (IOException ex) {
+          ex.printStackTrace();
+        }
 </code></pre>
-
 - `clear`ボタンをクリック
     - 初期状態の`DefaultTableModel`を`JTable`に設定
 

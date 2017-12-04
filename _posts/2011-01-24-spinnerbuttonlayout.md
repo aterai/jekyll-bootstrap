@@ -34,35 +34,35 @@ comments: true
 ## 解説
 - `Default`
     - デフォルト
+    - 右端に`2`つのボタンが配置される
 - `RIGHT_TO_LEFT`
     - `JSpinner#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`で、ボタンを左側に配置
 - `L(Prev), R(Next): 1`
     - `BorderLayout#addLayoutComponent(...)`をオーバーライドして、`Editor`を`Center`、`Next`を`East`、`Prev`を`West`に配置するレイアウトマネージャーを作成して使用
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>JSpinner spinner = new JSpinner(model) {
-  @Override public void updateUI() {
-    super.updateUI();
-    setUI(new BasicSpinnerUI() {
-      @Override protected LayoutManager createLayout() {
-        return new SpinnerLayout();
-      }
-    });
-  }
-};
+        
+        <pre class="prettyprint"><code>JSpinner spinner = new JSpinner(model) {
+          @Override public void updateUI() {
+            super.updateUI();
+            setUI(new BasicSpinnerUI() {
+              @Override protected LayoutManager createLayout() {
+                return new SpinnerLayout();
+              }
+            });
+          }
+        };
 </code></pre>
-
 - `L(Prev), R(Next): 2`
     - `L(Prev), R(Next): 1`と同じレイアウトマネージャーを`JSpinner#setLayout(...)`メソッドをオーバーライドして設定
+        
+        <pre class="prettyprint"><code>JSpinner spinner = new JSpinner(model) {
+          @Override public void setLayout(LayoutManager mgr) {
+            super.setLayout(new SpinnerLayout());
+          }
+        };
+</code></pre>
+    - * 参考リンク [#reference]
+- [BasicSpinnerUI#createLayout() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicSpinnerUI.html#createLayout--)
 
 <!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>JSpinner spinner = new JSpinner(model) {
-  @Override public void setLayout(LayoutManager mgr) {
-    super.setLayout(new SpinnerLayout());
-  }
-};
-</code></pre>
 
 ## コメント
