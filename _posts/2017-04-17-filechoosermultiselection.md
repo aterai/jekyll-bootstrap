@@ -43,7 +43,7 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JFileChooser (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setMultiSelectionEnabled-boolean-)
+- [JFileChooser#setMultiSelectionEnabled(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setMultiSelectionEnabled-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

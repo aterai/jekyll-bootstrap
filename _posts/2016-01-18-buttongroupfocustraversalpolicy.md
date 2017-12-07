@@ -31,7 +31,8 @@ buttons.setFocusTraversalPolicy(new LayoutFocusTraversalPolicy() {
 
 ## 解説
 - `Default`
-    - デフォルトの`LayoutFocusTraversalPolicy`では、`JRadioButton`の選択状態には無関係に、レイアウト内のグループ先頭にある`JRadioButton`にフォーカスが移動する
+    - ~~デフォルトの`LayoutFocusTraversalPolicy`では、`JRadioButton`の選択状態には無関係に、レイアウト内のグループ先頭にある`JRadioButton`にフォーカスが移動する~~
+    - [JDK-8033699 Incorrect radio button behavior - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8033699)で修正済みで、デフォルトで以下と同じ動作をするようになった
 - `FocusTraversalPolicy`
     - `JRadioButton`を配置したパネルに`getDefaultComponent(...)`メソッドをオーバーライドした`FocusTraversalPolicy`を設定し、現在選択されている`JRadioButton`が存在する場合は、それにフォーカスを移動する
     - パネルに設定した`FocusTraversalPolicy`を有効にするために、`JPanel#setFocusTraversalPolicyProvider(true);`を設定する必要がある
@@ -40,6 +41,7 @@ buttons.setFocusTraversalPolicy(new LayoutFocusTraversalPolicy() {
 
 ## 参考リンク
 - [java - Get the focus in a ButtonGroup of JRadioButtons to go to the currently selected item instead of first - Stack Overflow](https://stackoverflow.com/questions/34820018/get-the-focus-in-a-buttongroup-of-jradiobuttons-to-go-to-the-currently-selected/34832814#34832814)
+- [JDK-8033699 Incorrect radio button behavior - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8033699)
 
 <!-- dummy comment line for breaking list -->
 

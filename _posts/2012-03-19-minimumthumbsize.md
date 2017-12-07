@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: MinimumThumbSize
 title: JScrollBarのKnobの最小サイズを設定する
-tags: [JScrollBar, UIManager, JSlider]
+tags: [JScrollBar, UIManager, JSlider, Fixed]
 author: aterai
 pubdate: 2012-03-19T15:02:42+09:00
 description: JScrollBarのKnobの最小サイズを設定します。

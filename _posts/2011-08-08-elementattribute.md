@@ -62,42 +62,39 @@ editor1.setEditorKit(new HTMLEditorKit());
 - 下: `div`タグの`title`属性を`ToolTip`で表示
     - `ImageView#getToolTipText(...)`を参考
     - `HyperlinkListener`を追加
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class TooltipEditorKit extends HTMLEditorKit {
-  @Override public ViewFactory getViewFactory() {
-    return new HTMLFactory() {
-      @Override public View create(Element elem) {
-        AttributeSet attrs = elem.getAttributes();
-        Object elementName = attrs.getAttribute(
-            AbstractDocument.ElementNameAttribute);
-        Object o = (elementName != null)
-          ? null : attrs.getAttribute(StyleConstants.NameAttribute);
-        if (o instanceof HTML.Tag) {
-          HTML.Tag kind = (HTML.Tag) o;
-          if (kind == HTML.Tag.DIV) {
-            return new BlockView(elem, View.Y_AXIS) {
-              @Override public String getToolTipText(
-                  float x, float y, Shape allocation) {
-                String s = super.getToolTipText(x, y, allocation);
-                if (s == null) {
-                  s = (String) getElement().getAttributes().getAttribute(
-                      HTML.Attribute.TITLE);
+        
+        <pre class="prettyprint"><code>class TooltipEditorKit extends HTMLEditorKit {
+          @Override public ViewFactory getViewFactory() {
+            return new HTMLFactory() {
+              @Override public View create(Element elem) {
+                AttributeSet attrs = elem.getAttributes();
+                Object elementName = attrs.getAttribute(
+                    AbstractDocument.ElementNameAttribute);
+                Object o = (elementName != null)
+                  ? null : attrs.getAttribute(StyleConstants.NameAttribute);
+                if (o instanceof HTML.Tag) {
+                  HTML.Tag kind = (HTML.Tag) o;
+                  if (kind == HTML.Tag.DIV) {
+                    return new BlockView(elem, View.Y_AXIS) {
+                      @Override public String getToolTipText(
+                          float x, float y, Shape allocation) {
+                        String s = super.getToolTipText(x, y, allocation);
+                        if (s == null) {
+                          s = (String) getElement().getAttributes().getAttribute(
+                              HTML.Attribute.TITLE);
+                        }
+                        return s;
+                      }
+                    };
+                  }
                 }
-                return s;
+                return super.create(elem);
               }
             };
           }
         }
-        return super.create(elem);
-      }
-    };
-  }
-}
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JEditorPaneにリンクを追加](https://ateraimemo.com/Swing/HyperlinkListener.html)
 
 <!-- dummy comment line for breaking list -->

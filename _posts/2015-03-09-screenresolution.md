@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: ScreenResolution
 title: ToolkitからScreenResolutionを取得し、コンポーネントで使用するフォントの倍率を変更する
-tags: [Toolkit, UIManager, Font, JPanel, JTree, JTable]
+tags: [Toolkit, UIManager, Font, JPanel, JTree, JTable, Fixed]
 author: aterai
 pubdate: 2015-03-09T09:59:02+09:00
 description: ディスプレイの解像度の設定によってパネルの初期サイズ、フォントサイズ、行の高さなどを変更するテストを行います。
@@ -37,10 +37,7 @@ public static float getSizeOfText() {
 ## 解説
 上記のサンプルでは、`Windows`環境で`Smaller-100%`、`Medium-125%`、`Larger-150%`とディスプレイの設定を切り替えて、`ContentPane`のサイズ、`JTable`、`JTree`のフォントサイズや行の高さを変更するテストしています。
 
-- 注: `Java 9`で修正済みで`JDK 1.8.0_XX`にもバックポートされているためこのサンプルは無意味だが、解像度の取得方法のメモとして残しておく
-
-<!-- dummy comment line for breaking list -->
-
+- 注: `Java 9`で修正済みで`JDK 1.8.0_102`にもバックポートされているためこのサンプルは無意味だが、解像度の取得方法のメモとして残しておく
 - 例: `Medium-125%`の場合
     - `ContentPane`のサイズを`(320 * 1.25, 240 * 1.25)`の`(400, 300)`になるよう、`getPreferredSize()`をオーバーライド
     - [UIManagerで使用するFontを統一](https://ateraimemo.com/Swing/FontChange.html)で、すべてのコンポーネントのフォントサイズを元の`1.25`倍に変更
@@ -62,7 +59,7 @@ public static float getSizeOfText() {
           }
         };
 </code></pre>
-- 注:
+- メモ:
     - `Windows`環境以外ではテストしていない
     - マルチディスプレイ環境で、解像度の異なる画面に移動する場合は考慮していない
     - `Insets`などは変更していない
@@ -73,9 +70,11 @@ public static float getSizeOfText() {
 ## 参考リンク
 - [Toolkit#getScreenResolution() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#getScreenResolution--)
 - [UIManagerで使用するFontを統一](https://ateraimemo.com/Swing/FontChange.html)
-- [JDK-8147440 HiDPI (Windows): Swing components have incorrect sizes after changing display resolution - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8147440)
-- [JDK-8174845 Bad scaling on Windows with large fonts with Java 9ea - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8174845)
-- [JDK-8176883 Enable antialiasing for Metal L&F icons on HiDPI display - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8176883)
+- [JEP 263: HiDPI Graphics on Windows and Linux](http://openjdk.java.net/jeps/263)
+    - [JDK-8055212 JEP 263: HiDPI Graphics on Windows and Linux - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8055212)
+    - [JDK-8147440 HiDPI (Windows): Swing components have incorrect sizes after changing display resolution - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8147440)
+    - [JDK-8174845 Bad scaling on Windows with large fonts with Java 9ea - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8174845)
+    - [JDK-8176883 Enable antialiasing for Metal L&F icons on HiDPI display - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8176883)
 
 <!-- dummy comment line for breaking list -->
 

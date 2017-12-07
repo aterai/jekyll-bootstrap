@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: SurrogatePair
 title: JTextComponentでサロゲートペアのテスト
-tags: [JEditorPane, JTextComponent, Unicode]
+tags: [JEditorPane, JTextComponent, Unicode, Fixed]
 author: aterai
 pubdate: 2012-05-14T11:54:26+09:00
 description: JEditorPaneなどで数値文字参照やUnicodeエスケープを使ってサロゲートペアのテストをします。
@@ -131,7 +131,7 @@ public class OTFTest {
 
 ## 参考リンク
 - [Java Font Support - OpenType : Java Glossary](http://mindprod.com/jgloss/opentype.html#JAVASUPPORT)
-- [OpenType (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/font/OpenType.html)
+- [OpenType (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/OpenType.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -28,12 +28,9 @@ progressBar.setIndeterminate(true);
     - `UIManager.put("ProgressBar.cycleTime", 1000);`
 - 再ペイント間隔: `ProgressBar.repaintInterval`
     - `UIManager.put("ProgressBar.repaintInterval", 10);`
-
-<!-- dummy comment line for breaking list -->
-
-- 注
+- 注:
     - サイクル時間が再ペイント間隔の偶数倍でない場合、サイクル時間は自動的にそうなるように増加する
-    - `WindowsLookAndFeel`などの場合、`JProgressBar#setIndeterminate(true);`が実行されたときに、これらの値は更新される
+    - `WindowsLookAndFeel`などの場合、`JProgressBar#setIndeterminate(true);`が実行されるタイミングでこれらの値は更新される
 
 <!-- dummy comment line for breaking list -->
 

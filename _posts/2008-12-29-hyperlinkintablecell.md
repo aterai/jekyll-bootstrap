@@ -58,7 +58,7 @@ comments: true
     Point pt = e.getPoint();
     int crow = table.rowAtPoint(pt);
     int ccol = table.columnAtPoint(pt);
-    //if (table.convertColumnIndexToModel(ccol) == 2)
+    // if (table.convertColumnIndexToModel(ccol) == 2)
     if (table.getColumnClass(ccol).equals(URL.class)) {
       URL url = (URL) table.getValueAt(crow, ccol);
       System.out.println(url);
@@ -77,16 +77,13 @@ comments: true
 </code></pre>
 
 ## 解説
-`html`タグを使って文字列を修飾するセルレンダラーを作成して使用しています。
+上記のサンプルでは、`JTable`のセル内にリンクを表現するために、`html`タグを使って文字列を修飾するセルレンダラーを作成して使用しています。
 
 <pre class="prettyprint"><code>URLRenderer renderer = new URLRenderer();
 table.setDefaultRenderer(URL.class, renderer);
 table.addMouseListener(renderer);
 table.addMouseMotionListener(renderer);
 </code></pre>
-
-- - - -
-~~上記のサンプルでは、クリックしてもリンク先には接続せず、`System.out.println(table.getValueAt(crow, ccol));`で文字列を表示しているだけです。~~ `Java 6`以上を対象にすることにしたので、`Desktop.getDesktop().browse()`を使用するようにしました。
 
 ## 参考リンク
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](https://ateraimemo.com/Swing/HyperlinkLabel.html)

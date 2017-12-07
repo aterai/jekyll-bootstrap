@@ -38,7 +38,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - `table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`
-    - キー入力(<kbd>F2</kbd>は除く)によるセルの編集開始を禁止
+    - <kbd>F2</kbd>は除くキー入力でのセルの編集開始を禁止
     - [JTableでキー入力によるセル編集開始を禁止する](https://ateraimemo.com/Swing/PreventStartCellEditing.html)
 
 <!-- dummy comment line for breaking list -->
@@ -46,7 +46,7 @@ comments: true
 - - - -
 上記のサンプルでは、`InputMap`、`ActionMap`に<kbd>F3</kbd>キーで`beep`が鳴るようにキーストロークとアクションを追加しています。このキーストロークは`JTable#editCellAt`メソッドでのキー入力チェックとは別に実行されるので、デフォルトの<kbd>F2</kbd>キーでの`startEditing`、<kbd>F8</kbd>キーでの`focusHeader`は、`JTable#editCellAt(...)`の戻り値とは関係なく有効になっています。
 
-- `JTable#processKeyBinding(...)`をオーバーライドしてキー入力自体を弾くと、`InputMap`に追加したキーストロークも除かれるので、これらのアクションも実行されない
+- `JTable#processKeyBinding(...)`をオーバーライドしてキー入力自体を無視すると、`InputMap`に追加したキーストロークも除かれるので、これらのアクションも実行されない
 
 <!-- dummy comment line for breaking list -->
 
