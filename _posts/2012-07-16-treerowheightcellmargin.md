@@ -79,7 +79,7 @@ comments: true
     - `TreeCellRenderer`が各行の高さを決定するよう、`JTree#setRowHeight(0)`を設定
     - アイコン用とテキスト用の`JLabel`を配置した`JPanel`を用意し、これを使用する`TreeCellRenderer`を設定
         - ノードが選択された場合、アイコン(行)の高さではなく、テキスト用の`JLabel`のみ背景を選択色で塗る
-        - このためノードを連続選択すると隙間ができる場合がある
+        - ノードを複数連続して選択すると行間に余白ができる
 
 <!-- dummy comment line for breaking list -->
 

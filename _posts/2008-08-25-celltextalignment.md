@@ -46,13 +46,12 @@ class HorizontalAlignmentTableRenderer extends DefaultTableCellRenderer {
 </code></pre>
 
 ## 解説
-- ラジオボタンで、`JTable`の第一列のセル文字列の揃えを変更
-    - `left`: 左揃え
-    - `center`: 中央揃え
-    - `right`: 右揃え
-    - `custom`: 行ごとに左、中央、右揃えを変更
-- メモ
-    - セルエディタなどにラジオボタンを配置する場合は、[JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)
+上記のサンプルでは、`JTable`の第`1`列目のセルに表示されている文字列の揃えを変更するテストを行っています。
+
+- `left`: 左揃え
+- `center`: 中央揃え
+- `right`: 右揃え
+- `custom`: 行ごとに左、中央、右揃えを変更
 
 <!-- dummy comment line for breaking list -->
 
@@ -63,31 +62,27 @@ class HorizontalAlignmentTableRenderer extends DefaultTableCellRenderer {
     - `Boolean`: `JCheckBox`, `CENTER`(チェックボックスは中央揃え)
 - `DefaultTableModel#TableModel#getColumnClass(int)`のデフォルトは、すべての列のクラスとして、`Object.class`を返す
 - 各クラスのデフォルトセルレンダラーが使用されるのは、列にセルレンダラーが割り当てられていない場合に限られる
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>//JTableの手抜きサンプルなら、以下のようにオーバーライドするのが簡単？(モデルが空になる場合、例外が発生する可能性がある)
-String[] columnNames = {"String", "Integer", "Boolean"};
-Object[][] data = {
-  {"AAA", 1, true},
-  {"BBB", 2, false},
-};
-DefaultTableModel model = new DefaultTableModel(data, columnNames) {
-  @Override public Class&lt;?&gt; getColumnClass(int column) {
-    return getValueAt(0, column).getClass();
-  }
-};
-JTable table = new JTable(model);
+    
+    <pre class="prettyprint"><code>//JTableの手抜きサンプルなら、以下のようにオーバーライドするのが簡単？(モデルが空になる場合、例外が発生する可能性がある)
+    String[] columnNames = {"String", "Integer", "Boolean"};
+    Object[][] data = {
+      {"AAA", 1, true},
+      {"BBB", 2, false},
+    };
+    DefaultTableModel model = new DefaultTableModel(data, columnNames) {
+      @Override public Class&lt;?&gt; getColumnClass(int column) {
+        return getValueAt(0, column).getClass();
+      }
+    };
+    JTable table = new JTable(model);
 </code></pre>
-
-クラスのデフォルトセルレンダラーではなく、任意の列にセルレンダラーを割り当てて、例えば中央揃えにしたい場合は、以下のように設定します。
-
-<pre class="prettyprint"><code>DefaultTableCellRenderer r = new DefaultTableCellRenderer();
-r.setHorizontalAlignment(SwingConstants.CENTER);
-table.getColumnModel().getColumn(2).setCellRenderer(r);
+- クラスのデフォルトセルレンダラーではなく、任意の列にセルレンダラーを割り当てて文字揃えを変更する方法もある
+    
+    <pre class="prettyprint"><code>DefaultTableCellRenderer r = new DefaultTableCellRenderer();
+    r.setHorizontalAlignment(SwingConstants.CENTER);
+    table.getColumnModel().getColumn(2).setCellRenderer(r);
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [JTableHeaderの字揃え](https://ateraimemo.com/Swing/HorizontalAlignmentHeaderRenderer.html)
     - ヘッダの文字揃えに関するテストは、上記の場所に移動
 - [JTableのセル内文字列を両端揃えにする](https://ateraimemo.com/Swing/InterIdeographJustify.html)

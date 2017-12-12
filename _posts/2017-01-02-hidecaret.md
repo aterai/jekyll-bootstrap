@@ -31,9 +31,14 @@ comments: true
 - `Hide Highlighter`
     - `JTextArea#setHighlighter(null)`のように`null`を設定することで、選択ハイライトを非表示にする
 - `Editable`
-    - `JTextArea#setEditable(false)`と設定すると、編集不可になり、選択は可能だが`Caret`は非表示になる
+    - `JTextArea#setEditable(false)`を設定すると編集不可になり、選択は可能だが`Caret`は非表示になる
 - `Editable`
-    - `JTextArea#setFocusable(false)`と設定すると、選択不可になり、結果`Caret`も選択ハイライトも非表示になる
+    - `JTextArea#setFocusable(false)`を設定すると選択不可になり、結果`Caret`も選択ハイライトも非表示になる
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [DefaultCaret#isVisible() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DefaultCaret.html#isVisible--)
 
 <!-- dummy comment line for breaking list -->
 

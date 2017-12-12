@@ -54,7 +54,21 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-## 参考リンク
+- - - -
+- `JScrollPane`の高さだけ変更した場合、`JTable#doLayout()`が呼び出されなくなった？
+    - `JTable#setFillsViewportHeight(true)`を設定しても高さの縮小で`JTable#doLayout()`が呼び出されない
+    - `JScrollPane`に`ComponentListener`を追加して回避
+        
+        <pre class="prettyprint"><code>scroll.addComponentListener(new ComponentAdapter() {
+          @Override public void componentResized(ComponentEvent e) {
+            Component c = e.getComponent();
+            if (c instanceof JScrollPane) {
+              ((JScrollPane) c).getViewport().getView().revalidate();
+            }
+          }
+        });
+</code></pre>
+    - * 参考リンク [#reference]
 - [JTableの行の高さを変更する](https://ateraimemo.com/Swing/FishEyeTable.html)
 
 <!-- dummy comment line for breaking list -->

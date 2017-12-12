@@ -45,33 +45,30 @@ comments: true
 ## 解説
 - ヘッダセル
     - `TableCellRenderer`で、セルの幅と文字列の長さを比較して、`ToolTip`を設定
-    - ~~ソートアイコンと文字列の間の`gap`が不明?~~ `JLabel#getIconTextGap()`で取得可能
-    - `Windows 10`で使用される`WindowsLookAndFeel`のように文字列の上にソートアイコンが表示される場合(`TableCellRenderer#getIcon()`が`null`)は、そのアイコンの幅を無視する
+    - ソートアイコンと文字列の間の`gap`は`JLabel#getIconTextGap()`で取得してセル幅から除外する
+        - `Windows 10`で使用される`WindowsLookAndFeel`のように文字列の上にソートアイコンが表示される場合(`TableCellRenderer#getIcon()`が`null`)は、このアイコンの幅を無視する
 - セル
     - `JTable#prepareRenderer`メソッドをオーバーライドし、セルの幅と文字列の長さを比較して、`ToolTip`を設定
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>JTable table = new JTable(model) {
-  @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
-    Component c = super.prepareRenderer(tcr, row, column);
-    if (c instanceof JComponent) {
-       JComponent l = (JComponent) c;
-       Object o = getValueAt(row, column);
-       Insets i = l.getInsets();
-       Rectangle rect = getCellRect(row, column, false);
-       rect.width -= i.left + i.right;
-       FontMetrics fm = l.getFontMetrics(l.getFont());
-       String str = o.toString();
-       int cellTextWidth = fm.stringWidth(str);
-       l.setToolTipText(cellTextWidth &gt; rect.width ? str : null);
-    }
-    return c;
-  }
-};
+        
+        <pre class="prettyprint"><code>JTable table = new JTable(model) {
+          @Override public Component prepareRenderer(TableCellRenderer tcr, int row, int column) {
+            Component c = super.prepareRenderer(tcr, row, column);
+            if (c instanceof JComponent) {
+               JComponent l = (JComponent) c;
+               Object o = getValueAt(row, column);
+               Insets i = l.getInsets();
+               Rectangle rect = getCellRect(row, column, false);
+               rect.width -= i.left + i.right;
+               FontMetrics fm = l.getFontMetrics(l.getFont());
+               String str = o.toString();
+               int cellTextWidth = fm.stringWidth(str);
+               l.setToolTipText(cellTextWidth &gt; rect.width ? str : null);
+            }
+            return c;
+          }
+        };
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JTableHeaderのTooltipsを列ごとに変更](https://ateraimemo.com/Swing/HeaderTooltips.html)
 - [JTableのTooltipsを行ごとに変更](https://ateraimemo.com/Swing/RowTooltips.html)
 

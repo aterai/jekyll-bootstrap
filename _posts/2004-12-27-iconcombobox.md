@@ -29,7 +29,7 @@ comments: true
 上記のサンプルでは、`JLabel#setIcon(...)`でアイコンを追加し、リスト内の各項目にアイコンが表示されるように設定した`ListCellRenderer`を`JComboBox`に設定しています。
 
 - `setEditable(false)`
-    - `JComboBox`の文字列入力欄が編集不可の場合、リスト内の各項目だけでなく、`JComboBox`にもアイコンが表示される
+    - `JComboBox`が編集不可の場合、リスト内の各項目だけでなく`JComboBox`にもアイコンが表示される
 - `setEditable(true)`
     - 上:
         - `JComboBox`の文字列入力欄には、アイコンが表示されない

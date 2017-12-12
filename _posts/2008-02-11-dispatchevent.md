@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private static int DELAY = 10 * 1000; //10s
-private final javax.swing.Timer timer = new javax.swing.Timer(DELAY, new ActionListener() {
+private final Timer timer = new Timer(DELAY, new ActionListener() {
   @Override public void actionPerformed(ActionEvent e) {
     setTestConnected(false);
     Toolkit.getDefaultToolkit().removeAWTEventListener(awtEvent);
@@ -44,7 +44,7 @@ JButton button = new JButton(new AbstractAction("Connect") {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、一定時間(`10`秒)、マウスやキーボードからの入力が無い場合、接続(ダミー)を切るようになっています。
+上記のサンプルでは、一定時間(`10`秒)、マウスやキーボードからの入力が無い場合、ダミーの接続を終了する設定になっています。
 
 - - - -
 [Application Inactivity « Java Tips Weblog](https://tips4java.wordpress.com/2008/10/24/application-inactivity/)を参考にして、`Toolkit.getDefaultToolkit().getSystemEventQueue().push(eventQueue)`は使用せず、以下のように`Toolkit.getDefaultToolkit().addAWTEventListener(AWTEventListener)`を使う方法に変更しました。

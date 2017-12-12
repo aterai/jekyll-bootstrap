@@ -81,7 +81,7 @@ editor2.setText("(\uD85B\uDE40) (\u26E40)\n(\uD842\uDF9F) (\u20B9F)");
     - [Bug ID: 5092191 RFE: CFF/Type2 embedded fonts not supported with Font.createFont()](https://bugs.openjdk.java.net/browse/JDK-5092191)
     - [JDK-8074562 CID keyed OpenType fonts are not supported by T2K - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8074562)
     - [JDK-8168288 Dubious FontMetrics values from NullFontScaler - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8168288)
-        - `JDK 9`で修正される？
+        - `Java 9`で修正された(`8u152`は未修整)
 
 <!-- dummy comment line for breaking list -->
 

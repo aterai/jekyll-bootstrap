@@ -49,9 +49,13 @@ b1.add(b2);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JButton`に`OverlayLayout`を使って、別の`JButton`を右下に重ねて配置しています。
+- 親`JButton`をコンテナとして別の子`JButton`を追加
+- 親`JButton`のレイアウトとして`OverlayLayout`を設定し、`setAlignmentX(...)`などで子`JButton`が右下に配置されるよう設定
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成](https://ateraimemo.com/Swing/CompoundButton.html)
 - [Box Layout Features](https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html#features)
 - [JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
 
