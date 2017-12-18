@@ -107,9 +107,9 @@ comments: true
 </code></pre>
 
 ## 解説
-`Excel`風に`JTabbedPane`のタブタイトルを直接編集しています。
+上記のサンプルでは、`JTabbedPane`のタブタイトルを`Excel`などのように直接編集できるよう設定しています。
 
-編集が開始されると、対象となるタブ上に`JTextField`をレイアウトした`GlassPane`を表示しています。この`GlassPane`には、編集中はフォーカスの移動が起こらないようにするための`FocusTraversalPolicy`などを設定しています。
+編集が開始されると、対象となるタブ上に`JTextField`をレイアウトした`GlassPane`を表示しています。この`GlassPane`には、編集中はフォーカスの移動が起こらないようにするための`FocusTraversalPolicy`などを追加しています。
 
 - 操作方法
     - マウスでタブをダブルクリック、またはタブを選択して<kbd>Enter</kbd>キーで編集開始

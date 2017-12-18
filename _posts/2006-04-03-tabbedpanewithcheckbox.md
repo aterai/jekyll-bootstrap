@@ -66,7 +66,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`JTabbedPane`の`Border`に`SwingUtilities.paintComponent`メソッドを使って`JCheckBox`を描画しています。`JCheckBox`が`JTabbedPane`の子になってタブが増えないように、ダミーパネルを中間コンテナに指定しています。
+`JTabbedPane`の`Border`に`SwingUtilities.paintComponent(...)`メソッドを使って`JCheckBox`を描画しています。`JCheckBox`が`JTabbedPane`の子になってタブが増えないように、ダミーパネルを中間コンテナに指定しています。
 
 `JTabbedPane`で受け取ったマウスイベントを、`SwingUtilities.convertMouseEvent`メソッドを利用し、チェックボックス用に座標などを変換して送り出しています。
 

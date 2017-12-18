@@ -62,7 +62,7 @@ p2.add(Box.createVerticalGlue());
     - https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComponent.html#setAlignmentY-float-
     - 「水平の配置方法を設定します。」はドキュメントの間違いで、実際の動作は「垂直の配置方法を設定します。」
     - `setAlignmentX`、`getAlignmentX`、`getAlignmentY`も同様に逆の説明になっている
-    - `JDK 1.9.0`ではドキュメントが修正されている
+    - `java 9`のドキュメントは修正済み
 
 <!-- dummy comment line for breaking list -->
 

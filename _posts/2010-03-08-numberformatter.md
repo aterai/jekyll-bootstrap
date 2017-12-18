@@ -96,6 +96,7 @@ private static DefaultFormatterFactory makeFFactory(final SpinnerNumberModel m) 
 
 ## 参考リンク
 - [JTextFieldの入力を数値に制限する](https://ateraimemo.com/Swing/NumericTextField.html)
+- [SpinnerNumberModelに上限値を超える値を入力](https://ateraimemo.com/Swing/SpinnerNumberModel.html)
 
 <!-- dummy comment line for breaking list -->
 

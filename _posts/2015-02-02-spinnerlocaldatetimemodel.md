@@ -239,6 +239,7 @@ comments: true
 
 ## 参考リンク
 - [JSpinnerで日付を設定](https://ateraimemo.com/Swing/SpinnerDateModel.html)
+- [LocalDateTime (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/time/LocalDateTime.html)
 - [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
 
 <!-- dummy comment line for breaking list -->

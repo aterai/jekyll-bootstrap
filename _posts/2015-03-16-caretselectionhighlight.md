@@ -43,7 +43,7 @@ comments: true
 - `FocusCaret`
     - `DefaultCaret#focusLost(...)`をオーバーライドし、フォーカスがなくなっても`DefaultCaret#setSelectionVisible(true)`を実行して選択状態ハイライトを表示状態に戻す
     - `DefaultCaret#getSelectionPainter()`をオーバーライドし、フォーカスがない場合のハイライト色を変更
-    - `DefaultCaret#focusGained(...)`をオーバーライドし、フォーカスが戻ると一旦ハイライトを削除してハイライト色を元に戻し、あらためて選択状態ハイライトを表示状態にする
+    - `DefaultCaret#focusGained(...)`をオーバーライドし、フォーカスがこのキャレットのコンポーネントに移動すると一旦ハイライトを削除してデフォルトのハイライト色を元に戻し、あらためて選択状態ハイライトを表示状態にする
 
 <!-- dummy comment line for breaking list -->
 

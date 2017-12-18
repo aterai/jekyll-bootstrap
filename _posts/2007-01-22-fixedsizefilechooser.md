@@ -28,7 +28,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`JFileChooser`の`createDialog`メソッドをオーバーライドして、リサイズを制限したり、最小サイズを設定したりしています。
+上記のサンプルでは、`JFileChooser`の`createDialog`メソッドをオーバーライドしてマウスでのリサイズ制限と、最小サイズの設定をテストすることができます。
 
 `Windows`環境でも、`JDK 6`以上でオーバーライドした`createDialog`メソッド内で`JDialog#setMinimumSize(Dimension)`を使用すれば、最小サイズの設定が可能です。
 
