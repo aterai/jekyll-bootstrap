@@ -28,7 +28,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、アプリケーションを起動した時点で`JToolBar`をフローティング状態にし、その位置を指定しています。
+上記のサンプルでは、アプリケーションを起動した時点で`JToolBar`をフローティング状態になるように設定し、その表示位置を指定しています。
 
 - `BasicToolBarUI#setFloating(boolean, Point)`メソッドの引数`Point`は、引数`boolean`が`false`の場合のみ`BorderLayout`の東西南北どの位置にドックするかを調査するために使用される
     - 参考: [java - Setting a specific location for a floating JToolBar - Stack Overflow](https://stackoverflow.com/questions/41701664/setting-a-specific-location-for-a-floating-jtoolbar)
@@ -36,12 +36,12 @@ comments: true
     - このため、`JToolBar`をフローティング状態に移行する前に、`BasicToolBarUI#setFloatingLocation(...)`でその位置を指定しておく必要がある
 - フローティング状態の`JToolBar`から親`Window`を取得し、直接`Window#setLocation(...)`でその位置を指定する方法もある
     
-    <pre class="prettyprint"><code>//ドッキング元のメインWindow
+    <pre class="prettyprint"><code>// ドッキング元のメインWindow
     Window w = (Window) getTopLevelAncestor();
     Point pt = w.getLocation();
-    //フローティング状態に移行
+    // フローティング状態に移行
     ((BasicToolBarUI) toolbar.getUI()).setFloating(true, null);
-    //JToolBar(フローティング状態)のWindow
+    // JToolBar(フローティング状態)のWindow
     Container c = toolbar.getTopLevelAncestor();
     if (c instanceof Window) {
       ((Window) c).setLocation(pt.x + 120, pt.y + 160);

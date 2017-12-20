@@ -75,4 +75,9 @@ pop.addPopupMenuListener(new PopupMenuListener() {
 });
 </code></pre>
 
+## 参考リンク
+- [DefaultRowSorter#toggleSortOrder(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultRowSorter.html#toggleSortOrder-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -47,7 +47,7 @@ comments: true
       return null;
     }
 
-    final JPanel p = new JPanel(new BorderLayout());
+    JPanel p = new JPanel(new BorderLayout());
     p.setBorder(BorderFactory.createEmptyBorder());
     p.add(new JLabel(getTitleAt(index)), BorderLayout.NORTH);
     p.add(getTabThumbnail(index));

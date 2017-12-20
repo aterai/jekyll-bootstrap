@@ -39,7 +39,7 @@ comments: true
 右端に十分な余白が無く、文字列を描画するとタブ上に重なってしまう場合は、最後のタブの横から文字列を描画するようになっています。
 
 - - - -
-`JDK 1.7.0`の`JLayer`を使用する場合は、以下のような方法があります。
+`JDK 1.7.0`以降なら、`JLayer`を使用する方法もあります。
 
 <pre class="prettyprint"><code>import java.awt.*;
 import javax.swing.*;
