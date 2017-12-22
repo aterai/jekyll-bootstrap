@@ -48,6 +48,7 @@ sorter.setRowFilter(RowFilter.andFilter(filters));
 ## 参考リンク
 - [Splash Screens and Java SE 6, and Sorting and Filtering Tables Tech Tips](http://web.archive.org/web/20090419180550/http://java.sun.com/developer/JDCTechTips/2005/tt1115.html)
 - [Sorting and Filtering (How to Use Tables)](https://docs.oracle.com/javase/tutorial/uiswing/components/table.html#sorting)
+- [TableRowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/TableRowSorter.html)
 
 <!-- dummy comment line for breaking list -->
 

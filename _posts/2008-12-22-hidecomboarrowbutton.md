@@ -16,9 +16,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTN0Yp0GRI/AAAAAAAAAbY/WvXw5vm2_LI/s800/HideComboArrowButton.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JPanel p = new JPanel(new BorderLayout(5, 5));
-Object[] items = {"JComboBox 11111:", "JComboBox 222:", "JComboBox 33:"};
-
+<pre class="prettyprint"><code>Object[] items = {"JComboBox 11111:", "JComboBox 222:", "JComboBox 33:"};
 UIManager.put("ComboBox.squareButton", Boolean.FALSE);
 JComboBox comboBox = new JComboBox(items);
 comboBox.setUI(new BasicComboBoxUI() {

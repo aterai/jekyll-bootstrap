@@ -31,35 +31,15 @@ pop.add(mi);
 ## 解説
 上記のサンプルでは、`JFileChooser#setFileHidingEnabled(boolean)`メソッドを使用して、隠しファイル、隠しフォルダーなどの表示・非表示を設定しています。
 
-- - - -
+- `JFileChooser`からファイルリストの`JPopupMenu`を直接取得することが出来ないので、子コンポーネントを検索する必要がある
+    - 参考: [Containerの子Componentを再帰的にすべて取得する](https://ateraimemo.com/Swing/GetComponentsRecursively.html)
 - 初期値は、`OS`の設定(`Windows`なら「コントロールパネル、フォルダーオプション、表示、ファイルとフォルダーの表示」)に従う
     - 参考: [DesktopPropertyの変更を監視する](https://ateraimemo.com/Swing/DesktopProperty.html)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>Object showHiddenProperty = Toolkit.getDefaultToolkit().getDesktopProperty("awt.file.showHiddenFiles");
-System.out.println("awt.file.showHiddenFiles: " + showHiddenProperty);
+        
+        <pre class="prettyprint"><code>Object showHiddenProperty = Toolkit.getDefaultToolkit().getDesktopProperty("awt.file.showHiddenFiles");
+        System.out.println("awt.file.showHiddenFiles: " + showHiddenProperty);
 </code></pre>
-
-- - - -
-`JFileChooser`から`JPopupMenu`を直接取得することが出来ないので、以下のように子コンポーネントを検索しています。
-
-<pre class="prettyprint"><code>private static JPopupMenu searchPopupMenu(Container parent) {
-  for (Component c: parent.getComponents()) {
-    if (c instanceof JComponent &amp;&amp; ((JComponent) c).getComponentPopupMenu() != null) {
-      return ((JComponent) c).getComponentPopupMenu();
-    } else {
-      JPopupMenu pop = searchPopupMenu((Container) c);
-      if (pop != null) {
-        return pop;
-      }
-    }
-  }
-  return null;
-}
-</code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [クロノス・クラウン - 「JFileChooser」のコンテキストメニューに独自メニューを追加する方法](http://crocro.com/news/20110706140746.html)
 - [DesktopPropertyの変更を監視する](https://ateraimemo.com/Swing/DesktopProperty.html)
 - [Containerの子Componentを再帰的にすべて取得する](https://ateraimemo.com/Swing/GetComponentsRecursively.html)

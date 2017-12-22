@@ -33,14 +33,18 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 - `new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);`
     - サイズが`1x1`で、透明な`Image`を表示
     - タイトルアイコンは非表示でもクリックするとタイトルメニューは開く
+    - タスクバーアイコンは黒い矩形になる
 - `toolkit.createImage(url_16x16transparent);`
     - 透過色で塗りつぶした`16x16`の`PNG`画像をアイコンとして使用
     - タイトルアイコンは非表示でもクリックするとタイトルメニューは開く
+    - タスクバーアイコンは黒い矩形になる
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Swing - Java Default Icon](https://community.oracle.com/thread/1381127)
+- [JFrameのIconを変更](https://ateraimemo.com/Swing/FrameIcon.html)
+    - タスクバーのアイコンは[Window#setIconImages(List) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImages-java.util.List-)で変更する必要がある
 
 <!-- dummy comment line for breaking list -->
 
