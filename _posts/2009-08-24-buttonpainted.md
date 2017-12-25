@@ -60,13 +60,18 @@ comments: true
 上記のサンプルでは、フォーカスの有無を表示するかなどの設定を切り替えて`JButton`の描画をテストしています。これらは`Look & Feel`によって効果が異なる場合があります。
 
 - [setFocusPainted](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setFocusPainted-boolean-)
-    - フォーカス状態を描画するか？
+    - フォーカス状態の描画
 - [setBorderPainted](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setBorderPainted-boolean-)
-    - ボーダー(フチの装飾)を描画するか？
+    - ボーダー(フチの装飾)の描画
 - [setContentAreaFilled](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setContentAreaFilled-boolean-)
-    - ボタンのコンテンツ領域(ボタンのテキストやアイコン以外の領域)を描画するか？
+    - ボタンのコンテンツ領域(ボタンのテキストやアイコン以外の領域)の描画
 - [setRolloverEnabled](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setRolloverEnabled-boolean-)
-    - ロールオーバー効果を描画するか？
+    - ロールオーバー効果の描画
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [AbstractButton (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html)
 
 <!-- dummy comment line for breaking list -->
 

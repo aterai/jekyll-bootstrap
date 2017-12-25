@@ -75,7 +75,7 @@ comments: true
 
 ## 参考リンク
 - [JListの項目をドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDList.html)
-    - コメントを参照
+    - 上記のリンク先コメントからこのサンプルは分離、作成した
 
 <!-- dummy comment line for breaking list -->
 
