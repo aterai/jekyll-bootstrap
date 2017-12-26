@@ -43,4 +43,9 @@ SpinnerNumberModel m2 = new SpinnerNumberModel(
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [SpinnerNumberModel (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SpinnerNumberModel.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

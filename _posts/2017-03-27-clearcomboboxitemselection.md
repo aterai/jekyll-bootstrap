@@ -36,7 +36,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JComboBox##setSelectedIndex(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComboBox.html#setSelectedIndex-int-)
+- [JComboBox#setSelectedIndex(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComboBox.html#setSelectedIndex-int-)
 - [JDK-4180057 JComboBox needs to document that setSelectedIndex( -1 ) means no selection - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4180057)
 
 <!-- dummy comment line for breaking list -->

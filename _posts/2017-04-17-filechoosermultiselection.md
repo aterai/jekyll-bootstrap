@@ -35,7 +35,7 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
     - `JFileChooser`のデフォルトは、複数ファイル選択不可
 - `setMultiSelectionEnabled(true)`
     - [JFileChooser#setMultiSelectionEnabled(boolean)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setMultiSelectionEnabled-boolean-)メソッドを使用して、複数ファイル選択を可能に設定
-    - 複数選択したファイルは、[JFileChooser##getSelectedFiles()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#getSelectedFiles--)で取得可能
+    - 複数選択したファイルは、[JFileChooser#getSelectedFiles()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#getSelectedFiles--)で取得可能
         - 未選択の場合は、`null`ではなく空のファイル配列(`new File[0]`)が返り値になるが、開くボタンをクリックしても`JFileChooser`は閉じない
     - デフォルトの`FileSelectionMode`は、`JFileChooser.FILES_ONLY`なので、<kbd>Ctrl+A</kbd>でファイルのみが選択される
         - `JFileChooser.FILES_ONLY`でもファイルが未選択の場合は、<kbd>Ctrl</kbd>+マウスクリックでディレクトリが複数選択できてしまう？
