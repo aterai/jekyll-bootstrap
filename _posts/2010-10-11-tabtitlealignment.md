@@ -16,7 +16,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTU2Jp4a6I/AAAAAAAAAms/x6g2ML8eyyQ/s800/TabTitleAlignment.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class MyTabbedPaneUI extends javax.swing.plaf.metal.MetalTabbedPaneUI {
+<pre class="prettyprint"><code>class MyTabbedPaneUI extends MetalTabbedPaneUI {
   @Override protected void layoutLabel(int tabPlacement,
                                        FontMetrics metrics, int tabIndex,
                                        String title, Icon icon,

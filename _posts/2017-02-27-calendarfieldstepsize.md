@@ -50,4 +50,9 @@ JSpinner spinner2 = new JSpinner(new SpinnerDateModel(d, null, null, Calendar.SE
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [SpinnerDateModel#getNextValue() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SpinnerDateModel.html#getNextValue--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

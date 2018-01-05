@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getClassLoader().getResource("example/test.png");
-//URL url = getClass().getResource("test.png");
+// URL url = getClass().getResource("test.png");
 JLabel icon = new JLabel(new ImageIcon(url));
 JLabel path = new JLabel(url.toString());
 </code></pre>
@@ -37,8 +37,8 @@ JLabel path = new JLabel(url.toString());
 `ClassLoader#getResource`メソッドを使用する場合は、以下のようにクラスパスからのエントリを使用します。このエントリは、相対パス風で頭に`/`は付けず、`/`区切りで記述します。
 
 <pre class="prettyprint"><code>getClass().getClassLoader().getResource("example/test.png");
-//ただし、getClass().getClassLoader().getResource("./example/test.png");
-//だとjar内にパッケージした時うまくいかない。
+// ただし、getClass().getClassLoader().getResource("./example/test.png");
+// だとjar内にパッケージした場合で失敗する
 </code></pre>
 
 - - - -
@@ -52,7 +52,7 @@ JLabel path = new JLabel(url.toString());
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>getClass().getResource("test.png"); //or MainPanel.class.getResource("test.png");
-//getClass().getClassLoader().getResource("example/test.png");と同じ
+// getClass().getClassLoader().getResource("example/test.png");と同じ
 </code></pre>
 
 - 絶対パス風(頭に`/`が付く)の場合
@@ -61,9 +61,9 @@ JLabel path = new JLabel(url.toString());
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>getClass().getResource("/test.png");
-//getClass().getClassLoader().getResource("test.png");と同じ
-//上記の相対パスと同じリソースを取得する場合は、
-//getClass().getResource("/example/test.png");としなくてはならない
+// getClass().getClassLoader().getResource("test.png");と同じ
+// 上記の相対パスと同じリソースを取得する場合は、
+// getClass().getResource("/example/test.png");としなくてはならない
 </code></pre>
 
 - - - -

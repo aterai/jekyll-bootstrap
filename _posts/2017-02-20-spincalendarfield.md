@@ -27,7 +27,7 @@ comments: true
 
 ## 解説
 - 上: `Default SpinnerDateModel`
-    - スピンボタンをクリックすると、`Caret`が存在するフィールド値が増減する
+    - スピンボタンをクリックすると、`Caret`が存在するフィールドの値が増減する
 - 下: `Override SpinnerDateModel#setCalendarField(...)`
     - スピンボタンをクリックすると、`Caret`が存在する位置には無関係に、初期値で指定した`Calendar.SECOND`のフィールド値が増減する
 

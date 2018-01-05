@@ -33,8 +33,8 @@ DragSource.getDefaultDragSource().addDragSourceMotionListener(new DragSourceMoti
 ドラッグ中のカーソル位置取得には、`MouseMotionListener`を使用する方法もありますが、このサンプルのような`TransferHandler`を使ったドラッグでは`MouseMotionListener`でマウスイベントを取得することができないので、`DefaultDragSource`に`DragSourceMotionListener`を追加してドラッグ中のカーソル位置を取得しています。
 
 - 注:
-    - `DragSourceDragEvent#getLocation()`で取得した位置は、スクリーン座標系なので、そのまま`Window#setLocation(...)`で使用可能
-    - `Point pt = tgtLabel.getLocation();`で取得したドラッグ対象`JLabel`の位置は、親コンポーネントの座標系なので、`SwingUtilities.convertPointToScreen(pt, parent);`で変換する必要がある
+    - `DragSourceDragEvent#getLocation()`で取得した位置はスクリーン座標系なので、そのまま`Window#setLocation(...)`メソッドで使用可能
+    - `Point pt = tgtLabel.getLocation();`で取得したドラッグ対象`JLabel`の位置は親コンポーネントの座標系なので、`SwingUtilities.convertPointToScreen(pt, parent);`で変換する必要がある
 
 <!-- dummy comment line for breaking list -->
 

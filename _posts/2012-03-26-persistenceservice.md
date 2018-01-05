@@ -90,10 +90,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`PersistenceService`で確保したファイルに、`HashMap<String, Serializable>`に格納した`JFrame`の位置、サイズを`XMLEncoder`、`XMLDecoder`を使って読み書きしています。
+上記のサンプルでは、`JFrame`の位置とサイズを`PersistenceService`で確保したファイルに`XMLEncoder`で保存、`XMLDecoder`でそのファイルから値を復元しています。
 
 - - - -
-`Windows 7`、`JDK 1.7.0_03`の環境では、`C:\Users\(user)\AppData\LocalLow\Sun\Java\Deployment\cache\6.0\muffin`以下に`muf`ファイルが作成されるようです。
+`Windows`環境では、`C:\Users\(user)\AppData\LocalLow\Sun\Java\Deployment\cache\6.0\muffin`以下に`muf`ファイルが作成されるようです。
 
 <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;java version="1.7.0_03" class="java.beans.XMLDecoder"&gt;
@@ -208,8 +208,7 @@ public class MainPanel extends JPanel {
 
 ## 参考リンク
 - [JWS javax.jnlp.* API demos](http://pscode.org/jws/api.html)
-- [PersistenceService](http://docs.oracle.com/javase/jp/6/technotes/guides/javaws/developersguide/examples.html#PersistenceService)
-- [PersistenceService Demo](http://www.finnw.me.uk/persistencetest.html)
+- [PersistenceServiceサービスの使用](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/javaws/developersguide/examples.html#PersistenceService)
 - [JFrameの位置・サイズを記憶する](https://ateraimemo.com/Swing/Preferences.html)
 - [JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)
 

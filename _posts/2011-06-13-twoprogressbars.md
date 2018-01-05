@@ -16,12 +16,12 @@ comments: true
 {% download https://lh6.googleusercontent.com/-S6ko35_DIi8/TfWPa08dHvI/AAAAAAAAA9I/MNhC-0LF8YQ/s800/TwoProgressBars.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>enum Component { TOTAL, FILE, LOG }
+<pre class="prettyprint"><code>enum ComponentType { TOTAL, FILE, LOG }
 class Progress {
   public final Object value;
-  public final Component component;
-  public Progress(Component component, Object value) {
-    this.component = component;
+  public final ComponentType componentType;
+  public Progress(ComponentType componentType, Object value) {
+    this.componentType = componentType;
     this.value = value;
   }
 }
@@ -30,8 +30,8 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
   @Override public String doInBackground() {
     int current = 0;
     int lengthOfTask = 12; //filelist.size();
-    publish(new Progress(Component.LOG, "Length Of Task: " + lengthOfTask));
-    publish(new Progress(Component.LOG, "\n------------------------------\n"));
+    publish(new Progress(ComponentType.LOG, "Length Of Task: " + lengthOfTask));
+    publish(new Progress(ComponentType.LOG, "\n------------------------------\n"));
     while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
       if (!bar1.isDisplayable()) {
         return "Disposed";
@@ -41,11 +41,11 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
       } catch (InterruptedException ie) {
         return "Interrupted";
       }
-      publish(new Progress(Component.LOG, "*"));
-      publish(new Progress(Component.TOTAL, 100 * current / lengthOfTask));
+      publish(new Progress(ComponentType.LOG, "*"));
+      publish(new Progress(ComponentType.TOTAL, 100 * current / lengthOfTask));
       current++;
     }
-    publish(new Progress(Component.LOG, "\n"));
+    publish(new Progress(ComponentType.LOG, "\n"));
     return "Done";
   }
   private final Random r = new Random();
@@ -61,7 +61,7 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
   }
   @Override protected void process(List&lt;Progress&gt; chunks) {
     for (Progress s: chunks) {
-      switch (s.component) {
+      switch (s.componentType) {
         case TOTAL: bar1.setValue((Integer) s.value); break;
         case FILE:  bar2.setValue((Integer) s.value); break;
         case LOG:   area.append((String) s.value); break;

@@ -69,4 +69,9 @@ comments: true
 ## 解説
 対象コンポーネント上にマウスカーソルが乗ったことをマウスリスナーで検知し、`Border`をアニメーションさせることで、波紋状の効果を描画しています。
 
+## 参考リンク
+- [EmptyBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/EmptyBorder.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

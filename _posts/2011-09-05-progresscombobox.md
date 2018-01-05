@@ -48,10 +48,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`index`が`-1`(アイテムリストのインデックスではない)の場合、`JProgressBar`を返すセルレンダラーを`JComboBox`に設定して進捗を表示しています。
+上記のサンプルでは、`index`が`-1`(アイテムリストのインデックスではない)の場合、`JProgressBar`を返すリストセルレンダラーを`JComboBox`に設定して進捗を表示しています。
 
 - - - -
-ロードボタンが押されたら、以下のような`SwingWorker`で、`JComboBox`にアイテムを追加しています。
+ロードボタンが押されたら、以下のような`SwingWorker`で`JComboBox`にアイテムを追加しています。
 
 <pre class="prettyprint"><code>button = new JButton(new AbstractAction("load") {
   @Override public void actionPerformed(ActionEvent e) {
@@ -97,5 +97,10 @@ comments: true
   }
 });
 </code></pre>
+
+## 参考リンク
+- [DefaultListCellRenderer (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultListCellRenderer.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
