@@ -104,8 +104,14 @@ comments: true
 }
 </code></pre>
 
+## 参考リンク
+- [JDK-4249731 JComboBox (Windows L&F), right mouse click selects in menu - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4249731)
+    - 要望が矛盾しているとして却下されているが、もしかしたら「`Windows`環境の標準動作に合わせて、`WindowsLookAndFeel`の`JComboBox`では右クリックしてもドロップダウンリストを閉じないようにして欲しい」との意味だったのかもしれない
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
-- ドロップダウンリストにスクロールバーが表示されていない場合、ホイールを回すとポップアップが閉じてしまうのも地味に困る…。[Bug ID: 6982607 JComboBox closes on MouseWheelEvent scrolling if no scroll bar is visible](https://bugs.openjdk.java.net/browse/JDK-6982607) -- *aterai* 2012-04-24 (火) 18:28:39
+- ドロップダウンリストにスクロールバーが表示されていない場合、ホイールを回すとポップアップが閉じてしまうのも地味に困る…。[JDK-8033069 mouse wheel scroll closes combobox popup - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8033069) -- *aterai* 2012-04-24 (火) 18:28:39
 
 <!-- dummy comment line for breaking list -->
 

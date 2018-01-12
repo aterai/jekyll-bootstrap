@@ -62,19 +62,16 @@ frame.getContentPane().add(p);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `MetalLookAndFeel`のみ`LookAndFeel#getSupportsWindowDecorations()`が`true`
+- `MetalLookAndFeel`のみ`LookAndFeel#getSupportsWindowDecorations()`は`true`を返す
     - `LookAndFeel`を変更する場合は、`ContentPane`以下から更新することで、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`が無効にならないようにする必要がある
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>for (Window window: Frame.getWindows()) {
-  if (window instanceof RootPaneContainer) {
-    SwingUtilities.updateComponentTreeUI(((RootPaneContainer) window).getContentPane());
-  }
-}
+        
+        <pre class="prettyprint"><code>for (Window window: Frame.getWindows()) {
+          if (window instanceof RootPaneContainer) {
+            SwingUtilities.updateComponentTreeUI(((RootPaneContainer) window).getContentPane());
+          }
+        }
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JInternalFrameをJFrameとして表示する](https://ateraimemo.com/Swing/InternalFrameTitleBar.html)
 - [JFrameのタイトルバーなどの装飾を独自のものにカスタマイズする](https://ateraimemo.com/Swing/CustomDecoratedFrame.html)
 

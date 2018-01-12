@@ -37,11 +37,13 @@ stream(chooser)
     - `JDK1.8`で導入された`Stream`を使用
         - 以下のように`flatMap`を使用する方法もある
             
-            <pre class="prettyprint"><code>public static Stream&lt;Component&gt; stream5(Container parent) {
+            <pre class="prettyprint"><code>// flatMap + Stream.concat(...)
+            public static Stream&lt;Component&gt; stream5(Container parent) {
               return Arrays.stream(parent.getComponents())
                 .filter(Container.class::isInstance).map(Container.class::cast)
                 .flatMap(c -&gt; Stream.concat(Stream.of(c), stream5(c)));
             }
+            // Arrays.stream(...) + flatMap
             public static Stream&lt;Component&gt; stream6(Container parent) {
               return Stream.concat(Stream.of(parent), Arrays.stream(parent.getComponents())
                 .filter(Container.class::isInstance).map(Container.class::cast)

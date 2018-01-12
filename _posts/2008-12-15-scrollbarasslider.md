@@ -24,7 +24,7 @@ int extent = 20;
 int min    = 0;
 int max    = extent * 10; //200
 int value  = 50;
-final JScrollBar scrollbar = new JScrollBar(
+JScrollBar scrollbar = new JScrollBar(
   JScrollBar.HORIZONTAL, value, extent, min, max + extent);
 scrollbar.setUnitIncrement(step);
 scrollbar.getModel().addChangeListener(new ChangeListener() {
@@ -33,9 +33,7 @@ scrollbar.getModel().addChangeListener(new ChangeListener() {
     spinner.setValue(m.getValue());
   }
 });
-final JSpinner spinner = new JSpinner(
-  new SpinnerNumberModel(value, min, max, step));
-//...
+JSpinner spinner = new JSpinner(new SpinnerNumberModel(value, min, max, step));
 </code></pre>
 
 ## 解説
@@ -43,7 +41,6 @@ final JSpinner spinner = new JSpinner(
 
 - `JScrollBar`に設定する最大値は、ノブ(`extent`はノブの幅)の右端ではなく左端になるように調整する必要がある
     - `JSpinner`の最大値とは異なり、`max`+`extent`の値が`JScrollBar`の最大値となる
-    - 垂直なら上端
 
 <!-- dummy comment line for breaking list -->
 

@@ -92,4 +92,7 @@ g2d.drawLine(w - 1, 3, w - 1, 4);
 g2d.dispose();
 </code></pre>
 
+## 参考リンク
+[PixelGrabber (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/image/PixelGrabber.html)
+
 ## コメント

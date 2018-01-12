@@ -44,8 +44,6 @@ comments: true
 ## 解説
 上記のサンプルでは、各`JButton`が押されるたびに、対象パネルの展開(子コンポーネントの追加)と折り畳み(子コンポーネントの削除)を行っています。同時に`BorderLayout`の`NORTH`、`CENTER`、`SOUTH`に各パネルを振り分けを行い、展開されるパネル一つだけが推奨サイズ(`PreferredSize`)が無視されて任意の高さに拡張される`CENTER`に配置されます。
 
-- - - -
-[L2FProd.com - Common Components](http://common.l2fprod.com/) にある`JOutlookBar`で、アニメーション付きでパネルの展開や折り畳みが可能です。ソースも公開されているので参考にしてみてください。
 
 ## 参考リンク
 - [JPanelをアコーディオン風に展開](https://ateraimemo.com/Swing/AccordionPanel.html)

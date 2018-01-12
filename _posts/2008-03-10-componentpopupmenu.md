@@ -74,10 +74,6 @@ textArea.setComponentPopupMenu(new TextComponentPopupMenu());
 - - - -
 `JPopupMenu#show(Component, int, int)`のオーバーライドではなく、`PopupMenuListener`を使用する方法もあります。
 
-- 注: `PopupMenuEvent`からはクリック位置の取得ができないので、`JTabbedPane`などでどのタブの上でポップアップが表示されるかなどを取得したい場合[JTabbedPaneでタブを追加削除](https://ateraimemo.com/Swing/TabbedPane.html)は、多少手間が掛かる
-
-<!-- dummy comment line for breaking list -->
-
 <pre class="prettyprint"><code>JPopupMenu popup = new JPopupMenu();
 final Action cutAction = new DefaultEditorKit.CutAction();
 final Action copyAction = new DefaultEditorKit.CopyAction();
@@ -114,6 +110,12 @@ popup.addPopupMenuListener(new PopupMenuListener() {
 });
 textArea.setComponentPopupMenu(popup);
 </code></pre>
+
+- 注: `PopupMenuEvent`からはマウスでクリックした位置を取得することができない
+    - このため、`JTabbedPane`などでどのタブの上でポップアップが表示されるかなどを取得したい場合は`JPopupMenu#show(...)`をオーバーライドする必要がある
+    - 参考: [JTabbedPaneでタブを追加削除](https://ateraimemo.com/Swing/TabbedPane.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JPopupMenuの取得を親に委譲](https://ateraimemo.com/Swing/InheritsPopupMenu.html)

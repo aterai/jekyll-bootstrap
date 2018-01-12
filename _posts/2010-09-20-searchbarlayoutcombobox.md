@@ -88,11 +88,11 @@ comments: true
 ## 解説
 上記のサンプルでは、`JComboBox`が使用する`LayoutManager`を以下のように変更しています。
 
-- 元の`ArrowButton`は、左側に表示
+- 元の`ArrowButton`は、左側に移動
     - `JComboBox#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);`とした場合のコードを流用
-    - アイコンも検索エンジンのものと、下向きの三角の二つを表示するように設定
-- `LoupeButton`として、新たに`JButton`を追加し、右側に配置
-- 常に編集可能として、`JTextField`を中央に配置
+    - 検索サイトのアイコンと下向きの三角の二つを表示するように設定
+- `LoupeButton`として新たに`JButton`を追加し、右側に配置
+- 常に編集可能として`JTextField`を中央に配置
 
 <!-- dummy comment line for breaking list -->
 
@@ -127,6 +127,11 @@ comments: true
   return popupMenuListener;
 }
 </code></pre>
+
+## 参考リンク
+- [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
 - `editor`にフォーカスがある場合、左のボタンをクリックしてもポップアップメニューが開かないバグを修正。 -- *aterai* 2010-09-24 (金) 20:20:42

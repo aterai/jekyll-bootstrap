@@ -50,6 +50,7 @@ comments: true
 
 ## 参考リンク
 - [JTreeで目次を作成する](https://ateraimemo.com/Swing/TableOfContentsTree.html)
+- [JTreeでノード階層の深さを取得する](https://ateraimemo.com/Swing/TreeNodeMaxLevel.html)
 
 <!-- dummy comment line for breaking list -->
 
