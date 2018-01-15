@@ -38,7 +38,9 @@ if (c instanceof JTextField) {
 1. `JComboBox` [`setEditable(false)`, `default`]
 
 - スクリーンショット左: `JDK 1.6.0`、`WindowsLookAndFeel`
-    - 各入力欄の幅は揃っている
+    - `setColumns(20)`を設定した入力欄の幅は揃っている
+    - `JComboBox`で`setColumns`を使用していないデフォルトの状態では、モデル中のアイテムから最大の幅が適用される
+        - モデルが空の場合は[JComboBoxのセルサイズを決定するためのプロトタイプ値を設定する](https://ateraimemo.com/Swing/PrototypeDisplayValue.html)のようにプロトタイプ値を設定しておく必要がある
 - スクリーンショット右: `JDK 1.5.0_10`、`WindowsLookAndFeel`
     - 各入力欄の幅、高さ、余白が不揃い
         - `JTextField`の左内余白が広すぎる

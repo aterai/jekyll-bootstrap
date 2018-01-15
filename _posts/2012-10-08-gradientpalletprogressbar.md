@@ -92,7 +92,7 @@ comments: true
 上記のサンプルでは高さ`1px`の画像をパレットとして予め作成し、それから`JProgressBar`の進捗に応じた色を取得して、`BasicProgressBarUI#paintDeterminate(...)`内で使用することで、色の変更を行なっています。
 
 - パレット用の画像作成は、[JSliderのスタイルを変更する](https://ateraimemo.com/Swing/GradientTrackSlider.html)と同じ
-- 注: ~~`VERTICAL`と、~~ 不確定モードには未対応
+- 注: 不確定モードには未対応
 
 <!-- dummy comment line for breaking list -->
 
