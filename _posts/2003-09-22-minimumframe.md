@@ -84,7 +84,7 @@ public class MaximumSizeTest {
         Point mouse = MouseInfo.getPointerInfo().getLocation();
         if (r2 != null &amp;&amp; (mouse.getX() &gt; loc.getX() + MAX ||
                            mouse.getY() &gt; loc.getY() + MAX)) {
-          r2.mouseRelease(InputEvent.BUTTON1_MASK);
+          r2.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
           frame.setSize(Math.min(MAX, frame.getWidth()),
                         Math.min(MAX, frame.getHeight()));
         }

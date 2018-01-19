@@ -63,4 +63,9 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JTableが使用するBooleanCellEditorの背景色を変更](https://ateraimemo.com/Swing/BooleanCellEditor.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

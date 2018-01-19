@@ -37,19 +37,19 @@ combo2.setRenderer(new DefaultListCellRenderer() {
 
 ## 解説
 - `setPreferredSize`
-    - レンダラーに`setPreferredSize(...)`で高さを設定
+    - セルレンダラーに`setPreferredSize(...)`メソッドで高さを設定
         
         <pre class="prettyprint"><code>JComboBox combo1 = new JComboBox(items);
         JLabel renderer1 = (JLabel) combo1.getRenderer();
         renderer1.setPreferredSize(new Dimension(0, 32));
 </code></pre>
 - `getListCellRendererComponent`
-    - レンダラーの`getListCellRendererComponent(...)`内で、`index`が`0`以上の場合は`getPreferredSize()`で取得する高さを切り替える
+    - セルレンダラーの`getListCellRendererComponent(...)`メソッド内で、`index`が`0`以上の場合は`getPreferredSize()`メソッドで取得する高さを切り替える
 
 <!-- dummy comment line for breaking list -->
 
 - `html`
-    - `html`タグを使用して高さを指定
+    - `html`タグを使用してセルレンダラーに高さを指定
         
         <pre class="prettyprint"><code>JComboBox&lt;String&gt; combo3 = new JComboBox&lt;&gt;(items);
         combo3.setRenderer(new DefaultListCellRenderer() {
@@ -65,7 +65,7 @@ combo2.setRenderer(new DefaultListCellRenderer() {
         });
 </code></pre>
 - `icon`
-    - 幅ゼロのアイコンを使用して高さを指定
+    - 幅ゼロのアイコンを使用してセルレンダラーに高さを指定
         
         <pre class="prettyprint"><code>JComboBox&lt;String&gt; combo4 = new JComboBox&lt;&gt;(items);
         combo4.setRenderer(new DefaultListCellRenderer() {

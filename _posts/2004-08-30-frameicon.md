@@ -25,7 +25,7 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 ## 解説
 `JFrame#setIconImage`メソッドで`JFrame`のタイトルバーなどに表示される画像を設定しています。
 
-- サンプル画像として[GIMP](http://www.gimp.org/)を使って作成したサイズ`16x16`の透過`PNG`を使用
+- サンプル画像として[GIMP](https://www.gimp.org/)を使って作成したサイズ`16x16`の透過`PNG`を使用
 - `JDK 1.6.0`から、[JFrame#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFrame.html#setIconImage-java.awt.Image-)は、[Window#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImage-java.awt.Image-)を使用するようになった
 - また、`JDK 1.6.0`から[Window#setIconImages(List<? extends Image>)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImages-java.util.List-)で、複数のイメージを設定可能になった
     - 同サイズのイメージがある場合は、先頭から検索して最初のイメージが使用される
@@ -39,8 +39,8 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 <pre class="prettyprint"><code>Toolkit tk = Toolkit.getDefaultToolkit();
 frame.setIconImage(tk.createImage(MainPanel.class.getResource("RECYCLE BIN - EMPTY_16x16-32.png")));
 frame.setIconImages(java.util.Arrays.asList(
-    tk.createImage(MainPanel.class.getResource("ATTACHMENT_16x16-32.png")),
-    tk.createImage(MainPanel.class.getResource("wi0054-32.png"))));
+  tk.createImage(MainPanel.class.getResource("ATTACHMENT_16x16-32.png")),
+  tk.createImage(MainPanel.class.getResource("wi0054-32.png"))));
 </code></pre>
 
 - - - -
@@ -65,7 +65,7 @@ public class TransparentIconTest {
     JFrame f = new JFrame();
     f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     ImageIcon icon = new ImageIcon(
-        TransparentIconTest.class.getResource("16x16.png"));
+      TransparentIconTest.class.getResource("16x16.png"));
     f.setIconImage(icon.getImage());
     f.setSize(320, 240);
     f.setLocationRelativeTo(null);
@@ -76,7 +76,7 @@ public class TransparentIconTest {
 
 ## 参考リンク
 - [java - Sizes of frame icons used in Swing - Stack Overflow](https://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
-- [GIMP](http://www.gimp.org/)
+- [GIMP](https://www.gimp.org/)
 
 <!-- dummy comment line for breaking list -->
 
