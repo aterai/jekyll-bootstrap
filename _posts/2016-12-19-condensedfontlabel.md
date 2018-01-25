@@ -36,4 +36,9 @@ textArea.setFont(font);
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [Font#deriveFont(int, AffineTransform) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Font.html#deriveFont-int-java.awt.geom.AffineTransform-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
