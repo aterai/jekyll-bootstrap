@@ -20,7 +20,11 @@ comments: true
 </code></pre>
 
 ## 解説
-`JTable`のセルレンダラーとして`DefaultTableCellRenderer`(`JLabel`を継承)を使用し、これに複数の行が存在する`Html`テキストを表示する場合、行揃え(`VerticalAlignment`)に`SwingConstants.TOP`以外が設定されていると、マウスドラッグによるセル選択で描画が乱れることがあります。
+- `JTable`のセルレンダラーとして`DefaultTableCellRenderer`(`JLabel`を継承)を使用し、複数の行が存在する`Html`テキストを表示
+    - 行揃え(`VerticalAlignment`)に`SwingConstants.TOP`以外を設定
+    - マウスドラッグによるセル選択で描画が乱れる場合がある
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [java - Table cells with HTML strings inconsistently rendered as multiline - Stack Overflow](https://stackoverflow.com/questions/25043191/table-cells-with-html-strings-inconsistently-rendered-as-multiline)

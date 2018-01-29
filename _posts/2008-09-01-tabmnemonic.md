@@ -25,22 +25,25 @@ tab.setDisplayedMnemonicIndexAt(3, 0);
 上記のサンプルコードは、例えばタブタイトルの先頭文字が`B`のタブに<kbd>Alt+B</kbd>でフォーカスが移動するように、`JTabbedPane#setMnemonicAt(...)`メソッドを使用して`Mnemonic`を設定しています。
 また、タブタイトルの先頭文字(`B`)にアンダーラインが入るように`JTabbedPane#setDisplayedMnemonicIndexAt(...)`メソッドで設定しています。
 
-- - - -
-- `JDK 6`以降でタブに`JComponent`を追加する場合、`JTabbedPane#setDisplayedMnemonicIndexAt(...)`メソッドでは`Mnemonic`にアンダーラインは引かれないので、追加するコンポーネント側でアンダーラインを引くよう設定する
-    
-    <pre class="prettyprint"><code>int index = tab.getTabCount();
-    String tabTitle = "label(0)";
-    JPanel p = new JPanel(new BorderLayout());
-    JLabel label = new JLabel(tabTitle);
-    JButton button = new JButton("x");
-    p.add(label,  BorderLayout.WEST);
-    p.add(button, BorderLayout.EAST);
-    tab.addTab(tabTitle, new JTree());
-    tab.setTabComponentAt(index, p);
-    tab.setMnemonicAt(index, KeyEvent.VK_0);
-    label.setDisplayedMnemonic(KeyEvent.VK_0);
+- `JDK 6`以降でタブに`JComponent`を追加する場合
+    - `JTabbedPane#setDisplayedMnemonicIndexAt(...)`メソッドでは`Mnemonic`にアンダーラインは引かれないので、追加するコンポーネント側でアンダーラインを引くための設定をする必要がある
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>int index = tab.getTabCount();
+String tabTitle = "label(0)";
+JPanel p = new JPanel(new BorderLayout());
+JLabel label = new JLabel(tabTitle);
+JButton button = new JButton("x");
+p.add(label,  BorderLayout.WEST);
+p.add(button, BorderLayout.EAST);
+tab.addTab(tabTitle, new JTree());
+tab.setTabComponentAt(index, p);
+tab.setMnemonicAt(index, KeyEvent.VK_0);
+label.setDisplayedMnemonic(KeyEvent.VK_0);
 </code></pre>
-- * 参考リンク [#reference]
+
+## 参考リンク
 - [JTabbedPane#setMnemonicAt(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setMnemonicAt-int-int-)
 - [JTabbedPane#setDisplayedMnemonicIndexAt(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setDisplayedMnemonicIndexAt-int-int-)
 

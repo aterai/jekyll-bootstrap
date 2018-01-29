@@ -47,7 +47,7 @@ class TranslucentTreeCellRenderer extends TransparentTreeCellRenderer {
 
 ## 解説
 - 左: `TreeCellRenderer`を半透明化
-    - `JTree#setOpaque(false);`として`JTree`や`JScrollPane`などを透明化
+    - `setOpaque(false)`で`JTree`と`JScrollPane`を透明化
     - `DefaultTreeCellRenderer#getBackgroundNonSelectionColor(...)`をオーバーライドしてノードの背景色を透明化
     - `DefaultTreeCellRenderer#getBackgroundSelectionColor(...)`をオーバーライドしてノードの選択色を半透明化
 

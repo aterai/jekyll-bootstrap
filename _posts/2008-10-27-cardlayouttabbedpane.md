@@ -52,8 +52,7 @@ comments: true
 </code></pre>
 
 ## 解説
-このサンプルでは、`CardLayout`と`JRadioButton`を使用して`JTabbedPane`風のコンポーネントを作成しています。`CardLayout`でパネルを切り替えるためのタブには`UI`を変更してチェックアイコンを非表示にした`JRadioButton`を使用し、これらのタブを配置するタブエリア(`JPanel`)のレイアウトマネージャーに`GridLayout`を適用して、すべてのタブサイズが均等になるように設定しています。
-
+このサンプルでは、`CardLayout`と`JRadioButton`を使用して`JTabbedPane`風のコンポーネントを作成しています。`CardLayout`でパネルを切り替えるためのタブとして`UI`を変更してチェックアイコンを非表示にした`JRadioButton`を使用し、これらのタブを配置するタブエリア(`JPanel`)のレイアウトマネージャーに`GridLayout`を適用して、すべてのタブサイズが均等になるように設定しています。
 
 - - - -
 `CardLayout`+`JTableHeader`を使用したサンプルは、[JTableHeaderで作成したタブエリアでCardLayoutのコンテナを切り替える](https://ateraimemo.com/Swing/TableHeaderTabArea.html)に移動しました。

@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>InputMap im = table.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-KeyStroke tab   = KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0);
+KeyStroke tab = KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0);
 KeyStroke enter = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0);
 im.put(tab, im.get(enter));
 </code></pre>
@@ -28,7 +28,7 @@ im.put(tab, im.get(enter));
 - - - -
 逆遷移の<kbd>Shift+Tab</kbd>などに対応する場合は、修飾子を`0`ではなく、`InputEvent.SHIFT_DOWN_MASK`にした`KeyStroke`を`InputMap`に設定します。
 
-<pre class="prettyprint"><code>KeyStroke stab   = KeyStroke.getKeyStroke(KeyEvent.VK_TAB, InputEvent.SHIFT_DOWN_MASK);
+<pre class="prettyprint"><code>KeyStroke stab = KeyStroke.getKeyStroke(KeyEvent.VK_TAB, InputEvent.SHIFT_DOWN_MASK);
 KeyStroke senter = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, InputEvent.SHIFT_DOWN_MASK);
 </code></pre>
 

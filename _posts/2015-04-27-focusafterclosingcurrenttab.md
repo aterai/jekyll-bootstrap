@@ -45,4 +45,9 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JTabbedPane (Java Platform SE 8 )](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#getSelectedIndex--)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
