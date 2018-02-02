@@ -33,11 +33,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、スパンの必要サイズを計算する`calculateMinorAxisRequirements`メソッドなどをオーバーライドして、行折り返し段落のビュー(`ParagraphView`)で折り返しが発生しないようにしています。
+上記のサンプルでは、スパンの必要サイズを計算する`calculateMinorAxisRequirements`メソッドなどをオーバーライドして、行折り返し段落のビュー(`ParagraphView`)で折り返しが発生しないように設定しています。
 
-`JEditorPane`や`JTextPane`といった`StyledDocument`をモデルにしているテキストコンポーネントに極めて長い行をペーストした場合、表示が更新されなくなりますが、折り返しできなくしてしまうと多少ましになるようです。
-
-
+- `JEditorPane`や`JTextPane`といった`StyledDocument`をモデルにしているテキストコンポーネントに極めて長い行をペーストすると表示が更新されなくなる場合がある
+    - 折り返し不可に設定するとこの動作が緩和される？
 - `JTextArea`でも行を極めて長くしてしまうと、カーソルキーの移動などで異常に時間がかかる場合がある
     - 例えば、このサンプルの`JTextArea`で、カーソルを末尾(`EOF`)に移動し、一行目(非常に長い行)に<kbd>Up</kbd>キーで移動すると発生する
     - [Swing - Long last line in wrappable textarea hangs GUI (bug in java?)](https://community.oracle.com/thread/1367888)
@@ -45,11 +44,10 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-以下のような方法もあります。
 - [Swing - Disabling word wrap for JTextPane](https://community.oracle.com/thread/1353861)
-    - `BoxView#layout(...)`をオーバーライド
+    - `BoxView#layout(...)`をオーバーライドして折り返しを不可に設定
 - [Non Wrapping(Wrap) TextPane : TextField : Swing JFC : Java examples (example source code) Organized by topic](http://www.java2s.com/Code/Java/Swing-JFC/NonWrappingWrapTextPane.htm)
-    - `JTextPane#getScrollableTracksViewportWidth()`をオーバーライド
+    - `JTextPane#getScrollableTracksViewportWidth()`をオーバーライドして折り返しを不可に設定
 
 <!-- dummy comment line for breaking list -->
 

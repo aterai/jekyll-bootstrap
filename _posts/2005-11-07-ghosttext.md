@@ -97,7 +97,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タイトルを変更?: `Input Hint`、`Placeholder`、`Watermark` ... -- *aterai* 2009-11-17 (火) 15:48:18
-- `LayerUI#paint(...)`中で、子コンポーネントの`repaint()`を呼び出して再描画が無限ループしていたバグを修正。 -- *aterai* 2014-07-26 (土) 04:51:11
+- タイトルを変更メモ: `Input Hint`、`Placeholder`、`Watermark` ... -- *aterai* 2009-11-17 (火) 15:48:18
+- `LayerUI#paint(...)`中で子コンポーネントの`repaint()`を呼び出して再描画が無限ループするバグを修正。 -- *aterai* 2014-07-26 (土) 04:51:11
 
 <!-- dummy comment line for breaking list -->

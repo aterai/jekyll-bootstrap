@@ -45,6 +45,7 @@ field2.setFormatterFactory(new DefaultFormatterFactory(formatter2));
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [MaskFormatter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/MaskFormatter.html)
 - [JDK-6462028 MaskFormatter API documentation refers to getDisplayValue - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6462028)
 
 <!-- dummy comment line for breaking list -->

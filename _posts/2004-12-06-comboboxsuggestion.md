@@ -127,9 +127,11 @@ field.addKeyListener(new ComboKeyHandler(combo));
 
 <!-- dummy comment line for breaking list -->
 
-`JComboBox#showPopup()`と`JComboBox#hidePopup()`(それぞれ、`JComboBox#setPopupVisible`メソッドをラップしているだけ)を使って、候補のポップアップメニュー表示を制御します。
+- - - -
+- `JComboBox#showPopup()`と`JComboBox#hidePopup()`を使って、候補のポップアップメニュー表示を制御
+    - 候補を表示するとき、`JComboBox#setSelectedIndex(-1)`で項目の選択を一旦クリアしないと動作がおかしくなる場合がある
 
-`JComboBox#setSelectedIndex(-1)`で、項目の選択をクリアしないと動作がおかしくなる場合があります。
+<!-- dummy comment line for breaking list -->
 
 - - - -
 `JComboBox`ではなく、`SwingSet3`の[JHistoryTextField.java](http://java.net/projects/swingset3/sources/svn/content/trunk/SwingSet3/src/com/sun/swingset3/demos/textfield/JHistoryTextField.java) のように、`JTextField`+`JPopupMenu`を使用することもできますが、画面の下側で候補数が変更された場合の`JPopupMenu`の位置更新(気にしなければ問題無し)が面倒です。`JTextField`風に見せかけたいだけなら、以下のような`ArrowButton`を非表示にする方法もあります。

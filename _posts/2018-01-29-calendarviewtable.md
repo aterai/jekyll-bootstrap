@@ -51,7 +51,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、モデルに`Java 8`から`java.time`パッケージに追加された`LocalDate`を使用し、`JTable`に月のカレンダーを表示しています。
+上記のサンプルでは、`Java 8`から`java.time`パッケージに追加された`LocalDate`を`JTable`のモデルとして使用し、月のカレンダーを表示しています。
 
 - [WeekFields#getFirstDayOfWeek()](https://docs.oracle.com/javase/jp/8/docs/api/java/time/temporal/WeekFields.html#getFirstDayOfWeek--)メソッドで`Locale`に応じた週の最初の曜日を取得して、`JTable`の`0`列目を設定
     - 例: フランスと`ISO-8601`標準では月曜日が週の最初の曜日になる
@@ -96,11 +96,12 @@ comments: true
 </code></pre>
 
 - - - -
-- `JTable`ではなく、`JList`を使用すると週を跨いだ日付の範囲選択が可能
+- `JTable`ではなく、`JList`を使用すると週を跨いだ日付の範囲選択(上下キー)が可能
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>import java.awt.*;
+import java.awt.event.*;
 import java.time.*;
 import java.time.format.*;
 import java.time.temporal.*;
@@ -108,21 +109,52 @@ import java.util.*;
 import javax.swing.*;
 
 public class CalendarViewListTest {
+  private final Dimension size = new Dimension(40, 20);
   private final JLabel monthLabel = new JLabel("", SwingConstants.CENTER);
-  private final JList&lt;LocalDate&gt; monthList = new JList&lt;&gt;();
+  private final JList&lt;LocalDate&gt; monthList = new JList&lt;LocalDate&gt;() {
+    @Override public void updateUI() {
+      setCellRenderer(null);
+      super.updateUI();
+      setLayoutOrientation(JList.HORIZONTAL_WRAP);
+      setVisibleRowCount(6);
+      setFixedCellWidth(size.width);
+      setFixedCellHeight(size.height);
+      setCellRenderer(new CalendarListRenderer&lt;&gt;());
+      getSelectionModel().setSelectionMode(
+          ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+    }
+  };
   private final LocalDate realLocalDate = LocalDate.now();
   private LocalDate currentLocalDate;
 
   public JComponent makeUI() {
-    Dimension size = new Dimension(40, 20);
+    InputMap im = monthList.getInputMap(JComponent.WHEN_FOCUSED);
+    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0), "selectNextIndex");
+    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0), "selectPreviousIndex");
 
-    monthList.setLayoutOrientation(JList.HORIZONTAL_WRAP);
-    monthList.setVisibleRowCount(6);
-    monthList.setFixedCellWidth(size.width);
-    monthList.setFixedCellHeight(size.height);
-    monthList.setCellRenderer(new CalendarTableRenderer&lt;LocalDate&gt;());
-    monthList.getSelectionModel().setSelectionMode(
-        ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+    monthList.getActionMap().put("selectPreviousIndex", new AbstractAction() {
+      @Override public void actionPerformed(ActionEvent e) {
+        int index = monthList.getLeadSelectionIndex();
+        if (index &gt; 0) {
+          monthList.setSelectedIndex(index - 1);
+        } else {
+          updateMonthView(currentLocalDate.minusMonths(1));
+          monthList.setSelectedIndex(6 * 7 - 1);
+        }
+      }
+    });
+    monthList.getActionMap().put("selectNextIndex", new AbstractAction() {
+      @Override public void actionPerformed(ActionEvent e) {
+        int index = monthList.getLeadSelectionIndex();
+        System.out.println(index);
+        if (index &lt; 6 * 7 - 1) {
+          monthList.setSelectedIndex(index + 1);
+        } else {
+          updateMonthView(currentLocalDate.plusMonths(1));
+          monthList.setSelectedIndex(0);
+        }
+      }
+    });
 
     Locale l = Locale.getDefault();
     DefaultListModel&lt;DayOfWeek&gt; weekModel = new DefaultListModel&lt;&gt;();
@@ -138,11 +170,12 @@ public class CalendarViewListTest {
     header.setCellRenderer(new DefaultListCellRenderer() {
       @Override public Component getListCellRendererComponent(
           JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
-        super.getListCellRendererComponent(list, value, index, false, false);
+          super.getListCellRendererComponent(list, value, index, false, false);
         setHorizontalAlignment(SwingConstants.CENTER);
         if (value instanceof DayOfWeek) {
           DayOfWeek dow = (DayOfWeek) value;
-          setText(dow.getDisplayName(TextStyle.SHORT_STANDALONE, l));
+          String s = dow.getDisplayName(TextStyle.SHORT_STANDALONE, l);
+          setText(s.substring(0, Math.min(2, s.length())));
           setBackground(new Color(220, 220, 220));
         }
         return this;
@@ -178,7 +211,7 @@ public class CalendarViewListTest {
   private void updateMonthView(LocalDate localDate) {
     currentLocalDate = localDate;
     monthLabel.setText(localDate.format(DateTimeFormatter.ofPattern("yyyy / MM")
-        .withLocale(Locale.getDefault())));
+      .withLocale(Locale.getDefault())));
     WeekFields weekFields = WeekFields.of(Locale.getDefault());
     LocalDate firstDayOfMonth = localDate.with(TemporalAdjusters.firstDayOfMonth());
     int dowv = firstDayOfMonth.get(weekFields.dayOfWeek()) - 1;
@@ -190,37 +223,31 @@ public class CalendarViewListTest {
     }
     monthList.setModel(calendarModel);
   }
-  class CalendarTableRenderer&lt;E extends LocalDate&gt; implements ListCellRenderer&lt;E&gt; {
-    private final JLabel renderer = new JLabel("", SwingConstants.CENTER);
+  class CalendarListRenderer&lt;E extends LocalDate&gt; implements ListCellRenderer&lt;E&gt; {
+    private final DefaultListCellRenderer renderer = new DefaultListCellRenderer();
     @Override public Component getListCellRendererComponent(
-        JList&lt;? extends E&gt; list, E value, int index,
-        boolean isSelected, boolean cellHasFocus) {
-      renderer.setOpaque(true);
-      if (value instanceof LocalDate) {
-        LocalDate d = (LocalDate) value;
-        renderer.setText(String.valueOf(d.getDayOfMonth()));
-        if (YearMonth.from(d).equals(YearMonth.from(currentLocalDate))) {
-          renderer.setForeground(Color.BLACK);
-        } else {
-          renderer.setForeground(Color.GRAY);
-        }
-        DayOfWeek dow = d.getDayOfWeek();
-        if (d.isEqual(realLocalDate)) {
-          renderer.setBackground(new Color(220, 255, 220));
+          JList&lt;? extends E&gt; list, E value, int index,
+          boolean isSelected, boolean cellHasFocus) {
+      JLabel l = (JLabel) renderer.getListCellRendererComponent(
+          list, value, index, isSelected, cellHasFocus);
+      l.setOpaque(true);
+      l.setHorizontalAlignment(SwingConstants.CENTER);
+      l.setText(String.valueOf(value.getDayOfMonth()));
+      if (YearMonth.from(value).equals(YearMonth.from(currentLocalDate))) {
+        DayOfWeek dow = value.getDayOfWeek();
+        if (value.isEqual(realLocalDate)) {
+          l.setForeground(new Color(100, 255, 100));
         } else if (dow == DayOfWeek.SUNDAY) {
-          renderer.setBackground(new Color(255, 220, 220));
+          l.setForeground(new Color(255, 100, 100));
         } else if (dow == DayOfWeek.SATURDAY) {
-          renderer.setBackground(new Color(220, 220, 255));
+          l.setForeground(new Color(100, 100, 255));
         } else {
-          renderer.setBackground(Color.WHITE);
+          l.setForeground(Color.BLACK);
         }
-        if (isSelected) {
-          renderer.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY));
-        } else {
-          renderer.setBorder(BorderFactory.createEmptyBorder(0, 0, 1, 0));
-        }
+      } else {
+        l.setForeground(Color.GRAY);
       }
-      return renderer;
+      return l;
     }
   }
   public static void main(String[] args) {

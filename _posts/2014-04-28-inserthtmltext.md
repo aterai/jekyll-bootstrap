@@ -16,7 +16,13 @@ comments: true
 {% download https://lh5.googleusercontent.com/-hU9bkPgb4Q8/U10bg5XoDfI/AAAAAAAACEI/BJrmelBz93M/s800/InsertHtmlText.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>HTMLDocument doc = (HTMLDocument) editor.getDocument();
+<pre class="prettyprint"><code>String HTML_TEXT = "&lt;html&gt;&lt;body&gt;head&lt;table id='log' border='1'&gt;&lt;/table&gt;tail&lt;/body&gt;&lt;/html&gt;";
+HTMLEditorKit htmlEditorKit = new HTMLEditorKit();
+JEditorPane editor = new JEditorPane();
+editor.setEditorKit(htmlEditorKit);
+editor.setText(HTML_TEXT);
+
+HTMLDocument doc = (HTMLDocument) editor.getDocument();
 Element element = doc.getElement("log");
 String ROW_TEXT = "&lt;tr bgColor='%s'&gt;&lt;td&gt;%s&lt;/td&gt;&lt;td&gt;%s&lt;/td&gt;&lt;/tr&gt;";
 Date d = new Date();

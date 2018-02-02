@@ -33,13 +33,8 @@ comments: true
 ## 解説
 上記のサンプルでは、`JMenuBar`の子コンポーネントになっている`JMenu`の領域内にマウスカーソルが入った場合に自動的にポップアップメニューが開くように、`JMenu#doClick()`を実行する`MouseListener`を追加しています。
 
-- 注:
-    - マウスボタンを押した場合も、入った場合にすでに表示したポップアップメニューが非表示にならないように`JMenu#doClick()`を実行
-    - このサンプルのすべての`JMenuItem`は、`beep`音を鳴らすだけのダミー
-
-<!-- dummy comment line for breaking list -->
-
-- - - -
+- マウスボタンを押した場合も、入った場合にすでに表示したポップアップメニューが非表示にならないように`JMenu#doClick()`を実行
+- このサンプルのすべての`JMenuItem`は、`beep`音を鳴らすだけのダミー
 - この`JMenu`の入った、`JPopupMenu`を`JComponent#setComponentPopupMenu(...)`で`JMenuBar`以外のコンポーネントに設定すると無限ループする
     - [Bug ID: JDK-6949414 JMenu.buildMenuElementArray() endless loop](https://bugs.openjdk.java.net/browse/JDK-6949414)
 - 回避方法:
