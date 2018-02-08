@@ -19,9 +19,10 @@ comments: true
 <pre class="prettyprint"><code>public final LocalDate realLocalDate = LocalDate.now();
 public LocalDate currentLocalDate;
 public final Dimension size = new Dimension(40, 26);
-public final JLabel yearMonthLabel = new JLabel("", SwingConstants.CENTER);
-public final JList&lt;LocalDate&gt; monthList = new JList&lt;LocalDate&gt;(
-    new CalendarViewListModel(realLocalDate)) {
+
+//...
+JLabel yearMonthLabel = new JLabel("", SwingConstants.CENTER);
+JList&lt;LocalDate&gt; monthList = new JList&lt;LocalDate&gt;(new CalendarViewListModel(realLocalDate)) {
   @Override public void updateUI() {
     setCellRenderer(null);
     super.updateUI();

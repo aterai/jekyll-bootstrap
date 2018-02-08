@@ -34,10 +34,10 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 ## 解説
 上記のサンプルでは、`UIManager.put("TabbedPane.unselectedBackground", Color.GREEN);`などを利用して、`MetalLookAndFeel`でのタブエリアの背景色などを変更することができます。
 
-- メモ
-    - `JPanel`タブ内に配置されている`JCheckBox`で、`JTabbedPane`を不透明に設定可能
-    - `JPanel`タブ内に配置されている`JComboBox`で、`TabbedPane.tabAreaBackground`などのキーを指定し、その色の変更が可能
-- タブ文字色は、`JTabbedPane#setForegroundAt(...)`メソッドを使用して切り替え
+- `BasicLookAndFeel`、`MetalLookAndFeel`でのみ有効
+- `JPanel`タブ内に配置されている`JCheckBox`で、`JTabbedPane`を不透明に設定可能
+- `JPanel`タブ内に配置されている`JComboBox`で、`TabbedPane.tabAreaBackground`などのキーを指定し、その色の変更が可能
+- タブ文字色は、`JTabbedPane#setForegroundAt(...)`メソッドを使用して切り替え可能
 
 <!-- dummy comment line for breaking list -->
 

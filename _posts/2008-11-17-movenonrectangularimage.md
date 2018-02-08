@@ -16,13 +16,12 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTQKdiDk4I/AAAAAAAAAfI/tb322r8ngL0/s800/MoveNonRectangularImage.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private JLabel makeLabelIcon(BufferedImage image) {
-  JLabel label = new JLabel(new ImageIcon(image)) {
-    @Override public boolean contains(int x, int y) {
-      return super.contains(x, y) &amp;&amp; ((image.getRGB(x, y) &gt;&gt; 24) &amp; 0xff) &gt; 0;
-    }
-  };
-  //...
+<pre class="prettyprint"><code>BufferedImage image = ImageIO.read(getClass().getResource("duke.gif"));
+JLabel label = new JLabel(new ImageIcon(image)) {
+  @Override public boolean contains(int x, int y) {
+    return super.contains(x, y) &amp;&amp; ((image.getRGB(x, y) &gt;&gt; 24) &amp; 0xff) &gt; 0;
+  }
+};
 </code></pre>
 
 ## 解説

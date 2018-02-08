@@ -79,4 +79,9 @@ delegator.parse(new StringReader(str), new HTMLEditorKit.ParserCallback() {
 System.out.println(s.toString());
 </code></pre>
 
+## 参考リンク
+- [HTMLEditorKit#insertHTML(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/HTMLEditorKit.html#insertHTML-javax.swing.text.html.HTMLDocument-int-java.lang.String-int-int-javax.swing.text.html.HTML.Tag-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

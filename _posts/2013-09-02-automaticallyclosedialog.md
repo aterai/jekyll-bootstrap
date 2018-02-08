@@ -64,8 +64,8 @@ comments: true
 - `javax.swing.Timer`
     - 親の`JOptionPane`が表示されて`JLabel#isShowing()`が`true`になったら、`Timer#start()`でカウントダウンを開始
         - [JComponentの表示状態](https://ateraimemo.com/Swing/ShowingDisplayableVisible.html)
-    - 指定した時間が経過したら、`Window#dispose()`を使って、親の`JOptionPane`を自動的に閉じる
-        - `Window#dispose()`を使うので、`JOptionPane.showConfirmDialog(...)`の戻り値は、`JOptionPane.CLOSED_OPTION`になる
+    - 指定した時間が経過したら`Window#dispose()`メソッドを使用して、親の`JOptionPane`を自動的に閉じる
+        - `Window#dispose()`を使うので、`JOptionPane.showConfirmDialog(...)`の戻り値は`JOptionPane.CLOSED_OPTION`になる
 
 <!-- dummy comment line for breaking list -->
 

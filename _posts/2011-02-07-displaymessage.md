@@ -31,4 +31,9 @@ trayIcon.displayMessage("caption", "text text...", TrayIcon.MessageType.ERROR);
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [TrayIcon#displayMessage(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/TrayIcon.html#displayMessage-java.lang.String-java.lang.String-java.awt.TrayIcon.MessageType-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
