@@ -35,20 +35,27 @@ comments: true
 </code></pre>
 
 ## 解説
-1. デフォルトの`JSlider`
-1. `JSlider#setEnabled(false)`で無効化
+1. `Default`
+    - デフォルトの`JSlider`
+
+<!-- dummy comment line for breaking list -->
+1. `JSlider#setEnabled(false)`
+    - `JSlider#setEnabled(false)`で無効化
     - 表示が変更されて(灰色)、無効状態をユーザーにフィードバック
 
 <!-- dummy comment line for breaking list -->
-1. `BasicSliderUI#uninstallListeners(...)`、`BasicSliderUI#uninstallKeyboardActions(...)`メソッドをリフレクションでアクセス可能に変更して実行
+1. `BasicSliderUI#uninstallListeners(...)`
+    - `BasicSliderUI#uninstallListeners(...)`、`BasicSliderUI#uninstallKeyboardActions(...)`メソッドをリフレクションでアクセス可能に変更して実行
     - 参考: [JSlider Problem | Oracle Community](https://community.oracle.com/threads/1360123)
     - 無効状態ではないので、ノブなどが灰色にならない
     - `ComponentListener`なども削除されるので、リサイズしても表示は不変
 
 <!-- dummy comment line for breaking list -->
-1. `getMouseListeners()`などで取得したリスナーを削除
+1. `JSlider#removeMouseListener(...)`
+    - `getMouseListeners()`などで取得したリスナーを削除
     - `MouseListener`と`MouseMotionListener`を削除
-    - キー入力は、`setFocusable(false)`で無効化(`InputMap`には、`JComponent.WHEN_FOCUSED`で登録されているのでフォーカスがなければキー入力できない)
+    - キー入力は`setFocusable(false)`で無効化
+        - `InputMap`には`JComponent.WHEN_FOCUSED`で登録されているのでフォーカスがなければキー入力できない
 
 <!-- dummy comment line for breaking list -->
 
