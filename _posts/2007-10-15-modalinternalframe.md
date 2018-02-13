@@ -91,7 +91,7 @@ class ModalInternalFrameAction3 extends AbstractAction {
         - <kbd>Alt+B</kbd>でボタンを押すことが出来てしまう
         - `Mnemonic`を設定したコンポーネントは`setEnabled(false)`とする必要がある
     - `Mnemonic`を`JMenu`に設定していると`setEnabled(false)`としても、<kbd>Alt</kbd>キーに反応する
-        - これは`WindowsLookAndFeel`だけ？ 追記: [JDK-6921687 Mnemonic disappears after repeated attempts to open menu items using mnemonics - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6921687)で修正されそう？
+        - 追記: [JDK-6921687 Mnemonic disappears after repeated attempts to open menu items using mnemonics - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6921687)で修正されそう？
         - この`InternalMessageDialog`を表示している間は、`JMenuBar`をダミーと入れ替えて無効化
     - この`InternalMessageDialog`を閉じない限り、アプリケーションを<kbd>Alt+F4</kbd>などで閉じることは出来ない
     - `InternalMessageDialog`のシステムメニュー(左上のアイコンをクリックすると表示される)がマウスで操作不可能

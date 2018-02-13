@@ -71,7 +71,8 @@ popup.add(new JCheckBoxMenuItem("keeping open #2") {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `JDK 9`では、~~`menuItem.putClientProperty("CheckBoxMenuItem.closeOnMouseClick", false);`~~ `menuItem.putClientProperty("CheckBoxMenuItem.doNotCloseOnMouseClick", true);`などと設定することで、クリックしても`JPopupMenu`は開いたままになる
+- `Java 9`では、~~`menuItem.putClientProperty("CheckBoxMenuItem.closeOnMouseClick", false);`~~ `menuItem.putClientProperty("CheckBoxMenuItem.doNotCloseOnMouseClick", true);`などと設定することで、対象の`JCheckBoxMenuItem`をクリックしても親の`JPopupMenu`は閉じなくなる
+    - `UIManager.put("CheckBoxMenuItem.doNotCloseOnMouseClick", true)`で全体の`JCheckBoxMenuItem`に適用可能
     - 参考: [JDK-8165234 Provide a way to not close toggle menu items on mouse click on component level - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8165234)
 
 <!-- dummy comment line for breaking list -->
