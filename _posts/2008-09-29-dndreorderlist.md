@@ -17,27 +17,30 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ListItemTransferHandler extends TransferHandler {
-  private final DataFlavor localObjectFlavor;
-  private Object[] transferedObjects = null;
-  public ListItemTransferHandler() {
-    localObjectFlavor = new DataFlavor(
-      Object[].class, "Array of items");
+  protected final DataFlavor localObjectFlavor;
+  protected int[] indices;
+  protected int addIndex = -1; // Location where items were added
+  protected int addCount; // Number of items added.
+
+  protected ListItemTransferHandler() {
+    super();
+    localObjectFlavor = new DataFlavor(List.class, "List of items");
   }
   @Override protected Transferable createTransferable(JComponent c) {
-    JList list = (JList) c;
-    indices = list.getSelectedIndices();
-    transferedObjects = list.getSelectedValues();
+    JList&lt;?&gt; source = (JList&lt;?&gt;) c;
+    indices = source.getSelectedIndices();
+    List&lt;?&gt; transferedObjects = source.getSelectedValuesList();
     return new Transferable() {
       @Override public DataFlavor[] getTransferDataFlavors() {
-        return new DataFlavor[] {FLAVOR};
+        return new DataFlavor[] {localObjectFlavor};
       }
       @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
-        return Objects.equals(FLAVOR, flavor);
+        return Objects.equals(localObjectFlavor, flavor);
       }
       @Override public Object getTransferData(DataFlavor flavor)
-            throws UnsupportedFlavorException, IOException {
+          throws UnsupportedFlavorException, IOException {
         if (isDataFlavorSupported(flavor)) {
-          return nodes;
+          return transferedObjects;
         } else {
           throw new UnsupportedFlavorException(flavor);
         }
@@ -45,38 +48,36 @@ comments: true
     };
   }
   @Override public boolean canImport(TransferSupport info) {
-    if (!info.isDrop() || !info.isDataFlavorSupported(localObjectFlavor)) {
-      return false;
-    }
-    return true;
+    return info.isDrop() &amp;&amp; info.isDataFlavorSupported(localObjectFlavor);
   }
   @Override public int getSourceActions(JComponent c) {
-    return TransferHandler.MOVE; //TransferHandler.COPY_OR_MOVE;
+    return TransferHandler.MOVE; // TransferHandler.COPY_OR_MOVE;
   }
-  @Override public boolean importData(TransferSupport info) {
-    if (!canImport(info)) {
+  @SuppressWarnings("unchecked")
+  @Override public boolean importData(TransferHandler.TransferSupport info) {
+    TransferHandler.DropLocation tdl = info.getDropLocation();
+    if (!canImport(info) || !(tdl instanceof JList.DropLocation)) {
       return false;
     }
-    JList target = (JList) info.getComponent();
-    JList.DropLocation dl = (JList.DropLocation) info.getDropLocation();
+    JList.DropLocation dl = (JList.DropLocation) tdl;
+    JList&lt;?&gt; target = (JList&lt;?&gt;) info.getComponent();
     DefaultListModel listModel = (DefaultListModel) target.getModel();
-    int index = dl.getIndex();
-    //boolean insert = dl.isInsert();
+    // boolean insert = dl.isInsert();
     int max = listModel.getSize();
-    if (index &lt; 0 || index &gt; max) {
-      index = max;
-    }
+    int index = dl.getIndex();
+    // If it is out of range, it is appended to the end
+    index = index &lt; 0 ? max : index;
+    index = Math.min(index, max);
     addIndex = index;
-
     try {
-      Object[] values =
-        (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
-      addCount = values.length;
-      for (int i = 0; i &lt; values.length; i++) {
-        int idx = index++;
-        listModel.add(idx, values[i]);
-        target.addSelectionInterval(idx, idx);
+      List&lt;?&gt; values = (List&lt;?&gt;) info.getTransferable()
+        .getTransferData(localObjectFlavor);
+      for (Object o : values) {
+        int i = index++;
+        listModel.add(i, o);
+        target.addSelectionInterval(i, i);
       }
+      addCount = values.size();
       return true;
     } catch (UnsupportedFlavorException | IOException ex) {
       ex.printStackTrace();
@@ -88,9 +89,10 @@ comments: true
     cleanup(c, action == TransferHandler.MOVE);
   }
   private void cleanup(JComponent c, boolean remove) {
-    if (remove &amp;&amp; indices != null) {
-      JList source = (JList) c;
-      DefaultListModel model  = (DefaultListModel) source.getModel();
+    if (remove &amp;&amp; Objects.nonNull(indices)) {
+      // If we are moving items around in the same list, we
+      // need to adjust the indices accordingly, since those
+      // after the insertion point have moved.
       if (addCount &gt; 0) {
         for (int i = 0; i &lt; indices.length; i++) {
           if (indices[i] &gt;= addIndex) {
@@ -98,17 +100,16 @@ comments: true
           }
         }
       }
+      JList&lt;?&gt; source = (JList&lt;?&gt;) c;
+      DefaultListModel model = (DefaultListModel) source.getModel();
       for (int i = indices.length - 1; i &gt;= 0; i--) {
         model.remove(indices[i]);
       }
     }
-    indices  = null;
+    indices = null;
     addCount = 0;
     addIndex = -1;
   }
-  private int[] indices = null;
-  private int addIndex  = -1; //Location where items were added
-  private int addCount  = 0;  //Number of items added.
 }
 </code></pre>
 
@@ -128,9 +129,9 @@ list.setDragEnabled(true);
     - 例えば、項目`0`,`1`,`2`を複数選択して、`1`と`2`の間にドロップすると、`1`,`2`,`2`になるので、以下のように修正
         
         <pre class="prettyprint"><code>for (int i = 0; i &lt; indices.length; i++) {
-          //if (indices[i] &gt; addIndex) {
+          //　if (indices[i] &gt; addIndex) {
           if (indices[i] &gt;= addIndex) {
-        //...
+        //　...
 </code></pre>
 
 <!-- dummy comment line for breaking list -->

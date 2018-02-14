@@ -20,45 +20,84 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ListItemTransferHandler extends TransferHandler {
-  private JList source = null;
-  @Override protected Transferable createTransferable(JComponent c) {
-    source = (JList) c;
-    indices = source.getSelectedIndices();
-    transferedObjects = source.getSelectedValues();
-    return new DataHandler(transferedObjects, localObjectFlavor.getMimeType());
+  protected final DataFlavor localObjectFlavor;
+  protected JList&lt;?&gt; source;
+  protected int[] indices;
+  protected int addIndex = -1;
+  protected int addCount;
+
+  protected ListItemTransferHandler() {
+    super();
+    localObjectFlavor = new DataFlavor(List.class, "List of items");
   }
-  @Override public boolean importData(TransferSupport info) {
-    if (!canImport(info)) return false;
-    JList target = (JList) info.getComponent();
-    JList.DropLocation dl = (JList.DropLocation) info.getDropLocation();
+  @Override protected Transferable createTransferable(JComponent c) {
+    source = (JList&lt;?&gt;) c;
+    indices = source.getSelectedIndices();
+    List&lt;?&gt; transferedObjects = source.getSelectedValuesList();
+    return new Transferable() {
+      @Override public DataFlavor[] getTransferDataFlavors() {
+        return new DataFlavor[] {localObjectFlavor};
+      }
+      @Override public boolean isDataFlavorSupported(DataFlavor flavor) {
+        return Objects.equals(localObjectFlavor, flavor);
+      }
+      @Override public Object getTransferData(DataFlavor flavor)
+          throws UnsupportedFlavorException, IOException {
+        if (isDataFlavorSupported(flavor)) {
+          return transferedObjects;
+        } else {
+          throw new UnsupportedFlavorException(flavor);
+        }
+      }
+    };
+  }
+  @Override public boolean canImport(TransferHandler.TransferSupport info) {
+    return info.isDrop() &amp;&amp; info.isDataFlavorSupported(localObjectFlavor);
+  }
+  @Override public int getSourceActions(JComponent c) {
+    return TransferHandler.MOVE;
+  }
+  @SuppressWarnings("unchecked")
+  @Override public boolean importData(TransferHandler.TransferSupport info) {
+    TransferHandler.DropLocation tdl = info.getDropLocation();
+    if (!canImport(info) || !(tdl instanceof JList.DropLocation)) {
+      return false;
+    }
+    JList.DropLocation dl = (JList.DropLocation) tdl;
+    JList&lt;?&gt; target = (JList&lt;?&gt;) info.getComponent();
     DefaultListModel listModel = (DefaultListModel) target.getModel();
-    int index = dl.getIndex();
     int max = listModel.getSize();
-    if (index &lt; 0 || index &gt; max) index = max;
+    int index = dl.getIndex();
+    index = index &lt; 0 ? max : index;
+    index = Math.min(index, max);
     addIndex = index;
     try {
-      Object[] values = (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
-      for (int i = 0; i &lt; values.length; i++) {
-        int idx = index++;
-        listModel.add(idx, values[i]);
-        target.addSelectionInterval(idx, idx);
+      List&lt;?&gt; values = (List&lt;?&gt;) info.getTransferable().getTransferData(
+        localObjectFlavor);
+      for (Object o : values) {
+        int i = index++;
+        listModel.add(i, o);
+        target.addSelectionInterval(i, i);
       }
-      //----&gt;
-      addCount = (target == source) ? values.length : 0;
-      //&lt;----
+      // ----&gt;
+      addCount = target.equals(source) ? values.size() : 0;
+      // &lt;----
       return true;
     } catch (UnsupportedFlavorException | IOException ex) {
       ex.printStackTrace();
     }
     return false;
   }
-//...
+  // ...
 </code></pre>
 
 ## 解説
 上記のサンプルでは、一つの`JList`内でのアイテムの並べ替えを行う[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)を元に`ListItemTransferHandler`を作成し、`JList`間でのアイテム移動も可能にしています。
 
-変更した箇所は、[TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](https://ateraimemo.com/Swing/DnDReorderTable.html)から、[JTableの行を別のJTableにドラッグして移動](https://ateraimemo.com/Swing/DragRowsAnotherTable.html)と同じで、ドロップ先がドラッグ元と同じコンポーネントかどうかを調べて処理を変更しています。
+- ドロップ先がドラッグ元と同じコンポーネントかどうかを調査する処理を変更
+    - [TransferHandlerを使ってJTableの行をドラッグ＆ドロップ、並べ替え](https://ateraimemo.com/Swing/DnDReorderTable.html)から[JTableの行を別のJTableにドラッグして移動](https://ateraimemo.com/Swing/DragRowsAnotherTable.html)と同様
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)

@@ -63,6 +63,7 @@ class FileGroupComparator extends DefaultFileComparator {
 
 ## 参考リンク
 - [JTreeのソート](https://ateraimemo.com/Swing/SortTree.html)
+- [JTableで同一内容のセルを空表示にしてグループ化を表現する](https://ateraimemo.com/Swing/RowGroupInTable.html)
 
 <!-- dummy comment line for breaking list -->
 
