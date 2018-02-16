@@ -7,13 +7,13 @@ tags: [JTree, LookAndFeel, UIManager, BasicStroke]
 author: aterai
 pubdate: 2017-07-03T14:32:43+09:00
 description: JTreeのノード間の接続線の色、太さなどを変更します。
-image: https://drive.google.com/uc?export=view&id=1btj2ocoJQdwg8t8Smv1O29xUUFsfjbR5zA
+image: https://drive.google.com/uc?id=1btj2ocoJQdwg8t8Smv1O29xUUFsfjbR5zA
 comments: true
 ---
 ## 概要
 `JTree`のノード間の接続線の色、太さなどを変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1btj2ocoJQdwg8t8Smv1O29xUUFsfjbR5zA %}
+{% download https://drive.google.com/uc?id=1btj2ocoJQdwg8t8Smv1O29xUUFsfjbR5zA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("Tree.paintLines", Boolean.TRUE);

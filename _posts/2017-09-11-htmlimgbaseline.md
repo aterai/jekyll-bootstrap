@@ -7,13 +7,13 @@ tags: [JEditorPane, HTML]
 author: aterai
 pubdate: 2017-09-11T15:39:55+09:00
 description: JEditorPaneに配置したImgタグのvertical-alignをベースライン揃えに変更します。
-image: https://drive.google.com/uc?export=view&id=1SHPkR8vKbzKY6zpuM6eQL0c_ci02zOsLcw
+image: https://drive.google.com/uc?id=1SHPkR8vKbzKY6zpuM6eQL0c_ci02zOsLcw
 comments: true
 ---
 ## 概要
 `JEditorPane`に配置した`Img`タグの`vertical-align`をベースライン揃えに変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1SHPkR8vKbzKY6zpuM6eQL0c_ci02zOsLcw %}
+{% download https://drive.google.com/uc?id=1SHPkR8vKbzKY6zpuM6eQL0c_ci02zOsLcw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ImgBaselineHTMLEditorKit extends HTMLEditorKit {

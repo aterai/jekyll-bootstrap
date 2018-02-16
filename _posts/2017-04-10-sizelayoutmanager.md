@@ -7,13 +7,13 @@ tags: [LayoutManager, FlowLayout, JToggleButton]
 author: aterai
 pubdate: 2017-04-10T14:38:31+09:00
 description: LayoutManagerを使用して、コンポーネントの状態に応じてそのサイズや位置を変更します。
-image: https://drive.google.com/uc?export=view&id=1nYydwcffL9ElwLnTcopf0y05pAU6chdG4w
+image: https://drive.google.com/uc?id=1nYydwcffL9ElwLnTcopf0y05pAU6chdG4w
 comments: true
 ---
 ## 概要
 `LayoutManager`を使用して、コンポーネントの状態に応じてそのサイズや位置を変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1nYydwcffL9ElwLnTcopf0y05pAU6chdG4w %}
+{% download https://drive.google.com/uc?id=1nYydwcffL9ElwLnTcopf0y05pAU6chdG4w %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JPanel p = new JPanel(new GridBagLayout());

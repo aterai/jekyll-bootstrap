@@ -7,13 +7,13 @@ tags: [JToolBar, JToggleButton, AbstractButton, Focus]
 author: aterai
 pubdate: 2017-08-07T14:35:07+09:00
 description: JToolBarのロールオーバー状態を設定し、内部に設定したJToggleButtonなどの表示を変更します。
-image: https://drive.google.com/uc?export=view&id=10xjTu8RF7AgkHSL9kzraWAKN5bmfcUON0A
+image: https://drive.google.com/uc?id=10xjTu8RF7AgkHSL9kzraWAKN5bmfcUON0A
 comments: true
 ---
 ## 概要
 `JToolBar`のロールオーバー状態を設定し、内部に設定した`JToggleButton`などの表示を変更します。
 
-{% download https://drive.google.com/uc?export=view&id=10xjTu8RF7AgkHSL9kzraWAKN5bmfcUON0A %}
+{% download https://drive.google.com/uc?id=10xjTu8RF7AgkHSL9kzraWAKN5bmfcUON0A %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JToolBar toolbar = new JToolBar();

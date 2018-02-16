@@ -7,13 +7,13 @@ tags: [JTable, TableRowSorter, TableCellRenderer]
 author: aterai
 pubdate: 2017-06-05T16:09:45+09:00
 description: JTableで直上のセルと同一内容のセルを空表示にして、行のグループ化を表現します。
-image: https://drive.google.com/uc?export=view&id=1BtPc00VYQd5w5UwghwQc6KYrIoZCZ0W_EQ
+image: https://drive.google.com/uc?id=1BtPc00VYQd5w5UwghwQc6KYrIoZCZ0W_EQ
 comments: true
 ---
 ## 概要
 `JTable`で直上のセルと同一内容のセルを空表示にして、行のグループ化を表現します。
 
-{% download https://drive.google.com/uc?export=view&id=1BtPc00VYQd5w5UwghwQc6KYrIoZCZ0W_EQ %}
+{% download https://drive.google.com/uc?id=1BtPc00VYQd5w5UwghwQc6KYrIoZCZ0W_EQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>String colors = "colors";

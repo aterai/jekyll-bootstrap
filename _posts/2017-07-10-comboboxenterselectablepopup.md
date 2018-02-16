@@ -7,13 +7,13 @@ tags: [JComboBox, ActionListener]
 author: aterai
 pubdate: 2017-07-10T15:41:36+09:00
 description: 編集可能なJComboBoxのポップアップメニューでEnterキーが入力された場合のActionListenerの動作をテストします。
-image: https://drive.google.com/uc?export=view&id=1IRqx7XfCe8R_uKdyEiatC5Ro-ucy_GPnZw
+image: https://drive.google.com/uc?id=1IRqx7XfCe8R_uKdyEiatC5Ro-ucy_GPnZw
 comments: true
 ---
 ## 概要
 編集可能な`JComboBox`のポップアップメニューで<kbd>Enter</kbd>キーが入力された場合の`ActionListener`の動作をテストします。
 
-{% download https://drive.google.com/uc?export=view&id=1IRqx7XfCe8R_uKdyEiatC5Ro-ucy_GPnZw %}
+{% download https://drive.google.com/uc?id=1IRqx7XfCe8R_uKdyEiatC5Ro-ucy_GPnZw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("ComboBox.isEnterSelectablePopup", Boolean.TRUE);

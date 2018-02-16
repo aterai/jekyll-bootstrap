@@ -7,13 +7,13 @@ tags: [JPopupMenu, JTextField, Focus, JTextComponent]
 author: aterai
 pubdate: 2017-11-06T15:23:38+09:00
 description: JTextFieldなどに設定したJPopupMenuをマウスの右クリックで開くとき、そのにFocusを移動し文字列を全選択します。
-image: https://drive.google.com/uc?export=view&id=1DYqevQ-Nj2i5IptiAWC7KPYVKcbmuL9sMA
+image: https://drive.google.com/uc?id=1DYqevQ-Nj2i5IptiAWC7KPYVKcbmuL9sMA
 comments: true
 ---
 ## 概要
 `JTextField`などに設定した`JPopupMenu`をマウスの右クリックで開くとき、その`JTextComponent`に`Focus`を移動し文字列を全選択します。
 
-{% download https://drive.google.com/uc?export=view&id=1DYqevQ-Nj2i5IptiAWC7KPYVKcbmuL9sMA %}
+{% download https://drive.google.com/uc?id=1DYqevQ-Nj2i5IptiAWC7KPYVKcbmuL9sMA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TextComponentPopupMenu extends JPopupMenu {

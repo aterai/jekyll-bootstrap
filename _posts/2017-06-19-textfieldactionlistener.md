@@ -7,13 +7,13 @@ tags: [JTextField, ActionListener, JRootPane, DocumentListener]
 author: aterai
 pubdate: 2017-06-19T14:42:19+09:00
 description: JTextFieldにActionListenerを追加して、Enterキーの入力を取得します。
-image: https://drive.google.com/uc?export=view&id=1JdoY_yKanCFgfCAle83WU8bgTJ7L4E4Cbg
+image: https://drive.google.com/uc?id=1JdoY_yKanCFgfCAle83WU8bgTJ7L4E4Cbg
 comments: true
 ---
 ## 概要
 `JTextField`に`ActionListener`を追加して、<kbd>Enter</kbd>キーの入力を取得します。
 
-{% download https://drive.google.com/uc?export=view&id=1JdoY_yKanCFgfCAle83WU8bgTJ7L4E4Cbg %}
+{% download https://drive.google.com/uc?id=1JdoY_yKanCFgfCAle83WU8bgTJ7L4E4Cbg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTextField textField2 = new JTextField("addActionListener");

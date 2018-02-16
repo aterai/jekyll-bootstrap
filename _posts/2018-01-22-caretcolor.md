@@ -7,13 +7,13 @@ tags: [Caret, JTextComponent, JTextField, JTextArea, JTextPane]
 author: aterai
 pubdate: 2018-01-22T15:56:54+09:00
 description: JTextFieldやJTextPaneなどのJTextComponentで、Caretの色を変更します。
-image: https://drive.google.com/uc?export=view&id=1u7eaiGMgpBZefGTMjAxkHBsxf29Fu-ZfbQ
+image: https://drive.google.com/uc?id=1u7eaiGMgpBZefGTMjAxkHBsxf29Fu-ZfbQ
 comments: true
 ---
 ## 概要
 `JTextField`や`JTextPane`などの`JTextComponent`で、`Caret`の色を変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1u7eaiGMgpBZefGTMjAxkHBsxf29Fu-ZfbQ %}
+{% download https://drive.google.com/uc?id=1u7eaiGMgpBZefGTMjAxkHBsxf29Fu-ZfbQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("TextArea.caretForeground", Color.ORANGE);

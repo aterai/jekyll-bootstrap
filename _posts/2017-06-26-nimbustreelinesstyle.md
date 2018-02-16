@@ -7,13 +7,13 @@ tags: [JTree, NimbusLookAndFeel, LookAndFeel]
 author: aterai
 pubdate: 2017-06-26T14:46:25+09:00
 description: NimbusLookAndFeelでのJTreeのノード間の接続線を表示し、そのスタイルを点線に変更します。
-image: https://drive.google.com/uc?export=view&id=1u-SlKhxho10TFLrR_OwXc4RJ39aWzk4hkg
+image: https://drive.google.com/uc?id=1u-SlKhxho10TFLrR_OwXc4RJ39aWzk4hkg
 comments: true
 ---
 ## 概要
 `NimbusLookAndFeel`での`JTree`のノード間の接続線を表示し、そのスタイルを点線に変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1u-SlKhxho10TFLrR_OwXc4RJ39aWzk4hkg %}
+{% download https://drive.google.com/uc?id=1u-SlKhxho10TFLrR_OwXc4RJ39aWzk4hkg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>// UIManager.put("Tree.drawVerticalLines", true);

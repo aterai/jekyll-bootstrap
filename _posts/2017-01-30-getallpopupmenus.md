@@ -7,13 +7,13 @@ tags: [JPopupMenu, Focus]
 author: aterai
 pubdate: 2017-01-30T15:17:50+09:00
 description: MenuSelectionManagerですべてのJPopupMenuを取得し、任意のタイミングでそれらを非表示に切り替えます。
-image: https://drive.google.com/uc?export=view&id=18mKH-3iW9D0-aw0doM7C-6-hFWoe-JMa7w
+image: https://drive.google.com/uc?id=18mKH-3iW9D0-aw0doM7C-6-hFWoe-JMa7w
 comments: true
 ---
 ## 概要
 `MenuSelectionManager`ですべての`JPopupMenu`を取得し、任意のタイミングでそれらを非表示に切り替えます。
 
-{% download https://drive.google.com/uc?export=view&id=18mKH-3iW9D0-aw0doM7C-6-hFWoe-JMa7w %}
+{% download https://drive.google.com/uc?id=18mKH-3iW9D0-aw0doM7C-6-hFWoe-JMa7w %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>tabs.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(

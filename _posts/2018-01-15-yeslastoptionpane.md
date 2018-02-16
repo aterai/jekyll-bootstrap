@@ -7,13 +7,13 @@ tags: [JOptionPane]
 author: aterai
 pubdate: 2018-01-15T14:42:52+09:00
 description: JOptionPaneのYesボタンがCancelボタンなどの後に追加されて一番右に配置されるよう設定します。
-image: https://drive.google.com/uc?export=view&id=12DSo9IIp_Ah9F2FlvkEjjREEwZXyNNLWhA
+image: https://drive.google.com/uc?id=12DSo9IIp_Ah9F2FlvkEjjREEwZXyNNLWhA
 comments: true
 ---
 ## 概要
 `JOptionPane`の`Yes`ボタンが`Cancel`ボタンなどの後に追加されて一番右に配置されるよう設定します。
 
-{% download https://drive.google.com/uc?export=view&id=12DSo9IIp_Ah9F2FlvkEjjREEwZXyNNLWhA %}
+{% download https://drive.google.com/uc?id=12DSo9IIp_Ah9F2FlvkEjjREEwZXyNNLWhA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("OptionPane.isYesLast", Boolean.TRUE);

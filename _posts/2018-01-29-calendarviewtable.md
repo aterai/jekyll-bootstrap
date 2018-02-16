@@ -7,7 +7,7 @@ tags: [JTable, LocalDate, Locale, Calendar]
 author: aterai
 pubdate: 2018-01-29T14:57:32+09:00
 description: JTableに週の最初の曜日がLocaleに応じて変化するカレンダーを表示します。
-image: https://drive.google.com/uc?export=view&id=1jXZtiYFaA5ABWsdaRBnPUKqS2_VBDkFqQA
+image: https://drive.google.com/uc?id=1jXZtiYFaA5ABWsdaRBnPUKqS2_VBDkFqQA
 hreflang:
     href: https://java-swing-tips.blogspot.com/2018/01/apply-localdate-considering-locale-to.html
     lang: en
@@ -16,7 +16,7 @@ comments: true
 ## 概要
 `JTable`に週の最初の曜日が`Locale`に応じて変化するカレンダーを表示します。
 
-{% download https://drive.google.com/uc?export=view&id=1jXZtiYFaA5ABWsdaRBnPUKqS2_VBDkFqQA %}
+{% download https://drive.google.com/uc?id=1jXZtiYFaA5ABWsdaRBnPUKqS2_VBDkFqQA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class CalendarViewTableModel&lt;T extends LocalDate&gt; extends DefaultTableModel {

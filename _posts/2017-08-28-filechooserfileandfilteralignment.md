@@ -7,13 +7,13 @@ tags: [JFileChooser, JLabel, BoxLayout]
 author: aterai
 pubdate: 2017-08-28T15:46:15+09:00
 description: JFileChooserの下部に表示されるファイル名とフィルタのラベルを左揃えから右揃えに変更します。
-image: https://drive.google.com/uc?export=view&id=
+image: https://drive.google.com/uc?id=
 comments: true
 ---
 ## 概要
 `JFileChooser`の下部に表示されるファイル名とフィルタのラベルを左揃えから右揃えに変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1U4T22tNO7N5NZJUDujh3ZUh68fe-xyvbPw %}
+{% download https://drive.google.com/uc?id=1U4T22tNO7N5NZJUDujh3ZUh68fe-xyvbPw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class RightAlignmentMetalFileChooserUI extends MetalFileChooserUI {

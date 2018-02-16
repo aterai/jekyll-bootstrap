@@ -7,13 +7,13 @@ tags: [JTree, TreePath, DefaultMutableTreeNode]
 author: aterai
 pubdate: 2016-09-12T01:36:56+09:00
 description: JTreeでノード階層の深さ(TreePath内の要素数)を取得し、それに応じてノード追加の制限を行います。
-image: https://drive.google.com/uc?export=view&id=1ozunqsWtmzdel3isGcmth6R1GRxkSju28Q
+image: https://drive.google.com/uc?id=1ozunqsWtmzdel3isGcmth6R1GRxkSju28Q
 comments: true
 ---
 ## 概要
 `JTree`でノード階層の深さ(`TreePath`内の要素数)を取得し、それに応じてノード追加の制限を行います。
 
-{% download https://drive.google.com/uc?export=view&id=1ozunqsWtmzdel3isGcmth6R1GRxkSju28Q %}
+{% download https://drive.google.com/uc?id=1ozunqsWtmzdel3isGcmth6R1GRxkSju28Q %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>private void updateLabel(TreePath path) {

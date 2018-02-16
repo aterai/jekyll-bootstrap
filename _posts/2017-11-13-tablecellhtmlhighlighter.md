@@ -7,13 +7,13 @@ tags: [JTable, HTML, JLabel, TableCellRenderer, NimbusLookAndFeel]
 author: aterai
 pubdate: 2017-11-13T15:19:39+09:00
 description: JTableのセル内文字列をHTMLタグを使用して強調表示します。
-image: https://drive.google.com/uc?export=view&id=1PqzXSbIvazI6-v8INSlkDS2FOv7LtY-u-Q
+image: https://drive.google.com/uc?id=1PqzXSbIvazI6-v8INSlkDS2FOv7LtY-u-Q
 comments: true
 ---
 ## 概要
 `JTable`のセル内文字列を`HTML`タグを使用して強調表示します。
 
-{% download https://drive.google.com/uc?export=view&id=1PqzXSbIvazI6-v8INSlkDS2FOv7LtY-u-Q %}
+{% download https://drive.google.com/uc?id=1PqzXSbIvazI6-v8INSlkDS2FOv7LtY-u-Q %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class HighlightTableCellRenderer extends DefaultTableCellRenderer {

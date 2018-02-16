@@ -7,13 +7,13 @@ tags: [JComboBox]
 author: aterai
 pubdate: 2017-05-01T14:53:34+09:00
 description: JComboBoxでアイテムが選択されていない場合、代わりに表示するプレースホルダ文字列を設定します。
-image: https://drive.google.com/uc?export=view&id=1R3IHJMxqNMm4oHGv9wmZ8FXpeZJn0AvEwA
+image: https://drive.google.com/uc?id=1R3IHJMxqNMm4oHGv9wmZ8FXpeZJn0AvEwA
 comments: true
 ---
 ## 概要
 `JComboBox`でアイテムが選択されていない場合、代わりに表示するプレースホルダ文字列を設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1R3IHJMxqNMm4oHGv9wmZ8FXpeZJn0AvEwA %}
+{% download https://drive.google.com/uc?id=1R3IHJMxqNMm4oHGv9wmZ8FXpeZJn0AvEwA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JComboBox&lt;String&gt; combo1 = new JComboBox&lt;&gt;(new String[] {"One", "Two", "Three", "Four"});

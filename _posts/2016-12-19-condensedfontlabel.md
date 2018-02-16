@@ -7,7 +7,7 @@ tags: [Font, JLabel, JTextArea, AffineTransform]
 author: aterai
 pubdate: 2016-12-19T00:45:00+09:00
 description: 文字に長体をかけたフォントを生成し、これをJTextAreaなどのコンポーネントで使用します。
-image: https://drive.google.com/uc?export=view&id=1uTWfknLeV-mrE81h-aAWdGPHYOpf9dEC1g
+image: https://drive.google.com/uc?id=1uTWfknLeV-mrE81h-aAWdGPHYOpf9dEC1g
 hreflang:
     href: https://java-swing-tips.blogspot.com/2017/03/make-condensed-font-and-use-it-with.html
     lang: en
@@ -16,7 +16,7 @@ comments: true
 ## 概要
 文字に長体をかけたフォントを生成し、これを`JTextArea`などのコンポーネントで使用します。
 
-{% download https://drive.google.com/uc?export=view&id=1uTWfknLeV-mrE81h-aAWdGPHYOpf9dEC1g %}
+{% download https://drive.google.com/uc?id=1uTWfknLeV-mrE81h-aAWdGPHYOpf9dEC1g %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>Font font = new Font(Font.MONOSPACED, Font.PLAIN, 18).deriveFont(

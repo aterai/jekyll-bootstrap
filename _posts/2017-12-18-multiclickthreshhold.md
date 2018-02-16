@@ -7,13 +7,13 @@ tags: [JButton, AbstractButton, JOptionPane]
 author: aterai
 pubdate: 2017-12-18T14:37:03+09:00
 description: JButtonの連続クリックを防止するため、後続イベントが発生可能になるまでのクリック間隔をミリ秒単位で設定します。
-image: https://drive.google.com/uc?export=view&id=1lZG2M7FhA2stxNChg3nd2r7NSrsXeb4ohg
+image: https://drive.google.com/uc?id=1lZG2M7FhA2stxNChg3nd2r7NSrsXeb4ohg
 comments: true
 ---
 ## 概要
 `JButton`の連続クリックを防止するため、後続イベントが発生可能になるまでのクリック間隔をミリ秒単位で設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1lZG2M7FhA2stxNChg3nd2r7NSrsXeb4ohg %}
+{% download https://drive.google.com/uc?id=1lZG2M7FhA2stxNChg3nd2r7NSrsXeb4ohg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>button.setMultiClickThreshhold(500);

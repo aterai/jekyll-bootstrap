@@ -7,13 +7,13 @@ tags: [Focus, JScrollPane, JTextField, FocusTraversalPolicy]
 author: aterai
 pubdate: 2016-11-07T03:34:14+09:00
 description: FocusTraversalPolicyを使用してフォーカスをもつコンポーネントを取得し、その全体が表示されるまでスクロールします。
-image: https://drive.google.com/uc?export=view&id=1FEs_WslEqQzxCPS7bxq_smwC8Ao3j6-JcA
+image: https://drive.google.com/uc?id=1FEs_WslEqQzxCPS7bxq_smwC8Ao3j6-JcA
 comments: true
 ---
 ## 概要
 `FocusTraversalPolicy`を使用してフォーカスをもつコンポーネントを取得し、その全体が表示されるまでスクロールします。
 
-{% download https://drive.google.com/uc?export=view&id=1FEs_WslEqQzxCPS7bxq_smwC8Ao3j6-JcA %}
+{% download https://drive.google.com/uc?id=1FEs_WslEqQzxCPS7bxq_smwC8Ao3j6-JcA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>Box box = Box.createVerticalBox();

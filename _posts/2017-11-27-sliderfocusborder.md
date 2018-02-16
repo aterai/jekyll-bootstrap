@@ -7,13 +7,13 @@ tags: [JSlider, Focus, Border, WindowsLookAndFeel]
 author: aterai
 pubdate: 2017-11-27T15:20:49+09:00
 description: WindowsLookAndFeelを使用するJSliderで、点線のFocusBorderを非表示に設定します。
-image: https://drive.google.com/uc?export=view&id=1zvmXqQPcE3P84DbjDk0vFmBympd7es24Gw
+image: https://drive.google.com/uc?id=1zvmXqQPcE3P84DbjDk0vFmBympd7es24Gw
 comments: true
 ---
 ## 概要
 `WindowsLookAndFeel`を使用する`JSlider`で、点線の`FocusBorder`を非表示に設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1zvmXqQPcE3P84DbjDk0vFmBympd7es24Gw %}
+{% download https://drive.google.com/uc?id=1zvmXqQPcE3P84DbjDk0vFmBympd7es24Gw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JSlider slider2 = new JSlider(0, 100, 0) {

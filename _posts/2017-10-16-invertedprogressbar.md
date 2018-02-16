@@ -7,13 +7,13 @@ tags: [JProgressBar]
 author: aterai
 pubdate: 2017-10-16T14:31:34+09:00
 description: JProgressBarのインジケータが通常とは逆方向に増加するよう変更します。
-image: https://drive.google.com/uc?export=view&id=1XzVC-95p_4o-iBXzUkOONJ1lHT6qmjImDQ
+image: https://drive.google.com/uc?id=1XzVC-95p_4o-iBXzUkOONJ1lHT6qmjImDQ
 comments: true
 ---
 ## 概要
 `JProgressBar`のインジケータが通常とは逆方向に増加するよう変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1XzVC-95p_4o-iBXzUkOONJ1lHT6qmjImDQ %}
+{% download https://drive.google.com/uc?id=1XzVC-95p_4o-iBXzUkOONJ1lHT6qmjImDQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JProgressBar progress = new JProgressBar(m);

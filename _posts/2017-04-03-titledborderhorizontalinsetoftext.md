@@ -7,13 +7,13 @@ tags: [TitledBorder, Border, JLabel]
 author: aterai
 pubdate: 2017-04-03T15:46:05+09:00
 description: 左寄せのTitledBorderで、ボーダーの左端からタイトル文字列までの内余白を設定するテストを行います。
-image: https://drive.google.com/uc?export=view&id=17kiVkxVACOFeT1HK8R68epgwBPGtzRYMJQ
+image: https://drive.google.com/uc?id=17kiVkxVACOFeT1HK8R68epgwBPGtzRYMJQ
 comments: true
 ---
 ## 概要
 左寄せの`TitledBorder`で、ボーダーの左端からタイトル文字列までの内余白を設定するテストを行います。
 
-{% download https://drive.google.com/uc?export=view&id=17kiVkxVACOFeT1HK8R68epgwBPGtzRYMJQ %}
+{% download https://drive.google.com/uc?id=17kiVkxVACOFeT1HK8R68epgwBPGtzRYMJQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>// Space between the border and the component's edge

@@ -46,15 +46,9 @@ check.addItemListener(new ItemListener() {
 
 <!-- dummy comment line for breaking list -->
 
-- - - -
-`JDK 1.7.0`で追加された`JLayer`を使用して、以下のように入力を禁止する方法もあります。
-
-- [JLayerで子コンポーネントへの入力を制限する](https://ateraimemo.com/Swing/PopupMenuBlockLayer.html)
-
-<!-- dummy comment line for breaking list -->
-
 ## 参考リンク
 - [JLayerで子コンポーネントへの入力を制限する](https://ateraimemo.com/Swing/PopupMenuBlockLayer.html)
+    - `JDK 1.7.0`で追加された`JLayer`を使用して入力を制限する方法もある
 - [JLayerで指定したコンポーネントへの入力を禁止](https://ateraimemo.com/Swing/DisableInputLayer.html)
 
 <!-- dummy comment line for breaking list -->

@@ -7,13 +7,13 @@ tags: [JPopupMenu, JMenu, JMenuItem, LayoutManager]
 author: aterai
 pubdate: 2017-07-17T23:29:21+09:00
 description: JPopupMenuに下限となる最小幅を固定値で設定します。
-image: https://drive.google.com/uc?export=view&id=1SYHBxJoZ2kPCmF9HQVhg0esnQTnpSZpq5w
+image: https://drive.google.com/uc?id=1SYHBxJoZ2kPCmF9HQVhg0esnQTnpSZpq5w
 comments: true
 ---
 ## 概要
 `JPopupMenu`に下限となる最小幅を固定値で設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1SYHBxJoZ2kPCmF9HQVhg0esnQTnpSZpq5w %}
+{% download https://drive.google.com/uc?id=1SYHBxJoZ2kPCmF9HQVhg0esnQTnpSZpq5w %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>menu = new JMenu("BoxHStrut");

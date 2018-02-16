@@ -7,13 +7,13 @@ tags: [JTextArea, JTextComponent, DefaultCaret, Focus]
 author: aterai
 pubdate: 2017-01-02T02:13:16+09:00
 description: JTextAreaなどのCaretを非表示にするテストを行います。
-image: https://drive.google.com/uc?export=view&id=1K6e6fysV1_WfG9uuYpD3nh1eKFVrGTfr6g
+image: https://drive.google.com/uc?id=1K6e6fysV1_WfG9uuYpD3nh1eKFVrGTfr6g
 comments: true
 ---
 ## 概要
 `JTextArea`などの`Caret`を非表示にするテストを行います。
 
-{% download https://drive.google.com/uc?export=view&id=1K6e6fysV1_WfG9uuYpD3nh1eKFVrGTfr6g %}
+{% download https://drive.google.com/uc?id=1K6e6fysV1_WfG9uuYpD3nh1eKFVrGTfr6g %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>textArea.setCaret(new DefaultCaret() {

@@ -7,13 +7,13 @@ tags: [JInternalFrame, NimbusLookAndFeel, LookAndFeel]
 author: aterai
 pubdate: 2018-01-08T21:07:11+09:00
 description: NimbusLookAndFeelを使用するJInternalFrameのタイトルを左寄せに変更します。
-image: https://drive.google.com/uc?export=view&id=1pc7-91VPZY42IsKoQuMfcpg0I90siJvvlQ
+image: https://drive.google.com/uc?id=1pc7-91VPZY42IsKoQuMfcpg0I90siJvvlQ
 comments: true
 ---
 ## 概要
 `NimbusLookAndFeel`を使用する`JInternalFrame`のタイトルを左寄せに変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1pc7-91VPZY42IsKoQuMfcpg0I90siJvvlQ %}
+{% download https://drive.google.com/uc?id=1pc7-91VPZY42IsKoQuMfcpg0I90siJvvlQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");

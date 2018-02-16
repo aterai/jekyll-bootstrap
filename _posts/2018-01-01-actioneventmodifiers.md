@@ -7,13 +7,13 @@ tags: [JButton, ActionListener, ActionEvent, InputEvent]
 author: aterai
 pubdate: 2018-01-01T18:58:15+09:00
 description: JButtonやJMenuItemがクリックされたとき、同時にShiftキーなどが押下されているかをテストします。
-image: https://drive.google.com/uc?export=view&id=1OqGPANokzyj1ocWyhI1StYYYEm0o0fCAKw
+image: https://drive.google.com/uc?id=1OqGPANokzyj1ocWyhI1StYYYEm0o0fCAKw
 comments: true
 ---
 ## 概要
 `JButton`や`JMenuItem`がクリックされたとき、同時に<kbd>Shift</kbd>キーなどが押下されているかをテストします。
 
-{% download https://drive.google.com/uc?export=view&id=1OqGPANokzyj1ocWyhI1StYYYEm0o0fCAKw %}
+{% download https://drive.google.com/uc?id=1OqGPANokzyj1ocWyhI1StYYYEm0o0fCAKw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JButton button = new JButton("TEST: ActionEvent#getModifiers()");

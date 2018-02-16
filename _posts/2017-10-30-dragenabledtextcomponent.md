@@ -7,13 +7,13 @@ tags: [JTextField, DragAndDrop, TransferHandler]
 author: aterai
 pubdate: 2017-10-30T15:36:53+09:00
 description: JTextFieldが初期状態や編集不可の場合などでドラッグ＆ドロップをテストします。
-image: https://drive.google.com/uc?export=view&id=1bHJS4TOFW3wUg-zz4Ut_gnrS2vYNXKE_Vg
+image: https://drive.google.com/uc?id=1bHJS4TOFW3wUg-zz4Ut_gnrS2vYNXKE_Vg
 comments: true
 ---
 ## 概要
 `JTextField`が初期状態や編集不可の場合などでドラッグ＆ドロップをテストします。
 
-{% download https://drive.google.com/uc?export=view&id=1bHJS4TOFW3wUg-zz4Ut_gnrS2vYNXKE_Vg %}
+{% download https://drive.google.com/uc?id=1bHJS4TOFW3wUg-zz4Ut_gnrS2vYNXKE_Vg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTextField textField0 = new JTextField("Initially has BasicTextUI$TextTransferHandler");

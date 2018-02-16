@@ -7,13 +7,13 @@ tags: [JInternalFrame, MetalLookAndFeel, LookAndFeel]
 author: aterai
 pubdate: 2017-07-24T15:44:08+09:00
 description: MetalLookAndFeelのJInternalFrameでBumpsを非表示にし、フラットなタイトルバーに変更します。
-image: https://drive.google.com/uc?export=view&id=1Iy8Oe01o_AOQbIeiuE_pEjfkegKcJuPexQ
+image: https://drive.google.com/uc?id=1Iy8Oe01o_AOQbIeiuE_pEjfkegKcJuPexQ
 comments: true
 ---
 ## 概要
 `MetalLookAndFeel`の`JInternalFrame`で`Bumps`を非表示にし、フラットなタイトルバーに変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1Iy8Oe01o_AOQbIeiuE_pEjfkegKcJuPexQ %}
+{% download https://drive.google.com/uc?id=1Iy8Oe01o_AOQbIeiuE_pEjfkegKcJuPexQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JInternalFrame f1 = new JInternalFrame("basic", true, true, true, true) {

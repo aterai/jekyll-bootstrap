@@ -7,13 +7,13 @@ tags: [JTabbedPane, InputVerifier, Focus]
 author: aterai
 pubdate: 2016-12-26T16:12:59+09:00
 description: JTabbedPaneのタブ移動時にタブコンポーネントに設定されたInputVerifierを実行し、その検証で入力が無効な場合はタブの切替をキャンセルします。
-image: https://drive.google.com/uc?export=view&id=1E4H4aD4uZ-DBc_H6-KLuEEsZoyJqNxdHuQ
+image: https://drive.google.com/uc?id=1E4H4aD4uZ-DBc_H6-KLuEEsZoyJqNxdHuQ
 comments: true
 ---
 ## 概要
 `JTabbedPane`のタブ移動時にタブコンポーネントに設定された`InputVerifier`を実行し、その検証で入力が無効な場合はタブの切替をキャンセルします。
 
-{% download https://drive.google.com/uc?export=view&id=1E4H4aD4uZ-DBc_H6-KLuEEsZoyJqNxdHuQ %}
+{% download https://drive.google.com/uc?id=1E4H4aD4uZ-DBc_H6-KLuEEsZoyJqNxdHuQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>tabbedPane.setModel(new DefaultSingleSelectionModel() {

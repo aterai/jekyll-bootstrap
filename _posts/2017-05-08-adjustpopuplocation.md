@@ -7,13 +7,13 @@ tags: [JPopupMenu]
 author: aterai
 pubdate: 2017-05-08T14:26:08+09:00
 description: JPopupMenuを設定したコンポーネントの表示領域内に収まるように、JPopupMenuの表示位置を調整します。
-image: https://drive.google.com/uc?export=view&id=1P6r7-2s31EBtrsPd4FGrzQidQKTrYhS7Wg
+image: https://drive.google.com/uc?id=1P6r7-2s31EBtrsPd4FGrzQidQKTrYhS7Wg
 comments: true
 ---
 ## 概要
 `JPopupMenu`を設定したコンポーネントの表示領域内に収まるように、`JPopupMenu`の表示位置を調整します。
 
-{% download https://drive.google.com/uc?export=view&id=1P6r7-2s31EBtrsPd4FGrzQidQKTrYhS7Wg %}
+{% download https://drive.google.com/uc?id=1P6r7-2s31EBtrsPd4FGrzQidQKTrYhS7Wg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JPopupMenu popup = new JPopupMenu() {

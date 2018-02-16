@@ -7,13 +7,13 @@ tags: [JTree, TreeNode, TreeCellRenderer]
 author: aterai
 pubdate: 2017-03-06T15:12:27+09:00
 description: JTreeの各ノードに章番号を自動的に追加し、タイトル先頭にそれを表示するTreeCellRendererを作成します。
-image: https://drive.google.com/uc?export=view&id=1sr9avobwqRpWX2bNvLVutxduLQa66KvKTg
+image: https://drive.google.com/uc?id=1sr9avobwqRpWX2bNvLVutxduLQa66KvKTg
 comments: true
 ---
 ## 概要
 `JTree`の各ノードに章番号を自動的に追加し、タイトル先頭にそれを表示する`TreeCellRenderer`を作成します。
 
-{% download https://drive.google.com/uc?export=view&id=1sr9avobwqRpWX2bNvLVutxduLQa66KvKTg %}
+{% download https://drive.google.com/uc?id=1sr9avobwqRpWX2bNvLVutxduLQa66KvKTg %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ChapterNumberingTreeCellRenderer extends DefaultTreeCellRenderer {

@@ -7,13 +7,13 @@ tags: [JComboBox, JToolTip, JLayer]
 author: aterai
 pubdate: 2017-04-24T14:34:47+09:00
 description: JComboBoxの各リストアイテムやArrowButtonに、それぞれ異なるToolTipTextを設定します。
-image: https://drive.google.com/uc?export=view&id=1-hvVHO5A6M8VTO8QPye3epe-ZazLLTzfDQ
+image: https://drive.google.com/uc?id=1-hvVHO5A6M8VTO8QPye3epe-ZazLLTzfDQ
 comments: true
 ---
 ## 概要
 `JComboBox`の各リストアイテムや`ArrowButton`に、それぞれ異なる`ToolTipText`を設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1-hvVHO5A6M8VTO8QPye3epe-ZazLLTzfDQ %}
+{% download https://drive.google.com/uc?id=1-hvVHO5A6M8VTO8QPye3epe-ZazLLTzfDQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>private static JComponent makeComboBox() {

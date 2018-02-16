@@ -7,13 +7,13 @@ tags: [JInternalFrame, JDesktopIcon, DesktopManager, NimbusLookAndFeel]
 author: aterai
 pubdate: 2017-08-21T16:35:32+09:00
 description: JInternalFrameのタイトル文字列幅を取得し、その値をアイコン化した場合のJDesktopIconの幅として適用します。
-image: https://drive.google.com/uc?export=view&id=1cfeEsnoOvSxcwzNqjqckcWIhkgDaGxzfRA
+image: https://drive.google.com/uc?id=1cfeEsnoOvSxcwzNqjqckcWIhkgDaGxzfRA
 comments: true
 ---
 ## 概要
 `JInternalFrame`のタイトル文字列幅を取得し、その値をアイコン化した場合の`JDesktopIcon`の幅として適用します。
 
-{% download https://drive.google.com/uc?export=view&id=1cfeEsnoOvSxcwzNqjqckcWIhkgDaGxzfRA %}
+{% download https://drive.google.com/uc?id=1cfeEsnoOvSxcwzNqjqckcWIhkgDaGxzfRA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JDesktopPane desktop = new JDesktopPane();

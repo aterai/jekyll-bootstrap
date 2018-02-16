@@ -7,13 +7,13 @@ tags: [JTree, TreeCellEditor, TreeCellRenderer, JButton, JPanel]
 author: aterai
 pubdate: 2018-02-12T19:19:08+09:00
 description: JTreeのセルエディタとしてクリック可能なJButtonを複数したJPanelを設定します。
-image: https://drive.google.com/uc?export=view&id=1av1tLvTqv_249jfJdwdsuhEyB5i3zikC7Q
+image: https://drive.google.com/uc?id=1av1tLvTqv_249jfJdwdsuhEyB5i3zikC7Q
 comments: true
 ---
 ## 概要
 `JTree`のセルエディタとしてクリック可能な`JButton`を複数した`JPanel`を設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1av1tLvTqv_249jfJdwdsuhEyB5i3zikC7Q %}
+{% download https://drive.google.com/uc?id=1av1tLvTqv_249jfJdwdsuhEyB5i3zikC7Q %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ButtonCellEditor extends AbstractCellEditor implements TreeCellEditor {

@@ -7,13 +7,13 @@ tags: [JPopupMenu, UIManager, LookAndFeel]
 author: aterai
 pubdate: 2017-11-20T15:20:31+09:00
 description: JPopupMenuを閉じるイベントが別コンポーネントをクリックすることで発生したとき、コンポーネントのクリックイベントを実行するかどうかを切り替えます。
-image: https://drive.google.com/uc?export=view&id=1hqQoBKoHLGEqyn7rHxhKsyo-HBHiKTwAEQ
+image: https://drive.google.com/uc?id=1hqQoBKoHLGEqyn7rHxhKsyo-HBHiKTwAEQ
 comments: true
 ---
 ## 概要
 `JPopupMenu`を閉じるイベントが別コンポーネントをクリックすることで発生したとき、コンポーネントのクリックイベントを実行するかどうかを切り替えます。
 
-{% download https://drive.google.com/uc?export=view&id=1hqQoBKoHLGEqyn7rHxhKsyo-HBHiKTwAEQ %}
+{% download https://drive.google.com/uc?id=1hqQoBKoHLGEqyn7rHxhKsyo-HBHiKTwAEQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("PopupMenu.consumeEventOnClose", false);

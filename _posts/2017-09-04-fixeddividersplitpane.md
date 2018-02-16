@@ -7,13 +7,13 @@ tags: [JSplitPane, Divider]
 author: aterai
 pubdate: 2017-09-04T15:18:48+09:00
 description: JSplitPaneのDividerをマウスやキー入力などで移動不可になるように設定します。
-image: https://drive.google.com/uc?export=view&id=1eHpxPFoB6tM1nQoTdo1jYb29F6W2IyIwyw
+image: https://drive.google.com/uc?id=1eHpxPFoB6tM1nQoTdo1jYb29F6W2IyIwyw
 comments: true
 ---
 ## 概要
 `JSplitPane`の`Divider`をマウスやキー入力などで移動不可になるように設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1eHpxPFoB6tM1nQoTdo1jYb29F6W2IyIwyw %}
+{% download https://drive.google.com/uc?id=1eHpxPFoB6tM1nQoTdo1jYb29F6W2IyIwyw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JSplitPane sp = new JSplitPane(...);

@@ -7,13 +7,13 @@ tags: [JFormattedTextField, MaskFormatter, FormatterFactory]
 author: aterai
 pubdate: 2017-03-13T14:44:45+09:00
 description: JFormattedTextFieldにプレースホルダ文字やプレースホルダ文字列を追加したMaskFormatterを設定します。
-image: https://drive.google.com/uc?export=view&id=1jr_CEn9HFdHVL7hiYobxNFuuuVvnlXuyrA
+image: https://drive.google.com/uc?id=1jr_CEn9HFdHVL7hiYobxNFuuuVvnlXuyrA
 comments: true
 ---
 ## 概要
 `JFormattedTextField`にプレースホルダ文字やプレースホルダ文字列を追加した`MaskFormatter`を設定します。
 
-{% download https://drive.google.com/uc?export=view&id=1jr_CEn9HFdHVL7hiYobxNFuuuVvnlXuyrA %}
+{% download https://drive.google.com/uc?id=1jr_CEn9HFdHVL7hiYobxNFuuuVvnlXuyrA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>MaskFormatter formatter2 = new MaskFormatter(mask);
