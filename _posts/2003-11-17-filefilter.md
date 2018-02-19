@@ -50,6 +50,7 @@ fileChooser.addChoosableFileFilter(filter);
 上記のように説明の後に、可変長引数で拡張子を複数指定できます。ドットは必要なく、大文字小文字も区別されません。
 
 ## 参考リンク
+- [JFileChooser#addChoosableFileFilter(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#addChoosableFileFilter-javax.swing.filechooser.FileFilter-)
 - [Bug ID: 6400960 Swing File*Filters should extend java.io.File*Filters](https://bugs.openjdk.java.net/browse/JDK-6400960)
 
 <!-- dummy comment line for breaking list -->

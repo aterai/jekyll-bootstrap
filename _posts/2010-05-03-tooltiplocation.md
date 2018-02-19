@@ -51,7 +51,7 @@ comments: true
 - 左クリック以外でドラッグ
     - `PopupFactory#getPopup()`で座標を指定した、`Popup`を取得し表示
     - `Popup`の位置が変更できずこれを再作成しているため、親フレームの外に`JToolTip`が表示される場合は非表示に設定
-        - `JWindow`は`HeavyWeight`なので、再作成すると表示がチラついてしまう
+        - フレーム外では`HeavyWeight`の`JWindow`で`JToolTip`が表示されるため、再作成すると表示がチラついてしまう
 
 <!-- dummy comment line for breaking list -->
 

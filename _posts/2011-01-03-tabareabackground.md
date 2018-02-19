@@ -44,6 +44,7 @@ UIManager.put("TabbedPane.borderHightlightColor", Color.WHITE);
 ## 参考リンク
 - [JTabbedPaneの選択文字色を変更](https://ateraimemo.com/Swing/ColorTab.html)
 - [JTabbedPaneのタブ文字列をハイライト](https://ateraimemo.com/Swing/TabTitleHighlight.html)
+- [JDK-8078269 JTabbedPane UI Property TabbedPane.tabAreaBackground no longer works - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8078269)
 
 <!-- dummy comment line for breaking list -->
 
