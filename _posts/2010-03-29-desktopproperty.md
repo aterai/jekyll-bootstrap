@@ -50,6 +50,6 @@ public class DesktopPropertyList {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- メモ: [Windows デスクトップ関連のプロパティーのサポート](http://docs.oracle.com/javase/jp/6/technotes/guides/swing/1.4/w2k_props.html)の、(`TBI`)の意味を調べる。「メッセージボックスのフォントカラー」のプロパティー名は文字化け？、重複？。同じく、アイコンのサイズとアイコンの横の間隔など。 -- *aterai* 2010-03-29 (月) 15:07:50
+- メモ: [Windows デスクトップ関連のプロパティーのサポート](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/w2k_props.html)の、(`TBI`)の意味を調べる。「メッセージボックスのフォントカラー」のプロパティー名は文字化け？、重複？。同じく、アイコンのサイズとアイコンの横の間隔など。 -- *aterai* 2010-03-29 (月) 15:07:50
 
 <!-- dummy comment line for breaking list -->

@@ -34,7 +34,7 @@ comments: true
 
 - 追記: `1.5.0_08`で以下のように修正された
     - [File.isFile() は Windows プラットフォームで "con" に "false" を返すべき](https://bugs.openjdk.java.net/browse/JDK-6176051)
-- [Java SE 6 の拡張機能 - Java I/O の拡張機能](http://docs.oracle.com/javase/jp/6/technotes/guides/io/enhancements.html#6)
+- [JDK 6リリースでの拡張機能 - Java I/O の拡張機能](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/io/enhancements.html#jdk6)
     - 引用:「`CON`、`NUL`、`AUX`、`LPT`などの予約されたデバイス名には必ず`false`を返すように、`File.isFile()`の`Windows`実装が変更されました。 以前の戻り値は`true`で、それが`Unix`で使用するデバイスの動作と整合していないことから、対象ユーザーはこれをバグとみなしていました。」
 
 <!-- dummy comment line for breaking list -->

@@ -65,8 +65,8 @@ JTextArea textArea = new JTextArea() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [ClipboardService サービスの使い方 - JNLP API の使用例](http://docs.oracle.com/javase/jp/6/technotes/guides/javaws/developersguide/examples.html#ClipboardService)
-- [Java Web Start 開発者ガイド](http://docs.oracle.com/javase/jp/6/technotes/guides/javaws/developersguide/contents.html)
+- [ClipboardService サービスの使い方 - JNLP API の使用例](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/javaws/developersguide/examples.html#ClipboardService)
+- [Java Web Start 開発者ガイド](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/javaws/developersguide/contents.html)
 
 <!-- dummy comment line for breaking list -->
 

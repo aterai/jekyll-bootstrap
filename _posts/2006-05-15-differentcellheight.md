@@ -16,33 +16,40 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTK2Z8UOTI/AAAAAAAAAWo/7GoDkuVX8Fc/s800/DifferentCellHeight.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TextAreaRenderer extends JTextArea implements ListCellRenderer&lt;String&gt; {
-  private Border focusBorder;
-  private static final Border NOMAL_BORDER =
-    BorderFactory.createEmptyBorder(2, 2, 2, 2);
+<pre class="prettyprint"><code>class TextAreaRenderer&lt;E extends String&gt; extends JTextArea
+                                         implements ListCellRenderer&lt;E&gt; {
   private static final Color EVEN_COLOR = new Color(230, 255, 230);
+  private Border noFocusBorder;
+  private Border focusBorder;
   @Override public Component getListCellRendererComponent(
-      JList list, String str, int index,
+      JList&lt;? extends E&gt; list, E value, int index,
       boolean isSelected, boolean cellHasFocus) {
-    //setLineWrap(true);
-    setText(Objects.toString(str, ""));
+    // setLineWrap(true);
+    setText(Objects.toString(value, ""));
     if (isSelected) {
-      setBackground(list.getSelectionBackground());
+      // Nimbus
+      setBackground(new Color(list.getSelectionBackground().getRGB()));
       setForeground(list.getSelectionForeground());
     } else {
       setBackground(index % 2 == 0 ? EVEN_COLOR : list.getBackground());
       setForeground(list.getForeground());
     }
     if (cellHasFocus) {
-      if (focusBorder == null) {
-        focusBorder = new DotBorder(
-            new Color(~list.getSelectionBackground().getRGB()), 2);
-      }
       setBorder(focusBorder);
     } else {
-      setBorder(NOMAL_BORDER);
+      setBorder(noFocusBorder);
     }
     return this;
+  }
+  @Override public void updateUI() {
+    super.updateUI();
+    focusBorder = UIManager.getBorder("List.focusCellHighlightBorder");
+    noFocusBorder = UIManager.getBorder("List.noFocusBorder");
+    if (Objects.isNull(noFocusBorder) &amp;&amp; Objects.nonNull(focusBorder)) {
+      Insets i = focusBorder.getBorderInsets(this);
+      noFocusBorder = BorderFactory.createEmptyBorder(
+          i.top, i.left, i.bottom, i.right);
+    }
   }
 }
 

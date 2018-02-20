@@ -122,10 +122,10 @@ comments: true
 
 ## 解説
 - `scrollRectToVisible`
-    - マウスを放したあと、タイマーを起動し、`JComponent#scrollRectToVisible(Rectangle)`メソッドでスクロール
+    - マウスがリリースされたらタイマーを起動し、`JComponent#scrollRectToVisible(Rectangle)`メソッドでスクロール
 - `setViewPosition`
-    - マウスを放したあと、タイマーを起動し、`JViewport#setViewPosition(Point)`メソッドでスクロール
-    - `View`として設定されている`JLabel`の外で、移動が止まった(またはマウスがリリースされた)場合は、別のタイマーで`JLabel`の縁まで戻る
+    - マウスがリリースされたらタイマーを起動し、`JViewport#setViewPosition(Point)`メソッドでスクロール
+    - `View`として設定されている`JLabel`の外で移動が止まった(またはマウスがリリースされた)場合は、別のタイマーで`JLabel`の縁まで戻る
 
 <!-- dummy comment line for breaking list -->
 

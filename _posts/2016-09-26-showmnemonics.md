@@ -44,7 +44,7 @@ showMnemonicsCheck.addActionListener(e -&gt; {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Windows Look & Feel のキーボードナビゲーションの非表示](http://docs.oracle.com/javase/jp/7/technotes/guides/swing/1.4/keyboard_nav_hiding.html)
+- [Windows Look & Feelのキーボード・ナビゲーションの非表示](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/keyboard_nav_hiding.html)
 
 <!-- dummy comment line for breaking list -->
 

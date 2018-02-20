@@ -39,7 +39,7 @@ field.addKeyListener(new ComboKeyHandler(combo));
     super();
     this.comboBox = combo;
     for (int i = 0; i &lt; comboBox.getModel().getSize(); i++) {
-      list.add((String) comboBox.getItemAt(i));
+      list.add(comboBox.getItemAt(i));
     }
   }
   @Override public void keyTyped(final KeyEvent e) {
@@ -81,7 +81,6 @@ field.addKeyListener(new ComboKeyHandler(combo));
       if (!list.contains(text)) {
         list.add(text);
         Collections.sort(list);
-        //setSuggestionModel(comboBox, new DefaultComboBoxModel(list), text);
         setSuggestionModel(comboBox, getSuggestedModel(list, text), text);
       }
       shouldHide = true;

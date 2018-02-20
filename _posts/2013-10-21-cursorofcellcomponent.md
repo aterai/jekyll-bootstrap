@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class LinkCellList&lt;E&gt; extends JList&lt;E&gt; {
   private int prevIndex = -1;
-  public LinkCellList(ListModel&lt;E&gt; model) {
+  protected LinkCellList(ListModel&lt;E&gt; model) {
     super(model);
   }
   @Override public void updateUI() {
@@ -28,12 +28,13 @@ comments: true
     setSelectionBackground(null);
     super.updateUI();
     setFixedCellHeight(32);
-    setCellRenderer(new LinkCellRenderer&lt;E&gt;());
+    setCellRenderer(new LinkCellRenderer&lt;&gt;());
+    //TEST: putClientProperty("List.isFileList", Boolean.TRUE);
   }
   @Override protected void processMouseMotionEvent(MouseEvent e) {
     Point pt = e.getPoint();
     int i = locationToIndex(pt);
-    E s = ((ListModel&lt;E&gt;) getModel()).getElementAt(i);
+    E s = getModel().getElementAt(i);
     Component c = getCellRenderer().getListCellRendererComponent(
         this, s, i, false, false);
     Rectangle r = getCellBounds(i, i);
@@ -43,12 +44,10 @@ comments: true
     }
     prevIndex = i;
     pt.translate(-r.x, -r.y);
-    Component cmp = SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y);
-    if (cmp == null) {
-      setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    } else {
-      setCursor(cmp.getCursor());
-    }
+    setCursor(
+      Optional.ofNullable(SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y))
+        .map(Component::getCursor)
+        .orElse(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR)));
   }
 }
 </code></pre>
@@ -69,5 +68,8 @@ comments: true
 - 取得した子コンポーネントのカーソルを`JList`のカーソルとして設定
 
 <!-- dummy comment line for breaking list -->
+
+## 参考リンク
+[JListのセルレンダラーとして設定したJEditorPaneからHyperlinkEventを取得する](https://ateraimemo.com/Swing/ListCellHyperlinkListener.html)
 
 ## コメント

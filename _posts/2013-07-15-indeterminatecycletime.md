@@ -35,7 +35,7 @@ progressBar.setIndeterminate(true);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [不確定進捗バー - Java™ 2 SDK, Standard Edition, v 1.4 での Swing の変更点および新機能](http://docs.oracle.com/javase/jp/7/technotes/guides/swing/1.4/pb.html)
+- [不確定進捗バー - Java™ 2 SDK, Standard Edition, v 1.4 での Swing の変更点および新機能](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/pb.html)
 
 <!-- dummy comment line for breaking list -->
 
