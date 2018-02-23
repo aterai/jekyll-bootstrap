@@ -16,69 +16,63 @@ comments: true
 {% download https://lh6.googleusercontent.com/-5GlQEjeLoH8/ThqUIL9b4UI/AAAAAAAAA_E/9h5dxYzSSm8/s800/TreeComboBox.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TreeComboBox extends JComboBox {
-  public TreeComboBox() {
-    super();
-    setRenderer(new DefaultListCellRenderer() {
+<pre class="prettyprint"><code>class TreeComboBox&lt;E extends TreeNode&gt; extends JComboBox&lt;E&gt; {
+  private boolean isNotSelectableIndex;
+  private final Action up = new AbstractAction() {
+    @Override public void actionPerformed(ActionEvent e) {
+      int si = getSelectedIndex();
+      for (int i = si - 1; i &gt;= 0; i--) {
+        if (getItemAt(i).isLeaf()) {
+          setSelectedIndex(i);
+          break;
+        }
+      }
+    }
+  };
+  private final Action down = new AbstractAction() {
+    @Override public void actionPerformed(ActionEvent e) {
+      int si = getSelectedIndex();
+      for (int i = si + 1; i &lt; getModel().getSize(); i++) {
+        if (getItemAt(i).isLeaf()) {
+          setSelectedIndex(i);
+          break;
+        }
+      }
+    }
+  };
+  @Override public void updateUI() {
+    super.updateUI();
+    ListCellRenderer&lt;? super E&gt; renderer = getRenderer();
+    setRenderer(new ListCellRenderer&lt;E&gt;() {
       @Override public Component getListCellRendererComponent(
-          JList list, Object value, int index,
+          JList&lt;? extends E&gt; list, E value, int index,
           boolean isSelected, boolean cellHasFocus) {
-        JComponent c;
-        if (value instanceof DefaultMutableTreeNode) {
+        JLabel l = (JLabel) renderer.getListCellRendererComponent(
+            list, value, index, isSelected, cellHasFocus);
+        l.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        if (index &gt;= 0 &amp;&amp; value instanceof DefaultMutableTreeNode) {
           DefaultMutableTreeNode node = (DefaultMutableTreeNode) value;
-          int indent = 2 + (index &lt; 0 ? 0 : (node.getPath().length - 2) * 16);
-          if (node.isLeaf()) {
-            c = (JComponent) super.getListCellRendererComponent(
-                list, value, index, isSelected, cellHasFocus);
-          } else {
-            c = (JComponent) super.getListCellRendererComponent(
-                list, value, index, false, false);
-            JLabel l = (JLabel) c;
+          int indent = Math.max(0, node.getLevel() - 1) * 16;
+          l.setBorder(BorderFactory.createEmptyBorder(1, indent + 1, 1, 1));
+          if (!value.isLeaf()) {
             l.setForeground(Color.WHITE);
             l.setBackground(Color.GRAY.darker());
           }
-          c.setBorder(BorderFactory.createEmptyBorder(0, indent, 0, 0));
-        } else {
-          c = (JComponent) super.getListCellRendererComponent(
-              list, value, index, isSelected, cellHasFocus);
         }
-        return c;
+        return l;
       }
     });
-    Action up = new AbstractAction() {
-      @Override public void actionPerformed(ActionEvent e) {
-        int si = getSelectedIndex();
-        for (int i = si - 1; i &gt;= 0; i--) {
-          Object o = getItemAt(i);
-          if (o instanceof TreeNode &amp;&amp; ((TreeNode) o).isLeaf()) {
-            setSelectedIndex(i);
-            break;
-          }
-        }
-      }
-    };
-    Action down = new AbstractAction() {
-      @Override public void actionPerformed(ActionEvent e) {
-        int si = getSelectedIndex();
-        for (int i = si + 1; i &lt; getModel().getSize(); i++) {
-          Object o = getItemAt(i);
-          if (o instanceof TreeNode &amp;&amp; ((TreeNode) o).isLeaf()) {
-            setSelectedIndex(i);
-            break;
-          }
-        }
-      }
-    };
-    ActionMap am = getActionMap();
-    am.put("selectPrevious3", up);
-    am.put("selectNext3", down);
-    InputMap im = getInputMap();
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0),      "selectPrevious3");
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_UP, 0),   "selectPrevious3");
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0),    "selectNext3");
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
+    EventQueue.invokeLater(() -&gt; {
+      ActionMap am = getActionMap();
+      am.put("selectPrevious3", up);
+      am.put("selectNext3", down);
+      InputMap im = getInputMap();
+      im.put(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0), "selectPrevious3");
+      im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_UP, 0), "selectPrevious3");
+      im.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "selectNext3");
+      im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
+    });
   }
-  private boolean isNotSelectableIndex = false;
   @Override public void setPopupVisible(boolean v) {
     if (!v &amp;&amp; isNotSelectableIndex) {
       isNotSelectableIndex = false;
@@ -87,11 +81,11 @@ comments: true
     }
   }
   @Override public void setSelectedIndex(int index) {
-    Object o = getItemAt(index);
-    if (o instanceof TreeNode &amp;&amp; !((TreeNode) o).isLeaf()) {
-      isNotSelectableIndex = true;
-    } else {
+    TreeNode node = getItemAt(index);
+    if (Objects.nonNull(node) &amp;&amp; node.isLeaf()) {
       super.setSelectedIndex(index);
+    } else {
+      isNotSelectableIndex = true;
     }
   }
 }
@@ -102,7 +96,8 @@ comments: true
 
 - `TreeNode#isLeaf()`の場合だけ、選択可能
     - [JComboBoxのアイテムを選択不可にする](https://ateraimemo.com/Swing/DisableItemComboBox.html)
-- 子要素のインデントは`BorderFactory.createEmptyBorder(0, indent, 0, 0)`で設定
+- 第`0`レベルのルートノードは非表示で、第`1`レベルノードのインデントは`0`に設定
+- 第`2`レベル以降の子ノードのインデントは`BorderFactory.createEmptyBorder(1, indent + 1, 1, 1)`で設定
 
 <!-- dummy comment line for breaking list -->
 

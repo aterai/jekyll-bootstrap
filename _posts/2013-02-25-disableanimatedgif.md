@@ -42,7 +42,7 @@ comments: true
 
 ## 参考リンク
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
-- [ImageObserver (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/image/ImageObserver.html)
+- [ImageObserver (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/image/ImageObserver.html)
 - [ColorConvertOpで画像をグレースケールに変換](https://ateraimemo.com/Swing/ColorConvertOp.html)
 - [Animated Gifからフレーム画像を抽出する](https://ateraimemo.com/Swing/ExtractFramesFromAnimatedGif.html)
 

@@ -30,7 +30,7 @@ table.scrollRectToVisible(r);
 <!-- dummy comment line for breaking list -->
 
 - `JList`
-    - [JList#ensureIndexIsVisible(int)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JList.html#ensureIndexIsVisible%28int%29)を使って、追加した最終行を可視化(このメソッド内部で`scrollRectToVisible`を使用)
+    - [JList#ensureIndexIsVisible(int)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#ensureIndexIsVisible-int-)を使って、追加した最終行を可視化(このメソッド内部で`scrollRectToVisible`を使用)
         
         <pre class="prettyprint"><code>Rectangle cellBounds = list.getCellBounds(index, index);
         if (cellBounds != null) {
@@ -38,7 +38,7 @@ table.scrollRectToVisible(r);
         }
 </code></pre>
 - `JTree`
-    - [JTree#scrollRowToVisible(int)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTree.html#scrollRowToVisible%28int%29)、または[JTree#scrollPathToVisible(TreePath)](http://docs.oracle.com/javase/jp/6/api/javax/swing/JTree.html#scrollPathToVisible%28javax.swing.tree.TreePath%29)で追加した最終行を可視化
+    - [JTree#scrollRowToVisible(int)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#scrollRowToVisible-int-)、または[JTree#scrollPathToVisible(TreePath)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#scrollPathToVisible-javax.swing.tree.TreePath-)で追加した最終行を可視化
     - `tree.scrollRowToVisible(row)`は `tree.scrollPathToVisible(tree.getPathForRow(row))`と同等
     - `JTree#scrollPathToVisible(TreePath)`は内部で、`tree.scrollRectToVisible(tree.getPathBounds(path))`を使用
         

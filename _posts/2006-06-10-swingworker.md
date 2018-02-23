@@ -154,7 +154,7 @@ class CancelAction extends AbstractAction {
 `SwingWorker#process()`メソッド内などで`JPanel#isDisplayable()`を呼び、アプリケーション(`frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);`が設定されている)が終了している場合は、タスクを中断することで`SwingWorker`が生き残るのを防止しています。
 
 ## 参考リンク
-- [SwingWorker (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
+- [SwingWorker (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SwingWorker.html)
 - [Improve Application Performance With SwingWorker in Java SE 6](http://www.oracle.com/technetwork/articles/javase/swingworker-137249.html)
 - [Worker Threads and SwingWorker](https://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html)
 - [JTableのセルにJProgressBarを表示](https://ateraimemo.com/Swing/TableCellProgressBar.html)

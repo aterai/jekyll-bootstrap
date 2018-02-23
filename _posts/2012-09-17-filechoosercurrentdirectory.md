@@ -28,7 +28,8 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
 ## 解説
 `JFileChooser.DIRECTORIES_ONLY`で、ディレクトリのみ表示する場合のカレントディレクトリの設定をテストします。
 
-- [setCurrentDirectory](http://docs.oracle.com/javase/jp/6/api/javax/swing/JFileChooser.html#setCurrentDirectory%28java.io.File%29): `JFileChooser#setCurrentDirectory(File)`で`CurrentDirectory`を設定
+- `setCurrentDirectory`
+    - [JFileChooser#setCurrentDirectory(File)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setCurrentDirectory-java.io.File-)メソッドで`CurrentDirectory`を設定
     - 参照: コンボボックスにディレクトリ名
     - リストには、`CurrentDirectory`内のディレクトリ一覧
     - フォルダ名: テキストフィールドは前回の文字列(`setCurrentDirectory`では変化しない)
@@ -44,7 +45,8 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
               }
             };
 </code></pre>
-- [setSelectedFile](http://docs.oracle.com/javase/jp/6/api/javax/swing/JFileChooser.html#setSelectedFile%28java.io.File%29): `JFileChooser#setSelectedFile(File)`で選択ファイルとしてディレクトリを設定
+- `setSelectedFile`
+    - [JFileChooser#setSelectedFile(File)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setSelectedFile-java.io.File-)メソッドで選択ファイルとしてディレクトリを設定
     - 参照: コンボボックスには、選択ファイルとして設定したディレクトリの親ディレクトリ名
     - リストには、親ディレクトリ内のディレクトリ一覧
         - `Metal`や`Nimbus LookAndFeel`では、選択ファイルとして設定したディレクトリが選択状態になる
