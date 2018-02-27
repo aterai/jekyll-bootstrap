@@ -93,7 +93,7 @@ set CLASSPATH=c:\temp;.\target\classes
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 「クラスパスからのパス」などの意味が分かり辛いので、[JarURLConnection (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/net/JarURLConnection.html)を参考にして「パス」を「エントリ」に変更してみました。 -- *aterai* 2008-02-15 (金) 18:04:14
+- 「クラスパスからのパス」などの意味が分かり辛いので、[JarURLConnection (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/net/JarURLConnection.html)を参考にして「パス」を「エントリ」に変更してみました。 -- *aterai* 2008-02-15 (金) 18:04:14
 - `.jar`ファイルのクラスで -- *kind* 2012-03-02 (金) 14:04:06
     - 見落としてました。最近なんか重いので途切れてしまったのでしょうか。 -- *aterai* 2012-03-05 (月) 16:26:35
 

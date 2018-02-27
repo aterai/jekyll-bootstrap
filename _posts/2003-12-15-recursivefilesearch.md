@@ -93,7 +93,7 @@ public class FilesWalkTest {
 ## 参考リンク
 - [Java入門 ファイル](http://msugai.fc2web.com/java/IO/fileObj.html)
 - [How to Use Progress Bars](https://docs.oracle.com/javase/tutorial/uiswing/components/progress.html)
-- [SwingWorker (Java Platform SE 6)](https://docs.oracle.com/javase/jp/6/api/javax/swing/SwingWorker.html)
+- [SwingWorker (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SwingWorker.html)
 - [Using a Swing Worker Thread](http://web.archive.org/web/20090830092511/http://java.sun.com/products/jfc/tsc/articles/threads/threads2.html)
 
 <!-- dummy comment line for breaking list -->

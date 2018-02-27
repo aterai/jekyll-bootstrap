@@ -123,7 +123,7 @@ comments: true
     - `frame.dispose()`で、ウィンドウがクローズされたときに呼び出されるリスナーのメソッド
     - `windowClosing`の後、自動的に`windowClosed`が呼び出されるのは、`WindowConstants.DISPOSE_ON_CLOSE`の場合のみ
     - このサンプルでは、`Web Start`から起動しても終了できるように、`frame.dispose()`すれば必ず呼び出されるこのメソッド中で`System.exit(0);`を使い、`JVM`ごとシャットダウンしている
-        - 参考: [When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)
+        - 参考: [When DISPOSE_ON_CLOSE met WebStart · Pushing Pixels](https://www.pushing-pixels.org/2008/01/14/when-dispose_on_close-met-webstart.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -158,7 +158,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [WindowListener (Java Platform SE 6)](http://docs.oracle.com/javase/jp/6/api/java/awt/event/WindowListener.html)
+- [WindowListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/WindowListener.html)
 - [When DISPOSE_ON_CLOSE met WebStart](http://www.pushing-pixels.org/?p=232)
 
 <!-- dummy comment line for breaking list -->
@@ -167,6 +167,6 @@ comments: true
 - 私は以前　この終了をキャンセルするかどうかなどを確認するダイアログを作成したことがあります。あなたのソースコードは　参考のかいがあると思います。でも　ひとつの問題があるんですけど、`textarea`に入力した文字列を削除する場合は　`JFrame`のタイトルが変化されていません、どうですか？ -- *そうがい* 2007-10-08 (Mon) 15:11:56
     - こんばんは。「`123`→`12345`(`45`追加)→`123`(`45`削除)」と追加、削除をして元の状態に戻っても、タイトルが変化しないのは、仕様です。比較のコストが大きくなってしまいそうで嫌なので避けています。 -- *aterai* 2007-10-08 (月) 23:07:09
 - 変更をアスタリスクに変更、コードの構成を変更、スクリーンショット更新 -- *aterai* 2008-04-22 (火) 21:35:25
-- メモ: [シャットダウンフック API の設計](http://docs.oracle.com/javase/jp/6/technotes/guides/lang/hook-design.html) -- *aterai* 2008-11-25 (火) 11:25:18
+- メモ: [シャットダウン・フックAPIの設計](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/lang/hook-design.html) -- *aterai* 2008-11-25 (火) 11:25:18
 
 <!-- dummy comment line for breaking list -->

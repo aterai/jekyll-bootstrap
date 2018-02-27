@@ -49,7 +49,7 @@ if (com != null &amp;&amp; com.getLength() &gt; 0) {
 1. `IIOMetadata`から`XML`の`DOM`(`org.w3c.dom.Node`)形式でデータを取得
 1. `com`タグの`comment`属性からコメントを取得
 
-タグやマーカなどの形式は、[JPEG メタデータ形式の仕様および使用上の注意](http://docs.oracle.com/javase/jp/7/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)や、以下の`XML`一覧表示を参考にしてください。
+タグやマーカなどの形式は、[JPEG メタデータ形式の仕様および使用上の注意](https://docs.oracle.com/javase/jp/8/docs/api/javax/imageio/metadata/doc-files/jpeg_metadata.html)や、以下の`XML`一覧表示を参考にしてください。
 
 - `JTextArea`
     - 属性は頭に`#`をつけて表示

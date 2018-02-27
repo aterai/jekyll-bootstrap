@@ -9,7 +9,7 @@ pubdate: 2008-09-15T17:36:51+09:00
 description: JDK 6で導入されたTableRowSorterのソートを、TableSorter.javaのようにヘッダクリックで昇順、降順、初期状態に切り替わるように設定します。
 image: https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTWVWrGvdI/AAAAAAAAApE/-DL1kAZzGsM/s800/TriStateSorting.png
 hreflang:
-    href: http://java-swing-tips.blogspot.com/2008/09/jdk6-cycle-through-ascending-descending.html
+    href: https://java-swing-tips.blogspot.com/2008/09/jdk6-cycle-through-ascending-descending.html
     lang: en
 comments: true
 ---
@@ -46,7 +46,7 @@ table.setRowSorter(sorter);
 - [DefaultRowSorter#toggleSortOrder(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultRowSorter.html#toggleSortOrder-int-)
 - [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
 - [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
-- [Java Swing Tips: Apply sort order cycle with ascending, descending, and unsorted in TableRowSorter with multi-key sorting](https://java-swing-tips.blogspot.jp/2017/08/apply-sort-order-cycle-with-ascending.html)
+- [Java Swing Tips: Apply sort order cycle with ascending, descending, and unsorted in TableRowSorter with multi-key sorting](https://java-swing-tips.blogspot.com/2017/08/apply-sort-order-cycle-with-ascending.html)
     - `setSortKeys(null)`ですべてのソートキーをクリアするのではなく、他のソートキーは維持したまま昇順、降順、初期状態を遷移するサンプル(ssrさんがメールで投稿)
 
 <!-- dummy comment line for breaking list -->

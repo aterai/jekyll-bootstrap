@@ -9,7 +9,7 @@ pubdate: 2013-05-13T16:59:22+09:00
 description: JTableのセルを横方向に連結するセルレンダラーを作成します。
 image: https://lh5.googleusercontent.com/-wcXag_bBidU/UY-uA3riCRI/AAAAAAAABrs/Q_V-fdNVRu8/s800/ColumnSpanningCellRenderer.png
 hreflang:
-    href: http://java-swing-tips.blogspot.com/2013/05/column-spanning-tablecellrenderer.html
+    href: https://java-swing-tips.blogspot.com/2013/05/column-spanning-tablecellrenderer.html
     lang: en
 comments: true
 ---
@@ -131,6 +131,6 @@ class OptionPaneDescription {
 - `JTable`をスクロールするとおかしくなる？ -- *aterai* 2013-06-04 (火) 13:37:19
     - `0`行目ではなく、一番上に表示されている行の表示が原因かもしれない。 -- *aterai* 2013-06-04 (火) 13:44:14
     - 移動の幅からみて、`TableCellRenderer`の`Border`が関連しているような気がするけど、よく分からない。 -- *aterai* 2013-06-04 (火) 15:08:18
-    - 一番上の行のみの症状なので、ヘッダセルレンダラーとか関係してるのかと調べてたけど、`JViewport#setViewPosition(Point)`を使って直接ジャンプ？すれは、正常にヘッダサイズを変更できるようだ。もしかしたら[次にビューポートにペイントが呼び出されたときに、クリッピング領域がビューポートサイズより小さい場合には、タイマーが開始され全体をペイントし直す](http://docs.oracle.com/javase/jp/6/api/javax/swing/JViewport.html)せい？ -- *aterai* 2013-06-04 (火) 18:29:12
+    - 一番上の行のみの症状なので、ヘッダセルレンダラーとか関係してるのかと調べてたけど、`JViewport#setViewPosition(Point)`を使って直接ジャンプ？すれは、正常にヘッダサイズを変更できるようだ。もしかしたら[次にビューポートにペイントが呼び出されたときに、クリッピング領域がビューポートサイズより小さい場合には、タイマーが開始され全体をペイントし直す](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JViewport.html)せい？ -- *aterai* 2013-06-04 (火) 18:29:12
 
 <!-- dummy comment line for breaking list -->

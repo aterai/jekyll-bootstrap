@@ -65,7 +65,7 @@ comments: true
 
 ## 参考リンク
 - [ConvolveOp (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/image/ConvolveOp.html)
-- [5.8.1 イメージ処理操作の使用方法](http://docs.oracle.com/javase/jp/1.4/guide/2d/spec/j2d-image.fm8.html)
+- [5.8.1 イメージ処理操作の使用方法](https://docs.oracle.com/javase/jp/1.4/guide/2d/spec/j2d-image.fm8.html)
 - [Java Image Processing - Blurring for Beginners](http://www.jhlabs.com/ip/blurring.html)
 - [Java Swing Hacks 9. 使用不可状態のコンポーネントをぼかし表示する](http://www.oreilly.co.jp/books/4873112788/)
 
