@@ -110,7 +110,7 @@ comments: true
         - `JTextPane`で各行の高さが異なる場合の行番号表示サンプル
     - 折り返された行にも行番号を表示
         - [Swing - line number in jtextpane](https://community.oracle.com/thread/1493292)
-        - `EditorKit`を使って行番号を表示し、`JTextPane`で折り返された行でも、表示に従って行番号を割り当てる
+        - `EditorKit`を使って行番号を表示し、`JTextPane`で折り返された行でも表示に従って行番号を割り当てる
 
 <!-- dummy comment line for breaking list -->
 

@@ -66,9 +66,9 @@ comments: true
 - [Text Prompt « Java Tips Weblog](https://tips4java.wordpress.com/2009/11/29/text-prompt/)
     - `JTextComponent`に`BorderLayout`を設定して、文字列やアイコンを設定した`JLabel`を追加し、これを`JLabel#setVisible(boolean)`で切り替えているので、汎用的な使用が可能
 - [JTextFieldにフォーカスと文字列が無い場合の表示](https://ateraimemo.com/Swing/GhostText.html)
-    - `setText()`を使用
+    - `JTextField#setText()`メソッドを使用
 - [JTextFieldに透かし画像を表示する](https://ateraimemo.com/Swing/WatermarkInTextField.html)
-    - `paintComponent(...)`メソッドをオーバーライド
+    - `JTextField#paintComponent(...)`メソッドをオーバーライド
 
 <!-- dummy comment line for breaking list -->
 
