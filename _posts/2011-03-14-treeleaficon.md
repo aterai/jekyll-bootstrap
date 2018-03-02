@@ -41,10 +41,11 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-上記のメソッドを使用して、デフォルトアイコンと空アイコンを設定し、表示非表示を切り替えています。
+上記のメソッドを使用して、デフォルトアイコンと空アイコン(もしくは`null`)を設定し、表示非表示を切り替えています。
 
 - - - -
-各アイコンの幅が変化するので、表示を切り替えた後で、以下のようにすべてのノードを更新しています。
+各アイコンの幅が変化するため、表示を切り替えた後で以下のようにすべてのノードを再評価しています。
+
 <pre class="prettyprint"><code>private static void allNodesChanged(JTree tree) {
   DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
   DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
@@ -52,8 +53,6 @@ comments: true
   while (depth.hasMoreElements()) {
     model.nodeChanged((TreeNode) depth.nextElement());
   }
-  //tree.revalidate();
-  //tree.repaint();
 }
 </code></pre>
 

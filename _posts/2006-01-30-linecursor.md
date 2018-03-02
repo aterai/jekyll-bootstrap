@@ -57,7 +57,7 @@ comments: true
 ## 解説
 `JTextArea#paintComponent`メソッドをオーバーライドして、カーソルがある行にアンダーラインを引いています。
 
-- `Caret`の移動に対応するため、`DefaultCaret#damage`メソッドをオーバーライドして、変更された領域を再描画
+- `Caret`の移動に対応するため、`DefaultCaret#damage(Rectangle)`メソッドをオーバーライドして、変更された領域を再描画
 - [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)のように、`Highlighter`を使用する方法もある
 
 <!-- dummy comment line for breaking list -->

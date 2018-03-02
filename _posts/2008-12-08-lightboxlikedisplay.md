@@ -130,4 +130,9 @@ comments: true
 
 `GlassPane`に自分を`setVisible(false)`するマウスリスナーを追加しているので、任意の場所をクリックするとこの画像は非表示になります。
 
+## 参考リンク
+- [JFrameをスクリーン中央に表示](https://ateraimemo.com/Swing/CenterFrame.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

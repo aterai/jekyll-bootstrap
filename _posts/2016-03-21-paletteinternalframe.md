@@ -36,4 +36,9 @@ desktop.add(palette, JDesktopPane.PALETTE_LAYER);
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [MetalInternalFrameUI.IS_PALETTE (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/metal/MetalInternalFrameUI.html#IS_PALETTE)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: ToolTipBorder
 title: JToolTipにBorderを設定
-tags: [JToolTip, Border]
+tags: [JToolTip, Border, MatteBorder, JComponent]
 author: aterai
 pubdate: 2005-08-15T00:22:53+09:00
 description: JComponentのcreateToolTip()メソッドをオーバーライドして、Borderを変更したJToolTipを生成します。
@@ -30,7 +30,7 @@ button.setToolTipText("Test - ToolTipText1");
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComponent#createToolTip()`メソッドをオーバーライドし、その中で`Border`を設定した`JToolTip`を生成しています。
+上記のサンプルでは、`JComponent#createToolTip()`メソッドをオーバーライドして元の`Border`と`MatteBorder`を組み合わせた`Border`を`JToolTip`に設定しています。
 
 ## 参考リンク
 - [JComponent#createToolTip() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComponent.html#createToolTip--)
