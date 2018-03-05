@@ -19,10 +19,10 @@ comments: true
 {% download https://drive.google.com/uc?id=1jXZtiYFaA5ABWsdaRBnPUKqS2_VBDkFqQA %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class CalendarViewTableModel&lt;T extends LocalDate&gt; extends DefaultTableModel {
+<pre class="prettyprint"><code>class CalendarViewTableModel extends DefaultTableModel {
   private final LocalDate startDate;
   private final WeekFields weekFields = WeekFields.of(Locale.getDefault());
-  public CalendarViewTableModel(T date) {
+  public CalendarViewTableModel(LocalDate date) {
     super();
     LocalDate firstDayOfMonth = YearMonth.from(date).atDay(1);
     int dowv = firstDayOfMonth.get(weekFields.dayOfWeek()) - 1;
