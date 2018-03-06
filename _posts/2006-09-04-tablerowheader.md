@@ -75,9 +75,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JList`で作成した行ヘッダを`JScrollPane`に`setRowHeaderView`メソッドで追加しています。
+上記のサンプルでは、`JList`で作成した行ヘッダを`JScrollPane#setRowHeaderView(...)`メソッドで追加しています。
 
-表の余白などに色がついているのは、テストの名残です。特に意味は無いのですが、そのまま残しています。
+- - - -
+- `Corner`: `JScrollPane.html#setCorner(...)`で左上隅などにコンポーネントを設定しておらず、`JScrollPane`自体の背景色(赤)が表示されている
+- `Viewport`: `JTable`のセルが存在しない領域は、`JViewport`の背景色(緑)が表示されている
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>rowHeader.setBackground(Color.BLUE);
 scrollPane.setBackground(Color.RED);

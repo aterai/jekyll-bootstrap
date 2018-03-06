@@ -86,6 +86,8 @@ class CalendarViewListModel extends AbstractListModel&lt;LocalDate&gt; {
 </code></pre>
     - * 参考リンク [#reference]
 - [JTableにLocaleを考慮したLocalDateを適用してカレンダーを表示する](https://ateraimemo.com/Swing/CalendarViewTable.html)
+- [JListでウィークカレンダーを作成してヒートマップを表示する](https://ateraimemo.com/Swing/CalendarHeatmapList.html)
+    - セルが垂直方向の次に水平方向の順で並ぶ「ニュースペーパー・スタイル」レイアウトの`JList`で週カレンダーを表示
 
 <!-- dummy comment line for breaking list -->
 
