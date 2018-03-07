@@ -31,6 +31,7 @@ comments: true
 };
 //...
 private class ContributionListRenderer implements ListCellRenderer&lt;Contribution&gt; {
+  private final Icon emptyIcon = new ColorIcon(Color.WHITE);
   private final ListCellRenderer&lt;? super Contribution&gt; renderer
     = new DefaultListCellRenderer();
   @Override public Component getListCellRendererComponent(
@@ -39,10 +40,10 @@ private class ContributionListRenderer implements ListCellRenderer&lt;Contributi
     JLabel l = (JLabel) renderer.getListCellRendererComponent(
         list, null, index, isSelected, cellHasFocus);
     if (value.date.isAfter(currentLocalDate)) {
-      l.setIcon(new ColorIcon(Color.WHITE));
+      l.setIcon(emptyIcon);
       l.setToolTipText(null);
     } else {
-      l.setIcon(new ColorIcon(activityColors.get(value.activity)));
+      l.setIcon(activityIcons.get(value.activity));
       String actTxt = value.activity == 0 ? "No" : Objects.toString(value.activity);
       l.setToolTipText(actTxt + " contribution on " + value.date.toString());
     }
@@ -75,6 +76,7 @@ private class ContributionListRenderer implements ListCellRenderer&lt;Contributi
 ## 参考リンク
 - [JListで月のカーソルキー移動や、週を跨いた日付を範囲選択が可能なカレンダーを作成する](https://ateraimemo.com/Swing/CalendarViewList.html)
     - こちらはセルが水平方向の次に垂直方向の順で並ぶ「ニュースペーパー・スタイル」レイアウトの`JList`で月カレンダーを表示
+- [Harmonic Code: Friday Fun XLVIII - Calendar Heatmap](https://harmoniccode.blogspot.jp/2017/10/friday-fun-xlviii-calendar-heatmap.html)
 
 <!-- dummy comment line for breaking list -->
 

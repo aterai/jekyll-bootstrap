@@ -16,14 +16,13 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTTAw3RBeI/AAAAAAAAAjs/LtUs6l9UpZo/s800/SimpleSyntaxHighlight.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//This code is taken from: SyntaxDocument.java, MultiSyntaxDocument.java
+<pre class="prettyprint"><code>// This code is taken from: SyntaxDocument.java, MultiSyntaxDocument.java
 // Fast styled JTextPane editor | Oracle Community
 // @author camickr
 // @author David Underhill
 // https://community.oracle.com/thread/2105230
 // modified by aterai aterai@outlook.com
 class SimpleSyntaxDocument extends DefaultStyledDocument {
-  //HashMap&lt;String, AttributeSet&gt; keywords = new HashMap&lt;&gt;();
   private final Style normal;
   private static final String OPERANDS = ".,";
   public SimpleSyntaxDocument() {

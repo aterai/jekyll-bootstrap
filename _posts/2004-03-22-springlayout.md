@@ -75,6 +75,11 @@ comments: true
 
 ~~距離を`0`にすることも可能で、例えばサンプルコードのコメントアウトされたような指定をすると、ラベル`1`、`2`を左揃えで並べることができます。~~
 
+## 参考リンク
+- [SpringLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SpringLayout.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - 以前の内容は、[BoxLayoutでリスト状に並べる](https://ateraimemo.com/Swing/ComponentList.html)に移動しました。 -- *aterai* 2006-06-15 (木) 19:40:17
 - リスナーを使わなくても次ので出来ました。 --  2010-09-02 (木) 02:41:13
