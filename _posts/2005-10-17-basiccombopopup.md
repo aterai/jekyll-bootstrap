@@ -87,6 +87,7 @@ comments: true
 
 ## 参考リンク
 - [Swing - Scrollable PopupMenu](https://community.oracle.com/thread/1367473)
+- [BasicComboPopup (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicComboPopup.html)
 
 <!-- dummy comment line for breaking list -->
 
