@@ -77,8 +77,8 @@ private class ContributionListRenderer implements ListCellRenderer&lt;Contributi
     - `GridBagLayout`を使用する`JPanel`を適用
     - セルと幅が同じで高さが`0`のダミーコンポーネント`Box.createHorizontalStrut(size.width)`を作成し、ガイドグリッドとして`27`週分追加
     - 前の週と月が異なる列に`gridwidth=4`の幅を占有する`JLabel`で月名を表示
-        - 月の列が`5`になる場合でも、`4`列分占のみする
-        - `27 - 4 + 1`列目以降は`4`列取得できないので、月名を表示しない
+        - 月の列が`5`になる場合でも`4`列分のみ占有し、空列はガイドグリッドで幅を確保する
+        - `27 - 4 + 1`列目以降は`4`列確保できないので、月名を表示しない
 
 <!-- dummy comment line for breaking list -->
 
