@@ -54,10 +54,15 @@ comments: true
 上記のサンプルでは、`Java 8`から`java.time`パッケージに追加された`LocalDate`を`JTable`のモデルとして使用し、月のカレンダーを表示しています。
 
 - [WeekFields#getFirstDayOfWeek()](https://docs.oracle.com/javase/jp/8/docs/api/java/time/temporal/WeekFields.html#getFirstDayOfWeek--)メソッドで`Locale`に応じた週の最初の曜日を取得して、`JTable`の`0`列目を設定
-    - 例: フランスと`ISO-8601`標準では月曜日が週の最初の曜日になる
-        - `java -Duser.language=fr -jar example.jar`
+    - 例: ロケールがフランスや`ISO-8601`標準では月曜日、アラビアなら土曜日が週の最初の曜日になる
 
 <!-- dummy comment line for breaking list -->
+
+
+`java -Duser.language=fr -jar example.jar`
+
+
+`java -Duser.language=ar -jar example.jar`
 
 
 

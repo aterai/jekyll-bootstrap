@@ -118,8 +118,8 @@ comments: true
 ## 解説
 上記のサンプルでは、ボタンの形や縁、クリック可能な領域をラウンド矩形などの`Shape`に置き換えています。
 
-- `JButton#paintComponent()`をオーバーライドして描画を変更
-- `JButton#contains()`をオーバーライドしてマウスでクリック可能な領域を変更
+- `JButton#paintComponent()`メソッドをオーバーライドして描画を変更
+- `JButton#contains()`メソッドをオーバーライドしてマウスでクリック可能な領域を変更
 
 <!-- dummy comment line for breaking list -->
 
@@ -127,7 +127,7 @@ comments: true
 
 - 幅と高さが同じになるように`getPreferredSize()`メソッドをオーバーライド
 - 図形の初期化メソッドをオーバーライド
-    - メソッド名前は適当、上記のサンプルでは`initShape`
+    - メソッド名前は適当、上記のサンプルでは`initShape()`
 
 <!-- dummy comment line for breaking list -->
 

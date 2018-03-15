@@ -65,7 +65,7 @@ class ColumnComparator implements Comparator {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、カラムヘッダをクリックすることでソートできます。右クリックからポップアップメニューで、行を追加、削除したり、セルをダブルクリックして中身を色々編集するなどしてソートを試してみてください。
+上記のサンプルでは、各カラムヘッダのクリックでソート可能になっています。
 
 - メモ
     - 複数の列をキーにしてソートしたい場合は、[TableSorterでJTableをソート](https://ateraimemo.com/Swing/TableSorter.html)を参照

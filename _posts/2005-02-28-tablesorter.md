@@ -24,9 +24,9 @@ sorter.setTableHeader(table.getTableHeader());
 </code></pre>
 
 ## 解説
-`The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](https://ateraimemo.com/Swing/SortableTable.html)で使用しているものと同じ`TableModel`でソートしています。
+`The Java™ Tutorial`版の`TableSorter`を使用して、[JTableのソート](https://ateraimemo.com/Swing/SortableTable.html)で使用しているものと同じ`TableModel`をソートしています。
 
-`TableSorter`には、<kbd>Ctrl</kbd>キーを押しながらヘッダをクリックすると、そのカラムを第二キーとしてソートする機能もあります。
+`TableSorter`には、<kbd>Ctrl</kbd>キーを押しながらヘッダをクリックすると、そのカラムを第`2`キー、第`3`キーとしてソートする機能もあります。
 
 `JDK 1.4.x`と`Windows XP`の環境で、ヘッダにカーソルを置いてもロールオーバーしない場合があるようです。上記のスクリーンショットは`JDK 1.5.0_01`で撮っています。
 
