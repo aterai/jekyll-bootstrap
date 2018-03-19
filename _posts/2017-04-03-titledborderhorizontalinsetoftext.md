@@ -17,13 +17,13 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>// Space between the border and the component's edge
-protected static final int EDGE_SPACING = 2; //2;
+protected static final int EDGE_SPACING = 2; // 2px;
 
 // Space between the border and text
-protected static final int TEXT_SPACING = 5; //2;
+protected static final int TEXT_SPACING = 5; // 2px;
 
 // Horizontal inset of text that is left or right justified
-protected static final int TEXT_INSET_H = 10; //5;
+protected static final int TEXT_INSET_H = 10; // 5px;
 </code></pre>
 
 ## 解説
@@ -41,7 +41,7 @@ protected static final int TEXT_INSET_H = 10; //5;
     - 内余白の設定が外部から変更できないので、`TitledBorder`を全てコピーして`TEXT_SPACING`と`TEXT_INSET_H`の値だけ変更
     - `TEXT_INSET_H`を`2px`から`10px`に変更したため、ボーダーからタイトル文字列までの間に`10px`の内余白が生成される
     - `TEXT_SPACING`を`2px`から`5px`に変更したため、上記の内余白から`5px`分ボーダーが描画されない空白が生成される
-        - ボーダーと中身のコンポーネントとの余白もこの値を変更すると増減してしまう？
+        - ボーダーと中身のコンポーネントとの余白も、この値を変更すると増減してしまう？
 
 <!-- dummy comment line for breaking list -->
 

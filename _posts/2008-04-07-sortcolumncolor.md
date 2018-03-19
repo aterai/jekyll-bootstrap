@@ -48,7 +48,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable#getSortKeys()#getSortKeys()`でソート中のカラムを取得し、第`1`キーになっているカラムのセル背景色を変更しています。
+上記のサンプルでは、`JTable#getSortKeys()#getSortKeys()`でソート中のカラムを取得し、第`1`ソートキーになっているカラムのセル背景色を変更しています。
 
 ## 参考リンク
 - [RowSorter#getSortKeys() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowSorter.html#getSortKeys--)

@@ -29,10 +29,9 @@ comments: true
       super.updateUI();
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
-          int maxHeight = 0;
-          for (JButton b : list) {
-            maxHeight = Math.max(maxHeight, b.getPreferredSize().height);
-          }
+          int maxHeight = list.stream()
+            .map(b -&gt; b.getPreferredSize().height)
+            .reduce(0, Integer::max);
           Dimension d = new Dimension(buttonWidth, maxHeight);
           for (JButton b : list) {
             b.setPreferredSize(d);
@@ -104,19 +103,19 @@ comments: true
 
 <pre class="prettyprint"><code>JLabel l = new JLabel();
 l.setText("a"); //preferredSizeがnullの場合、UIがサイズを計算
-//l.getPreferredSize() -&gt; Dimension[width=6, height=13]
+// l.getPreferredSize() -&gt; Dimension[width=6, height=13]
 
 l.setText("aaaa"); //JLabelの場合、Fontサイズと文字列の長さなどで決まる
-//l.getPreferredSize() -&gt; Dimension[width=24, height=13]
+// l.getPreferredSize() -&gt; Dimension[width=24, height=13]
 
 l.setText("&lt;html&gt;aa&lt;br&gt;aa");
-//l.getPreferredSize() -&gt; Dimension[width=12, height=26]
+// l.getPreferredSize() -&gt; Dimension[width=12, height=26]
 
 l.setPreferredSize(new Dimension(10, 10)); //preferredSizeを設定した場合
-//l.getPreferredSize() -&gt; Dimension[width=10, height=10]
+// l.getPreferredSize() -&gt; Dimension[width=10, height=10]
 
 l.setPreferredSize(null); //preferredSizeをnullに戻した場合
-//l.getPreferredSize() -&gt; Dimension[width=12, height=26]
+// l.getPreferredSize() -&gt; Dimension[width=12, height=26]
 </code></pre>
 
 ## 参考リンク

@@ -53,4 +53,9 @@ comments: true
 <pre class="prettyprint"><code>JFormattedTextField field1 = new JFormattedTextField(new MaskFormatter("ULLLLLLLLLL"));
 </code></pre>
 
+## 参考リンク
+- [DocumentFilter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/DocumentFilter.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

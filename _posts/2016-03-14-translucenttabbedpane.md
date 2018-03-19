@@ -48,6 +48,7 @@ UIManager.put("TabbedPane.borderHightlightColor", fgc);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [Backgrounds With Transparency « Java Tips Weblog](https://tips4java.wordpress.com/2009/05/31/backgrounds-with-transparency/)
 - [JTabbedPaneのタブエリア背景色などをテスト](https://ateraimemo.com/Swing/TabAreaBackground.html)
 
 <!-- dummy comment line for breaking list -->
