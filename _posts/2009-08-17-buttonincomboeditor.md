@@ -19,12 +19,12 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTIT4iCWGI/AAAAAAAAASk/pFFcvRBoyIg/s800/ButtonInComboEditor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class ComboBoxLayout implements LayoutManager {
-  private final JLabel label;
-  private final JButton button;
-  public ComboBoxLayout(JLabel label, JButton button) {
-    this.label = label;
-    this.button = button;
+<pre class="prettyprint"><code>class SiteComboBoxLayout implements LayoutManager {
+  private final JLabel favicon;
+  private final JButton feedButton;
+  protected SiteComboBoxLayout(JLabel favicon, JButton feedButton) {
+    this.favicon = favicon;
+    this.feedButton = feedButton;
   }
   @Override public void addLayoutComponent(String name, Component comp) {
     /* not needed */
@@ -42,48 +42,49 @@ comments: true
     if (!(parent instanceof JComboBox)) {
       return;
     }
-    JComboBox cb     = (JComboBox) parent;
-    int width        = cb.getWidth();
-    int height       = cb.getHeight();
-    Insets insets    = cb.getInsets();
-    int buttonHeight = height - insets.top - insets.bottom;
-    int buttonWidth  = buttonHeight;
-    int labelWidth   = buttonHeight;
-    int loupeWidth; //   = buttonHeight;
+    JComboBox&lt;?&gt; cb = (JComboBox&lt;?&gt;) parent;
+    int width = cb.getWidth();
+    int height = cb.getHeight();
+    Insets insets = cb.getInsets();
+    int arrowHeight = height - insets.top - insets.bottom;
+    int arrowWidth = arrowHeight;
+    int faviconWidth = arrowHeight;
+    int feedWidth; // = arrowHeight;
 
+    // Arrow Icon JButton
     JButton arrowButton = (JButton) cb.getComponent(0);
-    if (arrowButton != null) {
+    if (Objects.nonNull(arrowButton)) {
       Insets arrowInsets = arrowButton.getInsets();
-      buttonWidth = arrowButton.getPreferredSize().width
+      arrowWidth = arrowButton.getPreferredSize().width
         + arrowInsets.left + arrowInsets.right;
-      arrowButton.setBounds(
-          width - insets.right - buttonWidth,
-          insets.top, buttonWidth, buttonHeight);
-    }
-    if (label != null) {
-      Insets labelInsets = label.getInsets();
-      labelWidth = label.getPreferredSize().width
-        + labelInsets.left + labelInsets.right;
-      label.setBounds(insets.left, insets.top, labelWidth, buttonHeight);
-    }
-    JButton rssButton = button;
-    if (rssButton != null &amp;&amp; rssButton.isVisible()) {
-      Insets loupeInsets = rssButton.getInsets();
-      loupeWidth = rssButton.getPreferredSize().width
-        + loupeInsets.left + loupeInsets.right;
-      rssButton.setBounds(
-          width - insets.right - loupeWidth - buttonWidth,
-          insets.top, loupeWidth, buttonHeight);
-    } else {
-      loupeWidth = 0;
+      arrowButton.setBounds(width - insets.right - arrowWidth, insets.top,
+                            arrowWidth, arrowHeight);
     }
 
+    // Favicon JLabel
+    if (Objects.nonNull(favicon)) {
+      Insets faviconInsets = favicon.getInsets();
+      faviconWidth = favicon.getPreferredSize().width
+          + faviconInsets.left + faviconInsets.right;
+      favicon.setBounds(insets.left, insets.top, faviconWidth, arrowHeight);
+    }
+
+    // Feed Icon JButton
+    if (Objects.nonNull(feedButton) &amp;&amp; feedButton.isVisible()) {
+      Insets feedInsets = feedButton.getInsets();
+      feedWidth = feedButton.getPreferredSize().width
+          + feedInsets.left + feedInsets.right;
+      feedButton.setBounds(width - insets.right - feedWidth - arrowWidth, insets.top,
+                           feedWidth, arrowHeight);
+    } else {
+      feedWidth = 0;
+    }
+
+    // JComboBox Editor
     Component editor = cb.getEditor().getEditorComponent();
-    if (editor != null) {
-      editor.setBounds(
-          insets.left + labelWidth, insets.top,
-          width  - insets.left - insets.right
-                 - buttonWidth - labelWidth - loupeWidth,
+    if (Objects.nonNull(editor)) {
+      editor.setBounds(insets.left + faviconWidth, insets.top,
+          width  - insets.left - insets.right - arrowWidth - faviconWidth - feedWidth,
           height - insets.top  - insets.bottom);
     }
   }
@@ -92,6 +93,12 @@ comments: true
 
 ## 解説
 上記のサンプルでは、`JComboBox`に独自のレイアウトマネージャーを設定して、そのエディタ内部にデフォルトの`ArrowButton`とは異なる`JButton`や`JLabel`を追加で配置しています。
+
+- `JButton`に`Feed`アイコンを設定して、`ArrowButton`の左側に追加配置
+    - `EditorComponent`にフォーカスがある場合、この`FeedButton`は非表示
+- `JLabel`に`Favicon`を設定して、左端に追加配置
+
+<!-- dummy comment line for breaking list -->
 
 - - - -
 `RolloverIcon`は、元のアイコンに以下のようなフィルタを掛けて作成しています。

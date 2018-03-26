@@ -22,8 +22,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`JTree#setRootVisible(boolean)`メソッドを使用して、`TreeModel`のルートノードが表示されるかどうかを切り替えています。
 
-- デフォルトの`JTree`では、ルートノードは可視状態
-    - `JTree#isRootVisible() == true`
+- デフォルトの`JTree`では、ルートノードは可視状態で、`JTree#isRootVisible() == true`
 
 <!-- dummy comment line for breaking list -->
 

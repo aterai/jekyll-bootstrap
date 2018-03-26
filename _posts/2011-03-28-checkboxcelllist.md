@@ -23,7 +23,8 @@ comments: true
   implements ListCellRenderer&lt;E&gt;, MouseListener, MouseMotionListener {
   private int rollOverRowIndex = -1;
   @Override public Component getListCellRendererComponent(
-    JList&lt;? extends E&gt; list, E value, int index, boolean isSelected, boolean cellHasFocus) {
+        JList&lt;? extends E&gt; list, E value, int index,
+        boolean isSelected, boolean cellHasFocus) {
     this.setOpaque(true);
     if (isSelected) {
       this.setBackground(list.getSelectionBackground());
@@ -51,7 +52,8 @@ comments: true
       int index  = l.locationToIndex(p);
       if (index &gt;= 0) {
         @SuppressWarnings("unchecked")
-        DefaultListModel&lt;CheckBoxNode&gt; m = (DefaultListModel&lt;CheckBoxNode&gt;) l.getModel();
+        DefaultListModel&lt;CheckBoxNode&gt; m =
+            (DefaultListModel&lt;CheckBoxNode&gt;) l.getModel();
         CheckBoxNode n = m.get(index);
         m.set(index, new CheckBoxNode(n.text, !n.selected));
         l.repaint(l.getCellBounds(index, index));

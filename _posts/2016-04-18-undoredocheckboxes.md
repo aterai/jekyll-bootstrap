@@ -48,6 +48,8 @@ for (int i = 0; i &lt; BIT_LENGTH; i++) {
 
 ## 参考リンク
 - [Java Swing「UndoManager」メモ(Hishidama's Swing-UndoManager Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/UndoManager.html)
+- [JCheckBoxの選択状態をBitSetで管理する](https://ateraimemo.com/Swing/BitSetCheckBoxes.html)
+    - `BitSet`を使用するサンプル
 
 <!-- dummy comment line for breaking list -->
 

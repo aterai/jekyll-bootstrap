@@ -46,7 +46,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
       return new Dimension(targetWidth, height);
     }
   }
-};
+});
 </code></pre>
 
 ## 解説

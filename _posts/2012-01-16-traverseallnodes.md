@@ -26,7 +26,7 @@ while (e.hasMoreElements()) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、この`JTree`の最上位ノードをルートにするサブツリーを、深さ優先、幅優先などで全走査しています。
+上記のサンプルでは、この`JTree`の最上位ノードをルートにするサブツリー以下を、深さ優先、幅優先などで全走査しています。
 
 - [DefaultMutableTreeNode#depthFirstEnumeration()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration--)
     - 深さ優先走査

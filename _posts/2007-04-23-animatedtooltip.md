@@ -36,6 +36,16 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;Test3&lt;/html&gt;")
 </code></pre>
 - 中
     - `Animated GIF`ファイルを`JLabel#setIcon(Icon)`で設定し、`JToolTip`にその`JLabel`を追加
+        
+        <pre class="prettyprint"><code>JLabel l2 = new JLabel("Gif Animated ToolTip") {
+          @Override public JToolTip createToolTip() {
+            JToolTip tip = new AnimatedToolTip(
+                new JLabel("", new ImageIcon(url), SwingConstants.LEFT));
+            tip.setComponent(this);
+            return tip;
+          }
+        };
+</code></pre>
 - 下
     - `Animated GIF`ファイルを`<html>`タグを使って`setToolTipText(...)`メソッドで設定
 

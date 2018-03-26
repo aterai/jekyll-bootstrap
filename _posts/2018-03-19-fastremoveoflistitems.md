@@ -29,7 +29,7 @@ comments: true
     }
   }
   if (selectedIndices.length &gt; 0) {
-    for (int i : selectedIndices) {
+    for (int i: selectedIndices) {
       toModel.addElement(fromModel.get(i));
     }
     fromModel.clear();
