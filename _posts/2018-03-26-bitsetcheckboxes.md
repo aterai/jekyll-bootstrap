@@ -44,20 +44,21 @@ panel.add(c);
     - `BitSet#toLongArray()`が返す`long`配列は、`0`から`63`ビットが存在すればインデックス`0`、`64`から`127`ビットが存在すればインデックス`1`と続く
         - 参考: [java - BitSet toString() and valueOf() are difficult to understand - Stack Overflow](https://stackoverflow.com/questions/37170363/bitset-tostring-and-valueof-are-difficult-to-understand)
     - `BitSet`内のビットが全て空の場合、`bitSet.toLongArray().length`は`0`となり、`bitSet.toLongArray()[0]`は`ArrayIndexOutOfBoundsException`になる
-    - `0`から`63`ビットのすべてにフラグがある場合、`Long.toString(..., 2)`は`-1`になるので、`Long.toUnsignedString(..., 2)`を使用する必要がある
+    - `bitSet.toLongArray()[0]`に`0`から`63`ビットのすべてにフラグが立った`Long`値`lv`が入っている場合、符号ビットにもフラグが立った状態なので`Long.toString(lv, 2)`は`-1`になる
+        - 符号なし整数として扱うよう`Long.toUnsignedString(lv, 2)`を使用する必要がある
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>// 0 から 63 ビットのすべてにフラグがある場合、bitSet.toLongArray()[0] には、
 // 0b1111_1111_1111_1111_1111_1111_1111_1111_1111_1111_1111_1111_1111_1111_1111_1111
 // が入っている
-private static String print(BitSet l) {
+private static String print(BitSet bitSet) {
   StringBuilder buf = new StringBuilder();
   for (long lv: bitSet.toLongArray()) {
     buf.insert(0, Long.toUnsignedString(lv, 2));
   }
   String b = buf.toString();
-  int count = l.cardinality();
+  int count = bitSet.cardinality();
   return "&lt;html&gt;0b" + ZEROPAD.substring(b.length()) + b + "&lt;br/&gt; count: " + count;
 }
 </code></pre>
@@ -68,7 +69,7 @@ private static String print(BitSet l) {
     - `BigInteger`を使用する場合のサンプル
 - [java - BitSet toString() and valueOf() are difficult to understand - Stack Overflow](https://stackoverflow.com/questions/37170363/bitset-tostring-and-valueof-are-difficult-to-understand)
 - [Long#toUnsignedString(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/lang/Long.html#toUnsignedString-long-int-)
-    - `JDK 1.8.0`で追加された
+    - `JDK 1.8.0`で符号なし整数として扱うために追加された
 
 <!-- dummy comment line for breaking list -->
 

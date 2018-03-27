@@ -27,7 +27,8 @@ comments: true
     this.dir = dir;
     this.slope = slope;
   }
-  @Override protected int getBoxLength(int availableLength, int otherDimension) {
+  @Override protected int getBoxLength(
+        int availableLength, int otherDimension) {
     return availableLength; //(int) Math.round(availableLength / 6d);
   }
   @Override public void paintIndeterminate(Graphics g, JComponent c) {
@@ -68,11 +69,13 @@ comments: true
       g2.setColor(progressBar.getForeground());
       if (slope) {
         for (int i = boxRect.width + x; i &gt; -w; i -= w) {
-          g2.fill(AffineTransform.getTranslateInstance(i, 0).createTransformedShape(p));
+          g2.fill(AffineTransform.getTranslateInstance(i, 0)
+                                 .createTransformedShape(p));
         }
       } else {
         for (int i = -x; i &lt; boxRect.width; i += w) {
-          g2.fill(AffineTransform.getTranslateInstance(i, 0).createTransformedShape(p));
+          g2.fill(AffineTransform.getTranslateInstance(i, 0)
+                                 .createTransformedShape(p));
         }
       }
     }
@@ -83,9 +86,8 @@ comments: true
 ## 解説
 上記のサンプルでは、`BasicProgressBarUI#paintIndeterminate(...)`メソッドをオーバーライドした`ProgressBarUI`を設定して、不確定状態で描画されるアニメーションのパターンをストライプ模様に変更しています。
 
-- メモ
-    - デフォルトの不確定状態アニメーションは、`JProgressBar`の内部をボックスが左右(縦の場合は上下)に移動するパターン
-    - `JProgressBar`全体をストライプで描画するため、`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライド
+- デフォルトの不確定状態アニメーションは、`JProgressBar`の内部をボックスが左右(縦の場合は上下)に移動するパターン
+- `JProgressBar`全体をストライプで描画するため、`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライド
 
 <!-- dummy comment line for breaking list -->
 
