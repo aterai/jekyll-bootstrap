@@ -52,8 +52,8 @@ frame.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forward
 </code></pre>
 
 ## 参考リンク
-- [https://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html KeyboardFocusManager (Java Platform SE 8)](https://ateraimemo.com/https://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html KeyboardFocusManager (Java Platform SE 8).html)
-- [https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Container.html#setFocusTraversalKeys-int-java.util.Set- Container#setFocusTraversalKeys(...) (Java Platform SE 8)](https://ateraimemo.com/https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Container.html#setFocusTraversalKeys-int-java.util.Set- Container#setFocusTraversalKeys(...) (Java Platform SE 8).html)
+- [KeyboardFocusManager (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html)
+- [Container#setFocusTraversalKeys(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Container.html#setFocusTraversalKeys-int-java.util.Set-)
 - [How to Use the Focus Subsystem](https://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html)
 - [Focusの移動](https://ateraimemo.com/Swing/FocusTraversal.html)
 

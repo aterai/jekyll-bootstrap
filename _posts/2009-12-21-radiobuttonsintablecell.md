@@ -17,7 +17,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class RadioButtonsPanel extends JPanel {
-  private final String[] answer = {Answer.A.toString(), Answer.B.toString(), Answer.C.toString()};
+  private final String[] answer = {
+      Answer.A.toString(), Answer.B.toString(), Answer.C.toString()};
   public JRadioButton[] buttons;
   public ButtonGroup bg = new ButtonGroup();
   public RadioButtonsPanel() {

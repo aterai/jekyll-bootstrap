@@ -43,14 +43,8 @@ menu.add(new JCheckBoxMenuItem("checkIcon test"));
 ## 解説
 `JCheckBox`のチェックアイコンは、`JCheckBox#setIcon(Icon)`メソッドで変更可能ですが、`JCheckBoxMenuItem`はチェックアイコンとは別のアイコンが設定されているので、`UIManager.put("CheckBoxMenuItem.checkIcon", icon);`を使用する必要があります。
 
-## 参考リンク
-- [JCheckBoxMenuItem (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JCheckBoxMenuItem.html)
-- [JRadioButtonMenuItemのチェックアイコンを変更する](https://ateraimemo.com/Swing/RadioButtonMenuItemIcon.html)
-
-<!-- dummy comment line for breaking list -->
-
-## コメント
-- `NimbusLookAndFeel`などの場合 -- *aterai* 2009-11-20 (金) 13:54:08
+- - - -
+- `NimbusLookAndFeel`などで`JCheckBoxMenuItem`のチェックアイコンを変更する
 
 <!-- dummy comment line for breaking list -->
 
@@ -120,7 +114,7 @@ class NimbusCheckIconTest {
     });
   }
 }
-//copy: CheckBoxMenuItemPainter.java
+// copy: CheckBoxMenuItemPainter.java
 class MyCheckBoxMenuItemPainter extends AbstractRegionPainter {
   static final int CHECKICON_ENABLED_SELECTED   = 6;
   static final int CHECKICON_SELECTED_MOUSEOVER = 7;
@@ -172,3 +166,11 @@ class MyCheckBoxMenuItemPainter extends AbstractRegionPainter {
   }
 }
 </code></pre>
+
+## 参考リンク
+- [JCheckBoxMenuItem (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JCheckBoxMenuItem.html)
+- [JRadioButtonMenuItemのチェックアイコンを変更する](https://ateraimemo.com/Swing/RadioButtonMenuItemIcon.html)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

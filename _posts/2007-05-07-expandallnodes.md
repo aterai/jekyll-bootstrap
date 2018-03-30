@@ -37,6 +37,7 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
   TreeNode node = (TreeNode) parent.getLastPathComponent();
   // children(node).forEach(n -&gt; visitAll(tree, parent.pathByAddingChild(n), expand));
   if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
+    // Java 9: Enumeration&lt;TreeNode&gt; e = node.children();
     Enumeration&lt;?&gt; e = node.children();
     while (e.hasMoreElements()) {
       visitAll(tree, parent.pathByAddingChild(e.nextElement()), expand);
@@ -50,6 +51,9 @@ private void visitAll(JTree tree, TreePath parent, boolean expand) {
 }
 
 // private static Stream&lt;TreeNode&gt; children(TreeNode node) {
+//   // Java 9:
+//   // return Collections.list(node.children()).stream();
+//   // Java 8:
 //   return Collections.list((Enumeration&lt;?&gt;) node.children())
 //     .stream().filter(TreeNode.class::isInstance).map(TreeNode.class::cast);
 // }

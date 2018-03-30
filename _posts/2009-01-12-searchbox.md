@@ -27,6 +27,7 @@ comments: true
       tree.expandPath(path.getParentPath());
     }
     if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
+      // Java 9: Enumeration&lt;TreeNode&gt; e = node.children();
       Enumeration&lt;?&gt; e = node.children();
       while (e.hasMoreElements()) {
         searchTree(tree, path.pathByAddingChild(e.nextElement()),

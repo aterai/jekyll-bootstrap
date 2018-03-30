@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>TreeModel model = tree.getModel();
 DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
-Enumeration e = root.breadthFirstEnumeration();
+Enumeration&lt;?&gt; e = root.breadthFirstEnumeration();
 while (e.hasMoreElements()) {
   DefaultMutableTreeNode node = (DefaultMutableTreeNode) e.nextElement();
   textArea.append(node.toString() + "\n");
@@ -38,6 +38,16 @@ while (e.hasMoreElements()) {
 - [DefaultMutableTreeNode#preorderEnumeration()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#preorderEnumeration--)
     - 前順走査
     - `JTree, colors, blue, violet, red, yellow, sports, basketball, soccer, ...`
+
+<!-- dummy comment line for breaking list -->
+
+- - - -
+- `DefaultMutableTreeNode#children()`や`DefaultMutableTreeNode#xxxxxEnumeration()`などの戻り値
+    - `Java 8`: `Enumeration`
+    - `Java 9`: `Enumeration<TreeNode>`
+        - [JDK-8043550 Fix raw and unchecked lint warnings in javax.swing.* - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8043550)
+    - `Java 11`: `Enumeration<? extends TreeNode>`になる予定
+        - [JDK-8058831 Consider changing return type of DefaultMutableTreeNode.children - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8058831)
 
 <!-- dummy comment line for breaking list -->
 
