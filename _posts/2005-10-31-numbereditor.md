@@ -27,4 +27,9 @@ spinner.setEditor(editor);
 
 上記のサンプルでは、数字を表す`0`と、`100`倍してパーセントを表す`%`を組み合わせたフォーマットパターンを使用しています。
 
+## 参考リンク
+- [JSpinner.NumberEditor (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSpinner.NumberEditor.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

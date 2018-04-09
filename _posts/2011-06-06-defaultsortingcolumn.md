@@ -29,14 +29,14 @@ table.getRowSorter().setSortKeys(
 
 `RowSorter#setSortKeys(...)`を使用するので、列のソート順序(昇順か降順、ここでは、`0`列目を`SortOrder.DESCENDING`で降順)も指定することができます。
 
-- メモ
-    - `table.getRowSorter().toggleSortOrder(index)`を`1`回で昇順、`2`回で降順に設定する方法もある
-    - `RowSorter#setSortKeys(null)`で、ソート無し状態になる
-        - [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
+- `table.getRowSorter().toggleSortOrder(index)`を`1`回で昇順、`2`回で降順に設定する方法もある
+- `RowSorter#setSortKeys(null)`で、ソート無し状態になる
+    - [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [RowSorter#setSortKeys(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/RowSorter.html#setSortKeys-java.util.List-)
 - [TableRowSorterのSortKeysをクリアする](https://ateraimemo.com/Swing/ClearSortingState.html)
 
 <!-- dummy comment line for breaking list -->

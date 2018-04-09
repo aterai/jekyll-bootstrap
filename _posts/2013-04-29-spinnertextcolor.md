@@ -58,6 +58,12 @@ p.add(box, BorderLayout.EAST);
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- 以下は、`JSpinner`の`Editor`を`JFormattedTextField`から`JLabel`に変更する場合のサンプル
+    - [JSpinnerのエディタをJLabelに変更してHTMLを表示する](https://ateraimemo.com/Swing/HtmlSpinnerEditor.html)に移動
+
+<!-- dummy comment line for breaking list -->
+
 ## 参考リンク
 - [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
 - [JTableを別コンポーネントから操作](https://ateraimemo.com/Swing/SelectAllButton.html)

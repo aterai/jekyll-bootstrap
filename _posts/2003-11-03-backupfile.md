@@ -90,6 +90,7 @@ tmpFile.renameTo(file);
 </code></pre>
 
 ## 参考リンク
+- [File#createTempFile(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/io/File.html#createTempFile-java.lang.String-java.lang.String-java.io.File-)
 - [xyzzy](https://ateraimemo.com/xyzzy.html)
 
 <!-- dummy comment line for breaking list -->

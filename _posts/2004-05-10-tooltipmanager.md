@@ -22,9 +22,8 @@ comments: true
 ## 解説
 上記のサンプルでは、`JButton#setToolTipText(...)`でボタンにツールチップテキストを設定し、表示するかどうかを`ToolTipManager`を使って切り替えています。
 
-- メモ
-    - コンポーネントに`setToolTipText(...)`メソッドで`null`以外が設定された場合、「表示する」がデフォルト
-    - `ToolTipManager`は、アプリケーション全体でのツールチップの表示時間、表示までの遅延時間などが設定可能
+- コンポーネントに`setToolTipText(...)`メソッドで`null`以外が設定された場合、「表示する」がデフォルト
+- `ToolTipManager`は、アプリケーション全体でのツールチップの表示時間、表示までの遅延時間などが設定可能
 
 <!-- dummy comment line for breaking list -->
 

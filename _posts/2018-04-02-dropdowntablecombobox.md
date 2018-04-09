@@ -69,7 +69,13 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`MetalComboBoxUI#createPopup()`メソッドをオーバーライドして、以下のように`JList`ではなく`JTable`を使用する`BasicComboPopup`を返す`JComboBox`を作成しています。
+- `JList`ではなく`JTable`を使用する`BasicComboPopup`を作成
+    - `JTable`なので、ヘッダや複数列の設定などが可能
+- `MetalComboBoxUI#createPopup()`メソッドをオーバーライドして、`JComboBox`のドロップダウンリストとして設定
+    - ドロップダウンリストの幅は、`240px`固定
+        - [JComboBoxのドロップダウンリスト幅を指定値以上に保つ](https://ateraimemo.com/Swing/ComboPopupWidth.html)
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>class ComboTablePopup extends BasicComboPopup {
   private final JTable table;
@@ -121,11 +127,6 @@ comments: true
   }
 }
 </code></pre>
-
-- - - -
-- 注: ドロップダウンリストの幅は、`240px`固定
-
-<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JComboBoxのItemを左右にクリップして配置](https://ateraimemo.com/Swing/ClippedLRComboBox.html)

@@ -58,6 +58,8 @@ comments: true
     - 猫の写真を引用
 - [JDK-6333318 JViewPort.scrollRectToVisible( Rectangle cr ) doesn't scroll if cr left or above - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6333318)
     - `JDK 1.7.0`から、`JViewport#setViewPosition(Point)`などで左上外部に移動不可になっている
+    - `Java 11`でこの動作は修正される？ `JScrollPane`ではなく`ScrollPane`で無関係？
+        - [JDK-8195738 scroll position in ScrollPane is reset after calling validate() - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8195738)
 - [JScrollPaneでキネティックスクロール](https://ateraimemo.com/Swing/KineticScrolling.html)
 - [JTreeの余白をドラッグしてスクロール](https://ateraimemo.com/Swing/TreeDragScroll.html)
 

@@ -27,7 +27,7 @@ editor.setText(makeTestHtml());
 </code></pre>
 
 ## 解説
-上記のサンプルでは、クラス名が`.highlight`の要素の文字色と背景色を`CSS`で変更しています。
+上記のサンプルでは、`JEditorPane`に`HTMLEditorKit`を適用して`HTML`を表示するよう設定し、クラス名が`.highlight`になっている要素の文字色と背景色を`CSS`で変更しています。
 
 ## 参考リンク
 - [Java Swing「JEditorPane」メモ(Hishidama's Swing-JEditorPane Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/JEditorPane.html)

@@ -34,7 +34,8 @@ comments: true
             slider.setValue(valueForXPosition(e.getX()));
             break;
           default:
-            throw new IllegalArgumentException("orientation must be one of: VERTICAL, HORIZONTAL");
+            throw new IllegalArgumentException(
+                "orientation must be one of: VERTICAL, HORIZONTAL");
           }
           super.mousePressed(e); //isDragging = true;
           super.mouseDragged(e);
@@ -56,8 +57,8 @@ comments: true
     - ノブを直接クリックすると、ドラッグ可能
     - ノブ以外の場所をクリックすると、タイマーでノブの幅ずつその方向に移動
 - 縦右、横下の`JSlider`:
-    - クリックした位置までスライドし、続けてドラッグ可能
-        - 目盛の間隔が広い場合、ノブがスナップされてマウスカーソルからはずれてしまい、続けてドラッグできない場合がある
+    - クリックした位置までスライドし、継続してドラッグ可能
+        - 目盛の間隔が広い場合、ノブがスナップされてマウスカーソルからはずれてしまい、継続してドラッグできない場合がある
 
 <!-- dummy comment line for breaking list -->
 
