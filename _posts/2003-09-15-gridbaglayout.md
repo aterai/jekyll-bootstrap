@@ -50,7 +50,7 @@ comments: true
 上記のサンプルでは、`GridBagLayout`で`BorderLayout`のような配置を行っています。`GridBagLayout`の場合、各コンポーネント自身が推奨する高さが生かされるように設定します。
 
 - `BorderLayout`
-    - それぞれデフォルトの高さ(推奨サイズ)が異なるコンポーネントを、`BorderLayout`を使って、`WEST`、`CENTER`、`EAST`に配置すると、一番高いコンポーネントまで拡大
+    - それぞれデフォルトの高さ(推奨サイズ)が異なるコンポーネントを`BorderLayout`を使用して、`WEST`、`CENTER`、`EAST`に配置すると、一番高いコンポーネントまで拡大
     - `CENTER`の`JComboBox`が、`EAST`の`JButton`の高さになっている(以下のスクリーンショット参照)
     - `MotifLookAndFeel`の場合
 

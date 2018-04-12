@@ -33,4 +33,9 @@ UIManager.put("Table.descendingSortIcon", new IconUIResource(emptyIcon));
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [Icon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/Icon.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
