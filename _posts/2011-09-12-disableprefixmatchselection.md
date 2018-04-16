@@ -17,7 +17,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JList list = new JList() {
-  @Override public int getNextMatch(String prefix, int startIndex, Position.Bias bias) {
+  @Override public int getNextMatch(
+        String prefix, int startIndex, Position.Bias bias) {
     return -1;
   }
 };
@@ -30,7 +31,8 @@ comments: true
 `JTree`にも`JTree#getNextMatch(...)`メソッドが存在し、同様のキー入力による選択機能がありますが、こちらはインデックスではなく、`TreePath`が戻り値なので、`null`を返すことで無効にすることができます。
 
 <pre class="prettyprint"><code>JTree tree = new JTree() {
-  @Override public TreePath getNextMatch(String prefix, int startingRow, Position.Bias bias) {
+  @Override public TreePath getNextMatch(
+        String prefix, int startingRow, Position.Bias bias) {
     return null;
   }
 };
