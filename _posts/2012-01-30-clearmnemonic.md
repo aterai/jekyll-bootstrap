@@ -24,7 +24,7 @@ comments: true
     - `JTextField`の最初の文字を`JButton`の`Mnemonic`に設定
     - `JTextField`が空の場合は、`JButton`のラベルの先頭文字を`Mnemonic`に設定
 - `clear Mnemonic`
-    - `Mnemonic`にヌル文字(`\u0000`, `\0`, `0`)を設定して初期化
+    - `Mnemonic`にヌル文字(`\u0000`, `\0`, `0`)を設定することで初期化
     - `button.setMnemonic('\0');`、`button.setMnemonic('\u0000');`と同様
 
 <!-- dummy comment line for breaking list -->

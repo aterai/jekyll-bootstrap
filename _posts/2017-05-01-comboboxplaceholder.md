@@ -33,12 +33,11 @@ combo1.setRenderer(new DefaultListCellRenderer() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DefaultListCellRenderer#getListCellRendererComponent(...)`メソッドをオーバーライドし、引数の値が`null`の場合のみ代わりにプレースホルダ文字列を表示するコンポーネントを返すよう設定しています。
+上記のサンプルでは、編集不可の`JComboBox`にアイテムが選択されていない場合はヒント文字列を表示するリストセルレンダラーを設定しています。
 
-リストセルレンダラーでプレースホルダ文字列を表示しているだけなので、`JComboBox`のモデル自体にそれを含める必要がありません。
-
-- 注:
-    - インデックスが`-1`の場合にプレースホルダ文字列を表示するように設定すると、選択が変更できなくなる？
+- リストセルレンダラーは、`DefaultListCellRenderer#getListCellRendererComponent(...)`メソッドをオーバーライドし、引数の`value`が`null`の場合のみヒント文字列を表示するコンポーネントを返すよう設定
+- リストセルレンダラーでヒント文字列を表示しているだけなので、`JComboBox`のモデル自体にそれを含める必要がない
+- 注: 引数の`Object value`が`null`の場合ではなく、`int index`が`-1`の場合にプレースホルダ文字列を表示するように設定すると、選択が変更できなくなる？
 
 <!-- dummy comment line for breaking list -->
 

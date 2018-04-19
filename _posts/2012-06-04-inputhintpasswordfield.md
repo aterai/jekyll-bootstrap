@@ -69,6 +69,7 @@ comments: true
     - `JTextField#setText()`メソッドを使用
 - [JTextFieldに透かし画像を表示する](https://ateraimemo.com/Swing/WatermarkInTextField.html)
     - `JTextField#paintComponent(...)`メソッドをオーバーライド
+- [JComboBoxでアイテムが選択されていない場合のプレースホルダ文字列を設定する](https://ateraimemo.com/Swing/ComboBoxPlaceholder.html)
 
 <!-- dummy comment line for breaking list -->
 

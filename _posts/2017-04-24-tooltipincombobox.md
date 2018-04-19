@@ -46,7 +46,8 @@ class ToolTipLayerUI&lt;V extends JComboBox&gt; extends LayerUI&lt;V&gt; {
     }
     super.uninstallUI(c);
   }
-  @Override protected void processMouseMotionEvent(MouseEvent e, JLayer&lt;? extends V&gt; l) {
+  @Override protected void processMouseMotionEvent(
+        MouseEvent e, JLayer&lt;? extends V&gt; l) {
     JComboBox&lt;?&gt; c = l.getView();
     if (e.getComponent() instanceof JButton) {
       c.setToolTipText("JButton");
@@ -72,7 +73,7 @@ class ToolTipLayerUI&lt;V extends JComboBox&gt; extends LayerUI&lt;V&gt; {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `JComboBox`のドロップダウンリストを開いた状態でツールチップを表示すると描画がおかしくなる場合がある
+- `JComboBox`のドロップダウンリストを開いた状態でツールチップを表示すると描画が乱れる場合がある
     - `MetalLookAndFeel`のみ
     - ドロップダウンリストが`HeavyWeightWindow`か`LightWeightWindow`かは無関係
 
@@ -108,5 +109,10 @@ public class CustomJComboBoxTest2 {
   }
 }
 </code></pre>
+
+## 参考リンク
+- [LayerUI#processMouseMotionEvent(MouseEvent, JLayer) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/LayerUI.html#processMouseMotionEvent-java.awt.event.MouseEvent-javax.swing.JLayer-)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント

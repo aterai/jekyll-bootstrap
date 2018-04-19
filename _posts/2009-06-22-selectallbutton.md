@@ -37,6 +37,11 @@ private final Action copyAction = new AbstractAction("copy") {
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [ActionMap (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ActionMap.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - タイトルの`typo`を修正 -- *aterai* 2009-06-23 (火) 18:34:44
 - `Java Web Start`で起動した場合は、 ~~コピーできない？~~ このサンプル内でコピーした文字列などを外部のアプリケーションにペーストすることはできない(逆も不可)？ -- *aterai* 2009-10-02 (金) 19:05:43

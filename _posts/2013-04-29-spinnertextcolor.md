@@ -45,7 +45,7 @@ p.add(box, BorderLayout.EAST);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ドロップダウンリストの表示を無効にした`JComboBox`と`2`つの`ArrowButton`を組み合わせて、`JSpinner`風のコンポーネントを作成しています。`JComboBox`のセルレンダラーは`Html`タグが使用可能なので、各アイテムの文字色を`<font>`タグを使って変更しています。
+上記のサンプルでは、ドロップダウンリストの表示を無効にした`JComboBox`と`2`つの`ArrowButton`を組み合わせて、`JSpinner`風のコンポーネントを作成しています。`JComboBox`のセルレンダラーは`Html`タグが使用可能なので、各アイテムの文字列の一部を`<font>`タグを使って色変更しています。
 
 - `BasicComboBoxUI#createArrowButton()`メソッドをオーバーライドして、`JComboBox`の`ArrowButton`を非表示に設定
     - [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
@@ -58,17 +58,13 @@ p.add(box, BorderLayout.EAST);
 
 <!-- dummy comment line for breaking list -->
 
-- - - -
-- 以下は、`JSpinner`の`Editor`を`JFormattedTextField`から`JLabel`に変更する場合のサンプル
-    - [JSpinnerのエディタをJLabelに変更してHTMLを表示する](https://ateraimemo.com/Swing/HtmlSpinnerEditor.html)に移動
-
-<!-- dummy comment line for breaking list -->
-
 ## 参考リンク
 - [JComboBoxのArrowButtonを隠す](https://ateraimemo.com/Swing/HideComboArrowButton.html)
 - [JTableを別コンポーネントから操作](https://ateraimemo.com/Swing/SelectAllButton.html)
 - [JComponentのKeyBinding一覧を取得する](https://ateraimemo.com/Swing/KeyBinding.html)
 - [JButtonがマウスで押されている間、アクションを繰り返すTimerを設定する](https://ateraimemo.com/Swing/AutoRepeatTimer.html)
+- [JSpinnerのエディタをJLabelに変更してHTMLを表示する](https://ateraimemo.com/Swing/HtmlSpinnerEditor.html)
+    - `JSpinner`の`Editor`を`JFormattedTextField`から`JLabel`に変更して同様の文字色変更を行うサンプル
 
 <!-- dummy comment line for breaking list -->
 
