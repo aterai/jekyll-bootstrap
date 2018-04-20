@@ -24,6 +24,8 @@ comments: true
 
 - コンポーネントに`setToolTipText(...)`メソッドで`null`以外が設定された場合、「表示する」がデフォルト
 - `ToolTipManager`は、アプリケーション全体でのツールチップの表示時間、表示までの遅延時間などが設定可能
+- `ToolTipManager.sharedInstance().unregisterComponent(c)`で特定のコンポーネント`c`を`ToolTipManager`から削除可能
+    - `setToolTipText(...)`を設定している場合でも、ツールチップは表示されない
 
 <!-- dummy comment line for breaking list -->
 

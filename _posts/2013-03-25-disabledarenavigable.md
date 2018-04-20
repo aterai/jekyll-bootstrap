@@ -21,13 +21,13 @@ comments: true
 
 ## 解説
 - `WindowsLookAndFeel`
-    - `UIManager.getBoolean("MenuItem.disabledAreNavigable")`のデフォルトは`true`
-    - `UIManager.put("MenuItem.disabledAreNavigable", ...)`で、`Disabled`な`JMenuItem`のハイライト可・不可を切替できる
+    - `UIManager.getLookAndFeelDefaults().getBoolean("MenuItem.disabledAreNavigable")`の初期値は`true`
+    - `UIManager.put("MenuItem.disabledAreNavigable", ...)`で、`Disabled`な`JMenuItem`をハイライトするかどうかを切替可能
 - `MetalLookAndFeel`
-    - `UIManager.getBoolean("MenuItem.disabledAreNavigable")`のデフォルトは`false`
+    - `UIManager.getLookAndFeelDefaults().getBoolean("MenuItem.disabledAreNavigable")`の初期値は`false`
     - `UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`を設定すれば、`Disabled`な`JMenuItem`でもハイライトが可能
 - `NimbusLookAndFeel`
-    - `UIManager.getBoolean("MenuItem.disabledAreNavigable")`のデフォルトは`false`
+    - `UIManager.getLookAndFeelDefaults().getBoolean("MenuItem.disabledAreNavigable")`の初期値は`false`
     - `UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`を設定しても、`Disabled`な`JMenuItem`をハイライト不可
 
 <!-- dummy comment line for breaking list -->

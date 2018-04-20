@@ -58,7 +58,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ノブをマウスでドラッグ中の場合のみ`ToolTip`で値を表示するために、`JToolTip`ではなく`JWindow`を使用しています。
+上記のサンプルでは、ノブをマウスでドラッグ中の場合のみ値を表示するために、`JToolTip`ではなく`JWindow`を使用しています。
 
 - `JWindow`
     - `JToolTip`と背景色などが同じになるよう設定
