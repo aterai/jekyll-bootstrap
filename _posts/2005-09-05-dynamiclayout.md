@@ -26,14 +26,12 @@ comments: true
     - ウィンドウのリサイズが完了した後、内部コンテナのレイアウトを評価する
 - `DynamicLayout`: `true`
     - ウィンドウのリサイズに応じて、内部コンテナのレイアウトを動的に評価する
-    - `OS`が、この動的レイアウト機能をサポートしているかどうかは、以下のメソッドで調べることが可能
+    - デスクトップ環境が、この動的レイアウト機能をサポートしているかどうかは、以下のメソッドで調べることが可能
+        
+        <pre class="prettyprint"><code>Toolkit.getDefaultToolkit().getDesktopProperty("awt.dynamicLayoutSupported");
 
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>Toolkit.getDefaultToolkit().getDesktopProperty("awt.dynamicLayoutSupported");
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Toolkit#setDynamicLayout(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#setDynamicLayout-boolean-)
 
 <!-- dummy comment line for breaking list -->

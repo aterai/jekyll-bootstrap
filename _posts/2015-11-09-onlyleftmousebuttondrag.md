@@ -21,10 +21,10 @@ comments: true
 
 ## 解説
 - `UIManager.put("Slider.onlyLeftMouseButtonDrag", Boolean.TRUE);`
-    - `JSlider`のノブをマウスの右ボタンでドラッグしても操作不可
+    - `JSlider`のノブをマウスの右ボタンで選択、ドラッグしても操作不可
     - `WindowsLookAndFeel`などのデフォルト
 - `UIManager.put("Slider.onlyLeftMouseButtonDrag", Boolean.FALSE);`
-    - `JSlider`のノブをマウスの右ボタンでドラッグで操作可能
+    - `JSlider`のノブをマウスの右ボタンで選択、ドラッグで操作可能
     - `NimbusLookAndFeel`などのデフォルト
 
 <!-- dummy comment line for breaking list -->

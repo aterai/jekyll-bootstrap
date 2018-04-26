@@ -75,12 +75,12 @@ comments: true
 
 ## 解説
 - 上: `JLabel`
-    - デフォルトの`JLabel`で右側が`...`で省略されている
+    - デフォルトの`JLabel`で、折り返しせずに右側から`...`で省略
 - 中: `GlyphVector`
-    - コンポーネントのサイズが変更されるたびに`GlyphVector`を更新して、文字列の折り返しを行っている
+    - コンテナのサイズが変更されるたびに`GlyphVector`を更新して、文字列の折り返しを実行
     - 欧文などで合字(リガチャ)がある場合は、`GlyphVector gv = font.createGlyphVector(frc, str);`ではなく、[GlyphVector bounds and kerning, ligatures | Oracle Forums](https://community.oracle.com/thread/1289266)のように、`char[] chars = text.toCharArray(); GlyphVector gv = font.layoutGlyphVector(frc, chars, 0, chars.length, Font.LAYOUT_LEFT_TO_RIGHT);`とした方が良さそう
 - 下: `JTextArea`
-    - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として、文字列の折り返しを行っている
+    - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として、文字列の折り返しを実行
 
 <!-- dummy comment line for breaking list -->
 

@@ -23,7 +23,7 @@ comments: true
     // Paint the radio button
     int y = HtmlViewUtil.getFirstLineCenterY(text, b, iconRect);
     getDefaultIcon().paintIcon(c, g, iconRect.x, iconRect.y + y);
-    //....
+    // ...
   }
   public static int getFirstLineCenterY(String text, AbstractButton c, Rectangle iconRect) {
     int y = 0;
@@ -35,7 +35,7 @@ comments: true
           Shape s = new Rectangle();
           Position.Bias b = Position.Bias.Forward;
           s = v.modelToView(e.getStartOffset(), b, e.getEndOffset(), b, s);
-          //System.out.println("v.h: " + s.getBounds());
+          // System.out.println("v.h: " + s.getBounds());
           y = (int) (.5 + Math.abs(s.getBounds().height - iconRect.height) * .5);
         } catch (BadLocationException ex) {
           ex.printStackTrace();
@@ -49,7 +49,7 @@ comments: true
 
 ## 解説
 - 左: `SwingConstants.TOP`
-    - `JCheckBox#setVerticalTextPosition(SwingConstants.TOP);`と設定して、チェックアイコンとテキストの上辺が揃うように設定
+    - `JCheckBox#setVerticalTextPosition(SwingConstants.TOP)`を設定して、チェックアイコンとテキストの上辺が揃うように設定
     - `JCheckBox`のフォントサイズが大きくなると、チェックアイコンが上にずれてしまう
 - 右: `First line center`
     - `WindowsCheckBoxUI#paint(...)`などをオーバーライドし、一行目の中央にチェックアイコンの中心が揃うように設定
