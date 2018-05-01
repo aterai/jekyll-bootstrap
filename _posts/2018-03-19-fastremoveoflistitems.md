@@ -36,7 +36,10 @@ comments: true
       toModel.addElement(fromModel.get(i));
     }
     fromModel.clear();
-    unselectedValues.forEach(fromModel::addElement);
+    // unselectedValues.forEach(fromModel::addElement);
+    DefaultListModel&lt;E&gt; model = new DefaultListModel&lt;&gt;();
+    unselectedValues.forEach(model::addElement);
+    from.setModel(model);
   }
 }
 </code></pre>
@@ -56,6 +59,9 @@ comments: true
     - `DefaultListModel#clear()`で移動元の`JList`をクリア
     - 保存していた未選択アイテムリストから移動元の`JList`にアイテムを復元
     - `AbstractListModel#fireIntervalRemoved(...)`は`DefaultListModel#clear()`で一回呼ばれるだけなので高速
+    - リストの先頭の`1`件を選択して移動すると時間がかかる
+        - 先頭を含まない場合は高速
+        - `DefaultListModel`を新規生成して入れ替えれば高速
 - `addAll + remove`(`20000`件)
     - `AbstractListModel`を継承するリストモデルを作成
     - `DefaultListModel`で使用している`Vector`ではなく、`ArrayList`をアイテムの保持に使用
@@ -95,6 +101,7 @@ comments: true
     - [SpringLayoutの使用](https://ateraimemo.com/Swing/SpringLayout.html)
     - 左右の`JList`: 親パネルの幅の`40%`
     - 中央の`JButton`を縦に配置した`Box.createVerticalBox()`: 親パネルの幅の`10%`
+        - 中央の幅を固定にする場合は、[Componentの3列配置、中央幅固定、左右均等引き伸ばしを行うLayoutManagerを作成する](https://ateraimemo.com/Swing/ThreeColumnLayout.html)のような方法がある
 
 <!-- dummy comment line for breaking list -->
 
