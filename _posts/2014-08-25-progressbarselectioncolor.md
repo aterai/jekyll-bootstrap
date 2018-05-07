@@ -16,13 +16,13 @@ comments: true
 {% download https://lh3.googleusercontent.com/-GXTDLsaFDf0/U_nV4WbEi0I/AAAAAAAACL0/09g79mFs9ZE/s800/ProgressBarSelectionColor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//progressBar1
+<pre class="prettyprint"><code>// progressBar1: UIManager.put(...)
 UIManager.put("ProgressBar.foreground", Color.RED);
 UIManager.put("ProgressBar.selectionForeground", Color.ORANGE);
 UIManager.put("ProgressBar.background", Color.WHITE);
 UIManager.put("ProgressBar.selectionBackground", Color.RED);
 
-//progressBar2
+// progressBar2: BasicProgressBarUI
 progressBar2.setForeground(Color.BLUE);
 progressBar2.setBackground(Color.CYAN.brighter());
 progressBar2.setUI(new BasicProgressBarUI() {
@@ -37,7 +37,7 @@ progressBar2.setUI(new BasicProgressBarUI() {
 
 ## 解説
 - 上: `Default`
-- 中: `UIManager.put(...);`
+- 中: `UIManager.put(...)`
     - 文字色: `ProgressBar.foreground`
     - 背景色: `ProgressBar.background`
     - 進捗状況で塗り潰された場合の文字色: `ProgressBar.selectionForeground`

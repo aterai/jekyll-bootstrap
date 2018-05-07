@@ -68,9 +68,9 @@ comments: true
 
 ## 解説
 - 左
-    - `TextLayout`からアウトラインを取得し、上下にクリップを設定して色分け
+    - `TextLayout`からアウトラインを取得し、上下にクリッピング領域を設定して色分け
 - 右
-    - `GlyphVector`からアウトラインを取得し、上中下にクリップを設定して色分け
+    - `GlyphVector`からアウトラインを取得し、上中下にクリッピング領域を設定して色分け
 
 <!-- dummy comment line for breaking list -->
 

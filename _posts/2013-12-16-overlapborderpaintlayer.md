@@ -91,7 +91,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`JLayer#processMouseEvent(...)`と`JLayer#processMouseMotionEvent(...)`メソッドをオーバーライドして、カーソルの下にある`JRadioButton`を取得し、その周辺に`JLayer#paint(...)`メソッドを使って影と縁を描画しています。
 
-- `JLayer`を使用しているので、これらの影と縁は各コンポーネントより一番手前の別レイヤーに描画される
+- `JLayer`を使用しているので、これらの影と縁は各コンポーネントより一番手前の別レイヤーに上書き可能
     - 隣接したり奥に重なったりしているコンポーネントなどの上に描画が可能
 
 <!-- dummy comment line for breaking list -->

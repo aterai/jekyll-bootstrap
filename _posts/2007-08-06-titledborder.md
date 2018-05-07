@@ -40,7 +40,7 @@ panel.repaint();
 </code></pre>
 
 ## 解説
-上記のサンプルでは、以下のような定数フィールド値をコンボボックスで指定することで、タイトルの位置や揃えを変更できるようになっています。
+上記のサンプルでは、以下のような定数フィールド値を`JComboBox`で指定してタイトルの位置や揃えを変更することができます。
 
 - タイトルの位置を`TitledBorder#setTitlePosition(int)`メソッドで指定
     - `TitledBorder.DEFAULT_POSITION`
