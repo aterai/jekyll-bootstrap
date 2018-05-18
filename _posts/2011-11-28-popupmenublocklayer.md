@@ -61,8 +61,7 @@ comments: true
 
 - [JScrollPaneのスクロールを禁止](https://ateraimemo.com/Swing/DisableScrolling.html)のように、`JScrollPane`、`JTable`などを個別に入力禁止にする必要がない
 - [JLayerで指定したコンポーネントへの入力を禁止](https://ateraimemo.com/Swing/DisableInputLayer.html)と、ほとんど同じだが、その場合、`setComponentPopupMenu(...)`で設定した`JPopupMenu`が制限できない
-    - `JLayer#setLayerEventMask(...)`でポップアップメニュー表示の入力イベントが取得できない？(`Windows7`, `JDK 1.7.0_01`)
-    - [Cursorを砂時計に変更](https://ateraimemo.com/Swing/WaitCursor.html)のように、`GlassPane`にダミーのマウスリスナーを追加してポップアップメニューの表示トリガーを無視する
+    - `JLayer#setLayerEventMask(...)`でポップアップメニュー表示の入力イベントが取得できない？(`Windows7`, `JDK 1.7.0_01`)ため、[Cursorを砂時計に変更](https://ateraimemo.com/Swing/WaitCursor.html)のように`GlassPane`にダミーのマウスリスナーを追加してポップアップメニューの表示トリガーを無視することで対応
 
 <!-- dummy comment line for breaking list -->
 

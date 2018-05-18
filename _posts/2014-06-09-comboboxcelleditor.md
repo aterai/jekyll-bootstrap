@@ -40,7 +40,8 @@ comments: true
     if (node == null) {
       return o;
     }
-    DefaultComboBoxModel&lt;String&gt; m = (DefaultComboBoxModel&lt;String&gt;) panel.comboBox.getModel();
+    DefaultComboBoxModel&lt;String&gt; m =
+        (DefaultComboBoxModel&lt;String&gt;) panel.comboBox.getModel();
     Node n = new Node(panel.pluginName.getText(), node.plugins);
     n.setSelectedPluginIndex(m.getIndexOf(o));
     return n;
@@ -80,7 +81,8 @@ comments: true
         if (o instanceof JComboBox) {
           panel.comboBox.showPopup();
         } else if (o != null) {
-          Container c = SwingUtilities.getAncestorOfClass(JComboBox.class, (Component) o);
+          Container c = SwingUtilities.getAncestorOfClass(
+              JComboBox.class, (Component) o);
           if (c instanceof JComboBox) {
             panel.comboBox.showPopup();
           }

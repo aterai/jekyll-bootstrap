@@ -92,7 +92,8 @@ comments: true
 ## 解説
 - 上
     - [JTabbedPaneにタブを閉じるボタンを追加](https://ateraimemo.com/Swing/TabWithCloseButton.html)
-    - タブに追加したコンポーネントは、中央揃えで配置される(`BasicTabbedPaneUI`などのデフォルト)
+    - タブに追加したコンポーネントは、中央揃えで配置される
+        - `BasicTabbedPaneUI`などのデフォルト
 - 下
     - `JLayer`を使用して、タブの余白にそれを閉じるための`JButton`を描画
         - `TabbedPaneUI`をオーバーライドする必要がない

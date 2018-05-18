@@ -24,7 +24,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルは、以下の三種類の設定で、セルを編集不可にする方法をテストしています。
+上記のサンプルは、以下の`3`種類の設定で、セルを編集不可にする方法をテストしています。
 
 - `Override TableModel#isCellEditable(...) { return false; }`
     - テーブルモデルの`TableModel#isCellEditable()`メソッドが常に`false`を返すようにオーバーライドして、すべてのセルを編集不可に設定

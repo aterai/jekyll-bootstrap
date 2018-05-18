@@ -69,7 +69,7 @@ comments: true
 上記のサンプルでは、以下のようにしてサマリー行を作成しています。
 
 - モデル(`Integer`)の先頭と末尾にダミー行を追加
-    - 値は`Integer.MIN_VALUE`と`Integer.MAX_VALUE`を使用し、ソートしても先頭と末尾になるくるよう設定
+    - 値は`Integer.MIN_VALUE`と`Integer.MAX_VALUE`を使用し、ソートしても先頭と末尾になるよう設定
 - ソートでどちらかが表示上での先頭行になった場合、フィルタでこれを非表示にする
 
 <!-- dummy comment line for breaking list -->

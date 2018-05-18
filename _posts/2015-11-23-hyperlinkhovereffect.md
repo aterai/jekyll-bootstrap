@@ -40,20 +40,17 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 - [JLabelで表示するHtmlアンカータグの文字色を変更する](https://ateraimemo.com/Swing/AnchorTextColor.html)のように`StyleSheet`を使用して、`addRule("a:hover{color:#FF0000;}")`を設定しても効果がない
 - `HyperlinkListener`を`JEditorPane`に設定し、`HyperlinkEvent.EventType.ENTERED`イベントでリンク文字色を赤に変更、`HyperlinkEvent.EventType.EXITED`イベントで青に戻すよう設定
 - リンク文字色の変更は`HyperlinkEvent`から取得した`Element`の属性に、以下のように`addAttribute(HTML.Attribute.COLOR, color)`メソッドを使用して設定
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>private void setElementColor(Element element, String color) {
-  AttributeSet attrs = element.getAttributes();
-  Object o = attrs.getAttribute(HTML.Tag.A);
-  if (o instanceof MutableAttributeSet) {
-    MutableAttributeSet a = (MutableAttributeSet) o;
-    a.addAttribute(HTML.Attribute.COLOR, color);
-  }
-}
+    
+    <pre class="prettyprint"><code>private void setElementColor(Element element, String color) {
+      AttributeSet attrs = element.getAttributes();
+      Object o = attrs.getAttribute(HTML.Tag.A);
+      if (o instanceof MutableAttributeSet) {
+        MutableAttributeSet a = (MutableAttributeSet) o;
+        a.addAttribute(HTML.Attribute.COLOR, color);
+      }
+    }
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [JLabelで表示するHtmlアンカータグの文字色を変更する](https://ateraimemo.com/Swing/AnchorTextColor.html)
 
 <!-- dummy comment line for breaking list -->

@@ -98,6 +98,7 @@ private static JComponent makeBreadcrumbList(
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
 - 注:
     - アイコンの三角形部分に左揃えした文字列や長い文字列などが被らないようにするため、`JToggleButton`には`EmptyBorder`で開始辺と終了辺に余白を設定している
     - 最初の`JToggleButton`の開始辺には三角形の高さ分の余白は必要ない

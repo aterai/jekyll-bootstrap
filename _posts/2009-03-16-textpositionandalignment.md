@@ -16,7 +16,8 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVPS5wBUI/AAAAAAAAAnU/2hri1cAlfoM/s800/TextPositionAndAlignment.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>label.setVerticalAlignment(SwingConstants.CENTER);
+<pre class="prettyprint"><code>JLabel label = new JLabel("Test Test", icon, SwingConstants.CENTER);
+label.setVerticalAlignment(SwingConstants.CENTER);
 label.setVerticalTextPosition(SwingConstants.TOP);
 label.setHorizontalAlignment(SwingConstants.RIGHT);
 label.setHorizontalTextPosition(SwingConstants.LEFT);

@@ -17,6 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("Menu.arrowIcon", new ArrowIcon());
+// or: UIManager.getLookAndFeelDefaults().put("Menu.arrowIcon", new ArrowIcon());
 // ...
 class ArrowIcon implements Icon {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
@@ -61,10 +62,24 @@ class ArrowIcon implements Icon {
 </code></pre>
 - `WindowsLookAndFeel`で、`JMenu`が選択されてサブメニューが表示されたときに`ArrowIcon`と重ならないように、アイコンの右側に余白を設定
 - `NimbusLookAndFeel`では`UIManager.put("Menu.arrowIcon", new Icon() {...})`は無効、かつ`JMenuBar`に追加されている`JMenu`に`Menu.arrowIcon`が不正に表示されてしまう？
+- 以下のように`UIManager.getLookAndFeelDefaults()`でアイコンを設定すると、`NimbusLookAndFeel`でも有効だが、`JMenuBar`に追加されている`JMenu`に`Menu.arrowIcon`が不正に表示されてしまう現象は同じ
+    
+    <pre class="prettyprint"><code>UIManager.getLookAndFeelDefaults().put("Menu.arrowIcon", new ArrowIcon());
 
-<!-- dummy comment line for breaking list -->
-
-## 参考リンク
+</code></pre>
+- `NimbusLookAndFeel`などの場合、個別に`JMenu#putClientProperty("Nimbus.Overrides", ...)`でアイコンを変更することで回避可能
+- 親が`JMenuBar`のコンポーネントにアイコンが設定されている場合は、非表示にすることで回避可能
+    
+    <pre class="prettyprint"><code>class ArrowIcon implements Icon {
+      @Override public void paintIcon(Component c, Graphics g, int x, int y) {
+        Container parent = SwingUtilities.getUnwrappedParent(c);
+        if (parent instanceof JMenuBar) {
+          return;
+        }
+        Graphics2D g2 = (Graphics2D) g.create();
+        // ...
+</code></pre>
+- * 参考リンク [#reference]
 - [BasicMenuItemUI#arrowIcon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicMenuItemUI.html#arrowIcon)
 
 <!-- dummy comment line for breaking list -->

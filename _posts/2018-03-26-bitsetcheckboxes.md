@@ -32,7 +32,7 @@ IntStream.range(0, BIT_LENGTH).forEach(i -&gt; {
     status = newValue;
     label.setText(print(status));
   });
-panel.add(c);
+  panel.add(c);
 });
 </code></pre>
 
