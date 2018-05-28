@@ -51,7 +51,7 @@ hsb.addMouseWheelListener(new MouseWheelListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JScrollPane`のビューポートに追加した`JLabel`に`MouseWheelListener`を設定し、<kbd>Ctrl</kbd>キーを押しながらのマウスホイールの場合は、そのイベントを`HorizontalScrollBar`に転送するようにしています。`HorizontalScrollBar`にも`MouseWheelListener`を追加しているので、その上でマウスホイールを回転する場合は、<kbd>Ctrl</kbd>キー無しでも水平スクロールが実行されます。
+上記のサンプルでは、`JScrollPane`のビューポートに追加した`JLabel`に`MouseWheelListener`を設定し、<kbd>Ctrl</kbd>キーを押しながらマウスホイールを回転した場合は、そのイベントを`HorizontalScrollBar`に転送しています。`HorizontalScrollBar`にも`MouseWheelListener`を追加しているので、その上でマウスホイールを回転する場合は、<kbd>Ctrl</kbd>キー無しでも水平スクロールが実行されます。
 
 ## 参考リンク
 - [JDK-8033000 No Horizontal Mouse Wheel Support In BasicScrollPaneUI - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8033000)

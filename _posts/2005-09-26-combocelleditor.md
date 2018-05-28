@@ -27,10 +27,9 @@ col.setCellEditor(new DefaultCellEditor(cb));
 ## 解説
 上記のサンプルでは、`1`列目のセルエディタとしてコンボボックスを使う`DefaultCellEditor`を登録しています。
 
-- 注
-    - コンボボックスの余白を`0`に設定すれば、セル内にきれいに収納される
-        - 参考: [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
-    - 以下は余白を`0`にしていない場合
+- コンボボックスの余白を`0`に設定すれば、セル内にきれいに収納される
+    - 参考: [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
+- 以下は余白を`0`にしていない場合
 
 <!-- dummy comment line for breaking list -->
 ![screenshot](https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTJ1Ykl--I/AAAAAAAAAVA/ZRLgScHCF3s/s800/ComboCellEditor1.png)

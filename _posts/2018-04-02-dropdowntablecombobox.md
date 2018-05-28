@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2018-04-02T17:25:49+09:00
 description: JComboBoxのドロップダウンリストとしてJListの代わりにJTableを使用します。
 image: https://drive.google.com/uc?id=170XdYlh7LDQaucke8xUxSSN1qlcPWcrGrw
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2018/05/use-jtable-instead-of-jlist-as-drop.html
+    lang: en
 comments: true
 ---
 ## 概要

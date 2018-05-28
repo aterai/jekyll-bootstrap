@@ -92,7 +92,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`0`列目の値(`boolean`)の変更、行の追加、削除を受け取って`JTableHeader`のチェック状態を更新する`TableModelListener`を作成して、これを`TableModel#addTableModelListener(...)`で設定しています。
+上記のサンプルでは、`0`列目のセルの値(`boolean`)変更、行の追加、削除イベントなどを受け取って、`JTableHeader`のチェック状態を更新する`TableModelListener`を作成して、これを`TableModel#addTableModelListener(...)`で設定しています。
 
 - 行の削除: `e.getType() == TableModelEvent.DELETE`
     - 削除によって行数が`0`になった場合は、`JTableHeader`は未選択状態
