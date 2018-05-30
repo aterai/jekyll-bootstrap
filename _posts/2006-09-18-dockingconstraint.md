@@ -52,4 +52,7 @@ panel.add(Box.createRigidArea(new Dimension()), BorderLayout.WEST);
 panel.add(Box.createRigidArea(new Dimension()), BorderLayout.EAST);
 </code></pre>
 
+## 参考リンク
+[BasicToolBarUI#canDock(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicToolBarUI.html#canDock-java.awt.Component-java.awt.Point-)
+
 ## コメント

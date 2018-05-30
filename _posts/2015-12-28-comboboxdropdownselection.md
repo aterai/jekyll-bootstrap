@@ -28,13 +28,13 @@ comments: true
 
 ## 解説
 - `Default`
-    - `"123456"`を編集して`"a"`に変更し、ドロップダウンリストを開くと、`"123456"`が選択状態
+    - `"123456"`を編集して`"a"`に変更し、ドロップダウンリストを開くと、`"123456"`が選択状態になる
 - `popupMenuWillBecomeVisible`
-    - `"123456"`を編集して`"a"`に変更し、ドロップダウンリストを開くと、`"a"`が選択状態
+    - `"123456"`を編集して`"a"`に変更し、ドロップダウンリストを開くと、`"a"`が選択状態になる
     - `PopupMenuListener`を追加し、`popupMenuWillBecomeVisible(...)`メソッドで編集された文字列がドロップダウンリストに存在する場合は選択する
     - ドロップダウンリストを開いたときに編集後の文字列がリストに存在しない場合は、選択状態はクリアされる
 - `+enterPressed Action`
-    - `"123456"`を編集して`"123456a"`に変更し<kbd>Enter</kbd>、次に文字列を`"a"`に変更してから、ドロップダウンリストを開くと、リストに`"123456a"`が追加され、`"a"`が選択状態
+    - `"123456"`を編集して`"123456a"`に変更し<kbd>Enter</kbd>、次に文字列を`"a"`に変更してから、ドロップダウンリストを開くと、リストに`"123456a"`が追加され、`"a"`が選択状態になる
     - <kbd>Enter</kbd>キーを押した場合、アイテムを追加するアクションを`ActionMap`に追加
         
         <pre class="prettyprint"><code>Action defalutEnterPressedAction = getActionMap().get(ENTER_PRESSED);
@@ -59,7 +59,9 @@ comments: true
         };
         getActionMap().put(ENTER_PRESSED, a);
 </code></pre>
-    - * コメント [#comment]
-    
-    		#comment
-    		#comment
+    - * 参考リンク [#reference]
+- [PopupMenuListener#popupMenuWillBecomeVisible(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible-javax.swing.event.PopupMenuEvent-)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

@@ -21,7 +21,7 @@ comments: true
 
 ## 解説
 - `table.setSurrendersFocusOnKeystroke(false);`
-    - デフォルト
+    - `JTable`のデフォルト
     - キー入力でセル編集を開始した場合、フォーカスは`JTable`に残る
         - このため、キー入力でセル編集を開始した直後に<kbd>Ctrl+A</kbd>を入力すると`JTable`の行が全選択される
     - マウスクリックでセル編集を開始した場合は、この`JTable#setSurrendersFocusOnKeystroke(...)`の指定に依存せず、フォーカスはセルエディタに移動する
