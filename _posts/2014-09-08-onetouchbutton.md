@@ -56,4 +56,9 @@ for (Component c: divider.getComponents()) {
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [JSplitPaneのディバイダを展開、収納する](https://ateraimemo.com/Swing/OneTouchExpandable.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

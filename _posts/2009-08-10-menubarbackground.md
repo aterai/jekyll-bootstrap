@@ -270,6 +270,12 @@ public class MenuBarRootPaneTest {
 // class TranslucentPopupMenu extends JPopupMenu {
 </code></pre>
 
+## 参考リンク
+- [AbstractButton#fireStateChanged() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#fireStateChanged--)
+- [JRootPaneの背景として画像を表示](https://ateraimemo.com/Swing/RootPaneBackground.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - 選択状態を半透明にするテスト -- *aterai* 2010-01-09 (土) 23:08:42
     - `Windows7`での`WindowsLookAndFeel`でうまくいかない場合があるようなので、すこし修正。 -- *aterai* 2011-09-26 (月) 21:13:47

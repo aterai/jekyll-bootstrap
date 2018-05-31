@@ -79,4 +79,9 @@ comboBox.addItemListener(new ItemListener() {
 });
 </code></pre>
 
+## 参考リンク
+- [BasicTabbedPaneUI#calculateTabHeight(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateTabHeight-int-int-int-)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
