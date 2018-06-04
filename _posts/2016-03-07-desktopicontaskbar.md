@@ -28,4 +28,9 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [DesktopManagerでアイコンの再配置](https://ateraimemo.com/Swing/RelocatedIcon.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

@@ -31,4 +31,10 @@ SwingUtilities.updateComponentTreeUI(this);
 
 <!-- dummy comment line for breaking list -->
 
+## 参考リンク
+- [ConvolveOpでコンポーネントにぼかしを入れる](https://ateraimemo.com/Swing/BlurButton.html)
+    - ~~`ToggleButton.textShiftOffset`を考慮しておかないと、ボタンの端にブラー効果が適用されない？~~ 無関係
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント

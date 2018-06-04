@@ -94,6 +94,12 @@ comments: true
 ## 解説
 上記のサンプルでは、水平用の波パターン`Icon`を作成し、これを順番に並べてセパレータとして描画しています。垂直用のパターンは水平用を`90`度回転して生成しています。
 
+## 参考リンク
+- [JPanelの背景に画像を並べる](https://ateraimemo.com/Swing/BackgroundImage.html)
+- [TitledBorderとMatteBorderを使用してTitledSeparatorを作成する](https://ateraimemo.com/Swing/TitledSeparator.html)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - `SwingConstants.VERTICAL`に対応。 -- *aterai* 2006-06-19 (月) 14:39:49
 

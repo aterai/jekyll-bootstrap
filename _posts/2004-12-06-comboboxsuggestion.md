@@ -159,6 +159,11 @@ JComboBox = new JComboBox(model) {
 };
 </code></pre>
 
+## 参考リンク
+- [JDK-8141502 SwingSet3 demo links are broken - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8141502)
+
+<!-- dummy comment line for breaking list -->
+
 ## コメント
 - 変換途中の日本語も、問題がないともっといいですね。 -- *toshi* 2006-04-24 (月) 13:45:06
     - あー、日本語のこと全然考えてなかったです…。 -- *aterai* 2006-04-24 (月) 15:54:00

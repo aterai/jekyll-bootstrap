@@ -69,7 +69,7 @@ class AlignedLabel extends JLabel {
 ## 参考リンク
 - [GroupLayoutの使用](https://ateraimemo.com/Swing/GroupLayout.html)
 - [GridBagLayoutの使用](https://ateraimemo.com/Swing/GridBagLayout.html)
-    - `1`つのパネルで垂直位置揃えを行う場合は、`GroupLayout`や`GridBagLayout`を使用することが可能
+    - `1`つのパネル内で垂直位置揃えを行う場合は、`GroupLayout`や`GridBagLayout`を使用することが可能
 
 <!-- dummy comment line for breaking list -->
 
