@@ -50,8 +50,8 @@ comments: true
                     implements TableCellEditor {
   public ButtonsEditor(final JTable table) {
     super();
-    //----&gt;
-    //DEBUG: view button click -&gt; control key down + edit button(same cell) press
+    // ----&gt;
+    // DEBUG: view button click -&gt; control key down + edit button(same cell) press
     //       -&gt; remain selection color
     MouseListener ml = new MouseAdapter() {
       @Override public void mousePressed(MouseEvent e) {
@@ -64,7 +64,7 @@ comments: true
     };
     buttons.get(0).addMouseListener(ml);
     buttons.get(1).addMouseListener(ml);
-    //&lt;----
+    // &lt;----
 
     buttons.get(0).addActionListener(new ActionListener() {
       @Override public void actionPerformed(ActionEvent e) {
@@ -96,17 +96,17 @@ comments: true
   @Override public Object getCellEditorValue() {
     return "";
   }
-  //Copied from AbstractCellEditor
-  //protected EventListenerList listenerList = new EventListenerList();
+  // Copied from AbstractCellEditor
+  // protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
   @Override public boolean isCellEditable(java.util.EventObject e) {
     return true;
   }
-//......
+// ...
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。`CellRenderer`用の`JButton`は表示のみに使用するため、アクションを設定するのは`CellEditor`用の`JButton`のみです。
+上記のサンプルでは、`CellRenderer`用と`CellEditor`用に、`JButton`を`2`つ配置した`JPanel`をそれぞれ作成しています。`CellRenderer`用の`JButton`は表示のみに使用するため、`Action`を設定するのは`CellEditor`用の`JButton`のみです。
 
 - - - -
 - `LookAndFeel`などが更新されたら、`JTable#updateUI()`メソッド内で`SwingUtilities#updateRendererOrEditorUI()`メソッドを呼び出すなどして、各セルレンダラーやセルエディタ(これらは`JTable`の子コンポーネントではないので)を更新
@@ -116,7 +116,7 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>//SwingUtilities#updateRendererOrEditorUI()
+<pre class="prettyprint"><code>// SwingUtilities#updateRendererOrEditorUI()
 static void updateRendererOrEditorUI(Object rendererOrEditor) {
   if (rendererOrEditor == null) {
     return;

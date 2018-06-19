@@ -48,8 +48,7 @@ private static int[] getData(ImageIcon imageIcon, int w, int h) {
 
 比較結果は、 `MemoryImageSource`に格納し、`Component#createImage(ImageProducer)`で`Image`に変換しています。
 
-- メモ
-    - `ImageIO.read(...)`で取得した`BufferedImage`から、`getRaster().getDataBuffer()`で`DataBuffer`を取り出すと、`DataBufferByte`になる？
+- `ImageIO.read(...)`で取得した`BufferedImage`から、`getRaster().getDataBuffer()`で`DataBuffer`を取り出すと、`DataBufferByte`になる？
 
 <!-- dummy comment line for breaking list -->
 

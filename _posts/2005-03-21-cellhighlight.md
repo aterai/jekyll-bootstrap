@@ -52,13 +52,16 @@ comments: true
     table.addMouseMotionListener(highlighter);
   }
   @Override public Component getTableCellRendererComponent(JTable table,
-      Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-    super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+        Object value, boolean isSelected, boolean hasFocus,
+        int row, int column) {
+    super.getTableCellRendererComponent(
+        table, value, isSelected, hasFocus, row, column);
     setHorizontalAlignment((value instanceof Number) ? RIGHT : LEFT);
     if (highlighter.isHighlightableCell(row, column)) {
       setBackground(Color.RED);
     } else {
-      setBackground(isSelected ? table.getSelectionBackground() : table.getBackground());
+      setBackground(isSelected ? table.getSelectionBackground()
+                               : table.getBackground());
     }
     return this;
   }
@@ -79,7 +82,8 @@ comments: true
     addMouseListener(highlighter);
     addMouseMotionListener(highlighter);
   }
-  @Override public Component prepareRenderer(TableCellRenderer r, int row, int column) {
+  @Override public Component prepareRenderer(
+        TableCellRenderer r, int row, int column) {
     Component c = super.prepareRenderer(r, row, column);
     if (highlighter.isHighlightableCell(row, column)) {
       c.setBackground(Color.RED);

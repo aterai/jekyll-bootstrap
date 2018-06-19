@@ -16,7 +16,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-R5-8dJERlmk/UWrm3iXBukI/AAAAAAAABpk/i7YjNRcIkpM/s800/MillisToDecideToPopup.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>monitor = new ProgressMonitor(w, "message", "note", 0, 100);
+<pre class="prettyprint"><code>ProgressMonitor monitor = new ProgressMonitor(frame, "message", "note", 0, 100);
 monitor.setMillisToDecideToPopup((int) millisToDecideToPopup.getValue());
 monitor.setMillisToPopup((int) millisToPopup.getValue());
 </code></pre>

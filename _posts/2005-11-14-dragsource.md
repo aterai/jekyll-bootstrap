@@ -58,7 +58,7 @@ dragSource.createDefaultDragGestureRecognizer(label,
 </code></pre>
 
 - - - -
-`JDK 1.6.0`以上なら、以下のような`TransferHandler`を`JLabel`に設定する方法もあります。
+`JDK 1.6.0`以上なら、以下のような`TransferHandler`を使用する方法もあります。
 
 <pre class="prettyprint"><code>label.setTransferHandler(new TransferHandler() {
   @Override public int getSourceActions(JComponent c) {

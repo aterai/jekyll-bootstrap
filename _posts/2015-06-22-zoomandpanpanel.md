@@ -37,21 +37,21 @@ comments: true
     g2.setPaint(new Color(0x55FF0000, true));
     Rectangle r = new Rectangle(500, 140, 150, 150);
 
-    //use: AffineTransform#concatenate(...) and Graphics2D#setTransform(...)
-    //AffineTransform at = g2.getTransform();
-    //at.concatenate(zoomTransform);
-    //g2.setTransform(at);
-    //g2.drawImage(img, 0, 0, this);
-    //g2.fill(r);
+    // use: AffineTransform#concatenate(...) and Graphics2D#setTransform(...)
+    // AffineTransform at = g2.getTransform();
+    // at.concatenate(zoomTransform);
+    // g2.setTransform(at);
+    // g2.drawImage(img, 0, 0, this);
+    // g2.fill(r);
 
-    //or use: Graphics2D#drawImage(Image, AffineTransform, ImageObserver)
+    // or use: Graphics2D#drawImage(Image, AffineTransform, ImageObserver)
     g2.drawImage(img, zoomTransform, this);
-    //or: g2.drawRenderedImage((RenderedImage) img, zoomTransform);
+    // or: g2.drawRenderedImage((RenderedImage) img, zoomTransform);
     g2.fill(zoomTransform.createTransformedShape(r));
 
-    //BAD EXAMPLE
-    //g2.setTransform(zoomTransform);
-    //g2.drawImage(img, 0, 0, this);
+    // BAD EXAMPLE
+    // g2.setTransform(zoomTransform);
+    // g2.drawImage(img, 0, 0, this);
 
     g2.dispose();
   }
@@ -88,11 +88,14 @@ comments: true
         if (p instanceof JViewport) {
           JViewport vport = (JViewport) p;
           Rectangle ovr = vport.getViewRect();
-          double s = dir &gt; 0 ? 1d / ZOOM_MULTIPLICATION_FACTOR : ZOOM_MULTIPLICATION_FACTOR;
+          double s = dir &gt; 0 ? 1d / ZOOM_MULTIPLICATION_FACTOR
+                             : ZOOM_MULTIPLICATION_FACTOR;
           zoomTransform.scale(s, s);
-          //double s = 1d + zoomRange.getValue() * .1;
-          //zoomTransform.setToScale(s, s);
-          Rectangle nvr = AffineTransform.getScaleInstance(s, s).createTransformedShape(ovr).getBounds();
+          // double s = 1d + zoomRange.getValue() * .1;
+          // zoomTransform.setToScale(s, s);
+          Rectangle nvr = AffineTransform.getScaleInstance(s, s)
+                                         .createTransformedShape(ovr)
+                                         .getBounds();
           Point vp = nvr.getLocation();
           vp.translate((nvr.width - ovr.width) / 2, (nvr.height - ovr.height) / 2);
           vport.setViewPosition(vp);
@@ -113,7 +116,7 @@ comments: true
 
 - [JPanelに表示した画像のズームとスクロール](https://ateraimemo.com/Swing/ZoomingAndPanning.html)のようにズームを行うための`AffineTransform`(このサンプルでは`zoomTransform`)を直接`Graphics2D`に設定すると、元からある`Graphics2D`コンテキスト内の`AffineTransform`(`JScrollBar`による移動)と競合して描画が乱れてしまう
     
-    <pre class="prettyprint"><code>//BAD EXAMPLE
+    <pre class="prettyprint"><code>// BAD EXAMPLE
     g2.setTransform(zoomTransform);
     g2.drawImage(img, 0, 0, this);
 </code></pre>
