@@ -21,7 +21,8 @@ comments: true
     JSpinner source = (JSpinner) e.getComponent();
     SpinnerNumberModel model = (SpinnerNumberModel) source.getModel();
     Integer oldValue = (Integer) source.getValue();
-    int intValue = oldValue.intValue() - e.getWheelRotation() * model.getStepSize().intValue();
+    int intValue = oldValue.intValue()
+                   - e.getWheelRotation() * model.getStepSize().intValue();
     int max = ((Integer) model.getMaximum()).intValue(); //1000
     int min = ((Integer) model.getMinimum()).intValue(); //0
     if (min &lt;= intValue &amp;&amp; intValue &lt;= max) {
@@ -32,7 +33,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSpinner`や`JSlider`上でマウスホイールを回転させるとその値を変更することができます。`MouseWheelEvent#getWheelRotation()`の値は、ホイールの回転が下方向の場合は増加で正、上方向は減少で負になります。
+上記のサンプルでは、`JSpinner`や`JSlider`に`MouseWheelListener`を設定し、その上でマウスホイールを回転させると値を変更可能にしています。`MouseWheelEvent#getWheelRotation()`の値は、ホイールの回転が下方向の場合は増加で正、上方向は減少で負になります。
 
 ## 参考リンク
 - [MouseWheelListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/MouseWheelListener.html)

@@ -22,9 +22,8 @@ comments: true
 ## 解説
 各プラットフォームのデスクトップデザインに対応したシステムカラーは、`SystemColor`クラスの`static`フィールドにまとめて定義されています。例えば、`Windows`プラットフォームでデスクトップのカスタマイズでテーマなどを変更すると、この`SystemColor`も動的にその変更に追従します。
 
-- メモ
-    - `LookAndFeel`を変更しても`SystemColor`は変化しない
-    - `GTKLookAndFeel`がシステムデフォルトになる環境では`SystemColor`を取得することが出来ない
+- `LookAndFeel`を変更しても`SystemColor`は変化しない
+- `GTKLookAndFeel`がシステムデフォルトになる環境では`SystemColor`を取得不可
 
 <!-- dummy comment line for breaking list -->
 

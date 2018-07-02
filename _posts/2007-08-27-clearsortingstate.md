@@ -42,11 +42,11 @@ table.getTableHeader().addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ヘッダを<kbd>Shift</kbd>キーを押しながらマウスクリックしたときに`TableRowSorter#setSortKeys`メソッドを使ってソートキーを空にすることでソート無しの状態に戻す機能を追加しています。
+上記のサンプルでは、`TableHeader`を<kbd>Shift</kbd>キーを押しながらマウスクリックしたときに`TableRowSorter#setSortKeys`メソッドを使ってソートキーを空にすることでソート無しの状態に戻す機能を追加しています。
 
 - 制限:
     - ソートキーになっていないカラムヘッダを<kbd>Shift</kbd>+クリックした場合でも、ソート状態をクリアする
-    - ~~行がソートされている場合は、ドラッグ&ドロップで行を入れ替え不可~~ `D&D`機能は削除
+    - ~~行がソートされている場合は、ドラッグ＆ドロップで行を入れ替え不可~~ ドラッグ＆ドロップでの入れ替えは無効化
 
 <!-- dummy comment line for breaking list -->
 

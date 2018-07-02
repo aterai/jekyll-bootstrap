@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2018-05-21T17:27:59+09:00
 description: JList間でコピー＆ペーストによるアイテムの複製・移動を行います。
 image: https://drive.google.com/uc?id=1wNH_7qaS-YirfMG-vli1p7sETt3v5oaciA
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2018/06/move-items-by-copying-and-pasting.html
+    lang: en
 comments: true
 ---
 ## 概要

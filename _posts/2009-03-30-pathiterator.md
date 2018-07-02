@@ -19,11 +19,13 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTQ-2m7pMI/AAAAAAAAAgc/B55RHlb8ajM/s800/PathIterator.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private StringBuilder makeStarburstSvg(PathIterator pi, int sz, String style, String desc) {
+<pre class="prettyprint"><code>private StringBuilder makeStarburstSvg(
+      PathIterator pi, int sz, String style, String desc) {
   StringBuilder sb = new StringBuilder();
   sb.append("&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n");
   //...
-  sb.append(String.format("&lt;svg width=\"%d\" height=\"%d\" xmlns=\"%s\"&gt;%n", sz, sz, w3));
+  sb.append(String.format(
+      "&lt;svg width=\"%d\" height=\"%d\" xmlns=\"%s\"&gt;%n", sz, sz, w3));
   sb.append(String.format("  &lt;desc&gt;%s&lt;/desc&gt;%n", desc));
   sb.append("  &lt;path d=\"");
   double[] c = new double[6];
@@ -34,10 +36,12 @@ comments: true
       case PathIterator.SEG_LINETO:
         sb.append(String.format("L%.2f,%.2f ", c[0], c[1])); break;
       case PathIterator.SEG_QUADTO:
-        sb.append(String.format("Q%.2f,%.2f,%.2f,%.2f ", c[0], c[1], c[2], c[3]));
+        sb.append(String.format("Q%.2f,%.2f,%.2f,%.2f ",
+                                c[0], c[1], c[2], c[3]));
         break;
       case PathIterator.SEG_CUBICTO:
-        sb.append(String.format("C%.2f,%.2f,%.2f,%.2f,%.2f,%.2f ", c[0], c[1], c[2], c[3], c[4], c[5]));
+        sb.append(String.format("C%.2f,%.2f,%.2f,%.2f,%.2f,%.2f ",
+                                c[0], c[1], c[2], c[3], c[4], c[5]));
         break;
       case PathIterator.SEG_CLOSE:
         sb.append("Z");
@@ -52,7 +56,6 @@ comments: true
 
 ## 解説
 上記のサンプルでは、`Shape`から`PathIterator`を取得し、そのパスを辿って`SVG`ファイルを生成しています。
-
 
 ## 参考リンク
 - [PathIterator (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/PathIterator.html)

@@ -83,7 +83,7 @@ class KamabokoBorder extends RoundedCornerBorder {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Path2D#lineTo`、`Path2D#quadTo`を使ってかまぼこ型の図形を作成し、`JComboBox`の`Border`に設定しています。
+上記のサンプルでは、`Path2D#lineTo(...)`、`Path2D#quadTo(...)`メソッドを使用してかまぼこ型の図形を作成し、`JComboBox`の`Border`として設定しています。
 
 - 上: `MetalComboBoxUI`
     - `BasicComboBoxUI`を設定
@@ -97,16 +97,16 @@ class KamabokoBorder extends RoundedCornerBorder {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- メモ
-    - 上記の方法で角丸の`JComboBox`が作成できるのは、`BasicLookAndFeel`と`WindowsLookAndFeel`の場合のみ？
-    - 以下のような方法でも、かまぼこ型の図形を作成可能
-        
-        <pre class="prettyprint"><code>Area round = new Area(new RoundRectangle2D.Float(x, y, width - 1, height - 1, r, r));
-        Rectangle b = round.getBounds();
-        b.setBounds(b.x, b.y + r, b.width, b.height - r);
-        round.add(new Area(b));
+- 上記の方法で角丸の`JComboBox`が作成できるのは、`BasicLookAndFeel`と`WindowsLookAndFeel`の場合のみ？
+- 以下のような方法でも、かまぼこ型の図形を作成可能
+    
+    <pre class="prettyprint"><code>Area round = new Area(
+        new RoundRectangle2D.Float(x, y, width - 1, height - 1, r, r));
+    Rectangle b = round.getBounds();
+    b.setBounds(b.x, b.y + r, b.width, b.height - r);
+    round.add(new Area(b));
 </code></pre>
-    - * 参考リンク [#reference]
+- * 参考リンク [#reference]
 - [JComboBoxのBorderを変更する](https://ateraimemo.com/Swing/ComboBoxBorder.html)
 - [JTextFieldの角を丸める](https://ateraimemo.com/Swing/RoundedTextField.html)
 

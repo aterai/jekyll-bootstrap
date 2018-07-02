@@ -105,7 +105,8 @@ comments: true
             p.add(checkBox);
             p.setBorder(UIManager.getBorder("Table.noFocusBorder"));
           }
-          @Override public Component getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column) {
+          @Override public Component getTableCellEditorComponent(
+              JTable table, Object value, boolean isSelected, int row, int column) {
             checkBox.setSelected(Objects.equals(value, Boolean.TRUE));
             p.setBackground(table.getSelectionBackground());
             return p;

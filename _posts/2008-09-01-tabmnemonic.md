@@ -16,17 +16,18 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUu2fjTpI/AAAAAAAAAmg/EST6gnFRH84/s800/TabMnemonic.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>tab.addTab("Button", new JButton("button"));
-tab.setMnemonicAt(3, KeyEvent.VK_B);
-tab.setDisplayedMnemonicIndexAt(3, 0);
+<pre class="prettyprint"><code>int tabIdx = 3;
+tab.addTab("Button", new JButton("button"));
+tab.setMnemonicAt(tabIdx, KeyEvent.VK_B);
+tab.setDisplayedMnemonicIndexAt(tabIdx, 0);
 </code></pre>
 
 ## 解説
-上記のサンプルコードは、例えばタブタイトルの先頭文字が`B`のタブに<kbd>Alt+B</kbd>でフォーカスが移動するように、`JTabbedPane#setMnemonicAt(...)`メソッドを使用して`Mnemonic`を設定しています。
+上記のサンプルコードは、`JTabbedPane`の`3`番目のタブに`JTabbedPane#setMnemonicAt(3, KeyEvent.VK_B)`メソッドを使用して`Mnemonic`を設定し、<kbd>Alt+B</kbd>のキー入力でそのタブにフォーカス移動が可能になっています。
+
 また、タブタイトルの先頭文字(`B`)にアンダーラインが入るように`JTabbedPane#setDisplayedMnemonicIndexAt(...)`メソッドで設定しています。
 
-- `JDK 6`以降でタブに`JComponent`を追加する場合
-    - `JTabbedPane#setDisplayedMnemonicIndexAt(...)`メソッドでは`Mnemonic`にアンダーラインは引かれないので、追加するコンポーネント側でアンダーラインを引くための設定をする必要がある
+- `JDK 6`以降でタブに`Component`を追加している場合、`JTabbedPane#setDisplayedMnemonicIndexAt(...)`メソッドでは`Mnemonic`にアンダーラインは引かれないので、以下のように追加するコンポーネント側でアンダーラインを引くための設定をする必要がある
 
 <!-- dummy comment line for breaking list -->
 

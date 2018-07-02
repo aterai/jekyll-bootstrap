@@ -33,7 +33,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTableHeader`から`TableColumnModel`を取得し、`XMLEncoder`で`XML`ファイルに保存、`XMLDecoder`で復元することで、マウスドラッグによる列の入れ替え、幅の変更、`JPopupMenu`(右クリックなど)を開いての名前変更などを永続化することができます。
+上記のサンプルでは、`JTableHeader`から`TableColumnModel`を取得し、`XMLEncoder`で`XML`ファイルに保存、`XMLDecoder`で復元することで、マウスドラッグによる列の入れ替え、幅の変更、カラム名の変更などを永続化することができます。
 
 ## 参考リンク
 - [JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)

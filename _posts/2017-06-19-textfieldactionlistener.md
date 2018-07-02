@@ -25,11 +25,11 @@ textField2.addActionListener(e -&gt; append(((JTextField) e.getSource()).getText
 
 - 上:
     - デフォルトの`JTextField`
-    - 自身のフォーカスがあり、親の`JRootPane`に`DefaultButton`が設定されている場合、<kbd>Enter</kbd>キー入力で`DefaultButton`がクリックされる
+    - 自身にフォーカスがあり、かつ親の`JRootPane`に`DefaultButton`が設定されている場合、<kbd>Enter</kbd>キー入力で`DefaultButton`がクリックされる
 - 中:
     - `JTextField`のドキュメントに`DocumentListener`を追加
     - `DocumentListener`は、<kbd>Enter</kbd>キーの入力には反応しない
-    - 自身のフォーカスがあり、親の`JRootPane`に`DefaultButton`が設定されている場合、<kbd>Enter</kbd>キー入力で`DefaultButton`がクリックされる
+    - 自身にフォーカスがあり、かつ親の`JRootPane`に`DefaultButton`が設定されている場合、<kbd>Enter</kbd>キー入力で`DefaultButton`がクリックされる
 - 下:
     - `JTextField`に`ActionListener`を追加
     - 親の`JRootPane`に`DefaultButton`が設定されているかどうかに関わらず、<kbd>Enter</kbd>キー入力で自身に追加された`ActionListener`が実行される

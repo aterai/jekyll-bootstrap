@@ -52,7 +52,7 @@ comments: true
 </code></pre>
 
 ## 解説
-このサンプルでは、以下のようなセルレンダラーを作成して、少数点揃えを行っています。
+このサンプルでは、以下のようなセルレンダラーを作成して、`JTable`の列内で少数点揃えを行っています。
 
 - 小数点揃えを行う`TabStop.ALIGN_DECIMAL`を設定した`TabSet`を作成し、これを`JTextPane`に適用
 - `BorderLayout`を使用する`JPanel`の右側に、推奨幅を固定した`JTextPane`を配置
