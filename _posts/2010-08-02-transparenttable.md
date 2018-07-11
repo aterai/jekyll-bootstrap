@@ -35,7 +35,7 @@ comments: true
     };
   }
 };
-final Color alphaZero = new Color(0x0, true);
+Color alphaZero = new Color(0x0, true);
 table.setOpaque(false);
 table.setBackground(alphaZero);
 scroll.getViewport().setOpaque(false);
@@ -43,7 +43,7 @@ scroll.getViewport().setBackground(alphaZero);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JViewport`と`JTable`のそれぞれに`setOpaque(false)`, `setBackground(new Color(0x0, true));`と設定することで、透明な`JTable`を作成しています。テクスチャ画像は`JViewport`の`paintComponent`メソッドをオーバーライドすることで表示しています。
+上記のサンプルでは、`JViewport`と`JTable`のそれぞれに`setOpaque(false)`, `setBackground(new Color(0x0, true));`と設定することで、透明な`JTable`を作成しています。テクスチャ画像は`JViewport`の`paintComponent`メソッドをオーバーライドして表示しています。
 
 - - - -
 `JTable`の`CellEditor`は、`JTable#prepareEditor(...)`をオーバーライドして、以下のように設定しています。

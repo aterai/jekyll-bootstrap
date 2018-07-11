@@ -88,10 +88,9 @@ comments: true
 - 最後のタブの高さがタブエリアの高さ
 - タブエリアの幅に余裕がある場合は、各タブ幅は`100px`で一定
 - タブエリアの幅に余裕がない場合は、各タブ幅は均等
-- その他
-    - タブを削除した場合、先頭タブにフォーカスが移動する
-    - 左の`JButton`(ダミー)は、タブエリアをラップする`JPanel(BorderLayout)`の`BorderLayout.WEST`に配置
-    - アイコンはランダム
+- タブを削除した場合、先頭タブにフォーカスが移動する
+- 左の`JButton`(ダミー)は、タブエリアをラップする`JPanel(BorderLayout)`の`BorderLayout.WEST`に配置
+- アイコンはランダム
 
 <!-- dummy comment line for breaking list -->
 

@@ -87,7 +87,7 @@ comments: true
 
 ## 解説
 - 左: デフォルト
-    - 選択でノードの背景色が変化
+    - `MetalLookAndFeel`などでは、選択でノードの背景色が変化
 - 右: `JTree`ノードを行選択に変更
     - `NimbusLookAndFeel`風に行全体を選択状態の背景色で描画
     - `BasicTreeUI#getPathBounds(...)`をオーバーライドして、ノードではなく、行のクリックで選択可能に変更

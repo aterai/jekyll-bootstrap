@@ -39,7 +39,6 @@ tree.putClientProperty("Nimbus.Overrides", d);
         - [swing - Nimbus JTree presentation error under java version 1.8 - Stack Overflow](https://stackoverflow.com/questions/44655203/nimbus-jtree-presentation-error-under-java-version-1-8)
         - `JTree`の生成のタイミングで変更に失敗したり、`UIManager.put("Tree.drawHorizontalLines", true);`は問題ない場合もあって、原因不明
         - `UIManager.getBoolean("Tree.paintLines")`が更新されていない？
-- メモ
     - `BasicLookAndFeel`、`MetalLookAndFeel`、`WindowsLookAndFeel`などは、`Tree.linesStyle`の設定は効果がないが、`Tree.lineTypeDashed`が使用可能
         
         <pre class="prettyprint"><code>UIManager.put("Tree.paintLines", true);

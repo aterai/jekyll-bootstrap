@@ -61,11 +61,10 @@ comments: true
 ## 解説
 上記のサンプルでは、`LabelView`を継承し、`LabelView#paint`メソッドをオーバーライドして全角スペースやタブの場合だけ、それぞれの図形を描画しています。
 
-- 注: タブの表示図形は、`xyzzy`風だがドットの数は面倒なので適当
+- タブ表示図形のドット数は適当(`4`タブの場合に`4`点表示している訳ではない)
+- `LabelView`を使用する`EditorKit(ViewFactory)`の作成方法は、[JEditorPaneで改行を表示](https://ateraimemo.com/Swing/ParagraphMark.html)と同様
 
 <!-- dummy comment line for breaking list -->
-
-この`LabelView`を使用する`EditorKit(ViewFactory)`の作成は、[JEditorPaneで改行を表示](https://ateraimemo.com/Swing/ParagraphMark.html)と同様になっています。
 
 ## 参考リンク
 - [Swing - JTextPane View Problem](https://community.oracle.com/thread/1374478)

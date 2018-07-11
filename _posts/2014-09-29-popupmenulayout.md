@@ -49,7 +49,7 @@ popup.add(new JMenuItem("dddddddddd"), c);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JPopupMenu`のレイアウトを`GridBagLayout`に変更して、上部に`4`つのメニューボタンを水平に並べて表示(`FireFox`風？)します。
+上記のサンプルでは、`JPopupMenu`のレイアウトを`GridBagLayout`に変更して、上部に`4`つのメニューボタンを水平に並べて表示しています。
 
 これらのメニューボタンは、`JMenuItem`の以下のメソッドをオーバーライドすることで、ボタン風に表示を変更しています。
 - `JMenuItem#paintComponent(...)`をオーバーライドして`32x32`の`Icon`のみを直接描画

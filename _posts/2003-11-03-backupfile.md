@@ -6,12 +6,12 @@ title: Backup Fileを番号付きで作成
 tags: [File]
 author: aterai
 pubdate: 2003-11-03T02:48:53+09:00
-description: 番号付きバックアップファイルを作成します。
+description: 拡張子に番号を付けたバックアップファイルを作成します。
 image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png
 comments: true
 ---
 ## 概要
-[xyzzy](https://ateraimemo.com/xyzzy.html)風の番号付きバックアップファイルを作成します。
+拡張子に番号を付けたバックアップファイルを作成します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTH9enrSII/AAAAAAAAASA/du4XRgNsIZs/s800/BackupFile.png %}
 
@@ -65,7 +65,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[xyzzy](https://ateraimemo.com/xyzzy.html)風の番号付きバックアップファイル作成のテストを行っています。
+上記のサンプルでは、`xyzzy`風の番号付きバックアップファイル作成のテストを行っています。
 
 以下の例では、古いバージョンを`2`つ、新しいバージョンを`3`つバックアップとして残します。
 
@@ -91,7 +91,6 @@ tmpFile.renameTo(file);
 
 ## 参考リンク
 - [File#createTempFile(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/io/File.html#createTempFile-java.lang.String-java.lang.String-java.io.File-)
-- [xyzzy](https://ateraimemo.com/xyzzy.html)
 
 <!-- dummy comment line for breaking list -->
 

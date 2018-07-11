@@ -41,7 +41,7 @@ public MainPanel() {
 
 1. `Timer`を使用して`10`ミリ秒ごとに`MouseInfo`から`PointerInfo`を取得
 1. `PointerInfo`から画面上でのポインタ座標を取得
-1. `SwingUtilities.convertPointFromScreen`メソッドで、これをパネル相対の座標に変換
+1. `SwingUtilities.convertPointFromScreen(...)`メソッドで、これをパネル相対の座標に変換
 1. ラケットに変換した座標を与えて`JPanel#repaint()`メソッドで再描画
 
 ## 参考リンク

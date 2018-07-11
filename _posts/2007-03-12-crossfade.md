@@ -59,7 +59,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`2`枚の画像の描画に使用する`AlphaComposite`をそれぞれ変化させながら上書きすることで、`Crossfade`による画像の切り替えを行っています。
+上記のサンプルでは、`2`枚の画像の描画に使用する`AlphaComposite`をそれぞれ変化させながら上書きすることで、画像の表示を切り替えています。
 
 上書き規則には、`AlphaComposite.SRC_OVER`を使っています。
 

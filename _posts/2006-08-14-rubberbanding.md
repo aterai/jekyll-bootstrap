@@ -79,7 +79,7 @@ comments: true
 
 - - - -
 - ラバーバンド矩形内部に重なるアイテムアイコンを検索し、それを`JList#setSelectedIndices(int[])`で選択状態に変更
-    - ~~選択範囲が矩形にならずに直線になっている場合は、別途その直線と交差するアイテムを選択~~ `Polygon`の代わりに、`Path2D`を使用することでこれを回避
+    - ~~選択範囲が矩形にならずに直線になっている場合は、別途その直線と交差するアイテムを選択~~ `Polygon`ではなく、`Path2D`を使用することでこれを回避
     - `JDK 1.8.0`以降なら、以下を`l.setSelectedIndices(IntStream.range(0, l.getModel().getSize()).filter(i -> p.intersects(l.getCellBounds(i, i))).toArray());`で置き換え可能
 
 <!-- dummy comment line for breaking list -->

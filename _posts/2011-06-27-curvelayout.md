@@ -23,16 +23,16 @@ comments: true
 panel2.setLayout(new FlowLayout() {
   @Override public void layoutContainer(Container target) {
     synchronized(target.getTreeLock()) {
-      Insets insets = target.getInsets();
+      Insets i = target.getInsets();
       int nmembers  = target.getComponentCount();
       if (nmembers &lt;= 0) {
         return;
       }
       int vgap = getVgap();
       int hgap = getHgap();
-      int rowh = (target.getHeight() - (insets.top + insets.bottom + vgap * 2)) / nmembers;
-      int x = insets.left + hgap;
-      int y = insets.top  + vgap;
+      int rowh = (target.getHeight() - (i.top + i.bottom + vgap * 2)) / nmembers;
+      int x = i.left + hgap;
+      int y = i.top  + vgap;
       for (int i = 0; i &lt; nmembers; i++) {
         Component m = target.getComponent(i);
         if (m.isVisible()) {
