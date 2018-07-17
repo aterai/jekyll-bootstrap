@@ -46,7 +46,7 @@ class SelectedImageFilter extends RGBImageFilter {
 </code></pre>
 
 ## 解説
-上記のサンプルは、`RGBImageFilter`を使用して、一つのアイコンから複数の色の異なるアイコンを生成し、`5`段階の評価を行うコンポーネントを作成しています。クリックしたアイコンの位置が評価レベルになります。
+上記のサンプルは、`RGBImageFilter`を使用して、`1`つのアイコンから複数の色の異なるアイコンを生成し、`5`段階の評価を行うコンポーネントを作成しています。クリックしたアイコンの位置が評価レベルになります。
 
 ## 参考リンク
 - [PI Diagona Icons Pack 1.0 - Download Royalty Free Icons and Stock Images For Web & Graphics Design](http://www.freeiconsdownload.com/Free_Downloads.asp?id=60)

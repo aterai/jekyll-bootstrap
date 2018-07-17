@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private Dimension getImageDimension(Image img) {
-  int id = 0;
+  int id = 0; // Get the images for the background (id == 0)
   MediaTracker tracker = new MediaTracker((Container) this);
   tracker.addImage(img, id);
   try {

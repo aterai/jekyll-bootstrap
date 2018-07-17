@@ -57,14 +57,15 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`WindowsLookAndFeel`(`Java1.6.0`)で、`JRadioButtonMenuItem`のチェックアイコンがすこし歪？なので以下のように修正しています。
+上記のサンプルでは、`UIManager.put("RadioButtonMenuItem.checkIcon", icon)`を使用して`JRadioButtonMenuItem`のチェックアイコンを変更しています。
 
 - `default`
     - デフォルト
+    - `WindowsLookAndFeel`(`Java1.6.0`)で、`JRadioButtonMenuItem`のチェックアイコンが歪になる場合がある
 - `ANTIALIASING`
     - `com.sun.java.swing.plaf.windows.WindowsIconFactory`のアイコンを`g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)`でアンチエイリアス
 - `fillOval`
-    - `fillRoundRect`ではなく、`fillOval`を使用
+    - `fillRoundRect`ではなく、`fillOval`を使用するチェックアイコンを設定
 
 <!-- dummy comment line for breaking list -->
 
@@ -75,6 +76,6 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- `Windows 7`でテストするとアイコンの歪みはないようです。修正されてたのかも？ -- *aterai* 2012-08-08 (水) 19:51:09
+- `Windows 7`でテストするとアイコンの歪みはないので、修正された模様。 -- *aterai* 2012-08-08 (水) 19:51:09
 
 <!-- dummy comment line for breaking list -->

@@ -18,15 +18,17 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private static ImageIcon makeImageIcon(URL url, final JComboBox combo, final int row) {
   ImageIcon icon = new ImageIcon(url);
-  //Wastefulness: icon.setImageObserver(combo);
+  // Wastefulness: icon.setImageObserver(combo);
   icon.setImageObserver(new ImageObserver() {
-    //@see http://www2.gol.com/users/tame/swing/examples/SwingExamples.html
-    @Override public boolean imageUpdate(Image img, int infoflags, int x, int y, int w, int h) {
+    // @see http://www2.gol.com/users/tame/swing/examples/SwingExamples.html
+    @Override public boolean imageUpdate(
+        Image img, int infoflags, int x, int y, int w, int h) {
       if (combo.isShowing() &amp;&amp; (infoflags &amp; (FRAMEBITS | ALLBITS)) != 0) {
         if (combo.getSelectedIndex() == row) {
           combo.repaint();
         }
-        BasicComboPopup p = (BasicComboPopup) combo.getAccessibleContext().getAccessibleChild(0);
+        BasicComboPopup p = (BasicComboPopup) combo.getAccessibleContext()
+                                                   .getAccessibleChild(0);
         JList list = p.getList();
         if (list.isShowing()) {
           list.repaint(list.getCellBounds(row, row));

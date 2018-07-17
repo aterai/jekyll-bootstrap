@@ -32,9 +32,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`CellEditor#isCellEditable(...)`メソッドをオーバーライドし、葉ノードの場合だけ編集が可能にしたセルエディタを作成し、これを`JTree#setCellEditor(...)`で設定しています。
+上記のサンプルでは、`CellEditor#isCellEditable(...)`メソッドをオーバーライドし、葉ノードのみ編集が可能にしたセルエディタを作成し、これを`JTree#setCellEditor(...)`メソッドで設定しています。
 
-<pre class="prettyprint"><code>tree.setCellEditor(new LeafTreeCellEditor(tree, (DefaultTreeCellRenderer) tree.getCellRenderer()));
+<pre class="prettyprint"><code>tree.setCellEditor(
+  new LeafTreeCellEditor(tree, (DefaultTreeCellRenderer) tree.getCellRenderer()));
 </code></pre>
 
 ## 参考リンク

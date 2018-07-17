@@ -17,14 +17,17 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>Border outside = BorderFactory.createMatteBorder(0, 10, 1, 0, Color.GREEN);
-Border inside  = BorderFactory.createEmptyBorder(0, 5, 0, 0);
+Border inside = BorderFactory.createEmptyBorder(0, 5, 0, 0);
 label.setBorder(BorderFactory.createCompoundBorder(outside, inside));
 </code></pre>
 
 ## 解説
-`MatteBorder`は、`4`辺それぞれに異なる幅の直線を描画することができます。上記のサンプルでは、左と下のみ枠を描いてタイトル風のラベルを作成しています。
+`MatteBorder`は`4`辺それぞれに異なる幅の直線を描画することができます。上記のサンプルでは、左と下のみ枠を描いてタイトル風のラベルを作成しています。
 
-`Icon`をタイル状に描画することもできるので、[JComboBoxにアイコンを表示](https://ateraimemo.com/Swing/IconComboBox.html)のような使い方をすることもできます。
+- `Border`として`Icon`をタイル状に描画することも可能
+    - 参考: [JComboBoxにアイコンを表示](https://ateraimemo.com/Swing/IconComboBox.html)
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [MatteBorder (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/border/MatteBorder.html)
