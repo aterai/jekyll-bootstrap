@@ -16,8 +16,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTRQXIAu4I/AAAAAAAAAg4/bh8niw_k5AE/s800/ProgressMonitor.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final ProgressMonitor monitor = new ProgressMonitor(
-    this, "message", "note", 0, 100);
+<pre class="prettyprint"><code>ProgressMonitor monitor = new ProgressMonitor(this, "message", "note", 0, 100);
 monitor.setProgress(0);
 worker = new SwingWorker&lt;String, String&gt;() {
   @Override public String doInBackground() {
@@ -35,7 +34,7 @@ worker = new SwingWorker&lt;String, String&gt;() {
     }
     return "Done";
   }
-  @Override protected void process(java.util.List&lt;String&gt; chunks) {
+  @Override protected void process(List&lt;String&gt; chunks) {
     for (String message : chunks) {
       monitor.setNote(message);
     }
@@ -54,10 +53,10 @@ worker = new SwingWorker&lt;String, String&gt;() {
         text = "Exception";
       }
     }
-    //System.out.println(text);
+    // System.out.println(text);
     area.append(text + "\n");
     area.setCaretPosition(area.getDocument().getLength());
-    //appendLine(text);
+    // appendLine(text);
   }
 };
 worker.addPropertyChangeListener(new ProgressListener(monitor));

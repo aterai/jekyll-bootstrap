@@ -32,7 +32,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTable#getSurrendersFocusOnKeystroke() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#getSurrendersFocusOnKeystroke--)
+- [JTable#setSurrendersFocusOnKeystroke(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#setSurrendersFocusOnKeystroke-boolean-)
 
 <!-- dummy comment line for breaking list -->
 

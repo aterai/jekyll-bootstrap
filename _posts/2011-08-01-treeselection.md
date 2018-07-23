@@ -16,7 +16,8 @@ comments: true
 {% download https://lh6.googleusercontent.com/-bPltus2wD6w/TjZCCGnH40I/AAAAAAAABAE/tgmolSg-2Ys/s800/TreeSelection.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>tree.getSelectionModel().setSelectionMode(TreeSelectionModel.CONTIGUOUS_TREE_SELECTION);
+<pre class="prettyprint"><code>tree.getSelectionModel().setSelectionMode(
+    TreeSelectionModel.CONTIGUOUS_TREE_SELECTION);
 </code></pre>
 
 ## 解説

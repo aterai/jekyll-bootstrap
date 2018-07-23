@@ -16,7 +16,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/-QqKPFV0ZzIc/TttWYFUshII/AAAAAAAABFk/6HcCBI_bg-0/s800/PinTabbedPane.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JCheckBoxMenuItem pinTabMenuItem = new JCheckBoxMenuItem(new AbstractAction("pin tab") {
+<pre class="prettyprint"><code>pinTabMenuItem = new JCheckBoxMenuItem(new AbstractAction("pin tab") {
   @Override public void actionPerformed(ActionEvent e) {
     JTabbedPane t = (JTabbedPane) getInvoker();
     JCheckBoxMenuItem check = (JCheckBoxMenuItem) e.getSource();
