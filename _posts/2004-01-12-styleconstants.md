@@ -20,9 +20,9 @@ comments: true
 Style def = doc.getStyle(StyleContext.DEFAULT_STYLE);
 Style error = doc.addStyle("error", def);
 StyleConstants.setForeground(error, Color.RED);
-</code></pre>
+// ...
 
-<pre class="prettyprint"><code>private void append(String str, boolean flg) {
+private void append(String str, boolean flg) {
   String style = flg ? StyleContext.DEFAULT_STYLE : "error";
   StyledDocument doc = jtp.getStyledDocument();
   try {
@@ -34,7 +34,13 @@ StyleConstants.setForeground(error, Color.RED);
 </code></pre>
 
 ## 解説
-予め設定しておいたエラー表示用の文字属性スタイルを`StyledDocument#getStyle("error")`で取得し、このスタイルと文字列と合わせて`Document#insertString(...)`メソッドで挿入しています。
+上記のサンプルでは、以下の手順で`JTextPane`にスタイルを設定した文字列を追加しています。
+
+- `JTextPane`から`StyledDocument`を取得
+- 予め設定しておいたエラー表示用の文字属性スタイルを`StyledDocument#getStyle("error")`で取得
+- このスタイルと文字列と合わせて`Document#insertString(...)`メソッドで挿入
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Using Text Components (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/text.html)

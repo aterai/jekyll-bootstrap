@@ -17,12 +17,14 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIDefaults d = new UIDefaults();
-d.put("ProgressBar[Enabled+Indeterminate].foregroundPainter", new AbstractRegionPainter() {
-  //...
+d.put("ProgressBar[Enabled+Indeterminate].foregroundPainter",
+      new AbstractRegionPainter() {
+  // ...
   private final PaintContext ctx = new PaintContext(
       new Insets(5, 5, 5, 5), new Dimension(29, 19), false);
   @Override public void doPaint(
-      Graphics2D g, JComponent c, int width, int height, Object[] extendedCacheKeys) {
+        Graphics2D g, JComponent c, int width, int height,
+        Object[] extendedCacheKeys) {
     path = decodePath1();
     g.setPaint(color17);
     g.fill(path);
@@ -36,7 +38,7 @@ d.put("ProgressBar[Enabled+Indeterminate].foregroundPainter", new AbstractRegion
   @Override public PaintContext getPaintContext() {
     return ctx;
   }
-  //...
+  // ...
 });
 progress = new JProgressBar(model);
 progress.putClientProperty("Nimbus.Overrides", d);

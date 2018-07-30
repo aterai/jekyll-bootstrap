@@ -190,6 +190,7 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 この方法は、`JDK 5`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移ることがあります。
 
 ## 参考リンク
+- [JOptionPane#showInternalMessageDialog(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JOptionPane.html#showInternalMessageDialog-java.awt.Component-java.lang.Object-)
 - [Creating Modal Internal Frames -- Approach 1 and Approach 2](http://web.archive.org/web/20090803142839/http://java.sun.com/developer/JDCTechTips/2001/tt1220.html)
 - [How to Use Root Panes](https://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html)
 - [Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)

@@ -50,9 +50,9 @@ comments: true
 
 ## 解説
 - 上
-    - `setToolTipText(...)`メソッドで直接`Mnemonic`を追加
+    - `JButton`に`PropertyChangeListener`を設定し、`Mnemonic`が変更されたら`JButton#setToolTipText(...)`メソッドで直接`Mnemonic`を変更
 - 下
-    - `JToolTip`に`BorderLayout`を設定して、`Mnemonic`用の`JLabel`を追加
+    - `JToolTip`に`BorderLayout`を設定して、`Mnemonic`用の`JLabel`を表示する`JToolTip`を作成して`JButton`に設定
 
 <!-- dummy comment line for breaking list -->
 
