@@ -35,23 +35,20 @@ comments: true
     - `SpinnerNumberModel#getNextValue()`などが`null`になる場合、`SpinnerNumberModel#getMinimum()`で最小値を取得してループ
 - リスト: `SpinnerListModel`
     - `SpinnerListModel#getNextValue()`などが`null`になる場合、`SpinnerListModel#getList()#get(0)`でリスト先頭の取得してループ
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>spinner04.setModel(new SpinnerListModel(weeks) {
-  @Override public Object getNextValue() {
-    Object o = super.getNextValue();
-    return Objects.nonNull(o) ? o : getList().get(0);
-  }
-  @Override public Object getPreviousValue() {
-    List l = getList();
-    Object o = super.getPreviousValue();
-    return Objects.nonNull(o) ? o : l.get(l.size() - 1);
-  }
-});
+        
+        <pre class="prettyprint"><code>spinner04.setModel(new SpinnerListModel(weeks) {
+          @Override public Object getNextValue() {
+            Object o = super.getNextValue();
+            return Objects.nonNull(o) ? o : getList().get(0);
+          }
+          @Override public Object getPreviousValue() {
+            List l = getList();
+            Object o = super.getPreviousValue();
+            return Objects.nonNull(o) ? o : l.get(l.size() - 1);
+          }
+        });
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Creating Custom Spinner Models and Editors](https://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html#model)
 
 <!-- dummy comment line for breaking list -->

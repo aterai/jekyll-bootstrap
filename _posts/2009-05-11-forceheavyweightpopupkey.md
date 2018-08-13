@@ -54,10 +54,19 @@ combo.putClientProperty(field.get(null), Boolean.TRUE);
 </code></pre>
 
 - - - -
-- `JDK 1.9.0`では、常に`HeavyWeight`で開くのが簡単になるように修正されるかもしれない
+- `JDK 1.9.0`以降では、以下のようなコードで`Popup`を常に`HeavyWeight`で開くことが可能になった
     - [JDK-8147521 macosx Internal API Usage: setPopupType used to force creation of heavyweight popup - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8147521)
 
 <!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>PopupFactory.setSharedInstance(new PopupFactory() {
+  @Override public Popup getPopup(Component owner, Component contents, int x, int y) throws IllegalArgumentException {
+    // @param isHeavyWeightPopup true if Popup should be heavy weight,
+    // protected Popup getPopup(..., boolean isHeavyWeightPopup) ...
+    return super.getPopup(owner, contents, x, y, true);
+  }
+});
+</code></pre>
 
 ## 参考リンク
 - [Swing - ComboBox scroll and selected/highlight on glasspane](https://community.oracle.com/thread/1357949)

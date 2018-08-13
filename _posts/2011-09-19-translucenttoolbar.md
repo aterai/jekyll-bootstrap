@@ -61,16 +61,18 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、画像アイコンを表示した`JLabel`に半透明にした`JToolBar`を追加しています。
+上記のサンプルでは、以下のリンクの方法を合わせて使用し、画像アイコンを表示した`JLabel`に半透明にした`JToolBar`を追加しています。
 
-- 参考
-    - `JToolBar`などの透明化は、[JMenuBarの背景に画像を表示する](https://ateraimemo.com/Swing/MenuBarBackground.html)
-    - 表示アニメーションは、[JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
-    - `JToolBar`内部の`JButton`は、[JButtonの描画](https://ateraimemo.com/Swing/ButtonPainted.html)
+- `JToolBar`本体の透明化は、[JMenuBarの背景に画像を表示する](https://ateraimemo.com/Swing/MenuBarBackground.html)
+- `JToolBar`内部に配置する`JButton`の透明化は、[JButtonの描画](https://ateraimemo.com/Swing/ButtonPainted.html)
+- `JToolBar`の表示・非表示アニメーションは、[JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [JMenuBarの背景に画像を表示する](https://ateraimemo.com/Swing/MenuBarBackground.html)
+- [JButtonの描画](https://ateraimemo.com/Swing/ButtonPainted.html)
+- [JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
 - ["ecqlipse 2" PNG by ~chrfb on deviantART](http://chrfb.deviantart.com/art/quot-ecqlipse-2-quot-PNG-59941546)
     - アイコンを借用
 

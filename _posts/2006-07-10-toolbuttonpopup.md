@@ -85,7 +85,11 @@ class MenuToggleButton extends JToggleButton {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JToggleButton`の右側に余白を設定して、そこに下向きの矢印アイコンを上書きしています。
+- `JToggleButton`の右側に余白を設定して、そこに下向きの矢印アイコンを描画
+- `JToggleButton`に`ActionListener`を追加し、クリックすると`JPopupMenu#show(...)`メソッドで`JPopupMenu`を表示
+    - `JPopupMenu`の表示位置は、クリック位置ではなく`JToggleButton`の下辺になるよう調整
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)

@@ -64,19 +64,21 @@ comments: true
 上記のサンプルでは、選択されている`JInternalFrame`をツールバーのボタンや<kbd>Esc</kbd>キー(`OS`が`Windows`の場合のデフォルトは、<kbd>Ctrl+F4</kbd>)で閉じることができます。
 
 - `RED`
-    - `JInternalFrame#dispose`メソッドを使用
+    - `JInternalFrame#dispose()`メソッドを使用
     - 閉じた後、他のフレームに選択状態が移動しない
 - `GREEN`
-    - `DesktopManager#closeFrame`メソッドを使用
+    - `DesktopManager#closeFrame(JInternalFrame)`メソッドを使用
 - `BLUE`
-    - `JInternalFrame#doDefaultCloseAction`メソッドを使用
+    - `JInternalFrame#doDefaultCloseAction()`メソッドを使用
 - `YELLOW`
     - `JInternalFrame#setClosed(true)`メソッドを使用
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`JDK 1.5` + `WindowsLookAndFeel`では、`JInternalFrame`を閉じたとき、アイコン化されている`JInternalFrame`には選択状態は移動しません。
+- 注: `JDK 1.5` + `WindowsLookAndFeel`では、`JInternalFrame`を閉じたとき、アイコン化されている`JInternalFrame`には選択状態は移動しない
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [<Swing Dev> 8 Review request for 8012004: JINTERNALFRAME NOT BEING FINALIZED AFTER CLOSING](http://mail.openjdk.java.net/pipermail/swing-dev/2013-April/002688.html)

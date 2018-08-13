@@ -36,29 +36,25 @@ table.setAutoCreateRowSorter(true);
 ## 解説
 上記のサンプルでは、カラムヘッダにアイコンを表示するために、タイトル文字列として`<img>`タグでアイコンを表示する`html`文字列を設定しています。
 
-- メモ
-    - `html`文字列として、`String.format("<html><img src='%s'/>nbsp%s", url, str)`を使用するとアイコンと文字列のベースラインが揃わない場合があるので、`<table>`タグを使用
-    - `<table>`タグを使用する場合、`JTableHeader`の高さが拡大するので、`cellpadding='0' cellspacing='0'`などでセル余白を`0`に変更
-    - デフォルトのヘッダレンダラーは`JLabel`を継承しているので、`setIcon(...)`メソッドが使用可能だが、`LookAndFeel`によってはソートアイコンと競合する場合がある
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>class IconColumnHeaderRenderer implements TableCellRenderer {
-  private final Icon icon = new ImageIcon(getClass().getResource("wi0063-16.png"));
-  @Override public Component getTableCellRendererComponent(
-      JTable table, Object value, boolean isSelected, boolean hasFocus,
-      int row, int column)
-    TableCellRenderer r = table.getTableHeader().getDefaultRenderer();
-    JLabel l = (JLabel) r.getTableCellRendererComponent(
-        table, value, isSelected, hasFocus, row, column);
-    l.setHorizontalTextPosition(SwingConstants.RIGHT);
-    l.setIcon(icon);
-    return l;
-  }
-}
+- `html`文字列として、`String.format("<html><img src='%s'/>nbsp%s", url, str)`を使用するとアイコンと文字列のベースラインが揃わない場合があるので、`<table>`タグを使用
+- `<table>`タグを使用する場合、`JTableHeader`の高さが拡大するので、`cellpadding='0' cellspacing='0'`などでセル余白を`0`に変更
+- デフォルトのヘッダレンダラーは`JLabel`を継承しているので、`setIcon(...)`メソッドが使用可能だが、`LookAndFeel`によってはソートアイコンと競合する場合がある
+    
+    <pre class="prettyprint"><code>class IconColumnHeaderRenderer implements TableCellRenderer {
+      private final Icon icon = new ImageIcon(getClass().getResource("wi0063-16.png"));
+      @Override public Component getTableCellRendererComponent(
+          JTable table, Object value, boolean isSelected, boolean hasFocus,
+          int row, int column)
+        TableCellRenderer r = table.getTableHeader().getDefaultRenderer();
+        JLabel l = (JLabel) r.getTableCellRendererComponent(
+            table, value, isSelected, hasFocus, row, column);
+        l.setHorizontalTextPosition(SwingConstants.RIGHT);
+        l.setIcon(icon);
+        return l;
+      }
+    }
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 
 <!-- dummy comment line for breaking list -->

@@ -37,7 +37,7 @@ comments: true
 - `UserObject`として名前とチェック状態を保持する`CheckBoxNode`クラスは`XMLEncoder`に未対応なので、`DefaultPersistenceDelegate`で書き出し保存するプロパティを指定
 - チェック状態を表す`Status`は列挙型(`Enum`)で作成しているため、`XMLEncoder`はデフォルトで永続化に対応
     - `public`なクラスにしておく必要がある
-- 親ノードなどのチェック状態を更新する`TreeModelListener`は、永続化していないので、`XMLDecoder`で`DefaultTreeModel`を復元後に再度`addTreeModelListener`で設定し直す必要がある
+- 親ノードなどのチェック状態を更新する`TreeModelListener`は永続化していないので、`XMLDecoder`で`DefaultTreeModel`を復元後に再度`addTreeModelListener(...)`で設定し直す必要がある
 
 <!-- dummy comment line for breaking list -->
 

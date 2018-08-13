@@ -81,15 +81,15 @@ class IndeterminateIcon implements Icon {
 
 - `JCheckBox#getIcon()`が`null`の場合、チェックボックスは不定状態であると判定
 - 横棒の色は`UIManager.getColor("CheckBox.foreground");`を使用しているが、`LookAndFeel`によっては無意味
-- [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](https://ateraimemo.com/Swing/TableHeaderCheckBox.html)で使用すると、`NimbusLookAndFeel`の場合だけ、アイコンと文字列のベースラインがずれる？
+- [JTableHeaderにJCheckBoxを追加してセルの値を切り替える](https://ateraimemo.com/Swing/TableHeaderCheckBox.html)で使用すると、`NimbusLookAndFeel`でアイコンと文字列のベースラインがずれる？
     - 文字列も`ImageIcon`にして回避
 - `NimbusLookAndFeel`で、不定状態アイコンのフォーカスやロールオーバーが表示されない
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JavaSpecialists 145 - TristateCheckBox Revisited](http://www.javaspecialists.eu/archive/Issue145.html)
-    - [JavaSpecialists 082 - TristateCheckBox based on the Swing JCheckBox](http://www.javaspecialists.eu/archive/Issue082.html)
+- [JavaSpecialists 145 - TristateCheckBox Revisited](https://www.javaspecialists.eu/archive/Issue145.html)
+    - [JavaSpecialists 082 - TristateCheckBox based on the Swing JCheckBox](https://www.javaspecialists.eu/archive/Issue082.html)
 - [swing - Tristate Checkboxes in Java - Stack Overflow](https://stackoverflow.com/questions/1263323/tristate-checkboxes-in-java)
 
 <!-- dummy comment line for breaking list -->

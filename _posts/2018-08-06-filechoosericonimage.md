@@ -1,0 +1,58 @@
+---
+layout: post
+category: swing
+folder: FileChooserIconImage
+title: JFileChooserのタイトルバーのIconImageを変更する
+tags: [JFileChooser, JDialog]
+author: aterai
+pubdate: 2018-08-06T17:20:50+09:00
+description: JFileChooserのタイトルバーアイコンを親のJFrameとは別のアイコンに変更します。
+image: https://drive.google.com/uc?id=1eUMSRA3bh0DZYC2DrIVsGRXTqW_ZsGmHCA
+comments: true
+---
+## 概要
+`JFileChooser`のタイトルバーアイコンを親の`JFrame`とは別のアイコンに変更します。
+
+{% download https://drive.google.com/uc?id=1eUMSRA3bh0DZYC2DrIVsGRXTqW_ZsGmHCA %}
+
+## サンプルコード
+<pre class="prettyprint"><code>JButton button2 = new JButton("makeImage(16, Color.WHITE)");
+button2.addActionListener(e -&gt; {
+  JFileChooser fileChooser = new JFileChooser() {
+    @Override protected JDialog createDialog(Component p) throws HeadlessException {
+      JDialog dialog = super.createDialog(p);
+      dialog.setIconImage(makeImage(16, Color.WHITE));
+      return dialog;
+    }
+  };
+  fileChooser.showOpenDialog(getRootPane());
+});
+</code></pre>
+
+## 解説
+上記のサンプルでは、`JFileChooser`のタイトルバーに表示されるウィンドウのアイコンを親の`JFrame`とは別のアイコンに変更しています。
+
+- `default icon`
+    - デフォルトの`JFileChooser`のウィンドウアイコンは、親の`JFrame`のウィンドウアイコンが適用される
+- `makeImage(16, Color.WHITE)`
+    - 直接`JFileChooser`のウィンドウのアイコンを変更するメソッドはデフォルトでは存在しないので、`JFileChooser#createDialog(...)`メソッドをオーバーライドし、`JFileChooser`が使用する`JDialog`に別アイコンを設定
+    - `Window#setIconImage(Image)`でウィンドウアイコンを設定した場合、適当な大きさにリサイズされる
+    - 「適当な大きさ」は環境や表示スケールなどによって変化する？
+        - 例: `Windows 10`で表示スケール`100%`の場合のウィンドウアイコン: `16x16`
+        - 例: `Windows 10`で表示スケール`125%`の場合のウィンドウアイコン: `20x20`
+
+<!-- dummy comment line for breaking list -->
+
+- - - -
+- `JFrame.setDefaultLookAndFeelDecorated(true);`で、デフォルト`LookAndFeel`のウィンドウ修飾をタイトルバーに適用する場合、表示スケールに関係なくウィンドウアイコン`16x16`が適用される？
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [java - Sizes of frame icons used in Swing - Stack Overflow](https://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
+- [JFrameのIconを変更](https://ateraimemo.com/Swing/FrameIcon.html)
+- [JDK-6429220 Default LAF decorated frame does not support transparent icons - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6429220)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2018-07-30T03:56:00+09:00
 description: JEditorPaneのHTMLEditorKitにStyleSheetを設定して、ソースコードをシンタックスハイライト表示します。
 image: https://drive.google.com/uc?export=view&id=1b_texG1scFcKnOIcUNUHQPdquKal_Fu6OQ
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2018/07/syntax-highlighting-source-code-in.html
+    lang: en
 comments: true
 ---
 ## 概要

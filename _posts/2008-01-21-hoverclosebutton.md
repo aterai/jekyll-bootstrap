@@ -68,6 +68,6 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- タブが選択されている場合にも`JButton`を表示していましたが、これを変更してタブ上にマウスカーソルがある場合だけ`JButton`を表示するようにしました。 -- *aterai* 2008-03-19 (水) 21:09:18
+- タブが選択されている場合も`JButton`を表示していたが、これを変更してタブ上にマウスカーソルがある場合だけ`JButton`を表示するように変更。 -- *aterai* 2008-03-19 (水) 21:09:18
 
 <!-- dummy comment line for breaking list -->

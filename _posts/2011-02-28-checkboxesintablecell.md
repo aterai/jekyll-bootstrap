@@ -115,12 +115,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`のセル内に`3`つの`JCheckBox`を配置した`JPanel`を作成し、これを`CellRenderer`と`CellEditor`として別々に使用しています。`JCheckBox`をマウスでクリックすると、その`JCheckBox`の選択状態だけが変化します。
+上記のサンプルでは、`JTable`のセル内に`3`つの`JCheckBox`を配置した`JPanel`を作成し、これを`CellRenderer`と`CellEditor`として別々に使用しています。`JCheckBox`をマウスでクリックすると、直下にある`JCheckBox`の選択状態だけが変化します。
 
 - - - -
 編集中にカラムヘッダの移動、リサイズ(`JFrame`などのリサイズに連動)などが発生してもチェックした内容がリセットされないように、`CellEditor`のチェックボックスがクリックされたら`fireEditingStopped()`メソッドを呼び出して編集を終了し更新を確定しています。
-
-~~`JTable`自体に以下の様な`MouseListener`を追加してチェックボックスがクリックされるたびに`table.getCellEditor(row, col).stopCellEditing();`を呼び出しています。~~
 
 ## 参考リンク
 - [JTableのセル中にJRadioButtonを配置](https://ateraimemo.com/Swing/RadioButtonsInTableCell.html)

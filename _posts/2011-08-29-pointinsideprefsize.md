@@ -97,7 +97,6 @@ private static boolean isURLColumn(JTable table, int column) {
 - [JTableのセルにHyperlinkを表示](https://ateraimemo.com/Swing/HyperlinkInTableCell.html)
 - [Htmlで修飾した文字列のクリップ](https://ateraimemo.com/Swing/ClippedHtmlLabel.html)
 - [JTableで文字列をクリックした場合だけセルを選択状態にする](https://ateraimemo.com/Swing/TableFileList.html)
-- [SwingSet3: HyperlinkCellRenderer.java](http://java.net/projects/swingset3/sources/svn/content/trunk/SwingSet3/src/com/sun/swingset3/demos/table/HyperlinkCellRenderer.java)
 
 <!-- dummy comment line for breaking list -->
 

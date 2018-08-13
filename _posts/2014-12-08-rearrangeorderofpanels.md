@@ -152,7 +152,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、親の`JPanel`に`MouseListener`と`MouseMotionListener`を継承するハンドラを追加し、子の`JPanel`をマウスドラッグで任意の位置に差し替えることが出来ます。
+上記のサンプルでは、親の`JPanel`に`MouseListener`と`MouseMotionListener`を継承するハンドラを追加し、子の`JPanel`をマウスドラッグで任意の位置に差し替えることが出来ます。移動中の子`JPanel`は、ドラッグ・イメージとして別`JWindow`でカーソル位置に表示されます。
 
 - 使用しているハンドラは、以下の`2`点を除いて[JToolBarに配置したアイコンをドラッグして並べ替える](https://ateraimemo.com/Swing/RearrangeToolBarIcon.html)で使用しているものとほぼ同一
     - 水平ではなく垂直方向に入れ替えを行うように変更

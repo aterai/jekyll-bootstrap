@@ -25,22 +25,23 @@ textPane.insertComponent(check1);
 </code></pre>
 
 ## 解説
-- 上: `Default`
+1. `Default`
     - `JTextPane#insertComponent(...)`で、`JCheckBox`を追加
     - `JCheckBox`のデフォルトの`AlignmentY`は`0.5`なのでテキストのベースラインと揃わない
-- 中: `JComponent#setAlignmentY(...)`
-    - `JComponent#getBaseline()`でベースラインを取得し、`JComponent#setAlignmentY(baseline/(float)d.height)`でテキストベースラインの相対位置に配置
-- 下: `setAlignmentY+setCursor+...`
-    - 「中: `JComponent#setAlignmentY(...)`」+`Cursor+Opaque+Focusable`を設定
 
 <!-- dummy comment line for breaking list -->
+1. `JComponent#setAlignmentY(...)`
+    - `JComponent#getBaseline()`でベースラインを取得し、`JComponent#setAlignmentY(baseline/(float)d.height)`でテキストベースラインの相対位置に配置
 
-<pre class="prettyprint"><code>check2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-check2.setOpaque(false);
-check2.setFocusable(false);
+<!-- dummy comment line for breaking list -->
+1. `setAlignmentY+setCursor+...`
+    - `JComponent#setAlignmentY(...)`と`Cursor + Opaque + Focusable`を設定
+        
+        <pre class="prettyprint"><code>check2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        check2.setOpaque(false);
+        check2.setFocusable(false);
 </code></pre>
-
-- - - -
+    - * 参考リンク [#reference]
 - [JTextPane#insertComponent(Component) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
 
 <!-- dummy comment line for breaking list -->
@@ -48,8 +49,6 @@ check2.setFocusable(false);
  コンポーネントは、`Component.getAlignmentY`によって返された値に従って、テキストベースラインに相対的に配置されます。`Swing`コンポーネントの場合、`JComponent.setAlignmentY`メソッドを使うと、この値を簡単に設定できます。たとえば、値を`0.75`に設定すると、コンポーネントの`75%`がベースラインの上に、`25%`がベースラインの下になります。
 </p></blockquote>
 
-## 参考リンク
-- [JTextPane#insertComponent(Component) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#insertComponent-java.awt.Component-)
 - [java - How to appropriately adding JLabel to JEditorPane? - Stack Overflow](https://stackoverflow.com/questions/12151158/how-to-appropriately-adding-jlabel-to-jeditorpane)
 
 <!-- dummy comment line for breaking list -->

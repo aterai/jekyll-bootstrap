@@ -56,11 +56,13 @@ final Timer timer = new Timer(100, new ActionListener() {
     - 参考: [Swing (Archive) - JTextArea Memory Overflow ??](https://community.oracle.com/thread/1479784)は、複数行貼り込みに対応している
 - `DocumentListener`ではなく、以下のような`DocumentFilter`を設定する方法もある
     
-    <pre class="prettyprint"><code>//((AbstractDocument) jta.getDocument()).setDocumentFilter(new FIFODocumentFilter());
+    <pre class="prettyprint"><code>((AbstractDocument) ta.getDocument()).setDocumentFilter(new FIFODocumentFilter());
+    // ...
     class FIFODocumentFilter extends DocumentFilter {
       private static final int MAX_LINES = 10;
       @Override public void insertString(
-          DocumentFilter.FilterBypass fb, int offset, String string, AttributeSet attr)
+          DocumentFilter.FilterBypass fb, int offset,
+          String string, AttributeSet attr)
           throws BadLocationException {
         fb.insertString(offset, string, attr);
         Element root = fb.getDocument().getDefaultRootElement();

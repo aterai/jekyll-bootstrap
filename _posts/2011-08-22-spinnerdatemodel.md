@@ -60,7 +60,7 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
             spinner2.setEditor(new JSpinner.DateEditor(spinner2, dateFormatPattern));
 </code></pre>
 - `JSpinner.DateEditor + FocusListener`
-    - フォーカスがエディタに移動した場合、日付部分が選択状態になるようリスナーを設定
+    - フォーカスがエディタに移動した場合、日付部分が選択状態になるよう`FocusListener`を設定
         - 矢印ボタンのクリックで編集開始した場合、先頭の年度部分ではなく日付が増減する
         - 参考: [CellEditorをJSpinnerにして日付を変更](https://ateraimemo.com/Swing/DateCellEditor.html)
 
@@ -73,6 +73,5 @@ editor.getTextField().addFocusListener(new FocusAdapter() {
     - `Date`ではなく、`LocalDateTime`を使用する方法
 
 <!-- dummy comment line for breaking list -->
-
 
 ## コメント

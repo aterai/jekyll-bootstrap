@@ -57,7 +57,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、編集不可状態の`JTextPane`内の文字列中に編集可能な`JTextField`を`JTextPane#insertComponent(...)`を使用メソッドを使用して追加しています。
+上記のサンプルでは、編集不可状態の`JTextPane`内の文字列中に編集可能な`JTextField`を`JTextPane#insertComponent(...)`メソッドを使用して追加しています。
 
 - `JTextPane`
     - 編集不可に設定

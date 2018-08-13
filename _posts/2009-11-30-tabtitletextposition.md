@@ -30,19 +30,17 @@ tabbedPane.setTabComponentAt(tabbedPane.getTabCount() - 1, label);
 ## 解説
 上記のサンプルでは、タブにアイコンとラベルの位置を変更した`JLabel`を配置しています。
 
-- - - -
-`JDK 1.6`以前の場合はタブにコンポーネントを直接配置する方法がないので、以下のような`html`タグを使用する必要があります。
-
-<pre class="prettyprint"><code>JTabbedPane tabs = new JTabbedPane();
-tabs.addTab(makeTitle("Title","a32x32.png"), new JLabel("a"));
-tabs.addTab(makeTitle("Help", "b32x32.png"), new JLabel("b"));
-//...
-private String makeTitle(String t, String p) {
-  return "&lt;html&gt;&lt;center&gt;&lt;img src='"+getClass().getResource(p)+"'/&gt;&lt;br/&gt;"+t;
-}
+- `JDK 1.6`以前の場合はタブにコンポーネントを直接配置する方法がないので、以下のような`html`タグを使用する必要がある
+    
+    <pre class="prettyprint"><code>JTabbedPane tabs = new JTabbedPane();
+    tabs.addTab(makeTitle("Title","a32x32.png"), new JLabel("a"));
+    tabs.addTab(makeTitle("Help", "b32x32.png"), new JLabel("b"));
+    //...
+    private String makeTitle(String t, String p) {
+      return "&lt;html&gt;&lt;center&gt;&lt;img src='"+getClass().getResource(p)+"'/&gt;&lt;br/&gt;"+t;
+    }
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
 - [JLabelのアイコンと文字列の位置](https://ateraimemo.com/Swing/TextPositionAndAlignment.html)
 - [JTabbedPaneのタイトルをクリップ](https://ateraimemo.com/Swing/ClippedTabLabel.html)

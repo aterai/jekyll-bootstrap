@@ -23,9 +23,9 @@ comments: true
 scroll.getVerticalScrollBar().getModel().addChangeListener(new ChangeListener() {
   @Override public void stateChanged(ChangeEvent e) {
     BoundedRangeModel m = (BoundedRangeModel) e.getSource();
-    int extent  = m.getExtent();
+    int extent = m.getExtent();
     int maximum = m.getMaximum();
-    int value   = m.getValue();
+    int value = m.getValue();
     if (value + extent &gt;= maximum) {
       check.setEnabled(true);
     }
@@ -34,7 +34,7 @@ scroll.getVerticalScrollBar().getModel().addChangeListener(new ChangeListener() 
 </code></pre>
 
 ## 解説
-上記のサンプルでは、縦`JScrollBar`から取得した`BoundedRangeModel`に`ChangeListener`を追加し、ノブの幅を加えた値が最大値になった時に最後までスクロールしたと判断して、`JCheckBox`を有効に設定しています。
+上記のサンプルでは、縦`JScrollBar`から取得した`BoundedRangeModel`に`ChangeListener`を追加し、ノブの幅を加えた値が最大値になった時に最後までスクロールしたと判断して、対応する`JCheckBox`を有効に設定しています。
 
 ## 参考リンク
 - [java - How to know if a JScrollBar has reached the bottom of the JScrollPane? - Stack Overflow](https://stackoverflow.com/questions/12916192/how-to-know-if-a-jscrollbar-has-reached-the-bottom-of-the-jscrollpane)

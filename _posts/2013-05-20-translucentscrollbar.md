@@ -114,7 +114,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JScrollBar`の増減ボタンのサイズを`0x0`、トラックを透明、つまみを半透明にして、`JViewport`内部に配置しています。
+上記のサンプルでは、`JScrollBar`の増減ボタンのサイズを`0x0`で非表示、トラックを透明、つまみを半透明にして、`JViewport`内部に配置しています。
 
 - `ScrollPaneLayout#layoutContainer(...)`をオーバーライドして、`JScrollBar`を`JViewport`の内部にオーバーラップするように配置
     - `scrollPane.setComponentZOrder(...)`で、`JScrollBar`と`JViewport`の`Z`軸の順序を変更
