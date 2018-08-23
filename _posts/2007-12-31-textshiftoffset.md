@@ -28,6 +28,7 @@ SwingUtilities.updateComponentTreeUI(this);
     - `UIManager.put("ToggleButton.textShiftOffset", 1)`なども無効
 - `Java 1.5.0` + `WindowsLookAndFeel`のデフォルトは`1`
 - `Java 1.6.0` + `WindowsLookAndFeel`のデフォルトは`0`
+- `JTabbedPane`のタブは、`TabbedPane.selectedLabelShift`と`TabbedPane.labelShift`でテキストシフト量を変更可能
 
 <!-- dummy comment line for breaking list -->
 

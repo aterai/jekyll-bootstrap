@@ -26,7 +26,7 @@ Optional.ofNullable(chooser.getActionMap().get("viewTypeDetails"))
 </code></pre>
 
 ## 解説
-[java - How can I start the JFileChooser in the Details view? - Stack Overflow](https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)で紹介されているように、`ActionMap`から`viewTypeDetails`アクションを取得する方法が一番簡単なようです。
+[java - How can I start the JFileChooser in the Details view? - Stack Overflow](https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view)で紹介されている`ActionMap`から`viewTypeDetails`アクションを取得する方法が最も簡単に`DetailsView`(詳細)に切り替え可能です。
 
 <pre class="prettyprint"><code>//@see javax/swing/plaf/basic/BasicFileChooserUI.java
 ActionMap map = new ActionMapUIResource();

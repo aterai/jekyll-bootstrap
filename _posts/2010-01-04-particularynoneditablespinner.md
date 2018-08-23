@@ -46,14 +46,14 @@ comments: true
 </code></pre>
 
 ## 解説
-- 上: `JSpinner.NumberEditor` + `DecimalFormat`
+- `JSpinner.NumberEditor` + `DecimalFormat`
     - [JSpinnerの値をパーセントで指定](https://ateraimemo.com/Swing/NumberEditor.html)
         
         <pre class="prettyprint"><code>JSpinner spinner1 = new JSpinner(new SpinnerNumberModel(0, 0, 1, 0.01));
         JSpinner.NumberEditor editor1 = new JSpinner.NumberEditor(spinner1, "0%");
         spinner1.setEditor(editor1);
 </code></pre>
-- 下: `JSpinner` + `StringBorder`
+- `JSpinner` + `StringBorder`
     - `JSpinner`のエディタに設定した余白内に文字列を描画
         
         <pre class="prettyprint"><code>JSpinner spinner2 = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
@@ -66,8 +66,11 @@ comments: true
         Border c = editor2.getBorder();
         editor2.setBorder((c == null) ? b : BorderFactory.createCompoundBorder(c, b));
 </code></pre>
-- メモ
-    - 以下のように、`JLabel`を余白に描画する方法(参考: [Component Border ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/09/27/component-border/))もある
+
+<!-- dummy comment line for breaking list -->
+- - - -
+- 以下のように、`JLabel`を余白に描画する方法もある
+    - 参考: [Component Border ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/09/27/component-border/)
         
         <pre class="prettyprint"><code>JLabel label = new JLabel("%");
         label.setBorder(BorderFactory.createEmptyBorder());

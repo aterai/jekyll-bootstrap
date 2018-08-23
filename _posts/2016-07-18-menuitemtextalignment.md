@@ -16,11 +16,12 @@ comments: true
 {% download https://lh3.googleusercontent.com/-S49YgtIvzc8/V4upKl0JAFI/AAAAAAAAOd4/9vWtFW4DvY4xR0bL0sM9iGRBvHz_u7AcQCCo/s800/MenuItemTextAlignment.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JMenuItem item3 = new JMenuItem("\u200B"); //, HSTRUT);
-//item3.setLayout(new BorderLayout());
-//item3.setBorder(BorderFactory.createEmptyBorder()); //NimbusLookAndFeel
+<pre class="prettyprint"><code>// U+200B zero width space
+JMenuItem item3 = new JMenuItem("\u200B"); //, HSTRUT);
+// item3.setLayout(new BorderLayout());
+// item3.setBorder(BorderFactory.createEmptyBorder()); // NimbusLookAndFeel
 item3.setEnabled(false);
-//item3.setDisabledIcon(HSTRUT);
+// item3.setDisabledIcon(HSTRUT);
 item3.add(new JMenuItem("JMenuItem(disabled) with JMenuItem", HSTRUT) {
   @Override public boolean contains(int x, int y) {
     return false; //disable mouse events

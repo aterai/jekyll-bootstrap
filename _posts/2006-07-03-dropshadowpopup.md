@@ -29,7 +29,8 @@ comments: true
     try {
       Robot robot = new Robot();
       Dimension d = c.getPreferredSize();
-      bi = robot.createScreenCapture(new Rectangle(p.x, p.y, d.width + xoff, d.height + yoff));
+      bi = robot.createScreenCapture(
+          new Rectangle(p.x, p.y, d.width + xoff, d.height + yoff));
     } catch (AWTException ex) {
       ex.printStackTrace();
     }
@@ -38,14 +39,16 @@ comments: true
   @Override public Insets getBorderInsets(Component c) {
     return new Insets(0, 0, xoff, yoff);
   }
-  @Override public void paintBorder(Component c, Graphics g, int x, int y, int w, int h) {
+  @Override public void paintBorder(
+        Component c, Graphics g, int x, int y, int w, int h) {
     if (screen == null) {
       return;
     }
     if (shadow == null || shadow.getWidth() != w || shadow.getHeight() != h) {
       shadow = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
       Graphics2D g2 = shadow.createGraphics();
-      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+      g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                          RenderingHints.VALUE_ANTIALIAS_ON);
       g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, .2f));
       g2.setPaint(Color.BLACK);
       for (int i = 0; i &lt; xoff; i++) {

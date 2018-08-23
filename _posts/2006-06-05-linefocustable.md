@@ -19,25 +19,27 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPOarzqiI/AAAAAAAAAdo/uwFLFlU_EpI/s800/LineFocusTable.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class DotBorder extends EmptyBorder {
-  public enum Type { START, END; }
-  private static final BasicStroke dashed = new BasicStroke(
-    1f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER,
-    10f, (new float[] {1f}), 0f);
-  private static final Color dotColor = new Color(200, 150, 150);
-  public DotBorder(int top, int left, int bottom, int right) {
+<pre class="prettyprint"><code>enum Type { START, END; }
+
+class DotBorder extends EmptyBorder {
+  private static final BasicStroke DASHED = new BasicStroke(
+      1f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER,
+      10f, new float[] {1f}, 0f);
+  private static final Color DOT_COLOR = new Color(200, 150, 150);
+  public final Set&lt;Type&gt; type = EnumSet.noneOf(Type.class);
+
+  protected DotBorder(int top, int left, int bottom, int right) {
     super(top, left, bottom, right);
   }
-  public EnumSet&lt;Type&gt; type = EnumSet.noneOf(Type.class);
   @Override public boolean isBorderOpaque() {
     return true;
   }
   @Override public void paintBorder(
-        Component c, Graphics g, int x, int y, int w, int h) {
-    Graphics2D g2 = (Graphics2D) g;
+      Component c, Graphics g, int x, int y, int w, int h) {
+    Graphics2D g2 = (Graphics2D) g.create();
     g2.translate(x, y);
-    g2.setPaint(dotColor);
-    g2.setStroke(dashed);
+    g2.setPaint(DOT_COLOR);
+    g2.setStroke(DASHED);
     if (type.contains(Type.START)) {
       g2.drawLine(0, 0, 0, h);
     }
@@ -51,7 +53,7 @@ comments: true
       g2.drawLine(1, 0, w, 0);
       g2.drawLine(1, h - 1, w, h - 1);
     }
-    g2.translate(-x, -y);
+    g2.dispose();
   }
 }
 </code></pre>

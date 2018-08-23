@@ -98,7 +98,7 @@ comments: true
     - アイコンと文字列以外の場所(セル内)をクリックしても、選択できてしまう
         - `WindowsLookAndFeel`での`JFileChooser`は、`JTable.putClientProperty("Table.isFileList", Boolean.TRUE)`を使用？
         - [JTableで文字列をクリックした場合だけセルを選択状態にする](https://ateraimemo.com/Swing/TableFileList.html)
-    - 矩形による範囲指定で選択することができない
+    - マウスドラッグによる範囲指定で選択できない
         - [JTableで文字列をクリックした場合だけセルを選択状態にする](https://ateraimemo.com/Swing/TableFileList.html)
         - [JListのアイテムを範囲指定で選択](https://ateraimemo.com/Swing/RubberBanding.html)
     - ~~ソートすると選択状態がクリアされてしまう~~

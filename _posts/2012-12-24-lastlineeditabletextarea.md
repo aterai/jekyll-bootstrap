@@ -62,7 +62,7 @@ comments: true
 ## 解説
 - `DocumentFilter#replace(...)`をオーバーライド
 - `Document#getDefaultRootElement()`でルートエレメントを取得し、`Element#getElementCount()`で全体の行数を取得
-- `offset`(文字挿入位置)から`Element#getElementIndex(offset)`で、挿入位置の行番号と、`Element`を取得
+- `offset`(文字挿入位置)から`Element#getElementIndex(offset)`で、挿入位置の行番号と`Element`を取得
 - `挿入位置の行番号 == 全体の行数 - 1`となる場合のみ、`DocumentFilter.FilterBypass#replace(...)`を実行(編集可能)する
     - 上記のサンプルでは、コマンドプロンプト風に、最終行の行頭にあるプロンプトは編集不可で、改行の入力ごとに最終行の文字列を評価してメッセージを追加表示している
 

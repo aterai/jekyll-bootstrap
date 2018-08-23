@@ -67,23 +67,21 @@ setDummyText(editor1);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- スタイルシートで`line-height`を指定しても反映されない(`line-height`は、モデル化されているが、現在は描画されない)
+- スタイルシートで`line-height`を指定しても反映されない
+    - `line-height`は、モデル化されているが、現在は描画されない
     - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/CSS.html)
 - ブロックレベルで一行だけ固定の行間が指定したい場合は、`margin-bottom`が使用可能
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>StyleSheet styleSheet = new StyleSheet();
-styleSheet.addRule("body {font-size: 24pt; line-height: 2.0}");
-styleSheet.addRule(".test {margin-bottom: 2pt; padding-bottom: 1px; }");
-//XXX: styleSheet.addRule("span {color: white; display:inline-block; margin-bottom: 10pt;}");
-HTMLEditorKit htmlEditorKit = new HTMLEditorKit();
-htmlEditorKit.setStyleSheet(styleSheet);
-editor1.setEditorKit(htmlEditorKit);
-editor1.setText("&lt;html&gt;&lt;body&gt;&lt;div class='test'&gt;12&lt;br /&gt;a&lt;br /&gt;n&lt;font size='32'&gt;123&lt;br /&gt;sd&lt;/font&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;");
+    
+    <pre class="prettyprint"><code>StyleSheet styleSheet = new StyleSheet();
+    styleSheet.addRule("body {font-size: 24pt; line-height: 2.0}");
+    styleSheet.addRule(".test {margin-bottom: 2pt; padding-bottom: 1px; }");
+    //XXX: styleSheet.addRule("span {color: white; display:inline-block; margin-bottom: 10pt;}");
+    HTMLEditorKit htmlEditorKit = new HTMLEditorKit();
+    htmlEditorKit.setStyleSheet(styleSheet);
+    editor1.setEditorKit(htmlEditorKit);
+    editor1.setText("&lt;html&gt;&lt;body&gt;&lt;div class='test'&gt;12&lt;br /&gt;a&lt;br /&gt;n&lt;font size='32'&gt;123&lt;br /&gt;sd&lt;/font&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;");
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [JTextPane#setParagraphAttributes(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTextPane.html#setParagraphAttributes-javax.swing.text.AttributeSet-boolean-)
 - [CompositeView#getBottomInset() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/CompositeView.html#getBottomInset--)
 

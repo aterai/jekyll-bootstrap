@@ -18,23 +18,32 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Icon emptyIcon = new Icon() {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {}
-  @Override public int getIconWidth()  { return 0; }
-  @Override public int getIconHeight() { return 0; }
+  @Override public int getIconWidth(){
+    return 0;
+  }
+  @Override public int getIconHeight() {
+    return 0;
+  }
 };
-UIManager.put("Table.ascendingSortIcon",  new IconUIResource(emptyIcon));
+UIManager.put("Table.ascendingSortIcon", new IconUIResource(emptyIcon));
 UIManager.put("Table.descendingSortIcon", new IconUIResource(emptyIcon));
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`UIManager`を使用して`JTable`のヘッダに表示されるソートアイコンを変更しています。
 
-- サイズ`0`の`Icon`でソートアイコンを非表示
-- 透過`png`画像から生成したソートアイコンを表示
+- `Default`
+    - `UIManager.getLookAndFeelDefaults().getIcon("Table.ascendingSortIcon")`などで取得した`LookAndFeel`でのデフォルトソートアイコンを表示
+- `Empty`
+    - サイズ`0`の`Icon`でソートアイコンを非表示
+- `Cumstom`
+    - 透過`png`画像から生成したソートアイコンを表示
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Icon (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/Icon.html)
+- [UIManager#getLookAndFeelDefaults() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/UIManager.html#getLookAndFeelDefaults--)
 
 <!-- dummy comment line for breaking list -->
 

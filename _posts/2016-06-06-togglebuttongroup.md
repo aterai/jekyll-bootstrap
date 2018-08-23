@@ -42,7 +42,7 @@ comments: true
 - `Default ButtonGroup`
     - `ButtonGroup`に追加された`JToggleButton`などは、すでに選択状態にあるボタンをクリックして選択解除することはできない
 - `Custom ButtonGroup(clears the selection)`
-    - `ButtonGroup#setSelected(...)`メソッドをオーバーライドし、選択状態にあるボタンをクリックした場合は、`ButtonGroup#clearSelection()`メソッドを呼び出してグループ内のすべてのボタンが選択されていない状態に戻す
+    - `ButtonGroup#setSelected(...)`メソッドをオーバーライドし、選択状態にあるボタンをクリックした場合は、`ButtonGroup#clearSelection()`メソッドを呼び出してグループ内のすべてのボタンを未選択状態に戻す
 
 <!-- dummy comment line for breaking list -->
 
