@@ -46,7 +46,7 @@ editor1.setEditorKit(new HTMLEditorKit());
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JEditorPane`で`HTMLEditorKit`を使った場合の`ToolTip`表示についてテストしています。`img`タグの`alt`属性は自動的に`ToolTip`表示され、リンクは`HyperlinkListener`を追加することで`ToolTip`を変更することができます。
+上記のサンプルでは、`JEditorPane`で`HTMLEditorKit`を使った場合の`ToolTip`表示についてテストしています。`img`タグの`alt`属性は自動的に`ToolTip`表示され、リンクは`HyperlinkListener`を追加することで`ToolTip`を変更できます。
 
 <pre class="prettyprint"><code>private final String htmlText =
   "&lt;html&gt;&lt;body&gt;" +

@@ -104,16 +104,15 @@ JComboBox&lt;String&gt; combo = new JComboBox&lt;String&gt;(model) {
 
 - - - -
 
-~~その他にも、以下のように`UIManager`で余白を設定する方法もありますが、`LookAndFeel`によって対応が異なる？ようです。~~ `ComboBox.padding`は無くなっている？
-
-`JComboBox`が編集可能の場合は、`ComboBox.editorBorder`が有効かもしれない。
-
-<pre class="prettyprint"><code>//UIManager.put("ComboBox.padding", new InsetsUIResource(insets));
-UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0, 5, 0, 0));
+- ~~その他にも、以下のように`UIManager`で余白を設定する方法もありますが、`LookAndFeel`によって対応が異なる？~~ `ComboBox.padding`は無くなっている？
+    - `JComboBox`が編集可能の場合は、`ComboBox.editorBorder`が有効かもしれない
+        
+        <pre class="prettyprint"><code>// UIManager.put("ComboBox.padding", new InsetsUIResource(insets));
+        UIManager.put("ComboBox.editorBorder", BorderFactory.createEmptyBorder(0, 5, 0, 0));
 </code></pre>
+- ~~上記のサンプルを、余白に色無しにして、`Ubuntu 7.04`(`GNOME 2.18.1`)、`JDK 1.6.0`で実行すると、以下のようになる~~
 
-~~上記のサンプルを、余白に色無しにして、`Ubuntu 7.04`(`GNOME 2.18.1`)、`JDK 1.6.0`で実行すると、以下のようになります。~~
-
+<!-- dummy comment line for breaking list -->
 ![screenshot](https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTQyV_2TnI/AAAAAAAAAgI/yqGoi_zqsgI/s800/PaddingComboBox1.png)
 
 - - - -

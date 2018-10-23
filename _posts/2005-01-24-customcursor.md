@@ -25,7 +25,13 @@ label.setCursor(getToolkit().createCustomCursor(bi,　new Point(16,　16),　"ov
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Toolkit#createCustomCursor(...)`メソッドを使用してカーソルオブジェクトを作成しています。このカーソルは、`32x32`のバッファの中心に直径`16`の円を描画し、円の中心がホットスポットとなるように設定しています。
+上記のサンプルでは、`Toolkit#createCustomCursor(...)`メソッドを使用して以下のような`BufferedImage`からカーソルオブジェクトを作成しています。
+
+- サイズ: `32x32`
+- 図形: 直径`16`の円
+- ホットスポット: 円の中心
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Toolkit#createCustomCursor(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#createCustomCursor-java.awt.Image-java.awt.Point-java.lang.String-)

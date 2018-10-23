@@ -28,14 +28,13 @@ g.drawImage(atOp.filter(bi, null), 0, 0, w, h, this);
 上記のサンプルでは、`AffineTransformOp#filter(...)`メソッドを使用して左右反転した`BufferedImage`を生成しています。
 
 - - - -
-以下のように上下反転した画像を描画する方法もあります。
-
-<pre class="prettyprint"><code>AffineTransform at = AffineTransform.getScaleInstance(1d, -1d);
-at.translate(0, -h);
-g2.drawImage(bi, at, this);
+- 上下反転する場合の例:
+    
+    <pre class="prettyprint"><code>AffineTransform at = AffineTransform.getScaleInstance(1d, -1d);
+    at.translate(0, -h);
+    g2.drawImage(bi, at, this);
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [AffineTransform#getScaleInstance(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/AffineTransform.html#getScaleInstance-double-double-)
 - [Shapeの反転](https://ateraimemo.com/Swing/HorizontalFlip.html)
 

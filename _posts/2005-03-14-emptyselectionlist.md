@@ -49,7 +49,7 @@ class EmptySelectionRenderer implements ListCellRenderer {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`LookAndFeel`が`Nimbus`の場合、編集不可にした`JList`の文字色を以下のような方法で変更することができます。
+`LookAndFeel`が`Nimbus`の場合、編集不可にした`JList`の文字色を以下のような方法で変更できます。
 
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;

@@ -30,7 +30,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`JTable#changeSelection(...)`メソッドは、`toggle`と`extend`の`2`つのフラグで、セルの選択状態を以下のように変更することができます。
+`JTable#changeSelection(...)`メソッドは、`toggle`と`extend`の`2`つのフラグで、セルの選択状態を以下のように変更できます。
 
 - `toggle`:`false`、`extend`:`false`
     - 既存の選択をクリアし、新しいセルが確実に選択されるようにする

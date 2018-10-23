@@ -18,11 +18,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>DefaultCellEditor ce = (DefaultCellEditor) table.getDefaultEditor(Object.class);
 ce.setClickCountToStart(1);
-//ce.setClickCountToStart(2); //default
+// ce.setClickCountToStart(2); // default
 </code></pre>
 
 ## 解説
-`JTable`のセルエディタを起動するのに必要なマウスクリックの回数は、`DefaultCellEditor#setClickCountToStart`メソッドで設定することができます。
+上記のサンプルでは、`JTable`のセルエディタを起動するのに必要なマウスクリックの回数を、`DefaultCellEditor#setClickCountToStart(...)`メソッドで`1`回に設定しています。
 
 - - - -
 - `edit the cell on single click`をチェックした場合、セルレンダラーも変更して、文字列に下線を引くように設定

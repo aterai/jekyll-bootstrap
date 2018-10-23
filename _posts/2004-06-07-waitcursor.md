@@ -59,7 +59,7 @@ button.addActionListener(new ActionListener() {
 ## 解説
 上記のサンプルでは、カーソルを砂時計に変更し、なにもしないマウスリスナーなどを設定した`GlassPane`を`JFrame#setGlassPane()`メソッドでフレームに追加しています。
 
-スタートボタンがクリックされて処理が継続している間は、この`GlassPane`が有効になり、マウス、キー、フォーカス移動などのイベントが、すべて`GlassPane`に奪われるため、フレーム内のコンポーネントをアクセス不可にすることが出来ます。
+スタートボタンがクリックされて処理が継続している間はこの`GlassPane`が有効になり、マウス、キー、フォーカス移動などのイベントがすべて`GlassPane`に奪われるため、フレーム内のコンポーネントがアクセス不可状態になります。
 
 このため、サンプルにある`setEnabled(true)`な`JTextField`の上にマウスポインタを移動しても、処理中はカーソルアイコンは砂時計のまま変化しません。
 
@@ -117,14 +117,14 @@ setFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, s);
 </code></pre>
 
 - - - -
-`JDK 1.6.0`の場合、[Disabled Glass Pane « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)のようにキー入力を無効にするキーリスナーを追加する方法もあります。
+- `JDK 1.6.0`の場合、[Disabled Glass Pane « Java Tips Weblog](https://tips4java.wordpress.com/2008/11/07/disabled-glass-pane/)のようにキー入力を無効にするキーリスナーを追加する方法もある
+    - この方法は、`JDK 1.5.0`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移動する場合がある
 
-この方法は、`JDK 1.5.0`などの場合、`WindowsLookAndFeel`で、<kbd>Alt</kbd>キーを押すとメニューバーにフォーカスが移ることがあります。
+<!-- dummy comment line for breaking list -->
 
 - - - -
-`JDK 1.7.0`の場合、`JLayer`などを使用することで、特定のコンポーネントだけ入力不可にしてカーソルを砂時計にするといった設定が簡単に出来るようになっています。
-
-- [JLayerで指定したコンポーネントへの入力を禁止](https://ateraimemo.com/Swing/DisableInputLayer.html) に移動
+- `JDK 1.7.0`の場合、`JLayer`を使用して特定のコンポーネントだけ入力不可、かつカーソルを砂時計に変更するなどの設定が可能になった
+    - [JLayerで指定したコンポーネントへの入力を禁止](https://ateraimemo.com/Swing/DisableInputLayer.html) に移動
 
 <!-- dummy comment line for breaking list -->
 

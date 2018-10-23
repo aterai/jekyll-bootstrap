@@ -36,7 +36,7 @@ p.add(new JButton(new AbstractAction("show") {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox`で選択されたコンポーネントに割り当てられているデフォルトの`KeyBinding`を、`JTable`に表示することができます。
+上記のサンプルでは、`JComboBox`で選択されたコンポーネントに割り当てられているデフォルトの`KeyBinding`を`JTable`に一覧表示できます。
 
 ## 参考リンク
 - ~~[ftp://ftp.oreilly.de/pub/examples/english_examples/jswing2/code/goodies/misc.html Miscellaneous Tools - Java Swing Utilities]~~

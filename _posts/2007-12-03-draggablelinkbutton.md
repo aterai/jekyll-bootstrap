@@ -49,7 +49,7 @@ b.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`URL`文字列を設定した`JButton`をマウスでドラッグしてブラウザなどにドロップすると、そのサイトに移動することができます。
+上記のサンプルでは、`URL`文字列を設定した`JButton`をマウスでドラッグしてブラウザなどにドロップすると、そのサイトに移動できます。
 
 このような`URL`のドラッグ＆ドロップを実行するために、以下のような`TransferHandler`と`Transferable`を設定しています。
 

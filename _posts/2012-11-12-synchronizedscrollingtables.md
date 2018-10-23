@@ -44,8 +44,8 @@ scroll2.getVerticalScrollBar().setModel(scroll1.getVerticalScrollBar().getModel(
     - `ChangeListener`を使用、`1`つの`JScrollPane`に、`JTable`を`2`つ配置
 - [JScrollPaneのスクロールを同期](https://ateraimemo.com/Swing/SynchronizedScroll.html)
     - `ChangeListener`を使用
-- [2つのJTableを同時にスクロール - argius note](http://d.hatena.ne.jp/argius/20080325/1206454660)
-    - `AdjustmentListener`を使用
+- [2つのJTableを同時にスクロール - argius note](http://argius.hatenablog.jp/entry/20080325/1206454660)
+    - `AdjustmentListener`が使用されている
 
 <!-- dummy comment line for breaking list -->
 

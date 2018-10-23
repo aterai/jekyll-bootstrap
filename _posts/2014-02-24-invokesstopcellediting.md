@@ -31,7 +31,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-ノード編集の割り込みイベントは、その`JTree`内の別のノードがクリックされた場合などに発生します。<kbd>Tab</kbd>キーなどで`JTree`以外のコンポーネントにフォーカスが移動したり、親`Window`がフォーカスを失っても、割り込みは発生しないため、編集中の状態が維持され、再度`JTree`にフォーカスを戻せば編集を再開することができます。
+ノード編集の割り込みイベントは、その`JTree`内の別のノードがクリックされた場合などに発生します。<kbd>Tab</kbd>キーなどで`JTree`以外のコンポーネントにフォーカスが移動したり、親`Window`がフォーカスを失っても、割り込みは発生しないため、編集中の状態が維持され、再度`JTree`にフォーカスを戻せば編集を再開できます。
 
 ## 参考リンク
 - [JTree#setInvokesStopCellEditing(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setInvokesStopCellEditing-boolean-)

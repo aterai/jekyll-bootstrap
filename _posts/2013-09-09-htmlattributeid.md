@@ -69,7 +69,7 @@ private void checkID(Element element) {
 ## 解説
 - `Element#getElement(id)`
     - [HTMLDocument#getElement(String)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/HTMLDocument.html#getElement-java.lang.String-)メソッドを使用して指定した`id`を持つ`Element`を取得
-    - これらの`Element`(`HTMLDocument.BlockElement`など)は、`org.w3c.dom.Element`ではなく、`javax.swing.text.Element`インタフェースを実装しているので、`org.w3c.dom.Document#getElementById(String)`メソッドは使用できない
+    - これらの`Element`(`HTMLDocument.BlockElement`など)は、`org.w3c.dom.Element`ではなく、`javax.swing.text.Element`インタフェースを実装しているので、`org.w3c.dom.Document#getElementById(String)`メソッドは使用不可能
     - 指定した`id`の`Element`が存在した場合、`editorPane.select(element.getStartOffset(), element.getEndOffset());`で選択
         - `element.getStartOffset()`などで取得されるオフセットは、`JEditorPane`に表示されない要素や属性は含まれない
 - `Highlight Element[@id]`

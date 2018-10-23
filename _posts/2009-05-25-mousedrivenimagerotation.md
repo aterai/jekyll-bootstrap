@@ -134,7 +134,7 @@ comments: true
 ## 解説
 - 画像の移動: 画像の中心にマウスが近づくと表示される円図形をドラッグ
 - 画像の回転: 上記の円図形の外側に表示されるドーナツ型図形をドラッグ
-    - ドーナツ型図形は、`Area#subtract`メソッドを使用して作成
+    - ドーナツ型図形は、`Area#subtract(Area)`メソッドを使用して作成可能
 
 <!-- dummy comment line for breaking list -->
 

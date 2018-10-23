@@ -155,6 +155,7 @@ ry$SystemColorProxy[r=39,g=118,b=218],selectionForeground=com.apple.laf.AquaImag
 - ようするに、`convertMouseEvent`内の`e.getModifiers()`に`0x02/0x04`を`or`しても`OSX`では無視されてるようです。なぜなんでしょう？ -- *nsby* 2011-07-27 (水) 10:58:53
     - ログ(勝手にすこし整形しました)どうもです。たしかにうまくいっているっぽいのに、不思議な感じですね。 ~~`InputEvent.CTRL_DOWN_MASK`と`InputEvent.CTRL_MASK`の違い？~~ もうすこし調べてみます。 -- *aterai* 2011-07-27 (水) 15:04:05
     - `Java 8`で修正されているかも？ [Bug ID: JDK-7170657 macosx - There seems to be no keyboard/mouse action to select non-contiguous items in List](https://bugs.openjdk.java.net/browse/JDK-7170657) -- *aterai* 2014-08-12 (火) 02:10:09
+    - 追記: `Java 10`で`Toolkit#getMenuShortcutKeyMask()`(`Event.CTRL_MASK:2`を返す)は非推奨になり、[Toolkit.html#getMenuShortcutKeyMaskEx()](https://docs.oracle.com/javase/jp/10/docs/api/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx%28%29)を使用すれば、例えば`Windows`環境では`InputEvent.CTRL_DOWN_MASK:128`、`macOS`環境では`InputEvent.META_DOWN_MASK`が取得できるようになった
 - メモ: [Tailoring Java Applications for Mac OS X](http://developer.apple.com/jp/technotes/tn2042.html) -- *aterai* 2011-07-27 (水) 15:18:46
 - ドラッグによる`JList`の複数選択は、[JListのアイテムを範囲指定で選択](https://ateraimemo.com/Swing/RubberBanding.html)を使用する方法もあります。 -- *aterai* 2012-05-30 (水) 15:18:25
 

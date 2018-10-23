@@ -94,7 +94,7 @@ private static AbstractButton makeButton(String title, Action action) {
         - [JRadioButtonの文字色を変更](https://ateraimemo.com/Swing/RadioButtonTextColor.html)
     - `JMenuItem`にレイアウトを設定し、`JMenuItem#add(...)`で`JButton`を配置した`JPanel`を追加
         - [OverlayLayoutの使用](https://ateraimemo.com/Swing/OverlayLayout.html)
-        - レイアウトマネージャーは、`GridBagLayout`を使用し、追加する`JButton`は左右は右端、上下は中央に来るように設定
+        - レイアウトマネージャーは`GridBagLayout`を使用し、追加する`JButton`は左右は右端、上下は中央になるよう設定
         - [GridBagLayoutの使用](https://ateraimemo.com/Swing/GridBagLayout.html)
 - `JPanel`
     - レイアウトを`GridLayout`に変更して同じサイズの`JButton`を複数配置

@@ -43,10 +43,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、下の`JTextField`からフォーカスが失われた時、まだ何も入力されていない場合は、その`JTextField`の説明などを透かし文字として薄く表示することができます。
+上記のサンプルでは、`JTextField`からフォーカスが失われた時にまだ何も入力されていない場合は、その`JTextField`の説明などを透かし文字として薄く表示しています。
 
 - - - -
-`JDK 1.7.0`以上の場合は、`JLayer`を使用して同様にヒント文字列を描画することができます。
+`JDK 1.7.0`以上の場合は、`JLayer`を使用して同様にヒント文字列を描画できます。
 
 <pre class="prettyprint"><code>class PlaceholderLayerUI extends LayerUI&lt;JTextComponent&gt; {
   private static final Color INACTIVE = UIManager.getColor("TextField.inactiveForeground");

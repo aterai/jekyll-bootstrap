@@ -49,11 +49,9 @@ comments: true
 ## 解説
 上記のサンプルでは、`DefaultTableModel`のフィールドにある`dataVector`を表示用に使用し、これとは別にすべての行を保持する`Vector`を作成しています。例えば、奇数行だけ表示するという条件が選択された場合、この条件に適合する行だけを保持用`Vector`から表示用の`dataVector`にコピーすることでフィルタリングを行っています。
 
-- - - -
-`JDK 1.6.0`以上では、標準で実装されている`TableRowSorter`のフィルタリング機能を使用することができます([RowFilterでJTableの行をフィルタリング](https://ateraimemo.com/Swing/RowFilter.html))。
-
 ## 参考リンク
 - [RowFilterでJTableの行をフィルタリング](https://ateraimemo.com/Swing/RowFilter.html)
+    - `JDK 1.6.0`以上の場合、標準で実装されている`TableRowSorter`のフィルタリング機能が使用可能
 
 <!-- dummy comment line for breaking list -->
 

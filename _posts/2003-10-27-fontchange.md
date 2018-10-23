@@ -45,60 +45,46 @@ private void recursiveUpdateUI(JComponent p) {
 ## 解説
 上記のサンプルでは、ツールバーのボタンでコンポーネントが使用するフォントを切り替えています。ただしツールバーだけは、`UI`の`update`(フォントの変更)を除外しています。
 
-全部のコンポーネントではなく、例えばテーブルのフォントだけ変更したい場合は以下のように設定します。
-
-<pre class="prettyprint"><code>UIManager.put("Table.font", new FontUIResource(font));
-</code></pre>
-
-`UIManager`から、`UIDefaults`のキー一覧を作るなどして、いろいろ検索してみてください。
-
-<pre class="prettyprint"><code>//キー一覧の作成例
-import java.util.Map;
-import javax.swing.UIManager;
-class Test {
-  public static void main(String[] args) {
-    //for (Object o:UIManager.getDefaults().keySet()) //は、うまくいかない？
-    //for (Object o:UIManager.getLookAndFeelDefaults().keySet())
-    for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet())
-      System.out.println(entry.getKey());
-  }
-}
-</code></pre>
-
 - - - -
-`Metal`で使用されているフォントが気に入らないだけなら、システム`LookAndFeel`を使用するか、`Metal`でボールドフォントを無効にするなどの方法があります。
+- 全コンポーネントではなく、例えば`JTable`のフォントだけ変更したい場合は`Table.font`をキーにして以下のように設定する
+    
+    <pre class="prettyprint"><code>UIManager.put("Table.font", new FontUIResource(font));
 
-- `MetalLookAndFeel`ではなく、`SystemLookAndFeel`を使用する
+</code></pre>
+- 各コンポーネントのキーは、`UIManager`から`UIDefaults`のキー一覧が作成可能
+    
+    <pre class="prettyprint"><code>// キー一覧の作成例
+    import java.util.Map;
+    import javax.swing.UIManager;
+    class Test {
+      public static void main(String[] args) {
+        for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet())
+          System.out.println(entry.getKey());
+      }
+    }
+</code></pre>
 
 <!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>try {
-  UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-} catch (Exception e) {
-  e.printStackTrace();
-}
-</code></pre>
-
-- `MetalLookAndFeel`で、`bold fonts`を無効にする場合
+- - - -
+- `MetalLookAndFeel`で使用されているボールドフォントは、以下のように変更可能
     - [MetalLookAndFeelで太字フォントを使用しない](https://ateraimemo.com/Swing/BoldMetal.html)
+        
+        <pre class="prettyprint"><code>UIManager.put("swing.boldMetal", Boolean.FALSE);
 
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>UIManager.put("swing.boldMetal", Boolean.FALSE);
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
-- `JComboBox#setFont`をしても、`JComboBox`自体のサイズが更新されない
+- `JComboBox#setFont(...)`で使用するフォントのサイズを変更しても、`JComboBox`自体のサイズが更新されない
     - [JCombobox doesn't get resized according to font size change](https://bugs.openjdk.java.net/browse/JDK-5006246)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>combo.setFont(font);
-//以下回避方法
-combo.setPrototypeDisplayValue(null); //null:default?
-//or combo.firePropertyChange("prototypeDisplayValue", 0, 1); //0, 1:dummy
+        
+        <pre class="prettyprint"><code>combo.setFont(font);
+        // 以下回避方法
+        combo.setPrototypeDisplayValue(null); // null:default?
+        // or combo.firePropertyChange("prototypeDisplayValue", 0, 1); // 0, 1:dummy
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 特定のインスタンスだけ、`LookAndFeel`などを変更しても常に独自のフォントを設定したい場合、`JComponent#updateUI()`をオーバーライドして設定する方法もあります。
 

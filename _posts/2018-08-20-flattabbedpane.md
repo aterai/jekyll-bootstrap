@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2018-08-20T16:17:33+09:00
 description: JTabbedPaneのタブに描画される縁やテキストシフトなどを無効にしてフラットデザイン風に変更します。
 image: https://drive.google.com/uc?id=1HQCaLqj1ikLRJCljsjabjF2MS_a-UDhuNw
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2018/08/change-tab-of-jtabbedpane-to-flat.html
+    lang: en
 comments: true
 ---
 ## 概要

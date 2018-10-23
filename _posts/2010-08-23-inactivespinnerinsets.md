@@ -20,8 +20,9 @@ comments: true
   @Override protected void paintComponent(Graphics g) {
     if (getUI() instanceof WindowsSpinnerUI) {
       Graphics2D g2d = (Graphics2D) g.create();
-      g2d.setPaint(isEnabled() ? UIManager.getColor("FormattedTextField.background")
-                               : UIManager.getColor("FormattedTextField.inactiveBackground"));
+      g2d.setPaint(isEnabled()
+          ? UIManager.getColor("FormattedTextField.background")
+          : UIManager.getColor("FormattedTextField.inactiveBackground"));
       g2d.fillRect(0, 0, getWidth(),getHeight());
       g2d.dispose();
     }

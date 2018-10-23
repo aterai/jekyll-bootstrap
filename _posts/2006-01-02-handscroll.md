@@ -47,10 +47,11 @@ comments: true
 </code></pre>
 
 ## 解説
-`JViewport`の原点(左上)をマウスの移動に応じて変更し、`JComponent#scrollRectToVisible`メソッドの引数として使用することで、覗き窓のスクロールを行っています。
+`JViewport`の原点(左上)をマウスの移動に応じて変更し、`JComponent#scrollRectToVisible`メソッドの引数として使用して覗き窓のスクロールを行っています。
 
-- - - -
-`JComponent#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると、内部コンポーネントの外側に移動することができます。
+- `JComponent#scrollRectToVisible(...)`ではなく`JViewport#setViewPosition(Point)`を使用すると、内部コンポーネントの外側に移動可能
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JScrollPaneのオートスクロール](https://ateraimemo.com/Swing/AutoScroll.html)

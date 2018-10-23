@@ -124,7 +124,11 @@ public Action[] getActions() {
 };
 </code></pre>
 
-リソースファイルで日本語などをそのまま使用することは出来ないので、以下のように`ant`から`native2ascii`でユニコードエスケープしています。
+- ~~リソースファイルで日本語などは使用不可のため、以下のように`ant`から`native2ascii`でユニコードエスケープする必要がある~~ `JDK 1.6.0`で変更
+    - `JDK 1.5.0`で導入された`XML`に対応した`Properties`で代用する方法もある
+    - 参考: [J2SE 5.0 Tiger 虎の穴 Properties](http://www.javainthebox.net/laboratory/J2SE1.5/TinyTips/Properties/Properties.html)
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>&lt;condition property="have.resources"&gt;
  &lt;available file="${res.dir}" /&gt;
@@ -139,16 +143,9 @@ public Action[] getActions() {
 &lt;/target&gt;
 </code></pre>
 
-`JDK 1.5.0`で導入された`XML`に対応した`Properties`で代用する方法もあります。
-
-- 参考: [J2SE 5.0 Tiger 虎の穴 Properties](http://www.javainthebox.net/laboratory/J2SE1.5/TinyTips/Properties/Properties.html)
-
-<!-- dummy comment line for breaking list -->
-
 - - - -
-`JDK 1.6.0`なら、`native2ascii`で変換しなくても、リソースファイルのエンコードを指定して読み込むことが出来ます。
-
-- 参考: [Java 小ネタ千夜一夜 第13夜 Java SE 6はnative2ascii使わなくていいのはみんな知っていると思うが](http://d.hatena.ne.jp/shin/20090707/p4)
+- `JDK 1.6.0`以降なら、`native2ascii`で変換しなくてもリソースファイルのエンコードを指定しての読み込みが可能
+    - 参考: [Java 小ネタ千夜一夜 第13夜 Java SE 6はnative2ascii使わなくていいのはみんな知っていると思うが](http://d.hatena.ne.jp/shin/20090707/p4)
 
 <!-- dummy comment line for breaking list -->
 

@@ -28,14 +28,14 @@ if (c instanceof JTextField) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、要素が空の`JComboBox`などのカラム幅を同じにして(下二つは`default`のまま)、以下のような順番で並べています。
+上記のサンプルでは、要素が空の`JComboBox`などのカラム幅を同じ(`20`文字分の幅)にして(下二つは`default`のまま)、以下のような順番で並べています。
 
-1. `JTextField` [`setColumns(20)`]
-1. `JPasswordField` [`setColumns(20)`]
-1. `JSpinner` [`setColumns(20)`]
-1. `JComboBox` [`setEditable(true)`, `setColumns(20)`]
-1. `JComboBox` [`setEditable(true)`, `default`]
-1. `JComboBox` [`setEditable(false)`, `default`]
+1. `JTextField#setColumns(20)`
+1. `JPasswordField#setColumns(20)`
+1. `JSpinner#setColumns(20)`
+1. `JComboBox#setEditable(true)`, `JComboBox#setColumns(20)`
+1. `JComboBox#setEditable(true)`, `default`
+1. `JComboBox#setEditable(false)`, `default`
 
 - スクリーンショット左: `JDK 1.6.0`、`WindowsLookAndFeel`
     - `setColumns(20)`を設定した入力欄の幅は揃っている

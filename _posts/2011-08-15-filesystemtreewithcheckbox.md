@@ -169,7 +169,7 @@ private static void deselectedAll(DefaultTreeModel model, TreePath path) {
     node.setUserObject(new CheckBoxNode(check.file, Status.DESELECTED));
     model.nodeChanged(node);
     //or: model.valueForPathChanged(path, new CheckBoxNode(check.file, Status.DESELECTED));
-  } else if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
+  } else if (!node.isLeaf()) {
     // Java 9: Enumeration&lt;TreeNode&gt; e = node.children();
     Enumeration&lt;?&gt; e = node.children();
     while (e.hasMoreElements()) {

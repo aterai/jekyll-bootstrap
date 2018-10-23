@@ -54,7 +54,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ツールバーやポップアップメニューから、移動、リサイズ可能な`JTable`や`JTree`を`JLayeredPane`(`JLayeredPane`のデフォルトレイアウトマネージャは`null`)に追加することができます。
+上記のサンプルでは、ツールバーやポップアップメニューから、移動、リサイズ可能な`JTable`や`JTree`を`JLayeredPane`(`JLayeredPane`のデフォルトレイアウトマネージャは`null`)に追加できます。
 
 リサイズボーダーの描画などは、[Resizable Components - Santhosh Kumar's Weblog](http://www.jroller.com/santhosh/entry/resizable_components)から、マウスのドラッグによる移動、リサイズの最大値、最小値の制限などは、`%JAVA_HOME%/src/javax/swing/plaf/basic/BasicInternalFrameUI.java`からの引用です。
 

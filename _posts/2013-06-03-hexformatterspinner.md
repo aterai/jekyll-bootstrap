@@ -43,7 +43,7 @@ String str = new String(Character.toChars(code));
 </code></pre>
 
 - - - -
-[IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝](http://ipafont.ipa.go.jp/)フォントがインストールされている場合、その文字の形の違いを比較することができます。
+[IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝](http://ipafont.ipa.go.jp/)フォントがインストールされている場合、その文字の形の違いを比較できます。
 
 ## 参考リンク
 - [Fontのアウトラインを取得して文字列の内部を修飾する](https://ateraimemo.com/Swing/LineSplittingLabel.html)

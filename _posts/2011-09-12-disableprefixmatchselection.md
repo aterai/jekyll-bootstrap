@@ -28,7 +28,9 @@ comments: true
 上記のサンプルでは、`JList#getNextMatch(...)`メソッドをオーバーライドし、戻り値(次にマッチする要素のインデックス)が常に`-1`になるようにすることで、キー入力による先頭文字検索選択を無効にしています。
 
 - - - -
-`JTree`にも`JTree#getNextMatch(...)`メソッドが存在し、同様のキー入力による選択機能がありますが、こちらはインデックスではなく、`TreePath`が戻り値なので、`null`を返すことで無効にすることができます。
+- `JTree`にも`JTree#getNextMatch(...)`メソッドが存在し、同様のキー入力による選択機能が存在するが、こちらはインデックスではなく`TreePath`が戻り値なので、`null`を返すことで無効化できる
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>JTree tree = new JTree() {
   @Override public TreePath getNextMatch(

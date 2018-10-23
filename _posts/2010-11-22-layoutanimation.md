@@ -67,10 +67,10 @@ private Action makeShowHideAction() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`LayoutManager#preferredLayoutSize(...)`をオーバーライドして子パネルの高さを更新することでアニメーションを行っています。
+上記のサンプルでは、`LayoutManager#preferredLayoutSize(...)`をオーバーライドして子パネルの高さを更新して展開アニメーションを表現しています。
 
 - - - -
-内部の`JTree`の高さを縮小せずに、重ねる状態で検索パネルを表示したい場合は、`BorderLayout`ではなく、`OverlayLayout`を[JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)のように使用する方法があります。
+内部の`JTree`の高さを縮小せずに重ねる状態で検索パネルを表示したい場合は、`BorderLayout`ではなく`OverlayLayout`を[JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)のように使用する方法があります。
 
 ## 参考リンク
 - [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)

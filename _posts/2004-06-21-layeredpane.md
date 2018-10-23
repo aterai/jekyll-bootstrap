@@ -27,8 +27,7 @@ iframe.setVisible(true);
 </code></pre>
 
 ## 解説
-`JDesktopPane`は、`JLayeredPane`を継承しているので、`JInternalFrame`を追加するレイヤーを指定することができます。
-このサンプルでは、タイトルが`AlwaysOnTop`の`JInternalFrame`を、`JLayeredPane.MODAL_LAYER`の一つ上に設定し、他の`JInternalFrame`(ここでは後から追加する`JInternalFrame`)より常に手前に表示されるように設定しています。
+`JDesktopPane`は`JLayeredPane`を継承しているため、`JInternalFrame`を追加するレイヤーを指定可能です。このサンプルでは、タイトルが`AlwaysOnTop`の`JInternalFrame`を`JLayeredPane.MODAL_LAYER`の一つ上に設定し、他の`JInternalFrame`(ここでは後から追加する`JInternalFrame`)より常に手前に表示されるように設定しています。
 
 ## 参考リンク
 - [JLayeredPane (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JLayeredPane.html)

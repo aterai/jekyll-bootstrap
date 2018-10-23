@@ -90,8 +90,9 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- 注: このサンプルでは、クリックされた時に実行するイベントは`beep`音を鳴らすだけのダミー
-- リンクをブラウザで開く場合は、[Desktopでブラウザを起動](https://ateraimemo.com/Swing/Desktop.html)などを参照
+- 注:
+    - このサンプルでは、クリックされた時に実行するイベントは`beep`音を鳴らすだけのダミー
+    - リンクをブラウザで開く場合は、[Desktopでブラウザを起動](https://ateraimemo.com/Swing/Desktop.html)などを参照
 
 <!-- dummy comment line for breaking list -->
 

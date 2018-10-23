@@ -26,7 +26,7 @@ comments: true
       rollOverPathLists.add(path);
       tree.expandPath(path.getParentPath());
     }
-    if (!node.isLeaf() &amp;&amp; node.getChildCount() &gt;= 0) {
+    if (!node.isLeaf()) {
       // Java 9: Enumeration&lt;TreeNode&gt; e = node.children();
       Enumeration&lt;?&gt; e = node.children();
       while (e.hasMoreElements()) {

@@ -43,7 +43,7 @@ comments: true
     - 幅固定の`BasicArrowButton`を使用する`MetalLookAndFeel`や`MotifLookAndFeel`などでは無効
 - `setLayout`
     - `LayoutManager#layoutContainer(...)`メソッドをオーバーライドして`ArrowButton`の幅を推奨サイズを無視して変更
-    - `LookAndFeel`に関係なく幅を変更することが可能
+    - `LookAndFeel`に関係なく幅を変更可能
 - `setPreferredSize`での幅変更と合わせて、`JSpinner`のフォントサイズを変更して`ArrowButton`の高さも変更
 
 <!-- dummy comment line for breaking list -->

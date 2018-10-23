@@ -48,14 +48,14 @@ sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(1, SortOrder.DESCENDING))
     - ☑ `viewRowIndex<5`のフィルタで`AA-ee`が表示されている場合、`String`列で昇順から降順にソートすると`ee-AA`となる
 - `Custom Sorting` チェック有り
     - ☑ `viewRowIndex<5`のフィルタで`AA-ee`が表示されている場合、`String`列で昇順から降順にソートすると`OO-KK`となる
-        - `toggleSortOrder`メソッドをオーバーライドして、一旦`TableRowSorter#setRowFilter(null)`メソッドを実行して`RowFilter`を解除してから昇順から降順にソート`OO-KK-AA`、その後再び`RowFilter`を設定するので`OO-KK`が表示される
+        - `toggleSortOrder`メソッドをオーバーライドして、一旦`TableRowSorter#setRowFilter(null)`を実行して`RowFilter`を解除してから昇順から降順にソート`OO-KK-AA`、その後再び`RowFilter`を設定するので`OO-KK`が表示される
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
 以下は、`toggleSortOrder`メソッドをオーバーライドし、すべての行が変更されている可能性があることをリスナーに通知してから、もう一度ソートのやり直しを行う方法です。
 
-<pre class="prettyprint"><code>final TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
+<pre class="prettyprint"><code>TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableModel&gt;(model) {
   @Override public void toggleSortOrder(int column) {
     super.toggleSortOrder(column);
     if (check.isSelected()) {

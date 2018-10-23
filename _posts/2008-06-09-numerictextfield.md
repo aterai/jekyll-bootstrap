@@ -41,7 +41,7 @@ spinner.setValue(5000);
 ## 解説
 - `1`:`JTextField` + `InputVerifier`
     - [Validating with Input Verifiers](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
-    - `InputVerifier`を継承する`IntegerInputVerifier`を作成し、これを`JComponent#setInputVerifier`メソッドで設定
+    - `InputVerifier`を継承する`IntegerInputVerifier`を作成し、これを`JComponent#setInputVerifier(...)`メソッドで設定
     - 別コンポーネントにフォーカスが移動するときに、数値かどうか評価する
     - 数値以外、または結果が範囲外となる場合、テキストは変化せず`beep`音が鳴り、フォーカス移動がキャンセルされる
 
@@ -65,7 +65,7 @@ spinner.setValue(5000);
 
 - `2`:`JTextField` + `Custom Document`
     - [Validating with a Custom Document](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
-    - `PlainDocument`を継承する`IntegerDocument`を作成し、これを`JTextComponent#setDocument`メソッドで設定
+    - `PlainDocument`を継承する`IntegerDocument`を作成し、これを`JTextComponent#setDocument(...)`メソッドで設定
     - キー入力、文字列のペーストが行われたときに、数値かどうか評価する
     - 入力が数値以外、または結果が範囲外となる場合、`beep`音が鳴り、テキストは変化しない
 
@@ -124,7 +124,7 @@ spinner.setValue(5000);
 
 - `3`:`JTextField` + `DocumentFilter`
     - [Validating with a Document Filter](http://web.archive.org/web/20090831154020/http://java.sun.com/developer/JDCTechTips/2005/tt0518.html)
-    - `DocumentFilter`を継承する`IntegerDocumentFilter`を作成し、これを`AbstractDocument#setDocumentFilter`メソッドで設定
+    - `DocumentFilter`を継承する`IntegerDocumentFilter`を作成し、これを`AbstractDocument#setDocumentFilter(...)`メソッドで設定
     - キー入力、文字列のペーストが行われたときに、数値かどうか評価する
     - 入力が数値以外、または結果が範囲外となる場合、`beep`音が鳴り、テキストは変化しない
 
@@ -173,7 +173,7 @@ spinner.setValue(5000);
 
 - `4`:`JFormattedTextField` + `DefaultFormatterFactory`
     - [How to Use Formatted Text Fields](https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html)
-    - `DefaultFormatterFactory`を継承する`NumberFormatterFactory`を作成し、これを`JFormattedTextField#setFormatterFactory`メソッドで設定
+    - `DefaultFormatterFactory`を継承する`NumberFormatterFactory`を作成し、これを`JFormattedTextField#setFormatterFactory(...)`メソッドで設定
     - 別コンポーネントにフォーカスが移動するときに、数値かどうか評価する
     - 数値以外の場合、テキストは以前の値に`Undo`される
     - 数値が範囲外となる場合、最小値、または最大値に調整される

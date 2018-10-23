@@ -37,7 +37,7 @@ startButton = new JButton(new AbstractAction("start") {
 ## 解説
 `MidiSystem.getSequencer`メソッドで`Sequencer`を取得し、これに`MidiSystem.getSequence`メソッドで`MIDI`ファイルから生成した`Sequence`を設定します。
 
-`Sequencer#start()`メソッドで演奏を開始することができます。
+`Sequencer#start()`メソッドで演奏を開始できます。
 
 ## 参考リンク
 - [MidiSystem (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/sound/midi/MidiSystem.html)

@@ -40,7 +40,7 @@ try {
 </code></pre>
 
 ## 解説
-`Web Start`アプリケーションの場合、`javax.jnlp.SingleInstanceService`に、`SingleInstanceListener`を追加することで、新しい次のインスタンスの起動やその時の引数を取得することが簡単に出来ます。
+`Web Start`アプリケーションの場合、`javax.jnlp.SingleInstanceService`に`SingleInstanceListener`を追加することで、新しい次のインスタンスの起動やその時の引数取得などが可能になります。
 
 - ~~メモ: `JDK 1.6.0_03`では、`SingleInstanceService`は正常に動作しない~~
     - `JDK 1.6.0_10`で修正済み

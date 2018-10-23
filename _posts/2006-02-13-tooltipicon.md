@@ -67,11 +67,11 @@ l3.setToolTipText("&lt;html&gt;&lt;img src='" + url + "'&gt;テスト&lt;/img&gt
 </code></pre>
 
 ## 解説
-- 上
+- 上: `ToolTip icon using JLabel`
     - `JToolTip`にアイコンを設定した`JLabel`を追加
-- 中
+- 中: `ToolTip icon using MatteBorder`
     - アイコンを表示する`MatteBorder`を`JToolTip`に設定するよう、`createToolTip`メソッドをオーバーライド
-- 下
+- 下: `ToolTip icon using HTML tags`
     - `html`の`img`タグを`setToolTipText`メソッドに使用してアイコンを表示
 
 <!-- dummy comment line for breaking list -->

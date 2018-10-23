@@ -61,12 +61,13 @@ comments: true
 ~~メニューがフレームの外にはみ出す場合に、メニューをすばやく切り替えたりすると、ゴミが残ることがあるようです。参考リンクの`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使っても同様のゴミが出る場合があります。~~ 再現しなくなった？ようです。
 
 - - - -
-`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使用しても、同様の影を作成することができます。[JGoodies | We make Java look good and work well](http://www.jgoodies.com/)などからダウンロードして、以下のように設定してみてください。
-
-<pre class="prettyprint"><code>//UIManager.put("PopupMenuUI","example.CustomPopupMenuUI");
-contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
+- [JGoodies | We make Java look good and work well](http://www.jgoodies.com/)から`JGoodies`ダウンロードし、以下のように`contrib.com.jgoodies.looks.common.ShadowPopupFactory`を使用して同様の影を表示する方法もある
+    
+    <pre class="prettyprint"><code>// UIManager.put("PopupMenuUI","example.CustomPopupMenuUI");
+    contrib.com.jgoodies.looks.common.ShadowPopupFactory.install();
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 `Web Start`で起動してフレームの外側にメニューが表示される場合は、`java.security.AccessControlException: access denied (java.awt.AWTPermission createRobot)`が発生します。
 

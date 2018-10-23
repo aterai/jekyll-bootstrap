@@ -16,7 +16,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/-3GsdpxueSG8/Udl1tOfisII/AAAAAAAABvc/SBOIf1ZPPUk/s800/FlatteningPathIterator.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>PathIterator i = new FlatteningPathIterator(shape.getPathIterator(null), 1.0);
+<pre class="prettyprint"><code>PathIterator i = new FlatteningPathIterator(shape.getPathIterator(null), 1d);
 float[] coords = new float[6];
 while (!i.isDone()) {
   i.currentSegment(coords);

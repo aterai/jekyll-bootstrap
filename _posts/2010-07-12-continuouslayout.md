@@ -47,8 +47,9 @@ rightPane.addPropertyChangeListener(pcl);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JSplitPane`を`3`つ使用し、`4`つに分割された領域を表示しています。
+上記のサンプルでは、各`JSplitPane`に`JSplitPane#setContinuousLayout(true)`を設定し、ディバイダの移動に応じて子コンポーネントを連続的に再描画しています。
 
+- `JSplitPane`を`3`つ使用し、`4`つに分割された領域を表示
 - 左右に配置されたディバイダがマウスのドラッグに同期して移動するように以下を設定
     - 片方のディバイダが上下移動したら、残りも移動するように`PropertyChangeListener`を追加
     - `JSplitPane#setContinuousLayout(true)`として、移動を連続的に再描画
@@ -56,6 +57,7 @@ rightPane.addPropertyChangeListener(pcl);
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [JSplitPane#setContinuousLayout(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSplitPane.html#setContinuousLayout-boolean-)
 - [Swing - Regading SplitPanes](https://community.oracle.com/thread/1376808)
 
 <!-- dummy comment line for breaking list -->

@@ -55,7 +55,7 @@ comments: true
 また、返されたコンポーネントはセルの描画のためだけに利用され、マウスイベントなどは無視されます。
 
 - - - -
-セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。使用するセルレンダラーに関係なく、テーブル全体で前処理することができます。このため`Number`クラス用デフォルトレンダラーの`JTable$NumberRenderer`がそのまま使用され、`TableModel#getColumnClass(int)`が`Number.class`を返すようにしておけば勝手に右寄せになります。
+セルレンダラーで色を変更する代わりに、以下のように`JTable#prepareRenderer`メソッドをオーバーライドする方法もあります。この場合、使用するセルレンダラーに関係なくテーブル全体での前処理が可能です。このため`Number`クラス用デフォルトレンダラーの`JTable$NumberRenderer`がそのまま使用され、`TableModel#getColumnClass(int)`が`Number.class`を返すようにしておけば自動的に右寄せになります。
 
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
   private final Color evenColor = new Color(240, 240, 255);
@@ -74,7 +74,7 @@ comments: true
 </code></pre>
 
 - - - -
-`JDK 1.6.0_10`以降なら、以下のように設定する方法もあります。
+`JDK 1.6.0_10`以降では、以下のように設定する方法もあります。
 
 - [java.net Forums : JTable-Zebra with one line ... ...](http://forums.java.net/jive/thread.jspa?messageID=338905)
 

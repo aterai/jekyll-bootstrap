@@ -31,7 +31,7 @@ tree2.scrollPathToVisible(new TreePath(child2.getPath()));
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`add`ボタンのクリックで左右の`JTree`のルートノードの子ノード末尾に新規ノードを追加し、それぞれの描画などをテストすることができます。
+上記のサンプルでは、`add`ボタンのクリックで左右の`JTree`のルートノードの子ノード末尾に新規ノードを追加し、それぞれの描画などをテストできます。
 
 - 左: `p.add(c) & m.reload(p)`
     - `DefaultMutableTreeNode#add(...)`メソッドを使用して、親ノードの末尾に子ノードを追加

@@ -22,10 +22,10 @@ comments: true
 ## 解説
 上記のサンプルでは、`JRootPane#setDefaultButton()`メソッドを使用して、デフォルトボタンを切り替えています。
 
-- フォーカスが設定したデフォルトボタンにない場合でも、<kbd>Enter</kbd>キーを押したときに起動
+- フォーカスが設定したデフォルトボタンにない場合でも、<kbd>Enter</kbd>キーを押したときに起動する
     - ただし、ルート区画内に`JTextPane`やフォーカスのある`JButton`などの起動イベントを消費する別のコンポーネントがある場合は除く
-        - `JTextField`内にフォーカスがある場合は、<kbd>Enter</kbd>キーを押したときに起動される
-        - `JTextArea`内にフォーカスがある場合は、<kbd>Enter</kbd>キーを押しても起動されない(改行が入力される)
+        - `JTextField`内にフォーカスがある場合は、<kbd>Enter</kbd>キーを押したときに起動する
+        - `JTextArea`内にフォーカスがある場合は、<kbd>Enter</kbd>キーを押しても起動しない(改行が入力される)
 - デフォルトボタンの設定を削除する場合は、`JRootPane#setDefaultButton(null)`を使用する
 
 <!-- dummy comment line for breaking list -->

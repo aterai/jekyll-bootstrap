@@ -111,7 +111,7 @@ popup.addPopupMenuListener(new PopupMenuListener() {
 textArea.setComponentPopupMenu(popup);
 </code></pre>
 
-- 注: `PopupMenuEvent`からはマウスでクリックした位置を取得することができない
+- 注: `PopupMenuEvent`からはマウスでクリックした位置を取得できない
     - このため、`JTabbedPane`などでどのタブの上でポップアップが表示されるかなどを取得したい場合は`JPopupMenu#show(...)`をオーバーライドする必要がある
     - 参考: [JTabbedPaneでタブを追加削除](https://ateraimemo.com/Swing/TabbedPane.html)
 

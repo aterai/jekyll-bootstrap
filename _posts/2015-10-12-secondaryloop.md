@@ -17,15 +17,16 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>layerUI.setInputBlock(true);
-final SecondaryLoop loop = Toolkit.getDefaultToolkit().getSystemEventQueue().createSecondaryLoop();
-Thread work = new Thread() {
+SecondaryLoop loop = Toolkit.getDefaultToolkit()
+                            .getSystemEventQueue().createSecondaryLoop();
+Thread worker = new Thread() {
   @Override public void run() {
     doInBackground();
     layerUI.setInputBlock(false);
     loop.exit();
   }
 };
-work.start();
+worker.start();
 loop.enter();
 </code></pre>
 

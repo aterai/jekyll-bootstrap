@@ -100,7 +100,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [JTable でセルのないところに行っぽい表示を出せますか？ - KrdLabの不定期日記](http://d.hatena.ne.jp/KrdLab/20071209/1197143960)
+- [JTable でセルのないところに行っぽい表示を出せますか？ - KrdLab's blog](http://krdlab.hatenablog.com/entry/20071209/1197143960)
 - [Highlight a node's descendants in JTree - Santhosh Kumar's Weblog](http://jroller.com/santhosh/entry/highlight_a_node_s_descendants)
     - via: [Swing - JTree - highlight entire row on selection](https://community.oracle.com/thread/2160338)
 - [NimbusLookAndFeelでJTreeのセル選択を行全体ではなくノードに限定する](https://ateraimemo.com/Swing/TreeCellSelectionBackground.html)

@@ -53,6 +53,7 @@ styleSheet.addRule(String.format("ul{list-style-image:url(%s);margin:0px 20px;}"
 
 ## 参考リンク
 - [JEditorPaneのHTMLEditorKitにCSSを適用](https://ateraimemo.com/Swing/StyleSheet.html)
+- [JDK-8201925 JEditorPane unordered list bullets look pixelated - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8201925)
 
 <!-- dummy comment line for breaking list -->
 

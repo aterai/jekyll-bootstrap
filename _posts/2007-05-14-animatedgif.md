@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: AnimatedGif
 title: Animated GIFでのコマ描画時処理
-tags: [JLabel, Animation]
+tags: [JLabel, Animation, AnimatedGif]
 author: aterai
 pubdate: 2007-05-14T19:32:29+09:00
 description: JLabelなどで使用できるAnimated GIFファイルをテストします。
@@ -22,7 +22,7 @@ comments: true
 JLabel label2 = new JLabel("そのまま残す",
   new ImageIcon(getClass().getResource("do_not_dispose.gif")),
   SwingConstants.LEFT);
-JLabel label3 = new JLabel("背景色でつぶす",
+JLabel label3 = new JLabel("背景色で塗りつぶす",
   new ImageIcon(getClass().getResource("restore_to_background_color.gif")),
   SwingConstants.LEFT);
 JLabel label4 = new JLabel("直前の画像に戻す",
@@ -31,7 +31,7 @@ JLabel label4 = new JLabel("直前の画像に戻す",
 </code></pre>
 
 ## 解説
-`Animated GIF`で、次のコマを描画する時、直前の画像を異なる方法で消去する`Animated GIF`ファイルを作成し、これらを`JLabel`に貼り付けてアニメーションをテストしています。上記のように透過色を使用する場合、`Swing`では、`3`番目の「背景色でつぶす」にしておかないと残像が出てしまうようです。
+`Animated GIF`で、次のコマを描画する時、直前の画像を異なる方法で消去する`Animated GIF`ファイルを作成し、これらを`JLabel`に貼り付けてアニメーションをテストしています。上記のように透過色を使用する場合、`Swing`では、`3`番目の「背景色で塗りつぶす」にしておかないと残像が出てしまうようです。
 
 - 何もしない
 
@@ -47,7 +47,7 @@ JLabel label4 = new JLabel("直前の画像に戻す",
  Do not dispose. The graphic is to be left in place.
 </p></blockquote>
 
-- 背景色でつぶす
+- 背景色で塗りつぶす
 
 <!-- dummy comment line for breaking list -->
 <blockquote><p>

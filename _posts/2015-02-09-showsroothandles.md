@@ -29,8 +29,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- メモ
-    - 現在の`Javadoc`日本語版は誤訳がある(実際の動作とは逆になっている)
+- `JDK 8`の`Javadoc`日本語版では、`JTree#setRootVisible(...)`メソッドの訳が実際の動作とは逆になっている
     - https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setShowsRootHandles-boolean-
     
     		newValue - ルート・ハンドルを表示しない場合は true、そうでない場合はfalse

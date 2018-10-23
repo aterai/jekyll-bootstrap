@@ -6,12 +6,12 @@ title: Fontを回転する
 tags: [Font, Shape, TextLayout, Animation, AffineTransform]
 author: aterai
 pubdate: 2006-10-30T12:57:51+09:00
-description: 文字のアウトラインを取得して、これを回転してみます。
+description: Fontから文字のアウトラインを取得し、その中心をアンカーポイントに設定して回転します。
 image: https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVtRPTfJI/AAAAAAAAAoE/Qiy0jcMt_l0/s800/TransformedShape.png
 comments: true
 ---
 ## 概要
-文字のアウトラインを取得して、これを回転してみます。
+`Font`から文字のアウトラインを取得し、その中心をアンカーポイントに設定して回転します。
 
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTVtRPTfJI/AAAAAAAAAoE/Qiy0jcMt_l0/s800/TransformedShape.png %}
 
@@ -64,7 +64,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`TextLayout`から文字列のアウトラインを`Shape`として取得しています。
+上記のサンプルでは、対象文字、`Font`、`FontRenderContext`から`TextLayout`を生成し、`TextLayout#getOutline()`メソッドで文字のアウトラインを`Shape`として取得しています。
 
 ## 参考リンク
 - [TextLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/TextLayout.html)

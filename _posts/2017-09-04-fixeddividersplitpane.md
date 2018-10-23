@@ -33,12 +33,16 @@ check2.addActionListener(e -&gt; sp.setDividerSize(check2.isSelected() ? 0 : div
     - `JSplitPane`を無効化しても、内部のコンポーネントには影響しない
     - `JSplitPane`を無効化しても、`OneTouch`ボタンは無効化されない
     - `JFrame`のリサイズなどで`JSplitPane`自体のサイズが変化したとき、`ResizeWeight`の値によって`Divider`が移動する場合があるが、`JSplitPane`を無効化してもこれには影響しない
-- `JSplitPane#setDividerSize(0)`を実行して`Divider`を非表示にし、マウスでの移動を不可に設定
+- `setDividerSize(0)`
+    - `JSplitPane#setDividerSize(0)`を実行して`Divider`を非表示にし、マウスでの移動を不可に設定
     - カーソルキー入力による移動などは有効
         - `JSplitPane#setFocusable(false)`でキー入力は無効になる
     - `LookAndFeel`に依存し、例えば`MotifLookAndFeel`では`JSplitPane#setDividerSize(0)`を実行しても無効で`Divider`の幅は変化しない
-- メモ
-    - `Component divider = ((BasicSplitPaneUI) sp.getUI() ).getDivider();`で`Divider`を取得し、`setEnabled(false)`を実行しても効果が無い
+
+<!-- dummy comment line for breaking list -->
+
+- - - -
+- `Component divider = ((BasicSplitPaneUI) sp.getUI() ).getDivider();`で`Divider`を取得し、`setEnabled(false)`を実行しても効果が無い
 
 <!-- dummy comment line for breaking list -->
 

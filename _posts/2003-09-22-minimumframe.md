@@ -23,14 +23,14 @@ frame.setMinimumSize(new Dimension(320, 150));
 ## 解説
 上記のサンプルでは、`JFrame`などを縮小する際の最小サイズを設定しています。
 
-`JDK 1.6.0`以上の場合、`JFrame#setMinimumSize`メソッドを使用することで、最小サイズを指定することができます。
-
-`JDK 1.5.0`で、`JFrame#setMinimumSize`メソッドを使う場合は、`JFrame.setDefaultLookAndFeelDecorated(true)`、かつウィンドウのリサイズに応じてレイアウトを再評価するようにしておく必要があるようです。
-
-<pre class="prettyprint"><code>JFrame.setDefaultLookAndFeelDecorated(true);
-Toolkit.getDefaultToolkit().setDynamicLayout(true);
+- `JDK 1.6.0`以上の場合、`JFrame#setMinimumSize(...)`メソッドで最小サイズが指定可能
+- `JDK 1.5.0`で`JFrame#setMinimumSize(...)`メソッドを使う場合は、`JFrame.setDefaultLookAndFeelDecorated(true)`、かつウィンドウのリサイズに応じてレイアウトを再評価する設定が必要
+    
+    <pre class="prettyprint"><code>JFrame.setDefaultLookAndFeelDecorated(true);
+    Toolkit.getDefaultToolkit().setDynamicLayout(true);
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 `JFrame#setMinimumSize`メソッドを使わず、`ComponentListener`でサイズを制限する場合は、この制限を超えて縮小しようとしても、マウスを放した時点で設定した最小サイズまでフレームの大きさは戻されます。
 

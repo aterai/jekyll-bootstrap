@@ -52,7 +52,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComboBox#setEditable(true)`で編集可能にした`JComboBox`を`JTable`のセルエディタに設定し、セルの値を追加したり編集したりすることを可能にしています。[JTableのCellEditorにJComboBoxを設定](https://ateraimemo.com/Swing/ComboCellEditor.html)で使用しているデフォルトの`ComboBoxCellEditor`とは違い、各行で`JComboBox`の所有するアイテムが異なり、またそれらのアイテムの選択位置も保持する必要があるため、`TableModel`には`DefaultComboBoxModel`をモデルデータとして保存しています。
+上記のサンプルでは、`JComboBox#setEditable(true)`で編集可能にした`JComboBox`を`JTable`のセルエディタに設定し、セルの値の追加・編集を可能にしています。[JTableのCellEditorにJComboBoxを設定](https://ateraimemo.com/Swing/ComboCellEditor.html)で使用しているデフォルトの`ComboBoxCellEditor`とは違い、各行で`JComboBox`の所有するアイテムが異なり、またそれらのアイテムの選択位置も保持する必要があるため、`TableModel`には`DefaultComboBoxModel`をモデルデータとして保存しています。
 
 - - - -
 - `JComboBox`を`JTable`のセルエディタとして使用する場合、`combo.putClientProperty("JComboBox.isTableCellEditor", Boolean.TRUE);`を設定する

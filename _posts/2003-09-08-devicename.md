@@ -30,7 +30,7 @@ comments: true
 </code></pre>
 
 ## 解説
-`Windows`環境で、`Device Name`を含むような**正しくないファイルパス**(`c:\con.txt`など)を読み書きしようとすると、`Exception`が発生します。正しいファイルパスかどうかは、`File#getCanonicalPath()`メソッドが`null`を返すかどうかでチェックすることができます。
+`Windows`環境で、`Device Name`を含むような**正しくないファイルパス**(`c:\con.txt`など)を読み書きしようとすると、`Exception`が発生します。正しいファイルパスかどうかは、`File#getCanonicalPath()`メソッドが`null`を返すかどうかでチェックできます。
 
 - 追記: `1.5.0_08`で以下のように修正された
     - [File.isFile() は Windows プラットフォームで "con" に "false" を返すべき](https://bugs.openjdk.java.net/browse/JDK-6176051)
