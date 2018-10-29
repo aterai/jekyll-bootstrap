@@ -26,7 +26,7 @@ comments: true
     - ウィンドウのリサイズが完了した後、内部コンテナのレイアウトを評価する
 - `DynamicLayout`: `true`
     - ウィンドウのリサイズに応じて、内部コンテナのレイアウトを動的に評価する
-    - デスクトップ環境が、この動的レイアウト機能をサポートしているかどうかは、以下のメソッドで調べることが可能
+    - デスクトップ環境がこの動的レイアウト機能をサポートしているかどうかは、以下のメソッドで調査可能
         
         <pre class="prettyprint"><code>Toolkit.getDefaultToolkit().getDesktopProperty("awt.dynamicLayoutSupported");
 

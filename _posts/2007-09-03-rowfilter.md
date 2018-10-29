@@ -37,7 +37,7 @@ sorter.setRowFilter(RowFilter.andFilter(filters));
 </code></pre>
 
 ## 解説
-上記のサンプルは、以下のような複数の行フィルタを、`and`条件で`JTable`に適用することができます。
+上記のサンプルは、以下のような複数の行フィルタを、`and`条件で`JTable`に適用しています。
 
 - コメント列の値が空でない行のみ表示
 - 行番号が偶数の場合のみ表示
