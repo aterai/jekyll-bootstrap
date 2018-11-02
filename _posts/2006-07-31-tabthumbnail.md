@@ -82,7 +82,7 @@ comments: true
 ## 参考リンク
 - [デジタル出力工房　絵写楽](http://www.bekkoame.ne.jp/~bootan/free2.html)
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
-- [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
+- [XP Style Icons - Download](https://xp-style-icons.en.softonic.com/)
 
 <!-- dummy comment line for breaking list -->
 

@@ -55,7 +55,7 @@ table.setAutoCreateRowSorter(true);
     }
 </code></pre>
 - * 参考リンク [#reference]
-- [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
+- [XP Style Icons - Download](https://xp-style-icons.en.softonic.com/)
 
 <!-- dummy comment line for breaking list -->
 

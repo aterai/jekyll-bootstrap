@@ -43,7 +43,7 @@ list.setDropMode(DropMode.INSERT);
 ## 参考リンク
 - [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)
 - [JListのアイテムを範囲指定で選択](https://ateraimemo.com/Swing/RubberBanding.html)
-- [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
+- [XP Style Icons - Download](https://xp-style-icons.en.softonic.com/)
 
 <!-- dummy comment line for breaking list -->
 

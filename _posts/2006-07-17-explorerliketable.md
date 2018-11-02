@@ -110,8 +110,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-    - アイコンを借用
+- [XP Style Icons - Download](https://xp-style-icons.en.softonic.com/)
 - [JTableで文字列をクリックした場合だけセルを選択状態にする](https://ateraimemo.com/Swing/TableFileList.html)
 
 <!-- dummy comment line for breaking list -->

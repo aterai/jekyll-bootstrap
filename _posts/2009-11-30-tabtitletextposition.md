@@ -41,7 +41,7 @@ tabbedPane.setTabComponentAt(tabbedPane.getTabCount() - 1, label);
     }
 </code></pre>
 - * 参考リンク [#reference]
-- [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
+- [XP Style Icons - Download](https://xp-style-icons.en.softonic.com/)
 - [JLabelのアイコンと文字列の位置](https://ateraimemo.com/Swing/TextPositionAndAlignment.html)
 - [JTabbedPaneのタイトルをクリップ](https://ateraimemo.com/Swing/ClippedTabLabel.html)
 

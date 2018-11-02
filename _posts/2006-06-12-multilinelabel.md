@@ -74,8 +74,7 @@ private static Box setLeftIcon(JTextComponent label, ImageIcon icon) {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [XP Style Icons - Windows Application Icon, Software XP Icons](http://www.icongalore.com/)
-    - アイコンを借用
+- [XP Style Icons - Download](https://xp-style-icons.en.softonic.com/)
 - [JEditorPaneやJTextPaneに行間を設定する](https://ateraimemo.com/Swing/LineSpacing.html)
 
 <!-- dummy comment line for breaking list -->

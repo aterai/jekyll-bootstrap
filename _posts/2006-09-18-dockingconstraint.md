@@ -44,7 +44,9 @@ comments: true
 ドッキングできるかどうかを判定している`BasicToolBarUI#getDockingConstraint`メソッドが`private`のため、サンプルコードでは、これをコピーしてすこしだけ条件を変更した`isHorizontalDockingConstraint`メソッドを作成しています。
 
 - - - -
-`BorderLayout`の`WEST`と`EAST`に、適当なダミーコンポーネント(例えばサイズ`0`の`Box`)を配置するだけで、`LookAndFeel`を変更しなくてもドッキングを制限することができます。
+- `BorderLayout`の`WEST`と`EAST`に適当なダミーコンポーネント(例えばサイズ`0`の`Box`)を配置すると、`LookAndFeel`を変更しなくてもドッキングの制限が可能になる
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>JPanel panel = new JPanel(new BorderLayout());
 panel.add(toolbar, BorderLayout.NORTH);
