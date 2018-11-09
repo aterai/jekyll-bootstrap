@@ -97,7 +97,7 @@ scrollPane.getViewport().setBackground(Color.GREEN);
 ## コメント
 - 不正なセルレンダラーを設定していたので修正しました。 -- *aterai* 2006-11-16 (木) 20:22:33
 - `excel`のように、行ヘッダをクリックしてその行が選択されたり、テーブルの本体にてセルをクリックしてそのセルだけが選択されたりすることはできますか？いろいろ試しましたが、なかなかできませんでした。 -- *javalover* 2008-03-11 (火) 09:52:12
-    - セル選択は、`table.setCellSelectionEnabled(true);`で可能です。行ヘッダをクリックしてその行を選択することは、現在でも出来るような。もし、列のことなら、~~`JTableHeader`に以下のようなコードを書けばよさそうです。~~ [JTableHeaderをクリックしてそのColumnのセルを全選択](https://ateraimemo.com/Swing/ColumnSelection.html)を参考にしてください。 -- *aterai* 2008-03-11 (火) 13:45:47
+    - セル選択は、`table.setCellSelectionEnabled(true);`で可能です。行ヘッダをクリックしてその行を選択することは、現在でも可能？なはずです。もし行ヘッダではなく、列ヘッダのことなら、~~`JTableHeader`に以下のようなコードを書けばよさそうです。~~ [JTableHeaderをクリックしてそのColumnのセルを全選択](https://ateraimemo.com/Swing/ColumnSelection.html)を参考にしてください。 -- *aterai* 2008-03-11 (火) 13:45:47
     - あ、もしかして、[TableCellRendererでセルの背景色を変更](https://ateraimemo.com/Swing/StripeTable.html) の例のように、`JTable#prepareRenderer`をオーバーライドして行ごとの背景色を変更していますか？　あちらの例では、行選択しか考慮していなので`isRowSelected`を使って、一行まるごと選択色で塗りつぶすかどうかを判断しています(`table.setCellSelectionEnabled(true)`しても、一行選択されているように見えるようになっている)が、セル選択する場合は、ちゃんと`isCellSelected(int,int)`でそのセルが選択されているかを判断する必要があります。 -- *aterai* 2008-03-11 (火) 14:48:45
 - ここのサンプルを変更して、行列ヘッダクリックで、各行列を選択するように変更しました。 -- *aterai* 2008-03-11 (火) 15:40:58
 - プログラム自体大学で始めて触れてる者で参考にさせてもらっています。 -- &user(D.Umeda(ES)); 2009-02-26 (木) 06:14:52

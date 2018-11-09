@@ -42,7 +42,9 @@ UIManager.put("AuditoryCues.playList", optionPaneAuditoryCues);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`MetalLookAndFeel`や`MotifLookAndFeel`では、以下のようにすることで、`MessageDialog`のイベント音を変更することも出来ます。
+- `MetalLookAndFeel`や`MotifLookAndFeel`では、以下のように`MessageDialog`のイベント音の変更が可能
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>UIManager.put("OptionPane.informationSound", "/example/notice2.wav");
 </code></pre>

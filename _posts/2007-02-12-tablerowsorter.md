@@ -43,7 +43,7 @@ table.setRowSorter(sorter);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-~~第二キーを使ったソートは`TableRowSorter`版では出来ない?ようなので、`TableSorter.java`を使う場合もまだあるかもしれません。~~ 複数キーを使ったソートも可能です(ページ下部にあるsyoさんのコメントを参照)。デフォルトではソートキーは`3`つで、ヘッダにマークが表示されるのは最新のソートキーのみですが、クリックした順に保持されるようです。詳しくはドキュメントや[Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html)などを参照してください。
+~~第二キーを使ったソートは`TableRowSorter`版では存在しない?ようなので、`TableSorter.java`を使う場合もまだあるかもしれません。~~ 複数キーを使ったソートも可能です(ページ下部にあるsyoさんのコメントを参照)。デフォルトではソートキーは`3`つで、ヘッダにマークが表示されるのは最新のソートキーのみですが、クリックした順に保持されるようです。詳しくはドキュメントや[Tableの内容をソート](http://syo.cocolog-nifty.com/freely/2006/08/table_616d.html)などを参照してください。
 
 - [Multisort Table Header Cell Renderer « Java Tips Weblog](https://tips4java.wordpress.com/2010/08/29/multisort-table-header-cell-renderer/)
     - 第二キー以下を薄く表示するサンプルがある

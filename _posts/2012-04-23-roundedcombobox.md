@@ -97,7 +97,7 @@ class KamabokoBorder extends RoundedCornerBorder {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- 上記の方法で角丸の`JComboBox`が作成できるのは、`BasicLookAndFeel`と`WindowsLookAndFeel`の場合のみ？
+- 上記の方法で角丸の`JComboBox`が作成可能なのは、`BasicLookAndFeel`と`WindowsLookAndFeel`のみ？
 - 以下のような方法でも、かまぼこ型の図形を作成可能
     
     <pre class="prettyprint"><code>Area round = new Area(
