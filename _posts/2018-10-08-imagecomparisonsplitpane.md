@@ -65,9 +65,15 @@ split.setRightComponent(afterCanvas);
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- 注: `JSplitPane`のリサイズは考慮していない
+
+<!-- dummy comment line for breaking list -->
+
 ## 参考リンク
 - [JSplitPaneでディバイダの移動を連続的に再描画](https://ateraimemo.com/Swing/ContinuousLayout.html)
 - [Graphics#setXORMode(Color) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Graphics.html#setXORMode-java.awt.Color-)
+- [JSplitPaneのDividerを円形半透明のつまみに変更して中央に配置する](https://ateraimemo.com/Swing/TranslucentThumbDivider.html)
 
 <!-- dummy comment line for breaking list -->
 
