@@ -25,16 +25,15 @@ comments: true
 </code></pre>
 
 ## 解説
-- `TableModel`が`DefaultTableModel`を継承している場合、`model.setRowCount(0)`ですべての行が削除される
-- 空の`TableModel`を`JTable`に設定することでも、行の全削除を行うことが可能だが、ヘッダモデルの再作成が発生し、カラム幅や順番などが初期化されてしまう
-    - `JTable#setAutoCreateColumnsFromModel(false)`とカラムをモデルから自動生成しないようにしておけば、`TableModel`を入れ替えても、列幅などは保存される
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>table.setAutoCreateColumnsFromModel(false);
-table.setModel(new DefaultTableModel());
+- `TableModel`が`DefaultTableModel`を継承している場合、`model.setRowCount(0)`ですべての行が削除可能
+- 空の`TableModel`を`JTable`に設定すれば行の全削除を行うことが可能だが、ヘッダモデルの再作成が発生しカラム幅や順番などが初期化されてしまう
+    - `JTable#setAutoCreateColumnsFromModel(false)`とカラムをモデルから自動生成しないようにしておけば、`TableModel`を入れ替えても列幅などは保存される
+        
+        <pre class="prettyprint"><code>table.setAutoCreateColumnsFromModel(false);
+        table.setModel(new DefaultTableModel());
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 `DefaultTableModel`を継承していない場合は、モデルに以下の要領(詳細は`DefaultTableModel.java`のソースを参照)で行を全削除するメソッドを実装します。
 
@@ -60,6 +59,6 @@ table.setModel(new DefaultTableModel());
     - ご指摘ありがとうございます。確かに`ArrayIndexOutOfBoundsException: 0 >= 0`が発生していますね。以前は正常だったはず？と思って調べてみたら、[Bug ID: JDK-6967479 JTable sorter fires even if the model is empty](https://bugs.openjdk.java.net/browse/JDK-6967479)が原因？で、`6u10,6u20`以降で発生しているようです。 ~~`8`で修正される予定？らしいので、しばらくは別の方法を使用するように修正し~~ ~~何時修正されるか分からないので回避方法を考えてみようと思います。~~ -- *aterai* 2013-07-23 (火) 10:47:23
     - ~~`model.setRowCount(0);`の前に、`table.setRowSorter(null);`とソートを不可にする修正などを追加しました。~~ [Bug ID: JDK-6967479 JTable sorter fires even if the model is empty](https://bugs.openjdk.java.net/browse/JDK-6967479)にあるように`DefaultTableModel#getColumnClass`をオーバーライドする方法が簡単なので、そのように修正しました。 -- *aterai* 2013-07-23 (火) 14:44:15
 - Javaのバグだったのですね。ちなみに私は`DefaultTableModel#getColumnClass`のオーバーライドでは解決しなかったので、`table.setRowSorter(null)`の対応案を参考にさせていただきました。 -- *tohrisugari* 2013-07-26 (金) 12:08:04
-    - 行の追加削除があるサンプルなのに、`model`が空の場合でも`TableModel#getValueAt(0, column).getClass()` ~~を呼ぶような~~ が呼ばれる可能性がある手抜きをしているのが悪いので、`Java`のバグというのはかわいそうな気も(面倒なので出来れば修正して欲しいですが)します(^^;。 -- *aterai* 2013-07-26 (金) 18:46:28
+    - 行の追加削除があるサンプルなのに、`model`が空の場合でも`TableModel#getValueAt(0, column).getClass()` ~~を呼ぶような~~ が呼ばれる可能性がある手抜きをしているのが悪いので、`Java`のバグというのはかわいそうな気も(面倒なので可能なら修正して欲しいですが)します(^^;。 -- *aterai* 2013-07-26 (金) 18:46:28
 
 <!-- dummy comment line for breaking list -->

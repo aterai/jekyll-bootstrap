@@ -74,7 +74,7 @@ class GroupableTableHeader extends JTableHeader {
 - ~~[Groupable Header - JTable Examples 1](http://www2.gol.com/users/tame/swing/examples/JTableExamples1.html)~~
     - オリジナル版
 - [Groupable(Group) Header Example : Grid Table « Swing Components « Java](http://www.java2s.com/Code/Java/Swing-Components/GroupableGroupHeaderExample.htm)
-    - `revised by Java2s.com`でいくつか変更点がある
+    - `revised by Java2s.com`で、いくつか変更点がある模様
 
 <!-- dummy comment line for breaking list -->
 
