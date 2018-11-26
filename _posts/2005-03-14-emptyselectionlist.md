@@ -42,9 +42,9 @@ class EmptySelectionRenderer implements ListCellRenderer {
     - `JList#setEnabled(false)`で編集不可にしているため、アイテムの選択も不可
     - 文字色が薄くなる
 - 中
-    - `JList#setFocusable(false)`でフォーカス無し、かつ`ListSelectionModel#isSelectedIndex(...)`が常に`false`なセレクションモデルを使用することで選択不可に設定
+    - `JList#setFocusable(false)`でフォーカス無し、かつ`ListSelectionModel#isSelectedIndex(...)`が常に`false`なセレクションモデルを使用して選択不可に設定
 - 右
-    - 常に各セルを選択状態でもフォーカスも無いものとして描画するセルレンダラーを使用することで選択不可に見せかける
+    - 常に各セルを選択状態でもフォーカスも無いものとして描画するセルレンダラーを使用して選択不可に見せかける
 
 <!-- dummy comment line for breaking list -->
 

@@ -119,13 +119,14 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- 画像を左上ではなく`JSplitPane`の中央に表示したい場合の例:
+- 画像を左上([JSplitPaneで画像を差分を比較表示する](https://ateraimemo.com/Swing/ImageComparisonSplitPane.html))ではなく、`JSplitPane`の中央に表示するよう変更
 
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>Component beforeCanvas = new JComponent() {
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
+
     int iw = icon.getIconWidth();
     int ih = icon.getIconHeight();
     Dimension dim = split.getSize();
@@ -140,12 +141,11 @@ Component afterCanvas = new JComponent() {
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     Graphics2D g2 = (Graphics2D) g.create();
+    Insets ins = split.getBorder().getBorderInsets(split);
+    g2.translate(-getLocation().x + ins.left, 0);
+
     int iw = destination.getWidth(this);
     int ih = destination.getHeight(this);
-    Point pt = getLocation();
-    Insets ins = split.getBorder().getBorderInsets(split);
-    g2.translate(-pt.x + ins.left, 0);
-
     Dimension dim = split.getSize();
     int x = (dim.width - iw) / 2;
     int y = (dim.height - ih) / 2;

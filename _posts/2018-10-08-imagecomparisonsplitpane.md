@@ -67,6 +67,7 @@ split.setRightComponent(afterCanvas);
 
 - - - -
 - 注: `JSplitPane`のリサイズは考慮していない
+    - リサイズ可で、画像を`JSplitPane`の中央に表示するサンプルは[JSplitPaneのDividerを円形半透明のつまみに変更して中央に配置する](https://ateraimemo.com/Swing/TranslucentThumbDivider.html)に移動
 
 <!-- dummy comment line for breaking list -->
 
