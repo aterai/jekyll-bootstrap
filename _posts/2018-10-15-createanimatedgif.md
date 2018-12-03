@@ -16,7 +16,8 @@ comments: true
 {% download https://drive.google.com/uc?export=view&id=1u3A7qx0Lmc-FYjdYhsZkBRrdEChn78_-1A %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
+<pre class="prettyprint"><code>BufferedImage image = new BufferedImage(
+    WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
 Iterator&lt;ImageWriter&gt; it = ImageIO.getImageWritersByFormatName("gif");
 try {
   File file = File.createTempFile("anime", ".gif");
@@ -51,7 +52,8 @@ try {
   // Create animated GIF using imageio | Oracle Community
   // https://community.oracle.com/thread/1264385
   ImageWriteParam iwp = writer.getDefaultWriteParam();
-  IIOMetadata metadata = writer.getDefaultImageMetadata(new ImageTypeSpecifier(image), iwp);
+  IIOMetadata metadata = writer.getDefaultImageMetadata(
+      new ImageTypeSpecifier(image), iwp);
   String metaFormat = metadata.getNativeMetadataFormatName();
   Node root = metadata.getAsTree(metaFormat);
   root.appendChild(gce);
@@ -77,7 +79,7 @@ try {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[Create animated GIF using imageio | Oracle Community](https://community.oracle.com/thread/1264385)を参考に、`delayTime`が`10`ミリ秒、フレーム数が`80`の`AnimatedGif`を生成し、画像ファイルとしての書き出しと`JLabel`への表示を行っています。
+上記のサンプルでは、[Create animated GIF using imageio | Oracle Community](https://community.oracle.com/thread/1264385)を参考に、`delayTime`が`10`ミリ秒、フレーム数が`80`の`AnimatedGif`を生成し、画像ファイルとしての書き出しと`JLabel`への表示を実行しています。
 
 ## 参考リンク
 - [Create animated GIF using imageio | Oracle Community](https://community.oracle.com/thread/1264385)

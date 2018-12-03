@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2018-11-05T16:25:10+09:00
 description: JComboBoxを編集可能に設定し、ComboBoxEditorとして複数のJCheckBoxとJTextFieldを配置したJPanelを設定します。
 image: https://drive.google.com/uc?id=1f3vhPqkXg-Jg6AK0p01Pn7aGRTo-Wlv0pw
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2018/11/add-editable-jcheckbox-to.html
+    lang: en
 comments: true
 ---
 ## 概要

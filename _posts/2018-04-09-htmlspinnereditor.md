@@ -11,7 +11,7 @@ image: https://drive.google.com/uc?id=1SC3ViNpsTsIE2fgR1wtXawwKHpOD8P1PYg
 comments: true
 ---
 ## 概要
-`JSpinner`の`ListEditor`を`JLabel`に変更してテキストをHTMLで表示します。
+`JSpinner`の`ListEditor`を`JLabel`に変更してテキストを`HTML`で表示します。
 
 {% download https://drive.google.com/uc?id=1SC3ViNpsTsIE2fgR1wtXawwKHpOD8P1PYg %}
 

@@ -49,7 +49,7 @@ decode.addActionListener(e -&gt; {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JDK 1.8.0`から導入された`Base64`クラスを使用して、画像ファイルの`Base64`形式文字列へのエンコードや、`Base64`形式文字列から`byte`配列へのデコードを行っています。
+上記のサンプルでは、`JDK 1.8.0`から導入された[Base64](https://docs.oracle.com/javase/jp/8/docs/api/java/util/Base64.html)クラスを使用して、画像ファイルの`Base64`形式文字列へのエンコードや、`Base64`形式文字列から`byte`配列へのデコードを行っています。
 
 - `encode`
     - `JFileChooser`で選択した画像(`PNG`)ファイルを`Base64.Encoder`の`encodeToString(...)`メソッドで文字列に変換して`JTextArea`に設定

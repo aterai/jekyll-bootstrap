@@ -92,6 +92,8 @@ im.put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, modifiers), "shrinkRight");
 
 ## 参考リンク
 - [JComponentのKeyBinding一覧を取得する](https://ateraimemo.com/Swing/KeyBinding.html)
+- [JDK-6603771 Nimbus L&F: Ctrl+F7 keybinding for JInternal Frame throws a NPE. - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6603771)
+    - リサイズなどで`NullPointerException`になるのは`NimbusLookAndFeel`が入った最初からのバグらしい
 
 <!-- dummy comment line for breaking list -->
 
