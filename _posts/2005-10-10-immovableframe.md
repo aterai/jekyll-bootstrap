@@ -24,7 +24,7 @@ for (MouseMotionListener l: titleBar.getListeners(MouseMotionListener.class)) {
 </code></pre>
 
 ## 解説
-`JInternalFrame`の`MouseMotionListener`をすべて削除することで、マウスによる移動を不可能にしています。
+`JInternalFrame`の`MouseMotionListener`をすべて削除して、マウスによる移動を不可能に設定しています。
 
 - - - -
 以下のように、タイトルバー自体を削除して移動できないフレームを作成する方法もあります。

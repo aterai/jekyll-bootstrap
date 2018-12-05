@@ -80,7 +80,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`JDK 1.7.0`や、`1.6.0_10`以上の場合は、フレーム外でも`Robot`を使用せず、以下のように`JPopupMenu`の上位`Window`の背景色を透明にすることで影をつけることができます。
+`JDK 1.7.0`や、`1.6.0_10`以上の場合、フレーム外でも`Robot`を使用せず、以下のように`JPopupMenu`の上位`Window`の背景色を透明にすれば影の描画が可能です。
 
 <pre class="prettyprint"><code>class DropShadowPopupMenu extends JPopupMenu {
   private static final int OFFSET = 4;

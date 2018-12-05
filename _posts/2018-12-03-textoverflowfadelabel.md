@@ -3,7 +3,7 @@ layout: post
 category: swing
 folder: TextOverflowFadeLabel
 title: JLabelで文字列のあふれをフェードアウト効果に変更する
-tags: [JLabel, HTML, JTextField, BufferedImage, AlphaComposite]
+tags: [JLabel, HTML, TextLayout, BufferedImage, AlphaComposite]
 author: aterai
 pubdate: 2018-12-03T02:58:34+09:00
 description: JLabelなどで文字列があふれる場合、デフォルトの省略記号…ではなく、フェードアウト効果を適用して端付近の文字を透明表示します。
@@ -16,29 +16,42 @@ comments: true
 {% download https://drive.google.com/uc?export=view&id=16SQWlFfTk5X8LOxTKkjobFZblb-hgj5uGA %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>@Override public void paintComponent(Graphics g) {
-  Insets i = getInsets();
-  int w = getWidth() - i.left - i.right;
-  int h = getHeight() - i.top - i.bottom;
+<pre class="prettyprint"><code>class TextOverfloFadeLabel extends JLabel {
+  private static final int LENGTH = 20;
+  private static final float DIFF = .05f;
 
-  Rectangle rect = new Rectangle(i.left, i.top, w - LENGTH, h);
-
-  Graphics2D g2 = (Graphics2D) g.create();
-  g2.setFont(g.getFont());
-  g2.setClip(rect);
-  g2.setComposite(AlphaComposite.SrcOver.derive(.99999f));
-  super.paintComponent(g2);
-
-  rect.width = 1;
-  float alpha = 1f;
-  for (int x = w - LENGTH; x &lt; w; x++) {
-    rect.x = x;
-    alpha = Math.max(0f, alpha - DIFF);
-    g2.setComposite(AlphaComposite.SrcOver.derive(alpha));
-    g2.setClip(rect);
-    super.paintComponent(g2);
+  protected TextOverfloFadeLabel(String text) {
+    super(text);
   }
-  g2.dispose();
+
+  @Override public void paintComponent(Graphics g) {
+    Insets i = getInsets();
+    int w = getWidth() - i.left - i.right;
+    int h = getHeight() - i.top - i.bottom;
+    Rectangle rect = new Rectangle(i.left, i.top, w - LENGTH, h);
+
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setFont(g.getFont());
+    g2.setPaint(getForeground());
+
+    FontRenderContext frc = g2.getFontRenderContext();
+    TextLayout tl = new TextLayout(getText(), getFont(), frc);
+    int baseline = getBaseline(w, h);
+
+    g2.setClip(rect);
+    tl.draw(g2, getInsets().left, baseline);
+
+    rect.width = 1;
+    float alpha = 1f;
+    for (int x = w - LENGTH; x &lt; w; x++) {
+      rect.x = x;
+      alpha = Math.max(0f, alpha - DIFF);
+      g2.setComposite(AlphaComposite.SrcOver.derive(alpha));
+      g2.setClip(rect);
+      tl.draw(g2, getInsets().left, baseline);
+    }
+    g2.dispose();
+  }
 }
 </code></pre>
 
@@ -51,28 +64,22 @@ comments: true
         - `Graphics2D#setClip(...)`で描画領域を限定し、幅`1px`毎に`Graphics2D#setComposite(AlphaComposite.SrcOver.derive(alpha))`でアルファ値を設定して描画
         - [Fontのアウトラインを取得して文字列の内部を修飾する](https://ateraimemo.com/Swing/LineSplittingLabel.html)
     - `Graphics2D#setComposite(...)`を使用すると文字列にアンチエイリアスが掛かってしまう？ため、透明化しない文字列にもほぼ`1f`のアルファ値を設定して描画
-- `JTextField fade out`
-    - `JLabel`の代わりに編集不可にした`JTextField`を使用して省略記号によるあふれ省略を無効化
+- `JLabel TextLayout fade out`
+    - `<html>`タグは使用せず、`TextLayout`を生成し直接文字列を描画してあふれ省略を無効化
+    - フェードアウト効果は、`html JLabel fade out`と同様
+- ~~`JTextField fade out`~~ `JLabel BufferedImage fade out`
+    - ~~`JLabel`の代わりに編集不可にした`JTextField`を使用して~~ `JLabel TextLayout fade out`と同様に`TextLayout`で文字列を描画して省略記号によるあふれ省略を無効化
     - 文字列を`BufferedImage`に描画し、その右端付近のピクセル値を`BufferedImage#getRGB(...)`で取得後、アルファ成分を変更して`BufferedImage#setRGB(...)`で戻す
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>class FadingOutLabel extends JTextField {
+<pre class="prettyprint"><code>class FadingOutLabel extends JLabel {
   private static final int LENGTH = 20;
   private final Dimension dim = new Dimension();
   private transient BufferedImage img;
 
   protected FadingOutLabel(String text) {
     super(text);
-  }
-
-  @Override public void updateUI() {
-    super.updateUI();
-    setOpaque(false);
-    setEditable(false);
-    setFocusable(false);
-    setEnabled(false);
-    setBorder(BorderFactory.createEmptyBorder());
   }
 
   @Override public void paintComponent(Graphics g) {
