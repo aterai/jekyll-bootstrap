@@ -84,7 +84,7 @@ comments: true
 ## 解説
 各パネルに配置されたタイトルラベルがクリックされた場合、`JPanel#setVisible(boolean)`メソッドを使って、パネルの表示・非表示を切り替えています。
 
-また、パネルを非表示にするだけでは、その高さが変更されないので、以下のように、`JPanel#getPreferredSize()`もオーバーライドしています。
+また、パネルを非表示にするだけではその高さが更新されないので、以下のように`JPanel#getPreferredSize()`メソッドもオーバーライドしています。
 
 <pre class="prettyprint"><code>@Override public Dimension getPreferredSize() {
   Dimension d = label.getPreferredSize();

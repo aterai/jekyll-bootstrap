@@ -21,7 +21,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>protected int getTargetTabIndex(Point glassPt) {
   Point tabPt = SwingUtilities.convertPoint(glassPane, glassPt, this);
-  boolean isTB = getTabPlacement() == JTabbedPane.TOP || getTabPlacement() == JTabbedPane.BOTTOM;
+  boolean isTB = getTabPlacement() == JTabbedPane.TOP
+              || getTabPlacement() == JTabbedPane.BOTTOM;
   Point d = isTB ? new Point(1, 0) : new Point(0, 1);
   for (int i = 0; i &lt; getTabCount(); i++) {
     Rectangle r = getBoundsAt(i);
