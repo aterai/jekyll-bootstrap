@@ -128,6 +128,7 @@ public class OTFTest {
 ## 参考リンク
 - [Java Font Support - OpenType : Java Glossary](http://mindprod.com/jgloss/opentype.html#JAVASUPPORT)
 - [OpenType (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/OpenType.html)
+- [Java access files in jar causes java.nio.file.FileSystemNotFoundException - Stack Overflow](https://stackoverflow.com/questions/22605666/java-access-files-in-jar-causes-java-nio-file-filesystemnotfoundexception)
 
 <!-- dummy comment line for breaking list -->
 

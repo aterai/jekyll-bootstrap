@@ -100,9 +100,9 @@ comments: true
 </code></pre>
 
 ## 解説
-- 上の`JTable`:
+- 上`JTable`:
     - デフォルトの`BasicTableUI.TableTransferHandler`を使用
-- 下の`JTable`:
+- 下`JTable`:
     - `HtmlTableTransferHandler`を設定
     - `TransferHandler#createTransferable(JComponent)`をオーバーライドしてクリップボードに渡す`text/html`なテキストを独自に作成
         - `text/plain`は`BasicTableUI.TableTransferHandler`のコピーをそのまま使用

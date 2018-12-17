@@ -100,7 +100,7 @@ comments: true
 
 - - - -
 - ~~ボタンの揃えを変更するために、`JPanel`ではなく、`Box`を利用しているので、`JDK 5`でも`JDK 6`と同じように描画するために、`Box#paintComponent`を以下のようにオーバーライド~~ `JDK 6`で修正済み
-    - [Bug ID: 4907674 Box disregards setBackground() even when set Opaque(true)](https://bugs.openjdk.java.net/browse/JDK-4907674)
+    - [JDK-4907674 Box disregards setBackground() even when set Opaque(true) - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4907674)
 
 <!-- dummy comment line for breaking list -->
 

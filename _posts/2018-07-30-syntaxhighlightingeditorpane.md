@@ -59,6 +59,7 @@ private static String prettify(ScriptEngine engine, String src) {
 ## 参考リンク
 - [google/code-prettify: Automatically exported from code.google.com/p/google-code-prettify](https://github.com/google/code-prettify)
 - [Rhinoでgoogle-code-prettifyを実行する](https://ateraimemo.com/Tips/GooglePrettifyRhino.html)
+- [Java access files in jar causes java.nio.file.FileSystemNotFoundException - Stack Overflow](https://stackoverflow.com/questions/22605666/java-access-files-in-jar-causes-java-nio-file-filesystemnotfoundexception)
 
 <!-- dummy comment line for breaking list -->
 
