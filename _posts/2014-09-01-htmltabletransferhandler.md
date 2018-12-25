@@ -74,7 +74,7 @@ comments: true
           } else  if (obj instanceof Color) {
             htmlBuf.append(String.format(
                 "  &lt;td style='background-color:#%06X'&gt;&amp;nbsp;&lt;/td&gt;%n",
-                ((Color) obj).getRGB() &amp; 0xffffff));
+                ((Color) obj).getRGB() &amp; 0xFF_FF_FF));
           } else {
             htmlBuf.append("  &lt;td&gt;" + Objects.toString(obj, "") + "&lt;/td&gt;\n");
           }

@@ -77,7 +77,7 @@ comments: true
     return l;
   }
   private static String hex(Color c) {
-    return String.format("#%06x", c.getRGB() &amp; 0xffffff);
+    return String.format("#%06x", c.getRGB() &amp; 0xFF_FF_FF);
   }
 }
 </code></pre>

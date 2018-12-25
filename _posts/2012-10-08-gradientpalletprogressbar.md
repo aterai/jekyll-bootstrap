@@ -53,9 +53,9 @@ comments: true
     int i = (int) (pallet.length * x);
     int max = pallet.length - 1;
     int index = Math.min(Math.max(i, 0), max);
-    return new Color(pallet[index] &amp; 0x00FFFFFF);
+    return new Color(pallet[index] &amp; 0x00_FF_FF_FF);
     //translucent
-    //int pix = pallet[index] &amp; 0x00FFFFFF | (0x64 &lt;&lt; 24);
+    //int pix = pallet[index] &amp; 0x00_FF_FF_FF | (0x64 &lt;&lt; 24);
     //return new Color(pix), true);
   }
   @Override public void paintDeterminate(Graphics g, JComponent c) {

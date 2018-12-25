@@ -73,9 +73,9 @@ comments: true
       //float[] array = new float[4];
       //color.getComponents(array);
       //return new Color(array[0] * .5f, array[1] * .5f, array[2], array[3]).getRGB();
-      int r = (argb &gt;&gt; 16) &amp; 0xff;
-      int g = (argb &gt;&gt;  8) &amp; 0xff;
-      return (argb &amp; 0xff0000ff) | ((r &gt;&gt; 1) &lt;&lt; 16) | ((g &gt;&gt; 1) &lt;&lt; 8);
+      int r = (argb &gt;&gt; 16) &amp; 0xFF;
+      int g = (argb &gt;&gt;  8) &amp; 0xFF;
+      return (argb &amp; 0xFF_00_00_FF) | ((r &gt;&gt; 1) &lt;&lt; 16) | ((g &gt;&gt; 1) &lt;&lt; 8);
     }
   }
 }

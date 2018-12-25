@@ -26,7 +26,7 @@ comments: true
       setFocusCycleRoot(flag);
     }
     @Override protected void paintComponent(Graphics g) {
-      g.setColor(new Color(0x64FFFFFF, true));
+      g.setColor(new Color(0x64_FF_FF_FF, true));
       g.fillRect(0, 0, getWidth(), getHeight());
       BufferedImage bufimg = new BufferedImage(
           getWidth(), getHeight(), BufferedImage.TYPE_INT_ARGB);

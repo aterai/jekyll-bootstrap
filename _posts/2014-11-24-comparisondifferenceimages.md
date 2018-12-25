@@ -23,7 +23,7 @@ int[] pixelsB = getData(iib, w, h);
 source = new MemoryImageSource(w, h, pixelsA, 0, w);
 for (int i = 0; i &lt; pixelsA.length; i++) {
   if (pixelsA[i] == pixelsB[i]) {
-    pixelsA[i] = pixelsA[i] &amp; 0x44ffffff;
+    pixelsA[i] = pixelsA[i] &amp; 0x44_FF_FF_FF;
   }
 }
 //...

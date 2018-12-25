@@ -19,7 +19,7 @@ comments: true
 <pre class="prettyprint"><code>BufferedImage image = ImageIO.read(getClass().getResource("duke.gif"));
 JLabel label = new JLabel(new ImageIcon(image)) {
   @Override public boolean contains(int x, int y) {
-    return super.contains(x, y) &amp;&amp; ((image.getRGB(x, y) &gt;&gt; 24) &amp; 0xff) &gt; 0;
+    return super.contains(x, y) &amp;&amp; ((image.getRGB(x, y) &gt;&gt; 24) &amp; 0xFF) &gt; 0;
   }
 };
 </code></pre>

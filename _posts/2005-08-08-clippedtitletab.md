@@ -71,6 +71,7 @@ tab1.setUI(new BasicTabbedPaneUI() {
 ## 参考リンク
 - [JTabbedPaneのタイトルをクリップ](https://ateraimemo.com/Swing/ClippedTabLabel.html)
 - [JTabbedPaneのTabTitleを左揃えに変更](https://ateraimemo.com/Swing/TabTitleAlignment.html)
+- [JTabbedPaneのタブ文字列のあふれをフェードアウト効果に変更する](https://ateraimemo.com/Swing/TextOverflowFadeTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -109,7 +109,7 @@ comments: true
       double factor = 1d - x / (double) LENGTH;
       for (int y = 0; y &lt; d.height; y++) {
         int argb = img.getRGB(spx + x, y);
-        int rgb = argb &amp; 0x00FFFFFF;
+        int rgb = argb &amp; 0x00_FF_FF_FF;
         int a = (argb &gt;&gt; 24) &amp; 0xFF;
         img.setRGB(spx + x, y, ((int) (a * factor) &lt;&lt; 24) | rgb);
       }
@@ -122,6 +122,7 @@ comments: true
 ## 参考リンク
 - [Fontのアウトラインを取得して文字列の内部を修飾する](https://ateraimemo.com/Swing/LineSplittingLabel.html)
 - [JComboBoxのアイテム文字列を左側からクリップ](https://ateraimemo.com/Swing/LeftClippedComboBox.html)
+- [JTabbedPaneのタブ文字列のあふれをフェードアウト効果に変更する](https://ateraimemo.com/Swing/TextOverflowFadeTabbedPane.html)
 
 <!-- dummy comment line for breaking list -->
 

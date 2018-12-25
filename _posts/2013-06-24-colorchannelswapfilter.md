@@ -54,10 +54,10 @@ comments: true
 
 class RedGreenChannelSwapFilter extends RGBImageFilter {
   @Override public int filterRGB(int x, int y, int argb) {
-    int r = (int) ((argb &gt;&gt; 16) &amp; 0xff);
-    int g = (int) ((argb &gt;&gt;  8) &amp; 0xff);
-    int b = (int) ((argb)       &amp; 0xff);
-    return (argb &amp; 0xff000000) | (g &lt;&lt; 16) | (r &lt;&lt; 8) | (b);
+    int r = (int) ((argb &gt;&gt; 16) &amp; 0xFF);
+    int g = (int) ((argb &gt;&gt;  8) &amp; 0xFF);
+    int b = (int) ((argb)       &amp; 0xFF);
+    return (argb &amp; 0xFF_00_00_00) | (g &lt;&lt; 16) | (r &lt;&lt; 8) | (b);
   }
 }
 </code></pre>

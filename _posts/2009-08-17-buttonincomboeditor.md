@@ -112,11 +112,11 @@ private static ImageIcon makeFilteredImage(ImageIcon srcIcon) {
 class SelectedImageFilter extends RGBImageFilter {
   private static final float SCALE = 1.2f;
   @Override public int filterRGB(int x, int y, int argb) {
-    //int a = (argb &gt;&gt; 24) &amp; 0xff;
-    int r = (int) Math.min(0xff, ((argb &gt;&gt; 16) &amp; 0xff) * SCALE);
-    int g = (int) Math.min(0xff, ((argb &gt;&gt;  8) &amp; 0xff) * SCALE);
-    int b = (int) Math.min(0xff, ((argb)       &amp; 0xff) * SCALE);
-    return (argb &amp; 0xff000000) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | (b);
+    //int a = (argb &gt;&gt; 24) &amp; 0xFF;
+    int r = (int) Math.min(0xFF, ((argb &gt;&gt; 16) &amp; 0xFF) * SCALE);
+    int g = (int) Math.min(0xFF, ((argb &gt;&gt;  8) &amp; 0xFF) * SCALE);
+    int b = (int) Math.min(0xFF, ((argb)       &amp; 0xFF) * SCALE);
+    return (argb &amp; 0xFF_00_00_00) | (r &lt;&lt; 16) | (g &lt;&lt; 8) | (b);
   }
 }
 

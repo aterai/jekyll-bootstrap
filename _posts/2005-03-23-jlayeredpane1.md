@@ -72,14 +72,14 @@ public class TestJLayeredPane1 extends JFrame {
     setContentPane(layerPane);
   }
 
-  int[] colors = { 0xdddddd, 0xaaaaff, 0xffaaaa, 0xaaffaa, 0xffffaa, 0xffaaff, 0xaaffff };
+  int[] colors = { 0xDD_DD_DD, 0xAA_AA_FF, 0xFF_AA_AA, 0xAA_FF_AA, 0xFF_FF_AA, 0xFF_AA_FF, 0xAA_FF_FF };
 
   Color getColor(int i, float f) {
-    int b = (int) ((i &amp; 0xff) * f);
+    int b = (int) ((i &amp; 0xFF) * f);
     i = i &gt;&gt; 8;
-    int g = (int) ((i &amp; 0xff) * f);
+    int g = (int) ((i &amp; 0xFF) * f);
     i = i &gt;&gt; 8;
-    int r = (int) ((i &amp; 0xff) * f);
+    int r = (int) ((i &amp; 0xFF) * f);
     return new Color(r, g, b);
   }
 

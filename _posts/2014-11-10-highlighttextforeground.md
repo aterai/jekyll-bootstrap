@@ -19,7 +19,7 @@ comments: true
 <pre class="prettyprint"><code>StyledDocument doc = textPane.getStyledDocument();
 Style def = doc.getStyle(StyleContext.DEFAULT_STYLE);
 Style htf = doc.addStyle("highlight-text-foreground", def);
-StyleConstants.setForeground(htf, new Color(0xFFDDFF));
+StyleConstants.setForeground(htf, new Color(0xFF_DD_FF));
 //...
 
 //clear the previous highlight:

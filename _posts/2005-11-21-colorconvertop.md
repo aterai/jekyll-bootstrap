@@ -45,13 +45,13 @@ icon2 = new ImageIcon(destination);
 
 <pre class="prettyprint"><code>class MyGrayFilter extends RGBImageFilter {
   public int filterRGB(int x, int y, int argb) {
-    //int a = (argb &gt;&gt; 24) &amp; 0xff;
-    int r = (argb &gt;&gt; 16) &amp; 0xff;
-    int g = (argb &gt;&gt;  8) &amp; 0xff;
-    int b = (argb      ) &amp; 0xff;
+    //int a = (argb &gt;&gt; 24) &amp; 0xFF;
+    int r = (argb &gt;&gt; 16) &amp; 0xFF;
+    int g = (argb &gt;&gt;  8) &amp; 0xFF;
+    int b = (argb      ) &amp; 0xFF;
     //http://ofo.jp/osakana/cgtips/grayscale.phtml
     int m = (2 * r + 4 * g + b) / 7; //NTSC Coefficients
-    return (argb &amp; 0xff000000) | (m&lt;&lt;16) | (m&lt;&lt;8) | (m);
+    return (argb &amp; 0xFF_00_00_00) | (m &lt;&lt; 16) | (m &lt;&lt; 8) | m;
   }
 }
 //...
