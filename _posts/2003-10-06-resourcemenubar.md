@@ -146,6 +146,8 @@ public Action[] getActions() {
 - - - -
 - `JDK 1.6.0`以降なら、`native2ascii`で変換しなくてもリソースファイルのエンコードを指定しての読み込みが可能
     - 参考: [Java 小ネタ千夜一夜 第13夜 Java SE 6はnative2ascii使わなくていいのはみんな知っていると思うが](http://d.hatena.ne.jp/shin/20090707/p4)
+    - `Java 9`からプロパティファイルはデフォルトで`UTF-8`になったため、以下のような`ResourceBundle`を作成する必要もなくなった
+        - [UTF-8プロパティ・ファイル - JDK 9における国際化の拡張機能](https://docs.oracle.com/javase/jp/9/intl/internationalization-enhancements-jdk-9.htm#GUID-974CF488-23E8-4963-A322-82006A7A14C7)
 
 <!-- dummy comment line for breaking list -->
 
@@ -190,6 +192,8 @@ public Action[] getActions() {
 
 ## 参考リンク
 - [ResourceBundle.Control (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/util/ResourceBundle.Control.html)
+- [UTF-8プロパティ・ファイル - JDK 9における国際化の拡張機能](https://docs.oracle.com/javase/jp/9/intl/internationalization-enhancements-jdk-9.htm#GUID-974CF488-23E8-4963-A322-82006A7A14C7)
+- [JDK-8027607 (rb) Provide UTF-8 based properties resource bundles - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8027607)
 
 <!-- dummy comment line for breaking list -->
 

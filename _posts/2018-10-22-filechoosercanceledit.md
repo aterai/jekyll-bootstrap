@@ -20,7 +20,9 @@ comments: true
 JButton button1 = new JButton("removeEditor");
 button1.addActionListener(e -&gt; {
   Optional.ofNullable(fileChooser.getActionMap().get("viewTypeDetails"))
-    .ifPresent(a -&gt; a.actionPerformed(null));
+    .ifPresent(a -&gt; {
+      a.actionPerformed(new ActionEvent(e.getSource(), e.getID(), "viewTypeDetails"));
+    });
   stream(fileChooser1)
     .filter(JTable.class::isInstance).map(JTable.class::cast)
     .findFirst()

@@ -16,13 +16,14 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TSq77M-soeI/AAAAAAAAAxg/0nnen-n-cAY/s800/DetailsViewFileChooser.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//java - How can I start the JFileChooser in the Details view? - Stack Overflow]
-//https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view
-//for (Object key: chooser.getActionMap().allKeys()) {
-//    System.out.println(key);
-//}
-Optional.ofNullable(chooser.getActionMap().get("viewTypeDetails"))
-  .ifPresent(a -&gt; a.actionPerformed(null));
+<pre class="prettyprint"><code>// java - How can I start the JFileChooser in the Details view? - Stack Overflow]
+// https://stackoverflow.com/questions/16292502/how-can-i-start-the-jfilechooser-in-the-details-view
+// for (Object key: chooser.getActionMap().allKeys()) {
+//   System.out.println(key);
+// }
+String cmd = "viewTypeDetails";
+Optional.ofNullable(chooser.getActionMap().get(cmd))
+  .ifPresent(a -&gt; a.actionPerformed(new ActionEvent(e.getSource(), e.getID(), cmd)));
 </code></pre>
 
 ## 解説
@@ -31,7 +32,7 @@ Optional.ofNullable(chooser.getActionMap().get("viewTypeDetails"))
 <pre class="prettyprint"><code>//@see javax/swing/plaf/basic/BasicFileChooserUI.java
 ActionMap map = new ActionMapUIResource();
 Action refreshAction = new UIAction(FilePane.ACTION_REFRESH) {
-  public void actionPerformed(ActionEvent evt) {
+  public void actionPerformed(ActionEvent e) {
     getFileChooser().rescanCurrentDirectory();
   }
 };

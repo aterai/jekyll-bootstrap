@@ -20,7 +20,8 @@ comments: true
 button3.addActionListener(e -&gt; {
   JFileChooser chooser = new JFileChooser();
   Optional.ofNullable(chooser.getActionMap().get("viewTypeDetails"))
-    .ifPresent(a -&gt; a.actionPerformed(null));
+    .ifPresent(a -&gt; a.actionPerformed(
+      new ActionEvent(e.getSource(), e.getID(), "viewTypeDetails")));
   stream(chooser)
     .filter(JTable.class::isInstance)
     .map(JTable.class::cast)

@@ -71,7 +71,8 @@ comments: true
     addMouseListener(new MouseAdapter() {
       @Override public void mouseClicked(MouseEvent e) {
         if (e.getClickCount() == 2) {
-          startEditing.actionPerformed(null);
+          startEditing.actionPerformed(
+            new ActionEvent(e.getComponent(), ActionEvent.ACTION_PERFORMED, ""));
         }
       }
     });
@@ -92,7 +93,8 @@ comments: true
         @Override public void mouseClicked(MouseEvent e) {
           //if (Objects.nonNull(rect) &amp;&amp; !rect.contains(e.getPoint())) {
           if (!editor.getBounds().contains(e.getPoint())) {
-            renameTab.actionPerformed(null);
+            renameTab.actionPerformed(
+              new ActionEvent(e.getComponent(), ActionEvent.ACTION_PERFORMED, ""));
           }
         }
       });

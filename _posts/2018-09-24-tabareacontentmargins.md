@@ -48,7 +48,7 @@ d.put("TabbedPane:TabbedPaneTabArea.contentMargins", new Insets(i.top, 0, i.bott
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `LookAndFeel`によってタブエリアの余白を取得可能な方法が異なるので注意する必要がある
+- `LookAndFeel`によってタブエリアの余白を取得可能な方法が異なるので注意が必要
     
     <pre class="prettyprint"><code>// MetalLookAndFeelなどではnullになる
     // UIDefaults d = UIManager.getLookAndFeelDefaults();

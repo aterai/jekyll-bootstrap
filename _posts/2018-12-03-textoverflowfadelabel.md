@@ -16,11 +16,11 @@ comments: true
 {% download https://drive.google.com/uc?export=view&id=16SQWlFfTk5X8LOxTKkjobFZblb-hgj5uGA %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class TextOverfloFadeLabel extends JLabel {
+<pre class="prettyprint"><code>class TextOverflowFadeLabel extends JLabel {
   private static final int LENGTH = 20;
   private static final float DIFF = .05f;
 
-  protected TextOverfloFadeLabel(String text) {
+  protected TextOverflowFadeLabel(String text) {
     super(text);
   }
 

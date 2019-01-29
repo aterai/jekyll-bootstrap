@@ -77,7 +77,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`JLayer`を設定した任意のコンポーネントへの入力可・不可を切り替えることができます。
 
-- 入力禁止中の半透明グレー表示
+- 入力禁止中に半透明グレー表示
     - `LayerUI<JPanel>#paint(...)`をオーバーライドして表示を変更
 - マウス、キー入力の禁止
     - `LayerUI<JPanel>#eventDispatched(...)`をオーバーライドして、`((InputEvent) e).consume()`を使用し、イベントを消費

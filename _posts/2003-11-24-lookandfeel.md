@@ -16,15 +16,17 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPf78s81I/AAAAAAAAAeE/DIOTnqtAOnY/s800/LookAndFeel.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//%JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java
+<pre class="prettyprint"><code>// %JAVA_HOME%/demo/jfc/SwingSet2/src/SwingSet2.java
 // Possible Look &amp; Feels
 private static final String MAC     = "com.sun.java.swing.plaf.mac.MacLookAndFeel";
 private static final String METAL   = "javax.swing.plaf.metal.MetalLookAndFeel";
 private static final String MOTIF   = "com.sun.java.swing.plaf.motif.MotifLookAndFeel";
 private static final String WINDOWS = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
 private static final String GTK     = "com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
-//private static final String NIMBUS  = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"; // JDK 1.6.0_10
-private static final String NIMBUS  = "javax.swing.plaf.nimbus.NimbusLookAndFeel"; // JDK 1.7.0
+// JDK 1.6.0_10
+// private static final String NIMBUS  = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel";
+// JDK 1.7.0
+private static final String NIMBUS  = "javax.swing.plaf.nimbus.NimbusLookAndFeel";
 
 // The current Look &amp; Feel
 private static String currentLookAndFeel = METAL;

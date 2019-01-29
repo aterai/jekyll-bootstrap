@@ -21,7 +21,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private void loadFile(String path) {
   try (Stream&lt;String&gt; lines = Files.lines(
-      Paths.get(path), Charset.forName("UTF-8"))) {
+      Paths.get(path), StandardCharsets.UTF_8)) {
     String txt = lines.map(s -&gt; s.replace("&amp;", "&amp;amp;")
                                  .replace("&lt;", "&amp;lt;")
                                  .replace("&gt;", "&amp;gt;"))
