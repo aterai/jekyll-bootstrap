@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2019-01-21T00:29:34+09:00
 description: JSplitPaneに設定した子コンポーネントの位置と余分なスペースの配分率を入れ替えます。
 image: https://drive.google.com/uc?export=view&id=1TMNOHO7KVS63zeFEW4xasYw5TX-ZNqTL9w
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2019/01/swap-position-of-child-components-in.html
+    lang: en
 comments: true
 ---
 ## 概要
