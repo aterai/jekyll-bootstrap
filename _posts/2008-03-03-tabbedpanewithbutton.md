@@ -73,6 +73,50 @@ public Insets getButtonPaddingTabAreaInsets(JButton b, Insets ti, Insets ai) {
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- `JTabbedPane`の左端ではなく、右端に`JButton`を配置するサンプル
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>import java.awt.*;
+import javax.swing.*;
+
+public class TabbedPaneWithButtonTest {
+  public Component makeUI() {
+    JTabbedPane tabs = new JTabbedPane();
+    tabs.setAlignmentX(Component.RIGHT_ALIGNMENT);
+    tabs.setAlignmentY(Component.TOP_ALIGNMENT);
+    tabs.addTab("Tab 1", new JLabel("1"));
+    tabs.addTab("Tab 2", new JLabel("2"));
+
+    JButton button = new JButton("https://ateraimemo.com/");
+    button.setAlignmentX(Component.RIGHT_ALIGNMENT);
+    button.setAlignmentY(Component.TOP_ALIGNMENT);
+
+    JPanel p = new JPanel();
+    p.setLayout(new OverlayLayout(p));
+    p.add(button);
+    p.add(tabs);
+    return p;
+  }
+  public static void main(String[] args) {
+    EventQueue.invokeLater(() -&gt; {
+      try {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+      } catch (Exception ex) {
+        throw new IllegalArgumentException(ex);
+      }
+      JFrame f = new JFrame();
+      f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+      f.getContentPane().add(new TabbedPaneWithButtonTest().makeUI());
+      f.setSize(320, 240);
+      f.setLocationRelativeTo(null);
+      f.setVisible(true);
+    });
+  }
+}
+</code></pre>
+
 ## 参考リンク
 - [famfamfam.com: Mini Icons](http://www.famfamfam.com/lab/icons/mini/)
     - アイコンを借用

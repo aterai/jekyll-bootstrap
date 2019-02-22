@@ -26,7 +26,7 @@ comments: true
     final DefaultMutableTreeNode node =
       (DefaultMutableTreeNode) e.getPath().getLastPathComponent();
     final DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
-    //final TreePath path = e.getPath();
+    // final TreePath path = e.getPath();
 
     if (!node.isLeaf()) return;
     final File parent = (File) node.getUserObject();
@@ -47,7 +47,7 @@ comments: true
           node.add(new DefaultMutableTreeNode(file));
         }
         model.nodeStructureChanged(node);
-        //tree.expandPath(path);
+        // tree.expandPath(path);
       }
     };
     worker.execute();
@@ -58,8 +58,7 @@ comments: true
 ## 解説
 このサンプルでは、[java - File Browser GUI - Stack Overflow](https://stackoverflow.com/questions/6182110/file-browser-gui)のディレクトリ表示部分を抜き出して、ルートパーティション(`Windows`の場合、`Desktop`フォルダ)をルートノードにして`JTree`で表示しています。
 
-- 注:
-    - クリックされたノードがディレクトリの場合、子ファイルの検索と`JTree`へのそれらの追加を`SwingWorker`を使用して別スレッドで実行するよう変更
+- クリックされたノードがディレクトリの場合、子ファイルの検索と`JTree`へのそれらの追加を`SwingWorker`を使用して別スレッドで実行するよう変更
 
 <!-- dummy comment line for breaking list -->
 

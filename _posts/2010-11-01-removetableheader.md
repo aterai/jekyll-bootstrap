@@ -35,17 +35,23 @@ check.addActionListener(new ActionListener() {
 ## 解説
 上記のサンプルでは、`JTable`を配置した`JScrollPane`の`JScrollPane#getColumnHeader().setVisible(boolean)`メソッドを使って、`JTableHeader`の表示、非表示を変更しています。
 
-- メモ
-    - `table.setTableHeader(null)`でヘッダを削除、`table.setTableHeader(new JTableHeader(table.getColumnModel()))`で復元可能
-    - 以下のように、サイズ`0`の`ColumnHeader`を設定して非表示にする方法もある
-        
-        <pre class="prettyprint"><code>scroll.setColumnHeader(new JViewport() {
-            @Override public Dimension getPreferredSize() {
-                return new Dimension();
-            }
-        });
+- `table.setTableHeader(null)`でヘッダを削除、`table.setTableHeader(new JTableHeader(table.getColumnModel()))`で復元する方法もある
+
+<!-- dummy comment line for breaking list -->
+
+- - - -
+- 以下のように、サイズ`0`の`ColumnHeader`を設定して非表示に見せかけることも可能
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>scroll.setColumnHeader(new JViewport() {
+  @Override public Dimension getPreferredSize() {
+    return new Dimension();
+  }
+});
 </code></pre>
-    - * 参考リンク [#reference]
+
+## 参考リンク
 - [JScrollPane#getColumnHeader() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JScrollPane.html#getColumnHeader--)
 
 <!-- dummy comment line for breaking list -->

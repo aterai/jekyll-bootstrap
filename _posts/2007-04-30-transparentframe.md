@@ -24,7 +24,7 @@ p1.setOpaque(false);
 
 JPanel p2 = new JPanel() {
   @Override protected void paintComponent(Graphics g) {
-    //super.paintComponent(g);
+    // super.paintComponent(g);
     g.setColor(new Color(100, 50, 50, 100));
     g.fillRect(0, 0, getWidth(), getHeight());
   }
@@ -33,7 +33,7 @@ JPanel p2 = new JPanel() {
 JPanel p3 = new JPanel() {
   @Override protected void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g;
-    //g2.setPaint(new Color(100, 120, 100, 100));
+    // g2.setPaint(new Color(100, 120, 100, 100));
     g2.setPaint(texture);
     g2.fillRect(0, 0, getWidth(), getHeight());
   }
@@ -43,19 +43,19 @@ protected JInternalFrame createFrame(JPanel panel) {
   MyInternalFrame frame = new MyInternalFrame();
   if (panel != null) {
     frame.setContentPane(panel);
-    //JButton button = new JButton("button");
-    //button.setOpaque(false);
+    // JButton button = new JButton("button");
+    // button.setOpaque(false);
     panel.add(new JLabel("label"));
     panel.add(new JButton("button"));
   }
   desktop.add(frame);
   frame.setOpaque(false);
   frame.setVisible(true);
-  //...
+  // ...
 </code></pre>
 
 ## 解説
-各フレームは、`JInternalFrame#setContentPane(Container)`メソッドを使用して、`ContentPane`を以下のような半透明パネルに変更しています。
+上記のサンプルでは、各`JInternalFrame`の`ContentPane`を`JInternalFrame#setContentPane(Container)`メソッドを使用して半透明パネルに変更しています。
 
 - `Frame#1` (`Transparent`)
     - `ContentPane`を`setOpaque(false)`して透明化

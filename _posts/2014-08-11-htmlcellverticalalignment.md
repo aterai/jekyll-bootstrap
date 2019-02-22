@@ -26,6 +26,12 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- `Java 9`で修正された？
+    - 例えば`BOTTOM`を選択して`0`行目から`6`行目までマウスドラッグで選択すると、`Java 8`では`1`から`2`行のセル表示内容が変化するが、`Java 9`では変化しない
+
+<!-- dummy comment line for breaking list -->
+
 ## 参考リンク
 - [java - Table cells with HTML strings inconsistently rendered as multiline - Stack Overflow](https://stackoverflow.com/questions/25043191/table-cells-with-html-strings-inconsistently-rendered-as-multiline)
 

@@ -47,11 +47,11 @@ import javax.swing.plaf.*;
 
 public class TopRightCornerLabelLayerUITest {
   public static JComponent makeUI() {
-    JTabbedPane tab = new JTabbedPane();
-    tab.addTab("New tab1", new JLabel("1"));
-    tab.addTab("New Tab2", new JLabel("2"));
+    JTabbedPane tabs = new JTabbedPane();
+    tabs.addTab("New tab1", new JLabel("1"));
+    tabs.addTab("New Tab2", new JLabel("2"));
     JPanel p = new JPanel(new BorderLayout());
-    p.add(new JLayer&lt;JComponent&gt;(tab, new TopRightCornerLabelLayerUI()));
+    p.add(new JLayer&lt;JComponent&gt;(tabs, new TopRightCornerLabelLayerUI()));
     return p;
   }
   private static void createAndShowUI() {
@@ -85,6 +85,8 @@ class TopRightCornerLabelLayerUI extends LayerUI&lt;JComponent&gt; {
 ## 参考リンク
 - [Swing - JTabbedPane with non-tabbed text](https://community.oracle.com/thread/1392495)
 - [JTabbedPaneの余白にJCheckBoxを配置](https://ateraimemo.com/Swing/TabbedPaneWithCheckBox.html)
+- [JTabbedPaneの余白にJButtonを配置](https://ateraimemo.com/Swing/TabbedPaneWithButton.html)
+    - `JLabel`ではなく、クリック可能な`JButton`を`JTabbedPane`に配置するサンプル
 
 <!-- dummy comment line for breaking list -->
 

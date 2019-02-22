@@ -54,58 +54,13 @@ button.addActionListener(e -&gt; {
 
 - - - -
 - `GridLayout`を設定した`JPanel`などの場合は、以下のように`Container#setComponentZOrder(...)`メソッドでコンポーネントの位置の入れ替えが可能
+    - サンプルコードは、[JPanelに追加したコンポーネントの順序を変更する](https://ateraimemo.com/Swing/ComponentZOrder.html)に移動
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>import java.awt.*;
-import java.awt.event.HierarchyEvent;
-import javax.swing.*;
-
-public class GridLayoutSwapTest {
-  public Component makeUI() {
-
-    JTable table = new JTable(6, 3);
-    // TEST:
-    table.addHierarchyListener(e -&gt; {
-      System.out.println(e.getChangeFlags());
-      if ((e.getChangeFlags() &amp; HierarchyEvent.HIERARCHY_CHANGED) != 0) {
-        System.out.println("JTable HIERARCHY_CHANGED " + e.getChangeFlags());
-      }
-    });
-
-    JPanel p = new JPanel(new GridLayout(1, 0));
-    p.setBorder(BorderFactory.createTitledBorder("GridLayout(1, 0)"));
-    p.add(new JScrollPane(table));
-    p.add(new JScrollPane(new JTree()));
-    // p.add(new JScrollPane(new JTextArea("JTextArea")));
-
-    JButton button = new JButton("swap");
-    button.setFocusable(false);
-    button.addActionListener(e -&gt; {
-      p.setComponentZOrder(p.getComponent(p.getComponentCount() - 1), 0);
-      p.revalidate();
-    });
-
-    JPanel panel = new JPanel(new BorderLayout());
-    panel.add(p);
-    panel.add(button, BorderLayout.SOUTH);
-    return panel;
-  }
-  public static void main(String... args) {
-    EventQueue.invokeLater(() -&gt; {
-      JFrame f = new JFrame();
-      f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-      f.getContentPane().add(new GridLayoutSwapTest().makeUI());
-      f.setSize(320, 240);
-      f.setLocationRelativeTo(null);
-      f.setVisible(true);
-    });
-  }
-}
-</code></pre>
-
 ## 参考リンク
 - [swing - java: Problem with JSplitpane - Stack Overflow](https://stackoverflow.com/questions/4871874/java-problem-with-jsplitpane)
+- [JPanelに追加したコンポーネントの順序を変更する](https://ateraimemo.com/Swing/ComponentZOrder.html)
 
 <!-- dummy comment line for breaking list -->
 

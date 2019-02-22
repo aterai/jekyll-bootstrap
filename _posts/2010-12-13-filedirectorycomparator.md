@@ -50,7 +50,7 @@ class FileGroupComparator extends DefaultFileComparator {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`に`Drag & Drop`で追加したファイルやディレクトリを以下の`3`種類の`Comparator`でソートが可能です。
+上記のサンプルでは、`JTable`にドラッグ＆ドロップで追加したファイルやディレクトリを以下の`3`種類の`Comparator`でソートが可能です。
 
 - `Default`
     - `File#getName()`で取得したファイル名`String`で比較

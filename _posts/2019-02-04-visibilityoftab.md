@@ -49,7 +49,7 @@ tabs.setSelectedIndex(tabs.getTabCount() - 1);
 </code></pre>
 
 ## 解説
-- 上
+- 上段
     - `JTabbedPane.SCROLL_TAB_LAYOUT`を設定した`JTabbedPane`
     - `JTabbedPane`を表示状態である親コンポーネントに配置していない状態で末尾のタブを選択状態に設定しているため、このサンプルでは`9`のタブのみが表示されている
         - `EventQueue.invokeLater(...)`などを使用してすでに表示された親コンポーネントに配置された後で`JTabbedPane#setSelectedIndex(...)`を使用すれば回避可能
@@ -57,10 +57,11 @@ tabs.setSelectedIndex(tabs.getTabCount() - 1);
     - タブを追加した後で、`JTabbedPane#setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT)`に変更すると`0`から`4`のタブが表示状態になる
         - ただしその後に`tabs.setSelectedIndex(tabs.getTabCount() - 1)`で末尾のタブを選択すると`9`のタブのみが表示状態になる
     - `9`のタブのみが表示されている状態でその末尾の`9`のタブを削除すると、すべてのタブが非表示状態になる
-- 中
+- 中段
     - `JTabbedPane#removeTabAt(...)`をオーバーライドし、タブの削除前に一旦先頭タブを選択、タブ削除、末尾タブを選択するとこで上記のようなすべてのタブが非表示状態になることを回避
         - 非表示状態のタブを`TabbedPane.setSelectedIndex(...)`で選択しても表示状態にならない？
-- 下
+    - `WindowsLookAndFeel`で末尾タブが選択されると上記のスクリーンショットのようにタブ右端がスクロールボタンに掛かって途切れたような表示になる場合がある(`MetalLookAndFeel`などでは発生しない)
+- 下段
     - `JTabbedPane#removeTabAt(...)`をオーバーライドし、タブの削除前に一旦先頭タブまでスクロール、タブ削除、末尾タブまでスクロールするとこで上記のようなすべてのタブが非表示状態になることを回避
     - スクロールしているだけなので、タブの選択状態は変化しない
     - スクロールは、コンポーネント名が`TabbedPane.scrollableViewport(...)`の`JViewport`を取得して`JComponent#scrollRectToVisible(...)`メソッドを使用
@@ -69,6 +70,7 @@ tabs.setSelectedIndex(tabs.getTabCount() - 1);
 
 ## 参考リンク
 - [JTabbedPaneのTabAreaをスクロール](https://ateraimemo.com/Swing/ScrollTabToVisible.html)
+- [JComponentの表示状態](https://ateraimemo.com/Swing/ShowingDisplayableVisible.html)
 - [java - Scroll remaining tabs to visible after tab removal from a SCROLL_TAB_LAYOUT JTabbedPane - Stack Overflow](https://stackoverflow.com/questions/54461567/scroll-remaining-tabs-to-visible-after-tab-removal-from-a-scroll-tab-layout-jtab)
 
 <!-- dummy comment line for breaking list -->
