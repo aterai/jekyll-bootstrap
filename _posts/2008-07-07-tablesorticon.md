@@ -18,9 +18,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Icon emptyIcon = new Icon() {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {}
+
   @Override public int getIconWidth(){
     return 0;
   }
+
   @Override public int getIconHeight() {
     return 0;
   }
@@ -35,7 +37,7 @@ UIManager.put("Table.descendingSortIcon", new IconUIResource(emptyIcon));
 - `Default`
     - `UIManager.getLookAndFeelDefaults().getIcon("Table.ascendingSortIcon")`などで取得した`LookAndFeel`でのデフォルトソートアイコンを表示
 - `Empty`
-    - サイズ`0`の`Icon`でソートアイコンを非表示
+    - サイズ`0`の`Icon`でソートアイコンを非表示化
 - `Cumstom`
     - 透過`png`画像から生成したソートアイコンを表示
 

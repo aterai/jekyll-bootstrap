@@ -61,7 +61,9 @@ p.add(new JScrollPane(tree));
     - 参考: [JOptionPaneのデフォルトフォーカス](https://ateraimemo.com/Swing/OptionPaneDefaultFocus.html)
 - `JTree`のノード検索
     - 参考: [JTreeのノードを検索する](https://ateraimemo.com/Swing/SearchBox.html)
-- <kbd>Ctrl+F</kbd>で検索用ダイアログの表示非表示切り替え、<kbd>Esc</kbd>で検索用ダイアログを閉じる、<kbd>Enter</kbd>で`JTree`のノードを検索
+    - <kbd>Ctrl+F</kbd>: 検索用ダイアログの表示非表示切り替え
+    - <kbd>Esc</kbd>: 検索用ダイアログを閉じる
+    - <kbd>Enter</kbd>: `JTree`のノードを検索
 
 <!-- dummy comment line for breaking list -->
 

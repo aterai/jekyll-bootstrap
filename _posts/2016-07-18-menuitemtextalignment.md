@@ -55,6 +55,8 @@ item3.add(new JMenuItem("JMenuItem(disabled) with JMenuItem", HSTRUT) {
 ## 参考リンク
 - [java - JLabel with icon in JPopupMenu doesn't follow other JMenuItem alignment - Stack Overflow](https://stackoverflow.com/questions/38360595/jlabel-with-icon-in-jpopupmenu-doesnt-follow-other-jmenuitem-alignment)
 - [JDK-8152981 Double icons with JMenuItem setHorizontalTextPosition on Win 10 - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8152981)
+- [CheckBoxMenuItemのチェックアイコンの位置を調整する](https://ateraimemo.com/Swing/AfterCheckIconGap.html)
+    - `Java 8`？では、`CheckBoxMenuItem.afterCheckIconGap`や`CheckBoxMenuItem.minimumTextOffset`などが追加されているため、揃えやすくなった
 
 <!-- dummy comment line for breaking list -->
 

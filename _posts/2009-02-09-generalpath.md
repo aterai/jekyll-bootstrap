@@ -95,10 +95,11 @@ comments: true
     - [ついにベールを脱いだJavaFX：第9回 アニメーションを用いてより魅力的に［応用編］｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/serial/01/javafx/0009?page=2) を参考
 - 下段、中
     - `Icon#paintIcon(...)`メソッドをオーバーライドして`Path2D.Double`で星型図形を描画
-    - 外側の円の半径は、`40px`
+    - 外周の半径: `40px`
 - 下段、右
     - `Icon#paintIcon(...)`メソッドをオーバーライドして`Path2D.Double`で星型図形を描画
-    - 外側の円の半径は、`40px`、内側の円の半径は、`20px`
+    - 外周の半径: `40px`
+    - 内周の半径: `20px`
 
 <!-- dummy comment line for breaking list -->
 

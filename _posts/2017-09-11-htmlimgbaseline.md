@@ -78,9 +78,8 @@ comments: true
           //...
 </code></pre>
 - 下
-    - `ImageView#getAlignment(...)`をオーバーライドして、`vertical-align`を直接指定する`HTMLFactory`を作成し、`HTMLEditorKit#getViewFactory()`で使用するよう設定
+    - `ImageView#getAlignment(...)`メソッドをオーバーライドして、`vertical-align`を直接指定する`HTMLFactory`を作成し、`HTMLEditorKit#getViewFactory()`メソッドで使用するよう設定
     - 上記のサンプルでは、画像サイズをデフォルトフォントのサイズと同じに設定し、ベースラインも同じ値を使用するよう固定している
-    - デフォルトの`HTMLEditorKit`のフォントとは異なるフォントが使用される？
 
 <!-- dummy comment line for breaking list -->
 

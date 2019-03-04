@@ -22,13 +22,13 @@ comments: true
 <pre class="prettyprint"><code>comboBox.setEditable(true);
 comboBox.setInputVerifier(new LengthInputVerifier());
 comboBox.setEditor(new BasicComboBoxEditor() {
-  private Component editorComponent;
+  private Component editorVerifier;
   @Override public Component getEditorComponent() {
-    if (editorComponent == null) {
+    if (editorVerifier == null) {
       JTextComponent tc = (JTextComponent) super.getEditorComponent();
-      editorComponent = new JLayer&lt;JTextComponent&gt;(tc, new ValidationLayerUI());
+      editorVerifier = new JLayer&lt;JTextComponent&gt;(tc, new ValidationLayerUI());
     }
-    return editorComponent;
+    return editorVerifier;
   }
 });
 </code></pre>

@@ -16,19 +16,20 @@ comments: true
 {% download https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTJDUnsHFI/AAAAAAAAATw/gkcmzcekHus/s800/ClearGroupSelection.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final ButtonGroup bg = new ButtonGroup();
-List&lt;? extends AbstractButton&gt; l = new ArrayList&lt;&gt;();
-l.add(new JRadioButton("RadioButton1"));
-l.add(new JRadioButton("RadioButton2"));
-l.add(new JToggleButton(icon));
+<pre class="prettyprint"><code>List&lt;? extends AbstractButton&gt; l = Arrays.asList(
+  new JRadioButton("RadioButton1"),
+  new JRadioButton("RadioButton2"),
+  new JToggleButton(icon));
+ButtonGroup bg = new ButtonGroup();
 for (AbstractButton b: l) {
-  bg.add(b); add(b);
+  bg.add(b);
+  add(b);
 }
-add(new JButton(new AbstractAction("clearSelection") {
-  @Override public void actionPerformed(ActionEvent e) {
-    bg.clearSelection();
-  }
-}));
+
+JButton button = new JButton("clearSelection");
+button.addActionListener(e -&gt; {
+  bg.clearSelection();
+});
 </code></pre>
 
 ## 解説

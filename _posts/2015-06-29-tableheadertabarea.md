@@ -127,7 +127,7 @@ comments: true
 - `JScrollPane`にサイズ`0`の`JViewport`を設定し、上記の`JTable`を追加
     - 直接`JTableHeader`を追加すると、うまくリサイズできない？
 - `JTableHeader`に`MouseListener`を追加し、`TableColumn`(タブとして代用)がクリックされると、そのタイトル文字列を引数にして`CardLayout#show(...)`を実行してコンテナの切り替えを行う
-- `JTableHeader`のドラッグ＆ドロップによる入れ替えや、ヘッダ(タブ)幅のリサイズが利用可能
+- `JTableHeader`デフォルト機能であるドラッグ＆ドロップによる入れ替えや、ヘッダ(タブ)幅のリサイズが利用可能
 
 <!-- dummy comment line for breaking list -->
 
