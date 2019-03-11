@@ -36,12 +36,11 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- 注:
-    - `setCaretPosition: 0`: `JTextField#setCaretPosition(0);`は`JTextField`にフォーカスが無い場合無効？
-        - `JScrollBar`が同期しない場合がある
-    - `setScrollOffset: 0`: `JScrollBar`のノブがマウスドラッグに反応しなくなる場合がある？
-    - ノブの表示: 文字列をすべて削除するなどしても、ノブが非表示にならない
-        - `1px`の余白？、以下のようなリスナーで回避するテストを追加
+- `setCaretPosition: 0`: `JTextField#setCaretPosition(0);`は`JTextField`にフォーカスが無い場合無効？
+    - `JScrollBar`が同期しない場合がある
+- `setScrollOffset: 0`: `JScrollBar`のノブがマウスドラッグに反応しなくなる場合がある？
+- ノブの表示: 文字列をすべて削除するなどしても、ノブが非表示にならない
+    - `1px`の余白？、以下のようなリスナーで回避するテストを追加
 
 <!-- dummy comment line for breaking list -->
 

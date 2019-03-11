@@ -19,17 +19,17 @@ comments: true
 {% download https://lh4.googleusercontent.com/-ujoDf8eD4vE/TqLcC0f2CHI/AAAAAAAABD4/LHaXXW6HW1k/s800/TranslucentFrameRepaint.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private final SimpleDateFormat df = new SimpleDateFormat("HH:mm:ss");
-private final JLabel label = new JLabel(df.format(new Date()));
-private final Timer timer = new Timer(1000, new ActionListener() {
-  @Override public void actionPerformed(ActionEvent e) {
-    label.setText(df.format(new Date()));
-    Container parent = SwingUtilities.getUnwrappedParent(label);
-    if (parent != null &amp;&amp; parent.isOpaque()) {
-      repaintWindowAncestor(label);
-    }
+<pre class="prettyprint"><code>DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+JLabel label = new JLabel(LocalTime.now().format(formatter), SwingConstants.CENTER);
+Timer timer = new Timer(100, null);
+timer.addActionListener(e -&gt; {
+  label.setText(LocalTime.now().format(formatter));
+  Container parent = SwingUtilities.getUnwrappedParent(label);
+  if (Objects.nonNull(parent) &amp;&amp; parent.isOpaque()) {
+    repaintWindowAncestor(label);
   }
 });
+// ...
 private void repaintWindowAncestor(JComponent c) {
   JRootPane root = c.getRootPane();
   if (root == null) {

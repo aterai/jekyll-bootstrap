@@ -17,10 +17,10 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>fixedTable = new JTable(model);
-table      = new JTable(model);
+table = new JTable(model);
 fixedTable.setSelectionModel(table.getSelectionModel());
 fixedTable.setUpdateSelectionOnSort(false);
-//table.setUpdateSelectionOnSort(true);
+// table.setUpdateSelectionOnSort(true);
 
 for (int i = model.getColumnCount() - 1; i &gt;= 0; i--) {
   if (i &lt; 2) {
@@ -39,26 +39,26 @@ table.setRowSorter(sorter);
 table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 table.putClientProperty("terminateEditOnFocusLost", Boolean.TRUE);
 
-final JScrollPane scroll = new JScrollPane(table);
+JScrollPane scroll = new JScrollPane(table);
 JViewport viewport = new JViewport();
 viewport.setView(fixedTable);
 viewport.setPreferredSize(fixedTable.getPreferredSize());
 scroll.setRowHeader(viewport);
-//scroll.setRowHeaderView(fixedTable);
-//fixedTable.setPreferredScrollableViewportSize(fixedTable.getPreferredSize());
+// scroll.setRowHeaderView(fixedTable);
+// fixedTable.setPreferredScrollableViewportSize(fixedTable.getPreferredSize());
 scroll.setCorner(ScrollPaneConstants.UPPER_LEFT_CORNER, fixedTable.getTableHeader());
 scroll.getViewport().setBackground(Color.WHITE);
 viewport.setBackground(Color.WHITE);
-//&lt;blockquote cite="https://tips4java.wordpress.com/2008/11/05/fixed-column-table/"&gt;
-//@auther Rob Camick
-//@title Fixed Column Table ≪ Java Tips Weblog
+// &lt;blockquote cite="https://tips4java.wordpress.com/2008/11/05/fixed-column-table/"&gt;
+// @auther Rob Camick
+// @title Fixed Column Table ≪ Java Tips Weblog
 scroll.getRowHeader().addChangeListener(new ChangeListener() {
   @Override public void stateChanged(ChangeEvent e) {
     JViewport viewport = (JViewport) e.getSource();
     scroll.getVerticalScrollBar().setValue(viewport.getViewPosition().y);
   }
 });
-//&lt;/blockquote&gt;
+// &lt;/blockquote&gt;
 add(scroll);
 </code></pre>
 
@@ -68,12 +68,12 @@ add(scroll);
 
 <pre class="prettyprint"><code>add(new JButton(new AbstractAction("add") {
   @Override public void actionPerformed(ActionEvent e) {
-    //List&lt;? extends RowSorter.SortKey&gt; keys = sorter.getSortKeys();
+    // List&lt;? extends RowSorter.SortKey&gt; keys = sorter.getSortKeys();
     sorter.setSortKeys(null);
     for (int i = 0; i &lt; 100; i++) {
       model.addRow(new Object[] {i, i + 1, "A" + i, "B" + i});
     }
-    //sorter.setSortKeys(keys);
+    // sorter.setSortKeys(keys);
   }
 }), BorderLayout.SOUTH);
 </code></pre>

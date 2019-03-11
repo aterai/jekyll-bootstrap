@@ -34,11 +34,11 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`WindowListener#windowIconified(...)`で`JFrame`が最小化(アイコン化)された場合、`Window#dispose()`でネイティブリソースを開放し、タスクバーボタンを非表示にしています。
+上記のサンプルでは、`WindowListener#windowIconified(...)`で`JFrame`が最小化(アイコン化)された場合、`Window#dispose()`でネイティブリソースを開放してタスクバーボタンを非表示にしています。
 
 - タスクバーボタン: 上記の`Windows 7`でのスクリーンショットでは、左下にあるサイズ`40x40`のアイコンが表示されているボタン
 - `frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);`を設定している場合、`Java`仮想マシン(`JVM`)内で最後の表示可能なウィンドウを`dispose()`すると通常は`JVM`も終了するが、このサンプルでは`SystemTray`に`TrayIcon`が残っているので`JVM`は終了しない
-- この後、`tray.remove(icon);`で`TrayIcon`を`SystemTray`から削除すると、`JVM`は終了する
+- この後、`tray.remove(icon);`で`TrayIcon`を`SystemTray`から削除すると`JVM`は終了する
 
 <!-- dummy comment line for breaking list -->
 

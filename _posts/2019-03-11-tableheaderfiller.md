@@ -1,0 +1,88 @@
+---
+layout: post
+category: swing
+folder: TableHeaderFiller
+title: JTableHeaderの余白にヘッダを描画する
+tags: [JTableHeader, JTable, JScrollPane, JLayer]
+author: aterai
+pubdate: 2019-03-11T15:07:56+09:00
+description: JTableHeaderの列幅を自動調整しない場合に発生する余白にダミーのヘッダを描画します。
+image: https://drive.google.com/uc?id=1S2FqsLneoDTvkP2Xx-RLfsgLXGkFcduAaw
+comments: true
+---
+## 概要
+`JTableHeader`の列幅を自動調整しない場合に発生する余白にダミーのヘッダを描画します。
+
+{% download https://drive.google.com/uc?id=1S2FqsLneoDTvkP2Xx-RLfsgLXGkFcduAaw %}
+
+## サンプルコード
+<pre class="prettyprint"><code>class TableHeaderFillerLayerUI extends LayerUI&lt;JScrollPane&gt; {
+  private final JTable tempTable = new JTable(
+      new DefaultTableModel(new Object[] {""}, 0));
+  private final JTableHeader filler = tempTable.getTableHeader();
+  private final TableColumn fillerColumn = tempTable.getColumnModel().getColumn(0);
+
+  @Override public void paint(Graphics g, JComponent c) {
+    super.paint(g, c);
+    if (c instanceof JLayer) {
+      JScrollPane scroll = (JScrollPane) ((JLayer&lt;?&gt;) c).getView();
+      JTable table = (JTable) scroll.getViewport().getView();
+      JTableHeader header = table.getTableHeader();
+
+      int width = header.getWidth();
+      TableColumnModel cm = header.getColumnModel();
+      for (int i = 0; i &lt; cm.getColumnCount(); i++) {
+        width -= cm.getColumn(i).getWidth();
+      }
+
+      Point pt = SwingUtilities.convertPoint(header, 0, 0, c);
+      filler.setLocation(pt.x + header.getWidth() - width, pt.y);
+      filler.setSize(width, header.getHeight());
+      fillerColumn.setWidth(width);
+
+      SwingUtilities.paintComponent(g, filler, tempTable, filler.getBounds());
+    }
+  }
+
+  @Override public void installUI(JComponent c) {
+    super.installUI(c);
+    if (c instanceof JLayer) {
+      ((JLayer&lt;?&gt;) c).setLayerEventMask(AWTEvent.COMPONENT_EVENT_MASK);
+    }
+  }
+
+  @Override public void uninstallUI(JComponent c) {
+    if (c instanceof JLayer) {
+      ((JLayer&lt;?&gt;) c).setLayerEventMask(0);
+    }
+    super.uninstallUI(c);
+  }
+
+  @Override protected void processComponentEvent(
+      ComponentEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
+    Component c = e.getComponent();
+    if (c instanceof JTableHeader) {
+      l.repaint(((JTableHeader) c).getBounds());
+    }
+  }
+}
+</code></pre>
+
+## 解説
+- 上: デフォルト
+    - `AUTO_RESIZE_OFF`を設定し、列幅の自動調整を無効にした`JTable`
+- 下: TableHeaderFiller
+    - `AUTO_RESIZE_OFF`を設定し、列幅の自動調整を無効にした`JTable`で`JTableHeader`に余白が発生する場合、そこにダミーのヘッダ列を描画
+    - ダミーヘッダの描画には、`JLayer`を使用
+    - `JLayer`は`JTable`や`JTableHeader`ではなく、親の`JScrollPane`に設定
+    - `JLayer`でダミーヘッダへの`MouseEvent`などは無効化、`JTableHeader`がリサイズされて`ComponentEvent`が発生した場合は`LayerUI#processComponentEvent(...)`をオーバーライドしてダミーヘッダの幅を更新
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [the fun of Swing JTable column resizing - blog@l2fprod.com(web.archive.org)](https://web.archive.org/web/20120126055437/http://l2fprod.com/blog/2008/08/30/the-fun-of-swing-jtable-column-resizing/)
+    - `JLayer`は使用せず、直接`JTableHeader`にリスナーなどを変更したダミーヘッダを追加する場合のサンプル
+
+<!-- dummy comment line for breaking list -->
+
+## コメント
