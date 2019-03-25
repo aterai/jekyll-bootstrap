@@ -62,7 +62,7 @@ JScrollPane scrollPane = new JScrollPane(
     - `JScrollBar`を常に非表示にした、`JScrollPane`に`JTextPane`を追加
 - `JTextPane`の折り返しを無効化
     - [JEditorPaneで長い行を折り返さない](https://ateraimemo.com/Swing/NoWrapTextPane.html)の`ParagraphView`を使用して、折り返しを無効化
-- 文字列の最後にある`Caret`が表示されないのを修正
+- 文字列の最後に移動した`Caret`が非表示にならないよう修正
     - `JTextPane#scrollRectToVisible(Rectangle)`をオーバーライドして、余白までスクロールするように設定
     - メモ: [No Wrap Text Pane ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/01/25/no-wrap-text-pane/)のように、`CaretListener`を使用する方法もある
 - <kbd>Enter</kbd>キーの無効化

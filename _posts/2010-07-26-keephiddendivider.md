@@ -38,7 +38,7 @@ smax.setModel(selectMaxModel);
 ## 解説
 - `Min:DividerLocation, Max:DividerLocation`
     - `JSplitPane#setDividerLocation(...)`メソッドで`Divider`の位置を設定
-    - `JSplitPane`のリサイズで収納状態が解除される
+    - `JSplitPane`のリサイズで収納状態が解除されてしまう
         
         <pre class="prettyprint"><code>panel.add(new JButton(new AbstractAction("Min:DividerLocation") {
           @Override public void actionPerformed(ActionEvent e) {
@@ -48,7 +48,7 @@ smax.setModel(selectMaxModel);
 </code></pre>
 - `Min:Action, Max:Action`
     - `JSplitPane`の`ActionMap`から`selectMax`アクションなどを取得し実行
-    - `JSplitPane`のリサイズで収納状態が解除される
+    - `JSplitPane`のリサイズで収納状態が解除されてしまう
         
         <pre class="prettyprint"><code>panel.add(new JButton(new AbstractAction("Max:Action") {
           @Override public void actionPerformed(final ActionEvent e) {
@@ -70,21 +70,24 @@ smax.setModel(selectMaxModel);
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- メモ: [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](https://bugs.openjdk.java.net/browse/JDK-5006095)のサンプルコード
-    - 収納状態を維持するために`BasicSplitPaneUI#setKeepHidden(true)`メソッドをリフレクションを使って実行する方法もある
-        
-        <pre class="prettyprint"><code>try {
-          splitPane.setDividerLocation(0);
-          Method setKeepHidden = BasicSplitPaneUI.class.getDeclaredMethod(
-              "setKeepHidden", new Class[] { Boolean.class });
-          setKeepHidden.setAccessible(true);
-          setKeepHidden.invoke(splitPane.getUI(), new Object[] { Boolean.TRUE });
-        } catch (Exception e) {
-          e.printStackTrace();
-        }
+- 収納状態を維持するために`BasicSplitPaneUI#setKeepHidden(true)`メソッドをリフレクションを使って実行する方法もある
+    - [JDK-5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5 - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-5006095)のサンプルコード
+
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>try {
+  splitPane.setDividerLocation(0);
+  Method setKeepHidden = BasicSplitPaneUI.class.getDeclaredMethod(
+      "setKeepHidden", new Class[] { Boolean.class });
+  setKeepHidden.setAccessible(true);
+  setKeepHidden.invoke(splitPane.getUI(), new Object[] { Boolean.TRUE });
+} catch (Exception e) {
+  e.printStackTrace();
+}
 </code></pre>
-    - * 参考リンク [#reference]
-- [Bug ID: 5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5](https://bugs.openjdk.java.net/browse/JDK-5006095)
+
+## 参考リンク
+- [JDK-5006095 Need a way to programmatically stick JSplitPane divider under j2sdk 1.5 - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-5006095)
 - [JSplitPaneのディバイダを展開、収納する](https://ateraimemo.com/Swing/OneTouchExpandable.html)
 
 <!-- dummy comment line for breaking list -->

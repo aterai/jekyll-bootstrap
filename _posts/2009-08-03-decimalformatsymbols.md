@@ -37,10 +37,15 @@ comments: true
 </code></pre>
 
 ## 解説
-1. デフォルト
-1. `JSpinner`から`JFormattedTextField`を取得し、この無効の場合の文字色を無効場合の背景色と同じにして非表示化
-1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列を半角スペース(`U+0020`)に変更
-1. `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN`メソッドを使用して、値が`NaN`の場合、表示する文字列を`----`に変更
+- デフォルト
+- 非表示
+    - `JSpinner`から`JFormattedTextField`を取得し、この無効の場合の文字色を無効場合の背景色と同じにして非表示化
+- 半角スペース
+    - `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN(...)`メソッドを使用して値が`NaN`の場合は表示する文字列を半角スペース(`U+0020`)に変更
+- `----`
+    - `JSpinner`から`JFormattedTextField`を取得し、`DecimalFormatSymbols#setNaN(...)`メソッドを使用して値が`NaN`の場合は表示する文字列を`----`に変更
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [DecimalFormatSymbols (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/text/DecimalFormatSymbols.html)

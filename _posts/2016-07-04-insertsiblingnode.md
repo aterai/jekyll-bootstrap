@@ -26,7 +26,7 @@ comments: true
     int index = model.getIndexOfChild(parent, self);
     parent.insert(child, index);
     model.reload(parent);
-    //or: model.insertNodeInto(child, parent, index);
+    // or: model.insertNodeInto(child, parent, index);
   }
 };
 Action addBelowAction = new AbstractAction("insert following sibling node") {
@@ -39,7 +39,7 @@ Action addBelowAction = new AbstractAction("insert following sibling node") {
     int index = model.getIndexOfChild(parent, self);
     parent.insert(child, index + 1);
     model.reload(parent);
-    //or: model.insertNodeInto(child, parent, index + 1);
+    // or: model.insertNodeInto(child, parent, index + 1);
   }
 };
 </code></pre>
