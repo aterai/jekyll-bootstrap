@@ -128,7 +128,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`WindowsScrollBarUI#layoutVScrollbar(...)`をオーバーライドして、垂直スクロールバーの増加、減少ボタンが共に下側に並んで配置されるように`LayoutManager`を変更しています。
+上記のサンプルでは、`WindowsScrollBarUI#layoutVScrollbar(...)`をオーバーライドして、垂直スクロールバーの増加ボタンと減少ボタンが共に下側に並んで配置されるように`LayoutManager`を変更しています。
 
 ## 参考リンク
 - [JScrollBarをJScrollPaneの左と上に配置](https://ateraimemo.com/Swing/LeftScrollBar.html)

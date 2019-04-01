@@ -34,7 +34,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFrame`を上下に並べて、それぞれに`ComponentListener`を実装したリスナーを追加しています。片方のフレームが移動された時、残りのフレームの位置を指定する前に、一旦このリスナーを削除してやることで、処理がループしないようになっています。
+上記のサンプルでは、`JFrame`を上下に並べてそれぞれに`ComponentListener`を実装したリスナーを追加しています。片方のフレームが移動された時、残りのフレームの位置を指定する前に一旦このリスナーを削除してやることで処理ループの発生を防止しています。
 
 ## 参考リンク
 - [Swing (Archive) - how to dock two jdialogs?](https://community.oracle.com/thread/1479997)

@@ -51,7 +51,7 @@ tree.addTreeSelectionListener(e -&gt; {
     - ノードを選択可能で折り畳みを不可に設定: [JTreeのノードを折り畳み不可に設定する](https://ateraimemo.com/Swing/TreeNodeCollapseVeto.html)
     - 行全体を選択背景色で描画: [JTreeを行クリックで選択し、行全体を選択状態の背景色で描画](https://ateraimemo.com/Swing/TreeRowSelection.html)
 - ノード選択を`TreeSelectionListener`で取得し対応するタイトルのパネルを`CardLayout`で切り替え
-    - [JTree#addTreeSelectionListener(...)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#addTreeSelectionListener-javax.swing.event.TreeSelectionListener-)メソッドを使用してノードの選択を取得
+    - [JTree#addTreeSelectionListener(...)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#addTreeSelectionListener-javax.swing.event.TreeSelectionListener-)メソッドを使用してノード選択イベントを取得
     - ノードタイトルをキーに`CardLayout`で右パネルの切り替えを実行
 
 <!-- dummy comment line for breaking list -->

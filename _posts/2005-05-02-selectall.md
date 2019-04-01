@@ -24,7 +24,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTextField`(上)にフォーカスが移動したとき、`JTextComponent#selectAll()`メソッドを使って内部のテキストがすべて選択状態になるように`FocusListener`を設定しています。
+- `focusGained: selectAll`
+    - `JTextField`にフォーカスが移動したとき、`JTextComponent#selectAll()`メソッドを使って内部のテキストがすべて選択状態になるように`FocusListener`を設定
+- `default`
+    - デフォルトの`JTextField`
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JTextComponent#selectAll() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#selectAll--)

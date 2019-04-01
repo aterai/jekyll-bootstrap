@@ -42,9 +42,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DocumentFilter`を使って、`JTextArea`の`1`行目と`2`行目で追加、削除などの編集ができないように設定しています。
+上記のサンプルでは、`DocumentFilter`を使って`JTextArea`の`1`行目と`2`行目で追加、削除などの編集が不可になるよう設定しています。
 
-<pre class="prettyprint"><code>((AbstractDocument) textArea.getDocument()).setDocumentFilter(new NonEditableLineDocumentFilter());
+<pre class="prettyprint"><code>((AbstractDocument) textArea.getDocument()).setDocumentFilter(
+    new NonEditableLineDocumentFilter());
 </code></pre>
 
 - - - -

@@ -31,9 +31,7 @@ comments: true
     return description;
   }
 }
-private final JComboBox&lt;? extends Enum&gt; algorithmsChoices = new JComboBox&lt;&gt;(SortAlgorithms.values());
-//private final JComboBox&lt;Enum&gt; algorithmsChoices = new JComboBox&lt;&gt;(SortAlgorithms.values());
-//private final JComboBox&lt;SortAlgorithms&gt; algorithmsChoices = new JComboBox&lt;&gt;(SortAlgorithms.values());
+JComboBox&lt;SortAlgorithms&gt; algorithmsChoices = new JComboBox&lt;&gt;(SortAlgorithms.values());
 </code></pre>
 
 ## 解説
