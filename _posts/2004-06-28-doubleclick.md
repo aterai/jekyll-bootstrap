@@ -18,9 +18,9 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>table.setAutoCreateRowSorter(true);
 table.addMouseListener(new MouseAdapter() {
-  @Override public void mouseClicked(MouseEvent me) {
-    if (me.getClickCount() == 2) {
-      Point pt = me.getPoint();
+  @Override public void mouseClicked(MouseEvent e) {
+    if (e.getClickCount() == 2) {
+      Point pt = e.getPoint();
       int idx = table.rowAtPoint(pt);
       if (idx &gt;= 0) {
         int row = table.convertRowIndexToModel(idx);
@@ -35,7 +35,11 @@ table.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`に`MouseListener`を設定し、`MouseEvent#getClickCount()`メソッドでマウスクリック数を取得してセルがダブルクリックされたかを判断しています。各セルはクリックで編集状態にならないように、すべて編集不可にしています。
+上記のサンプルでは、`JTable`に`MouseListener`を設定して`MouseEvent#getClickCount()`メソッドでマウスクリック数を取得し、これが`2`になる場合はセルがダブルクリックされたと判断しています。
+
+- `JTable`のデフォルトセルはダブルクリックで編集開始になるため、すべてのセルを編集不可に設定
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [MouseEvent#getClickCount() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/MouseEvent.html#getClickCount--)

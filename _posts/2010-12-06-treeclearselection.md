@@ -22,12 +22,25 @@ comments: true
     if (tree.getRowForLocation(e.getX(), e.getY()) &lt; 0) {
       tree.clearSelection();
     }
+    // or:
+    // if (tree.getPathForLocation(e.getX(), e.getY()) == null) {
+    //   tree.clearSelection();
+    // }
   }
 });
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`JTree#getRowForLocation(...)`メソッドを使用して、`JTree`のノード以外の場所がクリックされたかどうかを判断しています。ノードの選択解除自体は、`JTree#clearSelection()`を使用しています。
+
+- [JTree#getRowForLocation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getRowForLocation-int-int-)
+    - 指定された位置に対応する行を返す
+    - 指定された位置が表示セルの境界外にある場合は`-1`
+- [JTree#getPathForLocation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getPathForLocation-int-int-)
+    - 指定された位置にあるノードの`TreePath`を返す
+    - 指定された位置が表示セルの境界外にある場合は`null`を返す
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JTree (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html)のサンプルコード

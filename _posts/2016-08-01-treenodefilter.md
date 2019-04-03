@@ -29,14 +29,14 @@ comments: true
   }
 });
 fireDocumentChangeEvent();
-//...
+// ...
 private void fireDocumentChangeEvent() {
   String q = field.getText();
   TreePath rtp = tree.getPathForRow(0);
   if (q.isEmpty()) {
     resetAll(tree, rtp, true);
     ((DefaultTreeModel) tree.getModel()).reload();
-    //visitAll(tree, rtp, true);
+    // visitAll(tree, rtp, true);
   } else {
     visitAll(tree, rtp, false);
     searchTree(tree, rtp, q);

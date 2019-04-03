@@ -16,13 +16,14 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTPsQMGUsI/AAAAAAAAAeY/B8MAwtKhshY/s800/MediaTracker.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>private Dimension getImageDimension(Image img) {
-  int id = 0; // Get the images for the background (id == 0)
+<pre class="prettyprint"><code>private Dimension getImageDimension(Image img, int id) {
   MediaTracker tracker = new MediaTracker((Container) this);
   tracker.addImage(img, id);
   try {
     tracker.waitForID(id);
-  } catch (InterruptedException e) {}
+  } catch (InterruptedException e) {
+    ex.printStackTrace();
+  }
   return new Dimension(img.getWidth(this), img.getHeight(this));
 }
 </code></pre>

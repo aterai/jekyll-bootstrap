@@ -21,7 +21,7 @@ comments: true
 
 ## 解説
 - `OptionPane.isYesLast: false(default)`
-    - `Windows`環境でのデフォルトで、`Yes`ボタン(`YES_OPTION`, `OK_OPTION`)が各オプションボタンの中で先頭(左端)に配置される
+    - `WindowsLookAndFeel`でのデフォルトで、`Yes`ボタン(`YES_OPTION`, `OK_OPTION`)が各オプションボタンの中で先頭(左端)に配置される
     - `JOptionPane#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`が設定されている場合、先頭は右端になる
 - `OptionPane.isYesLast: true`
     - `Yes`ボタンが各オプションボタンの中で末尾(右端)に配置される

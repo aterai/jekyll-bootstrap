@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>TreePath path = new TreePath(s1.getPath());
-//Wastefulness: icon.setImageObserver((ImageObserver) tree);
+// Wastefulness: icon.setImageObserver((ImageObserver) tree);
 icon.setImageObserver(new ImageObserver() {
   @Override public boolean imageUpdate(Image img, int infoflags, int x, int y, int w, int h) {
     if (!tree.isShowing()) {

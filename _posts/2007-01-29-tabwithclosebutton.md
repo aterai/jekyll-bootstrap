@@ -47,9 +47,9 @@ comments: true
 </code></pre>
 
 ## 解説
-`JDK 6`から追加されたタブにコンポーネントを配置する機能を使って、`JButton`をタブに追加しています。
+`JDK 6`から追加されたタブ内にコンポーネントを配置する機能を使用して、`JButton`をタブに追加しています。
 
-[以前のサンプル](https://ateraimemo.com/Swing/TabWithCloseIcon.html)に比べると、実装も簡単でコードも短くなっています。
+[以前のサンプル](https://ateraimemo.com/Swing/TabWithCloseIcon.html)に比べると実装も簡単でコードも短くなっています。
 
 ## 参考リンク
 - [More Enhancements in Java SE 6](http://www.oracle.com/technetwork/articles/javase/index-135776.html)

@@ -38,7 +38,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFileChooser`の`Save`ボタンをクリックした時に呼び出される`JFileChooser#approveSelection()`をオーバーライドし、選択されているファイルがすでに存在するかどうかをチェックしています。そのファイルが存在しない場合は通常の`JFileChooser`の処理を実行し、存在する場合は上書きしても良いかを確認する`ConfirmDialog`を`JFileChooser`を親にして呼び出します。
+上記のサンプルでは、`JFileChooser`の`Save`ボタンをクリックした時に呼び出される`JFileChooser#approveSelection()`メソッドをオーバーライドし、選択されているファイルがすでに存在するかどうかをチェックしています。そのファイルが存在しない場合は通常の`JFileChooser`の処理を実行し、存在する場合は上書きしても良いかを確認する`ConfirmDialog`を`JFileChooser`を親にして呼び出します。
 
 - `ConfirmDialog`で`Yes`をクリック
     - `super.approveSelection()`を実行して結果を返して`JFileChooser`を閉じる
