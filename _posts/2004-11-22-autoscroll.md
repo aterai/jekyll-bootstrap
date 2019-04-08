@@ -38,9 +38,9 @@ comments: true
         Container c = SwingUtilities.getAncestorOfClass(JViewport.class, label);
         if (c instanceof JViewport.class) {
           JViewport vport = (JViewport) c;
-          Point vp = vport.getViewPosition(); //= SwingUtilities.convertPoint(vport, 0, 0, label);
+          Point vp = vport.getViewPosition();
           vp.translate(move.x, move.y);
-          label.scrollRectToVisible(new Rectangle(vp, vport.getSize())); //vport.setViewPosition(vp);
+          label.scrollRectToVisible(new Rectangle(vp, vport.getSize()));
         }
       }
     });
@@ -82,16 +82,14 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JViewport`内の画像ラベルをマウスでドラッグすると、その移動方向に応じて自動的にスクロールします。自動スクロール中に画像をマウスでクリックすると移動停止します。
+上記のサンプルでは、`JViewport`内の画像ラベルをマウスでドラッグすると、その移動方向に応じて自動的にスクロールします。自動スクロール中に画像をマウスでクリックすると移動を停止します。
 
 `javax.swing.Timer`を使うことでスクロールの開始、継続、停止を行っています。
-
-- - - -
-`JTextPane`で文字列を挿入したときに、最後まで自動スクロールしたい場合は、[JTextPaneで最終行に移動](https://ateraimemo.com/Swing/CaretPosition.html)を参考にしてください。
 
 ## 参考リンク
 - [JScrollPaneのViewportをマウスで掴んでスクロール](https://ateraimemo.com/Swing/HandScroll.html)
 - [JTextPaneで最終行に移動](https://ateraimemo.com/Swing/CaretPosition.html)
+    - `JTextPane`で文字列を挿入したときに最後まで自動スクロールするサンプル
 - [2000ピクセル以上のフリー写真素材集](http://sozai-free.com/)
 
 <!-- dummy comment line for breaking list -->

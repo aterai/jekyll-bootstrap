@@ -27,9 +27,9 @@ comments: true
 </code></pre>
 
 ## 解説
-`JTable`の`getToolTipText`メソッドをオーバーライドして、カーソルがある行の情報を表示しています。
+`JTable#getToolTipText()`メソッドをオーバーライドして、カーソルがある行の情報を表示しています。
 
-- `JTable#convertRowIndexToModel`メソッドを使って`viewRowIndex`を`modelRowIndex`に変更し、モデルから行情報を取得
+- `JTable#convertRowIndexToModel(...)`メソッドを使用して`viewRowIndex`を`modelRowIndex`に変更し、モデルから行情報を取得
 - 第`1`列、第`2`列を`html`タグを使ってそれぞれ`ToolTipText`として設定
 
 <!-- dummy comment line for breaking list -->
@@ -37,7 +37,7 @@ comments: true
 - - - -
 以下のように、`setToolTipText(...)`メソッドを使用して、各行に`ToolTipText`を設定する方法もあります。
 
-- `JTable#prepareRenderer`メソッド内で`setToolTipText(...)`を使用する
+- `JTable#prepareRenderer(...)`メソッド内で`setToolTipText(...)`を使用する
     
     <pre class="prettyprint"><code>JTable table = new JTable() {
       @Override public Component prepareRenderer(

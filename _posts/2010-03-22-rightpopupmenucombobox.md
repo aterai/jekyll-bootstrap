@@ -37,7 +37,7 @@ comments: true
 </code></pre>
 
 ## 解説
-- `JComboBox`のドロップダウンリストである`PopupMenu`が開くとき、その位置を変更する`PopupMenuListener`を作成
+- `JComboBox`のドロップダウンリストとして`PopupMenu`が開くとき、その位置を変更する`PopupMenuListener`を作成
     - `JComboBox#addPopupMenuListener(...)`メソッドで追加
 - `JComboBox`の矢印アイコンも、以下のように変更
     

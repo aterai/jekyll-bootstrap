@@ -43,9 +43,9 @@ field2.setCaret(caret);
 - `Default`
     - 選択ハイライトには、`LookAndFeel`毎に指定された`Highlighter.HighlightPainter`が使用される
 - `JTextComponent#setSelectionColor(...)`
-    - `JTextComponent`の`setSelectionColor(...)`メソッドで、選択ハイライトの背景色を変更
+    - `JTextComponent#setSelectionColor(...)`メソッドで、選択ハイライトの背景色を変更
 - `JTextComponent#setCaret(...)`
-    - `DefaultCaret#getSelectionPainter()`メソッドをオーバーライドして、選択ハイライトの色と形状を変更した`DefaultHighlighter.DefaultHighlightPainter`を返す`Caret`を作成し、これを`JTextComponent`に設定
+    - `DefaultCaret#getSelectionPainter()`メソッドをオーバーライドして選択ハイライトの色と形状を変更した`DefaultHighlighter.DefaultHighlightPainter`を返す`Caret`を作成し、これを`JTextComponent`に設定
 
 <!-- dummy comment line for breaking list -->
 
