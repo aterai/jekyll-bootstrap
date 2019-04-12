@@ -28,10 +28,7 @@ private static Component makeKeyboardPanel() {
   JPanel keyboard = new JPanel(new GridBagLayout());
 
   GridBagConstraints c = new GridBagConstraints();
-  c.weightx = 1d;
-  c.weighty = 1d;
   c.fill = GridBagConstraints.BOTH;
-
   c.gridy = 50;
   for (int i = 0; i &lt; KEYS[0].length * 2; i++) {
     c.gridx = i;
@@ -44,10 +41,10 @@ private static Component makeKeyboardPanel() {
     for (int col = 0; col &lt; KEYS[row].length; col++) {
       String key = KEYS[row][col];
       int len = key.length();
-      c.gridwidth = len &gt; 10 ? 14 :
-                    len &gt; 4  ?  4 :
-                    len &gt; 1  ?  3 :
-                    len == 1 ?  2 : 1;
+      c.gridwidth = len &gt; 10 ? 14
+                  : len &gt; 4  ? 4
+                  : len &gt; 1  ? 3
+                  : len == 1 ? 2 : 1;
       if (key.isEmpty()) {
         keyboard.add(Box.createHorizontalStrut(KeyButton.SIZE), c);
       } else {
@@ -62,13 +59,13 @@ private static Component makeKeyboardPanel() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`GridBagLayout`を使用してダミーの列幅を持つガイド行を作成し、デフォルトキーはその`2`列分占有する`JButton`を配置することでキーボード風のレイアウトを表現しています。
+上記のサンプルでは、`GridBagLayout`を使用してダミーの列幅を持つガイド行を作成し、`1`文字のデフォルトキーはその`2`列分占有する`JButton`を配置してキーボード風のレイアウトを表現しています。
 
 - 各`JButton`にはイベントを設定していないので、クリックしても無反応
 - スペースキーは`14`列分占有する`JButton`を配置
-- `Shift`、`Enter`キーは`4`列分占有する`JButton`を配置
-- `Tab`、`Ctrl`、`Alt`などは`3`列分占有する`JButton`を配置
-    - `Ctrl`などは`JToggleButton`にしたほうが良さそう
+- <kbd>Shift</kbd>、<kbd>Enter</kbd>キーは`4`列分占有する`JButton`を配置
+- <kbd>Tab</kbd>、<kbd>Ctrl</kbd>、<kbd>Alt</kbd>などは`3`列分占有する`JButton`を配置
+    - <kbd>Ctrl</kbd>などは`JToggleButton`にしたほうが良さそう
 - 空文字列は`1`列分占有する不可視の固定幅コンポーネントを配置
 
 <!-- dummy comment line for breaking list -->

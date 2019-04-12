@@ -67,8 +67,8 @@ while (st.hasMoreTokens()) {
 Element root = doc.getDefaultRootElement();
 try {
   for (int i = 0; i &lt; root.getElementCount(); i++) {
-    Element elem = root.getElement(i);
-    String line = doc.getText(elem.getStartOffset(), elem.getEndOffset() - elem.getStartOffset());
+    Element elm = root.getElement(i);
+    String line = doc.getText(elm.getStartOffset(), elm.getEndOffset() - elm.getStartOffset());
     if (line.codePointAt(0) == '#') {
       count++;
     }

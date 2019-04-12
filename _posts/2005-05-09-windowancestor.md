@@ -20,10 +20,11 @@ comments: true
   @Override public void actionPerformed(ActionEvent e) {
     JButton btn  = (JButton) e.getSource();
     JFrame f = (JFrame) SwingUtilities.getWindowAncestor(btn);
-    //JFrame f = (JFrame) btn.getTopLevelAncestor();
-    //JFrame f = (JFrame) JOptionPane.getFrameForComponent(btn);
-    JOptionPane.showMessageDialog(f, "parentFrame.getTitle(): " + f.getTitle(),
-                                  "title", JOptionPane.INFORMATION_MESSAGE);
+    // JFrame f = (JFrame) btn.getTopLevelAncestor();
+    // JFrame f = (JFrame) JOptionPane.getFrameForComponent(btn);
+    JOptionPane.showMessageDialog(
+        f, "parentFrame.getTitle(): " + f.getTitle(),
+        "title", JOptionPane.INFORMATION_MESSAGE);
   }
 }));
 </code></pre>

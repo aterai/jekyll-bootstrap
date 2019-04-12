@@ -18,8 +18,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Action beep  = new DefaultEditorKit.BeepAction();
 ActionMap am = field.getActionMap();
-am.put(DefaultEditorKit.cutAction,   beep);
-am.put(DefaultEditorKit.copyAction,  beep);
+am.put(DefaultEditorKit.cutAction, beep);
+am.put(DefaultEditorKit.copyAction, beep);
 am.put(DefaultEditorKit.pasteAction, beep);
 </code></pre>
 
@@ -32,7 +32,7 @@ am.put(DefaultEditorKit.pasteAction, beep);
 <pre class="prettyprint"><code>JTextField field = new JTextField() {
   @Override public void copy() {
     UIManager.getLookAndFeel().provideErrorFeedback(this);
-    //Toolkit.getDefaultToolkit().beep();
+    // Toolkit.getDefaultToolkit().beep();
   }
 };
 </code></pre>

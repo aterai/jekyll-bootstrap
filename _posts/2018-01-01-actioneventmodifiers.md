@@ -56,6 +56,7 @@ button.addActionListener(e -&gt; {
 ## 参考リンク
 - [ActionEvent (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/ActionEvent.html)
 - [java - isShiftDown when JButton pressed? - Stack Overflow](https://stackoverflow.com/questions/5592065/isshiftdown-when-jbutton-pressed)
+- [<AWT Dev> creating an ActionEvent with modifiers from an InputEvent](https://mail.openjdk.java.net/pipermail/awt-dev/2018-October/014518.html)
 
 <!-- dummy comment line for breaking list -->
 

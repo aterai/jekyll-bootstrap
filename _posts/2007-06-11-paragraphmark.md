@@ -60,7 +60,7 @@ class ParagraphWithEopmView extends ParagraphView {
       int h = r.height;
       Graphics2D g2 = (Graphics2D) g.create();
       g2.setColor(MARK_COLOR);
-      //paragraph mark
+      // paragraph mark
       g2.drawLine(x + 1, y + h / 2, x + 1, y + h - 4);
       g2.drawLine(x + 2, y + h / 2, x + 2, y + h - 5);
       g2.drawLine(x + 3, y + h - 6, x + 3, y + h - 6);
@@ -84,6 +84,6 @@ class ParagraphWithEopmView extends ParagraphView {
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- 行の折り返しが発生すると、改行記号が縦長になるバグを修正しました。 -- *aterai* 2007-09-21 (金) 17:05:03
+- 行の折り返しが発生すると、改行記号が縦長になるバグを修正。 -- *aterai* 2007-09-21 (金) 17:05:03
 
 <!-- dummy comment line for breaking list -->

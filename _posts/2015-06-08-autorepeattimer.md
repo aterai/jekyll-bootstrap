@@ -19,22 +19,22 @@ comments: true
 <pre class="prettyprint"><code>class AutoRepeatHandler extends MouseAdapter implements ActionListener {
   private final Timer autoRepeatTimer;
   private final BigInteger extent;
-  private final JLabel view;
+  private final JTextComponent view;
   private JButton arrowButton;
 
-  public AutoRepeatHandler(int extent, JLabel view) {
+  protected AutoRepeatHandler(int extent, JTextComponent view) {
     super();
     this.extent = BigInteger.valueOf(extent);
     this.view = view;
     autoRepeatTimer = new Timer(60, this);
     autoRepeatTimer.setInitialDelay(300);
   }
+
   @Override public void actionPerformed(ActionEvent e) {
     Object o = e.getSource();
     if (o instanceof Timer) {
-      if (Objects.nonNull(arrowButton)
-          &amp;&amp; !arrowButton.getModel().isPressed()
-          &amp;&amp; autoRepeatTimer.isRunning()) {
+      if (Objects.nonNull(arrowButton) &amp;&amp; !arrowButton.getModel().isPressed() &amp;&amp;
+          autoRepeatTimer.isRunning()) {
         autoRepeatTimer.stop();
         arrowButton = null;
       }
@@ -44,16 +44,18 @@ comments: true
     BigInteger i = new BigInteger(view.getText());
     view.setText(i.add(extent).toString());
   }
+
   @Override public void mousePressed(MouseEvent e) {
-    if (SwingUtilities.isLeftMouseButton(e)
-        &amp;&amp; e.getComponent().isEnabled()) {
+    if (SwingUtilities.isLeftMouseButton(e) &amp;&amp; e.getComponent().isEnabled()) {
       autoRepeatTimer.start();
     }
   }
+
   @Override public void mouseReleased(MouseEvent e) {
     autoRepeatTimer.stop();
     arrowButton = null;
   }
+
   @Override public void mouseExited(MouseEvent e) {
     if (autoRepeatTimer.isRunning()) {
       autoRepeatTimer.stop();
@@ -63,9 +65,9 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JButton`をクリックすると`JLabel`に表示される数値の増減を実行する`ActionListener`と、`JButton`が押されている間はこのアクションを自動的にリピートする`Timer`を起動するための`MouseListener`のふたつのリスナーを設定しています。
+上記のサンプルでは、`JButton`をクリックすると編集不可の`JTextField`に表示される数値を増減する`ActionListener`と、`JButton`が押されている間はこのアクションを自動的にリピートする`Timer`を起動するための`MouseListener`のふたつのリスナーを設定しています。
 
-- `JSpinner`で使用されている`javax.swing.plaf.basic.BasicSpinnerUI`内の`ArrowButtonHandler`と`Timer`のリピート間隔(`60ms`)や初回起動までの時間(`300ms`)は同じ値を設定
+- `JSpinner`で使用されている`javax.swing.plaf.basic.BasicSpinnerUI`内の`ArrowButtonHandler`と`Timer`のリピート間隔(`60ms`)や初回起動までの時間(`300ms`)は同じ値を使用している
 
 <!-- dummy comment line for breaking list -->
 

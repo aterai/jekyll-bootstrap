@@ -54,7 +54,7 @@ comments: true
     if (pattern != null &amp;&amp; !pattern.isEmpty() &amp;&amp; !pattern.equals(prev)) {
       Matcher matcher = Pattern.compile(pattern).matcher(txt);
       int pos = 0;
-      while (matcher.find(pos)) {
+      while (matcher.find(pos) &amp;&amp; !matcher.group().isEmpty()) {
         int start = matcher.start();
         int end   = matcher.end();
         try {

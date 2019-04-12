@@ -19,8 +19,8 @@ comments: true
 <pre class="prettyprint"><code>TableColumnModel tcm = table.getColumnModel();
 tcm.getColumn(1).setCellRenderer(new TestRenderer());
 tcm.getColumn(2).setCellRenderer(new TextAreaCellRenderer());
-</code></pre>
-<pre class="prettyprint"><code>class TextAreaCellRenderer extends JTextArea implements TableCellRenderer {
+// ...
+class TextAreaCellRenderer extends JTextArea implements TableCellRenderer {
   TextAreaCellRenderer() {
     super();
     setLineWrap(true);
@@ -39,8 +39,8 @@ tcm.getColumn(2).setCellRenderer(new TextAreaCellRenderer());
     return this;
   }
 }
-</code></pre>
-<pre class="prettyprint"><code>class TestRenderer extends MyJLabel implements TableCellRenderer {
+// ...
+class TestRenderer extends MyJLabel implements TableCellRenderer {
   public TestRenderer() {
     super();
     setOpaque(true);
@@ -56,7 +56,7 @@ tcm.getColumn(2).setCellRenderer(new TextAreaCellRenderer());
       setForeground(table.getForeground());
       setBackground(table.getBackground());
     }
-    //setHorizontalAlignment((value instanceof Number) ? RIGHT : LEFT);
+    // setHorizontalAlignment((value instanceof Number) ? RIGHT : LEFT);
     setFont(table.getFont());
     setText((value == null) ? "" : value.toString());
     return this;
@@ -66,14 +66,14 @@ class MyJLabel extends JLabel {
   private GlyphVector gvtext;
   public MyJLabel() {super();}
   @Override protected void paintComponent(Graphics g) {
-    //super.paintComponent(g);
+    // super.paintComponent(g);
     Graphics2D g2 = (Graphics2D) g;
-    //......
+    // ...
     g2.drawGlyphVector(gvtext,
                        getInsets().left,
                        getFont().getSize()+getInsets().top);
   }
-  //......
+  // ...
 }
 </code></pre>
 

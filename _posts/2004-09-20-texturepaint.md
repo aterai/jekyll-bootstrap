@@ -16,11 +16,12 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTVUeXC5lI/AAAAAAAAAnc/CWUYfOODy1E/s800/TexturePaint.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>BufferedImage bi = null;
+<pre class="prettyprint"><code>BufferedImage bi;
 try {
   bi = ImageIO.read(getClass().getResource("16x16.png"));
-} catch (IOException ioe) {
-  ioe.printStackTrace();
+} catch (IOException ex) {
+  ex.printStackTrace();
+  bi = makeMissingImage();
 }
 texture = new TexturePaint(bi, new Rectangle(bi.getWidth(), bi.getHeight()));
 panel = new JPanel() {

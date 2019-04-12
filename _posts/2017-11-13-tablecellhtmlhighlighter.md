@@ -39,7 +39,7 @@ comments: true
       Matcher matcher = Pattern.compile(pattern).matcher(txt);
       int pos = 0;
       StringBuilder buf = new StringBuilder("&lt;html&gt;");
-      while (matcher.find(pos)) {
+      while (matcher.find(pos) &amp;&amp; !matcher.group().isEmpty()) {
         int start = matcher.start();
         int end = matcher.end();
         buf.append(String.format(SPAN,
