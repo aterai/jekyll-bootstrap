@@ -35,7 +35,7 @@ tree2.putClientProperty("JTree.lineStyle", "None");
 - `Horizontal`
     - グループ(親)ノードの上下に水平線のみ表示する
 - `None`
-    - ノード間の接続線を非表示にする
+    - ノード間の接続線をすべて非表示にする
 
 <!-- dummy comment line for breaking list -->
 

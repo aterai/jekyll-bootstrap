@@ -61,9 +61,11 @@ class TextFieldPopupMenu extends JPopupMenu {
 </code></pre>
 
 ## 解説
-`DefaultEditorKit`には、エディタとして必要な最小限度の機能がデフォルトで実装されています。上記のサンプルでは、`DefaultEditorKit.CopyAction`で、システムクリップボードを使ったコピーをポップアップメニューで行っています。
+上記のサンプルでは、`DefaultEditorKit.CopyAction`をポップアップメニューに追加してクリップボードを使ったコピーなどを可能にしています。
 
-サンプルの「切り取り`2`」のように、`JTextComponent#cut()`メソッドなどを使用する方法もあります。
+- サンプルの`cut2`のように、`JTextComponent#cut()`メソッドなどを使用する方法もある
+
+<!-- dummy comment line for breaking list -->
 
 - - - -
 サンプルを`Java Web Start`で起動した場合は、システム全体の共有クリップボードにはアクセス不可能で、アプリケーション内部のみでのコピー、貼り付けとなります。

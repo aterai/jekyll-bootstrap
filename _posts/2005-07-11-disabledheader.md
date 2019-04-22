@@ -26,7 +26,7 @@ comments: true
       button.getModel().setEnabled(false);
       return button;
     }
-    //......
+    // ...
 
 private final HashMap dmap = new HashMap();
 public boolean isEnabledAt(int col) {
@@ -54,7 +54,7 @@ public boolean isEnabledAt(int col) {
     int viewColumn = columnModel.getColumnIndexAtX(e.getX());
     int column = columnModel.getColumn(viewColumn).getModelIndex();
     // ここを変更
-    if (isSortableIndex(column)) { //column != -1 ) {
+    if (isSortableIndex(column)) { // column != -1 ) {
       int status = getSortingStatus(column);
       if (!e.isControlDown()) {
         cancelSorting();

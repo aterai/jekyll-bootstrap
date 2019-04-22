@@ -66,7 +66,7 @@ comments: true
 `JDK 1.8.0`以上の場合は、`Files.walk(Path)`を使用する方法もあります。
 
 - [Files#walk(Path) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/nio/file/Files.html#walk-java.nio.file.Path-java.nio.file.FileVisitOption...-)
-- [Javaファイル関連メモ2(Hishidama's Java Files Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/files.html#walk)
+- [Javaファイル関連メモ2(Hishidama's Java Files Memo)](https://www.ne.jp/asahi/hishidama/home/tech/java/files.html#walk)
 - [java - Read all files in a folder - Stack Overflow](https://stackoverflow.com/questions/1844688/read-all-files-in-a-folder)
 
 <!-- dummy comment line for breaking list -->

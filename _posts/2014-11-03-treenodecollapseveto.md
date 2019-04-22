@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>tree.addTreeWillExpandListener(new TreeWillExpandListener() {
   @Override public void treeWillExpand(TreeExpansionEvent e) throws ExpandVetoException {
-    //throw new ExpandVetoException(e, "Tree expansion cancelled");
+    // throw new ExpandVetoException(e, "Tree expansion cancelled");
   }
   @Override public void treeWillCollapse(TreeExpansionEvent e) throws ExpandVetoException {
     throw new ExpandVetoException(e, "Tree collapse cancelled");
@@ -29,7 +29,7 @@ comments: true
 ## 解説
 - 左: デフォルト
 - 右: ノードの折り畳み不可
-    - `TreeWillExpandListener#treeWillCollapse()`で、`ExpandVetoException`を発生させることで、マウスやキー入力によるノードの折り畳みを不可に設定
+    - `TreeWillExpandListener#treeWillCollapse()`メソッドをオーバーライドして`ExpandVetoException`を発生させることで、マウスやキー入力によるノードの折り畳みを不可に設定
     - ノードの展開、編集、選択などは可能
 
 <!-- dummy comment line for breaking list -->

@@ -64,7 +64,7 @@ b.addMouseListener(new MouseAdapter() {
 
 ## 参考リンク
 - [Hyperlinkを、JLabel、JButton、JEditorPaneで表示](https://ateraimemo.com/Swing/HyperlinkLabel.html)
-- [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
+- [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](https://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
 
 <!-- dummy comment line for breaking list -->
 

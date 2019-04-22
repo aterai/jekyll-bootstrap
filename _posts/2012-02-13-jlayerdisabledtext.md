@@ -85,7 +85,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`LayerUI#applyPropertyChange(...)`をオーバーライドして、コンポーネントを無効にした場合の文字色の設定と、`Focus`移動の禁止、`Mnemonic`、`PopupMenu`、`ToolTip`の非表示設定を行なっています。
+上記のサンプルでは、`LayerUI#applyPropertyChange(...)`をオーバーライドしてコンポーネントを無効にした場合の文字色の設定と、`Focus`移動の禁止、`Mnemonic`、`PopupMenu`、`ToolTip`の非表示設定を実施しています。
 
 `JLayer`を使用した無効時の文字色設定は、[JCheckBoxなどが無効な状態での文字色を変更](https://ateraimemo.com/Swing/DisabledTextColor.html)のように`LookAndFeel`に依存しません。
 

@@ -34,7 +34,7 @@ comments: true
   }
   private int makeRowListAndPublish(int current, int size) {
     try {
-      Thread.sleep(500); //dummy
+      Thread.sleep(500); // dummy
     } catch (Exception ex) {
       ex.printStackTrace();
     }
@@ -73,7 +73,7 @@ comments: true
   }
 };
 worker.execute();
-//...
+// ...
 private static final int itemsPerPage = 100;
 private int maxPageIndex;
 private int currentPageIndex = 1;
@@ -126,9 +126,9 @@ private void initFilterAndButton() {
       int i = 0;
       while (i &lt; c &amp;&amp; !isCancelled()) {
         try {
-          Thread.sleep(500); //dummy
+          Thread.sleep(500); // dummy
         } catch (InterruptedException ex) {
-          //ex.printStackTrace();
+          // ex.printStackTrace();
           return "Interrupted";
         }
         current = load(stat, current, itemsPerPage);
@@ -139,7 +139,7 @@ private void initFilterAndButton() {
         load(stat, current, surplus);
       }
     } catch (SQLException ex) {
-      //ex.printStackTrace();
+      // ex.printStackTrace();
       return "Error";
     }
     return "Done";

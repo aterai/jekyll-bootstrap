@@ -40,12 +40,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは以下の場合、`JPopupMenu`を表示しています。
-
-- `JTree`のノードが選択されている
-- 選択されたノード上にカーソルがある
-
-<!-- dummy comment line for breaking list -->
+上記のサンプルでは、`JTree`のノードが選択されている、かつ選択されたノード上にカーソルがある場合のみ`JPopupMenu`を表示可能に設定しています。
 
 ## 参考リンク
 - [JTree#getPathForLocation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getPathForLocation-int-int-)

@@ -114,7 +114,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
+- [Java Swing「ドラッグ&ドロップ」メモ(Hishidama's Swing-TransferHandler Memo)](https://www.ne.jp/asahi/hishidama/home/tech/java/swing/TransferHandler.html)
 - [JTableでプロパティ一覧表を作成する](https://ateraimemo.com/Swing/PropertyTable.html)
 
 <!-- dummy comment line for breaking list -->

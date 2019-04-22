@@ -26,36 +26,38 @@ comments: true
     return Objects.toString(o, "getToolTipText");
   }
 };
-//tree.setCellRenderer(new MyTreeCellRenderer(tree.getCellRenderer()));
+// tree.setCellRenderer(new MyTreeCellRenderer(tree.getCellRenderer()));
 ToolTipManager.sharedInstance().registerComponent(tree);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#getToolTipText(MouseEvent)`をオーバーライドして`JToolTip`を表示しています。以下のようなセルレンダラーを使用する方法もあります。
+上記のサンプルでは、`JTree#getToolTipText(MouseEvent)`メソッドをオーバーライドして`JToolTip`で表示する文字列を変更しています。
 
-<pre class="prettyprint"><code>class MyTreeCellRenderer implements TreeCellRenderer {
-  private final TreeCellRenderer renderer;
-  public MyTreeCellRenderer(TreeCellRenderer renderer) {
-    this.renderer = renderer;
-  }
-  @Override public Component getTreeCellRendererComponent(
-        JTree tree, Object value, boolean isSelected,
-        boolean expanded, boolean leaf, int row, boolean hasFocus) {
-    JComponent c = (JComponent) renderer.getTreeCellRendererComponent(
-      tree, value, isSelected, expanded, leaf, row, hasFocus);
-    c.setToolTipText(Objects.nonNull(value) ? value.toString() : null);
-    return c;
-  }
-}
-</code></pre>
-
-どちらの方法を使う場合でも、`JTree`オブジェクトを`ToolTipManager`に登録する(もしくは、`JTree#setToolTipText`メソッドで`null`以外を指定しておく)必要があります。
+ツールチップ表示を有効にするには、`JTree`オブジェクトを`ToolTipManager`に登録するか、`JTree#setToolTipText(...)`メソッドで`null`以外を指定しておく必要があります。
 
 <pre class="prettyprint"><code>ToolTipManager.sharedInstance().registerComponent(tree);
-//tree.setToolTipText("dummy");
+// tree.setToolTipText("dummy");
 </code></pre>
 
-## 参考リンク
+- - - -
+- セルレンダラーを使用する別方法
+    
+    <pre class="prettyprint"><code>class MyTreeCellRenderer implements TreeCellRenderer {
+      private final TreeCellRenderer renderer;
+      public MyTreeCellRenderer(TreeCellRenderer renderer) {
+        this.renderer = renderer;
+      }
+      @Override public Component getTreeCellRendererComponent(
+            JTree tree, Object value, boolean isSelected,
+            boolean expanded, boolean leaf, int row, boolean hasFocus) {
+        JComponent c = (JComponent) renderer.getTreeCellRendererComponent(
+          tree, value, isSelected, expanded, leaf, row, hasFocus);
+        c.setToolTipText(Objects.nonNull(value) ? value.toString() : null);
+        return c;
+      }
+    }
+</code></pre>
+- * 参考リンク [#reference]
 - [JTree#getToolTipText() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getToolTipText-java.awt.event.MouseEvent-)
 
 <!-- dummy comment line for breaking list -->

@@ -25,9 +25,8 @@ toolbar.add(createToolbarButton(url1));
 toolbar.add(createToolbarButton(url2));
 toolbar.add(Box.createGlue());
 toolbar.add(createToolbarButton(url3));
-</code></pre>
-
-<pre class="prettyprint"><code>private static JButton createToolbarButton(URL url) {
+// ...
+private static JButton createToolbarButton(URL url) {
   JButton b = new JButton(new ImageIcon(url));
   b.setRequestFocusEnabled(false);
   // or: b.setFocusPainted(false);
