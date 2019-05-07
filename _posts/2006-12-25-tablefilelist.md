@@ -19,7 +19,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUdT6R-SI/AAAAAAAAAmE/AYebcaiE77Y/s800/TableFileList.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//SwingUtilities2.pointOutsidePrefSize(...)
+<pre class="prettyprint"><code>// @see SwingUtilities2.pointOutsidePrefSize(...)
 private static Rectangle getCellRect2(JTable table, int row, int col) {
   TableCellRenderer tcr = table.getCellRenderer(row, col);
   Object value = table.getValueAt(row, col);
@@ -28,12 +28,12 @@ private static Rectangle getCellRect2(JTable table, int row, int col) {
   Rectangle cellBounds = table.getCellRect(row, col, false);
   cellBounds.width = itemSize.width;
   return cellBounds;
-//   FontMetrics fm = table.getFontMetrics(table.getFont());
-//   Object o = table.getValueAt(row, col);
-//   int w = fm.stringWidth(o.toString()) + 16 + 2 + 2;
-//   Rectangle rect = table.getCellRect(row, col, true);
-//   rect.setSize(w, rect.height);
-//   return rect;
+  // FontMetrics fm = table.getFontMetrics(table.getFont());
+  // Object o = table.getValueAt(row, col);
+  // int w = fm.stringWidth(o.toString()) + 16 + 2 + 2;
+  // Rectangle rect = table.getCellRect(row, col, true);
+  // rect.setSize(w, rect.height);
+  // return rect;
 }
 </code></pre>
 

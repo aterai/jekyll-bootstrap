@@ -17,7 +17,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JLabel label = new JLabel();
-Timer timer = new Timer(300, e -&gt; label.setText("".equals(label.getText()) ? "!!!Warning!!!" : ""));
+Timer timer = new Timer(300, e -&gt; {
+  label.setText("".equals(label.getText()) ? "!!!Warning!!!" : "");
+});
 timer.start();
 </code></pre>
 

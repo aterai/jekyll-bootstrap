@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>SpinnerNumberModel model = new SpinnerNumberModel(10, 0, 1000, 1);
 JSpinner spinner = new JSpinner(model);
-//UIManager.put("FormattedTextField.inactiveBackground", Color.RED);
+// UIManager.put("FormattedTextField.inactiveBackground", Color.RED);
 JTextField field = ((JSpinner.NumberEditor) spinner.getEditor()).getTextField();
 field.setEditable(false);
 field.setBackground(UIManager.getColor("FormattedTextField.background"));
@@ -31,7 +31,7 @@ field.setBackground(UIManager.getColor("FormattedTextField.background"));
 - `spinner.setEnabled(false)`
     - `JSpinner#setEnabled(false)`で`JSpinner`全体を編集不可に設定
 - `field.setEnabled(false)`
-    - `( (JSpinner.NumberEditor) spinner.getEditor() ).getTextField()`で`JSpinner`のテキスト入力欄を取得し、これを`JTextField#setEditable(false)`で編集不可に設定
+    - `( (JSpinner.NumberEditor) spinner.getEditor() ).getTextField()`で`JSpinner`のテキスト入力欄を取得し、これを`JTextComponent#setEditable(false)`で編集不可に設定
     - 上下ボタンで値を変更可能だが、キーボードでの値の入力は不可
 
 <!-- dummy comment line for breaking list -->

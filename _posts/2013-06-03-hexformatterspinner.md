@@ -19,7 +19,24 @@ comments: true
 <pre class="prettyprint"><code>private static DefaultFormatterFactory makeFFactory() {
   DefaultFormatter formatter = new DefaultFormatter() {
     @Override public Object stringToValue(String text) throws ParseException {
-      return Integer.valueOf(text, 16);
+      Pattern pattern = Pattern.compile("^\\s*(\\p{XDigit}{1,6})\\s*$");
+      Matcher matcher = pattern.matcher(text);
+      if (matcher.find()) {
+        Integer iv = Integer.valueOf(text, 16);
+        if (iv &lt;= Character.MAX_CODE_POINT) {
+          return iv;
+        }
+      }
+      Toolkit.getDefaultToolkit().beep();
+      throw new ParseException(text, 0);
+      // try {
+      //   return Integer.valueOf(text, 16);
+      // } catch (NumberFormatException ex) {
+      //   Toolkit.getDefaultToolkit().beep();
+      //   ParseException wrap = new ParseException(text, 0);
+      //   wrap.initCause(ex);
+      //   throw wrap;
+      // }
     }
     @Override public String valueToString(Object value) throws ParseException {
       return String.format("%06X", (Integer) value);
@@ -32,7 +49,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DefaultFormatter#stringToValue(String)`と`DefaultFormatter#valueToString(Object)`をオーバーライドして、`0x0`から`0x10FFFF`までの整数を`16`進数で表示する`Formatter`を作成して`JSpinner`に設定しています。
+上記のサンプルでは、`DefaultFormatter#stringToValue(String)`と`DefaultFormatter#valueToString(Object)`をオーバーライドして、`0x0`から`0x10FFFF`(`Character.MAX_CODE_POINT`)までの整数を`16`進数で表示する`Formatter`を作成して`JSpinner`に設定しています。
 
 - - - -
 `JSpinner`から取得した数値(コードポイント)から文字を生成する時、サロゲートペアなどの基本多言語面(`BMP`)外に対応するために、[Sample Usage (The Java™ Tutorials > Internationalization > Working with Text)](https://docs.oracle.com/javase/tutorial/i18n/text/usage.html)を参考にして、以下のような方法を使用しています。
@@ -44,6 +61,13 @@ String str = new String(Character.toChars(code));
 
 - - - -
 [IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝](http://ipafont.ipa.go.jp/)フォントがインストールされている場合、その文字の形の違いを比較できます。
+
+- - - -
+- `8.0.212-amzn`で実行するとゲタ文字や一部の表示が壊れる？
+    - `11.0.3-amzn`は正常
+    - パネルのリサイズで再描画されると正常に戻ったり壊れたりする場合がある？
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Fontのアウトラインを取得して文字列の内部を修飾する](https://ateraimemo.com/Swing/LineSplittingLabel.html)

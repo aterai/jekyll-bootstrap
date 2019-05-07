@@ -88,7 +88,7 @@ class AnimeIcon implements Icon, Serializable {
           AlphaComposite.SRC_OVER, alpha));
       g2.fill(list.get(i));
     }
-    //g2.translate(-x, -y);
+    // g2.translate(-x, -y);
     g2.dispose();
   }
   @Override public int getIconWidth() {
@@ -111,7 +111,7 @@ class AnimeIcon implements Icon, Serializable {
     - `Timer`を使って、リストの先頭にある円を最後に移動
 - 異なるアルファ値で円を描画
     - インデックスに応じたアルファ値でそれぞれの円を描画
-    - `Java 1.6.0`では「小さな円(曲線)が円に見えなかった問題」が解消されてた([参考](http://www.02.246.ne.jp/~torutk/jvm/mustang.html#SEC26))
+    - `Java 1.6.0`では「小さな円(曲線)が円に見えなかった問題」が解消されている([参考](http://www.02.246.ne.jp/~torutk/jvm/mustang.html#SEC26))
 
 <!-- dummy comment line for breaking list -->
 

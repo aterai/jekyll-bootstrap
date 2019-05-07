@@ -46,7 +46,7 @@ sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
 model.addTableModelListener(e -&gt; {
   if (e.getType() == TableModelEvent.UPDATE) {
     sorter.allRowsChanged();
-    //sorter.modelStructureChanged();
+    // sorter.modelStructureChanged();
   }
 });
 </code></pre>

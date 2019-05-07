@@ -38,7 +38,7 @@ private String getInfo() {
 </code></pre>
 
 ## 解説
-マウス、カーソルキー、<kbd>Tab</kbd>キーでの選択状態の変更に対応するために、`JTable`に`MouseListener`リスナーを設定するのではなく、`JTable#getSelectionModel`メソッドで`ListSelectionModel`を参照し、このモデルに`ListSelectionListener`リスナーを追加して利用します。
+上記のサンプルでは、マウス、カーソルキー、<kbd>Tab</kbd>キーでの選択状態の変更に対応するため、`JTable`に`MouseListener`リスナーを設定するのではなく`JTable#getSelectionModel`メソッドで`ListSelectionModel`を参照し、このモデルに`ListSelectionListener`リスナーを追加しています。
 
 `ListSelectionEvent#getValueIsAdjusting()`メソッドでイベントが重複処理を起こさないように制御しています。
 

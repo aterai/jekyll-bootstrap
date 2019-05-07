@@ -18,8 +18,8 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JProgressBar progress = new JProgressBar(m);
 progress.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
-//progress.setStringPainted(true);
-//progress.setOrientation(SwingConstants.VERTICAL);
+// progress.setStringPainted(true);
+// progress.setOrientation(SwingConstants.VERTICAL);
 </code></pre>
 
 ## 解説
