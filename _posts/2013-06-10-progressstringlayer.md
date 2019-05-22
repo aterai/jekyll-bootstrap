@@ -62,6 +62,19 @@ JComponent c = new JLayer&lt;JProgressBar&gt;(progressBar, layerUI);
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
+- 一部の`OpenJDK 8`環境で、デフォルト垂直`JProgressBar`の進捗文字列が`90°`回転しなくなった？
+
+<!-- dummy comment line for breaking list -->
+
+
+- `8.0.212-amzn`、`8.0.212.hs-adpt`などは、回転しないため文字が重なっている
+- `8.0.212-zulu`、`11.0.3-amzn`などは以前とおなじように回転するが、文字にアンチエイリアスが強く掛かっている？
+- [&#91;JDK-8204929&#93; Fonts with embedded bitmaps are not always rotated - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8204929)
+    - `Windows 10 April 2018 Update`の日本語環境でフォント依存で発生する
+
+<!-- dummy comment line for breaking list -->
+
 ## 参考リンク
 - [java - Is it possible to save text horizontal in vertical JProgressbar - Stack Overflow](https://stackoverflow.com/questions/16934009/is-it-possible-to-save-text-horizontal-in-vertical-jprogressbar)
 - [JProgressBarの進捗文字列の字揃えを変更する](https://ateraimemo.com/Swing/ProgressStringAlignment.html)

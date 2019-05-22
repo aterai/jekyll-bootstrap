@@ -140,7 +140,7 @@ scroll.setRowHeader(vp);
     super.updateUI();
     setBorder(BorderFactory.createMatteBorder(0, 4, 0, 0, new Icon() {
       @Override public void paintIcon(Component c, Graphics g, int x, int y) {
-        //...略...
+        // ...略...
       }
       @Override public int getIconWidth() {
         return getInsets().left;

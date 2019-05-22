@@ -97,7 +97,7 @@ comments: true
     //  renderer = new DefaultTreeCellRenderer();
     //}
   }
-//...
+// ...
 </code></pre>
 
 ## 解説
@@ -194,7 +194,7 @@ comments: true
     System.out.println("XXX: FocusBorder bug?, JDK 1.7.0, Nimbus start LnF");
     renderer.setBackgroundSelectionColor(new Color(0x0, true));
   }
-//...
+// ...
 </code></pre>
 
 - ~~`JDK 1.7.0`で、ノードのチェックボックスをクリックしても、初回だけ反応しない~~ `1.7.0_60`で修正されている

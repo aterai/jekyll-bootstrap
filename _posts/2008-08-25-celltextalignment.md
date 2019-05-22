@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>TableColumn col = table.getColumnModel().getColumn(1);
 col.setCellRenderer(new HorizontalAlignmentTableRenderer());
-//...
+// ...
 class HorizontalAlignmentTableRenderer extends DefaultTableCellRenderer {
   @Override public Component getTableCellRendererComponent(JTable table,
         Object value, boolean isSelected, boolean hasFocus, int row, int column) {

@@ -99,7 +99,7 @@ comments: true
     //1.6.0_24 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
     renderer = new DefaultTreeCellRenderer();
   }
-//......
+// ...
 </code></pre>
 
 ## 解説

@@ -20,7 +20,7 @@ comments: true
 if (m instanceof SortableTableColumnModel) {
     ((SortableTableColumnModel) m).restoreColumnOrder();
 }
-//...
+// ...
 class SortableTableColumnModel extends DefaultTableColumnModel {
   public void restoreColumnOrder() {
     Collections.sort(

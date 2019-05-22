@@ -60,7 +60,7 @@ SwingUtilities.updateComponentTreeUI(getRootPane());
   @Override protected void unconfigureEditor() {}
   @Override public void update(Graphics g, JComponent c) {}
   @Override public void paint(Graphics g, JComponent c) {}
-  //...
+  // ...
 </code></pre>
 
 - 注:

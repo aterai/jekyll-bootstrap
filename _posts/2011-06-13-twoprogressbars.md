@@ -25,7 +25,7 @@ class Progress {
     this.value = value;
   }
 }
-//...
+// ...
 worker = new SwingWorker&lt;String, Progress&gt;() {
   @Override public String doInBackground() {
     int current = 0;
@@ -68,7 +68,7 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
       }
     }
   }
-//...
+// ...
 </code></pre>
 
 ## 解説
@@ -84,7 +84,7 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
 `SwingWorker`に別の`PropertyChangeListener`を追加する方法もあります。
 
 <pre class="prettyprint"><code>worker.firePropertyChange("file-progress", iv, iv + 1);
-//...
+// ...
 class SubProgressListener implements PropertyChangeListener {
   private final JProgressBar progressBar;
   public SubProgressListener(JProgressBar progressBar) {

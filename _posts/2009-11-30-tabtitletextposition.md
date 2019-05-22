@@ -35,7 +35,7 @@ tabbedPane.setTabComponentAt(tabbedPane.getTabCount() - 1, label);
     <pre class="prettyprint"><code>JTabbedPane tabs = new JTabbedPane();
     tabs.addTab(makeTitle("Title","a32x32.png"), new JLabel("a"));
     tabs.addTab(makeTitle("Help", "b32x32.png"), new JLabel("b"));
-    //...
+    // ...
     private String makeTitle(String t, String p) {
       return "&lt;html&gt;&lt;center&gt;&lt;img src='"+getClass().getResource(p)+"'/&gt;&lt;br/&gt;"+t;
     }

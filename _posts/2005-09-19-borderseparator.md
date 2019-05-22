@@ -60,7 +60,7 @@ combobox.setEditable(true);
     return flag;
   }
 }
-//......
+// ...
 </code></pre>
 
 ## 解説

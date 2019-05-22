@@ -36,7 +36,7 @@ tree.addTreeWillExpandListener(new TreeWillExpandListener() {
     //throw new ExpandVetoException(e, "Tree collapse cancelled");
   }
 });
-//...
+// ...
 public static void collapseFirstHierarchy(JTree tree) {
   TreeModel model = tree.getModel();
   DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();

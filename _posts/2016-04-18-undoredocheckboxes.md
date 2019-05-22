@@ -21,7 +21,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private BigInteger status = new BigInteger("111000111", 2);
 private static final int BIT_LENGTH = 50;
-//...
+// ...
 for (int i = 0; i &lt; BIT_LENGTH; i++) {
   BigInteger l = BigInteger.ONE.shiftLeft(i);
   JCheckBox c = new JCheckBox(Integer.toString(i + 1));

@@ -31,7 +31,7 @@ comments: true
   }
   //Overridden for performance reasons. ----&gt;
   @Override public void firePropertyChange(String p, boolean ov, boolean nv) {}
-//......
+// ...
 </code></pre>
 
 <pre class="prettyprint"><code>class SliderEditor extends JSlider implements TableCellEditor {
@@ -61,7 +61,7 @@ comments: true
     return Integer.valueOf(getValue());
   }
     //Copied from AbstractCellEditor
-//......
+// ...
 </code></pre>
 
 ## 解説

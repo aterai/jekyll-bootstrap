@@ -19,8 +19,9 @@ comments: true
 {% download https://drive.google.com/uc?id=170XdYlh7LDQaucke8xUxSSN1qlcPWcrGrw %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class DropdownTableComboBox&lt;E extends Vector&lt;Object&gt;&gt; extends JComboBox&lt;E&gt; {
+<pre class="prettyprint"><code>class DropdownTableComboBox&lt;E extends List&lt;Object&gt;&gt; extends JComboBox&lt;E&gt; {
   protected final transient HighlightListener highlighter = new HighlightListener();
+
   protected final JTable table = new JTable() {
     @Override public Component prepareRenderer(
           TableCellRenderer renderer, int row, int column) {
@@ -35,6 +36,7 @@ comments: true
       }
       return c;
     }
+
     @Override public void updateUI() {
       removeMouseListener(highlighter);
       removeMouseMotionListener(highlighter);
@@ -51,7 +53,8 @@ comments: true
     this.list = list;
     table.setModel(model);
     list.forEach(this::addItem);
-    list.forEach(model::addRow);
+    // list.forEach(model::addRow);
+    list.forEach(v -&gt; model.addRow(v.toArray(new Object[0])));
   }
 
   @Override public void updateUI() {
@@ -83,6 +86,7 @@ comments: true
 <pre class="prettyprint"><code>class ComboTablePopup extends BasicComboPopup {
   private final JTable table;
   private final JScrollPane scroll;
+
   protected ComboTablePopup(JComboBox&lt;?&gt; combo, JTable table) {
     super(combo);
     this.table = table;

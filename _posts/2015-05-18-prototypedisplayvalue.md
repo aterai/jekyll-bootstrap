@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>combo3.setPrototypeDisplayValue(TITLE);
-//...
+// ...
 combo5.setRenderer(new SiteListCellRenderer&lt;Site&gt;());
 combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
 </code></pre>
@@ -48,7 +48,7 @@ combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
       setText("");
       setIcon(null);
     }
-//...
+// ...
 </code></pre>
 
 ## 参考リンク

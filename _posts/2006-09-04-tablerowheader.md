@@ -70,7 +70,7 @@ comments: true
       return this;
     }
   }
-  //...
+  // ...
 }
 </code></pre>
 

@@ -23,7 +23,7 @@ comments: true
       PathIterator pi, int sz, String style, String desc) {
   StringBuilder sb = new StringBuilder();
   sb.append("&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n");
-  //...
+  // ...
   sb.append(String.format(
       "&lt;svg width=\"%d\" height=\"%d\" xmlns=\"%s\"&gt;%n", sz, sz, w3));
   sb.append(String.format("  &lt;desc&gt;%s&lt;/desc&gt;%n", desc));

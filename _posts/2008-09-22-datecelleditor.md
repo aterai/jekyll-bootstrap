@@ -78,7 +78,7 @@ comments: true
     fireEditingStopped();
     return true;
   }
-//...
+// ...
 </code></pre>
 
 ## 解説

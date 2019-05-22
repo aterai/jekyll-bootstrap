@@ -20,7 +20,7 @@ comments: true
 table.setAutoCreateRowSorter(true);
 table.setRowHeight(table.getRowHeight() * 2);
 table.setDefaultRenderer(String.class, new TwoRowsCellRenderer());
-//...
+// ...
 
 class TwoRowsCellRenderer extends JPanel implements TableCellRenderer {
   private final JLabel top = new JLabel();

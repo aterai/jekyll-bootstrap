@@ -24,7 +24,7 @@ comments: true
     levelLabel.setText("Level: " + n.getLevel());
   }
 }
-//...
+// ...
 JTree tree = (JTree) getInvoker();
 TreePath path = tree.getSelectionPath();
 if (path.getPathCount() &lt; 3) {

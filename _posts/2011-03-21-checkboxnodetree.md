@@ -108,7 +108,7 @@ comments: true
     }
     return false;
   }
-//......
+// ...
 </code></pre>
 
 ## 解説

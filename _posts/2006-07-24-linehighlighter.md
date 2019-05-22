@@ -59,10 +59,14 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-[Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121) の Darryl.Burke さんのコード(以下に部分コピー)のように、`BasicTextPaneUI#paintBackground`をオーバーライドするシンプルな方法もあります。
+- [Swing - Stretching background colour across whole JTextPane for one line of text](https://community.oracle.com/thread/1364121)の Darryl.Burke さんのコードのように`BasicTextPaneUI#paintBackground(...)`メソッドをオーバーライドする方法もある
 
-<pre class="prettyprint"><code>//JTextPane textPane = new JTextPane();
-//textPane.setUI(new LineHighlightTextPaneUI(textPane));
+<!-- dummy comment line for breaking list -->
+
+<pre class="prettyprint"><code>// https://community.oracle.com/thread/1364121
+// Swing - Stretching background colour across whole JTextPane for one line of text
+// JTextPane textPane = new JTextPane();
+// textPane.setUI(new LineHighlightTextPaneUI(textPane));
 class LineHighlightTextPaneUI extends BasicTextPaneUI {
   private final JTextPane tc;
   public LineHighlightTextPaneUI(JTextPane t) {
@@ -88,7 +92,9 @@ class LineHighlightTextPaneUI extends BasicTextPaneUI {
 }
 </code></pre>
 
-これらの方法なら、`JTextEditor`や`JTextPane`で行の高さが異なる場合でも、うまくハイライトできるようです。
+- この場合、`JTextEditor`や`JTextPane`で行の高さが異なる場合でもハイライト可能
+
+<!-- dummy comment line for breaking list -->
 
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTPTaywxYI/AAAAAAAAAdw/RIlfRHiC-JY/s800/LineHighlighter1.png)
 

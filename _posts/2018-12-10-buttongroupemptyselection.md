@@ -33,8 +33,8 @@ comments: true
 ## 解説
 上記のサンプルでは、`ButtonGroup`内のボタンが`1`つも選択されていない状態かどうかを`ButtonModel#getSelection()`メソッドが`null`を返すかどうかで確認しています。
 
-- [ButtonGroup#getSelection() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ButtonGroup.html#getSelection--)には、「選択されたボタンのモデルを返します。」と`1`つも選択されていない状態で何が返されるかは記述されていない
-    - `ButtonModel`のソースコードではその場合、`null`が返る実装になっている
+- [ButtonGroup#getSelection()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ButtonGroup.html#getSelection--)メソッドのドキュメントには「選択されたボタンのモデルを返します。」とだけ解説されており、`1`つも選択されていない場合はで何が返されるかは記述されていない
+    - `ButtonModel`のソースコードではその場合`null`が返る実装になっている
 
 <!-- dummy comment line for breaking list -->
 

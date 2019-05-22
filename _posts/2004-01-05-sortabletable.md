@@ -25,42 +25,27 @@ comments: true
     fireTableDataChanged();
   }
 }
-class ColumnComparator implements Comparator {
-  final protected int index;
-  final protected boolean ascending;
-  public ColumnComparator(int index, boolean ascending) {
+
+class ColumnComparator implements Comparator&lt;Object&gt;, Serializable {
+  private static final long serialVersionUID = 1L;
+  protected final int index;
+  protected final boolean ascending;
+
+  protected ColumnComparator(int index, boolean ascending) {
     this.index = index;
     this.ascending = ascending;
   }
-  public int compare(Object one, Object two) {
-    if (one instanceof Vector &amp;&amp; two instanceof Vector) {
-      Object oOne = ((Vector) one).elementAt(index);
-      Object oTwo = ((Vector) two).elementAt(index);
-      if (oOne == null &amp;&amp; oTwo == null) {
-        return 0;
-      } else if (oOne == null) {
-        return ascending ? -1 :  1;
-      } else if (oTwo == null) {
-        return ascending ?  1 : -1;
-      } else if (oOne instanceof Comparable &amp;&amp; oTwo instanceof Comparable) {
-        Comparable cOne = (Comparable) oOne;
-        Comparable cTwo = (Comparable) oTwo;
-        return ascending ? cOne.compareTo(cTwo) : cTwo.compareTo(cOne);
-      }
+
+  @SuppressWarnings("unchecked")
+  @Override public int compare(Object one, Object two) {
+    if (one instanceof List &amp;&amp; two instanceof List) {
+      Comparable&lt;Object&gt; o1 = (Comparable&lt;Object&gt;) ((List&lt;Object&gt;) one).get(index);
+      Comparable&lt;Object&gt; o2 = (Comparable&lt;Object&gt;) ((List&lt;Object&gt;) two).get(index);
+      int c = Objects.compare(
+          o1, o2, Comparator.nullsFirst(Comparator.&lt;Comparable&lt;Object&gt;&gt;naturalOrder()));
+      return c * (ascending ? 1 : -1);
     }
-    return 1;
-  }
-  public int compare(Number o1, Number o2) {
-    double n1 = o1.doubleValue();
-    double n2 = o2.doubleValue();
-    if (n1 &lt; n2) {
-      return -1;
-    } else if (n1 &gt; n2) {
-      return 1;
-    } else {
-      return 0;
-    }
-  }
+    return 0;
 }
 </code></pre>
 

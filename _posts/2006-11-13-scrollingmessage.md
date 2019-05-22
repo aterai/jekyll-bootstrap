@@ -47,16 +47,16 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`GlyphVector`や`LineMetrics`から、テキストの`VisualBounds`や`Ascent`を取得して、文字列を描画する位置などを計算しています。
+上記のサンプルでは、`GlyphVector`や`LineMetrics`からテキストの`VisualBounds`や`Ascent`を取得して文字列を描画する位置などを計算しています。
 
-以下のように`TextLayout`を使用する方法もあります。
-
-<pre class="prettyprint"><code>TextLayout tl = new TextLayout(text, font, frc);
-Rectangle2D b = tl.getBounds();
-yy = tl.getAscent() / 2f + (float) b.getY();
+- - - -
+- 以下のように`TextLayout`を使用する方法もある
+    
+    <pre class="prettyprint"><code>TextLayout tl = new TextLayout(text, font, frc);
+    Rectangle2D b = tl.getBounds();
+    yy = tl.getAscent() / 2f + (float) b.getY();
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [GlyphVector (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/GlyphVector.html)
 - [TextLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/font/TextLayout.html)
 

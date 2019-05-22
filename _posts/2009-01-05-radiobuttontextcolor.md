@@ -22,6 +22,7 @@ comments: true
   private static final Color selectedColor = Color.RED;
   private static final Color rolloverColor = Color.BLUE;
   private static final int iconSize = 16;
+
   @Override protected void fireStateChanged() {
     ButtonModel model = getModel();
     if (!model.isEnabled()) {
@@ -37,36 +38,33 @@ comments: true
     }
     super.fireStateChanged();
   }
-//...
+  // ...
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`JRadioButton`が選択やロールオーバーした時の文字色をマウスリスナーではなく`AbstractButton#fireStateChanged()`メソッドをオーバーライドして変更しています。
 
-アイコンは、`setPressedIcon`、`setSelectedIcon`、`setRolloverIcon`メソッドなどが用意されているので、これを使用しています。
-
-- - - -
-以下のような、`ChangeListener`を使用する方法もあります。
-
-<pre class="prettyprint"><code>radioButton.addChangeListener(new ChangeListener() {
-  @Override public void stateChanged(ChangeEvent e) {
-    ButtonModel model = radioButton.getModel();
-    if (!model.isEnabled()) {
-      radioButton.setForeground(Color.GRAY);
-    } else if (model.isPressed() &amp;&amp; model.isArmed()) {
-      radioButton.setForeground(pressedColor);
-    } else if (model.isSelected()) {
-      radioButton.setForeground(selectedColor);
-    } else if (isRolloverEnabled() &amp;&amp; model.isRollover()) {
-      radioButton.setForeground(rolloverColor);
-    } else {
-      radioButton.setForeground(defaultColor);
-    }
-  }
-});
+- 文字色ではなくアイコンを変更する場合は、`setPressedIcon(...)`、`setSelectedIcon(...)`、`setRolloverIcon(...)`メソッドが使用可能
+- 以下のような`ChangeListener`を使用する方法もある
+    
+    <pre class="prettyprint"><code>radioButton.addChangeListener(new ChangeListener() {
+      @Override public void stateChanged(ChangeEvent e) {
+        ButtonModel model = radioButton.getModel();
+        if (!model.isEnabled()) {
+          radioButton.setForeground(Color.GRAY);
+        } else if (model.isPressed() &amp;&amp; model.isArmed()) {
+          radioButton.setForeground(pressedColor);
+        } else if (model.isSelected()) {
+          radioButton.setForeground(selectedColor);
+        } else if (isRolloverEnabled() &amp;&amp; model.isRollover()) {
+          radioButton.setForeground(rolloverColor);
+        } else {
+          radioButton.setForeground(defaultColor);
+        }
+      }
+    });
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [AbstractButton#fireStateChanged() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#fireStateChanged--)
 - [ButtonModel (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/ButtonModel.html)
 - [ChangeListener (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/event/ChangeListener.html)

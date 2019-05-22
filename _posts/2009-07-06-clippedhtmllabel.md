@@ -65,7 +65,7 @@ comments: true
     }
     return this;
   }
-  //...
+  // ...
 </code></pre>
 
 ## 解説

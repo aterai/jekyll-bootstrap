@@ -212,7 +212,7 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
   //protected EventListenerList listenerList = new EventListenerList();
   //transient protected ChangeEvent changeEvent = null;
   @Override public boolean shouldSelectCell(EventObject anEvent) {
-//...
+// ...
 </code></pre>
 
 ## 参考リンク

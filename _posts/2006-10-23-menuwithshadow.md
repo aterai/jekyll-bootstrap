@@ -42,7 +42,7 @@ comments: true
     panel.setOpaque(false);
     return pp;
   }
-//...
+// ...
 </code></pre>
 
 ## 解説

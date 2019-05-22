@@ -26,7 +26,7 @@ comments: true
     });
   }
 };
-//...
+// ...
 class BumpsFreeInternalFrameTitlePane extends BasicInternalFrameTitlePane {
   protected BumpsFreeInternalFrameTitlePane(JInternalFrame w) {
     super(w);

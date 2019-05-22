@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private static final int MW = 320;
 private static final int MH = 200;
-//...
+// ...
 frame.addComponentListener(new ComponentAdapter() {
   @Override public void componentResized(ComponentEvent e) {
     int fw = frame.getSize().width;

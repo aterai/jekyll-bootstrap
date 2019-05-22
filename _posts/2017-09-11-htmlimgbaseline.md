@@ -60,7 +60,7 @@ comments: true
         protected void setPropertiesFromAttributes() {
           StyleSheet sheet = getStyleSheet();
           this.attr = sheet.getViewAttributes(this);
-          //...
+          // ...
           AttributeSet attr = getElement().getAttributes();
           // Alignment.
           // PENDING: This needs to be changed to support the CSS versions
@@ -75,7 +75,7 @@ comments: true
               vAlign = .5f;
             }
           }
-          //...
+          // ...
 </code></pre>
 - 下
     - `ImageView#getAlignment(...)`メソッドをオーバーライドして、`vertical-align`を直接指定する`HTMLFactory`を作成し、`HTMLEditorKit#getViewFactory()`メソッドで使用するよう設定

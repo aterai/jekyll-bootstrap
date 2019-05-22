@@ -57,7 +57,7 @@ comments: true
       }
     };
     toolBox.addMouseListener(ma);
-    //...
+    // ...
 </code></pre>
 
 ## 解説

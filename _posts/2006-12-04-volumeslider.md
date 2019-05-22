@@ -30,7 +30,7 @@ comments: true
     if (slider.getOrientation() == SwingConstants.HORIZONTAL ) {
       Graphics2D g2 = (Graphics2D) g.create();
 
-//...
+// ...
 
 slider2.setUI(new MetalSliderUI() {
   @Override protected void paintHorizontalLabel(Graphics g, int v, Component l) {

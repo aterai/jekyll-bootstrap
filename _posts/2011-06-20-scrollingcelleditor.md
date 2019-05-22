@@ -75,7 +75,7 @@ comments: true
     });
     return true;
   }
-  //...
+  // ...
 }
 </code></pre>
 

@@ -94,7 +94,7 @@ public TabTransferHandler() {
       dialog.setLocation(pt);
     }
   });
-//...
+// ...
 </code></pre>
 
 ## 参考リンク

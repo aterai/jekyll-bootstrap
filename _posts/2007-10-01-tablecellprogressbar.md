@@ -42,7 +42,7 @@ comments: true
 }
 </code></pre>
 <pre class="prettyprint"><code>private final Executor executor = Executors.newCachedThreadPool();
-//...
+// ...
 final int rowNumber = model.getRowCount();
 SwingWorker&lt;Integer, Integer&gt; worker = new SwingWorker&lt;Integer, Integer&gt;() {
   private int sleepDummy = new Random().nextInt(100) + 1;

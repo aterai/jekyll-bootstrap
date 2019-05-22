@@ -127,7 +127,7 @@ class CancelAction extends AbstractAction {
       if (progress &lt; 0 || progress &gt; 100) {
         throw new IllegalArgumentException("the value should be from 0 to 100");
       }
-    //...
+    // ...
 </code></pre>
 - 実行中の処理のキャンセルは、`SwingWorker#cancel(boolean)`メソッドで行います。キャンセルされたかどうかは、`SwingWorker#isCancelled()`メソッドで判定可能
 

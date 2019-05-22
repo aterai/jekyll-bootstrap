@@ -29,7 +29,7 @@ UIManager.put("Tree.timeFactor", 1000L);
 - `ComboBox.timeFactor`
     - 編集不可の`JComboBox`で先頭文字列検索に使用するキー入力遅延時間を設定可能
     - `JComboBox`のドロップダウンリスト中の`JList`にのみ有効
-    - `JFileChooser`内の`JComboBox`には無効(先頭文字列検索自体が無効)
+    - `JFileChooser`内の`JComboBox`には無効(先頭文字列検索自体が無効になっているため)
 - `List.timeFactor`
     - `JList`で先頭文字列検索に使用するキー入力遅延時間を設定可能
     - `JFileChooser`内のリストビュー(`JList`)にも有効
@@ -39,7 +39,7 @@ UIManager.put("Tree.timeFactor", 1000L);
     - 参考: [JTableで先頭文字のキー入力による検索を行う](https://ateraimemo.com/Swing/TableNextMatchKeyHandler.html)
 - `JTree.timeFactor`
     - `JTree`で先頭文字列検索に使用するキー入力遅延時間を設定可能
-    - 閉じているノード以下の子要素は検索対象にならない
+    - 閉じた状態のノード以下の子要素は検索対象にならない
 
 <!-- dummy comment line for breaking list -->
 

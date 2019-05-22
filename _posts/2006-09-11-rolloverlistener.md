@@ -17,49 +17,51 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class RollOverList&lt;E&gt; extends JList&lt;E&gt; {
-  private static final Color ROLLOVERBACKGROUND = new Color(220, 240, 255);
-  private transient RollOverListener rollOverListener;
-  public RollOverList(ListModel&lt;E&gt; model) {
+  protected static final Color ROLLOVER_BACKGROUND = new Color(0xDC_F0_FF);
+  protected transient RollOverListener rollOverListener;
+  protected int rollOverRowIndex = -1;
+
+  protected RollOverList(ListModel&lt;E&gt; model) {
     super(model);
   }
+
   @Override public void updateUI() {
-    if (rollOverListener != null) {
-      removeMouseListener(rollOverListener);
-      removeMouseMotionListener(rollOverListener);
-    }
-    setSelectionBackground(null); //Nimbus
+    removeMouseListener(rollOverListener);
+    removeMouseMotionListener(rollOverListener);
+    setSelectionBackground(null); // Nimbus
     super.updateUI();
-    EventQueue.invokeLater(new Runnable() {
-      @Override public void run() {
-        rollOverListener = new RollOverListener();
-        addMouseMotionListener(rollOverListener);
-        addMouseListener(rollOverListener);
-        setCellRenderer(new RollOverCellRenderer());
-      }
-    });
+    rollOverListener = new RollOverListener();
+    addMouseMotionListener(rollOverListener);
+    addMouseListener(rollOverListener);
+    setCellRenderer(new RollOverCellRenderer());
   }
-  private class RollOverCellRenderer extends DefaultListCellRenderer {
+
+  private class RollOverCellRenderer implements ListCellRenderer&lt;E&gt; {
+    private final ListCellRenderer&lt;? super E&gt; renderer = new DefaultListCellRenderer();
+
     @Override public Component getListCellRendererComponent(
-        JList list, Object value, int index,
-        boolean isSelected, boolean cellHasFocus) {
-      Component c = super.getListCellRendererComponent(
+          JList&lt;? extends E&gt; list, E value, int index,
+          boolean isSelected, boolean cellHasFocus) {
+      Component c = renderer.getListCellRendererComponent(
           list, value, index, isSelected, cellHasFocus);
-      if (rollOverListener != null
-          &amp;&amp; index == rollOverListener.rollOverRowIndex) {
-        c.setBackground(ROLLOVERBACKGROUND);
+      if (index == rollOverRowIndex) {
+        c.setBackground(ROLLOVER_BACKGROUND);
         if (isSelected) {
           c.setForeground(Color.BLACK);
         }
+        // c.setForeground(getSelectionForeground());
+        // c.setBackground(getSelectionBackground());
       }
       return c;
     }
   }
+
   private class RollOverListener extends MouseAdapter {
-    private int rollOverRowIndex = -1;
     @Override public void mouseExited(MouseEvent e) {
       rollOverRowIndex = -1;
       repaint();
     }
+
     @Override public void mouseMoved(MouseEvent e) {
       int row = locationToIndex(e.getPoint());
       if (row != rollOverRowIndex) {

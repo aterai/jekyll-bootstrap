@@ -87,7 +87,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>PopupFactory.setSharedInstance(new TranslucentPopupFactory());
-//...
+// ...
 class TranslucentPopupFactory extends PopupFactory {
   @Override public Popup getPopup(Component owner, Component contents, int x, int y)
                                                    throws IllegalArgumentException {
@@ -141,7 +141,7 @@ class TranslucentPopupFactory extends PopupFactory {
     super.show(c, x, y);
   }
   @Override protected void paintComponent(Graphics g) {
-//...
+// ...
 </code></pre>
 
 ## 参考リンク

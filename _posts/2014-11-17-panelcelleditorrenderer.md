@@ -95,7 +95,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
   }
 
   //Copied from AbstractCellEditor
-  //...
+  // ...
 </code></pre>
 
 ## 解説

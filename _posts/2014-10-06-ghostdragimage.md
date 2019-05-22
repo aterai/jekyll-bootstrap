@@ -86,7 +86,7 @@ comments: true
     br.coerceData(true);
     return br;
   }
-//...
+// ...
 </code></pre>
 
 ## 解説

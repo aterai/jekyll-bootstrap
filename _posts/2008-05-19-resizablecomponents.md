@@ -50,7 +50,7 @@ comments: true
     case Cursor.NE_RESIZE_CURSOR: {
       if (startingBounds.height + deltaY &lt; min.height) {
         deltaY = -(startingBounds.height - min.height);
-//...
+// ...
 </code></pre>
 
 ## 解説

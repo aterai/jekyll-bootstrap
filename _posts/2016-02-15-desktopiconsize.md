@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("DesktopIcon.width", 150);
-//...
+// ...
 JInternalFrame f = new JInternalFrame(t, true, true, true, true);
 f.setDesktopIcon(new JInternalFrame.JDesktopIcon(f) {
   @Override public Dimension getPreferredSize() {

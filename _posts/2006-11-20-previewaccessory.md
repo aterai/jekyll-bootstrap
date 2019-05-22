@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>fileChooser = new JFileChooser();
 fileChooser.setAccessory(new ImagePreview(fileChooser));
-//...
+// ...
 
 //https://docs.oracle.com/javase/tutorial/uiswing/examples/components/FileChooserDemo2Project/src/components/ImagePreview.java
 class ImagePreview extends JComponent implements PropertyChangeListener {

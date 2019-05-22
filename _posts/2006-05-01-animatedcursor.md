@@ -58,10 +58,10 @@ button = new JButton(new AbstractAction("Start") {
 ## コメント
 - `Cursor`に用いる`png`ファイルは、フルカラー(`24`ビット)ではなく`256`色にしておかないと、うまく透過できないようです。もしかしたら自分の`PC`の画面の色が`16`ビットになっているせいかもしれません。 -- *aterai* 2006-07-11 (火) 12:41:59
     - `32`ビットにしてもだめみたいです。 -- *aterai* 2006-07-25 (火) 16:53:29
-    - 追記: `JDK 6`なら、フルカラーでも問題なく透過できるようです。[Bug ID: 6388546 PNG with transparent background doesn't render correctly](https://bugs.openjdk.java.net/browse/JDK-6388546) -- *aterai* 2008-07-28 (月) 16:27:56
+    - 追記: `JDK 6`なら、フルカラーでも問題なく透過できるようです。[&#91;JDK-6388546&#93; PNG with transparent background doesn't render correctly - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6388546) -- *aterai* 2008-07-28 (月) 16:27:56
 - `Windows XP`で、カーソルを`Animated GIF`ファイルから生成(`Toolkit.getDefaultToolkit().createCustomCursor`)しようとすると、 ~~落ちる？~~ `Ubuntu`だと、アニメーションはしないけど、ちゃんと画像がカーソルになる。 -- *aterai* 2007-05-08 (火) 14:25:37
     - デッドロック？ -- *aterai* 2008-05-07 (水) 19:38:38
-    - メモ: [Bug ID: 4343270 Toolkit.createCustomCursor() hangs the VM under Win NT](https://bugs.openjdk.java.net/browse/JDK-4343270)、[Bug ID: 4939855 Please allow Toolkit.createCustomCursor() to accept multi-frame images](https://bugs.openjdk.java.net/browse/JDK-4939855) -- *aterai* 2008-09-01 (月) 23:18:57
+    - メモ: [&#91;JDK-4343270&#93; Toolkit.createCustomCursor() hangs the VM under Win NT - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4343270)、[&#91;JDK-4939855&#93; Please allow Toolkit.createCustomCursor() to accept multi-frame images - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4939855) -- *aterai* 2008-09-01 (月) 23:18:57
     - よくみたら、[Toolkit#createCustomCursor(...)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Toolkit.html#createCustomCursor-java.awt.Image-java.awt.Point-java.lang.String-)に、「マルチフレームイメージは無効で、このメソッドがハングすることがあります。」と注意書きが存在する(`1.4.2`のドキュメントから？)。 -- *aterai* 2010-01-19 (火) 17:03:17
 
 <!-- dummy comment line for breaking list -->

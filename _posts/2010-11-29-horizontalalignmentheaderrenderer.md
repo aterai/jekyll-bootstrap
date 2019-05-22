@@ -89,7 +89,7 @@ table.getColumnModel().getColumn(2).setHeaderRenderer(
 } catch (Exception e) {
   e.printStackTrace();
 }
-//...
+// ...
 final TableCellRenderer renderer = table.getTableHeader().getDefaultRenderer();
 //table.getColumnModel().getColumn(0).setHeaderRenderer(new TableCellRenderer() {
 table.getTableHeader().setDefaultRenderer(new TableCellRenderer() {

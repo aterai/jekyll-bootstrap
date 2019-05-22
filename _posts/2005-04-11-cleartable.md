@@ -35,18 +35,17 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 - - - -
-`DefaultTableModel`を継承していない場合は、モデルに以下の要領(詳細は`DefaultTableModel.java`のソースを参照)で行を全削除するメソッドを実装します。
-
-<pre class="prettyprint"><code>public void clear() {
-  //以下のdataVectorは実装に合わせて変更する
-  int size = dataVector.size();
-  dataVector.clear();
-  fireTableRowsDeleted(0, size - 1);
-  //fireTableDataChanged();
-}
+- `DefaultTableModel`を継承していない場合は、モデルに以下の要領(詳細は`DefaultTableModel.java`のソースを参照)で行を全削除するメソッドを実装する必要がある
+    
+    <pre class="prettyprint"><code>public void clear() {
+      // 以下のdataVectorは実装に合わせて変更する
+      int size = dataVector.size();
+      dataVector.clear();
+      fireTableRowsDeleted(0, size - 1);
+      // fireTableDataChanged();
+    }
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [JTableの行を追加、削除](https://ateraimemo.com/Swing/AddRow.html)
 - [JTableのセルにJButtonを追加して行削除](https://ateraimemo.com/Swing/DeleteButtonInCell.html)
 - [JDK-8032874 ArrayIndexOutOfBoundsException in JTable while clearing data in JTable - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8032874)

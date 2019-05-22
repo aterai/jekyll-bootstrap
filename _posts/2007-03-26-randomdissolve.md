@@ -25,6 +25,7 @@ comments: true
   private boolean mode = true;
   private int currentStage;
   private int[] src, dst, step;
+
   public RandomDissolve(BufferedImage i1, BufferedImage i2) {
     super();
     this.image1 = i1;
@@ -32,6 +33,7 @@ comments: true
     this.srcimg = copyImage(mode ? image2 : image1);
     animator = new Timer(10, this);
   }
+
   public boolean nextStage() {
     if (currentStage &gt; 0) {
       currentStage = currentStage - 1;
@@ -45,6 +47,7 @@ comments: true
       return false;
     }
   }
+
   private BufferedImage copyImage(final BufferedImage image) {
     int w = image.getWidth();
     int h = image.getHeight();
@@ -54,11 +57,13 @@ comments: true
     g.dispose();
     return result;
   }
+
   private int[] getData(BufferedImage image) {
     WritableRaster wr = image.getRaster();
     DataBufferInt dbi = (DataBufferInt) wr.getDataBuffer();
     return dbi.getData();
   }
+
   public void animationStart() {
     currentStage = STAGES;
     srcimg = copyImage(mode ? image2 : image1);
@@ -72,6 +77,7 @@ comments: true
     }
     animator.start();
   }
+
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     Graphics2D g2d = (Graphics2D) g.create();
@@ -80,6 +86,7 @@ comments: true
     g2d.drawImage(srcimg, 0, 0, srcimg.getWidth(), srcimg.getHeight(), this);
     g2d.dispose();
   }
+
   @Override public void actionPerformed(ActionEvent e) {
     if (nextStage()) {
       repaint();
@@ -91,7 +98,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`BufferedImage`から`WritableRaster`を取得し、元画像と次の画像のコピーから、`int`配列をそれぞれ用意しています。元画像の配列を次の画像のピクセルでランダムに置き換えて、これを再描画することで画像の切り替えを行っています。
+上記のサンプルでは、`BufferedImage`から`WritableRaster`を取得し、元画像と次の画像のコピーから`int`配列をそれぞれ用意しています。元画像の配列を次の画像のピクセルでランダムに置き換えて、これを再描画することで画像の切り替えを行っています。
 
 ## 参考リンク
 - [Java 2D - random pixelwise fading ?](https://community.oracle.com/thread/1270228)

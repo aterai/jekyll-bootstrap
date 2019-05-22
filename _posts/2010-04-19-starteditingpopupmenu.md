@@ -74,7 +74,7 @@ tree.setComponentPopupMenu(new TreePopupMenu());
               }
             }
           }));
-        //......
+        // ...
 </code></pre>
     - * 参考リンク [#reference]
 - [JTreeのノード上でJPopupMenuを表示](https://ateraimemo.com/Swing/TreeNodePopupMenu.html)

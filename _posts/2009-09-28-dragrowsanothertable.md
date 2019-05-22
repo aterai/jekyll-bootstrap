@@ -95,7 +95,8 @@ comments: true
       }
       for (int i = 0; i &lt; values.length; i++) {
         int idx = index++;
-        model.insertRow(idx, (Vector) values[i]);
+        // model.insertRow(idx, (Vector&lt;?&gt;) values[i]);
+        model.insertRow(i, ((List&lt;?&gt;) o).toArray(new Object[0]));
         target.getSelectionModel().addSelectionInterval(idx, idx);
       }
       return true;

@@ -19,7 +19,7 @@ comments: true
 <pre class="prettyprint"><code>desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);
 desktop.setDesktopManager(new MagneticDesktopManager());
 
-//...
+// ...
 class MagneticDesktopManager extends DefaultDesktopManager {
   @Override public void dragFrame(JComponent frame, int x, int y) {
     Container c = SwingUtilities.getAncestorOfClass(JDesktopPane.class, frame);

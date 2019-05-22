@@ -20,7 +20,7 @@ comments: true
 Style def = doc.getStyle(StyleContext.DEFAULT_STYLE);
 Style htf = doc.addStyle("highlight-text-foreground", def);
 StyleConstants.setForeground(htf, new Color(0xFF_DD_FF));
-//...
+// ...
 
 //clear the previous highlight:
 Highlighter highlighter = textPane.getHighlighter();
@@ -29,7 +29,7 @@ for (Highlighter.Highlight h: highlighter.getHighlights()) {
       h.getStartOffset(), h.getEndOffset() - h.getStartOffset(), def, true);
 }
 highlighter.removeAllHighlights();
-//...
+// ...
 
 //match highlighting:
 Highlighter.Highlight hh = highlighter.getHighlights()[current];

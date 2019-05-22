@@ -21,7 +21,7 @@ comments: true
     .filter(Container.class::isInstance).map(c -&gt; stream(Container.class.cast(c)))
     .reduce(Stream.of(parent), Stream::concat);
 }
-//...
+// ...
 stream(chooser)
   .filter(JTable.class::isInstance).map(JTable.class::cast)
   .findFirst()

@@ -46,12 +46,12 @@ expandedState = tree.getExpandedDescendants(rootPath);
     try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(xmlFile)))) {
       xe.writeObject(tree);
       //xe.close();
-      //...
+      // ...
     
       //ObjectOutputStreamの場合は、選択状態、展開状態なども保存、復元可能
       ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
       oos.writeObject(tree);
-      //...
+      // ...
 </code></pre>
 - * 参考リンク [#reference]
 - [JTree#getExpandedDescendants(TreePath) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getExpandedDescendants-javax.swing.tree.TreePath-)

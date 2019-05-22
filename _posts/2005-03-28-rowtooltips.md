@@ -62,7 +62,7 @@ comments: true
           boolean hasFocus, int row, int column) {
         super.getTableCellRendererComponent(
           table, value, isSelected, hasFocus, row, column);
-        //...
+        // ...
         this.setToolTipText(...);
         return this;
       }

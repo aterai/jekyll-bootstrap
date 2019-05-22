@@ -20,7 +20,7 @@ comments: true
 Map&lt;TextAttribute, Object&gt; attrs = new HashMap&lt;&gt;(font.getAttributes());
 attrs.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_LOW_DOTTED);
 textField.setFont(font.deriveFont(attrs));
-//...
+// ...
 enum UnderlineStyle {
   UNDERLINE_OFF(-1),
   UNDERLINE_LOW_DASHED(TextAttribute.UNDERLINE_LOW_DASHED),

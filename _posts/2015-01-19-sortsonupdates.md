@@ -16,7 +16,10 @@ comments: true
 {% download https://lh3.googleusercontent.com/-sydiHRbXRzw/VLvNhDDXdlI/AAAAAAAANvI/Qelj8B1NIWs/s800/SortsOnUpdates.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>((DefaultRowSorter) table.getRowSorter()).setSortsOnUpdates(true);
+<pre class="prettyprint"><code>RowSorter&lt;? extends TableModel&gt; rs = table.getRowSorter();
+if (rs instanceof DefaultRowSorter) {
+  ((DefaultRowSorter&lt;?, ?&gt;) rs).setSortsOnUpdates(true);
+}
 </code></pre>
 
 ## 解説

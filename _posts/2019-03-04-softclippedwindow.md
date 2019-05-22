@@ -64,7 +64,31 @@ private static BufferedImage makeClippedImage(BufferedImage source, Shape shape)
 
 <!-- dummy comment line for breaking list -->
 
-## 参考リンク
+- - - -
+- `Corretto 1.8.0_212`(`Windows 10`環境)でソフトクリッピング効果を使用すると描画がおかしくなる？
+
+		openjdk version "1.8.0_212"
+		OpenJDK Runtime Environment Corretto-8.212.04.2 (build 1.8.0_212-b04)
+		OpenJDK 64-Bit Server VM Corretto-8.212.04.2 (build 25.212-b04, mixed mode)
+		#img2(https://drive.google.com/uc?id=1UmzUcA-QK_mtJAYvjvDn5-qoud7PfOWO_Q)
+- ~~[Java 2Dテクノロジのシステム・プロパティ](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/2d/flags.html)などを変更して調査しているがまだ原因不明~~
+    - 切り抜き図形の幅を`32`の倍数以外にすると発生しない(高さは無関係？)
+    - 上記スクリーンショットの抜け部分のサイズは`32px`
+    - [Java2D rendering may break when using soft clipping effects · Issue #127 · corretto/corretto-8](https://github.com/corretto/corretto-8/issues/127)、`8u222`で修正される予定
+
+<!-- dummy comment line for breaking list -->
+
+- `Corretto 11.0.3`では正常
+
+		openjdk version "11.0.3" 2019-04-16 LTS
+		OpenJDK Runtime Environment Corretto-11.0.3.7.1 (build 11.0.3+7-LTS)
+		OpenJDK 64-Bit Server VM Corretto-11.0.3.7.1 (build 11.0.3+7-LTS, mixed mode)
+- `AdoptOpenJDK 1.8.0_212`では正常
+
+		openjdk version "1.8.0_212"
+		OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_212-b03)
+		OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
+- * 参考リンク [#reference]
 - [campbell: Java 2D Trickery: Soft Clipping Blog | Oracle Community](https://community.oracle.com/blogs/campbell/2006/07/19/java-2d-trickery-soft-clipping)
     - [Java Developer Connection](http://otn.oracle.co.jp/technology/global/jp/sdn/java/private/techtips/2006/tt0923.html)
 - [Soft clipping and per-pixel translucency for Swing windows · Pushing Pixels](https://www.pushing-pixels.org/2008/03/03/soft-clipping-and-per-pixel-translucency-for-swing-windows.html)

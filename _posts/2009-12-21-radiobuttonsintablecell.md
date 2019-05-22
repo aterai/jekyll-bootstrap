@@ -98,7 +98,7 @@ comments: true
   //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
-//......
+// ...
 </code></pre>
 
 ## 解説

@@ -19,12 +19,12 @@ comments: true
 <pre class="prettyprint"><code>private class MouseHandler extends MouseAdapter {
   public void mouseClicked(MouseEvent e) {
     JTableHeader h = (JTableHeader) e.getSource();
-//......
+// ...
     if (column != -1) {
       int keyCol = 0;
       Vector list = saveSelectedRow(h.getTable(), keyCol);
       int status = getSortingStatus(column);
-//......
+// ...
       setSortingStatus(column, status);
       loadSelectedRow(h.getTable(), list, keyCol);
     }
@@ -47,7 +47,7 @@ void loadSelectedRow(JTable table, Vector list, int keyCol) {
     }
   }
 }
-//......
+// ...
 </code></pre>
 
 ## 解説

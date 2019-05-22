@@ -47,7 +47,7 @@ protected static boolean isAvailableLookAndFeel(String laf) {
     return false;
   }
 }
-//...
+// ...
 private class ChangeLookAndFeelAction extends AbstractAction {
   private final String laf;
   protected ChangeLookAndFeelAction(String laf) {

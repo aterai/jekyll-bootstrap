@@ -25,7 +25,7 @@ if (r2.isSelected()) {
     });
   });
 }
-//...
+// ...
 private static Optional&lt;Component&gt; findFileNameTextField(JFileChooser fileChooser) {
   return Arrays.stream(fileChooser.getComponents())
   .flatMap(new Function&lt;Component, Stream&lt;Component&gt;&gt;() {

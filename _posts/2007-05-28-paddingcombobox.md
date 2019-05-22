@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>static Border padding = BorderFactory.createEmptyBorder(0, 5, 0, 0);
-//...
+// ...
 DefaultComboBoxModel&lt;String&gt; model = new DefaultComboBoxModel&lt;&gt;();
 model.addElement("aaaaaaaaaaaaaaaaaaaaaaaaa");
 model.addElement("aaaabbb");

@@ -54,7 +54,7 @@ DefaultTableModel model = new DefaultTableModel(data, columnNames) {
 };
 JTable table = new JTable(model);
 
-//...
+// ...
 model.addTableModelListener(new TableModelListener() {
   @Override public void tableChanged(TableModelEvent e) {
     if (e.getType() == TableModelEvent.UPDATE &amp;&amp; e.getColumn() == 1) {

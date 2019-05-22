@@ -54,7 +54,7 @@ icon2 = new ImageIcon(destination);
     return (argb &amp; 0xFF_00_00_00) | (m &lt;&lt; 16) | (m &lt;&lt; 8) | m;
   }
 }
-//...
+// ...
 ImageProducer ip = new FilteredImageSource(img.getSource(), new MyGrayFilter());
 icon2 = new ImageIcon(Toolkit.getDefaultToolkit().createImage(ip));
 </code></pre>

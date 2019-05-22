@@ -32,7 +32,7 @@ comments: true
     setBorder(BorderFactory.createEmptyBorder(2, 2, 2, 2));
   }
 };
-//...
+// ...
 private class ContributionListRenderer implements ListCellRenderer&lt;Contribution&gt; {
   private final Icon emptyIcon = new ColorIcon(Color.WHITE);
   private final ListCellRenderer&lt;? super Contribution&gt; renderer
@@ -62,7 +62,7 @@ private class ContributionListRenderer implements ListCellRenderer&lt;Contributi
 - `WeekFields#getFirstDayOfWeek()`メソッドで`Locale`に応じた週の最初の曜日を取得して、`JList`の`0`行目を設定
     
     <pre class="prettyprint"><code>public static final int WEEK_VIEW = 27;
-    //...
+    // ...
     WeekFields weekFields = WeekFields.of(Locale.getDefault());
     int dow = today.get(weekFields.dayOfWeek()) - 1;
     startDate = today.minusWeeks(WEEK_VIEW - 1).minusDays(dow);

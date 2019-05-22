@@ -114,7 +114,7 @@ class MenuToggleButton extends JToggleButton {
       g2.dispose();
     }
     super.paintComponent(g);
-    //......
+    // ...
   }
 };
 button.setBackground(Color.RED);

@@ -23,7 +23,7 @@ comments: true
                                        Rectangle tabRect, Rectangle iconRect,
                                        Rectangle textRect, boolean isSelected ) {
     textRect.x = textRect.y = iconRect.x = iconRect.y = 0;
-    //...
+    // ...
     SwingUtilities.layoutCompoundLabel((JComponent) tabPane,
                                        metrics, title, icon,
                                        SwingUtilities.CENTER,
@@ -37,7 +37,7 @@ comments: true
     tabPane.putClientProperty("html", null);
     textRect.translate(tabInsets.left, 0); //&lt;----
     textRect.width -= tabInsets.left + tabInsets.right;
-    //...
+    // ...
   }
 }
 </code></pre>
@@ -56,10 +56,10 @@ comments: true
   //unset default FlowLayout' gaps
   //super(new FlowLayout(FlowLayout.LEFT, 0, 0));
   super(new BorderLayout(0, 0));
-  //...
+  // ...
   //add(button);
   add(button, BorderLayout.EAST);
-  //...
+  // ...
 </code></pre>
 
 ## 参考リンク
