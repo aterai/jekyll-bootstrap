@@ -45,6 +45,8 @@ combo1.setRenderer(new DefaultListCellRenderer() {
 - [JTextFieldにフォーカスと文字列が無い場合の表示](https://ateraimemo.com/Swing/GhostText.html)
 - [JTextFieldに透かし画像を表示する](https://ateraimemo.com/Swing/WatermarkInTextField.html)
 - [JPasswordFieldにヒント文字列を描画する](https://ateraimemo.com/Swing/InputHintPasswordField.html)
+- [ComboBoxEditorにJLayerを設定してプレースホルダ文字列を表示する](https://ateraimemo.com/Swing/ComboEditorPlaceholder.html)
+    - こちらは編集可能な`JComboBox`でプレースホルダ文字列を表示する場合のサンプル
 
 <!-- dummy comment line for breaking list -->
 

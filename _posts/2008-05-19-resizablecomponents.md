@@ -63,15 +63,17 @@ comments: true
 
 - - - -
 - `JDK1.5`では、`JLayeredPane#setComponentPopupMenu`を使う場合、以下のようにダミーのマウスリスナーなどを追加しておく必要がある
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>layer.setComponentPopupMenu(new MyPopupMenu());
-layer.addMouseListener(new MouseAdapter() {});
+    
+    <pre class="prettyprint"><code>layer.setComponentPopupMenu(new MyPopupMenu());
+    layer.addMouseListener(new MouseAdapter() {});
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 - `JDK1.6`では、背面にある`JTable`のヘッダが前面にロールオーバーする場合がある
+    - `JInternalFrame`が存在する場合は自動的に`JLayeredPane#isOptimizedDrawingEnabled()`が`false`になるよう変更されが、このサンプルでは`JTable`などを直接`JLayeredPane`に配置しているためこの現象が発生する
+    - 以前のように`JLayeredPane#isOptimizedDrawingEnabled()`が常に`false`を返すようオーバーライドすれば回避可能
+    - 参考: [Component上に重ねて配置したダイアログの表示状態をアニメーション付きで切り替える](https://ateraimemo.com/Swing/OverlayBorderLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

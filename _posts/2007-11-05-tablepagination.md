@@ -31,7 +31,7 @@ private TableRowSorter&lt;TableModel&gt; sorter = new TableRowSorter&lt;TableMod
 private Box box = Box.createHorizontalBox();
 
 private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
-  //assert currentPageIndex &gt; 0;
+  // assert currentPageIndex &gt; 0;
   sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
     @Override
     public boolean include(Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
@@ -46,9 +46,9 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
     startPageIndex = 1;
   }
 
-//#if 0 //BUG
-  //int maxPageIndex = (model.getRowCount() / itemsPerPage) + 1;
-//#else
+// #if 0 //BUG
+  // int maxPageIndex = (model.getRowCount() / itemsPerPage) + 1;
+// #else
   /* "maxPageIndex" gives one blank page if the module of the division is not zero.
    *   pointed out by erServi
    * e.g. rowCount=100, maxPageIndex=100
@@ -56,7 +56,7 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
   int rowCount = model.getRowCount();
   int v = rowCount % itemsPerPage == 0 ? 0 : 1;
   int maxPageIndex = rowCount / itemsPerPage + v;
-//#endif
+// #endif
   int endPageIndex = currentPageIndex + LR_PAGE_SIZE - 1;
   if (endPageIndex &gt; maxPageIndex) {
     endPageIndex = maxPageIndex;
@@ -64,8 +64,8 @@ private void initLinkBox(final int itemsPerPage, final int currentPageIndex) {
 
   box.removeAll();
   if (startPageIndex &gt;= endPageIndex) {
-    //if I only have one page, Y don't want to see pagination buttons
-    //suggested by erServi
+    // if I only have one page, Y don't want to see pagination buttons
+    // suggested by erServi
     return;
   }
 

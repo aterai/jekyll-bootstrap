@@ -51,7 +51,10 @@ comments: true
   }
   int animate_index = -1;
   private class MarqueeLabel extends JLabel {
+    // ...
+  }
   // ...
+}
 </code></pre>
 
 ## 解説

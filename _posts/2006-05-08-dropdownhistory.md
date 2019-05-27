@@ -34,7 +34,12 @@ comments: true
 </code></pre>
 
 ## 解説
-`JComboBox`に検索する文字列が入力されて、検索ボタンが押されるたびに履歴を更新しています。上記のサンプルでは、`4`個まで履歴を保存し、それ以上は古いものから消されます。履歴にある文字列が再度検索された場合は、それを一番上に移動しています。
+上記のサンプルでは、`JComboBox`に検索する文字列が入力されて検索ボタンが押されるたびに履歴を更新しています。
+
+- `4`個まで履歴を保存し、それ以上は古いものから削除
+- 履歴にある文字列が再度検索された場合は、それを一番上に移動
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [DefaultComboBoxModel#insertElementAt(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultComboBoxModel.html#insertElementAt-E-int-)
