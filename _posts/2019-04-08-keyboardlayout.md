@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2019-04-08T15:13:08+09:00
 description: GridBagLayoutを使用してJButtonをキーボード状に配置します。
 image: https://drive.google.com/uc?id=1U-lm1O1GYxe612eOeM5DwMWUdIUpD2JXnQ
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2019/04/use-gridbaglayout-to-layout-jbutton.html
+    lang: en
 comments: true
 ---
 ## 概要
