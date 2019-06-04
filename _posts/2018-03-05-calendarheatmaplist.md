@@ -64,8 +64,8 @@ private class ContributionListRenderer implements ListCellRenderer&lt;Contributi
     <pre class="prettyprint"><code>public static final int WEEK_VIEW = 27;
     // ...
     WeekFields weekFields = WeekFields.of(Locale.getDefault());
-    int dow = today.get(weekFields.dayOfWeek()) - 1;
-    startDate = today.minusWeeks(WEEK_VIEW - 1).minusDays(dow);
+    int dow = today.get(weekFields.dayOfWeek());
+    startDate = today.minusWeeks(WEEK_VIEW - 1).minusDays(dow - 1);
 </code></pre>
 - 表示される週は、約半年分の`27`週に設定
     - `JList`の`index = 0`となるセルの日付は、`27`週から今週の`1`週間分を引いた`26`週前を`today.minusWeeks(26)`で取得し、さらに今日が週の何番目かを引き算して求める
@@ -89,6 +89,8 @@ private class ContributionListRenderer implements ListCellRenderer&lt;Contributi
 - [JListで月のカーソルキー移動や、週を跨いた日付を範囲選択が可能なカレンダーを作成する](https://ateraimemo.com/Swing/CalendarViewList.html)
     - こちらはセルが水平方向の次に垂直方向の順で並ぶ「ニュースペーパー・スタイル」レイアウトの`JList`で月カレンダーを表示
 - [Harmonic Code: Friday Fun XLVIII - Calendar Heatmap](https://harmoniccode.blogspot.jp/2017/10/friday-fun-xlviii-calendar-heatmap.html)
+- [JToolTipを半透明にする](https://ateraimemo.com/Swing/TranslucentToolTips.html)
+    - `ToolTip`も`GitHub`の`Contribution activity`風に半透明の吹き出しを上側に表示するよう変更
 
 <!-- dummy comment line for breaking list -->
 

@@ -52,7 +52,16 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-## 参考リンク
+- - - -
+- `JDK 11.0.2`、`JDK 8.0.202`から`ImageView`に`setLoadsSynchronously(true)`を設定すると画像が表示されなくなってしまった
+    - [&#91;JDK-8223384&#93; ImageView incorrectly calculates size when synchronously loaded - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8223384)
+    - `OracleJDK`でも`OpenJDK`でも同じ状況
+- `JDK 11.0.1`では正常に画像が表示される
+
+		openjdk version "11.0.1" 2018-10-16
+		OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
+		OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
+- * 参考リンク [#reference]
 - [ImageView#setLoadsSynchronously(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/ImageView.html#setLoadsSynchronously-boolean-)
 - [setAsynchronousLoadPriority on JTextPane does not seem to work in 1.6 | Oracle Community](https://community.oracle.com/thread/1353113)
     - via: [java - JScrollPane does not update its scroll to go down to follow the caret position because of Image in JEditorPane - Stack Overflow](https://stackoverflow.com/questions/27044987/jscrollpane-does-not-update-its-scroll-to-go-down-to-follow-the-caret-position-b)

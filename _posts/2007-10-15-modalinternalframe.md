@@ -204,30 +204,17 @@ optionPane.setMessageType(JOptionPane.QUESTION_MESSAGE);
 - メモ: [Alexander Potochkin's Blog: Disabling Swing Containers, the final solution?](http://weblogs.java.net/blog/alexfromsun/archive/2008/01/)のサンプルでは、`Mnemonic`もちゃんとブロックできているようなので、「あとで調べる & 参考にする」こと。 -- *aterai* 2008-01-25 (金) 17:28:21
 - `Mnemonic`を数字キー(<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>)に変更 -- *aterai* 2008-04-25 (金) 20:51:49
 - すべての`Mnemonic`を一時的に無効化したい場合に、`UIManager.java`の`private static final String disableMnemonicKey = "swing.disablenavaids";`は使えない？ 以下のように`KeyboardFocusManager.setCurrentKeyboardFocusManager(...)`を使用して<kbd>Alt</kbd>キーなどを無視することも可能だが、もっと簡単な方法を調査中。 -- *aterai* 2013-05-09 (木) 11:46:38
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>KeyboardFocusManager manager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
-KeyboardFocusManager.setCurrentKeyboardFocusManager(new DefaultKeyboardFocusManager() {
-  @Override public boolean dispatchEvent(AWTEvent e) {
-    if (e instanceof KeyEvent) {
-      KeyEvent ke = (KeyEvent) e;
-      if ((ke.getModifiers() &amp; InputEvent.ALT_DOWN_MASK) != 0) {
-        System.out.println("----\n" + ke);
-        return false;
+    
+    <pre class="prettyprint"><code>KeyboardFocusManager.setCurrentKeyboardFocusManager(new DefaultKeyboardFocusManager() {
+      @Override public boolean dispatchKeyEvent(KeyEvent e) {
+        if ((e.getModifiersEx() &amp; InputEvent.ALT_DOWN_MASK) != 0) {
+          // System.out.println(e);
+          return false;
+        }
+        return super.dispatchKeyEvent(e);
       }
-    }
-    return super.dispatchEvent(e);
-  }
-});
-JComboBox&lt;String&gt; combo = new JComboBox&lt;&gt;(new String[] {"Banana", "Apple", "Pear", "Grape"});
-combo.setEditable(true);
-
-JOptionPane.showInternalMessageDialog(
-  desktop, combo, "modal1", JOptionPane.INFORMATION_MESSAGE);
-KeyboardFocusManager.setCurrentKeyboardFocusManager(manager);
+    });
 </code></pre>
-
 - メモ: [JDK-6921687 Mnemonic disappears after repeated attempts to open menu items using mnemonics - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6921687) -- *aterai* 2015-03-24 (火) 21:23:15
 
 <!-- dummy comment line for breaking list -->

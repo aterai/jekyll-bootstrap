@@ -31,10 +31,10 @@ comments: true
   @Override public void replace(
       int offset, int length, String text, AttributeSet attrs)
       throws BadLocationException {
-    if (length == 0) { //insert
+    if (length == 0) { // insert
       System.out.println("insert");
       super.replace(offset, length, text, attrs);
-    } else { //replace
+    } else { // replace
       System.out.println("replace");
       compoundEdit = new CompoundEdit();
       super.fireUndoableEditUpdate(new UndoableEditEvent(this, compoundEdit));

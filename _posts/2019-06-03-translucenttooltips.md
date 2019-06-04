@@ -1,0 +1,127 @@
+---
+layout: post
+category: swing
+folder: TranslucentToolTips
+title: JToolTipを半透明にする
+tags: [JToolTip, JList]
+author: aterai
+pubdate: 2019-06-03T15:15:47+09:00
+description: JToolTipを半透明に設定し、その形状や表示位置も変更します。
+image: https://drive.google.com/uc?id=1yfrneVdDempFHGb54FMzcxO4DIlyzJd-Ew
+comments: true
+---
+## 概要
+`JToolTip`を半透明に設定し、その形状や表示位置も変更します。
+
+{% download https://drive.google.com/uc?id=1yfrneVdDempFHGb54FMzcxO4DIlyzJd-Ew %}
+
+## サンプルコード
+<pre class="prettyprint"><code>class BalloonToolTip extends JToolTip {
+  private static final int TRI_HEIGHT = 4;
+  private HierarchyListener listener;
+
+  @Override public void updateUI() {
+    removeHierarchyListener(listener);
+    super.updateUI();
+    listener = e -&gt; {
+      Component c = e.getComponent();
+      if ((e.getChangeFlags() &amp; HierarchyEvent.SHOWING_CHANGED) != 0
+          &amp;&amp; c.isShowing()) {
+        Optional.ofNullable(SwingUtilities.getRoot(c))
+           .filter(JWindow.class::isInstance).map(JWindow.class::cast)
+           .ifPresent(w -&gt; w.setBackground(new Color(0x0, true)));
+      }
+    };
+    addHierarchyListener(listener);
+    setOpaque(false);
+    setForeground(Color.WHITE);
+    setBackground(new Color(0xC8_00_00_00, true));
+    setBorder(BorderFactory.createEmptyBorder(5, 5, 5 + TRI_HEIGHT, 5));
+  }
+
+  @Override public Dimension getPreferredSize() {
+    Dimension d = super.getPreferredSize();
+    d.height = 32;
+    return d;
+  }
+
+  @Override protected void paintComponent(Graphics g) {
+    Shape s = makeBalloonShape();
+    Graphics2D g2 = (Graphics2D) g.create();
+    g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON);
+    g2.setColor(getBackground());
+    g2.fill(s);
+    g2.dispose();
+    super.paintComponent(g);
+  }
+
+  private Shape makeBalloonShape() {
+    int w = getWidth() - 1;
+    int h = getHeight() - TRI_HEIGHT - 1;
+    int r = 10;
+    int cx = getWidth() / 2;
+    Polygon triangle = new Polygon();
+    triangle.addPoint(cx - TRI_HEIGHT, h);
+    triangle.addPoint(cx, h + TRI_HEIGHT);
+    triangle.addPoint(cx + TRI_HEIGHT, h);
+    Area area = new Area(new RoundRectangle2D.Float(0, 0, w, h, r, r));
+    area.add(new Area(triangle));
+    return area;
+  }
+}
+</code></pre>
+
+## 解説
+- 半透明化と形状の変更
+    - `JToolTip`自体は`setOpaque(false)`で透明化し、別途`JToolTip#paintComponent(...)`をオーバーライドして吹き出し図形を半透明色で描画
+    - `JToolTip`が対象コンポーネントの親`JFrame`外に表示される場合は、`JToolTip`の親`JWindow`を`setBackground(new Color(0x0, true)))`で完全透明化
+- 表示位置の変更
+    - `JList#getToolTipLocation(...)`をオーバーライドして、マウスカーソルの下側ではなく対象セルの真上に`JToolTip`が表示されるよう位置を調整
+        
+        <pre class="prettyprint"><code>@Override public String getToolTipText(MouseEvent e) {
+          Point p = e.getPoint();
+          int idx = locationToIndex(p);
+          Rectangle rect = getCellBounds(idx, idx);
+          if (idx &lt; 0 || !rect.contains(p.x, p.y)) {
+            return null;
+          }
+          Contribution value = getModel().getElementAt(idx);
+          String act = value.activity == 0 ? "No" : Objects.toString(value.activity);
+          return "&lt;html&gt;" + act + " contribution &lt;span style='color:#C8C8C8'&gt; on "
+              + value.date.toString();
+        }
+        
+        @Override public Point getToolTipLocation(MouseEvent e) {
+          Point p = e.getPoint();
+          int i = locationToIndex(p);
+          Rectangle rect = getCellBounds(i, i);
+        
+          String toolTipText = getToolTipText(e);
+          if (Objects.nonNull(toolTipText)) {
+            JToolTip tip = createToolTip();
+            tip.setTipText(toolTipText);
+            Dimension d = tip.getPreferredSize();
+            int gap = 2;
+            return new Point((int) (rect.getCenterX() - d.getWidth() / 2d),
+                             rect.y - d.height - gap);
+          }
+          return null;
+        }
+        
+        @Override public JToolTip createToolTip() {
+          if (tip == null) {
+            tip = new BalloonToolTip();
+            tip.setComponent(this);
+          }
+          return tip;
+        }
+</code></pre>
+    - * 参考リンク [#reference]
+- [JListでウィークカレンダーを作成してヒートマップを表示する](https://ateraimemo.com/Swing/CalendarHeatmapList.html)
+- [JListのセル上にToolTipを表示する](https://ateraimemo.com/Swing/ToolTipOnCellBounds.html)
+- [JToolTipの形状を吹き出し風に変更する](https://ateraimemo.com/Swing/BalloonToolTip.html)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント
