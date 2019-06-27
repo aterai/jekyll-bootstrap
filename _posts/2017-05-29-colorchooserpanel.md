@@ -47,7 +47,7 @@ button.addActionListener(e -&gt; {
 </code></pre>
 
 ## 解説
-- すべて未選択
+- すべてのチェックボックスが未選択の場合:
     - `JColorChooser.showDialog(...)`でデフォルトのカラー・チューザを表示
         - `static`なメソッドなので、`JColorChooser#removeChooserPanel(...)`などで`ColorChooserPanel`を削除しても反映されない
 - サンプル`(S)`: `swatches`
@@ -68,9 +68,8 @@ button.addActionListener(e -&gt; {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- 注:
-    - `JColorChooser`のタブなどに表示される`AbstractColorChooserPanel#getDisplayName()`の値は`Locale`に依存する
-    - ~~上記のサンプルの「すべて未選択」以外で表示される`JDialog`の`OK`ボタンなどはすべてダミーでクリックしても無効~~ `JColorChooser.createDialog(...)`メソッドを使用するよう修正
+- `JColorChooser`のタブなどに表示される`AbstractColorChooserPanel#getDisplayName()`の値は`Locale`に依存する
+- ~~上記のサンプルの「すべて未選択」以外で表示される`JDialog`の`OK`ボタンなどはすべてダミーでクリックしても無効~~ `JColorChooser.createDialog(...)`メソッドを使用するよう修正
 
 <!-- dummy comment line for breaking list -->
 

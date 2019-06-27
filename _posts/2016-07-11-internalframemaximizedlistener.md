@@ -18,7 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>iframe.addPropertyChangeListener(e -&gt; {
   String prop = e.getPropertyName();
-  if (JInternalFrame.IS_MAXIMUM_PROPERTY == prop) {
+  if (Objects.equals(JInternalFrame.IS_MAXIMUM_PROPERTY, prop)) {
     if (e.getNewValue() == Boolean.TRUE) {
       displayMessage("* Internal frame maximized", e);
     } else {

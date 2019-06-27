@@ -51,11 +51,14 @@ void loadSelectedRow(JTable table, Vector list, int keyCol) {
 </code></pre>
 
 ## 解説
-`JTableHeader`がクリックされてソートが行われる前に、選択されている行のあるカラムの値を保存し、ソートが終わった後でその値をキーに選択し直しています。あるカラムは、一意で重複しない値をもつ必要があります。
+`JTableHeader`がクリックされてソートが行われる前に選択されている行のあるカラムの値を保存し、ソートが終わった後でその値をキーに選択し直しています。
 
-上記のサンプルでは、[TableSorter.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)中の`MouseHandler`を変更し、`0`列目の番号をキーにして行の選択状態を保存するようにしています。
+- カラムは一意で重複しない値をもつ必要がある
+- 上記のサンプルでは、[TableSorter.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)中の`MouseHandler`を変更し、`0`列目の番号をキーにして行の選択状態を保存
+- `JDK 1.6.0`の`TableRowSorter`でソートを行う場合は、標準で選択状態が保存される
+    - [TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html)
 
-`JDK 1.6.0`の`TableRowSorter`でソートを行う場合は、標準で選択状態が保存されるようです([TableRowSorterでJTableのソート](https://ateraimemo.com/Swing/TableRowSorter.html))。
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [TableSorter.java](https://docs.oracle.com/javase/tutorial/uiswing/examples/components/TableSorterDemoProject/src/components/TableSorter.java)

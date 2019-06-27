@@ -20,7 +20,7 @@ comments: true
   public TransparentMenu(String title) {
     super(title);
   }
-  //https://bugs.openjdk.java.net/browse/JDK-4688783
+  // https://bugs.openjdk.java.net/browse/JDK-4688783
   private JPopupMenu popupMenu;
   private void ensurePopupMenuCreated() {
     if (popupMenu == null) {
@@ -80,7 +80,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JMenu`を継承する`TransparentMenu`を作成し、`JMenu`自身と子の`JMenuItem`などを透明化しています。また`JMenu`から開く`JPopupMenu`も、[JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)を使用して半透明になるよう設定しています。
+上記のサンプルでは、`JMenu`を継承する`TransparentMenu`を作成して`JMenu`自身と子の`JMenuItem`などを透明化しています。また`JMenu`から開く`JPopupMenu`も[JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)を使用して半透明になるよう設定しています。
 
 - [Translucent and Shaped Swing Windows | Java.net](http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html) を参考に `PopupFactory#getPopup(...)`をオーバーライドし、常に`JPopupMenu`(半透明)の親に`JWindow`(完全に透明、`Heavy weight`)を使用するように設定
 
@@ -97,8 +97,8 @@ class TranslucentPopupFactory extends PopupFactory {
 </code></pre>
 
 - - - -
-- [JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)では、`JPopupMenu#show(...)`メソッドをオーバーライドし、ポップアップが親フレームからはみ出して `Heavy weight`の`JWindow`が`JPopupMenu`の親となる場合のみ、`JWindow#setBackground(ALPHA_ZERO)`などで透明化(`JPopupMenu`は半透明)
-    - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](https://bugs.openjdk.java.net/browse/JDK-7156657) が原因？で、`1.7.0_06`以前では、サブメニューが半透明化されない場合がある
+- [JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)では、`JPopupMenu#show(...)`メソッドをオーバーライドすることでポップアップが親フレームからはみ出して`Heavy weight`の`JWindow`が`JPopupMenu`の親となる場合のみ`JWindow#setBackground(ALPHA_ZERO)`などで透明化(`JPopupMenu`は半透明)
+    - [Bug ID: 7156657 Version 7 doesn't support translucent popup menus against a translucent window](https://bugs.openjdk.java.net/browse/JDK-7156657) が原因？で`1.7.0_06`以前ではサブメニューが半透明化されない場合がある
     - `PopupFactory.setSharedInstance(new TranslucentPopupFactory())`を使用する場合はバグの影響を受けない
     - 上記のバグ？以外にも、[JPopupMenuを半透明にする](https://ateraimemo.com/Swing/TranslucentPopupMenu.html)でサブメニューを半透明にする場合、`Heavy weight`の`JPopupMenu`に使用する`JWindow`の`ContentPane`と`JRootPane`の不透明設定(`isOpaque()`)に注意する必要がある
 
@@ -141,7 +141,7 @@ class TranslucentPopupFactory extends PopupFactory {
     super.show(c, x, y);
   }
   @Override protected void paintComponent(Graphics g) {
-// ...
+  // ...
 </code></pre>
 
 ## 参考リンク

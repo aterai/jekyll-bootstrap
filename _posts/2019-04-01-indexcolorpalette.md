@@ -34,7 +34,8 @@ comments: true
   }
 }
 // ...
-Image makeTestImage(DataBuffer dataBuffer, ColorModel colorModel, int w, int h, int transIdx) {
+Image makeTestImage(
+    DataBuffer dataBuffer, ColorModel colorModel, int w, int h, int transIdx) {
   // DataBufferByte dataBufferByte = null;
   // if (dataBuffer instanceof DataBufferByte) {
   //   dataBufferByte = (DataBufferByte) dataBuffer;

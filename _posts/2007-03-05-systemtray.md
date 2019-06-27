@@ -55,11 +55,11 @@ comments: true
 </code></pre>
 
 ## 解説
-トレイアイコンでは、`JPopupMenu`ではなく、`PopupMenu`や`MenuItem`を使用します。
+- デフォルトの`TrayIcon`では、`JPopupMenu`ではなく`PopupMenu`や`MenuItem`が使用される
+- 上記のサンプルでは、フレームがアイコン化(最小化)されたときにタスクバーの表示を消して、システムトレイにアイコンだけ表示したいので、初期状態を`frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);`にし、アイコン化された場合でも`frame.dispose();`するように設定
+    - 実際に`VM`を終了する場合は、表示可能なウィンドウをすべて破棄してから`tray.remove(icon);`を実行してシステムトレイのアイコンを取り除く必要がある
 
-上記のサンプルでは、フレームがアイコン化(最小化)されたときにタスクバーの表示を消して、システムトレイにアイコンだけ表示したいので、初期状態を`frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);`にしておき、アイコン化された場合でも、`frame.dispose();`するようにしています。
-
-実際に`VM`を終了する場合は、表示可能なウィンドウをすべて破棄してから`tray.remove(icon);`を実行してシステムトレイのアイコンを取り除く必要があります。
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [TrayIconのアニメーション](https://ateraimemo.com/Swing/AnimatedTrayIcon.html)

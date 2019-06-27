@@ -32,7 +32,9 @@ comments: true
     }
   }
   @Override public void treeWillCollapse(TreeExpansionEvent e)
-        throws ExpandVetoException {}
+        throws ExpandVetoException {
+    // 何もしない(例外を返さない)ので、折り畳みは可能
+  }
 }
 </code></pre>
 

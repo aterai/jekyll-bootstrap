@@ -23,7 +23,8 @@ combo.setRenderer(new DefaultListCellRenderer() {
     if (value instanceof JSeparator) {
       return (Component) value;
     } else {
-      return super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+      return super.getListCellRendererComponent(
+          list, value, index, isSelected, cellHasFocus);
     }
   }
 });
@@ -49,6 +50,7 @@ combo.setModel(model);
 
 <!-- dummy comment line for breaking list -->
 
+- - - -
 `DefaultComboBoxModel#setSelectedItem`メソッドをオーバーライドする代わりに、以下のように`JSeparator`が選択された場合はひとつ前の`Item`に戻すような`ItemListener`を追加しても同様になります。
 
 <pre class="prettyprint"><code>combobox.addItemListener(new ItemListener() {

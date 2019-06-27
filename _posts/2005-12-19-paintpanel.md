@@ -18,10 +18,11 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class PaintPanel extends JPanel {
   private static final Stroke STROKE = new BasicStroke(
-    3f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
+      3f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
   private transient List&lt;Shape&gt; list;
   private transient Path2D path;
   private transient MouseAdapter handler;
+
   @Override public void updateUI() {
     removeMouseMotionListener(handler);
     removeMouseListener(handler);
@@ -34,6 +35,7 @@ comments: true
         path.moveTo(p.x, p.y);
         repaint();
       }
+
       @Override public void mouseDragged(MouseEvent e) {
         Point p = e.getPoint();
         path.lineTo(p.x, p.y);
@@ -44,6 +46,7 @@ comments: true
     addMouseListener(handler);
     list = new ArrayList&lt;Shape&gt;();
   }
+
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     if (list != null) {
@@ -60,7 +63,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、パネル上でマウスがドラッグされた場合、その軌跡を短い直線でつなぎ合わせることで、曲線を描画しています。
+上記のサンプルでは、パネル上でマウスがドラッグされた場合その軌跡を短い直線でつなぎ合わせることで曲線を描画しています。
 
 - 新規`Path2D`を生成し、マウスがクリックされた場所を`Path2D.moveTo(...)`で始点に設定
 - ドラッグされた時の位置を`Path2D.lineTo(...)`で終点にしてパネルを`repaint()`

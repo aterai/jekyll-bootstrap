@@ -25,17 +25,13 @@ textPane.insertComponent(check1);
 </code></pre>
 
 ## 解説
-1. `Default`
-    - `JTextPane#insertComponent(...)`で、`JCheckBox`を追加
+- `Default`
+    - `JTextPane#insertComponent(...)`メソッドで、`JCheckBox`を追加
     - `JCheckBox`のデフォルトの`AlignmentY`は`0.5`なのでテキストのベースラインと揃わない
-
-<!-- dummy comment line for breaking list -->
-1. `JComponent#setAlignmentY(...)`
-    - `JComponent#getBaseline()`でベースラインを取得し、`JComponent#setAlignmentY(baseline/(float)d.height)`でテキストベースラインの相対位置に配置
-
-<!-- dummy comment line for breaking list -->
-1. `setAlignmentY+setCursor+...`
-    - `JComponent#setAlignmentY(...)`と`Cursor + Opaque + Focusable`を設定
+- `JComponent#setAlignmentY(...)`
+    - `JComponent#getBaseline()`メソッドでベースラインを取得し、`JComponent#setAlignmentY(baseline/(float)d.height)`メソッドでテキストベースラインの相対位置に配置
+- `setAlignmentY+setCursor+...`
+    - `JComponent#setAlignmentY(...)`メソッドの使用と合わせて`Cursor + Opaque + Focusable`を設定
         
         <pre class="prettyprint"><code>check2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         check2.setOpaque(false);

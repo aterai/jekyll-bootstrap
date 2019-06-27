@@ -52,21 +52,20 @@ comments: true
 </code></pre>
 
 ## 解説
-- `org`
+- `Default`
     - デフォルトの`JCheckBox`
-- `check1`
+- `WindowsIconFactory`
     - `com/sun/java/swing/plaf/windows/WindowsIconFactory.java`から、`XP`スタイルではない場合のアイコンをコピーし、一部色などを変更
-- `check2`
+- `CheckBox.icon+RED`
     - `UIManager.getIcon("CheckBox.icon")`で取得したオリジナルのアイコンを、アルファ値を設定した色で上書きし、✔マークも色を変えて塗り潰し
     - チェックの形は`WindowsIconFactory`からコピーしているので、別の`LookAndFeel`では枠からはみ出してしまう
-- `check3`
+- `MetalCheckBoxIcon+GRAY`
     - `javax.swing.plaf.metal.MetalCheckBoxIcon`をアルファ値を設定した色で上書き
 
 <!-- dummy comment line for breaking list -->
 
-`check1`～`check3`で生成したアイコンを、それぞれ`JCheckBox#setIcon`で設定しています。
-
-`XP`スタイルで無い場合(`Windows`環境以外ではテストしていない)、色を変更するだけなら、以下のようにする方法もあります。
+- - - -
+`Windows XP`スタイル以外を使用する環境で色を変更する場合は、以下のような方法もあります。
 
 <pre class="prettyprint"><code>System.setProperty("swing.noxp", "true");
 UIManager.put("CheckBox.interiorBackground", new ColorUIResource(Color.GREEN));

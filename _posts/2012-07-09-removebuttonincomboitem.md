@@ -20,95 +20,48 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class CellButtonsMouseListener extends MouseAdapter {
-  private int prevIndex = -1;
-  private JButton prevButton;
-  private static void listRepaint(JList list, Rectangle rect) {
-    if (Objects.nonNull(rect)) {
-      list.repaint(rect);
-    }
-  }
   @Override public void mouseMoved(MouseEvent e) {
-    JList list = (JList) e.getComponent();
+    JList&lt;?&gt; list = (JList&lt;?&gt;) e.getComponent();
     Point pt = e.getPoint();
     int index = list.locationToIndex(pt);
-    if (!list.getCellBounds(index, index).contains(pt)) {
-      if (prevIndex &gt;= 0) {
-        Rectangle r = list.getCellBounds(prevIndex, prevIndex);
-        listRepaint(list, r);
-      }
-      index = -1;
-      prevButton = null;
-      return;
-    }
-    if (index &gt;= 0) {
-      JButton button = getButton(list, pt, index);
-      ButtonsRenderer renderer = (ButtonsRenderer) list.getCellRenderer();
-      if (Objects.nonNull(button)) {
-        renderer.rolloverIndex = index;
-        if (!button.equals(prevButton)) {
-          Rectangle r = list.getCellBounds(prevIndex, index);
-          listRepaint(list, r);
-        }
-      } else {
-        renderer.rolloverIndex = -1;
-        Rectangle r = null;
-        if (prevIndex == index) {
-          if (prevIndex &gt;= 0 &amp;&amp; Objects.nonNull(prevButton)) {
-            r = list.getCellBounds(prevIndex, prevIndex);
-          }
-        } else {
-          r = list.getCellBounds(index, index);
-        }
-        listRepaint(list, r);
-        prevIndex = -1;
-      }
-      prevButton = button;
-    }
-    prevIndex = index;
+    ButtonsRenderer&lt;?&gt; renderer = (ButtonsRenderer&lt;?&gt;) list.getCellRenderer();
+    renderer.rolloverIndex = Objects.nonNull(getButton(list, pt, index)) ? index : -1;
+    list.repaint();
   }
+
   @Override public void mousePressed(MouseEvent e) {
-    JList list = (JList) e.getComponent();
-    Point pt = e.getPoint();
-    int index = list.locationToIndex(pt);
-    if (index &gt;= 0) {
-      JButton button = getButton(list, pt, index);
-      if (Objects.nonNull(button)) {
-        listRepaint(list, list.getCellBounds(index, index));
-      }
-    }
+    e.getComponent().repaint();
   }
+
   @Override public void mouseReleased(MouseEvent e) {
-    JList list = (JList) e.getComponent();
+    JList&lt;?&gt; list = (JList&lt;?&gt;) e.getComponent();
     Point pt = e.getPoint();
     int index = list.locationToIndex(pt);
     if (index &gt;= 0) {
       JButton button = getButton(list, pt, index);
       if (Objects.nonNull(button)) {
         button.doClick();
-        Rectangle r = list.getCellBounds(index, index);
-        listRepaint(list, r);
       }
     }
+    ((ButtonsRenderer&lt;?&gt;) list.getCellRenderer()).rolloverIndex = -1;
+    list.repaint();
   }
+
   @Override public void mouseExited(MouseEvent e) {
-    JList list = (JList) e.getComponent();
-    ButtonsRenderer renderer = (ButtonsRenderer) list.getCellRenderer();
-    renderer.rolloverIndex = -1;
+    JList&lt;?&gt; list = (JList&lt;?&gt;) e.getComponent();
+    ((ButtonsRenderer&lt;?&gt;) list.getCellRenderer()).rolloverIndex = -1;
   }
-  @SuppressWarnings("unchecked")
-  private static JButton getButton(JList list, Point pt, int index) {
-    Container c = (Container) list.getCellRenderer().getListCellRendererComponent(
-        list, "", index, false, false);
+
+  private static &lt;E&gt; JButton getButton(JList&lt;E&gt; list, Point pt, int index) {
+    E proto = list.getPrototypeCellValue();
+    Component c = list.getCellRenderer().getListCellRendererComponent(
+        list, proto, index, false, false);
     Rectangle r = list.getCellBounds(index, index);
     c.setBounds(r);
-    //c.doLayout(); // may be needed for other layout managers (eg. FlowLayout)
+    // c.doLayout(); // may be needed for other layout managers (eg. FlowLayout)
     pt.translate(-r.x, -r.y);
-    Component b = SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y);
-    if (b instanceof JButton) {
-      return (JButton) b;
-    } else {
-      return null;
-    }
+    return Optional.ofNullable(SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y))
+        .filter(JButton.class::isInstance).map(JButton.class::cast).orElse(null);
   }
 }
 </code></pre>

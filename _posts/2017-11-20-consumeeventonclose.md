@@ -35,7 +35,7 @@ comments: true
     - `MetalLookAndFeel`のデフォルト
     - 例:
         - `JPopupMenu`を開いた状態で`Beep`ボタンをクリックすると`Beep`音が鳴る
-        - `JPopupMenu`を開いた状態で`JComboBox`のコンボエディタをクリックしても`JPopupMenu`は表示を維持する
+        - `JPopupMenu`を開いた状態で`JComboBox`のコンボエディタをクリックしても`JPopupMenu`は表示状態を維持する
         - `JToolBar`を分離し別ウィンドウで`JPopupMenu`開いた状態の場合、`JComboBox`のコンボエディタをクリックするとフォーカスが移動して`JPopupMenu`は非表示になる
 
 <!-- dummy comment line for breaking list -->

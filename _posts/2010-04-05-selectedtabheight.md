@@ -55,31 +55,30 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-注: 以下のようにタブの位置を変更する`JComboBox`を追加したので、`JDK 1.7.0`以上が必要
-
-<pre class="prettyprint"><code>private static enum TabPlacements {
-  TOP(JTabbedPane.TOP), BOTTOM(JTabbedPane.BOTTOM),
-  LEFT(JTabbedPane.LEFT), RIGHT(JTabbedPane.RIGHT);
-  public final int tabPlacement;
-  private TabPlacements(int tabPlacement) {
-    this.tabPlacement = tabPlacement;
-  }
-}
-private final JComboBox&lt;TabPlacements&gt; comboBox =
-    new JComboBox&lt;&gt;(TabPlacements.values());
-private final JTabbedPane tabbedPane = new JTabbedPane(
-    JTabbedPane.TOP, JTabbedPane.SCROLL_TAB_LAYOUT);
-// ...
-comboBox.addItemListener(new ItemListener() {
-  @Override public void itemStateChanged(ItemEvent e) {
-    if (e.getStateChange() == ItemEvent.SELECTED) {
-      tabbedPane.setTabPlacement(((TabPlacements) e.getItem()).tabPlacement);
+- タブの位置を変更する`JComboBox`を追加
+    
+    <pre class="prettyprint"><code>private static enum TabPlacements {
+      TOP(JTabbedPane.TOP), BOTTOM(JTabbedPane.BOTTOM),
+      LEFT(JTabbedPane.LEFT), RIGHT(JTabbedPane.RIGHT);
+      public final int tabPlacement;
+      private TabPlacements(int tabPlacement) {
+        this.tabPlacement = tabPlacement;
+      }
     }
-  }
-});
+    private final JComboBox&lt;TabPlacements&gt; comboBox =
+        new JComboBox&lt;&gt;(TabPlacements.values());
+    private final JTabbedPane tabbedPane = new JTabbedPane(
+        JTabbedPane.TOP, JTabbedPane.SCROLL_TAB_LAYOUT);
+    // ...
+    comboBox.addItemListener(new ItemListener() {
+      @Override public void itemStateChanged(ItemEvent e) {
+        if (e.getStateChange() == ItemEvent.SELECTED) {
+          tabbedPane.setTabPlacement(((TabPlacements) e.getItem()).tabPlacement);
+        }
+      }
+    });
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [BasicTabbedPaneUI#calculateTabHeight(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#calculateTabHeight-int-int-int-)
 
 <!-- dummy comment line for breaking list -->

@@ -44,15 +44,15 @@ comments: true
     String str = SwingUtilities.layoutCompoundLabel(
       this,
       this.getFontMetrics(this.getFont()),
-      value.toString(), //this.getText(),
+      value.toString(), // this.getText(),
       this.getIcon(),
       this.getVerticalAlignment(),
       this.getHorizontalAlignment(),
       this.getVerticalTextPosition(),
       this.getHorizontalTextPosition(),
       lrect,
-      irect, //icon
-      trect, //text
+      irect, // icon
+      trect, // text
       this.getIconTextGap());
 
     if (!table.isEditing() &amp;&amp; this.row == row &amp;&amp; this.col == column) {
@@ -61,7 +61,7 @@ comments: true
       setText("&lt;html&gt;&lt;font color='blue'&gt;" + str);
     } else {
       setText(str);
-      //setText(value.toString());
+      // setText(value.toString());
     }
     return this;
   }

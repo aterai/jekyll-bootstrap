@@ -35,12 +35,13 @@ field.add(label);
 ## 解説
 サンプルでは`setMargin`で`JTextField`の左に余白を作り、そこに`JLabel`を配置することでアイコン(画像)を表示しています。
 
-[JComboBoxにアイコンを追加](https://ateraimemo.com/Swing/IconComboBox.html)のように、`Border`を使っても同様のことができますが、`JTextComponent`を継承したコンポーネントでは、`setMargin`を使用するとカーソルの指定などが簡単に実現できます。
+- [JComboBoxにアイコンを追加](https://ateraimemo.com/Swing/IconComboBox.html)のように`Border`を使用する方法もあるが、`JTextComponent`を継承するコンポーネントでは`setMargin(...)`メソッドを使用するとカーソルの指定などが簡単に実現可能
+    - `JLabel`の代わりに`JButton`などのコンポーネントを配置することも可能
 
-また、`JLabel`の代わりに、`JButton`などのコンポーネントを配置することも可能です。
+<!-- dummy comment line for breaking list -->
 
 - - - -
-- `JComboBox`の`Editor`を取得して`Margin`を指定しても、反映されない
+- `JComboBox`の`Editor`を取得して`Margin`を指定しても反映されない
 - [JTextComponent#setMargin(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/JTextComponent.html#setMargin-java.awt.Insets-)
 
 <!-- dummy comment line for breaking list -->
@@ -49,34 +50,30 @@ field.add(label);
 </p></blockquote>
 
 - - - -
-`JTextField`の右端に`JLabel`を置く場合は、以下のように`SpringLayout`を使用する方法があります。
-
-- [JButtonなどの高さを変更せずに幅を指定](https://ateraimemo.com/Swing/ButtonWidth.html)
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>final JLabel label2 = new JLabel(image);
-label2.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-label2.setBorder(BorderFactory.createEmptyBorder());
-JTextField field2 = new JTextField("ccccccccccccccccccccccccccc") {
-  @Override public void updateUI() {
-    super.updateUI();
-    removeAll();
-    SpringLayout l = new SpringLayout();
-    setLayout(l);
-    Spring fw = l.getConstraint(SpringLayout.WIDTH,  this);
-    Spring fh = l.getConstraint(SpringLayout.HEIGHT, this);
-    SpringLayout.Constraints c = l.getConstraints(label2);
-    c.setConstraint(SpringLayout.WEST,  fw);
-    c.setConstraint(SpringLayout.SOUTH, fh);
-    add(label2);
-  }
-};
-m = field2.getMargin();
-field2.setMargin(new Insets(m.top + 2, m.left, m.bottom, m.right + w));
+- `JTextField`の右端に`JLabel`を置く場合は、以下のように`SpringLayout`を使用する方法もある
+    - [JButtonなどの高さを変更せずに幅を指定](https://ateraimemo.com/Swing/ButtonWidth.html)
+        
+        <pre class="prettyprint"><code>final JLabel label2 = new JLabel(image);
+        label2.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+        label2.setBorder(BorderFactory.createEmptyBorder());
+        JTextField field2 = new JTextField("ccccccccccccccccccccccccccc") {
+          @Override public void updateUI() {
+            super.updateUI();
+            removeAll();
+            SpringLayout l = new SpringLayout();
+            setLayout(l);
+            Spring fw = l.getConstraint(SpringLayout.WIDTH,  this);
+            Spring fh = l.getConstraint(SpringLayout.HEIGHT, this);
+            SpringLayout.Constraints c = l.getConstraints(label2);
+            c.setConstraint(SpringLayout.WEST,  fw);
+            c.setConstraint(SpringLayout.SOUTH, fh);
+            add(label2);
+          }
+        };
+        m = field2.getMargin();
+        field2.setMargin(new Insets(m.top + 2, m.left, m.bottom, m.right + w));
 </code></pre>
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [Swing (Archive) - Add a clickable icon to the left corner of a JTextField](https://community.oracle.com/thread/1489851)
 - [java - JTextField margin doesnt work with border - Stack Overflow](https://stackoverflow.com/questions/10496828/jtextfield-margin-doesnt-work-with-border)
 - [JTextFieldのMarginを設定する](https://ateraimemo.com/Swing/TextFieldMargin.html)
