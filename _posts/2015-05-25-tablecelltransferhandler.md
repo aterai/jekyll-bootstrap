@@ -76,11 +76,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ドラッグ元の`JTable`に`CellIconTransferHandler`を設定して特定の列のアイコンのみドラッグ可能にし、ドロップ先の`JList`は~~`TableCellTransferHandler`を設定して~~アイコンを受け取って~~(実際は`JTable`ごと受け取って選択されたアイコンを取得)~~表示しています。
+上記のサンプルでは、ドラッグ元の`JTable`に`CellIconTransferHandler`を設定して特定の列のアイコンのみドラッグ可能にし、ドロップ先の`JList`はアイコンを受け取って表示しています。
 
-- テスト
-    - `clear`ボタン: `JList`にドロップされたアイコンをクリア
-    - `filter`ボタン: `JList`にドロップされたアイコンを含む行のみ表示するフィルタを`JTable`に設定
+- `clear`ボタン: `JList`にドロップされたアイコンをクリア
+- `filter`ボタン: `JList`にドロップされたアイコンを含む行のみ表示するフィルタを`JTable`に設定
 
 <!-- dummy comment line for breaking list -->
 

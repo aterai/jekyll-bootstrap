@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2019-06-03T15:15:47+09:00
 description: JToolTipを半透明に設定し、その形状や表示位置も変更します。
 image: https://drive.google.com/uc?id=1yfrneVdDempFHGb54FMzcxO4DIlyzJd-Ew
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2019/06/make-jtooltip-translucent-and-change.html
+    lang: en
 comments: true
 ---
 ## 概要

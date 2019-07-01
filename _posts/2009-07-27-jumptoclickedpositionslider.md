@@ -64,6 +64,8 @@ comments: true
 
 ## 参考リンク
 - [JSlider question: Position after leftclick - Stack Overflow](https://stackoverflow.com/questions/518471/jslider-question-position-after-leftclick)
+- [JScrollBarのトラック内でクリックした位置につまみを移動する](https://ateraimemo.com/Swing/AllowsAbsolutePositioning.html)
+    - `JScrollBar`の場合、`UIManager.put("ScrollBar.allowsAbsolutePositioning", Boolean.TRUE);`を設定すると中ボタンクリックで絶対位置移動と続けてドラッグが可能になる
 
 <!-- dummy comment line for breaking list -->
 
