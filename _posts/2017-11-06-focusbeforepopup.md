@@ -62,7 +62,7 @@ comments: true
     - 編集可能に設定した`JComboBox`の`JTextField`にマウスクリックでフォーカスを移動しても、他コンポーネントの`JPopupMenu`が開いたままになるバグ(仕様？)があるため、`JTextField#setComponentPopupMenu(...)`で追加した`JPopupMenu`を開くことができない
     - [JDK-8044493 Clicking on an editable JComboBox leaves JPopupMenus and other menus open - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8044493)
     - [Prevent popup menu dismissal | Exploding Pixels](https://explodingpixels.wordpress.com/2008/11/10/prevent-popup-menu-dismissal/)
-        - `textField.putClientProperty("doNotCancelPopup", null);`で回避可能(ただしエディタをマウスでクリックすると`JComboBox`のドロップダウンリストも閉じるようになる)
+        - `textField.putClientProperty("doNotCancelPopup", null);`で回避可能だが、エディタをマウスでクリックすると`JComboBox`のドロップダウンリストも閉じるようになる
             
             <pre class="prettyprint"><code>JComboBox&lt;String&gt; combo5 = new JComboBox&lt;&gt;(new String[] {"000", "111", "222"});
             combo5.setEditable(true);

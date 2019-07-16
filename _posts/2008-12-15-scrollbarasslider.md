@@ -41,11 +41,16 @@ JSpinner spinner = new JSpinner(new SpinnerNumberModel(value, min, max, step));
 
 - `JScrollBar`に設定する最大値は、ノブ(`extent`はノブの幅)の右端ではなく左端になるように調整する必要がある
     - `JSpinner`の最大値とは異なり、`max`+`extent`の値が`JScrollBar`の最大値となる
+- `JScrollBar`を使用することで`ArrowButton`での移動、設定によりマウスの中ボタンクリックで絶対位置移動などが可能になる
+    - [JScrollBarのトラック内でクリックした位置につまみを移動する](https://ateraimemo.com/Swing/AllowsAbsolutePositioning.html)
+- 目盛りなどは自前で描画する必要がある
+    - [JScrollBarに検索結果をハイライト表示](https://ateraimemo.com/Swing/ScrollBarSearchHighlighter.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JScrollBar (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JScrollBar.html)
+- [JScrollBarのトラック内でクリックした位置につまみを移動する](https://ateraimemo.com/Swing/AllowsAbsolutePositioning.html)
 
 <!-- dummy comment line for breaking list -->
 

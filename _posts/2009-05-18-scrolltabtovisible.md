@@ -45,6 +45,7 @@ comments: true
 
 ## 参考リンク
 - [JViewport#scrollRectToVisible(Rectangle) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JViewport.html#scrollRectToVisible-java.awt.Rectangle-)
+- [JTabbedPaneのスクロールレイアウトポリシーですべてのタブが非表示にならないよう設定する](https://ateraimemo.com/Swing/VisibilityOfTab.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -16,15 +16,15 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTM9YcNZfI/AAAAAAAAAaA/sbjwdihBwqY/s800/FixedWidthColumn.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//すべてのカラムヘッダの幅を変更不可に
-//tableHeader.setResizingAllowed(false);
+<pre class="prettyprint"><code>// すべてのカラムヘッダの幅を変更不可に
+// tableHeader.setResizingAllowed(false);
 
-//JTable.AUTO_RESIZE_OFFで、あるカラムの幅を変更不可にしたい場合
-//table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-//col.setPreferredWidth(50);
-//col.setResizable(false);
+// JTable.AUTO_RESIZE_OFFで、あるカラムの幅を変更不可にしたい場合
+// table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+// col.setPreferredWidth(50);
+// col.setResizable(false);
 
-//カラムの幅を変更不可にしたい場合
+// カラムの幅を変更不可にしたい場合
 TableColumn col = table.getColumnModel().getColumn(0);
 col.setMinWidth(50);
 col.setMaxWidth(50);

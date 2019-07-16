@@ -87,6 +87,7 @@ comments: true
 - [JTreeの余白をドラッグしてスクロール](https://ateraimemo.com/Swing/TreeDragScroll.html)
 - [JScrollPaneでキネティックスクロール](https://ateraimemo.com/Swing/KineticScrolling.html)
 - [JScrollBarが非表示でもMouseWheelでScrollする](https://ateraimemo.com/Swing/MouseWheelScroll.html)
+- [JTableのドラッグスクロールをタッチスクリーンで実行する](https://ateraimemo.com/Swing/TableScrollOnTouchScreen.html)
 
 <!-- dummy comment line for breaking list -->
 

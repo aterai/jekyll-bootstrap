@@ -17,6 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>URL url = getClass().getClassLoader().getResource("example/test.png");
+// URL url = Thread.currentThread().getContextClassLoader().getResource("example/test.png");
 // URL url = getClass().getResource("test.png");
 JLabel icon = new JLabel(new ImageIcon(url));
 JLabel path = new JLabel(url.toString());

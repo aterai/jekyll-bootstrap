@@ -24,9 +24,13 @@ scroll.getVerticalScrollBar().setUnitIncrement(25);
 `JScrollPane`からスクロールバーを取得し、`JScrollBar#setUnitIncrement(int)`メソッドでユニット増分値(`unitIncrement`)を設定しています。
 
 - - - -
-メモ: `JScrollBar`の`UnitIncrement`と`BlockIncrement`について
+- `WindowsLookAndFeel`の場合、`JScrollBar#putClientProperty("JScrollBar.fastWheelScrolling", Boolean.TRUE);`を設定するとマウスホイールによるスクロールは高速化(デフォルトと同程度の速度)可能
 
-- [Mouse Wheel Controller « Java Tips Weblog](https://tips4java.wordpress.com/2010/01/10/mouse-wheel-controller/)
+<!-- dummy comment line for breaking list -->
+
+- - - -
+- `JScrollBar`の`UnitIncrement`と`BlockIncrement`について
+    - [Mouse Wheel Controller « Java Tips Weblog](https://tips4java.wordpress.com/2010/01/10/mouse-wheel-controller/)
     - `Windows 7`環境での`e.getScrollAmount()`のデフォルト値: `3`
     - `DesktopProperty`などを経由せず、`OS`のコントロールパネルのマウスのプロパティを直接参照している模様？
 - [How to Write a Mouse-Wheel Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/mousewheellistener.html)

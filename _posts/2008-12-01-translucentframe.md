@@ -39,7 +39,7 @@ comments: true
   }
   @Override public SynthStyle getStyle(JComponent c, Region id) {
     SynthStyle s = wrappedFactory.getStyle(c, id);
-    //if (id == Region.INTERNAL_FRAME_TITLE_PANE||id == Region.INTERNAL_FRAME) {
+    // if (id == Region.INTERNAL_FRAME_TITLE_PANE||id == Region.INTERNAL_FRAME) {
     if (id == Region.INTERNAL_FRAME) {
       s = new TranslucentSynthStyle(s);
     }
@@ -88,9 +88,7 @@ class TranslucentSynthStyle extends SynthStyle {
 ![screenshot](https://lh6.googleusercontent.com/_9Z4BYR88imo/TQTVyfycduI/AAAAAAAAAoM/r6DySDZjSGA/s800/TranslucentFrame1.png)
 
 - - - -
-`JDK 1.7.0`以上で`NimbusLookAndFeel`を使用する場合、以下のように`UIDefaults#put(...)`で`javax.swing.Painter`を設定する方法もあります。
-
-- 参考:
+- `JDK 1.7.0`以上で`NimbusLookAndFeel`を使用する場合、以下のように`UIDefaults#put(...)`で`javax.swing.Painter`を設定する方法もある
     - [Caffeine Induced Ramblings - Jasper Potts’s Blog  » Blog Archive   » Nimbus: The New Face of Swing - JavaOne 2008](http://www.jasperpotts.com/blog/2009/01/nimbus-the-new-face-of-swing-javaone-2008/)
     - `com.sun.java.swing.plaf.nimbus.NimbusDefaults.java`
 
@@ -99,7 +97,7 @@ class TranslucentSynthStyle extends SynthStyle {
 <pre class="prettyprint"><code>import java.awt.*;
 import javax.swing.*;
 import javax.swing.plaf.synth.*;
-//import com.sun.java.swing.Painter; // 1.6
+// import com.sun.java.swing.Painter; // 1.6
 import javax.swing.Painter;
 
 public class BackgroundPainterTest {
@@ -137,7 +135,7 @@ public class BackgroundPainterTest {
   protected JInternalFrame createFrame(JPanel panel, UIDefaults d, int idx) {
     MyInternalFrame frame = new MyInternalFrame();
     frame.putClientProperty("Nimbus.Overrides", d);
-    //frame.putClientProperty("Nimbus.Overrides.InheritDefaults", false);
+    // frame.putClientProperty("Nimbus.Overrides.InheritDefaults", false);
     frame.setOpaque(false);
     if (panel != null) {
       frame.setContentPane(panel);

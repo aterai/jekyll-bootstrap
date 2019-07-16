@@ -28,10 +28,10 @@ comments: true
   TableColumn column = table.getColumnModel().getColumn(mci);
   Rectangle r = header.getHeaderRect(vci);
   Container c = (Container) getTableCellRendererComponent(table, "", true, true, -1, vci);
-  //if (!isNimbus) {
-  //  Insets i = c.getInsets();
-  //  r.translate(r.width - i.right, 0);
-  //} else {
+  // if (!isNimbus) {
+  //   Insets i = c.getInsets();
+  //   r.translate(r.width - i.right, 0);
+  // } else {
   r.translate(r.width - BUTTON_WIDTH, 0);
   r.setSize(BUTTON_WIDTH, r.height);
   Point pt = e.getPoint();
@@ -42,9 +42,11 @@ comments: true
     e.consume();
   }
 }
+
 @Override public void mouseExited(MouseEvent e) {
   rolloverIndex = -1;
 }
+
 @Override public void mouseMoved(MouseEvent e) {
   JTableHeader header = (JTableHeader) e.getSource();
   JTable table = header.getTable();

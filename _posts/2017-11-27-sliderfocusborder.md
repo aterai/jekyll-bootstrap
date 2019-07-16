@@ -42,8 +42,8 @@ comments: true
 
 ## 解説
 - `Default`
-    - `JSlider`にフォーカスが移動すると、`WindowsLookAndFeel`のデフォルトでは目盛りなどを含む領域に黒い点線の`FocusBorder`が描画される
-        - `MotifLookAndFeel`の場合は、赤い実線
+    - `JSlider`にフォーカスが移動すると、`WindowsLookAndFeel`のデフォルトでは目盛りなどを含む領域に黒色で点線の`FocusBorder`が描画される
+        - `MotifLookAndFeel`の場合は、赤色の実線
         - `MetalLookAndFeel`、`NimbusLookAndFeel`の場合は、`Thumb`の描画が変化する
 - `Override SilderUI#paintFocus(...)`
     - `BasicSilderUI#paintFocus(...)`をオーバーライドして`FocusBorder`を非表示に設定

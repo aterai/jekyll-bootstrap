@@ -21,7 +21,7 @@ comments: true
   public static Dimension size = new Dimension(160 * cols, 120 * rows);
   public GridPanel() {
     super(new GridLayout(rows, cols, 0, 0));
-    //putClientProperty("JScrollBar.fastWheelScrolling", Boolean.FALSE);
+    // scrollBar.putClientProperty("JScrollBar.fastWheelScrolling", Boolean.FALSE);
   }
   @Override public Dimension getPreferredScrollableViewportSize() {
     Dimension d = getPreferredSize();
@@ -85,7 +85,7 @@ class ScrollAction extends AbstractAction {
     scroller.start();
   }
   private static double easeInOut(double t) {
-    //range: 0.0&lt;=t&lt;=1.0
+    // range: 0.0&lt;=t&lt;=1.0
     if (t &lt; .5) {
       return .5 * pow3(t * 2d);
     } else {
@@ -93,7 +93,7 @@ class ScrollAction extends AbstractAction {
     }
   }
   private static double pow3(double a) {
-    //return Math.pow(a, 3d);
+    // return Math.pow(a, 3d);
     return a * a * a;
   }
 }

@@ -16,8 +16,8 @@ comments: true
 {% download https://lh4.googleusercontent.com/-UATkJ0JfmBQ/T4u5j_rhkGI/AAAAAAAABLc/1rVNsbM9D98/s800/TableNextMatchKeyHandler.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//@see javax/swing/plaf/basic/BasicListUI.Handler
-//@see javax/swing/plaf/basic/BasicTreeUI.Handler
+<pre class="prettyprint"><code>// @see javax/swing/plaf/basic/BasicListUI.Handler
+// @see javax/swing/plaf/basic/BasicTreeUI.Handler
 class TableNextMatchKeyHandler extends KeyAdapter {
   private static final int TARGET_COLUMN = 0;
   private String prefix = "";
@@ -25,7 +25,7 @@ class TableNextMatchKeyHandler extends KeyAdapter {
   private long lastTime = 0L;
   private long timeFactor;
   public TableNextMatchKeyHandler() {
-    //Long l = (Long) UIManager.get("List.timeFactor");
+    // Long l = (Long) UIManager.get("List.timeFactor");
     timeFactor = 500L; //(l != null) ? l.longValue() : 1000L;
   }
   private boolean isNavigationKey(KeyEvent e) {
@@ -94,8 +94,8 @@ class TableNextMatchKeyHandler extends KeyAdapter {
       }
     }
   }
-  //@see JList#getNextMatch(String prefix, int startIndex, Position.Bias bias)
-  //@see JTree#getNextMatch(String prefix, int startIndex, Position.Bias bias)
+  // @see JList#getNextMatch(String prefix, int startIndex, Position.Bias bias)
+  // @see JTree#getNextMatch(String prefix, int startIndex, Position.Bias bias)
   public static int getNextMatch(
     JTable table, String prefix, int startingRow, Position.Bias bias) {
     int max = table.getRowCount();
@@ -128,7 +128,7 @@ class TableNextMatchKeyHandler extends KeyAdapter {
 
 検索方法は、`BasicListUI.Handler`、`BasicTreeUI.Handler`、`JList#getNextMatch(...)`、`JTree#getNextMatch(...)`のものと同等(<kbd>Shift</kbd>キーを同時に押すと逆検索)です。
 
-`JList`などとは異なり、デフォルトの`JTable`はキー入力でセルエディタが起動するため、このキー入力による検索を実行するためには`table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`としてキー入力による編集開始を無効(マウスクリック、<kbd>F2</kbd>キーでの編集は可能)にする必要があります。
+`JList`などとは異なりデフォルトの`JTable`はキー入力でセルエディタが起動するため、このキー入力による検索を実行するためには`table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`としてキー入力による編集開始を無効(マウスクリック、<kbd>F2</kbd>キーでの編集は可能)にする必要があります。
 
 ## 参考リンク
 - [JListの先頭文字キー入力による検索選択を無効にする](https://ateraimemo.com/Swing/DisablePrefixMatchSelection.html)
