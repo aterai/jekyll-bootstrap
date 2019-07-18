@@ -24,7 +24,7 @@ p.setFocusTraversalPolicy(ftp);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`SortingFocusTraversalPolicy#setImplicitDownCycleTraversal(...)`で、暗黙的にフォーカスをダウンサイクルで移動するかどうかを切り替えて、子パネルへのフォーカス移動のテストを行っています。
+上記のサンプルでは、`SortingFocusTraversalPolicy#setImplicitDownCycleTraversal(...)`メソッドで、暗黙的にフォーカスをダウンサイクルで移動するかどうかを切り替えて、子パネルへのフォーカス移動のテストを行っています。
 
 - `SortingFocusTraversalPolicy#setImplicitDownCycleTraversal(true)`
     - デフォルト

@@ -20,7 +20,7 @@ comments: true
  * http://www2.gol.com/users/tame/swing/examples/JTableExamples1.html
  * @version 1.0 10/20/98
  * @author Nobuo Tamemasa
- * modified by aterai aterai@outlook.com
+ * modified by aterai@outlook.com
  */
 class GroupableTableHeader extends JTableHeader {
   private transient List&lt;ColumnGroup&gt; columnGroups;
@@ -28,22 +28,23 @@ class GroupableTableHeader extends JTableHeader {
   protected GroupableTableHeader(TableColumnModel model) {
     super(model);
   }
+
   @Override public void updateUI() {
     super.updateUI();
     setUI(new GroupableTableHeaderUI());
   }
+
   @Override public boolean getReorderingAllowed() {
     return false;
   }
-  //@Override public void setReorderingAllowed(boolean b) {
-  //  super.setReorderingAllowed(false);
-  //}
+
   public void addColumnGroup(ColumnGroup g) {
     if (columnGroups == null) {
       columnGroups = new ArrayList&lt;&gt;();
     }
     columnGroups.add(g);
   }
+
   public List&lt;?&gt; getColumnGroups(TableColumn col) {
     if (columnGroups == null) {
       return Collections.emptyList();

@@ -20,12 +20,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TabTransferHandler extends TransferHandler {
-  private final DataFlavor localObjectFlavor;
-  public TabTransferHandler() {
-    System.out.println("TabTransferHandler");
-    localObjectFlavor = new DataFlavor(DnDTabData.class, "DnDTabData");
-  }
+  private final DataFlavor localObjectFlavor = new DataFlavor(DnDTabData.class, "DnDTabData");
   private DnDTabbedPane source = null;
+
   @Override protected Transferable createTransferable(JComponent c) {
     System.out.println("createTransferable");
     if (c instanceof DnDTabbedPane) source = (DnDTabbedPane) c;
@@ -46,6 +43,7 @@ comments: true
       }
     };
   }
+
   @Override public boolean canImport(TransferSupport support) {
     //System.out.println("canImport");
     if (!support.isDrop() || !support.isDataFlavorSupported(localObjectFlavor)) {
@@ -107,20 +105,21 @@ comments: true
     return image.getSubimage(rect.x, rect.y, rect.width, rect.height);
   }
 
-  private static GhostGlassPane glassPane;
   @Override public int getSourceActions(JComponent c) {
     System.out.println("getSourceActions");
-    DnDTabbedPane src = (DnDTabbedPane) c;
-    if (glassPane == null) {
-      c.getRootPane().setGlassPane(glassPane = new GhostGlassPane(src));
+    if (c instanceof DnDTabbedPane) {
+      DnDTabbedPane src = (DnDTabbedPane) c;
+      c.getRootPane().setGlassPane(new GhostGlassPane(src));
+      if (src.dragTabIndex &lt; 0) {
+        return TransferHandler.NONE;
+      }
+      setDragImage(makeDragTabImage(src));
+      c.getRootPane().getGlassPane().setVisible(true);
+      return TransferHandler.MOVE;
     }
-    if (src.dragTabIndex &lt; 0) return TransferHandler.NONE;
-    glassPane.setImage(makeDragTabImage(src));
-    source = src;
-    //setDragImage(img); //java 1.7.0-ea-b84
-    glassPane.setVisible(true);
-    return TransferHandler.MOVE;
+    return TransferHandler.NONE;
   }
+
   @Override public boolean importData(TransferSupport support) {
     System.out.println("importData");
     if (!canImport(support)) return false;
@@ -144,6 +143,7 @@ comments: true
     }
     return false;
   }
+
   @Override protected void exportDone(JComponent c, Transferable data, int action) {
     System.out.println("exportDone");
     DnDTabbedPane src = (DnDTabbedPane) c;

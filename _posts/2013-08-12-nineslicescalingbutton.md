@@ -35,12 +35,15 @@ comments: true
     this.toph = toph;
     this.bottomh = bottomh;
   }
+
   @Override public int getIconWidth() {
     return width; // Math.max(image.getWidth(null), width);
   }
+
   @Override public int getIconHeight() {
     return Math.max(image.getHeight(null), height);
   }
+
   @Override public void paintIcon(Component cmp, Graphics g, int x, int y) {
     Graphics2D g2 = (Graphics2D) g.create();
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
@@ -51,9 +54,7 @@ comments: true
     } else {
       i = new Insets(0, 0, 0, 0);
     }
-
     //g2.translate(x, y); //1.8.0: work fine?
-
     int iw = image.getWidth(cmp);
     int ih = image.getHeight(cmp);
     width  = cmp.getWidth() - i.left - i.right;
@@ -81,7 +82,6 @@ comments: true
       g2.drawImage(image.getSubimage(iw - rightw, ih - bottomh, rightw, bottomh),
                    width - rightw, height - bottomh, cmp);
     }
-
     g2.dispose();
   }
 }
