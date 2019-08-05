@@ -51,6 +51,7 @@ SwingWorker&lt;Void, Void&gt; worker = new SwingWorker&lt;Void, Void&gt;() {
     }
     return null;
   }
+
   @Override public void done() {
     splashScreen.dispose();
   }
@@ -75,11 +76,11 @@ EventQueue.invokeLater(new Runnable() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、以下のようなスプラッシュスクリーンを表示しています。
+上記のサンプルでは、以下のようなスプラッシュスクリーンを作成して表示しています。
 
-- モーダルな`JDialog`に、画像と`JProgressBar`を追加
-- `Dialog#setUndecorated(true)`として、タイトルバーを非表示
-- `SwingWorker`を使って、進捗状態を表示
+- モーダルな`JDialog`に画像と`JProgressBar`を追加
+- `Dialog#setUndecorated(true)`としてタイトルバーを非表示
+- `SwingWorker`を使って進捗状態を表示
 
 <!-- dummy comment line for breaking list -->
 
@@ -88,11 +89,7 @@ EventQueue.invokeLater(new Runnable() {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>//package example;
-//-*- mode:java; encoding:utf8n; coding:utf-8 -*-
-// vim:set fileencoding=utf-8:
-//@homepage@
-import java.awt.*;
+<pre class="prettyprint"><code>import java.awt.*;
 import java.beans.*;
 import java.util.List;
 import javax.swing.*;
@@ -147,6 +144,7 @@ public class ProgressSplashScreenTest {
         }
         return null;
       }
+
       @Override protected void process(List&lt;String&gt; chunks) {
         for (String cmd: chunks) {
           if (cmd.equals("showFrame")) {
@@ -160,6 +158,7 @@ public class ProgressSplashScreenTest {
           }
         }
       }
+
       @Override public void done() {
         splashScreen.dispose();
       }
@@ -181,9 +180,11 @@ class SplashScreenIcon implements Icon {
     g2.translate(-x, -y);
     g2.dispose();
   }
+
   @Override public int getIconWidth()  {
     return 200;
   }
+
   @Override public int getIconHeight() {
     return 100;
   }

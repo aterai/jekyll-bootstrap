@@ -17,28 +17,19 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ButtonsRenderer&lt;E&gt; extends JPanel implements ListCellRenderer&lt;E&gt; {
-  private static final Color EVEN_COLOR = new Color(230, 255, 230);
-  private final JTextArea textArea = new JTextArea();
-  private final JButton deleteButton = new JButton(new AbstractAction("delete") {
-    @Override public void actionPerformed(ActionEvent e) {
-      if (model.getSize() &gt; 1) {
-        model.remove(index);
-      }
-    }
-  });
-  private final JButton copyButton = new JButton(new AbstractAction("copy") {
-    @Override public void actionPerformed(ActionEvent e) {
-      model.add(index, model.get(index));
-    }
-  });
-  private final DefaultListModel&lt;E&gt; model;
-  private int index;
-  public int pressedIndex  = -1;
-  public int rolloverIndex = -1;
-  public JButton button;
+  protected static final Color EVEN_COLOR = new Color(0xE6_FF_E6);
+  protected final JTextArea textArea = new JTextArea();
+  protected final JButton deleteButton = new JButton("delete");
+  protected final JButton copyButton = new JButton("copy");
+  protected final List&lt;JButton&gt; buttons = Arrays.asList(deleteButton, copyButton);
+  protected final DefaultListModel&lt;E&gt; model;
+  protected int targetIndex;
+  protected int pressedIndex = -1;
+  protected int rolloverIndex = -1;
+  protected JButton button;
 
   protected ButtonsRenderer(DefaultListModel&lt;E&gt; model) {
-    super(new BorderLayout());
+    super(new BorderLayout()); // *1
     this.model = model;
     setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 0));
     setOpaque(true);
@@ -46,25 +37,35 @@ comments: true
     textArea.setOpaque(false);
     add(textArea);
 
+    deleteButton.addActionListener(e -&gt; {
+      boolean isMoreThanOneItem = model.getSize() &gt; 1;
+      if (isMoreThanOneItem) {
+        model.remove(targetIndex);
+      }
+    });
+    copyButton.addActionListener(e -&gt; model.add(targetIndex, model.get(targetIndex)));
+
     Box box = Box.createHorizontalBox();
-    for (JButton b : Arrays.asList(deleteButton, copyButton)) {
+    buttons.forEach(b -&gt; {
       b.setFocusable(false);
       b.setRolloverEnabled(false);
       box.add(b);
       box.add(Box.createHorizontalStrut(5));
-    }
+    });
     add(box, BorderLayout.EAST);
   }
+
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
     d.width = 0; // VerticalScrollBar as needed
     return d;
   }
+
   @Override public Component getListCellRendererComponent(
       JList&lt;? extends E&gt; list, E value, int index,
       boolean isSelected, boolean cellHasFocus) {
     textArea.setText(Objects.toString(value, ""));
-    this.index = index;
+    this.targetIndex = index;
     if (isSelected) {
       setBackground(list.getSelectionBackground());
       textArea.setForeground(list.getSelectionForeground());
@@ -72,7 +73,7 @@ comments: true
       setBackground(index % 2 == 0 ? EVEN_COLOR : list.getBackground());
       textArea.setForeground(list.getForeground());
     }
-    resetButtonStatus();
+    buttons.forEach(ButtonsRenderer::resetButtonStatus);
     if (Objects.nonNull(button)) {
       if (index == pressedIndex) {
         button.getModel().setSelected(true);
@@ -84,14 +85,13 @@ comments: true
     }
     return this;
   }
-  private void resetButtonStatus() {
-    for (JButton b : Arrays.asList(deleteButton, copyButton)) {
-      ButtonModel m = b.getModel();
-      m.setRollover(false);
-      m.setArmed(false);
-      m.setPressed(false);
-      m.setSelected(false);
-    }
+
+  private static void resetButtonStatus(AbstractButton button) {
+    ButtonModel model = button.getModel();
+    model.setRollover(false);
+    model.setArmed(false);
+    model.setPressed(false);
+    model.setSelected(false);
   }
 }
 </code></pre>
@@ -106,7 +106,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## コメント
-- ダミーの`view, edit`ボタンを実際に動作する行の`delete, copy`ボタンに変更(ソースを修正したのは2011年10月、スクリーンショットは未変更)。 -- *aterai* 2013-11-20 (水) 16:13:40
+- ダミーの`view, edit`ボタンを実際に動作する行の`delete, copy`ボタンに変更(ソースを修正したのは`2011-10-??`、スクリーンショットは未変更)。 -- *aterai* 2013-11-20 (水) 16:13:40
 - `VerticalScrollBar`が表示されると、セルの幅が縮むように変更。 -- *aterai* 2016-04-19 (火) 16:13:40
 
 <!-- dummy comment line for breaking list -->

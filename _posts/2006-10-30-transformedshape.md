@@ -67,7 +67,7 @@ comments: true
 上記のサンプルでは、対象文字、`Font`、`FontRenderContext`から`TextLayout`を生成し、`TextLayout#getOutline()`メソッドで文字のアウトラインを`Shape`として取得しています。
 
 - - - -
-- `OpenJDK Corretto-8.212`で実行すると回転中にフォント表示が乱れる件は、[Java2D rendering may break when using soft clipping effects · Issue #127 · corretto/corretto-8](https://github.com/corretto/corretto-8/issues/127)、`8u222`で修正される予定
+- `OpenJDK Corretto-8.212`で実行すると回転中にフォント表示が乱れる件は、[Java2D rendering may break when using soft clipping effects · Issue #127 · corretto/corretto-8](https://github.com/corretto/corretto-8/issues/127)、`8u222`で修正済み ~~される予定~~
 
 <!-- dummy comment line for breaking list -->
 

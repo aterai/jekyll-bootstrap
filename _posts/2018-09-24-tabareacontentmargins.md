@@ -7,13 +7,13 @@ tags: [JTabbedPane, NimbusLookAndFeel]
 author: aterai
 pubdate: 2018-09-24T22:51:27+09:00
 description: JTabbedPaneのタブエリア余白を取得、変更するテストを行います。
-image: https://drive.google.com/uc?export=view&id=1WORPot3oeRdnLbFIDh6BcBmJpFVrLASoOw
+image: https://drive.google.com/uc?id=1WORPot3oeRdnLbFIDh6BcBmJpFVrLASoOw
 comments: true
 ---
 ## 概要
 `JTabbedPane`のタブエリア余白を取得、変更するテストを行います。
 
-{% download https://drive.google.com/uc?export=view&id=1WORPot3oeRdnLbFIDh6BcBmJpFVrLASoOw %}
+{% download https://drive.google.com/uc?id=1WORPot3oeRdnLbFIDh6BcBmJpFVrLASoOw %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");

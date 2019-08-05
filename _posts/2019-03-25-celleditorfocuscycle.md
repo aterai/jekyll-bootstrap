@@ -8,6 +8,9 @@ author: aterai
 pubdate: 2019-03-25T17:24:54+09:00
 description: JTableが編集中の場合はセルエディタ内でタブキーによるフォーカス移動が可能になるよう設定します。
 image: https://drive.google.com/uc?id=1m3-6T_FyHa51fARDyoZ92MJKfAVox1HjjQ
+hreflang:
+    href: https://java-swing-tips.blogspot.com/2019/07/enable-focus-move-by-tab-key-in-cell.html
+    lang: en
 comments: true
 ---
 ## 概要

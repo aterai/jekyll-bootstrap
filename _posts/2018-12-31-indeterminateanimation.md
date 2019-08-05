@@ -7,13 +7,13 @@ tags: [JProgressBar, Animation, LookAndFeel]
 author: aterai
 pubdate: 2018-12-31T17:42:54+09:00
 description: MetalLookAndFeelを適用したJProgressBarの不確定モードアニメーションを跳ね返りではなく左から右への一方向繰り返しに変更します。
-image: https://drive.google.com/uc?export=view&id=18dq3XCJzHrT69mJQQafMAz808GvXj2vTPQ
+image: https://drive.google.com/uc?id=18dq3XCJzHrT69mJQQafMAz808GvXj2vTPQ
 comments: true
 ---
 ## 概要
 `MetalLookAndFeel`を適用した`JProgressBar`の不確定モードアニメーションを跳ね返りではなく左から右への一方向繰り返しに変更します。
 
-{% download https://drive.google.com/uc?export=view&id=18dq3XCJzHrT69mJQQafMAz808GvXj2vTPQ %}
+{% download https://drive.google.com/uc?id=18dq3XCJzHrT69mJQQafMAz808GvXj2vTPQ %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class OneDirectionIndeterminateProgressBarUI extends BasicProgressBarUI {

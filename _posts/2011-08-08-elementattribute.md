@@ -96,6 +96,7 @@ editor1.setEditorKit(new HTMLEditorKit());
 </code></pre>
     - * 参考リンク [#reference]
 - [JEditorPaneにリンクを追加](https://ateraimemo.com/Swing/HyperlinkListener.html)
+- [&#91;JDK-8218674&#93; HTML Tooltip with "img src=" on component doesn't show - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8218674)
 
 <!-- dummy comment line for breaking list -->
 

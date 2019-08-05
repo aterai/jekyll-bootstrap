@@ -24,8 +24,8 @@ comments: true
     super("run");
   }
   @Override public void actionPerformed(ActionEvent evt) {
-    final JProgressBar bar1 = new JProgressBar(0, 100);
-    final JProgressBar bar2 = new JProgressBar(0, 100);
+    JProgressBar bar1 = new JProgressBar(0, 100);
+    JProgressBar bar2 = new JProgressBar(0, 100);
     runButton.setEnabled(false);
     canButton.setEnabled(true);
     pauseButton.setEnabled(true);
@@ -34,6 +34,7 @@ comments: true
     statusPanel.add(bar2, BorderLayout.SOUTH);
     statusPanel.revalidate();
     worker = new SwingWorker&lt;String, Progress&gt;() {
+      private final Random r = new Random();
       @Override public String doInBackground() {
         int current = 0;
         int lengthOfTask = 12; //filelist.size();
@@ -55,7 +56,7 @@ comments: true
         publish(new Progress(Component.LOG, "\n"));
         return "Done";
       }
-      private final Random r = new Random();
+
       private void convertFileToSomething() throws InterruptedException {
         boolean flag = false;
         int current = 0;
@@ -77,6 +78,7 @@ comments: true
           current++;
         }
       }
+
       @Override protected void process(java.util.List&lt;Progress&gt; chunks) {
         for (Progress s: chunks) {
           switch (s.component) {
@@ -91,7 +93,7 @@ comments: true
                   Document doc = area.getDocument();
                   doc.remove(doc.getLength() - 1, 1);
                 } catch (Exception ex) {
-                    ex.printStackTrace();
+                  ex.printStackTrace();
                 }
               }
               break;
@@ -99,6 +101,7 @@ comments: true
           }
         }
       }
+
       @Override public void done() {
         // ...
       }
@@ -106,6 +109,7 @@ comments: true
     worker.execute();
   }
 }
+// ...
 private boolean isPaused = false;
 class PauseAction extends AbstractAction {
   public PauseAction() {

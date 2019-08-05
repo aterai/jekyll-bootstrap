@@ -63,7 +63,8 @@ String str = new String(Character.toChars(code));
 [IPAmj明朝](http://mojikiban.ipa.go.jp/download.html)と[IPAex明朝](http://ipafont.ipa.go.jp/)フォントがインストールされている場合、その文字の形の違いを比較できます。
 
 - - - -
-- `8.0.212-amzn`で実行するとゲタ文字や一部の表示が壊れる？
+- ~~`8.0.212-amzn`で実行するとゲタ文字や一部の表示が壊れる？~~
+- `8.0.222-amzn`で修正済み
     - `11.0.3-amzn`は正常
     - パネルのリサイズで再描画されると正常に戻ったり壊れたりする場合がある？
 

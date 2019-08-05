@@ -90,6 +90,7 @@ while (i &lt; text.length()) {
 ## 参考リンク
 - [JLabelの文字列を折り返し](https://ateraimemo.com/Swing/GlyphVector.html)
 - [Java による Unicode サロゲートプログラミング](https://www.ibm.com/developerworks/jp/ysl/library/java/j-unicode_surrogate/index.html)
+- [-webkit-line-clamp - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
 
 <!-- dummy comment line for breaking list -->
 

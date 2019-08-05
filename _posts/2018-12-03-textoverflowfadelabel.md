@@ -7,13 +7,13 @@ tags: [JLabel, HTML, TextLayout, BufferedImage, AlphaComposite]
 author: aterai
 pubdate: 2018-12-03T02:58:34+09:00
 description: JLabelなどで文字列があふれる場合、デフォルトの省略記号…ではなく、フェードアウト効果を適用して端付近の文字を透明表示します。
-image: https://drive.google.com/uc?export=view&id=16SQWlFfTk5X8LOxTKkjobFZblb-hgj5uGA
+image: https://drive.google.com/uc?id=16SQWlFfTk5X8LOxTKkjobFZblb-hgj5uGA
 comments: true
 ---
 ## 概要
 `JLabel`などで文字列があふれる場合、デフォルトの省略記号`…`ではなく、フェードアウト効果を適用して端付近の文字を透明表示します。
 
-{% download https://drive.google.com/uc?export=view&id=16SQWlFfTk5X8LOxTKkjobFZblb-hgj5uGA %}
+{% download https://drive.google.com/uc?id=16SQWlFfTk5X8LOxTKkjobFZblb-hgj5uGA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>class TextOverflowFadeLabel extends JLabel {

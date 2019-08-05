@@ -7,13 +7,13 @@ tags: [JTable, TableCellEditor, JCheckBox, JPopupMenu]
 author: aterai
 pubdate: 2019-01-14T09:29:04+09:00
 description: JTableで選択されているすべてのセルを取得し、その値を一括で変更します。
-image: https://drive.google.com/uc?export=view&id=1ggYIcKf-1ErfYHclwW_lUH1U1N0dvgye7g
+image: https://drive.google.com/uc?id=1ggYIcKf-1ErfYHclwW_lUH1U1N0dvgye7g
 comments: true
 ---
 ## 概要
 `JTable`で選択されているすべてのセルを取得し、その値を一括で変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1ggYIcKf-1ErfYHclwW_lUH1U1N0dvgye7g %}
+{% download https://drive.google.com/uc?id=1ggYIcKf-1ErfYHclwW_lUH1U1N0dvgye7g %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>toggle = add("toggle");

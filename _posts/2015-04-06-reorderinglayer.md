@@ -73,7 +73,7 @@ comments: true
       Component cmp = draggingComonent;
       draggingComonent = null;
 
-      //swap the dragging panel and the dummy filler
+      // swap the dragging panel and the dummy filler
       for (int i = 0; i &lt; parent.getComponentCount(); i++) {
         Component c = parent.getComponent(i);
         if (Objects.equals(c, gap)) {
@@ -105,14 +105,14 @@ comments: true
       JComponent parent = l.getView();
 
       if (Objects.isNull(draggingComonent)) {
-        //MotionThreshold
+        // MotionThreshold
         if (startPt.distance(pt) &gt; gestureMotionThreshold) {
           startDragging(parent, pt);
         }
         return;
       }
 
-      //update the cursor window location
+      // update the cursor window location
       updateWindowLocation(pt, parent);
       l.repaint();
 
@@ -120,7 +120,7 @@ comments: true
         return;
       }
 
-      //change the dummy filler location
+      // change the dummy filler location
       for (int i = 0; i &lt; parent.getComponentCount(); i++) {
         Component c = parent.getComponent(i);
         Rectangle r = c.getBounds();
@@ -147,7 +147,7 @@ comments: true
     draggingComonent = c;
 
     Rectangle r = draggingComonent.getBounds();
-    draggingRect.setBounds(r); //save draggingComonent size
+    draggingRect.setBounds(r); // save draggingComonent size
     dragOffset.setLocation(pt.x - r.x, pt.y - r.y);
 
     gap = Box.createRigidArea(r.getSize());

@@ -7,13 +7,13 @@ tags: [Base64, ImageIcon, ImageIO]
 author: aterai
 pubdate: 2018-10-01T01:53:21+09:00
 description: Base64エンコーダで画像ファイルを文字列、デコーダで文字列をImageIconに変換します。
-image: https://drive.google.com/uc?export=view&id=1Q3H7o8qNXeAHstp2cSIgG5--D-bC41DgOA
+image: https://drive.google.com/uc?id=1Q3H7o8qNXeAHstp2cSIgG5--D-bC41DgOA
 comments: true
 ---
 ## 概要
 `Base64`エンコーダで画像ファイルを文字列、デコーダで文字列を`ImageIcon`に変換します。
 
-{% download https://drive.google.com/uc?export=view&id=1Q3H7o8qNXeAHstp2cSIgG5--D-bC41DgOA %}
+{% download https://drive.google.com/uc?id=1Q3H7o8qNXeAHstp2cSIgG5--D-bC41DgOA %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>JButton encode = new JButton("encode");

@@ -7,13 +7,13 @@ tags: [JPanel, LayoutManager, GridLayout, GridBagLayout]
 author: aterai
 pubdate: 2019-02-11T21:46:54+09:00
 description: JPanel内のコンポーネントのZ軸順インデックスを変更してその表示順序を変更します。
-image: https://drive.google.com/uc?export=view&id=1mSe3NrxaEpAwsdupzRCA_Uv1RY8aaMXf5Q
+image: https://drive.google.com/uc?id=1mSe3NrxaEpAwsdupzRCA_Uv1RY8aaMXf5Q
 comments: true
 ---
 ## 概要
 `JPanel`内のコンポーネントの`Z`軸順インデックスを変更してその表示順序を変更します。
 
-{% download https://drive.google.com/uc?export=view&id=1mSe3NrxaEpAwsdupzRCA_Uv1RY8aaMXf5Q %}
+{% download https://drive.google.com/uc?id=1mSe3NrxaEpAwsdupzRCA_Uv1RY8aaMXf5Q %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>button.addActionListener(e -&gt; {

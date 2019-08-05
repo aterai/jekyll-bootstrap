@@ -23,7 +23,7 @@ label.setLabelFor(textField);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLabel`に`setDisplayedMnemonic(...)`メソッドを使って、ニーモニックを設定し、`setLabelFor(...)`メソッドでニーモニックがアクティブになった時にフォーカス移動の対象となるコンポーネントを指定しています。
+上記のサンプルでは`JLabel`に`setDisplayedMnemonic(...)`メソッドを使ってニーモニックを設定し、`setLabelFor(...)`メソッドでニーモニックがアクティブになった時にフォーカス移動の対象となるコンポーネントを指定しています。
 
 - 編集不可の`JComboBox`などで、この方法ではフォーカスが移動しない？
     - <kbd>Tab</kbd>キーなどによるフォーカス移動や`JComboBox#requestFocusInWindow()`を実行した場合のようにならない

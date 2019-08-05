@@ -23,8 +23,8 @@ comments: true
     super(new GridBagLayout());
     GridBagConstraints c = new GridBagConstraints();
     c.weightx = 1.0;
-    c.insets  = new Insets(0, 10, 0, 10);
-    c.fill    = GridBagConstraints.HORIZONTAL;
+    c.insets = new Insets(0, 10, 0, 10);
+    c.fill = GridBagConstraints.HORIZONTAL;
     add(comboBox, c);
 
     comboBox.setEditable(true);
@@ -37,6 +37,7 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
     super();
     setName("Table.cellRenderer");
   }
+
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value,
       boolean isSelected, boolean hasFocus, int row, int column) {
@@ -52,7 +53,7 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 
 ## 解説
 - `Border`(左)
-    - `JComboBox`自身に余白を設定し、これを`CellRenderer`, `CellEditor`に使用
+    - `JComboBox`自身に余白を設定し、これを`CellRenderer`と`CellEditor`に適用
     - ドロップダウンリストの位置、サイズが余白を含んだ幅になる
         
         <pre class="prettyprint"><code>combo.setBorder(BorderFactory.createCompoundBorder(
@@ -60,7 +61,7 @@ class ComboBoxCellRenderer extends ComboBoxPanel implements TableCellRenderer {
 </code></pre>
 - `JPanel` + `JComboBox`(右)
     - `GridBagLayout`を使用する`JPanel`に`JComboBox`を追加
-    - `fill`フィールドを`GridBagConstraints.HORIZONTAL`として、垂直には`JComboBox`のサイズを変更しない
+    - `fill`フィールドを`GridBagConstraints.HORIZONTAL`として、垂直方向には`JComboBox`のサイズを変更しない
     - `insets`フィールドを設定して、`JComboBox`の外側に別途(ドロップダウンリストの位置、サイズに影響しないように)余白を追加
 
 <!-- dummy comment line for breaking list -->

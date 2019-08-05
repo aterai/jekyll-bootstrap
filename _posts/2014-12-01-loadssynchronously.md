@@ -54,6 +54,7 @@ comments: true
 
 - - - -
 - `JDK 11.0.2`、`JDK 8.0.202`から`ImageView`に`setLoadsSynchronously(true)`を設定すると画像が表示されなくなってしまった
+    - `JDK 8.0.222`では修正されている
     - [&#91;JDK-8223384&#93; ImageView incorrectly calculates size when synchronously loaded - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8223384)
     - `OracleJDK`でも`OpenJDK`でも同じ状況
 - `JDK 11.0.1`では正常に画像が表示される

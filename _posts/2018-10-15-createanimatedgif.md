@@ -7,13 +7,13 @@ tags: [Graphics, ImageIO, AnimatedGif, File]
 author: aterai
 pubdate: 2018-10-15T01:33:57+09:00
 description: ImageIOを使用してAnimatedGifを生成し、これを画像ファイルとして書き出します。
-image: https://drive.google.com/uc?export=view&id=1u3A7qx0Lmc-FYjdYhsZkBRrdEChn78_-1A
+image: https://drive.google.com/uc?id=1u3A7qx0Lmc-FYjdYhsZkBRrdEChn78_-1A
 comments: true
 ---
 ## 概要
 `ImageIO`を使用して`AnimatedGif`を生成し、これを画像ファイルとして書き出します。
 
-{% download https://drive.google.com/uc?export=view&id=1u3A7qx0Lmc-FYjdYhsZkBRrdEChn78_-1A %}
+{% download https://drive.google.com/uc?id=1u3A7qx0Lmc-FYjdYhsZkBRrdEChn78_-1A %}
 
 ## サンプルコード
 <pre class="prettyprint"><code>BufferedImage image = new BufferedImage(

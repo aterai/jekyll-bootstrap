@@ -26,6 +26,7 @@ comments: true
     super();
     this.lengthOfTask = lengthOfTask;
   }
+
   @Override protected Integer doInBackground() {
     int current = 0;
     while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
@@ -48,9 +49,11 @@ class ProgressValue {
     this.progress = progress;
     this.lengthOfTask = lengthOfTask;
   }
+
   public Integer getProgress() {
     return progress;
   }
+
   public Integer getLengthOfTask() {
     return lengthOfTask;
   }
@@ -60,7 +63,8 @@ class ProgressRenderer extends DefaultTableCellRenderer {
   private final JProgressBar progress = new JProgressBar();
   private final JPanel renderer = new JPanel(new BorderLayout());
   @Override public Component getTableCellRendererComponent(
-      JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+      JTable table, Object value, boolean isSelected, boolean hasFocus,
+      int row, int column) {
     Component c;
     renderer.removeAll();
     progress.setValue(0);
@@ -78,13 +82,16 @@ class ProgressRenderer extends DefaultTableCellRenderer {
         renderer.add(progress);
         c = renderer;
       } else {
-        c = super.getTableCellRendererComponent(table, "Done", isSelected, hasFocus, row, column);
+        c = super.getTableCellRendererComponent(
+                table, "Done", isSelected, hasFocus, row, column);
       }
     } else {
-      c = super.getTableCellRendererComponent(table, "Waiting...", isSelected, hasFocus, row, column);
+      c = super.getTableCellRendererComponent(
+              table, "Waiting...", isSelected, hasFocus, row, column);
     }
     return c;
   }
+
   @Override public void updateUI() {
     super.updateUI();
     setOpaque(true);

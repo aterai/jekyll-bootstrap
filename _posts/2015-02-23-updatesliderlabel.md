@@ -23,7 +23,7 @@ slider.setMinorTickSpacing(500);
 slider.setPaintLabels(true);
 slider.setPaintTicks(true);
 slider.setSnapToTicks(true);
-//slider.setBorder(BorderFactory.createLineBorder(Color.WHITE, 10));
+// slider.setBorder(BorderFactory.createLineBorder(Color.WHITE, 10));
 Dictionary&lt;?, ?&gt; labelTable = slider.getLabelTable();
 Enumeration&lt;?&gt; ed = labelTable.keys();
 while (ed.hasMoreElements()) {

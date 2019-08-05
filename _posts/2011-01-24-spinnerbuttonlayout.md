@@ -36,7 +36,7 @@ comments: true
     - デフォルト
     - 右端に`2`つのボタンが配置される
 - `RIGHT_TO_LEFT`
-    - `JSpinner#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`で、ボタンを左側に配置
+    - `JSpinner#setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT)`で、各ボタンを左側に配置
 - `L(Prev), R(Next): 1`
     - `BorderLayout#addLayoutComponent(...)`をオーバーライドして、`Editor`を`Center`、`Next`を`East`、`Prev`を`West`に配置するレイアウトマネージャーを作成して使用
         
