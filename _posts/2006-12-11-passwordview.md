@@ -22,15 +22,18 @@ comments: true
     c.setEchoChar('\u25A0'); //As wide as a CJK character cell (fullwidth)
     return new MyPasswordFieldUI();
   }
+
   @Override public View create(Element elem) {
     return new MyPasswordView(elem);
   }
+
   private static class MyPasswordView extends PasswordView {
     @Override protected int drawEchoCharacter(Graphics g, int x, int y, char c) {
       FontMetrics fm = g.getFontMetrics();
       ICON.paintIcon(null, g, x, y - fm.getAscent());
       return x + ICON.getIconWidth(); //fm.charWidth(c);
     }
+
     public MyPasswordView(Element element) {
       super(element);
     }
@@ -42,7 +45,7 @@ comments: true
 - 上: `setEchoChar('\u2605')`
     - `JPasswordField#setEchoChar(...)`メソッドで任意の文字をエコー文字に設定
 - 下: `drawEchoCharacter`
-    - `PasswordView#drawEchoCharacter(...)`をオーバーライドし、任意の図形をエコー文字として描画する`BasicPasswordFieldUI`を作成し、`JPasswordField`に設定
+    - `PasswordView#drawEchoCharacter(...)`をオーバーライドして任意の図形をエコー文字として描画する`BasicPasswordFieldUI`を作成し、`JPasswordField`に設定
     - 上の`JPasswordField`のエコー文字と同じ文字を`setEchoChar`で設定し、図形のサイズを合わせる
 
 <!-- dummy comment line for breaking list -->

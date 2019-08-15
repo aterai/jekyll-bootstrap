@@ -48,6 +48,7 @@ DefaultTableModel model = new DefaultTableModel(data, columnNames) {
   @Override public boolean isCellEditable(int row, int column) {
     return column == 1;
   }
+
   @Override public Class&lt;?&gt; getColumnClass(int column) {
     return getValueAt(0, column).getClass();
   }
@@ -74,7 +75,7 @@ model.addTableModelListener(new TableModelListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFrame`がデフォルトのウィンドウ装飾を使用するように`JFrame.setDefaultLookAndFeelDecorated(true);`を指定し、`UIManager.setColor(...)`を使用してタイトルバーの文字色、背景色を変更するテストを行っています。
+上記のサンプルでは、`JFrame`がデフォルトのウィンドウ装飾を使用するように`JFrame.setDefaultLookAndFeelDecorated(true);`を指定し、`UIManager.setColor(...)`メソッドを使用してタイトルバーの文字色、背景色を変更するテストを行っています。
 
 - `activeCaption`: タイトルバーの背景色
 - `activeCaptionBorder`: タイトルバーの`Border`の色

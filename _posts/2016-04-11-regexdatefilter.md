@@ -34,6 +34,7 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
     super();
     this.matcher = pattern.matcher("");
   }
+
   @Override public boolean include(
       Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
     for (int i = entry.getValueCount() - 1; i &gt;= 0; i--) {
@@ -57,9 +58,9 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
     - フィルタをクリア
 - `RowFilter.regexFilter`
     - `RowFilter.regexFilter(txt)`を設定
-    - 以下のように、`RowFilter.regexFilter`では`Date#toString()`メソッドが使用され、セルに表示されている文字列ではフィルタリングされない
+    - 以下のように`RowFilter.regexFilter`では`Date#toString()`メソッドが使用され、セルに表示されている文字列ではフィルタリングされない
         
-        <pre class="prettyprint"><code>//@see javax/swing/RowFilter.java
+        <pre class="prettyprint"><code>// @see javax/swing/RowFilter.java
         public static abstract class Entry&lt;M, I&gt; {
           // ...
           public String getStringValue(int index) {
@@ -71,9 +72,9 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
     - 例: `12`ではすべての行が非表示だが、`Dec`では`2`行表示される
 - `new RowFilter()`
     - `RowFilter<TableModel, Integer>`を継承するフィルタを作成して設定
-    - このフィルタでは、以下のように、`DateRenderer`が表示に使用しているデフォルトの`DateFormat`を使用して`Date`を文字列に変換し、フィルタリングを行う
+    - このフィルタでは以下のように`DateRenderer`が表示に使用しているデフォルトの`DateFormat`を使用して`Date`を文字列に変換してフィルタリングを行う
         
-        <pre class="prettyprint"><code>//@see javax/swing/JTable.java
+        <pre class="prettyprint"><code>// @see javax/swing/JTable.java
         static class DateRenderer extends DefaultTableCellRenderer.UIResource {
           public void setValue(Object value) {
             // ...
@@ -85,17 +86,17 @@ class RegexDateFilter extends RowFilter&lt;TableModel, Integer&gt; {
 
 <!-- dummy comment line for breaking list -->
 - - - -
-- `JDK 1.8.0`以上なら、`toString()`でロケールを無視する`Date`ではなく`LocalDateTime`を使用すれば、`LocalDateTime#toString()`が`ISO-8601`形式の文字列を返すので面倒が少ない
+- `JDK 1.8.0`以上の場合、`toString()`でロケールを無視する`Date`ではなく`LocalDateTime`を使用すれば`LocalDateTime#toString()`が`ISO-8601`形式の文字列を返すので面倒が少ない
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>  LocalDateTime d = LocalDateTime.of(2002, 12, 31, 0, 0);
-  Object[][] data = {
-    {date,  d},
-    {start, d.minus(2, ChronoUnit.DAYS)},
-    {end,   d.plus(7, ChronoUnit.DAYS)}
-  };
-  DefaultTableModel model = new DefaultTableModel(data, new String[] {"Date", "LocalDateTime"}) {
+<pre class="prettyprint"><code>LocalDateTime d = LocalDateTime.of(2002, 12, 31, 0, 0);
+Object[][] data = {
+  {date, d},
+  {start, d.minus(2, ChronoUnit.DAYS)},
+  {end, d.plus(7, ChronoUnit.DAYS)}
+};
+DefaultTableModel model = new DefaultTableModel(data, new String[] {"Date", "LocalDateTime"}) {
   @Override public Class&lt;?&gt; getColumnClass(int column) {
     return column == 0 ? Date.class : column == 1 ? LocalDateTime.class : Object.class;
   }

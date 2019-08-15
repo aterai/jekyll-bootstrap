@@ -64,7 +64,7 @@ comments: true
     Element root  = doc.getDefaultRootElement();
     int lineCount = root.getElementIndex(doc.getLength());
     int maxDigits = Math.max(3, String.valueOf(lineCount).length());
-    Insets i = getBorder().getBorderInsets(this);
+    Insets i = getInsets();
     return maxDigits * fontMetrics.stringWidth("0") + i.left + i.right;
     //return 48;
   }
@@ -86,7 +86,7 @@ comments: true
     int start = getLineAtPoint(base);
     int end   = getLineAtPoint(base + clip.height);
     int y     = start * fontHeight;
-    int rmg   = getBorder().getBorderInsets(this).right;
+    int rmg   = getInsets().right;
     for (int i = start; i &lt;= end; i++) {
       String text = String.valueOf(i + 1);
       int x = getComponentWidth() - rmg - fontMetrics.stringWidth(text);

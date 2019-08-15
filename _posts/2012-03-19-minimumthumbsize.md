@@ -20,7 +20,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、右の`JScrollPane`で、`JScrollBar`の`Knob`(`Thumb`)が短くなりすぎないように、最小サイズ(`Horizontal`の場合は幅、`Vertical`の場合は高さ)を設定します。
+上記のサンプルでは、右の`JScrollPane`で、`JScrollBar`のつまみ(`Thumb`、`Knob`)が短くなりすぎないように、最小サイズ(`Horizontal`の場合は幅、`Vertical`の場合は高さ)を設定します。
 
 - 注: `LookAndFeel`によって、`UIManager.put("ScrollBar.minimumThumbSize", new Dimension(32, 32));`が有効かどうかは異なる
     - 有効: `BasicLookAndFeel`、`WindowsLookAndFeel`
@@ -42,7 +42,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`Windows 7`の`WindowsLookAndFeel`で`JSlider`を使った場合も、つまみ？のサイズが小さすぎるが、`UIManager.put("Slider.minimumHorizontalSize", new Dimension(32, 32))`などとしても効果がない？
+`Windows 7`の`WindowsLookAndFeel`で`JSlider`を使った場合も、つまみのサイズが小さすぎるが、`UIManager.put("Slider.minimumHorizontalSize", new Dimension(32, 32))`などとしても効果がない？
 
 	Slider.horizontalSize
 	Slider.verticalSize

@@ -17,18 +17,6 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ClearSelectionListener extends MouseAdapter {
-  private static void clearSelectionAndFocus(JList list) {
-    list.clearSelection();
-    list.getSelectionModel().setAnchorSelectionIndex(-1);
-    list.getSelectionModel().setLeadSelectionIndex(-1);
-  }
-  private static boolean contains(JList list, Point pt) {
-    for (int i = 0; i &lt; list.getModel().getSize(); i++) {
-      Rectangle r = list.getCellBounds(i, i);
-      if (r.contains(pt)) return true;
-    }
-    return false;
-  }
   private boolean startOutside = false;
   @Override public void mousePressed(MouseEvent e) {
     JList list = (JList) e.getSource();
@@ -37,9 +25,11 @@ comments: true
       clearSelectionAndFocus(list);
     }
   }
+
   @Override public void mouseReleased(MouseEvent e) {
     startOutside = false;
   }
+
   @Override public void mouseDragged(MouseEvent e) {
     JList list = (JList) e.getSource();
     if (contains(list, e.getPoint())) {
@@ -47,6 +37,20 @@ comments: true
     } else if (startOutside) {
       clearSelectionAndFocus(list);
     }
+  }
+
+  private static void clearSelectionAndFocus(JList list) {
+    list.clearSelection();
+    list.getSelectionModel().setAnchorSelectionIndex(-1);
+    list.getSelectionModel().setLeadSelectionIndex(-1);
+  }
+
+  private static boolean contains(JList list, Point pt) {
+    for (int i = 0; i &lt; list.getModel().getSize(); i++) {
+      Rectangle r = list.getCellBounds(i, i);
+      if (r.contains(pt)) return true;
+    }
+    return false;
   }
 }
 </code></pre>

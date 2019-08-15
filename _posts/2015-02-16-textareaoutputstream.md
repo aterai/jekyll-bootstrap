@@ -26,10 +26,12 @@ comments: true
     super();
     this.textArea = textArea;
   }
+
   @Override public void flush() throws IOException {
     textArea.append(buf.toString("UTF-8"));
     buf.reset();
   }
+
   @Override public void write(int b) throws IOException {
     buf.write(b);
   }
@@ -38,10 +40,10 @@ comments: true
 
 ## 解説
 - `TextAreaOutputStream`
-    - `ByteArrayOutputStream`を使用して、`JTextArea`に一行ずつ書き込みを行う
-    - これを`System.setOut(new PrintStream(new TextAreaOutputStream(textArea), true, "UTF-8"));`のように標準出力ストリームに割り当てると、`System.out.println(...)`などで改行文字が書き込まれたときにバッファの`flush()`が呼び出され、`textArea.append(buf.toString("UTF-8"));`メソッドで`JTextArea`に文字列が追記される
+    - `ByteArrayOutputStream`を使用して`JTextArea`に一行ずつ書き込みを行う
+    - これを`System.setOut(new PrintStream(new TextAreaOutputStream(textArea), true, "UTF-8"));`のように標準出力ストリームに割り当てると`System.out.println(...)`などで改行文字が書き込まれたときにバッファの`flush()`が呼び出され、`textArea.append(buf.toString("UTF-8"));`メソッドで`JTextArea`に文字列が追記される
 - `TextAreaHandler`
-    - ログ出力を上記の`TextAreaOutputStream`などに割り当てるため、`StreamHandler`を継承する`TextAreaHandler`を作成し、`Logger#addHandler(...)`で設定
+    - ログ出力を上記の`TextAreaOutputStream`などに割り当てるため、`StreamHandler`を継承する`TextAreaHandler`を作成し`Logger#addHandler(...)`で設定
     - `StreamHandler#setEncoding(...)`でエンコーディングを`UTF-8`に設定
     - `StreamHandler#publish(...)`、`StreamHandler#close(...)`をオーバーライド
         
@@ -60,16 +62,19 @@ comments: true
               }
             }
           }
+        
           public TextAreaHandler(OutputStream os) {
             super();
             configure();
             setOutputStream(os);
           }
+        
           //@see java/util/logging/ConsoleHandler.java
           @Override public void publish(LogRecord record) {
             super.publish(record);
             flush();
           }
+        
           @Override public void close() {
             flush();
           }

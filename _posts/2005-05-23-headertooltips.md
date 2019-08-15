@@ -25,7 +25,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTableHeader#getToolTipText()`メソッドをオーバーライドして、マウスカーソルの下にあるカラムヘッダの名前などを`Tooltips`として返すように設定しています。
+上記のサンプルでは、`JTableHeader#getToolTipText()`メソッドをオーバーライドしてマウスカーソルの下にあるカラムヘッダの名前を`TooltipsText`として返すよう設定しています。
 
 ## 参考リンク
 - [JTableHeader#getToolTipText() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/table/JTableHeader.html#getToolTipText-java.awt.event.MouseEvent-)
