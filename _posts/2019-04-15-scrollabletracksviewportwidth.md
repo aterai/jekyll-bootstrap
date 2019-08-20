@@ -17,8 +17,6 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTable table3 = new JTable(1, 3) {
-  // java - How to make JTable both AutoResize and horizontall scrollable? - Stack Overflow
-  // https://stackoverflow.com/questions/6104916/how-to-make-jtable-both-autoresize-and-horizontall-scrollable
   @Override public boolean getScrollableTracksViewportWidth() {
     // default: return !(autoResizeMode == AUTO_RESIZE_OFF);
     return getPreferredSize().width &lt; getParent().getWidth();
@@ -37,11 +35,12 @@ comments: true
         - 参考: [java - How to make JTable both AutoResize and horizontall scrollable? - Stack Overflow](https://stackoverflow.com/questions/6104916/how-to-make-jtable-both-autoresize-and-horizontall-scrollable)
     - `JTable`の幅が一定以下に縮小された場合は、列幅を維持して水平スクロールバーを使用
     - `JTable`の幅が一定以上に拡張された場合は、列幅の自動調整を実行して列幅の合計が`JTable`の幅と等しくなるよう各列を均等にサイズ変更
-        - このサンプルでは、`JTable`の推奨サイズの幅で切り替えている
+        - 上記のサンプルでは`JTable`の推奨サイズ幅で切り替えるよう設定
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [Scrollable#getScrollableTracksViewportWidth() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/Scrollable.html#getScrollableTracksViewportWidth--)
 - [JTable#getScrollableTracksViewportWidth() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#getScrollableTracksViewportWidth--)
 - [java - How to make JTable both AutoResize and horizontall scrollable? - Stack Overflow](https://stackoverflow.com/questions/6104916/how-to-make-jtable-both-autoresize-and-horizontall-scrollable)
 

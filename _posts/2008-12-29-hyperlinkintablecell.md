@@ -36,6 +36,7 @@ comments: true
     }
     return this;
   }
+
   @Override public void mouseMoved(MouseEvent e) {
     JTable table = (JTable) e.getSource();
     Point pt = e.getPoint();
@@ -47,12 +48,14 @@ comments: true
     }
     table.repaint();
   }
+
   @Override public void mouseExited(MouseEvent e)  {
     JTable table = (JTable) e.getSource();
     row = -1;
     col = -1;
     table.repaint();
   }
+
   @Override public void mouseClicked(MouseEvent e) {
     JTable table = (JTable) e.getSource();
     Point pt = e.getPoint();
@@ -69,15 +72,19 @@ comments: true
       }
     }
   }
+
   @Override public void mouseDragged(MouseEvent e) {}
+
   @Override public void mouseEntered(MouseEvent e) {}
+
   @Override public void mousePressed(MouseEvent e) {}
+
   @Override public void mouseReleased(MouseEvent e) {}
 }
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTable`のセル内にリンクを表現するために、`html`タグを使って文字列を修飾するセルレンダラーを作成して使用しています。
+上記のサンプルでは、`JTable`のセル内にリンクを表現するために`html`タグを使って文字列を修飾するセルレンダラーを作成して使用しています。
 
 <pre class="prettyprint"><code>URLRenderer renderer = new URLRenderer();
 table.setDefaultRenderer(URL.class, renderer);

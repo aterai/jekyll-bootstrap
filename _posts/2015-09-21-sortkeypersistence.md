@@ -22,7 +22,7 @@ try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStrea
     RowSorter.SortKey.class,
     new DefaultPersistenceDelegate(new String[] {"column", "sortOrder"}));
   xe.writeObject(table.getRowSorter().getSortKeys());
-// ...
+  // ...
 </code></pre>
 
 ## 解説
@@ -30,14 +30,10 @@ try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStrea
 
 - `RowSorter.SortKey`クラスのコンストラクタの引数をプロパティ名として`DefaultPersistenceDelegate`を作成
 - `RowSorter.SortKey`クラスを`XML`で書き出すため、`XMLEncoder#setPersistenceDelegate(...)`で上記の`PersistenceDelegate`を設定
-
-<!-- dummy comment line for breaking list -->
-
-- 注:
-    - `TableModel`の書出しには、別途[JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)を使用
+- `TableModel`の書出しには、別途[JTableのモデルをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/PersistenceDelegate.html)を使用
     - このサンプルでは、カラムヘッダの幅や順序には対応していない
-        - メモ: [JTable Inhalte speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_Inhalte_speichern)
-        - または、[TableColumnModelをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/ColumnModelPersistence.html)のような`DefaultPersistenceDelegate`を使ってカラムヘッダの幅や順序を保存する方法がある
+    - [JTable Inhalte speichern – Byte-Welt Wiki](http://wiki.byte-welt.net/wiki/JTable_Inhalte_speichern)
+    - [TableColumnModelをXMLファイルで保存、復元する](https://ateraimemo.com/Swing/ColumnModelPersistence.html)のような`DefaultPersistenceDelegate`を使ってカラムヘッダの幅や順序を保存する方法もある
 
 <!-- dummy comment line for breaking list -->
 
