@@ -18,8 +18,9 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JScrollBar vsb = new JScrollBar(Adjustable.VERTICAL) {
   @Override public Dimension getPreferredSize() {
-    Dimension dim = super.getPreferredSize();
-    return new Dimension(0, dim.height);
+    Dimension d = super.getPreferredSize();
+    d.height = 0;
+    return d;
   }
 };
 </code></pre>
@@ -30,8 +31,8 @@ comments: true
         - `VerticalScrollBarPolicy`: `VERTICAL_SCROLLBAR_ALWAYS`
         - `HorizontalScrollBarPolicy`: `HORIZONTAL_SCROLLBAR_ALWAYS`
     - `JScrollBar#getPreferredSize()`をオーバーライドして、幅、または高さを`0`にして返す
-    - 垂直スクロールバーの`JScrollBar#isVisible()`をオーバーライドして、<kbd>Shift</kbd>キーが押されている場合は`false`を返す
-        - 垂直スクロールバーが非表示で、水平スクロールバーが表示されている場合、`MouseWheel`で水平スクロール可能
+    - 垂直スクロールバーの`JScrollBar#isVisible()`をオーバーライドして<kbd>Shift</kbd>キーが押されている場合は`false`を返す
+        - 垂直スクロールバーが非表示で水平スクロールバーが表示されている場合、`MouseWheel`で水平スクロール可能
 - `SCROLLBAR_ALWAYS`
     - `ScrollBarPolicy`はそれぞれ`ALWAYS`で常に表示
         - `VerticalScrollBarPolicy`: `VERTICAL_SCROLLBAR_ALWAYS`

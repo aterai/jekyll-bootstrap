@@ -49,7 +49,7 @@ button2.addActionListener(e -&gt; {
     - `JFileChooser`の子要素を検索して`JList`を取得し、`JList#setLayoutOrientation(JList.VERTICAL)`でファイルが垂直方向`1`列に配置されるよう設定
     - `sun.swing.FilePane#setViewType(...)`が実行されて表示形式が`JTable`を使用する`viewTypeDetails`から`JList`を使用する`viewTypeList`に切り替わる度に`JList#setLayoutOrientation(JList.VERTICAL_WRAP)`が実行されるため、`JList`が`JFileChooser`に設定されて表示されると`JList#setLayoutOrientation(JList.VERTICAL)`を実行する`HierarchyListener`を追加
     - 注: コメントで指摘されているように、`sun.swing.FilePane`を使用しない`LookAndFeel`ではこのサンプルは無意味
-        - 例えば`GTKLookAndFeel`ではディレクトリ用とファイル用の`JList`が使用されているが、どちらも垂直方向`1`列がデフォルト
+        - 例えば`GTKLookAndFeel`ではディレクトリ用とファイル用に`JList`が使用されているが、どちらも垂直方向`1`列がデフォルト
 
 <!-- dummy comment line for breaking list -->
 

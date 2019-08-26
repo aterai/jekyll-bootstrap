@@ -22,10 +22,10 @@ comments: true
 ## 解説
 - `default`
     - デフォルトの`NimbusLookAndFeel`で`JOptionPane`が使用する`JButton`のサイズは、各ボタンのテキストの長さに依存する
-    - 注: `MetalLookAndFeel`などは、常にこれらのボタンは同じサイズ
+        - たとえば、`MetalLookAndFeel`ではこれらのボタンは常に同じサイズになる
 - `SameSizeButtons`
     - `UIManager.getLookAndFeelDefaults().put("OptionPane.sameSizeButtons", true);`で、最も長いボタンテキストから作成される`JButton`のサイズに揃えられる
-    - 注: このサンプルでは、実行中にこれらを切り替えるテストを行うために、`UIManager.getLookAndFeelDefaults()`で取得した`UIDefaults`ではなく、以下のように新規作成した`UIDefaults`に`OptionPane.sameSizeButtons`を設定して`JOptionPane`に上書きし、`SwingUtilities.updateComponentTreeUI(JOptionPane)`で`UI`を更新している(`OptionPane.buttonAreaBorder`でテスト)
+    - 注: このサンプルでは実行中にこれらを切り替えるテストを行うために`UIManager.getLookAndFeelDefaults()`で取得した`UIDefaults`ではなく、以下のように新規作成した`UIDefaults`に`OptionPane.sameSizeButtons`を設定して`JOptionPane`に上書きし`SwingUtilities.updateComponentTreeUI(JOptionPane)`で`UI`を更新している(`OptionPane.buttonAreaBorder`でテスト)
         
         <pre class="prettyprint"><code>UIDefaults d = new UIDefaults();
         d.put("OptionPane.sameSizeButtons", true);

@@ -17,8 +17,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>JTable table = new JTable(model) {
-  //Swing - JTable starts editing when F3 is pressed - howto disable?
-  //https://community.oracle.com/thread/1350192
+  // Swing - JTable starts editing when F3 is pressed - howto disable?
+  // https://community.oracle.com/thread/1350192
   @Override public boolean editCellAt(int row, int column, EventObject e) {
     if (e instanceof KeyEvent) {
       int c = ((KeyEvent) e).getKeyCode();
@@ -33,10 +33,7 @@ comments: true
 
 ## 解説
 - `ignore: F1,F4-F7,F9-`
-    - チェックボックスをチェックしている場合、ファンクションキー(<kbd>Shift</kbd>, <kbd>Ctrl+Function</kbd>キーも含む)を押しても、セルの編集が開始されないように`JTable#editCellAt(...)`メソッドをオーバーライド
-
-<!-- dummy comment line for breaking list -->
-
+    - チェックボックスをチェックしている場合、ファンクションキー(<kbd>Shift</kbd>や<kbd>Ctrl+Function</kbd>キーも含む)を押してもセルの編集が開始されないように`JTable#editCellAt(...)`メソッドをオーバーライド
 - `table.putClientProperty("JTable.autoStartsEdit", Boolean.FALSE);`
     - <kbd>F2</kbd>は除くキー入力でのセルの編集開始を禁止
     - [JTableでキー入力によるセル編集開始を禁止する](https://ateraimemo.com/Swing/PreventStartCellEditing.html)
@@ -44,9 +41,9 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-上記のサンプルでは、`InputMap`、`ActionMap`に<kbd>F3</kbd>キーで`beep`が鳴るようにキーストロークとアクションを追加しています。このキーストロークは`JTable#editCellAt`メソッドでのキー入力チェックとは別に実行されるので、デフォルトの<kbd>F2</kbd>キーでの`startEditing`、<kbd>F8</kbd>キーでの`focusHeader`は、`JTable#editCellAt(...)`の戻り値とは関係なく有効になっています。
+上記のサンプルでは、`InputMap`、`ActionMap`に<kbd>F3</kbd>キーで`beep`が鳴るようにキーストロークとアクションを追加しています。このキーストロークは`JTable#editCellAt`メソッドでのキー入力チェックとは別に実行されるので、デフォルトの<kbd>F2</kbd>キーでの`startEditing`、<kbd>F8</kbd>キーでの`focusHeader`は`JTable#editCellAt(...)`の戻り値とは関係なく有効になっています。
 
-- `JTable#processKeyBinding(...)`をオーバーライドしてキー入力自体を無視すると、`InputMap`に追加したキーストロークも除かれるので、これらのアクションも実行されない
+- `JTable#processKeyBinding(...)`をオーバーライドしてキー入力自体を無視すると`InputMap`に追加したキーストロークも除外されるため、これらのアクションも実行されない
 
 <!-- dummy comment line for breaking list -->
 
