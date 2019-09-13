@@ -56,14 +56,14 @@ class HorizontalAlignmentTableRenderer extends DefaultTableCellRenderer {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `JTable`は、`Object`、`Number`、`Boolean`クラスのデフォルトセルレンダラーを持っているため、モデルが各列のクラスを正しく返すように、`TableModel#getColumnClass(int)`をオーバーライドすることで、そのクラスのデフォルトセルレンダラーが使用される
+- `JTable`は、`Object`、`Number`、`Boolean`クラスのデフォルトセルレンダラーを持っているため、モデルが各列のクラスを正しく返すように`TableModel#getColumnClass(int)`をオーバーライドすることでそのクラスのデフォルトセルレンダラーが使用される
     - `Object`: `SwingConstants.LEFT`(文字列などは左揃え)
     - `Number`: `SwingConstants.RIGHT`(数字は右揃え)
     - `Boolean`: `JCheckBox`, `CENTER`(チェックボックスは中央揃え)
-- `DefaultTableModel#TableModel#getColumnClass(int)`のデフォルトは、すべての列のクラスとして、`Object.class`を返す
+- `DefaultTableModel#TableModel#getColumnClass(int)`のデフォルトは、すべての列のクラスとして`Object.class`を返す
 - 各クラスのデフォルトセルレンダラーが使用されるのは、列にセルレンダラーが割り当てられていない場合に限られる
     
-    <pre class="prettyprint"><code>//JTableの手抜きサンプルなら、以下のようにオーバーライドするのが簡単？(モデルが空になる場合、例外が発生する可能性がある)
+    <pre class="prettyprint"><code>// JTableの手抜きサンプルなら、以下のようにオーバーライドするのが簡単？(モデルが空になる場合、例外が発生する可能性がある)
     String[] columnNames = {"String", "Integer", "Boolean"};
     Object[][] data = {
       {"AAA", 1, true},

@@ -73,12 +73,12 @@ public double easeInOut(double t) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLabel`に画像を表示し、これにマウスカーソルが入った場合、`JTextArea`がキャプションとして`ease-in`, `ease-out`でスライドインするようになっています。
+上記のサンプルでは、`JLabel`に画像を表示してその内部にマウスカーソルが入った場合`JTextArea`がキャプションとして`ease-in`, `ease-out`でスライドインするよう設定しています。
 
-- `OverlayLayout#layoutContainer`内で、`JTextArea`の`y`座標を変更してアニメーション
+- `OverlayLayout#layoutContainer`内で`JTextArea`の`y`座標を変更してアニメーション
 - `EaseInOut`の計算は、~~[Math: EaseIn EaseOut, EaseInOut and Beziér Curves | Anima Entertainment GmbH](http://www.anima-entertainment.de/math-easein-easeout-easeinout-and-bezier-curves)~~を参考
-- マウスカーソルが`JLabel`(画像)内にあっても、そこに`JTextArea`がスライドインした場合、`mouseExited`イベントが発生するので、注意
-    - `JTextArea#contains(int x, int y)`が常に`false`を返すようにすれば、上記の場合でも`mouseExited`イベントなどは発生しないが、`JTextArea`内の文字列が選択できなくなるので、このサンプルでは、`JTextArea`にマウスイベントを親へ素通しするリスナーを追加している
+- マウスカーソルが`JLabel`(画像)内にあってもそこに`JTextArea`がスライドインした場合、新たに`mouseExited`イベントが発生するので注意が必要
+    - `JTextArea#contains(int x, int y)`が常に`false`を返すようにすれば上記の場合でも`mouseExited`イベントなどは発生しないが`JTextArea`内の文字列が選択できなくなるので、このサンプルでは`JTextArea`にマウスイベントを親へ素通しするリスナーを追加している
 - `JTextArea`の背景色は`setOpaque(false)`にして描画せず、別途`JTextArea#paintComponent(...)`をオーバーライドしてアルファ成分を`EaseInOut`した色で全体を塗りつぶしている
 
 <!-- dummy comment line for breaking list -->

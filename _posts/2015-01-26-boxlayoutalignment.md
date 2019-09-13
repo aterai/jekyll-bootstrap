@@ -20,6 +20,7 @@ comments: true
   @Override public Dimension getPreferredSize() {
     return new Dimension(50, 50);
   }
+
   @Override public Dimension getMinimumSize() {
     Dimension d = super.getMinimumSize();
     if (Objects.nonNull(d)) {
@@ -39,7 +40,7 @@ l2.setVerticalTextPosition(SwingConstants.CENTER);
 l2.setHorizontalAlignment(SwingConstants.CENTER);
 l2.setHorizontalTextPosition(SwingConstants.CENTER);
 
-final JPanel p2 = new TestPanel();
+JPanel p2 = new TestPanel();
 p2.setLayout(new BoxLayout(p2, BoxLayout.Y_AXIS));
 p2.add(Box.createVerticalGlue());
 p2.add(l2);

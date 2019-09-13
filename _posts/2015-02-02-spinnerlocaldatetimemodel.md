@@ -28,11 +28,11 @@ comments: true
       TemporalUnit temporalUnit) {
     super();
     if (Objects.nonNull(start) &amp;&amp; start.compareTo(value) &gt;= 0
-     || Objects.nonNull(end)   &amp;&amp; end.compareTo(value)   &lt;= 0) {
+        || Objects.nonNull(end) &amp;&amp; end.compareTo(value) &lt;= 0) {
       throw new IllegalArgumentException("(start &lt;= value &lt;= end) is false");
     }
     this.value = Optional.ofNullable(value)
-                         .orElseThrow(() -&gt; new IllegalArgumentException("value is null"));
+        .orElseThrow(() -&gt; new IllegalArgumentException("value is null"));
     this.start = start;
     this.end = end;
     this.temporalUnit = temporalUnit;
@@ -74,19 +74,19 @@ comments: true
   }
 
   @Override public Object getNextValue() {
-    //Calendar cal = Calendar.getInstance();
-    //cal.setTime(value.getTime());
-    //cal.add(calendarField, 1);
-    //Date next = cal.getTime();
+    // Calendar cal = Calendar.getInstance();
+    // cal.setTime(value.getTime());
+    // cal.add(calendarField, 1);
+    // Date next = cal.getTime();
     ChronoLocalDateTime&lt;?&gt; next = value.plus(1, temporalUnit);
     return Objects.isNull(end) || end.compareTo(next) &gt;= 0 ? next : null;
   }
 
   @Override public Object getPreviousValue() {
-    //Calendar cal = Calendar.getInstance();
-    //cal.setTime(value.getTime());
-    //cal.add(calendarField, -1);
-    //Date prev = cal.getTime();
+    // Calendar cal = Calendar.getInstance();
+    // cal.setTime(value.getTime());
+    // cal.add(calendarField, -1);
+    // Date prev = cal.getTime();
     ChronoLocalDateTime&lt;?&gt; prev = value.minus(1, temporalUnit);
     return Objects.isNull(start) || start.compareTo(prev) &lt;= 0 ? prev : null;
   }
@@ -113,7 +113,7 @@ comments: true
 
 ## 解説
 - 上: `SpinnerDateModel`
-    - `Calendar`などを使用して開始日、終了日を生成し、`SpinnerDateModel`を作成して、`JSpinner`に設定
+    - `Calendar`などを使用して開始日、終了日を生成し、`SpinnerDateModel`を作成して`JSpinner`に設定
         
         <pre class="prettyprint"><code>Calendar cal = Calendar.getInstance();
         cal.clear(Calendar.MILLISECOND);
@@ -130,7 +130,7 @@ comments: true
 </code></pre>
     - 参考: [JSpinnerで日付を設定](https://ateraimemo.com/Swing/SpinnerDateModel.html)
 - 下: `SpinnerLocalDateTimeModel`
-    - 内部で、`Date`ではなく、`LocalDateTime`を使用する`SpinnerLocalDateTimeModel`(`AbstractSpinnerModel`を継承)を作成
+    - 内部で`Date`ではなく`LocalDateTime`を使用する`SpinnerLocalDateTimeModel`(`AbstractSpinnerModel`を継承)を作成
         
         <pre class="prettyprint"><code>LocalDateTime d = LocalDateTime.now();
         LocalDateTime s = d.minus(2, ChronoUnit.DAYS);
@@ -138,7 +138,7 @@ comments: true
         JSpinner spinner2 = new JSpinner(new SpinnerLocalDateTimeModel(
             d, s, e, ChronoUnit.DAYS));
 </code></pre>
-    - スピナエディタも、以下のような`LocalDateTime`を扱うものに変更
+    - スピナエディタも以下のような`LocalDateTime`を扱うものに変更
         - 参考: [Temporal Spinners « Java Tips Weblog](https://tips4java.wordpress.com/2015/04/09/temporal-spinners/)
             
             <pre class="prettyprint"><code>class LocalDateTimeEditor extends JSpinner.DefaultEditor {
@@ -182,6 +182,7 @@ comments: true
                 public LocalDateTimeFormatter() {
                   super(dateTimeFormatter.toFormat());
                 }
+            
                 @Override public String valueToString(Object value) throws ParseException {
                   //System.out.println(value.getClass().getName());
                   if (value instanceof TemporalAccessor) {
@@ -191,6 +192,7 @@ comments: true
                     return "";
                   }
                 }
+            
                 @Override public Object stringToValue(String text) throws ParseException {
                   //System.out.println("stringToValue:" + text);
                   try {

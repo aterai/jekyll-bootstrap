@@ -56,7 +56,7 @@ comments: true
 </code></pre>
 
 ## 解説
-- `defalut JLabel ellipsis`
+- `default JLabel ellipsis`
     - `JLabel`のデフォルトは、省略記号`…`であふれる文字列を省略
 - `html JLabel fade out`
     - `JLabel`の文字列先頭に`<html>`タグを付加してデフォルト省略記号によるあふれ省略を無効化

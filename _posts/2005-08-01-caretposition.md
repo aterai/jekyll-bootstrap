@@ -28,17 +28,16 @@ try {
 ## 解説
 上記のサンプルでは、`Document`に文字列と改行を追加した後、その`Document`の一番最後に`JTextComponent#setCaretPosition(int)`メソッドで`Caret`を移動しています。
 
-- メモ
-    - `JTextComponent`内での改行は常に`\n`であり、`System.getProperties("line.separator")`で取得したり、`\r\n`を考慮する必要はない
-    - 現在の`Caret`位置の行番号を取得する
-        
-        <pre class="prettyprint"><code>public static int getLineAtCaret(JTextComponent component) {
-          int caretPosition = component.getCaretPosition();
-          Element root = component.getDocument().getDefaultRootElement();
-          return root.getElementIndex(caretPosition) + 1;
-        }
+- `JTextComponent`内での改行は常に`\n`であり、`System.getProperties("line.separator")`で取得したり、`\r\n`を考慮する必要はない
+- 現在の`Caret`位置の行番号を取得する場合のサンプル
+    
+    <pre class="prettyprint"><code>public static int getLineAtCaret(JTextComponent component) {
+      int caretPosition = component.getCaretPosition();
+      Element root = component.getDocument().getDefaultRootElement();
+      return root.getElementIndex(caretPosition) + 1;
+    }
 </code></pre>
-    - * 参考リンク [#reference]
+- * 参考リンク [#reference]
 - [JScrollPaneのオートスクロール](https://ateraimemo.com/Swing/AutoScroll.html)
 - [Swing - Line Number in JTextPane](https://community.oracle.com/thread/1393939)
 - [How to set AUTO-SCROLLING of JTEXTAREA in Java GUI? - Stack Overflow](https://stackoverflow.com/questions/1627028/how-to-set-auto-scrolling-of-jtextarea-in-java-gui)

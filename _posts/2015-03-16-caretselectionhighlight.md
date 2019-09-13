@@ -23,11 +23,13 @@ comments: true
     super.focusLost(e);
     setSelectionVisible(true);
   }
+
   @Override public void focusGained(FocusEvent e) {
     super.focusGained(e);
-    setSelectionVisible(false); //removeHighlight
-    setSelectionVisible(true); //addHighlight
+    setSelectionVisible(false); // removeHighlight
+    setSelectionVisible(true); // addHighlight
   }
+
   @Override protected Highlighter.HighlightPainter getSelectionPainter() {
     return getComponent().hasFocus() ? DefaultHighlighter.DefaultPainter
                                      : nonFocusHighlightPainter;
@@ -36,7 +38,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JInternalFrame`の選択を切り替えることで、その内部の`JTextArea`のフォーカスを変更し、文字列の選択状態ハイライトがどう変化するかをテストしています。
+上記のサンプルでは、`JInternalFrame`の選択を切り替えることでその内部の`JTextArea`のフォーカスを変更し、文字列の選択状態ハイライトがどう変化するかをテストしています。
 
 - `DefaultCaret`
     - フォーカスがなくなると、選択状態ハイライトは非表示になる

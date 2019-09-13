@@ -19,7 +19,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTPOarzqiI/AAAAAAAAAdo/uwFLFlU_EpI/s800/LineFocusTable.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>enum Type { START, END; }
+<pre class="prettyprint"><code>enum Type { START, END }
 
 class DotBorder extends EmptyBorder {
   private static final BasicStroke DASHED = new BasicStroke(
@@ -59,9 +59,9 @@ class DotBorder extends EmptyBorder {
 </code></pre>
 
 ## 解説
-通常の`JTable`では、`JTable#setRowSelectionAllowed(true)`を設定すると選択状態は一行ごとになりますが、フォーカスはセル単位で描画されます。上記のサンプルでは、セルレンダラーの描画メソッド内で`JTable#getSelectionModel()#getLeadSelectionIndex()`を使用してフォーカスが存在するセルを取得し、独自ラベルを使って最初と最後のセルの垂直の点線、途中のセルの水平点線を追加することで、フォーカスが一行全体に適用されているように見せています。
+通常の`JTable`では、`JTable#setRowSelectionAllowed(true)`を設定すると選択状態は一行ごとになりますが、フォーカスはセル単位で描画されます。上記のサンプルでは、セルレンダラーの描画メソッド内で`JTable#getSelectionModel()#getLeadSelectionIndex()`を使用してフォーカスが存在するセルを取得し、独自ラベルを使って最初と最後のセルの垂直の点線、途中のセルの水平点線を追加することでフォーカスが一行全体に適用されているように見せています。
 
-カラム幅を変更するなどの操作を行っても、セル上下の水平点線のつなぎ目でドットが重ならないようにするため、偶数奇数ドット目のどちらで始まっているかを判断し、開始位置のオフセットを決定しています。
+カラム幅を変更するなどの操作を行ってもセル上下の水平点線のつなぎ目でドットが重ならないようにするため、偶数奇数ドット目のどちらで始まっているかを判断して開始位置のオフセットを決定しています。
 
 ## 参考リンク
 - [JTableの次行にTabキーでフォーカスを移動](https://ateraimemo.com/Swing/SelectNextRow.html)

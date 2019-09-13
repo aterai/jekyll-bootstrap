@@ -35,15 +35,18 @@ comments: true
       setToolTipText(toolTipText);
     }
   }
+
   @Override public void stateChanged(ChangeEvent e) {
     JSpinner spinner = (JSpinner) e.getSource();
     setText(Objects.toString(spinner.getValue()));
   }
+
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
     d.width = 200;
     return d;
   }
+
   // @see javax/swing/JSpinner.DefaultEditor.html#dismiss(JSpinner)
   public void dismiss(JSpinner spinner) {
     spinner.removeChangeListener(this);
@@ -54,11 +57,11 @@ comments: true
 ## 解説
 - 上: `ListEditor(default)`
     - デフォルトの`ListEditor`を使用
-    - エディタは`JFormattedTextField`なので、`HTML`は使用できない
+    - エディタは`JFormattedTextField`なので`HTML`タグは使用不可
 - 下: `HtmlListEditor`
     - `JLabel`を継承する`HtmlListEditor`を作成して`JSpinner#setEditor(...)`で設定
-    - `JLabel`がエディタになるので、`HTML`が使用可能で編集不可になる
-    - `JSpinner.DefaultEditor`を継承していないので、`JSpinner#setEditor(...)`でエディタを変更する場合は、以下のように`JSpinner#removeChangeListener(...)`を呼んで`ChangeListener`を除去する必要がある
+    - `JLabel`がエディタになるので`HTML`タグが使用可能
+    - このエディタは`JSpinner.DefaultEditor`を継承していないため`JSpinner#setEditor(...)`で`JSpinner`に設定する場合は、以下のように`JSpinner#removeChangeListener(...)`を呼んで`ChangeListener`を除去する必要がある
         
         <pre class="prettyprint"><code>JSpinner spinner = new JSpinner(new SpinnerListModel(items)) {
           @Override public void setEditor(JComponent editor) {

@@ -42,9 +42,11 @@ class ShrinkLabel extends JLabel {
     }
     return d;
   }
+
   public void setSelected(boolean active) {
     this.isSelected = active;
   }
+
   public boolean isSelected() {
     return isSelected;
   }

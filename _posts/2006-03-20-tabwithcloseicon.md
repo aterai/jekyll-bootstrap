@@ -46,16 +46,15 @@ comments: true
 
 ## 解説
 - 上: `JTabbedPaneWithCloseButton`
-    - `TabbedPaneLayout`を使用して、ボタンをタブの中にレイアウト
+    - `TabbedPaneLayout`を使用してボタンをタブの中にレイアウト
 - 中: `JTabbedPaneWithCloseIcons`
     - `JTabbedPane`のタブにアイコンを表示する機能を利用
-    - `JTabbedPane`に`MouseListener`を設定し、タブのクリックされた位置がアイコン上かどうかで、そのタブを閉じるかどうかを判断
+    - `JTabbedPane`に`MouseListener`を設定し、タブのクリックされた位置がアイコン上であればそのタブを閉じる
 - 下: `CloseableTabbedPane`
     - `JTabbedPaneWithCloseIcons`の改良版
     - アイコンの位置、マウスがアイコン上に来たときの描画機能などを追加
 
 <!-- dummy comment line for breaking list -->
-
 
 - - - -
 `JDK 1.6.0`では、`JTabbedPane`のタブ部分に[JTabbedPane#setTabComponentAt(Component)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTabbedPane.html#setTabComponentAt-int-java.awt.Component-)メソッドで`Component`を設定可能になったので、上記のサンプルより手軽に同様の機能を実装できるようになりました。

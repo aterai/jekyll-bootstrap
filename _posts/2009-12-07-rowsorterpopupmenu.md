@@ -20,13 +20,15 @@ comments: true
   private final List&lt;SortAction&gt; actions = Arrays.asList(
     new SortAction(SortOrder.ASCENDING),
     new SortAction(SortOrder.DESCENDING));
-    //new SortAction(SortOrder.UNSORTED));
+    // new SortAction(SortOrder.UNSORTED));
+
   public TablePopupMenu() {
     super();
     for (Action a: actions) {
       add(a);
     }
   }
+
   @Override public void show(Component c, int x, int y) {
     JTableHeader h = (JTableHeader) c;
     int i = h.columnAtPoint(new Point(x, y));
@@ -37,16 +39,20 @@ comments: true
     super.show(c, x, y);
   }
 }
+
 private class SortAction extends AbstractAction {
   private final SortOrder dir;
+  private int index = -1;
+
   public SortAction(SortOrder dir) {
     super(dir.toString());
     this.dir = dir;
   }
-  private int index = -1;
+
   public void setIndex(int index) {
     this.index = index;
   }
+
   @Override public void actionPerformed(ActionEvent e) {
     table.getRowSorter().setSortKeys(Arrays.asList(
       new RowSorter.SortKey(index, dir)));
@@ -55,22 +61,24 @@ private class SortAction extends AbstractAction {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、マウスカーソルの下にある`JTableHeader`カラムをクリック(`WindowsLookAndFeel`:右クリック)して`JPopupMenu`を表示し、昇順か降順の`JMenuItem`を指定してのソートが可能になっています。デフォルトのカラム左クリックによるソートは、`TableRowSorter#toggleSortOrder(...)`をオーバーライドして無効にしています。
+上記のサンプルでは、マウスカーソルの下にある`JTableHeader`カラムをクリック(`WindowsLookAndFeel`:右クリック)して`JPopupMenu`を表示し、昇順か降順の`JMenuItem`を指定してのソートが可能になっています。デフォルトのカラム左クリックによるソートは`TableRowSorter#toggleSortOrder(...)`をオーバーライドして無効にしています。
 
 - - - -
-ソートしたあとで、`JTableHeader`のフォーカスペイントをクリアするために以下のような`PopupMenuListener`を追加しています。
+ソートしたあとで`JTableHeader`のフォーカスペイントをクリアするために以下のような`PopupMenuListener`を追加しています。
 
 <pre class="prettyprint"><code>JPopupMenu pop = new TablePopupMenu();
 final JTableHeader header = table.getTableHeader();
 header.setComponentPopupMenu(pop);
 pop.addPopupMenuListener(new PopupMenuListener() {
   @Override public void popupMenuCanceled(PopupMenuEvent e) {}
+
   @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {
-    //System.out.println("popupMenuWillBecomeInvisible");
+    // System.out.println("popupMenuWillBecomeInvisible");
     header.setDraggedColumn(null);
-    //header.setResizingColumn(null);
+    // header.setResizingColumn(null);
     header.repaint();
   }
+
   @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {}
 });
 </code></pre>

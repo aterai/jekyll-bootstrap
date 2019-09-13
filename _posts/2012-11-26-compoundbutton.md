@@ -26,7 +26,7 @@ comments: true
     }
   };
   p.setLayout(new OverlayLayout(p));
-  p.add(new CompoundButton(d, ButtonLocation.NOTH));
+  p.add(new CompoundButton(d, ButtonLocation.NORTH));
   p.add(new CompoundButton(d, ButtonLocation.SOUTH));
   p.add(new CompoundButton(d, ButtonLocation.EAST));
   p.add(new CompoundButton(d, ButtonLocation.WEST));

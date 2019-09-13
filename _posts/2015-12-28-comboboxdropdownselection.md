@@ -37,7 +37,7 @@ comments: true
     - `"123456"`を編集して`"123456a"`に変更し<kbd>Enter</kbd>、次に文字列を`"a"`に変更してから、ドロップダウンリストを開くと、リストに`"123456a"`が追加され、`"a"`が選択状態になる
     - <kbd>Enter</kbd>キーを押した場合、アイテムを追加するアクションを`ActionMap`に追加
         
-        <pre class="prettyprint"><code>Action defalutEnterPressedAction = getActionMap().get(ENTER_PRESSED);
+        <pre class="prettyprint"><code>Action defaultEnterPressedAction = getActionMap().get(ENTER_PRESSED);
         Action a = new AbstractAction() {
           @Override public void actionPerformed(ActionEvent e) {
             boolean isPopupVisible = isPopupVisible();
@@ -53,7 +53,7 @@ comments: true
               setSelectedIndex(0);
               setPopupVisible(isPopupVisible);
             } else {
-              defalutEnterPressedAction.actionPerformed(e);
+              defaultEnterPressedAction.actionPerformed(e);
             }
           }
         };
