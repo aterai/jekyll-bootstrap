@@ -16,12 +16,13 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTTK5HPd3I/AAAAAAAAAj8/qhIGBo92NNE/s800/SliderInTableCell.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class SliderRednerer extends JSlider implements TableCellRenderer {
-  public SliderRednerer() {
+<pre class="prettyprint"><code>class SliderRenderer extends JSlider implements TableCellRenderer {
+  public SliderRenderer() {
     super();
     setName("Table.cellRenderer");
     setOpaque(true);
   }
+
   @Override public Component getTableCellRendererComponent(JTable table,
       Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     Integer i = (Integer) value;
@@ -29,9 +30,10 @@ comments: true
     setValue(i.intValue());
     return this;
   }
+
   //Overridden for performance reasons. ----&gt;
   @Override public void firePropertyChange(String p, boolean ov, boolean nv) {}
-// ...
+  // ...
 </code></pre>
 
 <pre class="prettyprint"><code>class SliderEditor extends JSlider implements TableCellEditor {
