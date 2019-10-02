@@ -21,7 +21,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class DragHandler extends MouseAdapter {
   private final JWindow window = new JWindow();
-  private Component draggingComonent = null;
+  private Component draggingComponent = null;
   private int index = -1;
   private Component gap = Box.createHorizontalStrut(24);
   private Point startPt = null;
@@ -47,17 +47,17 @@ comments: true
       if (c == parent || index &lt; 0) {
         return;
       }
-      draggingComonent = c;
+      draggingComponent = c;
 
-      parent.remove(draggingComonent);
+      parent.remove(draggingComponent);
       parent.add(gap, index);
       parent.revalidate();
       parent.repaint();
 
-      window.add(draggingComonent);
+      window.add(draggingComponent);
       window.pack();
 
-      Dimension d = draggingComonent.getPreferredSize();
+      Dimension d = draggingComponent.getPreferredSize();
       Point p = new Point(pt.x - d.width / 2, pt.y - d.height / 2);
       SwingUtilities.convertPointToScreen(p, parent);
       window.setLocation(p);
@@ -65,11 +65,11 @@ comments: true
 
       return;
     }
-    if (!window.isVisible() || draggingComonent == null) {
+    if (!window.isVisible() || draggingComponent == null) {
       return;
     }
 
-    Dimension d = draggingComonent.getPreferredSize();
+    Dimension d = draggingComponent.getPreferredSize();
     Point p = new Point(pt.x - d.width / 2, pt.y - d.height / 2);
     SwingUtilities.convertPointToScreen(p, parent);
     window.setLocation(p);
@@ -107,14 +107,14 @@ comments: true
 
   @Override public void mouseReleased(MouseEvent e) {
     startPt = null;
-    if (!window.isVisible() || draggingComonent == null) {
+    if (!window.isVisible() || draggingComponent == null) {
       return;
     }
     Point pt = e.getPoint();
     JComponent parent = (JComponent) e.getComponent();
 
-    Component cmp = draggingComonent;
-    draggingComonent = null;
+    Component cmp = draggingComponent;
+    draggingComponent = null;
     window.setVisible(false);
 
     for (int i = 0; i &lt; parent.getComponentCount(); i++) {

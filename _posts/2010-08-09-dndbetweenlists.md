@@ -33,7 +33,7 @@ comments: true
   @Override protected Transferable createTransferable(JComponent c) {
     source = (JList&lt;?&gt;) c;
     indices = source.getSelectedIndices();
-    List&lt;?&gt; transferedObjects = source.getSelectedValuesList();
+    List&lt;?&gt; transferredObjects = source.getSelectedValuesList();
     return new Transferable() {
       @Override public DataFlavor[] getTransferDataFlavors() {
         return new DataFlavor[] {localObjectFlavor};
@@ -44,7 +44,7 @@ comments: true
       @Override public Object getTransferData(DataFlavor flavor)
           throws UnsupportedFlavorException, IOException {
         if (isDataFlavorSupported(flavor)) {
-          return transferedObjects;
+          return transferredObjects;
         } else {
           throw new UnsupportedFlavorException(flavor);
         }

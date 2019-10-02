@@ -24,7 +24,7 @@ comments: true
   private final JWindow window = new JWindow();
   private final Point startPt = new Point();
   private int index = -1;
-  private Component draggingComonent;
+  private Component draggingComponent;
   private Component gap;
   private final Point dragOffset = new Point();
 
@@ -45,16 +45,16 @@ comments: true
     if (Objects.equals(c, parent) || index &lt; 0) {
       return;
     }
-    draggingComonent = c;
-    Dimension d = draggingComonent.getSize();
+    draggingComponent = c;
+    Dimension d = draggingComponent.getSize();
 
-    Point dp = draggingComonent.getLocation();
+    Point dp = draggingComponent.getLocation();
     dragOffset.setLocation(pt.x - dp.x, pt.y - dp.y);
 
     gap = Box.createRigidArea(d);
     swapComponentLocation(parent, c, gap, index);
 
-    window.add(draggingComonent);
+    window.add(draggingComponent);
     //window.setSize(d);
     window.pack();
 
@@ -62,7 +62,7 @@ comments: true
     window.setVisible(true);
   }
   private void updateWindowLocation(Point pt, JComponent parent) {
-    if (window.isVisible() &amp;&amp; Objects.nonNull(draggingComonent)) {
+    if (window.isVisible() &amp;&amp; Objects.nonNull(draggingComponent)) {
       Point p = new Point(pt.x - dragOffset.x, pt.y - dragOffset.y);
       SwingUtilities.convertPointToScreen(p, parent);
       window.setLocation(p);
@@ -91,7 +91,7 @@ comments: true
   @Override public void mouseDragged(MouseEvent e) {
     Point pt = e.getPoint();
     JComponent parent = (JComponent) e.getComponent();
-    if (Objects.isNull(draggingComonent)) {
+    if (Objects.isNull(draggingComponent)) {
       if (startPt.distance(pt) &gt; gestureMotionThreshold) {
         startDragging(parent, pt);
       }
@@ -127,8 +127,8 @@ comments: true
 
     Point pt = e.getPoint();
     JComponent parent = (JComponent) e.getComponent();
-    Component cmp = draggingComonent;
-    draggingComonent = null;
+    Component cmp = draggingComponent;
+    draggingComponent = null;
 
     for (int i = 0; i &lt; parent.getComponentCount(); i++) {
       Component c = parent.getComponent(i);

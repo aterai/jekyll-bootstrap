@@ -27,14 +27,14 @@ comments: true
   private final JComponent rubberStamp = new JPanel();
   private final int gestureMotionThreshold = DragSource.getDragThreshold();
 
-  private Component draggingComonent;
+  private Component draggingComponent;
   private Component gap;
   private int index = -1;
 
   @Override public void paint(Graphics g, JComponent c) {
     super.paint(g, c);
-    if (c instanceof JLayer &amp;&amp; Objects.nonNull(draggingComonent)) {
-      SwingUtilities.paintComponent(g, draggingComonent, rubberStamp, draggingRect);
+    if (c instanceof JLayer &amp;&amp; Objects.nonNull(draggingComponent)) {
+      SwingUtilities.paintComponent(g, draggingComponent, rubberStamp, draggingRect);
     }
   }
 
@@ -65,13 +65,13 @@ comments: true
       l.repaint();
       break;
     case MouseEvent.MOUSE_RELEASED:
-      if (Objects.isNull(draggingComonent)) {
+      if (Objects.isNull(draggingComponent)) {
         return;
       }
       Point pt = e.getPoint();
 
-      Component cmp = draggingComonent;
-      draggingComonent = null;
+      Component cmp = draggingComponent;
+      draggingComponent = null;
 
       // swap the dragging panel and the dummy filler
       for (int i = 0; i &lt; parent.getComponentCount(); i++) {
@@ -104,7 +104,7 @@ comments: true
       Point pt = e.getPoint();
       JComponent parent = l.getView();
 
-      if (Objects.isNull(draggingComonent)) {
+      if (Objects.isNull(draggingComponent)) {
         // MotionThreshold
         if (startPt.distance(pt) &gt; gestureMotionThreshold) {
           startDragging(parent, pt);
@@ -144,10 +144,10 @@ comments: true
     if (Objects.equals(c, parent) || index &lt; 0) {
       return;
     }
-    draggingComonent = c;
+    draggingComponent = c;
 
-    Rectangle r = draggingComonent.getBounds();
-    draggingRect.setBounds(r); // save draggingComonent size
+    Rectangle r = draggingComponent.getBounds();
+    draggingRect.setBounds(r); // save draggingComponent size
     dragOffset.setLocation(pt.x - r.x, pt.y - r.y);
 
     gap = Box.createRigidArea(r.getSize());

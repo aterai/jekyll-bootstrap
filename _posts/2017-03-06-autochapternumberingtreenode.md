@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class ChapterNumberingTreeCellRenderer extends DefaultTreeCellRenderer {
-  private static final String MARK = "\u00a7"; //"§";
+  private static final String MARK = "\u00a7"; // "§";
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -38,12 +38,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ルートノードを除く各ノードに章番号を付加する`TreeCellRenderer`を作成して、`JTree`に設定しています。
+上記のサンプルでは、ルートノードを除く各ノードに章番号を自動付加する`TreeCellRenderer`を作成して`JTree`に設定しています。
 
 - `JTree#setRootVisible(false)`でルートノードを非表示に設定
-- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`をオーバーライド
-    - `DefaultMutableTreeNode#getPath()`で、ルートノードから自ノードまでのノード配列を取得
-    - ルートノードを除く各ノードで、自ノードが何番目のノードかを`TreeNode#getIndex()`で取得し、文字列に変換
+- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`メソッドをオーバーライド
+    - `DefaultMutableTreeNode#getPath()`メソッドで、ルートノードから自ノードまでのノード配列を取得
+    - ルートノードを除く各ノードで自ノードが何番目のノードかを`TreeNode#getIndex()`メソッドで取得して文字列に変換
     - 変換した各番号文字列を`.`で結合し、ノードタイトルの先頭に追加
 
 <!-- dummy comment line for breaking list -->

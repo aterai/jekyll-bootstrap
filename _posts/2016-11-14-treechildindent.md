@@ -21,7 +21,7 @@ UIManager.put("Tree.rightChildIndent", 0);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree`の以下の`2`つインデント量を`UIManager.put(...)`で指定して、子ノードが描画される位置を変更するテストを行っています。
+上記のサンプルでは、`JTree`の以下の`2`つインデント量を`UIManager.put(...)`で指定して子ノードが描画される位置を変更するテストを行っています。
 
 - `Tree.leftChildIndent`
     - 親ノードの左端と垂直破線が描画される位置の間隔
@@ -30,7 +30,7 @@ UIManager.put("Tree.rightChildIndent", 0);
 
 <!-- dummy comment line for breaking list -->
 
-`Tree.leftChildIndent`と`Tree.rightChildIndent`の合計から子ノードのインデント量になるので、この合計が`0`になるように設定すると、`JList`のようにノードを表示する`JTree`が作成できます。
+`Tree.leftChildIndent`と`Tree.rightChildIndent`の合計から子ノードのインデント量になるので、この合計が`0`になるように設定すると、デフォルトの`JList`風に各ノードを表示する`JTree`が作成可能です。
 
 ## 参考リンク
 - [JTreeの展開、折畳みアイコンを非表示にする](https://ateraimemo.com/Swing/TreeExpandedIcon.html)

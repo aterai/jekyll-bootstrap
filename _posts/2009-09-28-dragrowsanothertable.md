@@ -38,7 +38,7 @@ comments: true
     for (int i : indices) {
       list.add(model.getDataVector().elementAt(i));
     }
-    Object[] transferedObjects = list.toArray();
+    Object[] transferredObjects = list.toArray();
     return new Transferable() {
       @Override public DataFlavor[] getTransferDataFlavors() {
         return new DataFlavor[] {FLAVOR};
