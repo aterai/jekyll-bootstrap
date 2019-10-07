@@ -30,9 +30,11 @@ comments: true
 //       return super.getPreferredSize();
 //     }
 //   }
+//
 //   @Override public Dimension getMinimumSize() {
 //     return getPreferredSize();
 //   }
+//
 //   @Override public Dimension getMaximumSize() {
 //     return getPreferredSize();
 //   }
@@ -48,9 +50,11 @@ JPanel panel = new JPanel() {
       return super.getPreferredSize();
     }
   }
+
   @Override public Dimension getMinimumSize() {
     return getPreferredSize();
   }
+
   @Override public Dimension getMaximumSize() {
     return getPreferredSize();
   }
