@@ -34,11 +34,14 @@ comments: true
     - `UIManager.put("Menu.preserveTopLevelSelection", Boolean.TRUE)`を設定すれば、`WindowsLookAndFeel`風に`JMenu`の選択状態が維持される
     - サブメニューをキャンセルした場合は常に`JMenu`の選択状態は維持され、`Menu.preserveTopLevelSelection`には影響されない
         - `MotifLookAndFeel`の場合、サブメニューをキャンセルするとすべての`JPopupMenu`が閉じる
+        - `UIManager.put("Menu.cancelMode", "hideLastSubmenu");`で最後の`JPopupMenu`のみ閉じるよう切り替え可能
+        - [JMenuから開いたJPopupMenuをキャンセルした場合の動作を変更する](https://ateraimemo.com/Swing/MenuCancelMode.html)
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [DisabledなJMenuItemのハイライトをテスト](https://ateraimemo.com/Swing/DisabledAreNavigable.html)
+- [JMenuから開いたJPopupMenuをキャンセルした場合の動作を変更する](https://ateraimemo.com/Swing/MenuCancelMode.html)
 
 <!-- dummy comment line for breaking list -->
 

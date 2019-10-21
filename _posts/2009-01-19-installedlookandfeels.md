@@ -57,7 +57,7 @@ public void setLookAndFeel(String lookAndFeel) throws ClassNotFoundException,
   }
 }
 private void updateLookAndFeel() {
-  for (Window window: Frame.getWindows()) {
+  for (Window window: Window.getWindows()) {
     SwingUtilities.updateComponentTreeUI(window);
   }
 }

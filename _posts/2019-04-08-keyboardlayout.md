@@ -64,12 +64,12 @@ private static Component makeKeyboardPanel() {
 ## 解説
 上記のサンプルでは、`GridBagLayout`を使用してダミーの列幅を持つガイド行を作成し、`1`文字のデフォルトキーはその`2`列分占有する`JButton`を配置してキーボード風のレイアウトを表現しています。
 
-- 各`JButton`にはイベントを設定していないので、クリックしても無反応
 - スペースキーは`14`列分占有する`JButton`を配置
 - <kbd>Shift</kbd>、<kbd>Enter</kbd>キーは`4`列分占有する`JButton`を配置
 - <kbd>Tab</kbd>、<kbd>Ctrl</kbd>、<kbd>Alt</kbd>などは`3`列分占有する`JButton`を配置
     - <kbd>Ctrl</kbd>などは`JToggleButton`にしたほうが良さそう
 - 空文字列は`1`列分占有する不可視の固定幅コンポーネントを配置
+- このサンプルの各`JButton`にはイベントを設定していないので、クリックしても無反応
 
 <!-- dummy comment line for breaking list -->
 

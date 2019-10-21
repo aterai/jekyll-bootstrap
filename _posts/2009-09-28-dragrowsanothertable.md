@@ -86,7 +86,7 @@ comments: true
       index = max;
     }
     addIndex = index;
-    target.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+    target.setCursor(Cursor.getDefaultCursor());
     try {
       Object[] values =
         (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
@@ -111,7 +111,7 @@ comments: true
   }
   private void cleanup(JComponent c, boolean remove) {
     if (remove &amp;&amp; indices != null) {
-      c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+      c.setCursor(Cursor.getDefaultCursor());
       DefaultTableModel model = (DefaultTableModel) ((JTable) c).getModel();
       if (addCount &gt; 0) {
         for (int i = 0; i &lt; indices.length; i++) {

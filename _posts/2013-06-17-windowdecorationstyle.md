@@ -65,7 +65,7 @@ frame.getContentPane().add(p);
 - `MetalLookAndFeel`のみ`LookAndFeel#getSupportsWindowDecorations()`は`true`を返す
     - `LookAndFeel`を変更する場合は、`ContentPane`以下から更新することで、`JRootPane#setWindowDecorationStyle(JRootPane.PLAIN_DIALOG);`が無効にならないようにする必要がある
         
-        <pre class="prettyprint"><code>for (Window window: Frame.getWindows()) {
+        <pre class="prettyprint"><code>for (Window window: Window.getWindows()) {
           if (window instanceof RootPaneContainer) {
             SwingUtilities.updateComponentTreeUI(((RootPaneContainer) window).getContentPane());
           }

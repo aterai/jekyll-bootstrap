@@ -22,7 +22,7 @@ comments: true
 <pre class="prettyprint"><code>class DividerLocationDragLayerUI extends LayerUI&lt;JSplitPane&gt; {
   private static final int R = 25;
   private final Point startPt = new Point();
-  private final Cursor dc = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
+  private final Cursor dc = Cursor.getDefaultCursor();
   private final Cursor wc = Cursor.getPredefinedCursor(Cursor.W_RESIZE_CURSOR);
   private final Ellipse2D thumb = new Ellipse2D.Double();
   private int dividerLocation;

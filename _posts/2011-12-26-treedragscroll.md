@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class DragScrollListener extends MouseAdapter {
-  private Cursor defCursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
+  private Cursor defCursor = Cursor.getDefaultCursor();
   private Cursor hndCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
   private Point pp = new Point();
   @Override public void mouseDragged(MouseEvent e) {

@@ -47,7 +47,7 @@ comments: true
     setCursor(
       Optional.ofNullable(SwingUtilities.getDeepestComponentAt(c, pt.x, pt.y))
         .map(Component::getCursor)
-        .orElse(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR)));
+        .orElse(Cursor.getDefaultCursor()));
   }
 }
 </code></pre>

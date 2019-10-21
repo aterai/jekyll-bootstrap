@@ -18,12 +18,13 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>private void updateFont(final Font font) {
   FontUIResource fontUIResource = new FontUIResource(font);
-  for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet()) {
-    if (entry.getKey().toString().toLowerCase().endsWith("font")) {
-      UIManager.put(entry.getKey(), fontUIResource);
+  // for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet()) {
+  UIManager.getLookAndFeelDefaults().forEach((key, value) -&gt; {
+    if (key.toString().toLowerCase(Locale.ENGLISH).endsWith("font")) {
+      UIManager.put(key, fontResource);
     }
-  }
-  //SwingUtilities.updateComponentTreeUI(this);
+  });
+  // SwingUtilities.updateComponentTreeUI(this);
   recursiveUpdateUI(this);
   frame.pack();
 }
@@ -54,12 +55,11 @@ private void recursiveUpdateUI(JComponent p) {
 - 各コンポーネントのキーは、`UIManager`から`UIDefaults`のキー一覧が作成可能
     
     <pre class="prettyprint"><code>// キー一覧の作成例
-    import java.util.Map;
     import javax.swing.UIManager;
+    
     class Test {
       public static void main(String[] args) {
-        for (Map.Entry&lt;?, ?&gt; entry: UIManager.getDefaults().entrySet())
-          System.out.println(entry.getKey());
+        UIManager.getLookAndFeelDefaults().forEach((key, value) -&gt; System.out.println(key));
       }
     }
 </code></pre>

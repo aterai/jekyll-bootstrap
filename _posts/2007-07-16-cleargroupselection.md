@@ -27,9 +27,7 @@ for (AbstractButton b: l) {
 }
 
 JButton button = new JButton("clearSelection");
-button.addActionListener(e -&gt; {
-  bg.clearSelection();
-});
+button.addActionListener(e -&gt; bg.clearSelection());
 </code></pre>
 
 ## 解説
