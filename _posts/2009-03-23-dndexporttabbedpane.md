@@ -122,7 +122,6 @@ comments: true
 
   @Override public boolean importData(TransferSupport support) {
     System.out.println("importData");
-    if (!canImport(support)) return false;
 
     DnDTabbedPane target = (DnDTabbedPane) support.getComponent();
     DnDTabbedPane.DropLocation dl = target.getDropLocation();

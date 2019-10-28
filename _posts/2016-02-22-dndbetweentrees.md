@@ -63,9 +63,6 @@ comments: true
   }
 
   @Override public boolean importData(TransferHandler.TransferSupport support) {
-    if (!canImport(support)) {
-      return false;
-    }
     DefaultMutableTreeNode[] nodes = null;
     try {
       Transferable t = support.getTransferable();

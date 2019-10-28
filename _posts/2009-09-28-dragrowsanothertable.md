@@ -69,9 +69,6 @@ comments: true
     return TransferHandler.MOVE; //TransferHandler.COPY_OR_MOVE;
   }
   @Override public boolean importData(TransferSupport info) {
-    if (!canImport(info)) {
-      return false;
-    }
     TransferHandler.DropLocation tdl = info.getDropLocation();
     if (!(tdl instanceof JTable.DropLocation)) {
       return false;
