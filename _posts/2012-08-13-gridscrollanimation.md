@@ -112,6 +112,7 @@ class ScrollAction extends AbstractAction {
 
 ## 参考リンク
 - [JTextAreaをキャプションとして画像上にスライドイン](https://ateraimemo.com/Swing/EaseInOut.html)
+- [CardLayoutの前後のカードを左右に表示する](https://ateraimemo.com/Swing/CarouselCardLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

@@ -87,27 +87,31 @@ combo2.setRenderer(new DefaultListCellRenderer() {
           }
         });
 </code></pre>
-    - * 参考リンク [#reference]
-- メモ: [java - DefaultListCellRenderer does not render empty String correctly when using an editable combo box - Stack Overflow](https://stackoverflow.com/questions/30755058/defaultlistcellrenderer-does-not-render-empty-string-correctly-when-using-an-edi)
-    - `DefaultListCellRenderer`を編集可能にした`JComboBox`に設定すると、リストアイテム文字列が空`""`の場合、ドロップダウンリスト内でのそのアイテムの高さが余白分のみ(`2px`)になってしまう
-        - 上記のサンプルも`DefaultListCellRenderer`を使用しているが、直接高さを指定しているので、編集可にしてもこの状態にはならない
-    - `JComboBox#setPrototypeDisplayValue(...)`で文字列を設定していても、高さには効果がない
-    - 回答にある`BasicComboBoxRenderer`でこの状態にならない理由は、以下のように`BasicComboBoxRenderer#getPreferredSize()`をオーバーライドし、空白文字を一時的に追加してから高さを求めているため
 
 <!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>@Override public Dimension getPreferredSize() {
-  Dimension size;
-  if ((this.getText() == null) || (this.getText().equals(""))) {
-    setText(" ");
-    size = super.getPreferredSize();
-    setText("");
-  } else {
-    size = super.getPreferredSize();
-  }
-  return size;
-}
+- - - -
+- `DefaultListCellRenderer`を編集可能にした`JComboBox`に設定すると、リストアイテム文字列が空`""`の場合、ドロップダウンリスト内でのそのアイテムの高さが余白分のみ(`2px`)になってしまう
+    - 参考: [java - DefaultListCellRenderer does not render empty String correctly when using an editable combo box - Stack Overflow](https://stackoverflow.com/questions/30755058/defaultlistcellrenderer-does-not-render-empty-string-correctly-when-using-an-edi)
+    - 上記のサンプルも`DefaultListCellRenderer`を使用しているが、直接高さを指定しているので編集可にしてもこの状態にはならない
+    - `JComboBox#setPrototypeDisplayValue(...)`で文字列を設定していても、高さには効果がない
+    - 回答にある`BasicComboBoxRenderer`でこの状態にならない理由は、以下のように`BasicComboBoxRenderer#getPreferredSize()`をオーバーライドし、空白文字を一時的に追加してから高さを求めているため
+        
+        <pre class="prettyprint"><code>@Override public Dimension getPreferredSize() {
+          Dimension size;
+          if ((this.getText() == null) || (this.getText().equals(""))) {
+            setText(" ");
+            size = super.getPreferredSize();
+            setText("");
+          } else {
+            size = super.getPreferredSize();
+          }
+          return size;
+        }
 </code></pre>
+    - * 参考リンク [#reference]
+- [java - DefaultListCellRenderer does not render empty String correctly when using an editable combo box - Stack Overflow](https://stackoverflow.com/questions/30755058/defaultlistcellrenderer-does-not-render-empty-string-correctly-when-using-an-edi)
+
+<!-- dummy comment line for breaking list -->
 
 ## コメント
 - `html`タグを使用するサンプルなどを追加。 -- *aterai* 2013-12-20 (金) 20:06:03

@@ -31,7 +31,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#getRowForLocation(...)`メソッドを使用して、`JTree`のノード以外の場所がクリックされたかどうかを判断しています。ノードの選択解除自体は、`JTree#clearSelection()`を使用しています。
+上記のサンプルでは、`JTree#getRowForLocation(...)`メソッドを使用して`JTree`のノード以外の場所がクリックされたかどうかを判断しています。ノードの選択解除自体は`JTree#clearSelection()`メソッドを使用しています。
 
 - [JTree#getRowForLocation(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getRowForLocation-int-int-)
     - 指定された位置に対応する行を返す

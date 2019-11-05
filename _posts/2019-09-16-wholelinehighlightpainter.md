@@ -58,6 +58,8 @@ class WholeLineHighlightPainter extends DefaultHighlightPainter {
     - 改行マークのみのパラグラフ上にも選択ハイライトを行の高さの半分描画する
 - `WholeLineHighlightPainter`
     - 文字列選択が改行以降も継続する場合は行全体を選択ハイライト描画する
+    - `JEditorPane`ではなく、`JTextArea`の場合は`DefaultHighlighter#setDrawsLayeredHighlights(false)`が使用可能
+        - [DefaultHighlighterの描画方法を変更する](https://ateraimemo.com/Swing/DrawsLayeredHighlights.html)
 
 <!-- dummy comment line for breaking list -->
 
@@ -65,6 +67,7 @@ class WholeLineHighlightPainter extends DefaultHighlightPainter {
 - [JTextComponentの選択ハイライトを変更](https://ateraimemo.com/Swing/SelectionHighlightPainter.html)
 - [JEditorPaneで改行を表示](https://ateraimemo.com/Swing/ParagraphMark.html)
 - [JTextAreaでのCaretによる選択状態表示を維持する](https://ateraimemo.com/Swing/CaretSelectionHighlight.html)
+- [DefaultHighlighterの描画方法を変更する](https://ateraimemo.com/Swing/DrawsLayeredHighlights.html)
 
 <!-- dummy comment line for breaking list -->
 
