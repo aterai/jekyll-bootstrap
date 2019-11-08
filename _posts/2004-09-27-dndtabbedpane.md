@@ -95,5 +95,6 @@ private void convertTab(int prev, int next) {
 - タブのドラッグ中、`JTable`上などで`Cursor`が点滅するのを修正。 -- *aterai* 2009-05-19 (火) 17:16:44
 - 参考にさせていただきました．ありがとうございます． -- *M.U* 2009-12-20 (日) 20:27:37
     - どういたしまして。 -- *aterai* 2009-12-21 (月) 00:43:51
+- `WRAP_TAB_LAYOUT`でタブランの回転が発生した場合、目的外のタブがドラッグされるバグを修正(Arjenさんからの指摘) -- *aterai* 2019-11-06 (水) 21:16:49
 
 <!-- dummy comment line for breaking list -->

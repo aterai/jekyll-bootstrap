@@ -49,6 +49,7 @@ JTabbedPane tabbedPane = new JTabbedPane() {
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
+- [BasicTabbedPaneUI#shouldRotateTabRuns(int) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#shouldRotateTabRuns-int-)
 - [JTabbedPaneのタブのテキストシフト量を変更する](https://ateraimemo.com/Swing/TabbedPaneLabelShift.html)
 - [&#91;JDK-6855659&#93; Ability to disable tab run rotation - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6855659)
 
