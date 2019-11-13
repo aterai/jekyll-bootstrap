@@ -18,22 +18,18 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>Path dir = Paths.get(System.getProperty("java.io.tmpdir"));
 SecondaryLoop loop = Toolkit.getDefaultToolkit().getSystemEventQueue().createSecondaryLoop();
-Thread worker = new Thread() {
-  @Override public void run() {
-    WatchService watcher = null;
-    try {
-      watcher = FileSystems.getDefault().newWatchService();
-      dir.register(watcher,
-          StandardWatchEventKinds.ENTRY_CREATE,
-          StandardWatchEventKinds.ENTRY_DELETE);
-      append("register: " + dir);
-    } catch (IOException ex) {
-      throw new UncheckedIOException(ex);
-    }
+Thread worker = new Thread(() -&gt; {
+  try (WatchService watcher = FileSystems.getDefault().newWatchService()) {
+    dir.register(watcher,
+        StandardWatchEventKinds.ENTRY_CREATE,
+        StandardWatchEventKinds.ENTRY_DELETE);
+    append("register: " + dir);
     processEvents(dir, watcher);
     loop.exit();
+  } catch (IOException ex) {
+    throw new UncheckedIOException(ex);
   }
-};
+});
 worker.start();
 if (!loop.enter()) {
   append("Error");

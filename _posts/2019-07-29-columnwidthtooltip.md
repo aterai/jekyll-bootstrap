@@ -2,7 +2,7 @@
 layout: post
 category: swing
 folder: ColumnWidthTooltip
-title: TableColumnkのリサイズ中にその幅をJToolTipで表示する
+title: TableColumnのリサイズ中にその幅をJToolTipで表示する
 tags: [JTable, JTableHeader, TableColumn, JToolTip, JWindow]
 author: aterai
 pubdate: 2019-07-29T02:07:59+09:00

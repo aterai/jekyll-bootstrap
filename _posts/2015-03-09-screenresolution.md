@@ -75,6 +75,7 @@ public static float getSizeOfText() {
     - [JDK-8147440 HiDPI (Windows): Swing components have incorrect sizes after changing display resolution - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8147440)
     - [JDK-8174845 Bad scaling on Windows with large fonts with Java 9ea - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8174845)
     - [JDK-8176883 Enable antialiasing for Metal L&F icons on HiDPI display - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8176883)
+- [windows 10 - How do I run Java apps upscaled on a high-DPI display? - Super User](https://superuser.com/questions/988379/how-do-i-run-java-apps-upscaled-on-a-high-dpi-display)
 
 <!-- dummy comment line for breaking list -->
 
