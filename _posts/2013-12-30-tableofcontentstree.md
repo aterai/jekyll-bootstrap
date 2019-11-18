@@ -201,7 +201,7 @@ comments: true
 
 ## 参考リンク
 - [JTree cell width question | Oracle Forums](https://community.oracle.com/thread/1357473)
-- [Swing/AutoChapterNumberingTreeNode](https://ateraimemo.com/Swing/AutoChapterNumberingTreeNode.html)
+- [JTreeの各ノードタイトルに章番号を自動追加して表示する](https://ateraimemo.com/Swing/AutoChapterNumberingTreeNode.html)
 
 <!-- dummy comment line for breaking list -->
 

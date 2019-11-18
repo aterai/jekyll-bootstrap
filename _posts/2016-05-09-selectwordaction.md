@@ -65,6 +65,7 @@ int getWordStart(JTextComponent c, int offs) throws BadLocationException {
 
 ## 参考リンク
 - [Utilities#getWordEnd(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/Utilities.html#getWordEnd-javax.swing.text.JTextComponent-int-)
+- [JTextAreaのCaretを変更してマウスのダブルクリックによる単語選択の動作を変更する](https://ateraimemo.com/Swing/ContinuouslySelectWords.html)
 
 <!-- dummy comment line for breaking list -->
 
