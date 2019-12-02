@@ -68,6 +68,7 @@ for (c.gridx = 0; c.gridx &lt;= WIDTH * XSIZE; c.gridx++) {
 
 ## 参考リンク
 - [Swing - GridBagLayout to create a board](https://community.oracle.com/thread/1357310)
+- [GridBagLayoutを使ってJButtonをキーボード状に配置する](https://ateraimemo.com/Swing/KeyboardLayout.html)
 
 <!-- dummy comment line for breaking list -->
 

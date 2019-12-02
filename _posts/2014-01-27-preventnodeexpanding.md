@@ -47,6 +47,7 @@ comments: true
 
 ## 参考リンク
 - [How to Write a Tree-Will-Expand Listener (The Java™ Tutorials > Creating a GUI With JFC/Swing > Writing Event Listeners)](https://docs.oracle.com/javase/tutorial/uiswing/events/treewillexpandlistener.html)
+- [JTreeのノードを折り畳み不可に設定する](https://ateraimemo.com/Swing/TreeNodeCollapseVeto.html)
 
 <!-- dummy comment line for breaking list -->
 

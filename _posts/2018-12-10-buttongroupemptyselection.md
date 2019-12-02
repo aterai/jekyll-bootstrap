@@ -16,17 +16,13 @@ comments: true
 {% download https://drive.google.com/uc?id=1EFXEFMWUlrctxFnVQEQbK1zeW3wSIhoROw %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>button.addActionListener(e -&gt; {
+<pre class="prettyprint"><code>ButtonGroup bg = new ButtonGroup();
+
+button.addActionListener(e -&gt; {
   String txt = Optional.ofNullable(bg.getSelection())
     .map(b -&gt; String.format("\"%s\" isSelected.", b.getActionCommand()))
     .orElse("Please select one of the option above.");
   label.setText(txt);
-  // ButtonModel bm = bg.getSelection();
-  // if (bm != null) {
-  //   label.setText(String.format("\"%s\" isSelected.", bm.getActionCommand()));
-  // } else {
-  //   label.setText("Please select one of the option above.");
-  // }
 });
 </code></pre>
 

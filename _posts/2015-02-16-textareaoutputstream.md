@@ -69,7 +69,7 @@ comments: true
             setOutputStream(os);
           }
         
-          //@see java/util/logging/ConsoleHandler.java
+          // @see java/util/logging/ConsoleHandler.java
           @Override public void publish(LogRecord record) {
             super.publish(record);
             flush();

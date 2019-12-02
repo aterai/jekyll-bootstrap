@@ -73,7 +73,7 @@ class ToolTipLayerUI&lt;V extends JComboBox&gt; extends LayerUI&lt;V&gt; {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `JComboBox`のドロップダウンリストを開いた状態でツールチップを表示すると描画が乱れる場合がある
+- `JComboBox`にフォーカスが存在する状態でドロップダウンリストを開き(`ArrowButton`をマウスクリックではなく、`JComboBox`本体をマウスクリック、または<kbd>Space</kbd>キーを使用)ツールチップを表示すると描画が乱れる場合がある
     - `MetalLookAndFeel`のみ
     - ドロップダウンリストが`HeavyWeightWindow`か`LightWeightWindow`かは無関係
 
