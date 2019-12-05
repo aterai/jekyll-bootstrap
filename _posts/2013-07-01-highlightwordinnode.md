@@ -30,6 +30,7 @@ comments: true
     setBackground(Color.WHITE);
     setEditable(false);
   }
+
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean isSelected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -50,7 +51,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`TreeCellRenderer`に`JLabel`ではなく`JTextField`を使用し、`JTextField#getHighlighter()#addHighlight(...)`メソッドで検索中の文字列をハイライト表示しています。
+上記のサンプルでは、`TreeCellRenderer`に`JLabel`ではなく`JTextField`を使用して`JTextField#getHighlighter()#addHighlight(...)`メソッドで検索中の文字列をハイライト表示しています。
 
 ## 参考リンク
 - [JTreeで条件に一致するノードを検索しハイライト](https://ateraimemo.com/Swing/TreeNodeHighlightSearch.html)

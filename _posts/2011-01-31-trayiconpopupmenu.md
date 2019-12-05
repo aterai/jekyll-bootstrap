@@ -16,23 +16,28 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TUZUBCgOGJI/AAAAAAAAA0A/Ox5g3HoxmoI/s800/TrayIconPopupMenu.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final SystemTray tray  = SystemTray.getSystemTray();
-final Image image      = new ImageIcon(getClass().getResource("16x16.png")).getImage();
-final TrayIcon icon    = new TrayIcon(image, "TRAY", null);
-final JPopupMenu popup = new JPopupMenu();
-final JDialog dummy    = new JDialog();
+<pre class="prettyprint"><code>SystemTray tray  = SystemTray.getSystemTray();
+Image image = new ImageIcon(getClass().getResource("16x16.png")).getImage();
+TrayIcon icon = new TrayIcon(image, "TRAY", null);
+JPopupMenu popup = new JPopupMenu();
+JDialog dummy = new JDialog();
 // This code is inspired from:
 // http://weblogs.java.net/blog/alexfromsun/archive/2008/02/jtrayicon_updat.html
 dummy.setUndecorated(true);
 popup.addPopupMenuListener(new PopupMenuListener() {
-  @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {}
+  @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
+    /* nn */
+  }
+
   @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {
     dummy.setVisible(false);
   }
+
   @Override public void popupMenuCanceled(PopupMenuEvent e) {
     dummy.setVisible(false);
   }
 });
+
 icon.addMouseListener(new MouseAdapter() {
   private void showJPopupMenu(MouseEvent e) {
     if (e.isPopupTrigger()) {
@@ -42,9 +47,11 @@ icon.addMouseListener(new MouseAdapter() {
       popup.show(dummy, 0, 0);
     }
   }
+
   @Override public void mouseReleased(MouseEvent e) {
     showJPopupMenu(e);
   }
+
   @Override public void mousePressed(MouseEvent e) {
     showJPopupMenu(e);
   }
@@ -52,20 +59,18 @@ icon.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-`JDK 1.6.0`の`TrayIcon`は`java.awt.PopupMenu`のみ設定可能で、`javax.swing.JPopupMenu`は使用できません。そのため、上記のサンプルでは、`setUndecorated(true)`かつ、サイズが`0x0`の`JDialog`を適当な位置(`TrayIcon`のクリックで`JPopupMenu`が開いたように見える場所)に配置し、これを親にして`javax.swing.JPopupMenu`を表示しています。
+`JDK 1.6.0`の`TrayIcon`は`java.awt.PopupMenu`のみ設定可能で`javax.swing.JPopupMenu`は使用不可になっています。そのため上記のサンプルでは、装飾なし(`setUndecorated(true)`)でサイズが`0x0`の`JDialog`を適当な位置(`TrayIcon`のクリックで`JPopupMenu`が開いたように見える場所)に配置し、これを親にして`javax.swing.JPopupMenu`を表示しています。
 
-- - - -
-この方法では、`PopupMenu`ではなく`JPopupMenu`が使用できるので、以下が可能になります。
-
-- `JCheckBoxMenuItem`、`JRadioButtonMenuItem`の使用
-- `LookAndFeel`の変更
+- `PopupMenu`ではなく`JPopupMenu`が使用できるので以下が可能
+    - `JCheckBoxMenuItem`、`JRadioButtonMenuItem`の使用
+    - `LookAndFeel`の変更
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
 このサンプルでは、`JPopupMenu#adjustPopupLocationToFitScreen(...)`メソッドを改変して、`SystemTray`の位置によって`JPopupMenu`が画面外にはみ出さないように調整しています。
 
-<pre class="prettyprint"><code>//Copied from JPopupMenu.java: JPopupMenu#adjustPopupLocationToFitScreen(...)
+<pre class="prettyprint"><code>// Copied from JPopupMenu.java: JPopupMenu#adjustPopupLocationToFitScreen(...)
 private static Point adjustPopupLocation(JPopupMenu popup, int xposition, int yposition) {
   Point p = new Point(xposition, yposition);
   if (GraphicsEnvironment.isHeadless()) {

@@ -32,24 +32,29 @@ comments: true
   public RoundedCornerButton() {
     super();
   }
+
   public RoundedCornerButton(Icon icon) {
     super(icon);
   }
+
   public RoundedCornerButton(String text) {
     super(text);
   }
+
   public RoundedCornerButton(Action a) {
     super(a);
-    //setAction(a);
+    // setAction(a);
   }
+
   public RoundedCornerButton(String text, Icon icon) {
     super(text, icon);
-    //setModel(new DefaultButtonModel());
-    //init(text, icon);
-    //setContentAreaFilled(false);
-    //setBackground(new Color(250, 250, 250));
-    //initShape();
+    // setModel(new DefaultButtonModel());
+    // init(text, icon);
+    // setContentAreaFilled(false);
+    // setBackground(new Color(250, 250, 250));
+    // initShape();
   }
+
   @Override public void updateUI() {
     super.updateUI();
     setContentAreaFilled(false);
@@ -57,6 +62,7 @@ comments: true
     setBackground(new Color(250, 250, 250));
     initShape();
   }
+
   protected void initShape() {
     if (!getBounds().equals(base)) {
       base = getBounds();
@@ -67,6 +73,7 @@ comments: true
           getHeight() - 1 - FOCUS_STROKE * 2, ARC_WIDTH, ARC_HEIGHT);
     }
   }
+
   private void paintFocusAndRollover(Graphics2D g2, Color color) {
     g2.setPaint(new GradientPaint(
         0, 0, color, getWidth() - 1, getHeight() - 1,
@@ -75,6 +82,7 @@ comments: true
     g2.setColor(getBackground());
     g2.fill(border);
   }
+
   @Override protected void paintComponent(Graphics g) {
     initShape();
     Graphics2D g2 = (Graphics2D) g.create();
@@ -97,6 +105,7 @@ comments: true
     super.paintComponent(g2);
     g2.dispose();
   }
+
   @Override protected void paintBorder(Graphics g) {
     initShape();
     Graphics2D g2 = (Graphics2D) g.create();
@@ -108,6 +117,7 @@ comments: true
                         RenderingHints.VALUE_ANTIALIAS_OFF);
     g2.dispose();
   }
+
   @Override public boolean contains(int x, int y) {
     initShape();
     return shape == null ? false : shape.contains(x, y);
@@ -137,11 +147,13 @@ comments: true
     setFocusPainted(false);
     initShape();
   }
+
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
     d.width = d.height = Math.max(d.width, d.height);
     return d;
   }
+
   protected void initShape() {
     if (!getBounds().equals(base)) {
       base = getBounds();

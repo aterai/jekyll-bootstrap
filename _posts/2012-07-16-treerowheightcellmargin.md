@@ -43,6 +43,7 @@ comments: true
     wrap.add(text);
     p.add(wrap);
   }
+
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -66,7 +67,10 @@ comments: true
 
     return p;
   }
-  @Override public void paint(Graphics g) {}
+
+  @Override public void paint(Graphics g) {
+    /* empty */
+  }
 }
 </code></pre>
 
