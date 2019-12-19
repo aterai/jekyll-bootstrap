@@ -26,12 +26,14 @@ comments: true
       d.width  = nodeWidth;
       return d;
     }
+
     @Override public void updateUI() {
       super.updateUI();
       setUI(new BasicProgressBarUI());
     }
   };
   private final JPanel p = new JPanel(new BorderLayout());
+
   public ProgressBarRenderer() {
     super();
     b.setOpaque(false);
@@ -40,6 +42,7 @@ comments: true
     b.setString("");
     b.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
   }
+
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -67,12 +70,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、タスクが実行中の場合、ノードの幅(アイコンと文字列の合計)と同じサイズの`JProgressBar`を配置する`TreeCellRenderer`を作成し、これを`JTree#setCellRenderer(...)`で設定しています。
+上記のサンプルでは、タスクが実行中の場合はノードの幅(アイコンと文字列の合計)と同じサイズの`JProgressBar`を配置する`TreeCellRenderer`を作成し、これを`JTree#setCellRenderer(...)`で設定しています。
 
-- スタートボタンを押すと、`JButton`を選択不可にし、`SwingWorker`を起動して葉以外のノードをすべて捜査
-- 取得した各ノードで、ダミーの`SwingWorker`を`ExecutorService#execute(...)`で起動し、進捗を`JProgressBar`を配置した`TreeCellRenderer`で表示
+- スタートボタンを押すと`JButton`を選択不可に設定し、`SwingWorker`を起動して葉以外のノードをすべて捜査
+- 取得した各ノードでダミーの`SwingWorker`を`ExecutorService#execute(...)`で起動し、進捗を`JProgressBar`を配置した`TreeCellRenderer`で表示
     - ダミータスクが終了するとそのノードを展開
-- すべてのノードのタスクが終了したことを`ExecutorService#awaitTermination(...)`で検知したら、`JButton`を選択可に戻す
+- すべてのノードのタスクが終了したことを`ExecutorService#awaitTermination(...)`で検知したら`JButton`を選択可に戻す
 
 <!-- dummy comment line for breaking list -->
 

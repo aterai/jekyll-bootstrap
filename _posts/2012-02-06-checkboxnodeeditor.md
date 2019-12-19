@@ -27,7 +27,7 @@ comments: true
     super();
     this.addActionListener(new ActionListener() {
       @Override public void actionPerformed(ActionEvent e) {
-        //System.out.println("actionPerformed: stopCellEditing");
+        // System.out.println("actionPerformed: stopCellEditing");
         stopCellEditing();
       }
     });
@@ -37,6 +37,7 @@ comments: true
     panel.add(this, BorderLayout.WEST);
     this.setOpaque(false);
   }
+
   @Override public Component getTreeCellEditorComponent(
       JTree tree, Object value, boolean isSelected,
       boolean expanded, boolean leaf, int row) {
@@ -58,15 +59,17 @@ comments: true
         setSelected(node.status == Status.SELECTED);
         str = node.label;
       }
-      //panel.add(this, BorderLayout.WEST);
+      // panel.add(this, BorderLayout.WEST);
       panel.add(l);
       return panel;
     }
     return l;
   }
+
   @Override public Object getCellEditorValue() {
     return new CheckBoxNode(str, isSelected() ? Status.SELECTED : Status.DESELECTED);
   }
+
   @Override public boolean isCellEditable(EventObject e) {
     if (e instanceof MouseEvent &amp;&amp; e.getSource() instanceof JTree) {
       MouseEvent me = (MouseEvent) e;
@@ -84,18 +87,19 @@ comments: true
     }
     return false;
   }
+
   @Override public void updateUI() {
     super.updateUI();
     setName("Tree.cellEditor");
     if (panel != null) {
-      //panel.removeAll(); //??? Change to Nimbus LnF, JDK 1.6.0
+      //panel.removeAll(); // ??? Change to Nimbus LnF, JDK 1.6.0
       panel.updateUI();
       //panel.add(this, BorderLayout.WEST);
     }
-    //???#1: JDK 1.6.0 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
-    //if (System.getProperty("java.version").startsWith("1.6.0")) {
-    //  renderer = new DefaultTreeCellRenderer();
-    //}
+    // ???#1: JDK 1.6.0 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
+    // if (System.getProperty("java.version").startsWith("1.6.0")) {
+    //   renderer = new DefaultTreeCellRenderer();
+    // }
   }
 // ...
 </code></pre>
@@ -106,7 +110,9 @@ comments: true
 マウスクリックなどでノードのチェック状態が変更されたら子ノードと親ノードの選択状態も更新する必要があるので、`TreeModelListener`をモデルに設定してその監視を行っています。
 
 - - - -
-`JPanel`を継承する`TreeCellEditor`、`TreeCellRenderer`でも、`JDK 1.7.0`、`JDK 1.6.0_30`などでは、問題なく動作するようです。
+- `JPanel`を継承する`TreeCellEditor`と`TreeCellRenderer`でも、`JDK 1.7.0`、`JDK 1.6.0_30`などでは問題なく動作可能
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>class CheckBoxNodeRenderer extends JPanel implements TreeCellRenderer {
   private DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
@@ -152,15 +158,15 @@ comments: true
   @Override public void updateUI() {
     super.updateUI();
     if (check != null) {
-      //removeAll(); //??? Change to Nimbus LnF, JDK 1.6.0
+      // removeAll(); // ??? Change to Nimbus LnF, JDK 1.6.0
       check.updateUI();
-      //add(check, BorderLayout.WEST);
+      // add(check, BorderLayout.WEST);
     }
     setName("Tree.cellRenderer");
-    //???#1: JDK 1.6.0 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
-    //if (System.getProperty("java.version").startsWith("1.6.0")) {
-    //  renderer = new DefaultTreeCellRenderer();
-    //}
+    // ???#1: JDK 1.6.0 bug??? @see 1.7.0 DefaultTreeCellRenderer#updateUI()
+    // if (System.getProperty("java.version").startsWith("1.6.0")) {
+    //   renderer = new DefaultTreeCellRenderer();
+    // }
   }
 }
 </code></pre>

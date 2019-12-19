@@ -29,7 +29,7 @@ SpinnerNumberModel m2 = new SpinnerNumberModel(
 
 ## 解説
 - 上: `Byte, Short, Integer, Long`
-    - 上限値は上から順に`Byte.MAX_VALUE`, `Short.MAX_VALUE`, `Integer.MAX_VALUE`, `Long.MAX_VALUE`
+    - 上限値は上から順に`Byte.MAX_VALUE`、`Short.MAX_VALUE`、`Integer.MAX_VALUE`、`Long.MAX_VALUE`
     - 上限値の先頭に適当な数値を入力すると上限値以外の数値に変換される場合がある
     - `Integer`での例:
     

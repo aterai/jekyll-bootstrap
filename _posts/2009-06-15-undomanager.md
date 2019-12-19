@@ -27,17 +27,19 @@ comments: true
   imap.put(KeyStroke.getKeyStroke(
     KeyEvent.VK_Y, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()), "redo");
 }
+
 private static class UndoAction extends AbstractAction {
   private final UndoManager undoManager;
   public UndoAction(UndoManager manager) {
     super("undo");
     this.undoManager = manager;
   }
+
   @Override public void actionPerformed(ActionEvent e) {
     try {
       undoManager.undo();
-    } catch (CannotUndoException cue) {
-      //cue.printStackTrace();
+    } catch (CannotUndoException ex) {
+      // ex.printStackTrace();
       Toolkit.getDefaultToolkit().beep();
     }
   }
@@ -47,8 +49,8 @@ private static class UndoAction extends AbstractAction {
 ## 解説
 `Document#addUndoableEditListener(UndoManager)`メソッドを使用して`JTextField`に`UndoManager`を追加し、以下のキー入力で`Undo`、`Redo`が実行できるように設定しています。
 
-- `Undo` : <kbd>Ctrl+Z</kbd>
-- `Redo` : <kbd>Ctrl+Y</kbd>
+- `Undo`: <kbd>Ctrl+Z</kbd>
+- `Redo`: <kbd>Ctrl+Y</kbd>
 
 <!-- dummy comment line for breaking list -->
 

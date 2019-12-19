@@ -16,8 +16,18 @@ comments: true
 {% download https://drive.google.com/uc?id=1sr9avobwqRpWX2bNvLVutxduLQa66KvKTg %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>class ChapterNumberingTreeCellRenderer extends DefaultTreeCellRenderer {
+<pre class="prettyprint"><code>JTree tree = new JTree(makeModel()) {
+  @Override public void updateUI() {
+    setCellRenderer(null);
+    super.updateUI();
+    setCellRenderer(new ChapterNumberingTreeCellRenderer());
+    setRootVisible(false);
+  }
+};
+// ...
+class ChapterNumberingTreeCellRenderer extends DefaultTreeCellRenderer {
   private static final String MARK = "\u00a7"; // "§";
+
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -42,7 +52,7 @@ comments: true
 
 - `JTree#setRootVisible(false)`でルートノードを非表示に設定
 - `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`メソッドをオーバーライド
-    - `DefaultMutableTreeNode#getPath()`メソッドで、ルートノードから自ノードまでのノード配列を取得
+    - `DefaultMutableTreeNode#getPath()`メソッドでルートノードから自ノードまでのノード配列を取得
     - ルートノードを除く各ノードで自ノードが何番目のノードかを`TreeNode#getIndex()`メソッドで取得して文字列に変換
     - 変換した各番号文字列を`.`で結合し、ノードタイトルの先頭に追加
 

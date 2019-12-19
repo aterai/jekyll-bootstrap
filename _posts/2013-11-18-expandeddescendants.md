@@ -27,12 +27,11 @@ expandedState = tree.getExpandedDescendants(rootPath);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTree#getExpandedDescendants(TreePath)`メソッドを使用して、展開されているノードの`TreePath`を`Enumeration`に保存しています。復元は一旦すべてのノードを折り畳んでから、`JTree#expandPath(TreePath)`メソッドを使用して`Enumeration<TreePath>`から取得したノードを展開しています。
+上記のサンプルでは、`JTree#getExpandedDescendants(TreePath)`メソッドを使用して展開されているノードの`TreePath`を`Enumeration`に保存しています。復元は一旦すべてのノードを折り畳んでから`JTree#expandPath(TreePath)`メソッドを使用して`Enumeration<TreePath>`から取得したノードを展開しています。
 
-- 注:
-    - 親ノードが閉じている場合、その子ノードの展開状態は記憶していない
-        - このサンプルでの例を挙げると、`Set 004`を展開して、親の`Set 001`を折り畳んだ状態で、`JTree#getExpandedDescendants(TreePath)`を使用した場合、戻り値の`Enumeration<TreePath>`に`Set 004`へのパスは含まれない
-    - [JTree#getExpandedDescendants(TreePath)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getExpandedDescendants-javax.swing.tree.TreePath-)メソッドのドキュメントの説明がよく分からない(特に前半)が、もしかしたら上記のことを言っているのかもしれない…
+- 親ノードが閉じている場合、その子ノードの展開状態は記憶していない
+    - このサンプルでの例を挙げると、`Set 004`を展開して親の`Set 001`を折り畳んだ状態で`JTree#getExpandedDescendants(TreePath)`を使用した場合、戻り値の`Enumeration<TreePath>`に`Set 004`へのパスは含まれない
+- [JTree#getExpandedDescendants(TreePath)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#getExpandedDescendants-javax.swing.tree.TreePath-)メソッドのドキュメントの説明がよく分からない(特に前半)が、もしかしたら上記のことを言っているのかもしれない…
 
 <!-- dummy comment line for breaking list -->
 
@@ -42,13 +41,13 @@ expandedState = tree.getExpandedDescendants(rootPath);
 - - - -
 - `JTree`のシリアライズに関するのメモ
     
-    <pre class="prettyprint"><code>//XMLEncoderではデフォルトのJTreeの場合、展開状態などは保存されない
+    <pre class="prettyprint"><code>// XMLEncoderではデフォルトのJTreeの場合、展開状態などは保存されない
     try (XMLEncoder xe = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(xmlFile)))) {
       xe.writeObject(tree);
-      //xe.close();
+      // xe.close();
       // ...
     
-      //ObjectOutputStreamの場合は、選択状態、展開状態なども保存、復元可能
+      // ObjectOutputStreamの場合は、選択状態、展開状態なども保存、復元可能
       ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
       oos.writeObject(tree);
       // ...

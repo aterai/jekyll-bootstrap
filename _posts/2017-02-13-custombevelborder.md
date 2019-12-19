@@ -21,10 +21,12 @@ comments: true
   protected CustomBevelBorder(int bevelType) {
     super(bevelType);
   }
+
   @Override public Insets getBorderInsets(Component c, Insets insets) {
     insets.set(i.top + 2, i.left + 2, i.bottom + 2, i.right + 2);
     return insets;
   }
+
   @Override public void paintBorder(
       Component c, Graphics g, int x, int y, int width, int height) {
     boolean isPressed = false;
@@ -34,10 +36,11 @@ comments: true
     }
     if (bevelType == RAISED &amp;&amp; !isPressed) {
       paintRaisedBevel(c, g, x, y, width, height);
-    } else { //if (bevelType == LOWERED) {
+    } else { // if (bevelType == LOWERED) {
       paintLoweredBevel(c, g, x, y, width, height);
     }
   }
+
   @Override protected void paintRaisedBevel(
       Component c, Graphics g, int x, int y, int width, int height)  {
     int w = width  - 1;
@@ -59,6 +62,7 @@ comments: true
 
     g2.dispose();
   }
+
   @Override protected void paintLoweredBevel(
       Component c, Graphics g, int x, int y, int width, int height)  {
     int w = width  - 1;
@@ -80,10 +84,12 @@ comments: true
 
     g2.dispose();
   }
+
   private void fillTopLeft(Graphics2D g2, int w, int h, Insets i) {
     g2.fillRect(0, 0, w, i.top);
     g2.fillRect(0, 0, i.left, h);
   }
+
   private Shape makeBottomRightShape(int w, int h, Insets i) {
     Path2D p = new Path2D.Double();
     p.moveTo(w, 0);
@@ -95,6 +101,7 @@ comments: true
     p.closePath();
     return p;
   }
+
   private void drawRectLine(Graphics2D g2, int w, int h, Insets i) {
     g2.drawRect(0, 0, w, h);
     g2.drawRect(i.left, i.top, w - i.left - i.right, h - i.top - i.bottom);

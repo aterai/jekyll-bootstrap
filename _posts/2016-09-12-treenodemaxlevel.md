@@ -42,13 +42,14 @@ if (path.getPathCount() &lt; 3) {
 上記のサンプルでは、`TreePath#getPathCount()`、または`DefaultMutableTreeNode#getLevel()`メソッドを使用してノード階層の深さを取得し、指定したレベルを超えるノードを作成できないように制限しています。
 
 - ルートパスの`TreePath#getPathCount()`は`1`、ルートノードの`DefaultMutableTreeNode#getLevel()`は`0`
-- `TreePath#getPathCount()`、`DefaultMutableTreeNode#getLevel()`の戻り値は、[JTree#setRootVisible(boolean)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setRootVisible-boolean-)で設定したルートノードの可視・不可視には依存しない
+- `TreePath#getPathCount()`、`DefaultMutableTreeNode#getLevel()`の戻り値は[JTree#setRootVisible(boolean)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#setRootVisible-boolean-)で設定したルートノードの可視・不可視には依存しない
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [TreePath#getPathCount() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/TreePath.html#getPathCount--)
 - [DefaultMutableTreeNode#getLevel() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#getLevel--)
+- [JTreeの各ノードタイトルに章番号を自動追加して表示する](https://ateraimemo.com/Swing/AutoChapterNumberingTreeNode.html)
 
 <!-- dummy comment line for breaking list -->
 

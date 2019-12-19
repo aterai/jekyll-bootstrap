@@ -25,6 +25,7 @@ comments: true
       return ProgressCellRenderer.this.getPreferredSize();
     }
   };
+
   @Override public Component getListCellRendererComponent(
       JList list, Object value, int index,
       boolean isSelected, boolean cellHasFocus) {
@@ -38,6 +39,7 @@ comments: true
         list, value, index, isSelected, cellHasFocus);
     }
   }
+
   @Override public void updateUI() {
     super.updateUI();
     if (bar != null) {
@@ -48,10 +50,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`index`が`-1`(アイテムリストのインデックスではない)の場合、`JProgressBar`を返すリストセルレンダラーを`JComboBox`に設定して進捗を表示しています。
+上記のサンプルでは、`index`が`-1`(アイテムリストのインデックスではない)の場合は`JProgressBar`を返すリストセルレンダラーを`JComboBox`に設定して進捗を表示しています。
 
 - - - -
-ロードボタンが押されたら、以下のような`SwingWorker`で`JComboBox`にアイテムを追加しています。
+ロードボタンが押されたら以下のような`SwingWorker`で`JComboBox`にアイテムを追加しています。
 
 <pre class="prettyprint"><code>button = new JButton(new AbstractAction("load") {
   @Override public void actionPerformed(ActionEvent e) {
@@ -60,21 +62,18 @@ comments: true
     combo.removeAllItems();
     worker = new SwingWorker&lt;String, String&gt;() {
       private int max = 30;
-      @Override public String doInBackground() {
+      @Override public String doInBackground() throws InterruptedException {
         int current = 0;
         while (current &lt;= max &amp;&amp; !isCancelled()) {
-          try {
-            Thread.sleep(50);
-            //setProgress(100 * current / max);
-            count = 100 * current / max;
-            publish("test: "+current);
-          } catch (Exception ie) {
-            return "Exception";
-          }
+          Thread.sleep(50);
+          // setProgress(100 * current / max);
+          count = 100 * current / max;
+          publish("test: "+current);
           current++;
         }
         return "Done";
       }
+
       @Override protected void process(List&lt;String&gt; chunks) {
         DefaultComboBoxModel m = (DefaultComboBoxModel) combo.getModel();
         for (String s: chunks) {
@@ -83,6 +82,7 @@ comments: true
         combo.setSelectedIndex(-1);
         combo.repaint();
       }
+
       @Override public void done() {
         String text = null;
         if (!isCancelled()) {

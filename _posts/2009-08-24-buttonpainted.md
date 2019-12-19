@@ -57,7 +57,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、フォーカスの有無を表示するかなどの設定を切り替えて`JButton`の描画をテストしています。これらは`Look & Feel`によって効果が異なる場合があります。
+上記のサンプルでは、フォーカスの有無を表示するかなどの設定を切り替えて`JButton`の描画をテストしています。これらは`Look & Feel`に依存しそれぞれ有効・無効やその効果が異なります。
 
 - [setFocusPainted](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/AbstractButton.html#setFocusPainted-boolean-)
     - フォーカス状態の描画

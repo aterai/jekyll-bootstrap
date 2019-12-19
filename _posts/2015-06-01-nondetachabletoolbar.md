@@ -26,11 +26,11 @@ comments: true
 
 ## 解説
 - `Floatable(movable)`
-    - `JToolBar#setFloatable(boolean)`メソッドで、マウスドラッグによる移動の可・不可を設定
-    - 別ウィンドウへのドラッグアウトが不可になるだけでなく、同コンテナ内での移動も不可になる
+    - `JToolBar#setFloatable(boolean)`メソッドでマウスドラッグによる移動の可・不可を設定
+    - 別ウィンドウへのドラッグアウトが不可になるだけでなく同コンテナ内での移動も不可になる
 - `Floating(detachable)`
-    - `BasicToolBarUI#setFloating(...)`メソッドをオーバーライドして、`JToolBar`が別ウインドウに分離できないように設定
-    - 別ウィンドウへのドラッグアウトは不可になるが、ドラッグによる同コンテナ内の移動は可能
+    - `BasicToolBarUI#setFloating(...)`メソッドをオーバーライドして`JToolBar`を別ウインドウに分離不可に設定
+    - 別ウィンドウへのドラッグアウトは不可になるがドラッグによる同コンテナ内の移動は可能
 
 <!-- dummy comment line for breaking list -->
 

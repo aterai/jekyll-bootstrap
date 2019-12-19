@@ -57,8 +57,8 @@ comments: true
 
 ## 解説
 - `JTree`に`MouseMotionListener`を設定して現在マウスカーソルが存在する行を記録
-- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`メソッドをオーバーライドし、カーソル行の場合はノードの不透明設定(`setOpaque(true)`)と背景色を変更(`setForeground(Color)`)
-- `DefaultTreeCellRenderer`は、`DefaultTableCellRenderer`とは異なり、`DefaultTreeCellRenderer#getTextNonSelectionColor()`などのメソッドが使用可能
+- `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`メソッドをオーバーライドし、カーソル行の場合は`setOpaque(true)`でノードの不透明設定と`setForeground(Color)`で背景色を変更
+- `DefaultTreeCellRenderer`は`DefaultTableCellRenderer`とは異なり、`DefaultTreeCellRenderer#getTextNonSelectionColor()`などのメソッドが使用可能
     - `DefaultTableCellRenderer`に選択時の文字色や背景色を取得するメソッドはなく、`JTable#getSelectionBackground()`などを使用する
 
 <!-- dummy comment line for breaking list -->

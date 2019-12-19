@@ -16,8 +16,16 @@ comments: true
 {% download https://drive.google.com/uc?id=1EFXEFMWUlrctxFnVQEQbK1zeW3wSIhoROw %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>ButtonGroup bg = new ButtonGroup();
+<pre class="prettyprint"><code>ButtonGroup bg = new ToggleButtonGroup();
+JPanel p = new JPanel();
+Stream.of("A", "B", "C").map(JToggleButton::new).forEach(r -&gt; {
+  r.setActionCommand(r.getText());
+  p.add(r);
+  bg.add(r);
+});
 
+JLabel label = new JLabel();
+JButton button = new JButton("check");
 button.addActionListener(e -&gt; {
   String txt = Optional.ofNullable(bg.getSelection())
     .map(b -&gt; String.format("\"%s\" isSelected.", b.getActionCommand()))
