@@ -22,16 +22,15 @@ comments: true
 
 
 ## 解説
-上記のサンプルでは、`JComboBox#setSelectedIndex(-1)`や`JComboBox#setSelectedItem(null)`で、`JComboBox`の項目がどれも選択されていない状態にするテストを行っています。
+上記のサンプルでは、`JComboBox#setSelectedIndex(-1)`や`JComboBox#setSelectedItem(null)`で`JComboBox`の項目がどれも選択されていない状態にするテストを行っています。
 
-- メモ
-    - [JDK-4180057 JComboBox needs to document that setSelectedIndex( -1 ) means no selection - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4180057)
-        - `JComboBox#setSelectedIndex(-1)`で選択状態がクリアされるのは当初からの仕様だが、ドキュメントに記述されたのは`1.4.0`からになる(日本語版は`1.7.0`から)
-    - `JComboBox`のアイテム選択の初期状態:
-        - 項目数`== 0`の場合は、`-1`
-        - 項目数`> 0`の場合は、`0`
-    - `-1`以外の負の値は範囲外となり、例外が発生する:
-        - `java.lang.IllegalArgumentException: setSelectedIndex: -2 out of bounds`
+- [JDK-4180057 JComboBox needs to document that setSelectedIndex( -1 ) means no selection - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4180057)
+    - `JComboBox#setSelectedIndex(-1)`で選択状態がクリアされるのは当初からの仕様だが、ドキュメントに記述されたのは`1.4.0`からになる(日本語版は`1.7.0`から)
+- `JComboBox`のアイテム選択の初期状態:
+    - 項目数`== 0`の場合は、`-1`
+    - 項目数`> 0`の場合は、`0`
+- `-1`以外の負の値は範囲外となり、例外が発生する:
+    - `java.lang.IllegalArgumentException: setSelectedIndex: -2 out of bounds`
 
 <!-- dummy comment line for breaking list -->
 

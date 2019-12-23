@@ -53,11 +53,11 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>public ButtonTabComponent(final JTabbedPane pane) {
-  //unset default FlowLayout' gaps
-  //super(new FlowLayout(FlowLayout.LEFT, 0, 0));
+  // unset default FlowLayout' gaps
+  // super(new FlowLayout(FlowLayout.LEFT, 0, 0));
   super(new BorderLayout(0, 0));
   // ...
-  //add(button);
+  // add(button);
   add(button, BorderLayout.EAST);
   // ...
 </code></pre>

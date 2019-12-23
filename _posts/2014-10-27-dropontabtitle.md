@@ -19,8 +19,11 @@ comments: true
 <pre class="prettyprint"><code>new DropTarget(jtp, DnDConstants.ACTION_MOVE, new DropTargetListener() {
   private int targetTabIndex = -1;
   @Override public void dropActionChanged(DropTargetDragEvent e) {}
+
   @Override public void dragExit(DropTargetEvent e) {}
+
   @Override public void dragEnter(DropTargetDragEvent e) {}
+
   @Override public void dragOver(DropTargetDragEvent e) {
     if (isDropAcceptable(e)) {
       e.acceptDrag(e.getDropAction());
@@ -29,6 +32,7 @@ comments: true
     }
     repaint();
   }
+
   @SuppressWarnings("unchecked")
   @Override public void drop(DropTargetDropEvent e) {
     try {
@@ -50,6 +54,7 @@ comments: true
       e.dropComplete(false);
     }
   }
+
   private boolean isDropAcceptable(DropTargetDragEvent e) {
     Transferable t = e.getTransferable();
     DataFlavor[] f = t.getTransferDataFlavors();
@@ -69,9 +74,11 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`DropTarget`として`JTabbedPane`を指定し、`DropTargetListener#dragOver(...)`メソッドをオーバーライドして、マウスのドラッグポイントがそのタブ上(現在選択されているタブ以外)にある場合のみドロップ可能になるように設定しています。
+上記のサンプルでは、`DropTarget`として`JTabbedPane`を指定し`DropTargetListener#dragOver(...)`メソッドをオーバーライドしてマウスのドラッグポイントがそのタブ上(現在選択されているタブ以外)にある場合のみドロップ可能になるように設定しています。
 
-ドロップの可・不可は、`DropTargetDragEvent#acceptDrag(...)`、`DropTargetDragEvent#rejectDrag()`メソッドで切り替えることができます。
+- ドロップの可・不可は`DropTargetDragEvent#acceptDrag(...)`、`DropTargetDragEvent#rejectDrag()`メソッドで切り替え可能
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JListの項目をドラッグ＆ドロップ](https://ateraimemo.com/Swing/DnDList.html)
