@@ -36,6 +36,7 @@ JList&lt;ListItem&gt; list = new JList&lt;ListItem&gt;(model) {
         ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
   }
 };
+
 private Optional&lt;Pattern&gt; getPattern() {
   try {
     return Optional.ofNullable(field.getText())
@@ -45,6 +46,7 @@ private Optional&lt;Pattern&gt; getPattern() {
     return Optional.empty();
   }
 }
+
 private void filter() {
   getPattern().ifPresent(pattern -&gt; {
     List&lt;ListItem&gt; selected = list.getSelectedValuesList();
@@ -63,8 +65,7 @@ private void filter() {
 ## 解説
 上記のサンプルでは、[水平ニュースペーパー・スタイルレイアウト](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JList.html#HORIZONTAL_WRAP)を設定した`JList`で、アイテム(セル)のタイトル文字列が`JTextField`に入力したパターンにマッチするかどうかによる表示のフィルタリングを行っています。
 
-- メモ:
-    - `JList`デフォルトのセルを垂直方向に`1`列に並べたレイアウトでフィルタリングを行う場合は、ヘッダを非表示にした`JTable`と`RowFilter`で代用可能
+- `JList`デフォルトのセルを垂直方向に`1`列に並べたレイアウトでフィルタリングを行う場合は、ヘッダを非表示にした`JTable`と`RowFilter`で代用可能
 
 <!-- dummy comment line for breaking list -->
 

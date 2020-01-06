@@ -27,20 +27,17 @@ class Progress {
 }
 // ...
 worker = new SwingWorker&lt;String, Progress&gt;() {
-  @Override public String doInBackground() {
+  private final Random r = new Random();
+  @Override public String doInBackground() throws InterruptedException {
     int current = 0;
-    int lengthOfTask = 12; //filelist.size();
+    int lengthOfTask = 12; // filelist.size();
     publish(new Progress(ComponentType.LOG, "Length Of Task: " + lengthOfTask));
     publish(new Progress(ComponentType.LOG, "\n------------------------------\n"));
     while (current &lt; lengthOfTask &amp;&amp; !isCancelled()) {
       if (!bar1.isDisplayable()) {
         return "Disposed";
       }
-      try {
-        convertFileToSomething();
-      } catch (InterruptedException ie) {
-        return "Interrupted";
-      }
+      convertFileToSomething();
       publish(new Progress(ComponentType.LOG, "*"));
       publish(new Progress(ComponentType.TOTAL, 100 * current / lengthOfTask));
       current++;
@@ -48,10 +45,10 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
     publish(new Progress(ComponentType.LOG, "\n"));
     return "Done";
   }
-  private final Random r = new Random();
+
   private void convertFileToSomething() throws InterruptedException {
     int current = 0;
-    int lengthOfTask = 10 + r.nextInt(50); //long lengthOfTask = file.length();
+    int lengthOfTask = 10 + r.nextInt(50); // long lengthOfTask = file.length();
     while (current &lt;= lengthOfTask &amp;&amp; !isCancelled()) {
       int iv = 100 * current / lengthOfTask;
       Thread.sleep(20); // dummy
@@ -59,16 +56,17 @@ worker = new SwingWorker&lt;String, Progress&gt;() {
       current++;
     }
   }
+
   @Override protected void process(List&lt;Progress&gt; chunks) {
     for (Progress s: chunks) {
       switch (s.componentType) {
         case TOTAL: bar1.setValue((Integer) s.value); break;
-        case FILE:  bar2.setValue((Integer) s.value); break;
-        case LOG:   area.append((String) s.value); break;
+        case FILE: bar2.setValue((Integer) s.value); break;
+        case LOG: area.append((String) s.value); break;
       }
     }
   }
-// ...
+  // ...
 </code></pre>
 
 ## 解説

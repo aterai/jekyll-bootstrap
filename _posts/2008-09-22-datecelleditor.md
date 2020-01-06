@@ -26,7 +26,7 @@ comments: true
 
     addFocusListener(new FocusAdapter() {
       @Override public void focusGained(FocusEvent e) {
-        //System.out.println("spinner");
+        // System.out.println("spinner");
         editor.getTextField().requestFocusInWindow();
       }
     });
@@ -34,8 +34,9 @@ comments: true
       @Override public void focusLost(FocusEvent e) {
         setArrowButtonEnabled(false);
       }
+
       @Override public void focusGained(FocusEvent e) {
-        //System.out.println("getTextField");
+        // System.out.println("getTextField");
         setArrowButtonEnabled(true);
         EventQueue.invokeLater(new Runnable() {
           @Override public void run() {
@@ -48,6 +49,7 @@ comments: true
     });
     setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
   }
+
   private void setArrowButtonEnabled(boolean flag) {
     for (Component c : getComponents()) {
       if (c instanceof JButton) {
@@ -55,17 +57,19 @@ comments: true
       }
     }
   }
+
   @Override public Component getTableCellEditorComponent(JTable table,
       Object value, boolean isSelected, int row, int column) {
     setValue(value);
     return this;
   }
+
   @Override public Object getCellEditorValue() {
     return getValue();
   }
 
-  //Copied from AbstractCellEditor
-  //protected EventListenerList listenerList = new EventListenerList();
+  // Copied from AbstractCellEditor
+  // protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
 
   @Override public boolean stopCellEditing() {
@@ -78,11 +82,11 @@ comments: true
     fireEditingStopped();
     return true;
   }
-// ...
+  // ...
 </code></pre>
 
 ## 解説
-`TableModel#getColumnClass(int)`で、第`2`列目が日付(`Date.class`)を返すように設定し、`JTable#setDefaultEditor(Class,CellEditor)`メソッドで上記のセルエディタを関連付けています。
+`TableModel#getColumnClass(int)`で第`2`列目が日付(`Date.class`)を返すように設定し、`JTable#setDefaultEditor(Class,CellEditor)`メソッドで上記のセルエディタを関連付けています。
 
 <pre class="prettyprint"><code>table.setDefaultEditor(Date.class, new SpinnerCellEditor());
 table.setSurrendersFocusOnKeystroke(true);
@@ -90,7 +94,7 @@ table.setSurrendersFocusOnKeystroke(true);
 
 この日付用のセルエディタ(`SpinnerCellEditor`)は、以下のような動作になっています。
 
-- スピナエディタで左寄せ
+- `SpinnerEditor`で左寄せ
     - デフォルトのセルレンダラーと合わせるため
     - ~~`1.6.0_07`, `1.6.0_06`, `1.5.0_16`などで、`JSpinner`(`WindowsLookAndFeel`)の文字サイズ、余白が微妙に異なる？~~
 - ダブルクリックで編集開始

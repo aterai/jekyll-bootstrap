@@ -47,7 +47,7 @@ for (int y = 0; y &lt; r.height; y++) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、ウィンドウのスクリーンショット画像から、`PixelGrabber`で`int`配列を生成し、左上、右上の角を`Windows XP`風に透過色で上書きしています。
+上記のサンプルでは、ウィンドウのスクリーンショット画像から`PixelGrabber`で`int`配列を生成し、左上、右上の角を`Windows XP`風に透過色で上書きしています。
 
 角を置き換えた配列は、以下のように`MemoryImageSource`などを使用して画像に変換しています。
 
@@ -58,19 +58,19 @@ Graphics g = bi.createGraphics();
 g.drawImage(img, 0, 0, null);
 g.dispose();
 
-//PNG画像ファイルとして保存
-//try {
-//  javax.imageio.ImageIO.write(
-//    bi, "png", java.io.File.createTempFile("screenshot", ".png"));
-//} catch (IOException ioe) {
-//  ioe.printStackTrace();
-//}
+// PNG画像ファイルとして保存
+// try {
+//   javax.imageio.ImageIO.write(
+//     bi, "png", java.io.File.createTempFile("screenshot", ".png"));
+// } catch (IOException ioe) {
+//   ioe.printStackTrace();
+// }
 </code></pre>
 
 - - - -
-以下のように、`Graphics2D#setComposite(AlphaComposite.Clear)`として、透過色で塗りつぶす方法もあります。
+以下のように、`Graphics2D#setComposite(AlphaComposite.Clear)`として透過色で塗りつぶす方法もあります。
 
-<pre class="prettyprint"><code>//BufferedImage image = ...;
+<pre class="prettyprint"><code>// BufferedImage image = ...;
 int w = image.getWidth(null);
 int h = image.getHeight(null);
 
@@ -79,12 +79,12 @@ Graphics2D g2d = bi.createGraphics();
 g2d.drawImage(image, 0, 0, null);
 g2d.setComposite(AlphaComposite.Clear);
 g2d.setPaint(new Color(0x0, true));
-//NW
+// NW
 g2d.drawLine(0, 0, 4, 0);
 g2d.drawLine(0, 1, 2, 1);
 g2d.drawLine(0, 2, 1, 2);
 g2d.drawLine(0, 3, 0, 4);
-//NE
+// NE
 g2d.drawLine(w - 5, 0, w - 1, 0);
 g2d.drawLine(w - 3, 1, w - 1, 1);
 g2d.drawLine(w - 2, 2, w - 1, 2);

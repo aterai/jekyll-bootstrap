@@ -19,7 +19,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/_9Z4BYR88imo/TQTOo9LcVwI/AAAAAAAAAcs/fUEpKhXr_aI/s800/InternalFrameTitleBar.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>final JInternalFrame internal = new JInternalFrame("@title@");
+<pre class="prettyprint"><code>JInternalFrame internal = new JInternalFrame("@title@");
 BasicInternalFrameUI ui = (BasicInternalFrameUI) internal.getUI();
 Component title = ui.getNorthPane();
 for (MouseMotionListener l: title.getListeners(MouseMotionListener.class)) {
@@ -33,7 +33,7 @@ p.add(new JScrollPane(new JTree()));
 p.add(new JButton(new AbstractAction("close") {
   @Override public void actionPerformed(ActionEvent e) {
     Window w = SwingUtilities.windowForComponent((Component) e.getSource());
-    //w.dispose();
+    // w.dispose();
     w.getToolkit().getSystemEventQueue().postEvent(
       new WindowEvent(w, WindowEvent.WINDOW_CLOSING));
   }
@@ -42,24 +42,22 @@ internal.getContentPane().add(p);
 internal.setVisible(true);
 
 KeyboardFocusManager focusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
-focusManager.addPropertyChangeListener(new PropertyChangeListener() {
-  @Override public void propertyChange(PropertyChangeEvent e) {
-    String prop = e.getPropertyName();
-    if ("activeWindow".equals(prop)) {
-      try {
-        internal.setSelected(e.getNewValue() != null);
-      } catch (PropertyVetoException ex) {
-        ex.printStackTrace();
-      }
+focusManager.addPropertyChangeListener(e -&gt; {
+  String prop = e.getPropertyName();
+  if ("activeWindow".equals(prop)) {
+    try {
+      internal.setSelected(Objects.nonNull(e.getNewValue()));
+    } catch (PropertyVetoException ex) {
+      throw new IllegalStateException(ex);
     }
   }
 });
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JInternalFrame`のタイトルバーを使用することで、タイトルバーに閉じるボタンのないフレームを作成しています。
+上記のサンプルでは、`JInternalFrame`のタイトルバーを使用することでタイトルバーに閉じるボタンのないフレームを作成しています。
 
-- `JFrame#setUndecorated(true)`で、`JFrame`のタイトルバーなどを非表示
+- `JFrame#setUndecorated(true)`で`JFrame`のタイトルバーなどを非表示
 - `BasicInternalFrameUI#getNorthPane()`で`JInternalFrame`のタイトルバーを取得
     - 元の`MouseMotionListener`を削除
     - `JInternalFrame`をドラッグすると親の`JFrame`が移動する`MouseMotionListener`を追加

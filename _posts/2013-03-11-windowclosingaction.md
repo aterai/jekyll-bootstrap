@@ -20,6 +20,7 @@ comments: true
   public ExitAction() {
     super("Exit");
   }
+
   @Override public void actionPerformed(ActionEvent e) {
     JComponent c = (JComponent) e.getSource();
     Window window = null;
@@ -40,7 +41,7 @@ comments: true
       window = SwingUtilities.getWindowAncestor(invoker);
     }
     if (window != null) {
-      //window.dispose();
+      // window.dispose();
       window.dispatchEvent(new WindowEvent(window, WindowEvent.WINDOW_CLOSING));
     }
   }
@@ -50,7 +51,7 @@ comments: true
 ## 解説
 上記のサンプルでは、親となる`JFrame`を取得して`window.dispatchEvent(new WindowEvent(window, WindowEvent.WINDOW_CLOSING));`を使用し、これを閉じるためのイベントを実行しています。
 
-コンポーネントの親`Window`を取得する場合、`SwingUtilities.getWindowAncestor(...)`などが使用可能ですが、`HeavyWeightWindow`な`JPopupMenu`や、`Floating`中の`JToolBar`では親`Window`とは別の`Window`を使用しているので注意が必要です。
+コンポーネントの親`Window`を取得する場合、`SwingUtilities.getWindowAncestor(...)`などが使用可能ですが、`HeavyWeightWindow`な`JPopupMenu`や`Floating`中の`JToolBar`では親`Window`とは異なる`Window`が使用されるので注意が必要です。
 
 - `JPopupMenu`
     - `JPopupMenu#getInvoker()`を使って、`JComponent#setComponentPopupMenu(popup)`で設定したコンポーネントを取得し、`SwingUtilities.getWindowAncestor(...)`で、親`Window`を取得

@@ -85,6 +85,7 @@ comments: true
 ## 参考リンク
 - [OverlayLayoutで複数のJButtonを重ねて複合ボタンを作成](https://ateraimemo.com/Swing/CompoundButton.html)
 - [JProgressBarにUIを設定してインジケータの色を変更](https://ateraimemo.com/Swing/GradientPalletProgressBar.html)
+- [JProgressBarの形状をドーナツ状の半円に変更してスピードメーターを作成する](https://ateraimemo.com/Swing/SemicircleGauge.html)
 
 <!-- dummy comment line for breaking list -->
 

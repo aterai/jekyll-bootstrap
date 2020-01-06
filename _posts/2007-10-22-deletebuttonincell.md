@@ -55,9 +55,9 @@ class DeleteButtonEditor extends DeleteButton implements TableCellEditor {
   @Override public Object getCellEditorValue() {
     return "";
   }
-  //Copied from AbstractCellEditor
-  //protected EventListenerList listenerList = new EventListenerList();
-  //transient protected ChangeEvent changeEvent = null;
+  // Copied from AbstractCellEditor
+  // protected EventListenerList listenerList = new EventListenerList();
+  // transient protected ChangeEvent changeEvent = null;
 // ...
 </code></pre>
 

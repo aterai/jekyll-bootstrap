@@ -163,6 +163,8 @@ comments: true
 ## 参考リンク
 - [JToolBarに配置したアイコンをドラッグして並べ替える](https://ateraimemo.com/Swing/RearrangeToolBarIcon.html)
 - [swing - Java, drag and drop to change the order of panels - Stack Overflow](https://stackoverflow.com/questions/27245283/java-drag-and-drop-to-change-the-order-of-panels)
+- [JLayerを使用してコンポーネントの並べ替えを行う](https://ateraimemo.com/Swing/ReorderingLayer.html)
+    - `JTable`の列入れ替え風に親パネルの範囲内のみ子コンポーネントをドラッグ可能にして入れ替えるサンプル
 
 <!-- dummy comment line for breaking list -->
 

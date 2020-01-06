@@ -19,7 +19,7 @@ comments: true
 <pre class="prettyprint"><code>JFrame frame = new JFrame("@title@") {
   @Override protected JRootPane createRootPane() {
     JRootPane rp = new JRootPane() {
-      //private final TexturePaint texture = makeCheckerTexture();
+      // private final TexturePaint texture = makeCheckerTexture();
       @Override protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g.create();
@@ -27,6 +27,7 @@ comments: true
         g2.fillRect(0, 0, getWidth(), getHeight());
         g2.dispose();
       }
+
       @Override public void updateUI() {
         super.updateUI();
         BufferedImage bi = makeBufferedImage("test.jpg");
@@ -37,9 +38,9 @@ comments: true
     return rp;
   }
 };
-//frame.getRootPane().setBackground(Color.BLUE);
-//frame.getLayeredPane().setBackground(Color.GREEN);
-//frame.getContentPane().setBackground(Color.RED);
+// frame.getRootPane().setBackground(Color.BLUE);
+// frame.getLayeredPane().setBackground(Color.GREEN);
+// frame.getContentPane().setBackground(Color.RED);
 ((JComponent) frame.getContentPane()).setOpaque(false);
 frame.setJMenuBar(createMenubar());
 frame.getContentPane().add(new MainPanel());

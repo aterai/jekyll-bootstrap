@@ -19,6 +19,8 @@ comments: true
 <pre class="prettyprint"><code>class RippleBorder extends EmptyBorder {
   private final Timer animator;
   private final JComponent comp;
+  private float count = 1f;
+
   public RippleBorder(JComponent c, int width) {
     super(width, width, width, width);
     this.comp = c;
@@ -33,12 +35,13 @@ comments: true
         comp.setForeground(Color.RED);
         animator.start();
       }
+
       @Override public void mouseExited(MouseEvent e) {
         comp.setForeground(Color.BLACK);
       }
     });
   }
-  private float count = 1f;
+
   @Override public void paintBorder(Component c, Graphics g, int x, int y, int w, int h) {
     if (!animator.isRunning()) {
       super.paintBorder(c, g, x, y, w, h);

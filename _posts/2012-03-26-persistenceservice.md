@@ -22,6 +22,7 @@ comments: true
     super();
     this.windowState = windowState;
   }
+
   @Override public WindowAdapter doInBackground() {
     PersistenceService ps;
     BasicService bs;
@@ -125,11 +126,7 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>//package example;
-//-*- mode:java; encoding:utf-8 -*-
-// vim:set fileencoding=utf-8:
-//@homepage@
-import java.awt.*;
+<pre class="prettyprint"><code>import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
 import java.io.*;
@@ -170,7 +167,7 @@ public class MainPanel extends JPanel {
     try (XMLDecoder d = new XMLDecoder(new BufferedInputStream(
         new FileInputStream(PROPERTIES_XML)))) {
       frame = (JFrame) d.readObject();
-      //d.close();
+      // d.close();
     } catch (Exception ex) {
       ex.printStackTrace();
     }
@@ -190,12 +187,12 @@ public class MainPanel extends JPanel {
             new FileOutputStream(file)))) {
           xe.setExceptionListener(new ExceptionListener() {
             @Override public void exceptionThrown(Exception exception) {
-              //XXX:
+              // XXX:
               exception.printStackTrace();
             }
           });
           xe.writeObject(frame);
-          //xe.flush(); xe.close();
+          // xe.flush(); xe.close();
         } catch (Exception ex) {
           ex.printStackTrace();
         }
