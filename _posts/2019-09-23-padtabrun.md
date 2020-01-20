@@ -39,7 +39,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-    - [BasicTabbedPaneUI (Java Platform SE 8 )](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#shouldPadTabRun-int-int-)
+    - [BasicTabbedPaneUI (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/plaf/basic/BasicTabbedPaneUI.html#shouldPadTabRun-int-int-)
 
 <!-- dummy comment line for breaking list -->
 

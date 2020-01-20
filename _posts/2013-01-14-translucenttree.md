@@ -29,9 +29,11 @@ comments: true
     c.setOpaque(false);
     return c;
   }
+
   @Override public Color getBackgroundNonSelectionColor() {
     return ALPHA_OF_ZERO;
   }
+
   @Override public Color getBackgroundSelectionColor() {
     return ALPHA_OF_ZERO;
   }
@@ -57,22 +59,22 @@ class TranslucentTreeCellRenderer extends TransparentTreeCellRenderer {
     - `JTree#setOpaque(false);`として`JTree`や`JScrollPane`などを透明化
     - `DefaultTreeCellRenderer#getBackgroundNonSelectionColor(...)`をオーバーライドしてノードの背景色を透明化
     - `DefaultTreeCellRenderer#getBackgroundSelectionColor(...)`をオーバーライドしてノードの選択色を透明化
-    - `JTree#paintComponent(...)`をオーバーライドして、半透明の選択色で`JTree`に直接選択状態を描画
+    - `JTree#paintComponent(...)`をオーバーライドして半透明の選択色で`JTree`に直接選択状態を描画
         - 参考: [JTreeを行クリックで選択し、行全体を選択状態の背景色で描画](https://ateraimemo.com/Swing/TreeRowSelection.html)
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
 - `SynthLookAndFeel`系の`NimbusLookAndFeel`の場合、以下のような何も描画しない`Painter`をノード選択に使用することでその選択色は半透明になる
-    - ただし、同じ`SynthLookAndFeel`系でも、`GTKLookAndFeel`の場合は、[SynthでJInternalFrameを半透明にする](https://ateraimemo.com/Swing/TranslucentFrame.html)のように、`SynthStyle#isOpaque(...)`が`Region.TREE_CELL`の時は`false`になるように設定する必要がある
+    - ただし同じ`SynthLookAndFeel`系でも`GTKLookAndFeel`の場合は、[SynthでJInternalFrameを半透明にする](https://ateraimemo.com/Swing/TranslucentFrame.html)のように`SynthStyle#isOpaque(...)`が`Region.TREE_CELL`の時は`false`になるように設定する必要がある
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>//NimbusLookAndFeel(SynthLookAndFeel) JDK 1.7.0
+<pre class="prettyprint"><code>// NimbusLookAndFeel(SynthLookAndFeel) JDK 1.7.0
 UIDefaults d = new UIDefaults();
 d.put("Tree:TreeCell[Enabled+Selected].backgroundPainter", new Painter&lt;JComponent&gt;() {
   @Override public void paint(Graphics2D g, JComponent c, int width, int height) {
-    //Do nothing
+    // Do nothing
   }
 });
 tree2.putClientProperty("Nimbus.Overrides", d);

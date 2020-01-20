@@ -17,8 +17,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private final JTable table = new JTable(100, 3) {
-  //https://stackoverflow.com/questions/16368343/jtable-resize-only-selected-column-when-container-size-changes
-  //https://stackoverflow.com/questions/23201818/jtable-columns-doesnt-resize-probably-when-jframe-resize
+  // https://stackoverflow.com/questions/16368343/jtable-resize-only-selected-column-when-container-size-changes
+  // https://stackoverflow.com/questions/23201818/jtable-columns-doesnt-resize-probably-when-jframe-resize
   @Override public void doLayout() {
     Optional.ofNullable(getTableHeader()).ifPresent(h -&gt; {
       if (Objects.isNull(h.getResizingColumn()) &amp;&amp; getAutoResizeMode() == AUTO_RESIZE_LAST_COLUMN) {
@@ -32,13 +32,12 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFrame`に連動して`JTable`と`JTableHeader`がリサイズされた場合、最後の`TableColumn`が幅の変更をすべて吸収するように、`JTable#doLayout()`のオーバーライドや`JTableHeader.setResizingColumn(...)`の設定を行なっています。
+上記のサンプルでは、`JFrame`に連動して`JTable`と`JTableHeader`がリサイズされた場合、最後の`TableColumn`が幅の変更をすべて吸収するように`JTable#doLayout()`のオーバーライドや`JTableHeader.setResizingColumn(...)`の設定を行なっています。
 
-- 注:
-    - `table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);`を設定しても、例えば親`JFrame`の幅が変更されて、`JTableHeader`自体がリサイズされた場合、すべての`TableColumn`の幅が均等に変化してしまう
-    - 列を入れ替えた場合でも、表示上最後にある`TableColumn`がリサイズされる
-    - ~~チェックボックスで設定を切り替えているため、`JTable`に`ComponentListener`を追加して、変更ごとに`JTableHeader.setResizingColumn(null)`でリセット~~ チェックボックスでの設定切り替えではなく、デフォルト設定の`JTable`を追加し、これと二つ並べて表示するサンプルに変更
-    - 以下のように、`JTable#doLayout()`をオーバーライドではなく、`JTable`または`JTableHeader`に`ComponentListener`を追加しても同様の動作になるが、リサイズ開始時に最後の`TableColumn`にも幅の変更が適用されてしまうため、微妙に幅が変化してしまう場合がある(先に`JTable#doLayout()`が実行される)
+- `table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);`を設定しても、例えば親`JFrame`の幅が変更されて、`JTableHeader`自体がリサイズされた場合、すべての`TableColumn`の幅が均等に変化してしまう
+- 列を入れ替えた場合でも、表示上最後にある`TableColumn`がリサイズされる
+- ~~チェックボックスで設定を切り替えているため、`JTable`に`ComponentListener`を追加して、変更ごとに`JTableHeader.setResizingColumn(null)`でリセット~~ チェックボックスでの設定切り替えではなく、デフォルト設定の`JTable`を追加し、これと二つ並べて表示するサンプルに変更
+- 以下のように、`JTable#doLayout()`をオーバーライドではなく、`JTable`または`JTableHeader`に`ComponentListener`を追加しても同様の動作になるが、リサイズ開始時に最後の`TableColumn`にも幅の変更が適用されてしまうため、微妙に幅が変化してしまう場合がある(先に`JTable#doLayout()`が実行される)
 
 <!-- dummy comment line for breaking list -->
 

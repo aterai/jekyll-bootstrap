@@ -1,0 +1,76 @@
+---
+layout: post
+category: swing
+folder: Scrollspy
+title: JEditorPaneのスクロールに連動してJTreeのノードを選択する
+tags: [JEditorPane, JTree, JScrollPane, HTMLDocument, Html]
+author: aterai
+pubdate: 2020-01-13T03:43:21+09:00
+description: JEditorPaneのスクロールに連動して表示状態になったリンクと同名のJTreeノードを検索・選択します。
+image: https://drive.google.com/uc?id=1WPiIXVEn_n8seXVfgwCByMIWUPocOwmF
+comments: true
+---
+## 概要
+`JEditorPane`のスクロールに連動して表示状態になったリンクと同名の`JTree`ノードを検索・選択します。
+
+{% download https://drive.google.com/uc?id=1WPiIXVEn_n8seXVfgwCByMIWUPocOwmF %}
+
+## サンプルコード
+<pre class="prettyprint"><code>JScrollPane scroll = new JScrollPane(editor);
+scroll.getVerticalScrollBar().getModel().addChangeListener(e -&gt; {
+  HTMLDocument.Iterator itr = doc.getIterator(HTML.Tag.A);
+  for (; itr.isValid(); itr.next()) {
+    try {
+      Rectangle r = editor.modelToView(itr.getStartOffset());
+      if (r != null &amp;&amp; editor.getVisibleRect().contains(r.getLocation())) {
+        searchTreeNode(tree, itr.getAttributes().getAttribute(HTML.Attribute.NAME));
+        break;
+      }
+    } catch (BadLocationException ex) {
+      UIManager.getLookAndFeel().provideErrorFeedback(editor);
+    }
+  }
+});
+</code></pre>
+
+## 解説
+上記のサンプルでは、`JEditorPane`を配置した`JScrollPane`の縦`ScrollBar`に`ChangeListener`を設定し、表示状態になったリンクと同名の`JTree`ノードを検索して選択します。
+
+- リンクが表示されているかは`HTMLDocument#getIterator(HTML.Tag.A)`で取得した`<a>`タグの先頭位置が`JEditorPane#getVisibleRect()`で取得した表示範囲に含まれるかで判断
+- `JTree`側にはノードをマウスクリックなどで選択したら`JEditorPane#scrollToReference(ref)`でそのリンクまでスクロールする`TreeSelectionListener`を追加しているので、`JEditorPane`側からのノード選択を実行する場合はその`TreeSelectionListener`が反応しないよう設定する必要がある
+    
+    <pre class="prettyprint"><code>tree.addTreeSelectionListener(e -&gt; {
+      if (!tree.isEnabled()) { // JEditorPane側からのノード選択は無視する
+        return;
+      }
+      Object o = e.getNewLeadSelectionPath().getLastPathComponent();
+      if (o instanceof DefaultMutableTreeNode) {
+        DefaultMutableTreeNode node = (DefaultMutableTreeNode) o;
+        String ref = Objects.toString(node.getUserObject());
+        editor.scrollToReference(ref);
+      }
+    });
+    // ...
+    private static void searchTreeNode(JTree tree, Object name) {
+      TreeModel model = tree.getModel();
+      DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+      Collections.list((Enumeration&lt;?&gt;) root.preorderEnumeration()).stream()
+          .filter(DefaultMutableTreeNode.class::isInstance)
+          .map(DefaultMutableTreeNode.class::cast)
+          .filter(node -&gt; Objects.equals(name, Objects.toString(node.getUserObject())))
+          .findFirst()
+          .ifPresent(node -&gt; {
+            tree.setEnabled(false); // JTreeに設定したTreeSelectionListenerを無効にする
+            TreePath path = new TreePath(node.getPath());
+            tree.setSelectionPath(path);
+            tree.scrollPathToVisible(path);
+            tree.setEnabled(true); // JTreeに設定したTreeSelectionListenerを有効に戻す
+          });
+    }
+</code></pre>
+- * 参考リンク [#reference]
+- [JEditorPane内のリンク参照位置までスクロールする](https://ateraimemo.com/Swing/ScrollToReference.html)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

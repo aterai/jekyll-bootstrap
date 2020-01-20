@@ -26,15 +26,19 @@ comments: true
   protected CheckedComboBox() {
     super();
   }
+
   protected CheckedComboBox(ComboBoxModel&lt;E&gt; aModel) {
     super(aModel);
   }
+
   protected CheckedComboBox(E[] m) {
     super(m);
   }
+
   @Override public Dimension getPreferredSize() {
     return new Dimension(200, 20);
   }
+
   @Override public void updateUI() {
     setRenderer(null);
     removeActionListener(listener);
@@ -59,6 +63,7 @@ comments: true
       }
     });
   }
+
   private void updateItem(int index) {
     if (isPopupVisible()) {
       E item = getItemAt(index);
@@ -67,6 +72,7 @@ comments: true
       setSelectedItem(item);
     }
   }
+
   @Override public void setPopupVisible(boolean v) {
     if (keepOpen) {
       keepOpen = false;
@@ -83,9 +89,9 @@ comments: true
     - `JComboBox`本体: レンダラーに`JLabel`を使用し、選択されている`CheckableItem`のタイトルを収集してカンマで結合して一覧表示
     - ドロップダウンリスト: レンダラーに`JCheckBox`を使用し、チェック状態とタイトルを表示
 - `JComboBox`に`ActionListener`を追加し、マウスの左クリックかつドロップダウンリストが表示されている場合は、選択されたアイテムのチェック状態を反転
-    - この場合は、ドロップダウンリストを閉じないように、`JComboBox#setPopupVisible(...)`をオーバーライド
-- <kbd>Space</kbd>キーでアイテムが選択された場合は、`BasicComboPopup`から`JList`を取得し、その選択アイテムを取得する
-    - この場合、`JComboBox#getSelectedIndex()`などを使用すると、ハイライト(`cellHasFocus`)されているアイテムではなく、選択状態(`isSelected`)のアイテムが取得される
+    - この場合は、ドロップダウンリストを閉じないように`JComboBox#setPopupVisible(...)`をオーバーライド
+- <kbd>Space</kbd>キーでアイテムが選択された場合は、`BasicComboPopup`から`JList`を取得してその選択アイテムを取得する
+    - この場合、`JComboBox#getSelectedIndex()`などを使用するとハイライト(`cellHasFocus`)されているアイテムではなく選択状態(`isSelected`)のアイテムが取得される
 
 <!-- dummy comment line for breaking list -->
 

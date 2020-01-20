@@ -20,8 +20,14 @@ comments: true
   @Override public void ancestorAdded(AncestorEvent e) {
     e.getComponent().requestFocusInWindow();
   }
-  @Override public void ancestorMoved(AncestorEvent e) {}
-  @Override public void ancestorRemoved(AncestorEvent e) {}
+
+  @Override public void ancestorMoved(AncestorEvent e) {
+    /* not needed */
+  }
+
+  @Override public void ancestorRemoved(AncestorEvent e) {
+    /* not needed */
+  }
 });
 </code></pre>
 
@@ -39,7 +45,7 @@ comments: true
         }
 </code></pre>
 - 右上: `WindowListener`
-    - `JOptionPane#createDialog(...)`で`JDialog`を取得し、`WindowListener#windowOpened`で、`textField.requestFocusInWindow();`
+    - `JOptionPane#createDialog(...)`で`JDialog`を取得し、`WindowListener#windowOpened`で`textField.requestFocusInWindow();`を実行
     - [Windowを開いたときのフォーカスを指定](https://ateraimemo.com/Swing/DefaultFocus.html)など
         
         <pre class="prettyprint"><code>JOptionPane pane = new JOptionPane(
@@ -62,7 +68,7 @@ comments: true
         }
 </code></pre>
 - 左下: `HierarchyListener`
-    - `textField`に`HierarchyListener`を追加し、`hierarchyChanged`が呼ばれたときに、`textField.requestFocusInWindow();`
+    - `textField`に`HierarchyListener`を追加し、`hierarchyChanged`が呼ばれたときに`textField.requestFocusInWindow();`を実行
         
         <pre class="prettyprint"><code>textField3.addHierarchyListener(new HierarchyListener() {
           @Override public void hierarchyChanged(HierarchyEvent e) {
@@ -84,7 +90,7 @@ comments: true
         }
 </code></pre>
 - 右下: `AncestorListener`
-    - `textField`に`addAncestorListener`を追加し、`ancestorAdded`が呼ばれたときに、`textField.requestFocusInWindow();`
+    - `textField`に`addAncestorListener`を追加し、`ancestorAdded`が呼ばれたときに`textField.requestFocusInWindow();`を実行
     - [Swing - Input focus](https://community.oracle.com/thread/1354218)
 
 <!-- dummy comment line for breaking list -->

@@ -40,7 +40,7 @@ vGroup.addGroup(layout.createParallelGroup(Alignment.BASELINE)
 layout.setVerticalGroup(vGroup);
 </code></pre>
 
-<pre class="prettyprint"><code>//GridBagLayout
+<pre class="prettyprint"><code>// GridBagLayout
 JPanel p2 = new JPanel(new GridBagLayout());
 Border inside = BorderFactory.createEmptyBorder(10, 5 + 2, 10, 10 + 2);
 Border outside = BorderFactory.createTitledBorder("GridBagLayout");
@@ -67,7 +67,7 @@ c.gridy = 1; p2.add(tf4, c);
 上記のサンプルでは、`GroupLayout`と`GridBagLayout`でレイアウトしたパネルを`GridLayout`(`BorderLayout.CENTER`と同じで推奨サイズが無視される)で上下に並べているため、フレームを拡大すると`GroupLayout`は上揃え、`GridBagLayout`は中央揃えになっています。
 
 ## 参考リンク
-- [GroupLayout (Java Platform SE 8 )](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/GroupLayout.html)
+- [GroupLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/GroupLayout.html)
 - [GridBagLayoutの使用](https://ateraimemo.com/Swing/GridBagLayout.html)
 - [GroupLayoutの考え方２ - ばかの一つ覚え。](http://d.hatena.ne.jp/jawagenjin/20080127/1201444435)
     - `GroupLayout`のイメージが、図で分かりやすく解説されている

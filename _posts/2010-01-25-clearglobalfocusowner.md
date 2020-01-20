@@ -20,10 +20,9 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JFrame`をクリックしたときに`KeyboardFocusManager#clearGlobalFocusOwner()`メソッドを使用して`GlobalFocus`をクリアしています。
+上記のサンプルでは、`JFrame`の余白をマウスでクリックしたときに`KeyboardFocusManager#clearGlobalFocusOwner()`メソッドを使用して`GlobalFocus`をクリアしています。
 
-- メモ
-    - `JDK1.8.0`以降の場合は、[KeyboardFocusManager#clearFocusOwner()](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html#clearFocusOwner--)も使用可能
+- `JDK1.8.0`以降の場合は、[KeyboardFocusManager#clearFocusOwner()](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/KeyboardFocusManager.html#clearFocusOwner--)も使用可能
 
 <!-- dummy comment line for breaking list -->
 

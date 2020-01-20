@@ -26,13 +26,13 @@ frame.setIconImage(Toolkit.getDefaultToolkit().createImage(url));
 `JFrame#setIconImage`メソッドで`JFrame`のタイトルバーなどに表示される画像を設定しています。
 
 - サンプル画像として[GIMP](https://www.gimp.org/)を使って作成したサイズ`16x16`の透過`PNG`を使用
-- `JDK 1.6.0`から、[JFrame#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFrame.html#setIconImage-java.awt.Image-)は、[Window#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImage-java.awt.Image-)を使用するようになった
-- また、`JDK 1.6.0`から[Window#setIconImages(List<? extends Image>)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImages-java.util.List-)で、複数のイメージを設定可能になった
+- `JDK 1.6.0`から、[JFrame#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFrame.html#setIconImage-java.awt.Image-)メソッドは[Window#setIconImage(Image)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImage-java.awt.Image-)メソッドを使用するようになった
+- また、`JDK 1.6.0`から[Window#setIconImages(List<? extends Image>)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#setIconImages-java.util.List-)メソッドで複数のイメージを設定可能になった
     - 同サイズのイメージがある場合は、先頭から検索して最初のイメージが使用される
     - どのサイズのイメージが使用されるかは環境に依存する
     - 参考: [java - Sizes of frame icons used in Swing - Stack Overflow](https://stackoverflow.com/questions/18224184/sizes-of-frame-icons-used-in-swing)
-    - `Window#setIconImage(Image)`と、`Window#setIconImages(List<? extends Image>)`を両方使用した場合、後に実行したメソッドの設定が有効になる
-        - 以下の例の場合、タイトルバーのアイコンは、`ATTACHMENT_16x16-32.png`になる
+    - `Window#setIconImage(Image)`と`Window#setIconImages(List<? extends Image>)`を両方使用した場合、後に実行したメソッドの設定が有効になる
+        - たとえば以下のコードの場合、タイトルバーのアイコンは`ATTACHMENT_16x16-32.png`になる
 
 <!-- dummy comment line for breaking list -->
 
@@ -44,7 +44,7 @@ frame.setIconImages(java.util.Arrays.asList(
 </code></pre>
 
 - - - -
-- `JFrame.setDefaultLookAndFeelDecorated(true);`で、デフォルト`LookAndFeel`のウィンドウ修飾をタイトルバーに適用する場合、`JFrame#setIconImage(...)`で設定したアイコンが透過されない
+- `JFrame.setDefaultLookAndFeelDecorated(true);`でデフォルト`LookAndFeel`のウィンドウ修飾をタイトルバーに適用する場合、`JFrame#setIconImage(...)`で設定したアイコンが透過されない
     - [JDK-6429220 Default LAF decorated frame does not support transparent icons - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6429220)
 
 <!-- dummy comment line for breaking list -->
@@ -54,13 +54,10 @@ import javax.swing.*;
 
 public class TransparentIconTest {
   public static void main(String[] args) {
-    EventQueue.invokeLater(new Runnable() {
-      @Override public void run() {
-        createAndShowGUI();
-      }
-    });
+    EventQueue.invokeLater(() -&gt; createAndShowGui());
   }
-  public static void createAndShowGUI() {
+
+  public static void createAndShowGui() {
     JFrame.setDefaultLookAndFeelDecorated(true);
     JFrame f = new JFrame();
     f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

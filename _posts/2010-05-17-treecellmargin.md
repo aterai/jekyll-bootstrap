@@ -40,6 +40,7 @@ comments: true
     p.add(icon, BorderLayout.WEST);
     p.add(text);
   }
+
   @Override public Component getTreeCellRendererComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -70,15 +71,15 @@ comments: true
     - `Default`
 - 中
     - `DefaultTreeCellRenderer#paint(...)`メソッドをオーバーライドして、余白を追加
-    - 注: `WindowsLookAndFeel`(フォーカスのボーダーがアイコンの周りには描画されない)で、`getComponentOrientation().isLeftToRight()==true`の場合のみ対応
+    - 注: `WindowsLookAndFeel`(フォーカスのボーダーがアイコンの周りには描画されない)で`getComponentOrientation().isLeftToRight()==true`の場合のみ対応
 - 右
-    - `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`メソッドをオーバーライドして、アイコンと文字列を別の`JLabel`に分解し、文字列にのみ`BorderFactory.createEmptyBorder(0, 0, 0, 2)`で余白を追加
-    - 注: `WindowsLookAndFeel`(フォーカスのボーダーがアイコンの周りには描画されない)で、`getComponentOrientation().isLeftToRight()==true`の場合のみ対応
+    - `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`メソッドをオーバーライドしてアイコンと文字列を別の`JLabel`に分解し、文字列にのみ`BorderFactory.createEmptyBorder(0, 0, 0, 2)`で余白を追加
+    - 注: `WindowsLookAndFeel`(フォーカスのボーダーがアイコンの周りには描画されない)で`getComponentOrientation().isLeftToRight()==true`の場合のみ対応
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [DefaultTreeCellRenderer (Java Platform SE 8 )](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html)
+- [DefaultTreeCellRenderer (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html)
 
 <!-- dummy comment line for breaking list -->
 

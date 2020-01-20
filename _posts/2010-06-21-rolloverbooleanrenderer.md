@@ -30,8 +30,9 @@ comments: true
     setRolloverEnabled(true);
     setOpaque(true);
   }
+
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
-                               boolean isSelected, boolean hasFocus, int row, int column) {
+        boolean isSelected, boolean hasFocus, int row, int column) {
     if (highlighter.isHighlightableCell(row, column)) {
       getModel().setRollover(true);
     } else {
@@ -57,9 +58,9 @@ comments: true
 
 ## 解説
 - 上: デフォルト
-- 下: `JTable#setDefaultRenderer`メソッドで、`Object`, `Number`, `Boolean`クラスそれぞれに、マウスカーソルに反応するセルレンダラーを設定
-    - これらは、デフォルトの`JTable$BooleanRenderer`クラスなどを参考に作成
-    - `JCheckBox`のロールオーバー表示は、`JCheckBox#getModel()#setRollover(boolean)`メソッドを使用
+- 下: `JTable#setDefaultRenderer`メソッドで、`Object`、`Number`、`Boolean`クラスそれぞれにマウスカーソルに反応するセルレンダラーを設定
+    - これらのセルレンダラーはデフォルトの`JTable$BooleanRenderer`クラスなどを参考に作成
+    - `JCheckBox`のロールオーバー表示は`JCheckBox#getModel()#setRollover(boolean)`メソッドを使用
 
 <!-- dummy comment line for breaking list -->
 
