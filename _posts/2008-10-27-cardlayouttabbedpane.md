@@ -36,7 +36,8 @@ comments: true
     add(wrapPanel, BorderLayout.NORTH);
     add(contentsPanel);
   }
-  public void addTab(final String title, final Component comp) {
+
+  public void addTab(String title, Component comp) {
     JRadioButton b = new TabButton(new AbstractAction(title) {
       @Override public void actionPerformed(ActionEvent e) {
         cardLayout.show(contentsPanel, title);

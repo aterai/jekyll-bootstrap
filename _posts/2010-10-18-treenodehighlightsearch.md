@@ -26,6 +26,7 @@ comments: true
   public HighlightTreeCellRenderer(TreeCellRenderer renderer) {
     this.renderer = renderer;
   }
+
   @Override public Component getTreeCellRendererComponent(JTree tree, Object value,
         boolean isSelected, boolean expanded,
         boolean leaf, int row, boolean hasFocus) {
@@ -34,7 +35,7 @@ comments: true
     if (isSelected) {
       c.setOpaque(false);
       c.setForeground(getTextSelectionColor());
-      //c.setBackground(Color.BLUE); //getBackgroundSelectionColor());
+      // c.setBackground(Color.BLUE); //getBackgroundSelectionColor());
     } else {
       c.setOpaque(true);
       if (q != null &amp;&amp; !q.isEmpty() &amp;&amp; value.toString().startsWith(q)) {
@@ -51,10 +52,16 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTextField`に入力した文字列に`startsWith(...)`で一致するノードをハイライトしています。デフォルトの`TreeCellRenderer`は、`isOpaque()==Boolean.FALSE`で、選択色は`DefaultTreeCellRenderer#paint(Graphics g)`で塗りつぶされる(ノードアイコンを除いて選択状態にするため？)ので、検索のハイライトの為にレンダラーを`setOpaque(true)`としてしまうと、マウスなどでノードを選択しても背景色が変更されません。このため、`DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で、検索のハイライトはレンダラーを`setOpaque(true)`、ノードの選択は`setOpaque(false)`となるように設定しています。
+上記のサンプルでは、`JTextField`に入力した文字列に`startsWith(...)`で一致するノードをハイライトしています。
+
+- デフォルトの`TreeCellRenderer`は`isOpaque()==Boolean.FALSE`
+    - 選択状態の背景色は`DefaultTreeCellRenderer#paint(Graphics g)`で塗りつぶされるので、検索のハイライトの為にレンダラーを`setOpaque(true)`としてしまうとマウスなどでノードを選択しても背景色が変更されない
+    - `DefaultTreeCellRenderer#getTreeCellRendererComponent(...)`内で検索のハイライトはレンダラーを`setOpaque(true)`、ノードの選択は`setOpaque(false)`となるように設定
+
+<!-- dummy comment line for breaking list -->
 
 - - - -
-- `DefaultTreeCellRenderer#getBackgroundNonSelectionColor()`をオーバーライドすれば、デフォルト選択領域の選択色を変更可能(ノードアイコンは含まず、ノードテキストのみ)
+- `DefaultTreeCellRenderer#getBackgroundNonSelectionColor()`をオーバーライドすればデフォルト選択領域の選択色を変更可能(ノードアイコンは含まず、ノードテキストのみ)
     - [JTreeの選択背景色を変更](https://ateraimemo.com/Swing/TreeBackgroundSelectionColor.html)に移動
 
 <!-- dummy comment line for breaking list -->
