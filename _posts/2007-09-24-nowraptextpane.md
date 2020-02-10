@@ -20,12 +20,14 @@ comments: true
   public NoWrapParagraphView(Element elem) {
     super(elem);
   }
+
   @Override protected SizeRequirements calculateMinorAxisRequirements(
       int axis, SizeRequirements r) {
     SizeRequirements req = super.calculateMinorAxisRequirements(axis, r);
     req.minimum = req.preferred;
     return req;
   }
+
   @Override public int getFlowSpan(int index) {
     return Integer.MAX_VALUE;
   }

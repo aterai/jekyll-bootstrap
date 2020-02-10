@@ -24,8 +24,8 @@ table.scrollRectToVisible(r);
 
 ## 解説
 - `JTable`
-    - `JTable#scrollRectToVisible(Rectangle)`を使用して、追加した行の`0`列目のセル領域までスクロール
-    - ソートやフィルタが使用されている場合を考慮して、追加した行のインデックスを`JTable#convertRowIndexToView(int)`で変換してから、セル領域を取得
+    - `JTable#scrollRectToVisible(Rectangle)`を使用して追加した行の`0`列目のセル領域までスクロール
+    - ソートやフィルタが使用されている場合を考慮して追加した行のインデックスを`JTable#convertRowIndexToView(int)`で変換してからセル領域を取得
 
 <!-- dummy comment line for breaking list -->
 
@@ -39,8 +39,8 @@ table.scrollRectToVisible(r);
 </code></pre>
 - `JTree`
     - [JTree#scrollRowToVisible(int)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#scrollRowToVisible-int-)、または[JTree#scrollPathToVisible(TreePath)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTree.html#scrollPathToVisible-javax.swing.tree.TreePath-)で追加した最終行を可視化
-    - `tree.scrollRowToVisible(row)`は `tree.scrollPathToVisible(tree.getPathForRow(row))`と同等
-    - `JTree#scrollPathToVisible(TreePath)`は内部で、`tree.scrollRectToVisible(tree.getPathBounds(path))`を使用
+    - `tree.scrollRowToVisible(row)`は`tree.scrollPathToVisible(tree.getPathForRow(row))`と同等
+    - `JTree#scrollPathToVisible(TreePath)`は内部で`tree.scrollRectToVisible(tree.getPathBounds(path))`を使用している
         
         <pre class="prettyprint"><code>DefaultTreeModel treeModel = (DefaultTreeModel) tree.getModel();
         DefaultMutableTreeNode parent = (DefaultMutableTreeNode) treeModel.getRoot();

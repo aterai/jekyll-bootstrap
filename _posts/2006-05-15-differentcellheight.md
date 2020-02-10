@@ -21,6 +21,7 @@ comments: true
   private static final Color EVEN_COLOR = new Color(230, 255, 230);
   private Border noFocusBorder;
   private Border focusBorder;
+
   @Override public Component getListCellRendererComponent(
       JList&lt;? extends E&gt; list, E value, int index,
       boolean isSelected, boolean cellHasFocus) {
@@ -41,6 +42,7 @@ comments: true
     }
     return this;
   }
+
   @Override public void updateUI() {
     super.updateUI();
     focusBorder = UIManager.getBorder("List.focusCellHighlightBorder");
@@ -66,9 +68,9 @@ private DefaultListModel makeList() {
 ## 解説
 - 右: デフォルトの`JList`
 - 左: 複数行に対応した`JList`
-    - `JList#getFixedCellHeight()`が`-1`で、`ListCellRenderer`に`JTextArea`を使用しているため、テキストに`\n`を含めることで複数行が表示可能
+    - `JList#getFixedCellHeight()`が`-1`で`ListCellRenderer`に`JTextArea`を使用しているため、テキストに`\n`を含めることで複数行が表示可能
 - セルの選択状態
-    - ~~`JTextArea`にセルフォーカスがある状態を表現するために、`LineBorder`を継承して作成した`DotBorder`を使用~~
+    - ~~`JTextArea`にセルフォーカスがある状態を表現するために`LineBorder`を継承して作成した`DotBorder`を使用~~
     - `UIManager.getBorder("List.focusCellHighlightBorder")`を使用するように変更
 
 <!-- dummy comment line for breaking list -->

@@ -32,12 +32,12 @@ comments: true
     @Override public void actionPerformed(ActionEvent e) {
       JViewport vport = (JViewport) SwingUtilities.getUnwrappedParent(label);
       Point vp = vport.getViewPosition();
-      //System.out.format("s: %s, %s%n", delta, vp);
+      // System.out.format("s: %s, %s%n", delta, vp);
       vp.translate(-delta.x, -delta.y);
       vport.setViewPosition(vp);
       if (Math.abs(delta.x) &gt; 0 || Math.abs(delta.y) &gt; 0) {
         delta.setLocation((int) (delta.x * D), (int) (delta.y * D));
-        //Outside
+        // Outside
         if (vp.x &lt; 0 || vp.x + vport.getWidth() - label.getWidth() &gt; 0) {
           delta.x = (int) (delta.x * D);
         }
@@ -56,7 +56,7 @@ comments: true
     @Override public void actionPerformed(ActionEvent e) {
       JViewport vport = (JViewport) SwingUtilities.getUnwrappedParent(label);
       Point vp = vport.getViewPosition();
-      //System.out.format("r: %s%n", vp);
+      // System.out.format("r: %s%n", vp);
       if (vp.x &lt; 0) {
         vp.x = (int) (vp.x * D);
       }
@@ -75,22 +75,26 @@ comments: true
       }
     }
   });
+
   private static boolean isInside(JViewport vport, JComponent comp) {
     Point vp = vport.getViewPosition();
     return vp.x &gt;= 0 &amp;&amp; vp.x + vport.getWidth()  - comp.getWidth()  &lt;= 0
         &amp;&amp; vp.y &gt;= 0 &amp;&amp; vp.y + vport.getHeight() - comp.getHeight() &lt;= 0;
   }
+
   public KineticScrollingListener2(JComponent comp) {
     super();
     this.label = comp;
     this.dc = comp.getCursor();
   }
+
   @Override public void mousePressed(MouseEvent e) {
     e.getComponent().setCursor(hc);
     startPt.setLocation(e.getPoint());
     inside.stop();
     outside.stop();
   }
+
   @Override public void mouseDragged(MouseEvent e) {
     Point pt = e.getPoint();
     JViewport vport = (JViewport) SwingUtilities.getUnwrappedParent(label);
@@ -100,6 +104,7 @@ comments: true
     delta.setLocation(SPEED * (pt.x - startPt.x), SPEED * (pt.y - startPt.y));
     startPt.setLocation(pt);
   }
+
   @Override public void mouseReleased(MouseEvent e) {
     e.getComponent().setCursor(dc);
     JViewport vport = (JViewport) SwingUtilities.getUnwrappedParent(label);
@@ -109,6 +114,7 @@ comments: true
       outside.start();
     }
   }
+
   @Override public void hierarchyChanged(HierarchyEvent e) {
     Component c = e.getComponent();
     if ((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0

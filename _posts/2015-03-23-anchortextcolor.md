@@ -20,7 +20,6 @@ comments: true
 StyleSheet styleSheet = kit.getStyleSheet();
 styleSheet.addRule("a{color:#FF0000;}");
 JLabel label2 = new JLabel("&lt;html&gt;&lt;a href='" + MYSITE + "'&gt;" + MYSITE + "&lt;/a&gt;");
-
 JLabel label3 = new JLabel("&lt;html&gt;&lt;a style='color:#00FF00' href='" + MYSITE + "'&gt;" + MYSITE + "&lt;/a&gt;");
 </code></pre>
 
@@ -28,9 +27,9 @@ JLabel label3 = new JLabel("&lt;html&gt;&lt;a style='color:#00FF00' href='" + MY
 上記のサンプルでは、[Customize detault html link color in java swing - Stack Overflow](https://stackoverflow.com/questions/26749495/customize-detault-html-link-color-in-java-swing)を参考にして、
 `Html`のアンカータグ(`<a href='...'>...</a>`)のデフォルト文字色を変更しています。
 
-- デフォルトの`StyleSheet`(`HTMLEditorKit#getStyleSheet()`)は、グローバルな`AppContext`で管理されているため、これに`a{color:#FF0000;}`などのルールを追加すると、`Swing`アプリ全体でアンカータグの文字色が変更される
+- デフォルトの`StyleSheet`(`HTMLEditorKit#getStyleSheet()`)はグローバルな`AppContext`で管理されているため、これに`a{color:#FF0000;}`などのルールを追加すると`Swing`アプリ全体でアンカータグの文字色が変更される
     - `JLabel`は作成された時点のデフォルト`StyleSheet`を使用(一番上の`JLabel`はアンカーの文字色は青のまま)するが、`JEditorPane`は、現在の`StyleSheet`を使用(すべての`JEditorPane`でアンカーの文字色は赤になる)する？
-    - 直接、`<a style='color:#00FF00'`のようにスタイルを指定した場合は、こちらが優先される
+    - 直接`<a style='color:#00FF00'`のようにスタイルを指定した場合は、こちらが優先される
 
 <!-- dummy comment line for breaking list -->
 

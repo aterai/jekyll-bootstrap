@@ -40,8 +40,8 @@ radio2.addItemListener(e -&gt; UIManager.put(TOOLTIP_MODE, activeApplication));
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- ツールチップを表示する前に`ToolTipManager#showTipWindow()`で毎回`UIManager.getString("ToolTipManager.enableToolTipMode")`が`activeApplication`かを確認しているので、値の変更はすぐに有効になる
-- `activeApplication`かどうかを確認しているだけなので、`null`などを設定するとデフォルトの`allWindows`になる
+- ツールチップを表示する前に`ToolTipManager#showTipWindow()`メソッド内で毎回`UIManager.getString("ToolTipManager.enableToolTipMode")`が`activeApplication`かを確認しているので、値の変更はすぐに有効になる
+- 文字列が`activeApplication`かを比較しているだけなので、`null`などを設定するとデフォルトの`allWindows`になる
 
 <!-- dummy comment line for breaking list -->
 

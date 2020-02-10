@@ -27,12 +27,15 @@ comments: true
   public AlternateRowColorComboBox() {
     super();
   }
+
   public AlternateRowColorComboBox(ComboBoxModel&lt;E&gt; aModel) {
     super(aModel);
   }
+
   public AlternateRowColorComboBox(E[] items) {
     super(items);
   }
+
   @Override public void setEditable(boolean aFlag) {
     super.setEditable(aFlag);
     if (aFlag) {
@@ -41,6 +44,7 @@ comments: true
       field.setBackground(getAlternateRowColor(getSelectedIndex()));
     }
   }
+
   @Override public void updateUI() {
     removeItemListener(itemColorListener);
     super.updateUI();
@@ -80,6 +84,7 @@ comments: true
       field.setBackground(getAlternateRowColor(getSelectedIndex()));
     }
   }
+
   private static Color getAlternateRowColor(int index) {
     return (index % 2 == 0) ? EVEN_BGCOLOR : ODD_BGCOLOR;
   }

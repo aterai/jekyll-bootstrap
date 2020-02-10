@@ -20,6 +20,7 @@ comments: true
   protected final JTextField field;
   protected JButton button;
   private final JPanel panel = new JPanel(new BorderLayout());
+
   public CustomComponentCellEditor(JTextField field) {
     super(field);
     this.field = field;
@@ -30,9 +31,10 @@ comments: true
     panel.add(button, BorderLayout.EAST);
     panel.setFocusable(false);
   }
+
   @Override public Component getTableCellEditorComponent(JTable table, Object value,
                          boolean isSelected, int row, int column) {
-    //System.out.println("getTableCellEditorComponent");
+    // System.out.println("getTableCellEditorComponent");
     field.setText(Objects.toString(value, ""));
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {
@@ -41,10 +43,11 @@ comments: true
     });
     return panel;
   }
+
   @Override public boolean isCellEditable(final EventObject e) {
     //System.out.println("isCellEditable");
     if (e instanceof KeyEvent) {
-      //System.out.println("KeyEvent");
+      // System.out.println("KeyEvent");
       EventQueue.invokeLater(new Runnable() {
         @Override public void run() {
           char kc = ((KeyEvent) e).getKeyChar();
@@ -52,12 +55,13 @@ comments: true
             field.setText(field.getText() + kc);
           }
           field.setCaretPosition(field.getText().length());
-          //field.requestFocusInWindow();
+          // field.requestFocusInWindow();
         }
       });
     }
     return super.isCellEditable(e);
   }
+
   @Override public Component getComponent() {
     return panel;
   }
@@ -67,9 +71,9 @@ comments: true
 ## 解説
 - `0`列目
     - `DefaultCellEditor`を継承する`CustomComponentCellEditor`を作成
-    - `JTextField`をコンストラクタの引数にしているが、ダミー
+    - `JTextField`をコンストラクタの引数にしているがダミー
     - 実体は`JPanel`で、これをセルエディタとして表示(`TableCellEditor#getTableCellEditorComponent`が`JPanel`を返す)
-    - この`JPanel`のレイアウトを`BorderLayout`にして、`JTextField`と`JButton`を配置
+    - この`JPanel`のレイアウトを`BorderLayout`にして`JTextField`と`JButton`を配置
     - `TableCellEditor#getCellEditorValue`は`JTextField`の値を返し、フォーカス、キー入力時の編集開始なども`JTextField`になるように変更
     - 参考: [Swing - JTable editor issue](https://community.oracle.com/thread/1354286)の、Darryl.Burke さんの投稿(2009/01/27 20:12 (reply 6 of 8))
 
@@ -87,6 +91,7 @@ comments: true
 <pre class="prettyprint"><code>class CustomCellEditor extends DefaultCellEditor {
   private static final int BUTTON_WIDTH = 20;
   protected final JButton button = new JButton();
+
   public CustomCellEditor(final JTextField field) {
     super(field);
     field.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, BUTTON_WIDTH));
@@ -102,8 +107,9 @@ comments: true
       }
     });
   }
+
   @Override public Component getComponent() {
-    //@see JTable#updateUI()
+    // @see JTable#updateUI()
     SwingUtilities.updateComponentTreeUI(button);
     return super.getComponent();
   }
