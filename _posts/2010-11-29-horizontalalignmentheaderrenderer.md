@@ -24,6 +24,7 @@ comments: true
   public HorizontalAlignmentHeaderRenderer(int horizontalAlignment) {
     this.horizontalAlignment = horizontalAlignment;
   }
+
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {
@@ -40,44 +41,38 @@ comments: true
 - `Test1`:
     - `JTableHeader`から、`DefaultRenderer`を取得し、`setHorizontalAlignment`メソッドで字揃えを設定
     - すべての列の字揃えが変更される
+        
+        <pre class="prettyprint"><code>((JLabel) table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>((JLabel) table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 </code></pre>
-
 - `Test2`:
     - `DefaultTableCellRenderer`を継承するレンダラーを設定
     - `LookAndFeel`の色などが表示されない？
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>table.getTableHeader().setDefaultRenderer(new DefaultTableCellRenderer() {
-  @Override public Component getTableCellRendererComponent(
-      JTable table, Object value, boolean isSelected,
-      boolean hasFocus, int row, int column) {
-    super.getTableCellRendererComponent(
-        table, value, isSelected, hasFocus, row, column);
-    setHorizontalAlignment(SwingConstants.CENTER);
-    return this;
-  }
-});
+        
+        <pre class="prettyprint"><code>table.getTableHeader().setDefaultRenderer(new DefaultTableCellRenderer() {
+          @Override public Component getTableCellRendererComponent(
+              JTable table, Object value, boolean isSelected,
+              boolean hasFocus, int row, int column) {
+            super.getTableCellRendererComponent(
+                table, value, isSelected, hasFocus, row, column);
+            setHorizontalAlignment(SwingConstants.CENTER);
+            return this;
+          }
+        });
 </code></pre>
-
 - `Test3`:
     - `TableCellRenderer#getTableCellRendererComponent(...)`メソッド内で、デフォルトのヘッダセルレンダラーを取得し、字揃えを設定
     - 上記の`HorizontalAlignmentHeaderRenderer`を全ての列に設定
-
-<!-- dummy comment line for breaking list -->
-
-<pre class="prettyprint"><code>table.getColumnModel().getColumn(0).setHeaderRenderer(
-    new HorizontalAlignmentHeaderRenderer(SwingConstants.LEFT));
-table.getColumnModel().getColumn(1).setHeaderRenderer(
-    new HorizontalAlignmentHeaderRenderer(SwingConstants.CENTER));
-table.getColumnModel().getColumn(2).setHeaderRenderer(
-    new HorizontalAlignmentHeaderRenderer(SwingConstants.RIGHT));
+        
+        <pre class="prettyprint"><code>table.getColumnModel().getColumn(0).setHeaderRenderer(
+            new HorizontalAlignmentHeaderRenderer(SwingConstants.LEFT));
+        table.getColumnModel().getColumn(1).setHeaderRenderer(
+            new HorizontalAlignmentHeaderRenderer(SwingConstants.CENTER));
+        table.getColumnModel().getColumn(2).setHeaderRenderer(
+            new HorizontalAlignmentHeaderRenderer(SwingConstants.RIGHT));
 </code></pre>
 
+<!-- dummy comment line for breaking list -->
 - - - -
 - 以下の方法でも `0`列目だけ中央揃えになるが、初回が`WindowsLookAndFeel`などの`SystemLookAndFeel`の場合、あとで`LookAndFeel`を変更すると`NullPointerException`が発生する
     - それ以外の場合でもヘッダの`LookAndFeel`が切り替わらない
@@ -90,8 +85,8 @@ table.getColumnModel().getColumn(2).setHeaderRenderer(
   e.printStackTrace();
 }
 // ...
-final TableCellRenderer renderer = table.getTableHeader().getDefaultRenderer();
-//table.getColumnModel().getColumn(0).setHeaderRenderer(new TableCellRenderer() {
+TableCellRenderer renderer = table.getTableHeader().getDefaultRenderer();
+// table.getColumnModel().getColumn(0).setHeaderRenderer(new TableCellRenderer() {
 table.getTableHeader().setDefaultRenderer(new TableCellRenderer() {
   @Override public Component getTableCellRendererComponent(JTable table, Object value,
           boolean isSelected, boolean hasFocus, int row, int column) {

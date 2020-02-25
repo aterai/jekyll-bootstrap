@@ -30,16 +30,16 @@ showMnemonicsCheck.addActionListener(e -&gt; {
 ## 解説
 上記のサンプルでは、`JMenuItem`に設定した`Mnemonic`の下線表示の切り替えをテストしています。
 
-- `UIManager.put("Button.showMnemonics", false);`
+- `UIManager.put("Button.showMnemonics", false)`
     - `WindowsLookAndFeel`の場合、`Mnemonic`の下線が非表示になる
-        - その他の`LookAndFeel`では、この設定は無効
-        - この場合でも、<kbd>Alt</kbd>キーを押すと`WindowsLookAndFeel.setMnemonicHidden(false);`となって、下線は表示される
+        - その他の`LookAndFeel`ではこの設定は無効
+        - この場合でも<kbd>Alt</kbd>キーを押すと`WindowsLookAndFeel.setMnemonicHidden(false)`となって、下線は表示される
     - デフォルト
-        - 例えば`Windows 10`の場合、「コントロール パネル\コンピューターの簡単操作\コンピューターの簡単操作センター\キーボードを使いやすくします」の「ショートカット キーとアクセス キーに下線を表示します」のチェックに対応
-    - `WindowsLookAndFeel`でチェックボックスで切り替えを行う際、`WindowsLookAndFeel.setMnemonicHidden(true);`で一旦下線を非表示にしてから`JFrame`全体を再描画している
+        - 例えば`Windows 10`の場合「コントロール パネル\コンピューターの簡単操作\コンピューターの簡単操作センター\キーボードを使いやすくします」の「ショートカット キーとアクセス キーに下線を表示します」のチェックに対応
+    - `WindowsLookAndFeel`でチェックボックスで切り替えを行う際、`WindowsLookAndFeel.setMnemonicHidden(true)`で一旦下線を非表示にしてから`JFrame`全体を再描画している
         - [JDK-6921687 Mnemonic disappears after repeated attempts to open menu items using mnemonics - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-6921687)
-- `UIManager.put("Button.showMnemonics", true);`
-    - `WindowsLookAndFeel`の場合でも、`Mnemonic`の下線が常に表示状態になる
+- `UIManager.put("Button.showMnemonics", true)`
+    - `WindowsLookAndFeel`の場合でも`Mnemonic`の下線が常に表示状態になる
 
 <!-- dummy comment line for breaking list -->
 

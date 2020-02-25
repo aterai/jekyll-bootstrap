@@ -17,14 +17,14 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private void toggleFullScreenWindow() {
-  GraphicsEnvironment graphicsEnvironment
-    = GraphicsEnvironment.getLocalGraphicsEnvironment();
-  GraphicsDevice graphicsDevice
-    = graphicsEnvironment.getDefaultScreenDevice();
+  GraphicsEnvironment graphicsEnvironment =
+      GraphicsEnvironment.getLocalGraphicsEnvironment();
+  GraphicsDevice graphicsDevice =
+      graphicsEnvironment.getDefaultScreenDevice();
   if (Objects.isNull(graphicsDevice.getFullScreenWindow())) {
-    dialog.dispose(); //destroy the native resources
+    dialog.dispose(); // destroy the native resources
     dialog.setUndecorated(true);
-    dialog.setVisible(true); //rebuilding the native resources
+    dialog.setVisible(true); // rebuilding the native resources
     graphicsDevice.setFullScreenWindow(dialog);
   } else {
     graphicsDevice.setFullScreenWindow(null);
@@ -48,15 +48,14 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-フルスクリーン表示とウィンドウ表示を切り替える前に、タイトルバーの非表示、表示も`setUndecorated(...)`メソッドで切り替えていますが、このメソッドを使用する前に一旦`dispose`してウィンドウのネイティブリソースを開放しておく必要があります。
+フルスクリーン表示とウィンドウ表示を切り替える前にタイトルバーの非表示、表示も`setUndecorated(...)`メソッドで切り替えていますが、このメソッドを使用する前に一旦`dispose`してウィンドウのネイティブリソースを開放しておく必要があります。
 
-- `setUndecorated(boolean undecorated)`は、ウィンドウが表示されていない状態の場合のみ、呼び出し可能だが、この「表示されていない」は `isVisible()`ではなく、`isDisplayable()`が`false`の意味なので、`dialog.setVisible(false);`のみ実行すると、 `Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: The dialog is **displayable**.` が発生する
+- `setUndecorated(boolean undecorated)`はウィンドウが表示されていない状態の場合のみ呼び出し可能だが、この「表示されていない」は `isVisible()`ではなく`isDisplayable()`が`false`の意味なので、`dialog.setVisible(false);`のみ実行すると`Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: The dialog is **displayable**.`が発生する
     - [Window (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Window.html#dispose--)
     - [Dialog#setUndecorated(boolean) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Dialog.html#setUndecorated-boolean-)
     - [Component#isDisplayable() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Component.html#isDisplayable--)
 
 <!-- dummy comment line for breaking list -->
-
 
 ## 参考リンク
 - [Full-Screen Exclusive Mode (The Java™ Tutorials > Bonus > Full-Screen Exclusive Mode API)](https://docs.oracle.com/javase/tutorial/extra/fullscreen/exclusivemode.html)

@@ -41,7 +41,7 @@ comments: true
 <!-- dummy comment line for breaking list -->
 1. `JSlider#setEnabled(false)`
     - `JSlider#setEnabled(false)`で無効化
-    - 表示が変更されて(灰色)、無効状態をユーザーにフィードバック
+    - 表示が灰色に変更されて無効状態が視覚でユーザーにフィードバック可能
 
 <!-- dummy comment line for breaking list -->
 1. `BasicSliderUI#uninstallListeners(...)`

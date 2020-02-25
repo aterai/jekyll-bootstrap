@@ -17,7 +17,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>UIManager.put("ProgressBar.repaintInterval", (Integer) repaintIntervalSpinner.getValue());
-UIManager.put("ProgressBar.cycleTime",       (Integer) cycleTimeSpinner.getValue());
+UIManager.put("ProgressBar.cycleTime", (Integer) cycleTimeSpinner.getValue());
 progressBar.setIndeterminate(true);
 </code></pre>
 
@@ -25,17 +25,18 @@ progressBar.setIndeterminate(true);
 上記のサンプルでは、`UIManager`を使って`JProgressBar`の不確定進捗のアニメーションで使用するサイクル時間と再ペイント間隔をミリ秒で指定しています。
 
 - サイクル時間: `ProgressBar.cycleTime`
-    - `UIManager.put("ProgressBar.cycleTime", 1000);`
+    - `UIManager.put("ProgressBar.cycleTime", 1000)`
 - 再ペイント間隔: `ProgressBar.repaintInterval`
-    - `UIManager.put("ProgressBar.repaintInterval", 10);`
+    - `UIManager.put("ProgressBar.repaintInterval", 10)`
 - 注:
     - サイクル時間が再ペイント間隔の偶数倍でない場合、サイクル時間は自動的にそうなるように増加する
-    - `WindowsLookAndFeel`などの場合、`JProgressBar#setIndeterminate(true);`が実行されるタイミングでこれらの値は更新される
+    - `WindowsLookAndFeel`などの場合、`JProgressBar#setIndeterminate(true)`が実行されるタイミングでこれらの値は更新される
 
 <!-- dummy comment line for breaking list -->
 
 ## 参考リンク
-- [不確定進捗バー - Java™ 2 SDK, Standard Edition, v 1.4 での Swing の変更点および新機能](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/pb.html)
+- [不確定進捗バーのサポート](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/pb.html)
+    - via: [Java™ 2 SDK, Standard Edition, v 1.4 での Swing の変更点および新機能](https://docs.oracle.com/javase/jp/8/docs/technotes/guides/swing/1.4/SwingChanges.html)
 
 <!-- dummy comment line for breaking list -->
 

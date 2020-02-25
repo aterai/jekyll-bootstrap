@@ -21,13 +21,15 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>JFrame.setDefaultLookAndFeelDecorated(true);
 JFrame frame = new JFrame();
-//com.sun.awt.AWTUtilities.setWindowOpacity(frame, .5f);
-//com.sun.awt.AWTUtilities.setWindowOpaque(frame, false); //Java 6
+// com.sun.awt.AWTUtilities.setWindowOpacity(frame, .5f);
+// com.sun.awt.AWTUtilities.setWindowOpaque(frame, false); //Java 6
 frame.setBackground(new Color(0x0, true));
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
 JPanel p = new JPanel();
 p.add(new JButton("JButton"));
 p.setBackground(new Color(.5f, .8f, .5f, .5f));
+
 frame.getContentPane().add(p);
 frame.setSize(320, 240);
 frame.setLocationRelativeTo(null);
@@ -35,11 +37,11 @@ frame.setVisible(true);
 </code></pre>
 
 ## 解説
-`com.sun.awt.AWTUtilities.setWindowOpacity(frame, .5f);`を使って半透明化すると、フレームのタイトルバーや、子コンポーネントまで半透明化されるので、代わりに上記のサンプルでは以下のようにして半透明化を行っています。
+`com.sun.awt.AWTUtilities.setWindowOpacity(frame, .5f);`を使って`Window`を半透明化すると、フレームのタイトルバーや子コンポーネントまで半透明化されるので、代わりに上記のサンプルでは以下のようにして半透明化を行っています。
 
-- `JFrame.setDefaultLookAndFeelDecorated(true);`で、タイトルバーなどを`JRootPane`に描画
+- `JFrame.setDefaultLookAndFeelDecorated(true);`でタイトルバーなどを`JRootPane`に描画
 - `com.sun.awt.AWTUtilities.setWindowOpaque(frame, false);`で`JFrame`を完全に透明化
-    - `JDK 1.7.0`の場合は、代わりに、`frame.setBackground(new Color(0x0, true));`
+    - `JDK 1.7.0`の場合は、代わりに`frame.setBackground(new Color(0x0, true));`
 - `ContentPane`に`setBackground(new Color(.5f, .8f, .5f, .5f));`で半透明の背景色を設定したパネルを追加
 
 <!-- dummy comment line for breaking list -->
