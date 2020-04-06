@@ -35,6 +35,7 @@ comments: true
     System.out.println("windowClosing");
     maybeExit();
   }
+
   @Override public void windowClosed(WindowEvent e) {
     System.out.println("windowClosed");
     System.exit(0); //webstart
@@ -54,9 +55,11 @@ comments: true
   @Override public void insertUpdate(DocumentEvent e) {
     fireUnsavedFlagChangeEvent(true);
   }
+
   @Override public void removeUpdate(DocumentEvent e) {
     fireUnsavedFlagChangeEvent(true);
   }
+
   @Override public void changedUpdate(DocumentEvent e) {
     /* not needed */
   }
@@ -78,11 +81,11 @@ comments: true
     if (retValue == JOptionPane.YES_OPTION) {
       System.out.println("exit");
       //boolean ret = dummyDocumentSaveMethod();
-      //if (ret) { //saved and exit
-      //    frame.dispose();
-      //} else { //error and cancel exit
-      //    return;
-      //}
+      // if (ret) { // saved and exit
+      //   frame.dispose();
+      // } else { // error and cancel exit
+      //   return;
+      // }
       frame.dispose();
     } else if (retValue == JOptionPane.NO_OPTION) {
       System.out.println("Exit without save");
@@ -122,7 +125,7 @@ comments: true
 - `WindowListener#windowClosed(WindowEvent e)`
     - `frame.dispose()`で、ウィンドウがクローズされたときに呼び出されるリスナーのメソッド
     - `windowClosing`の後、自動的に`windowClosed`が呼び出されるのは、`WindowConstants.DISPOSE_ON_CLOSE`の場合のみ
-    - このサンプルでは、`Web Start`から起動しても終了できるように、`frame.dispose()`すれば必ず呼び出されるこのメソッド中で`System.exit(0);`を使い、`JVM`ごとシャットダウンしている
+    - このサンプルでは`Web Start`から起動しても終了できるように、`frame.dispose()`すれば必ず呼び出されるこのメソッド中で`System.exit(0);`を使い、`JVM`ごとシャットダウンしている
         - 参考: [When DISPOSE_ON_CLOSE met WebStart · Pushing Pixels](https://www.pushing-pixels.org/2008/01/14/when-dispose_on_close-met-webstart.html)
 
 <!-- dummy comment line for breaking list -->

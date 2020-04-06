@@ -41,6 +41,7 @@ comments: true
         }
       }
     }
+
     @Override public void componentResized(ComponentEvent e) {
       JFrame frame = (JFrame) e.getComponent();
       if (frame.getExtendedState() == Frame.NORMAL) {
@@ -67,6 +68,7 @@ comments: true
   pos.setLocation(xpos, ypos);
   frame.setLocation(pos.x, pos.y);
 }
+
 private void saveLocation() {
   prefs.putInt(PREFIX + "locx", pos.x);
   prefs.putInt(PREFIX + "locy", pos.y);

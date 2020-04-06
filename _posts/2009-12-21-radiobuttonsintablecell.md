@@ -21,11 +21,13 @@ comments: true
       Answer.A.toString(), Answer.B.toString(), Answer.C.toString()};
   public JRadioButton[] buttons;
   public ButtonGroup bg = new ButtonGroup();
+
   public RadioButtonsPanel() {
     super();
     setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
     initButtons();
   }
+
   protected void initButtons() {
     bg = new ButtonGroup();
     buttons = new JRadioButton[answer.length];
@@ -38,12 +40,13 @@ comments: true
       bg.add(buttons[i]);
     }
   }
+
   protected void updateSelectedButton(Object v) {
     if (v instanceof Answer) {
-      //if ("Windows 7".equals(OSNAME)) { //Windows aero?
+      // if ("Windows 7".equals(OSNAME)) { //Windows aero?
       removeAll();
       initButtons();
-      //}
+      // }
       switch ((Answer) v) {
         case A:
           buttons[0].setSelected(true);
@@ -61,11 +64,13 @@ comments: true
   }
 }
 </code></pre>
+
 <pre class="prettyprint"><code>class RadioButtonsRenderer extends RadioButtonsPanel implements TableCellRenderer {
   public RadioButtonsRenderer() {
     super();
     setName("Table.cellRenderer");
   }
+
   @Override public Component getTableCellRendererComponent(JTable table,
         Object value, boolean isSelected, boolean hasFocus, int row, int column) {
     updateSelectedButton(value);
@@ -73,6 +78,7 @@ comments: true
   }
 }
 </code></pre>
+
 <pre class="prettyprint"><code>class RadioButtonsEditor extends RadioButtonsPanel implements TableCellEditor {
   public RadioButtonsEditor() {
     super();
@@ -90,19 +96,20 @@ comments: true
     updateSelectedButton(value);
     return this;
   }
+
   @Override public Object getCellEditorValue() {
-    //bug: return bg.getSelection().getActionCommand();
+    // bug: return bg.getSelection().getActionCommand();
     return Answer.valueOf(bg.getSelection().getActionCommand());
   }
 
-  //Copied from AbstractCellEditor
-  //protected EventListenerList listenerList = new EventListenerList();
+  // Copied from AbstractCellEditor
+  // protected EventListenerList listenerList = new EventListenerList();
   transient protected ChangeEvent changeEvent = null;
 // ...
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JRadioButton`を`3`つ配置した`JPanel`を、`CellRenderer`、`CellEditor`用に`2`つ用意しています。`CellEditor`内の各`JRadioButton`には、クリックされたら編集を終了して更新を`TableModel`にコミットするための`ActionListener`を追加しています。
+上記のサンプルでは、`JRadioButton`を`3`つ配置した`JPanel`を`CellRenderer`と`CellEditor`用に`2`つ用意しています。`CellEditor`内の各`JRadioButton`にはクリックされたら編集を終了して更新を`TableModel`にコミットするための`ActionListener`を追加しています。
 
 ## 参考リンク
 - [Table Button Column ≪ Java Tips Weblog](https://tips4java.wordpress.com/2009/07/12/table-button-column/)

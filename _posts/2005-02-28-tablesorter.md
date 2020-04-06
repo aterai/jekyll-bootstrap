@@ -16,7 +16,7 @@ comments: true
 {% download https://lh3.googleusercontent.com/_9Z4BYR88imo/TQTUp0MLx6I/AAAAAAAAAmY/omjw4LoJbbc/s800/TableSorter.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//DefaultTableModel model = new DefaultTableModel();
+<pre class="prettyprint"><code>// DefaultTableModel model = new DefaultTableModel();
 TestModel model = new TestModel();
 TableSorter sorter = new TableSorter(model);
 JTable table = new JTable(sorter);
@@ -31,7 +31,9 @@ sorter.setTableHeader(table.getTableHeader());
 `JDK 1.4.x`と`Windows XP`の環境で、ヘッダにカーソルを置いてもロールオーバーしない場合があるようです。上記のスクリーンショットは`JDK 1.5.0_01`で撮っています。
 
 - - - -
-`JDK 1.5.0`で`Generics`の警告を出さないようにするには、`TableSorter.java`に、以下のような修正を加えれば良いようです。
+- `JDK 1.5.0`で`Generics`の警告を出さないようにするには、`TableSorter.java`に以下のような修正が必要
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>private static class ComparableComparator implements Comparator {
   @SuppressWarnings("unchecked")
@@ -39,6 +41,7 @@ sorter.setTableHeader(table.getTableHeader());
     return ((Comparable) o1).compareTo(o2);
   }
 }
+
 public static final ComparableComparator COMPARABLE_COMAPRATOR
     = new ComparableComparator();
 public static final ComparableComparator LEXICAL_COMPARATOR
@@ -56,10 +59,11 @@ protected ComparableComparator getComparator(int column) {
   Class columnType = tableModel.getColumnClass(column);
   ComparableComparator comparator
       = (ComparableComparator) columnComparators.get(columnType);
-    if (comparator != null) {
-      return comparator;
-    }
- private class Row implements Comparable&lt;Row&gt; {
+  if (comparator != null) {
+    return comparator;
+  }
+// ...
+private class Row implements Comparable&lt;Row&gt; {
   private int modelIndex;
   public Row(int index) {
     this.modelIndex = index;
@@ -109,7 +113,7 @@ private final JTable table = new JTable(sorter) {
 
 <!-- dummy comment line for breaking list -->
 
-<pre class="prettyprint"><code>//DefaultTableModel model = new DefaultTableModel();
+<pre class="prettyprint"><code>// DefaultTableModel model = new DefaultTableModel();
 TestModel model = new TestModel();
 TableSorter sorter = new TableSorter(model);
 JTable table = new JTable(sorter);
@@ -133,13 +137,13 @@ public class SorterModelIndex {
       {"aaa", 12, true}, {"bbb", 5, false},
       {"CCC", 92, true}, {"DDD", 0, false}
     };
-    final DefaultTableModel model = new DefaultTableModel(data, columnNames) {
+    DefaultTableModel model = new DefaultTableModel(data, columnNames) {
       @Override public Class&lt;?&gt; getColumnClass(int column) {
         return getValueAt(0, column).getClass();
       }
     };
-    final TableSorter sorter = new TableSorter(model);
-    final JTable table = new JTable(sorter);
+    TableSorter sorter = new TableSorter(model);
+    JTable table = new JTable(sorter);
     sorter.setTableHeader(table.getTableHeader());
     table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
       public void valueChanged(ListSelectionEvent e) {

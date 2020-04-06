@@ -44,6 +44,7 @@ comments: true
     this.add(leftLabel);
     this.add(rightLabel, BorderLayout.EAST);
   }
+
   @Override public Component getListCellRendererComponent(
       JList list, Object value, int index,
       boolean isSelected, boolean cellHasFocus) {
@@ -66,10 +67,12 @@ comments: true
     }
     return this;
   }
+
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
     return new Dimension(0, d.height);
   }
+
   @Override public void updateUI() {
     super.updateUI();
     this.setName("List.cellRenderer");
@@ -78,7 +81,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JLabel`を二つ並べた`JPanel`をレンダラーにすることで、`Item`に設定した文字列を左右に表示しています。このため文字列が`JLabel`の推奨サイズより長い場合、自動的にクリップされます。
+上記のサンプルでは、`JLabel`を二つ並べた`JPanel`をレンダラーにすることで`Item`に設定した文字列を左右に表示しています。このため文字列が`JLabel`の推奨サイズより長い場合、自動的にクリップされます。
 
 ## 参考リンク
 - [JComboBoxのItemを左右に配置](https://ateraimemo.com/Swing/LRComboBox.html)

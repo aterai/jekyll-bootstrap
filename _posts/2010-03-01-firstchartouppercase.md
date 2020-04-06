@@ -22,6 +22,7 @@ comments: true
     super();
     this.textField = textField;
   }
+
   @Override public void remove(
       DocumentFilter.FilterBypass fb, int offset, int length)
       throws BadLocationException {
@@ -32,6 +33,7 @@ comments: true
     }
     fb.remove(offset, length);
   }
+
   @Override public void replace(
       DocumentFilter.FilterBypass fb, int offset, int length, String text, AttributeSet attrs)
       throws BadLocationException {

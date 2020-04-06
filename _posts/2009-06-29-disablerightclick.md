@@ -107,6 +107,8 @@ comments: true
 ## 参考リンク
 - [JDK-4249731 JComboBox (Windows L&F), right mouse click selects in menu - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-4249731)
     - 要望が矛盾しているとして却下されているが、もしかしたら「`Windows`環境の標準動作に合わせて、`WindowsLookAndFeel`の`JComboBox`では右クリックしてもドロップダウンリストを閉じないようにして欲しい」との意味だったのかもしれない
+- [JMenuとJMenuItemで右クリックによる選択を無効にする](https://ateraimemo.com/Swing/DisableRightClickOnMenu.html)
+    - `JMenu`と`JMenuItem`も同様にマウス右クリックの無効化が可能
 
 <!-- dummy comment line for breaking list -->
 

@@ -49,9 +49,11 @@ class CalendarViewListModel extends AbstractListModel&lt;LocalDate&gt; {
     int dowv = firstDayOfMonth.get(weekFields.dayOfWeek()) - 1;
     startDate = firstDayOfMonth.minusDays(dowv);
   }
+
   @Override public int getSize() {
     return DayOfWeek.values().length * ROW_COUNT;
   }
+
   @Override public LocalDate getElementAt(int index) {
     return startDate.plusDays(index);
   }

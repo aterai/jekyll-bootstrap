@@ -32,6 +32,8 @@ comments: true
 </code></pre>
 
 ## 解説
+以下のメソッドを使用してデフォルトアイコンと空アイコン(もしくは`null`)を設定し、表示非表示を切り替えています。
+
 - [DefaultTreeCellRenderer#setOpenIcon(Icon)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setOpenIcon-javax.swing.Icon-)
 - [DefaultTreeCellRenderer#getDefaultOpenIcon()](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultOpenIcon--)
 - [DefaultTreeCellRenderer#setClosedIcon(Icon)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#setClosedIcon-javax.swing.Icon-)
@@ -41,22 +43,19 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 
-上記のメソッドを使用して、デフォルトアイコンと空アイコン(もしくは`null`)を設定し、表示非表示を切り替えています。
-
 - - - -
-各アイコンの幅が変化するため、表示を切り替えた後で以下のようにすべてのノードを再評価しています。
-
-<pre class="prettyprint"><code>private static void allNodesChanged(JTree tree) {
-  DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
-  DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
-  Enumeration depth = root.depthFirstEnumeration();
-  while (depth.hasMoreElements()) {
-    model.nodeChanged((TreeNode) depth.nextElement());
-  }
-}
+- 各アイコンの幅が変化するため、表示を切り替えた後ですべてのノードを再評価する必要がある
+    
+    <pre class="prettyprint"><code>private static void allNodesChanged(JTree tree) {
+      DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+      DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+      Enumeration depth = root.depthFirstEnumeration();
+      while (depth.hasMoreElements()) {
+        model.nodeChanged((TreeNode) depth.nextElement());
+      }
+    }
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [JTreeの展開、折畳みアイコンを非表示にする](https://ateraimemo.com/Swing/TreeExpandedIcon.html)
 
 <!-- dummy comment line for breaking list -->

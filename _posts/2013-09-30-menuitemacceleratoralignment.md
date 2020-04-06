@@ -56,10 +56,10 @@ comments: true
       }
       SwingUtilities2.drawString(
         lh.getMenuItem(), g, lh.getAccText(),
-        //lr.getAccRect().x, &gt;&gt;&gt;
+        // lr.getAccRect().x, &gt;&gt;&gt;
         lh.getViewRect().x + lh.getViewRect().width
         - lh.getMenuItem().getIconTextGap() - lr.getAccRect().width,
-        //&lt;&lt;&lt;
+        // &lt;&lt;&lt;
         lr.getAccRect().y + lh.getAccFontMetrics().getAscent());
     }
   }
@@ -68,9 +68,9 @@ comments: true
 
 ## 解説
 - `Default`
-    - デフォルトでは、`WindowsLookAndFeel`の場合でも、`Accelerator`は左寄せで表示される
+    - デフォルトでは、`WindowsLookAndFeel`の場合でも`Accelerator`は左寄せで表示される
 - `RightAcc`
-    - `BasicMenuItemUI#paintMenuItem(...)`メソッドをオーバーライドして、`JMenuItem`の`Accelerator`を左寄せではなく、右寄せで表示
+    - `BasicMenuItemUI#paintMenuItem(...)`メソッドをオーバーライドして、`JMenuItem`の`Accelerator`を左寄せではなく右寄せで表示
     - `Web Start`で実行すると`java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.swing")`と例外が発生してメニューが表示されない
     - `sun.swing.MenuItemLayoutHelper`や、`sun.swing.MenuItemLayoutHelper.LayoutResult`などの内部所有の`API`を使用しているので、今後も使用できるか不明
     - `paintText(...)`、`paintCheckIcon(...)`、`paintIcon(...)`、`paintArrowIcon(...)`などの`BasicMenuItemUI`のプライベートなメソッドをほぼそのままコピーして使用している
@@ -128,7 +128,7 @@ comments: true
 
 <!-- dummy comment line for breaking list -->
 - - - -
-- `JMenuItem`の`Accelerator`が、`JMenuItem#setLocale(Locale.ENGLISH)`としても変化しない
+- `JMenuItem`の`Accelerator`が`JMenuItem#setLocale(Locale.ENGLISH)`としても変化しない
     - [Bug ID: JDK-6292739 Locale change at runtime doesn't affect text displayed for accelerator keys](https://bugs.openjdk.java.net/browse/JDK-6292739)
 - `JDK 1.7.0`から`Locale.getLocale()`が`Locale.JAPAN`などの場合、`KeyEvent#getKeyText(...)`で取得できる文字列が翻訳されている
     - 例: `Space`が「スペース」

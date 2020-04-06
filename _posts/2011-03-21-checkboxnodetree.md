@@ -23,12 +23,13 @@ comments: true
     this.text = text;
     this.selected = selected;
   }
+
   @Override public String toString() {
     return text;
   }
 }
-</code></pre>
-<pre class="prettyprint"><code>JTree tree = new JTree() {
+
+JTree tree = new JTree() {
   @Override public void updateUI() {
     setCellRenderer(null);
     setCellEditor(null);
@@ -38,8 +39,8 @@ comments: true
     setCellEditor(new CheckBoxNodeEditor());
   }
 };
-</code></pre>
-<pre class="prettyprint"><code>class CheckBoxNodeRenderer extends JCheckBox implements TreeCellRenderer {
+
+class CheckBoxNodeRenderer extends JCheckBox implements TreeCellRenderer {
   @Override public Component getTreeCellRendererComponent(JTree tree,
       Object value, boolean selected, boolean expanded,
       boolean leaf, int row, boolean hasFocus) {
@@ -66,8 +67,8 @@ comments: true
     setName("Tree.cellRenderer");
   }
 }
-</code></pre>
-<pre class="prettyprint"><code>class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
+
+class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
   private final JTree tree;
   public CheckBoxNodeEditor(JTree tree) {
     super();
@@ -81,6 +82,7 @@ comments: true
       }
     });
   }
+
   @Override public Component getTreeCellEditorComponent(JTree tree,
       Object value, boolean isSelected, boolean expanded, boolean leaf, int row) {
     if (leaf &amp;&amp; value instanceof DefaultMutableTreeNode) {
@@ -94,9 +96,11 @@ comments: true
     }
     return this;
   }
+
   @Override public Object getCellEditorValue() {
     return new CheckBoxNode(getText(), isSelected());
   }
+
   @Override public boolean isCellEditable(EventObject e) {
     if (e instanceof MouseEvent) {
       TreePath path = tree.getPathForLocation(
@@ -112,11 +116,11 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JCheckBox`を継承する`TreeCellRenderer`と`TreeCellEditor`を作成して、編集可`setEditable(true)`とした`JTree`に設定し、葉ノードをチェックできるように設定しています。ノードがチェックされているかどうかといった状態の保存は、ノードのタイトル文字列と選択状態を保持する不変オブジェクトを`DefaultMutableTreeNode#setUserObject(Object)`メソッドで設定することで実行しています。
+上記のサンプルでは、`JCheckBox`を継承する`TreeCellRenderer`と`TreeCellEditor`を作成して編集可`setEditable(true)`とした`JTree`に設定し、葉ノードをチェックできるように設定しています。ノードがチェックされているかどうかといった状態の保存は、ノードのタイトル文字列と選択状態を保持する不変オブジェクトを`DefaultMutableTreeNode#setUserObject(Object)`メソッドで設定することで実行しています。
 
 - 葉ノードだけ編集可能に制限するため、`TreeCellEditor#isCellEditable(EventObject)`でクリックしたノードが`TreeNode#isLeaf()`かどうかを判断
     - [JTreeの葉ノードだけ編集可能にする](https://ateraimemo.com/Swing/LeafTreeCellEditor.html)
-- 葉以外のノードの描画には、`DefaultTreeCellRenderer`を使用
+- 葉以外のノードの描画には`DefaultTreeCellRenderer`を使用
     - `DefaultTreeCellRenderer`を継承する`TreeCellRenderer`で、葉ノードの表示を`JCheckBox`に委譲する方法でも同様
         - `JDK 1.6.0`では`Look And Feel`を変更してもアイコンや選択色が更新されない
         - `JDK 1.7.0`で修正済み

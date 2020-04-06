@@ -34,7 +34,7 @@ model.addTableModelListener(new TableModelListener() {
 </code></pre>
 
 ## 解説
-- `JTable#setFillsViewportHeight(true)`として、`JTable`の高さが`JViewport`の高さより小さい場合、両者が同じ高さになるように設定
+- `JTable#setFillsViewportHeight(true)`として`JTable`の高さが`JViewport`の高さより小さい場合、両者が同じ高さになるように設定
 - `JTable`のレイアウトを`null`から`GridBagLayout`に変更し、追加した編集不可の`JEditorPane`が中央に配置されるよう設定
 - `TableModelListener#tableChanged(...)`イベントが発生したとき、モデルに行が存在するかどうかで`JEditorPane`の表示・非表示を切り替え
 

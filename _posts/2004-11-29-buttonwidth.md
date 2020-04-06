@@ -20,7 +20,7 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>private static JComponent createRightAlignButtonBox2(
-  final List&lt;JButton&gt; list, final int buttonWidth, int gap) {
+  List&lt;JButton&gt; list, final int buttonWidth, int gap) {
   JComponent box = new JPanel() {
     @Override public void updateUI() {
       for (JButton b : list) {

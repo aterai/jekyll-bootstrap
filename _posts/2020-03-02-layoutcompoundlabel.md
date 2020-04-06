@@ -1,0 +1,72 @@
+---
+layout: post
+category: swing
+folder: LayoutCompoundLabel
+title: JLabelのアイコンとテキストのどちらにマウスカーソルがあるかを調査する
+tags: [JLabel, JToolTip, Icon, JMenuItem]
+author: aterai
+pubdate: 2020-03-02T18:44:05+09:00
+description: JLabelのアイコンとテキストのどちらの上にマウスカーソルが存在するかでツールチップの表示内容を変更します。
+image: https://drive.google.com/uc?id=1abUKg4L5olw6cF_cly2Pbg9-tXkkWuth
+comments: true
+---
+## 概要
+`JLabel`のアイコンとテキストのどちらの上にマウスカーソルが存在するかでツールチップの表示内容を変更します。
+
+{% download https://drive.google.com/uc?id=1abUKg4L5olw6cF_cly2Pbg9-tXkkWuth %}
+
+## サンプルコード
+<pre class="prettyprint"><code>Icon icon = UIManager.getIcon("OptionPane.informationIcon");
+JLabel label = new JLabel("OptionPane.informationIcon", icon, SwingConstants.LEADING) {
+  private final Rectangle viewRect = new Rectangle();
+  private final Rectangle iconRect = new Rectangle();
+  private final Rectangle textRect = new Rectangle();
+
+  @Override public String getToolTipText(MouseEvent e) {
+    SwingUtilities.calculateInnerArea(this, viewRect);
+    SwingUtilities.layoutCompoundLabel(
+        this,
+        this.getFontMetrics(this.getFont()),
+        this.getText(),
+        this.getIcon(),
+        this.getVerticalAlignment(),
+        this.getHorizontalAlignment(),
+        this.getVerticalTextPosition(),
+        this.getHorizontalTextPosition(),
+        viewRect,
+        iconRect,
+        textRect,
+        this.getIconTextGap());
+    String tip = super.getToolTipText(e);
+    if (tip == null) {
+      return null;
+    } else if (iconRect.contains(e.getPoint())) {
+      return "Icon: " + tip;
+    } else if (textRect.contains(e.getPoint())) {
+      return "Text: " + tip;
+    } else {
+      return "Border: " + tip;
+    }
+  }
+};
+label.setOpaque(true);
+label.setBackground(Color.GREEN);
+label.setBorder(BorderFactory.createMatteBorder(20, 10, 50, 30, Color.RED));
+label.setToolTipText("ToolTipText ToolTipText");
+</code></pre>
+
+## 解説
+- `SwingUtilities.calculateInnerArea(...)`メソッドでコンポーネントから`Border`の余白を除去した矩形領域を取得
+- `SwingUtilities.layoutCompoundLabel(...)`メソッドで上記の矩形領域を基準にアイコン領域、テキスト領域を計算し、引数で取得
+    - 戻り値はクリップされた文字列になるが、上記のサンプルでは未使用
+- `JLabel`だけではなく`JMenuItem`などでも`SwingUtilities.layoutCompoundLabel(...)`メソッドでアイコン領域、テキスト領域を取得可能
+
+<!-- dummy comment line for breaking list -->
+
+## 参考リンク
+- [SwingUtilities#layoutCompoundLabel(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/SwingUtilities.html#layoutCompoundLabel-javax.swing.JComponent-java.awt.FontMetrics-java.lang.String-javax.swing.Icon-int-int-int-int-java.awt.Rectangle-java.awt.Rectangle-java.awt.Rectangle-int-)
+- [java - How to set a tooltip for a JMenuItem? - Stack Overflow](https://stackoverflow.com/questions/60144453/how-to-set-a-tooltip-for-a-jmenuitem)
+
+<!-- dummy comment line for breaking list -->
+
+## コメント

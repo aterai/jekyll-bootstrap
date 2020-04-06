@@ -54,7 +54,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
 
 - `BorderLayout`を設定した`JPanel#add(menubar, BorderLayout.NORTH)`として`JMenuBar`を追加して`JFrame#setJMenuBar(...)`メソッドを使用した場合、以下のような不具合が存在する？
     - `JFrame`の最大化、最小化で折り返しが更新されない
-    - 以下のような、`WindowStateListener`を`JFrame`に追加し、`ContentPane`を`revalidate()`して回避
+    - 以下のような`WindowStateListener`を`JFrame`に追加し、`ContentPane`を`revalidate()`して回避
         
         <pre class="prettyprint"><code>frame.addWindowStateListener(new WindowStateListener() {
           @Override public void windowStateChanged(final WindowEvent e) {
@@ -67,17 +67,17 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
             });
           }
         });
-        //frame.getContentPane().addComponentListener(new ComponentAdapter() {
-        //  @Override public void componentResized(ComponentEvent e) {
-        //    ((JComponent) e.getSource()).revalidate();
-        //  }
-        //});
+        // frame.getContentPane().addComponentListener(new ComponentAdapter() {
+        //   @Override public void componentResized(ComponentEvent e) {
+        //     ((JComponent) e.getSource()).revalidate();
+        //   }
+        // });
 </code></pre>
-    - または、以下のように、`FlowLayout#layoutContainer`をオーバーライドすることで回避
+    - または、以下のように`FlowLayout#layoutContainer`をオーバーライドすることで回避
         
-        <pre class="prettyprint"><code>//https://tips4java.wordpress.com/2008/11/06/wrap-layout/
-        //WrapLayout.java
-        //Rob Camick on November 6, 2008
+        <pre class="prettyprint"><code>// https://tips4java.wordpress.com/2008/11/06/wrap-layout/
+        // WrapLayout.java
+        // Rob Camick on November 6, 2008
         private Dimension preferredLayoutSize;
         @Override public void layoutContainer(Container target) {
           Dimension size = preferredLayoutSize(target);
@@ -93,7 +93,7 @@ menuBar.setLayout(new FlowLayout(FlowLayout.LEFT, 2, 2) {
           }
         }
 </code></pre>
-    - `JFrame#pack()`しても、`JFrame`のサイズが変更されない
+    - `JFrame#pack()`しても`JFrame`のサイズが変更されない
     - `JFrame#setSize(...)`に変更することで回避
 
 <!-- dummy comment line for breaking list -->

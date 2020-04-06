@@ -31,7 +31,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用して、指定した`URL`をブラウザで開いています。`Mac OS X`, `GNU/Linux`, `Unix`, `Windows XP`に対応しているようです。
+上記のサンプルでは、[Bare Bones Browser Launch](http://www.centerkey.com/java/browser/)を使用して指定した`URL`をブラウザで開いています。`Mac OS X`、`GNU/Linux`、`Unix`、`Windows XP`などに対応しているようです。
 
 ## 参考リンク
 - [Bare Bones Browser Launch for Java • • • Use Default Browser to Open a Web Page from a Swing Application](http://www.centerkey.com/)

@@ -42,12 +42,12 @@ while (e.hasMoreElements()) {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- `DefaultMutableTreeNode#children()`や`DefaultMutableTreeNode#xxxxxEnumeration()`などの戻り値
+- `DefaultMutableTreeNode#children()`や`DefaultMutableTreeNode#xxxxxEnumeration()`などの戻り値は`Java 8 ～ 9`で以下のように変更される
     - `Java 8`: `Enumeration`
     - `Java 9`: `Enumeration<TreeNode>`
         - [JDK-8043550 Fix raw and unchecked lint warnings in javax.swing.* - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8043550)
-    - `Java 11`: `Enumeration<? extends TreeNode>`になる予定
-        - [JDK-8058831 Consider changing return type of DefaultMutableTreeNode.children - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8058831)
+    - ~~`Java 11`: `Enumeration<? extends TreeNode>`~~
+        - ~~[JDK-8058831 Consider changing return type of DefaultMutableTreeNode.children - Java Bug System](https://bugs.openjdk.java.net/browse/JDK-8058831)~~
 
 <!-- dummy comment line for breaking list -->
 

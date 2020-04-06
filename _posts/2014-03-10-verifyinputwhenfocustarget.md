@@ -20,17 +20,17 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、フォーカスが別のコンポーネントに移動する時に、現在フォーカスを持つコンポーネントの`InputVerifier`で値を検証するかを設定をかえてテストしています。
+上記のサンプルでは、フォーカスが別のコンポーネントに移動する時に現在フォーカスを持つコンポーネントの`InputVerifier`で値を検証するかをテストしています。
 
 - `Default`:
-    - `JButton`のデフォルトで、`getVerifyInputWhenFocusTarget()`が`true`、`isFocusable()`も`true`
-    - すべての`JTextField`の値をクリアし、自身にフォーカスが移動するが、フォーカスの存在した`JTextField`に入力されている値が`Integer`でない場合、警告音が鳴る
+    - `JButton`のデフォルトで`getVerifyInputWhenFocusTarget()`が`true`、`isFocusable()`も`true`
+    - すべての`JTextField`の値をクリアして自身にフォーカスが移動するが、フォーカスの存在した`JTextField`に入力されている値が`Integer`でない場合警告音が鳴る
 - `setFocusable(false)`:
     - `setFocusable(false)`を設定
-    - すべての`JTextField`の値をクリアするが、フォーカスは移動しないため、フォーカスの存在した`JTextField`に入力されている値が`Integer`でない場合でも、警告音は鳴らない(設定されている`InputVerifier#verify(...)`は呼ばれない)
+    - すべての`JTextField`の値をクリアするが、フォーカスは移動しないためフォーカスの存在した`JTextField`に入力されている値が`Integer`でない場合でも警告音は鳴らない(設定されている`InputVerifier#verify(...)`は呼ばれない)
 - `setVerifyInputWhenFocusTarget(false)`:
     - `setVerifyInputWhenFocusTarget(false)`を設定
-    - すべての`JTextField`の値をクリアし、自身にフォーカスが移動するが、フォーカスの存在した`JTextField`に入力されている値が`Integer`でない場合でも、警告音は鳴らない(設定されている`InputVerifier#verify(...)`は呼ばれない)
+    - すべての`JTextField`の値をクリアして自身にフォーカスが移動するが、フォーカスの存在した`JTextField`に入力されている値が`Integer`でない場合でも警告音は鳴らない(設定されている`InputVerifier#verify(...)`は呼ばれない)
 
 <!-- dummy comment line for breaking list -->
 

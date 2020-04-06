@@ -27,10 +27,12 @@ comments: true
     this.dir = dir;
     this.slope = slope;
   }
+
   @Override protected int getBoxLength(
         int availableLength, int otherDimension) {
-    return availableLength; //(int) Math.round(availableLength / 6d);
+    return availableLength; // (int) Math.round(availableLength / 6d);
   }
+
   @Override public void paintIndeterminate(Graphics g, JComponent c) {
     if (!(g instanceof Graphics2D)) {
       return;
@@ -86,13 +88,13 @@ comments: true
 ## 解説
 上記のサンプルでは、`BasicProgressBarUI#paintIndeterminate(...)`メソッドをオーバーライドした`ProgressBarUI`を設定して、不確定状態で描画されるアニメーションのパターンをストライプ模様に変更しています。
 
-- デフォルトの不確定状態アニメーションは、`JProgressBar`の内部をボックスが左右(縦の場合は上下)に移動するパターン
-- `JProgressBar`全体をストライプで描画するため、`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライド
+- デフォルトの不確定状態アニメーションは`JProgressBar`の内部をボックスが左右(縦の場合は上下)に移動するパターン
+- `JProgressBar`全体をストライプで描画するため`BasicProgressBarUI#getBoxLength()`も`JProgressBar`自体の長さを返すようにオーバーライド
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-アニメーションのスピードなどは、[JProgressBarの不確定進捗サイクル時間を設定](https://ateraimemo.com/Swing/IndeterminateCycleTime.html)と同様に、`UIManager.put(...)`を使って調整しています。
+アニメーションのスピードなどは[JProgressBarの不確定進捗サイクル時間を設定](https://ateraimemo.com/Swing/IndeterminateCycleTime.html)と同様に`UIManager.put(...)`を使って調整しています。
 
 <pre class="prettyprint"><code>UIManager.put("ProgressBar.cycleTime", 1000);
 UIManager.put("ProgressBar.repaintInterval", 10);

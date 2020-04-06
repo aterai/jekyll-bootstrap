@@ -55,6 +55,7 @@ comments: true
     add(label, BorderLayout.NORTH);
     add(scroll);
   }
+
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected,
       boolean hasFocus, int row, int column) {
@@ -106,17 +107,16 @@ class OptionPaneDescription {
 </code></pre>
 
 ## 解説
-文字列を配置した`JTextArea`を各カラムごとに`JViewport`で表示する領域を切り取ってセルに貼り付けています。さらに、`JTable`のセルの縦罫線自体は、`table.setShowVerticalLines(false);`などで非表示にすることでレンダラー内の`JTextArea`は、連続しているように見せかけ、上部の`JLabel`は`Border`を設定することで区切りを表示しています。
+文字列を配置した`JTextArea`を各カラムごとに`JViewport`で表示する領域を切り取ってセルに貼り付けています。さらに`JTable`のセルの縦罫線自体を`table.setShowVerticalLines(false)`などで非表示にしてレンダラー内の`JTextArea`は連続しているように見せかけ、代わりに上部の`JLabel`は`Border`を設定することで区切りを表示しています。
 
-- メモ
-    - 列の入れ替えには対応していない
-    - `0`行目だけカラムヘッダのサイズを変更すると、描画がおかしくなる？
-        - `0`行目ではなく、一番上に表示されている行の表示が乱れている
-        - `JTextArea#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると正常にリサイズできる
-        - ~~`0`行目だけ高さ`1`のダミー行を追加して回避(ソートなどで問題が残る)~~
-    - ~~`JTable`のクリック(セル選択？)などで表示が乱れる場合がある~~
-        - ~~`JTable#repaint(Rectangle)`をオーバーライドして常に全体を描画することで回避~~
-    - `JScrollPane`内に`JTextArea`を配置せずに、直接`JTextArea`から表示領域を切り取っても良さそう？
+- 列の入れ替えには対応していない
+- `0`行目だけカラムヘッダのサイズを変更すると描画がおかしくなる？
+    - `0`行目ではなく、一番上に表示されている行の表示が乱れている
+    - `JTextArea#scrollRectToVisible(...)`ではなく、`JViewport#setViewPosition(Point)`を使用すると正常にリサイズ可能
+    - ~~`0`行目だけ高さ`1`のダミー行を追加して回避(ソートなどで問題が残る)~~
+- ~~`JTable`のクリック(セル選択？)などで表示が乱れる場合がある~~
+    - ~~`JTable#repaint(Rectangle)`をオーバーライドして常に全体を描画することで回避~~
+- `JScrollPane`内に`JTextArea`を配置せずに直接`JTextArea`から表示領域を切り取っても良さそう？
 
 <!-- dummy comment line for breaking list -->
 

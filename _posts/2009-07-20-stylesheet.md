@@ -27,14 +27,14 @@ editor.setText(makeTestHtml());
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JEditorPane`に`HTMLEditorKit`を適用して`HTML`を表示するよう設定し、クラス名が`.highlight`になっている要素の文字色と背景色を`CSS`で変更しています。
+上記のサンプルでは、`JEditorPane`に`HTMLEditorKit`を適用して`HTML`を表示するよう設定しクラス名が`.highlight`になっている要素の文字色と背景色を`CSS`で変更しています。
 
 ## 参考リンク
 - [Java Swing「JEditorPane」メモ(Hishidama's Swing-JEditorPane Memo)](https://www.ne.jp/asahi/hishidama/home/tech/java/swing/JEditorPane.html)
 - [Swing - HTMLEditorKit and CSS](https://community.oracle.com/thread/1392908)
 - [StyleSheet (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/StyleSheet.html)
     - [対応しているCSSプロパティ一覧 - CSS (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/text/html/CSS.html)
-- [How to add stylesheet information to a JEditorPane | alvinalexander.com](http://alvinalexander.com/blog/post/jfc-swing/how-add-style-stylesheet-jeditorpane-example-code)
+- [How to add stylesheet information to a JEditorPane | alvinalexander.com](https://alvinalexander.com/blog/post/jfc-swing/how-add-style-stylesheet-jeditorpane-example-code)
 - [GraphicsEnvironmentにFontを登録して使用する](https://ateraimemo.com/Swing/RegisterFont.html)
 - [Rhinoでgoogle-prettify.jsを実行する](https://ateraimemo.com/Tips/GooglePrettifyRhino.html)
 

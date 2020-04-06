@@ -37,6 +37,7 @@ comments: true
     caret.setBlinkRate(getCaret().getBlinkRate());
     setCaret(caret);
   }
+
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     Graphics2D g2 = (Graphics2D) g.create();
@@ -46,19 +47,20 @@ comments: true
     g2.drawLine(i.left, y, getSize().width - i.left - i.right, y);
     g2.dispose();
   }
-//   public static int getLineAtCaret(JTextComponent component) {
-//     int caretPosition = component.getCaretPosition();
-//     Element root = component.getDocument().getDefaultRootElement();
-//     return root.getElementIndex(caretPosition) + 1;
-//   }
+
+  // public static int getLineAtCaret(JTextComponent component) {
+  //   int caretPosition = component.getCaretPosition();
+  //   Element root = component.getDocument().getDefaultRootElement();
+  //   return root.getElementIndex(caretPosition) + 1;
+  // }
 }
 </code></pre>
 
 ## 解説
 `JTextArea#paintComponent`メソッドをオーバーライドして、カーソルがある行にアンダーラインを引いています。
 
-- `Caret`の移動に対応するため、`DefaultCaret#damage(Rectangle)`メソッドをオーバーライドして、変更された領域を再描画
-- [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)のように、`Highlighter`を使用する方法もある
+- `Caret`の移動に対応するため、`DefaultCaret#damage(Rectangle)`メソッドをオーバーライドして変更された領域を再描画
+- [Highlighting Current Line](http://www.jroller.com/page/santhosh/20050601?catname=%2FSwing)のように`Highlighter`を使用する方法もある
 
 <!-- dummy comment line for breaking list -->
 

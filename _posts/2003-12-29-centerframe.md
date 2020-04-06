@@ -38,7 +38,7 @@ frame.setVisible(true);
       screen.x + screen.width / 2 - frame.getSize().width / 2,
       screen.y + screen.height / 2 - frame.getSize().height / 2);
 </code></pre>
-- どちらの場合も、フレームを`pack()`、もしくは`setSize(int, int)`で`JFrame`のサイズを設定した後で実行する必要がある
+- どちらの場合も`JFrame`を`pack()`、または`setSize(int, int)`でそのサイズを設定した後で実行する必要がある
 
 <!-- dummy comment line for breaking list -->
 

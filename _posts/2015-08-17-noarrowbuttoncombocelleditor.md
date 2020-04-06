@@ -42,6 +42,7 @@ comments: true
     };
     comboBox.putClientProperty("JComboBox.isTableCellEditor", Boolean.TRUE);
   }
+
   @Override public Component getTableCellEditorComponent(
       JTable table, final Object value, boolean isSelected, int row, int column) {
     if (value instanceof LocalDateTime) {
@@ -53,12 +54,15 @@ comments: true
             return LocalDateTime.now();
           }
         }
+
         @Override public int getSize() {
           return 7;
         }
+
         @Override public Object getSelectedItem() {
           return selectedDate;
         }
+
         @Override public void setSelectedItem(Object anItem) {
           selectedDate = (LocalDateTime) anItem;
         }
@@ -72,9 +76,11 @@ comments: true
     });
     return comboBox;
   }
+
   @Override public Object getCellEditorValue() {
     return comboBox.getSelectedItem();
   }
+
   @Override public boolean shouldSelectCell(EventObject anEvent) {
     if (anEvent instanceof MouseEvent) {
       MouseEvent e = (MouseEvent) anEvent;
@@ -82,6 +88,7 @@ comments: true
     }
     return true;
   }
+
   @Override public boolean stopCellEditing() {
     if (comboBox.isEditable()) {
       // Commit edited value.
@@ -89,6 +96,7 @@ comments: true
     }
     return super.stopCellEditing();
   }
+
   @Override public boolean isCellEditable(EventObject e) {
     return true;
   }

@@ -23,9 +23,11 @@ comments: true
   public ClippedTitleTabbedPane() {
     super();
   }
+
   public ClippedTitleTabbedPane(int tabPlacement) {
     super(tabPlacement);
   }
+
   private Insets getTabInsets() {
     Insets i = UIManager.getInsets("TabbedPane.tabInsets");
     if (i != null) {
@@ -37,6 +39,7 @@ comments: true
       return style.getInsets(context, null);
     }
   }
+
   private Insets getTabAreaInsets() {
     Insets i = UIManager.getInsets("TabbedPane.tabAreaInsets");
     if (i != null) {
@@ -48,6 +51,7 @@ comments: true
       return style.getInsets(context, null);
     }
   }
+
   @Override public void doLayout() {
     int tabCount  = getTabCount();
     if (tabCount == 0) return;
@@ -80,6 +84,7 @@ comments: true
     }
     super.doLayout();
   }
+
   @Override public void insertTab(
       String title, Icon icon, Component component, String tip, int index) {
     super.insertTab(title, icon, component, tip == null ? title : tip, index);

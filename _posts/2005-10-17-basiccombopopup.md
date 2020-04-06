@@ -23,6 +23,7 @@ comments: true
     super(cb);
     this.textArea = textArea;
   }
+
   @Override protected void installListListeners() {
     super.installListListeners();
     listener = new MouseAdapter() {
@@ -41,6 +42,7 @@ comments: true
       list.addMouseListener(listener);
     }
   }
+
   @Override public void uninstallingUI() {
     if (Objects.nonNull(listener)) {
       list.removeMouseListener(listener);
@@ -48,6 +50,7 @@ comments: true
     }
     super.uninstallingUI();
   }
+
   @Override public boolean isFocusable() {
     return true;
   }
@@ -55,11 +58,14 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、<kbd>Shift+Tab</kbd>でポップアップメニューが表示され、<kbd>Up</kbd>, <kbd>Down</kbd>キーで移動、<kbd>Enter</kbd>で`JTextPane`のカーソルの後に選択された文字列が入力されます。
+上記のサンプルでは、<kbd>Shift+Tab</kbd>でポップアップメニューが表示され、<kbd>Up</kbd>・<kbd>Down</kbd>キーで移動、<kbd>Enter</kbd>で`JTextPane`のカーソルの後に選択された文字列が入力されます。
 
 `JComboBox`のポップアップ部分の`UI`を表現する`BasicComboPopup`を利用することで、スクロールバーをもつポップアップメニューを実現しています。
 
-フォーカスを取得して、キー入力で選択を変更できるように、`BasicComboPopup#isFocusable`メソッドをオーバーライドしています。また、`BasicComboPopup#show`したあと、`BasicComboPopup#requestFocusInWindow`する必要があります。
+- フォーカスを取得してキー入力で選択を変更できるように`BasicComboPopup#isFocusable`メソッドをオーバーライド
+    - `BasicComboPopup#show()`を実行した後`BasicComboPopup#requestFocusInWindow()`を呼びだす必要がある
+
+<!-- dummy comment line for breaking list -->
 
 - - - -
 - ~~`JFrame`から、ポップアップメニューがはみ出す(親`Window`が`HeavyWeightWindow`になる)場合、カーソルキーなどで、アイテムが移動選択できないバグがある~~

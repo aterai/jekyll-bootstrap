@@ -24,11 +24,11 @@ combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
 
 ## 解説
 1. デフォルト
-    - モデルの中からサイズが最大となる要素を検索し、`JComboBox`の推奨サイズを決定する
+    - モデルの中からサイズが最大となる要素を検索して`JComboBox`の推奨サイズを決定する
     - 上記のサンプルでは、モデルが空なのでボタンの幅と余白が`JComboBox`の推奨サイズになっている
 
 <!-- dummy comment line for breaking list -->
-1. `JComboBox#setPrototypeDisplayValue(...)`で指定した要素から、`JComboBox`の推奨サイズを決定する
+1. `JComboBox#setPrototypeDisplayValue(...)`で指定した要素から`JComboBox`の推奨サイズを決定する
 1. 編集可能な場合の`JComboBox`に`JComboBox#setPrototypeDisplayValue(...)`を設定
     - [Bug ID: JDK-6422966 Editable JComboBox.setPrototypeDisplayValue: size can not be smaller than editor](https://bugs.openjdk.java.net/browse/JDK-6422966)
 
@@ -48,7 +48,7 @@ combo5.setPrototypeDisplayValue(new Site(TITLE, new DummyIcon(Color.GRAY)));
       setText("");
       setIcon(null);
     }
-// ...
+    // ...
 </code></pre>
 
 ## 参考リンク

@@ -22,28 +22,35 @@ comments: true
 <pre class="prettyprint"><code>class CalendarViewTableModel extends DefaultTableModel {
   private final LocalDate startDate;
   private final WeekFields weekFields = WeekFields.of(Locale.getDefault());
+
   public CalendarViewTableModel(LocalDate date) {
     super();
     LocalDate firstDayOfMonth = YearMonth.from(date).atDay(1);
     int dowv = firstDayOfMonth.get(weekFields.dayOfWeek()) - 1;
     startDate = firstDayOfMonth.minusDays(dowv);
   }
+
   @Override public Class&lt;?&gt; getColumnClass(int column) {
     return LocalDate.class;
   }
+
   @Override public String getColumnName(int column) {
     return weekFields.getFirstDayOfWeek().plus(column)
       .getDisplayName(TextStyle.SHORT_STANDALONE, Locale.getDefault());
   }
+
   @Override public int getRowCount() {
     return 6;
   }
+
   @Override public int getColumnCount() {
     return 7;
   }
+
   @Override public Object getValueAt(int row, int column) {
     return startDate.plusDays(row * getColumnCount() + column);
   }
+
   @Override public boolean isCellEditable(int row, int column) {
     return false;
   }

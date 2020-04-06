@@ -30,7 +30,7 @@ button.setToolTipText("Test - ToolTipText1");
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JComponent#createToolTip()`メソッドをオーバーライドして元の`Border`と`MatteBorder`を組み合わせた`Border`を`JToolTip`に設定しています。
+上記のサンプルでは、`JComponent#createToolTip()`メソッドをオーバーライドして`JToolTip`のデフォルト`Border`と`MatteBorder`を組み合わせた`Border`をその`JToolTip`に設定しています。
 
 ## 参考リンク
 - [JComponent#createToolTip() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JComponent.html#createToolTip--)

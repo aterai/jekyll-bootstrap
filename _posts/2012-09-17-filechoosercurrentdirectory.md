@@ -31,10 +31,10 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
 - `setCurrentDirectory`
     - [JFileChooser#setCurrentDirectory(File)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setCurrentDirectory-java.io.File-)メソッドで`CurrentDirectory`を設定
     - 参照: コンボボックスにディレクトリ名
-    - リストには、`CurrentDirectory`内のディレクトリ一覧
+    - リストには`CurrentDirectory`内のディレクトリ一覧
     - フォルダ名: テキストフィールドは前回の文字列(`setCurrentDirectory`では変化しない)
     - 存在しないファイルを`setCurrentDirectory`で設定すると、前回の`CurrentDirectory`(初回に存在しないファイルが設定された場合は`OS`のデフォルト)が表示される
-        - 上記のサンプルで、`Change !dir.exists() case`にチェックをした場合、前回のディレクトリではなく、参照可能な親ディレクトリを検索するよう、`setCurrentDirectory`をオーバーライドした`JFileChooser`を使用する
+        - 上記のサンプルで`Change !dir.exists() case`にチェックをした場合、前回のディレクトリではなく参照可能な親ディレクトリを検索するよう`setCurrentDirectory`をオーバーライドした`JFileChooser`を使用する
             
             <pre class="prettyprint"><code>JFileChooser fc2 = new JFileChooser() {
               @Override public void setCurrentDirectory(File dir) {
@@ -47,13 +47,13 @@ if (retvalue == JFileChooser.APPROVE_OPTION) {
 </code></pre>
 - `setSelectedFile`
     - [JFileChooser#setSelectedFile(File)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JFileChooser.html#setSelectedFile-java.io.File-)メソッドで選択ファイルとしてディレクトリを設定
-    - 参照: コンボボックスには、選択ファイルとして設定したディレクトリの親ディレクトリ名
-    - リストには、親ディレクトリ内のディレクトリ一覧
+    - 参照: コンボボックスには選択ファイルとして設定したディレクトリの親ディレクトリ名
+    - リストには親ディレクトリ内のディレクトリ一覧
         - `Metal`や`Nimbus LookAndFeel`では、選択ファイルとして設定したディレクトリが選択状態になる
-        - `Metal`などの`LookAndFeel`でも、ディレクトリが選択状態にならない場合がある
-        - 上記のサンプルで、`isParent reset?`にチェックをした場合、`!fileChooser.getFileSystemView().isParent(fileChooser.getCurrentDirectory(), dir)==false`になるように？`setSelectedFile`で選択ファイルをリセットする
+        - `Metal`などの`LookAndFeel`でもディレクトリが選択状態にならない場合がある
+        - 上記のサンプルで`isParent reset?`にチェックをした場合、`!fileChooser.getFileSystemView().isParent(fileChooser.getCurrentDirectory(), dir)==false`になるように？`setSelectedFile`で選択ファイルをリセットする
     - フォルダ名: テキストフィールドは選択ファイルとして設定したディレクトリ
-    - 存在しないディレクトリを`setSelectedFile`で設定するとその親ディレクトリ、親ディレクトリも存在しない場合は、`OS`のデフォルトがカレントディレクトリとなる
+    - 存在しないディレクトリを`setSelectedFile`で設定するとその親ディレクトリ、親ディレクトリも存在しない場合は`OS`のデフォルトがカレントディレクトリとなる
 
 <!-- dummy comment line for breaking list -->
 

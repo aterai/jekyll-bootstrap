@@ -18,6 +18,7 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class DragScrollLayerUI extends LayerUI&lt;JScrollPane&gt; {
   private final Point pp = new Point();
+
   @Override public void installUI(JComponent c) {
     super.installUI(c);
     if (c instanceof JLayer) {
@@ -25,12 +26,14 @@ comments: true
           AWTEvent.MOUSE_EVENT_MASK | AWTEvent.MOUSE_MOTION_EVENT_MASK);
     }
   }
+
   @Override public void uninstallUI(JComponent c) {
     if (c instanceof JLayer) {
       ((JLayer) c).setLayerEventMask(0);
     }
     super.uninstallUI(c);
   }
+
   @Override protected void processMouseEvent(
       MouseEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
     Component c = e.getComponent();
@@ -43,6 +46,7 @@ comments: true
       pp.setLocation(cp);
     }
   }
+
   @Override protected void processMouseMotionEvent(
       MouseEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
     Component c = e.getComponent();

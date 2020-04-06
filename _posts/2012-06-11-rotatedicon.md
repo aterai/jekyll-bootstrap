@@ -137,6 +137,7 @@ class QuadrantRotateIcon implements Icon {
 - [Duke Images: iconSized](http://duke.kenai.com/iconSized/index.html)
 - [AffineTransformOpで画像を反転する](https://ateraimemo.com/Swing/AffineTransformOp.html)
 - [Mouseで画像を移動、回転](https://ateraimemo.com/Swing/MouseDrivenImageRotation.html)
+- [JTabbedPaneのタブタイトル文字列を回転して縦組表示する](https://ateraimemo.com/Swing/RotatedVerticalTextTabs.html)
 
 <!-- dummy comment line for breaking list -->
 

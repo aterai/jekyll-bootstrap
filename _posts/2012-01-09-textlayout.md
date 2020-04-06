@@ -61,7 +61,7 @@ TextLayout tl = new TextLayout(text, font, frc);
 - `Color.ORANGE`: `Leading`
     - ベースライン + `Descent` + `Leading`
 - `Color.CYAN`: `x-height`
-    - ベースライン - 文字`x`の高さ;
+    - ベースライン - 文字`x`の高さ
 
 <!-- dummy comment line for breaking list -->
 

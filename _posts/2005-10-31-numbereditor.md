@@ -23,9 +23,11 @@ spinner.setEditor(editor);
 </code></pre>
 
 ## 解説
-`JSpinner.NumberEditor`のコンストラクタに、`DecimalFormat`オブジェクトのパターンを設定すると数値の表示フォーマットを変更できます。
+上記のサンプルでは、`JSpinner.NumberEditor`のコンストラクタに`DecimalFormat`オブジェクトのパターンを設定して数値の表示フォーマットを変更しています。
 
-上記のサンプルでは、数字を表す`0`と、`100`倍してパーセントを表す`%`を組み合わせたフォーマットパターンを使用しています。
+- 数字を表す`0`と`100`倍してパーセントを表す`%`を組み合わせたフォーマットパターンを使用
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [JSpinner.NumberEditor (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JSpinner.NumberEditor.html)

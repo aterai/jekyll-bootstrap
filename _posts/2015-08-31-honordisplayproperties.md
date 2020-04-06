@@ -20,8 +20,8 @@ comments: true
 </code></pre>
 
 ## 解説
-- `HTMLEditorKit`のデフォルトスタイルシートでは、`body`タグに`font-size: 14pt`などが設定されている
-    - この設定が`HTML`テキストのデフォルト文字サイズになっているため、`JEditorPane#setFont(new Font("Serif", Font.PLAIN, 16))`でフォントを指定しても反映されない
+- `HTMLEditorKit`のデフォルトスタイルシートでは`body`タグに`font-size: 14pt`などが設定されている
+    - この設定が`HTML`テキストのデフォルト文字サイズになっているため、`JEditorPane`に`JEditorPane#setFont(new Font("Serif", Font.PLAIN, 16))`メソッドでフォントを指定しても反映されない
 - `JEditorPane`に設定されたフォントを使用する場合は、`JEditorPane#putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE)`としてコンポーネントのデフォルトのフォントを使用するように設定する必要がある
 
 <!-- dummy comment line for breaking list -->
@@ -32,7 +32,7 @@ comments: true
         <pre class="prettyprint"><code>StringBuilder buf = new StringBuilder(300);
         HTMLEditorKit htmlEditorKit = (HTMLEditorKit) editor.getEditorKit();
         StyleSheet styles = htmlEditorKit.getStyleSheet();
-        //System.out.println(styles);
+        // System.out.println(styles);
         Enumeration rules = styles.getStyleNames();
         while (rules.hasMoreElements()) {
           String name = (String) rules.nextElement();
@@ -47,15 +47,7 @@ comments: true
         }
         editor.setText(buf.toString());
 </code></pre>
-
-<!-- dummy comment line for breaking list -->
-- - - -
-- メモ:
-    - `JDK 1.8.0_60`ではスクリーンショットのように自動的に折り返されるが、`JDK 1.9.0-ea-b78`では、水平スクロールバーが表示される？
-
-<!-- dummy comment line for breaking list -->
-
-## 参考リンク
+    - * 参考リンク [#reference]
 - [JEditorPane.HONOR_DISPLAY_PROPERTIES (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES)
 
 <!-- dummy comment line for breaking list -->

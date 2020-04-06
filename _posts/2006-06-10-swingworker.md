@@ -48,6 +48,7 @@ class RunAction extends AbstractAction {
   public RunAction() {
     super("run");
   }
+
   @Override public void actionPerformed(ActionEvent evt) {
     System.out.println("actionPerformed() is EDT?: " + EventQueue.isDispatchThread());
     final JProgressBar bar = new JProgressBar();
@@ -71,6 +72,7 @@ class RunAction extends AbstractAction {
           appendText(message);
         }
       }
+
       @Override public void done() {
         System.out.println("done() is EDT?: " + EventQueue.isDispatchThread());
         if (!isDisplayable()) {
@@ -106,6 +108,7 @@ class CancelAction extends AbstractAction {
   public CancelAction() {
     super("cancel");
   }
+
   @Override public void actionPerformed(ActionEvent evt) {
     if (worker != null &amp;&amp; !worker.isDone()) {
       worker.cancel(true);
@@ -118,18 +121,19 @@ class CancelAction extends AbstractAction {
 ## 解説
 `JDK 6`以前の`SwingWorker.java`から一部メソッド名が変更されていますが、基本的な使い方は一緒のようです。
 
-- `SwingWorker#execute()`メソッドで処理が開始され、`SwingWorker#doInBackground()`メソッドが、バックグラウンドのワーカースレッドで実行される
+- `SwingWorker#execute()`メソッドで処理が開始され、`SwingWorker#doInBackground()`メソッドがバックグラウンドのワーカースレッドで実行される
 - `EDT`で実行する必要のある処理(上記の例では処理中に`JTextArea`へのメッセージの書き出し)は、`SwingWorker#process()`メソッドをオーバーライドして`SwingWorker#publish()`メソッドで呼び出したり、`SwingWorker#firePropertyChange()`を使用する
-- プログレスバーの処理には、`SwingWorker#setProgress(int)`が予め用意されているので、`SwingWorker#addPropertyChangeListener(ProgressListener)`を設定するだけで使用可能
+- プログレスバーの処理には`SwingWorker#setProgress(int)`が予め用意されているので、`SwingWorker#addPropertyChangeListener(ProgressListener)`を設定するだけで使用可能
 - `SwingWorker#setProgress(int)`で設定できるのは`0`から`100`で固定
     
     <pre class="prettyprint"><code>protected final void setProgress(int progress) {
       if (progress &lt; 0 || progress &gt; 100) {
         throw new IllegalArgumentException("the value should be from 0 to 100");
       }
-    // ...
+      // ...
 </code></pre>
-- 実行中の処理のキャンセルは、`SwingWorker#cancel(boolean)`メソッドで行います。キャンセルされたかどうかは、`SwingWorker#isCancelled()`メソッドで判定可能
+- 実行中の処理のキャンセルは`SwingWorker#cancel(boolean)`メソッドで実行する
+    - キャンセルされたかどうかは`SwingWorker#isCancelled()`メソッドで判定可能
 
 <!-- dummy comment line for breaking list -->
 
@@ -137,7 +141,7 @@ class CancelAction extends AbstractAction {
 現在のスレッドがイベントディスパッチスレッド(以下`EDT`)かどうかを調べる`EventQueue.isDispatchThread()`を、このサンプルで使用すると以下のようになります。
 
 1. `actionPerformed() is EDT?`: `true`
-    - 現在のスレッド(このサンプルでは`EDT`)で、ボタンを選択不可にしたり、`SwingWorker#execute()`を実行している
+    - 現在のスレッド(このサンプルでは`EDT`)でボタンを選択不可にしたり、`SwingWorker#execute()`を実行している
 
 <!-- dummy comment line for breaking list -->
 1. `doInBackground() is EDT?`: `false`
@@ -146,7 +150,7 @@ class CancelAction extends AbstractAction {
 <!-- dummy comment line for breaking list -->
 1. `process() is EDT?`: `true`
 1. `done() is EDT?`: `true`
-    - `Swing`関連のすべての作業(例えば`JProgressBar`の進捗表示更新)は、`EDT`で行う必要があるので、`process()`か`done()`メソッド内で実行する
+    - `Swing`関連のすべての作業(例えば`JProgressBar`の進捗表示更新)は`EDT`で行う必要があるので、`process()`か`done()`メソッド内で実行する
 
 <!-- dummy comment line for breaking list -->
 

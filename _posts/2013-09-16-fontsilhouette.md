@@ -55,7 +55,7 @@ comments: true
 ## 解説
 上記のサンプルでは、チェスの駒の字形から輪郭を取得し、それを使って縁取り、内部の塗り潰しを行う`Icon`を`JLabel`に配置して表示しています。
 
-字形(`Shape`)の輪郭は、`Shape#getPathIterator(...)`で`PathIterator`を取得し、~~開始点が一番外側にある~~パスの集合を`Path2D`に変換、`Area`に追加することで作成しています。
+字形(`Shape`)の輪郭は`Shape#getPathIterator(...)`で`PathIterator`を取得し、~~開始点が一番外側にある~~パスの集合を`Path2D`に変換、`Area`に追加することで作成しています。
 
 ## 参考リンク
 - [java - 'Fill' Unicode characters in labels - Stack Overflow](https://stackoverflow.com/questions/18686199/fill-unicode-characters-in-labels)

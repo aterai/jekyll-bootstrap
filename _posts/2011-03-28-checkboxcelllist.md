@@ -20,8 +20,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>class CheckBoxCellRenderer&lt;E extends CheckBoxNode&gt; extends JCheckBox
-  implements ListCellRenderer&lt;E&gt;, MouseListener, MouseMotionListener {
+    implements ListCellRenderer&lt;E&gt;, MouseListener, MouseMotionListener {
   private int rollOverRowIndex = -1;
+
   @Override public Component getListCellRendererComponent(
         JList&lt;? extends E&gt; list, E value, int index,
         boolean isSelected, boolean cellHasFocus) {
@@ -38,6 +39,7 @@ comments: true
     this.setText(value.text);
     return this;
   }
+
   @Override public void mouseExited(MouseEvent e) {
     if (rollOverRowIndex &gt;= 0) {
       JList l = (JList) e.getComponent();
@@ -45,6 +47,7 @@ comments: true
       rollOverRowIndex = -1;
     }
   }
+
   @Override public void mouseClicked(MouseEvent e) {
     if (e.getButton() == MouseEvent.BUTTON1) {
       JList l = (JList) e.getComponent();
@@ -60,6 +63,7 @@ comments: true
       }
     }
   }
+
   @Override public void mouseMoved(MouseEvent e) {
     JList l = (JList) e.getComponent();
     int index = l.locationToIndex(e.getPoint());
@@ -68,15 +72,19 @@ comments: true
       l.repaint();
     }
   }
+
   @Override public void mouseEntered(MouseEvent e)  {
     /* not needed */
   }
+
   @Override public void mousePressed(MouseEvent e)  {
     /* not needed */
   }
+
   @Override public void mouseReleased(MouseEvent e) {
     /* not needed */
   }
+
   @Override public void mouseDragged(MouseEvent e)  {
     /* not needed */
   }
@@ -93,7 +101,7 @@ comments: true
 - 中: `JList`
     - `JCheckBox`を継承する`ListCellRenderer`を設定
     - チェックボックスのロールオーバーなどは、`JList`にマウスリスナーを設定して描画
-    - `JList#processMouseEvent`、`JList#processMouseMotionEvent`のオーバーライドと、`JList#putClientProperty("List.isFileList", Boolean.TRUE);`で、クリックが有効になる領域をチェックボックスの幅に制限
+    - `JList#processMouseEvent`、`JList#processMouseMotionEvent`のオーバーライドと、`JList#putClientProperty("List.isFileList", Boolean.TRUE);`でクリックが有効になる領域をチェックボックスの幅に制限
 
 <!-- dummy comment line for breaking list -->
 
@@ -114,6 +122,7 @@ comments: true
     addMouseListener(renderer);
     addMouseMotionListener(renderer);
   }
+
   //@see SwingUtilities2.pointOutsidePrefSize(...)
   private boolean pointOutsidePrefSize(Point p) {
     int index = locationToIndex(p);
@@ -127,11 +136,13 @@ comments: true
     rect.width = d.width;
     return index &lt; 0 || !rect.contains(p);
   }
+
   @Override protected void processMouseEvent(MouseEvent e) {
     if (!pointOutsidePrefSize(e.getPoint())) {
       super.processMouseEvent(e);
     }
   }
+
   @Override protected void processMouseMotionEvent(MouseEvent e) {
     if (!pointOutsidePrefSize(e.getPoint())) {
       super.processMouseMotionEvent(e);
@@ -188,6 +199,7 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
       }
     });
   }
+
   @Override public Component getTreeCellEditorComponent(
     JTree tree, Object value, boolean isSelected, boolean expanded,
     boolean leaf, int row) {
@@ -202,12 +214,15 @@ class CheckBoxNodeEditor extends JCheckBox implements TreeCellEditor {
     }
     return this;
   }
+
   @Override public Object getCellEditorValue() {
     return new CheckBoxNode(getText(), isSelected());
   }
+
   @Override public boolean isCellEditable(EventObject e) {
     return (e instanceof MouseEvent);
   }
+
   //Copied from AbstractCellEditor
   //protected EventListenerList listenerList = new EventListenerList();
   //transient protected ChangeEvent changeEvent = null;

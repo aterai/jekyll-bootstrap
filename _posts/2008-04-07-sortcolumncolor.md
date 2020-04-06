@@ -31,6 +31,7 @@ comments: true
     }
     return c;
   }
+
   private boolean isSortingColumn(int column) {
     RowSorter&lt;? extends TableModel&gt; sorter = getRowSorter();
     if (Objects.nonNull(sorter)) {

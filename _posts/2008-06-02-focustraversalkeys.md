@@ -21,18 +21,18 @@ comments: true
 Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;&gt;(
     focusManager.getDefaultFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0));
-forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN,  0));
+forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0));
 focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forwardKeys);
 
 Set&lt;AWTKeyStroke&gt; backwardKeys = new HashSet&lt;&gt;(
     focusManager.getDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS));
 backwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0));
-backwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_UP,   0));
+backwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0));
 focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSAL_KEYS, backwardKeys);
 </code></pre>
 
 ## 解説
-上記のサンプルでは、デフォルトのフォーカストラバーサルキー(<kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>)に加えて、上下左右の矢印キーでもフォーカス移動できるように設定しています。
+上記のサンプルでは、デフォルトのフォーカストラバーサルキー(<kbd>Tab</kbd>、<kbd>Shift+Tab</kbd>)に加えて、上下左右の矢印キーでもフォーカス移動できるように設定しています。
 
 - `KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS`
     - `KeyEvent.VK_RIGHT`, `KeyEvent.VK_DOWN`
@@ -47,7 +47,7 @@ focusManager.setDefaultFocusTraversalKeys(KeyboardFocusManager.BACKWARD_TRAVERSA
 <pre class="prettyprint"><code>Set&lt;AWTKeyStroke&gt; forwardKeys = new HashSet&lt;&gt;(
     frame.getFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS));
 forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0));
-forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN,  0));
+forwardKeys.add(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0));
 frame.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, forwardKeys);
 </code></pre>
 

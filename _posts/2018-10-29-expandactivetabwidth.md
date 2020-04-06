@@ -35,6 +35,7 @@ class ShrinkLabel extends JLabel {
   protected ShrinkLabel(String title, Icon icon) {
     super(title, icon, SwingConstants.LEFT);
   }
+
   @Override public Dimension getPreferredSize() {
     Dimension d = super.getPreferredSize();
     if (!isSelected) {

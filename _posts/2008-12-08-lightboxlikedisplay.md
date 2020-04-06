@@ -43,6 +43,7 @@ comments: true
     @Override public void mouseClicked(MouseEvent me) {
       me.getComponent().setVisible(false);
     }
+
     @Override public void hierarchyChanged(HierarchyEvent e) {
       if ((e.getChangeFlags() &amp; HierarchyEvent.DISPLAYABILITY_CHANGED) != 0
           &amp;&amp; !e.getComponent().isDisplayable() &amp;&amp; animator != null) {
@@ -50,6 +51,7 @@ comments: true
       }
     }
   }
+
   @Override public void setVisible(boolean isVisible) {
     boolean oldVisible = isVisible();
     super.setVisible(isVisible);
@@ -76,6 +78,7 @@ comments: true
     }
     animatedIcon.setRunning(isVisible);
   }
+
   @Override protected void paintComponent(Graphics g) {
     JRootPane rootPane = getRootPane();
     if (rootPane != null) {

@@ -37,10 +37,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、選択したフォルダ以下のファイルを再帰的にすべて検索して表示しています。`JProgressBar`を使った進捗状況の表示とキャンセルには、`SwingWorker`を利用しています。
+上記のサンプルでは、選択したフォルダ以下のファイルを再帰的にすべて検索して表示しています。`JProgressBar`を使った進捗状況の表示とキャンセルには`SwingWorker`を利用しています。
 
 - - - -
-`JDK 1.7.0`以上の場合は、`Files.walkFileTree(...)`などを使用する方法もあります。
+`JDK 1.7.0`以上の場合は`Files.walkFileTree(...)`を使用する方法もあります。
 
 - [Files#walkFileTree(...) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/nio/file/Files.html#walkFileTree-java.nio.file.Path-java.nio.file.FileVisitor-)
 - [Walking the File Tree (The Java™ Tutorials > Essential Classes > Basic I/O)](https://docs.oracle.com/javase/tutorial/essential/io/walk.html)
@@ -63,7 +63,7 @@ comments: true
 </code></pre>
 
 - - - -
-`JDK 1.8.0`以上の場合は、`Files.walk(Path)`を使用する方法もあります。
+`JDK 1.8.0`以上の場合は`Files.walk(Path)`を使用する方法もあります。
 
 - [Files#walk(Path) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/nio/file/Files.html#walk-java.nio.file.Path-java.nio.file.FileVisitOption...-)
 - [Javaファイル関連メモ2(Hishidama's Java Files Memo)](https://www.ne.jp/asahi/hishidama/home/tech/java/files.html#walk)
