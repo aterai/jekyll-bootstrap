@@ -33,6 +33,7 @@ textPane.insertComponent(new JLabel() {
     super.updateUI();
     setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.RED));
   }
+
   @Override public Dimension getMaximumSize() {
     return new Dimension(textPane.getSize().width, 1);
   }
@@ -45,9 +46,11 @@ textPane.insertComponent(new JLabel() {
     super.updateUI();
     setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.GREEN));
   }
+
   @Override public Dimension getPreferredSize() {
     return new Dimension(textPane.getSize().width, 1);
   }
+
   @Override public Dimension getMaximumSize() {
     return this.getPreferredSize();
   }
@@ -59,6 +62,7 @@ textPane.insertComponent(new JSeparator(JSeparator.VERTICAL) {
   @Override public Dimension getPreferredSize() {
     return new Dimension(1, 16);
   }
+
   @Override public Dimension getMaximumSize() {
     return this.getPreferredSize();
   }
@@ -68,17 +72,17 @@ textPane.insertComponent(new JLabel(" TEST"));
 
 ## 解説
 - `hr`要素
-    - `htmlEditorKit.insertHTML(doc, doc.getLength(), "<hr />", 0, 0, null);`などで、`hr`要素を追加
+    - `htmlEditorKit.insertHTML(doc, doc.getLength(), "<hr />", 0, 0, null)`などで`hr`要素を追加
 - `JSeparator`
-    - `textPane.insertComponent(new JSeparator(JSeparator.HORIZONTAL));`で水平`JSeparator`を追加
+    - `textPane.insertComponent(new JSeparator(JSeparator.HORIZONTAL))`で水平`JSeparator`を追加
 - `MatteBorder1`
     - `MatteBorder`を設定したテキスト無しの`JLabel`を追加
-    - 最大サイズが(幅:`JTextPane#getWidth()`、高さ:`1px`)になるよう、`JLabel#getMaximumSize()`をオーバーライド
+    - 最大サイズが(幅:`JTextPane#getWidth()`、高さ:`1px`)になるよう`JLabel#getMaximumSize()`をオーバーライド
 - `MatteBorder2`
     - `MatteBorder`を設定したテキスト無しの`JLabel`を追加
-    - 推奨サイズと最大サイズが(幅:`JTextPane#getWidth()`、高さ`1px`)になるよう、`JLabel#getPreferredSize()`と`JLabel#getMaximumSize()`をオーバーライド
+    - 推奨サイズと最大サイズが(幅:`JTextPane#getWidth()`、高さ`1px`)になるよう`JLabel#getPreferredSize()`と`JLabel#getMaximumSize()`をオーバーライド
 - `JSeparator.VERTICAL`
-    - `textPane.insertComponent(new JSeparator(JSeparator.VERTICAL));`で垂直`JSeparator`を追加
+    - `textPane.insertComponent(new JSeparator(JSeparator.VERTICAL))`で垂直`JSeparator`を追加
     - `JSeparator#getPreferredSize()`、`JSeparator#getMaximumSize()`をオーバーライドしないと表示されない
         - [How to Use Separators (The Java™ Tutorials > Creating a GUI With JFC/Swing > Using Swing Components)](https://docs.oracle.com/javase/tutorial/uiswing/components/separator.html)
 

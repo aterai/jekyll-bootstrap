@@ -72,7 +72,7 @@ comments: true
 `Web Start`で起動してフレームの外側にメニューが表示される場合は、`java.security.AccessControlException: access denied (java.awt.AWTPermission createRobot)`が発生します。
 
 ## 参考リンク
-- [Java Swing Hacks #11 ドロップシャドウ付きのメニューを作る](http://www.oreilly.co.jp/books/4873112788/toc.html)
+- [Java Swing Hacks #11 ドロップシャドウ付きのメニューを作る](https://www.oreilly.co.jp/books/4873112788/)
 - [JGoodies | We make Java look good and work well](http://www.jgoodies.com/)
     - `contrib.com.jgoodies.looks.common.ShadowPopupFactory`
 - [JPopupMenuに半透明の影を付ける](https://ateraimemo.com/Swing/DropShadowPopup.html)

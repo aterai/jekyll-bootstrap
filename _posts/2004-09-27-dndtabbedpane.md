@@ -76,7 +76,7 @@ private void convertTab(int prev, int next) {
 `MouseMotionListener`と`MouseListener`ではなく、`DragGestureListener`、`DragSourceListener`、`DropTargetListener`を使用する方法に変更しました。
 
 ## 参考リンク
-- [Java Swing Hacks #63 半透明のドラッグ＆ドロップ](http://www.oreilly.co.jp/books/4873112788/toc.html)
+- [Java Swing Hacks #63 半透明のドラッグ＆ドロップ](https://www.oreilly.co.jp/books/4873112788/)
 - [CardLayoutを使ってJTabbedPane風のコンポーネントを作成](https://ateraimemo.com/Swing/CardLayoutTabbedPane.html)
 - [JTabbedPane間でタブのドラッグ＆ドロップ移動](https://ateraimemo.com/Swing/DnDExportTabbedPane.html)
 - [JLayerを使ってJTabbedPaneのタブの挿入位置を描画する](https://ateraimemo.com/Swing/DnDLayerTabbedPane.html)

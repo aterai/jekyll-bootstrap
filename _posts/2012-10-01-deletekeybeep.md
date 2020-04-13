@@ -16,10 +16,10 @@ comments: true
 {% download https://lh6.googleusercontent.com/-zIUmkF2C9FA/UGkqdcWDLVI/AAAAAAAABTk/F4nun0GDLZc/s800/DeleteKeyBeep.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>String key = DefaultEditorKit.deletePrevCharAction; //"delete-previous";
-final Action deletePreviousAction = am.get(key);
+<pre class="prettyprint"><code>String key = DefaultEditorKit.deletePrevCharAction; // delete-previous
+Action deletePreviousAction = am.get(key);
 am.put(key, new TextAction(key) {
-  //@see javax/swing/text/DefaultEditorKit.java DeletePrevCharAction
+  // @see javax/swing/text/DefaultEditorKit.java DeletePrevCharAction
   @Override public void actionPerformed(ActionEvent e) {
     JTextComponent target = getTextComponent(e);
     if (target != null &amp;&amp; target.isEditable()) {
@@ -33,10 +33,10 @@ am.put(key, new TextAction(key) {
     deletePreviousAction.actionPerformed(e);
   }
 });
-key = DefaultEditorKit.deleteNextCharAction; //"delete-next";
-final Action deleteNextAction = am.get(key);
+key = DefaultEditorKit.deleteNextCharAction; // delete-next
+Action deleteNextAction = am.get(key);
 am.put(key, new TextAction(key) {
-  //@see javax/swing/text/DefaultEditorKit.java DeleteNextCharAction
+  // @see javax/swing/text/DefaultEditorKit.java DeleteNextCharAction
   @Override public void actionPerformed(ActionEvent e) {
     JTextComponent target = getTextComponent(e);
     if (target != null &amp;&amp; target.isEditable()) {
@@ -54,10 +54,10 @@ am.put(key, new TextAction(key) {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTextField`の`Beep`音の設定を、以下`2`点変更して動作テストを行っています。
+上記のサンプルでは、`JTextField`の`Beep`音の設定を以下`2`点変更して動作テストを行っています。
 
-- `TextAction(DefaultEditorKit.deleteNextCharAction)#actionPerformed(ActionEvent)`メソッドなどをオーバーライドして、<kbd>Delete</kbd>キーや<kbd>Back Space</kbd>キーで文字の削除がなくても、`Beep`音を鳴らさないように変更したアクションを`ActionMap`に設定
-- `5`文字以上入力できないように制限し、超える場合は`Beep`音を鳴らす`DocumentFilter`を作成して、`AbstractDocument#setDocumentFilter(DocumentFilter)`で設定
+- `TextAction(DefaultEditorKit.deleteNextCharAction)#actionPerformed(ActionEvent)`メソッドなどをオーバーライドして<kbd>Delete</kbd>キーや<kbd>Back Space</kbd>キーで文字の削除がなくても`Beep`音を鳴らさないように変更したアクションを`ActionMap`に設定
+- `5`文字以上入力できないように制限し、超える場合は`Beep`音を鳴らす`DocumentFilter`を作成して`AbstractDocument#setDocumentFilter(DocumentFilter)`で設定
 
 <!-- dummy comment line for breaking list -->
 

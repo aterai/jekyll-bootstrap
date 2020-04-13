@@ -32,7 +32,7 @@ comments: true
 
   c.gridx = 1;
   c.weightx = 1.0;
-  //c.insets = new Insets(5, 5, 5, 0);
+  // c.insets = new Insets(5, 5, 5, 0);
   c.fill = GridBagConstraints.HORIZONTAL;
   panel.add(cmp, c);
 
@@ -50,8 +50,8 @@ comments: true
 上記のサンプルでは、`GridBagLayout`で`BorderLayout`のような配置を行っています。`GridBagLayout`の場合、各コンポーネント自身が推奨する高さが生かされるように設定します。
 
 - `BorderLayout`
-    - それぞれデフォルトの高さ(推奨サイズ)が異なるコンポーネントを`BorderLayout`を使用して、`WEST`、`CENTER`、`EAST`に配置すると、一番高いコンポーネントまで拡大
-    - `CENTER`の`JComboBox`が、`EAST`の`JButton`の高さになっている(以下のスクリーンショット参照)
+    - それぞれデフォルトの高さ(推奨サイズ)が異なるコンポーネントを`BorderLayout`を使用して、`WEST`、`CENTER`、`EAST`に配置すると一番高いコンポーネントまで拡大
+    - `CENTER`の`JComboBox`が`EAST`の`JButton`の高さになっている(以下のスクリーンショット参照)
     - `MotifLookAndFeel`の場合
 
 <!-- dummy comment line for breaking list -->
@@ -62,12 +62,12 @@ comments: true
     - 左右のコンポーネントのサイズは`BorderLayout`のように固定して、中央のコンポーネントだけを水平方向にのみ伸縮
     - `weightx`を指定することで、余分のスペースを各列のウェイトに比例して分配
     - ウェイトが`0`の場合、余分のスペースはその列に分配されない
-    - 左右の列の`weightx`が`0.0`なので、中央の列の`weightx`は、`0.001`でも`100.0`でも水平方向の余分なスペースすべてが配分されている
-    - 垂直方向のスペースは指定していないため、デフォルト値の`weighty=0.0`となり、フレームのサイズを変更しても、垂直方向に関しては常にコンポーネントの推奨サイズで固定
+    - 左右の列の`weightx`が`0.0`なので、中央の列の`weightx`は`0.001`でも`100.0`でも水平方向の余分なスペースすべてが配分されている
+    - 垂直方向のスペースは指定していないためデフォルト値の`weighty=0.0`となり、フレームのサイズを変更しても垂直方向に関しては常にコンポーネントの推奨サイズで固定
 
 <!-- dummy comment line for breaking list -->
 
-`IDE`などのサポート無しではすこし面倒な`GridBagLayout`ですが、~~[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)~~の「紙などにマス目で下書きをしてから、コンポーネントのレイアウトを設計する」方法を使えば、凝ったレイアウトでも理解しやすくすっきり設計できます。
+`IDE`などのサポート無しではすこし面倒な`GridBagLayout`ですが、~~[GridBagの使い方１](http://homepage1.nifty.com/masada/cyber/javagridbag1.htm)~~の「紙などにマス目で下書きをしてからコンポーネントのレイアウトを設計する」方法を使えば、凝ったレイアウトでも理解しやすくすっきり設計できます。
 
 ## 参考リンク
 - [GridBagLayout (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/GridBagLayout.html)

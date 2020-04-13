@@ -24,6 +24,7 @@ comments: true
     addFocusListener(this);
     getDocument().addDocumentListener(this);
   }
+
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     if (showWatermark) {
@@ -38,21 +39,26 @@ comments: true
       g2.dispose();
     }
   }
+
   @Override public void focusGained(FocusEvent e) {
     repaint();
   }
+
   @Override public void focusLost(FocusEvent e) {
     showWatermark = getPassword().length == 0;
     repaint();
   }
+
   @Override public void insertUpdate(DocumentEvent e) {
     showWatermark = e.getDocument().getLength() == 0;
     repaint();
   }
+
   @Override public void removeUpdate(DocumentEvent e) {
     showWatermark = e.getDocument().getLength() == 0;
     repaint();
   }
+
   @Override public void changedUpdate(DocumentEvent e) {}
 }
 </code></pre>
@@ -64,7 +70,7 @@ comments: true
 
 ## 参考リンク
 - [Text Prompt « Java Tips Weblog](https://tips4java.wordpress.com/2009/11/29/text-prompt/)
-    - `JTextComponent`に`BorderLayout`を設定して、文字列やアイコンを設定した`JLabel`を追加し、これを`JLabel#setVisible(boolean)`で切り替えているので、汎用的な使用が可能
+    - `JTextComponent`に`BorderLayout`を設定して文字列やアイコンを設定した`JLabel`を追加し、これを`JLabel#setVisible(boolean)`で切り替えているので汎用的な使用が可能
 - [JTextFieldにフォーカスと文字列が無い場合の表示](https://ateraimemo.com/Swing/GhostText.html)
     - `JTextField#setText()`メソッドを使用
 - [JTextFieldに透かし画像を表示する](https://ateraimemo.com/Swing/WatermarkInTextField.html)

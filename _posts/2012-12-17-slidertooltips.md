@@ -23,6 +23,8 @@ comments: true
   private final JWindow toolTip = new JWindow();
   private final JLabel label = new JLabel("", SwingConstants.CENTER);
   private final Dimension size = new Dimension(30, 20);
+  private int prevValue = -1;
+
   public SliderPopupListener() {
     label.setOpaque(false);
     label.setBackground(UIManager.getColor("ToolTip.background"));
@@ -30,7 +32,7 @@ comments: true
     toolTip.add(label);
     toolTip.setSize(size);
   }
-  private int prevValue = -1;
+
   protected void updateToolTip(MouseEvent me) {
     JSlider slider = (JSlider) me.getSource();
     int intValue = (int) slider.getValue();
@@ -44,13 +46,16 @@ comments: true
     }
     prevValue = intValue;
   }
+
   @Override public void mouseDragged(MouseEvent me) {
     updateToolTip(me);
   }
+
   @Override public void mousePressed(MouseEvent me) {
     toolTip.setVisible(true);
     updateToolTip(me);
   }
+
   @Override public void mouseReleased(MouseEvent me) {
     toolTip.setVisible(false);
   }
@@ -70,8 +75,8 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-- デフォルトの`JSlider`では、ノブ以外の位置をクリックすると段階的に位置が変化するため、上記の`MouseListener`を使用するとマウスカーソルの位置とノブの表示位置がずれる
-- [JSliderでクリックした位置にノブをスライド](https://ateraimemo.com/Swing/JumpToClickedPositionSlider.html)を使用して、クリック直後にその位置にノブ移動するように設定
+- デフォルトの`JSlider`ではノブ以外の位置をクリックすると段階的に位置が変化するため、上記の`MouseListener`を使用するとマウスカーソルの位置とノブの表示位置がずれる
+- [JSliderでクリックした位置にノブをスライド](https://ateraimemo.com/Swing/JumpToClickedPositionSlider.html)を使用してクリック直後にその位置にノブ移動するように設定
 - `SwingConstants.VERTICAL`には未対応
 
 <!-- dummy comment line for breaking list -->

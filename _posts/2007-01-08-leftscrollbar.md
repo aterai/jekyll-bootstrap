@@ -27,10 +27,10 @@ add(scroll, BorderLayout.CENTER);
 
 ## 解説
 - 水平スクロールバーを右から左に移動
-    - パネルのレイアウトを、`BorderLayout`にして、`JScrollPane`をそのパネルの中央(`BorderLayout.CENTER`)に追加し、`JScrollPane#setComponentOrientation(...)`メソッドで、`ComponentOrientation.RIGHT_TO_LEFT`を設定
+    - パネルのレイアウトに`BorderLayout`を設定して`JScrollPane`をそのパネルの中央(`BorderLayout.CENTER`)に追加し、`JScrollPane#setComponentOrientation(...)`メソッドで`ComponentOrientation.RIGHT_TO_LEFT`を設定
 - 垂直スクロールバーを下から上に移動
     - `JScrollPane#getHorizontalScrollBar()`メソッドでスクロールバーを取得し、パネルレイアウトを使って`JScrollPane`の上部(`BorderLayout.NORTH`)に配置されているように表示
-    - 左上隅の余白は、`Box.createHorizontalStrut(縦スクロールバーの幅)`で埋める
+    - 左上隅の余白は`Box.createHorizontalStrut(縦スクロールバーの幅)`で埋める
 
 <!-- dummy comment line for breaking list -->
 

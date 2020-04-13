@@ -32,6 +32,7 @@ comments: true
       }
     });
   }
+
   @Override public void paintBorder(Component c, Graphics g, int x, int y, int w, int h) {
     Dimension size = cbox.getPreferredSize();
     int xx = tab.getSize().width - size.width;
@@ -43,12 +44,15 @@ comments: true
     rect = new Rectangle(xx, -2, size.width, size.height);
     SwingUtilities.paintComponent(g, cbox, dummy, rect);
   }
+
   @Override public Insets getBorderInsets(Component c) {
     return new Insets(0, 0, 0, 0);
   }
+
   @Override public boolean isBorderOpaque() {
     return true;
   }
+
   private void dispatchEvent(MouseEvent me) {
     if (rect == null || !rect.contains(me.getX(), me.getY())) {
       return;
@@ -56,10 +60,10 @@ comments: true
     cbox.setBounds(rect);
     cbox.dispatchEvent(SwingUtilities.convertMouseEvent(tab, me, cbox));
   }
-  @Override public void mouseClicked(MouseEvent me)  { dispatchEvent(me); }
-  @Override public void mouseEntered(MouseEvent me)  { dispatchEvent(me); }
-  @Override public void mouseExited(MouseEvent me)   { dispatchEvent(me); }
-  @Override public void mousePressed(MouseEvent me)  { dispatchEvent(me); }
+  @Override public void mouseClicked(MouseEvent me) { dispatchEvent(me); }
+  @Override public void mouseEntered(MouseEvent me) { dispatchEvent(me); }
+  @Override public void mouseExited(MouseEvent me) { dispatchEvent(me); }
+  @Override public void mousePressed(MouseEvent me) { dispatchEvent(me); }
   @Override public void mouseReleased(MouseEvent me) { dispatchEvent(me); }
 }
 </code></pre>
@@ -67,7 +71,7 @@ comments: true
 ## 解説
 `JTabbedPane`の`Border`に`SwingUtilities.paintComponent(...)`メソッドを使って`JCheckBox`を描画しています。`JCheckBox`が`JTabbedPane`の子になってタブが増えないように、ダミーパネルを中間コンテナに指定しています。
 
-`JTabbedPane`で受け取ったマウスイベントを、`SwingUtilities.convertMouseEvent(...)`メソッドを利用し、チェックボックス用に座標などを変換して送り出しています。
+`JTabbedPane`で受け取ったマウスイベントを`SwingUtilities.convertMouseEvent(...)`メソッドを利用し、チェックボックス用に座標などを変換して送り出しています。
 
 - - - -
 タブとチェックボックスが重ならないように、フレームの最小サイズを設定しています。
