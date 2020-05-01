@@ -23,24 +23,25 @@ comments: true
       ((JLayer) c).setLayerEventMask(AWTEvent.MOUSE_EVENT_MASK);
     }
   }
+
   @Override public void uninstallUI(JComponent c) {
     if (c instanceof JLayer) {
       ((JLayer) c).setLayerEventMask(0);
     }
     super.uninstallUI(c);
   }
-  @Override protected void processMouseEvent(
-      MouseEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
+
+  @Override protected void processMouseEvent(MouseEvent e, JLayer&lt;? extends JScrollPane&gt; l) {
     JScrollPane sp = l.getView();
     switch (e.getID()) {
-    case MouseEvent.MOUSE_ENTERED:
-      sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-      break;
-    case MouseEvent.MOUSE_EXITED:
-      sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-      break;
-    default:
-      break;
+      case MouseEvent.MOUSE_ENTERED:
+        sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        break;
+      case MouseEvent.MOUSE_EXITED:
+        sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        break;
+      default:
+        break;
     }
     // super.processMouseEvent(e, l);
   }
@@ -50,14 +51,14 @@ comments: true
 ## 解説
 - 上: `MouseListener`
     - `JScrollPane`内部に配置した`JTextArea`に`MouseListener`を設定
-        - `JTextArea`上にマウスカーソルが入ったら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);`で`JScrollBar`を表示
-        - `JTextArea`外にマウスカーソルが出たら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);`で`JScrollBar`を非表示
-    - `JScrollBar`上にマウスカーソルが入ると、`JTextArea`からマウスカーソルが出たことになるので、カーソル表示などが点滅してしまう
+        - `JTextArea`上にマウスカーソルが入ったら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS)`で`JScrollBar`を表示
+        - `JTextArea`外にマウスカーソルが出たら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER)`で`JScrollBar`を非表示
+    - `JScrollBar`上にマウスカーソルが入ると`JTextArea`からマウスカーソルが出たことになるので、カーソル表示などが点滅してしまう
 - 下: `JLayer`
     - `JScrollPane`に`JLayer`を設定
     - `JLayer#setLayerEventMask(AWTEvent.MOUSE_EVENT_MASK);`を指定し、`JLayer`と**そのすべての下位オブジェクト**からのマウスイベントを`processMouseEvent(...)`メソッドで受け取るよう設定
-        - `JLayer`上にマウスカーソルが入ったら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);`で`JScrollBar`を表示
-        - `JLayer`外にマウスカーソルが出たら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);`で`JScrollBar`を非表示
+        - `JLayer`上にマウスカーソルが入ったら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS)`で`JScrollBar`を表示
+        - `JLayer`外にマウスカーソルが出たら`JScrollPane#setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER)`で`JScrollBar`を非表示
 
 <!-- dummy comment line for breaking list -->
 

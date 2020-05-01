@@ -40,9 +40,11 @@ class ArrowIcon implements Icon {
     g2.fill(p);
     g2.dispose();
   }
+
   @Override public int getIconWidth() {
     return 8;
   }
+
   @Override public int getIconHeight() {
     return 8;
   }
@@ -60,15 +62,15 @@ class ArrowIcon implements Icon {
       g2.setPaint(Color.GRAY);
     }
 </code></pre>
-- `WindowsLookAndFeel`で、`JMenu`が選択されてサブメニューが表示されたときに`ArrowIcon`と重ならないように、アイコンの右側に余白を設定
+- `WindowsLookAndFeel`で`JMenu`が選択されてサブメニューが表示されたときに`ArrowIcon`と重ならないようにアイコンの右側に余白を設定
 - `NimbusLookAndFeel`では`UIManager.put("Menu.arrowIcon", new Icon() {...})`は無効、かつ`JMenuBar`に追加されている`JMenu`に`Menu.arrowIcon`が不正に表示されてしまう？
-- 以下のように`UIManager.getLookAndFeelDefaults()`でアイコンを設定すると、`NimbusLookAndFeel`でも有効だが、`JMenuBar`に追加されている`JMenu`に`Menu.arrowIcon`が不正に表示されてしまう現象は同じ
+- 以下のように`UIManager.getLookAndFeelDefaults()`でアイコンを設定すると`NimbusLookAndFeel`でも有効だが、`JMenuBar`に追加されている`JMenu`に`Menu.arrowIcon`が不正に表示されてしまう現象は同じ
     
     <pre class="prettyprint"><code>UIManager.getLookAndFeelDefaults().put("Menu.arrowIcon", new ArrowIcon());
 
 </code></pre>
 - `NimbusLookAndFeel`などの場合、個別に`JMenu#putClientProperty("Nimbus.Overrides", ...)`でアイコンを変更することで回避可能
-- 親が`JMenuBar`のコンポーネントにアイコンが設定されている場合は、非表示にすることで回避可能
+- 親が`JMenuBar`のコンポーネントにアイコンが設定されている場合は非表示にすることで回避可能
     
     <pre class="prettyprint"><code>class ArrowIcon implements Icon {
       @Override public void paintIcon(Component c, Graphics g, int x, int y) {

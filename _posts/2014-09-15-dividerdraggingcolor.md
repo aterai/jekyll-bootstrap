@@ -20,9 +20,9 @@ comments: true
 </code></pre>
 
 ## 解説
-- `JSplitPane`の`Divider`がドラッグ中でその移動先を示す矩形の色を変更する場合、`SplitPaneDivider.draggingColor`を変更する
+- `JSplitPane`の`Divider`がドラッグ中でその移動先を示す矩形の色を変更する場合`SplitPaneDivider.draggingColor`を変更する
     - `JSplitPane#setContinuousLayout(false)`が設定されている`JSplitPane`のみ半透明は有効
-- ドラッグ中ではない`Divider`の色は、`LookAndFeel`に依存するが以下のような方法で変更可能
+- ドラッグ中ではない`Divider`の色は`LookAndFeel`に依存するが以下のような方法で変更可能
     
     <pre class="prettyprint"><code>BasicSplitPaneDivider divider = ((BasicSplitPaneUI) getUI()).getDivider();
     divider.setBackground(Color.ORANGE);

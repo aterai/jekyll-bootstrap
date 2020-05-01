@@ -16,19 +16,30 @@ comments: true
 {% download https://lh4.googleusercontent.com/--XCIC-Dhgwk/UU8M_ixmZeI/AAAAAAAABoU/aXonTNvOs0A/s800/DisabledAreNavigable.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE);
+<pre class="prettyprint"><code>// UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE);
+String key = "MenuItem.disabledAreNavigable";
+boolean b = UIManager.getBoolean(key);
+System.out.println(key + ": " + b);
+JCheckBox check = new JCheckBox(key, b) {
+  @Override public void updateUI() {
+    super.updateUI();
+    setSelected(UIManager.getLookAndFeelDefaults().getBoolean(key));
+    UIManager.put(key, isSelected());
+  }
+};
+check.addActionListener(e -&gt; UIManager.put(key, ((JCheckBox) e.getSource()).isSelected()));
 </code></pre>
 
 ## 解説
 - `WindowsLookAndFeel`
     - `UIManager.getLookAndFeelDefaults().getBoolean("MenuItem.disabledAreNavigable")`の初期値は`true`
-    - `UIManager.put("MenuItem.disabledAreNavigable", ...)`で、`Disabled`な`JMenuItem`をハイライトするかどうかを切替可能
+    - `UIManager.put("MenuItem.disabledAreNavigable", ...)`で`Disabled`な`JMenuItem`をハイライトするかどうかを切替可能
 - `MetalLookAndFeel`
     - `UIManager.getLookAndFeelDefaults().getBoolean("MenuItem.disabledAreNavigable")`の初期値は`false`
-    - `UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`を設定すれば、`Disabled`な`JMenuItem`でもハイライトが可能
+    - `UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`を設定すれば`Disabled`な`JMenuItem`でもハイライトが可能
 - `NimbusLookAndFeel`
     - `UIManager.getLookAndFeelDefaults().getBoolean("MenuItem.disabledAreNavigable")`の初期値は`false`
-    - `UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`を設定しても、`Disabled`な`JMenuItem`をハイライト不可
+    - `UIManager.put("MenuItem.disabledAreNavigable", Boolean.TRUE)`を設定しても`Disabled`な`JMenuItem`をハイライト不可
 
 <!-- dummy comment line for breaking list -->
 

@@ -35,7 +35,7 @@ header.addMouseListener(new MouseAdapter() {
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTableHeader`に`MouseListener`を追加し、`JTableHeader#columnAtPoint(Point)`メソッドを使って、マウスでクリックされた位置にある`TableColumn`を取得しています。
+上記のサンプルでは、`JTableHeader`に`MouseListener`を追加し、`JTableHeader#columnAtPoint(Point)`メソッドを使ってマウスでクリックされた位置にある`TableColumn`を取得しています。
 
 `TableColumn`全体の選択は、`changeSelection`メソッドを`2`回使用することで実現しています。
 

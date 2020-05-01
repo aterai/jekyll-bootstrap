@@ -20,6 +20,7 @@ comments: true
   public TooltipList(ListModel&lt;E&gt; m) {
     super(m);
   }
+
   @Override public Point getToolTipLocation(MouseEvent event) {
     Point pt = null;
     if (event != null) {
@@ -44,10 +45,10 @@ comments: true
 
 ## 解説
 - 左: `CellBounds`
-    - `JList#getToolTipLocation()`をオーバーライドして、表示する`JToolTip`の原点を`JList#getCellBounds(int, int)`で取得したセル領域の左上に変更
+    - `JList#getToolTipLocation()`をオーバーライドして表示する`JToolTip`の原点を`JList#getCellBounds(int, int)`で取得したセル領域の左上に変更
 - 中: `ListCellRenderer`
-    - `JList#getToolTipLocation()`をオーバーライドして、表示する`JToolTip`の原点を`JList#getCellBounds(int, int)`で取得したセル領域の左上に変更
-    - `JList#createToolTip()`をオーバーライドして、セルの描画に使用するセルレンダラー自体を`JToolTip`に追加
+    - `JList#getToolTipLocation()`をオーバーライドして表示する`JToolTip`の原点を`JList#getCellBounds(int, int)`で取得したセル領域の左上に変更
+    - `JList#createToolTip()`をオーバーライドしてセルの描画に使用するセルレンダラー自体を`JToolTip`に追加
         - このため、対象セルが選択状態の場合`JToolTip`の背景色もそのセル選択色と同じになる
 - 右: `Default`
     - `JToolTip`の表示位置は、デフォルトのマウスカーソルの右下
@@ -55,26 +56,25 @@ comments: true
 <!-- dummy comment line for breaking list -->
 
 - - - -
-セル内に文字列が収まっているかどうかは、以下のようなセルレンダラーを使用して判定しています。
-
-<pre class="prettyprint"><code>class TooltipListCellRenderer extends DefaultListCellRenderer {
-  @Override public Component getListCellRendererComponent(
-        JList list, Object value, int index, boolean isSelected, boolean hasFocus) {
-    JLabel l = (JLabel) super.getListCellRendererComponent(
-        list, value, index, isSelected, hasFocus);
-    Insets i = l.getInsets();
-    Container c = SwingUtilities.getAncestorOfClass(JViewport.class, list);
-    Rectangle rect = c.getBounds();
-    rect.width -= i.left + i.right;
-    FontMetrics fm = l.getFontMetrics(l.getFont());
-    String str = Objects.toString(value, "");
-    l.setToolTipText(fm.stringWidth(str) &gt; rect.width ? str : null);
-    return l;
-  }
-}
+- セル内に文字列が収まっているかどうかは、以下のようなセルレンダラーを使用して判定可能
+    
+    <pre class="prettyprint"><code>class TooltipListCellRenderer extends DefaultListCellRenderer {
+      @Override public Component getListCellRendererComponent(
+            JList list, Object value, int index, boolean isSelected, boolean hasFocus) {
+        JLabel l = (JLabel) super.getListCellRendererComponent(
+            list, value, index, isSelected, hasFocus);
+        Insets i = l.getInsets();
+        Container c = SwingUtilities.getAncestorOfClass(JViewport.class, list);
+        Rectangle rect = c.getBounds();
+        rect.width -= i.left + i.right;
+        FontMetrics fm = l.getFontMetrics(l.getFont());
+        String str = Objects.toString(value, "");
+        l.setToolTipText(fm.stringWidth(str) &gt; rect.width ? str : null);
+        return l;
+      }
+    }
 </code></pre>
-
-## 参考リンク
+- * 参考リンク [#reference]
 - [JToolTipの表示位置](https://ateraimemo.com/Swing/ToolTipLocation.html)
 
 <!-- dummy comment line for breaking list -->

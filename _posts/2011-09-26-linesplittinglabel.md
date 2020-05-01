@@ -18,12 +18,14 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>class TricoloreLabel extends JComponent {
   private final GlyphVector gv;
+
   public TricoloreLabel(String str) {
     super();
     Font font = new Font(Font.SERIF, Font.PLAIN, 64);
     FontRenderContext frc = new FontRenderContext(null, true, true);
     gv = font.createGlyphVector(frc, str);
   }
+
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     int w = getWidth();

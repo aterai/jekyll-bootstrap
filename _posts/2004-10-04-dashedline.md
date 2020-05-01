@@ -37,9 +37,12 @@ comments: true
 </code></pre>
 
 ## 解説
-`BasicStroke`の破線属性を指定して点線をコンポーネント内に描画します。
+上記のサンプルでは、`BasicStroke`の破線属性を指定して点線をコンポーネント内に描画しています。
 
-上記のサンプルでは、カンマ区切りで記入した数値を配列に分解し、これを破線のパターンとして`BasicStroke`に渡しています。
+- - - -
+- 破線のパターンは`JTextField`にカンマ区切りで記入した数値を配列に分解し、これを`BasicStroke`に渡して作成
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [BasicStroke (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/BasicStroke.html)

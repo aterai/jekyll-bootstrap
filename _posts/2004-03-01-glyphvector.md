@@ -22,9 +22,11 @@ comments: true
   public WrappedLabel() {
     this(null);
   }
+
   public WrappedLabel(String str) {
     super(str);
   }
+
   @Override public void doLayout() {
     Insets i = getInsets();
     int w = getWidth() - i.left - i.right;
@@ -37,6 +39,7 @@ comments: true
     }
     super.doLayout();
   }
+
   @Override protected void paintComponent(Graphics g) {
     if (gvtext == null) {
       super.paintComponent(g);
@@ -48,6 +51,7 @@ comments: true
       g2.dispose();
     }
   }
+
   private GlyphVector getWrappedGlyphVector(
       String str, float width, Font font, FontRenderContext frc) {
     Point2D gmPos = new Point2D.Double(0d, 0d);
@@ -75,28 +79,34 @@ comments: true
 
 ## 解説
 - 上: `JLabel`
-    - デフォルトの`JLabel`で、折り返しせずに右側から`...`で省略
+    - デフォルトの`JLabel`で折り返しせずに右側から`...`で省略
 - 中: `GlyphVector`
-    - コンテナのサイズが変更されるたびに`GlyphVector`を更新して、文字列の折り返しを実行
-    - 欧文などで合字(リガチャ)がある場合は、`GlyphVector gv = font.createGlyphVector(frc, str);`ではなく、[GlyphVector bounds and kerning, ligatures | Oracle Forums](https://community.oracle.com/thread/1289266)のように、`char[] chars = text.toCharArray(); GlyphVector gv = font.layoutGlyphVector(frc, chars, 0, chars.length, Font.LAYOUT_LEFT_TO_RIGHT);`とした方が良さそう
+    - コンテナのサイズが変更されるたびに`GlyphVector`を更新して文字列の折り返しを実行
+    - 欧文などで合字(リガチャ)がある場合は`GlyphVector gv = font.createGlyphVector(frc, str);`ではなく、[GlyphVector bounds and kerning, ligatures | Oracle Forums](https://community.oracle.com/thread/1289266)のように`char[] chars = text.toCharArray(); GlyphVector gv = font.layoutGlyphVector(frc, chars, 0, chars.length, Font.LAYOUT_LEFT_TO_RIGHT);`とした方が良さそう
 - 下: `JTextArea`
-    - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として、文字列の折り返しを実行
+    - `JLabel`の`Font`と背景色を同じものに設定した編集不可の`JTextArea`を`setLineWrap(true);`として文字列の折り返しを実行
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-ラベルの幅ではなく、任意の場所で文字列を改行したい場合は、以下のように`JLabel`に`html`の`<br>`タグを利用したり、編集不可にした`JTextPane`、`JTextArea`などを使用します(参考: [JTextPane、JLabelなどで複数行を表示](https://ateraimemo.com/Swing/MultiLineLabel.html))。
+- ラベルの幅ではなく任意の場所で文字列を改行したい場合は、以下のように`JLabel`に`html`の`<br>`タグを利用したり、編集不可にした`JTextPane`、`JTextArea`などが使用可能
+    - 参考: [JTextPane、JLabelなどで複数行を表示](https://ateraimemo.com/Swing/MultiLineLabel.html)
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>label.setText("&lt;html&gt;文字列を適当なところで&lt;br /&gt;折り返す。");
 </code></pre>
 
 - - - -
-`AttributedString`と`LineBreakMeasurer`を使って、文字列の折り返しを描画する方法もあります。
+- `AttributedString`と`LineBreakMeasurer`を使って文字列の折り返しを描画する方法もある
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>class WrappingLabel extends JLabel {
   public WrappingLabel(String text) {
     super(text);
   }
+
   @Override protected void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g.create();
     g2.setPaint(getForeground());

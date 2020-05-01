@@ -25,7 +25,10 @@ label.setToolTipText("&lt;html&gt;&amp;lt;html&amp;gt;&amp;lt;font color=red&amp
 上記のサンプルでは、`JLabel`などに`putClientProperty("html.disable", Boolean.TRUE)`を設定することで、`<html>`タグとしてレンダリングせずにそのまま文字列として表示しています。
 
 - - - -
-`JLabel`に、`putClientProperty("html.disable", Boolean.TRUE)`としても、その `JLabel`の`JToolTip`には反映されないので、`<html>`タグの中で文字実体参照を使用しています。
+- `JLabel`に`putClientProperty("html.disable", Boolean.TRUE)`を設定しても、その`JLabel`の`JToolTip`には反映されない
+    - `<html>`タグの中で文字実体参照を使用して回避
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [Htmlを使ったJLabelとJEditorPaneの無効化](https://ateraimemo.com/Swing/DisabledHtmlLabel.html)

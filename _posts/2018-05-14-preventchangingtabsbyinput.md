@@ -26,12 +26,14 @@ comments: true
         | AWTEvent.FOCUS_EVENT_MASK | AWTEvent.COMPONENT_EVENT_MASK);
     }
   }
+
   @Override public void uninstallUI(JComponent c) {
     if (c instanceof JLayer) {
       ((JLayer&lt;?&gt;) c).setLayerEventMask(0);
     }
     super.uninstallUI(c);
   }
+
   @Override public void eventDispatched(AWTEvent e, JLayer&lt;? extends Component&gt; l) {
     if (e instanceof InputEvent &amp;&amp; Objects.equals(l.getView(), e.getSource())) {
       ((InputEvent) e).consume();
@@ -42,18 +44,18 @@ comments: true
 
 ## 解説
 - 上: `setEnabled(false)`
-    - `JTabbedPane#setEnabled(false)`で、すべてのタブの切替を禁止
+    - `JTabbedPane#setEnabled(false)`ですべてのタブの切替を禁止
         - 内部タブコンポーネントには影響しない
         - `next`ボタンで`JTabbedPane#setSelectedIndex(...)`メソッドを使用してタブを切り替えることは可能
     - `JTabbedPane#setFocusable(false)`を設定している場合でも、`WindowsLookAndFeel`ではマウスカーソルのあるタブがハイライトされる
         - `UIManager.put("TabbedPane.disabledAreNavigable", Boolean.TRUE)`は効果がない
         - [DisabledなJMenuItemのハイライトをテスト](https://ateraimemo.com/Swing/DisabledAreNavigable.html)
 - 中: `setTabComponentAt(...)`
-    - 上のサンプルと同様に`JTabbedPane#setEnabled(false)`で、すべてのタブの切替を禁止
-    - `JTabbedPane#setTabComponentAt(idx, new JLabel(title))`で、タブタイトルコンポーネントを`JLabel`に置き換え、使用不可になっているタブタイトルの文字色を使用可の状態に戻す
+    - 上のサンプルと同様に`JTabbedPane#setEnabled(false)`ですべてのタブの切替を禁止
+    - `JTabbedPane#setTabComponentAt(idx, new JLabel(title))`でタブタイトルコンポーネントを`JLabel`に置き換え、使用不可になっているタブタイトルの文字色を使用可の状態に戻す
 - 下: `DisableInputLayerUI()`
-    - `JTabbedPane`にマウスイベントやキー入力イベントをすべて消費する`LayerUI`を設定して、すべてのタブの切替を禁止
-    - `LayerUI#eventDispatched(...)`メソッドをオーバーライドして、すべての`InputEvent`を消費すると、内部タブコンポーネント(このサンプルでは`JTextField`)も入力不可になるので、`JLayer`を設定した`JTabbedPane`の場合のみイベントを消費する用設定
+    - `JTabbedPane`にマウスイベントやキー入力イベントをすべて消費する`LayerUI`を設定してすべてのタブの切替を禁止
+    - `LayerUI#eventDispatched(...)`メソッドをオーバーライドしてすべての`InputEvent`を消費すると内部タブコンポーネント(このサンプルでは`JTextField`)も入力不可になるので、`JLayer`を設定した`JTabbedPane`の場合のみイベントを消費する用設定
         
         <pre class="prettyprint"><code>@Override
         public void eventDispatched(AWTEvent e, JLayer&lt;? extends Component&gt; l) {
