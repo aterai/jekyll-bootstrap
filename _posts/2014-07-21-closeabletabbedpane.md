@@ -20,6 +20,7 @@ comments: true
   private final JComponent rubberStamp = new JPanel();
   private final Point pt = new Point(-100, -100);
   private final JButton button = new JButton(new CloseTabIcon());
+
   public CloseableTabbedPaneLayerUI() {
     super();
     button.setBorder(BorderFactory.createEmptyBorder());
@@ -28,6 +29,7 @@ comments: true
     button.setContentAreaFilled(false);
     button.setRolloverEnabled(false);
   }
+
   @Override public void paint(Graphics g, JComponent c) {
     super.paint(g, c);
     if (c instanceof JLayer) {
@@ -44,6 +46,7 @@ comments: true
       }
     }
   }
+
   @Override public void installUI(JComponent c) {
     super.installUI(c);
     if (c instanceof JLayer) {
@@ -51,12 +54,14 @@ comments: true
           AWTEvent.MOUSE_EVENT_MASK |AWTEvent.MOUSE_MOTION_EVENT_MASK);
     }
   }
+
   @Override public void uninstallUI(JComponent c) {
     if (c instanceof JLayer) {
       ((JLayer) c).setLayerEventMask(0);
     }
     super.uninstallUI(c);
   }
+
   @Override protected void processMouseEvent(
       MouseEvent e, JLayer&lt;? extends JTabbedPane&gt; l) {
     if (e.getID() == MouseEvent.MOUSE_CLICKED) {
@@ -75,6 +80,7 @@ comments: true
       }
     }
   }
+
   @Override protected void processMouseMotionEvent(
       MouseEvent e, JLayer&lt;? extends JTabbedPane&gt; l) {
     pt.setLocation(e.getPoint());

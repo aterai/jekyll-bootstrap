@@ -21,13 +21,13 @@ cb.setBorder(BorderFactory.createEmptyBorder());
 
 TableColumn col = table.getColumnModel().getColumn(1);
 col.setCellEditor(new DefaultCellEditor(cb));
-//col.setCellRenderer(new ComboBoxCellRenderer());
+// col.setCellRenderer(new ComboBoxCellRenderer());
 </code></pre>
 
 ## 解説
 上記のサンプルでは、`1`列目のセルエディタとしてコンボボックスを使う`DefaultCellEditor`を登録しています。
 
-- コンボボックスの余白を`0`に設定すれば、セル内にきれいに収納される
+- コンボボックスの余白を`0`に設定すればセル内にきれいに収納される
     - 参考: [Santhosh Kumar's Weblog : Santhosh Kumar's Weblog](http://www.jroller.com/page/santhosh?entry=tweaking_jtable_editing)
 - 以下は余白を`0`にしていない場合
 

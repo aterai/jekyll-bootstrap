@@ -82,6 +82,7 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
       }
     });
   }
+
   @Override public Component getTableCellEditorComponent(
     JTable table, Object value, boolean isSelected, int row, int column) {
     this.setBackground(table.getSelectionBackground());
@@ -90,23 +91,24 @@ class ButtonsEditor extends ButtonsPanel implements TableCellEditor {
     label.setText("" + i);
     return this;
   }
+
   @Override public Object getCellEditorValue() {
     return i;
   }
 
-  //Copied from AbstractCellEditor
+  // Copied from AbstractCellEditor
   // ...
 </code></pre>
 
 ## 解説
 - `0`列目: `JPanel` + `JSpinner`
-    - `TableCellEditor`, `TableCellRenderer`に`JSpinner`を配置した`JPanel`を使用
+    - `TableCellEditor`、`TableCellRenderer`に`JSpinner`を配置した`JPanel`を使用
     - `JPanel`に`GridBagLayout`を指定し、`insets = new Insets(0, 10, 0, 10)`、`fill = GridBagConstraints.HORIZONTAL`で余白を設定
     - [JTableのCellEditorに設定したJComboBoxに余白を追加する](https://ateraimemo.com/Swing/ComboBoxCellEditorInsets.html)
 - `1`列目: `JPanel` + `JLabel` + `JButton`
-    - `TableCellEditor`, `TableCellRenderer`に`JLabel`と`2`つの`JButton`を配置した`JPanel`を使用
+    - `TableCellEditor`、`TableCellRenderer`に`JLabel`と`2`つの`JButton`を配置した`JPanel`を使用
     - `JPanel`には`FlowLayout`を指定
-        - カラム幅が狭くなって折り返しが発生してもセルの高さは変化しないので、コンポーネントが見切れてしまう
+        - カラム幅が狭くなって折り返しが発生してもセルの高さは変化しないのでコンポーネントが見切れてしまう
     - [JTableのセルに複数のJButtonを配置する](https://ateraimemo.com/Swing/MultipleButtonsInTableCell.html)
 
 <!-- dummy comment line for breaking list -->

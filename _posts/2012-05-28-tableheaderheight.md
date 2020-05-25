@@ -32,14 +32,14 @@ scroll.setColumnHeader(new JViewport() {
 ## 解説
 - 上
     - `JTableHeader`に`null`(デフォルト)以外のサイズを`setPreferredSize(...)`で設定
-    - 列幅の調整を自動的に行わない`JTable.AUTO_RESIZE_OFF`モードの場合、設定されたこのサイズが列の追加や列幅の変更で更新されないため、ヘッダの描画が不正になる
+    - 列幅の調整を自動的に行わない`JTable.AUTO_RESIZE_OFF`モードの場合、設定されたこのサイズが列の追加や列幅の変更で更新されないためヘッダの描画が不正になる
         - [JTableのJTalbeHeaderの高さを変更して列幅の合計が１２００ピクセルを超えて横スクロールするとバグった。 - kensir0uのしくみ](http://d.hatena.ne.jp/kensir0u/20090416/1239898154)
-    - `JTable.AUTO_RESIZE_OFF`以外の場合は、`setPreferredSize(...)`で設定された幅は無視されて、`JTable`の幅が使用される
+    - `JTable.AUTO_RESIZE_OFF`以外の場合は`setPreferredSize(...)`で設定された幅は無視されて`JTable`の幅が使用される
 
 <!-- dummy comment line for breaking list -->
 
 - 下
-    - `JViewport#getPreferredSize()`もしくは、`JTableHeader#getPreferredSize()`をオーバーライドして、`JTableHeader`の高さを変更
+    - `JViewport#getPreferredSize()`もしくは`JTableHeader#getPreferredSize()`をオーバーライドして`JTableHeader`の高さを変更
         
         <pre class="prettyprint"><code>table.setTableHeader(new JTableHeader(table.getColumnModel()) {
           @Override public Dimension getPreferredSize() {
@@ -50,7 +50,7 @@ scroll.setColumnHeader(new JViewport() {
         });
 </code></pre>
     - `viewport.setPreferredSize(...)`と設定しても可?
-    - `JTableHeader#getHeight()`をオーバーライドすると、ヘッダ文字列などの描画だけ変更される
+    - `JTableHeader#getHeight()`をオーバーライドするとヘッダ文字列などの描画だけ変更される
         - `getHeight()`は`JTableHeader#getHeaderRect()`で使用されているため
 
 <!-- dummy comment line for breaking list -->

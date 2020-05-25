@@ -17,15 +17,15 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>public JTable makeTable() {
-  final JTable table = new JTable(model);
-  final RowFilter&lt;TableModel, Integer&gt; filter = new RowFilter&lt;&gt;() {
+  JTable table = new JTable(model);
+  RowFilter&lt;TableModel, Integer&gt; filter = new RowFilter&lt;&gt;() {
     @Override public boolean include(
       Entry&lt;? extends TableModel, ? extends Integer&gt; entry) {
       int i0 = table.convertRowIndexToView(entry.getIdentifier());
       return i0 != 0;
     }
   };
-  final TableRowSorter&lt;TableModel&gt; s = new TableRowSorter&lt;TableModel&gt;(model) {
+  TableRowSorter&lt;TableModel&gt; s = new TableRowSorter&lt;TableModel&gt;(model) {
     @Override public void toggleSortOrder(int column) {
       RowFilter&lt;? super TableModel, ? super Integer&gt; f = getRowFilter();
       setRowFilter(null);
@@ -34,7 +34,7 @@ comments: true
     }
   };
   s.setRowFilter(filter);
-  //s.setSortsOnUpdates(true);
+  // s.setSortsOnUpdates(true);
   s.toggleSortOrder(1);
   table.setRowSorter(s);
 

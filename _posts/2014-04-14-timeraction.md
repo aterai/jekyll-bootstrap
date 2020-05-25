@@ -16,7 +16,7 @@ comments: true
 {% download https://lh6.googleusercontent.com/-Kc02XwN3fHA/U0qu1BcXNEI/AAAAAAAACDg/UDwGuPoJmjk/s800/TimerAction.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//Timer: 1, ActionListener: 100
+<pre class="prettyprint"><code>// Timer: 1, ActionListener: 100
 class Tile2 extends JComponent {
   private int red;
   public Tile2(final Random rnd, Timer timer) {
@@ -28,9 +28,11 @@ class Tile2 extends JComponent {
       }
     });
   }
+
   @Override public Dimension getPreferredSize() {
     return new Dimension(10, 10);
   }
+
   @Override protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     g.setColor(new Color(red, 255 - red, 0));
@@ -41,13 +43,13 @@ class Tile2 extends JComponent {
 
 ## 解説
 - `Timer: 100`
-    - `10x10`個のアニメーション用タイル(`JComponent`)一つに、それぞれ`Timer`を生成して使用(その為、`Timer`も`10x10`個存在する)
+    - `10x10`個のアニメーション用タイル(`JComponent`)一つにそれぞれ`Timer`を生成して使用(その為`Timer`も`10x10`個存在する)
     - ~~`JDK 1.7.0_40`以降で低速~~ すでに修正済みで、上記のサンプルは他と差がない
-    - `JDK 1.8.0`以降は、`JDK 1.7.0_25`と同等
+    - `JDK 1.8.0`以降は`JDK 1.7.0_25`と同等
 - `Timer: 1, ActionListener: 100`
     - `Timer`は`1`個、`Timer#addActionListener(...)`で、`100`個の`ActionListener`を追加して使用
 - `Timer: 1, ActionListener: 1`
-    - `1`個の`Timer`を使用し、`for`ループで`10x10`のラベルの色を変更してアニメーションを実行
+    - `1`個の`Timer`を使用し`for`ループで`10x10`のラベルの色を変更してアニメーションを実行
 
 <!-- dummy comment line for breaking list -->
 

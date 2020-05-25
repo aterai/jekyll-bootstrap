@@ -17,9 +17,9 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>public static Stream&lt;Component&gt; stream(Container parent) {
-  return Arrays.stream(parent.getComponents())
-    .filter(Container.class::isInstance).map(c -&gt; stream(Container.class.cast(c)))
-    .reduce(Stream.of(parent), Stream::concat);
+  return Stream.of(parent.getComponents())
+      .filter(Container.class::isInstance).map(c -&gt; stream((Container) c))
+      .reduce(Stream.of(parent), Stream::concat);
 }
 // ...
 stream(chooser)

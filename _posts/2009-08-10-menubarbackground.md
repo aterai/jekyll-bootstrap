@@ -40,6 +40,7 @@ comments: true
   }
   return mb;
 }
+
 private JMenu createMenu(String key) {
   JMenu menu = new JMenu(key) {
     @Override protected void fireStateChanged() {
@@ -57,7 +58,7 @@ private JMenu createMenu(String key) {
     };
   };
   if ("Windows XP".equals(System.getProperty("os.name"))) {
-    menu.setBackground(new Color(0x0, true)); //XXX Windows XP lnf?
+    menu.setBackground(new Color(0x0, true)); // XXX: Windows XP lnf?
   }
   menu.add("dummy1"); menu.add("dummy2"); menu.add("dummy3");
   return menu;
@@ -67,14 +68,15 @@ private JMenu createMenu(String key) {
 ## 解説
 上記のサンプルでは、`JMenuBar`に画像を描画し、これに追加する`JMenu`を通常は透明、選択されたときなどは不透明となるように`setOpaque`メソッドで切り替えています。
 
-- 注:
-    - `WindowsLookAndFeel`の場合、`JMenu#setBackground(new Color(0x0, true));`を設定する必要がある
-    - `WindowsLookAndFeel`に切り替えた直後、メニューの文字色などがおかしい？
+- `WindowsLookAndFeel`の場合、`JMenu#setBackground(new Color(0x0, true))`を設定する必要がある
+- `WindowsLookAndFeel`に切り替えた直後のメニュー文字色などがおかしい？
 
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`JFrame#setJMenuBar()`で追加した`JMenuBar`を透明にする場合のテスト
+- `JFrame#setJMenuBar()`で追加した`JMenuBar`を透明にする場合のテスト
+
+<!-- dummy comment line for breaking list -->
 
 <pre class="prettyprint"><code>import java.awt.*;
 import java.awt.image.*;

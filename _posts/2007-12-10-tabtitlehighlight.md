@@ -28,10 +28,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTabbedPane`に`MouseMotionListener`を追加し、`JTabbedPane#indexAtLocation`メソッドで、マウスカーソルの下にあるタブを取得しています。
+上記のサンプルでは、`JTabbedPane`に`MouseMotionListener`を追加し`JTabbedPane#indexAtLocation`メソッドでマウスカーソルの下にあるタブを取得しています。
 
 - タブ文字色の変更が可能かは`LookAndFeel`に依存する
-    - 例えば`GTKLookAndFeel`では変更不可
+    - 例えば`GTKLookAndFeel`では`JTabbedPane#setForegroundAt(...)`メソッドでのタイトル変更は不可
 
 <!-- dummy comment line for breaking list -->
 

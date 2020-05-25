@@ -27,6 +27,7 @@ comments: true
     super(comboBox);
     panel = new PluginPanel(comboBox);
   }
+
   @Override public Component getTreeCellEditorComponent(
       JTree tree, Object value, boolean selected, boolean expanded,
       boolean leaf, int row) {
@@ -35,6 +36,7 @@ comments: true
     this.node = node;
     return panel;
   }
+
   @Override public Object getCellEditorValue() {
     Object o = super.getCellEditorValue();
     if (node == null) {
@@ -46,6 +48,7 @@ comments: true
     n.setSelectedPluginIndex(m.getIndexOf(o));
     return n;
   }
+
   @Override public boolean isCellEditable(EventObject e) {
     Object source = e.getSource();
     if (!(source instanceof JTree) || !(e instanceof MouseEvent)) {
@@ -73,6 +76,7 @@ comments: true
     }
     return delegate.isCellEditable(e);
   }
+
   private void showComboPopup(final JTree tree, final MouseEvent me) {
     EventQueue.invokeLater(new Runnable() {
       @Override public void run() {

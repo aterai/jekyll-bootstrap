@@ -17,8 +17,8 @@ comments: true
 
 ## サンプルコード
 <pre class="prettyprint"><code>editor.setEditable(false);
-//@see: BasicEditorPaneUI#propertyChange(PropertyChangeEvent evt) {
-//      if ("foreground".equals(name)) {
+// @see: BasicEditorPaneUI#propertyChange(PropertyChangeEvent evt) {
+//   if ("foreground".equals(name)) {
 editor.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
 editor.addHyperlinkListener(new HyperlinkListener() {
   @Override public void hyperlinkUpdate(HyperlinkEvent e) {
@@ -29,7 +29,7 @@ editor.addHyperlinkListener(new HyperlinkListener() {
     } else if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
       Toolkit.getDefaultToolkit().beep();
     }
-    //??? call BasicTextUI#modelChanged() ???
+    // ??? call BasicTextUI#modelChanged() ???
     editor.setForeground(Color.WHITE);
     editor.setForeground(Color.BLACK);
   }
@@ -37,9 +37,9 @@ editor.addHyperlinkListener(new HyperlinkListener() {
 </code></pre>
 
 ## 解説
-- [JLabelで表示するHtmlアンカータグの文字色を変更する](https://ateraimemo.com/Swing/AnchorTextColor.html)のように`StyleSheet`を使用して、`addRule("a:hover{color:#FF0000;}")`を設定しても効果がない
+- [JLabelで表示するHtmlアンカータグの文字色を変更する](https://ateraimemo.com/Swing/AnchorTextColor.html)のように`StyleSheet`を使用して`addRule("a:hover{color:#FF0000;}")`を設定しても効果がない
 - `HyperlinkListener`を`JEditorPane`に設定し、`HyperlinkEvent.EventType.ENTERED`イベントでリンク文字色を赤に変更、`HyperlinkEvent.EventType.EXITED`イベントで青に戻すよう設定
-- リンク文字色の変更は`HyperlinkEvent`から取得した`Element`の属性に、以下のように`addAttribute(HTML.Attribute.COLOR, color)`メソッドを使用して設定
+- リンク文字色の変更は`HyperlinkEvent`から取得した`Element`の属性に以下のように`addAttribute(HTML.Attribute.COLOR, color)`メソッドを使用して設定
     
     <pre class="prettyprint"><code>private void setElementColor(Element element, String color) {
       AttributeSet attrs = element.getAttributes();

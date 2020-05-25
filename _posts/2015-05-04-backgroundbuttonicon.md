@@ -27,9 +27,11 @@ comments: true
         return super.contains(x, y);
       }
     }
+
     @Override public Dimension getPreferredSize() {
       return new Dimension(icon.getIconWidth(), icon.getIconHeight());
     }
+
     @Override protected void paintComponent(Graphics g) {
       icon.paintIcon(this, g, 0, 0);
       super.paintComponent(g);
@@ -40,9 +42,11 @@ comments: true
       g.setColor(Color.GRAY);
       g.drawOval(x, y, 12, 12);
     }
+
     @Override public int getIconWidth() {
       return 12;
     }
+
     @Override public int getIconHeight() {
       return 12;
     }
@@ -90,11 +94,11 @@ private static JComponent makeBreadcrumbList(
 </code></pre>
 
 ## 解説
-[FlowLayoutでボタンを重ねてパンくずリストを作成する](https://ateraimemo.com/Swing/BreadcrumbList.html)と同じように、`FlowLayout`の配置間隔をマイナスにすることでボタンの重なりを実現していますが、こちらのサンプルではボタンテキストを左揃えにするために、`JRadioButton#setIcon(Icon)`と`JRadioButton#setHorizontalTextPosition(SwingConstants.CENTER)`は使用せず、以下の`3`つのメソッドをオーバーライドした`JToggleButton`を使用しています。
+[FlowLayoutでボタンを重ねてパンくずリストを作成する](https://ateraimemo.com/Swing/BreadcrumbList.html)と同じように、`FlowLayout`の配置間隔をマイナスにすることでボタンの重なりを実現していますが、こちらのサンプルではボタンテキストを左揃えにするために`JRadioButton#setIcon(Icon)`と`JRadioButton#setHorizontalTextPosition(SwingConstants.CENTER)`は使用せず、以下の`3`つのメソッドをオーバーライドした`JToggleButton`を使用しています。
 
 - `JToggleButton#paintComponent(...)`をオーバーライドして非矩形アイコンを描画
 - `JToggleButton#getPreferredSize(...)`をオーバーライドして推奨サイズがアイコンと同じになるように設定
-- `JToggleButton#contains(...)`をオーバーライドして、非矩形アイコンの外側がマウスに反応しないように設定
+- `JToggleButton#contains(...)`をオーバーライドして非矩形アイコンの外側がマウスに反応しないように設定
 
 <!-- dummy comment line for breaking list -->
 

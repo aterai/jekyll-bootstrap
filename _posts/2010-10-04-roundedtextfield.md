@@ -19,9 +19,7 @@ comments: true
 {% download https://lh5.googleusercontent.com/_9Z4BYR88imo/TQTSMYm3vgI/AAAAAAAAAiY/37FVcZLSXI0/s800/RoundedTextField.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>//Unleash Your Creativity with Swing and the Java 2D API!
-//http://web.archive.org/web/20091205092230/http://java.sun.com/products/jfc/tsc/articles/swing2d/index.html
-JTextField textField01 = new JTextField(20) {
+<pre class="prettyprint"><code>JTextField textField01 = new JTextField(20) {
   @Override protected void paintComponent(Graphics g) {
     if (!isOpaque()) {
       int w = getWidth() - 1;
@@ -37,6 +35,7 @@ JTextField textField01 = new JTextField(20) {
     }
     super.paintComponent(g);
   }
+
   @Override public void updateUI() {
     super.updateUI();
     setOpaque(false);
@@ -69,6 +68,7 @@ JTextField textField01 = new JTextField(20) {
             }
             super.paintComponent(g);
           }
+        
           @Override public void updateUI() {
             super.updateUI();
             setOpaque(false);
@@ -92,13 +92,16 @@ JTextField textField01 = new JTextField(20) {
             g2.draw(border);
             g2.dispose();
           }
+        
           public Shape getBorderShape(int x, int y, int w, int h) {
             int r = h; //h / 2;
             return new RoundRectangle2D.Double(x, y, w, h, r, r);
           }
+        
           @Override public Insets getBorderInsets(Component c) {
             return new Insets(4, 8, 4, 8);
           }
+        
           @Override public Insets getBorderInsets(Component c, Insets insets) {
             insets.set(4, 8, 4, 8);
             return insets;

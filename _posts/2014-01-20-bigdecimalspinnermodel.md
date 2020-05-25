@@ -21,12 +21,15 @@ comments: true
       double value, double minimum, double maximum, double stepSize) {
     super(value, minimum, maximum, stepSize);
   }
+
   @Override public Object getPreviousValue() {
     return incrValue(-1);
   }
+
   @Override public Object getNextValue() {
     return incrValue(+1);
   }
+
   private Number incrValue(int dir) {
     BigDecimal value    = BigDecimal.valueOf((Double) getNumber());
     BigDecimal stepSize = BigDecimal.valueOf((Double) getStepSize());

@@ -16,7 +16,7 @@ comments: true
 {% download https://lh4.googleusercontent.com/-c8oDt2QGtY0/UDHQKTuRMGI/AAAAAAAABRQ/dzH-cDi9lEw/s800/LabelForDisplayedMnemonic.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>JLabel label = new JLabel("Mail Adress: ");
+<pre class="prettyprint"><code>JLabel label = new JLabel("Mail Address: ");
 label.setDisplayedMnemonic('M');
 JTextField textField = new JTextField(12);
 label.setLabelFor(textField);
