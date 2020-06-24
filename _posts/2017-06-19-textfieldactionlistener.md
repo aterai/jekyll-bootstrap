@@ -21,18 +21,18 @@ textField2.addActionListener(e -&gt; append(((JTextField) e.getSource()).getText
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JTextField`に`ActionListener`などを追加して、<kbd>Enter</kbd>キーを入力した場合の動作をテストしています。
+上記のサンプルでは、`JTextField`に`ActionListener`などを追加して<kbd>Enter</kbd>キーを入力した場合の動作をテストしています。
 
 - 上:
     - デフォルトの`JTextField`
     - 自身にフォーカスがあり、かつ親の`JRootPane`に`DefaultButton`が設定されている場合、<kbd>Enter</kbd>キー入力で`DefaultButton`がクリックされる
 - 中:
     - `JTextField`のドキュメントに`DocumentListener`を追加
-    - `DocumentListener`は、<kbd>Enter</kbd>キーの入力には反応しない
+    - `DocumentListener`は<kbd>Enter</kbd>キーの入力には反応しない
     - 自身にフォーカスがあり、かつ親の`JRootPane`に`DefaultButton`が設定されている場合、<kbd>Enter</kbd>キー入力で`DefaultButton`がクリックされる
 - 下:
     - `JTextField`に`ActionListener`を追加
-    - 親の`JRootPane`に`DefaultButton`が設定されているかどうかに関わらず、<kbd>Enter</kbd>キー入力で自身に追加された`ActionListener`が実行される
+    - 親の`JRootPane`に`DefaultButton`が設定されているかどうかに関わらず<kbd>Enter</kbd>キー入力で自身に追加された`ActionListener`が実行される
     - この`ActionListener`はマウスクリックには反応しない
 
 <!-- dummy comment line for breaking list -->

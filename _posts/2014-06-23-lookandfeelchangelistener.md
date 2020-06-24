@@ -19,7 +19,7 @@ comments: true
 <pre class="prettyprint"><code>UIManager.addPropertyChangeListener(new PropertyChangeListener() {
   @Override public void propertyChange(PropertyChangeEvent e) {
     if (e.getPropertyName().equals("lookAndFeel")) {
-      //String lnf = e.getNewValue().toString();
+      // String lnf = e.getNewValue().toString();
       updateCheckBox("UIManager: propertyChange");
     }
   }
@@ -30,14 +30,14 @@ comments: true
 上記のサンプルでは、以下の`3`種類の方法で`LookAndFeel`の変更を取得するテストを行っています。
 
 - `UIManager`: `propertyChange`
-    - `UIManager.addPropertyChangeListener(PropertyChangeListener)`を使用して、`LookAndFeel`の変更を取得
-    - このサンプルでは、初回の`UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());`の実行後に`PropertyChangeListener`を設定しているため、それには反応しない
+    - `UIManager.addPropertyChangeListener(PropertyChangeListener)`を使用して`LookAndFeel`の変更を取得
+    - このサンプルでは、初回の`UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())`の実行後に`PropertyChangeListener`を設定しているためそれには反応しない
 - `JPanel`: `updateUI`
-    - `LookAndFeel`の変更(`SwingUtilities.updateComponentTreeUI(...)`が実行)されると、必ず呼び出される`JComponent.updateUI()`をオーバーライドして変更を取得
+    - `LookAndFeel`の変更(`SwingUtilities.updateComponentTreeUI(...)`が実行)されると必ず呼び出される`JComponent.updateUI()`をオーバーライドして変更を取得
     - このメソッドをオーバーライドしたコンポーネントのコンストラクタが実行される前に呼び出される場合があるので、子コンポーネントの更新は`EventQueue.invokeLater(...)`を使って一連の`UI`イベントの一番最後に実行する
 - `JMenuItem`: `actionPerformed`
-    - このサンプルでは、`JRadioButtonMenuItem`で`LookAndFeel`を切り替えているので、各ボタンに`ActionListener`を追加し、チェックされた時に`LookAndFeel`の変更を取得している
-    - アクションが実行された時点では、`LookAndFeel`の変更が完了しておらず、`UIManager`のプロパティ値も前の`LookAndFeel`のままなので、その値の取得は`EventQueue.invokeLater(...)`を使って一連の`UI`イベントの一番最後に実行する
+    - このサンプルでは、`JRadioButtonMenuItem`で`LookAndFeel`を切り替えているので各ボタンに`ActionListener`を追加し、チェックされた時に`LookAndFeel`の変更を取得している
+    - アクションが実行された時点では`LookAndFeel`の変更が完了しておらず`UIManager`のプロパティ値も前の`LookAndFeel`のままなので、その値の取得は`EventQueue.invokeLater(...)`を使って一連の`UI`イベントの一番最後に実行する
 
 <!-- dummy comment line for breaking list -->
 

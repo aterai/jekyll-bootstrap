@@ -35,19 +35,23 @@ comments: true
     p.add(checkBox);
     p.setBorder(UIManager.getBorder("Table.noFocusBorder"));
   }
+
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {
     checkBox.setSelected(Objects.equals(value, Boolean.TRUE));
-    //p.setBackground(table.getSelectionBackground());
+    // p.setBackground(table.getSelectionBackground());
     return p;
   }
+
   @Override public Object getCellEditorValue() {
     return checkBox.isSelected();
   }
+
   private class Handler extends MouseAdapter implements ActionListener {
     @Override public void actionPerformed(ActionEvent e) {
       fireEditingStopped();
     }
+
     @Override public void mousePressed(MouseEvent e) {
       Container c = SwingUtilities.getAncestorOfClass(JTable.class, e.getComponent());
       if (c instanceof JTable) {
@@ -60,6 +64,7 @@ comments: true
         }
       }
     }
+
     @Override public void mouseExited(MouseEvent e) {
       Container c = SwingUtilities.getAncestorOfClass(JTable.class, e.getComponent());
       if (c instanceof JTable) {
@@ -77,11 +82,11 @@ comments: true
 上記のサンプルでは、`JTable`の`Boolean`に対応する`TableCellEditor`として、中央に`JCheckBox`を配置した`JPanel`を適用しています。
 
 - デフォルトの`JTable.BooleanEditor`
-    - セル全体が`JCheckBox`になるため、チェックアイコン以外の余白をマウスでクリックした場合でも選択状態が変化する
+    - セル全体が`JCheckBox`になるためチェックアイコン以外の余白をマウスでクリックした場合でも選択状態が変化する
 - `CheckBoxPanelEditor`
     - `JPanel`の中央に`JCheckBox`を配置して作成
-    - 余白となる`JPanel`部分をクリックしても、`JCheckBox`の状態は変化しない
-    - `JCheckBox`をマウスでクリックした場合のみ、その選択状態が変化する
+    - 余白となる`JPanel`部分をクリックしても`JCheckBox`の状態は変化しない
+    - `JCheckBox`をマウスでクリックした場合のみその選択状態が変化する
 
 <!-- dummy comment line for breaking list -->
 
@@ -92,6 +97,7 @@ comments: true
         <pre class="prettyprint"><code>class CheckBoxPanelEditor extends AbstractCellEditor implements TableCellEditor {
           private final JPanel p = new JPanel(new GridBagLayout());
           private final JCheckBox checkBox = new JCheckBox();
+        
           public CheckBoxPanelEditor() {
             super();
             checkBox.setOpaque(false);
@@ -105,12 +111,14 @@ comments: true
             p.add(checkBox);
             p.setBorder(UIManager.getBorder("Table.noFocusBorder"));
           }
+        
           @Override public Component getTableCellEditorComponent(
               JTable table, Object value, boolean isSelected, int row, int column) {
             checkBox.setSelected(Objects.equals(value, Boolean.TRUE));
             p.setBackground(table.getSelectionBackground());
             return p;
           }
+        
           @Override public Object getCellEditorValue() {
             return checkBox.isSelected();
           }

@@ -25,6 +25,7 @@ comments: true
     table.addMouseListener(rol);
     table.addMouseMotionListener(rol);
   }
+
   @Override public Component getTableCellRendererComponent(
       JTable tbl, Object val, boolean isS, boolean hasF, int row, int col) {
     TableCellRenderer tcr = tbl.getTableHeader().getDefaultRenderer();
@@ -66,6 +67,7 @@ comments: true
       }
       table.repaint(repaintRect);
     }
+
     @Override public void mouseExited(MouseEvent e) {
       JTable table = (JTable) e.getComponent();
       Point pt = e.getPoint();
@@ -86,12 +88,15 @@ class ComponentIcon implements Icon {
   public ComponentIcon(JComponent cmp) {
     this.cmp = cmp;
   }
+
   @Override public int getIconWidth() {
     return 4000; //Short.MAX_VALUE;
   }
+
   @Override public int getIconHeight() {
     return cmp.getPreferredSize().height + 4; //XXX: +4 for Windows 7
   }
+
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
     SwingUtilities.paintComponent(
         g, cmp, (Container) c, x, y, getIconWidth(), getIconHeight());
@@ -102,11 +107,11 @@ class ComponentIcon implements Icon {
 ## 解説
 上記のサンプルでは、`0`列目のセルに`JTable#getTableHeader()#getDefaultRenderer()`メソッドで取得したセルレンダラーを使用する`TableCellRenderer`を適用しています。
 
-- ソートアイコンが列ヘッダに表示されていても、行ヘッダには表示しない
+- ソートアイコンが列ヘッダに表示されていても行ヘッダには表示しない
     - 引数の行と列を両方`-1`に設定して、`TableCellRenderer#getTableCellRendererComponent(...)`で描画用コンポーネント(`JLabel`)をヘッダセルレンダラーから取得
 - `WindowsLookAndFeel`
-    - ロールオーバーを描画する場合は、`TableCellRenderer#getTableCellRendererComponent(...)`で取得したコンポーネントを透明にする
-    - 右と下側に余白が発生するので、ヘッダセルレンダラーからサイズを変更したアイコンを作成して、`JLabel#setIcon(Icon)`で表示
+    - ロールオーバーを描画する場合は`TableCellRenderer#getTableCellRendererComponent(...)`で取得したコンポーネントを透明にする
+    - 右と下側に余白が発生するのでヘッダセルレンダラーからサイズを変更したアイコンを作成して`JLabel#setIcon(Icon)`で表示
 
 <!-- dummy comment line for breaking list -->
 

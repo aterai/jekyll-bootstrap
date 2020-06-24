@@ -55,7 +55,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`Shape`から`PathIterator`を取得し、そのパスを辿って`SVG`ファイルを生成しています。
+上記のサンプルでは、`Shape`から`PathIterator`を取得しそのパスを辿って`SVG`ファイルを生成しています。
 
 ## 参考リンク
 - [PathIterator (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/geom/PathIterator.html)

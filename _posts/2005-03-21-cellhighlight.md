@@ -20,12 +20,15 @@ comments: true
   private int row = -1;
   private int col = -1;
   private final JTable table;
+
   public HighlightListener(JTable table) {
     this.table = table;
   }
+
   public boolean isHighlightableCell(int row, int column) {
     return this.row == row &amp;&amp; this.col == column;
   }
+
   @Override public void mouseMoved(MouseEvent e) {
     Point pt = e.getPoint();
     row = table.rowAtPoint(pt);
@@ -36,21 +39,24 @@ comments: true
     }
     table.repaint();
   }
+
   @Override public void mouseExited(MouseEvent e) {
     row = -1;
     col = -1;
     table.repaint();
   }
 }
-</code></pre>
-<pre class="prettyprint"><code>class HighlightRenderer extends DefaultTableCellRenderer {
+
+class HighlightRenderer extends DefaultTableCellRenderer {
   private final HighlightListener highlighter;
+
   public HighlightRenderer(JTable table) {
     super();
     highlighter = new HighlightListener(table);
     table.addMouseListener(highlighter);
     table.addMouseMotionListener(highlighter);
   }
+
   @Override public Component getTableCellRendererComponent(JTable table,
         Object value, boolean isSelected, boolean hasFocus,
         int row, int column) {
@@ -76,12 +82,14 @@ comments: true
 
 <pre class="prettyprint"><code>class HighlightableTable extends JTable {
   private final HighlightListener highlighter;
+
   public HighlightableTable(TableModel model) {
     super(model);
     highlighter = new HighlightListener(this);
     addMouseListener(highlighter);
     addMouseMotionListener(highlighter);
   }
+
   @Override public Component prepareRenderer(
         TableCellRenderer r, int row, int column) {
     Component c = super.prepareRenderer(r, row, column);

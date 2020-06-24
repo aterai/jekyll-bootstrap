@@ -54,8 +54,14 @@ public JComponent makeUI() {
 </code></pre>
 
 ## 解説
-上記のサンプルを`Web Start`で実行した場合は、`Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null)`ではなく、`ClipboardService#getContents()`を使って、`Transferable`を取得するようになっています。
+- `Web Start`で実行:
+    - `ClipboardService#getContents()`を使って`Transferable`を取得
+- ローカル環境で実行:
+    - `Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null)`を使って`Transferable`を取得
 
+<!-- dummy comment line for breaking list -->
+
+- - - -
 - `Transferable`から文字列を取得
     - `Transferable#getTransferData(DataFlavor.stringFlavor)`
 - `Transferable`から画像を取得

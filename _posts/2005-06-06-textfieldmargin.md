@@ -19,12 +19,12 @@ comments: true
 <pre class="prettyprint"><code>Insets m = UIManager.getInsets("TextField.margin");
 InsetsUIResource iur = new InsetsUIResource(m.top, m.left + 5, m.bottom, m.right);
 UIManager.put("TextField.margin", iur);
-</code></pre>
-<pre class="prettyprint"><code>Insets m = field01.getMargin();
+
+Insets m = field01.getMargin();
 Insets margin = new Insets(m.top, m.left + 10, m.bottom, m.right);
 field01.setMargin(margin);
-</code></pre>
-<pre class="prettyprint"><code>Border b1 = BorderFactory.createEmptyBorder(0, 20, 0, 0);
+
+Border b1 = BorderFactory.createEmptyBorder(0, 20, 0, 0);
 Border b2 = BorderFactory.createCompoundBorder(field02.getBorder(), b1);
 field02.setBorder(b2);
 </code></pre>

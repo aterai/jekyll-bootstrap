@@ -27,7 +27,7 @@ comments: true
     col.setPreferredWidth(colwidth);
     total -= colwidth;
   }
-  //最後のカラムで余りを解消
+  // 最後のカラムで余りを解消
   m.getColumn(m.getColumnCount() - 1).setPreferredWidth(total);
   table.revalidate();
 }
@@ -36,12 +36,11 @@ comments: true
 ## 解説
 上記のサンプルでは、`JTextField`にコロン区切りで入力した比率に従って、各カラムヘッダの幅を調整しています。
 
-- `ComponentListener#componentResized(...)`がチェックされている場合
+- `ComponentListener#componentResized(...)`がチェックされている場合:
     - `JScrollPane`に追加した`ComponentListener`でリサイズが実行されると全ての列幅を設定し直すので、フレームのサイズを変更してもカラムの比率は保持される
-- `ComponentListener#componentResized(...)`がチェックされていない場合
-    - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズすると、その幅の変更([デルタ](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#doLayout--))が、リサイズ可能なすべての列に分散して加算減算される
-        - このため、入力されている比率とは異なる列幅になる
-- 注:
+- `ComponentListener#componentResized(...)`がチェックされていない場合:
+    - 列幅調整が`AUTO_RESIZE_SUBSEQUENT_COLUMNS`(デフォルト)なので、フレームをリサイズするとその幅の変更([デルタ](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JTable.html#doLayout--))がリサイズ可能なすべての列に分散して加算減算される
+        - このため入力されている比率とは異なる列幅になる
     - `TableColumn#setMaxWidth`メソッドでカラムの幅を指定する場合、マウスのドラッグによるリサイズは不可
 
 <!-- dummy comment line for breaking list -->

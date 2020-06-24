@@ -20,6 +20,7 @@ comments: true
   protected CheckableComboBoxModel(E[] items) {
     super(items);
   }
+
   public void fireContentsChanged(int index) {
     super.fireContentsChanged(this, index, index);
   }
@@ -29,6 +30,7 @@ class CheckedComboBox4&lt;E extends CheckableItem&gt; extends CheckedComboBox&lt
   protected CheckedComboBox4(ComboBoxModel&lt;E&gt; aModel) {
     super(aModel);
   }
+
   @Override protected void updateItem(int index) {
     if (isPopupVisible()) {
       E item = getItemAt(index);
@@ -43,7 +45,9 @@ class CheckedComboBox4&lt;E extends CheckableItem&gt; extends CheckedComboBox&lt
 </code></pre>
 
 ## 解説
-`JComboBox`の`BasicComboPopup`に表示されるリストは`JList`を使用しているため、マウスでクリックされたアイテムの状態を更新(上記のサンプルでは`JCheckBox`の選択状態の切替)しても、セルレンダラーでの描画は更新されません(同じアイテムがクリックされても再描画しないため)。このサンプルでは、`JComboBox`のアイテムの更新を描画に反映させるために以下のような方法をテストしています。
+`JComboBox`の`BasicComboPopup`に表示されるリストは`JList`を使用しているため、マウスでクリックされたアイテムの状態を更新(上記のサンプルでは`JCheckBox`の選択状態の切替)しても、セルレンダラーでの描画は更新されません(同じアイテムがクリックされても再描画しないため)。
+
+このサンプルでは、`JComboBox`のアイテムの更新を描画に反映させるために以下のような方法をテストしています。
 
 1. `setSelectedIndex(-1/idx)`
     - `JComboBox#setSelectedIndex(-1)`メソッドを使用して選択解除後、クリックされたアイテムを再選択することで描画を更新

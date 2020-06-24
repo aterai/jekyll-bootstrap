@@ -37,7 +37,9 @@ sorter.setRowFilter(new RowFilter&lt;TableModel, Integer&gt;() {
 <!-- dummy comment line for breaking list -->
 
 - - - -
-`DefaultRowSorter#setSortable(int, boolean)`を使用して、一部の列だけソート不可にする方法もあります。
+- `DefaultRowSorter#setSortable(int, boolean)`メソッドを使用して一部の列だけソート不可にする方法もある
+
+<!-- dummy comment line for breaking list -->
 
 ## 参考リンク
 - [DefaultRowSorter (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/DefaultRowSorter.html)

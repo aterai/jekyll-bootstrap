@@ -40,6 +40,7 @@ comments: true
     addSeparator();
     add("clearSelection").addActionListener(e -&gt; list.clearSelection());
   }
+
   @Override public void show(Component c, int x, int y) {
     if (c instanceof JList) {
       boolean isSelected = !((JList&lt;?&gt;) c).isSelectionEmpty();
@@ -54,8 +55,8 @@ comments: true
 ## 解説
 上記のサンプルでは、[TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)を元にし、ドラッグ＆ドロップに加えてクリップボード経由でのアイテム移動や複製が可能になるような`ListItemTransferHandler`を作成して、`JList`に設定しています。
 
-- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)では、`TransferHandler.TransferSupport#isDrop()`が`false`の場合はインポート不可(`TransferHandler#canImport(...) == false`)とし、また`ActionMap`でもキーボードによるコピーなどを無効に設定
-- このサンプルでは、`TransferHandler.TransferSupport#isDrop()`が`false`の場合は、以下のようにキーボード入力や`JPopupMenu`からのカット、コピー、ペーストと判断して、`JList#getSelectedIndex()`で取得した位置にアイテムを貼り込むように変更
+- [TransferHandlerを使ったJListのドラッグ＆ドロップによる並べ替え](https://ateraimemo.com/Swing/DnDReorderList.html)では`TransferHandler.TransferSupport#isDrop()`が`false`の場合はインポート不可(`TransferHandler#canImport(...) == false`)とし、また`ActionMap`でもキーボードによるコピーなどを無効に設定
+- このサンプルでは`TransferHandler.TransferSupport#isDrop()`が`false`の場合、以下のようにキーボード入力や`JPopupMenu`からのカット、コピー、ペーストと判断して`JList#getSelectedIndex()`で取得した位置にアイテムを貼り込むように変更
     
     <pre class="prettyprint"><code>private static int getIndex(TransferHandler.TransferSupport info) {
       JList&lt;?&gt; target = (JList&lt;?&gt;) info.getComponent();

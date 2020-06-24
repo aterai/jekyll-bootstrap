@@ -42,6 +42,7 @@ comments: true
     paintCircle(g2, thumbBounds, 10, ic);
     g2.dispose();
   }
+
   private void paintCircle(Graphics2D g2, Rectangle b, int w, Color c) {
     g2.setPaint(c);
     int ww = b.width - w;

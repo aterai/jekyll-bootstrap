@@ -19,6 +19,7 @@ comments: true
 <pre class="prettyprint"><code>class WidePopupMenuListener implements PopupMenuListener {
   private static final int POPUP_MIN_WIDTH = 300;
   private boolean adjusting;
+
   @Override public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
     JComboBox combo = (JComboBox) e.getSource();
     Dimension size = combo.getSize();
@@ -33,7 +34,9 @@ comments: true
     combo.setSize(size);
     adjusting = false;
   }
+
   @Override public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {}
+
   @Override public void popupMenuCanceled(PopupMenuEvent e) {}
 }
 </code></pre>

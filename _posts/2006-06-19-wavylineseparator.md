@@ -23,6 +23,7 @@ comments: true
   public WavyLineSeparator() {
     this(HORIZONTAL);
   }
+
   public WavyLineSeparator(int orientation) {
     super(orientation);
     if (orientation == HORIZONTAL) {
@@ -31,9 +32,10 @@ comments: true
       setBorder(BorderFactory.createEmptyBorder(1, 2, 1, 2));
     }
   }
+
   @Override protected void paintComponent(Graphics g) {
-    //super.paintComponent(g);
-    //g.setClip(0, 0, getWidth(), getHeight());
+    // super.paintComponent(g);
+    // g.setClip(0, 0, getWidth(), getHeight());
     int pos;
     Insets i = getInsets();
     if (getOrientation() == HORIZONTAL) {
@@ -46,6 +48,7 @@ comments: true
       }
     }
   }
+
   @Override public Dimension getPreferredSize() {
     Insets i = getInsets();
     if (getOrientation() == HORIZONTAL) {
@@ -60,9 +63,11 @@ comments: true
     public WavyLineIcon() {
       this.orientation = HORIZONTAL;
     }
+
     public WavyLineIcon(int orientation) {
       this.orientation = orientation;
     }
+
     @Override public void paintIcon(Component c, Graphics g, int x, int y) {
       Graphics2D g2 = (Graphics2D) g.create();
       AffineTransform oldTransform = g2.getTransform();
@@ -81,9 +86,11 @@ comments: true
       g2.setTransform(oldTransform);
       g2.dispose();
     }
+
     @Override public int getIconWidth() {
       return (orientation == HORIZONTAL) ? ICONWIDTH * 2 : ICONWIDTH;
     }
+
     @Override public int getIconHeight() {
       return (orientation == HORIZONTAL) ? ICONWIDTH : ICONWIDTH * 2;
     }

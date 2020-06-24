@@ -25,6 +25,7 @@ comments: true
       return d;
     }
   };
+
   protected AlignDecimalCellRenderer() {
     textPane.setOpaque(false);
     SimpleAttributeSet attr = new SimpleAttributeSet();
@@ -34,6 +35,7 @@ comments: true
     textPane.setParagraphAttributes(attr, false);
     p.add(textPane, BorderLayout.EAST);
   }
+
   @Override public Component getTableCellRendererComponent(
       JTable table, Object value, boolean isSelected, boolean hasFocus,
       int row, int column) {
@@ -57,7 +59,7 @@ comments: true
 - 小数点揃えを行う`TabStop.ALIGN_DECIMAL`を設定した`TabSet`を作成し、これを`JTextPane`に適用
 - `BorderLayout`を使用する`JPanel`の右側に、推奨幅を固定した`JTextPane`を配置
 - この`JPanel`をセルコンポーネントとして使用するセルレンダラーを作成
-- `TableCellRenderer#getTableCellRendererComponent(...)`メソッドでセル描画用のコンポーネントを返す際、`JTextPane`には実際の数値の前にタブ`\t`を挿入することで、指定した列の数値を小数点揃えで表示
+- `TableCellRenderer#getTableCellRendererComponent(...)`メソッドでセル描画用のコンポーネントを返す際、`JTextPane`には実際の数値の前にタブ`\t`を挿入することで指定した列の数値を小数点揃えで表示
 
 <!-- dummy comment line for breaking list -->
 
