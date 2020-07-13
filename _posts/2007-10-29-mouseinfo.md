@@ -18,15 +18,18 @@ comments: true
 ## サンプルコード
 <pre class="prettyprint"><code>public static final Dimension panelDim = new Dimension(320, 240);
 private final Racket racket = new Racket(panelDim);
+
 public MainPanel() {
   super(new BorderLayout());
   setPreferredSize(panelDim);
-  new javax.swing.Timer(10, this).start();
+  new Timer(10, this).start();
 }
+
 @Override protected void paintComponent(Graphics g) {
   super.paintComponent(g);
   racket.draw(g);
 }
+
 @Override public void actionPerformed(ActionEvent e) {
   PointerInfo pi = MouseInfo.getPointerInfo();
   Point pt = pi.getLocation();

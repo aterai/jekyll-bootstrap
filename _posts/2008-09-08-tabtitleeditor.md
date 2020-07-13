@@ -23,8 +23,9 @@ comments: true
 private int editing_idx = -1;
 private int len = -1;
 private Dimension dim;
+
 private void startEditing() {
-  //System.out.println("start");
+  // System.out.println("start");
   editing_idx  = tabbedPane.getSelectedIndex();
   tabComponent = tabbedPane.getTabComponentAt(editing_idx);
   tabbedPane.setTabComponentAt(editing_idx, editor);
@@ -36,8 +37,9 @@ private void startEditing() {
   dim = editor.getPreferredSize();
   editor.setMinimumSize(dim);
 }
+
 private void cancelEditing() {
-  //System.out.println("cancel");
+  // System.out.println("cancel");
   if (editing_idx &gt;= 0) {
     tabbedPane.setTabComponentAt(editing_idx, tabComponent);
     editor.setVisible(false);
@@ -47,8 +49,9 @@ private void cancelEditing() {
     editor.setPreferredSize(null);
   }
 }
+
 private void renameTabTitle() {
-  //System.out.println("rename");
+  // System.out.println("rename");
   String title = editor.getText().trim();
   if (editing_idx &gt;= 0 &amp;&amp; !title.isEmpty()) {
     tabbedPane.setTitleAt(editing_idx, title);

@@ -44,15 +44,19 @@ comments: true
       }
     }
   };
+
   public DisableItemComboBox() {
     super();
   }
+
   public DisableItemComboBox(ComboBoxModel&lt;E&gt; aModel) {
     super(aModel);
   }
+
   public DisableItemComboBox(E[] items) {
     super(items);
   }
+
   @Override public void updateUI() {
     super.updateUI();
     setRenderer(new DefaultListCellRenderer() {
@@ -76,17 +80,19 @@ comments: true
     am.put("selectPrevious3", up);
     am.put("selectNext3", down);
     InputMap im = getInputMap();
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0),      "selectPrevious3");
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_UP, 0),   "selectPrevious3");
-    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0),    "selectNext3");
+    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0), "selectPrevious3");
+    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_UP, 0), "selectPrevious3");
+    im.put(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0), "selectNext3");
     im.put(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0), "selectNext3");
   }
+
   public void setDisableIndex(Set&lt;Integer&gt; set) {
     disableIndexSet.clear();
     for (Integer i: set) {
       disableIndexSet.add(i);
     }
   }
+
   @Override public void setPopupVisible(boolean v) {
     if (!v &amp;&amp; isDisableIndex) {
       isDisableIndex = false;
@@ -94,6 +100,7 @@ comments: true
       super.setPopupVisible(v);
     }
   }
+
   @Override public void setSelectedIndex(int index) {
     if (disableIndexSet.contains(index)) {
       isDisableIndex = true;

@@ -25,7 +25,7 @@ comments: true
     super();
     scroll = new JScrollPane(this);
     scroll.setBorder(BorderFactory.createEmptyBorder());
-    //scroll.setViewportBorder(BorderFactory.createEmptyBorder());
+    // scroll.setViewportBorder(BorderFactory.createEmptyBorder());
 
     setLineWrap(true);
     setBorder(BorderFactory.createEmptyBorder(2, 4, 2, 4));
@@ -39,9 +39,11 @@ comments: true
       }
     });
   }
+
   @Override public Object getCellEditorValue() {
     return getText();
   }
+
   @Override public Component getTableCellEditorComponent(
       JTable table, Object value, boolean isSelected, int row, int column) {
     System.out.println("getTableCellEditorComponent");
@@ -56,6 +58,7 @@ comments: true
     });
     return scroll;
   }
+
   @Override public boolean isCellEditable(final EventObject e) {
     if (e instanceof MouseEvent) {
       return ((MouseEvent) e).getClickCount() &gt;= 2;
@@ -85,12 +88,12 @@ comments: true
 - `TableCellEditor#isCellEditable(...)`
     - マウスのダブルクリックで編集開始
 - `TableCellEditor#getTableCellEditorComponent(...)`
-    - `JTextArea`に現在表示されているセル文字列をコピーし、戻り値の`Component`として、`JScrollPane`を返す
-- `TableCellEditor#isCellEditable(...)`, `EventQueue.invokeLater(...)`
+    - `JTextArea`に現在表示されているセル文字列をコピーし、戻り値の`Component`として`JScrollPane`を返す
+- `TableCellEditor#isCellEditable(...)`、`EventQueue.invokeLater(...)`
     - キー入力で編集開始した場合、その入力を`JTextArea`の文字列末尾に追加
     - [Character#isUnicodeIdentifierStart(char) (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/lang/Character.html#isUnicodeIdentifierStart-char-)
-- `TableCellEditor#getTableCellEditorComponent(...)`, `EventQueue.invokeLater(...)`
-    - `JTextArea`にフォーカスを移動し、`JTextArea`のキャレットも文字列末尾に移動
+- `TableCellEditor#getTableCellEditorComponent(...)`、`EventQueue.invokeLater(...)`
+    - `JTextArea`にフォーカスを移動し`JTextArea`のキャレットも文字列末尾に移動
 
 <!-- dummy comment line for breaking list -->
 

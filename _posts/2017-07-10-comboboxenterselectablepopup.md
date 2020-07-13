@@ -49,7 +49,7 @@ comments: true
         comboBox.setPopupVisible(false);
 </code></pre>
 - 注:
-    - `JComboBox#addItemListener(...)`で追加した`ItemListener`には、この設定は影響しない
+    - `JComboBox#addItemListener(...)`で追加した`ItemListener`にはこの設定は影響しない
     - `UIManager.getBoolean("ComboBox.noActionOnKeyNavigation") == true`の場合、この設定は無視され`ComboBox.isEnterSelectablePopup: true`と同じ動作になる
         - ポップアップメニューが開いている状態で、<kbd>Enter</kbd>キーを入力するとアクションイベントが`2`回発生する
     - `ComboBox.isEnterSelectablePopup`の設定は<kbd>Enter</kbd>キーが入力されると毎回`UIManager.getBoolean("ComboBox.isEnterSelectablePopup")`で取得されるので、切替は`PopupMenuListener#popupMenuWillBecomeVisible(...)`メソッドをオーバーライドして実行

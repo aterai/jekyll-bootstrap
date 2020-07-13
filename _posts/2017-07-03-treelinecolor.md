@@ -30,9 +30,11 @@ JTree tree2 = new JTree();
 tree2.setUI(new BasicTreeUI() {
   private final Stroke horizontalLine = new BasicStroke(2f);
   private final Stroke verticalLine = new BasicStroke(5f);
+
   @Override public Color getHashColor() {
     return Color.BLUE;
   }
+
   @Override protected void paintHorizontalPartOfLeg(
       Graphics g, Rectangle clipBounds, Insets insets,
       Rectangle bounds, TreePath path, int row,
@@ -44,6 +46,7 @@ tree2.setUI(new BasicTreeUI() {
         isExpanded, hasBeenExpanded, isLeaf);
     g2.dispose();
   }
+
   @Override protected void paintVerticalPartOfLeg(
       Graphics g, Rectangle clipBounds, Insets insets, TreePath path) {
     Graphics2D g2 = (Graphics2D) g.create();

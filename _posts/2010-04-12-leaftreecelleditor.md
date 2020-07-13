@@ -20,6 +20,7 @@ comments: true
   protected LeafTreeCellEditor(JTree tree, DefaultTreeCellRenderer renderer) {
     super(tree, renderer);
   }
+
   @Override public boolean isCellEditable(EventObject e) {
     Object o = tree.getLastSelectedPathComponent();
     if (super.isCellEditable(e) &amp;&amp; o instanceof TreeNode) {

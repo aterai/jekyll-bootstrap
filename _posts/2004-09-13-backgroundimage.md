@@ -30,7 +30,7 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`JPanel#setOpaque(false)`でパネルの背景を透過するように設定し、`JPanel#paintComponent(Graphics)`メソッドをオーバーライドしてこの内部で`Image`を順番に並べて描画しています。
+上記のサンプルでは、`JPanel#setOpaque(false)`でパネルの背景を透過するよう設定し、`JPanel#paintComponent(Graphics)`メソッドをオーバーライドしてこの内部で`Image`を順番に並べて描画しています。
 
 ## 参考リンク
 - [TexturePaintを使って背景に画像を表示](https://ateraimemo.com/Swing/TexturePaint.html)

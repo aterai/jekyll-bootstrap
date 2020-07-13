@@ -31,15 +31,15 @@ tree.putClientProperty("Nimbus.Overrides", d);
 
 ## 解説
 - 左: `Default`
-    - `NimbusLookAndFeel`でのデフォルトは、`JTree`のノード接続線は水平、垂直ともに非表示
+    - `NimbusLookAndFeel`でのデフォルトは`JTree`のノード接続線は水平、垂直ともに非表示
 - 右: `linesStyle: dashed`
-    - `UIDefaults`を使用して、`Tree.drawVerticalLines`と`Tree.drawHorizontalLines`を`Boolean.TRUE`、`Tree.linesStyle`を`dashed`に設定
-        - スタイルの値は、`solid`と`dashed`のみ対応？(`none`や`dotted`を設定しても`solid`と同じ線になる)
-    - `UIManager.put("Tree.drawVerticalLines", true);`で変更に失敗し、`UIManager.getLookAndFeelDefaults().put("Tree.drawVerticalLines", true);`で成功する場合がある？
+    - `UIDefaults`を使用して`Tree.drawVerticalLines`と`Tree.drawHorizontalLines`を`Boolean.TRUE`、`Tree.linesStyle`を`dashed`に設定
+        - スタイルの値は`solid`と`dashed`のみ対応？(`none`や`dotted`を設定しても`solid`と同じ線になる)
+    - `UIManager.put("Tree.drawVerticalLines", true)`で変更に失敗し、`UIManager.getLookAndFeelDefaults().put("Tree.drawVerticalLines", true)`で成功する場合がある？
         - [swing - Nimbus JTree presentation error under java version 1.8 - Stack Overflow](https://stackoverflow.com/questions/44655203/nimbus-jtree-presentation-error-under-java-version-1-8)
-        - `JTree`の生成のタイミングで変更に失敗したり、`UIManager.put("Tree.drawHorizontalLines", true);`は問題ない場合もあって、原因不明
+        - `JTree`の生成のタイミングで変更に失敗したり`UIManager.put("Tree.drawHorizontalLines", true);`は問題ない場合もあって原因不明
         - `UIManager.getBoolean("Tree.paintLines")`が更新されていない？
-    - `BasicLookAndFeel`、`MetalLookAndFeel`、`WindowsLookAndFeel`などは、`Tree.linesStyle`の設定は効果がないが、`Tree.lineTypeDashed`が使用可能
+    - `BasicLookAndFeel`、`MetalLookAndFeel`、`WindowsLookAndFeel`などは`Tree.linesStyle`の設定は効果がないが`Tree.lineTypeDashed`が使用可能
         
         <pre class="prettyprint"><code>UIManager.put("Tree.paintLines", true);
         UIManager.put("Tree.lineTypeDashed", true);

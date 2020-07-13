@@ -26,7 +26,7 @@ menu.add(Box.createHorizontalStrut(200));
 - `BoxHStrut`
     - `Box.createHorizontalStrut(200)`で高さ`0`で任意の幅のコンポーネントを作成して`JMenu`に配置
     - この`Box`の幅が`JPopupMenu`の最小幅になる
-    - この`Box`は`MenuElement`インタフェースに適合しないので、`JMenu#getSubElements()`などには含まれない
+    - この`Box`は`MenuElement`インタフェースに適合しないので`JMenu#getSubElements()`などには含まれない
         - [JMenu#getSubElements() (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/javax/swing/JMenu.html#getSubElements--)
 - `Override`
     - `JMenu`に配置する`JMenuItem`の`getPreferredSize()`メソッドをオーバーライドして、任意の幅を返すように設定
@@ -47,7 +47,7 @@ menu.add(Box.createHorizontalStrut(200));
     - 余白などを`0`にし、幅を設定した`<table>`タグで装飾した文字列を使用する`JMenuItem`を使用
         - `new JMenuItem("<html><table cellpadding='0' cellspacing='0' style='width:200'>...")`
     - 文字列自体の幅が`<table>`で指定した幅になるので、`Accelerator`などが存在するとその幅も追加される
-    - `html`タグを使用するので、`Mnemonic`が表示できない
+    - `html`タグを使用するので`Mnemonic`が表示できない
 
 <!-- dummy comment line for breaking list -->
 

@@ -24,6 +24,7 @@ comments: true
   protected WhitespaceLabelView(Element elem) {
     super(elem);
   }
+
   @Override public void paint(Graphics g, Shape a) {
     super.paint(g, a);
     Graphics2D g2 = (Graphics2D) g.create();
@@ -59,10 +60,10 @@ comments: true
 </code></pre>
 
 ## 解説
-上記のサンプルでは、`LabelView`を継承し、`LabelView#paint`メソッドをオーバーライドして全角スペースやタブの場合だけ、それぞれの図形を描画しています。
+上記のサンプルでは、`LabelView`を継承し、`LabelView#paint`メソッドをオーバーライドして全角スペースやタブの場合だけそれぞれの図形を描画しています。
 
 - タブ表示図形のドット数は適当(`4`タブの場合に`4`点表示している訳ではない)
-- `LabelView`を使用する`EditorKit(ViewFactory)`の作成方法は、[JEditorPaneで改行を表示](https://ateraimemo.com/Swing/ParagraphMark.html)と同様
+- `LabelView`を使用する`EditorKit(ViewFactory)`の作成方法は[JEditorPaneで改行を表示](https://ateraimemo.com/Swing/ParagraphMark.html)と同様
 
 <!-- dummy comment line for breaking list -->
 

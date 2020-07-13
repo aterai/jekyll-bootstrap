@@ -22,15 +22,18 @@ comments: true
   private final ImageIcon icon2;
   private int alpha = 10;
   private boolean direction = true;
+
   public Crossfade(ImageIcon icon1, ImageIcon icon2) {
     this.icon1 = icon1;
     this.icon2 = icon2;
     animator = new javax.swing.Timer(50, this);
   }
+
   public void animationStart() {
     direction = !direction;
     animator.start();
   }
+
   @Override protected void paintComponent(Graphics g) {
     Graphics2D g2 = (Graphics2D) g.create();
     g2.setPaint(getBackground());
@@ -52,6 +55,7 @@ comments: true
         (int) icon2.getIconWidth(), (int) icon2.getIconHeight(), this);
     g2.dispose();
   }
+
   @Override public void actionPerformed(ActionEvent e) {
     repaint();
   }
@@ -61,7 +65,7 @@ comments: true
 ## 解説
 上記のサンプルでは、`2`枚の画像の描画に使用する`AlphaComposite`をそれぞれ変化させながら上書きすることで、画像の表示を切り替えています。
 
-上書き規則には、`AlphaComposite.SRC_OVER`を使っています。
+上書き規則には`AlphaComposite.SRC_OVER`を使っています。
 
 ## 参考リンク
 - [AlphaComposite.SRC_OVER (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/AlphaComposite.html#SRC_OVER)
