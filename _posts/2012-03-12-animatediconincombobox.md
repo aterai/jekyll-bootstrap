@@ -42,8 +42,8 @@ comments: true
 </code></pre>
 
 ## 解説
-- `JComboBox`自体が非表示(`JComboBox#isShowing(...)==false`)の場合は、再描画しない
-- `Animated GIF`が選択されている(`JComboBox#getSelectedIndex()==row`)場合のみ、`JComboBox#repaint()`で再描画する
+- `JComboBox`自体が非表示(`JComboBox#isShowing(...)==false`)の場合は再描画しない
+- `Animated GIF`が選択されている(`JComboBox#getSelectedIndex()==row`)場合のみ`JComboBox#repaint()`で再描画する
 - ドロップダウンリストが表示されている場合、`Animated GIF`の表示されている領域(`JList#getCellBounds(row, row)`で取得)だけ再描画
 
 <!-- dummy comment line for breaking list -->

@@ -16,7 +16,19 @@ comments: true
 {% download https://drive.google.com/uc?id=1T6g79tQY4xA9kVjE53DiRWGIfHgIQs6p %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>UIManager.put("Menu.preserveTopLevelSelection", Boolean.TRUE);
+<pre class="prettyprint"><code>// UIManager.put("Menu.preserveTopLevelSelection", Boolean.TRUE);
+String key = "Menu.preserveTopLevelSelection";
+Boolean b = UIManager.getBoolean(key);
+System.out.println(key + ": " + b);
+JCheckBox preserveTopLevelSelectionCheck = new JCheckBox(key, b) {
+  @Override public void updateUI() {
+    super.updateUI();
+    setSelected(UIManager.getLookAndFeelDefaults().getBoolean(key));
+    UIManager.put(key, isSelected());
+  }
+};
+preserveTopLevelSelectionCheck.addActionListener(e -&gt;
+    UIManager.put(key, ((JCheckBox) e.getSource()).isSelected()));
 </code></pre>
 
 ## 解説

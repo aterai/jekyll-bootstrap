@@ -68,7 +68,7 @@ comments: true
     - 値が`0`の場合は`Badge`は表示しない
     - 表示する数字が`4`桁以上になる場合はすべて`1K`に設定
         - `Java 12`では[NumberFormat.getCompactNumberInstance(...) (Java SE 12 & JDK 12)](https://docs.oracle.com/javase/jp/12/docs/api/java.base/java/text/NumberFormat.html#getCompactNumberInstance%28java.util.Locale,java.text.NumberFormat.Style%29)が使用可能
-    - 表示する数字が`3`桁になる場合は66%の変形をかけて長体に設定
+    - 表示する数字が`3`桁になる場合は`66%`の変形をかけて長体に設定
         - 参考: [Fontに長体をかけてJTextAreaで使用する](https://ateraimemo.com/Swing/CondensedFontLabel.html)
             
             <pre class="prettyprint"><code>class BadgeIcon implements Icon {

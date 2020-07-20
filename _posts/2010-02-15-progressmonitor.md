@@ -34,11 +34,13 @@ worker = new SwingWorker&lt;String, String&gt;() {
     }
     return "Done";
   }
+
   @Override protected void process(List&lt;String&gt; chunks) {
     for (String message : chunks) {
       monitor.setNote(message);
     }
   }
+
   @Override public void done() {
     runButton.setEnabled(true);
     monitor.close();
@@ -75,6 +77,7 @@ worker.execute();
     this.monitor = monitor;
     this.monitor.setProgress(0);
   }
+
   @Override public void propertyChange(PropertyChangeEvent e) {
     Object o = e.getSource();
     String strPropertyName = e.getPropertyName();

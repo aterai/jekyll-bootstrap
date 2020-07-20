@@ -16,7 +16,21 @@ comments: true
 {% download https://drive.google.com/uc?id=12DSo9IIp_Ah9F2FlvkEjjREEwZXyNNLWhA %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>UIManager.put("OptionPane.isYesLast", Boolean.TRUE);
+<pre class="prettyprint"><code>private static final String KEY = "OptionPane.isYesLast";
+
+JButton defaultButton = new JButton(KEY + ": false(default)");
+defaultButton.addActionListener(e -&gt; {
+  UIManager.put("OptionPane.isYesLast", Boolean.FALSE);
+  String str = JOptionPane.showInputDialog(getRootPane(), KEY + ": false");
+  log.setText(str);
+});
+
+JButton yesLastButton = new JButton(KEY + ": true");
+yesLastButton.addActionListener(e -&gt; {
+  UIManager.put("OptionPane.isYesLast", Boolean.TRUE);
+  String str = JOptionPane.showInputDialog(getRootPane(), KEY + ": true");
+  log.setText(str);
+});
 </code></pre>
 
 ## 解説

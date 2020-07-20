@@ -16,8 +16,29 @@ comments: true
 {% download https://lh6.googleusercontent.com/-bPltus2wD6w/TjZCCGnH40I/AAAAAAAABAE/tgmolSg-2Ys/s800/TreeSelection.png %}
 
 ## サンプルコード
-<pre class="prettyprint"><code>tree.getSelectionModel().setSelectionMode(
-    TreeSelectionModel.CONTIGUOUS_TREE_SELECTION);
+<pre class="prettyprint"><code>JRadioButton r0 = new JRadioButton("DISCONTIGUOUS_TREE_SELECTION", true);
+r0.addItemListener(e -&gt; {
+  if (e.getStateChange() == ItemEvent.SELECTED) {
+    tree.getSelectionModel().setSelectionMode(
+      TreeSelectionModel.DISCONTIGUOUS_TREE_SELECTION);
+  }
+});
+
+JRadioButton r1 = new JRadioButton("SINGLE_TREE_SELECTION");
+r1.addItemListener(e -&gt; {
+  if (e.getStateChange() == ItemEvent.SELECTED) {
+    tree.getSelectionModel().setSelectionMode(
+      TreeSelectionModel.SINGLE_TREE_SELECTION);
+  }
+});
+
+JRadioButton r2 = new JRadioButton("CONTIGUOUS_TREE_SELECTION");
+r2.addItemListener(e -&gt; {
+  if (e.getStateChange() == ItemEvent.SELECTED) {
+    tree.getSelectionModel().setSelectionMode(
+      TreeSelectionModel.CONTIGUOUS_TREE_SELECTION);
+  }
+});
 </code></pre>
 
 ## 解説

@@ -32,13 +32,16 @@ class RadioButtonMenuItemIcon1 implements Icon, UIResource, Serializable {
       g2.dispose();
     }
   }
+
   @Override public int getIconWidth()  {
     return 12;
   }
+
   @Override public int getIconHeight() {
     return 12;
   }
 }
+
 class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
   @Override public void paintIcon(Component c, Graphics g, int x, int y) {
     AbstractButton b = (AbstractButton) c;
@@ -47,9 +50,11 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
       g.fillOval(x + 2, y + 2, getIconWidth() - 5, getIconHeight() - 5);
     }
   }
+
   @Override public int getIconWidth()  {
     return 12;
   }
+
   @Override public int getIconHeight() {
     return 12;
   }
@@ -61,11 +66,11 @@ class RadioButtonMenuItemIcon2 implements Icon, UIResource, Serializable {
 
 - `default`
     - デフォルト
-    - `WindowsLookAndFeel`(`Java1.6.0`)で、`JRadioButtonMenuItem`のチェックアイコンが歪になる場合がある
+    - `WindowsLookAndFeel`(`Java1.6.0`)で`JRadioButtonMenuItem`のチェックアイコンが歪になる場合がある
 - `ANTIALIASING`
     - `com.sun.java.swing.plaf.windows.WindowsIconFactory`のアイコンを`g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)`でアンチエイリアス
 - `fillOval`
-    - `fillRoundRect`ではなく、`fillOval`を使用するチェックアイコンを設定
+    - `fillRoundRect`ではなく`fillOval`を使用するチェックアイコンを設定
 
 <!-- dummy comment line for breaking list -->
 
